@@ -1,0 +1,60 @@
+---
+layout: page
+status: publish
+published: true
+title: 10 & 30 Meter Elevation Models (USGS NED)
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 859
+wordpress_url: http://gis.utah.gov/?page_id=859
+date: '2011-08-15 17:54:47 -0500'
+date_gmt: '2011-08-15 17:54:47 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- metadata
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- elevation
+- terrain
+- DEM
+- raster
+- topography
+- contour
+- meter
+- usgs
+- NED
+- 10 meter
+- 30 meter
+---
+<h3>10 &amp; 30 Meter Elevation Models (NEDs)</h3>
+<p>The National Elevation Dataset (NED) is another elevation dataset available for Utah from the USGS. These elevation models were created from the best available DEMs. Much of the line distortion is then filtered out of the NED. Because of the filtering it gives a clearer picture than the standard DEM.</p>
+<p>Utah's NED is available for download by county at 10 and 30 meter resolutions. A statewide 30 meter hillshade (<a href="ftp://ftp.agrc.utah.gov/NED/NED30/StatewideHillshd30meter.zip">StateWideHillshd30.zip</a> 250mb) and grid (<a href="ftp://ftp.agrc.utah.gov/NED/NED30/StatewideNED_30meter.zip">StateWideNED_30.zip</a> 975mb) are also available from the <a href="ftp://ftp.agrc.utah.gov/NED/NED30/" target="_blank">FTP site</a>. This dataset is projected to UTM Zone 12 NAD83 meters. The vertical datum is NAVD88. For more information about the NED go to <a href="http://ned.usgs.gov/"><strong>http://ned.usgs.gov/</strong></a>. For further information on downloading the NED contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson </strong></a>(801-538-3237).</p>
+<ul>
+<li><a href="http://gis.utah.gov/wp-content/uploads/NED_accuracy_assessment.doc">NED Accuracy Document</a></li>
+<li><strong><a href="http://raster.utah.gov/?cat=10%20Meter%20NED%20%7BDEM%7D">Download - 10 meter NED DEMs Interactive Map </a></strong></li>
+<li><strong><a href="http://raster.utah.gov/?cat=30%20Meter%20NED%20%7BDEM%7D">Download - 30 meter NED DEMs Interactive Map (by County)</a></strong></li>
+<li><a href="ftp://ftp.agrc.utah.gov/NED">Retrieve NED via FTP site </a></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/DEM/10meter_dem/SGID10.RASTER.DEM_10METER_Terrain.lyr">Download - Terrain Base Map Elevation Layer File </a></strong></li>
+</ul>
+<p>To make the .dem file useable in ArcMap you may needs to be converted into a Raster/Grid. In the ArcMap 9.x & 10.x toolbox use the Conversion Tool - 'DEM to Raster'.
+</li>
+<p>If you have any trouble contact <a href="mailto:rkelson@utah.gov">Rick Kelson</a>  at 801-538-3237</li>

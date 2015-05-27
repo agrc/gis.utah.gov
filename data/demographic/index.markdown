@@ -1,0 +1,91 @@
+---
+layout: page
+status: publish
+published: true
+title: Demographic
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 2788
+wordpress_url: http://gis.utah.gov/?page_id=2788
+date: '2011-10-19 16:27:38 -0500'
+date_gmt: '2011-10-19 22:27:38 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- vector
+- overview
+- category
+- services
+- daas
+- arcgis
+---
+<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
+<p>[styled_table]</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;" scope="col">Product Name</th>
+<th style="text-align: left;" scope="col">Type</th>
+<th style="text-align: left;" scope="col">Steward(s)</th>
+<th style="text-align: left;" scope="col">Description</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="5"><sub><em>click a product name for more information and download links</em></sub></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="/demographic/2010-census-data">2010 Demographic Data</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC and the U.S. Census Bureau.</td>
+<td style="text-align: left;">2010 data from the Census Bureau including census blocks, census block groups, census tracts, and census counties.<br />
+Also included are files created by AGRC containing population for incorporated and unincorporated areas in Utah.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/demographic/2000-census-data">2000 Demographic Data</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC and the U.S. Census Bureau.</td>
+<td style="text-align: left;">2000 data from the Census Bureau including census blocks, census block groups, census tracts, census counties, MetroMicro statistical areas, and town demographics.</td>
+</tr>
+</tbody>
+</table>
+<p>[/styled_table]</p>
+<h3>Other Demographic Data</h3>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/DEMOGRAPHIC/UnpackagedData/CensusEdges2010/_Statewide/">Census Edges</a></li>
+</ul>
+<h3>Related Data (see also)</h3>
+<ul>
+<li><a href="/political/">Political Boundaries</a></li>
+</ul>
+<h3>Notes</h3>

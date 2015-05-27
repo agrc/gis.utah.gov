@@ -1,0 +1,110 @@
+---
+layout: page
+status: publish
+published: true
+title: Health
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 2848
+wordpress_url: http://gis.utah.gov/?page_id=2848
+date: '2011-10-21 14:23:47 -0500'
+date_gmt: '2011-10-21 20:23:47 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- vector
+- overview
+- category
+- services
+- daas
+- arcgis
+---
+<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
+<p>[styled_table]</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;" scope="col">Product Name</th>
+<th style="text-align: left;" scope="col">Type</th>
+<th style="text-align: left;" scope="col">Steward(s)</th>
+<th style="text-align: left;" scope="col">Description</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="5"><sub><em>click a product name for more information and download links</em></sub></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="/data/health/health-care-facilities/">Healthcare Facilities</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC, Utah Department of Health, Division of Emergency Management</td>
+<td style="text-align: left;">Healthcare Facilities and Emergency Medical Service (EMS) locations in Utah</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/health/emergency-service-areas/">Emergency Medical Service (EMS) Areas</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC and Utah Department of Health.</td>
+<td style="text-align: left;">Legal EMS area boundaries according to the Bureau of Emergency Medical Services and Preparedness.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/health/health-districts/">Health Districts</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">Department of Public Health</td>
+<td style="text-align: left;">Shows the 12 local health departments</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/health/health-small-statistical-areas/">Health Statistical Areas</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">Department of Public Health</td>
+<td style="text-align: left;">2008 &amp; 2009 small statistical areas for health status information.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/health/emergency-regions/">Emergency Regions</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">Department of Homeland Security</td>
+<td style="text-align: left;">Shows the different emergency regions statewide</td>
+<td style="text-align: left;"></td>
+</tr>
+</tr>
+</tbody>
+</table>
+<p>[/styled_table]</p>
+<p><strong>Related Data (see also)</strong></p>
+<ul>
+<li><a href="/data/location/">Location</a></li>
+<li><a href="/data/boundaries/citycountystate/">Boundaries (Municipalities)</a></li>
+</ul>
+<p><strong>Notes</strong></p>

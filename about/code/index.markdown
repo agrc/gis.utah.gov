@@ -1,0 +1,44 @@
+---
+layout: page
+status: publish
+published: true
+title: State of Utah GIS/Mapping Statutes and Administrative Rules
+author:
+  display_name: Bert Granberg
+  login: Bert Granberg
+  email: bgranberg@utah.gov
+  url: ''
+author_login: Bert Granberg
+author_email: bgranberg@utah.gov
+wordpress_id: 12196
+wordpress_url: http://gis.utah.gov/?page_id=12196
+date: '2012-11-15 09:07:47 -0500'
+date_gmt: '2012-11-15 16:07:47 -0500'
+categories: []
+tags: []
+---
+<p>State of Utah statute and administrative rules pertaining to Geographic Information Systems &amp; Mapping:</p>
+<p><strong>AGRC: Automated Geographic Reference Center</strong> (<a href="http://le.utah.gov/~code/TITLE63F/htm/63F01_050600.htm">UCA 63F-1-506</a>)<br />
+Enabling code for AGRC. Includes position within DTS, responsibilities for SGID; provision of services to state, local, federal, &amp; private orgs; assistance with boundary data; surveyor position; cadastral &amp; parcel database.</p>
+<p><strong>SGID: State Geographic Information Database</strong> (<a href="http://le.utah.gov/~code/TITLE63F/htm/63F01_050700.htm">UCA 63F-1-507</a>)<br />
+AGRC manages SGID GIS data, standards, &amp; clearinghouse. State agencies directed to provide all geospatial data classified as public to be included in the SGID.</p>
+<p><strong>TURN GPS: The Utah Reference Network</strong> (<a href="http://le.utah.gov/~code/TITLE63F/htm/63F01_050900.htm">UCA 63-F-509</a>)<br />
+High precision statewide GPS base station reference network.</p>
+<p><strong>Funding For AGRC E911 Digital Mapping Standards</strong> (<a href="http://le.utah.gov/xcode/Title63H/Chapter7/63H-7-S306.html">63H-7-S306</a>)<br />
+An amount equal to one cent per month levy on telecommunications service under Section <a href="http://le.utah.gov/xcode/Title69/Chapter2/69-2-S5.6.html">69-2-5.6</a> to enhance and upgrade digital mapping standards for unified statewide 911 emergency service as required by the committee. </p>
+<p><strong>Boundary Change Notification</strong> (<a href="http://le.utah.gov/~code/TITLE67/htm/67_01a000605.htm">UCA 67-1a-6.5</a> et al)<br />
+Boundary change notification requirements (to Lt. Gov, AGRC and other offices) are covered in several statutes including: <a href="http://le.utah.gov/xcode/Title67/Chapter1A/67-1a-S6.5.html">67-1a-6.5</a> Lt. Gov certification; <a href="http://le.utah.gov/xcode/Title20A/Chapter14/20A-14-S201.html">20A-14-201</a> School Dists; <a href="http://le.utah.gov/xcode/Title17C/Chapter2/17C-2-S109.html">17C-2-109</a>, <a href="http://le.utah.gov/xcode/Title17C/Chapter3/17C-3-S108.html">17C-3-108</a>, <a href="http://le.utah.gov/xcode/Title17C/Chapter4/17C-4-S107.html">17-4-107</a> RDA projects</p>
+<p><strong>Municipal Planning, Regional &amp; Capital Facilities Notification</strong> (<a href="http://le.utah.gov/~code/TITLE10/htm/10_09a020300.htm">UCA 10-9a-203</a> et al)<br />
+Several statutes require notification of AGRC prior to beginning or amending general plans or in cases of planned regional facility infrastructure. These include: <a href="http://le.utah.gov/xcode/Title10/Chapter9A/10-9a-S203.html">10-9a-203</a>, <a href="http://le.utah.gov/xcode/Title17/Chapter27a/17-27a-S203.html">17-27a-203</a>, <a href="http://le.utah.gov/xcode/Title17B/Chapter1/17B-1-S106.html">17B-1-106</a>, <a href="http://le.utah.gov/xcode/Title53A/Chapter2/53A-2-S123.html">53A-2-123</a>, <a href="http://le.utah.gov/xcode/Title54/Chapter3/54-3-S28.html">54-3-28</a></p>
+<p><strong>Voting Precincts Filed with AGRC</strong> (<a href="http://le.utah.gov/~code/TITLE20A/htm/20A05_030300.htm">UCA 20A-5-303</a>)<br />
+In HB131 (2002, Rep. Pace) AGRC is directed to work with counties and the Lt. Gov’s office to maintain current voter precinct and other boundaries in the SGID</p>
+<p><strong>RS2477 and Cadastral Grants Committee</strong> (<a href="http://le.utah.gov/~code/TITLE63F/htm/63F01_050800.htm">UCA 63F-1-508</a>)<br />
+This committee was originally set up to administer RS2477 grants but evolved to also administer cadastral grants.  Thru '08, the committee has distributed about $5,000,000 in grants with AGRC doing all contract administration, QA, &amp; SGID Integration.</p>
+<p><strong>AGRC Role in RS2477 Records</strong> (<a href="http://le.utah.gov/~code/TITLE72/htm/72_05_030900.htm">UCA 72-5-309</a>)<br />
+In 2005, AGRC was further required to provide access to recorded documents for RS2477.</p>
+<p><strong>AGRC Support for RS2477 Mapping</strong> (<a href="http://le.utah.gov/~code/TITLE72/htm/72_05_030400.htm">UCA 72-5-304</a>)<br />
+In approximately 1997, legislation was passed that required AGRC to complete and maintain a database for RS2477.</p>
+<p><strong>IT Plans Data Creation And Aquisition Included</strong>  (<a href="http://le.utah.gov/~code/TITLE63F/htm/63F01_020500.htm">UCA 63F-1-205</a>)<br />
+HB109 created additional responsibilities for AGRC as HB109 directed that "data" be included in IT planning efforts.  AGRC now reviews IT Plans and consults with agencies on geospatial technology activities including data creation and acquisition.</p>
+<p><strong>GIS Advisory Committee Administrative Rule</strong> (<a href="http://www.rules.utah.gov/publicat/code/r895/r895-009.htm">R895-9</a>)<br />
+Summary: The purpose of this rule is to establish an advisory council to coordinate statewide GIS data efforts for collection, creation, and access, and to mutual collaboration by state entities.</p>

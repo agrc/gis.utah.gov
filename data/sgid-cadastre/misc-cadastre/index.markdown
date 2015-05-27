@@ -1,0 +1,84 @@
+---
+layout: page
+status: publish
+published: true
+title: Miscellaneous Cadastre Data
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 2099
+wordpress_url: http://gis.utah.gov/?page_id=2099
+date: '2011-09-07 15:18:06 -0500'
+date_gmt: '2011-09-07 15:18:06 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p><img src="http://gis.utah.gov/gallery/sgid/utah-sgid-gis-roads-and-highways-sample.png" alt="utah-sgid-gis-roads-and-highways-sample" width="256" height="256" /><br />
+[button id="starter" size="medium" align="left"]Download Road and Highway Data[/button]</p>
+<p>&nbsp;</p>
+<h2>Abstract</h2>
+<p>This dataset contains GIS mapping data representing the statewide roads centerline dataset for Utah and other road and highway related data  such as milepost locations, exit numbers and names, polylineM highway linear referencing system (LRS) routes, and label lines for dynamic rendering of highway shields.</p>
+<h2>Data Content</h2>
+<p>This dataset includes the following feature classes:</p>
+<h3><img class="ngg-singlepic ngg-right tabBorder" img src="http://gis.utah.gov/gallery/sgid/utah-gis-streets-roads.png" alt="utah-gis-streets-roads" width="90" height="90" />Road Centerlines</h3>
+<p>[tabs]<br />
+[tab title="Description"] SGID10.Transportation.Roads is a multi-purpose statewide roads dataset for cartography and range based-address location. This dataset is also used as the base geometry for deriving the GIS-representation of UDOT's highway linear referencing system (LRS). A network analysis dataset for route-finding can also be derived from this dataset.[/tab]</p>
+<p>[tab title="Usage"]SGID10.Transportation.Roads utilizes the Utah Transportation Data Model.</p>
+<p>This data model is currently under active review by the UGIC Standards Committee and will likely be revised in the coming months. <a href="http://gis.utah.gov/transportation-data-standards-and-sharing/proposed-statewide-roads-data-model-standard">View the current data model with attribute descriptions and definitions</a>.</p>
+<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.[/tab]<br />
+[tab title="Updates"]Updates to this dataset are published every two months with each approximately 5 counties' roads receiving detailed review during each update cycle.</p>
+<p>Recent update summaries:</p>
+<p><a href="http://gis.utah.gov/sgid-transportation/utah-sgid-statewide-roads-layer-updates-8-3-2011">August 3, 2011</a><br />
+<a href="http://gis.utah.gov/sgid-transportation/utah-sgid-statewide-roads-layer-updates-6-1-2011">June 1, 2011</a><br />
+<a href="http://gis.utah.gov/sgid-transportation/test" target="_blank">April 14, 2011</a>[/tab]<br />
+[tab title="Contact"]The statewide roads dataset in maintained by AGRC in partnership with local government, the Utah 911 Committee,  and UDOT.</p>
+<p>Questions can be direction to <a href="mailto:kkgreen@utah.gov">Kelly Green</a> (801.539.9079) at AGRC.[/tab]<br />
+[tab title="Links | Download"]Download this dataset using the Download button at the top of this page.</p>
+<p>Other links for this dataset:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_Roads.html">View FGDC format metadata</a> [/tab] [/tabs]</li>
+</ul>
+<h3><img class="ngg-singlepic ngg-right tabBorder" img src="http://gis.utah.gov/gallery/sgid/utah-gis-highway-lrs-udot.png" alt="utah-gis-highway-lrs-udot" width="90" height="90" />Highway Linear Referencing System Routes</h3>
+<p>[tabs]<br />
+[tab title="Description"]SGID93.Transportation.UDOTRoutes_LRS is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepost measure coordinate.[/tab]</p>
+<p>[tab title="Usage"]Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0080PR18501 is the east bound off ramp at exit 178 on I-80). ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
+<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter x,y coordinate precision; 0.001 mile m coordinate precision).</p>
+<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: UDOT.[/tab]<br />
+[tab title="Updates"]Updates to this dataset are published periodically to refine route representation, add additional routes, and in response to route realignment.</p>
+<p>Last Updated: May 11, 2011[/tab]<br />
+[tab title="Contact"]The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
+<p>Questions can be direction to <a href="mailto:fpisani@utah.gov">Frank Pisani</a> (<em>801</em>-965-4347) at UDOT Planning.[/tab]<br />
+[tab title="Links | Download"]Download this dataset using the Download button at the top of this page.</p>
+<p>Other links for this dataset:</p>
+<ul>
+<li>A more current version of this dataset may be available at <a href="http://data.udot.utah.gov">data.udot.utah.gov</a>.</li>
+<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_Roads.html">View FGDC format metadata</a> [/tab] [/tabs]</li>
+</ul>

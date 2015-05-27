@@ -1,0 +1,60 @@
+---
+layout: page
+status: publish
+published: true
+title: 2003 UAO 1 Foot Color Orthophotography
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 830
+wordpress_url: http://gis.utah.gov/?page_id=830
+date: '2011-08-15 17:08:24 -0500'
+date_gmt: '2011-08-15 17:08:24 -0500'
+categories: []
+tags:
+- aerial photography
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- metadata
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- imagery
+- 1 foot
+- '2003'
+- UAO
+---
+<h3>2003 UAO 1 Foot Orthophotography</h3>
+<table border="0">
+<tbody>
+<tr>
+<td>AGRC has Urban Area Ortho-Imagery (UAO) 1-foot resolution color aerial photography from 2003 for the Wasatch Front north of Utah County.</p>
+<ul>
+<li><strong><a href="http://raster.utah.gov/?cat=HRO%202003%20(30cm)" target="_blank">Download - 2003 UAO Interactive Map </a></strong></li>
+<li><a href="ftp://ftp.agrc.utah.gov/Imagery/UAO2003/" target="_blank">Retrieve UAO imagery via FTP site</a></li>
+<li><a href="http://gis.utah.gov/data/utah-sgid-image-server/" target="_blank">Use our Image Server</a></li>
+</ul>
+<p><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/UAO2003/_Statewide/UAO2003_shp.zip"><strong>UAO_Index</strong></a> is a shapefile that can be used to determine what images to download. The images have a UTM NAD83 meters projection and are from 2003. Image flight dates can be found in the .xml file of the associated image tile.</p>
+<p>The naming convention for the imagery tiles is based off the <a href="http://www.fgdc.gov/usng/how-to-read-usng/index_html" target="_blank">U.S. National Grid (USNG)</a>. Utah is in USNG grid zone 12T and 12S.</p>
+<p>If you have any trouble contact <a href="mailto:rkelson@utah.gov">Rick Kelson </a> at (801-538-3237).</td>
+<td style="text-align: center;"><a href="http://gis.utah.gov/wp-content/uploads/UAO2003_sample.jpg" target="_blank"><img src="http://gis.utah.gov/wp-content/uploads/UAO2003_sample.jpg" alt=" " width="200" height="200" /></a><br />
+<strong>    UAO 2003 Sample</strong></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>

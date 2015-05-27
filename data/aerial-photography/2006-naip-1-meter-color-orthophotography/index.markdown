@@ -1,0 +1,67 @@
+---
+layout: page
+status: publish
+published: true
+title: 2006 NAIP 1 Meter Color Orthophotography
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 827
+wordpress_url: http://gis.utah.gov/?page_id=827
+date: '2011-08-15 17:07:11 -0500'
+date_gmt: '2011-08-15 17:07:11 -0500'
+categories: []
+tags:
+- aerial photography
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- metadata
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- imagery
+- NAIP
+- 1 meter
+- '2006'
+- '2004'
+- '2003'
+---
+<h3>2006 NAIP 1 Meter Orthophotography</h3>
+<table border="0">
+<tbody>
+<tr>
+<td>AGRC has National Agricultural Imagery Program (NAIP) natural color aerial photography for many of the agricultural areas of Utah in 2-meter resolution for 2003 and 1-meter resolution for 2004 and 2006. The 2006 NAIP is a statewide coverage. The images are grouped together by county. They can be downloaded as a .zip file. The .zip file contains a compressed .sid Mr.Sid image. When adding the image to a View or Data Frame, add the .sid file and not the associated bands. The date the photography was flown for 2003 can be found in the .txt file of county mosaic. For 2004 the date is in the IDAT field of the compressed county mosaic index. For the 2006 imagery the <strong><a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2006/NAIP2006_Index.zip" target="_blank">NAIP2006_Index</a></strong> shapefile or the .txt file of the associated image quarter quad .tif image tile contain the date the image was flown. The images have a UTM NAD83 meters projection. TFW worldfiles can be downloaded from the <a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2006/" target="_blank">FTP </a>site.</p>
+<ul>
+<li><a href="http://gis.utah.gov/wp-content/uploads/NAIP_info.txt">NAIP Information Sheet</a></li>
+<li><strong><a href="http://raster.utah.gov/?cat=NAIP%202006%20(1m)" target="_blank">Retrieve NAIP 2006 via Interactive Map</a></strong></li>
+<li><a href="ftp://ftp.agrc.utah.gov/NAIP/" target="_blank">Retrieve NAIP 2006 County Mosaics via FTP site</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2006/ColorInfrared/" target="_blank">Retrieve NAIP 2006 ColorInfrared (CIR) County Mosaics via FTP site</a></li>
+<li><a href="http://gis.utah.gov/data/utah-sgid-image-server/" target="_blank">Use our Image Server</a></li>
+</ul>
+<p>When downloading NAIP images from the FTP site, you will need to download the .zip file associated with a county area of interest (ie. NAIP2004_Boxe.zip is Box Elder County 2004 NAIP). You might need to right click on the file and chose "Copy To Folder" or "Save Link As" to download the file. The Mr.Sid mosaic files range in size from 40MB to 300MB for 2003 and 2004 at a 50:1 compression but the 2006 imagery utilized a 15:1 compression resulting in counties from 700MB to 3GB with improved image quality.</p>
+<p>2003 NAIP is <a href="http://gis.utah.gov/wp-content/uploads/NAIP2003_QQ_jpgs.txt" target="_blank">available</a> in JPEG <a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2003/QuarterQuads/" target="_blank">quarter quad</a> format and Mr.Sid <a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2003/" target="_blank">County Mosaics</a>.<br />
+2004 NAIP is <a href="http://gis.utah.gov/wp-content/uploads/NAIP2004_QQ_jpgs.txt" target="_blank">available</a> in JPEG <a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2004/" target="_blank">quarter quad</a> format and Mr.Sid <a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2004/" target="_blank">County Mosaics</a>.<br />
+2006 NAIP is <a href="http://gis.utah.gov/wp-content/uploads/NAIP2006_QQ_tifs.txt" target="_blank">available</a> in TIFF <a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2006/" target="_blank">quarter quad</a> format and Mr.Sid <a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2006/" target="_blank">County Mosaics</a>.<br />
+2006 NAIP CIR is <a href="http://gis.utah.gov/wp-content/uploads/NAIP2006_CIR_QQ_tifs.txt" target="_blank">available</a> in TIFF <a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2006_CIR/" target="_blank">quarter quad</a> format and Mr.Sid <a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2006/ColorInfrared/" target="_blank">County Mosaics</a>.</p>
+<p>If you have any trouble contact <a href="mailto:rkelson@utah.gov">Rick Kelson </a> at (801-538-3237).</td>
+<td style="text-align: center;"><a href="http://gis.utah.gov/wp-content/uploads/NAIP_sample.jpg" target="_blank"><img src="http://gis.utah.gov/wp-content/uploads/NAIP_sample.jpg" alt=" " width="200" height="200" /></a><br />
+<strong>    NAIP Sample</strong></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>

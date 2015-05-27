@@ -1,0 +1,389 @@
+---
+layout: page
+status: publish
+published: true
+title: DEQ Land-Related Contaminant and Cleanup Sites
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 4482
+wordpress_url: http://gis.utah.gov/?page_id=4482
+date: '2011-12-08 14:21:24 -0500'
+date_gmt: '2011-12-08 21:21:24 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- deq
+- environment
+---
+<p>[caption id="attachment_4794" align="alignright" width="256" caption="DEQ Land Locations"]<img class="size-full wp-image-4794" src="http://gis.utah.gov/gallery/sgid/envirolandmain.png" alt="ChangeMeLarge" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/PackagedData/_Statewide/DEQLandRelatedSites/"]Download Data Package[/button]</p>
+<h4><strong>DEQ Land-Related Contaminant and Cleanup Data</h4>
+<p></strong><br />
+<strong>Data Type:</strong> GIS Data Layer<br />
+<strong>Steward(s):</strong> Utah Department of Environmental Quality</p>
+<p><strong>Abstract:</strong><br />
+US EPA and State designated hazardous materials storage sites and contamination clean up program sites including CERLA, National Priority List, Underground Storage Tanks (UST), Brownfields, Voluntary Cleanup (VCP), Tier 2, Toxic Release Inventory (TRI), User Oil Permitted Facilities, Formerly Used Defense (FUD), RCRA Large &amp; Small Quantity Hazardous Waste Generators, Solid Waste Facilities, and Enforceable Written Assurance sites.ste. To view all DEQ geographic data online, see the <a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>.</p>
+<p><strong>Data Content:</strong></p>
+<p>The following data is available for download:</p>
+<p><h4 class="product">Large Quantity Generators</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirolargegenerators.png" alt="Changeme" />Environment.DSHWLargeQuantityGenerators contains locations of Large Quantity Generators in Utah. Large Quantity Generators (LQG) generate 1,000 kilograms per month or more of hazardous waste, or more than 1 kilogram per month of acutely hazardous waste.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"] 2007</p>
+<p>[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DSHWLargeQuantityGenerators/_Statewide/DSHWLargeQuantityGenerators_gdb.zip">Large Quantity Generators: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DSHWLargeQuantityGenerators/_Statewide/DSHWLargeQuantityGenerators_shp.zip">Large Quantity Generators: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Small Quantity Generators</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirosmallgenerators.png" alt="Changeme" />Environment.DSHWSmallQuantityGenerators contains locations of Small Quantity Generators in Utah. Small Quantity Generators (SQG) generate 100 kilograms - 1,000 kilograms of hazardous waste per month.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]2007</p>
+<p>[/tab]<br />
+[tab title="Contact"] 	haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DSHWSmallQuantityGenerators/_Statewide/DSHWSmallQuantityGenerators_gdb.zip">Small Quantity Generators: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DSHWSmallQuantityGenerators/_Statewide/DSHWSmallQuantityGenerators_shp.zip">Small Quantity Generators: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Used Oil Permitted Facilities</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirousedoil.png" alt="UsedOil" />Environment.DSHWPermittedUsedOilFacilities contains locations in Utah of all Used Oil Facilities: Marketers, Porcessoors, Transfer, Transport and Off-specification Permitted by UDEQ Division of Hazardous Waste (DSHW) - Used Oil Section.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"] 2006</p>
+<p>[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DSHWPermittedUsedOilFacilities/_Statewide/DSHWPermittedUsedOilFacilities_gdb.zip">Used Oil Permitted Facilities: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DSHWPermittedUsedOilFacilities/_Statewide/DSHWPermittedUsedOilFacilities_shp.zip">Used Oil Permitted Facilities: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.hazardouswaste.utah.gov/">Utah Department of Environmental Quality: Division of Solid & Hazardous Waste</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://www.hazardouswaste.utah.gov/gismeta/used%20oil%20permitted%20facilities.htm">Environment.DSHWPermittedUsedOilFacilities Metadata</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Solid Waste Landfills</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirosolidwaste.png" alt="SolidWaste" />Environment.DSHWSolidWasteFacilities contains locations for open and closed Solid Waste Landfills in Utah.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"] 2006</p>
+<p>[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DSHWSolidWasteFacilities/_Statewide/DSHWSolidWasteFacilities_gdb.zip">Solid Waste Landfills: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DSHWSolidWasteFacilities/_Statewide/DSHWSolidWasteFacilities_shp.zip">Solid Waste Landfills: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Formerly Used Defense Sites (FUDS)</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirofuds.png" alt="SolidWaste" />Environment.FUD contains locations of potential Formerly Used Defense sites. The Department of Defense (DoD) is responsible for environmental restoration of FUDS. FUD locations are based on coordinates derived from maps and GPS data.  These locations represent sites, not contaminated areas.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset. The UDEQ/Division of Environmental Response and Remediation assumes no responsibility or liability for the accuracy of these points.[/tab]<br />
+[tab title="Updates"]</p>
+<p>[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/FUD/_Statewide/FUD_gdb.zip">FUDS: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/FUD/_Statewide/FUD_shp.zip">FUDS: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="https://environment.usace.army.mil/what_we_do/fuds/">US Army Corps of Engineers Environmental Cop: FUDS</a></li>
+<li><a href="http://www.environmentalresponse.utah.gov/gismeta/Formerly%20Used%20Defense.htm">Environment.FUD Metadata</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Military Munitions Response Program (MMRP)</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirommrps.png" alt="MMRP" />Environment.MMRP contains locations of Military Munitions Response Program sites. MMRP manages the environmental, health and safety issues presented by unexploded ordnances (UXO), discarded military munitions (DMM) and munitions constituents (MC). Locations are based on coordinates derived from maps and GPS data. These locations represent sites, not contaminated areas.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset. The DERR assumes no responsibility or liability for the accuracy of these points.[/tab]<br />
+[tab title="Updates"] 2006</p>
+<p>[/tab]<br />
+[tab title="Contact"]rombach@utah.gov[/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/MMRP/_Statewide/MMRP_gdb.zip">MMRP: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/MMRP/_Statewide/MMRP_shp.zip">MMRP: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://aec.army.mil/usaec/cleanup/mmrp00.html">Military Munitions Response Program (MMRP)</a></li>
+<li><a href="http://www.environmentalresponse.utah.gov/gismeta/Military%20Munitions%20Response%20Program.htm">Environment.MMRP Metadata</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Enforceable Written Assurances (EWA)</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/enviroewa.png" alt="MMRP" />Environment.EWA contains locations of potential Enforceable Written Assurance sites. EWAs will generally ensure to property owners or prospective property owners that there is no unacceptable risk to human health or the environment. EWA locations are based on coordinates derived from maps and GPS data.  These locations represent sites, not contaminated areas.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]</p>
+<p>[/tab]<br />
+[tab title="Contact"]brees@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/EWA/_Statewide/EWA_gdb.zip">EWA: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/EWA/_Statewide/EWA_shp.zip">EWA: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://www.rules.utah.gov/publicat/code/r311/r311-600.htm#T14">UT Hazardous Substances Mitigation Act: Enforeceable Written Assurances</a></li>
+<li><a href="http://www.environmentalresponse.utah.gov/gismeta/Enforceable%20Written%20Assurances.htm">Environment.EWA Metadata</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">National Priorities List (NPL)</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/environpl.png" alt="NPL" />Environment.NPL contains locations of Utah National Priorities List Sites. The NPL is the list of national priorities among the known releases or threatened releases of hazardous substances, pollutants, or contaminants throughout the United States. Locations are based on coordinates derived from maps and GPS data. These locations represent sites, not contaminated areas.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]</p>
+<p>[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/NPL/_Statewide/NPL_gdb.zip">NPL: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/NPL/_Statewide/NPL_shp.zip">NPL: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://www.epa.gov/superfund/sites/npl/">National Priorities List</a></li>
+<li><a href="http://www.environmentalresponse.utah.gov/gismeta/CERCLA%20-%20National%20Priorities%20List.htm">Environment.NPL Metadata></a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Superfund Sites</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirositerem.png" alt="NPL" />Environment.SITEREM contains locations of potential EPA Superfund sites. The Comprehensive Environmental Response, Compensation, and Liability Act (CERCLA), commonly known as Superfund, imposes a tax on the chemical and petroleum industries and provides Federal authority to respond directly to releases or threatened releases of hazardous substances that may endanger public health or the environment. Locations are based on coordinates derived from maps and GPS data. These locations represent sites, not contaminated areas.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]</p>
+<p>[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/SITEREM/_Statewide/SITEREM_gdb.zip">SITEREM: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/SITEREM/_Statewide/SITEREM_shp.zip">SITEREM: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://www.epa.gov/superfund/policy/cercla.htm">US EPA CERCLA Overview</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Institutional Control Buffer Zones</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/enviroicbuffers.png" alt="NPL" />Environment.ICBUFFERZONES contains Institutional Control Buffer Zones in Utah.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]</p>
+<p>[/tab]<br />
+[tab title="Contact"] [/tab]<br />
+Who?<br />
+[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/ICBUFFERZONES/_Statewide/ICBUFFERZONES_gdb.zip">ICBUFFERZONES: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/ICBUFFERZONES/_Statewide/ICBUFFERZONES_shp.zip">ICBUFFERZONES: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Utah Toxic Release Inventory Tier II</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirotier2.png" alt="NPL" />Environment.TIER2 contains locations of Tier II facilities under the Emergency Planning and Community Right-to-Know Act (EPCRA). Qualifying facilities report on hazardous and toxic chemicals and are labeled either tier I or tier II. Locations are based on coordinates derived from maps and GPS data.  These locations represent sites, not contaminated areas.  The areas of contamination will be identified at a later stage.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"] 2008</p>
+<p>[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/TIER2/_Statewide/TIER2_gdb.zip">TIER2: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/TIER2/_Statewide/TIER2_shp.zip">TIER2: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://www.epa.gov/oem/content/epcra/">EPCRA Requirements</a></li>
+<li><a hef="http://www.environmentalresponse.utah.gov/gismeta/TIER2.htm">Environment.TIER2 Metadata</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product"> Toxic Release Inventory (TRI)</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirotri.png" alt="NPL" />Environment.TRI contains TRI locations in Utah. TRI is an EPA database containing data on disposal or release of toxic chemicals from U.S. facilities and information about how facilities manage those chemicals through recycling, energy recovery, and treatment. Locations are based on coordinates derived from maps and GPS data.  These locations represent sites, not contaminated areas.  The areas of contamination will be identified at a later stage.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"] 2008</p>
+<p>[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/TRI/_Statewide/TRI_gdb.zip">TRI: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/TRI/_Statewide/TRI_shp.zip">TRI: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://www.epa.gov/tri/">US EPA Toxics Release Inventory (TRI)</a>
+<li>
+<li><a href"http://www.environmentalresponse.utah.gov/gismeta/Toxic%20Release%20Inventory.htm">Environment.TRI Metadata></a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product"> Voluntary Cleanup Program (VCP)</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirovcps.png" alt="VCP" />Environment.VCP contains locations of Utah VCP. VCP is a program to encourage the voluntary cleanup of sites where there has been a contaminant release threatening public health and the environment. Locations are based on coordinates derived from maps and GPS data.  These locations represent sites, not contaminated areas.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"] 2008</p>
+<p>[/tab]<br />
+[tab title="Contact"]brees@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/VCP/_Statewide/VCP_gdb.zip">VCP: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/VCP/_Statewide/VCP_shp.zip">VCP: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://www.environmentalresponse.utah.gov/gismeta/Voluntary%20Cleanup%20Program.htm"><Environment.VCP Metadata></a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product"> FacilityUST</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/envirofacilityusts.png" alt="VCP" />Environment.FacilityUST contains the locations of facilities with underground storage tanks.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"] 2008</p>
+<p>[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/FACILITYUST/_Statewide/FACILITYUST_gdb.zip">FACILITYUST: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/FACILITYUST/_Statewide/FACILITYUST_shp.zip">FACILITYUST: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.environmentalresponse.utah.gov/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+<li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>

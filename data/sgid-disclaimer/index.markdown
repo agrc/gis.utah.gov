@@ -1,0 +1,27 @@
+---
+layout: page
+status: publish
+published: true
+title: State Geographic Information Database Disclaimer
+author:
+  display_name: Bert Granberg
+  login: Bert Granberg
+  email: bgranberg@utah.gov
+  url: ''
+author_login: Bert Granberg
+author_email: bgranberg@utah.gov
+wordpress_id: 3238
+wordpress_url: http://gis.utah.gov/?page_id=3238
+date: '2011-11-04 19:56:51 -0500'
+date_gmt: '2011-11-05 01:56:51 -0500'
+categories: []
+tags: []
+---
+<h3>SGID Disclaimer and Policy</h3>
+<p>AGRC has adopted the following spatial data disclaimer to be explicitedly included or referenced in all geospatial data, mapping products, and services created or hosted at AGRC including the contents of the SGID.</p>
+<p>“This product is for informational purposes and may not have been prepared for, or be suitable for legal, engineering, or surveying purposes. Users of this information should review or consult the primary data and information sources to ascertain the usability of the information. AGRC provides these data in good faith and shall in no event be liable for any incorrect results, any lost profits and special, indirect or consequential damages to any party, arising out of or in connection with the use or the inability to use the data hereon or the services provided. AGRC shall not be held liable for any third party’s interpretation of data provided by AGRC. AGRC provides these data and services as a convenience to the public. Furthermore, AGRC reserves the right to change or revise published data and/or these services at any time.</p>
+<p>Furthermore, it is the policy of the AGRC that where possible and practical:</p>
+<ul>
+<li>an appropriate statement, reflecting this disclaimer be used on all products using SGID geospatial data as a source, and that the date and stewardship credit for the data be included on the map; and</li>
+<li>standards-compliant and/or search engine-optimized (SEO) metadata, where available, be included with any distribution of all geospatial data”</li>
+</ul>

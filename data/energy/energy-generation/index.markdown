@@ -1,0 +1,55 @@
+---
+layout: page
+status: publish
+published: true
+title: Energy Generation
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3525
+wordpress_url: http://gis.utah.gov/?page_id=3525
+date: '2011-11-18 15:43:48 -0500'
+date_gmt: '2011-11-18 22:43:48 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[caption id="attachment_4794" align="alignright" width="256 " caption="Power Plants (CO2)"]<img class="size-full wp-image-4794" title="map" src="http://gis.utah.gov/wp-content/uploads/PowerPlants.png" alt="Power Plants" width="256" height="256" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/PowerPlants_CO2/_Statewide/"]Download Power Plants Dataset[/button]</p>
+<h4><strong>Power Plants (CO2)</h4>
+<p></strong></p>
+<p><strong>Data Type: GIS Data Layer</strong><br />
+<strong>Steward: AGRC</strong></p>
+<p><strong>Abstract:</strong><br />
+This dataset contains Power Plant locations from CO2 project for the State of Utah, July 2008.<br />
+This dataset also contains the ORIS Code, name, type, CO2 Annual Tons and fuel code for the plants.</p>
+<p>[icon style="globe" color="gray"]Usage: There are no constraints or warranties with regard to the use of this dataset.[/icon]<br />
+[icon style="calendar" color="gray"]Last Update: July 2008[/icon]<br />
+[icon style="user" color="gray"]Contact: <a href="mailto:agrc@utah.gov">AGRC</a>[/icon]<br />
+[icon style="link" color="gray"]Links: <a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_ENERGY_PowerPlants_CO2.html">FGDC Metadata</a>[/icon] </p>

@@ -1,0 +1,60 @@
+---
+layout: page
+status: publish
+published: true
+title: Judicial Districts
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3474
+wordpress_url: http://gis.utah.gov/?page_id=3474
+date: '2011-11-18 10:32:36 -0500'
+date_gmt: '2011-11-18 17:32:36 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[caption id="attachment_4794" align="alignright" width="256 " caption="Judicial Districts"]<img class="size-full wp-image-4794" title="map" src="http://gis.utah.gov/wp-content/uploads/JudicialDistricts.png" alt="JudicialDistricts" width="256" height="256" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/POLITICAL/UnpackagedData/JudicialDistricts/_Statewide"]Download Dataset[/button]</p>
+<h4><strong>Judicial Districts</h4>
+<p></strong></p>
+<p><strong>Data Type:</strong> GIS Data Layer<br />
+<strong>Steward(s):</strong> AGRC</p>
+<p><strong>Abstract:</strong><br />
+This dataset represents the State Judicial Districts as designated by their political boundaries. District, Juvenile and Justice courts are located in each of the state's eight judicial districts.</p>
+<p>[icon style="globe" color="gray"]Usage:<br />
+The DISTRICT field contains the judicial district number.<br />
+There are no constraints or warranties with regard to the use of this dataset.[/icon]</p>
+<p>[icon style="calendar" color="gray"]Last Update: Last updated in 2005[/icon]<br />
+[icon style="user" color="gray"]Contact: <a href="mailto:agrc@utah.gov">AGRC</a>[/icon]<br />
+[icon style="link" color="gray"]Links: </p>
+<ul>
+<li><a href="http://www.utcourts.gov/">Utah State Courts</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_POLITICAL_JudicialDistricts.html">FGDC Metadata</a></li>
+</ul>

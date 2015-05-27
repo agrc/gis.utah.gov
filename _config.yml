@@ -1,0 +1,8 @@
+# Site settings
+title: Utah Mapping Portal
+email: agrc@utah.gov
+description: Utah Mapping Portal | The Utah Automated Geographic Reference Center
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000" # the base hostname & protocol for your site
+twitter_username: steveagrc
+github_username:  agrc

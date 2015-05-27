@@ -1,0 +1,96 @@
+---
+layout: page
+status: publish
+published: true
+title: About
+author:
+  display_name: Map Utah
+  login: Map Utah
+  email: agrc@utah.gov
+  url: ''
+author_login: Map Utah
+author_email: agrc@utah.gov
+wordpress_id: 248
+wordpress_url: http://gis.utah.gov/?page_id=248
+date: '2011-06-30 23:18:14 -0500'
+date_gmt: '2011-06-30 23:18:14 -0500'
+categories: []
+tags: []
+---
+<h6>We're small but vital.</h6>
+<p>For over 30 years, a small group has worked with all levels of government and industry to build important map-based layers of information, promote the sharing of data resources, and curate one of the nation's most preeminent geographic repositories.</p>
+<p>The Automated Geographic Reference Center (AGRC) was established in 1984 by Utah lawmakers who believed locational intelligence is central to good public policy, operations, and management. Location is a foundational and integrating data element that touches all aspects of life, enterprise, and government, especially in Utah where urban and rural communities and landscapes work together despite stark contrast.</p>
+<p><a href="http://gis.utah.gov/agrc-newsletter/">AGRC Newsletter</a></p>
+<p>[image source_type="attachment_id" source_value="8083" align="center" lightbox="true" width="900" height="350" image title="Map of Proposed State of Deseret, 1864. (Courtesy: Utah Division of Archives)"]</p>
+<p>[one_half]</p>
+<h6>We do cartwheels for maps!</h6>
+<p>[image source_type="attachment_id" source_value="8076" align="right" lightbox="true" size="medium"]</p>
+<p>We at AGRC believe mapping is fundamental public value to help organize public information. Property owenership, public lands, elections, the economy, education, and the environment are all effected by geography.</p>
+<p>As a division of the <a href="http://dts.utah.gov">Utah Department of Technology Services</a>, one of AGRC's primary assignments is maintaining the Utah's <a href="/data">State Geographic Information Database (SGID)</a>,  a one-stop resource of map data layers and map-based web services that answer the basic questions "Where is?", "What's there?", but also provide the inputs to complex situational inquiries and modeling of real world processes. SGID map data can be used with Geographic Information System (GIS), Computer-Aided Design (CAD), public safety response systems, web applications, and more. Best of all most of SGID content is open, free, and public domain.</p>
+<p>We have a healthy dose of mapping-related services to provide:</p>
+<ul>
+<li><a href="/data">SGID Map Data and Services</a></li>
+<li>GIS Data Upkeep, Integration and Analysis</li>
+<li>Custom Mapping Web Applications & Programming</li>
+<li>TURN GPS (high precision, real time GPS correction for surveying, mapping, construction, & agriculture)</li>
+<li>Integrating Location into Existing Information Systems</li>
+<li>Map Database Strategy and Design</li>
+<li>GIS Training</li>
+<li>Technical Support</li>
+</ul>
+<p>[/one_half][one_half_last]</p>
+<h6>We traffic pixels for maps and tweet like crazy.</h6>
+<h5><a href="http://gis.utah.gov/wp-content/uploads/iphone1.png"><img title="iphone" src="http://gis.utah.gov/wp-content/uploads/iphone1-e1335827775405.png" alt="" width="25" height="42" /></a> Mobile</h5>
+<p>We've all experienced it - a mobile device and a need to locate something.  Mobile based mapping and location services are as common as social media in business and government. Whether it's a field biologist or a road maintenance crew - day-to-day government operations rely on location.  Find out more about AGRC's <a href="/maps-n-mobile-utahs-wildlife-vehicle-collision-reporting-system/">recent experience</a> in mobile technologies.</p>
+<h5><a href="http://gis.utah.gov/wp-content/uploads/print_map.png"><img title="print_map" src="http://gis.utah.gov/wp-content/uploads/print_map-e1335828505469.png" alt="" width="28" height="22" /></a> Print</h5>
+<p>Even the best technologies won't replace a good printed map.  AGRC is home to some of the best digital cartographic talent in Utah. The depth of our design and technical skills pair with the SGID's rich data resources for a unique ability to convey powerful insight into Utah's decision making processes.</p>
+<h5><a href="http://gis.utah.gov/wp-content/uploads/Monitor.png"><img title="Monitor" src="http://gis.utah.gov/wp-content/uploads/Monitor.png" alt="" /></a> Web</h5>
+<p>Web services are truly a key for facilitating cross-agency collaboration that achieves better outcomes and overall efficiencies. Map-based web services provide a phenomenal visual communication that rivals the Utah Jazz Bear's stunts coming across your monitor in HD. But map services on the web provide more than base maps and data visualization - APIs provide basic geographic insight (<em>how large? how long? where is? what's here? what's near?</em>) and data-as-a-service keeps information flows current.  Still, it's always nice to see pretty maps like <a href="http://elections.utah.gov/map/district-maps">this one</a> and <a href="http://www.utah.gov/broadband/map.html">this one</a>.</p>
+<p>[/one_half_last]</p>
+<h6>Some of the great folks we've worked with.</h6>
+<p>[framed_box][one_third] Blue Stakes of Utah<br />
+Utah Association of Counties<br />
+United States Geological Survey<br />
+Division of Wildlife Resources<br />
+Public Service Commission<br />
+Department of Environmental Quality<br />
+Utah State Tax Commission<br />
+University of Utah<br />
+Brigham Young University<br />
+Utah State University<br />
+Utah Valley University<br />
+Department of Public Safety<br />
+Utah League of Cities and Towns<br />
+CenturyLink<br />
+Utah State Board of Regents[/one_third][one_third]<br />
+Questar Gas<br />
+Pacificorp<br />
+Utah Rural Telecom Assocation<br />
+Utah Department of Transportation<br />
+Bureau of Land Management<br />
+University of California, Berkeley<br />
+US Library of Congress<br />
+Utah State Legislature<br />
+Utah State Elections Office<br />
+Governors Office of Economic Development<br />
+Department of Commerce<br />
+Utah Communications Agency Network<br />
+Valley Emergency Communication Center<br />
+Utah Division of State History<br />
+Comcast[/one_third][one_third_last]<br />
+Utah Historical Quarterly<br />
+Public Lands and Policy Coordination Office<br />
+Utah Democratic Party<br />
+Utah Republican Party<br />
+US Representative Rob Bishop<br />
+US Representative Jim Matheson<br />
+US Representative Jason Chaffetz<br />
+US Senator Orrin Hatch<br />
+US Senator Michael Lee<br />
+US Census Bureau<br />
+Federal Communications Commission<br />
+Salt Lake City<br />
+UTOPIA<br />
+Utah Department of Health<br />
+Department of Workforce Services[/one_third_last][/framed_box]</p>
+<p>&nbsp;</p>

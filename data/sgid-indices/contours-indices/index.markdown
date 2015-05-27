@@ -1,0 +1,139 @@
+---
+layout: page
+status: publish
+published: true
+title: Contour Line Extents and Indices
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 2459
+wordpress_url: http://gis.utah.gov/?page_id=2459
+date: '2011-09-15 13:27:33 -0500'
+date_gmt: '2011-09-15 19:27:33 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[caption id="attachment_4794" align="alignright" width="256" caption="Contour Line Extent and Index"]<img class="size-full wp-image-4794" src="http://gis.utah.gov/gallery/sgid/contour-line-extents-index-ut.jpg" alt="Contour Sample" />[/caption]<br />
+[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/PackagedData/_Statewide/ContourExtentsAndIndices/"]Download Contour Line Extents and Indices[/button]</p>
+<h4><strong>Contour Line Extents and Indices</h4>
+<p></strong><br />
+<strong>Data Type: GIS Data Layer</strong><br />
+<strong>Steward: AGRC</strong></p>
+<p><strong>Abstract:</strong><br />
+This dataset contains GIS mapping data representing the contour lines available in the State of Utah. The 'Extents' and the boundaries of the contour lines while the 'Indices' are the individual contour line tiles covered by the 'Extents'.</p>
+<p>&nbsp;</p>
+<p><strong>Data Content:</strong><br />
+The following data is available for download:</p>
+<h4 class="product">Contour Line Extents</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/contour-line-extents-ut.jpg" alt="Contour Extent Sample" /><br />
+INDICES.Contour_Line_Extents is a polygon dataset of the areas where contour line data is available in the State of Utah. The majority of these datasets are not available from AGRC's FTP site but contact information is provided to request the data.</p>
+<div class="clear"></div>
+<p>[/tab]</p>
+<p>[tab title="Usage"]<br />
+INDICES.Contour_Line_Extents is intended to be used to determine what contour line datasets are available for areas across the State of Utah.</p>
+<p>Each polygon extent contains the following attribute fields when available or applicable:</p>
+<ul>
+<li><strong>Interval</strong> - the interval of the contour lines</li>
+<li><strong>Year_Collected</strong> - the year collected</li>
+<li><strong>Description</strong> - a short description</li>
+<li><strong>File_Format</strong> - the file format</li>
+<li><strong>File_Extension</strong> - the file extension</li>
+<li><strong>Average_File_Size</strong> - the average file size of an individual image tile</li>
+<li><strong>Total_Size</strong> - the total file size of the entire product collection</li>
+<li><strong>Horizontal_Accuracy</strong> - the horizontal positional accuracy</li>
+<li><strong>Vertical_Accuracy</strong> - the vertical positional accuracy</li>
+<li><strong>Total_Square_Miles</strong> - the total square miles of the dataset</li>
+<li><strong>Contact</strong> - contact information</li>
+<li><strong>In_House</strong> - whether or not it is distributed from AGRC's FTP site</li>
+<li><strong>FTP_Path</strong> - the FTP directory to download the data from</li>
+<li><strong>Product</strong> - a generalize product name</li>
+<li><strong>Category</strong> - a generalized product category name</li>
+<li><strong>Estimated_Date</strong> - an estimated date the data was collected</li>
+<li><strong>HTML_Page</strong> - the URL to a webpage for the product</li>
+<li><strong>REST_Endpoint</strong> - the REST end point URL</li>
+<li><strong>LYR_File</strong> - a layer pointer and symbology</li>
+<li><strong>FlightDate_Location</strong> - where to find the exact flight date for each individual tile of data</li>
+<li><strong>Tile_Index</strong> - the tile index in the SGID for each product</li>
+<li><strong>Upload_Date</strong> - the date the polygon extent was loaded into the dataset</li>
+</ul>
+<p>These boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are made as new contour lines are acquired in Utah.</p>
+<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
+[/tab]</p>
+<p>[tab title="Updates"]<br />
+Updates to this dataset are published as needed.</p>
+<p>Recent update summaries:</p>
+<p>July 2011<br />
+[/tab]<br />
+[tab title="Contact"]<br />
+This dataset is maintained by AGRC in partnership with state and local government.</p>
+<p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.<br />
+[/tab]<br />
+[tab title="Links | Download"]<br />
+Download this dataset using the Download button at the top of this page.</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Contour_Line_Extents/_Statewide/Contour_Line_Extents_gdb.zip">Contour Line Extents: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Contour_Line_Extents/_Statewide/Contour_Line_Extents_shp.zip">Contour Line Extents: Shapefile</a> [/tab] [/tabs]<br />
+<h4 class="product">Salt Lake County 2 Meter Contour Line Index</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/contour-line-index-ut.jpg" alt="Changeme" /><br />
+INDICES.Contours_2meter_SLCounty tile index can be used to determine the boundaries of contour line data in Salt Lake County, UT. These contours were derived from 2 meter LiDAR collected in 2006. No smoothing has been applied to these contours.</p>
+<div class="clear"></div>
+<p>[/tab]</p>
+<p>[tab title="Usage"]<br />
+Each tile index contain the following attribute fields:</p>
+<ul>
+<li><strong>TILE</strong> - the shapefile tile name</li>
+<li><strong>PATH</strong> - the directory where the contour tile resides on the FTP site</li>
+<li><strong>SIZE</strong> - the average file size of each tile</li>
+<li><strong>Interval</strong> - the contour interval of the contour lines</li>
+</ul>
+<p>INDICES.Contours_2meter_SLCounty tile index is maintained by AGRC. Changes and updates are not planned to this dataset.</p>
+<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
+[/tab]</p>
+<p>[tab title="Updates"]<br />
+Updates to this dataset are not planned.<br />
+[/tab]<br />
+[tab title="Contact"]<br />
+This dataset is maintained by AGRC.</p>
+<p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.<br />
+[/tab]<br />
+[tab title="Links | Download"]<br />
+Download this dataset using the Download button at the top of this page.</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Contours_2meter_SLCounty/_Statewide/Contours_2meter_SLCounty_gdb.zip">2006 Salt Lake County 2 Meter Contours Index: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Contours_2meter_SLCounty/_Statewide/Contours_2meter_SLCounty_shp.zip">2006 Salt Lake County 2 Meter Contours Index: Shapefile</a>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ELEVATION/UnpackagedData/Contours_2Meter_SLCounty/_Statewide/Contours_2Meter_SLCounty_gdb.zip">2006 Salt Lake County 2 meter Contours: File Geodatabase</a></li>
+<p>[/tab] [/tabs]
+</ul>
+</li>
+</ul>

@@ -1,0 +1,186 @@
+---
+layout: page
+status: publish
+published: true
+title: Online Base Map Scale Information
+author:
+  display_name: Steve Gourley
+  login: Steve Gourley
+  email: sgourley@utah.gov
+  url: ''
+author_login: Steve Gourley
+author_email: sgourley@utah.gov
+wordpress_id: 699
+wordpress_url: http://gis.utah.gov/?page_id=699
+date: '2011-08-04 23:56:06 -0500'
+date_gmt: '2011-08-04 23:56:06 -0500'
+categories: []
+tags:
+- basemap
+- map
+- base map
+- cache
+---
+<h3>Base Map Cache Scales</h3>
+<p><img class="alignleft" title="scale" src="http://gis.utah.gov/wp-content/uploads/scales.png" alt="Scale Bar" width="150" height="150" /><br />
+Our strategy attempts to follow the<a href="http://resources.arcgis.com/en/help/main/10.2/index.html#//0154000002r6000000" target="_blank"> tile-caching scales utilized by Google and Microsoft</a> online maps. In addition we have created breakpoints between these tile scales for use with dynamic maps. Think of the breakpoints as the list of potential scale dependencies that can be used for the upper and lower scale criteria.</p>
+<div class="clear"></div>
+<div style="margin-left: auto; margin-right: auto;width:500px">
+[styled_table]<br />
+<table>
+<thead>
+<tr>
+<th>AGRC Level</th>
+<th>Google Tile Scale</th>
+<th>Break Point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">14</td>
+<td align="right">1128.50</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">1500</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td align="right">2256.99</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td align="right">3000</td>
+</tr>
+<tr>
+<td style="text-align: center;">12</td>
+<td align="right">4513.99</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">6250</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td align="right">9027.98</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">12500</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td align="right">18055.96</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">25000</td>
+</tr>
+<tr>
+<td style="text-align: center;">09</td>
+<td align="right">36111.91</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">50000</td>
+</tr>
+<tr>
+<td style="text-align: center;">08</td>
+<td align="right">72223.82</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">100000</td>
+</tr>
+<tr>
+<td style="text-align: center;">07</td>
+<td align="right">144447.64</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">200000</td>
+</tr>
+<tr>
+<td style="text-align: center;">06</td>
+<td align="right">288895.29</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">400000</td>
+</tr>
+<tr>
+<td style="text-align: center;">05</td>
+<td align="right">577790.58</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">800000</td>
+</tr>
+<tr>
+<td style="text-align: center;">04</td>
+<td align="right">1155581.15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">1600000</td>
+</tr>
+<tr>
+<td style="text-align: center;">03</td>
+<td align="right">2311162.31</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">3500000</td>
+</tr>
+<tr>
+<td style="text-align: center;">02</td>
+<td align="right">4622324.61</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">7000000</td>
+</tr>
+<tr>
+<td style="text-align: center;">01</td>
+<td align="right">9244649.23</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right">14000000</td>
+</tr>
+<tr>
+<td style="text-align: center;">00</td>
+<td align="right">18489298.45</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>[/styled_table] </p></div>

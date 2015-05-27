@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AGRC Web Mapping Services Demo</title>
+  <meta name="description" content="AGRC Web Mapping ServicesAGRC offers a variety of mapping-related web services that make it easy to add authoritative Utah web maps to your applications. The...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/uncategorized/data/developer/featured/2013/07/15/agrc-web-mapping-services-demo.html">
+  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="http://localhost:4000/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header id="header">
+  <div class="inner">
+    <div id="logo">
+      <a href="/">
+        <img class="ie_png" src="http://gis.utah.gov/wp-content/uploads/agrc_badge_v111.png" alt="Utah Mapping Portal" />
+      </a>
+    </div>
+    <div id="top_area">
+      <section id="striking_search-4" class="widget widget_search">
+        <form method="get" id="searchform" action="">
+          <input type="text" class="text_input" value="Search.." name="s" id="s" onfocus="if(this.value == 'Search..') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search..';}" />
+          <button type="submit" class="button gray"><span>Search</span>
+          </button>
+        </form>
+      </section>
+    </div>
+    <nav id="navigation">
+      <ul id="menu-main-menu" class="menu">
+        <li class="menu-item"><a href="agrc-newsletter">News</a>
+        </li>
+        <li class="menu-item"><a href="data">Data</a>
+        </li>
+        <li class="menu-item"><a href="developer">Developer</a>
+        </li>
+        <li class="menu-item"><a href="about">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">AGRC Web Mapping Services Demo</h1>
+  </header>
+
+  <article class="post-content">
+    <h1 id="agrc-web-mapping-services">AGRC Web Mapping Services</h1>
+<p>AGRC offers a variety of mapping-related web services that make it easy to add authoritative Utah web maps to your applications. The two most popular are our <a href="http://gis.utah.gov/developer/base-maps/">base maps</a> and <a href="http://api.mapserv.utah.gov/#geocoding">geocoding service</a>. These web services, together with a custom map service that shows your own agency/business-specific data, can add great geographic context to your web applications.</p>
+<p>This post will show you how simple it is to leverage AGRC's services with JavaScript. We will develop a simple web app that contains a dynamic map and simple address finding controls. Please note that we've added a simple glossary of terms at the bottom of this page.</p>
+<h2 id="esri-javascript-api">ESRI JavaScript API</h2>
+<p>The first thing to do is create a simple <code>.html</code> page and import <a href="https://developers.arcgis.com/en/javascript/">ESRI's ArcGIS API for JavaScript</a>. You can load their API by a CSS file:</p>
+<pre><code>&lt;link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css"&gt;
+</code></pre>
+<p>and a script file: </p>
+<pre><code>&lt;script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/"&gt;&lt;/script&gt;
+</code></pre>
+<p>This will load all necessary dependencies including <a href="https://developers.arcgis.com/en/javascript/jshelp/inside_dojo.html">Dojo</a> into your application. Dojo is a widely used javascript library containing commonly used functionality for cross-browser compatible user interface presentation and management. Because it's built on top of Dojo, ESRI's API also employs the new <a href="http://en.wikipedia.org/wiki/Asynchronous_module_definition">Asynchronous Module Definition (AMD)</a> standard for loading external JavaScript libraries. With both Dojo and ESRI development teams using AMD, it is highly recommended that you also use the AMD loading syntax, as this should maximize the life-expectancy for the map-service consuming code that you write. All code examples in this post will be using the new AMD syntax. If you are unfamiliar with AMD you may want to check out <a href="http://dojotoolkit.org/documentation/tutorials/1.9/modules/">Dojo's excellent tutorial</a> on the subject.</p>
+<h2 id="base-maps">Base Maps</h2>
+<p>AGRC provides <a href="http://gis.utah.gov/developer/base-maps/">seven high-quality, pre-rendered base map services</a>. These services are published through ESRI's <a href="http://www.esri.com/software/arcgis/arcgisserver">ArcGIS Server software</a>. The service directory end points can be found here: </p>
+<ul>
+<li><a href="http://mapserv.utah.gov/arcgis/rest/services/BaseMaps">http://mapserv.utah.gov/arcgis/rest/services/BaseMaps</a></li>
+</ul>
+<p>Adding one of these services to a map is relatively easy. First, we need to import a few ESRI modules. Then create a new map and tiled layer. Finally, we add the newly created layer to the map. Here's what the code looks like:</p>
+<p><script src="https://gist.github.com/stdavis/5979421.js"></script></p>
+<p>And here's the result; a fully interactive base map that shows off a lot of the great GIS data that is housed in the <a href="http://gis.utah.gov/data/">State Geographic Information Database (SGID)</a> that AGRC maintains.</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/elenab/8/embed?live">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<h2 id="geocoding-address-matching">Geocoding (Address Matching)</h2>
+<p>To <a href="http://en.wikipedia.org/wiki/Geocoding">geocode</a> an address means to find it's corresponding geographic coordinates (think latitude and longitude). AGRC provides a highly authoritative service for geocoding addresses which is regularly updated from <a href="http://gis.utah.gov/data/sgid-transportation/">road centerline</a> and <a href="http://gis.utah.gov/data/address-overview/">address point data</a> available to AGRC through its local government partners across the state. In addition, the service has been optimized for the State of Utah's somewhat unique placename and addressing system conventions.</p>
+<p>Before you can use any of AGRC's web API services you will need to create an account and an API key for your domain. Check out the <a href="http://developer.mapserv.utah.gov/StartupGuide">Getting Started Guide</a> for more information. Once you have a key you can start using services such as <a href="http://api.mapserv.utah.gov/#geocoding">geocoding</a>. Here's an example of a typical geocoding request that finds coordinates for 123 S Main St, SLC:</p>
+<ul>
+<li><a href="http://api.mapserv.utah.gov/api/v1/geocode/123%20S%20Main%20St/Salt%20Lake%20City?spatialReference=4326&amp;apiKey=AGRC-151FF757622085">http://api.mapserv.utah.gov/api/v1/geocode/123%20S%20Main%20St/Salt%20Lake%20City?spatialReference=4326&amp;apiKey=AGRC-151FF757622085</a></li>
+</ul>
+<p>There are samples of how to use this service in several popular languages in our <a href="https://github.com/agrc/GeocodingSample">GeocodingSample GitHub repository</a>.</p>
+<p>Perhaps the easiest way for you to use this service is to use the <code>FindAddress</code> widget in our <a href="https://github.com/agrc/agrc.widgets">AGRC Dojo Widget Library</a>. You can do this by adding a config object to your <code>require</code> call that defines an <code>agrc</code> package and its location. Here we have it pointing at the 'agrc' package on our CDN resource:</p>
+<p><script src="https://gist.github.com/stdavis/5985759.js"></script></p>
+<p>Once we have defined our <code>agrc</code> package, we can import modules just like any other package. This example shows how to import the <code>FindAddress</code> widget and initializing it with our <code>map</code> object and our <a href="http://api.mapserv.utah.gov/">AGRC Web API</a> key:</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/elenab/19/embed?live,javascript">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<h2 id="custom-data-overlays">Custom Data Overlays</h2>
+<p>The next step in our demo will be to add a data overlay on top of the base map. To do this you need to have access to a map web service, that points at your own data on a server and makes it accessible to web-based map requests. This is most commonly done using ESRI's <a href="http://www.esri.com/software/arcgis/arcgisserver">ArcGIS Server</a> or similar software or via cloud-hosted data and services platform such as <a href="http://www.arcgis.com/features/">ArcGIS Online</a>. If you do not have access to this software, you may want to <a href="http://gis.utah.gov/about/contact/">contact</a> us about getting a service set up on our servers for you. For this demo we will use a service that we host that shows the Utah Division of Fleet Operations' vehicle refueling sites around the state. The endpoint for this service is here:</p>
+<ul>
+<li><a href="http://mapserv.utah.gov/arcgis/rest/services/UtahDFOFuelSites/MapServer">http://mapserv.utah.gov/arcgis/rest/services/UtahDFOFuelSites/MapServer</a>.</li>
+</ul>
+<p>To add this map service to our map we need to import the <code>esri/layers/ArcGISDynamicMapServiceLayer</code> module and create a new layer using the url to the service. Then we can add it to the map. Here's what it looks like:</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/elenab/20/embed?live,javascript">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<h2>Spatial Queries</h2>
+<p>
+Another useful AGRC web API service is the ability to search for geographic features in any of the datasets in the SGID. This functionality is found in the Search service. You can check out the <a href="http://api.mapserv.utah.gov/#search">api docs for an example request and response</a>. We will use this service to display a message that tells us what city we are in when we click on the map. Within the map's click event we pass the coordinates from the map click event to the search service along with the feature class name (SGID10.BOUNDARIES.Municipalities) and the field name (NAME).  Then when the service returns, we populate the page with the data. Here's what it looks like:</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/elenab/23/embed?live,javascript">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<p>
+Please note that the <a href="http://api.mapserv.utah.gov/#info">api has services for accessing schema information for SGID database server content</a>. Feature class (map data layer) names are available by category (<a href="http://api.mapserv.utah.gov/api/v1/info/FeatureClassNames?sgidCategory=Political&amp;sgidVersion=10&amp;apiKey=AGRC-ApiExplorer">example request for feature classes in Political category</a>). With a feature class name and category, the names of the fields/columns can be accessed via the Feature Class Attribute Names service (<a href="http://api.mapserv.utah.gov/api/v1/info/FieldNames/Municipalities?category=Boundaries&amp;sgidVersion=10&amp;apiKey=AGRC-ApiExplorer">example for Municipalities feature class</a>).</p>
+<h2 id="wrap-up">Wrap-up</h2>
+<p>This is just a small sampling of what AGRC has to offer in terms of web mapping services. If you are interested in an advanced example of one of our web applications you can check out our <a href="https://github.com/agrc/AGRCJavaScriptProjectBoilerPlate">AGRCJavaScriptBoilerPlate</a>. A <a href="http://video.esri.com/watch/2326/how-i-work-utah-agrc-javascript-boilerplate-project-tour">presentation</a> detailing how this sample was engineered was given at the ESRI Dev Summit in March 2013.</p>
+<style>
+/* override wordpress yellow background */<br />
+.highlight {<br />
+   background-color: transparent !important;<br />
+}<br />
+code {<br />
+    display: inline-block;<br />
+    margin-bottom: 0;<br />
+}<br />
+iframe {<br />
+    height: 450px !important;<br />
+    border: none !important;<br />
+}<br />
+</style>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Utah Mapping Portal</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Utah Mapping Portal</li>
+          <li><a href="mailto:agrc@utah.gov">agrc@utah.gov</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/agrc">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">agrc</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/steveagrc">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">steveagrc</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Utah Mapping Portal | The Utah Automated Geographic Reference Center</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

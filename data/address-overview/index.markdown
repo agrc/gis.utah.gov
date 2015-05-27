@@ -1,0 +1,98 @@
+---
+layout: page
+status: publish
+published: true
+title: Address Overview
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 6218
+wordpress_url: http://gis.utah.gov/?page_id=6218
+date: '2012-04-11 16:47:23 -0500'
+date_gmt: '2012-04-11 22:47:23 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- vector
+- overview
+- category
+- services
+- daas
+- arcgis
+---
+<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
+<p>[styled_table]</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;" scope="col">Product Name</th>
+<th style="text-align: left;" scope="col">Type</th>
+<th style="text-align: left;" scope="col">Steward(s)</th>
+<th style="text-align: left;" scope="col">Description</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="5"><sub><em>click a product name for more information and download links</em></sub></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="/data/address-data/">Address Points</a></td>
+<td style="text-align: left;">GIS Data Layer</td>
+<td style="text-align: left;">AGRC, Local Governments</td>
+<td style="text-align: left;">Address point locations in Utah. This data is a work-in-progress and is not publically available at this time.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/address-data/">Address System Quadrants</a></td>
+<td style="text-align: left;">GIS Data Layer</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Polygons that depict the four quadrants of each address system in Utah.</td>
+</tr>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="http://gis.utah.gov/new-utah-geocoding-toolbox-for-arcgis-desktop/">Utah Geocoding Toolbox</a></td>
+<td style="text-align: left;">Geocoding API</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Custom geocoding toolbox for ArcGIS Desktop</td>
+<tr>
+<td style="text-align: left;"><a href="/data/address-geocoders-locators/">Address Locators</a></td>
+<td style="text-align: left;">Locator Service</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Composite address locators for geocoding that reference the statewide Transportation.Roads feature class and address point data in Utah.</td>
+</tr>
+</tbody>
+</table>
+<p>[/styled_table]</p>
+<p><strong>Related Data (see also)</strong></p>
+<ul>
+<li><a href="/data/location/">Location</a></li>
+</ul>
+<p><strong>Notes</strong></p>

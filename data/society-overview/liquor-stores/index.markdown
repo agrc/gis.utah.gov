@@ -1,0 +1,62 @@
+---
+layout: page
+status: publish
+published: true
+title: Liquor Stores
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 10008
+wordpress_url: http://gis.utah.gov/?page_id=10008
+date: '2012-06-19 12:39:39 -0500'
+date_gmt: '2012-06-19 18:39:39 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Data
+- utah
+- gis
+- mapping
+- location
+- points
+- dataset
+- download
+- agrc
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- vector
+- arcgis
+- point
+- utah department of alcholic beverage control
+- alcohol
+- wine
+- store
+- package agencies
+- liquor
+---
+<p>[caption id="attachment_4794" align="alignright" width="256 " caption="Liquor Stores and Package Agencies in Utah"]<img class="size-full wp-image-4794" title="map" src="http://gis.utah.gov/wp-content/uploads/LiquorStores.png" alt="ChangeMeLarge" width="256" height="256" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/LiquorStores/_Statewide/"]Download Dataset[/button]</p>
+<h4><strong>Liquor Stores</h4>
+<p></strong></p>
+<p><strong>Data Type:</strong> GIS Data Layer<br />
+<strong>Steward(s):</strong> AGRC & DABC</p>
+<p><strong>Abstract:</strong><br />
+Society.LiquorStores contains information and locations for liquor stores and package agencies controlled by the Department of Alcoholic Beverage Control of Utah. The source of this dataset is the Utah Department of Alcoholic Beverage Control's <a href="http://abc.utah.gov/stores/index.html">online map</a>.</p>
+<p>[icon style="calendar" color="gray"]Last Update: 2011[/icon]<br />
+[icon style="user" color="gray"]Contact: agrc@utah.gov[/icon]<br />
+[icon style="link" color="gray"]Links: <a href="http://abc.utah.gov/">Department of Alcoholic Beverage Control</a>[/icon] </p>

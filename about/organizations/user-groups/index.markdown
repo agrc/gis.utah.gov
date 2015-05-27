@@ -1,0 +1,41 @@
+---
+layout: page
+status: publish
+published: true
+title: User Groups
+author:
+  display_name: Map Utah
+  login: Map Utah
+  email: agrc@utah.gov
+  url: ''
+author_login: Map Utah
+author_email: agrc@utah.gov
+wordpress_id: 243
+wordpress_url: http://gis.utah.gov/?page_id=243
+date: '2011-06-30 23:16:09 -0500'
+date_gmt: '2011-06-30 23:16:09 -0500'
+categories: []
+tags: []
+---
+<p>[one_third]<br />
+<img class="ngg-singlepic ngg-none" src="http://gis.utah.gov/gallery/ugic/bear.png" alt="bear" /><br />
+<strong> Bear River Users Group </strong><br />
+[/one_third]</p>
+<p>[one_third]<br />
+<a href="http://gis.utah.gov/organizations/user-groups/davis-county-dug"><img class="ngg-singlepic ngg-none" src="http://gis.utah.gov/gallery/ugic/dug.png" alt="sw" width="104" height="90" /></a><br />
+<strong> Davis County Users Group </strong><br />
+[/one_third]</p>
+<p>[one_third_last]<br />
+<a href="http://gis.utah.gov/organizations/user-groups/salt-lake-users-group-slug"><img class="ngg-singlepic ngg-none" src="http://gis.utah.gov/gallery/ugic/sl.png" alt="sw" width="104" height="90" /></a><br />
+<strong> Salt Lake Users Group (SLUG)</strong><br />
+[/one_third_last]</p>
+<p>&nbsp;</p>
+<p>[one_third]<br />
+<a href="http://gis.utah.gov/organizations/user-groups/davis-county-dug"><img class="ngg-singlepic ngg-none" src="http://gis.utah.gov/gallery/ugic/dug.png" alt="sw" width="104" height="90" /></a><br />
+<strong> Davis County Users Group </strong><br />
+[/one_third]</p>
+<p>[one_third]<br />
+<a href="http://gis.utah.gov/organizations/user-groups/sw-utah"><img class="ngg-singlepic ngg-none" src="http://gis.utah.gov/gallery/ugic/sw.jpg" alt="sw" width="104" height="90" /></a><br />
+<strong> Southwest Users Group G5 </strong><br />
+[/one_third]</p>
+<p>[one_third]</p>

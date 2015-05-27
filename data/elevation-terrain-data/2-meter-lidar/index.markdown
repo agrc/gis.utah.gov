@@ -1,0 +1,109 @@
+---
+layout: page
+status: publish
+published: true
+title: 2 Meter LiDAR
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 872
+wordpress_url: http://gis.utah.gov/?page_id=872
+date: '2011-08-15 18:06:56 -0500'
+date_gmt: '2011-08-15 18:06:56 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- metadata
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- elevation
+- terrain
+- DEM
+- raster
+- topography
+- contour
+- meter
+- 1 meter
+- LiDAR
+- 2 meter
+- bare earth
+- first return
+- last return
+- xyzi
+- xyz
+- 1.25 meter
+---
+<h3>2 Meter LiDAR Elevation Data (2006)</h3>
+<p>AGRC has 1, 1.25 and 2 meter LiDAR in .asc format for various areas of the state collected during 2006.</p>
+<div class="wp-caption alignright" style="width: 144px">
+<img class="size-full wp-image-4794" src="http://gis.utah.gov/wp-content/uploads/DEM_2m_hillshade.jpg" alt=" " width="144" height="139" >
+<p class="wp-caption-text">LiDAR Sample</p>
+</div>
+<ul>
+<li>
+                    <a href="http://gis.utah.gov/wp-content/uploads/ASCII_Elevation_Data.doc">Using ASCII Files in ArcMap</a>
+                </li>
+</ul>
+<ul>
+<li>
+                    <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2m/2_meter_LiDAR_report.doc" target="_blank">2 meter LiDAR Information and Specifications</a>
+                </li>
+<li><strong><a href="http://raster.utah.gov/?cat=2%20Meter%20%7B2006%20LiDAR%7D">2 meter Bare Earth and Raw XYZi LiDAR Interactive Map</a></strong>
+                </li>
+<li>
+                    <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2m/2_meter_LiDAR_report.doc">2 meter LiDAR Report</a>
+                </li>
+<li>
+                    <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2m/2m_LiDAR_Metadata.XML">2 meter LiDAR Metadata</a>
+                </li>
+<li>
+                    <a href="http://gis.utah.gov/wp-content/uploads/LiDAR_Areas.html">Retrieve 2 meter Bare Earth LiDAR via FTP site</a>
+                </li>
+</ul>
+<p>1 meter first and last return, bare earth, and 1.25 meter bare earth datasets<br />
+                are also available from the FTP site or Interactive Map for some of the<br />
+                Salt Lake Valley.</p>
+<ul>
+<li><strong><a href="http://raster.utah.gov/?cat=1.25%20Meter%20%7B2006%20LiDAR%7D">1.25 meter Bare Earth and Raw XYZi LiDAR Interactive Map</a></strong>
+                    </li>
+<li>
+                        <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_1.25m/1.25_meter_LiDAR_report.doc">1.25 meter LiDAR Report</a>
+                    </li>
+<li>
+                        <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_1.25m/1.25_meter_LiDAR_Metadata.XML">1.25 meter LiDAR Metadata</a>
+                    </li>
+<li>
+                        <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_1.25m/">Retrieve 1.25 meter LiDAR via FTP site</a>
+                    </li>
+</ul>
+<ul>
+<li><strong><a href="http://raster.utah.gov/?cat=1%20Meter%20%7B2006%20LiDAR%7D">1 meter Bare Earth, First and Last Return, and Raw XYZi LiDAR Interactive Map</a></strong>
+                    </li>
+<li>
+                        <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_1m/1_meter_LiDAR_report.doc">1 meter LiDAR Report</a>
+                    </li>
+<li>
+                        <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_1m/1_meter_LiDAR_Metadata.XML">1 meter LiDAR Metadata</a>
+                    </li>
+<li>
+                        <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_1m/">Retrieve 1 meter LiDAR via FTP site</a>
+                    </li>
+</ul>
+<p>            <strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/LiDAR2006_2m_BareEarth_Tiles/_Statewide/LiDAR2006_2m_BareEarth_Tiles_shp.zip" target="_blank">LiDAR2006_2m_BareEarth_Tiles</a></strong> is a shapefile that can be used to determine what files to download in the Wasatch Front area. The Heber Valley and Iron County areas download as complete areas in a .zip file. These LiDAR files are in a .asc format and are around 10 mb per 2,000 X 2,000 meter block. This data has a UTM NAD83 NAVD88 Meters zone 12 Geoid 03 projection. If you have any trouble contact <a href="mailto:rkelson@utah.gov">Rick Kelson</a>  at (801-538-3237)</p>

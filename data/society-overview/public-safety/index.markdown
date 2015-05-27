@@ -1,0 +1,197 @@
+---
+layout: page
+status: publish
+published: true
+title: Public Safety
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 9893
+wordpress_url: http://gis.utah.gov/?page_id=9893
+date: '2012-06-19 11:06:38 -0500'
+date_gmt: '2012-06-19 17:06:38 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- mapping
+- location
+- points
+- dataset
+- download
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- digital
+- geographic
+- database
+- state
+- statewide
+- vector
+- public safety
+- safety
+- emergency
+- correctional
+- jail
+- fire stations
+- law enforcement
+- police
+- police stations
+- firemen
+- policemen
+- airport police
+- border patrols
+- community policing
+- constables
+- drug enforcement agents
+- indian reservation police
+- jails
+- juvenile detention hones
+- military police
+- prisons
+- secret service
+- transit police
+- united states bureau of alchol
+- tobacco
+- and firearms
+- federal bureau of investigation
+- united states marshals
+---
+<p>[caption id="attachment_4794" align="alignright" width="256" caption="Locations of Law Enforcement Facilities in Utah"]<img class="size-full wp-image-4794" src="http://gis.utah.gov/wp-content/uploads/PublicSafety.png" alt="ChangeMeLarge" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/PackagedData/_Statewide/PublicSafety/"]Download Data Package[/button]</p>
+<h4><strong>Public Safety</h4>
+<p></strong><br />
+<strong>Data Type:</strong> GIS Data Layer<br />
+<strong>Steward(s):</strong> AGRC</p>
+<p><strong>Abstract:</strong><br />
+This data package has three datasets with facilities relating to public safety in Utah. Public safety facilities include correctional facilities, fire stations, and law enforcement facilities. These datasets come from different sources and therefore there might be some overlap.</p>
+<p><strong>Data Content:</strong><br />
+The following data is available for download:</p>
+<p><h4 class="product">Correctional Facilities</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/Jails.png" alt="Changeme" />Society.CorrectionalFacilities contains locations for jails and prisons in Utah. A jail or prison defined by the Department of Justice consists of any facility or location where individuals are regularly and lawfully detained against their will. This includes Federal and State prisons, local jails, and juvenile detention facilities, as well as law enforcement temporary holding facilities. Locations which function primarily as law enforcement offices are included in this dataset if they have holding cells.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+No usage tips at this time. This dataset is comprised completely of license free data. </p>
+<p> [/tab]</p>
+<p>[tab title="Updates"]<br />
+August 2011<br />
+June 2013</p>
+<p>[/tab]<br />
+[tab title="Contact"]General Utah GIS data inquiries: agrc@utah.gov</p>
+<p>[/tab]<br />
+[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/CorrectionalFacilities/_Statewide/CorrectionalFacilities_gdb.zip">Society.CorrectionalFacilities: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/CorrectionalFacilities/_Statewide/CorrectionalFacilities_shp.zip">Society.CorrectionalFacilities: Shapefile</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Fire Stations</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/FireStations.png" alt="Changeme" />Society.FireStations includes any location where fire fighters are stationed or based out of, or where fire fighting equipment is stored. This definition includes fire stations that are both private and public entities, and fire stations that primarily fight forest or grassland fires. Fire fighting training academies are also included.
+<div class="clear"></div>
+<p>  [/tab]</p>
+<p>[tab title="Usage"]<br />
+Information included for each fire station include location, name, telephone number, and directions. Fire Stations that do not have a permanent location are depicted at the town hall or at the center of their service area. [/tab]</p>
+<p>[tab title="Updates"]<br />
+August 2011<br />
+June 2013</p>
+<p>[/tab]<br />
+[tab title="Contact"]General Utah GIS data inquiries: agrc@utah.gov</p>
+<p>[/tab]<br />
+[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/FireStations/_Statewide/FireStations_gdb.zip">Society.FireStations: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/FireStations/_Statewide/FireStations_shp.zip">Society.FireStations: Shapefile</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Law Enforcement</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/PoliceStations.png" alt="Changeme" />Society.LawEnforcement contains locations for law enforcement facilities in Utah. Law enforcement facilities are defined as any location where sworn officers of a law enforcement agency are regularly based or stationed. Law enforcement facilities are at least partially publicly funded. This law enforcement dataset includes federal, state, local and special jurisdiction facilities. Examples of law enforcement facilities included are municipal police, county sheriffs, state police, school police, park police, railroad police, and federal police.
+<div class="clear"></div>
+<p>  [/tab]</p>
+<p>[tab title="Usage"]<br />
+No usage tips at this time. [/tab]</p>
+<p>[tab title="Updates"]<br />
+August 2011<br />
+June 2013</p>
+<p>[/tab]<br />
+[tab title="Contact"]General Utah GIS data inquiries: agrc@utah.gov</p>
+<p>[/tab]<br />
+[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/LawEnforcement/_Statewide/LawEnforcement_gdb.zip">Society.LawEnforcement: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/LawEnforcement/_Statewide/LawEnforcement_shp.zip">Society.LawEnforcement: Shapefile</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">PSAP Locations</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/PSAPLocation.png" alt="Changeme" />Society.PSAPLocations represents the primary Public Safety Answering Point (PSAP) locations in Utah. The Salt Lake County Sheriff Office PSAP is secondary. The dataset was created in December 2004 by geocoding the PSAP addresses provided by the E911 Executive Committee.</p>
+<div class="clear"></div>
+<p>  [/tab]</p>
+<p>[tab title="Usage"]<br />
+Information included for each PSAP location include location, name, and type. [/tab]</p>
+<p>[tab title="Updates"]<br />
+November 25, 2013<br />
+December 2004</p>
+<p>[/tab]<br />
+[tab title="Contact"]General Utah GIS data inquiries: agrc@utah.gov</p>
+<p>[/tab]<br />
+[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/PSAPLocations/_Statewide/PSAPLocations_gdb.zip">Society.PSAPLocations: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/PSAPLocations/_Statewide/PSAPLocations_shp.zip">Society.PSAPLocations: Shapefile</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">PSAP Boundaries</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/PSAPBndy2.png" alt="Changeme" />Society.PSAPBoundaries represents Primary Safety Answering Point (PSAP) boundaries in Utah. Countywide PSAP jurisdiction boundaries are based on the SGID10.BOUNDARIES.Counties data layer, as of July 26, 2012. PSAP jurisdictions representing individual cities are based on the SGID10.BOUNDARIES.Municipalities data layer, as of July 26, 2012. The data also includes jurisdictional boundary representations of the Navajo Nation Tribal Lands, Hill Air Force Base, and Colorado City. Last update October 16, 2013.</p>
+<div class="clear"></div>
+<p>  [/tab]</p>
+<p>[tab title="Usage"]<br />
+Information included for each PSAP boundary include jurisdiction, name, and county. [/tab]</p>
+<p>[tab title="Updates"]<br />
+November 25, 2013<br />
+October 16, 2013</p>
+<p>[/tab]<br />
+[tab title="Contact"]General Utah GIS data inquiries: agrc@utah.gov</p>
+<p>[/tab]<br />
+[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/PSAPBoundaries/_Statewide/PSAPBoundaries_gdb.zip">Society.PSAPBoundaries: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/PSAPBoundaries/_Statewide/PSAPBoundaries_shp.zip">Society.PSAPBoundaries: Shapefile</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">State Agency Dispatch</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/DispatchBoundary.png" alt="Changeme" />Society.StateAgencyDispatch represents State Dispatch Boundaries.</p>
+<div class="clear"></div>
+<p>  [/tab]</p>
+<p>[tab title="Usage"]<br />
+Information included for each State Agency Dispatch: Name. [/tab]</p>
+<p>[tab title="Updates"]<br />
+October 2013</p>
+<p>[/tab]<br />
+[tab title="Contact"]General Utah GIS data inquiries: agrc@utah.gov</p>
+<p>[/tab]<br />
+[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/StateAgencyDispatch/_Statewide/StateAgencyDispatch_gdb.zip">Society.StateAgencyDispatch: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/UnpackagedData/StateAgencyDispatch/_Statewide/StateAgencyDispatch_shp.zip">Society.StateAgencyDispatch: Shapefile</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>

@@ -1,0 +1,59 @@
+---
+layout: page
+status: publish
+published: true
+title: How to Connect to the SGID via ArcSDE
+author:
+  display_name: Zach Beck
+  login: Zach Beck
+  email: zbeck@utah.gov
+  url: ''
+author_login: Zach Beck
+author_email: zbeck@utah.gov
+wordpress_id: 5828
+wordpress_url: http://gis.utah.gov/?page_id=5828
+date: '2012-04-10 13:58:58 -0500'
+date_gmt: '2012-04-10 19:58:58 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- vector
+- overview
+- category
+- services
+- daas
+- arcgis
+---
+<p>The SGID is also available via an ArcSDE database connection. Organized loosely around ISO categories, feature classes within ArcSDE are accessible by an ArcMap or ArcCatelog client. In this spirit, if you have a high speed internet connection (open to traffic on port 5151) you can connect directly to the SGID10 vector database to use all of the feature classes as if they were on your local computer. The big benefits for doing so are that you connect to the most current data, your hard drive won't fill up as fast, and all the data is available in the same place.</p>
+<p>How to connect to SGID via ArcSDE connection:</p>
+<p><strong>ArcMap 10.1 users -- <a href="http://gis.utah.gov/new-sde-connection-properties-for-arcgis-desktop-10-1/" title="New SDE Connection Properties for ArcGIS Desktop 10.1 – Updated">click here for instructions</a></strong></p>
+<p><strong>ArcMap 10.0 users -- <em>see instructions below</em>: </strong></p>
+<p><strong>1.</strong> In ArcCatalog or ArcMap (from Add Data), browse to Add Spatial Database Connections</p>
+<p>[image source_type="attachment_id" source_value="6591" size="medium" autoHeight="true" quality="100"]</p>
+<p><strong>2.</strong> Provide the following connection information, including the password 'agrc'.</p>
+<p><a href="http://gis.utah.gov/data/how-to-connect-to-the-sgid-via-sde/sdeconnect-2/" rel="attachment wp-att-6575"><img class="size-full wp-image-6575 alignnone" title="SDEconnect" src="http://gis.utah.gov/wp-content/uploads/SDEconnect2.png" alt="" width="468" height="437" /></a></p>
+<p><strong>Watch how to connect to SGID10</strong></p>
+<p><iframe src="http://player.vimeo.com/video/40108215?color=ffffff" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>

@@ -1,0 +1,20 @@
+---
+layout: nav_menu_item
+status: publish
+published: true
+title: Addresses
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 5635
+wordpress_url: http://gis.utah.gov/?p=5635
+date: '2012-04-06 11:07:55 -0500'
+date_gmt: '2012-04-06 17:07:55 -0500'
+categories: []
+tags: []
+---
+

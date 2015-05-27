@@ -1,0 +1,207 @@
+---
+layout: page
+status: publish
+published: true
+title: Contact Us
+author:
+  display_name: Map Utah
+  login: Map Utah
+  email: agrc@utah.gov
+  url: ''
+author_login: Map Utah
+author_email: agrc@utah.gov
+wordpress_id: 252
+wordpress_url: http://gis.utah.gov/?page_id=252
+date: '2011-06-30 23:19:46 -0500'
+date_gmt: '2011-06-30 23:19:46 -0500'
+categories: []
+tags: []
+---
+<p><strong>General Office Information:</strong> Utah Automated Geographic Reference</p>
+<address>1 State Office Building, Room 5130<br />
+Salt Lake City, UT 84114<br />
+Telephone 801.538.3665<br />
+Fax 801.538.3317<br />
+Office email: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a><br />
+<a href="http://gis.utah.gov/about/visiting-agrc/" target="_blank">View Map</a></address>
+<p>[divider_line] <strong>AGRC Staff Information</strong></p>
+<table style="width: 100%;" border="1">
+<thead>
+<tr>
+<td><strong>Group </strong>(Name)</td>
+<td><strong>Phone</strong></td>
+<td></td>
+<td><strong>Email</strong></td>
+<td><strong>Twitter</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr align="left" valign="top">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td><strong>Director</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td>Bert Granberg, Director</td>
+<td>801-538-3163</td>
+<td></td>
+<td>bgranberg@utah.gov</td>
+<td> @BertAGRC</td>
+</tr>
+<tr align="left" valign="top">
+<td colspan="5"></td>
+</tr>
+<tr align="left" valign="top">
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr align="left" valign="top">
+<td><strong>Local Partnerships</strong> (GPS Network, Imagery, Local Data -- Cadastral, Roads, Addresses)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td>Sean Fernandez*, Surveyor and Local Partnerships Lead</td>
+<td>801-209-9359</td>
+<td></td>
+<td>sfernandez@utah.gov</td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td>David Buell</td>
+<td>801-503-4247</td>
+<td></td>
+<td>dbuell@utah.gov</td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td>Kelly Green</td>
+<td>801-537-9079</td>
+<td></td>
+<td>kkgreen@utah.gov</td>
+<td> @KellyAGRC</td>
+<tr>
+<tr align="left" valign="top">
+<td>Mike Heagin*</td>
+<td>801-537-9296</td>
+<td></td>
+<td>mheagin@utah.gov</td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td>Rick Kelson</td>
+<td>801-538-3237</td>
+<td></td>
+<td>rkelson@utah.gov</td>
+<td> @RickAGRC</td>
+</tr>
+<tr align="left" valign="top">
+<td><strong>Application Development</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td>Matt Peters, Lead</td>
+<td>385-202-3297</td>
+<td></td>
+<td>mpeters@utah.gov</td>
+<td> @MattAGRC</td>
+</tr>
+<tr align="left" valign="top">
+<td>Scott Davis</td>
+<td>801-699-7187</td>
+<td></td>
+<td>stdavis@utah.gov</td>
+<td> @ScottAGRC</td>
+</tr>
+<tr align="left" valign="top">
+<td>Steven Gourley</td>
+<td>801-819-4255</td>
+<td></td>
+<td>sgourley@utah.gov</td>
+<td> @SteveAGRC</td>
+</tr>
+<tr align="left" valign="top">
+<td colspan="5"></td>
+</tr>
+<tr align="left" valign="top">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td>Jessie Pechmann</td>
+<td>801-538-3037</td>
+<td></td>
+<td>jpechmann@utah.gov</td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td>Keaton Walker</td>
+<td></td>
+<td></td>
+<td>kwalker@utah.gov</td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td colspan="5"></td>
+</tr>
+<tr align="left" valign="top">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td><strong>SGID, State Partnerships</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr align="left" valign="top">
+<td>Bert Granberg, Lead</td>
+<td>801-538-3163</td>
+<td></td>
+<td>bgranberg@utah.gov</td>
+<td> @BertAGRC</td>
+</tr>
+<tr align="left" valign="top">
+<td>Zach Beck</td>
+<td>801-538-3072</td>
+<td></td>
+<td>zbeck@utah.gov</td>
+<td> @ZachAGRC</td>
+</tr>
+<tr align="left" valign="top">
+<td>Michael Foulger</td>
+<td>801-652-2258</td>
+<td></td>
+<td>michaelfoulger@utah.gov</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>* = GPS Network Support direct contacts</p>

@@ -1,0 +1,23 @@
+---
+layout: slidervilla
+status: publish
+published: true
+title: Aerial Photography
+author:
+  display_name: Map Utah
+  login: Map Utah
+  email: agrc@utah.gov
+  url: ''
+author_login: Map Utah
+author_email: agrc@utah.gov
+excerpt: AGRC hosts a variety of aerial photography including High Resolution Orthophotograph
+  data, Digital Orthophoto Quad data, and data from the National Agricultural Imagery
+  Program.
+wordpress_id: 3135
+wordpress_url: http://gis.utah.gov/?post_type=slidervilla&#038;p=3135
+date: '2011-11-03 17:52:15 -0500'
+date_gmt: '2011-11-03 23:52:15 -0500'
+categories: []
+tags: []
+---
+<p><img class="ngg-singlepic ngg-none" src="http://gis.utah.gov/gallery/slider-items/slider_tilecacheb.png" alt="slider_tilecacheb" /></p>

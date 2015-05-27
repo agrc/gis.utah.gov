@@ -1,0 +1,20 @@
+---
+layout: nav_menu_item
+status: publish
+published: true
+title: Elevation and Terrain Data
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 6138
+wordpress_url: http://gis.utah.gov/?p=6138
+date: '2012-04-11 13:44:20 -0500'
+date_gmt: '2012-04-11 19:44:20 -0500'
+categories: []
+tags: []
+---
+

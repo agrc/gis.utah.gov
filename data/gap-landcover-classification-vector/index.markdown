@@ -1,0 +1,33 @@
+---
+layout: page
+status: publish
+published: true
+title: GAP Landcover Classification (Vector)
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3454
+wordpress_url: http://gis.utah.gov/?page_id=3454
+date: '2011-11-18 09:55:28 -0500'
+date_gmt: '2011-11-18 16:55:28 -0500'
+categories: []
+tags: []
+---
+<p>[button size="medium" color="white" textColor="#923922"]Download Vector GAP Landcover[/button]</p>
+<p>[caption id="attachment_4794" align="alignright" width="325" caption="Map Data for Address Points"]<img class="size-full wp-image-4794" title="map" src="http://gis.utah.gov/wp-content/uploads/map1.png" alt="" width="325" height="343" />[/caption]</p>
+<h4>GAP Landcover Classification (Vector)</h4>
+<p><strong>Data Type:</strong> Map Data<br />
+<strong>Steward(s):</strong> AGRC, Local Government partners<br />
+<strong>Description:</strong> Address points for Utah counties (10 complete and 6 partial). This dataset is not yet available, but will hopefully be available to the public soon.</p>
+<p><strong>Abstract:</strong><br />
+In Utah, addresses are assigned by local government addressing authorities using a defined addressing system, or grid. Typically, an addressing system consists of an origin (0,0) point, a north-south axis, an east-west axis, a</p>
+<p>convention that governs the assignment of addresses, typically expressed as the number of (100 address range) blocks per mile, and a boundary within which which addresses are assigned using this particular grid. This dataset contains the NW, NE, SE, and SW address quadrants for all address systems in Utah.</p>
+<p>[icon style="globe" color="gray"]Description: NW, NE, SE, and SW Address grid quadrants for all address grids in Utah.[/icon]<br />
+[icon style="tag" color="gray"]Warranties: There are no constraints or warranties with regard to the use of this dataset.[/icon]<br />
+[icon style="calendar" color="gray"]Last Update: December 1, 2011[/icon]<br />
+[icon style="user" color="gray"]POC: Jessie Pechmann, AGRC[/icon]<br />
+[icon style="link" color="gray"]Links: Notes on Utah Addressing Systems (Address Grids)[/icon] </p>

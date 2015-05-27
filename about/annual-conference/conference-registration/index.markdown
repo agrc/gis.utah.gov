@@ -1,0 +1,50 @@
+---
+layout: page
+status: publish
+published: true
+title: Conference Registration
+author:
+  display_name: Zach Beck
+  login: Zach Beck
+  email: zbeck@utah.gov
+  url: ''
+author_login: Zach Beck
+author_email: zbeck@utah.gov
+wordpress_id: 4588
+wordpress_url: http://gis.utah.gov/?page_id=4588
+date: '2012-01-11 10:06:24 -0500'
+date_gmt: '2012-01-11 17:06:24 -0500'
+categories: []
+tags: []
+---
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-5539" title="ugic2012_port" src="http://gis.utah.gov/wp-content/uploads/ugic2012logo.jpg" alt="" width="155" height="234" /></p>
+<h2 style="text-align: center;"><span style="font-size: x-large;"><strong><a href="http://events.r20.constantcontact.com/register/event?llr=arygxyiab&amp;oeidk=a07e5fpmgatc2365eb8">CLICK HERE TO REGISTER</a><br />
+</strong></span></h2>
+<h4><strong>Registration Costs:</strong></h4>
+<ul>
+<li>$250 - Regular Conference Registration, Wednesday thru Friday</li>
+<li>$150 - Daily Conference Registration, Wednesday or Thursday</li>
+<li>$160 - Student Conference Registration, Wednesday thru Friday</li>
+<li>$60 - Daily Student Conference Registration, Wednesday or Thursday</li>
+</ul>
+<h4><strong>Pre-Conference Training:</strong></h4>
+<ul>
+<li>$850 - ESRI: Introduction to ArcGIS Server10.0 (Mon-Tues)</li>
+<li>$850 - ESRI: ArcGIS Desktop III: Workflow and Analysis 10.0 (Mon-Tues)</li>
+<li>$200 - ESRI: ArcGIS Online Training (Tues)</li>
+<li>$300 - URISA: An Overview of Open Source GIS Software (Mon)</li>
+<li>$200 - UGIC: Javascript Hands on Training (Mon)</li>
+<li>$200 - UGIC: Relevant Python: Hands on Training (Tues)</li>
+</ul>
+<h4><strong>Registration Deadlines:</strong></h4>
+<ul>
+<li>Regular online registration through April 19th</li>
+<li>Late online registration until May 1st*</li>
+</ul>
+<p>* All late registrants will not receive a conference shirt</p>
+<p>*Special Circumstances: Please direct requests for discounted, student, or special circumstance registrations to registration@ugic.info for evaluation. These requests must be submitted no later than March 20th.</p>
+<p>A Confirmation / Invoice will be emailed once your registration is complete. If you do not receive an email please contact registration@ugic.info</p>
+<h4><strong>Registration Cancellation Policy:</strong></h4>
+<p>Conference registration cancellations received prior to April 18th will receive a $225 refund. Conference registration cancellations received after April 19th but before May 4th will receive a refund of $125. No refund will be issued for conference registration cancellations after May 4th. All refunds will be sent by mail after the end of the conference.</p>
+<h4><strong>Registration Questions or Changes:</strong></h4>
+<p>If you have any questions or need to make a late registration change (after April 1st), please contact registration@ugic.info.</p>

@@ -1,0 +1,65 @@
+---
+layout: page
+status: publish
+published: true
+title: Street Network Analysis
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3845
+wordpress_url: http://gis.utah.gov/?page_id=3845
+date: '2011-11-23 14:11:54 -0500'
+date_gmt: '2011-11-23 21:11:54 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/NetworkAnalysis/"]Download Data Package[/button]</p>
+<h2 class="abstract">Abstract</h2>
+<p>Derived (from Transportation.Roads) dataset designed to be used for network analysis (drive times, routes, service areas).</p>
+<h2 class="product">Data Content</h2>
+<p>The following data is available for download:<br />
+<img class="ngg-singlepic ngg-right tabBorder productImage productImage-Thumb" src="???" alt="" /><br />
+<h3 class="product">Street Network Analysis</h3>
+<p>[tabs]<br />
+[tab title="Description"]Transportation.Roads is the recommended starting point for almost anything related to Utah street centerlines. This includes cartography, address location, and, now, network analysis. (It also worth mentioning that the UDOT linear referencing system is derived from attributes in this dataset)</p>
+<p>While data used to support network analysis has many potential parameters, at a basic level, two components are especially important: 1) connectivity and 2) impedance (i.e. travel speed/costs).</p>
+<p>Connectivity of centerline features in Transportation.Roads is actively maintained but an impedance measure, while planned for later this year, has not bee actively enforced to date. However, it is possible to use a combination of cartographic feature codes (CFCC field), spatial queries, and the existing values in the SPD_LMT field to create a relatively crude but effective representation of speed limits that, then, can be used as an input to an impedance measure.[/tab]<br />
+[tab title="Usage"]<br />
+Important Fields:<br />
+F_T_IMP_MIN = Impedance, estimated in minutes in direction of line's orientation.<br />
+T_F_IMP_MIN = Impedance, estimated in minutes in the opposite direction of line's orientation.</p>
+<p>In areas where surface streets are likely to encounter traffic controls at intersections and other congestion, travel time has been increased by a factor of 1.3 (this will be 1.5 in future datasets). Otherwise the approximate speed limit was used to estimate travel time.</p>
+<p>There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]Last Updated March, 2011</p>
+<p>[/tab]<br />
+[tab title="Contact"]<a href="http://bgranberg@utah.gov">bgranberg@utah.gov</a>[/tab]<br />
+[tab title="Links | Download"]<br />
+<a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/NetworkAnalysis/">Network Analysis: File Geodatabase</a></p>
+<p>[/tab] [/tabs]</p>

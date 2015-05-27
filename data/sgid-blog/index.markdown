@@ -1,0 +1,23 @@
+---
+layout: page
+status: publish
+published: true
+title: SGID Blog
+author:
+  display_name: Map Utah
+  login: Map Utah
+  email: agrc@utah.gov
+  url: ''
+author_login: Map Utah
+author_email: agrc@utah.gov
+wordpress_id: 159
+wordpress_url: http://gis.utah.gov/?page_id=159
+date: '2011-06-29 18:37:36 -0500'
+date_gmt: '2011-06-29 18:37:36 -0500'
+categories: []
+tags:
+- Data
+- utah
+- gis
+---
+<p>[blog column="2" grid="true" count="50" cat="7" imageType="left" width="170" nopaging="false" offset="0"]</p>

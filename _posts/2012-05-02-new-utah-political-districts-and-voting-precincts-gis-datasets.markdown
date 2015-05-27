@@ -1,0 +1,44 @@
+---
+layout: post
+status: publish
+published: true
+title: New Political Districts & Voting Precincts datasets
+author:
+  display_name: Bert Granberg
+  login: Bert Granberg
+  email: bgranberg@utah.gov
+  url: ''
+author_login: Bert Granberg
+author_email: bgranberg@utah.gov
+wordpress_id: 8467
+wordpress_url: http://gis.utah.gov/?p=8467
+date: '2012-05-02 15:55:01 -0500'
+date_gmt: '2012-05-02 21:55:01 -0500'
+categories:
+- Home
+- Data
+- Featured
+- SGID Blog
+tags:
+- map
+- redistricting
+- political
+- voting
+---
+<p><strong>New Utah Political Districts:</strong></p>
+<p><a href="/data/political/2012-2021-house-senate-congressional-districts/">Political districts for state-level offices</a> (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections in 2012 and ongoing representation after the new representatives are installed on<br />
+Jan 1, 2013.</p>
+<p>The new political district boundaries, originally formed from 2010 Census Block files have been adjusted by AGRC, working together with the Utah Legislature, the Lt. Governor's Elections Office and the County Clerks' offices to increase the geographic accuracy.</p>
+<p>[caption id="attachment_8502" align="alignright" width="300" caption="Political and Precinct Boundaries"]<a href="http://gis.utah.gov/wp-content/uploads/political12.png"><img class=" wp-image-8502 " title="Political and Precinct Boundaries sample" src="http://gis.utah.gov/wp-content/uploads/political12-300x261.png" alt="" width="300" height="261" /></a>[/caption]</p>
+<p>Specifically, efforts have been made to</p>
+<ol>
+<li>move boundary lines off of residential structures visible in the 2009 aerial photography;</li>
+<li>accurately adjust to existing municipal and county boundaries in cases where the Legislative intent was to follow the boundary but the 2010 Census Blocks did not accurately represent portions of a boundary; and</li>
+<li>make technical adjustments proposed by the County Clerks to improve district/precinct implementation, as passed by the Legislature during the first 2 weeks of the 2012 general session which include reassignment of specific census blocks and several changes made by boundary description.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>New Utah Voting Precincts:</strong></p>
+<p><a href="/data/political/voter-precincts/">Political.VistaBallotAreas, a statewide GIS data layer</a> depicting voting precinct and subprecinct boundaries is also available. This dataset is compiled from the County Clerks and is actively used in the 26 of 29 counties that have adopted a GIS-based process to manage precinct-to-residence assignment within VISTA, the statewide voter registration database.</p>
+<p>Precincts can be formed (and subprecinct divisions eliminated) by performing a gis 'dissolve' operation on the Precinct field. This dataset has not yet been edited to eliminate very small gap and overlap slivers and or to align to the highest resolution of the county boundaries.</p>
+<p>Utah is one of only several states to integrate GIS functionality into elections management, a task that requires data standards, coordination, and geospatial services and infrastructure for accurately locating addresses and making spatial queries.</p>
+<p>This dataset is expected to change annually as counties need to realign precincts to agree with local boundary changes and to divide precincts whose voter count grows over the course of the year to exceed the maximum number of voters allowed per precinct (currently 1250 voters).</p>

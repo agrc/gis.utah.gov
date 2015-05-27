@@ -1,0 +1,117 @@
+---
+layout: page
+status: publish
+published: true
+title: Recreation
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 2874
+wordpress_url: http://gis.utah.gov/?page_id=2874
+date: '2011-10-21 15:42:54 -0500'
+date_gmt: '2011-10-21 21:42:54 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- vector
+- overview
+- category
+- services
+- daas
+- arcgis
+---
+<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
+<p>[styled_table]</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;" scope="col">Product Name</th>
+<th style="text-align: left;" scope="col">Type</th>
+<th style="text-align: left;" scope="col">Steward(s)</th>
+<th style="text-align: left;" scope="col">Description</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="5"><sub><em>click a product name for more information and download links</em></sub></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="/data/geoscience/avalanche/">Avalanche Paths</td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Avalanche paths in the tri-canyon area of the Wasatch Front, Utah.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/recreation/boat-ramps/">Boat Ramps</td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC & DNR</td>
+<td style="text-align: left;">Locations of boat ramps in Utah. Includes all State Parks with some other locations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/recreation/golf-courses/">Golf Courses</td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Locations of Municipal, Private, Public and Resort Golf Courses.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/recreation/local-parks">Local Parks</td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Locations of non state and non federal parks.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/recreation/ski-areas">Ski Areas</td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Locations of Utah Ski areas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/recreation/trails">Trails</td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Established trails and trailheads in Utah.</td>
+</tr>
+</tbody>
+</table>
+<p>[/styled_table]</p>
+<h3>Other Recreation Data</h3>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ELEVATION/UnpackagedData/HighestPeaks/_Statewide/">Utah Highest Peaks</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/RECREATION/UnpackagedData/SkiLifts/_Statewide/">Utah Ski Lifts</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/RECREATION/UnpackagedData/SkiTrails_XC/_Statewide/">Utah Cross-Country Ski Trails</a></li>
+</ul>
+<h3>Related Data (see also)</h3>
+<ul>
+<li><a href="/data/location/">Location</a></li>
+<li><a href="/data/boundaries/">Boundaries</a></li>
+</ul>
+<h3>Notes</h3>

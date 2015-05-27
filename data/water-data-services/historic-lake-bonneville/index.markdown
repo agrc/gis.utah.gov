@@ -1,0 +1,52 @@
+---
+layout: page
+status: publish
+published: true
+title: Historic Lake Bonneville
+author:
+  display_name: cheaton
+  login: cheaton
+  email: cheaton@utah.gov
+  url: ''
+author_login: cheaton
+author_email: cheaton@utah.gov
+wordpress_id: 10232
+wordpress_url: http://gis.utah.gov/?page_id=10232
+date: '2012-07-11 13:55:32 -0500'
+date_gmt: '2012-07-11 19:55:32 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Water
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- agrc
+- shapefile
+- gdb
+- geographic
+- database
+- vector
+- arcgis
+- history
+- lake bonneville
+---
+<p>[caption id="attachment_4794" align="alignright" width="256 " caption="Historic Lake Bonneville"]<img class="size-full wp-image-4794" title="map" src="http://gis.utah.gov/wp-content/uploads/HistoricLakeBonneville.png" alt="HistoricLakeBonneville" width="256" height="256" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/WATER/UnpackagedData/HistoricLakeBonneville/_Statewide/"]Download Dataset[/button]</p>
+<h4><strong>Historic Lake Bonneville</h4>
+<p></strong></p>
+<p><strong>Data Type:</strong> GIS Data Layer<br />
+<strong>Steward(s):</strong> AGRC</p>
+<p><strong>Abstract:</strong><br />
+Water.HistoricLakeBonneville represents the geographic extent of the historic Lake Bonneville shoreline.</p>
+<p>[icon style="globe" color="gray"]Usage: No usage tips are available at this time.[/icon]<br />
+[icon style="calendar" color="gray"]Last Update: Unknown[/icon]<br />
+[icon style="user" color="gray"]Contact: <a href="mailto:%20agrc@utah.gov">AGRC</a>[/icon]<br />
+[icon style="link" color="gray"]Links: </p>
+<li><a href="http://geology.utah.gov/utahgeo/gsl/flash/lb_flash.htm" title="FEMA">Utah Geologic Survey - Historic Lake Bonneville</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_WATER_HistoricLakeBonneville.html">FGDC Metadata</a></li>
+<p>[/icon] </p>

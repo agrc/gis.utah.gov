@@ -1,0 +1,58 @@
+---
+layout: page
+status: publish
+published: true
+title: Vintage USGS Topo Maps
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 965
+wordpress_url: http://gis.utah.gov/?page_id=965
+date: '2011-08-15 20:03:11 -0500'
+date_gmt: '2011-08-15 20:03:11 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- metadata
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- topography
+- contour
+- topographic
+- topo
+- usgs
+- geologic
+- survey
+- drg
+- drgs
+- quads
+- quadrangle
+- minute
+- scale
+- vintage
+- scanned
+---
+<h3>USGS Vintage Topographic Maps</h3>
+<p>The Utah Geological Survey created digital 15- and 30-minute vintage U.S. Geological Survey topographic quadrangle maps (1900-1966) by scanning original paper maps at a resolution of 500 dots per inch (dpi).  These digital scans were enhanced in Adobe Photoshop as needed, with subsequent 16 point spline georeferencing in ArcMap.  The resultant TIFF files are served on the AGRC ImageServer with on-the-fly collar clipping, producing a seamless map where adjacent quadrangle maps are available.</p>
+<ul>
+<li><strong><a href="http://raster.utah.gov/?cat=Vintage%20Topographic%20Map" target="_blank">Retrieve Vintage Topographic Maps via Interactive Map</a></strong></li>
+<li><a href="ftp://ftp.agrc.utah.gov/Imagery/DRG_Vintage/" target="_blank">Retrieve Vintage Topographic Maps via FTP site</a></li>
+</ul>
+<p><img title="Vintage Topo Example" src="http://gis.utah.gov/wp-content/uploads/Vintage_DRG.png" alt="Vintage Topo Sample" width="450" height="450" /></p>

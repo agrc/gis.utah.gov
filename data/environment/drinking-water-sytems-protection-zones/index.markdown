@@ -1,0 +1,147 @@
+---
+layout: page
+status: publish
+published: true
+title: DEQ Water-Related Monitoring
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 4491
+wordpress_url: http://gis.utah.gov/?page_id=4491
+date: '2011-12-08 14:25:57 -0500'
+date_gmt: '2011-12-08 21:25:57 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[caption id="attachment_4794" align="alignright" width="256" caption="DEQ Water-Related Data"]<img class="size-full wp-image-4794" src="http://gis.utah.gov/wp-content/uploads/EnviroWaterLarge.png" alt="ChangeMeLarge" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/PackagedData/_Statewide/DEQWaterMonitoring/"]Download Data Package[/button]</p>
+<h4><strong>DEQ Water-Related Monitoring</h4>
+<p></strong><br />
+<strong>Data Type:</strong> GIS Data Layer<br />
+<strong>Steward(s):</strong> Utah Department of Environmental Quality</p>
+<p><strong>Abstract:</strong><br />
+The DEQ's Division of Water Quality is responsible for safe drinking water and monitoring water quality. Below are DEQ datasets related to protection zones for drinking water. To view all DEQ geographic data online, see the <a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>.</p>
+<p><strong>Data Content:</strong></p>
+<h4 class="product">Assessment Units</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/enviromonitoredlakes.png" alt="Lakes" />Environment.DWQAssessmentUnits contains areas of water quality assessment units in Utah.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]<br />
+2010<br />
+[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DWQAssessmentUnits/_Statewide/DWQAssessmentUnits_gdb.zip">DWQAssesmentUnits: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DWQAssessmentUnits/_Statewide/DWQAssessmentUnits_shp.zip">DWQAssesmentUnits: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.waterquality.utah.gov/">DEQ: Division of Water Quality</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Monitored Lakes</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/enviromonitoredlakes.png" alt="Lakes" />Environment.DWQMonitoredLakes132 contains locations of the 132 lakes in Utah monitored for water quality by the Division of Water Quality (Department of Environmental Quality). Environment.LakeMonitoring contains 729 Monitored Lakes. Each location is a point, which is located within the lake's high water level shoreline.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]<br />
+2010<br />
+[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DWQMonitoredLakes132/_Statewide/DWQMonitoredLakes132_gdb.zip">DWQMonitoredLakes: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DWQMonitoredLakes132/_Statewide/DWQMonitoredLakes132_shp.zip">DWQMonitoredLakes: Shapefile</a>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/LakeMonitoring/_Statewide/LakeMonitoring_gdb.zip">LakeMonitoring: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/LakeMonitoring/_Statewide/LakeMonitoring_shp.zip">LakeMonitoring: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.waterquality.utah.gov/">DEQ: Division of Water Quality</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Ground Water Permits</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/enviromowaterpermits.png" alt="Changeme" />Environment.DWQGroundWaterPermits contains the location, permittee, permitted activity or facility for groundwater permits, and the Utah Division of Water Quality (DWQ) staff personnel handling the permit.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]<br />
+2010<br />
+[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]<br />
+Who?<br />
+[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DWQGroundWaterPermits/_Statewide/DWQGroundWaterPermits_gdb.zip">DWQGroundWaterPermits: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DWQGroundWaterPermits/_Statewide/DWQGroundWaterPermits_shp.zip">DWQGroundWaterPermits: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.waterquality.utah.gov/">DEQ: Division of Water Quality</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>
+<h4 class="product">Stream Monitored Sites</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/enviromowaterpermits.png" alt="Changeme" />Environment.StreamMonitoredSites contains locations for stream water quality monitoring sites in Utah
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]<br />
+[tab title="Updates"]<br />
+2007<br />
+[/tab]<br />
+[tab title="Contact"]haroldsandbeck@utah.gov [/tab]<br />
+Who?<br />
+[tab title="Links | Download"]<br />
+Download:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/StreamMonitorSites/_Statewide/StreamMonitorSites_gdb.zip">StreamMonitoredSites: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/StreamMonitorSites/_Statewide/StreamMonitorSites_shp.zip">StreamMonitoredSites: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://www.waterquality.utah.gov/">DEQ: Division of Water Quality</a></li>
+<li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>

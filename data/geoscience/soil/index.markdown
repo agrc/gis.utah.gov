@@ -1,0 +1,55 @@
+---
+layout: page
+status: publish
+published: true
+title: Soil
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3572
+wordpress_url: http://gis.utah.gov/?page_id=3572
+date: '2011-11-21 10:47:27 -0500'
+date_gmt: '2011-11-21 17:47:27 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[caption id="attachment_4794" align="alignright" width="256 " caption="Soil Types"]<img class="size-full wp-image-4794" title="map" src="http://gis.utah.gov/wp-content/uploads/Soils.png" alt="ChangeMeLarge" width="256" height="256" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/GEOSCIENCE/UnpackagedData/Soils/_Statewide/"]Download Dataset[/button]</p>
+<h4><strong>Soils</h4>
+<p></strong></p>
+<p><strong>Data Type:</strong> GIS Data Layer<br />
+<strong>Steward(s):</strong> U.S. Department of Agriculture, Natural Resources Conservation Service</p>
+<p><strong>Abstract:</strong><br />
+Geoscience.Soils represents the extent of defined soil types throughout Utah. The dataset was created by digitizing maps, compiling information onto a planimetric correct base and digitizing or revising digitized maps using remotely sensed and other information. It is generally the most detailed level of soil geographic data developed by the National Cooperative Soil Survey.  </p>
+<p>[icon style="globe" color="gray"]Usage: All surveys areas have their own tables which are not interchangeable.  All sets of tables are found at the <a href="http://www.nrcs.usda.gov/wps/portal/nrcs/main/ut/soils/surveys/">NRCS Soil Mart</a>.[/icon]<br />
+[icon style="calendar" color="gray"]Last Update: 2008[/icon]<br />
+[icon style="user" color="gray"]Contact: General Utah GIS data inquiries: agrc@utah.gov[/icon]<br />
+[icon style="link" color="gray"]Links: <a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_GEOSCIENCE_Soils.html">FGDC Metadata</a><br />
+[/icon] </p>

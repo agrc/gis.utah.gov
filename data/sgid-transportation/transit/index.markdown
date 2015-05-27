@@ -1,0 +1,169 @@
+---
+layout: page
+status: publish
+published: true
+title: Transit
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3848
+wordpress_url: http://gis.utah.gov/?page_id=3848
+date: '2011-11-23 14:16:26 -0500'
+date_gmt: '2011-11-23 21:16:26 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[caption id="attachment_4794" align="alignright" width="256" caption="Light Rail & Bus Routes With Stops"]<img class="size-full wp-image-4794" src="http://gis.utah.gov/wp-content/uploads/Transit_Large.png" alt="ChangeMeLarge" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/PackagedData/_Statewide/UtahTransitSystems/"]Download Data Package[/button]</p>
+<h4><strong>Bus, Commuter, and Light Rail </h4>
+<p></strong><br />
+<strong>Data Type:</strong> GIS Data Layer<br />
+<strong>Steward(s):</strong> Utah Transit Authority (UTA)</p>
+<p><strong>Abstract:</strong><br />
+This dataset contains the UTA bus route and stop locations, commuter rail route and stop locations, and light rail route, and stop locations.  The extent of these data is primarily along the Wasatch Front.</p>
+<p><strong>Data Content:</strong><br />
+The following data is available for download:</p>
+<p><h4 class="product">UTA Bus Routes & Stops</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/BusStops_Small.png" alt="Changeme" />Transportation.BusRoutes_UTA includes bus stops along streets, at TRAX stations, and park & ride lots serviced by UTA buses. Transportation.BusStops_UTA (as of August 2014) includes redesigned bus routes that have been adjusted for internal monitoring purposes and ski bus routes to the Cottonwood Canyons and Sundance Ski Resort.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+The UTA Bus Stops dataset was digitized to the Wasatch Front counties' street base maps and then exported from Trapeze (scheduling software) in shapefile format.</p>
+<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).   [/tab]</p>
+<p>[tab title="Updates"] Updates to this dataset are published periodically.</p>
+<p>Last Update: May 2015</p>
+<p>[/tab]<br />
+[tab title="Contact"]Questions can be directed to <a class="emailLink" href="mailto:lnelms@rideuta.com">Lorraine Nelms</a> (801.237-1947) at UTA.[/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download UTA Bus Routes & Stops:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/BusRoutes_UTA/_Statewide/BusRoutes_UTA_gdb.zip">Bus Routes: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/BusRoutes_UTA/_Statewide/BusRoutes_UTA_shp.zip">Bus Routes: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/BusStops_UTA/_Statewide/BusStops_UTA_gdb.zip">Bus Stops: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/BusStops_UTA/_Statewide/BusStops_UTA_shp.zip">Bus Stops: Shapefile</a></li>
+</ul>
+<p>Other links for this dataset:</p>
+<ul class="productLinks">
+<li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_BusRoutes_UTA.html">View FGDC format metadata (Bus Routes)
+<li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_BusStops_UTA.html">View FGDC format metadata (Bus Stops)</a> [/tab] [/tabs]</li>
+</ul>
+<h4 class="product">UTA Commuter Rail Routes</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/CommuterRail_Small.png" alt="Changeme" />Transportation.CommuterRailRoutes_UTA depicts the route of Utah Transit Authority's FrontRunner North and South commuter rail tracks as received from UTA May of 2013.
+<div class="clear"></div>
+<p>  [/tab]</p>
+<p>[tab title="Usage"]<br />
+The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision). [/tab]</p>
+<p>[tab title="Updates"] Updates to this dataset are published periodically.</p>
+<p>Last Update: May, 2013</p>
+<p>[/tab]<br />
+[tab title="Contact"]Questions can be directed to <a class="emailLink" href="mailto:lnelms@rideuta.com">Lorraine Nelms</a> (801.237.1947) at UTA.[/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download UTA Commuter Rail Routes:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/CommuterRailRoutes_UTA/_Statewide/CommuterRailRoutes_UTA_gdb.zip">Commuter Rail Routes: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/CommuterRailRoutes_UTA/_Statewide/CommuterRailRoutes_UTA_shp.zip">Commuter Rail Routes: Shapefile</a></li>
+</ul>
+<p>Other links for this dataset:</p>
+<ul class="productLinks">
+<li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_CommuterRailRoute_UTA.html">View FGDC format metadata (Rail Route)</a><br />
+[/tab] [/tabs]</li>
+</ul>
+<h4 class="product">UTA Commuter Rail Stations</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/CommuterStops_Small.png" alt="Changeme" />Transportation.CommuterRailStations_UTA depicts the locations of Utah Transit Authority's FrontRunner North and South commuter rail stations as received from UTA as of May 2013.
+<div class="clear"></div>
+<p>  [/tab]</p>
+<p>[tab title="Usage"]<br />
+These data include an attribute of the address where the rail station is located. </p>
+<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).[/tab]</p>
+<p>[tab title="Updates"] Updates to this dataset are published periodically.</p>
+<p>Last Update: May, 2013</p>
+<p>[/tab]<br />
+[tab title="Contact"]Questions can be directed to <a class="emailLink" href="mailto:lnelms@rideuta.com">Lorraine Nelms</a> (801.237.1947) at UTA.[/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download UTA Commuter Rail Stations:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/CommuterRailStations_UTA/_Statewide/CommuterRailStations_UTA_gdb.zip">Commuter Rail Stations: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/CommuterRailStations_UTA/_Statewide/CommuterRailStations_UTA_shp.zip">Commuter Rail Stations: Shapefile</a></li>
+</ul>
+<p>Other links for this dataset:</p>
+<ul class="productLinks">
+<li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_CommuterRailStops_UTA.html">View FGDC format metadata (Rail Stops)<br />
+</a> [/tab] [/tabs]</li>
+</ul>
+<h4 class="product">UTA Light Rail</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/LightRailRoutes_Small.png" alt="Changeme" />Transportation.LightRail_UTA represents the light rail system for the main North-South (Downtown to Sandy), University/Medical Center, West Valley, Daybreak, and Airport lines, as of May 2013. It also depicts the Sugar House trolley extension currently under construction.
+<div class="clear"></div>
+<p>  [/tab]</p>
+<p>[tab title="Usage"]<br />
+LightRail_UTA was digitized from aerial photographs dated July, 2012.</p>
+<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).<br />
+[/tab]</p>
+<p>[tab title="Updates"] Updates to this dataset are published periodically.</p>
+<p>Last Update: May, 2013<br />
+[/tab]<br />
+[tab title="Contact"]Questions can be directed to <a class="emailLink" href="mailto:lnelms@rideuta.com">Lorraine Nelms</a> (801.237.1947) at UTA.[/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download UTA Light Rail:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/LightRail_UTA/_Statewide/LightRail_UTA_gdb.zip">Light Rail: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/LightRail_UTA/_Statewide/LightRail_UTA_shp.zip">Light Rail: Shapefile</a></li>
+</ul>
+<p>Other links for this dataset:</p>
+<ul class="productLinks">
+<li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_LightRail_UTA.html">View FGDC format metadata (Light Rail)
+<li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_LightRailNewRoutes_UTA.html">View FGDC format metadata (Light Rail New Routes)</a> [/tab] [/tabs]
+</li>
+<h4 class="product">UTA Light Rail Stations </h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/wp-content/uploads/LightRailStops_Small.png" alt="Changeme" />Transportation.LightRailStations_UTA represents the center of the platform at all UTA light rail stations, as of May 2013.
+<div class="clear"></div>
+<p>  [/tab]</p>
+<p>[tab title="Usage"]<br />
+LightRailStations_UTA locations were digitized from aerial photographs dated 2012. The 900 South station and Sandy Expo station locations were obtained by GPS.</p>
+<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).<br />
+[/tab]</p>
+<p>[tab title="Updates"] Updates to this dataset are published periodically.</p>
+<p>Last Update: May 12, 2013</p>
+<p>[/tab]<br />
+[tab title="Contact"]Questions can be directed to <a class="emailLink" href="mailto:lnelms@rideuta.com">Lorraine Nelms</a> (801.237.1947) at UTA.[/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Download UTA Light Rail Stops:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/LightRailStations_UTA/_Statewide/LightRailStations_UTA_gdb.zip">Light Rail Stations: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/LightRailStations_UTA/_Statewide/LightRailStations_UTA_shp.zip">Light Rail Staions: Shapefile</a></li>
+</ul>
+<p>Other links for this dataset:</p>
+<ul class="productLinks">
+<li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_LightRailStations_UTA.html">View FGDC format metadata (Rail Stations)<br />
+</a> [/tab] [/tabs]</li>

@@ -1,0 +1,142 @@
+---
+layout: page
+status: publish
+published: true
+title: Transportation Data and Services
+author:
+  display_name: Bert Granberg
+  login: Bert Granberg
+  email: bgranberg@utah.gov
+  url: ''
+author_login: Bert Granberg
+author_email: bgranberg@utah.gov
+wordpress_id: 370
+wordpress_url: http://gis.utah.gov/?page_id=370
+date: '2011-07-06 20:27:31 -0500'
+date_gmt: '2011-07-07 02:27:31 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- Cartography
+- address ranges
+- Transportation
+- Freeways
+- Highways
+- Route
+- Linear Referencing
+- Roads
+- Streets
+- Railroad
+- Light Rail
+- Heavy Rail
+- Airports
+- Airstrips
+- Runways
+- Heliports
+- Ferry
+- Vehicle
+- Class
+- Inventory
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- vector
+- overview
+- category
+- services
+- daas
+- arcgis
+---
+<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
+<p>[styled_table]</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;" scope="col">Product Name</th>
+<th style="text-align: left;" scope="col">Type</th>
+<th style="text-align: left;" scope="col">Steward(s)</th>
+<th style="text-align: left;" scope="col">Description</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="5"><sub><em>click a product name for more information and download links</em></sub></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="/data/sgid-transportation/air/">Air</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Airport locations, airstrips/runways, and heliports</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/sgid-transportation/highway-routemilepost-locator">Highway Route/Milepost Locator</a></td>
+<td style="text-align: left;">web service</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Find route and milepost locations to 1/1000th of a mile</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/sgid-transportation/railroads">Railroads</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Statewide railroads data, including transit rail</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a title="Roads and Highway System" href="/data/sgid-transportation/roads-system/">Road and Highway System</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Statewide road and highway system data for cartography and address location. Includes local streets, mileposts, and numbered exit data.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/NetworkAnalysis/UtahRoadsNetworkAnalysis.zip">Street Network Analysis</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Draft dataset built for statewide network distance analysis from March 2011</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/sgid-transportation/transit">Transit</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">UTA</td>
+<td style="text-align: left;">Routes and stops for buses, light rail and commuter rail</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="http://data.udot.utah.gov" target="_blank">UDOT Business System Data</a></td>
+<td style="text-align: left;">data portal</td>
+<td style="text-align: left;">UDOT</td>
+<td style="text-align: left;">Utah Department of Transportation geospatial data and services gateway website. Includes detailed data for pavement management, planning, traffic volume, lanes, etc available in KML, shapefile, excel, and other formats</td>
+</tr>
+</tbody>
+</table>
+<p>[/styled_table]</p>
+<h3>Other Transportation Data</h3>
+<ul>
+<li>Road datasets published by Census and USGS are also available and are denoted with DLG and TIGER respectively along with the year of release and/or scale.</li>
+<li>Other datasets available within the SGID93.Transportation heading include: Scenic Byways, Scenic Backways, State Fuel Sites, Ports of Entry, Local Government Datasets</li>
+</ul>
+<h3>Related Data (see also)</h3>
+<ul>
+<li><a href="/data/address-overview/">Addresses</a></li>
+<li><a href="/data/recreation/ski-areas/">Ski Lifts (Recreation)</a></li>
+</ul>
+<h3>Notes</h3>

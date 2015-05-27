@@ -1,0 +1,65 @@
+---
+layout: page
+status: publish
+published: true
+title: Dominant Vegetation
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3446
+wordpress_url: http://gis.utah.gov/?page_id=3446
+date: '2011-11-17 16:17:45 -0500'
+date_gmt: '2011-11-17 23:17:45 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p><img class="ngg-singlepic alignright productImage productImage-Main" src="" alt="" /></p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/DominantVegetation/_Statewide/"]Download Dominant Vegetation[/button]<br />
+<br/></p>
+<h4><strong>Dominant Vegetation</strong></h4>
+<p><strong>Data Type:</strong> GIS Map Data<br />
+<strong>Steward(s):</strong> Utah Division of Wildlife Resources, unknown</p>
+<p><strong>Abstract:</strong><br />
+This dataset represents the statewide distribution of dominant vegetation species in Utah.<br />
+<img class="ngg-singlepic ngg-right tabBorder productImage productImage-Thumb" src="???" alt="" /><br />
+<h3 class="product">Dominant Vegetation</h3>
+<p>[tabs]<br />
+[tab title="Description"]This dataset represents the statewide distribution of dominant vegetation species in Utah. The data were derived from 1:24,000 scale orthophoto quadrangles, 1:40,000 scale aerial photos, and field mapping by the Utah Division of Wildlife Resources.<br />
+[/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no constraints or warranties with regard to the use of this dataset.[/tab]</p>
+<p>[tab title="Updates"] Unknown</p>
+<p>[/tab]<br />
+[tab title="Contact"]AGRC @ 801.538-3665 [/tab]</p>
+<p>[tab title="Links | Download"]</p>
+<ul class="productLinks">
+<li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BIOSCIENCE_DominantVegetation.html">View FGDC format metadata</a>
+<li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/BIOSCIENCE_DominantVegetation.pdf">View metadata</a> [/tab] [/tabs]</li>
+</ul>

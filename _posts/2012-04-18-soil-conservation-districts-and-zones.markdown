@@ -1,0 +1,20 @@
+---
+layout: nav_menu_item
+status: publish
+published: true
+title: Soil Conservation Districts and Zones
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 7166
+wordpress_url: http://gis.utah.gov/?p=7166
+date: '2012-04-18 08:37:08 -0500'
+date_gmt: '2012-04-18 14:37:08 -0500'
+categories: []
+tags: []
+---
+

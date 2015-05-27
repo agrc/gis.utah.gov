@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: Proposed Lidar Project, Northern Utah
+author:
+  display_name: Bert Granberg
+  login: Bert Granberg
+  email: bgranberg@utah.gov
+  url: ''
+author_login: Bert Granberg
+author_email: bgranberg@utah.gov
+wordpress_id: 15673
+wordpress_url: http://gis.utah.gov/?p=15673
+date: '2014-09-25 14:48:06 -0500'
+date_gmt: '2014-09-25 20:48:06 -0500'
+categories:
+- Uncategorized
+- Data
+- Featured
+- SGID Blog
+tags: []
+---
+<p><a href="http://gis.utah.gov/wp-content/uploads/ProposedLidarAreas20151.png"><img src="http://gis.utah.gov/wp-content/uploads/ProposedLidarAreas20151-195x300.png" alt="" title="ProposedLidarAreas2015" width="195" height="300" class="alignright size-medium wp-image-15675" /></a>AGRC, in partnership with the Department of Natural Resources (Division of Forestry, Fire, and State Lands and the Utah Geological Survey) and Department of Public Safety (Division of Emergency Management, FEMA Flood RiskMap Coordination) has submitted a <a href="https://docs.google.com/document/d/17l9lXmchIHTcPxj4tCKaB_yF0CIowkNxU_KZYij0Dg4/edit?usp=sharing">pre-proposal</a> to the USGS's 3DEP elevation modernization grant program. There is no guarantee of USGS grant support for these projects, planned for 2015. However, it is important for the Utah GIS user community to know the this proposal is in process and that the partnering organizations have begun discussions around required matching funds.</p>
+<p>The proposal focuses on obtaining LiDAR data, at USGS quality level 1 specification, (8 returns per square meter and related elevation and surface model products) for three geographic areas. These include:</p>
+<ul>
+<li>the shoreline of the Great Salt Lake and including the seismically active Hansel Valley to the north, which will extend to the northwest, the just completed 2013-14 QL1 LiDAR acquisition that covered much of the metro areas of the Wasatch Front., </li>
+<li>the valley floor and fault zones in Cache County, and</li>
+<li>the Bear Lake shoreline and fault zones in Rich County.</li>
+</ul>
+<p>Please contact <a href='mailto:bgranberg@utah.gov?subject=2015 Lidar'>Bert Granberg</a> or <a href='mailto:rkelson@utah.gov?subject=2015 Lidar'>Rick Kelson</a> with questions or interest in further participation. </p>

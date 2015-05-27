@@ -1,0 +1,136 @@
+---
+layout: page
+status: publish
+published: true
+title: Habitat Areas
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3463
+wordpress_url: http://gis.utah.gov/?page_id=3463
+date: '2011-11-18 10:09:30 -0500'
+date_gmt: '2011-11-18 17:09:30 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[caption id="attachment_4794" align="alignright" width="256" caption="Snowshoe Hare Habitat Sample"]<img class="size-full wp-image-4794" src="http://gis.utah.gov/gallery/sgid/habitatbig.png" alt="Habitat" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/PackagedData/_Statewide/HabitatAreas/"]Download Data Package[/button]</p>
+<h4><strong>Habitat Areas</h4>
+<p></strong><br />
+<strong>Data Type: GIS Data Layer</strong><br />
+<strong>Steward(s): DNR, Division of Wildlife Resources</strong></p>
+<p><strong>Abstract:</strong><br />
+Wildlife habitats created by the Utah Division of Wildlife Resources. Many of these habitats were created or confirmed by field biologists. Most habitat datasets contain a Crucial/Substantial value system. </p>
+<p><strong>Data Content:</strong><br />
+The following data is available for download:</p>
+<p><h4 class="product">Game Habitat</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="http://gis.utah.gov/gallery/sgid/habitatsmall.png" alt="Game Habitat" />Habitat areas for the following species in Utah: bandtailed pigeon, bison, black bear, blue grouse, bonetailed chub, california big horn sheep, california quail, chuckar, desert bighorn sheep, gambles quail, greater sage grouse, gunnison sage grouse, hungarian partridge, moose, mountain goat, mule deer, pronghorn, razorback sucker, ringnecked pheasant, rocky mountain bighorn sheep, rocky mountain elk, ruffed grouse, sharp tailed grouse, snowshoe hare, white tailed ptarmigan, and wild turkey.
+<div class="clear"></div>
+<p> [/tab]</p>
+<p>[tab title="Usage"]<br />
+There are no use limitations, but the Utah Division of Wildlife Resources provides no warranty nor accepts any responsibility or liability for any inaccurate or incomplete data associated with this file.<br />
+[/tab]</p>
+<p>[tab title="Updates"]<br />
+Most datasets were updated in May 2006, but some were updated prior to 2006.<br />
+[/tab]<br />
+[tab title="Contact"]Enter contact information here</p>
+<p>[/tab]<br />
+[tab title="Links | Download"]<br />
+Download all datasets with the button above, or use the links below:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_BandtailedPigeon/_Statewide/Habitat_BandtailedPigeon_gdb.zip">BandtailedPigeon: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Bison/_Statewide/Habitat_Bison_gdb.zip">Bison: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_BlackBear/_Statewide/Habitat_BlackBear_gdb.zip">BlackBear: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_BlueGrouse/_Statewide/Habitat_BlueGrouse_gdb.zip">BlueGrouse: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_BonetailedChub/_Statewide/Habitat_BonetailedChub_gdb.zip">BonetailedChub: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_CaliforniaBigHornSheep/_Statewide/Habitat_CaliforniaBigHornSheep_gdb.zip">CaliforniaBigHornSheep: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_CaliforniaQuail/_Statewide/Habitat_CaliforniaQuail_gdb.zip">CaliforniaQuail: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Chukar/_Statewide/Habitat_Chukar_gdb.zip">Chukar: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_DesertBighornSheep/_Statewide/Habitat_DesertBighornSheep_gdb.zip">DesertBigHornSheep: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GambelsQuail/_Statewide/Habitat_GambelsQuail_gdb.zip">GambelsQauil: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GreaterSageGrouseBrood/_Statewide/Habitat_GreaterSageGrouseBrood_gdb.zip">GreaterSageGrouseBrood: File Geodatabse</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GreaterSageGrouseOccupied/_Statewide/Habitat_GreaterSageGrouseOccupied_gdb.zip">GreaterSageGrouseOccupied: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GreaterSageGrouseWinter/_Statewide/Habitat_GreaterSageGrouseWinter_gdb.zip">GreaterSageGrouseWinter: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GunnisonSageGrouseBrood/_Statewide/Habitat_GunnisonSageGrouseBrood_gdb.zip">GunnisonSageGrouseBrood: File Geodatabase</a>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GunnisonSageGrouseOccupied/_Statewide/Habitat_GunnisonSageGrouseOccupied_gdb.zip">GunnisonSageGrouseOccupied: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GunnisonSageGrouseWinter/_Statewide/Habitat_GunnisonSageGrouseWinter_gdb.zip">GunnisonSageGrouseWinter: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_HungarianPartridge/_Statewide/Habitat_HungarianPartridge_gdb.zip">HungarianPartridge: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Moose/_Statewide/Habitat_Moose_gdb.zip">Moose: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_MountainGoat/_Statewide/Habitat_MountainGoat_gdb.zip">MountainGoat: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Muledeer/_Statewide/Habitat_Muledeer_gdb.zip">Muledeer: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Pronghorn/_Statewide/Habitat_Pronghorn_gdb.zip">Pronghorn: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RazorbackSucker/_Statewide/Habitat_RazorbackSucker_gdb.zip">RazorbackSucker: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RingNeckedPheasant/_Statewide/Habitat_RingNeckedPheasant_gdb.zip">RingNeckedPheasant: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RockyMountainBighornSheep/_Statewide/Habitat_RockyMountainBighornSheep_gdb.zip">RockyMountainBighornSheep: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RockyMountainElk/_Statewide/Habitat_RockyMountainElk_gdb.zip">RockyMountainElk: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RuffedGrouse/_Statewide/Habitat_RuffedGrouse_gdb.zip">RuffedGrouse: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_SharpTailedGrouse/_Statewide/Habitat_SharpTailedGrouse_gdb.zip">SharpTailedGrouse: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_SnowshoeHare/_Statewide/Habitat_SnowshoeHare_gdb.zip">SnowShoeHare: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_WhiteTailedPtarmigan/_Statewide/Habitat_WhiteTailedPtarmigan_gdb.zip">WhiteTailedPtarmigan: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_WildTurkey/_Statewide/Habitat_WildTurkey_gdb.zip">WildTurkey: File Geodatabase</a></li>
+</ul>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_BandtailedPigeon/_Statewide/Habitat_BandtailedPigeon_shp.zip">BandtailedPigeon: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_BlackBear/_Statewide/Habitat_BlackBear_shp.zip">BlackBear: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Bison/_Statewide/Habitat_Bison_shp.zip">Bison: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_BlueGrouse/_Statewide/Habitat_BlueGrouse_shp.zip">BlueGrouse: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_BonetailedChub/_Statewide/Habitat_BonetailedChub_shp.zip">BonetailedChub: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_CaliforniaBigHornSheep/_Statewide/Habitat_CaliforniaBigHornSheep_shp.zip">CaliforniaBigHornSheep: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_CaliforniaQuail/_Statewide/Habitat_CaliforniaQuail_shp.zip">CaliforniaQuail: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Chukar/_Statewide/Habitat_Chukar_shp.zip">Chuckar: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_DesertBighornSheep/_Statewide/Habitat_DesertBighornSheep_shp.zip">DesertBigHornSheep: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GambelsQuail/_Statewide/Habitat_GambelsQuail_shp.zip">GambelsQauil: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GreaterSageGrouseBrood/_Statewide/Habitat_GreaterSageGrouseBrood_shp.zip">GreaterSageGrouseBrood: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GreaterSageGrouseOccupied/_Statewide/Habitat_GreaterSageGrouseOccupied_shp.zip">GreaterSageGrouseOccupied: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GreaterSageGrouseWinter/_Statewide/Habitat_GreaterSageGrouseWinter_shp.zip">GreaterSageGrouseWinter: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GunnisonSageGrouseBrood/_Statewide/Habitat_GunnisonSageGrouseBrood_shp.zip">GunnisonSageGrouseBrood: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GunnisonSageGrouseOccupied/_Statewide/Habitat_GunnisonSageGrouseOccupied_shp.zip">GunnisonSageGrouseOccupied: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_GunnisonSageGrouseWinter/_Statewide/Habitat_GunnisonSageGrouseWinter_shp.zip">GunnisonSageGrouseWinter: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_HungarianPartridge/_Statewide/Habitat_HungarianPartridge_shp.zip">HungarianPartirdge: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Moose/_Statewide/Habitat_Moose_shp.zip">Moose: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_MountainGoat/_Statewide/Habitat_MountainGoat_shp.zip">MountainGoat: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Muledeer/_Statewide/Habitat_Muledeer_shp.zip">Muledeer: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_Pronghorn/_Statewide/Habitat_Pronghorn_shp.zip">Pronghorn: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RazorbackSucker/_Statewide/Habitat_RazorbackSucker_shp.zip">RazorbackSucker: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RingNeckedPheasant/_Statewide/Habitat_RingNeckedPheasant_shp.zip">RingNeckedPheasant: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RockyMountainBighornSheep/_Statewide/Habitat_RockyMountainBighornSheep_shp.zip">RockyMountainBighornSheep: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RockyMountainElk/_Statewide/Habitat_RockyMountainElk_shp.zip">RockyMountainElk: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_RuffedGrouse/_Statewide/Habitat_RuffedGrouse_shp.zip">RuffedGrouse: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_SharpTailedGrouse/_Statewide/Habitat_SharpTailedGrouse_shp.zip">SharpTailedGrouse: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_SnowshoeHare/_Statewide/Habitat_SnowshoeHare_shp.zip">SnowshoeHare: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_WhiteTailedPtarmigan/_Statewide/Habitat_WhiteTailedPtarmigan_shp.zip">WhiteTailedPtarmigan: Shapefile</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BIOSCIENCE/UnpackagedData/Habitat_WildTurkey/_Statewide/Habitat_WildTurkey_shp.zip">WildTurkey: Shapefile</a></li>
+</ul>
+<p>Other Links:</p>
+<ul>
+<li><a href="http://wildlife.utah.gov/dwr/">Utah Division of Wildlife Resources</a></li>
+</ul>
+<p>[/tab] [/tabs]</p>

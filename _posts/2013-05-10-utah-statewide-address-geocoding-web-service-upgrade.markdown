@@ -1,0 +1,65 @@
+---
+layout: post
+status: publish
+published: true
+title: Utah Statewide Address Geocoding Web Service Upgrade
+author:
+  display_name: Bert Granberg
+  login: Bert Granberg
+  email: bgranberg@utah.gov
+  url: ''
+author_login: Bert Granberg
+author_email: bgranberg@utah.gov
+wordpress_id: 13190
+wordpress_url: http://gis.utah.gov/?p=13190
+date: '2013-05-10 14:22:13 -0500'
+date_gmt: '2013-05-10 20:22:13 -0500'
+categories:
+- Home
+- Featured
+- SGID Blog
+tags:
+- sgid
+- utah
+- address
+- locator
+- web service
+- api
+- road
+---
+<p><a href="http://gis.utah.gov/wp-content/uploads/Geocode.png"><img src="http://gis.utah.gov/wp-content/uploads/Geocode-300x223.png" alt="" title="api.mapserv.utah.gov address locator" width="300" height="223" class="alignright size-medium wp-image-13195" /></a>Last week, AGRC finished a substantial upgrade to the Utah statewide address locator (geocoding) web service.  This service utilizes point- and road-based address map reference, data compiled into the State Geographic Information Database (SGID) from local sources, and published on a bi-monthly basis.</p>
+<p>The publicly accessible geocoding service allows developers to include 'best effort' Utah address finding functionality into web applications at no cost. </p>
+<p>Just as important, this service enables database administrators to build processes that allow any database containing information tied to an address to pick up geographic coordinates so that information can be easily integrated and viewed on mapping platforms. </p>
+<p>The link below demonstrates just one of the many ways RESTful requests can be used to get coordinates for Utah addresses via http:</p>
+<ul>
+<li><a href="http://api.mapserv.utah.gov/api/v1/Geocode/50%20W%20Capitol%20St/fillmore?spatialReference=4326&apiKey=AGRC-ApiExplorer">http://api.mapserv.utah.gov/api/v1/Geocode/50%20W%20Capitol%20St/fillmore?spatialReference=4326&apiKey=AGRC-ApiExplorer</a></li>
+</ul>
+<p>Documentation for the service is integrated into a test/demo interface at <a href="http://api.mapserv.utah.gov">http://api.mapserv.utah.gov</a>. Registration information and api key access for desktop and application users, and, metric/tracking for registered api keys can be accessed from the same site. A <a href="http://gis.utah.gov/using-the-mapserv-utah-gov-api-to-geocode-address/">previous post</a> provided a python sample script for bulk geocoding from arcgis-supported tabular file formats but could easily be modified to remove the arcpy dependency (which requires an esri ArcMap desktop license) for reading in the address table.</p>
+<p>The upgrades were funding by a partnership between the Department of Public Safety's Division of Highway Safety and the UDOT Traffic and Safety Division. AGRC will assist these agencies in using the new API to enhance mapping of crashes, citations, and other safety-related events.</p>
+<p>The updates are perhaps most easily described by the short series of Need/Solution statements below.  </p>
+<ul>
+<li><strong>Need: Search Zones - Zipcodes and Place Names</strong>
+<p><strong><em>Solution: </em></strong>Street addresses, like 120 S Main St, are obviously not unique across the entire state without additional information describing place. This makes a search zone required to locate an address within the desired area. Search zones can be a city/community name or a zip code. Often, the zip code or city information associated with a street addresses is either incorrect or unknown. With the exception of one's home and workplace, zip code and city boundaries are not well known and are not visible to data gatherers out in the physical world.</p>
+<p>Address system boundaries are actually more readily understood and are the real 'parent' objects of all assigned street addresses. The new geocoding api uses address system boundaries as the backend search zones and any zip code or community name within that address system can be used as a surrogate for that address system zone.  In other words, if you are looking to find an address within the Salt Lake County-wide address area, you can supply any zip code or community name within the Salt Lake County grid and the returned match location will also provide the correct zip code information. The correct city information can be found by using the Boundaries.Municipalities as parameters within the Attribute Search web service.</p>
+<p>Additionally, where County address assignment systems are used for unincorporated areas but addresses are supplied using the nearest city placename, the city address grid will be searched first and if no suitable match is found, the county address system will be searched as a secondary attempt to find a match location. This is especially useful in areas like northern Utah County where the addressing system changes on a block by block basis (for example from Lehi to Provo-based County grid and back) in some areas.</li>
+<li><strong>Need: Address Point or Street Centerline Match?</strong>
+<p><strong><em>Solution:</em> </strong>The new api release allows a preference to be stated for a match from the address point or the road centerline-based address reference data. The default is to first try for an address match, then if none is found, to try against the road centerlines. Voter addresses (address pt) and crash addresses (road) are examples of where an application area is likely to have a strongly preferred match dataset.</li>
+<li><strong>Need: Numeric Street Name 'Reversals'</strong>
+<p><strong><em>Solution:</em></strong>With Utah's somewhat unique distinct 'numeric/directional' street names (600 West), occasionally residents will provide a 'coordinate pair' address that does not properly order the house number and street name address components. </p>
+<p>Where needed, the new api will switch the address components in an input address like '800 E 1237 N' to 1237 N 800 E before trying to find a match.</li>
+<li><strong>Need: Place Name Abbreviations</strong>
+<p><strong><em>Solution:</em></strong> Placename abbreviations are often used and are not done so uniformly. The previous version of the api required the use of a standardized placename (we were using the placenames from the state highway map).</p>
+<p>The new api references a lookup table containing many common abbreviations like SLC, SALT LAKE, S JORDAN, WVC, HEBER, HEBER CITY, ST GEORGE, SAINT GEORGE, ST. GEORGE, etc)</li>
+<li><strong>Need: Support for common coordinate systems.</strong>
+<p><strong><em>Solution:</em></strong> The new API uses an optional input parameter to set the spatial reference system of the output geographic coordinates (lat/long, utm, state plane, web mercator, etc)</li>
+<li><strong>Need: Finding locations specified by highway route and milepost (<a href="http://api.mapserv.utah.gov/api/v1/Geocode/milepost/15/213.5?side=descreasing&apiKey=AGRC-ApiExplorer">milepost 231.5, I-15</a>).</strong>
+<p><strong><em>Solution:</em></strong> A new, specific REST-based method has been added for finding Route and Milepost locations. It is described and testable within the Geocoding section of the api documentation and includes the option to set the side for all sections of highway defined by UDOT as divided.  </li>
+</ul>
+<p><strong><br />
+Other key upgrades:</strong></p>
+<ul>
+<li>Addresses with delivery point ("dropoff") zip codes (such as 84190, 84114, 84148) are supported.</li>
+<li>Requests can specify the minimum match score and the number of additional candidates locations to return.</li>
+<li>Requests can specify the structure/format of the returned locational information : esriJSON, geoJSON, etc.</li>
+<li>Instantaneous and periodic usage statistics can be viewed by the services' administrators.</li>
+</ul>

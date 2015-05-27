@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Exploring LiDAR</title>
+  <meta name="description" content="Utah Mapping Portal | The Utah Automated Geographic Reference Center">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/data/elevation-terrain-data/exploring-lidar/">
+  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="http://localhost:4000/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header id="header">
+  <div class="inner">
+    <div id="logo">
+      <a href="/">
+        <img class="ie_png" src="http://gis.utah.gov/wp-content/uploads/agrc_badge_v111.png" alt="Utah Mapping Portal" />
+      </a>
+    </div>
+    <div id="top_area">
+      <section id="striking_search-4" class="widget widget_search">
+        <form method="get" id="searchform" action="">
+          <input type="text" class="text_input" value="Search.." name="s" id="s" onfocus="if(this.value == 'Search..') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search..';}" />
+          <button type="submit" class="button gray"><span>Search</span>
+          </button>
+        </form>
+      </section>
+    </div>
+    <nav id="navigation">
+      <ul id="menu-main-menu" class="menu">
+        <li class="menu-item"><a href="agrc-newsletter">News</a>
+        </li>
+        <li class="menu-item"><a href="data">Data</a>
+        </li>
+        <li class="menu-item"><a href="developer">Developer</a>
+        </li>
+        <li class="menu-item"><a href="about">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Exploring LiDAR</h1>
+  </header>
+
+  <article class="post-content">
+    <h3><strong>Exploring LiDAR</strong></h3>
+<p><iframe src="//player.vimeo.com/video/89565010" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="http://vimeo.com/89565010">AGRC Utah LiDAR applications video</a> from <a href="http://vimeo.com/utahagrc">AGRC</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p><a class="shutterset_" title="Point Cloud Profile" href="http://gis.utah.gov/wp-content/uploads/profile.jpg"><img class="ngg-singlepic ngg-middle alignmiddle" style="border: 1px solid black;" src="http://gis.utah.gov/wp-content/uploads/profile.jpg" alt="lidar" width="700" height="100" /></a></p>
+<div></div>
+<p><a class="shutterset_" title="First-Return DSM" href="http://gis.utah.gov/gallery/sgid/lidar_lg.jpg"><img class="ngg-singlepic ngg-right alignright" style="border: 1px solid black;" src="http://gis.utah.gov/gallery/sgid/thumbs/thumbs_lidar.jpg" alt="lidar" width="100" height="100" /></a></p>
+<p>Light Detection and Ranging elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by illuminating the target with light pulses from a laser and measuring the time and intensity of the pulse return to the sensor. Laser pulses from the sensor can exceed 150,000 pulses per second. Aircraft position (X,Y,Z) is measured twice a second while aircraft attitude (pitch, roll, yaw) is measured 200 times per second. Currently this is the most accurate type of elevation data available. There are two main types of LiDAR collections, <a href="https://www.udot.utah.gov/public/ucon/uconowner.gf?n=8336606666333974">Terrestrial</a> and <a href="http://www.sci.utah.edu/~kpotter/Library/Papers/kao:2005:VDML/kao_2005_VDML_00.png">Airborne</a>. Airborne LiDAR is most commonly used and available from AGRC.</p>
+<div></div>
+<p><a class="shutterset_" title="Bare-Earth DEM" href="http://gis.utah.gov/wp-content/uploads/Hillshd.jpg"><img class="ngg-singlepic ngg-left alignleft" style="border: 1px solid black;" src="http://gis.utah.gov/wp-content/uploads/Hillshd_sm.jpg" alt="lidar" width="100" height="100" /></a></p>
+<p>Bare-Earth Digital Elevation Models (DTM) and First-Return Digital Surface Models (DSM) are commonly used raster products derived from LiDAR point cloud collections. Bare-Earth DEMs have had features above the ground filtered out and are what is typically used for floodplain and hydro-logic modeling. First-return (highest-hit) raster products model a surface but retain the features above the ground such as buildings, utilities, other manmade structures and vegetation.</p>
+<div></div>
+<p><a class="shutterset_" title="Fully Classified Point Cloud" href="http://gis.utah.gov/wp-content/uploads/PtCloud_3D.jpg"><img class="ngg-singlepic ngg-right alignright" style="border: 1px solid black;" src="http://gis.utah.gov/wp-content/uploads/pt_cloud_full_sm.jpg" alt="lidar" width="100" height="100" /></a></p>
+<p>LiDAR point clouds can be classified so that each point in the cloud is designated a landcover type (ex. ground, water, road, building, vegetation, etc.). The vendor for the <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2013_2014/WasatchFront_LiDAR_2013-2014_Poster.pdf" title="project">2013-2014 Wasatch Front LiDAR</a> project, Watershed Sciences Inc. (WSI) now a <a href="http://quantumspatial.com/" title="WSI">Quantum Spatial</a> company, has provided the following samples that show some of what can be done with the collected LiDAR data. Please note that while the sample data below contains LAS point cloud data that are fully classified, the point clouds delivered for the project only have the following classifications (including intensity, return number, and RGB values), yet further classification of the point cloud is possible:</p>
+<dl>
+<dt>Code | Description</dt>
+<dd>1 | Processed, but unclassified</dd>
+<dd>2 | Bare-earth ground</dd>
+<dd>7 | Noise</dd>
+<dd>9 | Water</dd>
+<dd>10 | Ignored Ground (Breakline proximity)</dd>
+<dd>11 | Withheld</dd>
+</dl>
+<h4><strong>Lidar Samples:</strong></h4>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/AGRC%20Utah%20LiDAR%20applications%20writeup.pdf"><strong>LiDAR Applications</strong></a></li>
+<li><a href="http://vimeo.com/89565010"><strong>LiDAR Applications Video</strong></a></li>
+<li>Download sample LiDAR data package <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/LiDAR_Samples.zip"><strong>(ArcMap users)</strong></a><a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/LiDAR_Samples_CAD.zip"><strong>(CAD users)</strong></a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/"><strong>Download more sample LiDAR data</strong></a></li>
+</ul>
+<h4><strong>Lidar Resources:</strong></h4>
+<ul>
+<li><a href="http://gis.utah.gov/data/elevation-terrain-data/"><strong>AGRC</strong></a></li>
+<li><a href="http://resources.arcgis.com/en/communities/3d/"><strong>ArcGIS 3D Community</strong></a></li>
+<li><a href="http://rapidlasso.com/"><strong>rapidlasso</strong></a></li>
+<li><a href="http://www.opentopography.org/index.php"><strong>Open Topography</strong></a></li>
+<li><a href="http://lidar.cr.usgs.gov/"><strong>USGS Center for LiDAR Coordination and Knowledge (CLICK)</strong></a></li>
+<li><a href="http://www.fugroviewer.com/"><strong>Fugro LiDAR Viewer</strong></a> and <strong><a href="http://www.geonext.nl/wp-content/uploads/2014/05/Point-Cloud-Viewers.pdf">other free viewers</a></strong></li>
+</ul>
+<p>LiDAR collections, derivative products and analytics are numerous and can include:</p>
+<ul>
+<li>bare-earth raster elevation models *</li>
+<li>first-return (aka Highest-Hit) raster elevation models *</li>
+<li>point cloud (with varying levels of point classification) *</li>
+<li>laser pulse intensity images *</li>
+<li>contour lines</li>
+<li>building footprints</li>
+<li>vegetation metrics</li>
+<li>hydrology modeling</li>
+<li>landslide potential</li>
+<li>solar potential</li>
+<li>3D modeling</li>
+<p><em>* - products delivered for the 2013-2014 Wasatch Front project</em>
+
+<td>If you have any questions contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a> at (801-538-3237)</td>
+</p></ul></p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Utah Mapping Portal</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Utah Mapping Portal</li>
+          <li><a href="mailto:agrc@utah.gov">agrc@utah.gov</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/agrc">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">agrc</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/steveagrc">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">steveagrc</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Utah Mapping Portal | The Utah Automated Geographic Reference Center</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

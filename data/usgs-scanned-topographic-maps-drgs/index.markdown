@@ -1,0 +1,79 @@
+---
+layout: page
+status: publish
+published: true
+title: Download USGS Scanned Topographic Maps (DRGs)
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 884
+wordpress_url: http://gis.utah.gov/?page_id=884
+date: '2011-08-15 18:16:39 -0500'
+date_gmt: '2011-08-15 18:16:39 -0500'
+categories: []
+tags:
+- gis
+- map
+- download
+- topographic
+- topo
+- usgs
+- drg
+- drgs
+- quads
+- quadrangle
+- 24k
+- 100k
+- scanned
+- 250k
+- 500k
+- collared
+- collarless
+- GeoTIFF
+---
+<p>The SGID contains a complete statewide coverage of scanned standard series USGS topographic maps, also known as digital raster graphics (DRGs). AGRC has modified these DRGs so that they are collarless and are georeferenced to the surface of the earth using the UTM Zone 12 North, NAD83 projected coordinate system (except where noted).</p>
+<p>The 1:24K, 1:100K, and 1:250K scale USGS topographic maps are available in mosaiced format using the SGID Image Server's free downloadable client for use in ArcMap and CAD software.</p>
+<ul>
+<li><strong><a href="http://raster.utah.gov/?catGroup=24K%20GeoPDF,24K%20DRG,100K%20DRG,250K%20DRG&title=USGS%20Topo%20Maps">Download USGS Topo Maps By Interactive Map (1:24000, 1:100000 and 1:250000)</a></strong></li>
+</ul>
+<p>File-based 1:24K, 1:100K, 1:250K DRGs available for download from AGRC's FTP site are indexed by both quad name and quad number (SGID Q Number), using the links below:</p>
+<p><strong>1:24K Collarless, GeoTIFF Format for GIS: </strong></p>
+<ul>
+<li><a href="/data/usgs-scanned-topographic-maps-drgs/quad-name-usgs-scanned-topographic-maps-124000-geotiff-2">By Quad Name: GeoTIFF Scanned USGS Topographic Maps, No Collar (1:24000)</a></li>
+<li><a href="/data/usgs-scanned-topographic-maps-drgs/quad-number-usgs-scanned-topographic-maps-124000-geotiff">By Quad Number: GeoTIFF Scanned USGS Topographic Maps, No Collar (1:24000)</a></li>
+<li><strong><a href="http://raster.utah.gov/?catGroup=24K%20GeoPDF,24K%20DRG&title=USGS%2024K%20Topo%20Maps">By Interactive Map (1:24,000)</a></strong></li>
+</ul>
+<p><strong>1:24K Other Related Products:</strong></p>
+<ul>
+<li><strong><a href="http://mapserv.utah.gov/raster/?cat=24K%20GeoPDF">Download GeoPDFs of USGS Topographic Maps by interactive map</a></strong></li>
+<li><a href="ftp://ftp.agrc.utah.gov/DRG/24k/Countywide">GeoTIFF Countywide Mosaics of USGS Scanned Topographic Maps from AGRC ftp site</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/DRG/24k/Collared">GeoTIFFs of USGS Scanned Topographic Maps, by quads, with collars from the AGRC ftp site</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/DRG/24k/Collarless/24KQuadIndex(sm).pdf">Map of Utah 1:24K USGS Scanned Topographic Map with Quad Names</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/DRG/24k/Collarless/Find_a_DRG.txt">Alphabetical list of Utah 1:24K USGS Scanned Topographic Map with 'Q Numbers'</a></li>
+</ul>
+<p><strong>1:100K Collarless GeoTIFF format for GIS:</strong></p>
+<ul>
+<li><a href="/data/usgs-scanned-topographic-maps-drgs/quad-name-usgs-scanned-topographic-maps-1100000-geotiff">By Quad Name: GeoTIFF Scanned USGS Topographic Maps, No Collar (1:100000)</a></li>
+<li><a href="/data/usgs-scanned-topographic-maps-drgs/quad-number-usgs-scanned-topographic-maps-1100000-geotiff">By Quad Number: GeoTIFF Scanned USGS Topographic Maps, No Collar (1:100000)</a></li>
+<li><strong><a href="http://raster.utah.gov/?cat=100K%20DRG">By Interactive Map (1:100,000)</a></strong></li>
+</ul>
+<p><strong>1:250K Collarless GeoTIFF format for GIS:</strong></p>
+<ul>
+<li><a href="/data/usgs-scanned-topographic-maps-drgs/quad-name-usgs-scanned-topographic-maps-1250000-geotiff">By Quad Name: GeoTIFF Scanned USGS Topographic Maps, No Collar (1:250000)</a></li>
+<li><a href="/data/usgs-scanned-topographic-maps-drgs/quad-number-usgs-scanned-topographic-maps-1250000-geotiff">By Quad Number: GeoTIFF Scanned USGS Topographic Maps, No Collar (1:250000)</a></li>
+<li><strong><a href="http://raster.utah.gov/?cat=250K%20DRG">By Interactive Map (1:250,000)</a></strong></li>
+</ul>
+<p><strong>1:500K Collared JPG Format for GIS</strong>:</p>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/DRG/500k/Collared/state_DRG500K_NAD27.zip">Statewide NAD27 JPG (1:500000)</a></li>
+</ul>
+<p><strong>Vintage Collared 1:62.5K and 1:125K, (500 dpi)<br />
+</strong></p>
+<ul>
+<li><a href="/data/usgs-scanned-topographic-maps-drgs/vintage-usgs-topo-maps">Select Vintage (1900-1966) NAD27 15' and 30' USGS topos </a></li>
+</ul>
+<p>&nbsp;</p>

@@ -1,0 +1,55 @@
+---
+layout: page
+status: publish
+published: true
+title: Boat Ramps
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3737
+wordpress_url: http://gis.utah.gov/?page_id=3737
+date: '2011-11-22 15:00:17 -0500'
+date_gmt: '2011-11-22 22:00:17 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[caption id="attachment_4794" align="alignright" width="256 " caption="Boat Ramps Sample"]<img class="size-full wp-image-4794" title="map" src="http://gis.utah.gov/wp-content/uploads/BoatRamps.png" alt="Boat Ramps Sample" width="256" height="256" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/RECREATION/UnpackagedData/BoatRamps/_Statewide/"]Download  Dataset[/button]</p>
+<h4><strong>Boat Ramps</h4>
+<p></strong></p>
+<p><strong>Data Type: GIS Data Layer</strong><br />
+<strong>Steward(s): AGRC and DNR</strong></p>
+<p><strong>Abstract:</strong><br />
+This dataset contains Utah Boat Ramps including State Parks, some National Park Service and other ramps.<br />
+This dataset also contains the name of the boat ramp, the water body it is on, the type of vessels that can be launched, and the owner, agency, and administrator of the ramp.</p>
+<p>[icon style="globe" color="gray"]Usage: There are no constraints or warranties with regard to the use of this dataset.[/icon]<br />
+[icon style="calendar" color="gray"]Last Update: March 2009[/icon]<br />
+[icon style="user" color="gray"]Contact: <a href="mailto:agrc@utah.gov">AGRC</a>[/icon]<br />
+[icon style="link" color="gray"]Links: <a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_RECREATION_BoatRamps.html">FGDC Metadata</a>[/icon] </p>

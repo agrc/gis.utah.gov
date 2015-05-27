@@ -1,0 +1,112 @@
+---
+layout: page
+status: publish
+published: true
+title: Planning
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 2867
+wordpress_url: http://gis.utah.gov/?page_id=2867
+date: '2011-10-21 15:15:11 -0500'
+date_gmt: '2011-10-21 21:15:11 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- vector
+- overview
+- category
+- services
+- daas
+- arcgis
+---
+<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
+<p>[styled_table]</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;" scope="col">Product Name</th>
+<th style="text-align: left;" scope="col">Type</th>
+<th style="text-align: left;" scope="col">Steward(s)</th>
+<th style="text-align: left;" scope="col">Description</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="5"><sub><em>click a product name for more information and download links</em></sub></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="/data/planning/water-related-land">Water Related Land Use</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">DNR</td>
+<td style="text-align: left;">Water usage-related polygon map data, published annually that depicts the types and extent of irrigated crops as well as information concerning phreatophytes, wet/open water areas, dry land agriculture and residential/industrial areas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/PLANNING/UnpackagedData/ConservationEasements/_Statewide/">Conservation Easements</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Conservation Easements in Utah.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/PLANNING/PackagedData/_Statewide/PrimitiveAreas/">Primitive Areas</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Only in Emery County.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/PLANNING/UnpackagedData/UrbanInterfaceAreas/_Statewide/">Urban Interface Areas</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Locations of Wildland Urban Interfaces.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/boundaries/wilderness/"> Wilderness, Proposals & Protected Areas</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">USFS/BLM</td>
+<td style="text-align: left;">Wilderness boundaries including BLM re-inventory and suitability, WSAs, roadless inventory and existing wilderness.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/water/wetlands/">Wetlands</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">USFWS</td>
+<td style="text-align: left;">Wetland areas in Utah.</td>
+</tr>
+</tbody>
+</table>
+<p>[/styled_table]</p>
+<h3>Related Data (see also)</h3>
+<ul>
+<li><a href="/data/bioscience-overview/">Bioscience</a></li>
+<li><a href="/data/geoscience/">Geoscience</a></li>
+<li><a href="/data/water-data-services/">Water</a></li>
+</ul>
+<h3>Notes</h3>

@@ -1,0 +1,20 @@
+---
+layout: nav_menu_item
+status: publish
+published: true
+title: Emergency Medical Service Areas
+author:
+  display_name: cheaton
+  login: cheaton
+  email: cheaton@utah.gov
+  url: ''
+author_login: cheaton
+author_email: cheaton@utah.gov
+wordpress_id: 6925
+wordpress_url: http://gis.utah.gov/?p=6925
+date: '2012-04-16 15:45:53 -0500'
+date_gmt: '2012-04-16 21:45:53 -0500'
+categories: []
+tags: []
+---
+

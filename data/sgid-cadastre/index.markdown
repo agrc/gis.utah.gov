@@ -1,0 +1,111 @@
+---
+layout: page
+status: publish
+published: true
+title: Cadastre Data and Services
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 1973
+wordpress_url: http://gis.utah.gov/?page_id=1973
+date: '2011-09-06 15:39:19 -0500'
+date_gmt: '2011-09-06 15:39:19 -0500'
+categories: []
+tags:
+- SDE
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- vector
+- overview
+- category
+- services
+- daas
+- arcgis
+---
+<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
+<p>[styled_table]</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;" scope="col">Product Name</th>
+<th style="text-align: left;" scope="col">Type</th>
+<th style="text-align: left;" scope="col">Steward(s)</th>
+<th style="text-align: left;" scope="col">Description</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="5"><sub><em>click a product name for more information and download links</em></sub></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/PackagedData/">Cadastre Package</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Parcels, Land Ownership, GCDB Points, Sections, Township and Range package</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/sgid-cadastre/parcels/">Parcels</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Parcel boundaries and information</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/sgid-cadastre/plss/">PLSS / GCDB</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">Public Lands Coordinate System / Geographic Coordinate Database</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/sgid-cadastre/land-ownership/">Land Ownership</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">SITLA</td>
+<td style="text-align: left;">Statewide land ownership categories</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/data/sgid-cadastre/turn-gps/">TURN GPS</a></td>
+<td style="text-align: left;">map data</td>
+<td style="text-align: left;">AGRC</td>
+<td style="text-align: left;">The Utah RTK GPS reference network</td>
+</tr>
+</tbody>
+</table>
+<p>[/styled_table]</p>
+<h3>Other Cadastre Data</h3>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/BLM_RMPTargetedLands/_Statewide/">BLM RMP Targeted Lands</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/MeanderedWater_GCDB_FGDC/_Statewide/">MeaderedWater_GCDB_FGDC</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/MeanderedWater_GCDB/_Statewide/">MeaderedWater_GCDB</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/MetadataGlance_GCDB/_Statewide/">MetadataGlance_GCDB</a></li>
+</ul>
+<h3>Related Data (see also)</h3>
+<ul>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BOUNDARIES/PackagedData/_Statewide/StateCountyMunicipalBoundaries/">City, County, State Boundaries data package</a></li>
+</ul>
+<h3>Notes</h3>

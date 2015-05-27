@@ -1,0 +1,170 @@
+---
+layout: page
+status: publish
+published: true
+title: 'By Quad Number: USGS Scanned Topographic Maps (1:1250000, GeoTiff)'
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 9449
+wordpress_url: http://gis.utah.gov/?page_id=9449
+date: '2012-05-16 15:30:58 -0500'
+date_gmt: '2012-05-16 21:30:58 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- metadata
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+- topography
+- topographic
+- topo
+- usgs
+- survey
+- drg
+- drgs
+- minute
+- scale
+- number
+- 1:250000
+- 1:250k
+- 250k
+---
+<table>
+<tbody>
+<tr>
+<td width="100%">By Quad Number: USGS Scanned Topographic Maps (1:250000, GeoTIFF)</td>
+<td align="right" width="100%"><a title="PDF" href="http://old.gis.utah.gov/index2.php?option=com_content&amp;do_pdf=1&amp;id=415" target="_blank"> <img src="http://old.gis.utah.gov/templates/rhuk_solarflare_ii/images/pdf_button.png" alt="PDF" name="PDF" align="middle" border="0" /></a></td>
+<td align="right" width="100%"><a title="Print" href="http://old.gis.utah.gov/index2.php?option=com_content&amp;task=view&amp;id=415&amp;pop=1&amp;page=0&amp;Itemid=147" target="_blank"> <img src="http://old.gis.utah.gov/templates/rhuk_solarflare_ii/images/printButton.png" alt="Print" name="Print" align="middle" border="0" /></a></td>
+<td align="right" width="100%"><a title="E-mail" href="http://old.gis.utah.gov/index2.php?option=com_content&amp;task=emailform&amp;id=415&amp;itemid=147" target="_blank"> <img src="http://old.gis.utah.gov/templates/rhuk_solarflare_ii/images/emailButton.png" alt="E-mail" name="E-mail" align="middle" border="0" /></a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td colspan="2" align="left" valign="top" width="70%">Written by AGRC Administrator</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">01, Oct. 2008</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">Collarless USGS Topographic Maps at a 1:250000 scale are available for download. These maps are georeferenced in the UTM Zone 12 North, NAD83 projected coordinate system.Click on a Quad Number link below to begin download process.</p>
+<table border="0">
+<tbody>
+<tr>
+<td><strong>Quad Number</strong></td>
+<td><a href="http://old.gis.utah.gov/sgid-scanned-maps/by-quad-name-usgs-scanned-topographic-maps-1-250000-geotiff"><strong>Quad Name</strong></a></td>
+<td><strong>Center, UTM NAD83  </strong></td>
+<td><strong>Center*, County</strong></td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q0303_DRG250K-c.zip">Q0303</a></td>
+<td>Brigham City</td>
+<td>4596211N 332981E</td>
+<td>BOX ELDER</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q0319_DRG250K-c.zip">Q0319</a></td>
+<td>Ogden</td>
+<td>4594280N 458204E</td>
+<td>CACHE</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q1103_DRG250K-c.zip">Q1103</a></td>
+<td>Tooele</td>
+<td>4485198N 330436E</td>
+<td>TOOELE</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q1119_DRG250K-c.zip">Q1119</a></td>
+<td>Salt Lake City</td>
+<td>4483276N 499937E</td>
+<td>WASATCH</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q1135_DRG250K-c.zip">Q1135</a></td>
+<td>Vernal</td>
+<td>4484236N 627049E</td>
+<td>UINTAH</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q1903_DRG250K-c.zip">Q1903</a></td>
+<td>Delta</td>
+<td>4374201N 327943E</td>
+<td>MILLARD</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q1919_DRG250K-c.zip">Q1919</a></td>
+<td>Price</td>
+<td>4372291N 499937E</td>
+<td>CARBON</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q1935_DRG250K-c.zip">Q1935</a></td>
+<td>Grand Junction</td>
+<td>4373245N 628917E</td>
+<td>UINTAH</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q2703_DRG250K-c.zip">Q2703</a></td>
+<td>Richfield</td>
+<td>4263220N 325503E</td>
+<td>BEAVER</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q2719_DRG250K-c.zip">Q2719</a></td>
+<td>Salina</td>
+<td>4261325N 499937E</td>
+<td>EMERY</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q2735_DRG250K-c.zip">Q2735</a></td>
+<td>Moab</td>
+<td>4262272N 630746E</td>
+<td>SAN JUAN</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q3503_DRG250K-c.zip">Q3503</a></td>
+<td>Cedar City</td>
+<td>4152256N 323117E</td>
+<td>IRON</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q3519_DRG250K-c.zip">Q3519</a></td>
+<td>Escalante</td>
+<td>4150377N 499937E</td>
+<td>KANE</td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.agrc.utah.gov/DRG/250k/Collarless/q3535_DRG250K-c.zip">Q3535</a></td>
+<td>Cortez</td>
+<td>4151316N 632534E</td>
+<td>SAN JUAN</td>
+</tr>
+</tbody>
+</table>
+<p>* Shows the Utah county that is at the quads centeroid, or if centroid is not available, a county that intersects the quad.</td>
+</tr>
+<tr>
+<td colspan="2" align="left">Last Updated ( 10, Mar. 2010 )</td>
+</tr>
+</tbody>
+</table>

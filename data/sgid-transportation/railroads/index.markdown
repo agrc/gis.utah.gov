@@ -1,0 +1,53 @@
+---
+layout: page
+status: publish
+published: true
+title: Railroads
+author:
+  display_name: jpechmann
+  login: jpechmann
+  email: jpechmann@utah.gov
+  url: ''
+author_login: jpechmann
+author_email: jpechmann@utah.gov
+wordpress_id: 3840
+wordpress_url: http://gis.utah.gov/?page_id=3840
+date: '2011-11-23 13:15:10 -0500'
+date_gmt: '2011-11-23 20:15:10 -0500'
+categories: []
+tags:
+- sgid
+- Data
+- utah
+- gis
+- map
+- mapping
+- dataset
+- download
+- agrc
+- layer
+- shapefile
+- geodatabase
+- metadata
+- shp
+- gdb
+- kml
+- lyr
+- digital
+- geographic
+- information
+- database
+- state
+- statewide
+---
+<p>[caption id="attachment_4794" align="alignright" width="256" caption="Railroad Data"]<img class="size-full wp-image-4794" title="map" src="http://gis.utah.gov/wp-content/uploads/Railroad25k_256.png" alt="ChangeMeLarge" width="256" height="256" />[/caption]</p>
+<p>[button size="medium" color="white" textColor="#923922" link="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Railroads/_Statewide/"]Download Dataset[/button]</p>
+<h4></h4>
+<p><strong>Data Type:</strong> GIS Map Data<br />
+<strong>Steward(s):</strong> AGRC, U.S. Geological Survey, Federal Railroad Administration (FRA)</p>
+<p><strong>Abstract:</strong><br />
+Transportation.Railroads protrays the location of railroads in the state of Utah derived from the most recent high resolution imagery available, including 1 foot resolution color imagery, NAIP, 1 meter resolution imagery, and 1 meter USGS DOQs. The dataset has been updated to include cartographic attribution for coarse scale representations (single track) and also a differentiation between light, heavy, transit, and electrified tracks.</p>
+<p>[icon style="globe" color="gray"]Usage: This dataset was developed for many uses, including but not limited to, emergency planning.  There are no contraints or waranties with regard to the use of this data.[icon]<br />
+[icon style="calendar" color="gray"]Last Update: March, 2009[/icon]<br />
+[icon style="user" color="gray"]Contact: <a href="mailto:agrc@utah.gov">AGRC</a>[/icon]<br />
+[icon style="link" color="gray"]Links: <a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_Railroads.html">FGDC Metadata</a>[/icon]</p>
