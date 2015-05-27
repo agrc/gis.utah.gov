@@ -15,7 +15,6 @@ wordpress_url: http://gis.utah.gov/?p=16332
 date: '2015-01-20 07:51:04 -0500'
 date_gmt: '2015-01-20 14:51:04 -0500'
 categories:
-- Uncategorized
 - Developer
 tags:
 - mapping

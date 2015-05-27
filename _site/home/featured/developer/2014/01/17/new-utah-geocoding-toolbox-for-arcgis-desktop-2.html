@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dev Team Blog</title>
-  <meta name="description" content="Utah Mapping Portal | The Utah Automated Geographic Reference Center">
+  <title>New: Utah Geocoding Toolbox for ArcGIS Desktop</title>
+  <meta name="description" content="(Note: geocoding toolbox .tbx file last updated 1/22/2014)AGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.This ...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/developer/blog/">
+  <link rel="canonical" href="http://localhost:4000/home/featured/developer/2014/01/17/new-utah-geocoding-toolbox-for-arcgis-desktop-2.html">
   <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -51,65 +51,37 @@
 
     <div class="page-content">
       <div class="wrapper">
-        
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">New: Utah Geocoding Toolbox for ArcGIS Desktop</h1>
+  </header>
+
+  <article class="post-content">
+    <p><em>(Note: geocoding toolbox .tbx file last updated 1/22/2014)</em></p>
+<p>AGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.<a href="http://gis.utah.gov/wp-content/uploads/geocoding-example.png"><img src="http://gis.utah.gov/wp-content/uploads/geocoding-example.png" alt="" title="geocoding example" width="113" height="144" class="alignright size-full wp-image-14330" /></a></p>
+<p>This custom geocoding toolbox allows ArcMap users to obtain geographic coordinates from <a href="http://gis.utah.gov/using-the-mapserv-utah-gov-api-to-geocode-address/">AGRC's geocoding web service api</a> for any table of addresses in a ArcGIS accessible format.</p>
+<p>While the geocoding api was built primarily for web applications it also provides value as a toolbox in ArcMap, as it uses current local data and solves for some common shortcomings with stock geocoding approaches by:</p>
+<p><a href="http://gis.utah.gov/wp-content/uploads/geocodingtoolbox.png"><img src="http://gis.utah.gov/wp-content/uploads/geocodingtoolbox.png" alt="" title="geocodingtoolbox" width="190" height="333" class="alignright size-full wp-image-14331" /></a>
 <ul>
-    <span class="post-meta">May 25, 2015</span>
+<li>using hierarchical street name and address coordinate system aliasing</li>
+<li>use of either zip codes or place names as zones</li>
+<li>ignores placename and zipcode errors within the same addressing system</li>
+<li>handles common placename usage and abbreviations (WVC, St George, Magna, Heber City, S Jordan, etc.) </li>
+<li>can find matches for numeric address 'reversals' (500 E 1991 S)</li>
+<li>can find address point matches, offset centerline matches, or best available.</li>
+<li><a href="http://gis.utah.gov/utah-statewide-address-geocoding-web-service-upgrade/">more info</a></li>
+</ul>
+<p>Use the <a href="http://api.mapserv.utah.gov/#geocoding">Street and Zone method on the api page</a> or <a href="http://atlas.utah.gov">the Find Address gui at atlas.utah.gov</a> to test the results from your problem addresses against the api.</p>
+<p>Installation is as easy as <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Geocoding/AGRC%20Geocode%20Tools.tbx">downloading the AGRC Geocode Tools.tbx file</a> to your desired location and then in ArcToolbox, <a href="http://resources.arcgis.com/en/help/main/10.1/index.html#//003q0000001m000000">right clicking the Add Toolbox menu item</a>. Users must obtain an ip specific mapserv api key by <a href="http://developer.mapserv.utah.gov/AccountAccess">registering here</a> prior to use, as a unique api key is one of the required input parameters for running the tool.</p>
+<p>The geocoding tool will produce as output a .csv file with the input unique identifier field, the input address information, and the match results. It also produces a .dbf file with the same information and will provide the user with the option to add this to the current ArcMap project. A user can use the .dbf file to join on the unique record identifier to connect with the original results, and also to Display XYEvents to create a map layer of the results. </p>
+<p>The script runs by default in using http requests but, like all mapserv api methods, can be modified to send request via https. Users can view/edit the python code associated with the geocodin toolbox by right clicking on the script and selecting 'Edit'.</p>
+<p><a href="http://gis.utah.gov/wp-content/uploads/geocodetoolbox.png"><img src="http://gis.utah.gov/wp-content/uploads/geocodetoolbox.png" alt="" title="geocodetoolbox" width="600" height="345" class="aligncenter size-full wp-image-14332" /></a></p>
+</p>
 
-    <h2>
-      <a class="post-link" href="/developer/2015/05/25/staying-in-the-zone-with-amd-butler.html">Staying in the Zone with AMD Butler</a>
-    </h2>
-    <p>A few months ago, I built a simple plugin for Sublime Text 3&nbsp;for managing AMD&nbsp;dependencies called AMD Butler. Now it's hard for me to picture codin...</p>
-  </ul>
+  </article>
 
-<ul>
-    <span class="post-meta">Apr 6, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/developer/2015/04/06/windows-scheduler-get-your-priorities-straight.html">Windows Scheduler: Get Your Priorities Straight</a>
-    </h2>
-    <p>Here at AGRC we have a variety of tasks (usually python scripts) that need to be run on a schedule. These are usually workflows that scrape and ETL data for ...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Apr 2, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/data/developer/featured/sgid%20blog/2015/04/02/utah-sgid-statewide-roads-data-layer-updates-412015.html">Utah SGID Statewide Roads Data Layer Updates 4/1/2015</a>
-    </h2>
-    <p>Updates were made recently to the SGID10.Transportation.Roads feature class that resides on the Utah SGID ArcSDE database server.
-The updated Roads data is a...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Feb 12, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/data/developer/featured/sgid%20blog/locations%20services/2015/02/12/authoritative-utah-geocoding-results.html">Authoritative Utah Geocoding Results</a>
-    </h2>
-    <p>
-Geocoding Assurance or Why you should trust the results
-The AGRC web api is a great resource for deriving information from the SGID. Geocoding an address is...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Jan 20, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/developer/2015/01/20/how-to-use-agrc-base-maps-in-qgis.html">How To Use AGRC Base Maps in QGIS</a>
-    </h2>
-    <p>Most people know about AGRC&#39;s awesome base maps. They are very popular and provide high quality cartography using the latest and greatest data from the U...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Dec 22, 2014</span>
-
-    <h2>
-      <a class="post-link" href="/developer/2014/12/22/basemaps-a-2014-day-in-the-life.html">Basemaps: A 2014 Day in the Life</a>
-    </h2>
-    <p>A day in the life of Utah’s ArcGIS Server Basemaps 2014
-On Wednesday, November 6, 2013 we wrote about and displayed some charts displaying usage statistics f...</p>
-  </ul>
-
+</div>
 
       </div>
     </div>

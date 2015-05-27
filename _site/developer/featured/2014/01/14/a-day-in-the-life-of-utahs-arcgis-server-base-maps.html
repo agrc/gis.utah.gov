@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dev Team Blog</title>
-  <meta name="description" content="Utah Mapping Portal | The Utah Automated Geographic Reference Center">
+  <title>A day in the life of Utah's ArcGIS Server Base Maps</title>
+  <meta name="description" content=""Base map web services" provides access to pre-rendered multi-scale maps that show more detailed map features at finer scales and less detail at larger scale...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/developer/blog/">
+  <link rel="canonical" href="http://localhost:4000/developer/featured/2014/01/14/a-day-in-the-life-of-utahs-arcgis-server-base-maps.html">
   <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -51,65 +51,25 @@
 
     <div class="page-content">
       <div class="wrapper">
-        
-<ul>
-    <span class="post-meta">May 25, 2015</span>
+        <div class="post">
 
-    <h2>
-      <a class="post-link" href="/developer/2015/05/25/staying-in-the-zone-with-amd-butler.html">Staying in the Zone with AMD Butler</a>
-    </h2>
-    <p>A few months ago, I built a simple plugin for Sublime Text 3&nbsp;for managing AMD&nbsp;dependencies called AMD Butler. Now it's hard for me to picture codin...</p>
-  </ul>
+  <header class="post-header">
+    <h1 class="post-title">A day in the life of Utah's ArcGIS Server Base Maps</h1>
+  </header>
 
-<ul>
-    <span class="post-meta">Apr 6, 2015</span>
+  <article class="post-content">
+    <p>"Base map web services" provides access to pre-rendered multi-scale maps that show more detailed map features at finer scales and less detail at larger scales.</p>
+<p>When (ArcMap) web applications use the AGRC base map services, the applications make behind the scenes requests to the web service for a specific set of 256 x 256 pixel map tile images. These 256 x 256 pixel map tiles are assembled to display a specific geographic area at a desired scale. Depending on the display size of the end users device, a typical "single view" of a base map can consist of between 4 and 20 tiles. It's also important that requested base map tiles are typically cached locally in both browser and desktop applications so if areas are looked at again, new tile requests do not need to be made in most cases. </p>
+<p>AGRC built its first base map service in 2007 for the first ArcGIS Server-hosted version of the <a href="http://enviro.deq.utah.gov/">DEQ Interactive Map</a>. Since then, AGRC has developed <a href="http://gis.utah.gov/developer/base-maps/">7 base maps</a> that display commonly needed map background layers. The chart below shows the number of tile requests made, on a typical day (November 6, 2013), to each of the current base map themes.</p>
+<p><a href="http://gis.utah.gov/wp-content/uploads/basemapmetrics20131106_bymap.png"><img src="http://gis.utah.gov/wp-content/uploads/basemapmetrics20131106_bymap.png" alt="" title="basemapmetrics20131106_bymap" width="600" height="569" class="aligncenter size-full wp-image-14348" /></a></p>
+<p>The Hybrid base map, which contains aerial photography and an overlay of basic street-themed geographic context is the most popular of the base maps. These metrics, taken together <a href="http://gis.utah.gov/a-day-in-the-life-of-the-utah-sgid-imageserver/">with similar metrics from AGRC's dynamic ImageServer service</a> clearly demonstrate the great importance and utility of the State's collection of aerial photography in supporting end user needs.</p>
+<p>Over the course of a typical day, some end users, be they GIS staff or web applications, use the base map services in large volumes. Others end users only make a few requests and then move on. The ArcGIS Server log file was analyzed to create the chart below that shows the range of requests made number by unique users (by ip address) on November 6th. </p>
+<p><a href="http://gis.utah.gov/wp-content/uploads/basemapmetrics20131106_peruser.png"><img src="http://gis.utah.gov/wp-content/uploads/basemapmetrics20131106_peruser.png" alt="" title="basemapmetrics20131106_peruser" width="600" height="627" class="aligncenter size-full wp-image-14349" /></a></p>
+<p><a href="http://gis.utah.gov/developer/base-maps/">More information about AGRC's base map services</a>.</p>
 
-    <h2>
-      <a class="post-link" href="/developer/2015/04/06/windows-scheduler-get-your-priorities-straight.html">Windows Scheduler: Get Your Priorities Straight</a>
-    </h2>
-    <p>Here at AGRC we have a variety of tasks (usually python scripts) that need to be run on a schedule. These are usually workflows that scrape and ETL data for ...</p>
-  </ul>
+  </article>
 
-<ul>
-    <span class="post-meta">Apr 2, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/data/developer/featured/sgid%20blog/2015/04/02/utah-sgid-statewide-roads-data-layer-updates-412015.html">Utah SGID Statewide Roads Data Layer Updates 4/1/2015</a>
-    </h2>
-    <p>Updates were made recently to the SGID10.Transportation.Roads feature class that resides on the Utah SGID ArcSDE database server.
-The updated Roads data is a...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Feb 12, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/data/developer/featured/sgid%20blog/locations%20services/2015/02/12/authoritative-utah-geocoding-results.html">Authoritative Utah Geocoding Results</a>
-    </h2>
-    <p>
-Geocoding Assurance or Why you should trust the results
-The AGRC web api is a great resource for deriving information from the SGID. Geocoding an address is...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Jan 20, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/developer/2015/01/20/how-to-use-agrc-base-maps-in-qgis.html">How To Use AGRC Base Maps in QGIS</a>
-    </h2>
-    <p>Most people know about AGRC&#39;s awesome base maps. They are very popular and provide high quality cartography using the latest and greatest data from the U...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Dec 22, 2014</span>
-
-    <h2>
-      <a class="post-link" href="/developer/2014/12/22/basemaps-a-2014-day-in-the-life.html">Basemaps: A 2014 Day in the Life</a>
-    </h2>
-    <p>A day in the life of Utah’s ArcGIS Server Basemaps 2014
-On Wednesday, November 6, 2013 we wrote about and displayed some charts displaying usage statistics f...</p>
-  </ul>
-
+</div>
 
       </div>
     </div>

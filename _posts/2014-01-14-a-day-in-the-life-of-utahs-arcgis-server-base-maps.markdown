@@ -15,7 +15,7 @@ wordpress_url: http://gis.utah.gov/?p=14347
 date: '2014-01-14 14:58:59 -0500'
 date_gmt: '2014-01-14 21:58:59 -0500'
 categories:
-- Uncategorized
+- Developer
 - Featured
 tags:
 - utah

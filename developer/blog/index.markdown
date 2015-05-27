@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 status: publish
 published: true
 title: Dev Team Blog
@@ -17,4 +17,13 @@ date_gmt: '2011-06-30 16:14:07 -0500'
 categories: []
 tags: []
 ---
-<p>[blog column="2" count="4" cat="8" width="575"]</p>
+{% for post in site.categories.developer limit:6%}
+  <ul>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+  </ul>
+{% endfor %}

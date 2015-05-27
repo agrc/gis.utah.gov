@@ -17,6 +17,7 @@ date_gmt: '2013-04-02 14:51:51 -0500'
 categories:
 - Home
 - Featured
+- Developer
 tags:
 - Geocoding
 - address

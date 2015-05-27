@@ -17,6 +17,7 @@ date_gmt: '2012-04-27 17:41:48 -0500'
 categories:
 - Home
 - Featured
+- Developer
 tags:
 - Vehicle
 - web services

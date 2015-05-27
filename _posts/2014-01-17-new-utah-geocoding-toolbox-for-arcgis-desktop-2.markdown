@@ -17,6 +17,7 @@ date_gmt: '2014-01-17 18:57:08 -0500'
 categories:
 - Home
 - Featured
+- Developer
 tags:
 - Geocoding
 - utah

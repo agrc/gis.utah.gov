@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dev Team Blog</title>
-  <meta name="description" content="Utah Mapping Portal | The Utah Automated Geographic Reference Center">
+  <title>ArcGIS Server 10.1 Upgrade</title>
+  <meta name="description" content="AGRC is planning to upgrade our main ArcGIS Server instance (mapserv.utah.gov/arcgis/rest) to version 10.1 within the next few weeks. For the majority of our...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/developer/blog/">
+  <link rel="canonical" href="http://localhost:4000/home/developer/featured/2013/02/19/arcgis-server-10-1-upgrade.html">
   <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -51,65 +51,24 @@
 
     <div class="page-content">
       <div class="wrapper">
-        
-<ul>
-    <span class="post-meta">May 25, 2015</span>
+        <div class="post">
 
-    <h2>
-      <a class="post-link" href="/developer/2015/05/25/staying-in-the-zone-with-amd-butler.html">Staying in the Zone with AMD Butler</a>
-    </h2>
-    <p>A few months ago, I built a simple plugin for Sublime Text 3&nbsp;for managing AMD&nbsp;dependencies called AMD Butler. Now it's hard for me to picture codin...</p>
-  </ul>
+  <header class="post-header">
+    <h1 class="post-title">ArcGIS Server 10.1 Upgrade</h1>
+  </header>
 
-<ul>
-    <span class="post-meta">Apr 6, 2015</span>
+  <article class="post-content">
+    <p>AGRC is planning to upgrade our main ArcGIS Server instance (<a href="http://mapserv.utah.gov/arcgis/rest">mapserv.utah.gov/arcgis/rest</a>) to version 10.1 within the next few weeks. For the majority of our users, we do not think that this will have much affect on services. However, if you access our base map caches through SOAP/WMS (this includes ArcMap users) there will be breaking changes.</p>
+<p>The URL's to our cached base map services will be changing. This is due to ArcGIS Server not supporting the "-" character in service names at 10.1. Here's a table mapping the URL changes:<br />
+<iframe width="505" height="280" frameborder="0" src="https://docs.google.com/spreadsheet/pub?key=0Aqee4VOgQcXcdEpDUHg5ZC16SzRaR0RwQjRiZGloWGc&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true"></iframe></p>
+<p>We have been able to set up redirects from the old 9.3 URL's to the new 10.1 URL's that will work only for ESRI Web API's. This means that any application that requests base map tiles from the old URL's will automatically get the new tiles. Any apps that use the SOAP API, including ArcMap, will be broken. So this means that any layers that you have in ArcMap pointing to any of our cached base map services will be broken and you will need to create new layers pointing to the new base maps. These new URL's will be permanent and will not be changed in the future.</p>
+<p>The other change that will affect web apps that overlay multiple cached services is that we have tweaked our tiling scheme cache scales to make them more standardized with ArcGIS Online, Google Maps and others. This will make our base map services more universal and easy to work with.</p>
+<p>We'll post the exact date of the upgrade as we finalize our plans.</p>
+<p>If you notice any other issues after the upgrade, please let us know at <a href="mailto:agrc@utah.gov">agrc@utah.gov</a> so that we can address them as soon as possible.</p>
 
-    <h2>
-      <a class="post-link" href="/developer/2015/04/06/windows-scheduler-get-your-priorities-straight.html">Windows Scheduler: Get Your Priorities Straight</a>
-    </h2>
-    <p>Here at AGRC we have a variety of tasks (usually python scripts) that need to be run on a schedule. These are usually workflows that scrape and ETL data for ...</p>
-  </ul>
+  </article>
 
-<ul>
-    <span class="post-meta">Apr 2, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/data/developer/featured/sgid%20blog/2015/04/02/utah-sgid-statewide-roads-data-layer-updates-412015.html">Utah SGID Statewide Roads Data Layer Updates 4/1/2015</a>
-    </h2>
-    <p>Updates were made recently to the SGID10.Transportation.Roads feature class that resides on the Utah SGID ArcSDE database server.
-The updated Roads data is a...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Feb 12, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/data/developer/featured/sgid%20blog/locations%20services/2015/02/12/authoritative-utah-geocoding-results.html">Authoritative Utah Geocoding Results</a>
-    </h2>
-    <p>
-Geocoding Assurance or Why you should trust the results
-The AGRC web api is a great resource for deriving information from the SGID. Geocoding an address is...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Jan 20, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/developer/2015/01/20/how-to-use-agrc-base-maps-in-qgis.html">How To Use AGRC Base Maps in QGIS</a>
-    </h2>
-    <p>Most people know about AGRC&#39;s awesome base maps. They are very popular and provide high quality cartography using the latest and greatest data from the U...</p>
-  </ul>
-
-<ul>
-    <span class="post-meta">Dec 22, 2014</span>
-
-    <h2>
-      <a class="post-link" href="/developer/2014/12/22/basemaps-a-2014-day-in-the-life.html">Basemaps: A 2014 Day in the Life</a>
-    </h2>
-    <p>A day in the life of Utah’s ArcGIS Server Basemaps 2014
-On Wednesday, November 6, 2013 we wrote about and displayed some charts displaying usage statistics f...</p>
-  </ul>
-
+</div>
 
       </div>
     </div>

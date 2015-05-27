@@ -16,6 +16,7 @@ date: '2011-11-21 14:39:22 -0500'
 date_gmt: '2011-11-21 21:39:22 -0500'
 categories:
 - Featured
+- Developer
 tags:
 - basemap
 - utah
