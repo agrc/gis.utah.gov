@@ -1,8 +1,8 @@
 <header id="header">
   <div class="inner">
     <div id="logo">
-      <a href="{{ "/" | prepend: site.baseurl }}">
-        <img class="ie_png" src="http://gis.utah.gov/wp-content/uploads/agrc_badge_v111.png" alt="{{ site.title }}" />
+      <a href="{{ site.url }}">
+        <img class="ie_png" src="{{ "/images/agrc_logo.png" | prepend: site.baseurl }}" alt="{{ site.title }}" />
       </a>
     </div>
     <div id="top_area">
@@ -16,13 +16,13 @@
     </div>
     <nav id="navigation">
       <ul id="menu-main-menu" class="menu">
-        <li class="menu-item"><a href="{{ "agrc-newsletter" | prepend: site.baseurl }}">News</a>
+        <li class="menu-item"><a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}">News</a>
         </li>
-        <li class="menu-item"><a href="{{ "data" | prepend: site.baseurl }}">Data</a>
+        <li class="menu-item"><a href="{{ "/data" | prepend: site.baseurl }}">Data</a>
         </li>
-        <li class="menu-item"><a href="{{ "developer" | prepend: site.baseurl }}">Developer</a>
+        <li class="menu-item"><a href="{{ "/developer" | prepend: site.baseurl }}">Developer</a>
         </li>
-        <li class="menu-item"><a href="{{ "about" | prepend: site.baseurl }}">About</a>
+        <li class="menu-item"><a href="{{ "/about" | prepend: site.baseurl }}">About</a>
         </li>
       </ul>
     </nav>

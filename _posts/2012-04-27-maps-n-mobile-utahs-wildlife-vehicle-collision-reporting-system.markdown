@@ -15,8 +15,6 @@ wordpress_url: http://gis.utah.gov/?p=8106
 date: '2012-04-27 11:41:48 -0500'
 date_gmt: '2012-04-27 17:41:48 -0500'
 categories:
-- Home
-- Featured
 - Developer
 tags:
 - Vehicle

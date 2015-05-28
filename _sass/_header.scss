@@ -6,12 +6,12 @@
 
 #header {
   height: 75px;
-  background-color: transparent;
+  background-color: $base-color;
   background-image: url('http://gis.utah.gov/wp-content/uploads/header_bg.jpg');
   background-repeat: repeat;
   background-position: top left;
   background-attachment: scroll;
-  border-bottom: 2px solid #333333;
+  border-bottom: 2px solid $base-color;
 }
 
 #top_area {
@@ -22,7 +22,7 @@
 
 #navigation {
   bottom: 0;
-  right: 275px;
+  left: 305px;
   height: 52px;
   position: absolute;
 }
@@ -31,7 +31,8 @@
 #navigation .menu > li.hover > a:active,
 #navigation .menu > li.hover > a:visited {
 	color: #e2d0aa
-}#navigation .menu > li.current-menu-item > a,
+}
+#navigation .menu > li.current-menu-item > a,
 #navigation .menu > li.current-menu-item > a:visited,
 #navigation .menu > li.current-menu-ancestor > a,
 #navigation .menu > li.current-menu-ancestor > a:visited,
