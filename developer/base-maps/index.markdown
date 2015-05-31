@@ -14,24 +14,26 @@ wordpress_id: 621
 wordpress_url: http://gis.utah.gov/?page_id=621
 date: '2011-07-20 02:11:01 -0500'
 date_gmt: '2011-07-20 02:11:01 -0500'
-categories: []
+categories: [Developer]
 tags:
 - basemap
-- utah
-- map
 - base map cache
-- base map
 - cache
 ---
-<h3>Ultra-fast cached online base map from AGRC</h3>
-<p><img src="http://gis.utah.gov/wp-content/uploads/basemaps.png" alt="basemaps" title="AGRC Basemap Offerings" width="256" height="228" class="alignleft size-full wp-image-7602" />AGRC freely serves out 7 online base maps; 5 of them are actively maintained on a regular <a href="http://gis.utah.gov/developer/base-maps/basemap-maintenance-schedule">schedule</a>. All of these caches are currently in the UTM NAD83 Zone 12 projection (wkid: 26912). The caches consist of between 3 to 17 million 256 pixel square jpg tiles and can range from 15G to over 200GB. These caches are standardized on a subset of the Google, Microsoft, esri, etc <a href="http://gis.utah.gov/developer/base-maps/basemap-scales">scale levels</a> that apply to our state.</p>
-<h4><strong>The Base Maps</strong></h4>
-<p>We offer a <a href="http://mapserv.utah.gov/cacheviewer/?map=Streets">Streets</a> base map that displays roads, places of interest, land ownership, and boundaries without imagery.</p>
-<p>We also offer a <a href="http://mapserv.utah.gov/cacheviewer/?map=Terrain">Terrain</a> cached map. This base map highlights elevation with mountain peak elevations, contour lines, as well as many of the places of interest features in our Streets map.</p>
-<p>Our next offering is the <a href="http://mapserv.utah.gov/cacheviewer/?map=Hybrid">Hybrid</a> base map. This map shows many of the same places of interest as the Streets base map, but underlays our most current imagery beneath the geographic line work.</p>
-<p>AGRC maintains a few base maps that are very minimal as to not interfere with the data you may or may not overlay on top of it. Our first map in the minimal area, is the <a href="http://mapserv.utah.gov/cacheviewer/?map=Imagery">Imagery</a> cache. This is a mosaic of our best flown imagery products with no other geographic data to interfere. We also offer a vector minimal base map that we call the <a href="http://mapserv.utah.gov/cacheviewer/?map=Lite">Lite</a> cache. It is very muted in color and makes your overlayed data stand out beautifully.</p>
-<p>Finally, we have the <a href="http://mapserv.utah.gov/cacheviewer/?map=Hillshade">Hillshade</a> and <a href="http://mapserv.utah.gov/cacheviewer/?map=Topo">Topo</a> caches. The Hillshade is a 4 way <acronym title="Digital Raster Graphic">DRG</acronym> and the Topo cache contains all of our USGS Quad Sheets. The Topo cache displays the most relevant quad sheet (250K, 100K and 24K) depending on your scale.</p>
-<ul>
-<li><a href="http://gis.utah.gov/data/sgid-base-map-services-arcmap/">Instructions for using the base maps in ArcGIS Desktop (ArcMap).</a></li>
-</ul>
-<p><img src="http://gis.utah.gov/wp-content/uploads/basemapWidgets.png" alt = "Base map widgets" class="image_styled aligncenter"/></p>
+### Ultra-fast cached online base map from AGRC
+AGRC freely serves 6 online base maps; 4 of them are actively maintained on a regular [schedule](/developer/base-maps/basemap-maintenance-schedule). All of these caches are currently in the UTM NAD83 Zone 12 projection (_wkid: 26912_). The caches consist of between 3 to 17 million 256 pixel square jpg tiles and can range from 15G to over 200GB. These caches are standardized on a subset of the Google, Microsoft, and esri [scale levels](developer/base-maps/basemap-scales) that apply to our state.
+
+#### The Base Maps
+![basemaps thumbnail](/images/thumb_basemap_selection.png)
+
+We offer a [Streets](http://mapserv.utah.gov/cacheviewer/?map=Streets) base map that displays roads, places of interest, land ownership, and boundaries without imagery.
+
+We also offer a [Terrain](http://mapserv.utah.gov/cacheviewer/?map=Terrain) base map. This base map highlights elevation with mountain peak elevations, contour lines, as well as many of the places of interest featured in our Streets map.
+
+Our next offering is the [Hybrid](http://mapserv.utah.gov/cacheviewer/?map=Hybrid) base map. This map shows many of the same places of interest as the Streets base map, but underlays our most current imagery and the Google imagery beneath the geographic line work.
+
+AGRC maintains a very minimal as to not interfere with the data you may or may not overlay on top of it. We call this the [Lite](http://mapserv.utah.gov/cacheviewer/?map=Lite) cache. It is very muted in color and makes your data stand out beautifully.
+
+Finally, we have the [Hillshade](http://mapserv.utah.gov/cacheviewer/?map=Hillshade) and [Topo](http://mapserv.utah.gov/cacheviewer/?map=Topo) caches. The Hillshade is a 4 way <acronym title="Digital Raster Graphic">DRG</acronym> and the Topo cache contains all of the USGS Quad Sheets. The Topo cache displays the most relevant quad sheet (250K, 100K and 24K) depending on your scale.
+
+These basemaps are used in our widgets library and all of our online web apps. You can also [use them in ArcGIS Desktop](/data/sgid-base-map-services-arcmap)

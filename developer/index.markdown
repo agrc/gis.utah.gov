@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_notitle
 status: publish
 published: true
 title: Developers
@@ -40,6 +40,7 @@ tags:
 <img class="icon" src="{{ "/images/icon_geowebservices.png" | prepend: site.baseurl }}" width="26" height="30" /><a href="{{"web-services" | prepend: site.baseurl}}" title="Geospatial Web Services">Geospatial Web Services</a>
 
 <p>AGRC’s Web API allow developers to access spatial data from their applications and websites for no cost.</p>
+
 <img class="icon" src="{{ "/images/icon_blog.png" | prepend: site.baseurl }}" width="26" height="30" /><a href="{{"blog" | prepend: site.baseurl }}">Developer Team Blog</a>
 
 <p>Read about work done by developers.</p>
@@ -54,6 +55,7 @@ tags:
   <li>
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br/>
     <a href="{{ post.url }}">{{ post.title }}</a>
+    <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
   </li>
   {% endfor %}
 

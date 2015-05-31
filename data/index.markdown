@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_notitle
 status: publish
 published: true
 title: Data
@@ -17,43 +17,87 @@ date_gmt: '2012-01-20 07:46:07 -0500'
 categories: []
 tags: []
 ---
-<p>[one_half]</p>
-<h3>Overview</h3>
-<p>Utah's State Geographic Information Database (SGID) is the central clearing house for all digital mapping (GIS) information (<a title="State Geographic Information Database." href="http://le.utah.gov/~code/TITLE63F/htm/63F01_050700.htm">Utah Code 63F-1-507 </a>). Includes both data and services for use by state agencies, partnering organizations, and others.</br><br />
-<a href="http://gis.utah.gov/basic-metadata-instructions/">FGDC Metadata</a></p>
-<h6>SGID Data Services</h6>
-<h4><a title="Base Map Services" href="http://gis.utah.gov/data/sgid-base-map-services-arcmap/"><img class="alignleft size-full wp-image-61" style="margin-right: 5px;" title="Base Map Services" src="http://gis.utah.gov/wp-content/uploads/map.png" alt="" width="26" height="26" />Online Base Maps</a></h4>
-<p>Fast and free online map services from AGRC featuring local data.</p>
-<h4><a title="Using the Utah SGID Image Server" href="http://gis.utah.gov/data/sgid-imagery-services/"><img class="alignleft size-full wp-image-5247" title="Using Image Server" src="http://gis.utah.gov/wp-content/uploads/boundary.png" alt="" width="26" height="30" /> SGID Image Services</a></h4>
-<p>Utah aerial photography without the need to download data.</p>
-<h4><a title="How to Connect to the SGID via ArcSDE" href="http://gis.utah.gov/data/how-to-connect-to-the-sgid-via-sde/"><img class="alignleft size-full wp-image-5253" title="Connect to ArcSDE" src="http://gis.utah.gov/wp-content/uploads/data.png" alt="" width="26" height="26" />SGID ArcSDE Database Server</a></h4>
-<p>Direct connect to AGRC's ArcSDE database, the most current data.</p>
-<h4><a title="Open Raster Discovery App" href="http://raster.utah.gov"><img class="alignleft  wp-image-10111" title="Utah Raster Discovery Application" src="http://gis.utah.gov/wp-content/uploads/geowebservices.png" alt="" width="26" height="30" />SGID Raster Discovery Application</a></h4>
-<p>Download aerial photography, LiDAR, DEMs, contour lines and USGS topographic maps via the Utah Raster Discovery App.</p>
-<h4><a title="Download via FTP" href="ftp://ftp.agrc.utah.gov/"><img class="alignleft  wp-image-10111" title="Download Data Via FTP" src="http://gis.utah.gov/wp-content/uploads/ftp-icon.png" alt="" width="26" height="30" />Download SGID Data Via FTP</a></h4>
-<p>Download data directly through AGRC's FTP site.</p>
-<h6><a title="Latest SGID Updates on data and services" href="/data/sgid-blog/">Recent Updates on SGID Data and Services</a></h6>
-<p>[recent_posts count="3" thumbnail="false" extra="time" desc_length="0" cat="7"]</p>
-<p><img class="alignleft size-full wp-image-5188" title="SGID Data Blog" src="http://gis.utah.gov/wp-content/uploads/devblog.png" alt="" width="26" height="30" /></p>
-<h4>Get more updates and tips on the <span style="text-decoration: underline;"><a href="http://gis.utah.gov/sgid-blog/">SGID Blog</a></span> or via <span style="text-decoration: underline;"><a href="http://gis.utah.gov/?cat=7&amp;feed=rss2">RSS</a></span>.</h4>
-<p>[/one_half]</p>
-<p>[one_half_last]</p>
 <h3>SGID Datasets</h3>
-<p>Use the right-side menu to explore datsets, organized loosely by <a title="ISO Topic Categories" href="http://gcmd.nasa.gov/User/difguide/iso_topics.html">topic category</a>, obtain detailed information about Utah GIS data layers, and to download files or access services.</p>
-<h6>Popular Datasets</h6>
-<h4><a href="/data/aerial-photography/"><img class="alignleft size-full wp-image-5253" title="Aerial Imagery" src="http://gis.utah.gov/wp-content/uploads/airplane.png" alt="" width="26" height="30" />Aerial Photography</a></h4>
-<p>Highres Color and B/W aerial photography.</p>
-<h4><a href="/data/boundaries/"><img class="alignleft size-full wp-image-5253" title="Boundary Data" src="http://gis.utah.gov/wp-content/uploads/widget.png" alt="" width="26" height="30" />Boundary GIS Data</a></h4>
-<p>Public land, city, county, parcel, political dists, etc.</p>
-<h4><a href="/data/elevation-terrain-data/"><img class="alignleft size-full wp-image-5253" title="Elevation/Terrain" src="http://gis.utah.gov/wp-content/uploads/elevation.png" alt="" width="26" height="30" /> Elevation and Terrrain Data</a></h4>
-<p>DEMs, LIDAR, Contours, &amp; Topographic Maps</p>
-<h4><img class="alignleft size-full wp-image-5253" title="PLSS" src="http://gis.utah.gov/wp-content/uploads/data_mark.png" alt="" width="26" height="30" /><a href="/data/sgid-cadastre/plss/">Public Land Survey System (PLSS) Data</a></h4>
-<p>Townships, sections, section divs, &amp; control points.</p>
-<h4><a href="/data/sgid-transportation/roads-system/"><img class="alignleft size-full wp-image-5253" title="Roads &amp; Highways" src="http://gis.utah.gov/wp-content/uploads/roads.png" alt="" width="26" height="30" /> Roads &amp; Highway System Data</a></h4>
-<p>Statewide road centerlines with address ranges, etc.</p>
-<h4><a href="http://gis.utah.gov/data/usgs-scanned-topographic-maps-drgs/"><img class="alignleft size-full wp-image-5253" title="USGS Topos" src="http://gis.utah.gov/wp-content/uploads/radar.png" alt="" width="26" height="26" />USGS Topographic Maps</a></h4>
-<p>USGS topographic (contour) map scans, various scales</p>
-<h4><a href="/data/water-data-services/"><img class="alignleft size-full wp-image-5253" title="Water" src="http://gis.utah.gov/wp-content/uploads/mapmarker.png" alt="" width="26" height="30" />Water Related Data</a></h4>
-<p>Lakes, streams, springs, dams, water use.<br />
-<img class="alignright size-full wp-image-4787" title="startbrowsing" src="http://gis.utah.gov/wp-content/uploads/startbrowsing.png" alt="" width="269" height="99" /><br />
-[/one_half_last]</p>
+
+<p>Our datsets are organized loosely by <a href="http://gcmd.nasa.gov/User/difguide/iso_topics.html">topic categories</a>, obtain detailed information about Utah GIS data layers, and to download files or access services.</p>
+
+<p>Utah's State Geographic Information Database (SGID) is the central clearing house for all digital mapping (GIS) information (<a href="http://le.utah.gov/~code/TITLE63F/htm/63F01_050700.htm">Utah Code 63F-1-507</a>). Includes both data and services for use by state agencies, partnering organizations, and others.</p>
+
+<a href="{{ " /basic-metadata-instructions " | prepend: site.baseurl }}">FGDC Metadata</a>
+
+<div class="footer-col-wrapper">
+  <div class="footer-col footer-col-3">
+
+    <h4>Popular Datasets</h4>
+    <h4><a href="/data/aerial-photography/"><img class="alignleft size-full wp-image-5253" title="Aerial Imagery" src="{{ "/images/icon_airplane.png" | prepend: site.baseurl }}" width="26" height="30" />Aerial Photography</a></h4>
+
+    <p>Highres Color and Black and White aerial photography.</p>
+
+    <h4><a href="/data/boundaries/"><img class="alignleft size-full wp-image-5253" title="Boundary Data" src="{{"/images/icon_widget.png" | prepend: site.baseurl}}" width="26" height="30" />Boundary GIS Data</a></h4>
+
+    <p>Public land, city, county, parcel, political dists, etc.</p>
+
+    <h4><a href="/data/elevation-terrain-data/"><img class="alignleft size-full wp-image-5253" title="Elevation/Terrain" src="{{"/images/icon_elevation.png" | prepend: site.baseurl }}" width="26" height="30" /> Elevation and Terrrain Data</a></h4>
+
+    <p>DEMs, LIDAR, Contours, &amp; Topographic Maps</p>
+
+    <h4><img class="alignleft size-full wp-image-5253" title="PLSS" src="http://gis.utah.gov/wp-content/uploads/data_mark.png" width="26" height="30" /><a href="/data/sgid-cadastre/plss/">Public Land Survey System (PLSS) Data</a></h4>
+
+    <p>Townships, sections, section divs, &amp; control points.</p>
+
+  </div>
+  <div class="footer-col footer-col-3">
+
+    <h4><a href="/data/sgid-transportation/roads-system/"><img class="alignleft size-full wp-image-5253" title="Roads &amp; Highways" src="{{"/images/icon_roads.png" | prepend: site.baseurl }}" width="26" height="30" /> Roads &amp; Highway System Data</a></h4>
+
+    <p>Statewide road centerlines with address ranges, etc.</p>
+
+    <h4><a href="/data/usgs-scanned-topographic-maps-drgs/"><img class="alignleft size-full wp-image-5253" title="USGS Topos" src="{{"/images/radar.png" | prepend: site.baseurl }}" width="26" height="26" />USGS Topographic Maps</a></h4>
+
+    <p>USGS topographic (contour) map scans, various scales</p>
+
+    <h4><a href="/data/water-data-services/"><img class="alignleft size-full wp-image-5253" title="Water" src="{{"/images/icon_mapmarker.png" | prepend: site.baseurl }}" width="26" height="30" />Water Related Data</a></h4>
+
+    <p>Lakes, streams, springs, dams, water use.</p>
+  </div>
+</div>
+  <div class="footer-col-wrapper">
+  <div class="footer-col footer-col-3">
+    <h3>SGID Data Services</h3>
+
+    <h4><a title="Base Map Services" href="{{ "/data/sgid-base-map-services-arcmap" | prepend: site.baseurl }}"><img class="alignleft size-full wp-image-61" style="margin-right: 5px;" title="Base Map Services" src="{{ "/images/icon_map.png" | prepend: site.baseurl }}" width="26" height="26" />Online Base Maps</a></h4>
+
+    <p>Fast and free online map services from AGRC featuring local data.</p>
+
+    <h4><a title="Using the Utah SGID Image Server" href="{{ "/data/sgid-imagery-services" | prepend: site.baseurl }}"><img class="alignleft size-full wp-image-5247" title="Using Image Server" src="{{ /"images/boundary.png" | prepend: site.baseurl }}" width="26" height="30" /> SGID Image Services</a></h4>
+
+    <p>Utah aerial photography without the need to download data.</p>
+
+    <h4><a title="How to Connect to the SGID via ArcSDE" href="{{ "/data/how-to-connect-to-the-sgid-via-sde" | prepend: site.baseurl}}"><img class="alignleft size-full wp-image-5253" title="Connect to ArcSDE" src="{{ "images/data.png" | prepend: site.baseurl }}" width="26" height="26" />SGID ArcSDE Database Server</a></h4>
+
+    <p>Direct connect to AGRC's ArcSDE database, the most current data.</p>
+
+    <h4><a title="Open Raster Discovery App" href="http://raster.utah.gov"><img class="alignleft  wp-image-10111" title="Utah Raster Discovery Application" src="{{ "/images/icon_geowebservices.png" | prepend: site.baseurl }}" width="26" height="30" />SGID Raster Discovery Application</a></h4>
+
+    <p>Download aerial photography, LiDAR, DEMs, contour lines and USGS topographic maps via the Utah Raster Discovery App.</p>
+
+    <h4><a title="Download via FTP" href="ftp://ftp.agrc.utah.gov/"><img class="alignleft  wp-image-10111" title="Download Data Via FTP" src="{{ "/images/icon_ftp.png" | prepend: site.baseurl }}" width="26" height="30" />Download SGID Data Via FTP</a></h4>
+
+    <p>Download data directly through AGRC's FTP site.</p>
+
+  </div>
+  <div class="footer-col footer-col-3">
+    <h4><img class="icon" src="{{ "/images/icon_blog.png" | prepend: site.baseurl }}" width="26" height="30" /><a href="{{ "blog" | prepend: site.baseurl }}">Data Team Blog</a></h4>
+
+    <ul>
+      {% for post in site.categories.data limit:3 %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <br/>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

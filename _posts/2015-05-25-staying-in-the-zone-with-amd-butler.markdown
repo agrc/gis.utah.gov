@@ -3,6 +3,7 @@ layout: post
 status: publish
 published: true
 title: Staying in the Zone with AMD Butler
+permalink: staying-in-the-zone-with-amd-butler
 author:
   display_name: Scott Davis
   login: Scott Davis
