@@ -6,3 +6,4 @@ baseurl: "/website/" # the subpath of your site, e.g. /blog/
 url: "http://agrc.github.io" # the base hostname & protocol for your site
 twitter_username: steveagrc
 github_username:  agrc
+permalink: /:title
