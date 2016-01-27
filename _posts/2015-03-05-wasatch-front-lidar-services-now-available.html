@@ -1,0 +1,49 @@
+---
+layout: post
+status: publish
+published: true
+title: Wasatch Front LiDAR Services Now Available
+author:
+  display_name: rkelson
+  login: rkelson
+  email: rkelson@utah.gov
+  url: ''
+author_login: rkelson
+author_email: rkelson@utah.gov
+wordpress_id: 16755
+wordpress_url: http://gis.utah.gov/?p=16755
+date: '2015-03-05 10:44:24 -0700'
+date_gmt: '2015-03-05 17:44:24 -0700'
+categories:
+- Data
+- Featured
+- SGID Blog
+tags:
+- agrc
+- elevation
+- DEM
+- topographic
+- topo
+- LiDAR
+---
+<p>[caption id="attachment_15443" align="alignright" width="300" caption="Click to view large format map detail"]<a href="http://gis.utah.gov/wp-content/uploads/Lidar_slope_lg.jpg"><img src="http://gis.utah.gov/wp-content/uploads/Lidar_slope_lg.jpg" alt="" title="LiDAR service sample" width="300" height="226" class="size-medium wp-image-15443" /></a>[/caption]</p>
+<p>The <a href="http://gis.utah.gov/data/elevation-terrain-data/2013-2014-lidar/">Wasatch Front LiDAR</a> elevation data collected 2013-2014 is now available as a service. These services utilize the .5 meter DEMs derived from the LiDAR collection. Once you have established a GIS Server <a href="http://gis.utah.gov/data/sgid-imagery-services/">connection to mapserv.utah.gov</a> in the <b><em>Elevation</em></b> folder you will find the following layers:</p>
+<p><b><em>Bare Earth DTM layers:</em></b></p>
+<ul>
+<li><em>Elevation\Lidar2013_2014_DTM</em> - use this layer to get elevation values, derive contours and generate surfaces etc.</li>
+<li><em>Elevation\Lidar2013_2014_DTM_Hillshade</em></li>
+<li><em>Elevation\Lidar2013_2014_DTM_ShadedRelief</em></li>
+<li><em>Elevation\Lidar2013_2014_DTM_Slope</em></li>
+</ul>
+<p><b><em>First Return DMS layers:</em></b></p>
+<ul>
+<li><em>Elevation\Lidar2013_2014_DSM</em></li>
+<li><em>Elevation\Lidar2013_2014_DSM_Hillshade</em></li>
+<li><em>Elevation\Lidar2013_2014_DSM_ShadedRelief</em></li>
+<li><em>Elevation\Lidar2013_2014_DSM_Slope</em></li>
+</ul>
+<p><b>PLEASE NOTE:</b> If using the services for geoprocessing (generate contours, custom surfaces, etc.) be sure to set the geoprocessing tool's <b><em>Environment Settings - Processing Extent</em></b> to something other than the default that will use the entire dataset and blow your computer up. For instance select a polygon feature class as your area of interest or select <em>Same as Display</em>. For most geoprocessing you will want to use the bare earth DTM <em>Elevation\Lidar2013_2014_DTM</em>.</p>
+<p>Here is a link to an <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2013_2014/WasatchFront_LiDAR_2013-2014.lyr">ArcMap layer file</a> for the elevation data services to get you started.</p>
+<p>The hillshade, slope, and shaded relief surfaces are reference raster mosaics.</p>
+<td>If you have any questions contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a> at (801-538-3237)</td>
+<p><a href="http://gis.utah.gov/wp-content/uploads/Lidar_shaded.jpg"><img src="http://gis.utah.gov/wp-content/uploads/Lidar_shaded.jpg" alt="" title="LiDAR service sample" width="300" height="226" class="size-medium wp-image-15443" /></a></p>
