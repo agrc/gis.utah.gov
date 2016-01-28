@@ -11,8 +11,10 @@ module.exports = function (grunt) {
 			},
 		  src: [
 				'**/*',
-				'!node_modules/',
-				'!scripts/',
+				'!node_modules/**',
+				'!scripts/*',
+				'!GruntFile.js',
+				'!package.json'
 			]
 		}
 	});
