@@ -49,7 +49,7 @@ tags:
 
   <h4>From the Developer Blog</h4>
 
-  {% for post in site.categories.developer limit:6 %}
+  {% for post in site.categories.Developer limit:6 %}
   <li>
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br/>
     <a href="{{ post.url }}">{{ post.title }}</a>
