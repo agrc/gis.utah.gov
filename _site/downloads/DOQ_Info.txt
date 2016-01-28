@@ -1,0 +1,70 @@
+Uses for Digital Orthophotos
+
+A digital orthophoto can be used for various applications. The DOQ serves as an excellent
+cartographic base upon which associated digital layers can be overlaid. The accuracy and
+extraordinary detail provided by the DOQ allow users to evaluate their data for accuracy and
+completeness, make real-time modifications to their data, and even generate new files. Other
+applications include vegetation and timber management, routing and habitat analysis,
+environmental impact assessments, emergency evacuation planning, flood analysis, soil erosion
+assessment, facility management, and groundwater and watershed analysis.
+
+Producing a Digital Orthophoto
+
+The following items are required to produce a digital orthophoto:
+
+   1. a minimum of three ground positions that can be identified on the photograph to be rectified, 
+   2. camera calibration parameters, such as the calibrated focal length and the coordinates of the
+camera fiducials, 
+   3. a digital elevation model (DEM), and 
+   4. a digital image produced by scanning an aerial photograph with a precise, high-resolution
+scanner. 
+
+The digital image is rectified to generate an orthophoto by processing items 1 through 3 for each
+image picture element (pixel) using rigorous photogrammetric equations on a high-speed
+computer. The finished product is a spatially accurate image with planimetric features
+represented in their true geographic positions.
+
+A DOQ can be incorporated into any geographic information system (GIS), which can
+manipulate raster images. It functions exceptionally well as a cartographic base for displaying,
+generating, and modifying digital planimetric data.
+
+Characteristics of a Standard Digital Orthophoto 
+
+The standard digital orthophoto produced by the U.S. Geological Survey (USGS) is a
+black-and-white or color-infrared digital image map. Each DOQ covers 3.75-minutes of
+longitude and 3.75-minutes of latitude. It is referenced to the North American Datum of 1983
+and is cast upon the Universal Transverse Mercator projection. Each pixel represents 1 square
+meter on the ground. Every DOQ has between 50 and 300 meters of overedge image beyond the
+primary and secondary quadrangle corner ticks. This overedge facilitates tonal matching and
+mosaicking of adjacent images.
+
+Image mosaicking techniques can be used to combine two or more rectified images into one. For
+example, a 7.5-minute DOQ can be produced by mosaicking four 3.75-minute DOQ's.
+
+The standard DOQ is formatted with an ASCII keyword header, followed by a series of 8-bit
+binary image data records. The radiometric image brightness values are stored as 256 gray levels.
+The file size of a black-and-white digital orthophoto can approach 55 megabytes. 
+
+The header record provided in the DOQ contains a wide range of descriptive information about
+the image data, including photographic source type, date, software systems used to create the
+DOQ, and the production date of the DEM metadata used in the orthophoto rectification process.
+Primary and secondary datum coordinates for the upper left pixel are included in the header
+record to allow users to spatially reference other digital data with the DOQ.
+
+The accuracy and quality of USGS digital orthophotos must meet National Map Accuracy
+Standards at 1:12,000 scale for 3.75-minute quarter quadrangles and at 1:24,000 scale for
+7.5-minute quadrangles. Accuracy and quality depend on the following: 
+
+     photographs that meet National Aerial Photography Program standards, which are
+quarter-quadrangle centered. The photographs are exposed at a flying height of 20,000 feet above
+mean terrain and are taken using a wide-angle camera; 
+     a DEM with the same area coverage as the digital orthophoto that is equal to or better than a
+level-1 DEM having a root-mean-square error in elevation no greater than 7 meters; 
+     a highly accurate image scanning process that employs a scanning aperture between 7.5 and
+30 micrometers (µm). A 1:40,000-scale image scanned with a 25-µm aperture produces a ground
+sample distance of 1 meter; 
+     and identifiable ground control positions with coordinates acquired from ground surveys or
+aerotriangulation. 
+
+
+

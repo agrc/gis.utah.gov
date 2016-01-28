@@ -1,0 +1,71 @@
+/*
+Theme Name: Wapple Architect
+Theme URI: http://blog.wapple.net
+Description: Dynamic mobile theme
+Version: 1.5
+Author: Rich Gubby
+Author URI: http://blog.wapple.net
+Tags: mobile, dynamic
+*/
+
+/* Clear background image on body */
+body, body.body {background-image: none;}
+td{padding:0;}
+ul,ol{margin:0 0 0 2px;padding:0 0 0 10px;}
+input, textarea,textarea#comment{width:auto !important;}
+
+/* Clear background image on #header */
+#header {background-image: none;height:auto;font-size:1em;}
+.headerImage #header{padding-left:0;}
+#header a{font-size:2em;padding:0;border:none;text-decoration:none;}
+#header a:hover{border:none;text-decoration:none;}
+#headerH1{display:none;}
+
+/* Reformat h1-h5 tags slightly for mobile */
+h1{margin:10px 0 0;font-size:2em;height:auto;padding-top:0;}
+h2{margin:5px 0 0;font-size:1.5em;}
+h3{margin:5px 0 0;font-size:1.3em;}
+h4{margin:5px 0 0;font-size:1.2em;}
+h5{margin:5px 0 0;font-size:1.1em;}
+.postTitle{text-align:left;}
+
+/* Remove background on #nav */
+.nav{}
+.nav td{}
+
+/* Set bottom margin on navigation */
+.navigation.archiveNavigation_row{display:table-row;}
+div.navigation.archiveNavigation_row{display:block;}
+.navigation{margin-bottom:0;padding-bottom:5px;display:table-cell;text-align:left;}
+div.navigation{display:block;}
+.navigation{padding:5px 0 5px 2px;}
+.navigation td{padding:0 5px 5px 0;}
+
+/* Text align .entry classes to be to the left */
+.entry,.entry_row,.entry_row_notice{text-align:left;}
+.entry_row input{padding:0;}
+.waplsmall{font-size:0.9em;padding-left:2px;}
+
+.postmetadata.alt {font-size:0.9em;padding:2px;}
+.postmetadata{border-width:5px;}
+
+/* Form posting */
+.form_label{font-weight:bold;	}
+.form_value {display:block;}
+.postmetadata,.commentTitle,#f_author,#f_email,#f_url,#f_comment,#f_submit, .author{text-align:left;}
+.author{font-size:0.9em;}
+
+/* Set background colour on .entry and .postmetadata classes */
+/*.entry_row, .search_row, .entry_row_row, .postmetadata, .post-date_row, .postTitle_row, .navigation {background-color:#fff}*/
+.main{padding:0;margin:0;}
+.entry_row{padding-bottom:5px;}
+.post-date{float:none;text-align:left; font-size:0.9em;padding-bottom:10px;}
+span.post-date{display:block;}
+
+.postNext, .postPrev {padding-bottom:10px;}
+#switchToDesktop td, #switchToDesktop div{padding:5px 0;}
+#header, #footer{width:auto;}
+.description{padding:0 0 5px 0;text-align:center;font-size:0.8em;}
+.homeCategories{padding:5px 0;}
+.textSpacer{display:block;width:100%;height:5px;}
+.entry_row.h2.imagePreview{vertical-align:top;}

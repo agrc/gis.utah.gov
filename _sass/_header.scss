@@ -1,0 +1,64 @@
+.inner {
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+#header {
+  height: 75px;
+  background-color: $base-color;
+  background-image: url(../images/header_bg.jpg);
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: scroll;
+  border-bottom: 2px solid $base-color;
+}
+
+#top_area {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+#navigation {
+  bottom: 0;
+  left: 305px;
+  height: 52px;
+  position: absolute;
+}
+
+#navigation .menu > li.hover > a,
+#navigation .menu > li.hover > a:active,
+#navigation .menu > li.hover > a:visited {
+	color: #e2d0aa
+}
+#navigation .menu > li.current-menu-item > a,
+#navigation .menu > li.current-menu-item > a:visited,
+#navigation .menu > li.current-menu-ancestor > a,
+#navigation .menu > li.current-menu-ancestor > a:visited,
+#navigation .menu > li.current_page_item > a,
+#navigation .menu > li.current_page_item > a:visited,
+#navigation .menu > li.current_page_ancestor > a,
+#navigation .menu > li.current_page_ancestor > a:visited,
+#navigation .menu > li.current_page_parent > a,
+#navigation .menu > li.current_page_parent > a:visited,
+#navigation .menu > li.current-page-item > a,
+#navigation .menu > li.current-page-item > a:visited,
+#navigation .menu > li.current-page-ancestor > a,
+#navigation .menu > li.current-page-ancestor > a:visited {
+	color: #f5f4f2;
+	background-color: #8c351f;
+}
+
+#navigation .menu > li > a, #navigation .menu > li > a:visited {
+	font-size: 17px;
+	color: #f5f5f5;
+	background-color: transparent;
+}
+#navigation ul li.hover ul li a, #navigation ul ul li a, #navigation ul ul li a:visited {
+	font-size: 14px;
+	color: #000000;
+}
+#navigation ul li ul {
+	background-color: #f5f5f5;
+}

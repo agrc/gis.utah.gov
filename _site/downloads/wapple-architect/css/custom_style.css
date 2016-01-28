@@ -1,0 +1,60 @@
+/* Any custom styles should go in here */
+
+/* this line will set all rows to have a background of white and padding-left of 2px */
+#f_post_submit,#f_post_password, .postTags, .homeCategoryHeader, .homeCategories, .author, .search_row, #header, #switchToDesktop, .entry_row, .entry_row_row,.entry_row.h2.imagePreview,.post-date_row, .post-date, .postTitle, .navigation, .postmetadata, .postmetadata.alt, .spacemaker, .commentTitle_row td, .commentTitle_row div, .nav, .description,.postimage,.sidebarheader_row,.sidebar_row,.sidebarfooter_row{background:#ffffff;padding-left:2px;}
+.entry_row.h2,span.post-date{padding-left:0;}
+
+/* Site wide amendments - colour etc*/
+body{}
+
+/* Header */
+#header .words h1{}
+
+/* Archive headers */
+.entry_row.h2.category td,.entry_row.h2.category div,.entry_row.h2.category span{}
+
+/* Post Title */
+.entry_row.h2{}
+/* Post title link */
+.entry_row.h2 a{}
+
+/* Post Date */
+.post-date{}
+
+/* Homepage post excerpt */
+.entry_row.excerpt{}
+
+/* Main menu navigation container */
+.nav{}
+/* Main menu navigation linkes */
+.nav a{}
+
+/* Paragraph spacing */
+.textSpacer{height:15px;}
+
+/* Post page navigation */
+.navigation.archiveNavigation{}
+.navigation{}
+.navigation a{}
+.navigation a:hover{}
+
+/* Post page title */
+.postTitle h2{}
+
+/* Post tags */
+.postTags{}
+
+/* Post page data */
+.postmetadata{}
+
+/* Sidebar header */
+.sidebarheader{}
+/* Sidebar contents */
+.sidebar{}
+/* Sidebar footer */
+.sidebarfooter{}
+
+/* Footer container */
+#footer{}
+/* Footer words */
+#footer .words{}
