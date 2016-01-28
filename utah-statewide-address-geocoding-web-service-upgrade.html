@@ -9,9 +9,9 @@
   <title>Utah Statewide Address Geocoding Web Service Upgrade</title>
   <meta name="description" content="Last week, AGRC finished a substantial upgrade to the Utah statewide address locator (geocoding) web service.  This service utilizes point- and road-based ad...">
 
-  <link rel="stylesheet" href="/website/css/main.css">
-  <link rel="canonical" href="agrc.github.io/website/utah-statewide-address-geocoding-web-service-upgrade">
-  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="agrc.github.io/website/feed.xml" />
+  <link rel="stylesheet" href="/website//css/main.css">
+  <link rel="canonical" href="agrc.github.io/website//utah-statewide-address-geocoding-web-service-upgrade">
+  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="agrc.github.io/website//feed.xml" />
 </head>
 
 
@@ -21,20 +21,20 @@
   <div class="inner">
     <div id="logo">
       <a href="agrc.github.io">
-        <img class="ie_png" src="/website/images/agrc_logo.png" alt="Utah Mapping Portal" />
+        <img class="ie_png" src="/website//images/agrc_logo.png" alt="Utah Mapping Portal" />
       </a>
     </div>
     <div id="top_area">
     </div>
     <nav id="navigation">
       <ul id="menu-main-menu" class="menu">
-        <li class="menu-item"><a href="/website/agrc-newsletter">News</a>
+        <li class="menu-item"><a href="/website//agrc-newsletter">News</a>
         </li>
-        <li class="menu-item"><a href="/website/data">Data</a>
+        <li class="menu-item"><a href="/website//data">Data</a>
         </li>
-        <li class="menu-item"><a href="/website/developer">Developer</a>
+        <li class="menu-item"><a href="/website//developer">Developer</a>
         </li>
-        <li class="menu-item"><a href="/website/about">About</a>
+        <li class="menu-item"><a href="/website//about">About</a>
         </li>
       </ul>
     </nav>
@@ -51,14 +51,14 @@
   </header>
 
   <article class="post-content">
-    <p><a href="/website/downloads/Geocode.png"><img src="/website/images/Geocode-300x223.png" alt="" title="api.mapserv.utah.gov address locator" width="300" height="223" class="alignright size-medium wp-image-13195" /></a>Last week, AGRC finished a substantial upgrade to the Utah statewide address locator (geocoding) web service.  This service utilizes point- and road-based address map reference, data compiled into the State Geographic Information Database (SGID) from local sources, and published on a bi-monthly basis.</p>
+    <p><a href="/website//downloads/Geocode.png"><img src="/website//images/Geocode-300x223.png" alt="" title="api.mapserv.utah.gov address locator" width="300" height="223" class="alignright size-medium wp-image-13195" /></a>Last week, AGRC finished a substantial upgrade to the Utah statewide address locator (geocoding) web service.  This service utilizes point- and road-based address map reference, data compiled into the State Geographic Information Database (SGID) from local sources, and published on a bi-monthly basis.</p>
 <p>The publicly accessible geocoding service allows developers to include 'best effort' Utah address finding functionality into web applications at no cost. </p>
 <p>Just as important, this service enables database administrators to build processes that allow any database containing information tied to an address to pick up geographic coordinates so that information can be easily integrated and viewed on mapping platforms. </p>
 <p>The link below demonstrates just one of the many ways RESTful requests can be used to get coordinates for Utah addresses via http:</p>
 <ul>
 <li><a href="http://api.mapserv.utah.gov/api/v1/Geocode/50%20W%20Capitol%20St/fillmore?spatialReference=4326&apiKey=AGRC-ApiExplorer">http://api.mapserv.utah.gov/api/v1/Geocode/50%20W%20Capitol%20St/fillmore?spatialReference=4326&apiKey=AGRC-ApiExplorer</a></li>
 </ul>
-<p>Documentation for the service is integrated into a test/demo interface at <a href="http://api.mapserv.utah.gov">http://api.mapserv.utah.gov</a>. Registration information and api key access for desktop and application users, and, metric/tracking for registered api keys can be accessed from the same site. A <a href="/website/using-the-mapserv-utah-gov-api-to-geocode-address/">previous post</a> provided a python sample script for bulk geocoding from arcgis-supported tabular file formats but could easily be modified to remove the arcpy dependency (which requires an esri ArcMap desktop license) for reading in the address table.</p>
+<p>Documentation for the service is integrated into a test/demo interface at <a href="http://api.mapserv.utah.gov">http://api.mapserv.utah.gov</a>. Registration information and api key access for desktop and application users, and, metric/tracking for registered api keys can be accessed from the same site. A <a href="/website//using-the-mapserv-utah-gov-api-to-geocode-address/">previous post</a> provided a python sample script for bulk geocoding from arcgis-supported tabular file formats but could easily be modified to remove the arcpy dependency (which requires an esri ArcMap desktop license) for reading in the address table.</p>
 <p>The upgrades were funding by a partnership between the Department of Public Safety's Division of Highway Safety and the UDOT Traffic and Safety Division. AGRC will assist these agencies in using the new API to enhance mapping of crashes, citations, and other safety-related events.</p>
 <p>The updates are perhaps most easily described by the short series of Need/Solution statements below.  </p>
 <ul>
