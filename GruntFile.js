@@ -5,11 +5,16 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		'gh-pages': {
-	      src: ['_site/**']
+			options: {
+				base: '_site',
+				push: false
+			},
+		  src: ['!node_modules', '!scripts', '**']
 		}
 	});
 
 	// Dependencies
 	grunt.loadNpmTasks( 'grunt-gh-pages' );
+
 	grunt.registerTask( 'publish', [ 'gh-pages' ] );
 };
