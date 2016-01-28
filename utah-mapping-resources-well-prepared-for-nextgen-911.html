@@ -9,9 +9,9 @@
   <title>Utah Mapping Resources: Well-Prepared for NextGen 9-1-1</title>
   <meta name="description" content="Change is in the works for how the 9-1-1 system connects those in need with emergency responders. The National Emergency Number Association (NENA), which rep...">
 
-  <link rel="stylesheet" href="/website//css/main.css">
-  <link rel="canonical" href="agrc.github.io/website//utah-mapping-resources-well-prepared-for-nextgen-911">
-  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="agrc.github.io/website//feed.xml" />
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="canonical" href="agrc.github.io/website/utah-mapping-resources-well-prepared-for-nextgen-911">
+  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="agrc.github.io/website/feed.xml" />
 </head>
 
 
@@ -21,20 +21,20 @@
   <div class="inner">
     <div id="logo">
       <a href="agrc.github.io">
-        <img class="ie_png" src="/website//images/agrc_logo.png" alt="Utah Mapping Portal" />
+        <img class="ie_png" src="/website/images/agrc_logo.png" alt="Utah Mapping Portal" />
       </a>
     </div>
     <div id="top_area">
     </div>
     <nav id="navigation">
       <ul id="menu-main-menu" class="menu">
-        <li class="menu-item"><a href="/website//agrc-newsletter">News</a>
+        <li class="menu-item"><a href="/website/agrc-newsletter">News</a>
         </li>
-        <li class="menu-item"><a href="/website//data">Data</a>
+        <li class="menu-item"><a href="/website/data">Data</a>
         </li>
-        <li class="menu-item"><a href="/website//developer">Developer</a>
+        <li class="menu-item"><a href="/website/developer">Developer</a>
         </li>
-        <li class="menu-item"><a href="/website//about">About</a>
+        <li class="menu-item"><a href="/website/about">About</a>
         </li>
       </ul>
     </nav>
@@ -53,7 +53,7 @@
   <article class="post-content">
     <p>Change is in the works for how the 9-1-1 system connects those in need with emergency responders. The <a href="http://nena.org?page=AboutNENA">National Emergency Number Association</a> (NENA), which represents 9-1-1 professionals and organizations, has been at the forefront of creating the standards that will guide and govern the coming upgrade.</p>
 <p>This blog post attempts to describe the existing enhanced 9-1-1 system as background, what the Next Generation 9-1-1 (a.k.a. NextGen 9-1-1 or NG 9-1-1 or just NG) system will entail, and how digital mapping information sourced from geographic information systems (GIS) will play a crucial role in its success. There's certainly more complexity to this area but, hopefully, this summary will provide a good introduction.</p>
-<p><a href="/website//downloads/NG-911-and-GIS-Mapping.jpg"><img src="/website//images/NG-911-and-GIS-Mapping-800x332.jpg" alt="" title="NG 9-1-1 and GIS Mapping" width="600" height="249" class="aligncenter size-large wp-image-14167" /></a></p>
+<p><a href="/website/downloads/NG-911-and-GIS-Mapping.jpg"><img src="/website/images/NG-911-and-GIS-Mapping-800x332.jpg" alt="" title="NG 9-1-1 and GIS Mapping" width="600" height="249" class="aligncenter size-large wp-image-14167" /></a></p>
 <p><strong>What's 9-1-1?</strong><br />
 While the answer is seemingly obvious at the surface- "9-1-1 is the number to dial in case of an emergency", this question is actually worth some detailed discussion. The 9-1-1 system encompasses the process of delivering a 9-1-1 call to the appropriate 9-1-1 call center, often referred to as a PSAP (Public Service Answering Point) and the subsequent handling of the call by the PSAP's call taker, which includes passing along the pertinent information about the emergency to dispatchers for law enforecement, fire, or EMS personnel. It is very important to note that the 9-1-1 call-taking process and the process for dispatching responders are managed as separate processes, although both are certainly related to each other. 9-1-1 refers only to the system that connects a 9-1-1 caller to the 9-1-1 call taker and there is a clear line  drawn between the responsibilities of the 9-1-1 and dispatch systems.</p>
 <p><strong>How does the existing 9-1-1 system work?</strong><br />
@@ -68,22 +68,22 @@ As mentioned above, address range information carried on road centerline map dat
 <p>A second GIS component of the NG architecture is the Emergency Call Routing Function (ECRF). The server-based ECRF is used in real time to determine which GIS-based PSAP polygon zone is pertinent each 9-1-1 call. In the NG environment the ECRF just needs to perform a simple ‘point in polygon’ spatial query (which zone contains point xy?), since both landline and mobile phone calls will originate from the telecom with geographic coordinates already attached. As the PSAP zone polygons will be editable, also in near real time, it is important that this service operate in a ‘highest availability environment’, and will likely be run by a third party provider.  </p>
 <p><strong>GIS preparedness</strong><br />
 AGRC has worked with county and local government, 9-1-1 centers, and the <a href="http://site.utah.gov/publicsafety/e911/index.html">Utah 9-1-1 Committee</a> to build the important NG9-1-1-required GIS data layers into statewide resources. Utah is well-positioned with regard to NG9-1-1 map data resources since the same or similar data is being actively used in support of local and regional fleet dispatching, elections management, business registration, mobile phone sales taxes, crash and citation mapping, and other areas.</p>
-<p><em><strong>Important NG9-1-1 GIS data layers include:</strong></em><a href="/website//gallery/sgid/utah-gis-streets-roads.png"><img src="/website//images/gallery/sgid/utah-gis-streets-roads.png" width="90" height="90" class="alignright size-thumbnail wp-image-13706" /></a></p>
+<p><em><strong>Important NG9-1-1 GIS data layers include:</strong></em><a href="/website/gallery/sgid/utah-gis-streets-roads.png"><img src="/website/images/gallery/sgid/utah-gis-streets-roads.png" width="90" height="90" class="alignright size-thumbnail wp-image-13706" /></a></p>
 <ul>
 <li>
-The <strong><em><a href="/website//data/sgid-transportation/roads-system/">road centerlines</a></em></strong> and address range dataset has been a mature information products for many years but it is likely to need to transition to a more frequent update cycle (currently approximately every 2 months but NG will require a 24 hour refresh update cycle for correcting missing or incorrect data).<br />
+The <strong><em><a href="/website/data/sgid-transportation/roads-system/">road centerlines</a></em></strong> and address range dataset has been a mature information products for many years but it is likely to need to transition to a more frequent update cycle (currently approximately every 2 months but NG will require a 24 hour refresh update cycle for correcting missing or incorrect data).<br />
 </br>
 </li>
-<li>Utah's first release of a statewide <strong><em><a href="/website//data/location/address-data/">address points</a></em></strong> <a href="/website//downloads/Addresspntmapservice.png"><img src="/website//images/Addresspntmapservice-150x150.png" alt="" title="Addresspntmapservice" width="90" height="90" class="alignright size-thumbnail wp-image-13706" /></a>GIS layer was in June 2013 and most counties are close to if not complete. An update is expected in early January 2014. While address points are strongly recommended (not required) for the NG9-1-1 environment, a more frequent update cycle is suggested for this dataset too.<br />
+<li>Utah's first release of a statewide <strong><em><a href="/website/data/location/address-data/">address points</a></em></strong> <a href="/website/downloads/Addresspntmapservice.png"><img src="/website/images/Addresspntmapservice-150x150.png" alt="" title="Addresspntmapservice" width="90" height="90" class="alignright size-thumbnail wp-image-13706" /></a>GIS layer was in June 2013 and most counties are close to if not complete. An update is expected in early January 2014. While address points are strongly recommended (not required) for the NG9-1-1 environment, a more frequent update cycle is suggested for this dataset too.<br />
 </br>
 </li>
-<li><strong><em><a href="/website//data/location/address-data/">Addressing system boundaries</a></em></strong><a href="/website//downloads/Grids.png"><img src="/website//images/Grids-150x150.png" alt="" title="Grids" width="90" height="90" class="alignright size-thumbnail wp-image-9808" /></a> (often referred to as 'address grids' in Utah) and their relationship to <em><strong>informal placenames</strong></em> are also important since addresses will need to be found across large regions or statewide using community name or informal placenames to focus the search.<br />
+<li><strong><em><a href="/website/data/location/address-data/">Addressing system boundaries</a></em></strong><a href="/website/downloads/Grids.png"><img src="/website/images/Grids-150x150.png" alt="" title="Grids" width="90" height="90" class="alignright size-thumbnail wp-image-9808" /></a> (often referred to as 'address grids' in Utah) and their relationship to <em><strong>informal placenames</strong></em> are also important since addresses will need to be found across large regions or statewide using community name or informal placenames to focus the search.<br />
 </br>
 </li>
-<li>The GIS representation of <strong><em><a href="/website//data/society-overview/public-safety/">PSAP jurisdictional boundaries</a></em></strong> have been maintained by AGRC for the Utah 9-1-1 Committee since 2005 <a href="/website//downloads/PSAPBndy2.png"><img src="/website//images/PSAPBndy2.png" alt="" title="PSAP Boundary" width="90" height="90" class="alignright size-full wp-image-13843" /></a>in order to track the enhanced 9-1-1 (e9-1-1) build out initiative and related grant funding. Existing emergency service number zones (ESNs) have, for the most part, not yet been mapped in Utah but can be derived into a GIS format from information in the MSAG tables as needed.<br />
+<li>The GIS representation of <strong><em><a href="/website/data/society-overview/public-safety/">PSAP jurisdictional boundaries</a></em></strong> have been maintained by AGRC for the Utah 9-1-1 Committee since 2005 <a href="/website/downloads/PSAPBndy2.png"><img src="/website/images/PSAPBndy2.png" alt="" title="PSAP Boundary" width="90" height="90" class="alignright size-full wp-image-13843" /></a>in order to track the enhanced 9-1-1 (e9-1-1) build out initiative and related grant funding. Existing emergency service number zones (ESNs) have, for the most part, not yet been mapped in Utah but can be derived into a GIS format from information in the MSAG tables as needed.<br />
 </br>
 </li>
-<li>A <strong><em><a href="/website//data/sgid-transportation/roads-system/">highway system route and milepost</a></em></strong> <a href="/website//downloads/Utah-SGID-Highway-Milepost.png"><img src="/website//images/Utah-SGID-Highway-Milepost.png" alt="" title="Utah SGID Highway Milepost" width="90" height="90" class="alignright size-full wp-image-1961" /></a>GIS dataset has been maintained in partnership with UDOT since 2009 and includes the ability to look up any milepost-based location reference ("I'm at milepost 210 on I-15") and to display exit number as well as mileposts (for every 1/10th of a mile) on 9-1-1 call-taker and dispatcher screens. This resource is likely not a direct asset to 9-1-1 call routing but may be helpful to call takers as they work to verify incident locations, especially for roadside mobile callers.</li>
+<li>A <strong><em><a href="/website/data/sgid-transportation/roads-system/">highway system route and milepost</a></em></strong> <a href="/website/downloads/Utah-SGID-Highway-Milepost.png"><img src="/website/images/Utah-SGID-Highway-Milepost.png" alt="" title="Utah SGID Highway Milepost" width="90" height="90" class="alignright size-full wp-image-1961" /></a>GIS dataset has been maintained in partnership with UDOT since 2009 and includes the ability to look up any milepost-based location reference ("I'm at milepost 210 on I-15") and to display exit number as well as mileposts (for every 1/10th of a mile) on 9-1-1 call-taker and dispatcher screens. This resource is likely not a direct asset to 9-1-1 call routing but may be helpful to call takers as they work to verify incident locations, especially for roadside mobile callers.</li>
 <p>Resources:</p>
 <p><a href="http://www.nena.org/general/custom.asp?page=NG911_TransitionPlng">NENA Transitioning to NG911 paper</a></p>
 
