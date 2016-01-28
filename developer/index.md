@@ -23,23 +23,23 @@ tags:
 - api
 ---
 <div class="footer-col-wrapper">
-<div class="footer-col  footer-col-3">
+<div class="footer-col footer-col-3">
 
 <h4>Developer Resources</h4>
 
-<img class="icon" src="{{ "/images/icon_map.png" | prepend: site.baseurl }}" width="26" height="26" /><a href="{{ "base-maps" | prepend: site.baseurl }}" title="Online Base Maps">Online Base Maps</a>
+<img class="icon" src="{{ "/images/icon_map.png" | prepend: site.baseurl }}" width="26" height="26" /><a href="{{ "/developer/base-maps" | prepend: site.baseurl }}" title="Online Base Maps">Online Base Maps</a>
 
 <p>AGRC's online map services are available for use at no cost, fast, accurate, and beautiful.</p>
 
-<img class="icon" src="{{ "/images/icon_widget.png" | prepend: site.baseurl }}" width="26" height="30" /><a href="{{"widgets" | prepend: site.baseurl}}" title="Geospatial Widgets">Geospatial Widgets</a>
+<img class="icon" src="{{ "/images/icon_widget.png" | prepend: site.baseurl }}" width="26" height="30" /><a href="{{ "/developer/widgets" | prepend: site.baseurl }}" title="Geospatial Widgets">Geospatial Widgets</a>
 
 <p>AGRC’s javascript widgets allow developers to quickly add spatial functionality to their website for no cost.</p>
 
-<img class="icon" src="{{ "/images/icon_geowebservices.png" | prepend: site.baseurl }}" width="26" height="30" /><a href="{{"web-services" | prepend: site.baseurl}}" title="Geospatial Web Services">Geospatial Web Services</a>
+<img class="icon" src="{{ "/images/icon_geowebservices.png" | prepend: site.baseurl }}" width="26" height="30" /><a href="{{ "/developer/web-services" | prepend: site.baseurl}}" title="Geospatial Web Services">Geospatial Web Services</a>
 
 <p>AGRC’s Web API allow developers to access spatial data from their applications and websites for no cost.</p>
 
-<img class="icon" src="{{ "/images/icon_blog.png" | prepend: site.baseurl }}" width="26" height="30" /><a href="{{"blog" | prepend: site.baseurl }}">Developer Team Blog</a>
+<img class="icon" src="{{ "/images/icon_blog.png" | prepend: site.baseurl }}" width="26" height="30" /><a href="{{ "/developer/blog" | prepend: site.baseurl }}">Developer Team Blog</a>
 
 <p>Read about work done by developers.</p>
 
@@ -52,7 +52,7 @@ tags:
   {% for post in site.categories.Developer limit:6 %}
   <li>
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br/>
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
   </li>
   {% endfor %}
