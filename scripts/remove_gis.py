@@ -27,12 +27,14 @@ for root, subdirs, files in os.walk(walk_dir):
 
         print('\t- file %s (full path: %s)' % (filename, file_path))
 
+
         with open(file_path, 'r') as original, open(file_path + '.bak', 'w') as updated:
             for line_content in original.readlines():
                 replaced = image_re.sub('src="{{ "/images/\g<1>" | prepend: site.baseurl }}"', line_content)
                 replaced = gallery_re.sub('src="{{ "/images/gallery/\g<1>" | prepend: site.baseurl }}"', replaced)
                 replaced = css_re.sub('url(../images/\g<1>)', replaced)
                 replaced = link_re.sub('href="{{ "/\g<1>" | prepend: site.baseurl }}"', replaced)
+
                 updated.write(replaced)
 
         os.rename(file_path + '.bak', file_path)
