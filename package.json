@@ -22,6 +22,8 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-imagemin": "^1.0.0",
-    "grunt-gh-pages": "^1.0.0"
+    "grunt-gh-pages": "^1.0.0",
+    "grunt-newer": "^1.1.1",
+    "grunt-replace": "^0.11.0"
   }
 }
