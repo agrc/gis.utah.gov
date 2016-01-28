@@ -9,9 +9,9 @@
   <title>2014 NAIP 1 Meter Orthophotography</title>
   <meta name="description" content="Utah Mapping Portal | The Utah Automated Geographic Reference Center">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="//data/aerial-photography/2014-naip-1-meter-orthophotography/">
-  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="//feed.xml" />
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="canonical" href="agrc.github.io/website/data/aerial-photography/2014-naip-1-meter-orthophotography/">
+  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="agrc.github.io/website/feed.xml" />
 </head>
 
 
@@ -20,21 +20,21 @@
     <header id="header">
   <div class="inner">
     <div id="logo">
-      <a href="/">
-        <img class="ie_png" src="/images/agrc_logo.png" alt="Utah Mapping Portal" />
+      <a href="agrc.github.io">
+        <img class="ie_png" src="/website/images/agrc_logo.png" alt="Utah Mapping Portal" />
       </a>
     </div>
     <div id="top_area">
     </div>
     <nav id="navigation">
       <ul id="menu-main-menu" class="menu">
-        <li class="menu-item"><a href="/agrc-newsletter">News</a>
+        <li class="menu-item"><a href="/website/agrc-newsletter">News</a>
         </li>
-        <li class="menu-item"><a href="/data">Data</a>
+        <li class="menu-item"><a href="/website/data">Data</a>
         </li>
-        <li class="menu-item"><a href="/developer">Developer</a>
+        <li class="menu-item"><a href="/website/developer">Developer</a>
         </li>
-        <li class="menu-item"><a href="/about">About</a>
+        <li class="menu-item"><a href="/website/about">About</a>
         </li>
       </ul>
     </nav>
@@ -52,7 +52,7 @@
 
   <article class="post-content">
     <h3>2014 NAIP 1 Meter Orthophotography</h3>
-<td>AGRC has statewide <a href="http://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/index">National Agricultural Imagery Program</a> (NAIP) aerial photography for Utah. The imagery is 1-meter resolution and was collected in the summer of 2014. Although the NAIP imagery collection is typically 4-band imagery, we have separated the Red, Green, and Blue bands from the Infrared band. The image service however is 4-band. To merge the RGB images with the single infrared band to create a 4-band image you can use the ArcGIS Composite Bands (Data Management) tool, the Image Analysis window to add a <a href="/wp-content/uploads/FunctionTemplateEditor.jpg">Function Chain</a>, or create a <a href="/wp-content/uploads/FunctionChain.jpg">Reference Mosaic</a>.</p>
+<td>AGRC has statewide <a href="http://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/index">National Agricultural Imagery Program</a> (NAIP) aerial photography for Utah. The imagery is 1-meter resolution and was collected in the summer of 2014. Although the NAIP imagery collection is typically 4-band imagery, we have separated the Red, Green, and Blue bands from the Infrared band. The image service however is 4-band. To merge the RGB images with the single infrared band to create a 4-band image you can use the ArcGIS Composite Bands (Data Management) tool, the Image Analysis window to add a <a href="/website/downloads/FunctionTemplateEditor.jpg">Function Chain</a>, or create a <a href="/website/downloads/FunctionChain.jpg">Reference Mosaic</a>.</p>
 <p>The date the photography was flown can be found in the SrcImgDate field of the <strong><a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2014/NAIP2014_Index.zip">NAIP2014_Index</a></strong> shapefile, in the .txt metadata files after 'Calendar_Date:', or the SDATE field of the county mosaics shapefile. The images have a UTM NAD83 meters projection.</p>
 <p>The USDA also has the NAIP imagery available as a 4-band service for all the states in the U.S.. The available <em>GIS Service</em> URL is  http://gis.apfo.usda.gov/arcgis/services .</p>
 <ul>
@@ -60,25 +60,25 @@
 <li><a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2014/" target="_blank">Retrieve 2014 NAIP 3-band County Mosaics via FTP site</a></li>
 <li><a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2014/">Retrieve 2014 NAIP 3-band RGB Natural Color TIFFs via FTP site</a></li>
 <li><a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2014_band4/">Retrieve 2014 NAIP Infrared 4th band TIFFs via FTP site</a></li>
-<li><a href="/data/sgid-imagery-services/" target="_blank">Use our Image Services</a></li>
+<li><a href="/website/data/sgid-imagery-services/" target="_blank">Use our Image Services</a></li>
 </ul>
 </td>
 <p>To display the 4-band service as a color infrared (CIR) or a false color image in ArcMap, use the Layer Properties-&gt;Symbology tab. Change the Red Channel to Infrared, Green to Red, and Blue to Green Band. (example below)</p>
 <table border="0">
 <tbody>
 <tr>
-<td>[caption width="110" caption="RGB"]<img src="/images/RGB.jpg" alt=" " width="110" height="110" />[/caption]</td>
+<td>[caption width="110" caption="RGB"]<img src="/website/images/RGB.jpg" alt=" " width="110" height="110" />[/caption]</td>
 <td>  -- >  </td>
-<td>[caption width="110" caption="NAIP (RGB)"]<img src="/images/NAIP_RGB_110.png" alt=" " width="110" height="110" />[/caption]</td>
+<td>[caption width="110" caption="NAIP (RGB)"]<img src="/website/images/NAIP_RGB_110.png" alt=" " width="110" height="110" />[/caption]</td>
 </tr>
 <tr>
-<td>[caption width="110" caption="CIR"]<img src="/images/IRG.jpg" alt=" " width="110" height="110" />[/caption]</td>
+<td>[caption width="110" caption="CIR"]<img src="/website/images/IRG.jpg" alt=" " width="110" height="110" />[/caption]</td>
 <td>  -- >  </td>
-<td>[caption width="110" caption="NAIP (CIR)"]<img src="/images/NAIP_CIR_110.png" alt=" " width="110" height="110" />[/caption]</td>
+<td>[caption width="110" caption="NAIP (CIR)"]<img src="/website/images/NAIP_CIR_110.png" alt=" " width="110" height="110" />[/caption]</td>
 </tr>
 </tbody>
 </table>
-<p><strong>* If you are having problems with the imagery from AGRC <a href="/data/aerial-photography/imagery-problems/">take a look at this document</a></strong></p>
+<p><strong>* If you are having problems with the imagery from AGRC <a href="/website/data/aerial-photography/imagery-problems/">take a look at this document</a></strong></p>
 <td>If you have any trouble contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a> at (801-538-3237)</td>
 
   </article>

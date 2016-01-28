@@ -9,9 +9,9 @@
   <title>New: Utah Geocoding Toolbox for ArcGIS Desktop</title>
   <meta name="description" content="(Note: geocoding toolbox .tbx file last updated 1/22/2014)AGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.This ...">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="//new-utah-geocoding-toolbox-for-arcgis-desktop-2">
-  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="//feed.xml" />
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="canonical" href="agrc.github.io/website/new-utah-geocoding-toolbox-for-arcgis-desktop-2">
+  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="agrc.github.io/website/feed.xml" />
 </head>
 
 
@@ -20,21 +20,21 @@
     <header id="header">
   <div class="inner">
     <div id="logo">
-      <a href="/">
-        <img class="ie_png" src="/images/agrc_logo.png" alt="Utah Mapping Portal" />
+      <a href="agrc.github.io">
+        <img class="ie_png" src="/website/images/agrc_logo.png" alt="Utah Mapping Portal" />
       </a>
     </div>
     <div id="top_area">
     </div>
     <nav id="navigation">
       <ul id="menu-main-menu" class="menu">
-        <li class="menu-item"><a href="/agrc-newsletter">News</a>
+        <li class="menu-item"><a href="/website/agrc-newsletter">News</a>
         </li>
-        <li class="menu-item"><a href="/data">Data</a>
+        <li class="menu-item"><a href="/website/data">Data</a>
         </li>
-        <li class="menu-item"><a href="/developer">Developer</a>
+        <li class="menu-item"><a href="/website/developer">Developer</a>
         </li>
-        <li class="menu-item"><a href="/about">About</a>
+        <li class="menu-item"><a href="/website/about">About</a>
         </li>
       </ul>
     </nav>
@@ -52,10 +52,10 @@
 
   <article class="post-content">
     <p><em>(Note: geocoding toolbox .tbx file last updated 1/22/2014)</em></p>
-<p>AGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.<a href="/wp-content/uploads/geocoding-example.png"><img src="/images/geocoding-example.png" alt="" title="geocoding example" width="113" height="144" class="alignright size-full wp-image-14330" /></a></p>
-<p>This custom geocoding toolbox allows ArcMap users to obtain geographic coordinates from <a href="/using-the-mapserv-utah-gov-api-to-geocode-address/">AGRC's geocoding web service api</a> for any table of addresses in a ArcGIS accessible format.</p>
+<p>AGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.<a href="/website/downloads/geocoding-example.png"><img src="/website/images/geocoding-example.png" alt="" title="geocoding example" width="113" height="144" class="alignright size-full wp-image-14330" /></a></p>
+<p>This custom geocoding toolbox allows ArcMap users to obtain geographic coordinates from <a href="/website/using-the-mapserv-utah-gov-api-to-geocode-address/">AGRC's geocoding web service api</a> for any table of addresses in a ArcGIS accessible format.</p>
 <p>While the geocoding api was built primarily for web applications it also provides value as a toolbox in ArcMap, as it uses current local data and solves for some common shortcomings with stock geocoding approaches by:</p>
-<p><a href="/wp-content/uploads/geocodingtoolbox.png"><img src="/images/geocodingtoolbox.png" alt="" title="geocodingtoolbox" width="190" height="333" class="alignright size-full wp-image-14331" /></a>
+<p><a href="/website/downloads/geocodingtoolbox.png"><img src="/website/images/geocodingtoolbox.png" alt="" title="geocodingtoolbox" width="190" height="333" class="alignright size-full wp-image-14331" /></a>
 <ul>
 <li>using hierarchical street name and address coordinate system aliasing</li>
 <li>use of either zip codes or place names as zones</li>
@@ -63,13 +63,13 @@
 <li>handles common placename usage and abbreviations (WVC, St George, Magna, Heber City, S Jordan, etc.) </li>
 <li>can find matches for numeric address 'reversals' (500 E 1991 S)</li>
 <li>can find address point matches, offset centerline matches, or best available.</li>
-<li><a href="/utah-statewide-address-geocoding-web-service-upgrade/">more info</a></li>
+<li><a href="/website/utah-statewide-address-geocoding-web-service-upgrade/">more info</a></li>
 </ul>
 <p>Use the <a href="http://api.mapserv.utah.gov/#geocoding">Street and Zone method on the api page</a> or <a href="http://atlas.utah.gov">the Find Address gui at atlas.utah.gov</a> to test the results from your problem addresses against the api.</p>
 <p>Installation is as easy as <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Geocoding/AGRC%20Geocode%20Tools.tbx">downloading the AGRC Geocode Tools.tbx file</a> to your desired location and then in ArcToolbox, <a href="http://resources.arcgis.com/en/help/main/10.1/index.html#//003q0000001m000000">right clicking the Add Toolbox menu item</a>. Users must obtain an ip specific mapserv api key by <a href="http://developer.mapserv.utah.gov/AccountAccess">registering here</a> prior to use, as a unique api key is one of the required input parameters for running the tool.</p>
 <p>The geocoding tool will produce as output a .csv file with the input unique identifier field, the input address information, and the match results. It also produces a .dbf file with the same information and will provide the user with the option to add this to the current ArcMap project. A user can use the .dbf file to join on the unique record identifier to connect with the original results, and also to Display XYEvents to create a map layer of the results. </p>
 <p>The script runs by default in using http requests but, like all mapserv api methods, can be modified to send request via https. Users can view/edit the python code associated with the geocodin toolbox by right clicking on the script and selecting 'Edit'.</p>
-<p><a href="/wp-content/uploads/geocodetoolbox.png"><img src="/images/geocodetoolbox.png" alt="" title="geocodetoolbox" width="600" height="345" class="aligncenter size-full wp-image-14332" /></a></p>
+<p><a href="/website/downloads/geocodetoolbox.png"><img src="/website/images/geocodetoolbox.png" alt="" title="geocodetoolbox" width="600" height="345" class="aligncenter size-full wp-image-14332" /></a></p>
 
   </article>
 
