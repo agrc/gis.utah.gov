@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Google Imagery</title>
+  <meta name="description" content="Utah Mapping Portal | The Utah Automated Geographic Reference Center">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="//data/google-imagery-gmewms/">
+  <link rel="alternate" type="application/rss+xml" title="Utah Mapping Portal" href="//feed.xml" />
+</head>
+
+
+  <body>
+
+    <header id="header">
+  <div class="inner">
+    <div id="logo">
+      <a href="/">
+        <img class="ie_png" src="/images/agrc_logo.png" alt="Utah Mapping Portal" />
+      </a>
+    </div>
+    <div id="top_area">
+    </div>
+    <nav id="navigation">
+      <ul id="menu-main-menu" class="menu">
+        <li class="menu-item"><a href="/agrc-newsletter">News</a>
+        </li>
+        <li class="menu-item"><a href="/data">Data</a>
+        </li>
+        <li class="menu-item"><a href="/developer">Developer</a>
+        </li>
+        <li class="menu-item"><a href="/about">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Google Imagery</h1>
+  </header>
+
+  <article class="post-content">
+    <p><em><strong>Google Maps Engine Migration to the Google Cloud Platform</em></strong><br />
+In the coming months the current Google Maps Engine (GME) Web Mapping Service (WMS) with be replaced with imagery and services provided via the Google Cloud Platform (GCP). The GCP will be a more robust platform in which to store and serve the imagery and will facilitate the imagery services be provided through ArcGIS Server, MapProxy, or GeoServer. We have not decided just which yet. This will allow us to provide imagery services through multiple avenues including WMS and WMTS. </p>
+<p><em><strong>Coordinate System and Datum</em></strong><br />
+The native coordinate system for the Google files and services is a Geographic Coordinate System with a WGS 1984 datum. Many end users in Utah work in coordinate systems with a different datum (NAD 1983 for example). It will be critical for end users that require the highest locational precision to set up their working environment through the use of the appropriate geographic transformation (Esri software users should use NAD_1983_To_WGS_1984_5). The geographic transformation parameter is needed to overcome the locational difference between the WGS84 and NAD83 datum's “realization points” that are about a meter apart. Without the proper geographic transformation, reprojection algorithms will not be able to resolve the last meter of positional accuracy. In order for the imagery to be positioned as accurately as possible when there is a difference between the native projection and datums of the imagery and the client viewing application, a datum conversion must be set. For ArcMap users, the appropriate datum conversion for Utah is NAD_1983_To_WGS_1984_5. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information : <a href="http://support.esri.com/en/knowledgebase/techarticles/detail/24159">NAD_1983_To_WGS_1984_5</a></p>
+<p><em><strong>Printing, Plotting, Exporting, and Viewing</em></strong><br />
+There is a printing, plotting, and exporting issue with the current GME WMS in Esri software. You will not be able to print, plot, or export maps larger than standard 11'' x 17'' page sizes due to a 2048 pixel limitation within GME’s WMS.  Also related to GME’s WMS is the inability to export maps to certain formats such as .JPG while formats such as .PDF, .PNG, and .TIF will export the imagery correctly at most scales. The WMS will not export from ArcMap when the DPI is set high or 'Output Image Quality' is set to 'Best'. Additionally, the GME WMS will not draw below scales of 1:400 in ArcMap. These issues will go away when the imagery and service is migrated out of GME and into the GCP. It is also important for users to understand that the collection is made up of many flights flown at different times of the year. There may be color changes between these flights as they are not collected during the same time of the year. Mis-alignments may also occur along the seams of different flights.</p>
+<p><em><strong>Horizontal Positional Accuracy</em></strong><br />
+Stated horizontal positional accuracy of the imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. Higher precision is expected in urban areas, where existing supplemental ground control was more abundant.</p>
+<p><em><strong>Adding a WMS service to ArcMap</em></strong><br />
+Adding a WMS service to ArcMap is very simple. Go to <em>Add Data -> GIS Servers -> Add WMS Server</em> and paste the WMS link you have been provided into the <em>URL:</em> line, no User or Password is required <a href="/wp-content/uploads/AddWMS.jpg">(see example)</a>. Hit OK. Do not add the layers from here. Now navigate to the newly added WMS <em><strong>'Google Maps Engine WMS Service on mapsengine.google.com'</em></strong> by going to <em>Add Data -> GIS Servers</em>. If you drill down through the service folders you will find the <em>'combined_imagery'</em> layer to add <a href="/wp-content/uploads/AddWMS_tree.jpg">(see example)</a>. <strong>Tip:</strong> Once the imagery service is added to ArcMap save it as a layer file and simply drag and drop the layer file into ArcMap when you need to add the imagery service in the future and forgo navigating the Add Data dialog.</p>
+<p><em><strong>Adding a WMS service to CAD</em></strong><br />
+Take a look at this <a href="ftp://ftp.agrc.utah.gov/Temp/MicroStationGoogleWMS_HowTo.pdf">How To document</a>.<br />
+CAD users may need to remove <strong><em>?version=1.3.0</em></strong> from the end of the URL link.</p>
+<p><em><strong>Usage Tracking</em></strong><br />
+To access the GME WMS individual organizations will be provided a WMS URL unique to their organization. This will allow for tracking usage metrics and performance of the imagery service. This is a temporary link and will eventually be replaced when the migration to the GCP is complete. Do not distribute the URL outside of your organization or division.</p>
+<p><em><strong>Google Logos</em></strong><br />
+<img src="/images/ImageryCGoogle_WhiteTransparent.png" alt="white transparent" width="132" height="19"> <img src="/images/ImageryCGoogle_WhiteOnBlack.png" alt="white on black" width="132" height="19"></p>
+<p><em><strong>Requests for On-Premise Use</em></strong><br />
+Request can be made to consume the imagery off-line when the provided imagery service does not suffice or if you are not state, regional, local or tribal government, public safety, K-12, or higher education. Please provide the following information for consideration:</p>
+<ul>
+<li>Name & organization:</li>
+<li>Reason for request:</li>
+<li>Working on behalf of:</li>
+<li>Project names:</li>
+<li>Project locations:</li>
+</ul>
+<p><em><strong>Answers to questions we have been asked...(look for future additions to this list)</em></strong></p>
+<ul>
+<li>When future imagery updates are received, the older imagery will be kept online in an archive layer and will continue to be available.</li>
+<li>Since the Google acquisition flight blocks are not done all at once (as opposed to the NAIP product for example), there will certainly be color and positional changes at flight block boundaries. For large area maps, the color-balanced NAIP may be a more aesthetically pleasing cartographic choice. </li>
+<li>AGRC will host a polygon map of the Google flight blocks and their date of collection. The Google flight blocks are available from our SDE as SGID10.INDICES.Google_GMEWMS or as a download <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_GMEWMS/_Statewide/">from here</a>. There is also an  ArcGIS Online map of the flight blocks available <a href="http://arcg.is/1E0wq3b">from here</a>.</li>
+<li>For future updates, Utah can certainly pass along requests to Google for additional update areas or for specific collection periods. But there is no provision in the current contract to create any expectation that those requests will be acted upon.</li>
+<li>AGRC will develop a process to register for access to the service and ensure that terms of service are communicated to end users. </li>
+<li>AGRC will download a statewide master set of the image files for redistribution, as the download process directly from Google incurs transactional costs for cloud server & bandwidth usage.</li>
+<li>AGRC will provide a feedback reporting form for imagery users around the state to report imagery and service issues so these can be passed along to Google. The feedback form can be found <a href="https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221">here</a>.</li>
+</ul>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Utah Mapping Portal</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Utah Mapping Portal</li>
+          <li><a href="mailto:agrc@utah.gov">agrc@utah.gov</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/agrc">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">agrc</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/MapUtah">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">MapUtah</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Utah Mapping Portal | The Utah Automated Geographic Reference Center</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
