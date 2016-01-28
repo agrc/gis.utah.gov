@@ -10,9 +10,10 @@ module.exports = function (grunt) {
 			},
 		  src: [
 				'**/*',
-				'!node_modules/**',
+				'!node_modules/*',
 				'!scripts/*',
 				'!GruntFile.js',
+				'!Gemfile',
 				'!package.json'
 			]
 		},
