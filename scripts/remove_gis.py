@@ -10,6 +10,7 @@ print('walk_dir = ' + walk_dir)
 print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
 
 image_re = re.compile(r'src=["\']http://gis.utah.gov/wp-content/uploads/(.*?)["\']')
+gallery_re = re.compile(r'src=["\']http://gis.utah.gov/gallery/(.*?)["\']')
 css_re = re.compile(r'url\(["\']http://gis.utah.gov/wp-content/uploads/(.*?)["\']\)')
 link_re = re.compile(r'href=["\']http://gis.utah.gov/(.*?)["\']')
 
@@ -29,6 +30,7 @@ for root, subdirs, files in os.walk(walk_dir):
         with open(file_path, 'r') as original, open(file_path + '.bak', 'w') as updated:
             for line_content in original.readlines():
                 replaced = image_re.sub('src="{{ "/images/\g<1>" | prepend: site.baseurl }}"', line_content)
+                replaced = gallery_re.sub('src="{{ "/images/gallery/\g<1>" | prepend: site.baseurl }}"', replaced)
                 replaced = css_re.sub('url(../images/\g<1>)', replaced)
                 replaced = link_re.sub('href="{{ "/\g<1>" | prepend: site.baseurl }}"', replaced)
                 updated.write(replaced)
