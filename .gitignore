@@ -1,4 +1,5 @@
 .sass-cache/
+.grunt/
 _site/
 .jekyll-metadata
 node_modules/

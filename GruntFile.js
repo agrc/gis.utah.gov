@@ -9,7 +9,11 @@ module.exports = function (grunt) {
 				base: '_site',
 				push: false
 			},
-		  src: ['!node_modules', '!scripts', '**']
+		  src: [
+				'**/*',
+				'!node_modules',
+				'!scripts',
+			]
 		}
 	});
 
