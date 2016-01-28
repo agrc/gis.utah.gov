@@ -49,13 +49,13 @@ tags:
 <tr>
 <td valign="top" width="410">
 <ul>
-<li><a href="http://gis.utah.gov/wp-content/uploads/DEM_Auto-correlation.doc">Auto-Correlated DEM information</a></li>
-<li><a href="http://gis.utah.gov/wp-content/uploads/ASCII_Elevation_Data.doc">Using ASCII Files in ArcMap</a></li>
+<li><a href="{{ "/wp-content/uploads/DEM_Auto-correlation.doc" | prepend: site.baseurl }}">Auto-Correlated DEM information</a></li>
+<li><a href="{{ "/wp-content/uploads/ASCII_Elevation_Data.doc" | prepend: site.baseurl }}">Using ASCII Files in ArcMap</a></li>
 <li><strong><a href="http://raster.utah.gov/?cat=5%20Meter%20%7BDEM%7D">Retrieve 5 meter DEM via Interactive Map</a></strong></li>
 <li><a href="ftp://ftp.agrc.utah.gov/Imagery/DEM_5m/">Retrieve 5 meter DEM via FTP site</a></li>
 </ul>
 </td>
-<td valign="top" width="145"><img src="http://gis.utah.gov/wp-content/uploads/DEM_5m_hill.jpg" alt="" width="144" height="135" /></td>
+<td valign="top" width="145"><img src="{{ "/images/DEM_5m_hill.jpg" | prepend: site.baseurl }}" alt="" width="144" height="135" /></td>
 </tr>
 <tr>
 <td colspan="2" valign="top">The AGRC has a statewide coverage of 5 Meter Auto-Correlated DEMs. The DEMs were created from the imagery collected during the 2006 NAIP aerial photography flight.<strong> The auto-correlation process is not as rigorous as other methods of elevation modeling such as photogrammetry, lidar mapping, radar mapping, etc, and therefore end-users should be aware that anomalies are expected within the elevation dataset.</strong> In comparison to the USGS NED dataset, the 5-meter DEM provides higher resolution and horizontal accuracy but anomalies are present within the data. <strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Auto_Correlated_DEM_5m/_Statewide/Auto_Correlated_DEM_5m_shp.zip">Auto_Correlated_DEM_5m</a></strong> is a shapefile that can be used to determine what files to download. These DEM files are in a .asc format and are around 125 mb per 20,000 X 20,000 meter block. This data has a UTM NAD83 meters projection.If you have any trouble contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a> at (801-538-3237)</td>

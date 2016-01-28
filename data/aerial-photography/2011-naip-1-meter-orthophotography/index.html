@@ -45,23 +45,23 @@ tags:
 <li><strong><a href="http://raster.utah.gov/?cat=NAIP%202011%20(1m)" target="_blank">Retrieve 2011 NAIP via Interactive Map</a></strong></li>
 <li><a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2011/" target="_blank">Retrieve 2011 NAIP 3-band County Mosaics via FTP site</a></li>
 <li><a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2011_4-band/">Retrieve 2011 NAIP 4-band TIFFs via FTP site</a></li>
-<li><a href="http://gis.utah.gov/data/utah-sgid-image-server/" target="_blank">Use our Image Server</a></li>
+<li><a href="{{ "/data/utah-sgid-image-server/" | prepend: site.baseurl }}" target="_blank">Use our Image Server</a></li>
 </ul>
 </td>
 <p>To display the 4-band images as a color infrared (CIR) or a false color image in ArcMap, use the Layer Properties-&gt;Symbology tab. Change the Red Channel to Band_4, Green to Band_1, and Blue to Band_2. (example below)</p>
 <table border="0">
 <tbody>
 <tr>
-<td>[caption width="110" caption="RGB"]<img src="http://gis.utah.gov/wp-content/uploads/RGB123.png" alt=" " width="110" height="110" />[/caption]</td>
+<td>[caption width="110" caption="RGB"]<img src="{{ "/images/RGB123.png" | prepend: site.baseurl }}" alt=" " width="110" height="110" />[/caption]</td>
 <td>  -- >  </td>
-<td>[caption width="110" caption="NAIP (RGB)"]<img src="http://gis.utah.gov/wp-content/uploads/NAIP_RGB_110.png" alt=" " width="110" height="110" />[/caption]</td>
+<td>[caption width="110" caption="NAIP (RGB)"]<img src="{{ "/images/NAIP_RGB_110.png" | prepend: site.baseurl }}" alt=" " width="110" height="110" />[/caption]</td>
 </tr>
 <tr>
-<td>[caption width="110" caption="CIR"]<img src="http://gis.utah.gov/wp-content/uploads/CIR412.png" alt=" " width="110" height="110" />[/caption]</td>
+<td>[caption width="110" caption="CIR"]<img src="{{ "/images/CIR412.png" | prepend: site.baseurl }}" alt=" " width="110" height="110" />[/caption]</td>
 <td>  -- >  </td>
-<td>[caption width="110" caption="NAIP (CIR)"]<img src="http://gis.utah.gov/wp-content/uploads/NAIP_CIR_110.png" alt=" " width="110" height="110" />[/caption]</td>
+<td>[caption width="110" caption="NAIP (CIR)"]<img src="{{ "/images/NAIP_CIR_110.png" | prepend: site.baseurl }}" alt=" " width="110" height="110" />[/caption]</td>
 </tr>
 </tbody>
 </table>
-<p><strong>* If you are having problems with the imagery from AGRC <a href="http://gis.utah.gov/data/aerial-photography/imagery-problems/">take a look at this document</a></strong></p>
+<p><strong>* If you are having problems with the imagery from AGRC <a href="{{ "/data/aerial-photography/imagery-problems/" | prepend: site.baseurl }}">take a look at this document</a></strong></p>
 <td>If you have any trouble contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a> at (801-538-3237)</td>

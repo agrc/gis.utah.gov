@@ -14,8 +14,9 @@ wordpress_id: 206
 wordpress_url: http://gis.utah.gov/?page_id=206
 date: '2011-06-30 16:14:07 -0500'
 date_gmt: '2011-06-30 16:14:07 -0500'
-categories: []
-tags: []
+categories: [Developer]
+tags:
+- blog
 ---
 {% for post in site.categories.developer limit:6%}
   <ul>
