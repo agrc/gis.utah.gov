@@ -24,3 +24,9 @@ class TestCleanser(unittest.TestCase):
     valid = '<a href="ftp://ftp.agrc.utah.gov" class="button medium white"><span class="button-text">Download Locators</span></a>'
 
     self.assertEqual(cleanser.update_data_download_button(test), valid)
+
+  def test_captions(self):
+    test = '<p>[caption id="attachment_4794" align="alignright" width="256" caption="Concept of an Address Locator"]<img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/>[/caption]</p>'
+    valid = '<div class="caption"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/><p class="caption-text">Concept of an Address Locator</p></div>'
+
+    self.assertEqual(cleanser.update_caption(test), valid)
