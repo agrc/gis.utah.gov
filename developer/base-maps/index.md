@@ -20,10 +20,10 @@ tags:
 - cache
 ---
 ### Ultra-fast cached online base map from AGRC
-AGRC freely serves 6 online base maps; 4 of them are actively maintained on a regular [schedule](/developer/base-maps/basemap-maintenance-schedule). All of these caches are currently in the UTM NAD83 Zone 12 projection (_wkid: 26912_). The caches consist of between 3 to 17 million 256 pixel square jpg tiles and can range from 15G to over 200GB. These caches are standardized on a subset of the Google, Microsoft, and esri [scale levels](/developer/base-maps/basemap-scales) that apply to our state.
+AGRC freely serves 6 online base maps; 4 of them are actively maintained on a regular [schedule]( {{ "/developer/base-maps/basemap-maintenance-schedule" | prepend: site.baseurl }}). All of these caches are currently in the UTM NAD83 Zone 12 projection (_wkid: 26912_). The caches consist of between 3 to 17 million 256 pixel square jpg tiles and can range from 15G to over 200GB. These caches are standardized on a subset of the Google, Microsoft, and esri [scale levels]( {{ "/developer/base-maps/basemap-scales" | prepend: site.baseurl }}) that apply to our state.
 
 #### The Base Maps
-![basemaps thumbnail](/images/thumb_basemap_selection.png)
+![basemaps thumbnail]( {{ "/images/thumb_basemap_selection.png" | prepend: site.baseurl }})
 
 We offer a [Streets](http://mapserv.utah.gov/cacheviewer/?map=Streets) base map that displays roads, places of interest, land ownership, and boundaries without imagery.
 
@@ -35,4 +35,4 @@ AGRC maintains a very minimal as to not interfere with the data you may or may n
 
 Finally, we have the [Hillshade](http://mapserv.utah.gov/cacheviewer/?map=Hillshade) and [Topo](http://mapserv.utah.gov/cacheviewer/?map=Topo) caches. The Hillshade is a 4 way <acronym title="Digital Raster Graphic">DRG</acronym> and the Topo cache contains all of the USGS Quad Sheets. The Topo cache displays the most relevant quad sheet (250K, 100K and 24K) depending on your scale.
 
-These basemaps are used in our widgets library and all of our online web apps. You can also [use them in ArcGIS Desktop](/data/sgid-base-map-services-arcmap)
+These basemaps are used in our widgets library and all of our online web apps. You can also [use them in ArcGIS Desktop]( {{ "/data/sgid-base-map-services-arcmap" | prepend: site.baseurl }})
