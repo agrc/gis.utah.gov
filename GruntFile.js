@@ -10,12 +10,14 @@ module.exports = function (grunt) {
 			},
 		  src: [
 				'**/*',
-				'!node_modules/*',
-				'!scripts/*',
+				'!node_modules/**',
+				'!scripts/**',
 				'!GruntFile.js',
-				'!Gemfile',
+				'!Gemfile*',
 				'!package.json',
-				'!_site/*'
+				'!_site/**',
+				'!_config.github.io.yml',
+				'!_config.yml_'
 			]
 		},
 		htmlmin: {
@@ -67,7 +69,8 @@ module.exports = function (grunt) {
 			main: {
 				options: {
 					serve: true,
-					auto: true
+					auto: true,
+					drafts: true
 				}
 			}
 		},
@@ -110,6 +113,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-replace');
 
 	grunt.registerTask('default', [
+		'replace:local',
 		'jekyll:main'
 	]);
 
