@@ -10,9 +10,7 @@ css_re = re.compile(r'url\(["\']http://gis.utah.gov/wp-content/uploads/(.*?)["\'
 link_re = re.compile(r'href=["\']http://gis.utah.gov/(.*?)["\']')
 button_re = re.compile(r'\[button size="medium" color="white" textColor="#923922" link="(.*?)"\](Download.*?)\[/button\]')
 
-def replace(dir):
-  walk_dir = sys.argv[1]
-
+def replace(walk_dir):
   print('walk_dir = ' + walk_dir)
   print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
 
@@ -36,6 +34,7 @@ def replace(dir):
                   replaced = update_css_links(replaced)
                   replaced = update_page_links(replaced)
                   replaced = update_download_asset_links(replaced)
+                  replaced = update_data_download_button(replaced)
 
                   updated.write(replaced)
 
@@ -59,3 +58,6 @@ def update_download_asset_links(content):
 
 def update_data_download_button(content):
   return button_re.sub('<a href="\g<1>" class="button medium white"><span class="button-text">\g<2></span></a>', content)
+
+if __name__ == '__main__':
+    replace(sys.argv[1])
