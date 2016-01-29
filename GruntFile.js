@@ -95,7 +95,7 @@ module.exports = function (grunt) {
             replacement: '"/website"'
           }, {
 						match: 'url',
-						replacement: '"agrc.github.io"'
+						replacement: '"http://agrc.github.io"'
 					}]
         },
         src: '_config.yml_',
