@@ -21,7 +21,7 @@ tags:
 ---
 ### Unleash the power of the SGID with the AGRC Web API
 
-![web services](/images/icon_geowebservices.png) The AGRC's Web API allows for developers to leverage the data and services that AGRC maintains. You can query any data layer in our SGID or you can geocode addresses against the most accurate statewide roads data set to name a few highly popular uses. All of our [widgets and add-ins](/developer/widgets) make full use of our web API's.
+![web services]({{ "/images/icon_geowebservices.png" | prepend: site.baseurl }}) The AGRC's Web API allows for developers to leverage the data and services that AGRC maintains. You can query any data layer in our SGID or you can geocode addresses against the most accurate statewide roads data set to name a few highly popular uses. All of our [widgets and add-ins]({{ "/developer/widgets" | prepend: site.baseurl }}) make full use of our web API's.
 
 ### Possibilities
 The main API's that we offer are **geocoding** and **searching**.
@@ -34,7 +34,7 @@ Unlock the ability to visually see your data by geocoding them. Visit the [API E
 The searching API really opens up the opportunity for serious information gathering. The SGID has over 300 layers of real world data that you can run queries against.
 
 #### Remember that database full of house addresses?
-You can learn so much from a house address once it has been geocoded. You could use our search API to find out how far away they live from a fault line, what school district the kids are in, what the broadband availability is and the list goes on. Head over to the [data](/data) pages of our website and look at all the information you can extract to solve a problem or provide context.
+You can learn so much from a house address once it has been geocoded. You could use our search API to find out how far away they live from a fault line, what school district the kids are in, what the broadband availability is and the list goes on. Head over to the [data]({{ "/data" | prepend: site.baseurl }}) pages of our website and look at all the information you can extract to solve a problem or provide context.
 
 We haven't thought of all the great ideas you can build with our API but here are a few things we've already done to get your imagination going.
 

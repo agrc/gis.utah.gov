@@ -18,7 +18,7 @@ categories: [Developer]
 tags:
 - blog
 ---
-{% for post in site.categories.Developer %}
+{% for post in site.categories.developer %}
   <ul>
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
