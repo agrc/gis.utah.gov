@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
  		'gh-pages': {
 			options: {
-				base: '_site/'
+				base: '.'
 			},
 		  src: [
 				'**/*',
@@ -14,7 +14,8 @@ module.exports = function (grunt) {
 				'!scripts/*',
 				'!GruntFile.js',
 				'!Gemfile',
-				'!package.json'
+				'!package.json',
+				'!_site/*'
 			]
 		},
 		htmlmin: {
@@ -69,7 +70,35 @@ module.exports = function (grunt) {
 					auto: true
 				}
 			}
-		}
+		},
+		replace: {
+			local: {
+        options: {
+          patterns: [{
+            match: 'baseurl',
+            replacement: '""'
+          }, {
+						match: 'url',
+						replacement: '"/"'
+					}]
+        },
+        src: '_config.yml_',
+        dest: '_config.yml'
+      },
+      githubio: {
+        options: {
+          patterns: [{
+            match: 'baseurl',
+            replacement: '"/website"'
+          }, {
+						match: 'url',
+						replacement: '"agrc.github.io"'
+					}]
+        },
+        src: '_config.yml_',
+        dest: '_config.yml'
+      }
+    }
 	});
 
 	// Dependencies
@@ -78,6 +107,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-jekyll');
+	grunt.loadNpmTasks('grunt-replace');
 
 	grunt.registerTask('default', [
 		'jekyll:main'
@@ -85,7 +115,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('publish', [
 		'newer:imagemin',
-		'jekyll:githubio',
+		'replace:githubio',
 		'gh-pages'
 	]);
 };
