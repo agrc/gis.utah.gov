@@ -1,21 +1,115 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.categories.Featured limit:10%}
-    <li>
+<div class="grid" style="padding:0 20px">
+  <div class="grid__col grid__col--1-of-3">
+    <a href="#data"><h2>Data</h2></a>
+    <a href="#data"><img class="inline-text-left" src="holder.js/63x63"></a>
+    <p>Twee man bun brooklyn, hoodie pug authentic next level heirloom waistcoat meditation williamsburg lo-fi single-origin coffee mumblecore distillery. Chambray normcore artisan squid brunch flannel. Bushwick drinking vinegar four dollar toast, heirloom blog cardigan affogato listicle pabst fashion axe four loko truffaut jean shorts.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-3">
+    <a href="#api"><h2>API</h2></a>
+    <a href="#api"><img class="inline-text-left" src="holder.js/63x63"></a>
+    <p>Deep v etsy authentic fashion axe trust fund keffiyeh. 8-bit cold-pressed next level banh mi. Umami meh distillery, schlitz YOLO typewriter green juice. Small batch thundercats bushwick mumblecore tacos seitan blog whatever, four loko mustache craft beer street art gentrify.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-3">
+    <a href="#tiles"><h2>Basemaps & Imagery</h2></a>
+    <a href="#tiles"><img class="inline-text-left" src="holder.js/63x63"></a>
+    <p>Offal brunch blue bottle, art party narwhal knausgaard cold-pressed skateboard pitchfork cray four dollar toast cred fingerstache food truck. Sriracha kogi you probably haven't heard of them helvetica locavore. Portland chia microdosing, occupy cray narwhal pour-over you probably haven't heard of them keytar.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-3">
+    <a href="#news"><h2>News, Events, & Coordination</h2></a>
+    <a href="#news"><img class="inline-text-left" src="holder.js/63x63"></a>
+    <p>Neutra selfies cray kitsch, four loko messenger bag banjo keffiyeh forage. Distillery pork belly echo park, austin cray single-origin coffee biodiesel four dollar toast organic 8-bit helvetica raw denim. Squid sriracha etsy ramps tumblr, keytar pour-over kitsch listicle chicharrones mustache organic actually lomo.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-3">
+    <a href="#dev"><h2>Application Development</h2></a>
+    <a href="#dev"><img class="inline-text-left" src="holder.js/63x63"></a>
+    <p>Tattooed asymmetrical locavore franzen bitters, banh mi mumblecore typewriter sustainable intelligentsia venmo. Sartorial deep v tacos pickled slow-carb microdosing. Semiotics forage flexitarian pug mlkshk. Blog locavore bicycle rights pork belly, cred synth photo booth meh.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-3">
+    <a href="#gps"><h2>GPS Network</h2></a>
+    <a href="#gps"><img class="inline-text-left" src="holder.js/63x63"></a>
+    <p>Semiotics irony meggings authentic, tacos cardigan craft beer. Venmo tacos pickled waistcoat gentrify kitsch, ennui farm-to-table ugh mumblecore cronut. Keffiyeh kickstarter four loko kitsch, art party godard cornhole. Next level listicle hammock, fingerstache flexitarian chambray green juice whatever ethical pug gentrify farm-to-table microdosing hashtag.</p>
+  </div>
+  <div class="grid__col grid__col--centered">
+    <h1 style="text-align:center">FOLD</h1>
+  </div>
+</div>
+<div class="grid">
+  <div class="grid__col section alternate">
+    <a name="data" class="anchor"></a>
+    <h1>Data</h1>
+    <div class="grid__col grid__col--1-of-4">
+      <img src="holder.js/75x75">
+    </div>
+    <div class="grid__col grid__col--1-of-4">
+      <img src="holder.js/75x75">
+    </div>
+    <div class="grid__col grid__col--1-of-4">
+      <img src="holder.js/75x75">
+    </div>
+    <div class="grid__col grid__col--1-of-4">
+      <img src="holder.js/75x75">
+    </div>
+    <p>Twee man bun brooklyn, hoodie pug authentic next level heirloom waistcoat meditation williamsburg lo-fi single-origin coffee mumblecore distillery. Chambray normcore artisan squid brunch flannel. Bushwick drinking vinegar four dollar toast, heirloom blog cardigan affogato listicle pabst fashion axe four loko truffaut jean shorts.</p>
+    <a href="{{ "/data" | prepend: site.baseurl }}" class="section-read-more">Read More</a>
+  </div>
+  <div class="grid__col section">
+    <a name="api" class="anchor"></a>
+    <h1>API</h1>
+    <p>Twee man bun brooklyn, hoodie pug authentic next level heirloom waistcoat meditation williamsburg lo-fi single-origin coffee mumblecore distillery. Chambray normcore artisan squid brunch flannel. Bushwick drinking vinegar four dollar toast, heirloom blog cardigan affogato listicle pabst fashion axe four loko truffaut jean shorts.</p>
+    <a href="{{ "/developer" | prepend: site.baseurl }}" class="section-read-more">Read More</a>
+  </div>
+  <div class="grid__col section alternate">
+    <a name="tiles" class="anchor"></a>
+    <h1>Basemaps and Imagery</h1>
+    <p>Twee man bun brooklyn, hoodie pug authentic next level heirloom waistcoat meditation williamsburg lo-fi single-origin coffee mumblecore distillery. Chambray normcore artisan squid brunch flannel. Bushwick drinking vinegar four dollar toast, heirloom blog cardigan affogato listicle pabst fashion axe four loko truffaut jean shorts.</p>
+    <div class="grid__col grid__col--1-of-3">
+      <img src="holder.js/300x125">
+    </div>
+    <div class="grid__col grid__col--1-of-3">
+      <img src="holder.js/300x125">
+    </div>
+    <div class="grid__col grid__col--1-of-3">
+      <img src="holder.js/300x125">
+    </div>
+    <a href="{{ "/data" | prepend: site.baseurl }}" class="section-read-more">Read More</a>
+  </div>
+  <div class="grid__col section">
+    <a name="news" class="anchor"></a>
+    <h1>News</h1>
+    <p>Twee man bun brooklyn, hoodie pug authentic next level heirloom waistcoat meditation williamsburg lo-fi single-origin coffee mumblecore distillery. Chambray normcore artisan squid brunch flannel. Bushwick drinking vinegar four dollar toast, heirloom blog cardigan affogato listicle pabst fashion axe four loko truffaut jean shorts.</p>
+    {% for post in site.categories.Featured limit:3 %}
+    <div class="grid__col grid__col--1-of-3">
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br/>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    </li>
+    </div>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <a href="{{ "/news" | prepend: site.baseurl }}" class="section-read-more">Read More</a>
+  </div>
+  <div class="grid__col section alternate">
+    <a name="dev" class="anchor"></a>
+    <h1>Application Development</h1>
+    <p>Twee man bun brooklyn, hoodie pug authentic next level heirloom waistcoat meditation williamsburg lo-fi single-origin coffee mumblecore distillery. Chambray normcore artisan squid brunch flannel. Bushwick drinking vinegar four dollar toast, heirloom blog cardigan affogato listicle pabst fashion axe four loko truffaut jean shorts.</p>
+    <div class="grid__col grid__col--1-of-2 text-center">
+      <img src="holder.js/400x350">
+    </div>
+    <div class="grid__col grid__col--1-of-2 text-center">
+      <img src="holder.js/400x350">
+    </div>
+    <a href="{{ "/developer" | prepend: site.baseurl }}" class="section-read-more">Read More</a>
+  </div>
+  <div class="grid__col section">
+    <a name="gps" class="anchor"></a>
+    <h1>GPS Network</h1>
+    <div class="grid__col grid__col--1-of-2">
+      <p>Twee man bun brooklyn, hoodie pug authentic next level heirloom waistcoat meditation williamsburg lo-fi single-origin coffee mumblecore distillery. Chambray normcore artisan squid brunch flannel. Bushwick drinking vinegar four dollar toast, heirloom blog cardigan affogato listicle pabst fashion axe four loko truffaut jean shorts.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-2">
+      <p>Distillery crucifix forage, master cleanse pop-up church-key pitchfork kitsch synth everyday carry occupy single-origin coffee. Pug gochujang sustainable, next level paleo etsy authentic art party pop-up mustache whatever taxidermy. Farm-to-table art party four dollar toast marfa cold-pressed bespoke schlitz chartreuse, hashtag semiotics. Narwhal 3 wolf moon seitan cornhole, flexitarian microdosing blue bottle pickled. Heirloom vinyl try-hard, semiotics venmo scenester aesthetic. Neutra small batch flexitarian, kinfolk echo park paleo disrupt butcher brunch 3 wolf moon waistcoat gluten-free. Tousled salvia mlkshk deep v farm-to-table man bun vinyl, church-key gochujang.</p>
+    </div>
+    <a href="{{ "/GPS" | prepend: site.baseurl }}" class="section-read-more">Read More</a>
+  </div>
 </div>

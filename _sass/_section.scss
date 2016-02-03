@@ -1,0 +1,26 @@
+.section {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    min-height: 30em;
+    padding-top: 0.5em;
+    margin-left: 20px
+}
+
+.section.alternate {
+  background-color: #3D3D3D;
+  color: #fff;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.alternate .section-read-more {
+  color: #FFDC00;
+}
+
+.section-read-more {
+  position: absolute;
+  padding-top: 1em;
+  bottom: 0em;
+}
