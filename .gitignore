@@ -3,7 +3,7 @@
 _site/
 .jekyll-metadata
 node_modules/
-
+bower_components/
 _config.yml
 
 *.pyc

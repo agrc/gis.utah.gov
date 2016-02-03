@@ -71,6 +71,7 @@ module.exports = function (grunt) {
 					serve: true,
 					auto: true,
 					drafts: true
+					// incremental: true
 				}
 			}
 		},
