@@ -38,6 +38,7 @@ def replace(walk_dir):
                   replaced = update_data_download_button(replaced)
                   replaced = update_caption(replaced)
                   replaced = update_columns(replaced)
+                  replaced = update_divider(replaced)
 
                   updated.write(replaced)
 
@@ -66,18 +67,18 @@ def update_caption(content):
   return caption_re.sub('<div class="caption">\g<2><p class="caption-text">\g<1></p></div>', content)
 
 def update_columns(content):
-  replaced =  re.sub(r'<p>\[one_half\]<\/p>',
-                     '<div class="grid"><div class="grid__col grid__col--1-of-2">',
-                     content)
-  replaced =  re.sub(r'<p>\[\/one_half\](<\/p>)?',
-                     '</div>',
-                     replaced)
-  replaced =  re.sub(r'(<p>)?\[one_half_last\]<\/p>',
-                     '<div class="grid__col grid__col--1-of-2">',
-                     replaced)
-  replaced =  re.sub(r'(<p>)?\[\/one_half_last\]<\/p>',
-                     '</div></div>',
-                     replaced)
+  replaced = re.sub(r'<p>\[one_half\]<\/p>',
+                   '<div class="grid"><div class="grid__col grid__col--1-of-2">',
+                   content)
+  replaced = re.sub(r'<p>\[\/one_half\](<\/p>)?',
+                   '</div>',
+                   replaced)
+  replaced = re.sub(r'(<p>)?\[one_half_last\]<\/p>',
+                   '<div class="grid__col grid__col--1-of-2">',
+                   replaced)
+  replaced = re.sub(r'(<p>)?\[\/one_half_last\]<\/p>',
+                   '</div></div>',
+                   replaced)
 
   return replaced
 

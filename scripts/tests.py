@@ -51,3 +51,19 @@ class TestCleanser(unittest.TestCase):
     </div></div>'''
 
     self.assertEqual(cleanser.update_columns(test), valid)
+
+  def test_divider(self):
+    test = '<p>[divider_advanced color="#C36E00" paddingTop="2" paddingBottom="2"]</p>'
+    valid = '<div class="divider"></div>'
+
+    self.assertEqual(cleanser.update_divider(test), valid)
+
+    test = '<p>[divider_padding]<br />'
+    valid = '<div class="divider-padding"></div>'
+
+    self.assertEqual(cleanser.update_divider(test), valid)
+
+    test = '<p>[divider_padding]</p>'
+
+    self.assertEqual(cleanser.update_divider(test), valid)
+

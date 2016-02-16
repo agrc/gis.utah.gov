@@ -1,0 +1,14 @@
+.divider {
+    padding-top:2px;
+    margin-bottom:2px;
+    position: relative;
+    clear: both;
+    border-bottom: 1px solid $highlight-color;
+}
+
+.divider-padding {
+    position: relative;
+    clear: both;
+    display: block;
+    padding-top: 30px;
+}
