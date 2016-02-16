@@ -37,7 +37,17 @@ class TestCleanser(unittest.TestCase):
     self.assertEqual(cleanser.update_caption(test), valid)
 
   def test_half_columns(self):
-    test = '<p>[one_half]</p><h3>Overview</h3><p>[/one_half]</p><p>[one_half_last]</p><h3>SGID Datasets</h3>[/one_half_last]</p>'
-    valid = '<div class="grid"><div class="grid__col grid__col--1-of-2"><h3>Overview</h3></div><div class="grid__col grid__col--1-of-2"><h3>SGID Datasets</h3></div></div>'
+    test = '''<p>[one_half]</p>
+    <h3>Overview</h3>
+    <p>[/one_half]</p>
+    <p>[one_half_last]</p>
+    <h3>SGID Datasets</h3>
+    [/one_half_last]</p>'''
+    valid = '''<div class="grid"><div class="grid__col grid__col--1-of-2">
+    <h3>Overview</h3>
+    </div>
+    <div class="grid__col grid__col--1-of-2">
+    <h3>SGID Datasets</h3>
+    </div></div>'''
 
     self.assertEqual(cleanser.update_columns(test), valid)

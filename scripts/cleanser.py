@@ -9,8 +9,7 @@ downloads_re = re.compile(r'["\']/wp-content/uploads/(.*?)["\']')
 css_re = re.compile(r'url\(["\']http://gis.utah.gov/wp-content/uploads/(.*?)["\']\)')
 link_re = re.compile(r'href=["\']http://gis.utah.gov/(.*?)["\']')
 button_re = re.compile(r'\[button size="medium" color="white" textColor="#923922" link="(.*?)"\](Download.*?)\[/button\]')
-caption_re = re.compile(r'<p>\[caption id=".*? caption="(.*?)"\](.*?/>)\[/caption\]</p>')
-half_column_re = re.compile(r'<p>\[one_half\]</p>(.*)<p>\[/one_half\]</p>.*<p>\[one_half_last\]</p>(.*)(?:<p>)?\[/one_half_last\]</p>', flags=re.I | re.M | re.S)
+caption_re = re.compile(r'<p>\[caption id=".*? caption="(.*?)"\](.*?/>)\[/caption\]<\/p>')
 
 def replace(walk_dir):
   print('walk_dir = ' + walk_dir)
@@ -67,7 +66,20 @@ def update_caption(content):
   return caption_re.sub('<div class="caption">\g<2><p class="caption-text">\g<1></p></div>', content)
 
 def update_columns(content):
-  return half_column_re.sub('<div class="grid"><div class="grid__col grid__col--1-of-2">\g<1></div><div class="grid__col grid__col--1-of-2">\g<2></div></div>', content)
+  replaced =  re.sub(r'<p>\[one_half\]<\/p>',
+                     '<div class="grid"><div class="grid__col grid__col--1-of-2">',
+                     content)
+  replaced =  re.sub(r'<p>\[\/one_half\](<\/p>)?',
+                     '</div>',
+                     replaced)
+  replaced =  re.sub(r'(<p>)?\[one_half_last\]<\/p>',
+                     '<div class="grid__col grid__col--1-of-2">',
+                     replaced)
+  replaced =  re.sub(r'(<p>)?\[\/one_half_last\]<\/p>',
+                     '</div></div>',
+                     replaced)
+
+  return replaced
 
 if __name__ == '__main__':
     replace(sys.argv[1])
