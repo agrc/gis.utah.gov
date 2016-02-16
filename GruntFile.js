@@ -70,8 +70,8 @@ module.exports = function (grunt) {
 				options: {
 					serve: true,
 					auto: true,
-					drafts: true
-					// incremental: true
+					drafts: true,
+					incremental: true
 				}
 			}
 		},
