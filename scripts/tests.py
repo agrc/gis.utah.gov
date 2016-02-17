@@ -67,3 +67,13 @@ class TestCleanser(unittest.TestCase):
 
     self.assertEqual(cleanser.update_divider(test), valid)
 
+  def test_icons(self):
+    test = '[icon_link style="download" color="gray" href="Link" target="_self"]<a title="Download available HRO imagery" href="http://raster.utah.gov/?catGroup=HRO%202012%20(12.5cm),HRO%202012%20(1ft),HRO%202009%20(25cm),HRO%202006%20(25cm),HRO%202003%20(30cm)&title=Utah%20HRO%20Imagery">HRO Orthophotography Interactive Map</a>[/icon_link]<br />'
+    valid = '<span class="icon-text icon-download"><a title="Download available HRO imagery" href="http://raster.utah.gov/?catGroup=HRO%202012%20(12.5cm),HRO%202012%20(1ft),HRO%202009%20(25cm),HRO%202006%20(25cm),HRO%202003%20(30cm)&title=Utah%20HRO%20Imagery">HRO Orthophotography Interactive Map</a></span><br />'
+
+    self.assertEqual(cleanser.update_icons(test), valid)
+
+    test = '<p>[icon style="calendar" color="gray"]Last Update: March, 2013[/icon]<br />'
+    valid = '<p><span class="icon-text icon-calendar">Last Update: March, 2013</span><br />'
+
+    self.assertEqual(cleanser.update_icons(test), valid)

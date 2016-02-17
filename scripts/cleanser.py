@@ -39,6 +39,7 @@ def replace(walk_dir):
                   replaced = update_caption(replaced)
                   replaced = update_columns(replaced)
                   replaced = update_divider(replaced)
+                  replaced = update_icons(replaced)
 
                   updated.write(replaced)
 
@@ -81,6 +82,21 @@ def update_columns(content):
                    replaced)
 
   return replaced
+
+def update_divider(content):
+    replaced = re.sub(r'<p>\[divider_advanced.*\]<\/p>',
+                      '<div class="divider"></div>',
+                      content)
+    replaced = re.sub(r'<p>\[divider_padding\](<br \/>|<\/p>)',
+                      '<div class="divider-padding"></div>',
+                      replaced)
+
+    return replaced
+
+def update_icons(content):
+    return re.sub(r'(.*)\[icon(?:_link)? style=\"(.*?)\".*\](.*)\[\/icon(?:_link)?\](.*)',
+                  '\g<1><span class="icon-text icon-\g<2>">\g<3></span>\g<4>',
+                  content)
 
 if __name__ == '__main__':
     replace(sys.argv[1])
