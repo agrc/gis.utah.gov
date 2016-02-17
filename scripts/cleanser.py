@@ -9,7 +9,6 @@ downloads_re = re.compile(r'["\']/wp-content/uploads/(.*?)["\']')
 css_re = re.compile(r'url\(["\']http://gis.utah.gov/wp-content/uploads/(.*?)["\']\)')
 link_re = re.compile(r'href=["\']http://gis.utah.gov/(.*?)["\']')
 button_re = re.compile(r'\[button size="medium" color="white" textColor="#923922" link="(.*?)"\](Download.*?)\[/button\]')
-caption_re = re.compile(r'<p>\[caption id=".*? caption="(.*?)"\](.*?/>)\[/caption\]<\/p>')
 
 def replace(walk_dir):
   print('walk_dir = ' + walk_dir)
@@ -65,7 +64,17 @@ def update_data_download_button(content):
   return button_re.sub('<a href="\g<1>" class="button medium white"><span class="button-text">\g<2></span></a>', content)
 
 def update_caption(content):
-  return caption_re.sub('<div class="caption">\g<2><p class="caption-text">\g<1></p></div>', content)
+  try:
+    replace = re.sub(r'<p>\[caption id=.*? (?:caption=\"(.*?)\".*)?\](.*?/>)\[/caption\]<\/p>',
+                      '<div class="caption">\g<2><p class="caption-text">\g<1></p></div>',
+                      content)
+  except:
+    #: handle captions with no caption..... ....
+    pass
+
+  return re.sub(r'<p>\[caption id=.*?\](.*?/>)\[/caption\]<\/p>',
+                    '<div class="caption">\g<1></div>',
+                    content)
 
 def update_columns(content):
   replaced = re.sub(r'<p>\[one_half\]<\/p>',
