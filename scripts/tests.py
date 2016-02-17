@@ -36,6 +36,12 @@ class TestCleanser(unittest.TestCase):
 
     self.assertEqual(cleanser.update_caption(test), valid)
 
+    test = '<p>[caption id="attachment_4794" align="alignright" width="256" caption=]<img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/>[/caption]</p>'
+    valid = '<div class="caption"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/></div>'
+
+    self.assertEqual(cleanser.update_caption(test), valid)
+
+
   def test_half_columns(self):
     test = '''<p>[one_half]</p>
     <h3>Overview</h3>

@@ -3,13 +3,6 @@ import sys
 import re
 
 
-image_re = re.compile(r'src=["\']http://gis.utah.gov/wp-content/uploads/(.*?)["\']')
-gallery_re = re.compile(r'src=["\']http://gis.utah.gov/gallery/(.*?)["\']')
-downloads_re = re.compile(r'["\']/wp-content/uploads/(.*?)["\']')
-css_re = re.compile(r'url\(["\']http://gis.utah.gov/wp-content/uploads/(.*?)["\']\)')
-link_re = re.compile(r'href=["\']http://gis.utah.gov/(.*?)["\']')
-button_re = re.compile(r'\[button size="medium" color="white" textColor="#923922" link="(.*?)"\](Download.*?)\[/button\]')
-
 def replace(walk_dir):
   print('walk_dir = ' + walk_dir)
   print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
@@ -46,26 +39,38 @@ def replace(walk_dir):
 
 
 def update_image_url(content):
-  return image_re.sub('src="{{ "/images/\g<1>" | prepend: site.baseurl }}"', content)
+  return re.sub(r'src=[\"\']http:\/\/gis\.utah\.gov\/wp-content\/uploads\/(.*?)["\']',
+                'src="{{ "/images/\g<1>" | prepend: site.baseurl }}"',
+                content)
 
 def update_gallery_links(content):
-  return gallery_re.sub('src="{{ "/images/gallery/\g<1>" | prepend: site.baseurl }}"', content)
+  return re.sub(r'src=[\"\']http:\/\/gis\.utah\.gov\/gallery\/(.*?)["\']',
+                'src="{{ "/images/gallery/\g<1>" | prepend: site.baseurl }}"',
+                content)
 
 def update_css_links(content):
-  return css_re.sub('url(../images/\g<1>)', content)
+  return re.sub(r'url\([\"\']http:\/\/gis\.utah\.gov\/wp-content\/uploads\/(.*?)[\"\']\)',
+                'url(../images/\g<1>)',
+                content)
 
 def update_page_links(content):
-  return link_re.sub('href="{{ "/\g<1>" | prepend: site.baseurl }}"', content)
+  return re.sub(r'href=[\"\']http:\/\/gis\.utah\.gov\/(.*?)[\"\']',
+                'href="{{ "/\g<1>" | prepend: site.baseurl }}"',
+                content)
 
 def update_download_asset_links(content):
-  return downloads_re.sub('"/downloads/\g<1>"', content)
+  return re.sub(r'[\"\']\/wp-content\/uploads\/(.*?)[\"\']',
+                '"/downloads/\g<1>"',
+                content)
 
 def update_data_download_button(content):
-  return button_re.sub('<a href="\g<1>" class="button medium white"><span class="button-text">\g<2></span></a>', content)
+  return re.sub(r'\[button size=\"medium\" color=\"white\" textColor=\"#923922"\ link=\"(.*?)\"\](Download.*?)\[\/button\]',
+                '<a href="\g<1>" class="button medium white"><span class="button-text">\g<2></span></a>',
+                content)
 
 def update_caption(content):
   try:
-    replace = re.sub(r'<p>\[caption id=.*? (?:caption=\"(.*?)\".*)?\](.*?/>)\[/caption\]<\/p>',
+    replace = re.sub(r'<p>\[caption id=.*? caption=\"(.*?)\".*?\](.*?/>)\[/caption\]<\/p>',
                       '<div class="caption">\g<2><p class="caption-text">\g<1></p></div>',
                       content)
   except:
@@ -74,7 +79,7 @@ def update_caption(content):
 
   return re.sub(r'<p>\[caption id=.*?\](.*?/>)\[/caption\]<\/p>',
                     '<div class="caption">\g<1></div>',
-                    content)
+                    replace)
 
 def update_columns(content):
   replaced = re.sub(r'<p>\[one_half\]<\/p>',
