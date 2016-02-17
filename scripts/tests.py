@@ -83,3 +83,27 @@ class TestCleanser(unittest.TestCase):
     valid = '<p><span class="icon-text icon-calendar">Last Update: March, 2013</span><br />'
 
     self.assertEqual(cleanser.update_icons(test), valid)
+
+  def test_tables(self):
+    test = '<p>[styled_table]<br />'
+    valid = ' '
+
+    self.assertEqual(cleanser.update_tables(test), valid)
+
+    test = '[styled_table]</p>'
+    valid = '<div class="table-style">'
+
+    self.assertEqual(cleanser.update_tables(test), valid)
+
+    test = '<p>[styled_table]</p>'
+
+    self.assertEqual(cleanser.update_tables(test), valid)
+
+    test = '[styled_table]</p>'
+
+    self.assertEqual(cleanser.update_tables(test), valid)
+
+    test = '<p>[/styled_table]</p>'
+    valid = '</div>'
+
+    self.assertEqual(cleanser.update_tables(test), valid)

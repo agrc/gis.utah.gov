@@ -1,0 +1,59 @@
+/* ======================================================= */
+/*                          Table                          */
+/* ======================================================= */
+table, td, th {
+	vertical-align: middle;
+}
+caption {
+	padding-bottom: 0.8em;
+}
+/* Table Style
+---------------------------------------------------------- */
+.table-style
+{
+	border: 1px solid #dddddd;
+	margin-bottom:20px;
+}
+.table-style table
+{
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #fff;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.table-style th
+{
+	text-align:center;
+	padding:12px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #555;
+	background-color:#EEEEEE;
+}
+.table-style tbody
+{
+	background: #F9F9F9;
+}
+.table-style td
+{
+	text-align:center;
+	padding: 10px;
+	color: #666;
+	border-top: 1px dashed #fff;
+}
+.table-style tbody tr:hover td
+{
+	color: #333;
+	background: #fff;
+	border-top: 1px solid #fff;
+}
+.table-style tfoot
+{
+	background-color:#f3f3f3;
+}
+.table-style tfoot td
+{
+	padding:8px;
+}

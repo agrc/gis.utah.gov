@@ -8,12 +8,15 @@ def replace(walk_dir):
   print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
 
   for root, subdirs, files in os.walk(walk_dir):
-      if root.startswith(walk_dir + 'images') or root.startswith(walk_dir + '_site'):
+      if (root.startswith(walk_dir + 'images') or
+         root.startswith(walk_dir + '_site') or
+         root.startswith(walk_dir + 'downloads') or
+         root.startswith(walk_dir + '.grunt')):
           continue
 
       for filename in files:
           _, extension = os.path.splitext(filename)
-          if extension.lower() not in ['.html', '.scss']:
+          if extension.lower() not in ['.html', '.scss', '.py']:
               continue
 
           file_path = os.path.join(root, filename)
@@ -32,6 +35,7 @@ def replace(walk_dir):
                   replaced = update_columns(replaced)
                   replaced = update_divider(replaced)
                   replaced = update_icons(replaced)
+                  replaced = update_tables(replaced)
 
                   updated.write(replaced)
 
@@ -111,6 +115,19 @@ def update_icons(content):
     return re.sub(r'(.*)\[icon(?:_link)? style=\"(.*?)\".*\](.*)\[\/icon(?:_link)?\](.*)',
                   '\g<1><span class="icon-text icon-\g<2>">\g<3></span>\g<4>',
                   content)
+
+def update_tables(content):
+  replaced = re.sub(r'<p>\[styled_table\]<br.*?\/>',
+                    ' ',
+                    content)
+  replaced = re.sub(r'(<p>)?\[styled_table\]<\/p>',
+                    '<div class="table-style">',
+                    replaced)
+  replaced = re.sub(r'<p>\[\/styled_table\]<\/p>',
+                    '</div>',
+                    replaced)
+
+  return replaced
 
 if __name__ == '__main__':
     replace(sys.argv[1])
