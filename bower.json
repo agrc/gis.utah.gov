@@ -1,0 +1,26 @@
+{
+  "name": "gis.utah.gov",
+  "description": "Jekyll website for gis.utah.gov",
+  "main": "GruntFile.js",
+  "authors": [
+    "AGRC"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jekyll"
+  ],
+  "homepage": "https://github.com/agrc/website",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0",
+    "holderjs": "~2.9.1"
+  }
+}

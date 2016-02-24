@@ -6,23 +6,12 @@
 
 #header {
   height: 75px;
-  background-color: $base-color;
-  background-image: url(../images/header_bg.jpg);
-  background-repeat: repeat;
-  background-position: top left;
-  background-attachment: scroll;
-  border-bottom: 2px solid $base-color;
-}
-
-#top_area {
-  position: absolute;
-  top: 25px;
-  right: 15px;
+  background-color: $section-header-footer;
 }
 
 #navigation {
   bottom: 0;
-  left: 305px;
+  right: 25px;
   height: 52px;
   position: absolute;
 }
