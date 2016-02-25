@@ -109,11 +109,26 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    text-align: center;
+    > li {
+        display: inline;
+        margin: 0 $spacing-unit * 2;
+    }
 }
+
+a:hover > i {
+    text-decoration: none;
+}
+
 
 /**
  * Page content
  */
+
+.post {
+    margin: 0 100px;
+}
+
 .page-heading {
     font-size: 20px;
 }
@@ -127,9 +142,14 @@
     }
 }
 
-.post-meta {
+.post-meta, .muted {
     font-size: $small-font-size;
-    color: $muted-text-color;
+    color: currentColor;
+}
+
+.post-meta {
+    color: $highlight-color;
+    color: rgba($highlight-color, 0.5);
 }
 
 .post-link {
