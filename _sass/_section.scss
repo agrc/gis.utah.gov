@@ -3,12 +3,17 @@
     padding: 0.5em $spacing-unit 2em $spacing-unit;
     width: 100%;
     background-color: $base-background-color;
+    background: radial-gradient(30em circle, ligthen($base-background-color, 10%), $base-background-color);
     border-bottom: 1px solid darken($base-background-color, 25%);
+    > h1, h2, h3, h4, h5, h6 {
+      text-shadow: darken($base-background-color, 25%) 0.1em 0.1em 0.2em;
+    }
   &.alternate {
     background-color: $section-alternating;
     border-bottom: 1px solid darken($section-alternating, 15%);
+    background: radial-gradient(30em circle, lighten($section-alternating, 10%), $section-alternating);
     > h1, h2, h3, h4, h5, h6 {
-      color: #fff;
+      color: lighten($brand-color, 15%);
     }
   }
   &.action {

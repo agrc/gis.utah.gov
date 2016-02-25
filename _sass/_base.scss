@@ -20,7 +20,7 @@
 }
 
 body {
-   line-height: 1.2;
+   line-height: $base-line-height;
    color: $base-text-color;
    background-color: $base-background-color;
    font-family: $base-font-family;
@@ -43,7 +43,10 @@ body {
      font-weight: normal;
      vertical-align: middle
  }
- p,dl,dd {
+ p {
+   margin: 0 0 1.5em 0;
+ }
+ dl,dd {
      margin: 0 0 1.5em 0;
      font-size: 1em;
      line-height: 1.7em
@@ -125,6 +128,9 @@ a {
     &:hover {
         color: lighten($brand-color, 25%);
         text-decoration: underline;
+        &.clean {
+          text-decoration: none;
+        }
     }
     img {
       border: none;

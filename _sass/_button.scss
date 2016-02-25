@@ -114,27 +114,30 @@ a.button, a.button:hover {
 
 
 a.btn {
-         background-image: none;
-         border: 1px solid currentColor;
-         color: inherit;
-         cursor: pointer;
-         display: inline-block;
-         font-size: 14px;
-         font-weight: normal;
-         margin-bottom: 0;
-         min-width: 120px;
-         padding: 10px 25px;
-         text-align: center;
-         text-decoration: none;
-         touch-action: manipulation;
-         transition: all 0.25s ease-in-out;
-         vertical-align: middle;
-         white-space: nowrap;
-         &:hover {
-            color: #000;
-            background: #fff;
-         }
-         &:visted {
-                 color: currentColor;
-         }
-        }
+  background-image: none;
+  border: 1px solid currentColor;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 0;
+  min-width: 120px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: all 0.25s ease-in-out;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  line-height: 1;
+  &:hover {
+    color: #000;
+    border: 1px solid rgba(0,0,0,.3);
+    background: #fff;
+  }
+  &:visted {
+    color: currentColor;
+  }
+}
