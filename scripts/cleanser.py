@@ -36,7 +36,6 @@ def replace(walk_dir):
                   replaced = update_divider(replaced)
                   replaced = update_icons(replaced)
                   replaced = update_tables(replaced)
-                  replaced = update_tabs(replaced)
 
                   updated.write(replaced)
 
@@ -127,17 +126,6 @@ def update_tables(content):
   replaced = re.sub(r'<p>\[\/styled_table\]<\/p>',
                     '</div>',
                     replaced)
-
-  return replaced
-
-def update_tabs(content):
-  replaced = re.sub(r'\[(\/)?tabs?\]',
-                    '',
-                    content)
-  replaced = re.sub(r'(?:<p>)?\[tab title=\"(.*?)\"\](.*)',
-                    '<h5 class="tab-title">\g<1></h5>\g<2>',
-                    replaced,
-                    flags=re.S)
 
   return replaced
 
