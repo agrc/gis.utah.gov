@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-top: 5px solid darken($border-grey, 70%);
+    border-bottom: 1px solid $border-grey;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -19,7 +19,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: darken($border-grey, 70%);
     }
 }
 
@@ -32,7 +32,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $base-text-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -45,8 +45,8 @@
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        background-color: $base-background-color;
+        border: 1px solid $border-grey;
         border-radius: 5px;
         text-align: right;
 
@@ -64,7 +64,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: darken($border-grey, 70%);
                 }
             }
         }
@@ -92,8 +92,12 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    color: #fff;
+    padding: 0 $spacing-unit;
+    background-color: $section-header-footer;
+    > h1, h2, h3 {
+      color: #fff;
+    }
 }
 
 .footer-heading {
@@ -110,10 +114,6 @@
 /**
  * Page content
  */
-.page-content {
-    padding: $spacing-unit;
-}
-
 .page-heading {
     font-size: 20px;
 }
@@ -129,7 +129,7 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $muted-text-color;
 }
 
 .post-link {

@@ -5,7 +5,8 @@ description: Utah Mapping Portal | The Utah Automated Geographic Reference Cente
 baseurl: @@baseurl
 url: @@url
 twitter_username: MapUtah
-github_username:  agrc
+github_username:  AGRC
+facebook_username: UtahAGRC
 permalink: /:title
 
 # Build settings

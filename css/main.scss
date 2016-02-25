@@ -4,6 +4,7 @@
 @charset "utf-8";
 
 @import 'vars';
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300");
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -26,7 +27,6 @@
         "layout",
         "menu",
         "header",
-        "syntax-highlighting",
         "button",
         "caption",
         "grid",
@@ -34,5 +34,13 @@
         "images",
         "extras",
         "icons",
-        "tables"
+        "tables",
+        "../bower_components/font-awesome/scss/variables",
+        "../bower_components/font-awesome/scss/mixins",
+        "../bower_components/font-awesome/scss/path",
+        "../bower_components/font-awesome/scss/core",
+        "../bower_components/font-awesome/scss/larger",
+        "../bower_components/font-awesome/scss/bordered-pulled",
+        "../bower_components/font-awesome/scss/icons",
+        "mailchimp"
 ;

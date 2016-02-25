@@ -1,19 +1,26 @@
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   18px;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$base-font-size:   100%;
+
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$base-text-color:  #111;
+$base-background-color: #fff;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-$base-color:       #333;
+$small-font-size: $base-font-size - 20%;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$highlight-color: #E87E00;
+$brand-color: #0D7699;
+
+$muted-text-color: lighten($base-text-color, 70%);
+
+// sections
+$section-call-for-action: $brand-color;
+$section-alternating: darken($base-background-color, 15%);
+$section-header-footer: #333;
+
+// borders
+$border-grey: #ddd;
 
 // Width of the content area
 $content-width:    800px;
@@ -21,4 +28,6 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$highlight-color:  #923922;
+$spacing-unit:     30px;
+
+$fa-font-path:   "/website/bower_components/font-awesome/fonts";

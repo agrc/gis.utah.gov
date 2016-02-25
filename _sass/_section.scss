@@ -1,27 +1,45 @@
 .section {
-    border-bottom: 1px solid #ddd;
     position: relative;
-    min-height: 30em;
-    padding-top: 0.5em;
-    margin-left: 20px;
-    width: 100%
+    padding: 0.5em $spacing-unit 2em $spacing-unit;
+    width: 100%;
+    background-color: $base-background-color;
+    border-bottom: 1px solid darken($base-background-color, 25%);
+  &.alternate {
+    background-color: $section-alternating;
+    border-bottom: 1px solid darken($section-alternating, 15%);
+    > h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+    }
+  }
+  &.action {
+    text-align: center;
+    color: #fff;
+    border: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $section-call-for-action;
+    background: radial-gradient(30em circle, lighten($section-call-for-action, 10%), $section-call-for-action);
+    border-bottom: 1px solid darken($section-call-for-action, 5%);
+    > h1, h2, h3, h4, h5, h6 {
+      text-shadow: black 0.1em 0.1em 0.4em;
+      color: inherit;
+      padding-top: auto;
+      margin: auto;
+    }
+  }
+  .alternate {
+    .section-read-more {
+      color: #FFDC00;
+    }
+  }
 }
-
-.section.alternate {
-  background-color: #3D3D3D;
-  color: #fff;
-}
-
-.section h1 {
-  text-align: center;
-}
-
-.alternate .section-read-more {
-  color: #FFDC00;
-}
-
 .section-read-more {
-  position: absolute;
-  padding-top: 1em;
-  bottom: 0em;
+  padding-top: 2em;
+  margin-bottom: 0;
+  text-align:center;
+  width: 100%;
+}
+.main {
+  border-bottom: 1px solid $highlight-color;
+  padding: 0 $spacing-unit;
 }

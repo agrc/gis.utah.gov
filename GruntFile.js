@@ -68,6 +68,7 @@ module.exports = function (grunt) {
 			},
 			main: {
 				options: {
+                                        port: 4444,
 					serve: true,
 					auto: true,
 					drafts: true,
