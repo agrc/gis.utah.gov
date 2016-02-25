@@ -111,3 +111,30 @@ a.button, a.button:hover {
 	color: $highlight-color;
 	font-size:$base-font-size;
 }
+
+
+a.btn {
+	 background-image: none;
+	 border: 1px solid currentColor;
+	 color: inherit;
+	 cursor: pointer;
+	 display: inline-block;
+	 font-size: 14px;
+	 font-weight: normal;
+	 margin-bottom: 0;
+	 min-width: 120px;
+	 padding: 10px 25px;
+	 text-align: center;
+	 text-decoration: none;
+	 touch-action: manipulation;
+	 transition: all 0.25s ease-in-out;
+	 vertical-align: middle;
+	 white-space: nowrap;
+	 &:hover {
+	    color: #000;
+	    background: #fff;
+	 }
+	 &:visted {
+		 color: currentColor;
+	 }
+	}

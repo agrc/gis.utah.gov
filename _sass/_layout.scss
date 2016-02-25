@@ -95,6 +95,9 @@
     color: #fff;
     padding: 0 $spacing-unit;
     background-color: $section-header-footer;
+    > h1, h2, h3 {
+      color: #fff;
+    }
 }
 
 .footer-heading {

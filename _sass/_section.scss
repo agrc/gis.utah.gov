@@ -1,19 +1,19 @@
 .section {
     position: relative;
-    min-height: 30em;
-    padding-top: 0.5em;
+    padding: 0.5em $spacing-unit 2em $spacing-unit;
     width: 100%;
     background-color: $base-background-color;
     border-bottom: 1px solid darken($base-background-color, 25%);
   &.alternate {
     background-color: $section-alternating;
     border-bottom: 1px solid darken($section-alternating, 15%);
+    > h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+    }
   }
   &.action {
     text-align: center;
     color: #fff;
-    min-height: auto;
-    text-shadow: black 0.1em 0.1em 0.4em;
     border: none;
     background-position: center center;
     background-repeat: no-repeat;
@@ -21,7 +21,9 @@
     background: radial-gradient(30em circle, lighten($section-call-for-action, 10%), $section-call-for-action);
     border-bottom: 1px solid darken($section-call-for-action, 5%);
     > h1, h2, h3, h4, h5, h6 {
+      text-shadow: black 0.1em 0.1em 0.4em;
       color: inherit;
+      padding-top: auto;
       margin: auto;
     }
   }
@@ -32,9 +34,10 @@
   }
 }
 .section-read-more {
-  position: absolute;
-  padding-top: 1em;
-  bottom: 0em;
+  padding-top: 2em;
+  margin-bottom: 0;
+  text-align:center;
+  width: 100%;
 }
 .main {
   border-bottom: 1px solid $highlight-color;
