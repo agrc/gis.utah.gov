@@ -92,8 +92,8 @@ module.exports = function (grunt) {
             localFontAwesome: {
                 options: {
                     patterns: [{
-                        match: /\/website/g,
-                        replacement: ''
+                        match: /\"\/website/g,
+                        replacement: '"'
                     }]
                 },
                 src: '_sass/vars.scss',
@@ -115,8 +115,8 @@ module.exports = function (grunt) {
             githubioFontAwesome: {
                 options: {
                     patterns: [{
-                        match: /\/bower_component/g,
-                        replacement: '/website/bower_component'
+                        match: /\"\/bower_component/g,
+                        replacement: '"/website/bower_component'
                     }]
                 },
                 src: '_sass/vars.scss',
