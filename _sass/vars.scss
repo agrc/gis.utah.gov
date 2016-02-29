@@ -9,7 +9,7 @@ $border-grey             : #ddd;
 $brand-color             : #0D7699;
 $content-width           : 800px;
 $fa-font-path            : "/bower_components/font-awesome/fonts";
-$highlight-color         : #E87E00;
+$highlight-color         : #e67e15;
 $muted-text-color        : lighten($base-text-color, 70%);
 $on-laptop               : 800px;
 $on-palm                 : 600px;
@@ -18,3 +18,6 @@ $section-call-for-action : $brand-color;
 $section-header-footer   : #333;
 $small-font-size         : $base-font-size - 20%;
 $spacing-unit            : 30px;
+$toast-breakpoint-medium : 1000px;
+$toast-breakpoint-small  : 525px;
+$toast-col-groups        : (2, 3, 4, 12) !default
