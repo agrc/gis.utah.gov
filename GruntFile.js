@@ -62,7 +62,7 @@ module.exports = function (grunt) {
         jekyll: {
             githubio: {
                 options: {
-                    config: '_config.yml,_config.github.io.yml'
+                    config: '_config.yml'
                 }
             },
             main: {
