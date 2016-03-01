@@ -161,7 +161,8 @@ def update_tabs(content):
         if not match:
             #: we have some upfront data page stuff. abstract etc
             if line not in ignore_list:
-                print(line)
+                line = re.sub('\[\/tab\]', '', line)
+                line = re.sub('\[\/tabs\]', '', line)
                 html.append(line)
 
             try:
@@ -177,7 +178,7 @@ def update_tabs(content):
         #: create new package grid
         html.append('''<div class="grid package">
     <div class="grid__col grid__col--12-of-12">
-        <h3>{}</h3>
+        <h3 id="{0}">{0}</h3>
     </div>
     <div class="grid__col grid__col--12-of-12 package-content">
 '''.format(product))
@@ -221,7 +222,9 @@ def update_tabs(content):
                         except StopIteration as ex:
                             break
 
-                    line = re.sub('<p>\[tab[ ]title=\"(.*?)\"\]<br[ ]\/>\n', '', line)
+                    line = re.sub('<p>\[tab[ ]title=\"(.*?)\"\](?:<br[ ]\/>)?(?:\n)?', '', line)
+                    line = re.sub('\[\/tab\]', '', line)
+                    line = re.sub('\[\/tabs\]', '', line)
                     package[product][tab] += line
 
             if working_on_product:
@@ -235,9 +238,9 @@ def update_tabs(content):
     <div class="grid__col grid__col--1-of-2">
     <div class="panel">
         <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5>Downloads</h5>
+        <h5 id="{}-{}">Downloads</h5>
     </div>
-    <div class="panel-content">''')
+    <div class="panel-content">'''.format(product, 'downloads'))
             add_content('links | download', product, package, html)
 
             html.append('''
@@ -246,9 +249,9 @@ def update_tabs(content):
     <div class="grid__col grid__col--1-of-2">
         <div class="panel update">
             <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5>Updates</h5>
+            <h5 id="{}-{}">Updates</h5>
         </div>
-        <div class="panel-content">''')
+        <div class="panel-content">'''.format(product, 'updates'))
 
             add_content('updates', product, package, html)
 
