@@ -143,7 +143,7 @@ class TestCleanser(unittest.TestCase):
         test = '<h5 class="tab-title">Contact</h5><br />'
         self.assertEqual(cleanser.update_tabs(test), valid)
 
-  def test_tabs(self):
+  def create_data_package_page(self):
       from os.path import join, dirname
       file_path = join(dirname(__file__), 'data', 'index.html')
       with open (file_path, 'r') as test_file, open(file_path.replace('index.html', 'testoutput.html'), 'wb') as updated:
@@ -154,4 +154,60 @@ class TestCleanser(unittest.TestCase):
           replaced = cleanser.update_tabs(file_content)
           updated.writelines(replaced)
 
-      self.fail()
+  def test_get_tags(self):
+      from os.path import join, dirname
+      file_path = join(dirname(__file__), 'data', 'index.html')
+      with open (file_path, 'r') as test_file, open(file_path.replace('index.html', 'testoutput.html'), 'wb') as updated:
+          file_content = ''
+          for line_content in test_file.readlines():
+              file_content += line_content
+
+          tags = set([])
+          cleanser.get_unique_tags(file_content, tags)
+
+          post_tags = [
+            'sgid',
+            'Data',
+            'utah',
+            'gis',
+            'map',
+            'mapping',
+            'address ranges',
+            'Transportation',
+            'Roads',
+            'Streets',
+            'address',
+            'dataset',
+            'download',
+            'agrc',
+            'layer',
+            'shapefile',
+            'geodatabase',
+            'metadata',
+            'shp',
+            'gdb',
+            'kml',
+            'lyr',
+            'digital',
+            'geographic',
+            'information',
+            'database',
+            'state',
+            'statewide',
+            'highway',
+            'freeway',
+            'centerlines',
+            'udot',
+            'tiger',
+            'fhwsa',
+            'gis-t',
+            'routes',
+            'county',
+            'city',
+            'b roads',
+            'd roads',
+            'cfcc',
+            'alignment'
+          ]
+
+      self.assertSetEqual(tags, set(post_tags))

@@ -6,7 +6,7 @@ import re
 def replace(walk_dir):
   print('walk_dir = ' + walk_dir)
   print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
-
+  tags = set([])
   for root, subdirs, files in os.walk(walk_dir):
       if (root.startswith(walk_dir + 'images') or
          root.startswith(walk_dir + '_site') or
@@ -41,9 +41,12 @@ def replace(walk_dir):
                   file_content.append(replaced)
 
               replaced = update_tabs(file_content)
+              get_unique_tags(replaced, tags)
               updated.write(replaced)
 
           os.rename(file_path + '.bak', file_path)
+
+  print(tags)
 
 def update_image_url(content):
   return re.sub(r'src=[\"\']http:\/\/gis\.utah\.gov\/wp-content\/uploads\/(.*?)["\']',
@@ -133,15 +136,9 @@ def update_tables(content):
   return replaced
 
 def update_tabs(content):
-    import yaml
-
     def add_content(key, product, package, html_content):
         if key in package[product]:
             html_content.append(package[product][key])
-
-    # yaml_content = re.match('(---.*?---)', content, flags=re.S)
-    # content = re.sub('---.*?---', '', content, flags=re.S)
-    # front_matter = yaml.safe_load(yaml_content.group(1))
 
     html = []
     package = {}
@@ -264,6 +261,16 @@ def update_tabs(content):
 
     # return yaml.dump(front_matter, explicit_start=True, explicit_end=True) + content
     return yaml_content.group(1) + '\n' + content
+
+def get_unique_tags(content, tags):
+    import yaml
+
+    yaml_content = re.match('(---.*?---)', content, flags=re.S)
+    front_matter = yaml.load_all(yaml_content.group(1))
+
+    for yml in front_matter:
+        if yml is not None and 'tags' in yml:
+            [tags.add(tag) for tag in yml['tags']]
 
 if __name__ == '__main__':
     replace(sys.argv[1])
