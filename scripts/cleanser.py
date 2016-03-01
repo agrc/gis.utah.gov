@@ -24,6 +24,7 @@ def replace(walk_dir):
           print('\t- file %s (full path: %s)' % (filename, file_path))
 
           with open(file_path, 'r') as original, open(file_path + '.bak', 'w') as updated:
+              file_content = []
               for line_content in original.readlines():
                   replaced = update_image_url(line_content)
                   replaced = update_gallery_links(replaced)
@@ -36,12 +37,13 @@ def replace(walk_dir):
                   replaced = update_divider(replaced)
                   replaced = update_icons(replaced)
                   replaced = update_tables(replaced)
-                  replaced = update_tabs(replaced)
 
-                  updated.write(replaced)
+                  file_content.append(replaced)
+
+              replaced = update_tabs(file_content)
+              updated.write(replaced)
 
           os.rename(file_path + '.bak', file_path)
-
 
 def update_image_url(content):
   return re.sub(r'src=[\"\']http:\/\/gis\.utah\.gov\/wp-content\/uploads\/(.*?)["\']',
@@ -131,15 +133,145 @@ def update_tables(content):
   return replaced
 
 def update_tabs(content):
-  replaced = re.sub(r'\[(\/)?tabs?\]',
-                    '',
-                    content)
-  replaced = re.sub(r'(?:<p>)?\[tab title=\"(.*?)\"\](.*)',
-                    '<h5 class="tab-title">\g<1></h5>\g<2>',
-                    replaced,
-                    flags=re.S)
+    import yaml
 
-  return replaced
+    def add_content(key, product, package, html_content):
+        if key in package[product]:
+            html_content.append(package[product][key])
+
+    # yaml_content = re.match('(---.*?---)', content, flags=re.S)
+    # content = re.sub('---.*?---', '', content, flags=re.S)
+    # front_matter = yaml.safe_load(yaml_content.group(1))
+
+    html = []
+    package = {}
+
+    ignore_list = ['<div class="clear"></div>\n',
+                   '\n',
+                   '<p>[/tab]</p>\n',
+                   '<p>[/tab] [/tabs]</p>\n',
+                   '<br />\n'
+                  ]
+    data = enumerate(content)
+    i, line = data.next()
+
+    #: look for h4 product header
+    while line is not None:
+        print('looking for product')
+        match = re.search('class=\"product\">(.*?)<\/h4>', line, flags=re.S)
+        if not match:
+            #: we have some upfront data page stuff. abstract etc
+            if line not in ignore_list:
+                print(line)
+                html.append(line)
+
+            try:
+                i, line = data.next()
+                continue
+            except StopIteration:
+                break
+
+        #: we have a product dataset
+        product = match.group(1)
+        package[product] = {}
+
+        #: create new package grid
+        html.append('''<div class="grid package">
+    <div class="grid__col grid__col--12-of-12">
+        <h3>{}</h3>
+    </div>
+    <div class="grid__col grid__col--12-of-12 package-content">
+'''.format(product))
+
+        print('working on {}'.format(product))
+
+        working_on_product = True
+        while working_on_product:
+            print('working on product')
+            try:
+                i, line = data.next()
+            except StopIteration:
+                break
+
+            #: look for tab header
+            match = re.search('\[tab title=\"(.*?)\"\](.*)', line, flags=re.S)
+            if not match:
+                print('no match, continuing', line)
+                continue
+
+            tab = match.group(1).lower()
+            tab_data = match.group(2)
+
+            print('working on {}.{}'.format(product, tab))
+
+            package[product][tab] = ''
+            if tab_data not in ignore_list:
+                package[product][tab] = tab_data
+
+            working_on_tabs = True
+            while working_on_tabs:
+                try:
+                    i, line = data.next()
+                except StopIteration:
+                    break
+
+                if re.search('\[\/tabs\]', line, flags=re.S):
+                    print('end of product', product, i)
+                    working_on_tabs = False
+                    working_on_product = False
+                elif re.search('\[\/tab\]', line, flags=re.S):
+                    working_on_tabs = False
+                    print('end of tab', tab, i)
+                else:
+                    if line in ignore_list:
+                        try:
+                            i, line = data.next()
+                            print('get tab info', i)
+                            continue
+                        except StopIteration as ex:
+                            print('stop iteration', i)
+                            break
+
+                    line = re.sub('<p>\[tab[ ]title=\"(.*?)\"\]<br[ ]\/>\n', '', line)
+                    package[product][tab] += line
+
+            if working_on_product:
+                continue
+
+            add_content('description', product, package, html)
+            add_content('usage', product, package, html)
+            add_content('contact', product, package, html)
+
+            html.append('''</div>
+    <div class="grid__col grid__col--1-of-2">
+    <div class="panel">
+        <i class="fa fa-pull-right fa-download fa-2x"></i>
+        <h5>Downloads</h5>
+    </div>
+    <div class="panel-content">''')
+            add_content('links | download', product, package, html)
+
+            html.append('''
+        </div>
+    </div>
+    <div class="grid__col grid__col--1-of-2">
+        <div class="panel update">
+            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
+            <h5>Updates</h5>
+        </div>
+        <div class="panel-content">''')
+
+            add_content('updates', product, package, html)
+
+            html.append('''
+        </div>
+    </div>
+    </div>''')
+
+    return ''.join(html)
+
+    # return yaml.dump(front_matter, explicit_start=True, explicit_end=True) + content
+    return yaml_content.group(1) + '\n' + content
 
 if __name__ == '__main__':
     replace(sys.argv[1])

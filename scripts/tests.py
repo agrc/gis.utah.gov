@@ -108,7 +108,7 @@ class TestCleanser(unittest.TestCase):
 
     self.assertEqual(cleanser.update_tables(test), valid)
 
-  def test_tabs(self):
+  def maybelater_tabs(self):
         test = '<p><br />'
         valid = '<p><br />'
         self.assertEqual(cleanser.update_tabs(test), valid, msg='1')
@@ -142,3 +142,16 @@ class TestCleanser(unittest.TestCase):
 
         test = '<h5 class="tab-title">Contact</h5><br />'
         self.assertEqual(cleanser.update_tabs(test), valid)
+
+  def test_tabs(self):
+      from os.path import join, dirname
+      file_path = join(dirname(__file__), 'data', 'index.html')
+      with open (file_path, 'r') as test_file, open(file_path.replace('index.html', 'testoutput.html'), 'wb') as updated:
+          file_content = []
+          for line_content in test_file.readlines():
+              file_content.append(line_content)
+
+          replaced = cleanser.update_tabs(file_content)
+          updated.writelines(replaced)
+
+      self.fail()
