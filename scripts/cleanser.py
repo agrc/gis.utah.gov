@@ -181,7 +181,7 @@ def update_tabs(content):
         <h3 id="{0}">{0}</h3>
     </div>
     <div class="grid__col grid__col--12-of-12 package-content">
-'''.format(product))
+'''.format(product.replace(' ' , ''), product))
 
         working_on_product = True
         while working_on_product:
