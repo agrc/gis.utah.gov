@@ -1,16 +1,14 @@
 .divider {
-    padding-top:2px;
-    margin-bottom:2px;
+    margin: 3em 10em;
     position: relative;
     clear: both;
-    border-bottom: 1px solid $brand-color;
+    border-bottom: .3em solid $brand-color;
 }
 
 .divider-padding {
     position: relative;
     clear: both;
     display: block;
-    padding-top: 30px;
 }
 
 hr.separate {
