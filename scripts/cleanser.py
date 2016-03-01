@@ -240,8 +240,8 @@ def update_tabs(content):
         <i class="fa fa-pull-right fa-download fa-2x"></i>
         <h5 id="{}-{}">Downloads</h5>
     </div>
-    <div class="panel-content">'''.format(product, 'downloads'))
-            add_content('links | download', product.replace(' ' , ''), package, html)
+    <div class="panel-content">'''.format(product.replace(' ' , ''), 'downloads'))
+            add_content('links | download', product, package, html)
 
             html.append('''
         </div>
@@ -251,9 +251,9 @@ def update_tabs(content):
             <i class="fa fa-pull-right fa-calendar fa-2x"></i>
             <h5 id="{}-{}">Updates</h5>
         </div>
-        <div class="panel-content">'''.format(product, 'updates'))
+        <div class="panel-content">'''.format(product.replace(' ', ''), 'updates'))
 
-            add_content('updates', product.replace(' ' , ''), package, html)
+            add_content('updates', product, package, html)
 
             html.append('''
         </div>
