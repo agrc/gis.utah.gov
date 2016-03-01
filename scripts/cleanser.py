@@ -157,7 +157,6 @@ def update_tabs(content):
 
     #: look for h4 product header
     while line is not None:
-        print('looking for product')
         match = re.search('class=\"product\">(.*?)<\/h4>', line, flags=re.S)
         if not match:
             #: we have some upfront data page stuff. abstract etc
@@ -183,11 +182,8 @@ def update_tabs(content):
     <div class="grid__col grid__col--12-of-12 package-content">
 '''.format(product))
 
-        print('working on {}'.format(product))
-
         working_on_product = True
         while working_on_product:
-            print('working on product')
             try:
                 i, line = data.next()
             except StopIteration:
@@ -196,13 +192,10 @@ def update_tabs(content):
             #: look for tab header
             match = re.search('\[tab title=\"(.*?)\"\](.*)', line, flags=re.S)
             if not match:
-                print('no match, continuing', line)
                 continue
 
             tab = match.group(1).lower()
             tab_data = match.group(2)
-
-            print('working on {}.{}'.format(product, tab))
 
             package[product][tab] = ''
             if tab_data not in ignore_list:
@@ -216,20 +209,16 @@ def update_tabs(content):
                     break
 
                 if re.search('\[\/tabs\]', line, flags=re.S):
-                    print('end of product', product, i)
                     working_on_tabs = False
                     working_on_product = False
                 elif re.search('\[\/tab\]', line, flags=re.S):
                     working_on_tabs = False
-                    print('end of tab', tab, i)
                 else:
                     if line in ignore_list:
                         try:
                             i, line = data.next()
-                            print('get tab info', i)
                             continue
                         except StopIteration as ex:
-                            print('stop iteration', i)
                             break
 
                     line = re.sub('<p>\[tab[ ]title=\"(.*?)\"\]<br[ ]\/>\n', '', line)
