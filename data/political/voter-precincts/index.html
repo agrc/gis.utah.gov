@@ -50,13 +50,12 @@ tags:
 Voting precincts determine a voter's ballot composition and polling location. Voting precinct boundaries take their shape from the boundaries of all political districts, including U.S Congress, State Senate, State House, School Board District, local council districts, special districts etc. However voter precincts must be drawn so that they contain less than maximum number of voters as specified by state law. Voting precincts are a critical part of the VISTA application, which is the statewide framework, overseen by the Lt. Governor's Office, for managing voters and elections.</p>
 <p><strong>Data Content:</strong><br />
 The following data is available for download:</p>
-<div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="Voting Precincts">Voting Precincts</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/VoterPrecinctsSmall.png" | prepend: site.baseurl }}" alt="VotingPrecinctsSmall" />Political.VistaBallotAreas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.</p>
-</p>
+<h4 class="product">Voting Precincts</h4>
+<p>[tabs]<br />
+[tab title="Description"]<img class="productImage-Thumb" src="{{ "/images/VoterPrecinctsSmall.png" | prepend: site.baseurl }}" alt="VotingPrecinctsSmall" />Political.VistaBallotAreas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.</p>
+<div class="clear"></div>
+<p>[/tab]</p>
+<p>[tab title="Usage"]</p>
 <dl>
 <dt>VISTAID</dt>
 <dd>a 11 character field that contains the precinct ID and optional subprecinct ID (separated by a colon).</dd>
@@ -71,14 +70,17 @@ The following data is available for download:</p>
 <dt>RECEIVEDDATE</dt>
 <dd>indicate the date the precinct boundary was sent from the county to the AGRC.</dd>
 </dl>
+<p>There are no constraints or warranties with regard to the use of this dataset. [/tab]</p>
+<p>[tab title="Updates"]<br />
+Last Update:<br />
+September 2015<br />
+Check attribute RECEIVEDDATE to identify latest updates to specific precinct features.</p>
+<p>[/tab]<br />
+[tab title="Contact"]<br />
 For questions, contact <a href="mailto:mjthomas@utah.gov">Mark Thomas</a> at the Lieutenant Governor's Office. Or for GIS questions, contact <a href="mailto:bgranberg@utah.gov">Bert Granberg</a> at AGRC.<br />
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="Voting Precincts-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Links:</p>
+[/tab]</p>
+<p>[tab title="Links | Download"]<br />
+Links:</p>
 <ul>Download Voting Precincts:</ul>
 <ul>
 <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/POLITICAL/UnpackagedData/VistaBallotAreas/_Statewide/VistaBallotAreas_gdb.zip">Voting Precincts: File Geodatabase</a></li>
@@ -89,18 +91,4 @@ For questions, contact <a href="mailto:mjthomas@utah.gov">Mark Thomas</a> at the
 <ul>
 <li><a href="http://elections.utah.gov/">Lieutenent Governor's Office: Elections</a></li>
 </ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="Voting Precincts-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Last Update:<br />
-September 2015<br />
-Check attribute RECEIVEDDATE to identify latest updates to specific precinct features.</p>
-
-        </div>
-    </div>
-    </div>
+<p>[/tab] [/tabs]</p>
