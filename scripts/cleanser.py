@@ -178,7 +178,7 @@ def update_tabs(content):
         #: create new package grid
         html.append('''<div class="grid package">
     <div class="grid__col grid__col--12-of-12">
-        <h3 id="{0}">{0}</h3>
+        <h3 id="{0}">{1}</h3>
     </div>
     <div class="grid__col grid__col--12-of-12 package-content">
 '''.format(product.replace(' ' , ''), product))
