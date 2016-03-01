@@ -18,9 +18,31 @@
 <body>
     <header id="header">
         <div class="inner">
-            <div id="logo">
+            <div>
                 <a href="{{ site.baseurl | prepend: site.url }}">
-                    <img style="height: 75px" class="ie_png" src="{{ "/images/agrc_logo_new.png" | prepend: site.baseurl }}" alt="{{ site.title }}" />
+                    <svg id="svg-logo" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178 68">
+                        <title>AGRC</title>
+                        <g id='peak'>
+                            <path class="peak" d="M88.73,16.64l22.51,22.51c6.12,0.31,12,.74,17.57,1.28L88.73,0.35,48.59,40.49c5.57-.55,11.46-1,17.6-1.31Z" />
+                        </g>
+                        <g id='hills'>
+                            <path class="hills" d="M65.05,17.45L57,9.34,21.78,44.51c5.8-1.26,12.45-2.35,19.77-3.24Z" />
+                            <path class="hills" d="M121.05,9.34l-8.11,8.11,23.51,23.82c7.32,0.89,14,2,19.77,3.24Z" />
+                        </g>
+                        <g id="land">
+                            <path class="land" d="M160.72,49.91c-13.3-3.34-32.21-5.74-53.84-6.6L88.52,25l-18.4,18.4c-21.79.92-40.74,3.4-53.88,6.83C8.85,52.11,3.3,54.33.11,56.76a282.76,282.76,0,0,1,37.6-5.43c10-.88,21-1.5,32.65-1.83L88.52,67.65l18.18-18.18c12,0.32,23.28,1,33.6,1.86a282.59,282.59,0,0,1,37.6,5.43c-3.34-2.54-9.27-4.86-17.18-6.85"
+                            />
+                        </g>
+                        <g id="dots">
+                            <path class="dots" d="M3.73,58.45L4.2,61.68,10,60.83,9.52,57.61Zm9.61-1.38,0.39,3.24,5.81-.7-0.39-3.24ZM22.93,56l0.31,3.25,5.82-.57-0.32-3.25ZM32.51,55l0.27,3.26,5.83-.48-0.26-3.25Zm9.64-.75,0.23,3.25,5.84-.41L48,53.88Zm9.63-.67,0.17,3.26,5.84-.3-0.16-3.26Zm15.53-.71-5.84.2,0.11,3.26,5.85-.21Z"
+                            />
+                            <path class="dots" d="M167.38,57.61l-0.47,3.23,5.79,0.84,0.47-3.23Zm-9.63-1.23-0.39,3.24,5.81,0.7,0.39-3.24Zm-9.6-1-0.31,3.25,5.82,0.57L154,56Zm-9.59-.85-0.27,3.25,5.83,0.48L144.39,55Zm-9.64-.69-0.23,3.25,5.84,0.41,0.23-3.25Zm-9.63-.55-0.17,3.26,5.84,0.3,0.17-3.26Zm-9.81,2.85,5.85,0.21,0.11-3.26-5.84-.2Z"
+                            />
+                        </g>
+                    </svg>
+                    <h2 class="logo">UTAH AGRC
+                    <span>Automated Geographic Reference Center</span>
+                    <h2>
                 </a>
             </div>
             <nav id="navigation">
@@ -45,7 +67,6 @@
     <footer class="site-footer wrapper">
         <div class="grid">
             <div class="grid__col grid__col--1-of-2">
-                <!-- Begin MailChimp Signup Form -->
                 <h3>Subscribe to our mailing list</h3>
                 <div id="mc_embed_signup">
                     <form action="//utah.us2.list-manage.com/subscribe/post?u=0f7773ca3c6d02d1c38851ee9&amp;id=1fe9862f44" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -91,7 +112,6 @@
                                 <div class="response" id="mce-error-response" style="display:none"></div>
                                 <div class="response" id="mce-success-response" style="display:none"></div>
                             </div>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true">
                                 <input type="text" name="b_0f7773ca3c6d02d1c38851ee9_1fe9862f44" tabindex="-1" value="">
                             </div>
@@ -101,7 +121,6 @@
                         </div>
                     </form>
                 </div>
-                <!--End mc_embed_signup-->
             </div>
             <div class="grid__col grid__col--1-of-2">
                 <h3>Social</h3>

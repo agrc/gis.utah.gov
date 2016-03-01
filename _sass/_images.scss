@@ -2,3 +2,20 @@
     float: left;
     padding-right: 0.5em;
 }
+.dots {
+    fill: $highlight-color;
+}
+.land {
+    fill: #e3e3e3;
+}
+.hills {
+    fill: #0d7699;
+}
+.peak {
+    fill: #00a5d9;
+}
+svg.logo {
+    float: left;
+    height: 60px;
+    margin: 7px 10px;
+}
