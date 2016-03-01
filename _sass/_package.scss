@@ -1,0 +1,34 @@
+.package {
+    padding-bottom: $spacing-unit;
+
+    .panel {
+        color: $base-background-color;
+        background-color: $highlight-color;
+        border-radius: 5px;
+        padding: 0 1em;
+        line-height: 2.5em;
+        &.update {
+            background-color: $section-header-footer;
+        }
+        .fa {
+            line-height: inherit;
+        }
+    }
+    h3, h5 {
+        width: 100%;
+        padding: 0 .5em;
+    }
+    h3 {
+        background-color: $brand-color;
+        color: $base-background-color;
+        text-transform: uppercase;
+        text-shadow: #000 .1em .1em .4em;
+    }
+
+    .package-content {
+        padding: 0 100px;
+    }
+    .panel-content {
+        padding-left: $spacing-unit;
+    }
+}

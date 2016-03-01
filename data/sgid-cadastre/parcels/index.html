@@ -50,17 +50,76 @@ tags:
 This datasets contain GIS mapping data representing parcel boundaries. AGRC has parcel data for all 29 counties. Some counties are more complete than others. In addition to the polygon geometry the attributes PARCEL ID, PARCEL ADDRESS, PARCELS CITY, PARCEL ZIP CODE, OWNERSHIP TYPE, and RECORDER contact are maintained in the parcel dataset when available. Users should be aware the owner type field 'OWN_TYPE' in the parcel polygons is a very generalized ownership type (Federal, Private, State, Tribal). It is populated with the value of the 'OWNER' field where the parcel's centroid intersects the CADASTRE.LandOwnership polygon layer. A <strong><a href="http://mapserv.utah.gov/parcels/" target="_blank">parcel web application</a></strong> is available for viewing and downloading the parcel data.</p>
 <p><strong>Data Content:</strong><br />
 The following data is available for download:</p>
-<p><h4 class="product">Utah Parcels</h4>
-<p><br />
-<h5 class="tab-title">Description</h5><img class="productImage-Thumb" src="{{ "/images/gallery/sgid/parcels.png" | prepend: site.baseurl }}" alt="Parcels" />CADASTRE.Parcels_'County name' are datasets for cartography and approximate boundary identification.</p>
+<div class="grid package">
+    <div class="grid__col grid__col--12-of-12">
+        <h3 id="Utah Parcels">Utah Parcels</h3>
+    </div>
+    <div class="grid__col grid__col--12-of-12 package-content">
+<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/parcels.png" | prepend: site.baseurl }}" alt="Parcels" />CADASTRE.Parcels_'County name' are datasets for cartography and approximate boundary identification.</p>
 <p>The 2005, HB113 was passed requiring the AGRC Cadastral Surveyor to work with local government to create a parcel database for the State. 63F-1-506.(3) (c) coordinate with county recorders and surveyors to create a statewide parcel layer in the State Geographic Information Database (SGID) containing parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information. The SGID contains <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/" target="_blank">county parcel data</a> from each of the 29 counties in Utah and is updated as new data is provided from the data steward in each county.
-<div class="clear"></div>
-<p> </p>
-<h5 class="tab-title">Usage</h5>Parcel polygons contain attributes unique to each parcel such as a unique parcel number (PARCEL_ID), address for the parcel (PARCEL_ADD, PARCEL_CITY, PARCEL_ZIP),  a generalized land ownership designation (OWN_TYPE), and the phone number for the county recorders office (RECORDER).</p>
+Parcel polygons contain attributes unique to each parcel such as a unique parcel number (PARCEL_ID), address for the parcel (PARCEL_ADD, PARCEL_CITY, PARCEL_ZIP),  a generalized land ownership designation (OWN_TYPE), and the phone number for the county recorders office (RECORDER).</p>
 <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
 <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
-</p>
-<h5 class="tab-title">Updates</h5>This data when possible is updated twice a year with the newest data available from the counties. Some counties along the Wasatch Front are updated monthly when possible.<br />
+The parcel datasets are maintained by AGRC in partnership with local governments.</p>
+<p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.<br />
+</div>
+    <div class="grid__col grid__col--1-of-2">
+    <div class="panel">
+        <i class="fa fa-pull-right fa-download fa-2x"></i>
+        <h5 id="Utah Parcels-downloads">Downloads</h5>
+    </div>
+    <div class="panel-content">Download this dataset using the <a href="http://mapserv.utah.gov/parcels/">Parcel Web Application</a> or Download button at the top of this page.</p>
+<p>AGRC has parcel data for all 29 counties. Some counties are more complete than others. This data when possible is updated twice a year with the newest data available from the counties. In addition to the polygon geometry the attributes PARCEL ID, PARCEL ADDRESS, PARCELS CITY, PARCEL ZIP CODE, OWNERSHIP TYPE, and RECORDER contact are maintained in the parcel dataset when available. <strong></strong></p>
+<p><strong><a title="view and query available parcel data" href="http://mapserv.utah.gov/parcels/" target="_blank">Parcel Web Application</a></strong></p>
+<p><strong>Download County Parcel Data:</strong></p>
+<p>[one_third]</p>
+<ul>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Beaver/" target="_blank">Beaver County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_BoxElder/" target="_blank">Box Elder County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Cache/" target="_blank">Cache County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Carbon/" target="_blank">Carbon County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Daggett/" target="_blank">Daggett County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Davis/" target="_blank">Davis County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Duchesne/" target="_blank">Duchesne County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Emery/" target="_blank">Emery County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Garfield/" target="_blank">Garfield County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Grand/" target="_blank">Grand County</a></strong></li>
+</ul>
+<p>[/one_third] [one_third]</p>
+<ul>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Iron/" target="_blank">Iron County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Juab/" target="_blank">Juab County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Kane/" target="_blank">Kane County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Millard/" target="_blank">Millard County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Morgan/" target="_blank">Morgan County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Piute/" target="_blank">Piute County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Rich/" target="_blank">Rich County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SaltLake/" target="_blank">Salt Lake County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SanJuan/" target="_blank">San Juan County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Sanpete/" target="_blank">Sanpete County</a></strong></li>
+</ul>
+<p>[/one_third] [one_third_last]</p>
+<ul>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Sevier/" target="_blank">Sevier County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Summit/" target="_blank">Summit County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Tooele/" target="_blank">Tooele County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Uintah/" target="_blank">Uintah County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Utah/" target="_blank">Utah County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Wasatch/" target="_blank">Wasatch County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Washington/" target="_blank">Washington County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Wayne/" target="_blank">Wayne County</a></strong></li>
+<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Weber/" target="_blank">Weber County</a></strong></li>
+</ul>
+<p>[/one_third_last]<br />
+
+        </div>
+    </div>
+    <div class="grid__col grid__col--1-of-2">
+        <div class="panel update">
+            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
+            <h5 id="Utah Parcels-updates">Updates</h5>
+        </div>
+        <div class="panel-content">This data when possible is updated twice a year with the newest data available from the counties. Some counties along the Wasatch Front are updated monthly when possible.<br />
 A map of parcel updates can be found <strong><a href="http://arcg.is/1jxqSG0" target="_blank">here</a></strong>. Be sure to switch the <em>Content tab</em> to <em>Parcel Data</em>.</p>
 <p>Recent updates:</p>
 <p>January 2016 - Utah County, Salt Lake County<br />
@@ -104,52 +163,7 @@ March 2012<br />
 August 2011<br />
 December 2010<br />
 July 2010<br />
-<br />
-<h5 class="tab-title">Contact</h5>The parcel datasets are maintained by AGRC in partnership with local governments.</p>
-<p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.<br />
-<br />
-<h5 class="tab-title">Links | Download</h5><br />
-Download this dataset using the <a href="http://mapserv.utah.gov/parcels/">Parcel Web Application</a> or Download button at the top of this page.</p>
-<p>AGRC has parcel data for all 29 counties. Some counties are more complete than others. This data when possible is updated twice a year with the newest data available from the counties. In addition to the polygon geometry the attributes PARCEL ID, PARCEL ADDRESS, PARCELS CITY, PARCEL ZIP CODE, OWNERSHIP TYPE, and RECORDER contact are maintained in the parcel dataset when available. <strong></strong></p>
-<p><strong><a title="view and query available parcel data" href="http://mapserv.utah.gov/parcels/" target="_blank">Parcel Web Application</a></strong></p>
-<p><strong>Download County Parcel Data:</strong></p>
-<p>[one_third]</p>
-<ul>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Beaver/" target="_blank">Beaver County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_BoxElder/" target="_blank">Box Elder County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Cache/" target="_blank">Cache County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Carbon/" target="_blank">Carbon County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Daggett/" target="_blank">Daggett County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Davis/" target="_blank">Davis County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Duchesne/" target="_blank">Duchesne County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Emery/" target="_blank">Emery County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Garfield/" target="_blank">Garfield County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Grand/" target="_blank">Grand County</a></strong></li>
-</ul>
-<p>[/one_third] [one_third]</p>
-<ul>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Iron/" target="_blank">Iron County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Juab/" target="_blank">Juab County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Kane/" target="_blank">Kane County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Millard/" target="_blank">Millard County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Morgan/" target="_blank">Morgan County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Piute/" target="_blank">Piute County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Rich/" target="_blank">Rich County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SaltLake/" target="_blank">Salt Lake County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SanJuan/" target="_blank">San Juan County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Sanpete/" target="_blank">Sanpete County</a></strong></li>
-</ul>
-<p>[/one_third] [one_third_last]</p>
-<ul>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Sevier/" target="_blank">Sevier County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Summit/" target="_blank">Summit County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Tooele/" target="_blank">Tooele County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Uintah/" target="_blank">Uintah County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Utah/" target="_blank">Utah County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Wasatch/" target="_blank">Wasatch County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Washington/" target="_blank">Washington County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Wayne/" target="_blank">Wayne County</a></strong></li>
-<li><strong><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Weber/" target="_blank">Weber County</a></strong></li>
-</ul>
-<p>[/one_third_last]<br />
- </p>
+
+        </div>
+    </div>
+    </div> </p>

@@ -12,3 +12,14 @@ permalink: /:title
 # Build settings
 markdown: kramdown
 timezone: America/Denver
+
+exclude: [
+    "node_modules",
+    "scripts/cleanser.py",
+    "scripts/cleanser.pyc",
+    "Gemfile.lock",
+    "Gemfile",
+    "GruntFile.js",
+    "bower.json",
+    "package.json"
+]

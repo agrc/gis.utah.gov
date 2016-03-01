@@ -51,3 +51,18 @@
 #navigation ul li ul {
 	background-color: #f5f5f5;
 }
+
+h2.logo {
+    display: inline-block;
+    color: #fff;
+    text-align: left;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    > span {
+        display: block;
+        font-size: 37%;
+        font-weight: normal;
+        letter-spacing: normal;
+    }
+}

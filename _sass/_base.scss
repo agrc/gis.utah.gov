@@ -147,7 +147,7 @@ blockquote {
     border-left: 4px solid $border-grey;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
-    letter-spacing: -1px;
+    letter-spacing: -.08em;
     font-style: italic;
 
     > :last-child {
@@ -163,13 +163,13 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $border-grey;
+    border: .08em solid $border-grey;
     border-radius: 3px;
     background-color: #eef;
 }
 
 code {
-    padding: 1px 5px;
+    padding: .08em 5px;
 }
 
 pre {
