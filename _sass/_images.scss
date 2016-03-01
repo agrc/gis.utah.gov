@@ -1,6 +1,6 @@
-.inline-text-left {
+.inline-text-left, .productImage-Thumb {
     float: left;
-    padding-right: 0.5em;
+    margin-right: 0.5em;
 }
 .dots {
     fill: $highlight-color;
@@ -18,4 +18,7 @@ svg.logo {
     float: left;
     height: 60px;
     margin: 7px 10px;
+}
+.productImage-Thumb {
+    border: 1px solid darken($brand-color, 10%);
 }
