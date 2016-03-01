@@ -241,7 +241,7 @@ def update_tabs(content):
         <h5 id="{}-{}">Downloads</h5>
     </div>
     <div class="panel-content">'''.format(product, 'downloads'))
-            add_content('links | download', product, package, html)
+            add_content('links | download', product.replace(' ' , ''), package, html)
 
             html.append('''
         </div>
@@ -253,7 +253,7 @@ def update_tabs(content):
         </div>
         <div class="panel-content">'''.format(product, 'updates'))
 
-            add_content('updates', product, package, html)
+            add_content('updates', product.replace(' ' , ''), package, html)
 
             html.append('''
         </div>
