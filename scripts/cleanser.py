@@ -266,6 +266,8 @@ def get_unique_tags(content, tags):
     import yaml
 
     yaml_content = re.match('(---.*?---)', content, flags=re.S)
+    if not yaml_content:
+        return
     front_matter = yaml.load_all(yaml_content.group(1))
 
     for yml in front_matter:
