@@ -2,6 +2,10 @@
   margin: 0 auto;
   position: relative;
   height: 100%;
+  @include media-query($on-small) {
+      text-align: center;
+      line-height: 0;
+  }
 }
 
 #header {
@@ -10,10 +14,17 @@
 }
 
 #navigation {
-  bottom: 0;
-  right: 25px;
-  height: 52px;
-  position: absolute;
+    bottom: 0;
+    right: 25px;
+    height: 52px;
+    position: absolute;
+
+    @include media-query($on-medium) {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        height: auto;
+    }
 }
 
 #navigation .menu > li.hover > a,
@@ -59,10 +70,14 @@ h2.logo {
     line-height: 1;
     font-weight: bold;
     letter-spacing: 0.2em;
+    margin-bottom: 0;
     > span {
         display: block;
         font-size: 37%;
         font-weight: normal;
         letter-spacing: normal;
+    }
+    @include media-query($on-small) {
+        display:none;
     }
 }

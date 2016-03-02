@@ -117,7 +117,6 @@
 		Placeholder with (randomly) missing image source
 	</div>
 </div>
-
 <div class="thumb">
 	<div class="autosize">
 		<img data-src="holder.js/200x133?bg=111&fg=ffff00&auto=yes" onclick="this.src='image.jpg'">
@@ -146,7 +145,6 @@
 		<code>&lt;div&gt;</code> with <code>data-background-src</code> placeholder
 	</div>
 </div>
-
 <div class="thumb">
 	<div id="thumb1"></div>
 	<div class="caption">
@@ -294,35 +292,26 @@
 		 Full-page fluid placeholder with outline enabled
 	</div>
 </div>
-
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="../holder.js"></script>
 <!--
 <script src="require.js" data-main="test.js"></script>
 -->
 <script>
-
 Holder.run({'renderer':'html'});
-
 Holder.addImage("holder.js/300x200?theme=sky", "#thumb1");
-
 Holder.run();
-
 Holder.addTheme("custom", {foreground: "#fff", background: "#000", size: 15}).run({
 	domain: "custom.holder",
 	renderer: "canvas"
 });
-
 Holder.addImage("holder.js/300x200?theme=social&text=Added using addImage with a DOM node", document.querySelector('#holderAddImageDomTest')).run();
-
 Holder.run({
 	domain: "holder.canvas",
 	renderer: "canvas"
 });
-
 $(function () {
 	$("#invisible").show();
-
 	var resize = true;
 	$("#toggleResize").on("click", function () {
 		resize = !resize;

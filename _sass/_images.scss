@@ -18,6 +18,9 @@ svg.logo {
     float: left;
     height: 60px;
     margin: 7px 10px;
+    @include media-query($on-small) {
+        float: none;
+    }
 }
 .productImage-Thumb {
     border: .08em solid darken($brand-color, 10%);

@@ -12,7 +12,7 @@
     <script src="{{ "/bower_components/holderjs/holder.min.js" | prepend: site.baseurl }}"></script>
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 </head>
 
 <body>
@@ -41,19 +41,20 @@
                         </g>
                     </svg>
                     <h2 class="logo">UTAH AGRC
-                    <span>Automated Geographic Reference Center</span>
-                    <h2>
+                        <span>Automated Geographic Reference Center</span>
+                    </h2>
                 </a>
             </div>
-            <nav id="navigation">
+            {% assign current = page.url | downcase | split: '/' %}
+            <nav id="navigation" class="site-nav">
                 <ul id="menu-main-menu" class="menu">
-                    <li class="menu-item"><a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}">News</a>
+                    <li class="menu-item {% if current[1] == 'agrc-newsletter' %}active-1{% endif %}"><a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}">News</a>
                     </li>
-                    <li class="menu-item"><a href="{{ "/data" | prepend: site.baseurl }}">Data</a>
+                    <li class="menu-item {% if current[1] == 'data' %}active-2{% endif %}"><a href="{{ "/data" | prepend: site.baseurl }}">Data</a>
                     </li>
-                    <li class="menu-item"><a href="{{ "/developer" | prepend: site.baseurl }}">Developer</a>
+                    <li class="menu-item {% if current[1] == 'developer' %}active-3{% endif %}"><a href="{{ "/developer" | prepend: site.baseurl }}">Developer</a>
                     </li>
-                    <li class="menu-item"><a href="{{ "/about" | prepend: site.baseurl }}">About</a>
+                    <li class="menu-item {% if current[1] == 'about' %}active-4{% endif %}"><a href="{{ "/about" | prepend: site.baseurl }}">About</a>
                     </li>
                 </ul>
             </nav>
@@ -157,6 +158,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','{{ site.analytics.google.tracking_id }}','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>

@@ -10,16 +10,13 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
 var src = 'holder.js/300x200';
-
 Benchmark.options.minSamples = 100;
-
 var suite = new Benchmark.Suite;
 var benchmark = new Benchmark('Holder.js Render', function () {
     var html = '<img data-src="holder.js/300x200"><img data-src="holder.js/300x200"><img data-src="holder.js/301x201">';
     $('#test').html(html);
     Holder.run();
 });
-
 var qs = window.location.search;
 if (qs.indexOf('release=') === -1){
     alert('No release specified.');

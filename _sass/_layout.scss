@@ -1,35 +1,10 @@
 /**
  * Site header
  */
-.site-header {
-    border-top: 5px solid darken($border-grey, 70%);
-    border-bottom: .08em solid $border-grey;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -.08em;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: darken($border-grey, 70%);
-    }
-}
 
 .site-nav {
     float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
+    line-height: 51px;
 
     .page-link {
         color: $base-text-color;
@@ -41,51 +16,11 @@
         }
     }
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $base-background-color;
-        border: .08em solid $border-grey;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: darken($border-grey, 70%);
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
+    @include media-query($on-medium) {
+        background-color: $section-header-footer;
+        width: 100%;
     }
 }
-
 
 
 /**
@@ -100,19 +35,16 @@
     }
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
 .contact-list,
 .social-media-list {
     list-style: none;
-    margin-left: 0;
     text-align: center;
     > li {
         display: inline;
         margin: 0 $spacing-unit * 2;
+        @include media-query($on-small) {
+            margin: 0;
+        }
     }
 }
 
@@ -127,6 +59,9 @@ a:hover > i {
 
 .post {
     margin: 0 100px;
+    @include media-query($on-small) {
+        margin: 0 15px;
+    }
 }
 
 .page-heading {
@@ -158,7 +93,6 @@ a:hover > i {
 }
 
 
-
 /**
  * Posts
  */
@@ -171,7 +105,7 @@ a:hover > i {
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-large) {
         font-size: 36px;
     }
 }
@@ -182,7 +116,7 @@ a:hover > i {
     h2 {
         font-size: 32px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-large) {
             font-size: 28px;
         }
     }
@@ -190,7 +124,7 @@ a:hover > i {
     h3 {
         font-size: 26px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-large) {
             font-size: 22px;
         }
     }
@@ -198,7 +132,7 @@ a:hover > i {
     h4 {
         font-size: 20px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-large) {
             font-size: 18px;
         }
     }

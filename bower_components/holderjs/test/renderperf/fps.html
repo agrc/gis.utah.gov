@@ -15,7 +15,6 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fpsmeter/0.3.1/fpsmeter.js"></script>
 <script>
 var src = 'holder.js/300x200';
-
 function render () {
     meter.tickStart();
     var html = '<img data-src="' + src + '">';
@@ -24,9 +23,7 @@ function render () {
     meter.tick();
     setTimeout(render, 1)
 }
-
 var meter = new FPSMeter(document.getElementById('meter'));
-
 var qs = window.location.search;
 if (qs.indexOf('release=') === -1){
     alert('No release specified.');
