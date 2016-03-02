@@ -1,14 +1,12 @@
-/**
- * Site header
- */
+// Site header
 
 .site-nav {
     float: right;
     line-height: 51px;
 
     .page-link {
-        color: $base-text-color;
         line-height: $base-line-height;
+        color: $base-text-color;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -17,28 +15,26 @@
     }
 
     @include media-query($on-medium) {
-        background-color: $section-header-footer;
         width: 100%;
+        background-color: $section-header-footer;
     }
 }
 
 
-/**
- * Site footer
- */
+// Site footer
 .site-footer {
-    color: #fff;
     padding: 0 $spacing-unit;
+    color: #fff;
     background-color: $section-header-footer;
     > h1, h2, h3 {
-      color: #fff;
+        color: #fff;
     }
 }
 
 .contact-list,
 .social-media-list {
-    list-style: none;
     text-align: center;
+    list-style: none;
     > li {
         display: inline;
         margin: 0 $spacing-unit * 2;
@@ -53,9 +49,7 @@ a:hover > i {
 }
 
 
-/**
- * Page content
- */
+// Page content
 
 .post {
     margin: 0 100px;
@@ -84,7 +78,7 @@ a:hover > i {
 
 .post-meta {
     color: $highlight-color;
-    color: rgba($highlight-color, 0.5);
+    color: rgba($highlight-color, .5);
 }
 
 .post-link {
@@ -93,17 +87,15 @@ a:hover > i {
 }
 
 
-/**
- * Posts
- */
+// Posts
 .post-header {
     margin-bottom: $spacing-unit;
 }
 
 .post-title {
     font-size: 42px;
-    letter-spacing: -1px;
     line-height: 1;
+    letter-spacing: -1px;
 
     @include media-query($on-large) {
         font-size: 36px;

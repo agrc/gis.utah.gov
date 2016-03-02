@@ -2,7 +2,11 @@
 //                          Table                          //
 // ======================================================= //
 table, td, th {
+    font-weight: normal;
+    text-align: left;
     vertical-align: middle;
+    border-spacing: 0;
+    border-collapse: separate;
 }
 caption {
     padding-bottom: .8em;
@@ -111,18 +115,10 @@ td {
     text-align: left;
     border-top: 1px dashed #fff;
 }
-tbody {
+tr {
     background: #f9f9f9;
-    tr {
-        &:nth-of-type(odd) {
-            background: $base-background-color;
-        }
-        &:hover td {
-            color: #fff;
-            background: #fff;
-            background-color: $brand-color;
-            border-top: 1px solid #fff;
-        }
+    &:nth-of-type(odd) {
+        background: $base-background-color;
     }
 }
 tfoot {
@@ -166,6 +162,7 @@ tfoot {
         display: block;
         padding-left: .5em;
         text-align: left;
+        border: 0;
 
         &:first-child {
             padding-top: .5em;
@@ -206,6 +203,7 @@ tfoot {
                 color: #fff;
                 background: #fff;
                 background-color: $brand-color;
+                border: 0;
             }
         }
     }
