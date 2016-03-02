@@ -4,3 +4,36 @@ status: publish
 title: Data page
 permalink: /datatable
 ---
+<script src="{{ "/bower_components/list.js/dist/list.min.js" | prepend: site.baseurl }}"></script>
+<div id='table' class='table-style'>
+    <input class="search" placeholder="Search" />
+    <button class="sort" data-sort="name">
+        Sort by name
+    </button>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">owner</th>
+<th scope="col">updated</th>
+<th scope="col">link</th>
+<th scope="col">name</th>
+            </tr>
+        </thead>
+    <tbody class='list'><tr><td class="owner">AGRC</td>
+<td class="updated">Yesterday</td>
+<td class="link">/data</td>
+<td class="name">SGID10.Boundaries.Counties</td></tr><tr><td class="owner">UDOT</td>
+<td class="updated">Yesterday</td>
+<td class="link">/data</td>
+<td class="name">SGID10.Boundaries.Roads</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+var options = {
+  valueNames: [ 'name', 'owner', 'updated' ]
+};
+
+var userList = new List('table', options);
+</script>
