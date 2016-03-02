@@ -21,6 +21,8 @@ exclude: [
     "node_modules",
     "scripts/cleanser.py",
     "scripts/cleanser.pyc",
+    "scripts/datatable.py",
+    "scripts/datatable.pyc",
     "Gemfile.lock",
     "Gemfile",
     "GruntFile.js",
