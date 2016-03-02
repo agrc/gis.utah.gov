@@ -1,7 +1,23 @@
+$a: #7FDBFF;
+$b: #01FF70;
+$c: #F012BE;
+$d: #FFDC00;
+$colors: $a, $b, $c, $d;
+
 .menu-item {
   list-style-type: none;
   position: relative;
   display: inline;
   float: left;
   margin: 0 20px;
+  @include media-query($on-medium) {
+      margin: 0 10px;
+  }
+  @for $i from 1 through length($colors) {
+      &.active-#{$i} {
+          text-decoration: none;
+          color: nth($colors, $i);
+          border-bottom: .4em solid nth($colors, $i);
+      }
+  }
 }

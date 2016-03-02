@@ -45,15 +45,16 @@
                     </h2>
                 </a>
             </div>
-            <nav id="navigation">
+            {% assign current = page.url | downcase | split: '/' %}
+            <nav id="navigation" class="site-nav">
                 <ul id="menu-main-menu" class="menu">
-                    <li class="menu-item"><a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}">News</a>
+                    <li class="menu-item {% if current[1] == 'agrc-newsletter' %}active-1{% endif %}"><a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}">News</a>
                     </li>
-                    <li class="menu-item"><a href="{{ "/data" | prepend: site.baseurl }}">Data</a>
+                    <li class="menu-item {% if current[1] == 'data' %}active-2{% endif %}"><a href="{{ "/data" | prepend: site.baseurl }}">Data</a>
                     </li>
-                    <li class="menu-item"><a href="{{ "/developer" | prepend: site.baseurl }}">Developer</a>
+                    <li class="menu-item {% if current[1] == 'developer' %}active-3{% endif %}"><a href="{{ "/developer" | prepend: site.baseurl }}">Developer</a>
                     </li>
-                    <li class="menu-item"><a href="{{ "/about" | prepend: site.baseurl }}">About</a>
+                    <li class="menu-item {% if current[1] == 'about' %}active-4{% endif %}"><a href="{{ "/about" | prepend: site.baseurl }}">About</a>
                     </li>
                 </ul>
             </nav>
