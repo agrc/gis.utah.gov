@@ -181,28 +181,12 @@ pre {
 }
 
 
-
 // Clearfix
 %clearfix {
-    &:after {
+    &::after {
         display: table;
         clear: both;
         content: "";
-    }
-}
-
-
-
-// Icons
-.icon {
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-        path {
-            fill: $muted-text-color;
-        }
     }
 }
 

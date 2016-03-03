@@ -1,24 +1,6 @@
 // Site header
 
-.site-nav {
-    float: right;
-    line-height: 51px;
 
-    .page-link {
-        line-height: $base-line-height;
-        color: $base-text-color;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-
-    @include media-query($on-medium) {
-        width: 100%;
-        background-color: $section-header-footer;
-    }
-}
 
 
 // Site footer

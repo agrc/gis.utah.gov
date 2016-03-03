@@ -13,7 +13,8 @@ analytics:
     google:
         tracking_id: 'UA-11849964-41'
 
-# Build settings
+sass:
+    style: compressed
 markdown: kramdown
 timezone: America/Denver
 

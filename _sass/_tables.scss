@@ -170,7 +170,7 @@ tfoot {
         &:last-child {
             padding-bottom: .5em;
         }
-        &:before {
+        &::before {
             display: inline-block;
             width: 10em; // magic number :( adjust according to your own content
             font-weight: bold;
