@@ -82,6 +82,9 @@ module.exports = function (grunt) {
                         match: 'baseurl',
                         replacement: '""'
                     }, {
+                        match: 'sass',
+                        replacement: 'nested'
+                    }, {
                         match: 'url',
                         replacement: '"/"'
                     }]
@@ -104,6 +107,9 @@ module.exports = function (grunt) {
                     patterns: [{
                         match: 'baseurl',
                         replacement: '"/website"'
+                    }, {
+                        match: 'sass',
+                        replacement: 'compressed'
                     }, {
                         match: 'url',
                         replacement: '"http://agrc.github.io"'
