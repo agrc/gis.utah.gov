@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 status: publish
 published: true
 title: Dev Team Blog
@@ -18,13 +18,15 @@ categories: [Developer]
 tags:
 - blog
 ---
-{% for post in site.categories.developer %}
-  <ul>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-  </ul>
-{% endfor %}
+<div class="grid">
+{% for post in site.categories.Developer %}
+  <div class="grid__col grid__col--1-of-3">
+  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <h5>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h5>
+  <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+  <hr class="hr-separate"/>
+  </div>
+ {% endfor %}
+</div>

@@ -153,11 +153,18 @@ pre {
 
 // Clearfix
 %clearfix {
+    &::before,
     &::after {
-        display: table;
-        clear: both;
-        content: "";
+        display: table; // 2
+        content: " "; // 1
     }
+    &::after {
+        clear: both;
+    }
+}
+
+.clear {
+    clear: both;
 }
 
 .text-center {

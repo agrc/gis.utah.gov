@@ -32,8 +32,16 @@ tags: []
 <p>Download aerial photography, LiDAR, DEMs, contour lines and USGS topographic maps via the Utah Raster Discovery App.</p>
 <h4><a title="Download via FTP" href="ftp://ftp.agrc.utah.gov/"><img class="alignleft  wp-image-10111" title="Download Data Via FTP" src="{{ "/images/ftp-icon.png" | prepend: site.baseurl }}" alt="" width="26" height="30" />Download SGID Data Via FTP</a></h4>
 <p>Download data directly through AGRC's FTP site.</p>
-<h6><a title="Latest SGID Updates on data and services" href="{{ "/data/sgid-blog/" | prepend: site.baseurl }}">Recent Updates on SGID Data and Services</a></h6>
-<p>[recent_posts count="3" thumbnail="false" extra="time" desc_length="0" cat="7"]</p>
+<h4><a title="Latest SGID Updates on data and services" href="{{ "/data/sgid-blog/" | prepend: site.baseurl }}">Recent Updates on SGID Data and Services</a></h4>
+
+{% for post in site.categories.['SGID Blog'] limit:3 %}
+  <ul>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br/>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+  </ul>
+{% endfor %}
+
 <p><img class="alignleft size-full wp-image-5188" title="SGID Data Blog" src="{{ "/images/devblog.png" | prepend: site.baseurl }}" alt="" width="26" height="30" /></p>
 <h4>Get more updates and tips on the <span style="text-decoration: underline;"><a href="{{ "/sgid-blog/" | prepend: site.baseurl }}">SGID Blog</a></span> or via <span style="text-decoration: underline;"><a href="{{ "/?cat=7&amp;feed=rss2" | prepend: site.baseurl }}">RSS</a></span>.</h4>
 </div>
@@ -54,6 +62,5 @@ tags: []
 <h4><a href="{{ "/data/usgs-scanned-topographic-maps-drgs/" | prepend: site.baseurl }}"><img class="alignleft size-full wp-image-5253" title="USGS Topos" src="{{ "/images/radar.png" | prepend: site.baseurl }}" alt="" width="26" height="26" />USGS Topographic Maps</a></h4>
 <p>USGS topographic (contour) map scans, various scales</p>
 <h4><a href="{{ "/data/water-data-services/" | prepend: site.baseurl }}"><img class="alignleft size-full wp-image-5253" title="Water" src="{{ "/images/mapmarker.png" | prepend: site.baseurl }}" alt="" width="26" height="30" />Water Related Data</a></h4>
-<p>Lakes, streams, springs, dams, water use.<br />
-<img class="alignright size-full wp-image-4787" title="startbrowsing" src="{{ "/images/startbrowsing.png" | prepend: site.baseurl }}" alt="" width="269" height="99" /><br />
+<p>Lakes, streams, springs, dams, water use.</p>
 </div></div>
