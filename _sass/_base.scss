@@ -46,12 +46,12 @@ dd {
     margin-left: 1em;
 }
 
+
 // Headings
 h1,h2,h3 {
     padding-top: .5em;
     margin: 0 0 1em;
     font-size: 2.65em;
-    font-weight: normal;
     font-weight: 300;
     color: #323232;
     text-align: center;
@@ -69,32 +69,6 @@ h4 {
     font-size: 1.4em;
     text-align: left;
 }
-
- // @media only screen and (max-width: 800px) {
- //     h1,h2,h3 {
- //         font-size:2.2em
- //     }
- // }
- //
- // @media only screen and (max-width: 720px) {
- //     h1,h2,h3 {
- //         margin:0 0 .6em 0;
- //         padding-top: 0;
- //         font-size: 1.9em
- //     }
- // }
- //
- // @media only screen and (max-width: 800px) {
- //     h2 {
- //         font-size:1.7em
- //     }
- // }
- //
- // @media only screen and (max-width: 720px) {
- //     h2 {
- //         font-size:1.6em
- //     }
- // }
 
 
 // Links
@@ -119,7 +93,6 @@ a {
 }
 
 
-
 // Blockquotes
 blockquote {
     padding-left: $spacing-unit / 2;
@@ -133,7 +106,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
 
 
 // Code formatting
@@ -161,7 +133,6 @@ pre {
 }
 
 
-
 // Wrapper
 .wrapper {
     // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
@@ -173,8 +144,7 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-large) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
         // padding-right: $spacing-unit / 2;
         // padding-left: $spacing-unit / 2;
     }
