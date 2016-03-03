@@ -1,24 +1,25 @@
 // Our variables
 
-$base-background-color   : #fff;
-$base-font-family        : 'Open Sans', Helvetica, Arial, sans-serif;
-$base-font-size          : 100%;
-$base-line-height        : 1.7;
-$base-text-color         : #111;
-$border-grey             : #ddd;
-$brand-color             : #0D7699;
-$content-width           : 800px;
-$fa-font-path            : "/bower_components/font-awesome/fonts";
-$highlight-color         : #e67e15;
-$muted-text-color        : lighten($base-text-color, 70%);
-$on-large                : 800px;
-$on-medium               : 775px;
-$on-small                : 525px;
-$section-alternating     : darken($base-background-color, 15%);
-$section-call-for-action : $brand-color;
-$section-header-footer   : #333;
-$small-font-size         : $base-font-size - 20%;
-$spacing-unit            : 30px;
-$toast-breakpoint-medium : 1000px;
-$toast-breakpoint-small  : 525px;
-$toast-col-groups        : (2, 3, 4, 12) !default
+$base-background-color: #fff;
+$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$base-font-size: 100%;
+$base-line-height: 1.7;
+$base-text-color: #111;
+$border-grey: #ddd;
+$brand-color: #0d7699;
+$content-width: 800px;
+$fa-font-path: "/bower_components/font-awesome/fonts";
+$highlight-color: #e67e15;
+$muted-text-color: lighten($base-text-color, 70%);
+$on-datatable: 900px;
+$on-large: 800px;
+$on-medium: 775px;
+$on-small: 525px;
+$section-alternating: darken($base-background-color, 15%);
+$section-call-for-action: $brand-color;
+$section-header-footer: #333;
+$small-font-size: $base-font-size - 20%;
+$spacing-unit: 30px;
+$toast-breakpoint-medium: 1000px;
+$toast-breakpoint-small: 525px;
+$toast-col-groups: (2, 3, 4, 12);

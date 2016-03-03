@@ -1,20 +1,20 @@
 .divider {
-    margin: 3em 10em;
     position: relative;
+    margin: 3em 10em;
     clear: both;
     border-bottom: .3em solid $brand-color;
 }
 
 .divider-padding {
     position: relative;
-    clear: both;
     display: block;
+    clear: both;
 }
 
-hr.separate {
-    border: none;
-    background: $highlight-color;
-    margin: 0 auto 20px;
-    height: 4px;
+.hr-separate {
     width: 50px;
+    height: 4px;
+    margin: 0 auto 20px;
+    background: $highlight-color;
+    border: 0;
 }

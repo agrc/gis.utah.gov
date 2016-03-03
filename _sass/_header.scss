@@ -1,83 +1,73 @@
 .inner {
-  margin: 0 auto;
-  position: relative;
-  height: 100%;
-  @include media-query($on-small) {
-      text-align: center;
-      line-height: 0;
-  }
-}
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
 
-#header {
-  height: 75px;
-  background-color: $section-header-footer;
-}
-
-#navigation {
-    bottom: 0;
-    right: 25px;
-    height: 52px;
-    position: absolute;
-
-    @include media-query($on-medium) {
-        position: relative;
-        bottom: auto;
-        right: auto;
-        height: auto;
+    @include media-query($on-small) {
+        line-height: 0;
+        text-align: center;
     }
 }
 
-#navigation .menu > li.hover > a,
-#navigation .menu > li.hover > a:active,
-#navigation .menu > li.hover > a:visited {
-	color: #e2d0aa
-}
-#navigation .menu > li.current-menu-item > a,
-#navigation .menu > li.current-menu-item > a:visited,
-#navigation .menu > li.current-menu-ancestor > a,
-#navigation .menu > li.current-menu-ancestor > a:visited,
-#navigation .menu > li.current_page_item > a,
-#navigation .menu > li.current_page_item > a:visited,
-#navigation .menu > li.current_page_ancestor > a,
-#navigation .menu > li.current_page_ancestor > a:visited,
-#navigation .menu > li.current_page_parent > a,
-#navigation .menu > li.current_page_parent > a:visited,
-#navigation .menu > li.current-page-item > a,
-#navigation .menu > li.current-page-item > a:visited,
-#navigation .menu > li.current-page-ancestor > a,
-#navigation .menu > li.current-page-ancestor > a:visited {
-	color: #f5f4f2;
-	background-color: #8c351f;
+.header {
+    height: 75px;
+    background-color: $section-header-footer;
 }
 
-#navigation .menu > li > a, #navigation .menu > li > a:visited {
-	font-size: 17px;
-	color: #f5f5f5;
-	background-color: transparent;
-}
-#navigation ul li.hover ul li a, #navigation ul ul li a, #navigation ul ul li a:visited {
-	font-size: 14px;
-	color: #000000;
-}
-#navigation ul li ul {
-	background-color: #f5f5f5;
+.site-nav {
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    float: right;
+    height: 52px;
+    line-height: 51px;
+
+    @include media-query($on-medium) {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        height: auto;
+    }
+
+    .menu > li > a,
+    .menu > li > a:visited {
+        font-size: 17px;
+        color: #f5f5f5;
+        background-color: transparent;
+    }
+
+    .page-link {
+        line-height: $base-line-height;
+        color: $base-text-color;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @include media-query($on-medium) {
+        width: 100%;
+        background-color: $section-header-footer;
+    }
 }
 
-h2.logo {
+.logo-text {
     display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: 1;
     color: #fff;
     text-align: left;
-    line-height: 1;
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    margin-bottom: 0;
+    letter-spacing: .2em;
     > span {
         display: block;
         font-size: 37%;
         font-weight: normal;
         letter-spacing: normal;
     }
+
     @include media-query($on-small) {
-        display:none;
+        display: none;
     }
 }
