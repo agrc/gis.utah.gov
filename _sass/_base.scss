@@ -109,27 +109,23 @@ blockquote {
 
 
 // Code formatting
-pre,
-code {
+pre {
     font-size: 15px;
-    background-color: #eef;
+    background-color: lighten($border-grey, 10%);
     border: .08em solid $border-grey;
     border-radius: 3px;
 }
 
-code {
-    padding: .08em 5px;
-}
-
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        padding-right: 0;
-        padding-left: 0;
-        border: 0;
-    }
+    padding: 10px;
+    overflow: auto;
+    background-color: #eee;
+    border-radius: 5px;
+}
+code {
+    padding: 1px 3px;
+    background-color: #eee;
+    border-radius: 2px;
 }
 
 
