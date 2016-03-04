@@ -4,6 +4,7 @@ email: agrc@utah.gov
 description: Utah Mapping Portal | The Utah Automated Geographic Reference Center
 baseurl: @@baseurl
 url: @@url
+highlighter: rouge
 twitter_username: MapUtah
 github_username: AGRC
 facebook_username: UtahAGRC
@@ -17,6 +18,10 @@ analytics:
 sass:
     style: @@sass
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 timezone: America/Denver
 
 exclude: [
