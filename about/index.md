@@ -20,11 +20,11 @@ tags: []
 
 ### Background
 
-The Automated Geographic Reference Center (AGRC) is the State of Utah’s map technology coordination office. AGRC staff ([directory/contacts]({{ "contact" | prepend: site.baseurl }})) have knowledge and experience in geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state.
+The Automated Geographic Reference Center (AGRC) is the State of Utah’s map technology coordination office. AGRC staff ([directory/contacts]({{ "/about/contact" | prepend: site.baseurl }})) have knowledge and experience in geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state.
 
 We are located on the 5th floor of the State Office building, directly north of the Capitol [directions and parking]({{" visiting-agrc" | prepend: site.baseurl }}).  AGRC and the Utah CIO’s office compose the Integrated Technologies division within the Department of Technology Services.
 
-AGRC is directed under [mapping-related sections of Utah statute]({{ "code" | prepend: site.baseurl }}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
+AGRC is directed under [mapping-related sections of Utah statute]({{ "/about/code" | prepend: site.baseurl }}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
 
 AGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. At 30+ years old, our full name may sound like its from a by-gone era. But AGRC is how people know us, so we're sticking with it. Years may pass, but our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
 
@@ -44,13 +44,13 @@ AGRC was one of the first geospatial information offices in the country, establi
 - Google Imagery License
 - Lidar Elevation Models
 - Location Analytics
-- [911 Map Data Support]( {{"/gis-for-911" | prepend: site.baseurl }} )
+- [911 Map Data Support]( {{"/about/gis-for-911" | prepend: site.baseurl }} )
 - Municipal, Voting, and other Civic Boundaries
 - Public Land Survey System
 - Spatial Database Design, Integration and Hosting
 - Statewide Address Point Aggregation
 - Statewide Road Centerline Aggregation
-- [Statewide GIS Strategic & Business Plans]({{"/strategic-and-business-plans" | prepend: site.baseurl }})
+- [Statewide GIS Strategic & Business Plans]({{"/about/strategic-and-business-plans" | prepend: site.baseurl }})
 - TURN GPS sub-centimeter precision
 
 AGRC is funded through a combination of State general and restricted funds and cost-recovery revenue sources from project work and grant awards. This hybrid approach ensures some stable base for SGID and coordination activities but keeps us on our toes by requiring us to keep up with the latest developments in our field so we can offer cutting edge GIS consulting services to those in need.
