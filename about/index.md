@@ -26,7 +26,9 @@ We are located on the 5th floor of the State Office building, directly north of 
 
 AGRC is directed under [mapping-related sections of Utah statute]({{ "code" | prepend: site.baseurl }}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
 
-AGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. At 30+ years old, our full name may sound like its from a by-gone era. But AGRC is how people know us, so we're sticking with it. Years may pass, but our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
+AGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. At 30+ years old, our full name may sound like its from a by-gone era. But AGRC is how people know us, so we're sticking with it. Years may pass, but our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency. 
+
+![AGRC staff photo]({{"/images/AGRC.Staff.Photo.January.2016.png" | prepend: site.baseurl}})
 
 ### What we do at AGRC:
 
