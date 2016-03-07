@@ -74,7 +74,7 @@ Some of the organizations that we have partnered with or worked for recently:
 | · US Representative Jim Matheson | · US Representative Rob Bishop | · US Senator Orrin Hatch |
 | · [Utah 911 Advisory Committee](http://uca911.org/911-committee) | · Utah Association of Counties | · [Utah Communications Authority](http://uca911.org)|
 | · [Utah Council of Land Surveyors](http://www.ucls.org/) | · Utah Education and Telehealth Network | · [Utah Geographic Information Council](http://ugic.info) |
-| · Utah State Board of Regents | · Utah State Elections Office | · Utah State Legislature |
+| · Utah State Auditor | · Utah State Board of Regents | · Utah State Elections Office |
 | · Utah State Tax Commission | · Utah State University | · Utah Transit Authority |
 | · Utah Valley University | · Valley Emergency Communication Center |
 
