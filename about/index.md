@@ -55,13 +55,14 @@ AGRC was one of the first geospatial information offices in the country, establi
 - [Statewide GIS Strategic & Business Plans]({{"/strategic-and-business-plans" | prepend: site.baseurl }})
 - TURN GPS sub-centimeter precision
 
+
 AGRC is funded through a combination of State general and restricted funds and cost-recovery revenue sources from project work and grant awards. This hybrid approach ensures some stable base for SGID and coordination activities but keeps us on our toes by requiring us to keep up with the latest developments in our field so we can offer cutting edge GIS consulting services to those in need.
 
 ### Recent customers and partners
 
 Some of the organizations that we have partnered with or worked for recently:
 
-| Tables        | Are           | Cool  |
+|       |         |   |
 | ------------- | ------------- | ----- |
 | · Blue Stakes of Utah | · Brigham Young University |· Bureau of Land Management |
 | · Community Impact Board | · Department of Agriculture & Food | · DABC
