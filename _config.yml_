@@ -1,0 +1,38 @@
+# Site settings
+title: Utah Mapping Portal
+email: agrc@utah.gov
+description: Utah Mapping Portal | The Utah Automated Geographic Reference Center
+baseurl: @@baseurl
+url: @@url
+highlighter: rouge
+twitter_username: MapUtah
+github_username: AGRC
+facebook_username: UtahAGRC
+vimeo_username: UtahAGRC
+permalink: /:title
+production_url: 'https://gis.utah.gov'
+analytics:
+    google:
+        tracking_id: 'UA-11849964-41'
+
+sass:
+    style: @@sass
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+timezone: America/Denver
+
+exclude: [
+    "node_modules",
+    "scripts/cleanser.py",
+    "scripts/cleanser.pyc",
+    "scripts/datatable.py",
+    "scripts/datatable.pyc",
+    "Gemfile.lock",
+    "Gemfile",
+    "GruntFile.js",
+    "bower.json",
+    "package.json"
+]
