@@ -34,7 +34,6 @@ AGRC was one of the first geospatial information offices in the country, establi
 - Aerial Photography
 - Base Maps Web Services
 - Broadband Mapping Support
-- Civic Boundaries
 - Custom Cartography
 - Custom Web Map Apps
 - Data Acquisition Partnerships & Contracting
@@ -44,6 +43,7 @@ AGRC was one of the first geospatial information offices in the country, establi
 - Lidar Elevation Models
 - Location Analytics
 - 911 Map Data Support
+- Municipal, Voting, and other Civic Boundaries
 - Public Land Survey System
 - Spatial Database Design, Integration and Hosting 
 - Statewide Address Point Aggregation
@@ -59,10 +59,11 @@ Some of the organizations that we have partnered with or worked for recently:
 | Tables        | Are           | Cool  |
 | ------------- | ------------- | ----- |
 | · Blue Stakes of Utah | · Brigham Young University |· Bureau of Land Management |
-| · CenturyLink | · Community Impact Board | · Department of Agriculture & Food |
-| · Department of Commerce | · Department of Environmental Quality | · Departmemt of Health | 
-| · Department of Heritage & Arts | · Department of Natural Resources | · Department of Public Safety | 
-| · Department of Transportation (UDOT) | · Federal Communications Commission | · Governors Office of Economic Development |
+| · Community Impact Board | · Department of Agriculture & Food | · DABC
+| · Department of Commerce | · Department of Corrections | · Department of Environmental Quality |
+| · Departmemt of Health | · Department of Human Services | · Department of Heritage & Arts | 
+| · Department of Natural Resources | · Department of Public Safety | · Department of Transportation (UDOT) | 
+| · Department of Workforce Services | · Federal Communications Commission | · Governors Office of Economic Development |
 | · Governors Office of Energy Development | · Mountainland Asssociation of Government | · NTIA |
 | · Office of Legilative Research & General Counsel | · Public Lands Policy & Coordination Office | · Public Service Commission |
 | · Questar Gas | · Salt Lake City | · Salt Lake County Surveyor |
