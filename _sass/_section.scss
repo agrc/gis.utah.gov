@@ -30,7 +30,16 @@
             margin: auto;
             color: inherit;
             text-shadow: #000 .1em .1em .4em;
+            > a {
+                color: lighten($brand-color, 50%);
+            }
         }
+        > p {
+            > a {
+                color: lighten($brand-color, 50%);
+            }
+        }
+
     }
     > .section-read-more {
         width: 100%;
