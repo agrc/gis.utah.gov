@@ -21,10 +21,10 @@ layout: default
             photography products and vintages are available for download and use as web services. Several base map themes are all sourced from state and local data sources.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-        <a href="#news"><h3>News, Events, & Coordination</h3></a>
+        <a href="#gps"><h3>TURN GPS Network</h3></a>
         <hr class="hr-separate" />
-        <p><a href="#news"><i class="fa fa-newspaper-o fa-3x fa-pull-left"></i></a> Utah is widely recognized as a leader in the GIS field. Across the state, our greatest strengths are human capabilities and the partnership that is sustained across sectors
-            and organizations. Coordination and information sharing, in the form of news, events, tips, and data, fuels our collective success.</p>
+        <p><a href="#gps"><i class="fa fa-signal fa-3x fa-pull-left"></i></a> TURN GPS is the foundation for live, high precision GPS field surveying and field measurement. TURN GPS is a statewide network of over 90 permanently located GPS receivers, that
+            enables sub-centimeter level precision for Utah, and portions of surrounding states including southern Idaho, Western Wyoming, and the Las Vegas metro area.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#dev"><h3>Application Development</h3></a>
@@ -33,10 +33,10 @@ layout: default
             effectively gather, manage, and communicate the information that is most critical to their mission.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-        <a href="#gps"><h3>TURN GPS Network</h3></a>
+        <a href="#news"><h3>News, Events, & Coordination</h3></a>
         <hr class="hr-separate" />
-        <p><a href="#gps"><i class="fa fa-signal fa-3x fa-pull-left"></i></a> TURN GPS is the foundation for live, high precision GPS field surveying and field measurement. TURN GPS is a statewide network of over 90 permanently located GPS receivers, that
-            enables sub-centimeter level precision for Utah, and portions of surrounding states including southern Idaho, Western Wyoming, and the Las Vegas metro area.</p>
+        <p><a href="#news"><i class="fa fa-newspaper-o fa-3x fa-pull-left"></i></a> Utah is widely recognized as a leader in the GIS field. Across the state, our greatest strengths are human capabilities and the partnership that is sustained across sectors
+            and organizations. Coordination and information sharing, in the form of news, events, tips, and data, fuels our collective success.</p>
     </div>
 </div>
 <div class="grid">
@@ -158,30 +158,25 @@ layout: default
         </p>
     </div>
     <div class="grid__col section">
-        <a name="news" class="anchor"></a>
-        <h2>News</h2>
+        <a name="gps" class="anchor"></a>
+        <h2>Precision RTK GPS Network</h2>
         <div class="grid__col grid__col--1-of-2">
-        <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
-        outcomes from Utah's collective investment in GIS. Leverage the efforts and talents of your colleagues. Build a partnership between like-minded agencies.</p>
+        <p>The Utah Reference Network for GPS (TURN GPS) is a networked system of over 90 permanently located high precision GPS receivers,
+           installed across Utah and neighboring states.</p>
+        <p>TURN GPS provides a real-time correction signal that factors out atmospheric variation between earth-orbiting GPS
+           satellites and ground-based GPS receivers in the field.</p>
         </div>
         <div class="grid__col grid__col--1-of-2">
-        <p>AGRC encourages GIS professionals and students to join us in periodically contributing news and updates, 
-        to both our blog pages, here, and the monthly AGRC newsletter. Contact [Jessie Pechmann](mailto:jpechmann@utah.gov?subject=Contributing GIS News) for instructions.</p>
-        </div>
-        <hr class="hr-separate" />
-        {% for post in site.categories.Featured limit:3 %}
-        <div class="grid__col grid__col--1-of-3">
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <br/>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-        </div>
-        {% endfor %}
+            <p>Surveyors, construction crews, field mapping technicians, and GPS controlled machinery are able to operate with
+            sub-centimeter precise measurement by connecting their existing GPS receivers to the TURN GPS correction service
+            over a smart phone data plan.</p>
+
+            <p>A partnership with state and local government agencies has allow TURN GPS base stations to be sited at existing Utah facilities
+            in exchange for use of the system. One year subscriptions to the TURN GPS service are $600 per GPS device.</p></div>
         <p class="section-read-more">
-            <a href="{{ "/news" | prepend: site.baseurl }}" class="btn">Recent News</a>
-            <a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
+            <a href="{{ "/GPS" | prepend: site.baseurl }}" class="btn">More Information</a>
         </p>
-    </div>
+    </div> 
     <div class="grid__col section alternate">
         <a name="dev" class="anchor"></a>
         <h2>Application Development</h2>
@@ -226,25 +221,31 @@ layout: default
         <p class="section-read-more">
             <a href="{{ "/developer" | prepend: site.baseurl }}" class="btn">Read More</a>
         </p>
-    </div>
+    </div>    
+    
     <div class="grid__col section">
-        <a name="gps" class="anchor"></a>
-        <h2>Real Time GPS Network</h2>
+        <a name="news" class="anchor"></a>
+        <h2>News</h2>
         <div class="grid__col grid__col--1-of-2">
-        <p>The Utah Reference Network for GPS (TURN GPS) is a networked system of over 90 permanently located high precision GPS receivers,
-           installed across Utah and neighboring states.</p>
-        <p>TURN GPS provides a real-time correction signal that factors out atmospheric variation between earth-orbiting GPS
-           satellites and ground-based GPS receivers in the field.</p>
+        <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
+        outcomes from Utah's collective investment in GIS. Leverage the efforts and talents of your colleagues. Build a partnership between like-minded agencies.</p>
         </div>
         <div class="grid__col grid__col--1-of-2">
-            <p>Surveyors, construction crews, field mapping technicians, and GPS controlled machinery are able to operate with
-            sub-centimeter precise measurement by connecting their existing GPS receivers to the TURN GPS correction service
-            over a smart phone data plan.</p>
-
-            <p>A partnership with state and local government agencies has allow TURN GPS base stations to be sited at existing Utah facilities
-            in exchange for use of the system. One year subscriptions to the TURN GPS service are $600 per GPS device.</p></div>
+        <p>AGRC encourages GIS professionals and students to join us in periodically contributing news and updates, 
+        to both our blog pages, here, and the monthly AGRC newsletter. Contact [Jessie Pechmann](mailto:jpechmann@utah.gov?subject=Contributing GIS News) for instructions.</p>
+        </div>
+        <hr class="hr-separate" />
+        {% for post in site.categories.Featured limit:3 %}
+        <div class="grid__col grid__col--1-of-3">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <br/>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </div>
+        {% endfor %}
         <p class="section-read-more">
-            <a href="{{ "/GPS" | prepend: site.baseurl }}" class="btn">More Information</a>
+            <a href="{{ "/news" | prepend: site.baseurl }}" class="btn">Recent News</a>
+            <a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
         </p>
     </div>
 </div>
