@@ -140,6 +140,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-replace');
 
     grunt.registerTask('default', [
+        'newer:imagemin',
         'replace:localConfig',
         'replace:localFontAwesome',
         'jekyll:main'
