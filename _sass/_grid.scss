@@ -200,7 +200,9 @@ $toast-pulls: true !default;
       display: inline-block;
       margin-right: -.24em;
     }
-
+    &.#{toast-grid-column-namespace}--m-hidden {
+        display: none !important;
+    }
     &.#{$toast-grid-column-namespace}--m-1-of-2 {
       width: percentage(1/2);
     }
@@ -227,6 +229,10 @@ $toast-pulls: true !default;
   }
 
   @media (max-width: $toast-breakpoint-small) {
+    &.#{$toast-grid-column-namespace}--s-hidden {
+        display: none !important;
+    }
+
     &[class*="#{$toast-grid-column-namespace}--s-"] {
       display: inline-block;
       margin-right: -.24em;
