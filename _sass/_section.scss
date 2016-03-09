@@ -8,6 +8,11 @@
     > h1, h2, h3, h4, h5, h6 {
         text-shadow: darken($base-background-color, 25%) .1em .1em .2em;
     }
+    a {
+         img {
+            border: .08em solid #333;
+        }
+    }
     &.alternate {
         background: radial-gradient(30em circle, lighten($section-alternating, 10%), $section-alternating);
         background-color: $section-alternating;
