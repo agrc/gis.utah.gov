@@ -41,11 +41,37 @@ layout: default
 </div>
 <div class="grid">
     <div class="grid__col section action">
-        <h1>Utah's 2016 Statewide GIS Conference (<a href="http://ugic.info">UGIC</a>)</h1>
+        <h1><a href="http://ugic.info">UGIC</a> 2016: Utah's Statewide GIS Conference</h1>
         <p>Bryce Canyon, May 11-15, 2016. <a href="http://ugic.info/conference/ugic-conference-registration-is-now-open/">Conference Information</a></p>
         <a href="http://ugic.info/register" class="btn">Register</a>
     </div>
-    <div class="grid__col section alternate">
+        <div class="grid__col section alternate">
+        <a name="news" class="anchor"></a>
+        <h2>News</h2>
+        <div class="grid__col grid__col--1-of-2">
+        <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
+        outcomes from Utah's collective investment in GIS. Leverage the efforts and talents of your colleagues. Build a partnership between like-minded agencies.</p>
+        </div>
+        <div class="grid__col grid__col--1-of-2">
+        <p>AGRC encourages GIS professionals and students to join us in periodically contributing news and updates,
+        to both our blog pages, here, and the monthly AGRC newsletter. Contact [Jessie Pechmann](mailto:jpechmann@utah.gov?subject=Contributing GIS News) for instructions.</p>
+        </div>
+        <hr class="hr-separate" />
+        {% for post in site.categories.Featured limit:3 %}
+        <div class="grid__col grid__col--1-of-3">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <br/>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </div>
+        {% endfor %}
+        <p class="section-read-more">
+            <a href="{{ "/news" | prepend: site.baseurl }}" class="btn">Recent News</a>
+            <a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
+        </p>
+    </div>
+    
+    <div class="grid__col section">
         <a name="data" class="anchor"></a>
         <h2>GIS Map Data</h2>
         <div class="grid__col grid__col--1-of-2">
@@ -164,7 +190,7 @@ layout: default
             <a href="{{ "/data" | prepend: site.baseurl }}" class="btn">View All Data</a>
         </p>
     </div>
-    <div class="grid__col section">
+    <div class="grid__col section alternate">
         <a name="api" class="anchor"></a>
         <h2>APIs and JavaScript Widgets</h2>
         <div class="grid__col grid__col--1-of-3">
@@ -180,7 +206,7 @@ layout: default
             <a href="{{ "/developer" | prepend: site.baseurl }}" class="btn">Read More</a>
         </p>
     </div>
-    <div class="grid__col section alternate">
+    <div class="grid__col section">
         <a name="tiles" class="anchor"></a>
         <h2>Basemaps and Imagery</h2>
         <div class="grid__col grid__col--1-of-2">
@@ -202,12 +228,12 @@ layout: default
         <div class="grid__col grid__col--1-of-3">
             <img src="images/provo_lite_basemap.png">
         </div>
-        <div class="grid__col grid__col--1-of-2 text-center">
+        <div class="grid__col grid__col--1-of-2">
             <p>AGRC's [atlas.utah.gov](http://atlas.utah.gov) website allows for a quick preview of the most popular base map services.
             Zoom in for richer map content, click for location-specific info, and use the base map selector in the upper right corner to select
             your base map series choice.</p>
         </div>
-        <div class="grid__col grid__col--1-of-2 text-center">
+        <div class="grid__col grid__col--1-of-2">
             <p>Among the locally sourced map layers that AGRC incorporates into it's base maps are:
             municipal boundaries, building-specific address points, road centerlines per UDOT
             specs, and State-stewarded public lands boundaries.</p>
@@ -216,7 +242,7 @@ layout: default
             <a href="{{ "data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}" class="btn">Read More</a>
         </p>
     </div>
-    <div class="grid__col section">
+    <div class="grid__col section alternate">
         <a name="gps" class="anchor"></a>
         <h2>Precision RTK GPS Network</h2>
         <div class="grid__col grid__col--1-of-2">
@@ -236,7 +262,7 @@ layout: default
             <a href="{{ "/data/sgid-cadastre/turn-gps/" | prepend: site.baseurl }}" class="btn">More Information</a>
         </p>
     </div>
-    <div class="grid__col section alternate">
+    <div class="grid__col section">
         <a name="dev" class="anchor"></a>
         <h2>Application Development</h2>
         <div class="grid__col grid__col--1-of-2">
@@ -279,32 +305,6 @@ layout: default
         </div>
         <p class="section-read-more">
             <a href="{{ "/developer" | prepend: site.baseurl }}" class="btn">Read More</a>
-        </p>
-    </div>
-
-    <div class="grid__col section">
-        <a name="news" class="anchor"></a>
-        <h2>News</h2>
-        <div class="grid__col grid__col--1-of-2">
-        <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
-        outcomes from Utah's collective investment in GIS. Leverage the efforts and talents of your colleagues. Build a partnership between like-minded agencies.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-2">
-        <p>AGRC encourages GIS professionals and students to join us in periodically contributing news and updates,
-        to both our blog pages, here, and the monthly AGRC newsletter. Contact [Jessie Pechmann](mailto:jpechmann@utah.gov?subject=Contributing GIS News) for instructions.</p>
-        </div>
-        <hr class="hr-separate" />
-        {% for post in site.categories.Featured limit:3 %}
-        <div class="grid__col grid__col--1-of-3">
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <br/>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-        </div>
-        {% endfor %}
-        <p class="section-read-more">
-            <a href="{{ "/news" | prepend: site.baseurl }}" class="btn">Recent News</a>
-            <a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
         </p>
     </div>
 </div>
