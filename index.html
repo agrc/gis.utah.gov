@@ -61,6 +61,7 @@ layout: default
         Whether these resources are available to users as downloadable shapefiles or as connections to live streaming data services,
         AGRC strives to ensure that the SGID stays current as a state-level channel to aide in the discovery, access, and use of GIS data resources.
         </div>
+        <h3>Data Categories (click to open)</h3>
         <div class="grid">
             <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-hidden text-center">
                 <a href="{{ "data/address-overview/" | prepend: site.baseurl }}"><h5>Addresses</h5>
@@ -182,12 +183,12 @@ layout: default
     <div class="grid__col section alternate">
         <a name="tiles" class="anchor"></a>
         <h2>Basemaps and Imagery</h2>
-        <div class="grid__col grid__col--1-of-2 text-center">
+        <div class="grid__col grid__col--1-of-2">
             <p>AGRC hosts aerial photography and pre-rendered basemap services on its discover.agrc.utah.gov cloud-based server.
             GIS users, CAD users, and web apps can connect to these mutli-scale maps using the Open Geospatial Consoortium WMS and WMTS protocols.
             The discover server provides images and tiles in the Web Mercator projection, an industry standard for web map display.</p>
         </div>
-        <div class="grid__col grid__col--1-of-2 text-center">
+        <div class="grid__col grid__col--1-of-2">
             <p>Layers accessible from discover server include themed base maps built from local & state GIS data in terrain, 'lite', topo, and hybrid themes.
             Aerial photography includes the latest 6" statewide imagery licensed for state, local, & tribal government from Google,
             as well as public domain color NAIP, CIR/NRG imagery, and (coming soon) historic B/W DOQ series.</p>
@@ -202,17 +203,17 @@ layout: default
             <img src="images/provo_lite_basemap.png">
         </div>
         <div class="grid__col grid__col--1-of-2 text-center">
-            <p>AGRC's atlas.utah.gov website allows for a quick preview of the most popular base map services.
-            Zoom in for richer map content and use the base map selector in the upper right corner to select
+            <p>AGRC's [atlas.utah.gov](http://atlas.utah.gov) website allows for a quick preview of the most popular base map services.
+            Zoom in for richer map content, click for location-specific info, and use the base map selector in the upper right corner to select
             your base map series choice.</p>
         </div>
         <div class="grid__col grid__col--1-of-2 text-center">
             <p>Among the locally sourced map layers that AGRC incorporates into it's base maps are:
-            municipal boundaries, building specific address points, road centerlines representing UDOT
-            route geometry, and state stewarded public lands boundaries.</p>
+            municipal boundaries, building-specific address points, road centerlines per UDOT
+            specs, and State-stewarded public lands boundaries.</p>
         </div>
         <p class="section-read-more">
-            <a href="{{ "/data" | prepend: site.baseurl }}" class="btn">Read More</a>
+            <a href="{{ "data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}" class="btn">Read More</a>
         </p>
     </div>
     <div class="grid__col section">
@@ -232,7 +233,7 @@ layout: default
             <p>A partnership with state and local government agencies has allow TURN GPS base stations to be sited at existing Utah facilities
             in exchange for use of the system. One year subscriptions to the TURN GPS service are $600 per GPS device.</p></div>
         <p class="section-read-more">
-            <a href="{{ "/GPS" | prepend: site.baseurl }}" class="btn">More Information</a>
+            <a href="{{ "/data/sgid-cadastre/turn-gps/" | prepend: site.baseurl }}" class="btn">More Information</a>
         </p>
     </div>
     <div class="grid__col section alternate">
