@@ -8,8 +8,11 @@
     > h1, h2, h3, h4, h5, h6 {
         text-shadow: darken($base-background-color, 25%) .1em .1em .2em;
     }
+    img {
+        border: .08em solid #333;
+    }
     a {
-         img {
+        img {
             border: .08em solid #333;
         }
     }
