@@ -45,7 +45,7 @@ layout: default
         <p>Bryce Canyon, May 9-13, 2016. <a href="http://ugic.info/conference/ugic-conference-registration-is-now-open/">Conference Information</a></p>
         <a href="http://ugic.info/register" class="btn">Register</a>
     </div>
-        <div class="grid__col section alternate">
+        <div class="grid__col section">
         <a name="news" class="anchor"></a>
         <h2>News</h2>
         <div class="grid__col grid__col--1-of-2">
@@ -71,7 +71,7 @@ layout: default
         </p>
     </div>
     
-    <div class="grid__col section">
+    <div class="grid__col section alternate">
         <a name="data" class="anchor"></a>
         <h2>GIS Map Data</h2>
         <div class="grid__col grid__col--1-of-2">
@@ -190,27 +190,6 @@ layout: default
             <a href="{{ "/data" | prepend: site.baseurl }}" class="btn">View All Data</a>
         </p>
     </div>
-    <div class="grid__col section alternate">
-        <a name="api" class="anchor"></a>
-        <h2>APIs and JavaScript Widgets</h2>
-        <div class="grid__col grid__col--1-of-3">
-            <p>APIs available through <a href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like
-            address location (aka geocoding) and map search (point-in-polygon query) to be built into web applications
-            and data-handling processes without the immediate need for GIS-specific software.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3">
-            <p>AGRC's dev group maintains a library of <a href="http://gis.utah.gov/developer/widgets/">Utah-specific map widgets</a> that provide common tools desired in web mapping applications.
-            The widgets include FindAddress, FindTRS (zoom to PLSS sections), and FindGeneric (can be used to search for any feature in an SGID layer.
-            We also, on occasion publish customization for ArcGIS desktop like our <a href="http://gis.utah.gov/new-utah-geocoding-toolbox-for-arcgis-desktop-2/">geocoding api tool</a>.</p>
-        </div>
-           <div class="grid__col grid__col--1-of-3">
-            <p>We are into <i>git</i>.B y default, the AGRC dev team keeps its code current in <a href="https://github.com/agrc">AGRC's github repository</a>. If it's a web site, widget,
-            desktop add-in, or even the content of this website itself, it should be findable, and open-sourced in the AGRC repo.</p>
-        </div>
-        <p class="section-read-more">
-            <a href="{{ "/developer" | prepend: site.baseurl }}" class="btn">Read More</a>
-        </p>
-    </div>
     <div class="grid__col section">
         <a name="tiles" class="anchor"></a>
         <h2>Base maps and Imagery</h2>
@@ -266,9 +245,14 @@ layout: default
 
             <p>A partnership with state and local government agencies has allow TURN GPS base stations to be sited at existing Utah facilities
             in exchange for use of the system. One year subscriptions to the TURN GPS service are $600 per GPS device.</p></div>
+        </div>
+        <div>
+        <h5 class="text-center">TURN GPS Network Coverage</h5>
+            <img src="images/utah_turngps_network.png">
         <p class="section-read-more">
             <a href="{{ "/data/sgid-cadastre/turn-gps/" | prepend: site.baseurl }}" class="btn">More Information</a>
         </p>
+        </div>
     </div>
     <div class="grid__col section">
         <a name="dev" class="anchor"></a>
@@ -278,11 +262,9 @@ layout: default
             AGRC assists with a full range of web map solutions, from the simple to the most complex.</p>
             </div>
         <div class="grid__col grid__col--1-of-2">
-            Our dev group specializes in custom applications, designed with agility, to
+            <p>Our dev group specializes in custom applications, designed with agility, to
             maximize the communication and usability of information.</p>
-            </div>
-        <div class="text-center"></div>
-            <p>Some of our recent, and occasionally award-winning, work includes:</p> 
+            <p class="text-center">Some of our recent, and occasionally award-winning, work includes:</p> 
         </div> 
         <div class="grid__col grid__col--1-of-3 text-center">
             <a href="http://wri.utah.gov"><h5>WRI</h5>
@@ -314,8 +296,31 @@ layout: default
             <img src="images/parcels_utah_gov.png" /></a>
             <p class="muted">Zoom in to view parcel boundaries and basic attributes as assembled statewide by AGRC, in coordination with County Recorders.</p>
         </div>
+        <div>
+        <p class="section-read-more">
+            <a href="{{ "/developer" | prepend: site.baseurl }}" class="btn">Read More</a>
+        </p>
+        </div>
+    </div>
+</div>
+    <div class="grid__col section alternate">
+        <a name="api" class="anchor"></a>
+        <h2>APIs and JavaScript Widgets</h2>
+        <div class="grid__col grid__col--1-of-3">
+            <p>APIs available through <a href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like
+            address location (aka geocoding) and map search (point-in-polygon query) to be built into web applications
+            and data-handling processes without the immediate need for GIS-specific software.</p>
+        </div>
+        <div class="grid__col grid__col--1-of-3">
+            <p>AGRC's dev group maintains a library of <a href="http://gis.utah.gov/developer/widgets/">Utah-specific map widgets</a> that provide common tools desired in web mapping applications.
+            The widgets include FindAddress, FindTRS (zoom to PLSS sections), and FindGeneric (can be used to search for any feature in an SGID layer.
+            We also, on occasion publish customization for ArcGIS desktop like our <a href="http://gis.utah.gov/new-utah-geocoding-toolbox-for-arcgis-desktop-2/">geocoding api tool</a>.</p>
+        </div>
+           <div class="grid__col grid__col--1-of-3">
+            <p>We are into <i>git</i>. By default, the AGRC dev team keeps its code current in <a href="https://github.com/agrc">AGRC's github repository</a>. If it's a web site, widget,
+            desktop add-in, or even the content of this website itself, it should be findable, and open-sourced in the AGRC repo.</p>
+        </div>
         <p class="section-read-more">
             <a href="{{ "/developer" | prepend: site.baseurl }}" class="btn">Read More</a>
         </p>
     </div>
-</div>
