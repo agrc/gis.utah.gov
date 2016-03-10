@@ -41,10 +41,36 @@ layout: default
 </div>
 <div class="grid">
     <div class="grid__col section action">
-        <h1>Utah's 2016 Statewide GIS Conference (<a href="http://ugic.info">UGIC</a>)</h1>
-        <p>Bryce Canyon, May 11-15, 2016. <a href="http://ugic.info/conference/ugic-conference-registration-is-now-open/">Conference Information</a></p>
+        <h1><a href="http://ugic.info">UGIC</a> 2016: Utah's Statewide GIS Conference</h1>
+        <p>Bryce Canyon, May 9-13, 2016. <a href="http://ugic.info/conference/ugic-conference-registration-is-now-open/">Conference Information</a></p>
         <a href="http://ugic.info/register" class="btn">Register</a>
     </div>
+        <div class="grid__col section">
+        <a name="news" class="anchor"></a>
+        <h2>News</h2>
+        <div class="grid__col grid__col--1-of-2">
+        <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
+        outcomes from Utah's collective investment in GIS. Leverage the efforts and talents of your colleagues. Build a partnership between like-minded agencies.</p>
+        </div>
+        <div class="grid__col grid__col--1-of-2">
+        <p>AGRC encourages GIS professionals and students to join us in periodically contributing news and updates,
+        to both our blog pages, here, and the monthly AGRC newsletter. Contact <a href="mailto:jpechmann@utah.gov?subject=Contributing GIS News">Jessie Pechmann</a> for instructions.</p>
+        </div>
+        <hr class="hr-separate" />
+        {% for post in site.categories.Featured limit:3 %}
+        <div class="grid__col grid__col--1-of-3">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <br/>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </div>
+        {% endfor %}
+        <p class="section-read-more">
+            <a href="{{ "/news" | prepend: site.baseurl }}" class="btn">Recent News</a>
+            <a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
+        </p>
+    </div>
+    
     <div class="grid__col section alternate">
         <a name="data" class="anchor"></a>
         <h2>GIS Map Data</h2>
@@ -61,6 +87,7 @@ layout: default
         Whether these resources are available to users as downloadable shapefiles or as connections to live streaming data services,
         AGRC strives to ensure that the SGID stays current as a state-level channel to aide in the discovery, access, and use of GIS data resources.
         </div>
+        <h3>Data Categories (click to open)</h3>
         <div class="grid">
             <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-hidden text-center">
                 <a href="{{ "data/address-overview/" | prepend: site.baseurl }}"><h5>Addresses</h5>
@@ -164,70 +191,70 @@ layout: default
         </p>
     </div>
     <div class="grid__col section">
-        <a name="api" class="anchor"></a>
-        <h2>APIs and JavaScript Widgets</h2>
-        <div class="grid__col grid__col--1-of-3">
-            <p>API: Geocoding, Searching</p>
+        <a name="tiles" class="anchor"></a>
+        <h2>Base maps and Imagery</h2>
+        <div class="grid__col grid__col--1-of-2">
+            <p>AGRC hosts aerial photography and pre-rendered base map services on its discover.agrc.utah.gov cloud-based server.
+            GIS users, CAD users, and web apps can connect to these mutli-scale maps using the Open Geospatial Consoortium WMS and WMTS protocols.
+            The discover server provides images and tiles in the Web Mercator projection, an industry standard for web map display.</p>
         </div>
-        <div class="grid__col grid__col--1-of-3">
-            <p>ArcMap Analysis, cartography and maps, Add-ins and tools</p>
+        <div class="grid__col grid__col--1-of-2">
+            <p>Layers accessible from discover server include themed base maps built from local & state GIS data in terrain, 'lite', topo, and hybrid themes.
+            Aerial photography includes the latest 6" statewide imagery licensed for state, local, & tribal government from Google,
+            as well as public domain color NAIP, CIR/NRG imagery, and (coming soon) historic B/W DOQ series.</p>
         </div>
-        <div class="grid__col grid__col--1-of-3">
-            <p>JavaScript Widgets and productivity tools</p>
+        <div class="grid__col grid__col--1-of-3 text-center">
+            <h5>Terrain</h5>
+            <img src="images/brianhead_terrain_basemap.png">
+        </div>
+        <div class="grid__col grid__col--1-of-3 text-center">
+            <h5>Imagery plus Overlay base maps</h5>
+            <img src="images/stgeorge_hybrid_basemap.png">
+        </div>
+        <div class="grid__col grid__col--1-of-3 text-center">
+            <h5>Lite base map</h5>
+            <img src="images/provo_lite_basemap.png">
+        </div>
+        <div class="grid__col grid__col--1-of-2">
+            <p>AGRC's <a href="http://atlas.utah.gov">atlas.utah.gov</a> website allows for a quick preview of the most popular base map services.
+            Zoom in for richer map content, click for location-specific info, and use the base map selector in the upper right corner to select
+            your base map series choice.</p>
+        </div>
+        <div class="grid__col grid__col--1-of-2">
+            <p>Among the locally sourced map layers that AGRC incorporates into it's base maps are:
+            municipal boundaries, building-specific address points, road centerlines per UDOT
+            specs, and State-stewarded public lands boundaries.</p>
         </div>
         <p class="section-read-more">
-            <a href="{{ "/developer" | prepend: site.baseurl }}" class="btn">Read More</a>
+            <a href="{{ "data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}" class="btn">Read More</a>
         </p>
     </div>
     <div class="grid__col section alternate">
-        <a name="tiles" class="anchor"></a>
-        <h2>Basemaps and Imagery</h2>
-        <div class="grid__col grid__col--1-of-2 text-center">
-            <p>Lite, Hybrid, Terrain, Topo, </p>
-        </div>
-        <div class="grid__col grid__col--1-of-2 text-center">
-            <p>Color IR, Imagery, Overlay, Address Points</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3">
-            <img src="holder.js/300x125">
-        </div>
-        <div class="grid__col grid__col--1-of-3">
-            <img src="holder.js/300x125">
-        </div>
-        <div class="grid__col grid__col--1-of-3">
-            <img src="holder.js/300x125">
-        </div>
-        <div class="grid__col grid__col--1-of-2 text-center">
-            <p>NAIP, HRO, Scanned Topo Maps</p>
-        </div>
-        <div class="grid__col grid__col--1-of-2 text-center">
-            <p>LiDAR, DEM</p>
-        </div>
-        <p class="section-read-more">
-            <a href="{{ "/data" | prepend: site.baseurl }}" class="btn">Read More</a>
-        </p>
-    </div>
-    <div class="grid__col section">
         <a name="gps" class="anchor"></a>
         <h2>Precision RTK GPS Network</h2>
-        <div class="grid__col grid__col--1-of-2">
+        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <p>The Utah Reference Network for GPS (TURN GPS) is a networked system of over 90 permanently located high precision GPS receivers,
            installed across Utah and neighboring states.</p>
         <p>TURN GPS provides a real-time correction signal that factors out atmospheric variation between earth-orbiting GPS
            satellites and ground-based GPS receivers in the field.</p>
         </div>
-        <div class="grid__col grid__col--1-of-2">
+        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
+            <h5 class="text-center">TURN GPS Network Coverage</h5>
+            <img class= "center" src="images/turn_gps_utah_network_rtk.png">
+        </div>
+        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">    
             <p>Surveyors, construction crews, field mapping technicians, and GPS controlled machinery are able to operate with
             sub-centimeter precise measurement by connecting their existing GPS receivers to the TURN GPS correction service
             over a smart phone data plan.</p>
 
             <p>A partnership with state and local government agencies has allow TURN GPS base stations to be sited at existing Utah facilities
-            in exchange for use of the system. One year subscriptions to the TURN GPS service are $600 per GPS device.</p></div>
-        <p class="section-read-more">
-            <a href="{{ "/GPS" | prepend: site.baseurl }}" class="btn">More Information</a>
+            in exchange for use of the system. One year subscriptions to the TURN GPS service are $600 per GPS device.</p>
+        </div>
+        <p class="section-read-more text-center">
+            <a href="{{ "/data/sgid-cadastre/turn-gps/" | prepend: site.baseurl }}" class="btn">More Information</a>
         </p>
     </div>
-    <div class="grid__col section alternate">
+    <div class="grid__col section">
         <a name="dev" class="anchor"></a>
         <h2>Application Development</h2>
         <div class="grid__col grid__col--1-of-2">
@@ -235,67 +262,63 @@ layout: default
             AGRC assists with a full range of web map solutions, from the simple to the most complex.</p>
             </div>
         <div class="grid__col grid__col--1-of-2">
-            Our dev group specializes in custom applications, designed with agility, to
-            maximize the communication and usability of information. Some of our recent award-winning work includes: </p>
-            </div>
+            <p>Our dev group specializes in custom applications, designed with agility, to
+            maximize the communication and usability of information.</p>
+            <p class="text-center">Some of our recent, and occasionally award-winning, work includes:</p> 
+        </div> 
         <div class="grid__col grid__col--1-of-3 text-center">
-            <h5>WRI</h5>
-            <img src="holder.js/300x150" />
-            <p class="muted">Some text about the project and maybe a link</p>
+            <a href="http://wri.utah.gov"><h5>WRI</h5>
+            <img src="images/wri_utah_gov.png" /></a>
+            <p class="muted">The Watershed Restoration Initiative interactive map enables interagency project and resource coordination.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 text-center">
-            <h5>Crash</h5>
-            <img src="holder.js/300x150" />
-            <p class="muted">Some text about the project and maybe a link</p>
+            <a href="http://crashmapping.utah.gov"><h5>Crash</h5>
+            <img src="images/crashmapping_utah_gov.png" /></a>
+            <p class="muted">A statewide heat map of all reported vehicle crashes allows dynamic filtering for time, date, cause, severity, etc.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 text-center">
-            <h5>Locate</h5>
-            <img src="holder.js/300x150" />
-            <p class="muted">Some text about the project and maybe a link</p>
+            <a href="http://locate.utah.gov"><h5>Locate</h5>
+            <img src="images/locate_utah_gov.png" /></a>
+            <p class="muted">Utah's Economic Development Map depicts the landscape of what's important to businesses considering relocating to Utah.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 text-center">
-            <h5>DEQ</h5>
-            <img src="holder.js/300x150" />
-            <p class="muted">Some text about the project and maybe a link</p>
+            <a href="http://enviromapper.utah.gov"><h5>DEQ Interactive Map</h5>
+            <img src="images/deq_utah_gov.png" /></a>
+            <p class="muted">Search for site-specific information relating to DEQ programs including regulated environmental sites, facilities, and designations.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 text-center">
-            <h5>Raster</h5>
-            <img src="holder.js/300x150" />
-            <p class="muted">Some text about the project and maybe a link</p>
+            <a href="http://raster.utah.gov"><h5>SGID Raster Search</h5>
+            <img src="images/raster_utah_gov.png"/></a>
+            <p class="muted">Get map-based results for all of the imagery, elevation, lidar, and scanned maps available from Utah's SGID.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 text-center">
-            <h5>Parcels</h5>
-            <img src="holder.js/300x150" />
-            <p class="muted">Some text about the project and maybe a link</p>
+            <a href="http://parcels.utah.gov"><h5>Parcel Viewer</h5>
+            <img src="images/parcels_utah_gov.png" /></a>
+            <p class="muted">Zoom in to view parcel boundaries and basic attributes as assembled statewide by AGRC, in coordination with County Recorders.</p>
+        </div>
+        <p class="section-read-more text-center">
+            <a href="{{ "/developer" | prepend: site.baseurl }}" class="btn">Read More</a>
+        </p>
+    </div>
+</div>
+    <div class="grid__col section alternate">
+        <a name="api" class="anchor"></a>
+        <h2>APIs and JavaScript Widgets</h2>
+        <div class="grid__col grid__col--1-of-3">
+            <p>APIs available through <a href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like
+            address location (aka geocoding) and map search (point-in-polygon query) to be built into web applications
+            and data-handling processes without the immediate need for GIS-specific software.</p>
+        </div>
+        <div class="grid__col grid__col--1-of-3">
+            <p>AGRC's dev group maintains a library of <a href="http://gis.utah.gov/developer/widgets/">Utah-specific map widgets</a> that provide common tools desired in web mapping applications.
+            The widgets include FindAddress, FindTRS (zoom to PLSS sections), and FindGeneric (can be used to search for any feature in an SGID layer.
+            We also, on occasion publish customization for ArcGIS desktop like our <a href="http://gis.utah.gov/new-utah-geocoding-toolbox-for-arcgis-desktop-2/">geocoding api tool</a>.</p>
+        </div>
+           <div class="grid__col grid__col--1-of-3">
+            <p>We are into <i>git</i>. By default, the AGRC dev team keeps its code current in <a href="https://github.com/agrc">AGRC's github repository</a>. If it's a web site, widget,
+            desktop add-in, or even the content of this website itself, it should be findable, and open-sourced in the AGRC repo.</p>
         </div>
         <p class="section-read-more">
             <a href="{{ "/developer" | prepend: site.baseurl }}" class="btn">Read More</a>
         </p>
     </div>
-
-    <div class="grid__col section">
-        <a name="news" class="anchor"></a>
-        <h2>News</h2>
-        <div class="grid__col grid__col--1-of-2">
-        <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
-        outcomes from Utah's collective investment in GIS. Leverage the efforts and talents of your colleagues. Build a partnership between like-minded agencies.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-2">
-        <p>AGRC encourages GIS professionals and students to join us in periodically contributing news and updates,
-        to both our blog pages, here, and the monthly AGRC newsletter. Contact [Jessie Pechmann](mailto:jpechmann@utah.gov?subject=Contributing GIS News) for instructions.</p>
-        </div>
-        <hr class="hr-separate" />
-        {% for post in site.categories.Featured limit:3 %}
-        <div class="grid__col grid__col--1-of-3">
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <br/>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-        </div>
-        {% endfor %}
-        <p class="section-read-more">
-            <a href="{{ "/news" | prepend: site.baseurl }}" class="btn">Recent News</a>
-            <a href="{{ "/agrc-newsletter" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
-        </p>
-    </div>
-</div>
