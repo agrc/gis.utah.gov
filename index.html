@@ -5,38 +5,39 @@ layout: default
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#data"><h3>Data</h3></a>
         <hr class="hr-separate" />
-        <p><a href="#data"><i class="fa fa-database fa-3x fa-pull-left"></i></a> Established in state law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop access to hundreds of GIS map data layers developed, aggregated, or acquired
+        <p><a href="#data"><i class="fa fa-database fa-3x fa-pull-left"></i></a> Established by state law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop access to hundreds of GIS map data layers developed, aggregated, or acquired
             by state government. Roads, boundaries, addressing, parcels, aerials, elevation, etc...you’ll find it available for download and as web services from the SGID.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#api"><h3>Geo APIs</h3></a>
         <hr class="hr-separate" />
-        <p><a href="#api"><i class="fa fa-compass fa-3x fa-pull-left"></i></a> Does your application just need a quick answer to a “Where is?” or “What’s At?” Many basic location needs can be integrated into your application using the address geocoding and
-            spatial point-in-polygon queries available through api.mapserv.utah.gov.</p>
+        <p><a href="#api"><i class="fa fa-compass fa-3x fa-pull-left"></i></a> Does your application just need a quick answer to a simple “Where is?” or “What’s At?” question?
+        Many basic location needs can be integrated into your application using the address geocoding and
+        spatial point-in-polygon queries available through <a href="api.mapserv.utah.gov">api.mapserv.utah.gov</a>.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#tiles"><h3>Aerial Imagery & Base Maps</h3></a>
         <hr class="hr-separate" />
-        <p><a href="#tiles"><i class="fa fa-picture-o fa-3x fa-pull-left"></i></a> SGID aerial imagery photography and base map services efficiently provide critical map context for GIS and CAD users, as well as web and mobile applications. Multiple aerial
-            photography products and vintages are available for download and use as web services. Several base map themes are all sourced from state and local data sources.</p>
+        <p><a href="#tiles"><i class="fa fa-picture-o fa-3x fa-pull-left"></i></a> SGID aerial photography and base map services efficiently provide critical map context for GIS and CAD users, as well as web and mobile applications. Multiple aerial
+            photography products and vintages are available for download and use as web services. Several base map themes depict data sourced from state, county, and other local data sources.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#gps"><h3>TURN GPS Network</h3></a>
         <hr class="hr-separate" />
-        <p><a href="#gps"><i class="fa fa-signal fa-3x fa-pull-left"></i></a> TURN GPS is the foundation for live, high precision GPS field surveying and field measurement. TURN GPS is a statewide network of over 90 permanently located GPS receivers, that
+        <p><a href="#gps"><i class="fa fa-signal fa-3x fa-pull-left"></i></a> TURN GPS is the foundation for live, high precision GPS field surveying, mapping, and other measurement. TURN GPS is a statewide network of over 90 permanently located GPS receivers, that
             enables sub-centimeter level precision for Utah, and portions of surrounding states including southern Idaho, Western Wyoming, and the Las Vegas metro area.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#dev"><h3>Application Development</h3></a>
         <hr class="hr-separate" />
-        <p><a href="#dev"><i class="fa fa-rocket fa-3x fa-pull-left"></i></a> AGRC’s development team builds and hosts web applications and services designed to best meet business requirements. Tailored web applications can help an organizations to more
+        <p><a href="#dev"><i class="fa fa-rocket fa-3x fa-pull-left"></i></a> AGRC’s development team builds and hosts web applications and services designed to best meet agency/program requirements. Tailored web applications can help an organizations to more
             effectively gather, manage, and communicate the information that is most critical to their mission.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#news"><h3>News, Events, & Coordination</h3></a>
         <hr class="hr-separate" />
-        <p><a href="#news"><i class="fa fa-newspaper-o fa-3x fa-pull-left"></i></a> Utah is widely recognized as a leader in the GIS field. Across the state, our greatest strengths are human capabilities and the partnership that is sustained across sectors
-            and organizations. Coordination and information sharing, in the form of news, events, tips, and data, fuels our collective success.</p>
+        <p><a href="#news"><i class="fa fa-newspaper-o fa-3x fa-pull-left"></i></a> Utah is widely recognized as a leader in the GIS field. Across the state, our greatest strengths are staff capabilities and the partnership that is sustained across sectors
+            and organizations. Coordination and information sharing -- in the form of news, events, tips, and data -- fuels our collective success.</p>
     </div>
 </div>
 <div class="grid">
@@ -50,11 +51,11 @@ layout: default
         <h2>News</h2>
         <div class="grid__col grid__col--1-of-2">
             <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
-            outcomes from Utah's collective investment in GIS. Leverage the efforts and talents of your colleagues. Build a partnership between like-minded agencies.</p>
+            outcomes from Utah's investment in GIS across the public and private sectors. We all benefit by leveraging the efforts, talents, and success of our colleagues. Partnerships built between like-minded organizations generate savings and improve outcomes.</p>
         </div>
         <div class="grid__col grid__col--1-of-2">
             <p>AGRC encourages GIS professionals and students to join us in periodically contributing news and updates,
-            to both our blog pages, here, and the monthly AGRC newsletter. Contact <a href="mailto:jpechmann@utah.gov?subject=Contributing GIS News">Jessie Pechmann</a> for instructions.</p>
+            to both our blog pages, here, and the <a href="{{/agrc-newsletter/" | prepend: site.baseurl }}">monthly AGRC GIS newsletter</a>. Fill out the form at the bottom of any gis.utah.gov page to subscribe. Contact <a href="mailto:jpechmann@utah.gov?subject=Contributing GIS News">Jessie Pechmann</a> to contribute.</p>
         </div>
         <hr class="hr-separate" />
         {% for post in site.categories.Featured limit:3 %}
@@ -83,10 +84,16 @@ layout: default
         <div class="grid__col grid__col--1-of-2">
             <p>Today, interoperable GIS server technology has diminished the importance of a completely centralized map data repository.
             But, it's actually more critical that the latest, best quality GIS data resources are readily discovered and accessed.
-            Whether these resources are available to users as downloadable shapefiles or as connections to live streaming data services,
+            And, that's true for resources available to users as downloadable shapefiles, as well as, resources available as connections to live streaming data services,
             AGRC strives to ensure that the SGID stays current as a state-level channel to aide in the discovery, access, and use of GIS data resources.
         </div>
-        <h3>Data Categories</h3>
+        
+        <h3>Filter the master SGID Index table for data & services...</h3>
+        <div class="grid__col grid__col--1-of-1 text-center>
+             <a href="{{ "/data/index" | prepend: site.baseurl }}">
+            <img align="middle" src="{{ "/images/sgid_master_index_table.png" | prepend: site.baseurl }}"></a>     
+        </div>        
+        <h3>...or browse specific Data Categories</h3>
         <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
             <a href="{{ "/data/address-overview/" | prepend: site.baseurl }}"><h5>Addresses</h5>
             <img src="{{ "/images/front-page/90x90_address_points.png" | prepend: site.baseurl }}"></a>
@@ -189,16 +196,20 @@ layout: default
     </div>
     <div class="grid__col section alternate">
         <a name="tiles" class="anchor"></a>
-        <h2>Base maps and Imagery</h2>
-        <div class="grid__col grid__col--1-of-2">
+        <h2>Base Maps and Imagery</h2>
+        <div class="grid__col grid__col--1-of-3">
             <p>AGRC hosts aerial photography and pre-rendered base map services on its discover.agrc.utah.gov cloud-based server.
-            GIS users, CAD users, and web apps can connect to these mutli-scale maps using the Open Geospatial Consoortium WMS and WMTS protocols.
+            After obtaining an organizational login, GIS users, CAD users, and web apps can connect to these multi-scale maps using the Open Geospatial Consortium WMS and WMTS protocols.
             The discover server provides images and tiles in the Web Mercator projection, an industry standard for web map display.</p>
         </div>
-        <div class="grid__col grid__col--1-of-2">
-            <p>Layers accessible from discover server include themed base maps built from local & state GIS data in terrain, 'lite', topo, and hybrid themes.
-            Aerial photography includes the latest 6" statewide imagery licensed for state, local, & tribal government from Google,
-            as well as public domain color NAIP, CIR/NRG imagery, and (coming soon) historic B/W DOQ series.</p>
+        <div class="grid__col grid__col--1-of-3">
+            <p>Layers accessible from the discover server include themed base maps built from local & state GIS data in terrain, 'lite', topo, and hybrid themes.
+            Aerial photography offerings include the latest 6" statewide imagery licensed for state, local, & tribal government from Google,
+            as well as public domain color NAIP, Wasatch Front HRO, CIR/NRG imagery, and (coming soon) historic B/W DOQ series.</p>
+        </div>
+        <div class="grid__col grid__col--1-of-3">
+            <p>Through the end of 2016, AGRC also provides basemaps from its mapserv.utah.gov server in UTM NAD83 coordinates. Though these base map services are still available
+               are expected to be retired in favor of the cloud-hosted OGC services served through discover. Map refreshes to mapserv base map services will be limited.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 text-center">
             <h5>Terrain</h5>
@@ -214,11 +225,11 @@ layout: default
         </div>
         <div class="grid__col grid__col--1-of-2">
             <p>AGRC's <a href="http://atlas.utah.gov">atlas.utah.gov</a> website allows for a quick preview of the most popular base map services.
-            Zoom in for richer map content, click for location-specific info, and use the base map selector in the upper right corner to select
-            your base map series choice.</p>
+            Zoom in for richer map content, click the map for key location-specific info, and use the base map selector in the upper right corner to select
+            your base map of choice.</p>
         </div>
         <div class="grid__col grid__col--1-of-2">
-            <p>Among the locally sourced map layers that AGRC incorporates into it's base maps are:
+            <p>Among the locally sourced map layers that AGRC incorporates into its base maps are:
             municipal boundaries, building-specific address points, road centerlines per UDOT
             specs, and State-stewarded public lands boundaries.</p>
         </div>
@@ -228,7 +239,7 @@ layout: default
     </div>
     <div class="grid__col section">
         <a name="gps" class="anchor"></a>
-        <h2>Precision RTK GPS Network</h2>
+        <h2>TURN GPS Precision RTK Network</h2>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <p>The Utah Reference Network for GPS (TURN GPS) is a networked system of over 90 permanently located high precision GPS receivers,
            installed across Utah and neighboring states.</p>
@@ -237,15 +248,15 @@ layout: default
         </div>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
             <h5 class="text-center">TURN GPS Network Coverage</h5>
-            <img class= "center" src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
+            <a href="http://turngps.utah.gov/Map/SensorMap.aspx"><img class="center" src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}"></a>
         </div>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-            <p>Surveyors, construction crews, field mapping technicians, and GPS controlled machinery are able to operate with
-            sub-centimeter precise measurement by connecting their existing GPS receivers to the TURN GPS correction service
-            over a smart phone data plan.</p>
+            <p>Surveyors, construction crews, field mapping technicians, and GPS-controlled machinery are able to operate with
+            up-to sub-centimeter precise measurement by connecting their existing GPS receivers to the TURN GPS correction service
+            over a smart phone hotspot.</p>
 
             <p>A partnership with state and local government agencies has allow TURN GPS base stations to be sited at existing Utah facilities
-            in exchange for use of the system. One year subscriptions to the TURN GPS service are $600 per GPS device.</p>
+            in exchange for the partners' use of the system. One year subscriptions to the TURN GPS service are $600 per GPS device.</p>
         </div>
         <p class="section-read-more text-center">
             <a href="{{ "/data/sgid-cadastre/turn-gps/" | prepend: site.baseurl }}" class="btn">More Information</a>
@@ -259,37 +270,38 @@ layout: default
             AGRC assists with a full range of web map solutions, from the simple to the most complex.</p>
         </div>
         <div class="grid__col grid__col--1-of-2">
-            <p>Our dev group specializes in custom applications, designed with agility, to
-            maximize the communication and usability of information.</p>
-            <p class="text-center">Some of our recent, and occasionally award-winning, work includes:</p>
+            <p>Our dev group specializes in custom applications, designed with agility to meet defined requirements, that
+            maximize the communication, logical organization, and usability of information.</p>
         </div>
+        <h2class="text-center">Some of our recent, and occasionally award-winning, work includes:</h2>
+        <br>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://wri.utah.gov"><h5>WRI</h5>
+            <a href="http://wri.utah.gov"><h5>WRI (DNR-DWR))</h5>
             <img src="{{ "/images/wri_utah_gov.png" | prepend: site.baseurl }}" /></a>
-            <p class="muted">The Watershed Restoration Initiative interactive map enables interagency project and resource coordination.</p>
+            <p class="muted">The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://crashmapping.utah.gov"><h5>Crash</h5>
+            <a href="http://crashmapping.utah.gov"><h5>Crash Map (DPS / UDOT)</h5>
             <img src="{{ "/images/crashmapping_utah_gov.png" | prepend: site.baseurl }}" /></a>
-            <p class="muted">A statewide heat map of all reported vehicle crashes allows dynamic filtering for time, date, cause, severity, etc.</p>
+            <p class="muted">A statewide heat map of vehicle crashes, reported across all jurisdictions, and allows dynamic filtering for time, date, cause, severity, etc.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://locate.utah.gov"><h5>Locate</h5>
+            <a href="http://locate.utah.gov"><h5>locate.utah.gov (GOED)</h5>
             <img src="{{ "/images/locate_utah_gov.png" | prepend: site.baseurl }}" /></a>
             <p class="muted">Utah's Economic Development Map depicts the landscape of what's important to businesses considering relocating to Utah.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://enviromapper.utah.gov"><h5>DEQ Interactive Map</h5>
+            <a href="http://enviro.utah.gov"><h5>Environmental Interactive Map (DEQ)</h5>
             <img src="{{ "/images/deq_utah_gov.png" | prepend: site.baseurl }}" /></a>
             <p class="muted">Search for site-specific information relating to DEQ programs including regulated environmental sites, facilities, and designations.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://raster.utah.gov"><h5>SGID Raster Search</h5>
+            <a href="http://raster.utah.gov"><h5>SGID Raster Search (AGRC)</h5>
             <img src="{{ "/images/raster_utah_gov.png" | prepend: site.baseurl }}"/></a>
             <p class="muted">Get map-based results for all of the imagery, elevation, lidar, and scanned maps available from Utah's SGID.</p>
         </div>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://parcels.utah.gov"><h5>Parcel Viewer</h5>
+            <a href="http://parcels.utah.gov"><h5>SGID Parcel Viewer (AGRC)</h5>
             <img src="{{ "/images/parcels_utah_gov.png" | prepend: site.baseurl }}" /></a>
             <p class="muted">Zoom in to view parcel boundaries and basic attributes as assembled statewide by AGRC, in coordination with County Recorders.</p>
         </div>
@@ -303,7 +315,7 @@ layout: default
         <div class="grid__col grid__col--1-of-3">
             <p>APIs available through <a href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like
             address location (aka geocoding) and map search (point-in-polygon query) to be built into web applications
-            and data-handling processes without the immediate need for GIS-specific software.</p>
+            and data-handling processes without the immediate need for GIS-specific software. These API's are at the core of sites like <a href="http://le.utah.gov/GIS/findDistrict.jsp">Who Represents Me?</a>, <a href="http://auditor.utah.gov/audit_reports/taxing-fee-entity-search/">Who Taxes me?</a> etc.</p>
         </div>
         <div class="grid__col grid__col--1-of-3">
             <p>AGRC's dev group maintains a library of <a href="http://gis.utah.gov/developer/widgets/">Utah-specific map widgets</a> that provide common tools desired in web mapping applications.
@@ -311,7 +323,7 @@ layout: default
             We also, on occasion publish customization for ArcGIS desktop like our <a href="http://gis.utah.gov/new-utah-geocoding-toolbox-for-arcgis-desktop-2/">geocoding api tool</a>.</p>
         </div>
            <div class="grid__col grid__col--1-of-3">
-            <p>We are into <i>git</i>. By default, the AGRC dev team keeps its code current in <a href="https://github.com/agrc">AGRC's github repository</a>. If it's a web site, widget,
+            <p>We are into <i>git</i>. By default, the AGRC dev team keeps its code current in <a href="https://github.com/agrc">AGRC's GitHub repository</a>. If it's a web site, widget,
             desktop add-in, or even the content of this website itself, it should be findable, and open-sourced in the AGRC repo.</p>
         </div>
         <p class="section-read-more">

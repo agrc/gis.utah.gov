@@ -40,28 +40,44 @@ tags:
 - state
 - statewide
 ---
-<div class="caption"><img class="size-full wp-image-4794" title="map" src="{{ "/images/TURNGPS.jpg" | prepend: site.baseurl }}" alt="TURN GPS" width="256" height="256" /><p class="caption-text">TURN GPS</p></div>
+<div class="caption"><img class="size-full wp-image-4794" title="map" src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}"><p class="caption-text">TURN GPS</p></div>
 <h4><strong>The Utah Reference Network (TURN) GPS</h4>
 <p></strong></p>
-<p><strong>Software: Trimble PIVOT Platform</strong><br />
-<strong>TURN GPS on the Trimble Pivot Web</strong></p>
-<p><strong>Abstract:</strong><br />
-The Utah Reference Network (TURN) GPS is a network of permanently located GPS receivers, installed across the state as shown in the map, through partnerships between Cities, Counties and State using equipment and facilities, to generate real time high accuracy GPS positioning. TURN GPS is used for a range of precision GPS applications including surveying, engineering, construction and GIS data collection.<br />
-Current cost is $600 for each User login and is good for a full year.<br />
-<strong>Creating an Account:</strong><br />
-Go to the web site <a href="http://turngps.utah.gov/" target="_blank">The Utah Reference Network GPS</a> on the left side under 'Home' click on 'Register'<br />
-This takes you to a secure pay site, select the 'New Registration' button, accept the Terms and Conditions (if you agree), go through the steps filling in the info. For the Origination don't use any punctuation, User Name will stay the same for as long as you renew the account,keep that in mind. Complete the payment portion with a credit card, when done you will receive a confirmation email and receipt. It will take about 24 hours for the subscription payment to cycle through and the activation to be complete for field work.<br />
-<strong>Renewal: </strong><br />
-Again go to the web site <a href="http://turngps.utah.gov/" target="_blank">The Utah Reference Network GPS</a> on the left side under 'Home' click on 'Register'<br />
-This takes you to a secure pay site, select the 'Renew Subscription' button, accept the Terms and Conditions (if you agree).<br />
-Fill in your info for the subscription your renewing, Organization, Username, and Password, proceed to the payment portion use a credit card, when done you will receive a confirmation email and receipt. If the account has expired, it will take about 24 hours for the subscription payment to cycle through and the activation to be complete for field work, otherwise you will not notice any interruption.</p>
-<p>Set up your data collector/gps unit exactly like the old VRS configuration, but change the IP Address to 168.179.231.9 and enter your new Username and Password.<br />
-The Utah Reference Network is a Global Navigation Satellite System (GNSS) which provides both real time corrections and data for post processing to those that have an active subscription.  The Coordinate Reference Frame for this network is NAD83(2011)(EPOCH:2010.0000.) The Latitude, Longitude and Ellipsoidal Height of each reference station was calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects application. Eighteen NGS Continually Operating Reference Stations (CORS) were selected along the perimeter and interior of the network and were constrained to the published coordinates to conduct the final adjustment of the network coordinates. </p>
-<p><span class="icon-text icon-globe">Usage: Paid subscription; Login, Password required</span><br />
-<span class="icon-text icon-user">Contact: <a href="mailto:sfernandez@utah.gov">Sean Fernandez PLS</a> or <a href="mailto:mheagin@utah.gov">Mike Heagin</a></span><br />
-[icon style="link" color="gray"]Links:</p>
+<p><strong>TURN GPS uses the Trimble PIVOT VRS Platform</strong></p>
+
+<p>The Utah Reference Network (TURN) GPS is a GNSS network of permanently located GPS receivers,
+installed across the state, to generate real time high accuracy GPS positioning. 
+TURN GPS is used for a range of precision GPS applications including surveying,
+engineering, construction and GIS data collection.
+Current cost is $600 for each User login and is good for a full year from date of signup.</p>
+<h2 class="text-left">Creating a New Account:</h2>
+<p>From the <a href="https://secure.utah.gov/turngps/">TURN GPS secure payment site</a>,
+select the 'New Registration' button, accept the Terms and Conditions (if you agree),
+go through the steps filling account and credit card payment info. Two registration hints:
+<ul><li>For the Organization and Username don't use any punctuation.</li><li>Please put some thought into your Username, as that will be associated with your account ongoing.</li></ul>
+When registration and payment are complete you will receive a confirmation email and receipt. It will take about 24 hours for the subscription payment to cycle through and your account to be activated and ready for use in the field.</p>
+<h2 class="text-left">Renewing An Account: </h2>
+<p>Again, from the <a href="https://secure.utah.gov/turngps/">TURN GPS secure payment site</a>,
+select the 'Renew Subscription' button, accept the Terms and Conditions (if you agree).</p>
+Provide the Organization, Username, and Password for the subscription you're renewing, and
+proceed to the payment portion using a credit card. When done you will receive a confirmation email and receipt.</p>
+<p>If the account has expired, it will take about 24 hours for the subscription payment to cycle through
+and the activation to be complete for field work, otherwise you will not notice any interruption.</p>
+<p>With an activated subscription, set your GPS unit's VRS connection address to 168.179.231.9 and enter your new device-specific username and password.</p>
+<h2 class="text-left">Additional Information</h2>
+<p><strong>Usage</strong>: Paid subscription; Login, Password required</p>
+<p><strong>Contact</strong>: <a href="mailto:sfernandez@utah.gov">Sean Fernandez PLS</a> or <a href="mailto:mheagin@utah.gov">Mike Heagin</a>
+<p><strong>Links:</strong>:
 <ul>
 <li><a href="http://turngps.utah.gov/Map/SensorMap.aspx">TURN GPS Sensor Map</a></li>
 <li><a href="http://turngps.utah.gov/">The Utah Reference Network GPS</a></li>
 </ul>
-<p>[/icon] </p>
+</p>
+<p>The Coordinate Reference Frame for this network is NAD83(2011)(EPOCH:2010.0000.)
+The Latitude, Longitude and Ellipsoidal Height of each reference station was calculated
+by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS)
+Projects application.</p>
+<p>Eighteen NGS Continually Operating Reference Stations (CORS) were selected along the 
+perimeter and interior of the network and were constrained to the published coordinates to conduct the final
+adjustment of the network coordinates.</p>
+ 
