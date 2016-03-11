@@ -5,6 +5,9 @@
     background: radial-gradient(30em circle, ligthen($base-background-color, 10%), $base-background-color);
     background-color: $base-background-color;
     border-bottom: 1px solid darken($base-background-color, 25%);
+    &.no-border {
+        border: 0;
+    }
     > h1, h2, h3, h4, h5, h6 {
         text-shadow: darken($base-background-color, 25%) .1em .1em .2em;
     }
