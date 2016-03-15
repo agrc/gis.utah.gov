@@ -79,7 +79,7 @@ permalink: /data/sgid-index
     {}
     <input class="search" placeholder="Search Data" />
     <table>
-    '''.format(''.join(['<a href="#" class="btn">{}</a>'.format(x) for x in categories]))
+    '''.format(''.join(['<a href="#" class="btn">{}</a>'.format(x) for x in categories if len(x) > 0]))
 
     once = True
     for item in data:
