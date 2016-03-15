@@ -74,12 +74,12 @@ status: publish
 title: SGID Index
 permalink: /data/sgid-index
 ---
-<script src="{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}"></script>
+<script src="{{{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}}}"></script>
+<input class="search" placeholder="Search Data" />
+{}
 <div id='table' class='datatable'>
-    {}
-    <input class="search" placeholder="Search Data" />
     <table>
-    '''.format(''.join(['<a href="#" class="btn">{}</a>'.format(x) for x in categories if len(x) > 0]))
+    '''.format('| '.join(['<a id="filter_{0}">{0}</a>'.format(x) for x in categories if len(x) > 0]))
 
     once = True
     for item in data:
