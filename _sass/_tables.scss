@@ -69,6 +69,22 @@ tfoot {
 .datatable {
     min-width: 300px; // adjust to your needs
     margin: 1em 0;
+    a {
+        color: $highlight-color;
+        text-decoration: none;
+
+        &:visited {
+            color: $highlight-color;
+        }
+
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+            &.clean {
+                text-decoration: none;
+            }
+        }
+    }
     table {
         width: 100%;
         padding: 0;
