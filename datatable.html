@@ -4,10 +4,10 @@ status: publish
 title: SGID Index
 permalink: /data/sgid-index
 ---
-<script src="{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }"></script>
+<script src="{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}"></script>
+<input class="search" placeholder="Search Data" />
+<a id="filter_demographic">demographic</a>| <a id="filter_energy">energy</a>| <a id="filter_bioscience">bioscience</a>| <a id="filter_society">society</a>| <a id="filter_planning">planning</a>| <a id="filter_transportation">transportation</a>| <a id="filter_geoscience">geoscience</a>| <a id="filter_boundaries">boundaries</a>| <a id="filter_political">political</a>| <a id="filter_environment">environment</a>| <a id="filter_health">health</a>| <a id="filter_location">location</a>| <a id="filter_farming">farming</a>| <a id="filter_economy">economy</a>| <a id="filter_elevation">elevation</a>| <a id="filter_recreation">recreation</a>| <a id="filter_utilities">utilities</a>| <a id="filter_water">water</a>| <a id="filter_raster">raster</a>| <a id="filter_climate">climate</a>| <a id="filter_imagery">imagery</a>| <a id="filter_cadastre">cadastre</a>| <a id="filter_indices">indices</a>| <a id="filter_basemap">basemap</a>| <a id="filter_history">history</a>
 <div id='table' class='datatable'>
-    <a href="#" class="btn"></a><a href="#" class="btn">demographic</a><a href="#" class="btn">energy</a><a href="#" class="btn">bioscience</a><a href="#" class="btn">society</a><a href="#" class="btn">planning</a><a href="#" class="btn">transportation</a><a href="#" class="btn">geoscience</a><a href="#" class="btn">boundaries</a><a href="#" class="btn">political</a><a href="#" class="btn">environment</a><a href="#" class="btn">health</a><a href="#" class="btn">location</a><a href="#" class="btn">farming</a><a href="#" class="btn">economy</a><a href="#" class="btn">elevation</a><a href="#" class="btn">recreation</a><a href="#" class="btn">utilities</a><a href="#" class="btn">water</a><a href="#" class="btn">raster</a><a href="#" class="btn">climate</a><a href="#" class="btn">imagery</a><a href="#" class="btn">cadastre</a><a href="#" class="btn">indices</a><a href="#" class="btn">basemap</a><a href="#" class="btn">history</a>
-    <input class="search" placeholder="Search Data" />
     <table>
     
         <thead>
@@ -982,6 +982,22 @@ permalink: /data/sgid-index
                 <td data-th="governance" class="governance"></td>
             </tr>
             <tr>
+                <td data-th="category" class="category">cadastre</td>
+                <td data-th="name" class="name">UtahControl HRO</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Control points for Utah High Resolution Orthophotography (HRO) imagery.</td>
+                <td data-th="restrictions" class="restrictions"></td>
+                <td data-th="governance" class="governance"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">cadastre</td>
+                <td data-th="name" class="name">UtahControl NAIP</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Control points for Utah National Agricultural Imagery Program (NAIP).</td>
+                <td data-th="restrictions" class="restrictions"></td>
+                <td data-th="governance" class="governance"></td>
+            </tr>
+            <tr>
                 <td data-th="category" class="category">climate</td>
                 <td data-th="name" class="name"><a href="{{ "/data/climate/" | prepend: site.baseurl }}">NWSForecastZones</a></td>
                 <td data-th="agency" class="agency">NWS</td>
@@ -1118,6 +1134,30 @@ permalink: /data/sgid-index
                 <td data-th="governance" class="governance"></td>
             </tr>
             <tr>
+                <td data-th="category" class="category">demographic</td>
+                <td data-th="name" class="name">UnIncorpAreas2010 Approx</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Derived from 2010 census blocks to identify unincorporated areas.</td>
+                <td data-th="restrictions" class="restrictions"></td>
+                <td data-th="governance" class="governance"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">demographic</td>
+                <td data-th="name" class="name">UnPopUtah Approx</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Approximate unpopulated areas of Utah</td>
+                <td data-th="restrictions" class="restrictions"></td>
+                <td data-th="governance" class="governance"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">demographic</td>
+                <td data-th="name" class="name"><a href="{{ "/data/demographic/2010-census-data/" | prepend: site.baseurl }}">UrbanAreasCensus2010</a></td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Derived from 2010 census blocks to identify urban areas and urban clusters.</td>
+                <td data-th="restrictions" class="restrictions"></td>
+                <td data-th="governance" class="governance"></td>
+            </tr>
+            <tr>
                 <td data-th="category" class="category">economy</td>
                 <td data-th="name" class="name"><a href="{{ "/data/economy/enterprise-zones/" | prepend: site.baseurl }}">EnterpriseZones</a></td>
                 <td data-th="agency" class="agency">GOED</td>
@@ -1175,6 +1215,14 @@ permalink: /data/sgid-index
             </tr>
             <tr>
                 <td data-th="category" class="category">economy</td>
+                <td data-th="name" class="name">TaxAreas2013</td>
+                <td data-th="agency" class="agency">USTC</td>
+                <td data-th="description" class="description">2013 Taxing areas formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.</td>
+                <td data-th="restrictions" class="restrictions"></td>
+                <td data-th="governance" class="governance"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">economy</td>
                 <td data-th="name" class="name"><a href="{{ "/data/economy/taxingareas/" | prepend: site.baseurl }}">TaxAreas2014</a></td>
                 <td data-th="agency" class="agency">USTC</td>
                 <td data-th="description" class="description">2014 Taxing areas formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.</td>
@@ -1218,6 +1266,14 @@ permalink: /data/sgid-index
                 <td data-th="name" class="name">TaxEntities2012</td>
                 <td data-th="agency" class="agency">USTC</td>
                 <td data-th="description" class="description">2012 Incorporated bodies that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetary districts, and mosquito abatement districts.</td>
+                <td data-th="restrictions" class="restrictions"></td>
+                <td data-th="governance" class="governance"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category"></td>
+                <td data-th="name" class="name"></td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description"></td>
                 <td data-th="restrictions" class="restrictions"></td>
                 <td data-th="governance" class="governance"></td>
             </tr>
