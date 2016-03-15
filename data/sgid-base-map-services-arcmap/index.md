@@ -19,7 +19,7 @@ tags: []
 ---
 Need a quick, fast base map for your ArcMap project?
 
-AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your ArcMap session as fast as your internet connection will allow. The Discover services utilize a Web Mercator WGS84 coordinate system. The Mapserv services utilize a UTM Zone 12N, NAD83 coordinate system. Information about transformations between different coordinate systems can be found [here]({{"/data/googleimagery/" Coordinate System and Datum}} | prepend:site.baseurl).
+AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your ArcMap session as fast as your internet connection will allow. The Discover services utilize a Web Mercator WGS84 coordinate system. The Mapserv services utilize a UTM Zone 12N, NAD83 coordinate system. Information about transformations between different coordinate systems can be found [here broken]({{ "/data/googleimagery/" | prepend:site.baseurl }}).
 
 ### Discover Server
 
@@ -55,6 +55,7 @@ Latest update about the Discover services found [here.]()
 
 ### Mapserv Server
 **The Mapserv server will be turned off 1/1/2017.** Unless you must utilize UTM services it is suggested that you utilize the services above from Discover.
+
 Instructions for using Mapserv in ArcMap 10.x:
 
   1.  In ArcMap, click the _Add Data_ button
@@ -62,7 +63,7 @@ Instructions for using Mapserv in ArcMap 10.x:
   1.	Select _Add ArcGIS Server_ and then choose the _Use GIS Services_ option
   1.	Set the Internet Server URL to:  _http://mapserv.utah.gov/arcgis/services_
   1.	Click Finish and then double click the newly added item _"arcgis on mapserv.utah.gov"_
-  1.	From the **_BaseMaps folder_**, _Select_ the base map(s) of your choice from the list below:
+  1.	From the **_BaseMaps_** folder, _Select_ the base map(s) of your choice from the list below then click _Add_ or _OK_:  
     - _AddressPoints_ (address points with labels)
     - _Hillshade_
     - _Hybrid_ (streets and other vector layers atop imagery)
@@ -70,7 +71,7 @@ Instructions for using Mapserv in ArcMap 10.x:
     - _Terrain_ (hillshade, streets, parks, forest, water, etc)
     - _Topo_ (multiscale mosaic of USGS topo maps)
     - _Vector_ (streets, land ownership, and boundaries)
-  1.	Click Add or OK  
+  1. From the **_AerialPhotography__BlackWhite_**, **_AerialPhotography__Color_**, or **_AerialPhotography__InfraRed_** folder, _Select_ the imagery service(s) of your choice then click _Add_ or _OK_:  
 
 Web developers can embed any of these base map services in web-based and internet-connected applications.
 - [More information about the base maps and for application developers.]({{"/developer/base-maps/" | preped:site.baseurl}})
