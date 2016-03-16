@@ -39,7 +39,7 @@ Instructions for using the Discover links in ArcMap 10.x:
   -	*doq_1990’s_bw* – 1-meter statewide black & white aerial photography collected in 1990’s
   -	*hro_2012_rgb* – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
   -	*naip_2009_rgb* – 1-meter statewide natural color aerial photography collected in 2009
-  -	*naip_2011_nrg* – 1-meter statewide color infrared aerial photography collected in 2009
+  -	*naip_2011_nrg* – 1-meter statewide color infrared aerial photography collected in 2011
   -	*naip_2011_rgb* – 1-meter statewide natural color aerial photography collected in 2011
   -	_lite-basemap_ – Base map of hillshade, HWYs/streets, cities, boundaries, etc.(gray, muted tone)
   -	_overlay-basemap_ – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
