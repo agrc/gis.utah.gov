@@ -63,7 +63,8 @@ def get_sheet_data(gc, sheet_id, worksheet_id):
     return [munge_data(item, i, indices) for i, item in enumerate(data)]
 
 def create(data):
-    categories = set([x['category'] for x in data])
+    categories = list(set([x['category'] for x in data]))
+    categories.sort()
     html = '''---
 layout: page
 status: publish
