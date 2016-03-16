@@ -38,7 +38,7 @@ For more information, please contact Kasey Hansen: <khansen@jub.com>.
 
 Not limited to those users within Salt Lake County, the Salt Lake Area Users Group (SLUG) brings together GIS practitioners in the core of the urbanized Wasatch Front. This area has a high concentration of experienced professionals as well as budding students along with a richness of data resources. Meeting quarterly, SLUG is a forum for exchanging ideas, solutions, and on-going practical applications of GIS.
 
-For more information and to join the mailing list visit: <http://www.slug-gis.info/>. 
+For more information and to join the mailing list visit: [www.slug-gis.info](http://www.slug-gis.info/). . 
 
 **Southwest Utah User Group**
 
