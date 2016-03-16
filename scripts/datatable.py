@@ -72,7 +72,8 @@ title: SGID Index
 permalink: /data/sgid-index
 ---
 <script src="{{{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}}}"></script>
-<div id='filters'>{}</div>
+<span id='show_filters' class='pointer'>Show Filters</span>
+<div id='filters' class='hidden'>{}</div>
 <div id='table' class='datatable'>
     <input class="search" placeholder="Search Data" />
     <table>
@@ -103,6 +104,8 @@ permalink: /data/sgid-index
     valueNames: [ 'name', 'category', 'agency', 'contact', 'restrictions', 'governance' ]
     };
 
+    var filterNode = document.getElementById('filters');
+    var togglerNode = document.getElementById('show_filters');
     var datatable = new List('table', options);
 
     function getParameterByName(name, url) {
@@ -142,7 +145,18 @@ permalink: /data/sgid-index
         }
     };
 
-    document.getElementById('filters').addEventListener('click', filterCategories);
+    var toggleCategories = function() {
+        if ((' ' + filterNode.classList + ' ').indexOf('hidden') >= 0) {
+            filterNode.classList.remove('hidden');
+            togglerNode.innerHTML = 'Hide Filters';
+        } else {
+            filterNode.classList.add('hidden');
+            togglerNode.innerHTML = 'Show Filters';
+        }
+    };
+
+    filterNode.addEventListener('click', filterCategories);
+    togglerNode.addEventListener('click', toggleCategories);
 </script>
 '''
 
