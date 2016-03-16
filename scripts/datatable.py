@@ -43,9 +43,7 @@ def munge_data(item, i, indices):
         ('category', utf8_encode(category)),
         ('name', should_link(name.replace('_', ' '))),
         ('agency', utf8_encode(item[indices['data_source']])),
-        ('description', utf8_encode(item[indices['description']])),
-        ('restrictions', utf8_encode(item[indices['restrictions']])),
-        ('governance', utf8_encode(item[indices['agreement']])),
+        ('description', utf8_encode(item[indices['description']]))
     ])
 
 def get_sheet_data(gc, sheet_id, worksheet_id):
@@ -59,9 +57,7 @@ def get_sheet_data(gc, sheet_id, worksheet_id):
         'description': header.index('Description'),
         'data_source': header.index('Data Source'),
         'url': header.index('Website URL'),
-        'restrictions': header.index('Use Restrictions'),
-        'data_type': header.index('Data Type'),
-        'agreement': header.index('Governance/Agreement')
+        'data_type': header.index('Data Type')
     }
 
     return [munge_data(item, i, indices) for i, item in enumerate(data)]
@@ -75,11 +71,11 @@ title: SGID Index
 permalink: /data/sgid-index
 ---
 <script src="{{{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}}}"></script>
-<input class="search" placeholder="Search Data" />
-{}
+<div id='filters'>{}</div>
 <div id='table' class='datatable'>
+    <input class="search" placeholder="Search Data" />
     <table>
-    '''.format('| '.join(['<a id="filter_{0}">{0}</a>'.format(x) for x in categories if len(x) > 0]))
+    '''.format(' | '.join(['<a id="filter_{0}">{0}</a>'.format(x) for x in categories if len(x) > 0]))
 
     once = True
     for item in data:
@@ -102,34 +98,50 @@ permalink: /data/sgid-index
 </div>
 
 <script>
-var options = {
-  valueNames: [ 'name', 'category', 'agency', 'contact', 'restrictions', 'governance' ]
-};
-
-var datatable = new List('table', options);
-
-function getParameterByName(name, url) {
-    if (!url) {
-        url = window.location.href;
-    }
-
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) {
-        return null
+    var options = {
+    valueNames: [ 'name', 'category', 'agency', 'contact', 'restrictions', 'governance' ]
     };
-    if (!results[2]) {
-        return '';
+
+    var datatable = new List('table', options);
+
+    function getParameterByName(name, url) {
+        if (!url) {
+            url = window.location.href;
+        }
+
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) {
+            return null
+        };
+        if (!results[2]) {
+            return '';
+        }
+
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
+    var category = getParameterByName('category');
+    if (category){
+        datatable.search(category, ['category']);
+    }
 
-var category = getParameterByName('category');
-if (category){
-    datatable.search(category, ['category']);
-}
+    var filterCategories = function(e) {
+        if (!e && !e.target) {
+            return;
+        }
+
+        var clicked = e.target.id;
+
+        var category = clicked.split('_')[1];
+
+        if (category){
+            datatable.search(category, ['category']);
+        }
+    };
+
+    document.getElementById('filters').addEventListener('click', filterCategories);
 </script>
 '''
 
@@ -143,7 +155,9 @@ if __name__ == '__main__':
 
     data = get_sheet_data(gc, '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ', 'SGID Stewardship Info')
 
+    data = filter(lambda x: len(x['name']) > 0, data)
     html = create(data)
+
     file_path = join(dirname(__file__), '..', 'datatable.html')
 
     with open(file_path + '.bak', 'wb') as data:
