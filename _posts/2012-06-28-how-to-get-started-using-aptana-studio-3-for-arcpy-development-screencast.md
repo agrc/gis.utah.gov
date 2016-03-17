@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: How to Get Started Using Aptana Studio 3 for ArcPy Development (Screencast)
 author:
   display_name: Scott Davis

@@ -27,7 +27,7 @@ tags:
 <p>AGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.<a href="{{ "/downloads/geocoding-example.png" | prepend: site.baseurl }}"><img src="{{ "/images/geocoding-example.png" | prepend: site.baseurl }}" alt="" title="geocoding example" width="113" height="144" class="inline-text-left" /></a></p>
 <p>This custom geocoding toolbox allows ArcMap users to obtain geographic coordinates from <a href="{{ "/using-the-mapserv-utah-gov-api-to-geocode-address/" | prepend: site.baseurl }}">AGRC's geocoding web service api</a> for any table of addresses in a ArcGIS accessible format.</p>
 <p>While the geocoding api was built primarily for web applications it also provides value as a toolbox in ArcMap, as it uses current local data and solves for some common shortcomings with stock geocoding approaches by:</p>
-<p><a href="{{ "/downloads/geocodingtoolbox.png" | prepend: site.baseurl }}"><img src="{{ "/images/geocodingtoolbox.png" | prepend: site.baseurl }}" alt="" title="geocodingtoolbox" width="190" height="333" class="inline-text-left" /></a>
+<p><a href="{{ "/downloads/geocodingtoolbox.png" | prepend: site.baseurl }}"><img src="{{ "/images/geocodingtoolbox.png" | prepend: site.baseurl }}" alt="" title="geocodingtoolbox" width="190" height="333" class="inline-text-right" /></a>
 <ul>
 <li>using hierarchical street name and address coordinate system aliasing</li>
 <li>use of either zip codes or place names as zones</li>

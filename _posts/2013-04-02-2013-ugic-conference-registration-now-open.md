@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: 2013 UGIC Conference
 author:
   display_name: kgreen

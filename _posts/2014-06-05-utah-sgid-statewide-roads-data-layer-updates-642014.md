@@ -52,29 +52,29 @@ tags:
 <p>The following highlights what has been updated:</p>
 <p><span style="text-decoration: underline;">County Updates:</span></p>
 <ul>
-<li><strong>Salt Lake:</strong> Received VECC's centerline update 5/28/2014: added new roads since the last update on 4/30/2014; geocoding improvements</li>
-<li><strong>San Juan:</strong> AGRC is providing ongoing GIS data support to San Juan County: added new roads, road names, and address ranges; geocoding improvements</li>
-<li><strong>Sevier</strong> Received centerline update 5/20/2014: added new roads, road names, address ranges; geocoding improvements
-<li><strong>Utah:</strong> Received centerline update 5/28/2014: added new roads since the last update on 4/30/2014; geocoding improvements</li>
-<li><strong>Washington:</strong> Received centerline update 5/29/2014: added new roads since the last update on 4/30/2014; geocoding improvements</li>
-<li><strong>Wayne:</strong> Received centerline update 5/20/2014: added new roads, road names, and address ranges; geocoding improvements</li>
-<li><strong>Weber:</strong> Received centerline update 5/1/2014: added new roads, road names, and address ranges; geocoding improvements</li>
+    <li><strong>Salt Lake:</strong> Received VECC's centerline update 5/28/2014: added new roads since the last update on 4/30/2014; geocoding improvements</li>
+    <li><strong>San Juan:</strong> AGRC is providing ongoing GIS data support to San Juan County: added new roads, road names, and address ranges; geocoding improvements</li>
+    <li><strong>Sevier</strong> Received centerline update 5/20/2014: added new roads, road names, address ranges; geocoding improvements</li>
+    <li><strong>Utah:</strong> Received centerline update 5/28/2014: added new roads since the last update on 4/30/2014; geocoding improvements</li>
+    <li><strong>Washington:</strong> Received centerline update 5/29/2014: added new roads since the last update on 4/30/2014; geocoding improvements</li>
+    <li><strong>Wayne:</strong> Received centerline update 5/20/2014: added new roads, road names, and address ranges; geocoding improvements</li>
+    <li><strong>Weber:</strong> Received centerline update 5/1/2014: added new roads, road names, and address ranges; geocoding improvements</li>
 </ul>
+
 <p><span style="text-decoration: underline;">Blue Stakes of Utah Feedback:</span></p>
 <ul>
-<li><strong>Davis:</strong> geocoding improvements</li>
-<li><strong>Salt Lake:</strong> geocoding improvements</li>
-<li><strong>Tooele:</strong> geocoding improvements</li>
-<li><strong>Utah:</strong> geocoding improvements</li>
-<li><strong>Uintah:</strong> geocoding improvements</li>
-<li><strong>Wasatch:</strong> geocoding improvements</li>
-<li><strong>Washington:</strong> geocoding improvements</li>
-<li><strong>Weber:</strong> geocoding improvements</li>
+    <li><strong>Davis:</strong> geocoding improvements</li>
+    <li><strong>Salt Lake:</strong> geocoding improvements</li>
+    <li><strong>Tooele:</strong> geocoding improvements</li>
+    <li><strong>Utah:</strong> geocoding improvements</li>
+    <li><strong>Uintah:</strong> geocoding improvements</li>
+    <li><strong>Wasatch:</strong> geocoding improvements</li>
+    <li><strong>Washington:</strong> geocoding improvements</li>
+    <li><strong>Weber:</strong> geocoding improvements</li>
 </ul>
+
 <p><span style="text-decoration: underline;">UDOT Route System:</span></p>
 <ul>
-<li>The DOT_F_MP (From Milepost) and DOT_T_MP (To Milepost) fields that store the milepost attributes of the UDOT state and federal routes in SGID10.Transportation.Roads were updated</li>
-<li>The DOT_RTID field that stores UDOT's unique numeric route identifiers was updated</li>
-</ul>
-</ul>
+    <li>The DOT_F_MP (From Milepost) and DOT_T_MP (To Milepost) fields that store the milepost attributes of the UDOT state and federal routes in SGID10.Transportation.Roads were updated</li>
+    <li>The DOT_RTID field that stores UDOT's unique numeric route identifiers was updated</li>
 </ul>

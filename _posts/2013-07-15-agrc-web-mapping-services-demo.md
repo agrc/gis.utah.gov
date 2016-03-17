@@ -23,11 +23,15 @@ tags: []
 <p>This post will show you how simple it is to leverage AGRC's services with JavaScript. We will develop a simple web app that contains a dynamic map and simple address finding controls. Please note that we've added a simple glossary of terms at the bottom of this page.</p>
 <h2 id="esri-javascript-api">ESRI JavaScript API</h2>
 <p>The first thing to do is create a simple <code>.html</code> page and import <a href="https://developers.arcgis.com/en/javascript/">ESRI's ArcGIS API for JavaScript</a>. You can load their API by a CSS file:</p>
-<pre><code>&lt;link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css"&gt;
-</code></pre>
+
+```html
+<link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css">
+```
 <p>and a script file: </p>
-<pre><code>&lt;script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/"&gt;&lt;/script&gt;
-</code></pre>
+```html
+<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/"></script>
+```
+
 <p>This will load all necessary dependencies including <a href="https://developers.arcgis.com/en/javascript/jshelp/inside_dojo.html">Dojo</a> into your application. Dojo is a widely used javascript library containing commonly used functionality for cross-browser compatible user interface presentation and management. Because it's built on top of Dojo, ESRI's API also employs the new <a href="http://en.wikipedia.org/wiki/Asynchronous_module_definition">Asynchronous Module Definition (AMD)</a> standard for loading external JavaScript libraries. With both Dojo and ESRI development teams using AMD, it is highly recommended that you also use the AMD loading syntax, as this should maximize the life-expectancy for the map-service consuming code that you write. All code examples in this post will be using the new AMD syntax. If you are unfamiliar with AMD you may want to check out <a href="http://dojotoolkit.org/documentation/tutorials/1.9/modules/">Dojo's excellent tutorial</a> on the subject.</p>
 <h2 id="base-maps">Base Maps</h2>
 <p>AGRC provides <a href="{{ "/developer/base-maps/" | prepend: site.baseurl }}">seven high-quality, pre-rendered base map services</a>. These services are published through ESRI's <a href="http://www.esri.com/software/arcgis/arcgisserver">ArcGIS Server software</a>. The service directory end points can be found here: </p>

@@ -71,7 +71,6 @@ tags:
 <li>The DOT_F_MP (From Milepost) and DOT_T_MP (To Milepost) fields that store the milepost attributes of the UDOT state and federal routes in SGID10.Transportation.Roads were updated</li>
 <li>The DOT_RTID field that stores UDOT's unique numeric route identifiers was updated</li>
 </ul>
-</ul>
 <p><span style="text-decoration: underline;">Topology Improvements:</span></p>
 <ul>
 <li><strong>Utah:</strong> geocoding improvements</li>

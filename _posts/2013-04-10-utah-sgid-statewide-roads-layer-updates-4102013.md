@@ -48,7 +48,6 @@ tags:
 <li><strong>Salt Lake:</strong> Received Salt Lake City's centerline update 3/5/2013: added new roads; geocoding improvements</li>
 <li><strong>Utah:</strong> Received centerline update 3/27/2013: added new roads; geocoding improvements</li>
 </ul>
-</ul>
 <p><span style="text-decoration: underline;">Updates Based on County Master Address List (MAL) Submissions:</span></p>
 <ul>
 <li><strong>Carbon:</strong> geocoding improvements</li>

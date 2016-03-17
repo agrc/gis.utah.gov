@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: 'Mapping Spotlight: Salt Lake City Geoportal'
 author:
   display_name: jpechmann

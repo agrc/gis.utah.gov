@@ -53,7 +53,7 @@ tags:
 <ul>
 <li><strong>Salt Lake:</strong> Received VECC’s centerline update 2/20/2014: added new roads and incorporated changes since the last update on 1/8/2014; geocoding improvements</li>
 <li><strong>Utah:</strong> Received centerline update 2/24/2014: added new roads; geocoding improvements</li>
-<li><strong>Wasatch:</strong> Received centerline update 1/24/2014: added new roads, road names, and address ranges; geocoding improvements
+<li><strong>Wasatch:</strong> Received centerline update 1/24/2014: added new roads, road names, and address ranges; geocoding improvements</li>
 <li><strong>Washington:</strong> Received centerline update 2/28/2014: added new roads; geocoding improvements</li>
 <li><strong>Weber:</strong> Received centerline update 2/26/2014: added new roads and incorporated changes since the last update on 1/6/2014; geocoding improvements</li>
 </ul>
@@ -69,6 +69,4 @@ tags:
 <ul>
 <li>The DOT_F_MP (From Milepost) and DOT_T_MP (To Milepost) fields that store the milepost attributes of the UDOT state and federal routes in SGID10.Transportation.Roads were updated</li>
 <li>The DOT_RTID field that stores UDOT's unique numeric route identifiers was updated</li>
-</ul>
-</ul>
 </ul>

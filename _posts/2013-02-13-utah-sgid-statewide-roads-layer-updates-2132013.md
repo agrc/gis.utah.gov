@@ -37,8 +37,6 @@ tags: []
 <li>The DOT_F_MP (From Milepost) and DOT_T_MP (To Milepost) fields that store the milepost attributes of the UDOT state and federal routes in SGID93/10.Transportation.Roads were updated</li>
 <li>The DOT_RTID field that stores UDOT's unique numeric route identifiers was updated</li>
 </ul>
-</ul>
-</ul>
 <p><span style="text-decoration: underline;">Blue Stakes of Utah Feedback:</span></p>
 <ul>
 <li><strong>Duchesne:</strong> geocoding improvements</li>

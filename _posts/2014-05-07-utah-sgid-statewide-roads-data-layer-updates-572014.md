@@ -52,8 +52,8 @@ tags:
 <p><span style="text-decoration: underline;">County Updates:</span></p>
 <ul>
 <li><strong>Daggett:</strong> Received centerline update 4/8/2014: added new roads, road names, and address ranges; geocoding improvements</li>
-<li><strong>Duchesne:</strong> Received centerline update 4/7/2014: added new roads, road names, and address ranges; geocoding improvements
-<li><strong>Grand:</strong> Received centerline update from Moab City, October 2013: added new roads, road names, address ranges; geocoding improvements
+<li><strong>Duchesne:</strong> Received centerline update 4/7/2014: added new roads, road names, and address ranges; geocoding improvements</li>
+<li><strong>Grand:</strong> Received centerline update from Moab City, October 2013: added new roads, road names, address ranges; geocoding improvements</li>
 <li><strong>Salt Lake:</strong> Received VECC's centerline update 4/30/2014: added new roads since the last update on 3/26/2014; geocoding improvements</li>
 <li><strong>Uintah:</strong> Received centerline update 4/22/2014: added new roads, road names, and address ranges; geocoding improvements</li>
 <li><strong>Utah:</strong> Received centerline update 4/30/2014: added new roads since the last update on 3/27/2014; geocoding improvements</li>
@@ -70,6 +70,4 @@ tags:
 <ul>
 <li>The DOT_F_MP (From Milepost) and DOT_T_MP (To Milepost) fields that store the milepost attributes of the UDOT state and federal routes in SGID10.Transportation.Roads were updated</li>
 <li>The DOT_RTID field that stores UDOT's unique numeric route identifiers was updated</li>
-</ul>
-</ul>
 </ul>

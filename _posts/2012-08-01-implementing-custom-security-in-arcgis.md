@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: Implementing custom security in ArcGIS
 author:
   display_name: Steve Gourley
