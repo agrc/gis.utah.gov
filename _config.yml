@@ -36,5 +36,6 @@ exclude: [
     "Gemfile",
     "GruntFile.js",
     "bower.json",
-    "package.json"
+    "package.json",
+    "*.bak"
 ]
