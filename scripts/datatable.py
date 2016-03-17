@@ -84,7 +84,6 @@ layout: page
 status: publish
 title: SGID Index
 ---
-<script src="{{{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}}}"></script>
 <span id='show_filters' class='pointer'>Show Filters</span>
 <div id='filters' class='hidden'>{}</div>
 <div id='table' class='datatable'>
@@ -111,7 +110,7 @@ title: SGID Index
         </tbody>
     </table>
 </div>
-
+<script src="{{{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}}}"></script>
 <script>
     var options = {
     valueNames: [ 'name', 'category', 'agency', 'description' ]
