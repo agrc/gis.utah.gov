@@ -274,6 +274,9 @@ def get_unique_tags(content, tags):
 def update_inline_text_left(content):
   return re.sub(r'class=[\"\']alignright(.*?)["\']', 'class="inline-text-left"', content)
 
+def update_inline_text_right(content):
+  return re.sub(r'class=[\"\']alignleft(.*?)["\']', 'class="inline-text-right"', content)
+
 def one_offs(walk_dir):
   print('walk_dir = ' + walk_dir)
   print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
@@ -298,6 +301,7 @@ def one_offs(walk_dir):
               file_content = []
               for line_content in original.readlines():
                   replaced = update_inline_text_left(line_content)
+                  replaced = update_inline_text_right(line_content)
 
                   file_content.append(replaced)
 
