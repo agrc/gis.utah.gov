@@ -29,3 +29,22 @@ svg.logo {
 .productImage-Thumb {
     border: .08em solid darken($brand-color, 10%);
 }
+.data-thumb {
+    width: 90px;
+    height: 90px;
+}
+.item-thumb {
+    width: 300px;
+    height: 150px;
+}
+.website-thumb {
+    width: 300px;
+    height: 222px;
+}
+.b-lazy {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    &.b-loaded {
+        opacity: 1;
+    }
+}
