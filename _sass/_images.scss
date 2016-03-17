@@ -41,3 +41,10 @@ svg.logo {
     width: 300px;
     height: 222px;
 }
+.b-lazy {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    &.b-loaded {
+        opacity: 1;
+    }
+}
