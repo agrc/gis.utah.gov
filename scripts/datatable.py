@@ -83,7 +83,6 @@ def create(data):
 layout: page
 status: publish
 title: SGID Index
-permalink: /data/sgid-index
 ---
 <script src="{{{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}}}"></script>
 <span id='show_filters' class='pointer'>Show Filters</span>
@@ -187,7 +186,7 @@ if __name__ == '__main__':
     data = filter(lambda x: len(x['name']) > 0, data)
     html = create(data)
 
-    file_path = join(dirname(__file__), '..', 'datatable.html')
+    file_path = join(dirname(__file__), '..', 'data', 'sgid-index', 'index.html')
 
     with open(file_path + '.bak', 'wb') as data:
         data.writelines(html)
