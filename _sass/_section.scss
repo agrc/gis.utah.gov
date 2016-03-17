@@ -62,5 +62,16 @@
 
 .main {
     padding: 0 $spacing-unit;
+    color: #fff;
+    background-color: #000;
+    background-image: url("/images/backgrounds/bg-large.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    border-top: .08em solid $brand-color;
     border-bottom: .08em solid $highlight-color;
+    .main-heading {
+        font-weight: 400;
+        color: $brand-color;
+    }
 }
