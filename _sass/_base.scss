@@ -46,7 +46,7 @@ dd {
 
 
 // Headings
-h1,h2,h3 {
+h1,h2,h3,h4,h5,h6 {
     padding-top: .5em;
     margin: 0 0 1em;
     font-size: 2.65em;
@@ -59,12 +59,22 @@ h2 {
     font-size: 2em;
 }
 h3 {
-    margin-bottom: 15px;
+    margin-bottom: .6em;
     font-size: 1.6em;
 }
 h4 {
     margin-bottom: .3em;
     font-size: 1.4em;
+    text-align: left;
+}
+h5 {
+    margin-bottom: .2em;
+    font-size: 1.3em;
+    text-align: left;
+}
+h6 {
+    margin-bottom: .1em;
+    font-size: 1.2em;
     text-align: left;
 }
 
@@ -169,4 +179,10 @@ code {
 }
 .text-left {
     text-align: left;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
 }

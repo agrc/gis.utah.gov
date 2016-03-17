@@ -25,9 +25,6 @@ a:hover > i {
     text-decoration: none;
 }
 
-
-// Page content
-
 .post {
     margin: 0 100px;
     @include media-query($on-small) {
@@ -85,27 +82,49 @@ a:hover > i {
 .post-content, .page-content {
     margin-bottom: $spacing-unit;
 
+    h1 {
+        @include media-query($on-large) {
+            font-size: 2.22em;
+        }
+        @include media-query($on-medium) {
+            font-size: 1.86em;
+        }
+        @include media-query($on-small) {
+            font-size: 1.56em;
+        }
+    }
     h2 {
-        font-size: 32px;
-
         @include media-query($on-large) {
-            font-size: 28px;
+            font-size: 1.67em;
+        }
+        @include media-query($on-medium) {
+            font-size: 1.4em;
+        }
+        @include media-query($on-small) {
+            font-size: 1.3em;
         }
     }
-
     h3 {
-        font-size: 26px;
-
         @include media-query($on-large) {
-            font-size: 22px;
+            font-size: 1.3em;
+        }
+        @include media-query($on-medium) {
+            font-size: 1.2em;
         }
     }
-
     h4 {
-        font-size: 20px;
-
-        @include media-query($on-large) {
-            font-size: 18px;
+        @include media-query($on-medium) {
+            font-size: 1.1em;
+        }
+    }
+    h5 {
+        @include media-query($on-medium) {
+            font-size: 1.05em;
+        }
+    }
+    h6 {
+        @include media-query($on-medium) {
+            font-size: 1em;
         }
     }
 
