@@ -5,6 +5,7 @@ layout: default
 
 {% if page.title %}
   <header class="post-header">
+    <p class='sub-title text-center muted'>By {{ page.author.display_name }} on {{ page.date | date: '%b %d, %Y' }}</p>
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
  {% endif %}
