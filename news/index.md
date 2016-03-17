@@ -3,7 +3,7 @@ layout: page
 title: Recent Posts
 ---
 
-#### AGRC's blog keeps partners informed on important GIS announcements in Utah. Blogposts cover important data updates, GIS tools, geospatial tips and tricks, as well as coordination opportunities and events. Blogposts are compiled into a monthly [newsletter]({{ "/agrc-newsletter" | prepend: site.baseurl }}). Signup for the newsletter at the bottom of any page on gis.utah.gov 
+#### AGRC's blog keeps partners informed on important GIS announcements in Utah. Blogposts cover important data updates, GIS tools, geospatial tips and tricks, as well as coordination opportunities and events. Blogposts are compiled into a monthly [newsletter]({{ "/agrc-newsletter" | prepend: site.baseurl }}). Subscribe to the newsletter at the bottom of any webpage on gis.utah.gov 
 
 <div class="grid">
 {% for post in site.posts %}
