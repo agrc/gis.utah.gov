@@ -46,10 +46,6 @@ The Southwest Utah User Group G5 consists of Geo-spatial technicians and special
 
 For more information, please contact David Evans: <david.evans@sgcity.org>.
 
-**Uintah Basin User Group**
-
-Unitah Basin User Group: UBUG consists of Geo-spatial technicians and specialists from State and Federal agencies, private organizations, Uintah, Daggett, Duchesne, and Wasatch Counties. It is open to anyone that would like to attend. This user group conducts quarterly meetings featuring trainings, discussions on GIS and other Geo-spatial applications and/or problems that those attending might need help with.
-
 **Utah Valley User Group**
 
 The Utah Valley GIS Users Group (UVGIS) is a community of GIS professionals, users and students located in Utah Valley and neighboring areas. The group meets quarterly and is an opportunity for networking, sharing data, exchanging ideas/solutions, and implementing GIS technologies.
