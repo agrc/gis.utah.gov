@@ -1,5 +1,6 @@
-import sys
 import gspread
+import sys
+import re
 from collections import OrderedDict
 from json import load, dumps
 from os import rename
@@ -38,12 +39,24 @@ def munge_data(item, i, indices):
 
         return '<a href="{{{{ "/{}" | prepend: site.baseurl }}}}">{}</a>'.format(url, utf8_encode(value))
 
+    def endpoint_link(value):
+        if value is None or len(value) == 0:
+            return ''
+
+        if ',' in value:
+            value = value.split(',')
+
+            return ''.join('<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value))
+
+        return '<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value)
+
     return OrderedDict([
         # ('type', utf8_encode(item[indices['data_type']])),
         ('category', utf8_encode(category)),
         ('name', should_link(name.replace('_', ' '))),
         ('agency', utf8_encode(item[indices['data_source']])),
-        ('description', utf8_encode(item[indices['description']]))
+        ('description', utf8_encode(item[indices['description']])),
+        ('service', endpoint_link(item[indices['endpoint']]))
     ])
 
 def get_sheet_data(gc, sheet_id, worksheet_id):
@@ -57,7 +70,8 @@ def get_sheet_data(gc, sheet_id, worksheet_id):
         'description': header.index('Description'),
         'data_source': header.index('Data Source'),
         'url': header.index('Website URL'),
-        'data_type': header.index('Data Type')
+        'data_type': header.index('Data Type'),
+        'endpoint': header.index('Endpoint')
     }
 
     return [munge_data(item, i, indices) for i, item in enumerate(data)]
@@ -101,7 +115,7 @@ permalink: /data/sgid-index
 
 <script>
     var options = {
-    valueNames: [ 'name', 'category', 'agency', 'contact', 'restrictions', 'governance' ]
+    valueNames: [ 'name', 'category', 'agency', 'description' ]
     };
 
     var filterNode = document.getElementById('filters');
