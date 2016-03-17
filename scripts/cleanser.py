@@ -271,11 +271,18 @@ def get_unique_tags(content, tags):
         if yml is not None and 'tags' in yml:
             [tags.add(tag) for tag in yml['tags']]
 
+def remove_shutter_set(content):
+    return re.sub(r'class=[\"\']shutterset_[\"\']', '', content)
+
 def update_inline_text_left(content):
-  return re.sub(r'class=[\"\']alignright(.*?)["\']', 'class="inline-text-left"', content)
+  return re.sub(r'class=[\"\'](.*?)alignright(.*?)["\']', 'class="inline-text-left"', content)
 
 def update_inline_text_right(content):
-  return re.sub(r'class=[\"\']alignleft(.*?)["\']', 'class="inline-text-right"', content)
+  return re.sub(r'class=[\"\'](.*?)alignleft(.*?)["\']', 'class="inline-text-right"', content)
+
+def fix_codes(content):
+    content = re.sub('\[code\]', '<code>', content)
+    return re.sub('\[\/code\]', '</code>', content)
 
 def one_offs(walk_dir):
   print('walk_dir = ' + walk_dir)
@@ -300,8 +307,10 @@ def one_offs(walk_dir):
           with open(file_path, 'r') as original, open(file_path + '.bak', 'w') as updated:
               file_content = []
               for line_content in original.readlines():
-                  replaced = update_inline_text_left(line_content)
-                  replaced = update_inline_text_right(line_content)
+                  replaced = remove_shutter_set(line_content)
+                  replaced = update_inline_text_left(replaced)
+                  replaced = update_inline_text_right(replaced)
+                  replaced = fix_codes(replaced)
 
                   file_content.append(replaced)
 
