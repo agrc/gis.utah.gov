@@ -1,6 +1,5 @@
 .caption {
     float: right;
-    width: 266px;
     padding-top: .2em;
     margin-bottom: .8em;
     margin-left: .8em;
@@ -10,6 +9,7 @@
 }
 
 .caption-text {
+    max-width: 350px;
     padding: .5em;
     padding-top: 0;
     margin: 0;

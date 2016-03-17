@@ -41,6 +41,10 @@ class TestCleanser(unittest.TestCase):
 
     self.assertEqual(cleanser.update_caption(test), valid)
 
+    test = '<p>[caption id="attachment_18156" align="alignright" width="300" caption="The pendulum swings back and forth..."]<a href="{{ "/downloads/Screen-Shot-2015-11-27-at-12.39.23-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-11-27-at-12.39.23-PM-300x220.png" | prepend: site.baseurl }}" alt="" title="The pendulum swings back and forth..." width="300" height="220" class="size-medium wp-image-18156" /></a>[/caption]</p>'
+    valid = '<div class="caption"><a href="{{ "/downloads/Screen-Shot-2015-11-27-at-12.39.23-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-11-27-at-12.39.23-PM-300x220.png" | prepend: site.baseurl }}" alt="" title="The pendulum swings back and forth..." width="300" height="220" class="size-medium wp-image-18156" /></a><p class="caption-text">The pendulum swings back and forth...</p></div>'
+
+    self.assertEqual(cleanser.update_caption(test), valid)
 
   def test_half_columns(self):
     test = '''<div class="grid"><div class="grid__col grid__col--1-of-2">

@@ -1,5 +1,6 @@
-import sys
 import gspread
+import sys
+import re
 from collections import OrderedDict
 from json import load, dumps
 from os import rename
@@ -38,14 +39,24 @@ def munge_data(item, i, indices):
 
         return '<a href="{{{{ "/{}" | prepend: site.baseurl }}}}">{}</a>'.format(url, utf8_encode(value))
 
+    def endpoint_link(value):
+        if value is None or len(value) == 0:
+            return ''
+
+        if ',' in value:
+            value = value.split(',')
+
+            return ''.join('<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value))
+
+        return '<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value)
+
     return OrderedDict([
         # ('type', utf8_encode(item[indices['data_type']])),
         ('category', utf8_encode(category)),
         ('name', should_link(name.replace('_', ' '))),
         ('agency', utf8_encode(item[indices['data_source']])),
         ('description', utf8_encode(item[indices['description']])),
-        ('restrictions', utf8_encode(item[indices['restrictions']])),
-        ('governance', utf8_encode(item[indices['agreement']])),
+        ('service', endpoint_link(item[indices['endpoint']]))
     ])
 
 def get_sheet_data(gc, sheet_id, worksheet_id):
@@ -59,27 +70,28 @@ def get_sheet_data(gc, sheet_id, worksheet_id):
         'description': header.index('Description'),
         'data_source': header.index('Data Source'),
         'url': header.index('Website URL'),
-        'restrictions': header.index('Use Restrictions'),
         'data_type': header.index('Data Type'),
-        'agreement': header.index('Governance/Agreement')
+        'endpoint': header.index('Endpoint')
     }
 
     return [munge_data(item, i, indices) for i, item in enumerate(data)]
 
 def create(data):
-    categories = set([x['category'] for x in data])
+    categories = list(set([x['category'] for x in data]))
+    categories.sort()
     html = '''---
 layout: page
 status: publish
 title: SGID Index
 permalink: /data/sgid-index
 ---
-<script src="{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}"></script>
+<script src="{{{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}}}"></script>
+<span id='show_filters' class='pointer'>Show Filters</span>
+<div id='filters' class='hidden'>{}</div>
 <div id='table' class='datatable'>
-    {}
     <input class="search" placeholder="Search Data" />
     <table>
-    '''.format(''.join(['<a href="#" class="btn">{}</a>'.format(x) for x in categories]))
+    '''.format(' | '.join(['<a id="filter_{0}">{0}</a>'.format(x) for x in categories if len(x) > 0]))
 
     once = True
     for item in data:
@@ -102,34 +114,63 @@ permalink: /data/sgid-index
 </div>
 
 <script>
-var options = {
-  valueNames: [ 'name', 'category', 'agency', 'contact', 'restrictions', 'governance' ]
-};
-
-var datatable = new List('table', options);
-
-function getParameterByName(name, url) {
-    if (!url) {
-        url = window.location.href;
-    }
-
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) {
-        return null
+    var options = {
+    valueNames: [ 'name', 'category', 'agency', 'description' ]
     };
-    if (!results[2]) {
-        return '';
+
+    var filterNode = document.getElementById('filters');
+    var togglerNode = document.getElementById('show_filters');
+    var datatable = new List('table', options);
+
+    function getParameterByName(name, url) {
+        if (!url) {
+            url = window.location.href;
+        }
+
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) {
+            return null
+        };
+        if (!results[2]) {
+            return '';
+        }
+
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
+    var category = getParameterByName('category');
+    if (category){
+        datatable.search(category, ['category']);
+    }
 
-var category = getParameterByName('category');
-if (category){
-    datatable.search(category, ['category']);
-}
+    var filterCategories = function(e) {
+        if (!e && !e.target) {
+            return;
+        }
+
+        var clicked = e.target.id;
+
+        var category = clicked.split('_')[1];
+
+        if (category){
+            datatable.search(category, ['category']);
+        }
+    };
+
+    var toggleCategories = function() {
+        if ((' ' + filterNode.classList + ' ').indexOf('hidden') >= 0) {
+            filterNode.classList.remove('hidden');
+            togglerNode.innerHTML = 'Hide Filters';
+        } else {
+            filterNode.classList.add('hidden');
+            togglerNode.innerHTML = 'Show Filters';
+        }
+    };
+
+    filterNode.addEventListener('click', filterCategories);
+    togglerNode.addEventListener('click', toggleCategories);
 </script>
 '''
 
@@ -143,7 +184,9 @@ if __name__ == '__main__':
 
     data = get_sheet_data(gc, '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ', 'SGID Stewardship Info')
 
+    data = filter(lambda x: len(x['name']) > 0, data)
     html = create(data)
+
     file_path = join(dirname(__file__), '..', 'datatable.html')
 
     with open(file_path + '.bak', 'wb') as data:

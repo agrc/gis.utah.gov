@@ -10,11 +10,10 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
-    <link rel="shortcut icon" href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/favicon.ico?" | prepend: site.baseurl }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Sitewide ATOM Feed">
     <link rel="alternate" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" rel="alternate" title="{{ site.title }} Sitewide RSS Feed">
-    <script src="{{ "/bower_components/holderjs/holder.min.js" | prepend: site.baseurl }}"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -130,7 +129,7 @@
                 </div>
             </div>
             <div class="grid__col grid__col--1-of-2">
-                <h3>Social</h3>
+                <h3>Let's Connect</h3>
                 <ul class="social-media-list">
                     {% if site.github_username %}
                     <li>

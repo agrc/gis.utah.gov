@@ -30,9 +30,12 @@ exclude: [
     "scripts/cleanser.pyc",
     "scripts/datatable.py",
     "scripts/datatable.pyc",
+    "scripts/tests.py",
+    "scripts/tests.pyc",
     "Gemfile.lock",
     "Gemfile",
     "GruntFile.js",
     "bower.json",
-    "package.json"
+    "package.json",
+    "*.bak"
 ]

@@ -3,22 +3,6 @@ module.exports = function (grunt) {
     // Project configuration
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
-        'gh-pages': {
-            options: {
-                base: '.'
-            },
-            src: [
-                '**/*',
-                '!node_modules/**',
-                '!scripts/**',
-                '!GruntFile.js',
-                '!Gemfile*',
-                '!package.json',
-                '!_site/**',
-                '!_config.github.io.yml',
-                '!_config.yml_'
-            ]},
         htmlmin: {
             main: {
                 options: {
@@ -146,10 +130,9 @@ module.exports = function (grunt) {
         'jekyll:main'
     ]);
 
-    grunt.registerTask('publish', [
+    grunt.registerTask('gh-pages', [
         'newer:imagemin',
         'replace:githubioConfig',
-        'replace:githubioFontAwesome',
-        'gh-pages'
+        'replace:githubioFontAwesome'
     ]);
 };

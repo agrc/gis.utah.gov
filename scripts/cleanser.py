@@ -6,7 +6,7 @@ import re
 def replace(walk_dir):
   print('walk_dir = ' + walk_dir)
   print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
-  tags = set([])
+
   for root, subdirs, files in os.walk(walk_dir):
       if (root.startswith(walk_dir + 'images') or
          root.startswith(walk_dir + '_site') or
@@ -41,12 +41,9 @@ def replace(walk_dir):
                   file_content.append(replaced)
 
               replaced = update_tabs(file_content)
-              get_unique_tags(replaced, tags)
               updated.write(replaced)
 
           os.rename(file_path + '.bak', file_path)
-
-  print(tags)
 
 def update_image_url(content):
   return re.sub(r'src=[\"\']http:\/\/gis\.utah\.gov\/wp-content\/uploads\/(.*?)["\']',
@@ -80,16 +77,16 @@ def update_data_download_button(content):
 
 def update_caption(content):
   try:
-    replace = re.sub(r'<p>\[caption id=.*? caption=\"(.*?)\".*?\](.*?/>)\[/caption\]<\/p>',
+    replace = re.sub(r'(?:<p>)?\[caption id=.*? caption=\"(.*?)\".*?\](.*?)\[\/caption](?:<\/p>)?',
                       '<div class="caption">\g<2><p class="caption-text">\g<1></p></div>',
-                      content)
+                      content, flags=re.S)
   except:
     #: handle captions with no caption..... ....
     pass
 
-  return re.sub(r'<p>\[caption id=.*?\](.*?/>)\[/caption\]<\/p>',
+  return re.sub(r'<p>\[caption id=.*?\](.*?/>)\[\/caption\]<\/p>',
                     '<div class="caption">\g<1></div>',
-                    replace)
+                    replace, flags=re.S)
 
 def update_columns(content):
   replaced = re.sub(r'<p>\[one_half\]<\/p>',
@@ -274,5 +271,54 @@ def get_unique_tags(content, tags):
         if yml is not None and 'tags' in yml:
             [tags.add(tag) for tag in yml['tags']]
 
+def remove_shutter_set(content):
+    return re.sub(r'class=[\"\']shutterset_[\"\']', '', content)
+
+def update_inline_text_left(content):
+  return re.sub(r'class=[\"\'](.*?)alignright(.*?)["\']', 'class="inline-text-left"', content)
+
+def update_inline_text_right(content):
+  return re.sub(r'class=[\"\'](.*?)alignleft(.*?)["\']', 'class="inline-text-right"', content)
+
+def fix_codes(content):
+    content = re.sub('\[code\]', '<code>', content)
+    return re.sub('\[\/code\]', '</code>', content)
+
+def one_offs(walk_dir):
+  print('walk_dir = ' + walk_dir)
+  print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
+
+  for root, subdirs, files in os.walk(walk_dir):
+      if (root.startswith(walk_dir + 'images') or
+         root.startswith(walk_dir + '_site') or
+         root.startswith(walk_dir + 'downloads') or
+         root.startswith(walk_dir + '.grunt')):
+          continue
+
+      for filename in files:
+          _, extension = os.path.splitext(filename)
+          if extension.lower() not in ['.html']:
+              continue
+
+          file_path = os.path.join(root, filename)
+
+          print('\t- file %s (full path: %s)' % (filename, file_path))
+
+          with open(file_path, 'r') as original, open(file_path + '.bak', 'w') as updated:
+              file_content = []
+              for line_content in original.readlines():
+                  replaced = remove_shutter_set(line_content)
+                  replaced = update_inline_text_left(replaced)
+                  replaced = update_inline_text_right(replaced)
+                  replaced = fix_codes(replaced)
+
+                  file_content.append(replaced)
+
+              replaced = update_caption(''.join(file_content))
+              updated.write(replaced)
+
+          os.rename(file_path + '.bak', file_path)
+
 if __name__ == '__main__':
-    replace(sys.argv[1])
+    # replace(sys.argv[1])
+    one_offs(sys.argv[1])
