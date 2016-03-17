@@ -5,8 +5,10 @@ import cleanser
 class TestCleanser(unittest.TestCase):
 
   def test_update_image_url(self):
-    # self.fail('write a test')
-    pass
+    test = '<p>[image title="Students watch a portion of "The Geospatial Revolution" to learn about GIS." size="medium" align="left" icon="zoom" lightbox="true" quality="100"]/gallery/agrc-general/gis_day_slcc_2011.jpg[/image]For'
+    valid = '<p><img src="{{ "/images/gallery/agrc-general/gis_day_slcc_2011.jpg" | prepend: site.baseurl }}" class="inline-text-left" />For'
+
+    self.assertEqual(cleanser.update_image_tag(test), valid)
 
   def test_update_gallery_links(self):
     # self.fail('write a test')

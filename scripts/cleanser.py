@@ -50,6 +50,14 @@ def update_image_url(content):
                 'src="{{ "/images/\g<1>" | prepend: site.baseurl }}"',
                 content)
 
+def update_image_tag(content):
+    content = re.sub('(?:\[image.*?\])(.*?)\[\/image\]',
+                 '<img src="{{ "/images\g<1>" | prepend: site.baseurl }}" class="inline-text-left" />',
+                 content)
+    return re.sub('(?:\[image.*?).*?source_value=\"(.*?)\".*?\]',
+                  '<img src="\g<1>" />',
+                  content)
+
 def update_gallery_links(content):
   return re.sub(r'src=[\"\']http:\/\/gis\.utah\.gov\/gallery\/(.*?)["\']',
                 'src="{{ "/images/gallery/\g<1>" | prepend: site.baseurl }}"',
@@ -310,6 +318,7 @@ def one_offs(walk_dir):
                   replaced = remove_shutter_set(line_content)
                   replaced = update_inline_text_left(replaced)
                   replaced = update_inline_text_right(replaced)
+                  replaced = update_image_tag(replaced)
                   replaced = fix_codes(replaced)
 
                   file_content.append(replaced)
