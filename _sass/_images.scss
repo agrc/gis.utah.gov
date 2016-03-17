@@ -2,6 +2,10 @@
     float: left;
     margin-right: .5em;
 }
+.inline-text-right {
+    float: right;
+    margin-left: .5em;
+}
 .dots {
     fill: $highlight-color;
 }
