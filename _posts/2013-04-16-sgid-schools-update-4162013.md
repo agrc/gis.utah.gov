@@ -4,12 +4,12 @@ status: publish
 published: true
 title: SGID Schools Update 4/16/2013
 author:
-  display_name: kgreen
+  display_name: Data Queen
   login: kgreen
-  email: kkgreen@utah.gov
+  email: agrc@utah.gov
   url: ''
 author_login: kgreen
-author_email: kkgreen@utah.gov
+author_email: agrc@utah.gov
 wordpress_id: 13130
 wordpress_url: http://gis.utah.gov/?p=13130
 date: '2013-04-16 17:19:14 -0600'

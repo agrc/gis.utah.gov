@@ -2,11 +2,10 @@
 layout: page
 status: publish
 title: SGID Index
-permalink: /data/sgid-index
 ---
 <script src="{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}"></script>
 <span id='show_filters' class='pointer'>Show Filters</span>
-<div id='filters' class='hidden'><a id="filter_basemap">basemap</a> | <a id="filter_bioscience">bioscience</a> | <a id="filter_boundaries">boundaries</a> | <a id="filter_cadastre">cadastre</a> | <a id="filter_climate">climate</a> | <a id="filter_demographic">demographic</a> | <a id="filter_economy">economy</a> | <a id="filter_elevation">elevation</a> | <a id="filter_energy">energy</a> | <a id="filter_environment">environment</a> | <a id="filter_farming">farming</a> | <a id="filter_geoscience">geoscience</a> | <a id="filter_health">health</a> | <a id="filter_history">history</a> | <a id="filter_imagery">imagery</a> | <a id="filter_indices">indices</a> | <a id="filter_location">location</a> | <a id="filter_planning">planning</a> | <a id="filter_political">political</a> | <a id="filter_raster">raster</a> | <a id="filter_recreation">recreation</a> | <a id="filter_society">society</a> | <a id="filter_transportation">transportation</a> | <a id="filter_utilities">utilities</a> | <a id="filter_water">water</a></div>
+<div id='filters' class='hidden'><a id="filter_basemap">basemap</a> | <a id="filter_bioscience">bioscience</a> | <a id="filter_boundaries">boundaries</a> | <a id="filter_cadastre">cadastre</a> | <a id="filter_climate">climate</a> | <a id="filter_demographic">demographic</a> | <a id="filter_economy">economy</a> | <a id="filter_elevation">elevation</a> | <a id="filter_energy">energy</a> | <a id="filter_environment">environment</a> | <a id="filter_farming">farming</a> | <a id="filter_geoscience">geoscience</a> | <a id="filter_health">health</a> | <a id="filter_history">history</a> | <a id="filter_indices">indices</a> | <a id="filter_indicies">indicies</a> | <a id="filter_location">location</a> | <a id="filter_planning">planning</a> | <a id="filter_political">political</a> | <a id="filter_raster">raster</a> | <a id="filter_recreation">recreation</a> | <a id="filter_society">society</a> | <a id="filter_transportation">transportation</a> | <a id="filter_utilities">utilities</a> | <a id="filter_water">water</a></div>
 <div id='table' class='datatable'>
     <input class="search" placeholder="Search Data" />
     <table>
@@ -1521,6 +1520,20 @@ permalink: /data/sgid-index
             </tr>
             <tr>
                 <td data-th="category" class="category">environment</td>
+                <td data-th="name" class="name">DWQNPDESDischargers</td>
+                <td data-th="agency" class="agency">DEQ</td>
+                <td data-th="description" class="description">Locations of Utah's National Pollution Elimintation Discharge System (NPDES) permit holders and the waters of the state, if any, they discharge to. Data provided by the EPA and the Utah Division of Water Quality.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">environment</td>
+                <td data-th="name" class="name">EnvironmentalIncidents</td>
+                <td data-th="agency" class="agency">DEQ</td>
+                <td data-th="description" class="description">This dataset contains the incident information submitted to the Division of Environmental Response and Remediation and to after-hours duty officers, and is provided as a service to the public.  Locations are based on coordinates derived from maps and GPS data.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">environment</td>
                 <td data-th="name" class="name"><a href="{{ "/data/environment/deq-land-related-contaminant-cleanup-sites/" | prepend: site.baseurl }}">EWA</a></td>
                 <td data-th="agency" class="agency">DEQ</td>
                 <td data-th="description" class="description">Locations of potential Enforceable Written Assurance sites. EWAs will generally ensure to property owners or prospective property owners that there is no unacceptable risk to human health or the environment.</td>
@@ -1608,6 +1621,13 @@ permalink: /data/sgid-index
                 <td data-th="name" class="name"><a href="{{ "/data/environment/deq-land-related-contaminant-cleanup-sites/" | prepend: site.baseurl }}">TRI</a></td>
                 <td data-th="agency" class="agency">DEQ</td>
                 <td data-th="description" class="description">TRI EPA database containing data on disposal or release of toxic chemicals</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">environment</td>
+                <td data-th="name" class="name">UICFacility</td>
+                <td data-th="agency" class="agency">DEQ</td>
+                <td data-th="description" class="description">This dataset represents facilities that have one or more wells regulated by the Underground Injection Control (UIC) Program in the Division of Water Quality.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -1976,6 +1996,13 @@ permalink: /data/sgid-index
             </tr>
             <tr>
                 <td data-th="category" class="category">health</td>
+                <td data-th="name" class="name"><a href="{{ "/data/health/health-care-facilities/" | prepend: site.baseurl }}">EMSFacilities</a></td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Point locations created for use by public safety and other agencies that need to know the location of emergency medical response units for effective planning and dispatch.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">health</td>
                 <td data-th="name" class="name"><a href="{{ "/data/health/emergency-service-areas/" | prepend: site.baseurl }}">EMSServiceAreas</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Emergency medical service areas</td>
@@ -2032,6 +2059,13 @@ permalink: /data/sgid-index
             </tr>
             <tr>
                 <td data-th="category" class="category">history</td>
+                <td data-th="name" class="name"><a href="{{ "/data/history/" | prepend: site.baseurl }}">ArchaeologySites</a></td>
+                <td data-th="agency" class="agency">UTSHPO AGRC</td>
+                <td data-th="description" class="description">Polygons denoting the presence/absence of recorded archaeological sites across Utah.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">history</td>
                 <td data-th="name" class="name"><a href="{{ "/data/history/" | prepend: site.baseurl }}">HistoricDistricts</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Historic districts</td>
@@ -2049,20 +2083,6 @@ permalink: /data/sgid-index
                 <td data-th="name" class="name">PonyExpress</td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Pony express</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">imagery</td>
-                <td data-th="name" class="name">HighRes</td>
-                <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description">High resolution aerial photography</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">imagery</td>
-                <td data-th="name" class="name">NAIP</td>
-                <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description">National Agricultural Imagery Program aerial photography coverage</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -2181,7 +2201,35 @@ permalink: /data/sgid-index
                 <td data-th="category" class="category">indices</td>
                 <td data-th="name" class="name"><a href="{{ "/data/sgid-indices/aerial-photography-indices/" | prepend: site.baseurl }}">DOQ Quads Outline</a></td>
                 <td data-th="agency" class="agency">AGRC</td>
-                <td data-th="description" class="description">1990's Digital Orthophoto Quad coverage</td>
+                <td data-th="description" class="description">1990's Digital Orthophoto Quad coverage.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">Google GCP</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Boundaries and dates of the Google imagery flight blocks.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">Google Mosaics</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Boundaries of the mosaics created from the Google imagery.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indicies</td>
+                <td data-th="name" class="name">Google Tiles</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Tile index of the Google imagery jp2 image tiles.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">Google UtahServiceDates</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Boundaries and dates of the imagery blocks in the Google imagery service.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -2213,6 +2261,13 @@ permalink: /data/sgid-index
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
+                <td data-th="category" class="category">indicies</td>
+                <td data-th="name" class="name">HRO2012</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Boundaries of the HRO2012 6 inch (12.5cm) 3-band orthoimagery tiles.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
                 <td data-th="category" class="category">indices</td>
                 <td data-th="name" class="name"><a href="{{ "/data/sgid-indices/aerial-photography-indices/" | prepend: site.baseurl }}">HRO2012 4 Band</a></td>
                 <td data-th="agency" class="agency">AGRC</td>
@@ -2224,6 +2279,13 @@ permalink: /data/sgid-index
                 <td data-th="name" class="name"><a href="{{ "/data/sgid-indices/aerial-photography-indices/" | prepend: site.baseurl }}">HRO2012 4 Band Outline</a></td>
                 <td data-th="agency" class="agency">AGRC</td>
                 <td data-th="description" class="description">2012 High Resolution Orthophotography coverage</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">HRO2012 Outline</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Extent of the HRO2012 6 inch (12.5cm) 3-band color orthoimagery tiles.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -2335,7 +2397,14 @@ permalink: /data/sgid-index
                 <td data-th="category" class="category">indices</td>
                 <td data-th="name" class="name"><a href="{{ "/data/sgid-indices/lidar-indices/" | prepend: site.baseurl }}">LiDAR2006 Raw Tiles</a></td>
                 <td data-th="agency" class="agency">AGRC</td>
-                <td data-th="description" class="description">Tile index</td>
+                <td data-th="description" class="description">Boundaries of the 2006 1, 1.25 and 2 meter raw XYZi LiDAR .asc tiles.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">LiDAR2013 2014 50cm WasatchFront DSM Tiles</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description"></td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -2641,6 +2710,20 @@ permalink: /data/sgid-index
             </tr>
             <tr>
                 <td data-th="category" class="category">location</td>
+                <td data-th="name" class="name"><a href="{{ "/data/location/" | prepend: site.baseurl }}">CitiesTownsLocations</a></td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Points representing municipalities, county seats, populated areas, and major junctions for general reference and cartographic purposes.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">location</td>
+                <td data-th="name" class="name">HexagonGrid 1km</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Quarter square mile hexagons useful for generalizing data.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">location</td>
                 <td data-th="name" class="name"><a href="{{ "/data/location/gnis/" | prepend: site.baseurl }}">PlaceNamesGNIS1990</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">USGS Geographic Names Information Systems (1990)</td>
@@ -2665,6 +2748,20 @@ permalink: /data/sgid-index
                 <td data-th="name" class="name"><a href="{{ "/data/location/u-s-postal-service/" | prepend: site.baseurl }}">ZipCodePOBoxes</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Approximate locations of USPS Post Offices</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">location</td>
+                <td data-th="name" class="name">ZipPlus4Lines</td>
+                <td data-th="agency" class="agency">USTC</td>
+                <td data-th="description" class="description">This dataset estimates the approximate boundaries (lines) of Zip +4 geographic extents for Utah.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">location</td>
+                <td data-th="name" class="name">ZipPlus4Points</td>
+                <td data-th="agency" class="agency">USTC</td>
+                <td data-th="description" class="description">This dataset estimates the approximate boundaries (points) of Zip +4 geographic extents for Utah.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>

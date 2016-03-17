@@ -292,6 +292,12 @@ def fix_codes(content):
     content = re.sub('\[code\]', '<code>', content)
     return re.sub('\[\/code\]', '</code>', content)
 
+def fix_contacts(content):
+    content = re.sub('display_name: kgreen', 'display_name: Data Queen', content)
+    content = re.sub('kkgreen@utah\.gov', 'agrc@utah.gov', content)
+    content = re.sub('801\.537\.9079', '801.538.3665', content)
+    return re.sub('Kelly Green', 'someone', content)
+
 def one_offs(walk_dir):
   print('walk_dir = ' + walk_dir)
   print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
@@ -320,6 +326,7 @@ def one_offs(walk_dir):
                   replaced = update_inline_text_right(replaced)
                   replaced = update_image_tag(replaced)
                   replaced = fix_codes(replaced)
+                  replaced = fix_contacts(replaced)
 
                   file_content.append(replaced)
 

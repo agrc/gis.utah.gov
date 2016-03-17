@@ -4,12 +4,12 @@ status: publish
 published: true
 title: Utah SGID Statewide Roads Layer Updates 6/5/2013
 author:
-  display_name: kgreen
+  display_name: Data Queen
   login: kgreen
-  email: kkgreen@utah.gov
+  email: agrc@utah.gov
   url: ''
 author_login: kgreen
-author_email: kkgreen@utah.gov
+author_email: agrc@utah.gov
 wordpress_id: 13244
 wordpress_url: http://gis.utah.gov/?p=13244
 date: '2013-06-05 17:15:53 -0600'

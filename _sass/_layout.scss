@@ -32,10 +32,6 @@ a:hover > i {
     }
 }
 
-.page-heading {
-    font-size: 20px;
-}
-
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -62,8 +58,12 @@ a:hover > i {
 
 
 // Posts
-.post-header {
+.post-header, .page-header {
     margin-bottom: $spacing-unit;
+}
+
+.page-header {
+    margin-top: 1em;
 }
 
 .post-title {
