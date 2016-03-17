@@ -24,9 +24,10 @@ tags: []
 <p><img src="http://i.imgur.com/cj0bkMk.png" alt="accounts page"></p>
 <h3 id="-travis-yml">.travis.yml</h3>
 <p>The next step is to let Travis-CI know what you want it to do. The first part of this step is accomplished by creating a <a href="http://docs.travis-ci.com/user/build-configuration/">.travis.yml file</a> at the root of your project. Here&#39;s an example from one of our projects:</p>
-<pre><code class="lang-yml">language: node_js
+
+```
 node_js:
-  - &#39;0.10&#39;
+  - "0.10"
 before_install:
   - npm install -g grunt-cli
   - npm install -g bower
@@ -35,23 +36,26 @@ before_install:
 notifications:
   email:
     on_success: never
-</code></pre>
+```
+
 <p>The lines below before_install load all of the project dependencies via npm &amp; Bower. The notifications code just tells Travis to only send us emails when a build fails.</p>
 <h3 id="package-json">package.json</h3>
 <p>The second part to defining what you want Travis-CI to do is to add a scripts property to the your package.json file for your project. Travis-CI automatically runs npm test for NodeJS projects. Adding this new property to package.json defines this command. We use a special travis <a href="http://gruntjs.com/">GruntJS</a> task to run tasks so this is the command for us:</p>
-<pre><code class="lang-json">&quot;scripts&quot;: {
-    &quot;test&quot;: &quot;grunt travis -v&quot;
+```
+"scripts": {
+    "test": "grunt travis -v"
 }
-</code></pre>
+```
 <p>The travis grunt task can contain any sub-tasks that you want. Here&#39;s what ours looks like:</p>
-<pre><code class="lang-javascript">grunt.registerTask(<span class="hljs-string">'travis'</span>, [
-    <span class="hljs-string">'if-missing:esri_slurp:travis'</span>,
-    <span class="hljs-string">'jshint'</span>,
-    <span class="hljs-string">'connect'</span>,
-    <span class="hljs-string">'jasmine:app'</span>,
-    <span class="hljs-string">'build-prod'</span>
+```js
+grunt.registerTask('travis', [
+    'if-missing:esri_slurp:travis',
+    'jshint',
+    'connect',
+    'jasmine:app',
+    'build-prod'
 ]);
-</code></pre>
+```
 <h3 id="build-status-badge">Build Status Badge</h3>
 <p>The icing on the cake is to copy code from Travis-CI to your app&#39;s README.md to show a &quot;build:passing&quot; or &quot;build:failing&quot; (gasp!) badge. You can do this by going to your project&#39;s page on travis-ci.org and clicking on the badge in the upper right-hand corner of the page.</p>
 <h3 id="github-com-integration">GitHub.com Integration</h3>

@@ -28,8 +28,8 @@ tags:
 <p>
 At the beginning of the year, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial photography [<a href="{{ "/utah-acquires-high-resolution-aerial-photography-license/" | prepend: site.baseurl }}">more info</a>]. The license will allow Utah's <strong><em>cities, counties, special districts, state agencies, K12/Higher ed, and tribes</em></strong> to use this imagery in web and desktop mapping applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is <strong><em>use by contractors and formal partners of the immediate licensees</strong></em>.</p>
 <p>The imagery web services will be hosted in Google's cloud and delivered via WMS and WTMS standards and the downloadable files will be obtainable through AGRC who will have a master set of the raw imagery files.</p>
-<p><a href="{{ "/downloads/Diverging-Diamond-Interchange-Google-Imagery.png" | prepend: site.baseurl }}"><img src="{{ "/images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png" | prepend: site.baseurl }}" alt="" title="Click to enlarge" width="800" height="227" class="inline-text-left" /></a></p>
-<p><br><br />
+<p><a href="{{ "/downloads/Diverging-Diamond-Interchange-Google-Imagery.png" | prepend: site.baseurl }}"><img src="{{ "/images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png" | prepend: site.baseurl }}" alt="" title="Click to enlarge" width="800" height="227" class="" /></a></p>
+<p>
 <strong>Update:</strong></p>
 <p>
 AGRC is now ready to provide access to the licensed imagery services. Each qualified entity will need to complete an <a href="https://docs.google.com/a/utah.gov/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/viewform"><strong>Organizational Usage Agreement</strong></a> to access the imagery. The Agreement covers terms of the license and important informational items that should be communicated. Spend some time with the fine print within the Agreement as it is important that everyone understand the details, including, but not limited to the importance of understanding datum transformation.</p>

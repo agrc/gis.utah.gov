@@ -26,7 +26,7 @@ tags:
 - addresses
 - find
 ---
-<p><a href="{{ "/downloads/Screen-Shot-2015-02-12-at-6.49.06-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-02-12-at-6.49.06-PM.png" | prepend: site.baseurl }}" alt="" title="Screen Shot 2015-02-12 at 6.49.06 PM" width="219" height="266" class="inline-text-left" /></a><br />
+<p><a href="{{ "/downloads/Screen-Shot-2015-02-12-at-6.49.06-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-02-12-at-6.49.06-PM.png" | prepend: site.baseurl }}" alt="" title="Screen Shot 2015-02-12 at 6.49.06 PM" width="219" height="266" class="inline-text-left" /></a>
 <h3>Geocoding Assurance <em>or</em> Why you should trust the results</h3>
 <p>The AGRC <a href="http://api.mapserv.utah.gov">web api</a> is a great resource for deriving information from the <a href="{{ "/data" | prepend: site.baseurl }}">SGID</a>. Geocoding an address is one of the more popular and useful free services. But it is important that users have confidence in the match results returned from the geocoding api.</p>
 <p>As you may know, the geocoding api uses <a href="http://api.mapserv.utah.gov/#geocoding">address points and road centerlines</a> to locate the best match when geocoding. Or, users may specify that the matches come only from centerline or address points. Each of the 29 Utah counties provide AGRC with a periodic update of their local road centerline and address point data. This schedule allows the geocoding api to use the most current data in order to provide the best match results.</p>
