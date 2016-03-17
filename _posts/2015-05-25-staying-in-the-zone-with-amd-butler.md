@@ -20,6 +20,7 @@ tags:
 - javascript
 - tools
 ---
+*Update(3/17/16)*: This plugin has been ported to an [Atom Editor](https://atom.io/) package called [amdbutler](https://atom.io/packages/amdbutler).
 <p>A few months ago, I built a simple plugin for <a href="http://www.sublimetext.com/3">Sublime Text 3</a>&nbsp;for managing <a href="https://github.com/amdjs/amdjs-api/blob/master/AMD.md">AMD</a>&nbsp;dependencies called <a href="https://packagecontrol.io/packages/AMD%20Butler">AMD Butler</a>. Now it's hard for me to picture coding without it. If/when I make the switch to <a href="https://atom.io/">Atom</a>&nbsp;this will be the first thing that I port over from Sublime.</p>
 <p>AMD Butler is all about staying in the zone. First, let's take a look at life without it:</p>
 <ol>
