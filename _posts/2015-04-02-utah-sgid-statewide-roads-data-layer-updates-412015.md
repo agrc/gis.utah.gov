@@ -15,9 +15,6 @@ wordpress_url: http://gis.utah.gov/?p=17101
 date: '2015-04-02 12:25:17 -0600'
 date_gmt: '2015-04-02 18:25:17 -0600'
 categories:
-- Data
-- Developer
-- Featured
 - SGID Blog
 tags:
 - SDE
