@@ -108,12 +108,7 @@ blockquote {
     font-size: 18px;
     font-style: italic;
     color: $muted-text-color;
-    letter-spacing: -.08em;
     border-left: 4px solid $border-grey;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
 }
 
 
