@@ -4,12 +4,12 @@ status: publish
 published: true
 title: 'New: Utah Geocoding Toolbox for ArcGIS Desktop'
 author:
-  display_name: kgreen
+  display_name: Data Queen
   login: kgreen
-  email: kkgreen@utah.gov
+  email: agrc@utah.gov
   url: ''
 author_login: kgreen
-author_email: kkgreen@utah.gov
+author_email: agrc@utah.gov
 wordpress_id: 14393
 wordpress_url: http://gis.utah.gov/?p=14393
 date: '2014-01-17 11:57:08 -0700'

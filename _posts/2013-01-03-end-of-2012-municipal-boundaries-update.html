@@ -4,12 +4,12 @@ status: publish
 published: true
 title: End of 2012 Municipal Boundaries Update
 author:
-  display_name: kgreen
+  display_name: Data Queen
   login: kgreen
-  email: kkgreen@utah.gov
+  email: agrc@utah.gov
   url: ''
 author_login: kgreen
-author_email: kkgreen@utah.gov
+author_email: agrc@utah.gov
 wordpress_id: 12627
 wordpress_url: http://gis.utah.gov/?p=12627
 date: '2013-01-03 10:41:31 -0700'

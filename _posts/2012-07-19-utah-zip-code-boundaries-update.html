@@ -4,12 +4,12 @@ status: publish
 published: true
 title: Utah Zip Code Boundaries Update
 author:
-  display_name: kgreen
+  display_name: Data Queen
   login: kgreen
-  email: kkgreen@utah.gov
+  email: agrc@utah.gov
   url: ''
 author_login: kgreen
-author_email: kkgreen@utah.gov
+author_email: agrc@utah.gov
 wordpress_id: 10373
 wordpress_url: http://gis.utah.gov/?p=10373
 date: '2012-07-19 17:49:57 -0600'
