@@ -8,7 +8,7 @@ $colors: $a, $b, $c, $d;
     position: relative;
     display: inline;
     float: left;
-    margin: 0 20px;
+    margin: 0 12px;
     list-style-type: none;
 
     @include media-query($on-medium) {
