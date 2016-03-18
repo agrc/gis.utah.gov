@@ -14,6 +14,13 @@
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="twitter:image" content="{{ "/images/twittercard.png" | prepend: site.baseurl | prepend: site.url }}" />
+
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:image" content="{{ "/images/twittercard.png" | prepend: site.baseurl | prepend: site.url }}" />
+
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/favicon.ico?" | prepend: site.baseurl }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
