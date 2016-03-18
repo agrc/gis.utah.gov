@@ -4,7 +4,7 @@ status: publish
 published: true
 title: A day in the life of Utah's ArcGIS Server Base Maps
 author:
-  display_name: Bert Granberg
+  display_name: Steve Gourley
   login: Bert Granberg
   email: bgranberg@utah.gov
   url: ''
