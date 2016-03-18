@@ -28,9 +28,9 @@ Central Utah User Group (CUUG) members are made up of state, local, and federal 
 
 For more information, please contact Jason Anderson: <jranders@blm.gov>.
 
-**Davis County User Group**
+**Northern Utah GIS**
 
-Davis County User Group. DUG consists of Geo-spatial technicians and specialists from Davis County, and the different cities and entities of the county. This group works together solve the many problems with geo-spatial data found within Davis County. 
+NUGIS consists of Geo-spatial technicians and specialists from Davis, Weber, Box Elder, and Rich Counties.
 
 For more information, please contact Kasey Hansen: <khansen@jub.com>.
 
