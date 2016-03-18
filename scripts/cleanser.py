@@ -296,6 +296,12 @@ def fix_contacts(content):
     content = re.sub('display_name: kgreen', 'display_name: Data Queen', content)
     content = re.sub('kkgreen@utah\.gov', 'agrc@utah.gov', content)
     content = re.sub('801\.537\.9079', '801.538.3665', content)
+    content = re.sub('display_name: rkelson', 'display_name: Rick Kelson', content)
+    content = re.sub('display_name: Map Utah', 'display_name: AGRC Staff', content)
+    content = re.sub('display_name: jpechmann', 'display_name: Jessie Pechmann', content)
+    content = re.sub('display_name: mfoulger', 'display_name: Michael Foulger', content)
+    content = re.sub('display_name: mheagin', 'display_name: Mike Heagin', content)
+
     return re.sub('Kelly Green', 'someone', content)
 
 def one_offs(walk_dir):
