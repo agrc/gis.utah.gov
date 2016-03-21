@@ -39,16 +39,14 @@ tags:
 - 1 meter
 - '2011'
 ---
-<h3>2011 NAIP 1 Meter Orthophotography</h3>
-<td>AGRC has statewide <a href="http://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/index">National Agricultural Imagery Program</a> (NAIP) 4-band aerial photography for Utah. The imagery is 1-meter resolution and was collected in the summer of 2011. The date the photography was flown can be found in the SrcAImgDate field of the <strong><a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2011_4-band/NAIP2011_4-band_Index.zip">NAIP2011_4-band_Index</a></strong> shapefile, the IDATE field in the <a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2011_4-band/NAIP2011_4-band_FlightDate_Index.zip"><strong>NAIP2011_4-band_FlightDate_Index</strong></a> shapefile, in the .txt metadata files after 'Calendar_Date:', or the SDATE field of the county mosaics shapefile. The images have a UTM NAD83 meters projection.</p>
-<ul>
-<li><strong><a href="http://raster.utah.gov/?cat=NAIP%202011%20(1m)" target="_blank">Retrieve 2011 NAIP via Interactive Map</a></strong></li>
-<li><a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2011/" target="_blank">Retrieve 2011 NAIP 3-band County Mosaics via FTP site</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2011_4-band/">Retrieve 2011 NAIP 4-band TIFFs via FTP site</a></li>
-<li><a href="{{ "/data/utah-sgid-image-server/" | prepend: site.baseurl }}" target="_blank">Use our Image Server</a></li>
+<td>AGRC has statewide <a href="http://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/index">National Agricultural Imagery Program</a> (NAIP) 4-band aerial photography for Utah. The imagery is 1-meter resolution and was collected in the summer of 2011. The date the photography was flown can be found in the <code class="highlighter-rouge">SrcAImgDate</code> field of the <strong><a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2011_4-band/NAIP2011_4-band_Index.zip">NAIP2011_4-band_Index</a></strong> shapefile, the <code class="highlighter-rouge"> IDATE</code> field in the <a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2011_4-band/NAIP2011_4-band_FlightDate_Index.zip"><strong>NAIP2011_4-band_FlightDate_Index</strong></a> shapefile, in the .txt metadata files after <code class="highlighter-rouge">Calendar_Date:</code>, or the <code class="highlighter-rouge">SDATE</code> field of the county mosaics shapefile. The images have a UTM NAD83 meters projection.</p>
+<ul class="dotless">
+<li><strong><i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=NAIP%202011%20(1m)" target="_blank">Retrieve 2011 NAIP via Interactive Map</a></strong></li>
+<li><i class="fa fa-download"></i> <a href="ftp://ftp.agrc.utah.gov/NAIP/NAIP2011/" target="_blank">Retrieve 2011 NAIP 3-band County Mosaics via FTP site</a></li>
+<li><i class="fa fa-download"></i> <a href="ftp://ftp.agrc.utah.gov/Imagery/NAIP2011_4-band/">Retrieve 2011 NAIP 4-band TIFFs via FTP site</a></li>
 </ul>
 </td>
-<p>To display the 4-band images as a color infrared (CIR) or a false color image in ArcMap, use the Layer Properties-&gt;Symbology tab. Change the Red Channel to Band_4, Green to Band_1, and Blue to Band_2. (example below)</p>
+<p>To display the 4-band images as a color infrared (CIR) or a false color image in ArcMap, use the <code class="highlighter-rouge">Layer Properties->Symbology tab</code>. Change the Red Channel to Band_4, Green to Band_1, and Blue to Band_2. (example below)</p>
 <table border="0">
 <tbody>
 <tr>
