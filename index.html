@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-<div class="grid main b-lazy" data-src="{{ "/images/backgrounds/bg-large.png" | prepend: site.baseurl }}"
-                              data-src-medium="{{ "/images/backgrounds/bg-large.png" | prepend: site.baseurl }}"
-                              data-src-small="{{ "/images/backgrounds/bg-small.png" | prepend: site.baseurl }}">
+<div class="grid main b-lazy" data-src="{{ "/images/backgrounds/bg-large.png" | prepend: site.baseurl }}">
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#data"><h3 class="main-heading">Spatial Data</h3></a>
         <hr class="hr-separate" />
@@ -119,7 +117,7 @@ layout: default
         <h3>...or browse specific Data Categories</h3>
         <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
             <a href="{{ "/data/address-overview/" | prepend: site.baseurl }}"><h5 class="text-center">Addresses</h5>
-            <img class="b-lazy data-thumb data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_address_points.png" | prepend: site.baseurl }}"></a>
+            <img class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_address_points.png" | prepend: site.baseurl }}"></a>
         </div>
         <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
             <a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}"><h5 class="text-center">Aerial Photos</h5>
@@ -379,11 +377,7 @@ layout: default
 <script>
     ;(function() {
         var bLazy = new Blazy({
-            offset: 250,
-            breakpoints: [{
-                width: 350,
-                src: 'data-src-small'
-            }]
+            offset: 250
         });
     })();
 </script>

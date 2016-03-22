@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Imagery Problems
 author:
-  display_name: rkelson
+  display_name: Rick Kelson
   login: rkelson
   email: rkelson@utah.gov
   url: ''
@@ -37,7 +37,7 @@ tags: []
 <li>Download the free image viewer<a href="http://www.irfanview.com/"> IrfanViewServer</a> and save the image to a jpg format.</li>
 </ul>
 <ul>
-<li>Use our <a href="http://mapserv.utah.gov/arcgis/rest/services">Imagery Servers</a> (http://mapserv.utah.gov/).</li>
+<li>Use our <a href="{{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}">Imagery Services.</a></li>
 </ul>
 <ul>
 <li>Use the ArcMap tool 'Composite Bands (Data Management)' to convert the image to a different format and specify the bands to use for the output file. Instead of adding the .tif image to the tool add just Band_1, Band_2 and Band_3 as the Input Rasters. (ex. C:\HRO \12SVK240260.tif\Band_1, C:\HRO \12SVK240260.tif\Band_2, C:\HRO \12SVK240260.tif\Band_3)</li>

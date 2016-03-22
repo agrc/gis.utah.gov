@@ -2,9 +2,9 @@
 layout: page
 status: publish
 published: true
-title: 2 Meter Contours (Salt Lake County Only)
+title: Salt Lake County 2 Meter Contours
 author:
-  display_name: rkelson
+  display_name: Rick Kelson
   login: rkelson
   email: rkelson@utah.gov
   url: ''
@@ -43,23 +43,26 @@ tags:
 - contours
 - 2 meter
 ---
-<h3>Salt Lake County 2 Meter Contours</h3>
-<table style="width: 563px;" border="0" cellspacing="0" cellpadding="2">
-<tbody>
-<tr>
-<td valign="top" width="410">
 <ul>
-<li><strong><a href="{{ "/downloads/SLCo_2m_Contours.html" | prepend: site.baseurl }}">Salt Lake County Contours Interactive Map</a></strong></li>
-<li><a href="ftp://ftp.agrc.utah.gov/SLCo_2m_Contours/">Retrieve individual tiles via FTP site</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ELEVATION/UnpackagedData/Contours_2Meter_SLCounty/_Statewide/">Retrieve All Salt Lake County Contours via FTP site (1.4 GB File GDB)</a></li>
+    <li>
+        <strong><a href="{{ "/downloads/SLCo_2m_Contours.html" | prepend: site.baseurl }}">Salt Lake County Contours Interactive Map</a></strong>
+    </li>
+    <li>
+        <a href="ftp://ftp.agrc.utah.gov/SLCo_2m_Contours/">Retrieve individual tiles via FTP site</a>
+    </li>
+    <li>
+        <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ELEVATION/UnpackagedData/Contours_2Meter_SLCounty/_Statewide/">Retrieve All Salt Lake County Contours via FTP site (1.4 GB File GDB)</a>
+    </li>
 </ul>
-</td>
-<td valign="top" width="145">
-<div><img src="{{ "/images/SLCocontours.jpg" | prepend: site.baseurl }}" alt=" " width="389" height="364" /></div>
-</td>
-</tr>
-<tr>
-<td colspan="2" valign="top">AGRC has 2 meter contours derived from 2 meter LiDAR for Salt Lake County. No smoothing has been applied to the contour data but a 'Smooth Line' in ArcMap with a '50 meter Smoothing Tolerance' cleans the data up nicely. Although the data is refered to as 2 meter, the contour intervals are .5 meter. <strong><a href="ftp://ftp.agrc.utah.gov/SLCo_2m_Contours/SLCo_2m_Index.zip" target="_blank">SLCo_2m_Index</a></strong> is a shapefile that can be used to determine what files to download. These contour shapefiles cover 4,000 X 4,000 meter blocks. This data has a UTM NAD83 meters projection.</td>
-</tr>
-</tbody>
-</table>
+<div class="caption">
+    <img src="{{ "/images/SLCocontours.jpg" | prepend: site.baseurl }}" />
+</div>
+<p>
+    AGRC has 2 meter contours derived from 2 meter LiDAR for Salt Lake County.
+    No smoothing has been applied to the contour data but a 'Smooth Line' in ArcMap
+    with a '50 meter Smoothing Tolerance' cleans the data up nicely. Although the data
+    is refered to as 2 meter, the contour intervals are .5 meter.
+    <a href="ftp://ftp.agrc.utah.gov/SLCo_2m_Contours/SLCo_2m_Index.zip" target="_blank">SLCo_2m_Index</a> is a
+    shapefile that can be used to determine what files to download. These contour shapefiles cover 4,000 X 4,000 meter blocks.
+    This data has a UTM NAD83 meters projection.
+</p>

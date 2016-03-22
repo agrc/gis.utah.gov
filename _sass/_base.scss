@@ -9,11 +9,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     outline: 0;
     -webkit-font-smoothing: antialiased;
  }
-
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -21,7 +19,6 @@ body {
     color: $base-text-color;
     background-color: $base-background-color;
 }
-
 caption {
     font-weight: normal;
     text-align: left;
@@ -30,17 +27,12 @@ caption {
 p {
     margin: 0 0 1.5em;
 }
-dl,dd {
-    margin: 0 0 1.5em;
-    font-size: 1em;
-    line-height: 1.7em;
+dl {
+    margin: 1.25em;
 }
-
 dt {
     font-weight: bold;
-    line-height: 1.7em;
 }
-
 dd {
     margin-left: 1em;
 }
@@ -89,7 +81,6 @@ a {
     &:visited {
         color: $brand-color;
     }
-
     &:hover {
         color: lighten($brand-color, 25%);
         text-decoration: underline;
@@ -119,7 +110,6 @@ pre {
     border: .08em solid $border-grey;
     border-radius: 3px;
 }
-
 pre {
     padding: 10px;
     overflow: auto;
@@ -180,4 +170,7 @@ code {
 }
 .pull-left {
     float: left;
+}
+.dotless {
+    list-style: none;
 }

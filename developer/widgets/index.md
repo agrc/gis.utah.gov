@@ -22,19 +22,21 @@ tags:
 ---
 #### Save yourself some time and use our widgets!
 
-![widgets]({{ "/images/icon_widget.png" | prepend: site.baseurl }}) AGRC is actively developing and maintaining a core set of geospatial javascript widgets and ArcMap Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs]({{ "/developer/web-services" | prepend: site.baseurl }}) that you can use to solve spatial problems, derive spatial context, or create your own add-ins and widgets.
+<i class="fa fa-2x fa-fw fa-modx"></i> AGRC is actively developing and maintaining a core set of geospatial javascript widgets and ArcMap Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs]({{ "/developer/web-services" | prepend: site.baseurl }}) that you can use to solve spatial problems, derive spatial context, or create your own add-ins and widgets.
 
 ### JavaScript
 
-A great place to get started with web mapping javascript and our widgets is the [AGRC javascript boilerplate](https://github.com/agrc/AGRCJavaScriptProjectBoilerPlate) project. This is the [atlas.utah.gov](http://atlas.utah.gov) website source code. It uses all of our [widgets](https://github.com/agrc/agrc.widgets) and is a great example of how to structure your next project. All of our public websites are using the agrc widget module to some degree so you may already be familiar with them!
+A great place to get started with web mapping javascript and our widgets is the [AGRC javascript boilerplate](https://github.com/agrc/AGRCJavaScriptProjectBoilerPlate) project. This is the [atlas.utah.gov](http://atlas.utah.gov) website source code and is a great example of dojo best practices and how to structure your next project. We are in the process of splitting our [widgets](https://github.com/agrc/agrc.widgets) into their own [organization](https://github.com/agrc/agrc-widgets) on github. All of our public websites are using the agrc widgets to some degree so you may already be familiar with them!
 
 A few key pieces of functionality that our widgets offer are:
 
- - Geocoding addresses. This widget provides the UI/UX and code to allow a user to input an address and provides the developer with the coordinates for the address.
- - Finding places - With these widgets, a developer can quickly setup type ahead functionality for any layer in the SGID. The geometry for the selected element is returned. Popular uses for this are, Township, Range and Section queries, and other political boundary queries.
- - AGRC Basemaps - You can also quickly add common mapping elements, like a map and base map selector, to your website or blog.
+ - [**Geocoding addresses**](https://github.com/agrc/agrc.widgets/tree/master/widgets/locate) - This widget provides the UI/UX and code to allow a user to input an address and provides the developer with the coordinates for the address.
+ - **Finding places** - With [these widgets](https://github.com/agrc-widgets/sherlock), a developer can quickly setup type ahead functionality for any layer in the SGID. The geometry for the selected element is returned. Popular uses for this are, [Township, Range and Section](https://github.com/agrc/agrc.widgets/blob/master/widgets/locate/TRSsearch.js) queries, and other political boundary queries.
+ - **AGRC Base maps** - You can also quickly add common mapping elements, like a map and [base map selector](https://github.com/agrc-widgets/layer-selector), to your website or blog.
 
-Our widget library and mostly all of the work that we do is open source and accepting contributions. This easily allows for other developers to make improvements to the code. Browse our [agency github](http://github.com/agrc) page and fork the code!
+Our widget library, and most all of the work that we do, is open source and accepting contributions. This easily allows for other developers to make improvements to the code. Browse our [github organizations](http://github.com/agrc) and fork the code!
+
+<hr class="divider"/>
 
 ### ArcMap Add-ins
 

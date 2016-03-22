@@ -32,13 +32,9 @@ a:hover > i {
     }
 }
 
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+.blog-list {
+    padding-top: 0;
+    line-height: 1.2;
 }
 
 .post-meta, .muted {

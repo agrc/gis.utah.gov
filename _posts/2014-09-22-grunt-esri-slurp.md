@@ -4,7 +4,7 @@ status: publish
 published: true
 title: grunt-esri-slurp
 author:
-  display_name: Scott Davis
+  display_name: Scott Davis and Steve Gourley
   login: Scott Davis
   email: stdavis@utah.gov
   url: ''

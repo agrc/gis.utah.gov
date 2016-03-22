@@ -94,8 +94,7 @@ title: SGID Index
     once = True
     for item in data:
         if once:
-            html += '''
-        <thead>
+            html += '''        <thead>
             <tr>
 {}
             </tr>
@@ -110,7 +109,7 @@ title: SGID Index
         </tbody>
     </table>
 </div>
-<script src="{{{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}}}"></script>
+<script src="{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}"></script>
 <script>
     var options = {
     valueNames: [ 'name', 'category', 'agency', 'description' ]

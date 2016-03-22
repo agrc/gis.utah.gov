@@ -3,13 +3,11 @@ layout: page
 status: publish
 title: SGID Index
 ---
-<script src="{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}"></script>
 <span id='show_filters' class='pointer'>Show Filters</span>
-<div id='filters' class='hidden'><a id="filter_basemap">basemap</a> | <a id="filter_bioscience">bioscience</a> | <a id="filter_boundaries">boundaries</a> | <a id="filter_cadastre">cadastre</a> | <a id="filter_climate">climate</a> | <a id="filter_demographic">demographic</a> | <a id="filter_economy">economy</a> | <a id="filter_elevation">elevation</a> | <a id="filter_energy">energy</a> | <a id="filter_environment">environment</a> | <a id="filter_farming">farming</a> | <a id="filter_geoscience">geoscience</a> | <a id="filter_health">health</a> | <a id="filter_history">history</a> | <a id="filter_indices">indices</a> | <a id="filter_indicies">indicies</a> | <a id="filter_location">location</a> | <a id="filter_planning">planning</a> | <a id="filter_political">political</a> | <a id="filter_raster">raster</a> | <a id="filter_recreation">recreation</a> | <a id="filter_society">society</a> | <a id="filter_transportation">transportation</a> | <a id="filter_utilities">utilities</a> | <a id="filter_water">water</a></div>
+<div id='filters' class='hidden'><a id="filter_basemap">basemap</a> | <a id="filter_bioscience">bioscience</a> | <a id="filter_boundaries">boundaries</a> | <a id="filter_cadastre">cadastre</a> | <a id="filter_climate">climate</a> | <a id="filter_demographic">demographic</a> | <a id="filter_economy">economy</a> | <a id="filter_elevation">elevation</a> | <a id="filter_energy">energy</a> | <a id="filter_environment">environment</a> | <a id="filter_farming">farming</a> | <a id="filter_geoscience">geoscience</a> | <a id="filter_health">health</a> | <a id="filter_history">history</a> | <a id="filter_indices">indices</a> | <a id="filter_location">location</a> | <a id="filter_planning">planning</a> | <a id="filter_political">political</a> | <a id="filter_raster">raster</a> | <a id="filter_recreation">recreation</a> | <a id="filter_society">society</a> | <a id="filter_transportation">transportation</a> | <a id="filter_utilities">utilities</a> | <a id="filter_water">water</a></div>
 <div id='table' class='datatable'>
     <input class="search" placeholder="Search Data" />
     <table>
-    
         <thead>
             <tr>
                 <th scope="col"><span class="sort" data-sort="category">category</span></th>
@@ -1163,13 +1161,6 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">elevation</td>
-                <td data-th="name" class="name"><a href="{{ "/data/elevation-terrain-data/10-30-meter-elevation-models-usgs-ned/" | prepend: site.baseurl }}">DEM10Meter</a></td>
-                <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description">10 Meter NED digital elevation model. </td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">elevation</td>
                 <td data-th="name" class="name"><a href="{{ "/data/recreation/" | prepend: site.baseurl }}">HighestPeaks</a></td>
                 <td data-th="agency" class="agency">AGRC</td>
                 <td data-th="description" class="description">Top 100 highest peaks and additional highest county peaks.</td>
@@ -1443,30 +1434,9 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">environment</td>
-                <td data-th="name" class="name"><a href="{{ "/data/environment/deq-land-related-contaminant-cleanup-sites/" | prepend: site.baseurl }}">DSHWLargeQuantityGenerators</a></td>
+                <td data-th="name" class="name">DSHWSolidHazWasteOilFacilities</td>
                 <td data-th="agency" class="agency">DEQ</td>
-                <td data-th="description" class="description">N/A</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">environment</td>
-                <td data-th="name" class="name"><a href="{{ "/data/environment/deq-land-related-contaminant-cleanup-sites/" | prepend: site.baseurl }}">DSHWPermittedUsedOilFacilities</a></td>
-                <td data-th="agency" class="agency">DEQ</td>
-                <td data-th="description" class="description">N/A</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">environment</td>
-                <td data-th="name" class="name"><a href="{{ "/data/environment/deq-land-related-contaminant-cleanup-sites/" | prepend: site.baseurl }}">DSHWSmallQuantityGenerators</a></td>
-                <td data-th="agency" class="agency">DEQ</td>
-                <td data-th="description" class="description">N/A</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">environment</td>
-                <td data-th="name" class="name"><a href="{{ "/data/environment/deq-land-related-contaminant-cleanup-sites/" | prepend: site.baseurl }}">DSHWSolidWasteFacilities</a></td>
-                <td data-th="agency" class="agency">DEQ</td>
-                <td data-th="description" class="description">N/A</td>
+                <td data-th="description" class="description">Sites that generate hazardous waste; that treat, store, or dispose of hazardous waste; that treat, store, or dispose of non-hazardous solid waste; and sites that transport, market, or recycle used oil.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -1723,27 +1693,6 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">FaultLines</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Fault lines</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">Faults WasatchFront</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Wasatch Front fault lines </td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">Faults WasatchStudyBoundary</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Wasatch Front fault lines study boundary</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
                 <td data-th="name" class="name"><a href="{{ "/data/geoscience/" | prepend: site.baseurl }}">GeologicContacts</a></td>
                 <td data-th="agency" class="agency">UGS</td>
                 <td data-th="description" class="description">Geologic contacts</td>
@@ -1754,13 +1703,6 @@ title: SGID Index
                 <td data-th="name" class="name"><a href="{{ "/data/geoscience/" | prepend: site.baseurl }}">GeologicDikes</a></td>
                 <td data-th="agency" class="agency">UGS</td>
                 <td data-th="description" class="description">Geologic dikes</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">GeologicFaults</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Geologic faults</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -1782,34 +1724,6 @@ title: SGID Index
                 <td data-th="name" class="name"><a href="{{ "/data/geoscience/" | prepend: site.baseurl }}">GeologicVeins</a></td>
                 <td data-th="agency" class="agency">UGS</td>
                 <td data-th="description" class="description">Geologic veins</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">LandslideAreas</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Landslide areas</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">LandSlidePotential</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Landslide potential</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">Landslides Areas</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Landslides as polygons</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">Landslides Lines</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Landslides as lines</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -1877,13 +1791,6 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">PotentialLandsides WasatchFront</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Landslides Wasatch Front</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
                 <td data-th="name" class="name">PotentialLiquefaction WasatchFront</td>
                 <td data-th="agency" class="agency">UGS</td>
                 <td data-th="description" class="description">Liquefaction Potential Wasatch Front</td>
@@ -1901,20 +1808,6 @@ title: SGID Index
                 <td data-th="name" class="name"><a href="{{ "/data/geoscience/quaternary-faults/" | prepend: site.baseurl }}">QuaternaryFaults</a></td>
                 <td data-th="agency" class="agency">UGS</td>
                 <td data-th="description" class="description">Quaternary faults</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">QuaternaryDeformation</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Quaternary deformation</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">QuaternaryFaultsFolds</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Quaternary faults folds</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -1943,13 +1836,6 @@ title: SGID Index
                 <td data-th="name" class="name"><a href="{{ "/data/geoscience/soil/" | prepend: site.baseurl }}">Soils</a></td>
                 <td data-th="agency" class="agency">UGS or Natural Resources Conservation Service (NRCS)</td>
                 <td data-th="description" class="description">Soil types</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">geoscience</td>
-                <td data-th="name" class="name">SurfaceFaultRupture WasatchFront</td>
-                <td data-th="agency" class="agency">UGS</td>
-                <td data-th="description" class="description">Surface Fault Rupture Wasatch Front</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -2219,7 +2105,7 @@ title: SGID Index
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
-                <td data-th="category" class="category">indicies</td>
+                <td data-th="category" class="category">indices</td>
                 <td data-th="name" class="name">Google Tiles</td>
                 <td data-th="agency" class="agency">AGRC</td>
                 <td data-th="description" class="description">Tile index of the Google imagery jp2 image tiles.</td>
@@ -2261,7 +2147,7 @@ title: SGID Index
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
-                <td data-th="category" class="category">indicies</td>
+                <td data-th="category" class="category">indices</td>
                 <td data-th="name" class="name">HRO2012</td>
                 <td data-th="agency" class="agency">AGRC</td>
                 <td data-th="description" class="description">Boundaries of the HRO2012 6 inch (12.5cm) 3-band orthoimagery tiles.</td>
@@ -2403,8 +2289,22 @@ title: SGID Index
             <tr>
                 <td data-th="category" class="category">indices</td>
                 <td data-th="name" class="name">LiDAR2013 2014 50cm WasatchFront DSM Tiles</td>
-                <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description"></td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Tile index of digital surface model (first-return) elevation model tiles.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">LiDAR2013 2014 50cm WasatchFront DTM Tiles</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Tile index of digital terrain model (bare- earth) elevation model tiles.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">LiDAR2013 2014 8ppm WasatchFront LAS Tiles</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Tile index of .las point cloud tiles.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -2549,6 +2449,41 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">NAIP2014 4 Band QQuads</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">2014 NAIP 4 band imagery tile index.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">NAIP2014 Band4 QQuads</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">2014 NAIP fourth band tile index.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">NAIP2014 County</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Boundaries of the 2014 1 meter NAIP orthoimagery Mr. Sid county mosaics.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">NAIP2014 QQuads Outline</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Extent of the 2014 1 meter 4-band NAIP orthoimagery tiles.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
+                <td data-th="name" class="name">NAIP2014 RGB QQuads</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">2014 NAIP RGB tile index.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">indices</td>
                 <td data-th="name" class="name"><a href="{{ "/data/sgid-indices/national-grid-index/" | prepend: site.baseurl }}">NationalGrid</a></td>
                 <td data-th="agency" class="agency">AGRC</td>
                 <td data-th="description" class="description">Tile index</td>
@@ -2665,13 +2600,6 @@ title: SGID Index
                 <td data-th="agency" class="agency">AGRC</td>
                 <td data-th="description" class="description">Address points</td>
                 <td data-th="service" class="service"><a href="http://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/Utah_Address_Points/FeatureServer/0" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">location</td>
-                <td data-th="name" class="name">AddressPoints NoPoint</td>
-                <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description">Address points without a point</td>
-                <td data-th="service" class="service"></td>
             </tr>
             <tr>
                 <td data-th="category" class="category">location</td>
@@ -2822,6 +2750,20 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">planning</td>
+                <td data-th="name" class="name">UtahPLI Areas Proposal Jan16</td>
+                <td data-th="agency" class="agency">DNR PLI</td>
+                <td data-th="description" class="description">Proposed areas referenced in the January 2016 Public Lands Initiative proposal for Utah.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">planning</td>
+                <td data-th="name" class="name">UtahPLI Lines Proposal Jan16</td>
+                <td data-th="agency" class="agency">DNR PLI</td>
+                <td data-th="description" class="description">Proposed linear features (roads, rivers, etc) referenced in the January 2016 Public Lands Initiative proposal for Utah.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">planning</td>
                 <td data-th="name" class="name">UWC2008CherryStemRoads</td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">2008 cherry stem roads</td>
@@ -2915,7 +2857,7 @@ title: SGID Index
                 <td data-th="category" class="category">political</td>
                 <td data-th="name" class="name">DistrictCombinationAreas2012</td>
                 <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description">unique geographic areas created by the intersection of all of the state-level political districts (2012)</td>
+                <td data-th="description" class="description">Unique geographic areas created by the intersection of all of the state-level political districts (2012)</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -2983,6 +2925,13 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">political</td>
+                <td data-th="name" class="name">UtahSchoolBoardDistricts2015</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Utah School Board Districts and members as of 2015.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">political</td>
                 <td data-th="name" class="name"><a href="{{ "/data/political/2002-2011-house-senate-congressional-districts/" | prepend: site.baseurl }}">UtahSenateDistricts2002</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Utah Senate districts (2012)</td>
@@ -3046,17 +2995,17 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">recreation</td>
-                <td data-th="name" class="name"><a href="{{ "/data/recreation/ski-areas/" | prepend: site.baseurl }}">Ski XC</a></td>
-                <td data-th="agency" class="agency">AGRC</td>
-                <td data-th="description" class="description">Established cross country ski trails in Utah</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">recreation</td>
                 <td data-th="name" class="name"><a href="{{ "/data/recreation/ski-areas/" | prepend: site.baseurl }}">SkiAreaBoundaries</a></td>
                 <td data-th="agency" class="agency">AGRC</td>
                 <td data-th="description" class="description">Utah ski area boundaries</td>
                 <td data-th="service" class="service"><a href="http://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/SkiAreaBoundaries/FeatureServer/0" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">recreation</td>
+                <td data-th="name" class="name">SkiAreaLocations</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Utah ski area locations.</td>
+                <td data-th="service" class="service"></td>
             </tr>
             <tr>
                 <td data-th="category" class="category">recreation</td>
@@ -3067,16 +3016,23 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">recreation</td>
+                <td data-th="name" class="name"><a href="{{ "/data/recreation/" | prepend: site.baseurl }}">SkiTrails XC</a></td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Established cross country ski trails within in the State of Utah.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">recreation</td>
                 <td data-th="name" class="name"><a href="{{ "/data/recreation/trails/" | prepend: site.baseurl }}">Trailheads</a></td>
                 <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description">Trailheads</td>
+                <td data-th="description" class="description">Trailheads and trail access points.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
                 <td data-th="category" class="category">recreation</td>
                 <td data-th="name" class="name"><a href="{{ "/data/recreation/trails/" | prepend: site.baseurl }}">Trails</a></td>
                 <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description">Trails</td>
+                <td data-th="description" class="description">Trail data and associated names, types, and some information on recommended or designated modes of travel (i.e. hiking, biking atv).</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -3207,6 +3163,13 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">society</td>
+                <td data-th="name" class="name"><a href="{{ "/data/society-overview/public-safety/" | prepend: site.baseurl }}">StateAgencyDispatch</a></td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">This data shows the areas of responsibility for the State Department of Public Communications Centers for dispatching State agencies, such as Highway Patrol, Wildlife Resources, Corrections, Park Ranges etc.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">society</td>
                 <td data-th="name" class="name"><a href="{{ "/data/society-overview/state-facilities/" | prepend: site.baseurl }}">StateFacilities</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">State facilities</td>
@@ -3238,6 +3201,13 @@ title: SGID Index
                 <td data-th="name" class="name"><a href="{{ "/data/society-overview/" | prepend: site.baseurl }}">UDOTMap StateParks</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">UDOT’s map’s state parks locations.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">society</td>
+                <td data-th="name" class="name">UHPFieldSections</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Utah Highway Patrol (UHP) Field Sections.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -3284,28 +3254,14 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">transportation</td>
-                <td data-th="name" class="name"><a href="{{ "/Not public" | prepend: site.baseurl }}">CommuterRailNewRoutes UTA</a></td>
-                <td data-th="agency" class="agency">UTA</td>
-                <td data-th="description" class="description"></td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">transportation</td>
-                <td data-th="name" class="name"><a href="{{ "/Not public" | prepend: site.baseurl }}">CommuterRailNewStops UTA</a></td>
-                <td data-th="agency" class="agency">UTA</td>
-                <td data-th="description" class="description"></td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">transportation</td>
-                <td data-th="name" class="name"><a href="{{ "/data/sgid-transportation/transit/" | prepend: site.baseurl }}">CommuterRailRoute UTA</a></td>
+                <td data-th="name" class="name"><a href="{{ "/data/sgid-transportation/transit/" | prepend: site.baseurl }}">CommuterRailRoutes UTA</a></td>
                 <td data-th="agency" class="agency">UTA</td>
                 <td data-th="description" class="description">Utah Transit Authority's commuter rail line (FrontRunner) north and south segments.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
                 <td data-th="category" class="category">transportation</td>
-                <td data-th="name" class="name"><a href="{{ "/data/sgid-transportation/transit/" | prepend: site.baseurl }}">CommuterRailStops UTA</a></td>
+                <td data-th="name" class="name"><a href="{{ "/data/sgid-transportation/transit/" | prepend: site.baseurl }}">CommuterRailStations UTA</a></td>
                 <td data-th="agency" class="agency">UTA</td>
                 <td data-th="description" class="description">Locations of Utah Transit Authority's FrontRunner North and South commuter rail stations.</td>
                 <td data-th="service" class="service"></td>
@@ -3322,20 +3278,6 @@ title: SGID Index
                 <td data-th="name" class="name"><a href="{{ "/data/sgid-transportation/transit/" | prepend: site.baseurl }}">LightRail UTA</a></td>
                 <td data-th="agency" class="agency">UTA</td>
                 <td data-th="description" class="description">Location of UTA's light rail system.</td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">transportation</td>
-                <td data-th="name" class="name"><a href="{{ "/Not public" | prepend: site.baseurl }}">LightRailNewRoutes UTA</a></td>
-                <td data-th="agency" class="agency">UTA</td>
-                <td data-th="description" class="description"></td>
-                <td data-th="service" class="service"></td>
-            </tr>
-            <tr>
-                <td data-th="category" class="category">transportation</td>
-                <td data-th="name" class="name"><a href="{{ "/Not public" | prepend: site.baseurl }}">LightRailNewStops UTA</a></td>
-                <td data-th="agency" class="agency">UTA</td>
-                <td data-th="description" class="description"></td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -3396,6 +3338,13 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">transportation</td>
+                <td data-th="name" class="name">StateBoundarySnapPoints</td>
+                <td data-th="agency" class="agency">AGRC</td>
+                <td data-th="description" class="description">Point locations where a road crosses the Utah state boundary.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">transportation</td>
                 <td data-th="name" class="name">StateFuelSites</td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">State of Utah managed networked fuel sites.</td>
@@ -3431,7 +3380,7 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">utilities</td>
-                <td data-th="name" class="name"><a href="{{ "/data/utilities/broadband-internet/" | prepend: site.baseurl }}">BroadbandCAIInstitutions</a></td>
+                <td data-th="name" class="name"><a href="{{ "/data/utilities/broadband-internet/" | prepend: site.baseurl }}">BroadbandCAInstitutions</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Utah community anchor institution broadband capabilities</td>
                 <td data-th="service" class="service"></td>
@@ -3445,9 +3394,23 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">utilities</td>
+                <td data-th="name" class="name">BroadbandCensusBlocks historic</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Historic Utah broadand coverage (by census blocks) availability with transmission technology and maximum advertised speeds.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">utilities</td>
                 <td data-th="name" class="name"><a href="{{ "/data/utilities/broadband-internet/" | prepend: site.baseurl }}">BroadbandRoadBuffers</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Road segment buffers</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">utilities</td>
+                <td data-th="name" class="name">BroadbandRoadBuffers historic</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Historic Utah broadand coverage availability with transmission technology and maximum advertised speeds.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -3459,6 +3422,13 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">utilities</td>
+                <td data-th="name" class="name">BroadbandWireless historic</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Historic Utah wireless broadand coverage availability with transmission technology and maximum advertised speeds.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">utilities</td>
                 <td data-th="name" class="name">ElectricalLines</td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Electrical generation and distribution facilities for portions of Utah Counties.</td>
@@ -3466,9 +3436,23 @@ title: SGID Index
             </tr>
             <tr>
                 <td data-th="category" class="category">utilities</td>
-                <td data-th="name" class="name">ElectricalServices</td>
+                <td data-th="name" class="name">ElectricalService</td>
                 <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description">Electric Service Areas throughout Utah. Data sources include the Utah Division of Public Utilites (UDPU) and Rocky Mountain Power.</td>
+                <td data-th="description" class="description">Electric Service provider areas throughout Utah. Data sources include the Utah Division of Public Utilites (UDPU) and Rocky Mountain Power.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">utilities</td>
+                <td data-th="name" class="name">NaturalGasService Approx</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Approximate and potential natural gas service areas.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">utilities</td>
+                <td data-th="name" class="name">RetailCulinaryWaterServiceAreas</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Retail culinary water suppliers service area boundaries for the State of Utah.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -3477,6 +3461,13 @@ title: SGID Index
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Major telephone trunk line and switching facilities. Utah telecommunication service boundaries.</td>
                 <td data-th="service" class="service"><a href="http://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/UtahRuralTelcomBoundaries/FeatureServer/0" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">utilities</td>
+                <td data-th="name" class="name">RuralTelcomExchangeBoundaries</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Exchange boundaries run by rural telcom providers in Utah.</td>
+                <td data-th="service" class="service"></td>
             </tr>
             <tr>
                 <td data-th="category" class="category">utilities</td>
@@ -3490,6 +3481,13 @@ title: SGID Index
                 <td data-th="name" class="name"><a href="{{ "/data/water-data-services/" | prepend: site.baseurl }}">DamsGNIS</a></td>
                 <td data-th="agency" class="agency"></td>
                 <td data-th="description" class="description">Dam locations found in the general GNIS data set.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">water</td>
+                <td data-th="name" class="name">DDWIrrigatedCropConsumptiveUseZones</td>
+                <td data-th="agency" class="agency"></td>
+                <td data-th="description" class="description">Irrigated crop consumptive use zones for calculating drinking water source sizing.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
@@ -3713,13 +3711,20 @@ title: SGID Index
                 <td data-th="category" class="category"></td>
                 <td data-th="name" class="name">WatershedRestorationInitiative TreatmentAreas</td>
                 <td data-th="agency" class="agency">Dept Wildlife Resources</td>
-                <td data-th="description" class="description"></td>
+                <td data-th="description" class="description">Terrestrial and aquatic/riparian treatment areas associated with Utah Watershed Restoration Initiative projects that are proposed, currently active, pending complete (done, but missing completion data), and completed.</td>
                 <td data-th="service" class="service"><a href="http://maps.dnr.utah.gov/arcgis/rest/services/DWR/WRI_Treatment_Areas/MapServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category"></td>
+                <td data-th="name" class="name">Points Of Diversion</td>
+                <td data-th="agency" class="agency">Dept of Water Rights</td>
+                <td data-th="description" class="description">Points of diversion.</td>
+                <td data-th="service" class="service"><a href="http://maps.dnr.utah.gov/arcgis/rest/services/WRT/Points_Of_Diversion/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
             </tr>
         </tbody>
     </table>
 </div>
-
+<script src="{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}"></script>
 <script>
     var options = {
     valueNames: [ 'name', 'category', 'agency', 'description' ]
