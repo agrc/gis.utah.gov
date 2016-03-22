@@ -20,7 +20,9 @@ tags: []
 
 **Canyon Country Partnership Geographic Data Committee**
 
-The Canyon Country Partnership Geographic Data Committee (CCP) was the first chartered user group in Utah. The members of the group created the Utah Transportation Model and the first Hydrology Model. The group consists of Geo-spatial technicians and specialists from State and Federal Agencies, private organizations, Carbon, Emery, Wayne, Grand, and San Juan Counties. It is open to anyone that would like to attend. CCP is active in sitting standards for the GIS community of Utah.
+The Canyon Country Partnership Geographic Data Committee (CCP) was the first chartered user group in Utah. The members of the group created the Utah Transportation Model and the first Hydrology Model. The group consists of Geospatial technicians and specialists from State and Federal Agencies, and private organizations, in Carbon, Emery, Wayne, Grand, and San Juan Counties. It is open to anyone that would like to attend.
+
+For more information, please contact Pete Kilbourne: <pkgeog@gmail.com>.
 
 **Central Utah User Group**
 
