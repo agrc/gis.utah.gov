@@ -31,7 +31,7 @@ A great place to get started with web mapping javascript and our widgets is the 
 A few key pieces of functionality that our widgets offer are:
 
  - [**Geocoding addresses**](https://github.com/agrc/agrc.widgets/tree/master/widgets/locate) - This widget provides the UI/UX and code to allow a user to input an address and provides the developer with the coordinates for the address.
- - **Finding places** - With [these widgets](https://github.com/agrc-widgets/sherlock), a developer can quickly setup type ahead functionality for any layer in the SGID. The geometry for the selected element is returned. Popular uses for this are, [Township, Range and Section](https://github.com/agrc/agrc.widgets/blob/master/widgets/locate/TRSsearch.js) queries, and other political boundary queries.
+ - **Finding places** - With [this widgets](https://github.com/agrc-widgets/sherlock), a developer can quickly setup type ahead functionality for any layer in the SGID. The geometry for the selected element is returned. Popular uses for this are, [Township, Range and Section](https://github.com/agrc/agrc.widgets/blob/master/widgets/locate/TRSsearch.js) queries, and other political boundary queries.
  - **AGRC Base maps** - You can also quickly add common mapping elements, like a map and [base map selector](https://github.com/agrc-widgets/layer-selector), to your website or blog.
 
 Our widget library, and most all of the work that we do, is open source and accepting contributions. This easily allows for other developers to make improvements to the code. Browse our [github organizations](http://github.com/agrc) and fork the code!
@@ -40,4 +40,4 @@ Our widget library, and most all of the work that we do, is open source and acce
 
 ### ArcMap Add-ins
 
-We have a few publicly distributed ArcMap add-ins. Add-ins allow users to bring the convenience of our web widgets in to the desktop GIS environment. You can [batch geocode](https://github.com/agrc/geocoding-addin) addresses against our [geospatial web APIs]({{ "/developer/web-services" | prepend: site.baseurl }}) to get the best matches possible or zoom to township, range, section polygons to name a few.
+We have a few publicly distributed ArcMap add-ins. Add-ins allow users to bring the convenience of our web widgets in to the desktop GIS environment. You can [batch geocode](https://github.com/agrc/geocoding-addin) addresses against our [geospatial web APIs]({{ "/developer/web-services" | prepend: site.baseurl }}) to get the best matches possible or [zoom to township, range, section polygons](https://github.com/agrc/trs-zoom-addin) to name a few.
