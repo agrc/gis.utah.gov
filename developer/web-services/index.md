@@ -19,7 +19,7 @@ tags:
 - web services
 - api
 ---
-<i class="fa fa-2x fa-fw fa-mixcloud"></i> The AGRC's Web API allows for developers to develop with the data and services that AGRC maintains and creates. You can query any data layer in our SGID or you can geocode addresses against the most accurate statewide roads data set to name a few highly popular uses. All of our [widgets and add-ins]({{ "/developer/widgets" | prepend: site.baseurl }}) make full use of our web API's.
+<i class="fa fa-2x fa-fw fa-mixcloud"></i> The [AGRC's Web API](http://api.mapserv.utah.gov) allows for developers to work with the data and services that AGRC maintains and creates. You can query any data layer in our SGID or you can geocode addresses against the most accurate statewide roads data set to name a few highly popular uses. All of our [widgets and add-ins]({{ "/developer/widgets" | prepend: site.baseurl }}) make full use of our web API's.
 
 #### Possibilities
 The main API's that we offer are **geocoding** and **searching**.
@@ -27,7 +27,7 @@ The main API's that we offer are **geocoding** and **searching**.
 Geocoding allows you to find a geographic location from an address. AGRC's geocoding philosophy is unique since we would rather give you no match than the wrong match. We will have the best match rates for Utah addresses.
 
 #### Do you have a database full of house addresses?
-Unlock the ability to visually see your data by geocoding them. Visit the [API Explorer](http://api.mapserv.utah.gov) to see all the options for geocoding.
+Unlock the ability to visually see your data by geocoding them. Visit the [API Explorer](http://api.mapserv.utah.gov/#geocoding) to see all the options for geocoding.
 
 The searching API really opens up the opportunity for serious information gathering. The [SGID]({{ "/data/sgid-index" | prepend: site.baseurl }}) has over 300 layers of real world data that you can run queries against.
 
