@@ -18,7 +18,6 @@ categories:
 - Developer
 tags: []
 ---
-<h1 id="agrc-web-mapping-services">AGRC Web Mapping Services</h1>
 <p>AGRC offers a variety of mapping-related web services that make it easy to add authoritative Utah web maps to your applications. The two most popular are our <a href="{{ "/developer/base-maps/" | prepend: site.baseurl }}">base maps</a> and <a href="http://api.mapserv.utah.gov/#geocoding">geocoding service</a>. These web services, together with a custom map service that shows your own agency/business-specific data, can add great geographic context to your web applications.</p>
 <p>This post will show you how simple it is to leverage AGRC's services with JavaScript. We will develop a simple web app that contains a dynamic map and simple address finding controls. Please note that we've added a simple glossary of terms at the bottom of this page.</p>
 <h2 id="esri-javascript-api">ESRI JavaScript API</h2>
