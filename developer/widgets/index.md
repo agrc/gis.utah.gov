@@ -26,7 +26,7 @@ tags:
 
 ### JavaScript
 
-A great place to get started with web mapping javascript and our widgets is the [AGRC javascript boilerplate](https://github.com/agrc/AGRCJavaScriptProjectBoilerPlate) project. This is the [atlas.utah.gov](http://atlas.utah.gov) website source code and is a great example of dojo best practices and how to structure your next project. We are in the process of splitting our [widgets](https://github.com/agrc/agrc.widgets) into their own [organization](https://github.com/agrc/agrc-widgets) on github. All of our public websites are using the agrc widgets to some degree so you may already be familiar with them!
+A great place to get started with web mapping javascript and our widgets is the [AGRC javascript boilerplate](https://github.com/agrc/AGRCJavaScriptProjectBoilerPlate) project. This is the [atlas.utah.gov](http://atlas.utah.gov) website source code and is a great example of dojo best practices and how to structure your next project. We are in the process of splitting our [widgets](https://github.com/agrc/agrc.widgets) into their own [organization](https://github.com/agrc-widgets) on github. All of our public websites are using the agrc widgets to some degree so you may already be familiar with them!
 
 A few key pieces of functionality that our widgets offer are:
 
