@@ -60,16 +60,16 @@ To access the GCP services individual organizations will be provided URL links f
 
 **Requests for On-Premise Use**  
 Request can be made to consume the imagery off-line when the provided imagery service does not suffice or if you are not state, regional, local or tribal government, public safety, K-12, or higher education. Please provide the following information for consideration:
-- Name & organization:
-- Reason for request:
-- Working on behalf of:
-- Project names:
-- Project locations:
+  - Name & organization:
+  - Reason for request:
+  - Working on behalf of:
+  - Project names:
+  - Project locations:
 
 **Answers to questions we have been asked...(look for future additions to this list)**  
-- From time to time it is suggested that you refresh the connection to the imagery services by right-clicking your service connection, in ArcCatalog or ArcMap's Catalog Viewer, and select the `Refresh`  button to see the latest list of available services.
-- Since the Google acquisition flight blocks are not done all at once (as opposed to the NAIP product for example), there will certainly be color and positional changes at flight block boundaries. For large area maps, the color-balanced NAIP may be a more aesthetically pleasing cartographic choice.
-- A tile index of the .jp2 images that make up the service is available from our SDE as SGID10.INDICES.Google_Tiles or as a download <a  href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_Tiles/_Statewide/">from here</a>.
-- For future updates, Utah can certainly pass along requests to Google for additional update areas or for specific collection periods. But there is no provision in the current contract to create any expectation that those requests will be acted upon.
-- AGRC has downloaded a statewide master set of the image files for redistribution, as the download process directly from Google incurs transactional costs for cloud server & bandwidth usage.
-- AGRC has a feedback reporting form for imagery users around the state to report imagery and service issues so these can be passed along to Google. The feedback form can be found <a href="https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221">here</a>.
+  - From time to time it is suggested that you refresh the connection to the imagery services by right-clicking your service connection, in ArcCatalog or ArcMap's Catalog Viewer, and select the `Refresh`  button to see the latest list of available services.
+  - Since the Google acquisition flight blocks are not done all at once (as opposed to the NAIP product for example), there will certainly be color and positional changes at flight block boundaries. For large area maps, the color-balanced NAIP may be a more aesthetically pleasing cartographic choice.
+  - A tile index of the .jp2 images that make up the service is available from our SDE as SGID10.INDICES.Google_Tiles or as a download <a  href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_Tiles/_Statewide/">from here</a>.
+  - For future updates, Utah can certainly pass along requests to Google for additional update areas or for specific collection periods. But there is no provision in the current contract to create any expectation that those requests will be acted upon.
+  - AGRC has downloaded a statewide master set of the image files for redistribution, as the download process directly from Google incurs transactional costs for cloud server & bandwidth usage.
+  - AGRC has a feedback reporting form for imagery users around the state to report imagery and service issues so these can be passed along to Google. The feedback form can be found <a href="https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221">here</a>.
