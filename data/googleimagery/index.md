@@ -60,7 +60,7 @@ To access the GCP services individual organizations will be provided URL links f
 
 **Requests for On-Premise Use**
 Request can be made to consume the imagery off-line when the provided imagery service does not suffice or if you are not state, regional, local or tribal government, public safety, K-12, or higher education. Please provide the following information for consideration:
-  - Name & organization:
+  -	Name & organization:
   - Reason for request:
   - Working on behalf of:
   - Project names:
