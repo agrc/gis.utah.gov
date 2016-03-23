@@ -18,7 +18,6 @@ categories: []
 tags: []
 ---
 **Background:**
-
 At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial
 photography [<a href="{{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}">more info</a>]. The license will allow
 Utah's **_cities, counties, special districts, state agencies, K12/Higher ed, and tribes_** to use this imagery in web and desktop mapping
