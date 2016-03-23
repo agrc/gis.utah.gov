@@ -20,7 +20,7 @@ tags: []
 
 ### Background
 
-The Automated Geographic Reference Center (AGRC) is the State of Utah’s map technology coordination office. AGRC staff ([directory/contacts]({{ "/about/contact" | prepend: site.baseurl }})) have knowledge and experience in geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state.
+The Automated Geographic Reference Center (AGRC) is the State of Utah’s map technology coordination office. AGRC staff ([directory/contacts]({{ "/about/contact/" | prepend: site.baseurl }})) have knowledge and experience in geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state.
 
 [![AGRC staff photo]({{"/images/UtahAGRCStaffPhotoJan16_Small.png" | prepend: site.baseurl}})]({{"/images/AGRC.Staff.Photo.January.2016.png" | prepend: site.baseurl}}){:.pull-right}
 
@@ -46,13 +46,13 @@ AGRC was one of the first geospatial information offices in the country, establi
 - Google Imagery License
 - Lidar Elevation Models
 - Location Analytics
-- [911 Map Data Support]( {{"/about/gis-for-911" | prepend: site.baseurl }} )
+- [911 Map Data Support]( {{"/about/gis-for-911/" | prepend: site.baseurl }} )
 - Municipal, Voting, and other Civic Boundaries
 - Public Land Survey System
 - Spatial Database Design, Integration and Hosting
 - Statewide Address Point Aggregation
 - Statewide Road Centerline Aggregation
-- [Statewide GIS Strategic & Business Plans]({{"/about/strategic-and-business-plans" | prepend: site.baseurl }})
+- [Statewide GIS Strategic & Business Plans]({{"/about/strategic-and-business-plans/" | prepend: site.baseurl }})
 - TURN GPS sub-centimeter precision
 
 

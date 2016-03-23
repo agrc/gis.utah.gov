@@ -22,7 +22,7 @@ tags:
 ---
 #### Save yourself some time and use our widgets!
 
-<i class="fa fa-2x fa-fw fa-modx"></i> AGRC is actively developing and maintaining a core set of geospatial javascript widgets and ArcMap Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs]({{ "/developer/web-services" | prepend: site.baseurl }}) that you can use to solve spatial problems, derive spatial context, or create your own add-ins and widgets.
+<i class="fa fa-2x fa-fw fa-modx"></i> AGRC is actively developing and maintaining a core set of geospatial javascript widgets and ArcMap Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs]({{ "/developer/web-services/" | prepend: site.baseurl }}) that you can use to solve spatial problems, derive spatial context, or create your own add-ins and widgets.
 
 ### JavaScript
 
@@ -40,4 +40,4 @@ Our widget library, and most all of the work that we do, is open source and acce
 
 ### ArcMap Add-ins
 
-We have a few publicly distributed ArcMap add-ins. Add-ins allow users to bring the convenience of our web widgets in to the desktop GIS environment. You can [batch geocode](https://github.com/agrc/geocoding-addin) addresses against our [geospatial web APIs]({{ "/developer/web-services" | prepend: site.baseurl }}) to get the best matches possible or [zoom to township, range, section polygons](https://github.com/agrc/trs-zoom-addin) to name a few.
+We have a few publicly distributed ArcMap add-ins. Add-ins allow users to bring the convenience of our web widgets in to the desktop GIS environment. You can [batch geocode](https://github.com/agrc/geocoding-addin) addresses against our [geospatial web APIs]({{ "/developer/web-services/" | prepend: site.baseurl }}) to get the best matches possible or [zoom to township, range, section polygons](https://github.com/agrc/trs-zoom-addin) to name a few.

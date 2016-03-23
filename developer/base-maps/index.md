@@ -19,7 +19,7 @@ tags:
 - basemap
 ---
 ## <i class="fa fa-exclamation-triangle"></i> The UTM base maps are scheduled to expire in 2017
-AGRC has freely served 7 online base maps for many years. These caches are in the UTM NAD83 Zone 12 projection (_wkid: 26912_). The caches consist of between **3 to 17 million** 256 pixel square jpg tiles and can range from **15G to over 200GB**. These caches are standardized on a subset of the Google, Microsoft, and esri [scale levels]({{ "/developer/base-maps/basemap-scales" | prepend: site.baseurl }}) that apply to our state.
+AGRC has freely served 7 online base maps for many years. These caches are in the UTM NAD83 Zone 12 projection (_wkid: 26912_). The caches consist of between **3 to 17 million** 256 pixel square jpg tiles and can range from **15G to over 200GB**. These caches are standardized on a subset of the Google, Microsoft, and esri [scale levels]({{ "/developer/base-maps/basemap-scales/" | prepend: site.baseurl }}) that apply to our state.
 
 These UTM base maps are being sunset in favor of [web mercator base maps served as WMS and WMTS]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}). You will need to obtain a organizational login to connect to these base maps.
 
@@ -36,6 +36,6 @@ If you need continued support of the UTM base maps, we will be offering the tile
 
 <i class="fa fa-fw fa-map"></i> Finally, we have the **Color Infrared** and **Topo** caches. The Color Infrared is a neat way to look at vegetation while the Topo cache contains all of the USGS Quad Sheets. The Topo cache displays the most relevant quad sheet (250K, 100K and 24K) depending on your scale.
 
-The [update schedule]({{ "/developer/base-maps/basemap-maintenance-schedule" | prepend: site.baseurl }}) will keep you in the loop as to when they were last updated.
+The [update schedule]({{ "/developer/base-maps/basemap-maintenance-schedule/" | prepend: site.baseurl }}) will keep you in the loop as to when they were last updated.
 
-These base maps are used in our [widgets library]({{ "/developer/widgets" | prepend: site.baseurl }}) and all of our online web apps. You can also [use them in ArcGIS Desktop]( {{ "/data/sgid-base-map-services-arcmap" | prepend: site.baseurl }}).
+These base maps are used in our [widgets library]({{ "/developer/widgets/" | prepend: site.baseurl }}) and all of our online web apps. You can also [use them in ArcGIS Desktop]( {{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
