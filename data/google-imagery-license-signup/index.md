@@ -34,8 +34,8 @@ The imagery web services will be hosted in Google's cloud and delivered via WMS 
 AGRC who will have a master set of the raw imagery files.
 <a href="{{ "/downloads/Diverging-Diamond-Interchange-Google-Imagery.png" | prepend: site.baseurl }}"><img src="{{ "/images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png" | prepend: site.baseurl }}" alt="" title="Click to enlarge" width="800" height="227" class="" /></a>
 
-**Sign Up Information**
-AGRC is now ready to provide access to the licensed imagery services. Each qualified entity will need to complete an <a href="https://docs.google.com/a/utah.gov/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/viewform"><strong>Organizational Usage Agreement</strong></a>
+**Sign Up Information:**
+Each qualified entity will need to complete an <a href="https://docs.google.com/a/utah.gov/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/viewform"><strong>Organizational Usage Agreement</strong></a>
 to access the imagery. The Agreement covers terms of the license and important informational items that should be communicated. Spend some time with the
 fine print within the Agreement as it is important that everyone understand the details, including, but not limited to the importance of understanding datum transformation.
 
@@ -50,14 +50,10 @@ a small amount of additional work for AGRC staff but will also create additional
 responsibility for communicating the terms and informational items within a larger organization. It's an organization-by-organization decision, so please
 take time to coordinate with leadership and your co-workers to arrive at the best solution.
 
-After completing the Organizational Usage Agreement, AGRC will work through the designated primary contact to provide connection information via the
-Google Maps Engine (GME) WMS service. This GME-based WMS service in not expected to last for more than several months as there are known issues and Google
-has announced it is pulling the plug on the entire GME platform in Jan 2016.
-
-The replacement imagery server will be located in the Google Cloud Platform (GCP). It is currently in 'beta' and AGRC is working with Google staff
-and its business partners to finalize this and move to production. GCP, similar to Amazon's AWS, will provide flexibility, cost efficiencies, and powerful
-scaling using the Compute Engine. As soon as the full set of imagery files is loaded onto GCP, AGRC will download the files, expected to be around 10TB,
-and will be able to distribute these to qualifying organizations with on-premise use needs for the files or local mosaics (911, Blue Stakes, etc).
+After completing the Organizational Usage Agreement, AGRC will work through the designated primary contact to provide connection information via
+the Google Cloud Platform (GCP). GCP, similar to Amazon's AWS, will provide flexibility, cost efficiencies, and powerful
+scaling using the Compute Engine. AGRC will be able to distribute the original .jp2 image files to qualifying organizations with
+on-premise use needs for the files or local mosaics (911, Blue Stakes, etc).
 
 Get started by getting a primary contact designated for your organization and sign up using the Organizational Usage Agreement.
 
