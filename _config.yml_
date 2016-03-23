@@ -6,24 +6,21 @@ baseurl: @@baseurl
 url: @@url
 highlighter: rouge
 twitter_username: MapUtah
-github_username: AGRC
+github_username: agrc
 facebook_username: UtahAGRC
-vimeo_username: UtahAGRC
+vimeo_username: utahagrc
 permalink: /:title
 production_url: 'https://gis.utah.gov'
 analytics:
     google:
         tracking_id: 'UA-11849964-41'
-
 sass:
     style: @@sass
 markdown: kramdown
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
+    input: GFM
+    syntax_highlighter: rouge
 timezone: America/Denver
-
 exclude: [
     "node_modules",
     "scripts/cleanser.py",
