@@ -61,9 +61,12 @@ AGRC is funded through a combination of State general and restricted funds and c
 ### GIS Organizations & Affiliates
 
 Utah Statewide GIS User Group
+
 * [Utah Geographic Information Council website](http://ugic.info) 
 * [Annual UGIC Maps on the Hill event info]({{"/about/mapsonthehill" | prepend: site.baseurl }})
+
 Utah's Local GIS User Groups
+
 * [Salt Lake User Group (SLUG)](http://www.slug-gis.info/)
 * [Other Local level GIS User Group info]({{"/about/organizations/user-groups/index.html" | prepend: site.baseurl }})
 [National States Geographic Information Council (NGSIC)](http://nsgic.org)
