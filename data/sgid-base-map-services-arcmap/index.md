@@ -22,13 +22,13 @@ tags: []
 Instructions for using the Discover links in ArcMap 10.x:
 
 1.	In ArcMap go to `Add Data -> GIS Server -> Add WMTS server`
-1.	Paste the WMTS link you have been provided into the `URL:` line then hit OK
-1.	Navigate to the newly added connection `utah imagery – WMTS on discover.agrc.utah.gov` and double click the connection. You can rename the connection after it has been added
+1.	Paste the WMTS link you have been provided into the `URL:` line then hit `OK`
+1.	Navigate to the newly added `utah imagery – WMTS on discover.agrc.utah.gov` connection and double click. You can rename the connection after it has been added
 1.	You should see a list of imagery and base map services (explained below):
-  -	`utah` – 6-inch statewide natural color aerial photography collected within the last 3 years
-  -	`utah_2012archive` – Aerial photography updated in `utah` service and archived by acquisition year
-  -	`utah_2013archive` – Aerial photography updated in `utah` service and archived by acquisition year
-  -	`doq_1990’s_bw` – 1-meter statewide black & white aerial photography collected in 1990’s
+  -	`utah` – 6-inch statewide natural color aerial photography collected within the last 3 years (licensed)
+  -	`utah_2012archive` – Aerial photography updated in `utah` service and archived by acquisition year (licensed)
+  -	`utah_2013archive` – Aerial photography updated in `utah` service and archived by acquisition year (licensed)
+  -	`doq_1990’s_bw` – 1-meter statewide black & white aerial photography collected in 1990’s (coming soon)
   -	`hro_2012_rgb` – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
   -	`naip_2009_rgb` – 1-meter statewide natural color aerial photography collected in 2009
   -	`naip_2011_nrg` – 1-meter statewide color infrared aerial photography collected in 2011
