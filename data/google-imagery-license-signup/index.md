@@ -30,12 +30,12 @@ high resolution (6 inch pixels) aerial photography [<a href="{{ "/utah-acquires-
 The license will allow Utah's **`cities, counties, special districts, state agencies, K12/Higher ed, and tribes`** to use this imagery in web and desktop mapping
 applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is **`use by contractors and formal partners of the immediate licensees`**.
 
-The imagery web services will be hosted in Google's cloud and delivered via WMS and WTMS standards and the downloadable files will be obtainable through
+The imagery web services will be hosted in Google's cloud and delivered via WMS and WTMS Open Geospatial Consortium (OGC) standards and the downloadable files will be obtainable through
 AGRC who will have a master set of the raw imagery files.  
 <a href="{{ "/downloads/Diverging-Diamond-Interchange-Google-Imagery.png" | prepend: site.baseurl }}"><img src="{{ "/images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png" | prepend: site.baseurl }}" alt="" title="Click to enlarge" width="800" height="227" class="" /></a>
 
 **Sign Up Information:**  
-Each qualified entity will need to complete an <a href="https://docs.google.com/a/utah.gov/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/viewform"><strong>Organizational Usage Agreement</strong></a>
+Each qualified entity will need to complete an **Organizational Usage Agreement**
 to access the imagery. The Agreement covers terms of the license and important informational items that should be communicated. Spend some time with the
 fine print within the Agreement as it is important that everyone understand the details, including, but not limited to the importance of understanding datum transformation.
 
@@ -55,6 +55,7 @@ the Google Cloud Platform (GCP). GCP, similar to Amazon's AWS, will provide flex
 scaling using the Compute Engine. AGRC will be able to distribute the original .jp2 image files to qualifying organizations with
 on-premise use needs for the files or local mosaics (911, Blue Stakes, etc).  
 
-Get started by getting a primary contact designated for your organization and sign up using the Organizational Usage Agreement.
+Get started by getting a primary contact designated for your organization and sign up using the
+<a href="https://docs.google.com/a/utah.gov/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/viewform"><strong>Organizational Usage Agreement</strong></a>.
 
 Any questions can be directed to <a href="mailto:bgranberg@utah.gov">Bert Granberg</a> (801-538-3163) or <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801-538-3237).
