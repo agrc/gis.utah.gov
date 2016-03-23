@@ -46,7 +46,7 @@ def munge_data(item, i, indices):
         if ',' in value:
             value = value.split(',')
 
-            return ''.join('<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value))
+            return ''.join(['<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(v) for v in value])
 
         return '<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value)
 
