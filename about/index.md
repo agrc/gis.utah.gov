@@ -30,7 +30,7 @@ AGRC is directed under [mapping-related sections of Utah statute]({{ "/about/cod
 
 AGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. At 30+ years old, our full name may sound like its from a by-gone era. But AGRC is how people know us, so we're sticking with it. Years may pass, but our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
 
-### What we do at AGRC:
+### What We Do at AGRC:
 
 - Utah’s State Geographic Information Database
 - Address Geocoding Services
@@ -84,7 +84,7 @@ Some of the organizations that we have partnered with or worked for recently:
 | · Department of Natural Resources | · Department of Public Safety | · [Department of Transportation (UDOT)](http://udot.uplan.opendata.arcgis.com/) |
 | · Department of Workforce Services | · Federal Communications Commission | · Governors Office of Economic Development |
 | · Governors Office of Energy Development | · Mountainland Asssociation of Government | · NENA |
-| · [National States Geographic Information Council (NGSIC)](http://www.nsgic.org) | · NTIA | · Office of Legislative Research & General Counsel |
+| · [NGSIC](http://www.nsgic.org) | · NTIA | · Office of Legislative Research & General Counsel |
 | · [openaddresses.org](https://openaddresses.io/) | · Public Lands Policy & Coordination Office | · Public Service Commission |
 | · Questar Gas | · Salt Lake City | · Salt Lake County Surveyor |
 | · Trust Lands Administration (SITLA) | · United States Geological Survey | · University of Utah |
