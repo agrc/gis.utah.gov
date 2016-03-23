@@ -21,7 +21,7 @@ tags:
 ## <i class="fa fa-exclamation-triangle"></i> The UTM base maps are scheduled to expire in 2017
 AGRC has freely served 7 online base maps for many years. These caches are in the UTM NAD83 Zone 12 projection (_wkid: 26912_). The caches consist of between **3 to 17 million** 256 pixel square jpg tiles and can range from **15G to over 200GB**. These caches are standardized on a subset of the Google, Microsoft, and esri [scale levels]({{ "/developer/base-maps/basemap-scales" | prepend: site.baseurl }}) that apply to our state.
 
-These UTM base maps are being sunset in favor of [web mercator base maps served as WMS and WMTS]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}). You will need to obtain a organizational login to connect to these base maps.
+These UTM base maps are being sunset in favor of [web mercator base maps served as WMS and WMTS]({{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}). You will need to obtain a organizational login to connect to these base maps.
 
 If you need continued support of the UTM base maps, we will be offering the tiles for on premise use. Please [contact AGRC]({{ "/about/contact/" | prepend: site.baseurl }}) for details.
 
