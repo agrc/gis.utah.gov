@@ -58,7 +58,14 @@ AGRC was one of the first geospatial information offices in the country, establi
 
 AGRC is funded through a combination of State general and restricted funds and cost-recovery revenue sources from project work and grant awards. This hybrid approach ensures some stable base for SGID and coordination activities but keeps us on our toes by requiring us to keep up with the latest developments in our field so we can offer cutting edge GIS consulting services to those in need.
 
-### Recent customers and partners
+### GIS Organizations & Affiliates
+
+- Utah Statewide GIS User Group: [Utah Geographic Information Council](http://ugic.info)
+- [Annual UGIC Maps on the Hill event info]({{"/about/mapsonthehill/" | prepend: site.baseurl }})
+- [Utah's Regional-level GIS User Groups]({{"/about/organizations/user-groups/" | prepend: site.baseurl }})
+- [National States Geographic Information Council (NGSIC)](http://nsgic.org)
+
+### Recent Customers and Partners
 
 Some of the organizations that we have partnered with or worked for recently:
 
