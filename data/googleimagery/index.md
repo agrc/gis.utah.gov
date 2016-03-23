@@ -1,7 +1,7 @@
 ---
 layout: page
 status: publish
-published: false
+published: true
 title: Google Imagery Information
 author:
   display_name: Rick Kelson
