@@ -18,13 +18,12 @@ categories: []
 tags: []
 ---
 **Background:**
-
 At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial
 photography [<a href="{{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}">more info</a>]. The license will allow
 Utah's **_cities, counties, special districts, state agencies, K12/Higher ed, and tribes_** to use this imagery in web and desktop mapping
 applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is **_use by contractors and formal partners of the immediate licensees_**.
 
-The imagery web services will be hosted in Google's cloud and delivered via WMS and WTMS Open Geospatial Consortium (OGC) standards via AGRC's cloud-based server Discover. The original .jp2 imagery tiles can be downloaded or obtainable from AGRC who has a master set of the raw imagery files. 
+The imagery web services will be hosted in Google's cloud and delivered via WMS and WTMS Open Geospatial Consortium (OGC) standards via AGRC's cloud-based server Discover. The original .jp2 imagery tiles can be downloaded or obtainable from AGRC who has a master set of the raw imagery files.
 
 **Sign up Information:** View <a href="{{ "/data/google-imagery-license-signup" | prepend: site.baseurl }}">Using Utah's Google Imagery License</a> to learn about
 the sign up process for Utah's license to use Google's 6" imagery services.
