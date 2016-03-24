@@ -22,13 +22,13 @@ tags: []
 
 At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial photography. _Read the original [post]({{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}) about the acquisition_. The license will allow Utah's **cities, counties, special districts, state agencies, K12/Higher ed, and tribes** to use this imagery in web and desktop mapping  applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is **use by contractors and formal partners of the immediate licensees**.
 
-The imagery web services will be hosted in Google's cloud and delivered via WMS and WTMS Open Geospatial Consortium (OGC) standards via AGRC's cloud-based server Discover. The original .jp2 imagery tiles can be downloaded or obtained from AGRC who has a master set of the raw imagery files.
+The imagery web services will be hosted in Google's cloud and delivered via `WMS` and `WTMS` Open Geospatial Consortium (OGC) standards via AGRC's cloud-based server Discover. The original `.jp2` imagery tiles can be downloaded or obtainable from AGRC who has a master set of the raw imagery files.
 
 ### Sign Up Information
 {: .text-left}
 
-- View <a href="{{ "/data/google-imagery-license-signup" | prepend: site.baseurl }}">Using Utah's Google Imagery License</a> to learn about the sign up process for Utah's license to use Google's 6" imagery services.
-- **Find valuable information** about using the <a href="{{ "/data/googleimagery/" | prepend: site.baseurl }}">**Google Imagery Service.**</a>
+- View <a href="{{ "/data/google-imagery-license-signup" | prepend: site.baseurl }}">**Using Utah's Google Imagery License**</a> to learn about the sign up process for Utah's license to use Google's 6" imagery services.
+- **Find valuable information** about <a href="{{ "/data/googleimagery/" | prepend: site.baseurl }}">**Using the Google Imagery Service.**</a>
 - After reading the sign up and valuable information above, you'll need to complete the <a href="https://docs.google.com/a/utah.gov/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/viewform">**Organizational Usage Agreement.**</a>
 
 ### Archive news and updates:
