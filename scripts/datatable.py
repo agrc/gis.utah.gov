@@ -6,6 +6,7 @@ from json import load, dumps
 from os import rename
 from os.path import join, dirname
 from oauth2client.service_account import ServiceAccountCredentials
+from pydash.strings import start_case
 
 
 def munge_data(item, i, indices):
@@ -53,7 +54,7 @@ def munge_data(item, i, indices):
     return OrderedDict([
         # ('type', utf8_encode(item[indices['data_type']])),
         ('category', utf8_encode(category)),
-        ('name', should_link(name.replace('_', ' '))),
+        ('name', should_link(start_case(name.replace('_', '')))),
         ('agency', utf8_encode(item[indices['data_source']])),
         ('description', utf8_encode(item[indices['description']])),
         ('service', endpoint_link(item[indices['endpoint']]))
