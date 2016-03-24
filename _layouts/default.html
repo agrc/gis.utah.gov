@@ -32,7 +32,6 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
     <div id="utahgov_statewideheader" style="font-size: 11px;">
         <div class="pull-left">
@@ -100,6 +99,8 @@
                     <li class="menu-item {% if current[1] == 'developer' %}active-3{% endif %}"><a href="{{ "/developer/" | prepend: site.baseurl }}">Developer</a>
                     </li>
                     <li class="menu-item {% if current[1] == 'about' %}active-4{% endif %}"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
+                    </li>
+                    <li class="menu-item"><a href="{{ "/search/" | prepend: site.baseurl }}"><i class="fa fa-search"></i></a>
                     </li>
                 </ul>
             </nav>
