@@ -317,7 +317,7 @@ def one_offs(walk_dir):
 
       for filename in files:
           _, extension = os.path.splitext(filename)
-          if extension.lower() not in ['.html']:
+          if extension.lower() not in ['.html', '.md']:
               continue
 
           file_path = os.path.join(root, filename)
