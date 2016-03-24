@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Updates to Municpal Boundaries for the State of Utah
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   login: mheagin
   email: mheagin@utah.gov
   url: ''

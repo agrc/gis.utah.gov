@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Can you complete the "Where in Utah" quiz?
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

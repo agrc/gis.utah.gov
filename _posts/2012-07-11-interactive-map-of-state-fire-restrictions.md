@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Interactive Map of State Fire Restrictions
 author:
-  display_name: Map Utah
+  display_name: AGRC Staff
   login: Map Utah
   email: agrc@utah.gov
   url: ''

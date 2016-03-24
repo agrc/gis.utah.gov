@@ -5,7 +5,7 @@ published: true
 title: 'Department of Natural Resources Launches New Watershed Restoration Initiative
   Website '
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

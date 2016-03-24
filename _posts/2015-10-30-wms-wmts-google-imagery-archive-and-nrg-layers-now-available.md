@@ -4,7 +4,7 @@ status: publish
 published: false
 title: WMS, WMTS Google Imagery Archive and NRG Layers Now Available
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

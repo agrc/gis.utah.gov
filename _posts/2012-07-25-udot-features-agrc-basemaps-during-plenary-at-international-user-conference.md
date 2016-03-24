@@ -4,7 +4,7 @@ status: publish
 published: true
 title: UDOT features AGRC basemaps during International User Conference
 author:
-  display_name: Map Utah
+  display_name: AGRC Staff
   login: Map Utah
   email: agrc@utah.gov
   url: ''

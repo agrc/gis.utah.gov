@@ -4,7 +4,7 @@ status: publish
 published: true
 title: NENA National Guidance for GIS Address Points
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

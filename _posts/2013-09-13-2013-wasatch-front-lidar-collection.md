@@ -4,7 +4,7 @@ status: publish
 published: false
 title: '2013 Wasatch Front LiDAR Collection '
 author:
-  display_name: rkelson
+  display_name: Rick Kelson
   login: rkelson
   email: rkelson@utah.gov
   url: ''

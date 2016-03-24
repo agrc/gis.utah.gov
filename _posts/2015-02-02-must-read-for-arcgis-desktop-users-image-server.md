@@ -4,7 +4,7 @@ status: publish
 published: true
 title: 'Must Read for ArcGIS Desktop Users: Image Server Deprecation'
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

@@ -4,7 +4,7 @@ status: publish
 published: true
 title: State of Utah Global Positioning Reference Network, One-Time Maintenance Funding
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

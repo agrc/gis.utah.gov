@@ -4,7 +4,7 @@ status: publish
 published: false
 title: Maps on the Hill 2013
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

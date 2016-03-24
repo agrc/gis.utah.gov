@@ -4,7 +4,7 @@ status: publish
 published: true
 title: New Lidar and Orthophotography for Utah and Colorado’s Most Scenic Rivers
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

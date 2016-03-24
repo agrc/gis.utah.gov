@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Utah Works with the United States Census Bureau
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

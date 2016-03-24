@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Apple, Google, 3D and GIS
 author:
-  display_name: Map Utah
+  display_name: AGRC Staff
   login: Map Utah
   email: agrc@utah.gov
   url: ''

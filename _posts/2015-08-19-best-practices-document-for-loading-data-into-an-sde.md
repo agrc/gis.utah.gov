@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Best Practices for Loading Data into an SDE
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

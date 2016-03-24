@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Municipalities Updates Nov. 30, 2012
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   login: mheagin
   email: mheagin@utah.gov
   url: ''

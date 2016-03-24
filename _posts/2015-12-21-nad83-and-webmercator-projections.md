@@ -4,7 +4,7 @@ status: publish
 published: true
 title: The Earth is Not Round! Utah, NAD83 and WebMercator Projections
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

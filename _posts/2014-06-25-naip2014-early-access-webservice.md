@@ -4,7 +4,7 @@ status: publish
 published: true
 title: National Agricultural Imagery Program (NAIP) 2014 - Early Access Web Service
 author:
-  display_name: rkelson
+  display_name: Rick Kelson
   login: rkelson
   email: rkelson@utah.gov
   url: ''

@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Utah SGID Statewide Tax Areas and Tax Entities Data Layer Updates 3/27/2015
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   login: mheagin
   email: mheagin@utah.gov
   url: ''

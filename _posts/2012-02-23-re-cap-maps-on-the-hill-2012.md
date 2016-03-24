@@ -4,7 +4,7 @@ status: publish
 published: false
 title: 'Re-cap: Maps on the Hill - 2012'
 author:
-  display_name: Map Utah
+  display_name: AGRC Staff
   login: Map Utah
   email: agrc@utah.gov
   url: ''

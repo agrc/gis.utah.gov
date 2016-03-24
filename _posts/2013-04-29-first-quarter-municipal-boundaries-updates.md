@@ -4,7 +4,7 @@ status: publish
 published: true
 title: First quarter Municipal Boundaries updates
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   login: mheagin
   email: mheagin@utah.gov
   url: ''

@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Public Lands Survey System (PLSS) Version 2.0, 2015 updates
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   login: mheagin
   email: mheagin@utah.gov
   url: ''

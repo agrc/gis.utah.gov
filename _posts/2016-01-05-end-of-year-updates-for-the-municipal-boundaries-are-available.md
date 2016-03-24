@@ -4,7 +4,7 @@ status: publish
 published: true
 title: End of year updates for the Municipal Boundaries are available
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   login: mheagin
   email: mheagin@utah.gov
   url: ''

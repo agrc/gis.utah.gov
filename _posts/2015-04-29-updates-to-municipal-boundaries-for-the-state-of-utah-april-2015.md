@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Updates to Municipal Boundaries for the State of Utah, April 2015
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   login: mheagin
   email: mheagin@utah.gov
   url: ''

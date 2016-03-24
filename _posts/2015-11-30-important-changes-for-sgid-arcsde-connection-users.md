@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Important Changes for SGID ArcSDE Connection Users
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

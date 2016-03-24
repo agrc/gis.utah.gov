@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Newest updates to Municipal Boundaries
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   login: mheagin
   email: mheagin@utah.gov
   url: ''

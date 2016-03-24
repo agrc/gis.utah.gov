@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Big Happenings with Public Land Survey System GIS
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

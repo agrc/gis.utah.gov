@@ -4,7 +4,7 @@ status: publish
 published: true
 title: The Utah Reference Network (TURN) GPS Expands into Idaho
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''

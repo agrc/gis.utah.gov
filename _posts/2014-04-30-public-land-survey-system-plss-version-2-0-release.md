@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Public Land Survey System (PLSS) Version 2.0 Release
 author:
-  display_name: jpechmann
+  display_name: Jessie Pechmann
   login: jpechmann
   email: jpechmann@utah.gov
   url: ''
