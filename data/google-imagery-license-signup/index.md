@@ -29,7 +29,7 @@ tags:
 
 At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial photography. _Read the original [post]({{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}) about the acquisition_. The license will allow Utah's **cities, counties, special districts, state agencies, K12/Higher ed, and tribes** to use this imagery in web and desktop mapping  applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is **use by contractors and formal partners of the immediate licensees**.
 
-The imagery web services will be hosted in Google's cloud and delivered via `WMS` and `WTMS` Open Geospatial Consortium (OGC) standards via AGRC's cloud-based  Discover service. The original `.jp2` imagery tiles can be downloaded or obtainable from AGRC who has a master set of the raw imagery files.
+The imagery web services will be hosted in Google's cloud and delivered via `WMS` and `WTMS` Open Geospatial Consortium (OGC) standards via AGRC's cloud-based server Discover. The original `.jp2` imagery tiles can be downloaded or obtainable from AGRC who has a master set of the raw imagery files.
 
 <a href="{{ "/downloads/Diverging-Diamond-Interchange-Google-Imagery.png" | prepend: site.baseurl }}"><img src="{{ "/images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png" | prepend: site.baseurl }}" alt="" title="Click to enlarge" /></a>
 

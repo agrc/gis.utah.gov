@@ -36,6 +36,15 @@ The native coordinate system for the Google files and services is Web Mercator w
 
 Stated horizontal positional accuracy of the imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. Higher precision is expected in urban areas, where existing supplemental ground control was more abundant.
 
+### Discover Server
+{: .text-left}
+
+AGRC’s cloud-based server Discover service provides imagery and base maps services in Open Geospatial Consortium (OGC) standard Web Map Tile Service (WMTS) and Web Map Service (WMS) in the Web Mercator WGS84 projection (wkid: 3857). One featured offering from Discover is statewide 6 inch imagery collected and licensed by Google. Due to this licensed content, access to the Discover server is currently only for **Utah’s cities, counties, special districts, state agencies, K12/Higher education, and tribes and contractors and formal partners of the immediate licensees.** To obtain access to the Discover server you need to fill out and understand the **Organizational Usage Agreement** available from the [Google Imagery License]({{"/data/google-imagery-license/" | prepend: site.baseurl }}) page. Once the Organizational Usage Agreement is completed, you will receive information about the services and URL links to access the Discover server. The URLs to access the server will contain a quad-word (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) unique to each user or organization.
+
+In addition to the Google imagery, Discover contains imagery services for NAIP and historical high and low resolution collections. The Discover base map services can be read about on [the developer base map pages]({{ "/developer/base-maps/" | prepend: site.baseurl }}).
+
+- Instructions on how to [use the Discover services in ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
+
 ### Adding a WMTS or WMS service to ArcMap
 {: .text-left}
 
