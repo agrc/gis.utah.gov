@@ -14,9 +14,26 @@ wordpress_id: 3141
 wordpress_url: http://gis.utah.gov/?page_id=3141
 date: '2011-11-03 18:11:05 -0600'
 date_gmt: '2011-11-04 00:11:05 -0600'
-categories: []
+categories: [Developer]
 tags: []
 ---
+<div class="grid__col grid__col--1-of-3 text-center">
+    <h5 class="text-center">Imagery plus Overlay base maps</h5>
+    <img src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}">
+</div>
+<div class="grid__col grid__col--1-of-3 text-center">
+    <h5 class="text-center">Terrain</h5>
+    <img src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}">
+</div>
+
+<div class="grid__col grid__col--1-of-3 text-center">
+    <h5 class="text-center">Lite base map</h5>
+    <img src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}">
+</div>
+
+---
+{: .hr-separate }
+
 Do you need a quick, fast base map for your GIS, CAD or web services?
 
 AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow. The Discover services utilize a Web Mercator WGS84 coordinate system (wkid: 3857). The Mapserv services utilize a UTM NAD83 coordinate system (wkid: 26912). Information about transformations between different coordinate systems can be found [here]({{ "/data/googleimagery/" | prepend: site.baseurl }} "Coordinate System and Datum") under `Coordinate System and Datum`.
