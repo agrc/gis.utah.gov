@@ -12,33 +12,6 @@ tags: []
 ---
 <div class="grid">
     <div class="grid__col section">
-        <h2>State Geographic Information Database (SGID)</h2>
-        <p class="readable">
-            Established by state law in 1991, Utah’s SGID ensures that GIS map layers are developed in a
-            coordinated fashion and shared openly. The SGID provides a one-stop access point to hundreds
-            of data layers that were developed, aggregated, or acquired by state government. To the credit
-            of the GIS community across the state, the SGID's data resources are among the most mature and
-            extensive in the nation.
-        </p>
-        <p class="readable">
-            Today, interoperable GIS server technology has diminished the importance of a completely
-            centralized GIS data repository, and it is critical that the latest, best quality GIS data
-            resources are readily discovered and accessed. AGRC strives to ensure that this is true for SGID
-            data layers that are available as downloadable shapefiles or live streaming data services.
-        </p>
-   </div>
-   <div class="grid__col section alternate">
-        <h2>SGID Index</h2>
-        <p class="readable">
-            The SGID Index is a sortable and filterable table containing data items contained in our SGID. It is a great resource to
-            quickly find GIS data and resources important to you. In the SGID Index, you will find the ISO category, the name of the
-            resource, the agency who is the data steward, a short description and a link to a service endpoint if one is available.
-        </p>
-        <p class="section-read-more">
-            <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}" class="btn">SGID Index</a>
-        </p>
-    </div>
-    <div class="grid__col section">
         <h2>Most Popular Datasets</h2>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-3 text-center">
             <a href="{{ "/data/address-overview/" | prepend: site.baseurl }}"><h5 class="text-center">Addresses</h5>
@@ -68,6 +41,33 @@ tags: []
             <a href="{{ "/data/sgid-transportation/" | prepend: site.baseurl }}"><h5 class="text-center">Transportation</h5>
             <img class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}"></a>
         </div>
+    </div>
+    <div class="grid__col section alternate">
+        <h2>State Geographic Information Database (SGID)</h2>
+        <p class="readable">
+            Established by state law in 1991, Utah’s SGID ensures that GIS map layers are developed in a
+            coordinated fashion and shared openly. The SGID provides a one-stop access point to hundreds
+            of data layers that were developed, aggregated, or acquired by state government. To the credit
+            of the GIS community across the state, the SGID's data resources are among the most mature and
+            extensive in the nation.
+        </p>
+        <p class="readable">
+            Today, interoperable GIS server technology has diminished the importance of a completely
+            centralized GIS data repository, and it is critical that the latest, best quality GIS data
+            resources are readily discovered and accessed. AGRC strives to ensure that this is true for SGID
+            data layers that are available as downloadable shapefiles or live streaming data services.
+        </p>
+    </div>
+    <div class="grid__col section">
+        <h2>SGID Index</h2>
+        <p class="readable">
+            The SGID Index is a sortable and filterable table containing data items contained in our SGID. It is a great resource to
+            quickly find GIS data and resources important to you. In the SGID Index, you will find the ISO category, the name of the
+            resource, the agency who is the data steward, a short description and a link to a service endpoint if one is available.
+        </p>
+        <p class="section-read-more">
+            <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}" class="btn">SGID Index</a>
+        </p>
     </div>
     <div class="grid__col section alternate">
         <h2>Data Categories</h2>
