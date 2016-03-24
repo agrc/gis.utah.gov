@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: false
+published: true
 title: Using The Dojo Build System To Speed Up Your ESRI JavaScript API Apps
 author:
   display_name: Map Utah

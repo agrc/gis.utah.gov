@@ -19,7 +19,7 @@ categories:
 tags:
 - javascript
 ---
-In a <a href="{{ "/speed-up-your-esri-javascript-api-webapp/" | prepend: site.baseurl }}">previous post</a>, I outlined how I use the <a href="http:dojotoolkit.org/reference-guide/build/">Dojo Build System</a> to optimize my web app code for production. Specifically I showed how I get around the problem of working with ESRI's <a href="http://help.arcgis.com/en/webapi/javascript/arcgis/">ArcGIS API for JavaScript</a> library which has already been run through the build system. However, with their recent upgrade to AMD-style module loading my handy trick of using:
+In a <a href="{{site.baseurl}}{% post_url 2012-05-01-speed-up-your-esri-javascript-api-webapp %}">previous post</a>, I outlined how I use the <a href="http:dojotoolkit.org/reference-guide/build/">Dojo Build System</a> to optimize my web app code for production. Specifically I showed how I get around the problem of working with ESRI's <a href="http://help.arcgis.com/en/webapi/javascript/arcgis/">ArcGIS API for JavaScript</a> library which has already been run through the build system. However, with their recent upgrade to AMD-style module loading my handy trick of using:
 
 ```js
 dojo['require']('esri.map');

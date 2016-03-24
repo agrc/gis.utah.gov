@@ -19,7 +19,6 @@ categories:
 - Featured
 tags: []
 ---
-<p>&nbsp;</p>
 <p>New Connection Method</p>
 <p>Esri is now providing a tool to create an ArcSDE Connection File wherever you would like on your file system. <span style="color: #ff0000;"> (NOTE:  This tool is only available to users running a Standard (ArcEditor) or Advanced (ArcInfo) license level.  Users of a Basic (ArcView) license will need to download the connection file, available in a link below.)</span>  The tool is located in the standard toolbox under Data Management -&gt; Workspace -&gt; Create ArcSDE Connection File.  Here's a look at where it's located, and what it looks like when filled out:</p>
 <p>&nbsp;</p>

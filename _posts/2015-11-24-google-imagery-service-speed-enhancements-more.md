@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Google Imagery Service Speed Enhancements & More (Update, November 2015)
+title: Google Imagery Service Speed Enhancements & More
 author:
   display_name: Bert Granberg
   login: Bert Granberg

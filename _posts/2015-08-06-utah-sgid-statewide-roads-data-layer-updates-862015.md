@@ -68,7 +68,7 @@ tags:
 </ul>
 <p><span style="text-decoration: underline;">Misc:</span></p>
 <ul>
-<li>Updated the ZIPLEFT and ZIPRIGHT fields to reflect the newly created <a href="{{ "/new-84009-zip-code-in-salt-lake-county/" | prepend: site.baseurl }}">84009 Zip Code</a> in Salt Lake County
+<li>Updated the ZIPLEFT and ZIPRIGHT fields to reflect the newly created <a href="{{site.baseurl}}{% post_url 2015-07-29-new-84009-zip-code-in-salt-lake-county %}">84009 Zip Code</a> in Salt Lake County
 </ul>
 <p><span style="text-decoration: underline;">Blue Stakes of Utah Feedback:</span></p>
 <ul>
