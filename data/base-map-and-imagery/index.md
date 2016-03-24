@@ -29,7 +29,7 @@ In addition to the Google imagery, Discover contains imagery services for NAIP a
 
 - Instructions on how to [use the Discover services in ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
 
-### UTM Servicse on mapserv
+### UTM Services on mapserv
 
 **The planned date to turn off UTM base maps is 1/1/2017.** Unless you must utilize UTM services it is suggested that you utilize the services above from Discover. [Contact]({{ "/about/contact/" | prepend: site.baseurl }}) AGRC if you will need continued support of UTM base map tiles.
 
