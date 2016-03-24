@@ -27,18 +27,18 @@ Instructions for using Discover services in ArcMap 10.x:
 1. Navigate to the newly added `utah imagery – WMTS on discover.agrc.utah.gov` connection and **double click** to connect.
   - You can rename the connection after it has been added
 1. You should see a list of imagery and base map services (explained below):
-  -`utah` – 6-inch statewide natural color aerial photography collected within the last 3 years (licensed)
-  -`utah_2012archive` – Aerial photography updated in `utah` service and archived by acquisition year (licensed)
-  -`utah_2013archive` – Aerial photography updated in `utah` service and archived by acquisition year (licensed)
-  -`doq_1990’s_bw` – 1-meter statewide black & white aerial photography collected in 1990’s (coming soon)
-  -`hro_2012_rgb` – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
-  -`naip_2009_rgb` – 1-meter statewide natural color aerial photography collected in 2009
-  -`naip_2011_nrg` – 1-meter statewide color infrared aerial photography collected in 2011
-  -`naip_2011_rgb` – 1-meter statewide natural color aerial photography collected in 2011
-  -`lite-basemap` – Base map of hillshade, HWYs/streets, cities, boundaries, etc. (gray, muted tone)
-  -`overlay-basemap` – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
-  -`terrain-basemap` – Base map of hillshade, HWYS/streets, parks, forests, water, etc.
-  -`topo-basemap` – Base map of USGS topographic maps
+  - `utah` – 6-inch statewide natural color aerial photography collected within the last 3 years (licensed)
+  - `utah_2012archive` – Aerial photography updated in `utah` service and archived by acquisition year (licensed)
+  - `utah_2013archive` – Aerial photography updated in `utah` service and archived by acquisition year (licensed)
+  - `doq_1990’s_bw` – 1-meter statewide black & white aerial photography collected in 1990’s (coming soon)
+  - `hro_2012_rgb` – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
+  - `naip_2009_rgb` – 1-meter statewide natural color aerial photography collected in 2009
+  - `naip_2011_nrg` – 1-meter statewide color infrared aerial photography collected in 2011
+  - `naip_2011_rgb` – 1-meter statewide natural color aerial photography collected in 2011
+  - `lite-basemap` – Base map of hillshade, HWYs/streets, cities, boundaries, etc. (gray, muted tone)
+  - `overlay-basemap` – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
+  - `terrain-basemap` – Base map of hillshade, HWYS/streets, parks, forests, water, etc.
+  - `topo-basemap` – Base map of USGS topographic maps
 
 #### Notes:
 {: .text-left}
