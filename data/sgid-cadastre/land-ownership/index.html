@@ -231,67 +231,73 @@ BLM (US Bureau of Land Management)
 <p><em>Examples: 9-Mile State Wildlife Area, Dead Horse Point State Park, State Trust Lands Book Cliffs Block, Whiterocks Fish Hatchery<br />
 </em></p>
 <p>Note: Shape_area field is in square meters.</p>
-<a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
+
+<div class="grid__col grid__col--1-of-2">
+    <div class="panel download">
         <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="LandOwnership(All)-downloads">Downloads</h5>
+        <h5 id="LandOwnership-downloads">Downloads</h5>
     </div>
     <div class="panel-content">Download:</p>
 <ul>
-<li>To download this dataset, use the button at the top of this page.</li>
+Download this dataset using the button at the top of the page, or by the link below.
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/LandOwnership/_Statewide/LandOwnership_gdb.zip">Land Ownership: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/LandOwnership/_Statewide/LandOwnership_shp.zip">Land Ownership: Shapefile</a></li>
+
 </ul>
 <p>Other Links:</p>
 <ul>
+<a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
 <li><a href="http://trustlands.utah.gov">School and Institutional Trust Lands Administartion (SITLA)</a></li>
 <li><a href="http://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a></li>
 <li><a href="http://www.blm.gov/wo/st/en.html">Burea of Land Management</a></li>
 </ul>
 
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="LandOwnership(All)-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
+<div class="grid__col grid__col--2-of-2">
+    <div class="panel update">
+        <i class="fa fa-pull-right fa-calendar fa-2x"></i>
+        <h5 id="LandOwnership-updates">Updates</h5>
+    </div>
+    <div class="panel-content">Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
 
-        </div>
     </div>
-    </div>
-<div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="LandOwnershipSubsetQueryExamples">Land Ownership Subset Query Examples</em></h3>
-    </div>
+</div>
+</div>
+
+
+<div class="grid__col grid__col--12-of-12">
+    <h3 id="LandOwnershipSubsetQueryExamples">Land Ownership Subset Query Examples</em></h3>
+
 <p>The following land ownership-related data layers can easily be derived from Cadastre.LandOwnership by using subset (defintion) queries to select a specific set of features:</p>
-<p><img class="productImage-Thumb" src="{{ "/images/LandOwernship_Federal.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>Land owned by the Federal Government.</strong>  This includes land administered by the US Bureau of Land Management, the US Bureau of Reclamation, the US Department of Defense, the US Department of Energy, the US National Park Service, the Utah State Department of Wildlife Resources, the US Forest Service, the US Fish and Wildlife Service and, in some cases, the Utah State Department of State Parks.</p>
-<p>To work with only federal lands, specify a SELECT Where Clause of:</p>
-<dd>OWNER = 'Federal'</dd>
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwernship_Federal.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>Land owned by the Federal Government.</strong>  This includes land administered by the US Bureau of Land Management, the US Bureau of Reclamation, the US Department of Defense, the US Department of Energy, the US National Park Service, the Utah State Department of Wildlife Resources, the US Forest Service, the US Fish and Wildlife Service and, in some cases, the Utah State Department of State Parks.
+To work with only federal lands, specify a SELECT Where Clause of:
+<dd>OWNER = 'Federal'</dd></p>
 
-<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_BLM.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>Bureau of Land Management (BLM).</strong> The BLM has a multi-use mission. Land uses include energy development, livestock grazing, recreation, and timber harvesting, while protecting a wide array of natural, cultural, and historical resources.</p>
-<p>To work with only BLM administered lands (may be different than BLM-owned lands), specify a SELECT Where Clause of:</p>
-<dd>ADMIN = 'BLM'</dd>
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_BLM.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>Bureau of Land Management (BLM).</strong> The BLM has a multi-use mission. Land uses include energy development, livestock grazing, recreation, and timber harvesting, while protecting a wide array of natural, cultural, and historical resources.
+To work with only BLM administered lands (may be different than BLM-owned lands), specify a SELECT Where Clause of:
+<dd>ADMIN = 'BLM'</dd></p>
 
-<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_NPS.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>National Parks and Monuments.</strong> There are five national parks in Utah and seven national monuments in Utah.</p>
-<p>To work with only National Parks and Monuments (Grand Staircase Escalante NM is adminstered by the BLM), specify a SELECT Where Clause of:</p>
-<dd>(ADMIN = 'NPS' or ADMIN = 'BLM') and (DESIG = 'National Park' or DESIG = 'National Monument')</dd>
-<p>To work with all National Park Service Parks, Monuments, &amp; Recreation areas specify a SELECT Where Clause of:</p>
-<dd>ADMIN = 'NPS'</dd>
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_NPS.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>National Parks and Monuments.</strong> There are five national parks in Utah and seven national monuments in Utah.
+To work with only National Parks and Monuments (Grand Staircase Escalante NM is adminstered by the BLM), specify a SELECT Where Clause of:
+<dd>(ADMIN = 'NPS' or ADMIN = 'BLM') and (DESIG = 'National Park' or DESIG = 'National Monument')</dd></p>
+<p>To work with all National Park Service Parks, Monuments, &amp; Recreation areas specify a SELECT Where Clause of:
+<dd>ADMIN = 'NPS'</dd></p>
 
-<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_Private.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>Private land.</strong> In this subset, all non-public lands are assumed private. Private land includes town, city, and county held properties.</p>
-<p>To work with only Privately* held lands, specify a SELECT Where Clause of:</p>
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_Private.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>Private land.</strong> In this subset, all non-public lands are assumed private. Private land includes town, city, and county held properties.
+To work with only Privately* held lands, specify a SELECT Where Clause of:
 <dd>OWNER = 'Private'</dd>
-<p>* Note that lands designated as private may include land currently held by local and other government agencies, not considered to be part of the public lands inventory.</p>
+* Note that lands designated as private may include land currently held by local and other government agencies, not considered to be part of the public lands inventory.</p>
 
-<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_StateTrust.png" | prepend: site.baseurl }}" alt="Changeme" /> <strong>School and Institutional Trust Lands Administration (SITLA).</strong> SITLA is an independent agency of Utah State government. It was created in 1994 by the Utah State Legislature to manage lands granted to the State of Utah by the United States for the support of public schools and other beneficiary institutions.</p>
-<p>To work with only land held by the State of Utah School and Institutional Trust Lands Administration (SITLA), specify a SELECT Where Clause of:</p>
-<dd>OWNER AGENCY = 'SITLA'</dd>
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_StateTrust.png" | prepend: site.baseurl }}" alt="Changeme" /> <strong>School and Institutional Trust Lands Administration (SITLA).</strong> SITLA is an independent agency of Utah State government. It was created in 1994 by the Utah State Legislature to manage lands granted to the State of Utah by the United States for the support of public schools and other beneficiary institutions.
+To work with only land held by the State of Utah School and Institutional Trust Lands Administration (SITLA), specify a SELECT Where Clause of:
+<dd>OWNER AGENCY = 'SITLA'</dd></p>
 
 <p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_Tribal.png" | prepend: site.baseurl }}" alt="" /><strong>Native American Tribal Land.</strong></p>
-<p>To work with only Tribal lands* specify a SELECT Where Clause of:</p>
+To work with only Tribal lands* specify a SELECT Where Clause of:
 <dd>Owner = 'Tribal'</dd>
-<p>* Note, some private land held by tribes may not be reflected.</p>
+* Note, some private land held by tribes may not be reflected.</p>
 
-<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_Wilderness.png" | prepend: site.baseurl }}" alt="Changeme" /> <strong>Wilderness.</strong> Congressional designated wilderness (BLM and US Forest Service)</p>
-<p>To work with only formally designated wilderness areas (USFS and BLM), specify a SELECT Where Clause of:</p>
-<dd>DESIG = 'Wilderness'</dd>
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_Wilderness.png" | prepend: site.baseurl }}" alt="Changeme" /> <strong>Wilderness.</strong> Congressional designated wilderness (BLM and US Forest Service)
+To work with only formally designated wilderness areas (USFS and BLM), specify a SELECT Where Clause of:
+<dd>DESIG = 'Wilderness'</dd></p>
+</div>
