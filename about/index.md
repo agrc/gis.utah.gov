@@ -3,7 +3,7 @@ layout: page
 status: publish
 published: true
 author:
-  display_name: Map Utah
+  display_name: AGRC Staff
   login: Map Utah
   email: agrc@utah.gov
   url: ''
