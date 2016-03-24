@@ -46,8 +46,7 @@ Instructions for using Discover services in ArcMap 10.x:
 - Information about [transformations between different coordinate systems]({{ "/data/googleimagery/" | prepend: site.baseurl }}).
 - It is strongly suggested that you use WMTS for the best performance.
 - If your software will only allow you to use `WMS`, adding a WMS connection is the same as above but substituting `Add WMS server` in step 1.
-- More information about using the Discover services.
-- Latest update about the Discover services.
+- More information about using the [Discover Services]({{ "/data/googleimagery/" | prepend: site.baseurl }}).
 
 ### UTM Basemaps
 {: .text-left}
