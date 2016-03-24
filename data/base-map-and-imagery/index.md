@@ -35,4 +35,4 @@ In addition to the Google imagery, Discover contains imagery services for NAIP a
 
 AGRC has freely served online base maps and imagery services for many years. These imagery services and tiled caches are in the UTM NAD83 Zone 12 projection (wkid: 26912). The caches consist of between 3 to 17 million 256 pixel square jpg tiles and can range from 15G to over 200GB. These caches are standardized on a subset of the Google, Microsoft, and esri scale levels that apply to our state. Web developers can embed any of these base map services in web-based and internet-connected applications. More information about the base maps can be found on the [application developer]({{ "/developer/base-maps/" | prepend: site.baseurl }}) pages.
 
-- Instructions on how [use the mapserv services in ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl | append:"#utm-basemaps"}}).
+- Instructions on how to [use the mapserv services in ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl | append:"#utm-basemaps"}}).
