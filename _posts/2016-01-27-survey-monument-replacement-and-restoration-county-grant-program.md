@@ -5,13 +5,10 @@ published: true
 title: Survey Monument Replacement and Restoration County Grant Program
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
 date: '2016-01-27 13:31:17 -0700'
 date_gmt: '2016-01-27 20:31:17 -0700'
+categories: []
 tags:
 - PLSS
 - MRRC
