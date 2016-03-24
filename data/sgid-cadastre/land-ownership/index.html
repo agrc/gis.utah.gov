@@ -85,17 +85,16 @@ tags:
 <p><strong>Data Type:</strong> GIS Data Layer<br />
 <strong>Steward(s):</strong> SITLA, BLM, &amp; Partners</p>
 <p><strong>Abstract:</strong><br />
-Cadastre.LandOwnership feature class depicts land ownership status and areas of responsibility for the State of Utah surface lands at a scale of 1:24,000.  Maintenance of this data layer is performed by a cooperative federal and state effort between the Bureau of Land Management (BLM) and the State of Utah School and Institutional Trust Lands Administration (SITLA).  Cadastre.LandOwnership is a statewide dataset of land ownership status, and therefore is a compilation of all surface land ownership administration, and designation categories, which are listed below.  Both the Utah School and Institutional Trust Lands Administration (SITLA) and the Bureau of Land Management (BLM) update this dataset regularly.  Revisions of the dataset are made available weekly through the AGRC SGID Database Server.  Standard colors are recommended when displaying this feature class. A layer file containing the standard color scheme is available by contacting SITLA GIS staff directly by calling 801-538-5100, emailing <a href="mailto:TLA-GIS@utah.gov">TLA-GIS@utah.gov</a>, or visiting <a href="http://trustlands.utah.gov">http://trustlands.utah.gov</a>.</p>
-<p><strong>Data Content:</strong><br />
-<em>Users are strongly encouraged to familiarize themselves with the data content in the fields named: OWNER, OWNERAGENCY, ADMIN, DESIG and the two label fields as values from these fields can be used to select subsets for display or analysis</em> (see example layers below).</p>
+Cadastre.LandOwnership feature class depicts land ownership status and areas of responsibility for the State of Utah surface lands at a scale of 1:24,000.  Maintenance of this data layer is performed by a cooperative federal and state effort between the Bureau of Land Management (BLM) and the State of Utah School and Institutional Trust Lands Administration (SITLA).  Cadastre.LandOwnership is a statewide dataset of land ownership status, and therefore is a compilation of all surface land ownership administration, and designation categories.  Both the Utah School and Institutional Trust Lands Administration (SITLA) and the Bureau of Land Management (BLM) update this dataset regularly.  Revisions of the dataset are made available weekly through the AGRC SGID Database Server.  Standard colors are recommended when displaying this feature class. A layer file containing the standard color scheme is available by contacting SITLA GIS staff directly by calling 801-538-5100, emailing <a href="mailto: TLA-GIS@utah.gov">TLA-GIS@utah.gov</a>, or visiting <a href="http://trustlands.utah.gov">http://trustlands.utah.gov</a>.</p>
 <div class="grid package">
     <div class="grid__col grid__col--12-of-12">
-        <h3 id="LandOwnership(All)">Land Ownership (All)</h3>
+        <h3 id="LandOwnership">Land Ownership</h3>
     </div>
     <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/LandOwernship_Federal.png" | prepend: site.baseurl }}" alt="Changeme" />Formal surface ownership, administering agency, designation (if any), and placename labels for public lands; and private lands.</p>
 </p>
-<p>Important descriptive attribute fields listed with valid values or, a short descriptions of features with 'name' label attributes and examples.</p>
+<p><strong>Data Content:</strong><br />
+<em>Users are strongly encouraged to familiarize themselves with the data content in the fields named: OWNER, OWNERAGENCY, ADMIN, DESIG and the two label fields as values from these fields can be used to select subsets for display or analysis</em> (see example layers below).</p>
+<p>Important descriptive attribute fields listed with valid values or, a short description of features with 'name' label attributes and examples.</p>
 <dt>OWNER (The physical Owner of the parcel of land)</dt>
 <dd>Federal (Owned by The United States of America)
 </dd>
@@ -167,8 +166,8 @@ BLM (US Bureau of Land Management)
 <dd>USP (Utah DNR - State Parks)
 </dd>
 <dt>DESIG (the "type" of land use or designation – general land management designations)</dt>
-<p>Describes the "Type" of Land Use or Designation. This field characterizes general land management designations for parcels of land. This field describes how or for what use the land is to be managed. (ex: Designated as Wilderness, National Park, State Park)This field can accommodate, if necessary, further withdrawals, leases, or permits designated by the ADMIN. E.g. If the USFS places a withdrawal on a parcel, i.e. for wilderness designation, the DESIG field can be used to account for this case. However, only a single designation can be addressed in the DESIG field; we cannot account for multiple withdrawals, leases, or permits on a parcel in this data standard. The data steward or editor must decide the most pertinent information to describe in the DESIG field.</p>
-<dd>Bankhead Jones (Federal Bankhead-Jones Lands includes all Federal Bankhead-Jones lands (BLM and USFS);Bankhead-Jones Farm Tenant Act (7 USC 1000, 1006, 1010-1012; 50 Stat. 522) as amended -- Section 31 of the Act of July 22, 1937, directs the Secretary of Agriculture to develop a program of land conservation and utilization in order to correct maladjustments in land use and thus assist in such things as control of soil erosion, reforestation, preservation of natural resources and protection of fish and wildlife)
+<p>Describes the "Type" of Land Use or Designation. This field characterizes general land management designations for parcels of land and describes how, or for what use the land is to be managed (ex: Designated as Wilderness, National Park, State Park). This field can accommodate, if necessary, further withdrawals, leases, or permits designated by the ADMIN. E.g. If the USFS places a withdrawal on a parcel, i.e. for wilderness designation, the DESIG field can be used to account for this case. However, only a single designation can be addressed in the DESIG field; we cannot account for multiple withdrawals, leases, or permits on a parcel in this data standard. The data steward or editor must decide the most pertinent information to describe in the DESIG field.</p>
+<dd>Bankhead Jones (Federal lands (BLM and USFS) acquired under the Bankhead-Jones Farm Tenant Act)
 </dd>
 <dd>Conservation Lands (Land that is being protected, through outright purchase or the purchase of development rights. Easements are held by private non-profit organizations, municipalities and fed or state agencies.)
 </dd>
@@ -222,312 +221,85 @@ BLM (US Bureau of Land Management)
 <dd>Federal Primitive Area</dd>
 <dd>Tribal Land or Reservation</dd>
 <dd>Congressionally Designated Wilderness Area</dd>
-<p><em>examples: Arches National Park (Klondike Bluffs), Canyonlands National Park (The Needles District), Dugway Proving Grounds US Army, Fish Springs National Wildlife Refuge, Grand Gulch Primitive Area, Uinta National Forest (Mount Nebo Wilderness Area), White Mesa Ute Tribal Lands</em></p>
+<p><em>Examples: Arches National Park (Klondike Bluffs), Canyonlands National Park (The Needles District), Dugway Proving Grounds US Army, Fish Springs National Wildlife Refuge, Grand Gulch Primitive Area, Uinta National Forest (Mount Nebo Wilderness Area), White Mesa Ute Tribal Lands</em></p>
 <dt>LABEL_STATE (Administrative names for identifying State Lands, including State Parks, Wildlife Areas, State Trust Lands Administrative Blocks and Sovereign Lands and the Private Lands within each proclamation boundary, where applicable). </dt>
-<p>This field contains label text if the feature is a:</dt>
+<p>This field contains label text if the feature is a:
 <dd>State Fish Hatchery</dd>
 <dd>School and Institutional Trust Lands Administration (SITLA) Block</dd>
 <dd>State Park</dd>
 <dd>State Wildlife Area</dd>
-<p><em>examples: 9-Mile State Wildlife Area, Dead Horse Point State Park, State Trust Lands Book Cliffs Block, Whiterocks Fish Hatchery<br />
+<p><em>Examples: 9-Mile State Wildlife Area, Dead Horse Point State Park, State Trust Lands Book Cliffs Block, Whiterocks Fish Hatchery<br />
 </em></p>
 <p>Note: Shape_area field is in square meters.</p>
+
 <a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
+<div class="grid__col grid__col--1-of-2">
+    <div class="panel download">
         <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="LandOwnership(All)-downloads">Downloads</h5>
+        <h5 id="LandOwnership-downloads">Downloads</h5>
     </div>
     <div class="panel-content">Download:</p>
 <ul>
-<li>To download this dataset, use the button at the top of this page.</li>
+Download this dataset using the button at the top of the page, or by the link below.
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/LandOwnership/_Statewide/LandOwnership_gdb.zip">Land Ownership: File Geodatabase</a></li>
+<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/LandOwnership/_Statewide/LandOwnership_shp.zip">Land Ownership: Shapefile</a></li>
+
 </ul>
 <p>Other Links:</p>
 <ul>
+<a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
 <li><a href="http://trustlands.utah.gov">School and Institutional Trust Lands Administartion (SITLA)</a></li>
 <li><a href="http://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a></li>
 <li><a href="http://www.blm.gov/wo/st/en.html">Burea of Land Management</a></li>
 </ul>
 
-        </div>
+<div class="grid__col grid__col--2-of-2">
+    <div class="panel update">
+        <i class="fa fa-pull-right fa-calendar fa-2x"></i>
+        <h5 id="LandOwnership-updates">Updates</h5>
     </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="LandOwnership(All)-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
+    <div class="panel-content">Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
 
-        </div>
     </div>
-    </div><p><strong><em>Subset Layer Examples:</em></strong></p>
+</div>
+</div>
+
+<div class="grid__col grid__col--12-of-12">
+    <h3 id="LandOwnershipSubsetQueryExamples">Land Ownership Subset Query Examples</em></h3>
+
 <p>The following land ownership-related data layers can easily be derived from Cadastre.LandOwnership by using subset (defintion) queries to select a specific set of features:</p>
-<div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="AllFederalLand<em>subsetlayer</em>">All Federal Land <em>subset layer</em></h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/LandOwernship_Federal.png" | prepend: site.baseurl }}" alt="Changeme" />Land owned by the Federal Government.  This includes land administered by the US Bureau of Land Management, the US Bureau of Reclamation, the US Department of Defense, the US Department of Energy, the US National Park Service, the Utah State Department of Wildlife Resources, the US Forest Service, the US Fish and Wildlife Service and, in some cases, the Utah State Department of State Parks.</p>
-To work with only federal lands, specify a SELECT Where Clause of:</p>
-<p>OWNER = 'Federal'</p>
-<a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwernship_Federal.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>Land owned by the Federal Government.</strong>  This includes land administered by the US Bureau of Land Management, the US Bureau of Reclamation, the US Department of Defense, the US Department of Energy, the US National Park Service, the Utah State Department of Wildlife Resources, the US Forest Service, the US Fish and Wildlife Service and, in some cases, the Utah State Department of State Parks.
+To work with only federal lands, specify a SELECT Where Clause of:
+<dd>OWNER = 'Federal'</dd></p>
+
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_BLM.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>Bureau of Land Management (BLM).</strong> The BLM has a multi-use mission. Land uses include energy development, livestock grazing, recreation, and timber harvesting, while protecting a wide array of natural, cultural, and historical resources.
+To work with only BLM administered lands (may be different than BLM-owned lands), specify a SELECT Where Clause of:
+<dd>ADMIN = 'BLM'</dd></p>
+
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_NPS.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>National Parks and Monuments.</strong> There are five national parks in Utah and seven national monuments in Utah.
+To work with only National Parks and Monuments (Grand Staircase Escalante NM is adminstered by the BLM), specify a SELECT Where Clause of:
+<dd>(ADMIN = 'NPS' or ADMIN = 'BLM') and (DESIG = 'National Park' or DESIG = 'National Monument')</dd></p>
+<p>To work with all National Park Service Parks, Monuments, &amp; Recreation areas specify a SELECT Where Clause of:
+<dd>ADMIN = 'NPS'</dd></p>
+
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_Private.png" | prepend: site.baseurl }}" alt="Changeme" /><strong>Private land.</strong> In this subset, all non-public lands are assumed private. Private land includes town, city, and county held properties.
+To work with only Privately* held lands, specify a SELECT Where Clause of:
+<dd>OWNER = 'Private'</dd>
+* Note that lands designated as private may include land currently held by local and other government agencies, not considered to be part of the public lands inventory.</p>
+
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_StateTrust.png" | prepend: site.baseurl }}" alt="Changeme" /> <strong>School and Institutional Trust Lands Administration (SITLA).</strong> SITLA is an independent agency of Utah State government. It was created in 1994 by the Utah State Legislature to manage lands granted to the State of Utah by the United States for the support of public schools and other beneficiary institutions.
+To work with only land held by the State of Utah School and Institutional Trust Lands Administration (SITLA), specify a SELECT Where Clause of:
+<dd>OWNER AGENCY = 'SITLA'</dd></p>
+
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_Tribal.png" | prepend: site.baseurl }}" alt="" /><strong>Native American Tribal Land.</strong></p>
+To work with only Tribal lands* specify a SELECT Where Clause of:
+<dd>Owner = 'Tribal'</dd>
+* Note, some private land held by tribes may not be reflected.</p>
+
+<p><img class="productImage-Thumb" src="{{ "/images/LandOwnership_Wilderness.png" | prepend: site.baseurl }}" alt="Changeme" /> <strong>Wilderness.</strong> Congressional designated wilderness (BLM and US Forest Service)
+To work with only formally designated wilderness areas (USFS and BLM), specify a SELECT Where Clause of:
+<dd>DESIG = 'Wilderness'</dd></p>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="AllFederalLand<em>subsetlayer</em>-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li>To download this dataset, use the button at the top of this page.</li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://trustlands.utah.gov">School and Institutional Trust Lands Administartion (SITLA)</a></li>
-<li><a href="http://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a></li>
-<li><a href="http://www.blm.gov/wo/st/en.html">Burea of Land Management</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="AllFederalLand<em>subsetlayer</em>-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="BureauofLandManagement(BLM)Land<em>subsetlayer</em>">Bureau of Land Management (BLM) Land <em>subset layer</em></h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/LandOwnership_BLM.png" | prepend: site.baseurl }}" alt="Changeme" />Public land in Utah owned and managed by the Bureau of Land Management. The BLM has a mult-use mission. Land uses include energy development, livestock grazing, recreation, and timber harvesting, while protecting a wide array of natural, cultural, and historical resources.</p>
-To work with only BLM administered lands (may be different than BLM-owned lands), specify a SELECT Where Clause of:</p>
-<p>ADMIN = 'BLM'</p>
-<p>Formal Disclaimer: Cadastre.LandOwnership data is for REFERENCE USE ONLY and is not suitable for legal, engineering or surveying purposes.  Users of this information should review or consult the primary data and information sources to ascertain the usability of the information.  SITLA provides this data in good faith and shall in no event be liable for any incorrect results or any special, indirect or consequential damages to any party, arising out of or in connection with the use or the inability to use the data hereon.  Land parcels, lease boundaries and associated SITLA data layers may have been adjusted to allow for visual "best fit."  The Surface Ownership Land Status data is maintained by SITLA to reflect current trust land status and surface ownership for the State of Utah.  Note:  While SITLA seeks to verify data for accuracy and content, discrepancies may exist within the data.  Acquiring the most updated SITLA ownership GIS data may require contacting the GIS staff directly 801-538-5100 or <a href="mailto:TLA-GIS@utah.gov">TLA-GIS@utah.gov</a>.  The SITLA GIS department welcomes your comments and concerns regarding the data and will attempt to resolve issues as they are brought to our attention.<br />
-<a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="BureauofLandManagement(BLM)Land<em>subsetlayer</em>-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li>To download this dataset, use the button at the top of this page.</li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://trustlands.utah.gov">School and Institutional Trust Lands Administartion (SITLA)</a></li>
-<li><a href="http://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a></li>
-<li><a href="http://www.blm.gov/wo/st/en.html">Burea of Land Management</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="BureauofLandManagement(BLM)Land<em>subsetlayer</em>-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="NationalParks&amp;Monuments<em>subsetlayer</em>">National Parks &amp; Monuments <em>subset layer</em></h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/LandOwnership_NPS.png" | prepend: site.baseurl }}" alt="Changeme" />There are five national parks in Utah and seven national monuments.</p>
-To work with only National Parks and Monuments (Grand Staircase Escalante NM is adminstered by the BLM), specify a SELECT Where Clause of:</p>
-<p>(ADMIN = 'NPS' or ADMIN = 'BLM') and (DESIG = 'National Park' or DESIG = 'National Monument')</p>
-<p>To work with all National Park Service Parks, Monuments, &amp; Recreation areas specify a SELECT Where Clause of:</p>
-<p>ADMIN = 'NPS'</p>
-<p>Formal Disclaimer: Cadastre.LandOwnership data is for REFERENCE USE ONLY and is not suitable for legal, engineering or surveying purposes.  Users of this information should review or consult the primary data and information sources to ascertain the usability of the information.  SITLA provides this data in good faith and shall in no event be liable for any incorrect results or any special, indirect or consequential damages to any party, arising out of or in connection with the use or the inability to use the data hereon.  Land parcels, lease boundaries and associated SITLA data layers may have been adjusted to allow for visual "best fit."  The Surface Ownership Land Status data is maintained by SITLA to reflect current trust land status and surface ownership for the State of Utah.  Note:  While SITLA seeks to verify data for accuracy and content, discrepancies may exist within the data.  Acquiring the most updated SITLA ownership GIS data may require contacting the GIS staff directly 801-538-5100 or <a href="mailto:TLA-GIS@utah.gov">TLA-GIS@utah.gov</a>.  The SITLA GIS department welcomes your comments and concerns regarding the data and will attempt to resolve issues as they are brought to our attention.<br />
-<a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="NationalParks&amp;Monuments<em>subsetlayer</em>-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li>To download this dataset, use the button at the top of this page.</li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://www.nps.gov/index.htm">National Park Service</a></li>
-<li><a href="http://trustlands.utah.gov/">School and Institutional Trust Lands Administartion (SITLA)</a></li>
-<li><a href="http://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a></li>
-<li><a href="http://www.blm.gov/wo/st/en.html">Burea of Land Management</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="NationalParks&amp;Monuments<em>subsetlayer</em>-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="PrivateLand<em>subsetlayer</em>">Private Land <em>subset layer</em></h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/LandOwnership_Private.png" | prepend: site.baseurl }}" alt="Changeme" />Privately owned land in Utah. In this dataset, all non-public lands are assumed private. Private land includes town, city, and county held properties.</p>
-</p>
-<p>To work with only Privately* held lands, specify a SELECT Where Clause of:</p>
-<p>OWNER = 'Private'</p>
-<p>* Note that lands designated as private may include land currently held by local and other government agencies, not considered to be part of the public lands inventory</p>
-<a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="PrivateLand<em>subsetlayer</em>-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li>To download this dataset, use the button at the top of this page.</li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://trustlands.utah.gov/">School and Institutional Trust Lands Administartion (SITLA)</a></li>
-<li><a href="http://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a></li>
-<li><a href="http://www.blm.gov/wo/st/en.html">Burea of Land Management</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="PrivateLand<em>subsetlayer</em>-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Updated weekly (early Monday am) through automated data exchange with SITLA.<br />
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="StateTrustLand<em>subsetlayer</em>">State Trust Land <em>subset layer</em></h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/LandOwnership_StateTrust.png" | prepend: site.baseurl }}" alt="Changeme" />The State of Utah School and Institutional Trust Lands Administration (SITLA) is an independent agency of State government. It was created in 1994 by the Utah State Legislature to manage lands granted to the State of Utah by the United States for the support of public schools and other beneficiary institutions.</p>
-To work with only land held by the State of Utah School and Institutional Trust Lands Administration (SITLA), specify a SELECT Where Clause of:</p>
-<p>(OWNER AGENCY = 'SITLA')</p>
-<p>Formal Disclaimer: Cadastre.LandOwnership data is for REFERENCE USE ONLY and is not suitable for legal, engineering or surveying purposes.  Users of this information should review or consult the primary data and information sources to ascertain the usability of the information.  SITLA provides this data in good faith and shall in no event be liable for any incorrect results or any special, indirect or consequential damages to any party, arising out of or in connection with the use or the inability to use the data hereon.  Land parcels, lease boundaries and associated SITLA data layers may have been adjusted to allow for visual "best fit."  The Surface Ownership Land Status data is maintained by SITLA to reflect current trust land status and surface ownership for the State of Utah.  Note:  While SITLA seeks to verify data for accuracy and content, discrepancies may exist within the data.  Acquiring the most updated SITLA ownership GIS data may require contacting the GIS staff directly 801-538-5100 or <a href="mailto:TLA-GIS@utah.gov">TLA-GIS@utah.gov</a>.  The SITLA GIS department welcomes your comments and concerns regarding the data and will attempt to resolve issues as they are brought to our attention.<br />
-<a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="StateTrustLand<em>subsetlayer</em>-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li>To download this dataset, use the button at the top of this page.</li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://trustlands.utah.gov/">School and Institutional Trust Lands Administartion (SITLA)</a></li>
-<li><a href="http://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a></li>
-<li><a href="http://www.blm.gov/wo/st/en.html">Burea of Land Management</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="StateTrustLand<em>subsetlayer</em>-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="TribalLand<em>subsetlayer</em>">Tribal Land <em>subset layer</em></h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/LandOwnership_Tribal.png" | prepend: site.baseurl }}" alt="" />Native American Tribal Ownership.</p>
-To work with only Tribal lands specify a SELECT Where Clause of:</p>
-<p>Owner = 'Tribal'</p>
-<a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="TribalLand<em>subsetlayer</em>-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li>To download this dataset, use the button at the top of this page.</li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://trustlands.utah.gov/">School and Institutional Trust Lands Administartion (SITLA)</a></li>
-<li><a href="http://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a></li>
-<li><a href="http://www.blm.gov/wo/st/en.html">Burea of Land Management</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="TribalLand<em>subsetlayer</em>-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="Wilderness,FormallyDesignated<em>subsetlayer</em>">Wilderness, Formally Designated <em>subset layer</em></h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/LandOwnership_Wilderness.png" | prepend: site.baseurl }}" alt="Changeme" />Congressional designated wilderness (BLM and US Forest Service)</p>
-To work with only formally designated wilderness areas (USFS and BLM), specify a SELECT Where Clause of:</p>
-<p>DESIG = 'Wilderness'</p>
- <a href="mailto:TLA-GIS@utah.gov">SITLA GIS Staff</a> or (801)538-5100.</p>
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="Wilderness,FormallyDesignated<em>subsetlayer</em>-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li>To download this dataset, use the button at the top of this page.</li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://trustlands.utah.gov/">School and Institutional Trust Lands Administartion (SITLA)</a></li>
-<li><a href="http://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a></li>
-<li><a href="http://www.blm.gov/wo/st/en.html">Burea of Land Management</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="Wilderness,FormallyDesignated<em>subsetlayer</em>-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Updated weekly (early Monday am) through automated data exchange with SITLA.</p>
-
-        </div>
-    </div>
-    </div>
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms
