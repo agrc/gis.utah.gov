@@ -1,3 +1,4 @@
+var repoName = 'website';
 module.exports = function (grunt) {
     'use strict';
     // Project configuration
@@ -44,11 +45,6 @@ module.exports = function (grunt) {
             }
         },
         jekyll: {
-            githubio: {
-                options: {
-                    config: '_config.yml'
-                }
-            },
             main: {
                 options: {
                     port: 4444,
@@ -60,57 +56,40 @@ module.exports = function (grunt) {
             }
         },
         replace: {
-            localConfig: {
+            user: {
                 options: {
                     patterns: [{
-                        match: 'baseurl',
-                        replacement: '""'
-                    }, {
+                        match: 'sass',
+                        replacement: 'nested'
+                    }]
+                },
+                src: '_config.yml_',
+                dest: '_config.yml'
+            },
+            repo: {
+                options: {
+                    patterns: [{
                         match: 'sass',
                         replacement: 'nested'
                     }, {
-                        match: 'url',
-                        replacement: '"/"'
+                        match: /\"\/bower_component/g,
+                        replacement: '"/' + repoName + '/bower_component'
                     }]
                 },
-                src: '_config.yml_',
-                dest: '_config.yml'
+                files: [
+                    {src: '_config.yml_', dest: '_config.yml'},
+                    {src: '_sass/vars.scss', dest: '_sass/vars.scss'}
+                ]
             },
-            localFontAwesome: {
+            sass: {
                 options: {
                     patterns: [{
-                        match: /\"\/website/g,
-                        replacement: '"'
-                    }]
-                },
-                src: '_sass/vars.scss',
-                dest: '_sass/vars.scss'
-            },
-            githubioConfig: {
-                options: {
-                    patterns: [{
-                        match: 'baseurl',
-                        replacement: '"/website"'
-                    }, {
                         match: 'sass',
                         replacement: 'compressed'
-                    }, {
-                        match: 'url',
-                        replacement: '"http://agrc.github.io"'
                     }]
                 },
                 src: '_config.yml_',
                 dest: '_config.yml'
-            },
-            githubioFontAwesome: {
-                options: {
-                    patterns: [{
-                        match: /\"\/bower_component/g,
-                        replacement: '"/website/bower_component'
-                    }]
-                },
-                src: '_sass/vars.scss',
-                dest: '_sass/vars.scss'
             }
         }
     });
@@ -123,16 +102,24 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-replace');
 
+    // use this task if you are running this from user.github.io or localhost:4444
     grunt.registerTask('default', [
         'newer:imagemin',
-        'replace:localConfig',
-        'replace:localFontAwesome',
+        'repalce:user',
         'jekyll:main'
     ]);
 
-    grunt.registerTask('gh-pages', [
+    // use this task if you are running this from user.github.io/repository
+    // set repoName at the top of the file to match your repository
+    grunt.registerTask('repo', [
         'newer:imagemin',
-        'replace:githubioConfig',
-        'replace:githubioFontAwesome'
+        'replace:repo',
+        'jekyll:main'
     ]);
+
+    // run this before publishing to crunch all the stuff
+    grunt.registerTask('compress', [
+        'newer:imagemin',
+        'replace:sass'
+    ])
 };
