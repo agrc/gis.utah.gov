@@ -180,7 +180,9 @@
                 </p>
             </div>
         </div>
-        <div class="muted text-center">Build: {{ site.github.build_revision }}</div>
+        {% if site.github %}
+        <div class="muted text-center">Build: <a href="{{site.github.repository_url}}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | truncate: 7 }}</div>
+        {% endif %}
     </footer>
     <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
