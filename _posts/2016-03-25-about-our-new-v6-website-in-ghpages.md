@@ -42,4 +42,6 @@ Keep in mind that this is really the first of two phases. Phase 1 has moved us a
 
 We’ve got more work to complete under Phase 1, but Phase 2 blueprints are starting to come together. Phase 2 will involve focusing on filling in gaps in live, streaming map data web services, migrating metadata content currently contained within SGID data package web pages onto a Utah-wide Esri Open Data platform site. We are eagerly awaiting their rumored ‘portal affiliation’ functionality that is being developed for the hosted (AGOL) and local Esri portal environments. We think this will make it easier to bring together and sustain open and interactive GIS data content across the distributed Utah GIS community.
 
-As always, we welcome and appreciate your feedback on the gis.utah.gov site.
+As always, we welcome and appreciate your [feedback](mailto:agrc@utah.gov?subject=gis.utah.gov website feedback) on the gis.utah.gov site.
+
+Lastly, thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, drive, and mentoring that got us to v6.0!
