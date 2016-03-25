@@ -44,4 +44,4 @@ We’ve got more work to complete under Phase 1, but Phase 2 blueprints are star
 
 As always, we welcome and appreciate your [feedback](mailto:agrc@utah.gov?subject=gis.utah.gov website feedback) on the gis.utah.gov site.
 
-Lastly, thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, drive, and mentoring that got us to v6.0!
+Lastly, thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, leadership, and GH mentoring that got us all to v6.0!
