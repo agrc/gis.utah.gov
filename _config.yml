@@ -3,14 +3,14 @@ title: Utah Mapping Portal
 email: agrc@utah.gov
 description: Utah Mapping Portal | The Utah Automated Geographic Reference Center
 baseurl: ""
-url: "https://gis.utah.gov"
+url: "http://gis.utah.gov"
 highlighter: rouge
 twitter_username: MapUtah
 github_username: agrc
 facebook_username: UtahAGRC
 vimeo_username: utahagrc
 permalink: /:title
-production_url: 'https://gis.utah.gov'
+production_url: 'http://gis.utah.gov'
 analytics:
     google:
         tracking_id: 'UA-11849964-41'
