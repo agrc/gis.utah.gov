@@ -3,9 +3,9 @@ layout: page
 status: publish
 title: SGID Index
 ---
-<h6 id='show_filters' class='pointer'>Show Filters</h6>
-<div id='filters' class='hidden'><a id="filter_basemap">basemap</a> | <a id="filter_bioscience">bioscience</a> | <a id="filter_boundaries">boundaries</a> | <a id="filter_cadastre">cadastre</a> | <a id="filter_climate">climate</a> | <a id="filter_demographic">demographic</a> | <a id="filter_economy">economy</a> | <a id="filter_elevation">elevation</a> | <a id="filter_energy">energy</a> | <a id="filter_environment">environment</a> | <a id="filter_farming">farming</a> | <a id="filter_geoscience">geoscience</a> | <a id="filter_health">health</a> | <a id="filter_history">history</a> | <a id="filter_indices">indices</a> | <a id="filter_location">location</a> | <a id="filter_planning">planning</a> | <a id="filter_political">political</a> | <a id="filter_raster">raster</a> | <a id="filter_recreation">recreation</a> | <a id="filter_society">society</a> | <a id="filter_transportation">transportation</a> | <a id="filter_utilities">utilities</a> | <a id="filter_water">water</a></div>
-<h6><a href='https://github.com/javve/list.js'>Simple Filter</a> (matches text in individual columns)</h6>
+<h6 id='show_filters' class='pointer'><i class="fa fa-search"></i> Show Filters</h6>
+<div id='filters' class='hidden'><a id="filter_basemap" class="filter-item">basemap</a> | <a id="filter_bioscience" class="filter-item">bioscience</a> | <a id="filter_boundaries" class="filter-item">boundaries</a> | <a id="filter_cadastre" class="filter-item">cadastre</a> | <a id="filter_climate" class="filter-item">climate</a> | <a id="filter_demographic" class="filter-item">demographic</a> | <a id="filter_economy" class="filter-item">economy</a> | <a id="filter_elevation" class="filter-item">elevation</a> | <a id="filter_energy" class="filter-item">energy</a> | <a id="filter_environment" class="filter-item">environment</a> | <a id="filter_farming" class="filter-item">farming</a> | <a id="filter_geoscience" class="filter-item">geoscience</a> | <a id="filter_health" class="filter-item">health</a> | <a id="filter_history" class="filter-item">history</a> | <a id="filter_indices" class="filter-item">indices</a> | <a id="filter_location" class="filter-item">location</a> | <a id="filter_planning" class="filter-item">planning</a> | <a id="filter_political" class="filter-item">political</a> | <a id="filter_raster" class="filter-item">raster</a> | <a id="filter_recreation" class="filter-item">recreation</a> | <a id="filter_society" class="filter-item">society</a> | <a id="filter_transportation" class="filter-item">transportation</a> | <a id="filter_utilities" class="filter-item">utilities</a> | <a id="filter_water" class="filter-item">water</a></div>
+<h6>Simple Filter (matches text in individual columns with <a href='https://github.com/javve/list.js'>list.js</a>)</h6>
 <div id='table' class='datatable'>
     <input class="search" placeholder="Search SGID Index" />
     <table>
@@ -3761,62 +3761,4 @@ title: SGID Index
     </table>
 </div>
 <script src="{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}"></script>
-<script>
-    var options = {
-    valueNames: [ 'name', 'category', 'agency', 'description' ]
-    };
-
-    var filterNode = document.getElementById('filters');
-    var togglerNode = document.getElementById('show_filters');
-    var datatable = new List('table', options);
-
-    function getParameterByName(name, url) {
-        if (!url) {
-            url = window.location.href;
-        }
-
-        name = name.replace(/[\[\]]/g, "\$&");
-        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-            results = regex.exec(url);
-        if (!results) {
-            return null
-        };
-        if (!results[2]) {
-            return '';
-        }
-
-        return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-
-    var category = getParameterByName('category');
-    if (category){
-        datatable.search(category, ['category']);
-    }
-
-    var filterCategories = function(e) {
-        if (!e && !e.target) {
-            return;
-        }
-
-        var clicked = e.target.id;
-
-        var category = clicked.split('_')[1];
-
-        if (category){
-            datatable.search(category, ['category']);
-        }
-    };
-
-    var toggleCategories = function() {
-        if ((' ' + filterNode.classList + ' ').indexOf('hidden') >= 0) {
-            filterNode.classList.remove('hidden');
-            togglerNode.innerHTML = 'Hide Filters';
-        } else {
-            filterNode.classList.add('hidden');
-            togglerNode.innerHTML = 'Show Filters';
-        }
-    };
-
-    filterNode.addEventListener('click', filterCategories);
-    togglerNode.addEventListener('click', toggleCategories);
-</script>
+<script src="{{ "/js/dist/list.js" | prepend: site.baseurl "}}"></script>

@@ -85,13 +85,13 @@ layout: page
 status: publish
 title: SGID Index
 ---
-<h6 id='show_filters' class='pointer'>Show Filters</h6>
+<h6 id='show_filters' class='pointer'><i class="fa fa-search"></i> Show Filters</h6>
 <div id='filters' class='hidden'>{}</div>
-<h6><a href='https://github.com/javve/list.js'>Simple Filter</a> (matches text in individual columns)</h6>
+<h6>Simple Filter (matches text in individual columns with <a href='https://github.com/javve/list.js'>list.js</a>)</h6>
 <div id='table' class='datatable'>
     <input class="search" placeholder="Search SGID Index" />
     <table>
-    '''.format(' | '.join(['<a id="filter_{0}">{0}</a>'.format(x) for x in categories if len(x) > 0]))
+    '''.format(' | '.join(['<a id="filter_{0}" class="filter-item">{0}</a>'.format(x) for x in categories if len(x) > 0]))
 
     once = True
     for item in data:
@@ -112,65 +112,7 @@ title: SGID Index
     </table>
 </div>
 <script src="{{ "/bower_components/list.js/dist/list.js" | prepend: site.baseurl }}"></script>
-<script>
-    var options = {
-    valueNames: [ 'name', 'category', 'agency', 'description' ]
-    };
-
-    var filterNode = document.getElementById('filters');
-    var togglerNode = document.getElementById('show_filters');
-    var datatable = new List('table', options);
-
-    function getParameterByName(name, url) {
-        if (!url) {
-            url = window.location.href;
-        }
-
-        name = name.replace(/[\[\]]/g, "\\$&");
-        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-            results = regex.exec(url);
-        if (!results) {
-            return null
-        };
-        if (!results[2]) {
-            return '';
-        }
-
-        return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-
-    var category = getParameterByName('category');
-    if (category){
-        datatable.search(category, ['category']);
-    }
-
-    var filterCategories = function(e) {
-        if (!e && !e.target) {
-            return;
-        }
-
-        var clicked = e.target.id;
-
-        var category = clicked.split('_')[1];
-
-        if (category){
-            datatable.search(category, ['category']);
-        }
-    };
-
-    var toggleCategories = function() {
-        if ((' ' + filterNode.classList + ' ').indexOf('hidden') >= 0) {
-            filterNode.classList.remove('hidden');
-            togglerNode.innerHTML = 'Hide Filters';
-        } else {
-            filterNode.classList.add('hidden');
-            togglerNode.innerHTML = 'Show Filters';
-        }
-    };
-
-    filterNode.addEventListener('click', filterCategories);
-    togglerNode.addEventListener('click', toggleCategories);
-</script>
+<script src="{{ "/js/dist/list.js" | prepend: site.baseurl "}}"></script>
 '''
 
     return html
