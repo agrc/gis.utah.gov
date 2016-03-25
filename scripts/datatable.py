@@ -87,7 +87,7 @@ title: SGID Index
 ---
 <h6 id='show_filters' class='pointer'><i class="fa fa-search"></i> Show Filters</h6>
 <div id='filters' class='hidden'>{}</div>
-<h6>Simple Filter (matches text in individual columns with <a href='https://github.com/javve/list.js'>list.js</a>)</h6>
+<div class="muted text-center">Simple Filter (matches text in individual columns with <a href='https://github.com/javve/list.js'>list.js</a>)</div>
 <div id='table' class='datatable'>
     <input class="search" placeholder="Search SGID Index" />
     <table>
