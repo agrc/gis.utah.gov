@@ -2,11 +2,12 @@
 {
     "env": {
         "browser": true,
-        "jasmine": true,
         "amd": true,
         "node": true
     },
-    "globals": {},
+    "globals": {
+        'List'
+        },
     "rules": {
         "no-bitwise": 2,
         "curly": [
