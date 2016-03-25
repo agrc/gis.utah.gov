@@ -85,10 +85,11 @@ layout: page
 status: publish
 title: SGID Index
 ---
-<span id='show_filters' class='pointer'>Show Filters</span>
+<h6 id='show_filters' class='pointer'>Show Filters</h6>
 <div id='filters' class='hidden'>{}</div>
+<h6><a href='https://github.com/javve/list.js'>Simple Filter</a> (matches text in individual columns)</h6>
 <div id='table' class='datatable'>
-    <input class="search" placeholder="Search Data" />
+    <input class="search" placeholder="Search SGID Index" />
     <table>
     '''.format(' | '.join(['<a id="filter_{0}">{0}</a>'.format(x) for x in categories if len(x) > 0]))
 

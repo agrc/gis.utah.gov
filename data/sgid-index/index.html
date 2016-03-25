@@ -3,10 +3,11 @@ layout: page
 status: publish
 title: SGID Index
 ---
-<span id='show_filters' class='pointer'>Show Filters</span>
+<h6 id='show_filters' class='pointer'>Show Filters</h6>
 <div id='filters' class='hidden'><a id="filter_basemap">basemap</a> | <a id="filter_bioscience">bioscience</a> | <a id="filter_boundaries">boundaries</a> | <a id="filter_cadastre">cadastre</a> | <a id="filter_climate">climate</a> | <a id="filter_demographic">demographic</a> | <a id="filter_economy">economy</a> | <a id="filter_elevation">elevation</a> | <a id="filter_energy">energy</a> | <a id="filter_environment">environment</a> | <a id="filter_farming">farming</a> | <a id="filter_geoscience">geoscience</a> | <a id="filter_health">health</a> | <a id="filter_history">history</a> | <a id="filter_indices">indices</a> | <a id="filter_location">location</a> | <a id="filter_planning">planning</a> | <a id="filter_political">political</a> | <a id="filter_raster">raster</a> | <a id="filter_recreation">recreation</a> | <a id="filter_society">society</a> | <a id="filter_transportation">transportation</a> | <a id="filter_utilities">utilities</a> | <a id="filter_water">water</a></div>
+<h6><a href='https://github.com/javve/list.js'>Simple Filter</a> (matches text in individual columns)</h6>
 <div id='table' class='datatable'>
-    <input class="search" placeholder="Search Data" />
+    <input class="search" placeholder="Search SGID Index" />
     <table>
             <thead>
             <tr>
@@ -1724,6 +1725,41 @@ title: SGID Index
                 <td data-th="name" class="name"><a href="{{ "/data/geoscience/" | prepend: site.baseurl }}">Geologic Veins</a></td>
                 <td data-th="agency" class="agency">UGS</td>
                 <td data-th="description" class="description">Geologic veins</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">geoscience</td>
+                <td data-th="name" class="name"><a href="{{ "/data/geoscience/" | prepend: site.baseurl }}">Landslide Compilation Debris Flow Paths</a></td>
+                <td data-th="agency" class="agency">UGS</td>
+                <td data-th="description" class="description">Landslide Compilation Debris Flow Path feature class represents debris-flow paths throughout Utah.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">geoscience</td>
+                <td data-th="name" class="name"><a href="{{ "/data/geoscience/" | prepend: site.baseurl }}">Landslide Compilation Polygons</a></td>
+                <td data-th="agency" class="agency">UGS</td>
+                <td data-th="description" class="description">Compiled landslide deposits of Utah.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">geoscience</td>
+                <td data-th="name" class="name"><a href="{{ "/data/geoscience/" | prepend: site.baseurl }}">Landslide Compilation Scarps</a></td>
+                <td data-th="agency" class="agency">UGS</td>
+                <td data-th="description" class="description">Compiled landslide scarps of Utah.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">geoscience</td>
+                <td data-th="name" class="name"><a href="{{ "/data/geoscience/" | prepend: site.baseurl }}">Landslide Inventory Mapped Areas</a></td>
+                <td data-th="agency" class="agency">UGS</td>
+                <td data-th="description" class="description">Area boundaries of inventoried and mapped landslides.</td>
+                <td data-th="service" class="service"></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">geoscience</td>
+                <td data-th="name" class="name"><a href="{{ "/data/geoscience/" | prepend: site.baseurl }}">Landslide Inventory Polygons</a></td>
+                <td data-th="agency" class="agency">UGS</td>
+                <td data-th="description" class="description">Inventoried and mapped landslides.</td>
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
