@@ -14,11 +14,11 @@ tags:
 - typescript
 ---
 
-At some point in every TypeScript introduction that I have been to the presenter says something to the effect of:
+At some point in every TypeScript introduction that I have been to, the presenter says something to the effect of:
 
 >Since TypeScript is a superset of JavaScript, all JavaScript is valid TypeScript. Getting started is easy. Just change the file name extensions from `.js` to `.ts` and then incrementally upgrade your code to TypeScript.
 
-For Dojo/AMD-based projects I’ve found this statement a little too good to be true. Following are the changes that I had to make (after changing the file extensions) to get the project back up and running again.
+For Dojo/AMD-based projects, I’ve found this statement a little too good to be true. Following are the changes that I had to make (after changing the file extensions) to get the project back up and running again.
 
 ### Module Imports
 The first issue that I encountered was that my AMD module declaration did not work. While TypeScript can output AMD modules I couldn't find a way to author `.ts` file using AMD. So the first step was to convert all of my modules to the ES6-style that TypeScript uses. For example, this AMD module:
@@ -93,3 +93,4 @@ export default dojoDeclare([_WidgetBase, _TemplatedMixin], {
 These were the major gotcha's that ran into when trying to convert a project to TypeScript. [Here's a link](https://github.com/agrc-widgets/toaster) to a simple project that I recently ported to TypeScript. It has almost no TypeScript upgrades (yet) other than what it took to get the project to run.
 
 The [dojo/typings](https://github.com/dojo/typings) repository is the source for ambient declarations for Dojo 1.x code and also has a lot of great resources to help convert Dojo-based projects to TypeScript.
+
