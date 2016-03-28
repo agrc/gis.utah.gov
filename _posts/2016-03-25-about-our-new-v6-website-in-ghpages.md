@@ -48,9 +48,20 @@ Thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, leadership
 
 Lastly, check out AGRC's websites over the last 20+ years..
 
- [{{ "/images/AGRCWebsitev0.png" | prepend: site.baseurl }}](![AGRC Website v0 Screenshot]({{ "/images/AGRCWebsitev0_thumb.png" | prepend: site.baseurl }})):[AGRC Website v0](https://web.archive.org/web/19970716211113/http://www.agr.state.ut.us/)
-  [{{ "/images/AGRCWebsitev1.png" | prepend: site.baseurl }}](![AGRC Website v1 Screenshot]({{ "/images/AGRCWebsitev1_thumb.png" | prepend: site.baseurl }})):[AGRC Website v1]
-   [{{ "/images/AGRCWebsitev2.png" | prepend: site.baseurl }}](![AGRC Website v2 Screenshot]({{ "/images/AGRCWebsitev2_thumb.png" | prepend: site.baseurl }}))
-    [{{ "/images/AGRCWebsitev3.png" | prepend: site.baseurl }}](![AGRC Website v3 Screenshot]({{ "/images/AGRCWebsitev3_thumb.png" | prepend: site.baseurl }}))
-     [{{ "/images/AGRCWebsitev4.png" | prepend: site.baseurl }}](![AGRC Website v4 Screenshot]({{ "/images/AGRCWebsitev4_thumb.png" | prepend: site.baseurl }}))
-      [{{ "/images/AGRCWebsitev5.png" | prepend: site.baseurl }}](![AGRC Website v5 Screenshot]({{ "/images/AGRCWebsitev5_thumb.png" | prepend: site.baseurl }}))
+[![AGRC Website v0 Screenshot]({{ "/images/AGRCWebsitev0_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev0.png" | prepend: site.baseurl }})
+: [AGRC Website v0](https://web.archive.org/web/19970716211113/http://www.agr.state.ut.us/)
+
+[![AGRC Website v1 Screenshot]({{ "/images/AGRCWebsitev1_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev1.png" | prepend: site.baseurl }})
+: [AGRC Website v1](https://web.archive.org/web/19981201214147/http://www.its.state.ut.us/agrc/)
+
+[![AGRC Website v2 Screenshot]({{ "/images/AGRCWebsitev2_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev2.png" | prepend: site.baseurl }})
+: [AGRC Website v2](https://web.archive.org/web/20030214191929/http://gis.utah.gov/)
+
+[![AGRC Website v3 Screenshot]({{ "/images/AGRCWebsitev3_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev3.png" | prepend: site.baseurl }})
+: [AGRC Website v3](https://web.archive.org/web/20030214191929/http://gis.utah.gov/)
+
+[![AGRC Website v4 Screenshot]({{ "/images/AGRCWebsitev4_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev4.png" | prepend: site.baseurl }})
+: [AGRC Website v4](https://web.archive.org/web/20090323175622/http://gis.utah.gov/)
+
+[![AGRC Website v5 Screenshot]({{ "/images/AGRCWebsitev5_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev5.png" | prepend: site.baseurl }})
+: [AGRC Website v4](https://web.archive.org/web/20140701075235/http://gis.utah.gov/)
