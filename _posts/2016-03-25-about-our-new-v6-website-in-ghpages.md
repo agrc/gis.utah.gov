@@ -22,9 +22,15 @@ In releasing the new, updated gis.utah.gov, we feel we have taken logical, evolu
 
 The primary driver behind this release was to solve some nagging issues associated with operating a locally-hosted Content Management System (CMS). Our new GibHub Pages ([GH Pages](https://pages.github.com/)) architecture releases us from the  ‘upkeep’ that included care and feeding for WordPress, its associated extensions, a relational database (mySQL), dynamic programming interface (PHP), a server OS, and operation and hosting expenses for a virtual machine. GitHub’s **free** hosting policy for openly-sourced content means we are saving real money that can be applied to other priorities.
 
+![How Git Works]({{ "/images/howgitworks.png" | prepend: site.baseurl }})
+{: .inline-text-right}
+
 While, it is true that we are putting our faith in the engineers at GitHub to keep their stack [running for us](https://status.github.com/), we are not solely in the company of freeloaders. The paid services GitHub provides to their top-tier paying customers (many of the largest software firms in the world, including Esri), should ensure we are in good hands. And since all our pages are static (as opposed to dynamically generated from PHP database calls), we could easily port the site to another cloud platform if we ever find the need.
 
 Another nice feature of GH Pages is its cloud-based, static website generator system. Our content repository is at [https://github.com/agrc/agrc.github.io](https://github.com/agrc/agrc.github.io), and any time an edit is approved and merged into the repo, the appropriate static pages on github.io servers are updated in seconds. And, a clever bit of DNS work, the github.io servers are what the world sees as https://gis.utah.gov.
+
+![Forking the AGRC Website Repo in GitHub]({{ "/images/forkingagrc.png" | prepend: site.baseurl }})
+{: .inline-text-right}
 
 The new architecture allows us to keep the distributed, multi-user editing capabilities expected in a CMS -- anyone can fork our website content repo and submit pull requests, containing the proposed changes, for our approval. In addition to administrative control over the content, GitHub also provides capabilities for easy local backups, and a complete transactional history of the site over time.
 
@@ -49,20 +55,29 @@ Thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, leadership
 
 Lastly, check out AGRC's websites over the last 20+ years..
 
+<div class="grid">
+<div class ="grid_col grid_col__1_of_3">
 [![AGRC Website v0 Screenshot]({{ "/images/AGRCWebsitev0_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev0.png" | prepend: site.baseurl }})
-:  [AGRC Website v0](https://web.archive.org/web/19970716211113/http://www.agr.state.ut.us/)
-
+[AGRC Website v0](https://web.archive.org/web/19970716211113/http://www.agr.state.ut.us/)
+</div>
+<div class ="grid_col grid_col__1_of_3">
 [![AGRC Website v1 Screenshot]({{ "/images/AGRCWebsitev1_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev1.png" | prepend: site.baseurl }})
-:  [AGRC Website v1](https://web.archive.org/web/19981201214147/http://www.its.state.ut.us/agrc/)
-
+[AGRC Website v1](https://web.archive.org/web/19981201214147/http://www.its.state.ut.us/agrc/)
+</div>
+<div class ="grid_col grid_col__1_of_3">
 [![AGRC Website v2 Screenshot]({{ "/images/AGRCWebsitev2_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev2.png" | prepend: site.baseurl }})
-:  [AGRC Website v2](https://web.archive.org/web/20030214191929/http://gis.utah.gov/)
-
+[AGRC Website v2](https://web.archive.org/web/20030214191929/http://gis.utah.gov/)
+</div>
+<div class ="grid_col grid_col__1_of_3">
 [![AGRC Website v3 Screenshot]({{ "/images/AGRCWebsitev3_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev3.png" | prepend: site.baseurl }})
-:  [AGRC Website v3](https://web.archive.org/web/20030214191929/http://gis.utah.gov/)
-
+[AGRC Website v3](https://web.archive.org/web/20030214191929/http://gis.utah.gov/)
+</div>
+<div class ="grid_col grid_col__1_of_3">
 [![AGRC Website v4 Screenshot]({{ "/images/AGRCWebsitev4_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev4.png" | prepend: site.baseurl }})
-:  [AGRC Website v4](https://web.archive.org/web/20090323175622/http://gis.utah.gov/)
-
+[AGRC Website v4](https://web.archive.org/web/20090323175622/http://gis.utah.gov/)
+</div>
+<div class ="grid_col grid_col__1_of_3">
 [![AGRC Website v5 Screenshot]({{ "/images/AGRCWebsitev5_thumb.png" | prepend: site.baseurl }})]({{ "/images/AGRCWebsitev5.png" | prepend: site.baseurl }})
-:  [AGRC Website v5](https://web.archive.org/web/20140701075235/http://gis.utah.gov/)
+[AGRC Website v5](https://web.archive.org/web/20140701075235/http://gis.utah.gov/)
+</div>
+</div>
