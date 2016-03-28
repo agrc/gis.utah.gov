@@ -22,7 +22,7 @@ In releasing the new, updated gis.utah.gov, we feel we have taken logical, evolu
 
 The primary driver behind this release was to solve some nagging issues associated with operating a locally-hosted Content Management System (CMS). Our new GibHub Pages ([GH Pages](https://pages.github.com/)) architecture releases us from the  ‘upkeep’ that included care and feeding for WordPress, its associated extensions, a relational database (mySQL), dynamic programming interface (PHP), a server OS, and operation and hosting expenses for a virtual machine. GitHub’s **free** hosting policy for openly-sourced content means we are saving real money that can be applied to other priorities.
 
-![How Git Works]({{ "/images/howgitworks.png" | prepend: site.baseurl }})
+[![How Git Works]({{ "/images/howgitworkssmall.png" | prepend: site.baseurl }})]({{"/images/howgitworks.png" | prepend: site.baseurl}})
 {: .inline-text-right}
 
 While, it is true that we are putting our faith in the engineers at GitHub to keep their stack [running for us](https://status.github.com/), we are not solely in the company of freeloaders. The paid services GitHub provides to their top-tier paying customers (many of the largest software firms in the world, including Esri), should ensure we are in good hands. And since all our pages are static (as opposed to dynamically generated from PHP database calls), we could easily port the site to another cloud platform if we ever find the need.
