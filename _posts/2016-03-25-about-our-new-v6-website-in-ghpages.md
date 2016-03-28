@@ -26,9 +26,9 @@ While, it is true that we are putting our faith in the engineers at GitHub to ke
 
 Another nice feature of GH Pages is its cloud-based, static website generator system. Our content repository is at [https://github.com/agrc/agrc.github.io](https://github.com/agrc/agrc.github.io), and any time an edit is approved and merged into the repo, the appropriate static pages on github.io servers are updated in seconds. And, a clever bit of DNS work, the github.io servers are what the world sees as https://gis.utah.gov.
 
-The new architecture allows us to keep the distributed, multi-user editing capabilities expected in a CMS -- anyone can fork our website content repo and submit pull requests, containing the proposed changes, for our approval. In addition administrative control over the content, GitHub also provides capabilities for easy local backups, and a complete transactional history of the site over time.  
-We believe this to be the first .gov website hosted on GitHub Pages within Utah, and likely one of the first across state governments. But more importantly, we think some of the new features will prove valuable to our users in the Utah GIS community. These include
+The new architecture allows us to keep the distributed, multi-user editing capabilities expected in a CMS -- anyone can fork our website content repo and submit pull requests, containing the proposed changes, for our approval. In addition to administrative control over the content, GitHub also provides capabilities for easy local backups, and a complete transactional history of the site over time.  
 
+We believe this to be the first .gov website hosted on GitHub Pages within Utah, and likely one of the first across state governments. But more importantly, we think some of the new features will prove valuable to our users in the Utah GIS community. These include
 * An adaptive design developed in partnership with the Department of Technology Services AppDev/UX team
 * Better, easier to find information about Utah GIS data resources
 * [SGID Index Table](http://gis.utah.gov/data/sgid-index/), an alternate search method across the SGID inventory
@@ -38,10 +38,19 @@ We believe this to be the first .gov website hosted on GitHub Pages within Utah,
 * Better site-wide search
 * Collaborative editing using either HTML or the greatly simplified Markdown syntax - all you need is a github account to edit a page (or you can still just email us if that’s more convenient)
 
-Keep in mind that this is really the first of two phases. Phase 1 has moved us away from our existing, dilapidated wordpress platform. It will save us a few bucks and will hopefully preserve all of our highly SEO’d URLs that make Utah GIS data and related resources easily discoverable from a Google key word search. Additionally, the phase 1 build provides us with more options to emphasize the presence of published GIS web services.
+Keep in mind that this is really the first of two phases. Phase 1 has moved us away from our existing, dilapidated wordpress platform. It will save us a few bucks and will hopefully preserve all of our highly search engine optimized URLs that make Utah GIS data and related resources easily discoverable from a Google key word search. Additionally, the phase 1 build provides us with more options to emphasize the presence of published GIS web services.
 
 We’ve got more work to complete under Phase 1, but Phase 2 blueprints are starting to come together. Phase 2 will involve focusing on filling in gaps in live, streaming map data web services, migrating metadata content currently contained within SGID data package web pages onto a Utah-wide Esri Open Data platform site. We are eagerly awaiting their rumored ‘portal affiliation’ functionality that is being developed for the hosted (AGOL) and local Esri portal environments. We think this will make it easier to bring together and sustain open and interactive GIS data content across the distributed Utah GIS community. 
 
 As always, we welcome and appreciate your [feedback](mailto:agrc@utah.gov?subject=gis.utah.gov website feedback) on the gis.utah.gov site.
 
-Lastly, thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, leadership, and GH mentoring that got us all to v6.0!
+Thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, leadership, and GH mentoring that got us all to v6.0!
+
+Lastly, check out AGRC's websites over the last 20+ years.. 
+
+ [{{ "/images/AGRCWebsitev0.png" | prepend: site.baseurl }}](![AGRC Website v0 Screenshot]({{ "/images/AGRCWebsitev0_thumb.png" | prepend: site.baseurl }})):[AGRC Website v0](https://web.archive.org/web/19970716211113/http://www.agr.state.ut.us/)
+  [{{ "/images/AGRCWebsitev1.png" | prepend: site.baseurl }}](![AGRC Website v1 Screenshot]({{ "/images/AGRCWebsitev1_thumb.png" | prepend: site.baseurl }})):[AGRC Website v1]
+   [{{ "/images/AGRCWebsitev2.png" | prepend: site.baseurl }}](![AGRC Website v2 Screenshot]({{ "/images/AGRCWebsitev2_thumb.png" | prepend: site.baseurl }}))
+    [{{ "/images/AGRCWebsitev3.png" | prepend: site.baseurl }}](![AGRC Website v3 Screenshot]({{ "/images/AGRCWebsitev3_thumb.png" | prepend: site.baseurl }}))
+     [{{ "/images/AGRCWebsitev4.png" | prepend: site.baseurl }}](![AGRC Website v4 Screenshot]({{ "/images/AGRCWebsitev4_thumb.png" | prepend: site.baseurl }}))
+      [{{ "/images/AGRCWebsitev5.png" | prepend: site.baseurl }}](![AGRC Website v5 Screenshot]({{ "/images/AGRCWebsitev5_thumb.png" | prepend: site.baseurl }}))
