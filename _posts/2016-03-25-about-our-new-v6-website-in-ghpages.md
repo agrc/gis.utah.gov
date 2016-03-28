@@ -47,6 +47,9 @@ We believe this to be the first .gov website hosted on GitHub Pages within Utah,
 
 Keep in mind that this is really the first of two phases. Phase 1 has moved us away from our existing, dilapidated wordpress platform. It will save us a few bucks and will hopefully preserve all of our highly search engine optimized URLs that make Utah GIS data and related resources easily discoverable from a Google key word search. Additionally, the phase 1 build provides us with more options to emphasize the presence of published GIS web services.
 
+![Teamwork Cake for AGRC Website]({{ "/images/teamwork.png" | prepend: site.baseurl }})
+{: .inline-text-right}
+
 We’ve got more work to complete under Phase 1, but Phase 2 blueprints are starting to come together. Phase 2 will involve focusing on filling in gaps in live, streaming map data web services, migrating metadata content currently contained within SGID data package web pages onto a Utah-wide Esri Open Data platform site. We are eagerly awaiting their rumored ‘portal affiliation’ functionality that is being developed for the hosted (AGOL) and local Esri portal environments. We think this will make it easier to bring together and sustain open and interactive GIS data content across the distributed Utah GIS community.
 
 As always, we welcome and appreciate your [feedback](mailto:agrc@utah.gov?subject=gis.utah.gov website feedback) on the gis.utah.gov site.
