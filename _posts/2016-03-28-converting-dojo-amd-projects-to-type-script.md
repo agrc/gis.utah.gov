@@ -22,6 +22,7 @@ For Dojo/AMD-based projects, I’ve found this statement a little too good to be
 
 ### Module Imports
 The first issue that I encountered was that my AMD module declaration did not work. While TypeScript can output AMD modules I couldn't find a way to author `.ts` file using AMD. So the first step was to convert all of my modules to the ES6-style that TypeScript uses. For example, this AMD module:
+
 ```js
 define([
     'dijit/_WidgetBase',
@@ -79,6 +80,7 @@ declare module 'dojo/text!./templates/Toaster.html' {
 
 ### Exporting Types in Modules
 For TypeScript modules that I used in other TypeScript modules I had to export the types in order to make the transpiler happy. So this meant a lot of duplicate property names and types between my `dojo/_base/declare` call and the type exports. For example:
+
 ```ts
 export type ToasterItemType = dijit._WidgetBase & dijit._TemplatedMixin & {
     duration: number;
