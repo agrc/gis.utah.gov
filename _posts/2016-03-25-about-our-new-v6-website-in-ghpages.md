@@ -29,14 +29,15 @@ Another nice feature of GH Pages is its cloud-based, static website generator sy
 The new architecture allows us to keep the distributed, multi-user editing capabilities expected in a CMS -- anyone can fork our website content repo and submit pull requests, containing the proposed changes, for our approval. In addition to administrative control over the content, GitHub also provides capabilities for easy local backups, and a complete transactional history of the site over time.
 
 We believe this to be the first .gov website hosted on GitHub Pages within Utah, and likely one of the first across state governments. But more importantly, we think some of the new features will prove valuable to our users in the Utah GIS community. These include
-* An adaptive design developed in partnership with the Department of Technology Services AppDev/UX team
-* Better, easier to find information about Utah GIS data resources
-* [SGID Index Table](http://gis.utah.gov/data/sgid-index/), an alternate search method across the SGID inventory
- * The beginnings of an authoritative web service data endpoint inventory
- * Dataset refresh/update cycle information (later this year)
- * And other bells and whistles on their way
-* Better site-wide search
-* Collaborative editing using either HTML or the greatly simplified Markdown syntax - all you need is a github account to edit a page (or you can still just email us if that’s more convenient)
+
+- An adaptive design developed in partnership with the Department of Technology Services AppDev/UX team
+- Better, easier to find information about Utah GIS data resources
+- [SGID Index Table](http://gis.utah.gov/data/sgid-index/), an alternate search method across the SGID inventory
+ - The beginnings of an authoritative web service data endpoint inventory
+ - Dataset refresh/update cycle information (later this year)
+ - And other bells and whistles on their way
+- Better site-wide search
+- Collaborative editing using either HTML or the greatly simplified Markdown syntax - all you need is a github account to edit a page (or you can still just email us if that’s more convenient)
 
 Keep in mind that this is really the first of two phases. Phase 1 has moved us away from our existing, dilapidated wordpress platform. It will save us a few bucks and will hopefully preserve all of our highly search engine optimized URLs that make Utah GIS data and related resources easily discoverable from a Google key word search. Additionally, the phase 1 build provides us with more options to emphasize the presence of published GIS web services.
 
