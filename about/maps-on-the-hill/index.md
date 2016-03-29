@@ -10,7 +10,7 @@ date_gmt: '2016-03-23 17:55:50 -0700'
 categories: [About]
 tags: []
 ---
- <img src="{{ "/images/MapsontheHillWeb_small-150X150.jpg" | prepend: site.baseurl }}" alt="" title="NewsletterScreenshot" width="150" height="150" class="inline-text-right" />Maps on the Hill, an event held at the State Capitol during the Utah Legislative Session, is supported by the Utah Geographic Information Council ([UGIC](http://ugic.info/)) and AGRC. The event highlights interesting maps and mapping technology with elected officials, fellow practitioners and the public. Students and professionals present on a broad range of topics to show the diversity of mapping resources in Utah, and to demonstrate how mapping technology can be used to support decision makers.
+ <img src="{{ "/images/MapsontheHillWeb_small-150X150.jpg" | prepend: site.baseurl }}" alt="" title="Maps on the Hill Logo" width="150" height="150" class="inline-text-right" />Maps on the Hill, an event held at the State Capitol during the Utah Legislative Session, is supported by the Utah Geographic Information Council ([UGIC](http://ugic.info/)) and AGRC. The event highlights interesting maps and mapping technology with elected officials, fellow practitioners and the public. Students and professionals present on a broad range of topics to show the diversity of mapping resources in Utah, and to demonstrate how mapping technology can be used to support decision makers.
 
 ----------
 {: .hr-separate}
