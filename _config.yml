@@ -15,7 +15,7 @@ analytics:
     google:
         tracking_id: 'UA-11849964-41'
 sass:
-    style: compressed
+    style: nested
 markdown: kramdown
 kramdown:
     input: GFM
