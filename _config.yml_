@@ -9,7 +9,7 @@ twitter_username: MapUtah
 github_username: agrc
 facebook_username: UtahAGRC
 vimeo_username: utahagrc
-permalink: /:title
+permalink: /:title/
 production_url: 'http://gis.utah.gov'
 analytics:
     google:
@@ -20,6 +20,7 @@ markdown: kramdown
 kramdown:
     input: GFM
     syntax_highlighter: rouge
+    hard_wrap: false
 timezone: America/Denver
 exclude: [
     "node_modules",

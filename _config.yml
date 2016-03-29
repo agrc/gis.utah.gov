@@ -9,13 +9,13 @@ twitter_username: MapUtah
 github_username: agrc
 facebook_username: UtahAGRC
 vimeo_username: utahagrc
-permalink: /:title
+permalink: /:title/
 production_url: 'http://gis.utah.gov'
 analytics:
     google:
         tracking_id: 'UA-11849964-41'
 sass:
-    style: nested
+    style: compressed
 markdown: kramdown
 kramdown:
     input: GFM
