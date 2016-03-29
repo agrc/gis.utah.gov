@@ -42,12 +42,12 @@ AGRC was one of the first geospatial information offices in the country, establi
 - Custom Web Map Apps
 - Data Acquisition Partnerships & Contracting
 - GIS Coordination Newsletter
-- gis.utah.gov website
+- [gis.utah.gov website]({{"/about-our-new-v6-website-in-ghpages" | prepend: site.baseurl}})
 - Google Imagery License
 - Lidar Elevation Models
 - Location Analytics
 - [911 Map Data Support]( {{"/about/gis-for-911/" | prepend: site.baseurl }} )
-- Municipal, Voting, and other Civic Boundaries
+- [Municipal]("http://municert.utah.gov"), Voting, and other Civic Boundaries
 - Public Land Survey System
 - Spatial Database Design, Integration and Hosting
 - Statewide Address Point Aggregation
