@@ -128,6 +128,7 @@ var fuzzy = function (text, pattern, options) {
 };
 
 var template = document.getElementById('template').innerHTML;
+var decoder = document.createElement('textarea');
 
 var find = function (e) {
     var matches = [];
@@ -143,6 +144,9 @@ var find = function (e) {
         }
 
         if (fuzzy(title, e.target.value.toLowerCase(), {})) {
+            decoder.innerHTML = content.title;
+            content.title = decoder.value;
+
             matches.push(content);
         }
     }
