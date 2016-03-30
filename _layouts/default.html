@@ -100,7 +100,7 @@
                     </li>
                     <li class="menu-item {% if current[1] == 'about' %}active-4{% endif %}"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
                     </li>
-                    <li class="menu-item"><a href="{{ "/search/" | prepend: site.baseurl }}"><i class="fa fa-search"></i></a>
+                    <li class="menu-item"><a href="{{ "/search/" | prepend: site.baseurl }}" aria-hidden="true"><i class="fa fa-search"></i><span class="sr-only">Site search link</span></a>
                     </li>
                 </ul>
             </nav>
