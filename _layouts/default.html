@@ -160,7 +160,7 @@
                                 <div class="response" id="mce-success-response" style="display:none"></div>
                             </div>
                             <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                <input type="text" name="b_0f7773ca3c6d02d1c38851ee9_1fe9862f44" tabindex="-1" value="">
+                                <input aria-hidden="true" type="text" name="b_0f7773ca3c6d02d1c38851ee9_1fe9862f44" tabindex="-1" value="">
                             </div>
                             <div class="clear">
                                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
@@ -217,7 +217,9 @@
             </div>
         </div>
         {% if site.github %}
-        <div class="muted text-center">Build: <a href="{{site.github.repository_url}}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 6 }}</div>
+        <div class="muted text-center">
+            Build: <a href="{{site.github.repository_url}}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 6 }}</a>
+        </div>
         {% endif %}
     </footer>
     <script>
