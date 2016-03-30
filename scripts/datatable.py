@@ -35,7 +35,7 @@ def munge_data(item, i, indices):
         if url is None or len(url) == 0 or url == 'N/A':
             return utf8_encode(value)
 
-        if url.lower().startswith('http'):
+        if url.lower().startswith('http') or url.lower().startswith('ftp'):
             return '<a href="{}">{}</a>'.format(url, utf8_encode(value))
 
         return '<a href="{{{{ "/{}" | prepend: site.baseurl }}}}">{}</a>'.format(url, utf8_encode(value))
