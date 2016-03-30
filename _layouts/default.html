@@ -175,25 +175,25 @@
                     {% if site.github_username %}
                     <li>
                         <a class="clean" title="agrc github account" href="https://github.com/{{ site.github_username }}">
-                            <i class="fa fa-github-square fa-3x"></i>
+                            <i aria-hidden="true" class="fa fa-github-square fa-3x"></i><span class="sr-only">github link</span>
                         </a>
                     </li>
                     {% endif %} {% if site.twitter_username %}
                     <li>
                         <a class="clean" title="agrc twitter account" href="https://twitter.com/{{ site.twitter_username }}">
-                            <i class="fa fa-twitter-square fa-3x"></i>
+                            <i aria-hidden="true" class="fa fa-twitter-square fa-3x"></i><span class="sr-only">twitter link</span>
                         </a>
                     </li>
                     {% endif %} {% if site.facebook_username %}
                     <li>
                         <a class="clean" title="agrc facebook account" href="https://facebook.com/{{ site.facebook_username }}">
-                            <i class="fa fa-facebook-square fa-3x"></i>
+                            <i aria-hidden="true" class="fa fa-facebook-square fa-3x"></i><span class="sr-only">facebook link</span>
                         </a>
                     </li>
                     {% endif %} {% if site.vimeo_username %}
                     <li>
                         <a class="clean" title="agrc vimeo account" href="https://vimeo.com/{{ site.vimeo_username }}">
-                            <i class="fa fa-vimeo-square fa-3x"></i>
+                            <i aria-hidden="true" class="fa fa-vimeo-square fa-3x"></i><span class="sr-only">vimeo link</span>
                         </a>
                     </li>
                     {% endif %}
@@ -202,7 +202,7 @@
                 <h3>Correct Misinformation</h3>
                 <div class="text-center">
                     <a class="clean" href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
-                        <i class="fa fa-code-fork fa-3x" style="display:block"></i>
+                        <i aria-hidden="true" class="fa fa-code-fork fa-3x" style="display:block"></i><span class="sr-only">edit problems in this page link</span>
                     </a>
                     <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit this page on GitHub</a>
                 </div>
