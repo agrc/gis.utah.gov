@@ -41,6 +41,6 @@ tags: []
 - [Map Book 2013]({{ "/downloads/MapsontheHillMapBook2013.pdf" | prepend: site.baseurl }})
 
 #### Maps on the Hill 2012
- ![Maps on the Hill February 29, 2012]({{ "/images/MOTH_2012.jpg" | prepend: site.baseurl }})
+ ![Maps on the Hill February 29, 2012]({{ "/images/MOTH_2012.JPG" | prepend: site.baseurl }})
 
 - [Map Book 2012]({{ "/downloads/2012MapsOnTheHill_bookletSM.pdf" | prepend: site.baseurl }})
