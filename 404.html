@@ -2,5 +2,30 @@
 layout: default
 permalink: /404.html
 ---
-<h1>Page Not Found</h1>
-<p>Sorry, but the page you were trying to view does not exist.</p>
+<style>
+.background {
+    margin-top: 15px;
+    min-height: 500px;
+    background-image: url({{ "/images/404.png" | prepend: site.baseurl }});
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.error-heading {
+    font-size: 4em;
+    font-weight: 800;
+    margin: 0;
+    color: #e67e15;
+}
+.error-sub-heading {
+    font-weight: 800;
+    padding-top: 0;
+}
+.shadow {
+    text-shadow: 0 1px 20px rgba(0,0,0,.5);
+}
+</style>
+<div class="background">
+    <h1 class="shadow error-heading text-center">We're Sorry...</h1>
+    <h2 class="shadow error-sub-heading text-center">Page Not Found</h2>
+    <p class="shadow text-center">Try <a href="{{ "/search/" | prepend: site.baseurl }}">searching</a> for the page and notify us <a href="{{ site.github.repository_url }}/issues/new">by creating an issue</a>.</p>
+<div>
