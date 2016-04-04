@@ -29,5 +29,5 @@ Attending a conference is about connecting with others and the technology that y
 ### Inspiration
 I know that it sounds corny and cliche, but your story may be just the inspiration that someone in your audience needs to hear. Too often we assume that what we are working on isn't interesting to anyone else. Yet I believe that most people are wondering if what they are doing is correct and seeing someone else's work helps with that.
 
-So I hope that when you register for your next conference you decide to submit a paper also. You will regret it!
+So I hope that when you register for your next conference you decide to submit a paper also. You won't regret it!
 
