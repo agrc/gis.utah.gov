@@ -91,21 +91,33 @@ module.exports = function (grunt) {
                 src: '_config.yml_',
                 dest: '_config.yml'
             }
+        },
+        uglify: {
+            list: {
+                src: ['bower_components/list.js/dist/list.min.js', 'js/source/list.js'],
+                dest: 'js/dist/list.min.js'
+            },
+            search: {
+                src: ['bower_components/mustache.js/mustache.min.js', 'js/source/search.js'],
+                dest: 'js/dist/search.min.js'
+            }
         }
     });
 
     // Dependencies
-    grunt.loadNpmTasks('grunt-gh-pages');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-jekyll');
+    grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-replace');
 
     // use this task if you are running this from user.github.io or localhost:4444
     grunt.registerTask('default', [
         'newer:imagemin',
         'replace:user',
+        'uglify',
         'jekyll:main'
     ]);
 
@@ -114,12 +126,14 @@ module.exports = function (grunt) {
     grunt.registerTask('repo', [
         'newer:imagemin',
         'replace:repo',
+        'uglify',
         'jekyll:main'
     ]);
 
     // run this before publishing to crunch all the stuff
     grunt.registerTask('compress', [
         'newer:imagemin',
-        'replace:sass'
+        'replace:sass',
+        'uglify'
     ])
 };

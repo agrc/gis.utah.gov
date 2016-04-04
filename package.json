@@ -27,5 +27,8 @@
     "grunt-jekyll": "^0.4.3",
     "grunt-newer": "^1.1.1",
     "grunt-replace": "^0.11.0"
+  },
+  "dependencies": {
+    "grunt-contrib-uglify": "^1.0.1"
   }
 }
