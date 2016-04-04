@@ -140,7 +140,6 @@ code {
     }
 }
 
-
 // Clearfix
 %clearfix {
     &::before,
@@ -174,9 +173,6 @@ code {
 .dotless {
     list-style: none;
 }
-.readable {
-    margin: 0 100px 1.5em;
-}
 .sr-only {
     position: absolute;
     width: 1px;
@@ -202,4 +198,18 @@ code {
         overflow: visible;
         clip: auto;
   }
+}
+
+.readable {
+    margin: 0 100px 1.5em;
+}
+@include media-query($on-small) {
+    .readable {
+        margin: 0 0 1.5em;
+    }
+}
+@include media-query($on-medium) {
+    .readable {
+        margin: 0 25px 1.5em;
+    }
 }
