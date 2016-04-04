@@ -22,4 +22,6 @@ $small-font-size: $base-font-size - 20%;
 $spacing-unit: 30px;
 $toast-breakpoint-medium: 1000px;
 $toast-breakpoint-small: 525px;
+$toast-pushes: false;
+$toast-pulls: false;
 $toast-col-groups: (2, 3, 4, 12);
