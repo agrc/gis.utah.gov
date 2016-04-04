@@ -231,25 +231,7 @@
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     <script type="text/javascript">
-        var utgovsearch = [];
-        utgovsearch.input = document.getElementById('searchutgov');
-        utgovsearch.btn = document.getElementById('searchutgovbtn');
-        utgovsearch.go = function(e){
-            var ky = utgovsearch.input.value;
-            if (e.keyCode === 13 && ky.length > 0)
-            {
-                window.location.href = 'http://www.utah.gov/search-results.html?q=' + ky;
-            } else if (e.type === 'click' && ky.length > 0)
-            {
-                window.location.href = 'http://www.utah.gov/search-results.html?q=' + ky;
-            }
-        };
-        utgovsearch.btn.onclick = utgovsearch.go;
-        utgovsearch.input.onkeypress = utgovsearch.go;
-        function showsearch() {
-            document.getElementById('utahgov_header_search').style.display = 'block';
-            document.getElementById('search_activator').style.display = 'none';
-        }
+        function showsearch(){document.getElementById("utahgov_header_search").style.display="block",document.getElementById("search_activator").style.display="none"}var utgovsearch=[];utgovsearch.input=document.getElementById("searchutgov"),utgovsearch.btn=document.getElementById("searchutgovbtn"),utgovsearch.go=function(a){var b=utgovsearch.input.value;13===a.keyCode&&b.length>0?window.location.href="http://www.utah.gov/search-results.html?q="+b:"click"===a.type&&b.length>0&&(window.location.href="http://www.utah.gov/search-results.html?q="+b)},utgovsearch.btn.onclick=utgovsearch.go,utgovsearch.input.onkeypress=utgovsearch.go;
     </script>
 </body>
 
