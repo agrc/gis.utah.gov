@@ -5,7 +5,7 @@ layout: default
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#data"><h3 class="main-heading">GIS Map Data</h3></a>
         <hr class="hr-separate" />
-        <p class="main-text"><a href="#data" alt="GIS Map Data"><i aria-hidden="true" class="fa fa-database fa-4x fa-pull-left"></i><span class="sr-only">Spatial Data</span></a> Established in State
+        <p class="main-text"><a href="#data"><i aria-hidden="true" class="fa fa-database fa-4x fa-pull-left"></i><span class="sr-only">Spatial Data</span></a> Established in State
             law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop download and web service access
             to hundreds of GIS map data layers developed, aggregated, or acquired
             by state government.</p>
@@ -13,14 +13,14 @@ layout: default
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#api"><h3 class="main-heading">Geo APIs</h3></a>
         <hr class="hr-separate" />
-        <p class="main-text"><a href="#api" alt="geo api's and services"><i aria-hidden="true" class="fa fa-compass fa-4x fa-pull-left"></i><span class="sr-only">geo api's and services</span></a> Coding an app or process
+        <p class="main-text"><a href="#api"><i aria-hidden="true" class="fa fa-compass fa-4x fa-pull-left"></i><span class="sr-only">geo api's and services</span></a> Coding an app or process
             that just needs simple “Where is?” or “What’s At?" answers? Geocoding and point-in-polygon map queries are available via api, from
             <a class="main-link" href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a>.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#tiles"><h3 class="main-heading">Aerial Imagery & Base Maps</h3></a>
         <hr class="hr-separate" />
-        <p class="main-text"><a href="#tiles" alt="Aerial Imagery & Base maps"><i aria-hidden="true" class="fa fa-picture-o fa-4x fa-pull-left"></i><span class="sr-only">Aerial Imagery & Base maps</span></a> SGID aerial
+        <p class="main-text"><a href="#tiles"><i aria-hidden="true" class="fa fa-picture-o fa-4x fa-pull-left"></i><span class="sr-only">Aerial Imagery & Base maps</span></a> SGID aerial
             photography and base map services provide critical map context for GIS
             and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources.
             data resources.</p>
@@ -28,21 +28,21 @@ layout: default
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#gps"><h3 class="main-heading">TURN GPS Network</h3></a>
         <hr class="hr-separate" />
-        <p class="main-text"><a href="#gps" alt="TURN GPS Network"><i aria-hidden="true" class="fa fa-signal fa-4x fa-pull-left"></i><span class="sr-only">TURN GPS Network</span></a> TURN GPS is the foundation
+        <p class="main-text"><a href="#gps"><i aria-hidden="true" class="fa fa-signal fa-4x fa-pull-left"></i><span class="sr-only">TURN GPS Network</span></a> TURN GPS is the foundation
             for live, up-to-sub-centimeter precision GPS field surveying, mapping, and other measurement. TURN GPS
             employs a network of over 90 permanent GPS base stations across Utah and surrounding areas.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#dev"><h3 class="main-heading">Application Development</h3></a>
         <hr class="hr-separate" />
-        <p class="main-text"><a href="#dev" alt="Application Development"><i aria-hidden="true" class="fa fa-rocket fa-4x fa-pull-left"></i><span class="sr-only">Application Development</span></a> AGRC’s development team
+        <p class="main-text"><a href="#dev"><i aria-hidden="true" class="fa fa-rocket fa-4x fa-pull-left"></i><span class="sr-only">Application Development</span></a> AGRC’s development team
             designs, builds and hosts web map applications, custom designed to best meet specific agency/program
             requirements.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <a href="#news"><h3 class="main-heading">News, Events, & Coordination</h3></a>
         <hr class="hr-separate" />
-        <p class="main-text"><a href="#news" alt="News, Events, & Coordination"><i aria-hidden="true" class="fa fa-newspaper-o fa-4x fa-pull-left"></i><span class="sr-only">News, Events, & Coordination</span></a> Utah is widely
+        <p class="main-text"><a href="#news"><i aria-hidden="true" class="fa fa-newspaper-o fa-4x fa-pull-left"></i><span class="sr-only">News, Events, & Coordination</span></a> Utah is widely
             recognized as a leader in the GIS field. Coordination, partnering and information sharing -- in the form of news, events,
             tips, and data -- fuel our collective success.</p>
     </div>
@@ -55,8 +55,8 @@ layout: default
         <a href="http://ugic.info/register" class="btn">Register</a>
     </div>
     <div class="grid__col section alternate">
-        <a name="news" class="anchor"></a>
-        <h2>News</h2>
+        <a id="news" class="anchor"></a>
+        <h2>Featured News</h2>
         <div class="grid__col grid__col--1-of-2">
             <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
             outcomes from Utah's investment in GIS across the public and private sectors. We all benefit by leveraging
@@ -80,18 +80,17 @@ layout: default
         </div>
         {% endfor %}
         <p class="section-read-more">
-            <a href="{{ "/news/" | prepend: site.baseurl }}" class="btn">Recent News</a>
+            <a href="{{ "/news/" | prepend: site.baseurl }}" class="btn">All Recent News</a>
             <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
         </p>
     </div>
     <div class="grid__col section">
-        <a name="data" class="anchor"></a>
+        <a id="data" class="anchor"></a>
         <h2>GIS Map Data</h2>
         <div class="grid__col grid__col--1-of-2">
             <p>Utah's State Geographic Information Database (a.ka. "the SGID"), was established by policy makers to
-            ensure that GIS map layers were developed in a coordinated fashion and shared openly, without redundant effort. 
+            ensure that GIS map layers were developed in a coordinated fashion and shared openly, without redundant effort.
             Roads, boundaries, addressing, parcels, aerials, elevation, etc...you’ll find it available for download and as web services from the SGID.</p>
-            
             <p>The vision for the SGID was created almost two full decades before the govenrment 'open data' and 'transparency'
             initiatives began hitting their stride. And, to the credit of the GIS community across the state, the SGID's GIS
             data resources are among the most mature and extensive in the nation.</p>
@@ -102,9 +101,14 @@ layout: default
                 readily discovered and accessed. And, that's true for resources available to users as downloadable
                 shapefiles, as well as, resources available as connections to live streaming data services,
                 AGRC strives to ensure that the SGID stays current as a state-level channel to aide in the discovery,
-                access, and use of GIS data resources.
+                access, and use of GIS data resources.</p>
         </div>
         <h3>Filter the <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">master SGID Index table</a> for data & services...</h3>
+        <div class="grid__col grid__col--2-of-2 grid__col--centered grid__col--s-hidden" style="width:568px">
+            <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">
+                <img alt="SGID Index Table Search" class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/sgid-index.png" | prepend: site.baseurl }}">
+            </a>
+        </div>
         <h3>...or browse specific Data Categories</h3>
         <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
             <a href="{{ "/data/address-overview/" | prepend: site.baseurl }}"><h5 class="text-center">Addresses</h5>
@@ -207,7 +211,7 @@ layout: default
         </p>
     </div>
     <div class="grid__col section alternate">
-        <a name="tiles" class="anchor"></a>
+        <a id="tiles" class="anchor"></a>
         <h2>Base Maps and Imagery</h2>
         <div class="grid__col grid__col--1-of-3">
             <p>AGRC hosts aerial photography and pre-rendered base map services on
@@ -257,7 +261,7 @@ layout: default
         </p>
     </div>
     <div class="grid__col section">
-        <a name="gps" class="anchor"></a>
+        <a id="gps" class="anchor"></a>
         <h2>TURN GPS Precision RTK Network</h2>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
         <p>The Utah Reference Network for GPS (TURN GPS) is a networked system of over 90 permanently located high
@@ -267,7 +271,7 @@ layout: default
         </div>
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
             <h5 class="text-center">TURN GPS Network Coverage</h5>
-            <a href="http://turngps.utah.gov/Map/SensorMap.aspx" alt="TURN GPS Network Coverage">
+            <a href="http://turngps.utah.gov/Map/SensorMap.aspx">
                 <img alt="TURN GPS Network Coverage" class="center b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
             </a>
         </div>
@@ -285,7 +289,7 @@ layout: default
         </p>
     </div>
     <div class="grid__col section alternate">
-        <a name="dev" class="anchor"></a>
+        <a id="dev" class="anchor"></a>
         <h2>Application Development</h2>
         <div class="grid__col grid__col--1-of-2">
             <p>There are many possible approaches to publishing data to web maps and web services.
@@ -337,7 +341,7 @@ layout: default
         </p>
     </div>
     <div class="grid__col section no-border">
-        <a name="api" class="anchor"></a>
+        <a id="api" class="anchor"></a>
         <h2>APIs and JavaScript Widgets</h2>
         <div class="grid__col grid__col--1-of-3">
             <p>APIs available through <a href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like
@@ -366,7 +370,7 @@ layout: default
     </div>
 </div>
 <script src="{{ "/bower_components/bLazy/blazy.min.js" | prepend: site.baseurl }}"></script>
-<script>
+<script type="text/javascript">
     ;(function() {
         var bLazy = new Blazy({
             offset: 250
