@@ -43,5 +43,9 @@ tags:
 <li>Thick clients, like ArcMap can perform very quick loss-less conversion between coordinate systems, needed to display map layers together. Having all of your GIS in the same coordinate system matters little for display purposes, but may be important for moderate to complex geoprocessing. In addition to having less computational power, thin clients (browser and mobile apps) usually lack the algorithms necessary to make multiple on-the-fly coordinate conversions.</li>
 <li><strong>Geographic Transformations</strong>. There is a slight difference between the WGS84 and NAD83 datums that requires an additional setting if users want to maximize the precision of their GIS work. Of course, you'll want the projection/coordinate system correctly defined for all your data. But, a second operation, called a Geographic Transformation, must be specified.
 <p>
-For example, if you're digitizing a man hole in UTM NAD83 or State Plane NAD83 coordinates, from Web Mercator-based aerial photography, you’ll remove an unwanted discrepancy of about 1 meter, by employing the best geographic transformation. In ArcMap, the NAD_1983_To_WGS_1984_5 transformation (recommended for the 48 contiguous United States) should be set in your dataframe and geoprocessing settings.</li>
+<p>For example, if you're digitizing a man hole in UTM NAD83 or State Plane NAD83 coordinates, from Web Mercator-based aerial photography, you’ll remove an unwanted discrepancy of about 1 meter, by employing the best geographic transformation. In ArcMap, the NAD_1983_To_WGS_1984_5 transformation (recommended for the 48 contiguous United States) should be set in your dataframe and geoprocessing settings.</li>
 </ul>
+</p>
+<p>
+Additional background and information: <a href="https://blogs.esri.com/esri/arcgis/2009/05/06/about-geographic-transformations-and-how-to-choose-the-right-one/">About Geographic Transformations and How to Choose the Right One (Esri)</a>
+</p>
