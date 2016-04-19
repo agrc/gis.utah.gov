@@ -22,7 +22,7 @@ The Utah GIS community accomplishes great things when working together. The [UGI
 
 #### Creating New Content
 
-When you, your group, or your employer have content that would benefit the audience of gis.utah.gov, please consider publishing it here. The ease of contributing stems from the website being hosted on [GitHub.com](https://github.com/home). Once you have gone through the process once, you will be an expert. You might consider watching the above 1 minute video to reading the ~900 words below as they both describe the same process and reaading will take 4 minutes longer.
+When you, your group, or your employer have content that would benefit the audience of gis.utah.gov, please consider publishing it here. The ease of contributing stems from the website being hosted on [GitHub.com](https://github.com/home). Once you have gone through the process once, you will be an expert. You might consider watching the above 1 minute video to reading the ~900 words below as they both describe the same process and reading will take 4 minutes longer.
 
 > GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
 
