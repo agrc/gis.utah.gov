@@ -20,6 +20,10 @@ The Utah GIS community accomplishes great things when working together. The [UGI
     </p>
 </div>
 
+#### Modifying Existing content
+
+We have a great article that describes two methods for [editing existing content]({{ "/about/contributing/edit-existing/" | prepend: site.baseurl }}) on the gis.utah.gov website.
+
 #### Creating New Content
 
 When you, your group, or your employer have content that would benefit the audience of gis.utah.gov, please consider publishing it here. The ease of contributing stems from the website being hosted on [GitHub.com](https://github.com/home). Once you have gone through the process once, you will be an expert. You might consider watching the above 1 minute video to reading the ~900 words below as they both describe the same process and reading will take 4 minutes longer.
