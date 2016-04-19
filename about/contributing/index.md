@@ -22,7 +22,7 @@ The Utah GIS community accomplishes great things when working together. The [UGI
 
 #### Creating New Content
 
-When you, your group, or your employer have content that would benefit the audience of gis.utah.gov, please consider publishing it here. The ease of contributing stems from the website being hosted on [GitHub.com](https://github.com/home). Once you have gone through the process once, you will be an expert.
+When you, your group, or your employer have content that would benefit the audience of gis.utah.gov, please consider publishing it here. The ease of contributing stems from the website being hosted on [GitHub.com](https://github.com/home). Once you have gone through the process once, you will be an expert. You might consider watching the above 1 minute video to reading the ~900 words below as they both describe the same process and reaading will take 4 minutes longer.
 
 > GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
 
@@ -40,7 +40,7 @@ The ever resourceful [Scott Davis](https://twitter.com/@SThomasDavis) created a 
 
 #### GitHub
 
-You will need a GitHub account to participate, so [create a free GitHub account](https://github.com/join) if you do not already have one. Navigate to the [agrc organization](https://github.com/agrc/) on GitHub and find the [website source code](https://github.com/agrc/agrc.github.io). [Fork](https://help.github.com/articles/github-glossary/#fork) the [repository](https://help.github.com/articles/github-glossary/#repository) to create a personal copy of gis.utah.gov website.
+You will need a GitHub account to participate, so [create a free GitHub account](https://github.com/join) if you do not already have one. Navigate to the [agrc organization](https://github.com/agrc/) on GitHub and find the [website source code](https://github.com/agrc/agrc.github.io). [Fork](https://help.github.com/articles/github-glossary/#fork) the [repository](https://help.github.com/articles/github-glossary/#repository) to create a personal copy of gis.utah.gov website in the GitHub cloud.
 
 #### Creating and Naming New Content
 
@@ -62,12 +62,16 @@ The templator has created the [YAML Front Matter](https://jekyllrb.com/docs/fron
 
 #### Adding Images and Assets
 
-By convention, the gis.utah.gov website places all of it's images in the [`images`](https://github.com/agrc/agrc.github.io/tree/master/images) folder and all other assets (PDF's, text files, etc) in the [`downloads`](https://github.com/agrc/agrc.github.io/tree/master/downloads) folder. From the `images` or `downloads` directory in your browser, drag the assets you would like to reference in your post on to the browser window[^1]. GitHub will recognize this and upload the assets. Finally, add a commit message and commit the changes.
+By convention, the gis.utah.gov website places all of it's images in the [`images`](https://github.com/agrc/agrc.github.io/tree/master/images) folder and all other assets (PDF's, text files, etc) in the [`downloads`](https://github.com/agrc/agrc.github.io/tree/master/downloads) folder. From the `images` or `downloads` directory in your browser, drag the assets you would like to reference in your post on to the browser window[^1]. GitHub will recognize this and upload the assets. Finally, add a meaningful commit message describing the changes and commit the changes.
 
 #### The Pull Request
 
 To close the contribution loop, a [pull request](https://help.github.com/articles/github-glossary/#pull-request) must be created asking AGRC to pull in your commits to be incorporated into the website. In your fork of the website, there will be a `Pull request` button. Clicking this button and following through the steps to completion will summarize the changes made and send a notification to AGRC of the request. The pull request creates a link between your [branch](https://help.github.com/articles/github-glossary/#branch) and the AGRC repository. Any subsequent commits will show up in the pull request. It is a living connection while the pull request is open. This gives AGRC and the contributor a chance to have a discussion and fix any errors.
 
-Once the pull request is accepted and merged, the website will automatically regenerate and deploy to production. The edits will be live, [@MapUtah](https://twitter.com/@MapUtah) will tweet about the new content as well as a link will be posted to [facebook](https://facebook.com/utahagrc).
+Once the pull request is accepted and merged, the website will automatically regenerate and deploy to production. The edits will be live, [@MapUtah](https://twitter.com/@MapUtah) will tweet about the new content the AGRC  [facebook](https://facebook.com/utahagrc) page will post about the new content.
+
+#### Clean Up
+
+Once this process is completed you are safe to delete your fork of the gis.utah.gov website. You should no longer need it and it will quickly become outdated.
 
 [^1]: There may be browser limitations with this functionality.
