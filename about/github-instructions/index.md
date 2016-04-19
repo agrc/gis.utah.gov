@@ -53,5 +53,5 @@ tags: how-to
 1. In order to not create conflicts between website versions, you need to delete your repository and then create a new fork.
 *  Migrate to your repository: https://github.com/username/agrc.github.io
 * Click the Settings tab for your repository. 
-* Scroll to the Danger Zone at the bottom. Click the Delete this repository button.
+* Scroll to the Danger Zone at the bottom. Click the Delete this repository button. ![Danger Zone]({{ "/images/DangerZone.png" | prepend: site.baseurl }})
 * Now you are free to go create a new fork and keep on editing! 
