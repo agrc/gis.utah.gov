@@ -47,9 +47,9 @@ def munge_data(item, i, indices):
         if ',' in value:
             value = value.split(',')
 
-            return ''.join(['<a href="{}" class="pull-right"><i class="fa fa-globe fa-fw" alt="service endpoint"></i></a>'.format(v) for v in value])
+            return ''.join(['<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(v) for v in value])
 
-        return '<a href="{}" class="pull-right"><i class="fa fa-globe fa-fw" alt="service endpoint"></i></a>'.format(value)
+        return '<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value)
 
     def webapp_link(value):
         if value is None or len(value) == 0:
@@ -58,17 +58,16 @@ def munge_data(item, i, indices):
         if ',' in value:
             value = value.split(',')
 
-            return ''.join(['<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(v.strip()) for v in value])
+            return ''.join(['<a href="{}" class="pull-right"><i class="fa fa-globe fa-fw" alt="website link"></i></a>'.format(v.strip()) for v in value])
 
-        return '<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value.strip())
+        return '<a href="{}" class="pull-right"><i class="fa fa-globe fa-fw" alt="website link"></i></a>'.format(value.strip())
 
     return OrderedDict([
         ('category', utf8_encode(category)),
         ('name', should_link(start_case(name.replace('_', '')))),
         ('agency', utf8_encode(item[indices['data_source']])),
         ('description', utf8_encode(item[indices['description']])),
-        ('service', endpoint_link(item[indices['endpoint']])),
-        ('website', webapp_link(item[indices['web_app']]))
+        ('service', ''.join([endpoint_link(item[indices['endpoint']]), webapp_link(item[indices['web_app']])]))
     ])
 
 def get_sheet_data(gc, sheet_id, worksheet_id):
@@ -84,7 +83,7 @@ def get_sheet_data(gc, sheet_id, worksheet_id):
         'url': header.index('Website URL'),
         'data_type': header.index('Data Type'),
         'endpoint': header.index('Endpoint'),
-        'web_app': header.idnex('Webapp')
+        'web_app': header.index('Webapp')
     }
 
     return [munge_data(item, i, indices) for i, item in enumerate(data)]
