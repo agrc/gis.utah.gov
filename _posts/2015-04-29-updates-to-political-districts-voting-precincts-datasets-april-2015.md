@@ -26,8 +26,8 @@ tags: []
 <p>Specifically, </p>
 <ol>
 <li>The GIS representation of the County Boundary line between Salt Lake and Summit, in the Parleys Summit area was adjusted to fit a shared understanding of the subdivision boundary between Summit and Salt Lake County ;</li>
-<li>The administrative representation of the US Congress Districts 1 and 2 boundaries were adjusted in the GIS layer to fit County Boundary in that same area;</li>
-<li>The administrative representation of the Utah Senate Districts 2 and 19 boundaries were adjusted to fit the County Boundary in that same area</li>
+<li>The administrative representation of the US Congress Districts 1 and 2 boundaries were adjusted in the GIS layer to fit the agreed upon County Boundary in that same area;</li>
+<li>The administrative representation of the Utah Senate Districts 2 and 19 boundaries were adjusted to fit the agreed upon County Boundary in that same area</li>
 </ol>
 <p><strong>New Utah Voting Precincts:</strong></p>
 <p><a href="{{ "/data/political/voter-precincts/" | prepend: site.baseurl }}">Political.VistaBallotAreas, a statewide GIS data layer</a> depicting voting precinct and subprecinct boundaries is also available. This dataset is compiled from the County Clerks and is actively used in the 26 of 29 counties that have adopted a GIS-based process to manage precinct-to-residence assignment within VISTA, the statewide voter registration database.</p>
