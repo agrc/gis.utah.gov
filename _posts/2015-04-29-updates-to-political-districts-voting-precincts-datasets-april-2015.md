@@ -22,12 +22,12 @@ tags: []
 ---
 <p><strong>Utah Political Districts:</strong></p>
 <p><a href="{{ "/data/political/2012-2021-house-senate-congressional-districts/" | prepend: site.baseurl }}">Political districts for state-level offices</a> (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections and ongoing representation.</p>
-<p>The updated political district boundaries, originally formed from 2010 Census Block files have been adjusted by AGRC, working together with the Utah Legislature, the Lt. Governor's Elections Office and the County Clerks' offices to increase the geographic accuracy.</p>
+<p>Small administrative changes have been made to the political district boundary GIS layers, after requests for determination made to the Lt. Governor's Elections Office.</p>
 <p>Specifically, </p>
 <ol>
-<li>County Boundary lines between Salt Lake and Summit, in the Parleys Summit area were adjusted to fit a subdivision in Summit County ;</li>
-<li>The U. S. Congress Districts 1 and 2 boundaries were adjusted to fit the Country Boundary in that same area;</li>
-<li>The Utah Senate Districts 2 and 19 boundaries were adjusted to fit the Country Boundary in that same area</li>
+<li>The GIS representation of the County Boundary line between Salt Lake and Summit, in the Parleys Summit area was adjusted to fit a shared understanding of the subdivision boundary between Summit and Salt Lake County ;</li>
+<li>The administrative representation of the US Congress Districts 1 and 2 boundaries were adjusted in the GIS layer to fit County Boundary in that same area;</li>
+<li>The administrative representation of the Utah Senate Districts 2 and 19 boundaries were adjusted to fit the County Boundary in that same area</li>
 </ol>
 <p><strong>New Utah Voting Precincts:</strong></p>
 <p><a href="{{ "/data/political/voter-precincts/" | prepend: site.baseurl }}">Political.VistaBallotAreas, a statewide GIS data layer</a> depicting voting precinct and subprecinct boundaries is also available. This dataset is compiled from the County Clerks and is actively used in the 26 of 29 counties that have adopted a GIS-based process to manage precinct-to-residence assignment within VISTA, the statewide voter registration database.</p>
