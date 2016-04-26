@@ -2,9 +2,9 @@
 layout: post
 status: publish
 published: true
-title: 'Top 4 Things I Learned Working at the Utah AGRC'
+title: 'Guest Blog: Things I Learned Working at the Utah AGRC'
 author:
-  display_name: Christy Heaton
+  display_name: Christy Heaton : Guest
   email: christyheaton@gmail.com
 date: 2016-04-26 14:15:06
 categories:
@@ -14,9 +14,9 @@ tags: blog
 
 Hi there! I’m [Christy](http://christyheaton.github.io). I work at a small consulting firm in downtown Seattle called [SGSI](http://www.sgsi.com). I also teach a summer GIS Programming course at the [University of Washington](http://www.gisonline.uw.edu/) and organize a Meetup group called [Maptime Seattle](http://www.meetup.com/MaptimeSEA/).
 
-Back in November 2009, I got my professional start as a GIS intern at the Utah AGRC. During my time at AGRC I was involved in large-scale projects such as the Utah Broadband Project, the 2010 Census Redistricting Project, the Utah State History Project, and the creation of a new AGRC website. In 2012 I was accepted into the Masters in GIS program at the University of Washington, left my job at the AGRC,  and made the big move to Seattle. I’m very happy with where I am in my career, and I have my start at AGRC to thank for that!
+Back in November 2009, I got my professional start as a GIS intern at the AGRC. During my time at AGRC I was involved in large-scale projects such as the Utah Broadband Project, the 2012 Re-Precincting Analysis, the Utah Historic Buildings map database, and the creation of the previous edition of AGRC website (version 5, I'm told). In 2012 I was accepted into the Masters in GIS program at the University of Washington, left my job at the AGRC,  and made the big move to Seattle. I’m very happy with where I am in my career, and I have my start at AGRC to thank for that!
 
-In this post, I share the top 4 things I learned while working at the AGRC that have stuck with me and helped me along my career path. I hope they serve as advice for someone starting out, or as reminders of ways you can enhance your existing career. Thanks for reading!
+In this post, I'd like to share the top 4 things I learned while working at AGRC that have stuck with me and helped me along my career path. I hope they serve as advice for someone starting out, or as reminders of ways you can enhance your existing career. Thanks for reading!
 
 ### **1. The Value of Coding**
 
@@ -24,7 +24,7 @@ While working at the AGRC I was often encouraged to find a way to automate repet
 
 ### **2. Networking**
 
-Professional networking has been key to finding interesting career opportunities. In fact, my start at the AGRC was due to networking! I met Bert Granberg at a University of Utah GIS Day event, where he gave the most interesting talk about the work he was doing at the AGRC. After the session was over I went up and talked to him and a few months later I was working there myself. Since then I have networked my way into a GIS teaching gig in Spain and have even given a [talk](https://www.youtube.com/watch?v=z-q4znBqokw) on networking. You can do okay without networking, but I encourage everyone to get out there and talk to people in your field. It's a great way to stay on top of the latest technology and hear about interesting opportunities.
+Professional networking has been key to finding interesting career opportunities. In fact, my start at the AGRC was due to networking! I met Bert Granberg at a University of Utah GIS Day event, where he gave an interesting talk about the work he was doing at AGRC. After the session was over I introduced myself. A few months later, after applying for an intern opening, I was working there myself. Since then I have networked my way into a GIS teaching gig in Spain and have even given a [talk](https://www.youtube.com/watch?v=z-q4znBqokw) on networking. You can do okay without networking, but I encourage everyone to get out there and talk to people in your field. It's a great way to stay on top of the latest technology and hear about interesting opportunities.
 
 ### **3. Making a Pretty Map**
 
@@ -32,4 +32,4 @@ Making great maps is harder than you’d think. It requires a mixture of art, un
 
 ### **4. Giving Talks**
 
-While working at the AGRC I was lucky enough to attend the Utah Geographic Information Council every year. During my third year of attendance I gave a talk on the verification process we were using at the time for the Utah Broadband Project. The process of preparing and giving the talk was exciting and stressful, and so rewarding. Presenting work to your peers is such a great way to organize your own thoughts about your work. I am currently an organizer for a meetup group called Maptime Seattle. We organize monthly workshops using free and open source GIS software. Planning workshops has been a great way for me to continue to build my presentation skills. I’ve even taught workshops on a subject that I had little to no experience in, just so that I could learn it myself! I can’t say this enough: there is no better way to organize your own thoughts or learn something better than by teaching it to other people. Get out there and try it!
+While working at AGRC I was lucky enough to attend the UGIC state GIS conference every year. During my third year of attendance I gave a talk on the verification process we were using at the time for the Utah Broadband Project. The process of preparing and giving the talk was exciting and stressful, and so rewarding. Presenting work to your peers is such a great way to organize your own thoughts about your work. I am currently an organizer for a meetup group called Maptime Seattle. We organize monthly workshops using free and open source GIS software. Planning workshops has been a great way for me to continue to build my presentation skills. I’ve even taught workshops on a subject that I had little to no experience in, just so that I could learn it myself! I can’t say this enough: there is no better way to organize your own thoughts or learn something better than by teaching it to other people. Get out there and try it!
