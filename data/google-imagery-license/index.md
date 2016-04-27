@@ -38,6 +38,7 @@ The imagery web services will be hosted in Google's cloud and delivered via `WMS
 - Using Utah's Google Imagery License <a href="{{site.baseurl}}{% post_url 2015-03-05-google-imagery-license-update-march-5th %}">(March 5th, 2015)</a>
 - Google Imagery <a href="{{site.baseurl}}{% post_url 2015-07-30-google-imagery-update-july-2015 %}"> (Update, July 2015)</a>
 - Google Imagery <a href="{{site.baseurl}}{% post_url 2015-11-24-google-imagery-service-speed-enhancements-more %}">(Update, November 2015)</a>
+- <a href="https://youtu.be/Wch2M2rBJhU">Video: Google Imagery License<i>Town Hall</i> meeting</a> presents background on the license, GIS and developer user info, and a look forward at future options. 
 
 Any questions can be directed to <a href="mailto:bgranberg@utah.gov">Bert Granberg</a> (801-538-3163) or <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801-538-3237).
 
