@@ -19,6 +19,6 @@ A few months ago I had the opportunity to work with Marc Healy at the Granite Sc
 
 [Marc Healy's Network Dataset Instructions]({{ "/downloads/AGRC Roads Network.pdf" | prepend: site.baseurl }})
 
-See Also: Marc's feedback inspired us to fish out an old post *from the AGRC wayback machin*. This [post]() describes the steps taken to put together a GIS network analysis from the statewide road centerlines dataset back in 2011. Some of the steps may still be useful.
+See Also: Marc's feedback inspired us to fish out an old post *from the AGRC wayback machin*. This [post]({{"/data/sgid-transportation/roads-system/create-network-analysis-dataset-instructions.html"| prepend: site.baseurl }}) describes the steps taken to put together a GIS network analysis from the statewide road centerlines dataset back in 2011. Some of the steps may still be useful.
 
 
