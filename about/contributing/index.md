@@ -11,7 +11,7 @@ categories: Tutorial
 tags: []
 ---
 
-The Utah GIS community accomplishes great things when working together. The [UGIC Conference](http://ugic.info/), the many [GIS User Groups]({{ "/about/organizations/user-groups/" | prepend: site.baseurl }}), and datasets like Statewide [Address Points]({{ "/data/location/address-data/" | prepend: site.baseurl }}) are some examples of the community working together to create meaningful products. This website is no different; Contributions to gis.utah.gov are welcome and encouraged!
+The Utah GIS community accomplishes great things when working together. The [UGIC Conference](http://ugic.info/), the many [GIS User Groups]({{ "/about/organizations/user-groups/" | prepend: site.baseurl }}), and datasets like Statewide [Address Points]({{ "/data/location/address-data/" | prepend: site.baseurl }}) are some examples of the community working together to create meaningful products. This website is no different; contributions to gis.utah.gov are welcome and encouraged!
 
 <div style="position:relative;left:50%;margin-left:-320px">
     <iframe src="https://player.vimeo.com/video/163472161" width="640" height="537" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
