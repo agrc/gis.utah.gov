@@ -32,7 +32,7 @@ Weber: Received centerline update: added new roads, road name and address range 
 Davis: geocoding improvements
 Salt Lake: geocoding improvements
 Utah: geocoding improvements
-Weber: geocoding improvments
+Weber: geocoding improvements
 
 UDOT Route System:
 
