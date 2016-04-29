@@ -15,7 +15,7 @@ tags:
 
 Updates were made recently to the SGID10.Transportation.Roads feature class that resides on the <a href="http://gis.utah.gov/data/how-to-connect-to-the-sgid-via-sde/">Utah SGID ArcSDE database server</a>.
 
-The updated Roads data is also available as shapefiles and file geodatabase files for download on the <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/PackagedData/_Statewide/UtahRoadAndHighwaySystem/">SGID FTP site</a>.  
+The updated Roads data is also available as shapefiles and file geodatabase files for download on the <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/PackagedData/_Statewide/UtahRoadAndHighwaySystem/">SGID FTP site</a>.
 
 Geocoding services and ArcGIS Server Applications & Web Services are now using the updated SGID10.Transportation.Roads feature class.
 
