@@ -19,7 +19,7 @@ The updated Roads data is also available as shapefiles and file geodatabase file
 
 Geocoding services and ArcGIS Server Applications & Web Services are now using the updated SGID10.Transportation.Roads feature class.
 
-The following highlights what has been updated:
+The following highlights what has been updated with the next update we will be adding dates in again:
 
 County Updates:
 
