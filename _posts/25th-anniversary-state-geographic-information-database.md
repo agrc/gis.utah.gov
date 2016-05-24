@@ -5,8 +5,8 @@ published: true
 title: '25 Years Ago: Laying the Foundation for Utah GIS Success'
 author:
   display_name: Bert Granberg
-  email: wkloos@utah.gov
-date: 2016-05-24
+  email: bgranberg@utah.gov
+date: 2016-05-24 21:57:21
 categories:
 
 tags:
@@ -36,7 +36,7 @@ SB21 created, in statute, Utah’s State Geographic Information Database, and ta
 
 In many ways, the SGID is a forerunner for current data sharing initiatives promoted under the ‘open data’ banner. The guiding principles around ‘open data’ appear the same now, as then:
 
-- highly discoverable and accessible 'one-stop shopping; should be offered to prospective data users
+- highly discoverable and accessible 'one-stop shopping' should be offered to prospective data users
 - the cost/benefit ratio for data development projects improve when the the data is more broadly used
 - an inventory and widespread use of a central resource makes it easier to identify and prioritize information inadequacies
 - decision-making should be timely and made off the best available information
