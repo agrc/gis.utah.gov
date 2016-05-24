@@ -17,8 +17,9 @@ tags:
 - Incorporation
 - Boundary Data
 ---
-<p>    Catching up and doing the updates for the first quarter or the year these will be from Jan. 5th til May 13, 2016</p>
-<p>The following are the changes listed by county:<br />
+<p>    Catching up and doing the updates for the first quarter or the year 2016.
+The followint list represents all the annexation that came through the Lt. Governor's office between the begining of this year and May 13th. Any of these documents can be reviewed at http://municert.utah.gov/2016-certifications</p>
+<p>The following are the changes/annexations listed by County and City:<br />
 Box Elder – Tremont City (2)<br />
 Cache - Logan (2), Providence (3)<br />
 Davis  - Layton<br />
