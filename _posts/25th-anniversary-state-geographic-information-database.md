@@ -21,6 +21,9 @@ tags:
 
 ---
 
+[![SGID @ 25]({{ "/images/SGID25Sticker.png" | prepend: site.baseurl }})]({{"/images/SGID25Sticker.png" | prepend: site.baseurl}})
+{: .inline-text-right}
+
 For those of us not in the GIS field at the time, 1991 was a significant year in Utah and beyond... 
 
 In March of 1991, Governor Norman Bangerter signed into law Senate Bill 21, sponsored by Senator Dixie Leavitt. That was 25 years ago this Spring and, nationally, it was one of the, if not the first, instances of GIS being codified into state statute. 
