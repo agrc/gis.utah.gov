@@ -8,7 +8,7 @@ author:
   email: bgranberg@utah.gov
 date: 2016-05-24 21:57:21
 categories:
-
+- Featured
 tags:
 - SGID
 - GIS
@@ -18,15 +18,14 @@ tags:
 - coordination
 - AGRC
 - gis history
-
 ---
-
-[![SGID @ 25]({{ "/images/SGID25Sticker.png" | prepend: site.baseurl }})]({{"/images/SGID25Sticker.png" | prepend: site.baseurl}})
-{: .inline-text-right}
 
 For those of us not in the GIS field at the time, 1991 was a significant year in Utah and beyond...
 
 In March of 1991, Governor Norman Bangerter signed into law Senate Bill 21, sponsored by Senator Dixie Leavitt. That was 25 years ago this Spring and, nationally, it was one of the, if not the first, instances of GIS being codified into state statute.
+
+[![SGID @ 25]({{ "/images/SGID25Years_small.png" | prepend: site.baseurl }})]({{ "/images/SGID25Years.png" | prepend: site.baseurl }})
+{: .inline-text-right}
 
 Happy 25th Anniversary SGID!
 
