@@ -41,10 +41,10 @@ In many ways, the SGID is a forerunner for current data sharing initiatives prom
 - information-sharing promotes lateral links between program staff in related fields/agencies
 - reduce redundant data maintenance, services, and storage
 
-Just for fun, here are a few of the other note-worthy GIS milestones that are celebrating their 25th anniversary in 1991:
+*Just for fun, here are a few of the other note-worthy GIS milestones that are celebrating their 25th anniversary in 1991:*
 
 - First meeting of the Utah Geographic Information Council (at University of Utah)
-- First meeting of the National State Geographic Information Council (here's the faxed [invite](https://drive.google.com/drive/u/1/folders/0BxoOAQyOvGgaUV93SG92MlBPRTQ))
+- First meeting of the National State Geographic Information Council (here's the faxed [invite](https://drive.google.com/file/d/0BxoOAQyOvGgaSU1SVEVKS0F5NjF2aVB6OGY4NnJqZlR1ZW5Z/view?usp=sharing)
 - Esri releases ArcView 1.0, the first GUI-based GIS app for basic display and query. The shapefile was likely designed in 1991 but wasn’t released until ArcView version 2.0.
 - HP releases first inkjet plotters (this is a big deal as pen plotters were cumbersome and electrostatic plotters used dangerous chemicals and required specific climate-controlled rooms).
 
