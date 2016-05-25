@@ -24,12 +24,11 @@ For those of us not in the GIS field at the time, 1991 was a significant year in
 
 In March of 1991, Governor Norman Bangerter signed into law Senate Bill 21, sponsored by Senator Dixie Leavitt. That was 25 years ago this Spring and, nationally, it was one of the, if not the first, instances of GIS being codified into state statute.
 
-[![SGID @ 25]({{ "/images/SGID25YEARS_small.png" | prepend: site.baseurl }})]({{ "/images/SGID25YEARS.png" | prepend: site.baseurl }})
-{: .inline-text-right}
+<div class="caption"><a href ="{{ "/images/SGID25YEARS.png" | prepend: site.baseurl }}"><img src="{{ "/images/SGID25YEARS_small.png" | prepend: site.baseurl }}" alt="SGID 25th Anniversary Sticker" /></a><p class="caption-text">Commemorative SGID 25th Anniversary Sticker</p></div>
 
 Happy 25th Anniversary SGID!
 
-At the time, GIS had received significant attention as a result of the political redistricting effort soon underway, and the need that had risen for systematic study and planning for natural hazards, such as earthquakes. Seven unsuccessful bills were introduced on natural hazards the previous legislative session, resulting in a mandate for study during the 1990 legislative interim meetings. SB21, subtitled the “Geographic Information Systems Data Sharing and Conformity Bill” was a product of work performed by members and staffers of the State and Local Affairs Interim Committee. [More info](https://drive.google.com/file/d/0BxoOAQyOvGgac2wzV3g3X0lmX25oQlk3TDVDQVlwSV9TaVVn/view?usp=sharing)
+At the time, GIS had received significant attention as a result of the political redistricting effort soon underway, and the need that had arisen for systematic study and planning for natural hazards, such as earthquakes. Seven unsuccessful bills were introduced on natural hazards the previous legislative session, resulting in a mandate to study, among other things, state GIS capabilities during the 1990 legislative interim meetings. SB21, subtitled the “Geographic Information Systems Data Sharing and Conformity Bill” was a product of work performed by members and staffers of the State and Local Affairs Interim Committee. [More info](https://drive.google.com/file/d/0BxoOAQyOvGgac2wzV3g3X0lmX25oQlk3TDVDQVlwSV9TaVVn/view?usp=sharing)
 
 SB21 created, in statute, Utah’s State Geographic Information Database, and tasked AGRC with the responsibility for running the central data repository and clearinghouse for all public GIS data created or acquired by state agencies. Senator Leavitt’s bill also called upon AGRC to establish data standards and provide access and services to GIS users across Utah. Much of the original language remains in place in [63F-1-S507](http://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html).
 
@@ -42,9 +41,29 @@ In many ways, the SGID is a forerunner for current data sharing initiatives prom
 - information-sharing promotes lateral links between program staff in related fields/agencies
 - reduce redundant data maintenance, services, and storage
 
-Just for fun, here are a few of the other note-worthy GIS milestones that are celebrating their 25th anniversary in 1991:
+_Just for fun, here are a few of the other note-worthy GIS milestones that are celebrating their 25th anniversary in 1991:_
 
 - First meeting of the Utah Geographic Information Council (at University of Utah)
-- First meeting of the National State Geographic Information Council (here's the faxed [invite](https://drive.google.com/drive/u/1/folders/0BxoOAQyOvGgaUV93SG92MlBPRTQ))
+- First meeting of the National State Geographic Information Council (here's the faxed [invite](https://drive.google.com/file/d/0BxoOAQyOvGgaSU1SVEVKS0F5NjF2aVB6OGY4NnJqZlR1ZW5Z/view?usp=sharing)
 - Esri releases ArcView 1.0, the first GUI-based GIS app for basic display and query. The shapefile was likely designed in 1991 but wasn’t released until ArcView version 2.0.
 - HP releases first inkjet plotters (this is a big deal as pen plotters were cumbersome and electrostatic plotters used dangerous chemicals and required specific climate-controlled rooms).
+
+Commemorative 'SGID 25 Years' stickers are available in limited
+quantity. One size fits SGID data stewards and SGID data users alike.
+Get yours from an AGRC staffer at your earliest convenience.
+
+    <div class="grid">
+        <div class="grid__col grid__col--1-of-3 text-center">
+            <h5 class="text-center">Cover of SGID Data CD, 1995</h5>
+            <img alt="Cover of SGID Data CD, 1995" src="{{ "/images/SGID_Cover.JPG" | prepend: site.baseurl }}">
+        </div>
+        <div class="grid__col grid__col--1-of-3 text-center">
+            <h5 class="text-center">SGID Data CD, 1995</h5>
+            <img alt="SGID Data CD, 1995" src="{{ "/images/SGID_CD.JPG" | prepend: site.baseurl }}">
+        </div>
+        <div class="grid__col grid__col--1-of-3 text-center">
+            <h5 class="text-center">SGID Data User Guide, 1999</h5>
+            <img alt="SGID Data User Guide, 1999" src="{{ "/images/SGID_UserGuide.JPG" | prepend: site.baseurl }}">
+        </div>
+    </div>
+
