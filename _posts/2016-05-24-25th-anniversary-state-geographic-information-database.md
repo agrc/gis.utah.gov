@@ -51,4 +51,19 @@ Just for fun, here are a few of the other note-worthy GIS milestones that are ce
 Commemorative 'SGID 25 Years' stickers are available in limited
 quantity. One size fits SGID data stewards and SGID data users alike.
 Get yours from an AGRC staffer at your earliest convenience. 
+    
+    <div class="grid__col section alternate">
+        <div class="grid__col grid__col--1-of-3 text-center">
+            <h5 class="text-center">Cover of SGID Data CD, 1995</h5>
+            <img alt="Cover of SGID Data CD, 1995" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/SGID_Cover.JPG" | prepend: site.baseurl }}">
+        </div>
+        <div class="grid__col grid__col--1-of-3 text-center">
+            <h5 class="text-center">SGID Data CD, 1995</h5>
+            <img alt="SGID Data CD, 1995" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/SGID_CD.JPG" | prepend: site.baseurl }}">
+        </div>
+        <div class="grid__col grid__col--1-of-3 text-center">
+            <h5 class="text-center">SGID Data User Guide, 1999</h5>
+            <img alt="SGID Data User Guide, 1999" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/SGID_UserGuide.JPG" | prepend: site.baseurl }}">
+        </div>
+         </div>
 
