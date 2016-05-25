@@ -24,7 +24,7 @@ For those of us not in the GIS field at the time, 1991 was a significant year in
 
 In March of 1991, Governor Norman Bangerter signed into law Senate Bill 21, sponsored by Senator Dixie Leavitt. That was 25 years ago this Spring and, nationally, it was one of the, if not the first, instances of GIS being codified into state statute.
 
-<div class="caption"><img src="{{ "/images/SGID25YEARS_small.png" | prepend: site.baseurl }}" alt="SGID 25th Anniversary Sticker" /><p class="caption-text">Commemorative SGID 25th Anniversary Sticker</p></div>
+<div class="caption"><a href ="http://gis.utah.gov/images/SGID25YEARS.png"><img src="{{ "/images/SGID25YEARS_small.png" | prepend: site.baseurl }}" alt="SGID 25th Anniversary Sticker" /><p class="caption-text">Commemorative SGID 25th Anniversary Sticker</p></div>
 
 Happy 25th Anniversary SGID!
 
@@ -41,7 +41,7 @@ In many ways, the SGID is a forerunner for current data sharing initiatives prom
 - information-sharing promotes lateral links between program staff in related fields/agencies
 - reduce redundant data maintenance, services, and storage
 
-*Just for fun, here are a few of the other note-worthy GIS milestones that are celebrating their 25th anniversary in 1991:*
+_Just for fun, here are a few of the other note-worthy GIS milestones that are celebrating their 25th anniversary in 1991:_
 
 - First meeting of the Utah Geographic Information Council (at University of Utah)
 - First meeting of the National State Geographic Information Council (here's the faxed [invite](https://drive.google.com/file/d/0BxoOAQyOvGgaSU1SVEVKS0F5NjF2aVB6OGY4NnJqZlR1ZW5Z/view?usp=sharing)
@@ -52,18 +52,18 @@ Commemorative 'SGID 25 Years' stickers are available in limited
 quantity. One size fits SGID data stewards and SGID data users alike.
 Get yours from an AGRC staffer at your earliest convenience. 
     
-    <div class="grid__col section alternate">
+    <div class="grid">
         <div class="grid__col grid__col--1-of-3 text-center">
             <h5 class="text-center">Cover of SGID Data CD, 1995</h5>
-            <img alt="Cover of SGID Data CD, 1995" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/SGID_Cover.JPG" | prepend: site.baseurl }}">
+            <img alt="Cover of SGID Data CD, 1995" src="{{ "/images/SGID_Cover.JPG" | prepend: site.baseurl }}">
         </div>
         <div class="grid__col grid__col--1-of-3 text-center">
             <h5 class="text-center">SGID Data CD, 1995</h5>
-            <img alt="SGID Data CD, 1995" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/SGID_CD.JPG" | prepend: site.baseurl }}">
+            <img alt="SGID Data CD, 1995" src="{{ "/images/SGID_CD.JPG" | prepend: site.baseurl }}">
         </div>
         <div class="grid__col grid__col--1-of-3 text-center">
             <h5 class="text-center">SGID Data User Guide, 1999</h5>
-            <img alt="SGID Data User Guide, 1999" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/SGID_UserGuide.JPG" | prepend: site.baseurl }}">
+            <img alt="SGID Data User Guide, 1999" src="{{ "/images/SGID_UserGuide.JPG" | prepend: site.baseurl }}">
         </div>
-         </div>
+    </div>
 
