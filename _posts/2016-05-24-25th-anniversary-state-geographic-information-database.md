@@ -26,7 +26,7 @@ In March of 1991, Governor Norman Bangerter signed into law Senate Bill 21, spon
 
 "{{ "/images/SGID25YEARS.png" | prepend: site.baseurl }}"
 
-<div class="caption"><a href ="{{ "/images/SGID25YEARS.png" | prepend: site.baseurl }}"><img src="{{ "/images/SGID25YEARS_small.png" | prepend: site.baseurl }}" alt="SGID 25th Anniversary Sticker" /><p class="caption-text">Commemorative SGID 25th Anniversary Sticker</p></a></div>
+<div class="caption"><a href ="{{ "/images/SGID25YEARS.png" | prepend: site.baseurl }}"><img src="{{ "/images/SGID25YEARS_small.png" | prepend: site.baseurl }}" alt="SGID 25th Anniversary Sticker" /></a><p class="caption-text">Commemorative SGID 25th Anniversary Sticker</p></div>
 
 Happy 25th Anniversary SGID!
 
