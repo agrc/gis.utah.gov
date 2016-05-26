@@ -27,5 +27,5 @@ License: [MIT](https://github.com/agrc/agrc.github.io/blob/master/LICENSE).
 <a href="{{site.baseurl}}{% post_url 2016-05-26-file-name-without-extension %}">link text</a>
 ```
 
-- [Kramdown reference](kramdown.gettalong.org/quickref.html)
+- [Kramdown reference](http://kramdown.gettalong.org/quickref.html)
 - [Jekyll Cheat Sheat](http://cheat.jekyll.tips/)
