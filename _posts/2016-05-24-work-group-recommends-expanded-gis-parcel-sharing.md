@@ -8,25 +8,24 @@ author:
   email: bgranberg@utah.gov
 date: 2016-05-24 22:44:03
 Categories:
-featured
+- featured
 
 tags:
-GIS
-SGID
-AGRC
-parcels
-cadastral
-cadastre
-assessor
-recorder
-boundary
-property
-assessment
-address
-valuation
-tax
-UAC
-
+- GIS
+- SGID
+- AGRC
+- parcels
+- cadastral
+- cadastre
+- assessor
+- recorder
+- boundary
+- property
+- assessment
+- address
+- valuation
+- tax
+- UAC
 ---
 __A Proposal for Voluntary Expanded Parcel Data Sharing__
 
