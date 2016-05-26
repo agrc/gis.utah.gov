@@ -62,5 +62,5 @@ __Next Steps__
         <a href ="{{ "/images/ParcelAssessedLandValue.pdf" | prepend: site.baseurl }}">
         <img src="{{ "/images/AssessedLandValue.jpg" | prepend: site.baseurl }}" alt="Assessed Land Value Example" /></a><p class="caption-text">Assessed Land Value, By Acre (Northern Utah County)</p></div>
     <div class="grid__col grid__col--1-of-2 text-center">
-        <a href ="{{ "/images/ParcelVacantPrivateLand.pdf" | prepend: site.baseurl }}"><img src="{{ "/images/VacantPrivateLand.jpg" | prepend: site.baseurl }}" alt="SGID 25th Anniversary Sticker" /></a><p class="caption-text">Vacant Private Land (Northern Utah County)</p></div>
+        <a href ="{{ "/images/ParcelVacantPrivateLand.pdf" | prepend: site.baseurl }}"><img src="{{ "/images/VacantPrivateLand.jpg" | prepend: site.baseurl }}" alt="Vacant Private Land Example" /></a><p class="caption-text">Vacant Private Land (Northern Utah County)</p></div>
 </div>
