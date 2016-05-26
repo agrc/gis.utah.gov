@@ -16,7 +16,6 @@ tags:
 - AGRC
 - Bryce
 - Utah
-
 ---
 _**UGIC 2016**_
 
