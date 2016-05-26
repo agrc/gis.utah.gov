@@ -42,7 +42,7 @@ An important realization made by the group was that ‘parcel data’ or ‘parc
 
 The LIR recommendations do not impact the periodic sharing of _**basic parcel GIS data**_ (boundary, ID, address) from the County Recorders to AGRC per 63F-1-506 (3.b.vi). Both the tax year parcel and the basic parcel GIS layers are designed for general purpose uses, and are not substitutes for researching and obtaining the most current, legal land records information on file in County records.
 
-It is hoped that this new expanded parcel GIS layer will be put to immediate use supporting the best possible outcomes in public safety, economic development, transportation, planning, and the provision of public services.
+It is hoped that this new expanded parcel GIS layer will be put to immediate use supporting the best possible outcomes in public safety, economic development, transportation, planning, and the provision of public services. Example uses can be found in the maps at the bottom of this post. 
 
 Another aim of the work group was to improve the usability of the data (through development of standards and consistent metadata documentation) and the efficiency with which the data sharing is distributed.
 
