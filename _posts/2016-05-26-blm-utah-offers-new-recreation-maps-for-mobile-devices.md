@@ -8,7 +8,7 @@ author:
   email: kfinch@blm.gov
 date: 2016-05-26 16:10:01
 categories:
-- Guest Blog
+- Guestblog
 tags:
 - BLM
 - GeoPDF
