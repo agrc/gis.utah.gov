@@ -20,7 +20,7 @@ tags:
 
 The annual Utah Geographic Information Council (UGIC) Conference was held May 9-13, 2016 in Bryce Canyon, Utah. The conference had over 200 attendees and over 60 breakouts. Thank you to everyone who participated and helped make the conference a success!  
 
-Congratulations to the map gallery winners: Aaron Pulver, Ran Wei, and Clay Mann (Student Map/Poster), Jonny Jew (Professional Map), Stan McShinksy (Online Map/App), and Christopher Lant, Timothy Stoebner, Justin School, and Benhamin Crabbe (Professional Poster). And congratulations to Andrea Roskelley for winning iron cartographer!
+Congratulations to the map gallery winners: Aaron Pulver, Ran Wei, and Clay Mann (Student Map/Poster), Jonny Jew (Professional Map), Stan McShinsky (Online Map/App), and Christopher Lant, Timothy Stoebner, Justin School, and Benhamin Crabbe (Professional Poster). And congratulations to Andrea Roskelley for winning iron cartographer!
 
 You can find the winning maps, as well as other pictures and information on twitter using the hash tag [#UGIC2016](https://twitter.com/hashtag/UGIC2016?src=hash).
 
