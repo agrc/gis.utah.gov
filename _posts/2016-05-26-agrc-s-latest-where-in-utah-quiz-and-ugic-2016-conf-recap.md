@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'AGRC's Latest Where in Utah Quiz and UGIC 2016 Conf Recap'
+title: 'Latest Where in Utah Quiz and UGIC 2016 Conf Recap'
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
