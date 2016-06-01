@@ -23,6 +23,11 @@ tags: []
 - [AGRC Contacts]({{ "/about/contact/" | prepend: site.baseurl }})
 - [AGRC Directions and Parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }})
 
+### Quick Links
+- [GIS-related Utah Statute]({{ "/about/code" | prepend: site.baseurl }})
+- [AGRC Contacts]({{ "/about/contact/" | prepend: site.baseurl }})
+- [AGRC Directions and Parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }})
+
 ### Background
 
 The Automated Geographic Reference Center (AGRC) is the State of Utah’s map technology coordination office. AGRC staff ([directory/contacts]({{ "/about/contact/" | prepend: site.baseurl }})) have knowledge and experience in geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state.
