@@ -19,9 +19,9 @@ tags: []
 ## About AGRC
 
 ### Quick Links
-[GIS-related Utah Statute]({{ "/about/code" | prepend: site.baseurl }})
-[AGRC Contacts]({{ "/about/contact/" | prepend: site.baseurl }})
-[AGRC Directions and Parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }})
+- [GIS-related Utah Statute]({{ "/about/code" | prepend: site.baseurl }})
+- [AGRC Contacts]({{ "/about/contact/" | prepend: site.baseurl }})
+- [AGRC Directions and Parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }})
 
 ### Background
 
