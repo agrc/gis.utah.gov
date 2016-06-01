@@ -2,6 +2,7 @@
 layout: page
 status: publish
 published: true
+title: About AGRC
 author:
   display_name: AGRC Staff
   login: Map Utah
@@ -16,12 +17,11 @@ date_gmt: '2011-06-30 23:18:14 -0600'
 categories: []
 tags: []
 ---
-## About AGRC
-
 ### Quick Links
-[GIS-related Utah Statute]({{ "/about/code" | prepend: site.baseurl }})
-[AGRC Contacts]({{ "/about/contact/" | prepend: site.baseurl }})
-[AGRC Directions and Parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }})
+
+- [GIS-related Utah Statute]({{ "/about/code" | prepend: site.baseurl }})
+- [AGRC Contacts]({{ "/about/contact/" | prepend: site.baseurl }})
+- [AGRC Directions and Parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }})
 
 ### Background
 
@@ -52,7 +52,7 @@ AGRC was one of the first geospatial information offices in the country, establi
 - Lidar Elevation Models
 - Location Analytics
 - [911 Map Data Support]( {{"/about/gis-for-911/" | prepend: site.baseurl }} )
-- [Municipal]("http://municert.utah.gov"), Voting, and other Civic Boundaries
+- [Municipal](http://municert.utah.gov), Voting, and other Civic Boundaries
 - Public Land Survey System
 - Spatial Database Design, Integration and Hosting
 - Statewide Address Point Aggregation
