@@ -51,19 +51,6 @@ layout: default
     <div class="grid__col section alternate">
         <a id="news" class="anchor"></a>
         <h2>Featured News</h2>
-        <div class="grid__col grid__col--1-of-2">
-            <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
-            outcomes from Utah's investment in GIS across the public and private sectors. We all benefit by leveraging
-            the efforts, talents, and success of our colleagues. Partnerships built between like-minded organizations
-            generate savings and improve outcomes.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-2">
-            <p>AGRC encourages GIS professionals and students to join us in periodically contributing news and updates,
-            to both our blog pages, here, and the
-            <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}">monthly AGRC GIS newsletter</a>.
-            Fill out the form at the bottom of any gis.utah.gov page to subscribe. Contact
-            <a href="mailto:jpechmann@utah.gov?subject=Contributing GIS News">Jessie Pechmann</a> to contribute.</p>
-        </div>
         <hr class="hr-separate" />
         {% for post in site.categories.Featured limit:3 %}
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
@@ -77,6 +64,18 @@ layout: default
             <a href="{{ "/news/" | prepend: site.baseurl }}" class="btn">All Recent News</a>
             <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
         </p>
+        <div class="grid__col grid__col--1-of-2">
+            <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
+            outcomes from Utah's investment in GIS. Coordination pays off by leveraging
+            the efforts, talents, and success within the GIS community.</p>
+        </div>
+        <div class="grid__col grid__col--1-of-2">
+            <p>AGRC encourages GIS professionals and students to periodically contribute news and updates,
+            to both our blog pages and
+            <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}">newsletter</a>.
+            Use the form at the bottom of any gis.utah.gov page to subscribe. Contact
+            <a href="mailto:jpechmann@utah.gov?subject=Contributing GIS News">Jessie Pechmann</a> to contribute.</p>
+        </div>
     </div>
     <div class="grid__col section">
         <a id="data" class="anchor"></a>
