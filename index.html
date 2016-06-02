@@ -51,7 +51,6 @@ layout: default
     <div class="grid__col section alternate">
         <a id="news" class="anchor"></a>
         <h2>Featured News</h2>
-        <hr class="hr-separate" />
         {% for post in site.categories.Featured limit:3 %}
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -64,6 +63,7 @@ layout: default
             <a href="{{ "/news/" | prepend: site.baseurl }}" class="btn">All Recent News</a>
             <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
         </p>
+        <hr class="hr-separate" style="margin-top: 2em" />
         <div class="grid__col grid__col--1-of-2">
             <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
             outcomes from Utah's investment in GIS. Coordination pays off by leveraging
