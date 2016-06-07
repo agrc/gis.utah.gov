@@ -30,7 +30,7 @@ Instructions for using Discover services in ArcMap 10.x:
   - `utah` – 6-inch statewide natural color aerial photography collected within the last 3 years **(licensed)**
   - `utah_2012archive` – Aerial photography updated in `utah` service and archived by acquisition year **(licensed)**
   - `utah_2013archive` – Aerial photography updated in `utah` service and archived by acquisition year **(licensed)**
-  - `doq_1990’s_bw` – 1-meter statewide black & white aerial photography collected in 1990’s (coming soon)
+  - `doq_1990’s_bw` – 1-meter statewide black & white aerial photography collected in 1990’s
   - `hro_2012_rgb` – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
   - `naip_*year*_rgb` – 1-meter statewide natural color aerial photography
   - `naip_*year*_nrg` – 1-meter statewide color infrared aerial photography
