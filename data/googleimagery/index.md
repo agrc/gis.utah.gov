@@ -72,8 +72,8 @@ ArcMap users experiencing problems with the service may need to clear their loca
 ### Adding a WMS service to CAD
 {: .text-left}
 
-**Microstation** users should take a look at this <a href="ftp://ftp.agrc.utah.gov/Google/MicroStationGoogleWMS_HowTo.pdf">How To document</a>.
-**AutoCAD Civil 3D 2016** users should take a look at this <a href="https://us-support.nearmap.com/hc/en-us/articles/212242658-AutoCAD-Civil-3D-2016-WMS-Integration">How To document</a>.
+- **Bentley Microstation** users should take a look at this <a href="ftp://ftp.agrc.utah.gov/Google/MicroStationGoogleWMS_HowTo.pdf">How To document</a>.  
+- **AutoCAD Civil 3D 2016** users should take a look at this <a href="https://us-support.nearmap.com/hc/en-us/articles/212242658-AutoCAD-Civil-3D-2016-WMS-Integration">How To document</a>.
 
 ### Usage Tracking
 {: .text-left}
