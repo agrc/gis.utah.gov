@@ -42,7 +42,7 @@ tags:
 ---
 <p>During the Fall of 2013 and the Spring of 2014 AGRC and partners acquired <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2013_2014/WasatchFront_LiDAR_2013-2014_Extent.jpg" target="_blank">
       1,422 square miles</a> of 8 points per meter Quality Level 1 LiDAR for areas along the Wasatch Front including the urbanized areas of Salt Lake County and Utah County and areas along the Wasatch Fault
-      from Sanpete County north into Oneida County in southeast Idaho. The .5 meter resolution bare earth hydro flattened DTMs and first-return/highest-hit DSMs in IMG format are available from our
+      from Sanpete County north into Oneida County in southeast Idaho. The .5 meter resolution bare earth hydro flattened DTMs and first-return/highest-hit DSMs in .img format have a 9.25cm vertical RMSE accuracy and are available from our
       <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2013_2014/">FTP site</a>. The LAS classified point clouds are also available <a href="mailto:rkelson@utah.gov">by request</a> or from
       <a href="http://opentopo.sdsc.edu/datasetMetadata?otCollectionID=OT.122014.26912.1">Open Topography</a>. Here is a link to the
       <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2013_2014/WF_LAS_index_shp.zip">LAS tile index</a> to use when making a request from AGRC.
@@ -100,7 +100,7 @@ tags:
 <h3>DTM</h3>
 <p>
     A Digital Terrain Model (DTM), commonly referred to as a DEM, is a digital file consisting of terrain elevations for ground positions at regularly spaced horizontal intervals.
-    In this dataset features above the ground such as buildings and trees have been removed from the elevation model. The resolution of this data is .5 Meter (25 cm).
+    In this dataset features above the ground such as buildings and trees have been removed from the elevation model. The resolution of this data is .5 Meter and is sufficient for generating 1 foot contours.
     This data has a wide range of applications and is most commonly used in flood and hydro-logic modeling, geologic hazard mapping, contour line creation, and rectification
     of aerial photography and satellite imagery.
 </p>
@@ -111,7 +111,7 @@ tags:
 <h3>DSM</h3>
 <p>
     A Digital Surface Model (DSM) is similar to a DTM but features above the ground terrain have not been removed from the elevation model. The resolution of
-    this data is .5 Meter (25 cm). This data has a wide range of applications including analyzing solar potential, vegetation quantification, and building or surface feature delineation.
+    this data is .5 Meter. This data has a wide range of applications including analyzing solar potential, vegetation quantification, and building or surface feature delineation.
 </p>
 <p><a  title="Point Cloud" href="{{ "/downloads/ptCloud.jpg" | prepend: site.baseurl }}">
     <img class="inline-text-left" style="border: 1px solid black;" src="{{ "/images/ptCloud.jpg" | prepend: site.baseurl }}" alt="lidar" width="100" height="100" /></a>
