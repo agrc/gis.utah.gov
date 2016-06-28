@@ -65,7 +65,7 @@ The dates of each flight block can be downloaded from <a href="ftp://ftp.agrc.ut
 
 If you have not yet received quad-word links to the service (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) that do not require a username and password contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a>.
 
-ArcMap users experiencing problems with the service may need to clear their local cache by going to the service’s `Layer Properties -> Cache` tab and selecting Clear Local Cache Now. Be patient as this could take several minutes.
+ArcMap users experiencing problems with the service, such as blurry tiles at different scales, may need to clear their local cache by going to the service’s `Layer Properties -> Cache` tab and selecting `Clear Local Cache Now`. Be patient as this could take several minutes. If the blurry tiles persist you have the options to `Clear cache when the session ends` or `Don't cache and data locally`. This seems to be a problem with ArcMap and is not a problem with the imagery services.
 
 **ArcMap 10.1 users** should use the WMS service and not the WMTS. The WMTS in ArcMap 10.1 does not render correctly.
 
