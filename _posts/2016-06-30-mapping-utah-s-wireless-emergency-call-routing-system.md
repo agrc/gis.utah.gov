@@ -37,5 +37,5 @@ Future phases of this project have been discussed and may include actual call lo
 
 For this phase, It is our recommendation that each PSAP further investigate and review these sectors and, if necessary, submit changes to the appropriate wireless providers.  The hope is that the wireless providers would then, in turn, update their routing call sheets to reflect the most logical PSAP routing.  Ultimately, this will greatly improving 911 call response time and cut down on emergency call transfers between the PSAPs.
 
-![Map One]({{ "/images/SectorsBearLake.png" | prepend: site.baseurl }})
-![Map Two]({{ "/images/SectorsWithPsaps.png" | prepend: site.baseurl }})
+![Map One: Mapping Cell Sectors]({{ "/images/SectorsBearLake.png" | prepend: site.baseurl }})
+![Map Two: Cell Sector Overlap]({{ "/images/SectorsWithPsaps.png" | prepend: site.baseurl }})
