@@ -92,7 +92,7 @@
             {% assign current = page.url | downcase | split: '/' %}
             <nav class="site-nav">
                 <ul id="menu-main-menu" class="menu">
-                    <li class="menu-item {% if current[1] == 'agrc-newsletter' %}active-1{% endif %}"><a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}">News</a>
+                    <li class="menu-item {% if current[1] == 'news' %}active-1{% endif %}"><a href="{{ "/news/" | prepend: site.baseurl }}">News</a>
                     </li>
                     <li class="menu-item {% if current[1] == 'data' %}active-2{% endif %}"><a href="{{ "/data/" | prepend: site.baseurl }}">Data</a>
                     </li>
