@@ -37,6 +37,6 @@ Future phases of this project have been discussed and may include plotting call 
 
 For this phase, it is our recommendation that each PSAP further investigate and review these sectors and, if necessary, submit change requests, through West, to the appropriate wireless providers.
 [![Utah sector analysis and visualization website]({{"/images/CellSectorApp_small.png" | prepend: site.baseurl}})]({{"http://mapserv.utah.gov/celltowercoverage/"}}){:.inline-text-right}
-For local validation of our results, and to allow for future ad-hoc analysis of new or updated sectors, we've created the [Utah sector analysis and visualization tool](http://mapserv.utah.gov/celltowercoverage/).
+For local validation of our results, and to allow for future ad-hoc analysis of new or updated sectors, we've created the [Utah sector analysis and visualization tool](http://mapserv.utah.gov/celltowercoverage/) (view [web app source code in GitHub](https://github.com/agrc/cell-tower-coverage)).
 
 Ultimately, taken together, these efforts should help improve 911 call response time and cut down on emergency call transfers between the PSAPs.
