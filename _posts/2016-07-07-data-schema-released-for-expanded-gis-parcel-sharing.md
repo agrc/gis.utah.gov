@@ -8,8 +8,11 @@ author:
   email: bgranberg@utah.gov
 date: 2016-07-07 20:05:49
 categories:
-
+- Featured
 tags:
+- Parcels
+- Planning
+- GOMB
 
 ---
 
@@ -21,7 +24,7 @@ _Working together,_ Curtis wrote, _we've been able to arrive at a solution that 
 
 Several 'next steps’ from the recommendations document are now in motion.
 
-<a href="https://docs.google.com/a/utah.gov/document/d/1pNqjCeF_3NZjNnBGqQ3EqliMkVaWtAbybn1eZ4gt038/edit?usp=sharing "><img src="{{ "/images/taxparcelschema_thumb.png" | prepend: site.baseurl }}" alt="" title="Expanded Parcel Data Sharing, Implementation Guidelines " class="inline-text-left" />
+<a href="https://docs.google.com/a/utah.gov/document/d/1pNqjCeF_3NZjNnBGqQ3EqliMkVaWtAbybn1eZ4gt038/edit?usp=sharing "><img src="{{ "/images/taxparcelschema_thumb.png" | prepend: site.baseurl }}" alt="" title="Expanded Parcel Data Sharing, Implementation Guidelines " class="inline-text-left" /></a>
 
 - [A submission guidelines document, including a recommended data schema for submissions](https://docs.google.com/a/utah.gov/document/d/1pNqjCeF_3NZjNnBGqQ3EqliMkVaWtAbybn1eZ4gt038/edit?usp=sharing), was created by AGRC and reviewed by the Assessors and the work group representatives
 - An initial data submission ‘ask’ was made to Counties in late June
