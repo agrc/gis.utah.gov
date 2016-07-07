@@ -20,7 +20,7 @@ tags:
 The State of Utah School and Institutional Trust Lands Administration (SITLA) is currently in the process of migrating land ownership data to the most current public land survey system (PLSS) parcel fabric version, maintained by the Automated Geographic Reference Center (AGRC). The land ownership is currently aligned to the 2006 version of the PLSS and is out-of-date. Now is the perfect opportunity to take advantage of the parcel fabric. SITLA is partnering with AGRC to make this happen and to ensure the harmonization between the parcel fabric and land ownership. Every time the parcel fabric is updated by AGRC, the land ownership will automatically be updated with it. The land ownership will move with changes in the parcel fabric which will yield a clean and quality product!
 
 <div class="caption">
-<a href ="{{ "/downloads/SITLA_ParcelFabric_fullsize.png " | prepend: site.baseurl }}">
+<a href ="{{ "/images/SITLA_ParcelFabric_fullsize.png " | prepend: site.baseurl }}">
 <img src="{{ "/images/SITLA_ParcelFabric.png" | prepend: site.baseurl }}" alt="SITLA Parcel Fabric Example" /></a>
 <p class="caption-text">Example of Land Ownership being integrated with PLSS Parcel Fabric</p>
 </div>
