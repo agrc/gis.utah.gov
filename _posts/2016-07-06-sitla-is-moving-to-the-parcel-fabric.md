@@ -25,7 +25,7 @@ The State of Utah School and Institutional Trust Lands Administration (SITLA) is
 <p class="caption-text">Example of Land Ownership being integrated with PLSS Parcel Fabric</p>
 </div>
 
-There are a few steps that need to be taken to prepare the land ownership for migration into the parcel fabric. The first step is to actually migrate the land ownership to the current version of PLSS. This involves many small geoprocessing tasks that take approximately 5 to 6 hours to complete. Once completed, the land ownership needs to be verified and cleaned. Subsequent steps that are needed to be taken to ensure that this is successful, including:
+There are a few steps that need to be taken to prepare the land ownership for migration into the parcel fabric. The first step is to actually migrate the land ownership to the current version of PLSS. This involves many small geoprocessing tasks that take approximately 5 to 6 hours to complete. Once completed, the land ownership needs to be verified and cleaned. Subsequent steps that need to be taken to ensure success include:
 
 - incorporating metes and bounds descriptions where needed,
 - adding missing aliquot parcels,
