@@ -99,4 +99,4 @@ Some of the organizations that we have partnered with or worked for recently:
 | · [Utah Council of Land Surveyors](http://www.ucls.org/) | · [Utah Education and Telehealth Network](http://uetn.org) | · [Utah Geographic Information Council](http://ugic.info) |
 | · Utah State Board of Regents | · Utah State Elections Office | · Utah State Legislature |
 | · Utah State Tax Commission | · Utah State University | · Utah Transit Authority |
-| · Utah Valley University | · [Valley Emergency Communication Center](http://vecc9-1-1.org) |
+| · Utah Valley University | · [Valley Emergency Communication Center](http://vecc9-1-1.com/) |
