@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'SITLA is Moving to the Parcel Fabric'
+title: 'SITLA is Moving to the Utah PLSS Parcel Fabric'
 author:
   display_name: Kate Staley
   email: katestaley@utah.gov
@@ -25,7 +25,15 @@ The State of Utah School and Institutional Trust Lands Administration (SITLA) is
 <p class="caption-text">Example of Land Ownership being integrated with PLSS Parcel Fabric</p>
 </div>
 
-There are a few steps that need to be taken to prepare the land ownership for migration into the parcel fabric. The first step is to actually migrate the land ownership to the current version of PLSS. This involves many small geoprocessing tasks that take approximately 5 to 6 hours to complete. Once completed, the land ownership needs to be verified and cleaned. There are many small steps that need to be taken to ensure that this is successful; including incorporating metes and bounds descriptions where needed, adding missing aliquot parcels, cutting natural boundaries, verifying and re-calculating attributes, creating true curves and validating topologies. This is by far the most time consuming and tedious stage of the process, but definitely the most important one. The land ownership has to be flawless before it can be loaded into the parcel fabric.
+There are a few steps that need to be taken to prepare the land ownership for migration into the parcel fabric. The first step is to actually migrate the land ownership to the current version of PLSS. This involves many small geoprocessing tasks that take approximately 5 to 6 hours to complete. Once completed, the land ownership needs to be verified and cleaned. Subsequent steps that need to be taken to ensure success include:
+
+- incorporating metes and bounds descriptions where needed,
+- adding missing aliquot parcels,
+- cutting natural boundaries,
+- verifying and re-calculating attributes, and 
+- creating true curves and validating topologies. 
+
+These steps are by far the most time consuming and tedious stage of the process, but are definitely most important to overall success. The land ownership has to be flawless before it can be loaded into the parcel fabric.
 
 The next step is to add domains and fields to the geodatabase containing the parcel fabric. The domains and fields that are being added need to match the schema of the land ownership parcels. If the schema does not match, then the land ownership parcels will not load into the parcel fabric correctly. The final step is to type the land ownership parcels according to the Local Government Information Model  (LGIM). This is accomplished using the “IrParcelType” domain. The type value for ownership is equal to “8.” The land ownership is now ready to be loaded into the parcel fabric!
 
