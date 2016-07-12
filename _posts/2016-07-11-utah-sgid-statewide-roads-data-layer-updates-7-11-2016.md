@@ -55,7 +55,7 @@ The following highlights what has been updated:
 #### County Updates:
 
  - **Cache:** Received centerline update 06/10/2016: added new roads, road name and address range changes since last update on 11/05/2015; geocoding improvements
- - **Salt Lake** Received centerline update 06/20/2016: added new roads, road name and address range changes since last update 01/13/2016; geocoding improvements
+ - **Salt Lake** Received centerline update 06/20/2016: added new roads, road name and address range changes since last update 03/21/2016; geocoding improvements
  - **Summit:** Received centerline update 02/17/2016: added new roads, road name and address range changes since last update 04/01/2015; geocoding improvements
 
 #### Blue Stakes of Utah Feedback:
@@ -67,6 +67,11 @@ The following highlights what has been updated:
 #### Granite School District Feedback:
 
  - **Salt Lake:** geocoding improvements
+ 
+#### Box Elder County Feedback:
+
+  - **Box Elder:** geocoding improvements
+ 
 
 #### UDOT Route System:
 
