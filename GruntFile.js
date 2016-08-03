@@ -93,6 +93,14 @@ module.exports = function (grunt) {
             }
         },
         uglify: {
+            options: {
+                preserveComments: false,
+                compress: {
+                    drop_console: true,
+                    passes: 10,
+                    dead_code: true
+                }
+            },
             list: {
                 src: ['bower_components/list.js/dist/list.min.js', 'js/source/list.js'],
                 dest: 'js/dist/list.min.js'
