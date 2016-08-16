@@ -4,6 +4,12 @@ Read [about our new website](http://gis.utah.gov/about-our-new-v6-website-in-ghp
 [Contribute](http://gis.utah.gov/about/contributing/) content or typos.  
 License: [MIT](https://github.com/agrc/agrc.github.io/blob/master/LICENSE).
 
+## Local Development
+
+1. Check out this repository
+1. run `docker-compose up`
+1. browse to `localhost:4000`
+
 ## Common Website Tips
 
 ```md
