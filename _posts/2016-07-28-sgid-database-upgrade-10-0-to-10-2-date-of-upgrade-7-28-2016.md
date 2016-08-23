@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: 'SGID Database Upgrade 10.0 to 10.2: Date of Upgrade 7/28/2016'
 author:
   display_name: Matt Peters
