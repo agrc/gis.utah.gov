@@ -122,7 +122,7 @@ title: SGID Index
         </tbody>
     </table>
 </div>
-<script src="{{ "/js/dist/list.min.js" | prepend: site.baseurl "}}"></script>
+<script src="{{ "/js/dist/list.min.js" | prepend: site.baseurl }}"></script>
 '''
 
     return html
