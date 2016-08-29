@@ -46,5 +46,27 @@ _**bold italics**_
 [link text](http://external.website.location)
 ```
 
+#### images
+
+- markdown
+```md
+![alt text]({{ "/path/to/item/" | prepend: site.baseurl }})
+```
+- html
+```html
+<img src="{{ "/path/to/image.jpg" alt="hover text" | prepend: site.baseurl }}"/>
+```
+
+#### link alt text
+```md
+[link text]({{ "/path/to/item/" | prepend: site.baseurl }} "popup text")
+```
+
+#### css in markdown
+```md
+![alt text]({{ "/path/to/item/" | prepend: site.baseurl }})
+{: .css-class-name}
+```
+
 - [Kramdown reference](http://kramdown.gettalong.org/quickref.html)
 - [Jekyll Cheat Sheat](http://cheat.jekyll.tips/)
