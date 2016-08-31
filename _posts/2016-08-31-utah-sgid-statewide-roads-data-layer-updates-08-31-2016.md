@@ -45,6 +45,7 @@ The following highlights were updated:
 - **Weber County:** Obtained centerline update on 08/19/2016: added new roads, road name and address range changes since last update 02/22/2016; geocoding improvements
 
 #### Blue Stakes (811) Feedback:
+
  - **Kaysville:** geocoding improvements
  - **Taylor:** geocoding improvements
  - **Utah County:** geocoding improvements
