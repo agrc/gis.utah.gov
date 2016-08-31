@@ -38,7 +38,7 @@ The following highlights were updated:
 
 - **Utah County:** Obtained centerline update on 08/24/2016: added new roads, road name and address range changes since last update 04/29/2016; geocoding improvements
 
-- **Wasatch County:** Obtained centerline update on 02/2016: added new roads, road name and address range changes since last update on 02/22/2016; geocoding improvements.
+- **Wasatch County:** Obtained centerline update on 08/02/2016: added new roads, road name and address range changes since last update on 02/22/2016; geocoding improvements.
 
 - **Washington County:** Obtained centerline update on 08/19/2016: added new roads, road name and address range changes since last update 07/28/2016; geocoding improvements
 
