@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 61 64.2" style="enable-background:new 0 0 61 64.2;" xml:space="preserve">
+<style type="text/css">
+    .st0{display:none;fill:#FBB040;}
+    .st4{fill:#0C779A;stroke:#D1D3D4;stroke-miterlimit:10;}
+</style>
+<g>
+    <rect x="-195.3" y="-268.5" class="st0" width="1132.8" height="566.4"/>
+    <polygon class="st4" points="22.3,34.1 23,1 1.2,34.2"/>
+    <polygon class="st4" points="53.7,8.6 22.3,34.1 23,1"/>
+    <polygon class="st4" points="59.8,37.2 22.3,34.1 53.7,8.6"/>
+    <polygon class="st4" points="44.7,63 22.3,34.1 59.8,37.2"/>
+    <polygon class="st4" points="15.8,57.8 22.3,34.1 44.7,63"/>
+    <polygon class="st4" points="15.8,57.8 1.2,34.2 22.3,34.1"/>
+    <circle cx="23" cy="1" r="1"/>
+    <circle cx="53.7" cy="8.6" r="1"/>
+    <circle cx="59.8" cy="37.2" r="1"/>
+    <circle cx="44.7" cy="63" r="1"/>
+    <circle cx="22.3" cy="34.1" r="1"/>
+    <circle cx="15.8" cy="57.8" r="1"/>
+    <circle cx="1.2" cy="34.1" r="1"/>
+</g>
+</svg>
