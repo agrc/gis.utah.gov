@@ -6,7 +6,7 @@ title: 'Third Quarter 2016 Municipal Boundaries Updates'
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2016-09-02 15:35:52
+date: 2016-09-07 15:35:52
 categories:
 
 tags:
