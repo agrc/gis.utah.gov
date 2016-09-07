@@ -48,3 +48,26 @@ svg.logo {
         opacity: 1;
     }
 }
+.turngps {
+    float: left;
+    width: 59px;
+    height: 64px;
+    margin-right: 1em;
+    .panel {
+        fill: $brand-color;
+        stroke: #d1d3d4;
+        stroke-miterlimit: 10;
+    }
+    .dot {
+        fill: #333;
+    }
+    .turngps-logo {
+        display: none;
+    }
+    &:hover {
+        .panel {
+            fill: lighten($brand-color, 25%);
+            stroke: #fff;
+        }
+    }
+}
