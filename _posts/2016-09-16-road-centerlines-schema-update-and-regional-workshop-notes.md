@@ -22,9 +22,9 @@ This year, AGRC has devoted a significant amount of energy toward realigning our
 
 The three primary components to the realignment are:
 
--updating the existing road centerlines data model to ensure that the data content can easily meet NG911 and UDOT needs, while preserving additional road attributes,
--modifying the existing data aggregation process to add efficiencies that results in imporved data quality and data update frequency, and 
--exploring emerging software/platform capabilities, that will allow for the statewide road centerlines layer to edited 'in-place' by road and address authorities, and informed by feedback from the many users of this valued data resource.
+- updating the existing road centerlines data model to ensure that the data content can easily meet NG911 and UDOT needs, while preserving additional road attributes,
+- modifying the existing data aggregation process to add efficiencies that results in imporved data quality and data update frequency, and 
+- exploring emerging software/platform capabilities, that will allow for the statewide road centerlines layer to edited 'in-place' by road and address authorities, and informed by feedback from the many users of this valued data resource.
 
 What follows are a few updates and resources related to this effort.
 
