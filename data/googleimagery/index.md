@@ -24,7 +24,7 @@ tags:
 ### Background
 {: .text-left}
 
-At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial photography. _Read the original [post]({{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}) about the acquisition_. The license will allow Utah's **cities, counties, special districts, state agencies, K12/Higher ed, and tribes** to use this imagery in web and desktop mapping  applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is **use by contractors and formal partners of the immediate licensees**.
+At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial photography. _Read the original [post]({{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}) about the acquisition_. The license will allow **Utah's cities, counties, special districts, state agencies, K12/Higher ed, and tribes** to use this imagery in web and desktop mapping  applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is **use by contractors and formal partners of the immediate licensees**.
 
 ### Coordinate System and Datum
 {: .text-left}
@@ -53,7 +53,7 @@ Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -
 ### Archive Services
 {: .text-left}
 
-In addition to the statewide `utah` Google imagery service layer there are archive layers available, `utah_2012archive` and `utah_2013archive`. As new imagery is collected and added to the <em>utah</em> layer the older replaced imagery is placed into the layer that corresponds to the year the imagery was originally collected. If you are not seeing the <a href="{{ "/downloads/ArchiveServices.png" | prepend: site.baseurl }}"> archive service layers</a> simply go to ArcCatalog or ArcMap's Catalog Viewer and right-click the GIS Server connection created to access the imagery service and select `Refresh`.
+In addition to the statewide `utah` Google imagery service layer there are archive layers available (ex. `utah_2011archive`). As new imagery is collected and added to the `utah` layer the new imagery is also placed into the layer that corresponds to the year the imagery was collected. If you are not seeing the <a href="{{ "/downloads/ArchiveServices.png" | prepend: site.baseurl }}"> archive service layers</a> simply go to ArcCatalog or ArcMap's Catalog Viewer and right-click the GIS Server connection created to access the imagery service and select `Refresh`.
 
 ### Flight Dates
 {: .text-left}
