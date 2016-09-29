@@ -45,10 +45,15 @@ In addition to the Google imagery, Discover contains imagery services for NAIP a
 
 - Instructions on how to [use the Discover services in ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
 
-### Adding a WMTS or WMS service to ArcMap
+### Adding a WMTS or WMS Service to ArcMap
 {: .text-left}
 
 Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -> Add WMTS Server` and paste the WMTS link you have been provided into the `URL:` line then hit OK. Now navigate to the newly added WMTS **'utah imagery - WMTS on discover.agrc.utah.gov'** by going to `Add Data -> GIS Servers`. If you drill down through the service folders you will find the `utah` layer to add <a href="{{ "/downloads/AddWMTS_tree.jpg" | prepend: site.baseurl }}">(see example)</a>. The WMS service can be added by following the instructions above just substitute `GIS Servers -> Add WMS Server`.
+
+### Adding a WMTS or WMS Service to a Web Map
+{: .text-left}
+
+Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({{"/using-agrcs-new-web-mercator-services-in-your-web-maps/" | prepend:site.baseurl}}) for more information. Remember, if the web map is going to be public facing you need to request a separate quad-work link. To do this send an email to Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) and provide your web map URL domains.
 
 ### Archive Services
 {: .text-left}
@@ -69,7 +74,7 @@ ArcMap users experiencing problems with the service, such as blurry tiles at dif
 
 **ArcMap 10.1 users** should use the WMS service and not the WMTS. The WMTS in ArcMap 10.1 does not render correctly.
 
-### Adding a WMS service to CAD
+### Adding a WMS Service to CAD
 {: .text-left}
 
 - **Bentley Microstation** users should take a look at this <a href="ftp://ftp.agrc.utah.gov/Google/MicroStationGoogleWMS_HowTo.pdf">How To document</a>.  
