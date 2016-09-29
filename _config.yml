@@ -15,7 +15,7 @@ analytics:
     google:
         tracking_id: 'UA-11849964-41'
 sass:
-    style: nested
+    style: compressed
 github:
     repository_url: https://github.com/agrc/agrc.github.io
 markdown: kramdown
