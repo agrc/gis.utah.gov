@@ -8,22 +8,37 @@ author:
   email: bgranberg@utah.gov
 date: 2016-09-30 16:55:53
 categories:
-
+- Featured
 tags:
+- imagery
+- aerial photography
+- google
+- discover
+- agrc
+- sgid
+- basemaps
+- orthophotography
+- GIS
+- CAD
+- web services
+- WMTS
+- WMS
 
 ---
+[![Google Imagery Usage Map]({{"/images/HighResImageryAndBaseMaps_Sept2016thumb.jpg" | prepend:site.baseurl}} "view high res usage map")]({{"/downloads/HighResImageryAndBaseMaps_Sept2016.pdf
+" | prepend:site.baseurl}}){:.inline-text-right}
 
-It's been about 18 months since the statewide high resolution (6") aerial photography services, licensed from google and funded through the Utah Mapping and Information Partnership, began serving state and local government from AGRC's Discover imagery server.
+It has been about 18 months since the statewide high resolution (6") aerial photography content and services, licensed from Google and funded through the Utah Mapping and Information Partnership (UMIP), were made available to state and local government through AGRC's Discover imagery server.
 
-So, what have we learned so far? A lot actually, thanks to the two resources: an extensive user survey and metrics collected by the server itself.
+*So, what have we learned so far?* A lot actually, thanks to two resources: an extensive user survey and metrics collected by the server itself.
 
-The user survey, conducted late this Spring, identifies how the aerial photography services are being used, what the benefits are to organizations using the license, and suggestions for future updates and enhancements. A [summary of the Utah High Res (6") Aerial Photography User Survey](https://docs.google.com/document/d/1iwLi8icm3OqF0GvEnblD6REiwcmUdug03Dny2vvXMMM/edit?usp=sharing) is now available, and includes a list of all [open text comments](https://docs.google.com/document/d/1iwLi8icm3OqF0GvEnblD6REiwcmUdug03Dny2vvXMMM/edit?usp=sharing).
+The user survey, conducted late this Spring, identifies how the aerial photography services are being used, what the benefits are to organizations using the license, and suggestions for future updates and enhancements. A [summary of the Utah High Res (6") Aerial Photography User Survey](https://docs.google.com/document/d/1iwLi8icm3OqF0GvEnblD6REiwcmUdug03Dny2vvXMMM/edit?usp=sharing) is now available, and includes a list of [responses](https://docs.google.com/document/d/1iwLi8icm3OqF0GvEnblD6REiwcmUdug03Dny2vvXMMM/edit?usp=sharing) to free-text questions.
 
-Usage metrics from the server, identify who is using the services, how much, and maybe most importantly WHERE use is the highest, and how use varies around the state. While the server metrics likely understate use (since they do not account for the use of on-premise large-area custome mosaics created for dispatch centers and other, small area downloaded jp2 files, and client caching of imagery tiles already viewed), they emphatically show usage has steadily increased and, that usage, as expected, varies greatly in different parts of the state. 
+Additionaly, usage metrics from the Discover server identify who is using the services, how much, and maybe most importantly, WHERE use is the highest, and how it varies around the state. The server metrics emphatically show usage has steadily increased and, that usage, as expected, varies greatly in different parts of the state. It is worth noting that the server log metrics actually understate use, ass they do not account for the use of large-area custom mosaics created for 911 dispatch centers and others who require on-premise copies of the imagery. Caching of imagery tiles that have already been viewed, by ArcGIS and other applications, also means the numbers do not reflect full usage.
 
-The WHERE piece to the imagery question is important as total area is most expensive component for all models of aerial photography acquisition. And as Utah considers what areas to reacquire or subscribe to, under any acquisition model, having a spatial representation of usage is key.
+The WHERE piece to the imagery question is quite important as the single most expensive component for all models of aerial photography acquisition, is the size of the area of interest. And, as Utah considers what areas to re-acquire or subscribe to, having a spatial representation of current usage is critical. Where there's current use, there's probably future use and the accompanying expectation for periodic update.
 
-While high resolution aerial photography is potentially valuable anywhere in the state, there is nothing better than a map to shows where it has been used the most. The attached map depicts the number of imagery tiles requested from the Discover server, since its inception, at scales where 6" pixel resolution make an substantial difference (scales between of 1:2000 and 1:500). The data shown on the map is aggregated, so that the number of tiles requested is shown for each 1 square mile grid cell.
+While high resolution aerial photography is potentially valuable anywhere in the state, there is nothing better than a map to shows where it has been used the most. The attached map depicts the number of imagery tiles requested from the Discover server, since its inception, at scales where 6" pixel resolution make an substantial difference to users (scales between of 1:2000 and 1:500). The data shown on the map is aggregated, so that the number of tiles requested is shown for each grid cell (approximately 1 square mile in size).
 
 Here are several overview-scale observations:
 - Use is highest in the urban areas but includes all settled areas or areas with economic development or along transportation corridors. Many rural areas are thrilled to finally have access to 6" imagery for use on their own mapping systems.
@@ -32,6 +47,6 @@ Here are several overview-scale observations:
 - Respondents cited benefits from improving their data quality and collection efficiency,  that resulted in improved analysis to support decision making
 - 80% of respondents report a high level of satisfaction and perceived value (an 8,9, or 10 out of 10)
 - Image quality, resolution, horizontal positioning of the imagery, and update frequency are all important but in varying degrees to different organizations.
-- The web service delivery mechanism provide efficient access to the aerial photography. Speed increases last Fall were a significant improvement. CAD users report more issues (than GIS users) with their software's ability to consume the web services.
+- The web service delivery mechanism provides efficient access to the aerial photography. Speed increases last Fall were a significant improvement. CAD users report more issues (than GIS users) with their software's ability to consume the web services.
 
-Information from the recent user survey and from server logs that describe and depict usage will greatly impact the imagery recommendations and business plan, in progress, that AGRC will present to the UMIP Steering Commitee and partners, as we consider next steps in this arena.
+Information from the recent user survey and from server logs that describe and depict usage will greatly impact the imagery recommendations and business plan (currently in progress) that AGRC will present to the UMIP Steering Commitee and partners, as we consider next steps in this arena.
