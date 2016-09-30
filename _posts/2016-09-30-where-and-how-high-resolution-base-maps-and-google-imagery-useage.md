@@ -37,7 +37,8 @@ Additionally, usage metrics from the Discover server identify who is using the s
 
 The **WHERE** piece to the imagery question is quite important, as the single most expensive component for all models of aerial photography acquisition, is the size of the area of interest. And, as Utah considers what areas to re-acquire or subscribe to, having a spatial representation of current usage is critical. Where there's current use, there's probably future use and the accompanying expectation for periodic update.
 
-While high resolution aerial photography is potentially valuable anywhere in the state, there is nothing better than a map to shows where it has been used the most. The attached map depicts the number of imagery tiles requested from the Discover server, since its inception, at scales where 6" pixel resolution makes an substantial difference to users (scales between of 1:2000 and 1:500). The data shown on the map is aggregated, so that the number of tiles requested is shown for each grid cell (approximately 1 square mile in size).
+While high resolution aerial photography is potentially valuable anywhere in the state, there is nothing better than a map to shows where it has been used the most. The map above (**[click to open]({{"/downloads/HighResImageryAndBaseMaps_Sept2016.pdf
+" | prepend:site.baseurl}})**) depicts the number of imagery tiles requested from the Discover server, since its inception, at scales where 6" pixel resolution makes an substantial difference to users (scales between of 1:2000 and 1:500). The data shown on the map is aggregated, so that the number of tiles requested is shown for each grid cell (approximately 1 square mile in size).
 
 Here are several overview-scale observations:
 
