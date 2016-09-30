@@ -26,8 +26,12 @@ The WHERE piece to the imagery question is important as total area is most expen
 While high resolution aerial photography is potentially valuable anywhere in the state, there is nothing better than a map to shows where it has been used the most. The attached map depicts the number of imagery tiles requested from the Discover server, since its inception, at scales where 6" pixel resolution make an substantial difference (scales between of 1:2000 and 1:500). The data shown on the map is aggregated, so that the number of tiles requested is shown for each 1 square mile grid cell.
 
 Here are several overview-scale observations:
-- Use is highest in the urban areas but many rural areas are thrilled to finally have access to 6" imagery
-- Image quality, resolution, horizontal positioning of the imagery, and update frequency are all important but in varying degrees to diffent organizations
-- The web service delivery mechanism provide efficient access and speed increases last Fall were a significant improvement. CAD users report more issues (than GIS users) with their software's ability to consume the web services.
+- Use is highest in the urban areas but includes all settled areas or areas with economic development or along transportation corridors. Many rural areas are thrilled to finally have access to 6" imagery for use on their own mapping systems.
+- The 111 survey respondents (of 270+ organizations with user accounts) estimated usage at their organization, that when totalled suggested almost 1000 daily users across the state
+- The imagery is used by a diverse set of levels and sectors of the public sector (and private sector partners), to support a great variety of needs
+- Respondents cited benefits from improving their data quality and collection efficiency,  that resulted in improved analysis to support decision making
+- 80% of respondents report a high level of satisfaction and perceived value (an 8,9, or 10 out of 10)
+- Image quality, resolution, horizontal positioning of the imagery, and update frequency are all important but in varying degrees to different organizations.
+- The web service delivery mechanism provide efficient access to the aerial photography. Speed increases last Fall were a significant improvement. CAD users report more issues (than GIS users) with their software's ability to consume the web services.
 
 Information from the recent user survey and from server logs that describe and depict usage will greatly impact the imagery recommendations and business plan, in progress, that AGRC will present to the UMIP Steering Commitee and partners, as we consider next steps in this arena.
