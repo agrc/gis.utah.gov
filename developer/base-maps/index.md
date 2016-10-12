@@ -36,6 +36,4 @@ If you need continued support of the UTM base maps, we will be offering the tile
 
 <i class="fa fa-fw fa-map"></i> Finally, we have the **Color Infrared** and **Topo** caches. The Color Infrared is a neat way to look at vegetation while the Topo cache contains all of the USGS Quad Sheets. The Topo cache displays the most relevant quad sheet (250K, 100K and 24K) depending on your scale.
 
-The [update schedule]({{ "/developer/base-maps/basemap-maintenance-schedule/" | prepend: site.baseurl }}) will keep you in the loop as to when they were last updated.
-
-These base maps are used in our [widgets library]({{ "/developer/widgets/" | prepend: site.baseurl }}) and all of our online web apps. You can also [use them in ArcGIS Desktop]( {{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
+The [update schedule]({{ "/developer/base-maps/basemap-maintenance-schedule/" | prepend: site.baseurl }}) will keep you in the loop as to when they were last updated. You can also [use them in ArcGIS Desktop]( {{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
