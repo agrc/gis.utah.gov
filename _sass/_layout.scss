@@ -76,14 +76,13 @@ a:hover > i {
 
 .read-time {
     padding: 0;
-    @include media-query($on-large) {
-        margin-top: -3em;
-    }
+    margin-top: -3em;
+    font-size: 65%;
     @include media-query($on-medium) {
-        margin-top: -2.5em;
+        margin-top: -2em;
     }
     @include media-query($on-small) {
-        margin-top: -2em;
+        margin-top: -1.5em;
     }
 }
 
