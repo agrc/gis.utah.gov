@@ -50,7 +50,7 @@ tags:
 <strong>Abstract:</strong><br />
 The <strong>Basic Parcels</strong> contain GIS mapping data representing parcel boundaries. AGRC has Basic Parcel data for all 29 counties. Some counties are more complete than others. In addition to the polygon geometry the attributes PARCEL ID, PARCEL ADDRESS, PARCELS CITY, PARCEL ZIP CODE, OWNERSHIP TYPE, and RECORDER contact are maintained in the Basic Parcel dataset when available. Users should be aware the owner type field 'OWN_TYPE' in the parcel polygons is a very generalized ownership type (Federal, Private, State, Tribal). It is populated with the value of the 'OWNER' field where the parcel's centroid intersects the CADASTRE.LandOwnership polygon layer. A <strong><a title="view and query available parcel data" href="http://mapserv.utah.gov/parcels/" target="_blank">parcel web application</a></strong> is available for viewing and downloading the Basic Parcel data.</p>
 
-The <strong>Landuse Information Record Parcels (LIR)</strong> contain GIS mapping data representing parcel boundaries and county tax roll attributes. AGRC has Landuse Information Record Parcels for some of the counties in Utah. Some counties are more complete than others. In addition to the polygon geometry the attributes COUNTY_NAME, COUNTY_ID, ASSESSOR_SRC, BOUNDARY_SRC, DISCLAIMER, CURRENT_ASOF, PARCEL_ID, SERIAL_NUM, PARCEL_ADD, PARCEL_CITY, TAXEXEMPT_TYPE, TAX_DISTRICT, TOTAL_MKT_VALUE, LAND_MKT_VALUE, PARCEL_ACRES, PROP_CLASS, PRIMARY_RES, HOUSE_CNT, SUBDIV_NAME, BLDG_SQFT, BLDG_SQFT_INFO, FLOORS_CNT, FLOORS_INFO, BUILT_YR, EFFBUILT_YR, CONST_MATERIAL are maintaintained in the Landuse Information Record Parcels dataset when available.</p>
+The <strong>Landuse Information Record Parcels (LIR)</strong> contain GIS mapping data representing parcel boundaries and county tax roll attributes. AGRC has Landuse Information Record Parcels for some of the counties in Utah. Since each County has its own database and process for maintaining tax year assessment information, users should expect some variability in each County's LIR dataset. In addition to the polygon geometry the attributes COUNTY_NAME, COUNTY_ID, ASSESSOR_SRC, BOUNDARY_SRC, DISCLAIMER, CURRENT_ASOF, PARCEL_ID, SERIAL_NUM, PARCEL_ADD, PARCEL_CITY, TAXEXEMPT_TYPE, TAX_DISTRICT, TOTAL_MKT_VALUE, LAND_MKT_VALUE, PARCEL_ACRES, PROP_CLASS, PRIMARY_RES, HOUSE_CNT, SUBDIV_NAME, BLDG_SQFT, BLDG_SQFT_INFO, FLOORS_CNT, FLOORS_INFO, BUILT_YR, EFFBUILT_YR, CONST_MATERIAL are maintaintained in the Landuse Information Record Parcels dataset when available.</p>
 <p><strong>Data Content:</strong><br />
 The following data is available for download:</p>
 <div class="grid package">
@@ -72,7 +72,7 @@ The following data is available for download:</p>
         </div>
         <div class="grid__col grid__col--12-of-12 package-content">
             <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/parcels.png" | prepend: site.baseurl }}" alt="Parcels" />CADASTRE.Parcels_'County name'_LIR are datasets for cartography and approximate boundary identification.</p>
-            <p>The Land Information Records (LIR) work group organized by the Governor’s Office of Management and Budget has requested tax roll parcel data from County Assessors to support public safety, economic development, transportation, planning and the provisions of public services.</p>
+            <p>The Land Information Records (LIR) work group organized by the Governor’s Office of Management and Budget has facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety, economic development, transportation, planning and the provisions of public services.</p>
             <p>Tax year parcel GIS data will be updated annually with the finalized year-end tax assessment data that is completed by May 22nd each year then submitted to the Automated Geographic Reference Center (AGRC) for loading into SDE by July 1st each year.</p>
             <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83.</p>
             <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
@@ -95,7 +95,7 @@ The following data is available for download:</p>
                   <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Beaver_LIR/" target="_blank">2016 LIR</a></td>
                 </tr>
                 <tr>
-                  <td><a title="county parcel web app" href="http://gis.boxeldercounty.org/MobileApps/ParcelFinder/s2.html?app=apps2/Finder" target="_blank">BoxElder</a></td>
+                  <td><a title="county parcel web app" href="http://gis.boxeldercounty.org/MobileApps/ParcelFinder/s2.html?app=apps2/Finder" target="_blank">Box Elder</a></td>
                   <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_BoxElder/" target="_blank">Sept. 2016</a></td>
                   <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_BoxElder_LIR/" target="_blank">2016 LIR</a></td>
                 </tr>
@@ -175,12 +175,12 @@ The following data is available for download:</p>
                   <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Rich_LIR/" target="_blank"></a></td>
                 </tr>
                 <tr>
-                  <td><a title="county parcel web app" href="http://slco.org/assessor/new/query/intropage.cfm" target="_blank">SaltLake</a></td>
+                  <td><a title="county parcel web app" href="http://slco.org/assessor/new/query/intropage.cfm" target="_blank">Salt Lake</a></td>
                   <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SaltLake/" target="_blank">Oct. 2016</a></td>
                   <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SaltLake_LIR/" target="_blank">2016 LIR</a></td>
                 </tr>
                 <tr>
-                  <td><a title="county website" href="http://www.sanjuancounty.org/" target="_blank">SanJaun</a></td>
+                  <td><a title="county website" href="http://www.sanjuancounty.org/" target="_blank">San Juan</a></td>
                   <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SanJaun/" target="_blank">May 2014</a></td>
                   <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SanJaun_LIR/" target="_blank"></a></td>
                 </tr>
