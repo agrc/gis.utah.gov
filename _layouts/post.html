@@ -7,7 +7,7 @@ layout: default
   <header class="post-header">
     <p class='sub-title text-center muted'>By {{ page.author.display_name }} on {{ page.date | date: '%b %d, %Y' }}</p>
     <h1 class="post-title">{{ page.title }}</h1>
-    <p>This article will take {{ content | reading_time | pluralize: "minute" }} to read.</p>
+    <p class="sub-title read-time text-center muted">This article will take {{ content | reading_time | pluralize: "minute" }} to read</p>
   </header>
  {% endif %}
 
