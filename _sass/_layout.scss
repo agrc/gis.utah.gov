@@ -74,6 +74,11 @@ a:hover > i {
     text-transform: uppercase;
 }
 
+.read-time {
+    margin-top: -3em;
+    padding: 0
+}
+
 .post-content, .page-content {
     margin-bottom: $spacing-unit;
 
