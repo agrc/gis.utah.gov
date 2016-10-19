@@ -75,23 +75,20 @@ a:hover > i {
 }
 
 .read-time {
-    padding: 0
+    padding: 0;
+    @include media-query($on-large) {
+        margin-top: -3em;
+    }
+    @include media-query($on-medium) {
+        margin-top: -2.5em;
+    }
+    @include media-query($on-small) {
+        margin-top: -2em;
+    }
 }
 
 .post-content, .page-content {
     margin-bottom: $spacing-unit;
-    
-    .read-time {
-        @include media-query($on-large) {
-            margin-top: -3em;
-        }
-        @include media-query($on-medium) {
-            margin-top: -2.5em;
-        }
-        @include media-query($on-small) {
-            margin-top: -2em;
-        }
-    }
     h1 {
         @include media-query($on-large) {
             font-size: 2.22em;
