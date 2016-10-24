@@ -43,6 +43,6 @@ exclude: [
     "LICENSE"
 ]
 include: [
-    "_redirects"
+    "_redirects",
     "_headers"
 ]
