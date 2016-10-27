@@ -2,7 +2,7 @@
 
 Read [about our new website](http://gis.utah.gov/about-our-new-v6-website-in-ghpages).  
 [Contribute](http://gis.utah.gov/about/contributing/) content or typos.  
-License: [MIT](https://github.com/agrc/agrc.github.io/blob/master/LICENSE).
+License: [MIT]({{ site.github.repository_url }}/blob/master/LICENSE).
 
 ## Local Development
 
