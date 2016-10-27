@@ -17,7 +17,8 @@ analytics:
 sass:
     style: compressed
 github:
-    repository_url: https://github.com/agrc/agrc.github.io
+    repository_url: https://github.com/agrc/gis.utah.gov
+    repository_name: gis.utah.gov
 markdown: kramdown
 kramdown:
     input: GFM

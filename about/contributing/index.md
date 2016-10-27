@@ -44,15 +44,15 @@ The ever resourceful [Scott Davis](https://twitter.com/@SThomasDavis) created a 
 
 #### GitHub
 
-You will need a GitHub account to participate, so [create a free GitHub account](https://github.com/join) if you do not already have one. Navigate to the [agrc organization](https://github.com/agrc/) on GitHub and find the [website source code](https://github.com/agrc/agrc.github.io). [Fork](https://help.github.com/articles/github-glossary/#fork) the [repository](https://help.github.com/articles/github-glossary/#repository) to create a personal copy of gis.utah.gov website in the GitHub cloud.
+You will need a GitHub account to participate, so [create a free GitHub account](https://github.com/join) if you do not already have one. Navigate to the [agrc organization](https://github.com/agrc/) on GitHub and find the [website source code]({{ site.github.repository_url }}). [Fork](https://help.github.com/articles/github-glossary/#fork) the [repository](https://help.github.com/articles/github-glossary/#repository) to create a personal copy of gis.utah.gov website in the GitHub cloud.
 
 #### Creating and Naming New Content
 
 The gis.utah.gov website is generated using [Jekyll](http://jekyllrb.com/). Jekyll is a tool that aids in the creation of the websites content as well as the look and feel. Jekyll dictates how the website directory structure is organized.
 
-New `Posts` should be placed in the [`_posts`](https://github.com/agrc/agrc.github.io/tree/master/_posts) folder of your fork (*https://github.com/YOUR USER NAME/agrc.github.io/tree/master/_posts*). This can be accomplished by first navigating to the `_posts` folder and clicking the `New File` button. Copy and paste the content generated in the `File Path` input that the templater created.
+New `Posts` should be placed in the [`_posts`]({{ site.github.repository_url }}/tree/master/_posts) folder of your fork (*https://github.com/YOUR USER NAME/{{ site.github.repository_name }}/tree/master/_posts*). This can be accomplished by first navigating to the `_posts` folder and clicking the `New File` button. Copy and paste the content generated in the `File Path` input that the templater created.
 
-`Posts` can go anywhere in the website structure. To achieve the extensionless urls, an `index.md` or `index.html` file is created inside of a folder. The folder name will be the url to the content. eg: `gis.utah.gov/folder-name`. Folders can be nested within folders as can be seen in the [existing structure](https://github.com/agrc/agrc.github.io/tree/master/data). The templater will take care of the naming, therefore clicking the `New File` button and pasting the content generated in the `File Path` input should give the desired result.
+`Posts` can go anywhere in the website structure. To achieve the extensionless urls, an `index.md` or `index.html` file is created inside of a folder. The folder name will be the url to the content. eg: `gis.utah.gov/folder-name`. Folders can be nested within folders as can be seen in the [existing structure]({{ site.github.repository_url }}/tree/master/data). The templater will take care of the naming, therefore clicking the `New File` button and pasting the content generated in the `File Path` input should give the desired result.
 
 By default, the templater has given the new file a `.md` markdown extension.
 
@@ -66,7 +66,7 @@ The templator has created the [YAML Front Matter](https://jekyllrb.com/docs/fron
 
 #### Adding Images and Assets
 
-By convention, the gis.utah.gov website places all of it's images in the [`images`](https://github.com/agrc/agrc.github.io/tree/master/images) folder and all other assets (PDF's, text files, etc) in the [`downloads`](https://github.com/agrc/agrc.github.io/tree/master/downloads) folder. From the `images` or `downloads` directory in your browser, drag the assets you would like to reference in your post on to the browser window[^1]. GitHub will recognize this and upload the assets. Finally, add a meaningful commit message describing the changes and commit the changes.
+By convention, the gis.utah.gov website places all of it's images in the [`images`]({{ site.github.repository_url }}/tree/master/images) folder and all other assets (PDF's, text files, etc) in the [`downloads`]({{ site.github.repository_url }}/tree/master/downloads) folder. From the `images` or `downloads` directory in your browser, drag the assets you would like to reference in your post on to the browser window[^1]. GitHub will recognize this and upload the assets. Finally, add a meaningful commit message describing the changes and commit the changes.
 
 #### The Pull Request
 

@@ -27,7 +27,7 @@ The primary driver behind this release was to solve some nagging issues associat
 
 While, it is true that we are putting our faith in the engineers at GitHub to keep their stack [running for us](https://status.github.com/), we are not solely in the company of freeloaders. The paid services GitHub provides to their top-tier paying customers (many of the largest software firms in the world, including the most prominent commerical GIS software vendor), should ensure we are in good hands. And since all our pages are static (as opposed to dynamically generated from PHP database calls), we could easily port the site to another cloud platform if we ever find the need.
 
-Another nice feature of GH Pages is its cloud-based, static website generator system. Our content repository is at [https://github.com/agrc/agrc.github.io](https://github.com/agrc/agrc.github.io), and any time an edit is approved and merged into the repo, the appropriate static pages on github.io servers are updated in seconds. And, through a clever bit of DNS work, the github.io servers are what the world sees as http://gis.utah.gov.
+Another nice feature of GH Pages is its cloud-based, static website generator system. Our content repository is at [{{ site.github.repository_url }}]({{ site.github.repository_url }}), and any time an edit is approved and merged into the repo, the appropriate static pages on github.io servers are updated in seconds. And, through a clever bit of DNS work, the github.io servers are what the world sees as {{ site.baseurl | prepend: site.url }}.
 
 ![Forking the AGRC Website Repo in GitHub]({{ "/images/forkingagrc.png" | prepend: site.baseurl }})
 {: .inline-text-left}
@@ -38,7 +38,7 @@ We believe this to be the first .gov website hosted on GitHub Pages within Utah,
 
 - An adaptive design developed in partnership with the Department of Technology Services AppDev/UX team
 - Better, easier to find information about Utah GIS data resources
-- The [SGID Index Table](http://gis.utah.gov/data/sgid-index/), an alternate search method across the SGID inventory
+- The [SGID Index Table]({{ "/data/sgid-index/" | prepend: site.baseurl }}), an alternate search method across the SGID inventory
  - The beginnings of an authoritative web service data endpoint inventory
  - Dataset refresh/update cycle information (later this year)
  - And other bells and whistles on their way
