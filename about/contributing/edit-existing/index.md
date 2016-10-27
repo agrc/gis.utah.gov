@@ -34,8 +34,8 @@ tags: []
 **Method 2: Editing a page from within the AGRC Website GitHub repository**
 
 1. Create a free [GitHub account](https://github.com/join), if you do not already have one.
-1. Go to the AGRC website repository on GitHub: {{ site.github.repository_url }}.
-1. You’ll need to create your own “fork”, or version, of the website repository. To do this, click ![Fork]({{ "/images/GitHubFork_Button.png" | prepend: site.baseurl }}) in the upper right. Then, click your GitHub username.
+1. Go to the AGRC website repository on GitHub: [{{ site.github.repository_url }}]({{ site.github.repository_url }}).
+1. You’ll need to create your own “fork”, or version, of the website repository. To do this, click ![Fork]({{ "images/GitHubFork_Button.png" | prepend: site.baseurl }}) in the upper right. Then, click your GitHub username.
 1. Navigate to the page you wish to edit.
     1. Blogposts are in the `_posts` folder.
     1. Data pages are in the `data` folder.
