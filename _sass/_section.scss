@@ -19,6 +19,11 @@
             border: .08em solid #333;
         }
     }
+    &.featured {
+        padding: 0 .5em 0 0;
+        border-top: 1px solid $highlight-color;
+        border-bottom: 0;
+    }
     &.alternate {
         background: radial-gradient(30em circle, lighten($section-alternating, 10%), $section-alternating);
         background-color: $section-alternating;
