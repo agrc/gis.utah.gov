@@ -22,6 +22,7 @@ tags: []
 - [GIS-related Utah Statute]({{ "/about/code" | prepend: site.baseurl }})
 - [AGRC Contacts]({{ "/about/contact/" | prepend: site.baseurl }})
 - [AGRC Directions and Parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }})
+- [Contributing to this website]({{ "/about/contributing" | prepend: site.baseurl }})
 
 ### Background
 
