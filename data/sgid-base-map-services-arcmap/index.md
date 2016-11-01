@@ -28,12 +28,12 @@ Instructions for using Discover services in ArcMap 10.x:
   - You can rename the connection after it has been added
 1. You should see a list of imagery and base map services (explained below):
   - `utah` – 6-inch statewide natural color aerial photography collected within the last 3 years **(licensed)**
-  - `utah_*year*archive` – Aerial photography updated in `utah` service and archived by acquisition year **(licensed)**
+  - `utah_*year*archive` – Aerial photography blocks updated in `utah` service and archived by acquisition year **(licensed)**
   - `doq_1990’s_bw` – 1-meter statewide black & white aerial photography collected in 1990’s
   - `hro_2012_rgb` – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
   - `naip_*year*_rgb` – 1-meter statewide natural color aerial photography
   - `naip_*year*_nrg` – 1-meter statewide color infrared aerial photography
-  - `hillshade` – 10 meter 4-way shaded relief
+  - `hillshade` – 10 meter 4-way statewide shaded relief
   - `address_points-basemap` – Base map of address point locations
   - `lite-basemap` – Base map of hillshade, HWYs/streets, cities, boundaries, etc. (gray, muted tone)
   - `overlay-basemap` – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
