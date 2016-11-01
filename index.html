@@ -70,11 +70,11 @@ layout: default
     <div class="grid__col section alternate">
         <a id="news" class="anchor"></a>
         <h2>Featured News</h2>
-        {% for post in site.categories.Featured limit:3 %}
+        {% for post in site.categories.Featured limit:6 %}
         <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             <br/>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncate: 80 }}</a>
             <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         </div>
         {% endfor %}
