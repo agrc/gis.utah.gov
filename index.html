@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="section featured">
   {% for post in site.categories.Featured limit:3 %}
-  <div class="grid__col grid__col--1-of-3">
+  <div class="grid__col grid__col--1-of-3 grid__col--am">
       <a href="{{ post.url | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-newspaper-o"></i> {{ post.title | truncate: 80 }}</a>
   </div>
   {% endfor %}
