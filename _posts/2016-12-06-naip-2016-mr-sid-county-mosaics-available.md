@@ -18,8 +18,8 @@ The statewide 2016 National Agricultural Imagery Program (NAIP) 1 meter aerial p
 <a href="{{ "/data/aerial-photography/2016-naip-1-meter-orthophotography/" | prepend: site.baseurl }}">is
 now available</a>. The imagery is currently only available as 3-band RGB Mr. Sid compressed county mosaics.
 
-- [Visit NAIP2016 Webpage]({% "/data/aerial-photography/2016-naip-1-meter-orthophotography-prelim/" | prepend: site.baseurl %})
+- [Visit NAIP2016 Webpage]({{ "/data/aerial-photography/2016-naip-1-meter-orthophotography-prelim/" | prepend: site.baseurl }})
 
-- <a href="http://raster.utah.gov/?cat=NAIP%202016%20(1m)" target="_blank">Retrieve 2016 NAIP via Interactive Map</a>
+- [Retrieve 2016 NAIP via Interactive Map](http://raster.utah.gov/?cat=NAIP%202016%20(1m))
 
 If you have questions contact <a href="mailto:rkelson@utah.gov">Rick Kelson</a> at (801-538-3237).
