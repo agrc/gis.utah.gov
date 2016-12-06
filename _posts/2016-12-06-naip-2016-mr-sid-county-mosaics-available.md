@@ -15,7 +15,7 @@ tags:
 - aerial photography
 ---
 The statewide 2016 National Agricultural Imagery Program (NAIP) 1 meter aerial photography
-<a href="{{ "/data/aerial-photography/2016-naip-1-meter-orthophotography/" | prepend: site.baseurl }}">is
+<a href="{{ "/data/aerial-photography/2016-naip-1-meter-orthophotography-prelim/" | prepend: site.baseurl }}">is
 now available</a>. The imagery is currently only available as 3-band RGB Mr. Sid compressed county mosaics.
 
 - [Visit NAIP2016 Webpage]({{ "/data/aerial-photography/2016-naip-1-meter-orthophotography-prelim/" | prepend: site.baseurl }})
