@@ -21,10 +21,10 @@ module.exports = function (grunt) {
             }
         },
         imagemin: {
+            options: {
+                optimizationLevel: 3
+            },
             images: {
-                options: {
-                    optimizationLevel: 3
-                },
                 files: [{
                     expand: true, // Enable dynamic expansion
                     cwd: 'images/', // Src matches are relative to this path
@@ -32,10 +32,15 @@ module.exports = function (grunt) {
                     dest: 'images/' // Destination path prefix
                 }]
             },
+            agol: {
+                files: [{
+                    expand: true,
+                    cwd: 'agol/',
+                    src: ['**/*.{png,jpg,jpeg,gif}'],
+                    dest: 'agol/'
+                }]
+            },
             downloads: {
-                options: {
-                    optimizationLevel: 3
-                },
                 files: [{
                     expand: true, // Enable dynamic expansion
                     cwd: 'downloads/', // Src matches are relative to this path
