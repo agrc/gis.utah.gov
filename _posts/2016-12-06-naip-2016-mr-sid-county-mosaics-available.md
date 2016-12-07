@@ -20,7 +20,8 @@ now available</a>. The imagery is currently only available as 3-band RGB Mr. Sid
 
 <ul class="dotless">
 <li><a href="{{ "/data/aerial-photography/2016-naip-1-meter-orthophotography-prelim/" | prepend: site.baseurl }}">Visit NAIP2016 Webpage</a></li>
-<li><i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=NAIP%202016%20(1m)">Retrieve 2016 NAIP via Interactive Map</a></li>
 </ul>
+
+<i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=NAIP%202016%20(1m)">Retrieve 2016 NAIP via Interactive Map</a>
 
 If you have questions contact <a href="mailto:rkelson@utah.gov">Rick Kelson</a> at (801-538-3237).
