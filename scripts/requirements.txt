@@ -1,0 +1,4 @@
+datatable
+gspread==0.4.1
+oauthclient==4.0.0
+pydash==3.4.7
