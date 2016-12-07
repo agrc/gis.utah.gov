@@ -14,6 +14,7 @@ tags:
 - 1 meter
 - aerial photography
 ---
+[![NAIP 2016 Sample]({{"/images/NAIP2016_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/NAIP2016.png" | prepend:site.baseurl}}){:.inline-text-right}
 The statewide 2016 National Agricultural Imagery Program (NAIP) 1 meter aerial photography
 <a href="{{ "/data/aerial-photography/2016-naip-1-meter-orthophotography-prelim/" | prepend: site.baseurl }}">is
 now available</a>. The imagery is currently only available as 3-band RGB Mr. Sid compressed county mosaics. The 4-band GeoTIFF or JP2 tiles should be available in a couple months.
