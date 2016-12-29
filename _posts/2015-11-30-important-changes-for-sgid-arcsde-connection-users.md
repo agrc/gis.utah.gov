@@ -32,7 +32,7 @@ tags:
 <li>the appropriate MS SQL client is loaded on their machine. </li>
 </ul>
 <p><strong>DNS Name</strong><br />
-All SGID ArcSDE 'direct connections' from within the State Network, will need to use the new DNS name: sgid.agrc.utah.gov. For users outside the state network, AGRC makes all of it's SGID data available for download from our website.  We also make much of the popular SGID data available in ArcGIS Online.  Search tags for SGID and catagory type for ease of use.</p>
+All SGID ArcSDE 'direct connections' from within the State Network, will need to use the new DNS name: <code>sgid.agrc.utah.gov</code>. For users outside the state network, AGRC makes all of it's SGID data available for download from our website. We also make much of the popular SGID data available in ArcGIS Online. Search tags for SGID and catagory type for ease of use.</p>
 <p><strong>SQL Client</strong><br />
 Microsoft SQL Native Client 11 will be required for any desktop ArcSDE users within the state network. We are working with DTS to automatically push out the Microsoft SQL Native Client 11 to identified desktop SGID users within state government. We will identify users that need the client pushed to them by using the mailing list for the AGRC newsletter (@utah.gov emails), and by working with GIS managers within state government.  You can also open a ticket with through the DTS help desk to ensure the correct client is installed. </p>
 <p>The plan is to make the migration on January 21, 2016 (UPDATED), so for state network SGID ArcSDE users, please update your DNS name and SQL client at your earliest convenience. </p>
