@@ -51,7 +51,7 @@ Instructions for using Discover services in ArcMap 10.x:
 ### UTM Services
 {: .text-left}
 
-**The planned date to turn off UTM base maps is 1/1/2017.** Unless you must utilize UTM services it is suggested that you utilize the services above from Discover. [Contact]({{ "/about/contact/" | prepend: site.baseurl }}) AGRC if you will need continued support of UTM base map tiles.
+**The planned date to turn off UTM base maps is 1/31/2017.** Unless you must utilize UTM services it is suggested that you utilize the services above from Discover. [Contact]({{ "/about/contact/" | prepend: site.baseurl }}) AGRC if you will need continued support of UTM base map tiles.
 
 Instructions for using mapserv.utah.gov services in ArcMap 10.x:
 
