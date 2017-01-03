@@ -46,9 +46,9 @@ Instructions for using Discover services in ArcMap 10.x:
 - Information about [transformations between different coordinate systems]({{ "/data/googleimagery/" | prepend: site.baseurl }}).
 - It is strongly suggested that you use `WMTS` for the best performance.
 - If your software will only allow you to use `WMS`, adding a WMS connection is the same as above but substitute `Add WMS server` in step 1.
-- More information about using the [Google Imgaery and Discover Services]({{ "/data/googleimagery/" | prepend: site.baseurl }}).
+- More information about using the [Google Imagery and Discover Services]({{ "/data/googleimagery/" | prepend: site.baseurl }}).
 
-### UTM Basemaps
+### UTM Services
 {: .text-left}
 
 **The planned date to turn off UTM base maps is 1/1/2017.** Unless you must utilize UTM services it is suggested that you utilize the services above from Discover. [Contact]({{ "/about/contact/" | prepend: site.baseurl }}) AGRC if you will need continued support of UTM base map tiles.
@@ -60,16 +60,8 @@ Instructions for using mapserv.utah.gov services in ArcMap 10.x:
   1. Select `Add ArcGIS Server` and then choose the `Use GIS Services` option
   1. Set the Internet Server URL to: `http://mapserv.utah.gov/arcgis/services`
   1. Click `Finish` and then double click the newly added item `arcgis on mapserv.utah.gov` to connect
-  1. From the **BaseMaps** folder, _Select_ the services(s) of your choice from the list below then click `Add` or `OK`:
-    - `AddressPoints` (address points with labels)
-    - `Hillshade`
-    - `Hybrid` (streets and other vector layers atop imagery)
-    - `Lite` (gray, muted tone)
-    - `Terrain` (hillshade, streets, parks, forest, water, etc)
-    - `Topo` (multiscale mosaic of USGS topo maps)
-    - `Vector` (streets, land ownership, and boundaries)
   1. From the **AerialPhotography__BlackWhite**, **AerialPhotography__Color**, or **AerialPhotography__InfraRed** folder, _Select_ the imagery service(s) of your choice then click `Add` or `OK`
 
-Web developers can embed any of these base map services in web-based and internet-connected applications.
+Web developers can embed any of these services in web-based and internet-connected applications.
 
-- More information about the base maps can be found on the [application developer]({{ "/developer/base-maps/" | prepend: site.baseurl }}) pages.
+- More information about the services can be found on the [application developer]({{ "/developer/base-maps/" | prepend: site.baseurl }}) pages.
