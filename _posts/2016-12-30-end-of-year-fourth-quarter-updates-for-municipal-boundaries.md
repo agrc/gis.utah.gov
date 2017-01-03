@@ -2,13 +2,13 @@
 layout: post
 status: publish
 published: true
-title: 'End of year (fourth quarter) Updates for Municipal Boundaries'
+title: 'End of year 2016 (fourth quarter) Updates for Municipal Boundaries'
 author:
   display_name: M Heagin
   email: mheagin@utah.gov
 date: 2016-12-30 22:58:57
 categories:
-
+- Featured
 tags:
 - municipal boundaries
 - boundaries
@@ -26,7 +26,7 @@ We also will say goodbye to Ophir, a historic mining town in Tooele County, was 
 
 There are now five new Metro Townships in Salt Lake County, Magna, White City, Kearns, Copperton, and Emigration Canyon.
 
-For the year the Lt. Governor's Office and AGRC have process, 90 documents for annexations and dissolution's, one City Incorporation, and five Metro Townships Incorporation's. Few more than last year so we continue to grow, Utah County is still leading with 29 overall, closest second was Cache with 12. Many thanks to all the City and County Recorder Offices and Surveyors who help out with this endeavor. 
+For the year the Lt. Governor's Office and AGRC have process, 90 documents for annexations and dissolution's, one City Incorporation, and five Metro Townships Incorporation's. Few more than last year so we continue to grow, Utah County is still leading with 29 overall, closest second was Cache with 12. Many thanks to all the City and County Recorder Offices and Surveyors who help out with this endeavor.
 
 All of these documents can be reviewed on the [2016 Municipal Certification
 website](http://municert.utah.gov/2016-certifications).
