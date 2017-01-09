@@ -18,20 +18,20 @@ tags:
 
 ---
 
-Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available online and listed below.
+Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download](https://gis.utah.gov/data/boundaries/citycountystate/) and listed below.
 
-We would like to welcome the newest city in the state Millcreek in Salt Lake County, seems like it was a long time coming and now it’s here.
+We would like to welcome the newest city in the state: Millcreek in Salt Lake County, seems like it was a long time coming and now it’s here. Hooray!
 
-We also will say goodbye to Ophir, a historic mining town in Tooele County, was dissolved this fall. The boundary might be gone but the history is still there.
+We also will say goodbye to Ophir, a historic mining town in Tooele County, which was officially dissolved this fall. The municipal boundary may no longer be in effect, but all the history is still there.
 
-There are now five new Metro Townships in Salt Lake County, Magna, White City, Kearns, Copperton, and Emigration Canyon.
+There are now five new Metro Townships in Salt Lake County: Magna, White City, Kearns, Copperton, and Emigration Canyon which are available from the link above.
 
-For the year the Lt. Governor's Office and AGRC have process, 90 documents for annexations and dissolution's, one City Incorporation, and five Metro Townships Incorporation's. Few more than last year so we continue to grow, Utah County is still leading with 29 overall, closest second was Cache with 12. Many thanks to all the City and County Recorder Offices and Surveyors who help out with this endeavor.
+For the year the Lt. Governor's Office and AGRC have processed 90 documents for annexations and dissolution's, one City Incorporation, and five Metro Townships incorporations. This represents a few more than were handled last year so we continue to grow. Utah County is still leading with 29 overall, closest second was Cache County with 12. Many thanks to all the City and County Recorder Offices and Surveyors who assist in keeping an accurate representation of Utah's political subdivisions.
 
-All of these documents can be reviewed on the [2016 Municipal Certification
+All of the incorporation documents can be reviewed on the [2016 Municipal Certification
 website](http://municert.utah.gov/2016-certifications).
 
-Following are the changes and annexations since Sept. 9, 2016 listed by County and City:
+The following are the changes and annexations since Sept. 9, 2016 listed by County and City:
 
 | County | City | Number of Changes |
 | --- | --- | --- |
