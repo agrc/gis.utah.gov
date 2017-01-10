@@ -18,7 +18,7 @@ tags:
 
 ---
 
-Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download](https://gis.utah.gov/data/boundaries/citycountystate/) and listed below.
+Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download]({{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}) and listed below.
 
 We would like to welcome the newest city in the state: Millcreek in Salt Lake County, seems like it was a long time coming and now it’s here. Hooray!
 
