@@ -11,11 +11,11 @@ categories: []
 tags: []
 ---
 <div name="search-form" class="search-form">
-      <input type="text" id="search" class="search-input" placeholder="What can we help you find today?" />
+      <input type="text" autofocus id="search" class="search-input" placeholder="What can we help you find today?" />
 </div>
 <div class="grid" id="content">
 </div>
-<script src="{{ "/js/dist/search.min.js"}}" async defer></script>
+<script src="{{ "/js/dist/search.min.js" | prepend: site.baseurl }}" async defer></script>
 <script id="template" type="x-tmpl-mustache">
 {% raw %}
 {{#data}}
