@@ -27,7 +27,8 @@ What? listed below are the layers and desired attributes
 
 [**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl | append:"#trails"}})  
 
-------------------------------------------------------
+---
+{: .hr-separate }
 
 [**Road Centerlines**]({{"/data/sgid-transportation/roads-system/" | prepend:site.baseurl}})  
 {: #road_centerlines}
