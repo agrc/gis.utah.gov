@@ -39,7 +39,7 @@ What? listed below are the layers and desired attributes
 - Address ranges
 
 [**Address Points**]({{"/data/location/address-data/" | prepend:site.baseurl}})  
-{: #address_points}\
+{: #address_points}
 ![Address Points]({{"/images/front-page/90x90_address_points.png" | prepend:site.baseurl}})
 {: .pull-right}
 - Full Address (physical/situs)(ex. 622 N KAYCIE LN)
