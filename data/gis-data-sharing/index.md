@@ -19,13 +19,13 @@ Why? bring the world into harmony
 How? should we make a drop box, email, pull from SDE/FTP/Dropbox  
 What? listed below are the layers and desired attributes
 
-[**Road Centerlines**]({{"/data/sgid-transportation/roads-system/" | prepend:site.baseurl | append:"#road_centerlines"}})  
+[**Road Centerlines**]("#road_centerlines")  
 
-[**Address Points**]({{"/data/location/address-data/"| prepend:site.baseurl | append:"#address_points"}})  
+[**Address Points**]("#address_points")  
 
-[**Parcels**]({{"/data/data/sgid-cadastre/parcels/" | prepend:site.baseurl | append:"#parcel"}})  
+[**Parcels**]("#parcel")  
 
-[**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl | append:"#trails"}})  
+[**Trails**]("#trails")  
 
 ---
 {: .hr-separate }
