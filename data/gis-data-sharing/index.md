@@ -22,7 +22,7 @@ What? listed below are the layers and desired attributes
 *** Primary Datasets ***  
 [**Road Centerlines**](#road_centerlines)  
 [**Address Points**](#address_points)  
-[**Parcels**](#parcel)  
+[**Parcels**](#parcels)  
 
 *** Secondary Datasets ***  
 [**Boundaries**](#boundaries)  
