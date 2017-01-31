@@ -35,7 +35,7 @@ What? listed below are the layers and desired attributes
 {: .divider }
 ![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
 {: .pull-right}
-[**Road Centerlines**]({{"/data/sgid-transportation/roads-system/" | prepend:site.baseurl}} "Road Centerlines page")  
+### [**Road Centerlines**]({{"/data/sgid-transportation/roads-system/" | prepend:site.baseurl}} "Road Centerlines page")  
 {: #road_centerlines}
 This is a multi-purpose statewide roads dataset for cartography and range based-address location. View our
 [Transportation Data Model]("https://drive.google.com/file/d/0Bz18jufMWioiU25icDNoQWlJa2M/view"),
@@ -62,7 +62,7 @@ Listed below are considered the minimum attributes:
 
 ![Address Points]({{"/images/front-page/90x90_address_points.png" | prepend:site.baseurl}})
 {: .pull-right}
-[**Address Points**]({{"/data/location/address-data/" | prepend:site.baseurl}} "Address Points page")  
+### [**Address Points**]({{"/data/location/address-data/" | prepend:site.baseurl}} "Address Points page")  
 {: #address_points}
 View our
 [Address Points Data Model]("https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing")
@@ -74,7 +74,7 @@ Listed below are considered the minimum attributes:
 
 ![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
-[**Parcels**]({{"/data/sgid-cadastre/parcels/" | prepend:site.baseurl}} "Basic Parcels page")  
+### [**Parcels**]({{"/data/sgid-cadastre/parcels/" | prepend:site.baseurl}} "Basic Parcels page")  
 {: #parcels}
 In addition to the parcel polygon geometry the following fields are a necessity:  
 Listed below are considered the minimum attributes:  
@@ -83,14 +83,14 @@ Listed below are considered the minimum attributes:
 
 ![Boundaries]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
-[**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")  
+### [**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")  
 {: #boundaries}
 - asfda
 - asfdas
 
 ![Trails]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
-[**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")  
+### [**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")  
 {: #trails}
 A trail, in this context, is defined as .........................
 
