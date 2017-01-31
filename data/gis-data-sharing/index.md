@@ -19,13 +19,14 @@ Why? bring the world into harmony
 How? should we make a drop box, email, pull from SDE/FTP/Dropbox  
 What? listed below are the layers and desired attributes
 
+*** Primary Datasets ***  
 [**Road Centerlines**](#road_centerlines)  
-
 [**Address Points**](#address_points)  
+[**Parcels**](#parcel)   
 
-[**Parcels**](#parcel)  
-
-[**Trails**](#trails)  
+*** Secondary Datasets ***  
+[**Boundaries**](#boundaries) 
+[**Trails**](#trails) 
 
 ---
 {: .divider }
@@ -52,8 +53,16 @@ What? listed below are the layers and desired attributes
 {: #parcels}
 ![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
+In addition to the parcel polygon geometry the following fields are a necessity:   
 - Parcel ID and/or Serial Number
-- Parcel Address (physical/situs)(optional)
+- Parcel Address (physical/situs)_(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_
+
+[**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")  
+{: #boundaries}
+![Boundaries]({{"/images/gallery/sgid/zipmain.png" | prepend:site.baseurl}})
+{: .pull-right}
+- asfda
+- asfdas
 
 [**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")  
 {: #trails}
