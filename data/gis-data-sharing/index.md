@@ -22,11 +22,11 @@ What? listed below are the layers and desired attributes
 *** Primary Datasets ***  
 [**Road Centerlines**](#road_centerlines)  
 [**Address Points**](#address_points)  
-[**Parcels**](#parcel)   
+[**Parcels**](#parcel)  
 
 *** Secondary Datasets ***  
-[**Boundaries**](#boundaries) 
-[**Trails**](#trails) 
+[**Boundaries**](#boundaries)  
+[**Trails**](#trails)  
 
 ---
 {: .divider }
