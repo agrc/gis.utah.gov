@@ -28,8 +28,9 @@ What? listed below are the layers and desired attributes
 
 ### **Secondary Datasets**
 {: .text-left}
-[**Boundaries**](#boundaries)  
-[**Trails**](#trails)
+- [**Boundaries**](#boundaries)  
+- [**Trails**](#trails)
+{: .no-dots}
 ----
 {: .divider }
 ![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
