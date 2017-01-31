@@ -53,7 +53,7 @@ What? listed below are the layers and desired attributes
 {: #parcels}
 ![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
-In addition to the parcel polygon geometry the following fields are a necessity:   
+In addition to the parcel polygon geometry the following fields are a necessity:  
 - Parcel ID and/or Serial Number
 - Parcel Address (physical/situs)_(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_
 
