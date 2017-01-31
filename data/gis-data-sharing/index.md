@@ -86,7 +86,7 @@ Listed below are considered the minimum attributes:
 
 [**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")  
 {: #trails}
-![Trails]({{""/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
+![Trails]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
 A trail, in this context, is defined as .........................
 
