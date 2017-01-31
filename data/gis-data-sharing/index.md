@@ -19,18 +19,19 @@ Why? bring the world into harmony
 How? should we make a drop box, email, pull from SDE/FTP/Dropbox  
 What? listed below are the layers and desired attributes
 
-[**Road Centerlines**]("#road_centerlines")  
+*** Primary Datasets ***  
+[**Road Centerlines**](#road_centerlines)  
+[**Address Points**](#address_points)  
+[**Parcels**](#parcels)  
 
-[**Address Points**]("#address_points")  
-
-[**Parcels**]("#parcel")  
-
-[**Trails**]("#trails")  
+*** Secondary Datasets ***  
+[**Boundaries**](#boundaries)  
+[**Trails**](#trails)  
 
 ---
-{: .hr-separate }
+{: .divider }
 
-[**Road Centerlines**]({{"/data/sgid-transportation/roads-system/" | prepend:site.baseurl}})  
+[**Road Centerlines**]({{"/data/sgid-transportation/roads-system/" | prepend:site.baseurl}} "Road Centerlines page")  
 {: #road_centerlines}
 ![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
 {: .pull-right}
@@ -39,7 +40,7 @@ What? listed below are the layers and desired attributes
 - Prefix & Suffix directions
 - Address ranges
 
-[**Address Points**]({{"/data/location/address-data/" | prepend:site.baseurl}})  
+[**Address Points**]({{"/data/location/address-data/" | prepend:site.baseurl}} "Address Points page")  
 {: #address_points}
 ![Address Points]({{"/images/front-page/90x90_address_points.png" | prepend:site.baseurl}})
 {: .pull-right}
@@ -48,14 +49,22 @@ What? listed below are the layers and desired attributes
 - Zip Code
 - Parcel ID
 
-[**Parcels**]({{"/data/data/sgid-cadastre/parcels/" | prepend:site.baseurl}})  
+[**Parcels**]({{"/data/sgid-cadastre/parcels/" | prepend:site.baseurl}} "Basic Parcels page")  
 {: #parcels}
 ![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
+In addition to the parcel polygon geometry the following fields are a necessity:  
 - Parcel ID and/or Serial Number
-- Parcel Address (physical/situs)(optional)
+- Parcel Address (physical/situs)  _(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_
 
-[**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}})  
+[**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")  
+{: #boundaries}
+![Boundaries]({{"/images/gallery/sgid/zipmain.png" | prepend:site.baseurl}})
+{: .pull-right}
+- asfda
+- asfdas
+
+[**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")  
 {: #trails}
 ![Trails]({{"/images/trail.png" | prepend:site.baseurl}})
 {: .pull-right}
