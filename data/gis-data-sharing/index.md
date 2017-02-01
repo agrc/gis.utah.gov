@@ -65,7 +65,7 @@ Listed below are considered the minimum attributes:
 ### [**Address Points**]({{"/data/location/address-data/" | prepend:site.baseurl}} "Address Points page")  
 {: #address_points}
 View our
-[Address Points Data Model]("https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing")
+[Address Points Data Model]("https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing").  
 Listed below are considered the minimum attributes:  
 - Full Address (physical/situs)(ex. 622 N KAYCIE LN)
 - City
