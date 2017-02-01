@@ -51,9 +51,6 @@ If you are not covered by the license agreement for the Google imagery service y
 
 ### UTM Services on mapserv
 
-**The planned date to turn off UTM base maps is 1/1/2017.** Unless you must utilize UTM services it is suggested that you utilize the services above from Discover. [Contact]({{ "/about/contact/" | prepend: site.baseurl }}) AGRC if you will need continued support of UTM base map tiles.
+## <i class="fa fa-exclamation-triangle"></i> The UTM base maps were deprecated on January 31, 2017
 
-AGRC has freely served online imagery services for many years. These imagery services and tiled caches are in the UTM NAD83 Zone 12 projection (wkid: 26912). The caches consist of between 3 to 17 million 256 pixel square jpg tiles and can range from 15G to over 200GB. These caches are standardized on a subset of the Google, Microsoft, and esri scale levels that apply to our state. Web developers can embed any of these services in web-based and internet-connected applications. More information about the services can be found on the [application developer]({{ "/developer/base-maps/" | prepend: site.baseurl }}) pages.
-
-- For imagery downloads visit [this page]({{ "/data/aerial-photography/" | prepend: site.baseurl }}).
-- Instructions on how to [use the Discover services in ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl | append:"#web-mercator-services"}}).
+_If you need continued support of the UTM base maps, we will be offering the tiles for on premise use. Please [contact AGRC]({{ "/about/contact/" | prepend: site.baseurl }}) for details._
