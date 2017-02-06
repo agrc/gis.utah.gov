@@ -28,3 +28,4 @@ tags:
 <a href="https://developer.mozilla.org/en-US/docs/Security/MixedContent/How_to_fix_website_with_mixed_content">https://developer.mozilla.org/en-US/docs/Security/MixedContent/How_to_fix_website_with_mixed_content</a></p>
 <p>In ArcGIS Online (AGOL), we will register our basemap services as both Secure and Unsecure to allow users within secure (https) only sites access to our base maps.  We will denote secure services in the title of the map document to allow easy identification. </p>
 <p>We are also beginning to reproject our basemap tiles as Web Mercator services to allow easier use and consumption for other services which utilize this new standard.  We will denote Web Mercator services in the title of the map document to allow easy identification.  We will continue to publish all of the SGID feature data services in AGOL as UTM/NAD83 services for the foreseeable future.</p>
+ 

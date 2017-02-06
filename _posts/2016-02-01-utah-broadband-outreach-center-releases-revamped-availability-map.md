@@ -21,3 +21,4 @@ tags:
 The site, developed by the center's mapping team at AGRC, allows users to view broadband service providers in any area in Utah by maximum advertised speed or transmission technology type. New features include a map layer that shows populated areas in Utah. The map also symbolizes broadband service by wireline or wireless fixed service availability (typically home internet connection) or cellular mobile data coverage. A user can change the map's draw order on technology type by dragging and dropping the layers in the legend.
 
 The Broadband Outreach Center works with industry partners to collect broadband availability map data twice a year. The center also maintains <a href="http://locate.utah.gov/">locate.utah.gov</a>, a commercial fiber availability map, for business leaders and site selectors.
+ 
