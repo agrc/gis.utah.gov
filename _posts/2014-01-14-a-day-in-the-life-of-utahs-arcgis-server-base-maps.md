@@ -32,3 +32,4 @@ tags:
 <p>Over the course of a typical day, some end users, be they GIS staff or web applications, use the base map services in large volumes. Others end users only make a few requests and then move on. The ArcGIS Server log file was analyzed to create the chart below that shows the range of requests made number by unique users (by ip address) on November 6th. </p>
 <p><a href="{{ "/downloads/basemapmetrics20131106_peruser.png" | prepend: site.baseurl }}"><img src="{{ "/images/basemapmetrics20131106_peruser.png" | prepend: site.baseurl }}" alt="" title="basemapmetrics20131106_peruser" width="600" height="627" class="aligncenter size-full wp-image-14349" /></a></p>
 <p><a href="{{ "/developer/base-maps/" | prepend: site.baseurl }}">More information about AGRC's base map services</a>.</p>
+ 

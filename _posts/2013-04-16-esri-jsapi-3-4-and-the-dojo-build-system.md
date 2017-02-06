@@ -62,3 +62,4 @@ define(['app/EsriLoader!esri/map'], function(Map) { /* ... */ });
 Using the plugin to load ESRI module effectively prevents the build system from trying to include them in your layer files thus allowing the build script to complete successfully. Of course, none of this hacking would be needed if ESRI would just <a href="http://ideas.arcgis.com/ideaView?id=087E00000004JOzIAM">release their source code</a>. :)
 
 If you find a better way of getting around this problem or have any other suggestions please let me know at <a href="http://twitter.com/SThomasDavis">@SThomasDavis</a>.
+ 

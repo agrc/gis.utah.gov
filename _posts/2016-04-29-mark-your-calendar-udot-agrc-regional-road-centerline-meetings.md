@@ -24,3 +24,4 @@ UDOT and AGRC have planned 4 regional discussion sessions around the state durin
 - Wasatch Front, June 7, 8:30a-12:30p, **Location** UDOT Region 2 Office 2010 S 2760 W, Salt Lake City
 - Southern Utah, June 8, 8:30a-12:30p, **Location** Room 6 (2nd Floor) in The Heritage Center 105 N 100 E Cedar City
 - Eastern Utah, June 9, 8:30a-12:30p, **Location** Carbon County Courthouse Commission Chambers 751 E 100 N Price
+ 

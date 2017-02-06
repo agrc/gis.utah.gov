@@ -53,3 +53,4 @@ Config</h3>
 </div>
 <p>Notice that Vintage does not show up in my ignored_packages and I even have it default to start in <a href="http://www.sublimetext.com/docs/3/vintage.html">vintage command mode</a>. I made this switch about a year ago and have never looked back. I really feel like I am more efficient getting around and editing code.</p>
 <p>I've had a few people ask me about my Sublime setup and wanted to get it out there. Any cool stuff that I'm missing?</p>
+ 

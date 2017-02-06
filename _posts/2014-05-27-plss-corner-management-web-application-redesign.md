@@ -33,3 +33,4 @@ tags:
 </ul>
 <p>Surveyors and mappers can take advantage of the PLSS web application for section corner reconnaissance, and for acquiring high accuracy GPS coordinates for section corners, while at the same time helping to contribute to the statewide section corner data set by uploading monument record sheets. </p>
 <p>GIS data is only as accurate as its base layers, and the PLSS is at the core of all base layers that tie data to the ground. This app is a great resource for accomplishing this task.</p>
+ 
