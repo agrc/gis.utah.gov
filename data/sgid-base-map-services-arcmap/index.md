@@ -54,3 +54,4 @@ Instructions for using Discover services in ArcMap 10.x:
 ## <i class="fa fa-exclamation-triangle"></i> The UTM base maps were deprecated on January 31, 2017
 
 _If you need continued support of the UTM base maps, we will be offering the tiles for on premise use. Please [contact AGRC]({{ "/about/contact/" | prepend: site.baseurl }}) for details._
+ 
