@@ -58,6 +58,11 @@ Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -
 
 Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({{"/using-agrcs-new-web-mercator-services-in-your-web-maps/" | prepend:site.baseurl}}) for more information. Remember, if the web map is going to be public facing you need to request a separate quad-work link. To do this send an email to Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) and provide your web map URL domains.
 
+### Printing Web Maps with Discover Services
+{: .text-left}
+
+Take a look at this blog post for information about [Printing Web Maps with Discover Services]({{"/printing-web-maps-with-discover-services/" | prepend:site.baseurl}}).
+
 ### Archive Services
 {: .text-left}
 
