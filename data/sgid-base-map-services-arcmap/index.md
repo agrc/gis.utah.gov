@@ -39,7 +39,7 @@ Instructions for using Discover services in ArcMap 10.x:
   - `overlay-basemap` – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
   - `terrain-basemap` – Base map of hillshade, HWYS/streets, parks, forests, water, etc.
   - `topo-basemap` – Base map of USGS topographic maps
-
+ 
 #### Notes:
 {: .text-left}
 
