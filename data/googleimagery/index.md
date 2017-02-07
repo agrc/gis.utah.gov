@@ -61,7 +61,7 @@ Interested in using AGRC's Web Mercator services in your web maps? Take a look a
 ### Printing Web Maps with Discover Services
 {: .text-left}
 
-Take a look at this blog post for information about [Printing Web Maps with Discover Services]({{"/printing-web-maps-with-discover-services/" | prepend:site.baseurl}}).
+Take a look at this blog post for information about [Printing Web Maps With Discover Services]({{"/printing-web-maps-with-discover-services/" | prepend:site.baseurl}}).
 
 ### Archive Services
 {: .text-left}
