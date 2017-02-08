@@ -30,17 +30,19 @@ The following are highlights from this update:
 
 #### County Updates:
 
-- **Box Elder County:** Obtained roads data on 12/16/2016: added new roads, updated road names and address ranges, etc. Previous update was on 08/04/2016.
+- **Davis County:** Obtained roads data on 12/16/2016 and 01/24/2017: added new roads, updated road names and address ranges, etc. Previous update was on 12/05/2016.
 
-- **Garfield County:** Obtained roads data on 12/12/2016: added new roads, updated road names and address ranges, etc. Previous update was on 01/12/2016.
+- **Iron County:** Obtained roads data on 01/30/2017: added new roads, updated road names and address ranges, etc. Previous update was on 01/13/2016.
 
-- **Salt Lake County:** Obtained roads data on 12/21/2016: added new roads, updated road names and address ranges, etc. Previous update was on 11/09/2015.
+- **Salt Lake County:** Obtained roads data on 01/17/2017: added new roads, updated road names and address ranges, etc. Previous update was on 01/10/2017.
 
-- **Utah County:** Obtained roads data on 12/14/2016: added new roads, updated road names and address ranges, etc. Previous update was on 12/05/2016.
+- **Utah County:** Obtained roads data on 01/17/2017: added new roads, updated road names and address ranges, etc. Previous update was on 01/10/2017.
 
-- **Washington County:** Obtained roads data on 12/14/2016: added new roads, road names and address ranges, etc. Previous update was on 12/05/2016.
+- **Wasatch County:** Obtained roads data on 01/11/2017: added new roads, updated road names and address ranges, etc. Previous update was on 08/31/2016.
 
-- **Weber County:** Obtained roads data on 12/16/2016: added new roads, road names and address ranges, etc. Previous update was on 12/05/2016.
+- **Washington County:** Obtained roads data on 01/17/2017: added new roads, road names and address ranges, etc. Previous update was on 01/10/2017.
+
+- **Weber County:** Obtained roads data on 01/27/2017: added new roads, road names and address ranges, etc. Previous update was on 01/10/2017.
 
 #### UDOT Route System:
 
