@@ -51,7 +51,7 @@ If you are not covered by the license agreement for the Google imagery service y
 ### Adding a WMTS or WMS Service to ArcMap
 {: .text-left}
 
-Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -> Add WMTS Server` and paste the WMTS link you have been provided into the `URL:` line then hit OK. Now navigate to the newly added WMTS **'utah imagery - WMTS on discover.agrc.utah.gov'** by going to `Add Data -> GIS Servers`. If you drill down through the service folders you will find the `utah` layer to add <a href="{{ "/downloads/AddWMTS_tree.jpg" | prepend: site.baseurl }}">(see example)</a>. The WMS service can be added by following the instructions above just substitute `GIS Servers -> Add WMS Server`.
+Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -> Add WMTS Server` and paste the WMTS link you have been provided into the `URL:` line then hit OK. Now navigate to the newly added WMTS **'utah imagery - WMTS on discover.agrc.utah.gov'** by going to `Add Data -> GIS Servers`. If you drill down through the service folders you will find the `Utah` or `Google` layer to add <a href="{{ "/downloads/AddWMTS_tree.jpg" | prepend: site.baseurl }}">(see example)</a>. The WMS service can be added by following the instructions above just substitute `GIS Servers -> Add WMS Server`.
 
 ### Adding a WMTS or WMS Service to a Web Map
 {: .text-left}
@@ -66,7 +66,7 @@ Take a look at this blog post for information about [Printing Web Maps with Disc
 ### Archive Services
 {: .text-left}
 
-In addition to the statewide `utah` Google imagery service layer there are archive layers available (ex. `utah_2011archive`). As new imagery is collected and added to the `utah` layer the new imagery is also placed into the layer that corresponds to the year the imagery was collected. If you are not seeing the <a href="{{ "/downloads/ArchiveServices.png" | prepend: site.baseurl }}"> archive service layers</a> simply go to ArcCatalog or ArcMap's Catalog Viewer and right-click the GIS Server connection created to access the imagery service and select `Refresh`.
+In addition to the statewide `Google` imagery service layer there are archive layers available (ex. `Google 2011archive`). As new imagery is collected and added to the `Google` layer the new imagery is also placed into the layer that corresponds to the year the imagery was collected. If you are not seeing the <a href="{{ "/downloads/ArchiveServices.png" | prepend: site.baseurl }}"> archive service layers</a> simply go to ArcCatalog or ArcMap's Catalog Viewer and right-click the GIS Server connection created to access the imagery service and select `Refresh`.
 
 ### Flight Dates
 {: .text-left}
