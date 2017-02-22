@@ -27,18 +27,20 @@ Instructions for using Discover services in ArcMap 10.x:
 1. Navigate to the newly added `utah imagery – WMTS on discover.agrc.utah.gov` connection and **double click** to connect.
   - You can rename the connection after it has been added
 1. You should see a list of imagery and base map services (explained below):
-  - `utah` – 6-inch statewide natural color aerial photography collected within the last 3 years **(licensed)**
-  - `utah_*year*archive` – Aerial photography blocks updated in `utah` service and archived by acquisition year **(licensed)**
-  - `doq_1990’s_bw` – 1-meter statewide black & white aerial photography collected in 1990’s
-  - `hro_2012_rgb` – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
-  - `naip_*year*_rgb` – 1-meter statewide natural color aerial photography
-  - `naip_*year*_nrg` – 1-meter statewide color infrared aerial photography
-  - `hillshade` – 10 meter 4-way statewide shaded relief
-  - `address_points-basemap` – Base map of address point locations
-  - `lite-basemap` – Base map of hillshade, HWYs/streets, cities, boundaries, etc. (gray, muted tone)
-  - `overlay-basemap` – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
-  - `terrain-basemap` – Base map of hillshade, HWYS/streets, parks, forests, water, etc.
-  - `topo-basemap` – Base map of USGS topographic maps
+  - `Utah` – Combination of the most recent 1-meter NAIP and 6-inch Google imagery with scale dependent rendering **(licensed)**
+  - `Google` – 6-inch statewide natural color aerial photography from Google collected within the last 3 years **(licensed)**  
+  - `Google *year*archive` – Aerial photography blocks updated in `Google` service and archived by acquisition year **(licensed)**
+  - `Basemap-Address_Points` – Base map of address point locations
+  - `Basemap-Hybrid' - Base map combination of the Overlay base map and Utah imagery service **(licensed)**
+  - `Basemap-Lite` – Base map of hillshade, HWYs/streets, cities, boundaries, etc. (gray, muted tone)
+  - `Basemap-Overlay` – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
+  - `Basemap-Terrain` – Base map of hillshade, HWYS/streets, parks, forests, water, etc.
+  - `Basemap-Topo` – Base map of USGS topographic maps
+  - `DOQ 1990s BW` – 1-meter statewide black & white aerial photography collected in 1990’s
+  - `HRO 2012 RGB` – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
+  - `NAIP *year* RGB` – 1-meter statewide natural color aerial photography
+  - `NAIP *year* NRG` – 1-meter statewide color infrared aerial photography
+  - `Hillshade` – 10 meter 4-way statewide shaded relief
  
 #### Notes:
 {: .text-left}
