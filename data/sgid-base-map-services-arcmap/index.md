@@ -31,7 +31,7 @@ Instructions for using Discover services in ArcMap 10.x:
   - `Google` – 6-inch statewide natural color aerial photography from Google collected within the last 3 years **(licensed)**  
   - `Google *year*archive` – Aerial photography blocks updated in `Google` service and archived by acquisition year **(licensed)**
   - `Basemap-Address_Points` – Base map of address point locations
-  - `Basemap-Hybrid' - Base map combination of the Overlay base map and Utah imagery service **(licensed)**
+  - `Basemap-Hybrid` - Base map combination of the Overlay base map and Utah imagery service **(licensed)**
   - `Basemap-Lite` – Base map of hillshade, HWYs/streets, cities, boundaries, etc. (gray, muted tone)
   - `Basemap-Overlay` – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
   - `Basemap-Terrain` – Base map of hillshade, HWYS/streets, parks, forests, water, etc.
