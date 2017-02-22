@@ -31,6 +31,7 @@ What? listed below are the layers and desired attributes
 - [**Boundaries**](#boundaries)  
 - [**Trails**](#trails)
 {: .dotless}
+![GIS Data Samples]({{"/images/DataRequest.png"| prepend:site.baseurl}})
 ----
 {: .divider }
 ![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
@@ -38,9 +39,9 @@ What? listed below are the layers and desired attributes
 ### [**Road Centerlines**]({{"/data/sgid-transportation/roads-system/" | prepend:site.baseurl}} "Road Centerlines page")  
 {: #road_centerlines}
 This is a multi-purpose statewide roads dataset for cartography and range based-address location. View our
-[Transportation Data Model]("https://drive.google.com/file/d/0Bz18jufMWioiU25icDNoQWlJa2M/view"),
-[attribute descriptions and definitions]("https://docs.google.com/document/d/1ojjqCa1Z6IG6Wj0oAbZatoYsmbKzO9XwdD88-kqm-zQ/edit"),
-and [download the Transportation Data Model schema]("ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/UtahRoadsDataSchema/UtahRoadsDataSchema_gdb.zip").  
+[Transportation Data Model](https://drive.google.com/file/d/0Bz18jufMWioiU25icDNoQWlJa2M/view),
+[attribute descriptions and definitions](https://docs.google.com/document/d/1ojjqCa1Z6IG6Wj0oAbZatoYsmbKzO9XwdD88-kqm-zQ/edit),
+and [download the Transportation Data Model schema](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/UtahRoadsDataSchema/UtahRoadsDataSchema_gdb.zip).  
 Listed below are considered the minimum attributes:  
 - PREDIR
 - STREETNAME
