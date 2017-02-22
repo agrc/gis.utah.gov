@@ -47,6 +47,7 @@ If you are not covered by the license agreement for the Google imagery service y
 
 - For imagery downloads visit [this page]({{ "/data/aerial-photography/" | prepend: site.baseurl }}).
 - Instructions on how to [use the Discover services in ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
+- Instructions on how to [use the Discover services in Web Maps]({{site.baseurl}}{% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}).
 
 ### Adding a WMTS or WMS Service to ArcMap
 {: .text-left}
