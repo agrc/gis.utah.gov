@@ -10,9 +10,6 @@ date: 2017-01-26 23:40:06
 categories:
 
 tags:
-- agrc
-- gis
-- data
 - sharing
 ---
 
