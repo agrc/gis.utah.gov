@@ -66,7 +66,7 @@ Listed below are considered the minimum attributes:
 ### [**Address Points**]({{"/data/location/address-data/" | prepend:site.baseurl}} "Address Points page")  
 {: #address_points}
 View our
-[Address Points Data Model]("https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing").  
+[Address Points Data Model](https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing).  
 Listed below are considered the minimum attributes:  
 - Full Address (physical/situs)(ex. 622 N KAYCIE LN)
 - City
@@ -82,14 +82,14 @@ Listed below are considered the minimum attributes:
 - Parcel ID and/or Serial Number
 - Parcel Address (physical/situs)  _(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_
 
-![Boundaries]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
+![Boundaries]({{"/images/front-page/90x90_voter_precincts.png" | prepend:site.baseurl}})
 {: .pull-right}
 ### [**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")  
 {: #boundaries}
 - asfda
 - asfdas
 
-![Trails]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
+![Trails]({{"/images/front-page/trail.png" | prepend:site.baseurl}})
 {: .pull-right}
 ### [**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")  
 {: #trails}
