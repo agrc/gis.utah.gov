@@ -99,6 +99,8 @@ Listed below are considered the minimum attributes:
 ![Boundaries]({{"/images/front-page/90x90_voter_precincts.png" | prepend:site.baseurl}})
 {: .pull-right}
 
+text needed
+
 - asfda
 - asfdas
 
