@@ -89,7 +89,7 @@ Listed below are considered the minimum attributes:
 - asfda
 - asfdas
 
-![Trails]({{"/images/front-page/trail.png" | prepend:site.baseurl}})
+![Trails]({{"/images/trail.png" | prepend:site.baseurl}})
 {: .pull-right}
 ### [**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")  
 {: #trails}
