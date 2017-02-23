@@ -25,7 +25,7 @@ ArcMap users can go to the service’s `Layer Properties -> Cache` tab and selec
 as this could take several minutes. Another option is to completely clear your ArcMap cache by going
 to `Customize -> ArcMap Options -> Display Cache -> Clear Cache`.  
 
-The service additions and changes are listed below. We also renamed most of the services. The renaming of the services should not have any effect on projects or applications that contained any of the services previous to the renaming. The renaming is on the layer's display title only and does not have any effect on the urls or request parameters for the service.
+The service additions and changes are listed below. We also renamed most of the services. _**The renaming of the services should not have any effect on projects or applications that contained any of the services previous to the renaming.**_ The renaming is on the layer's display title only and does not have any effect on the urls or request parameters for the service.
 
  - **Utah** (licensed) - This service is now a mix of the most recent NAIP 1-meter and Google 6-inch imagery. The service
  now utilizes scale dependent rendering to display the color balanced NAIP imagery down to cache level 16,
