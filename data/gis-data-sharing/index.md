@@ -32,7 +32,7 @@ What? listed below are the layers and desired attributes
 - [**Trails**](#trails)
 {: .dotless}
 ![GIS Data Samples]({{"/images/DataRequest.png"| prepend:site.baseurl}})
-----
+{: .pull-center}
 {: .divider }
 ![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
 {: .pull-right}
