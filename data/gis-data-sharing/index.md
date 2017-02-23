@@ -37,6 +37,7 @@ What? listed below are the layers and desired attributes
 
 ![GIS Data Samples]({{"/images/DataRequest.png"| prepend:site.baseurl}})
 
+---
 {: .divider }
 
 ![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
