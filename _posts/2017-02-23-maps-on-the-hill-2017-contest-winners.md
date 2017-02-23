@@ -22,7 +22,8 @@ In an effort to reward the best work at Maps on the Hill 2017, a judged contest 
 
 ![Judges' Deliberations]({{ "/images/MOTHJudges.png" | prepend: site.baseurl }}){:.inline-text-right}A four judge panel, consisting of Beth Overhuls (Salt Lake County CIO), Evan Curtis (Governor’s Office of Management and Budget), Lance Newman (Dean, Westminster College Arts & Sciences), and Mike Hussey (State CIO), rated the map displays for overall effectiveness, visual appeal, data integration, and innovation.
 
-This year’s winners are:{:.clear}
+This year’s winners are:
+{:.clear}
 
 ![FFSL Map Booklet Page]({{ "/images/FFSLWildfireRisk.png" | prepend: site.baseurl }}){:.inline-text-right}UGIC 2017 Maps on the Hill - Best of Show
 - Division of Forestry Fire and State Lands (FFSL) - Wildfire Risk (11)
