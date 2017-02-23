@@ -23,7 +23,7 @@ In an effort to reward the best work at Maps on the Hill 2017, a judged contest 
 
 This year’s winners are:
 
-![FFSL Map Booklet Page]({{ "/images/FFSLFireRisk" | prepend: site.baseurl }}){:.inline-text-right}UGIC 2017 Maps on the Hill - Best of Show
+![FFSL Map Booklet Page]({{ "/images/FFSLWildfireRisk" | prepend: site.baseurl }}){:.inline-text-right}UGIC 2017 Maps on the Hill - Best of Show
 - Division of Forestry Fire and State Lands (FFSL) - Wildfire Risk (11)
 
 UGIC 2017 Maps on the Hill - Awards of Excellence
