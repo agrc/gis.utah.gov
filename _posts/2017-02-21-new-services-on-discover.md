@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'New Services on Discover'
+title: 'New Services on Discover Imagery & Base Map Server'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
