@@ -21,7 +21,7 @@ The 2016 National Agricultural Imagery Program (NAIP) aerial photography is now 
 was collected in the Summer of 2016 as 4-band imagery however the natural color (RGB) and near infrared (NRG) imagery are
 two separate services on Discover, _NAIP 2016 RGB_ and _NAIP 2016 NRG_.
 
-[![NAIP Sample]({{"/images/NAIP2016_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/NAIP2016.png" | prepend:site.baseurl}})]
+[![NAIP Sample]({{"/images/NAIP2016_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/NAIP2016.png" | prepend:site.baseurl}})
 {:.inline-text-right}
 
 If you have questions contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov) at (801-538-3237).
