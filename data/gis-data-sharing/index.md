@@ -37,11 +37,11 @@ What? listed below are the layers and desired attributes
 ---
 {: .divider }
 
-![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
-{: .pull-right}
-
 ### [**Road Centerlines**]({{"/data/sgid-transportation/roads-system/" | prepend:site.baseurl}} "Road Centerlines page")  
 {: #road_centerlines}
+
+![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
+{: .pull-right}
 
 This is a multi-purpose statewide roads dataset for cartography and range based-address location. View our
 [Transportation Data Model](https://drive.google.com/file/d/0Bz18jufMWioiU25icDNoQWlJa2M/view),
@@ -67,11 +67,11 @@ Listed below are considered the minimum attributes:
 - CLASS
 - MODIFYDATE
 
-![Address Points]({{"/images/front-page/90x90_address_points.png" | prepend:site.baseurl}})
-{: .pull-right}
-
 ### [**Address Points**]({{"/data/location/address-data/" | prepend:site.baseurl}} "Address Points page")  
 {: #address_points}
+
+![Address Points]({{"/images/front-page/90x90_address_points.png" | prepend:site.baseurl}})
+{: .pull-right}
 
 View our
 [Address Points Data Model](https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing).  
@@ -81,31 +81,33 @@ Listed below are considered the minimum attributes:
 - Zip Code
 - Parcel ID
 
-![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
-{: .pull-right}
-
 ### [**Parcels**]({{"/data/sgid-cadastre/parcels/" | prepend:site.baseurl}} "Basic Parcels page")  
 {: #parcels}
+
+![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
+{: .pull-right}
 
 In addition to the parcel polygon geometry the following fields are a necessity:  
 Listed below are considered the minimum attributes:  
 - Parcel ID and/or Serial Number
 - Parcel Address (physical/situs)  _(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_
 
-![Boundaries]({{"/images/front-page/90x90_voter_precincts.png" | prepend:site.baseurl}})
-{: .pull-right}
 
 ### [**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")  
 {: #boundaries}
 
+![Boundaries]({{"/images/front-page/90x90_voter_precincts.png" | prepend:site.baseurl}})
+{: .pull-right}
+
 - asfda
 - asfdas
 
-![Trails]({{"/images/trail.png" | prepend:site.baseurl}})
-{: .pull-right}
 
 ### [**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")  
 {: #trails}
+
+![Trails]({{"/images/trail.png" | prepend:site.baseurl}})
+{: .pull-right}
 
 A trail, in this context, is defined as .........................
 
