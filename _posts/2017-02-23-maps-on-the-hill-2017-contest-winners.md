@@ -8,13 +8,13 @@ author:
   email: bgranberg@utah.gov
 date: 2017-02-23 00:18:28
 categories:
+- featured
 
 tags:
 - UGIC
 - MOTH
 - Contest
 - Maps on the Hill
-- featured
 
 ---
 In an effort to reward the best work at Maps on the Hill 2017, a judged contest was added to this year’s event in the capitol rotunda.  Recognition and small prizes (Utah AGRC wall maps and ESRI press books) were awarded to the map displays that best conveyed the value of GIS-based solutions.
