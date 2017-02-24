@@ -17,6 +17,8 @@ tags:
 - Boundary
 
 ---
+[![SL Co Municipal Changes]({{"/images/MunicpalBoundaries2016Updates.png" | prepend:site.baseurl}} "view high res usage map")]({{"/downloads/MunicpalBoundaries2016Updates.pdf
+" | prepend:site.baseurl}}){:.inline-text-right}
 
 Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download]({{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}) and listed below.
 
