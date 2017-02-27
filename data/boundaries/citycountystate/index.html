@@ -202,8 +202,17 @@ This dataset includes the following feature classes:</p>
   <div class="grid__col grid__col--12-of-12">
     <h3 id="CountyBoundaries">County Boundaries</h3>
   </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" src="{{ "/images/CountyBoundaries_Small.png" | prepend: site.baseurl }}" alt="County Boundaries" />
+  <style>
+    @media (max-width: 1000px) {
+      .open-data {
+        width: 100%;
+      }
+    }
+  </style>
+  <iframe src="https://sgid-utah.opendata.arcgis.com/datasets/8ac5df86beea47b9b5fe277e51ff93f0_0?embed=true"
+    class='grid__col grid__col--1-of-2 open-data'
+    style="height: 700px"></iframe>
+  <div class="grid__col grid__col--1-of-2">
     <p>
       Boundaries.Counties is a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification. Includes July 2012 major update of Millard and Juab counties.
     </p>
