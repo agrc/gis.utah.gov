@@ -1,4 +1,3 @@
-var repoName = 'website';
 module.exports = function (grunt) {
     'use strict';
     // Project configuration
@@ -60,43 +59,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        replace: {
-            user: {
-                options: {
-                    patterns: [{
-                        match: 'sass',
-                        replacement: 'nested'
-                    }]
-                },
-                src: '_config.yml_',
-                dest: '_config.yml'
-            },
-            repo: {
-                options: {
-                    patterns: [{
-                        match: 'sass',
-                        replacement: 'nested'
-                    }, {
-                        match: /\"\/bower_component/g,
-                        replacement: '"/' + repoName + '/bower_component'
-                    }]
-                },
-                files: [
-                    {src: '_config.yml_', dest: '_config.yml'},
-                    {src: '_sass/vars.scss', dest: '_sass/vars.scss'}
-                ]
-            },
-            sass: {
-                options: {
-                    patterns: [{
-                        match: 'sass',
-                        replacement: 'compressed'
-                    }]
-                },
-                src: '_config.yml_',
-                dest: '_config.yml'
-            }
-        },
         uglify: {
             options: {
                 preserveComments: false,
@@ -124,21 +86,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-newer');
-    grunt.loadNpmTasks('grunt-replace');
 
     // use this task if you are running this from user.github.io or localhost:4444
     grunt.registerTask('default', [
         'newer:imagemin',
-        'replace:user',
-        'uglify',
-        'jekyll:main'
-    ]);
-
-    // use this task if you are running this from user.github.io/repository
-    // set repoName at the top of the file to match your repository
-    grunt.registerTask('repo', [
-        'newer:imagemin',
-        'replace:repo',
         'uglify',
         'jekyll:main'
     ]);
@@ -146,7 +97,6 @@ module.exports = function (grunt) {
     // run this before publishing to crunch all the stuff
     grunt.registerTask('compress', [
         'newer:imagemin',
-        'replace:sass',
         'uglify'
     ])
 };

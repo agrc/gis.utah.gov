@@ -58,8 +58,10 @@ This dataset includes the following feature classes:</p>
   <div class="grid__col grid__col--12-of-12">
     <h3 id="MunicipalBoundaries">Municipal Boundaries</h3>
   </div>
+  <iframe src="https://sgid-utah.opendata.arcgis.com/datasets/543fa1f073714198a3dbf8a292bdf30c_0?embed=true"
+    class='grid__col'
+    style="height: 500px; width: 100%;"></iframe>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" src="{{ "/images/MunicipalitiesStateSmall.png" | prepend: site.baseurl }}" alt="MunicipalBoundaries" />
     <p>
       Boundaries.Municipalities is a multi-purpose statewide dataset of municipal boundaries for cartography and approximate boundary identification.
     </p>
@@ -96,17 +98,15 @@ This dataset includes the following feature classes:</p>
         <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BOUNDARIES/UnpackagedData/Municipalities/_Statewide/Municipalities_shp.zip">Municipal Boundaries: Shapefile</a></li>
         <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BOUNDARIES/UnpackagedData/Municipalities/_Statewide/Municipalities.kmz">Municipal Boundaries: KMZ</a></li>
       </ul>
-      <ul>
       <p>Other links for this dataset:</p>
       <ul>
         <li><a href="http://municert.utah.gov/">Lieutenant Governor Municipal Cetifications website</a></li>
         <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Municipalities.html">View FGDC format metadata</a></li>
       </ul>
-      <ul>
       <p>To View Municipalities and Metro Townships in a map:</p>
-      <ul>  
+      <ul>
         <li><a href="https://www.arcgis.com/home/webmap/viewer.html?webmap=e2e0430f97114c3aa958262fa5e3e6ed">Utah Municipalities and Metro Townships Boundaries Map</a></li>
-      </ul> 
+      </ul>
     </div>
   </div>
   <div class="grid__col grid__col--1-of-2">
@@ -200,8 +200,20 @@ This dataset includes the following feature classes:</p>
   <div class="grid__col grid__col--12-of-12">
     <h3 id="CountyBoundaries">County Boundaries</h3>
   </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" src="{{ "/images/CountyBoundaries_Small.png" | prepend: site.baseurl }}" alt="County Boundaries" />
+  <style>
+    @media (max-width: 1000px) {
+      .open-data {
+        width: 100%;
+      }
+    }
+  </style>
+  <div style='height: 665px; overflow: hidden'
+    class='grid__col grid__col--1-of-2 open-data'>
+    <iframe src="https://sgid-utah.opendata.arcgis.com/datasets/8ac5df86beea47b9b5fe277e51ff93f0_0?embed=true"
+      class='grid__col grid__col--1-of-2 open-data'
+      style="height: 700px; width: 100%"></iframe>
+  </div>
+  <div class="grid__col grid__col--1-of-2">
     <p>
       Boundaries.Counties is a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification. Includes July 2012 major update of Millard and Juab counties.
     </p>
@@ -262,19 +274,24 @@ This dataset includes the following feature classes:</p>
   <div class="grid__col grid__col--12-of-12">
     <h3 id="StateBoundary">State Boundary</h3>
   </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
+  <div class="grid__col grid__col--1-of-2">
     <img class="productImage-Thumb" src="{{ "/images/UtahBoundary.png" | prepend: site.baseurl }}" alt="Utah" />
     <p>
       Boundaries.Utah is a dataset of the Utah state boundary.</p>
-    <p>
-      Boundaries.Utah boundary is maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.
-    </p>
-    <p>
-      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data were adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules.
-    </p>
-    <p>In addition to the boundary of the state of Utah this dataset contains another larger boundary around the state that can be used for cartographic purposes to mask other data layers that extend past the boundary of the state.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-    The state boundary dataset is is maintained by AGRC in partnership with state and local government.</p>
+      <p>
+        Boundaries.Utah boundary is maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.
+      </p>
+      <p>
+        Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data were adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules.
+      </p>
+      <p>In addition to the boundary of the state of Utah this dataset contains another larger boundary around the state that can be used for cartographic purposes to mask other data layers that extend past the boundary of the state.</p>
+      <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+      The state boundary dataset is is maintained by AGRC in partnership with state and local government.</p>
+    </div>
+  <div style='height: 665px; overflow: hidden'
+    class='grid__col grid__col--1-of-2 open-data'>
+    <iframe src="https://sgid-utah.opendata.arcgis.com/datasets/288b1b67c3314f3e9f9aff66c4e8e29c_0?embed=true"
+      style="height: 700px; width: 100%;"></iframe>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
