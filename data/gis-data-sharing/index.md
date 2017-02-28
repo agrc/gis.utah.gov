@@ -116,7 +116,7 @@ text needed
 ![Trails]({{"/images/trail.png" | prepend:site.baseurl}})
 {: .pull-right}
 
- View the [(Trails Data Model)](https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit#gid=0)
+ View the [Trails Data Model](https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit#gid=0)
 
 - Name
 - CartoCode
