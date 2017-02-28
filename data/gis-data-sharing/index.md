@@ -11,11 +11,16 @@ categories:
 
 tags:
 - sharing
+- gis
+- agrc
+
 ---
 
-Why? bring the world into harmony  
-How? should we make a drop box, email, pull from SDE/FTP/Dropbox  
-What? listed below are the layers and desired attributes
+Data sharing facilitates the consolidation of Utah's GIS resources into one central statewide repository. These statewide data facilitate consumption of the information by organization such as E911, 811 one call centers, Utah Department of Transportation, Governor's Office of Management and Budget, Governor’s Office of Economic Development, Utah State Tax Commission, Utah Division of Wildlife Resources, voting and elections, etc. and promotes the standardization of GIS resources for reliable and consistent information at a statewide level. Having a centralized data warehouse also takes the burden off of you by providing one place to contribute your GIS data.
+
+Data can be provided via email, drop box, sharefile, or we can pull from your SDE, Distributed FTP, etc. 
+
+Listed below are the layers you can share and the desired attributes.
 
 ### **Primary Datasets**
 {: .text-left}
@@ -111,8 +116,8 @@ text needed
 ![Trails]({{"/images/trail.png" | prepend:site.baseurl}})
 {: .pull-right}
 
-A trail, in this context, is defined as .........................
+ View the [(Trails Data Model)](https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit#gid=0)
 
 - Name
-- CartoCode [(see this)]({{}})
+- CartoCode
  
