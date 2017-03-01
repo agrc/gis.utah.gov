@@ -54,6 +54,12 @@ This is a multi-purpose statewide roads dataset for cartography and range based-
 and [download the Transportation Data Model schema](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/UtahRoadsDataSchema/UtahRoadsDataSchema_gdb.zip).  
 
 Listed below are considered the minimum attributes:  
+| PREDIR | STREETNAME | STREETTYPE | SUFDIR |  
+| L_F_ADD | L_T_ADD | R_F_ADD | R_T_ADD |  
+| ALIAS1 | ALIAS1TYPE | ALIAS2 | ALIAS2TYPE |  
+| ACSALIAS | ACSNAME | ACSSUF| CLASS |  
+| MODIFYDATE|
+
 - PREDIR
 - STREETNAME
 - STREETTYPE
