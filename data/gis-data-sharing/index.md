@@ -12,7 +12,6 @@ categories:
 tags:
 - sharing
 - gis
-- agrc
 
 ---
 
