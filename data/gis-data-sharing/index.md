@@ -57,8 +57,8 @@ Listed below are considered the minimum attributes:
 | PREDIR | STREETNAME | STREETTYPE | SUFDIR |  
 | L_F_ADD | L_T_ADD | R_F_ADD | R_T_ADD |  
 | ALIAS1 | ALIAS1TYPE | ALIAS2 | ALIAS2TYPE |  
-| ACSALIAS | ACSNAME | ACSSUF| CLASS |  
-| MODIFYDATE|
+| ACSALIAS | ACSNAME | ACSSUF | CLASS |  
+| MODIFYDATE | | | |
 
 - PREDIR
 - STREETNAME
