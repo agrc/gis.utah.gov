@@ -14,7 +14,7 @@ tags:
 ---
 
 The [Esri web adaptor](http://server.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm) is a small 
-reverse proxy bundled into the ArcGIS Server install but do you know if you need it?
+load balancer/reverse proxy bundled into the ArcGIS Server install but do you know if you need it?
 
 > The esri Web Adaptor is an application that runs in your existing website and forwards requests to your ArcGIS Server machines.
 
