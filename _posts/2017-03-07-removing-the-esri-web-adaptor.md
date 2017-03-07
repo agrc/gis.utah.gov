@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Removing and Replacing the esri Web Adaptor'
+title: 'Removing and Replacing the Esri Web Adaptor'
 author:
   display_name: Steve Gourley
   email: SGourley@utah.gov
@@ -13,7 +13,7 @@ tags:
 
 ---
 
-The [esri web adaptor](http://server.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm) is a small 
+The [Esri web adaptor](http://server.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm) is a small 
 reverse proxy bundled into the ArcGIS Server install but do you know if you need it?
 
 > The esri Web Adaptor is an application that runs in your existing website and forwards requests to your ArcGIS Server machines.
@@ -21,10 +21,10 @@ reverse proxy bundled into the ArcGIS Server install but do you know if you need
 ArcGIS Server runs an http server exposed over the private port 6080. The web adaptor can then accept public requests on port 80 or 443
 and choose to forward those requests to the ArcGIS Servers in your site or block the request all together. This scenario is 
 a best practice for public facing ArcGIS Servers. This architecture secures the admin endpoints of ArcGIS Server as well as [many 
-other benefits](http://server.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm) you can read about on esri's website.
+other benefits](http://server.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm).
 The web adaptor is not required though.
 
-#### When to install the web adaptor
+### When to install the web adaptor
 {: .text-left }
 
 ![Web adaptor flow chart]({{ "/images/web-adaptor-flow.png" | prepend: site.baseurl }})
@@ -40,7 +40,7 @@ As a developer, it is beneficial to mimic your deployment scenario to avoid the 
 always possible to match identically. I chose to use IIS's **Application Request Routing** and **URL Rewrite** to 
 remove the dependency of the web adaptor on my development machines.
 
-#### Replacing the web adaptor
+### Replacing the web adaptor
 {: .text-left }
 
 To replace the web adaptor on an IIS machine it is first necessary to install the [Web Platform Installer](http://www.microsoft.com/web/downloads/platform.aspx).
