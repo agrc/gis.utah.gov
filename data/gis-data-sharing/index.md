@@ -17,7 +17,7 @@ tags:
 
 Data sharing facilitates the consolidation of Utah's GIS resources into one central statewide repository. These statewide data facilitate consumption of the information by organization such as E911, 811 one call centers, Utah Department of Transportation, Governor's Office of Management and Budget, Governor’s Office of Economic Development, Utah State Tax Commission, Utah Division of Wildlife Resources, voting and elections, etc. and promotes the standardization of GIS resources for reliable and consistent information at a statewide level. Having a centralized data warehouse also takes the burden off of you by providing one place to contribute your GIS data.
 
-Data sharing is a 2 way street. Below are aer examples of what you get back:
+Data sharing is a 2 way street. Below are are examples of what you get back:
 
 | Aerial Imagery Acquisition (Statewide Hi Res Program) | Aerial Photography Web Services |
 | Custom Base Map Web Services (w/local&state data Data) | Lidar Acquisition (Statewide 3DEP-Type Program) |
