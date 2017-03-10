@@ -19,13 +19,6 @@ Data sharing facilitates the consolidation of Utah's GIS resources into one cent
 
 Data sharing is a 2 way street. Below are are examples of what you get back:
 
-| Aerial Imagery Acquisition (Statewide Hi Res Program) | Aerial Photography Web Services |
-| Custom Base Map Web Services (w/local&state data Data) | Lidar Acquisition (Statewide 3DEP-Type Program) |
-| Lidar Acquisition (3DEP-type Projects) | Address Geocoding Web Service |
-| Realtime GPS Correction Service | Highway Milepost Reference |
-| Highway Exit Numbers and Names | State Agency Data Layers in SGID (DNR, DEQ, SITLA) |
-| USGS Topo Quad Web Services | State Cadastral Grant Funding |
-
 | Aerial Imagery Acquisition (Statewide Hi Res Program) | Aerial Photography Web Services | Custom Base Map Web Services (w/local&state data Data) | 
 | Address Geocoding Web Service | Lidar Acquisition (Statewide 3DEP-Type Program) | Lidar Acquisition (3DEP-type Projects) | 
 | Realtime GPS Correction Service | Highway Milepost Reference | Highway Exit Numbers and Names | 
