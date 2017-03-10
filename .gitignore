@@ -4,7 +4,8 @@ _site/
 .jekyll-metadata
 node_modules/
 _config.yml
-
+.bundle/
+Gemfile.lock
 *.pyc
 
 scripts/gspread-31a626054f8c.json
