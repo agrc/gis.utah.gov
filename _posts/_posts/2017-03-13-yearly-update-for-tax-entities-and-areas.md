@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Yearly update for Tax Entities and Areas.'
+title: 'Yearly update for Tax Entities and Areas - 2016'
 author:
   display_name: MHeagin
   email: mheagin@utah.gov
@@ -16,9 +16,8 @@ tags:
 
 ---
 
-We have finished the updates for the Utah State Tax Entities and Areas for 2016. 
-The new new data is available online from the Data pages Sales Tax Areas and Tax Entities Areas.
-https://gis.utah.gov/data/economy/taxingareas/
+We have finished the updates for the Utah State Tax Entities and Areas for 2016! 
+The new new data is available online from the [Sales Tax Areas and Tax Entities Areas]({{ "/data/economy/taxingareas/" | prepend: site.baseurl }}) data page.
 
-Also on the same Data page Transit Special Tax Areas did get some adjustment in the Cache Transit area. These adjustment were done to exclude areas incorporated into the cities that surrounding the entity.
+The **Transit Special Tax Areas** were adjustmented in the **Cache Transit area**. These adjustment were done to _exclude_ areas incorporated into the cities that surrounded the entity.
 
