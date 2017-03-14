@@ -45,6 +45,7 @@ Listed below are the layers you can share and the desired attributes.
 {: .text-left}
 
 - [**Boundaries**](#boundaries)  
+- [**Building Footprints**](#building_footprints)  
 - [**Trails**](#trails)
 {: .dotless}
 
@@ -92,11 +93,9 @@ Listed below are considered the minimum attributes:
 ![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
 
-In addition to the parcel polygon geometry the following fields are a necessity:  
-Listed below are considered the minimum attributes:  
+In addition to the parcel polygon geometry the following fields are a necessity and are considered the minimum attributes:  
 - Parcel ID and/or Serial Number
 - Parcel Address (physical/situs)  _(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_
-
 
 ### [**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")  
 {: #boundaries}
@@ -108,6 +107,16 @@ text needed
 
 - asfda
 - asfdas
+
+### [**Building Footprints**]({{"/data/location/building-footprint/" | prepend:site.baseurl}} "Building Footprints page")  
+{: #building_footprints}
+
+![Building Footprints]({{"/images/front-page/90x90_building_footprints.png" | prepend:site.baseurl}})
+{: .pull-right}
+
+This is a multi-purpose dataset of building footprint polygons for cartography and location purposes. The attributes below are optional:
+
+| Name | Type | Address | Parcel ID | Source Year |  
 
 
 ### [**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")  
