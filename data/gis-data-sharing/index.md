@@ -17,7 +17,9 @@ tags:
 
 These statewide data fulfill a critical need for many organizational business needs:
 
-| E911 | 811 Call Before You Dig – Blue Stakes | Utah Department of Transportation | | Governor’s Office of Management and Budget | Governor’s Office of Economic Development | Utah State Tax Commission | | Utah Division of Wildlife Resources | Voting and Elections
+| E911 | 811 Call Before You Dig – Blue Stakes | Utah Department of Transportation| Governor’s Office of Management and Budget | 
+| Governor’s Office of Economic Development | Utah State Tax Commission |  Utah Division of Wildlife Resources | Voting and Elections |
+
 It also promotes the standardization of GIS resources for reliable and consistent information at a statewide level. Having a centralized data warehouse provides an easy mechanism for data creators to contribute your GIS data.
 
 AGRC povides enhanced products to users based on the data submitted and also provides data products purchased through cooperative efforts. Below are are examples of some of those products:
