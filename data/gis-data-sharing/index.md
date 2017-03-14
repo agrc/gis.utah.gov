@@ -15,16 +15,21 @@ tags:
 
 ---
 
-Data sharing facilitates the consolidation of Utah's GIS resources into one central statewide repository. These statewide data facilitate consumption of the information by organization such as E911, 811 one call centers, Utah Department of Transportation, Governor's Office of Management and Budget, Governor’s Office of Economic Development, Utah State Tax Commission, Utah Division of Wildlife Resources, voting and elections, etc. and promotes the standardization of GIS resources for reliable and consistent information at a statewide level. Having a centralized data warehouse also takes the burden off of you by providing one place to contribute your GIS data.
+These statewide data fulfill a critical need for many organizational business needs:
 
-Data sharing is a 2 way street. Below are are examples of what you get back:
+| E911 | 811 Call Before You Dig – Blue Stakes | Utah Department of Transportation| Governor’s Office of Management and Budget | 
+| Governor’s Office of Economic Development | Utah State Tax Commission |  Utah Division of Wildlife Resources | Voting and Elections |
 
-| Aerial Imagery Acquisition (Statewide Hi Res Program) | Aerial Photography Web Services | Custom Base Map Web Services (w/local&state data Data) | 
+It also promotes the standardization of GIS resources for reliable and consistent information at a statewide level. Having a centralized data warehouse provides an easy mechanism for data creators to contribute your GIS data.
+
+AGRC povides enhanced products to users based on the data submitted and also provides data products purchased through cooperative efforts. Below are are examples of some of those products:
+
+| Aerial Imagery Acquisition (Statewide Hi Res Program) | Aerial Photography Web Services | Custom Base Map Web Services (w/local&state Data) | 
 | Address Geocoding Web Service | Lidar Acquisition (Statewide 3DEP-Type Program) | Lidar Acquisition (3DEP-type Projects) | 
 | Realtime GPS Correction Service | Highway Milepost Reference | Highway Exit Numbers and Names | 
 | State Agency Data Layers in SGID (DNR, DEQ, SITLA) | USGS Topo Quad Web Services | State Cadastral Grant Funding |
 
-Data can be provided via email, drop box, sharefile, or we can pull from your SDE, Distributed Geodatabase, FTP, etc. 
+Your data can be provided via email, drop box, sharefile, or we can pull from your SDE, Distributed Geodatabase, FTP, etc. 
 
 Listed below are the layers you can share and the desired attributes.
 
