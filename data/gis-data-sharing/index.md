@@ -29,7 +29,7 @@ AGRC has also led partnership efforts to fund, procure, and distribute additiona
 | Realtime GPS Correction Service | Highway Milepost Reference | Highway Exit Numbers and Names | 
 | State Agency Data Layers in SGID (DNR, DEQ, SITLA) | USGS Topo Quad Web Services | State Cadastral Grant Funding |
 
-GIS data can be shared to AGRC for publication in the State Geographic Information Database (and related web serves) via email, drop box, sharefile, or we can pull from an ArcSDE connection or web-accessible file geodatabase or shapefile (https://, ftp://, etc.) .
+GIS data can be shared to AGRC for publication in the State Geographic Information Database (and related web serves) via [email]({{ "/about/contact/" | prepend: site.baseurl }}), [Dropbox](https://www.dropbox.com/), [ShareFile](https://www.sharefile.com/), or we can pull from an ArcSDE connection or web-accessible file geodatabase or shapefile (https://, ftp://, etc.).
 
 Listed below are the layers we hope to complete and keep current through partnership with county and local govenrment, and the desired attribute information.
 
