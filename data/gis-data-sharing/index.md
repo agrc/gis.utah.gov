@@ -2,7 +2,7 @@
 layout: page
 status: publish
 published: true
-title: 'GIS Data Sharing'
+title: 'State - Local GIS Data Partnerships'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -15,23 +15,23 @@ tags:
 
 ---
 
-These statewide data fulfill a critical need for many organizational business needs:
+Statewide GIS map data layers fulfill a critical need for many organizational business needs, including:
 
-| E911 | 811 Call Before You Dig – Blue Stakes | Utah Department of Transportation| Governor’s Office of Management and Budget | 
-| Governor’s Office of Economic Development | Utah State Tax Commission |  Utah Division of Wildlife Resources | Voting and Elections |
+| 911 & NextGen 911 (forthcoming) | Blue Stakes (811) Statewide Utility Notification | Utah Department of Transportation| State & Regional Economic Development | 
+| Complete Count Preparation for 2020 Census | Utah State Tax Commission |  Utah Department of Natural Resources | Statewide Elections Management & Redistricting |
 
-It also promotes the standardization of GIS resources for reliable and consistent information at a statewide level. Having a centralized data warehouse provides an easy mechanism for data creators to contribute your GIS data.
+AGRC works with partner agencies and local government toward standardization and interoperability of GIS data resources for reliable and consistent information at a statewide level. The State Geographic Informformation Database provides a 'one-stop-shop' to make discovery, access, and publishing of GIS data efficient.
 
-AGRC povides enhanced products to users based on the data submitted and also provides data products purchased through cooperative efforts. Below are are examples of some of those products:
+AGRC has also led partnership efforts to fund, procure, and distribute additional GIS data products, such as aerial photography and lidar purchased through cooperative efforts. Below are are examples of some of those products:
 
 | Aerial Imagery Acquisition (Statewide Hi Res Program) | Aerial Photography Web Services | Custom Base Map Web Services (w/local&state Data) | 
 | Address Geocoding Web Service | Lidar Acquisition (Statewide 3DEP-Type Program) | Lidar Acquisition (3DEP-type Projects) | 
 | Realtime GPS Correction Service | Highway Milepost Reference | Highway Exit Numbers and Names | 
 | State Agency Data Layers in SGID (DNR, DEQ, SITLA) | USGS Topo Quad Web Services | State Cadastral Grant Funding |
 
-Your data can be provided via email, drop box, sharefile, or we can pull from your SDE, Distributed Geodatabase, FTP, etc. 
+GIS data can be shared to AGRC for publication in the State Geographic Information Database (and related web serves) via [email]({{ "/about/contact/" | prepend: site.baseurl }}), [Dropbox](https://www.dropbox.com/), [ShareFile](https://www.sharefile.com/), or we can pull from an ArcSDE connection or web-accessible file geodatabase or shapefile (https://, ftp://, etc.).
 
-Listed below are the layers you can share and the desired attributes.
+Listed below are the layers we hope to complete and keep current through partnership with county and local govenrment, and the desired attribute information.
 
 ### **Primary Datasets**
 {: .text-left}
