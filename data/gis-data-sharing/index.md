@@ -95,8 +95,7 @@ The information below pertains to the _Basic Parcels_ however _Land Information 
 
 In addition to the parcel polygon geometry the following fields are a necessity and are considered the minimum attributes for the Basic Parcels:  
 
-| Parcel ID and/or Serial Number |  
-| Parcel Address (physical/situs)  _(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_ |  
+| Parcel ID and/or Serial Number | Parcel Address (physical/situs)  _(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_ |  
 
 ### [**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")  
 {: #boundaries}
