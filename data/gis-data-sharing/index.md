@@ -82,10 +82,8 @@ Listed below are considered the minimum attributes:
 View our
 [Address Points Data Model](https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing) and samples of [what they are used for]({{ "/downloads/Address_Point_Database_Values_V1_051914.pdf" | prepend: site.baseurl }}).  
 Listed below are considered the minimum attributes:  
-- Full Address (physical/situs)(ex. 622 N KAYCIE LN)
-- City
-- Zip Code
-- Parcel ID
+
+| Full Address (physical/situs)(ex. 622 N KAYCIE LN) | City | Zip Code | Parcel ID |  
 
 ### [**Parcels**]({{"/data/sgid-cadastre/parcels/" | prepend:site.baseurl}} "Basic Parcels page")  
 {: #parcels}
@@ -93,9 +91,12 @@ Listed below are considered the minimum attributes:
 ![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
 
-In addition to the parcel polygon geometry the following fields are a necessity and are considered the minimum attributes:  
-- Parcel ID and/or Serial Number
-- Parcel Address (physical/situs)  _(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_
+The information below pertains to the _Basic Parcels_ however _Land Information Record Parcels_(LIR) are also requested. More information about the LIR Parcels can be found on the [Work Group Recomends Expanded GIS Parcel Sharing]({{site.baseurl}}{% post_url 2016-05-26-work-group-recommends-expanded-gis-parcel-sharing %}) page.
+
+In addition to the parcel polygon geometry the following fields are a necessity and are considered the minimum attributes for the Basic Parcels:  
+
+| Parcel ID and/or Serial Number |  
+| Parcel Address (physical/situs)  _(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_ |  
 
 ### [**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")  
 {: #boundaries}
@@ -103,10 +104,7 @@ In addition to the parcel polygon geometry the following fields are a necessity 
 ![Boundaries]({{"/images/front-page/90x90_voter_precincts.png" | prepend:site.baseurl}})
 {: .pull-right}
 
-text needed
-
-- asfda
-- asfdas
+Municipal boundary changes should be submitted to the Lieutenant Governor's office. More information can be found on the [Utah Lieutenant Governor Municipal Certifications](https://municert.utah.gov/) website.
 
 ### [**Building Footprints**]({{"/data/location/building-footprint/" | prepend:site.baseurl}} "Building Footprints page")  
 {: #building_footprints}
@@ -125,8 +123,7 @@ This is a multi-purpose dataset of building footprint polygons for cartography a
 ![Trails]({{"/images/trail.png" | prepend:site.baseurl}})
 {: .pull-right}
 
- View the [Trails Data Model](https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit#gid=0)
+View the [Trails Data Model](https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit#gid=0). The following attributes are requested:
 
-- Name
-- CartoCode
+| Name | CartoCode |  
  
