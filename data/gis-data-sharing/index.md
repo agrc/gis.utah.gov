@@ -91,7 +91,7 @@ Listed below are considered the minimum attributes:
 ![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
 {: .pull-right}
 
-The information below pertains to the _Basic Parcels_ however _Land Information Record Parcels_(LIR) are also requested. More information about the LIR Parcels can be found on the [Work Group Recomends Expanded GIS Parcel Sharing]({{site.baseurl}}{% post_url 2016-05-26-work-group-recommends-expanded-gis-parcel-sharing %}) page.
+The information below pertains to the _Basic Parcels_ however _Land Information Record Parcels_ (LIR) are also requested. More information about the LIR Parcels can be found on the [Work Group Recomends Expanded GIS Parcel Sharing]({{site.baseurl}}{% post_url 2016-05-26-work-group-recommends-expanded-gis-parcel-sharing %}) page.
 
 In addition to the parcel polygon geometry the following fields are a necessity and are considered the minimum attributes for the Basic Parcels:  
 
@@ -103,7 +103,8 @@ In addition to the parcel polygon geometry the following fields are a necessity 
 ![Boundaries]({{"/images/front-page/90x90_voter_precincts.png" | prepend:site.baseurl}})
 {: .pull-right}
 
-Municipal boundary changes should be submitted to the Lieutenant Governor's office. More information can be found on the [Utah Lieutenant Governor Municipal Certifications](https://municert.utah.gov/) website.
+Municipal boundary changes should be submitted to the Lieutenant Governor's office. More information can be found on the [Utah Lieutenant Governor Municipal Certifications](https://municert.utah.gov/) website.  
+
 
 ### [**Building Footprints**]({{"/data/location/building-footprint/" | prepend:site.baseurl}} "Building Footprints page")  
 {: #building_footprints}
