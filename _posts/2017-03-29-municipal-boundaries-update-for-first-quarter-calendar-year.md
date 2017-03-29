@@ -18,7 +18,7 @@ tags:
 
 Municipal Boundaries update for first quarter 2017 (calendar year)
 
-Wow   Already three months in the new year, it seems to be moving along fast.
+Wow! Already three months in the new year, it seems to be moving along fast.
 Not a whole lot of changes so far. We’ve been working with Cache County (thanks Cherie) to clear up a few discrepancies in their boundaries. Everything looks great now.
 Just a reminder to everyone, if you see something that’s not correct let us know, we’ll work to get it right.
 
