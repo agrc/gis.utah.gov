@@ -23,6 +23,7 @@ recognizes the potential threats of natural and man-made disasters to our commun
 that geographic information is essential to an effective response and recovery.
 
 
+
 UMETT meets quarterly to share lessons learned from local GIS professionals who have supported
 
 emergencies around Utah, as well as discuss best practices from other organizations around the
@@ -30,6 +31,7 @@ emergencies around Utah, as well as discuss best practices from other organizati
 country. We have discussed essential data needs, useful tools and applications, symbology standards
 
 and map templates, and have conducted GIS related hands-on emergency drills at UGIC conferences.
+
 
 
 Part of our mission is to establish a volunteer response team of skilled GIS professionals who can
@@ -46,6 +48,7 @@ reaching out to the emergency management community to introduce this resource.
 In order to ensure our response team members are well prepared to work in an emergency response
 
 environment, volunteers must complete some training requirements.
+
 
 
 There will be a pre-conference training at the UGIC Conference in Park City on May 9th to introduce the
