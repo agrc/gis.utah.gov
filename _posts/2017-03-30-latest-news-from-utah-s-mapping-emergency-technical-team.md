@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Latest News from Utah&amp;#039;s Mapping Emergency Technical Team'
+title: 'Latest News from Utah's Mapping Emergency Technical Team (UMETT)'
 author:
   display_name: Kate Smith
   email: kate.smith@draper.ut.us
