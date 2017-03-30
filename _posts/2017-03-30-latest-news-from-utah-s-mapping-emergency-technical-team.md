@@ -15,7 +15,7 @@ tags:
 - emergency response
 
 ---
-Established in 2013, the Utah Mapping Emergency Technical Team (UMETT) is a UGIC committee that recognizes the potential threats of natural and man-made disasters to our communities; understanding that geographic information is essential to an effective response and recovery.
+Established in 2013, the Utah Mapping Emergency Technical Team (UMETT) is a UGIC committee that recognizes the potential threats of natural and man-made disasters to our communities; understanding that geographic information is essential to an effective response and recovery. ![Judges' Deliberations]({{ "/images/umettlogo.jpg" | prepend: site.baseurl }}){:.inline-text-right}
 
 UMETT meets quarterly to share lessons learned from local GIS professionals who have supported emergencies around Utah, as well as discuss best practices from other organizations around the country. We have discussed essential data needs, useful tools and applications, symbology standards and map templates, and have conducted GIS related hands-on emergency drills at UGIC conferences.
 
