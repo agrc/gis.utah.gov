@@ -19,6 +19,7 @@ tags:
 - mapping
 - agrc
 - recreation
+- trails
 ---
 <div class="caption"><img class="size-full wp-image-4794" title="map" src="{{ "/images/pcTrails.png" | prepend: site.baseurl }}" alt="Trails" width="256" height="256" /><p class="caption-text">Trails Sample</p></div>
 <p><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/RECREATION/PackagedData/_Statewide/Trails/" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
@@ -37,12 +38,22 @@ The following data is available for download:</p>
         <h3 id="Trails">Trails</h3>
     </div>
     <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/trail.png" | prepend: site.baseurl }}" alt="Trails" />Recreation.Trails represents over 20,000 miles of multiuse trails across the state.
-<b>CartoCode</b> - used for cartographic representation.<br />
-     1 = Hiking<br />
-     2 = Singletrack (bicycles allowed)<br />
-     3 = Paved trail<br />
-     4 = Road-concurrent trail</p>
+<p><img class="productImage-Thumb" src="{{ "/images/trail.png" | prepend: site.baseurl }}" alt="Trails" />The trails map layer represents off-road recreational trail features and important road connections that augment Utah’s recreational trail network. This map layer features many of Utah’s recreational trails but is not yet complete.</p>
+
+<p>Currently, the trails information primary depicts trails used by hiking and mountain biker users. It began with map data purchased from a private entity (Orbital View, Inc), for which full rights were purchased by the GOED Office of Outdoor Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah and Wasatch counties). Additional trails can be submitted to Utah AGRC for inclusion in this map layer.</p>
+
+<p>The primary goal for the trails map layer is to assign a location and a name to each trail feature. However, the trails data is stored within a more complex [data model](https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit#gid=0) that will allow for collection and publishing of more robuts trail and trailhead information in the future.</p>
+<p>Although it is a work in progress, this dataset represents a substantial starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data.</p>
+<p>Note: Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be represented in this map layer.</p>
+      
+      
+<b>PrimaryName</b><br />      
+<b>CartoCode</b> - used for cartographic representation (summary info as of April 2017):<br />
+     1 = Hiking Only (3760 miles, 1888 features)<br />
+     2 = Singletrack, Hiking and Bicycles Allowed (5748 miles, 3944 features)<br />
+     3 = Paved Recreational Trail (696 miles, 2836 features)<br />
+     4 = Road-Concurrent Trail (15,112 miles, 8515 features)<br />
+<b>DataSource</b><br />          
 <p><a href="https://docs.google.com/a/utah.gov/spreadsheet/ccc?key=0Ar7VwMWMy3Z6dDVzUHYzV2NQZXlLUC12MG9qUFdyQmc&usp=sharing_eid#gid=0">Full Data Model</a></p>
 <p><a href="http://utah.maps.arcgis.com/home/webmap/viewer.html?webmap=718b161f8a304113b7b0c47a79f985b6">Interactive Trails Map</a></p>
 Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.<br />
