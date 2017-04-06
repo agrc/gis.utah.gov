@@ -36,7 +36,7 @@ The following are highlights from this update:
 
 - **Davis County:** Obtained roads data on 03/24/2017: added new roads, updated road names and address ranges, etc. Previous update was on 03/09/2017.
 
-- **Grand County:** Obtained roads data from the Grand County on 03/08/2017 and from the City of Moab on 02/10/2017: added new roads, updated road names and address ranges, etc. Previous update was on 12/03/2015.
+- **Grand County:** Obtained roads data from Grand County on 03/08/2017 and from the City of Moab on 02/10/2017: added new roads, updated road names and address ranges, etc. Previous update was on 12/03/2015.
 
 - **Salt Lake County:** Obtained roads data on 03/28/2017: added new roads, updated road names and address ranges, etc. Previous update was on 03/09/2017.
 
