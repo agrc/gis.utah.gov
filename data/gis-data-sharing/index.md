@@ -103,7 +103,7 @@ In addition to the parcel polygon geometry the following fields are a necessity 
 ![Boundaries]({{"/images/front-page/90x90_voter_precincts.png" | prepend:site.baseurl}})
 {: .pull-right}
 
-Municipal boundary changes should be submitted to the Lieutenant Governor's office. More information can be found on the [Utah Lieutenant Governor Municipal Certifications](https://municert.utah.gov/) website.  
+County and Municipal boundary changes should be submitted to the Lieutenant Governor's office and follow the requirements in state code. More information can be found on the [Utah Lieutenant Governor Municipal Certifications](https://municert.utah.gov/) website.  
 
 
 ### [**Building Footprints**]({{"/data/location/building-footprint/" | prepend:site.baseurl}} "Building Footprints page")  
