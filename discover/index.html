@@ -1,0 +1,89 @@
+---
+layout: page
+status: publish
+published: true
+title: 'Discover - Imagery and Base Map Server'
+author:
+  display_name: Rick Kelson
+  email: rkelson@utah.gov
+date: 2017-05-01 15:01:33
+categories:
+
+tags:
+- discover
+- imagery
+- base maps
+- basemaps
+- google
+
+---
+
+<img src="images/discover-logo.png" alt="Discover Logo" class="inline-text-right" />
+<h4>
+    <i class="fa fa-fw fa-clock-o"></i> Getting Started
+</h4>
+<p class="pop" style="width:calc(100% - 260px)">
+    <i class="fa fa-exclamation-triangle"></i> <strong>Everyone</strong> wanting to use the AGRC base maps from discover need to create a <strong>free</strong> account and receive a quad word.
+</p>
+<h4>
+    <i class="fa fa-fw fa-keyboard-o"></i> Sign Up
+</h4>
+<p>
+    To obtain access to the Discover server you need to fill out and understand the <strong><a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement</a></strong> available from the <strong><a href="/data/google-imagery-license/">Google Imagery License</a></strong> page. Once the Organizational Usage Agreement is completed, you will receive information about the services and URL links to access the Discover server.</p>
+<h4>
+    <i class="fa fa-fw fa-mixcloud"></i> Get Connected
+</h4>
+<p>
+  The URLs to access the server will contain a quad-word (ex. <code class="highlighter-rouge">https://discover.agrc.utah.gov/login/path/your-unique-quad-word/</code>) unique to each user or organization. Discover is able to serve many different clients by exposing OGC compliant <acronym title="Web Map Service">WMS</acronym>, <acronym title="Web Map Tile Service">WMTS</acronym>, and direct tile access services.
+  <ul>
+    <li>WMS: <code class="highlighter-rouge">https://discover.agrc.utah.gov/login/path/{quad-word}/wms</code>
+    <li>WMTS: <code class="highlighter-rouge">https://discover.agrc.utah.gov/login/path/{quad-word}/wmts/1.0.0/WMTSCapabilities.xml</code>
+    <li>Tiles: <code class="highlighter-rouge">https://discover.agrc.utah.gov/login/path/{quad-word}/tiles/{service}/{z}/{x}/{y}</code>
+  </ul>
+</p>
+<strong>Usage, Connection, and Download Resources</strong>
+  <ul>
+    <li><a href="{{ "data/sgid-base-map-services-arcmap/" | prepend:site.baseurl }}">ArcMap</a>
+    <li><a href="{{site.baseurl}}{% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}">JavaScript/Web Mapping</a>
+    <li><a href="{{ "/data/aerial-photography/" | prepend:site.baseurl }}">Imagery Download</a>
+  </ul>
+<h4>
+    <i class="fa fa-fw fa-map-o"></i> Available Services
+</h4>
+<p>
+  <ul class="dotless">
+      <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Utah</code> – Combination of the most recent 1-meter NAIP and 6-inch Google imagery with scale dependent rendering <strong>(licensed)</strong>
+      <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Google</code> – 6-inch statewide natural color aerial photography from Google collected within the last 3 years <strong>(licensed)</strong>
+      <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Google {year}archive</code> – Aerial photography blocks updated in <code class="highlighter-rouge">Google</code> service and archived by acquisition year <strong>(licensed)</strong>
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Address_Points</code> – Base map of address point locations
+      <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Basemap-Hybrid</code> - Base map combination of the Overlay base map and Utah imagery service <strong>(licensed)</strong>
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Lite</code> – Base map of hillshade, HWYs/streets, cities, boundaries, etc. (gray, muted tone)
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Overlay</code> – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Terrain</code> – Base map of hillshade, HWYS/streets, parks, forests, water, etc.
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Topo</code> – Base map of USGS topographic maps
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">DOQ 1990s BW</code> – 1-meter statewide black &amp; white aerial photography collected in 1990’s
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">HRO 2012 RGB</code> – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">NAIP {year} RGB</code> – 1-meter statewide natural color aerial photography
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">NAIP {year} NRG</code> – 1-meter statewide color infrared aerial photography
+      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Hillshade</code> – 10 meter 4-way statewide shaded relief
+    </ul>
+</p>
+<h4>
+  <i class="fa fa-fw fa-thumbs-o-up"></i> Best Practices
+</h4>
+<p>
+  <ul>
+    <li>Information about <a href="{{ "/data/googleimagery/" | prepend: site.baseurl }}">transformations between different coordinate systems</a>.
+    <li>It is strongly suggested that you use <code class="highlighter-rouge">WMTS</code> for the best performance.
+    <li>If your software will only allow you to use <code class="highlighter-rouge">WMS</code>, adding a WMS connection is the same as above but substitute <code class="highlighter-rouge">Add WMS server</code> in step 1.
+    <li>More information about using the <a href="{{ "/data/googleimagery/" | prepend: site.baseurl }}">Google Imagery and Discover Services</a>.
+    <li>If you will be or already are printing base maps from the web and are experiencing blank or empty output, read this blog post about <a href="{{"/printing-web-maps-with-discover-services/" | prepend:site.baseurl }}">Printing Web Maps with Discover Services</a> for our solution.
+  </ul>
+</p>
+<h4>
+    <i class="fa fa-fw fa-bar-chart"></i> Statistics
+</h4>
+
+<a href="{{ "/images/discover.png" | prepend:site.baseurl }}" alt="Click to Enlarge">
+  <img src="{{ "/images/discover_sm.png" | prepend:site.baseurl }}" alt="Discover" />
+</a>
