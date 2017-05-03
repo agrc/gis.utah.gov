@@ -2,7 +2,7 @@
 layout: page
 status: publish
 published: true
-title: 'How to Edit Exiting Content on gis.utah.gov'
+title: 'How to Edit Existing Content on gis.utah.gov'
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
