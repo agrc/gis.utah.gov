@@ -40,7 +40,7 @@ Instructions for using Discover services in ArcMap 10.x:
   - `HRO 2012 RGB` – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
   - `NAIP *year* RGB` – 1-meter statewide natural color aerial photography
   - `NAIP *year* NRG` – 1-meter statewide color infrared aerial photography
-  - `Hillshade` – 10 meter 4-way statewide shaded relief
+  - `Hillshade` – 10 meter statewide combined hillshade and slope
  
 #### Notes:
 {: .text-left}
