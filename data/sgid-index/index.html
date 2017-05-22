@@ -2897,13 +2897,6 @@ title: SGID Index
                 <td data-th="service" class="service"></td>
             </tr>
             <tr>
-                <td data-th="category" class="category"></td>
-                <td data-th="name" class="name">Points Of Diversion</td>
-                <td data-th="agency" class="agency">Dept of Water Rights</td>
-                <td data-th="description" class="description">Points of diversion.</td>
-                <td data-th="service" class="service"><a href="http://maps.dnr.utah.gov/arcgis/rest/services/WRT/Points_Of_Diversion/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
-            </tr>
-            <tr>
                 <td data-th="category" class="category">political</td>
                 <td data-th="name" class="name"><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/POLITICAL/UnpackagedData/DistrictCombinationAreas2012/_Statewide/">District Combination Areas 2012</a></td>
                 <td data-th="agency" class="agency"></td>
@@ -3937,10 +3930,59 @@ includes x,y and milepost and is generally accurate to within 5ft</td>
             </tr>
             <tr>
                 <td data-th="category" class="category">water</td>
-                <td data-th="name" class="name">Points Of Diversion</td>
-                <td data-th="agency" class="agency"></td>
-                <td data-th="description" class="description"></td>
-                <td data-th="service" class="service"><a href="https://maps.dnr.utah.gov/arcgis/rest/services/WRT/Points_Of_Diversion/MapServer/0" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+                <td data-th="name" class="name"><a href="http://maps.waterrights.utah.gov/Downloads/wrpod.zip">Points Of Diversion</a></td>
+                <td data-th="agency" class="agency">Water Rights</td>
+                <td data-th="description" class="description">Points generated daily from basic information in the tabular database from the Division of Water Rights database. The Points represents where water is diverted from a source</td>
+                <td data-th="service" class="service"><a href="https://maps.dnr.utah.gov/arcgis/rest/services/WRT/Points_Of_Diversion/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">water</td>
+                <td data-th="name" class="name"><a href="http://maps.waterrights.utah.gov/Downloads/damcross.zip">Dam Breach Cross Sections</a></td>
+                <td data-th="agency" class="agency">Water Rights</td>
+                <td data-th="description" class="description">Digitized in conjuction with AGRC, using data (where available ) from the Dam Emergency Action plan. The polyline shows the reach cross sections of worst case hypothetical catastrophic dam breach.</td>
+                <td data-th="service" class="service"><a href="https://maps.dnr.utah.gov/arcgis/rest/services/WRT/DamCrossService/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">water</td>
+                <td data-th="name" class="name"><a href="http://maps.waterrights.utah.gov/Downloads/duty.zip">Duty</a></td>
+                <td data-th="agency" class="agency">Water Rights</td>
+                <td data-th="description" class="description">Duty represents a quantity of water, determined by the State Engineer, required to satisfy the irrigation water requirements in a given area; based on the irrigation requirements of alfalfa</td>
+                <td data-th="service" class="service"><a href="https://maps.dnr.utah.gov/arcgis/rest/services/WRT/DutyValueService/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">water</td>
+                <td data-th="name" class="name"><a href="http://maps.waterrights.utah.gov/Downloads/wrdams.zip">Dams</a></td>
+                <td data-th="agency" class="agency">Water Rights</td>
+                <td data-th="description" class="description">Point feature class representing dam locations in the State of Utah from the Dam Safety Regulatory Database at the Utah Division of Water Rights. The shapefile is generated daily from basic information in the tabular database.Many of the origional positions were scaled as latitude/longitude values from 1:24000 USGS Quadrangle series maps. They were later converted to UTM locations. Locations for recent additions to the database are either scaled from USGS Quadrangle maps, collected from GPS observations or converted from Public Land Survey descriptions to UTM coordinates. Non-standard attributes are located at this URL: https://waterrights.utah.gov/gisinfo/wrdams.htm</td>
+                <td data-th="service" class="service"><a href="https://maps.dnr.utah.gov/arcgis/rest/services/WRT/DamInventoryService/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">water</td>
+                <td data-th="name" class="name"><a href="http://maps.waterrights.utah.gov/Downloads/adjareas.zip">Adjudication Areas</a></td>
+                <td data-th="agency" class="agency">Water Rights</td>
+                <td data-th="description" class="description">AdjudicationAreas is a polygon feature class that represents General Water Rights Adjudications. The water rights adjudication process helps to bring order and certainty to the water rights record throughout the state by defining existing rights, quantifying unknown rights, and removing unused and abandoned rights from the record through judicial decree. Under the direction of the district court, the State Engineer provides notice to all potential water right claimants to submit claims, publishes and files a List of Unclaimed Rights with the district court, evaluates filed water user’s claims, prepares a hydrographic survey map, and then prepares and files a Proposed Determination of water rights in the district court. Water users have the opportunity to contest the List of Unclaimed Rights and the Proposed Determination by filing an objection with the district court. Objections must be resolved before the court can render a decree on either the List of Unclaimed Rights or the Proposed Determination.All of the hydrologic areas within the State of Utah are currently involved in a court-ordered adjudication of water rights except the Weber River, Sevier River, and Green River drainages. The water rights on the Sevier and Weber Rivers were adjudicated and decreed in the 1920's and 1930's. The adjudications in most of the other areas of the state were started in the 1950's through the early 1970's</td>
+                <td data-th="service" class="service"><a href="https://maps.dnr.utah.gov/arcgis/rest/services/WRT/AdjudAreas/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">water</td>
+                <td data-th="name" class="name"><a href="http://maps.waterrights.utah.gov/Downloads/dambreak.zip">Dam Inundation</a></td>
+                <td data-th="agency" class="agency">Water Rights</td>
+                <td data-th="description" class="description">Using data (where available ) from the Dam Emergency Action plan. Polygon shows plan view of the worst case inundation flood zones predicted from hypothetical catastrophic breaching of upstream high hazard</td>
+                <td data-th="service" class="service"><a href="https://maps.dnr.utah.gov/arcgis/rest/services/WRT/DamInundation/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">water</td>
+                <td data-th="name" class="name"><a href="http://maps.waterrights.utah.gov/Downloads/Canals.zip">Canals</a></td>
+                <td data-th="agency" class="agency">Water Rights</td>
+                <td data-th="description" class="description">In 2014 the Utah Legislature passed House Bill 370 directing the Division of Water Rights to create and maintain an inventory of all canals. Staff from the Divsion are currently digitizing and updating the canals feature class</td>
+                <td data-th="service" class="service"><a href="https://maps.dnr.utah.gov/arcgis/rest/services/WRT/CanalService/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
+            </tr>
+            <tr>
+                <td data-th="category" class="category">water</td>
+                <td data-th="name" class="name"><a href="http://maps.waterrights.utah.gov/Downloads/wrstralt.zip">Stream Alteraltion Applications</a></td>
+                <td data-th="agency" class="agency">Water Rights</td>
+                <td data-th="description" class="description">These are points showing stream alteration applications. The shapefile is generated daily from basic information in the tabular database</td>
+                <td data-th="service" class="service"><a href="https://maps.dnr.utah.gov/arcgis/rest/services/WRT/StreamAltPoints/FeatureServer" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a></td>
             </tr>
             <tr>
                 <td data-th="category" class="category">water</td>
