@@ -17,7 +17,7 @@ tags:
 
 <style type="text/css">
 #logo {
-  max-width: 250px;
+  max-width: 400px;
   margin: 0 auto;
 }
 </style>
