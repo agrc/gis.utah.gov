@@ -27,7 +27,7 @@ AGRC staff had a great time last week at the UGIC Conference in Park City. Every
 - [GIS for Utah NG911](https://docs.google.com/presentation/d/14obhOgTXFGCxi1r3aQBCZnAAN3tz2snQv592vJZay78/edit?usp=sharing), by Bert Granberg, Kevin Rose, & Melanie Crittenden
 - [How we Modernized our To Do Lists](https://drive.google.com/open?id=15z02TStTMsuHTMnAIwwwyN8Ka_pO85IDNrYJpKG6LoQ), by Josh Groeneveld & Jessie Pechmann
 
-AGRC presentations are [archived and published](http://agrc.github.io/Presentations/) online. 
+AGRC presentations are [archived and published](http://agrc.github.io/Presentations/) online. Congratulations is also due to Zach Beck and Bert Granberg for participating in friendly coworker competition during the [conference's iron cartographer session](http://ugic.org/conference/congratulations-to-the-2017-map-gallery-winners/). 
 
 And just for fun, here is a [bonus aerial imagery quiz](https://www.geolounge.com/geo-quiz-name-the-human-activity-visible-from-space/). 
 
