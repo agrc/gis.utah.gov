@@ -50,3 +50,9 @@ This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) 
 
 If you need assistance contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov)
 
+<div id="logo">
+  <img src="{{ "/images/monroe_DEM.png" alt="Monroe Sample" | prepend: site.baseurl }}"/>
+</div>
+<div id="logo">
+  <img src="{{ "/images/monroe_DSM.png" alt="Monroe Sample" | prepend: site.baseurl }}"/>
+</div>
