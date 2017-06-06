@@ -49,8 +49,4 @@ If you are not covered by the license agreement for the Google imagery service y
 - For imagery downloads visit [this page]({{ "/data/aerial-photography/" | prepend: site.baseurl }}).
 - Instructions on how to [use the Discover services in ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
 
-### UTM Services on mapserv
-
-## <i class="fa fa-exclamation-triangle"></i> The UTM base maps were deprecated on January 31, 2017
-
 _If you need continued support of the UTM base maps, we will be offering the tiles for on premise use. Please [contact AGRC]({{ "/about/contact/" | prepend: site.baseurl }}) for details._
