@@ -18,6 +18,10 @@ tags:
 
 ---
 
+<div class="grid pop">
+  <p>The information on this page could be outdated. For the most recent information visit the [Discover]({{ "/discover/" | prepend: site.baseurl }}) page.</p>
+</div>
+
 Recently AGRC made some changes to the services available from our cloud server Discover (discover.agrc.utah.gov).
 To see these new enhancements you may need to _refresh_ the connection you use to access Discover. ArcMap users can
 right-click your connection to Discover in ArcCatalog and select `Refresh`. You might also want to clear your local cache.
