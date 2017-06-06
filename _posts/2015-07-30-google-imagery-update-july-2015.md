@@ -32,7 +32,7 @@ tags:
 ---
 
 <div class="grid pop">
-  <p>The information on this page could be outdated. For the most recent information visit the [Discover]({{ "/discover/" | prepend: site.baseurl }}) page.</p>
+  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a> page.</p>
 </div>
 
 <p>A lot has happened since the initial Google Imagery license purchase at the first of the year. Top on the list is that over 180 Utah organizations have signed up to use the license. </p>
