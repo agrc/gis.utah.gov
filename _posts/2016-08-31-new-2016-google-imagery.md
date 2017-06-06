@@ -13,6 +13,10 @@ tags:
 
 ---
 
+<div class="grid pop">
+  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a> page.</p>
+</div>
+
 New 2016 high-resolution Google imagery is available from the Discover server. Updated areas include the Salt Lake Block and part of the Torrey Block that was previously covered by clouds. The new imagery can be found in the `utah` service. The new imagery is not yet available for download and the archive services have not been updated but should be very soon.
 
 [![Google update]({{"/images/2016GoogleImagerySample_sm.png" | prepend:site.baseurl}} "view sample")]({{"/images/2016GoogleImagerySample.png" | prepend:site.baseurl}}){:.inline-text-right}

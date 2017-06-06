@@ -21,6 +21,11 @@ categories:
 - Google Imagery
 tags: []
 ---
+
+<div class="grid pop">
+  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a> page.</p>
+</div>
+
 <p><img src="{{ "/images/Screen-Shot-2015-11-24-at-3.45.51-PM-300x251.png" | prepend: site.baseurl }}" alt="" title="Screen Shot 2015-11-24 at 3.45.51 PM" width="300" height="251" class="inline-text-left" />
 <h4>1. Quick Update! WMTS Speeds Much Improved.</h4>
 <p>Last week, several behind-the-scenes changes were made by AppGeo to significantly increase the performance of the discover.agrc.utah.gov WMTS service. We’ve received consistent feedback from our test users indicating that the latest updates meet speed-level expectations for desktop GIS and web app use, including aggressive panning. WMTS should now, by far, out perform the older WMS protocol, the latter of which should really only be used as a last resort.</p>

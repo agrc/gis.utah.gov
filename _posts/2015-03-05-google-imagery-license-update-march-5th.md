@@ -24,6 +24,11 @@ tags:
 - imagery
 - google
 ---
+
+<div class="grid pop">
+  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a> page.</p>
+</div>
+
 <p><strong>Background:</strong>
 </p>
 <p>At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google’s high resolution (6 inch pixels) aerial photography. <em>Read the original <a href="{{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}">post</a> about the acquisition</em>. The license will allow Utah’s <strong>cities, counties, special districts, state agencies, K12/Higher ed, and tribes</strong> to use this imagery in web and desktop mapping  applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is <strong>use by contractors and formal partners of the immediate licensees</strong>.</p>

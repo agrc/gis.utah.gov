@@ -23,6 +23,11 @@ tags:
 - google
 - high resolution
 ---
+
+<div class="grid pop">
+  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a> page.</p>
+</div>
+
 <p>Users of <a href="{{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}">Google's statewide high resolution aerial photography</a> are transitioning to accessing the data through the new GCP-based discover.agrc.utah.gov server and its twin WMS and WMTS imagery services. The new services on the 'discover' server are much more capable and deliver higher image quality. For more information and a connection to discover.agrc.utah.gov, contact Rick Kelson at (801) 538-3237 or rkelson@utah.gov. </p>
 <p><strong>WMS vs WMTS<br />
 </strong>With two choices of OGC standard-based imagery services to choose from, WMS and WMTS, which should you use? The WMTS protocol should deliver the imagery faster so use it if works on your platform. But, the WMS service is an older standard that may be more maturely implemented within software applications, and is what ESRI users not yet at v10.2 should use. </p>
