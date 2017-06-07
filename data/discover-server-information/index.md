@@ -2,7 +2,7 @@
 layout: page
 status: publish
 published: true
-title: Google Imagery Information
+title: Discover Server Information
 author:
 display_name: Rick Kelson
 login: rkelson
@@ -21,20 +21,6 @@ tags:
 - google
 - hi res
 ---
-### Background
-{: .text-left}
-
-At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial photography. _Read the original [post]({{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}) about the acquisition_. The license will allow **Utah's cities, counties, special districts, state agencies, K12/Higher ed, and tribes** to use this imagery in web and desktop mapping  applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is **use by contractors and formal partners of the immediate licensees**.
-
-### Coordinate System and Datum
-{: .text-left}
-
-The native coordinate system for the Google files and services is Web Mercator with a WGS 1984 datum. Many end users in Utah work in coordinate systems with a different datum (NAD 1983 for example). It will be critical for end users that require the highest locational precision to set up their working environment through the use of the appropriate geographic transformation (Esri software users should use NAD_1983_To_WGS_1984_5). The geographic transformation parameter is needed to overcome the locational difference between the WGS84 and NAD83 datum's “realization points” that are about a meter apart. Without the proper geographic transformation, reprojection algorithms will not be able to resolve the last meter of positional accuracy. In order for the imagery to be positioned as accurately as possible when there is a difference between the native projection and datums of the imagery and the client viewing application, a datum conversion must be set (<a href="{{ "/downloads/Transformation.png" | prepend: site.baseurl }}">see example</a>). For ArcMap users, the appropriate datum conversion for Utah is NAD_1983_To_WGS_1984_5. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information : <a href="http://support.esri.com/en/knowledgebase/techarticles/detail/24159">NAD_1983_To_WGS_1984_5</a>
-
-### Horizontal Positional Accuracy
-{: .text-left}
-
-Stated horizontal positional accuracy of the imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. Higher precision is expected in urban areas, where existing supplemental ground control was more abundant.
 
 ### Discover Server
 {: .text-left}
@@ -48,6 +34,16 @@ If you are not covered by the license agreement for the Google imagery service y
 - For imagery downloads visit [this page]({{ "/data/aerial-photography/" | prepend: site.baseurl }}).
 - Instructions on how to [use the Discover services in ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
 - Instructions on how to [use the Discover services in Web Maps]({{site.baseurl}}{% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}).
+
+### Coordinate System and Datum
+{: .text-left}
+
+The native coordinate system for the Google files and services is Web Mercator with a WGS 1984 datum. Many end users in Utah work in coordinate systems with a different datum (NAD 1983 for example). It will be critical for end users that require the highest locational precision to set up their working environment through the use of the appropriate geographic transformation (Esri software users should use NAD_1983_To_WGS_1984_5). The geographic transformation parameter is needed to overcome the locational difference between the WGS84 and NAD83 datum's “realization points” that are about a meter apart. Without the proper geographic transformation, reprojection algorithms will not be able to resolve the last meter of positional accuracy. In order for the imagery to be positioned as accurately as possible when there is a difference between the native projection and datums of the imagery and the client viewing application, a datum conversion must be set (<a href="{{ "/downloads/Transformation.png" | prepend: site.baseurl }}">see example</a>). For ArcMap users, the appropriate datum conversion for Utah is NAD_1983_To_WGS_1984_5. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information : <a href="http://support.esri.com/en/knowledgebase/techarticles/detail/24159">NAD_1983_To_WGS_1984_5</a>
+
+### Horizontal Positional Accuracy
+{: .text-left}
+
+Stated horizontal positional accuracy of the imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. Higher precision is expected in urban areas, where existing supplemental ground control was more abundant.
 
 ### Adding a WMTS or WMS Service to ArcMap
 {: .text-left}
@@ -69,10 +65,10 @@ Take a look at this blog post for information about [Printing Web Maps with Disc
 
 In addition to the statewide `Google` imagery service layer there are archive layers available (ex. `Google 2011archive`). As new imagery is collected and added to the `Google` layer the new imagery is also placed into the layer that corresponds to the year the imagery was collected. If you are not seeing the <a href="{{ "/downloads/ArchiveServices.png" | prepend: site.baseurl }}"> archive service layers</a> simply go to ArcCatalog or ArcMap's Catalog Viewer and right-click the GIS Server connection created to access the imagery service and select `Refresh`.
 
-### Flight Dates
+### Google Flight Dates
 {: .text-left}
 
-The dates of each flight block can be downloaded from <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_UtahServiceDates/_Statewide/">here</a> as a shapefile, viewed <a href="http://arcg.is/1E0wq3b">here</a> in ArcGIS Online, or utilized through our SDE as layer SGID10.INDICES.Google_UtahServiceDates.
+The dates of each Google imagery flight block can be downloaded from <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_UtahServiceDates/_Statewide/">here</a> as a shapefile, viewed <a href="http://arcg.is/1E0wq3b">here</a> in ArcGIS Online, or utilized through our SDE as layer SGID10.INDICES.Google_UtahServiceDates.
 
 ### ArcMap User Considerations
 {: .text-left}
