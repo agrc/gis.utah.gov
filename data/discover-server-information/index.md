@@ -99,7 +99,7 @@ To access the GCP services individual organizations will be provided URL links f
 ### Requests for On-Premise Use
 {: .text-left}
 
-Request can be made to consume the imagery off-line when the provided imagery service does not suffice. Please provide the following information to [rkelson@utah.gov](mailto:rkelson@utah.gov) for consideration:
+Request can be made to consume the imagery off-line when the provided imagery service does not suffice. Please provide the following information to Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov) for consideration:
   -	Name & organization:
   - Reason for request:
   - Working on behalf of:
