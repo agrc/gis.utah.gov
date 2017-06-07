@@ -60,10 +60,10 @@ Interested in using AGRC's Web Mercator services in your web maps? Take a look a
 
 Take a look at this blog post for information about [Printing Web Maps with Discover Services]({{"/printing-web-maps-with-discover-services/" | prepend:site.baseurl}}).
 
-### Archive Services
+### Google Archive Services
 {: .text-left}
 
-In addition to the statewide `Google` imagery service layer there are archive layers available (ex. `Google 2011archive`). As new imagery is collected and added to the `Google` layer the new imagery is also placed into the layer that corresponds to the year the imagery was collected. If you are not seeing the <a href="{{ "/downloads/ArchiveServices.png" | prepend: site.baseurl }}"> archive service layers</a> simply go to ArcCatalog or ArcMap's Catalog Viewer and right-click the GIS Server connection created to access the imagery service and select `Refresh`.
+In addition to the statewide `Google` imagery service layer there are archive layers available (ex. `Google 2011archive`) of the Google imagery organized by year collected.
 
 ### Google Flight Dates
 {: .text-left}
@@ -99,7 +99,7 @@ To access the GCP services individual organizations will be provided URL links f
 ### Requests for On-Premise Use
 {: .text-left}
 
-Request can be made to consume the imagery off-line when the provided imagery service does not suffice or if you are not state, regional, local or tribal government, public safety, K-12, or higher education. Please provide the following information for consideration:
+Request can be made to consume the imagery off-line when the provided imagery service does not suffice. Please provide the following information to [rkelson@utah.gov](mailto:rkelson@utah.gov) for consideration:
   -	Name & organization:
   - Reason for request:
   - Working on behalf of:
