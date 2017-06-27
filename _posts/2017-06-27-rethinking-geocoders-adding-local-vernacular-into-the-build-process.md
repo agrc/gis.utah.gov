@@ -8,9 +8,10 @@ author:
   email: GBunce@utah.gov
 date: 2017-06-27 00:38:49
 categories:
-
+- Developer
 tags:
-
+- roads
+- geocoding
 ---
 
 AGRC has been working on a project that alters the way we think about geocoding. It grew from the basic idea that humans often view addressing differently than a GIS system. For instance, as GIS professionals, we are accustom to storing data in a format that is versatile and verbose. This view of the data is not always friendly to geocoders or to the local vernacular. The Road Grinder project attempts to bridge this gap.
