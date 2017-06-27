@@ -41,13 +41,3 @@ Visit our [GitHub repository](https://github.com/agrc/RoadGrinder) to view or co
 
 **Diagram 3**: Derived Road Centerline Table (created from single road feature in Diagram 2) 
 ![Derived Road Centerline Table]({{ "/images/DerivedTable.png" | prepend: site.baseurl }})
-
-
-**Diagram 1**: State Street Addressing in Salt Lake City
-![state street addressing]({{ "/images/StateStreetAddressing.png" | prepend: site.baseurl }})
-
-**Diagram 2**: Road Alias Naming
-![Road Alias Naming]({{ "/images/AliasRoadNaming.png" | prepend: site.baseurl }})
-
-**Diagram 3**: Derived Road Centerline Table (created from single road feature in Diagram 2) 
-![Derived Road Centerline Table]({{ "/images/DerivedTable.png" | prepend: site.baseurl }})
