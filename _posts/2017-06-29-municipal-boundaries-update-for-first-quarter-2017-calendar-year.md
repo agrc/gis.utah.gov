@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Municipal Boundaries update for first quarter 2017 (calendar year)'
+title: 'Municipal Boundaries update for second quarter 2017 (calendar year)'
 author:
   display_name: M Heagin
   email: mheagin@utah.gov
@@ -13,12 +13,12 @@ tags:
 - Municipal Boundaries
 - Annexations
 - City Boundaries
-- 
 
 ---
 
-Year is half over, and we just keep rolling along. This is the Municipal Boundaries update for the first quarter 2017 (Calendar year). Things picked up a little from the first quarter.
-A little reminder for everyone, changes to city boundaries can affect others like voter precincts, or school districts. Be sure to share data with your Clerk offices or others that may have an interest.
+The year is half over and we keep rolling along. This is the Municipal Boundaries update for the second quarter of the 2017 calendar year. Things picked up a little from the first quarter. **A little reminder for everyone**, changes to city boundaries can affect you. For instance, your voting precinct or school district may change. 
+
+Be sure to share data with your Clerks office or others that may have an interest.
 
 Following are the changes and annexations since March. 30, 2017,  listed by County and City:
 
