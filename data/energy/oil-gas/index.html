@@ -40,94 +40,69 @@ tags:
 - state
 - statewide
 ---
-<div class="caption"><img class="size-full wp-image-4794" src="{{ "/images/utah-oil-and-gas-wells.png" | prepend: site.baseurl }}" alt="Oil and Gas Wells" /><p class="caption-text">Oil and Gas Wells</p></div>
+<div class="caption"><img class="size-full wp-image-4794" src="{{ " /images/utah-oil-and-gas-wells.png " | prepend: site.baseurl }}" alt="Oil and Gas Wells" />
+    <p class="caption-text">Oil and Gas Wells</p>
+</div>
 <p><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/PackagedData/_Statewide/DOGMOilAndGasResources/" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>Oil and Gas</h4>
-<p></strong><br />
-<strong>NOTE (6/1/17): DOGM has recently updated their database and are still working to get AGRC the new connection information. Therefore, some of the data available to download on this page will not be kept up-to-date.</strong><br />
-<strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward(s): AGRC & DNR-OGM</strong></p>
-<p><strong>Abstract:</strong><br />
-These datasets depict oil and gas well surface points, units and fields polygons from the <a href="http://ogm.utah.gov">Utah Department of Natural Resources, Oil, Gas and Mining Division.</a></p>
+<h4><strong>Oil and Gas</strong></h4>
+<p>
+    <br />
+    <strong>NOTE (6/1/17): DOGM has recently updated their database and are still working to get AGRC the new connection information. Therefore, some of the data available to download on this page will not be kept up-to-date.</strong><br />
+    <strong>Data Type: GIS Data Layer</strong><br />
+    <strong>Steward(s): AGRC & DNR-OGM</strong></p>
+<p><strong>Abstract:</strong><br /> These datasets depict oil and gas well surface points, units and fields polygons from the <a href="http://ogm.utah.gov">Utah Department of Natural Resources, Oil, Gas and Mining Division.</a></p>
 <p>The data can be previewed in an <a href="http://mapserv.utah.gov/oilgasmining/">interactive map</a> format. </p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
+<p><strong>Data Content:</strong><br /> The following data is available for download:</p>
 <div class="grid package">
     <div class="grid__col grid__col--12-of-12">
         <h3 id="OilandGasWells">Oil and Gas Wells</h3>
     </div>
     <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/utah-oil-gas-wells-small.png" | prepend: site.baseurl }}" alt="Oil Wells" />This dataset depicts oil and gas well points in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The dataset contains the API code, well and company name, account number, filed number, field name, elevation, locations coordinates, lease numbers, well type and status, total cumulative oil, gas and water, and more. The path (HDPath) and bottom of hole (HDBottom) for horizontally-drilled wells are available as a separate feature classes derived from attributes in the wells feature class (see Links|Download tab).
-</p>
-<p>Field Descriptions:</p>
-<p>DIRECTION: Flag showing if well is dirctionally drilled (D) or horizontally drilled (H)<br />
-WELL_STATUS_MAIN: The most current well status available. See below for coded values.<br />
-WELL_TYPE_MAIN: The most current well type available. See below for coded values.<br />
-SURF_OWNER_TYPE: Surface owner flag (1-Federal, 2-Indian, 3-State, 4-Fee)<br />
-GIS_STAT_TYPE: Combination of Well_type_main and Well_status_main to be used on maps</p>
-<p><a href="http://oilgas.ogm.utah.gov/Data_Center/LiveData_Search/codes_lookup.cfm">Information on the coded values used in the 'WELL_STATUS_MAIN' and 'WELL_TYPE_MAIN' fields. </a></p>
-<p>Other Field Descriptions:</p>
-<p>ACCT_NUM: DOGM Operator account number<br />
-FIELD_NUM: DOGM Oil/Gas field number<br />
-LOCATION_SURF_WCR: Location surface footages from Well Completion Report<br />
-CONF_FLAG: Confidential status flag<br />
-CONF_DATE: Confidential status date<br />
-LEASE_TYPE: Mineral lease type (1-Federal, 2-Indian, 3-State, 4-Fee)<br />
-LA_PA_DATE: Termination date of an APD or well - Location Abandoned (permit rescinded) or Plugged and Abandoned (well plugged)<br />
-MODIFY_DATE: The date the DOGM database record was last changed<br />
-TOTAL_CUM_OIL: Total cumulative production volume of crude oil for the lifetime of the well in BBLS (barrels - one barrel equals 42 U.S. gallons)<br />
-TOTAL_CUM_GAS: Total cumulative production volume of natural gas for the lifetime of the well in MCF (1 MCF equals one thousand cubic feet)<br />
-TOTAL_CUM_WATER: Total cumulative production volume of water for the lifetime of the well in BBLS (barrels - one barrel equals 42 U.S. gallons)<br />
-MULTI_LEG_COUNT: A count from well completion reports showing how many 'laterals' or 'legs' a horizontal well has<br />
-CBMETHANE_FLAG: Flag identifies wells that are classified as coalbed methane gas wells<br />
-BOND_NUMBER: Plugging bond number<br />
-BOND_TYPE: Plugging bond type (1-Federal, 2-Indian, 3-State, 4-Fee)<br />
-CA_NUMBER: Communitization Agreement number<br />
-FIELD_TYPE_FLAG: Flag identifies the field type at the time the well is permitted (D-development, E-extension, W-wildcat)<br />
-ORIG_COMPL_DATE: Date from the Well Completion Report of when drilling and testing was completed<br />
-ORIG_TD: Total Depth of drilling - Measured Depth - from WCR<br />
-API: The API number (American Petroleum Institute standard numbering system) assigned to the well by the State of Utah<br />
-WELL_NAME: The name and number of a well as assigned by the operating company<br />
-FIELD_NAME: The name of the oil or gas field in which the well is located<br />
-ELEVATION: The well elevation in feet above sea level (GR=Ground Reading, DF=Derrick Floor, KB=Kelly Busing)<br />
-COORDS_SURF_N: Universal Transverse Mercator (UTM) surface coordinates - Northings (y coordinate); UTM Zone 12, NAD83<br />
-COORDS_SURF_E: Universal Transverse Mercator (UTM) surface coordinates - Eastings (x coordinate); UTM Zone 12, NAD83<br />
-COORDS_BHL_N: Universal Transverse Mercator (UTM) bottom hole coordinates - Northings (y coordinate); UTM Zone 12, NAD83<br />
-COORDS_BHL_E:   Universal Transverse Mercator (UTM) bottom hole coordinates - Eastings (x coordinate); UTM Zone 12, NAD83<br />
-QTR_QTR: Well location - quarter/quarter section<br />
-SECTION: Well location - section<br />
-TOWNSHIP: Well location - township<br />
-RANGE: Well location - range<br />
-MERIDIAN: Well location - meridian (Salt Lake or Uintah meridians)<br />
-COUNTY: Well location - county<br />
-ALT_ADDRESS: Alternate address flag; works mainly with ACCT_NUM field for mail routing purposes<br />
-LEASE_NUM: Current mineral lease number assigned to a well as reported by well operator<br />
-INDIAN_TRIBE:   Designates Native American Indian allottee or tribe if applicable ('Navajo' or 'Ute'<br />
-UNIT_NAME: The name of the unit if applicable.  A unit is a joint operation of separately owned leases<br />
-LAT_SURF: Well location latitude coordinates in degrees; UTM Zone 12, NAD83<br />
-LONG_SURF: Well location latitude coordinates in degrees; UTM Zone 12, NAD83<br />
-COMPANY_NAME: The name of the well operating company</p>
-<p>There are no constraints or warranties with regard to the use of this dataset.</p>
-Contact:<br />
-<a href="mailto:donstaley@utah.gov">Don Staley (DNR-OGM)</a><br />
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="OilandGasWells-downloads">Downloads</h5>
+        <img class="productImage-Thumb" src="{{ " /images/utah-oil-gas-wells-small.png " | prepend: site.baseurl }}" alt="Oil Wells" />This dataset depicts oil and gas well points in Utah from the Utah Department of Natural Resources, Oil Gas and Mining
+        Division. The dataset contains the API code, well and company name, account number, filed number, field name, elevation, locations coordinates, lease numbers, well type and status, total cumulative oil, gas and water, and more. The path (HDPath)
+        and bottom of hole (HDBottom) for horizontally-drilled wells are available as a separate feature classes derived from attributes in the wells feature class (see Links|Download tab).
+        </p>
+        <p>Field Descriptions:</p>
+        <p>DIRECTION: Flag showing if well is dirctionally drilled (D) or horizontally drilled (H)<br /> WELL_STATUS_MAIN: The most current well status available. See below for coded values.<br /> WELL_TYPE_MAIN: The most current well type available. See
+            below for coded values.<br /> SURF_OWNER_TYPE: Surface owner flag (1-Federal, 2-Indian, 3-State, 4-Fee)<br /> GIS_STAT_TYPE: Combination of Well_type_main and Well_status_main to be used on maps</p>
+        <p><a href="http://oilgas.ogm.utah.gov/Data_Center/LiveData_Search/codes_lookup.cfm">Information on the coded values used in the 'WELL_STATUS_MAIN' and 'WELL_TYPE_MAIN' fields. </a></p>
+        <p>Other Field Descriptions:</p>
+        <p>ACCT_NUM: DOGM Operator account number<br /> FIELD_NUM: DOGM Oil/Gas field number<br /> LOCATION_SURF_WCR: Location surface footages from Well Completion Report<br /> CONF_FLAG: Confidential status flag<br /> CONF_DATE: Confidential status date<br
+            /> LEASE_TYPE: Mineral lease type (1-Federal, 2-Indian, 3-State, 4-Fee)<br /> LA_PA_DATE: Termination date of an APD or well - Location Abandoned (permit rescinded) or Plugged and Abandoned (well plugged)<br /> MODIFY_DATE: The date the DOGM
+            database record was last changed<br /> TOTAL_CUM_OIL: Total cumulative production volume of crude oil for the lifetime of the well in BBLS (barrels - one barrel equals 42 U.S. gallons)<br /> TOTAL_CUM_GAS: Total cumulative production volume
+            of natural gas for the lifetime of the well in MCF (1 MCF equals one thousand cubic feet)<br /> TOTAL_CUM_WATER: Total cumulative production volume of water for the lifetime of the well in BBLS (barrels - one barrel equals 42 U.S. gallons)<br
+            /> MULTI_LEG_COUNT: A count from well completion reports showing how many 'laterals' or 'legs' a horizontal well has<br /> CBMETHANE_FLAG: Flag identifies wells that are classified as coalbed methane gas wells<br /> BOND_NUMBER: Plugging bond
+            number<br /> BOND_TYPE: Plugging bond type (1-Federal, 2-Indian, 3-State, 4-Fee)<br /> CA_NUMBER: Communitization Agreement number<br /> FIELD_TYPE_FLAG: Flag identifies the field type at the time the well is permitted (D-development, E-extension,
+            W-wildcat)<br /> ORIG_COMPL_DATE: Date from the Well Completion Report of when drilling and testing was completed<br /> ORIG_TD: Total Depth of drilling - Measured Depth - from WCR<br /> API: The API number (American Petroleum Institute standard
+            numbering system) assigned to the well by the State of Utah<br /> WELL_NAME: The name and number of a well as assigned by the operating company<br /> FIELD_NAME: The name of the oil or gas field in which the well is located<br /> ELEVATION:
+            The well elevation in feet above sea level (GR=Ground Reading, DF=Derrick Floor, KB=Kelly Busing)<br /> COORDS_SURF_N: Universal Transverse Mercator (UTM) surface coordinates - Northings (y coordinate); UTM Zone 12, NAD83<br /> COORDS_SURF_E:
+            Universal Transverse Mercator (UTM) surface coordinates - Eastings (x coordinate); UTM Zone 12, NAD83<br /> COORDS_BHL_N: Universal Transverse Mercator (UTM) bottom hole coordinates - Northings (y coordinate); UTM Zone 12, NAD83<br /> COORDS_BHL_E:
+            Universal Transverse Mercator (UTM) bottom hole coordinates - Eastings (x coordinate); UTM Zone 12, NAD83<br /> QTR_QTR: Well location - quarter/quarter section<br /> SECTION: Well location - section<br /> TOWNSHIP: Well location - township<br
+            /> RANGE: Well location - range<br /> MERIDIAN: Well location - meridian (Salt Lake or Uintah meridians)<br /> COUNTY: Well location - county<br /> ALT_ADDRESS: Alternate address flag; works mainly with ACCT_NUM field for mail routing purposes<br
+            /> LEASE_NUM: Current mineral lease number assigned to a well as reported by well operator<br /> INDIAN_TRIBE: Designates Native American Indian allottee or tribe if applicable ('Navajo' or 'Ute'<br /> UNIT_NAME: The name of the unit if applicable.
+            A unit is a joint operation of separately owned leases<br /> LAT_SURF: Well location latitude coordinates in degrees; UTM Zone 12, NAD83<br /> LONG_SURF: Well location latitude coordinates in degrees; UTM Zone 12, NAD83<br /> COMPANY_NAME:
+            The name of the well operating company</p>
+        <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+        Contact:<br />
+        <a href="mailto:donstaley@utah.gov">Don Staley (DNR-OGM)</a><br />
     </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/PackagedData/_Statewide/DOGMOilAndGasResources/DOGMOilAndGasResources_gdb.zip">Oil and Gas Wells: File Geodatabase</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/PackagedData/_Statewide/DOGMOilAndGasResources/DOGMOilAndGasResources_shp.zip">Oil and Gas Wells: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_ENERGY_DNROilGasWells.html">Oil and Gas Wells: Metadata</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasWells_HDPath/_Statewide/">Oil and Gas Well Drill Paths (Horizontally Drilled)</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasWells_HDBottom/_Statewide/">Oil and Gas Wells Locations (Horizontally Drilled)</a></li>
-<li><a href="http://oilgas.ogm.utah.gov/Data_Center/LiveData_Search/well_information.htm">More information on well data from DNR - DOGM</a></li>
-</ul>
+    <div class="grid__col grid__col--1-of-2">
+        <div class="panel">
+            <i class="fa fa-pull-right fa-download fa-2x"></i>
+            <h5 id="OilandGasWells-downloads">Downloads</h5>
+        </div>
+        <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
+            <ul>
+                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/PackagedData/_Statewide/DOGMOilAndGasResources/DOGMOilAndGasResources_gdb.zip">Oil and Gas Wells: File Geodatabase</a></li>
+                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/PackagedData/_Statewide/DOGMOilAndGasResources/DOGMOilAndGasResources_shp.zip">Oil and Gas Wells: Shapefile</a></li>
+            </ul>
+            <p>Other links for this dataset:</p>
+            <ul>
+                <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_ENERGY_DNROilGasWells.html">Oil and Gas Wells: Metadata</a></li>
+                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasWells_HDPath/_Statewide/">Oil and Gas Well Drill Paths (Horizontally Drilled)</a></li>
+                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasWells_HDBottom/_Statewide/">Oil and Gas Wells Locations (Horizontally Drilled)</a></li>
+                <li><a href="http://oilgas.ogm.utah.gov/Data_Center/LiveData_Search/well_information.htm">More information on well data from DNR - DOGM</a></li>
+            </ul>
 
         </div>
     </div>
@@ -136,33 +111,36 @@ Contact:<br />
             <i class="fa fa-pull-right fa-calendar fa-2x"></i>
             <h5 id="OilandGasWells-updates">Updates</h5>
         </div>
-        <div class="panel-content"> The oil/gas wells dataset (and, where applicable, the horizontal drilling paths and bottom of hole locations) is updated nightly in the the SGID ArcSDE 9.3 and 10.0 databases [<a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}" title="How to Connect to the SGID via ArcSDE">connection info</a>]. File based FTP downloads are updated weekly on Monday morning.</p>
+        <div class="panel-content"> The oil/gas wells dataset (and, where applicable, the horizontal drilling paths and bottom of hole locations) is updated nightly in the the SGID ArcSDE 9.3 and 10.0 databases [<a href="{{ " /data/how-to-connect-to-the-sgid-via-sde/
+                " | prepend: site.baseurl }}" title="How to Connect to the SGID via ArcSDE">connection info</a>]. File based FTP downloads are updated weekly on Monday morning.</p>
 
         </div>
     </div>
-    </div><div class="grid package">
+</div>
+<div class="grid package">
     <div class="grid__col grid__col--12-of-12">
         <h3 id="OilandGasFields">Oil and Gas Fields</h3>
     </div>
     <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/OilFieldsSM.png" | prepend: site.baseurl }}" alt="Oil Fields" />This dataset depicts oil and gas field polygons in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The dataset contains the field number, field name, status and more.
-Contact:<br />
-<a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a><br />
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="OilandGasFields-downloads">Downloads</h5>
+        <img class="productImage-Thumb" src="{{ " /images/OilFieldsSM.png " | prepend: site.baseurl }}" alt="Oil Fields" />This dataset depicts oil and gas field polygons in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division.
+        The dataset contains the field number, field name, status and more. Contact:
+        <br />
+        <a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a><br />
     </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasFields/_Statewide/DNROilGasFields_gdb.zip">Oil and Gas Fields: File Geodatabase</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasFields/_Statewide/DNROilGasFields_shp.zip">Oil and Gas Fields: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_ENERGY_DNROilGasFields.html">Oil and Gas Fields: Metadata</a></li>
-</ul>
+    <div class="grid__col grid__col--1-of-2">
+        <div class="panel">
+            <i class="fa fa-pull-right fa-download fa-2x"></i>
+            <h5 id="OilandGasFields-downloads">Downloads</h5>
+        </div>
+        <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
+            <ul>
+                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasFields/_Statewide/DNROilGasFields_gdb.zip">Oil and Gas Fields: File Geodatabase</a></li>
+                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasFields/_Statewide/DNROilGasFields_shp.zip">Oil and Gas Fields: Shapefile</a></li>
+            </ul>
+            <p>Other links for this dataset:</p>
+            <ul>
+                <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_ENERGY_DNROilGasFields.html">Oil and Gas Fields: Metadata</a></li>
+            </ul>
 
         </div>
     </div>
@@ -172,33 +150,35 @@ Contact:<br />
             <h5 id="OilandGasFields-updates">Updates</h5>
         </div>
         <div class="panel-content"> This dataset is updated as new information is provided by DNR-OGM.</p>
-<p>Last Update 5/15/13.<br />
+            <p>Last Update 5/15/13.<br />
 
         </div>
     </div>
-    </div><div class="grid package">
+</div>
+<div class="grid package">
     <div class="grid__col grid__col--12-of-12">
         <h3 id="OilandGasUnits">Oil and Gas Units</h3>
     </div>
     <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/OilUnitsSM.png" | prepend: site.baseurl }}" alt="Oil Units" />This dataset depicts oil and gas field units in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The dataset contains the unit name, operator,status, district and more.
-Contact:<br />
-<a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a><br />
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="OilandGasUnits-downloads">Downloads</h5>
+        <img class="productImage-Thumb" src="{{ " /images/OilUnitsSM.png " | prepend: site.baseurl }}" alt="Oil Units" />This dataset depicts oil and gas field units in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The
+        dataset contains the unit name, operator,status, district and more. Contact:
+        <br />
+        <a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a><br />
     </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasUnits/_Statewide/DNROilGasUnits_gdb.zip">Oil and Gas Units: File Geodatabase</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasUnits/_Statewide/DNROilGasUnits_shp.zip">Oil and Gas Units: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_ENERGY_DNROilGasUnits.html">Oil and Gas Units: Metadata</a></li>
-</ul>
+    <div class="grid__col grid__col--1-of-2">
+        <div class="panel">
+            <i class="fa fa-pull-right fa-download fa-2x"></i>
+            <h5 id="OilandGasUnits-downloads">Downloads</h5>
+        </div>
+        <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
+            <ul>
+                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasUnits/_Statewide/DNROilGasUnits_gdb.zip">Oil and Gas Units: File Geodatabase</a></li>
+                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENERGY/UnpackagedData/DNROilGasUnits/_Statewide/DNROilGasUnits_shp.zip">Oil and Gas Units: Shapefile</a></li>
+            </ul>
+            <p>Other links for this dataset:</p>
+            <ul>
+                <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_ENERGY_DNROilGasUnits.html">Oil and Gas Units: Metadata</a></li>
+            </ul>
 
         </div>
     </div>
@@ -208,8 +188,8 @@ Contact:<br />
             <h5 id="OilandGasUnits-updates">Updates</h5>
         </div>
         <div class="panel-content"> This dataset is updated as new information is provided by DNR-OGM.</p>
-<p>Last Update 10/16/2013.</p>
+            <p>Last Update 10/16/2013.</p>
 
         </div>
     </div>
-    </div>
+</div>
