@@ -33,3 +33,8 @@
         padding-left: $spacing-unit;
     }
 }
+h4 {
+    &.package--header {
+        font-weight: 900;
+    }
+}
