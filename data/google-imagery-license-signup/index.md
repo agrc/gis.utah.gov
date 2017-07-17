@@ -10,23 +10,18 @@ author:
   url: ''
 author_login: Bert Granberg
 author_email: bgranberg@utah.gov
-wordpress_id: 16840
-wordpress_url: http://gis.utah.gov/?p=16840
 date: '2015-03-05 15:59:52 -0700'
 date_gmt: '2015-03-05 22:59:52 -0700'
 categories:
 - Featured
 tags:
 - aerial photography
-- utah
-- agrc
-- statewide
 - imagery
 - google
 ---
 
-<div class="grid pop">
-  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a> page.</p>
+<div class="grid pop text-center">
+    The information on this page could be outdated. For the most recent information visit the <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a> page.
 </div>
 
 ### Background
