@@ -7,45 +7,16 @@ author:
   display_name: Rick Kelson
   login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 1311
-wordpress_url: http://gis.utah.gov/?page_id=1311
 date: '2011-08-23 22:19:55 -0600'
-date_gmt: '2011-08-23 22:19:55 -0600'
 categories: []
 tags:
 - SDE
 - sgid
 - Data
-- utah
-- gis
-- map
-- mapping
-- dataset
-- download
-- agrc
-- layer
-- shapefile
-- geodatabase
-- metadata
-- shp
-- gdb
-- kml
-- lyr
-- digital
-- geographic
-- information
-- database
-- state
-- statewide
 - elevation
 - terrain
 - DEM
 - vector
-- overview
-- category
 - services
 - daas
 - arcgis
@@ -53,58 +24,46 @@ tags:
 - NED
 - contours
 ---
-<div class="divider-padding"></div>
-<p><a title="Hillshade" href="{{ "/images/gallery/sgid/dem_lg.jpg" | prepend: site.baseurl }}">
-    <img class="inline-text-left" src="{{ "/images/gallery/sgid/thumbs/thumbs_dem.jpg" | prepend: site.baseurl }}" alt="dem"/></a></p>
- <h5>USGS NED</h5>
- <p>The National Elevation Dataset (NED) is the primary elevation data product of the USGS. The NED is continually updated by the USGS. The NED is a seamless dataset with the best available raster
-    elevation data of the conterminous United States, Alaska, Hawaii, and territorial islands. The NED is derived from diverse source data that are processed
-    to a common coordinate system and unit of vertical measure. The AGRC has a statewide collection of 10 and 30 meter DEMs.
-  </p>
- <p><span><i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/10-30-meter-elevation-models-usgs-ned/" | prepend: site.baseurl }}">10 &amp; 30 Meter Elevation Models (USGS NED)</a></span><br />
+<style>
+    .inline-text-left {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+</style>
+
+<a title="Hillshade" href="{{ "/images/gallery/sgid/dem_lg.jpg" | prepend: site.baseurl }}" class="inline-text-left">
+    <img src="{{ "/images/gallery/sgid/thumbs/thumbs_dem.jpg" | prepend: site.baseurl }}" alt="dem"/>
+</a>
+<h5>USGS NED</h5>
+<p>The National Elevation Dataset (NED) is the primary elevation data product of the USGS. The NED is continually updated by the USGS. The NED is a seamless dataset with the best available raster elevation data of the conterminous United States, Alaska, Hawaii, and territorial islands. The NED is derived from diverse source data that are processed to a common coordinate system and unit of vertical measure. The AGRC has a statewide collection of 10 and 30 meter DEMs.</p>
+<i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/10-30-meter-elevation-models-usgs-ned/" | prepend: site.baseurl }}">10 &amp; 30 Meter Elevation Models (USGS NED)</a>
 <div class="divider"></div>
-<div class="divider-padding"></div>
-<p><a title="Slope" href="{{ "/images/gallery/sgid/ned_lg.jpg" | prepend: site.baseurl }}">
-   <img class="inline-text-left" src="{{ "/images/gallery/sgid/thumbs/thumbs_ned.jpg" | prepend: site.baseurl }}" alt="ned"/></a>
-</p>
+<a title="Slope" href="{{ "/images/gallery/sgid/ned_lg.jpg" | prepend: site.baseurl }}">
+   <img class="inline-text-left" src="{{ "/images/gallery/sgid/thumbs/thumbs_ned.jpg" | prepend: site.baseurl }}" alt="ned"/>
+</a>
 <h5>USGS DEMs</h5>
-<p>A digital elevation model (DEM) is a digital file consisting of terrain elevations for ground positions at regularly spaced horizontal intervals.
-    This is a legacy dataset and does not get updated like the NED does.
-    The USGS produces five different digital elevation products. Although all are identical in the manner the data are structured, each varies in sampling
-    interval, geographic reference system, areas of coverage, and accuracy; with the primary differing characteristic being the spacing, or sampling interval,
-    of the data. The AGRC has a statewide collection of 10, 30, and 90 meter DEMs.
-</p>
-<span><i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/10-30-90-meter-elevation-models-usgs-dems/" | prepend: site.baseurl }}">10, 30, &amp; 90 Meter Elevation Models (USGS DEMs)</a></span><br />
+<p>A digital elevation model (DEM) is a digital file consisting of terrain elevations for ground positions at regularly spaced horizontal intervals. This is a legacy dataset and does not get updated like the NED does. The USGS produces five different digital elevation products. Although all are identical in the manner the data are structured, each varies in sampling interval, geographic reference system, areas of coverage, and accuracy; with the primary differing characteristic being the spacing, or sampling interval, of the data. The AGRC has a statewide collection of 10, 30, and 90 meter DEMs.</p>
+<i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/10-30-90-meter-elevation-models-usgs-dems/" | prepend: site.baseurl }}">10, 30, &amp; 90 Meter Elevation Models (USGS DEMs)</a>
 <div class="divider"></div>
-<div class="divider-padding"></div>
+
 <a title="First Return" href="{{ "/images/gallery/sgid/lidar_lg.jpg" | prepend: site.baseurl }}">
    <img class="inline-text-left" src="{{ "/images/gallery/sgid/thumbs/thumbs_lidar.jpg" | prepend: site.baseurl }}" alt="lidar"/></a>
 <h5>LiDAR</h3>
-<p>Light Detection and Ranging elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by
-   illuminating the target with light often using pulses from a laser. Currently this is the most accurate elevation dataset AGRC has but it is only
-   available for a few areas of the state. In addition to the bare-earth DTMs and first-return DSMs, most LiDAR data also has point clouds of elevation information.
-</p>
+<p>Light Detection and Ranging elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by illuminating the target with light often using pulses from a laser. Currently this is the most accurate elevation dataset AGRC has but it is only available for a few areas of the state. In addition to the bare-earth DTMs and first-return DSMs, most LiDAR data also has point clouds of elevation information.</p>
 <p>For more information about LiDAR visit <a href="{{ "/data/elevation-terrain-data/exploring-lidar/" | prepend: site.baseurl }}" target="_blank">Exploring LiDAR</a>
 </p>
-<p><span><i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2016-lidar-monroe-mtn/" | prepend: site.baseurl }}">.5 Meter LiDAR (2016 Monroe Mountain)</a></span><br />
-<span><i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2013-2014-lidar/" | prepend: site.baseurl }}">.5 Meter LiDAR (2013-2014)</a></span><br />
-<span><i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2011-lidar/" | prepend: site.baseurl }}">1 Meter LiDAR (2011)</a></span><br />
-<span><i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2-meter-lidar/" | prepend: site.baseurl }}">2 Meter LiDAR (2006)</a></span><br />
-<span><i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2-meter-contours-salt-lake-county-only/" | prepend: site.baseurl }}">2 Meter Contours from LiDAR (Salt Lake County Only)</a></span></p>
+<i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2016-lidar-monroe-mtn/" | prepend: site.baseurl }}">.5 Meter LiDAR (2016 Monroe Mountain)</a><br />
+<i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2013-2014-lidar/" | prepend: site.baseurl }}">.5 Meter LiDAR (2013-2014)</a><br />
+<i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2011-lidar/" | prepend: site.baseurl }}">1 Meter LiDAR (2011)</a><br />
+<i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2-meter-lidar/" | prepend: site.baseurl }}">2 Meter LiDAR (2006)</a><br />
+<i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2-meter-contours-salt-lake-county-only/" | prepend: site.baseurl }}">2 Meter Contours from LiDAR (Salt Lake County Only)</a><br />
 <div class="divider"></div>
-<div class="divider-padding"></div>
 <a title="Hillshade" href="{{ "/images/gallery/sgid/auto-corr_dem_lg.jpg" | prepend: site.baseurl }}">
    <img class="inline-text-left" src="{{ "/images/gallery/sgid/thumbs/thumbs_auto-corr_dem.jpg" | prepend: site.baseurl }}" alt="auto-corr_dem"/></a>
 <h5>Auto-Correlated DEM</h3>
-<p>AGRC has a statewide coverage of 5 Meter Auto-Correlated DEMs in addition to some 2 meter areas. The DEMs were created from the imagery collected
-   during the 2006 NAIP and HRO aerial photography flights. <strong>The auto-correlation process is not as rigorous as other methods of elevation modeling
-   such as photogrammetry, lidar mapping, radar mapping, etc, and therefore end-users should be aware that anomalies are expected within the elevation dataset.</strong>
-   In comparison to the USGS NED dataset, the 2 and 5-meter DEM provides higher resolution and horizontal accuracy but anomalies are present within the data.
-</p>
-<p><span><i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2-meter-auto-correlated-elevation-models/" | prepend: site.baseurl }}">2 Meter Auto-Correlated Elevation Models</strong></a></span><br />
-<span><i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/5-meter-auto-correlated-elevation-models/" | prepend: site.baseurl }}">5 Meter Auto-Correlated Elevation Models</a></span></p>
+<p>AGRC has a statewide coverage of 5 Meter Auto-Correlated DEMs in addition to some 2 meter areas. The DEMs were created from the imagery collected during the 2006 NAIP and HRO aerial photography flights. <strong>The auto-correlation process is not as rigorous as other methods of elevation modeling such as photogrammetry, lidar mapping, radar mapping, etc, and therefore end-users should be aware that anomalies are expected within the elevation dataset.</strong> In comparison to the USGS NED dataset, the 2 and 5-meter DEM provides higher resolution and horizontal accuracy but anomalies are present within the data.</p>
+<i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/2-meter-auto-correlated-elevation-models/" | prepend: site.baseurl }}">2 Meter Auto-Correlated Elevation Models</strong></a><br />
+<i class="fa fa-download"></i> <a href="{{ "/data/elevation-terrain-data/5-meter-auto-correlated-elevation-models/" | prepend: site.baseurl }}">5 Meter Auto-Correlated Elevation Models</a>
 <div class="divider"></div>
-<div class="divider-padding"></div>
 <strong>* All aerial photography from AGRC has a UTM NAD83 zone 12 north meters projection</strong><br />
-<td>If you have any trouble contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a> at (801-538-3237)
-</td>
+<p>If you have any trouble contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a> at (801-538-3237)</p>
