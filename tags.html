@@ -1,0 +1,24 @@
+---
+layout: page
+status: publish
+published: true
+title: gis.utah.gov stats
+permalink: /tags
+---
+<h1>Categories</h1>
+<div class="grid">
+{% for cat in site.categories %}
+    <div class="grid__col grid__col--1-of-4">
+      {{ cat | first }}
+    </div>
+{% endfor %}
+</div>
+<h2>Tags</h2>
+<div class="grid">
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
+    <div class="grid__col grid__col--1-of-4">
+      {{ tag | first }}
+    </div>
+{% endfor %}
+</div>
