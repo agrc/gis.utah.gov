@@ -1,25 +1,17 @@
 ---
-layout: page
 status: publish
-published: true
-title: Discover Server Information
-author:
-display_name: Rick Kelson
-login: rkelson
-email: rkelson@utah.gov
-url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 16519
-wordpress_url: http://gis.utah.gov/?page_id=16519
-date: '2015-02-09 08:00:09 -0700'
-date_gmt: '2015-02-09 15:00:09 -0700'
-categories: []
+layout: page
 tags:
-- agrc
-- imagery
-- google
-- hi res
+  - google
+  - hi res
+  - imagery
+author:
+  display_name: Rick Kelson
+  email: rkelson@utah.gov
+published: true
+date: 2015-02-09 08:00:09 -0700
+title: Discover Server Information
+categories: []
 ---
 
 ### Discover Server
@@ -75,7 +67,7 @@ The dates of each Google imagery flight block can be downloaded from <a href="ft
 
 If you have not yet received quad-word links to the service (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) that do not require a username and password contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a>.
 
-ArcMap users experiencing problems with the service, such as blurry tiles at different scales, may need to clear their local cache by going to the service’s `Layer Properties -> Cache` tab and selecting `Clear Local Cache Now`. Be patient as this could take several minutes. If the blurry tiles persist you have the options to `Clear cache when the session ends` or `Don't cache and data locally`. Another option is to completely clear your ArcMap cache by going to `Customize -> ArcMap Options -> Display Cache -> Clear Cache`. 
+ArcMap users experiencing problems with the service, such as blurry tiles at different scales, may need to clear their local cache by going to the service’s `Layer Properties -> Cache` tab and selecting `Clear Local Cache Now`. Be patient as this could take several minutes. If the blurry tiles persist you have the options to `Clear cache when the session ends` or `Don't cache and data locally`. Another option is to completely clear your ArcMap cache by going to `Customize -> ArcMap Options -> Display Cache -> Clear Cache`.
 
 **ArcMap 10.1 users** should use the WMS service and not the WMTS. The WMTS in ArcMap 10.1 does not render correctly.
 

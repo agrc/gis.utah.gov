@@ -1,14 +1,14 @@
 ---
-layout: page
 status: publish
-published: true
-title: '1970s 1 Meter BLM Orthophotgraphy'
+layout: page
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2016-06-13 22:25:07
-categories: []
 tags: []
+published: true
+date: 2016-06-13 22:25:07
+title: 1970s 1 Meter BLM Orthophotgraphy
+categories: []
 ---
 
 AGRC has 1-meter color and infrared imagery from the BLM collected in the 1970s. This is not a statewide coverage. The image tiles have a UTM NAD83 projection.

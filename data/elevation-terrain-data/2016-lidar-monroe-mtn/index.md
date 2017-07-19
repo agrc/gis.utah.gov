@@ -1,18 +1,16 @@
 ---
-layout: page
 status: publish
-published: true
-title: 'Monroe Mountain LiDAR Elevation Data (2016)'
+layout: page
+tags:
+  - dem
+  - lidar
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
+published: true
 date: 2017-05-22 23:29:51
-categories:
-
-tags:
-- lidar
-- dem
-
+title: Monroe Mountain LiDAR Elevation Data (2016)
+categories: []
 ---
 
 <style type="text/css">

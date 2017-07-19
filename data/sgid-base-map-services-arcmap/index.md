@@ -1,16 +1,14 @@
 ---
-layout: page
 status: publish
-published: true
-title: Using SGID Base Map & Imagery Services in ArcGIS Pro & ArcMap
+layout: page
+tags: []
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-date: '2011-11-03 18:11:05 -0600'
+published: true
+date: 2011-11-03 18:11:05 -0600
+title: Using SGID Base Map & Imagery Services in ArcGIS Pro & ArcMap
 categories: []
-tags: []
 ---
 ArcGIS Pro 2.x:
 
