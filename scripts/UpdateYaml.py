@@ -73,7 +73,7 @@ def prune_tags(front_matter):
     if isinstance(tags, basestring):
         tags = [tags]
 
-    ok_tags = set([x.lower() for x in tags if x not in useless_tags])
+    ok_tags = set([str(x).lower() for x in tags if x not in useless_tags])
     ok_tags = list(ok_tags)
     ok_tags.sort()
 
