@@ -1,16 +1,15 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Forced GitHub; A reflection on a new website using GitHub and Jekyll'
+layout: post
 author:
   display_name: Steve Gourley
   email: SGourley@utah.gov
+tags: []
+published: true
 date: 2017-01-17 19:19:39
+title: Forced GitHub; A reflection on a new website using GitHub and Jekyll
 categories:
-- Developer
-tags:
-
+  - Developer
 ---
 
 The first commit to our [version 6]({{site.baseurl}}{% post_url 2016-03-25-about-our-new-v6-website-in-ghpages %}) website was one year and eight months ago on May 26, 2015. We went live with the v6.0 on March 25, **2016**. Between that first commit and launch, we started an internal campaign to familiarize a technical staff of ~15 to contribute to a [jekyll](https://jekyllrb.com/) [static website](https://en.wikipedia.org/wiki/Static_web_page) hosted by [GitHub Pages](https://pages.github.com/). The following are some reflections on what to expect if you are thinking of forcing the adoption of GitHub upon a staff mixed with developers and analysts.

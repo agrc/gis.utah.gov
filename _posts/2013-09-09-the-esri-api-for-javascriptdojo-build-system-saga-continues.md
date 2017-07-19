@@ -1,24 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: The ESRI API for JavaScript/Dojo Build System Saga Continues...
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 13724
-wordpress_url: http://gis.utah.gov/?p=13724
-date: '2013-09-09 07:58:42 -0600'
-date_gmt: '2013-09-09 13:58:42 -0600'
-categories:
-- Developer
 tags:
-- javascript
-- esri
+  - javascript
+published: true
+date: 2013-09-09 07:58:42 -0600
+title: The ESRI API for JavaScript/Dojo Build System Saga Continues...
+categories:
+  - Developer
 ---
 <blockquote class="twitter-tweet">
 That's right, my entire app JS is in this one file *including <a href="https://twitter.com/Esri">@ESRI</a> modules* <a href="http://t.co/06S4KCtkuR">http://t.co/06S4KCtkuR</a> cc <a href="https://twitter.com/DavidSpriggs">@DavidSpriggs</a> <a href="https://twitter.com/derekswingley">@derekswingley</a><br />

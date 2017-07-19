@@ -1,24 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: grunt-esri-slurp
+layout: post
 author:
   display_name: Scott Davis and Steve Gourley
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 15576
-wordpress_url: http://gis.utah.gov/?p=15576
-date: '2014-09-22 11:09:51 -0600'
-date_gmt: '2014-09-22 17:09:51 -0600'
-categories:
-- Developer
 tags:
-- javascript
-- dojo
+  - dojo
+  - javascript
+published: true
+date: 2014-09-22 11:09:51 -0600
+title: grunt-esri-slurp
+categories:
+  - Developer
 ---
 [**Update**(3/17/16): ESRI has released [a bower package for the JS API](https://github.com/Esri/arcgis-js-api) that removes the need for this project.]
 <p>Running the <a href="http://dojotoolkit.org/reference-guide/build/">Dojo Build System</a> with <a href="http://js.arcgis.com">ESRI's JavaScript API for ArcGIS Server</a> has been a problem that we have been trying to tackle for a very, <a href="{{site.baseurl}}{% post_url 2013-04-16-esri-jsapi-3-4-and-the-dojo-build-system %}">very</a>, <a href="{{site.baseurl}}{% post_url 2013-09-09-the-esri-api-for-javascriptdojo-build-system-saga-continues %}">very</a> long time. This post is about one of the key components to our current strategy that allows us to utilize a continuous integration server and obtain that mythical single JavaScript file build. </p>

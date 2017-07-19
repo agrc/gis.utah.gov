@@ -1,19 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Printing Web Maps with Discover Services'
+layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2017-02-02 21:04:30
-categories:
-- Developer
 tags:
-- arcgis server
-- printing
-- wmts
-
+  - arcgis server
+  - printing
+  - wmts
+published: true
+date: 2017-02-02 21:04:30
+title: Printing Web Maps with Discover Services
+categories:
+  - Developer
 ---
 ### Export Web Map Tool
 The [Export Web Map](http://desktop.arcgis.com/en/arcmap/latest/tools/server-toolbox/export-web-map.htm) tool is a geoprocessing tool that comes published as a [service](http://resources.arcgis.com/en/help/rest/apiref/gp_exportwebmaptask.html) (`Utilities/PrintingTools`) out of the box with ArcGIS Server. From ESRI's docs:

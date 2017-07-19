@@ -1,22 +1,15 @@
 ---
-layout: post
 status: publish
-published: true
-title: Boost Your Productivity With Vim
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 17855
-wordpress_url: http://gis.utah.gov/?p=17855
-date: '2015-08-24 08:55:37 -0600'
-date_gmt: '2015-08-24 14:55:37 -0600'
-categories:
-- Developer
 tags: []
+published: true
+date: 2015-08-24 08:55:37 -0600
+title: Boost Your Productivity With Vim
+categories:
+  - Developer
 ---
 <p>I was surprised to realize today that I have never written about one of my favorite tools that I use to write code. It&#39;s something that absolutely transformed my day-to-day coding. If it was suddenly taken away from me I would feel like I had gone back to the dark ages. That&#39;s right, I&#39;m talk about Vim. Or more specifically Vim key bindings. <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim (Vi IMproved)</a> is an old text editor that was first released in the 90&#39;s and is an improvement to an even older editor called Vi. The intriguing part of Vim for me was not the 20 year old piece of software but the system that it used to edit and navigate text. It&#39;s very efficient, requiring the coder to reach for his or her mouse almost never.</p>
 <p>Lest you think that I&#39;ve abandoned <a href="https://atom.io/">my favorite text editor</a>, the real power of Vim for me is not the actual software. In fact, I&#39;ve only opened it up a few times out of curiosity. The power of Vim is the standard that it&#39;s set. There are Vim emulator plugins for every major text editor out there including <a href="https://github.com/guillermooo/Vintageous">Sublime</a>, <a href="https://github.com/atom/vim-mode">Atom</a> and even <a href="https://jsbin.com/blog/my-zen-mode#vimmode">JSBin</a>. This means that if you invest the time into learning Vim commands they will be almost universally applicable across your development tools.</p>

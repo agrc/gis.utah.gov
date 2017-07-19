@@ -1,32 +1,24 @@
 ---
-layout: post
 status: publish
-published: true
-title: New Lidar and Orthophotography for Utah and Colorado’s Most Scenic Rivers
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 18012
-wordpress_url: http://gis.utah.gov/?p=18012
-date: '2015-10-28 11:42:28 -0600'
-date_gmt: '2015-10-28 17:42:28 -0600'
-categories:
-- Data
-- Featured
 tags:
-- Data
-- dnr
-- nps
-- rivers
-- LiDAR
-- orthophotopraphy
-- FFSL
-- southern utah
-- sovereign lands
+  - data
+  - dnr
+  - ffsl
+  - lidar
+  - nps
+  - rivers
+  - southern utah
+  - sovereign lands
+published: true
+date: 2015-10-28 11:42:28 -0600
+title: "New Lidar and Orthophotography for Utah and Colorado\u2019s Most Scenic Rivers"
+categories:
+  - Data
+  - Featured
 ---
 <p><a href="{{ "/downloads/Riverlidar.png" | prepend: site.baseurl }}"><img src="{{ "/images/Riverlidar-300x215.png" | prepend: site.baseurl }}" alt="" title="Riverlidar" width="300" height="215" class="inline-text-left" /></a>If you happen to be enjoying the Colorado, Green or Yampa Rivers late this fall and see a small plane flying back and forth, be sure to wave. You might be captured in Utah’s latest lidar acquisition.</p>
 <p>Through a partnership with the National Park Service, the DNR’s Division of Forestry, Fire, and State Lands has contracted with Aerial Surveys International (ASI) to collect, process and deliver lidar and orthophotography data products of the main channel and floodplains of these unique and scenic rivers. The project area comprises 680 linear river miles, covering 152 sq. miles of the Colorado, Green, and Yampa River corridors in southeast and eastern Utah and northwest Colorado. These river corridors flow through portions of Arches and Canyonlands National Parks, Dinosaur National Monument, and Glen Canyon National Recreation Area.  Two additional areas are also being acquired; 1) a small area in Arches NP and 2) the San Rafael River area upstream of the confluence with the Green River.</p>

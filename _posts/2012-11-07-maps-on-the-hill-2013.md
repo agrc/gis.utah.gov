@@ -1,22 +1,15 @@
 ---
-layout: post
 status: publish
-published: false
-title: Maps on the Hill 2013
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 11989
-wordpress_url: http://gis.utah.gov/?p=11989
-date: '2012-11-07 10:58:17 -0700'
-date_gmt: '2012-11-07 17:58:17 -0700'
-categories:
-- Featured
 tags: []
+published: false
+date: 2012-11-07 10:58:17 -0700
+title: Maps on the Hill 2013
+categories:
+  - Featured
 ---
 <p><a href="{{ "/maps-on-the-hill-2013/dsc_0684/" | prepend: site.baseurl }}" rel="attachment wp-att-11998"><img class="inline-text-left" title="DSC_0684" src="{{ "/images/DSC_0684-800x531.jpg" | prepend: site.baseurl }}" alt="" width="480" height="319" /></a>The 2013 Maps on the Hill event will be held on<strong> January 28, 2013</strong> from 11:00am - 1:30pm at the State Capitol Building.</p>
 <p>Maps are used in government, business, and education for a wide variety of applications. The Maps on the Hill event gives mapping professionals and students an opportunity to share their latest work with Utah's elected officials and the public.</p>

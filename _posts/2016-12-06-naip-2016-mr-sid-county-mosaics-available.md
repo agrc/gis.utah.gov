@@ -1,18 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'NAIP 2016 Mr. Sid County Mosaics Available'
+layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2016-12-06 16:03:22
-categories:
-- Featured
 tags:
-- NAIP
-- 1 meter
-- aerial photography
+  - aerial photography
+  - naip
+published: true
+date: 2016-12-06 16:03:22
+title: NAIP 2016 Mr. Sid County Mosaics Available
+categories:
+  - Featured
 ---
 [![NAIP 2016 Sample]({{"/images/NAIP2016_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/NAIP2016.png" | prepend:site.baseurl}}){:.inline-text-right}
 The statewide 2016 National Agricultural Imagery Program (NAIP) 1 meter aerial photography

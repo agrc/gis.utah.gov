@@ -1,28 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: A day in the life of Utah's ArcGIS Server Base Maps
+layout: post
 author:
   display_name: Steve Gourley
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 14347
-wordpress_url: http://gis.utah.gov/?p=14347
-date: '2014-01-14 14:58:59 -0700'
-date_gmt: '2014-01-14 21:58:59 -0700'
-categories:
-- Uncategorized
-- Featured
 tags:
-- utah
-- agrc
-- services
-- base maps
-- use
+  - base maps
+published: true
+date: 2014-01-14 14:58:59 -0700
+title: A day in the life of Utah's ArcGIS Server Base Maps
+categories:
+  - Featured
+  - Uncategorized
 ---
 <p>"Base map web services" provides access to pre-rendered multi-scale maps that show more detailed map features at finer scales and less detail at larger scales.</p>
 <p>When (ArcMap) web applications use the AGRC base map services, the applications make behind the scenes requests to the web service for a specific set of 256 x 256 pixel map tile images. These 256 x 256 pixel map tiles are assembled to display a specific geographic area at a desired scale. Depending on the display size of the end users device, a typical "single view" of a base map can consist of between 4 and 20 tiles. It's also important that requested base map tiles are typically cached locally in both browser and desktop applications so if areas are looked at again, new tile requests do not need to be made in most cases. </p>

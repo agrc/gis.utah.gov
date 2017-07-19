@@ -1,28 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: " Using Utah GIS Elevation Data to Visualize Terrain"
+layout: post
 author:
   display_name: Zach Beck
-  login: Zach Beck
   email: zbeck@utah.gov
-  url: ''
-author_login: Zach Beck
-author_email: zbeck@utah.gov
-wordpress_id: 10530
-wordpress_url: http://gis.utah.gov/?p=10530
-date: '2012-08-01 15:10:36 -0600'
-date_gmt: '2012-08-01 21:10:36 -0600'
+tags: []
+published: true
+date: 2012-08-01 15:10:36 -0600
+title: ' Using Utah GIS Elevation Data to Visualize Terrain'
 categories:
-- Data
-- Featured
-- SGID Blog
-tags:
-- utah
-- agrc
-- layer
-- fb sgid elevation terrain gis data
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <p><a href="{{ "/?attachment_id=10526" | prepend: site.baseurl }}" rel="attachment wp-att-10526"><img style="padding-right: 20px;" title="Using ArcMap color ramp symbology to provide an initutive elevation coloring" src="{{ "/images/symbology_sml.png" | prepend: site.baseurl }}" alt="" width="400" height="356" align="right" /></a></p>
 <p>To highlight elevation in the <a href="http://mapserv.utah.gov/cacheviewer/?map=Terrain">Utah Terrain Base Map</a>, a custom color ramp symbol was created to enhance the basic gray-scale hillshading. By editing the color ramp properties of the DEM, a user can define colors stretched between the maximum and minimum elevation values to represent biomes across the state. In the case of the Utah Terrain Base Map, 11 algorithmic 1-2 value color ramps were stretched between a minimum value of 500 meters and a maximum of 3375 meters. Overlaying this symbology upon a hillshade will represent lower elevations in shades of tan, increasing to green in more mountainous regions, and ending with white representing a snow line at about 9,500 feet. The resulting <a href="ftp://ftp.agrc.utah.gov/DEM/10meter_dem/SGID10.RASTER.DEM_10METER_Terrain.lyr">downloadable composite layer (.lyr) file</a>, references an ArcSDE-based 10 meter DEM and an ImageServer-based hillshade layer. It can be used by ArcMap v10.x users with a high speed internet connection.</p>

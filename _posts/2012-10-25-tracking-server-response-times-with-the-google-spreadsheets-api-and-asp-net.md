@@ -1,23 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: Tracking Server Response Times with the Google Spreadsheets API and asp.net
+layout: post
 author:
   display_name: Steve Gourley
-  login: Steve Gourley
   email: sgourley@utah.gov
-  url: ''
-author_login: Steve Gourley
-author_email: sgourley@utah.gov
-wordpress_id: 11957
-wordpress_url: http://gis.utah.gov/?p=11957
-date: '2012-10-25 12:39:06 -0600'
-date_gmt: '2012-10-25 18:39:06 -0600'
-categories:
-- Developer
 tags:
-- code
+  - code
+published: true
+date: 2012-10-25 12:39:06 -0600
+title: Tracking Server Response Times with the Google Spreadsheets API and asp.net
+categories:
+  - Developer
 ---
 <p>We've been noticing some speed issues with our mapserv machines recently and are trying to figure out the issue. In an effort to have a little insight into the when, where, and why's, we created a very rudimentary tracking tool that has quite a bit of potential and was fun to make. This will hopefully give us and our hosting and networking groups a better idea of what could be the root cause.</p>
 <p>The abridged version of what we did was to create a console application scheduled to run every 30 minutes to request a page and report the response times to a google spreadsheet. We then created a chart in the spreadsheet that can be published on our wiki and visually consulted.</p>

@@ -1,33 +1,22 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Give it a Try: One Page GIS Data Maturity Assessment'
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 14627
-wordpress_url: http://gis.utah.gov/?p=14627
-date: '2014-03-26 15:53:05 -0600'
-date_gmt: '2014-03-26 21:53:05 -0600'
-categories:
-- Home
-- Data
-- Featured
-- SGID Blog
 tags:
-- sgid
-- gis
-- agrc
-- dnr
-- deq
-- maturity
-- assessment
-- uintah basin
+  - assessment
+  - deq
+  - dnr
+  - uintah basin
+published: true
+date: 2014-03-26 15:53:05 -0600
+title: 'Give it a Try: One Page GIS Data Maturity Assessment'
+categories:
+  - Data
+  - Featured
+  - Home
+  - SGID Blog
 ---
 <p>Locational analysis, using GIS, is extremely powerful for discovering opportunity and other business analytics. GIS provides a platform to bring information together and facilitate organizations working together toward shared objectives. The foundation for success with GIS is unquestionably geographic data. Geographic data digitally models real world phenomena from across the natural, infrastructure, or societal realms -- and of course any combination of these. </p>
 <p><a href="{{ "/downloads/Screen-Shot-2014-03-26-at-8.48.04-AM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2014-03-26-at-8.48.04-AM-300x225.png" | prepend: site.baseurl }}" alt="" title="Screen Shot 2014-03-26 at 8.48.04 AM" width="300" height="225" class="inline-text-left" /></a>The effectiveness of GIS work hinges on the quality, completeness, currency, and accessibility of geographic data. Due to the demand for GIS technology, practitioners are pulled in many directions (analysis, app design/development, and of course map products) and often do not have time to set goals for data development and maintenance. Similarly, where goals have been defined, measuring, planning, and securing resources to meet the goals are often overlooked or the process and resulting product are often overly complex or bureaucratic.</p>

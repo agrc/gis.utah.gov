@@ -1,35 +1,23 @@
 ---
-layout: post
 status: publish
-published: true
-title: Statewide Lidar Plan for Utah
+layout: post
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 17771
-wordpress_url: http://gis.utah.gov/?p=17771
-date: '2015-08-19 14:29:46 -0600'
-date_gmt: '2015-08-19 20:29:46 -0600'
-categories:
-- Data
-- Featured
 tags:
-- sgid
-- utah
-- digital
-- statewide
-- surface
-- elevation
-- terrain
-- DEM
-- LiDAR
-- contours
-- LAS
-- plan
+  - contours
+  - dem
+  - elevation
+  - las
+  - lidar
+  - surface
+  - terrain
+published: true
+date: 2015-08-19 14:29:46 -0600
+title: Statewide Lidar Plan for Utah
+categories:
+  - Data
+  - Featured
 ---
 
 <p>

@@ -1,18 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Data Schema Released for Expanded GIS Parcel Sharing'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: 2016-07-07 20:05:49
-categories:
-- Featured
 tags:
-- Parcels
-- Planning
-- GOMB
+  - gomb
+  - parcels
+  - planning
+published: true
+date: 2016-07-07 20:05:49
+title: Data Schema Released for Expanded GIS Parcel Sharing
+categories:
+  - Featured
 ---
 
 In May, the Land Information Records work group, a committee of county, regional, and state agencies, released its [recommendations for sharing an enhanced set of tax parcel GIS data](https://docs.google.com/document/d/19urzWWDE62dX0g2hkcjWid1ctO5n_GR_pNe54o_Y4HY/edit?usp=sharing), summarized in a [this blog post]({{site.baseurl}}{% post_url 2016-05-26-work-group-recommends-expanded-gis-parcel-sharing %}).

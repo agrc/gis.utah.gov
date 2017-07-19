@@ -1,28 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: New Address Point Cached Map Service
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 13693
-wordpress_url: http://gis.utah.gov/?p=13693
-date: '2013-08-30 13:31:42 -0600'
-date_gmt: '2013-08-30 19:31:42 -0600'
-categories:
-- Developer
 tags:
-- sgid
-- Data
-- utah
-- address points
-- map service
-- gis server
+  - address points
+  - data
+  - gis server
+  - map service
+published: true
+date: 2013-08-30 13:31:42 -0600
+title: New Address Point Cached Map Service
+categories:
+  - Developer
 ---
 <p><a href="{{ "/?attachment_id=13706" | prepend: site.baseurl }}"><img alt="" src="{{ "/images/Addresspntmapservice-150x150.png" | prepend: site.baseurl }}" class='inline-text-right' /></a>AGRC recently released an address point map service. The service contains a cached version of &nbsp;<a href="{{site.baseurl}}{% post_url 2013-06-28-utah-gis-framework-data-for-800-please-alex %}">Utah&rsquo;s Statewide Address Points dataset</a>. </p>
 <p><strong>Directions to connecting to the address point map service: </strong><br />

@@ -1,20 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Mapping Utah’s Wireless Emergency Call Routing System'
+layout: post
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2016-06-30 15:04:18
-categories:
-- Featured
 tags:
-- GIS
-- AGRC
-- PSAP
-- 911
-- Utah Communications Authority
+  - '911'
+  - psap
+  - utah communications authority
+published: true
+date: 2016-06-30 15:04:18
+title: "Mapping Utah\u2019s Wireless Emergency Call Routing System"
+categories:
+  - Featured
 ---
 
 AGRC recently assisted the Utah Communications Authority (UCA) on a project to map and analyze wireless 911 call delivery across Utah. The goal of the project was to provide local 911 communication centers (known formally as Public Safety Answering Points or PSAPs) with maps that will assist them in reviewing and, where applicable, suggesting changes to the wireless providers, that should improve the overall performance of the 911 system.

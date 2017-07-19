@@ -1,20 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Now You Know: About the gis.utah.gov v6.0 Refresh'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: '2016-03-25 13:31:17 -0700'
-date_gmt: '2016-03-25 20:31:17 -0700'
-categories:
-- Featured
 tags:
-- sgid
-- agrc
-- github
-- developer
+  - developer
+  - github
+published: true
+date: 2016-03-25 13:31:17 -0700
+title: 'Now You Know: About the gis.utah.gov v6.0 Refresh'
+categories:
+  - Featured
 ---
 Four years is a long time for anything, and that certainly applies to website releases. For a number of reasons, gis.utah.gov, has been overdue for a refresh.
 

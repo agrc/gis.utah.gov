@@ -1,28 +1,20 @@
 ---
-layout: post
 status: publish
-published: true
-title: Using AGRC's new Web Mercator Services in Your Web Maps
+layout: post
 author:
   display_name: Scott Davis and Steve Gourley
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 18260
-wordpress_url: http://gis.utah.gov/?p=18260
-date: '2015-12-21 08:58:29 -0700'
-date_gmt: '2015-12-21 15:58:29 -0700'
-categories:
-- Developer
-- Featured
 tags:
-- basemaps
-- google imagery
-- hybrid
-- aerial imagery
-- web mercator
+  - aerial imagery
+  - google imagery
+  - hybrid
+  - web mercator
+published: true
+date: 2015-12-21 08:58:29 -0700
+title: Using AGRC's new Web Mercator Services in Your Web Maps
+categories:
+  - Developer
+  - Featured
 ---
 <p>Recently, AGRC, in conjunction with DNR, hosted an <a href="https://www.youtube.com/watch?v=Wch2M2rBJhU">open house</a> discussing AGRC’s basemap and imagery strategies. During this open house, AGRC discussed details of new web mercator (WGS84) basemaps as the default presentation layer moving forward. Most of the UTM basemaps have been converted to web mercator and are hosted and served through discover.agrc.utah.gov. <strong>The plan is to sunset the UTM basemaps at the end of 2016.</strong></p>
 <p>While upgrading the UTM basemaps to web mercator, AGRC decided to modify the map services offered. Based on usage analytics and user feedback, the hillshade and vector basemap were removed. The Hybrid service was replaced by combining the Google imagery service and a new overlay service (a long-requested feature allowing users to “sandwich” their data within the basemap). The Lite, Terrain and Topo basemaps were converted with no changes. Finally, there is a new Color Infrared service derived from the 2011 NAIP.</p>

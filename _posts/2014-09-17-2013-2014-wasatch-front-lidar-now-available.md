@@ -1,52 +1,36 @@
 ---
-layout: post
 status: publish
-published: false
-title: 2013-2014 Wasatch Front LiDAR Now Available
+layout: post
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 15506
-wordpress_url: http://gis.utah.gov/?p=15506
-date: '2014-09-17 09:28:37 -0600'
-date_gmt: '2014-09-17 15:28:37 -0600'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags:
-- sgid
-- gis
-- map
-- mapping
-- points
-- dataset
-- download
-- information
-- elevation
-- terrain
-- DEM
-- raster
-- topography
-- topographic
-- topo
-- usgs
-- LiDAR
-- contours
-- 5 meter
-- LAS
-- point cloud
-- img
-- classified
-- ugs
-- dtm
-- dsm
-- dowload
-- 8ppm
+  - 5 meter
+  - 8ppm
+  - classified
+  - contours
+  - dem
+  - dowload
+  - dsm
+  - dtm
+  - elevation
+  - las
+  - lidar
+  - point cloud
+  - raster
+  - terrain
+  - topo
+  - topographic
+  - topography
+  - ugs
+  - usgs
+published: false
+date: 2014-09-17 09:28:37 -0600
+title: 2013-2014 Wasatch Front LiDAR Now Available
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <div class="caption"><a href="{{ "/downloads/DTM3.png" | prepend: site.baseurl }}"><img src="{{ "/images/DTM3.png" | prepend: site.baseurl }}" alt="" title="LiDAR DTM sample" width="300" height="226" class="size-medium wp-image-15443" /></a><p class="caption-text">Click to view large format map detail</p></div>
 <p>Through partnerships with FEMA and the Utah Division of Emergency Management, USGS, Utah Geological Survey, and the Salt Lake County Surveyor's office and partner cities, AGRC is pleased to announce the new <a href="{{ "/data/elevation-terrain-data/2013-2014-lidar/" | prepend: site.baseurl }}">2013-2014 Wasatch Front Lidar</a> is now available. The 1,422 square miles of USGS Quality Level 1 Lidar was collected as an 8 point per meter (8 ppm) point cloud. The resulting bare earth hydro flattened (DTM) DEMs and first return or highest-hit (DSM) DEMs have a resolution of .5 meters.</p>

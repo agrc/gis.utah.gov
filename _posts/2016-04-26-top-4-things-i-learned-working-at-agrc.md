@@ -1,15 +1,14 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Guest Blog: Things I Learned Working at the Utah AGRC'
+layout: post
 author:
   display_name: Christy Heaton
   email: christyheaton@gmail.com
+tags: []
+published: true
 date: 2016-04-26 14:15:06
-categories:
-
-tags: blog
+title: 'Guest Blog: Things I Learned Working at the Utah AGRC'
+categories: []
 ---
 
 Hi there! I’m [Christy](http://christyheaton.github.io). I work at a small consulting firm in downtown Seattle called [SGSI](http://www.sgsi.com). I also teach a summer GIS Programming course at the [University of Washington](http://www.gisonline.uw.edu/) and organize a Meetup group called [Maptime Seattle](http://www.meetup.com/MaptimeSEA/).

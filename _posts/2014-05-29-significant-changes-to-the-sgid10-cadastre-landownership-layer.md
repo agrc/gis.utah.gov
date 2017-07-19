@@ -1,30 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: Significant Changes to the Utah Land Ownership GIS Layer
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 15076
-wordpress_url: http://gis.utah.gov/?p=15076
-date: '2014-05-29 12:02:17 -0600'
-date_gmt: '2014-05-29 18:02:17 -0600'
-categories:
-- Featured
 tags:
-- sgid
-- Data
-- utah
-- gis
-- blm
-- sitla
-- LandOwnership
-- Land Exchange Act
+  - blm
+  - data
+  - land exchange act
+  - sitla
+published: true
+date: 2014-05-29 12:02:17 -0600
+title: Significant Changes to the Utah Land Ownership GIS Layer
+categories:
+  - Featured
 ---
 <p><a href="{{ "/downloads/SITLAOwnershipExchange.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/SITLAOwnershipExchange.jpg" | prepend: site.baseurl }}" alt="" title="SITLAOwnershipExchange" width="220" height="423" class="inline-text-left" /></a>Utah's <a href="http://trustlands.utah.gov/">School and Institutional Trust Lands Administration</a> (SITLA) and the <a href="http://www.blm.gov/wo/st/en.html">Bureau of Land Management</a> (BLM) finalized a 60,000 acre land swap on May 8, 2014.</p>
 <p>As a result, significant land ownership changes have been published to the SGID10.CADASTRE.LandOwnership GIS layer today, May 29, 2014 (<a href="{{ "/data/sgid-cadastre/land-ownership/" | prepend: site.baseurl }}">Download</a> or <a href="http://sitla.maps.arcgis.com/home/webmap/viewer.html?webmap=a65db3fecae144f9a8d5337b9cc5f0df">View</a> this data). These updates reflect the conveyance of land between SITLA, BLM, and Private ownership.</p>

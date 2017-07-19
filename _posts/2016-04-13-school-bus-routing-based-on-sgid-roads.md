@@ -1,16 +1,14 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'School Bus Routing based on SGID Roads'
+layout: post
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
+tags: []
+published: true
 date: 2016-04-13 16:15:06
-categories:
-
-tags:
-
+title: School Bus Routing based on SGID Roads
+categories: []
 ---
 
 A few months ago I had the opportunity to work with Marc Healy at the Granite School District Transportation department.  He was sending me corrections he needed to have performed on the SGID roads layer.  He told me that he was using the layer for a network.  I asked him to tell his story and provide some instructions, this follows below.

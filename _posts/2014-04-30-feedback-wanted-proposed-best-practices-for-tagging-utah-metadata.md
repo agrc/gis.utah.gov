@@ -1,34 +1,20 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Feedback Wanted: Proposed Best Practices for Tagging Utah Metadata'
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 14990
-wordpress_url: http://gis.utah.gov/?p=14990
-date: '2014-04-30 18:11:06 -0600'
-date_gmt: '2014-05-01 00:11:06 -0600'
-categories:
-- Uncategorized
-- Data
-- Featured
-- SGID Blog
 tags:
-- sgid
-- Data
-- utah
-- gis
-- agrc
-- metadata
-- geographic
-- tag
-- best practices
+  - best practices
+  - data
+published: true
+date: 2014-04-30 18:11:06 -0600
+title: 'Feedback Wanted: Proposed Best Practices for Tagging Utah Metadata'
+categories:
+  - Data
+  - Featured
+  - SGID Blog
+  - Uncategorized
 ---
 <p><a href="{{ "/downloads/tagexample2.png" | prepend: site.baseurl }}"><img src="{{ "/images/tagexample2.png" | prepend: site.baseurl }}" alt="" title="tagexample2" width="500" height="151" class="inline-text-right" /></a>AGRC has developed a <a href="https://docs.google.com/a/utah.gov/document/d/1V7lnrMX6Ufok3lmSoxVaBJhwWnvlyPRb6v8kNzSjlQ4/edit">draft 'best practices' document for assigning metadata tags</a> to esri 'Item Description'-style metadata.</p>
 <p>Tags play an important role in search optimization in both ArcGIS Online and Esri's newly released Open Data platform.</p>

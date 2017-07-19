@@ -1,25 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: Google Imagery Service Speed Enhancements & More
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 18117
-wordpress_url: http://gis.utah.gov/?p=18117
-date: '2015-11-24 15:57:20 -0700'
-date_gmt: '2015-11-24 22:57:20 -0700'
-categories:
-- Uncategorized
-- Data
-- Featured
-- Google Imagery
 tags: []
+published: true
+date: 2015-11-24 15:57:20 -0700
+title: Google Imagery Service Speed Enhancements & More
+categories:
+  - Data
+  - Featured
+  - Google Imagery
+  - Uncategorized
 ---
 
 <div class="grid pop">

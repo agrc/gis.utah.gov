@@ -1,24 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: Utah SGID Statewide Roads Data Layer Updates 10/1/2014
+layout: post
 author:
   display_name: Data Queen
-  login: kgreen
   email: agrc@utah.gov
-  url: ''
-author_login: kgreen
-author_email: agrc@utah.gov
-wordpress_id: 15684
-wordpress_url: http://gis.utah.gov/?p=15684
-date: '2014-10-01 16:11:23 -0600'
-date_gmt: '2014-10-01 22:11:23 -0600'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags: []
+published: true
+date: 2014-10-01 16:11:23 -0600
+title: Utah SGID Statewide Roads Data Layer Updates 10/1/2014
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <p>Updates were made recently to the SGID10.Transportation.Roads feature class that resides on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
 <p>The updated Roads data is also available as shapefiles and file geodatabase files for download on the <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/PackagedData/_Statewide/UtahRoadAndHighwaySystem/">SGID FTP site</a>.</p>

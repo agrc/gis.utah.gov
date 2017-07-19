@@ -1,16 +1,14 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Utah SGID Statewide Roads Data Layer Updates 4/15/2016'
+layout: post
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
+tags: []
+published: true
 date: 2016-04-18 21:47:40
-categories:
-
-tags:
-
+title: Utah SGID Statewide Roads Data Layer Updates 4/15/2016
+categories: []
 ---
 
 Updates were made recently to the SGID10.Transportation.Roads feature class that resides on the <a href="http://gis.utah.gov/data/how-to-connect-to-the-sgid-via-sde/">Utah SGID ArcSDE database server</a>.

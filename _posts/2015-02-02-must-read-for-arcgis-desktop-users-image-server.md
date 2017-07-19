@@ -1,30 +1,21 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Must Read for ArcGIS Desktop Users: Image Server Deprecation'
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 16393
-wordpress_url: http://gis.utah.gov/?p=16393
-date: '2015-02-02 14:56:21 -0700'
-date_gmt: '2015-02-02 21:56:21 -0700'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags:
-- Data
-- agrc
-- image server
-- image extension
-- mapserv
-- '10.3'
+  - data
+  - image extension
+  - image server
+  - mapserv
+published: true
+date: 2015-02-02 14:56:21 -0700
+title: 'Must Read for ArcGIS Desktop Users: Image Server Deprecation'
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <p><a href="{{ "/downloads/MapservImage.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/MapservImage.jpg" | prepend: site.baseurl }}" alt="" title="MapservImage" width="176" height="400" class="inline-text-left" /></a></p>
 <p>Begining January 16, 2016 AGRC will no longer support legacy Image Server. This means that users of all versions of ArcGIS Desktop will <strong>not</strong> be able to connect to the SGID Image Server (connections established using the <em>Add Image Server Connection</em> button). All links to Image Server saved within an mxd will be broken as well. </p>

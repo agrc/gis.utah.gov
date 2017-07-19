@@ -1,24 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: Newest updates to the Municipal Boundaries
+layout: post
 author:
   display_name: Mike Heagin
-  login: mheagin
   email: mheagin@utah.gov
-  url: ''
-author_login: mheagin
-author_email: mheagin@utah.gov
-wordpress_id: 14315
-wordpress_url: http://gis.utah.gov/?p=14315
-date: '2014-01-09 11:26:33 -0700'
-date_gmt: '2014-01-09 18:26:33 -0700'
-categories:
-- Uncategorized
-- Data
-- SGID Blog
 tags: []
+published: true
+date: 2014-01-09 11:26:33 -0700
+title: Newest updates to the Municipal Boundaries
+categories:
+  - Data
+  - SGID Blog
+  - Uncategorized
 ---
 <p>Updates were made recently to the <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
 <p>2014 brings to Utah a new city East Carbon - Sunnyside City, the formally divided cities have now joined into one municipality.<br />

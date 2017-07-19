@@ -1,27 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: Big Happenings with Public Land Survey System GIS
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 18051
-wordpress_url: http://gis.utah.gov/?p=18051
-date: '2015-10-30 11:39:09 -0600'
-date_gmt: '2015-10-30 17:39:09 -0600'
-categories:
-- GPS-surveyor
-- Featured
 tags:
-- utah
-- blm
-- PLSS
-- corner monument
+  - blm
+  - plss
+published: true
+date: 2015-10-30 11:39:09 -0600
+title: Big Happenings with Public Land Survey System GIS
+categories:
+  - Featured
+  - GPS-surveyor
 ---
 <p><a href="{{ "/downloads/CoMarker.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/CoMarker.jpg" | prepend: site.baseurl }}" alt="" title="CoMarker" width="286" height="206" class="inline-text-left" /></a>Good things are happening in Utah regarding the Public Land Survey System (PLSS), also known as the township, range, and section grid, which forms the foundation for GIS map representations of public and private lands and other related Utah map layers. </p>
 <p>The PLSS grid is physically defined on the ground in the form of survey monuments of various types. These take forms ranging from etched rocks to modern post and caps. </p>

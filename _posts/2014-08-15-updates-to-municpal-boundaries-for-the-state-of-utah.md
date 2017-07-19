@@ -1,22 +1,15 @@
 ---
-layout: post
 status: publish
-published: true
-title: Updates to Municpal Boundaries for the State of Utah
+layout: post
 author:
   display_name: Mike Heagin
-  login: mheagin
   email: mheagin@utah.gov
-  url: ''
-author_login: mheagin
-author_email: mheagin@utah.gov
-wordpress_id: 15425
-wordpress_url: http://gis.utah.gov/?p=15425
-date: '2014-08-15 11:57:49 -0600'
-date_gmt: '2014-08-15 17:57:49 -0600'
-categories:
-- Uncategorized
 tags: []
+published: true
+date: 2014-08-15 11:57:49 -0600
+title: Updates to Municpal Boundaries for the State of Utah
+categories:
+  - Uncategorized
 ---
 <p>Updates were made recently to the<br />
 <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />

@@ -1,23 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: Mock your Dojo AMD modules with StubModule.js
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 17945
-wordpress_url: http://gis.utah.gov/?p=17945
-date: '2015-09-17 07:41:59 -0600'
-date_gmt: '2015-09-17 13:41:59 -0600'
-categories:
-- Developer
 tags:
-- javascript
+  - javascript
+published: true
+date: 2015-09-17 07:41:59 -0600
+title: Mock your Dojo AMD modules with StubModule.js
+categories:
+  - Developer
 ---
 
 When testing AMD modules it is sometimes necessary to verify how it interacts with it&#39;s dependencies. For example, you might be writing a module that makes XHR requests using [dojo/request](http://dojotoolkit.org/reference-guide/dojo/request.html#dojo-request) and you want to make sure that it&#39;s passing the correct parameters. How would you test this? Creating a wrapper around the request method in your module and then spying on that method would work. You could also store the request method as a property of your module and spy on that in your tests. However, both of these solutions lead to messy code and there&#39;s something that feels wrong to me when adding code to production modules just for testing purposes.

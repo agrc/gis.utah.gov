@@ -1,24 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: Recommended GIS Resources from NSGIC.org
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 12935
-wordpress_url: http://gis.utah.gov/?p=12935
-date: '2013-04-02 13:09:59 -0600'
-date_gmt: '2013-04-02 19:09:59 -0600'
+tags: []
+published: true
+date: 2013-04-02 13:09:59 -0600
+title: Recommended GIS Resources from NSGIC.org
 categories:
-- Uncategorized
-- Featured
-tags:
-- agrc nsgic gis
+  - Featured
+  - Uncategorized
 ---
 <p>The National State Geographic Information Council (NSGIC) exists to </p>
 <ul>

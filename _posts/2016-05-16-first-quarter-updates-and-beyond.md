@@ -1,21 +1,20 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'First Quarter Updates and beyond.'
+layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2016-05-16 21:55:12
-categories:
-- Data
-- SGID Blog
 tags:
-- sgid
-- boundaries
-- Municipalities
-- Incorporation
-- Boundary Data
+  - boundaries
+  - boundary data
+  - incorporation
+  - municipalities
+published: true
+date: 2016-05-16 21:55:12
+title: First Quarter Updates and beyond.
+categories:
+  - Data
+  - SGID Blog
 ---
 <p>    Catching up and doing the updates for the first quarter or the year 2016.
 The followint list represents all the annexation that came through the Lt. Governor's office between the begining of this year and May 13th. Any of these documents can be reviewed at http://municert.utah.gov/2016-certifications</p>

@@ -1,17 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Rethinking Geocoders: Adding Local Vernacular into the Build Process'
+layout: post
 author:
   display_name: Greg Bunce
   email: GBunce@utah.gov
-date: 2017-06-27 00:38:49
-categories:
-- Developer
 tags:
-- roads
-- geocoding
+  - geocoding
+  - roads
+published: true
+date: 2017-06-27 00:38:49
+title: 'Rethinking Geocoders: Adding Local Vernacular into the Build Process'
+categories:
+  - Developer
 ---
 
 AGRC has been working on a project to enhance our approach to geocoding. This grew from the basic idea that humans often view addressing differently than a GIS system. For instance, as GIS professionals, we are accustom to storing data in a format that is versatile and verbose. The choices we make in maintaining road and address GIS data do not always result in satisfying address geocoding results, especially when best practices don't accommodate the local vernacular for addressing. A current project at AGRC, code-named Road Grinder, attempts to bridge this gap.

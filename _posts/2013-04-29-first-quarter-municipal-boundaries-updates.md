@@ -1,22 +1,15 @@
 ---
-layout: post
 status: publish
-published: true
-title: First quarter Municipal Boundaries updates
+layout: post
 author:
   display_name: Mike Heagin
-  login: mheagin
   email: mheagin@utah.gov
-  url: ''
-author_login: mheagin
-author_email: mheagin@utah.gov
-wordpress_id: 13171
-wordpress_url: http://gis.utah.gov/?p=13171
-date: '2013-04-29 09:13:10 -0600'
-date_gmt: '2013-04-29 15:13:10 -0600'
-categories:
-- Data
 tags: []
+published: true
+date: 2013-04-29 09:13:10 -0600
+title: First quarter Municipal Boundaries updates
+categories:
+  - Data
 ---
 <p>Updates were made recently to the <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature </p>
 <p>classes that reside on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
