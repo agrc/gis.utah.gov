@@ -67,7 +67,10 @@ def prune_keys(front_matter):
 
 
 def prune_tags(front_matter):
-    tags = front_matter['tags']
+    try:
+        tags = front_matter['tags']
+    except KeyError:
+        return None
 
     if tags is None:
         return []
@@ -83,7 +86,10 @@ def prune_tags(front_matter):
 
 
 def prune_categories(front_matter):
-    categories = front_matter['categories']
+    try:
+        categories = front_matter['categories']
+    except KeyError:
+        return None
 
     if categories is None:
         return []
@@ -125,8 +131,14 @@ def discover_files(walk_dir):
                     continue
 
                 front_matter = prune_keys(front_matter)
-                front_matter['tags'] = prune_tags(front_matter)
-                front_matter['categories'] = prune_categories(front_matter)
+
+                tags = prune_tags(front_matter)
+                if tags is not None:
+                    front_matter['tags'] = tags
+
+                categories = prune_categories(front_matter)
+                if categories is not None:
+                    front_matter['categories'] = categories
 
                 front_matter = yaml.dump(front_matter, Dumper=yaml.RoundTripDumper, block_seq_indent=2, default_flow_style=False, indent=2)
                 content = pluck_content(original)
