@@ -16,7 +16,6 @@ published: true
 date: 2015-08-19 14:29:46 -0600
 title: Statewide Lidar Plan for Utah
 categories:
-  - Data
   - Featured
 ---
 

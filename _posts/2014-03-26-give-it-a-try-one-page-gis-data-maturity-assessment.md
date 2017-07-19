@@ -13,9 +13,7 @@ published: true
 date: 2014-03-26 15:53:05 -0600
 title: 'Give it a Try: One Page GIS Data Maturity Assessment'
 categories:
-  - Data
   - Featured
-  - Home
   - SGID Blog
 ---
 <p>Locational analysis, using GIS, is extremely powerful for discovering opportunity and other business analytics. GIS provides a platform to bring information together and facilitate organizations working together toward shared objectives. The foundation for success with GIS is unquestionably geographic data. Geographic data digitally models real world phenomena from across the natural, infrastructure, or societal realms -- and of course any combination of these. </p>

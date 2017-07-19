@@ -11,7 +11,6 @@ published: true
 date: 2016-08-31 13:20:00
 title: Utah SGID Trails Data Layer Updates
 categories:
-  - Data
   - Featured
 ---
 

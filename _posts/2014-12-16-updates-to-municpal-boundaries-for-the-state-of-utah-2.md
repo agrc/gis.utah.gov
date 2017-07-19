@@ -11,7 +11,6 @@ published: true
 date: 2014-12-16 11:44:49 -0700
 title: Updates to Municipal Boundaries for the State of Utah, December 2014
 categories:
-  - Data
   - SGID Blog
 ---
 <p>Updates were made recently to the <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>

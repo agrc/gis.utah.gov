@@ -21,9 +21,7 @@ date: 2013-11-26 14:21:05 -0700
 title: 'Utah Mapping Resources: Well-Prepared for NextGen 9-1-1'
 categories:
   - Featured
-  - Home
   - SGID Blog
-  - Uncategorized
 ---
 <p>Change is in the works for how the 9-1-1 system connects those in need with emergency responders. The <a href="http://nena.org?page=AboutNENA">National Emergency Number Association</a> (NENA), which represents 9-1-1 professionals and organizations, has been at the forefront of creating the standards that will guide and govern the coming upgrade.</p>
 <p>This blog post attempts to describe the existing enhanced 9-1-1 system as background, what the Next Generation 9-1-1 (a.k.a. NextGen 9-1-1 or NG 9-1-1 or just NG) system will entail, and how digital mapping information sourced from geographic information systems (GIS) will play a crucial role in its success. There's certainly more complexity to this area but, hopefully, this summary will provide a good introduction.</p>

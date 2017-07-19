@@ -9,10 +9,8 @@ published: true
 date: 2015-03-05 16:02:52 -0700
 title: Summarizing Utah GIS Data Needs for NG 9-1-1
 categories:
-  - Data
   - Featured
   - SGID Blog
-  - Standards
 ---
 <p><a  title="911flyer" href="https://docs.google.com/presentation/d/1Xy7brkt6DrqEMz68dGliU1vQbs0lV-or6R1d_u5gvGs/edit?usp=sharing"><img class="inline-text-left" style="border: 0px solid black;" src="{{ "/images/NG911LayerStatus-230x300.png" | prepend: site.baseurl }}" alt="ned" width="230" height="300" /></a></p>
 <p>The success of the emergency response process that is initiated by dialing 9-1-1 has always been dependent on understanding and verifying locational information.  GIS-based map information will be fully integrated into the Next Generation (NG) 9-1-1 platform. In addition to the geographic context provided in map displays,  the legacy telephone-number-to-address lookup tables will be replaced with queries to GIS data to obtain geographic coordinates for addresses. Additionally, queries to GIS data will determine, on-the-fly, the 911 communications center to which incoming calls will be routed.</p>

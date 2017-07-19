@@ -13,7 +13,6 @@ published: true
 date: 2015-07-29 16:08:48 -0600
 title: New 84009 Zip Code in Salt Lake County
 categories:
-  - Data
   - Featured
 ---
 <p>The US Postal Service recently assigned a <a href="http://about.usps.com/news/state-releases/ut/2015/ut_2015_0522.htm">new zip code, 84009</a>, to be used for the portion of the existing 84095 South Jordan area that is west of the Bangerter Highway. The assignment took effect July 1st with a 1 year grace period for mail carrying the previous zip code for that area.</p>

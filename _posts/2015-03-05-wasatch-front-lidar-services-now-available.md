@@ -14,7 +14,6 @@ published: true
 date: 2015-03-05 10:44:24 -0700
 title: Wasatch Front LiDAR Services Now Available
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---

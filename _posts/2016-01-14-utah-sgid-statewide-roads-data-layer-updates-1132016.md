@@ -15,7 +15,6 @@ published: true
 date: 2016-01-14 09:57:01 -0700
 title: Utah SGID Statewide Roads Data Layer Updates 1/13/2016
 categories:
-  - Data
   - Featured
 ---
 <p>Updates were made recently to the SGID10.Transportation.Roads feature class that resides on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>

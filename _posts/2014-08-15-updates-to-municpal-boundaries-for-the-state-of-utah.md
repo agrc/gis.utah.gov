@@ -8,8 +8,7 @@ tags: []
 published: true
 date: 2014-08-15 11:57:49 -0600
 title: Updates to Municpal Boundaries for the State of Utah
-categories:
-  - Uncategorized
+categories: []
 ---
 <p>Updates were made recently to the<br />
 <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />

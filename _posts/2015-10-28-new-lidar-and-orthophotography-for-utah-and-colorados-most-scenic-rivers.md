@@ -17,7 +17,6 @@ published: true
 date: 2015-10-28 11:42:28 -0600
 title: "New Lidar and Orthophotography for Utah and Colorado\u2019s Most Scenic Rivers"
 categories:
-  - Data
   - Featured
 ---
 <p><a href="{{ "/downloads/Riverlidar.png" | prepend: site.baseurl }}"><img src="{{ "/images/Riverlidar-300x215.png" | prepend: site.baseurl }}" alt="" title="Riverlidar" width="300" height="215" class="inline-text-left" /></a>If you happen to be enjoying the Colorado, Green or Yampa Rivers late this fall and see a small plane flying back and forth, be sure to wave. You might be captured in Utah’s latest lidar acquisition.</p>

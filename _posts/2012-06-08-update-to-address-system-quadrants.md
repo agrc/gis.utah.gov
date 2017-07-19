@@ -9,7 +9,6 @@ published: true
 date: 2012-06-08 12:02:31 -0600
 title: Update to Address System Quadrants
 categories:
-  - Data
   - SGID Blog
 ---
 <p>An update was recently made to SGID10.LOCATION.AddressSystemQuadrants. The purpose of the update was to add address system quadrants to Wasatch County that had been provided to AGRC by Wasatch County GIS. There are four grids in Wasatch County- Heber, Midway, Strawberry, and Wallsburg. Wasatch County also is partially covered by the Kamas </p>

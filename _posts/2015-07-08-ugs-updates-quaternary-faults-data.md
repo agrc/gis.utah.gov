@@ -15,7 +15,6 @@ published: true
 date: 2015-07-08 11:05:04 -0600
 title: UGS Updates Quaternary Faults Data
 categories:
-  - Data
   - Featured
 ---
 <p>The Utah Geological Survey (UGS) updated the <a href="{{ "/data/geoscience/quaternary-faults/" | prepend: site.baseurl }}">Quaternary Fault and Fold Database</a> and Map of Utah on July 1, 2015, incorporating new data and a complete review of existing data through the end of 2013.  Users of any Quaternary fault trace and related data acquired from the UGS or the Utah Automated Geographic Reference Center (AGRC) State Geographic Information Database (SGID) in the past are advised to use the updated database available from the AGRC SGID as the SGID10.GEOSCIENCE.QuaternaryFaults feature class.  This single, comprehensive feature class will be periodically updated as new/updated data becomes available (anticipated several times per year) and replaces six previously available feature classes of variable completeness.</p>

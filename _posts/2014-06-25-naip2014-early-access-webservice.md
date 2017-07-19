@@ -16,9 +16,7 @@ published: true
 date: 2014-06-25 12:57:48 -0600
 title: National Agricultural Imagery Program (NAIP) 2014 - Early Access Web Service
 categories:
-  - Data
   - Featured
-  - Home
   - SGID Blog
 ---
 <p><a href="{{ "/downloads/NAIP2014_RGB-CIR.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/NAIP2014_RGB-CIR.jpg" | prepend: site.baseurl }}" alt="" title="PLSSapp" width="250" height="250" class="inline-text-left" /></a></p>

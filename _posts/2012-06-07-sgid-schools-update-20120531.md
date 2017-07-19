@@ -11,7 +11,6 @@ published: true
 date: 2012-06-07 17:26:17 -0600
 title: SGID Schools Update 5/31/2012
 categories:
-  - Data
   - SGID Blog
 ---
 <p>Updates were made recently to the SGID10.Society.Schools feature class that resides on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>

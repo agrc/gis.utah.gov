@@ -12,7 +12,6 @@ published: true
 date: 2014-04-30 12:24:19 -0600
 title: Public Land Survey System (PLSS) Version 2.0 Release
 categories:
-  - Data
   - Featured
 ---
 <p><a href="{{ "/downloads/NewPLSS_LrgSample1.png" | prepend: site.baseurl }}"><img src="{{ "/images/NewPLSS_LrgSample1.png" | prepend: site.baseurl }}" alt="" title="NewPLSS_LrgSample" width="140" height="130" class="inline-text-right" /></a>On April 30, AGRC published Geographic Coordinate Database (GCDB) version 2.0 to the townships, sections, and quarter section divisions of the Public Land Survey System (PLSS) contained in Utah's State Geographic Information Database (SGID).</p>

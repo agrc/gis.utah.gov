@@ -13,7 +13,6 @@ published: true
 date: 2015-02-02 14:56:21 -0700
 title: 'Must Read for ArcGIS Desktop Users: Image Server Deprecation'
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---

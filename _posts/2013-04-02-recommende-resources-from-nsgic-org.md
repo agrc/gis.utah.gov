@@ -10,7 +10,6 @@ date: 2013-04-02 13:09:59 -0600
 title: Recommended GIS Resources from NSGIC.org
 categories:
   - Featured
-  - Uncategorized
 ---
 <p>The National State Geographic Information Council (NSGIC) exists to </p>
 <ul>

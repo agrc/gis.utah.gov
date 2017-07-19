@@ -9,7 +9,6 @@ published: true
 date: 2013-02-13 17:54:58 -0700
 title: Utah SGID Statewide Roads Layer Updates 2/13/2013
 categories:
-  - Data
   - SGID Blog
 ---
 <p>Updates were made recently to the SGID93.Transportation.Roads and SGID10.Transportation.Roads (new schema) feature classes that reside on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>

@@ -14,7 +14,6 @@ published: false
 date: 2012-11-09 14:00:26 -0700
 title: 2012 High Resolution Imagery Now Available
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---

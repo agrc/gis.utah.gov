@@ -7,8 +7,7 @@ author:
 tags: []
 published: true
 date: 2016-03-23 17:55:50 -0700
-categories:
-  - About
+categories: []
 ---
  ![Maps on the Hill Logo]({{ "/images/MapsontheHillWEB_small-150x150.jpg" | prepend: site.baseurl }})
  {: .inline-text-right }

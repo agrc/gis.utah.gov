@@ -28,7 +28,6 @@ published: false
 date: 2014-09-17 09:28:37 -0600
 title: 2013-2014 Wasatch Front LiDAR Now Available
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---
