@@ -19,8 +19,9 @@ useless_tags = [
     'surveying', 'geocodes', 'spotlight', 'interactive', 'coordinate', 'ut', '2013', 'use', 'upgrade', 'map spotlight', 'maturity', 'tag', 'centerlined',
     'stateiwide', 'gid', 'geogrpahic', '10.3', 'utah vector', 'find', 'digital download', 'mail', 'flown', 'plan', 'load', 'trends',
     'watershed restoration initiative', 'webmercator', 'blog', '1 meter', 'composite', 'geogoding', 'overview', 'listserv', 'address range', 'topographic'
-    'topo', 'geography awareness', "'2014'", 'utah state capitol', 'elected officials', 'geocode', 'road', 'geography', 'streets', 'shps', 'img', 'ata'
-    'return on investment', 'updates', 'layers', 'seismic hazards', 'internet'
+    'topo', 'geography awareness', "'2014'", 'utah state capitol', 'elected officials', 'geocode', 'road', 'geography', 'streets', 'shps', 'img', 'ata',
+    'return on investment', 'updates', 'layers', 'seismic hazards', 'internet', 'addresses', 'addressing', 'address ranges', 'aerial', 'app', 'centerlines',
+    'corner monument', 'http', 'https', 'imageserver', 'incoproration', 'landownership', 'load', 'none', 'orthophotopraphy', 'survey', 'wrap'
 ]
 
 
