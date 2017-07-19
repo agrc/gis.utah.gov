@@ -11,7 +11,7 @@ import ruamel.yaml as yaml
 
 unused_keys = ['author_login', 'author_email', 'wordpress_id', 'wordpress_url', 'date_gmt']
 unused_author_keys = ['login', 'url']
-categories = ['Featured', 'Developer', 'SGID Blog', 'GPS-surveyor', 'Guestblog']
+acceptable_categories = ['Tutorial', 'Featured', 'Developer', 'SGID Blog', 'GPS-surveyor', 'Guestblog']
 useless_tags = [
     'utah', 'gis', 'map', 'mapping', 'points', 'dataset', 'download', 'agrc', 'layer', 'shapefile', 'geodatabase', 'metadata', 'shp', 'gdb', 'kml', 'lyr',
     'digital', 'geographic', 'information', 'database', 'state', 'statewide', 'category', 'services', 'daas', 'locations', 'SDE', 'sgid', 'vector', 'esri',
@@ -97,7 +97,7 @@ def prune_categories(front_matter):
     if isinstance(categories, basestring):
         categories = [categories]
 
-    ok_categories = set([x for x in categories if x in categories])
+    ok_categories = set([x for x in categories if x in acceptable_categories])
     ok_categories = list(ok_categories)
     ok_categories.sort()
 
