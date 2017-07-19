@@ -1,21 +1,15 @@
 ---
-layout: page
 status: publish
-published: true
-title: Using SGID Base Map & Imagery Services
+layout: page
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 3141
-wordpress_url: http://gis.utah.gov/?page_id=3141
-date: '2011-11-03 18:11:05 -0600'
-date_gmt: '2011-11-04 00:11:05 -0600'
-categories: [Developer]
 tags: []
+published: true
+date: 2011-11-03 18:11:05 -0600
+title: Using SGID Base Map & Imagery Services
+categories:
+  - Developer
 ---
 <div class="grid__col grid__col--1-of-3 text-center">
     <h5 class="text-center">Imagery plus Overlay base maps</h5>
