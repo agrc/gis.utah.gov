@@ -1,24 +1,18 @@
 ---
-layout: page
 status: publish
-published: true
+layout: page
 title: Geospatial Widgets
 author:
- display_name: Steve Gourley
- login: Map Utah
- email: sgourley@utah.gov
- url: ''
-author_login: Map Utah
-author_email: sgourley@utah.gov
-wordpress_id: 219
-wordpress_url: http://gis.utah.gov/?page_id=219
-date: '2011-06-30 18:22:37 -0500'
-date_gmt: '2011-06-30 18:22:37 -0500'
-categories: [Developer]
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
 tags:
-- widgets
-- javascript
-- add-on
+  - add-on
+  - javascript
+  - widgets
+categories:
+  - Developer
+published: true
+date: 2011-06-30 18:22:37 -0500
 ---
 #### Save yourself some time and use our widgets!
 

@@ -1,26 +1,19 @@
 ---
-layout: page
 status: publish
-published: true
+layout: page
 title: Developers
 author:
   display_name: Steve Gourley
-  login: SteveGourley
   email: sgourley@utah.gov
-  url: ''
-author_login: SteveGourley
-author_email: sgourley@utah.gov
-wordpress_id: 19
-wordpress_url: http://gis.utah.gov/?page_id=19
-date: '2011-04-05 22:01:27 -0500'
-date_gmt: '2011-04-05 22:01:27 -0500'
-categories: []
 tags:
-- basemap
-- widgets
-- cache
-- web services
-- api
+  - api
+  - basemap
+  - cache
+  - web services
+  - widgets
+categories: []
+published: true
+date: 2011-04-05 22:01:27 -0500
 ---
 <div class="grid">
   <div class="grid__col grid__col--1-of-2">
