@@ -12,7 +12,6 @@ published: true
 date: 2013-12-12 16:52:40 -0700
 title: Utah SGID Statewide Roads Layer Updates 12/12/2013
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---

@@ -14,10 +14,8 @@ published: true
 date: 2015-02-12 18:52:22 -0700
 title: Authoritative Utah Geocoding Results
 categories:
-  - Data
   - Developer
   - Featured
-  - Locations Services
   - SGID Blog
 ---
 <p><a href="{{ "/downloads/Screen-Shot-2015-02-12-at-6.49.06-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-02-12-at-6.49.06-PM.png" | prepend: site.baseurl }}" alt="" title="Screen Shot 2015-02-12 at 6.49.06 PM" width="219" height="266" class="inline-text-left" /></a>

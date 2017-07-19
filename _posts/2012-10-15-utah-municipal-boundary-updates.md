@@ -9,7 +9,6 @@ published: true
 date: 2012-10-15 09:29:59 -0600
 title: Utah Municipal Boundary Updates
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---

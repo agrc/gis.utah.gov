@@ -14,7 +14,6 @@ published: true
 date: 2014-01-21 13:29:59 -0700
 title: LiDAR 2013-2014 Wasatch Front Acquisition Update
 categories:
-  - Data
   - Featured
 ---
 <p><a href="{{ "/downloads/Status-Graphic-v1.png" | prepend: site.baseurl }}"><img src="{{ "/images/Status-Graphic-v1-231x300.png" | prepend: site.baseurl }}" alt="" title="Status Graphic v1" width="231" height="300" class="inline-text-left" /></a>Last fall, AGRC contracted with <a href="http://www.watershedsciences.com/">Watershed Sciences Inc. (WSI)</a> to acquire 1,352 square miles of USGS Quality Level 1 LiDAR elevation data. The project area includes the urbanized area of Salt Lake and Utah Valleys and areas along the Wasatch Fault from Sanpete County north into Onieda County in southeastern Idaho.</p>

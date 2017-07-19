@@ -15,11 +15,7 @@ published: true
 date: 2015-12-21 12:11:45 -0700
 title: The Earth is Not Round! Utah, NAD83 and WebMercator Projections
 categories:
-  - Data
   - Featured
-  - Google Imagery
-  - Locations Services
-  - Standards
 ---
 <p>GIS users working on statewide projects in Utah need to know the specifics of three primary coordinate systems: Geographic (latitude/longitude), UTM NAD83, and WebMercator.</p>
 <p><a href="{{ "/downloads/projections.png" | prepend: site.baseurl }}"><img src="{{ "/images/projections-300x288.png" | prepend: site.baseurl }}" alt="" title="projections" width="300" height="288" style="padding:1px;border:thin solid black;" class="inline-text-left" /></a><b>Geographic</b> coordinates use latitude and longitude values to define positions on the 3D surface of the earth, which is of course, best modeled as an ellipsoid, not a sphere. The ellipsoid and its accompanying anchor point that ties it in to the real world, are known collectively as the WGS84 datum. The WGS84 datum is what the constellations of GPS satellites use natively.</p>

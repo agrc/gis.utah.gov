@@ -12,10 +12,8 @@ published: true
 date: 2013-09-13 12:41:14 -0600
 title: TURN GPS Network Updates
 categories:
-  - Data
   - Featured
   - GPS-surveyor
-  - Locations Services
 ---
 <p>This week AGRC began a transition to updated TURN GPS Network software by doing the initial install on a separate server from the existing system. </p>
 <p>The two separate systems will operate independently for approximately four weeks. During this time we will be testing the new network and verifying the performance and precision against the existing system. During the transition there will be no disruption to the existing network and you can plan to do business as usual. </p>

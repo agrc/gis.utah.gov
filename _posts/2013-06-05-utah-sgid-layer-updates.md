@@ -12,7 +12,6 @@ published: true
 date: 2013-06-05 14:47:11 -0600
 title: Utah SGID Layer Updates
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---

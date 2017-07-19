@@ -11,9 +11,7 @@ published: true
 date: 2014-09-24 15:04:25 -0600
 title: 'Statewide Address Points: Best Practices'
 categories:
-  - Data
   - Featured
-  - Uncategorized
 ---
 <p>AGRC has been working with county addressing authorities and GIS staff to develop a statewide address point dataset.  We are now using address points as the primary means of locating an address, with the location along a street segment as an alternate means.  Address points can provide a more accurate location than a geolocated point along a street segment.  This is particularly important for quickly dispatching public safety response to a home, business or other location.  </p>
 <p>We have developed what we believe are best practices for address points: </p>

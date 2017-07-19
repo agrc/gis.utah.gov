@@ -9,9 +9,7 @@ published: true
 date: 2015-04-29 14:16:45 -0600
 title: Updates To Political Districts & Voting Precincts datasets April 2015
 categories:
-  - Data
   - SGID Blog
-  - Standards
 ---
 <p><strong>Utah Political Districts:</strong></p>
 <p><a href="{{ "/data/political/2012-2021-house-senate-congressional-districts/" | prepend: site.baseurl }}">Political districts for state-level offices</a> (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections and ongoing representation.</p>

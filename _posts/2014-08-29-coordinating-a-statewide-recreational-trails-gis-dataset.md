@@ -9,10 +9,8 @@ published: true
 date: 2014-08-29 14:25:49 -0600
 title: Coordinating a Statewide Recreational Trails GIS Dataset
 categories:
-  - Data
   - Featured
   - SGID Blog
-  - Uncategorized
 ---
 <p><a href="{{ "/downloads/Screen-Shot-2014-08-29-at-2.28.54-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2014-08-29-at-2.28.54-PM-239x300.png" | prepend: site.baseurl }}" alt="" title="Trails snapshot" width="239" height="300" class="inline-text-left" /></a>Several agencies, at the local, state, and national-levels, have expressed a strong interest in a statewide, integrated, recreational trails GIS dataset. Marketing the attractiveness of Utah to prospective businesses and vacationers is a strong driver for this effort, as is the desire to inform citizens and best respond to emergencies that occur on or near recreation resources.</p>
 <p>The Utah Office of Tourism and GOED, through the leadership of Brad Peterson, the Governor's Outdoor Recreation Director, have obtained the rights to a trail access point and trails GIS dataset to begin this effort. The acquireded data is crowd-sourced and curated and is currently far from comprehensive, but it does contain over 20,000 miles of trails and 550 trail access points.</p>

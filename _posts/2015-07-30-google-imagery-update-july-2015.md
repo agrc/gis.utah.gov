@@ -14,7 +14,6 @@ published: true
 date: 2015-07-30 15:06:19 -0600
 title: Google Imagery (Update, July 2015)
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---

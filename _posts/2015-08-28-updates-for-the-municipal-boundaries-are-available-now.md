@@ -11,7 +11,6 @@ published: true
 date: 2015-08-28 09:45:42 -0600
 title: Updates for the Municipal Boundaries are available now
 categories:
-  - Data
   - SGID Blog
 ---
 <p>    As we head into the last third of this year, we find two new towns in Utah.<br />

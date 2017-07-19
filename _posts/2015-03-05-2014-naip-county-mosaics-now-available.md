@@ -13,7 +13,6 @@ published: false
 date: 2015-03-05 12:40:33 -0700
 title: 2014 NAIP Now Available
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---

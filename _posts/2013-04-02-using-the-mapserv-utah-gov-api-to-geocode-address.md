@@ -12,7 +12,6 @@ date: 2013-04-02 08:51:51 -0600
 title: Using the mapserv.utah.gov api to geocode address
 categories:
   - Featured
-  - Home
 ---
 <p>Geographic coordinates for Utah addresses can now be located using the AGRC's ArcGIS Server-based apis. These are the same apis that are used by AGRC web applications.
 <div style="float:right"><a href="http://api.mapserv.utah.gov"><img src="{{ "/images/agrcapiexplorer-150x150.png" | prepend: site.baseurl }}" alt="" title="agrcapiexplorer" width="150" height="150"/></a></div>

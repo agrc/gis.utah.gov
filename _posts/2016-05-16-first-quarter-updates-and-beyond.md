@@ -13,7 +13,6 @@ published: true
 date: 2016-05-16 21:55:12
 title: First Quarter Updates and beyond.
 categories:
-  - Data
   - SGID Blog
 ---
 <p>    Catching up and doing the updates for the first quarter or the year 2016.

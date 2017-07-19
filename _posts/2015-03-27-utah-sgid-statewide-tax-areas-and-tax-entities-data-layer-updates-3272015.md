@@ -9,7 +9,6 @@ published: true
 date: 2015-03-27 11:05:05 -0600
 title: Utah SGID Statewide Tax Areas and Tax Entities Data Layer Updates 3/27/2015
 categories:
-  - Data
   - Featured
   - SGID Blog
 ---

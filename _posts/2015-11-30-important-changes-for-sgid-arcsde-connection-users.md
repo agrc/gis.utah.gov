@@ -9,7 +9,6 @@ published: true
 date: 2015-11-30 11:35:11 -0700
 title: Important Changes for SGID ArcSDE Connection Users
 categories:
-  - Data
   - Featured
 ---
 <p><a href="{{ "/downloads/Screen-Shot-2015-11-30-at-11.14.14-AM1.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-11-30-at-11.14.14-AM1.png" | prepend: site.baseurl }}" alt="" title="Screen Shot 2015-11-30 at 11.14.14 AM" width="462" height="330" class="inline-text-right" /></a></p>

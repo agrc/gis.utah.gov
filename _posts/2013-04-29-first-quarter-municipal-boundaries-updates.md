@@ -8,8 +8,7 @@ tags: []
 published: true
 date: 2013-04-29 09:13:10 -0600
 title: First quarter Municipal Boundaries updates
-categories:
-  - Data
+categories: []
 ---
 <p>Updates were made recently to the <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature </p>
 <p>classes that reside on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
