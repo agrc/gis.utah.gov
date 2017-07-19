@@ -11,6 +11,7 @@ import ruamel.yaml as yaml
 
 unused_keys = ['author_login', 'author_email', 'wordpress_id', 'wordpress_url', 'date_gmt']
 unused_author_keys = ['login', 'url']
+categories = ['Featured', 'Developer', 'SGID Blog', 'GPS-surveyor', 'Guestblog']
 useless_tags = [
     'utah', 'gis', 'map', 'mapping', 'points', 'dataset', 'download', 'agrc', 'layer', 'shapefile', 'geodatabase', 'metadata', 'shp', 'gdb', 'kml', 'lyr',
     'digital', 'geographic', 'information', 'database', 'state', 'statewide', 'category', 'services', 'daas', 'locations', 'SDE', 'sgid', 'vector', 'esri',
@@ -80,6 +81,22 @@ def prune_tags(front_matter):
     return ok_tags
 
 
+def prune_categories(front_matter):
+    categories = front_matter['categories']
+
+    if categories is None:
+        return []
+
+    if isinstance(categories, basestring):
+        categories = [categories]
+
+    ok_categories = set([x for x in categories if x in categories])
+    ok_categories = list(ok_categories)
+    ok_categories.sort()
+
+    return ok_categories
+
+
 def discover_files(walk_dir):
     print('walk_dir = ' + walk_dir)
     print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
@@ -108,6 +125,7 @@ def discover_files(walk_dir):
 
                 front_matter = prune_keys(front_matter)
                 front_matter['tags'] = prune_tags(front_matter)
+                front_matter['categories'] = prune_categories(front_matter)
 
                 front_matter = yaml.dump(front_matter, Dumper=yaml.RoundTripDumper, block_seq_indent=2, default_flow_style=False, indent=2)
                 content = pluck_content(original)
