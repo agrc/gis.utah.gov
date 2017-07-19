@@ -1,24 +1,18 @@
 ---
-layout: page
 status: publish
-published: true
+layout: page
 title: Online Base Map Maintenance Schedule
 author:
   display_name: Steve Gourley
-  login: Steve Gourley
   email: sgourley@utah.gov
-  url: ''
-author_login: Steve Gourley
-author_email: sgourley@utah.gov
-wordpress_id: 707
-wordpress_url: http://gis.utah.gov/?page_id=707
-date: '2011-08-05 00:05:21 -0600'
-date_gmt: '2011-08-05 00:05:21 -0600'
-categories: [Developer]
 tags:
-- basemap
-- cache
-- schedule
+  - basemap
+  - cache
+  - schedule
+categories:
+  - Developer
+published: true
+date: 2011-08-05 00:05:21 -0600
 ---
 AGRC plans on updating the data driving these cached base maps on a regular schedule where applicable. This way our online base map caches will remain current with the most up to date data in our SGID.
 

@@ -1,23 +1,17 @@
 ---
-layout: page
 status: publish
-published: true
+layout: page
 title: Unleash the power of the SGID with the AGRC Web API
 author:
   display_name: Steve Gourley
-  login: Steve Gourley
   email: sgourley@utah.gov
-  url: ''
-author_login: Steve Gourley
-author_email: sgourley@utah.gov
-wordpress_id: 223
-wordpress_url: http://gis.utah.gov/?page_id=223
-date: '2011-06-30 18:23:51 -0500'
-date_gmt: '2011-06-30 18:23:51 -0500'
-categories: [Developer]
 tags:
-- web services
-- api
+  - api
+  - web services
+categories:
+  - Developer
+published: true
+date: 2011-06-30 18:23:51 -0500
 ---
 <i class="fa fa-2x fa-fw fa-mixcloud"></i> The [AGRC's Web API](http://api.mapserv.utah.gov) allows for developers to work with the data and services that AGRC maintains and creates. You can query any data layer in our SGID or you can geocode addresses against the most accurate statewide roads data set to name a few highly popular uses. All of our [widgets and add-ins]({{ "/developer/widgets/" | prepend: site.baseurl }}) make full use of our web API's.
 

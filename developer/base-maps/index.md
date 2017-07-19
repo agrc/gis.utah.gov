@@ -1,22 +1,16 @@
 ---
-layout: page
 status: publish
-published: true
+layout: page
 title: Ultra-fast cached online base map from AGRC
 author:
   display_name: Steve Gourley
-  login: Steve Gourley
   email: sgourley@utah.gov
-  url: ''
-author_login: Steve Gourley
-author_email: sgourley@utah.gov
-wordpress_id: 621
-wordpress_url: http://gis.utah.gov/?page_id=621
-date: '2011-07-20 02:11:01 -0500'
-date_gmt: '2011-07-20 02:11:01 -0500'
-categories: [Developer]
 tags:
-- basemap
+  - basemap
+categories:
+  - Developer
+published: true
+date: 2011-07-20 02:11:01 -0500
 ---
 AGRC has freely served online base maps for many years. These caches are in the Web Mercator projection (_wkid: 3857_). The caches consist of between **3 to 17 million** 256 pixel square tiles and can range from **15G to over 200GB**. These caches are standardized on a subset of the Google, Microsoft, and esri [scale levels]({{ "/developer/base-maps/basemap-scales/" | prepend: site.baseurl }}) that apply to our state.
 
