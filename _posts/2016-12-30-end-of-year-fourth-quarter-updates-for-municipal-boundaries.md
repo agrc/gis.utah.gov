@@ -1,21 +1,20 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'End of year 2016 (fourth quarter) Updates for Municipal Boundaries'
+layout: post
 author:
   display_name: M Heagin
   email: mheagin@utah.gov
-date: 2016-12-30 22:58:57
-categories:
-- Featured
 tags:
-- municipal boundaries
-- boundaries
-- city
-- town
-- Boundary
-
+  - boundaries
+  - boundary
+  - city
+  - municipal boundaries
+  - town
+published: true
+date: 2016-12-30 22:58:57
+title: End of year 2016 (fourth quarter) Updates for Municipal Boundaries
+categories:
+  - Featured
 ---
 [![SL Co Municipal Changes]({{"/images/MunicpalBoundaries2016Updates.png" | prepend:site.baseurl}} "view high res usage map")]({{"/downloads/MunicpalBoundaries2016Updates.pdf
 " | prepend:site.baseurl}}){:.inline-text-right}

@@ -1,19 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Latest News from the Utah Mapping Emergency Technical Team'
+layout: post
 author:
   display_name: Kate Smith
   email: kate.smith@draper.ut.us
-date: 2017-03-30 18:36:33
-categories:
-- Featured
 tags:
-- GIS
-- utah
-- emergency response
-
+  - emergency response
+published: true
+date: 2017-03-30 18:36:33
+title: Latest News from the Utah Mapping Emergency Technical Team
+categories:
+  - Featured
 ---
 Established in 2013, the Utah Mapping Emergency Technical Team (UMETT) is a UGIC committee that recognizes the potential threats of natural and man-made disasters to our communities; understanding that geographic information is essential to an effective response and recovery. ![Judges' Deliberations]({{ "/images/umettlogo.jpg" | prepend: site.baseurl }}){:.inline-text-right}
 

@@ -1,16 +1,14 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Second Quarter 2016 Municipal Boundaries Updates'
+layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
+tags: []
+published: true
 date: 2016-07-12 15:35:52
-categories:
-
-tags:
-
+title: Second Quarter 2016 Municipal Boundaries Updates
+categories: []
 ---
 
 We are half way through the year already and updates to the Municipal Boundaries are available now.

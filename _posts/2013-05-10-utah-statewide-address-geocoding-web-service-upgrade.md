@@ -1,31 +1,21 @@
 ---
-layout: post
 status: publish
-published: true
-title: Utah Statewide Address Geocoding Web Service Upgrade
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 13190
-wordpress_url: http://gis.utah.gov/?p=13190
-date: '2013-05-10 14:22:13 -0600'
-date_gmt: '2013-05-10 20:22:13 -0600'
-categories:
-- Home
-- Featured
-- SGID Blog
 tags:
-- sgid
-- utah
-- address
-- locator
-- web service
-- api
-- road
+  - address
+  - api
+  - locator
+  - web service
+published: true
+date: 2013-05-10 14:22:13 -0600
+title: Utah Statewide Address Geocoding Web Service Upgrade
+categories:
+  - Featured
+  - Home
+  - SGID Blog
 ---
 <p><a href="{{ "/downloads/Geocode.png" | prepend: site.baseurl }}"><img src="{{ "/images/Geocode-300x223.png" | prepend: site.baseurl }}" alt="" title="api.mapserv.utah.gov address locator" width="300" height="223" class="inline-text-left" /></a>Last week, AGRC finished a substantial upgrade to the Utah statewide address locator (geocoding) web service.  This service utilizes point- and road-based address map reference, data compiled into the State Geographic Information Database (SGID) from local sources, and published on a bi-monthly basis.</p>
 <p>The publicly accessible geocoding service allows developers to include 'best effort' Utah address finding functionality into web applications at no cost. </p>

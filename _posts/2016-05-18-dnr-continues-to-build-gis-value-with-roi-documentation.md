@@ -1,18 +1,15 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'DNR Continues to Build GIS Value with ROI Documentation'
+layout: post
 author:
   display_name: Wade Kloos, GIS Director, Utah DNR
   email: wkloos@utah.gov
-date: 2016-05-18 17:33:12
-categories:
-
 tags:
-- DNR
-- Return on Investment
-
+  - dnr
+published: true
+date: 2016-05-18 17:33:12
+title: DNR Continues to Build GIS Value with ROI Documentation
+categories: []
 ---
 Now in its second year, DNR’s initiative to measure and document GIS results has proven to be an indispensable activity to shed light on the true impact GIS is having on our organization.  Ask any GIS professional what the value of GIS is to their organization and they will likely shrug their shoulders and may respond with something like “it’s complicated, but it’s probably pretty high”.  There is no reason to settle for such vagueness anymore.  DNR knew we were producing good results with GIS but without a method (an easy to repeat method) to extract meaningful metrics of our workflow-related impacts, we would continue to be in the dark relative to the value we were delivering.  Last year, DNR created a one page GIS ROI and Benefit Report.  To encourage staff to try this new tool, we created a contest.  DNR Administrators were blown away with the first year’s results.  In 2016, we repeated the contest and to date, we have over 30 GIS projects that have been vetted through our GIS ROI and benefit documentation process.
 

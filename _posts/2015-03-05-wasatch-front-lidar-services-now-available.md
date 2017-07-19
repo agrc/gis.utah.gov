@@ -1,30 +1,22 @@
 ---
-layout: post
 status: publish
-published: true
-title: Wasatch Front LiDAR Services Now Available
+layout: post
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 16755
-wordpress_url: http://gis.utah.gov/?p=16755
-date: '2015-03-05 10:44:24 -0700'
-date_gmt: '2015-03-05 17:44:24 -0700'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags:
-- agrc
-- elevation
-- DEM
-- topographic
-- topo
-- LiDAR
+  - dem
+  - elevation
+  - lidar
+  - topo
+  - topographic
+published: true
+date: 2015-03-05 10:44:24 -0700
+title: Wasatch Front LiDAR Services Now Available
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <div class="caption"><a href="{{ "/downloads/Lidar_slope_lg.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/Lidar_slope_lg.jpg" | prepend: site.baseurl }}" alt="" title="LiDAR service sample" width="300" height="226" class="size-medium wp-image-15443" /></a><p class="caption-text">Click to view large format map detail</p></div>
 <p>The <a href="{{ "/data/elevation-terrain-data/2013-2014-lidar/" | prepend: site.baseurl }}">Wasatch Front LiDAR</a> elevation data collected 2013-2014 is now available as a service.

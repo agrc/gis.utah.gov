@@ -1,21 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Important GIS Web Services Continuity Notes from DNR and AGRC'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: 2016-12-20 23:21:12
-categories:
-- Featured
 tags:
-- HTTP
-- HTTPS
-- best practices
-- basemaps
-- discover
-
+  - best practices
+  - discover
+published: true
+date: 2016-12-20 23:21:12
+title: Important GIS Web Services Continuity Notes from DNR and AGRC
+categories:
+  - Featured
 ---
 
 GIS web services are relied upon by increasingly. Here are two important service update announcements:

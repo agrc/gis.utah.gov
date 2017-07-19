@@ -1,20 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Utah PLSS Parcel Fabric Update'
+layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2016-12-15 22:57:07
-categories:
-- Featured
 tags:
-- public lands survey
-- SITLA
-- AGRC
-- cadastre
-
+  - cadastre
+  - public lands survey
+  - sitla
+published: true
+date: 2016-12-15 22:57:07
+title: Utah PLSS Parcel Fabric Update
+categories:
+  - Featured
 ---
 
 The final extract for the [Utah PLSS Parcel Fabric](http://mapserv.utah.gov/PLSS) has been delivered to AGRC by the BLM and its contractors. The PLSS map layer is now actively being maintained by AGRC, and work continues to convert existing PLSS survey control point documentation (tie-sheets) to digital formats in preparation for adjusting the Fabric in each county. We estimate 40% of the existing control points now have validated digital geographic coordinates. 

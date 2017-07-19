@@ -1,24 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: Utah Acquires High Resolution Aerial Photography License
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 16363
-wordpress_url: http://gis.utah.gov/?p=16363
-date: '2015-02-02 16:00:36 -0700'
-date_gmt: '2015-02-02 23:00:36 -0700'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags: []
+published: true
+date: 2015-02-02 16:00:36 -0700
+title: Utah Acquires High Resolution Aerial Photography License
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <p>Last month (January 2015), AGRC led an effort to purchase a license to Google's statewide high resolution aerial photography (6" pixels) on behalf of a partnership of state, regional, and local government organizations. The license has been purchased and AGRC staff are currently working to accept delivery of the imagery and web services from Google before it is released to the broader user community. We expect to have information on accessing these resources later this month.</p>
 <p>Many thanks the original partner agencies whose support made this purchase possible! (<em>logos shown at right</em>)<br />

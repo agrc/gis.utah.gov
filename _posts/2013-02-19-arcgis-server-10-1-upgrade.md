@@ -1,25 +1,18 @@
 ---
-layout: post
 status: publish
-published: false
-title: ArcGIS Server 10.1 Upgrade
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 12802
-wordpress_url: http://gis.utah.gov/?p=12802
-date: '2013-02-19 15:56:15 -0700'
-date_gmt: '2013-02-19 22:56:15 -0700'
-categories:
-- Uncategorized
-- Home
-- Developer
-- Featured
 tags: []
+published: false
+date: 2013-02-19 15:56:15 -0700
+title: ArcGIS Server 10.1 Upgrade
+categories:
+  - Developer
+  - Featured
+  - Home
+  - Uncategorized
 ---
 <p>AGRC is planning to upgrade our main ArcGIS Server instance (<a href="http://mapserv.utah.gov/arcgis/rest">mapserv.utah.gov/arcgis/rest</a>) to version 10.1 within the next few weeks. For the majority of our users, we do not think that this will have much affect on services. However, if you access our base map caches through SOAP/WMS (this includes ArcMap users) there will be breaking changes.</p>
 <p>The URL's to our cached base map services will be changing. This is due to ArcGIS Server not supporting the "-" character in service names at 10.1. Here's a table mapping the URL changes:<br />

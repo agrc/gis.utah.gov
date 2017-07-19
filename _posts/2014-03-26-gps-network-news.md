@@ -1,29 +1,20 @@
 ---
-layout: post
 status: publish
-published: true
-title: GPS Network News
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 14644
-wordpress_url: http://gis.utah.gov/?p=14644
-date: '2014-03-26 15:03:26 -0600'
-date_gmt: '2014-03-26 21:03:26 -0600'
-categories:
-- GPS-surveyor
-- Featured
 tags:
-- utah
-- agrc
-- surveyor
-- GPS Network
-- TURN GPS
-- pivot
+  - gps network
+  - pivot
+  - surveyor
+  - turn gps
+published: true
+date: 2014-03-26 15:03:26 -0600
+title: GPS Network News
+categories:
+  - Featured
+  - GPS-surveyor
 ---
 <p><a href="{{ "/downloads/GPSNetwork_March2014.png" | prepend: site.baseurl }}"><img src="{{ "/images/GPSNetwork_March2014-291x300.png" | prepend: site.baseurl }}" alt="" title="GPSNetwork_March2014" width="291" height="300" class="inline-text-left" /></a>On April 1, 2014 the State of Utah AGRC will complete its upgrade of the legacy software platform for The Utah Reference Network GPS (TURN GPS) to the new Trimble Pivot Platform. AGRC has provided many updates on the progress of this upgrade to existing users who should be prepared now for the old system final shutdown date on April 1.</p>
 <p>The Pivot platform offers several new features that improve functionality for both system administrators and the end users, some of which are mobile apps for monitoring the health of the system while in the field. Please keep in mind that the coordinate frame on the new platform has been updated to North American Datum of 1983, 2011 adjustment published by the National Geodetic Survey (NGS). </p>

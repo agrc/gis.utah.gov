@@ -1,27 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: "#utmap: A Twitter Tag for Utah GIS"
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 9684
-wordpress_url: http://gis.utah.gov/?p=9684
-date: '2012-06-07 12:41:35 -0600'
-date_gmt: '2012-06-07 18:41:35 -0600'
-categories:
-- Featured
 tags:
-- utah
-- gis
-- map
-- ugic
-- twitter
+  - twitter
+  - ugic
+published: true
+date: 2012-06-07 12:41:35 -0600
+title: '#utmap: A Twitter Tag for Utah GIS'
+categories:
+  - Featured
 ---
 <p><a href="https://twitter.com/#!/search/realtime/%23utmap"><img class="inline-text-left" title="view #utmap posts on Twitter" src="{{ "/images/twitterwhaleutmap-300x160.jpg" | prepend: site.baseurl }}" alt="" width="300" height="160" /></a>Twitter is a low commitment social media tool that can be great for professional collaboration and sharing. It allows users to quickly search and scan recent tweets (posts) for relevant information. And, the 140 character limit of Twitter's 'microblog' format is just a starting point. Tweets can include URL links (usually shortened using a URL shortener) that access additional information including pictures, blog posts, code samples, Google and other online documents, map locations, interactive maps, job postings, etc.</p>
 <p>The twitter web site and mobile apps, as well as popular third party twitter clients (<a href="http://hootsuite.com">hootsuite</a>, <a href="http://tweetdeck.com">tweetdeck</a>, etc) make it easy to view posts by specific individuals, groups, or keywords.</p>

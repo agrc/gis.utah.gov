@@ -1,23 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: State of Utah Global Positioning Reference Network, One-Time Maintenance Funding
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 12699
-wordpress_url: http://gis.utah.gov/?p=12699
-date: '2013-01-31 14:00:52 -0700'
-date_gmt: '2013-01-31 21:00:52 -0700'
-categories:
-- Uncategorized
-- Featured
 tags: []
+published: true
+date: 2013-01-31 14:00:52 -0700
+title: State of Utah Global Positioning Reference Network, One-Time Maintenance Funding
+categories:
+  - Featured
+  - Uncategorized
 ---
 <p><img src="{{ "/images/TURNGPS_MapsOnTheHill_Poster.jpg" | prepend: site.baseurl }}" align="right" alt="" title="TURNGPS_MapsOnTheHill_Poster" width="387" height="534" class="inline-text-left" />In 2005, the Utah Legislature, recognizing the need to support highly accurate GPS applications for surveying, engineering, construction, and GIS data<br />
 collection, passed into law UCA 63F-1-509 to fund the initial build-out of a real time GPS base station network. </p>

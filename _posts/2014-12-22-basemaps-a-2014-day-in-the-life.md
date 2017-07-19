@@ -1,24 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Basemaps: A 2014 Day in the Life'
+layout: post
 author:
   display_name: Steve Gourley
-  login: Steve Gourley
   email: sgourley@utah.gov
-  url: ''
-author_login: Steve Gourley
-author_email: sgourley@utah.gov
-wordpress_id: 16251
-wordpress_url: http://gis.utah.gov/?p=16251
-date: '2014-12-22 10:45:14 -0700'
-date_gmt: '2014-12-22 17:45:14 -0700'
-categories:
-- Developer
 tags:
-- basemap
-- arcgis
+  - basemap
+published: true
+date: 2014-12-22 10:45:14 -0700
+title: 'Basemaps: A 2014 Day in the Life'
+categories:
+  - Developer
 ---
 <h3>A day in the life of Utah’s ArcGIS Server Basemaps 2014</h3>
 <p>On <a href="{{site.baseurl}}{% post_url 2014-01-14-a-day-in-the-life-of-utahs-arcgis-server-base-maps %}">Wednesday, November 6, 2013</a> we wrote about and displayed some charts displaying usage statistics for our basemaps. A year has passed and we have updated our graphs and included a few new ones. This year our usage stats were pulled from the first Wednesday in November which happened to be the 5th.</p>

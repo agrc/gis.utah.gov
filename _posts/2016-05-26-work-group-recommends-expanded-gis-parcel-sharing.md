@@ -1,30 +1,27 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Work Group Recommends Expanded GIS Parcel Sharing'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: 2016-05-26 16:44:03
-categories:
-- Featured
 tags:
-- GIS
-- SGID
-- AGRC
-- parcels
-- cadastral
-- cadastre
-- assessor
-- recorder
-- boundary
-- property
-- assessment
-- address
-- valuation
-- tax
-- UAC
+  - address
+  - assessment
+  - assessor
+  - boundary
+  - cadastral
+  - cadastre
+  - parcels
+  - property
+  - recorder
+  - tax
+  - uac
+  - valuation
+published: true
+date: 2016-05-26 16:44:03
+title: Work Group Recommends Expanded GIS Parcel Sharing
+categories:
+  - Featured
 ---
 
 **A Proposal for Voluntary Expanding Parcel Data Sharing**

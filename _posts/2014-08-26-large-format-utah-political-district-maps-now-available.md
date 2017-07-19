@@ -1,33 +1,23 @@
 ---
-layout: post
 status: publish
-published: true
-title: Large Format Utah Political District Maps Now Available
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 15437
-wordpress_url: http://gis.utah.gov/?p=15437
-date: '2014-08-26 18:00:53 -0600'
-date_gmt: '2014-08-27 00:00:53 -0600'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags:
-- sgid
-- utah
-- political
-- House
-- senate
-- Districts
-- agrc
-- elections
-- lt. governor
+  - districts
+  - elections
+  - house
+  - lt. governor
+  - political
+  - senate
+published: true
+date: 2014-08-26 18:00:53 -0600
+title: Large Format Utah Political District Maps Now Available
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <div class="caption"><a href="{{ "/downloads/district59example.png" | prepend: site.baseurl }}"><img src="{{ "/images/district59example-300x226.png" | prepend: site.baseurl }}" alt="" title="district59example" width="300" height="226" class="size-medium wp-image-15443" /></a><p class="caption-text">Click to view large format map detail</p></div>This month, AGRC and the Lt. Governor's office published large format (34 x 22 inches) maps of every Utah House and Senate District. The maps are in .pdf format and can be downloaded at no charge so you can print them using the digital print shop of your choice. Many printers allow printing orders for large format pdf files to be placed online for pickup or delivery. Remember that the detail on the maps is much greater, due to their large format size, than what you can see on your computer screen without zooming in.</p>
 <p>The maps are accessible from the <a href="http://elections.utah.gov/map/district-maps">Lt. Governor's Election Districts interactive web map</a>, which also allows custom map views and access to 8.5 x 11 inch district maps. Alternatively, the files, can be accessed from the list below. </p>

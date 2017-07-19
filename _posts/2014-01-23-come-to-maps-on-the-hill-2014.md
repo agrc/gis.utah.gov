@@ -1,27 +1,17 @@
 ---
-layout: post
 status: publish
-published: false
-title: Come to Maps on the Hill 2014!
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 14427
-wordpress_url: http://gis.utah.gov/?p=14427
-date: '2014-01-23 14:57:28 -0700'
-date_gmt: '2014-01-23 21:57:28 -0700'
-categories:
-- Featured
 tags:
-- utah
-- agrc
-- Maps on the Hill
-- '2014'
-- Utah State Capitol
+  - '2014'
+  - maps on the hill
+published: false
+date: 2014-01-23 14:57:28 -0700
+title: Come to Maps on the Hill 2014!
+categories:
+  - Featured
 ---
 <p>Maps on the Hill is an annual event sponsored by <a href="http://ugic.info/">UGIC</a>, and held during the Utah legislative session as a means for professional and student mapmakers in Utah to share their maps with elected officials and the public. </p>
 <p>When: Wednesday, January 29, 2014: Displays will be up from 10:30am-12:30pm<br />

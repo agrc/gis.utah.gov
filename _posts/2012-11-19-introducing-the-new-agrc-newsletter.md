@@ -1,23 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: Introducing the new AGRC Newsletter
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 12254
-wordpress_url: http://gis.utah.gov/?p=12254
-date: '2012-11-19 16:44:25 -0700'
-date_gmt: '2012-11-19 23:44:25 -0700'
-categories:
-- Uncategorized
-- Featured
 tags: []
+published: true
+date: 2012-11-19 16:44:25 -0700
+title: Introducing the new AGRC Newsletter
+categories:
+  - Featured
+  - Uncategorized
 ---
 <p>On November 14, AGRC sent the first edition of a short-format <a href="http://us2.campaign-archive1.com/?u=0f7773ca3c6d02d1c38851ee9&amp;id=48c1ab7af9&amp;e=[UNIQID]" target="_blank">newsletter</a> to subscribers who signed up on the gis.utah.gov website.</p>
 <p>The newsletter features recent announcements, blog posts and other information relevant to Utah's GIS and mapping community.</p>

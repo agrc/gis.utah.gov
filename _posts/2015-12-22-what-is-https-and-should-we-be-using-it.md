@@ -1,24 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'What is HTTPS, and should we be using it? '
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 18361
-wordpress_url: http://gis.utah.gov/?p=18361
-date: '2015-12-22 14:45:30 -0700'
-date_gmt: '2015-12-22 21:45:30 -0700'
-categories:
-- Featured
 tags:
-- agol
-- https
+  - agol
+published: true
+date: 2015-12-22 14:45:30 -0700
+title: 'What is HTTPS, and should we be using it? '
+categories:
+  - Featured
 ---
 <p>Hypertext Transfer Protocol Secure (https) combines the Hypertext Transfer Protocol (HTTP) with the Secure Socket Layer (SSL)/Transport Layer Security (TLS) protocol. TLS is an authentication and security protocol widely implemented in browsers and Web servers.  </p>
 <p>In a nutshell, it allows your browser to make a secure connection to a trusted server, with security certificate, to enable 2 way encrypted data transfer between the providing server and the client.</p>

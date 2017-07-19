@@ -1,26 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: UDOT features AGRC basemaps during International User Conference
+layout: post
 author:
   display_name: AGRC Staff
-  login: Map Utah
   email: agrc@utah.gov
-  url: ''
-author_login: Map Utah
-author_email: agrc@utah.gov
-wordpress_id: 10459
-wordpress_url: http://gis.utah.gov/?p=10459
-date: '2012-07-25 10:14:45 -0600'
-date_gmt: '2012-07-25 16:14:45 -0600'
-categories:
-- Featured
 tags:
-- basemap
-- utah
-- agrc
-- esri
+  - basemap
+published: true
+date: 2012-07-25 10:14:45 -0600
+title: UDOT features AGRC basemaps during International User Conference
+categories:
+  - Featured
 ---
 <img src="{{ "/images/JohnThomas-150x150.png" | prepend: site.baseurl }}" class="inline-text-right pull-right" />
 

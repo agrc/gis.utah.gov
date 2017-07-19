@@ -1,16 +1,15 @@
 ---
-layout: post
 status: publish
-published: false
-title: 'SGID Database Upgrade 10.0 to 10.2: Date of Upgrade 7/28/2016'
+layout: post
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
+tags: []
+published: false
 date: 2016-07-28 17:09:37
+title: 'SGID Database Upgrade 10.0 to 10.2: Date of Upgrade 7/28/2016'
 categories:
-- Featured
-tags:
-- sgid
+  - Featured
 ---
 
 This change was rolled back due to technical difficulties. It will be resecheduled for a later date.

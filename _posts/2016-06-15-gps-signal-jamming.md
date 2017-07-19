@@ -1,16 +1,14 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'GPS Signal Jamming'
+layout: post
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
+tags: []
+published: true
 date: 2016-06-15 21:48:58
-categories:
-
-tags:
-
+title: GPS Signal Jamming
+categories: []
 ---
 
 GPS signals in the Western US may be **jammed** due to testing conducted by the US Department of Defense. There are no references to the specific types of tests but the area of impact, dates, and times of the tests are listed below.

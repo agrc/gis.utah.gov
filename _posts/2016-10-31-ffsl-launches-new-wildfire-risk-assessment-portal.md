@@ -1,21 +1,20 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'FFSL Launches New Wildfire Risk Assessment Portal'
+layout: post
 author:
   display_name: Buck Ehler
   email: buckehler@utah.gov
-date: 2016-10-31 21:32:36
-categories:
-- Featured
 tags:
-- DNR
-- Fire
-- emergency management
-- public safety
-- land management
-- WRAP
+  - dnr
+  - emergency management
+  - fire
+  - land management
+  - public safety
+published: true
+date: 2016-10-31 21:32:36
+title: FFSL Launches New Wildfire Risk Assessment Portal
+categories:
+  - Featured
 ---
 
 Earlier this summer, The [Utah Division of Forestry, Fire and State Lands](http://www.ffsl.utah.gov/) launched a new Wildfire Risk Assessment Portal (uWRAP) to educate and inform the public and land management professionals. The portal assesses the users location or area of interest and provides general and/or detailed information about the wildfire risks associated with a location or area.

@@ -1,29 +1,21 @@
 ---
-layout: post
 status: publish
-published: true
-title: New Political Districts & Voting Precincts datasets
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 8467
-wordpress_url: http://gis.utah.gov/?p=8467
-date: '2012-05-02 15:55:01 -0600'
-date_gmt: '2012-05-02 21:55:01 -0600'
-categories:
-- Home
-- Data
-- Featured
-- SGID Blog
 tags:
-- map
-- redistricting
-- political
-- voting
+  - political
+  - redistricting
+  - voting
+published: true
+date: 2012-05-02 15:55:01 -0600
+title: New Political Districts & Voting Precincts datasets
+categories:
+  - Data
+  - Featured
+  - Home
+  - SGID Blog
 ---
 <p><strong>New Utah Political Districts:</strong></p>
 <p><a href="{{ "/data/political/2012-2021-house-senate-congressional-districts/" | prepend: site.baseurl }}">Political districts for state-level offices</a> (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections in 2012 and ongoing representation after the new representatives are installed on<br />

@@ -1,24 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: Utah Oil and Gas GIS Data Updates
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 9869
-wordpress_url: http://gis.utah.gov/?p=9869
-date: '2012-06-14 17:13:42 -0600'
-date_gmt: '2012-06-14 23:13:42 -0600'
-categories:
-- Uncategorized
-- Data
-- SGID Blog
 tags: []
+published: true
+date: 2012-06-14 17:13:42 -0600
+title: Utah Oil and Gas GIS Data Updates
+categories:
+  - Data
+  - SGID Blog
+  - Uncategorized
 ---
 <div class="caption"><img class="size-medium wp-image-9763" title="utah oil and gas wells" src="{{ "/images/utah-oil-and-gas-wells.png" | prepend: site.baseurl }}" alt="" width="256" height="256" /><p class="caption-text">Utah Oil and Gas Well GIS Data</p></div>
 <p>As a reminder, the GIS dataset depicting Utah Oil and Gas Wells is updated nightly on AGRC's ArcSDE (v.10) database server, via a database connection to the Division of Oil, Gas and Mining (DOGM).</p>

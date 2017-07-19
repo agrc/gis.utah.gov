@@ -1,23 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Quick JavaScript Tip: The Arguments Object'
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 14302
-wordpress_url: http://gis.utah.gov/?p=14302
-date: '2013-12-24 06:55:10 -0700'
-date_gmt: '2013-12-24 13:55:10 -0700'
-categories:
-- Developer
 tags:
-- javascript
+  - javascript
+published: true
+date: 2013-12-24 06:55:10 -0700
+title: 'Quick JavaScript Tip: The Arguments Object'
+categories:
+  - Developer
 ---
 <p>Recently, as I was slowly working my way through <a href="http://rmurphey.com/">Rebecca Murphy's</a> excellent <a href="https://github.com/rmurphey/js-assessment">js-assessment test suite</a>, I ran into a problem that was quite vexing. I was creating a function that <a href="https://github.com/rmurphey/js-assessment/blob/master/tests/app/functions.js#L109-119">was to take an arbitrary number of arguments and combine them with an existing array</a>. I thought that this would be as trivial as using the concat method on the existing array and passing in the arguments object. However, as you can see below, it didn't work.</p>
 <p><a class="jsbin-embed" href="http://jsbin.com/uSuWEVuj/2/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>

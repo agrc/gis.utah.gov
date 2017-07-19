@@ -1,19 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'AGRC Presentations at UGIC'
+layout: post
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
-date: 2017-05-23 21:20:00
-categories:
-- Featured
 tags:
-- UGIC
-- conference
-- presentations
-
+  - conference
+  - presentations
+  - ugic
+published: true
+date: 2017-05-23 21:20:00
+title: AGRC Presentations at UGIC
+categories:
+  - Featured
 ---
 
 AGRC staff had a great time last week at the UGIC Conference in Park City. Every year we appreciate the opportunity to meet face to face with all the great people doing important work in the GIS field in Utah. If you missed playing AGRC's annual Where in Utah game in the program, you can still [play it online](https://docs.google.com/presentation/d/1Z7QlDokFa4pedUd210-DauqB5x3Be5Aco7JhLGdVc5s/edit?usp=sharing), note the link to the answers at the bottom of the slide. 

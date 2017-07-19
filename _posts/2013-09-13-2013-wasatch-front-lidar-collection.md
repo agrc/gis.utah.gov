@@ -1,44 +1,30 @@
 ---
-layout: post
 status: publish
-published: false
-title: '2013 Wasatch Front LiDAR Collection '
+layout: post
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 13729
-wordpress_url: http://gis.utah.gov/?p=13729
-date: '2013-09-13 10:22:50 -0600'
-date_gmt: '2013-09-13 16:22:50 -0600'
-categories:
-- Uncategorized
-- Home
-- Data
-- Featured
-- SGID Blog
 tags:
-- SDE
-- sgid
-- Water
-- utah
-- gis
-- download
-- agrc
-- information
-- elevation
-- terrain
-- DEM
-- raster
-- topography
-- contour
-- topographic
-- topo
-- usgs
-- LiDAR
+  - contour
+  - dem
+  - elevation
+  - lidar
+  - raster
+  - terrain
+  - topo
+  - topographic
+  - topography
+  - usgs
+  - water
+published: false
+date: 2013-09-13 10:22:50 -0600
+title: '2013 Wasatch Front LiDAR Collection '
+categories:
+  - Data
+  - Featured
+  - Home
+  - SGID Blog
+  - Uncategorized
 ---
 <div class="caption"><a href="{{ "/downloads/2013-Lidar-Project-Area.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/2013-Lidar-Project-Area-231x300.jpg" | prepend: site.baseurl }}" alt="" title="2013 LiDAR Project Area" width="231" height="300" class="size-medium wp-image-13735" /></a><p class="caption-text">2013 LiDAR Project Area</p></div>AGRC is in the process of finalizing a contract with <a href="http://www.watershedsciences.com/" title="WSI">Watershed Sciences Inc. (WSI)</a> to acquire 1,352 square miles of USGS Quality Level 1 LiDAR elevation data in the Fall of 2013. WSI won a competitive bid process this summer, that attracted 7 vendor submissions, for a project area that includes: the urbanized areas of the Salt Lake and Utah Valleys and areas along the Wasatch Fault from Sanpete County north into Onieda County in southeastern Idaho. </p>
 <p>LiDAR stands for Light Detecting and Ranging. LiDAR data is collected using an airplane-mounted laser and a sensor that records the laser pulse reflections from surfaces on/near the ground. The timing of the pulse returns provides a surrogate for measuring distance. When the distance measurements are combined with the precise instantaneous position of the aircraft from its onboard GPS, the elevation and position of surface of the earth, structures, and vegetation can be measured with high precision.</p>

@@ -1,14 +1,14 @@
 ---
-layout: post
 status: publish
-published: true
-title: '3D Elevation Program Proposal'
+layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2016-03-30 22:03:31
-categories: []
 tags: []
+published: true
+date: 2016-03-30 22:03:31
+title: 3D Elevation Program Proposal
+categories: []
 ---
 
 [![3D Elevation Program]({{ "/images/3DEP_Proposal_sm.png" | prepend: site.baseurl }} 'click to enlarge')]({{ "/images/3DEP_Proposal.png" | prepend: site.baseurl }})

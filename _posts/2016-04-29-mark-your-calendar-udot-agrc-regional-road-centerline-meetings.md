@@ -1,17 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Mark Your Calendar: UDOT/AGRC Regional Road Centerline Meetings - Correction from Newsletter'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: 2016-04-29 19:12:17
-categories:
-- Featured
 tags:
-- SGID
-- Roads
+  - roads
+published: true
+date: 2016-04-29 19:12:17
+title: 'Mark Your Calendar: UDOT/AGRC Regional Road Centerline Meetings - Correction
+  from Newsletter'
+categories:
+  - Featured
 ---
 
 Utah's statewide road centerline dataset, built in partnership with local government GIS staff expertise, is a highly valued state data asset.

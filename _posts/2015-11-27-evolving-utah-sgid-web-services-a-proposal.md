@@ -1,30 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Evolving Utah SGID Web Services: A Proposal'
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 18149
-wordpress_url: http://gis.utah.gov/?p=18149
-date: '2015-11-27 13:45:52 -0700'
-date_gmt: '2015-11-27 20:45:52 -0700'
-categories:
-- Uncategorized
-- Featured
 tags:
-- sgid
-- Data
-- gis
-- trends
-- tracking
-- centralize
-- layers
+  - centralize
+  - data
+  - tracking
+published: true
+date: 2015-11-27 13:45:52 -0700
+title: 'Evolving Utah SGID Web Services: A Proposal'
+categories:
+  - Featured
+  - Uncategorized
 ---
 <div class="caption"><a href="{{ "/downloads/Screen-Shot-2015-11-27-at-12.39.23-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-11-27-at-12.39.23-PM-300x220.png" | prepend: site.baseurl }}" alt="" title="The pendulum swings back and forth..." width="300" height="220" class="size-medium wp-image-18156" /></a><p class="caption-text">The pendulum swings back and forth...</p></div>As time passes in the GIS and IT world, sometimes it feels like there is a pendulum slowly swinging back and forth along the continuum between centralization and decentralization. Mainframes and early GIS software required centralization. PC’s and later web services, smart phones, and tablets seem to define decentralization. But then again, consider the roles of app stores, consolidated and cloud-based storage and email servers, ArcGIS Online (AGOL), etc which are not centralized in a single location, but certainly have a centralized impact and feel.</p>
 <p>The topic of this post is how best to organize, and provide access to Utah’s excellent and voluminous GIS data content assets. The basic question in 2015 and forward, is how to play to the strengths of decentralization while providing 'one stop shopping’ ease of access. What follows is a little background and a proposal for a simple framework that harnesses both ends of the pendulum’s swing. </p>

@@ -1,27 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: Important Changes for SGID ArcSDE Connection Users
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 18199
-wordpress_url: http://gis.utah.gov/?p=18199
-date: '2015-11-30 11:35:11 -0700'
-date_gmt: '2015-11-30 18:35:11 -0700'
+tags: []
+published: true
+date: 2015-11-30 11:35:11 -0700
+title: Important Changes for SGID ArcSDE Connection Users
 categories:
-- Data
-- Featured
-tags:
-- sgid
-- utah
-- gis
-- database
+  - Data
+  - Featured
 ---
 <p><a href="{{ "/downloads/Screen-Shot-2015-11-30-at-11.14.14-AM1.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-11-30-at-11.14.14-AM1.png" | prepend: site.baseurl }}" alt="" title="Screen Shot 2015-11-30 at 11.14.14 AM" width="462" height="330" class="inline-text-right" /></a></p>
 <p>AGRC is in the process of migrating our MS SQL database environment from Microsoft SQL Server 2008 to Microsoft SQL Server 2014.<em> <strong>This migration will only impact users who use the preferred 'direct connect' route to use SGID ArcSDE database over the State Network</strong></em>. Keep in mind that many counties and cities use the DTS operated State Network as their ISP, so the impact will extend beyond state government settings. </p>

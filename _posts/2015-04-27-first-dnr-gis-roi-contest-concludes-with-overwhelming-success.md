@@ -1,27 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: First DNR GIS ROI Contest Concludes with Overwhelming Success
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 17182
-wordpress_url: http://gis.utah.gov/?p=17182
-date: '2015-04-27 16:19:36 -0600'
-date_gmt: '2015-04-27 22:19:36 -0600'
-categories:
-- Organizations
-- Featured
 tags:
-- gis
-- dnr
-- ROI
-- Return on investment
+  - dnr
+  - roi
+published: true
+date: 2015-04-27 16:19:36 -0600
+title: First DNR GIS ROI Contest Concludes with Overwhelming Success
+categories:
+  - Featured
+  - Organizations
 ---
 <p>The Utah Department of Natural Resources (DNR) honored six employees from five divisions as a part of its GIS Return on Investment (ROI) Contest. Tanna Fullenkamp, from Forestry, Fire, & State Lands was named grand prize winner for her sovereign lands GIS project.</p>
 <p>Fullenkamp’s project demonstrated effective GIS management of hundreds or thousands of records distributed throughout the state. In her case, sovereign land properties and leases can now be identified, tracked and queried spatially, which leads to less errors and more revenue. Rather than sourcing information from physical files, the lease and property data is immediately available to staff, which saves time and money while improving customer service.</p>

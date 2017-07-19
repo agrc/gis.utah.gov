@@ -1,22 +1,15 @@
 ---
-layout: post
 status: publish
-published: true
-title: My Favorite Sublime Text 3 Plugins & Configs
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 14498
-wordpress_url: http://gis.utah.gov/?p=14498
-date: '2014-01-29 15:30:07 -0700'
-date_gmt: '2014-01-29 22:30:07 -0700'
-categories:
-- Developer
 tags: []
+published: true
+date: 2014-01-29 15:30:07 -0700
+title: My Favorite Sublime Text 3 Plugins & Configs
+categories:
+  - Developer
 ---
 <p>I'm a huge fan of <a href="http://www.sublimetext.com/3">Sublime Text 3</a>. I love it's simplicity and strong package community. Here's a list of my favorite packages and config tweaks:</p>
 <h3>

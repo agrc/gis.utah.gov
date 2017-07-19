@@ -1,30 +1,24 @@
 ---
-layout: post
 status: publish
-published: true
-title: Authoritative Utah Geocoding Results
+layout: post
 author:
   display_name: Steve Gourley
-date: '2015-02-12 18:52:22 -0700'
-date_gmt: '2015-02-13 01:52:22 -0700'
-categories:
-- Data
-- Developer
-- Featured
-- SGID Blog
-- Locations Services
 tags:
-- sgid
-- Geocoding
-- Roads
-- agrc
-- api
-- mapserv
-- quality assurance
-- updates
-- QAQC
-- addresses
-- find
+  - api
+  - geocoding
+  - mapserv
+  - qaqc
+  - quality assurance
+  - roads
+published: true
+date: 2015-02-12 18:52:22 -0700
+title: Authoritative Utah Geocoding Results
+categories:
+  - Data
+  - Developer
+  - Featured
+  - Locations Services
+  - SGID Blog
 ---
 <p><a href="{{ "/downloads/Screen-Shot-2015-02-12-at-6.49.06-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-02-12-at-6.49.06-PM.png" | prepend: site.baseurl }}" alt="" title="Screen Shot 2015-02-12 at 6.49.06 PM" width="219" height="266" class="inline-text-left" /></a>
 <h3>Geocoding Assurance <em>or</em> Why you should trust the results</h3>

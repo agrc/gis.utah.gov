@@ -1,27 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Google Imagery: WMS and WMTS Imagery Services, & Other Reminders'
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 17303
-wordpress_url: http://gis.utah.gov/?p=17303
-date: '2015-04-30 11:57:15 -0600'
-date_gmt: '2015-04-30 17:57:15 -0600'
-categories:
-- Data
-- Featured
 tags:
-- aerial photography
-- utah
-- google
-- high resolution
+  - aerial photography
+  - google
+  - high resolution
+published: true
+date: 2015-04-30 11:57:15 -0600
+title: 'Google Imagery: WMS and WMTS Imagery Services, & Other Reminders'
+categories:
+  - Data
+  - Featured
 ---
 
 <div class="grid pop">

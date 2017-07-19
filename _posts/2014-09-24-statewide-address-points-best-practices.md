@@ -1,27 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Statewide Address Points: Best Practices'
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 15633
-wordpress_url: http://gis.utah.gov/?p=15633
-date: '2014-09-24 15:04:25 -0600'
-date_gmt: '2014-09-24 21:04:25 -0600'
-categories:
-- Uncategorized
-- Data
-- Featured
 tags:
-- statewide
-- address points
-- best practices
+  - address points
+  - best practices
+published: true
+date: 2014-09-24 15:04:25 -0600
+title: 'Statewide Address Points: Best Practices'
+categories:
+  - Data
+  - Featured
+  - Uncategorized
 ---
 <p>AGRC has been working with county addressing authorities and GIS staff to develop a statewide address point dataset.  We are now using address points as the primary means of locating an address, with the location along a street segment as an alternate means.  Address points can provide a more accurate location than a geolocated point along a street segment.  This is particularly important for quickly dispatching public safety response to a home, business or other location.  </p>
 <p>We have developed what we believe are best practices for address points: </p>

@@ -1,27 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: How To Use AGRC Base Maps in QGIS
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 16332
-wordpress_url: http://gis.utah.gov/?p=16332
-date: '2015-01-20 07:51:04 -0700'
-date_gmt: '2015-01-20 14:51:04 -0700'
-categories:
-- Uncategorized
-- Developer
 tags:
-- mapping
-- arcgis
-- open source
-- base maps
+  - base maps
+  - open source
+published: true
+date: 2015-01-20 07:51:04 -0700
+title: How To Use AGRC Base Maps in QGIS
+categories:
+  - Developer
+  - Uncategorized
 ---
 <p>Most people know about AGRC&#39;s awesome <a href="{{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}">base maps</a>. They are <a href="{{site.baseurl}}{% post_url 2014-12-22-basemaps-a-2014-day-in-the-life %}">very popular</a> and provide high quality cartography using the latest and greatest data from the <a href="{{ "/data/" | prepend: site.baseurl }}">Utah SGID</a>. But did you know that they provide a <a href="http://en.wikipedia.org/wiki/Web_Map_Tile_Service">WMTS</a> service that can be consumed in non-ESRI products?</p>
 <p>Here&#39;s how to load our base maps in <a href="http://www.qgis.org/en/site/">QGIS 2.6.1</a>:</p>

@@ -1,23 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Utah SGID Statewide Roads Data Layer Updates 06/19/2017'
+layout: post
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2017-06-19
-categories:
-- Data
-- Featured
 tags:
-- SGID
-- Data
-- Utah
-- Roads
-- Centerlines
-- Statewide
-- GIS
+  - data
+  - roads
+published: true
+date: 2017-06-19
+title: Utah SGID Statewide Roads Data Layer Updates 06/19/2017
+categories:
+  - Data
+  - Featured
 ---
 
 Updates were made recently to the SGID10.Transportation.Roads feature class that resides on the [Utah SGID ArcSDE database server]({{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}).

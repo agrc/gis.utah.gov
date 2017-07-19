@@ -1,23 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: TURN GPS Network
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 16226
-wordpress_url: http://gis.utah.gov/?p=16226
-date: '2014-12-17 11:15:13 -0700'
-date_gmt: '2014-12-17 18:15:13 -0700'
-categories:
-- GPS-surveyor
-- Featured
 tags: []
+published: true
+date: 2014-12-17 11:15:13 -0700
+title: TURN GPS Network
+categories:
+  - Featured
+  - GPS-surveyor
 ---
 <p><a href="{{ "/downloads/UpgradedNetwork_Dec2014.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/UpgradedNetwork_Dec2014.jpg" | prepend: site.baseurl }}" alt="" title="UpgradedNetwork_Dec2014" width="450" height="248" class="inline-text-left" /></a>On December 2, 2014 the State of Utah AGRC completed its upgrade of the Trimble Pivot Platform software running the The Utah Reference Network (TURN) GPS. </p>
 <p>The Pivot Platform 3.1.5 will improve functionality for system administrators and for monitoring the health of the system. </p>

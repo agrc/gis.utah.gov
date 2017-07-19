@@ -1,19 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Municipal Boundaries update for first quarter (Calendar year)'
+layout: post
 author:
   display_name: MHeagin
   email: mheagin@utah.gov
-date: 2017-03-29 16:57:20
-categories:
-- Featured
 tags:
-- Municipalities
-- Municipal Boundaries
-- 
-
+  - municipal boundaries
+  - municipalities
+published: true
+date: 2017-03-29 16:57:20
+title: Municipal Boundaries update for first quarter (Calendar year)
+categories:
+  - Featured
 ---
 
 Municipal Boundaries update for first quarter 2017 (calendar year)

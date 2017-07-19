@@ -1,16 +1,15 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Removing and Replacing the Esri Web Adaptor'
+layout: post
 author:
   display_name: Steve Gourley
   email: SGourley@utah.gov
+tags: []
+published: true
 date: 2017-03-07 05:10:58
+title: Removing and Replacing the Esri Web Adaptor
 categories:
-- Developer
-tags:
-
+  - Developer
 ---
 
 The [Esri web adaptor](http://server.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm) is a small 

@@ -1,29 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: AGRC presents to Legislature
+layout: post
 author:
   display_name: AGRC Staff
-  login: Map Utah
   email: agrc@utah.gov
-  url: ''
-author_login: Map Utah
-author_email: agrc@utah.gov
-wordpress_id: 3694
-wordpress_url: http://gis.utah.gov/?p=3694
-date: '2011-11-17 08:34:02 -0700'
-date_gmt: '2011-11-17 15:34:02 -0700'
-categories:
-- Featured
 tags:
-- Data
-- utah
-- gis
-- map
-- web services
-- legislature
-- presentation
+  - data
+  - legislature
+  - presentation
+  - web services
+published: true
+date: 2011-11-17 08:34:02 -0700
+title: AGRC presents to Legislature
+categories:
+  - Featured
 ---
 <p>AGRC had an opportunity to update the <a href="http://le.utah.gov/asp/interim/Commit.asp?Year=2011&amp;Com=INTPUT">Public Utilities and Technology Interim Committee</a> on its recent projects.  It was a great opportunity to bring some visibility to legislators on the work of AGRC as well as many of its agency partners and associates in digital mapping. The general theme was one of collaboration and AGRC striving to continue its mission as a central repository of data and services that support state agencies, local governments, and federal agencies in digital mapping. The general feedback seemed positive and legislators seemed interested in the various areas of GIS AGRC supports.</p>
 <p>Here's the presentation:</p>
