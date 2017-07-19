@@ -1,21 +1,14 @@
 ---
-layout: page
 status: publish
-published: true
-title: Google Imagery License
+layout: page
+tags: []
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 16971
-wordpress_url: http://gis.utah.gov/?page_id=16971
-date: '2015-03-10 14:54:47 -0600'
-date_gmt: '2015-03-10 20:54:47 -0600'
+published: true
+date: 2015-03-10 14:54:47 -0600
+title: Google Imagery License
 categories: []
-tags: []
 ---
 ### Background
 {: .text-left}

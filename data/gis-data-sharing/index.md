@@ -1,18 +1,15 @@
 ---
-layout: page
 status: publish
-published: true
-title: 'State - Local GIS Data Partnerships'
+layout: page
+tags:
+  - sharing
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
+published: true
 date: 2017-01-26 23:40:06
-categories:
-
-tags:
-- sharing
-- gis
-
+title: State - Local GIS Data Partnerships
+categories: []
 ---
 
 Statewide GIS map data layers fulfill a critical need for many organizational business needs, including:
