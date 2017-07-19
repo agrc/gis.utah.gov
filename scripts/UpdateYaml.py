@@ -7,7 +7,7 @@ A module that strips out the old wordpress yaml items
 '''
 import os
 import sys
-import yaml
+import ruamel.yaml as yaml
 
 unused_keys = ['author_login', 'author_email', 'wordpress_id', 'wordpress_url', 'date_gmt']
 unused_author_keys = ['login', 'url']
@@ -22,26 +22,14 @@ useless_tags = [
 
 
 def pluck_content(f):
-    #: test if it is a front matter containting page
-    if f.readline() != '---\n':
-        f.seek(pointer)
-
-        return None
-
-    #: create generater to read the file to the end of the front matter
-    readline = iter(f.readline, '')
-    readline = iter(readline.next, '---\n')
-
-    #: get pointer to end of front matter
-    [x for x in readline]
-
-    #: pointer is at the page content now
+    #: file should already be seeked to last yaml separater
     pointer = f.tell()
 
     #: create generator to read to the end of the file
     readline = iter(f.readline, '')
+    readline = iter(readline.next, '')
 
-    return readline
+    return ''.join(readline)
 
 
 def pluck_yaml(f):
@@ -95,7 +83,7 @@ def discover_files(walk_dir):
 
         for filename in files:
             _, extension = os.path.splitext(filename)
-            if extension.lower() != '.html':
+            if extension.lower() not in ['.html', '.md']:
                 continue
 
             file_path = os.path.join(root, filename)
@@ -103,22 +91,24 @@ def discover_files(walk_dir):
             print('\t- file %s (full path: %s)' % (filename, file_path))
 
             with open(file_path, 'r') as original, open(file_path + '.bak', 'w') as updated:
-                import pdb
-                pdb.set_trace()
-                front_matter = yaml.load(pluck_yaml(original))
+                front_matter = yaml.load(pluck_yaml(original), Loader=yaml.Loader)
+
+                if front_matter is None:
+                    print('skipping {}'.format(original))
+                    os.rename(file_path + '.bak', file_path)
+                    continue
+
                 front_matter = prune_keys(front_matter)
                 front_matter['tags'] = prune_tags(front_matter)
 
-                front_matter = yaml.dump(front_matter)
+                front_matter = yaml.dump(front_matter, Dumper=yaml.RoundTripDumper, block_seq_indent=2, default_flow_style=False, indent=2)
                 content = pluck_content(original)
 
-                print(front_matter)
-
-                updated.write('---')
+                updated.write('---\n')
                 updated.write(front_matter)
-                updated.write('---')
+                updated.write('---\n')
 
-                updated.write(''.join(content))
+                updated.write(content)
 
             os.rename(file_path + '.bak', file_path)
 
