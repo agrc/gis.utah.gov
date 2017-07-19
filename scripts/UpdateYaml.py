@@ -67,6 +67,9 @@ def prune_keys(front_matter):
 def prune_tags(front_matter):
     tags = front_matter['tags']
 
+    if tags is None:
+        return []
+
     ok_tags = set([x.lower() for x in tags if x not in useless_tags])
     ok_tags = list(ok_tags)
     ok_tags.sort()
