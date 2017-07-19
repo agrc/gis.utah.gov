@@ -1,14 +1,15 @@
 ---
-layout: page
 status: publish
-published: true
-title: 'How to Contribute to gis.utah.gov'
+layout: page
+title: How to Contribute to gis.utah.gov
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
-date: 2016-04-19 16:11:21
-categories: Tutorial
 tags: []
+published: true
+date: 2016-04-19 16:11:21
+categories:
+  - Tutorial
 ---
 
 The Utah GIS community accomplishes great things when working together. The [UGIC Conference](http://ugic.info/), the many [GIS User Groups]({{ "/about/organizations/user-groups/" | prepend: site.baseurl }}), and datasets like Statewide [Address Points]({{ "/data/location/address-data/" | prepend: site.baseurl }}) are some examples of the community working together to create meaningful products. This website is no different; contributions to gis.utah.gov are welcome and encouraged!

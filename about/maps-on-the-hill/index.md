@@ -1,14 +1,14 @@
 ---
-layout: page
 status: publish
-published: true
+layout: page
 title: Maps on the Hill
 author:
   display_name: Jessie Pechmann
-date: '2016-03-23 17:55:50 -0700'
-date_gmt: '2016-03-23 17:55:50 -0700'
-categories: [About]
 tags: []
+published: true
+date: 2016-03-23 17:55:50 -0700
+categories:
+  - About
 ---
  ![Maps on the Hill Logo]({{ "/images/MapsontheHillWEB_small-150x150.jpg" | prepend: site.baseurl }})
  {: .inline-text-right }
