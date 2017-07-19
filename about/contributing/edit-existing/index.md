@@ -1,14 +1,15 @@
 ---
-layout: page
 status: publish
-published: true
-title: 'How to Edit Existing Content on gis.utah.gov'
+layout: page
+title: How to Edit Existing Content on gis.utah.gov
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
-date: 2016-04-19 16:11:21
-categories: Tutorial
 tags: []
+published: true
+date: 2016-04-19 16:11:21
+categories:
+  - Tutorial
 ---
 
 **Method 1: Edit an existing page from website**
