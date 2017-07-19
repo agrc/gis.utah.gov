@@ -1,34 +1,21 @@
 ---
-layout: post
 status: publish
-published: true
-title: TURN GPS Network Updates
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 13790
-wordpress_url: http://gis.utah.gov/?p=13790
-date: '2013-09-13 12:41:14 -0600'
-date_gmt: '2013-09-13 18:41:14 -0600'
-categories:
-- GPS-surveyor
-- Data
-- Featured
-- Locations Services
 tags:
-- sgid
-- utah
-- agrc
-- survey
-- gps
-- turngps
-- surveying
-- surveyor
-- rtk
+  - rtk
+  - surveyor
+  - turngps
+published: true
+date: 2013-09-13 12:41:14 -0600
+title: TURN GPS Network Updates
+categories:
+  - Data
+  - Featured
+  - GPS-surveyor
+  - Locations Services
 ---
 <p>This week AGRC began a transition to updated TURN GPS Network software by doing the initial install on a separate server from the existing system. </p>
 <p>The two separate systems will operate independently for approximately four weeks. During this time we will be testing the new network and verifying the performance and precision against the existing system. During the transition there will be no disruption to the existing network and you can plan to do business as usual. </p>

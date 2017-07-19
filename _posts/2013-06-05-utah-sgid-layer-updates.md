@@ -1,37 +1,20 @@
 ---
-layout: post
 status: publish
-published: true
-title: Utah SGID Layer Updates
+layout: post
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 13262
-wordpress_url: http://gis.utah.gov/?p=13262
-date: '2013-06-05 14:47:11 -0600'
-date_gmt: '2013-06-05 20:47:11 -0600'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags:
-- sgid
-- Data
-- utah
-- gis
-- dataset
-- download
-- agrc
-- shapefile
-- geodatabase
-- information
-- database
-- society
-- health
+  - data
+  - health
+  - society
+published: true
+date: 2013-06-05 14:47:11 -0600
+title: Utah SGID Layer Updates
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <p>AGRC has updated some layers in the State Geographic Information Database (SGID). The updates are a result of the work that's been done for the Utah Broadband Project's, Community Anchor Institutions layer. During this update process AGRC did some house cleaning and consolidated some layers, with a common theme, into one layer. The layer that was consolidated has been removed from the SGID.</p>
 <p>The updated SGID layers are:<br />

@@ -1,18 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'DOGM Oil and Gas Wells Data Update'
+layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2017-06-29
-categories:
-- Data
-- Featured
 tags:
-- SGID
-- Data
+  - data
+published: true
+date: 2017-06-29
+title: DOGM Oil and Gas Wells Data Update
+categories:
+  - Data
+  - Featured
 ---
 
 On June 1, 2017, the Utah Division of Oil, Gas and Mining retired 5 old databases and went online with a new database. This prompted many changes to the data field names and content previously provided in the SGID (`SGID10.ENERGY.DNROilGasWells`, `SGID10.ENERGY.DNROilGasWells_HDBottom`, & `SGID10.ENERGY.DNROilGasWells_HDPath`).

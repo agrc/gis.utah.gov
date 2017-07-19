@@ -1,25 +1,17 @@
 ---
-layout: post
 status: publish
-published: false
-title: Implementing custom security in ArcGIS
+layout: post
 author:
   display_name: Steve Gourley
-  login: Steve Gourley
   email: sgourley@utah.gov
-  url: ''
-author_login: Steve Gourley
-author_email: sgourley@utah.gov
-wordpress_id: 10802
-wordpress_url: http://gis.utah.gov/?p=10802
-date: '2012-08-01 13:36:00 -0600'
-date_gmt: '2012-08-01 19:36:00 -0600'
-categories:
-- Developer
 tags:
-- arcgis
-- security
-- developer
+  - developer
+  - security
+published: false
+date: 2012-08-01 13:36:00 -0600
+title: Implementing custom security in ArcGIS
+categories:
+  - Developer
 ---
 <p>Securing ArcGIS services is often an after thought. I can speak from experience when saying that unchecking the box to 'Enable Web Access' on a map service was thought to be enough smoke and mirrors to secure a service behind a login screen. After all, if a person can't see the service in the REST services directory or when connected to the server via ArcCatalog, then that service must be secure. </p>
 <p>ArcGIS Server, by design, is multitenanted in the sense that one server is handling requests for many different applications and users. All of these applications have separate requirements and user bases and this is where the default install of ArcGIS Server breaks down.</p>

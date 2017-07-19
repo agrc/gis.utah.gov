@@ -1,29 +1,24 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Where and How? High Resolution Base Maps and Google Imagery Useage'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: 2016-09-30 16:55:53
-categories:
-- Featured
 tags:
-- imagery
-- aerial photography
-- google
-- discover
-- agrc
-- sgid
-- basemaps
-- orthophotography
-- GIS
-- CAD
-- web services
-- WMTS
-- WMS
-
+  - aerial photography
+  - cad
+  - discover
+  - google
+  - imagery
+  - orthophotography
+  - web services
+  - wms
+  - wmts
+published: true
+date: 2016-09-30 16:55:53
+title: Where and How? High Resolution Base Maps and Google Imagery Useage
+categories:
+  - Featured
 ---
 [![Google Imagery Usage Map]({{"/images/HighResImageryAndBaseMaps_Sept2016thumb.jpg" | prepend:site.baseurl}} "view high res usage map")]({{"/downloads/HighResImageryAndBaseMaps_Sept2016.pdf
 " | prepend:site.baseurl}}){:.inline-text-right}

@@ -1,23 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: New SDE Connection Properties for ArcGIS Desktop 10.x
+layout: post
 author:
   display_name: Michael Foulger
-  login: mfoulger
   email: michaelfoulger@utah.gov
-  url: ''
-author_login: mfoulger
-author_email: michaelfoulger@utah.gov
-wordpress_id: 10061
-wordpress_url: http://gis.utah.gov/?p=10061
-date: '2012-09-13 10:00:46 -0600'
-date_gmt: '2012-09-13 16:00:46 -0600'
-categories:
-- Data
-- Featured
 tags: []
+published: true
+date: 2012-09-13 10:00:46 -0600
+title: New SDE Connection Properties for ArcGIS Desktop 10.x
+categories:
+  - Data
+  - Featured
 ---
 
 Esri is now providing a tool to create an ArcSDE Connection File wherever you would like on your file system. The tool is located in the standard toolbox under Data Management -&gt; Workspace -&gt; Create ArcSDE Connection File.  Here's a look at where it's located, and what it looks like when filled out:

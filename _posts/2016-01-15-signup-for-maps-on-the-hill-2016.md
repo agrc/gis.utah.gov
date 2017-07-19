@@ -1,28 +1,19 @@
 ---
-layout: post
 status: publish
-published: false
-title: Signup for Maps on the Hill 2016
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 18420
-wordpress_url: http://gis.utah.gov/?p=18420
-date: '2016-01-15 16:39:59 -0700'
-date_gmt: '2016-01-15 23:39:59 -0700'
-categories:
-- Featured
 tags:
-- utah
-- mapping
-- ugic
-- legislature
-- Maps on the Hill
-- events
+  - events
+  - legislature
+  - maps on the hill
+  - ugic
+published: false
+date: 2016-01-15 16:39:59 -0700
+title: Signup for Maps on the Hill 2016
+categories:
+  - Featured
 ---
 <p>Maps on the Hill, supported by the Utah Geographic Information Council (UGIC) and AGRC, will be held on March 1, 2016. This event, in its fifth year, is a good opportunity for students and professionals to share maps, mapping tools, and mapping projects with elected officials, fellow practitioners, and the public.</p>
 <p><strong><a href="https://docs.google.com/forms/d/1W8k87Gf6O-Oe46KLrg8Un0PIP4W9W2o3f8IzOVt4Y-A/viewform#start=invite">CLICK HERE TO SIGNUP.</a></strong> Signsups close Friday, February 5.</p>

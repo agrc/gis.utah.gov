@@ -1,23 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: Utah Zip Code Boundaries Update
+layout: post
 author:
   display_name: Data Queen
-  login: kgreen
   email: agrc@utah.gov
-  url: ''
-author_login: kgreen
-author_email: agrc@utah.gov
-wordpress_id: 10373
-wordpress_url: http://gis.utah.gov/?p=10373
-date: '2012-07-19 17:49:57 -0600'
-date_gmt: '2012-07-19 23:49:57 -0600'
-categories:
-- Data
-- SGID Blog
 tags: []
+published: true
+date: 2012-07-19 17:49:57 -0600
+title: Utah Zip Code Boundaries Update
+categories:
+  - Data
+  - SGID Blog
 ---
 <p>Updates were made recently to the SGID10.Boundaries.ZipCodes feature class that resides on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
 <p>The updated zip code boundary data is also available as shapefiles, file geodatabase files, and KMZ for download on the <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BOUNDARIES/UnpackagedData/ZipCodes/_Statewide/">SGID FTP site</a></p>

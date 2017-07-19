@@ -1,28 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'New: Utah Geocoding Toolbox for ArcGIS Desktop'
+layout: post
 author:
   display_name: Data Queen
-  login: kgreen
   email: agrc@utah.gov
-  url: ''
-author_login: kgreen
-author_email: agrc@utah.gov
-wordpress_id: 14393
-wordpress_url: http://gis.utah.gov/?p=14393
-date: '2014-01-17 11:57:08 -0700'
-date_gmt: '2014-01-17 18:57:08 -0700'
-categories:
-- Home
-- Featured
 tags:
-- Geocoding
-- utah
-- agrc
-- statewide
-- addressing
+  - geocoding
+published: true
+date: 2014-01-17 11:57:08 -0700
+title: 'New: Utah Geocoding Toolbox for ArcGIS Desktop'
+categories:
+  - Featured
+  - Home
 ---
 <p><a href="https://github.com/agrc/geocoding-toolbox/raw/master/AGRC%20Geocode%20Tools.tbx" class="button medium white"><span class="button-text">Download Geocoding Toolbox</span></a></p>
 <p>AGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.<a href="{{ "/downloads/geocoding-example.png" | prepend: site.baseurl }}"><img src="{{ "/images/geocoding-example.png" | prepend: site.baseurl }}" alt="" title="geocoding example" width="113" height="144" class="inline-text-left" /></a></p>

@@ -1,29 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: GPS Network now on Trimble Pivot VRS System
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 14396
-wordpress_url: http://gis.utah.gov/?p=14396
-date: '2014-01-17 12:38:58 -0700'
-date_gmt: '2014-01-17 19:38:58 -0700'
-categories:
-- GPS-surveyor
-- Featured
 tags:
-- utah
-- agrc
-- surveyor
-- GPS Network
-- Trimble Pivot
-- upgrade
+  - gps network
+  - surveyor
+  - trimble pivot
+published: true
+date: 2014-01-17 12:38:58 -0700
+title: GPS Network now on Trimble Pivot VRS System
+categories:
+  - Featured
+  - GPS-surveyor
 ---
 <p><a href="{{ "/downloads/TURNGPS_BG2014_web1.png" | prepend: site.baseurl }}"><img src="{{ "/images/TURNGPS_BG2014_web1-245x300.png" | prepend: site.baseurl }}" alt="" title="TURNGPS_BG2014_web" width="245" height="300" class="inline-text-right" /></a>AGRC is pleased to announce the Trimble Pivot VRS System is now live. The install is complete and testing has proven repeatable results. This means it is time for everyone to begin converting over to the new system.</p>
 <p>We would like to have everyone moved over to the new system by <strong>February 1, 2014</strong>, so please take some time get set up by following the 3 simple steps below. </p>

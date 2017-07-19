@@ -1,37 +1,21 @@
 ---
-layout: post
 status: publish
-published: false
-title: 2014 NAIP Now Available
+layout: post
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 16054
-wordpress_url: http://gis.utah.gov/?p=16054
-date: '2015-03-05 12:40:33 -0700'
-date_gmt: '2015-03-05 19:40:33 -0700'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags:
-- aerial photography
-- sgid
-- Data
-- utah
-- gis
-- dataset
-- download
-- agrc
-- state
-- statewide
-- imagery
-- NAIP
-- 1 meter
+  - aerial photography
+  - data
+  - imagery
+  - naip
+published: false
+date: 2015-03-05 12:40:33 -0700
+title: 2014 NAIP Now Available
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <p>The statewide 2014 National Agricultural Imagery Program (NAIP) 1 meter aerial photography <a href="{{ "/data/aerial-photography/2014-naip-1-meter-orthophotography/" | prepend: site.baseurl }}">is now available</a>. The imagery is available as Mr. Sid compressed county mosaics, 3-band RGB image tiles, and single 4th band infrared image tiles. The Red, Green, and Blue bands have been separated from the Infrared band in an effort to reduce storage costs, however the imagery service is 4-bands.</p>
 <ul>

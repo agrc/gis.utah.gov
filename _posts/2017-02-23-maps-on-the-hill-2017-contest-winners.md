@@ -1,21 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Maps on the Hill 2017 Contest Winners'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: 2017-02-23 00:18:28
-categories:
-- Featured
-
 tags:
-- UGIC
-- MOTH
-- Contest
-- Maps on the Hill
-
+  - contest
+  - maps on the hill
+  - moth
+  - ugic
+published: true
+date: 2017-02-23 00:18:28
+title: Maps on the Hill 2017 Contest Winners
+categories:
+  - Featured
 ---
 
 In an effort to reward the best work at Maps on the Hill 2017, a judged contest was added to this year’s event in the capitol rotunda.  Recognition and small prizes (Utah AGRC wall maps and ESRI press books) were awarded to the map displays that best conveyed the value of GIS-based solutions. ![Judges' Deliberations]({{ "/images/MOTHJudges.png" | prepend: site.baseurl }}){:.inline-text-right}

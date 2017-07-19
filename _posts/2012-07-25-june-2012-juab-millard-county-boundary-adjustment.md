@@ -1,24 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: Juab and Millard Counties Adjust Shared Boundary
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 10477
-wordpress_url: http://gis.utah.gov/?p=10477
-date: '2012-07-25 11:31:49 -0600'
-date_gmt: '2012-07-25 17:31:49 -0600'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags: []
+published: true
+date: 2012-07-25 11:31:49 -0600
+title: Juab and Millard Counties Adjust Shared Boundary
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <p>Late this spring, the Millard and Juab County Commissions agreed to adjust the counties' common north-south trending boundary, in an area generally west of Interstate 15.</p>
 <div class="caption"><a href="{{ "/downloads/2012-juab-millard-county-boundary-change.png" | prepend: site.baseurl }}"><img class="size-medium wp-image-10480" title="2012 Juab-Millard County Boundary Change Agreement" src="{{ "/images/2012-juab-millard-county-boundary-change-264x300.png" | prepend: site.baseurl }}" alt="" width="264" height="300" /></a><p class="caption-text">Click to Enlarge</p></div>

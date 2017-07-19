@@ -1,28 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: Utah's Open Data Portal and the SGID
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 17217
-wordpress_url: http://gis.utah.gov/?p=17217
-date: '2015-04-28 17:53:28 -0600'
-date_gmt: '2015-04-28 23:53:28 -0600'
-categories:
-- Data
-- Featured
 tags:
-- sgid
-- Data
-- utah
-- open data
-- socrata
+  - data
+  - open data
+  - socrata
+published: true
+date: 2015-04-28 17:53:28 -0600
+title: Utah's Open Data Portal and the SGID
+categories:
+  - Data
+  - Featured
 ---
 <p><a  href="http://www.utah.gov/data/"><img class="inline-text-left" style="border: 1px solid black;" src="{{ "/images/OpenData.png" | prepend: site.baseurl }}" alt="ned" width="330" height="235" /></a> <a href="http://le.utah.gov/~2014/bills/static/SB0070.html">SB70</a>, passed in the 2014 general session of the Utah Legislature, provided funding to create the state Open Data Portal as recommended by the <a href="http://www.utah.gov/transparency/index.html">Utah Transparency Board</a>. The Open Data Portal project, staffed by the State's Department of Technology Services (DTS), rolled out its initial release of its <a href="http://www.utah.gov/data/">data.utah.gov</a> utilizing the Socrata software platform in early 2015.</p>
 <p>In many ways, Utah's State Geographic Information Database (SGID), established in State statute in 1991, was Utah's original entry into the world of open data. The collective effort of state agencies, local government, and even the federal agencies, to share digital mapping (GIS) data is now a decades long success. The new Open Data Portal has already begun leveraging content from the SGID.</p>

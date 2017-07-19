@@ -1,34 +1,21 @@
 ---
-layout: post
 status: publish
-published: false
-title: Register for Maps on the Hill 2014
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 14127
-wordpress_url: http://gis.utah.gov/?p=14127
-date: '2013-11-26 17:11:43 -0700'
-date_gmt: '2013-11-27 00:11:43 -0700'
-categories:
-- Home
-- Featured
 tags:
-- utah
-- gis
-- mapping
-- ugic
-- agrc
-- maps
-- Maps on the Hill
-- events
-- '2014'
-- Utah State Capitol
-- Elected Officials
+  - '2014'
+  - events
+  - maps
+  - maps on the hill
+  - ugic
+published: false
+date: 2013-11-26 17:11:43 -0700
+title: Register for Maps on the Hill 2014
+categories:
+  - Featured
+  - Home
 ---
 <p><a href="{{ "/downloads/IMG_2925.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/IMG_2925-300x203.jpg" | prepend: site.baseurl }}" alt="" title="IMG_2925" width="300" height="203" class="inline-text-left" /></a><a href="https://docs.google.com/a/utah.gov/spreadsheet/viewform?usp=drive_web&formkey=dG4ta3dQY3JpWkpCajhsbWNRRjlsT3c6MA#gid=0">Registration is now open</a> for the third annual Maps on the Hill. Maps on the Hill 2014 will be held on Wednesday, <strong>January 29, 2014</strong> from 11:00am - 1:00pm at the Utah State Capitol, with a reception afterwards. This event has been a great success in the past, and is a good opportunity for students and professionals to share maps and mapping projects with elected officials, fellow map makers in Utah, and the public. </p>
 <p><em>Who should participate:</em><br />

@@ -1,26 +1,17 @@
 ---
-layout: post
 status: publish
-published: false
-title: Now Hiring! Experienced Developer
+layout: post
 author:
   display_name: AGRC Staff
-  login: Map Utah
   email: agrc@utah.gov
-  url: ''
-author_login: Map Utah
-author_email: agrc@utah.gov
-wordpress_id: 9326
-wordpress_url: http://gis.utah.gov/?p=9326
-date: '2012-05-15 22:43:47 -0600'
-date_gmt: '2012-05-16 04:43:47 -0600'
-categories:
-- Featured
 tags:
-- utah
-- developers
-- agrc
-- applications
+  - applications
+  - developers
+published: false
+date: 2012-05-15 22:43:47 -0600
+title: Now Hiring! Experienced Developer
+categories:
+  - Featured
 ---
 <p>[note title="Some of the benefits of working for AGRC:" align="right"]</p>
 <ul>

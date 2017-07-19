@@ -1,26 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: Using Base Maps with Non-standard Coordinate Systems in LeafletJS
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 14108
-wordpress_url: http://gis.utah.gov/?p=14108
-date: '2013-11-26 15:20:50 -0700'
-date_gmt: '2013-11-26 22:20:50 -0700'
-categories:
-- Developer
-- Featured
 tags:
-- javascript
-- open source
-- base maps
+  - base maps
+  - javascript
+  - open source
+published: true
+date: 2013-11-26 15:20:50 -0700
+title: Using Base Maps with Non-standard Coordinate Systems in LeafletJS
+categories:
+  - Developer
+  - Featured
 ---
 <p>Since <a href="http://leafletjs.com/">LeafletJS</a> seems to be what all of the cool kids are using these days and <a href="https://www.mapbox.com/blog/vladimir-agafonkin-joins-mapbox/">it shows no signs of slowing down</a>, I thought that it would be fun to figure out how to use Leaflet to view AGRC's <a href="{{ "/developer/base-maps/" | prepend: site.baseurl }}">awesome base map services</a>. This presented a unique challenge since they are not in a projection that is supported out-of-the-box by Leaflet (UTM Zone 12 NAD83). However, I found that it is possible with the help of a few additional JavaScript libraries. So, here's the solution:</p>
 <p><a class="jsbin-embed" href="http://jsbin.com/omazICu/6/embed?js,output">ESRI-Leaflet &amp; ArcGIS Basemaps</a><script src="http://static.jsbin.com/js/embed.js"></script></p>

@@ -1,34 +1,22 @@
 ---
-layout: post
 status: publish
-published: true
-title: Google Imagery (Update, July 2015)
+layout: post
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 17474
-wordpress_url: http://gis.utah.gov/?p=17474
-date: '2015-07-30 15:06:19 -0600'
-date_gmt: '2015-07-30 21:06:19 -0600'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags:
-- aerial photography
-- sgid
-- agrc
-- imagery
-- google
-- updates
-- update
-- aerial
-- flights
-- flown
+  - aerial photography
+  - flights
+  - google
+  - imagery
+  - update
+published: true
+date: 2015-07-30 15:06:19 -0600
+title: Google Imagery (Update, July 2015)
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 
 <div class="grid pop">

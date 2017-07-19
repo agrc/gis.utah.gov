@@ -1,18 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'UGS Aquifer Data Updated May 2016'
+layout: post
 author:
   display_name: Richard Emerson, Utah Geological Survey
   email: richardemerson@utah.gov
-date: 2016-05-26 16:53:19
-categories:
-- Guestblog
 tags:
-- UGS
-- Aquifers
-- Data Update
+  - aquifers
+  - data update
+  - ugs
+published: true
+date: 2016-05-26 16:53:19
+title: UGS Aquifer Data Updated May 2016
+categories:
+  - Guestblog
 ---
 
 GEOSCIENCE.Aquifer_RechargeDischargeAreas represents areas of recharge and discharge for various basins and valleys in Utah compiled by the Utah Geological Survey from various sources, including the USGS and various state agencies.

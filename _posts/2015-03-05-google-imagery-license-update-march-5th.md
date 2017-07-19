@@ -1,28 +1,18 @@
 ---
-layout: post
 status: publish
-published: true
-title: Using Utah's Google Imagery License
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 16840
-wordpress_url: http://gis.utah.gov/?p=16840
-date: '2015-03-05 15:59:52 -0700'
-date_gmt: '2015-03-05 22:59:52 -0700'
-categories:
-- Featured
 tags:
-- aerial photography
-- utah
-- agrc
-- statewide
-- imagery
-- google
+  - aerial photography
+  - google
+  - imagery
+published: true
+date: 2015-03-05 15:59:52 -0700
+title: Using Utah's Google Imagery License
+categories:
+  - Featured
 ---
 
 <div class="grid pop">

@@ -1,22 +1,15 @@
 ---
-layout: post
 status: publish
-published: true
-title: How to Wire up Travis-CI to your JS Projects
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 15938
-wordpress_url: http://gis.utah.gov/?p=15938
-date: '2014-11-18 16:26:46 -0700'
-date_gmt: '2014-11-18 23:26:46 -0700'
-categories:
-- Developer
 tags: []
+published: true
+date: 2014-11-18 16:26:46 -0700
+title: How to Wire up Travis-CI to your JS Projects
+categories:
+  - Developer
 ---
 <p>For the past six months, AGRC has been using <a href="https://travis-ci.org">Travis CI</a> to automatically test and lint our projects each time we push a commit to the associated GitHub repository. Even though we run these tasks locally it&#39;s been helpful to have them run on Travis for when we miss things. It&#39;s also a major step towards automated deployments as well as running our tests via something like <a href="https://saucelabs.com">Sauce Labs</a> or <a href="http://www.browserstack.com/">Browser Stack</a>.</p>
 <h3 id="travis-ci-org">travis-ci.org</h3>

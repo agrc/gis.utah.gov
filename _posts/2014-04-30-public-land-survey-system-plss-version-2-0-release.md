@@ -1,28 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: Public Land Survey System (PLSS) Version 2.0 Release
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 14923
-wordpress_url: http://gis.utah.gov/?p=14923
-date: '2014-04-30 12:24:19 -0600'
-date_gmt: '2014-04-30 18:24:19 -0600'
-categories:
-- Data
-- Featured
 tags:
-- utah
-- gis
-- cadastre
-- PLSS
-- GCDB
+  - cadastre
+  - gcdb
+  - plss
+published: true
+date: 2014-04-30 12:24:19 -0600
+title: Public Land Survey System (PLSS) Version 2.0 Release
+categories:
+  - Data
+  - Featured
 ---
 <p><a href="{{ "/downloads/NewPLSS_LrgSample1.png" | prepend: site.baseurl }}"><img src="{{ "/images/NewPLSS_LrgSample1.png" | prepend: site.baseurl }}" alt="" title="NewPLSS_LrgSample" width="140" height="130" class="inline-text-right" /></a>On April 30, AGRC published Geographic Coordinate Database (GCDB) version 2.0 to the townships, sections, and quarter section divisions of the Public Land Survey System (PLSS) contained in Utah's State Geographic Information Database (SGID).</p>
 <p>The basic units of the PLSS comprise the foundation for public and private property boundaries in Utah. The digital GIS representations of the PLSS in the SGID, while in no way a substitute for physical surveys and monumentation, serve as an important supporting reference for surveying and map-based administrative representations of property extents.</p>

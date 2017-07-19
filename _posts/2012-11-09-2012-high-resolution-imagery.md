@@ -1,31 +1,22 @@
 ---
-layout: post
 status: publish
-published: false
-title: 2012 High Resolution Imagery Now Available
+layout: post
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 11642
-wordpress_url: http://gis.utah.gov/?p=11642
-date: '2012-11-09 14:00:26 -0700'
-date_gmt: '2012-11-09 21:00:26 -0700'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags:
-- aerial photography
-- sgid
-- agrc
-- imagery
-- raster
-- HRO
-- image server
+  - aerial photography
+  - hro
+  - image server
+  - imagery
+  - raster
+published: false
+date: 2012-11-09 14:00:26 -0700
+title: 2012 High Resolution Imagery Now Available
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <p>Through partnerships with the USGS, State, and local government, AGRC is pleased to announce the new acquisition and availability of 2,110 square miles of 12.5cm (~5 inch) resolution 4-band aerial photography imagery.<a href="{{ "/downloads/HRO2012_sample.png" | prepend: site.baseurl }}"><img class="inline-text-left" style="border: 1px solid black;" title="HRO2012 Sample, City Creek Mall in SLC (click to enlarge)" src="{{ "/images/HRO2012_sample.png" | prepend: site.baseurl }}" alt="" width="304" height="248" /></a></p>
 <p>This public domain imagery is the latest addition to the State Geographic Information Database's (SGID) High Resolution Orthophotography (HRO) collection. The imagery was collected between March 28 and June 1 of 2012.</p>

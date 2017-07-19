@@ -1,33 +1,21 @@
 ---
-layout: post
 status: publish
-published: true
-title: Utah GIS Framework Data for 800 Please, Alex...
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 13343
-wordpress_url: http://gis.utah.gov/?p=13343
-date: '2013-06-28 17:00:05 -0600'
-date_gmt: '2013-06-28 23:00:05 -0600'
-categories:
-- Uncategorized
-- Data
-- Featured
-- SGID Blog
 tags:
-- Data
-- utah
-- gis
-- address
-- points
-- agrc
-- database
-- address points
+  - address
+  - address points
+  - data
+published: true
+date: 2013-06-28 17:00:05 -0600
+title: Utah GIS Framework Data for 800 Please, Alex...
+categories:
+  - Data
+  - Featured
+  - SGID Blog
+  - Uncategorized
 ---
 <p><a href="{{ "/downloads/AddressSample_A.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/AddressSample_A-300x217.jpg" | prepend: site.baseurl }}" alt="" title="AddressSample_A" width="300" height="217" class="inline-text-left" /></a><i>ATrebek: "The answer Is.. 'At almost a million points and growing, this new statewide data resource adds extra precision to address location.'"</p>
 <p>KJennings: "What is Utah's Statewide Address Point Dataset?" </p>

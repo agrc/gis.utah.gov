@@ -1,22 +1,15 @@
 ---
-layout: post
 status: publish
-published: false
-title: Maps on the Hill 2015
+layout: post
 author:
   display_name: Jessie Pechmann
-  login: jpechmann
   email: jpechmann@utah.gov
-  url: ''
-author_login: jpechmann
-author_email: jpechmann@utah.gov
-wordpress_id: 15999
-wordpress_url: http://gis.utah.gov/?p=15999
-date: '2014-12-05 11:57:24 -0700'
-date_gmt: '2014-12-05 18:57:24 -0700'
-categories:
-- Featured
 tags: []
+published: false
+date: 2014-12-05 11:57:24 -0700
+title: Maps on the Hill 2015
+categories:
+  - Featured
 ---
 <p><a href="{{ "/downloads/SET_2805.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/SET_2805.jpg" | prepend: site.baseurl }}" alt="" title="SET_2805" width="300" height="200" class="inline-text-left" /></a>Maps on the Hill, supported by the <a href="http://www.ugic.info/">Utah Geographic Information Council</a> (UGIC) and AGRC, will be held on January 28, 2015. This event, in its fourth year, is a good opportunity for students and professionals to share maps, mapping tools, and mapping projects with elected officials, fellow practitioners, and the public.</p>
 <p><em>Who should participate:</em><br />

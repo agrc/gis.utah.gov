@@ -1,22 +1,21 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Road Centerlines: Schema Update and Regional Workshop Notes'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: 2016-09-16 19:27:44
-categories:
-- Featured
 tags:
-- Transportation
-- Roads
-- Road Centerlines
-- 911
-- NG911
-- DOT
-
+  - '911'
+  - dot
+  - ng911
+  - road centerlines
+  - roads
+  - transportation
+published: true
+date: 2016-09-16 19:27:44
+title: 'Road Centerlines: Schema Update and Regional Workshop Notes'
+categories:
+  - Featured
 ---
 This year, AGRC has devoted a significant amount of energy toward realigning our processes for maintaining a statewide road centerline layer. The desire is to best position the state to meet requirements for Next Generation 911, as well as new federal reporting requirements placed on state DOTs.
 

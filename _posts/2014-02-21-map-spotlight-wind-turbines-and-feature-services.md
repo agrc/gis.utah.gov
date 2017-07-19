@@ -1,26 +1,19 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Map Spotlight: Wind Turbines and Feature Services'
+layout: post
 author:
   display_name: Bert Granberg
-  login: Bert Granberg
   email: bgranberg@utah.gov
-  url: ''
-author_login: Bert Granberg
-author_email: bgranberg@utah.gov
-wordpress_id: 14527
-wordpress_url: http://gis.utah.gov/?p=14527
-date: '2014-02-21 11:16:16 -0700'
-date_gmt: '2014-02-21 18:16:16 -0700'
-categories:
-- Data
-- Featured
-- SGID Blog
-- Locations Services
-- Mapping Spotlight
 tags: []
+published: true
+date: 2014-02-21 11:16:16 -0700
+title: 'Map Spotlight: Wind Turbines and Feature Services'
+categories:
+  - Data
+  - Featured
+  - Locations Services
+  - Mapping Spotlight
+  - SGID Blog
 ---
 <p><a href="{{ "/downloads/wind1.png" | prepend: site.baseurl }}"><img src="{{ "/images/wind1-300x248.png" | prepend: site.baseurl }}" alt="" title="wind1" width="300" height="248" class="inline-text-left" /></a>Earlier this month, the USGS released a public-facing <a href="http://eerscmap.usgs.gov/windfarm/">interactive wind turbine map</a> and GIS dataset that depicts more than 47,000 onshore wind turbine locations.  The map includes turbines installed as of July 2013 and was created by combining publicly available data sets from the Federal Aviation Administration, the U.S. Energy Information Administration, the Oak Ridge National Laboratory, as well as other federal, state and local sources.</p>
 <p>This map is being spotlighted for 3 specific factors: </p>

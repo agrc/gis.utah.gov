@@ -1,22 +1,15 @@
 ---
-layout: post
 status: publish
-published: true
-title: Newest updates to Municipal Boundaries
+layout: post
 author:
   display_name: Mike Heagin
-  login: mheagin
   email: mheagin@utah.gov
-  url: ''
-author_login: mheagin
-author_email: mheagin@utah.gov
-wordpress_id: 13595
-wordpress_url: http://gis.utah.gov/?p=13595
-date: '2013-08-09 15:40:40 -0600'
-date_gmt: '2013-08-09 21:40:40 -0600'
-categories:
-- Uncategorized
 tags: []
+published: true
+date: 2013-08-09 15:40:40 -0600
+title: Newest updates to Municipal Boundaries
+categories:
+  - Uncategorized
 ---
 <p>Updates were made recently to the <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a></p>
 <p>The following highlights what has been updated through Aug. 9, 2013:</p>

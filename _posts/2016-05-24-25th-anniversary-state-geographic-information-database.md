@@ -1,23 +1,20 @@
 ---
-layout: post
 status: publish
-published: true
-title: '25 Years Ago: Laying the Foundation for Utah GIS Success'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: 2016-05-24 21:57:21
-categories:
-- Featured
 tags:
-- SGID
-- GIS
-- data
-- clearinghouse
-- policy
-- coordination
-- AGRC
-- gis history
+  - clearinghouse
+  - coordination
+  - data
+  - gis history
+  - policy
+published: true
+date: 2016-05-24 21:57:21
+title: '25 Years Ago: Laying the Foundation for Utah GIS Success'
+categories:
+  - Featured
 ---
 
 For those of us not in the GIS field at the time, 1991 was a significant year in Utah and beyond...

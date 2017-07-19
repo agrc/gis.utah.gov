@@ -1,45 +1,20 @@
 ---
-layout: post
 status: publish
-published: true
-title: Utah SGID Statewide Roads Data Layer Updates 12/3/2014
+layout: post
 author:
   display_name: Data Queen
-  login: kgreen
   email: agrc@utah.gov
-  url: ''
-author_login: kgreen
-author_email: agrc@utah.gov
-wordpress_id: 16017
-wordpress_url: http://gis.utah.gov/?p=16017
-date: '2014-12-03 10:16:00 -0700'
-date_gmt: '2014-12-03 17:16:00 -0700'
-categories:
-- Data
-- Featured
-- SGID Blog
 tags:
-- SDE
-- sgid
-- utah
-- map
-- address ranges
-- Streets
-- location
-- address
-- dataset
-- agrc
-- shapefile
-- shp
-- gdb
-- information
-- state
-- statewide
-- vector
-- centerline
-- road
-- geogrpahic
-- geocodes
+  - address
+  - centerline
+  - location
+published: true
+date: 2014-12-03 10:16:00 -0700
+title: Utah SGID Statewide Roads Data Layer Updates 12/3/2014
+categories:
+  - Data
+  - Featured
+  - SGID Blog
 ---
 <p>Updates were made recently to the SGID10.Transportation.Roads feature class that resides on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
 <p>The updated Roads data is also available as shapefiles and file geodatabase files for download on the <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/PackagedData/_Statewide/UtahRoadAndHighwaySystem/">SGID FTP site</a>.</p>

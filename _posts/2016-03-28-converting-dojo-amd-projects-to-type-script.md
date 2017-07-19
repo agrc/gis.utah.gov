@@ -1,17 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: Converting Dojo-AMD Projects To TypeScript
+layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2016-03-28 15:49:19
-categories:
-- Developer
 tags:
-- javascript
-- typescript
+  - javascript
+  - typescript
+published: true
+date: 2016-03-28 15:49:19
+title: Converting Dojo-AMD Projects To TypeScript
+categories:
+  - Developer
 ---
 
 At some point in every TypeScript introduction that I have been to, the presenter says something to the effect of:

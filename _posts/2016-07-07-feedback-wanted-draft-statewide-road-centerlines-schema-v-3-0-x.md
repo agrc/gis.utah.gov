@@ -1,17 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'Feedback Wanted: Draft Statewide Road Centerlines Schema v3.0.x'
+layout: post
 author:
   display_name: Bert Granberg
   email: bgranberg@utah.gov
-date: 2016-07-07 21:21:51
-categories:
-- Featured
 tags:
-- roads
-- schema
+  - roads
+  - schema
+published: true
+date: 2016-07-07 21:21:51
+title: 'Feedback Wanted: Draft Statewide Road Centerlines Schema v3.0.x'
+categories:
+  - Featured
 ---
 
 Since 2003, AGRC has maintained a statewide aggregation of road centerline GIS layers sourced from local data stewards. This layer is one of the hardest working GIS data assets in the state and is put to task in high profile uses, including 911/public safety, transportation management and planning, voter registration, sales tax, and Census block geography used for demographics and redistricting.

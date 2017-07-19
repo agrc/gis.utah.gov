@@ -1,24 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: Staying in the Zone with AMD Butler
+layout: post
 author:
   display_name: Scott Davis
-  login: Scott Davis
   email: stdavis@utah.gov
-  url: ''
-author_login: Scott Davis
-author_email: stdavis@utah.gov
-wordpress_id: 17373
-wordpress_url: http://gis.utah.gov/?p=17373
-date: '2015-05-25 17:01:31 -0600'
-date_gmt: '2015-05-25 23:01:31 -0600'
-categories:
-- Developer
 tags:
-- javascript
-- tools
+  - javascript
+  - tools
+published: true
+date: 2015-05-25 17:01:31 -0600
+title: Staying in the Zone with AMD Butler
+categories:
+  - Developer
 ---
 [__Update(3/17/16)__: This plugin has been ported to an [Atom Editor](https://atom.io/) package called [amdbutler](https://atom.io/packages/amdbutler).]
 <p>A few months ago, I built a simple plugin for <a href="http://www.sublimetext.com/3">Sublime Text 3</a>&nbsp;for managing <a href="https://github.com/amdjs/amdjs-api/blob/master/AMD.md">AMD</a>&nbsp;dependencies called <a href="https://packagecontrol.io/packages/AMD%20Butler">AMD Butler</a>. Now it's hard for me to picture coding without it. If/when I make the switch to <a href="https://atom.io/">Atom</a>&nbsp;this will be the first thing that I port over from Sublime.</p>

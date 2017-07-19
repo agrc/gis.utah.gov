@@ -1,35 +1,25 @@
 ---
-layout: post
 status: publish
-published: true
-title: National Agricultural Imagery Program (NAIP) 2014 - Early Access Web Service
+layout: post
 author:
   display_name: Rick Kelson
-  login: rkelson
   email: rkelson@utah.gov
-  url: ''
-author_login: rkelson
-author_email: rkelson@utah.gov
-wordpress_id: 15219
-wordpress_url: http://gis.utah.gov/?p=15219
-date: '2014-06-25 12:57:48 -0600'
-date_gmt: '2014-06-25 18:57:48 -0600'
-categories:
-- Home
-- Data
-- Featured
-- SGID Blog
 tags:
-- aerial photography
-- sgid
-- Data
-- utah
-- agrc
-- imagery
-- raster
-- NAIP
-- usda
-- apfo
+  - aerial photography
+  - apfo
+  - data
+  - imagery
+  - naip
+  - raster
+  - usda
+published: true
+date: 2014-06-25 12:57:48 -0600
+title: National Agricultural Imagery Program (NAIP) 2014 - Early Access Web Service
+categories:
+  - Data
+  - Featured
+  - Home
+  - SGID Blog
 ---
 <p><a href="{{ "/downloads/NAIP2014_RGB-CIR.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/NAIP2014_RGB-CIR.jpg" | prepend: site.baseurl }}" alt="" title="PLSSapp" width="250" height="250" class="inline-text-left" /></a></p>
 <p>The USDA's 2014 New, statewide one meter 2014 aerial photography is currently being collected as part of the <a href="http://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/index" target="_blank">National Agricultural Imagery Program (NAIP).</a> </p>

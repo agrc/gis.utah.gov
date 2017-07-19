@@ -1,20 +1,17 @@
 ---
-layout: post
 status: publish
-published: true
-title: 'National Agricultural Imagery Program (NAIP) 2016 Imagery Now Available'
+layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2017-02-21 21:10:26
-categories:
-- Featured
 tags:
-- agrc
-- discover
-- naip
-- sgid
-
+  - discover
+  - naip
+published: true
+date: 2017-02-21 21:10:26
+title: National Agricultural Imagery Program (NAIP) 2016 Imagery Now Available
+categories:
+  - Featured
 ---
 
 The 2016 National Agricultural Imagery Program (NAIP) aerial photography is now available from the [2016 NAIP 1 Meter Orthophotography]({{"/data/aerial-photography/2016-naip-1-meter-orthophotography/" | prepend:site.baseurl}} "go to NAIP 2016 page") page. The imagery

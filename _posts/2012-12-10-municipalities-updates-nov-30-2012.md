@@ -1,23 +1,16 @@
 ---
-layout: post
 status: publish
-published: true
-title: Municipalities Updates Nov. 30, 2012
+layout: post
 author:
   display_name: Mike Heagin
-  login: mheagin
   email: mheagin@utah.gov
-  url: ''
-author_login: mheagin
-author_email: mheagin@utah.gov
-wordpress_id: 12478
-wordpress_url: http://gis.utah.gov/?p=12478
-date: '2012-12-10 16:34:35 -0700'
-date_gmt: '2012-12-10 23:34:35 -0700'
-categories:
-- Data
-- SGID Blog
 tags: []
+published: true
+date: 2012-12-10 16:34:35 -0700
+title: Municipalities Updates Nov. 30, 2012
+categories:
+  - Data
+  - SGID Blog
 ---
 <p>Updates were made recently to the <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature class that resides on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>. The updated municipality data is also available as shapefiles and file geodatabase files for download on the <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BOUNDARIES/PackagedData/_Statewide/StateCountyMunicipalBoundaries">SGID FTP site</a>.</p>
 <p>The AGRC <a href="{{ "/developer/base-maps/" | prepend: site.baseurl }}">basemaps</a> have been updated to reflect these changes.</p>
