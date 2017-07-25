@@ -3,7 +3,7 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
-/:index.html
+/
   Link: </css/main.css>; rel=reload; as=style
   Link: </bower_components/bLazy/blazy.min.js>; rel=reload; as=script
 /data/:index.html
