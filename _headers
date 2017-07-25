@@ -14,7 +14,7 @@
 /search/
   Link: </js/dist/search.min.js>; rel=reload; as=script
 /search/index.html
-  Link: </js/dist/search.min.js>; rel=reload; as=script
+  Link: <js/dist/search.min.js>; rel=reload; as=script
 
 # ᕕ( ᐛ )ᕗ
 /*
