@@ -16,19 +16,13 @@ categories: []
   <img class="size-full wp-image-4794" src="{{ "/images/GNISLarge.png" | prepend: site.baseurl }}" alt="UTGNIS" />
   <p class="caption-text">GNIS Points in Utah</p>
 </div>
-<p>
-  <a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mQ05IaFVQNmEyY0k" class="button medium white">
-    <span class="button-text">Download Dataset</span>
-  </a>
-</p>
-<h4 class="package--header">GNIS Locations</h4>
-<ul class="dotless no-padding">
-  <li><strong>Data Type:</strong> GIS Data Layer
-  <li><strong>Steward(s):</strong> USGS
-  <li><strong>Abstract:</strong> The Geographic Names Information System (GNIS) was developed by the U.S. Geological Survey in cooperation with the U.S. Board on Geographic Names (BGN), local governments and other interested organizations. The GNIS contains information about physical and cultural geographic features in the United States and associated areas, both current and historical, but not including roads and highways. The goal of GNIS is to meet major national needs regarding geographic names and their standardization and dissemination.
-</ul>
-<h4 class="package--header">Package Contents</h4>
-<p>The following data is available for download:</p>
+{% include abstract.html
+   download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mQ05IaFVQNmEyY0k"
+   name="GNIS Locations"
+   type="GIS Data Layer"
+   stewards="USGS"
+   abstract="The Geographic Names Information System (GNIS) was developed by the U.S. Geological Survey in cooperation with the U.S. Board on Geographic Names (BGN), local governments and other interested organizations. The GNIS contains information about physical and cultural geographic features in the United States and associated areas, both current and historical, but not including roads and highways. The goal of GNIS is to meet major national needs regarding geographic names and their standardization and dissemination."
+%}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="GNIS2010">
@@ -58,15 +52,8 @@ categories: []
         </ul>
     </div>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="GNIS2010-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>January 23, 2012
-      </ul>
-    </div>
-  </div>
+  {% include updates.html
+    name="GNIS2010"
+    updates="January 23, 2012"
+  %}
 </div>

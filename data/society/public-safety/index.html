@@ -42,19 +42,13 @@ categories: []
   <img class="size-full wp-image-4794" src="{{ "/images/PublicSafety.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" />
   <p class="caption-text">Locations of Law Enforcement Facilities in Utah</p>
 </div>
-<p>
-  <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/PackagedData/_Statewide/PublicSafety/" class="button medium white">
-    <span class="button-text">Download Data Package</span>
-  </a>
-</p>
-<h4 class="package--header">Public Safety</h4>
-<ul class="dotless no-padding">
-  <li><strong>Data Type:</strong> GIS Data Layer
-  <li><strong>Steward(s):</strong> AGRC
-  <li><strong>Abstract:</strong> This data package has three datasets with facilities relating to public safety in Utah. Public safety facilities include correctional facilities, fire stations, and law enforcement facilities. These datasets come from different sources and therefore there might be some overlap.
-</ul>
-<h4 class="package--header">Package Contents</h4>
-<p>The following data is available for download:</p>
+{% include abstract.html
+   download="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/SOCIETY/PackagedData/_Statewide/PublicSafety/"
+   name="Public Safety"
+   type="GIS Data Layer"
+   stewards="AGRC"
+   abstract="This data package has three datasets with facilities relating to public safety in Utah. Public safety facilities include correctional facilities, fire stations, and law enforcement facilities. These datasets come from different sources and therefore there might be some overlap."
+%}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="CorrectionalFacilities">
@@ -78,18 +72,10 @@ categories: []
       </ul>
     </div>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="CorrectionalFacilities-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>August 2011
-        <li>June 2013
-      </ul>
-    </div>
-  </div>
+  {% include updates.html
+    name="CorrectionalFacilities"
+    updates="August 2011;June 2013"
+  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -113,18 +99,9 @@ categories: []
       </ul>
     </div>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="FireStations-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>August 2011
-        <li>June 2013
-      </ul>
-    </div>
-  </div>
+  {% include updates.html
+    name="FireStations"
+    updates="August 2011;June 2013" %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -148,18 +125,10 @@ categories: []
       </ul>
     </div>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="LawEnforcement-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>August 2011
-        <li>June 2013
-      </ul>
-    </div>
-  </div>
+  {% include updates.html
+    name="LawEnforcement"
+    updates="August 2011;June 2013"
+    %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -183,18 +152,10 @@ categories: []
       </ul>
     </div>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-        <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-        <h5 id="PSAPLocations-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>November 25, 2013<
-        <li>December 2004
-      </ul>
-    </div>
-  </div>
+  {% include updates.html
+    name="PSAPLocations"
+    updates="November 25, 2013;December 2004;"
+  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -218,18 +179,10 @@ categories: []
       </ul>
     </div>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="PSAPBoundaries-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>November 25, 2013
-        <li>October 16, 2013
-      </ul>
-    </div>
-  </div>
+  {% include updates.html
+    name="PSAPBoundaries"
+    updates="November 25, 2013;October 16, 2013"
+  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -254,15 +207,8 @@ categories: []
       </ul>
     </div>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="StateAgencyDispatch-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>October 2013
-      </ul>
-    </div>
-  </div>
+  {% include updates.html
+    name="StateAgencyDispatch"
+    updates="October 2013"
+  %}
 </div>

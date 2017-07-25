@@ -1,0 +1,13 @@
+<p><a href="{{ include.download }}" class="button medium white">
+  <span class="button-text">Download Dataset</span></a></p>
+<h4 class="package--header">{{ include.name }}</h4>
+<ul class="dotless no-padding">
+  <li><strong>Data Type:</strong> {{ include.type | default: "GIS Data Layer" }}
+  <li><strong>Steward(s):</strong> {{ include.stewards | default: "AGRC" }}
+{% if include.webapp != nil %}
+  <li><strong>Web Application:</strong> <a href="{{ include.webapp }}">{{ include.webapp }}</a>
+{% endif %}
+  <li><strong>Abstract:</strong> {{ include.abstract }}
+</ul>
+<h4 class="package--header">Package Contents</h4>
+<p>The following data is available for download:</p>
