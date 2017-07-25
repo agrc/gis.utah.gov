@@ -1,20 +1,20 @@
 # gis.utah.gov
 /
-  Link: </bower_components/bLazy/blazy.min.js>; rel=reload; as=script
+  Link: </bower_components/bLazy/blazy.min.js>; rel=preload; as=script
 /index.html
-  Link: </bower_components/bLazy/blazy.min.js>; rel=reload; as=script
+  Link: </bower_components/bLazy/blazy.min.js>; rel=preload; as=script
 
 # gis.utah.gov/data
 /data/
-  Link: </bower_components/bLazy/blazy.min.js>; rel=reload; as=script
+  Link: </bower_components/bLazy/blazy.min.js>; rel=preload; as=script
 /data/index.html
-  Link: </bower_components/bLazy/blazy.min.js>; rel=reload; as=script
+  Link: </bower_components/bLazy/blazy.min.js>; rel=preload; as=script
 
 # gis.utah.gov/search
 /search/
-  Link: </js/dist/search.min.js>; rel=reload; as=script
+  Link: </js/dist/search.min.js>; rel=preload; as=script
 /search/index.html
-  Link: <js/dist/search.min.js>; rel=reload; as=script
+  Link: </js/dist/search.min.js>; rel=preload; as=script
 
 # ᕕ( ᐛ )ᕗ
 /*
@@ -22,3 +22,4 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
+  Link: </css/main.css>; rel=preload; as=style
