@@ -3,6 +3,8 @@ status: publish
 layout: page
 tags:
   - data
+  - overview
+  - farming
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
@@ -11,46 +13,47 @@ date: 2011-10-21 12:09:20 -0600
 title: Farming
 categories: []
 ---
-<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
+<h6 class="text-center">Suggested Data Resources</h6>
 <div class="table-style">
-<table>
-<thead>
-<tr>
-<th style="text-align: left;" scope="col">Product Name</th>
-<th style="text-align: left;" scope="col">Type</th>
-<th style="text-align: left;" scope="col">Steward(s)</th>
-<th style="text-align: left;" scope="col">Description</th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-<td colspan="5"><sub><em>click a product name for more information and download links</em></sub></td>
-</tr>
-</tfoot>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href=" {{ "/data/farming/grazing-improvements/" | prepend: site.baseurl }}">Grazing Improvement Regions and Allotment Areas</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC & USDA</td>
-<td style="text-align: left;">Statewide Utah Grazing Improvement Program (GIP) boundaries and allotment areas.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href=" {{ "/data/farming/grazing-improvements/" | prepend: site.baseurl }}">Soil Conservation Districts and Zones</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC & USDA</td>
-<td style="text-align: left;">Soil conservation districts and zones for the State of Utah.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href=" {{ "/data/planning/water-related-land/" | prepend: site.baseurl }}">Water Related Land Use</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">Utah Division of Water Resources</td>
-<td style="text-align: left;">Water related land use areas for all agricultural areas of the State of Utah.</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Product Name</th>
+        <th scope="col">Type</th>
+        <th scope="col">Steward(s)</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan="5">
+          <sub><em>click a product name for more information and download links</em></sub>
+        </td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td><a href="{{ "/data/farming/grazing-improvements/" | prepend: site.baseurl }}">Grazing Improvement Regions and Allotment Areas</a></td>
+        <td>map data</td>
+        <td>AGRC & USDA</td>
+        <td>Statewide Utah Grazing Improvement Program (GIP) boundaries and allotment areas.</td>
+      </tr>
+      <tr>
+        <td><a href="{{ "/data/farming/grazing-improvements/" | prepend: site.baseurl }}">Soil Conservation Districts and Zones</a></td>
+        <td>map data</td>
+        <td>AGRC & USDA</td>
+        <td>Soil conservation districts and zones for the State of Utah.</td>
+      </tr>
+      <tr>
+        <td><a href="{{ "/data/planning/water-related-land/" | prepend: site.baseurl }}">Water Related Land Use</a></td>
+        <td>map data</td>
+        <td>Utah Division of Water Resources</td>
+        <td>Water related land use areas for all agricultural areas of the State of Utah.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<h3>Related Data (see also)</h3>
-<ul>
-<li><a href=" {{ "/data/geoscience/soil/" | prepend: site.baseurl }}">Geoscience (soils)</a></li>
+<h4>Related Data</h4>
+<ul class="dotless">
+  <li><a href=" {{ "/data/geoscience/soil/" | prepend: site.baseurl }}">Geoscience (soils)</a>
 </ul>
-<h3>Notes</h3>
