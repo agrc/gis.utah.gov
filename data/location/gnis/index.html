@@ -11,6 +11,14 @@ published: true
 date: 2011-11-23 09:22:52 -0700
 title: GNIS
 categories: []
+GNIS2010:
+  downloads:
+    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mMjZiZ3pOUWRPdWM
+      label: GNIS 2000
+    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mVlZZMExWNjF6Rm8
+      label: GNIS 1990
+  updates:
+    - January 23, 2012
 ---
 <div class="caption">
   <img class="size-full wp-image-4794" src="{{ "/images/GNISLarge.png" | prepend: site.baseurl }}" alt="UTGNIS" />
@@ -39,21 +47,8 @@ categories: []
       <li><a href="http://geonames.usgs.gov/">U.S. Board on Geographic Names</a>
     </ul>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="GNIS2010-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <p>Use the link at the top of the page for the most recent data.</p> To download historical GNIS versions use the links below:
-        <ul class="dotless no-padding">
-          <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMjZiZ3pOUWRPdWM">GNIS 2000</a>
-          <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVlZZMExWNjF6Rm8">GNIS 1990</a>
-        </ul>
-    </div>
-  </div>
-  {% include updates.html
+  {% include packagedata.html
     name="GNIS2010"
-    updates="January 23, 2012"
+    info=page.GNIS2010
   %}
 </div>

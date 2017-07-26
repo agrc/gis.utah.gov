@@ -37,6 +37,59 @@ tags:
 published: true
 date: 2012-06-19 11:06:38 -0600
 categories: []
+CorrectionalFacilities:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV0g4ZlJ1aUlMS3M&export=download
+      label: "Society.CorrectionalFacilities: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTkZtMy12VUtodXc&export=download
+      label: "Society.CorrectionalFacilities: Shapefile"
+  updates:
+    - June 2013
+    - August 2011
+FireStations:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mR0s3VzRLeXpoblU&export=download
+      label: "Society.FireStations: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNTJLLVpFOHVHWnM&export=download
+      label: "Society.FireStations: Shapefile:"
+  updates:
+    - June 2013
+    - August 2011
+LawEnforcement:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMkcyWHJGWk9wUG8&export=download
+      label: "Society.LawEnforcement: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mX0VmY0ZSMzJ6ZmM&export=download
+      label: "Society.LawEnforcement: Shapefile"
+  updates:
+    - June 2013
+    - August 2011
+PSAPLocations:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNEhMOWpHbmtiN1E&export=download
+      label: "Society.PSAPLocations: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSUdlNWlCOWJLUGc&export=download
+      label: "Society.PSAPLocations: Shapefile"
+  updates:
+    - November 25, 2013
+    - December 2004
+PSAPBoundaries:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7majdDTkZWdVhNQVU&export=download
+      label: "Society.PSAPBoundaries: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mQW9HT25ISXo1LVE&export=download
+      label: "Society.PSAPBoundaries: Shapefile"
+  updates:
+    - November 25, 2013
+    - October 16, 2013
+StateAgencyDispatch:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mM0VDOHdnRFVjMzQ&export=download
+      label: "Society.StateAgencyDispatch: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mN1lHQ0c5RXVNbWs&export=download
+      label: "Society.StateAgencyDispatch: Shapefile"
+  updates:
+    - October 2013
 ---
 <div class="caption">
   <img class="size-full wp-image-4794" src="{{ "/images/PublicSafety.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" />
@@ -60,48 +113,24 @@ categories: []
     <p>There are no constraints or warranties with regard to the use of this dataset.</p>
     <p>General Utah GIS data inquiries: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a></p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="CorrectionalFacilities-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV0g4ZlJ1aUlMS3M&export=download">Society.CorrectionalFacilities: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTkZtMy12VUtodXc&export=download">Society.CorrectionalFacilities: Shapefile</a>
-      </ul>
-    </div>
-  </div>
-  {% include updates.html
+  {% include packagedata.html
     name="CorrectionalFacilities"
-    updates="August 2011;June 2013"
+    info=page.CorrectionalFacilities
   %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="FireStations">
-      <a href="#FireStations" class="anchor--link">Fire Stations<a></h3>
+      <a href="#FireStations" class="anchor--link">Fire Stations</a></h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/FireStations.png" | prepend: site.baseurl }}" alt="Firestation icon" />
     <p>Society.FireStations includes any location where fire fighters are stationed or based out of, or where fire fighting equipment is stored. This definition includes fire stations that are both private and public entities, and fire stations that primarily fight forest or grassland fires. Fire fighting training academies are also included.</p>
     <p>General Utah GIS data inquiries: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a></p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="FireStations-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mR0s3VzRLeXpoblU&export=download">Society.FireStations: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNTJLLVpFOHVHWnM&export=download">Society.FireStations: Shapefile</a>
-      </ul>
-    </div>
-  </div>
-  {% include updates.html
+  {% include packagedata.html
     name="FireStations"
-    updates="August 2011;June 2013" %}
+    info=page.FireStations %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -113,21 +142,9 @@ categories: []
     <p>Society.LawEnforcement contains locations for law enforcement facilities in Utah. Law enforcement facilities are defined as any location where sworn officers of a law enforcement agency are regularly based or stationed. Law enforcement facilities are at least partially publicly funded. This law enforcement dataset includes federal, state, local and special jurisdiction facilities. Examples of law enforcement facilities included are municipal police, county sheriffs, state police, school police, park police, railroad police, and federal police.</p>
     <p>General Utah GIS data inquiries: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a></p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="LawEnforcement-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMkcyWHJGWk9wUG8&export=download">Society.LawEnforcement: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mX0VmY0ZSMzJ6ZmM&export=download">Society.LawEnforcement: Shapefile</a>
-      </ul>
-    </div>
-  </div>
-  {% include updates.html
+  {% include packagedata.html
     name="LawEnforcement"
-    updates="August 2011;June 2013"
+    info=page.LawEnforcement
     %}
 </div>
 <div class="grid package">
@@ -140,21 +157,9 @@ categories: []
     <p>Society.PSAPLocations represents the primary Public Safety Answering Point (PSAP) locations in Utah. The Salt Lake County Sheriff Office PSAP is secondary. The dataset was created in December 2004 by geocoding the PSAP addresses provided by the E911 Executive Committee.</p>
     <p>General Utah GIS data inquiries: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a></p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="PSAPLocations-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNEhMOWpHbmtiN1E&export=download">Society.PSAPLocations: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSUdlNWlCOWJLUGc&export=download">Society.PSAPLocations: Shapefile</a>
-      </ul>
-    </div>
-  </div>
-  {% include updates.html
+  {% include packagedata.html
     name="PSAPLocations"
-    updates="November 25, 2013;December 2004;"
+    info=page.PSAPLocations
   %}
 </div>
 <div class="grid package">
@@ -167,22 +172,9 @@ categories: []
     <p>Society.PSAPBoundaries represents Primary Safety Answering Point (PSAP) boundaries in Utah. Countywide PSAP jurisdiction boundaries are based on the SGID10.BOUNDARIES.Counties data layer, as of July 26, 2012. PSAP jurisdictions representing individual cities are based on the SGID10.BOUNDARIES.Municipalities data layer, as of July 26, 2012. The data also includes jurisdictional boundary representations of the Navajo Nation Tribal Lands, Hill Air Force Base, and Colorado City.</p>
     <p>General Utah GIS data inquiries: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a></p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="PSAPBoundaries-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7majdDTkZWdVhNQVU&export=download">Society.PSAPBoundaries: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mQW9HT25ISXo1LVE&export=download">Society.PSAPBoundaries: Shapefile</a>
-      </ul>
-    </div>
-  </div>
-  {% include updates.html
+  {% include packagedata.html
     name="PSAPBoundaries"
-    updates="November 25, 2013;October 16, 2013"
-  %}
+    info=page.PSAPBoundaries %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -195,20 +187,8 @@ categories: []
     <p>Society.StateAgencyDispatch represents State Dispatch Boundaries.</p>
     <p>General Utah GIS data inquiries: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a></p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="StateAgencyDispatch-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mM0VDOHdnRFVjMzQ&export=download">Society.StateAgencyDispatch: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mN1lHQ0c5RXVNbWs&export=download">Society.StateAgencyDispatch: Shapefile</a>
-      </ul>
-    </div>
-  </div>
-  {% include updates.html
+  {% include packagedata.html
     name="StateAgencyDispatch"
-    updates="October 2013"
+    info=page.StateAgencyDispatch
   %}
 </div>
