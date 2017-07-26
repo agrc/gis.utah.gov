@@ -13,6 +13,14 @@ published: true
 date: 2011-12-08 14:24:01 -0700
 title: DAQ Air-Related Contaminant and Cleanup Sites
 categories: []
+AirEmissions:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mLTBGZDVfaEc1dTQ&export=download
+      label: "DAQAirEmissionsInventory: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdGtHaXVEVGE5Wk0&export=download
+      label: "DAQAirEmissionsInventory: Shapefile"
+  updates:
+    - 2008
 ---
 <div class="caption">
   <img class="size-full" alt="map" src="{{ "/images/EnviroAIR.png" | prepend: site.baseurl }}" />
@@ -44,27 +52,6 @@ categories: []
       <li><a href="http://www.airquality.utah.gov/">Utah Department of Environmental Quality: Division of Air Quality</a>
     </ul>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="AssessmentUnits-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mLTBGZDVfaEc1dTQ&export=download">DAQAirEmissionsInventory: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdGtHaXVEVGE5Wk0&export=download">DAQAirEmissionsInventory: Shapefile</a>
-      </ul>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="AssessmentUnits-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>2008
-      </ul>
-    </div>
-  </div>
+  {% include packagedata.html name="AirEmissions"
+     info=page.AirEmissions %}
 </div>
