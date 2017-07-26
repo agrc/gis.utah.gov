@@ -11,21 +11,32 @@ published: true
 date: 2012-04-23 07:55:57 -0600
 title: Grazing Improvement and Allotment Areas
 categories: []
+GrazingImprovementAreas:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mYWlqMnpBdXlBUEk&export=download
+      label: "Grazing Improvement Areas: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZTdfcHRya29xWWs&export=download
+      label: "Grazing Improvement Areas: Shapefile"
+  updates:
+    - September 2009
+GrazingAllotmentAreas:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mLUR1RWw4bVVCMjA&export=download
+      label: "Grazing Allotment Areas: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU2x5VUo0NFNhT1k&export=download
+      label: "Grazing Allotment Areas: Shapefile"
+  updates:
+    - September 2009
 ---
 <div class="caption">
   <img class="size-full" src="{{ "/images/GrazingAllotments.png" | prepend: site.baseurl }}" alt="Grazing" />
   <p class="caption-text">Grazing Allotment Sample</p>
 </div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWkotY1RhNGxOTVE" class="button medium white">
-    <span class="button-text">Download Data Package</span></a></p>
-<h4 class="package--header">Grazing Improvement and Allotment Areas</h4>
-<ul class="dotless no-padding">
-  <li><strong>Data Type</strong>: GIS Data layer
-  <li><strong>Steward(s)</strong>: USDA & AGRC
-  <li><strong>Abstract:</strong> These datasets contain statewide Grazing Improvement Program and grazing allotment boundaries for use in planning and land management.
-</ul>
-<h4 class="package--header">Package Contents</h4>
-<p>The following data is available for download:</p>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWkotY1RhNGxOTVE"
+  name="Grazing Improvement and Allotment Areas"
+  stewards="USDA, UDAF, and AGRC"
+  webapp="http://grantreporting.udaf.utah.gov/Public"
+  abstract="These datasets contain statewide Grazing Improvement Program and grazing allotment boundaries for use in planning and land management." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="GrazingImprovementAreas">
@@ -34,37 +45,18 @@ categories: []
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/GrazingRegionsSM.png" | prepend: site.baseurl }}" alt="Grazing Improvement Areas" />
-    <p>Farming.GrazingImprovementRegions contains statewide Grazing Improvement Program boundaries for use in planning and land management.</p>
-    <h5>Other links for this dataset:</h5>
+    <p>Farming.GrazingImprovementRegions contains statewide Grazing Improvement Program boundaries for use in planning and land management.  Each region is managed by a Grazing Improvement Program coordinator.</p>
+    <h5>Other links</h5>
     <ul class="dotless">
+      <li><a href="http://ag.utah.gov/conservation-environmental/grazing-improvement-program.html">General Grazing Improvement Program Information</a>
       <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_FARMING_GrazingImprovementRegions.html">Grazing Improvement Areas: Metadata</a>
     </ul>
     <p>There are no constraints or warranties with regard to the use of this dataset.</p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="GrazingImprovementAreas-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <p>Use the link at the top of the page for the most recent data.</p>
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mYWlqMnpBdXlBUEk&export=download">Grazing Improvement Areas: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZTdfcHRya29xWWs&export=download">Grazing Improvement Areas: Shapefile</a>
-      </ul>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="GrazingImprovementAreas-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>September 2009
-      </ul>
-    </div>
-  </div>
+  {% include packagedata.html
+    name="GrazingImprovementAreas"
+    info=page.GrazingImprovementAreas
+  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -74,34 +66,10 @@ categories: []
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/GrazingAllotmentsSM.png" | prepend: site.baseurl }}" alt="Grazing Allotment Areas" />
-    <p>Farming.GrazingAllotments contains statewide Grazing Allotment boundaries for use in planning and land management. This dataset also contains the allotment name, number and manager.</p>
-    <h6>Other links for this dataset:</h6>
-    <ul class="dotless">
-      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/">Grazing Allotment Areas: Metadata</a>
-    </ul>
+    <p>Farming.GrazingAllotments contains statewide Grazing Allotment boundaries for use in planning and land management.  This dataset also contains the allotment name, number and managing agency.</p>
+    <p>Each allotment is managed by the listed state or federal agency on number of domestic animals allowed on the allotment and designated as Animal Unit Months (AUMs). The dataset was compiled by Utah Department of Agriculture and Food GIS staff from multiple state and federal agencies.</p>
     <p>There are no constraints or warranties with regard to the use of this dataset.</p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="GrazingAllotmentAreas-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <p>Use the link at the top of the page for the most recent data.</p>
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mLUR1RWw4bVVCMjA&export=download">Grazing Allotment Areas: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU2x5VUo0NFNhT1k&export=download">Grazing Allotment Areas: Shapefile</a>
-      </ul>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="GrazingAllotmentAreas-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li>September 2009
-    </div>
-  </div>
+  {% include packagedata.html name="GrazingAllotmentAreas"
+    info=page.GrazingAllotmentAreas %}
 </div>
