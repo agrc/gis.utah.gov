@@ -17,3 +17,5 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/society-overview/schools-libraries/                           /data/society/schools-libraries/                            301
 /data/society-overview/state-facilities/                            /data/society/state-facilities/                             301
 /data/society-overview/state-fuel-sites/                            /data/society/state-fuel-sites/                             301
+/data/farming/grazing-allotments/                                   /data/farming/grazing-improvements/                         301
+/data/farming/grazing-improvement-area/                             /data/farming/grazing-improvements/                         301
