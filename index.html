@@ -4,381 +4,374 @@ layout: default
 <div class="section featured">
   {% for post in site.categories.Featured limit:3 %}
   <div class="grid__col grid__col--1-of-3 grid__col--am">
-      <a href="{{ post.url | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-newspaper-o"></i> {{ post.title | truncate: 80 }}</a>
-  </div>
-  {% endfor %}
+    <a href="{{ post.url | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-newspaper-o"></i> {{ post.title | truncate: 80 }}</a>
+  </div>{% endfor %}
 </div>
 <div class="grid main b-lazy" data-src="{{ "/images/backgrounds/bg-large.png" | prepend: site.baseurl }}">
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-        <a href="#data"><h3 class="main-heading">GIS Map Data</h3></a>
-        <hr class="hr-separate" />
-        <p class="main-text"><a href="#data"><i aria-hidden="true" class="fa fa-database fa-4x fa-pull-left"></i><span class="sr-only">Spatial Data</span></a> Established in State
-            law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop download and web service access
-            to hundreds of GIS map data layers developed, aggregated, or acquired
-            by state government.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-        <a href="#api"><h3 class="main-heading">Geo APIs</h3></a>
-        <hr class="hr-separate" />
-        <p class="main-text"><a href="#api"><i aria-hidden="true" class="fa fa-compass fa-4x fa-pull-left"></i><span class="sr-only">geo api's and services</span></a> Coding an app or process
-            that just needs simple “Where is?” or “What’s At?" answers? Geocoding and point-in-polygon map queries are available via api, from
-            <a class="main-link" href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a>.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-        <a href="#tiles"><h3 class="main-heading">Aerial Imagery & Base Maps</h3></a>
-        <hr class="hr-separate" />
-        <p class="main-text"><a href="#tiles"><i aria-hidden="true" class="fa fa-picture-o fa-4x fa-pull-left"></i><span class="sr-only">Aerial Imagery & Base maps</span></a> SGID aerial
-            photography and base map services provide critical map context for GIS
-            and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources.
-            data resources.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-        <a href="#gps"><h3 class="main-heading">TURN GPS Network</h3></a>
-        <hr class="hr-separate" />
-        <p class="main-text"><a href="#gps">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 64.2" class="turngps">
-                <path class="turngps-logo" d="M-195.3-268.5H937.5v566.4H-195.3z"/><path class="panel" d="M22.3 34.1L23 1 1.2 34.2z"/><path class="panel" d="M53.7 8.6L22.3 34.1 23 1z"/><path class="panel" d="M59.8 37.2l-37.5-3.1L53.7 8.6zM44.7 63L22.3 34.1l37.5 3.1z"/><path class="panel" d="M15.8 57.8l6.5-23.7L44.7 63z"/><path class="panel" d="M15.8 57.8L1.2 34.2l21.1-.1z"/><circle class="dot" cx="23" cy="1" r="1"/><circle class="dot" cx="53.7" cy="8.6" r="1"/><circle class="dot" cx="59.8" cy="37.2" r="1"/><circle class="dot" cx="44.7" cy="63" r="1"/><circle class="dot" cx="22.3" cy="34.1" r="1"/><circle class="dot" cx="15.8" cy="57.8" r="1"/><circle class="dot" cx="1.2" cy="34.1" r="1"/>
-            </svg>
-            <span class="sr-only">TURN GPS Network</span></a> TURN GPS is the foundation
-            for live, up-to-sub-centimeter precision GPS field surveying, mapping, and other measurement. TURN GPS
-            employs a network of over 90 permanent GPS base stations across Utah and surrounding areas.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-        <a href="#dev"><h3 class="main-heading">Application Development</h3></a>
-        <hr class="hr-separate" />
-        <p class="main-text"><a href="#dev"><i aria-hidden="true" class="fa fa-rocket fa-4x fa-pull-left"></i><span class="sr-only">Application Development</span></a> AGRC’s development team
-            designs, builds and hosts web map applications, custom designed to best meet specific agency/program
-            requirements.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-        <a href="#news"><h3 class="main-heading">News, Events, & Coordination</h3></a>
-        <hr class="hr-separate" />
-        <p class="main-text"><a href="#news"><i aria-hidden="true" class="fa fa-newspaper-o fa-4x fa-pull-left"></i><span class="sr-only">News, Events, & Coordination</span></a> Utah is widely
-            recognized as a leader in the GIS field. Coordination, partnering and information sharing -- in the form of news, events,
-            tips, and data -- fuel our collective success.</p>
-    </div>
+  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
+    <a href="#data"><h3 class="main-heading">GIS Map Data</h3></a>
+    <hr class="hr-separate" />
+    <p class="main-text"><a href="#data"><i aria-hidden="true" class="fa fa-database fa-4x fa-pull-left"></i><span class="sr-only">Spatial Data</span></a> Established in State
+      law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop download and web service access
+      to hundreds of GIS map data layers developed, aggregated, or acquired
+      by state government.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
+    <a href="#tiles"><h3 class="main-heading">Aerial Imagery &amp; Base Maps</h3></a>
+    <hr class="hr-separate" />
+    <p class="main-text"><a href="#tiles"><i aria-hidden="true" class="fa fa-picture-o fa-4x fa-pull-left"></i><span class="sr-only">Aerial Imagery &amp; Base maps</span></a> SGID aerial
+      photography and base map services provide critical map context for GIS
+      and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources.
+      data resources.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
+    <a href="#gps"><h3 class="main-heading">TURN GPS Network</h3></a>
+    <hr class="hr-separate" />
+    <p class="main-text"><a href="#gps"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 64.2" class="turngps">
+      <path class="turngps-logo" d="M-195.3-268.5H937.5v566.4H-195.3z"/><path class="panel" d="M22.3 34.1L23 1 1.2 34.2z"/><path class="panel" d="M53.7 8.6L22.3 34.1 23 1z"/><path class="panel" d="M59.8 37.2l-37.5-3.1L53.7 8.6zM44.7 63L22.3 34.1l37.5 3.1z"/><path class="panel" d="M15.8 57.8l6.5-23.7L44.7 63z"/><path class="panel" d="M15.8 57.8L1.2 34.2l21.1-.1z"/><circle class="dot" cx="23" cy="1" r="1"/><circle class="dot" cx="53.7" cy="8.6" r="1"/><circle class="dot" cx="59.8" cy="37.2" r="1"/><circle class="dot" cx="44.7" cy="63" r="1"/><circle class="dot" cx="22.3" cy="34.1" r="1"/><circle class="dot" cx="15.8" cy="57.8" r="1"/><circle class="dot" cx="1.2" cy="34.1" r="1"/></svg>
+      <span class="sr-only">TURN GPS Network</span></a> TURN GPS is the foundation
+      for live, up-to-sub-centimeter precision GPS field surveying, mapping, and other measurement. TURN GPS
+      employs a network of over 90 permanent GPS base stations across Utah and surrounding areas.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
+  <a href="#dev"><h3 class="main-heading">Application Development</h3></a>
+  <hr class="hr-separate" />
+  <p class="main-text"><a href="#dev"><i aria-hidden="true" class="fa fa-rocket fa-4x fa-pull-left"></i><span class="sr-only">Application Development</span></a> AGRC’s development team
+    designs, builds and hosts web map applications, custom designed to best meet specific agency/program
+    requirements.</p>
+</div>
+  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
+    <a href="#api"><h3 class="main-heading">Geo APIs</h3></a>
+    <hr class="hr-separate" />
+    <p class="main-text"><a href="#api"><i aria-hidden="true" class="fa fa-compass fa-4x fa-pull-left"></i><span class="sr-only">geo api's and services</span></a> Coding an app or process
+      that just needs simple “Where is?” or “What’s At?" answers? Geocoding and point-in-polygon map queries are available via api, from
+      <a class="main-link" href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a>.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
+    <a href="#news"><h3 class="main-heading">News, Events, &amp; Coordination</h3></a>
+    <hr class="hr-separate" />
+    <p class="main-text"><a href="#news"><i aria-hidden="true" class="fa fa-newspaper-o fa-4x fa-pull-left"></i><span class="sr-only">News, Events, &amp; Coordination</span></a> Utah is widely
+      recognized as a leader in the GIS field. Coordination, partnering and information sharing -- in the form of news, events,
+      tips, and data -- fuel our collective success.</p>
+  </div>
 </div>
 <div class="grid">
-    <div class="grid__col section alternate">
-        <a id="news" class="anchor"></a>
-        <h2>Featured News</h2>
-        {% for post in site.categories.Featured limit:6 %}
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <br/>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncate: 80 }}</a>
-            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-        </div>
-        {% endfor %}
-        <p class="section-read-more">
-            <a href="{{ "/news/" | prepend: site.baseurl }}" class="btn">All Recent News</a>
-            <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
-        </p>
-        <hr class="hr-separate" style="margin-top: 2em" />
-        <div class="grid__col grid__col--1-of-2">
-            <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
-            outcomes from Utah's investment in GIS. Coordination pays off by leveraging
-            the efforts, talents, and success within the GIS community.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-2">
-            <p>AGRC encourages GIS professionals and students to periodically contribute news and updates,
-            to both our blog pages and
-            <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}">newsletter</a>.
-            Use the form at the bottom of any gis.utah.gov page to subscribe. Contact
-            <a href="mailto:jpechmann@utah.gov?subject=Contributing GIS News">Jessie Pechmann</a> to contribute.</p>
-        </div>
+  <div class="grid__col section alternate">
+    <a id="news" class="anchor"></a>
+    <h2>Featured News</h2>
+    {% for post in site.categories.Featured limit:6 %}
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <br/>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncate: 80 }}</a>
+      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    </div>{% endfor %}
+    <p class="section-read-more">
+      <a href="{{ "/news/" | prepend: site.baseurl }}" class="btn">All Recent News</a>
+      <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
+    </p>
+    <hr class="hr-separate" style="margin-top: 2em" />
+    <div class="grid__col grid__col--1-of-2">
+      <p>Coordination, technical skills transfer, and data sharing are critical to generating effective
+      outcomes from Utah's investment in GIS. Coordination pays off by leveraging
+      the efforts, talents, and success within the GIS community.</p>
     </div>
-    <div class="grid__col section">
-        <a id="data" class="anchor"></a>
-        <h2>GIS Map Data</h2>
-        <div class="grid__col grid__col--1-of-2">
-            <p>Utah's State Geographic Information Database (a.k.a. "the SGID"), was established by policy makers to
-            ensure that GIS map layers were developed in a coordinated fashion and shared openly, without redundant effort.
-            Roads, boundaries, addressing, parcels, aerials, elevation, etc...you’ll find it available for download and as web services from the SGID.</p>
-            <p>The vision for the SGID was created almost two full decades before the government 'open data' and 'transparency'
-            initiatives began hitting their stride. And, to the credit of the GIS community across the state, the SGID's GIS
-            data resources are among the most mature and extensive in the nation.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-2">
-            <p>Today, interoperable GIS server technology has diminished the importance of a completely centralized map
-                data repository. But, it's actually more critical that the latest and best quality GIS data resources are
-                readily discovered and accessed. And that's true for resources available to users as downloadable
-                shapefiles as well as resources available as connections to live streaming data services.
-                AGRC strives to ensure that the SGID stays current as a state-level channel to aide in the discovery,
-                access, and use of GIS data resources.</p>
-        </div>
-        <h3>Filter the <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">master SGID Index table</a> for data & services...</h3>
-        <div class="grid__col grid__col--2-of-2 grid__col--centered grid__col--s-hidden" style="width:568px">
-            <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">
-                <img alt="SGID Index Table Search" class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/sgid-index.png" | prepend: site.baseurl }}">
-            </a>
-        </div>
-        <h3>...or browse specific Data Categories</h3>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/address-overview/" | prepend: site.baseurl }}"><h5 class="text-center">Addresses</h5>
-            <img alt="Addresses" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_address_points.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}"><h5 class="text-center">Aerial Photos</h5>
-            <img alt="Aerial Photos" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_NAIP.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/bioscience-overview/" | prepend: site.baseurl }}"><h5 class="text-center">Bioscience</h5>
-            <img alt="Bioscience" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_habitat.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/boundaries/" | prepend: site.baseurl }}"><h5 class="text-center">Boundaries</h5>
-            <img alt="Boundaries" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_voter_precincts.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/sgid-cadastre/" | prepend: site.baseurl }}"><h5 class="text-center">Cadastre</h5>
-            <img alt="Cadastre" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_parcels.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/climate/" | prepend: site.baseurl }}"><h5 class="text-center">Climate/Weather</h5>
-            <img alt="Climate/Weather" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_WatershedAreas.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/demographic/" | prepend: site.baseurl }}"><h5 class="text-center">Demographic</h5>
-            <img alt="Demographic" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_census.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/economy/" | prepend: site.baseurl }}"><h5 class="text-center">Economy</h5>
-            <img alt="Economy" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90EnterpriseZones.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/elevation-terrain-data/" | prepend: site.baseurl }}"><h5 class="text-center">Elevation/Terrain</h5>
-            <img alt="Elevation/Terrain" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_ned.jpg" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/energy/" | prepend: site.baseurl }}"><h5 class="text-center">Energy</h5>
-            <img alt="Energy" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_energy.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/environment/" | prepend: site.baseurl }}"><h5 class="text-center">Environment</h5>
-            <img alt="Environment" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_enviro.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/farming/" | prepend: site.baseurl }}"><h5 class="text-center">Farming</h5>
-            <img alt="Farming" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah-sgid-water-related-land-use.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/geoscience/" | prepend: site.baseurl }}"><h5 class="text-center">Geoscience</h5>
-            <img alt="Geoscience" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_faults.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/health/" | prepend: site.baseurl }}"><h5 class="text-center">Health</h5>
-            <img alt="Health" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_StatisticalAreas.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/history/" | prepend: site.baseurl }}"><h5 class="text-center">History</h5>
-            <img alt="History" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_archaeology_generalized.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/location/" | prepend: site.baseurl }}"><h5 class="text-center">Location</h5>
-            <img alt="Location" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_building_footprints.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/planning/" | prepend: site.baseurl }}"><h5 class="text-center">Planning</h5>
-            <img alt="Planning" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_wsa-boundaries.jpg" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/political/" | prepend: site.baseurl }}"><h5 class="text-center">Political</h5>
-            <img alt="Political" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_SenateDistricts2012.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/recreation/" | prepend: site.baseurl }}"><h5 class="text-center">Recreation</h5>
-            <img alt="Recreation" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah_trailheads.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/society/" | prepend: site.baseurl }}"><h5 class="text-center">Society</h5>
-            <img alt="Society" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_Schools.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/sgid-transportation/" | prepend: site.baseurl }}"><h5 class="text-center">Transportation</h5>
-            <img alt="Transportation" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/usgs-scanned-topographic-maps-drgs/" | prepend: site.baseurl }}"><h5 class="text-center">USGS Topo Maps</h5>
-            <img class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_usgs_scanned_maps.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/utilities/" | prepend: site.baseurl }}"><h5 class="text-center">Utilities</h5>
-            <img alt="Utilities" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_broadband.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-            <a href="{{ "/data/water-data-services/" | prepend: site.baseurl }}"><h5 class="text-center">Water</h5>
-            <img alt="Water" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_Streams.png" | prepend: site.baseurl }}"></a>
-        </div>
-        <p class="section-read-more">
-            <a href="{{ "/data/" | prepend: site.baseurl }}" class="btn">View All Data</a>
-        </p>
+    <div class="grid__col grid__col--1-of-2">
+      <p>AGRC encourages GIS professionals and students to periodically contribute news and updates,
+      to both our blog pages and
+      <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}">newsletter</a>.
+      Use the form at the bottom of any gis.utah.gov page to subscribe. Contact
+      <a href="mailto:jpechmann@utah.gov?subject=Contributing GIS News">Jessie Pechmann</a> to contribute.</p>
     </div>
-    <div class="grid__col section alternate">
-        <a id="tiles" class="anchor"></a>
-        <h2>Base Maps and Imagery</h2>
-        <div class="grid__col grid__col--1-of-3">
-            <p>AGRC hosts aerial photography and pre-rendered base map services on
-                its <a href="{{ "/discover/" | prepend: site.baseurl }}">
-                Discover</a> cloud-based server. After obtaining an organizational login,
-                GIS users, CAD users, and web apps can connect to these multi-scale maps using the Open
-                Geospatial Consortium WMS and WMTS protocols. The Discover service provides images and tiles
-                in the Web Mercator projection, an industry standard for web map display.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3">
-            <p>Layers accessible from the Discover server include themed base maps built from local & state
-                GIS data in terrain, lite, topo, and hybrid themes. Aerial photography offerings include
-                the latest 6" statewide imagery licensed for state, local, & tribal government from Google,
-                as well as public domain color NAIP, Wasatch Front HRO, CIR/NRG imagery, and the historic
-                B/W DOQ series.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3">
-            <p>Until January 31, 2017 AGRC provided base maps from its mapserv.utah.gov server in UTM
-                NAD83 coordinates. These base map services have been retired in favor of the cloud-hosted
-                OGC services served through Discover.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3 text-center">
-            <h5 class="text-center">Terrain</h5>
-            <img alt="Terrain" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}">
-        </div>
-        <div class="grid__col grid__col--1-of-3 text-center">
-            <h5 class="text-center">Imagery plus Overlay base maps</h5>
-            <img alt="Imagery plus Overlay base maps" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}">
-        </div>
-        <div class="grid__col grid__col--1-of-3 text-center">
-            <h5 class="text-center">Lite base map</h5>
-            <img alt="Lite base map" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}">
-        </div>
-        <div class="grid__col grid__col--1-of-2">
-            <p>AGRC's <a href="http://atlas.utah.gov">atlas.utah.gov</a> website allows for a quick preview
-                of the most popular base map services. Zoom in for richer map content, click the map for key
-                location-specific info, and use the base map selector in the upper right corner to select
-                your base map of choice.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-2">
-            <p>Among the locally sourced map layers that AGRC incorporates into its base maps are:
-            municipal boundaries, building-specific address points, road centerlines per UDOT
-            specs, and State-stewarded public lands boundaries.</p>
-        </div>
-        <p class="section-read-more">
-            <a href="{{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}" class="btn">Base Map Information</a>
-            <a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}" class="btn">Imagery Download Information</a>
-        </p>
+  </div>
+  <div class="grid__col section">
+    <a id="data" class="anchor"></a>
+    <h2>GIS Map Data</h2>
+    <div class="grid__col grid__col--1-of-2">
+      <p>Utah's State Geographic Information Database (a.k.a. "the SGID"), was established by policy makers to
+        ensure that GIS map layers were developed in a coordinated fashion and shared openly, without redundant effort.
+        Roads, boundaries, addressing, parcels, aerials, elevation, etc...you’ll find it available for download and as web services from the SGID.</p>
+        <p>The vision for the SGID was created almost two full decades before the government 'open data' and 'transparency'
+        initiatives began hitting their stride. And, to the credit of the GIS community across the state, the SGID's GIS
+        data resources are among the most mature and extensive in the nation.</p>
     </div>
-    <div class="grid__col section">
-        <a id="gps" class="anchor"></a>
-        <h2>TURN GPS Precision RTK Network</h2>
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-        <p>The Utah Reference Network for GPS (TURN GPS) is a networked system of over 90 permanently located high
-            precision GPS receivers, installed across Utah and neighboring states.</p>
-        <p>TURN GPS provides a real-time correction signal that factors out atmospheric variation between earth-orbiting GPS
-           satellites and ground-based GPS receivers in the field.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <h5 class="text-center">TURN GPS Network Coverage</h5>
-            <a href="http://turngps.utah.gov/Map/SensorMap.aspx">
-                <img alt="TURN GPS Network Coverage" class="center b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
-            </a>
-        </div>
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-            <p>Surveyors, construction crews, field mapping technicians, and GPS-controlled machinery are able to operate with
-            up-to sub-centimeter precise measurement by connecting their existing GPS receivers to the TURN GPS correction service
-            over a smart phone hotspot.</p>
-
-            <p>A partnership with state and local government agencies has allow TURN GPS base stations to be sited at
-                existing Utah facilities in exchange for the partners' use of the system. One year subscriptions to the
-                TURN GPS service are $600 per GPS device.</p>
-        </div>
-        <p class="section-read-more text-center">
-            <a href="{{ "/data/sgid-cadastre/turn-gps/" | prepend: site.baseurl }}" class="btn">More Information</a>
-        </p>
+    <div class="grid__col grid__col--1-of-2">
+      <p>Today, interoperable GIS server technology has diminished the importance of a completely centralized map
+        data repository. But, it's actually more critical that the latest and best quality GIS data resources are
+        readily discovered and accessed. And that's true for resources available to users as downloadable
+        shapefiles as well as resources available as connections to live streaming data services.
+        AGRC strives to ensure that the SGID stays current as a state-level channel to aide in the discovery,
+        access, and use of GIS data resources.</p>
     </div>
-    <div class="grid__col section alternate">
-        <a id="dev" class="anchor"></a>
-        <h2>Application Development</h2>
-        <div class="grid__col grid__col--1-of-2">
-            <p>There are many possible approaches to publishing data to web maps and web services.
-            AGRC assists with a full range of web map solutions, from the simple to the most complex.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-2">
-            <p>Our dev group specializes in custom applications, designed with agility to meet defined requirements, that
-            maximize the communication, logical organization, and usability of information.</p>
-        </div>
-        <h5 class="text-center">Some of our recent, and occasionally award-winning, work includes:</h5>
-        <br>
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="https://wri.utah.gov/"><h5 class="text-center">WRI (DNR-DWR)</h5>
-            <img alt="WRI (DNR-DWR)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/wri_utah_gov.png" | prepend: site.baseurl }}" /></a>
-            <p class="muted">The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://crashmapping.utah.gov/"><h5 class="text-center">Crash Map (DPS / UDOT)</h5>
-            <img alt="Crash Map (DPS / UDOT)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/crashmapping_utah_gov.png" | prepend: site.baseurl }}" /></a>
-            <p class="muted">A statewide map of vehicle crashes, reported across all jurisdictions,
-                that allows dynamic filtering for time, date, cause, severity, etc.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://locate.utah.gov/"><h5 class="text-center">locate.utah.gov (GOED)</h5>
-            <img alt="locate.utah.gov (GOED)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/locate_utah_gov.png" | prepend: site.baseurl }}" /></a>
-            <p class="muted">Utah's Economic Development Map depicts the landscape of what's important to businesses
-                considering relocating to Utah.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://enviro.deq.utah.gov/"><h5 class="text-center">Environmental Interactive Map (DEQ)</h5>
-            <img alt="Environmental Interactive Map (DEQ)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/deq_utah_gov.png" | prepend: site.baseurl }}" /></a>
-            <p class="muted">Search for site-specific information relating to DEQ programs including regulated
-                environmental sites, facilities, and designations.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://raster.utah.gov/"><h5 class="text-center">SGID Raster Search (AGRC)</h5>
-            <img alt="SGID Raster Search (AGRC)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/raster_utah_gov.png" | prepend: site.baseurl }}"/></a>
-            <p class="muted">Get map-based results for all of the imagery, elevation, lidar, and scanned maps
-                available from Utah's SGID.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-            <a href="http://parcels.utah.gov/"><h5 class="text-center">SGID Parcel Viewer (AGRC)</h5>
-            <img alt="SGID Parcel Viewer (AGRC)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/parcels_utah_gov.png" | prepend: site.baseurl }}" /></a>
-            <p class="muted">Zoom in to view parcel boundaries and basic attributes as assembled statewide by
-                AGRC, in coordination with County Recorders.</p>
-        </div>
-        <p class="section-read-more text-center">
-            <a href="{{ "/developer/" | prepend: site.baseurl }}" class="btn">More Information</a>
-        </p>
+    <h3>Filter the <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">master SGID Index table</a> for data &amp; services...</h3>
+    <div class="grid__col grid__col--2-of-2 grid__col--centered grid__col--s-hidden" style="width:568px">
+      <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">
+        <img alt="SGID Index Table Search" class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/sgid-index.png" | prepend: site.baseurl }}">
+      </a>
     </div>
-    <div class="grid__col section no-border">
-        <a id="api" class="anchor"></a>
-        <h2>APIs and JavaScript Widgets</h2>
-        <div class="grid__col grid__col--1-of-3">
-            <p>APIs available through <a href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like
-            address location (aka geocoding) and map search (point-in-polygon query) to be built into web applications
-            and data-handling processes without the immediate need for GIS-specific software. These API's are at the core
-            of sites like <a href="http://le.utah.gov/GIS/findDistrict.jsp">Who Represents Me?</a>,
-            <a href="https://secure.utah.gov/auditor-search/taxing-fee-entity-search.html">Who Taxes me?</a> etc.</p>
-        </div>
-        <div class="grid__col grid__col--1-of-3">
-            <p>AGRC's dev group maintains a library of <a href="{{ "/developer/widgets/" | prepend: site.baseurl }}">
-                Utah-specific map widgets</a> that provide common tools desired in web mapping applications.
-                The library includes FindAddress (geocoding), TRSSearch (finds PLSS sections), and Sherlock (can be used to search
-                for any feature in the SGID or layers in a map services. We also, on occasion publish customization for
-                ArcGIS desktop like our <a href="{{site.baseurl}}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}">
-                geocoding api tool</a>.</p>
-        </div>
-           <div class="grid__col grid__col--1-of-3">
-            <p>We are into <i>git</i>. By default, the AGRC dev team keeps its code current in
-                <a href="https://github.com/agrc">AGRC's GitHub repository</a>. If it's a web site, widget,
-                desktop add-in, or even the content of this website itself, it should be findable, and open-sourced
-                in the AGRC repo.</p>
-        </div>
-        <p class="section-read-more">
-            <a href="{{ "/developer/" | prepend: site.baseurl }}" class="btn">More Information</a>
-        </p>
+    <h3>...or browse specific Data Categories</h3>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/address-overview/" | prepend: site.baseurl }}"><h5 class="text-center">Addresses</h5>
+      <img alt="Addresses" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_address_points.png" | prepend: site.baseurl }}"></a>
     </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}"><h5 class="text-center">Aerial Photos</h5>
+      <img alt="Aerial Photos" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_NAIP.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/bioscience-overview/" | prepend: site.baseurl }}"><h5 class="text-center">Bioscience</h5>
+      <img alt="Bioscience" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_habitat.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/boundaries/" | prepend: site.baseurl }}"><h5 class="text-center">Boundaries</h5>
+      <img alt="Boundaries" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_voter_precincts.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/sgid-cadastre/" | prepend: site.baseurl }}"><h5 class="text-center">Cadastre</h5>
+      <img alt="Cadastre" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_parcels.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/climate/" | prepend: site.baseurl }}"><h5 class="text-center">Climate/Weather</h5>
+      <img alt="Climate/Weather" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_WatershedAreas.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/demographic/" | prepend: site.baseurl }}"><h5 class="text-center">Demographic</h5>
+      <img alt="Demographic" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_census.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/economy/" | prepend: site.baseurl }}"><h5 class="text-center">Economy</h5>
+      <img alt="Economy" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90EnterpriseZones.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/elevation-terrain-data/" | prepend: site.baseurl }}"><h5 class="text-center">Elevation/Terrain</h5>
+      <img alt="Elevation/Terrain" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_ned.jpg" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/energy/" | prepend: site.baseurl }}"><h5 class="text-center">Energy</h5>
+      <img alt="Energy" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_energy.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/environment/" | prepend: site.baseurl }}"><h5 class="text-center">Environment</h5>
+      <img alt="Environment" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_enviro.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/farming/" | prepend: site.baseurl }}"><h5 class="text-center">Farming</h5>
+      <img alt="Farming" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah-sgid-water-related-land-use.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/geoscience/" | prepend: site.baseurl }}"><h5 class="text-center">Geoscience</h5>
+      <img alt="Geoscience" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_faults.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/health/" | prepend: site.baseurl }}"><h5 class="text-center">Health</h5>
+      <img alt="Health" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_StatisticalAreas.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/history/" | prepend: site.baseurl }}"><h5 class="text-center">History</h5>
+      <img alt="History" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_archaeology_generalized.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/location/" | prepend: site.baseurl }}"><h5 class="text-center">Location</h5>
+      <img alt="Location" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_building_footprints.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/planning/" | prepend: site.baseurl }}"><h5 class="text-center">Planning</h5>
+      <img alt="Planning" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_wsa-boundaries.jpg" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/political/" | prepend: site.baseurl }}"><h5 class="text-center">Political</h5>
+      <img alt="Political" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_SenateDistricts2012.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/recreation/" | prepend: site.baseurl }}"><h5 class="text-center">Recreation</h5>
+      <img alt="Recreation" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah_trailheads.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/society/" | prepend: site.baseurl }}"><h5 class="text-center">Society</h5>
+      <img alt="Society" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_Schools.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/sgid-transportation/" | prepend: site.baseurl }}"><h5 class="text-center">Transportation</h5>
+      <img alt="Transportation" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/usgs-scanned-topographic-maps-drgs/" | prepend: site.baseurl }}"><h5 class="text-center">USGS Topo Maps</h5>
+      <img class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_usgs_scanned_maps.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/utilities/" | prepend: site.baseurl }}"><h5 class="text-center">Utilities</h5>
+      <img alt="Utilities" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_broadband.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
+      <a href="{{ "/data/water-data-services/" | prepend: site.baseurl }}"><h5 class="text-center">Water</h5>
+      <img alt="Water" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_Streams.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <p class="section-read-more">
+      <a href="{{ "/data/" | prepend: site.baseurl }}" class="btn">View All Data</a>
+    </p>
+  </div>
+  <div class="grid__col section alternate">
+    <a id="tiles" class="anchor"></a>
+    <h2>Base Maps and Imagery</h2>
+    <div class="grid__col grid__col--1-of-3">
+      <p>AGRC hosts aerial photography and pre-rendered base map services on
+        its <a href="{{ "/discover/" | prepend: site.baseurl }}">
+        Discover</a> cloud-based server. After obtaining an organizational login,
+        GIS users, CAD users, and web apps can connect to these multi-scale maps using the Open
+        Geospatial Consortium WMS and WMTS protocols. The Discover service provides images and tiles
+        in the Web Mercator projection, an industry standard for web map display.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3">
+      <p>Layers accessible from the Discover server include themed base maps built from local &amp; state
+        GIS data in terrain, lite, topo, and hybrid themes. Aerial photography offerings include
+        the latest 6" statewide imagery licensed for state, local, &amp; tribal government from Google,
+        as well as public domain color NAIP, Wasatch Front HRO, CIR/NRG imagery, and the historic
+        B/W DOQ series.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3">
+      <p>Until January 31, 2017 AGRC provided base maps from its mapserv.utah.gov server in UTM
+        NAD83 coordinates. These base map services have been retired in favor of the cloud-hosted
+        OGC services served through Discover.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3 text-center">
+      <h5 class="text-center">Terrain</h5>
+      <img alt="Terrain" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}">
+    </div>
+    <div class="grid__col grid__col--1-of-3 text-center">
+      <h5 class="text-center">Imagery plus Overlay base maps</h5>
+      <img alt="Imagery plus Overlay base maps" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}">
+    </div>
+    <div class="grid__col grid__col--1-of-3 text-center">
+      <h5 class="text-center">Lite base map</h5>
+      <img alt="Lite base map" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}">
+    </div>
+    <div class="grid__col grid__col--1-of-2">
+      <p>AGRC's <a href="http://atlas.utah.gov">atlas.utah.gov</a> website allows for a quick preview
+        of the most popular base map services. Zoom in for richer map content, click the map for key
+        location-specific info, and use the base map selector in the upper right corner to select
+        your base map of choice.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-2">
+      <p>Among the locally sourced map layers that AGRC incorporates into its base maps are:
+      municipal boundaries, building-specific address points, road centerlines per UDOT
+      specs, and State-stewarded public lands boundaries.</p>
+    </div>
+    <p class="section-read-more">
+      <a href="{{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}" class="btn">Base Map Information</a>
+      <a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}" class="btn">Imagery Download Information</a>
+    </p>
+  </div>
+  <div class="grid__col section">
+    <a id="gps" class="anchor"></a>
+    <h2>TURN GPS Precision RTK Network</h2>
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
+    <p>The Utah Reference Network for GPS (TURN GPS) is a networked system of over 90 permanently located high
+      precision GPS receivers, installed across Utah and neighboring states.</p>
+    <p>TURN GPS provides a real-time correction signal that factors out atmospheric variation between earth-orbiting GPS
+      satellites and ground-based GPS receivers in the field.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
+      <h5 class="text-center">TURN GPS Network Coverage</h5>
+      <a href="http://turngps.utah.gov/Map/SensorMap.aspx">
+        <img alt="TURN GPS Network Coverage" class="center b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
+      </a>
+    </div>
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
+      <p>Surveyors, construction crews, field mapping technicians, and GPS-controlled machinery are able to operate with
+        up-to sub-centimeter precise measurement by connecting their existing GPS receivers to the TURN GPS correction service
+        over a smart phone hotspot.</p>
+      <p>A partnership with state and local government agencies has allow TURN GPS base stations to be sited at
+        existing Utah facilities in exchange for the partners' use of the system. One year subscriptions to the
+        TURN GPS service are $600 per GPS device.</p>
+    </div>
+    <p class="section-read-more text-center">
+      <a href="{{ "/data/sgid-cadastre/turn-gps/" | prepend: site.baseurl }}" class="btn">More Information</a>
+    </p>
+  </div>
+  <div class="grid__col section alternate">
+    <a id="dev" class="anchor"></a>
+    <h2>Application Development</h2>
+    <div class="grid__col grid__col--1-of-2">
+      <p>There are many possible approaches to publishing data to web maps and web services.
+      AGRC assists with a full range of web map solutions, from the simple to the most complex.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-2">
+      <p>Our dev group specializes in custom applications, designed with agility to meet defined requirements, that
+      maximize the communication, logical organization, and usability of information.</p>
+    </div>
+    <h5 class="text-center">Some of our recent, and occasionally award-winning, work includes:</h5>
+    <br>
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
+      <a href="https://wri.utah.gov/"><h5 class="text-center">WRI (DNR-DWR)</h5>
+      <img alt="WRI (DNR-DWR)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/wri_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <p class="muted">The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
+      <a href="http://crashmapping.utah.gov/"><h5 class="text-center">Crash Map (DPS / UDOT)</h5>
+      <img alt="Crash Map (DPS / UDOT)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/crashmapping_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <p class="muted">A statewide map of vehicle crashes, reported across all jurisdictions,
+        that allows dynamic filtering for time, date, cause, severity, etc.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
+      <a href="http://locate.utah.gov/"><h5 class="text-center">locate.utah.gov (GOED)</h5>
+      <img alt="locate.utah.gov (GOED)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/locate_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <p class="muted">Utah's Economic Development Map depicts the landscape of what's important to businesses
+        considering relocating to Utah.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
+      <a href="http://enviro.deq.utah.gov/"><h5 class="text-center">Environmental Interactive Map (DEQ)</h5>
+      <img alt="Environmental Interactive Map (DEQ)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/deq_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <p class="muted">Search for site-specific information relating to DEQ programs including regulated
+        environmental sites, facilities, and designations.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
+      <a href="http://raster.utah.gov/"><h5 class="text-center">SGID Raster Search (AGRC)</h5>
+      <img alt="SGID Raster Search (AGRC)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/raster_utah_gov.png" | prepend: site.baseurl }}"/></a>
+      <p class="muted">Get map-based results for all of the imagery, elevation, lidar, and scanned maps
+        available from Utah's SGID.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
+      <a href="http://parcels.utah.gov/"><h5 class="text-center">SGID Parcel Viewer (AGRC)</h5>
+      <img alt="SGID Parcel Viewer (AGRC)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/parcels_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <p class="muted">Zoom in to view parcel boundaries and basic attributes as assembled statewide by
+        AGRC, in coordination with County Recorders.</p>
+    </div>
+    <p class="section-read-more text-center">
+      <a href="{{ "/developer/" | prepend: site.baseurl }}" class="btn">More Information</a>
+    </p>
+  </div>
+  <div class="grid__col section no-border">
+    <a id="api" class="anchor"></a>
+    <h2>APIs and JavaScript Widgets</h2>
+    <div class="grid__col grid__col--1-of-3">
+      <p>APIs available through <a href="http://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like
+      address location (aka geocoding) and map search (point-in-polygon query) to be built into web applications
+      and data-handling processes without the immediate need for GIS-specific software. These API's are at the core
+      of sites like <a href="http://le.utah.gov/GIS/findDistrict.jsp">Who Represents Me?</a>,
+      <a href="https://secure.utah.gov/auditor-search/taxing-fee-entity-search.html">Who Taxes me?</a> etc.</p>
+    </div>
+    <div class="grid__col grid__col--1-of-3">
+      <p>AGRC's dev group maintains a library of <a href="{{ "/developer/widgets/" | prepend: site.baseurl }}">
+        Utah-specific map widgets</a> that provide common tools desired in web mapping applications.
+        The library includes FindAddress (geocoding), TRSSearch (finds PLSS sections), and Sherlock (can be used to search
+        for any feature in the SGID or layers in a map services. We also, on occasion publish customization for
+        ArcGIS desktop like our <a href="{{site.baseurl}}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}">
+        geocoding api tool</a>.</p>
+    </div>
+   <div class="grid__col grid__col--1-of-3">
+      <p>We are into <i>git</i>. By default, the AGRC dev team keeps its code current in
+        <a href="https://github.com/agrc">AGRC's GitHub repository</a>. If it's a web site, widget,
+        desktop add-in, or even the content of this website itself, it should be findable, and open-sourced
+        in the AGRC repo.</p>
+    </div>
+    <p class="section-read-more">
+      <a href="{{ "/developer/" | prepend: site.baseurl }}" class="btn">More Information</a>
+    </p>
+  </div>
 </div>
 <script src="{{ "/bower_components/bLazy/blazy.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
-    ;(function() {
-        var bLazy = new Blazy({
-            offset: 250
-        });
-    })();
+  ;(function() {
+    var bLazy = new Blazy({ offset: 250 });
+  })();
 </script>
