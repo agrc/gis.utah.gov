@@ -1,0 +1,76 @@
+---
+status: publish
+layout: page
+author:
+  display_name: Jessie Pechmann
+  email: jpechmann@utah.gov
+tags:
+  - addressing
+  - geocoding
+  - overview
+published: true
+date: 2012-04-11 16:47:23 -0600
+title: Address Overview
+categories: []
+---
+<h6 class="text-center">Addressing Data Resources</h6>
+<table>
+  <thead>
+    <tr>
+      <th width="25%" scope="col">Product Name</th>
+      <th scope="col">Type</th>
+      <th scope="col">Steward(s)</th>
+      <th width="40%" scope="col">Description</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td colspan="5">
+        <sub><em>click a product name for more information and download links</em></sub>
+      </td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td><a href="{{ "/data/location/address-data/" | prepend: site.baseurl }}">Address Points</a></td>
+      <td>GIS Data Layer</td>
+      <td>AGRC, Local Governments</td>
+      <td>Address point locations in Utah.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/location/address-data/" | prepend: site.baseurl }}">Address System Quadrants</a></td>
+      <td>GIS Data Layer</td>
+      <td>AGRC</td>
+      <td>Polygons that depict the four quadrants of each address system in Utah.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/address/address-grids/" | prepend: site.baseurl }}">Utah Local Addressing System (Address Grids) Information</a></td>
+      <td>Address Coordinate Descriptions</td>
+      <td>AGRC</td>
+      <td>Text that describes the address coordinate systems in Utah.</td>
+    </tr>
+    <tr>
+      <td><a href="https://api.mapserv.utah.gov">AGRC Web Api for Geocoding</a></td>
+      <td>Geocoding API</td>
+      <td>AGRC</td>
+      <td>Custom geocoding http web api</td>
+    </tr>
+    <tr>
+      <td><a href="{{site.baseurl}}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}">Utah Geocoding Toolbox</a></td>
+      <td>Geocoding toolbox</td>
+      <td>AGRC</td>
+      <td>Custom geocoding toolbox for ArcGIS Desktop</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/address-geocoders-locators/" | prepend: site.baseurl }}">Address Locators</a></td>
+      <td>Locator Service</td>
+      <td>AGRC</td>
+      <td>Composite address locators for geocoding that reference the statewide Transportation.Roads feature class and address point data in Utah.</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Related Data</h4>
+<ul class="dotless">
+  <li><a href="{{ "/data/address-grids/" | prepend: site.baseurl }}">Utah Local Addressing Systems (Address Grids)</a>
+  <li><a href="{{ "/data/location/" | prepend: site.baseurl }}">Location</a>
+</ul>
