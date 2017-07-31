@@ -7,30 +7,25 @@ author:
   display_name: Rick Kelson & Mike Heagin
   email: rkelson@utah.gov, mheagin@utah.gov
 date: 2017-07-31 15:39:16
-categories:
-
+categories: []
 tags:
-- uc
-
+- conference
 ---
-
-### The Science of Where
-#### At the ESRI UC 2017
 
 Sizewise, the 2017 Esri User Conference turned out to be the biggest UC yet, with over 16,000 attendees. This year’s theme was The [Science of Where](http://www.esri.com/videos/watch?videoid=XrU8GX7manc&channelid=UCJ203R9PsZn6wF_zYfsp1SA&title=The%20Science%20of%20Where%20-%20Unlock%20Data%E2%80%99s%20Full%20Potential) - Unlock Data’s Full Potential. The “The Science of Where” is defined as “the science of geography and the technology of GIS”. GIS is the framework for applying location science to almost everything, since most things have a geospatial component. ESRI’s Jack Dangermond spoke on creating the “modern GIS architecture” where everyone is leveraging web services to work smarter, and more collaboratively, with the best most-current information. Jack also emphasized how data sharing is essential to the work we all do.
 
 Along with ArcGIS Online, ArcGIS Pro was the main theme at the UC and seems poised to be so for years to come. New tools and enhancements are available in the latest Pro version 2.0. Below is a Top 10 List of Favorite Things Available in ArcGIS Pro 2.0 from the Esri UC plenary session:
 
-\10. Annotation - Feature linked and editable right in the map  
-\9. Charting Tools  
-\8. Layout Improvements  
-\7. Auto-Georeferencing  
-\6. Catalog with Favorites  
-\5. WFS (Web Feature Service)  
-\4. Editing in 3D  
-\3. 3D navigation tool  
-\2. Sharing as a Web Map  
-\1. Dark Theme  
+10. Annotation - Feature linked and editable right in the map  
+9. Charting Tools  
+8. Layout Improvements  
+7. Auto-Georeferencing  
+6. Catalog with Favorites  
+5. WFS (Web Feature Service)  
+4. Editing in 3D  
+3. 3D navigation tool  
+2. Sharing as a Web Map  
+1. Dark Theme  
 
 At AGRC we are most excited about #6 which means we’ll all have a Catalog pane with ‘favorites’ to allow established database, server, and folder connections to persist between Pro projects, both new and old. The auto-georeferencing tool, charting tools and layout enhancements will also be beneficial. Some of us are also enjoying the ‘dark theme’ UI in Pro after years of working without such an option.
 
