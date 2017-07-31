@@ -51,7 +51,7 @@ Listed below are the layers we hope to complete and keep current through partner
 ---
 {: .divider }
 
-### [**Road Centerlines**]({{"/data/sgid-transportation/roads-system/" | prepend:site.baseurl}} "Road Centerlines page")  
+### [**Road Centerlines**]({{"/data/transportation/roads-system/" | prepend:site.baseurl}} "Road Centerlines page")  
 {: #road_centerlines}
 
 ![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
