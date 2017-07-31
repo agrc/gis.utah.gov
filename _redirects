@@ -21,4 +21,9 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/farming/grazing-improvement-area/                                                 /data/farming/grazing-improvements/                         301
 /data/address-overview/                                                                 /data/address/                                              301
 /data/address-overview/address-grids/notes-utah-local-addressing-systems-address-grids/ /data/address/address-grids/                                301
-/data/sgid-transportation/                                                              /data/transportation/
+/data/sgid-transportation/                                                              /data/transportation/                                       301
+/data/sgid-transportation/air/                                                          /data/transportation/air/                                   301
+/data/sgid-transportation/railroads/                                                    /data/transportation/railroads/                             301
+/data/sgid-transportation/roads-system/                                                 /data/transportation/roads-system/                          301
+/data/sgid-transportation/street-network-analysis/                                      /data/transportation/street-network-analysis/               301
+/data/sgid-transportation/transit/                                                      /data/transportation/transit/                               301
