@@ -16,16 +16,17 @@ Sizewise, the 2017 Esri User Conference turned out to be the biggest UC yet, wit
 
 Along with ArcGIS Online, ArcGIS Pro was the main theme at the UC and seems poised to be so for years to come. New tools and enhancements are available in the latest Pro version 2.0. Below is a Top 10 List of Favorite Things Available in ArcGIS Pro 2.0 from the Esri UC plenary session:
 
-10. Annotation - Feature linked and editable right in the map  
-9. Charting Tools  
-8. Layout Improvements  
-7. Auto-Georeferencing  
-6. Catalog with Favorites  
-5. WFS (Web Feature Service)  
-4. Editing in 3D  
-3. 3D navigation tool  
-2. Sharing as a Web Map  
-1. Dark Theme  
+0. Annotation - Feature linked and editable right in the map
+0. Charting Tools
+0. Layout Improvements
+0. Auto-Georeferencing
+0. Catalog with Favorites
+0. WFS (Web Feature Service)
+0. Editing in 3D
+0. 3D navigation tool
+0. Sharing as a Web Map
+0. Dark Theme
+{: reversed="reversed"}
 
 At AGRC we are most excited about #6 which means we’ll all have a Catalog pane with ‘favorites’ to allow established database, server, and folder connections to persist between Pro projects, both new and old. The auto-georeferencing tool, charting tools and layout enhancements will also be beneficial. Some of us are also enjoying the ‘dark theme’ UI in Pro after years of working without such an option.
 
