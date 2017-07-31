@@ -27,3 +27,10 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/sgid-transportation/roads-system/                                                 /data/transportation/roads-system/                          301
 /data/sgid-transportation/street-network-analysis/                                      /data/transportation/street-network-analysis/               301
 /data/sgid-transportation/transit/                                                      /data/transportation/transit/                               301
+/data/sgid-indices/aerial-photography-indices/                                          /data/indices/aerial-photography-indices/                   301
+/data/sgid-indices/lidar-indices/                                                       /data/indices/lidar-indices/                                301
+/data/sgid-indices/auto-correlated-dem-indices/                                         /data/indices/auto-correlated-dem-indices/                  301
+/data/sgid-indices/contours-indices/                                                    /data/indices/contours-indices/                             301
+/data/sgid-indices/usgs-dem-indices/                                                    /data/indices/usgs-dem-indices/                             301
+/data/sgid-indices/usgs-topo-indices/                                                   /data/indices/usgs-topo-indices/                            301
+/data/sgid-indices/national-grid-index/                                                 /data/indices/national-grid-index/                          301
