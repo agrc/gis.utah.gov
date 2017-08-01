@@ -1,4 +1,4 @@
-<p><a href="{{ include.download }}" class="button medium white">
+<p><a id="package--download" href="{{ include.download }}" class="button medium white">
   <span class="button-text">Download Dataset</span></a></p>
 <h4 class="package--header">{{ include.name }}</h4>
 <ul class="dotless no-padding">
@@ -11,3 +11,14 @@
 </ul>
 <h4 class="package--header">Package Contents</h4>
 <p>The following data is available for download:</p>
+<script>
+  document.getElementById('package--download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Data',
+      eventAction: 'PackageDownload',
+      eventLabel: '{{include.name}}',
+      transport: 'beacon'
+    });
+  });
+</script>
