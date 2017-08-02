@@ -7,109 +7,82 @@ author:
   email: rkelson@utah.gov
 tags:
   - data
+  - indices
 categories: []
 published: true
 date: 2011-09-15 14:40:08 -0600
+USGSDigitalElevationModel:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mR1ZNREZ0elQyV0U&export=download"
+    - label: "USGS 10, 30 and 90 Meter DEM Index: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcmwtX0pacnhQdjg&export=download"
+    - label: "USGS 10, 30 and 90 Meter DEM Index: Shapefile"
+  updates:
+    - No planned updates
+USGSNationalElevationDataset:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWUhpMzJ0NE9TRlk&export=download"
+    - label: "USGS 10 and 30 Meter NED DEM Index: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcXl3VFJKNElYX3M&export=download"
+    - label: "USGS 10 and 30 Meter NED DEM Index: Shapefile"
+  updates:
+    - No planned updates
 ---
-<div class="caption"><img class="size-full wp-image-4794" src="{{ "/images/DEM-Index-UT_LG.png" | prepend: site.baseurl }}" alt="DEM Index" /><p class="caption-text">USGS DEM Index</p></div><br />
-<a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRHpHSWdFWkwtTGs" class="button medium white"><span class="button-text">Download DEM and NED Indices</span></a></p>
-<h4><strong>DEM and NED Indices</h4>
-<p></strong><br />
-<strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward: AGRC</strong></p>
-<p><strong>Abstract:</strong><br />
-This dataset contains GIS mapping data representing the tile indices for the USGS DEM and NED elevation datasets for Utah.<br />
-<strong>Data Content:</strong><br />
-The following data is available for download:</p>
-<div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="USGSDigitalElevationModel(DEM)Indices">USGS Digital Elevation Model (DEM) Indices</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/thumbs/thumbs_dem-index-ut.jpg" | prepend: site.baseurl }}" alt="DEM Index" />The USGS 24K tile index can be used to determine the 7.5 minute, 1:24,000 scale boundaries of the 10, 30, and 90 meter USGS DEMs for Utah.</p>
-Each tile index contains the following attribute fields. The 10 and 30 meter USGS DEMs are named according the OHIO_CODE attribute:</p>
-<ul>
-<li><strong>Name</strong> - the name of the map</li>
-<li><strong>OHIO_CODE</strong> - code used by USGS</li>
-<li><strong>TILE</strong> - the image tile name on FTP site</li>
-<li><strong>PATH</strong> - the directory where the topographic map tile resides on the FTP site</li>
-</ul>
-<p>The 24K tile index is maintained by AGRC. Changes and updates are not planned to this dataset.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-This dataset is maintained by AGRC.</p>
-<p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+<div class="caption">
+  <img src="{{ "/images/DEM-Index-UT_LG.png" | prepend: site.baseurl }}" alt="DEM Index" />
+  <p class="caption-text">USGS DEM Index</p>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="USGSDigitalElevationModel(DEM)Indices-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mR1ZNREZ0elQyV0U&export=download">USGS 10, 30 and 90 Meter DEM Index: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcmwtX0pacnhQdjg&export=download">USGS 10, 30 and 90 Meter DEM Index: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="{{ "/data/elevation-terrain-data/10-30-90-meter-elevation-models-usgs-dems/" | prepend: site.baseurl }}">Download 10, 30 and 90 meter USGS DEMs</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_INDICES_USGS24KQuads.html">View FGDC format metadata</a><br />
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="USGSDigitalElevationModel(DEM)Indices-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are not planned.</p>
-
-        </div>
-    </div>
-    </div> </li>
-</ul>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRHpHSWdFWkwtTGs"
+    name="DEM and NED Indices"
+    abstract="This dataset contains GIS mapping data representing the tile indices for the USGS DEM and NED elevation datasets for Utah." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="USGSNationalElevationDataset(NED)Indices">USGS National Elevation Dataset (NED) Indices</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/thumbs/thumbs_ned-index-ut.jpg" | prepend: site.baseurl }}" alt="NED Index" />The USGS 24K tile index can be used to determine the 7.5 minute, 1:24,000 scale boundaries of the 10 and 30 meter USGS NED tiles for Utah.</p>
-Each tile index contains the following attribute fields. The 10 meter USGS NED tiles are named according the TILE attribute:</p>
-<ul>
-<li><strong>TILE</strong> - the image tile name on FTP site</li>
-<li><strong>PATH</strong> - the directory where the topographic map tile resides on the FTP site</li>
-</ul>
-<p>In addition to 10 meter NED available by 24K quad, there are county mosaics of the 10 and 30 meter datasets.</p>
-<p>The 24K, 10 meter quad tile index is maintained by AGRC. Changes and updates are not planned to this dataset.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
-This dataset is maintained by AGRC.</p>
-<p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="USGSDigitalElevationModel(DEM)Indices">
+      <a href="#USGSDigitalElevationModel(DEM)Indices" class="anchor--link">USGS Digital Elevation Model (DEM) Indices</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/thumbs/thumbs_dem-index-ut.jpg" | prepend: site.baseurl }}" alt="DEM Index" />
+    <p>The USGS 24K tile index can be used to determine the 7.5 minute, 1:24,000 scale boundaries of the 10, 30, and 90 meter USGS DEMs for Utah.</p>
+    <p>Each tile index contains the following attribute fields. The 10 and 30 meter USGS DEMs are named according the OHIO_CODE attribute:</p>
+    <ul class="dotless">
+      <li><strong>Name</strong> - the name of the map
+      <li><strong>OHIO_CODE</strong> - code used by USGS
+      <li><strong>TILE</strong> - the image tile name on FTP site
+      <li><strong>PATH</strong> - the directory where the topographic map tile resides on the FTP site
+    </ul>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+    <h5>Other links</h5>
+    <ul class="dotless">
+      <li><a href="{{ "/data/elevation-terrain-data/10-30-90-meter-elevation-models-usgs-dems/" | prepend: site.baseurl }}">Download 10, 30 and 90 meter USGS DEMs</a>
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_INDICES_USGS24KQuads.html">View FGDC format metadata</a>
+    </ul>
+    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="USGSDigitalElevationModel" info=page.USGSDigitalElevationModel %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="USGSNationalElevationDataset(NED)Indices-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWUhpMzJ0NE9TRlk&export=download">USGS 10 and 30 Meter NED DEM Index: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcXl3VFJKNElYX3M&export=download">USGS 10 and 30 Meter NED DEM Index: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="{{ "/data/elevation-terrain-data/10-30-meter-elevation-models-usgs-ned/" | prepend: site.baseurl }}">Download 10 and 30 meter USGS NED DEMs</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_INDICES_NED10_Quads.html">View FGDC format metadata</a><br />
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="USGSNationalElevationDataset(NED)Indices-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are not planned.</p>
-
-        </div>
-    </div>
-    </div> </li>
-</ul>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="USGSNationalElevationDataset(NED)Indices">
+      <a href="#USGSNationalElevationDataset(NED)Indices" class="anchor--link">USGS National Elevation Dataset (NED) Indices</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/thumbs/thumbs_ned-index-ut.jpg" | prepend: site.baseurl }}" alt="NED Index" />
+    <p>The USGS 24K tile index can be used to determine the 7.5 minute, 1:24,000 scale boundaries of the 10 and 30 meter USGS NED tiles for Utah.</p>
+    <p>Each tile index contains the following attribute fields. The 10 meter USGS NED tiles are named according the TILE attribute:</p>
+    <ul class="dotless">
+      <li><strong>TILE</strong> - the image tile name on FTP site
+      <li><strong>PATH</strong> - the directory where the topographic map tile resides on the FTP site
+    </ul>
+    <p>In addition to 10 meter NED available by 24K quad, there are county mosaics of the 10 and 30 meter datasets.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). Changes and updates are not planned to this dataset. There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
+    <h5>Other links</h5>
+    <ul class="dotless">
+      <li><a href="{{ "/data/elevation-terrain-data/10-30-meter-elevation-models-usgs-ned/" | prepend: site.baseurl }}">Download 10 and 30 meter USGS NED DEMs</a>
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_INDICES_NED10_Quads.html">View FGDC format metadata</a><br />
+    </ul>
+    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="USGSDigitalElevationModel" info=page.USGSDigitalElevationModel %}
+</div>
