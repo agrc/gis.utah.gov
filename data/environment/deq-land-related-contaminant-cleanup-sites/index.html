@@ -126,19 +126,14 @@ FacilityUST:
     - Nightly
 ---
 <div class="caption">
-  <img class="size-full" src="{{ "/images/gallery/sgid/envirolandmain.png" | prepend: site.baseurl }}" alt="Land Locations" />
+  <img src="{{ "/images/gallery/sgid/envirolandmain.png" | prepend: site.baseurl }}" alt="Land Locations" />
   <p class="caption-text">DEQ Land Locations</p>
 </div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR3FKbTA2UDEwQWs" class="button medium white">
-  <span class="button-text">Download Data Package</span></a></p>
-<h4 class="package--header">DEQ Land-Related Contaminant and Cleanup Data</h4>
-<ul class="dotless">
-  <li><strong>Data Type:</strong> GIS Data Layer
-  <li><strong>Steward(s):</strong> Utah Department of Environmental Quality
-  <li><strong>Web Application:</strong> <a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>
-  <li><strong>Abstract:</strong> US EPA and State designated hazardous materials storage sites and contamination clean up program sites including CERLA, National Priority List, Underground Storage Tanks (UST), Brownfields, Voluntary Cleanup (VCP), Tier 2, Toxic Release Inventory (TRI), User Oil Permitted Facilities, Formerly Used Defense (FUD), RCRA Large &amp; Small Quantity Hazardous Waste Generators, Solid Waste Facilities, and Enforceable Written Assurance sites. To view all DEQ geographic data online, see the <a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>.
-</ul>
-<h4 class="package--header">Package Contents</h4>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR3FKbTA2UDEwQWs"
+  name="DEQ Land-Related Contaminant and Cleanup Data"
+  stewards="Utah Department of Environmental Quality"
+  webapp="http://enviro.deq.utah.gov/"
+  abstract="US EPA and State designated hazardous materials storage sites and contamination clean up program sites including CERLA, National Priority List, Underground Storage Tanks (UST), Brownfields, Voluntary Cleanup (VCP), Tier 2, Toxic Release Inventory (TRI), User Oil Permitted Facilities, Formerly Used Defense (FUD), RCRA Large &amp; Small Quantity Hazardous Waste Generators, Solid Waste Facilities, and Enforceable Written Assurance sites. To view all DEQ geographic data online, see the <a href='http://enviro.deq.utah.gov/'>DEQ Interactive Map Viewer</a>." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="BFTARGETED">
