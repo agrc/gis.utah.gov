@@ -10,129 +10,94 @@ tags:
 categories: []
 published: true
 date: 2011-09-15 09:48:35 -0600
+LiDARExtents:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWGJ4M2pzOERoUmc&export=download"
+    - label: "LiDAR Extents: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVVI5aWxpbHRwQTg&export=download"
+    - label: "LiDAR Extents: Shapefile"
+  updates:
+    - July 2011
+LiDARIndices:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mV3l5cERKdk14NTA"
+    - label: "LiDAR Extents and Indices Package"
+  updates:
+    - No planned updates
 ---
-<div class="caption"><img class="size-full wp-image-4794" src="{{ "/images/gallery/sgid/lidar-extents-index-ut.jpg" | prepend: site.baseurl }}" alt="LiDAR Extents and Indices" /><p class="caption-text">LiDAR Extent and Index</p></div><br />
-<a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV3l5cERKdk14NTA" class="button medium white"><span class="button-text">Download LiDAR Extents and Indices</span></a></p>
-<h4><strong>LiDAR Extents and Indices</h4>
-<p></strong><br />
-<strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward: AGRC</strong></p>
-<p><strong>Abstract:</strong><br />
-This dataset contains GIS mapping data representing the LiDAR elevation data available in the State of Utah. The 'Extents' are the boundaries of the LiDAR while the 'Indices' are the individual LiDAR tiles covered by the 'Extents'.</p>
-<p>&nbsp;</p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
+<div class="caption">
+  <img src="{{ "/images/gallery/sgid/lidar-extents-index-ut.jpg" | prepend: site.baseurl }}" alt="LiDAR Extents and Indices" />
+  <p class="caption-text">LiDAR Extent and Index</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV3l5cERKdk14NTA"
+    name="LiDAR Extents and Indices"
+    abstract="This dataset contains GIS mapping data representing the LiDAR elevation data available in the State of Utah. The 'Extents' are the boundaries of the LiDAR while the 'Indices' are the individual LiDAR tiles covered by the 'Extents'." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="LiDARExtents">LiDAR Extents</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/lidar-extents-ut.jpg" | prepend: site.baseurl }}" alt="LiDAR Extent Sample" /><br />
-INDICES.LiDAR_Extents is a polygon dataset of the areas where LiDAR elevation data is available in the State of Utah. Not all of this data is available from AGRC's FTP site.</p>
-INDICES.LiDAR_Extents is intended to be used to determine what LiDAR datasets are available for areas across the State of Utah.</p>
-<p>Each polygon extent contains the following attribute fields when available or applicable:</p>
-<ul>
-<li><strong>Resolution</strong> - the resolution or average point spacing</li>
-<li><strong>Year_Collected</strong> - the year collected</li>
-<li><strong>Description</strong> - a short description</li>
-<li><strong>File_Format</strong> - the file format</li>
-<li><strong>File_Extension</strong> - the file extension</li>
-<li><strong>Average_File_Size</strong> - the average file size of an individual image tile</li>
-<li><strong>Total_Size</strong> - the total file size of the entire product collection</li>
-<li><strong>Horizontal_Accuracy</strong> - the horizontal positional accuracy</li>
-<li><strong>Vertical_Accuracy</strong> - the vertical positional accuracy</li>
-<li><strong>Total_Square_Miles</strong> - the total square miles of the dataset</li>
-<li><strong>Contact</strong> - contact information</li>
-<li><strong>In_House</strong> - whether or not it is distributed from AGRC's FTP site</li>
-<li><strong>FTP_Path</strong> - the FTP directory to download the data from</li>
-<li><strong>Product</strong> - a generalize product name</li>
-<li><strong>Category</strong> - a generalized product category name</li>
-<li><strong>Estimated_Date</strong> - an estimated date the data was collected</li>
-<li><strong>HTML_Page</strong> - the URL to a webpage for the product</li>
-<li><strong>REST_Endpoint</strong> - the REST end point URL</li>
-<li><strong>LYR_File</strong> - a layer pointer and symbology</li>
-<li><strong>FlightDate_Location</strong> - where to find the exact flight date for each individual tile of data</li>
-<li><strong>Tile_Index</strong> - the tile index in the SGID for each product</li>
-<li><strong>Upload_Date</strong> - the date the polygon extent was loaded into the dataset</li>
-</ul>
-<p>These boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are made as new LiDAR is a acquired in Utah.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
-This dataset is maintained by AGRC in partnership with state and local government.</p>
-<p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.<br />
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="LiDARExtents">
+      <a href="#LiDARExtents" class="anchor--link">LiDAR Extents</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/lidar-extents-ut.jpg" | prepend: site.baseurl }}" alt="LiDAR Extent Sample" />
+    <p>INDICES.LiDAR_Extents is a polygon dataset of the areas where LiDAR elevation data is available in the State of Utah.</p>
+    <p>INDICES.LiDAR_Extents is intended to be used to determine what LiDAR datasets are available for areas across the State of Utah.</p>
+    <p>Each polygon extent contains the following attribute fields when available or applicable:</p>
+    <ul class="dotless">
+      <li><strong>Resolution</strong> - the resolution or average point spacing
+      <li><strong>Year_Collected</strong> - the year collected
+      <li><strong>Description</strong> - a short description
+      <li><strong>File_Format</strong> - the file format
+      <li><strong>File_Extension</strong> - the file extension
+      <li><strong>Average_File_Size</strong> - the average file size of an individual image tile
+      <li><strong>Total_Size</strong> - the total file size of the entire product collection
+      <li><strong>Horizontal_Accuracy</strong> - the horizontal positional accuracy
+      <li><strong>Vertical_Accuracy</strong> - the vertical positional accuracy
+      <li><strong>Total_Square_Miles</strong> - the total square miles of the dataset
+      <li><strong>Contact</strong> - contact information
+      <li><strong>In_House</strong> - whether or not it is distributed from AGRC's FTP site
+      <li><strong>FTP_Path</strong> - the FTP directory to download the data from
+      <li><strong>Product</strong> - a generalize product name
+      <li><strong>Category</strong> - a generalized product category name
+      <li><strong>Estimated_Date</strong> - an estimated date the data was collected
+      <li><strong>HTML_Page</strong> - the URL to a webpage for the product
+      <li><strong>REST_Endpoint</strong> - the REST end point URL
+      <li><strong>LYR_File</strong> - a layer pointer and symbology
+      <li><strong>FlightDate_Location</strong> - where to find the exact flight date for each individual tile of data
+      <li><strong>Tile_Index</strong> - the tile index in the SGID for each product
+      <li><strong>Upload_Date</strong> - the date the polygon extent was loaded into the dataset
+    </ul>
+    <p>These boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are made as new LiDAR is a acquired in Utah. The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
+    <h5>Related Data</h5>
+    <ul class="dotless">
+      <li><a href="{{ "/data/elevation-terrain-data" | prepend: site.baseurl }}">Elevation and Terrain Data</a>
+    </ul>
+    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="LiDARExtents" info=page.LiDARExtents %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="LiDARExtents-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWGJ4M2pzOERoUmc&export=download">LiDAR Extents: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVVI5aWxpbHRwQTg&export=download">LiDAR Extents: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV3l5cERKdk14NTA">LiDAR Extents and Indices Package</a></li>
-<li><a href="{{ "/data/elevation-terrain-data" | prepend: site.baseurl }}">Download Elevation and Terrain Data</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="LiDARExtents-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published as needed.</p>
-<p>Recent update summaries:</p>
-<p>July 2011</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="LiDARIndices">LiDAR Indices</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/lidar-indices-ut.jpg" | prepend: site.baseurl }}" alt="LiDAR Index Sample" /><br />
-The 2006 LiDAR tile indices can be used to determine the boundaries of the LiDAR data collected in 2006. In addition to bare earth DEM data there is also raw point cloud data and some first and last return LiDAR data. This data is in an ASCii format.</p>
-Each tile index contain the following attribute fields:</p>
-<ul>
-<li><strong>TILE</strong> - the image tile name</li>
-<li><strong>PATH</strong> - the directory where the LiDAR tile resides on the FTP site</li>
-<li><strong>SIZE</strong> - the average file size of each tile</li>
-<li><strong>RESOLUTION</strong> - the resolution or average point spacing</li>
-</ul>
-<p>The 2006 LiDAR tile indices are maintained by AGRC. Changes and updates are not planned to these datasets.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
-This dataset is maintained by AGRC.</p>
-<p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.<br />
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="LiDARIndices">
+      <a href="#LiDARIndices" class="anchor--link">LiDAR Indices</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/lidar-indices-ut.jpg" | prepend: site.baseurl }}" alt="LiDAR Index Sample" />
+    <p>The 2006 LiDAR tile indices can be used to determine the boundaries of the LiDAR data collected in 2006. In addition to bare earth DEM data there is also raw point cloud data and some first and last return LiDAR data. This data is in an ASCii format.</p>
+    <p>Each tile index contain the following attribute fields:</p>
+    <ul class="dotless">
+      <li><strong>TILE</strong> - the image tile name
+      <li><strong>PATH</strong> - the directory where the LiDAR tile resides on the FTP site
+      <li><strong>SIZE</strong> - the average file size of each tile
+      <li><strong>RESOLUTION</strong> - the resolution or average point spacing
+    </ul>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). Changes and updates are not planned to these datasets. There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
+    <h5>Related Data</h5>
+    <ul class="dotless">
+      <li><a href="{{ "/data/elevation-terrain-data" | prepend: site.baseurl }}">Elevation and Terrain Data</a>
+    </ul>
+    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="LiDARIndices" info=page.LiDARIndices %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="LiDARIndices-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page.</p>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV3l5cERKdk14NTA">LiDAR Extents and Indices Package</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="{{ "/data/elevation-terrain-data" | prepend: site.baseurl }}">Download Elevation and Terrain Data</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="LiDARIndices-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are not planned.</p>
-
-        </div>
-    </div>
-    </div>
