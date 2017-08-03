@@ -10,65 +10,47 @@ tags:
 categories: []
 published: true
 date: 2011-09-15 14:02:33 -0600
+UnitedStatesNationalGrid:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV1BJcnVrWEJQU3c&export=download"
+      label: "US National Grid: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdHUxVmhJc3NDZVE&export=download"
+      label: "US National Grid: Shapefile"
+  updates:
+    - No updates are planned for this dataset.
+    - June 2009
 ---
-<div class="caption"><img src="{{ "/images/gallery/sgid/usng-indexlg-ut.jpg" | prepend: site.baseurl }}" alt="USNG Index Sample" /><p class="caption-text">U.S. National Grid Index</p></div><br />
-<a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRmVnWkhTYTdxNEE" class="button medium white"><span class="button-text">Download United States National Grid (USNG)</span></a></p>
-<h4><strong>United States National Grid (USNG)</h4>
-<p></strong><br />
-<strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward: AGRC</strong></p>
-<p><strong>Abstract:</strong><br />
-This dataset contains GIS mapping data representing the 1000m X 1000m United States National Grid (USNG) for Utah.</p>
-<p>&nbsp;</p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
-<div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="UnitedStatesNationalGrid(USNG)">United States National Grid (USNG)</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/usng-index-ut.jpg" | prepend: site.baseurl }}" alt="USNG Index Sample" /><br />
-INDICES.NationalGrid is a polygon dataset of a 1000 meter x 1000 meter grid for the State of Utah.</p>
-This is a polygon feature data layer of United States National Grid (1000 meter x 1000 meter polygons ) constructed by the Center for Interdisciplinary Geospatial Information Technologies at Delta State University with support from the US Geological Survey under the Cooperative Agreement 07ERAG0083. For correct display, please set the base coordinate system and projection such that it matches the UTM zone for which these data were constructed using the NAD 83 datum. Further information about the US National Grid is available from <a href="http://www.fgdc.gov/usng" target="viewer">http://www.fgdc.gov/usng</a> and a viewing of these layers as applied to local geography may be seen at the <a href="http://www.nationalmap.gov">National Map</a>.</p>
-<p>Each polygon contains the following attribute fields:</p>
-<ul>
-<li><strong>USNG</strong> - the fully qualified U.S. National Grid number coordinate describing the lower left corner of a 1000m x 1000m polygon</li>
-<li><strong>GRID1MIL</strong> - USNG Grid Zone Designator (GZD)</li>
-<li><strong>Grid100K</strong> - 100,000 meter USNG square ID</li>
-<li><strong>Easthing</strong> - lower left Easting of the 1000 meter USNG box</li>
-<li><strong>Northing</strong> - lower left Northing of the 1000 meter USNG box</li>
-</ul>
-<p>These boundaries are maintained by AGRC. No changes or updates are planned for this dataset.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83.</p>
-<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID and The Center for Interdisciplinary Geospatial Information Technologies, Delta State University, Cleveland Mississippi 38733.<br />
-This dataset is maintained by AGRC in partnership with the Center for Interdisciplinary Geospatial Information Technologies, Delta State University, Cleveland Mississippi 38733</p>
-<p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+<div class="caption">
+  <img src="{{ "/images/gallery/sgid/usng-indexlg-ut.jpg" | prepend: site.baseurl }}" alt="USNG Index Sample" />
+  <p class="caption-text">U.S. National Grid Index</p>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="UnitedStatesNationalGrid(USNG)-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV1BJcnVrWEJQU3c&export=download">US National Grid: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdHUxVmhJc3NDZVE&export=download">US National Grid: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="UnitedStatesNationalGrid(USNG)-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are not planned.</p>
-<p>Recent update summaries:</p>
-<p>June 2009<br />
-
-        </div>
-    </div>
-    </div><li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_INDICES_NationalGrid.html">View FGDC format metadata</a> </li>
-</ul>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRmVnWkhTYTdxNEE"
+  name="United States National Grid (USNG)"
+  stewards="AGRC in partnership with the Center for Interdisciplinary Geospatial Information Technologies, Delta State University, Cleveland Mississippi 38733"
+  abstract="This dataset contains GIS mapping data representing the 1000m X 1000m United States National Grid (USNG) for Utah." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UnitedStatesNationalGrid(USNG)">
+      <a href="#UnitedStatesNationalGrid(USNG)" class="anchor--link">United States National Grid (USNG)</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/usng-index-ut.jpg" | prepend: site.baseurl }}" alt="USNG Index Sample" />
+    <p>INDICES.NationalGrid is a polygon dataset of United States National Grid 1000 meter x 1000 meter grid polygons constructed by the Center for Interdisciplinary Geospatial Information Technologies at Delta State University with support from the US Geological Survey under the Cooperative Agreement 07ERAG0083. For correct display, please set the base coordinate system and projection such that it matches the UTM zone for which these data were constructed using the NAD 83 datum. Further information about the US National Grid is available from <a href="http://www.fgdc.gov/usng">http://www.fgdc.gov/usng</a> and a viewing of these layers as applied to local geography may be seen at the <a href="http://www.nationalmap.gov">National Map</a>.</p>
+    <p>Each polygon contains the following attribute fields:</p>
+    <ul class="dotless">
+      <li><strong>USNG</strong> - the fully qualified U.S. National Grid number coordinate describing the lower left corner of a 1000m x 1000m polygon
+      <li><strong>GRID1MIL</strong> - USNG Grid Zone Designator (GZD)
+      <li><strong>Grid100K</strong> - 100,000 meter USNG square ID
+      <li><strong>Easthing</strong> - lower left Easting of the 1000 meter USNG box
+      <li><strong>Northing</strong> - lower left Northing of the 1000 meter USNG box
+    </ul>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83. There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID and The Center for Interdisciplinary Geospatial Information Technologies, Delta State University, Cleveland Mississippi 38733.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_INDICES_NationalGrid.html">FGDC format metadata</a>
+    </ul>
+    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="UnitedStatesNationalGrid" info=page.UnitedStatesNationalGrid %}
+<div>
