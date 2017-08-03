@@ -64,31 +64,6 @@ TransitSpecialTaxAreas:
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="TaxEntities">
-      <a href="#TaxEntities" class="anchor--link">Tax Entities</a>
-    </h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" src="{{ "/images/TaxEntities.png" | prepend: site.baseurl }}" alt="TaxEntities" />Economy.TaxEntities2016 <p>contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetary districts, and mosquito abatement districts. Economy.TaxEntities2016 dataset does not represent exact legal boundaries, but rather a set of boundaries used for the administrative purposes by the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities, etc).</p>
-    <div>Tax Entities with...</div>
-    <ul class="dotless">
-      <li><strong>ENT_NBR</strong> of <code>1010</code> are counties
-      <li><code>2000</code> level <strong>ENT_NBR</strong> are school districts
-      <li><code>3000</code> level <strong>ENT_NBR</strong> are incorporated cities/towns
-      <li><code>4000</code> level <strong>ENT_NBR</strong> are special service districts
-      <li><code>6000</code> level <strong>ENT_NBR</strong> are special districts
-      <li><code>8000</code> and <code>9000</code> level <strong>ENT_NBR</strong> are redevelopment or community development areas (RDA or CDA)
-    </ul>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a>
-    </ul>
-    <p>Inquires: <a href="mailto:tchidester@utah.gov">Utah State Tax</a></p>
-  </div>
-  {% include packagedata.html name="TaxEntities" info=page.TaxEntities %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
     <h3 id="TaxAreas">
       <a href="#TaxAreas" class="anchor--link">Tax Areas</a>
     </h3>
@@ -119,4 +94,29 @@ TransitSpecialTaxAreas:
     <p>General Utah GIS data inquiries: <a href="mailto:nkenczka@utah.gov">Nick Kenczka</a></p>
   </div>
   {% include packagedata.html name="TransitSpecialTaxAreas" info=page.TransitSpecialTaxAreas %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="TaxEntities">
+      <a href="#TaxEntities" class="anchor--link">Tax Entities</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/TaxEntities.png" | prepend: site.baseurl }}" alt="TaxEntities" />Economy.TaxEntities2016 <p>contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetary districts, and mosquito abatement districts. Economy.TaxEntities2016 dataset does not represent exact legal boundaries, but rather a set of boundaries used for the administrative purposes by the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities, etc).</p>
+    <div>Tax Entities with...</div>
+    <ul class="dotless">
+      <li><strong>ENT_NBR</strong> of <code>1010</code> are counties
+      <li><code>2000</code> level <strong>ENT_NBR</strong> are school districts
+      <li><code>3000</code> level <strong>ENT_NBR</strong> are incorporated cities/towns
+      <li><code>4000</code> level <strong>ENT_NBR</strong> are special service districts
+      <li><code>6000</code> level <strong>ENT_NBR</strong> are special districts
+      <li><code>8000</code> and <code>9000</code> level <strong>ENT_NBR</strong> are redevelopment or community development areas (RDA or CDA)
+    </ul>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a>
+    </ul>
+    <p>Inquires: <a href="mailto:tchidester@utah.gov">Utah State Tax</a></p>
+  </div>
+  {% include packagedata.html name="TaxEntities" info=page.TaxEntities %}
 </div>
