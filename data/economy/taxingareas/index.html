@@ -12,169 +12,111 @@ published: true
 date: 2011-11-18 15:34:32 -0700
 title: Sales Tax Areas and Tax Entity Areas
 categories: []
+SalesTaxAreas:
+  downloads:
+    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mQy1iYXlqQTJLQUE
+      label: Sales Tax Areas
+  updates:
+    - This dataset is in need of update.
+TaxEntities:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mWUdrZ3hPdFFCcjA"
+      label: Tax Entities 2016
+  updates:
+    - 2016
+TaxAreas:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mdW90bzI1eTlVdGc"
+      label: Tax Areas 2016
+  updates:
+    - 2016
+TransitSpecialTaxAreas:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVlHOXQ0djUtaEU"
+      label: Transit Special Tax Areas
+  updates:
+    - Feb 2017
 ---
 <div class="caption">
-  <img src="{{ "/images/TaxAreasLarge.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" />
+  <img src="{{ "/images/TaxAreasLarge.png" | prepend: site.baseurl }}" alt="Taxing area polygons" />
   <p class="caption-text">Tax Areas</p>
 </div>
-<p>
-  <a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maDc4YmxKTjdTZTQ" class="button medium white"><span class="button-text">Download Data Package</span></a>
-</p>
-<h4><strong>Tax Areas and Entities</strong></h4>
-<p>
-  <strong>Data Type:</strong> GIS Data Layer<br />
-  <strong>Steward(s):</strong> USTC & AGRC
-</p>
-<p>
-  <strong>Abstract:</strong><br /> These datasets are related to taxation in Utah. They were created by the Utah State Tax Commission (USTC) and other local government agencies.
-</p>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7maDc4YmxKTjdTZTQ"
+  name="Tax Areas and Entities"
+  stewards="USTC & AGRC"
+  abstract="These datasets are related to taxation in Utah. They were created by the Utah State Tax Commission (USTC) and other local government agencies." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="SalesTaxAreas">Sales Tax Areas</h3>
+    <h3 id="SalesTaxAreas">
+      <a href="#SalesTaxAreas" class="anchor--link">Sales Tax Areas</a>
+    </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      <img class="productImage-Thumb" src="{{ "/images/SalesTaxAreas.png" | prepend: site.baseurl }}" alt="SalesTaxAreas" />Economy.SalesTaxAreas contains the approximate boundaries of Sales Tax Collection Areas in Utah. Sales Tax Areas are formed by municipality boundaries, special sales tax districts and the unincorporated areas of counties not in a special sales tax district.
-    </p>
+    <img class="productImage-Thumb" src="{{ "/images/SalesTaxAreas.png" | prepend: site.baseurl }}" alt="SalesTaxAreas" />
+    <p>Economy.SalesTaxAreas contains the approximate boundaries of Sales Tax Collection Areas in Utah. Sales Tax Areas are formed by municipality boundaries, special sales tax districts and the unincorporated areas of counties not in a special sales tax district.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a>
+    </ul>
     <p>General Utah GIS data inquiries contact <a href="mailto:agrc@utah.gov">AGRC</a></p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="SalesTaxAreas-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless">
-        <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mQy1iYXlqQTJLQUE">Sales Tax Areas</a></li>
-      </ul>
-      <p>Other Links</p>
-      <ul class="dotless">
-        <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-      <div class="panel update">
-          <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-          <h5 id="SalesTaxAreas-updates">Updates</h5>
-      </div>
-      <div class="panel-content">
-        <p>This dataset is in need of update.</p>
-      </div>
-  </div>
+  {% include packagedata.html name="SalesTaxAreas" info=page.SalesTaxAreas %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-      <h3 id="TaxEntities">Tax Entities</h3>
+    <h3 id="TaxEntities">
+      <a href="#TaxEntities" class="anchor--link">Tax Entities</a>
+    </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      <img class="productImage-Thumb" src="{{ "/images/TaxEntities.png" | prepend: site.baseurl }}" alt="TaxEntities" />Economy.TaxEntities2016 contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetary districts, and mosquito abatement districts. Economy.TaxEntities2016 dataset does not represent exact legal boundaries, but rather a set of boundaries used for the administrative purposes by the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities, etc).
-    </p>
-    <p>
-      Tax Entities with...
-      <ul>
-        <li>ENT_NBR of 1010 are counties</li>
-        <li>2000 level ENT_NBR are school districts</li>
-        <li>3000 level ENT_NBR are incorporated cities/towns</li>
-        <li>4000 level ENT_NBR are special service districts</li>
-        <li>6000 level ENT_NBR are special districts</li>
-        <li>8000 and 9000 level ENT_NBR are redevelopment or community development areas (RDA or CDA)</li>
-      </ul>
-      Inquires: <a href="mailto:tchidester@utah.gov">Utah State Tax</a>
-    </p>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="TaxEntities-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-    </div>
-    <div class="panel-content">
-      <ul class="dotless">
-        <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWUdrZ3hPdFFCcjA">Tax Entities 2016</a></li>
-      </ul>
-      <p>Other Links</p>
-      <ul class="dotless">
-        <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="TaxEntities-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      2016
-    </div>
-  </div>
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="TaxAreas">Tax Areas</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      <img class="productImage-Thumb" src="{{ "/images/TaxEntities.png" | prepend: site.baseurl }}" alt="Changeme" />Economy.TaxAreas2016 contains the set of taxing areas formed by each unique 2-dimensional intersection of incorporated taxing entities  in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state. The property tax levy rate within a tax area should be the same for a specified property type within that area.
-    </p>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="TaxAreas-downloads">Downloads</h5>
-    </div>
+    <img class="productImage-Thumb" src="{{ "/images/TaxEntities.png" | prepend: site.baseurl }}" alt="TaxEntities" />Economy.TaxEntities2016 <p>contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetary districts, and mosquito abatement districts. Economy.TaxEntities2016 dataset does not represent exact legal boundaries, but rather a set of boundaries used for the administrative purposes by the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities, etc).</p>
+    <div>Tax Entities with...</div>
     <ul class="dotless">
-      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdW90bzI1eTlVdGc">Tax Areas 2016</a></li>
+      <li><strong>ENT_NBR</strong> of <code>1010</code> are counties
+      <li><code>2000</code> level <strong>ENT_NBR</strong> are school districts
+      <li><code>3000</code> level <strong>ENT_NBR</strong> are incorporated cities/towns
+      <li><code>4000</code> level <strong>ENT_NBR</strong> are special service districts
+      <li><code>6000</code> level <strong>ENT_NBR</strong> are special districts
+      <li><code>8000</code> and <code>9000</code> level <strong>ENT_NBR</strong> are redevelopment or community development areas (RDA or CDA)
     </ul>
-    <p>Other Links</p>
+    <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a></li>
+      <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a>
+    </ul>
+    <p>Inquires: <a href="mailto:tchidester@utah.gov">Utah State Tax</a></p>
+  </div>
+  {% include packagedata.html name="TaxEntities" info=page.TaxEntities %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="TaxAreas">
+      <a href="#TaxAreas" class="anchor--link">Tax Areas</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/TaxEntities.png" | prepend: site.baseurl }}" alt="Tax Entities" />
+    <p>Economy.TaxAreas2016 contains the set of taxing areas formed by each unique 2-dimensional intersection of incorporated taxing entities  in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state. The property tax levy rate within a tax area should be the same for a specified property type within that area.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a>
     </ul>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="TaxAreas-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      2016
-    </div>
-  </div>
+  {% include packagedata.html name="TaxAreas" info=page.TaxAreas %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-      <h3 id="TransitSpecialTaxAreas">Transit Special Tax Areas</h3>
+      <h3 id="TransitSpecialTaxAreas">
+        <a href="#TransitSpecialTaxAreas" class="anchor--link">Transit Special Tax Areas</a>
+      </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      <img class="productImage-Thumb" src="{{ "/images/EconomyTransit.png" | prepend: site.baseurl }}" alt="Changeme" />Transit sales tax areas are generally areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses).
-    </p>
+    <img class="productImage-Thumb" src="{{ "/images/EconomyTransit.png" | prepend: site.baseurl }}" alt="Economy Transit" />
+    <p>Transit sales tax areas are generally areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses).</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a>
+    </ul>
     <p>General Utah GIS data inquiries: <a href="mailto:nkenczka@utah.gov">Nick Kenczka</a></p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="TransitSpecialTaxAreas-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless">
-        <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVlHOXQ0djUtaEU">Transit Special Tax Areas</a></li>
-      </ul>
-      <p>Other Links</p>
-      <ul class="dotless">
-        <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="TransitSpecialTaxAreas-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <p>Feb. 2017 Update to Cache Transit.</p>
-    </div>
-  </div>
+  {% include packagedata.html name="TransitSpecialTaxAreas" info=page.TransitSpecialTaxAreas %}
 </div>
