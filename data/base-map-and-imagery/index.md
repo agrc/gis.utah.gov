@@ -12,6 +12,12 @@ categories:
 tags:
   - imagery
 ---
+<style type="text/css">
+#logo {
+  max-width: 250px;
+  margin: 0 auto;
+}
+</style>
 <div class="grid__col grid__col--1-of-3 text-center">
     <h5 class="text-center">Imagery plus Overlay base maps</h5>
     <img src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}">
@@ -34,6 +40,10 @@ Do you need a quick, fast base map for your GIS, CAD or web services?
 AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow. The Discover services utilize a Web Mercator WGS84 coordinate system (wkid: 3857). Information about transformations between different coordinate systems can be found [here]({{ "/data/discover-server-information/" | prepend: site.baseurl }} "Coordinate System and Datum") under `Coordinate System and Datum`.
 
 ### Web Mercator Services on Discover
+
+<div id="logo">
+  <img src="{{ "/discover/images/discover-logo.png" | prepend: site.baseurl }}" alt="discover logo" />
+</div>
 
 AGRC’s cloud-based server Discover provides imagery and base maps services in Open Geospatial Consortium (OGC) standard Web Map Tile Service (WMTS) and Web Map Service (WMS) in the Web Mercator WGS84 projection (wkid: 3857).
 
