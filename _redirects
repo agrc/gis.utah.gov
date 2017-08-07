@@ -34,3 +34,4 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/sgid-indices/usgs-dem-indices/                                                    /data/indices/usgs-dem-indices/                             301
 /data/sgid-indices/usgs-topo-indices/                                                   /data/indices/usgs-topo-indices/                            301
 /data/sgid-indices/national-grid-index/                                                 /data/indices/national-grid-index/                          301
+/data/sgid-water-data/                                                                  /data/water-data-services/lakes-rivers-dams/                301
