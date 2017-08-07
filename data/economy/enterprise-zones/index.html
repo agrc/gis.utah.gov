@@ -3,6 +3,8 @@ status: publish
 layout: page
 tags:
   - data
+  - economy
+  - economic development
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
@@ -10,16 +12,37 @@ published: true
 date: 2011-11-18 15:32:05 -0700
 title: Enterprise Zones
 categories: []
+EnterpriseZones:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mT1NnNlJrWkNWMGs"
+      label: Enterprise Zones
+  updates:
+    - January 2017
+    - October 2016
 ---
-<div class="caption"><img  title="map" src="{{ "/images/gallery/sgid/enterprisezones_big.png" | prepend: site.baseurl }}" alt="Enterprise Zones" width="256" height="256" /><p class="caption-text">Enterprise Zones</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mT1NnNlJrWkNWMGs" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Enterprise Zones</h4>
-<p></strong></p>
-<p><strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward(s): AGRC and GOED</strong></p>
-<p><strong>Abstract:</strong><br />
-Economy.EnterpriseZones are areas created by the Utah Governors Office of Economic Development to encourage economic growth and development in specified areas by providing tax breaks to development projects within these boundaries. Economy.EnterpriseZones was originally created to be used in a web application that allows the public to search by address and be informed whether or not a property is located within an Enterprise Zone.</p>
-<p><i class="fa fa-globe"></i> Usage: There are no constraints or warranties with regard to the use of this dataset.<br />
-<i class="fa fa-calendar"></i> Last Update: October 2016<br />
-<i class="fa fa-user"></i> Contact: General Utah GIS data inquiries: agrc@utah.gov<br />
-<i class="fa fa-link"></i> Links: <a href="http://business.utah.gov/">Utah Governor's Office of Economic Development</a> </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/gallery/sgid/enterprisezones_big.png" | prepend: site.baseurl }}" alt="Enterprise Zones" />
+  <p class="caption-text">Enterprise Zones</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mT1NnNlJrWkNWMGs"
+  name="Enterprise Zones"
+  stewards="AGRC and GOED"
+  webapp="http://utah.maps.arcgis.com/apps/SimpleViewer/index.html?webmap=967621d926014900ab075692dfc80056"
+  abstract="Enterprise Zones are areas created by the Utah Governors Office of Economic Development to encourage economic growth and development in specified areas by providing tax breaks to development projects within these boundaries." %}
+<div class="grid package">
+    <div class="grid__col grid__col--12-of-12">
+      <h3 id="EnterpriseZones">
+        <a href="#EnterpriseZones" class="anchor--link">Enterprise Zones</a>
+      </h3>
+    </div>
+    <div class="grid__col grid__col--12-of-12 package-content">
+      <p>Economy.EnterpriseZones was originally created to be used in a web application that allows the public to search by address and be informed whether or not a property is located within an Enterprise Zone. There are no constraints or warranties with regard to the use of this dataset.</p>
+      <h5>Related Resources</h5>
+      <ul class="dotless">
+        <li><a href="http://business.utah.gov/">Utah Governor's Office of Economic Development</a>
+      </ul>
+      <p>General Utah GIS data inquiries: agrc@utah.gov</p>
+    </div>
+    {% include packagedata.html name="EnterpriseZones"
+      info=page.EnterpriseZones %}
+</div>
