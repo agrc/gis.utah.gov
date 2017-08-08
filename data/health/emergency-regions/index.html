@@ -10,16 +10,38 @@ published: true
 date: 2011-11-21 17:54:44 -0700
 title: Emergency Regions
 categories: []
+EmergencyRegions:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mX21VVGtBRkdaTlE"
+      label: "Emergency Regions"
+  updates:
+    - January 2012
 ---
-<div class="caption"><img  title="map" src="{{ "/images/EmergencyRegions_Large.png" | prepend: site.baseurl }}" width="256" height="256" /><p class="caption-text">Emergency Regions</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mX21VVGtBRkdaTlE" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Emergency Regions</h4>
-<p></strong></p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC and Utah Division of Emergency Management</p>
-<p><strong>Abstract:</strong><br />
-This dataset represents the Emergency Management Regions of Utah.</p>
-<p><i class="fa fa-globe"></i> Usage: This layer contains the 29 counties in Utah with the REGION field containing the district name. <br />
-<i class="fa fa-calendar"></i> Last Update: January 2012<br />
-<i class="fa fa-user"></i> Contact: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-<i class="fa fa-link"></i> Links: <a href="http://www.dem.utah.gov/">Utah Department of Public Safety</a> </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/EmergencyRegions_Large.png" | prepend: site.baseurl }}" />
+  <p class="caption-text">Emergency Regions</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mX21VVGtBRkdaTlE"
+  name="Emergency Regions"
+  stewards="AGRC and Utah Division of Emergency Management"
+  abstract="This dataset represents the Emergency Management Regions of Utah." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="EmergencyRegions">
+      <a href="#EmergencyRegions" class="anchor--link">Emergency Regions</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/GNISsmall.png" | prepend: site.baseurl }}" alt="GNIS" />
+    <p>This dataset represents the Emergency Management Regions of Utah. This layer contains the 29 counties in Utah with the REGION field containing the district name.</p>
+    <p>General Utah GIS data inquiries: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a></p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://www.dem.utah.gov/">Utah Department of Public Safety</a>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="EmergencyRegions"
+    info=page.EmergencyRegions
+  %}
+</div>
