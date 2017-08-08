@@ -9,24 +9,42 @@ tags:
   - alcohol
   - data
   - liquor
-  - location
-  - package agencies
-  - point
-  - store
   - utah department of alcholic beverage control
   - wine
 categories: []
 published: true
 date: 2012-06-19 12:39:39 -0600
+LiquorStores:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mRkNtU2ladDVtVW8"
+      label: "Liquor Stores"
+  updates:
+    - 3/15/2017
 ---
-<div class="caption"><img  title="map" src="{{ "/images/LiquorStores.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" width="256" height="256" /><p class="caption-text">Liquor Stores and Package Agencies in Utah</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRkNtU2ladDVtVW8" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Liquor Stores</h4>
-<p></strong></p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC & DABC</p>
-<p><strong>Abstract:</strong><br />
-Society.LiquorStores contains information and locations for liquor stores and package agencies controlled by the Department of Alcoholic Beverage Control of Utah. The source of this dataset is the Utah Department of Alcoholic Beverage Control's <a href="http://abc.utah.gov/stores/index.html">online map</a>.</p>
-<p><i class="fa fa-calendar"></i> Last Update: 2011<br />
-<i class="fa fa-user"></i> Contact: agrc@utah.gov<br />
-<i class="fa fa-link"></i> Links: <a href="http://abc.utah.gov/">Department of Alcoholic Beverage Control</a> </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/LiquorStores.png" | prepend: site.baseurl }}" alt="Liquor stores" />
+  <p class="caption-text">Liquor Stores and Package Agencies in Utah</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRkNtU2ladDVtVW8"
+name="Liquor Stores"
+stewards="AGRC & DABC"
+webapp="http://abc.utah.gov/stores/index.html"
+abstract="Society.LiquorStores contains information and locations for liquor stores and package agencies controlled by the Department of Alcoholic Beverage Control of Utah." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="LiquorStores">
+      <a href="#LiquorStores" class="anchor--link">Liquor Stores</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>LiquorStores contains information and locations for liquor stores and package agencies controlled by the Department of Alcoholic Beverage Control of Utah. The source of this dataset is the Utah Department of Alcoholic Beverage Control's <a href="http://abc.utah.gov/stores/index.html">online map</a>.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://abc.utah.gov/">Department of Alcoholic Beverage Control</a>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="LiquorStores"
+    info=page.LiquorStores
+  %}
+</div>
