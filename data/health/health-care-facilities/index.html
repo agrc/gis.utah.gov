@@ -10,84 +10,65 @@ published: true
 date: 2011-11-21 13:27:50 -0700
 title: Healthcare Facilities
 categories: []
+HealthcareFacilities:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVVBUdS1FLW1acVk&export=download"
+      label: "Health Care Facilities: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb2ZSa2NsN1EtZ1E&export=download"
+      label: "Health Care Facilities: Shapefile"
+  updates:
+    - January, 2016
+    - July, 2015
+    - June, 2015
+    - June, 2013
+EmergencyMedicalServices:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMDZYZzFIMVM0Mmc&export=download"
+      label: "EMS Facilities: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7memtEYXpyeWR1eUk&export=download"
+      label: "EMS Facilities: Shapefile"
+  updates:
+    - June, 2013
 ---
-<div class="caption"><img src="{{ "/images/Hospitals_Large.png" | prepend: site.baseurl }}" alt="Hospitals" /><p class="caption-text">Health Care Facilities</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR1lXZFJ5bkRZcnM" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>Healthcare Facilities</h4>
-<p></strong><br />
-<strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC, Utah Department of Health, Utah Division of Emergency Management</p>
-<p><strong>Abstract:</strong><br />
-The Healthcare Facilities data package contains all the datasets available that represent healthcare facilities in Utah.  The package includes a general Healthcare Facilities dataset as well as a specialized dataset that contains locations of Emergency Medical Service (EMS) facilities. </p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
+<div class="caption">
+  <img src="{{ "/images/Hospitals_Large.png" | prepend: site.baseurl }}" alt="Hospitals" />
+  <p class="caption-text">Health Care Facilities</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR1lXZFJ5bkRZcnM"
+name="Healthcare Facilities"
+stewards="AGRC, Utah Department of Health, Utah Division of Emergency Management"
+abstract="The Healthcare Facilities data package contains all the datasets available that represent healthcare facilities in Utah.  The package includes a general Healthcare Facilities dataset as well as a specialized dataset that contains locations of Emergency Medical Service (EMS) facilities." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="HealthcareFacilities">Healthcare Facilities</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/HealthCareFacilities_Small.png" | prepend: site.baseurl }}" alt="HealthCareFacilities" />Health.HealthCareFacilities represents clinics, dialysis centers, hospitals, and other healthcare related facilities. This dataset is a work in progress. Listed below are more completed datasets for specific types of healthcare facilities.
-Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.<br />
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="HealthcareFacilities">
+      <a href="#HealthcareFacilities" class="anchor--link">Healthcare Facilities</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/HealthCareFacilities_Small.png" | prepend: site.baseurl }}" alt="HealthCareFacilities" />
+    <p>Health.HealthCareFacilities represents clinics, dialysis centers, hospitals, and other healthcare related facilities. This dataset is a work in progress. Listed below are more completed datasets for specific types of healthcare facilities. Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://health.utah.gov/">Utah Department of Health</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="HealthcareFacilities"
+  info=page.HealthcareFacilities %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="HealthcareFacilities-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Healthcare Facilities:	</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVVBUdS1FLW1acVk&export=download">Health Care Facilities: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb2ZSa2NsN1EtZ1E&export=download">Health Care Facilities: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://health.utah.gov/">Utah Department of Health</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="HealthcareFacilities-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Last Updated: June, 2013</p>
-        <div class="panel-content"> Last Updated: January, 2016</p>
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="EmergencyMedicalServices">Emergency Medical Services</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/EMSFacilities_Small.png" | prepend: site.baseurl }}" alt="EmergencyMedicalServices" />Health.EmergencyMedicalServices represents the Emergency Medical Service (EMS) Facilities throughout the state of Utah.  An EMS Facility is any location where emergency medical services personnel are stationed or based out of, or where EMS equipment is stored and ready use. Health.EmergencyMedicalServices includes both private and governmental entities.
-The <b>NAME</b> field contains the name of the EMS Facility.<br />
-Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="EmergencyMedicalServices">
+      <a href="#EmergencyMedicalServices" class="anchor--link">Emergency Medical Services</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/EMSFacilities_Small.png" | prepend: site.baseurl }}" alt="EmergencyMedicalServices" />
+    <p>Health.EmergencyMedicalServices represents the Emergency Medical Service (EMS) Facilities throughout the state of Utah.  An EMS Facility is any location where emergency medical services personnel are stationed or based out of, or where EMS equipment is stored and ready use. Health.EmergencyMedicalServices includes both private and governmental entities. The <code>NAME</code> field contains the name of the EMS Facility. Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://health.utah.gov/">Utah Department of Health</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="EmergencyMedicalServices"
+  info=page.EmergencyMedicalServices %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="EmergencyMedicalServices-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Emergency Medical Service Facilities:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMDZYZzFIMVM0Mmc&export=download">EMS Facilities: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7memtEYXpyeWR1eUk&export=download">EMS Facilities: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://health.utah.gov/">Utah Department of Health</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="EmergencyMedicalServices-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Last Updated: June, 2013</p>
-
-        </div>
-    </div>
-    </div>
