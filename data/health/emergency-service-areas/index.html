@@ -3,6 +3,8 @@ status: publish
 layout: page
 tags:
   - data
+  - EmergencyMedicalServices
+  - health
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
@@ -10,19 +12,39 @@ published: true
 date: 2011-11-21 14:40:32 -0700
 title: Emergency Service Areas
 categories: []
+EMSAreas:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mX3JlbGMtMlZVbnM"
+      label: EMS Areas
+  updates:
+    - Monthly
 ---
-<div class="caption"><img title="map" src="{{ "/images/EMSAreas_Large.png" | prepend: site.baseurl }}" /><p class="caption-text">EMS Areas</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mX3JlbGMtMlZVbnM" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Emergency Medical Service (EMS) Areas</h4>
-<p></strong></p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC and Utah Department of Health</p>
-<p><strong>Abstract:</strong><br />
-This dataset contains the emergency medical service (EMS) areas in the state of Utah.  EMS areas are created using legal boundaries submitted by the Utah Department of Health.  An EMS boundary defines the response area for each EMS department or agency.  </p>
-<p><i class="fa fa-globe"></i> Usage:<br />
-The SERVICE_LEVEL field contains the service level.<br />
-The SERVICE_TYPE field contains the service type.<br />
-The NAME field contains the EMS name. <br />
-<i class="fa fa-calendar"></i> Last Update: This dataset is updated monthly.<br />
-<i class="fa fa-user"></i> Contact: For questions contact <a href="mailto:agrc@utah.gov">someone</a> at AGRC.<br />
-<i class="fa fa-link"></i> Links: <a href="http://www.health.utah.gov/">Utah Department of Health</a> </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/EMSAreas_Large.png" | prepend: site.baseurl }}" />
+  <p class="caption-text">EMS Areas</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mX3JlbGMtMlZVbnM"
+name="Emergency Medical Service (EMS) Areas"
+stewards="AGRC and Utah Department of Health"
+abstract="This dataset contains the emergency medical service (EMS) areas in the state of Utah. An EMS boundary defines the response area for each EMS department or agency." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="EMSAreas">
+      <a href="#EMSAreas" class="anchor--link">Emergency Medical Service Areas</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>This dataset contains the emergency medical service (EMS) areas in the state of Utah.  EMS areas are created using legal boundaries submitted by the Utah Department of Health.  An EMS boundary defines the response area for each EMS department or agency.</p>
+    <ul class="dotless">
+      <li>The <code>SERVICE_LEVEL</code> field contains the service level.
+      <li>The <code>SERVICE_TYPE</code> field contains the service type.
+      <li>The <code>NAME</code> field contains the EMS name.
+    </ul>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://www.health.utah.gov/">Utah Department of Health</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="EMSAreas"
+  info=page.EMSAreas %}
+</div>
