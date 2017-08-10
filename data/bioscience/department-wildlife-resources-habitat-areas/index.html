@@ -4,56 +4,43 @@ layout: page
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
-tags:
-  - data
+tags: []
 published: true
 date: 2011-11-18 10:09:30 -0700
 title: Habitat Areas
 categories: []
+GameHabitat:
+  downloads:
+    - url: http://dwrcdc.nr.utah.gov/ucdc/DownloadGIS/disclaim.htm
+      label: Utah Division of Wildlife Resources - data download page
+  updates:
+    - "These datasets have a varied update schedule or are updated as needed."
 ---
-<div class="caption"><img src="{{ "/images/gallery/sgid/habitatbig.png" | prepend: site.baseurl }}" alt="Habitat" /><p class="caption-text">Snowshoe Hare Habitat Sample</p></div>
-<p></p>
-<h4><strong>Habitat Areas</h4>
-<p></strong><br />
-<strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward(s): DNR, Division of Wildlife Resources</strong></p>
-<p><strong>Abstract:</strong><br />
-Wildlife habitats created by the Utah Division of Wildlife Resources. Many of these habitats were created or confirmed by field biologists. Most habitat datasets contain a Crucial/Substantial value system. </p>
-<p><strong>Data Content:</strong><br />
-The data is available for download from the link below:</p>
-<div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="GameHabitat">Game Habitat</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/habitatsmall.png" | prepend: site.baseurl }}" alt="Game Habitat" />Habitat areas for the following species in Utah: bandtailed pigeon, bison, black bear, blue grouse, bonetailed chub, california big horn sheep, california quail, chuckar, desert bighorn sheep, gambles quail, greater sage grouse, gunnison sage grouse, hungarian partridge, moose, mountain goat, mule deer, pronghorn, razorback sucker, ringnecked pheasant, rocky mountain bighorn sheep, rocky mountain elk, ruffed grouse, sharp tailed grouse, snowshoe hare, white tailed ptarmigan, and wild turkey.
-There are no use limitations, but the Utah Division of Wildlife Resources provides no warranty nor accepts any responsibility or liability for any inaccurate or incomplete data associated with this file.<br /></p>
+<div class="caption"><img src="{{ '/images/gallery/sgid/habitatbig.png' | prepend: site.baseurl }}" alt="Habitat" />
+  <p class="caption-text">Snowshoe Hare Habitat Sample</p>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="GameHabitat-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download all datasets with the button above, or use the links below:</p>
-<ul>
-<li><a href="http://dwrcdc.nr.utah.gov/ucdc/DownloadGIS/disclaim.htm">Utah Division of Wildlife Resources - data download page</a></li>  
-
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://wildlife.utah.gov/dwr/">Utah Division of Wildlife Resources</a></li>
-<li><a href="http://dwrcdc.nr.utah.gov/ucdc/DownloadGIS/disclaim.htm">Utah Division of Wildlife Resources - data download page</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="GameHabitat-updates">Updates</h5>
-        </div>
-        <div class="panel-content">These datasets have a varied update schedule or are updated as needed.<br />
-
-        </div>
-    </div>
-    </div>
+{% include abstract.html
+  download="http://dwrcdc.nr.utah.gov/ucdc/DownloadGIS/disclaim.htm"
+  type="External Agency Website"
+  name="Habitat Areas"
+  stewards="DNR, Division of Wildlife Resources"
+  abstract="Wildlife habitats created by the Utah Division of Wildlife Resources. Many of these habitats were created or confirmed by field biologists. Most habitat datasets contain a Crucial/Substantial value system." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="GameHabitat">Game Habitat</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ '/images/gallery/sgid/habitatsmall.png' | prepend: site.baseurl }}" alt="Game Habitat" />
+    <p>Habitat areas for the following species in Utah: bandtailed pigeon, bison, black bear, blue grouse, bonetailed chub,
+    california big horn sheep, california quail, chuckar, desert bighorn sheep, gambles quail, greater sage grouse, gunnison sage grouse, hungarian partridge, moose, mountain goat, mule deer, pronghorn, razorback sucker, ringnecked pheasant, rocky mountain
+    bighorn sheep, rocky mountain elk, ruffed grouse, sharp tailed grouse, snowshoe hare, white tailed ptarmigan, and wild turkey. There are no use limitations, but the Utah Division of Wildlife Resources provides no warranty nor accepts any responsibility
+    or liability for any inaccurate or incomplete data associated with this file.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://wildlife.utah.gov/dwr/">Utah Division of Wildlife Resources</a></li>
+      <li><a href="http://dwrcdc.nr.utah.gov/ucdc/DownloadGIS/disclaim.htm">Utah Division of Wildlife Resources - data download page</a></li>
+    </ul>
+  </div>
+  {% include packagedata.html name="GameHabitat"
+     info=page.GameHabitat %}
+</div>
