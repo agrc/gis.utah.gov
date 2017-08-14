@@ -1,7 +1,7 @@
 # gis.utah.gov
 
-Read [about our new website](http://gis.utah.gov/about-our-new-v6-website-in-ghpages).  
-[Contribute](http://gis.utah.gov/about/contributing/) content or typos.  
+Read [about our new website](https://gis.utah.gov/about-our-new-v6-website-in-ghpages).
+[Contribute](https://gis.utah.gov/about/contributing/) content or typos.
 License: [MIT](/LICENSE).
 
 ## Local Development
