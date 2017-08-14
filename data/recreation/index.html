@@ -13,71 +13,54 @@ date: 2011-10-21 15:42:54 -0600
 title: Recreation Overview
 categories: []
 ---
-<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
-<div class="table-style">
-<table>
-<thead>
-<tr>
-<th width="25%" scope="col">Product Name</th>
-<th scope="col">Type</th>
-<th scope="col">Steward(s)</th>
-<th width="40%" scope="col">Description</th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-<td colspan="4"><em>click a product name for more information and download links</em></td>
-</tr>
-</tfoot>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/geoscience/avalanche/" | prepend: site.baseurl }}">Avalanche Paths</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC</td>
-<td style="text-align: left;">Avalanche paths in the tri-canyon area of the Wasatch Front, Utah.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/recreation/boat-ramps/" | prepend: site.baseurl }}">Boat Ramps</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC & DNR</td>
-<td style="text-align: left;">Locations of boat ramps in Utah. Includes all State Parks with some other locations.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/recreation/golf-courses/" | prepend: site.baseurl }}">Golf Courses</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC</td>
-<td style="text-align: left;">Locations of Municipal, Private, Public and Resort Golf Courses.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/recreation/local-parks/" | prepend: site.baseurl }}">Local Parks</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC</td>
-<td style="text-align: left;">Locations of non state and non federal parks.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/recreation/ski-areas/" | prepend: site.baseurl }}">Ski Areas</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC</td>
-<td style="text-align: left;">Locations of Utah Ski areas.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/recreation/trails/" | prepend: site.baseurl }}">Trails</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC</td>
-<td style="text-align: left;">Established trails and trailheads in Utah.</td>
-</tr>
-</tbody>
+{% include table_overview.html name="Recreation" %}
+  <tbody>
+    <tr>
+      <td><a href="{{ "/data/geoscience/avalanche/" | prepend: site.baseurl }}">Avalanche Paths</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Avalanche paths in the tri-canyon area of the Wasatch Front, Utah.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/recreation/boat-ramps/" | prepend: site.baseurl }}">Boat Ramps</a></td>
+      <td>map data</td>
+      <td>AGRC & DNR</td>
+      <td>Locations of boat ramps in Utah. Includes all State Parks with some other locations.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/recreation/golf-courses/" | prepend: site.baseurl }}">Golf Courses</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Locations of Municipal, Private, Public and Resort Golf Courses.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/recreation/local-parks/" | prepend: site.baseurl }}">Local Parks</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Locations of non state and non federal parks.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/recreation/ski-areas/" | prepend: site.baseurl }}">Ski Areas</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Locations of Utah Ski areas.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/recreation/trails/" | prepend: site.baseurl }}">Trails</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Established trails and trailheads in Utah.</td>
+    </tr>
+  </tbody>
 </table>
-</div>
-<h3>Other Recreation Data</h3>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mTHcySDZpNmRlS00">Utah Highest Peaks</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mNVR0OTFlRElpZDA">Utah Ski Lifts</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maFJrZU5mcUtiUjA">Utah Cross-Country Ski Trails</a></li>
+<h4>Other Recreation Data</h4>
+<ul class="dotless">
+  <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mTHcySDZpNmRlS00">Utah Highest Peaks</a>
+  <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mNVR0OTFlRElpZDA">Utah Ski Lifts</a>
+  <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maFJrZU5mcUtiUjA">Utah Cross-Country Ski Trails</a>
 </ul>
-<h3>Related Data (see also)</h3>
-<ul>
-<li><a href="{{ "/data/location/" | prepend: site.baseurl }}">Location</a></li>
-<li><a href="{{ "/data/boundaries/" | prepend: site.baseurl }}">Boundaries</a></li>
+<h4>Related Data</h4>
+<ul class="dotless">
+  <li><a href="{{ "/data/location/" | prepend: site.baseurl }}">Location</a>
+  <li><a href="{{ "/data/boundaries/" | prepend: site.baseurl }}">Boundaries</a>
 </ul>
-<h3>Notes</h3>

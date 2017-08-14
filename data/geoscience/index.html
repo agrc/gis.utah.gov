@@ -13,113 +13,96 @@ date: 2011-10-21 13:25:19 -0600
 title: Geoscience Overview
 categories: []
 ---
-<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
-<div class="table-style">
-<table>
-<thead>
-<tr>
-<th width="25%" scope="col">Product Name</th>
-<th scope="col">Type</th>
-<th scope="col">Steward(s)</th>
-<th width="40%" scope="col">Description</th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-<td colspan="4"><em>click a product name for more information and download links</em></td>
-</tr>
-</tfoot>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/geoscience/aquifers-2/" | prepend: site.baseurl }}">Aquifers</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">USGS & DEQ</td>
-<td style="text-align: left;">Aquifer basin fill boundary and aquifer recharge areas. Shallow ground water.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/geoscience/avalanche/" | prepend: site.baseurl }}">Avalanche Paths</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC</td>
-<td style="text-align: left;">Avalanche paths in the tri-canyon area of the Wasatch Front, Utah.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWFpzc3JkTTRxaXM">Debris Flow</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">UGS</td>
-<td style="text-align: left;">These datasets represent debris-flow hazard study boundaries for the Wasatch Front.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mNmxJcDFEMGNpSjQ">Engineering</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">UGS</td>
-<td style="text-align: left;">Engineering geologic problem sites.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/geoscience/quaternary-faults/" | prepend: site.baseurl }}">Faults</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">UGS</td>
-<td style="text-align: left;">Quaternary faults and folds.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7manUyM3p3TG4ySjg">Geology</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">UGS</td>
-<td style="text-align: left;">Locations of geologic contacts, dikes, formations, markers, and veins in Utah.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mamptX1FUN1lhakU">Geologic Units</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">UGS</td>
-<td style="text-align: left;">Geologic units for Moab/San Rafael, Nephi, and Price.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb3ZPclRyYzV6cTA">Liquefaction and Landslides</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">UGS</td>
-<td style="text-align: left;">Liquefaction potential for 6 counties in northern Utah and liquefaction potential for the Wasatch Front. Landslide potential for the Wasatch front.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mTHRUZmROd1hlSEU">Minerals</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">USGS</td>
-<td style="text-align: left;">Mineral deposit locations.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRldKY3hLS0R3T2c">Quaternary</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">UGS</td>
-<td style="text-align: left;">Quaternary deformations, fault folds, volcanic flows, and volcanic vents.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV19CSHBWTF84TW8">Seismology & Volcanology</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">UGS</td>
-<td style="text-align: left;">Modern epicenters and fault lines. Surface fault rupture for the Wasatch Front. Volcanic cones in Utah.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/geoscience/soil/" | prepend: site.baseurl }}">Soil</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">UGS</td>
-<td style="text-align: left;">Extent of defined soil types throughout Utah.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/boundaries/conservation-districts/" | prepend: site.baseurl }}">Soil Conservation Districts & Zones</td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC & USDA-NRCS</td>
-<td style="text-align: left;">Soil conservation districts and zones.</td>
-</tr>
-</tbody>
+{% include table_overview.html name="Geoscience" %}
+  <tbody>
+    <tr>
+      <td><a href="{{ "/data/geoscience/aquifers-2/" | prepend: site.baseurl }}">Aquifers</a></td>
+      <td>map data</td>
+      <td>USGS & DEQ</td>
+      <td>Aquifer basin fill boundary and aquifer recharge areas. Shallow ground water.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/geoscience/avalanche/" | prepend: site.baseurl }}">Avalanche Paths</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Avalanche paths in the tri-canyon area of the Wasatch Front, Utah.</td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWFpzc3JkTTRxaXM">Debris Flow</a></td>
+      <td>map data</td>
+      <td>UGS</td>
+      <td>These datasets represent debris-flow hazard study boundaries for the Wasatch Front.</td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mNmxJcDFEMGNpSjQ">Engineering</a></td>
+      <td>map data</td>
+      <td>UGS</td>
+      <td>Engineering geologic problem sites.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/geoscience/quaternary-faults/" | prepend: site.baseurl }}">Faults</a></td>
+      <td>map data</td>
+      <td>UGS</td>
+      <td>Quaternary faults and folds.</td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7manUyM3p3TG4ySjg">Geology</a></td>
+      <td>map data</td>
+      <td>UGS</td>
+      <td>Locations of geologic contacts, dikes, formations, markers, and veins in Utah.</td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mamptX1FUN1lhakU">Geologic Units</a></td>
+      <td>map data</td>
+      <td>UGS</td>
+      <td>Geologic units for Moab/San Rafael, Nephi, and Price.</td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb3ZPclRyYzV6cTA">Liquefaction and Landslides</a></td>
+      <td>map data</td>
+      <td>UGS</td>
+      <td>Liquefaction potential for 6 counties in northern Utah and liquefaction potential for the Wasatch Front. Landslide potential for the Wasatch front.</td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mTHRUZmROd1hlSEU">Minerals</a></td>
+      <td>map data</td>
+      <td>USGS</td>
+      <td>Mineral deposit locations.</td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRldKY3hLS0R3T2c">Quaternary</a></td>
+      <td>map data</td>
+      <td>UGS</td>
+      <td>Quaternary deformations, fault folds, volcanic flows, and volcanic vents.</td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV19CSHBWTF84TW8">Seismology & Volcanology</a></td>
+      <td>map data</td>
+      <td>UGS</td>
+      <td>Modern epicenters and fault lines. Surface fault rupture for the Wasatch Front. Volcanic cones in Utah.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/geoscience/soil/" | prepend: site.baseurl }}">Soil</a></td>
+      <td>map data</td>
+      <td>UGS</td>
+      <td>Extent of defined soil types throughout Utah.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/boundaries/conservation-districts/" | prepend: site.baseurl }}">Soil Conservation Districts & Zones</a></td>
+      <td>map data</td>
+      <td>AGRC & USDA-NRCS</td>
+      <td>Soil conservation districts and zones.</td>
+    </tr>
+  </tbody>
 </table>
-</div>
-<h3>Other Geoscience Data</h3>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mQmZVUU1HV3lyRWc">Phosphate Deposits</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mclR5YW0zOEJMTW8">Potash Deposits</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRFRPVUMyQTd5aGs">Physiographic Subdivisions</a></li>
+<h4>Other Geoscience Data</h4>
+<ul class="dotless">
+  <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mQmZVUU1HV3lyRWc">Phosphate Deposits</a>
+  <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mclR5YW0zOEJMTW8">Potash Deposits</a>
+  <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRFRPVUMyQTd5aGs">Physiographic Subdivisions</a>
 </ul>
-<h3>Related Data (see also)</h3>
-<ul>
-<li><a href="{{ "/data/location/gnis/" | prepend: site.baseurl }}">Location (GNIS)</a></li>
-<li><a href="{{ "/data/water-data-services/" | prepend: site.baseurl }}">Water</a></li>
+<h4>Related Data</h4>
+<ul class="dotless">
+  <li><a href="{{ "/data/location/gnis/" | prepend: site.baseurl }}">Location (GNIS)</a>
+  <li><a href="{{ "/data/water-data-services/" | prepend: site.baseurl }}">Water</a>
 </ul>
-<h3>Notes</h3>

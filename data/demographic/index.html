@@ -13,45 +13,25 @@ date: 2011-10-19 16:27:38 -0600
 title: Demographics Overview
 categories: []
 ---
-<h2 style="text-align: center;"><span class="Apple-style-span" style="font-size: 15px;">Suggested Data Resources</span></h2>
-<div class="table-style">
-<table>
-<thead>
-<tr>
-<th width="25%" scope="col">Product Name</th>
-<th scope="col">Type</th>
-<th scope="col">Steward(s)</th>
-<th width="40%" scope="col">Description</th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-<td colspan="4"><em>click a product name for more information and download links</em></td>
-</tr>
-</tfoot>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/demographic/2010-census-data/" | prepend: site.baseurl }}">2010 Demographic Data</a></td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC and the U.S. Census Bureau.</td>
-<td style="text-align: left;">2010 data from the Census Bureau including census blocks, census block groups, census tracts, and census counties.<br />
-Also included are files created by AGRC containing population for incorporated and unincorporated areas in Utah.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="{{ "/data/demographic/2000-census-data/" | prepend: site.baseurl }}">2000 Demographic Data</a></td>
-<td style="text-align: left;">map data</td>
-<td style="text-align: left;">AGRC and the U.S. Census Bureau.</td>
-<td style="text-align: left;">2000 data from the Census Bureau including census blocks, census block groups, census tracts, census counties, MetroMicro statistical areas, and town demographics.</td>
-</tr>
-</tbody>
+{% include table_overview.html name="Demographic" %}
+  <tbody>
+    <tr>
+      <td><a href="{{ "/data/demographic/2010-census-data/" | prepend: site.baseurl }}">2010 Demographic Data</a></td>
+      <td>map data</td>
+      <td>AGRC and the U.S. Census Bureau.</td>
+      <td>2010 data from the Census Bureau including census blocks, census block groups, census tracts, and census counties.<br />
+    Also included are files created by AGRC containing population for incorporated and unincorporated areas in Utah.</td>
+    </tr>
+    <tr>
+      <td><a href="{{ "/data/demographic/2000-census-data/" | prepend: site.baseurl }}">2000 Demographic Data</a></td>
+      <td>map data</td>
+      <td>AGRC and the U.S. Census Bureau.</td>
+      <td>2000 data from the Census Bureau including census blocks, census block groups, census tracts, census counties, MetroMicro statistical areas, and town demographics.</td>
+    </tr>
+  </tbody>
 </table>
-</div>
-<h3>Other Demographic Data</h3>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbWxVR1JSeHN6WVk">Census Edges</a></li>
+<h4>Related Data</h4>
+<ul class="dotless">
+  <li><a href="{{ "/data/political/" | prepend: site.baseurl }}">Political Boundaries</a>
+  <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbWxVR1JSeHN6WVk">Census Edges</a>
 </ul>
-<h3>Related Data (see also)</h3>
-<ul>
-<li><a href="{{ "/data/political/" | prepend: site.baseurl }}">Political Boundaries</a></li>
-</ul>
-<h3>Notes</h3>
