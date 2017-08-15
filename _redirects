@@ -39,3 +39,4 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/bioscience-overview/department-wildlife-resources-habitat-areas/                  /data/bioscience/department-wildlife-resources-habitat-areas/   301
 /data/bioscience-overview/dominant-vegitation/                                          /data/bioscience/dominant-vegitation/                           301
 /data/bioscience-overview/gap-landcover-classification-raster/                          /data/bioscience/gap-landcover-classification-raster/           301
+/data/bioscience/dominant-vegitation/                                                   /data/bioscience/                                               301
