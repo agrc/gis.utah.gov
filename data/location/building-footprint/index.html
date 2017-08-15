@@ -9,45 +9,29 @@ published: true
 date: 2013-10-17 14:53:15 -0600
 title: Building Footprints
 categories: []
+BuildingFootprints:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mal8xZDI5YUFWSm8"
+      label: "Building Footprints"
+  updates:
+    - August 2016
 ---
-<div class="caption"><img src="{{ "/images/bldg256.png" | prepend: site.baseurl }}" alt="" /><p class="caption-text">Building Footprints</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mal8xZDI5YUFWSm8" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Building Footprints</h4>
-<p></strong><br />
-<strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> Salt Lake City, Cottonwood Heights, Summit County, Utah County, Washington County, Weber County</p>
-<p><strong>Abstract:</strong><br />
-Building footprints depicting the perimeter of a building where it meets the ground. This data has been provided by Salt Lake City, Summit County, Weber County, Washington County, and Utah County. Building footprints maintained by Utah county can be found <a href="http://www.utahcountyonline.org/OnlineServices/maps/DataLayers.asp">here</a> </p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
-<div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="BuildingFootprints">Building Footprints</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/bldg90.png" | prepend: site.baseurl }}" alt="" />LocationBuildings contains building footprints for Salt Lake City, Cottonwood Heights, Summit County, Utah County, Washington County, and Weber County.
-There are no constraints or warranties with regard to the use of this dataset.</p>
-<p>No usage tips available at this time.</p>
-General Utah GIS data inquiries: agrc@utah.gov</p>
-Download:</p>
-<p>To download this dataset, use the link at the top of this page.</p>
+<div class="caption">
+  <img src="{{ "/images/bldg256.png" | prepend: site.baseurl }}" alt="building footprints" />
+  <p class="caption-text">Building Footprints</p>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="BuildingFootprints-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="BuildingFootprints-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Last update: August 2016.</p>
-<p>This dataset is updated periodically.</p>
-
-        </div>
-    </div>
-    </div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mal8xZDI5YUFWSm8"
+name="Building Footprints"
+stewards="Salt Lake City, Cottonwood Heights, Summit County, Utah County, Washington County, and Weber County"
+abstract="Building footprints depict the perimeter of a building where it meets the ground. This data has been provided by the stewards listed above." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="BuildingFootprints">Building Footprints</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/bldg90.png" | prepend: site.baseurl }}" alt="" />
+    <p>LocationBuildings contains building footprints for Salt Lake City, Cottonwood Heights, Summit County, Utah County, Washington County, and Weber County. Building footprints maintained by Utah county can be found <a href='http://www.utahcountyonline.org/OnlineServices/maps/DataLayers.asp'>on their website</a>.</p>
+  </div>
+  {% include packagedata.html name="BuildingFootprints"
+  info=page.BuildingFootprints %}
+</div>
