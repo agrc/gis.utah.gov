@@ -8,185 +8,123 @@ tags:
   - address
   - data
   - locator
+  - geocoding
 published: true
 date: 2012-08-15 16:08:29 -0600
 title: Address Locators
 categories: []
+RoadsAddressLocatorZip:
+  downloads:
+    - url: "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_RoadsZip_COMPOSITE.zip"
+      label: "Roads Address Locator (zip code as zone)"
+  updates:
+    - "Updates coincide with the Transportation.Roads update schedule. Updates to the Roads dataset are published every month with apporximately 5 counties' receiving detailed review during each update cycle."
+RoadsAddressLocatorQuadrant:
+  downloads:
+    - url: "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_RoadsAddrSys_COMPOSITE.zip"
+      label: "Roads Address Locator (address quadrant system as zone)"
+  updates:
+    - "Updates coincide with the Transportation.Roads update schedule. Updates to the Roads dataset are published every month with apporximately 5 counties' receiving detailed review during each update cycle."
+AddressPointsLocatorZip:
+  downloads:
+    - url: "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_AddressPtsZip.zip"
+      label: "Address Points Locator (zip code as zone)"
+  updates:
+    - "Updates coincide with the Location.AddressPoints update schedule. Updates the the Address points are published every month."
+AddressPointLocatorQuadrant:
+  downloads:
+    - url: "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_AddressPtsAddrSys.zip"
+      label: "Address Points Locator (address quadrant system as zone)"
+  updates:
+    - "Updates coincide with the Location.AddressPoints update schedule. Updates the the Address points are published every month."
 ---
-<div class="caption"><img src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/><p class="caption-text">Concept of an Address Locator</p></div>
-<p><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/PackagedLocators/_Statewide/AddressLocators" class="button medium white"><span class="button-text">Download Locators</span></a></p>
-<h4><strong>Address Locators</strong></h4>
-<p><strong>Data Type:</strong> Locator Services<br />
-<strong>Steward(s):</strong> AGRC</p>
-<p><strong>Abstract:</strong><br />
-AGRC offers a geocoding web service API to return geographic coordinates for Utah addresses using road centerline and/or address point reference data.</p>
-<p>This API can be called programmatically without the use of GIS-specific software, like from a web application. The geocoding API can also be used from within the ArcGIS software environment using a <a href="{{site.baseurl}}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}" title="custom geoprocessing tool" target="_blank">custom geoprocessing tool</a> that AGRC developed.</p>
-<p>The geocoding API uses 'front end' logic to resolve several common address standardization issues above and beyond what out-of-the-box geocoders handle. The ArcGIS locator files shown below are copies of the SDE-based locators on the 'back end' of the service and are used directly by the geocoding API. They are provided for reference but will not work well in all settings, particularly where your firewall is restricting or delays requests on port 5151.</p>
-<p><strong>For geocoding, it is recommended that you use the <a href="{{site.baseurl}}{% post_url 2013-04-02-using-the-mapserv-utah-gov-api-to-geocode-address %}" title="geocoding API web service" target="_blank">geocoding API web service</a> (which works on the web traffic standard, port 80) or set up a local implementation of reference data and address locators. AGRC may look at including locators in the road centerline and address point downloadable data 'packages' in the future.</strong></p>
-<p>Below are address locators (.loc files) for geocoding that reference the Location.AddressPoints and statewide Transportation.Roads feature classes. The ingoing address data should be separated into two columns, standardized addresses and zones (zip code or address quadrant system). Addresses should be formatted to include the house number, prefix direction, street, street type, suffix direction, and zip code or address quadrant system. Examples of standardized address include:</p>
-<div class="kg_stylin" style="width: 65%">
-<table border="1.5" cellspacing="0" cellpadding="0" >
-<thead>
-<th>Street Address</th>
-<th>Zone</th>
-</thead>
-<tbody>
-<td>841 S State St</td>
-<td>84111</td>
-</tbody>
-<thead>
-</thead>
-<tbody>
-<td>265 E 300 S</td>
-<td>84532</td>
-</tbody>
-</thead>
-<tbody>
-<td>3305 N Highway 40</td>
-<td>84032</td>
-</tbody>
-<thead>
-</thead>
-<tbody>
-<td>151 S Pioneer Cir</td>
-<td>Brookside</td>
-</tbody>
-</tbody>
-<thead>
-</thead>
-<tbody>
-</tbody>
-</table>
+<div class="caption">
+  <img src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="Address Locator"/>
+  <p class="caption-text">Concept of an Address Locator</p>
 </div>
+<p><a id="package--download" href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/PackagedLocators/_Statewide/AddressLocators" class="button medium white">
+  <span class="button-text">Download Address Locators</span></a></p>
+<h4 class="package--header">Address Locators</h4>
+<ul class="dotless no-padding">
+  <li><strong>Data Type:</strong> Address Locator Service
+  <li><strong>Steward(s):</strong> AGRC
+  <li><strong>Web Application:</strong> <a href="https://api.mapserv.utah.gov">https://api.mapserv.utah.gov</a>
+  <li><strong>Abstract:</strong> Below are address locators for geocoding that reference the Location.AddressPoints and statewide Transportation.Roads feature classes. The input address data should be separated into two columns, standardized addresses and address quadrant system. Addresses should be formatted to include the house number, prefix direction, street, street type, suffix direction, and address quadrant system. AGRC offers a geocoding web service API to return geographic coordinates for Utah addresses using road centerline and/or address point reference data. This API can be accessed over http programmatically without the use of GIS-specific software, like from a web application. The geocoding API can also be used from within the ArcGIS software environment using a <a href='{{ site.baseurl }}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}' title='custom geoprocessing tool'>custom geoprocessing tool</a> that AGRC developed. The geocoding API uses 'front end' logic to resolve several common address standardization issues above and beyond what out-of-the-box geocoders handle. The ArcGIS locator files shown below are copies of the 'back end' of the service that are used directly by the geocoding API. They are provided for reference but will not work well in all settings. For geocoding, it is recommended that you use the <a href='{{ site.baseurl }}{% post_url 2013-04-02-using-the-mapserv-utah-gov-api-to-geocode-address %}' title='geocoding API web service'>geocoding API web service</a> (which works on the web traffic standard)
 </ul>
-<p><strong>Data Content:</strong><br />
-This data includes the following address locator files:</p>
+<h4 class="package--header">Package Contents</h4>
+<p>The following data is available for download:</p>
+<script>
+  document.getElementById('package--download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Data',
+      eventAction: 'PackageDownload',
+      eventLabel: 'Address Locators',
+      transport: 'beacon'
+    });
+  });
+</script>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="RoadsAddressLocator(useszipcodeaszone)">Roads Address Locator (uses zip code as zone)</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/CompZip90x90.png" | prepend: site.baseurl }}" alt="Changeme" />Locator_RoadsZip_COMPOSITE.loc is an ArcGIS 10 composite address locator that references the statewide Transportation.Roads feature class and uses the ZIP_LEFT and ZIP_RGHT fields for zone. This address locator has four levels of street name aliasing to include alternate street names and address grid coordinate system names. For example, Redwood Road is aliased as both Highway 68 and 1700 West.</p>
-Since the four address locators that make up the composite service use reference data stored in ArcSDE, you do not need to dowdnload the roads dataset. However, you will need a moderately fast internet connection to use this locator. The locator is designed to be used in ArcMap's geocoding toolbar or ArcToolbox.</p>
-Questions can be directed to <a class="emailLink" href="mailto:agrc@utah.gov">someone</a> (801.538.3665) at AGRC.</p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="RoadsAddressLocatorZip">
+      <a href="#RoadsAddressLocatorZip" class="anchor--link">Roads Address Locator with Zip Code Zone</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/CompZip90x90.png" | prepend: site.baseurl }}" alt="Composite Locator" />
+    <p>Locator_RoadsZip_COMPOSITE.loc is an ArcGIS 10 composite address locator that references the statewide Transportation.Roads feature class and uses the ZIP_LEFT and ZIP_RGHT fields for zone. This address locator has four levels of street name aliasing to include alternate street names and address grid coordinate system names. For example, Redwood Road is aliased as both Highway 68 and 1700 West.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://docs.google.com/spreadsheet/ccc?key=0Aj18jufMWioidHRWc3lDb1JWekp3RG9tT2pBTWJoZmc">View the Street Centerline Update Schedule</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> (801.538.3665) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="RoadsAddressLocatorZip"
+  info=page.RoadsAddressLocatorZip %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="RoadsAddressLocator(useszipcodeaszone)-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Roads Address Locator:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_RoadsZip_COMPOSITE.zip">Roads Address Locator (zip code as zone)</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="RoadsAddressLocator(useszipcodeaszone)-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Updates to the composite address locator coincide with the Transportation.Roads update schedule. Updates to the Roads dataset are published every month with apporximately 5 counties' receiving detailed review during each update cycle.  Updated: January 13, 2016</p>
-<ul>
-<li><a href="https://docs.google.com/spreadsheet/ccc?key=0Aj18jufMWioidHRWc3lDb1JWekp3RG9tT2pBTWJoZmc">View the Street Centerline Update Schedule</a></li>
-</ul>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="RoadsAddressLocator(usesaddressquadrantsystemaszone)">Roads Address Locator (uses address quadrant system as zone)</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/CompZone90x90.png" | prepend: site.baseurl }}" alt="Changeme" />Locator_RoadsAddrSys_COMPOSITE.loc is an ArcGIS 10 composite address locator that references the statewide Transportation.Roads feature class and uses the address quadrant system for zone. This address locator has four levels of street name aliasing to include alternate street names and address grid coordinate system names. For example, Redwood Road is aliased as both Highway 68 and 1700 West. By using the address quadrant system for zone, applications and users will be able to match addresses even if the city or zip code supplied is close but not exact or when a location is at or near the border of two zones.</p>
-Since the four address locators that make up the composite service use reference data stored in ArcSDE, you do not need to dowdnload the roads dataset. However, you will need a moderately fast internet connection to use this locator. The locator is designed to be used in ArcMap's geocoding toolbar or ArcToolbox.</p>
-Questions can be directed to <a class="emailLink" href="mailto:agrc@utah.gov">someone</a> (801.538.3665) at AGRC.</p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="RoadsAddressLocatorQuadrant">
+      <a href="#RoadsAddressLocatorQuadrant" class="anchor--link">Roads Address Locator with Address Quadrant System Zone</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/CompZone90x90.png" | prepend: site.baseurl }}" alt="Address Locator" />
+    <p>Locator_RoadsAddrSys_COMPOSITE.loc is an ArcGIS 10 composite address locator that references the statewide Transportation.Roads feature class and uses the address quadrant system for zone. This address locator has four levels of street name aliasing to include alternate street names and address grid coordinate system names. For example, Redwood Road is aliased as both Highway 68 and 1700 West. By using the address quadrant system for zone, applications and users will be able to match addresses even if the city or zip code supplied is close but not exact or when a location is at or near the border of two zones.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://docs.google.com/spreadsheet/ccc?key=0Aj18jufMWioidHRWc3lDb1JWekp3RG9tT2pBTWJoZmc">View the Street Centerline Update Schedule</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">someone</a> (801.538.3665) at AGRC.</p>
+  </div>
+    {% include packagedata.html name="RoadsAddressLocatorQuadrant"
+    info=page.RoadsAddressLocatorQuadrant %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="RoadsAddressLocator(usesaddressquadrantsystemaszone)-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Roads Address Locator:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_RoadsAddrSys_COMPOSITE.zip">Roads Address Locator (address quadrant system as zone)</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="RoadsAddressLocator(usesaddressquadrantsystemaszone)-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Updates to the composite address locator coincide with the Transportation.Roads update schedule. Updates to the Roads dataset are published every month with apporximately 5 counties' receiving detailed review during each update cycle.  Updated: January 13, 2016</p>
-<ul>
-<li><a href="https://docs.google.com/spreadsheet/ccc?key=0Aj18jufMWioidHRWc3lDb1JWekp3RG9tT2pBTWJoZmc">View the Street Centerline Update Schedule</a></li>
-</ul>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="AddressPointsLocator(useszipcodeaszone)">Address Points Locator (uses zip code as zone)</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/CompZip90x90.png" | prepend: site.baseurl }}" alt="Changeme" />Locator_AddressPtsZip.loc is an ArcGIS 10 address locator that references the Location.AddressPoints feature class and uses zip code for zone. Geocoding match rates will improve with the Locator_AddressPtsZip.loc address locator as the Location.AddressPoints feature class continues to be developed.</p>
-Since the Locator_AddressPtsZip.loc address locator uses reference data stored in ArcSDE, you do not need to download the address point dataset. However, you will need a moderately fast internet connection to use this locator. The locator is designed to be used in ArcMap's geocoding toolbar or ArcToolbox.</p>
-Questions can be directed to <a class="emailLink" href="mailto:agrc@utah.gov">someone</a> (801.538.3665) at AGRC.</p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="AddressPointsLocatorZip">
+      <a href="#AddressPointsLocatorZip" class="anchor--link">Address Points Locator with Zip Code Zone</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/CompZip90x90.png" | prepend: site.baseurl }}" alt="Address Locator" />
+    <p>Locator_AddressPtsZip.loc is an ArcGIS 10 address locator that references the Location.AddressPoints feature class and uses zip code for zone. Geocoding match rates will improve with the Locator_AddressPtsZip.loc address locator as the Location.AddressPoints feature class continues to be developed.</p>
+    <p>Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> (801.538.3665) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="AddressPointsLocatorZip"
+  info=page.AddressPointsLocatorZip %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="AddressPointsLocator(useszipcodeaszone)-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Address Points Locator:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_AddressPtsZip.zip">Address Points Locator (zip code as zone)</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="AddressPointsLocator(useszipcodeaszone)-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Updates to the Locator_AddressPtsZip.loc locator coincide with updates made to the Location.AddressPoints feature class.</p>
-<p>Updated: March 23, 2015</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="AddressPointsLocator(usesaddressquadrantsystemaszone)">Address Points Locator (uses address quadrant system as zone)</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/CompZone90x90.png" | prepend: site.baseurl }}" alt="Changeme" />Locator_AddressPtsAddrSys.loc is an ArcGIS 10 address locator that references the Location.AddressPoints feature class and uses the address grid system for zone. By using the address quadrant system for zone, applications and users will be able to match addresses even if the city or zip code supplied is close but not exact or when a location is at or near the border of two zones. Geocoding match rates will improve with the Locator_AddressPtsAddrSys.loc address locator as the Location.AddressPoints feature class continues to be developed.</p>
-Since the Locator.AddressPtsAddrSys.loc address locator uses reference data stored in ArcSDE, you do not need to download the address point and address system quadrant datasets. However, you will need a moderately fast internet connection to use this locator. The locator is designed to be used in ArcMap's geocoding toolbar or ArcToolbox.</p>
-Questions can be directed to <a class="emailLink" href="mailto:agrc@utah.gov">someone</a> (801.538.3665) at AGRC.</p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="AddressPointLocatorQuadrant">
+      <a href="#AddressPointLocatorQuadrant" class="anchor--link">Address Points Locator with Address Quadrant System Zone</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/CompZone90x90.png" | prepend: site.baseurl }}" alt="Address Locator" />
+    <p>Locator_AddressPtsAddrSys.loc is an ArcGIS 10 address locator that references the Location.AddressPoints feature class and uses the address grid system for zone. By using the address quadrant system for zone, applications and users will be able to match addresses even if the city or zip code supplied is close but not exact or when a location is at or near the border of two zones. Geocoding match rates will improve with the Locator_AddressPtsAddrSys.loc address locator as the Location.AddressPoints feature class continues to be developed.</p>
+    <p>Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> (801.538.3665) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="AddressPointLocatorQuadrant"
+    info=page.AddressPointLocatorQuadrant %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="AddressPointsLocator(usesaddressquadrantsystemaszone)-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Address Points Locator:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_AddressPtsAddrSys.zip">Address Points Locator (address quadrant system as zone)</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="AddressPointsLocator(usesaddressquadrantsystemaszone)-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Updates to the Locator_AddressPtsAddrSys.loc locator coincide with updates made to the Location.AddressPoints feature class.</p>
-<p>Updated: March 23, 2015</p>
-
-        </div>
-    </div>
-    </div>
