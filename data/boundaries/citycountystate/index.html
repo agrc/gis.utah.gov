@@ -77,7 +77,7 @@ abstract="This dataset contains mapping data representing the state, county, mun
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
       <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="MunicipalBoundaries-downloads">Downloads</h5>
+      <h5 id="MunicipalBoundaries-dlist">Downloads</h5>
     </div>
     <div class="panel-content">
       <p>Download this dataset using the Download button at the top of this page or the links below. </p>
@@ -116,6 +116,18 @@ abstract="This dataset contains mapping data representing the state, county, mun
         <li>March 2011
       </ul>
     </div>
+  </div>
+  <script>
+    document.getElementById('MunicipalBoundaries-dlist').addEventListener('click', function() {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Data',
+        eventAction: 'SpecificDownload',
+        eventLabel: 'MunicipalBoundaries',
+        transport: 'beacon'
+      });
+    });
+  </script>
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -161,7 +173,7 @@ abstract="This dataset contains mapping data representing the state, county, mun
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
       <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="CountyBoundaries-downloads">Downloads</h5>
+      <h5 id="CountyBoundaries-dlist">Downloads</h5>
     </div>
     <div class="panel-content">
       <ul class="dotless">
@@ -184,6 +196,17 @@ abstract="This dataset contains mapping data representing the state, county, mun
         <li>March 2011
     </div>
   </div>
+  <script>
+    document.getElementById('CountyBoundaries-dlist').addEventListener('click', function() {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Data',
+        eventAction: 'SpecificDownload',
+        eventLabel: 'CountyBoundaries',
+        transport: 'beacon'
+      });
+    });
+  </script>
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
