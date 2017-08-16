@@ -12,7 +12,7 @@ title: SGID Blog
 categories: []
 ---
 <div class="grid">
-{% for post in site.categories.['SGID Blog'] %}
+{% for post in site.categories['SGID Blog'] %}
   <div class="grid__col grid__col--1-of-3">
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     <h5 class="blog-list">
