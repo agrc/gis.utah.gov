@@ -20,7 +20,7 @@ categories: []
 }
 </style>
 <div id="logo">
-  <img src="{{ "/images/lidar_monroe.PNG" alt="Monroe Sample" | prepend: site.baseurl }}"/>
+  <img src="{{ "/images/lidar_monroe.PNG" | prepend: site.baseurl }}" alt="Monroe Sample" />
 </div>
 
 [![Project area map]({{"/images/lidar_monroe_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_monroe_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
@@ -29,9 +29,9 @@ During the Summer of 2016 AGRC and the U.S. Forest Service acquired [292 square 
 
 <ul class="dotless">
   <li>
-      <strong>
-        <i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D" target="_blank">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
-      </strong>
+    <strong>
+      <i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D" target="_blank">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+    </strong>
   </li>
   <li>
     <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_Report.zip" target="_blank">Reports</a> and
@@ -39,7 +39,7 @@ During the Summer of 2016 AGRC and the U.S. Forest Service acquired [292 square 
   </li>
   <li>
     <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_shp.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
-  </li>  
+  </li>
 </ul>
 
 The naming convention for the tiles are based off the [U.S. National Grid (USNG)]( http://www.fgdc.gov/usng/how-to-read-usng/index_html).
@@ -49,8 +49,8 @@ This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) 
 If you need assistance contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov)
 
 <div id="logo">
-  <img src="{{ "/images/monroe_DEM.png" alt="Monroe Sample" | prepend: site.baseurl }}"/>
+  <img src="{{ "/images/monroe_DEM.png" | prepend: site.baseurl }}" alt="Monroe Sample" />
 </div>
 <div id="logo">
-  <img src="{{ "/images/monroe_DSM.png" alt="Monroe Sample" | prepend: site.baseurl }}"/>
+  <img src="{{ "/images/monroe_DSM.png" | prepend: site.baseurl }}" alt="Monroe Sample" />
 </div>
