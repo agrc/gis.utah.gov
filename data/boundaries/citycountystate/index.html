@@ -6,77 +6,85 @@ author:
   email: rkelson@utah.gov
 tags:
   - data
+  - boundaries
+  - cities
+  - counties
 published: true
 date: 2011-09-07 23:56:02 -0600
 title: State, County, and Municipal Boundaries
 categories: []
+MetroTownships:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTXh2ejVpZGY1VGc&export=download"
+      label: "Metro Townships: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZ2ltajhJTGNtbE0&export=download"
+      label: "Metro Townships: Shapefile"
+  updates:
+    - Updates to this dataset are published as needed.
+CountyBoundaries:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbnFpYUl1bDZtaDQ&export=download"
+      label: "County Boundaries: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mc3BGRXhKa0N0U2c&export=download"
+      label: "County Boundaries: Shapefile"
+  updates:
+    - July 2014 Adjusted to newest CadNSDI v2 PLSS-GCDB; minor adjustments 10 ft to 40 ft all in non-populated areas
+    - <a href="{{site.baseurl}}{% post_url 2012-07-25-june-2012-juab-millard-county-boundary-adjustment %}" title="Juab and Millard Counties Adjust Shared Boundary">July 2012 (Juab and Millard counties)</a>
+    - November 2011
+    - March 2011
+StateBoundary:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdDJVbzN3cWdBZzA&export=download"
+      label: "Utah State Boundary: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRkJJaDBSZm9YSXc&export=download"
+      label: "Utah State Boundary: Shapefile"
+  updates:
+    - July 2014 Adjusted to newest CadNSDI v2 PLSS-GCDB; biggest shift along Wyoming &amp; Summit County line (47 ft)
+    - November 2011
+    - March 2011
 ---
 <div class="caption">
-  <img src="{{ "/images/MunicipalBoundaries_Large.png" | prepend: site.baseurl }}" alt="MunicipalitiesLarge" />
+  <img src="{{ "/images/MunicipalBoundaries_Large.png" | prepend: site.baseurl }}" alt="Municipal Boundaries" />
   <p class="caption-text">Municipal boundaries sample</p>
 </div>
-<p>
-  <a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7md2JrOVU1V3BVc1E" class="button medium white"><span class="button-text">Download Data Package</span></a>
-</p>
-<h4><strong>City, County, and State Boundaries</strong></h4>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC</p>
-<p><strong>Abstract:</strong><br />
-This dataset contains mapping data representing the state, county, municipal, and metro township boundaries for Utah.</p>
-<p><strong>Data Content:</strong><br />
-This dataset includes the following feature classes:</p>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7md2JrOVU1V3BVc1E"
+name="City, County, and State Boundaries"
+stewards="AGRC, State and Local Government Partners"
+webapp="https://www.arcgis.com/home/webmap/viewer.html?webmap=e2e0430f97114c3aa958262fa5e3e6ed"
+abstract="This dataset contains mapping data representing the state, county, municipal, and metro township boundaries for Utah." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="MunicipalBoundaries">Municipal Boundaries</h3>
+    <h3 id="MunicipalBoundaries">
+      <a href="#MunicipalBoundaries" class="anchor--link">Municipal Boundaries</a>
+    </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/MunicipalitiesStateSmall.png" | prepend: site.baseurl }}" alt="MunicipalBoundaries" />
-    <p>
-      Boundaries.Municipalities is a multi-purpose statewide dataset of municipal boundaries for cartography and approximate boundary identification.
-    </p>
-    <p>
-      Boundaries.Municipalities boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.
-    </p>
-    <p>
-      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules (e.g. no two cities or redevelopment areas may cover the same geographic extent).
-    </p>
-    <p>
-      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).
-    </p>
-    <p>
-      There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.
-    </p>
-    <p>
-      The municipal boundary dataset is maintained by AGRC in partnership with state and local government.
-    </p>
-    <p>
-      Questions can be directed to <a href="mailto:mheagin@utah.gov">Mike Heagin</a> (801.537.9296) at AGRC.
-    </p>
+    <p>Boundaries.Municipalities is a multi-purpose statewide dataset of municipal boundaries for cartography and approximate boundary identification.</p>
+    <p>Boundaries.Municipalities boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.</p>
+    <p>Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules (e.g. no two cities or redevelopment areas may cover the same geographic extent).</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+    <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
+    <p>The municipal boundary dataset is maintained by AGRC in partnership with state and local government.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://municert.utah.gov/">Lieutenant Governor Municipal Cetifications website</a></li>
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Municipalities.html">FGDC format metadata</a></li>
+      <li><a href="https://www.arcgis.com/home/webmap/viewer.html?webmap=e2e0430f97114c3aa958262fa5e3e6ed">Utah Municipalities and Metro Townships Boundaries Map</a></li>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:mheagin@utah.gov">Mike Heagin</a> (801.537.9296) at AGRC.</p>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="MunicipalBoundaries-downloads">Downloads</h5>
+      <i class="fa fa-pull-right fa-download fa-2x"></i>
+      <h5 id="MunicipalBoundaries-downloads">Downloads</h5>
     </div>
     <div class="panel-content">
-      <p>
-        Download this dataset using the Download button at the top of this page or the links below.
-      </p>
-      <ul>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb1NRTHRyNDJRT3c&export=download">Municipal Boundaries: File Geodatabase</a></li>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mczhJY0U3RjBsaVU&export=download">Municipal Boundaries: Shapefile</a></li>
+      <p>Download this dataset using the Download button at the top of this page or the links below. </p>
+        <ul class="dotless">
+          <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb1NRTHRyNDJRT3c&export=download">Municipal Boundaries: File Geodatabase</a></li>
+          <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mczhJY0U3RjBsaVU&export=download">Municipal Boundaries: Shapefile</a></li>
       </ul>
-      <ul>
-      <p>Other links for this dataset:</p>
-      <ul>
-        <li><a href="http://municert.utah.gov/">Lieutenant Governor Municipal Cetifications website</a></li>
-        <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Municipalities.html">View FGDC format metadata</a></li>
-      </ul>
-      <ul>
-      <p>To View Municipalities and Metro Townships in a map:</p>
-      <ul>  
-        <li><a href="https://www.arcgis.com/home/webmap/viewer.html?webmap=e2e0430f97114c3aa958262fa5e3e6ed">Utah Municipalities and Metro Townships Boundaries Map</a></li>
-      </ul> 
     </div>
   </div>
   <div class="grid__col grid__col--1-of-2">
@@ -85,117 +93,70 @@ This dataset includes the following feature classes:</p>
       <h5 id="MunicipalBoundaries-updates">Updates</h5>
     </div>
     <div class="panel-content">
-      <p>
-        Updates to this dataset are published at a monthly interval or as needed.
-      </p>
-      <p>Recent update summaries:</p>
-        
-        <a href="{{site.baseurl}}{% post_url 2017-06-29-municipal-boundaries-update-for-second-quarter-2017-calendar-year %}">June 29, 2017</a><br />
-        <a href="{{site.baseurl}}{% post_url 2017-03-29-municipal-boundaries-update-for-first-quarter-calendar-year %}">March 29, 2017</a><br />
-        <a href="{{site.baseurl}}{% post_url 2016-12-30-end-of-year-fourth-quarter-updates-for-municipal-boundaries %}">December 30, 2016</a><br />
-        <a href="{{site.baseurl}}{% post_url 2016-09-07-third-quarter-municipal-boundaries-updates %}">September 7, 2016</a><br />
-        <a href="{{site.baseurl}}{% post_url 2016-07-12-second-quarter-municipal-boundaries-updates %}">July 11, 2016</a><br />
-        <a href="{{site.baseurl}}{% post_url 2016-05-16-first-quarter-updates-and-beyond %}">May 16, 2016</a><br />
-        <a href="{{site.baseurl}}{% post_url 2016-01-05-end-of-year-updates-for-the-municipal-boundaries-are-available %}">January 5, 2016</a><br />
-        <a href="{{site.baseurl}}{% post_url 2015-08-28-updates-for-the-municipal-boundaries-are-available-now %}">August 28, 2015</a><br />
-        <a href="{{site.baseurl}}{% post_url 2015-04-29-updates-to-municipal-boundaries-for-the-state-of-utah-april-2015 %}">April 29, 2015</a><br />
-        <a href="{{site.baseurl}}{% post_url 2014-12-16-updates-to-municpal-boundaries-for-the-state-of-utah-2 %}">December 16, 2014</a><br />
-        <a href="{{site.baseurl}}{% post_url 2014-08-15-updates-to-municpal-boundaries-for-the-state-of-utah %}">August 15, 2014</a><br />
-        <a href="{{site.baseurl}}{% post_url 2014-04-02-new-updates-to-municipal-boundaries-layers %}">April 1, 2014</a><br />
-        <a href="{{site.baseurl}}{% post_url 2014-01-09-newest-updates-to-the-municipal-boundaries %}">January 9, 2014</a><br />
-        <a href="{{site.baseurl}}{% post_url 2013-08-09-newest-updates-to-municipal-boundaries %}">August 9, 2013</a><br />
-        <a href="{{site.baseurl}}{% post_url 2013-04-29-first-quarter-municipal-boundaries-updates %}">April 30, 2013</a><br />
-        <a href="{{site.baseurl}}{% post_url 2013-01-03-end-of-2012-municipal-boundaries-update %}">December 31, 2012</a><br />
-        <a href="{{site.baseurl}}{% post_url 2012-12-10-municipalities-updates-nov-30-2012 %}">November 30, 2012</a><br />
-        November 2011<br />
-        March 2011
-      </p>
+      <p>Updates to this dataset are published at a monthly interval or as needed.</p>
+      <ul class="dotless">
+        <li><a href="{{site.baseurl}}{% post_url 2017-06-29-municipal-boundaries-update-for-second-quarter-2017-calendar-year %}">June 29, 2017</a>
+        <li><a href="{{site.baseurl}}{% post_url 2017-03-29-municipal-boundaries-update-for-first-quarter-calendar-year %}">March 29, 2017</a>
+        <li><a href="{{site.baseurl}}{% post_url 2016-12-30-end-of-year-fourth-quarter-updates-for-municipal-boundaries %}">December 30, 2016</a>
+        <li><a href="{{site.baseurl}}{% post_url 2016-09-07-third-quarter-municipal-boundaries-updates %}">September 7, 2016</a>
+        <li><a href="{{site.baseurl}}{% post_url 2016-07-12-second-quarter-municipal-boundaries-updates %}">July 11, 2016</a>
+        <li><a href="{{site.baseurl}}{% post_url 2016-05-16-first-quarter-updates-and-beyond %}">May 16, 2016</a>
+        <li><a href="{{site.baseurl}}{% post_url 2016-01-05-end-of-year-updates-for-the-municipal-boundaries-are-available %}">January 5, 2016</a>
+        <li><a href="{{site.baseurl}}{% post_url 2015-08-28-updates-for-the-municipal-boundaries-are-available-now %}">August 28, 2015</a>
+        <li><a href="{{site.baseurl}}{% post_url 2015-04-29-updates-to-municipal-boundaries-for-the-state-of-utah-april-2015 %}">April 29, 2015</a>
+        <li><a href="{{site.baseurl}}{% post_url 2014-12-16-updates-to-municpal-boundaries-for-the-state-of-utah-2 %}">December 16, 2014</a>
+        <li><a href="{{site.baseurl}}{% post_url 2014-08-15-updates-to-municpal-boundaries-for-the-state-of-utah %}">August 15, 2014</a>
+        <li><a href="{{site.baseurl}}{% post_url 2014-04-02-new-updates-to-municipal-boundaries-layers %}">April 1, 2014</a>
+        <li><a href="{{site.baseurl}}{% post_url 2014-01-09-newest-updates-to-the-municipal-boundaries %}">January 9, 2014</a>
+        <li><a href="{{site.baseurl}}{% post_url 2013-08-09-newest-updates-to-municipal-boundaries %}">August 9, 2013</a>
+        <li><a href="{{site.baseurl}}{% post_url 2013-04-29-first-quarter-municipal-boundaries-updates %}">April 30, 2013</a>
+        <li><a href="{{site.baseurl}}{% post_url 2013-01-03-end-of-2012-municipal-boundaries-update %}">December 31, 2012</a>
+        <li><a href="{{site.baseurl}}{% post_url 2012-12-10-municipalities-updates-nov-30-2012 %}">November 30, 2012</a>
+        <li>November 2011
+        <li>March 2011
+      </ul>
     </div>
-  </div>
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-      <h3 id="Metro Townships">Metro Townships</h3>
+    <h3 id="MetroTownships">
+      <a href="#MetroTownships" class="anchor--link">Metro Townships</a>
+    </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/MetroTownshipSmall.png" | prepend: site.baseurl }}" alt="MetroTownships" />
-    <p>
-      Boundaries.MetroTownships is a multi-purpose statewide dataset of metro townships boundaries for cartography and approximate boundary identification.
-    </p>
-    <p>
-      Boundaries.MetroTownships boundaries represent unincorporated locations where the residents don't want to be part of an incorporated municipality but do want some say in how they are governed. They are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.
-    </p>
-    <p>
-      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules (e.g. no two cities or township areas may cover the same geographic extent).
-    </p>
-    <p>
-      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).
-    </p>
-    <p>
-      There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.
-    </p>
-    <p>
-      The metro townships boundary dataset is maintained by AGRC in partnership with state and local government.
-    </p>
-    <p>
-      Questions can be directed to <a href="mailto:mheagin@utah.gov">Mike Heagin</a> (801.537.9296) at AGRC.
-    </p>
+    <p>Boundaries.MetroTownships is a multi-purpose statewide dataset of metro townships boundaries for cartography and approximate boundary identification.</p>
+    <p>Boundaries.MetroTownships boundaries represent unincorporated locations where the residents don't want to be part of an incorporated municipality but do want some say in how they are governed. They are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.</p>
+    <p>Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules (e.g. no two cities or township areas may cover the same geographic extent).</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The metro townships boundary dataset is maintained by AGRC in partnership with state and local government.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://municert.utah.gov/">Lieutenant Governor Municipal Cetifications website</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:mheagin@utah.gov">Mike Heagin</a> (801.537.9296) at AGRC.</p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="MetroTownships-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <p>Download this dataset using the Download button at the top of this page or the links below.</p>
-      <ul>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTXh2ejVpZGY1VGc&export=download">Metro Townships: File Geodatabase</a></li>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZ2ltajhJTGNtbE0&export=download">Metro Townships: Shapefile</a></li>
-      </ul>
-      <p>Other links for this dataset:</p>
-      <ul>
-        <li><a href="http://municert.utah.gov/">Lieutenant Governor Municipal Cetifications website</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="MetroTownshipsBoundaries-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <p>Updates to this dataset are published as needed.</p>
-      <p>Recent update summaries:</p>
-    </div>
-  </div>
+  {% include packagedata.html name="MetroTownships"
+  info=page.MetroTownships %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="CountyBoundaries">County Boundaries</h3>
+    <h3 id="CountyBoundaries">
+      <a href="#CountyBoundaries" class="anchor--link">County Boundaries</a>
+    </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/CountyBoundaries_Small.png" | prepend: site.baseurl }}" alt="County Boundaries" />
-    <p>
-      Boundaries.Counties is a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification. Includes July 2012 major update of Millard and Juab counties.
-    </p>
-    <p>
-      Boundaries.Counties boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices.
-    </p>
-    <p>
-      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules.
-    </p>
-    <p>
-      There is also a county boundaries dataset the has been adjusted to the updated Geographic Coordinate Database SGID10.BOUNDARIES.Counties_GCDB
-    </p>
-    <p>
-      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).
-    </p>
-    <p>
-      The county boundary dataset is is maintained by AGRC in partnership with state and local government.
-    </p>
-    <p>
-      Questions can be directed to <a href="mailto:mheagin@utah.gov">Mike Heagin</a> (801.537.9296) at AGRC.
-    </p>
+    <p>Boundaries.Counties is a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification. Includes July 2012 major update of Millard and Juab counties.</p>
+    <p>Boundaries.Counties boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices.</p>
+    <p>Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules.</p>
+    <p>There is also a county boundaries dataset the has been adjusted to the updated Geographic Coordinate Database SGID10.BOUNDARIES.Counties_GCDB</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The county boundary dataset is is maintained by AGRC in partnership with state and local government.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://municert.utah.gov/">Lieutenant Governor Municipal Cetifications website</a></li>
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Counties.html">View FGDC format metadata</a></li>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:mheagin@utah.gov">Mike Heagin</a> (801.537.9296) at AGRC.</p>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
@@ -203,15 +164,9 @@ This dataset includes the following feature classes:</p>
       <h5 id="CountyBoundaries-downloads">Downloads</h5>
     </div>
     <div class="panel-content">
-      <p>Download this dataset using the Download button at the top of this page or the links below.</p>
-      <ul>
+      <ul class="dotless">
         <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbnFpYUl1bDZtaDQ&export=download">County Boundaries: File Geodatabase</a></li>
         <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mc3BGRXhKa0N0U2c&export=download">County Boundaries: Shapefile</a></li>
-      </ul>
-      <p>Other links for this dataset:</p>
-      <ul>
-        <li><a href="http://municert.utah.gov/">Lieutenant Governor Municipal Cetifications website</a></li>
-        <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Counties.html">View FGDC format metadata</a></li>
       </ul>
     </div>
   </div>
@@ -221,62 +176,32 @@ This dataset includes the following feature classes:</p>
       <h5 id="CountyBoundaries-updates">Updates</h5>
     </div>
     <div class="panel-content">
-      <p>Updates to this dataset are published as needed.</p>
-      <p>Recent update summaries:</p>
-        July 2014 Adjusted to newest CadNSDI v2 PLSS-GCDB; minor adjustments 10 ft to 40 ft all in non-populated areas.<br />
-        <a href="{{site.baseurl}}{% post_url 2012-07-25-june-2012-juab-millard-county-boundary-adjustment %}" title="Juab and Millard Counties Adjust Shared Boundary"><br />
-        July 2012 (Juab and Millard counties)</a><br />
-        November 2011<br />
-        March 2011<br />
+      <ul class="dotless">
+        <li>July 2014 Adjusted to newest CadNSDI v2 PLSS-GCDB; minor adjustments 10 ft to 40 ft all in non-populated areas.
+        <li><a href="{{site.baseurl}}{% post_url 2012-07-25-june-2012-juab-millard-county-boundary-adjustment %}" title="Juab and Millard Counties Adjust Shared Boundary">
+        <li>July 2012 (Juab and Millard counties)</a>
+        <li>November 2011
+        <li>March 2011
     </div>
   </div>
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="StateBoundary">State Boundary</h3>
+    <h3 id="StateBoundary">
+      <a href="#StateBoundary" class="anchor--link">State Boundary</a>
+    </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/UtahBoundary.png" | prepend: site.baseurl }}" alt="Utah" />
-    <p>
-      Boundaries.Utah is a dataset of the Utah state boundary.</p>
-    <p>
-      Boundaries.Utah boundary is maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.
-    </p>
-    <p>
-      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data were adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules.
-    </p>
-    <p>In addition to the boundary of the state of Utah this dataset contains another larger boundary around the state that can be used for cartographic purposes to mask other data layers that extend past the boundary of the state.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-    The state boundary dataset is is maintained by AGRC in partnership with state and local government.</p>
+    <p>Boundaries.Utah is a dataset of the Utah state boundary.</p>
+    <p>Boundaries.Utah boundary is maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.</p>
+    <p>Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data were adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules.</p>
+    <p>In addition to the boundary of the state of Utah this dataset contains another larger boundary around the state that can be used for cartographic purposes to mask other data layers that extend past the boundary of the state. The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The state boundary dataset is is maintained by AGRC in partnership with state and local government.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Utah.html">FGDC format metadata</a></li>
+    </ul>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="StateBoundary-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <p>Download this dataset using the Download button at the top of this page or the links below.</p>
-      <ul>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdDJVbzN3cWdBZzA&export=download">Utah State Boundary: File Geodatabase</a></li>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRkJJaDBSZm9YSXc&export=download">Utah State Boundary: Shapefile</a></li>
-      </ul>
-      <p>Other links for this dataset:</p>
-      <ul>
-        <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Utah.html">View FGDC format metadata</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="StateBoundary-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <p>Updates to this dataset are published as needed.</p>
-      <p>Recent update summaries:</p>
-      July 2014 Adjusted to newest CadNSDI v2 PLSS-GCDB; biggest shift along Wyoming &amp; Summit County line (47 ft)<br />
-      November 2011<br />
-      March 2011<br />
-    </div>
-  </div>
+  {% include packagedata.html name="StateBoundary"
+  info=page.StateBoundary %}
 </div>
