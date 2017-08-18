@@ -16,274 +16,228 @@ tags:
 categories: []
 published: true
 date: 2011-08-25 23:12:40 -0600
+HighwayLinearReferencingSystemRoutes:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSURhZHpJMDFnM1U&export=download"
+      label: "UDOT LRS Routes: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV2VRNTduVXNyMjg&export=download"
+      label: "UDOT LRS Routes: Shapefile"
+  updates:
+    - Updates to this dataset are published periodically to refine route representation, add additional routes, and in response to route realignment.
+MilepostPoints:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb1BJT01oVEdOekU&export=download"
+      label: "Milepost Points: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNFlDenZWTnNwekE&export=download"
+      label: "Milepost Points: Shapefile"
+  updates:
+    - Updates to this dataset are published periodically.
+TenthMileReferencePoints:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTGhJNkxNcE9hVk0&export=download"
+      label: "Tenth of a Mile: File Geodatabase"
+  updates:
+    - Updates to this dataset are published periodically.
+FreewayExitPoints:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNm1LNGN0eDNBLUE&export=download"
+      label: "Freeway Exit Points: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRjZpRFpkbng5ak0&export=download"
+      label: "Freeway Exit Points: Shapefile"
+  updates:
+    - Updates to this dataset are published infrequently.
+ShieldLabelingLines:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMFFPbFIxZkt6am8&export=download"
+      label: "Shield Labeling Lines: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOVNuSlBGU1k5aUU&export=download"
+      label: "Shield Labeling Lines: Shapefile"
+  updates:
+    - Updates to this dataset are published infrequently.
 ---
-<div class="caption"><img src="{{ "/images/gallery/sgid/utah-sgid-gis-roads-and-highways-sample.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" /><p class="caption-text">Roads and Highway System</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mN1NtTlRucTZleHc" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>Roads and Highway System</strong></h4>
-<p><strong>Data Type:</strong> GIS Map Data<br />
-<strong>Steward(s):</strong> AGRC, Local Government partners</p>
-<p><strong>Abstract:</strong><br />
-This dataset contains GIS mapping data representing the statewide roads centerline dataset for Utah and other road and highway related data such as milepost locations, exit numbers and names, polylineM highway linear referencing system (LRS) routes, and label lines for dynamic rendering of highway shields.</p>
-<p><strong>Data Content:</strong><br />
-This dataset includes the following feature classes:</p>
+<div class="caption">
+  <img src="{{ "/images/gallery/sgid/utah-sgid-gis-roads-and-highways-sample.png" | prepend: site.baseurl }}" alt="Roads and Highways" />
+  <p class="caption-text">Roads and Highway System</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mN1NtTlRucTZleHc"
+name="Roads and Highway System"
+stewards="AGRC, Local Government partners"
+abstract="This dataset contains GIS mapping data representing the statewide roads centerline dataset for Utah and other road and highway related data such as milepost locations, exit numbers and names, polylineM highway linear referencing system (LRS) routes, and label lines for dynamic rendering of highway shields." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="RoadCenterlines">Road Centerlines</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-streets-roads.png" | prepend: site.baseurl }}" alt="utah-gis-streets-roads" />Transportation.Roads is a multi-purpose statewide roads dataset for cartography and range based-address location. This dataset is also used as the base geometry for deriving the GIS-representation of UDOT's highway linear referencing system (LRS). A network analysis dataset for route-finding can also be derived from this dataset.</p>
-Transportation.Roads utilizes the Statewide Roads Data Model Standard (please read about the <a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">changes coming</a> to the data model on September 13th, 2017), formally known as the Utah Transportation Data Model. The UGIC Road Centerline Sub-committee has been in the process of revising the content and structure of the Utah Transportation Data Model. The final draft of what is now being referred to as the 'Statewide Roads Data Model Standard' is pending approval by the UGIC Standards Committee.</p>
-<ul>
-<a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">Read about the changes coming to the data model</a>  
-<li>View the new (NextGen) <a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546">data model</a></li>  
-<li>View the soon-to-be deprecated <a href="https://docs.google.com/document/d/1ojjqCa1Z6IG6Wj0oAbZatoYsmbKzO9XwdD88-kqm-zQ/edit?usp=sharing">data model</a> (best viewed in Firefox)</li>
-<li>View the soon-to-be deprecated <a href="https://docs.google.com/open?id=0Bz18jufMWioiU25icDNoQWlJa2M">data model</a></li>
-</ul>
-<p>The Statewide Roads Data Model Standard is divided into two ‘tier’ levels:</p>
-<ul>
-<li>Tier Level 1 fields pertain to address location, cartography, and routing. Stewards are encouraged to maintain data that will map to the Tier Level 1 fields. The field named DOT_* are an exception, as UDOT will maintain these themselves.
-<ul>
-<li>Examples of the CARTOCODE (formerly CFCC) field descriptions:<br />
-1 - Interstates<br />
-2 - US Highway, Separated<br />
-4 - Major State Highway, Separated<br />
-7 - Ramps, Collectors<br />
-9 - Major Local Roads, Paved</li>
-</ul>
-</li>
-<li>Tier Level 2 fields pertain to local agency maintenance and inventory and are utilized and shared if the local steward chooses to do so.</li>
-</ul>
-<p>Changes to the data model include a more logical approach to the ordering of fields and their names, in addition to the removal of multiple redundant fields. Proposals by the UGIC Standards Committee are meant as suggested 'best practices' and are primarily designed for data transfer and sharing. It is not the intent that all stewards will change their current data management process to match this standard, but rather that stewards will evaluate their current practices to see how well their data 'maps' to this schema for data sharing purposes. Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> (801.538.3665) at AGRC.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-The statewide roads dataset is maintained by AGRC in partnership with local government, the Utah 911 Committee, and UDOT.</p>
-</div>
-    <div class="grid__col grid__col--1-of-2">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="RoadCenterlines">
+      <a href="#RoadCenterlines" class="anchor--link">Road Centerlines</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-streets-roads.png" | prepend: site.baseurl }}" alt="streets and roads" />
+    <p>Transportation.Roads is a multi-purpose statewide roads dataset for cartography and range based-address location. This dataset is also used as the base geometry for deriving the GIS-representation of UDOT's highway linear referencing system (LRS). A network analysis dataset for route-finding can also be derived from this dataset.</p>
+    <p>Transportation.Roads utilizes the Statewide Roads Data Model Standard (please read about the <a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">changes coming</a> to the data model on September 13th, 2017), formally known as the Utah Transportation Data Model. The UGIC Road Centerline Sub-committee has been in the process of revising the content and structure of the Utah Transportation Data Model. The final draft of what is now being referred to as the 'Statewide Roads Data Model Standard' is pending approval by the UGIC Standards Committee.</p>
+    <p>The Statewide Roads Data Model Standard is divided into two ‘tier’ levels:</p>
+    <ul class="dotless">
+      <li>Tier Level 1 fields pertain to address location, cartography, and routing. Stewards are encouraged to maintain data that will map to the Tier Level 1 fields. The field named DOT_* are an exception, as UDOT will maintain these themselves.
+      <ul class="dotless">
+        <li>Examples of the CARTOCODE (formerly CFCC) field descriptions:
+        <li>1 - Interstates
+        <li>2 - US Highway, Separated
+        <li>4 - Major State Highway, Separated
+        <li>7 - Ramps, Collectors
+        <li>9 - Major Local Roads, Paved
+      </ul>
+      <li>Tier Level 2 fields pertain to local agency maintenance and inventory and are utilized and shared if the local steward chooses to do so.</li>
+    </ul>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">Upcomming changes coming to the data model</a>
+      <li><a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546">NextGen data model</a>
+      <li><a href="https://docs.google.com/document/d/1ojjqCa1Z6IG6Wj0oAbZatoYsmbKzO9XwdD88-kqm-zQ/edit?usp=sharing">Current data model</a> (soon-to-be deprecated)
+      <li><a href="https://docs.google.com/open?id=0Bz18jufMWioiU25icDNoQWlJa2M">Current schema</a> (soon-to-be deprecated)
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_Roads.html">FGDC format metadata</a>
+    </ul>
+    <p>Changes to the data model include a more logical approach to the ordering of fields and their names, in addition to the removal of multiple redundant fields. Proposals by the UGIC Standards Committee are meant as suggested 'best practices' and are primarily designed for data transfer and sharing. It is not the intent that all stewards will change their current data management process to match this standard, but rather that stewards will evaluate their current practices to see how well their data 'maps' to this schema for data sharing purposes. Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> (801.538.3665) at AGRC.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The statewide roads dataset is maintained by AGRC in partnership with local government, the Utah 911 Committee, and UDOT.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-2">
     <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="RoadCenterlines-downloads">Downloads</h5>
+      <i class="fa fa-pull-right fa-download fa-2x"></i>
+      <h5 id="RoadCenterlines-downloads">Downloads</h5>
+    </div>
+    <div class="panel-content">
+      <p><a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">NextGen</a> Data Model Road Centerline Data:</p>
+      <ul class="dotless">
+        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcTQ0OG9oNThtWE0&export=download">NextGen Road Centerlines: File Geodatabase</a>
+        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU1M2VVIwU0tZVWs&export=download">NextGen Road Centerlines: Shapefile</a>
+      </ul>
+      <p><a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">Current</a> Data Model Road Centerline Data (soon-to-be-deprecated):</p>
+      <ul class="dotless">
+        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcDJ4eVhqUllibk0&export=download">Road Centerlines: File Geodatabase</a>
+        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU05HZkxvZzlfbms&export=download">Road Centerlines: Shapefile</a>
+        <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/SGID10.TRANSPORTATION.Roads_Major.lyr">Road Centerlines: Layer File</a>
+        <li><a href="https://drive.google.com/uc?export=download&id=0ByStJjVZ7c7mMXdRSWk0SWhncXc">Road Centerlines (proposed schema): File Geodatabase</a>
+      </ul>
+    </div>
+  </div>
+  <div class="grid__col grid__col--1-of-2">
+    <div class="panel update">
+      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
+      <h5 id="RoadCenterlines-updates">Updates</h5>
+    </div>
+  <div class="panel-content">
+    <p>Updates to this dataset are published every month.</p>
+    <p>AGRC maintains a street centerline update schedule to ensure that each county is updated either annually or biannually.</p>
+    <ul class="dotless">
+      <li><a href="{{site.baseurl}}{% post_url 2017-08-15-utah-sgid-statewide-roads-data-layer-updates-08152017 %}">August 15, 2017</a>
+      <li><a href="{{site.baseurl}}{% post_url 2017-07-18-utah-sgid-statewide-roads-data-layer-updates-07182017 %}">July 18, 2017</a>
+      <li><a href="{{site.baseurl}}{% post_url 2017-06-19-utah-sgid-statewide-roads-data-layer-updates-06192017 %}">June 19, 2017</a>
+      <li><a href="{{site.baseurl}}{% post_url 2017-05-17-utah-sgid-statewide-roads-data-layer-updates-05172017 %}">May 17, 2017</a>
+      <li><a href="{{site.baseurl}}{% post_url 2017-04-06-utah-sgid-statewide-roads-data-layer-updates-04062017 %}">April 06, 2017</a>
+      <li><a href="{{site.baseurl}}{% post_url 2017-03-09-utah-sgid-statewide-roads-data-layer-updates-03092017 %}">March 09, 2017</a>
+      <li><a href="{{site.baseurl}}{% post_url 2017-02-08-utah-sgid-statewide-roads-data-layer-updates-02082017 %}">February 08, 2017</a>
+      <li><a href="{{site.baseurl}}{% post_url 2017-01-10-utah-sgid-statewide-roads-data-layer-updates-01102017 %}">January 10, 2017</a>
+      <li><a href="{{site.baseurl}}{% post_url 2016-12-05-utah-sgid-statewide-roads-data-layer-updates-12052016 %}">December 05, 2016</a>
+      <li><a href="{{site.baseurl}}{% post_url 2016-11-09-utah-sgid-statewide-roads-data-layer-updates-11092016 %}">November 09, 2016</a>
+      <li><a href="{{site.baseurl}}{% post_url 2016-10-03-utah-sgid-statewide-roads-data-layer-updates-10032016 %}">October 03, 2016</a>
+      <li><a href="{{site.baseurl}}{% post_url 2016-08-31-utah-sgid-statewide-roads-data-layer-updates-08-31-2016 %}">August 31, 2016</a>
+      <li><a href="{{site.baseurl}}{% post_url 2016-08-04-utah-sgid-statewide-roads-data-layer-updates-08042016 %}">August 04, 2016</a>
+    </ul>
+  </div>
 </div>
-<div class="panel-content">Download <a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">NextGen</a> Data Model Road Centerline Data:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcTQ0OG9oNThtWE0&export=download">NextGen Road Centerlines: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU1M2VVIwU0tZVWs&export=download">NextGen Road Centerlines: Shapefile</a></li>
-</ul>
-<p>Download <a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">soon-to-be-deprecated</a> Data Model Road Centerline Data:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcDJ4eVhqUllibk0&export=download">Road Centerlines: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU05HZkxvZzlfbms&export=download">Road Centerlines: Shapefile</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/SGID10.TRANSPORTATION.Roads_Major.lyr">Road Centerlines: Layer File</a></li>
-<li><a href="https://drive.google.com/uc?export=download&id=0ByStJjVZ7c7mMXdRSWk0SWhncXc">Road Centerlines (proposed schema): File Geodatabase</a></li>
-</ul>      
-<ul class="productLinks">
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="RoadCenterlines-updates">Updates</h5>
-        </div>
-        <div class="panel-content">AGRC maintains a street centerline update schedule to ensure that each county is updated either annually or biannually.</p>
-<ul>
-</ul>
-<p>Updates to this dataset are published every month.</p>
-<p>Recent update summaries:</p>
-<ul>
-<li><a href="{{site.baseurl}}{% post_url 2017-08-15-utah-sgid-statewide-roads-data-layer-updates-08152017 %}">August 15, 2017</a></li>  
-<li><a href="{{site.baseurl}}{% post_url 2017-07-18-utah-sgid-statewide-roads-data-layer-updates-07182017 %}">July 18, 2017</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2017-06-19-utah-sgid-statewide-roads-data-layer-updates-06192017 %}">June 19, 2017</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2017-05-17-utah-sgid-statewide-roads-data-layer-updates-05172017 %}">May 17, 2017</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2017-04-06-utah-sgid-statewide-roads-data-layer-updates-04062017 %}">April 06, 2017</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2017-03-09-utah-sgid-statewide-roads-data-layer-updates-03092017 %}">March 09, 2017</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2017-02-08-utah-sgid-statewide-roads-data-layer-updates-02082017 %}">February 08, 2017</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2017-01-10-utah-sgid-statewide-roads-data-layer-updates-01102017 %}">January 10, 2017</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2016-12-05-utah-sgid-statewide-roads-data-layer-updates-12052016 %}">December 05, 2016</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2016-11-09-utah-sgid-statewide-roads-data-layer-updates-11092016 %}">November 09, 2016</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2016-10-03-utah-sgid-statewide-roads-data-layer-updates-10032016 %}">October 03, 2016</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2016-08-31-utah-sgid-statewide-roads-data-layer-updates-08-31-2016 %}">August 31, 2016</a></li>
-<li><a href="{{site.baseurl}}{% post_url 2016-08-04-utah-sgid-statewide-roads-data-layer-updates-08042016 %}">August 04, 2016</a></li>
-</ul>
-        </div>
-    </div>
-    </div><li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_Roads.html">View FGDC format metadata</a>  </li>
-</ul>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="HighwayLinearReferencingSystemRoutes">Highway Linear Referencing System Routes</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}" alt="utah-gis-highway-lrs-udot" />Transportation.UDOTRoutes_LRS is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepost measure coordinate.</p>
-Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0080PR18501 is the east bound off ramp at exit 185 on I-80). ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter x,y coordinate precision; 0.001 mile m coordinate precision).</p>
-The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="HighwayLinearReferencingSystemRoutes">
+      <a href="#HighwayLinearReferencingSystemRoutes" class="anchor--link">Highway Linear Referencing System Routes</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}" alt="utah-gis-highway-lrs-udot" />
+    <p>Transportation.UDOTRoutes_LRS is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepost measure coordinate.</p>
+    <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0080PR18501 is the east bound off ramp at exit 185 on I-80). ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter x,y coordinate precision; 0.001 mile m coordinate precision). The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
+    <h5>Related Resource</h5>
+    <ul class="dotless">
+      <li><a href="http://data.udot.utah.gov">data.udot.utah.gov</a>
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_UDOTRoutes_LRS.html">View FGDC format metadata</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="HighwayLinearReferencingSystemRoutes"
+  info=page.HighwayLinearReferencingSystemRoutes %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="HighwayLinearReferencingSystemRoutes-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Highway LRS Routes data:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSURhZHpJMDFnM1U&export=download">UDOT LRS Routes: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV2VRNTduVXNyMjg&export=download">UDOT LRS Routes: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul class="productLinks">
-<li class="productLink">A more current version of this dataset may be available at <a href="http://data.udot.utah.gov">data.udot.utah.gov</a>.</li>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="HighwayLinearReferencingSystemRoutes-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published periodically to refine route representation, add additional routes, and in response to route realignment.</p>
-
-        </div>
-    </div>
-    </div><li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_UDOTRoutes_LRS.html">View FGDC format metadata</a>  </li>
-</ul>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="MilepostPoints">Milepost Points</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-sgid-highway-milepost.png" | prepend: site.baseurl }}" alt="utah-sgid-highway-milepost" />Transportation.UDOTMileposts represents the approximate location of state and federal highway mileposts as a single point. This dataset is derived directly from SGID10.Transportation.UDOTRoutes_LRS.</p>
-Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction).  ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
-<p>Per UDOT policy the actual location of mileposts can vary up to 50 feet, from the measured position where intersections and physical infrastructure make a more 'true' psoitioning impractical or undesirable.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="MilepostPoints">
+      <a href="#MilepostPoints" class="anchor--link">Milepost Points</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-sgid-highway-milepost.png" | prepend: site.baseurl }}" alt="utah-sgid-highway-milepost" />
+    <p>Transportation.UDOTMileposts represents the approximate location of state and federal highway mileposts as a single point. This dataset is derived directly from SGID10.Transportation.UDOTRoutes_LRS.</p>
+    <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction).  ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
+    <p>Per UDOT policy the actual location of mileposts can vary up to 50 feet, from the measured position where intersections and physical infrastructure make a more 'true' psoitioning impractical or undesirable.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_UDOTMileposts_Approx.html">View FGDC format metadata</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="MilepostPoints"
+  info=page.MilepostPoints %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="MilepostPoints-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Milepost Point data:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb1BJT01oVEdOekU&export=download">Milepost Points: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNFlDenZWTnNwekE&export=download">Milepost Points: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul class="productLinks">
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="MilepostPoints-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published periodically.</p>
-
-        </div>
-    </div>
-    </div><li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_UDOTMileposts_Approx.html">View FGDC format metadata</a>  </li>
-</ul>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="TenthMileReferencePoints">Tenth Mile Reference Points</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" title="utah gis highway freeway shield lines" src="{{ "/images/utah-gis-highway-freeway-shield-lines.png" | prepend: site.baseurl }}" alt="" />Transportation.UDOTTenthMileRefPoints represents the approximate location of state and federal highway tenth of a mile locations as a single point. This dataset is derived directly from SGID10.Transportation.UDOTRoutes_LRS.</p>
-Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction).  ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
-<p>Per UDOT policy the actual location of tenth of mile locations can vary up to 50 feet, from the measured position where intersections and physical infrastructure make a more ‘true’ psoitioning impractical or undesirable.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-This dataset was assembled by UDOT for general purpose cartography.</p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="TenthMileReferencePoints">
+      <a href="#TenthMileReferencePoints" class="anchor--link">Tenth Mile Reference Points</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" title="utah gis highway freeway shield lines" src="{{ "/images/utah-gis-highway-freeway-shield-lines.png" | prepend: site.baseurl }}" alt="Tenth Mile References" />
+    <p>Transportation.UDOTTenthMileRefPoints represents the approximate location of state and federal highway tenth of a mile locations as a single point. This dataset is derived directly from SGID10.Transportation.UDOTRoutes_LRS.</p>
+    <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction).  ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
+    <p>Per UDOT policy the actual location of tenth of mile locations can vary up to 50 feet, from the measured position where intersections and physical infrastructure make a more ‘true’ psoitioning impractical or undesirable.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This dataset was assembled by UDOT for general purpose cartography.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbVZ3bmVmLV9yemM&export=download">Tenth of a Mile: Shapefile</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="TenthMileReferencePoints"
+  info=page.TenthMileReferencePoints %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="TenthMileReferencePoints-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Tenth Mile Reference Points:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTGhJNkxNcE9hVk0&export=download">Tenth of a Mile: File Geodatabase</a></li>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="TenthMileReferencePoints-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published periodically.</p>
-
-        </div>
-    </div>
-    </div><li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbVZ3bmVmLV9yemM&export=download">Tenth of a Mile: Shapefile</a>  </li>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="FreewayExitPoints">Freeway Exit Points</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-freeway-exits.png" | prepend: site.baseurl }}" alt="utah-gis-freeway-exits" />Transportation.Roads_FreewayExits contains point locations for each freeway and limited access highway exit along with the exit number, name, associated route, and connected streets/routes.</p>
-The EXITNAME field provides the primary route name and exit number plus the connecting route number or street name</p>
-<p>and place name carried by the exit sign. Route number and exit number are also carried in separate fields.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-This dataset was assembled by AGRC from resources provided by UDOT, as a resource for 911 dispatch and for general map reference.</p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="FreewayExitPoints">
+      <a href="#FreewayExitPoints" class="anchor--link">Freeway Exit Points</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-freeway-exits.png" | prepend: site.baseurl }}" alt="utah-gis-freeway-exits" />
+    <p>Transportation.Roads_FreewayExits contains point locations for each freeway and limited access highway exit along with the exit number, name, associated route, and connected streets/routes.</p>
+    <p>The EXITNAME field provides the primary route name and exit number plus the connecting route number or street name and place name carried by the exit sign. Route number and exit number are also carried in separate fields.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This dataset was assembled by AGRC from resources provided by UDOT, as a resource for 911 dispatch and for general map reference.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_Roads_FreewayExits.html">View FGDC format metadata</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="FreewayExitPoints"
+  info=page.FreewayExitPoints %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="FreewayExitPoints-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Freeway Exit Points data:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNm1LNGN0eDNBLUE&export=download">Freeway Exit Points: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRjZpRFpkbng5ak0&export=download">Freeway Exit Points: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul class="productLinks">
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="FreewayExitPoints-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published infrequently.</p>
-
-        </div>
-    </div>
-    </div><li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_Roads_FreewayExits.html">View FGDC format metadata</a>  </li>
-</ul>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="ShieldLabelingLines">Shield Labeling Lines</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" title="utah gis highway freeway shield lines" src="{{ "/images/utah-gis-highway-freeway-shield-lines.png" | prepend: site.baseurl }}" alt="" />Transportation.RoadsShieldLines consists of highway route lines edited to best enable non-redundant, dynamic label rendering of highway shields for freeways, US highways, and state highways.</p>
-In ArcMap, define a label class for each CLASS field value. 1 is for freeways, 2 for US highways, and 3 is for state highways. Each label class should use a SQL expression to define the class and the default class should be disabled or deleted.</p>
-<p>When defined labeling properties are defined properly, the minimum number of freeway and highway shields should be displayed without introducing ambiguity.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-This dataset was assembled by AGRC for general purpose cartography.</p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="ShieldLabelingLines">
+      <a href="#ShieldLabelingLines" class="anchor--link">Shield Labeling Lines</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" title="utah gis highway freeway shield lines" src="{{ "/images/utah-gis-highway-freeway-shield-lines.png" | prepend: site.baseurl }}" alt="freeway shield lines" />
+    <p>Transportation.RoadsShieldLines consists of highway route lines edited to best enable non-redundant, dynamic label rendering of highway shields for freeways, US highways, and state highways.</p>
+    <p>In ArcMap, define a label class for each CLASS field value. 1 is for freeways, 2 for US highways, and 3 is for state highways. Each label class should use a SQL expression to define the class and the default class should be disabled or deleted.</p>
+    <p>When defined labeling properties are defined properly, the minimum number of freeway and highway shields should be displayed without introducing ambiguity.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This dataset was assembled by AGRC for general purpose cartography.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_RoadsShieldLines.html">View FGDC format metadata</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="ShieldLabelingLines"
+  info=page.ShieldLabelingLines %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="ShieldLabelingLines-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Shield Labeling Lines:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMFFPbFIxZkt6am8&export=download">Shield Labeling Lines: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOVNuSlBGU1k5aUU&export=download">Shield Labeling Lines: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul class="productLinks">
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="ShieldLabelingLines-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are infrequent.</p>
-
-        </div>
-    </div>
-    </div><li class="productLink"><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_RoadsShieldLines.html">View FGDC format metadata</a>  </li>
-</ul>
