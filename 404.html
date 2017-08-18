@@ -29,3 +29,12 @@ permalink: /404.html
     <h2 class="shadow error-sub-heading text-center">Page Not Found</h2>
     <p class="shadow text-center">Try <a href="{{ "/search/" | prepend: site.baseurl }}">searching</a> for the page and notify us <a href="{{ site.github.repository_url }}/issues/new">by creating an issue</a>.</p>
 <div>
+<script>
+  ga('send', {
+    hitType: 'event',
+    eventCategory: '404',
+    eventAction: document.location.pathname,
+    eventLabel: document.referrer,
+    transport: 'beacon'
+  });
+</script>
