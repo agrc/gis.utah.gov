@@ -2,254 +2,212 @@
 status: publish
 layout: page
 tags:
-  - data
+  - parcels
+  - cadastre
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 published: true
 date: 2011-09-07 16:17:52 -0600
-title: Parcels
+title: Utah Parcels
 categories: []
 ---
 <div class="caption">
   <img src="{{ "/images/gallery/sgid/parcels_lg.jpg" | prepend: site.baseurl }}" alt="Parcels" />
   <p class="caption-text">Sample of Basic Parcels</p>
 </div>
-<p>
-  <a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7meVNnTThOSzVUeEk" class="button medium white">
-  <span class="button-text">Download Parcel Data</span></a>
-</p>
-  <h4><strong>Utah Parcel Data</strong></h4>
-<p>
-  <strong>Data Type</strong>: GIS Data Layer<br>
-  <strong>Steward(s)</strong>: AGRC<br>
-  <strong>Web Application</strong>: <a href="http://parcels.utah.gov">Basic Parcel Web Application</a><br>
-  <strong>Abstract</strong>: The <strong>Basic Parcels</strong> contain GIS mapping data representing parcel boundaries.
-  AGRC has Basic Parcel data for all 29 counties. Some counties are more complete than others. In addition to
-  the polygon geometry the attributes PARCEL ID, PARCEL ADDRESS, PARCELS CITY, PARCEL ZIP CODE, OWNERSHIP TYPE,
-  and RECORDER contact are maintained in the Basic Parcel dataset when available. Users should be aware the owner type
-  field 'OWN_TYPE' in the parcel polygons is a very generalized ownership type (Federal, Private, State, Tribal).
-  It is populated with the value of the 'OWNER' field where the parcel's centroid intersects the CADASTRE.LandOwnership
-  polygon layer. A <strong><a title="view and query available parcel data" href="http://parcels.utah.gov" target="_blank">parcel web application</a></strong>
-  is available for viewing and downloading the Basic Parcel data.
-</p>
-<p>
-  The <strong>Land Information Record Parcels (LIR)</strong> contain GIS mapping data representing parcel
-  boundaries and county tax roll attributes. AGRC has Land Information Record Parcels for some of the counties
-  in Utah. Since each County has its own database and process for maintaining tax year assessment information,
-  users should expect some variability in each County's LIR dataset. In addition to the polygon geometry the
-  attributes COUNTY_NAME, COUNTY_ID, ASSESSOR_SRC, BOUNDARY_SRC, DISCLAIMER, CURRENT_ASOF, PARCEL_ID, SERIAL_NUM,
-  PARCEL_ADD, PARCEL_CITY, TAXEXEMPT_TYPE, TAX_DISTRICT, TOTAL_MKT_VALUE, LAND_MKT_VALUE, PARCEL_ACRES, PROP_CLASS,
-  PRIMARY_RES, HOUSE_CNT, SUBDIV_NAME, BLDG_SQFT, BLDG_SQFT_INFO, FLOORS_CNT, FLOORS_INFO, BUILT_YR, EFFBUILT_YR,
-  CONST_MATERIAL are maintained in the Land Information Record Parcels dataset when available.
-</p>
-<p>
-  <strong>Data Content:</strong><br>
-  The following data is available for download:
-</p>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7meVNnTThOSzVUeEk"
+name="Utah Parcel Data"
+stewards="AGRC and Local Goverment"
+webapp="http://parcels.utah.gov"
+abstract="Parcel data contains GIS mapping data representing parcel boundaries. AGRC has parcel data for all 29 counties. Some counties are more complete than others. In addition to the polygon geometry the attributes <code>PARCEL ID</code>, <code>PARCEL ADDRESS</code>, <code>PARCELS CITY</code>, <code>PARCEL ZIP CODE</code>, <code>OWNERSHIP TYPE</code>, and <code>RECORDER</code> contact are maintained in the Basic Parcel dataset when available. Users should be aware the owner type field <code>OWN_TYPE</code> in the parcel polygons is a very generalized ownership type (Federal, Private, State, Tribal). It is populated with the value of the <code>OWNER</code> field where the parcel's centroid intersects the <em>CADASTRE.LandOwnership</em> polygon layer." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="UtahParcels">Utah Basic Parcels</h3>
-  </div>
-</div>
-<div class="grid__col grid__col--12-of-12 package-content">
-  <p>
-    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/parcels.png" | prepend: site.baseurl }}" alt="Parcels" />
-    CADASTRE.Parcels_'County name' are datasets for cartography and approximate boundary identification.
-  </p>
-  <p>The 2005, HB113 was passed requiring the AGRC Cadastral Surveyor to work with local government to create a parcel database for the State. 63F-1-506.(3) (c) coordinate with county recorders and surveyors to create a statewide parcel layer in the State Geographic Information Database (SGID) containing parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information. The SGID contains <a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7meVNnTThOSzVUeEk" target="_blank">county parcel data</a> from each of the 29 counties in Utah and is updated as new data is provided from the data steward in each county.
-  Parcel polygons contain attributes unique to each parcel such as a unique parcel number (PARCEL_ID), address for the parcel (PARCEL_ADD, PARCEL_CITY, PARCEL_ZIP),  a generalized land ownership designation (OWN_TYPE), and the phone number for the county recorders office (RECORDER).</p>
-  <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-  <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br>
-  The parcel datasets are maintained by AGRC in partnership with local governments.</p>
-  <p>Questions can be directed to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.<br>
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="UtahLIRParcels">Utah Land Information Record Parcels</h3>
+    <h3 id="UtahParcels">
+      <a href="#UtahParcels" class="anchor--link">Utah Basic Parcels</a>
+    </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/parcels.png" | prepend: site.baseurl }}" alt="Parcels" />
-      CADASTRE.Parcels_'County name'_LIR are datasets for cartography and approximate boundary identification.
-    </p>
-    <p>The Land Information Records (LIR) work group organized by the Governor’s Office of Management and Budget
-      has facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety,
-      economic development, transportation, planning and the provisions of public services. In May of 2016, the
-      Land Information Records work group released its <a href="{{ "/work-group-recommends-expanded-gis-parcel-sharing/" | prepend: site.baseurl }}">recommendations for sharing an enhanced set of tax parcel GIS data</a>.
-      A <a href="{{ "/data-schema-released-for-expanded-gis-parcel-sharing/" | prepend: site.baseurl }}">draft of the tax year parcel GIS data schema</a> is
-      available.
-    </p>
-    <p>Tax year parcel GIS data will be updated annually with the finalized year-end tax assessment data that is
-      completed by May 22nd each year then submitted to the Automated Geographic Reference Center (AGRC) for
-      loading into SDE by July 1st each year.
-    </p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83.
-    </p>
-    <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged
-      to attribute content to: State of Utah, SGID.
-    </p>
-    <p>
-      The parcel datasets are maintained by AGRC in partnership with local governments.
-    </p>
-    <p>Questions can be directed to <a href="mailto:sfernandez@utah.gov">Sean Fernandez</a> (801.209.9359) at AGRC.</p>
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/parcels.png" | prepend: site.baseurl }}" alt="Parcels" />
+    <p>CADASTRE.Parcels_{County name} are datasets for cartography and approximate boundary identification.</p>
+    <p>In 2005, HB113 was passed requiring the AGRC Cadastral Surveyor to work with local government to create a parcel database for the State. <p><blockquote>63F-1-506.(3) (c) coordinate with county recorders and surveyors to create a statewide parcel layer in the State Geographic Information Database (SGID) containing parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information.</blockquote></p>
+    <p>The SGID contains county parcel data for each of the 29 counties in Utah and is updated as new data is provided from the data steward in each county.</p>
+    <p>Parcel polygons contain attributes unique to each parcel such as a unique parcel number (<code>PARCEL_ID</code>), address for the parcel (<code>PARCEL_ADD</code>, <code>PARCEL_CITY</code>, <code>PARCEL_ZIP</code>), a generalized land ownership designation (<code>OWN_TYPE</code>), and the phone number for the county recorders office (<code>RECORDER</code>).</p>
+    <p>This data when possible is updated twice a year with the newest data available from the counties. Some counties along the Wasatch Front are updated monthly when possible.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
+    <p>Questions can be directed to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
       <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="UtahParcels-downloads">Downloads</h5>
+      <h5 id="UtahParcels-dlist">Downloads</h5>
     </div>
-    <div>
-      <table>
+    <div class="panel-content">
+      <table id="UtahParcels-dlist-table">
         <tr>
-          <th class="text-left">County</th><th class="text-left">Basic Parcels</th><th class="text-left">Tax Year Parcels</th>
+          <th class="text-left">County</th>
+          <th class="text-left">Basic Parcels</th>
+          <th class="text-left">LIR Parcels</th>
         </tr>
         <tr>
           <td><a title="county website" href="http://beaver.utah.gov/" target="_blank">Beaver</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7meGdBcUdJM0hZX3c" target="_blank">Aug. 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdElCWXQ4Y0s3ekk" target="_blank">2017 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7meGdBcUdJM0hZX3c">August 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdElCWXQ4Y0s3ekk">2017</a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="http://gis.boxeldercounty.org/MobileApps/ParcelFinder/s2.html?app=apps2/Finder" target="_blank">Box Elder</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdlg3Z0NETXdQRHM" target="_blank">April 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbXdIVC1FZGF2bzA" target="_blank">2017 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdlg3Z0NETXdQRHM">April 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbXdIVC1FZGF2bzA">2017</a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="https://www.cachecounty.org/gis/property-/-parcel-viewer.html" target="_blank">Cache</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7meUVJTUpPbTFya1U" target="_blank">Feb. 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMXRaQVM3V0o1Q1E" target="_blank">2017 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7meUVJTUpPbTFya1U">February 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMXRaQVM3V0o1Q1E">2017</a></td>
         </tr>
         <tr>
           <td><a title="county web app" href="http://maps.carbon.utah.gov/flexviewer/CarbonCountyGeneralMap/" target="_blank">Carbon</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZWZHakFvQjVJSEk" target="_blank">March 2016</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mYnJCb0VaQTRWWFk" target="_blank">2017 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZWZHakFvQjVJSEk">March 2016</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mYnJCb0VaQTRWWFk">2017</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.daggettcounty.org/" target="_blank">Daggett</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7md1FYZDkzWjZkZEE" target="_blank">July 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maEhrM1RDdGJjczA" target="_blank">2017 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7md1FYZDkzWjZkZEE">July 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maEhrM1RDdGJjczA">2017</a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="http://www.co.davis.ut.us/recorder/property-search" target="_blank">Davis</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUFMxN1MySU5kMVE" target="_blank">July 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR2Q3Q2hGMGRiM2s" target="_blank">2017 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUFMxN1MySU5kMVE">July 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR2Q3Q2hGMGRiM2s">2017</a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="http://maps.duchesne.utah.gov/flexviewers/Parcels/default.htm" target="_blank">Duchesne</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mYnIzNjYzZEl5Q2s" target="_blank">July 2015</a></td>
-          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Duchesne_LIR/" target="_blank"></a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mYnIzNjYzZEl5Q2s">July 2015</a></td>
+          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Duchesne_LIR/"></a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.emerycounty.com/" target="_blank">Emery</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZDJtd1Rub0l6N00" target="_blank">Aug. 2017</a></td>
-          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Emery_LIR/" target="_blank"></a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZDJtd1Rub0l6N00">August 2017</a></td>
+          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Emery_LIR/"></a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://garfield.utah.gov/" target="_blank">Garfield</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSEN0RTJVT3VBUUE" target="_blank">Feb. 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mYUQ0eFg2QVJwSW8" target="_blank">2017 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSEN0RTJVT3VBUUE">February 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mYUQ0eFg2QVJwSW8">2017</a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="http://www.grandcountyutah.net/790/Parcel-Viewer-Map" target="_blank">Grand</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbmp0UGNxbFRkT3c" target="_blank">July 2015</a></td>
-          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Grand_LIR/" target="_blank"></a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbmp0UGNxbFRkT3c">July 2015</a></td>
+          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Grand_LIR/"></a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="https://irongis.maps.arcgis.com/apps/webappviewer/index.html?id=3d8b2640346f452394cb7a9ced8f461c" target="_blank">Iron</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVV9oQWpqS2FxN3c" target="_blank">Oct. 2016</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSXVSaG1QR21XenM" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVV9oQWpqS2FxN3c">October 2016</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSXVSaG1QR21XenM">2016</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.co.juab.ut.us/" target="_blank">Juab</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcm5RaFRrV0lPcjg" target="_blank">May 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUWZUOVVDSzJwM3c" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcm5RaFRrV0lPcjg">May 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUWZUOVVDSzJwM3c">2016</a></td>
         </tr>
         <tr>
           <td><a title="county parcel search" href="http://eagleweb.kane.utah.gov/eaglesoftware/web/login.jsp" target="_blank">Kane</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUUt2dzV4SmN0WHc" target="_blank">Aug. 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcWtOZTJzUmdLTTA" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUUt2dzV4SmN0WHc">August 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcWtOZTJzUmdLTTA">2016</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.millardcounty.org/" target="_blank">Millard</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mU2FRLWs1eUZxMnM" target="_blank">July 2016</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mYm9ueWxzS0ZkM2s" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mU2FRLWs1eUZxMnM">July 2016</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mYm9ueWxzS0ZkM2s">2016</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.morgan-county.net/" target="_blank">Morgan</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUXpzSUNOdTZDT3M" target="_blank">June 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV3h1c3NWOW9UMVU" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUXpzSUNOdTZDT3M">June 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV3h1c3NWOW9UMVU">2016</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.piute.org/" target="_blank">Piute</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mOWcxOGhyTFB4SGc" target="_blank">March 2017</a></td>
-          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Piute_LIR/" target="_blank"></a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mOWcxOGhyTFB4SGc">March 2017</a></td>
+          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Piute_LIR/"></a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.richcountyut.org/" target="_blank">Rich</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMWYtZFBLXzFHT0U" target="_blank">March 2014</a></td>
-          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Rich_LIR/" target="_blank"></a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMWYtZFBLXzFHT0U">March 2014</a></td>
+          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Rich_LIR/"></a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="http://slco.org/assessor/new/query/intropage.cfm" target="_blank">Salt Lake</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb0UtNFlaWjZ1YlE" target="_blank">Aug. 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mT3BVTnpyQzNmdFk" target="_blank">2017 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb0UtNFlaWjZ1YlE">August 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mT3BVTnpyQzNmdFk">2017</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.sanjuancounty.org/" target="_blank">San Juan</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZXhUcEZsOEdOSWM" target="_blank">May 2014</a></td>
-          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SanJuan_LIR/" target="_blank"></a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZXhUcEZsOEdOSWM">May 2014</a></td>
+          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_SanJuan_LIR/"></a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://sanpete.com/" target="_blank">Sanpete</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mNVlCanlhTE1Ya2c" target="_blank">Oct. 2015</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVU03RTJwdUxPNnM" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mNVlCanlhTE1Ya2c">October 2015</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVU03RTJwdUxPNnM">2016</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.sevierutah.net/" target="_blank">Sevier</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR3R0VGRQdDZkems" target="_blank">June 2011</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR3R0VGRQdDZkems" target="_blank"></a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR3R0VGRQdDZkems">June 2011</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR3R0VGRQdDZkems"></a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="http://maps.summitcounty.org/flexviewers/countymap/" target="_blank">Summit</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUHVMS2RxVjhrdmM" target="_blank">Aug. 2016</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mc0xJZGtCMWpsNWc" target="_blank">2017 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUHVMS2RxVjhrdmM">August 2016</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mc0xJZGtCMWpsNWc">2017</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.co.tooele.ut.us/" target="_blank">Tooele</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSkpPakNOeWZ6Skk" target="_blank">July 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRDNrVFhmTGhzNVk" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSkpPakNOeWZ6Skk">July 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRDNrVFhmTGhzNVk">2016</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.co.uintah.ut.us/" target="_blank">Uintah</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7malh2WEljN2N4aDg" target="_blank">July 2015</a></td>
-          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Uintah_LIR/" target="_blank"></a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7malh2WEljN2N4aDg">July 2015</a></td>
+          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Uintah_LIR/"></a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="http://maps4.utahcounty.gov/ParcelMap/ParcelMap.html" target="_blank">Utah</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWlV1M21QeW5Bd1k" target="_blank">Aug. 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVFk3cGpTY0JaMEk" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWlV1M21QeW5Bd1k">August 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVFk3cGpTY0JaMEk">2016</a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="https://maps.wasatch.utah.gov/wcgis/apps/webappviewer/index.html?id=de1c6e990c764c3fa470c26233859706" target="_blank">Wasatch</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mTzFNaXROcnVsYm8" target="_blank">May 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWmNWQUtaVUVkWm8" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mTzFNaXROcnVsYm8">May 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWmNWQUtaVUVkWm8">2016</a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="http://geo.washco.utah.gov/Html5Viewer/?viewer=RecordersOffice" target="_blank">Washington</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZFZUZ0NoSl9MalE" target="_blank">Aug. 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbHJQQnBpWWt0eWM" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZFZUZ0NoSl9MalE">August 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbHJQQnBpWWt0eWM">2016</a></td>
         </tr>
         <tr>
           <td><a title="county website" href="http://www.waynecountyutah.org/" target="_blank">Wayne</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbVpDa1JFbDZDeGM" target="_blank">July 2010</a></td>
-          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Wayne_LIR/" target="_blank"></a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbVpDa1JFbDZDeGM">July 2010</a></td>
+          <td><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/UnpackagedData/Parcels_Wayne_LIR/"></a></td>
         </tr>
         <tr>
           <td><a title="county parcel web app" href="http://www3.co.weber.ut.us/psearch/" target="_blank">Weber</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7meWRjQzdRTFh1VHM" target="_blank">Aug. 2017</a></td>
-          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMnZKMWdIbXZvQWM" target="_blank">2016 LIR</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7meWRjQzdRTFh1VHM">August 2017</a></td>
+          <td><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMnZKMWdIbXZvQWM">2016</a></td>
         </tr>
       </table>
+      <script>
+        document.getElementById('UtahParcels-dlist-table').addEventListener('click', function(evt) {
+          if (evt.target.tagName.toLowerCase() === 'a') {
+            ga('send', {
+              hitType: 'event',
+              eventCategory: 'Data',
+              eventAction: 'SpecificDownload',
+              eventLabel: 'Parcels',
+              transport: 'beacon'
+            });
+          }
+        });
+      </script>
     </div>
   </div>
   <div class="grid__col grid__col--1-of-2">
@@ -258,73 +216,63 @@ categories: []
       <h5 id="UtahParcels-updates">Updates</h5>
     </div>
     <div class="panel-content">
-      <p>
-        This data when possible is updated twice a year with the newest data available from the counties.
-        Some counties along the Wasatch Front are updated monthly when possible.
-      </p>
-      <p>Recent Basic Parcels updates:</p>
-      <ul>
-        <li>August 2017 - Beaver, Cache, Emery, Kane, Salt Lake, Utah, Washington, Weber
-        <li>July 2017 - Daggett, Davis, Salt Lake, Tooele, Utah, Washington, Weber
-        <li>June 2017 - Davis, Morgan, Salt Lake, Utah, Washington, Weber
-        <li>May 2017 - Davis, Juab, Kane, Salt Lake, Utah, Wasatch, Washington, Weber
-        <li>April 2017 - Box Elder, Davis, Kane, Salt Lake, Utah, Washington, Weber
-        <li>March 2017 - Davis, Piute, Salt Lake, Utah, Washington, Weber
-        <li>February 2017 - Utah County, Salt Lake County, Davis County, Cache County, Morgan County, Tooele County, Weber County, Garfield County
-        <li>January 2017 - Utah County, Salt Lake County, Washington County
-        <li>December 2016 - Utah County, Salt Lake County, Washington County, Davis County, Weber County
-        <li>November 2016 - Utah County, Salt Lake County, Washington County, Davis County, Morgan County
-        <li>October 2016 - Utah County, Salt Lake County, Washington County, Beaver County, Tooele County, Daggett County, Iron County, Wasatch County
-        <li>September 2016 - Utah County, Salt Lake County, Weber County, Washington County, Kane County, Box Elder County, Iron County, Juab County, Summit County, Tooele County
-        <li>August 2016 - Utah County, Salt Lake County, Washington County, Cache County
-        <li>July 2016 - Utah County, Salt Lake County, Washington County, Millard County
-        <li>June 2016 - Utah County, Salt Lake County, Washington County, Daggett County, Garfield County
-        <li>May 2016 - Utah County, Salt Lake County, Washington County, Davis County, Weber County
-        <li>April 2016 - Utah County, Salt Lake County, Washington County, Wasatch County
-        <li>March 2016 - Utah County, Salt Lake County, Washington County, Carbon County
-        <li>February 2016 - Utah County, Salt Lake County, Washington County
-        <li>January 2016 - Utah County, Salt Lake County
-        <li>December 2015 - Utah County, Salt Lake County, Washington County, Tooele County, Kane County
-        <li>November 2015 - Utah County, Salt Lake County, Washington County, Davis County, Piute County
-        <li>October 2015 - Utah County, Salt Lake County, Washington County, Weber County, Sanpete County
-        <li>September 2015 - Utah County, Salt Lake County, Washington County, Davis County, Kane County
-        <li>July 2015 - Utah County, Salt Lake County, Washington County, Box Elder County, Davis County, Juab County, Grand County, Tooele County, Uintah County, Duchesne County
-        <li>June 2015 - Utah County, Salt Lake County, Washington County, Morgan County, Davis County, Wasatch County, Kane County, Weber County, Cache County
-        <li>May 2015 - Utah County, Salt Lake County, Washington County, Davis County
-        <li>March 2015 - Utah County, Salt Lake County, Washington County
-        <li>February 2015 - Utah County, Salt Lake County, Washington County, Weber County, Davis County, Kane County
-        <li>January 2015 - Utah County, Salt Lake County, Washington County, Davis County
-        <li>November 2014 - Utah County, Salt Lake County, Davis County, Washington County
-        <li>October 2014 - Utah County, Salt Lake County, Davis County, Juab County, Garfield County
-        <li>September 2014 - Utah County, Salt Lake County
-        <li>August 2014 - Utah County, Salt Lake County
-        <li>July 2014 - Utah County, Salt Lake County, Washington County, Kane County, Carbon County
-        <li>June 2014 - Utah County, Salt Lake County, Washington County
-        <li>May 2014 - Utah County, Salt Lake County, Weber County, San Juan County
-        <li>April 2014 - Utah County, Salt Lake County, Emery County, Millard County
-        <li>March 2014 - Utah County, Salt Lake County, Davis County, Rich County
-        <li>February 2014 - Salt Lake County, Utah County, Daggett County, Uintah County, Cache County, Carbon County, Wasatch County, Washington County, Weber County, Duchesne County, Box Elder County, Summit County, Beaver County, Tooele County, Piute County
-        <li>January 2014 - Salt Lake County, Utah County, Morgan County, Iron County
-        <li>December 2013 - Salt Lake County, Utah County
-        <li>November 2013 - Salt Lake County, Utah County, Kane County
-        <li>October 2013 - Salt Lake County, Utah County, Juab County
-        <li>September 2013 - Salt Lake County, Utah County
-        <li>August 2013 - Salt Lake County, Utah County
-        <li>July 2013 - Salt Lake County, Utah County
-        <li>June 2013 - Salt Lake County, Utah County
-        <li>May 2013 - Salt Lake County
-        <li>April 2013 - Utah County, Salt Lake County, Cache County, Garfield County, Kane County
-        <li>November 2012 - Utah County, Salt Lake County
-        <li>October 2012 - Salt Lake County
-        <li>September 2012 - Salt Lake County
-        <li>August 2012 - Utah County
-        <li>July 2012 - Salt Lake County
-        <li>June 2012 - Salt Lake County, Kane County, Washington County, Utah County, Weber County, Cache County
-        <li>March 2012
-        <li>August 2011
-        <li>December 2010
-        <li>July 2010
+      <ul class="dotless no-padding">
+        <li><strong>August 2017</strong> - Beaver, Cache, Emery, Kane, Salt Lake, Utah, Washington, Weber
+        <li><strong>July 2017</strong> - Daggett, Davis, Salt Lake, Tooele, Utah, Washington, Weber
+        <li><strong>June 2017</strong> - Davis, Morgan, Salt Lake, Utah, Washington, Weber
+        <li><strong>May 2017</strong> - Davis, Juab, Kane, Salt Lake, Utah, Wasatch, Washington, Weber
+        <li><strong>April 2017</strong> - Box Elder, Davis, Kane, Salt Lake, Utah, Washington, Weber
+        <li><strong>March 2017</strong> - Davis, Piute, Salt Lake, Utah, Washington, Weber
+        <li><strong>February 2017</strong> - Utah County, Salt Lake County, Davis County, Cache County, Morgan County, Tooele County, Weber County, Garfield County
+        <li><strong>January 2017</strong> - Utah County, Salt Lake County, Washington County
+        <li><strong>December 2016</strong> - Utah County, Salt Lake County, Washington County, Davis County, Weber County
+        <li><strong>November 2016</strong> - Utah County, Salt Lake County, Washington County, Davis County, Morgan County
+        <li><strong>October 2016</strong> - Utah County, Salt Lake County, Washington County, Beaver County, Tooele County, Daggett County, Iron County, Wasatch County
+        <li><strong>September 2016</strong> - Utah County, Salt Lake County, Weber County, Washington County, Kane County, Box Elder County, Iron County, Juab County, Summit County, Tooele County
+        <li><strong>August 2016</strong> - Utah County, Salt Lake County, Washington County, Cache County
+        <li><strong>July 2016</strong> - Utah County, Salt Lake County, Washington County, Millard County
+        <li><strong>June 2016</strong> - Utah County, Salt Lake County, Washington County, Daggett County, Garfield County
+        <li><strong>May 2016</strong> - Utah County, Salt Lake County, Washington County, Davis County, Weber County
+        <li><strong>April 2016</strong> - Utah County, Salt Lake County, Washington County, Wasatch County
+        <li><strong>March 2016</strong> - Utah County, Salt Lake County, Washington County, Carbon County
+        <li><strong>February 2016</strong> - Utah County, Salt Lake County, Washington County
+        <li><strong>January 2016</strong> - Utah County, Salt Lake County
       </ul>
+    </div>
+  </div>
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UtahLIRParcels">
+      <a href="#UtahLIRParcels" class="anchor--link">Utah Land Information Record Parcels</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/parcels.png" | prepend: site.baseurl }}" alt="Parcels" />
+    <p>CADASTRE.Parcels_{County name}_LIR are datasets for cartography and approximate boundary identification.</p>
+    <p>The Land Information Record Parcels (LIR) contain GIS mapping data representing parcel boundaries and county tax roll attributes. AGRC has Land Information Record Parcels for some of the counties in Utah. Since each County has its own database and process for maintaining tax year assessment information, users should expect some variability in each County's LIR dataset.</p>
+    <p>In addition to the polygon geometry the attributes <code>COUNTY_NAME</code>, <code>COUNTY_ID</code>, <code>ASSESSOR_SRC</code>, <code>BOUNDARY_SRC</code>, <code>DISCLAIMER</code>, <code>CURRENT_ASOF</code>, <code>PARCEL_ID</code>, <code>SERIAL_NUM</code>, <code>PARCEL_ADD</code>, <code>PARCEL_CITY</code>, <code>TAXEXEMPT_TYPE</code>, <code>TAX_DISTRICT</code>, <code>TOTAL_MKT_VALUE</code>, <code>LAND_MKT_VALUE</code>, <code>PARCEL_ACRES</code>, <code>PROP_CLASS</code>, <code>PRIMARY_RES</code>, <code>HOUSE_CNT</code>, <code>SUBDIV_NAME</code>, <code>BLDG_SQFT</code>, <code>BLDG_SQFT_INFO</code>, <code>FLOORS_CNT</code>, <code>FLOORS_INFO</code>, <code>BUILT_YR</code>, <code>EFFBUILT_YR</code>, <code>CONST_MATERIAL</code> are maintained in the Land Information Record Parcels dataset when available.</p>
+    <p>The Land Information Records (LIR) work group organized by the Governor’s Office of Management and Budget has facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety, economic development, transportation, planning and the provisions of public services. In May of 2016, the Land Information Records work group released its <a href="{{ "/work-group-recommends-expanded-gis-parcel-sharing/" | prepend: site.baseurl }}">recommendations for sharing an enhanced set of tax parcel GIS data</a>. A <a href="{{ "/data-schema-released-for-expanded-gis-parcel-sharing/" | prepend: site.baseurl }}">draft of the tax year parcel GIS data schema</a> is available. </p>
+    <p>Tax year parcel GIS data will be updated annually with the finalized year-end tax assessment data that is completed by May 22nd each year then submitted to the Automated Geographic Reference Center (AGRC) for loading into SDE by July 1st each year. </p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83. There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
+    <p>Questions can be directed to <a href="mailto:sfernandez@utah.gov">Sean Fernandez</a> (801.209.9359) at AGRC.</p>
+  </div>
+  <div class="grid__col grid__col--1-of-2">
+    <div class="panel">
+      <i class="fa fa-pull-right fa-download fa-2x"></i>
+      <h5 id="UtaLIRhParcels-downloads">Downloads</h5>
+    </div>
+    <div class="panel-content">
+      <p>Reference the table above.</p>
+    </div>
+  </div>
+  <div class="grid__col grid__col--1-of-2">
+    <div class="panel update">
+      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
+      <h5 id="UtahLIRParcels-updates">Updates</h5>
+    </div>
+    <div class="panel-content">
+      <p>This data, when possible, is updated annually.</p>
     </div>
   </div>
 </div>
