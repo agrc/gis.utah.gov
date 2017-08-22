@@ -20,7 +20,7 @@ categories:
 The major areas impacted by change in this version are shown on the map image at right (click map to enlarge) and include adjustments to the locations of corner points. Section boundaries impacted are shown in red on the map and areas where quarter section divisions were impacted are shown in gray.</p>
 <p><strong>Download Options<br />
 </strong><br />
-GCDB v2.0, as provided to AGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is the first download option on this <a href="{{ "/data/sgid-cadastre/plss/" | prepend: site.baseurl }}"><strong>web page</strong></a>. </p>
+GCDB v2.0, as provided to AGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is the first download option on this <a href="{{ "/data/cadastre/plss/" | prepend: site.baseurl }}"><strong>web page</strong></a>. </p>
 <p>AGRC is also providing derivative versions of GCDB v2.0 that attempt to enhance the usability of this data and correct for a small number of known errors in the latest release. AGRC derived GIS layers that have been updated in the SGID are:</p>
 <ul>
 <li>SGID10.Cadastre.PLSSTownships_GCDB</li>
@@ -31,7 +31,7 @@ GCDB v2.0, as provided to AGRC by the Utah state office of the BLM, can be downl
 <li>SGID10.Cadastre.MeanderedWater_GCDB (available on request)</li>
 <li>SGID10.Cadastre.MetadataGlance_GCDB (available on request)</li>
 </ul>
-<p> <a href="{{ "/data/sgid-cadastre/plss/" | prepend: site.baseurl }}"><strong>Click here for more info on, and to download the data layers listed above.</strong></a> </p>
+<p> <a href="{{ "/data/cadastre/plss/" | prepend: site.baseurl }}"><strong>Click here for more info on, and to download the data layers listed above.</strong></a> </p>
 <p>While GCDB v2.0 improves the PLSS GIS representation, there's still significant work to be accomplished. A partial list of process enhancements, that would greatly improve the product and its applications, are:</p>
 <ul>
 <li>Incorporation of the sizable collection of control points collected by local surveying efforts into the PLSS. Currently, this set of control points is published by AGRC (SGID.Cadastre.PLSSPoint_AGRC) has only been incorporated into the areas of interest identified by the BLM. An estimated 11,000 surveyed points have yet to be utilized within the current PLSS release.</li>

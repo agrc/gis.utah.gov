@@ -13,7 +13,7 @@ categories: []
 
 GPS signals in the Western US may be **jammed** due to testing conducted by the US Department of Defense. There are no references to the specific types of tests but the area of impact, dates, and times of the tests are listed below.
 
-Users of [TURN GPS]({{ "/data/sgid-cadastre/turn-gps/" | prepend: site.baseurl }}) and other GPS services are advised to pay careful attention for any GPS outages or anomalies on these dates and times. **Please try to schedule critical GPS usage on alternative dates**.
+Users of [TURN GPS]({{ "/data/cadastre/turn-gps/" | prepend: site.baseurl }}) and other GPS services are advised to pay careful attention for any GPS outages or anomalies on these dates and times. **Please try to schedule critical GPS usage on alternative dates**.
 
 ![GPS Jamming Affected Locations]({{ "/images/GPS_Jamming_Map.png" | prepend: site.baseurl }})
 
