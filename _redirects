@@ -41,3 +41,7 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/bioscience-overview/gap-landcover-classification-raster/                          /data/bioscience/gap-landcover-classification-raster/           301
 /data/bioscience/dominant-vegitation/                                                   /data/bioscience/                                               301
 /data/bioscience/gap-landcover-classification-raster/                                   /data/bioscience/                                               301
+/data/sgid-cadastre/parcels/                                                            /data/cadastre/parcels/                                         301
+/data/sgid-cadastre/plss/                                                               /data/cadastre/plss/                                            301
+/data/sgid-cadastre/land-ownership/                                                     /data/cadastre/land-ownership/                                  301
+/data/sgid-cadastre/turn-gps/                                                           /data/cadastre/turn-gps/                                        301

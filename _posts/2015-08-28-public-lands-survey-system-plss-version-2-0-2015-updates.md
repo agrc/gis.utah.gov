@@ -20,7 +20,7 @@ AGRC recently made available the latest version of the Geographic Coordinate Dat
 The Township areas impacted by change in this updated version are shown on the map and include adjustments to the locations of corner points. </p>
 <p><strong>Download Options</strong><br />
 GCDB v2.0, as provided to AGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for </p>
-<p>geospatial data. The CADNSDI data format is the first download option on this <a href="{{ "/data/sgid-cadastre/plss/" | prepend: site.baseurl }}"><strong>web page</strong></a>. </p>
+<p>geospatial data. The CADNSDI data format is the first download option on this <a href="{{ "/data/cadastre/plss/" | prepend: site.baseurl }}"><strong>web page</strong></a>. </p>
 <p>AGRC derived GIS layers that have been updated in the SGID are:</p>
 <ul>
 <li>SGID10.Cadastre.PLSSTownships_GCDB</li>
@@ -32,4 +32,4 @@ GCDB v2.0, as provided to AGRC by the Utah state office of the BLM, can be downl
 <li>SGID10.Cadastre.MetadataGlance_GCDB (available on request)</li>
 <li>SGID10.Cadastre.SpecialSurveys_GCDB (available on request)</li>
 </ul>
-<p> <a href="{{ "/data/sgid-cadastre/plss/" | prepend: site.baseurl }}"><strong>Click here for more info on, and to download the data layers listed above.</strong></a> </p>
+<p> <a href="{{ "/data/cadastre/plss/" | prepend: site.baseurl }}"><strong>Click here for more info on, and to download the data layers listed above.</strong></a> </p>
