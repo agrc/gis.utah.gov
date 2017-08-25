@@ -6,19 +6,42 @@ author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
 tags:
-  - data
+  - railroads
+  - transportation
 categories: []
 published: true
 date: 2011-11-23 13:15:10 -0700
+Railroads:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mb05pQjd6WFJzWXc"
+      label: "Railroads"
+  updates:
+    - "July, 2017"
 ---
-<div class="caption"><img title="map" src="{{ "/images/Railroad25k_256.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" /><p class="caption-text">Railroad Data</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb05pQjd6WFJzWXc" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4></h4>
-<p><strong>Data Type:</strong> GIS Map Data<br />
-<strong>Steward(s):</strong> AGRC, U.S. Geological Survey, Federal Railroad Administration (FRA)</p>
-<p><strong>Abstract:</strong><br />
-Transportation.Railroads protrays the location of railroads in the state of Utah derived from the most recent high resolution imagery available, including 1 foot resolution color imagery, NAIP, 1 meter resolution imagery, and 1 meter USGS DOQs. The dataset has been updated to include cartographic attribution for fine scale representations and also a differentiation between light, heavy, transit, and electrified tracks.</p>
-<p><i class="fa fa-globe"></i> Usage: This dataset was developed for many uses, including but not limited to, emergency planning.  There are no contraints or waranties with regard to the use of this data.<br />
-<i class="fa fa-calendar"></i> Last Update: July, 2017<br />
-<i class="fa fa-user"></i> Contact: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-<i class="fa fa-link"></i> Links: <a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_Railroads.html">FGDC Metadata</a></p>
+<div class="caption">
+  <img title="map" src="{{ '/images/Railroad25k_256.png' | prepend: site.baseurl }}" alt="railroad" />
+  <p class="caption-text">Railroad Data</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb05pQjd6WFJzWXc"
+  name="Railroads"
+  stewards="AGRC, U.S. Geological Survey, Federal Railroad Administration (FRA)"
+  abstract="Transportation.Railroads protrays the location of railroads in the state of Utah derived from the most recent high resolution imagery available, including 1 foot resolution color imagery, NAIP, 1 meter resolution imagery, and 1 meter USGS DOQs. The dataset has been updated to include cartographic attribution for fine scale representations and also a differentiation between light, heavy, transit, and electrified tracks."
+%}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Railroads">
+      <a href="#Railroads" class="anchor--link">Railroads</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>This dataset was developed for many uses, including but not limited to, emergency planning.  There are no constraints or warranties with regard to the use of this data.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li>
+        <a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_TRANSPORTATION_Railroads.html">FGDC Metadata</a>
+      </li>
+    </ul>
+  </div>
+  {% include packagedata.html name="Railroads"
+    info=page.Railroads %}
+</div>
