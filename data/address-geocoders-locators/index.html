@@ -2,7 +2,7 @@
 status: publish
 layout: page
 author:
-  display_name: Data Queen
+  display_name: DevTeam
   email: agrc@utah.gov
 tags:
   - address
@@ -10,27 +10,31 @@ tags:
   - locator
   - geocoding
 published: true
-date: 2012-08-15 16:08:29 -0600
+date: 2017-08-29 16:08:29 -0600
 title: Address Locators
 categories: []
+
 RoadsAddressLocatorZip:
   downloads:
     - url: "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_RoadsZip_COMPOSITE.zip"
       label: "Roads Address Locator (zip code as zone)"
   updates:
     - "Updates coincide with the Transportation.Roads update schedule. Updates to the Roads dataset are published every month with apporximately 5 counties' receiving detailed review during each update cycle."
+
 RoadsAddressLocatorQuadrant:
   downloads:
     - url: "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_RoadsAddrSys_COMPOSITE.zip"
       label: "Roads Address Locator (address quadrant system as zone)"
   updates:
     - "Updates coincide with the Transportation.Roads update schedule. Updates to the Roads dataset are published every month with apporximately 5 counties' receiving detailed review during each update cycle."
+
 AddressPointsLocatorZip:
   downloads:
     - url: "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_AddressPtsZip.zip"
       label: "Address Points Locator (zip code as zone)"
   updates:
     - "Updates coincide with the Location.AddressPoints update schedule. Updates the the Address points are published every month."
+
 AddressPointLocatorQuadrant:
   downloads:
     - url: "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/UnpackagedLocators/_Statewide/Locator_AddressPtsAddrSys.zip"
@@ -42,17 +46,31 @@ AddressPointLocatorQuadrant:
   <img src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="Address Locator"/>
   <p class="caption-text">Concept of an Address Locator</p>
 </div>
-<p><a id="package--download" href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ADDRESS/PackagedLocators/_Statewide/AddressLocators" class="button medium white">
+
+<p><a id="package--download" href="https://drive.google.com/a/utah.gov/uc?id=0B_Y2d5UmL8_zUUdDVzdBaTJIQ2c&export=download" class="button medium white">
   <span class="button-text">Download Address Locators</span></a></p>
-<h4 class="package--header">Address Locators</h4>
+
+<h4 class="package--header">Web API Address Locators</h4>
 <ul class="dotless no-padding">
   <li><strong>Data Type:</strong> Address Locator Service
   <li><strong>Steward(s):</strong> AGRC
   <li><strong>Web Application:</strong> <a href="https://api.mapserv.utah.gov">https://api.mapserv.utah.gov</a>
-  <li><strong>Abstract:</strong> Below are address locators for geocoding that reference the Location.AddressPoints and statewide Transportation.Roads feature classes. The input address data should be separated into two columns, standardized addresses and address quadrant system. Addresses should be formatted to include the house number, prefix direction, street, street type, suffix direction, and address quadrant system. AGRC offers a geocoding web service API to return geographic coordinates for Utah addresses using road centerline and/or address point reference data. This API can be accessed over http programmatically without the use of GIS-specific software, like from a web application. The geocoding API can also be used from within the ArcGIS software environment using a <a href='{{ site.baseurl }}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}' title='custom geoprocessing tool'>custom geoprocessing tool</a> that AGRC developed. The geocoding API uses 'front end' logic to resolve several common address standardization issues above and beyond what out-of-the-box geocoders handle. The ArcGIS locator files shown below are copies of the 'back end' of the service that are used directly by the geocoding API. They are provided for reference but will not work well in all settings. For geocoding, it is recommended that you use the <a href='{{ site.baseurl }}{% post_url 2013-04-02-using-the-mapserv-utah-gov-api-to-geocode-address %}' title='geocoding API web service'>geocoding API web service</a> (which works on the web traffic standard)
+  <li><strong>Abstract:</strong> AGRC offers a geocoding web service API to return geographic coordinates for Utah addresses using the SGID Transportation.Roads and Location.AddressPoints feature classes as reference data. This API can be accessed over http programmatically (with standard HTTP get request) without the use of GIS-specific software - such as a web application. This geocoding API uses 'front end' logic to resolve several common address standardization issues above and beyond what out-of-the-box geocoders handle. The downloadable ArcGIS Locator Packages described below are copies of the 'back end' services that are used directly by the geocoding API.
+  <li><strong>Using the API Locators:</strong> </br> For geocoding within a programming environment, it is recommended that you use the <a href='{{ site.baseurl }}{% post_url 2013-04-02-using-the-mapserv-utah-gov-api-to-geocode-address %}' title='geocoding API web service'>geocoding API web service</a>. </br> Within ArcGIS, the geocoding API can be accessed using our <a href='{{ site.baseurl }}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}' title='custom geoprocessing tool'</a>custom geoprocessing tool</a>. </br> Additionally, we offer a <a href="https://chrome.google.com/webstore/detail/utah-address-locator/nepmlneiknaeojhadbeodpaefenhjkek?utm_source=permalink"> Google Sheets Add-on (via Chrome browser)</a> that provides geocoding directly within a spreadsheet. This can be used by anyone with a utah.gov email address.
 </ul>
+
+<h4 class="package--header">ArcGIS Desktop Locators</h4>
+<ul class="dotless no-padding">
+  <li><strong>Data Type:</strong> ArcGIS Locator Package (.gcpk)
+  <li><strong>Steward(s):</strong> AGRC
+  <li><strong>Abstract:</strong> AGRC also offers traditional ArcGIS Desktop address locators. These are downloadable address locators that are built using the SGID Transportation.Roads and Location.AddressPoints feature classes as reference data. These are the 'back end' locators for the Web API address locators described above. They are rebuilt monthly based on the statweide roads update schedule.  
+</ul>
+
+
 <h4 class="package--header">Package Contents</h4>
 <p>The following data is available for download:</p>
+
+
 <script>
   document.getElementById('package--download').addEventListener('click', function() {
     ga('send', {
@@ -64,6 +82,7 @@ AddressPointLocatorQuadrant:
     });
   });
 </script>
+
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="RoadsAddressLocatorZip">
@@ -82,6 +101,7 @@ AddressPointLocatorQuadrant:
   {% include packagedata.html name="RoadsAddressLocatorZip"
   info=page.RoadsAddressLocatorZip %}
 </div>
+
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="RoadsAddressLocatorQuadrant">
@@ -100,6 +120,7 @@ AddressPointLocatorQuadrant:
     {% include packagedata.html name="RoadsAddressLocatorQuadrant"
     info=page.RoadsAddressLocatorQuadrant %}
 </div>
+
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="AddressPointsLocatorZip">
@@ -114,6 +135,7 @@ AddressPointLocatorQuadrant:
   {% include packagedata.html name="AddressPointsLocatorZip"
   info=page.AddressPointsLocatorZip %}
 </div>
+
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="AddressPointLocatorQuadrant">
