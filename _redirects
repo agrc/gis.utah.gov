@@ -27,6 +27,7 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/sgid-transportation/roads-system/                                                 /data/transportation/roads-system/                              301
 /data/sgid-transportation/street-network-analysis/                                      /data/transportation/street-network-analysis/                   301
 /data/sgid-transportation/transit/                                                      /data/transportation/transit/                                   301
+/data/sgid-indices/                                                                     /data/indices/                                                  301
 /data/sgid-indices/aerial-photography-indices/                                          /data/indices/aerial-photography-indices/                       301
 /data/sgid-indices/lidar-indices/                                                       /data/indices/lidar-indices/                                    301
 /data/sgid-indices/auto-correlated-dem-indices/                                         /data/indices/auto-correlated-dem-indices/                      301
@@ -41,6 +42,7 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/bioscience-overview/gap-landcover-classification-raster/                          /data/bioscience/gap-landcover-classification-raster/           301
 /data/bioscience/dominant-vegitation/                                                   /data/bioscience/                                               301
 /data/bioscience/gap-landcover-classification-raster/                                   /data/bioscience/                                               301
+/data/sgid-cadastre/                                                                    /data/cadastre/                                                 301
 /data/sgid-cadastre/parcels/                                                            /data/cadastre/parcels/                                         301
 /data/sgid-cadastre/plss/                                                               /data/cadastre/plss/                                            301
 /data/sgid-cadastre/land-ownership/                                                     /data/cadastre/land-ownership/                                  301
