@@ -4,20 +4,42 @@ layout: page
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
-tags: []
+tags:
+  - boundaries
+  - school districts
+  - schools
 published: true
 date: 2011-11-18 11:59:47 -0700
 title: School Districts
 categories: []
+SchoolDistricts:
+  downloads:
+    - url: "https://drive.google.com/open?id=0ByStJjVZ7c7mcHVjNkJUVXRYYXc"
+      label: "School Distrcts: Shapefile"
+    - url: "https://drive.google.com/open?id=0ByStJjVZ7c7mZlJaNDJNcEpWd28"
+      label: "School Distrcits: File Geodatabase"
+  updates:
+    - March, 2017
 ---
-<div class="caption"><img title="map" src="{{ "/images/SchoolDistricts_2015Web.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" /></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcnl5SzBzdmtfLXM" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>School Districts</h4>
-<p></strong></p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC</p>
-<p><strong>Abstract:</strong><br />
-Boundaries.SchoolDistricts represents external school district boundaries in Utah.</p>
-<p><i class="fa fa-calendar"></i> Last Update: March, 2017<br />
-<i class="fa fa-user"></i> Contact: General Utah GIS data inquiries: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-<i class="fa fa-link"></i> Links: <a href="https://www.arcgis.com/home/webmap/viewer.html?webmap=f776908620be4604bfa5f96f5df5ebcb">Utah School Map</a></p>
+<div class="caption">
+  <img title="map" src="{{ "/images/SchoolDistricts_2015Web.png" | prepend: site.baseurl }}" alt="School District Boundaries" />
+  <p class="caption-text">School District Boundaries</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcnl5SzBzdmtfLXM"
+name="School Districts"
+stewards="AGRC"
+webapp="https://www.arcgis.com/home/webmap/viewer.html?webmap=f776908620be4604bfa5f96f5df5ebcb"
+abstract="Boundaries.SchoolDistricts represents external school district boundaries in Utah." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="SchoolDistricts">
+      <a href="#SchoolDistricts" class="anchor--link">School District Boundaries</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>School Districts in Utah.</p>
+    <p>Questions can be direction to <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
+  </div>
+  {% include packagedata.html name="SchoolDistricts"
+  info=page.SchoolDistricts %}
+</div>

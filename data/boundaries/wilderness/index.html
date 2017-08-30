@@ -5,235 +5,164 @@ author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags:
-  - data
+  - wilderness
+  - boundaries
 published: true
 date: 2011-09-08 14:58:25 -0600
 title: Wilderness
 categories: []
+WildernessBoundaries:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mR1YtUnZGYTlZd2M&export=download"
+      label: "Wilderness (from LandOwnership): File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNWhwdmEtci1TNzA&export=download"
+      label: "Wilderness (from LandOwnership): Shapefile"
+  updates:
+    - This updates on the land ownership schedule weekly
+    - 2009 - Washington County wilderness areas created
+    - 2006 - BLM wilderness created in the Cedar Mountains (Tooele County)
+USForestServiceRoadlessInventory:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWksxMHFHRDZERWs&export=download"
+      label: "USFS Roadless Inventory: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7ma2VpWlcyWFY2REU&export=download"
+      label: "USFS Roadless Inventory: Shapefile"
+  updates:
+    - Updates to this dataset are published by the USFS
+BLMWildernessStudyAreas:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maW0tQUwySWdVclU&export=download"
+      label: "BLM WSAs: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRFR3d3lkQVBQeXM&export=download"
+      label: "BLM WSAs: Shapefile"
+  updates:
+    - 1991
+BLM1998WildernessReinventory:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRHJuNDAtMEx2Q2M&export=download"
+      label: "BLM 1998 Wilderness Reinventory: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mM0VxYmhnYXoxZUk&export=download"
+      label: "BLM 1998 Wilderness Reinventory: Shapefile"
+  updates:
+    - 2001
+BLMWildernessSuitability:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZDlIYlN3UVItVGc&export=download"
+      label: "BLM Wilderness Suitability: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWjlKbk00VWJLdWc&export=download"
+      label: "BLM Wilderness Suitability: Shapefile"
+  updates:
+    - 1991
 ---
-<div class="caption"><img src="{{ "/images/gallery/sgid/wilderness.jpg" | prepend: site.baseurl }}" alt="Wilderness Boundary" /><p class="caption-text">Wilderness Boundary</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV2JyekFMdHVqbEE" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>Wilderness, Roadless and WSA Boundaries</h4>
-<p></strong><br />
-<strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward(s): AGRC, BLM, U.S. Forest Service and SITLA</strong></p>
-<p><strong>Abstract:</strong><br />
-This dataset contains GIS mapping data pertaining to wilderness boundaries including BLM re-inventory and stability, WSAs, National Forest inventoried roadless areas and existing federally designated wilderness.</p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
+<div class="caption">
+  <img src="{{ "/images/gallery/sgid/wilderness.jpg" | prepend: site.baseurl }}" alt="Wilderness Boundary" />
+  <p class="caption-text">Wilderness Boundary</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV2JyekFMdHVqbEE"
+name="Wilderness, Roadless and WSA Boundaries"
+stewards="AGRC, BLM, U.S. Forest Service and SITLA"
+abstract="This dataset contains GIS mapping data pertaining to wilderness boundaries including BLM re-inventory and stability, WSAs, National Forest inventoried roadless areas and existing federally designated wilderness." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="WildernessBoundaries">Wilderness Boundaries</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/wilderness-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Wilderness" />Boundaries of federally designated wilderness on both Forest Service and BLM lands. These boundaries are a subset of the statewide <a href="{{ "/data/cadastre/land-ownership/" | prepend: site.baseurl }}">CADASTRE.LandOwnership</a> layer and are attributed as '"desig"="Wilderness"'
-Go find some wild places!<br />
-The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
-The dataset is maintained by the State Institutional Trust Lands (SITLA) in cooperation with the BLM and U.S. Forest service.</p>
-<p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.<br />
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="WildernessBoundaries">
+      <a href="#WildernessBoundaries" class="anchor--link">Wilderness Boundaries</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/wilderness-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Wilderness" />
+    <p>Boundaries of federally designated wilderness on both Forest Service and BLM lands. These boundaries are a subset of the statewide <a href="{{ "/data/cadastre/land-ownership/" | prepend: site.baseurl }}">CADASTRE.LandOwnership</a> layer and are attributed as <code>"desig"="Wilderness"</code>. Go find some wild places!<p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the State Institutional Trust Lands (SITLA) in cooperation with the BLM and U.S. Forest service.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_CADASTRE_LandOwnership.html">FGDC format metadata</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVFKOEJVZU91dWM">PLANNING.WildernessProp_BLM</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSXdpenlXNUNoZms">PLANNING.WildernessProp_HR1500</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdEtMN0RyQlhpbWc">PLANNING.WildernessProp_HR1745</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWDVRUHV4d0RmejQ">PLANNING.WildernessProp_NineCo1995</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZ1BpVVdyYjkzcm8">PLANNING.WildernessProp_RedRock</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mT2ZIVnc3NHQxMHc">PLANNING.WildernessProp_UWA1995</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSGVfcVE5bTh2VzA">PLANNING.WildernessProp_UWC1989</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUjJYQUotUVRvNUk">PLANNING.WildernessProp_UWC1995</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdjBzWUtfYU0xM00">PLANNING.WildernessProp_UWC2008</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mOWw0TWUzRHE2dkE">PLANNING.WildernessProp_WashingtonCo</a>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRXJDT182cjE3alU">PLANNING.WildernessProp_WDesert1999</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="WildernessBoundaries"
+  info=page.WildernessBoundaries %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="WildernessBoundaries-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mR1YtUnZGYTlZd2M&export=download">Wilderness (from LandOwnership): File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNWhwdmEtci1TNzA&export=download">Wilderness (from LandOwnership): Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_CADASTRE_LandOwnership.html">View FGDC format metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="WildernessBoundaries-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published by the USFS.</p>
-<p>Recent update summaries:</p>
-<p>2000?<br />
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="U.S.ForestServiceRoadlessInventory">U.S. Forest Service Roadless Inventory</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/fs_roadless-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Roadless" />BOUNDARIES.USFSRoadlessInventory dataset contains all the National Forest Inventoried Roadless Areas.
-The IRA data was originally submitted to GSTC (Geometronics Service and Technical Center) by all the national forests through their Regional Office for the Forest Service's Roadless Area Conservation Initiative. The data was consolidated at the GSTC and used the Draft Environment Impact Statement. Between the draft and final states of the Environmental Impact Statement, the data was updated by the forests to reflect any corrections to Inventories Roadless Areas that were based on their existing forest plan. The data was also supplemented to include Special Designated Area information and to include Inventories Roadless Areas with Special Designated Areas. The data was resubmitted to the GSTC on July 21, 2000 for consolidation and the completed coverage was used in the Roadless Area Conservation Final Environmental Impact Statement. IRAs are based on completed forest plans, forest plans in revision where the agency has established an inventory (this information should be available in Appendix C of most foret plans) or other assessments that are completed and adopted by the agency. RARE II information was used in cases where a forest does not have a more current roadless inventory that was established using RARE II information.<br />
-The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
-The dataset is maintained by the United States Forest Service.</p>
-<p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.<br />
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="USForestServiceRoadlessInventory">
+      <a href="#USForestServiceRoadlessInventory" class="anchor--link">U.S. Forest Service Roadless Inventory</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/fs_roadless-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Roadless" />
+    <p>BOUNDARIES.USFSRoadlessInventory dataset contains all the National Forest Inventoried Roadless Areas. The IRA data was originally submitted to GSTC (Geometronics Service and Technical Center) by all the national forests through their Regional Office for the Forest Service's Roadless Area Conservation Initiative. The data was consolidated at the GSTC and used the Draft Environment Impact Statement. Between the draft and final states of the Environmental Impact Statement, the data was updated by the forests to reflect any corrections to Inventories Roadless Areas that were based on their existing forest plan. The data was also supplemented to include Special Designated Area information and to include Inventories Roadless Areas with Special Designated Areas. The data was resubmitted to the GSTC on July 21, 2000 for consolidation and the completed coverage was used in the Roadless Area Conservation Final Environmental Impact Statement. IRAs are based on completed forest plans, forest plans in revision where the agency has established an inventory (this information should be available in Appendix C of most foret plans) or other assessments that are completed and adopted by the agency. RARE II information was used in cases where a forest does not have a more current roadless inventory that was established using RARE II information.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the United States Forest Service.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_USFSRoadlessInventory.html">FGDC format metadata</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="USForestServiceRoadlessInventory"
+  info=page.USForestServiceRoadlessInventory %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="U.S.ForestServiceRoadlessInventory-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWksxMHFHRDZERWs&export=download">USFS Roadless Inventory: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7ma2VpWlcyWFY2REU&export=download">USFS Roadless Inventory: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_USFSRoadlessInventory.html">View FGDC format metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="U.S.ForestServiceRoadlessInventory-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published by the USFS.</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="BLMWildernessStudyAreas(WSAs)">BLM Wilderness Study Areas (WSAs)</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/wsa-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="WSAs" />BOUNDARIES.Wilderness_BLMWSAs dataset contains all the BLM Wilderness Study Areas (WSAs).
-This data layer shows wilderness study areas (WSAs). It also identifies lands that are not WSAs but were administratively endorsed for wilderness by BLM in the 1991 wilderness study reports sent to the President and Congress. It also identifies acquired lands that are not WSAs, but are managed as if they were WSAs as a result of congressional direction.</p>
-<p>This layer is generally used for WSA identification and management, planning, and case-by-case actions where NEPA documentations is prepared.</p>
-<p>The data was digitized at the BLM Utah State Office from 1:24,000 USGS quadrangle paper maps using MOSS ADS. This data was also integrated with GCDB, Transportation, and Hydrography at 1:24,000 scale.</p>
-<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
-The dataset is maintained by the United States Forest Service.</p>
-<p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.<br />
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="BLMWildernessStudyAreas">BLM Wilderness Study Areas (WSAs)</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/wsa-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="WSAs" />
+    <p>BOUNDARIES.Wilderness_BLMWSAs dataset contains all the BLM Wilderness Study Areas (WSAs). It also identifies lands that are not WSAs but were administratively endorsed for wilderness by the BLM in the 1991 wilderness study reports sent to the President and Congress. It also identifies acquired lands that are not WSAs, but are managed as if they were WSAs as a result of congressional direction.</p>
+    <p>This layer is generally used for WSA identification and management, planning, and case-by-case actions where NEPA documentations is prepared. The data was digitized at the BLM Utah State Office from 1:24,000 USGS quadrangle paper maps using MOSS ADS. This data was also integrated with GCDB, Transportation, and Hydrography at 1:24,000 scale.</p>
+    <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the United States Forest Service.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Wilderness_BLMWSAs.html">FGDC format metadata</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="BLMWildernessStudyAreas"
+  info=page.BLMWildernessStudyAreas %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="BLM1998WildernessReinventory">
+      <a href="#BLM1998WildernessReinventory" class="anchor--link">BLM 1998 Wilderness Reinventory</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/wilderness_blm-reinventory-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Reinventory" />
+    <p>BOUNDARIES.Wilderness_BLM98Reinventory dataset represents the 1998 Bureau of Land Management (BLM) Wilderness Characteristics Inventory. It represents the BLM's inventory of areas that have Wilderness Characteristics. The data set is at 1:24,000. The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the United States Forest Service.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Wilderness_BLM98Reinventory.html">FGDC format metadata</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="BLM1998WildernessReinventory"
+  info=page.BLM1998WildernessReinventory %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="BLMWildernessStudyAreas(WSAs)-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maW0tQUwySWdVclU&export=download">BLM WSAs: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRFR3d3lkQVBQeXM&export=download">BLM WSAs: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Wilderness_BLMWSAs.html">View FGDC format metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="BLMWildernessStudyAreas(WSAs)-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published by the USFS.</p>
-<p>Recent update summaries:</p>
-<p>1991<br />
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="BLM1998WildernessReinventory">BLM 1998 Wilderness Reinventory</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/wilderness_blm-reinventory-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Reinventory" />BOUNDARIES.Wilderness_BLM98Reinventory dataset represents the 1998 Bureau of Land Management (BLM) Wilderness Characteristics Inventory.
-To show the 1998 Bureau of Land Management (BLM) Wilderness Characteristics Inventory.</p>
-<p>It represents the BLM's inventory of areas that have Wilderness Characteristics. The data set is at 1:24,000.<br />
-The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
-The dataset is maintained by the United States Forest Service.</p>
-<p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.<br />
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="BLMWildernessSuitability">
+      <a href="#BLMWildernessSuitability" class="anchor--link">BLM Wilderness Suitability</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/wilderness_blm-suitability-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Suitability" />
+    <p>BOUNDARIES.Wilderness_BLMSuitability data layer identifies which WSAs or portions of WSAs were recommended to Congress as suitable for wilderness designation. This layer is used as an historical reference only. This layer shows lands that was recomended to the President and Congress for wilderness designation as a result of the FLPMA Section 603 wilderness review mandate.</p>
+    <p>Do not use this layer for WSA identification and management, planning, or for case-by-case actions where National Environmental Policy ACT (NEPA) documentation is prepared.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the United States Forest Service.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Wilderness_BLMSuitability.html">FGDC format metadata</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.</p>
+  </div>
+  {% include packagedata.html name="BLMWildernessSuitability"
+  info=page.BLMWildernessSuitability %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="BLM1998WildernessReinventory-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRHJuNDAtMEx2Q2M&export=download">BLM 1998 Wilderness Reinventory: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mM0VxYmhnYXoxZUk&export=download">BLM 1998 Wilderness Reinventory: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Wilderness_BLM98Reinventory.html">View FGDC format metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="BLM1998WildernessReinventory-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published by the USFS.</p>
-<p>Recent update summaries:</p>
-<p>2001<br />
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="BLMWildernessSuitability">BLM Wilderness Suitability</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/wilderness_blm-suitability-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Suitability" />BOUNDARIES.Wilderness_BLMSuitability data layer identifies which WSAs or portions of WSAs were recommended to Congress as suitable for wilderness designation. This layer is used as an historical reference only.
-This layer shows lands that was recomended to the President and Congress for wilderness designation as a result of the FLPMA Section 603 wilderness review mandate.</p>
-<p>Do not use this layer for WSA identification and management, planning, or for case-by-case actions where National Environmental Policy ACT (NEPA) documentation is prepared.</p>
-<p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-<p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.<br />
-The dataset is maintained by the United States Forest Service.</p>
-<p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.<br />
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="BLMWildernessSuitability-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZDlIYlN3UVItVGc&export=download">BLM Wilderness Suitability: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWjlKbk00VWJLdWc&export=download">BLM Wilderness Suitability: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_BOUNDARIES_Wilderness_BLMSuitability.html">View FGDC format metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="BLMWildernessSuitability-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Updates to this dataset are published by the USFS.</p>
-<p>Recent update summaries:</p>
-<p>1991<br />
-
-        </div>
-    </div>
-    </div><p> <br />
-<strong>Other Wilderness Planning Datasets</strong></p>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVFKOEJVZU91dWM">PLANNING.WildernessProp_BLM</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSXdpenlXNUNoZms">PLANNING.WildernessProp_HR1500</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdEtMN0RyQlhpbWc">PLANNING.WildernessProp_HR1745</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mWDVRUHV4d0RmejQ">PLANNING.WildernessProp_NineCo1995</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZ1BpVVdyYjkzcm8">PLANNING.WildernessProp_RedRock</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mT2ZIVnc3NHQxMHc">PLANNING.WildernessProp_UWA1995</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSGVfcVE5bTh2VzA">PLANNING.WildernessProp_UWC1989</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUjJYQUotUVRvNUk">PLANNING.WildernessProp_UWC1995</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdjBzWUtfYU0xM00">PLANNING.WildernessProp_UWC2008</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mOWw0TWUzRHE2dkE">PLANNING.WildernessProp_WashingtonCo</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mRXJDT182cjE3alU">PLANNING.WildernessProp_WDesert1999</a></li>
-</ul>
