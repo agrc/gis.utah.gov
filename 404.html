@@ -30,7 +30,7 @@ permalink: /404.html
     <p class="shadow text-center">Try <a href="{{ "/search/" | prepend: site.baseurl }}">searching</a> for the page and notify us <a href="{{ site.github.repository_url }}/issues/new">by creating an issue</a>.</p>
 <div>
 <script>
-  window.onload(function (){
+  window.onload = function (){
     ga('send', {
       hitType: 'event',
       eventCategory: '404',
@@ -38,5 +38,5 @@ permalink: /404.html
       eventLabel: document.referrer,
       transport: 'beacon'
     });
-  });
+  };
 </script>
