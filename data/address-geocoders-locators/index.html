@@ -19,21 +19,21 @@ RoadsAddressLocatorPackage:
     - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7meXU3X0toSGVNbzA&export=download"
       label: "Roads Address Locator Package"
   updates:
-    - "Updates coincide with the Transportation.Roads update schedule. Updates to the Roads dataset are published every month with apporximately 5 counties receiving detailed review during each update cycle."
+    - "Updates coincide with SGID Transportation.Roads update. Updates to the Roads are published every month, with apporximately 9 counties receiving detailed review during each update cycle."
 
 AddressPointLocatorPackage:
   downloads:
     - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdTMzQ2xnLXd4M2s&export=download"
       label: "Address Points Address Locator Package"
   updates:
-    - "Updates coincide with the Location.AddressPoints update schedule. Updates to the Address Points are published every month."
+    - "Updates coincide with SGID Location.AddressPoints updates. Updates to the Address Points are published every month."
 
 CompositeLocatorPackage:
   downloads:
     - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZTJxTUc5LUFSX1U&export=download"
       label: "Composite Address Locator Package"
   updates:
-    - "Updates to this composite coincide with Roads and Address Points Address Locators."
+    - "Updates to this composite locator coincide with the Roads and Address Points address locators."
 ---
 <div class="caption">
   <img src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="Address Locator"/>
@@ -48,7 +48,7 @@ CompositeLocatorPackage:
   <li><strong>Data Type:</strong> Address Locator Service
   <li><strong>Steward(s):</strong> AGRC
   <li><strong>Web Application:</strong> <a href="https://api.mapserv.utah.gov">https://api.mapserv.utah.gov</a>
-  <li><strong>Abstract:</strong> AGRC offers a geocoding web service API to return geographic coordinates for Utah addresses using the SGID Transportation.Roads and Location.AddressPoints feature classes as reference data. This API can be accessed over http programmatically (with standard HTTP get request) without the use of GIS-specific software - such as a web application. This geocoding API uses 'front end' logic to resolve several common address standardization issues above and beyond what out-of-the-box geocoders handle. The downloadable ArcGIS Locator Packages described below are copies of the 'back end' services that are used directly by the geocoding API.
+  <li><strong>Abstract:</strong> AGRC offers a geocoding web service API to return geographic coordinates for Utah addresses using the SGID Transportation.Roads and Location.AddressPoints feature classes as reference data. This API can be accessed programmatically, over http (with standard get requests), without the use of GIS-specific software - such as a web application. This geocoding API uses 'front end' logic to resolve several common address standardization issues above and beyond what out-of-the-box geocoders handle. The downloadable ArcGIS locator packages described below are copies of the 'back end' reference data that are used directly by the geocoding API.
   <li><strong>Using the API Locators:</strong> </br> For geocoding within a programming environment, it is recommended that you use the <a href='{{ site.baseurl }}{% post_url 2013-04-02-using-the-mapserv-utah-gov-api-to-geocode-address %}' title='geocoding API web service'>geocoding API web service</a>. </br> Within ArcGIS, the geocoding API can be accessed using our <a href='{{ site.baseurl }}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}' title='custom geoprocessing tool'</a>custom geoprocessing tool</a>. </br> Additionally, we offer a <a href="https://chrome.google.com/webstore/detail/utah-address-locator/nepmlneiknaeojhadbeodpaefenhjkek?utm_source=permalink"> Google Sheets Add-on (via Chrome browser)</a> that provides geocoding directly within a spreadsheet. This can be used by anyone with a utah.gov email address.
 </ul>
 
@@ -56,10 +56,9 @@ CompositeLocatorPackage:
 <ul class="dotless no-padding">
   <li><strong>Data Type:</strong> ArcGIS Locator Package (.gcpk)
   <li><strong>Steward(s):</strong> AGRC
-  <li><strong>Abstract:</strong> AGRC also offers traditional ArcGIS Desktop address locators built using the SGID Transportation.Roads and Location.AddressPoints feature classes as reference data. These are the 'back end' locators for the Web API address locators described above - made available for download. We offer a roads locator and an address point locator, plus a composite. They are rebuilt monthly based on the current statewide roads <a href="{{
-  "/data/transportation/roads-system/" | prepend: site.baseurl }}">update schedule</a>.
-  <li><strong>Using the Desktop Locators:</strong> </br>
-  AGRC's locators are available for download via 'Locator Packages' (Locator Packages are not supported in ArcGIS 10.0 or earlier). These are portable files that do not require you to download the reference data: the data is packaged. Once downloaded, you simply 'Unpack' and it is ready for use. You can 'Unpack' the Locator Package in ArcCatalog by right-clicking on the package. Unpacking will always place the unpacked locator in your user profile ('..\My Documents\ArcGIS\Packages'). Alternatly, you can use ESRI's 'Extract Package' geoprocessing tool and specify an output location. You can also drag the .gcpk file into ArcMap and it will unpack.
+  <li><strong>Abstract:</strong> AGRC makes available our 'back end' ArcGIS address locators used by the Web API locator service, described above. Reference data for these locators are derived from the SGID Transportation.Roads and Location.AddressPoints feature classes. Creating derived data endables us to create more efficient address locators, as well as to be more inline with the NextGen 911 data standard. Read more about our process  <a href="{{site.baseurl}}{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">here</a>. AGRC's address locators are rebuilt monthly, synchronized with <a href="{{
+  "/data/transportation/roads-system/" | prepend: site.baseurl }}">SGID Roads updates</a>.
+  <li><strong>Using the Desktop Locators:</strong> </br> AGRC's locators are available for download as 'Locator Packages' (Locator Packages are not supported in ArcGIS 10.0 or earlier). You can download these packages individually below or all three (zipped) via the download button above. These are portable files that do not require you to download the reference data: the data is packaged. Once downloaded, you simply 'Unpack' and it is ready for use. You can 'Unpack' the Locator Package in ArcCatalog by right-clicking on the package. Unpacking will always place the unpacked locator in your user profile ('..\My Documents\ArcGIS\Packages'). Alternatly, you can use ESRI's 'Extract Package' tool and specify an output location. You can also drag the .gcpk file into ArcMap and it will unpack.
 </ul>
 
 <h4 class="package--header">Package Contents</h4>
@@ -85,11 +84,11 @@ CompositeLocatorPackage:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/CompZip90x90.png" | prepend: site.baseurl }}" alt="Address Locator" />
-    <p>AGRC_RoadsLocator is an ArcGIS 10 address locator that references the statewide Transportation.Roads feature class and uses the right and left zip code fields and/or the right and left address systems fields for zone. This address locator is built using an Alternate Names table, as recommeded in NextGen 911 model. For example, Redwood Road is aliased as both Highway 68 and 1700 West. <a href="{{site.baseurl}}{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">Click here</a> to read more about the underlying data for this locactor and how it was created.</p>
+    <p>AGRC_RoadsLocator is an ArcGIS 10 address locator that references the statewide Transportation.Roads feature class and uses the right and left zip code fields and/or the right and left address systems fields for zone. This address locator is built using an alternate names table, as recommeded in NextGen 911 model. For example, Redwood Road is aliased as both Highway 68 and 1700 West. To read more about the underlying data for this locactor and how it was created, see this <a href="{{site.baseurl}}{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">blog post</a>.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li>View <a href="{{"/data/transportation/roads-system/" | prepend: site.baseurl }}">recent updates</a> to the SGID Statewide Roads dataset.
-      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download</a> the File Geodatabase that was used to build this address locator. The dataset contains the roads' alternate names table as well as the <a href="{{site.baseurl}}{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">SGID-derived</a> roads feature class. The alternate names roads table can be joined back to the roads feature class via the GLOBALID_SGID   field.
+      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download the File Geodatabase</a> (to build your own locator) that was used to build this address locator. The dataset contains the roads' alternate names table as well as the <a href="{{site.baseurl}}{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">SGID-derived</a> roads feature class. This table can be joined back to the roads feature class via the GLOBALID_SGID field.
     </ul>
     <p>Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> (801.538.3665) at AGRC.</p>
   </div>
@@ -105,10 +104,10 @@ CompositeLocatorPackage:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/CompZone90x90.png" | prepend: site.baseurl }}" alt="Address Locator" />
-    <p>AGRC_AddressPointLocator is an ArcGIS 10 address locator that references the statewide Location.AddressPoints feature class and uses zip code or address system for zone. Geocoding match rates will imporve as the Location.AddressPoints feature class continues to be developed.</p>
+    <p>AGRC_AddressPointLocator is an ArcGIS 10 address locator that references the statewide Location.AddressPoints feature class and uses zip code and/or address system for zone. Geocoding match rates will imporve as the Location.AddressPoints feature class continues to be developed.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download</a> the File Geodatabase, which contains the address points' alternate names table used to build this address locator. This table can be joined back to the SGID Location.AddressPoints via the UTAddPtID field.
+      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download the File Geodatabase</a> (to build your own locator), which contains the address points' alternate names table used to build this address locator. This table can be joined back to the SGID Location.AddressPoints via the UTAddPtID field.
     </ul>
     <p>Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> (801.538.3665) at AGRC.</p>
   </div>
@@ -124,7 +123,7 @@ CompositeLocatorPackage:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/CompZip90x90.png" | prepend: site.baseurl }}" alt="Address Locator" />
-    <p>AGRC_CompositeLocator is an ArcGIS 10 composite address locator built from the AGRC_AddressPointLocator and the AGRC_RoadsLocator locators and uses zip code or address system for zone. These locators reference the Transportation.Roads and Location.AddressPoints feature classes.</p>
+    <p>AGRC_CompositeLocator is an ArcGIS 10 composite address locator built from the AGRC_AddressPointLocator and the AGRC_RoadsLocator locators and uses zip code and/or address system for zone. These locators reference the Transportation.Roads and Location.AddressPoints feature classes.</p>
     <p>Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> (801.538.3665) at AGRC.</p>
   </div>
   {% include packagedata.html name="CompositeLocatorPackage"
