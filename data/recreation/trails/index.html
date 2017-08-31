@@ -11,53 +11,49 @@ published: true
 date: 2014-11-24 13:55:24 -0700
 title: Trails
 categories: []
+Trails:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOGU0clVmV3Z5RFk&export=download"
+      label: "Trails: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWUY0eVpWemo4alk&export=download"
+      label: "Trails: Shapefile"
+  updates:
+    - June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah & Wasatch counties).
+    - 2015 additions from Emery County
+    - 2014 Revisions from National Park service
+    - This feature class was originally obtained in July 2014 and will be updated periodically.
+Trailheads:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mam9UOGxERzZYdDQ&export=download"
+      label: "Trailheads: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRVBNd2Z4U0RwN3M&export=download"
+      label: "Trailheads: Shapefile"
+  updates:
+    - This feature class was originally obtained in July 2014 and will be updated periodically.
 ---
 <div class="caption">
   <img src="{{ "/images/pcTrails.png" | prepend: site.baseurl }}" alt="Trails"/>
   <p class="caption-text">Trails Sample</p>
 </div>
-<p>
-  <a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUEJGbUN0cVZKOFE" class="button medium white">
-    <span class="button-text">Download Data Package</span>
-  </a>
-</p>
-<h4>Trails and Trailheads</h4>
-<p>
-  <br />
-  <strong>Data Type:</strong> GIS Data Layer<br />
-  <strong>Steward(s):</strong> AGRC<br />
-  <strong>Web Application:</strong> <a href="http://utah.maps.arcgis.com/apps/SimpleViewer/index.html?appid=f3337951e0034ebb889ecebcb3a45f39"><strong>Interactive Trails Map</strong></a>
-</p>
-<p>
-  <strong>Abstract:</strong>
-</p>
-<p>
-  Many Utah trails and trail access points have been obtained through the efforts of The Utah Office of Tourism and GOED from Orbital View, Inc. The acquired data is crowd-sourced and curated and is currently far from comprehensive, but it does contain over 20,000 miles of trails and 550 trail access points. AGRC has taken this trail data and integrated trails from the U.S. Forest Service and other entities, we have included many Community features associated with Community Parks and neighborhoods that provide opportunities for Active Transportation.</p>
-<p>
-  The trails dataset currently contains trail names, types, and some information on allowable modes of travel. Although it is very much ‘draft’ in nature, this dataset represents a starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data. </p>
-<p>
-  <strong>Data Content:</strong><br />The following data is available for download:
-</p>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUEJGbUN0cVZKOFE"
+name="Trails and Trailheads"
+stewards="AGRC"
+webapp="http://utah.maps.arcgis.com/apps/SimpleViewer/index.html?appid=f3337951e0034ebb889ecebcb3a45f39"
+abstract="Many Utah trails and trail access points have been obtained through the efforts of The Utah Office of Tourism and GOED from Orbital View, Inc. The acquired data is crowd-sourced and curated and is currently far from comprehensive, but it does contain over 20,000 miles of trails and 550 trail access points. AGRC has taken this trail data and integrated trails from the U.S. Forest Service and other entities, we have included many Community features associated with Community Parks and neighborhoods that provide opportunities for Active Transportation.<p></p>
+<p>The trails dataset currently contains trail names, types, and some information on allowable modes of travel. Although it is very much ‘draft’ in nature, this dataset represents a starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data. </p>" %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="Trails">Trails</h3>
+    <h3 id="Trails">
+      <a href="#Trails" class="anchor--link">Trails</a>
+    </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      <img class="productImage-Thumb" src="{{ "/images/trail.png" | prepend: site.baseurl }}" alt="Trails" />The trails map layer represents off-road recreational trail features and important road connections that augment Utah’s recreational trail network. This map layer features many of Utah’s recreational trails but is not yet complete.
-    </p>
-    <p>
-      Currently, the trails information primary depicts trails used by hiking and mountain biker users. It began with map data purchased from a private entity (Orbital View, Inc), for which full rights were purchased by the GOED Office of Outdoor Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah and Wasatch counties). Additional trails can be submitted to Utah AGRC for inclusion in this map layer.
-    </p>
-    <p>
-      The primary goal for the trails map layer is to assign a location and a name to each trail feature. However, the trails data is stored within a more complex <a href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing">data model</a> that will allow for collection and publishing of more robuts trail and trailhead information in the future.
-    </p>
-    <p>
-      Although it is a work in progress, this dataset represents a substantial starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data.
-    </p>
-    <p>
-      Note: Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be represented in this map layer.
-    </p>
+    <img class="productImage-Thumb" src="{{ "/images/trail.png" | prepend: site.baseurl }}" alt="Trails" />
+    <p>The trails map layer represents off-road recreational trail features and important road connections that augment Utah’s recreational trail network. This map layer features many of Utah’s recreational trails but is not yet complete.</p>
+    <p>Currently, the trails information primary depicts trails used by hiking and mountain biker users. It began with map data purchased from a private entity (Orbital View, Inc), for which full rights were purchased by the GOED Office of Outdoor Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah and Wasatch counties). Additional trails can be submitted to Utah AGRC for inclusion in this map layer.</p>
+    <p>The primary goal for the trails map layer is to assign a location and a name to each trail feature. However, the trails data is stored within a more complex <a href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing">data model</a> that will allow for collection and publishing of more robuts trail and trailhead information in the future.</p>
+    <p>Although it is a work in progress, this dataset represents a substantial starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data.</p>
+    <p>Note: Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be represented in this map layer.</p>
     <dl>
       <dt>PrimaryName</dt>
       <dt>CartoCode</dt>
@@ -73,81 +69,28 @@ categories: []
       <dd><a href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing">Full Data Model</a>
       </dd>
     </dl>
-    <p>
-      Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.
-    </p>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="Trails-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download Trails:	</p>
-      <ul>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOGU0clVmV3Z5RFk&export=download">Trails: File Geodatabase</a></li>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWUY0eVpWemo4alk&export=download">Trails: Shapefile</a></li>
-      </ul>
-      <p>Other Links:</p>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel update">
-      <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-      <h5 id="Trails-updates">Updates</h5>
-    </div>
-    <div class="panel-content">
-      <p>
-        This feature class was originally obtained in July 2014 and will be updated periodically. Subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah & Wasatch counties).
-      </p>
-    </div>
-  </div>
+  {% include packagedata.html name="Trails"
+  info=page.Trails %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="Trailheads">Trailheads</h3>
+    <h3 id="Trailheads">
+      <a href="#Trailheads" class="anchor--link">Trailheads</a>
+    </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      <img class="productImage-Thumb" src="{{ "/images/trailhead.png" | prepend: site.baseurl }}" alt="Trailheads" />Trailheads are point locations that provide access, and often vehicle parking, for recreational trail users. This map layer features many of Utah’s trailheads but is not yet complete. In the future, it is expected to include trailhead data assembled from a variety of sources including: US Forest Service, US National Parks Service, State Parks, and map data for which full rights were purchased by the GOED Outdoor Recreation Office in July 2014, from a private entity (Orbital View, Inc).
-    </p>
-    <p>
-      Currently (April 2017), this layer includes only the original data purchased from Orbital View. Additional trailheads can be submitted to Utah AGRC for inclusion in this map layer.
-    </p>
-    <p>
-      The primary goal for the trailheads map layer is to assign a location and a name to each trailhead. However, the trailhead data is stored within a more complex <a href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing">data model</a> that will allow for collection and publishing of more robuts trail and trailhead information in the future.
-    </p>
-    <p>
-      Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.
-    </p>
+    <img class="productImage-Thumb" src="{{ "/images/trailhead.png" | prepend: site.baseurl }}" alt="Trailheads" />
+    <p>Trailheads are point locations that provide access, and often vehicle parking, for recreational trail users. This map layer features many of Utah’s trailheads but is not yet complete. In the future, it is expected to include trailhead data assembled from a variety of sources including: US Forest Service, US National Parks Service, State Parks, and map data for which full rights were purchased by the GOED Outdoor Recreation Office in July 2014, from a private entity (Orbital View, Inc).</p>
+    <p>Currently (April 2017), this layer includes only the original data purchased from Orbital View. Additional trailheads can be submitted to Utah AGRC for inclusion in this map layer.</p>
+    <p>The primary goal for the trailheads map layer is to assign a location and a name to each trailhead. However, the trailhead data is stored within a more complex <a href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing">data model</a> that will allow for collection and publishing of more robuts trail and trailhead information in the future.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://www.udot.utah.gov/main/f?p=100:pg:0:::1:T,V:275,">UDOT Trails Page</a></li>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
   </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-      <i class="fa fa-pull-right fa-download fa-2x"></i>
-      <h5 id="Trailheads-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">
-      <p>
-        Download Trailheads:
-      </p>
-    </div>
-      <ul>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mam9UOGxERzZYdDQ&export=download">Trailheads: File Geodatabase</a></li>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRVBNd2Z4U0RwN3M&export=download">Trailheads: Shapefile</a></li>
-      </ul>
-      <p>Other Links:</p>
-      <ul>
-        <li><a href="http://www.udot.utah.gov/main/f?p=100:pg:0:::1:T,V:275,">UDOT Trails Page</a></li>
-      </ul>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-      <div class="panel update">
-        <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-        <h5 id="Trailheads-updates">Updates</h5>
-      </div>
-      <div class="panel-content">
-        <p>
-          This feature class was originally obtained in July 2014 and will be updated periodically.
-        </p>
-      </div>
-    </div>
+  {% include packagedata.html name="Trailheads"
+  info=page.Trailheads %}
 </div>
