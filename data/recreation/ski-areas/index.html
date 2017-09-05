@@ -2,7 +2,8 @@
 status: publish
 layout: page
 tags:
-  - data
+  - recreation
+  - ski
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
@@ -10,22 +11,39 @@ published: true
 date: 2011-11-22 15:09:02 -0700
 title: Ski Areas
 categories: []
+SkiAreas:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mY0Z0UkF1QkdiTVU"
+      label: "Ski Area Package"
+  updates:
+    - October 2014
 ---
-<div class="caption"><img title="map" src="{{ "/images/SkiArea.png" | prepend: site.baseurl }}" alt="Ski Areas" /><p class="caption-text">Ski Area Sample</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mY0Z0UkF1QkdiTVU" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>Ski Areas</h4>
-<p></strong></p>
-<p><strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward: AGRC</strong></p>
-<p><strong>Abstract:</strong><br />
-This data package contains ski area boundaries and ski lifts for Alta, Beaver Mountain, Brian Head, Brighton, The Canyons, Deer Valley, Eagle Point, Park City, Snowbird, Solitude, Sundance, Nordic Valley, and Cherry Peak. It also contains some cross country ski trail systems.</p>
-<p><i class="fa fa-globe"></i> Usage: There are no constraints or warranties with regard to the use of this dataset.<br />
-<i class="fa fa-calendar"></i> Last Update: October 2014<br />
-<i class="fa fa-user"></i> Contact: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-Individual datasets:</p>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbGgtbFc4VkpQZ28">Utah Ski Area Locations</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7memlYRHM1enhTS3c">Utah Ski Area Boundaries</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mNVR0OTFlRElpZDA">Utah Ski Lifts</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maFJrZU5mcUtiUjA">Utah Cross-Country Ski Trails</a></li>
-</ul>
+<div class="caption">
+  <img title="map" src="{{ "/images/SkiArea.png" | prepend: site.baseurl }}" alt="Ski Areas" />
+  <p class="caption-text">Ski Area Sample</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mY0Z0UkF1QkdiTVU"
+name="Ski Areas"
+stewards="AGRC"
+abstract="This data package contains ski area boundaries and ski lifts for Alta, Beaver Mountain, Brian Head, Brighton, The Canyons, Deer Valley, Eagle Point, Park City, Snowbird, Solitude, Sundance, Nordic Valley, and Cherry Peak. It also contains some cross country ski trail systems." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="SkiAreas">
+      <a href="#SkiAreas" class="anchor--link">Ski Areas</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>Contact <a href="mailto:agrc@utah.gov">AGRC</a></p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbGgtbFc4VkpQZ28">Utah Ski Area Locations</a></li>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7memlYRHM1enhTS3c">Utah Ski Area Boundaries</a></li>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mNVR0OTFlRElpZDA">Utah Ski Lifts</a></li>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maFJrZU5mcUtiUjA">Utah Cross-Country Ski Trails</a></li>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="SkiAreas"
+    info=page.SkiAreas
+  %}
+</div>

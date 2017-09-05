@@ -2,7 +2,8 @@
 status: publish
 layout: page
 tags:
-  - data
+  - recreation
+  - golf
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
@@ -10,17 +11,36 @@ published: true
 date: 2011-11-22 15:02:38 -0700
 title: Golf Courses
 categories: []
+GolfCourses:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mZmdhbVRUdnlBeHcd"
+      label: "Golf Course Package"
+  updates:
+    - October 2016
 ---
-<div class="caption"><img title="map" src="{{ "/images/GolfCourse.png" | prepend: site.baseurl }}" alt="Golf Course" /><p class="caption-text">Golf Course Sample</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZmdhbVRUdnlBeHc" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Golf Courses</h4>
-<p></strong></p>
-<p><strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward(s): AGRC</strong></p>
-<p><strong>Abstract:</strong><br />
-This dataset represents golf course locations within the State of Utah. It should be noted that this is based on the Utah Golf Association's website list of golf corses in Utah and may be incomplete.<br />
-This dataset also contains the name, city, number of holes, par, and type of gold course.</p>
-<p><i class="fa fa-globe"></i> Usage: There are no constraints or warranties with regard to the use of this dataset.<br />
-<i class="fa fa-calendar"></i> Last Update: October 2016<br />
-<i class="fa fa-user"></i> Contact: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-<i class="fa fa-link"></i> Links: <a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_RECREATION_GolfCourses.html">FGDC Metadata</a> </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/GolfCourse.png" | prepend: site.baseurl }}" alt="Golf Course" />
+  <p class="caption-text">Golf Course Sample</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZmdhbVRUdnlBeHcd"
+name="Golf Courses"
+stewards="AGRC"
+abstract="This dataset represents golf course locations within the State of Utah. It should be noted that this is based on the Utah Golf Association's website list of golf corses in Utah and may be incomplete. This dataset also contains the name, city, number of holes, par, and type of gold course." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="GolfCourses">
+      <a href="#GolfCourses" class="anchor--link">Golf Courses</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>Contact <a href="mailto:agrc@utah.gov">AGRC</a></p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_RECREATION_GolfCourses.html">FGDC Metadata</a>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="GolfCourses"
+    info=page.GolfCourses
+  %}
+</div>
