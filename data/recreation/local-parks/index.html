@@ -2,7 +2,8 @@
 status: publish
 layout: page
 tags:
-  - data
+  - recreation
+  - parks
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
@@ -10,17 +11,36 @@ published: true
 date: 2011-11-22 15:04:53 -0700
 title: Local Parks
 categories: []
+LocalParks:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mdm1nUTl5dVFodXM"
+      label: "Local Park Package"
+  updates:
+    - October 2016
 ---
-<div class="caption"><img title="map" src="{{ "/images/LocalParks.png" | prepend: site.baseurl }}" alt="Local Parks" /><p class="caption-text">Local Parks Sample</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdm1nUTl5dVFodXM" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Local Parks</h4>
-<p></strong></p>
-<p><strong>Data Type: GIS Data layer</strong><br />
-<strong>Steward: AGRC</strong></p>
-<p><strong>Abstract:</strong><br />
-This dataset shows the locations of local parks excluding State and Federally owned parks.<br />
-This dataset also contains the name, county, city, acres, type and construction status of the parks.</p>
-<p><i class="fa fa-globe"></i> Usage: There are no constraints or warranties with regard to the use of this dataset.<br />
-<i class="fa fa-calendar"></i> Last Update: October 2016<br />
-<i class="fa fa-user"></i> Contact: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-<i class="fa fa-link"></i> Links: <a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_RECREATION_ParksLocal.html">FGDC Metadata</a> </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/LocalParks.png" | prepend: site.baseurl }}" alt="Local Parks" />
+  <p class="caption-text">Local Parks Sample</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdm1nUTl5dVFodXM"
+name="Local Parks"
+stewards="AGRC"
+abstract="This dataset shows the locations of local parks excluding State and Federally owned parks. This dataset also contains the name, county, city, acres, type and construction status of the parks." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="LocalParks">
+      <a href="#LocalParks" class="anchor--link">Local Parks</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>Contact <a href="mailto:agrc@utah.gov">AGRC</a></p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_RECREATION_ParksLocal.html">FGDC Metadata</a>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="LocalParks"
+    info=page.LocalParks
+  %}
+</div>
