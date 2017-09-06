@@ -3,10 +3,9 @@ status: publish
 layout: page
 tags:
   - aquifers
-  - data
   - deq
   - geoscience
-  - usgs
+  - water
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
@@ -14,87 +13,66 @@ published: true
 date: 2012-06-18 12:25:39 -0600
 title: Aquifers
 categories: []
+RechargeDischargeAreas:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb0xLZHpFNEZqcWs&export=download"
+      label: "Recharge Discharge Areas: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRXg2ODRwazIzQm8&export=download"
+      label: "Recharge Discharge Areas: Shapefile"
+  updates:
+    - May 2016
+BasinFillBoundary:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7majNHMktSMDZjZEE&export=download"
+      label: "Basin Fill Boundary: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbW5qeFVtZUE0YlE&export=download"
+      label: "Basin Fill Boundary: Shapefile"
+  updates:
+    - August 2011
 ---
-<div class="caption"><img src="{{ "/images/AquifersLarge.png" | prepend: site.baseurl }}" alt="Aquifers" /><p class="caption-text">Aquifers</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVmZudmFKS0hIUFE" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>Aquifers</h4>
-<p></strong><br />
-<strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC, USGS and DEQ</p>
-<p><strong>Abstract:</strong><br />
-The Aquifers data package contains the Recharge Discharge Areas and the Basin Fill Boundaries along the Wasatch Front and adjacent areas.</p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
+<div class="caption">
+  <img src="{{ "/images/AquifersLarge.png" | prepend: site.baseurl }}" alt="Aquifers" />
+  <p class="caption-text">Aquifers</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVmZudmFKS0hIUFE"
+name="Aquifers"
+stewards="AGRC, USGS, and DEQ"
+abstract="The Aquifers data package contains the Recharge Discharge Areas and the Basin Fill Boundaries along the Wasatch Front and adjacent areas." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="RechargeDischargeAreas">Recharge Discharge Areas</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/AquifersSmall.png" | prepend: site.baseurl }}" alt="Aquifers" />Geoscience.Aquifer_RechargeDischargeAreas contains the recharge and discharge areas of the principal aquifers along the Wasatch Front and adjacent areas.</p>
-<a href="mailto:agrc@utah.gov">AGRC</a> or <a href="mailto:dbeck@utah.gov">Deidre Beck</a>, Utah Department of Environmental Quality, Division of Drinking Water</a></p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="RechargeDischargeAreas">
+      <a href="#RechargeDischargeAreas" class="anchor--link">Recharge Discharge Areas</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/AquifersSmall.png" | prepend: site.baseurl }}" alt="Aquifers" />
+    <p>Geoscience.Aquifer_RechargeDischargeAreas contains the recharge and discharge areas of the principal aquifers along the Wasatch Front and adjacent areas.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://ut.water.usgs.gov/">USGS - Utah Water Science Center</a></li>
+      <li><a href="http://www.waterquality.utah.gov/">Utah DEQ - Division of Water Quality</a></li>
+    </ul>
+    <p>Contact <a href="mailto:agrc@utah.gov">AGRC</a> or <a href="mailto:dbeck@utah.gov">Deidre Beck</a>, Utah Department of Environmental Quality, Division of Drinking Water</a></p>
+  </div>
+  {% include packagedata.html name="RechargeDischargeAreas"
+  info=page.RechargeDischargeAreas %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="RechargeDischargeAreas-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content"></p>
-<p>Download Recharge Discharge Areas:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb0xLZHpFNEZqcWs&export=download">Recharge Discharge Areas: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRXg2ODRwazIzQm8&export=download">Recharge Discharge Areas: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://ut.water.usgs.gov/">USGS - Utah Water Science Center</a></li>
-<li><a href="http://www.waterquality.utah.gov/">Utah DEQ - Division of Water Quality</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="RechargeDischargeAreas-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Last update: May 24, 2016</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="BasinFillBoundary">Basin Fill Boundary</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/AquiferBasinFill.png" | prepend: site.baseurl }}" alt="AquiferBasinFill" />Geoscience.Aquifer_BasinFillBoundary contains the approximate boundaries of basin fill in ground-water recharge and discharge areas of the principal aquifers along the Wasatch Front and adjacent areas.</p>
- <a href="mailto:agrc@utah.gov">AGRC</a> or <a href="mailto:dbeck@utah.gov">Deidre Beck</a>, Utah Department of Environmental Quality, Division of Drinking Water</p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="BasinFillBoundary">
+      <a href="#BasinFillBoundary" class="anchor--link">Basin Fill Boundary</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/AquiferBasinFill.png" | prepend: site.baseurl }}" alt="AquiferBasinFill" />
+    <p>Geoscience.Aquifer_BasinFillBoundary contains the approximate boundaries of basin fill in ground-water recharge and discharge areas of the principal aquifers along the Wasatch Front and adjacent areas.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://ut.water.usgs.gov/">USGS - Utah Water Science Center</a></li>
+      <li><a href="http://www.waterquality.utah.gov/">Utah DEQ - Division of Water Quality</a></li>
+    </ul>
+    <p>Contact <a href="mailto:agrc@utah.gov">AGRC</a> or <a href="mailto:dbeck@utah.gov">Deidre Beck</a>, Utah Department of Environmental Quality, Division of Drinking Water</p>
+  </div>
+  {% include packagedata.html name="BasinFillBoundary"
+  info=page.BasinFillBoundary %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="BasinFillBoundary-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content"></p>
-<p>Download Basin Fill Boundary:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7majNHMktSMDZjZEE&export=download">Basin Fill Boundary: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbW5qeFVtZUE0YlE&export=download">Basin Fill Boundary: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://ut.water.usgs.gov/">USGS - Utah Water Science Center</a></li>
-<li><a href="http://www.waterquality.utah.gov/">Utah DEQ - Division of Water Quality</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="BasinFillBoundary-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> Last update: August 10, 2011</p>
-
-        </div>
-    </div>
-    </div>
