@@ -14,7 +14,7 @@ tags:
   - monitoring
 ---
 
-Over the years, GIS is trending more and more towards being web-based. AGRC has tried to keep step with this trend with the addition of the [discover]({{ "/discover/" | prepend: site.baseurl }}), the [TurnGPS]({{ "/data/cadastre/turn-gps/" | prepend: site.baseurl }}) RTK GPS service, and the [Web API](https://api.mapserv.utah.gov) handling over one million requests per month. More and more users rely on these services. Outage are _very_ disruptive and users want to know **what** is going on and **when** AGRC will resolve the issue.
+Over the years, GIS is trending more and more towards being web-based. AGRC has tried to keep step with this trend with the addition of the [discover]({{ "/discover/" | prepend: site.baseurl }}), the [TurnGPS]({{ "/data/cadastre/turn-gps/" | prepend: site.baseurl }}) RTK GPS service, and the [Web API](https://api.mapserv.utah.gov) handling over one million requests per month. More and more users rely on these services. Outages are _very_ disruptive and we're doing everything in our power to avoid them. But in the event of a system outage we want our users to know **what** is going on, that you're not alone and that AGRC is aware of the issue, and **when** it is likely to be resolved.
 
 AGRC is now maintaining a system status website for the services we provide. Users can visit and bookmark [https://agrc-status.netlify.com](https://agrc-status.netlify.com) to check on the status of AGRC systems.
 
@@ -32,4 +32,4 @@ Lastly, if there are other systems that you would like us to track, let us know.
 
 ## Technical Information
 
-As you may know, the fine people at Netlify host gis.utah.gov. They offer a great service and when they released [StatusKit](https://www.netlify.com/status-pages/), AGRC was very excited. StatusKit is a website and template for [Hugo](http://gohugo.io/).  Hugo is a static website generator, similiar to [jekyll](https://jekyllrb.com/) which generates this website, built with [Go](https://golang.org/). Using pull requests or a desktop CLI tool, we can create new incidents and Hugo and Netlify take care of the rest.
+As you may know, the fine people at Netlify host our gis.utah.gov website which employs a 'github pages' approach. Overall they offer a great service and when they released [StatusKit](https://www.netlify.com/status-pages/), AGRC was very excited. StatusKit is a website and template for [Hugo](http://gohugo.io/).  Hugo is a static website generator, similiar to [jekyll](https://jekyllrb.com/) which generates this website, built with [Go](https://golang.org/). Using pull requests or a desktop CLI tool, we can create new incidents and Hugo and Netlify take care of the rest.
