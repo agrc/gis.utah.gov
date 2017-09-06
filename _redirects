@@ -48,3 +48,4 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/sgid-cadastre/land-ownership/                                                     /data/cadastre/land-ownership/                                  301
 /data/sgid-cadastre/turn-gps/                                                           /data/cadastre/turn-gps/                                        301
 /data/geoscience/aquifers-2/                                                            /data/geoscience/aquifers/                                      301
+/agrc-system-status-page/                                                               /agrc-status/                                                   301
