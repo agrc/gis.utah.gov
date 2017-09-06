@@ -14,7 +14,7 @@ tags:
   - monitoring
 ---
 
-Over the years, GIS is trending more and more towards being web-based. AGRC has tried to keep step with this trend with the addition of the [discover]({{ "/discover/" | prepend: site.baseurl }}), the [TurnGPS]({{ "/data/cadastre/turn-gps/" | prepend: site.baseurl }}) RTK GPS service, and the [Web API](https://api.mapserv.utah.gov) handling over one million requests per month. More and more users are relying on these services. Outage are _very_ disruptive and users want to know **what** is going on and **when** AGRC will resolve the issue.
+Over the years, GIS is trending more and more towards being web-based. AGRC has tried to keep step with this trend with the addition of the [discover]({{ "/discover/" | prepend: site.baseurl }}), the [TurnGPS]({{ "/data/cadastre/turn-gps/" | prepend: site.baseurl }}) RTK GPS service, and the [Web API](https://api.mapserv.utah.gov) handling over one million requests per month. More and more users rely on these services. Outage are _very_ disruptive and users want to know **what** is going on and **when** AGRC will resolve the issue.
 
 AGRC is now maintaining a system status website for the services we provide. Users can visit and bookmark [https://agrc-status.netlify.com](https://agrc-status.netlify.com) to check on the status of AGRC systems.
 
@@ -28,7 +28,7 @@ When outages occur, AGRC will use the status website to let users know that:
 
 AGRC will continue to use [twitter](https://twitter.com/MapUtah) with the hash tag [#utmap](https://twitter.com/hashtag/utmap) to disseminate information about outages and other interesting news. But, AGRC recognizes twitter _does not_ reach all our users. Not every GIS user has a twitter account and not every person with a twitter account comprehensively reads our tweets.
 
-Lastly, if there is other systems that you would like us to track, let us know.
+Lastly, if there are other systems that you would like us to track, let us know.
 
 ## Technical Information
 
