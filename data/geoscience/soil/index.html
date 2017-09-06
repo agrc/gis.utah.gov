@@ -2,25 +2,43 @@
 status: publish
 layout: page
 tags:
-  - data
+  - geoscience
+  - soil
 author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
 published: true
 date: 2011-11-21 10:47:27 -0700
-title: Soil
+title: Soil Types
 categories: []
+Soil:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mSDFxRU8waXdBQ28"
+      label: "Soil Types"
+  updates:
+    - 2008
 ---
-<div class="caption"><img title="map" src="{{ "/images/Soils.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" /><p class="caption-text">Soil Types</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSDFxRU8waXdBQ28" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Soils</h4>
-<p></strong></p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> U.S. Department of Agriculture, Natural Resources Conservation Service</p>
-<p><strong>Abstract:</strong><br />
-Geoscience.Soils represents the extent of defined soil types throughout Utah. The dataset was created by digitizing maps, compiling information onto a planimetric correct base and digitizing or revising digitized maps using remotely sensed and other information. It is generally the most detailed level of soil geographic data developed by the National Cooperative Soil Survey.  </p>
-<p><i class="fa fa-globe"></i> Usage: All surveys areas have their own tables which are not interchangeable.  All sets of tables are found at the <a href="http://www.nrcs.usda.gov/wps/portal/nrcs/main/ut/soils/surveys/">NRCS Soil Mart</a>.<br />
-<i class="fa fa-calendar"></i> Last Update: 2008<br />
-<i class="fa fa-user"></i> Contact: General Utah GIS data inquiries: agrc@utah.gov<br />
-<i class="fa fa-link"></i> Links: <a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_GEOSCIENCE_Soils.html">FGDC Metadata</a><br />
- </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/Soils.png" | prepend: site.baseurl }}" alt="soil types" />
+  <p class="caption-text">Soil Types</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSDFxRU8waXdBQ28"
+name="Soil Types"
+stewards="U.S. Department of Agriculture, Natural Resources Conservation Service"
+abstract="Geoscience.Soils represents the extent of defined soil types throughout Utah. The dataset was created by digitizing maps, compiling information onto a planimetric correct base and digitizing or revising digitized maps using remotely sensed and other information. It is generally the most detailed level of soil geographic data developed by the National Cooperative Soil Survey." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Soil">
+      <a href="#Soil" class="anchor--link">Soil Types</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>All surveys areas have their own tables which are not interchangeable.  All sets of tables are found at the <a href="http://www.nrcs.usda.gov/wps/portal/nrcs/main/ut/soils/surveys/">NRCS Soil Mart</a>.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_GEOSCIENCE_Soils.html">FGDC Metadata</a>
+    </ul>
+    <p>Contact: General Utah GIS data inquiries: agrc@utah.gov</p>
+  </div>
+  {% include packagedata.html name="Soil"
+  info=page.Soil %}
