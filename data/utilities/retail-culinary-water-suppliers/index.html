@@ -6,73 +6,38 @@ author:
   display_name: Jessie Pechmann
   email: jpechmann@utah.gov
 tags:
+  - utilities
   - data
-  - industrial
-  - municipal
-  - potable
-  - public
-  - suppliers
   - water
 published: true
 date: 2016-07-12 18:14:11 -0700
 categories: []
+RetailCulinaryWater:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7meWhVSXJHdk4teWc&export=download"
+      label: "Culinary Water Suppliers: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mM2ZoYWx4MU83ZVU&export=download"
+      label: "Culinary Water Suppliers: Shapefile"
+  updates:
+    - December 2015
 ---
 <div class="caption">
-    <img src="{{ "/images/CulinaryWater255x255.png" | prepend: site.baseurl }}" alt="Culinary Water" />
-    <p class="caption-text">Culinary Water Supplier Boundaries</p>
+  <img src="{{ "/images/CulinaryWater255x255.png" | prepend: site.baseurl }}" alt="Culinary Water" />
+  <p class="caption-text">Culinary Water Supplier Boundaries</p>
 </div>
-<p>
-    <a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVEYzSFhyWEY5bEE" class="button medium white">
-        <span class="button-text">Download</span>
-    </a>
-</p>
-<h4>Retail Culinary Water Suppliers Dataset</h4>
-<div>
-    <strong>Data Type: </strong>GIS Data Layer
-</div>
-<div>
-    <strong>Steward: </strong>Utah Division of Water Resources, Utah Department of Natural Resources
-</div>
-<p>
-    <strong>Abstract: </strong>This dataset attempts to represent the retail culinary water suppliers service area boundaries for the State of Utah, with a small selection of suppliers in Idaho and Wyoming represented as well.  Data sources include the Utah Division of Water Resources, Utah Division of Drinking Water, Utah Division of Water Rights, Utah Division of Public Utilities, and the Utah Automated Geographic Reference Center. Boundaries were derived from a combination of the following data layers available in the State Geographic Information Database (SGID): Counties, various county parcels, Municipalities, PLSSSections, and TaxEntities2013.
-</p>
-<p>
-    <strong>Data Content: </strong>The following data is available for download:
-</p>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVEYzSFhyWEY5bEE"
+name="Retail Culinary Water Suppliers Dataset"
+stewards="Utah Division of Water Resources, Utah Department of Natural Resources"
+abstract="This dataset attempts to represent the retail culinary water suppliers service area boundaries for the State of Utah, with a small selection of suppliers in Idaho and Wyoming represented as well.  Data sources include the Utah Division of Water Resources, Utah Division of Drinking Water, Utah Division of Water Rights, Utah Division of Public Utilities, and the Utah Automated Geographic Reference Center. Boundaries were derived from a combination of the following data layers available in the State Geographic Information Database (SGID): Counties, various county parcels, Municipalities, PLSSSections, and TaxEntities2013." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="RetailCulinaryWater">Retail Culinary Water</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-        <img class="productImage-Thumb" src="{{ "/images/CulinaryWater90x90.png" | prepend: site.baseurl }}" alt="Culinary Water Thumb" />Utilities.RetailCulinaryWaterServiceAreas represents public community water suppliers. Eventually, public non-community (transient) and self-supplied industry (non-transient) suppliers will be added. This feature class includes system boundaries that are historical and no longer active. It also includes some systems that are outside the state. Historical and outside the state systems can be filtered using the ENDYEAR and STATE fields, respectively.These boundaries are derived from many different sources. They include spatial data received directly from the supplier, municipal boundaries, phone call descriptions of service areas, printed maps that had hand drawn boundaries that were then digitized, etc.
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel">
-            <i class="fa fa-pull-right fa-download fa-2x"></i>
-            <h5 id="RetailCulinaryWater-downloads">Downloads</h5>
-        </div>
-        <div class="panel-content">
-            <p>Download Retail Culinary Water Suppliers Dataset:</p>
-            <ul>
-                <li>
-                    <a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7meWhVSXJHdk4teWc&export=download">Culinary Water Suppliers: File Geodatabase</a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mM2ZoYWx4MU83ZVU&export=download">Culinary Water Suppliers: Shapefile</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="RetailCulinaryWater-updates">Updates</h5>
-        </div>
-        <div class="panel-content">
-            <p>Last update:</p>
-            <ul>
-                <li>December 2015</li>
-            </ul>
-        </div>
-    </div>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="RetailCulinaryWater">
+      <a href="#RetailCulinaryWater" class="anchor--link">Retail Culinary Water</a></h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/CulinaryWater90x90.png" | prepend: site.baseurl }}" alt="Culinary Water Thumb" />
+    <p>Utilities.RetailCulinaryWaterServiceAreas represents public community water suppliers. Eventually, public non-community (transient) and self-supplied industry (non-transient) suppliers will be added. This feature class includes system boundaries that are historical and no longer active. It also includes some systems that are outside the state. Historical and outside the state systems can be filtered using the <code>ENDYEAR</code> and <code>STATE</code> fields, respectively.These boundaries are derived from many different sources. They include spatial data received directly from the supplier, municipal boundaries, phone call descriptions of service areas, printed maps that had hand drawn boundaries that were then digitized, etc.</p>
+  </div>
+  {% include packagedata.html name="RetailCulinaryWater"
+   info=page.RetailCulinaryWater %}
 </div>
