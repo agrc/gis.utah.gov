@@ -36,6 +36,8 @@ TenthMileReferencePoints:
   downloads:
     - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTGhJNkxNcE9hVk0&export=download"
       label: "Tenth of a Mile: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbVZ3bmVmLV9yemM&export=download"
+      label: "Tenth of a Mile: Shapefile"
   updates:
     - Updates to this dataset are published periodically.
 FreewayExitPoints:
@@ -72,30 +74,15 @@ abstract="This dataset contains GIS mapping data representing the statewide road
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-streets-roads.png" | prepend: site.baseurl }}" alt="streets and roads" />
     <p>Transportation.Roads is a multi-purpose statewide roads dataset for cartography and range based-address location. This dataset is also used as the base geometry for deriving the GIS-representation of UDOT's highway linear referencing system (LRS). A network analysis dataset for route-finding can also be derived from this dataset.</p>
-    <p>Transportation.Roads utilizes the Statewide Roads Data Model Standard (please read about the <a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">changes coming</a> to the data model on September 13th, 2017), formally known as the Utah Transportation Data Model. The UGIC Road Centerline Sub-committee has been in the process of revising the content and structure of the Utah Transportation Data Model. The final draft of what is now being referred to as the 'Statewide Roads Data Model Standard' is pending approval by the UGIC Standards Committee.</p>
-    <p>The Statewide Roads Data Model Standard is divided into two ‘tier’ levels:</p>
-    <ul class="dotless">
-      <li>Tier Level 1 fields pertain to address location, cartography, and routing. Stewards are encouraged to maintain data that will map to the Tier Level 1 fields. The field named DOT_* are an exception, as UDOT will maintain these themselves.
-      <ul class="dotless">
-        <li>Examples of the CARTOCODE (formerly CFCC) field descriptions:
-        <li>1 - Interstates
-        <li>2 - US Highway, Separated
-        <li>4 - Major State Highway, Separated
-        <li>7 - Ramps, Collectors
-        <li>9 - Major Local Roads, Paved
-      </ul>
-      <li>Tier Level 2 fields pertain to local agency maintenance and inventory and are utilized and shared if the local steward chooses to do so.</li>
-    </ul>
+    <p>Transportation.Roads utilizes the Statewide Roads NextGen Data Model Standard. AGRC <a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">adopted</a> this data model on September 13th, 2017 and it is based on Next-Generation 911 standards and the Federal Highway Administration's All Roads Network Of Linear-referenced Data (ARNOLD) reporting requirements for state DOTs.</p>
+    <p>To see specific information about the data model including field names, coded value domains, and updates, see the <a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546">data model spreadsheet</a> and its corresponding sheets.</p>
+    <p>This data model is meant to suggest 'best practices'. It is not the intent that all stewards will change their current data management process to match this standard, but rather that stewards will evaluate their current practices to see how well their data 'maps' to this schema for data sharing and Next Generation 911 preparedness. Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> at AGRC.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The statewide roads dataset is maintained by AGRC in partnership with local government, the Utah 911 Committee, and UDOT.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">Upcomming changes coming to the data model</a>
-      <li><a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546">NextGen data model</a>
-      <li><a href="https://docs.google.com/document/d/1ojjqCa1Z6IG6Wj0oAbZatoYsmbKzO9XwdD88-kqm-zQ/edit?usp=sharing">Current data model</a> (soon-to-be deprecated)
-      <li><a href="https://docs.google.com/open?id=0Bz18jufMWioiU25icDNoQWlJa2M">Current schema</a> (soon-to-be deprecated)
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.TRANSPORTATION.Roads.xml">FGDC format metadata</a>
+      <li><a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546">Road Centerlines: Data Model</a>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.TRANSPORTATION.Roads.xml">Road Centerlines: FGDC Metadata</a>
     </ul>
-    <p>Changes to the data model include a more logical approach to the ordering of fields and their names, in addition to the removal of multiple redundant fields. Proposals by the UGIC Standards Committee are meant as suggested 'best practices' and are primarily designed for data transfer and sharing. It is not the intent that all stewards will change their current data management process to match this standard, but rather that stewards will evaluate their current practices to see how well their data 'maps' to this schema for data sharing purposes. Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> (801.538.3665) at AGRC.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The statewide roads dataset is maintained by AGRC in partnership with local government, the Utah 911 Committee, and UDOT.</p>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
@@ -103,17 +90,17 @@ abstract="This dataset contains GIS mapping data representing the statewide road
       <h5 id="RoadCenterlines-downloads">Downloads</h5>
     </div>
     <div class="panel-content" id="RoadCenterlines-list">
-      <p><a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">NextGen</a> Data Model Road Centerline Data:</p>
       <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcTQ0OG9oNThtWE0&export=download">NextGen Road Centerlines: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU1M2VVIwU0tZVWs&export=download">NextGen Road Centerlines: Shapefile</a>
+        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcTQ0OG9oNThtWE0&export=download">Road Centerlines: File Geodatabase</a>
+        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU1M2VVIwU0tZVWs&export=download">Road Centerlines: Shapefile</a>
+        <li><a href="https://drive.google.com/uc?export=download&id=0ByStJjVZ7c7mMXdRSWk0SWhncXc">Road Centerlines Schema-Only: File Geodatabase</a>
       </ul>
-      <p><a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">Current</a> Data Model Road Centerline Data (soon-to-be-deprecated):</p>
-      <ul class="dotless no-padding">
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcDJ4eVhqUllibk0&export=download">Road Centerlines: File Geodatabase</a>
-        <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU05HZkxvZzlfbms&export=download">Road Centerlines: Shapefile</a>
-        <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/SGID10.TRANSPORTATION.Roads_Major.lyr">Road Centerlines: Layer File</a>
-        <li><a href="https://drive.google.com/uc?export=download&id=0ByStJjVZ7c7mMXdRSWk0SWhncXc">Road Centerlines (proposed schema): File Geodatabase</a>
+      <h5><a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">Deprecated Data Model</a></h5>
+      <ul class="dotless">
+          <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcDJ4eVhqUllibk0&export=download">Road Centerlines Deprecated Data Model: File Geodatabase</a>
+          <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU05HZkxvZzlfbms&export=download">Road Centerlines Deprecated Data Model: Shapefile</a>
+          <li><a href="https://docs.google.com/document/d/1ojjqCa1Z6IG6Wj0oAbZatoYsmbKzO9XwdD88-kqm-zQ/edit?usp=sharing">Deprecated Data Model</a>
+          <li><a href="https://docs.google.com/open?id=0Bz18jufMWioiU25icDNoQWlJa2M">Deprecated Schema</a>
       </ul>
     </div>
     <script>
@@ -136,8 +123,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
       <h5 id="RoadCenterlines-updates">Updates</h5>
     </div>
   <div class="panel-content">
-    <p>Updates to this dataset are published every month.</p>
-    <p>AGRC maintains a street centerline update schedule to ensure that each county is updated either annually or biannually.</p>
+    <p>Updates to this dataset are published every month, with approximately nine counties receiving detailed review.</p>
     <ul class="dotless no-padding">
       <li><a href="{{site.baseurl}}{% post_url 2017-08-15-utah-sgid-statewide-roads-data-layer-updates-08152017 %}">August 15, 2017</a>
       <li><a href="{{site.baseurl}}{% post_url 2017-07-18-utah-sgid-statewide-roads-data-layer-updates-07182017 %}">July 18, 2017</a>
@@ -209,7 +195,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This dataset was assembled by UDOT for general purpose cartography.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbVZ3bmVmLV9yemM&export=download">Tenth of a Mile: Shapefile</a>
+      <li>
     </ul>
   </div>
   {% include packagedata.html name="TenthMileReferencePoints"
