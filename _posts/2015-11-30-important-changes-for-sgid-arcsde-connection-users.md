@@ -2,8 +2,8 @@
 status: publish
 layout: post
 author:
-  display_name: Jessie Pechmann
-  email: jpechmann@utah.gov
+  display_name: JP
+  email: agrc@utah.gov
 tags: []
 published: true
 date: 2015-11-30 11:35:11 -0700

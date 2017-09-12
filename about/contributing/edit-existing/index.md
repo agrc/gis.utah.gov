@@ -3,8 +3,8 @@ status: publish
 layout: page
 title: How to Edit Existing Content on gis.utah.gov
 author:
-  display_name: Jessie Pechmann
-  email: jpechmann@utah.gov
+  display_name: JP
+  email: agrc@utah.gov
 tags: []
 published: true
 date: 2016-04-19 16:11:21

@@ -7,20 +7,39 @@ author:
   email: agrc@utah.gov
 tags:
   - data
+  - utilities
+  - telephone
 categories: []
 published: true
 date: 2012-05-22 17:58:01 -0600
+Telcom:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mb0hfdDRCaWtlS1U"
+      label: "Rural Telcom Boundaries"
+  updates:
+    - May 2012
 ---
-<div class="caption"><img title="map" src="{{ "/images/RuralTelcom.png" | prepend: site.baseurl }}" alt="RuralTelcomBoundaries" /><p class="caption-text">Rural Telcom Boundaries</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb0hfdDRCaWtlS1U" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Telephone Infrastructure and Rural Telcom Boundaries</h4>
-<p></strong></p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC</p>
-<p><strong>Abstract:</strong><br />
-This dataset represents the service territories of telephone providers in Utah. These areas are regulated by the Public Service Commission.</p>
-<p><i class="fa fa-globe"></i> Usage: The PROVIDER field contains the provider name.<br />
-<i class="fa fa-calendar"></i> Last Update: May 2012<br />
-<i class="fa fa-user"></i> Contact: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-<i class="fa fa-link"></i> Links: <a href="http://www.psc.utah.gov/index.html" title="Public Service Commission">Public Service Commission</a> </p>
- 
+<div class="caption">
+  <img title="map" src="{{ "/images/RuralTelcom.png" | prepend: site.baseurl }}" alt="RuralTelcomBoundaries" />
+  <p class="caption-text">Rural Telcom Boundaries</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb0hfdDRCaWtlS1U"
+name="Telephone Infrastructure and Rural Telcom Boundaries"
+abstract="This dataset represents the service territories of telephone providers in Utah. These areas are regulated by the Public Service Commission." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Telcom">
+      <a href="#Telcom" class="anchor--link">Rural Telcom Boundaries</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>The <code>PROVIDER</code> field contains the provider name.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://psc.utah.gov/" title="Public Service Commission">Public Service Commission</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="Telcom"
+  info=page.Telcom %}
+</div>

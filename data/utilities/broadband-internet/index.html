@@ -3,193 +3,144 @@ status: publish
 layout: page
 title: Broadband Internet
 author:
-  display_name: Jessie Pechmann
-  email: jpechmann@utah.gov
+  display_name: JP
+  email: agrc@utah.gov
 tags:
   - data
+  - broadband
+  - utilities
 categories: []
 published: true
 date: 2011-10-27 12:00:48 -0600
+BroadbandService:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUHBPTnRaamhjaGc&export=download"
+      label: "Broadband Service Coverage: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7ma0tTVVhSWEdfV0U&export=download"
+      label: "Broadband Service Coverage: Shapefile"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZjdVbHdMV1I0Nm8&export=download"
+      label: "Historic Broadband Service Coverage: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcklybXBMU2FqUnc&export=download"
+      label: "Historic Broadband Service Coverage: Shapefile"
+  updates:
+    - June 21, 2017
+    - November 23, 2016
+    - July 27, 2016
+SBIBroadbandData:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOENzODJrbW9aTVE&export=download"
+      label: "Census Blocks: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbm9CSGx0dUFyVFE&export=download"
+      label: "Census Blocks: Shapefile"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOENzODJrbW9aTVE&export=download"
+      label: "Road Buffers: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mN1lpOFg4T2pkUlE&export=download"
+      label: "Road Buffers: Shapefile"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZjdVbHdMV1I0Nm8&export=download"
+      label: "Wireless: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mN1lpOFg4T2pkUlE&export=download"
+      label: "Wireless: Shapefile"
+  updates:
+    - November 10, 2014
+    - April 9, 2014
+    - October 8, 2013
+    - April 2013
+    - October 2012
+    - April 2012
+    - October 2011
+CommunityAnchorInstitutes:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mQmt6bjNpakY0bG8&export=download"
+      label: "Broadband Community Anchor Institutes: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZC1DNjc1ZDBBcEE&export=download"
+      label: "Broadband Community Anchor Institutes: Shapefile"
+  updates:
+    - November 10, 2014
+    - April 9, 2014
+    - October 8, 2013
+    - April 2013
+    - October 2012
+    - April 2012
+    - October 2011
 ---
-<div class="caption"><img src="{{ "/images/gallery/sgid/mainbb_2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" /><p class="caption-text">Broadband Coverage in Salt Lake County</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMjdWS3RsTkRPaE0" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>Broadband Internet</h4>
-<p></strong><br />
-<strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC & The Governor's Office Of Economic Development (GOED)</p>
-<p><strong>Abstract:</strong><br />
-This dataset contains the statewide availability of broadband internet in Utah. The data represents broadband providers' coverage areas, with their technology types and maximum advertised download and upload speeds. <br />
-<BR><br />
-<strong>Data Content:</strong><br />
-The following data is available for download:</p>
+<div class="caption">
+  <img src="{{ "/images/gallery/sgid/mainbb_2.png" | prepend: site.baseurl }}" alt="broadband converage" />
+  <p class="caption-text">Broadband Coverage in Salt Lake County</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMjdWS3RsTkRPaE0"
+name="Broadband Internet"
+stewards="AGRC & The Governor's Office Of Economic Development (GOED)"
+webapp="https://broadband.utah.gov"
+abstract="This dataset contains the statewide availability of broadband internet in Utah. The data represents broadband providers' coverage areas, with their technology types and maximum advertised download and upload speeds." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="BroadbandServiceData">Broadband Service Data</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/bbwireline_2.png?1797489756" | prepend: site.baseurl }}" alt="BBWireline" />
-<p>Broadband service depicts broadband coverage over any transmission technology, including fixed and mobile services. Fixed service is typically used as a home internet connection over DSL, other copper, cable, and fiber technologies.</p>
-
-<p>This data is open to be utilized for public analysis.</p>
-<p>Disclaimer:</p>
-<p>Broadband service availability and characteristics are depicted as derived from data assembled by the Utah Broadband Outreach Center mapping team. Data sources include biannual broadband service provider submissions and publicly available sources.
-Speeds shown are the 'maximum advertised' for the geographic features depicted, and must exceed 0.768 Mbps download and 0.2 Mbps upload to be included. Actual speeds may vary within service area, due to the granularity and currency of the data, technological limitations, and service plan limitations. Users of the site are encouraged to inquire directly to providers for current service availability and speed.
-All information presented on the Utah's interactive broadband map is for general reference purposes only and may contain errors and omissions. The State of Utah makes no warranty with respect to information available, express or implied, including but not limited to the fitness for use for a particular purpose.
-This data is managed by AGRC for the Governor’s Office of Economic Development Broadband Outreach Center.</p>
-<p><em>Data Schema Usage Tips:</em></p>
-<p><strong>UTProvCode</strong>: Broadband Provider Company Name (<a href="http://broadband.utah.gov/providers/">partnering providers list</a>).</br>
-<strong>TransTech</strong>: See Transmission Technology Codes below</br>
-<strong>MAXADDOW</strong>: Maximum Advertised Download Speed in Mbps</br>
-<strong>MAXADUP</strong>: Maximum Advertised Upload Speed in Mbps</br>
-<strong>LastEdit</strong>: Last data edit</br>
-<strong>LastVerified</strong>: Last date provider verified data currency or submitted updates.</br>
-
-<ul>
-<strong>Transmission Technology Codes</strong>
-  <li>10: Asymmetric DSL</li>
-  <li>20: Symmetric DSL</li>
-  <li>30: Other Copper Wireline</li>
-  <li>40: Cable Modem - DOCSIS 3.0</li>
-  <li>41: Cale Modem - Other</li>
-  <li>50: Optical Carrier/Fiber to the End User</li>
-  <li>70: Terrestrial Fixed Wireless - Unlicensed</li>
-  <li>71: Terrestrial Fixed Wireless - Licensed</li>
-  <li>80: Terrestrial Mobile Wireless</li>
-</ul></p>
-
-
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="BroadbandServiceData">
+      <a href="#BroadbandServiceData" class="anchor--link">Broadband Service Data</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/bbwireline_2.png?1797489756" | prepend: site.baseurl }}" alt="BBWireline" />
+    <p>Broadband service depicts broadband coverage over any transmission technology, including fixed and mobile services. Fixed service is typically used as a home internet connection over DSL, other copper, cable, and fiber technologies. This data is open to be utilized for public analysis. Note that historic broadband coverage dates from Fall 2015. For broadband coverage previous to Fall 2015, see SBI Broadband Data.</p>
+    <h5>Disclaimer</h5>
+    <p>Broadband service availability and characteristics are depicted as derived from data assembled by the Utah Broadband Outreach Center mapping team. Data sources include biannual broadband service provider submissions and publicly available sources. Speeds shown are the 'maximum advertised' for the geographic features depicted, and must exceed 0.768 Mbps download and 0.2 Mbps upload to be included. Actual speeds may vary within service area, due to the granularity and currency of the data, technological limitations, and service plan limitations. Users of the site are encouraged to inquire directly to providers for current service availability and speed. All information presented on the Utah's interactive broadband map is for general reference purposes only and may contain errors and omissions. The State of Utah makes no warranty with respect to information available, express or implied, including but not limited to the fitness for use for a particular purpose. This data is managed by AGRC for the Governor’s Office of Economic Development Broadband Outreach Center.</p>
+    <h5>Data Schema Usage Tips:</h5>
+    <ul class="dotless">
+      <li><code>UTProvCode</code>: Broadband Provider Company Name (<a href="http://broadband.utah.gov/providers/">partnering providers list</a>).
+      <li><code>TransTech</code>: See Transmission Technology Codes below
+      <li><code>MAXADDOW</code>: Maximum Advertised Download Speed in Mbps
+      <li><code>MAXADUP</code>: Maximum Advertised Upload Speed in Mbps
+      <li><code>LastEdit</code>: Last data edit
+      <li><code>LastVerified</code>: Last date provider verified data currency or submitted updates.
+    </ul>
+    <h5>Transmission Technology Codes</h5>
+    <ul class="dotless">
+      <li><code>10</code>: Asymmetric DSL
+      <li><code>20</code>: Symmetric DSL
+      <li><code>30</code>: Other Copper Wireline
+      <li><code>40</code>: Cable Modem - DOCSIS 3.0
+      <li><code>41</code>: Cale Modem - Other
+      <li><code>50</code>: Optical Carrier/Fiber to the End User
+      <li><code>70</code>: Terrestrial Fixed Wireless - Unlicensed
+      <li><code>71</code>: Terrestrial Fixed Wireless - Licensed
+      <li><code>80</code>: Terrestrial Mobile Wireless
+    </ul>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://broadband.utah.gov">Broadband Outreach Center</a></li>
+    </ul>
+  </div>
+  {% include packagedata.html name="BroadbandService"
+  info=page.BroadbandService %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="BroadbandServiceData-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this data using the button above or the links below.</p>
-<p>Broadband Service Coverage data:</p>
-<p><ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUHBPTnRaamhjaGc&export=download">Broadband Service Coverage: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7ma0tTVVhSWEdfV0U&export=download">Broadband Service Coverage: Shapefile</a></li></ul>
-
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZjdVbHdMV1I0Nm8&export=download">Historic Broadband Service Coverage: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mcklybXBMU2FqUnc&export=download">Historic Broadband Service Coverage: Shapefile</a></li></ul>
-*Note that historic broadband coverage dates from Fall 2015. For broadband coverage previous to Fall 2015, see SBI Broadband Data.</p>
-
-<br />
-
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="http://broadband.utah.gov">Broadband Outreach Center</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="BroadbandServiceData-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Recent update summaries:</p>
-<p>
-June 21, 2017<br />  
-November 23, 2016<br />
-July 27, 2016<br />
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="SBIBroadbandData">SBI Broadband Data</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/bbwireless_4.png?607633433" | prepend: site.baseurl }}" alt="BBWireline" />
-<p>From 2010 - 2014, the State of Utah maintained a broadband mapping database in the format defined by the State Broadband Initative (SBI) Program at the National Telecommunications & Information Administration (NTIA). Data was collected twice a year and submitted to the NTIA biannually on April 1 and October 1. </p>
-</div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="SBIBroadbandData-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this data using the button above or the links below.</p>
-<p>Historic NTIA data:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOENzODJrbW9aTVE&export=download">Census Blocks: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbm9CSGx0dUFyVFE&export=download">Census Blocks: Shapefile</a></li>
-</ul>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOENzODJrbW9aTVE&export=download">Road Buffers: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mN1lpOFg4T2pkUlE&export=download">Road Buffers: Shapefile</a></li>
-</ul>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZjdVbHdMV1I0Nm8&export=download">Wireless: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mN1lpOFg4T2pkUlE&export=download">Wireless: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="WirelessBroadbandData-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Recent update summaries:</p>
-<p>November 10, 2014<br />
-April 9, 2014<br />
-October 8, 2013<br />
-April 2013<br />
-October 2012<br />
-April 2012<br />
-October 2011<br />
-
-        </div>
-    </div>
-    </div><li><a href="broadband.utah.gov">Broadband Outreach Center</a>  </li>
-</ul>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="CommunityAnchorInstitutes">Community Anchor Institutes</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/gallery/sgid/bbcais_3.png?175039052" | prepend: site.baseurl }}" alt="Changeme" /> Community anchor institutes in Utah with locations and their broadband subscription information. Includes public wifi availability. This dataset is growing, so check back for updates.</p>
-<p>This data is open to be utilized for public analysis.</p>
-<p>Disclaimer:<br />
-Broadband service availability and characteristics are depicted as derived from data assembled by the Utah Broadband Project. Data sources include biannual broadband service provider submissions and publicly available sources. Data has been modified, where necessary, to meet broadband mapping standards set by the National Telecommunications and Information Administration (NTIA).</p>
-<p>Broadband service availability is displayed per NTIA specifications which include technology and speed categories and the aggregation of non-wireless service availability information to either U.S. Census blocks (where smaller than 2 sq. miles) or road segments.</p>
-<p>Speeds shown are the 'maximum advertised' for the geographic features depicted, and must exceed 0.768 Mbps download and 0.2 Mbps upload (NTIA broadband definition) to be included. Actual speeds may vary within and along census blocks and roads, due to the granularity and currency of the data, technological limitations, and service plan limitations. Users of the site are encouraged to inquire directly to providers for current service availability and speed.</p>
-<p>All information presented on the Utah's interactive broadband map is for general reference purposes only and may contain errors and omissions. The State of Utah makes no warranty with respect to information available, express or implied, including but not limited to the fitness for use for a particular purpose.</p>
-This data is managed by AGRC through the State of Utah Broadband Project.</p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="SBIBroadbandData">
+      <a href="#SBIBroadbandData" class="anchor--link">SBI Broadband Data</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/bbwireless_4.png?607633433" | prepend: site.baseurl }}" alt="BBWireline" />
+    <p>From 2010 - 2014, the State of Utah maintained a broadband mapping database in the format defined by the State Broadband Initative (SBI) Program at the National Telecommunications & Information Administration (NTIA). Data was collected twice a year and submitted to the NTIA biannually on April 1 and October 1. </p>
+  </div>
+  {% include packagedata.html name="SBIBroadbandData"
+  info=page.SBIBroadbandData %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="CommunityAnchorInstitutes-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this data using the button above or the links below.</p>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mQmt6bjNpakY0bG8&export=download">Broadband Community Anchor Institutes: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZC1DNjc1ZDBBcEE&export=download">Broadband Community Anchor Institutes: Shapefile</a></li>
-<p></br><br />
-Other links for this dataset:</p>
-<ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="CommunityAnchorInstitutes-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Recent update summaries:</p>
-<p>November 10, 2014<br />
-April 9, 2014<br />
-October 8, 2013<br />
-April 2013<br />
-October 2012<br />
-April 2012<br />
-October 2011<br />
-
-        </div>
-    </div>
-    </div><li><a href="broadband.utah.gov">Broadband Outreach Center</a>  </li>
-</ul>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="CommunityAnchorInstitutes">
+      <a href="#CommunityAnchorInstitutes" class="anchor--link">Community Anchor Institutes</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/bbcais_3.png?175039052" | prepend: site.baseurl }}" alt="community anchor institutes" />
+    <p>Community anchor institutes in Utah with locations and their broadband subscription information. Includes public wifi availability. This dataset is growing, so check back for updates. This data is open to be utilized for public analysis.</p>
+    <h5>Disclaimer</h5>
+    <p>Broadband service availability and characteristics are depicted as derived from data assembled by the Utah Broadband Project. Data sources include biannual broadband service provider submissions and publicly available sources. Data has been modified, where necessary, to meet broadband mapping standards set by the National Telecommunications and Information Administration (NTIA).</p>
+    <p>Broadband service availability is displayed per NTIA specifications which include technology and speed categories and the aggregation of non-wireless service availability information to either U.S. Census blocks (where smaller than 2 sq. miles) or road segments.</p>
+    <p>Speeds shown are the 'maximum advertised' for the geographic features depicted, and must exceed 0.768 Mbps download and 0.2 Mbps upload (NTIA broadband definition) to be included. Actual speeds may vary within and along census blocks and roads, due to the granularity and currency of the data, technological limitations, and service plan limitations. Users of the site are encouraged to inquire directly to providers for current service availability and speed.</p>
+    <p>All information presented on the Utah's interactive broadband map is for general reference purposes only and may contain errors and omissions. The State of Utah makes no warranty with respect to information available, express or implied, including but not limited to the fitness for use for a particular purpose.</p>
+    <p>This data is managed by AGRC through the State of Utah Broadband Project.</p>
+  </div>
+  {% include packagedata.html name="CommunityAnchorInstitutes"
+  info=page.CommunityAnchorInstitutes %}
+</div>

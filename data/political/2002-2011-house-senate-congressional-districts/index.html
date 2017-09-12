@@ -2,139 +2,121 @@
 status: publish
 layout: page
 tags:
-  - data
+  - political districts
+  - house
+  - senate
+  - congress
 author:
-  display_name: Jessie Pechmann
-  email: jpechmann@utah.gov
+  display_name: JP
+  email: agrc@utah.gov
 published: true
 date: 2011-11-18 10:41:06 -0700
 title: 2002 - 2011 House, Senate and Congressional Districts
 categories: []
+House:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mX3dKblVJT2pLOTQ&export=download"
+      label: "State House: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mQ0trZW42RkM4elE&export=download"
+      label: "State House: Shapefile"
+  updates:
+    - "This dataset was last updated in 2002."
+StateSenateDistricts:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7memx6U2ozZEJlbUE&export=download"
+      label: "State Senate: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNlpxWkFZSUM1Vnc&export=download"
+      label: "State Senate: Shapefile"
+  updates:
+    - "This dataset was last updated in 2002."
+UnitedStatesCongressionalDistricts:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU3k0RVY0dGlFUzg&export=download"
+      label: "US Congress Districts: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbjhQYjItTXZGTG8&export=download"
+      label: "US Congress Districts: Shapefile"
+  updates:
+    - "This dataset was last updated in 2002."
 ---
-<div class="caption"><img src="{{ "/images/SenateDistricts2002_Large_Color4.png" | prepend: site.baseurl }}" alt="SenateLargeColor" /><p class="caption-text">2002 Political Districts</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mM1VpTXBvUkEtcEk" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>2002 Political Districts</h4>
-<p></strong></p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC and the Lieutenant Governor's Office</p>
-<p><strong>Abstract:</strong><br />
-These political districts are used for election purposes from  January 1, 2002 through December 31, 2011 and for purposes of elected representation and other purposes through Dec 31, 2012. This dataset includes the political districts used for the Utah State Legislature  (state senate districts and state house districts); and U.S congressional districts. The new political boundaries will be used for the first time during the fall 2012 election. Elected officials representing the <a title="2012 – 2021 House, Senate and Congressional Districts" href="{{ "/data/political/2012-2021-house-senate-congressional-districts/" | prepend: site.baseurl }}">new 2012 districts</a> will take office in January 2013.</p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
+<p><b>Note:</b> New political boundaries were used for the first time during the Fall 2012 election. Elected officials representing the <a title="2012 – 2021 House, Senate and Congressional Districts" href="{{ '/data/political/2012-2021-house-senate-congressional-districts/' | prepend: site.baseurl }}">new 2012 districts</a> took office in January 2013.</p>
+<div class="caption">
+  <img src="{{ '/images/SenateDistricts2002_Large_Color4.png' | prepend: site.baseurl }}" alt="SenateLargeColor" />
+  <p class="caption-text">2002 Political Districts</p>
+</div>
+{% include abstract.html
+  download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mM1VpTXBvUkEtcEk"
+  name="2002 - 2011 House, Senate and Congressional Districts"
+  stewards="AGRC and the Lieutenant Governor's Office"
+  abstract="These political districts were used for election purposes from January 1, 2002 through December 31, 2011 and for purposes of elected representation and other purposes through Dec 31, 2012. This dataset includes the political districts used for the Utah State Legislature (state senate districts and state house districts); and U.S congressional districts."
+%}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="StateHouseDistricts">State House Districts</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/HouseDistricts2002_Small_Color4.png" | prepend: site.baseurl }}" alt="StateHouse2002" />The Utah House of Representatives is comprised of 75 men and women elected to two-year terms. Political.UtahHouseDistricts2002 show the house districts that these elected officials represent.
-The DIST field contains the House district number.</p>
-<p>The COLOR4 field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
-<p>There are no constraints or warranties with regard to the use of this dataset.</p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="House">
+      <a href="#House" class="anchor--link">State House Districts</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ '/images/HouseDistricts2002_Small_Color4.png' | prepend: site.baseurl }}" alt="StateHouse2002" />
+    <p>The Utah House of Representatives is comprised of 75 men and women elected to two-year terms. Political.UtahHouseDistricts2002 show the house districts that these elected officials represented in 2002. The <code>DIST</code> field contains the House district number.</p>
+    <p>The <code>COLOR4</code> field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
+      <li><a href="http://le.utah.gov/house2/index.html">State of Utah House of Representatives</a></li>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.POLITICAL.UtahHouseDistricts2002.xml">FGDC Metadata</a></li>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="House"
+    info=page.House
+  %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="StateHouseDistricts-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mX3dKblVJT2pLOTQ&export=download">State House: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mQ0trZW42RkM4elE&export=download">State House: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
-<li><a href="http://le.utah.gov/house2/index.html">State of Utah House of Representatives</a>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_POLITICAL_UtahHouseDistricts2002.html">FGDC Metadata</a>
-</li>
-</ul>
 
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="StateHouseDistricts-updates">Updates</h5>
-        </div>
-        <div class="panel-content">This dataset was last updated in 2002.</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="StateSenateDistricts">State Senate Districts</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/SenateDistricts2002_Small_Color4.png" | prepend: site.baseurl }}" alt="StateSenate2002" />The Utah State Senate is comprised of 29 men and women elected to four-year terms. Political.UtahSenateDistricts2012 shows the new senate districts that elected officials will represent.
-The DIST field contains the Senate district number.</p>
-<p>The COLOR4 field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
-<p>There are no constraints or warranties with regard to the use of this dataset.</p>
-<p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.<br />
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="StateSenateDistricts">
+      <a href="#StateSenateDistricts" class="anchor--link">State Senate Districts</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ '/images/SenateDistricts2002_Small_Color4.png' | prepend: site.baseurl }}" alt="StateSenate2002" />
+    <p>The Utah State Senate is comprised of 29 men and women elected to four-year terms. Political.UtahSenateDistricts2002 shows the senate districts that these elected officials represented in 2002. The <code>DIST</code> field contains the Senate district number.</p>
+    <p>The <code>COLOR4</code> field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+    <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
+      <li><a href="http://www.utahsenate.org/">Utah State Senate</a></li>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.POLITICAL.UtahSenateDistricts2002.xml">FGDC Metadata</a></li>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="StateSenateDistricts"
+    info=page.StateSenateDistricts
+  %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="StateSenateDistricts-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7memx6U2ozZEJlbUE&export=download">State Senate: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNlpxWkFZSUM1Vnc&export=download">State Senate: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
-<li><a href="http://www.utahsenate.org/">Utah State Senate</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_POLITICAL_UtahSenateDistricts2002.html">FGDC Metadata</a>
-</li>
-</ul>
 
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="StateSenateDistricts-updates">Updates</h5>
-        </div>
-        <div class="panel-content">
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="UnitedStatesCongressionalDistricts">United States Congressional Districts</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/USCongressionalDistricts2002_Small.png" | prepend: site.baseurl }}" alt="Congress2002" />U.S. congressional house districts determine the districts that elect a representative to send to the U.S. Congress. Utah currently has three congressional house districts, but starting in 2012 will have four districts. Political.USCongressDistricts2002 shows the three congressional districts.
-The DIST field contains the Congressional district number.</p>
-<p>There are no constraints or warranties with regard to the use of this dataset.</p>
-<p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.<br />
-</p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UnitedStatesCongressionalDistricts">
+      <a href="#UnitedStatesCongressionalDistricts" class="anchor--link">United States Congressional Districts</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ '/images/USCongressionalDistricts2002_Small.png' | prepend: site.baseurl }}" alt="Congress2002" />
+    <p>U.S. congressional house districts determine the districts that elect a representative to send to the U.S. Congress. Utah currently had three congressional house districts until 2012 when it was increased to four. Political.USCongressDistricts2002 shows the three congressional districts. The <code>DIST</code> field contains the Congressional district number.</p>
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+    <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://www.house.gov/">United States House of Representatives</a></li>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.POLITICAL.USCongressDistricts2002.xml">FGDC Metadata</a></li>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="UnitedStatesCongressionalDistricts"
+    info=page.UnitedStatesCongressionalDistricts
+  %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="UnitedStatesCongressionalDistricts-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU3k0RVY0dGlFUzg&export=download">US Congress Districts: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbjhQYjItTXZGTG8&export=download">US Congress Districts: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://www.house.gov/">United States House of Representatives</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/SGID93_Vector/NAD83/MetadataHTML/SGID93_POLITICAL_USCongressDistricts2002.html">FGDC Metadata</a>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="UnitedStatesCongressionalDistricts-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> </p>
-
-        </div>
-    </div>
-    </div>

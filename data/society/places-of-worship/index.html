@@ -3,34 +3,39 @@ status: publish
 layout: page
 title: Places of Worship
 author:
-  display_name: Jessie Pechmann
-  email: jpechmann@utah.gov
+  display_name: JP
+  email: agrc@utah.gov
 tags:
-  - chapels
-  - church
-  - churches
-  - convents
-  - data
-  - facilities
-  - mosques
+  - society
   - religion
-  - shrines
-  - spiritual
-  - synagogues
-  - temples
-  - worship
 categories: []
 published: true
 date: 2012-06-21 16:51:38 -0600
+Worship:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mS2V3WFB4RTFZS1U"
+      label: "Places of Worship"
+  updates:
+    - 2011
 ---
-<div class="caption"><img title="map" src="{{ "/images/PlacesofWorship.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" /><p class="caption-text">Places of Worship in Utah</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mS2V3WFB4RTFZS1U" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Places of Worship</h4>
-<p></strong></p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC</p>
-<p><strong>Abstract:</strong><br />
-Society.PlacesOfWorship contains locations for places of worship in Utah. The definition of a place of worship is any type of building or portion of a building that is used, constructed, designed, or adapted to be used as a place for religious and spiritual activities. This doesn’t include religious schools or community centers, unless they meet the definition as a place of worship. Examples of facilities in this dataset are chapels, churches, convents, mosques, shrines, synagogues, and temples. The sources of this dataset are the Large Protestant Churches, Mosques, Jewish Synagogues, and Roman Catholic Churches in Large Cities dataset and additional AGRC research. </p>
-<p><i class="fa fa-globe"></i> Usage: No usage tips at this time.<br />
-<i class="fa fa-calendar"></i> Last Update: 2011<br />
-<i class="fa fa-user"></i> Contact: agrc@utah.gov </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/PlacesofWorship.png" | prepend: site.baseurl }}" alt="Places of worship" />
+  <p class="caption-text">Places of Worship in Utah</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mS2V3WFB4RTFZS1U"
+name="Places of Worship"
+stewards="AGRC"
+abstract="Society.PlacesOfWorship contains locations for places of worship in Utah. " %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Worship">
+      <a href="#Worship" class="anchor--link">Places of Worship</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>The definition of a place of worship is any type of building or portion of a building that is used, constructed, designed, or adapted to be used as a place for religious and spiritual activities. This does not include religious schools or community centers, unless they meet the definition as a place of worship. Examples of facilities in this dataset are chapels, churches, convents, mosques, shrines, synagogues, and temples. The sources of this dataset are the Large Protestant Churches, Mosques, Jewish Synagogues, and Roman Catholic Churches in Large Cities dataset and additional AGRC research.</p>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="Worship"
+  info=page.Worship %}
+</div>
