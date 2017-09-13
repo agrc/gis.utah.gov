@@ -1,0 +1,43 @@
+---
+status: publish
+layout: page
+title: Water Rights Regions
+author:
+  display_name: JP
+  email: agrc@utah.gov
+tags:
+  - water
+  - water rights
+categories: []
+published: true
+date: 2011-11-22 18:22:38 -0700
+WaterRights:
+  downloads:
+  updates:
+    - Unknown
+---
+<div class="caption">
+  <img title="map" src="{{ "/images/WaterRights.png" | prepend: site.baseurl }}" alt="Water Rights Regions" />
+  <p class="caption-text">Water Rights Regions</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mOEdNZ0NONDNSSFU"
+name="Water Rights Regions"
+stewards="AGRC and DNR"
+abstract="Water.WaterRightsRegions represents the water rights regions in Utah." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="WaterRights">
+      <a href="#WaterRights" class="anchor--link">Water Rights</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p><code>BOOK_NAME</code> contains the name of the region</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://www.waterrights.utah.gov/" title="WaterRights">Utah Division of Water Rights</a>
+    </ul>
+    <p>Questions may be directed to <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="WaterRights"
+  info=page.WaterRights %}
+</div>

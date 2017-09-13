@@ -1,0 +1,130 @@
+---
+status: publish
+layout: page
+title: Lakes, Rivers, Streams, and Springs
+author:
+  display_name: JP
+  email: agrc@utah.gov
+tags:
+  - hydrography
+  - hydrology
+  - lakes
+  - nhd
+  - rivers
+  - water
+categories: []
+published: true
+date: 2011-11-22 17:46:55 -0700
+NHDLakes:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbzNaZ3ZTTjFXSEk&export=download"
+      label: "Lakes NHD High Res: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSDM1QnphZjVpWkU&export=download"
+      label: "Lakes NHD High Res: Shapefile"
+  updates:
+    - December 2016
+NHDStreams:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mY2t5cnZuNlJJNjg&export=download"
+      label: "Streams NHD High Res: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7ma2k3blloOUNfaDA&export=download"
+      label: "Streams NHD High Res: Shapefile"
+  updates:
+    - December 2016
+NHDSprings:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mazdwZ1J3MTJWZFE&export=download"
+      label: "Springs NHD High Res: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVFVTU1hHUWtQTzA&export=download"
+      label: "Springs NHD High Res: Shapefile"
+  updates:
+    - July 2015
+---
+<div class="caption">
+  <img src="{{ "/images/Water.png" | prepend: site.baseurl }}" alt="Water" />
+  <p class="caption-text">Water Sample</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdjRzWWo0OUVKMVE"
+name="NHD Lakes, Rivers, Streams, and Springs"
+stewards="AGRC & USGS"
+abstract="The Lakes, Rivers, Streams & Springs data package contains feature layers that are derived from the <a href='http://nhd.usgs.gov/data.html'>National Hydrography Dataset (NHD)</a>. The NHD is the surface water component of the National Map created by the United States Geological Survey (USGS). The NHD contains a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. NHD data in it's entirety can be downloaded from <a href='ftp://nhdftp.usgs.gov/DataSets/Staged/States/FileGDB/HighResolution/'>here</a> (ex. NHDH_UT_)." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="NHDLakes">
+      <a href="#NHDLakes" class="anchor--link">NHD Lakes</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/Lakes.png" | prepend: site.baseurl }}" alt="lakes" />
+    <p>Water.LakesNHDHighRes is the recommended data layer for depicting Utah's lakes, reservoirs, and smaller features, etc. This data is derived from the National Hydrology Database (NHD) compiled by the UGSS in partnership with AGRC and other states' GIS programs. The derivation and modification process has been performed by AGRC to provide a general purpose feature class of water bodies. Two fields have been added to this feature class (InUtah and IsMajor) and features have been split at the state boundary. General Utah GIS data inquiries: agrc@utah.gov</p>
+    <h5>NHD Codes</h5>
+    <ul class="dotless">
+      <li><code>FCODE</code> can be used to classify water body features by functional type.
+      <li><code>FNAME</code> is the name of the water body feature
+    </ul>
+    <h5>AGRC maintained codes for cartography</h5>
+    <ul class="dotless">
+      <li><code>ISMAJOR</code> can be used to query only the major lakes for coarse scale mapping
+      <li><code>INUTAH</code> can be used to exclude water bodies outside the state boundary. All water body features that cross the state boundary have been split and attributed (<code>1</code> = in Utah and <code>0</code> = outside Utah)
+    <ul>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://nhd.usgs.gov/">National Hydrography Dataset</a>
+        <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.WATER.LakesNHDHighRes.xml">FGDC Metadata</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="NHDLakes"
+  info=page.NHDLakes %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="NHDStreams">
+      <a href="#NHDStreams" class="anchor--link">NHD Streams</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/Streams.png" | prepend: site.baseurl }}" alt="Streams" />
+    <p>Water.StreamsNHDHighRes is the recommended data layer for depicting Utah's streams, canals, washes, etc. This is a large dataset that is derived from the National Hydrology Database (NHD) compiled by the UGSS in partnership with AGRC and other states' GIS programs. The derivation and modification process has been performed by AGRC to provide a general purpose feature class of streams. Two fields have been added to this feature class (InUtah and IsMajor) and features have been split at the state boundary. General Utah GIS data inquiries: agrc@utah.gov</p>
+    <h5>NHD Codes</h5>
+    <ul class="dotless">
+      <li><code>FCODE</code> can be used to classify water course features by functional type.
+      <li><code>FNAME</code> is the name of the water course
+    </ul>
+    <h5>AGRC maintained codes for cartography</h5>
+    <ul class="dotless">
+      <li><code>ISMAJOR</code> can be used to query only the major water courses for coarse scale mapping
+      <li><code>ISSUBMERGED</code> can be used to exclude the hydrologic network features that have been added across water bodies to the NHD dataset for linear water flow modeling
+      <li><code>INUTAH</code> can be used to exclude water courses outside the state boundary. All water courses features that cross the state boundary have been split and attributed (<code>1</code> = in Utah and <code>0</code> = outside Utah)
+    </ul>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li>Points of Diversion depicts agricultural irrigation and other diversion points at or along water features. This dataset is stewarded by the Utah Division of Water Resources. Contact <a href="mailto:leschler@utah.gov">Lee Eschler</a>.
+      <li>Source Water Protection Zones (Drinking Water) are maintained by the Utah Division of Drinking Water. This dataset is considered a protected record. Those with a legimate need for this data are invited to contact <a href="mailto:kjohnson@utah.gov">Kate Johnson</a>.
+      <li>Water-Related Land Use characterizes the type of water usage (irrigation, crop type, urban uses, etc) for land, statewide (see SGID Planning for moredetail).
+      <li><a href="http://nhd.usgs.gov/">National Hydrography Dataset</a></li>
+      <li><a href="http://nationalmap.gov/streamer/webApp/welcome.html">USGS / National Map - Streamer</a></li>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.WATER.StreamsNHDHighRes.xml">FGDC Metadata</a></li>
+    </ul>
+  </div>
+  {% include packagedata.html name="NHDStreams"
+  info=page.NHDStreams %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="NHDSprings">
+      <a href="#NHDSprings" class="anchor--link">NHD Springs</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/Springs.png" | prepend: site.baseurl }}" alt="Springs" />
+    <p>Water.SpringsNHDHighRes is a point layer derived by AGRC from the NHD.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://nhd.usgs.gov/">National Hydrography Dataset</a>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.WATER.SpringsNHDHighRes.xml">FGDC Metadata</a>
+    </ul>
+    <p>General Utah GIS data inquiries: agrc@utah.gov</p>
+  </div>
+  {% include packagedata.html name="NHDSprings"
+  info=page.NHDSprings %}
+</div>
