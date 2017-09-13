@@ -1,0 +1,79 @@
+---
+status: publish
+layout: page
+title: Wetlands
+author:
+  display_name: JP
+  email: agrc@utah.gov
+tags:
+  - usfws
+  - water
+  - wetlands
+categories: []
+published: true
+date: 2011-11-22 14:47:08 -0700
+Wetlands:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbnlUUTNWbWdOclU&export=download"
+      label: "Wetlands: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV084TkJ2S0JmOXc&export=download"
+      label: "Wetlands: Shapefile"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maWN0RUVCWXVOdTA&export=download"
+      label: "Wetlands Mapping Projects: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maUhMQWlVZzg1dm8&export=download"
+      label: "Wetlands Mapping Projects: Shapefile"
+  updates:
+    - This feature class was first published in March 2014 and will be updated yearly
+WetlandsNWI:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTGNRTTZZMkZkUDA&export=download"
+      label: "Wetlands NWI: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV0E1cGs0NWxodGM&export=download"
+      label: "Wetlands NWI: Shapefile"
+  updates:
+    - March 2017
+---
+<div class="caption">
+  <img title="map" src="{{ "/images/wetlands.png" | prepend: site.baseurl }}" alt="Wetlands" />
+  <p class="caption-text">Wetlands in the Bear River Migratory Bird Refuge Area</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mOXdndHpnektzV0U"
+name="Wetlands"
+stewards="Utah Geologic Survey, Department of Natural Resources"
+abstract="Water.Wetlands was compiled from the US Fish and Wildlife Service's National Wetland Inventory (NWI) with additional data from US Forest Service, Utah Geological Survey, and Utah Automated Geographic Reference Center using the Cowardin (1979) classification scheme. In addition to the Cowardin fields, data has been attributed by the Utah Geological Survey to provide functional and descriptive codes associated with each wetland class as described by the <a href='http://ugspub.nr.utah.gov/publications/open_file_reports/ofr-661.pdf'>Utah Wetland Functional Classification: Version 1</a>. This data set is maintained by the Utah Geologic Survey and will be updated as new mapping projects are completed." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Wetlands">
+      <a href="#Wetlands" class="anchor--link">Wetlands</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/wetlands2.png" | prepend: site.baseurl }}" alt="Wetlands" />
+    <p>Water.Wetlands represents wetland areas in Utah compiled from NWI, USFS, and UGS sources. In addition to the Cowardin fields, data has been attributed by the Utah Geological Survey to provide functional and descriptive codes associated with each wetland class. This data set is actively being maintained by the Utah Geologic Survey.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://geology.utah.gov">Utah Geologic Survey</a></li>
+    </ul>
+    <p>For questions, contact Ryhan Sempler at the Utah Geological Survey. 801-537-3338.</p>
+  </div>
+  {% include packagedata.html name="Wetlands"
+  info=page.Wetlands %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="WetlandsNWI">
+      <a href="#WetlandsNWI" class="anchor--link">Wetlands NWI</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/wetlands.png" | prepend: site.baseurl }}" alt="National Wetlands Inventory" />
+    <p>Water.WetlandsNWI represents wetland areas in Utah as delineated by the National Wetlands Inventory (NWI) conducted by the U.S. Fish and Wildlife Service (USFWS).</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://www.fws.gov/wetlands/">U.S. Fish and Wildlife Service National Wetlands Inventory</a></li>
+    </ul>
+    <p>For questions, contact <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="WetlandsNWI"
+  info=page.WetlandsNWI %}
+</div>

@@ -1,0 +1,53 @@
+---
+status: publish
+layout: page
+title: Watershed Areas
+author:
+  display_name: JP
+  email: agrc@utah.gov
+tags:
+  - water
+  - watersheds
+categories: []
+published: true
+date: 2011-11-22 18:03:41 -0700
+Watershed:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mTjFaU0hXdXpOTDQ"
+      label: "Watershed Areas"
+  updates:
+    - Unknown
+---
+<div class="caption">
+  <img title="map" src="{{ "/images/WatershedAreas.png" | prepend: site.baseurl }}" alt="WatershedAreas" />
+  <p class="caption-text">Watershed sub-basins</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mTjFaU0hXdXpOTDQ"
+name="Watershed Areas"
+stewards="AGRC, BLM"
+abstract="Water.Watersheds_Area represents the watershed areas throughout Utah." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Watershed">
+      <a href="#Watershed" class="anchor--link">Watershed Areas</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>This data set is intended to be used as a tool for water-resource management and planning activities, particularly for site-specific and localized studies requiring a level of detail provided by large-scale map information.</p>
+    <ul class="dotless">
+      <li><code>HUC_8</code> contains the 8 digit hydrologic unit code for the 4th level sub-basins
+      <li><code>HU_8_NAME</code> contains the sub-basin name
+      <li><code>HUC_10</code> contains the 10 digit hydrologic unit code for the 5th level watersheds
+      <li><code>HU_10_NAME</code> contains the watershed name
+      <li><code>HUG_12</code> contains the 12 digit hydrologic unit code for the 6th level subwatersheds
+      <li><code>HU_12_NAME</code> contains the subwatershed name
+    </ul>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.WATER.Watersheds_Area.xml">FGDC Metadata</a>
+    </ul>
+    <p>Questions may be directed to <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="Watershed"
+  info=page.Watershed %}
+</div>
