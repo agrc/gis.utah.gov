@@ -2,244 +2,230 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="{{ site.twitter_username }}" />
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:image" content="{{ "/images/twittercard.png" | prepend: site.baseurl | prepend: site.url }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{ site.twitter_username }}" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="twitter:image" content="{{ "/images/twittercard.png" | prepend: site.baseurl | prepend: site.url }}" />
 
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="Utah GIS Portal" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{{ "/images/facebookcard.jpg" | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Utah GIS Portal" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image" content="{{ "/images/facebookcard.jpg" | prepend: site.baseurl | prepend: site.url }}" />
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/favicon.ico?" | prepend: site.baseurl }}" />
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="alternate" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/atom+xml" title="{{ site.title }} Sitewide ATOM Feed">
-    <link rel="alternate" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }} Sitewide RSS Feed">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/favicon.ico?" | prepend: site.baseurl }}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/atom+xml" title="{{ site.title }} Sitewide ATOM Feed">
+  <link rel="alternate" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }} Sitewide RSS Feed">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-    <div id="utahgov_statewideheader" style="font-size: 11px;">
-        <div class="pull-left">
-            <a href="http://www.utah.gov" id="stateheader_brand" style="">Utah.gov</a>
-        </div>
-        <div class="pull-left">
-            <ul class="dotless">
-                <li class="pull-left">
-                    <span id="utahgov_statewideheader_button_services">
-                        <a href="http://www.utah.gov/services/" target="_blank">Utah.gov Services</a>
-                    </span>
-                </li>
-                <li class="pull-left">
-                    <span id="utahgov_statewideheader_button_listings">
-                        <a href="http://www.utah.gov/government/agencylist.html" title="Utah.gov Agency Listings" target="_blank">Agencies</a>
-                    </span>
-                </li>
-            </ul>
-        </div>
-        <div class="pull-right">
-            <div id="search_activator" style="margin-right: 5px">
-                <span onclick="showsearch();" style="text-decoration: none;color: #535353;">Search all of Utah.gov »</span>
-            </div>
-            <div id="utahgov_header_search" style="display: none" class="pull-right">
-                <input id="searchutgov" class="pull-left" type="text" title="Utah.gov Search" placeholder="Utah.gov Search" style="margin: 1px 0 0; background: #fff; border: 1px solid #dadada; padding: 0 4px 0 5px;border-radius: 5px 0 0 5px; height:21px; width: 100px;">
-                <button id="searchutgovbtn" style="margin-top:1px">Search</button>
-            </div>
-        </div>
-        <div class="clear"></div>
+  <div id="utahgov_statewideheader" style="font-size: 11px;">
+    <div class="pull-left">
+      <a href="http://www.utah.gov" id="stateheader_brand" style="">Utah.gov</a>
     </div>
-    <header class="header">
-        <div class="inner">
-            <div>
-                <a href="{{ site.baseurl | prepend: site.url }}">
-                    <svg id="svg-logo" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 155">
-                        <title>AGRC</title>
-                        <g id='peak'>
-                            <path class="peak" d="M204.37,37.51l51.91,51.85c14.12,0.71,27.68,1.7,40.52,2.95L204.37,0,111.8,92.45c12.85-1.27,26.43-2.29,40.59-3Z" />
-                        </g>
-                        <g id='hills'>
-                            <path class="hills" d="M149.78,39.37L131.09,20.7,50,101.71c13.38-2.9,28.72-5.41,45.59-7.47Z" />
-                            <path class="hills" d="M278.92,20.7l-18.7,18.67,54.21,54.86c16.88,2.06,32.22,4.58,45.59,7.47Z"  />
-                        </g>
-                        <g id="land">
-                            <path class="land" d="M370.39,114.15c-30.68-7.7-74.28-13.22-124.17-15.21L203.88,56.66,161.46,99c-50.24,2.12-93.95,7.83-124.26,15.74-17,4.43-29.84,9.57-37.19,15.15,22.44-5.19,52.15-9.49,86.72-12.5,23.16-2,48.51-3.46,75.31-4.22L203.88,155l41.92-41.87c27.61,0.74,53.7,2.2,77.48,4.28,34.57,3,64.28,7.31,86.72,12.5-7.7-5.84-21.38-11.19-39.61-15.77M220.9,107.92l-14.55,14.54-2.43,19.6-2.62-19.71-14.06-14-21.4-2.65,22-2.91L201.5,89.12,203.88,70l2.56,19.33,13.21,13.19,21.86,2.71Z"
-                            />
-                        </g>
-                        <g id="dots">
-                            <path class="dots" d="M8.36,133.81l1.09,7.44,13.35-1.94-1.09-7.44Zm22.16-3.17,0.9,7.46,13.39-1.62L43.91,129Zm22.12-2.51,0.72,7.48,13.43-1.3-0.72-7.48ZM74.73,126l0.61,7.49,13.45-1.1-0.61-7.49ZM97,124.24l0.53,7.5,13.46-1-0.53-7.5Zm22.2-1.54,0.38,7.51,13.48-.68-0.38-7.5ZM155,121.07l-13.48.47,0.27,7.51,13.48-.47Z" />
-                            <path class="dots" d="M385.76,131.87l-1.08,7.44L398,141.25l1.09-7.44ZM363.55,129l-0.9,7.46L376,138.11l0.91-7.46Zm-22.15-2.19-0.72,7.48,13.43,1.3,0.73-7.48Zm-22.12-2-0.61,7.49,13.46,1.1,0.61-7.49ZM297,123.29l-0.53,7.5,13.46,1,0.54-7.5ZM274.83,122l-0.38,7.5,13.48,0.68,0.38-7.51Zm-22.61,6.56L265.71,129l0.27-7.51-13.48-.47Z"/>
-                        </g>
-                    </svg>
-                    <h2 class="logo-text">UTAH AGRC
-                        <span>Automated Geographic Reference Center</span>
-                    </h2>
-                </a>
-            </div>
-            {% assign current = page.url | downcase | split: '/' %}
-            <nav class="site-nav">
-                <ul id="menu-main-menu" class="menu">
-                    <li class="menu-item {% if current[1] == 'news' %}active-1{% endif %}"><a href="{{ "/news/" | prepend: site.baseurl }}">News</a>
-                    </li>
-                    <li class="menu-item {% if current[1] == 'data' %}active-2{% endif %}"><a href="{{ "/data/" | prepend: site.baseurl }}">Data</a>
-                    </li>
-                    <li class="menu-item {% if current[1] == 'developer' %}active-3{% endif %}"><a href="{{ "/developer/" | prepend: site.baseurl }}">Developer</a>
-                    </li>
-                    <li class="menu-item {% if current[1] == 'about' %}active-4{% endif %}"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
-                    </li>
-                    <li class="menu-item"><a href="{{ "/search/" | prepend: site.baseurl }}" aria-hidden="true"><i class="fa fa-search"></i><span class="sr-only">Site search link</span></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="page-content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
+    <div class="pull-left">
+      <ul class="dotless">
+        <li class="pull-left">
+          <span id="utahgov_statewideheader_button_services"><a href="http://www.utah.gov/services/" target="_blank">Utah.gov Services</a></span></li>
+        <li class="pull-left">
+          <span id="utahgov_statewideheader_button_listings"><a href="http://www.utah.gov/government/agencylist.html" title="Utah.gov Agency Listings" target="_blank">Agencies</a></span></li>
+      </ul>
     </div>
-    <footer class="site-footer wrapper">
-        <div class="grid">
-            <div class="grid__col grid__col--1-of-2">
-                <h3>Subscribe to our mailing list</h3>
-                <div id="mc_embed_signup">
-                    <form action="//utah.us2.list-manage.com/subscribe/post?u=0f7773ca3c6d02d1c38851ee9&amp;id=1fe9862f44" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                            <div class="mc-field-group">
-                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                                </label>
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                            </div>
-                            <div class="mc-field-group">
-                                <label for="mce-FNAME">First Name <span class="asterisk">*</span>
-                                </label>
-                                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-                            </div>
-                            <div class="mc-field-group">
-                                <label for="mce-LNAME">Last Name <span class="asterisk">*</span>
-                                </label>
-                                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
-                            </div>
-                            <div class="mc-field-group input-group">
-                                <strong>Please select updates that interest you </strong>
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" value="1" name="group[7425][1]" id="mce-group[7425]-7425-0">
-                                        <label for="mce-group[7425]-7425-0">Data Updates</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" value="2" name="group[7425][2]" id="mce-group[7425]-7425-1">
-                                        <label for="mce-group[7425]-7425-1">Info for Developers</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" value="8" name="group[7425][8]" id="mce-group[7425]-7425-2">
-                                        <label for="mce-group[7425]-7425-2">General Utah Map News</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" value="16" name="group[7425][16]" id="mce-group[7425]-7425-3">
-                                        <label for="mce-group[7425]-7425-3">Local &amp; State Government</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="mce-responses" class="clear">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                <label aria-hidden="true" for="mce-imnothere">some secret for mailchimp</label>
-                                <input aria-hidden="true" type="text" name="b_0f7773ca3c6d02d1c38851ee9_1fe9862f44" tabindex="-1" value="" id='mce-imnothere'>
-                            </div>
-                            <div class="clear">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="grid__col grid__col--1-of-2">
-                <h3>Let's Connect</h3>
-                <ul class="social-media-list">
-                    {% if site.github_username %}
-                    <li>
-                        <a class="clean" title="agrc github account" href="https://github.com/{{ site.github_username }}">
-                            <i aria-hidden="true" class="fa fa-github-square fa-3x"></i><span class="sr-only">github link</span>
-                        </a>
-                    </li>
-                    {% endif %} {% if site.twitter_username %}
-                    <li>
-                        <a class="clean" title="agrc twitter account" href="https://twitter.com/{{ site.twitter_username }}">
-                            <i aria-hidden="true" class="fa fa-twitter-square fa-3x"></i><span class="sr-only">twitter link</span>
-                        </a>
-                    </li>
-                    {% endif %} {% if site.facebook_username %}
-                    <li>
-                        <a class="clean" title="agrc facebook account" href="https://facebook.com/{{ site.facebook_username }}">
-                            <i aria-hidden="true" class="fa fa-facebook-square fa-3x"></i><span class="sr-only">facebook link</span>
-                        </a>
-                    </li>
-                    {% endif %} {% if site.vimeo_username %}
-                    <li>
-                        <a class="clean" title="agrc vimeo account" href="https://vimeo.com/{{ site.vimeo_username }}">
-                            <i aria-hidden="true" class="fa fa-vimeo-square fa-3x"></i><span class="sr-only">vimeo link</span>
-                        </a>
-                    </li>
-                    {% endif %}
+    <div class="pull-right">
+      <div id="search_activator" style="margin-right: 5px">
+        <span onclick="showsearch();" style="text-decoration: none;color: #535353;">Search all of Utah.gov »</span>
+      </div>
+      <div id="utahgov_header_search" style="display: none" class="pull-right">
+        <input id="searchutgov" class="pull-left" type="text" title="Utah.gov Search" placeholder="Utah.gov Search" style="margin: 1px 0 0; background: #fff; border: 1px solid #dadada; padding: 0 4px 0 5px;border-radius: 5px 0 0 5px; height:21px; width: 100px;">
+        <button id="searchutgovbtn" style="margin-top:1px">Search</button>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <header class="header">
+    <div class="inner">
+      <div>
+        <a href="{{ site.baseurl | prepend: site.url }}">
+          <svg id="svg-logo" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 155">
+            <title>AGRC</title>
+            <g id='peak'>
+              <path class="peak" d="M204.37,37.51l51.91,51.85c14.12,0.71,27.68,1.7,40.52,2.95L204.37,0,111.8,92.45c12.85-1.27,26.43-2.29,40.59-3Z" />
+            </g>
+            <g id='hills'>
+              <path class="hills" d="M149.78,39.37L131.09,20.7,50,101.71c13.38-2.9,28.72-5.41,45.59-7.47Z" />
+              <path class="hills" d="M278.92,20.7l-18.7,18.67,54.21,54.86c16.88,2.06,32.22,4.58,45.59,7.47Z"  />
+            </g>
+            <g id="land">
+              <path class="land" d="M370.39,114.15c-30.68-7.7-74.28-13.22-124.17-15.21L203.88,56.66,161.46,99c-50.24,2.12-93.95,7.83-124.26,15.74-17,4.43-29.84,9.57-37.19,15.15,22.44-5.19,52.15-9.49,86.72-12.5,23.16-2,48.51-3.46,75.31-4.22L203.88,155l41.92-41.87c27.61,0.74,53.7,2.2,77.48,4.28,34.57,3,64.28,7.31,86.72,12.5-7.7-5.84-21.38-11.19-39.61-15.77M220.9,107.92l-14.55,14.54-2.43,19.6-2.62-19.71-14.06-14-21.4-2.65,22-2.91L201.5,89.12,203.88,70l2.56,19.33,13.21,13.19,21.86,2.71Z"
+              />
+            </g>
+            <g id="dots">
+              <path class="dots" d="M8.36,133.81l1.09,7.44,13.35-1.94-1.09-7.44Zm22.16-3.17,0.9,7.46,13.39-1.62L43.91,129Zm22.12-2.51,0.72,7.48,13.43-1.3-0.72-7.48ZM74.73,126l0.61,7.49,13.45-1.1-0.61-7.49ZM97,124.24l0.53,7.5,13.46-1-0.53-7.5Zm22.2-1.54,0.38,7.51,13.48-.68-0.38-7.5ZM155,121.07l-13.48.47,0.27,7.51,13.48-.47Z" />
+              <path class="dots" d="M385.76,131.87l-1.08,7.44L398,141.25l1.09-7.44ZM363.55,129l-0.9,7.46L376,138.11l0.91-7.46Zm-22.15-2.19-0.72,7.48,13.43,1.3,0.73-7.48Zm-22.12-2-0.61,7.49,13.46,1.1,0.61-7.49ZM297,123.29l-0.53,7.5,13.46,1,0.54-7.5ZM274.83,122l-0.38,7.5,13.48,0.68,0.38-7.51Zm-22.61,6.56L265.71,129l0.27-7.51-13.48-.47Z"/>
+            </g>
+          </svg>
+          <h2 class="logo-text">UTAH AGRC
+            <span>Automated Geographic Reference Center</span>
+          </h2>
+        </a>
+      </div>
+      {% assign current = page.url | downcase | split: '/' %}
+      <nav class="site-nav">
+        <ul id="menu-main-menu" class="menu">
+          <li class="menu-item {% if current[1] == 'news' %}active-1{% endif %}"><a href="{{ "/news/" | prepend: site.baseurl }}">News</a></li>
+          <li class="menu-item {% if current[1] == 'data' %}active-2{% endif %}"><a href="{{ "/data/" | prepend: site.baseurl }}">Data</a></li>
+          <li class="menu-item {% if current[1] == 'developer' %}active-3{% endif %}"><a href="{{ "/developer/" | prepend: site.baseurl }}">Developer</a></li>
+          <li class="menu-item {% if current[1] == 'about' %}active-4{% endif %}"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
+          <li class="menu-item"><a href="https://agrc-status.netlify.com/">Status</a></li>
+          <li class="menu-item"><a href="{{ "/search/" | prepend: site.baseurl }}" aria-hidden="true"><i class="fa fa-search"></i><span class="sr-only">Site search link</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="page-content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </div>
+  <footer class="site-footer wrapper">
+    <div class="grid">
+      <div class="grid__col grid__col--1-of-2">
+        <h3>Subscribe to our mailing list</h3>
+        <div id="mc_embed_signup">
+          <form action="//utah.us2.list-manage.com/subscribe/post?u=0f7773ca3c6d02d1c38851ee9&amp;id=1fe9862f44" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-FNAME">First Name <span class="asterisk">*</span> </label>
+                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-LNAME">Last Name <span class="asterisk">*</span> </label>
+                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+              </div>
+              <div class="mc-field-group input-group">
+                <strong>Please select updates that interest you </strong>
+                <ul>
+                  <li>
+                    <input type="checkbox" value="1" name="group[7425][1]" id="mce-group[7425]-7425-0">
+                    <label for="mce-group[7425]-7425-0">Data Updates</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" value="2" name="group[7425][2]" id="mce-group[7425]-7425-1">
+                    <label for="mce-group[7425]-7425-1">Info for Developers</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" value="8" name="group[7425][8]" id="mce-group[7425]-7425-2">
+                    <label for="mce-group[7425]-7425-2">General Utah Map News</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" value="16" name="group[7425][16]" id="mce-group[7425]-7425-3">
+                    <label for="mce-group[7425]-7425-3">Local &amp; State Government</label>
+                  </li>
                 </ul>
-                <div class="clearfix"></div>
-                <h3>Broken links, images, or misinformation?</h3>
-                <div class="text-center">
-                    <a class="clean" href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
-                        <i aria-hidden="true" class="fa fa-code-fork fa-3x" style="display:block"></i><span class="sr-only">edit problems in this page link</span>
-                    </a>
-                    <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit this page on GitHub</a>
-                    <div>or</div>
-                    <a href="{{ site.github.repository_url }}/issues/new">Notify us with an issue</a>
-                    <div>Be sure to read the <a href="{{ "/about/contributing/" | prepend: site.baseurl }}">Contributing Guide</a>. We accept contributions!</div>
-                    <a href="{{ "/data/sgid-disclaimer" | prepend: site.baseurl }}">
-                      <i aria-hidden="true" class="fa fa-exclamation-triangle fa-2x" style="display:block"></i><span class="sr-only">AGRC Data Disclaimer</span>
-                    </a>
-                    Read the <a href="{{ "/data/sgid-disclaimer" | prepend: site.baseurl }}">
-                      AGRC Data Disclaimer
-                    </a>
-                </div>
-                <h3 class="text-center">Utah.gov Links</h3>
-                <ul class="dotless text-center">
-                    <li><a href="http://www.utah.gov">Utah.gov Home</a></li>
-                    <li><a href="http://www.utah.gov/disclaimer.html">Utah.gov Terms of Use</a></li>
-                    <li><a href="http://www.utah.gov/privacypolicy.html">Utah.gov Privacy Policy</a></li>
-                    <li><a href="http://www.utah.gov/accessibility.html">Utah.gov Accessibility Policy</a></li>
-                    <li><a href="http://www.utah.gov/translate.html">Translate Utah.gov</a></li>
-                </ul>
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <label aria-hidden="true" for="mce-imnothere">some secret for mailchimp</label>
+                <input aria-hidden="true" type="text" name="b_0f7773ca3c6d02d1c38851ee9_1fe9862f44" tabindex="-1" value="" id='mce-imnothere'>
+              </div>
+              <div class="clear">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
             </div>
+          </form>
         </div>
-        {% if site.github %}
-        <div class="muted text-center">
-            Build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
+      </div>
+      <div class="grid__col grid__col--1-of-2">
+        <h3>Let's Connect</h3>
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            <a class="clean" title="agrc github account" href="https://github.com/{{ site.github_username }}">
+                <i aria-hidden="true" class="fa fa-github-square fa-3x"></i><span class="sr-only">github link</span>
+            </a>
+          </li>
+          {% endif %} {% if site.twitter_username %}
+          <li>
+            <a class="clean" title="agrc twitter account" href="https://twitter.com/{{ site.twitter_username }}">
+                <i aria-hidden="true" class="fa fa-twitter-square fa-3x"></i><span class="sr-only">twitter link</span>
+            </a>
+          </li>
+          {% endif %} {% if site.facebook_username %}
+          <li>
+            <a class="clean" title="agrc facebook account" href="https://facebook.com/{{ site.facebook_username }}">
+                <i aria-hidden="true" class="fa fa-facebook-square fa-3x"></i><span class="sr-only">facebook link</span>
+            </a>
+          </li>
+          {% endif %} {% if site.vimeo_username %}
+          <li>
+            <a class="clean" title="agrc vimeo account" href="https://vimeo.com/{{ site.vimeo_username }}">
+                <i aria-hidden="true" class="fa fa-vimeo-square fa-3x"></i><span class="sr-only">vimeo link</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+        <div class="clearfix"></div>
+        <h3>Broken links, images, or misinformation?</h3>
+        <div class="text-center">
+          <a class="clean" href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
+            <i aria-hidden="true" class="fa fa-code-fork fa-3x" style="display:block"></i><span class="sr-only">edit problems in this page link</span>
+          </a>
+          <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit this page on GitHub</a>
+          <div>or</div>
+          <a href="{{ site.github.repository_url }}/issues/new">Notify us with an issue</a>
+          <div>Be sure to read the <a href="{{ "/about/contributing/" | prepend: site.baseurl }}">Contributing Guide</a>. We accept contributions!</div>
+          <a href="{{ "/data/sgid-disclaimer" | prepend: site.baseurl }}">
+            <i aria-hidden="true" class="fa fa-exclamation-triangle fa-2x" style="display:block"></i><span class="sr-only">AGRC Data Disclaimer</span>
+          </a>
+          Read the <a href="{{ "/data/sgid-disclaimer" | prepend: site.baseurl }}">
+            AGRC Data Disclaimer
+          </a>
         </div>
-        {% endif %}
-    </footer>
-    <script>
-        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-        ga('create','{{ site.analytics.google.tracking_id }}','auto');ga('send','pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    <script type="text/javascript">
-        function showsearch(){document.getElementById("utahgov_header_search").style.display="block",document.getElementById("search_activator").style.display="none"}var utgovsearch=[];utgovsearch.input=document.getElementById("searchutgov"),utgovsearch.btn=document.getElementById("searchutgovbtn"),utgovsearch.go=function(a){var b=utgovsearch.input.value;13===a.keyCode&&b.length>0?window.location.href="http://www.utah.gov/search-results.html?q="+b:"click"===a.type&&b.length>0&&(window.location.href="http://www.utah.gov/search-results.html?q="+b)},utgovsearch.btn.onclick=utgovsearch.go,utgovsearch.input.onkeypress=utgovsearch.go;
-    </script>
+        <h3 class="text-center">Utah.gov Links</h3>
+        <ul class="dotless text-center">
+          <li><a href="http://www.utah.gov">Utah.gov Home</a></li>
+          <li><a href="http://www.utah.gov/disclaimer.html">Utah.gov Terms of Use</a></li>
+          <li><a href="http://www.utah.gov/privacypolicy.html">Utah.gov Privacy Policy</a></li>
+          <li><a href="http://www.utah.gov/accessibility.html">Utah.gov Accessibility Policy</a></li>
+          <li><a href="http://www.utah.gov/translate.html">Translate Utah.gov</a></li>
+        </ul>
+      </div>
+    </div>
+    {% if site.github %}
+    <div class="muted text-center">
+        Build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
+    </div>
+    {% endif %}
+  </footer>
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','{{ site.analytics.google.tracking_id }}','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script type="text/javascript">
+    function showsearch(){document.getElementById("utahgov_header_search").style.display="block",document.getElementById("search_activator").style.display="none"}var utgovsearch=[];utgovsearch.input=document.getElementById("searchutgov"),utgovsearch.btn=document.getElementById("searchutgovbtn"),utgovsearch.go=function(a){var b=utgovsearch.input.value;13===a.keyCode&&b.length>0?window.location.href="http://www.utah.gov/search-results.html?q="+b:"click"===a.type&&b.length>0&&(window.location.href="http://www.utah.gov/search-results.html?q="+b)},utgovsearch.btn.onclick=utgovsearch.go,utgovsearch.input.onkeypress=utgovsearch.go;
+  </script>
 </body>
-
 </html>
