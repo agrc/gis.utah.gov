@@ -28,7 +28,3 @@ AGRC has freely served online base maps for many years. These caches are in the 
 <i class="fa fa-fw fa-map"></i> Finally, we have the **Color Infrared**, **Address Points** and **Topo** caches. The Color Infrared is a neat way to look at vegetation while the Topo cache contains all of the USGS Quad Sheets. The Topo cache displays the most relevant quad sheet (250K, 100K and 24K) depending on your scale. The Address Points cache is a fast way to view around 2.5 million address points.
 
 The [update schedule]({{ "/developer/base-maps/basemap-maintenance-schedule/" | prepend: site.baseurl }}) will keep you in the loop as to when they were last updated. You can also [use them in ArcGIS Desktop]( {{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
-
-## <i class="fa fa-exclamation-triangle"></i> The UTM base maps were deprecated on January 31, 2017
-
-_If you need continued support of the UTM base maps, we will be offering the tiles for on premise use. Please [contact AGRC]({{ "/about/contact/" | prepend: site.baseurl }}) for details._
