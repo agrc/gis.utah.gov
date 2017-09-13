@@ -49,3 +49,10 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/sgid-cadastre/turn-gps/                                                           /data/cadastre/turn-gps/                                        301
 /data/geoscience/aquifers-2/                                                            /data/geoscience/aquifers/                                      301
 /agrc-system-status-page/                                                               /agrc-status/                                                   301
+/data/water-data-services/                                                              /data/water/                                                    301
+/data/water-data-services/flood-areas/                                                  /data/water/flood-areas/                                        301
+/data/water-data-services/historic-lake-bonneville/                                     /data/water/historic-lake-bonneville/                           301
+/data/water-data-services/lakes-rivers-dams/                                            /data/water/lakes-rivers-dams/                                  301
+/data/water-data-services/water-rights-regions/                                         /data/water/water-rights-regions/                               301
+/data/water-data-services/watersheds/                                                   /data/water/watersheds/                                         301
+/data/water-data-services/wetlands/                                                     /data/water/wetlands/                                           301
