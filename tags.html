@@ -5,6 +5,22 @@ published: true
 title: gis.utah.gov stats
 permalink: /tags
 ---
+<h1>Contacts</h1>
+<div class="grid">
+{% for key in site.data.contacts %}
+  {% for possibleContact in key %}
+    {% if possibleContact.name %}
+      <div class="grid__col grid__col--1-of-4">{{ possibleContact.name }}</div>
+    {% else %}
+      {% for contact in possibleContact %}
+      {% if contact.name %}
+      <div class="grid__col grid__col--1-of-4">{{ contact.name }}</div>
+      {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</div>
 <h1>Categories</h1>
 <div class="grid">
 {% for cat in site.categories %}

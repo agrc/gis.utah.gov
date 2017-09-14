@@ -80,7 +80,7 @@ AutoCorrelatedDEMIndices:
       <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUUpwYTd4Qi1rRmM">Auto-Correlated DEM Extents and Indices Package</a>
       <li><a href="{{ "/data/elevation-terrain-data" | prepend: site.baseurl }}">Download Elevation and Terrain Data</a>
     </ul>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="AutoCorrelatedDEMExtents"
       info=page.AutoCorrelatedDEMExtents %}
@@ -107,7 +107,7 @@ AutoCorrelatedDEMIndices:
     <ul class="dotless">
       <li><a href="{{ "/data/elevation-terrain-data" | prepend: site.baseurl }}">Download Elevation and Terrain Data</a>
     </ul>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="AutoCorrelatedDEMIndices"
       info=page.AutoCorrelatedDEMIndices %}

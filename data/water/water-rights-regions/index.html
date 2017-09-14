@@ -38,7 +38,7 @@ abstract="Water.WaterRightsRegions represents the water rights regions in Utah."
     <ul class="dotless">
       <li><a href="http://www.waterrights.utah.gov/" title="WaterRights">Utah Division of Water Rights</a>
     </ul>
-    <p>Questions may be directed to <a href="mailto:agrc@utah.gov">AGRC</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="WaterRights"
   info=page.WaterRights %}

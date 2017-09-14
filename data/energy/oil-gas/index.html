@@ -227,7 +227,7 @@ abstract="These datasets depict oil and gas well surface points, units and field
     <ul class="dotless">
       <li><a href="https://oilgas.ogm.utah.gov/oilgasweb/live-data-search/lds-well/well-main.xhtml">More information on well data from DNR - DOGM</a></li>
     </ul>
-    <p>Contact: <a href="mailto:donstaley@utah.gov">Don Staley (DNR-OGM)</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.oil_wells %}</p>
   </div>
   {% include packagedata.html name="OilandGasWells"
   info=page.OilandGasWells %}
@@ -245,7 +245,7 @@ abstract="These datasets depict oil and gas well surface points, units and field
     <ul class="dotless">
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.DNROilGasFields.xml">Oil and Gas Fields: Metadata</a></li>
     </ul>
-    <p>Contact: <a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.oil_fields %}</p>
   </div>
   {% include packagedata.html name="OilandGasFields"
   info=page.OilandGasFields %}
@@ -263,7 +263,7 @@ abstract="These datasets depict oil and gas well surface points, units and field
     <ul class="dotless">
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.DNROilGasUnits.xml">Oil and Gas Units Metadata</a></li>
     </ul>
-    <p>Contact: <a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.oil_fields %}</p>
   </div>
   {% include packagedata.html name="OilandGasUnits"
   info=page.OilandGasUnits %}

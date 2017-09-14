@@ -76,8 +76,9 @@ Both of these give you the network solution.
 
 MS_CMR, MS_CMRP these are for connecting to single base when you are on the edge of the network or not getting a strong network solution. System will automatically find the closest station and connect you.
 
+{% capture turn %}{% include contact.html subject=page.title contact=site.data.contacts.turn  %}{% endcapture %}
 ##### Contacts
-[Sean A. Fernandez PLS](mailto:sfernandez@utah.gov) or [Mike Heagin](mailto:mheagin@utah.gov)
+{{ turn | strip_newlines }}
 
 ##### Related Resources
 

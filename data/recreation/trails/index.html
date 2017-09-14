@@ -69,7 +69,7 @@ abstract="Many Utah trails and trail access points have been obtained through th
       <dd><a href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing">Full Data Model</a>
       </dd>
     </dl>
-    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="Trails"
   info=page.Trails %}
@@ -89,7 +89,7 @@ abstract="Many Utah trails and trail access points have been obtained through th
     <ul class="dotless">
       <li><a href="http://www.udot.utah.gov/main/f?p=100:pg:0:::1:T,V:275,">UDOT Trails Page</a></li>
     </ul>
-    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="Trailheads"
   info=page.Trailheads %}

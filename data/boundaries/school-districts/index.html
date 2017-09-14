@@ -39,7 +39,7 @@ abstract="Boundaries.SchoolDistricts represents external school district boundar
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <p>School Districts in Utah.</p>
-    <p>Questions can be direction to <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="SchoolDistricts"
   info=page.SchoolDistricts %}

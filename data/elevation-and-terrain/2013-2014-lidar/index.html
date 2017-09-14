@@ -53,7 +53,7 @@ abstract="During the Fall of 2013 and the Spring of 2014 AGRC and partners acqui
       <li>LiDAR <em>derivative samples</em> (1GB file) [<a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/LiDAR_Samples.zip">ArcMap</a> , <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/LiDAR_Samples_CAD.zip">CAD</a>]
       <li>For more information about LiDAR visit <a href="{{ "/data/elevation-and-terrain/exploring-lidar/" | prepend: site.baseurl }}">Exploring LiDAR</a>
     </ul>
-    <p>For assistance, contact <a href="mailto:rkelson@utah.gov">Rick Kelson</a>.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>
   </div>
   {% include packagedata.html name="LiDARWasatchFront"
   info=page.LiDARWasatchFront %}

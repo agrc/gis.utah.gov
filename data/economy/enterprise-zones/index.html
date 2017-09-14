@@ -41,7 +41,7 @@ EnterpriseZones:
       <ul class="dotless">
         <li><a href="http://business.utah.gov/">Utah Governor's Office of Economic Development</a>
       </ul>
-      <p>General Utah GIS data inquiries: agrc@utah.gov</p>
+      <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     </div>
     {% include packagedata.html name="EnterpriseZones"
       info=page.EnterpriseZones %}

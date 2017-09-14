@@ -38,7 +38,7 @@ abstract="Geoscience.Soils represents the extent of defined soil types throughou
     <ul class="dotless">
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.GEOSCIENCE.Soils.xml">FGDC Metadata</a>
     </ul>
-    <p>Contact: General Utah GIS data inquiries: agrc@utah.gov</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="Soil"
   info=page.Soil %}
