@@ -1,0 +1,4 @@
+# this can be accessed via site.data.contacts['agrc']
+agrc:
+  name: AGRC
+  email: agrc@utah.gov
