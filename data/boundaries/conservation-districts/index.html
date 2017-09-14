@@ -49,7 +49,7 @@ abstract="This dataset contains GIS mapping data pertaining to the soil conserva
     <ul class="dotless">
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.BOUNDARIES.UtahConservationDistricts.xml">FGDC format metadata</a></li>
     </ul>
-    <p>Questions can be direction to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="ConservationDistricts"
   info=page.ConservationDistricts %}
@@ -68,7 +68,7 @@ abstract="This dataset contains GIS mapping data pertaining to the soil conserva
     <ul class="dotless">
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.BOUNDARIES.UtahConservationZones.xml">View FGDC format metadata</a></li>
     </ul>
-    <p>Questions can be direction to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="ConservationZones"
   info=page.ConservationZones %}

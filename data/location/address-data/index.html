@@ -87,7 +87,7 @@ abstract="This dataset contains GIS mapping data representing address point loca
     <p>The statewide address point layer is used as reference data for the <a href="{{site.baseurl}}{% post_url 2013-05-10-utah-statewide-address-geocoding-web-service-upgrade %}">api.mapserv.utah.gov</a> address locators. You can also find the address points in many <a href="https://atlas.utah.gov">web mapping applicaitons</a>.</p>
     <h5>Address Points as a Service</h5>
     <p>The address points are published as an <a href="http://utah.maps.arcgis.com/home/item.html?id=5b92021338f64f5ba77765d6fc47cbc9">ArcGIS Online service</a> as well as a <a href="{{ "/discover" | prepend: site.baseurl }}">Discover service</a>.</p>
-    <p>Please direct general questions to <a href="mailto:sfernandez@utah.gov">Sean Fernandez</a> at 801 209-9359. For county specific questions, see the <a href="https://docs.google.com/spreadsheet/ccc?key=0AkScYXX9W5INdFFRVHZkcWFYczd5MXhZYS1WTVN1elE&usp=sharing">contact list</a> for the Master Address Authority at each county.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.address_points %} For county specific questions, see the <a href="https://docs.google.com/spreadsheet/ccc?key=0AkScYXX9W5INdFFRVHZkcWFYczd5MXhZYS1WTVN1elE&usp=sharing">contact list</a> for the Master Address Authority at each county.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing">Utah Address Point Schema Definitions</a>
@@ -107,7 +107,7 @@ abstract="This dataset contains GIS mapping data representing address point loca
     <img class="inline-text-left outline" src="{{ "/images/AddSysQuads2.png" | prepend: site.baseurl }}" alt="Address System Quadrants" />
     <p>Location.AddressSystemQuadrants represents the local and countywide address system quadrants (NE, SE, SW, NW) throughout Utah. Addresses are assigned by local government addressing authorities using a defined addressing system, or grid. An addressing system consists of an origin point (0,0), a north-south axis, and an east-west axis, and a boundary within which addresses are assigned using this particular grid. This convention governs the assignment of addresses and is typically expressed as 100 address ranges per block or 800 address ranges per mile. Updates to this dataset are published periodically.</p>
     <p>For additional information regarding Address System Quadrants dataset, read the <a href="https://docs.google.com/document/d/1bMoBR_CZMjdIkZvOWFg0LI6-UokgqkUPSE-Ezp-ovas/edit">Utah Local Address Systems document</a></p>
-    <p>Questions can be directed to: <a href="mailto:agrc@utah.gov">AGRC</a>.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="AddressSystemQuadrants"
   info=page.AddressSystemQuadrants %}

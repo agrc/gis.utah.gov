@@ -72,7 +72,7 @@ abstract="Water.Wetlands was compiled from the US Fish and Wildlife Service's Na
     <ul class="dotless">
       <li><a href="http://www.fws.gov/wetlands/">U.S. Fish and Wildlife Service National Wetlands Inventory</a></li>
     </ul>
-    <p>For questions, contact <a href="mailto:agrc@utah.gov">AGRC</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="WetlandsNWI"
   info=page.WetlandsNWI %}

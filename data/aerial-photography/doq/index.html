@@ -71,7 +71,7 @@ abstract="A Digital Orthophoto Quadrangle (DOQ) is a digital image that has the 
     <ul class="dotless">
       <li><a href="http://raster.utah.gov/?cat=Color%20DOQ%202003%20(1m)">Download - Iron and Beaver County Color DOQs Interactive Map </a>
     </ul>
-    <p>If you have any trouble contact <a href="mailto:rkelson@utah.gov">Rick Kelson </a> at (801-538-3237).</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.imagery %}</p>
   </div>
   {% include packagedata.html name="2003DOQ"
   info=page.2003DOQ %}
@@ -89,9 +89,7 @@ abstract="A Digital Orthophoto Quadrangle (DOQ) is a digital image that has the 
         <li><a href="ftp://ftp.agrc.utah.gov/Imagery/DOQ/DOQ_Info.txt">DOQ Information Sheet</a>
         <li><a href="http://raster.utah.gov/?cat=DOQ%201990s%20(1m)">Download - DOQ Interactive Map</a>
     </ul>
-    <p>
-        If you have any trouble contact <a href="mailto:rkelson@utah.gov">Rick Kelson</a> at (801-538-3237)
-    </p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.imagery %}</p>
   </div>
   {% include packagedata.html name="1990DOQ"
   info=page.1990DOQ %}
@@ -108,7 +106,7 @@ abstract="A Digital Orthophoto Quadrangle (DOQ) is a digital image that has the 
     <ul class="dotless">
       <li><a href="http://raster.utah.gov/?cat=DOQ%201977%20(1m)">Download – Salt Lake County 1977 DOQs Interactive Map</a>
     </ul>
-    <p>If you have any trouble contact <a href="mailto:rkelson@utah.gov">Rick Kelson </a> at (801-538-3237).</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.imagery %}</p>
   </div>
   {% include packagedata.html name="1977DOQ"
   info=page.1977DOQ %}

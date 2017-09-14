@@ -58,7 +58,7 @@ USGSNationalElevationDataset:
       <li><a href="{{ "/data/elevation-and-terrain/#USGSDEM" | prepend: site.baseurl }}">10, 30 and 90 meter USGS DEMs</a>
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.INDICES.USGS24KQuads.xml">FGDC format metadata</a>
     </ul>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="USGSDigitalElevationModel" info=page.USGSDigitalElevationModel %}
 </div>
@@ -83,7 +83,7 @@ USGSNationalElevationDataset:
       <li><a href="{{ "/data/elevation-and-terrain/#USGSNED" | prepend: site.baseurl }}">Download 10 and 30 meter USGS NED DEMs</a>
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.INDICES.NED10_Quads.xml">View FGDC format metadata</a><br />
     </ul>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="USGSDigitalElevationModel" info=page.USGSDigitalElevationModel %}
 </div>
