@@ -30,7 +30,7 @@ If you are not covered by the license agreement for the Google imagery service y
 ### Coordinate System and Datum
 {: .text-left}
 
-The native coordinate system for the Google files and services is Web Mercator with a WGS 1984 datum. Many end users in Utah work in coordinate systems with a different datum (NAD 1983 for example). It will be critical for end users that require the highest locational precision to set up their working environment through the use of the appropriate geographic transformation (Esri software users should use NAD_1983_To_WGS_1984_5). The geographic transformation parameter is needed to overcome the locational difference between the WGS84 and NAD83 datum's “realization points” that are about a meter apart. Without the proper geographic transformation, reprojection algorithms will not be able to resolve the last meter of positional accuracy. In order for the imagery to be positioned as accurately as possible when there is a difference between the native projection and datums of the imagery and the client viewing application, a datum conversion must be set (<a href="{{ "/downloads/Transformation.png" | prepend: site.baseurl }}">see example</a>). For Pro/ArcMap users, the appropriate datum conversion for Utah is NAD_1983_To_WGS_1984_5. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information: <a href="http://support.esri.com/en/knowledgebase/techarticles/detail/24159">NAD_1983_To_WGS_1984_5</a>
+The native coordinate system for the Google files and services is Web Mercator with a WGS 1984 datum. Many end users in Utah work in coordinate systems with a different datum (NAD 1983 for example). It will be critical for end users that require the highest locational precision to set up their working environment through the use of the appropriate geographic transformation (Esri software users should use NAD_1983_To_WGS_1984_5). The geographic transformation parameter is needed to overcome the locational difference between the WGS84 and NAD83 datum's “realization points” that are about a meter apart. Without the proper geographic transformation, reprojection algorithms will not be able to resolve the last meter of positional accuracy. In order for the imagery to be positioned as accurately as possible when there is a difference between the native projection and datums of the imagery and the client viewing application, a [datum conversion]({{ "/downloads/Transformation.png" | prepend: site.baseurl }}) must be set. For Pro/ArcMap users, the appropriate datum conversion for Utah is NAD_1983_To_WGS_1984_5. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information: [NAD_1983_To_WGS_1984_5](http://support.esri.com/en/knowledgebase/techarticles/detail/24159)
 
 ### Horizontal Positional Accuracy
 {: .text-left}
@@ -40,7 +40,7 @@ Stated horizontal positional accuracy of the imagery is expected to achieve or e
 ### Adding a WMTS or WMS Service to ArcMap
 {: .text-left}
 
-Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -> Add WMTS Server` and paste the WMTS link you have been provided into the `URL:` line then hit OK. Now navigate to the newly added WMTS **'utah imagery - WMTS on discover.agrc.utah.gov'** by going to `Add Data -> GIS Servers`. If you drill down through the service folders you will find the `Utah` or `Google` layer to add <a href="{{ "/downloads/AddWMTS_tree.jpg" | prepend: site.baseurl }}">(see example)</a>. The WMS service can be added by following the instructions above just substitute `GIS Servers -> Add WMS Server`. Take a look at [this page]({{"/data/discover-server-information/" | prepend:site.baseurl}}) for more inforamtion about the available layers and using the base maps and imagery services in Pro/ArcMap.
+Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -> Add WMTS Server` and paste the WMTS link you have been provided into the `URL:` line then hit OK. Now navigate to the newly added WMTS **'utah imagery - WMTS on discover.agrc.utah.gov'** by going to `Add Data -> GIS Servers`. If you drill down through the service folders you will find the `Utah` or `Google` [layer to add]({{ "/downloads/AddWMTS_tree.jpg" | prepend: site.baseurl }}). The WMS service can be added by following the instructions above just substitute `GIS Servers -> Add WMS Server`. Take a look at [this page]({{"/data/discover-server-information/" | prepend:site.baseurl}}) for more inforamtion about the available layers and using the base maps and imagery services in Pro/ArcMap.
 
 ### Adding a WMTS or WMS Service to a Web Map
 {: .text-left}
@@ -50,8 +50,8 @@ Interested in using AGRC's Web Mercator services in your web maps? Take a look a
 ### Adding a WMS Service to CAD
 {: .text-left}
 
-- **Bentley Microstation** users should take a look at this <a href="ftp://ftp.agrc.utah.gov/Google/MicroStationGoogleWMS_HowTo.pdf">How To document</a>.  
-- **AutoCAD Civil 3D 2016** users should take a look at this <a href="https://us-support.nearmap.com/hc/en-us/articles/212242658-AutoCAD-Civil-3D-2016-WMS-Integration">How To document</a>.
+- **Bentley Microstation** users should take a look at the [How To document](ftp://ftp.agrc.utah.gov/Google/MicroStationGoogleWMS_HowTo.pdf).  
+- **AutoCAD Civil 3D 2016** users should take a look at the [How To document](https://us-support.nearmap.com/hc/en-us/articles/212242658-AutoCAD-Civil-3D-2016-WMS-Integration).
 
 ### Printing Web Maps with Discover Services
 {: .text-left}
@@ -66,12 +66,12 @@ In addition to the statewide `Google` imagery service layer there are archive la
 ### Google Flight Dates
 {: .text-left}
 
-The dates of each Google imagery flight block can be downloaded from <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_UtahServiceDates/_Statewide/">here</a> as a shapefile, viewed <a href="http://arcg.is/1E0wq3b">here</a> in ArcGIS Online, or utilized through our SDE as layer SGID10.INDICES.Google_UtahServiceDates.
+The [dates of each Google imagery flight](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_UtahServiceDates/_Statewide/) block can be downloaded from our ftp site as a shapefile, viewed in [ArcGIS Online](http://arcg.is/1E0wq3b), or utilized through our SDE as layer `SGID10.INDICES.Google_UtahServiceDates`.
 
 ### Pro/ArcMap User Considerations
 {: .text-left}
 
-If you have not yet received quad-word links to the service (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) that do not require a username and password contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a>.
+If you have not yet received quad-word links to the service (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) that do not require a username and password contact **[Rick Kelson](mailto:rkelson@utah.gov)**.
 
 Users experiencing problems with the service, such as blurry tiles or different year vintages at different scales, may need to clear their local cache.
 
@@ -89,8 +89,9 @@ To access the GCP services individual organizations will be provided URL links f
 ### Google Logos
 {: .text-left}
 
-<a href="ftp://ftp.agrc.utah.gov/Google/google_logos.zip">Download zipfile of Google logos</a><br />
-<img src="{{ "/images/ImageryCGoogle_WhiteTransparent.png" | prepend: site.baseurl }}" alt="white transparent" width="132" height="19"> <img src="{{ "/images/ImageryCGoogle_WhiteOnBlack.png" | prepend: site.baseurl }}" alt="white on black" width="132" height="19">
+[Download zipfile of Google logos](ftp://ftp.agrc.utah.gov/Google/google_logos.zip)  
+![white transparent]({{ "/images/ImageryCGoogle_WhiteTransparent.png" | prepend: site.baseurl }})  
+![white on black]({{ "/images/ImageryCGoogle_WhiteOnBlack.png" | prepend: site.baseurl }})
 
 ### Requests for On-Premise Use
 {: .text-left}
@@ -107,7 +108,7 @@ Request can be made to consume the imagery off-line when the provided imagery se
 
 - From time to time it is suggested that you refresh the connection to the imagery services by right-clicking your service connection, in ArcCatalog or ArcMap's Catalog Viewer, and select the `Refresh`  button to see the latest list of available services.
 - Since the Google acquisition flight blocks are not done all at once (as opposed to the NAIP product for example), there will certainly be color and positional changes at flight block boundaries. For large area maps, the color-balanced NAIP may be a more aesthetically pleasing cartographic choice.
-- A tile index of the .jp2 images that make up the service is available from our SDE as SGID10.INDICES.Google_Tiles or as a download <a  href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_Tiles/_Statewide/">from here</a>.
+- A tile index of the .jp2 images that make up the service is available from our SDE as SGID10.INDICES.Google_Tiles or as a [download from our ftp](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_Tiles/_Statewide/).
 - For future updates, Utah can certainly pass along requests to Google for additional update areas or for specific collection periods. But there is no provision in the current contract to create any expectation that those requests will be acted upon.
 - AGRC has downloaded a statewide master set of the image files for redistribution, as the download process directly from Google incurs transactional costs for cloud server & bandwidth usage.
-- AGRC has a feedback reporting form for imagery users around the state to report imagery and service issues so these can be passed along to Google. The feedback form can be found <a href="https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221">here</a>.
+- AGRC has a [feedback reporting form](https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221) for imagery users around the state to report imagery and service issues so these can be passed along to Google. Please direct your feed back to the form.
