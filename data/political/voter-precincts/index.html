@@ -2,7 +2,9 @@
 status: publish
 layout: page
 tags:
-  - data
+  - vote
+  - precinct
+  - polling location
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,68 +12,55 @@ published: true
 date: 2011-11-18 11:11:58 -0700
 title: Voting Precincts
 categories: []
+VotingPrecincts:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdGdWV0NxYWtRejA&export=download"
+      label: "Voting Precincts: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7meTJMRGZkYnRoOFE&export=download"
+      label: "Voting Precincts: Shapefile"
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mdzJtVk1sdGhWNjA"
+      label: "Archive dataset of 2011 Voting Precincts <strong>(no longer in use)</strong>"
+  updates:
+    - "June 2017<br>Check attribute <code>RECEIVEDDATE</code> to identify latest updates to specific precinct features."
 ---
-<div class="caption"><img title="map" src="{{ "/images/gallery/sgid/voterprecincts.png" | prepend: site.baseurl }}" alt="JudicialDistricts" /><p class="caption-text">Voting Precincts</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mX2FlbjZvXzNtYkU" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Voting Precincts</strong></h4>
-<p>&nbsp;</p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC</p>
-<p><strong>Abstract:</strong><br />
-Voting precincts determine a voter's ballot composition and polling location. Voting precinct boundaries take their shape from the boundaries of all political districts, including U.S Congress, State Senate, State House, School Board District, local council districts, special districts etc. However voter precincts must be drawn so that they contain less than maximum number of voters as specified by state law. Voting precincts are a critical part of the VISTA application, which is the statewide framework, overseen by the Lt. Governor's Office, for managing voters and elections.</p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
-<div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="VotingPrecincts">Voting Precincts</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/VoterPrecinctsSmall.png" | prepend: site.baseurl }}" alt="VotingPrecinctsSmall" />Political.VistaBallotAreas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.</p>
-</p>
-<dl>
-<dt>VISTAID</dt>
-<dd>a 11 character field that contains the precinct ID and optional subprecinct ID (separated by a colon).</dd>
-<dt>PRECINCTID</dt>
-<dd>the precinct component of VISTAID.</dd>
-<dt>SUBPRECINCTID</dt>
-<dd>the subprecinct component, where applicable, of VISTAID.</dd>
-<dt>VERSIONNBR</dt>
-<dd>an optional version reference name assigned by the county.</dd>
-<dt>EFFECTIVEDATE</dt>
-<dd>the date the precinct boundary took effect. A date of 1/1/2011 is the default effective date.</dd>
-<dt>RECEIVEDDATE</dt>
-<dd>indicate the date the precinct boundary was sent from the county to the AGRC.</dd>
-</dl>
-For questions, contact <a href="mailto:mjthomas@utah.gov">Mark Thomas</a> at the Lieutenant Governor's Office. Or for GIS questions, contact <a href="mailto:bgranberg@utah.gov">Bert Granberg</a> at AGRC.<br />
+<div class="caption">
+  <img title="map" src="{{ '/images/gallery/sgid/voterprecincts.png' | prepend: site.baseurl }}" alt="JudicialDistricts" />
+  <p class="caption-text">Voting Precincts</p>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="VotingPrecincts-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Links:</p>
-<ul>Download Voting Precincts:</ul>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdGdWV0NxYWtRejA&export=download">Voting Precincts: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7meTJMRGZkYnRoOFE&export=download">Voting Precincts: Shapefile</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdzJtVk1sdGhWNjA">Archive dataset of 2011 Voting Precincts <strong>(no longer in use)</strong></a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://elections.utah.gov/">Lieutenent Governor's Office: Elections</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="VotingPrecincts-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Last Update:<br />
-June 2017<br />
-Check attribute RECEIVEDDATE to identify latest updates to specific precinct features.</p>
-
-        </div>
-    </div>
-    </div>
+{% include abstract.html
+  name="Voting Precincts"
+  download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mX2FlbjZvXzNtYkU"
+  abstract="Voting precincts determine a voter's ballot composition and polling location. Voting precinct boundaries take their shape from the boundaries of all political districts, including U.S Congress, State Senate, State House, School Board District, local council districts, special districts etc. However voter precincts must be drawn so that they contain less than maximum number of voters as specified by state law. Voting precincts are a critical part of the VISTA application, which is the statewide framework, overseen by the Lt. Governor's Office, for managing voters and elections."
+%}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="VotingPrecincts">Voting Precincts</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ '/images/VoterPrecinctsSmall.png' | prepend: site.baseurl }}" alt="VotingPrecinctsSmall" />
+    <p>Political.VistaBallotAreas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.</p>
+    <dl>
+      <dt>VISTAID</dt>
+      <dd>A 11 character field that contains the precinct ID and optional subprecinct ID (separated by a colon).</dd>
+      <dt>PRECINCTID</dt>
+      <dd>The precinct component of VISTAID.</dd>
+      <dt>SUBPRECINCTID</dt>
+      <dd>The subprecinct component, where applicable, of VISTAID.</dd>
+      <dt>VERSIONNBR</dt>
+      <dd>An optional version reference name assigned by the county.</dd>
+      <dt>EFFECTIVEDATE</dt>
+      <dd>The date the precinct boundary took effect. A date of 1/1/2011 is the default effective date.</dd>
+      <dt>RECEIVEDDATE</dt>
+      <dd>Indicate the date the precinct boundary was sent from the county to the AGRC.</dd>
+    </dl>
+    <p>For questions, contact <a href="mailto:mjthomas@utah.gov">Mark Thomas</a> at the Lieutenant Governor's Office. Or for GIS questions, contact <a href="mailto:bgranberg@utah.gov">Bert Granberg</a> at AGRC.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://elections.utah.gov/">Lieutenent Governor's Office: Elections</a></li>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="VotingPrecincts"
+    info=page.VotingPrecincts
+    %}
+</div>
