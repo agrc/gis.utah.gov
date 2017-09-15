@@ -2,7 +2,8 @@
 status: publish
 layout: page
 tags:
-  - data
+  - judicial districts
+  - courts
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,22 +11,41 @@ published: true
 date: 2011-11-18 10:32:36 -0700
 title: Judicial Districts
 categories: []
+Districts:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mdVk4NXdHLUIxMUE"
+      label: "Judicial Districts"
+  updates:
+    - "Last updated in 2005"
 ---
-<div class="caption"><img title="map" src="{{ "/images/JudicialDistricts.png" | prepend: site.baseurl }}" alt="JudicialDistricts" /><p class="caption-text">Judicial Districts</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdVk4NXdHLUIxMUE" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>Judicial Districts</h4>
-<p></strong></p>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC</p>
-<p><strong>Abstract:</strong><br />
-This dataset represents the State Judicial Districts as designated by their political boundaries. District, Juvenile and Justice courts are located in each of the state's eight judicial districts.</p>
-<p><i class="fa fa-globe"></i> Usage:<br />
-The DISTRICT field contains the judicial district number.<br />
-There are no constraints or warranties with regard to the use of this dataset.</p>
-<p><i class="fa fa-calendar"></i> Last Update: Last updated in 2005<br />
-<i class="fa fa-user"></i> Contact: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-<i class="fa fa-link"></i> Links: </p>
-<ul>
-<li><a href="http://www.utcourts.gov/">Utah State Courts</a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.POLITICAL.JudicialDistricts.xml">FGDC Metadata</a></li>
-</ul>
+<div class="caption">
+  <img title="map" src="{{ '/images/JudicialDistricts.png' | prepend: site.baseurl }}" alt="JudicialDistricts" />
+  <p class="caption-text">Judicial Districts</p>
+</div>
+{% include abstract.html
+  name="Judicial Districts"
+  download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdVk4NXdHLUIxMUE"
+  abstract="This dataset represents the State Judicial Districts as designated by their political boundaries. District, Juvenile and Justice courts are located in each of the state's eight judicial districts."
+%}
+
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Districts">
+      <a href="#Districts" class="anchor--link">Districts</a>
+    </h3>
+    <div class="grid__col grid__col--12-of-12 package-content">
+      <p>The <code>DISTRICT</code> field contains the judicial district number.</p>
+      <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+
+      <h5>Related Resources</h5>
+      <ul class="dotless">
+        <li><a href="http://www.utcourts.gov/">Utah State Courts</a></li>
+        <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.POLITICAL.JudicialDistricts.xml">FGDC Metadata</a></li>
+      </ul>
+    </div>
+    {% include packagedata.html
+      name="Districts"
+      info=page.Districts
+    %}
+  </div>
+</div>
