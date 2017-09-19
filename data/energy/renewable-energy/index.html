@@ -2,7 +2,10 @@
 status: publish
 layout: page
 tags:
-  - data
+  - energy
+  - wind
+  - solar
+  - geothermal
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,122 +13,98 @@ published: true
 date: 2011-11-18 15:41:42 -0700
 title: Renewable Energy
 categories: []
+Solar:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSk03cUV3ZlppQkU&export=download"
+      label: "Solar Zones UREZ Phase1: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUzJHOThlZ1Q5UE0&export=download"
+      label: "Solar Zones UREZ Phase1: Shapefile"
+  updates:
+    - Unknown
+Geothermal:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNDRBdEVOdlZ5MGM&export=download"
+      label: "Geothermal Locations UREZ Phase2: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOF9jang0dDBEU00&export=download"
+      label: "Geothermal Locations UREZ Phase2: Shapefile"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTGViNUhaZFA5ZU0&export=download"
+      label: "Geothermal Zones UREZ Phase1: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUldFSnhlSjNxUVE&export=download"
+      label: "Geothermal Zones UREZ Phase1: Shapefile"
+  updates:
+    - Unknown
+WindEnergy:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUzhPcm1XYXdKRU0&export=download"
+      label: "Wind Zones UREZ Phase1: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mQWVqVnhOa1NOcVE&export=download"
+      label: "Wind Zones UREZ Phase1: File Shapefile"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWFY1dVNBMkkxdXc&export=download"
+      label: "Wind Drainage UREZ Phase1: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUklLOXRzUHVjaTQ&export=download"
+      label: "Wind Drainage UREZ Phase1: Shapefile"
+  updates:
+    - Unknown
 ---
-<div class="caption"><img src="{{ "/images/Renewableenergy.png" | prepend: site.baseurl }}" alt="Renewable Energy" /><p class="caption-text">Renewable Energy</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mN0VrUTZaRFZKWHM" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>Renewable Energy</h4>
-<p></strong><br />
-<strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward(s): AGRC & UREZ</strong></p>
-<p><strong>Abstract:</strong><br />
-This dataset contains Utah Renewable Energy Zone (UREZ) locations and areas with renewable energy potential for wind, solar and geothermal resources.</p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
+<div class="caption">
+  <img src="{{ "/images/Renewableenergy.png" | prepend: site.baseurl }}" alt="Renewable Energy" />
+  <p class="caption-text">Renewable Energy</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mN0VrUTZaRFZKWHM"
+name="Renewable Energy"
+stewards="AGRC & UREZ"
+abstract="This dataset contains Utah Renewable Energy Zone (UREZ) locations and areas with renewable energy potential for wind, solar and geothermal resources." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="Geothermal">Geothermal</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/GeothermalSM.png" | prepend: site.baseurl }}" alt="Changeme" />This dataset depicts renewable geothermal resources identified by the Utah Renewable Energy Zone (UREZ) task force.
-There are no constraints or warranties with regard to the use of this dataset.</p>
-<a href="mailto:agrc@utah.gov">AGRC</a></p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Geothermal">
+      <a href="#Geothermal" class="anchor--link">Geothermal</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/GeothermalSM.png" | prepend: site.baseurl }}" alt="Geothermal" />
+    <p>This dataset depicts renewable geothermal resources identified by the Utah Renewable Energy Zone (UREZ) task force. There are no constraints or warranties with regard to the use of this dataset.</p>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="Geothermal"
+  info=page.Geothermal %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="Geothermal-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNDRBdEVOdlZ5MGM&export=download">Geothermal Locations UREZ Phase2: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOF9jang0dDBEU00&export=download">Geothermal Locations UREZ Phase2: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTGViNUhaZFA5ZU0&export=download">Geothermal Zones UREZ Phase1: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUldFSnhlSjNxUVE&export=download">Geothermal Zones UREZ Phase1: Shapefile</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="Geothermal-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Unknown</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="Solar">Solar</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/SolarSM.png" | prepend: site.baseurl }}" alt="Changeme" />This dataset depicts renewable solar resources identified by the Utah Renewable Energy Zone (UREZ) task force.
-<a href="mailto:agrc@utah.gov">AGRC</a></p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Solar">
+      <a href="#Solar" class="anchor--link">Solar</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/SolarSM.png" | prepend: site.baseurl }}" alt="Solar" />
+    <p>This dataset depicts renewable solar resources identified by the Utah Renewable Energy Zone (UREZ) task force.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcmY2ZGphbUtMQTA">UREZ Phase1 Transmission Lines</a></li>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7md2R5aXNPYm5HcGM">UREZ Phaze2 Conceptual Transmission Lines</a></li>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maGt1TlljVzRwckE">UREZ Phaze2 Zone Boundaries</a></li>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="Solar"
+  info=page.Solar %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="Solar-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSk03cUV3ZlppQkU&export=download">Solar Zones UREZ Phase1: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUzJHOThlZ1Q5UE0&export=download">Solar Zones UREZ Phase1: Shapefile</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="Solar-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Unknown</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="WindEnergy">Wind Energy</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/WindSM.png" | prepend: site.baseurl }}" alt="Changeme" />This dataset depicts renewable wind resources identified by the Utah Renewable Energy Zone (UREZ) task force and contains the site name, wind potential, location comments and more.
-<a href="mailto:agrc@utah.gov">AGRC</a></p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="WindEnergy">
+      <a href="#WindEnergy" class="anchor--link">Wind Energy</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/WindSM.png" | prepend: site.baseurl }}" alt="Wind" />
+    <p>This dataset depicts renewable wind resources identified by the Utah Renewable Energy Zone (UREZ) task force and contains the site name, wind potential, location comments and more.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcmY2ZGphbUtMQTA">UREZ Phase1 Transmission Lines</a></li>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7md2R5aXNPYm5HcGM">UREZ Phaze2 Conceptual Transmission Lines</a></li>
+      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maGt1TlljVzRwckE">UREZ Phaze2 Zone Boundaries</a></li>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="WindEnergy"
+  info=page.WindEnergy %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="WindEnergy-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUzhPcm1XYXdKRU0&export=download">Wind Zones UREZ Phase1: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mQWVqVnhOa1NOcVE&export=download">Wind Zones UREZ Phase1: File Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWFY1dVNBMkkxdXc&export=download">Wind Drainage UREZ Phase1: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUklLOXRzUHVjaTQ&export=download">Wind Drainage UREZ Phase1: Shapefile</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="WindEnergy-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Unknown</p>
-
-        </div>
-    </div>
-    </div><p> <br />
-Other datasets:</p>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcmY2ZGphbUtMQTA">UREZ Phase1 Transmission Lines</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7md2R5aXNPYm5HcGM">UREZ Phaze2 Conceptual Transmission Lines</a></li>
-<li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7maGt1TlljVzRwckE">UREZ Phaze2 Zone Boundaries</a></li>
-</ul>

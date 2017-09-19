@@ -2,7 +2,9 @@
 status: publish
 layout: page
 tags:
-  - data
+  - energy
+  - oil
+  - gas
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,289 +12,259 @@ published: true
 date: 2011-11-18 15:48:42 -0700
 title: Oil and Gas
 categories: []
+OilandGasWells:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRlU4QjVGelp3M1E&export=download"
+      label: "Oil and Gas Wells: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maXpvUS1uTjBqQ3c&export=download"
+      label: "Oil and Gas Wells: Shapefile"
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mMTJKTEpXRWxvRm8"
+      label: "Oil and Gas Well Drill Paths (Horizontally Drilled)"
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mQzM0aWpmNGlSQ0k"
+      label: "Oil and Gas Wells Locations (Horizontally Drilled)"
+  updates:
+    - Nightly
+OilandGasFields:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdm9kUnpGdTZHbk0&export=download"
+      label: "Oil and Gas Fields: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVHhzUHJGelZLWFk&export=download"
+      label: "Oil and Gas Fields: Shapefile"
+  updates:
+    - May 2016
+OilandGasUnits:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mclNQczNZSFZDSjA&export=download"
+      label: "Oil and Gas Units: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mT09qa05sT2NwWjg&export=download"
+      label: "Oil and Gas Units: Shapefile"
+  updates:
+    - April 2015
 ---
 <div class="caption"><img src="{{ "/images/utah-oil-and-gas-wells.png" | prepend: site.baseurl }}" alt="Oil and Gas Wells" />
-    <p class="caption-text">Oil and Gas Wells</p>
+  <p class="caption-text">Oil and Gas Wells</p>
 </div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mS2c2djl3c2d6ZWs" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>Oil and Gas</strong></h4>
-<p>
-    <br />
-    <strong>Data Type: GIS Data Layer</strong><br />
-    <strong>Steward(s): AGRC & DNR-OGM</strong></p>
-<p><strong>Abstract:</strong><br /> These datasets depict oil and gas well surface points, units and fields polygons from the <a href="http://ogm.utah.gov">Utah Department of Natural Resources, Oil, Gas and Mining Division.</a></p>
-<p>The data can be previewed in an <a href="https://datamining.ogm.utah.gov/">interactive map</a> format. </p>
-<p><strong>Note:</strong><br />
-    On June 1, 2017, the Utah Division of Oil, Gas and Mining retired 5 old databases and went online with a new database. This prompted many changes to the data field names and content previously provided in the AGRC files. This new database was developed by contractors sponsored in part by the U.S. Department of Energy and the Ground Water Protection Council. The structure is much more complex than what was used in the past. The benefit is that it provides for the opportunity for the Division to collect more descriptive down-hole information for each wellbore permitted and drilled. Initially, much of the down-hole information will not be available because there was no place to save it in the previous databases. Eventually, as new wells are drilled and old legacy data is entered, more descriptive data will become available for the wells in Utah.
-</p>
-<strong>Well Status Codes</strong>
-<table>
-  <tbody>
-    <tr>
-      <td>NEW</td>
-      <td>New Application for Permit to Drill (APD), Deepen, or Re-enter - received but not yet approved.</td>
-    </tr>
-    <tr>
-      <td>RET</td>
-      <td>New Application for Permit to Drill (APD), Deepen, or Re-enter - Returned UNAPPROVED. </td>
-    </tr>
-    <tr>
-      <td>APD</td>
-      <td>Approved Permit to Drill, Deepen, or Re-enter.</td>
-    </tr>
-    <tr>
-      <td>LA</td>
-      <td>Location Abandoned - Approved Permit to Drill (APD) for a NEW well - Rescinded - no site disturbance.</td>
-    </tr>
-    <tr>
-      <td>CP</td>
-      <td>Cancelled Permit - Approved Permit to Deepen or Re-enter (APD) an EXISTING well.</td>
-    </tr>
-    <tr>
-      <td>DRL</td>
-      <td>Well Spudded and/or currently Drilling.</td>
-    </tr>
-    <tr>
-      <td>OPS</td>
-      <td>Drilling Operations Suspended - spudded, but no drilling activity for an extended period - well not yet completed.</td>
-    </tr>
-    <tr>
-      <td>P</td>
-      <td>Producing oil or gas well (OW, GW).</td>
-    </tr>
-    <tr>
-      <td>S</td>
-      <td>Shut-in oil or gas well (OW, GW).</td>
-    </tr>
-    <tr>
-      <td>PAI</td>
-      <td>Producing oil or gas zone or lateral AND Active Injection zone or lateral (well types: OWI, GWI, OGI, GGI, GWD).</td>
-    </tr>
-    <tr>
-      <td>PII</td>
-      <td>Producing oil or gas zone or lateral AND Inactive Injection zone or lateral (well types: OWI, GWI, OGI, GGI, GWD).</td>
-    </tr>
-    <tr>
-      <td>SAI</td>
-      <td>Shut-in oil or gas zone or lateral AND Active Injection zone or lateral (well types: OWI, GWI, OGI, GGI, GWD).</td>
-    </tr>
-    <tr>
-      <td>SII</td>
-      <td>Shut-in oil or gas zone or lateral AND Inactive Injection zone or lateral (well types: OWI, GWI, OGI, GGI, GWD).</td>
-    </tr>
-    <tr>
-      <td>TA</td>
-      <td>Temporarily-Abandoned oil or gas well.</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>Active service well (well types: WI, WD, GI, GS, WS, TW).</td>
-    </tr>
-    <tr>
-      <td>I</td>
-      <td>Inactive service well (well types: WI, WD, GI, GS, WS, TW).</td>
-    </tr>
-    <tr>
-      <td>PA</td>
-      <td>Any well or construct permanently Plugged and Abandoned.</td>
-    </tr>
-  </tbody>
-</table>
-<strong>Well Type Codes</strong>
-<table>
-  <body>
-    <tr>
-      <td>OW</td>
-      <td>Oil well - capable of producing oil in substantial quantities.</td>
-    </tr>
-    <tr>
-      <td>GW</td>
-      <td>Natural Gas well - capable of producing natural gas in substantial quantities and is not an oil well.</td>
-    </tr>
-    <tr>
-      <td>OGW</td>
-      <td>Combined Oil and Gas well - producing oil from one lateral or zone and gas from another.</td>
-    </tr>
-    <tr>
-      <td>CBM</td>
-      <td>Coalbed Methane well - a gas well that produces from coalbeds and rock strata associated with coalbed.</td>
-    </tr>
-    <tr>
-      <td>CO2</td>
-      <td>Carbon Dioxide well.</td>
-    </tr>
-    <tr>
-      <td>HE</td>
-      <td>Helium well.</td>
-    </tr>
-    <tr>
-      <td>OWI</td>
-      <td>Oil Well/Water Injection Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</td>
-    </tr>
-    <tr>
-      <td>GWI</td>
-      <td>Gas Well/Water Injection Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</td>
-    </tr>
-    <tr>
-      <td>OGI</td>
-      <td>Oil Well/Gas Injection Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</td>
-    </tr>
-    <tr>
-      <td>GGI</td>
-      <td>Gas Well/Gas Injection Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</td>
-    </tr>
-    <tr>
-      <td>GWD</td>
-      <td>Gas Well/Water Disposal Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 3, Monthly Injection Report with appropriate statuses.</td>
-    </tr>
-    <tr>
-      <td>WI</td>
-      <td>Water Injection well (service well).</td>
-    </tr>
-    <tr>
-      <td>WD</td>
-      <td>Water Disposal well (service well).</td>
-    </tr>
-    <tr>
-      <td>GI</td>
-      <td>Gas Injection well (service well).</td>
-    </tr>
-    <tr>
-      <td>GS</td>
-      <td>Gas Storage well (service well).</td>
-    </tr>
-    <tr>
-      <td>WS</td>
-      <td>Water Source well (service well).</td>
-    </tr>
-    <tr>
-      <td>TW</td>
-      <td>Test Well (service well - strat test, core test, monitor well, etc.).</td>
-    </tr>
-    <tr>
-      <td>D</td>
-      <td>Dry Hole (well never produced oil or natural gas in paying quantities).</td>
-    </tr>
-    <tr>
-      <td>NA</td>
-      <td>Well Type Not Available or known (old PA wells).</td>
-    </tr>
-  </body>
-</table>
-<p><strong>Data Content:</strong><br /> The following data is available for download:</p>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mS2c2djl3c2d6ZWs"
+name="Oil and Gas"
+stewards="AGRC & DNR-OGM"
+webapp="https://datamining.ogm.utah.gov/"
+abstract="These datasets depict oil and gas well surface points, units and fields polygons from the <a href='http://ogm.utah.gov'>Utah Department of Natural Resources, Oil, Gas and Mining Division</a>. <strong>Note:</strong> On June 1, 2017, the Utah Division of Oil, Gas and Mining retired 5 old databases and went online with a new database. This prompted many changes to the data field names and content previously provided in the AGRC files. This new database was developed by contractors sponsored in part by the U.S. Department of Energy and the Ground Water Protection Council and provides the opportunity for the Division to collect more descriptive down-hole information for each wellbore permitted and drilled. Initially, much of the down-hole information will not be available because there was no place to save it in the previous databases. Eventually, as new wells are drilled and old legacy data is entered, more descriptive data will become available for the wells in Utah." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="OilandGasWells">Oil and Gas Wells</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-        <img class="productImage-Thumb" src="{{ "/images/utah-oil-gas-wells-small.png" | prepend: site.baseurl }}" alt="Oil Wells" />This dataset depicts oil and gas well points in Utah from the Utah Department of Natural Resources, Oil Gas and Mining
-        Division. The dataset contains the API code, well and company name, account number, filed number, field name, elevation, locations coordinates, lease numbers, well type and status, total cumulative oil, gas and water, and more. The path (OilGasWells_Paths)
-        and down holes (OilGasWells_DownHoles) for horizontally-drilled wells are available as a separate feature classes (see "Downloads" below).
-        </p>
-        <p>There are no constraints or warranties with regard to the use of this dataset.</p>
-        Contact:<br />
-        <a href="mailto:donstaley@utah.gov">Don Staley (DNR-OGM)</a><br />
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel">
-            <i class="fa fa-pull-right fa-download fa-2x"></i>
-            <h5 id="OilandGasWells-downloads">Downloads</h5>
-        </div>
-        <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-            <ul>
-                <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRlU4QjVGelp3M1E&export=download">Oil and Gas Wells: File Geodatabase</a></li>
-                <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maXpvUS1uTjBqQ3c&export=download">Oil and Gas Wells: Shapefile</a></li>
-            </ul>
-            <p>Other links for this dataset:</p>
-            <ul>
-                <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMTJKTEpXRWxvRm8">Oil and Gas Well Drill Paths (Horizontally Drilled)</a></li>
-                <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mQzM0aWpmNGlSQ0k">Oil and Gas Wells Locations (Horizontally Drilled)</a></li>
-                <li><a href="https://oilgas.ogm.utah.gov/oilgasweb/live-data-search/lds-well/well-main.xhtml">More information on well data from DNR - DOGM</a></li>
-            </ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="OilandGasWells-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> The oil/gas wells dataset (and, where applicable, the horizontal drilling paths and down hole locations) is updated nightly in the the SGID ArcSDE 10.x database <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}"
-        title="How to Connect to the SGID via ArcSDE">connection info</a>. File based FTP downloads are also updated nightly.</p>
-        </div>
-    </div>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="OilandGasWells">
+      <a href="#OilandGasWells" class="anchor--link">Oil and Gas Wells</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/utah-oil-gas-wells-small.png" | prepend: site.baseurl }}" alt="Oil Wells" />
+    <p>This dataset depicts oil and gas well points in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The dataset contains the API code, well and company name, account number, filed number, field name, elevation, locations coordinates, lease numbers, well type and status, total cumulative oil, gas and water, and more. The path (OilGasWells_Paths) and down holes (OilGasWells_DownHoles) for horizontally-drilled wells are available as a separate feature classes.</p>
+    <table>
+      <thead>
+        <tr>
+          <th class="text-left"><strong>Well Status Code</strong></th>
+          <th class="text-left"><strong>Description</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>NEW</td>
+          <td>New Application for Permit to Drill (APD), Deepen, or Re-enter - received but not yet approved.</td>
+        </tr>
+        <tr>
+          <td>RET</td>
+          <td>New Application for Permit to Drill (APD), Deepen, or Re-enter - Returned UNAPPROVED. </td>
+        </tr>
+        <tr>
+          <td>APD</td>
+          <td>Approved Permit to Drill, Deepen, or Re-enter.</td>
+        </tr>
+        <tr>
+          <td>LA</td>
+          <td>Location Abandoned - Approved Permit to Drill (APD) for a NEW well - Rescinded - no site disturbance.</td>
+        </tr>
+        <tr>
+          <td>CP</td>
+          <td>Cancelled Permit - Approved Permit to Deepen or Re-enter (APD) an EXISTING well.</td>
+        </tr>
+        <tr>
+          <td>DRL</td>
+          <td>Well Spudded and/or currently Drilling.</td>
+        </tr>
+        <tr>
+          <td>OPS</td>
+          <td>Drilling Operations Suspended - spudded, but no drilling activity for an extended period - well not yet completed.</td>
+        </tr>
+        <tr>
+          <td>P</td>
+          <td>Producing oil or gas well (OW, GW).</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td>Shut-in oil or gas well (OW, GW).</td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>Producing oil or gas zone or lateral AND Active Injection zone or lateral (well types: OWI, GWI, OGI, GGI, GWD).</td>
+        </tr>
+        <tr>
+          <td>PII</td>
+          <td>Producing oil or gas zone or lateral AND Inactive Injection zone or lateral (well types: OWI, GWI, OGI, GGI, GWD).</td>
+        </tr>
+        <tr>
+          <td>SAI</td>
+          <td>Shut-in oil or gas zone or lateral AND Active Injection zone or lateral (well types: OWI, GWI, OGI, GGI, GWD).</td>
+        </tr>
+        <tr>
+          <td>SII</td>
+          <td>Shut-in oil or gas zone or lateral AND Inactive Injection zone or lateral (well types: OWI, GWI, OGI, GGI, GWD).</td>
+        </tr>
+        <tr>
+          <td>TA</td>
+          <td>Temporarily-Abandoned oil or gas well.</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>Active service well (well types: WI, WD, GI, GS, WS, TW).</td>
+        </tr>
+        <tr>
+          <td>I</td>
+          <td>Inactive service well (well types: WI, WD, GI, GS, WS, TW).</td>
+        </tr>
+        <tr>
+          <td>PA</td>
+          <td>Any well or construct permanently Plugged and Abandoned.</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th class="text-left"><strong>Well Type Code</strong></th>
+          <th class="text-left"><strong>Description</strong></th>
+        </tr>
+      </thead>
+      <body>
+        <tr>
+          <td>OW</td>
+          <td>Oil well - capable of producing oil in substantial quantities.</td>
+        </tr>
+        <tr>
+          <td>GW</td>
+          <td>Natural Gas well - capable of producing natural gas in substantial quantities and is not an oil well.</td>
+        </tr>
+        <tr>
+          <td>OGW</td>
+          <td>Combined Oil and Gas well - producing oil from one lateral or zone and gas from another.</td>
+        </tr>
+        <tr>
+          <td>CBM</td>
+          <td>Coalbed Methane well - a gas well that produces from coalbeds and rock strata associated with coalbed.</td>
+        </tr>
+        <tr>
+          <td>CO2</td>
+          <td>Carbon Dioxide well.</td>
+        </tr>
+        <tr>
+          <td>HE</td>
+          <td>Helium well.</td>
+        </tr>
+        <tr>
+          <td>OWI</td>
+          <td>Oil Well/Water Injection Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</td>
+        </tr>
+        <tr>
+          <td>GWI</td>
+          <td>Gas Well/Water Injection Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</td>
+        </tr>
+        <tr>
+          <td>OGI</td>
+          <td>Oil Well/Gas Injection Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</td>
+        </tr>
+        <tr>
+          <td>GGI</td>
+          <td>Gas Well/Gas Injection Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</td>
+        </tr>
+        <tr>
+          <td>GWD</td>
+          <td>Gas Well/Water Disposal Well (capable of alternating functions in a single wellbore OR capable of producing in one well bore while injecting in another bore).  Well is to be reported on both Form 10, Monthly Production Report and UIC Form 3, Monthly Injection Report with appropriate statuses.</td>
+        </tr>
+        <tr>
+          <td>WI</td>
+          <td>Water Injection well (service well).</td>
+        </tr>
+        <tr>
+          <td>WD</td>
+          <td>Water Disposal well (service well).</td>
+        </tr>
+        <tr>
+          <td>GI</td>
+          <td>Gas Injection well (service well).</td>
+        </tr>
+        <tr>
+          <td>GS</td>
+          <td>Gas Storage well (service well).</td>
+        </tr>
+        <tr>
+          <td>WS</td>
+          <td>Water Source well (service well).</td>
+        </tr>
+        <tr>
+          <td>TW</td>
+          <td>Test Well (service well - strat test, core test, monitor well, etc.).</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Dry Hole (well never produced oil or natural gas in paying quantities).</td>
+        </tr>
+        <tr>
+          <td>NA</td>
+          <td>Well Type Not Available or known (old PA wells).</td>
+        </tr>
+      </body>
+    </table>
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://oilgas.ogm.utah.gov/oilgasweb/live-data-search/lds-well/well-main.xhtml">More information on well data from DNR - DOGM</a></li>
+    </ul>
+    <p>Contact: <a href="mailto:donstaley@utah.gov">Don Staley (DNR-OGM)</a></p>
+  </div>
+  {% include packagedata.html name="OilandGasWells"
+  info=page.OilandGasWells %}
 </div>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="OilandGasFields">Oil and Gas Fields</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-        <img class="productImage-Thumb" src="{{ "/images/OilFieldsSM.png" | prepend: site.baseurl }}" alt="Oil Fields" />This dataset depicts oil and gas field polygons in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division.
-        The dataset contains the field number, field name, status and more. Contact:
-        <br />
-        <a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a><br />
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel">
-            <i class="fa fa-pull-right fa-download fa-2x"></i>
-            <h5 id="OilandGasFields-downloads">Downloads</h5>
-        </div>
-        <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-            <ul>
-                <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdm9kUnpGdTZHbk0&export=download">Oil and Gas Fields: File Geodatabase</a></li>
-                <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVHhzUHJGelZLWFk&export=download">Oil and Gas Fields: Shapefile</a></li>
-            </ul>
-            <p>Other links for this dataset:</p>
-            <ul>
-                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.DNROilGasFields.xml">Oil and Gas Fields: Metadata</a></li>
-            </ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="OilandGasFields-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> This dataset is updated as new information is provided by DNR-OGM.</p>
-            <p>Last Update 5/15/13.</p>
-        </div>
-    </div>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="OilandGasFields">
+      <a href="#OilandGasFields" class="anchor--link">Oil and Gas Fields</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/OilFieldsSM.png" | prepend: site.baseurl }}" alt="Oil Fields" />
+    <p>This dataset depicts oil and gas field polygons in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The dataset contains the field number, field name, status and more.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.DNROilGasFields.xml">Oil and Gas Fields: Metadata</a></li>
+    </ul>
+    <p>Contact: <a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a></p>
+  </div>
+  {% include packagedata.html name="OilandGasFields"
+  info=page.OilandGasFields %}
 </div>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="OilandGasUnits">Oil and Gas Units</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-        <img class="productImage-Thumb" src="{{ "/images/OilUnitsSM.png" | prepend: site.baseurl }}" alt="Oil Units" />This dataset depicts oil and gas field units in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The
-        dataset contains the unit name, operator,status, district and more. Contact:
-        <br />
-        <a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a><br />
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel">
-            <i class="fa fa-pull-right fa-download fa-2x"></i>
-            <h5 id="OilandGasUnits-downloads">Downloads</h5>
-        </div>
-        <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-            <ul>
-                <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mclNQczNZSFZDSjA&export=download">Oil and Gas Units: File Geodatabase</a></li>
-                <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mT09qa05sT2NwWjg&export=download">Oil and Gas Units: Shapefile</a></li>
-            </ul>
-            <p>Other links for this dataset:</p>
-            <ul>
-                <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.DNROilGasUnits.xml">Oil and Gas Units: Metadata</a></li>
-            </ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="OilandGasUnits-updates">Updates</h5>
-        </div>
-        <div class="panel-content"> This dataset is updated as new information is provided by DNR-OGM.</p>
-            <p>Last Update 10/16/2013.</p>
-        </div>
-    </div>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="OilandGasUnits">
+      <a href="#OilandGasUnits" class="anchor--link">Oil and Gas Units</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/OilUnitsSM.png" | prepend: site.baseurl }}" alt="Oil Units" />
+    <p>This dataset depicts oil and gas field units in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The dataset contains the unit name, operator,status, district and more.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.DNROilGasUnits.xml">Oil and Gas Units Metadata</a></li>
+    </ul>
+    <p>Contact: <a href="mailto:bradhill@utah.gov">Brad Hill (DNR-OGM)</a></p>
+  </div>
+  {% include packagedata.html name="OilandGasUnits"
+  info=page.OilandGasUnits %}
 </div>

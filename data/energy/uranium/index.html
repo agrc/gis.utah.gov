@@ -2,7 +2,8 @@
 status: publish
 layout: page
 tags:
-  - data
+  - energy
+  - uranium
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,190 +11,141 @@ published: true
 date: 2011-11-18 15:51:52 -0700
 title: Uranium
 categories: []
+PermittedUraniumMines:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUjQyemVGRVlSWG8&export=download"
+      label: "Permitted Uranium Mines: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRUt0Rm5UOFhsQlE&export=download"
+      label: "Permitted Uranium Mines: Shapefile"
+  updates:
+    - Unknown
+UraniumMills:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mLTI3VUk0bXR3REU&export=download"
+      label: "Uranium Mills: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mN2RWQW5yNjRETDA&export=download"
+      label: "Uranium Mills: Shapefile"
+  updates:
+    - Unknown
+UraniumPastProducers:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRFBiYW9rR0FDRWc&export=download"
+      label: "Uranium Past Producers: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mY2ZWckxvT1NpUzQ&export=download"
+      label: "Uranium Past Producers: Shapefile"
+  updates:
+    - Unknown
+UraniumAreaBoundaries:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7ma3YyRlRiWGZIWjA&export=download"
+      label: "Uranium Area Boundaries: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVHdTX2VUZzJUUFk&export=download"
+      label: "Uranium Area Boundaries: Shapefile"
+  updates:
+    - Unknown
+UraniumDistricts:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mLW5DQmhRNjhjSXM&export=download"
+      label: "Uranium Districts (UGS): File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMXoyQ200TlRaTGM&export=download"
+      label: "Uranium Districts (UGS): Shapefile"
+  updates:
+    - Unknown
 ---
-<div class="caption"><img src="{{ "/images/UraniumLG.png" | prepend: site.baseurl }}" alt="Uranium Data" /><p class="caption-text">Uranium Data</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7meUdSbjAxZ094UjA" class="button medium white"><span class="button-text">Download Package</span></a></p>
-<h4><strong>Uranium Data</h4>
-<p></strong><br />
-<strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward: AGRC</strong></p>
-<p><strong>Abstract:</strong><br />
-This dateset contains the locations permitted uranium mines, current uranium mills, uranium past producers and uranium area boundaries and districts for the State of Utah.</p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
+<div class="caption">
+  <img src="{{ "/images/UraniumLG.png" | prepend: site.baseurl }}" alt="Uranium Data" />
+  <p class="caption-text">Uranium Data</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7meUdSbjAxZ094UjA"
+name="Uranium Data"
+abstract="This dateset contains the locations permitted uranium mines, current uranium mills, uranium past producers and uranium area boundaries and districts for the State of Utah." %}
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="PermittedUraniumMines">Permitted Uranium Mines</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/UraniumPermittedSM.png" | prepend: site.baseurl }}" alt="Uranium Permitted" />This dataset contains the locations of permitted uranium mines in Utah in addition to a mine ID, type, status, name, operator, product and more.
-There are no constraints or warranties with regard to the use of this dataset.</p>
-Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="PermittedUraniumMines">
+      <a href="#PermittedUraniumMines" class="anchor--link">Permitted Uranium Mines</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/UraniumPermittedSM.png" | prepend: site.baseurl }}" alt="Uranium Permitted" />
+    <p>This dataset contains the locations of permitted uranium mines in Utah in addition to a mine ID, type, status, name, operator, product and more. There are no constraints or warranties with regard to the use of this dataset.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.PermittedUraniumMines.xml">Permitted Uranium Mines: Metadata</a></li>
+    </ul>
+    <p>Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="PermittedUraniumMines"
+  info=page.PermittedUraniumMines %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="PermittedUraniumMines-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUjQyemVGRVlSWG8&export=download">Permitted Uranium Mines: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRUt0Rm5UOFhsQlE&export=download">Permitted Uranium Mines: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.PermittedUraniumMines.xml">Permitted Uranium Mines: Metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="PermittedUraniumMines-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Unknown</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="UraniumMills">Uranium Mills</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/UraniumMillsSM.png" | prepend: site.baseurl }}" alt="Uranium Mills" />This dataset contains the locations of uranium mills in Utah in addition to mill ID, name, operator and more.
-There are no constraints or warranties with regard to the use of this dataset.</p>
-Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UraniumMills">
+      <a href="#UraniumMills" class="anchor--link">Uranium Mills</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/UraniumMillsSM.png" | prepend: site.baseurl }}" alt="Uranium Mills" />
+    <p>This dataset contains the locations of uranium mills in Utah in addition to mill ID, name, operator and more. There are no constraints or warranties with regard to the use of this dataset.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.UraniumMills.xml">Uranium Mills: Metadata</a></li>
+    </ul>
+    <p>Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="UraniumMills"
+  info=page.UraniumMills %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="UraniumMills-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mLTI3VUk0bXR3REU&export=download">Uranium Mills: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mN2RWQW5yNjRETDA&export=download">Uranium Mills: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.UraniumMills.xml">Uranium Mills: Metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="UraniumMills-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Unknown</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="UraniumPastProducers">Uranium Past Producers</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/UraniumPastProducersSM.png" | prepend: site.baseurl }}" alt="Uranium Past Producers" />This dataset contains the locations of uranium past producers in Utah in addition to REC_ID, REC_TYPE, DEP_NUM, year discovered, owner, operator and much more.
-There are no constraints or warranties with regard to the use of this dataset.</p>
-Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UraniumPastProducers">
+      <a href="#UraniumPastProducers" class="anchor--link">Uranium Past Producers</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/UraniumPastProducersSM.png" | prepend: site.baseurl }}" alt="Uranium Past Producers" />
+    <p>This dataset contains the locations of uranium past producers in Utah in addition to REC_ID, REC_TYPE, DEP_NUM, year discovered, owner, operator and much more. There are no constraints or warranties with regard to the use of this dataset.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.UraniumPastProducers.xml">Uranium Past Producers: Metadata</a></li>
+    </ul>
+    <p>Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="UraniumPastProducers"
+  info=page.UraniumPastProducers %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="UraniumPastProducers-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRFBiYW9rR0FDRWc&export=download">Uranium Past Producers: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mY2ZWckxvT1NpUzQ&export=download">Uranium Past Producers: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.UraniumPastProducers.xml">Uranium Past Producers: Metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="UraniumPastProducers-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Unknown</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="UraniumAreaBoundaries">Uranium Area Boundaries</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/UraniumAreasSM.png" | prepend: site.baseurl }}" alt="Uranium Areas" />This dataset contains the locations of uranium areas in Utah in addition to the name of the area.
-There are no constraints or warranties with regard to the use of this dataset.</p>
-Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UraniumAreaBoundaries">
+      <a href="#UraniumAreaBoundaries" class="anchor--link">Uranium Area Boundaries</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/UraniumAreasSM.png" | prepend: site.baseurl }}" alt="Uranium Areas" />
+    <p>This dataset contains the locations of uranium areas in Utah in addition to the name of the area. There are no constraints or warranties with regard to the use of this dataset.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.UraniumAreaBoundaries.xml">Uranium Area Boundaries:   Metadata</a></li>
+    </ul>
+    <p>Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="UraniumAreaBoundaries"
+  info=page.UraniumAreaBoundaries %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="UraniumAreaBoundaries-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7ma3YyRlRiWGZIWjA&export=download">Uranium Area Boundaries: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVHdTX2VUZzJUUFk&export=download">Uranium Area Boundaries: Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.UraniumAreaBoundaries.xml">Uranium Area Boundaries: Metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="UraniumAreaBoundaries-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Unknown</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="UraniumDistricts(UGS)">Uranium Districts (UGS)</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/UraniumDistricts_UGS_SM.png" | prepend: site.baseurl }}" alt="Uranium Districts UGS" />This dataset contains the locations of uranium districts in Utah in addition to their name and potential.
-There are no constraints or warranties with regard to the use of this dataset.</p>
-Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UraniumDistricts">
+      <a href="#UraniumDistricts" class="anchor--link">Uranium Districts (UGS)</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/UraniumDistricts_UGS_SM.png" | prepend: site.baseurl }}" alt="Uranium Districts UGS" />
+    <p>This dataset contains the locations of uranium districts in Utah in addition to their name and potential. There are no constraints or warranties with regard to the use of this dataset.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.UraniumDistricts_UGS.xml">Uranium Districts (UGS):  Metadata</a></li>
+    </ul>
+    <p>Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="UraniumDistricts"
+  info=page.UraniumDistricts %}
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="UraniumDistricts(UGS)-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download this dataset using the Download button at the top of this page or the links below.</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mLW5DQmhRNjhjSXM&export=download">Uranium Districts (UGS): File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMXoyQ200TlRaTGM&export=download">Uranium Districts (UGS): Shapefile</a></li>
-</ul>
-<p>Other links for this dataset:</p>
-<ul>
-<li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.UraniumDistricts_UGS.xml">Uranium Districts (UGS): Metadata</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="UraniumDistricts(UGS)-updates">Updates</h5>
-        </div>
-        <div class="panel-content">Unknown</p>
-
-        </div>
-    </div>
-    </div>
