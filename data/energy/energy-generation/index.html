@@ -2,7 +2,7 @@
 status: publish
 layout: page
 tags:
-  - data
+  - energy
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,17 +10,34 @@ published: true
 date: 2011-11-18 15:43:48 -0700
 title: Energy Generation
 categories: []
+PowerPlants:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mb3RuWnF3T2VZc1E"
+      label: "Power Plants"
+  updates:
+    - July 2008
 ---
-<div class="caption"><img title="map" src="{{ "/images/PowerPlants.png" | prepend: site.baseurl }}" alt="Power Plants" /><p class="caption-text">Power Plants (CO2)</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb3RuWnF3T2VZc1E" class="button medium white"><span class="button-text">Download Power Plants Dataset</span></a></p>
-<h4><strong>Power Plants (CO2)</h4>
-<p></strong></p>
-<p><strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward: AGRC</strong></p>
-<p><strong>Abstract:</strong><br />
-This dataset contains Power Plant locations from CO2 project for the State of Utah, July 2008.<br />
-This dataset also contains the ORIS Code, name, type, CO2 Annual Tons and fuel code for the plants.</p>
-<p><i class="fa fa-globe"></i> Usage: There are no constraints or warranties with regard to the use of this dataset.<br />
-<i class="fa fa-calendar"></i> Last Update: July 2008<br />
-<i class="fa fa-user"></i> Contact: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-<i class="fa fa-link"></i> Links: <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.PowerPlants_CO2.xml">FGDC Metadata</a> </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/PowerPlants.png" | prepend: site.baseurl }}" alt="Power Plants" />
+  <p class="caption-text">Power Plants (CO2)</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb3RuWnF3T2VZc1E"
+name="Power Plants (C02)"
+abstract="This dataset contains Power Plant locations from the CO2 project for the State of Utah." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="PowerPlants">
+      <a href="#PowerPlants" class="anchor--link">Power Plants (C02)</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>This dataset contains the ORIS Code, name, type, CO2 Annual Tons and fuel code for the plants. There are no constraints or warranties with regard to the use of this dataset.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.PowerPlants_CO2.xml">FGDC Metadata</a>
+    </ul>
+    <p>Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="PowerPlants"
+  info=page.PowerPlants %}
+</div>
