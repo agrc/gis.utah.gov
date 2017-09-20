@@ -58,3 +58,10 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/water-data-services/wetlands/                                                     /data/water/wetlands/                                           301
 /data/demographic/2000-census-data/                                                     /data/demographic/census/                                       301
 /data/demographic/2010-census-data/                                                     /data/demographic/census/                                       301
+/agrc                                                                                   /about/contact/                                                 301
+/agrc_sgid/dem_5m.html                                                                  /data/elevation-terrain-data/                                   301
+/agrc_sgid/dem_2m.html                                                                  /data/elevation-terrain-data/                                   301
+/agrc_sgid/naip.html                                                                    /data/aerial-photography/                                       301
+/download                                                                               /data/                                                          301
+/vector                                                                                 /data/                                                          301
+
