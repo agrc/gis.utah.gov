@@ -56,3 +56,5 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/water-data-services/water-rights-regions/                                         /data/water/water-rights-regions/                               301
 /data/water-data-services/watersheds/                                                   /data/water/watersheds/                                         301
 /data/water-data-services/wetlands/                                                     /data/water/wetlands/                                           301
+/data/demographic/2000-census-data/                                                     /data/demographic/census/                                       301
+/data/demographic/2010-census-data/                                                     /data/demographic/census/                                       301
