@@ -37,7 +37,7 @@ exclude:
     - "README.md"
     - "docker-compose.yml"
     - "LICENSE"
-    - "CODE_OF_CONDUCT.md
+    - "CODE_OF_CONDUCT.md"
 include:
     - "_redirects"
     - "_headers"
