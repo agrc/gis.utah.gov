@@ -17,11 +17,11 @@ New 2017 high-resolution Google imagery is available from [Discover]({{ "/discov
 
 If you not signed up for access to the Google imagery visit the [Discover - Imagery and Base Map Server]({{ "/discover/" | prepend:site.baseurl }}) page and sign up.
 
-Please contact Bert Granberg [bgranberg@utah.gov](mailto:bgranberg@utah.gov) or Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) with questions.
-
 [![Google update]({{"/images/New2017_Google_sm.png" | prepend:site.baseurl}} "view sample")]({{"/images/New2017_Google.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-### Don't see the updates?
+Please contact Bert Granberg [bgranberg@utah.gov](mailto:bgranberg@utah.gov) or Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) with questions.
+
+#### Don't see the updates?
 
 **ArcMap/ArcGIS Pro users will need to clear their local caches to see the new imagery.** Users can clear their entire ArcMap/ArcGIS Pro caches or clear caches for just the `Google`, `Utah`, and `Basemap-Hybrid` layers.
 
