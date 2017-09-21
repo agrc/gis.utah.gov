@@ -1,0 +1,8 @@
+# "We hold these truths to be self-evident,
+#          that all bots are created equal."
+#                      ~ Thomas Jeffersonbot
+User-agent: *
+Allow: *
+Crawl-delay: 1
+
+Sitemap: https://gis.utah.gov/sitemap.txt

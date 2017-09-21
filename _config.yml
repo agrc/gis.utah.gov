@@ -25,25 +25,19 @@ kramdown:
     syntax_highlighter: rouge
     hard_wrap: false
 timezone: America/Denver
-exclude: [
-    "node_modules",
-    "scripts/cleanser.py",
-    "scripts/cleanser.pyc",
-    "scripts/datatable.py",
-    "scripts/datatable.pyc",
-    "scripts/tests.py",
-    "scripts/tests.pyc",
-    "Gemfile.lock",
-    "Gemfile",
-    "GruntFile.js",
-    "bower.json",
-    "package.json",
-    "*.bak",
-    "README.md",
-    "docker-compose.yml",
-    "LICENSE"
-]
-include: [
-    "_redirects",
-    "_headers"
-]
+exclude:
+    - "node_modules"
+    - "scripts"
+    - "Gemfile.lock"
+    - "Gemfile"
+    - "GruntFile.js"
+    - "bower.json"
+    - "package.json"
+    - "*.bak"
+    - "README.md"
+    - "docker-compose.yml"
+    - "LICENSE"
+    - "CODE_OF_CONDUCT.md
+include:
+    - "_redirects"
+    - "_headers"
