@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: false
+published: true
 title: 'New 2017 Google Imagery'
 author:
   display_name: Rick Kelson
@@ -10,7 +10,7 @@ date: 2017-09-19 19:55:05
 categories:
 - Featured
 tags:
-
+- imagery
 ---
 
 New 2017 high-resolution Google imagery is available from [Discover]({{ "/discover/" | prepend:site.baseurl }})! Updated areas include the Salt Lake, Heber, Logan. St. George and Tooele blocks. The new imagery can be found in the `Google`, `Utah`, `Basemap-Hybrid`, and `Google 2017archive` services. The new imagery is also available for download.
