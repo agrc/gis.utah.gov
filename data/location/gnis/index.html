@@ -2,14 +2,15 @@
 status: publish
 layout: page
 tags:
-  - data
+  - location
+  - gnis
   - placenames
 author:
   display_name: JP
   email: agrc@utah.gov
 published: true
 date: 2011-11-23 09:22:52 -0700
-title: GNIS
+title: GNIS and Place Names
 categories: []
 GNIS2010:
   downloads:
@@ -19,6 +20,12 @@ GNIS2010:
       label: GNIS 1990
   updates:
     - January 23, 2012
+PlaceAreas:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7meTJwcV81QXJZb2c"
+      label: "Place Name Areas Shapefile and Geodatabase"
+  updates:
+    - December 2010
 ---
 <div class="caption">
   <img src="{{ "/images/GNISLarge.png" | prepend: site.baseurl }}" alt="UTGNIS" />
@@ -26,7 +33,7 @@ GNIS2010:
 </div>
 {% include abstract.html
    download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mQ05IaFVQNmEyY0k"
-   name="GNIS Locations"
+   name="GNIS And Place Locations"
    type="GIS Data Layer"
    stewards="USGS"
    abstract="The Geographic Names Information System (GNIS) was developed by the U.S. Geological Survey in cooperation with the U.S. Board on Geographic Names (BGN), local governments and other interested organizations. The GNIS contains information about physical and cultural geographic features in the United States and associated areas, both current and historical, but not including roads and highways. The goal of GNIS is to meet major national needs regarding geographic names and their standardization and dissemination."
@@ -47,8 +54,20 @@ GNIS2010:
       <li><a href="http://geonames.usgs.gov/">U.S. Board on Geographic Names</a>
     </ul>
   </div>
-  {% include packagedata.html
-    name="GNIS2010"
-    info=page.GNIS2010
-  %}
+  {% include packagedata.html name="GNIS2010"
+    info=page.GNIS2010  %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="PlaceAreas">
+      <a href="#PlaceAreas" class="anchor--link">Place Areas (Zoom Locations)</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="productImage-Thumb" src="{{ "/images/PlaceAreas.png" | prepend: site.baseurl }}" alt="GNIS" />
+    <p>This data contains polygons of commonly used places in mapping. It was created by AGRC from multiple sources including the GNIS point, municipalities, counties, political districts, zipcodes, etc.. The dataset is named <code>ZoomLocations</code> since the names and geometries can be used to zoom to common areas on a map with widgets like <a href="https://github.com/agrc-widgets/sherlock">Sherlock</a>.</p>
+    <p>General Utah GIS data inquiries: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a></p>
+  </div>
+  {% include packagedata.html name="PlaceAreas"
+  info=page.PlaceAreas %}
 </div>
