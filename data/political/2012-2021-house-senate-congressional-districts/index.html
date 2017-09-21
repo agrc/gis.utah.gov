@@ -2,10 +2,8 @@
 status: publish
 layout: page
 tags:
-  - data
   - districts
   - election
-  - government
   - house
   - legislature
   - political
@@ -20,159 +18,135 @@ published: true
 date: 2011-12-06 14:34:36 -0700
 title: 2012 - 2021 House, Senate, School Board, and Congressional Districts
 categories: []
+StateHouseDistricts:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbF8yQTFpWUtMbFU&export=download"
+      label: "State House Districts: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maWctb3BOcVduekU&export=download"
+      label: "State House Districts: Shapefile"
+  updates:
+    - "This dataset was last updated in 2012."
+StateSenateDistricts:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSlk4SU5MVEZXMjA&export=download"
+      label: "State Senate Districts: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRWlid1dpYy1RY3M&export=download"
+      label: "State Senate Districts: Shapefile"
+  updates:
+    - "This dataset was last updated in 2012."
+StateSchoolBoardDistricts:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbFJXNWNXVUN6NEk&export=download"
+      label: "State School Board Districts: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZDVXT1J6Yy1ibzg&export=download"
+      label: "State School Board Districts: Shapefile"
+UnitedStatesCongressionalDistricts:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSm9NdVp0V19QT3c&export=download"
+      label: "US Congress Districts: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOHU4TjNNaFA0bDg&export=download"
+      label: "US Congress Districts: Shapefile"
+  updates:
+    - "This dataset was last updated in 2012."
 ---
-<div class="caption"><img src="{{ "/images/SenateDistricts2012_Large_Color4.png" | prepend: site.baseurl }}" alt="PoliticalDistrictsBig" /><p class="caption-text">2012 Political Districts</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMW83YklfbkxfazQ" class="button medium white"><span class="button-text">Download Data Package</span></a></p>
-<h4><strong>2012 Political Districts</strong></h4>
-<p><strong>Data Type:</strong> GIS Data Layer<br />
-<strong>Steward(s):</strong> AGRC and The Lieutenant Governor's Office</p>
-<p><strong>Abstract:</strong><br />
-These new political districts will be used for election purposes beginning January 1, 2012. Elected officials representing the new districts will take office in January 2013. This dataset includes the political districts used for the Utah State Legislature (state senate districts and state house districts); state school board districts; and the new U.S congressional districts. The boundaries for all districts have changed from the <a title="2002 – 2011 House, Senate and Congressional Districts" href="{{ "/data/political/2002-2011-house-senate-congressional-districts/" | prepend: site.baseurl }}">2002-2011 political districts</a>.</p>
-<p><strong>Data Content:</strong><br />
-The following data is available for download:</p>
+
+<div class="caption">
+  <img src="{{ '/images/SenateDistricts2012_Large_Color4.png' | prepend: site.baseurl }}" alt="PoliticalDistrictsBig" />
+  <p class="caption-text">2012 Political Districts</p>
+</div>
+{% include abstract.html
+  name="2012 Political Districts"
+  download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMW83YklfbkxfazQ"
+  stewards="AGRC and The Lieutenant Governor's Office"
+  abstract="These political districts were first used for election purposes on January 1, 2012. This dataset includes the political districts used for the Utah State Legislature (state senate districts and state house districts); state school board districts; and U.S congressional districts."
+%}
+
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="StateHouseDistricts">State House Districts</h3>
-    </div>
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="StateHouseDistricts">
+      <a href="#StateHouseDistricts" class="anchor--link">State House Districts</a>
+    </h3>
     <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/HouseSmall2.png" | prepend: site.baseurl }}" alt="StateHouseNew" />The Utah House of Representatives is comprised of 75 men and women elected to two-year terms. Political.UtahHouseDistricts2012 shows the new house districts that elected officials will represent.</p>
-The DIST field contains the House district number.</p>
-<p>The COLOR4 field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
-<p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+      <img class="productImage-Thumb" src="{{ '/images/HouseSmall2.png' | prepend: site.baseurl }}" alt="StateHouseNew" />
+      <p>The Utah House of Representatives is comprised of 75 men and women elected to two-year terms. Political.UtahHouseDistricts2012 shows the house districts that elected officials represent.</p>
+      <p>The <code>DIST</code> field contains the House district number.</p>
+      <p>The <code>COLOR4</code> field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
+      <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+      <h5>Related Resources</h5>
+      <ul class="dotless">
+        <li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
+        <li><a href="http://le.utah.gov/house2/index.html">State of Utah House of Representatives</a></li>
+      </ul>
+    </div>
+    {% include packagedata.html
+      name="StateHouseDistricts"
+      info=page.StateHouseDistricts
+    %}
+  </div>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="StateHouseDistricts-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbF8yQTFpWUtMbFU&export=download">State House Districts: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maWctb3BOcVduekU&export=download">State House Districts: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
-<li><a href="http://le.utah.gov/house2/index.html">State of Utah House of Representatives</a></li>
-</ul>
 
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="StateHouseDistricts-updates">Updates</h5>
-        </div>
-        <div class="panel-content">This dataset was last updated in 2012.</p>
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="StateSenateDistricts">State Senate Districts</h3>
-    </div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="StateSenateDistricts">
+      <a href="#StateSenateDistricts" class="anchor--link">State Senate Districts</a>
+    </h3>
     <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/SenateDistricts2012_Small_Color4.png" | prepend: site.baseurl }}" alt="StateSenateNew" />The Utah State Senate is comprised of 29 men and women elected to four-year terms. Political.UtahSenateDistricts2012 shows the new senate districts that elected officials will represent.</p>
-The DIST field contains the Senate district number.</p>
-<p>The COLOR4 field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
-<p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+      <img class="productImage-Thumb" src="{{ '/images/SenateDistricts2012_Small_Color4.png' | prepend: site.baseurl }}" alt="StateSenateNew" />
+      <p>The Utah State Senate is comprised of 29 men and women elected to four-year terms. Political.UtahSenateDistricts2012 shows the senate districts that elected officials represent.</p>
+      <p>The <code>DIST</code> field contains the Senate district number.</p>
+      <p>The <code>COLOR4</code> field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
+      <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+      <h5>Related Resources</h5>
+      <ul class="dotless">
+        <li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
+        <li><a href="http://www.utahsenate.org/">Utah State Senate</a></li>
+      </ul>
+    </div>
+    {% include packagedata.html
+      name="StateSenateDistricts"
+      info=page.StateSenateDistricts
+    %}
+  </div>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="StateSenateDistricts-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSlk4SU5MVEZXMjA&export=download">State Senate Districts: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRWlid1dpYy1RY3M&export=download">State Senate Districts: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
-<li><a href="http://www.utahsenate.org/">Utah State Senate</a></li>
-</ul>
 
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="StateSenateDistricts-updates">Updates</h5>
-        </div>
-        <div class="panel-content">This dataset was last updated in 2012.<br />
-Recent update summaries:<br />
-
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="StateSchoolBoardDistricts">State School Board Districts</h3>
-    </div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="StateSchoolBoardDistricts">
+      <a href="#StateSchoolBoardDistricts" class="anchor--link">State School Board Districts</a>
+    </h3>
     <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/StateSchoolBoard2012_Small_Color4.png" | prepend: site.baseurl }}" alt="StateSchoolBoardNew" />The Utah State Board of Education is compromised of 15 districts. Political.UtahSchoolBoardDistricts2012 shows the new school board districts that elected officials will represent.</p>
-The DIST field contains the State School Board district number.</p>
-<p>The COLOR4 field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
-<p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+      <img class="productImage-Thumb" src="{{ '/images/StateSchoolBoard2012_Small_Color4.png' | prepend: site.baseurl }}" alt="StateSchoolBoardNew" />
+      <p>The Utah State Board of Education is compromised of 15 districts. Political.UtahSchoolBoardDistricts2012 shows the school board districts that elected officials represent.</p>
+      <p>The <code>DIST</code> field contains the State School Board district number.</p>
+      <p>The <code>COLOR4</code> field is for use in coloring districts using only 4 colors with no adjacent districts displayed with the same color.</p>
+      <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+      <h5>Related Resources</h5>
+      <ul class="dotless">
+        <li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
+        <li><a href="http://www.schools.utah.gov/">Utah State Board of Education</a></li>
+      </ul>
+    </div>
+    {% include packagedata.html
+      name="StateSchoolBoardDistricts"
+      info=page.StateSchoolBoardDistricts
+    %}
+  </div>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="StateSchoolBoardDistricts-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbFJXNWNXVUN6NEk&export=download">State School Board Districts: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZDVXT1J6Yy1ibzg&export=download">State School Board Districts: Shapefile</a></li>
-</ul>
-<p>Other Links:</p>
-<ul>
-<li><a href="http://le.utah.gov/">Utah State Legislature</a></li>
-<li><a href="http://www.schools.utah.gov/">Utah State Board of Education</a></li>
-</ul>
 
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="StateSchoolBoardDistricts-updates">Updates</h5>
-        </div>
-        <div class="panel-content">
-        </div>
-    </div>
-    </div><div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="UnitedStatesCongressionalDistricts">United States Congressional Districts</h3>
-    </div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UnitedStatesCongressionalDistricts">
+      <a href="#UnitedStatesCongressionalDistricts" class="anchor--link">United States Congressional Districts</a>
+    </h3>
     <div class="grid__col grid__col--12-of-12 package-content">
-<img class="productImage-Thumb" src="{{ "/images/CongressionalDistricts2012_Small.png" | prepend: site.baseurl }}" alt="CongressNew" />Starting in the fall 2012 election, Utah will have 4 congressional districts. Political.USCongressDistricts2012 shows the new U.S congressional districts that elected officials will represent.</p>
-The DISTRICT field contains the US Congressional district number.</p>
-<p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
-</p>
+      <img class="productImage-Thumb" src="{{ '/images/CongressionalDistricts2012_Small.png' | prepend: site.baseurl }}" alt="CongressNew" />
+      <p>Political.USCongressDistricts2012 shows the U.S congressional districts that elected officials represent.</p>
+      <p>The <code>DISTRICT</code> field contains the US Congressional district number.</p>
+      <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+    </div>
+    {% include packagedata.html
+      name="UnitedStatesCongressionalDistricts"
+      info=page.UnitedStatesCongressionalDistricts
+    %}
+  </div>
 </div>
-    <div class="grid__col grid__col--1-of-2">
-    <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
-        <h5 id="UnitedStatesCongressionalDistricts-downloads">Downloads</h5>
-    </div>
-    <div class="panel-content">Download:</p>
-<ul>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSm9NdVp0V19QT3c&export=download">US Congress Districts: File Geodatabase</a></li>
-<li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOHU4TjNNaFA0bDg&export=download">US Congress Districts: Shapefile</a></li>
-</ul>
-
-        </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-        <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
-            <h5 id="UnitedStatesCongressionalDistricts-updates">Updates</h5>
-        </div>
-        <div class="panel-content"></p>
-<p>This dataset was last updated in 2012.<br />
-Recent update summaries:<br />
-
-        </div>
-    </div>
-    </div>
