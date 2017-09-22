@@ -13,16 +13,16 @@ tags:
 - imagery
 ---
 
-The new 2017 high-resolution Google imagery is available through AGRC's [Discover server]({{ "/discover/" | prepend:site.baseurl }})! Updated areas (map below) include the what Google calls the Salt Lake, Heber, Logan, St. George and Tooele blocks which comprise
+The new 2017 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({{ "/discover/" | prepend:site.baseurl }})! Updated areas (map below) include the what Google calls the Salt Lake, Heber, Logan, St. George and Tooele blocks which comprise
 -most of the Wasatch Front urban area (Brigham City, Weber County, Davis County, Salt Lake County, and Utah County)
 -many Wasatch Back communities (Summit, Wasatch and Morgan Counties, and Tooele and Cedar Valley.
 -many of the Box Elder and Cache Valley communities
 -the St. George metro area
 -western Uinta mountains, including much of the Mirror Lake Highway, Strawberry Reservior, and a northwestern portion of the Unitah Basin
 
-The new imagery is already loaded into the `Google`, `Utah`, `Basemap-Hybrid`, and `Google 2017archive` services. If you're using these services, you don't need to change a thing, but you may need to clear your cache (instructions below). The new imagery is also available for download as geo-referenced jpeg files (.jp2) by all organizations that have signup to use licensed content on the Discover server.
+The new imagery is already loaded into the `Google`, `Utah`, `Basemap-Hybrid`, and `Google 2017archive` services. If you're using these services, you don't need to change a thing layer-wise, but you may need to clear your cache (instructions below). The new imagery is also available for download as geo-referenced jpeg files (.jp2) by all organizations that have signup to use licensed content on the Discover server.
 
-If you have not signed up for access to the Google imagery visit the [Discover - Imagery and Base Map Server]({{ "/discover/" | prepend:site.baseurl }}) page for details and to access the links to request an account.
+If you have not signed up for access to the Google imagery visit the [Discover - Imagery and Base Map Server]({{ "/discover/" | prepend:site.baseurl }}) page for details and to access the links needed to request an account.
 
 [![Google update]({{"/images/New2017_Google_sm.png" | prepend:site.baseurl}} "view sample")]({{"/images/New2017_Google.png" | prepend:site.baseurl}}){:.inline-text-right}
 
