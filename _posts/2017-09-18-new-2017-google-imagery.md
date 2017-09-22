@@ -24,7 +24,7 @@ The new imagery is already loaded into the `Google`, `Utah`, `Basemap-Hybrid`, a
 
 If you have not signed up for access to the Google imagery visit the [Discover - Imagery and Base Map Server]({{ "/discover/" | prepend:site.baseurl }}) page for details and to access the links needed to request an account.
 
-[![Google update]({{"/images/New2017_Google_sm.png" | prepend:site.baseurl}} "view sample")]({{"/images/New2017_Google.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![Google update]({{"/images/2017UpdatedAreas.png" | prepend:site.baseurl}} "2017 Google Imagery updates - click for larger image")]({{"/images/New2017_Google.png" | prepend:site.baseurl}}){:.inline-text-right}
 
 Please contact Bert Granberg [bgranberg@utah.gov](mailto:bgranberg@utah.gov) or Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) with questions.
 
