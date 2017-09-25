@@ -6,20 +6,39 @@ author:
   display_name: JP
   email: agrc@utah.gov
 tags:
-  - data
+  - society
+  -
 categories: []
 published: true
 date: 2011-11-23 15:24:53 -0700
+FuelSites:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mMzd6VGQxenN6Z0k"
+      label: "State Fuel Sites"
+  updates:
+    - 2009
 ---
-<div class="caption"><img title="map" src="{{ "/images/StateFuelSites.png" | prepend: site.baseurl }}" alt="State Fuel Sites" /><p class="caption-text">State Fuel Sites</p></div>
-<p><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMzd6VGQxenN6Z0k" class="button medium white"><span class="button-text">Download Dataset</span></a></p>
-<h4><strong>State Fuel Sites</h4>
-<p></strong></p>
-<p><strong>Data Type: GIS Data Layer</strong><br />
-<strong>Steward: AGRC</strong></p>
-<p><strong>Abstract:</strong><br />
-This dataset contains fuel sites for the State Of Utah and contains the site name and number, address, number of fuel tanks and type, facility type, status and more.</p>
-<p><i class="fa fa-globe"></i> Usage: There are no constraints or warranties with regard to the use of this dataset.<br />
-<i class="fa fa-calendar"></i> Last Update: 2009<br />
-<i class="fa fa-user"></i> Contact: <a href="mailto:agrc@utah.gov">AGRC</a><br />
-<i class="fa fa-link"></i> Links: <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.SOCIETY.StateFuelSites.xml">FGDC Metadata</a> </p>
+<div class="caption">
+  <img title="map" src="{{ "/images/StateFuelSites.png" | prepend: site.baseurl }}" alt="State Fuel Sites" />
+  <p class="caption-text">State Fuel Sites</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mMzd6VGQxenN6Z0k"
+name="State Fuel Sites"
+abstract="" %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="FuelSites">
+      <a href="#FuelSites" class="anchor--link">State Fuel Sites</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>This dataset contains fuel sites for the State Of Utah and contains the site name and number, address, number of fuel tanks and type, facility type, status and more.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.SOCIETY.StateFuelSites.xml">FGDC Metadata</a>
+    </ul>
+    <p>Questions can be directed to <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="FuelSites"
+  info=page.FuelSites %}
+</div
