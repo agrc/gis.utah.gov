@@ -65,3 +65,8 @@ documentation: https://www.netlify.com/docs/redirects/
 /download                                                                               /data/                                                          301
 /vector                                                                                 /data/                                                          301
 /data/location/place-areas/                                                             /data/location/gnis/                                            301
+/data/elevation-terrain-data/10-30-meter-elevation-models-usgs-ned/                     /data/elevation-terrain-data/                                   301
+/data/elevation-terrain-data/10-30-90-meter-elevation-models-usgs-dems/                 /data/elevation-terrain-data/                                   301
+/data/elevation-terrain-data/2-meter-auto-correlated-elevation-models/                  /data/elevation-terrain-data/                                   301
+/data/elevation-terrain-data/5-meter-auto-correlated-elevation-models/                  /data/elevation-terrain-data/                                   301
+/data/elevation-terrain-data/sgid-elevation-terrain-data-overview-utah/                 /data/elevation-terrain-data/                                   301
