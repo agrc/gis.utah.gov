@@ -28,61 +28,64 @@ date: 2014-04-01 17:06:47 -0600
 title: Exploring LiDAR
 categories: []
 ---
-<h3><strong>Exploring LiDAR</strong></h3>
-<p><iframe src="//player.vimeo.com/video/89565010" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="http://vimeo.com/89565010">AGRC Utah LiDAR applications video</a> from <a href="http://vimeo.com/utahagrc">AGRC</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-<p><a  title="Point Cloud Profile" href="{{ "/downloads/profile.jpg" | prepend: site.baseurl }}"><img class="ngg-singlepic ngg-middle alignmiddle" style="border: 1px solid black;" src="{{ "/images/profile.jpg" | prepend: site.baseurl }}" alt="lidar" width="700" height="100" /></a></p>
-<div></div>
-<p><a  title="First-Return DSM" href="{{ "/images/gallery/sgid/lidar_lg.jpg" | prepend: site.baseurl }}"><img class="inline-text-left" style="border: 1px solid black;" src="{{ "/images/gallery/sgid/thumbs/thumbs_lidar.jpg" | prepend: site.baseurl }}" alt="lidar" width="100" height="100" /></a></p>
+<a title="First-Return DSM" href="{{ "/images/gallery/sgid/lidar_lg.jpg" | prepend: site.baseurl }}">
+  <img class="inline-text-left productImage-Thumb" src="{{ "/images/gallery/sgid/thumbs/thumbs_lidar.jpg" | prepend: site.baseurl }}" alt="lidar"/>
+</a>
 <p>Light Detection and Ranging elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by illuminating the target with light pulses from a laser and measuring the time and intensity of the pulse return to the sensor. Laser pulses from the sensor can exceed 150,000 pulses per second. Aircraft position (X,Y,Z) is measured twice a second while aircraft attitude (pitch, roll, yaw) is measured 200 times per second. Currently this is the most accurate type of elevation data available. There are two main types of LiDAR collections, <a href="https://www.udot.utah.gov/public/ucon/uconowner.gf?n=8336606666333974">Terrestrial</a> and <a href="http://www.sci.utah.edu/~kpotter/Library/Papers/kao:2005:VDML/kao_2005_VDML_00.png">Airborne</a>. Airborne LiDAR is most commonly used and available from AGRC.</p>
-<div></div>
-<p><a  title="Bare-Earth DEM" href="{{ "/downloads/Hillshd.jpg" | prepend: site.baseurl }}"><img class="inline-text-right" style="border: 1px solid black;" src="{{ "/images/Hillshd_sm.jpg" | prepend: site.baseurl }}" alt="lidar" width="100" height="100" /></a></p>
+<iframe src="//player.vimeo.com/video/89565010" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="http://vimeo.com/89565010">AGRC Utah LiDAR applications video</a> from <a href="http://vimeo.com/utahagrc">AGRC</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<a title="Bare-Earth DEM" href="{{ "/downloads/Hillshd.jpg" | prepend: site.baseurl }}">
+  <img class="inline-text-right productImage-Thumb" src="{{ "/images/Hillshd_sm.jpg" | prepend: site.baseurl }}" alt="lidar" />
+</a>
 <p>Bare-Earth Digital Elevation Models (DTM) and First-Return Digital Surface Models (DSM) are commonly used raster products derived from LiDAR point cloud collections. Bare-Earth DEMs have had features above the ground filtered out and are what is typically used for floodplain and hydro-logic modeling. First-return (highest-hit) raster products model a surface but retain the features above the ground such as buildings, utilities, other manmade structures and vegetation.</p>
-<div></div>
-<p><a  title="Fully Classified Point Cloud" href="{{ "/downloads/PtCloud_3D.jpg" | prepend: site.baseurl }}"><img class="inline-text-left" style="border: 1px solid black;" src="{{ "/images/pt_cloud_full_sm.jpg" | prepend: site.baseurl }}" alt="lidar" width="100" height="100" /></a></p>
-<p>LiDAR point clouds can be classified so that each point in the cloud is designated a landcover type (ex. ground, water, road, building, vegetation, etc.). The vendor for the <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2013_2014/WasatchFront_LiDAR_2013-2014_Poster.pdf" title="project">2013-2014 Wasatch Front LiDAR</a> project, Watershed Sciences Inc. (WSI) now a <a href="http://quantumspatial.com/" title="WSI">Quantum Spatial</a> company, has provided the following samples that show some of what can be done with the collected LiDAR data. Please note that while the sample data below contains LAS point cloud data that are fully classified, the point clouds delivered for the project only have the following classifications (including intensity, return number, and RGB values), yet further classification of the point cloud is possible:</p>
+<p><a title="Point Cloud Profile" href="{{ "/downloads/profile.jpg" | prepend: site.baseurl }}">
+  <img src="{{ "/images/profile.jpg" | prepend: site.baseurl }}" alt="lidar" width="700" />
+</a></p>
+<a title="Fully Classified Point Cloud" href="{{ "/downloads/PtCloud_3D.jpg" | prepend: site.baseurl }}">
+  <img class="inline-text-left productImage-Thumb" src="{{ "/images/pt_cloud_full_sm.jpg" | prepend: site.baseurl }}" alt="lidar" />
+</a>
+<p>LiDAR point clouds can be classified so that each point in the cloud is designated a landcover type (ex. ground, water, road, building, vegetation, etc.). The vendor for the <a href="ftp://ftp.agrc.utah.gov/Imagery/LIDAR/WasatchFront_2013_2014/WasatchFront_LiDAR_2013-2014_Poster.pdf" title="project">2013-2014 Wasatch Front LiDAR</a> project, Watershed Sciences Inc. (WSI) now a <a href="http://quantumspatial.com/" title="WSI">Quantum Spatial</a> company, has provided the following samples that show some of what can be done with the collected LiDAR data. Please note that while the sample data below contains LAS point cloud data that are fully classified, the point clouds delivered for the project only has the following classifications (including intensity, return number, and RGB values), yet further classification of the point cloud is possible:</p>
 <dl>
-<dt>Code | Description</dt>
-<dd>   1 | Processed, but unclassified</dd>
-<dd>   2 | Bare-earth ground</dd>
-<dd>   7 | Noise</dd>
-<dd>   9 | Water</dd>
-<dd>  10 | Ignored Ground (Breakline proximity)</dd>
-<dd>  11 | Withheld</dd>
+  <dt>Code | Description</dt>
+  <dd>   1 | Processed, but unclassified</dd>
+  <dd>   2 | Bare-earth ground</dd>
+  <dd>   7 | Noise</dd>
+  <dd>   9 | Water</dd>
+  <dd>  10 | Ignored Ground (Breakline proximity)</dd>
+  <dd>  11 | Withheld</dd>
 </dl>
-<h4><strong>Lidar Samples:</strong></h4>
+<h4>Lidar Samples</h4>
 <ul>
-<li><a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/AGRC%20Utah%20LiDAR%20applications%20writeup.pdf"><strong>LiDAR Applications</strong></a></li>
-<li><a href="http://vimeo.com/89565010"><strong>LiDAR Applications Video</strong></a></li>
-<li>Download LiDAR <i>derivative samples</i> package <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/LiDAR_Samples.zip"><strong>(ArcMap users)</strong></a><a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/LiDAR_Samples_CAD.zip"><strong>(CAD users)</strong></a></li>
-<li><a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/"><strong>Download more sample LiDAR derivative data</strong></a></li>
+  <li><a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/AGRC%20Utah%20LiDAR%20applications%20writeup.pdf">LiDAR Applications</a></li>
+  <li><a href="http://vimeo.com/89565010">LiDAR Applications Video</a></li>
+  <li>Download LiDAR <i>derivative samples</i> package <a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/LiDAR_Samples.zip">(ArcMap users)</a><a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/LiDAR_Samples_CAD.zip">(CAD users)</a></li>
+  <li><a href="ftp://ftp.agrc.utah.gov/LiDAR/WasatchFront_2013/DerivativeSamples/">Download more sample LiDAR derivative data</a></li>
 </ul>
-<h4><strong>Lidar Resources:</strong></h4>
+<h4>Lidar Resources</h4>
 <ul>
-<li><a href="{{ "/data/elevation-terrain-data/" | prepend: site.baseurl }}"><strong>AGRC</strong></a></li>
-<li><a href="https://docs.google.com/document/d/188M11SoXovnHeg3J8RwEb89FsWBJQJEwFB5SWyXwask/edit?usp=sharing"><strong>Working with Mosaic and Reference Datasets</strong></a></li>
-<li><a href="http://resources.arcgis.com/en/communities/3d/"><strong>ArcGIS 3D Community</strong></a></li>
-<li><a href="http://rapidlasso.com/"><strong>rapidlasso</strong></a></li>
-<li><a href="http://www.opentopography.org/index.php"><strong>Open Topography</strong></a></li>
-<li><a href="http://lidar.cr.usgs.gov/"><strong>USGS Center for LiDAR Coordination and Knowledge (CLICK)</strong></a></li>
-<li><a href="http://www.fugroviewer.com/"><strong>Fugro LiDAR Viewer</strong></a> and <strong><a href="http://www.geonext.nl/wp-content/uploads/2014/05/Point-Cloud-Viewers.pdf">other free viewers</a></strong></li>
+  <li><a href="{{ "/data/elevation-terrain-data/" | prepend: site.baseurl }}">AGRC</a></li>
+  <li><a href="https://docs.google.com/document/d/188M11SoXovnHeg3J8RwEb89FsWBJQJEwFB5SWyXwask/edit?usp=sharing">Working with Mosaic and Reference Datasets</a></li>
+  <li><a href="http://resources.arcgis.com/en/communities/3d/">ArcGIS 3D Community</a></li>
+  <li><a href="http://rapidlasso.com/">rapidlasso</a></li>
+  <li><a href="http://www.opentopography.org/index.php">Open Topography</a></li>
+  <li><a href="http://lidar.cr.usgs.gov/">USGS Center for LiDAR Coordination and Knowledge (CLICK)</a></li>
+  <li><a href="http://www.fugroviewer.com/">Fugro LiDAR Viewer</a> and <a href="http://www.geonext.nl/wp-content/uploads/2014/05/Point-Cloud-Viewers.pdf">other free viewers</a></li>
 </ul>
 <p>LiDAR collections, derivative products and analytics are numerous and can include:</p>
 <ul>
-<li>bare-earth raster elevation models *</li>
-<li>first-return (aka Highest-Hit) raster elevation models *</li>
-<li>point cloud (with varying levels of point classification) *</li>
-<li>laser pulse intensity images *</li>
-<li>contour lines</li>
-<li>building footprints</li>
-<li>vegetation metrics</li>
-<li>hydrology modeling</li>
-<li>landslide potential</li>
-<li>solar potential</li>
-<li>3D modeling</li>
+  <li>bare-earth raster elevation models *</li>
+  <li>first-return (aka Highest-Hit) raster elevation models *</li>
+  <li>point cloud (with varying levels of point classification) *</li>
+  <li>laser pulse intensity images *</li>
+  <li>contour lines</li>
+  <li>building footprints</li>
+  <li>vegetation metrics</li>
+  <li>hydrology modeling</li>
+  <li>landslide potential</li>
+  <li>solar potential</li>
+  <li>3D modeling</li>
 <p><em>* - products delivered for the 2013-2014 Wasatch Front project</em>
 </ul>
-<p>If you are a <strong>CAD / Microstation user</strong> you may need to convert the `.img` files into a different file format such as `.las`. A web search for `AutoCad and .img` will produce helpful results or search user forums. You will find discussions about converting the `.img` format to a format you can use. There are many tools that can convert the files - FW Tools and ER Viewer (free), Global Mapper (trial version), and ArcMap to name a few. The LAS point clouds can be downloaded from
-    <a href="http://opentopo.sdsc.edu/gridsphere/gridsphere?gs_action=datasetMetadata&cid=geonlidarframeportlet&otCollectionID=OT.122014.26912.1">Open Topography</a>.
+<p>If you are a <strong>CAD / Microstation user</strong> you may need to convert the <code>.img</code> files into a different file format such as <code>.las</code>. A web search for <cad>AutoCad and .img</cad> will produce helpful results or search user forums. You will find discussions about converting the <code>.img</code> format to a format you can use. There are many tools that can convert the files - FW Tools and ER Viewer (free), Global Mapper (trial version), and ArcMap to name a few. The LAS point clouds can be downloaded from <a href="http://opentopo.sdsc.edu/gridsphere/gridsphere?gs_action=datasetMetadata&cid=geonlidarframeportlet&otCollectionID=OT.122014.26912.1">Open Topography</a>.
 </p>
-<td>If you have any questions contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a> at (801-538-3237)</td>
+<p>If you have any questions contact <a href="mailto:rkelson@utah.gov">Rick Kelson</a> at (801-538-3237)</p>
