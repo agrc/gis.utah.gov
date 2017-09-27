@@ -35,7 +35,7 @@ The native coordinate system for the Google files and services is Web Mercator w
 ### Horizontal Positional Accuracy
 {: .text-left}
 
-Stated horizontal positional accuracy of the imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. Higher precision is expected in urban areas, where existing supplemental ground control was more abundant.
+Stated horizontal positional accuracy of the Google imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. Higher precision is expected in urban areas, where existing supplemental ground control was more abundant.
 
 ### Adding a WMTS or WMS Service to ArcMap
 {: .text-left}
