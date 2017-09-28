@@ -70,3 +70,5 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/elevation-terrain-data/2-meter-auto-correlated-elevation-models/                  /data/elevation-terrain-data/                                   301
 /data/elevation-terrain-data/5-meter-auto-correlated-elevation-models/                  /data/elevation-terrain-data/                                   301
 /data/elevation-terrain-data/sgid-elevation-terrain-data-overview-utah/                 /data/elevation-terrain-data/                                   301
+/data/elevation-terrain-data/2-meter-contours-salt-lake-county-only/                    /data/elevation-terrain-data/contours/                          301
+/data/elevation-terrain-data/500-foot-contours/                                         /data/elevation-terrain-data/contours/                          301
