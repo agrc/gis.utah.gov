@@ -58,12 +58,13 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/water-data-services/wetlands/                                                     /data/water/wetlands/                                           301
 /data/demographic/2000-census-data/                                                     /data/demographic/census/                                       301
 /data/demographic/2010-census-data/                                                     /data/demographic/census/                                       301
-/agrc                                                                                   /about/contact/                                                 301
+/agrc/                                                                                  /about/contact/                                                 301
 /agrc_sgid/dem_5m.html                                                                  /data/elevation-terrain-data/                                   301
 /agrc_sgid/dem_2m.html                                                                  /data/elevation-terrain-data/                                   301
 /agrc_sgid/naip.html                                                                    /data/aerial-photography/                                       301
-/download                                                                               /data/                                                          301
-/vector                                                                                 /data/                                                          301
+/download/                                                                              /data/                                                          301
+/vector/                                                                                /data/                                                          301
+/data/                                                                                  /data/                                                          301
 /data/location/place-areas/                                                             /data/location/gnis/                                            301
 /data/elevation-terrain-data/10-30-meter-elevation-models-usgs-ned/                     /data/elevation-terrain-data/                                   301
 /data/elevation-terrain-data/10-30-90-meter-elevation-models-usgs-dems/                 /data/elevation-terrain-data/                                   301
@@ -72,3 +73,6 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/elevation-terrain-data/sgid-elevation-terrain-data-overview-utah/                 /data/elevation-terrain-data/                                   301
 /data/elevation-terrain-data/2-meter-contours-salt-lake-county-only/                    /data/elevation-terrain-data/contours/                          301
 /data/elevation-terrain-data/500-foot-contours/                                         /data/elevation-terrain-data/contours/                          301
+/aerial/                                                                                /data/aerial-photography/                                       301
+/imagery/                                                                               /data/aerial-photography/                                       301
+/data/utah-sgid-image-server/                                                           /discover/                                                      301
