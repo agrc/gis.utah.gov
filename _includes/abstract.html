@@ -1,16 +1,17 @@
-<p><a id="package--download" href="{{ include.download }}" class="button medium white">
-  <span class="button-text">Download {{ include.name }}</span></a></p>
+{% if include.download != nul %}<p><a id="package--download" href="{{ include.download }}" class="button medium white">
+  <span class="button-text">Download {{ include.name }}</span></a></p>{% endif %}
 <h4 class="package--header">{{ include.name }}</h4>
 <ul class="dotless no-padding">
   <li><strong>Data Type:</strong> {{ include.type | default: "GIS Data Layer" }}
   <li><strong>Steward(s):</strong> {{ include.stewards | default: "AGRC" }}
-{% if include.webapp != nil %}
-  <li><strong>Web Application:</strong> <a href="{{ include.webapp }}">View</a>{% endif %}
+{% for app in include.webapp %}{% if app.url != nil %}
+  <li><strong>Web Application:</strong> <a href="{{ app.url }}">{{ app.label }}</a>
+{% else %}<li><strong>Web Application:</strong> <a href="{{ app }}">View</a>{% endif %}{% endfor %}
   <li><strong>Abstract:</strong> {{ include.abstract }}
 </ul>
 <h4 class="package--header">Package Contents</h4>
 <p>The following data is available for download:</p>
-<script>
+{% if include.download != nul %}<script>
   document.getElementById('package--download').addEventListener('click', function() {
     ga('send', {
       hitType: 'event',
@@ -20,4 +21,4 @@
       transport: 'beacon'
     });
   });
-</script>
+</script>{% endif %}
