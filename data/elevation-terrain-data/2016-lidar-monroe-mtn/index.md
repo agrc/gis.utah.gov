@@ -9,7 +9,7 @@ author:
   email: rkelson@utah.gov
 published: true
 date: 2017-05-22 23:29:51
-title: Monroe Mountain LiDAR Elevation Data (2016)
+title: 2016 Monroe Mountain LiDAR Elevation Data
 categories: []
 ---
 
