@@ -11,6 +11,8 @@ facebook_username: UtahAGRC
 vimeo_username: utahagrc
 permalink: /:title/
 production_url: 'https://gis.utah.gov'
+livereload: true
+reload_port: 35729
 analytics:
     google:
         tracking_id: 'UA-11849964-41'
