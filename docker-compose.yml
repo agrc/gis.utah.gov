@@ -3,7 +3,7 @@ version: "2"
 services:
   jekyll:
     container_name: "gis.utah.gov"
-    image: "jekyll/jekyll:pages"
+    image: "jekyll/jekyll"
     command: "jekyll serve --watch --incremental"
     volumes:
       - "./:/srv/jekyll"
