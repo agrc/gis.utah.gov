@@ -76,3 +76,6 @@ documentation: https://www.netlify.com/docs/redirects/
 /aerial/                                                                                /data/aerial-photography/                                       301
 /imagery/                                                                               /data/aerial-photography/                                       301
 /data/utah-sgid-image-server/                                                           /discover/                                                      301
+/category/data/                                                                         /data/                                                          301
+/hro2006/                                                                               /data/aerial-photography/hro/                                   301
+/gisforum/                                                                              /data/                                                          301
