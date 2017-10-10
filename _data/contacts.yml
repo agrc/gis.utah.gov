@@ -1,4 +1,16 @@
 # this can be accessed via site.data.contacts['agrc']
 agrc:
   name: AGRC
+  agency: AGRC
   email: agrc@utah.gov
+floodareas:
+   - name: Jamie Huff
+     agency: Utah Rick MAP
+     email: jhuff@utah.gov
+   - name: Brooke Conner
+     agency: FEMA
+     email: brooke.conner@fema.dhs.gov
+UTA: 
+  name: Sumer Ellis
+  agency: UTA
+  email: sellis@rideuta.com
