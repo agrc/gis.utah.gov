@@ -15,7 +15,7 @@ categories:
 ---
 <p>Updates were made recently to the<br />
 <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />
-<a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
+<a href="{{ "/sgid-database/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
 <p>The following highlights what has been updated through April 1, 2014:</p>
 <p><span style="text-decoration: underline;">Municipalities Updates:</span></p>
 <ul>

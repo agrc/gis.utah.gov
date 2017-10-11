@@ -26,6 +26,6 @@ New 2016 high-resolution Google imagery is available from the Discover server. U
 
 ArcMap users may need to clear the cache on the `utah` layer from Discover to see the new imagery. This can be done by going to the service’s `Layer Properties -> Cache` tab and selecting `Clear Local Cache Now`. Be patient as this could take several minutes.
 
-Are you not signed up for access to the Google imagery yet? Visit [the Google Imagery License page]({{ "/data/google-imagery-license/" | prepend:site.baseurl }} "Google imagery license information").
+Are you not signed up for access to the Google imagery yet? Visit [the Google Imagery License page]({{ "/discover/license/" | prepend:site.baseurl }} "Google imagery license information").
 
 Please contact Bert Granberg [bgranberg@utah.gov](mailto:bgranberg@utah.gov) or Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) with questions.

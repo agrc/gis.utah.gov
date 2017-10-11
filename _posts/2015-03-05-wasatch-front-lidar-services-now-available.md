@@ -19,7 +19,7 @@ categories:
 ---
 <div class="caption"><a href="{{ "/downloads/Lidar_slope_lg.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/Lidar_slope_lg.jpg" | prepend: site.baseurl }}" alt="" title="LiDAR service sample" width="300" height="226" /></a><p class="caption-text">Click to view large format map detail</p></div>
 <p>The <a href="{{ "/data/elevation-terrain-data/2013-2014-lidar/" | prepend: site.baseurl }}">Wasatch Front LiDAR</a> elevation data collected 2013-2014 is now available as a service.
-These services utilize the .5 meter DEMs derived from the LiDAR collection. Once you have established a GIS Server <a href="{{ "/data/sgid-imagery-services/" | prepend: site.baseurl }}">connection to mapserv.utah.gov</a> in the <b><em>Elevation</em></b> folder you will find the following layers:
+These services utilize the .5 meter DEMs derived from the LiDAR collection. Once you have established a GIS Server <a href="{{ "/imagery-server/" | prepend: site.baseurl }}">connection to mapserv.utah.gov</a> in the <b><em>Elevation</em></b> folder you will find the following layers:
 </p>
 <p><b><em>Bare Earth DTM layers:</em></b>
 </p>
