@@ -24,91 +24,79 @@ categories: []
 <div id="logo">
   <img src="images/discover.png" alt="Discover Logo" />
 </div>
-<h4>
-    <i class="fa fa-fw fa-plane"></i> Getting Started
-</h4>
+<h2 class="text-left"><i class="fa fa-fw fa-plane"></i> Getting Started</h2>
 <p class="pop text-center">
-    <strong>Everyone</strong> wanting to use the AGRC imagery and base map services from Discover needs to create a <strong><em>free</em></strong> account and receive a <em>quad-word</em> connection link.
+  <strong>Anyone</strong> wanting to use the AGRC imagery and base map services from Discover needs to create a <strong><em>free</em></strong> account and receive a <em>quad-word</em> connection link.
 </p>
-<h4>
-    <i class="fa fa-fw fa-keyboard-o"></i> Sign Up
-</h4>
-<p>
-    To obtain access to Discover you will need to fill out one of the following forms <strong>(A or B)</strong>:</p>
-    <ul>
-      <li><strong>A.)</strong> If your organization is one of <strong>Utah’s cities, counties, special districts, state agencies, K-12/Higher education, tribes</strong> or are a <strong>contractor and formal partner</strong> of one of these organizations you are covered by our license agreement to access imagery provided by Google on Discover. Please fill out and understand the <strong><a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement</a></strong> to obtain access. For more information about the license vist the <strong><a href="/data/google-imagery-license/">Google Imagery License</a></strong> page.
-    </ul>
-    <ul>
-      <li><strong>B.)</strong> If you are not part of one of the organizations listed above you can fill out the <strong><a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform">Discover Server Access</a></strong> form to get access to all of the non-licensed base maps and imagery services.
-    </ul>
-<p>
-    Once either form is completed you will receive information about the services and URL links to access the Discover server (please only fill out one).</p>
-<h4>
-    <i class="fa fa-fw fa-mixcloud"></i> Get Connected
-</h4>
-<p>
-  The URLs to access the server will contain a quad-word (ex. <code class="highlighter-rouge">https://discover.agrc.utah.gov/login/path/your-unique-quad-word/</code>) unique to each user or organization. Discover is able to serve many different clients by exposing OGC compliant <acronym title="Web Map Service">WMS</acronym>, <acronym title="Web Map Tile Service">WMTS</acronym>, and direct tile access services.
-  <ul>
-    <li>WMS: <code class="highlighter-rouge">https://discover.agrc.utah.gov/login/path/{quad-word}/wms</code>
-    <li>WMTS: <code class="highlighter-rouge">https://discover.agrc.utah.gov/login/path/{quad-word}/wmts/1.0.0/WMTSCapabilities.xml</code>
-    <li>Tiles: <code class="highlighter-rouge">https://discover.agrc.utah.gov/login/path/{quad-word}/tiles/{service}/{z}/{x}/{y}</code>
-  </ul>
-</p>
-<strong>Usage, Connection, and Download Resources</strong>
-  <ul>
-    <li><a href="{{ "/data/googleimagery/" | prepend:site.baseurl }}">General Information</a>
-    <li><a href="{{ "/data/sgid-base-map-services-arcmap/" | prepend:site.baseurl }}">ArcMap</a>
-    <li><a href="{{site.baseurl}}{% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}">JavaScript/Web Mapping</a>
-    <li><a href="{{ "/data/aerial-photography/" | prepend:site.baseurl }}">Imagery Download</a>
-  </ul>
-<h4>
-    <i class="fa fa-fw fa-map-o"></i> Available Services
-</h4>
-<p>
-  <ul class="dotless">
-      <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Utah</code> – Combination of the most recent 1-meter NAIP and 6-inch Google imagery with scale dependent rendering <strong>(licensed)</strong>
-      <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Google</code> – 6-inch statewide natural color aerial photography from Google collected within the last 3 years <strong>(licensed)</strong>
-      <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Google {year}archive</code> – Aerial photography blocks updated in <code class="highlighter-rouge">Google</code> service and archived by acquisition year <strong>(licensed)</strong>
-        <div style="padding-left:25px"><em>Available Years: 2011 - 2016</em>
-        </div>
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Address_Points</code> – Base map of address point locations
-      <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Basemap-Hybrid</code> - Base map combination of the Overlay base map and Utah imagery service <strong>(licensed)</strong>
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Lite</code> – Base map of hillshade, HWYs/streets, cities, boundaries, etc. (gray, muted tone)
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Overlay</code> – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Terrain</code> – Base map of hillshade, HWYS/streets, parks, forests, water, etc.
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Topo</code> – Base map of USGS topographic maps
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">DOQ 1990s BW</code> – 1-meter statewide black &amp; white aerial photography collected in 1990’s
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">HRO 2012 RGB</code> – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">NAIP {year} RGB</code> – 1-meter statewide natural color aerial photography
-        <div style="padding-left:25px"><em>Available Years: 2006 2009 2011 2014 2016</em>
-        </div>
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">NAIP {year} NRG</code> – 1-meter statewide color infrared aerial photography
-        <div style="padding-left:25px"><em>Available Years: 2006 2011 2014 2016</em>
-        </div>
-      <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Hillshade</code> – 10 meter statewide combined hillshade and slope
-    </ul>
-</p>
-<h4>
-  <i class="fa fa-fw fa-thumbs-o-up"></i> Best Practices
-</h4>
-<p>
-  <ul>
-    <li>Information about <a href="{{ "/data/googleimagery/" | prepend: site.baseurl }}">transformations between different coordinate systems</a>.
-    <li>It is strongly suggested that you use <code class="highlighter-rouge">WMTS</code> for the best performance.
-    <li>More information about using the <a href="{{ "/data/googleimagery/" | prepend: site.baseurl }}">Google Imagery and Discover Services</a>.
-    <li>If you will be or already are printing base maps from the web and are experiencing blank or empty output, read this blog post about <a href="{{"/printing-web-maps-with-discover-services/" | prepend:site.baseurl }}">Printing Web Maps with Discover Services</a> for our solution.
-  </ul>
-</p>
-<h4>
-    <i class="fa fa-fw fa-bar-chart"></i> Statistics
-</h4>
-  The image below depicts:
-  <ul>
-    <li>A Heat Map of where the Discover services are being used.
-    <li>The most popular services on Discover.
-    <li>The trendline of total requests to Discover per day.
-    <li>A list of available imagery and base map services.
-  </ul>
+<h3 class="text-left"><i class="fa fa-fw fa-keyboard-o"></i> Sign Up</h3>
+<h5>Choose the Right Form</h5>
+<p>To obtain access to Discover you will need to fill out one of the following forms <strong>(A or B)</strong></p>
+<ol type="A">
+  <li>If your organization is one of <strong>Utah’s cities, counties, special districts, state agencies, K-12/Higher education, tribes</strong> or are a <strong>contractor and formal partner</strong> of one of these organizations you are covered by our license agreement to access imagery provided by Google on Discover. Please fill out and understand the <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a> to obtain access. To read more about the license visit the <a href="/discover/license/">Google Imagery License</a> page.
+  <li>If you are <strong>not</strong> part of one of the organizations listed above you should fill out the <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform">Discover Server Access</a> form to get access to all of the non-licensed base maps and imagery services.
+</ol>
+<p>Once either form is completed you will receive information about the services and URL links to access the Discover server. <strong>Please only fill out one</strong>.</p>
+<h3 class="text-left"><i class="fa fa-fw fa-mixcloud"></i> Get Connected</h3>
+<p>The URLs to access the server will contain a quad-word (ex. <code >https://discover.agrc.utah.gov/login/path/your-unique-quad-word/</code>) unique to each user or organization. Discover is able to serve many different clients by exposing OGC compliant <acronym title="Web Map Service">WMS</acronym>, <acronym title="Web Map Tile Service">WMTS</acronym>, and direct tile access services.</p>
+<strong>Example Discover URL Templates</strong>
+<ul class="dotless">
+  <li>WMS: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/wms</code>
+  <li>WMTS: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/wmts/1.0.0/WMTSCapabilities.xml</code>
+  <li>Tiles: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/tiles/{service}/{z}/{x}/{y}</code>
+</ul>
+<p>AGRC has compiled resources to help you successfully use the Discover server. You can find in depth information about the following on the <a href="/discover/resources/">discover resource</a> page.</p>
+<ul class="dotless">
+  <li><a href="/discover/resources/#coordinate-system-and-datum">Coordinate System and Datum</a>
+  <li><a href="/discover/resources/#horizontal-positional-accuracy">Horizontal Positional Accuracy</a>
+  <li><a href="/discover/resources/#adding-a-wmts-or-wms-service-to-arcmap">Adding a service in ArcMap</a>
+    <li><a href="/discover/resources/#adding-a-wmts-or-wms-service-to-a-web-map">Adding a service in ArcGIS Online Web Maps</a>
+    <li><a href="/discover/resources/#adding-a-wms-service-to-cad">Adding a service in CAD</a>
+      <li><a href="/discover/resources/#proarcmap-user-considerations">ArcGIS Pro Considerations</a>
+  <li><a href="/discover/resources/#printing-web-maps-with-discover-services">Printing Discover services</a>
+  <li><a href="/discover/resources/#google-flight-dates">Flight Dates</a>
+  <li><a href="/discover/resources/#requests-for-on-premise-use">On Premise use</a>
+  <li><a href="/discover/resources/#frequently-asked-questions">FAQ</a>
+</ul>
+<p>Instructions for using a service in <a href="{{ "/data/sgid-base-map-services-arcmap/" | prepend:site.baseurl }}">ArcMap</a> and in a <a href="{{site.baseurl}}{% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}">JavaScript/Web Mapping</a> application are available.</p>
+<p>If you are looking for <a href="{{ "/data/aerial-photography/" | prepend:site.baseurl }}">imagery downloads</a>, navigate to the aerial photography section of the data pages.</p>
+<h3 class="text-left"><i class="fa fa-fw fa-map-o"></i> Available Services</h3>
+<ul class="dotless">
+  <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Utah</code> – Combination of the most recent 1-meter NAIP and 6-inch Google imagery with scale dependent rendering <strong>(licensed)</strong>
+  <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Google</code> – 6-inch statewide natural color aerial photography from Google collected within the last 3 years <strong>(licensed)</strong>
+  <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Google {year}archive</code> – Aerial photography blocks updated in <code class="highlighter-rouge">Google</code> service and archived by acquisition year <strong>(licensed)</strong>
+    <div style="padding-left:25px"><em>Available Years: 2011 - 2016</em>
+    </div>
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Address_Points</code> – Base map of address point locations
+  <li><i class="fa fa-fw fa-lock"></i> <code class="highlighter-rouge">Basemap-Hybrid</code> - Base map combination of the Overlay base map and Utah imagery service <strong>(licensed)</strong>
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Lite</code> – Base map of hillshade, HWYs/streets, cities, boundaries, etc. (gray, muted tone)
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Overlay</code> – Base map of vector features HWYs/streets, cities, address points, parcels, etc. (transparent background)
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Terrain</code> – Base map of hillshade, HWYS/streets, parks, forests, water, etc.
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Basemap-Topo</code> – Base map of USGS topographic maps
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">DOQ 1990s BW</code> – 1-meter statewide black &amp; white aerial photography collected in 1990’s
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">HRO 2012 RGB</code> – 12.5-cm natural color aerial photography collected in 2012 of the Wasatch Front
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">NAIP {year} RGB</code> – 1-meter statewide natural color aerial photography
+    <div style="padding-left:25px"><em>Available Years: 2006 2009 2011 2014 2016</em>
+    </div>
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">NAIP {year} NRG</code> – 1-meter statewide color infrared aerial photography
+    <div style="padding-left:25px"><em>Available Years: 2006 2011 2014 2016</em>
+    </div>
+  <li><i class="fa fa-fw fa-unlock"></i> <code class="highlighter-rouge">Hillshade</code> – 10 meter statewide combined hillshade and slope
+</ul>
+<h3 class="text-left"><i class="fa fa-fw fa-thumbs-o-up"></i> Best Practices</h3>
+<ul>
+  <li>Information about <a href="{{ "/data/googleimagery/" | prepend: site.baseurl }}">transformations between different coordinate systems</a>.
+  <li>It is strongly suggested that you use <code class="highlighter-rouge">WMTS</code> for the best performance.
+  <li>More information about using the <a href="{{ "/data/googleimagery/" | prepend: site.baseurl }}">Google Imagery and Discover Services</a>.
+  <li>If you will be or already are printing base maps from the web and are experiencing blank or empty output, read this blog post about <a href="{{"/printing-web-maps-with-discover-services/" | prepend:site.baseurl }}">Printing Web Maps with Discover Services</a> for our solution.
+</ul>
+<h3 class="text-left"><i class="fa fa-fw fa-bar-chart"></i> Statistics</h3>
+<p>The image below depicts:</p>
+<ul>
+  <li>A Heat Map of where the Discover services are being used.
+  <li>The most popular services on Discover.
+  <li>The trendline of total requests to Discover per day.
+  <li>A list of available imagery and base map services.
+</ul>
 <a href="{{ "/images/discover.png" | prepend:site.baseurl }}" alt="Click to Enlarge">
   <img src="{{ "/images/discover_sm.png" | prepend:site.baseurl }}" alt="Discover" />
 </a>

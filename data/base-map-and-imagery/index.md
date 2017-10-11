@@ -37,7 +37,7 @@ tags:
 
 Do you need a quick, fast base map for your GIS, CAD or web services?
 
-AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow. The Discover services utilize a Web Mercator WGS84 coordinate system (wkid: 3857). Information about transformations between different coordinate systems can be found [here]({{ "/data/discover-server-information/" | prepend: site.baseurl }} "Coordinate System and Datum") under `Coordinate System and Datum`.
+AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow. The Discover services utilize a Web Mercator WGS84 coordinate system (wkid: 3857). Information about transformations between different coordinate systems can be found [here]({{ "/discover/resources/" | prepend: site.baseurl }} "Coordinate System and Datum") under `Coordinate System and Datum`.
 
 ### Web Mercator Services on Discover
 

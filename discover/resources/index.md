@@ -10,16 +10,16 @@ author:
   email: rkelson@utah.gov
 published: true
 date: 2015-02-09 08:00:09 -0700
-title: Discover Server Information
+title: Discover Server Resources and Information
 categories: []
 ---
 
 ### Discover Server
-{: .text-left}
+{: .text-left .productImage-Thumb}
 
 AGRC’s cloud-based server Discover provides imagery and base maps services in Open Geospatial Consortium (OGC) standard Web Map Tile Service (WMTS) and Web Map Service (WMS) in the Web Mercator WGS84 projection (wkid: 3857).
 
-One featured offering from Discover is statewide 6 inch imagery collected and licensed by Google. Due to this licensed content, access to the Google imagery is only for **Utah’s cities, counties, special districts, state agencies, K12/Higher education, and tribes and contractors and formal partners of the immediate licensees.** To obtain access to the Discover server you need to fill out and understand the **[Organizational Usage Agreement](https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform)** available from the **[Google Imagery License]({{"/data/google-imagery-license/" | prepend: site.baseurl }})** page. Once the Organizational Usage Agreement is completed, you will receive information about the services and URL links to access the Discover server. The URLs to access the server will contain a quad-word (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) unique to each user or organization.
+One featured offering from Discover is statewide 6 inch imagery collected and licensed by Google. Due to this licensed content, access to the Google imagery is only for **Utah’s cities, counties, special districts, state agencies, K12/Higher education, and tribes and contractors and formal partners of the immediate licensees.** To obtain access to the Discover server you need to fill out and understand the **[Organizational Usage Agreement](https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform)** available from the **[Google Imagery License]({{"/discover/license/" | prepend: site.baseurl }})** page. Once the Organizational Usage Agreement is completed, you will receive information about the services and URL links to access the Discover server. The URLs to access the server will contain a quad-word (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) unique to each user or organization.
 
 If you are not covered by the license agreement for the Google imagery service you will need to fill out the **[Discover Server Access](https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform)** form. Once the form has been completed, you will receive information about the services and URL links to access the Discover server. The URLs to access the server will contain a quad-word (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) unique to each user or organization.
 
@@ -40,17 +40,17 @@ Stated horizontal positional accuracy of the Google imagery is expected to achie
 ### Adding a WMTS or WMS Service to ArcMap
 {: .text-left}
 
-Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -> Add WMTS Server` and paste the WMTS link you have been provided into the `URL:` line then hit OK. Now navigate to the newly added WMTS **'utah imagery - WMTS on discover.agrc.utah.gov'** by going to `Add Data -> GIS Servers`. If you drill down through the service folders you will find the `Utah` or `Google` [layer to add]({{ "/downloads/AddWMTS_tree.jpg" | prepend: site.baseurl }}). The WMS service can be added by following the instructions above just substitute `GIS Servers -> Add WMS Server`. Take a look at [this page]({{"/data/discover-server-information/" | prepend:site.baseurl}}) for more inforamtion about the available layers and using the base maps and imagery services in Pro/ArcMap.
+Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -> Add WMTS Server` and paste the WMTS link you have been provided into the `URL:` line then hit OK. Now navigate to the newly added WMTS **'utah imagery - WMTS on discover.agrc.utah.gov'** by going to `Add Data -> GIS Servers`. If you drill down through the service folders you will find the `Utah` or `Google` [layer to add]({{ "/downloads/AddWMTS_tree.jpg" | prepend: site.baseurl }}). The WMS service can be added by following the instructions above just substitute `GIS Servers -> Add WMS Server`. Take a look at [this page]({{"/discover/resources/" | prepend:site.baseurl}}) for more inforamtion about the available layers and using the base maps and imagery services in Pro/ArcMap.
 
 ### Adding a WMTS or WMS Service to a Web Map
 {: .text-left}
 
-Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({{"/using-agrcs-new-web-mercator-services-in-your-web-maps/" | prepend:site.baseurl}}) for more information. Remember, if the web map is going to be public facing you need to request a separate quad-work link. To do this send an email to Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) and provide your web map URL domains.
+Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({{"/using-agrcs-new-web-mercator-services-in-your-web-maps/" | prepend:site.baseurl}}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this send an email to Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) and provide your web map URL domains.
 
 ### Adding a WMS Service to CAD
 {: .text-left}
 
-- **Bentley Microstation** users should take a look at the [How To document](ftp://ftp.agrc.utah.gov/Google/MicroStationGoogleWMS_HowTo.pdf).  
+- **Bentley Microstation** users should take a look at the [How To document](ftp://ftp.agrc.utah.gov/Google/MicroStationGoogleWMS_HowTo.pdf).
 - **AutoCAD Civil 3D 2016** users should take a look at the [How To document](https://us-support.nearmap.com/hc/en-us/articles/212242658-AutoCAD-Civil-3D-2016-WMS-Integration).
 
 ### Printing Web Maps with Discover Services
@@ -89,8 +89,8 @@ To access the GCP services individual organizations will be provided URL links f
 ### Google Logos
 {: .text-left}
 
-[Download zipfile of Google logos](ftp://ftp.agrc.utah.gov/Google/google_logos.zip)  
-![white transparent]({{ "/images/ImageryCGoogle_WhiteTransparent.png" | prepend: site.baseurl }})  
+[Download zipfile of Google logos](ftp://ftp.agrc.utah.gov/Google/google_logos.zip)
+![white transparent]({{ "/images/ImageryCGoogle_WhiteTransparent.png" | prepend: site.baseurl }})
 ![white on black]({{ "/images/ImageryCGoogle_WhiteOnBlack.png" | prepend: site.baseurl }})
 
 ### Requests for On-Premise Use

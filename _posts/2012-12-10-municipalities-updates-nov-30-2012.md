@@ -11,7 +11,7 @@ title: Municipalities Updates Nov. 30, 2012
 categories:
   - SGID Blog
 ---
-<p>Updates were made recently to the <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature class that resides on the <a href="{{ "/data/how-to-connect-to-the-sgid-via-sde/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>. The updated municipality data is also available as shapefiles and file geodatabase files for download on the <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BOUNDARIES/PackagedData/_Statewide/StateCountyMunicipalBoundaries">SGID FTP site</a>.</p>
+<p>Updates were made recently to the <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature class that resides on the <a href="{{ "/sgid-database/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>. The updated municipality data is also available as shapefiles and file geodatabase files for download on the <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BOUNDARIES/PackagedData/_Statewide/StateCountyMunicipalBoundaries">SGID FTP site</a>.</p>
 <p>The AGRC <a href="{{ "/developer/base-maps/" | prepend: site.baseurl }}">basemaps</a> have been updated to reflect these changes.</p>
 <p>The following highlights what has been updated:</p>
 <p><span style="text-decoration: underline;">Municipalities Updates:</span></p>
