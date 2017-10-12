@@ -5,6 +5,15 @@ documentation: https://www.netlify.com/docs/redirects/
 /agrc-system-status-page/                                                               /agrc-status/                                                   301
 /data/address-overview/                                                                 /data/address/                                                  301
 /data/address-overview/address-grids/notes-utah-local-addressing-systems-address-grids/ /data/address/address-grids/                                    301
+/data/aerial-photography/2003-uao-1-foot-color-orthophotography/                        /data/aerial-photography/hro/                                   301
+/data/aerial-photography/2006-hro-1-foot-color-orthophotography/                        /data/aerial-photography/hro/                                   301
+/data/aerial-photography/2006-naip-1-meter-color-orthophotography/                      /data/aerial-photography/naip/                                  301
+/data/aerial-photography/2009-hro-1-foot-color-orthophotography/                        /data/aerial-photography/hro/                                   301
+/data/aerial-photography/2009-naip-1-meter-orthophotography/                            /data/aerial-photography/naip/                                  301
+/data/aerial-photography/2011-naip-1-meter-orthophotography/                            /data/aerial-photography/naip/                                  301
+/data/aerial-photography/2012-hro-6-inch-color-orthophotography/                        /data/aerial-photography/hro/                                   301
+/data/aerial-photography/2014-naip-1-meter-orthophotography/                            /data/aerial-photography/naip/                                  301
+/data/aerial-photography/2016-naip-1-meter-orthophotography/                            /data/aerial-photography/naip/                                  301
 /data/bioscience-overview/                                                              /data/bioscience/                                               301
 /data/bioscience-overview/department-wildlife-resources-habitat-areas/                  /data/bioscience/department-wildlife-resources-habitat-areas/   301
 /data/bioscience-overview/dominant-vegitation/                                          /data/bioscience/dominant-vegitation/                           301
@@ -69,7 +78,7 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/water-data-services/water-rights-regions/                                         /data/water/water-rights-regions/                               301
 /data/water-data-services/watersheds/                                                   /data/water/watersheds/                                         301
 /data/water-data-services/wetlands/                                                     /data/water/wetlands/                                           301
-/new-sde-connection-properties-for-arcgis-desktop-10-1/                                 /sgid-database/                       301
+/new-sde-connection-properties-for-arcgis-desktop-10-1/                                 /sgid-database/                                                 301
 /templater                                                                              http://agrc.github.io/templater                                 301
 
 /aerial/                                                                                /data/aerial-photography/                                       301
