@@ -32,7 +32,7 @@ Once connected to AGRC's mapserv, navigate to your folder of interest. The avail
 - ScannedMaps
 
 ![Warning]({{ "/images/ImageServer_cropped.jpg" | prepend: site.baseurl }})
-{:.inline-text-left .productImage-Thumb}
+{:.inline-text-left .outline}
 
 The legacy version of Image Server is not compatible with 10.3. ArcGIS Desktop Projects may not open or properly function at 10.3 when you have artifacts of the deprecated Image Server in your `.mxd` project files. Remove the layers that access the deprecated Image Server and remove the custom `Add Image Service Connection` button from projects prior to installing 10.3.
 
