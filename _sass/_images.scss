@@ -1,4 +1,4 @@
-.inline-text-left, .productImage-Thumb {
+.inline-text-left, .outline {
     float: left;
     margin-right: .5em;
     margin-bottom: .5em;
@@ -27,8 +27,8 @@ svg.logo {
         float: none;
     }
 }
-.productImage-Thumb {
-    border: .08em solid darken($brand-color, 10%);
+.outline {
+    border: 1px solid darken($brand-color, 10%);
 }
 .data-thumb {
     width: 90px;

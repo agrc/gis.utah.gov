@@ -20,7 +20,7 @@ date: 2011-04-05 22:01:27 -0500
 
 <h4>Developer Resources</h4>
 
-<a href="{{ "/developer/base-maps/" | prepend: site.baseurl }}" title="Online Base Maps"><i class="fa fa-2x fa-fw fa-map"></i> Online Base Maps</a>
+<a href="{{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}" title="Online Base Maps"><i class="fa fa-2x fa-fw fa-map"></i> Online Base Maps</a>
 
 <p>AGRC's online map services are available for use at no cost, fast, accurate, and beautiful.</p>
 

@@ -19,39 +19,47 @@ tags:
 }
 </style>
 <div class="grid__col grid__col--1-of-3 text-center">
-    <h5 class="text-center">Imagery plus Overlay base maps</h5>
-    <img src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}">
+    <h5 class="text-center">Imagery plus Overlay</h5>
+    <img src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}" class="outline">
 </div>
 <div class="grid__col grid__col--1-of-3 text-center">
     <h5 class="text-center">Terrain</h5>
-    <img src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}">
+    <img src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}" class="outline">
 </div>
-
 <div class="grid__col grid__col--1-of-3 text-center">
-    <h5 class="text-center">Lite base map</h5>
-    <img src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}">
+    <h5 class="text-center">Lite</h5>
+    <img src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}" class="outline">
 </div>
 
----
-{: .hr-separate }
-
-Do you need a quick, fast base map for your GIS, CAD or web services?
-
-AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow. The Discover services utilize a Web Mercator WGS84 coordinate system (wkid: 3857). Information about transformations between different coordinate systems can be found [here]({{ "/discover/resources/" | prepend: site.baseurl }} "Coordinate System and Datum") under `Coordinate System and Datum`.
-
-### Web Mercator Services on Discover
+Do you need a quick, fast base map for your [GIS, CAD, or web services]({{ "/discover/#connect" | prepend: site.baseurl }})? AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow.
 
 <div id="logo">
-  <img src="{{ "/discover/images/discover-logo.png" | prepend: site.baseurl }}" alt="discover logo" />
+  <a href="{{ "/discover/" | prepend: site.baseurl }}"><img src="{{ "/discover/images/discover-logo.png" | prepend: site.baseurl }}" alt="discover logo" /></a>
 </div>
 
-AGRC’s cloud-based server Discover provides imagery and base maps services in Open Geospatial Consortium (OGC) standard Web Map Tile Service (WMTS) and Web Map Service (WMS) in the Web Mercator WGS84 projection (wkid: 3857).
+<i class="fa fa-exclamation-triangle"></i> **Everyone wanting to use the AGRC base maps needs to have a [free account]({{ "/discover/license" | prepend: site.baseurl }} "#web-mercator-services-on-discover") and a quad word key created for them**. <i class="fa fa-exclamation-triangle"></i>
+{: .pop .text-center }
 
-One featured offering from **[Discover]({{"/discover/" | prepend: site.baseurl }})** is statewide 6 inch imagery collected and licensed by Google. Due to this licensed content, access to the Google imagery is only for **Utah’s cities, counties, special districts, state agencies, K12/Higher education, and tribes and contractors and formal partners of the immediate licensees** free of charge. To obtain access to the Google imagery on the Discover server you need to fill out and understand the **[Organizational Usage Agreement](https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform)** available from the **[Discover]({{"/discover/" | prepend: site.baseurl }})** page. Once the Organizational Usage Agreement is completed, you will receive information about the services and URL links to access the Discover server. The URLs to access the server will contain a quad-word (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) unique to each user or organization.
+AGRC’s cloud-based server, [Discover]({{ "/discover/" | prepend: site.baseurl }}), provides imagery and base map services in an OGC standard WMTS and WMS in the Web Mercator WGS84 projection (wkid: 3857). There are over [20 services]({{ "/discover/#services" | prepend: site.baseurl }}) available from Discover that are free to use. **A subset of services do require a [signed license agreement]({{ "/discover/license" | prepend: site.baseurl }})**.
 
-If you are not covered by the license agreement for the Google imagery service you will need to fill out the **[Discover Server Access](https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform "If you are one of the organizations covered by the Google license in the paragraph above Do Not fill out this form. Please fill out the Organizational Usage Agreement above.")** form for access to the non-licensed services. Once the form has been completed, you will receive information about the services and URL links to access the Discover server. The URLs to access the server will contain a quad-word (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) unique to each user or organization. ***If you already have a Discover account, you do not need to create another account to access the base maps and imagery services.***
+<i class="fa fa-fw fa-info-circle"></i> Each cache consists of around **3 to 17 million** 256 pixel square tiles that can range from **15G to over 200GB**. These caches are standardized on a subset of the Google, Microsoft, and esri [scale levels]({{ "/developer/base-maps/basemap-scales/" | prepend: site.baseurl }}) that apply to our state. The [update schedule]({{ "/developer/base-maps/basemap-maintenance-schedule/" | prepend: site.baseurl }}) will keep you in the loop as to when the tiles were last updated. If you would like to download imagery visit the [aerial photography]({{ "/data/aerial-photography/" | prepend: site.baseurl }}) data page.
 
-- For imagery downloads visit [this page]({{ "/data/aerial-photography/" | prepend: site.baseurl }}).
-- Instructions on how to [use the Discover services in Pro/ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
+#### The Services on Discover
 
-_If you need continued support of the UTM base maps, we will be offering the tiles for on premise use. Please [contact AGRC]({{ "/about/contact/" | prepend: site.baseurl }}) for details._
+<i class="fa fa-fw fa-map"></i> **Terrain**: This base map highlights elevation with mountain peak elevation labels, contour lines, ski resorts, as well as many other places of interest.
+
+<i class="fa fa-fw fa-map"></i> AGRC maintains a very minimal cache called **Lite**. It is very muted in color and does not distract from data overlayed on top of it.
+
+<i class="fa fa-fw fa-map"></i> Up next is the **Imagery** base map. This tile set shows the Google aerial photography. You will need to qualify for an [organizational account login]({{ "/discover/license" | prepend: site.baseurl }}) to use to this base map for licensing reasons.
+
+<i class="fa fa-fw fa-map"></i> An exciting offering, _that we call squiggles and dots internally_, is a service called **Overlay**. This is a transparent set of tiles that displays styled roads and placenames. This can be overlayed on data for reference. Combining this with **Imagery** can create a desired **Hybrid** effect.
+
+<i class="fa fa-fw fa-map"></i> We have the **Color Infrared**, **Address Points** and **Topo** caches. The Color Infrared is a neat way to look at vegetation while the Topo cache contains all of the USGS Quad Sheets. The Topo cache displays the most relevant quad sheet (250K, 100K and 24K) depending on your scale. The Address Points cache is a fast way to view around 2.5 million address points.
+
+<i class="fa fa-fw fa-map"></i> There are also historical NAIP and Google imagery.
+
+
+*[OGC]: Open Geospatial Consortium
+*[WMTS]: Web Map Tile Service
+*[WMS]: Web Map Service
+*[NAIP]: National Agricultural Imagery Program

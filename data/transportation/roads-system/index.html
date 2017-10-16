@@ -72,7 +72,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-streets-roads.png" | prepend: site.baseurl }}" alt="streets and roads" />
+    <img class="outline" src="{{ "/images/gallery/sgid/utah-gis-streets-roads.png" | prepend: site.baseurl }}" alt="streets and roads" />
     <p>Transportation.Roads is a multi-purpose statewide roads dataset for cartography and range based-address location. This dataset is also used as the base geometry for deriving the GIS-representation of UDOT's highway linear referencing system (LRS). A network analysis dataset for route-finding can also be derived from this dataset.</p>
     <p>Transportation.Roads utilizes a data model based on Next-Generation 911 standards and the Federal Highway Administration's All Roads Network Of Linear-referenced Data (ARNOLD) reporting requirements for state DOTs. AGRC <a href="{{site.baseurl}}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}">adopted</a> this data model on September 13th, 2017.</p>
     <p>To see specific information about the data model including field names and descriptions, data types, coded value domains, and data model updates, see the <a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546">data model spreadsheet</a> and the corresponding tabs for update notes and coded value domains. The color-coded section titled <code>Addressing</code> is primarily maintained by the local stewards, where as the section titled <code>DOT/FHWA</code> is primarily maintained by UDOT. AGRC spatially assigns fields in the section titled <code>Placename/Area</code>, based on current SGID polygon boundaries. AGRC also generates the <code>UNIQUE_ID</code> field based on the segment's location in the US National Grid, with the street name then tacked on. The <code>UNIQUE_ID</code> field is static and is AGRC's current, ad hoc solution to a persistent global id.</p>
@@ -147,7 +147,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}" alt="utah-gis-highway-lrs-udot" />
+    <img class="outline" src="{{ "/images/gallery/sgid/utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}" alt="utah-gis-highway-lrs-udot" />
     <p>Transportation.UDOTRoutes_LRS is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepost measure coordinate.</p>
     <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0080PR18501 is the east bound off ramp at exit 185 on I-80). ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter x,y coordinate precision; 0.001 mile m coordinate precision). The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
@@ -167,7 +167,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-sgid-highway-milepost.png" | prepend: site.baseurl }}" alt="utah-sgid-highway-milepost" />
+    <img class="outline" src="{{ "/images/gallery/sgid/utah-sgid-highway-milepost.png" | prepend: site.baseurl }}" alt="utah-sgid-highway-milepost" />
     <p>Transportation.UDOTMileposts represents the approximate location of state and federal highway mileposts as a single point. This dataset is derived directly from SGID10.Transportation.UDOTRoutes_LRS.</p>
     <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction).  ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
     <p>Per UDOT policy the actual location of mileposts can vary up to 50 feet, from the measured position where intersections and physical infrastructure make a more 'true' psoitioning impractical or undesirable.</p>
@@ -187,7 +187,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" title="utah gis highway freeway shield lines" src="{{ "/images/utah-gis-highway-freeway-shield-lines.png" | prepend: site.baseurl }}" alt="Tenth Mile References" />
+    <img class="outline" title="utah gis highway freeway shield lines" src="{{ "/images/utah-gis-highway-freeway-shield-lines.png" | prepend: site.baseurl }}" alt="Tenth Mile References" />
     <p>Transportation.UDOTTenthMileRefPoints represents the approximate location of state and federal highway tenth of a mile locations as a single point. This dataset is derived directly from SGID10.Transportation.UDOTRoutes_LRS.</p>
     <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction).  ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
     <p>Per UDOT policy the actual location of tenth of mile locations can vary up to 50 feet, from the measured position where intersections and physical infrastructure make a more ‘true’ psoitioning impractical or undesirable.</p>
@@ -203,7 +203,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" src="{{ "/images/gallery/sgid/utah-gis-freeway-exits.png" | prepend: site.baseurl }}" alt="utah-gis-freeway-exits" />
+    <img class="outline" src="{{ "/images/gallery/sgid/utah-gis-freeway-exits.png" | prepend: site.baseurl }}" alt="utah-gis-freeway-exits" />
     <p>Transportation.Roads_FreewayExits contains point locations for each freeway and limited access highway exit along with the exit number, name, associated route, and connected streets/routes.</p>
     <p>The EXITNAME field provides the primary route name and exit number plus the connecting route number or street name and place name carried by the exit sign. Route number and exit number are also carried in separate fields.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This dataset was assembled by AGRC from resources provided by UDOT, as a resource for 911 dispatch and for general map reference.</p>
@@ -222,7 +222,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="productImage-Thumb" title="utah gis highway freeway shield lines" src="{{ "/images/utah-gis-highway-freeway-shield-lines.png" | prepend: site.baseurl }}" alt="freeway shield lines" />
+    <img class="outline" title="utah gis highway freeway shield lines" src="{{ "/images/utah-gis-highway-freeway-shield-lines.png" | prepend: site.baseurl }}" alt="freeway shield lines" />
     <p>Transportation.RoadsShieldLines consists of highway route lines edited to best enable non-redundant, dynamic label rendering of highway shields for freeways, US highways, and state highways.</p>
     <p>In ArcMap, define a label class for each CLASS field value. 1 is for freeways, 2 for US highways, and 3 is for state highways. Each label class should use a SQL expression to define the class and the default class should be disabled or deleted.</p>
     <p>When defined labeling properties are defined properly, the minimum number of freeway and highway shields should be displayed without introducing ambiguity.</p>
