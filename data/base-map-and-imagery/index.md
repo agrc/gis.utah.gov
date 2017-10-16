@@ -6,7 +6,7 @@ author:
   email: bgranberg@utah.gov
 published: true
 date: 2011-11-03 18:11:05 -0600
-title: Using SGID Base Map & Imagery Services
+title: SGID Base Map & Imagery Services
 categories:
   - Developer
 tags:
@@ -18,25 +18,26 @@ tags:
   margin: 0 auto;
 }
 </style>
-<div class="grid__col grid__col--1-of-3 text-center">
-    <h5 class="text-center">Imagery plus Overlay</h5>
-    <img src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}" class="outline">
-</div>
-<div class="grid__col grid__col--1-of-3 text-center">
-    <h5 class="text-center">Terrain</h5>
-    <img src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}" class="outline">
-</div>
-<div class="grid__col grid__col--1-of-3 text-center">
-    <h5 class="text-center">Lite</h5>
-    <img src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}" class="outline">
-</div>
-
-Do you need a quick, fast base map for your [GIS, CAD, or web services]({{ "/discover/#connect" | prepend: site.baseurl }})? AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow.
-
 <div id="logo">
   <a href="{{ "/discover/" | prepend: site.baseurl }}"><img src="{{ "/discover/images/discover-logo.png" | prepend: site.baseurl }}" alt="discover logo" /></a>
 </div>
 
+Do you need a quick, fast base map for your [GIS, CAD, or web services]({{ "/discover/#connect" | prepend: site.baseurl }})? AGRC provides several multi-scale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow.
+
+<div class="grid">
+  <div class="grid__col grid__col--1-of-3 text-center">
+      <h5 class="text-center">Imagery plus Overlay</h5>
+      <img src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}" class="outline">
+  </div>
+  <div class="grid__col grid__col--1-of-3 text-center">
+      <h5 class="text-center">Terrain</h5>
+      <img src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}" class="outline">
+  </div>
+  <div class="grid__col grid__col--1-of-3 text-center">
+      <h5 class="text-center">Lite</h5>
+      <img src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}" class="outline">
+  </div>
+</div>
 <i class="fa fa-exclamation-triangle"></i> **Everyone wanting to use the AGRC base maps needs to have a [free account]({{ "/discover/license" | prepend: site.baseurl }} "#web-mercator-services-on-discover") and a quad word key created for them**. <i class="fa fa-exclamation-triangle"></i>
 {: .pop .text-center }
 
