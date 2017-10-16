@@ -155,28 +155,28 @@ abstract="Cadastre.LandOwnership feature class depicts land ownership status and
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <p>The following land ownership-related data layers can easily be derived from Cadastre.LandOwnership by using subset (defintion) queries to select a specific set of features:</p>
-    <p><img class="outline" src="{{ "/images/LandOwernship_Federal.png" | prepend: site.baseurl }}" alt="Federal Land ownership" /><strong>Land owned by the Federal Government.</strong> This includes land administered by the US Bureau of Land Management, the US Bureau of Reclamation, the US Department of Defense, the US Department of Energy, the US National Park Service, the Utah State Department of Wildlife Resources, the US Forest Service, the US Fish and Wildlife Service and, in some cases, the Utah State Department of State Parks.</p>
+    <p><img class="inline-text-left outline" src="{{ "/images/LandOwernship_Federal.png" | prepend: site.baseurl }}" alt="Federal Land ownership" /><strong>Land owned by the Federal Government.</strong> This includes land administered by the US Bureau of Land Management, the US Bureau of Reclamation, the US Department of Defense, the US Department of Energy, the US National Park Service, the Utah State Department of Wildlife Resources, the US Forest Service, the US Fish and Wildlife Service and, in some cases, the Utah State Department of State Parks.</p>
     <p>To work with only federal lands, specify a SELECT Where Clause of: <code>OWNER = 'Federal'</code></p>
 
-    <p><img class="outline" src="{{ "/images/LandOwnership_BLM.png" | prepend: site.baseurl }}" alt="BLM Land ownership" /><strong>Bureau of Land Management (BLM).</strong> The BLM has a multi-use mission. Land uses include energy development, livestock grazing, recreation, and timber harvesting, while protecting a wide array of natural, cultural, and historical resources.</p>
+    <p><img class="inline-text-left outline" src="{{ "/images/LandOwnership_BLM.png" | prepend: site.baseurl }}" alt="BLM Land ownership" /><strong>Bureau of Land Management (BLM).</strong> The BLM has a multi-use mission. Land uses include energy development, livestock grazing, recreation, and timber harvesting, while protecting a wide array of natural, cultural, and historical resources.</p>
     <p>To work with only BLM administered lands (may be different than BLM-owned lands), specify a SELECT Where Clause of: <code>ADMIN = 'BLM'</code></p>
 
-    <p><img class="outline" src="{{ "/images/LandOwnership_NPS.png" | prepend: site.baseurl }}" alt="National Parks and Monuments land ownership" /><strong>National Parks and Monuments.</strong> There are five national parks in Utah and seven national monuments in Utah.</p>
+    <p><img class="inline-text-left outline" src="{{ "/images/LandOwnership_NPS.png" | prepend: site.baseurl }}" alt="National Parks and Monuments land ownership" /><strong>National Parks and Monuments.</strong> There are five national parks in Utah and seven national monuments in Utah.</p>
     <p>To work with only National Parks and Monuments (Grand Staircase Escalante NM is adminstered by the BLM), specify a SELECT Where Clause of: <code>(ADMIN = 'NPS' or ADMIN = 'BLM') and (DESIG = 'National Park' or DESIG = 'National Monument')</code></p>
     <p>To work with all National Park Service Parks, Monuments, &amp; Recreation areas specify a SELECT Where Clause of: <code>ADMIN = 'NPS'</code></p>
-    <p><img class="outline" src="{{ "/images/LandOwnership_Private.png" | prepend: site.baseurl }}" alt="Private land owenership" /><strong>Private land.</strong> In this subset, all non-public lands are assumed private. Private land includes town, city, and county held properties.</p>
+    <p><img class="inline-text-left outline" src="{{ "/images/LandOwnership_Private.png" | prepend: site.baseurl }}" alt="Private land owenership" /><strong>Private land.</strong> In this subset, all non-public lands are assumed private. Private land includes town, city, and county held properties.</p>
     <p>To work with only Privately* held lands, specify a SELECT Where Clause of: <code>OWNER = 'Private'</code></p>
     <p>* <em>Note that lands designated as private may include land currently held by local and other government agencies, not considered to be part of the public lands inventory</em>.</p>
 
-    <p><img class="outline" src="{{ "/images/LandOwnership_StateTrust.png" | prepend: site.baseurl }}" alt="State Trust land ownership" /> <strong>School and Institutional Trust Lands Administration (SITLA).</strong> SITLA is an independent agency of Utah State government. It was created in 1994 by the Utah State Legislature to manage lands granted to the State of Utah by the United States for the support of public schools and other beneficiary institutions.</p>
+    <p><img class="inline-text-left outline" src="{{ "/images/LandOwnership_StateTrust.png" | prepend: site.baseurl }}" alt="State Trust land ownership" /> <strong>School and Institutional Trust Lands Administration (SITLA).</strong> SITLA is an independent agency of Utah State government. It was created in 1994 by the Utah State Legislature to manage lands granted to the State of Utah by the United States for the support of public schools and other beneficiary institutions.</p>
     <p>To work with only land held by the State of Utah School and Institutional Trust Lands Administration (SITLA), specify a SELECT Where Clause of:
     <code>OWNER AGENCY = 'SITLA'</code></p>
 
-    <p><img class="outline" src="{{ "/images/LandOwnership_Tribal.png" | prepend: site.baseurl }}" alt="Tribal land ownership" /><strong>Native American Tribal Land.</strong></p>
+    <p><img class="inline-text-left outline" src="{{ "/images/LandOwnership_Tribal.png" | prepend: site.baseurl }}" alt="Tribal land ownership" /><strong>Native American Tribal Land.</strong></p>
     <p>To work with only Tribal lands* specify a SELECT Where Clause of: <code>Owner = 'Tribal'</code></p>
     <p> * <em>Note, some private land held by tribes may not be reflected</em>.</p>
 
-    <p><img class="outline" src="{{ "/images/LandOwnership_Wilderness.png" | prepend: site.baseurl }}" alt="Wilderness land owernship" /> <strong>Wilderness.</strong> Congressional designated wilderness (BLM and US Forest Service)</p>
+    <p><img class="inline-text-left outline" src="{{ "/images/LandOwnership_Wilderness.png" | prepend: site.baseurl }}" alt="Wilderness land owernship" /> <strong>Wilderness.</strong> Congressional designated wilderness (BLM and US Forest Service)</p>
     <p>To work with only formally designated wilderness areas (USFS and BLM), specify a SELECT Where Clause of:
     <code>DESIG = 'Wilderness'</code></p>
   </div>
