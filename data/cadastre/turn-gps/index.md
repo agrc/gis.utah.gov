@@ -16,18 +16,14 @@ categories: []
 <div class="caption"><img title="map" src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
   <p class="caption-text">TURN GPS Stations</p>
 </div>
-<h4 class="package--header">TURN GPS Network</h4>
-<ul class="dotless no-padding">
-  <li><strong>Data Type:</strong> GPS Network</li>
-  <li><strong>Stewards:</strong> AGRC</li>
-  <li><strong>Contacts:</strong> <a href="mailto:sfernandez@utah.gov">Sean A. Fernandez PLS</a> and <a href="mailto:mheagin@utah.gov">Mike Heagin</a></li>
-  <li><strong>Usage:</strong> Paid subscription; Login, Password required</li>
-  <li><strong>Cost:</strong> $600 annually</li>
-  <li><strong>Website:</strong> <a href="http://turngps.utah.gov/">The Utah Reference Network GPS</a></li>
-  <li><strong>Abstract:</strong> The Utah Reference Network (TURN) GPS is a GNSS network of permanently located GPS receivers, installed across the state, to generate real time high accuracy GPS positioning. TURN GPS uses the Trimble PIVOT VRS Platform. TURN GPS is used for a range of precision GPS applications including surveying, engineering, construction, and GIS data collection. The current cost is $600 for each user login and is good for a full year from the signup date.<p></p>
-  <p>The Coordinate Reference Frame for this network is <strong>NAD83(2011)(EPOCH:2010.0000.)</strong>. The Latitude, Longitude and Ellipsoidal Height of each reference station was calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects application.</p>
-  <p>Eighteen NGS Continually Operating Reference Stations (CORS) were selected along the perimeter and interior of the network and were constrained to the published coordinates to conduct the final adjustment of the network coordinates.</p></li>
-</ul>
+{% include abstract.html
+name="TURN GPS Network"
+stewards="AGRC"
+type="GPS Network with $600 Annual Subscription"
+webapp="http://turngps.utah.gov/"
+abstract="The Utah Reference Network (TURN) GPS is a GNSS network of permanently located GPS receivers, installed across the state, to generate real time high accuracy GPS positioning. TURN GPS uses the Trimble PIVOT VRS Platform. TURN GPS is used for a range of precision GPS applications including surveying, engineering, construction, and GIS data collection. The current cost is $600 for each user login and is good for a full year from the signup date.<p></p>
+<p>The Coordinate Reference Frame for this network is <strong>NAD83(2011)(EPOCH:2010.0000.)</strong>. The Latitude, Longitude and Ellipsoidal Height of each reference station was calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects application.</p>
+<p>Eighteen NGS Continually Operating Reference Stations (CORS) were selected along the perimeter and interior of the network and were constrained to the published coordinates to conduct the final adjustment of the network coordinates." %}
 
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12" markdown="1">
