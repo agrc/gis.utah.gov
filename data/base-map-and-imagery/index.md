@@ -38,7 +38,7 @@ Do you need a quick, fast base map for your [GIS, CAD, or web services]({{ "/dis
       <img src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}" class="outline">
   </div>
 </div>
-<i class="fa fa-exclamation-triangle"></i> **Everyone wanting to use the AGRC base maps needs to have a [free account]({{ "/discover/license" | prepend: site.baseurl }} "#web-mercator-services-on-discover") and a quad word key created for them**. <i class="fa fa-exclamation-triangle"></i>
+<i class="fa fa-exclamation-triangle"></i> **Everyone wanting to use the AGRC base maps needs to have a [free account]({{ "/discover/" | prepend: site.baseurl }} "#web-mercator-services-on-discover") and a quad word key created for them**. <i class="fa fa-exclamation-triangle"></i>
 {: .pop .text-center }
 
 AGRC’s cloud-based server, [Discover]({{ "/discover/" | prepend: site.baseurl }}), provides imagery and base map services in an OGC standard WMTS and WMS in the Web Mercator WGS84 projection (wkid: 3857). There are over [20 services]({{ "/discover/#services" | prepend: site.baseurl }}) available from Discover that are free to use. **A subset of services do require a [signed license agreement]({{ "/discover/license" | prepend: site.baseurl }})**.
