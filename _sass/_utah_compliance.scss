@@ -25,3 +25,11 @@
 #utahgov_statewideheader_button_add a {
     width:105px;
 }
+
+.state-footer {
+    background-color: lighten($section-header-footer, 2%);
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}

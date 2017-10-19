@@ -121,37 +121,41 @@
                 <label for="mce-LNAME">Last Name <span class="asterisk">*</span> </label>
                 <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
               </div>
-              <div class="mc-field-group input-group">
-                <strong>Please select updates that interest you </strong>
-                <ul>
-                  <li>
-                    <input type="checkbox" value="1" name="group[7425][1]" id="mce-group[7425]-7425-0">
-                    <label for="mce-group[7425]-7425-0">Data Updates</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" value="2" name="group[7425][2]" id="mce-group[7425]-7425-1">
-                    <label for="mce-group[7425]-7425-1">Info for Developers</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" value="8" name="group[7425][8]" id="mce-group[7425]-7425-2">
-                    <label for="mce-group[7425]-7425-2">General Utah Map News</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" value="16" name="group[7425][16]" id="mce-group[7425]-7425-3">
-                    <label for="mce-group[7425]-7425-3">Local &amp; State Government</label>
-                  </li>
-                </ul>
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <label aria-hidden="true" for="mce-imnothere">some secret for mailchimp</label>
-                <input aria-hidden="true" type="text" name="b_0f7773ca3c6d02d1c38851ee9_1fe9862f44" tabindex="-1" value="" id='mce-imnothere'>
-              </div>
-              <div class="clear">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              <div class="grid">
+                <strong>Please select updates that interest you</strong>
+                <div class="grid__col grid__col--1-of-2">
+                  <div class="mc-field-group input-group">
+                    <ul>
+                      <li>
+                        <input type="checkbox" value="1" name="group[7425][1]" id="mce-group[7425]-7425-0">
+                        <label for="mce-group[7425]-7425-0">Data Updates</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" value="2" name="group[7425][2]" id="mce-group[7425]-7425-1">
+                        <label for="mce-group[7425]-7425-1">Info for Developers</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" value="8" name="group[7425][8]" id="mce-group[7425]-7425-2">
+                        <label for="mce-group[7425]-7425-2">General Utah Map News</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" value="16" name="group[7425][16]" id="mce-group[7425]-7425-3">
+                        <label for="mce-group[7425]-7425-3">Local &amp; State Government</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <label aria-hidden="true" for="mce-imnothere">some secret for mailchimp</label>
+                    <input aria-hidden="true" type="text" name="b_0f7773ca3c6d02d1c38851ee9_1fe9862f44" tabindex="-1" value="" id='mce-imnothere'>
+                  </div>
+                </div>
+                <div class="grid__col grid__col--1-of-2 grid__col--ab text-center">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                </div>
               </div>
             </div>
           </form>
@@ -203,19 +207,19 @@
             AGRC Data Disclaimer
           </a>
         </div>
-        <h3 class="text-center">Utah.gov Links</h3>
-        <ul class="dotless text-center">
-          <li><a href="http://www.utah.gov">Utah.gov Home</a></li>
-          <li><a href="http://www.utah.gov/disclaimer.html">Utah.gov Terms of Use</a></li>
-          <li><a href="http://www.utah.gov/privacypolicy.html">Utah.gov Privacy Policy</a></li>
-          <li><a href="http://www.utah.gov/accessibility.html">Utah.gov Accessibility Policy</a></li>
-          <li><a href="http://www.utah.gov/translate.html">Translate Utah.gov</a></li>
-        </ul>
       </div>
     </div>
+    <div class="state-footer">
+      <strong>utah.gov links</strong>
+      <span><a href="http://www.utah.gov">Home</a></span>
+      <span><a href="http://www.utah.gov/disclaimer.html">Terms of Use</a></span>
+      <span><a href="http://www.utah.gov/privacypolicy.html">Privacy Policy</a></span>
+      <span><a href="http://www.utah.gov/accessibility.html">Accessibility Policy</a></span>
+      <span><a href="http://www.utah.gov/translate.html">Translate</a></span>
+    </div>
     {% if site.github %}
-    <div class="muted text-center">
-        Build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
+    <div class="awesome text-center">
+        build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
     </div>
     {% endif %}
   </footer>
