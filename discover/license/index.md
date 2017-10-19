@@ -1,7 +1,9 @@
 ---
 status: publish
 layout: page
-tags: []
+tags:
+  - discover
+  - license
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
