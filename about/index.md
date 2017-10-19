@@ -94,9 +94,7 @@ AGRC is funded through a combination of State general and restricted funds and c
 _Some of the organizations that we have partnered with or worked for recently_
 {: .text-center }
 
-|       |         |   |
-| ------------- | ------------- | ----- |
-| [Blue Stakes of Utah](http://www.bluestakes.org/) | Brigham Young University |· Bureau of Land Management |
+| [Blue Stakes of Utah](http://www.bluestakes.org/) | Brigham Young University | Bureau of Land Management |
 | Community Impact Board | Department of Agriculture & Food | DABC
 | Department of Commerce | Department of Corrections | [Department of Environmental Quality](http://deq.utah.gov) |
 | Departmemt of Health | Department of Human Services | Department of Heritage & Arts |
