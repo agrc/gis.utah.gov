@@ -30,32 +30,30 @@ GIS data can be shared to AGRC for publication in the State Geographic Informati
 
 Listed below are the layers we hope to complete and keep current through partnership with county and local govenrment, and the desired attribute information.
 
-### **Primary Datasets**
+### Primary Datasets
 {: .text-left}
 
-- [**Road Centerlines**](#road_centerlines)
-- [**Address Points**](#address_points)
-- [**Parcels**](#parcels)
+- [Road Centerlines](#road_centerlines)
+- [Address Points](#address_points)
+- [Parcels](#parcels)
 {: .dotless }
 
-### **Secondary Datasets**
+### Secondary Datasets
 {: .text-left}
 
-- [**Boundaries**](#boundaries)
-- [**Building Footprints**](#building_footprints)
-- [**Trails**](#trails)
+- [Boundaries](#boundaries)
+- [Building Footprints](#building_footprints)
+- [Trails](#trails)
 {: .dotless}
 
-![GIS Data Samples]({{"/images/DataRequest.png"| prepend:site.baseurl}})
+![GIS Data Samples]({{"/images/DataRequest.png"| prepend:site.baseurl}}){: style="width:100%" }
 
 ---
 {: .divider }
 
-### [**Road Centerlines**]({{"/data/transportation/roads-system/" | prepend:site.baseurl}} "Road Centerlines page")
-{: #road_centerlines}
+### [Road Centerlines]({{"/data/transportation/roads-system/" | prepend:site.baseurl}} "Road Centerlines page"){: #road_centerlines }
 
-![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}})
-{: .pull-right}
+![Road Centerlines]({{"/images/front-page/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}}){: .pull-right .outline }
 
 This is a multi-purpose statewide roads dataset for cartography and range based-address location. View our
 [Transportation Data Model](https://drive.google.com/file/d/0Bz18jufMWioiU25icDNoQWlJa2M/view),
@@ -70,11 +68,9 @@ Listed below are considered the minimum attributes:
 | ACSALIAS | ACSNAME | ACSSUF | CLASS |
 | MODIFYDATE | | | |
 
-### [**Address Points**]({{"/data/location/address-data/" | prepend:site.baseurl}} "Address Points page")
-{: #address_points}
+### [Address Points]({{"/data/location/address-data/" | prepend:site.baseurl}} "Address Points page"){: #address_points }
 
-![Address Points]({{"/images/front-page/90x90_address_points.png" | prepend:site.baseurl}})
-{: .pull-right}
+![Address Points]({{"/images/front-page/90x90_address_points.png" | prepend:site.baseurl}}){: .pull-right .outline}
 
 View our
 [Address Points Data Model](https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing) and samples of [what they are used for]({{ "/downloads/Address_Point_Database_Values_V1_051914.pdf" | prepend: site.baseurl }}).
@@ -82,11 +78,9 @@ Listed below are considered the minimum attributes:
 
 | Full Address (physical/situs)(ex. 622 N KAYCIE LN) | City | Zip Code | Parcel ID |
 
-### [**Parcels**]({{"/data/cadastre/parcels/" | prepend:site.baseurl}} "Basic Parcels page")
-{: #parcels}
+### [Parcels]({{"/data/cadastre/parcels/" | prepend:site.baseurl}} "Basic Parcels page"){: #parcels}
 
-![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}})
-{: .pull-right}
+![Parcels]({{"/images/front-page/90x90_parcels.png" | prepend:site.baseurl}}){: .pull-right .outline }
 
 The information below pertains to the _Basic Parcels_ however _Land Information Record Parcels_ (LIR) are also requested. More information about the LIR Parcels can be found on the [Work Group Recomends Expanded GIS Parcel Sharing]({{site.baseurl}}{% post_url 2016-05-26-work-group-recommends-expanded-gis-parcel-sharing %}) page.
 
@@ -94,31 +88,25 @@ In addition to the parcel polygon geometry the following fields are a necessity 
 
 | Parcel ID and/or Serial Number | Parcel Address (physical/situs)  _(this attribute is optional if accompanied by Address Points with a Parcel ID and/or Serial Number)_ |
 
-### [**Boundaries**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page")
-{: #boundaries}
+### [Boundaries]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Boundaries page"){: #boundaries }
 
-![Boundaries]({{"/images/front-page/90x90_voter_precincts.png" | prepend:site.baseurl}})
-{: .pull-right}
+![Boundaries]({{"/images/front-page/90x90_voter_precincts.png" | prepend:site.baseurl}}){: .pull-right .outline }
 
 County and Municipal boundary changes should be submitted to the Lieutenant Governor's office and follow the requirements in state code. More information can be found on the [Utah Lieutenant Governor Municipal Certifications](https://municert.utah.gov/) website.
 
 
-### [**Building Footprints**]({{"/data/location/building-footprint/" | prepend:site.baseurl}} "Building Footprints page")
-{: #building_footprints}
+### [Building Footprints]({{"/data/location/building-footprint/" | prepend:site.baseurl}} "Building Footprints page"){: #building_footprints }
 
-![Building Footprints]({{"/images/front-page/90x90_building_footprints.png" | prepend:site.baseurl}})
-{: .pull-right}
+![Building Footprints]({{"/images/front-page/90x90_building_footprints.png" | prepend:site.baseurl}}){: .pull-right .outline}
 
 This is a multi-purpose dataset of building footprint polygons for cartography and location purposes. The attributes below are optional:
 
 | Name | Type | Address | Parcel ID | Source Year |
 
 
-### [**Trails**]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page")
-{: #trails}
+### [Trails]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page"){: #trails }
 
-![Trails]({{"/images/trail.png" | prepend:site.baseurl}})
-{: .pull-right}
+![Trails]({{"/images/trail.png" | prepend:site.baseurl}}){: .pull-right .outline }
 
 View the [Trails Data Model](https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit#gid=0). The following attributes are requested:
 
