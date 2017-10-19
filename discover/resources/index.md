@@ -3,7 +3,7 @@ status: publish
 layout: page
 tags:
   - google
-  - hi res
+  - discover
   - imagery
 author:
   display_name: Rick Kelson
@@ -37,10 +37,24 @@ The native coordinate system for the Google files and services is Web Mercator w
 
 Stated horizontal positional accuracy of the Google imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. Higher precision is expected in urban areas, where existing supplemental ground control was more abundant.
 
-### Adding a WMTS or WMS Service to ArcMap
+### Adding a WMTS or WMS Service to esri Products
 {: .text-left}
 
-Adding a WMTS service to ArcMap is very simple. Go to `Add Data -> GIS Servers -> Add WMTS Server` and paste the WMTS link you have been provided into the `URL:` line then hit OK. Now navigate to the newly added WMTS **'utah imagery - WMTS on discover.agrc.utah.gov'** by going to `Add Data -> GIS Servers`. If you drill down through the service folders you will find the `Utah` or `Google` [layer to add]({{ "/downloads/AddWMTS_tree.jpg" | prepend: site.baseurl }}). The WMS service can be added by following the instructions above just substitute `GIS Servers -> Add WMS Server`. Take a look at [this page]({{"/discover/resources/" | prepend:site.baseurl}}) for more inforamtion about the available layers and using the base maps and imagery services in Pro/ArcMap.
+**ArcGIS Pro 2.x:**
+
+1. `Insert -> Connections -> New WMTS Server`
+1. Paste the `WMTS` link [you have been provided]({{ "/discover/license/" | prepend: site.baseurl }} "view Discover sign up information") into the `Server URL:` line and click `OK`
+1. Navigate to the newly added `utah imagery - WMTS on discover.agrc.utah.gov.wmts` connection under `Servers` in the Catalog window.
+1. Expand the nodes until you see a list of all of the imagery and base map services that are offered. The list can be viewed on the main [Discover]({{ "/discover/#services" | prepend: site.baseurl }}) page.
+
+**ArcMap 10.x**
+
+1. In ArcMap go to `Add Data -> GIS Server -> Add WMTS server`
+1. Paste the `WMTS` link [you have been provided]({{ "/discover/license/" | prepend: site.baseurl }} "view Discover sign up information") into the `URL:` line and click `OK`
+1. Navigate to the newly added `utah imagery – WMTS on discover.agrc.utah.gov` connection and **double click** to connect.
+  - You can rename the connection after it has been added
+1. Expand the nodes until you see a list of all of the imagery and base map services that are offered. The list can be viewed on the main [Discover]({{ "/discover/#services" | prepend: site.baseurl }}) page.
+
 
 ### Adding a WMTS or WMS Service to a Web Map
 {: .text-left}
