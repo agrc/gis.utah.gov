@@ -44,7 +44,6 @@
         position: relative;
         width: 96%;
         min-height: 50px;
-        padding-bottom: 3%;
         clear: left;
      }
 
@@ -58,14 +57,9 @@
         padding: 8px 0;
         text-indent: 2%;
      }
-    .mc-field-group select {
-        display: inline-block;
-        width: 99%;
-        padding: 5px 0;
-        margin-bottom: 2px;
-     }
 
     .indicates-required {
+        float: right;
         margin-right: 4%;
         font-size: .8em;
         text-align: right;
@@ -82,13 +76,11 @@
     }
 
     .mc-field-group.input-group ul {
-        padding: 5px 0;
         margin: 0;
         list-style: none;
      }
     .mc-field-group.input-group ul li {
         display: block;
-        padding: 3px 0;
         margin: 0;
      }
     .mc-field-group.input-group label {

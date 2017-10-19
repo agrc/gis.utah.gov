@@ -39,7 +39,11 @@ a:hover > i {
 
 .post-meta, .muted {
     font-size: $small-font-size;
-    color: currentColor;
+}
+
+.post-meta, .awesome {
+    color: $c;
+    font-size: $small-font-size;
 }
 
 .post-meta {
