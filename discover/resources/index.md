@@ -15,7 +15,7 @@ categories: []
 ---
 
 ### Discover Server
-{: .text-left .outline}
+{: .text-left}
 
 AGRC’s cloud-based server Discover provides imagery and base maps services in Open Geospatial Consortium (OGC) standard Web Map Tile Service (WMTS) and Web Map Service (WMS) in the Web Mercator WGS84 projection (wkid: 3857).
 
