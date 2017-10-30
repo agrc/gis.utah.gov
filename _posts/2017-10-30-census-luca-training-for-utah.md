@@ -33,12 +33,12 @@ The decision to participate in the LUCA review is made by your highest elected o
 ### LUCA Training:
 AGRC, on behalf of the Census Bureau and in partnership with the Governor's Office of Management and Budget, has scheduled Utah's LUCA training session for:
 
-...Utah Census 2020 LUCA Technical Training
-...Thursday, November 2nd, from 1pm - 5pm
-...195 North 1950 West, Salt Lake City
-...MASOB Building, Room 1019 A/B
+- Utah Census 2020 LUCA Technical Training
+   Thursday, November 2nd, from 1pm - 5pm
+   195 North 1950 West, Salt Lake City
+   MASOB Building, Room 1019 A/B
 
-...Please **RVSP for the Nov. 2nd training using [this form](https://docs.google.com/forms/d/e/1FAIpQLSczYHcjdbW33f-8VpnevDEq9rOL4V18astz6uU74VAUpXJFZg/viewform?usp=sf_link)**.
+- Please **RVSP for the Nov. 2nd training using [this form](https://docs.google.com/forms/d/e/1FAIpQLSczYHcjdbW33f-8VpnevDEq9rOL4V18astz6uU74VAUpXJFZg/viewform?usp=sf_link)**.
 
 At this meeting, Census will provide a technical overview of the options for participation in the LUCA address list review. AGRC has asked for Census to move quickly through the basics so additional time can be spent on the QGIS-based application and the shapefile submission option. 
 
