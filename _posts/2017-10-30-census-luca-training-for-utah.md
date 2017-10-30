@@ -23,7 +23,7 @@ tags:
 As a lot of folks know, it's in Utah communities' interest to get a full population count during the upcoming 2020 census. For example, [funding formulas for many programs are tied to demographic data collected by the Census Bureau](https://www.nsgic.org/gwu-counting-for-dollars--census-informed-federal-program-funding). The census count is also used as a guide for redrawing local, state, and national election districts. Helping Census prepare for 2020 is important and something that Utah GIS and addressing professionals are uniquely positioned to do.
 
 ### What is LUCA?
-The Census Bureau's Local Update of Census Addresses (LUCA) program allows city, county, and state government to review and suggest edits to the master residential address list that Census uses to plan and execute their survey work. Of particular importance is the ability for Census to track responses across multiple survey mechanisms (field workers, survey-by-mail, and, this year, online response).
+![Census LUCA Program, 2018]{{ "/images/LUCA2018.png" | prepend: site.baseurl }}){: .inline-text-right}The Census Bureau's Local Update of Census Addresses (LUCA) program allows city, county, and state government to review and suggest edits to the master residential address list that Census uses to plan and execute their survey work. Of particular importance is the ability for Census to track responses across multiple survey mechanisms (field workers, survey-by-mail, and, this year, online response).
 
 While LUCA participation is optional, many cities and counties plan to participate in the address list review. The closer the Census Bureau's master database matches the actual addresses on the ground in your community, the better shot you've got to be fully counted. 
 
