@@ -5,6 +5,7 @@ documentation: https://www.netlify.com/docs/redirects/
 /about/data-policies/                                                                                     /license-disclaimer/                                                          301
 /about/ugic/                                                                                              http://ugic.org/                                                              301
 /about/organizations/geographic-names-committee/                                                          https://heritage.utah.gov/history/state-history-geographic-names-committee    301
+/about/organizations/utah-department-of-technology-services/                                              https://dts.utah.gov                                                          301
 /agrc-system-status-page/                                                                                 /agrc-status/                                                                 301
 /basic-metadata-instructions/                                                                             /data/gis-data-sharing/metadata/                                              301
 /data/address-overview/                                                                                   /data/address/                                                                301
