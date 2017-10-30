@@ -32,14 +32,16 @@ abstract="The Utah Reference Network (TURN) GPS is a GNSS network of permanently
   <div class="package-content" markdown="1">
 #### Creating a New Account
 
-You can go online to the web site turngps.utah.gov and follow these steps to get to the payment page. 
-It is still $600 and a credit card is required.
-Click on the "Register" link on the left side.
-in the next window Click on "New Registration".
-Review terms and conditions and click "I Agree".
-Enter the information in the next form and click "Pay for Renewal.
-That will take you to the payment page.
-After that, it will take about 24 hours for the subscription payment to cycle through and the activation to be complete for field work
+Visit [turngps.utah.gov](http://turngps.utah.gov) and follow these steps to get to the payment page.
+
+**The price is currently $600 and a credit card is required.**
+
+1. Click the `Register` link on the left side of the page.
+1. Click `New Registration`.
+1. Review the terms and conditions and click `I Agree`.
+1. Enter the information in the form and click `Pay for Renewal`.
+1. That will take you to the payment page.
+1. Finally, it will take approximately 24 hours for the subscription payment to cycle through and the activation to be complete for field work.
 
 These are the things you wil need to fill out registration form.
 - Organization (avoid punctuation)
@@ -49,7 +51,7 @@ These are the things you wil need to fill out registration form.
 - Physical location/address
 - Mailing  address
 
-With an activated subscription, set your GPS unit's VRS connection address to `168.179.231.9` and Port 2101
+With an activated subscription, set your GPS unit's VRS connection address to `168.179.231.9` and port `2101`
 Enter your new device-specific username and password.
 {: .pop }
 
