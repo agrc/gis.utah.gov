@@ -39,7 +39,7 @@ Visit [turngps.utah.gov](http://turngps.utah.gov) and follow these steps to get 
 1. Click the `Register` link on the left side of the page.
 1. Click `New Registration`.
 1. Review the terms and conditions and click `I Agree`.
-1. Enter the information in the form and click `Pay for Renewal`.
+1. Enter the information in the form and click `Register`.
 1. That will take you to the payment page.
 1. Finally, it will take approximately 24 hours for the subscription payment to cycle through and the activation to be complete for field work.
 
