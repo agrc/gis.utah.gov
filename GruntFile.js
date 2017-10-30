@@ -45,6 +45,10 @@ module.exports = function (grunt) {
                 src: ['bower_components/list.js/dist/list.min.js', 'js/source/list.js'],
                 dest: 'js/dist/list.min.js'
             },
+            quad: {
+                src: ['bower_components/list.js/dist/list.min.js', 'js/source/quad.js'],
+                dest: 'js/dist/quad.min.js'
+            },
             search: {
                 src: ['bower_components/mustache.js/mustache.min.js', 'js/source/search.js'],
                 dest: 'js/dist/search.min.js'
