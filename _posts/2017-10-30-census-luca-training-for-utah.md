@@ -35,8 +35,8 @@ AGRC, on behalf of the Census Bureau and in partnership with the Governor's Offi
 
 - Utah Census 2020 LUCA Technical Training
 
-   Thursday, November 2nd, from 1pm - 5pm
-   195 North 1950 West, Salt Lake City
+   Thursday, November 2nd, from 1pm - 5pm  
+   195 North 1950 West, Salt Lake City  
    MASOB Building, Room 1019 A/B
 
 - Please **RVSP for the Nov. 2nd training using [this form](https://docs.google.com/forms/d/e/1FAIpQLSczYHcjdbW33f-8VpnevDEq9rOL4V18astz6uU74VAUpXJFZg/viewform?usp=sf_link)**.
