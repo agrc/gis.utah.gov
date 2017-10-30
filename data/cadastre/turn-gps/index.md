@@ -32,11 +32,16 @@ abstract="The Utah Reference Network (TURN) GPS is a GNSS network of permanently
   <div class="package-content" markdown="1">
 #### Creating a New Account
 
-We are currently experiencing an issue with our New Accounts Online Payment option.
-If you are interested in a New Registration for TURN GPS contact us directly.
+You can go online to the web site turngps.utah.gov and follow these steps to get to the payment page. 
+It is still $600 and a credit card is required.
+Click on the "Register" link on the left side.
+in the next window Click on "New Registration".
+Review terms and conditions and click "I Agree".
+Enter the information in the next form and click "Pay for Renewal.
+That will take you to the payment page.
+After that, it will take about 24 hours for the subscription payment to cycle through and the activation to be complete for field work
 
-**Send and email with the following** to [Sean A. Fernandez PLS](mailto:sfernandez@utah.gov) or [Mike Heagin](mailto:mheagin@utah.gov)
-
+These are the things you wil need to fill out registration form.
 - Organization (avoid punctuation)
 - Login
 - Password (8 characters)
@@ -44,7 +49,8 @@ If you are interested in a New Registration for TURN GPS contact us directly.
 - Physical location/address
 - Mailing  address
 
-With an activated subscription, set your GPS unit's VRS connection address to `168.179.231.9` and enter your new device-specific username and password.
+With an activated subscription, set your GPS unit's VRS connection address to `168.179.231.9` and Port 2101
+Enter your new device-specific username and password.
 {: .pop }
 
 #### Renewing An Account
@@ -52,6 +58,24 @@ With an activated subscription, set your GPS unit's VRS connection address to `1
 From the [TURN GPS secure payment site](https://secure.utah.gov/turngps/), select the `Renew Subscription` button and accept the Terms and Conditions _if you agree_. Provide the Organization, Username, and Password for the subscription you are renewing, and proceed to the payment portion using a credit card. When done you will receive a confirmation email and receipt.
 
 If the account has expired, it will take about 24 hours for the subscription payment to cycle through and the activation to be complete for field work, otherwise you will not notice any interruption.
+
+##### Connections from Source Table
+Connections from the Source Table:
+For Trimble units we have three different connections.
+VRS_CMR works older Trimble unit
+VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware.
+VRS_CMRx works with the newest up to date Trimble units
+All of these give you the network solution.
+
+For non-Trimble units we have two different connections.
+VRS_RTCM23 works older non-Trimble unit
+VRS_RTCM31 works with non-Trimble units
+Both of these give you the network solution.
+
+MS_CMR, MS_CMRP these are for connecting to single base when you are on the edge of the network or not getting a strong network solution. System will automatically find the closest station and connect you.
+
+##### Contacts
+[Sean A. Fernandez PLS](mailto:sfernandez@utah.gov) or [Mike Heagin](mailto:mheagin@utah.gov)
 
 ##### Related Resources
 
