@@ -17,12 +17,20 @@ Railroads:
       label: "Railroads"
   updates:
     - "July, 2017"
+RailroadMps:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7meE5ndEZtbU4zRzQ&export=download"
+      label: "Railroad mile posts as FGDB"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mU3RQNHR3SmkwdkE&export=download"
+      label: "Railroad mile posts as Shapefile"
+  updates:
+    - "Created October 1 2017"
 ---
 <div class="caption">
   <img title="map" src="{{ '/images/Railroad25k_256.png' | prepend: site.baseurl }}" alt="railroad" />
   <p class="caption-text">Railroad Data</p>
 </div>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb05pQjd6WFJzWXc"
+{% include abstract.html download="https://drive.google.com/drive/u/1/folders/0ByStJjVZ7c7mb1BKRXVwQU04Z2c"
   name="Railroads"
   stewards="AGRC, U.S. Geological Survey, Federal Railroad Administration (FRA)"
   abstract="Transportation.Railroads protrays the location of railroads in the state of Utah derived from the most recent high resolution imagery available, including 1 foot resolution color imagery, NAIP, 1 meter resolution imagery, and 1 meter USGS DOQs. The dataset has been updated to include cartographic attribution for fine scale representations and also a differentiation between light, heavy, transit, and electrified tracks."
@@ -44,4 +52,18 @@ Railroads:
   </div>
   {% include packagedata.html name="Railroads"
     info=page.Railroads %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="RailroadMPs">
+      <a href="#RailroadMPs" class="anchor--link">Railroad Mileposts</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img src="images/railroadmps.png" class="inline-text-left outline" />
+    <p>Railroad mileposts are used to reference locations along railroads by the closest quarter milepost number and railroad division name. The points are intended to improve dispatch of emergency services along mainline railroads.</p>
+    <p>The statewide roads dataset is maintained by AGRC and created from distances along SGID10.TRANSPORTATION.Railroads in combination with railroad mileposts provided by the Federal Railway Administration.</p>
+  </div>
+  {% include packagedata.html name="RailroadMPs"
+    info=page.RailroadMps %}
 </div>
