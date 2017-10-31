@@ -18,7 +18,7 @@ tags:
 Through its Geospatial Excellence Awards, the [National States Geographic Information Council (NSGIC)](https://nsgic.org) recognizes individuals and organizations that
 advance the capabilities of geospatial technology, and promote NSGIC’s goals of efficient and effective government. 
 
-At NSGIC's Annual Conference this September, two of the national geospatial excellence awards ([see all](https://nsgic.memberclicks.net/2017-NSGIC-awards0) went to Utah-led initiatives.
+At NSGIC's Annual Conference this September, two of the national geospatial excellence awards ([see all](https://nsgic.memberclicks.net/2017-NSGIC-awards0)) went to Utah-led initiatives.
 
 **Champion Award**: _Utah Governor's Office of Economic Development_
 
