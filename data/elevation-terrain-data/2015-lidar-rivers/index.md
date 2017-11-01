@@ -34,7 +34,7 @@ During late Fall of 2015 the Utah Division of Foresty, Fire & State Lands and th
     </strong>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Report.zip" target="_blank">Reports</a> and
+    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Reports.zip" target="_blank">Reports</a> and
       <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
