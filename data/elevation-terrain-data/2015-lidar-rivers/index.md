@@ -44,5 +44,5 @@ During late Fall of 2015 the Utah Division of Foresty, Fire & State Lands and th
 
 This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
 
-If you need assistance contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov)
+If you need assistance contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov) 
 For more information about the project contact Buck Ehler as [buckehler@utah.gov](mailto:buckehler)
