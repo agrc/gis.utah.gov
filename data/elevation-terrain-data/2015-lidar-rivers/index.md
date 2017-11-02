@@ -38,11 +38,11 @@ During late Fall of 2015 the Utah Division of Foresty, Fire & State Lands and th
       <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, breaklines, and river centerlines
+    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_shps.zip" target="_blank">shapefiles</a> of the project area, tile indices, breaklines, and river centerlines
   </li>
 </ul>
 
 This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
 
-If you need assistance contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov) 
+If you need assistance contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov)   
 For more information about the project contact Buck Ehler as [buckehler@utah.gov](mailto:buckehler)
