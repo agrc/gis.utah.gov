@@ -20,26 +20,31 @@ Through its Geospatial Excellence Awards, the [National States Geographic Inform
 At NSGIC's Annual Conference this September, two of the national geospatial excellence awards ([see all](https://nsgic.memberclicks.net/2017-NSGIC-awards0)) went to Utah-led initiatives.
 
 <div class="grid">
-  <div class="grid__col grid__col--1-of-3">
+  <div class="grid__col grid__col--1-of-2">
     <div class="caption">
       <img src="{{ "/images/nsgic_awards/KColeGOEDSmall.png" | prepend: site.baseurl }}" alt="Kelleigh Cole and GOED, Champion Award" />
       <p class="caption-text">Kelleigh Cole and GOED, Champion Award</p>
     </div>
   </div>
-  <div class="grid__col grid__col--1-of-3 grid__col--ab">
+  <div class="grid__col grid__col--1-of-2 grid__col--ab">
     <div class="caption">
       <img src="{{ "/images/nsgic_awards/ECurtisSmall.png" | prepend: site.baseurl }}" alt="Evan Curtis, Catalyst Award" />
       <p class="caption-text">Evan Curtis, Catalyst Award</p>
     </div>
   </div>
-  <div class="grid__col grid__col--1-of-3">
+  <div class="grid__col grid__col--1-of-2">
     <div class="caption">
       <img src="{{ "/images/nsgic_awards/RodBennett.png" | prepend: site.baseurl }}" alt="Rod Bennett" />
       <p class="caption-text">Rod Bennett (left), Catalyst Award</p>
     </div>
   </div>
+  <div class="grid__col grid__col--1-of-2">
+    <div class="caption">
+      <img src="{{ "/images/nsgic_awards/TKnowltonSmall.png" | prepend: site.baseurl }}" alt="Ted Knowlton, Catalyst Award" />
+      <p class="caption-text">Ted Knowlton, Catalyst Award</p>
+    </div>
+  </div>
 </div>
-
 **Champion Award**: _Utah Governor's Office of Economic Development_
 
 Utah's Governor's Office of Economic Development, through its Broadband Outreach Center and Office of Outdoor Recreation, has championed the use of GIS and enterprise mapping initiatives to deliver value to Utah citizens and businesses. Projects include residential broadband mapping, commercial broadband availability, trail and recreational amenities GIS data layers, partner funding for high resolution aerial photography, and locate.utah.gov - Utah's award-winning state economic development interactive map. In particular, **_Kelleigh Cole_**, Director of GOED's broadband center, has been an active, supporting, and connecting partner to Utah GIS for the past 6+ years.
