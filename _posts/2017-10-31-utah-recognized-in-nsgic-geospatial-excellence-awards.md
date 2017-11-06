@@ -22,19 +22,19 @@ At NSGIC's Annual Conference this September, two of the national geospatial exce
 <div class="grid">
   <div class="grid__col grid__col--1-of-3">
     <div class="caption">
-      <img src="{{ "/images/nsgic_awards/KColeGOEDSmall.png" | prepend: site.baseurl }}" class="outline" alt="Kelleigh Cole and GOED, Champion Award" />
+      <img src="{{ "/images/nsgic_awards/KColeGOEDSmall.png" | prepend: site.baseurl }}" alt="Kelleigh Cole and GOED, Champion Award" />
       <p class="caption-text">Kelleigh Cole and GOED, Champion Award</p>
     </div>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--ab">
     <div class="caption">
-      <img src="{{ "/images/nsgic_awards/ECurtisSmall.png" | prepend: site.baseurl }}" class="outline" alt="Evan Curtis, Catalyst Award" />
+      <img src="{{ "/images/nsgic_awards/ECurtisSmall.png" | prepend: site.baseurl }}" alt="Evan Curtis, Catalyst Award" />
       <p class="caption-text">Evan Curtis, Catalyst Award</p>
     </div>
   </div>
   <div class="grid__col grid__col--1-of-3">
     <div class="caption">
-      <img src="{{ "/images/nsgic_awards/RodBennett.png" | prepend: site.baseurl }}" class="outline" alt="Rod Bennett" />
+      <img src="{{ "/images/nsgic_awards/RodBennett.png" | prepend: site.baseurl }}" alt="Rod Bennett" />
       <p class="caption-text">Rod Bennett (left), Catalyst Award</p>
     </div>
   </div>
