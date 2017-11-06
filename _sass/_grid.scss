@@ -294,7 +294,7 @@ $toast-pulls: true !default;
 
 // Centers the column in the grid and clears the row of all other columns
 .#{$toast-grid-column-namespace}--centered {
-    display: block;
+
     margin-right: auto;
     margin-left: auto;
 }
