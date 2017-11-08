@@ -8,7 +8,6 @@ author:
   email: bgranberg@utah.gov
 date: 2017-10-30 22:09:42
 categories:
-- Featured
 tags:
 - census
 - address
