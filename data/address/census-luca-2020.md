@@ -44,7 +44,7 @@ While limited paper and spreadsheet review options exist, **_the main vehicle fo
 {: .text-left }
 **Luca Schedule**
 
-- **_December 15, 2017_**. Deadline for counties and citues to register to participate in LUCA address review. ([see Registration section of this page for instructions](https://www.census.gov/geo/partnerships/luca.html))
+- **_December 15, 2017_**. Deadline for counties and cities to register to participate in LUCA address review. ([see Registration section of this page for instructions](https://www.census.gov/geo/partnerships/luca.html))
 - **_February 2018_**. LUCA review process begins. Participants will each be assigned a 120 day review window that starts upon receipt of their jurisdictions address file from Census.
 - **_Summer 2019_**. Feedback received back from LUCA program.
 - **_April 1, 2020_**. Census Day.
@@ -63,7 +63,7 @@ Our primary recommendation is for cities and counties to collaborate to improve 
 
 ### Prioritizing
 {: .text-left }
-LUCA is all about improving the Census Bureau's master address file. But, since, given the state has over 1.1 million addresses and the LUCA review window is 120 days long, reviewing every address would entail reviewing 10,000 addresses per day. The Census master address file contains, in theory, all of the addresses successfully surveyed during the 2010 census. Additionally, Census has stated that their partnership with the US Postal Service means that they have all of teh lcoatiosn that currently receieve street delivery style mail (think traditional mailboxes filled daily by a letter carrier).
+LUCA is all about improving the Census Bureau's master address file. But, since, given the state has over 1.1 million addresses and the LUCA review window is 120 days long, reviewing every address would entail reviewing 10,000 addresses per day. The Census master address file contains, in theory, all of the addresses successfully surveyed during the 2010 census. Additionally, Census has stated that their partnership with the US Postal Service means that they have all of the locations that currently receive street delivery style mail (think traditional mailboxes filled daily by a letter carrier).
 
 For these reasons, we encourage participants to focus on these types of addresses. 
 
@@ -80,11 +80,11 @@ One of the keys to understanding the LUCA process, and to keeping your organizat
 
 This means you must keep the master address file provided by Census for your jurisdiction condfidential. You may not use the Census master address file to imporve your own address data resources in any way.
 
-And, for these reasons, you should design your process to improve your local address data first, ideally in GIS format. Then, when you're done creating and improving your own data, start the comparison and submission process that is specific to LUCA. Address data created outside of the LUCA has fantastically broad benefit, If you create an address point within LUCA, it can only be used by the Census Bureau.
+And, for these reasons, you should design your process to improve your local address data first, ideally in GIS format. Then, when you're done creating and improving your own data, start the comparison and submission process that is specific to LUCA. Address data created outside of the LUCA review has fantastically broad benefit. But, if you create an address point within LUCA, it can only be used by the Census Bureau.
 
 ### Data Resources
 {: .text-left }
-**Statewide GIS Data Resources for the LUCA process**
+[![Address Count Comaprison Example - click to enlarge]({{ "/images/PreLUCAAddressCountComparison.png" | prepend: site.baseurl }}){: .inline-text-right .outline }](https://docs.google.com/presentation/d/1hSYqhRELa7idGcsfsF7Cnb1BqNfMl1zqInk_yud65-4/edit#slide=id.p)**Statewide GIS Data Resources for the LUCA process**
 
 - Census Address Count Block File. AGRC has prepared this dataset per Census directions as a [statewide shapefile download](https://drive.google.com/open?id=1uYynrQxo4w-leP06j6HDvHIbny5Gu212) or it can be used via an SDE connection (SGID10.Location.LUCABlockAddressCounts2017). An additional field has been added that contains the count of records in the current version of the SGID10.Location.AddressPoints statewide address map layer compiled from county address authorities.
 - Roads Missing from Census TIGER. _Available February 2018_, this file will contain a statewide collection of road centerline segments missing from the Census LUCA data files. In its instructions at the Utah LUCA training, Census indicated that LUCA participants can submit missing road segments but encouraged everyone to focus on missing addresses or address corrections. As soon as AGRC receives the statewide LUCA files, we will use a change detection algorithm to identify missing roads statewide and these will be part of the Utah state-level LUCA submission. Since the LUCA roads layer is not protected Title 13 data, we will make the missing roads layer available for download and local jurisdictions can concentrate on addressing and any other missing roads (if desired).
