@@ -13,6 +13,8 @@ tags:
 - luca
 - census
 - address
+- demographic
+- location
 ---
 This page contains information, data resources, tips, etc. for Utah participants in the US Census Bureau's Local Update of Census Addresses (LUCA) program.
 
@@ -29,17 +31,24 @@ Contents:
 {: .dotless }
 
 #### Background
+![Census LUCA Program, 2018]({{ "/images/LUCA2018.png" | prepend: site.baseurl }}){: .inline-text-right .outline } The Census Bureau's Local Update of Census Addresses (LUCA) program allows city, county, and state government to review and suggest edits to the master residential address list that Census uses to plan and execute their survey work. Of particular importance is the ability for Census to track responses across multiple survey mechanisms (field workers, survey-by-mail, and, this year, online response).
+
+While LUCA participation is optional, many cities and counties plan to participate in the address list review. The closer the Census Bureau's master database matches the actual addresses on the ground in your community, the better shot you've got to be fully counted.
+
+The decision to participate in the LUCA review is made by your highest elected official (Mayor, Commissioner, etc.) and the registration deadline is December 15th, 2017. The 120 day LUCA review time frame will begin for each jurisdiction in or after February 2018. 
+
+While limited paper and spreadsheet review options exist, **_the main vehicle for the LUCA review is via a GIS platform_**. To review and edit the address list, LUCA participants can use either the QGIS-based application Census provides (called GUPS), or other GIS software, such as ArcGIS Desktop or ArcGIS Pro, that will produce an output shapefile that adheres to the rigid data content/formal specification for LUCA.
 
 #### Timeline
 
 **Luca Schedule**
 
-- December 15, 2017. Deadline for counties and citues to register to participate in LUCA address review.
-- February 2018. LUCA review process begins. Participants will each be assigned a 120 day review window that starts upon receipt of their jurisdictions address file from Census.
-- Summer 2019. Feedback received back from LUCA program
-- April 1, 2020. Census Day
+- **_December 15, 2017_**. Deadline for counties and citues to register to participate in LUCA address review. ([see Registration section of this page for instructions](https://www.census.gov/geo/partnerships/luca.html))
+- **_February 2018_**. LUCA review process begins. Participants will each be assigned a 120 day review window that starts upon receipt of their jurisdictions address file from Census.
+- **_Summer 2019_**. Feedback received back from LUCA program.
+- **_April 1, 2020_**. Census Day.
 
-Other: In addition to the LUCA program, Census will operate a new construction program, coordinate with USPS to receive new 'street delivery' mail addresses, and will conduct targeted 'address canvasing' field work.
+_Other_: In addition to the LUCA program, Census will operate a new construction program, coordinate with USPS to receive new 'street delivery' mail addresses, and will conduct targeted 'address canvasing' field work.
 
 #### Contacts And Coordination
 
@@ -57,8 +66,9 @@ LUCA is all about improving the Census Bureau's master address file. But, since,
 
 For these reasons, we encourage participants to focus on these types of addresses. 
 
-- Addressed residential structures without traditional street deliver mail (to a box at/near the entrance to a structure)
+- Addressed residential structures without traditional street deliver mail (to a mailbox at/near the entrance to a structure)
 - SubAddress locations, with unit numbers (apartments, trailer courts, etc)
+- Addressed structures within gated communities and other areas with clustered mailboxes
 - Redeveloped areas where new/infill housing has been added, densified, or existing housing has been converted to non-residential
 - Group Quarters (dorms, group homes, homeless housing, assisted living facilities, etc)
 - Unaddressed residential structures likely to have a permanent occupant on April 1, 2020
@@ -75,13 +85,15 @@ And, for these reasons, you should design your process to improve your local add
 
 **Statewide GIS Data Resources for the LUCA process**
 
-- Census Master Address Count By Census Block. AGRC has prepared this dataset statewide for download or use via and SDE connection. An additional field has been added that contains the count of records in the current version of the SGID10.Location.AddressPoints statewide address map layer compiled from county address authorities.
+- Census Address Count Block Files. AGRC has prepared this dataset statewide for download or use via and SDE connection. An additional field has been added that contains the count of records in the current version of the SGID10.Location.AddressPoints statewide address map layer compiled from county address authorities.
 - Roads Missing from Census TIGER. _Available February 2018_, this file will contain a statewide collection of road centerline segments missing from the Census LUCA data files. In its instructions at the Utah LUCA training, Census indicated that LUCA participants can submit missing road segments but encouraged everyone to focus on missing addresses or address corrections. As soon as AGRC receives the statewide LUCA files, we will use a change detection algorithm to identify missing roads statewide and these will be part of the Utah state-level LUCA submission. Since the LUCA roads layer is not protected Title 13 data, we will make the missing roads layer available for download and local jurisdictions can concentrate on addressing and any other missing roads (if desired).
 - State-level address lists. _TBD_ AGRC plans to contact state agency programs with address lists that may be valuable to the LUCA process, to explore data sharing. Potential data partners may include the Drivers License, Motor Vehicle Registration, State Tax Commission, and Department of Commerce. Ensuring confidentiality is expected to be critical in any use of these address resources. 
 - [Utah-specific Address Geocoding Tools Webpage](https://gis.utah.gov/data/address-geocoders-locators/) allow users to geocode against Utah road centerlines or address points. ([Web API](http://api.mapserv.utah.gov), [ArcMap Add-in](https://gis.utah.gov/data/address-geocoders-locators/#GeocodingToolbox), [Google Sheets](https://chrome.google.com/webstore/detail/utah-address-locator/nepmlneiknaeojhadbeodpaefenhjkek?utm_source=permalink) and coming soon, a QGIS add-in that can be used within GUPS).
 
 #### Reference Materials
-
+- [Official LUCA program flyer](https://www2.census.gov/geo/pdfs/partnerships/luca/2020CensusLUCA_Flyer.pdf)
+- [LUCA Information Guide](https://www2.census.gov/geo/pdfs/partnerships/luca/2020LUCA_InfoGuide.pdf))
+- Register to Participate in LUCA, [see Registration section of this page for instructions](https://www.census.gov/geo/partnerships/luca.html))
 - [Powerpoints from November 2nd Census Bureau LUCA Training in Salt Lake City](https://drive.google.com/file/d/0BxoOAQyOvGgaOHhPSXhCTEdBdnN6a0d2VTk3OW5iVjdBXzAw/view?usp=sharing)
 - [Census Bureau's LUCA FAQ](https://www2.census.gov/geo/pdfs/partnerships/luca/2020LUCA_FAQ.pdf)
 - [LUCA Address File Submission Data Content Standard](https://drive.google.com/file/d/0BxoOAQyOvGgaaWtpTmc1aHVvRFZ6SGh0RHNpbjZlSU9yOVVj/view?usp=sharing) 
