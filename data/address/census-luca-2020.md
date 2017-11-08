@@ -20,7 +20,7 @@ Contents:
 
 - [Background](#background)
 - [Timeline](#timeline)  
-- [Contacts](#contacts)
+- [Contacts and Coordination](#contacts-and-coordination)
 - [Prepping for LUCA Review](#prepping-for-the-luca-review)
 - [Prioritizing](#prioritizing)
 - [Security and Process Design](#security-and-process-design)
@@ -41,7 +41,7 @@ Contents:
 
 Other: In addition to the LUCA program, Census will operate a new construction program, coordinate with USPS to receive new 'street delivery' mail addresses, and will conduct targeted 'address canvasing' field work.
 
-#### Contacts
+#### Contacts And Coordination
 
 - State LUCA Liaison: [Bert Granberg](mailto:bgranberg@utah.gov?subject=Utah LUCA), Utah Automated Geographic Reference Center (AGRC)
 - [Utah City and County LUCA participants](https://docs.google.com/spreadsheets/d/1WgYXqIBcQ3RZoWSPJVw5CLErjdPuM1gy9OzuaGHFCSg/edit?usp=sharing) (as of November 2nd, 2017).
