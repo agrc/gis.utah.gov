@@ -21,5 +21,5 @@ The LUCA program is the pipeline to supply Census with best, most up-to-date add
 
 The new page includes information describing the LUCA program and its schedule. Additionally it serves as a gateway to supporting GIS data, advice on LUCA strategy and prioritization, and resources from the November 2 LUCA training held in Salt Lake City.
 
-For your convenience, AGRC has put a link to the LUCA page on the front page of the gis.utah.gov website -- it's a short scroll down the page on a dark blue background (see red arrow in screenshot).
+![LUCA link on main gis.utah.gov front page]({{ "/images/FindtheLUCALink.png" | prepend: site.baseurl }}){: .inline-text-right .outline }For your convenience, AGRC has put a link to the LUCA page on the front page of the gis.utah.gov website -- it's a short scroll down the page on a dark blue background (see red arrow in screenshot).
 
