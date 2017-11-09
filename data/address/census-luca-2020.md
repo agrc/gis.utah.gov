@@ -36,7 +36,7 @@ The Census Bureau's Local Update of Census Addresses (LUCA) program allows city,
 
 While LUCA participation is optional, many cities and counties plan to participate in the address list review. The closer the Census Bureau's master database matches the actual addresses on the ground in your community, the better shot you've got to be fully counted.
 
-**Why?** _Here's the big reason to for state and local government to participate in LUCA:_ Nationally, over $675 billion is distributed annually, using census data as part of the formula, from the federal level back to state and local government. [Utah's annual share alone was $3.25 billion](https://gwipp.gwu.edu/sites/gwipp.gwu.edu/files/downloads/Utah%20CFD%2008-18-17.pdf). Getting Census positioned -- with a complete address list -- to make a full count of Utah residents helps ensure Utah gets back a proper share or what it pays in. 
+**Why?** _Here's the big reason to for state and local government to participate in LUCA:_ Nationally, over $675 billion is distributed annually, using census data as part of the formula, from the federal level back to state and local government. [Utah's annual share alone was $3.25 billion in 2015](https://gwipp.gwu.edu/sites/gwipp.gwu.edu/files/downloads/Utah%20CFD%2008-18-17.pdf). Getting Census positioned -- with a complete address list -- to make a full count of Utah residents helps ensure Utah gets back a proper share or what it pays in. 
 
 The decision to participate in the LUCA review is made by your highest elected official (Mayor, Commissioner, etc.) and the registration deadline is December 15th, 2017. The 120 day LUCA review time frame will begin for each jurisdiction in or after February 2018. 
 
