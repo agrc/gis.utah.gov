@@ -1,0 +1,64 @@
+---
+status: publish
+layout: page
+tags:
+  - geoscience
+  - landslide
+  - debris flow
+author:
+  display_name: ZB
+  email: agrc@utah.gov
+published: true
+date: 2011-11-18 16:09:38 -0700
+title: Landslides and Liquefaction
+categories: []
+Landslides:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mU1FKTDJ5bHdiQ0E"
+      label: "Landslides"
+  updates:
+    - 2016
+Liquefaction:
+  downloads:
+    - url: "https://drive.google.com/drive/folders/0ByStJjVZ7c7mU1FKTDJ5bHdiQ0E"
+      label: "Liquefaction"
+  updates:
+    - 1994
+
+<div class="caption">
+  <img title="map" src="{{ "/images/DebrisFlow.png" | prepend: site.baseurl }}" alt="Landslides" />
+  <p class="caption-text">Landslides and Debris Flows</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mU1FKTDJ5bHdiQ0E"
+name="Landslides"
+stewards="UGS"
+abstract="The Utah Geological Survey (UGS) Landslide Database of Utah contains mapped landslides in Utah within five feature classes representing a compilation of existing mapping of landslides (1:100,000-scale, pre-mid-2007 legacy data, [Elliott and Harty, 2010]) and new, landslide-specific detailed inventory mapping (1:24,000-scale or better, post 2008, [McDonald and Giraud, 2011, 2014, 2015; Beukelman and others, 2016]). When possible, users should use the LandslideInventoryPolygons feature classes first, and where the most recent data/mapping is not available, use the compilation feature classes. LandslideInventoryPolygons is the result of new, landslide-specific detailed mapping using LiDAR, stereo aerial photography, other data, and field reconnaissance by the UGS. The three compilation feature classes (LandslideCompilationDebrisFlowPaths, LandslideCompilationPolygons, LandslideCompilationScarps) are derived from multiple landslide compilations and digitizing efforts from multiple sources, scales, and accuracies by the UGS, and is not new landslide-specific mapping. More information on landslide hazards in Utah is available from the UGS. For specific details on each feature class, see the included metadata. More information on landslide hazards in Utah is available from the <a href="https://geology.utah.gov/hazards/landslides-rockfalls/">UGS</a>." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Landslides">
+      <a href="#Landslides" class="anchor--link">Landslides</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+    </ul>
+    <p>Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+  </div>
+  {% include packagedata.html name="Landslides"
+  info=page.Landslides %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Liquefaction">
+      <a href="#Liquefaction" class="anchor--link">Liquefaction</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>Liquefaction potential for Box Elder, Cache, Davis, Salt Lake, Utah and Weber Counties. Maps were digitized by the AGRC and Utah Geological Survey (UGS) from original mylars provided by Utah State University (USU).</p>
+    <h5>Related Resources</h5?
+    <ul class="dotless">
+    </ul>
+    <p>Questions can be direction to <a href="mailto:agrc@utah.gov">AGRC</a> (801.538.3665) at AGRC.</p>
+  </div>
+</div>
