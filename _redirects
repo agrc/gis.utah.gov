@@ -44,6 +44,7 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/elevation-terrain-data/500-foot-contours/                                                           /data/elevation-terrain-data/contours/                                        301
 /data/elevation-terrain-data/sgid-elevation-terrain-data-overview-utah/                                   /data/elevation-terrain-data/                                                 301
 /data/energy/state-fuel-sites/                                                                            /data/society-overview/state-fuel-sites/                                      301
+/data/environment/drinking-water-sytems-protection-zones/                                                 /data/environment/drinking-water-systems-protection-zones/                    301
 /data/farming/grazing-allotments/                                                                         /data/farming/grazing-improvements/                                           301
 /data/farming/grazing-improvement-area/                                                                   /data/farming/grazing-improvements/                                           301
 /data/farming/grazing-improvement-area/                                                                   /data/farming/grazing-improvements/                                           301
