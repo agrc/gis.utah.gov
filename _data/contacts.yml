@@ -10,7 +10,12 @@ floodareas:
    - name: Brooke Conner
      agency: FEMA
      email: brooke.conner@fema.dhs.gov
-UTA: 
+UTA:
   name: Sumer Ellis
   agency: UTA
   email: sellis@rideuta.com
+UGS:
+  name: Gordon Douglass
+  agency: UGS
+  email: douglass@utah.gov
+  phone: 801.538.4810
