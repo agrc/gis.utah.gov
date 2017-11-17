@@ -1,0 +1,157 @@
+---
+status: publish
+layout: page
+tags:
+  - geoscience
+  - geochronology
+author:
+  display_name: Matt Peters
+  email: mpeters@utah.gov
+published: true
+date: 2015-07-07 16:53:14 -0600
+title: Geochronology
+categories: []
+Radiocarbon:
+  downloads:
+    - url: "https://drive.google.com/open?id=12z9a1GnC0vSjuJrG5kNq5dQu-qMLEz7A&export=download"
+      label: "Radiocarbon: File Geodatabase"
+    - url: "https://drive.google.com/open?id=1ud3oBWQaLoyL2pptXmZOsBPzp_72U9AM&export=download"
+      label: "Radiocarbon: Shapefile"
+  updates:
+    - November 2017
+Argon:
+  downloads:
+    - url: "https://drive.google.com/open?id=1Rdn2r1dkc9EvQHHdBOPKl7ABbteQhI6D&export=download"
+      label: "Argon: File Geodatabase"
+    - url: "https://drive.google.com/open?id=1jd_pGy1PpF7QQ0EsWsGJPg8zPZxbrbcQ&export=download"
+      label: "Argon: Shapefile"
+  updates:
+    - November 2017
+Laboratory:
+  downloads:
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV0wwbDRsVG5UdGs&export=download"
+      label: "Laboratory: File Geodatabase"
+    - url: "https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUHVuQkgtbG4wZG8&export=download"
+      label: "Laboratory: Table"
+  updates:
+    - November 2017
+Luminescense:
+  downloads:
+    - url: "https://drive.google.com/open?id=1mAx7gIfi0ZhzmleTI_-TU4xITklE8ufe&export=download"
+      label: "Luminescense: File Geodatabase"
+    - url: "https://drive.google.com/open?id=1Av2XpFz-HXRKPZU8qSAj0wNJW3jQZfMi&export=download"
+      label: "Luminescense: Shapefile"
+  updates:
+    - November 2017
+Project:
+  downloads:
+    - url: "https://drive.google.com/open?id=13a4RUURAulU-PsU4Jm8DIjcIA9ndfo79&export=download"
+      label: "Project: File Geodatabase"
+    - url: "https://drive.google.com/open?id=18ZNF6yc7SsZnWkjCIYfM1Ha6TsjM1rhC&export=download"
+      label: "Project: Shapefile"
+  updates:
+    - November 2017
+---
+<div class="caption">
+  <img src="{{ "/images/geochron.png" | prepend: site.baseurl }}" alt="Geochronology" />
+  <p class="caption-text">Geochronology</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/u/0/folders/1TdReD6QvaAxKm7Nbjw7e4hQFYXO_wAas"
+name="Geochronology"
+stewards="UGS"
+abstract="Radiometric dating methods, sites, and project areas in the State of Utah.  The Utah Geochronology Database contains ages and related dating information of sampled geologic materials (soil and rock) using argon (40Ar/39Ar), optically-stimulated luminescence (OSL), or radiocarbon (14C) dating methods and were analyzed for a variety of geologic-related projects by the UGS and others. These ages were used in fault trench investigations to determine the timing of past earthquakes and to develop other paleoseismic parameters, in the dating of basalt flows for eruption histories and in dating fault movement, and similar projects.
+Since geochronologic methods have significantly evolved and improved through time, older data is often not as reliable or usable as more recently dated materials. The user should use caution in using this data, as significant knowledge and experience is often needed to interpret and apply geochronologic data to projects correctly." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Argon">
+      <a href="#Argon" class="anchor--link">Argon</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{{ "/images/argon.png" | prepend: site.baseurl }}" alt="Argon" />
+    <p>Geoscience.GeochronArgon represents the argon (40Ar/39Ar) dating data.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://geology.utah.gov/apps/geochron/">The Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>Questions can be directed to <a href="mailto:gdouglass@utah.gov">Gordon Douglass</a> (801.538.4810) at UGS.</p>
+  </div>
+  {% include packagedata.html name="Argon"
+  info=page.Argon %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Laboratory">
+      <a href="#Laboratory" class="anchor--link">Laboratory</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>Geoscience.GeochronLaboratory represents the dating laboratory data.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://geology.utah.gov/apps/geochron/">The Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>Questions can be directed to <a href="mailto:gdouglass@utah.gov">Gordon Douglass</a> (801.538.4810) at UGS.</p>
+  </div>
+  {% include packagedata.html name="Laboratory"
+  info=page.Laboratory %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Luminescense">
+      <a href="#Luminescense" class="anchor--link">Luminescense</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{{ "/images/lum.png" | prepend: site.baseurl }}" alt="Luminesence" />
+    <p>Geoscience.GeoChronLuminesence represents TL, IRSL, and OSL dating data</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://geology.utah.gov/apps/geochron/">The Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>Questions can be directed to <a href="mailto:gdouglass@utah.gov">Gordon Douglass</a> (801.538.4810) at UGS.</p>
+  </div>
+  {% include packagedata.html name="Luminescense"
+  info=page.Luminescense %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Project">
+      <a href="#Project" class="anchor--link">Project</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{{ "/images/projects.png" | prepend: site.baseurl }}" alt="Project" />
+    <p>Geoscience.GeochronProject represents the project or investigation data.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://geology.utah.gov/apps/geochron/">The Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>Questions can be directed to <a href="mailto:gdouglass@utah.gov">Gordon Douglass</a> (801.538.4810) at UGS.</p>
+  </div>
+  {% include packagedata.html name="Project"
+  info=page.Project %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Radiocarbon">
+      <a href="#Radiocarbon" class="anchor--link">Radiocarbon</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{{ "/images/radio.png" | prepend: site.baseurl }}" alt="Radiocarbon" />
+    <p>Geoscience.GeochronRadiocarbon represents the radiocarbon (14C) dating data.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://geology.utah.gov/apps/geochron/">The Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>Questions can be directed to <a href="mailto:gdouglass@utah.gov">Gordon Douglass</a> (801.538.4810) at UGS.</p>
+  </div>
+  {% include packagedata.html name="Radiocarbon"
+  info=page.Radiocarbon %}
+</div>

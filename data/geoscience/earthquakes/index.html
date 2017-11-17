@@ -1,0 +1,76 @@
+---
+status: publish
+layout: page
+tags:
+  - geoscience
+  - earthquakes
+author:
+  display_name: Matt Peters
+  email: mpeters@utah.gov
+published: true
+date: 2015-07-07 16:53:14 -0600
+title: "Earthquakes"
+categories: []
+EarthquakeEpicenters1850to2016:
+  downloads:
+    - url: "https://drive.google.com/open?id=1Zl4_-cmeh7KqAtcFiyEBIszWnNd_RizB&export=download"
+      label: "File Geodatabase"
+    - url: "https://drive.google.com/open?id=1SU4J6tugpUD56RUNzADeGJiv9B8B8ORD&export=download"
+      label: "Shapefile"
+  updates:
+    - November 2017
+EarthquakeEpicentersMiningInduced1968to2016:
+  downloads:
+    - url: "https://drive.google.com/open?id=1ppz2u00WKD5sAPEwPUibAuxvTzyCLTFt&export=download"
+      label: "File Geodatabase"
+    - url: "https://drive.google.com/open?id=1zGj7JfqUiCnachiQlGBywRP0By3cSREU&export=download"
+      label: "Shapefile"
+  updates:
+    - November 2017
+---
+<div class="caption">
+  <img src="{{ "/images/EpicentersLarge.png" | prepend: site.baseurl }}" alt="Earthquakes" />
+  <p class="caption-text">Earthquakes</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/u/0/folders/1h-J5vfUyZf6G9BpD0kqBiSCcXLKnmq2O"
+name="Earthquake Epicenters"
+stewards="UGS"
+abstract="The earthquake database consists of chronological list of earthquake origin time, location, and size for the Utah region." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="EarthquakeEpicenters1850to2016">
+      <a href="#EarthquakeEpicenters1850to2016" class="anchor--link">Earthquake Epicenters 1850 to 2016</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{{ "/images/EpicentersSmall.png" | prepend: site.baseurl }}" alt="Epicenters Modern" />
+    <p>Earthquake Epicenters 1850 to 2016 represents the modern epicenters of earthquakes in Utah.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://geology.utah.gov/hazards/earthquakes-faults/utah-earthquakes/">Utah Earthquake Information</a>
+    </ul>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: Utah Geological Survey, State of Utah, SGID.  Earthquake epicenters were created and are maintained by the Utah Geological Survey.</p>
+    <p>Questions can be directed to <a href="mailto:gdouglass@utah.gov">Gordon Douglass</a> (801.538.4810) at UGS.</p>
+  </div>
+  {% include packagedata.html name="EarthquakeEpicenters1850to2016"
+  info=page.EarthquakeEpicenters1850to2016 %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="EarthquakeEpicentersMiningInduced1968to2016">
+      <a href="#EarthquakeEpicentersMiningInduced1968to2016" class="anchor--link">Earthquake Epicenters Mining Induced 1968 to 2016</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{{ '/images/EpicentersSmall.png' | prepend: site.baseurl }}" alt="Earthquake Epicenters Mining Induced" />
+    <p>Earthquake Epicenters Mining Induced 1968 to 2016 represents the modern epicenters of earthquakes in Utah that are mining induced.</p>
+
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://geology.utah.gov/hazards/earthquakes-faults/utah-earthquakes/">Utah Earthquake Information</a>
+    </ul>
+
+  </div>
+  {% include packagedata.html name="Earthquake Epicenters Mining Induced 1968 to 2016"
+     info=page.EarthquakeEpicentersMiningInduced1968to2016 %}
+</div>
