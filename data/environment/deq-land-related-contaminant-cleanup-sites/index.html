@@ -36,11 +36,19 @@ DWMRCHazWasteUsedOilFacilities:
       label: "Hazardous Waste and Used Oil Facilities: Shapefile"
   updates:
     - Nightly
+DWMRCLLRWUMillFacilities:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=183ENDt537lVXzgZc-qQKqCnOOL0gQ0-i&export=download
+      label: "Low Level Waste Disposal and Uranium Mills: File Geodatabase"
+    - url: https://drive.google.com/a/utah.gov/uc?id=1X-DSvC4I4UDCk08y0W220SmO1GiB1uIz&export=download
+      label: "Low Level Waste Disposal and Uranium Mills: Shapefile"
+  updates:
+    - Nightly
 SolidWasteLandfills:
   downloads:
-    - url: ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DWMRSolidWasteFacilities/_Statewide/DWMRSolidWasteFacilities_gdb.zip
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVnpRWVh6UmtOSlE&export=download
       label: "Solid Waste Landfills: File Geodatabase"
-    - url: ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ENVIRONMENT/UnpackagedData/DWMRSolidWasteFacilities/_Statewide/DWMRSolidWasteFacilities_shp.zip
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNl9qSl9uWjgwM00&export=download
       label: "Solid Waste Landfills: Shapefile"
   updates:
     - Nightly
@@ -194,6 +202,26 @@ FacilityUST:
   </div>
   {% include packagedata.html name="DWMRCHazWasteUsedOilFacilities"
      info=page.DWMRCHazWasteUsedOilFacilities %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="DWMRCLLRWUMillFacilities">
+      <a href="#DWMRCLLRWUMillFacilities" class="anchor--link">Low Level Waste Disposal and Uranium Mills</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirollwaste.png" | prepend: site.baseurl }}" alt="Low Level Waste" />
+    <p>Environment.DWMRCLLRWUMillFacilities contains sites that treat or dispose of radioactive waste or process uranium ore.</p>
+    <p><strong>Contact</strong>: tball@utah.gov</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="http://www.hazardouswaste.utah.gov/">Utah Department of Environmental Quality: Division of Solid & Hazardous Waste</a>
+      <li><a href="http://www.deq.utah.gov/">Utah Department of Environmental Quality</a>
+      <li><a href="http://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>
+    </ul>
+  </div>
+  {% include packagedata.html name="DWMRCLLRWUMillFacilities"
+     info=page.DWMRCLLRWUMillFacilities %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
