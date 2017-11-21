@@ -81,7 +81,8 @@ USGSDEM:
     </a>
     <p>A digital elevation model (DEM) is a digital file consisting of terrain elevations for ground positions at regularly spaced horizontal intervals. This is a legacy dataset and does not get updated like the NED does. The USGS produces five different digital elevation products. Although all are identical in the manner the data are structured, each varies in sampling interval, geographic reference system, areas of coverage, and accuracy; with the primary differing characteristic being the spacing, or sampling interval, of the data. The AGRC has a statewide collection of 10, 30, and 90 meter DEMs.</p>
     <p>AGRC has populated it's FTP site with DEMs from the USGS for the State of Utah. There is a statewide coverage of 10, 30, and 90 meter DEMs. They are in a self extracting <code>.exe</code> format.</p>
-    <p>The DEMs are separated into three directories. For 10 and 30 meter DEMs refer to the <a href="{{ "/downloads/Find_a_DEM.txt" | prepend: site.baseurl }}">Find a DEM lookup</a> for USGS Quadrangle names and associated DEM name. For 90 meter DEMs refer to the <a href="{{ "/downloads/90meter_dems.jpg" | prepend: site.baseurl }}" target="_blank">90meter dem image map</a>.</p>
+    <p>The DEMs are separated into three directories. For 10 and 30 meter DEMs refer to the <a href="{{ "/downloads/Find_a_DEM.txt" | prepend: site.baseurl }}">Find a DEM lookup</a> for USGS Quadrangle names and associated DEM name. For 90 meter DEMs refer to the <a href="{{ "/downloads/90meter_dems.jpg" | prepend: site.baseurl }}" 
+    ="_blank">90meter dem image map</a>.</p>
     <p>In order to make the <code>.dem</code> file useable it needs to be converted into a Raster/Grid. In the ArcMap toolbox use the <code>Conversion Tool - DEM to Raster</code>.</p>
     <p>All DEMs are UTM Zone 12 NAD83 meters. The vertical datum is NGVD 29.</p>
     <h5>Related Resources</h5>
@@ -104,7 +105,7 @@ USGSDEM:
     <a title="First Return" href="{{ "/images/gallery/sgid/lidar_lg.jpg" | prepend: site.baseurl }}">
       <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/thumbs/thumbs_lidar.jpg" | prepend: site.baseurl }}" alt="lidar"/>
     </a>
-    <p>Light Detection and Ranging (LiDAR) elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by illuminating the target with light often using pulses from a laser. Currently this is the most accurate elevation dataset AGRC has but it is only available for a some areas of the state. In addition to the bare-earth DEMs/DTMs and first-return DSMs, most LiDAR data also has point clouds of elevation information available [by request](mailto:rkelson@utah.gov). Visit <a href="http://raster.utah.gov/">Raster.utah.gov</a> to explore all available LiDAR collections. <a href="{{ "/data/elevation-and-terrain/exploring-lidar/" | prepend: site.baseurl }}" target="_blank">Exploring LiDAR</a></p>
+    <p>Light Detection and Ranging (LiDAR) elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by illuminating the target with light often using pulses from a laser. Currently this is the most accurate elevation dataset AGRC has but it is only available for a some areas of the state. In addition to the bare-earth DEMs/DTMs and first-return DSMs, most LiDAR data also has point clouds of elevation information available [by request](mailto:rkelson@utah.gov). Visit <a href="http://raster.utah.gov/">Raster.utah.gov</a> to explore all available LiDAR collections. <a href="{{ "/data/elevation-and-terrain/exploring-lidar/" | prepend: site.baseurl }}">Exploring LiDAR</a></p>
     <p>AGRC has partnered with different agencies over the years to acquire LiDAR data.</p>
     <table>
       <thead>
@@ -195,7 +196,7 @@ USGSDEM:
       </div>
       <div class="panel-content">
         <ul class="dotless no-padding">
-          <li><strong>Availability:</strong> <a href="ftp://ftp.agrc.utah.gov/DEM_2m/Available_DEM_2m_GSD.jpg" target="_blank">Available 2 Meter DEM Map</a>
+          <li><strong>Availability:</strong> <a href="ftp://ftp.agrc.utah.gov/DEM_2m/Available_DEM_2m_GSD.jpg">Available 2 Meter DEM Map</a>
           <li><strong>Web Application:</strong> <a href="http://raster.utah.gov/?cat=2%20Meter%20%7BDEM%7D">raster.utah.gov</a>
           <li><strong>FTP Download:</strong> <a href="ftp://ftp.agrc.utah.gov/DEM_2m">ftp.agrc.utah.gov</a>
           <li><strong>Quality Assurance:</strong> <a href="ftp://ftp.agrc.utah.gov/DEM_2m/UT_2m_DEMs_QA_report.doc">Report</a>
