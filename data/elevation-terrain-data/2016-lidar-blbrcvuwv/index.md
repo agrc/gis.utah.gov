@@ -35,11 +35,11 @@ _NOTE: Two canyons on the east side of Cache Valley were collected Fall of 2017 
     </strong>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/blbrcvuwv_Reports.zip" target="_blank">Reports</a> and
-      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_Metadata.zip" target="_blank">Metadata</a>
+    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/cache-valley-2016/DEMs/BLBRCVUWV_Reports.zip" target="_blank">Reports</a> and
+      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/cache-valley-2016/DEMs/BLBRCVUWV_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/cache-valley-2016/DEMs/BLBRCVUWV_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 
