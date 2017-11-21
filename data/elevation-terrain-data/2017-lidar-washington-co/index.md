@@ -30,15 +30,15 @@ During the Spring of 2017 AGRC, Washington County, and the Utah Department of Em
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=1%20Meter%20%7B2017%20LiDAR%7D" target="_blank">Retrieve 2017 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      <i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=1%20Meter%20%7B2017%20LiDAR%7D">Retrieve 2017 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_Reports.zip" target="_blank">Reports</a> and
-      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_Metadata.zip" target="_blank">Metadata</a>
+    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_Reports.zip">Reports</a> and
+      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_Metadata.zip">Metadata</a>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_shps.zip">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 
