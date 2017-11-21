@@ -30,7 +30,7 @@ During the Spring of 2017 AGRC, Washington County, and the Utah Department of Em
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=.5%20Meter%20%7B2017%20LiDAR%7D" target="_blank">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      <i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=1%20Meter%20%7B2017%20LiDAR%7D" target="_blank">Retrieve 2017 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
