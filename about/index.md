@@ -56,7 +56,7 @@ AGRC is funded through a combination of State general and restricted funds and c
 </div>
 <div class="grid__col grid__col--1-of-2" markdown="1">
 - [Google Imagery License]({{ "/discover/" | prepend: site.baseurl }})
-- [Lidar Elevation Models]({{ "/data/elevation-terrain-data/" | prepend: site.baseurl}})
+- [Lidar Elevation Models]({{ "/data/elevation-and-terrain/" | prepend: site.baseurl}})
 - Location Analytics
 - [911 Map Data Support]( {{"/about/gis-for-911/" | prepend: site.baseurl }} )
 - [Municipal](http://municert.utah.gov), Voting, and other Civic Boundaries
