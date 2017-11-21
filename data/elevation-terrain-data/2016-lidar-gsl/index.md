@@ -34,11 +34,11 @@ During the Fall of 2016 AGRC, Utah Geological Survey, and the Utah Division of F
     </strong>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/DEMs/GSL_Reports.zip" target="_blank">Reports</a> and
-      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/DEMs/GSL_Metadata.zip" target="_blank">Metadata</a>
+    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_Reports.zip" target="_blank">Reports</a> and
+      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/DEMs/GSL_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 
