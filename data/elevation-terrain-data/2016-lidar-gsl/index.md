@@ -9,7 +9,7 @@ author:
   email: rkelson@utah.gov
 published: true
 date: 2017-11-13 15:30:30
-title: 2016 GreatSalt Lake and Utah Lake LiDAR Elevation Data
+title: 2016 Great Salt Lake and Utah Lake LiDAR Elevation Data
 categories: []
 ---
 
@@ -30,7 +30,7 @@ During the Fall of 2016 AGRC, Utah Geological Survey, and the Utah Division of F
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D" target="_blank">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      <i class="fa fa-download"></i> <a href="http://raster.utah.gov/?catGroup=.5%20Meter%20%7B2016%20LiDAR%7D,1%20Meter%20%7B2016%20LiDAR%7D" target="_blank">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
