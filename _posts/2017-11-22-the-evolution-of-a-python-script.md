@@ -93,7 +93,7 @@ if __name__ == '__main__':
     arguments = docopt(__doc__)
 ```
 
-The above documentation can be parsed by docopt to help a developer create functionality for the milepost command. If a user were to type
+The above documentation can be parsed by docopt to help a developer create functionality for the milepost command. docopt has three main patterns. `<>` are considered arguments, `--` are considered options, and text without either are considered commands. `[]` denote optional items and `()` signifiy that something is required. doctopt can [do much more](https://github.com/docopt/docopt#usage-pattern-format) so be sure to check out the [documentation](https://github.com/docopt/docopt/blob/master/README.rst). If a user were to type
 
 ```
 python geocode.py 123 15N
@@ -145,4 +145,4 @@ A developer can inspect what command was requested by checking the boolean value
 
 Hopefully, you are beginning to see the power and flexibility that can be achieved with a command line application. Using doctopt's powerful syntax, a developer can help the users of their applications discover everything you have made available. It will help users choose all of the options that are applicable and prompt them with the proper syntax when a mistake is made.
 
-I encourage you to evolve some of your scripts into console applications. Maybe start the next python file you create with `from doctopt import docopt`. Please read about what docopt can do when designing your next console application. You can even [design the CLI in your browser](http://try.docopt.org/).
+I encourage you to evolve some of your scripts into console applications. Maybe start the next python file you create with `from doctopt import docopt`. Please read about what docopt can do when designing your next console application. You can even [design the CLI in your browser](http://try.docopt.org/). docopt has also been ported to [several languages](https://github.com/docopt) so if you really like it, you can use it for other projects!
