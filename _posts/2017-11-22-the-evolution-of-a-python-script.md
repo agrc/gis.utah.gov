@@ -93,7 +93,7 @@ if __name__ == '__main__':
     arguments = docopt(__doc__)
 ```
 
-The above documentation can be parsed by docopt to help a developer create functionality for the milepost command. docopt has three main patterns. `<>` are considered arguments, `--` are considered options, and text without either are considered commands. `[]` denote optional items and `()` signifiy that something is required. doctopt can [do much more](https://github.com/docopt/docopt#usage-pattern-format) so be sure to check out the [documentation](https://github.com/docopt/docopt/blob/master/README.rst). If a user were to type
+The above documentation can be parsed by docopt to help a developer create functionality for the milepost command. docopt has three main patterns. Text inside `<>` are considered arguments, text after `--` are considered options, and text without either are considered commands. Surrounding items with `[]` sets the as optional and `()` signifies required. doctopt can [do much more](https://github.com/docopt/docopt#usage-pattern-format) so be sure to check out the [documentation](https://github.com/docopt/docopt/blob/master/README.rst). If a user were to type
 
 ```
 python geocode.py 123 15N
