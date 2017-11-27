@@ -14,7 +14,7 @@ tags:
 - code
 ---
 
-Python is a very approachable programming language and scripting in python is quick and powerful - Create a file, type some code, and a repeatable script is produced. Python is installed on most computers so your coworkers and colleagues could benefit from your code.
+Python is a very approachable programming language and scripting in python is quick and powerful - Create a file, type some code, and a repeatable script is produced. Python is installed on most computers so your coworkers and colleagues could benefit from your code. If python is not installed, it is pretty [easy to add](https://www.python.org/downloads/).
 
 _Continue reading if you would like to learn ways to enhance your scripts to be simple to use and reuse, share, and to be more flexible._
 
