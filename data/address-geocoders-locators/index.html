@@ -59,7 +59,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
       <li><a href="{{site.baseurl}}{% post_url 2015-02-12-authoritative-utah-geocoding-results %}">Authoritative Utah Geocoding Results</a>
       <li><a href="{{site.baseurl}}{% post_url 2013-05-10-utah-statewide-address-geocoding-web-service-upgrade %}">Utah Statewide Address Geocoding Web Service Upgrade</a>
     </ul>
-    <p>Questions and issues can be directed to the <a href="https://github.com/agrc/api.mapserv.utah.gov/issues/new">Github repository</a> or <a href="mailto:sgourley@utah.gov">Steve Gourley</a> @steveAGRC at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.webapi %} or the <a href="https://github.com/agrc/api.mapserv.utah.gov/issues/new">Github repository</a>.</p>
   </div>
 </div>
 <div class="grid package">
@@ -74,7 +74,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     <ul class="dotless">
       <li><a href='{{ site.baseurl }}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}'>Utah Geocoding Toolbox for ArcGIS Desktop</a>
     </ul>
-    <p>Questions and issues can be directed to the <a href="https://github.com/agrc/geocoding-toolbox/issues/new">Github repository</a> or <a href="mailto:kwalker@utah.gov">Keaton Walker</a> at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geocoding_tools %} or the <a href="https://github.com/agrc/geocoding-toolbox/issues/new">Github repository</a>.</p>
   </div>
 </div>
 <div class="grid package">
@@ -83,7 +83,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <p>AGRC has developed a <a href="https://chrome.google.com/webstore/detail/utah-address-locator/nepmlneiknaeojhadbeodpaefenhjkek?utm_source=permalink"> Google Sheets Add-on (via Chrome browser)</a> for Utah G Suite for Government users that provides geocoding directly within a Google spreadsheet. This can be used by anyone with a utah.gov email address.</p>
-    <p>Questions and issues can be directed to <a href="mailto:kwalker@utah.gov">Keaton Walker</a> at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geocoding_tools %}</p>
   </div>
 </div>
 <div class="grid package">
@@ -103,7 +103,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
       <li>View <a href="{{"/data/transportation/roads-system/" | prepend: site.baseurl }}">recent updates</a> to the SGID Statewide Roads dataset.
       <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download the File Geodatabase</a> (to build your own locator) that was used to build this address locator. The dataset contains the roads' alternate names table as well as the <a href="{{site.baseurl}}{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">SGID-derived</a> roads feature class. This table can be joined back to the <code>GeocodeRoads</code> feature class via the <code>GLOBALID_SGID</code> field.
     </ul>
-    <p>Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.locators %}</p>
   </div>
   {% include packagedata.html name="RoadsAddressLocatorPackage"
   info=page.RoadsAddressLocatorPackage %}
@@ -124,7 +124,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     <ul class="dotless">
       <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download the File Geodatabase</a> (to build your own locator), which contains the address points' alternate names table used to build this address locator. This table can be joined back to the <code>SgidAddrPnts</code> feature class via the <code>UTAddPtID</code> field.
     </ul>
-    <p>Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.locators %}</p>
   </div>
     {% include packagedata.html name="AddressPointLocatorPackage"
     info=page.AddressPointLocatorPackage %}
@@ -141,7 +141,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>
     <p>The <code>.gcpk</code> packages are portable files that do not require the reference data: what is required of the data is included in the packaged. Once downloaded, <code>Unpack</code> the package and it is ready for use. You can <code>Unpack</code> the Locator Package in ArcCatalog by right-clicking on the package. Unpacking will always place the unpacked locator in your user profile <code>..\My Documents\ArcGIS\Packages</code>. Alternatly, you can use ESRI's <code>Extract Package</code> tool and specify an output location. You can also drag the <code>.gcpk</code> file into ArcMap and it will unpack automatically.</p>
-    <p>Questions can be directed to <a href="mailto:gbunce@utah.gov">Greg Bunce</a> at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.locators %}</p>
   </div>
   {% include packagedata.html name="CompositeLocatorPackage"
   info=page.CompositeLocatorPackage %}

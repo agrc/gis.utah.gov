@@ -1,194 +1,239 @@
-# this can be accessed via site.data.contacts['agrc']
+# this can be accessed via site.data.contacts.agrc
 agrc:
-  name: AGRC
+  name: the staff
   agency: AGRC
   email: agrc@utah.gov
   phone: 801-538-3665
-WebAPI:
+webapi:
   name: Steve Gourley
   agency: AGRC
-  email: sgourley@utah.gov
-GeocodingTools:
+  email: SGourley@utah.gov
+geocoding_tools:
   name: Keaton Walker
   agency: AGRC
-  email: kwalker@utah.gov
-Locators:
+  email: KWalker@utah.gov
+locators:
   name: Greg Bunce
   agency: AGRC
-  email: gbunce@utah.gov
+  email: GBunce@utah.gov
   phone: 801-349-0039
-Imagery:
+imagery:
   name: Rick Kelson
   email: RKelson@utah.gov
-  phone: 801-538-3237
   agency: AGRC
-Parcels:
+elevation:
   name: Rick Kelson
   email: RKelson@utah.gov
-  phone: 801-538-3237
   agency: AGRC
-Indices:
+lidar_rivers:
+  - name: Rick Kelson
+    email: RKelson@utah.gov
+    agency: AGRC
+  - name: Buck Ehler
+    email: BuckEhler@utah.gov
+    agency: DNR FFSL
+contours:
+  name: Zach Beck
+  email: ZBeck@utah.gov
+  agency: AGRC
+  phone: 801-538-3237
+parcels:
   name: Rick Kelson
   email: RKelson@utah.gov
-  phone: 801-538-3237
   agency: AGRC
-PLSS:
+lir_parcels:
+  email: SFernandez@utah.gov
+  phone: 801-209-9359
+  agency: AGRC
+indices:
+  name: Rick Kelson
+  email: RKelson@utah.gov
+  agency: AGRC
+plss:
   - name: Mike Heagin
-    email: mheagin@utah.gov
+    email: MHeagin@utah.gov
     phone: 801-537-9296
     agency: AGRC
   - name: Sean Fernandez
-    email: SFERNANDEZ@utah.gov
+    email: SFernandez@utah.gov
     phone: 801-209-9359
     agency: AGRC
-TURN:
+turn:
   - name: Mike Heagin
-    email: mheagin@utah.gov
+    email: MHeagin@utah.gov
     phone: 801-537-9296
     agency: AGRC
   - name: Sean Fernandez
-    email: SFERNANDEZ@utah.gov
+    email: SFernandez@utah.gov
     phone: 801-209-9359
     agency: AGRC
-Boundaries:
+boundaries:
   name: Mike Heagin
-  email: mheagin@utah.gov
+  email: MHeagin@utah.gov
   phone: 801-537-9296
   agency: AGRC
-ZipCodes:
+zip_codes:
   name: David Buell
-  email: dbuell@utah.gov
+  email: DBuell@utah.gov
   phone: 801-503-4247
   agency: AGRC
-EmergencyZones:
+emergencyzones:
   name: David Buell
-  email: dbuell@utah.gov
+  email: DBuell@utah.gov
   phone: 801-503-4247
   agency: AGRC
-SITLA:
-  name: the GIS Staff
-  emal: TLA-GIS@utah.gov
+sitla:
+  name: the GIS staff
+  email: TLA-GIS@utah.gov
   phone: 801-538-5100
   agency: SITLA
-Census:
+address_grids:
   name: Bert Granberg
   email: BGranberg@utah.gov
   phone: 801-538-3563
   agency: AGRC
-Tax:
+address_network:
+  name: Bert Granberg
+  email: BGranberg@utah.gov
+  phone: 801-538-3563
+  agency: AGRC
+address_points:
+  name: Sean Fernandez
+  email: SFernandez@utah.gov
+  phone: 801-209-9359
+  agency: AGRC
+luca_liaison:
+  name: Bert Granberg
+  email: BGranberg@utah.gov
+  phone: 801-538-3563
+  agency: AGRC
+luca_trainer:
+  name: Dorothy McKinney
+  email: Dorothy.A.McKinney@census.gov
+  agency: Census
+census:
+  name: Bert Granberg
+  email: BGranberg@utah.gov
+  phone: 801-538-3563
+  agency: AGRC
+tax:
   name: Terri Chidester
   agency: Utah State Tax Commission
-  email: tchidester@utah.gov
-SpecialTax:
+  email: TChidester@utah.gov
+special_tax:
   name: Nick Kenczka
-  email: nkenczka@utah.gov
+  email: NKenczka@utah.gov
   agency: Utah State Tax Commission
-OilWells:
+oil_wells:
   name: Don Staley
-  emal: donstaley@utah.gov
+  emal: DonStaley@utah.gov
   agency: DNR-OGM
-OilFields:
+oil_fields:
   name: Brad Hill
-  emal: bradhill@utah.gov
+  emal: BradHill@utah.gov
   agency: DNR-OGM
-AirQuality:
+air_quality:
   name: Whitney Oswald
-  email: woswald@utah.gov
+  email: WOswald@utah.gov
   agency: DAQ
-Brownsfield:
+brownsfield:
   name: Bill Rees
   email: BRees@utah.gov
   phone: 801-536-4167
   agency: DEQ
-EWA:
+ewa:
   name: Bill Rees
   email: BRees@utah.gov
   phone: 801-536-4167
   agency: DEQ
-VCP:
+vcp:
   name: Bill Rees
   email: BRees@utah.gov
   phone: 801-536-4167
   agency: DEQ
-Waste:
+waste:
   name: Thomas Ball
-  email: tball@utah.gov
+  email: TBall@utah.gov
   phone: 801-536-0251
   agency: DEQ
-Military:
+military:
   name: Michael Storck
-  email: mstorck@utah.gov
+  email: MStorck@utah.gov
   phone: 801-536-4179
   agency: DEQ
-NPL:
+npl:
   name: Harold Sandbeck
-  email: haroldsandbeck@utah.gov
+  email: HaroldSandbeck@utah.gov
   phone: 801-536-4152
   agency: DEQ
-Superfund:
+superfund:
   name: Harold Sandbeck
-  email: haroldsandbeck@utah.gov
+  email: HaroldSandbeck@utah.gov
   phone: 801-536-4152
   agency: DEQ
-ToxicRelease:
+toxic_release:
   name: Harold Sandbeck
-  email: haroldsandbeck@utah.gov
+  email: HaroldSandbeck@utah.gov
   phone: 801-536-4152
   agency: DEQ
-UST:
+ust:
   name: Harold Sandbeck
-  email: haroldsandbeck@utah.gov
+  email: HaroldSandbeck@utah.gov
   phone: 801-536-4152
   agency: DEQ
-DrinkingWater:
+drinking_water:
   name: Harold Sandbeck
-  email: haroldsandbeck@utah.gov
+  email: HaroldSandbeck@utah.gov
   phone: 801-536-4152
   agency: DEQ
-Aquifers:
+aquifers:
   name: Diedre Beck
-  email: dbeck@utah.gov
+  email: DBeck@utah.gov
   agency: DEQ Division of Drinking Water
-LandSlides:
+landslides:
   name: Gordon Douglass
-  email: gdouglass@utah.gov
+  email: GDouglass@utah.gov
   phone: 801-538-4810
   agency: UGS
-Faults:
+faults:
   name: Gordon Douglass
-  email: gdouglass@utah.gov
+  email: GDouglass@utah.gov
   phone: 801-538-4810
   agency: UGS
-WaterRelatedLandUse:
+water_related_land_use:
   name: Aaron Austin
-  email: aaronaustin@utah.gov
+  email: AaronAustin@utah.gov
   agency: DWR
-Voting:
+voting:
   name: Mark Thomas
-  email: mjthomas@utah.gov
+  email: MJThomas@utah.gov
   agency: Lieutenant Governor's Office
-Roads:
+roads:
   name: Greg Bunce
   email: GBunce@utah.gov
   agency: AGRC
   phone: 801-349-0039
-floodareas:
+flood_areas:
    - name: Jamie Huff
      agency: Utah Risk MAP
-     email: jhuff@utah.gov
+     email: JHuff@utah.gov
    - name: Brooke Conner
      agency: FEMA
      email: brooke.conner@fema.dhs.gov
-UTA:
+uta:
   name: Sumer Ellis
   agency: UTA
-  email: sellis@rideuta.com
-UGS:
+  email: SEllis@rideuta.com
+ugs:
   name: Gordon Douglass
   agency: UGS
-  email: douglass@utah.gov
+  email: GDouglass@utah.gov
   phone: 801-538-4810
-NHD:
+nhd:
   name: Lee Eschler
-  email: leschler@utah.gov
+  email: LEschler@utah.gov
   agency: DWR
+source_water:
+  name: Kate Johnson
+  email: KJohnson@utah.gov
+  agrncy: DWR

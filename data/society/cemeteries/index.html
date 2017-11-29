@@ -37,7 +37,7 @@ Cemeteries:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <p>The main source of this dataset is the <a href="https://heritage.utah.gov/history/cemeteries">Utah State History Research Centers Cemetery and Burial Database</a>. Some of the cemeteries in this database are inactive, and may be in poor condition. Cemetery information contains year of first burial, number of burials, contact and owner information, and directions.</p>
-    <p>Contact: <a href="mailto:agrc@utah.gov">agrc@utah.gov</a> with any questions.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html
     name="Cemeteries"

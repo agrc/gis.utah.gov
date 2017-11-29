@@ -58,7 +58,7 @@ TransitSpecialTaxAreas:
     <ul class="dotless">
       <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a>
     </ul>
-    <p>General Utah GIS data inquiries contact <a href="mailto:agrc@utah.gov">AGRC</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="SalesTaxAreas" info=page.SalesTaxAreas %}
 </div>
@@ -91,7 +91,7 @@ TransitSpecialTaxAreas:
     <ul class="dotless">
       <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a>
     </ul>
-    <p>General Utah GIS data inquiries: <a href="mailto:nkenczka@utah.gov">Nick Kenczka</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.special_tax %}</p>
   </div>
   {% include packagedata.html name="TransitSpecialTaxAreas" info=page.TransitSpecialTaxAreas %}
 </div>
@@ -117,7 +117,7 @@ TransitSpecialTaxAreas:
     <ul class="dotless">
       <li><a href="http://tax.utah.gov/">Utah State Tax Commission</a>
     </ul>
-    <p>Inquires: <a href="mailto:tchidester@utah.gov">Utah State Tax</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.tax %}</p>
   </div>
   {% include packagedata.html name="TaxEntities" info=page.TaxEntities %}
 </div>

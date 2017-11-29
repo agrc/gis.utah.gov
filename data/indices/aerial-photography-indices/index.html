@@ -86,7 +86,7 @@ DOQAerialPhotographyIndices:
     <ul class="dotless">
       <li><a href="{{ "/data/aerial-photography" | prepend: site.baseurl }}">Aerial Photography</a>
     </ul>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="AerialPhotographyExtents" info=page.AerialPhotographyExtents %}
 </div>
@@ -111,7 +111,7 @@ DOQAerialPhotographyIndices:
     <ul class="dotless">
       <li><a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}">Aerial Photography</a>
     </ul>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.<br />
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="HROAerialPhotographyTileIndices" info=page.HROAerialPhotographyTileIndices %}
 </div>
@@ -131,7 +131,7 @@ DOQAerialPhotographyIndices:
       <li><strong>SIZE</strong> - the average file size of each tile
     </ul>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="NAIPAerialPhotographyTileIndices" info=page.NAIPAerialPhotographyTileIndices %}
 </div>
@@ -159,7 +159,7 @@ DOQAerialPhotographyIndices:
       <li><a href="{{ "/data/aerial-photography/doq/#2003DOQ" | prepend: site.baseurl }}">Iron & Beaver 2003 Color DOQs</a>
       <li><a href="{{ "/data/aerial-photography/doq/#1977DOQ" | prepend: site.baseurl }}">Salt Lake County 1977 Quads</a>
     </ul>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="DOQAerialPhotographyIndices" info=page.DOQAerialPhotographyIndices %}
 </div>

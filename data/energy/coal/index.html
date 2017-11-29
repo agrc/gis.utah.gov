@@ -36,7 +36,7 @@ abstract="This dataset represents areas of coal deposits in Utah." %}
     <ul class="dotless">
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.ENERGY.CoalDepositAreas1988.xml">FGDC Metadata</a>
     </ul>
-    <p>Contact: <a href="mailto:agrc@utah.gov">AGRC</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="Coal"
   info=page.Coal %}

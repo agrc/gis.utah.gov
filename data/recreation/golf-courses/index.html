@@ -33,7 +33,7 @@ abstract="This dataset represents golf course locations within the State of Utah
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>Contact <a href="mailto:agrc@utah.gov">AGRC</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.RECREATION.GolfCourses.xml">FGDC Metadata</a>

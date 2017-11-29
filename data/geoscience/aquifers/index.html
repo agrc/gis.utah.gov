@@ -52,7 +52,7 @@ abstract="The Aquifers data package contains the Recharge Discharge Areas and th
       <li><a href="http://ut.water.usgs.gov/">USGS - Utah Water Science Center</a></li>
       <li><a href="http://www.waterquality.utah.gov/">Utah DEQ - Division of Water Quality</a></li>
     </ul>
-    <p>Contact <a href="mailto:agrc@utah.gov">AGRC</a> or <a href="mailto:dbeck@utah.gov">Deidre Beck</a>, Utah Department of Environmental Quality, Division of Drinking Water</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.aquifers %}</p>
   </div>
   {% include packagedata.html name="RechargeDischargeAreas"
   info=page.RechargeDischargeAreas %}
@@ -71,7 +71,7 @@ abstract="The Aquifers data package contains the Recharge Discharge Areas and th
       <li><a href="http://ut.water.usgs.gov/">USGS - Utah Water Science Center</a></li>
       <li><a href="http://www.waterquality.utah.gov/">Utah DEQ - Division of Water Quality</a></li>
     </ul>
-    <p>Contact <a href="mailto:agrc@utah.gov">AGRC</a> or <a href="mailto:dbeck@utah.gov">Deidre Beck</a>, Utah Department of Environmental Quality, Division of Drinking Water</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.aquifers %}</p>
   </div>
   {% include packagedata.html name="BasinFillBoundary"
   info=page.BasinFillBoundary %}

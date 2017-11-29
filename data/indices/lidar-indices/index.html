@@ -74,7 +74,7 @@ LiDARIndices:
     <ul class="dotless">
       <li><a href="{{ "/data/elevation-terrain-data" | prepend: site.baseurl }}">Elevation and Terrain Data</a>
     </ul>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="LiDARExtents" info=page.LiDARExtents %}
 </div>
@@ -99,7 +99,7 @@ LiDARIndices:
     <ul class="dotless">
       <li><a href="{{ "/data/elevation-terrain-data" | prepend: site.baseurl }}">Elevation and Terrain Data</a>
     </ul>
-    <p>Questions can be direction to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="LiDARIndices" info=page.LiDARIndices %}
 </div>

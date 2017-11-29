@@ -42,7 +42,7 @@ abstract="The mapped Quaternary faults and folds in the State of Utah." %}
       <li><a href="http://geology.utah.gov/hazards/earthquakes-faults/utah-faults">Geology.utah.gov fault information</a>
     </ul>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: Utah Geological Survey, State of Utah, SGID. Quaternary faults were created and maintained by the Utah Geological Survey.</p>
-    <p>Questions can be direction to <a href="mailto:gdouglass@utah.gov">Gordon Douglass</a> (801.538.4810) at UGS.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.faults %}</p>
   </div>
   {% include packagedata.html name="QuaternaryFaults"
   info=page.QuaternaryFaults %}

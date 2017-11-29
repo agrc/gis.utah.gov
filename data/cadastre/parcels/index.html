@@ -35,7 +35,7 @@ abstract="Parcel data contains GIS mapping data representing parcel boundaries. 
     <p>Parcel polygons contain attributes unique to each parcel such as a unique parcel number (<code>PARCEL_ID</code>), address for the parcel (<code>PARCEL_ADD</code>, <code>PARCEL_CITY</code>, <code>PARCEL_ZIP</code>), a generalized land ownership designation (<code>OWN_TYPE</code>), and the phone number for the county recorders office (<code>RECORDER</code>).</p>
     <p>This data when possible is updated twice a year with the newest data available from the counties. Some counties along the Wasatch Front are updated monthly when possible.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
-    <p>Questions can be directed to <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801.538.3237) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.parcels %}</p>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
@@ -261,7 +261,7 @@ abstract="Parcel data contains GIS mapping data representing parcel boundaries. 
     <p>The Land Information Records (LIR) work group organized by the Governor’s Office of Management and Budget has facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety, economic development, transportation, planning and the provisions of public services. In May of 2016, the Land Information Records work group released its <a href="{{ "/work-group-recommends-expanded-gis-parcel-sharing/" | prepend: site.baseurl }}">recommendations for sharing an enhanced set of tax parcel GIS data</a>. A <a href="{{ "/data-schema-released-for-expanded-gis-parcel-sharing/" | prepend: site.baseurl }}">draft of the tax year parcel GIS data schema</a> is available. </p>
     <p>Tax year parcel GIS data will be updated annually with the finalized year-end tax assessment data that is completed by May 22nd each year then submitted to the Automated Geographic Reference Center (AGRC) for loading into SDE by July 1st each year. </p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83. There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
-    <p>Questions can be directed to <a href="mailto:sfernandez@utah.gov">Sean Fernandez</a> (801.209.9359) at AGRC.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.lir_parcels %}</p>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
