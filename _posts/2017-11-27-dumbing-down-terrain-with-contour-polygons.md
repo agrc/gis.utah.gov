@@ -16,7 +16,6 @@ tags:
 - tanaka
 - python
 ---
-
 While technology advances towards products with greater resolution and accuracy, sometimes more data isn’t always better data. Sometimes, being able to see general trends and relative differences paints a more interesting picture than sub foot imagery or lidar. This is the case when terrain is dumbed down and represented with generalized contour polygons. ![Contour Polygons]({{ "/images/contoursPolys.png" | prepend: site.baseurl }})
 
 Generalized contour polygons are relatively easy to create (no GISP required) and allows the user multiple ways to symbolize the data depending on the desired cartographic effect. Probably the most difficult part of creating the contours is deciding how much to generalize the terrain and what contour interval is best suited for the intended scale, unfortunately a bit of trial and error can be involved. An added benefit of creating contour polygons are the derivative data products like Tanaka contours that can be created once the base elevation and polygons are generated.
