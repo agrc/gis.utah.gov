@@ -24,6 +24,7 @@ In order to facilitate a smooth transition to the new database scheme the new da
 
 This new database was developed by contractors sponsored in part by the U.S. Department of Energy and the Ground Water Protection Council. The structure is much more complex than what was used in the past. The benefit is that it provides for the opportunity for the Division to collect more descriptive down-hole information for each wellbore permitted and drilled. Initially, much of the down-hole information will not be available because there was no place to save it in the previous databases. Eventually, as new wells are drilled and old legacy data is entered, more descriptive data will become available for the wells in Utah.
 
-Any questions or feedback should be directed to [Don Staley](mailto:donstaley@utah.gov).
+{%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.oil_wells %}{% endcapture %}
+{{ contact | strip_newlines }}
 
 More information can be found on the [Oil and Gas data resource page]({{ "/data/energy/oil-gas" | prepend: site.baseurl }}).

@@ -26,7 +26,8 @@ If you have not signed up for access to the Google imagery visit the [Discover -
 
 [![Google update]({{"/images/2017UpdatedAreas.png" | prepend:site.baseurl}} "2017 Google Imagery updates - click for larger image")]({{"/images/New2017_Google.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-Please contact Bert Granberg [bgranberg@utah.gov](mailto:bgranberg@utah.gov) or Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) with questions.
+{% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
+{{ license | strip_newlines }}
 
 #### Don't see the updated imagery?
 

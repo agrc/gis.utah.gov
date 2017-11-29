@@ -59,7 +59,9 @@ Stated horizontal positional accuracy of the Google imagery is expected to achie
 ### Adding a WMTS or WMS Service to a Web Map
 {: .text-left}
 
-Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({{"/using-agrcs-new-web-mercator-services-in-your-web-maps/" | prepend:site.baseurl}}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this send an email to Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) and provide your web map URL domains.
+{%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='send an email to' hide-punctuation=true %}{% endcapture %}
+
+Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({{"/using-agrcs-new-web-mercator-services-in-your-web-maps/" | prepend:site.baseurl}}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact | strip_newlines }} and provide your web map URL domains.
 
 ### Adding a WMS Service to CAD
 {: .text-left}
@@ -85,7 +87,9 @@ The [dates of each Google imagery flight](ftp://ftp.agrc.utah.gov/UtahSGID_Vecto
 ### Pro/ArcMap User Considerations
 {: .text-left}
 
-If you have not yet received quad-word links to the service (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) that do not require a username and password contact **[Rick Kelson](mailto:rkelson@utah.gov)**.
+{%capture contact2 %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='please contact' %}{% endcapture %}
+
+If you have not yet received quad-word links to the service (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) that do not require a username and password {{ contact2 | strip_newlines }}
 
 Users experiencing problems with the service, such as blurry tiles or different year vintages at different scales, may need to clear their local cache.
 
@@ -110,7 +114,9 @@ To access the GCP services individual organizations will be provided URL links f
 ### Requests for On-Premise Use
 {: .text-left}
 
-Request can be made to consume the imagery off-line when the provided imagery service does not suffice. Please provide the following information to Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov) for consideration:
+{%capture contact3 %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='Please provide the following information to' hide-punctuation=true %}{% endcapture %}
+
+Request can be made to consume the imagery off-line when the provided imagery service does not suffice. {{ contact3 | strip_newlines }} for consideration:
   -	Name & organization:
   - Reason for request:
   - Working on behalf of:

@@ -23,4 +23,4 @@ The focus of the event is interesting maps or map technology projects that are a
 <p><strong><a href="https://docs.google.com/forms/d/11e8Wrl7hhsfYFB-iersbghq-G-yz0OWftfpgFrw9CoE/viewform?usp=send_form">Click here to signup and reserve your spot!</a></strong> Signups close January 5, 2015.</p>
 <p><em>Book:</em><br />
 For Maps on the Hill <a href="{{ "/downloads/2012MapsOnTheHill_bookletSM.pdf" | prepend: site.baseurl }}">2012</a>, <a href="{{ "/downloads/MapsontheHillMapBook2013.pdf" | prepend: site.baseurl }}">2013</a>, and <a href="{{ "/downloads/Maps-on-the-Hill-Map-Book-2014-web.pdf" | prepend: site.baseurl }}">2014</a>, a book was created highlighting all of the map entries. The book has always been a great example of the interesting maps created and used in Utah. This year the mapbook will focus on how mapping and GIS influences important decisions. More information on displays, the book, and other details will be sent to participants sometime after they signup.</p>
-<p>Questions? Contact  <a href="mailto:agrc@utah.gov">agrc@utah.gov</a> or 801-538-3037.</p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>

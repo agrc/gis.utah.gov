@@ -37,6 +37,16 @@ contours:
   email: ZBeck@utah.gov
   agency: AGRC
   phone: 801-538-3237
+image_server:
+  name: Zach Beck
+  email: ZBeck@utah.gov
+  agency: AGRC
+  phone: 801-538-3237
+sgid:
+  name: Zach Beck
+  email: ZBeck@utah.gov
+  agency: AGRC
+  phone: 801-538-3237
 parcels:
   name: Rick Kelson
   email: RKelson@utah.gov
@@ -93,6 +103,11 @@ address_grids:
   phone: 801-538-3563
   agency: AGRC
 address_network:
+  name: Bert Granberg
+  email: BGranberg@utah.gov
+  phone: 801-538-3563
+  agency: AGRC
+newsletter:
   name: Bert Granberg
   email: BGranberg@utah.gov
   phone: 801-538-3563
@@ -237,3 +252,15 @@ source_water:
   name: Kate Johnson
   email: KJohnson@utah.gov
   agrncy: DWR
+google_imagery:
+  - name: Bert Granberg
+    email: BGranberg@utah.gov
+    phone: 801-538-3563
+    agency: AGRC
+  - name: Rick Kelson
+    email: RKelson@utah.gov
+    agency: AGRC
+discover:
+  name: Rick Kelson
+  email: RKelson@utah.gov
+  agency: AGRC

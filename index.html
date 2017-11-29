@@ -64,7 +64,7 @@ layout: default
     <h1 id="spotlight2"><a href="{{"/data/address/census-luca-2020/" | prepend: site.baseurl }}">Utah LUCA Information for Census 2020</a></h1>
     <p>Information, data, and other resources for cities and counties participating in the Local Update of Census Addresses Program.</p>
     <a class="btn" href="{{"/data/address/census-luca-2020/" | prepend: site.baseurl }}">Utah LUCA Info</a>
-    
+
     <h1 id="spotlight3">UGIC Call for Papers 2018</h1>
     <p>UGIC is now accepting abstract submissions for breakout presentations at the 2018 UGIC Conference May 7-11, 2018 in Vernal, Utah!</p>
     <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScOeBdT1-CSi2-46wFN8eYBxz_io31ThTQX-CZKeckB2z9a3A/viewform">Submit your Abstract Now</a>
@@ -93,8 +93,7 @@ layout: default
       <p>AGRC encourages GIS professionals and students to periodically contribute news and updates,
       to both our blog pages and
       <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}">newsletter</a>.
-      Use the form at the bottom of any gis.utah.gov page to subscribe. Contact
-      <a href="mailto:bgranberg@utah.gov?subject=Contributing GIS News">Bert Granberg</a> to contribute.</p>
+      Use the form at the bottom of any gis.utah.gov page to subscribe. {% include contact.html subject="Contributing GIS News" contact=site.data.contacts.newsletter text='Contact' hide-punctuation=true %} to contribute.</p>
     </div>
   </div>
   <div class="grid__col section">
