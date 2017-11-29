@@ -36,4 +36,5 @@ Once connected to AGRC's mapserv, navigate to your folder of interest. The avail
 
 The legacy version of Image Server is not compatible with 10.3. ArcGIS Desktop Projects may not open or properly function at 10.3 when you have artifacts of the deprecated Image Server in your `.mxd` project files. Remove the layers that access the deprecated Image Server and remove the custom `Add Image Service Connection` button from projects prior to installing 10.3.
 
-For questions, please contact [Zach Beck](mailto:zbeck@utah.gov) at AGRC.
+{% capture image_server %}{% include contact.html subject=page.title contact=site.data.contacts.image_server %}{% endcapture %}
+{{ image_server | strip_newlines }}

@@ -25,7 +25,9 @@ categories: []
 
 [![Project area map]({{"/images/lidar_blbrcvuwv_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_blbrcvuwv_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-During the Fall of 2016 AGRC, Cache and Weber County, and the Utah Department of Emergency Management acquired [~774 square miles]({{ "/images/lidar_blbrcvuwv_coverage.png/" | prepend: site.baseurl }}) of 8 points per meter Quality Level 1 LiDAR. The project areas cover the Cache Valley, Upper Weber Valley, Bear River from Cache County to the Great Salt Lake, and the Bear Lake shoreline. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point cloud are also available [by request](mailto:rkelson@utah.gov) and eventually from [Open Topography](http://www.opentopography.org/). This elevation data was collected between September and November, 2017 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
+{%capture data %}{% include contact.html subject=page.title contact=site.data.contacts.elevation text='by request from' hide-punctuation=true %}{% endcapture %}
+
+During the Fall of 2016 AGRC, Cache and Weber County, and the Utah Department of Emergency Management acquired [~774 square miles]({{ "/images/lidar_blbrcvuwv_coverage.png/" | prepend: site.baseurl }}) of 8 points per meter Quality Level 1 LiDAR. The project areas cover the Cache Valley, Upper Weber Valley, Bear River from Cache County to the Great Salt Lake, and the Bear Lake shoreline. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point cloud are also available {{ data | strip_newlines }} and eventually from [Open Topography](http://www.opentopography.org/). This elevation data was collected between September and November, 2017 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
 _NOTE: Two canyons on the east side of Cache Valley were collected Fall of 2017 and will be available Mid-2018._
 
 <ul class="dotless">
@@ -47,4 +49,5 @@ The naming convention for the tiles are based off the [U.S. National Grid (USNG)
 
 This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
 
-If you need assistance contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov)
+{% capture elevation %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
+{{ elevation | strip_newlines }}

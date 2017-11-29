@@ -35,7 +35,8 @@ The imagery web services will be hosted in Google's cloud and delivered via `WMS
 - Google Imagery <a href="{{site.baseurl}}{% post_url 2015-11-24-google-imagery-service-speed-enhancements-more %}">(Update, November 2015)</a>
 - <i class="fa fa-youtube-square" aria-hidden="true"></i> Video <a href="https://youtu.be/Wch2M2rBJhU">Google Imagery License<i>Town Hall</i> meeting</a> presents background on the license, GIS and developer user info, and a look forward at future options.
 
-Any questions can be directed to <a href="mailto:bgranberg@utah.gov">Bert Granberg</a> (801-538-3163) or <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801-538-3237).
+{% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
+{{ license | strip_newlines }}
 
 <a href="{{ "/downloads/Diverging-Diamond-Interchange-Google-Imagery.png" | prepend: site.baseurl }}">
 <img src="{{ "/images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png" | prepend: site.baseurl }}" alt="" title="Click to enlarge" />
