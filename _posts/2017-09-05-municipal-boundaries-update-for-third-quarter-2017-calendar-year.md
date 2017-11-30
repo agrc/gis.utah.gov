@@ -14,9 +14,10 @@ tags:
 - annexations
 - boundaries
 ---
-We are heading into fall now and everyone seems to be getting things in order for the end of the year. AGRC has been working with cities and counties to get some older areas updated and boundaries current. The 2020 Census is fast approaching so it’s a good time to review your data and get any missing areas included. AGRC will be submitting data to Census BAS program again at the end of the year. They do like to see documentation of some kind for all areas included. 
+We are heading into fall now and everyone seems to be getting things in order for the end of the year. AGRC has been working with cities and counties to get some older areas updated and boundaries current. The 2020 Census is fast approaching so it’s a good time to review your data and get any missing areas included. AGRC will be submitting data to Census BAS program again at the end of the year. They do like to see documentation of some kind for all areas included.
 
-Current data can be downloaded from the [State, County, and Municipal Boundaries]({{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}) data page or you can contact us for more information. [mheagin@utah.gov](mailto:mheagin@utah.gov) or [agrc@utah.gov](mailto:agrc@utah.gov)
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.boundaries %}{% endcapture %}
+Current data can be downloaded from the [State, County, and Municipal Boundaries]({{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}) data page or you can contact us for more information. {{ contact | strip_newlines }}
 
 The following are the changes and annexations since June 29, 2017 listed by County and City:
 

@@ -39,5 +39,5 @@ categories:
 <li>Priority level 5: other areas, moderate economic development potential</li>
 </ul>
 <p>This is the first draft of a living document that is expected to be refined as additional feedback is received and analyzed, and as areas get collected and/or re-prioritized.</p>
-<p>We encourage you to send any feedback you may have on the plan or coverage priority map to <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a>. </p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>
 <p><img src="{{ "/images/LidarPlan_sqMiKm.png" | prepend: site.baseurl }}" alt="Square Miles and Square Kilometer Calculations" /></p>

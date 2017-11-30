@@ -39,5 +39,4 @@ categories:
 </p>
 <p>Get started by getting a primary contact designated for your organization and sign up using the Organizational Usage Agreement.
 </p>
-<p>Any questions can be directed to <a href="mailto:bgranberg@utah.gov">Bert Granberg</a> (801-538-3163) or <a href="mailto:rkelson@utah.gov">Rick Kelson</a> (801-538-3237).
-</p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}</p>

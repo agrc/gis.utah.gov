@@ -32,4 +32,5 @@ These services were first built almost ten years ago, before web mercator became
 
 Also, AGRC is now creating accounts for the discover.agrc.utah.gov server for those not previously eligible to access the **[licensed Google imagery]({{"/discover/license/" | prepend:site.baseurl}})**. These new 'public' accounts allow access to statewide NAIP aerial photography and color infrared layers, older black and white aerials, and all of AGRC's custom base map tile services. ***If you already have a Discover account, you do not need to create another account to access the base maps.*** To obtain access to the non-licensed content on Discover please fill out the **[Discover Server Access](https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform)** form.
 
-Please contact Matt Peters ([mpeters@utah.gov](mailto:mpeters@utah.gov)) at AGRC if you have questions or issues in regard to the NAD83 base map shutdown.
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager %}{% endcapture %}
+{{ contact | strip_newlines }}

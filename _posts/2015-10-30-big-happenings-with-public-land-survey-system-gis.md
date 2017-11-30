@@ -34,4 +34,4 @@ As property descriptions are all ultimately described using the exact location o
 <p>Goals were set in the first meeting to provide resources for Counties to protect, restore, rehabilitate and perpetuate PLSS Corners within the State of Utah and make the information available and accessible to the public and government agencies on the web for use toward the public’s best interests.</p>
 <p>The MMRC expects to begin accepting application from Counties to perform monument restoration and replacement projects in January 2016, and will award grants to high priority/need  projects. Grant information will be sent to county officials prior to January 1st including submission instructions.</p>
 <p>Those performing the work will be encouraged to submit PLSS corner data electronically to AGRC using the <a href="http://mapserv.utah.gov/PLSS/">Utah PLSS Corner Management Web Application</a>.</p>
-<p>For more information or questions, please email Sean Fernandez at <a href="mailto:sfernandez@utah.gov">sfernandez@utah.gov</a>.</p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.plss %}</p>

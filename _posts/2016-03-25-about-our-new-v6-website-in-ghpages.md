@@ -46,12 +46,14 @@ Keep in mind that this is really the first of two phases. Phase 1 has moved us a
 
 We’ve got more work to complete under Phase 1, but Phase 2 blueprints are starting to come together. Phase 2 will involve focusing on filling in gaps in live, streaming map data web services, migrating metadata content currently contained within SGID data package web pages onto a Utah-wide Esri Open Data platform site. We are eagerly awaiting Esri's rumored ‘portal affiliation’ functionality that is being developed for the hosted (AGOL) and local Esri Portal environments. We think this will make it easier to bring together and sustain open and interactive GIS data content across the Utah GIS community.
 
-As always, we welcome and appreciate your [feedback](mailto:agrc@utah.gov?subject=gis.utah.gov website feedback) on the gis.utah.gov site.
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc hide-punctuation=true text='feedback' %}{% endcapture %}
+
+As always, we welcome and appreciate your {{ contact | strip_newlines }} on the gis.utah.gov site.
 
 ![Teamwork Cake for AGRC Website]({{ "/images/teamwork.png" | prepend: site.baseurl }})
 {: .text-right}
 
-Thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, leadership, and GH mentoring that got us all to v6.0!
+Thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, leadership, and GitHub mentoring that got us all to v6.0!
 
 Lastly, check out AGRC's websites over the last 20+ years..
 
@@ -81,4 +83,3 @@ Lastly, check out AGRC's websites over the last 20+ years..
         <a href="https://web.archive.org/web/20140701075235/http://gis.utah.gov/">AGRC Website v5</a>
     </div>
 </div>
- 

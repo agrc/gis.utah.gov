@@ -22,5 +22,4 @@ categories:
 <p>The new system will be configured with NAD 83 (2011) epoch 2010 coordinates. </p>
 <p>A full report showing these coordinate differences will be distributed to all subscribers via email in mid September.</p>
 <p>Please begin to prepare for this change which is expected to go live sometime in mid October and share this update information within your organization.</p>
-<p>Questions should be directed to <a href="mailto:sfernandez@utah.gov">Sean Fernandez</a> or <a href="mailto:mheagin@utah.gov">Mike Heagin</a>. </p>
- 
+<p>{% include contact.html subject=page.title contact=site.data.contacts.turn %}</p>

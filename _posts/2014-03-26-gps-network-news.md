@@ -23,4 +23,4 @@ categories:
 <p>A map showing the station locations and health of the stations can be viewed <a href="http://168.179.231.9/Map/SensorMap.aspx">here</a>. </p>
 <p>Many of the new stations throughout the entire network are capable of receiving data from multiple satellite constellations including satellites from the USA GPS system, Russian GLONASS System, European Galileo and the Chinese COMPASS System.  </p>
 <p>TURN GPS currently has over 300 subscribed users, the number of which is increasing as the word gets out about this valuable resource.</p>
-<p>For more information please contact <a href="mailto:sfernandez@utah.gov">Sean Fernandez</a> or <a href="mailto:mheagin@utah.gov">Mike Heagin</a>.</p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.turn %}</p>

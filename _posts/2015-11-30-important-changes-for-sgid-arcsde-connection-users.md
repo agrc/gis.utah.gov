@@ -24,4 +24,4 @@ All SGID ArcSDE 'direct connections' from within the State Network, will need to
 <p><strong>SQL Client</strong><br />
 Microsoft SQL Native Client 11 will be required for any desktop ArcSDE users within the state network. We are working with DTS to automatically push out the Microsoft SQL Native Client 11 to identified desktop SGID users within state government. We will identify users that need the client pushed to them by using the mailing list for the AGRC newsletter (@utah.gov emails), and by working with GIS managers within state government.  You can also open a ticket with through the DTS help desk to ensure the correct client is installed. </p>
 <p>The plan is to make the migration on January 21, 2016 (UPDATED), so for state network SGID ArcSDE users, please update your DNS name and SQL client at your earliest convenience. </p>
-<p>If you have questions, contact Michael Foulger by <a href="mailto:michaelfoulger@utah.gov?subject=SGID ArcSDE Updates">email</a> or by phone at (801) 652-2258.</p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.sgid %}</p>

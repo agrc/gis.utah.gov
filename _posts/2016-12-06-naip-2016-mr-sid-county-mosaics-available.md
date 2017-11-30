@@ -22,4 +22,5 @@ now available</a>. The imagery is currently only available as 3-band RGB Mr. Sid
   <li><i class="fa fa-download"></i> <a href="http://raster.utah.gov/?cat=NAIP%202016%20(1m)">Retrieve 2016 NAIP via Interactive Map</a></li>
 </ul>
 
-If you have questions contact <a href="mailto:rkelson@utah.gov">Rick Kelson</a> at (801-538-3237).
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.imagery %}{% endcapture %}
+{{ contact | strip_newlines }}

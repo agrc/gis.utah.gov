@@ -43,10 +43,14 @@ image_server:
   agency: AGRC
   phone: 801-538-3237
 sgid:
-  name: Zach Beck
-  email: ZBeck@utah.gov
-  agency: AGRC
-  phone: 801-538-3237
+  - name: Zach Beck
+    email: ZBeck@utah.gov
+    agency: AGRC
+    phone: 801-538-3237
+  - name: Michael Foulger
+    email: MichaelFoulger@utah.gov
+    agency: AGRC
+    phone: 801-652-2258
 parcels:
   name: Rick Kelson
   email: RKelson@utah.gov
@@ -77,6 +81,11 @@ turn:
     email: SFernandez@utah.gov
     phone: 801-209-9359
     agency: AGRC
+surveyor:
+  name: Sean Fernandez
+  email: SFernandez@utah.gov
+  phone: 801-209-9359
+  agency: AGRC
 boundaries:
   name: Mike Heagin
   email: MHeagin@utah.gov
@@ -274,3 +283,14 @@ discover:
   name: Rick Kelson
   email: RKelson@utah.gov
   agency: AGRC
+change_manager:
+  name: Matt Peters
+  email: MPeters@utah.gov
+  agency: AGRC
+utah_mapping_emergency_technical_team:
+  - name: Talson Schulzke
+    email: TSchulzke@ufa-slco.org
+    agency: Salt Lake County Emergency Management
+  - name: Kate Smith
+    email: KateSmith8@gmail.com
+    agency: Salt Lake Community College

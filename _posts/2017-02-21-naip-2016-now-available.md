@@ -21,4 +21,5 @@ two separate services on Discover, _NAIP 2016 RGB_ and _NAIP 2016 NRG_.
 [![NAIP Sample]({{"/images/NAIP2016_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/NAIP2016.png" | prepend:site.baseurl}})
 {:.inline-text-right}
 
-If you have questions contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov) at (801-538-3237).
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.imagery %}{% endcapture %}
+{{ contact | strip_newlines }}

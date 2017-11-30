@@ -21,4 +21,4 @@ categories:
 <p>The BLM acquired 58 parcels with high conservation and recreation value, totaling 25,034 acres, primarily in Grand County. These parcels will expand the BLM backcountry with world class recreation sites like Corona Arch and Morning Glory Arch.<br />
 SITLA acquired 34 parcels with high mineral development potential, totaling 35,516 acres, primarily in Uintah County. The Administration expects development of these high potential parcels to increase public school funding across Utah.</p>
 <p>Completion of the Exchange Act adds to the 540,000 acres of sensitive lands SITLA has helped to conserve and protect while earning more than $1.4 billion for the beneficiaries of trust lands, primarily Utah public schools.</p>
-<p>Please contact Jessica Kirby 801-538-5141 or <a href="mailto:jessicakirby@utah.gov">jessicakirby@utah.gov</a> for more information.</p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.sitla %}</p>

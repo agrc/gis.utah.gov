@@ -36,6 +36,7 @@ Spatial data for this model was directly derived from the former data model. Dur
 - AGRC will maintain and publish both models until **March 21sth, 2018**
 - The new data model is based on the NextGen911 and FHA's ARNOLD requirements
 
-Please do not hesitate to [contact me](mailto:gbunce@utah.gov) if you have any questions or concerns about the new data model or this transition. If you regularly you use this layer, we encourage you to adopt this new model within your own agency. Let me know if you are planning on doing so and are looking for guidance or assistance with the ETL process.
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.roads text='contact' hide-punctuation=true %}{% endcapture %}
+Please do not hesitate to {{ contact | strip_newlines }} if you have any questions or concerns about the new data model or this transition. If you regularly you use this layer, we encourage you to adopt this new model within your own agency. Let me know if you are planning on doing so and are looking for guidance or assistance with the ETL process.
 
-Follow AGRC on [Twitter](https://twitter.com/MapUtah?lang=en) to stay up-to-date on this transition, as well as other GIS related stuff.
+Follow AGRC on [Twitter](https://twitter.com/MapUtah?lang=en) to stay up-to-date on this transition, as well as other GIS related news.
