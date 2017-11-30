@@ -7,7 +7,7 @@ layout: default
     <a href="{{ post.url | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-newspaper-o"></i> {{ post.title | truncate: 80 }}</a>
   </div>{% endfor %}
 </div>
-<div class="grid main" style="background-image: url('{{"/images/backgrounds/tanakaContours.jpg" | prepend: site.baseurl }}');">
+<div class="lozad grid main" data-background-image="{{"/images/backgrounds/tanakaContours.jpg" | prepend: site.baseurl }}">
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#data"><h3 class="main-heading">GIS Map Data</h3></a>
     <hr class="hr-separate" />
@@ -118,105 +118,105 @@ layout: default
     <h3>Filter the <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">master SGID Index table</a> for data &amp; services...</h3>
     <div class="grid__col--span-all grid__col--centered grid__col--s-hidden" style="width:568px">
       <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">
-        <img alt="SGID Index Table Search" class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/sgid-index.png" | prepend: site.baseurl }}">
+        <img alt="SGID Index Table Search" class="lozad" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/sgid-index.png" | prepend: site.baseurl }}">
       </a>
     </div>
     <h3>...or browse specific Data Categories</h3>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/address/" | prepend: site.baseurl }}"><h5 class="text-center">Addresses</h5>
-      <img alt="Addresses" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_address_points.png" | prepend: site.baseurl }}"></a>
+      <img alt="Addresses" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_address_points.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}"><h5 class="text-center">Aerial Photos</h5>
-      <img alt="Aerial Photos" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_NAIP.png" | prepend: site.baseurl }}"></a>
+      <img alt="Aerial Photos" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_NAIP.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/bioscience/" | prepend: site.baseurl }}"><h5 class="text-center">Bioscience</h5>
-      <img alt="Bioscience" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_habitat.png" | prepend: site.baseurl }}"></a>
+      <img alt="Bioscience" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_habitat.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/boundaries/" | prepend: site.baseurl }}"><h5 class="text-center">Boundaries</h5>
-      <img alt="Boundaries" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_voter_precincts.png" | prepend: site.baseurl }}"></a>
+      <img alt="Boundaries" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_voter_precincts.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/cadastre/" | prepend: site.baseurl }}"><h5 class="text-center">Cadastre</h5>
-      <img alt="Cadastre" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_parcels.png" | prepend: site.baseurl }}"></a>
+      <img alt="Cadastre" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_parcels.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/climate/" | prepend: site.baseurl }}"><h5 class="text-center">Climate/Weather</h5>
-      <img alt="Climate/Weather" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_WatershedAreas.png" | prepend: site.baseurl }}"></a>
+      <img alt="Climate/Weather" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_WatershedAreas.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/demographic/" | prepend: site.baseurl }}"><h5 class="text-center">Demographic</h5>
-      <img alt="Demographic" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_census.png" | prepend: site.baseurl }}"></a>
+      <img alt="Demographic" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_census.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/economy/" | prepend: site.baseurl }}"><h5 class="text-center">Economy</h5>
-      <img alt="Economy" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90EnterpriseZones.png" | prepend: site.baseurl }}"></a>
+      <img alt="Economy" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90EnterpriseZones.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/elevation-and-terrain/" | prepend: site.baseurl }}"><h5 class="text-center">Elevation/Terrain</h5>
-      <img alt="Elevation/Terrain" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_ned.jpg" | prepend: site.baseurl }}"></a>
+      <img alt="Elevation/Terrain" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_ned.jpg" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/energy/" | prepend: site.baseurl }}"><h5 class="text-center">Energy</h5>
-      <img alt="Energy" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_energy.png" | prepend: site.baseurl }}"></a>
+      <img alt="Energy" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_energy.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/environment/" | prepend: site.baseurl }}"><h5 class="text-center">Environment</h5>
-      <img alt="Environment" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_enviro.png" | prepend: site.baseurl }}"></a>
+      <img alt="Environment" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_enviro.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/farming/" | prepend: site.baseurl }}"><h5 class="text-center">Farming</h5>
-      <img alt="Farming" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah-sgid-water-related-land-use.png" | prepend: site.baseurl }}"></a>
+      <img alt="Farming" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah-sgid-water-related-land-use.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/geoscience/" | prepend: site.baseurl }}"><h5 class="text-center">Geoscience</h5>
-      <img alt="Geoscience" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_faults.png" | prepend: site.baseurl }}"></a>
+      <img alt="Geoscience" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_faults.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/health/" | prepend: site.baseurl }}"><h5 class="text-center">Health</h5>
-      <img alt="Health" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_StatisticalAreas.png" | prepend: site.baseurl }}"></a>
+      <img alt="Health" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_StatisticalAreas.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/history/" | prepend: site.baseurl }}"><h5 class="text-center">History</h5>
-      <img alt="History" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_archaeology_generalized.png" | prepend: site.baseurl }}"></a>
+      <img alt="History" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_archaeology_generalized.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/location/" | prepend: site.baseurl }}"><h5 class="text-center">Location</h5>
-      <img alt="Location" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_building_footprints.png" | prepend: site.baseurl }}"></a>
+      <img alt="Location" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_building_footprints.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/planning/" | prepend: site.baseurl }}"><h5 class="text-center">Planning</h5>
-      <img alt="Planning" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_wsa-boundaries.jpg" | prepend: site.baseurl }}"></a>
+      <img alt="Planning" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_wsa-boundaries.jpg" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/political/" | prepend: site.baseurl }}"><h5 class="text-center">Political</h5>
-      <img alt="Political" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_SenateDistricts2012.png" | prepend: site.baseurl }}"></a>
+      <img alt="Political" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_SenateDistricts2012.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/recreation/" | prepend: site.baseurl }}"><h5 class="text-center">Recreation</h5>
-      <img alt="Recreation" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah_trailheads.png" | prepend: site.baseurl }}"></a>
+      <img alt="Recreation" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah_trailheads.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/society/" | prepend: site.baseurl }}"><h5 class="text-center">Society</h5>
-      <img alt="Society" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_Schools.png" | prepend: site.baseurl }}"></a>
+      <img alt="Society" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_Schools.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/transportation/" | prepend: site.baseurl }}"><h5 class="text-center">Transportation</h5>
-      <img alt="Transportation" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}"></a>
+      <img alt="Transportation" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/usgs-scanned-topographic-maps/" | prepend: site.baseurl }}"><h5 class="text-center">USGS Topo Maps</h5>
-      <img class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_usgs_scanned_maps.png" | prepend: site.baseurl }}"></a>
+      <img class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_usgs_scanned_maps.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/utilities/" | prepend: site.baseurl }}"><h5 class="text-center">Utilities</h5>
-      <img alt="Utilities" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_broadband.png" | prepend: site.baseurl }}"></a>
+      <img alt="Utilities" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_broadband.png" | prepend: site.baseurl }}"></a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
       <a href="{{ "/data/water/" | prepend: site.baseurl }}"><h5 class="text-center">Water</h5>
-      <img alt="Water" class="b-lazy data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_Streams.png" | prepend: site.baseurl }}"></a>
+      <img alt="Water" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/front-page/90x90_Streams.png" | prepend: site.baseurl }}"></a>
     </div>
     <p class="section-read-more">
       <a href="{{ "/data/" | prepend: site.baseurl }}" class="btn">View All Data</a>
@@ -247,15 +247,15 @@ layout: default
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
       <h5 class="text-center">Terrain</h5>
-      <img alt="Terrain" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}">
+      <img alt="Terrain" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}">
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
       <h5 class="text-center">Imagery plus Overlay base maps</h5>
-      <img alt="Imagery plus Overlay base maps" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}">
+      <img alt="Imagery plus Overlay base maps" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}">
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
       <h5 class="text-center">Lite base map</h5>
-      <img alt="Lite base map" class="b-lazy item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}">
+      <img alt="Lite base map" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}">
     </div>
     <div class="grid__col grid__col--1-of-2">
       <p>AGRC's <a href="http://atlas.utah.gov">atlas.utah.gov</a> website allows for a quick preview
@@ -286,7 +286,7 @@ layout: default
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
       <h5 class="text-center">TURN GPS Network Coverage</h5>
       <a href="http://turngps.utah.gov/Map/SensorMap.aspx">
-        <img alt="TURN GPS Network Coverage" class="center b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
+        <img alt="TURN GPS Network Coverage" class="center lozad" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
       </a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
@@ -316,36 +316,36 @@ layout: default
     <br>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
       <a href="https://wri.utah.gov/"><h5 class="text-center">WRI (DNR-DWR)</h5>
-      <img alt="WRI (DNR-DWR)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/wri_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <img alt="WRI (DNR-DWR)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/wri_utah_gov.png" | prepend: site.baseurl }}" /></a>
       <p class="muted">The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
       <a href="http://crashmapping.utah.gov/"><h5 class="text-center">Crash Map (DPS / UDOT)</h5>
-      <img alt="Crash Map (DPS / UDOT)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/crashmapping_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <img alt="Crash Map (DPS / UDOT)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/crashmapping_utah_gov.png" | prepend: site.baseurl }}" /></a>
       <p class="muted">A statewide map of vehicle crashes, reported across all jurisdictions,
         that allows dynamic filtering for time, date, cause, severity, etc.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
       <a href="http://locate.utah.gov/"><h5 class="text-center">locate.utah.gov (GOED)</h5>
-      <img alt="locate.utah.gov (GOED)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/locate_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <img alt="locate.utah.gov (GOED)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/locate_utah_gov.png" | prepend: site.baseurl }}" /></a>
       <p class="muted">Utah's Economic Development Map depicts the landscape of what's important to businesses
         considering relocating to Utah.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
       <a href="http://enviro.deq.utah.gov/"><h5 class="text-center">Environmental Interactive Map (DEQ)</h5>
-      <img alt="Environmental Interactive Map (DEQ)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/deq_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <img alt="Environmental Interactive Map (DEQ)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/deq_utah_gov.png" | prepend: site.baseurl }}" /></a>
       <p class="muted">Search for site-specific information relating to DEQ programs including regulated
         environmental sites, facilities, and designations.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
       <a href="http://raster.utah.gov/"><h5 class="text-center">SGID Raster Search (AGRC)</h5>
-      <img alt="SGID Raster Search (AGRC)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/raster_utah_gov.png" | prepend: site.baseurl }}"/></a>
+      <img alt="SGID Raster Search (AGRC)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/raster_utah_gov.png" | prepend: site.baseurl }}"/></a>
       <p class="muted">Get map-based results for all of the imagery, elevation, lidar, and scanned maps
         available from Utah's SGID.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
       <a href="http://parcels.utah.gov/"><h5 class="text-center">SGID Parcel Viewer (AGRC)</h5>
-      <img alt="SGID Parcel Viewer (AGRC)" class="b-lazy website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/parcels_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <img alt="SGID Parcel Viewer (AGRC)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/parcels_utah_gov.png" | prepend: site.baseurl }}" /></a>
       <p class="muted">Zoom in to view parcel boundaries and basic attributes as assembled statewide by
         AGRC, in coordination with County Recorders.</p>
     </div>
@@ -382,9 +382,13 @@ layout: default
     </p>
   </div>
 </div>
-<script src="{{ "/bower_components/bLazy/blazy.min.js" | prepend: site.baseurl }}"></script>
-<script type="text/javascript">
-  ;(function() {
-    var bLazy = new Blazy({ offset: 250 });
-  })();
+<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+<script src="{{ "/bower_components/lozad/dist/lozad.min.js" | prepend: site.baseurl }}"></script>
+<script>
+    ;(function() {
+      const observer = lozad('.lozad', {
+          rootMargin: '50px 0px'
+      }); // lazy loads elements with default selector as '.lozad'
+      observer.observe();
+    })();
 </script>

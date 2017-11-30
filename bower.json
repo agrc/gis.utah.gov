@@ -9,7 +9,7 @@
   "keywords": [
     "jekyll"
   ],
-  "homepage": "https://github.com/agrc/website",
+  "homepage": "https://github.com/agrc/gis.utah.gov",
   "moduleType": [],
   "private": true,
   "ignore": [
@@ -20,10 +20,10 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "~4.5.0",
-    "list.js": "~1.2.0",
-    "bLazy": "blazy#~1.5.4",
-    "mustache.js": "^2.2.1"
+    "font-awesome": "~4.7.0",
+    "list.js": "~1.5.0",
+    "mustache.js": "^2.2.1",
+    "lozad": "^1.0.9"
   },
   "resolutions": {
     "font-awesome": "^4.6.1"

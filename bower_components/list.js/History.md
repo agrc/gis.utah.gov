@@ -1,6 +1,5 @@
-# Changelog
+# TODO
 
-### TODO
 - Add tests for custom event handlers. 27e2d6fdeee7090eb1342a108013db898fc29b96
 - Regex in search https://github.com/javve/list.js/issues/371
 - Keep original order?
@@ -12,8 +11,60 @@
   - https://github.com/javve/list.js/issues/316
   - https://github.com/javve/list.js/pull/301
 - Improve testability by decoupling things and make it possible to use require('') in tests
+- Add .remove() method to remove all listeners etc.
+- Example of more advanced filtering
+- Fix test suite
+- Example with multiple lists
 
-### 2016-02-27: 1.2.0
+# Changelog
+
+### 2017-01-29 v1.5.0
+- **[Feature]** Bundle fuzzySearch and pagination plugins into List.js  
+  [See commit →](https://github.com/javve/list.js/commit/2f5322fd139ee6f30cef3bb5e15d382ff29f9489)
+- **[Misc]** Switch from Grunt to Webpack and from Mocha to Jest  
+  [See commit →](https://github.com/javve/list.js/commit/8376ef01b1da4b6e60a7457d628d97a803a82e14)
+
+### 2017-01-19 v1.4.1
+- **[Bugfix]** Move string-natural-compare to dependencies instead of devDependencies
+  [See commit →](https://github.com/javve/list.js/commit/c17162b26fd5093d3ddde01e11a3f748310d993c)
+
+
+### 2017-01-15 v1.4.0
+- **[Bugfix/Feature]** Change natural-sort library to support custom alphabets
+and thereby handle JavaScripts unicode bugs like sorting ÅÄÖ in Swedish wrong.
+  [See commit →](https://github.com/javve/list.js/commit/81e1386bed88d1f932e729feca2b3649e489bdfe)
+
+### 2016-10-23 v1.3.0
+- **[Bugfix]** Make mkdir in build script OS agnostic
+  [See commit →](https://github.com/javve/list.js/commit/ba387125efddd7f5f4f8360bce516ae740cb5ae5)
+- **[Bugfix]** Make it possible to reset search columns
+  [See commit →](https://github.com/javve/list.js/commit/37edc1b98bf63a684d633f29e2f52106c21eaf7d)
+- **[Bugfix]** Allow empty list without template.
+  [See commit →](https://github.com/javve/list.js/commit/95329b945c64c0ad0693df120ef00547eac9b029)
+- **[Bugfix]** Make it possible to use <tr> as string template
+  [See commit →](https://github.com/javve/list.js/commit/38583e097cb75e369779b46c6129e1b8b8324f24)
+- **[Misc]** Update NaturalSort to 0.8.1
+  [See commit →](https://github.com/javve/list.js/commit/42d3db491801677c63238d5db3e0e9257087999a)
+- **[Misc]** Use local Browserify
+  [See commit →](https://github.com/javve/list.js/commit/83f6502dcea428fa2de2513d19ac71f82905ecb8)
+- **[Misc]** Add version to start of minified file
+  [See commit →](https://github.com/javve/list.js/commit/79daff8da51aa047aae5d31e0af12cb30b395048)
+- **[Misc]** Switch to GitHub pages for listjs.com
+  [See commit →](https://github.com/javve/list.js/commit/1af94012de89fd6bcf8446c31305ad517507c44b)
+
+### 2016-02-27: v1.2.0
+It's been two years since the last update of List.js. That is absolutely not ok
+and I'm very sorry that it has taken so long. I promise I'll do better in the future!
+
+Anyways, this release introduces a bunch of bug fixes and improvements, but most
+importantly: List.js now has support for data attributes PLUS all other attributes.
+[See an example]() and [read the docs](http://www.listjs.com/docs#example-6).
+
+Another noteworthy update is that I've left Component and moved back all utils
+to the core lib. Instead I'm using Browserify as module handler.
+
+I hope you'll like this update!
+
 - **[Misc]** Move form Component to Browserify
   [See commit →](https://github.com/javve/list.js/commit/58695c93849b78787d9cf78cbf9be20b01cdcc8a)
 - **[Misc]** Add tests to make sure List.js works with require.js
