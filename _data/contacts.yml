@@ -31,7 +31,7 @@ lidar_rivers:
     agency: AGRC
   - name: Buck Ehler
     email: BuckEhler@utah.gov
-    agency: DNR FFSL
+    agency: DNR
 contours:
   name: Zach Beck
   email: ZBeck@utah.gov
@@ -56,7 +56,6 @@ parcels:
   email: RKelson@utah.gov
   agency: AGRC
 lir_parcels:
-  name: Sean Fernandez
   email: SFernandez@utah.gov
   phone: 801-209-9359
   agency: AGRC
@@ -143,24 +142,24 @@ census:
   agency: AGRC
 tax:
   name: Terri Chidester
-  agency: Utah State Tax Commission
+  agency: Tax
   email: TChidester@utah.gov
 special_tax:
   name: Nick Kenczka
   email: NKenczka@utah.gov
-  agency: Utah State Tax Commission
+  agency: Tax
 oil_wells:
   name: Don Staley
   emal: DonStaley@utah.gov
-  agency: DNR-OGM
+  agency: DNR
 oil_fields:
   name: Brad Hill
   emal: BradHill@utah.gov
-  agency: DNR-OGM
+  agency: DNR
 air_quality:
   name: Whitney Oswald
   email: WOswald@utah.gov
-  agency: DAQ
+  agency: DEQ
 brownfields:
   name: Bill Rees
   email: BRees@utah.gov
@@ -207,38 +206,39 @@ ust:
   phone: 801-536-4152
   agency: DEQ
 drinking_water:
-  name: Harold Sandbeck
-  email: HaroldSandbeck@utah.gov
-  phone: 801-536-4152
+  name: Diedre Beck
+  email: DBeck@utah.gov
+  phone: 801-536-4201
   agency: DEQ
 aquifers:
   name: Diedre Beck
   email: DBeck@utah.gov
-  agency: DEQ Division of Drinking Water
+  phone: 801-536-4201
+  agency: DEQ
 landslides:
   name: Gordon Douglass
   email: GDouglass@utah.gov
   phone: 801-538-4810
-  agency: UGS
+  agency: DNR
 faults:
   name: Gordon Douglass
   email: GDouglass@utah.gov
   phone: 801-538-4810
-  agency: UGS
+  agency: DNR
 geochronology:
   name: Gordon Douglass
   email: GDouglass@utah.gov
   phone: 801-538-4810
-  agency: UGS
+  agency: DNR
 earthquakes:
   name: Gordon Douglass
   email: GDouglass@utah.gov
   phone: 801-538-4810
-  agency: UGS
+  agency: DNR
 water_related_land_use:
   name: Aaron Austin
   email: AaronAustin@utah.gov
-  agency: DWR
+  agency: DNR
 voting:
   name: Justin Lee
   email: JustinLee@utah.gov
@@ -250,10 +250,10 @@ roads:
   phone: 801-349-0039
 flood_areas:
    - name: Jamie Huff
-     agency: Utah Risk MAP
+     agency: DEM
      email: JHuff@utah.gov
    - name: Brooke Conner
-     agency: FEMA
+     agency: DEM
      email: brooke.conner@fema.dhs.gov
 uta:
   name: Sumer Ellis
@@ -261,17 +261,17 @@ uta:
   email: SEllis@rideuta.com
 ugs:
   name: Gordon Douglass
-  agency: UGS
+  agency: DNR
   email: GDouglass@utah.gov
   phone: 801-538-4810
 nhd:
   name: Lee Eschler
   email: LeeEschler@utah.gov
-  agency: DWR
+  agency: DNR
 source_water:
   name: Kate Johnson
   email: KJohnson@utah.gov
-  agrncy: DWR
+  agrncy: DEQ
 google_imagery:
   - name: Bert Granberg
     email: BGranberg@utah.gov
@@ -294,7 +294,7 @@ utah_mapping_emergency_technical_team:
     agency: Salt Lake County Emergency Management
   - name: Kate Smith
     email: KateSmith8@gmail.com
-    agency: the team
+    agency: Salt Lake Community College
 trails:
   name: Bert Granberg
   email: BGranberg@utah.gov
@@ -303,7 +303,7 @@ trails:
 wetlands:
   name: Ryhan Sempler
   email: RSempler@utah.gov
-  agency: UGS
+  agency: DNR
   phone: 801-537-3338
 license_manager:
   name: Michael Foulger
@@ -313,7 +313,7 @@ license_manager:
 protected_water:
   - name: Diedre Beck
     email: DBeck@utah.gov
-    agency: UDDW
+    agency: DEQ
   - name: Kate Johnson
     email: KJohnson@utah.gov
-    agency: UDDW
+    agency: DEQ
