@@ -59,4 +59,5 @@ The project partners include:
 - Idaho Department of Lands
 - Bear Lake Watch
 
-Please contact Bert Granberg [bgranberg@utah.gov](mailto:bgranberg@utah.gov) or Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) with questions.
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
+{{ contact | strip_newlines }}

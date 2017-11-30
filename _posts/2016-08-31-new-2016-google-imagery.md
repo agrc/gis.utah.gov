@@ -28,4 +28,5 @@ ArcMap users may need to clear the cache on the `utah` layer from Discover to se
 
 Are you not signed up for access to the Google imagery yet? Visit [the Google Imagery License page]({{ "/discover/license/" | prepend:site.baseurl }} "Google imagery license information").
 
-Please contact Bert Granberg [bgranberg@utah.gov](mailto:bgranberg@utah.gov) or Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) with questions.
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
+{{ contact | strip_newlines }}

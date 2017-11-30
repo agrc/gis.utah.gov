@@ -19,4 +19,4 @@ categories:
 <li>the valley floor and fault zones in Cache County, and</li>
 <li>the Bear Lake shoreline and fault zones in Rich County.</li>
 </ul>
-<p>Please contact <a href='mailto:bgranberg@utah.gov?subject=2015 Lidar'>Bert Granberg</a> or <a href='mailto:rkelson@utah.gov?subject=2015 Lidar'>Rick Kelson</a> with questions or interest in further participation. </p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>

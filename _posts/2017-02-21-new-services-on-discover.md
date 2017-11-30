@@ -24,7 +24,7 @@ To see these new enhancements you may need to _refresh_ the connection you use t
 right-click your connection to Discover in ArcCatalog and select `Refresh`. You might also want to clear your local cache.
 ArcMap users can go to the service’s `Layer Properties -> Cache` tab and select `Clear Local Cache Now`. Be patient
 as this could take several minutes. Another option is to completely clear your ArcMap cache by going
-to `Customize -> ArcMap Options -> Display Cache -> Clear Cache`.  
+to `Customize -> ArcMap Options -> Display Cache -> Clear Cache`.
 
 The service additions and changes are listed below. We also renamed most of the services. <i class="fa fa-exclamation-triangle"></i> **The renaming of the services should not have any effect on projects or applications that contained any of the services previous to the renaming.** The renaming is on the layer's display title only and does not have any effect on the urls or request parameters for the service.
 
@@ -41,4 +41,5 @@ The service additions and changes are listed below. We also renamed most of the 
 
 More information about the services from Discover can be found on the page [Using SGID Base Map & Imagery Services in ArcMap]({{"/data/sgid-base-map-services-arcmap/" | prepend:site.baseurl}}).
 
-If you have questions contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov) at (801-538-3237).
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.discover %}{% endcapture %}
+{{ contact | strip_newlines }}

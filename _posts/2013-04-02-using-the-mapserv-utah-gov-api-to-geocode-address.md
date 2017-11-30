@@ -19,4 +19,4 @@ categories:
 <p>The basic geocoding service will accept 5 digit zip code or city names using the spelling convention used on the state highway map (ex. Salt Lake City, Orem, Heber City, Saint George).</p>
 <p>Sample python code for geocoding a table of addresses is available via <a href="https://gist.github.com/BGranberg/5272025">github</a>.</p>
 <p>Register to receive an api username/key at: <a href="http://developer.mapserv.utah.gov/AccountAccess">http://developer.mapserv.utah.gov/AccountAccess</a></p>
-<p>Please send feedback to <a href="mailto:agrc@utah.gov">agrc@utah.gov</a>.</p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>

@@ -21,4 +21,4 @@ categories:
 <li><strong><a href="{{ "/data/aerial-photography/2014-naip-1-meter-orthophotography/" | prepend: site.baseurl }}" target="_blank">Visit NAIP2014 Webpage</a></strong></li>
 <li><strong><a href="http://raster.utah.gov/?cat=NAIP%202014%20(1m)" target="_blank">Retrieve 2014 NAIP via Interactive Map</a></strong></li>
 </ul>
-<td>If you have any questions contact <a href="mailto:rkelson@utah.gov"><strong>Rick Kelson</strong></a> at (801-538-3237).</td>
+<td>{% include contact.html subject=page.title contact=site.data.contacts.imagery %}</td>
