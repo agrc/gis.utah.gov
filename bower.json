@@ -22,9 +22,5 @@
   "dependencies": {
     "font-awesome": "~4.7.0",
     "lozad": "^1.0.9"
-  },
-  "devDependencies": {
-    "list.js": "~1.5.0",
-    "mustache.js": "^2.2.1"
   }
 }
