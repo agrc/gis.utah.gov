@@ -80,12 +80,12 @@ The include has a few properties:
 - **hide-punctuation**: set this to `true` if you would like to remove the `.` at the end of the text
 
 - markdown
-```md
+```liquid
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc %}{% endcapture %}
 {{ contact | strip_newlines }}
 ```
--html
-```html
+- html
+```liquid
 {% include contact.html subject=page.title contact=site.data.contacts.agrc %}
 ```
 
