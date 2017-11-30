@@ -56,6 +56,7 @@ parcels:
   email: RKelson@utah.gov
   agency: AGRC
 lir_parcels:
+  name: Sean Fernandez
   email: SFernandez@utah.gov
   phone: 801-209-9359
   agency: AGRC
@@ -293,7 +294,7 @@ utah_mapping_emergency_technical_team:
     agency: Salt Lake County Emergency Management
   - name: Kate Smith
     email: KateSmith8@gmail.com
-    agency: Salt Lake Community College
+    agency: the team
 trails:
   name: Bert Granberg
   email: BGranberg@utah.gov
