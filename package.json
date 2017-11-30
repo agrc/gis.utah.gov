@@ -28,5 +28,8 @@
     "grunt-jekyll": "^0.4.3",
     "grunt-newer": "^1.1.1",
     "grunt-replace": "^1.0.1"
+  },
+  "dependencies": {
+    "lozad": "^1.0.9"
   }
 }

@@ -5,7 +5,7 @@
   "authors": [
     "Jonny Strömberg <jonny.stromberg@gmail.com>"
   ],
-  "description": "The perfect library for adding search, sort, filters and flexibility to tables, lists and various HTML elements. Built to be invisible and work on existing HTML",
+  "description": "The perfect library for lists. Supports search, sort, filters and flexibility. Built to be invisible and work on existing HTML",
   "keywords": [
     "list",
     "search",
@@ -24,15 +24,14 @@
     "test",
     "tests"
   ],
-  "version": "1.2.0",
-  "_release": "1.2.0",
+  "version": "1.5.0",
+  "_release": "1.5.0",
   "_resolution": {
     "type": "version",
-    "tag": "v1.2.0",
-    "commit": "cff85dee85cb24c2618533d28201981ee8a10690"
+    "tag": "v1.5.0",
+    "commit": "9c8ef3cc224bb6a3a0c7cd2ef70d79e8adb339c3"
   },
-  "_source": "git://github.com/javve/list.js.git",
-  "_target": "~1.2.0",
-  "_originalSource": "list.js",
-  "_direct": true
+  "_source": "https://github.com/javve/list.js.git",
+  "_target": "~1.5.0",
+  "_originalSource": "list.js"
 }
