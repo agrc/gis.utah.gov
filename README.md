@@ -69,5 +69,25 @@ _**bold italics**_
 {: .css-class-name}
 ```
 
+#### contact information
+
+Contacts are managed in a [yml file](./_data/contacts.yml). **Please do not put email addresses directly into content**.
+
+The include has a few properties:
+- **subject**: the subject of the email link. Most of the time using `page.title` is good enough™
+- **contact**: the contact in the yml file to create
+- **text**: update this to change the default text generated
+- **hide-punctuation**: set this to `true` if you would like to remove the `.` at the end of the text
+
+- markdown
+```md
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc %}{% endcapture %}
+{{ contact | strip_newlines }}
+```
+-html
+```html
+{% include contact.html subject=page.title contact=site.data.contacts.agrc %}
+```
+
 - [Kramdown reference](http://kramdown.gettalong.org/quickref.html)
 - [Jekyll Cheat Sheat](http://cheat.jekyll.tips/)
