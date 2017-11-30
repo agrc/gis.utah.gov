@@ -1,13 +1,13 @@
 import os
-import sys
-import re
 import pprint
+import re
 import shutil
+import sys
 
-known_extensions = ['.png_backup', '.jpg', '.xml', '.idx', '.jpeg',
-                    '.bak', '.sample', '.gif', '.jpg_backup', '.svg', '.pack',
-                    '.doc', '.bmp', '.png', '.css', '.m4v', '.ico',
-                    '.txt', '.pdf']
+known_extensions = [
+    '.png_backup', '.jpg', '.xml', '.idx', '.jpeg', '.bak', '.sample', '.gif', '.jpg_backup', '.svg', '.pack', '.doc', '.bmp', '.png', '.css', '.m4v', '.ico',
+    '.txt', '.pdf'
+]
 pattern = '["\'][/]?((?:images|downloads)+[^"\']+?(?:{}))["\'?]'.format('|'.join(known_extensions))
 
 
@@ -52,6 +52,7 @@ def one_offs(walk_dir):
         if os.path.exists(item):
             os.makedirs(destination)
             shutil.move(item, destination)
+
 
 if __name__ == '__main__':
     # replace(sys.argv[1])

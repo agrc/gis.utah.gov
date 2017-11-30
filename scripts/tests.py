@@ -1,9 +1,9 @@
 import unittest
+from os.path import dirname, join
+
 import cleanser
 import UpdateYaml
 import yaml
-from os.path import join
-from os.path import dirname
 
 #: run with python -m unittest discover scripts
 

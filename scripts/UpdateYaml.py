@@ -7,6 +7,7 @@ A module that strips out the old wordpress yaml items
 '''
 import os
 import sys
+
 import ruamel.yaml as yaml
 
 unused_keys = ['author_login', 'author_email', 'wordpress_id', 'wordpress_url', 'date_gmt']
@@ -27,7 +28,7 @@ useless_tags = [
 
 def pluck_content(f):
     #: file should already be seeked to last yaml separater
-    pointer = f.tell()
+    f.tell()
 
     #: create generator to read to the end of the file
     readline = iter(f.readline, '')
