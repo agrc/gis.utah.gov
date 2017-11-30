@@ -36,11 +36,11 @@ During the Fall of 2016 AGRC and the Utah Geological Survey acquired [~205 squar
     </strong>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/forge-2017/FORGE_Reports.zip" target="_blank">Reports</a> and
-      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/forge-2017/FORGE_Metadata.zip" target="_blank">Metadata</a>
+    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/forge-2016/FORGE_Reports.zip" target="_blank">Reports</a> and
+      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/forge-2016/FORGE_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/forge-2017/FORGE_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/forge-2016/FORGE_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 
