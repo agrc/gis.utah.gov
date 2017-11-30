@@ -212,7 +212,7 @@ FacilityUST:
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirollwaste.png" | prepend: site.baseurl }}" alt="Low Level Waste" />
     <p>Environment.DWMRCLLRWUMillFacilities contains sites that treat or dispose of radioactive waste or process uranium ore.</p>
-    <p><strong>Contact</strong>: tball@utah.gov</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.waste %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="http://www.hazardouswaste.utah.gov/">Utah Department of Environmental Quality: Division of Solid & Hazardous Waste</a>

@@ -265,7 +265,7 @@ ugs:
   phone: 801-538-4810
 nhd:
   name: Lee Eschler
-  email: LEschler@utah.gov
+  email: LeeEschler@utah.gov
   agency: DWR
 source_water:
   name: Kate Johnson
@@ -294,3 +294,25 @@ utah_mapping_emergency_technical_team:
   - name: Kate Smith
     email: KateSmith8@gmail.com
     agency: Salt Lake Community College
+trails:
+  name: Bert Granberg
+  email: BGranberg@utah.gov
+  phone: 801-538-3563
+  agency: AGRC
+wetlands:
+  name: Ryhan Sempler
+  email: RSempler@utah.gov
+  agency: UGS
+  phone: 801-537-3338
+license_manager:
+  name: Michael Foulger
+  email: MichaelFoulger@utah.gov
+  agency: AGRC
+  phone: 801-652-2258
+protected_water:
+  - name: Diedre Beck
+    email: DBeck@utah.gov
+    agency: UDDW
+  - name: Kate Johnson
+    email: KJohnson@utah.gov
+    agency: UDDW

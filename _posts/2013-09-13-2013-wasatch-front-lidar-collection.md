@@ -43,4 +43,4 @@ categories:
 <li>Intensity Images (0.5 meter resolution GeoTIFFs)</li>
 <li>FGDC Metadata</li>
 </ul>
-<p>A shapefile of the project area can be downloaded <a href="ftp://ftp.agrc.utah.gov/Temp/Lidar_2013/Utah_Lidar_2013.zip">here</a>. Please contact AGRC's project manager, <a href="mailto:rkelson@utah.gov">Rick Kelson</a>, with any questions.</p>
+<p>A shapefile of the project area can be downloaded <a href="ftp://ftp.agrc.utah.gov/Temp/Lidar_2013/Utah_Lidar_2013.zip">here</a>. {% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>

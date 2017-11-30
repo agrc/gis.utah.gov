@@ -31,6 +31,4 @@ For Username use the one created when the account was purchased.<br />
 For Password use anything you would like.</p>
 <p>After these 3 steps are complete your account with Trimple Pivot is created, then within 24 hours you will receive an email confirming that your account has been approved followed by another email notifying you that your subscription has also been created. Once you receive these emails the account is active and you are ready to configure your data collector.</p>
 <p>Set up your data collector exactly like the old VRS configuration, but change the IP Address to 168.179.231.9 and enter your new Username and Password.</p>
-<p>If you have any problems or questions please feel free to contact one of us.</p>
-<p>Sean Fernandez sfernandez@utah.gov  801-209-9359<br />
-Mike Heagin  mheagin@utah.gov  801-537-9296</p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.turn %}</p>

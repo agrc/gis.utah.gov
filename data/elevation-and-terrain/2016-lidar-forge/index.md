@@ -25,7 +25,9 @@ categories: []
 
 [![Project area map]({{"/images/lidar_forge_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_forge_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-During the Fall of 2016 AGRC and the Utah Geological Survey acquired [~205 square miles]({{ "/images/lidar_forge_coverage.png/" | prepend: site.baseurl }}) of 8 points per meter Quality Level 1 LiDAR of The Frontier Observatory for Research in Geothermal Energy ([FORGE](https://energy.gov/eere/forge/forge-home "more information")) area around Milford, Utah in Beaver and Millard Counties in western Utah. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point cloud are also available [by request](mailto:rkelson@utah.gov) and eventually from [Open Topography](http://www.opentopography.org/). This elevation data was collected between October 26 and November 3, 2016 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation text='by request' hide-punctuation=true %}{% endcapture %}
+
+During the Fall of 2016 AGRC and the Utah Geological Survey acquired [~205 square miles]({{ "/images/lidar_forge_coverage.png/" | prepend: site.baseurl }}) of 8 points per meter Quality Level 1 LiDAR of The Frontier Observatory for Research in Geothermal Energy ([FORGE](https://energy.gov/eere/forge/forge-home "more information")) area around Milford, Utah in Beaver and Millard Counties in western Utah. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point cloud are also available {{ contact | strip_newlines }} and eventually from [Open Topography](http://www.opentopography.org/). This elevation data was collected between October 26 and November 3, 2016 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
@@ -48,4 +50,3 @@ This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) 
 
 {% capture elevation %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
 {{ elevation | strip_newlines }}
-

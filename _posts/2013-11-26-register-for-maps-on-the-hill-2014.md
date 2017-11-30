@@ -31,4 +31,4 @@ Maps can be of any topic.<br />
 This event is not a product/services marketing opportunity, it’s purpose is to show elected officials the cool maps that people in Utah are making.</p>
 <p>To participate, all you need to do now is register. This event is free of charge. </a><strong>Register <a href="https://docs.google.com/a/utah.gov/spreadsheet/viewform?usp=drive_web&formkey=dG4ta3dQY3JpWkpCajhsbWNRRjlsT3c6MA#gid=0">here</a>.</strong> You don't need to know what specific map(s) you are going to present until early January, but be thinking about what you or your organization is going to bring, how much space you'll need, and what supplies you'll need UGIC to provide (easels, tables, etc).</p>
 <p><strong><a href="https://docs.google.com/a/utah.gov/spreadsheet/viewform?usp=drive_web&formkey=dG4ta3dQY3JpWkpCajhsbWNRRjlsT3c6MA#gid=0">Registration closes December 20, 2013.</a></strong></p>
-<p>Contact  agrc@utah.gov or  (801)538-3037 with any questions or comments. Thank you for registering! </p>
+<p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %} Thank you for registering! </p>
