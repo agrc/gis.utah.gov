@@ -21,11 +21,10 @@
   ],
   "dependencies": {
     "font-awesome": "~4.7.0",
-    "list.js": "~1.5.0",
-    "mustache.js": "^2.2.1",
     "lozad": "^1.0.9"
   },
-  "resolutions": {
-    "font-awesome": "^4.6.1"
+  "devDependencies": {
+    "list.js": "~1.5.0",
+    "mustache.js": "^2.2.1"
   }
 }
