@@ -1,10 +1,16 @@
-import gspread
-import sys
-import re
+#!/usr/bin/env python
+# * coding: utf8 *
+'''
+datatable.py
+
+A module that reads the stewardship spreadsheet and builds the sgid index page
+'''
+
 from collections import OrderedDict
-from json import load, dumps
 from os import rename
-from os.path import join, dirname
+from os.path import dirname, join
+
+import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from pydash.strings import start_case
 
@@ -62,13 +68,10 @@ def munge_data(item, i, indices):
 
         return '<a href="{}" class="pull-right"><i class="fa fa-globe fa-fw" alt="website link"></i></a>'.format(value.strip())
 
-    return OrderedDict([
-        ('category', utf8_encode(category)),
-        ('name', should_link(start_case(name.replace('_', '')))),
-        ('agency', utf8_encode(item[indices['data_source']])),
-        ('description', utf8_encode(item[indices['description']])),
-        ('service', ''.join([endpoint_link(item[indices['endpoint']]), webapp_link(item[indices['web_app']])]))
-    ])
+    return OrderedDict([('category', utf8_encode(category)), ('name', should_link(start_case(name.replace('_', '')))),
+                        ('agency', utf8_encode(item[indices['data_source']])), ('description', utf8_encode(item[indices['description']])), ('service', ''.join(
+                            [endpoint_link(item[indices['endpoint']]), webapp_link(item[indices['web_app']])]))])
+
 
 def get_sheet_data(gc, sheet_id, worksheet_id):
     worksheet = gc.open_by_key(sheet_id).worksheet(worksheet_id)
@@ -87,6 +90,7 @@ def get_sheet_data(gc, sheet_id, worksheet_id):
     }
 
     return [munge_data(item, i, indices) for i, item in enumerate(data)]
+
 
 def create(data):
     categories = list(set([x['category'] for x in data]))
@@ -112,7 +116,8 @@ title: SGID Index
 {}
             </tr>
         </thead>
-        <tbody class='list'>'''.format('\n'.join(['                <th scope="col"><span class="sort" data-sort="{0}">{0}</span></th>'.format(key) for key in item.keys()]))
+        <tbody class='list'>'''.format('\n'.join(
+                ['                <th scope="col"><span class="sort" data-sort="{0}">{0}</span></th>'.format(key) for key in item.keys()]))
             once = False
         html += '''
             <tr>
@@ -126,6 +131,7 @@ title: SGID Index
 '''
 
     return html
+
 
 if __name__ == '__main__':
     scope = ['https://spreadsheets.google.com/feeds']
