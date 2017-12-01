@@ -74,7 +74,7 @@ A semi acceptable fix to this problem would be to inspect the parameters sent to
 
 `python geocode.py milepost 300 15N`
 
-The python community has created many useful modules that we all can `pip` or `conda` install and start using. Command line interface modules are no different. There are a [lot](https://pypi.python.org/pypi/clint/) of [command](http://click.pocoo.org/) [line](https://pypi.python.org/pypi/plac) [interface](http://docs.openstack.org/developer/cliff/) [modules](http://builtoncement.com/) because there are a lot of opinions on how they should work.
+The python community has created many useful modules that we all can `pip` or `conda` install and start using. Command Line Interface (CLI) modules are no different. There are a [lot](https://pypi.python.org/pypi/clint/) of [command](http://click.pocoo.org/) [line](https://pypi.python.org/pypi/plac) [interface](http://docs.openstack.org/developer/cliff/) [modules](http://builtoncement.com/) because there are a lot of opinions on how they should work.
 
 AGRC has been using [docopt](http://docopt.org/) and really enjoying it. It is a lightweight module that uses POSIX style comments to define how your console application can be used. You get a CLI and documentation!
 
@@ -141,7 +141,7 @@ docopt will generate a python dictionary from the inputs.
 }
 ```
 
-A developer can inspect what command was requested by checking the boolean value for the command name in the dictionary. `address` is `True` so know we know to look for the street and zone values. The street can be rebuilt by joining the contents of the `<street>` array with a space and the zone can be found in `<zone>`. The geocoding will use centerlines as well as address points because `--address-points-only` is `False`.
+A developer can inspect what command was requested by checking the boolean value for the command name in the dictionary. `address` is `True` so now we know to look for the street and zone values. The street can be rebuilt by joining the contents of the `<street>` array with a space and the zone can be found in `<zone>`. The geocoding will use centerlines as well as address points because `--address-points-only` is `False`.
 
 Hopefully, you are beginning to see the power and flexibility that can be achieved with a command line application. Using doctopt's powerful syntax, a developer can help the users of their applications discover everything you have made available. It will help users choose all of the options that are applicable and prompt them with the proper syntax when a mistake is made.
 
