@@ -218,24 +218,24 @@ aquifers:
   agency: DEQ
 landslides:
   name: Gordon Douglass
-  email: GDouglass@utah.gov
+  email: gdouglass@utah.gov
   phone: 801-538-4810
-  agency: DNR
+  agency: Utah Geologic Survey(UGS)
 faults:
   name: Gordon Douglass
-  email: GDouglass@utah.gov
+  email: gdouglass@utah.gov
   phone: 801-538-4810
-  agency: DNR
+  agency: Utah Geologic Survey(UGS)
 geochronology:
   name: Gordon Douglass
-  email: GDouglass@utah.gov
+  email: gdouglass@utah.gov
   phone: 801-538-4810
-  agency: DNR
+  agency: Utah Geologic Survey(UGS)
 earthquakes:
   name: Gordon Douglass
-  email: GDouglass@utah.gov
+  email: gdouglass@utah.gov
   phone: 801-538-4810
-  agency: DNR
+  agency: Utah Geologic Survey(UGS)
 water_related_land_use:
   name: Aaron Austin
   email: AaronAustin@utah.gov
