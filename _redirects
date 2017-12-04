@@ -131,3 +131,9 @@ documentation: https://www.netlify.com/docs/redirects/
 /hro2006/                                                                                                 /data/aerial-photography/hro/                                                 301
 /imagery/                                                                                                 /data/aerial-photography/                                                     301
 /vector/                                                                                                  /data/                                                                        301
+/agrc_sgid/*                                                                                              /data/                                                                        301
+/sgid-vector-download/*                                                                                   /data/                                                                        301
+/arcgis/*                                                                                                 /developer/                                                                   301
+/code-*                                                                                                   /developer/                                                                   301
+/agrc_contact/*                                                                                           /about/                                                                       301
+/aerial-photography/*                                                                                     /data/aerial-photography/                                                     301
