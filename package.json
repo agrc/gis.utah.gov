@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agrc/website.git"
+    "url": "git+https://github.com/agrc/gis.utah.gov.git"
   },
   "keywords": [
     "jekyll"
@@ -16,9 +16,9 @@
   "author": "AGRC",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/agrc/website/issues"
+    "url": "https://github.com/agrc/gis.utah.gov/issues"
   },
-  "homepage": "https://github.com/agrc/website#readme",
+  "homepage": "https://github.com/agrc/gis.utah.gov#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-htmlmin": "^2.0.0",
