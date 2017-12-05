@@ -263,7 +263,7 @@ uta:
 ugs:
   name: Gordon Douglass
   agency: DNR
-  email: GDouglass@utah.gov
+  email: gdouglass@utah.gov
   phone: 801-538-4810
 nhd:
   name: Lee Eschler
@@ -318,3 +318,8 @@ protected_water:
   - name: Kate Johnson
     email: KJohnson@utah.gov
     agency: DEQ
+geochronology_database:
+  name: Steve Bowman
+  agency: UGS
+  email: SteveBowman@utah.gov
+  phone: 801-537-3304
