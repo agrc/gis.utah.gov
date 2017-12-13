@@ -151,11 +151,11 @@ special_tax:
   agency: Tax
 oil_wells:
   name: Don Staley
-  emal: DonStaley@utah.gov
+  email: DonStaley@utah.gov
   agency: DNR
 oil_fields:
   name: Brad Hill
-  emal: BradHill@utah.gov
+  email: BradHill@utah.gov
   agency: DNR
 air_quality:
   name: Whitney Oswald
