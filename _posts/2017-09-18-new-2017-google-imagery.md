@@ -41,4 +41,4 @@ If you have not signed up for access to the Google imagery visit the [Discover -
 
 #### Sponsoring Organizations (2017 Updates):
 
-({{"/images/ThankYou2017Partners_Large.png" | prepend:site.baseurl}})
+![partners]({{"/images/ThankYou2017Partners_Large.png" | prepend:site.baseurl}})
