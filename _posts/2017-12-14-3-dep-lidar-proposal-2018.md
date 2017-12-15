@@ -14,12 +14,14 @@ tags:
 - 3dep
 ---
 
-Earlier this November, a partnership of Utah organizations submitted a proposal to the USGS 3D Elevation Program (3DEP) for 2018 Lidar acquisition projects.
+In October, a partnership of Utah organizations submitted a proposal to the USGS 3D Elevation Program (3DEP) for 2018 Lidar acquisition projects. After preliminary discussions with USGS, AGRC has submitted a modified proposal on behalf of the partnership, which made several significant changes.
 
-While we're months away from any preliminary or final funding decisions, the partners are sharing [this updated proposed project area map]({{ "/images/3DEP_Lidar_Proposal_2018.png" | prepend: site.baseurl }})
- in advance, in an effort to promote coordination and avoid duplication of effort.
+The largest change was made to reflect the commitment that USGS has made to lead and fully fund the acquisition of the Uintah Basin and Heber Valley areas that were included in Utah's proposal. The boundaries of these two areas were adjusted to fit the new 3DEP 1 kilometer tiling grid. The boundaries of the remaining adjacent project areas in Utahs's 3DEP proposal were also similarly adjusted. Additionally, the boundary for the areas to be contracted by USGS were modified for acquisition efficiency, including the addition of Dinosaur National Monument.
 
-The proposed areas break down to the following square mileages by USGS quality levels (QL1-8ppm | QL2-2ppm):
+It's important to keep in mind that we're still a month or two away from any preliminary or final funding decisions on Utah's proposal. Eggs should never be counted as chickens. However, the Utah partnership is sharing [this updated proposed project area map]({{ "/images/3DEP_Lidar_Proposal_2018.png" | prepend: site.baseurl }})
+ in advance, in an effort to promote coordination and avoid potential duplication of effort in these areas.
+
+The proposed areas break down to the following square mileages by USGS quality levels (QL1 - 8 points per meter | QL2 - 2 points per meter):
 [![3DEP Proposal]({{"/images/3DEP_Lidar_Proposal_2018_sm.png" | prepend:site.baseurl}} "2018 3DEP Lidar Proposal A - click for larger image")]({{"/images/3DEP_Lidar_Proposal_2018.png" | prepend:site.baseurl}}){:.inline-text-right}
 -	QL1 - 1,892
 -	QL2 - 7,018
