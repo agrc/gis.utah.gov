@@ -14,7 +14,7 @@ tags:
 - 3dep
 ---
 
-In October, a partnership of Utah organizations submitted a proposal to the USGS 3D Elevation Program (3DEP) for 2018 Lidar acquisition projects. After preliminary discussions with USGS, AGRC has submitted a modified proposal on behalf of the partnership, which made several significant changes.
+In October, a partnership of Utah organizations submitted a proposal to the USGS 3D Elevation Program (3DEP) for 2018 Lidar acquisition projects. After preliminary discussions with USGS, AGRC has submitted a modified proposal on behalf of the partnership, which made several significant changes. Partners include: Utah Geological Survey, Utah Division of Emergency Management, Utah Division of Forestry, Fire and State Lands, Natural Resources Conservation Service, FEMA, US Forest Service, Tooele Army Depot, National Parks Service, Moab, and three ski areas.
 
 The largest change was made to reflect the commitment that USGS has made to lead and fully fund the acquisition of the Uintah Basin and Heber Valley areas that were included in Utah's proposal. The boundaries of these two areas were adjusted to fit the new 3DEP 1 kilometer tiling grid. The boundaries of the remaining adjacent project areas in Utahs's 3DEP proposal were also similarly adjusted. Additionally, the boundary for the areas to be contracted by USGS were modified for acquisition efficiency, including the addition of Dinosaur National Monument.
 
