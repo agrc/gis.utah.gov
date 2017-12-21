@@ -1,0 +1,34 @@
+---
+status: publish
+layout: page_notitle
+author:
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
+tags: []
+published: true
+date: 2017-12-21 15:18:09 -0700
+title: Vehicle Collision Mapping
+categories:
+  - Developer
+---
+<div class="application">
+  <h3>Tools for visualizing and analyzing vehicle collisions</h3>
+  <h2>Crash Mapping</h2>
+  <div class="application__partners">In partnership with Highway Patrol, Deparment of Public Safety, UDOT</div>
+  <div class="application__links">
+    <a class="application__url" href="https://crashmapping.utah.gov">crashmapping.utah.gov</a>
+    <a class="application__download" href="https://drive.google.com/a/utah.gov/uc?id=18a9jKmFbq2_0zvY9aN5jdMpof5gE0xSG&export=download">Download Application Data</a>
+  </div>
+</div>
+<figure class="align-center">
+  <img src="crash-mapping.png" alt="initial view of application" width="1423" height="579">
+  <figcaption>Easy to understand point clusters with contributing factor filters</figcaption>
+</figure>
+<h3>Why</h3>
+<p>The Crash Studies Team of the Traffic & Safety Division maintains a detailed database of crash statistics for all public roadways within Utah. These statistics are used to identify safety issues, prioritize potential safety projects, and allocate limited funding to the locations most in need of improvements.</p>
+<h3>Data Origination</h3>
+<p>Every time there is a collision on Utahs' roads, the Utah Highway Patrol respond. They capture detailed information about many contributing factors of the incident in a report. The report gets processed by the Traffic Records Program in the Department of Public Safety. Crash study engineers in the Traffic and Safety Division of UDOT process the report to enhance and reconcile any issues with the data in the report. UDOT pushes updates of the data after a thourough review process to a secure location within DTS for use in the crash mapping application. forklift processes the data, transforming it into an easy to query and visualize format for the web app.</p>
+<h3>Overcoming Data Challenges</h3>
+<p>Visualizing vehicle crashes in Utah presents some fun challenges. Unfortunately, high volumes of vehicle collisions take place on Utahs roads annually and the crash mapping application displays data for <em>multiple</em> years. The best technique to visually comprehend massive amounts of point data is to cluster the points. This process creates one point which consumes the other points near it. Clustering <em>drastically</em> reduces the number of points visible making it easier to understand what you are looking at.</p>
+<p>In order to accurately create the point clusters, <strong>all</strong> of the point data is required. Currently this is millions of points and growing. Optimizing the point data for clustering while still enabling the collision information to be quickly retreived and filtered was a challenge. To overcome this challenge, AGRC created the absolute minimum required information in a json file. The file contains the primary key of the collision record and its' generalized geometry. The clustering system uses the gereralized geometry to create accurate point clusters. A feature service, acting as an operational layer, allows the application to query specific records using the primary key and retreive finer grain details about the crash.</p>
+<p>Filtering of the collision data consists of a query to the feature service and a resulting array of primary keys being sent to the clustering engine. <strong>The collision geometries are only sent to the client once</strong>. This creates a <em>slower time</em> to first interactivity, but the subsequent quering and filtering are <em>super</em> fast.</p>
