@@ -3,27 +3,23 @@
     & h3 {
         margin: 0;
         padding: 0;
-        padding-top: .5em;
     }
-    & h2 {
+    & h1 {
         margin: 0;
         padding: 0;
+        padding-top: .5em;
     }
     &__partners {
         text-transform: uppercase;
         color: rgba(0,0,0,0.48);
     }
     &__links {
+        display: flex;
+        justify-content: space-around;
         max-width: 75%;
         padding-bottom: 1em;
         margin-left: auto;
         margin-right: auto;
-    }
-    &__url {
-        float: left;
-    }
-    &__download {
-        float: right;
     }
     &-figure {
         &--align-center {
@@ -39,22 +35,18 @@
         }
         &__image {
             max-width: 100%;
-            margin: 0 50px;
             height: auto;
             display: inline-block;
             vertical-align: top;
         }
     }
     @include media-query($on-medium) {
-        &__url, &__download {
-            float: none;
-            display: block;
-        }
         &__partners {
             font-size: .8em;
         }
         &__links {
             padding: 0;
+            flex-direction: column;
         }
     }
 }
