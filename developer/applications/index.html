@@ -1,6 +1,6 @@
 ---
 status: publish
-layout: page
+layout: page_notitle
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
@@ -11,49 +11,108 @@ tags:
 published: true
 date: 2017-10-16 16:47:23 -0600
 title: Web Application Overview
-categories: []
+categories:
+  - Developer
 ---
-{% include table_overview.html name="Web Applications" %}
+<h6 class="text-center">Web Application Resources</h6>
+<table>
+  <thead>
+    <tr>
+      <th width="25%" scope="col">Product Name</th>
+      <th scope="col">Tech</th>
+      <th scope="col">Steward(s)</th>
+      <th width="40%" scope="col">Description</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td colspan="4">
+        <em>click a product name for more information and download links</em>
+      </td>
+    </tr>
+  </tfoot>
   <tbody>
     <tr>
       <td>Atlas</td>
-      <td>Web Application</td>
+      <td>esrijs WebAPI Discover</td>
       <td>AGRC</td>
       <td>The Utah Atlas with helpful labels and popups when points are clicked on the map.</td>
     </tr>
     <tr>
-      <td>Watershed Restoration Initiative</td>
-      <td>Web Application</td>
-      <td>AGRC, DNR, and DWR</td>
+      <td>
+        <figure>
+          <a href="https://wri.utah.gov">
+            <img class="outline" alt="WRI (DNR-DWR)" src="{{ "/images/wri_utah_gov.png" | prepend: site.baseurl }}" />
+          </a>
+          <figcaption class="application-figure__caption">Watershed Restoration Initiative</figcaption>
+        </figure>
+      </td>
+      <td>esrijs WebAPI Discover ASP.NET WebAPI</td>
+      <td>AGRC DNR DWR</td>
       <td>The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</td>
     </tr>
     <tr>
-      <td><a href="vehicle-collision">Vehicle Collision Map</a></td>
-      <td>Web Application</td>
-      <td>AGRC, DPS, and UDOT</td>
+      <td>
+        <figure>
+          <a href="vehicle-collision">
+            <img class="outline" alt="Crash Map (DPS / UDOT)" src="{{ "/images/crashmapping_utah_gov.png" | prepend: site.baseurl }}" />
+          </a>
+          <figcaption class="application-figure__caption">Vehicle Collision Map</figcaption>
+        </figure>
+      </td>
+      <td>esrijs Discover</td>
+      <td>AGRC DPS UDOT</td>
       <td>A statewide map of vehicle crashes, reported across all jurisdictions, that allows dynamic filtering for time, date, cause, severity, etc.</td>
     </tr>
     <tr>
-      <td>Economic Development Map</td>
-      <td>Web Application</td>
-      <td>AGRC and GOED</td>
+      <td>
+        <figure>
+          <a href="https://locate.utah.gov/">
+            <img class="outline" alt="locate.utah.gov (GOED)" src="{{ "/images/locate_utah_gov.png" | prepend: site.baseurl }}" />
+          </a>
+          <figcaption class="application-figure__caption">Economic Development Map</figcaption>
+        </figure>
+      </td>
+      <td>esrijs WebAPI Discover</td>
+      <td>AGRC GOED</td>
       <td>Utah's Economic Development Map depicts the landscape of what's important to businesses considering relocating to Utah.</td>
     </tr>
     <tr>
-      <td>Environmental Interactice map</td>
-      <td>Web Application</td>
-      <td>AGRC and DEQ</td>
+      <td>
+        <figure>
+          <a href="https://enviro.deq.utah.gov/">
+            <img class="outline" alt="Environmental Map (DEQ)" src="{{ "/images/deq_utah_gov.png" | prepend: site.baseurl }}" />
+          </a>
+          <figcaption class="application-figure__caption">Environmental Interactice map</figcaption>
+        </figure>
+      </td>
+      <td>esrijs WebAPI Discover ASP.NET WebAPI</td>
+      <td>AGRC DEQ</td>
       <td>Search for site-specific information relating to DEQ programs including regulated environmental sites, facilities, and designations.</td>
     </tr>
     <tr>
-      <td>Raster Data Discovery</td>
-      <td>Web Application</td>
+      <td>
+        <figure>
+          <a href="https://raster.utah.gov/">
+            <img class="outline" alt="SGID Raster Search (AGRC)" src="{{ "/images/raster_utah_gov.png" | prepend: site.baseurl }}"/>
+          </a>
+          <figcaption class="application-figure__caption">Raster Data Discovery</figcaption>
+        </figure>
+      </td>
+      <td>esrijs WebAPI Discover Image Server</td>
       <td>AGRC</td>
       <td>Download all of the imagery, elevation, lidar, and scanned maps available from Utah's SGID.</td>
     </tr>
     <tr>
-      <td>State Parcel Map</td>
-      <td>Web Application</td>
+      <td>
+        <figure>
+          <a href="http://parcels.utah.gov/">
+            <img class="outline" alt="SGID Parcel Viewer (AGRC)" src="{{ "/images/parcels_utah_gov.png" | prepend: site.baseurl }}" />
+          </a>
+          <figcaption class="application-figure__caption">State Parcel Map</figcaption>
+        </figure>
+      </td>
+      <td>esrijs WebAPI Discover</td>
       <td>AGRC</td>
       <td>Zoom in to view parcel boundaries and basic attributes as assembled statewide by AGRC, in coordination with County Recorders.</td>
     </tr>
