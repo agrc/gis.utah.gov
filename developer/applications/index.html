@@ -18,10 +18,9 @@ categories:
 <table>
   <thead>
     <tr>
-      <th width="25%" scope="col">Product Name</th>
-      <th scope="col">Tech</th>
-      <th scope="col">Steward(s)</th>
-      <th width="40%" scope="col">Description</th>
+      <th width="225px" scope="col">Product Name</th>
+      <th width="15%" scope="col">Tech</th>
+      <th width="60%" scope="col">Description</th>
     </tr>
   </thead>
   <tfoot>
@@ -33,9 +32,15 @@ categories:
   </tfoot>
   <tbody>
     <tr>
-      <td>Atlas</td>
-      <td>esrijs WebAPI Discover</td>
-      <td>AGRC</td>
+      <td>
+        <figure>
+          <a href="https://atlas.utah.gov">
+            <img class="outline" alt="Altas screenshot" src="{{ "/images/atlas_utah_gov.png" | prepend: site.baseurl }}" />
+          </a>
+          <figcaption class="application-figure__caption">Atlas</figcaption>
+        </figure>
+      </td>
+      <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, <a href="https://github.com/agrc-widgets">AGRC widgets</a></td>
       <td>The Utah Atlas with helpful labels and popups when points are clicked on the map.</td>
     </tr>
     <tr>
@@ -47,8 +52,7 @@ categories:
           <figcaption class="application-figure__caption">Watershed Restoration Initiative</figcaption>
         </figure>
       </td>
-      <td>esrijs WebAPI Discover ASP.NET WebAPI</td>
-      <td>AGRC DNR DWR</td>
+      <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, ASP.NET WebAPI</td>
       <td>The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</td>
     </tr>
     <tr>
@@ -60,8 +64,7 @@ categories:
           <figcaption class="application-figure__caption">Vehicle Collision Map</figcaption>
         </figure>
       </td>
-      <td>esrijs Discover</td>
-      <td>AGRC DPS UDOT</td>
+      <td>esrijs, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, ASP.NET WebAPI</td>
       <td>A statewide map of vehicle crashes, reported across all jurisdictions, that allows dynamic filtering for time, date, cause, severity, etc.</td>
     </tr>
     <tr>
@@ -73,8 +76,7 @@ categories:
           <figcaption class="application-figure__caption">Economic Development Map</figcaption>
         </figure>
       </td>
-      <td>esrijs WebAPI Discover</td>
-      <td>AGRC GOED</td>
+      <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>,</td>
       <td>Utah's Economic Development Map depicts the landscape of what's important to businesses considering relocating to Utah.</td>
     </tr>
     <tr>
@@ -86,8 +88,7 @@ categories:
           <figcaption class="application-figure__caption">Environmental Interactice map</figcaption>
         </figure>
       </td>
-      <td>esrijs WebAPI Discover ASP.NET WebAPI</td>
-      <td>AGRC DEQ</td>
+      <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, ASP.NET WebAPI, <a href="https://github.com/agrc-widgets">AGRC widgets</a></td>
       <td>Search for site-specific information relating to DEQ programs including regulated environmental sites, facilities, and designations.</td>
     </tr>
     <tr>
@@ -96,11 +97,10 @@ categories:
           <a href="https://raster.utah.gov/">
             <img class="outline" alt="SGID Raster Search (AGRC)" src="{{ "/images/raster_utah_gov.png" | prepend: site.baseurl }}"/>
           </a>
-          <figcaption class="application-figure__caption">Raster Data Discovery</figcaption>
+          <figcaption class="application-figure__caption">Raster Data <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>y</figcaption>
         </figure>
       </td>
-      <td>esrijs WebAPI Discover Image Server</td>
-      <td>AGRC</td>
+      <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, Image Server</td>
       <td>Download all of the imagery, elevation, lidar, and scanned maps available from Utah's SGID.</td>
     </tr>
     <tr>
@@ -112,14 +112,13 @@ categories:
           <figcaption class="application-figure__caption">State Parcel Map</figcaption>
         </figure>
       </td>
-      <td>esrijs WebAPI Discover</td>
-      <td>AGRC</td>
+      <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, <a href="https://github.com/agrc-widgets">AGRC widgets</a></td>
       <td>Zoom in to view parcel boundaries and basic attributes as assembled statewide by AGRC, in coordination with County Recorders.</td>
     </tr>
   </tbody>
 </table>
 <h4>Related Data</h4>
 <ul class="dotless">
-  <li><a href="{{ "/discover/" | prepend: site.baseurl }}">Discover Base Maps</a>
+  <li><a href="{{ "/discover/" | prepend: site.baseurl }}"><a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a> Base Maps</a>
   <li><a href="{{ "/developer/" | prepend: site.baseurl }}">AGRC Developer Widgets and Tools</a>
 </ul>
