@@ -1,0 +1,48 @@
+---
+status: publish
+layout: page
+title: 911
+author:
+  display_name: gbunce
+  email: agrc@utah.gov
+tags:
+  - 911
+  - law enforcement
+  - ems
+  - fire 
+  - dispatch
+published: true
+date: 2017-12-27 11:06:38 -0600
+categories: []
+Utah Next Generation 911 GIS Database:
+  downloads:
+    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV0g4ZlJ1aUlMS3M&export=download
+      label: "Society.CorrectionalFacilities: File Geodatabase"
+  updates:
+    - December 2017
+---
+<div class="caption">
+  <img src="{{ "/images/PublicSafety.png" | prepend: site.baseurl }}" alt="ChangeMeLarge" />
+  <p class="caption-text">Locations of Law Enforcement Facilities in Utah</p>
+</div>
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSk1mNzRyS1kwR3c"
+   name="911"
+   type="GIS Database"
+   stewards="AGRC"
+   abstract="This data package has three datasets with facilities relating to public safety in Utah. Public safety facilities include correctional facilities, fire stations, and law enforcement facilities. These datasets come from different sources and therefore there might be some overlap." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="CorrectionalFacilities">
+      <a href="#CorrectionalFacilities" class="anchor--link">Correctional Facilities</a></h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{{ "/images/Jails.png" | prepend: site.baseurl }}" alt="Locations of Law Enforcement Facilities in Utah" />
+    <p>Society.CorrectionalFacilities contains locations for jails and prisons in Utah. A jail or prison defined by the Department of Justice consists of any facility or location where individuals are regularly and lawfully detained against their will. This includes Federal and State prisons, local jails, and juvenile detention facilities, as well as law enforcement temporary holding facilities. Locations which function primarily as law enforcement offices are included in this dataset if they have holding cells.</p>
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html
+    name="CorrectionalFacilities"
+    info=page.CorrectionalFacilities
+  %}
+</div>
