@@ -18,6 +18,9 @@ date: 2011-04-05 22:01:27 -0500
 <div class="grid">
   <div class="grid__col grid__col--1-of-2">
     <h4>Developer Resources</h4>
+    <a href="{{ "/developer/applications/" | prepend: site.baseurl }}"><i class="fa fa-2x fa-fw fa-map-pin"></i> Applications</a>
+    <p>Read about applications created by AGRC developers.</p>
+    
     <a href="{{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}" title="Online Base Maps"><i class="fa fa-2x fa-fw fa-map"></i> Online Base Maps</a>
     <p>AGRC's online map services are available for use at no cost, fast, accurate, and beautiful.</p>
 
@@ -29,9 +32,6 @@ date: 2011-04-05 22:01:27 -0500
 
     <a href="{{ "/developer/blog/" | prepend: site.baseurl }}"><i class="fa fa-2x fa-fw fa-comments-o"></i> Developer Team Blog</a>
     <p>Read about work done by AGRC developers.</p>
-
-    <a href="{{ "/developer/applications/" | prepend: site.baseurl }}"><i class="fa fa-2x fa-fw fa-map-pin"></i> Applications</a>
-    <p>Read about applications created by AGRC developers.</p>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <h4>From the Developer Blog</h4>
