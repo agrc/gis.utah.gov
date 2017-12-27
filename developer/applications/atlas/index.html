@@ -1,0 +1,27 @@
+---
+status: publish
+layout: page_notitle
+author:
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
+tags: []
+published: true
+date: 2017-12-21 15:18:09 -0700
+title: Atlas
+categories:
+  - Developer
+---
+<div class="application">
+  <h1>Atlas</h1>
+  <h3>Tools for visualizing Utah Roads, Imagery, and Widgets</h3>
+  <div class="application__links">
+    <a class="application__url" href="https://atlas.utah.gov">atlas.utah.gov <i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span></a>
+    <a class="application__download" href="{{ "/data/transportation/" | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-cloud-download"></i><span class="sr-only">downlod data link</span> Download Application Data</a>
+  </div>
+</div>
+<figure class="application-figure application-figure--align-center">
+  <img src="atlas_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423" height="579">
+  <figcaption class="application-figure__caption">AGRC widgets with an informational popup derived from SGID data</figcaption>
+</figure>
+<h3>Why</h3>
+<p>AGRC offers many online services to facilitate the use of GIS and Atlas is a combination of most of those services. Atlas contains the complete and most current <a href="{{ "/discover/" | prepend: site.baseurl }}">discover base maps</a>. Atlas also uses most of the <a href="{{ "/developer/widgets/" | prepend: site.baseurl }}">AGRC javascript widgets</a>. The popup makes http requests to the <a href="{{ "/developer/web-services/" | prepend: site.baseurl }}">AGRC Web API</a> to reverse geocode, search for the city, county, land ownership, elevation, and US National Grid of the point clicked. For AGRC developers, Atlas is a code base to keep improving its' usage of dojo and the esri js api. Altas is often cloned and used as an application boilerplate for new projects as it's structure is optimal for the dojo build process.</p>
