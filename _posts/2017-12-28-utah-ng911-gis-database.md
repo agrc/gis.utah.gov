@@ -36,7 +36,8 @@ AGRC also has plans to geocode the MSAG tables against the Utah NG911 GIS databa
 
 We encourage you download the Utah NG911 GIS Database and take a look at it. We are strong believers that the more data is used and viewed, the better it gets. If nothing else, make sure your home and/or business is represented as a geocodable address in both the “RoadCenterlines” and “AddressPoints” datasets. These are the datasets that will ensure proper 911 response to your location. If you don’t have the needed tools and software to interact with the NG911 dataset, please take a moment to use our mapping website where you can validate your home and/or business address using the same underlying datasets. These datasets are only as good as we collectively make them, so do your part and validate.
 
-Questions or feedback can be directed to Greg Bunce at gbunce@utah.gov.    
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.roads %}{% endcapture %}
+{{ contact | strip_newlines }}
 
 ### Resources and Further Reading
 
