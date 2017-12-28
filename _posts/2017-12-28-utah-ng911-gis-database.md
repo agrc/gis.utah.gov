@@ -10,9 +10,9 @@ date: 2017-12-28 10:15:55
 categories:
 - Featured
 tags:
-- Next Generation 911
-- 911
-- Utah 911
+- 'Next Generation 911'
+- '911'
+- 'Utah 911'
 ---
 Preparing for Next Generation 911 (NG911) is largely a group effort from individuals and agencies at the local, state and national level. There are a variety of key players to coordinate with and plenty of policies and guidelines to navigate. It can be overwhelming just trying to understand how the system works.
 
