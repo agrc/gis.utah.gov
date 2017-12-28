@@ -6,7 +6,7 @@ title: 'Utah! Are you ready for Next Generation 911?'
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2017-12-28 22:15:55
+date: 2017-12-28 10:15:55
 categories:
 - Featured
 tags:
