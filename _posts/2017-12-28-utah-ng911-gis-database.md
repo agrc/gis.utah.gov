@@ -16,17 +16,20 @@ tags:
 ---
 Preparing for Next Generation 911 (NG911) is largely a group effort from individuals and agencies at the local, state and national level. There are a variety of key players to coordinate with and plenty of policies and guidelines to navigate. It can be overwhelming just trying to understand how the system works.
 
-Brief Overview of NG911
+## Brief Overview of NG911
+
 At its core, NG911 equates to (mandates) substantial upgrades (replacement of) to the communication infrastructure and call handling equipment. This newer, IP-based infrastructure will allow for text, video, and image interactions, as well the ability to pass along device-based information to the PSAP. Additionally, in a true NG911 system, GIS plays a significant role. The GIS database will be used to pre-validate (via geocoding and the LVF) all addresses registered with the telecom as well as dynamically route all 911 calls (via the ECRF) to the appropriate PSAP. With the current system (referred to as E911), GIS is used after the call has been delivered to the PSAP, typically for map display and vehicle routing. Currently, 911 calls are routed to appropriate PSAP by way of lookup tables (known as ANI and ALI) and a tabular street address table (MSAG) that is maintained by the PSAP. Pushing updates to the call routing system, through these tables, and be timely and cumbersome.  NG911, however, will eliminate the need for these tables, as it relies solely on GIS. A more complete overview of how the 911 system works can be found here.
 
-AGRC and NG911
+## AGRC and NG911
+
 AGRC’s role in NG911 is centered on the geospatial component. Truth be told, this, in-and-of-itself, is quite an undertaking. It involves accurate and current statewide mature datasets for layers such as roads, address points, PSAP boundaries, municipal boundaries, mile markers and more. Thankfully, AGRC has been around long enough and has had the foresight to build and foster intra-state relationships that have made these datasets as mature as they are. They are product of state and local coordination with more than 29 agencies. Additionally, AGRC has established data standards and sharing agreements that facilitate the consistency and longevity of these datasets.
 
 Today, thanks to the willingness and cooperation of agencies within the State of Utah, we are excited to announce the first release of the Utah NG911 GIS database. This database is built on the National Emergency Number Association’s (NENA) Standard for NG9-1-1 GIS Data Model, in its current form. Schema-wise, AGRC will keep current with this standard and update the Utah NG911 GIS database if and when NENA makes changes to the specifications. NENA hopes to finalize this standard soon.  Data-wise, AGRC will update the Utah NG911 GIS database on a monthly cycle - in conjunction with our road update cycle. However, AGRC can, and will, make updates more frequently when the data suggests.
 
 ![NG911 Datasets]({{ "/images/utah-ng911-database.png" | prepend: site.baseurl }})
 
-Looking Ahead
+## Looking Ahead
+
 In a true NG911 system, GIS becomes front and center. This puts a lot of responsibility on authoritative GIS editors at the local, regional (PSAP), and State levels. In 2018, AGRC looks to make further progress on providing a feedback mechanism for all approved authoritative data editors (such as local jurisdictions and PSAPs) where they can submit data modifications in a mapping editing environment and submit them to us so we can push them into production within the established time period. This will ensure the availability of highly accurate, near real time data to the State’s PSAPs and 911 community (telecoms?).  This is a really important aspect to AGRC because this mechanism can save lives!
 
 AGRC also has plans to geocode the MSAG tables against the Utah NG911 GIS database, looking for MSAG address that do not geocode. Our goal is to ensure that all existing, valid MSAG address are represented in the GIS database. This will speed up the transition to NG911 and GIS-based call routing, while undermining any reliance on the MSAG tables.
@@ -35,8 +38,9 @@ We encourage you download the Utah NG911 GIS Database and take a look at it. We 
 
 Questions or feedback can be directed to Greg Bunce at gbunce@utah.gov.    
 
-Resources and Further Reading
-NENA’s Standard Standard for NG9-1-1 GIS Data Model
-Utah Mapping Resources: Well-Prepared for NextGen 9-1-1
-AGRC’s NG911 Database webpage
-AGRC’s GitHub Code Repo for the Utah NG911 GIS database ETL process
+### Resources and Further Reading
+
+- NENA’s Standard Standard for NG9-1-1 GIS Data Model
+- Utah Mapping Resources: Well-Prepared for NextGen 9-1-1
+- AGRC’s NG911 Database webpage
+- AGRC’s GitHub Code Repo for the Utah NG911 GIS database ETL process
