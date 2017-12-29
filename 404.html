@@ -34,8 +34,8 @@ permalink: /404.html
     ga('send', {
       hitType: 'event',
       eventCategory: '404',
-      eventAction: document.location.pathname,
-      eventLabel: document.referrer,
+      eventAction: '404-path-' + document.location.pathname,
+      eventLabel: '404-referrer-' + document.referrer,
       transport: 'beacon'
     });
   };
