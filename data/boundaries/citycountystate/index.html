@@ -112,9 +112,9 @@ abstract="This dataset contains mapping data representing the state, county, mun
     document.getElementById('MunicipalBoundaries-dlist').addEventListener('click', function() {
       ga('send', {
         hitType: 'event',
-        eventCategory: 'Data',
-        eventAction: 'SpecificDownload',
-        eventLabel: 'MunicipalBoundaries',
+        eventCategory: 'data',
+        eventAction: 'specific-download',
+        eventLabel: 'specific-download-municipal-boundaries',
         transport: 'beacon'
       });
     });
@@ -191,9 +191,9 @@ abstract="This dataset contains mapping data representing the state, county, mun
     document.getElementById('CountyBoundaries-dlist').addEventListener('click', function() {
       ga('send', {
         hitType: 'event',
-        eventCategory: 'Data',
-        eventAction: 'SpecificDownload',
-        eventLabel: 'CountyBoundaries',
+        eventCategory: 'data',
+        eventAction: 'specific-download',
+        eventLabel: 'specific-download-county-boundaries',
         transport: 'beacon'
       });
     });

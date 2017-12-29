@@ -15,9 +15,9 @@
   document.getElementById('package--download').addEventListener('click', function() {
     ga('send', {
       hitType: 'event',
-      eventCategory: 'Data',
-      eventAction: 'PackageDownload',
-      eventLabel: '{{include.name}}',
+      eventCategory: 'data',
+      eventAction: 'package-download',
+      eventLabel: 'package-download-{{ include.name | downcase | replace: " ", "-" }}',
       transport: 'beacon'
     });
   });
