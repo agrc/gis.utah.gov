@@ -19,14 +19,14 @@ categories:
   <thead>
     <tr>
       <th width="225px" scope="col">Product Name</th>
-      <th width="15%" scope="col">Tech</th>
+      <th width="15%" scope="col">Technology Used</th>
       <th width="60%" scope="col">Description</th>
     </tr>
   </thead>
   <tfoot>
     <tr>
       <td colspan="4">
-        <em>click a product name for more information and download links</em>
+        <em>click an application for more information and download links</em>
       </td>
     </tr>
   </tfoot>
@@ -37,11 +37,11 @@ categories:
           <a href="{{ "atlas/" | prepend: site.baseurl }}">
             <img class="outline" alt="Altas screenshot" src="{{ "/images/atlas_utah_gov.png" | prepend: site.baseurl }}" />
           </a>
-          <figcaption class="application-figure__caption">Atlas</figcaption>
+          <figcaption class="application-figure__caption application-figure__caption--large">Atlas</figcaption>
         </figure>
       </td>
       <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, <a href="https://github.com/agrc-widgets">AGRC widgets</a></td>
-      <td>The Utah Atlas with helpful labels and popups when points are clicked on the map.</td>
+      <td>The Utah Atlas with helpful labels and pop-ups when points are clicked on the map.</td>
     </tr>
     <tr>
       <td>
@@ -49,11 +49,11 @@ categories:
           <a href="https://wri.utah.gov">
             <img class="outline" alt="WRI (DNR-DWR)" src="{{ "/images/wri_utah_gov.png" | prepend: site.baseurl }}" />
           </a>
-          <figcaption class="application-figure__caption">Watershed Restoration Initiative</figcaption>
+          <figcaption class="application-figure__caption application-figure__caption--large">Watershed Restoration Initiative</figcaption>
         </figure>
       </td>
       <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, ASP.NET WebAPI</td>
-      <td>The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</td>
+      <td>The Watershed Restoration Initiative website uses a shared web map to enable inter-agency project and resource coordination.</td>
     </tr>
     <tr>
       <td>
@@ -61,7 +61,7 @@ categories:
           <a href="vehicle-collision/">
             <img class="outline" alt="Crash Map (DPS / UDOT)" src="{{ "/images/crashmapping_utah_gov.png" | prepend: site.baseurl }}" />
           </a>
-          <figcaption class="application-figure__caption">Vehicle Collision Map</figcaption>
+          <figcaption class="application-figure__caption application-figure__caption--large">Vehicle Collision Map</figcaption>
         </figure>
       </td>
       <td>esrijs, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, ASP.NET WebAPI</td>
@@ -73,7 +73,7 @@ categories:
           <a href="https://locate.utah.gov/">
             <img class="outline" alt="locate.utah.gov (GOED)" src="{{ "/images/locate_utah_gov.png" | prepend: site.baseurl }}" />
           </a>
-          <figcaption class="application-figure__caption">Economic Development Map</figcaption>
+          <figcaption class="application-figure__caption application-figure__caption--large">Economic Development Map</figcaption>
         </figure>
       </td>
       <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>,</td>
@@ -85,7 +85,7 @@ categories:
           <a href="https://enviro.deq.utah.gov/">
             <img class="outline" alt="Environmental Map (DEQ)" src="{{ "/images/deq_utah_gov.png" | prepend: site.baseurl }}" />
           </a>
-          <figcaption class="application-figure__caption">Environmental Interactice map</figcaption>
+          <figcaption class="application-figure__caption application-figure__caption--large">Environmental Interactive map</figcaption>
         </figure>
       </td>
       <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, ASP.NET WebAPI, <a href="https://github.com/agrc-widgets">AGRC widgets</a></td>
@@ -97,7 +97,7 @@ categories:
           <a href="https://raster.utah.gov/">
             <img class="outline" alt="SGID Raster Search (AGRC)" src="{{ "/images/raster_utah_gov.png" | prepend: site.baseurl }}"/>
           </a>
-          <figcaption class="application-figure__caption">Raster Data <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>y</figcaption>
+          <figcaption class="application-figure__caption application-figure__caption--large">Raster Data Discovery</figcaption>
         </figure>
       </td>
       <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, Image Server</td>
@@ -109,11 +109,23 @@ categories:
           <a href="{{ "parcels/" | prepend: site.baseurl }}">
             <img class="outline" alt="SGID Parcel Viewer (AGRC)" src="{{ "/images/parcels_utah_gov.png" | prepend: site.baseurl }}" />
           </a>
-          <figcaption class="application-figure__caption">State Parcel Map</figcaption>
+          <figcaption class="application-figure__caption application-figure__caption--large">State Parcel Map</figcaption>
         </figure>
       </td>
       <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, <a href="https://github.com/agrc-widgets">AGRC widgets</a></td>
       <td>Zoom in to view parcel boundaries and basic attributes as assembled statewide by AGRC, in coordination with County Recorders.</td>
+    </tr>
+    <tr>
+      <td>
+        <figure>
+          <a href="{{ "plss/" | prepend: site.baseurl }}">
+            <img class="outline" alt="PLSS Tie Sheet Viewer" src="{{ "/images/applications/mapserv_utah_gov_plss.png" | prepend: site.baseurl }}" />
+          </a>
+          <figcaption class="application-figure__caption application-figure__caption--large">PLSS Corner Management</figcaption>
+        </figure>
+      </td>
+      <td>esrijs, <a href="https://api.mapserv.utah.gov">WebAPI</a>, <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a>, <a href="https://github.com/agrc-widgets">AGRC widgets</a>, ASP.NET MVC</td>
+      <td>A statewide collection of monument locations are accessible to the public from the AGRC PLSS Corner Management Web Application.</td>
     </tr>
   </tbody>
 </table>

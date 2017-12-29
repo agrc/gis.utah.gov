@@ -32,6 +32,10 @@
             color: rgba(0,0,0,0.48);
             text-align: center;
             font-size: 80%;
+            &--large {
+                font-size: 110%;
+                color: $base-text-color;
+            }
         }
         &__image {
             max-width: 100%;
