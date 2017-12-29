@@ -27,3 +27,14 @@ categories:
 <p>The only reasons I know are for transparency and to avoid gramma requests possibly?</p>
 <h3>Data Challenges</h3>
 <p>Complex data structure, yada yada.</p>
+<script>
+  document.getElementById('application__download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'application-download',
+      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
+      transport: 'beacon'
+    });
+  });
+</script>
