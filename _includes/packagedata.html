@@ -24,9 +24,9 @@
     document.getElementById('{{ include.name | replace: ' ', '' }}-dlist').addEventListener('click', function() {
       ga('send', {
         hitType: 'event',
-        eventCategory: 'Data',
-        eventAction: 'SpecificDownload',
-        eventLabel: '{{include.name}}',
+        eventCategory: 'data',
+        eventAction: 'specific-download',
+        eventLabel: 'specific-download-{{ include.name | downcase | replace: " ", "-" }}',
         transport: 'beacon'
       });
     });
