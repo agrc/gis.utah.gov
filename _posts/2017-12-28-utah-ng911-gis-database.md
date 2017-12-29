@@ -49,11 +49,11 @@ We encourage you download the [Utah NG911 GIS Database]({{ "/data/911/" | prepen
 
 ### NG911 Alphabet Soup 
 
-- NG911: Next Generation 911
-- PSAP: Public-safety answering point (911 Communications Center)
-- NENA: National Emergency Number Association
-- ALI: Automatic Location Information (Legacy 911's table of physical addresses for each 10 digit telephone number)
-- ANI: Automatic Number Identification (Legacy 911's equivalent of call-ID)
-- MSAG: Master Street Address Guide (Legacy 911's table of street names and address ranges and the corresponding center to which center a 911 call will be sent)
-- LVF: Local Validation Function (NG911's geocoding web service)
-- ECRF: Emergency Call Routing Function (NG911's dynamic point-in-polygon service that determines to which PSAP a 911 is sent)
+- **NG911**: Next Generation 911
+- **PSAP**: Public-safety answering point (911 Communications Center)
+- **NENA**: National Emergency Number Association
+- **ALI**: Automatic Location Information (Legacy 911's table of physical addresses for each 10 digit telephone number)
+- **ANI**: Automatic Number Identification (Legacy 911's equivalent of call-ID)
+- **MSAG**: Master Street Address Guide (Legacy 911's table of street names and address ranges and the corresponding center to which center a 911 call will be sent)
+- **LVF**: Local Validation Function (NG911's geocoding web service)
+- **ECRF**: Emergency Call Routing Function (NG911's dynamic point-in-polygon service that determines to which PSAP a 911 is sent)
