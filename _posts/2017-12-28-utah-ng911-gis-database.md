@@ -25,7 +25,7 @@ With the current system (referred to as E911 since the 'E' was added when mobile
 ## AGRC and NG911
 ![NG911 Datasets]({{ "/images/utah-ng911-database.png" | prepend: site.baseurl }}){: .inline-text-right }
 
-AGRC’s role in NG911 is centered on the GIS mapping (a.k.a 'geospatial' component. Truth be told, this, in-and-of-itself, is quite an undertaking. It involves statewide GIS datasets that must be accurate, complete, and current. Required and strongly recommended GIS map layers include roads, address points, PSAP boundaries, municipal boundaries, mile markers and more. Utah is in good shape thanks to the partnership built between AGRC and county and local govenment that has resulted in most of these datasets already being NG911-ready. Additionally, AGRC has established state data standards and sharing agreements that facilitate the consistency and longevity of these datasets.
+AGRC’s role in NG911 is centered on the GIS mapping (a.k.a 'geospatial') component. Truth be told, this, in-and-of-itself, is quite an undertaking. It involves statewide GIS datasets that must be accurate, complete, and current. Required and strongly recommended GIS map layers include roads, address points, PSAP boundaries, municipal boundaries, mile markers and more. Utah is in good shape thanks to the partnership built between AGRC and county and local govenment that has resulted in most of these datasets already being NG911-ready. Additionally, AGRC has established state data standards and sharing agreements that facilitate the consistency and longevity of these datasets.
 
 Today, thanks to the willingness and cooperation of agencies within the State of Utah, we are excited to announce the first release of the [Utah NG911 GIS database]({{ "/data/911/" | prepend: site.baseurl }}). This database is based on the National Emergency Number Association’s (NENA) standard for a NG9-1-1 [GIS Data Model](https://dev.nena.org/higherlogic/ws/public/download/9828/20161206_NG9-1-1%20GIS%20Data%20Model_PubRvw.pdf), in its current form. Schema-wise, AGRC will keep current with this standard and update the Utah NG911 GIS database as NENA makes additions or changes to the specifications. NENA hopes to finalize this standard in the coming year or so.  In terms of data content, AGRC will update the Utah NG911 GIS database on a monthly cycle - in conjunction with our [road update cycle]({{ "/data/transportation/roads-system/" | prepend: site.baseurl }}). However, AGRC can, and will, make updates more frequently as needed. AGRC continues to explore collaborative, web-based GIS editing platforms that will make near-live edits possible, by authorative GIS data stewards areound the state.
 
@@ -49,11 +49,11 @@ We encourage you download the [Utah NG911 GIS Database]({{ "/data/911/" | prepen
 
 NG911 Alphabet Soup 
 
-*[NG911]: Next Generation 911
-*[PSAP]: Public-safety answering point (911 Communications Center)
-*[NENA]: National Emergency Number Association
-*[ALI]: Automatic Location Information (Legacy 911's table of physical addresses for each 10 digit telephone number)
-*[ANI]: Automatic Number Identification (Legacy 911's equivalent of call-ID)
-*[MSAG]: Master Street Address Guide (Legacy 911's table of street names and address ranges and the corresponding center to which center a 911 call will be sent)
-*[LVF]: Local Validation Function (NG911's geocoding web service)
-*[ECRF]: Emergency Call Routing Function (NG911's dynamic point-in-polygon service that determines to which PSAP a 911 is sent)
+* [NG911]: Next Generation 911
+* [PSAP]: Public-safety answering point (911 Communications Center)
+* [NENA]: National Emergency Number Association
+* [ALI]: Automatic Location Information (Legacy 911's table of physical addresses for each 10 digit telephone number)
+* [ANI]: Automatic Number Identification (Legacy 911's equivalent of call-ID)
+* [MSAG]: Master Street Address Guide (Legacy 911's table of street names and address ranges and the corresponding center to which center a 911 call will be sent)
+* [LVF]: Local Validation Function (NG911's geocoding web service)
+* [ECRF]: Emergency Call Routing Function (NG911's dynamic point-in-polygon service that determines to which PSAP a 911 is sent)
