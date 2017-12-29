@@ -7,7 +7,7 @@ author:
 tags: []
 published: true
 date: 2017-12-21 15:18:09 -0700
-title: PLSS
+title: PLSS Corner Management
 categories:
   - Developer
 ---
@@ -17,7 +17,7 @@ categories:
   <div class="application__partners">In partnership with Surveyors?</div>
   <div class="application__links">
     <a class="application__url" href="https://mapserv.utah.gov/plss">mapserv.utah.gov/plss <i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span></a>
-    <a class="application__download" href="{{ "/data/cadastre/plss/" | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-cloud-download"></i><span class="sr-only">downlod data link</span> Download Application Data</a>
+    <a class="application__download" href="{{ "/data/cadastre/plss/" | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-cloud-download"></i><span class="sr-only">download data link</span> Download Application Data</a>
   </div>
 </div>
 <figure class="application-figure application-figure--align-center">
@@ -32,3 +32,14 @@ categories:
 <h3>Challenges</h3>
 <p>Each year hundreds of section corners that are used to determine property locations are in danger of being destroyed from land disturbances like new road projects, property development, and even conservation projects that rehabilitate vegetation after wild land and forest fires.</p>
 <p>Urban development is expanding into many areas in Utah that have not been surveyed since the early 1900's. Historically, it has been difficult to quickly identify and protect the section corners that may be impacted, while not slowing down the desired pace of development.</p>
+<script>
+  document.getElementById('application__download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'application-download',
+      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
+      transport: 'beacon'
+    });
+  });
+</script>
