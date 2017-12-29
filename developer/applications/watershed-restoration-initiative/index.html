@@ -29,3 +29,14 @@ categories:
 <h3>Project Challenges</h3>
 <p>The WRI application was the first joint project with DTS developers and AGRC developers. AGRC integrated the mapping functionality and other spatial analysis services into the java, forms over data, application developed by DTS. This was a very successful award winning partnership.</p>
 <p>The complex spatial analysis tools requested by the WRI users pushed the limits of the AGRC mapping tools and knowledge. Desktop style editing was brought into a browser with complex business and topology rules.</p>
+<script>
+  document.getElementById('application__download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'application-download',
+      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
+      transport: 'beacon'
+    });
+  });
+</script>
