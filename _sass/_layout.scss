@@ -90,9 +90,13 @@ a:hover > i {
     }
 }
 
-.post-content {
+.wrapper {
     max-width: 1400px;
+    &.site-footer {
+        max-width: none;
+    }
 }
+
 .post-content, .page-content {
     margin-bottom: $spacing-unit;
     h1 {
