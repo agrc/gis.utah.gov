@@ -1,0 +1,41 @@
+---
+status: publish
+layout: page_notitle
+author:
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
+tags: []
+published: true
+date: 2017-12-21 15:18:09 -0700
+title: ACTS
+categories:
+  - Developer
+---
+<div class="application">
+  <h1>Agriculture Conservation Tracking System</h1>
+  <h3>Tools for visualizing conservation projects</h3>
+  <div class="application__links">
+    <a class="application__url" href="https://grantreporting.udaf.utah.gov/public">grantreporting.udaf.utah.gov <i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span></a>
+    <a class="application__repo" href="https://github.com/agrc/acts-statistics"><i aria-hidden="true" class="fa fa-github"></i><span class="sr-only">github repository link</span> Repository</a>
+    <a class="application__download" href="{{ "/data/farming/grazing-improvements/" | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-cloud-download"></i><span class="sr-only">download data link</span> Download Application Data</a>
+  </div>
+</div>
+<figure class="application-figure application-figure--align-center">
+  <img src="grantreporting_udaf_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423" height="579">
+  <figcaption class="application-figure__caption">Conservation projects with specific project information</figcaption>
+</figure>
+<h3>Why</h3>
+<p>The Colorado River Basin Salinity Control Program was established during the enactment of the Clean Water Act. The seven Colorado River Basin states joined with federal agencies to prevent damages to lower basin states (Arizona, California, and Nevada) at the same time allow upper basin states to develop their compacted waters. A program that focused on improving irrigation efficiency was put in place and funded through Bureau of Reclamation, United States Department of Agriculture and the Basin States. In Utah the program operates as a partnership with BOR, USDA, EPA, USGS, US FWS, and BLM as federal agencies and UDAF, DEQ, DNR, local conservation districts, local conservancy districts, and local irrigation entities. These partners discuss, plan and implement projects which reduce the movement and flow of salts into the Colorado River and its tributaries. The projects also benefit local Utah residents with improved irrigation infrastructure, longer irrigation season, more efficient water use, and increased economies in project areas. Representatives from the state agency and local partners are members of the CRBSCP Forum, Advisory Council, and Workgroup which oversee and guide the salinity control program among the seven basin states.</p>
+<p>All <a href="http://ag.utah.gov/conservation-environmental/grazing-improvement-program.html">Grazing Improvement Projects</a> are designed to improve land ecology and to increase the economic production of Utah's cattle, sheep and wildlife operations. Utah's livestock industry represents a significant percentage of the state's $17.5 billion dollar agricultural production and processing industry. Utah agriculture also generates more than 78,000 jobs and is a source of safe, high quality and affordable local food.</p>
+<p>Invasive Species Management funds are awarded to state, federal and local entities as part of comprehensive local plans to control one or more of the major noxious weeds in Utah. Many previously funded projects target weed species that are highly invasive and greatly increase the risk of wildfires. Cheatgrass (June grass), medusahead, squarrose knapweed, and rush skeletonweed are targeted species that out compete native species, dry out earlier in the summer, and increase the intensity and spread of wildfires. To this point, the targeted weeds are concentrated in certain geographic areas. Aggressive control efforts are designed to stop their spread statewide.</p>
+<script>
+  document.getElementById('application__download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'application-download',
+      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
+      transport: 'beacon'
+    });
+  });
+</script>
