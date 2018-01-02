@@ -1,0 +1,40 @@
+---
+status: publish
+layout: page_notitle
+author:
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
+tags: []
+published: true
+date: 2017-12-21 15:18:09 -0700
+title: Economic Development
+categories:
+  - Developer
+---
+<div class="application">
+  <h1>Locate.utah.gov</h1>
+  <h3>Tools for finding and discovering places to locate a business or family</h3>
+  <div class="application__links">
+    <a class="application__url" href="https://locate.utah.gov">locate.utah.gov <i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span></a>
+    <a class="application__download" href="{{ '/data/aerial-photography/' | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-cloud-download"></i><span class="sr-only">download data link</span> Download Application Data</a>
+  </div>
+</div>
+<figure class="application-figure application-figure--align-center">
+  <img src="locate_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423" height="579">
+  <figcaption class="application-figure__caption">Locate viewer with a sure site selected</figcaption>
+</figure>
+<h3>Why</h3>
+<p>Locate.utah.gov is the first site of its kind and a key tool in helping businesses find the critical information they need to make site selection decisions. The site allows users to explore the state’s broadband availability, utility information, transportation, work force and lifestyle features. It also allows developers to evaluate potential locations and print customized reports with detailed summaries of available infrastructure.</p>
+<h3>Data Origination</h3>
+<p>Locate.utah.gov was developed for the <a href="https://broadband.utah.gov">Utah Broadband Outreach Center in GOED</a>. The Center works with more than 50 broadband providers who can supply premium services for all types of businesses in both urban and rural areas. <a href="{{ 'data/utilities/broadband-internet/' | prepend: site.baseurl }}">The coverage data for these providers</a> is aggregated by AGRC. It's then combined with a variety of other useful data from the SGI to provide a great window into the area in which you are interested.</p>
+<script>
+  document.getElementById('application__download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'application-download',
+      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
+      transport: 'beacon'
+    });
+  });
+</script>
