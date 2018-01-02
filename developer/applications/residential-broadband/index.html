@@ -1,0 +1,40 @@
+---
+status: publish
+layout: page_notitle
+author:
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
+tags: []
+published: true
+date: 2017-12-21 15:18:09 -0700
+title: Atlas
+categories:
+  - Developer
+---
+<div class="application">
+  <h1>Residential Broadband Map</h1>
+  <h3>Tools for visualizing available broadband providers and speeds</h3>
+  <div class="application__links">
+    <a class="application__url" href="https://broadband.utah.gov/map">broadband.utah.gov <i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span></a>
+    <a class="application__download" href="{{ '/data/utilities/broadband-internet/' | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-cloud-download"></i><span class="sr-only">download data link</span> Download Application Data</a>
+  </div>
+</div>
+<figure class="application-figure application-figure--align-center">
+  <img src="broadband_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423" height="579">
+  <figcaption class="application-figure__caption">Broadband providers and speeds for a given area</figcaption>
+</figure>
+<h3>Why</h3>
+<p>This map attempts to provide consumers, community leaders, and broadband providers with a comprehensive map-based view of non-confidential data complied by the <a href="https://broadband.utah.gov">Utah Broadband Outreach Center</a>. Wireless broadband internet data is mapped using coverage area footprints derived from analyzing antennae location, signal strength and terrain. Wireline broadband internet data is mapped using provider reported availability footprints in developed areas. Once a provider’s broadband coverage is initially mapped, data updates take several forms including GIS files, written descriptions, provider created maps, and verbal and written discussions.</p>
+<h3>Data Origination</h3>
+<p>This application utilizes data complied from broadband providers and public sources, including Utah’s State Geographic Information Database (SGID) which is utilized extensively for locating addresses, locating geographic places, and displaying background maps.</p>
+<script>
+  document.getElementById('application__download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'application-download',
+      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
+      transport: 'beacon'
+    });
+  });
+</script>
