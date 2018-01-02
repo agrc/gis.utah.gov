@@ -1,0 +1,42 @@
+---
+status: publish
+layout: page_notitle
+author:
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
+tags: []
+published: true
+date: 2017-12-21 15:18:09 -0700
+title: Raster Data Discovery
+categories:
+  - Developer
+---
+<div class="application">
+  <h1>Raster Data Discovery</h1>
+  <h3>Tools for finding and discovering raster products</h3>
+  <div class="application__links">
+    <a class="application__url" href="https://raster.utah.gov"><i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span> raster.utah.gov</a>
+    <a class="application__repo" href="https://github.com/agrc/raster"><i aria-hidden="true" class="fa fa-github"></i><span class="sr-only">github repository link</span> Repository</a>
+    <a class="application__download" href="{{ '/data/aerial-photography/' | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-cloud-download"></i><span class="sr-only">download data link</span> Download Application Data</a>
+  </div>
+</div>
+<figure class="application-figure application-figure--align-center">
+  <img src="raster_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423" height="579">
+  <figcaption class="application-figure__caption">Raster viewer with a vintage black and white photo of the capitol</figcaption>
+</figure>
+<h3>Why</h3>
+<p>Aerial imagery is a very valuable asset in the GIS industry as well as others. AGRC continues to organize the purchasing of new imagery while keeping all the historical imagery available as services or as a download.</p>
+<p>Individually handling every unique public request for data does not scale and basic ftp downloads do not provide a good enough user experience for AGRC standards. The raster discovery application is updated when new imagery is ready making it the one stop web application for discovering and downloading the imagery you need.</p>
+<h3>Data Challenges</h3>
+<p>The sheer volume of data for this application presented a challenge. There are many dozens of layers and associated services. This was made manageable by creating extent polygons for each product. These are managed in polygon feature classes; one for each raster product category. This allows us to not have to query the indexes for the actual products until a specific product is chosen.</p>
+<script>
+  document.getElementById('application__download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'application-download',
+      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
+      transport: 'beacon'
+    });
+  });
+</script>
