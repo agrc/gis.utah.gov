@@ -1,0 +1,42 @@
+---
+status: publish
+layout: page_notitle
+author:
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
+tags: []
+published: true
+date: 2017-12-21 15:18:09 -0700
+title: DEQ Environmental Map
+categories:
+  - Developer
+---
+<div class="application">
+  <h1>DEQ Environmental Map</h1>
+  <h3>Tools for finding and discovering environmental impacts</h3>
+  <div class="application__links">
+    <a class="application__url" href="https://enviro.deq.utah.gov"><i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span> enviro.deq.utah.gov</a>
+    <a class="application__repo" href="https://github.com/agrc/deq-enviro"><i aria-hidden="true" class="fa fa-github"></i><span class="sr-only">github repository link</span> Repository</a>
+    <a class="application__download" href="{{ '/data/environment/' | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-cloud-download"></i><span class="sr-only">download data link</span> Download Application Data</a>
+  </div>
+</div>
+<figure class="application-figure application-figure--align-center">
+  <img src="enviro_deq_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423" height="579">
+  <figcaption class="application-figure__caption">One mile buffer around the Capitol showing underground storage tanks and CERCLA items</figcaption>
+</figure>
+<h3>Why</h3>
+<p>One of the critical missions of the <a href="https://deq.utah.gov/">Utah Departement of Environmental Quality (DEQ)</a> is to provide access to government records as conveniently as possible. The DEQ Interactive Map allows users to search for and download data regarding sites regulated by DEQ. This application is used by a wide audience of citizens and professionals and has proven to be of much value to DEQ to handle environmental information requests of basic to intermediate complexity.</p>
+<p>The overall concept of the DEQ Interactive Map is to organize the data geographically and to integrate the data across divisions and programs. The interface was designed to allow searches by address, city, site name, DEQ program ID number or by zooming in on a map location of interest. The results are displayed on the map and allow access to site specific details. The search results return feature information for programs of DEQ and each of its divisions.</p>
+<h3>Data Challenges</h3>
+<p>The main challenge for this project has been trying to gather and standardize the wide variety of data sources so that they can be presented in a consistent manner within the application. There are several <a href="https://github.com/agrc/forklift">Forklift pallets</a> that run nightly to update and normalize the data.</p>
+<script>
+  document.getElementById('application__download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'application-download',
+      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
+      transport: 'beacon'
+    });
+  });
+</script>
