@@ -1,0 +1,42 @@
+---
+status: publish
+layout: page_notitle
+author:
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
+tags: []
+published: true
+date: 2017-12-21 15:18:09 -0700
+title: WRI
+categories:
+  - Developer
+---
+<div class="application">
+  <h1>Watershed Restoration Initiative</h1>
+  <h3>Tools for creating, tracking, and implementing watershed improvement projects</h3>
+  <div class="application__partners">In partnership with DTS, DNR</div>
+  <div class="application__links">
+    <a class="application__url" href="https://wri.utah.gov">wri.utah.gov <i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span></a>
+  </div>
+</div>
+<figure class="application-figure application-figure--align-center">
+  <img src="wri_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423" height="579">
+  <figcaption class="application-figure__caption">WRI application with a selected project and its details</figcaption>
+</figure>
+<h3>Why</h3>
+<p>WRI is a bottom-up initiative where project planning, review, and ranking occur at a local level. Five regional teams elect their own leaders, establish focus areas, review, score and rank project proposals using a comprehensive project prioritization score sheet, and assist their members in implementing projects.</p>
+<p>To facilitate this kind of cooperative work, a web application was required to enable all parties involved access. AGRC was brought into the project since every project being planned is spatial. For example, the ablity to accurately estimate the price of a fence by knowing the price per foot and extracting the length of a line drawn on a map is very attractive. Then requesting comment and criticism from others by sharing the map creates great value.</p>
+<h3>Project Challenges</h3>
+<p>The WRI application was the first joint project with DTS developers and AGRC developers. AGRC integrated the mapping functionality and other spatial analysis services into the java, forms over data, application developed by DTS. This was a very successful award winning partnership.</p>
+<p>The complex spatial analysis tools requested by the WRI users pushed the limits of the AGRC mapping tools and knowledge. Desktop style editing was brought into a browser with complex business and topology rules.</p>
+<script>
+  document.getElementById('application__download').addEventListener('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'application-download',
+      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
+      transport: 'beacon'
+    });
+  });
+</script>
