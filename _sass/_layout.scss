@@ -90,9 +90,11 @@ a:hover > i {
     }
 }
 
+.post-content {
+    max-width: 1400px;
+}
 .post-content, .page-content {
     margin-bottom: $spacing-unit;
-    max-width: 1400px;
     h1 {
         @include media-query($on-large) {
             font-size: 2.22em;
