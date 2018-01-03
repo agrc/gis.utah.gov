@@ -27,6 +27,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/atom+xml" title="{{ site.title }} Sitewide ATOM Feed">
   <link rel="alternate" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }} Sitewide RSS Feed">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -91,7 +92,7 @@
           <li class="menu-item {% if current[1] == 'developer' %}active-3{% endif %}"><a href="{{ "/developer/" | prepend: site.baseurl }}">Developer</a></li>
           <li class="menu-item {% if current[1] == 'about' %}active-4{% endif %}"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
           <li class="menu-item"><a href="https://agrc-status.netlify.com/">Status</a></li>
-          <li class="menu-item"><a href="{{ "/search/" | prepend: site.baseurl }}" aria-hidden="true"><i class="fa fa-search"></i><span class="sr-only">Site search link</span></a></li>
+          <li class="menu-item"><a href="{{ "/search/" | prepend: site.baseurl }}"><i class="fas fa-search" title="Site search link"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -167,25 +168,25 @@
           {% if site.github_username %}
           <li>
             <a class="clean" title="agrc github account" href="https://github.com/{{ site.github_username }}">
-                <i aria-hidden="true" class="fa fa-github-square fa-3x"></i><span class="sr-only">github link</span>
+                <i class="fab fa-github-square fa-3x" title="github link"></i>
             </a>
           </li>
           {% endif %} {% if site.twitter_username %}
           <li>
             <a class="clean" title="agrc twitter account" href="https://twitter.com/{{ site.twitter_username }}">
-                <i aria-hidden="true" class="fa fa-twitter-square fa-3x"></i><span class="sr-only">twitter link</span>
+                <i class="fab fa-twitter-square fa-3x" title="twitter link"></i>
             </a>
           </li>
           {% endif %} {% if site.facebook_username %}
           <li>
             <a class="clean" title="agrc facebook account" href="https://facebook.com/{{ site.facebook_username }}">
-                <i aria-hidden="true" class="fa fa-facebook-square fa-3x"></i><span class="sr-only">facebook link</span>
+                <i class="fab fa-facebook-square fa-3x" title="facebook link"></i>
             </a>
           </li>
           {% endif %} {% if site.vimeo_username %}
           <li>
             <a class="clean" title="agrc vimeo account" href="https://vimeo.com/{{ site.vimeo_username }}">
-                <i aria-hidden="true" class="fa fa-vimeo-square fa-3x"></i><span class="sr-only">vimeo link</span>
+                <i class="fab fa-vimeo-square fa-3x" title="vimeo link"></i>
             </a>
           </li>
           {% endif %}
@@ -194,19 +195,19 @@
         <h3>Broken links, images, or misinformation?</h3>
         <div class="text-center">
           <a class="clean" href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
-            <i aria-hidden="true" class="fa fa-code-fork fa-3x" style="display:block"></i><span class="sr-only">edit problems in this page link</span>
+            <i class="fas fa-code-branch fa-fw" title="edit problems in this page link"></i>
           </a>
-          <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit this page on GitHub</a>
-          <div>or</div>
-          <a href="{{ site.github.repository_url }}/issues/new">Notify us with an issue</a>
-          <div>Be sure to read the <a href="{{ "/about/contributing/" | prepend: site.baseurl }}">Contributing Guide</a>. We accept contributions!</div>
-          <a href="{{ "/license-disclaimer" | prepend: site.baseurl }}">
-            <i aria-hidden="true" class="fa fa-exclamation-triangle fa-2x" style="display:block"></i><span class="sr-only">AGRC Data Disclaimer</span>
-          </a>
-          Read the <a href="{{ "/license-disclaimer" | prepend: site.baseurl }}">
-            AGRC Data Disclaimer
-          </a>
+          <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit this page</a> on GitHub or notify us <a href="{{ site.github.repository_url }}/issues/new">with an issue</a>.
+          <div>Be sure to read the <a href="{{ "/about/contributing/" | prepend: site.baseurl }}">contributing guide</a>; We accept public contributions!</div>
         </div>
+        <a href="{{ "/license-disclaimer" | prepend: site.baseurl }}">
+          <h3><i class="fas fa-exclamation-triangle fa-fw" title="AGRC Data Disclaimer"></i> AGRC Data Disclaimer</h3>
+        </a>
+        {% if site.github %}
+        <div class="awesome text-center">
+            build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
+        </div>
+        {% endif %}
       </div>
     </div>
     <div class="state-footer">
@@ -217,11 +218,6 @@
       <span><a href="http://www.utah.gov/accessibility.html">Accessibility Policy</a></span>
       <span><a href="http://www.utah.gov/translate.html">Translate</a></span>
     </div>
-    {% if site.github %}
-    <div class="awesome text-center">
-        build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
-    </div>
-    {% endif %}
   </footer>
   <script>
     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
