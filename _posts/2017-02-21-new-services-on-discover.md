@@ -26,7 +26,7 @@ ArcMap users can go to the service’s `Layer Properties -> Cache` tab and selec
 as this could take several minutes. Another option is to completely clear your ArcMap cache by going
 to `Customize -> ArcMap Options -> Display Cache -> Clear Cache`.
 
-The service additions and changes are listed below. We also renamed most of the services. <i class="fa fa-exclamation-triangle"></i> **The renaming of the services should not have any effect on projects or applications that contained any of the services previous to the renaming.** The renaming is on the layer's display title only and does not have any effect on the urls or request parameters for the service.
+The service additions and changes are listed below. We also renamed most of the services. <i class="fas fa-exclamation-triangle"></i> **The renaming of the services should not have any effect on projects or applications that contained any of the services previous to the renaming.** The renaming is on the layer's display title only and does not have any effect on the urls or request parameters for the service.
 
 > The renaming of the services should not have any effect on projects or applications that contained any of the services previous to the renaming.
 

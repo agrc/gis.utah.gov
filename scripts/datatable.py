@@ -53,9 +53,9 @@ def munge_data(item, i, indices):
         if ',' in value:
             value = value.split(',')
 
-            return ''.join(['<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(v) for v in value])
+            return ''.join(['<a href="{}" class="pull-right"><i class="fab fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(v) for v in value])
 
-        return '<a href="{}" class="pull-right"><i class="fa fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value)
+        return '<a href="{}" class="pull-right"><i class="fab fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value)
 
     def webapp_link(value):
         if value is None or len(value) == 0:
@@ -64,9 +64,9 @@ def munge_data(item, i, indices):
         if ',' in value:
             value = value.split(',')
 
-            return ''.join(['<a href="{}" class="pull-right"><i class="fa fa-globe fa-fw" alt="website link"></i></a>'.format(v.strip()) for v in value])
+            return ''.join(['<a href="{}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>'.format(v.strip()) for v in value])
 
-        return '<a href="{}" class="pull-right"><i class="fa fa-globe fa-fw" alt="website link"></i></a>'.format(value.strip())
+        return '<a href="{}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>'.format(value.strip())
 
     return OrderedDict([('category', utf8_encode(category)), ('name', should_link(start_case(name.replace('_', '')))),
                         ('agency', utf8_encode(item[indices['data_source']])), ('description', utf8_encode(item[indices['description']])), ('service', ''.join(
@@ -100,7 +100,7 @@ layout: page
 status: publish
 title: SGID Index
 ---
-<h6 id='show_filters' class='pointer'><i class="fa fa-search"></i> Show Filters</h6>
+<h6 id='show_filters' class='pointer'><i class="fas fa-search"></i> Show Filters</h6>
 <div id='filters' class='hidden'>{}</div>
 <div class="muted text-center">Simple Filter (matches text in individual columns with <a href='https://github.com/javve/list.js'>list.js</a>)</div>
 <div id='table' class='datatable'>
