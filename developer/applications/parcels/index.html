@@ -16,7 +16,7 @@ categories:
   <h3>Tools for finding and discovering parcel information</h3>
   <div class="application__partners">In partnership with Utah County Recorders</div>
   <div class="application__links">
-    <a class="application__url" href="https://parcels.utah.gov">parcels.utah.gov <i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span></a>
+    <a class="application__url" href="https://parcels.utah.gov"><i aria-hidden="true" class="fa fa-external-link-square"></i><span class="sr-only">external link</span> parcels.utah.gov</a>
     <a class="application__repo" href="https://github.com/agrc/parcels"><i aria-hidden="true" class="fa fa-github"></i><span class="sr-only">github repository link</span> Repository</a>
     <a class="application__download" href="{{ "/data/cadastre/parcels/" | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-cloud-download"></i><span class="sr-only">download data link</span> Download Application Data</a>
   </div>
@@ -29,7 +29,7 @@ categories:
 <p>The parcel shapefile and file geodatabase data that AGRC standardizes are the most popular vector downloads on this website. The parcel viewer makes this data accessible to anyone with a web browser. In turn, it is one of the most popular web applications that AGRC offers. Not every county has their own parcel viewing application, so this application fills in the gaps. When a county does have their own web application, the parcel viewer displays a link to it.</p>
 <h3>Data Origination</h3>
 <p>The Recorders Office at the county level creates and maintains parcel data. The counties share the parcel data with AGRC on a schedule. AGRC standardizes the data into a common schema across all 29 counties.</p>
-<h3>Overcoming Data Challenges</h3>
+<h3>Challenges</h3>
 <p>Utah contains 29 counties that uniquely handle parcel data. In order to create a statewide data set AGRC <acronym title="Extract, transfer, load">ETL</acronym>'s the county data into a common schema with common fields. After the 29 county data layers are standardized, the developers were able to use <a href="https://github.com/agrc/forklift">forklift</a> to optimize the data even further for use in the application.</p>
 <p>Since there are 29 different parcel layers for Utah and the application is displaying information across all of the counties, it would be very inefficient to put all 29 layers in a map and query each layer on every user click. Another option would be to query the county layer first to figure out which county the click was in and then choose the correct parcel layer, but that is also inefficient. Using forklift, the developers were able to create one layer containing statewide parcels. The fields that are not displayed in the web application were removed and indexes were added to the fields that are searched on. This creates an optimal experience for the users with very fast query capability over the entire state.</p>
 <script>
