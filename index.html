@@ -4,55 +4,43 @@ layout: default
 <div class="section featured">
   {% for post in site.categories.Featured limit:3 %}
   <div class="grid__col grid__col--1-of-3 grid__col--am">
-    <a href="{{ post.url | prepend: site.baseurl }}"><i aria-hidden="true" class="fa fa-newspaper-o"></i> {{ post.title | truncate: 80 }}</a>
+    <a href="{{ post.url | prepend: site.baseurl }}"><i class="far fa-newspaper"></i> {{ post.title | truncate: 80 }}</a>
   </div>{% endfor %}
 </div>
 <div class="lozad grid main" data-background-image="{{"/images/backgrounds/tanakaContours.jpg" | prepend: site.baseurl }}">
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#data"><h3 class="main-heading">GIS Map Data</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#data"><i aria-hidden="true" class="fa fa-database fa-4x fa-pull-left"></i><span class="sr-only">Spatial Data</span></a> Established in State
-      law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop download and web service access
-      to hundreds of GIS map data layers developed, aggregated, or acquired
-      by state government.</p>
+    <p class="main-text"><a href="#data"><i class="fas fa-database fa-4x fa-pull-left" title="Spatial Data"></i></a> Established in State law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop download and web service access to hundreds of GIS map data layers developed, aggregated, or acquired by state government.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#tiles"><h3 class="main-heading">Aerial Imagery &amp; Base Maps</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#tiles"><i aria-hidden="true" class="fa fa-picture-o fa-4x fa-pull-left"></i><span class="sr-only">Aerial Imagery &amp; Base maps</span></a> SGID aerial
-      photography and base map services provide critical map context for GIS
-      and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources.
-      data resources.</p>
+    <p class="main-text"><a href="#tiles"><i class="far fa-image fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> SGID aerial photography and base map services provide critical map context for GIS and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources. data resources.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#gps"><h3 class="main-heading">TURN GPS Network</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#gps"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 64.2" class="turngps">
-      <path class="turngps-logo" d="M-195.3-268.5H937.5v566.4H-195.3z"/><path class="panel" d="M22.3 34.1L23 1 1.2 34.2z"/><path class="panel" d="M53.7 8.6L22.3 34.1 23 1z"/><path class="panel" d="M59.8 37.2l-37.5-3.1L53.7 8.6zM44.7 63L22.3 34.1l37.5 3.1z"/><path class="panel" d="M15.8 57.8l6.5-23.7L44.7 63z"/><path class="panel" d="M15.8 57.8L1.2 34.2l21.1-.1z"/><circle class="dot" cx="23" cy="1" r="1"/><circle class="dot" cx="53.7" cy="8.6" r="1"/><circle class="dot" cx="59.8" cy="37.2" r="1"/><circle class="dot" cx="44.7" cy="63" r="1"/><circle class="dot" cx="22.3" cy="34.1" r="1"/><circle class="dot" cx="15.8" cy="57.8" r="1"/><circle class="dot" cx="1.2" cy="34.1" r="1"/></svg>
-      <span class="sr-only">TURN GPS Network</span></a> TURN GPS is the foundation
-      for live, up-to-sub-centimeter precision GPS field surveying, mapping, and other measurement. TURN GPS
-      employs a network of over 90 permanent GPS base stations across Utah and surrounding areas.</p>
+    <p class="main-text"><a href="#gps"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 64.2" class="turngps" aria-labelledby="svg-inline--fa-turn" role="img">
+      <title id="svg-inline--fa-turn">News, Events, &amp; Coordination</title>
+      <path class="turngps-logo" d="M-195.3-268.5H937.5v566.4H-195.3z"/><path class="panel" d="M22.3 34.1L23 1 1.2 34.2z"/><path class="panel" d="M53.7 8.6L22.3 34.1 23 1z"/><path class="panel" d="M59.8 37.2l-37.5-3.1L53.7 8.6zM44.7 63L22.3 34.1l37.5 3.1z"/><path class="panel" d="M15.8 57.8l6.5-23.7L44.7 63z"/><path class="panel" d="M15.8 57.8L1.2 34.2l21.1-.1z"/><circle class="dot" cx="23" cy="1" r="1"/><circle class="dot" cx="53.7" cy="8.6" r="1"/><circle class="dot" cx="59.8" cy="37.2" r="1"/><circle class="dot" cx="44.7" cy="63" r="1"/><circle class="dot" cx="22.3" cy="34.1" r="1"/><circle class="dot" cx="15.8" cy="57.8" r="1"/><circle class="dot" cx="1.2" cy="34.1" r="1"/></svg></a> TURN GPS is the foundation for live, up-to-sub-centimeter precision GPS field surveying, mapping, and other measurement. TURN GPS employs a network of over 90 permanent GPS base stations across Utah and surrounding areas.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#dev"><h3 class="main-heading">Application Development</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#dev"><i aria-hidden="true" class="fa fa-rocket fa-4x fa-pull-left"></i><span class="sr-only">Application Development</span></a> AGRC’s development team
-      designs, builds and hosts web map applications, custom designed to best meet specific agency/program
-      requirements.</p>
+    <p class="main-text"><a href="#dev"><i class="fas fa-rocket fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> AGRC’s development team designs, builds and hosts web map applications, custom designed to best meet specific agency/program requirements.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#api"><h3 class="main-heading">Geo APIs</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#api"><i aria-hidden="true" class="fa fa-compass fa-4x fa-pull-left"></i><span class="sr-only">geo api's and services</span></a> Coding an app or process
-      that just needs simple “Where is?” or “What’s At?" answers? Geocoding and point-in-polygon map queries are available via api, from
-      <a class="main-link" href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a>.</p>
+    <p class="main-text"><a href="#api"><i class="fas fa-compass fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> Coding an app or process
+      that just needs simple “Where is?” or “What’s At?" answers? Geocoding and point-in-polygon map queries are available via api, from <a class="main-link" href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a>.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#news"><h3 class="main-heading">News, Events, &amp; Coordination</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#news"><i aria-hidden="true" class="fa fa-newspaper-o fa-4x fa-pull-left"></i><span class="sr-only">News, Events, &amp; Coordination</span></a> Utah is widely
-      recognized as a leader in the GIS field. Coordination, partnering and information sharing -- in the form of news, events,
-      tips, and data -- fuel our collective success.</p>
+    <p class="main-text"><a href="#news"><i class="far fa-newspaper fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> Utah is widely
+      recognized as a leader in the GIS field. Coordination, partnering and information sharing -- in the form of news, events, tips, and data -- fuel our collective success.</p>
   </div>
 </div>
 <div class="grid">

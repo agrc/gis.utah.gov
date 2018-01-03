@@ -211,7 +211,7 @@ def update_tabs(content):
             html.append('''</div>
     <div class="grid__col grid__col--1-of-2">
     <div class="panel">
-        <i class="fa fa-pull-right fa-download fa-2x"></i>
+        <i class="fas fa-pull-right fa-download fa-2x"></i>
         <h5 id="{}-{}">Downloads</h5>
     </div>
     <div class="panel-content">'''.format(product.replace(' ', ''), 'downloads'))
@@ -222,7 +222,7 @@ def update_tabs(content):
     </div>
     <div class="grid__col grid__col--1-of-2">
         <div class="panel update">
-            <i class="fa fa-pull-right fa-calendar fa-2x"></i>
+            <i class="fas fa-pull-right fa-calendar fa-2x"></i>
             <h5 id="{}-{}">Updates</h5>
         </div>
         <div class="panel-content">'''.format(product.replace(' ', ''), 'updates'))

@@ -13,7 +13,7 @@ categories:
 published: true
 date: 2011-06-30 18:23:51 -0500
 ---
-<i class="fa fa-2x fa-fw fa-mixcloud"></i> The [AGRC's Web API](http://api.mapserv.utah.gov) allows for developers to work with the data and services that AGRC maintains and creates. You can query any data layer in our SGID or you can geocode addresses against the most accurate statewide roads data set to name a few highly popular uses. All of our [widgets and add-ins]({{ "/developer/widgets/" | prepend: site.baseurl }}) make full use of our web API's.
+<i class="fas fa-2x fa-fw fa-magic"></i> The [AGRC's Web API](http://api.mapserv.utah.gov) allows for developers to work with the data and services that AGRC maintains and creates. You can query any data layer in our SGID or you can geocode addresses against the most accurate statewide roads data set to name a few highly popular uses. All of our [widgets and add-ins]({{ "/developer/widgets/" | prepend: site.baseurl }}) make full use of our web API's.
 
 #### Possibilities
 The main API's that we offer are **geocoding** and **searching**.
