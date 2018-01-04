@@ -49,5 +49,3 @@ The following are highlights from this month's update:
 - The `DOT_F_MP` (From Milepost) and `DOT_T_MP` (To Milepost) fields that store the milepost attributes of the UDOT state and federal routes in SGID10.Transportation.Roads were updated
 - The `DOT_RTID` field that stores UDOT's unique numeric route identifiers was updated
 
-#### General Dataset Maintenance
-- Implemented a more complete and standardized street (post) type domain for `POSTTYPE`, `A1_POSTTYPE`, and `A2_POSTTYPE` then ensured that all existing values in `POSTTYPE` conform to this new domain.
