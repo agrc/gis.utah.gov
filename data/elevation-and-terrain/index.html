@@ -16,84 +16,36 @@ published: true
 date: 2011-08-23 22:19:55 -0600
 title: Elevation and Terrain Data
 categories: []
-USGSNED:
+USGS-3DEP-DEM:
   downloads:
-    - url: "http://raster.utah.gov/?cat=10%20Meter%20NED%20%7BDEM%7D"
-      label: "Raster App: 10 meter NED DEMs"
-    - url: "http://raster.utah.gov/?cat=30%20Meter%20NED%20%7BDEM%7D"
-      label: "Raster App: 30 meter NED DEMs (by County)"
-    - url: "ftp://ftp.agrc.utah.gov/NED/NED30/StatewideHillshd30meter.zip"
-      label: "Statewide 30 meter Hillshade (250MB)"
-    - url: "ftp://ftp.agrc.utah.gov/NED/NED30/StatewideNED_30meter.zip"
-      label: "Statewide 30 meter DEM (975MB)"
-    - url: "ftp://ftp.agrc.utah.gov/NED"
-      label: "All NED data on the AGRC FTP"
-USGSDEM:
-  downloads:
-    - url: "http://raster.utah.gov/?cat=10%20Meter%20%7BDEM%7D"
-      label: "Raster App: 10 meter DEMs"
-    - url: "http://raster.utah.gov/?cat=30%20Meter%20%7BDEM%7D"
-      label: "Raster App: 30 meter DEMs"
-    - url: "http://raster.utah.gov/?cat=90%20Meter%20%7BDEM%7D"
-      label: "Raster App: 90 meter DEMs"
-    - url: "ftp://ftp.agrc.utah.gov/DEM/10meter_dem/"
-      label: "10 meter resolution 7.5 minutes 24k blocks"
-    - url: "ftp://ftp.agrc.utah.gov/DEM/30meter_dem/"
-      label: "30 meter resolution 7.5 minutes 24k blocks"
-    - url: "ftp://ftp.agrc.utah.gov/DEM/90meter_dem/"
-      label: "90 meter resolution 1x1 degree 250k blocks"
-    - url: "ftp://ftp.agrc.utah.gov/DEM/"
-      label: "All DEM data on the AGRC FTP"
+    - url: "http://raster.utah.gov/?cat=10%20Mete20%7BDEM%7D"
+      label: "Raster App: 10 meter USGS DEMs"
+    - url: "http://raster.utah.gov/?cat=30%20Mete20%7BDEM%7D"
+      label: "Raster App: 30 meter USGS DEMs"
+  updates:
+    - label: January 2018
 ---
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="USGSNED">
-      <a href="#USGSNED" class="anchor--link">USGS NED</a>
+    <h3 id="USGS-3DEP-DEM">
+      <a href="#USGS-3DEP-DEM" class="anchor--link">USGS 3DEP Elevations Products</a>
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <a title="Hillshade" href="{{ "/images/gallery/sgid/dem_lg.jpg" | prepend: site.baseurl }}" class="inline-text-left">
-      <img src="{{ "/images/gallery/sgid/thumbs/thumbs_dem.jpg" | prepend: site.baseurl }}" class="inline-text-left outline" alt="dem"/>
+    <a title="Slope" href="{{ "/images/gallery/sgid/ned_lg.jpg" | prepend: site.baseurl }}" class="inline-text-left">
+      <img src="{{ "/images/gallery/sgid/thumbs/thumbs_ned.jpg" | prepend: site.baseurl }}" class="inline-text-left outline" alt="dem"/>
     </a>
-    <p>The National Elevation Dataset (NED) is the primary elevation data product of the USGS. The NED is continually updated by the USGS. The NED is a seamless dataset with the best available raster elevation data of the conterminous United States, Alaska, Hawaii, and territorial islands. The NED is derived from diverse source data that are processed to a common coordinate system and unit of vertical measure. The AGRC has a statewide collection of 10 and 30 meter DEMs.</p>
-    <p>These elevation models were created from the best available DEMs. Much of the line distortion is then filtered out of the NED. Because of the filtering it gives a clearer picture than the standard DEM.</p>
-    <p>To make the <code>.dem</code> file useable in ArcMap it needs to be converted into a Raster/Grid. In ArcMap use the toolbox  <code>Conversion Tool -> DEM to Raster</code>.</p>
-    <p>This dataset is projected to UTM Zone 12 NAD83 meters. The vertical datum is NAVD88.</p>
+    <p>The USGS [3DEP](https://nationalmap.gov/3DEP/) elevation products from [The National Map](https://nationalmap.gov/index.html) are the primary elevation datasets available from the USGS. These elevation products are continually updated by the USGS with LiDAR collected through the 3DEP program as part of the [National Enhanced Elevation Assessment](https://nationalmap.gov/3DEP/neea.html "neea"). The AGRC has a statewide collection of the 10 and 30 meter bare-earth DEMs.</p>
+    <p>This dataset was reprojected to UTM NAD83 Zone12 meters. The vertical datum is NAVD88.</p>
+    <p>For information about working with elevation data in the Pro/ArcMap environment take a look at [Working with Mosaic and Reference Datasets]("https://docs.google.com/document/d/188M11SoXovnHeg3J8RwEb89FsWBJQJEwFB5SWyXwask/edit?usp=sharing").</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="{{ "/downloads/NED_accuracy_assessment.doc" | prepend: site.baseurl }}">NED Accuracy Document</a>
-      <li><a href="http://ned.usgs.gov/">http://ned.usgs.gov</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>
   </div>
-  {% include packagedata.html name="USGSNED"
-    info=page.USGSNED %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="USGSDEM">
-      <a href="#USGSDEM" class="anchor--link">USGS DEM</a>
-    </h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <a title="Slope" href="{{ "/images/gallery/sgid/ned_lg.jpg" | prepend: site.baseurl }}">
-      <img src="{{ "/images/gallery/sgid/thumbs/thumbs_ned.jpg" | prepend: site.baseurl }}" class="inline-text-left outline" alt="ned"/>
-    </a>
-    <p>A digital elevation model (DEM) is a digital file consisting of terrain elevations for ground positions at regularly spaced horizontal intervals. This is a legacy dataset and does not get updated like the NED does. The USGS produces five different digital elevation products. Although all are identical in the manner the data are structured, each varies in sampling interval, geographic reference system, areas of coverage, and accuracy; with the primary differing characteristic being the spacing, or sampling interval, of the data. The AGRC has a statewide collection of 10, 30, and 90 meter DEMs.</p>
-    <p>AGRC has populated it's FTP site with DEMs from the USGS for the State of Utah. There is a statewide coverage of 10, 30, and 90 meter DEMs. They are in a self extracting <code>.exe</code> format.</p>
-    <p>The DEMs are separated into three directories. For 10 and 30 meter DEMs refer to the <a href="{{ "/downloads/Find_a_DEM.txt" | prepend: site.baseurl }}">Find a DEM lookup</a> for USGS Quadrangle names and associated DEM name. For 90 meter DEMs refer to the <a href="{{ "/downloads/90meter_dems.jpg" | prepend: site.baseurl }}"
-    ="_blank">90meter dem image map</a>.</p>
-    <p>In order to make the <code>.dem</code> file useable it needs to be converted into a Raster/Grid. In the ArcMap toolbox use the <code>Conversion Tool - DEM to Raster</code>.</p>
-    <p>All DEMs are UTM Zone 12 NAD83 meters. The vertical datum is NGVD 29.</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="{{ "/downloads/demfacts.txt" | prepend: site.baseurl }}">DEM Fact Sheet</a>
-      <li><a href="http://eros.usgs.gov/elevation-products">USGS DEM's</a>
-    </ul>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>
-  </div>
-  {% include packagedata.html name="USGSDEM"
-    info=page.USGSDEM %}
+  {% include packagedata.html name="USGS-3DEP-DEM"
+    info=page.USGS-3DEP-DEM %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
