@@ -20,7 +20,7 @@ Preparing for Next Generation 911 (NG911) is largely a group effort from individ
 
 At its core, NG911 will result in substantial upgrades (often replacement) of the 911 communication infrastructure and call handling equipment. This newer, IP-based infrastructure will allow for text, video, and image interactions, as well as the ability to pass along device-based information to the PSAP. Additionally, in a true NG911 system, GIS plays a significant, required role. The GIS database will be used to pre-validate all addresses registered with your telecom provider (via geocoding against what is called the Location Validation Function, or LVF) as well as dynamically routing all 911 calls, based on digital boundaries, to the appropriate PSAP. The live call routing function uses what GIS professionals would call a 'point in polygon' search that is termed, in NG911-speak, the Emergency Call Routing Function, or ECRF.
 
-With the current system (referred to as E911 since the 'E' was added when mobile phones became supported 12+ years ago), GIS is used after the call has been delivered to the PSAP (the 911 communicatipons center) - typically to validate the incident location and coordinate the dispatch of responders. Currently, 911 calls are routed to appropriate PSAP by way of lookup tables (known as ANI and ALI) and a tabular street address table (MSAG) that is maintained by the PSAP. Pushing updates to the call routing system, through these tables, can be timely and cumbersome.  NG911, however, will eliminate the need for these tables, as it relies solely on GIS map data. A more complete overview of how the 911 system works can be found [here]({{ "/utah-mapping-resources-well-prepared-for-nextgen-911/" | prepend: site.baseurl }}).
+With the current system (referred to as E911 since the 'E' was added when mobile phones became supported 12+ years ago), GIS is used after the call has been delivered to the PSAP (the 911 communicatipons center) - typically to validate the incident location and coordinate the dispatch of responders. Currently, 911 calls are routed to appropriate PSAP by way of lookup tables (known as ANI and ALI) and a tabular street address table (MSAG) that is maintained by the PSAP. Pushing updates to the call routing system, through these tables, can be timely and cumbersome. NG911, however, will eliminate the need for these tables, as it relies solely on GIS map data. Within Utah, NG911 implementation will be coordinated by the [Utah Communications Authority's (UCA)](http://uca911.org/911-division) 911 Division. To learn more, visit their [overview page](http://uca911.org/911-division/ng-911-gis).
 
 ## AGRC and NG911
 ![NG911 Datasets]({{ "/images/utah-ng911-database.png" | prepend: site.baseurl }}){: .inline-text-right }
@@ -33,7 +33,7 @@ Today, thanks to the willingness and cooperation of agencies within the State of
 
 In a true NG911 system, GIS becomes a core component to the system. This puts a lot of responsibility on authoritative GIS editors at the local, regional (PSAP), and State levels. In 2018, AGRC looks to make further progress on providing a feedback mechanism for all approved authoritative data editors (such as local jurisdictions, PSAPs, sheriff’s office, etc.) where they can submit data modifications in a map editing environment and submit them to us so we can push them into production within the established time period. This will ensure the availability of highly accurate, near real time data to the State’s PSAPs and 911 community.  This is a really important aspect to AGRC because this mechanism can save lives!
 
-AGRC also has plans to geocode the ALI tables against the Utah NG911 GIS database, looking for ALI addresses that do not geocode. Our goal is to ensure that all existing, valid ALI addresses are represented in the GIS database and to provide local jurisdictions with ALI addresses that need updating or other attention. This will speed up the transition to NG911 and GIS-based call routing, while undermining any reliance on the MSAG tables.
+AGRC also plans coordinate with UCA to obtain and then geocode the ALI tables against the Utah NG911 GIS database, looking for ALI addresses that do not geocode. Our goal is to ensure that all existing, valid ALI addresses are represented in the GIS database and to provide local jurisdictions with ALI addresses that need updating or other attention. This will speed up the transition to NG911 and GIS-based call routing, while undermining any reliance on the MSAG tables.
 
 We encourage you download the [Utah NG911 GIS Database]({{ "/data/911/" | prepend: site.baseurl }}) and take a look at it. We are strong believers that the more eyes on the data, and the more use, the better it will get. If nothing else, make sure home and/or business addresses are geocodable, both the `RoadCenterlines` and `AddressPoints` datasets. These are the datasets that will ensure proper 911 response to your location. If you don’t have the required tools and software to interact with the NG911 dataset, please take a moment to use our [mapping website](http://atlas.utah.gov/) where you can validate your home and/or business address using the same underlying datasets. These datasets are only as good as we collectively make them, so give them a try and let us know if you experience any problems.
 
@@ -42,6 +42,7 @@ We encourage you download the [Utah NG911 GIS Database]({{ "/data/911/" | prepen
 
 ### Resources and Further Reading
 
+- [Utah Communications Authority's 911 Division](http://uca911.org/911-division)
 - [NENA’s Standard for NG9-1-1 GIS Data Model](https://dev.nena.org/higherlogic/ws/public/download/9828/20161206_NG9-1-1%20GIS%20Data%20Model_PubRvw.pdf)
 - [Utah Mapping Resources: Well-Prepared for NextGen 9-1-1]({{ site.baseurl }}{% post_url 2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911 %})
 - [AGRC’s NG911 Database webpage]({{ "/data/911/" | prepend: site.baseurl }})
@@ -50,6 +51,7 @@ We encourage you download the [Utah NG911 GIS Database]({{ "/data/911/" | prepen
 ### NG911 Alphabet Soup
 
 - **NG911**: Next Generation 911
+- **UCA**: Utah Communications Authority
 - **PSAP**: Public-safety answering point (911 Communications Center)
 - **NENA**: National Emergency Number Association
 - **ALI**: Automatic Location Information (Legacy 911's table of physical addresses for each 10 digit telephone number)
