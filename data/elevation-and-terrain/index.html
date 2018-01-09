@@ -41,9 +41,30 @@ USGS-3DEP-DEM:
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://www.usgs.gov/faqs/what-vertical-accuracy-seamless-3dep-dems">What is the vertical accuracy of the seamless 3DEP DEMs?</a>
-      <li><a href="ftp://ftp.agrc.utah.gov/NED/">Download old USGS NED DEMs from FTP site</a>
-      <li><a href="ftp://ftp.agrc.utah.gov/DEM/">Download old USGS DEMs from FTP site</a>   
+      <li><a id="old_ned" href="ftp://ftp.agrc.utah.gov/NED/">Download old USGS NED DEMs from FTP site</a>
+      <li><a id="old_dem" href="ftp://ftp.agrc.utah.gov/DEM/">Download old USGS DEMs from FTP site</a>
     </ul>
+    <script>
+      document.getElementById('old_ned').addEventListener('click', function() {
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'data',
+          eventAction: 'related-download',
+          eventLabel: 'related-download-ned',
+          transport: 'beacon'
+        });
+      });
+
+      document.getElementById('old_dem').addEventListener('click', function() {
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'data',
+          eventAction: 'related-download',
+          eventLabel: 'related-download-dem',
+          transport: 'beacon'
+        });
+      });
+    </script>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>
   </div>
   {% include packagedata.html name="USGS-3DEP-DEM"
