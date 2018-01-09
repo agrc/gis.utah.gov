@@ -106,6 +106,7 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/usgs-scanned-topographic-maps-drgs/quad-number-usgs-scanned-topographic-maps-124000-geotiff/        /data/usgs-scanned-topographic-maps/1-to-24000                                301
 /data/usgs-scanned-topographic-maps-drgs/quad-number-usgs-scanned-topographic-maps-1250000-geotiff/       /data/usgs-scanned-topographic-maps/1-to-250000                               301
 /data/usgs-scanned-topographic-maps-drgs/vintage-usgs-topo-maps/                                          /data/usgs-scanned-topographic-maps/                                          301
+/data/usgs-scanned-topographic-maps-drgs/download-usgs-scanned-topographic-maps/                          /data/usgs-scanned-topographic-maps/                                          301
 /data/water-data-services/                                                                                /data/water/                                                                  301
 /data/water-data-services/flood-areas/                                                                    /data/water/flood-areas/                                                      301
 /data/water-data-services/historic-lake-bonneville/                                                       /data/water/historic-lake-bonneville/                                         301
