@@ -53,7 +53,7 @@ The gis.utah.gov website is generated using [Jekyll](http://jekyllrb.com/). Jeky
 
 New `Posts` should be placed in the [`_posts`]({{ site.github.repository_url }}/tree/master/_posts) folder of your fork (*https://github.com/YOUR USER NAME/{{ site.github.repository_name }}/tree/master/_posts*). This can be accomplished by clicking the `New File` button. Copy and paste the content generated in the `File Path` input that the templater created.
 
-`Posts` can go anywhere in the website structure. To achieve the extensionless urls, an `index.md` or `index.html` file is created inside of a folder. The folder name will be the url to the content. eg: `gis.utah.gov/folder-name`. Folders can be nested within folders as can be seen in the [existing structure]({{ site.github.repository_url }}/tree/master/data). The templater will take care of the naming, therefore clicking the `New File` button and pasting the content generated in the `File Path` input should give the desired result.
+`Pages` can go anywhere in the website structure. To achieve the extensionless urls, an `index.md` or `index.html` file is created inside of a folder. The folder name will be the url to the content. eg: `gis.utah.gov/folder-name`. Folders can be nested within folders as can be seen in the [existing structure]({{ site.github.repository_url }}/tree/master/data). The templater will take care of the naming, therefore clicking the `New File` button and pasting the content generated in the `File Path` input should give the desired result.
 
 By default, the templater has given the new file a `.md` markdown extension.
 
