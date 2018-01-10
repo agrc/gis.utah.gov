@@ -6,7 +6,7 @@ author:
   email: mheagin@utah.gov
 tags:
   - annexations
-  - city boundaries
+  - boundaries
   - municipal boundaries
 published: true
 date: 2017-06-29 15:39:01
