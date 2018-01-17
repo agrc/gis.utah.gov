@@ -108,28 +108,28 @@ sitla:
   phone: 801-538-5100
   agency: SITLA
 address_grids:
-  name: Bert Granberg
-  email: BGranberg@utah.gov
+  name: Greg Bunce
+  email: GBunce@utah.gov
   phone: 801-538-3563
   agency: AGRC
 address_network:
-  name: Bert Granberg
-  email: BGranberg@utah.gov
+  name: Sean Fernandez
+  email: sfernadez@utah.gov
   phone: 801-538-3563
   agency: AGRC
 newsletter:
-  name: Bert Granberg
-  email: BGranberg@utah.gov
+  name: Matt Peters
+  email: MPeters@utah.gov
   phone: 801-538-3563
   agency: AGRC
 address_points:
-  name: Sean Fernandez
-  email: SFernandez@utah.gov
-  phone: 801-209-9359
+  name: Zach Beck
+  email: zbeck@utah.gov
+  phone: 801-538-3072
   agency: AGRC
 luca_liaison:
-  name: Bert Granberg
-  email: BGranberg@utah.gov
+  name: Matt Peters
+  email: MPeters@utah.gov
   phone: 801-538-3563
   agency: AGRC
 luca_trainer:
@@ -137,8 +137,8 @@ luca_trainer:
   email: Dorothy.A.McKinney@census.gov
   agency: Census
 census:
-  name: Bert Granberg
-  email: BGranberg@utah.gov
+  name: Matt Peters
+  email: MPeters@utah.gov
   phone: 801-538-3563
   agency: AGRC
 tax:
@@ -274,10 +274,6 @@ source_water:
   email: KJohnson@utah.gov
   agrncy: DEQ
 google_imagery:
-  - name: Bert Granberg
-    email: BGranberg@utah.gov
-    phone: 801-538-3563
-    agency: AGRC
   - name: Rick Kelson
     email: RKelson@utah.gov
     agency: AGRC
@@ -297,8 +293,8 @@ utah_mapping_emergency_technical_team:
     email: KateSmith8@gmail.com
     agency: the team
 trails:
-  name: Bert Granberg
-  email: BGranberg@utah.gov
+  name: Matt Peters
+  email: MPeters@utah.gov
   phone: 801-538-3563
   agency: AGRC
 wetlands:
