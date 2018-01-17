@@ -5,7 +5,7 @@ published: true
 title: 'Utah Census LUCA 2020'
 author:
   display_name: Bert Granberg
-  email: bgranberg@utah.gov
+  email: agrc@utah.gov
 date: 2017-11-07 15:35:53
 categories:
 - Featured
