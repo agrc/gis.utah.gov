@@ -3,7 +3,7 @@ status: publish
 layout: post
 author:
   display_name: Steve Gourley
-  email: bgranberg@utah.gov
+  email: agrc@utah.gov
 tags:
   - base maps
 published: true

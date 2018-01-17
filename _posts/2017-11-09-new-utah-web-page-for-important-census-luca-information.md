@@ -5,7 +5,7 @@ published: true
 title: 'New Utah Web Page for Important Census LUCA Information'
 author:
   display_name: Bert Granberg
-  email: bgranberg@utah.gov
+  email: agrc@utah.gov
 date: 2017-11-09 20:36:48
 categories:
 - Featured

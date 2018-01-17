@@ -5,7 +5,7 @@ published: true
 title: 'Census LUCA Training for Utah'
 author:
   display_name: Bert Granberg
-  email: bgranberg@utah.gov
+  email: agrc@utah.gov
 date: 2017-10-30 22:09:42
 categories:
 tags:
