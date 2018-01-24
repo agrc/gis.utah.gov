@@ -138,3 +138,4 @@ documentation: https://www.netlify.com/docs/redirects/
 /code-*                                                                                                   /developer/                                                                   301
 /agrc_contact/*                                                                                           /about/                                                                       301
 /aerial-photography/*                                                                                     /data/aerial-photography/                                                     301
+/sgid/                                                                                                    /data/sgid-index/                                                             301
