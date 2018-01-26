@@ -12,7 +12,7 @@ date: 2012-11-15 16:33:52 -0700
 title: Imagery Format Problem Fixes and Workarounds
 categories: []
 ---
-Some users experience problems using the latest imagery products provided by AGRC. This including the HRO from 2012 and NAIP from 2009, 2011, and 2014. Users affected are typically working on one of the following software platforms:
+Some users experience problems using the latest imagery products provided by AGRC. This including the HRO from 2012 and NAIP from 2009, 2011, 2014, and 2016. Users affected are typically working on one of the following software platforms:
 
  - MicroStation
  - AutoCAD
