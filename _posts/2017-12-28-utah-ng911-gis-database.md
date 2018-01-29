@@ -46,7 +46,8 @@ We encourage you to download the [Utah NG911 GIS Database]({{ "/data/911/" | pre
 
 If you don’t have the required tools and software to interact with the NG911 dataset, you can use our [mapping website](http://atlas.utah.gov/) to validate your address using the same underlying datasets. These datasets are only as good as we collectively make them, so give them a try and let us know if you experience any problems.
 
-Comments, questions, or concerns can be directed to [Greg Bunce](mailto:GBunce@utah.gov) at AGRC.
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.roads %}{% endcapture %}
+{{ contact | strip_newlines }}
 
 ### Resources and Further Reading
 
