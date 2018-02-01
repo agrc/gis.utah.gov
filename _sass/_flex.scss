@@ -2,10 +2,18 @@
     display: flex;
 
     &--center {
-        justify-content: space-around;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         flex-flow: row wrap;
+    }
+    &--row {
+        flex-direction: row;
+    }
+    &--wrap {
+        flex-wrap: wrap;
+    }
+    &--around {
+        justify-content: space-around;
     }
 }
