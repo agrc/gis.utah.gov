@@ -19,7 +19,7 @@ Through its Geospatial Excellence Awards, the [National States Geographic Inform
 
 At NSGIC's Annual Conference this September, two of the national geospatial excellence awards ([see all](https://nsgic.memberclicks.net/2017-NSGIC-awards0)) went to Utah-led initiatives.
 
-<div class="flex flex--center">
+<div class="flex flex--center flex--around">
   <div>
     <div class="caption">
       <img src="{{ "/images/nsgic_awards/KColeGOEDSmall.png" | prepend: site.baseurl }}" alt="Kelleigh Cole and GOED, Champion Award" />
@@ -33,7 +33,7 @@ At NSGIC's Annual Conference this September, two of the national geospatial exce
     </div>
   </div>
 </div>
-<div class="flex flex--center">
+<div class="flex flex--center flex--around">
   <div>
     <div class="caption">
       <img src="{{ "/images/nsgic_awards/RodBennett.png" | prepend: site.baseurl }}" alt="Rod Bennett" />
