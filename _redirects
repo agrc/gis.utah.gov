@@ -116,7 +116,7 @@ documentation: https://www.netlify.com/docs/redirects/
 /data/water-data-services/wetlands/                                                                       /data/water/wetlands/                                                         301
 /developer/base-maps/                                                                                     /data/base-map-and-imagery/                                                   301
 /new-sde-connection-properties-for-arcgis-desktop-10-1/                                                   /sgid-database/                                                               301
-/templater                                                                                                http://agrc.github.io/templater                                               3             01
+/templater                                                                                                http://agrc.github.io/templater                                               301
 
 /aerial/                                                                                                  /data/aerial-photography/                                                     301
 /agrc_sgid/dem_2m.html                                                                                    /data/elevation-terrain-data/                                                 301
