@@ -139,3 +139,7 @@ documentation: https://www.netlify.com/docs/redirects/
 /agrc_contact/*                                                                                           /about/                                                                       301
 /aerial-photography/*                                                                                     /data/aerial-photography/                                                     301
 /sgid/                                                                                                    /data/sgid-index/                                                             301
+/index.php                                                                                                /                                                                             301
+/gisresources                                                                                             /                                                                             301
+/data/cadastral                                                                                           /data/cadastre/                                                               301
+/imagery-server                                                                                           /image-server/                                                                301
