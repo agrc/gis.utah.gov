@@ -2,6 +2,26 @@
   <span class="button-text">Download {{ include.name }}</span></a></p>{% endif %}
 <h4 class="package--header">{{ include.name }}</h4>
 <ul class="dotless no-padding">
+{% if include.category != nil %}
+  <li><strong>Category:</strong> <a href="{{ "/data/" | append: include.category | prepend: site.baseurl }}">{{ include.category | capitalize  }}</a>
+{% elsif include.exclude_parent == true %}
+{% else %}
+{% assign url_parts = page.url | split: "/" %}
+{% assign parts = url_parts | size | minus: 1 %}
+{% assign category = url_parts | slice: 2 | join: "" | capitalize %}
+  <li><strong>Category:</strong> <a href="{{ url_parts | slice: 0, parts | join: "/" | append: "/" | prepend: site.baseurl }}" id="parent--category">{{ category }}</a>
+  <script>
+    document.getElementById('parent--category').addEventListener('click', function() {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'click',
+        eventAction: 'parent-category',
+        eventLabel: 'parent-category-{{ category | downcase }}',
+        transport: 'beacon'
+      });
+    });
+  </script>
+{% endif %}
   <li><strong>Data Type:</strong> {{ include.type | default: "GIS Data Layer" }}
   <li><strong>Steward(s):</strong> {{ include.stewards | default: "AGRC" }}
 {% for app in include.webapp %}{% if app.url != nil %}
