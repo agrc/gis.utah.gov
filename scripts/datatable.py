@@ -10,8 +10,7 @@ from collections import OrderedDict
 from os import rename
 from os.path import dirname, join
 
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+import pygsheets
 from pydash.strings import start_case
 
 
@@ -68,15 +67,14 @@ def munge_data(item, i, indices):
 
         return '<a href="{}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>'.format(value.strip())
 
-    return OrderedDict([('category', utf8_encode(category)), ('name', should_link(start_case(name.replace('_', '')))),
+    return OrderedDict([('category', utf8_encode(category)), ('name', should_link(start_case(name.replace('_', ' ')))),
                         ('agency', utf8_encode(item[indices['data_source']])), ('description', utf8_encode(item[indices['description']])), ('service', ''.join(
                             [endpoint_link(item[indices['endpoint']]), webapp_link(item[indices['web_app']])]))])
 
 
 def get_sheet_data(gc, sheet_id, worksheet_id):
-    worksheet = gc.open_by_key(sheet_id).worksheet(worksheet_id)
-
-    data = worksheet.get_all_values()
+    worksheet = gc.open_by_key(sheet_id).worksheet_by_title(worksheet_id)
+    data = worksheet.get_all_values(returnas='matrix')
 
     header = data.pop(0)
     indices = {
@@ -134,13 +132,9 @@ title: SGID Index
 
 
 if __name__ == '__main__':
-    scope = ['https://spreadsheets.google.com/feeds']
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(join(dirname(__file__), 'gspread-31a626054f8c.json'), scope)
-
-    gc = gspread.authorize(credentials)
+    gc = pygsheets.authorize(service_file='client_secret.json')
 
     data = get_sheet_data(gc, '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ', 'SGID Stewardship Info')
-
     data = filter(lambda x: len(x['name']) > 0, data)
     html = create(data)
 

@@ -7,4 +7,4 @@ node_modules/
 Gemfile.lock
 *.pyc
 
-scripts/gspread-31a626054f8c.json
+scripts/*.json
