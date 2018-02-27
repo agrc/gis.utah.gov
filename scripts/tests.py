@@ -86,8 +86,8 @@ class TestCleanser(unittest.TestCase):
         self.assertEqual(cleanser.update_divider(test), valid)
 
     def test_icons(self):
-        test = '<span class="icon-text icon-download"><a title="Download available HRO imagery" href="http://raster.utah.gov/?catGroup=HRO%202012%20(12.5cm),HRO%202012%20(1ft),HRO%202009%20(25cm),HRO%202006%20(25cm),HRO%202003%20(30cm)&title=Utah%20HRO%20Imagery">HRO Orthophotography Interactive Map</a></span><br />'
-        valid = '<span class="icon-text icon-download"><a title="Download available HRO imagery" href="http://raster.utah.gov/?catGroup=HRO%202012%20(12.5cm),HRO%202012%20(1ft),HRO%202009%20(25cm),HRO%202006%20(25cm),HRO%202003%20(30cm)&title=Utah%20HRO%20Imagery">HRO Orthophotography Interactive Map</a></span><br />'
+        test = '<span class="icon-text icon-download"><a title="Download available HRO imagery" href="https://raster.utah.gov/?catGroup=HRO%202012%20(12.5cm),HRO%202012%20(1ft),HRO%202009%20(25cm),HRO%202006%20(25cm),HRO%202003%20(30cm)&title=Utah%20HRO%20Imagery">HRO Orthophotography Interactive Map</a></span><br />'
+        valid = '<span class="icon-text icon-download"><a title="Download available HRO imagery" href="https://raster.utah.gov/?catGroup=HRO%202012%20(12.5cm),HRO%202012%20(1ft),HRO%202009%20(25cm),HRO%202006%20(25cm),HRO%202003%20(30cm)&title=Utah%20HRO%20Imagery">HRO Orthophotography Interactive Map</a></span><br />'
 
         self.assertEqual(cleanser.update_icons(test), valid)
 

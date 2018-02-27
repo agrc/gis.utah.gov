@@ -32,7 +32,7 @@ During late Fall of 2015 the Utah Division of Foresty, Fire & State Lands and th
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fas fa-download"></i> <a href="http://raster.utah.gov/?cat=.5%20Meter%20%7B2015%20LiDAR%7D">Retrieve 2015 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      <i class="fas fa-download"></i> <a href="https://raster.utah.gov/?cat=.5%20Meter%20%7B2015%20LiDAR%7D">Retrieve 2015 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
