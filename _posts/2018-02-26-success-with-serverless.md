@@ -25,7 +25,7 @@ Our original solution to this problem was a [custom geoprocessing service that w
 
 While we did make this solution work, it was not ideal. Geoprocessing services in general are a pain to work with. Debugging can be particuarly challenging. Because of the potential strain on our server, we asked our users to publish this service on their own servers. This added additional technical debt for them to deploy and maintain (assuming that they had an ArcGIS Server instance at all).
 
-In the end, we decided that there was no need to incur all of the heavy overhead of ArcGIS Server for a simple proxy service.
+In the end, we decided that there was no need to incur all of the heavy overhead of ArcGIS Server for a simple proxy service....
 
 ### Serverless to the Rescue
 Serverless computing is centered around the concept of abstracting away all of the pain that comes from managing systems and allowing developers to focus on building the software. You write the code and let the experts ([Google](https://cloud.google.com/functions/), [Amazon](https://aws.amazon.com/lambda/), [Microsoft](https://azure.microsoft.com/en-us/services/functions/), and others) take care of all of the headaches associated with deploying and hosting. And even better, you only pay when your service is actually invoked. Consequently, the cost ends up being pennies on the dollar compared to standing up a traditional server. In fact, AGRC to date has not crossed the threshold of the free tier.
