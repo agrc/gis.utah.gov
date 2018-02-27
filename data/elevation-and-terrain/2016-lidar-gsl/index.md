@@ -32,7 +32,7 @@ During the Fall of 2016 AGRC, Utah Geological Survey, and the Utah Division of F
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fas fa-download"></i> <a href="http://raster.utah.gov/?catGroup=.5%20Meter%20%7B2016%20LiDAR%7D,1%20Meter%20%7B2016%20LiDAR%7D&title=Utah%202016%20LiDAR">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      <i class="fas fa-download"></i> <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2016%20LiDAR%7D,1%20Meter%20%7B2016%20LiDAR%7D&title=Utah%202016%20LiDAR">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>

@@ -32,7 +32,7 @@ During the Summer of 2016 AGRC and the U.S. Forest Service acquired [292 square 
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fas fa-download"></i> <a href="http://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      <i class="fas fa-download"></i> <a href="https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>

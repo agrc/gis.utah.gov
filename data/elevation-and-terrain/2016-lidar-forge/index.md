@@ -32,7 +32,7 @@ During the Fall of 2016 AGRC and the Utah Geological Survey acquired [~205 squar
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fas fa-download"></i> <a href="http://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D" target="_blank">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      <i class="fas fa-download"></i> <a href="https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D" target="_blank">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
