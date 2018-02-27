@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Success With Serverless'
+title: 'Success with Serverless'
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
