@@ -23,7 +23,7 @@ This quad-word system works great until you try to use one of Esri's out-of-the-
 ### Swing and a Miss
 Our original solution to this problem was a [custom geoprocessing service that was deployed via ArcGIS Server](https://github.com/agrc/print-proxy). Basically, this service acted as a proxy to a traditional print service switching out the secured quad-word with a wide open one allowing the traditional print service to successfully make requests.
 
-While we did make this solution work, it was not ideal. Geoprocessing services in general are a pain to work with. Debugging can be particuarly challenging. Because of the potential strain on our server, we asked our users to publish this service on their own servers. This added additional technical debt for them to deploy and maintain (assuming that they had an ArcGIS Server instance at all).
+While we did make this solution work, it was not ideal. Geoprocessing services in general are a pain to work with. Debugging can be particularly challenging. Because of the potential strain on our server, we asked our users to publish this service on their own servers. This added additional technical debt for them to deploy and maintain (assuming that they had an ArcGIS Server instance at all).
 
 In the end, we decided that there was no need to incur all of the heavy overhead of ArcGIS Server for a simple proxy service.
 
