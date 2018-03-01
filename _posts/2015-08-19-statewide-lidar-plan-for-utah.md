@@ -14,7 +14,8 @@ tags:
   - terrain
 published: true
 date: 2015-08-19 14:29:46 -0600
-title: Statewide Lidar Plan for Utah
+update_date: 2018-03-01 01:00:00 
+title: Statewide Lidar Plan for Utah Updated
 categories:
   - Featured
 ---
