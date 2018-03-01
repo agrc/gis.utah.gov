@@ -9,9 +9,12 @@ License: [MIT](/LICENSE).
 1. Check out this repository
 1. run `docker-compose up`
 1. browse to `localhost:4000`
-1. run `docker pull jekyll/jekyll:pages` to update your image
+1. run `docker pull jekyll/jekyll` to update your image
 
 ## Common Website Tips
+
+- [Kramdown reference](http://kramdown.gettalong.org/quickref.html)
+- [Jekyll Cheat Sheat](http://cheat.jekyll.tips/)
 
 ```md
 _italics_
@@ -69,6 +72,19 @@ _**bold italics**_
 {: .css-class-name}
 ```
 
+#### font matter
+
+- `|page` - the post vs page layout
+- `title: Title` - the title of the content
+- `author.display_name: Full Name` - The author of the content
+- `author.email: email@address` - The author email
+- `date: 2018-02-13` - the date the content was created
+- `update_date: 2018-02-13` - this will show in under the title that the page has been updated
+- `tags: ` a list of tags
+- `categories: Featured|Developer|SGID Blog|GPS-surveyor|Guestblog`
+- `published: true|false`
+
+
 #### contact information
 
 Contacts are managed in a [yml file](./_data/contacts.yml). **Please do not put email addresses directly into content**.
@@ -88,6 +104,3 @@ The include has a few properties:
 ```liquid
 {% include contact.html subject=page.title contact=site.data.contacts.agrc %}
 ```
-
-- [Kramdown reference](http://kramdown.gettalong.org/quickref.html)
-- [Jekyll Cheat Sheat](http://cheat.jekyll.tips/)
