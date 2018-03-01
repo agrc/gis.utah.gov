@@ -8,7 +8,10 @@ A module that strips out the old wordpress yaml items
 import os
 import sys
 
-import ruamel.yaml as yaml
+from ruamel.yaml import YAML
+from ruamel.yaml.compat import StringIO
+
+yaml = YAML()
 
 unused_keys = ['author_login', 'author_email', 'wordpress_id', 'wordpress_url', 'date_gmt', 'status']
 unused_author_keys = ['login', 'url']
@@ -142,7 +145,7 @@ def discover_files(walk_dir):
 
             with open(file_path, 'r') as original, open(file_path + '.bak', 'w') as updated:
                 try:
-                    front_matter = yaml.load(pluck_yaml(original), Loader=yaml.RoundTripLoader)
+                    front_matter = yaml.load(pluck_yaml(original))
                 except Exception as e:
                     print(e)
                     os.remove(file_path + '.bak')
@@ -164,7 +167,11 @@ def discover_files(walk_dir):
                 if categories is not None:
                     front_matter['categories'] = categories
 
-                front_matter = yaml.dump(front_matter, Dumper=yaml.RoundTripDumper, block_seq_indent=2, default_flow_style=False, indent=2)
+                stream = StringIO()
+                yaml.dump((front_matter), stream)
+
+                front_matter = stream.getvalue()
+
                 content = pluck_content(original)
 
                 updated.write('---\n')
@@ -177,4 +184,5 @@ def discover_files(walk_dir):
 
 
 if __name__ == '__main__':
+    yaml.indent(mapping=2, sequence=4, offset=2)
     discover_files(sys.argv[1])
