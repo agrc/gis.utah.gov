@@ -27,6 +27,21 @@ kramdown:
     syntax_highlighter: rouge
     hard_wrap: false
 timezone: America/Denver
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      published: "true"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      published: "true"
 exclude:
     - "node_modules"
     - "scripts"
