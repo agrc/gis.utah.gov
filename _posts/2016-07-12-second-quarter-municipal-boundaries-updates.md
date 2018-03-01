@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
 tags: []
-published: true
 date: 2016-07-12 15:35:52
 title: Second Quarter 2016 Municipal Boundaries Updates
 categories: []

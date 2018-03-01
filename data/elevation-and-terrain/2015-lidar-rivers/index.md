@@ -1,14 +1,11 @@
 ---
-status: publish
-layout: page
 tags:
   - dem
   - lidar
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-published: true
-date: 2017-11-1 23:29:51
+date: 2017-11-01 23:29:51
 title: 2015 Colorado, Green, and Yampa Rivers LiDAR Elevation Data
 categories: []
 ---

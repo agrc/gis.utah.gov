@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
@@ -9,7 +7,6 @@ tags:
   - boundary data
   - incorporation
   - municipalities
-published: true
 date: 2016-01-05 16:36:29 -0700
 title: End of year updates for the Municipal Boundaries are available
 categories:

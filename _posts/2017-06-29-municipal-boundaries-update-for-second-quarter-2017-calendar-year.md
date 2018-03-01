@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: M Heagin
   email: mheagin@utah.gov
@@ -8,7 +6,6 @@ tags:
   - annexations
   - boundaries
   - municipal boundaries
-published: true
 date: 2017-06-29 15:39:01
 title: Municipal Boundaries update for second quarter 2017 (calendar year)
 categories: []

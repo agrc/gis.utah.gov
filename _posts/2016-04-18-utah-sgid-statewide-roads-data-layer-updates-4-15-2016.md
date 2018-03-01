@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
 tags: []
-published: true
 date: 2016-04-18 21:47:40
 title: Utah SGID Statewide Roads Data Layer Updates 4/15/2016
 categories: []

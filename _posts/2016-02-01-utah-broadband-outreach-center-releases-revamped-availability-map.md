@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - broadband
   - goed
-published: true
 date: 2016-02-01 13:31:17 -0700
 title: Utah Broadband Outreach Center Releases Revamped Availability Map
 categories:

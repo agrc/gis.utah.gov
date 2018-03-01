@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Wade Kloos, GIS Director, Utah DNR
   email: wkloos@utah.gov
 tags:
   - dnr
-published: true
 date: 2016-05-18 17:33:12
 title: DNR Continues to Build GIS Value with ROI Documentation
 categories: []

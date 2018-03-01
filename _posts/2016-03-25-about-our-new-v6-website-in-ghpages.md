@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags:
   - developer
   - github
-published: true
 date: 2016-03-25 13:31:17 -0700
 title: 'Now You Know: About the gis.utah.gov v6.0 Refresh'
 categories:

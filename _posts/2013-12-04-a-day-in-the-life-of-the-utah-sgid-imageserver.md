@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -12,7 +10,6 @@ tags:
   - topo
   - topographic
   - web services
-published: true
 date: 2013-12-04 17:07:30 -0700
 title: A day in the life of the Utah's SGID ImageServer
 categories:

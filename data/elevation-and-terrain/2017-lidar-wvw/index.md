@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: page
 tags:
   - dem
   - lidar
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-published: true
 date: 2017-10-19 23:29:51
 title: 2017 Washakie and Whites Valley LiDAR Elevation Data
 categories: []

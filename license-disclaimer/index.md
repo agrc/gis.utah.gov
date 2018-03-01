@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: page
 title: State Geographic Information Database Disclaimer and Usage
 author:
   display_name: Zach Beck
@@ -9,7 +7,6 @@ tags:
   - license
   - policy
 categories: []
-published: true
 date: 2011-11-07 15:59:23 -0700
 ---
 The following applies to all services, downloads, links, and other content included or referenced in all geospatial data, mapping products, and services created or hosted by the Utah Automated Geographic Reference Center (AGRC), including the contents of the SGID:

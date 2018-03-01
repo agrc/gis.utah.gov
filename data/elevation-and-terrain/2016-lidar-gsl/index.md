@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: page
 tags:
   - dem
   - lidar
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-published: true
 date: 2017-11-13 15:30:30
 title: 2016 Great Salt Lake and Utah Lake LiDAR Elevation Data
 categories: []

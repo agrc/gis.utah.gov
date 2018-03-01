@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Buck Ehler
   email: buckehler@utah.gov
@@ -10,7 +8,6 @@ tags:
   - fire
   - land management
   - public safety
-published: true
 date: 2016-10-31 21:32:36
 title: FFSL Launches New Wildfire Risk Assessment Portal
 categories:

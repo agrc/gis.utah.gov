@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2014-09-25 14:48:06 -0600
 title: Proposed Lidar Project, Northern Utah
 categories:

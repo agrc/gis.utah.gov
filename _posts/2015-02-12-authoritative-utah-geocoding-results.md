@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Steve Gourley
 tags:
@@ -10,7 +8,6 @@ tags:
   - qaqc
   - quality assurance
   - roads
-published: true
 date: 2015-02-12 18:52:22 -0700
 title: Authoritative Utah Geocoding Results
 categories:

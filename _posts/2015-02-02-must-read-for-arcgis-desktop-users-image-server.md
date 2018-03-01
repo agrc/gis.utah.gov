@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
@@ -8,7 +6,6 @@ tags:
   - data
   - image server
   - mapserv
-published: true
 date: 2015-02-02 14:56:21 -0700
 title: 'Must Read for ArcGIS Desktop Users: Image Server Deprecation'
 categories:

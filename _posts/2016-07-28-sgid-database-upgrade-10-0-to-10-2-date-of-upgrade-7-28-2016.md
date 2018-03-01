@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov

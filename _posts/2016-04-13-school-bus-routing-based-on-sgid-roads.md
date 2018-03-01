@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
 tags: []
-published: true
 date: 2016-04-13 16:15:06
 title: School Bus Routing based on SGID Roads
 categories: []

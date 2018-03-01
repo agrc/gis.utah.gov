@@ -1,7 +1,4 @@
 ---
-layout: post
-status: publish
-published: true
 title: Utah SGID Statewide Roads Data Layer Updates 08/15/2017
 author:
   display_name: Greg Bunce
@@ -10,13 +7,8 @@ date: 2017-08-15
 categories:
   - Featured
 tags:
-  - centerlines
   - data
-  - gis
   - roads
-  - sgid
-  - statewide
-  - utah
 ---
 
 **Major changes to the Statewide Roads Data Model are coming on September 13th, 2017.  Please take the time to read the [blog post]({{ site.baseurl }}{% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}) detailing the changes.**

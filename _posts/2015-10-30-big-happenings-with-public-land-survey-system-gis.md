@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - blm
   - plss
-published: true
 date: 2015-10-30 11:39:09 -0600
 title: Big Happenings with Public Land Survey System GIS
 categories:

@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags:
   - discover
   - naip
-published: true
 date: 2017-02-21 21:10:26
 title: National Agricultural Imagery Program (NAIP) 2016 Imagery Now Available
 categories:

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - south jordan
   - usps
   - zip code
-published: true
 date: 2015-07-29 16:08:48 -0600
 title: New 84009 Zip Code in Salt Lake County
 categories:

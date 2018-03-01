@@ -1,15 +1,11 @@
 ---
-status: publish
-layout: page
 title: Dev Team Blog
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
-tags:
-  - blog
+tags: []
 categories:
   - Developer
-published: true
 date: 2011-06-30 16:14:07 -0500
 ---
 <div class="grid">

@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: page
 title: How to Contribute to gis.utah.gov
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
 tags: []
-published: true
 date: 2016-04-19 16:11:21
 categories:
   - Tutorial

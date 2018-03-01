@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - maps on the hill
   - moth
   - ugic
-published: true
 date: 2017-02-23 00:18:28
 title: Maps on the Hill 2017 Contest Winners
 categories:

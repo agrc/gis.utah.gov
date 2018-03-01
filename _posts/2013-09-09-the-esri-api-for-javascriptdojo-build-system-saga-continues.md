@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags:
   - javascript
-published: true
 date: 2013-09-09 07:58:42 -0600
 title: The ESRI API for JavaScript/Dojo Build System Saga Continues...
 categories:

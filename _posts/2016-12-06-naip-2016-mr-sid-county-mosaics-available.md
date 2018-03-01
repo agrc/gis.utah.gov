@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags:
   - aerial photography
   - naip
-published: true
 date: 2016-12-06 16:03:22
 title: NAIP 2016 Mr. Sid County Mosaics Available
 categories:

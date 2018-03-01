@@ -1,14 +1,11 @@
 ---
-status: publish
-layout: post
 author:
   display_name: MHeagin
   email: mheagin@utah.gov
 tags:
-  - municipal boundaries
-  - boundaries
   - annexations
-published: true
+  - boundaries
+  - municipal boundaries
 date: 2017-03-29 16:57:20
 title: Municipal Boundaries update for first quarter (Calendar year)
 categories:

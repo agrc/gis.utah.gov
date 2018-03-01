@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags: []
-published: true
 date: 2016-04-28 22:11:31
 title: AGRC Storage Migration
 categories: []

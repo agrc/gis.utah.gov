@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: page
 tags:
   - discover
   - license
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-published: true
 date: 2015-03-10 14:54:47 -0600
 title: Google Imagery License
 categories: []

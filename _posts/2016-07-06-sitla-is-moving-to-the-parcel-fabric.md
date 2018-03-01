@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Kate Staley
   email: katestaley@utah.gov
@@ -9,7 +7,6 @@ tags:
   - parcel fabric
   - plss
   - sitla
-published: true
 date: 2016-07-06 17:22:32
 title: SITLA is Moving to the Utah PLSS Parcel Fabric
 categories:

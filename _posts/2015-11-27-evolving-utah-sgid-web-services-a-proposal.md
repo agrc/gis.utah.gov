@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - centralize
   - data
   - tracking
-published: true
 date: 2015-11-27 13:45:52 -0700
 title: 'Evolving Utah SGID Web Services: A Proposal'
 categories:

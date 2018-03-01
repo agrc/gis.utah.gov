@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: MHeagin
   email: mheagin@utah.gov
@@ -8,7 +6,6 @@ tags:
   - tax areas
   - tax entities
   - utah state tax
-published: true
 date: 2017-03-13
 title: Yearly update for Tax Entities and Areas 2016
 categories:

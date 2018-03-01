@@ -1,16 +1,12 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'ArcGIS Online Web Mercator and Opendata'
+title: ArcGIS Online Web Mercator and Opendata
 author:
   display_name: Michael M. Foulger
   email: MICHAELFOULGER@utah.gov
 date: 2017-07-31 19:10:45
 categories: []
 tags:
-- arcgis online
-
+  - arcgis online
 ---
 
 AGRC is transitioning State Geographic Information Database (SGID) web services from UTM NAD83 to the Web Mercator projection.  Overall, we feel that this will allow users to more efficiently consume SGID data via web services without the need for reprojecting the data on the fly. This is because the vast majority of browser-based web applications (thin clients) are displaying map data in Web Mercator, and desktop GIS software (thick clients, big brains) have been sufficiently capable and resourced to reproject map data ‘on the fly’ for more than a decade now.

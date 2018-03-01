@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis and Steve Gourley
   email: stdavis@utah.gov
@@ -9,7 +7,6 @@ tags:
   - google imagery
   - hybrid
   - web mercator
-published: true
 date: 2015-12-21 08:58:29 -0700
 title: Using AGRC's new Web Mercator Services in Your Web Maps
 categories:

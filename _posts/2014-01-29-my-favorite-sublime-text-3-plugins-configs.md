@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags: []
-published: true
 date: 2014-01-29 15:30:07 -0700
 title: My Favorite Sublime Text 3 Plugins & Configs
 categories:

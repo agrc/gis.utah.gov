@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis and Steve Gourley
   email: stdavis@utah.gov
 tags:
   - dojo
   - javascript
-published: true
 date: 2014-09-22 11:09:51 -0600
 title: grunt-esri-slurp
 categories:

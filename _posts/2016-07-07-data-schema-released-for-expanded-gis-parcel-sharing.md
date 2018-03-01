@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - gomb
   - parcels
   - planning
-published: true
 date: 2016-07-07 20:05:49
 title: Data Schema Released for Expanded GIS Parcel Sharing
 categories:

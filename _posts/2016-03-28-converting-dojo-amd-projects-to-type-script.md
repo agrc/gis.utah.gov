@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags:
   - javascript
   - typescript
-published: true
 date: 2016-03-28 15:49:19
 title: Converting Dojo-AMD Projects To TypeScript
 categories:

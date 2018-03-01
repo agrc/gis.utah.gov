@@ -1,20 +1,17 @@
 ---
-layout: page
-status: publish
-published: true
-title: 'Utah Census LUCA 2020'
+title: Utah Census LUCA 2020
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 date: 2017-11-07 15:35:53
 categories:
-- Featured
+  - Featured
 tags:
-- luca
-- census
-- address
-- demographic
-- location
+  - address
+  - census
+  - demographic
+  - location
+  - luca
 ---
 ![Census LUCA Program, 2018]({{ "/images/LUCA2018.png" | prepend: site.baseurl }}){: .inline-text-right .outline }This page contains information, data resources, tips, etc. for Utah participants in the US Census Bureau's Local Update of Census Addresses (LUCA) program.
 

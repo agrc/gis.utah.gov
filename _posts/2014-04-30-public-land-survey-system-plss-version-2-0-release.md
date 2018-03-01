@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - cadastre
   - gcdb
   - plss
-published: true
 date: 2014-04-30 12:24:19 -0600
 title: Public Land Survey System (PLSS) Version 2.0 Release
 categories:

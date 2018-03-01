@@ -1,12 +1,8 @@
 ---
-status: publish
-layout: page
 author:
   display_name: JP
   email: agrc@utah.gov
-tags:
-  - metadata
-published: true
+tags: []
 date: 2013-07-02 09:33:34 -0600
 title: Basic Metadata Instructions
 categories: []

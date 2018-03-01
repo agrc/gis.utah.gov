@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -11,7 +9,6 @@ tags:
   - nad83
   - projections
   - web applications
-published: true
 date: 2015-12-21 12:11:45 -0700
 title: The Earth is Not Round! Utah, NAD83 and WebMercator Projections
 categories:

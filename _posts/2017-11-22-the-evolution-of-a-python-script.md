@@ -1,17 +1,14 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'The Evolution of a Python Script'
+title: The Evolution of a Python Script
 author:
   display_name: Steve Gourley and Scott Davis
   email: sgourley@utah.gov
 date: 2017-11-22 01:48:13
 categories:
-- Developer
+  - Developer
 tags:
-- python
-- code
+  - code
+  - python
 ---
 
 Python is a very approachable programming language and scripting in python is quick and powerful - Create a file, type some code, and a repeatable script is produced. Python is installed on most computers so your coworkers and colleagues could benefit from your code. If python is not installed, it is pretty [easy to add](https://www.python.org/downloads/).

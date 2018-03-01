@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -10,7 +8,6 @@ tags:
   - data
   - gis history
   - policy
-published: true
 date: 2016-05-24 21:57:21
 title: '25 Years Ago: Laying the Foundation for Utah GIS Success'
 categories:

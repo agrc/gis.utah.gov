@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Data Queen
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - geocoding
   - location
   - roads
-published: true
 date: 2014-01-28 14:43:45 -0700
 title: Utah SGID Statewide Roads Data Layer Updates 1/28/2014
 categories:

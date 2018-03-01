@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - address points
   - best practices
-published: true
 date: 2014-09-24 15:04:25 -0600
 title: 'Statewide Address Points: Best Practices'
 categories:

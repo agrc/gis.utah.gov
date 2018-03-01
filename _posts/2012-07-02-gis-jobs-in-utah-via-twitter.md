@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - jobs
   - twitter
   - ugic
-published: true
 date: 2012-07-02 15:59:16 -0600
 title: GIS jobs in Utah....via Twitter
 categories:

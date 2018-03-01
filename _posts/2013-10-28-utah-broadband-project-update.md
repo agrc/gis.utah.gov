@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,7 +8,6 @@ tags:
   - goed
   - ntia
   - psc
-published: true
 date: 2013-10-28 17:16:31 -0600
 title: Utah Broadband Project Update
 categories:

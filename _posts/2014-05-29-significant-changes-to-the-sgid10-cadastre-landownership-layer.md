@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - data
   - land exchange act
   - sitla
-published: true
 date: 2014-05-29 12:02:17 -0600
 title: Significant Changes to the Utah Land Ownership GIS Layer
 categories:

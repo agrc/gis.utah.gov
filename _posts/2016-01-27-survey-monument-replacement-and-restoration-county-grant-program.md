@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - mrrc
   - plss
-published: true
 date: 2016-01-27 13:31:17 -0700
 title: Survey Monument Replacement and Restoration County Grant Program
 categories: []

@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Data Queen
   email: agrc@utah.gov
 tags:
   - data
   - schools
-published: true
 date: 2012-06-07 17:26:17 -0600
 title: SGID Schools Update 5/31/2012
 categories:

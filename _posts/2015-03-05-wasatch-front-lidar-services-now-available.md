@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -10,7 +8,6 @@ tags:
   - lidar
   - topo
   - topographic
-published: true
 date: 2015-03-05 10:44:24 -0700
 title: Wasatch Front LiDAR Services Now Available
 categories:

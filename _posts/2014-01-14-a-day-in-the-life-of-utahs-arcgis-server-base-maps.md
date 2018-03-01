@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Steve Gourley
   email: agrc@utah.gov
 tags:
   - base maps
-published: true
 date: 2014-01-14 14:58:59 -0700
 title: A day in the life of Utah's ArcGIS Server Base Maps
 categories:

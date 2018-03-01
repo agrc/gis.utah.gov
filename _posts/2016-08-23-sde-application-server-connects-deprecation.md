@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
 tags: []
-published: true
 date: 2016-08-23 22:45:23
 title: 'SDE Application Server Connects Deprecation '
 categories:

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - aerial photography
   - google
   - imagery
-published: true
 date: 2015-03-05 15:59:52 -0700
 title: Using Utah's Google Imagery License
 categories:

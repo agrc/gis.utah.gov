@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - address
   - data
   - geocoding
-published: true
 date: 2013-04-16 17:50:19 -0600
 title: Progress Update, Utah Address Points GIS Layer
 categories:

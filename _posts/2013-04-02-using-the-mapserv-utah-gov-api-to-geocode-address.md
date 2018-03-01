@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags:
   - address
   - geocoding
-published: true
 date: 2013-04-02 08:51:51 -0600
 title: Using the mapserv.utah.gov api to geocode address
 categories:

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - '911'
   - address points
   - nena
-published: true
 date: 2015-10-28 15:48:23 -0600
 title: NENA National Guidance for GIS Address Points
 categories:

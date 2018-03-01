@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags:
   - base maps
   - open source
-published: true
 date: 2015-01-20 07:51:04 -0700
 title: How To Use AGRC Base Maps in QGIS
 categories:

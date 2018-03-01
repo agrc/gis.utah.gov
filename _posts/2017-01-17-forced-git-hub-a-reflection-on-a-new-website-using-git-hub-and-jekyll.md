@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Steve Gourley
   email: SGourley@utah.gov
 tags: []
-published: true
 date: 2017-01-17 19:19:39
 title: Forced GitHub; A reflection on a new website using GitHub and Jekyll
 categories:

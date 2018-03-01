@@ -1,7 +1,4 @@
 ---
-layout: page
-status: publish
-published: true
 title: gis.utah.gov stats
 permalink: /stats
 ---

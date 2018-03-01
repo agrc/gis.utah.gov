@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,7 +8,6 @@ tags:
   - seismology
   - ugs
   - utah geologic survey
-published: true
 date: 2016-01-22 13:31:17 -0700
 title: Utah Geological Survey Releases New Interactive Fault Map
 categories:

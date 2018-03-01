@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: page
 title: Developers
 author:
   display_name: Steve Gourley
@@ -12,7 +10,6 @@ tags:
   - web services
   - widgets
 categories: []
-published: true
 date: 2011-04-05 22:01:27 -0500
 ---
 <div class="grid">

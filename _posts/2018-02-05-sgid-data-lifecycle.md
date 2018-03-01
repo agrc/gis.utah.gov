@@ -1,17 +1,13 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'SGID Data Lifecycle'
+title: SGID Data Lifecycle
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
 date: 2018-02-05 19:19:18
 categories:
-- Featured
+  - Featured
 tags:
-- sgid
-- process
+  - process
 ---
 
 Over the past several months, AGRC has been updating the State Geographic Information Database (SGID) data lifecycle process. The data lifecycle process starts with data creation and extends to finalizing data for internal and external use. AGRC’s goal is to streamline this process and make data clearer and more accessible for all involved parties, from AGRC to local, state, and federal partners.

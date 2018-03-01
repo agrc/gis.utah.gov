@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -13,9 +11,8 @@ tags:
   - rivers
   - southern utah
   - sovereign lands
-published: true
 date: 2015-10-28 11:42:28 -0600
-title: "New Lidar and Orthophotography for Utah and Colorado\u2019s Most Scenic Rivers"
+title: New Lidar and Orthophotography for Utah and Colorado’s Most Scenic Rivers
 categories:
   - Featured
 ---

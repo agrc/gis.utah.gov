@@ -1,18 +1,14 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'Maps on the Hill 2018'
+title: Maps on the Hill 2018
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
 date: 2018-02-05 16:46:08
-categories:
-
+categories: []
 tags:
-- maps on the hill
-- moth
-- ugic
+  - maps on the hill
+  - moth
+  - ugic
 ---
 
 The seventh annual Maps on the Hill event was held on January 30, 2018, in the Utah State Capitol building rotunda. This annual event provides a valuable opportunity to raise awareness of the GIS field and to engage legislators in discussion of GIS-related issues. There was a great turnout this year, with just under fifty displays of maps and apps. These displays were created by various contributors, including Utah cities, universities, state and county departments, offices, and more, and covered a range of topics, such as showing vulnerability during an earthquake in Salt Lake City, mapping Utah film history, and mapping Uber rides in the Salt Lake Valley.  Each display told a story of different GIS data, and the displays were judged and awarded based on their ability to convey the value of GIS-based solutions.

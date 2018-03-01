@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags: []
-published: true
 date: 2016-04-01 19:23:49
 title: Why I Speak at Conferences and You Should Too
 categories:

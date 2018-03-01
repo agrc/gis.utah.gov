@@ -1,18 +1,14 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'An update to School Districts in the Salt Lake County area'
+title: An update to School Districts in the Salt Lake County area
 author:
   display_name: M Heagin
   email: mheagin@utah.gov
 date: 2017-09-05 20:05:24
-categories:
-
+categories: []
 tags:
-  - schools
-  - districts
   - boundaries
+  - districts
+  - schools
 ---
 
 Jordan School District and Murray School District have mutually agreed to a boundary adjustment as described below:

@@ -1,7 +1,4 @@
 ---
-layout: post
-status: publish
-published: true
 title: Scheduled Maintenance License Manager
 author:
   display_name: Michael Foulger
@@ -10,7 +7,6 @@ date: 2017-07-18 21:10:18
 categories:
   - Featured
 tags:
-  - esri
   - license
   - license manager
   - system

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - gps network
   - surveyor
   - trimble pivot
-published: true
 date: 2014-01-17 12:38:58 -0700
 title: GPS Network now on Trimble Pivot VRS System
 categories:

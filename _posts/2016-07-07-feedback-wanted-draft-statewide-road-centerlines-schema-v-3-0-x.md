@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags:
   - roads
   - schema
-published: true
 date: 2016-07-07 21:21:51
 title: 'Feedback Wanted: Draft Statewide Road Centerlines Schema v3.0.x'
 categories:

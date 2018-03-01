@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
@@ -8,7 +6,6 @@ tags:
   - arcgis server
   - printing
   - wmts
-published: true
 date: 2017-02-02 21:04:30
 title: Printing Web Maps with Discover Services
 categories:

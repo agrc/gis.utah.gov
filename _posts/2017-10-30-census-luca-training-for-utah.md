@@ -1,17 +1,14 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'Census LUCA Training for Utah'
+title: Census LUCA Training for Utah
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 date: 2017-10-30 22:09:42
-categories:
+categories: []
 tags:
-- census
-- address
-- location
+  - address
+  - census
+  - location
 ---
 As a lot of folks know, it's in Utah communities' interest to get a full population count during the upcoming 2020 census. For example, [funding formulas for many programs are tied to demographic data collected by the Census Bureau](https://www.nsgic.org/gwu-counting-for-dollars--census-informed-federal-program-funding). The census count is also used as a guide for redrawing local, state, and national election districts. Helping Census prepare for 2020 is important and something that Utah GIS and addressing professionals are uniquely positioned to do.
 

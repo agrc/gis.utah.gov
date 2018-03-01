@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags: []
-published: true
 date: 2015-08-24 08:55:37 -0600
 title: Boost Your Productivity With Vim
 categories:

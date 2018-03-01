@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: page
 title: AGRC Mission Statement
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
 categories: []
-published: true
 date: 2011-07-06 19:50:58 -0600
 ---
 #### The mission of AGRC is

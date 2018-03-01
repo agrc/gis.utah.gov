@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2012-06-08 12:02:31 -0600
 title: Update to Address System Quadrants
 categories:

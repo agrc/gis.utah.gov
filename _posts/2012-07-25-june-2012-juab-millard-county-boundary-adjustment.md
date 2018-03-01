@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2012-07-25 11:31:49 -0600
 title: Juab and Millard Counties Adjust Shared Boundary
 categories:

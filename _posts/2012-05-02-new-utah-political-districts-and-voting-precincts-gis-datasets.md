@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - political
   - redistricting
   - voting
-published: true
 date: 2012-05-02 15:55:01 -0600
 title: New Political Districts & Voting Precincts datasets
 categories:

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - conference
   - quiz
   - ugic
-published: true
 date: 2016-05-26 19:01:07
 title: AGRC&#039;s Latest Where in Utah Quiz and UGIC 2016 Conf Recap
 categories: []

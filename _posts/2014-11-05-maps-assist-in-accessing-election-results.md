@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2014-11-05 10:27:43 -0700
 title: Maps Assist in Accessing Election Results
 categories:

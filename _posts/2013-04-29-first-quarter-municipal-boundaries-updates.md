@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
 tags: []
-published: true
 date: 2013-04-29 09:13:10 -0600
 title: First quarter Municipal Boundaries updates
 categories: []

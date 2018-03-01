@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags: []
-published: true
 date: 2015-04-06 08:32:18 -0600
 title: 'Windows Scheduler: Get Your Priorities Straight'
 categories:

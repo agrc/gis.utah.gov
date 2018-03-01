@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags:
   - best practices
   - data
-published: true
 date: 2014-04-30 18:11:06 -0600
 title: 'Feedback Wanted: Proposed Best Practices for Tagging Utah Metadata'
 categories:

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - deq
   - dnr
   - uintah basin
-published: true
 date: 2014-03-26 15:53:05 -0600
 title: 'Give it a Try: One Page GIS Data Maturity Assessment'
 categories:

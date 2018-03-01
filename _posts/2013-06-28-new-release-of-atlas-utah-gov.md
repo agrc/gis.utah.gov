@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - api
-published: true
 date: 2013-06-28 14:18:44 -0600
 title: New Release of atlas.utah.gov
 categories:

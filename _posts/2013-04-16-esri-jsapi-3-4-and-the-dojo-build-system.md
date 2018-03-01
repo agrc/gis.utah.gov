@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags:
   - javascript
-published: true
 date: 2013-04-16 06:43:30 -0600
 title: ESRI JSAPI 3.4 and the Dojo Build System
 categories:

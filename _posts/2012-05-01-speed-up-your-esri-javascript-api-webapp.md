@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
 tags:
   - developers
   - javascript
-published: true
 date: 2012-05-01 13:57:31 -0600
 title: Using The Dojo Build System To Speed Up Your ESRI JavaScript API Apps
 categories:
