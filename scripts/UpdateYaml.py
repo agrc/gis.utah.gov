@@ -111,24 +111,39 @@ def discover_files(walk_dir):
 
     for root, subdirs, files in os.walk(walk_dir):
         if (root.startswith(walk_dir + 'images') or root.startswith(walk_dir + '_site') or root.startswith(walk_dir + 'downloads') or
-                root.startswith(walk_dir + '.grunt')):
+                root.startswith(walk_dir + '.grunt') or root.startswith(walk_dir + 'scripts') or root.startswith(walk_dir + '_sass') or
+                root.startswith(walk_dir + '_plugins') or root.startswith(walk_dir + 'bower_components') or root.startswith(walk_dir + 'node_modules') or
+                root.startswith(walk_dir + '.github')):
             continue
 
         for filename in files:
             _, extension = os.path.splitext(filename)
+
+            if extension is None:
+                continue
+
             if extension.lower() not in ['.html', '.md']:
+                continue
+
+            if filename.lower() in ['readme.md', 'yaml']:
                 continue
 
             file_path = os.path.join(root, filename)
 
-            print('\t- file %s (full path: %s)' % (filename, file_path))
+            # print('\t- file %s (full path: %s)' % (filename, file_path))
 
             with open(file_path, 'r') as original, open(file_path + '.bak', 'w') as updated:
-                front_matter = yaml.load(pluck_yaml(original), Loader=yaml.Loader)
+                try:
+                    front_matter = yaml.load(pluck_yaml(original), Loader=yaml.RoundTripLoader)
+                except Exception as e:
+                    print(e)
+                    os.remove(file_path + '.bak')
+                    continue
 
                 if front_matter is None:
                     print('skipping {}'.format(original))
-                    os.rename(file_path + '.bak', file_path)
+                    # os.rename(file_path + '.bak', file_path)
+                    os.remove(file_path + '.bak')
                     continue
 
                 front_matter = prune_keys(front_matter)
