@@ -64,6 +64,14 @@ def prune_keys(front_matter):
             if key in unused_author_keys:
                 front_matter['author'].pop(key, None)
 
+    if 'published' in keys:
+        if front_matter['published'] is True:
+            front_matter.pop('published', None)
+
+    if 'layout' in keys:
+        if front_matter['layout'] == 'page' or front_matter['layout'] == 'post':
+            front_matter.pop('layout', None)
+
     return front_matter
 
 
