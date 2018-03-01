@@ -2,17 +2,17 @@
 layout: default
 ---
 <div class="post">
-
-{% if page.title %}
   <header class="post-header">
     <p class='sub-title text-center muted'>By {{ page.author.display_name }} on {{ page.date | date: '%b %d, %Y' }}</p>
+{% if page.update_date %}
+    <p class='sub-title text-center'>Updated {{ page.update_date | date: '%b %d, %Y' }}</p>
+{% endif %}
+{% if page.title %}
     <h1 class="post-title">{{ page.title }}</h1>
+{% endif %}
     <p class="sub-title read-time text-center muted">This article will take {{ content | reading_time | pluralize: "minute" }} to read</p>
   </header>
- {% endif %}
-
   <article class="post-content">
     {{ content }}
   </article>
-
 </div>
