@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags:
   - best practices
   - discover
-published: true
 date: 2016-12-20 23:21:12
 title: Important GIS Web Services Continuity Notes from DNR and AGRC
 categories:

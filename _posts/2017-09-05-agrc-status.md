@@ -1,15 +1,12 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'AGRC System Status Page'
+title: AGRC System Status Page
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
 date: 2017-09-05 18:29:31
 categories:
-  - Featured
   - Developer
+  - Featured
 tags:
   - monitoring
 ---

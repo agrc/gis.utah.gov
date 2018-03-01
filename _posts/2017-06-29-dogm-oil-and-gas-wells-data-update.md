@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags:
   - data
-published: true
 date: 2017-06-29
 title: DOGM Oil and Gas Wells Data Update
 categories:

@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - plss
   - surveyor
-published: true
 date: 2014-05-27 16:30:10 -0600
 title: PLSS Corner Management Web Application Redesign
 categories:

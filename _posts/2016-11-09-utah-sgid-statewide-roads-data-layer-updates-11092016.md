@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
 tags:
   - data
   - roads
-published: true
 date: 2016-11-09
 title: Utah SGID Statewide Roads Data Layer Updates 11/09/2016
 categories:

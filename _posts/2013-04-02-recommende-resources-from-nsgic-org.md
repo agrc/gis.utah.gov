@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2013-04-02 13:09:59 -0600
 title: Recommended GIS Resources from NSGIC.org
 categories:

@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
 tags: []
-published: true
 date: 2014-01-09 11:26:33 -0700
 title: Newest updates to the Municipal Boundaries
 categories:

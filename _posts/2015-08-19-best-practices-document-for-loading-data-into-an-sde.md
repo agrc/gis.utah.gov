@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - best practices
   - data
-published: true
 date: 2015-08-19 16:38:44 -0600
 title: Best Practices for Loading Data into an SDE
 categories:

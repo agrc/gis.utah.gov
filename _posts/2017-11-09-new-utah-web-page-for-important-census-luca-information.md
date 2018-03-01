@@ -1,19 +1,16 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'New Utah Web Page for Important Census LUCA Information'
+title: New Utah Web Page for Important Census LUCA Information
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 date: 2017-11-09 20:36:48
 categories:
-- Featured
+  - Featured
 tags:
-- census
-- luca
-- address
-- demographic
+  - address
+  - census
+  - demographic
+  - luca
 ---
 If you manage city or county address data in GIS or other formats, AGRC has a [new web page]({{ "/data/address/census-luca-2020/" | prepend: site.baseurl }}) with Utah-specific information about the Census Bureau's Local Update of Census Address program.
 

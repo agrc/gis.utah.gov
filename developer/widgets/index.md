@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: page
 title: Geospatial Widgets
 author:
   display_name: Steve Gourley
@@ -11,7 +9,6 @@ tags:
   - widgets
 categories:
   - Developer
-published: true
 date: 2011-06-30 18:22:37 -0500
 ---
 #### Save yourself some time and use our widgets!

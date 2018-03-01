@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
 tags:
   - apple
   - google
-published: true
 date: 2012-06-06 10:52:29 -0600
 title: Apple, Google, 3D and GIS
 categories:

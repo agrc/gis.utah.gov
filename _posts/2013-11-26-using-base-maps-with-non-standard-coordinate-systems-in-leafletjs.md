@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
@@ -8,7 +6,6 @@ tags:
   - base maps
   - javascript
   - open source
-published: true
 date: 2013-11-26 15:20:50 -0700
 title: Using Base Maps with Non-standard Coordinate Systems in LeafletJS
 categories:

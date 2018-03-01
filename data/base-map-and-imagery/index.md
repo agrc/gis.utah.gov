@@ -1,10 +1,7 @@
 ---
-status: publish
-layout: page
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
-published: true
 date: 2011-11-03 18:11:05 -0600
 title: SGID Base Map & Imagery Services
 categories:

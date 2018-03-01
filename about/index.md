@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: page
 title: About AGRC
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
 tags: []
 categories: []
-published: true
 date: 2011-06-30 23:18:14 -0600
 ---
 <div class="pull-right" markdown="1">

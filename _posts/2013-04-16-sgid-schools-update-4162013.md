@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Data Queen
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - data
   - school
   - usoe
-published: true
 date: 2013-04-16 17:19:14 -0600
 title: SGID Schools Update 4/16/2013
 categories:

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: page
 title: Online Base Map Maintenance Schedule
 author:
   display_name: Steve Gourley
@@ -11,7 +9,6 @@ tags:
   - schedule
 categories:
   - Developer
-published: true
 date: 2011-08-05 00:05:21 -0600
 ---
 AGRC plans on updating the data driving these cached base maps on a regular schedule where applicable. This way our online base map caches will remain current with the most up to date data in our SGID.

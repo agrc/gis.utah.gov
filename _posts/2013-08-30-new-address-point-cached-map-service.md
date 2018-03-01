@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - data
   - gis server
   - map service
-published: true
 date: 2013-08-30 13:31:42 -0600
 title: New Address Point Cached Map Service
 categories:

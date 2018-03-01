@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Michael Foulger
   email: michaelfoulger@utah.gov
 tags: []
-published: true
 date: 2012-09-13 10:00:46 -0600
 title: New SDE Connection Properties for ArcGIS Desktop 10.x
 categories:

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -10,7 +8,6 @@ tags:
   - google
   - imagery
   - update
-published: true
 date: 2015-07-30 15:06:19 -0600
 title: Google Imagery (Update, July 2015)
 categories:

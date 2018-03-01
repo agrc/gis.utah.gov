@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -17,7 +15,6 @@ tags:
   - tax
   - uac
   - valuation
-published: true
 date: 2016-05-26 16:44:03
 title: Work Group Recommends Expanded GIS Parcel Sharing
 categories:

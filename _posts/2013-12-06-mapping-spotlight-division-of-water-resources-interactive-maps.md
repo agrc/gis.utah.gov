@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - department of water resources
   - dnr
   - mapping spotlight
-published: true
 date: 2013-12-06 13:28:31 -0700
 title: 'Mapping Spotlight: Division of Water Resources Interactive Maps'
 categories:

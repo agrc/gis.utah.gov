@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
 tags: []
-published: true
 date: 2016-06-15 21:48:58
 title: GPS Signal Jamming
 categories: []

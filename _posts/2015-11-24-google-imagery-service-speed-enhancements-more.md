@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2015-11-24 15:57:20 -0700
 title: Google Imagery Service Speed Enhancements & More
 categories:

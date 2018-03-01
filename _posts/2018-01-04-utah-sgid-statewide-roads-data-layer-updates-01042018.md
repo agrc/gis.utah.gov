@@ -1,7 +1,4 @@
 ---
-layout: post
-status: publish
-published: true
 title: Utah SGID Statewide Roads Data Layer Updates 01/04/2018
 author:
   display_name: Greg Bunce
@@ -10,7 +7,6 @@ date: 2018-01-04
 categories:
   - Featured
 tags:
-  - centerlines
   - roads
 ---
 

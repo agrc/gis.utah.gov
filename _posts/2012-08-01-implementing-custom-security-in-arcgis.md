@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov

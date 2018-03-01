@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -11,7 +9,6 @@ tags:
   - road centerlines
   - roads
   - transportation
-published: true
 date: 2016-09-16 19:27:44
 title: 'Road Centerlines: Schema Update and Regional Workshop Notes'
 categories:

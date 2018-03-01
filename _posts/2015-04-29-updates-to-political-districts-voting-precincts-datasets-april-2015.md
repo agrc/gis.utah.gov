@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
 tags: []
-published: true
 date: 2015-04-29 14:16:45 -0600
 title: Updates To Political Districts & Voting Precincts datasets April 2015
 categories:

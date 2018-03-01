@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - rtk
   - surveyor
   - turngps
-published: true
 date: 2013-09-13 12:41:14 -0600
 title: TURN GPS Network Updates
 categories:

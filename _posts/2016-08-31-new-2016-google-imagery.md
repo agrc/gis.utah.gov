@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags: []
-published: true
 date: 2016-08-31 18:18:10
 title: New 2016 Google Imagery
 categories:

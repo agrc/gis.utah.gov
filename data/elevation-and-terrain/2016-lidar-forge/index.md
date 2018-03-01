@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: page
 tags:
   - dem
   - lidar
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-published: true
 date: 2017-11-28 15:30:30
 title: 2016 FORGE LiDAR Elevation Data
 categories: []

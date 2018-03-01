@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov

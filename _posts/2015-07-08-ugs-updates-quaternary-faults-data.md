@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -11,7 +9,6 @@ tags:
   - quaternary
   - ugs
   - utah geologic survey
-published: true
 date: 2015-07-08 11:05:04 -0600
 title: UGS Updates Quaternary Faults Data
 categories:

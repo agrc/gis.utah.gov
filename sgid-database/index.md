@@ -1,14 +1,10 @@
 ---
-status: publish
-layout: page
 tags:
-  - SGID
-  - SDE
   - how to
+  - sgid
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
-published: true
 date: 2012-04-10 13:58:58 -0600
 title: How to Connect to the SGID via ArcSDE
 categories: []

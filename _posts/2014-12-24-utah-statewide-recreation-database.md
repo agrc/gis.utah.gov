@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -11,7 +9,6 @@ tags:
   - recreation
   - trail heads
   - trails
-published: true
 date: 2014-12-24 12:19:06 -0700
 title: Utah Statewide Recreation Database
 categories:

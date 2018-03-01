@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2014-12-17 11:15:13 -0700
 title: TURN GPS Network
 categories:

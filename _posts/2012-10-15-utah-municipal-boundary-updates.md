@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
 tags: []
-published: true
 date: 2012-10-15 09:29:59 -0600
 title: Utah Municipal Boundary Updates
 categories:

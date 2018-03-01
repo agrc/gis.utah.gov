@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2012-06-14 17:13:42 -0600
 title: Utah Oil and Gas GIS Data Updates
 categories:

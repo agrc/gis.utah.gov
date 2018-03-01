@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Greg Bunce
   email: GBunce@utah.gov
 tags:
   - geocoding
   - roads
-published: true
 date: 2017-06-27 00:38:49
 title: 'Rethinking Geocoders: Adding Local Vernacular into the Build Process'
 categories:

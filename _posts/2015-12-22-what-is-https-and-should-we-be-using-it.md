@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - agol
-published: true
 date: 2015-12-22 14:45:30 -0700
 title: 'What is HTTPS, and should we be using it? '
 categories:

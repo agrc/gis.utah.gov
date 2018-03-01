@@ -1,15 +1,12 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'UC2017-The Science of Where'
+title: UC2017-The Science of Where
 author:
   display_name: Rick Kelson & Mike Heagin
   email: rkelson@utah.gov, mheagin@utah.gov
 date: 2017-07-31 15:39:16
 categories: []
 tags:
-- conference
+  - conference
 ---
 
 Sizewise, the 2017 Esri User Conference turned out to be the biggest UC yet, with over 16,000 attendees. This year’s theme was [The Science of Where](http://www.esri.com/videos/watch?videoid=XrU8GX7manc&channelid=UCJ203R9PsZn6wF_zYfsp1SA&title=The%20Science%20of%20Where%20-%20Unlock%20Data%E2%80%99s%20Full%20Potential) - Unlock Data’s Full Potential. The “The Science of Where” is defined as “the science of geography and the technology of GIS”. GIS is the framework for applying location science to almost everything, since most things have a geospatial component. ESRI’s Jack Dangermond spoke on creating the “modern GIS architecture” where everyone is leveraging web services to work smarter, and more collaboratively, with the best most-current information. Jack also emphasized how data sharing is essential to the work we all do.

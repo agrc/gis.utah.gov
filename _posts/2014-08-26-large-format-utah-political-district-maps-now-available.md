@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -11,7 +9,6 @@ tags:
   - lt. governor
   - political
   - senate
-published: true
 date: 2014-08-26 18:00:53 -0600
 title: Large Format Utah Political District Maps Now Available
 categories:

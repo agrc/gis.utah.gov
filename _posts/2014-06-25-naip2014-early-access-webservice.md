@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -12,7 +10,6 @@ tags:
   - naip
   - raster
   - usda
-published: true
 date: 2014-06-25 12:57:48 -0600
 title: National Agricultural Imagery Program (NAIP) 2014 - Early Access Web Service
 categories:

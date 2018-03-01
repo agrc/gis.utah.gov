@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -16,7 +14,6 @@ tags:
   - roads
   - society
   - transportation
-published: true
 date: 2013-11-26 14:21:05 -0700
 title: 'Utah Mapping Resources: Well-Prepared for NextGen 9-1-1'
 categories:

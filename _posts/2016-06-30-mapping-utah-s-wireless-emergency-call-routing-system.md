@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
@@ -8,9 +6,8 @@ tags:
   - '911'
   - psap
   - utah communications authority
-published: true
 date: 2016-06-30 15:04:18
-title: "Mapping Utah\u2019s Wireless Emergency Call Routing System"
+title: Mapping Utah’s Wireless Emergency Call Routing System
 categories:
   - Featured
 ---

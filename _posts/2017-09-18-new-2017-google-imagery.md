@@ -1,16 +1,13 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'New 2017 Google Imagery'
+title: New 2017 Google Imagery
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 date: 2017-09-19 19:55:05
 categories:
-- Featured
+  - Featured
 tags:
-- imagery
+  - imagery
 ---
 
 The new 2017 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({{ "/discover/" | prepend:site.baseurl }})! Updated areas (map below) include the what Google calls the Salt Lake, Heber, Logan, St. George and Tooele blocks which comprise

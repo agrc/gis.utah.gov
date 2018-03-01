@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: page
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags:
-  - help
   - faq
-published: true
+  - help
 date: 2012-11-15 16:33:52 -0700
 title: Imagery Format Problem Fixes and Workarounds
 categories: []

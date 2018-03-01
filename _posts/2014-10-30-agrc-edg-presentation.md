@@ -1,10 +1,7 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Steve Gourley
 tags: []
-published: true
 date: 2014-10-30 11:44:52 -0600
 title: Using AGRC's Geocoding and Map-based Web Services
 categories:

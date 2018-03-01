@@ -1,19 +1,15 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'PLSS Fabric Version 2.0 Release'
+title: PLSS Fabric Version 2.0 Release
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
 date: 2018-02-01 23:31:11
 categories:
-- Featured
+  - Featured
 tags:
-- plss
-- parcel fabric
-- cadastre
-
+  - cadastre
+  - parcel fabric
+  - plss
 ---
 
 Finally, an update for the Utah Public Land Survey System (PLSS) Fabric! The Automated Geographic Reference Center (AGRC) has published a PLSS Fabric Version 2.0 (V2.0) for the start of 2018. As the [US Geological Survey describes](https://nationalmap.gov/small_scale/a_plss.html), “The Public Land Survey System (PLSS) is a way of subdividing and describing land in the United States.” The PLSS Fabric is a new method for parcel management that allows all of the various PLSS data layers to be updated simultaneously, which has helped expedite the updating of the data.

@@ -1,15 +1,12 @@
 ---
-status: publish
-layout: page
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
 date: 2015-03-03 13:59:32 -0700
 tags:
-  - imagery
   - how to
+  - imagery
 categories: []
-published: true
 title: Connecting to Image Services from AGRC
 ---
 AGRC hosts a collection of image services that may or may not be available from the [Discover]({{ "/discover" | prepend: site.baseurl }}) server. These services do not require a login. They are live services to a raster mosaic and will draw slower than the Discover server. You have the ability to fine tune the settings on the image services for instance, Computing a Histogram. If you do not need advanced image processing capabilities and want a faster experience, look for the service on the [Discover]({{ "/discover" | prepend: site.baseurl }}) server.

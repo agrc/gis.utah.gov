@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
 tags: []
-published: true
 date: 2014-08-15 11:57:49 -0600
 title: Updates to Municpal Boundaries for the State of Utah
 categories: []

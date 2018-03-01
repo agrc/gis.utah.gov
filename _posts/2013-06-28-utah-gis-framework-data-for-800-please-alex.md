@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - address
   - address points
   - data
-published: true
 date: 2013-06-28 17:00:05 -0600
 title: Utah GIS Framework Data for 800 Please, Alex...
 categories:

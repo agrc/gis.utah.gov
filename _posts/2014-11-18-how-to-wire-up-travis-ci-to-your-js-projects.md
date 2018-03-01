@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags: []
-published: true
 date: 2014-11-18 16:26:46 -0700
 title: How to Wire up Travis-CI to your JS Projects
 categories:

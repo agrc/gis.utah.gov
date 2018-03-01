@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2014-02-21 11:16:16 -0700
 title: 'Map Spotlight: Wind Turbines and Feature Services'
 categories:

@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Christy Heaton
   email: christyheaton@gmail.com
 tags: []
-published: true
 date: 2016-04-26 14:15:06
 title: 'Guest Blog: Things I Learned Working at the Utah AGRC'
 categories: []

@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - parcels
-published: true
 date: 2016-01-21 14:24:04 -0700
 title: New Parcel Web App Improves Usability
 categories:

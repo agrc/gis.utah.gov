@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Kate Smith
   email: kate.smith@draper.ut.us
 tags:
   - emergency response
-published: true
 date: 2017-03-30 18:36:33
 title: Latest News from the Utah Mapping Emergency Technical Team
 categories:

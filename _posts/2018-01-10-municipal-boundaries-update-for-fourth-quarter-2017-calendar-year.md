@@ -1,18 +1,15 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'Municipal Boundaries update for Fourth Quarter 2017 (calendar year)'
+title: Municipal Boundaries update for Fourth Quarter 2017 (calendar year)
 author:
   display_name: mheagin
   email: mheagin@utah.gov
 date: 2018-01-10 19:10:02
 categories:
-- Featured
+  - Featured
 tags:
-- municipal boundaries
-- annexations
-- boundaries
+  - annexations
+  - boundaries
+  - municipal boundaries
 ---
 
 It is the end of the year and here is the final tally for Annexations in 2017. The total number of Annexations and Disconnections processed this year is on par with last year at 89.

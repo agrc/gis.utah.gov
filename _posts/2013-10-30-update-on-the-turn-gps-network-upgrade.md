@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - gps network
   - surveyor
   - turn gps
-published: true
 date: 2013-10-30 11:36:07 -0600
 title: Update on the TURN GPS Network Upgrade
 categories:

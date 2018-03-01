@@ -1,14 +1,11 @@
 ---
-status: publish
-layout: page
 tags:
-  - google
   - discover
+  - google
   - imagery
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-published: true
 date: 2015-02-09 08:00:09 -0700
 title: Discover Server Resources and Information
 categories: []

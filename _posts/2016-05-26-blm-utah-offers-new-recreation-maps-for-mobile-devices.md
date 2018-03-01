@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Kimberly Finch, Public Affairs Specialist, Bureau of Land Management-Utah
   email: kfinch@blm.gov
@@ -9,7 +7,6 @@ tags:
   - geopdf
   - great basin institute
   - recreation
-published: true
 date: 2016-05-26 16:10:01
 title: BLM-Utah Offers New Recreation Maps for Mobile Devices
 categories:

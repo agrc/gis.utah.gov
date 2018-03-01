@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
 tags:
   - fire
-published: true
 date: 2012-07-11 12:39:41 -0600
 title: Interactive Map of State Fire Restrictions
 categories:

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - aerial photography
   - google
   - high resolution
-published: true
 date: 2015-04-30 11:57:15 -0600
 title: 'Google Imagery: WMS and WMTS Imagery Services, & Other Reminders'
 categories:

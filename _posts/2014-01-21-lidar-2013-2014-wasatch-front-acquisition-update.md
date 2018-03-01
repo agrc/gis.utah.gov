@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,7 +8,6 @@ tags:
   - lidar
   - terrain
   - wasatch fault
-published: true
 date: 2014-01-21 13:29:59 -0700
 title: LiDAR 2013-2014 Wasatch Front Acquisition Update
 categories:

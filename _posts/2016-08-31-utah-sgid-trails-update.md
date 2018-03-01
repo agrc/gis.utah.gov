@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags:
   - data
   - trails
-published: true
 date: 2016-08-31 13:20:00
 title: Utah SGID Trails Data Layer Updates
 categories:

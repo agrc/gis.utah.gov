@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - census
   - data
   - united states census bureau
-published: true
 date: 2013-08-30 12:18:17 -0600
 title: Utah Works with the United States Census Bureau
 categories:

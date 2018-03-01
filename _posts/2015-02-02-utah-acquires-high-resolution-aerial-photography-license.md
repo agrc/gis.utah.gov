@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2015-02-02 16:00:36 -0700
 title: Utah Acquires High Resolution Aerial Photography License
 categories:

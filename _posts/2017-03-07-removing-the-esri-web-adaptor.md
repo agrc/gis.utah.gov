@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Steve Gourley
   email: SGourley@utah.gov
 tags: []
-published: true
 date: 2017-03-07 05:10:58
 title: Removing and Replacing the Esri Web Adaptor
 categories:

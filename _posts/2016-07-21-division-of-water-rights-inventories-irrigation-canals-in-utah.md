@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Division of Water Rights
   email: rloftus@utah.gov
@@ -9,7 +7,6 @@ tags:
   - dwr
   - nhd
   - water
-published: true
 date: 2016-07-21 19:30:03
 title: Division of Water Rights Inventories Irrigation Canals in Utah
 categories:

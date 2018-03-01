@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: page
 title: Maps on the Hill
 author:
   display_name: JP
 tags: []
-published: true
 date: 2016-03-23 17:55:50 -0700
 categories: []
 ---

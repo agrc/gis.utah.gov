@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -8,7 +6,6 @@ tags:
   - discover
   - google
   - naip
-published: true
 date: 2017-02-21 22:06:11
 title: New Services on Discover Imagery & Base Map Server
 categories:

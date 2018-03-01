@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: page
 tags:
   - sharing
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-published: true
 date: 2017-01-26 23:40:06
 title: State - Local GIS Data Partnerships
 categories: []

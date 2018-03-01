@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2013-01-31 14:00:52 -0700
 title: State of Utah Global Positioning Reference Network, One-Time Maintenance Funding
 categories:

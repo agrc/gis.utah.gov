@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: page
 title: User Groups
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
 tags: []
 categories: []
-published: true
 date: 2011-06-30 23:16:09 -0600
 ---
 

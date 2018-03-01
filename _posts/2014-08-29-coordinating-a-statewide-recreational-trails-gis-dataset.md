@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2014-08-29 14:25:49 -0600
 title: Coordinating a Statewide Recreational Trails GIS Dataset
 categories:

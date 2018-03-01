@@ -1,18 +1,14 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Greg Bunce
   email: GBunce@utah.gov
 tags:
-  - roads
   - data model update
-  - sgid
+  - federal highway administration arnold
   - next generation 911
-  - Federal Highway Administration ARNOLD
-published: true
+  - roads
 date: 2017-08-15 14:17:00
-title: 'Major update coming to the SGID Statewide Roads Data Model'
+title: Major update coming to the SGID Statewide Roads Data Model
 categories:
   - Featured
   - SGID Blog

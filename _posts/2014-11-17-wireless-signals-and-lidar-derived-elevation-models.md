@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -13,7 +11,6 @@ tags:
   - dtm
   - lidar
   - viewshed
-published: true
 date: 2014-11-17 12:15:04 -0700
 title: Wireless Signals and LiDAR Derived Elevation Models
 categories:

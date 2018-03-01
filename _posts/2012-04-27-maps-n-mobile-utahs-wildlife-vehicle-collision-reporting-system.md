@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - mobile
   - vehicle
   - web services
-published: true
 date: 2012-04-27 11:41:48 -0600
 title: "Maps n' Mobile: Wildlife-Vehicle Collision Reporting"
 categories:

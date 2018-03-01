@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags:
   - roads
-published: true
 date: 2016-04-29 19:12:17
 title: 'Mark Your Calendar: UDOT/AGRC Regional Road Centerline Meetings - Correction
   from Newsletter'

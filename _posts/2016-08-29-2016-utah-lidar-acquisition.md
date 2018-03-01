@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags: []
-published: true
 date: 2016-08-29 18:17:41
 title: 2016 Utah LiDAR Acquisition Updated
 categories:

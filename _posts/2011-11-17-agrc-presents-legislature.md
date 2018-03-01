@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - legislature
   - presentation
   - web services
-published: true
 date: 2011-11-17 08:34:02 -0700
 title: AGRC presents to Legislature
 categories:

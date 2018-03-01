@@ -1,14 +1,11 @@
 ---
-status: publish
-layout: page
 tags:
-  - TURN
-  - GPS
   - cadastre
+  - gps
+  - turn
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
-published: true
 date: 2011-06-30 23:13:39 -0600
 title: The Utah Reference Network (TURN) GPS
 categories: []

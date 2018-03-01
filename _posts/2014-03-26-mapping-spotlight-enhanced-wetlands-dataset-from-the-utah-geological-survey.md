@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -11,7 +9,6 @@ tags:
   - pel
   - ugs
   - water
-published: true
 date: 2014-03-26 15:30:15 -0600
 title: 'Map Spotlight: Enhanced Wetlands Dataset from the Utah Geological Survey'
 categories:

@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: M Heagin
   email: mheagin@utah.gov
@@ -10,7 +8,6 @@ tags:
   - city
   - municipal boundaries
   - town
-published: true
 date: 2016-12-30 22:58:57
 title: End of year 2016 (fourth quarter) Updates for Municipal Boundaries
 categories:

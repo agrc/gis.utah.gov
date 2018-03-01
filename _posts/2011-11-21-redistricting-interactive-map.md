@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - cache
   - redistricting
   - web services
-published: true
 date: 2011-11-21 14:39:22 -0700
 title: Redistricting interactive map available
 categories:

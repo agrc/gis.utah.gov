@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags:
   - javascript
-published: true
 date: 2015-09-17 07:41:59 -0600
 title: Mock your Dojo AMD modules with StubModule.js
 categories:

@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - dnr
   - roi
-published: true
 date: 2015-04-27 16:19:36 -0600
 title: First DNR GIS ROI Contest Concludes with Overwhelming Success
 categories:

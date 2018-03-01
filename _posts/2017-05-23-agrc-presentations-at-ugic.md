@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - conference
   - presentations
   - ugic
-published: true
 date: 2017-05-23 21:20:00
 title: AGRC Presentations at UGIC
 categories:

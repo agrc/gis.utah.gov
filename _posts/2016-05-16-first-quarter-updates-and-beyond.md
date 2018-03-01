@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
@@ -9,7 +7,6 @@ tags:
   - boundary data
   - incorporation
   - municipalities
-published: true
 date: 2016-05-16 21:55:12
 title: First Quarter Updates and beyond.
 categories:

@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Data Queen
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2013-01-03 10:41:31 -0700
 title: End of 2012 Municipal Boundaries Update
 categories:

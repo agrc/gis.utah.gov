@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - pivot
   - surveyor
   - turn gps
-published: true
 date: 2014-03-26 15:03:26 -0600
 title: GPS Network News
 categories:

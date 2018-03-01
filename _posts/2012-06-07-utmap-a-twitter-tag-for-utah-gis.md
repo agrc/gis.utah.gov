@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags:
   - twitter
   - ugic
-published: true
 date: 2012-06-07 12:41:35 -0600
 title: '#utmap: A Twitter Tag for Utah GIS'
 categories:

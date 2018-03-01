@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -8,7 +6,6 @@ tags:
   - archaeology
   - generalized
   - history
-published: true
 date: 2014-10-29 14:03:08 -0600
 title: New generalized archaeology dataset in the SGID
 categories:

@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags:
   - javascript
   - tools
-published: true
 date: 2015-05-25 17:01:31 -0600
 title: Staying in the Zone with AMD Butler
 categories:

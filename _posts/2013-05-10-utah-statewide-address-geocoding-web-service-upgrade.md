@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
@@ -9,7 +7,6 @@ tags:
   - api
   - locator
   - web service
-published: true
 date: 2013-05-10 14:22:13 -0600
 title: Utah Statewide Address Geocoding Web Service Upgrade
 categories:

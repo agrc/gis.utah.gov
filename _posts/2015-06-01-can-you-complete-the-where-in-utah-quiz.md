@@ -1,13 +1,10 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
 tags:
   - aerial photography
   - quiz
-published: true
 date: 2015-06-01 13:14:14 -0600
 title: Can you complete the "Where in Utah" quiz?
 categories:

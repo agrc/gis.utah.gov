@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
 tags:
   - basemap
-published: true
 date: 2012-07-25 10:14:45 -0600
 title: UDOT features AGRC basemaps during International User Conference
 categories:

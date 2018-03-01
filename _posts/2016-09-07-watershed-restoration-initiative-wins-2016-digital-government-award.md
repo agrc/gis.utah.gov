@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2016-09-07 19:54:05
 title: Watershed Restoration Initiative Wins 2016 Digital Government Award
 categories:

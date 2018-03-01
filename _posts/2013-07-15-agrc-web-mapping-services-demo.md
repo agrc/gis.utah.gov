@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags: []
-published: true
 date: 2013-07-15 11:31:37 -0600
 title: AGRC Web Mapping Services Demo
 categories:

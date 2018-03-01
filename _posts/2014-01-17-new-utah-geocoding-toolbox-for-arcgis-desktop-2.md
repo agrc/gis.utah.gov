@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Data Queen
   email: agrc@utah.gov
 tags:
   - geocoding
-published: true
 date: 2014-01-17 11:57:08 -0700
 title: 'New: Utah Geocoding Toolbox for ArcGIS Desktop'
 categories:

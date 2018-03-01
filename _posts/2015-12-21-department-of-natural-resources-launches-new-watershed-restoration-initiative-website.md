@@ -1,6 +1,4 @@
 ---
-status: publish
-layout: post
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -10,7 +8,6 @@ tags:
   - web applications
   - web mapping
   - wri
-published: true
 date: 2015-12-21 11:33:58 -0700
 title: 'Department of Natural Resources Launches New Watershed Restoration Initiative
   Website '

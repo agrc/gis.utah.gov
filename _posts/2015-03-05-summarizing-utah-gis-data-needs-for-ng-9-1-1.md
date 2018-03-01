@@ -1,11 +1,8 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags: []
-published: true
 date: 2015-03-05 16:02:52 -0700
 title: Summarizing Utah GIS Data Needs for NG 9-1-1
 categories:

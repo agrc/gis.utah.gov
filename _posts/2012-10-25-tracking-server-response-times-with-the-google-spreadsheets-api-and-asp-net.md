@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
 tags:
   - code
-published: true
 date: 2012-10-25 12:39:06 -0600
 title: Tracking Server Response Times with the Google Spreadsheets API and asp.net
 categories:

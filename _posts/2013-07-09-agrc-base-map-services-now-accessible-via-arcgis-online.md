@@ -1,12 +1,9 @@
 ---
-status: publish
-layout: post
 author:
   display_name: Bert Granberg
   email: agrc@utah.gov
 tags:
   - agol
-published: true
 date: 2013-07-09 14:34:21 -0600
 title: AGRC Base Map Services Now Accessible via ArcGIS Online
 categories:

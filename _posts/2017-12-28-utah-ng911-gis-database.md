@@ -1,18 +1,15 @@
 ---
-layout: post
-status: publish
-published: true
-title: 'Hey, Utah! Are you ready for Next Generation 911?'
+title: Hey, Utah! Are you ready for Next Generation 911?
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
 date: 2017-12-28 10:15:55
 categories:
-- Featured
+  - Featured
 tags:
-- 'Next Generation 911'
-- '911'
-- 'Utah 911'
+  - '911'
+  - next generation 911
+  - utah 911
 ---
 Preparing for Next Generation 911 (NG911) is largely a group effort by individuals and agencies at the local, state and national levels. AGRC is one of those agencies. We’re on the forefront of NG911 Data in Utah, and we’ve been coordinating with a variety of key players and navigating plenty of policies and guidelines to make the transition. With so many involved parties and policy details it can be overwhelming just trying to understand how the system works. So, let's talk about NG911.
 
