@@ -50,4 +50,5 @@ subaddresses (unit and apartment numbers), residences with clustered mailboxes s
 rural delivery route addresses, and communities with PO Box only mail delivery.
 The LUCA process will push us all to create/refine Utah address data resources. We'll also discuss how this work can best be organized to support the Census process but also meet similar data requirements for emergency response and other vital service needs, while complying with the strict legal restrictions for handling the input address data received from Census.
 
-If you have questions, please feel free to contact Matt Peters [by phone or email]({{ "/about/contact/" | prepend: site.baseurl }}).
+If you have questions, please feel free to contact {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.luca_liaison %}{% endcapture %}
+{{ contact | strip_newlines }}
