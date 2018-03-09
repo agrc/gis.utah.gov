@@ -60,6 +60,10 @@ module.exports = function (grunt) {
             search: {
                 src: ['node_modules/mustache/mustache.min.js', 'js/source/search.js'],
                 dest: 'js/dist/search.min.js'
+            },
+            viewcounter: {
+                src: 'js/source/view-counter.js',
+                dest: 'js/dist/view-counter.min.js'
             }
         }
     });

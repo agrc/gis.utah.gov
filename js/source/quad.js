@@ -1,3 +1,5 @@
-new List('table', {
-    valueNames: ['name', 'number', 'code', 'county']
-});
+(function () {
+    new List('table', {
+        valueNames: ['name', 'number', 'code', 'county']
+    });
+}());
