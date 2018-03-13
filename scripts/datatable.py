@@ -30,7 +30,7 @@ def munge_data(item, i, indices):
         if value is None:
             return ''
 
-        return value.encode('utf-8')
+        return value
 
     def should_link(value):
         if value is None or len(value) == 0:
@@ -94,8 +94,6 @@ def create(data):
     categories = list(set([x['category'] for x in data]))
     categories.sort()
     html = '''---
-layout: page
-status: publish
 title: SGID Index
 ---
 <h6 id='show_filters' class='pointer'><i class="fas fa-search"></i> Show Filters</h6>
@@ -120,7 +118,7 @@ title: SGID Index
         html += '''
             <tr>
 {}
-            </tr>'''.format('\n'.join(['                <td data-th="{0}" class="{0}">{1}</td>'.format(key, value) for key, value in item.iteritems()]))
+            </tr>'''.format('\n'.join(['                <td data-th="{0}" class="{0}">{1}</td>'.format(key, value) for key, value in item.items()]))
     html += '''
         </tbody>
     </table>
@@ -135,12 +133,12 @@ if __name__ == '__main__':
     gc = pygsheets.authorize(service_file='client_secret.json')
 
     data = get_sheet_data(gc, '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ', 'SGID Stewardship Info')
-    data = filter(lambda x: len(x['name']) > 0, data)
+    data = [x for x in data if len(x['name'].strip()) > 0]
     html = create(data)
 
     file_path = join(dirname(__file__), '..', 'data', 'sgid-index', 'index.html')
 
-    with open(file_path + '.bak', 'wb') as data:
+    with open(file_path + '.bak', 'w') as data:
         data.writelines(html)
 
     rename(file_path + '.bak', file_path)

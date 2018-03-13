@@ -87,7 +87,7 @@ def prune_tags(front_matter):
     if tags is None:
         return []
 
-    if isinstance(tags, basestring):
+    if isinstance(tags, str):
         tags = [tags]
 
     ok_tags = set([str(x).lower() for x in tags if x not in useless_tags])
@@ -106,7 +106,7 @@ def prune_categories(front_matter):
     if categories is None:
         return []
 
-    if isinstance(categories, basestring):
+    if isinstance(categories, str):
         categories = [categories]
 
     ok_categories = set([x for x in categories if x in acceptable_categories])
