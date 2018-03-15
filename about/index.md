@@ -98,7 +98,7 @@ _Some of the organizations that we have partnered with or worked for recently_
 | [Department of Natural Resources](http://naturalresources.utah.gov) | Department of Public Safety | [Department of Transportation (UDOT)](http://udot.uplan.opendata.arcgis.com/) |
 | Department of Workforce Services | Federal Communications Commission | Governors Office of Economic Development |
 | Governors Office of Energy Development | Mountainland Asssociation of Government | NENA |
-| [NGSIC](http://www.nsgic.org) | [NTIA](https://www.ntia.doc.gov/) | [Office of Legislative Research & General Counsel](https://le.utah.gov/lrgc/lrgc.htm) |
+| [NSGIC](http://www.nsgic.org) | [NTIA](https://www.ntia.doc.gov/) | [Office of Legislative Research & General Counsel](https://le.utah.gov/lrgc/lrgc.htm) |
 | [openaddresses.org](https://openaddresses.io/) | Public Lands Policy & Coordination Office | Public Service Commission |
 | Questar Gas | Salt Lake City | Salt Lake County Surveyor |
 | [Trust Lands Administration (SITLA)](https://trustlands.utah.gov/resources/maps/) | United States Geological Survey | [University of Utah](http://www.geog.utah.edu/) |
