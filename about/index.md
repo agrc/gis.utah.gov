@@ -101,7 +101,7 @@ _Some of the organizations that we have partnered with or worked for recently_
 | [NSGIC](http://www.nsgic.org) | [NTIA](https://www.ntia.doc.gov/) | [Office of Legislative Research & General Counsel](https://le.utah.gov/lrgc/lrgc.htm) |
 | [openaddresses.org](https://openaddresses.io/) | Public Lands Policy & Coordination Office | Public Service Commission |
 | Questar Gas | Salt Lake City | Salt Lake County Surveyor |
-| [Trust Lands Administration (SITLA)](https://trustlands.utah.gov/resources/maps/) | United States Geological Survey | [University of Utah](http://www.geog.utah.edu/) |
+| [Trust Lands Administration (SITLA)](https://trustlands.utah.gov/resources/maps/) | [United States Geological Survey](https://www.usgs.gov/) | [University of Utah](http://www.geog.utah.edu/) |
 | [US Census Bureau](https://www.census.gov/geo/) | [US Library of Congress](http://www.digitalpreservation.gov/) | US Representative Jason Chaffetz |
 | US Representative Jim Matheson | US Representative Rob Bishop | US Senator Orrin Hatch |
 | [Utah 911 Advisory Committee](http://uca911.org/911-division) | [Utah Association of Counties](http://uacnet.org) | [Utah Communications Authority](http://uca911.org)|
