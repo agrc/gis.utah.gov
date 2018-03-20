@@ -1,4 +1,4 @@
-title: 'Newest Updates for Tax data 2018'
+title: 'Newest Updates for Tax Data 2018'
 author:
   display_name: mheagin
   email: mheagin@utah.gov
@@ -13,19 +13,20 @@ tags:
   - Transit Special Tax Areas
 ---
 
-With April being just around the corner it’s tax time again. If you don’t procrastinate and have already done your taxes, you might be interested in knowing just who is getting that hard earned money you make. Well we have data for that.
+With April just around the corner, it’s tax time again. If you don’t procrastinate and you've already done your taxes, you might be interested in knowing just who is getting that hard-earned money you make. 
+
+Well, we have data for that.
 
 Newest Tax Entities and Areas for 2017
-This is the final list of all entities for 2017, these are the incorporated bodies that have the power to levy a local property tax such as school districts, cities, special service districts, even mosquito abatement districts. While these do not represent exact legal boundaries, they are used by USTC Property Tax Division for assessing properties.
-While the entities can overlap, the areas represent individual polygons of intersecting  entities. 
+This is the final 2017 list of all incorporated bodies that have the power to levy a local property tax: school districts, cities, special service districts&mdash;even mosquito abatement districts. While these entities don't represent exact legal boundaries, they are used by the Utah State Tax Commission, Property Tax Division, for assessing properties. The entities can overlap, but the areas represent individual polygons of intersecting entities. 
  
-Newest Sales Tax areas for Quarter 1, 2018
-Sales Tax Areas are created from the municipal boundaries, metro townships, special sales tax districts and the unincorporated areas. They represent the approximate boundaries of Sales Tax Collection Areas in Utah.
+Newest Sales Tax Areas for Quarter 1, 2018
+Sales Tax Areas are created from municipal boundaries, metro townships, special sales tax districts, and unincorporated areas. They represent the approximate boundaries of Sales Tax Collection Areas in Utah.
 
-Updated Transit Special Tax Areas.
-These represent areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses). As cities grow and annex the unincorporated areas the transit areas get smaller.
+Updated Transit Special Tax Areas
+Transit Special Tax Areas represent areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses). As cities grow and annex the unincorporated areas, the transit areas get smaller.
 
 
 Available for Download
 
-All these data layers can be downloaded from the web site [Sales Tax Areas and Tax Entity Areas](https://gis.utah.gov/data/economy/taxingareas/)
+All these data layers can be downloaded from the AGRC website [Sales Tax Areas and Tax Entity Areas](https://gis.utah.gov/data/economy/taxingareas/).
