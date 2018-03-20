@@ -12,7 +12,7 @@ categories:
   - Featured
 ---
 
-The final extract for the [Utah PLSS Parcel Fabric](http://mapserv.utah.gov/PLSS) has been delivered to AGRC by the BLM and its contractors. The PLSS map layer is now actively being maintained by AGRC, and work continues to convert existing PLSS survey control point documentation (tie-sheets) to digital formats in preparation for adjusting the Fabric in each county. We estimate 40% of the existing control points now have validated digital geographic coordinates.
+The final extract for the [Utah PLSS Parcel Fabric](https://plss.utah.gov/) has been delivered to AGRC by the BLM and its contractors. The PLSS map layer is now actively being maintained by AGRC, and work continues to convert existing PLSS survey control point documentation (tie-sheets) to digital formats in preparation for adjusting the Fabric in each county. We estimate 40% of the existing control points now have validated digital geographic coordinates.
 
 AGRC is working with SITLA to add digital boundaries for the public and private land ownership and designations into the fabric one county at a time. Working in the parcel fabric allows any and all adjustments or additions to be applied at once to all the layers involved in the PLSS: Townships, Sections, Secondary Division, Special Surveys, and the Land Ownership features that SITLA contributes. Land ownership boundaries for Davis and Morgan counties have been added to the fabric and adjusted with the addition of the high precision survey control points. Summit County is currently in progress, with Sevier, Sanpete, and Cache counties on deck. The digital survey control for these counties has been compiled and validated and is ready for integration into the Fabric when they are ready.
 

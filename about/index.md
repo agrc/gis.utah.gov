@@ -57,7 +57,7 @@ AGRC is funded through a combination of State general and restricted funds and c
 - Location Analytics
 - [911 Map Data Support]( {{"/about/gis-for-911/" | prepend: site.baseurl }} )
 - [Municipal](http://municert.utah.gov), Voting, and other Civic Boundaries
-- [Public Land Survey System](http://mapserv.utah.gov/plss)
+- [Public Land Survey System](https://plss.utah.gov)
 - Spatial Database Design, Integration and Hosting
 - [Statewide Address Point Aggregation]({{ "/data/location/address-data/" | prepend: site.baseurl }})
 - [Statewide Road Centerline Aggregation]({{ "/data/transportation/roads-system" | prepend: site.baseurl }})
