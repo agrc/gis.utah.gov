@@ -29,4 +29,4 @@ Transit Special Tax Areas represent areas outside of incorporated municipalities
 
 Available for Download
 
-All these data layers can be downloaded from the AGRC website [Sales Tax Areas and Tax Entity Areas](https://gis.utah.gov/data/economy/taxingareas/).
+All these data layers can be downloaded from the AGRC website [Sales Tax Areas and Tax Entity Areas]({{ "/data/economy/taxingareas/" | prepend: site.baseurl }}).
