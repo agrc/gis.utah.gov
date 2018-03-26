@@ -12,15 +12,7 @@ date: 2017-05-01 15:01:33
 categories: []
 ---
 
-<style type="text/css">
-#logo {
-  max-width: 500px;
-  margin: 0 auto;
-}
-</style>
-<div id="logo">
-  <img src="images/discover.png" alt="Discover Logo" class="outline" />
-</div>
+<img src="images/discover.png" alt="Discover Logo" class="flex flex--center outline" />
 <h2 class="text-left"><i class="fas fa-fw fa-plane"></i> Getting Started</h2>
 <p class="pop text-center">
   <strong>Anyone</strong> can use the AGRC imagery and base map services from Discover! To use these services, all you need is a <strong><em>free</em></strong> account and a <em>quad-word</em> connection link.
@@ -32,7 +24,7 @@ categories: []
   <li>If you are requesting access on behalf of one of Utah’s: <strong>cities, counties, special districts, state agencies, K–12 or higher education institutions, or tribal entities</strong>, or if you are a <strong>contractor and formal partner</strong> of one of these organizations, you are covered by our license agreement to access imagery provided by Google on Discover. In this case, please read and complete the <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a> to obtain access. You can read more about our Google Imagery license <a href="{{ "/discover/license/" | prepend: site.baseurl }}">here</a>.
   <li>If you are <strong>not</strong> part of one of the organizations listed above, please complete the <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform">Discover Server Access Form</a> to get access to all of the nonlicensed base maps and imagery services.
 </ol>
-<p>Once you have completed either form (<strong>please only fill out one</strong>), you will receive information about the services and a link to access the Discover Server. 
+<p>Once you have completed either form (<strong>please only fill out one</strong>), you will receive information about the services and a link to access the Discover Server.</p>
 <h3 class="text-left" id="connect"><i class="fab fa-fw fa-mixcloud"></i> Get Connected</h3>
 <p>The URL that you receive to access the server will contain a quad-word (e.g., <code>https://discover.agrc.utah.gov/login/path/your-unique-quad-word/</code>) that is unique to you or your organization (i.e., unique to each user). Discover is able to serve many different clients by exposing <acronym title="Open GIS Consortium">OGC</acronym> compliant <acronym title="Web Map Service">WMS</acronym>, <acronym title="Web Map Tile Service">WMTS</acronym>, and direct tile access services.</p>
 <strong>Example Discover URL Templates</strong>
@@ -61,9 +53,9 @@ categories: []
   <li><i class="fas fa-fw fa-lock"></i> <code>Utah</code> – Combination of the most recent 1-meter <abbr title="National Agriculture Imagery Program">NAIP</abbr> and 6-inch Google Imagery with scale-dependent rendering <strong>(licensed)</strong>
   <li><i class="fas fa-fw fa-lock"></i> <code>Google</code> – 6-inch statewide natural-color aerial photography from Google, collected within the last 3 years <strong>(licensed)</strong>
   <li><i class="fas fa-fw fa-lock"></i> <code>Google {year} archive</code> – Aerial photography blocks updated in <code>Google</code> Service and archived by acquisition year <strong>(licensed)</strong>
-    <ul class="dotless">
+    <ul class="dotless no-margin">
       <li><em>Available Years: 2011–2016</em>
-         </ul>
+    </ul>
   <li><i class="fas fa-fw fa-unlock"></i> <code>Basemap-Address_Points</code> – Base map of address point locations
   <li><i class="fas fa-fw fa-lock"></i> <code>Basemap-Hybrid</code> – Base map combination of the overlay base map and Utah Imagery Service <strong>(licensed)</strong>
   <li><i class="fas fa-fw fa-unlock"></i> <code>Basemap-Lite</code> – Base map of hillshade, highways and streets, cities, boundaries, etc. (gray, muted tone)
@@ -71,19 +63,19 @@ categories: []
   <li><i class="fas fa-fw fa-unlock"></i> <code>Basemap-Terrain</code> – Base map of hillshade, highways and streets, parks, forests, water, etc.
   <li><i class="fas fa-fw fa-unlock"></i> <code>Basemap-Topo</code> – Base map of US Geological Survey topographic maps
   <li><i class="fas fa-fw fa-unlock"></i> <code><abbr title="Digital Ortho Photo Quads">DOQ</abbr> 1990s BW</code> – 1-meter statewide black-and-white aerial photography, collected in the 1990s
-  <li><i class="fas fa-fw fa-unlock"></i> <code><abbr title="High Resolution Othrophotography">HRO</abbr> 2012 RGB</code> – 12.5-cm natural-color aerial photography of the Wasatch Front, collected in 2012 
+  <li><i class="fas fa-fw fa-unlock"></i> <code><abbr title="High Resolution Othrophotography">HRO</abbr> 2012 RGB</code> – 12.5-cm natural-color aerial photography of the Wasatch Front, collected in 2012
   <li><i class="fas fa-fw fa-unlock"></i> <code>NAIP {year} RGB</code> – 1-meter statewide natural-color aerial photography
-    <ul class="dotless">
-      <li><em>Available Years: 2006, 2009, 2011, 2014, 2016</em>
-         </ul>
+  <ul class="dotless no-margin">
+    <li><em>Available Years: 2006, 2009, 2011, 2014, 2016</em>
+  </ul>
   <li><i class="fas fa-fw fa-unlock"></i> <code>NAIP {year} NRG</code> – 1-meter statewide color infrared aerial photography
-    <ul class="dotless">
-      <li><em>Available Years: 2006, 2011, 2014, 2016</em>
-         </ul>
+  <ul class="dotless no-margin">
+    <li><em>Available Years: 2006, 2011, 2014, 2016</em>
+  </ul>
   <li><i class="fas fa-fw fa-unlock"></i> <code>Hillshade</code> – 10-meter statewide combined hillshade and slope
 </ul>
 <h3 class="text-left"><i class="far fa-fw fa-thumbs-up"></i> Best Practices</h3>
 <ul>
-<li>It is strongly recommended that you use <code>WMTS</code> for the best draw time/perceived performance.
-<li>If you are, or will be, printing base maps from the web and are experiencing blank or empty output, read about our solution <a href="{{"/printing-web-maps-with-discover-services/" | prepend:site.baseurl }}">here</a>. 
+  <li>It is strongly recommended that you use <code>WMTS</code> for the best draw time/perceived performance.
+  <li>If you are, or will be, printing base maps from the web and are experiencing blank or empty output, read about our <a href="{{site.baseurl}}{% post_url 2017-02-02-printing-web-maps-with-discover-services %}">GP proxy service</a> or our new <a href="{{site.baseurl}}{% post_url 2018-02-26-success-with-serverless %}">serverless print proxy</a>.
 </ul>
