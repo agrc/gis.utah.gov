@@ -124,7 +124,6 @@ documentation: https://www.netlify.com/docs/redirects/
 /agrc_sgid/naip.html                                                                                      /data/aerial-photography/                                                     301
 /agrc/                                                                                                    /about/contact/                                                               301
 /category/data/                                                                                           /data/                                                                        301
-/data/                                                                                                    /data/                                                                        301
 /data/location/place-areas/                                                                               /data/location/gnis/                                                          301
 /data/utah-sgid-image-server/                                                                             /discover/                                                                    301
 /download/                                                                                                /data/                                                                        301
