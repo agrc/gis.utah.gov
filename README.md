@@ -74,7 +74,7 @@ _**bold italics**_
 
 #### font matter
 
-- `|page` - the post vs page layout
+- `page` - the post vs page layout
 - `title: Title` - the title of the content
 - `author.display_name: Full Name` - The author of the content
 - `author.email: email@address` - The author email
