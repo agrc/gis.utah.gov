@@ -74,7 +74,7 @@ module.exports = function (grunt) {
 
     // use this task if you are running this from user.github.io or localhost:4444
     grunt.registerTask('default', [
-        'imagemin',
+        'imagemin:all',
         'uglify'
     ]);
 };
