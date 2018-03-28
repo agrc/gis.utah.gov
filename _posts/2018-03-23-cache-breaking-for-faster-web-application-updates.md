@@ -10,7 +10,7 @@ tags: []
 ---
 
 ### When Production Is Broken, It Needs to Be Fixed Now!
-Recently, the URL changed for one of the map services we use in several of our applications. This came as a bit of a surprise to us, so we quickly updated our applications and deployed new versions. Everything seemed great and we continued on our way. However, two days later one of our clients reported that some of his users still did not have the updated applications in their browsers. Walking clients through how to clear their browser caches felt unprofessional—like I'd be giving them an unnecessary, and possibly unwelcome, explanation of a simple subject. (Obviously not the ideal solution.) So I started doing some digging on how I could solve this problem behind the scenes. 
+Recently, the URL changed for one of the map services we use in several of our applications. This came as a bit of a surprise to us, so we quickly updated our applications and deployed new versions. Everything seemed great and we continued on our way. However, two days later one of our clients reported that some of his users still did not have the updated applications in their browsers. As a programmer, I knew that the simple solution was to have them clear their browser caches. But it felt unprofessional for me to walk them through this process when it was something I could fix for them, and it was a skill they really didn’t need to know. So I started doing some digging on how I could solve this problem behind the scenes.  
 
 ### Head[er]aches
 Here's an example of a request for the main JS file for our application:
