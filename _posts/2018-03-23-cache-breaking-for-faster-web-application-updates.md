@@ -35,3 +35,5 @@ Here's an example of new headers for the main JavaScript file for the applicatio
 ![screenshot of headers]({{ '/images/better_headers.png' | prepend: site.baseurl }}){: .flex .flex--center .outline }
 
 Once I decided on the headers that I wanted, configuring our [IIS web server](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/staticcontent/clientcache) was [fairly straightforward](https://github.com/agrc/deq-enviro/blob/c11865a477be1d5970c457636d9c738df58483e0/_src/web.config). Here's an example of a commit that implements this entire solution: [https://github.com/agrc/deq-spills/commit/c396cca4f7fc906fd5f965888c0a992b5ae0b9df](https://github.com/agrc/deq-spills/commit/c396cca4f7fc906fd5f965888c0a992b5ae0b9df).
+
+At the end of the day, adjusting the caching settings was the simple solution I was looking for. I could maintain a high level of professionalism, knowing I’d done my job well, and clients could work without interruption.
