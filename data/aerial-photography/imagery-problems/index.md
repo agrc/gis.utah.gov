@@ -40,7 +40,7 @@ Some users experience problems using the latest imagery products provided by AGR
 
 - Use our <a href="{{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}">Imagery Services.</a>
 - Download the free image viewer<a href="http://www.irfanview.com/"> IrfanViewServer</a> and save the image to a `jpg` format.
-- Download the free <a href="http://fwtools.maptools.org/" target="_blank">FWTools</a> toolkit and decompress the TIFF. (_see FWTools example 2 below_)
+- Download the free <a href="http://fwtools.maptools.org/" target="_blank" rel="noopener">FWTools</a> toolkit and decompress the TIFF. (_see FWTools example 2 below_)
 
 ##### FWTools
 
