@@ -15,5 +15,5 @@ categories:
 <p>When: Wednesday, January 29, 2014: Displays will be up from 10:30am-12:30pm<br />
 Where: Utah State Capitol Rotunda<br />
 What: Maps! Topics include public safety, natural resources, infrastructure & utilities, regional planning, emergency management, recreation, and transportation.</p>
-<p><strong>Get a sneak peak of the event in the <a href="{{ "/downloads/Maps-on-the-Hill-Map-Book-2014-web.pdf" | prepend: site.baseurl }}" target="_blank">Maps on the Hill Map Book 2014</a></strong>. This is a great opportunity to learn about some of the cool maps people are working on in Utah, and to meet the mapmakers.</p>
+<p><strong>Get a sneak peak of the event in the <a href="{{ "/downloads/Maps-on-the-Hill-Map-Book-2014-web.pdf" | prepend: site.baseurl }}" target="_blank" rel="noopener">Maps on the Hill Map Book 2014</a></strong>. This is a great opportunity to learn about some of the cool maps people are working on in Utah, and to meet the mapmakers.</p>
 <p>Please share this <a href="{{ "/downloads/2014MOTHFlyer.pdf" | prepend: site.baseurl }}">flyer</a> with anybody who might be interested. <a href="{{ "/about/visiting-agrc/" | prepend: site.baseurl }}">Parking</a> will be limited at the Capitol, carpooling or public transit are suggested. </p>
