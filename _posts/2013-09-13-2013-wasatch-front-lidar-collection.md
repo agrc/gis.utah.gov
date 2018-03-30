@@ -26,12 +26,12 @@ categories:
 <p>Quality Level 1 is currently the 'Cadillac' data specification for LiDAR as it provides the highest level of horizontal and vertical exactness, as well as multiple measures from the same square meter, enabling among other things, structures and ground surfaces to be measured through tree canopies.</p>
 <p>The primary intended uses for the new LiDAR data include but are not limited to:</p>
 <ul>
-<li>Planning, preparing & mitigating flooding hazards through <a href="http://www.fema.gov/risk-mapping-assessment-planning">FEMA's Risk Map</a> modernization program</li>
+<li>Planning, preparing & mitigating flooding hazards through <a href="https://www.fema.gov/risk-mapping-assessment-planning">FEMA's Risk Map</a> modernization program</li>
 <li>Detailed detection of earthquake faults and related hazard modeling and vulnerability studies</li>
 <li>Delineation of building and structure footprints for general purpose mapping</li>
 </ul>
 <p>Many other non-traditional uses of LiDAR data are possible such as detecting landslides and slumping, optimizing irrigation, and <a href="http://www.slideshare.net/bgranberg/salt-lake-solar-ignite">quantifying solar energy systems potential</a> on rooftops and other surfaces.</p>
-<p>The 2013 LiDAR acquisition is funded through a partnership of the <a href="http://earthquake.usgs.gov/">US Geological Survey</a>, <a href="http://geology.utah.gov/">Utah Geological Survey</a>, <a href="http://dem.utah.gov/">Utah Division of Emergency Management</a>, FEMA, and a consortium of local government led by the <a href="http://surveyor.slco.org/">Salt Lake County Surveyor's Office</a>. Flights are expected to begin mid Fall, weather conditions permitting, and data delivery is anticipated several months after the flights are completed. </p>
+<p>The 2013 LiDAR acquisition is funded through a partnership of the <a href="https://earthquake.usgs.gov/">US Geological Survey</a>, <a href="https://geology.utah.gov/">Utah Geological Survey</a>, <a href="https://dem.utah.gov/">Utah Division of Emergency Management</a>, FEMA, and a consortium of local government led by the <a href="http://surveyor.slco.org/">Salt Lake County Surveyor's Office</a>. Flights are expected to begin mid Fall, weather conditions permitting, and data delivery is anticipated several months after the flights are completed. </p>
 <p>Project deliverables include:</p>
 <ul>
 <li>Raw Point Cloud</li>

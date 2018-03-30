@@ -44,9 +44,9 @@ You can learn so much from a house address once it has been geocoded. When you g
 This list could go on and on. In fact, we’ve barely scratched the surface of all the great ideas you can build with our API. Take a look at our [data pages]({{ "/data/sgid-index/" | prepend: site.baseurl }}) to get even more ideas about all the information you can extract to solve a problem or provide context. 
 
 And to really get your imagination going, here are a few searches we’ve already done:
-  - [Find out who your senator and representative are by your address.](http://le.utah.gov/GIS/findDistrict.jsp)
-  - [Be transparent with your customers regarding environmental hazards.](http://enviro.deq.utah.gov/)
-  - [Aid in the decision-making process to restore and manage ecosystems in priority areas across the state.](http://wri.utah.gov/)
+  - [Find out who your senator and representative are by your address.](https://le.utah.gov/GIS/findDistrict.jsp)
+  - [Be transparent with your customers regarding environmental hazards.](https://enviro.deq.utah.gov/)
+  - [Aid in the decision-making process to restore and manage ecosystems in priority areas across the state.](https://wri.utah.gov/)
 
 ## Getting Started
 {: .text-left }

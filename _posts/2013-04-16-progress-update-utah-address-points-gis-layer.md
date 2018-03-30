@@ -23,11 +23,10 @@ categories:
 <li>Comparison to other address lists such as tax rolls, registered voter lists, etc.
 <li>Completeness for the developed and populated areas in a county
 </ul>
-<p>Lastly, a suggestion for ongoing study of the statewide address point database was included in the <a href="http://le.utah.gov/~2013/bills/hbillint/hjr020.pdf">Master Study Resolution (#65)</a> passed into law during the 2013 General Session of the Utah Legislature. As a result, statewide address points, the associated upkeep process, and the important applications for this data are likely to be highlighted during 2013 Interim Legislative season. </p>
+<p>Lastly, a suggestion for ongoing study of the statewide address point database was included in the <a href="https://le.utah.gov/~2013/bills/hbillint/hjr020.pdf">Master Study Resolution (#65)</a> passed into law during the 2013 General Session of the Utah Legislature. As a result, statewide address points, the associated upkeep process, and the important applications for this data are likely to be highlighted during 2013 Interim Legislative season. </p>
 <p>Additional address point resources:</p>
 <ul>
-<li><a href="http://nsgic.org/public_resources/Addresses_FTN_032210.pdf">NSGIC Addressing Coordination Issues </a>(PDF Document - 3/22/10) </li>
-<li><a href="http://nsgic.org/public_resources/Address_Points_FTN_Brochure_050311_Final.pdf">Address Points for the Nation </a>(PDF Document - 5/3/11)</li>
-<li><a href="http://www.nsgic.org/blog/?p=190">Proposed Best Practices for Managing Address Inventories</a></li>
+<li><a href="https://nsgic.org/public_resources/Addresses_FTN_032210.pdf">NSGIC Addressing Coordination Issues </a>(PDF Document - 3/22/10) </li>
+<li><a href="https://nsgic.org/public_resources/Address_Points_FTN_Brochure_050311_Final.pdf">Address Points for the Nation </a>(PDF Document - 5/3/11)</li>
+<li><a href="https://www.nsgic.org/blog/?p=190">Proposed Best Practices for Managing Address Inventories</a></li>
 </ul>
- 

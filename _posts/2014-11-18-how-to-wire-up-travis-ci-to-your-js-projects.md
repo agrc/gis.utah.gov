@@ -30,7 +30,7 @@ notifications:
 
 <p>The lines below before_install load all of the project dependencies via npm &amp; Bower. The notifications code just tells Travis to only send us emails when a build fails.</p>
 <h3 id="package-json">package.json</h3>
-<p>The second part to defining what you want Travis-CI to do is to add a scripts property to the your package.json file for your project. Travis-CI automatically runs npm test for NodeJS projects. Adding this new property to package.json defines this command. We use a special travis <a href="http://gruntjs.com/">GruntJS</a> task to run tasks so this is the command for us:</p>
+<p>The second part to defining what you want Travis-CI to do is to add a scripts property to the your package.json file for your project. Travis-CI automatically runs npm test for NodeJS projects. Adding this new property to package.json defines this command. We use a special travis <a href="https://gruntjs.com/">GruntJS</a> task to run tasks so this is the command for us:</p>
 ```
 "scripts": {
     "test": "grunt travis -v"

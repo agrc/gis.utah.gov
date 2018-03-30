@@ -10,8 +10,8 @@ title: How To Use AGRC Base Maps in QGIS
 categories:
   - Developer
 ---
-<p>Most people know about AGRC&#39;s awesome <a href="{{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}">base maps</a>. They are <a href="{{site.baseurl}}{% post_url 2014-12-22-basemaps-a-2014-day-in-the-life %}">very popular</a> and provide high quality cartography using the latest and greatest data from the <a href="{{ "/data/" | prepend: site.baseurl }}">Utah SGID</a>. But did you know that they provide a <a href="http://en.wikipedia.org/wiki/Web_Map_Tile_Service">WMTS</a> service that can be consumed in non-ESRI products?</p>
-<p>Here&#39;s how to load our base maps in <a href="http://www.qgis.org/en/site/">QGIS 2.6.1</a>:</p>
+<p>Most people know about AGRC&#39;s awesome <a href="{{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}">base maps</a>. They are <a href="{{site.baseurl}}{% post_url 2014-12-22-basemaps-a-2014-day-in-the-life %}">very popular</a> and provide high quality cartography using the latest and greatest data from the <a href="{{ "/data/" | prepend: site.baseurl }}">Utah SGID</a>. But did you know that they provide a <a href="https://en.wikipedia.org/wiki/Web_Map_Tile_Service">WMTS</a> service that can be consumed in non-ESRI products?</p>
+<p>Here&#39;s how to load our base maps in <a href="https://www.qgis.org/en/site/">QGIS 2.6.1</a>:</p>
 <ol>
 <li>The first step is to find the URL to the service that you are interested in. Most of AGRC&#39;s base maps are within a folder called &quot;<a href="http://mapserv.utah.gov/arcgis/rest/services/BaseMaps">BaseMaps</a>&quot; on our main ArcGIS Server instance. Once you find the specific layer that you are interested in, copy the URL for the WMTS link at the top of the services directory page:<br><img src="{{ "/images/WMTSLink.jpg" | prepend: site.baseurl }}" alt="link" width='760'></li>
 <li>Open QGIS and click on the &quot;Add WMS/WMST Layer&quot; button to open the &quot;Add Layer(s) from a WM(T)S Server&quot;.</li>

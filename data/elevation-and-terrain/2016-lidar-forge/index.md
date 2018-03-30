@@ -43,7 +43,7 @@ During the Fall of 2016 AGRC and the Utah Geological Survey acquired [~205 squar
 
 View [Geologic Photographs of the Utah FORGE Project](https://geodata.geology.utah.gov/pages/search.php?search=!collection207) from the Utah Geological Survey.
 
-The naming convention for the tiles are based off the [U.S. National Grid (USNG)]( http://www.fgdc.gov/usng/how-to-read-usng/index_html).
+The naming convention for the tiles are based off the [U.S. National Grid (USNG)]( https://www.fgdc.gov/usng/how-to-read-usng/index_html).
 
 This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
 

@@ -9,7 +9,7 @@ categories: []
 ---
 
 We are into the third quarter and updates to the Municipal Boundaries are available now.
-All of these documents can be reviewed on the [2016 Municipal Certification website](http://municert.utah.gov/2016-certifications).
+All of these documents can be reviewed on the [2016 Municipal Certification website](https://municert.utah.gov/2016-certifications).
 
 Following are the changes and annexations listed by County and City:
 

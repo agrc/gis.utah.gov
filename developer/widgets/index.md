@@ -26,7 +26,7 @@ A few key pieces of functionality that our widgets offer are:
  - **AGRC Base maps** - You can also quickly add common mapping elements, like a map and [layer selector](https://github.com/agrc-widgets/layer-selector), to your website or blog.
  - **Notifications** - You can notify your users with event notification by adding the [toaster widget](https://github.com/agrc-widgets/layer-selector) to your website. This enables a developer to popup or "toast" messages to users when things go well or poorly.
 
-Our widget library, and most all of the work that we do, is open source and accepting contributions. This easily allows for other developers to make improvements to the code. Browse our [both](http://github.com/agrc) of our [github organizations](http://github.com/agrc-widgets) and fork the code!
+Our widget library, and most all of the work that we do, is open source and accepting contributions. This easily allows for other developers to make improvements to the code. Browse our [both](https://github.com/agrc) of our [github organizations](https://github.com/agrc-widgets) and fork the code!
 
 <hr class="divider"/>
 

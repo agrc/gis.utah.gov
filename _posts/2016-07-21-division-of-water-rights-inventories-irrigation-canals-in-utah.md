@@ -16,7 +16,7 @@ categories:
 In 2014, the Division of Water Rights (DWRi) was tasked with creating an inventory of irrigation canals in the State of Utah. The [legislation](https://le.utah.gov/~2014/bills/static/HB0370.html) requiring the inventory required the following criteria: canals had to be open, human­ made, and carry more than 5 cubic feet per second (CFS) of water. All private and commercial canals that meet the criteria are included. With little data meeting the criteria available initially, we started with the DWRi databases of water and irrigation companies and the USGS National Hydrology Dataset (NHD). The legislation requires the inventory to be completed within three years. In that time we will have to research over 1,100 water companies and 9,800 miles of features in the NHD data attributed as ‘canals’.
 
 <div class="caption">
-<a href="http://waterrights.utah.gov/canalinfo/20160714-CanalsPctContacted.jpg">
+<a href="https://waterrights.utah.gov/canalinfo/20160714-CanalsPctContacted.jpg">
 <img src="{{ "/images/CanalInventory.jpg" | prepend: site.baseurl }}" alt="Canal Inventory Status Map" /></a>
 <p class="caption-text">Estimated percentage of<br/>Canals researched by county</p>
 </div>
@@ -36,4 +36,4 @@ Our strategy has been to go county by county, contacting companies we have on fi
 <p class="caption-text">Example of canal on<br/>high resolution aerial imagery</p>
 </div>
 
-Data meeting the legislative requirements is available on the Water Rights website via online map and by downloadable shapefile. The Water Rights canal inventory webpage is located at [waterrights.utah.gov/canalinfo](http://www.waterrights.utah.gov/canalinfo/default.asp). This page includes the water company information and a link to a web viewable map of the canals. The shapefile data can be found at  [waterrights.utah.gov/gisinfo/wrcover.asp](http://www.waterrights.utah.gov/gisinfo/wrcover.asp). A link to download the CANALS shapefile. Both the online map and the shapefile are updated nightly.
+Data meeting the legislative requirements is available on the Water Rights website via online map and by downloadable shapefile. The Water Rights canal inventory webpage is located at [waterrights.utah.gov/canalinfo](https://waterrights.utah.gov/canalinfo/default.asp). This page includes the water company information and a link to a web viewable map of the canals. The shapefile data can be found at  [waterrights.utah.gov/gisinfo/wrcover.asp](https://waterrights.utah.gov/gisinfo/wrcover.asp). A link to download the CANALS shapefile. Both the online map and the shapefile are updated nightly.
