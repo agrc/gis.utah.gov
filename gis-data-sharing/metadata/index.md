@@ -11,7 +11,7 @@ By some accounts, no one in their right mind could claim to enjoy geospatial met
 
 Since the majority of people in Utah use ArcCatalog to create and maintain geospatial metadata, we've tried to make it easy for those contributing data to Utah's State Geographic Information Database (SGID) to provide at least the basic set of metadata that we'd like to see available for all SGID data.
 
-What follows below is a step by step guide to authoring good metadata using the ArcCatalog FGDC Metadata Editor. These are just guidelines that we have adapted and interpreted from the [FGDC Metadata Quick Guide](http://www.fgdc.gov/metadata/documents/MetadataQuickGuide.pdf) to work specifically within ArcCatalog.
+What follows below is a step by step guide to authoring good metadata using the ArcCatalog FGDC Metadata Editor. These are just guidelines that we have adapted and interpreted from the [FGDC Metadata Quick Guide](https://www.fgdc.gov/metadata/documents/MetadataQuickGuide.pdf) to work specifically within ArcCatalog.
 
 #### Notes
 

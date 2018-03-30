@@ -16,7 +16,7 @@ In this post, I'd like to share the top 4 things I learned while working at AGRC
 
 ### **1. The Value of Coding**
 
-While working at the AGRC I was often encouraged to find a way to automate repetitive tasks. While it was outside of my comfort zone and what I’d learned in school, I began to look into Python programming. Thanks to the help and guidance of developers at AGRC, I was able to save time and make my work more accurate by using Python. Once I used Python to write a script that identified the level of precision for the TURN GPS network and displayed the results on the [July 2012 Utah Broadband Project’s Map of the Month](http://broadband.utah.gov/2012/07/25/july-2012-map-of-the-month-the-utah-reference-network-turn/). So cool! Now I use Python as often as possible in both ArcGIS and QGIS.
+While working at the AGRC I was often encouraged to find a way to automate repetitive tasks. While it was outside of my comfort zone and what I’d learned in school, I began to look into Python programming. Thanks to the help and guidance of developers at AGRC, I was able to save time and make my work more accurate by using Python. Once I used Python to write a script that identified the level of precision for the TURN GPS network and displayed the results on the [July 2012 Utah Broadband Project’s Map of the Month](https://broadband.utah.gov/2012/07/25/july-2012-map-of-the-month-the-utah-reference-network-turn/). So cool! Now I use Python as often as possible in both ArcGIS and QGIS.
 
 ### **2. Networking**
 
@@ -24,7 +24,7 @@ Professional networking has been key to finding interesting career opportunities
 
 ### **3. Making a Pretty Map**
 
-Making great maps is harder than you’d think. It requires a mixture of art, understanding of data, and the message you’re trying to give to the viewer. The more you can get a happy mix of these things into your map, the more attractive and effective it will be. Some people just have a knack for these things, but in my experience only practice and an understanding of map making best practices yields improvement. At the AGRC I was given the incredibly fun job of making the Map of the Month of the Utah Broadband Project. Check out my favorite [map](http://broadband.utah.gov/2012/06/21/june-2012-map-of-the-month-national-parks/)!
+Making great maps is harder than you’d think. It requires a mixture of art, understanding of data, and the message you’re trying to give to the viewer. The more you can get a happy mix of these things into your map, the more attractive and effective it will be. Some people just have a knack for these things, but in my experience only practice and an understanding of map making best practices yields improvement. At the AGRC I was given the incredibly fun job of making the Map of the Month of the Utah Broadband Project. Check out my favorite [map](https://broadband.utah.gov/2012/06/21/june-2012-map-of-the-month-national-parks/)!
 
 ### **4. Giving Talks**
 

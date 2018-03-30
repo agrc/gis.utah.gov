@@ -10,7 +10,7 @@ categories: []
 
 We are half way through the year already and updates to the Municipal Boundaries are available now.
 This quarter, Delta City had a [large expansion](https://municert.utah.gov/Media/Default/Municipal%20Certifications/2016/Delta%20City%20Annexation%20(Airport%20annexation)%2005-19-16.pdf) to include the airport.
-All of these documents can be reviewed on the [2016 Municipal Certification website](http://municert.utah.gov/2016-certifications).
+All of these documents can be reviewed on the [2016 Municipal Certification website](https://municert.utah.gov/2016-certifications).
 
 Following are the changes and annexations listed by County and City:
 

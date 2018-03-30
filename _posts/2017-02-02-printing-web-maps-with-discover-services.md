@@ -12,7 +12,7 @@ categories:
   - Developer
 ---
 ### Export Web Map Tool
-The [Export Web Map](http://desktop.arcgis.com/en/arcmap/latest/tools/server-toolbox/export-web-map.htm) tool is a geoprocessing tool that comes published as a [service](http://resources.arcgis.com/en/help/rest/apiref/gp_exportwebmaptask.html) (`Utilities/PrintingTools`) out of the box with ArcGIS Server. From ESRI's docs:
+The [Export Web Map](https://desktop.arcgis.com/en/arcmap/latest/tools/server-toolbox/export-web-map.htm) tool is a geoprocessing tool that comes published as a [service](https://resources.arcgis.com/en/help/rest/apiref/gp_exportwebmaptask.html) (`Utilities/PrintingTools`) out of the box with ArcGIS Server. From ESRI's docs:
 > This tool takes the state of a web application (for example, included services, layer visibility settings, and client-side graphics) and returns a printable page layout or basic map of the specified area of interest.
 
 This is most commonly used as a print service for web applications allowing the user to download a PDF of the current map extent.

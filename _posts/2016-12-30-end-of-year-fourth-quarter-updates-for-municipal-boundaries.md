@@ -27,7 +27,7 @@ There are now five new Metro Townships in Salt Lake County: Magna, White City, K
 For the year the Lt. Governor's Office and AGRC have processed 90 documents for annexations and dissolution's, one City Incorporation, and five Metro Townships incorporations. This represents a few more than were handled last year so we continue to grow. Utah County is still leading with 29 overall, closest second was Cache County with 12. Many thanks to all the City and County Recorder Offices and Surveyors who assist in keeping an accurate representation of Utah's political subdivisions.
 
 All of the incorporation documents can be reviewed on the [2016 Municipal Certification
-website](http://municert.utah.gov/2016-certifications).
+website](https://municert.utah.gov/2016-certifications).
 
 The following are the changes and annexations since Sept. 9, 2016 listed by County and City:
 

@@ -22,7 +22,7 @@ Additionally, in a true NG911 system, GIS plays a significant and required role.
 * dynamically routing all 911 calls, based on digital boundaries, to the appropriate PSAP. 
 The live call-routing function uses what GIS professionals call a 'point-in-polygon-query', or, in NG911-speak; the Emergency Call Routing Function, or ECRF.
 
-With the current system (referred to as E911 since the 'E' was added when mobile phones became supported more than twelve years ago), GIS is used after an emergency call has been delivered to the PSAP - typically to validate the incident location and coordinate the dispatch of responders. Currently, 911 calls are routed to the appropriate PSAP by way of lookup tables (known as Automatic Number Identification (ANI) and Automatic Location Information (ALI)) and a tabular street address table (known as the Master Street Address Guide (MSAG)) that is maintained by the PSAP. Pushing updates to the call-routing system, through these tables, can be timely and cumbersome and may consume valuable time during an emergency situation. NG911, however, will eliminate the need for these tables, as it relies solely on GIS map data. Within Utah, NG911 implementation will be coordinated by the [Utah Communications Authority's](http://uca911.org/911-division) (UCA) 911 Division. To learn more about NG911, visit the UCA [overview page](http://uca911.org/911-division/ng-911-gis).
+With the current system (referred to as E911 since the 'E' was added when mobile phones became supported more than twelve years ago), GIS is used after an emergency call has been delivered to the PSAP - typically to validate the incident location and coordinate the dispatch of responders. Currently, 911 calls are routed to the appropriate PSAP by way of lookup tables (known as Automatic Number Identification (ANI) and Automatic Location Information (ALI)) and a tabular street address table (known as the Master Street Address Guide (MSAG)) that is maintained by the PSAP. Pushing updates to the call-routing system, through these tables, can be timely and cumbersome and may consume valuable time during an emergency situation. NG911, however, will eliminate the need for these tables, as it relies solely on GIS map data. Within Utah, NG911 implementation will be coordinated by the [Utah Communications Authority's](https://uca911.org/911-division) (UCA) 911 Division. To learn more about NG911, visit the UCA [overview page](https://uca911.org/911-division/ng-911-gis).
 
 ## AGRC and NG911
 ![NG911 Datasets]({{ "/images/utah-ng911-database.png" | prepend: site.baseurl }}){: .inline-text-right }
@@ -41,14 +41,14 @@ AGRC also plans to coordinate with UCA to geocode the ALI tables against the Uta
 
 We encourage you to download the [Utah NG911 GIS Database]({{ "/data/911/" | prepend: site.baseurl }}) and take a look at it. We are strong believers that the more eyes are on the data and the more the data is used, the better it will get. If nothing else, make sure house or business addresses, or both, are geocodable in both the `RoadCenterlines` and `AddressPoints` AGRC datasets. These are the datasets that will ensure proper 911 response to your location during an emergency situation. 
 
-If you don’t have the required tools and software to interact with the NG911 dataset, you can use our [mapping website](http://atlas.utah.gov/) to validate your address using the same underlying datasets. These datasets are only as good as we collectively make them, so give them a try and let us know if you experience any problems.
+If you don’t have the required tools and software to interact with the NG911 dataset, you can use our [mapping website](https://atlas.utah.gov/) to validate your address using the same underlying datasets. These datasets are only as good as we collectively make them, so give them a try and let us know if you experience any problems.
 
 {% capture contact %}{% include contact.html text="Comments, questions, or concerns can be directed to" subject=page.title contact=site.data.contacts.roads %}{% endcapture %}
 {{ contact | strip_newlines }}
 
 ### Resources and Further Reading
 
-- [Utah Communications Authority's 911 Division](http://uca911.org/911-division)
+- [Utah Communications Authority's 911 Division](https://uca911.org/911-division)
 - [NENA’s Standard for NG9-1-1 GIS Data Model](https://dev.nena.org/higherlogic/ws/public/download/9828/20161206_NG9-1-1%20GIS%20Data%20Model_PubRvw.pdf)
 - [Utah Mapping Resources: Well-Prepared for NextGen 9-1-1]({{ site.baseurl }}{% post_url 2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911 %})
 - [AGRC’s NG911 Database webpage]({{ "/data/911/" | prepend: site.baseurl }})

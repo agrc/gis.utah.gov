@@ -16,5 +16,5 @@ categories:
 <li>the collaborative approach to assembling and maintaining the data, and </li>
 <li>the architecture of the map which includes the ability to download the raw GIS data and, more importantly, to use the dataset as a dynamic web service, eliminating the need to download and update the data. </li>
 </ul>
-<p>Because of the dynamic feature service (see image below), we were able to <a href="http://utah.maps.arcgis.com/home/item.html?id=7ece6e2d2e8f49c797e5d875fdfacb21">reference this data in the SGID ArcGIS On Line site</a> with virtually no effort. Even the metadata came over successfully without a hitch.</p>
+<p>Because of the dynamic feature service (see image below), we were able to <a href="https://utah.maps.arcgis.com/home/item.html?id=7ece6e2d2e8f49c797e5d875fdfacb21">reference this data in the SGID ArcGIS On Line site</a> with virtually no effort. Even the metadata came over successfully without a hitch.</p>
 <p><a href="{{ "/downloads/wind2.png" | prepend: site.baseurl }}"><img src="{{ "/images/wind2.png" | prepend: site.baseurl }}" alt="" title="wind2" width="714" height="592" class="inline-text-left" /></a></p>
