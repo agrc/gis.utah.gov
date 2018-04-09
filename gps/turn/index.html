@@ -1,0 +1,79 @@
+---
+tags:
+  - cadastre
+  - gps
+author:
+  display_name: AGRC Staff
+  email: agrc@utah.gov
+date: 2011-06-30 23:13:39 -0600
+title: The Nevada GPS Network
+categories: []
+---
+<div class="caption"><img title="map" src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
+  <p class="caption-text">TURN GPS Stations</p>
+</div>
+
+<h2 class="text-left"><i class="fas fa-fw fa-question"></i> What is a Reference Network</h2>
+<p>A GPS network is a high precision Global Navigation Satellite System (GNSS) providing real time corrections and data for post processing. A GNSS network consists of permanently located GPS receivers, installed across the state, that generate real time high accuracy GPS positioning. Basically, all of the permanetly installed GPS receivers send their data to a system that analyizes the input and adjusts and corrects the data to provide the most accurate locations.</p>
+
+<h2 class="text-left"><i class="fas fa-fw fa-info-circle"></i> About this Network</h2>
+<p>The Coordinate Reference Frame for this network is <strong>NAD83(2011)(EPOCH:2010.0000.)</strong>. The Latitude, Longitude and Ellipsoidal Height of each reference station was calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects application.</p>
+<p>Eighteen NGS Continually Operating Reference Stations (CORS) were selected along the perimeter and interior of the network and were constrained to the published coordinates to conduct the final adjustment of the network coordinates.</p>
+<p>With an activated subscription, set your GPS unit's VRS connection address to <code>168.179.231.9</code> and port <code>2101</code>. Enter your new device-specific username and password.</p>
+<h5>Connections from Source Table</h5>
+<p>For Trimble units we have three different connections.</p>
+<ul>
+  <li>VRS_CMR works older Trimble unit
+  <li>VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware.
+  <li>VRS_CMRx works with the newest up to date Trimble units
+</ul>
+<p>All of these give you the network solution.</p>
+<p>For non-Trimble units we have two different connections.</p>
+<ul>
+  <li>VRS_RTCM23 works older non-Trimble unit
+  <li>VRS_RTCM31 works with non-Trimble units
+</ul>
+<p>Both of these give you the network solution.</p>
+<p>MS_CMR, MS_CMRP these are for connecting to single base when you are on the edge of the network or not getting a strong network solution. System will automatically find the closest station and connect you.</p>
+
+<h2 class="text-left"><i class="fas fa-fw fa-space-shuttle"></i> Getting Started</h2>
+<div class="flex flex--row flex--wrap flex--around">
+  <span style="width: 50%; padding: 1em">
+    <h3 class="text-left"><i class="fas fa-fw fa-user-plus"></i> Create an Account</h3>
+    <p>Visit ... and follow the instructions. You'll need a credit card, $$$$, and the following information...</p>
+    <ul>
+      <li>Organization (avoid punctuation)
+      <li>Login
+      <li>Password (8 characters)
+      <li>Contact Name, email, phone number
+      <li>Physical location/address
+      <li>Mailing  address
+    </ul>
+  </span>
+  <span style="width: 50%; padding: 1em">
+    <h3 class="text-left"><i class="fas fa-fw fa-cart-plus"></i> Renew an Account</h3>
+    <p>Visit ... and select <code>Renew Subscription</code>. You'll need a credit card, $$$$, and the following information...</p>
+    <ul>
+      <li>Organization (avoid punctuation)
+      <li>Login
+      <li>Password (8 characters)
+    </ul>
+    <p>When done you will receive a confirmation email and receipt. If the account has expired, it will take about 24 hours for the subscription payment to cycle through and the activation to be complete for field work, otherwise you will not notice any interruption.</p>
+  </span>
+</div>
+
+<div class="flex flex--row flex--wrap flex--around">
+  <span style="width: 50%; padding: 1em">
+    <h2 class="text-left"><i class="far fa-fw fa-life-ring"></i> Support Contacts</h2>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.turn %}</p>
+  </span>
+  <span style="width: 50%; padding: 1em">
+    <h2 class="text-left"><i class="fas fa-fw fa-book"></i> Related Resources</h2>
+    <ul>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/TURNGPS_NetworkMap_8x11.pdf" rel="noopener" target="_blank">TURN GPS Network Map 8.5 x 11</a>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/TURNGPS_NetworkWallMap.pdf" rel="noopener" target="_blank">TURN GPS Network Wall Map</a>
+      <li><a href="http://turngps.utah.gov/Map/SensorMap.aspx" rel="noopener" target="_blank">TURN GPS Sensor Map</a>
+      <li><a href="http://turngps.utah.gov/" rel="noopener" target="_blank">The Utah Reference Network GPS</a>
+    </ul>
+  </span>
+</div>
