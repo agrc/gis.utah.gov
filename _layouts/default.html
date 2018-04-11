@@ -98,9 +98,9 @@
     </div>
   </header>
   <div class="page-content">
+    {% include nav-breadcrumbs.html %}
     <div class="wrapper">
       {{ content }}
-
       <p class="sub-title text-center muted" id="view-counter"></p>
       <script src="{{ '/js/dist/view-counter.min.js' | prepend: site.baseurl }}" async defer></script>
     </div>
