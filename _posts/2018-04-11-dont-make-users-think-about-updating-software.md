@@ -17,7 +17,7 @@ As software developers, we want the people who are using our software to ~~enjoy
 
 > The people who are using your software are motivated by the desire to save time.
 
-Building on the blog post from Scott Davis, _[Cache Breaking for Faster Web Application Updates]({{site.baseurl}}{% post_url 2018-03-23-cache-breaking-for-faster-web-application-updates %})_, which is about website caching techniques for delivering faster updates to users, at its core software development is about improving the user experience of website applications. Getting updates to users is an often overlooked feature and an afterthought. But it is very important—_especially when you ship a lot of bugs_.
+Building on the blog post from Scott Davis, _[Cache Breaking for Faster Web Application Updates]({{site.baseurl}}{% post_url 2018-03-23-cache-breaking-for-faster-web-application-updates %})_, which is about website caching techniques for delivering faster updates to users, at its core, the post is about improving the user experience of website applications. Getting updates to users is an often overlooked feature and an afterthought. But it is very important—_especially when you ship a lot of bugs_.
 
 > I did not find any UX for a Beginner books focused on improving the user experience of delivering software updates to users.
 
@@ -27,7 +27,7 @@ Take a step back to look at the browser you are using to view the web. Do you kn
 
 > Going to a website to download an installer to keep someone else's software current should not be a responsibility of the user.
 
-Modern browsers and app stores remove the hurdles to keeping your and their software evergreen. The term `evergreen` might have become popular when Google Chrome started auto updating in late 2010. Since then, all major browsers have switched to auto updating. Browser auto updating is pretty straightforward&mdash; when you start your browser, it checks for an update and downloads it in the background. Then, the next time you start the software, you are using the newest version. I think this set a precedent for software that users expect and desire. Going to a website to download an installer to keep someone else's software current should not be a responsibility of the user. And placing this responsibility on the users is a great way to turn them away.
+Modern browsers and app stores remove the hurdles to keeping your and their software evergreen. The term `evergreen` might have become popular when Google Chrome started autoupdating in late 2010. Since then, all major browsers have switched to autoupdating. Browser autoupdating is pretty straightforward&mdash; when you start your browser, it checks for an update and downloads it in the background. Then, the next time you start the software, you are using the newest version. I think this set a precedent for software that users expect and desire. Going to a website to download an installer to keep someone else's software current should not be a responsibility of the user. And placing this responsibility on the users is a great way to turn them away.
 
 > Ultimately, this long-winded post is about making ArcGIS Pro add-ins evergreen.
 
@@ -56,7 +56,7 @@ To combat the problem of people not checking GitHub for updates, we updated our 
 # tl;dr
 ## AGRC Extension Building v2.0.0
 
-AGRC has created [Pro Evergreen](https://github.com/steveoh/pro-evergreen), an auto update utility for ArcGIS Pro add-ins. Every add-in that comes out of AGRC will use this package to keep the add-ins evergreen. Pro Evergreen has the functionality to compare the installed version of an add-in with the latest releases on GitHub. More importantly, the functionality to update an add-in is quite simple for the developer.
+AGRC has created [Pro Evergreen](https://github.com/steveoh/pro-evergreen), an autoupdate utility for ArcGIS Pro add-ins. Every add-in that comes out of AGRC will use this package to keep the add-ins evergreen. Pro Evergreen has the functionality to compare the installed version of an add-in with the latest releases on GitHub. More importantly, the functionality to update an add-in is quite simple for the developer.
 
 > evergreen.Update(newVersion);
 
