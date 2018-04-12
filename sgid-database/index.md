@@ -7,6 +7,7 @@ author:
   email: zbeck@utah.gov
 date: 2012-04-10 13:58:58 -0600
 title: How to Connect to the SGID via ArcSDE
+layout: page_nocrumb
 categories: []
 ---
 The SGID is a collection of vector-format GIS feature classes. Its' content is available for download from the [data pages]({{ "/data/" | prepend: site.baseurl }}) on this website or via an ArcSDE database connection **for users within the State of Utah network**. Users with ArcGIS desktop clients that are at 10.2.1 or higher can use this resource.
