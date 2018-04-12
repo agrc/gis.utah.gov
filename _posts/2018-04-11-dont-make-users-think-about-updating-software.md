@@ -13,6 +13,8 @@ tags:
 
 As software developers, we want the people using the software we create to ~~enjoy~~ not _hate_ the experience. Developers strive to create a positive user experience to increase the popularity and usage of their software. Consequently, many hours are spent debating and designing user interactions that are simple, effective, and intuitive.
 
+### skip to the [tl;dr <i class="fas fa-long-arrow-alt-down"></i>](#tldr)
+
 > The people that are using your software are motivated by the desire to save time
 
 Building on the blog post from Scott Davis, _[Cache breaking for faster web application updates]({{site.baseurl}}{% post_url 2018-03-23-cache-breaking-for-faster-web-application-updates %})_, which is about website caching techniques for delivering faster updates to users, at it's core is about improving the user experience of website applications. Getting updates to users is an often overlooked feature and an after thought. But it is very important—_Especially when you ship a lot of bugs_.
