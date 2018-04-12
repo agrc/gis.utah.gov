@@ -29,7 +29,7 @@ kramdown:
 timezone: America/Denver
 breadcrumbs:
     root:
-        hide: true  # show breadcrumbs on root/home page
+        hide: false  # show breadcrumbs on root/home page
         image: false # Show image or title text
 defaults:
   -

@@ -1,5 +1,6 @@
 ---
 title: About AGRC
+layout: page_nocrumb
 author:
   display_name: AGRC Staff
   email: agrc@utah.gov
