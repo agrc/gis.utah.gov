@@ -11,16 +11,29 @@ date: 2018-04-09
 categories: []
 ---
 <h2 class="text-left"><i class="fas fa-fw fa-question"></i> What is a Reference Network</h2>
-<p>A GPS network is a high precision Global Navigation Satellite System (GNSS) providing real time corrections and data for post processing. A GNSS network consists of permanently located GPS receivers, installed across the state, that generate real time high accuracy GPS positioning. Basically, all of the permanetly installed GPS receivers send their data to a system that analyizes the input and adjusts and corrects the data to provide the most accurate locations.</p>
+<p>A GPS network is a high precision Global Navigation Satellite System (GNSS) providing real time corrections and data for post processing. 
+A GNSS network consists of permanently located GPS receivers, installed across an area, that generate real time high accuracy GPS positioning. 
+Basically, all of the permanently installed GPS receivers send their data to a central system via the internet, that analyzes the input and adjusts and corrects the data to provide the most accurate locations usually down to centimeter level.
+Our networks use the Trimble PIVOT VRS Platform. The generated data is sent through a wireless connection using the Networked Transport of RTCM via Internet Protocol (NTRIP). 
+</p>
 
 <h2 class="text-left"><i class="fas fa-fw fa-user-plus"></i> Who should be using a Network</h2>
-<p>Any person or company that wants or requires precision GPS information should be using a GPS Network. The most common applications including surveying, engineering, construction, and GIS data collection.</p>
+<p>Any person or company that wants or requires precision GPS information should be using a GPS Network. The most common applications including surveying, engineering, construction, GPS controlled machinery and GIS data collection.</p>
 
 <h2 class="text-left"><i class="fas fa-fw fa-signal"></i> Reference Network Benefits</h2>
-<p>Show some cell phone accuracy buffers vs a GPS network location? Success stories from users?</p>
+<p>Eliminates the need for a reference (base) station, therefore reducing your costs.
+Minimizes Ionospheric errors for rovers in the network coverage.
+Improves efficiency and productivity in your surveys.
+For Cell coverage in Utah check out https://broadband.utah.gov/map/
+For Cell coverage in Nevada check out http://www.connectnv.org/interactive-map
+</p>
 
 <h2 class="text-left"><i class="fas fa-fw fa-location-arrow"></i> Where Can I use a Reference Network</h2>
-<p>Currently, there are two networks that we are associated with.</p>
+<p>Currently, there are two networks that we are associated with. 
+TURN GPS Network which serves the State of Utah and some areas of surround states with 95 sensors.
+Nevada GPS which servers the greater Reno Nevada area, with 12 sensors.
+For further information select the appropriate link below.
+</p>
 <div class="flex flex--row flex--wrap flex--around">
   <a href='{{ "/gps/turn/" | prepend: site.baseurl }}'>Utah</a>
   <a href='{{ "/gps/ngps/" | prepend: site.baseurl }}'>Nevada</a>
