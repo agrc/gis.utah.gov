@@ -14,27 +14,27 @@ categories: []
 </div>
 
 <h2 class="text-left"><i class="fas fa-fw fa-question"></i> What Is a Reference Network?</h2>
-<p>A GPS network is a high-precision global navigation satellite system (GNSS) providing real-time corrections and data for post processing. A GNSS network consists of permanently located GPS receivers, installed across the state, that generate real-time, high-accuracy GPS positioning. Basically, all of the permanently installed GPS receivers send their data to a system that analyzes the input and adjusts and corrects the data to provide the most accurate locations.</p>
+<p>A GPS network is a high-precision global navigation satellite system (GNSS) providing real-time corrections and data for post processing. A <abbr title="global navigation satellite system">GNSS</abbr> network consists of permanently located GPS receivers, installed across the state, that generate real-time, high-accuracy GPS positioning. Basically, all of the permanently installed GPS receivers send their data to a system that analyzes the input and adjusts and corrects the data to provide the most accurate locations.</p>
 
 <h2 class="text-left"><i class="fas fa-fw fa-info-circle"></i> About this Network</h2>
 <p>The coordinate reference frame for this network is <strong>NAD83(2011)(EPOCH:2010.0000.)</strong>. The latitude, longitude, and ellipsoidal height of each reference station were calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects application.</p>
-<p>Eighteen NGS Continually Operating Reference Stations (CORS) were selected along the perimeter and interior of the network and were constrained to the published coordinates to conduct the final adjustment of the network coordinates.</p>
+<p>Eighteen <abbr title="National Geodetic Survey">NGS</abbr> Continually Operating Reference Stations (CORS) were selected along the perimeter and interior of the network and were constrained to the published coordinates to conduct the final adjustment of the network coordinates.</p>
 <p>With an activated subscription, set your GPS unit's VRS connection address to <code>168.179.231.9</code> and port <code>2101</code>. Enter your new device-specific username and password.</p>
 <h5>Connections from Source Table</h5>
 <p>For Trimble units we have three different connections.</p>
 <ul>
-  <li>VRS_CMR works older Trimble unit
+  <li>VRS_CMR works with older Trimble units.
   <li>VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware.
-  <li>VRS_CMRx works with the newest up to date Trimble units
+  <li>VRS_CMRx works with the newest Trimble units.
 </ul>
 <p>All of these give you the network solution.</p>
 <p>For non-Trimble units we have two different connections.</p>
 <ul>
-  <li>VRS_RTCM23 works older non-Trimble unit
-  <li>VRS_RTCM31 works with non-Trimble units
+  <li>VRS_RTCM23 works with older non-Trimble units.
+  <li>VRS_RTCM31 works with non-Trimble units.
 </ul>
 <p>Both of these give you the network solution.</p>
-<p>MS_CMR, MS_CMRP these are for connecting to single base when you are on the edge of the network or not getting a strong network solution. System will automatically find the closest station and connect you.</p>
+<p>MS_CMR and MS_CMRP are for connecting to a single base when you are on the edge of a network or are not getting a strong network solution. In these cases, the system will automatically find the closest station and connect you.</p>
 
 <h2 class="text-left"><i class="fas fa-fw fa-space-shuttle"></i> Getting Started</h2>
 <div class="flex flex--row flex--wrap flex--around">
