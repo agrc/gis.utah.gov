@@ -1,15 +1,6 @@
-# gis.utah.gov/data
-#/data/*
-#  Link: </bower_components/bLazy/blazy.min.js>; rel=preload; as=script
-
-# gis.utah.gov/search
-#/search/*
-#  Link: </js/dist/search.min.js>; rel=preload; as=script
-
 # ᕕ( ᐛ )ᕗ
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
-#  Link: </css/main.css>; rel=preload; as=style
-#  Link: <https://secure.utah.gov/nav/images/brand.png>; rel=preload; as=image
+  Referrer-Policy: strict-origin-when-cross-origin
