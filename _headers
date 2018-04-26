@@ -4,4 +4,4 @@
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: default-src https:; style-src https:
+  Content-Security-Policy: default-src https:; style-src unsafe-inline
