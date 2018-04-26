@@ -221,12 +221,12 @@
       <span><a href="https://www.utah.gov/translate.html">Translate</a></span>
     </div>
   </footer>
-  <script>
+  <script nonce="location-matters">
     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
     ga('create','{{ site.analytics.google.tracking_id }}','auto');ga('send','pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  <script type="text/javascript">
+  <script src="https://www.google-analytics.com/analytics.js" async defer nonce="location-matters"></script>
+  <script type="text/javascript" nonce="location-matters">
     function showsearch(){document.getElementById("utahgov_header_search").style.display="block",document.getElementById("search_activator").style.display="none"}var utgovsearch=[];utgovsearch.input=document.getElementById("searchutgov"),utgovsearch.btn=document.getElementById("searchutgovbtn"),utgovsearch.go=function(a){var b=utgovsearch.input.value;13===a.keyCode&&b.length>0?window.location.href="https://www.utah.gov/search-results.html?q="+b:"click"===a.type&&b.length>0&&(window.location.href="https://www.utah.gov/search-results.html?q="+b)},utgovsearch.btn.onclick=utgovsearch.go,utgovsearch.input.onkeypress=utgovsearch.go;
   </script>
 </body>
