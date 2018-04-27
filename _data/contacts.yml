@@ -319,3 +319,7 @@ geochronology_database:
   agency: UGS
   email: SteveBowman@utah.gov
   phone: 801-537-3304
+print_proxy:
+  name: Scott Davis
+  agency: AGRC
+  email: stdavis@utah.gov
