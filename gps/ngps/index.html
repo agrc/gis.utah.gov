@@ -9,7 +9,7 @@ date: 2011-06-30 23:13:39 -0600
 title: The Nevada GPS Network
 categories: []
 ---
-<div class="caption"><img title="map" src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
+<div class="caption"><img title="map" src="../images/nevada_network.png">
   <p class="caption-text">Nevada GPS Stations</p>
 </div>
 <h2 class="text-left"><i class="fas fa-fw fa-question"></i> What is a Reference Network</h2>
@@ -36,8 +36,8 @@ categories: []
 <p>MS_CMR, MS_CMRP, MS_RTCM3.2 these are for connecting to single base when you are on the edge of the network or not getting a strong network solution. System will automatically find the closest station and connect you.</p>
 
 <h2 class="text-left"><i class="fas fa-fw fa-space-shuttle"></i> Getting Started</h2>
-<div class="flex flex--row flex--wrap flex--around">
-  <span style="width: 50%; padding: 1em">
+<div class="flex flex--row flex--wrap">
+  <div class="one-of-two">
     <h3 class="text-left"><i class="fas fa-fw fa-user-plus"></i> Create an Account</h3>
     <p>Visit <a href="http://nevadagps.utah.gov/">Nevada GPS</a> You'll need a credit card, cost is $1200 for a year, you will need the following information:</p>
     <ul>
@@ -48,8 +48,8 @@ categories: []
       <li>Physical location/address
       <li>Mailing address
     </ul>
-  </span>
-  <span style="width: 50%; padding: 1em">
+  </div>
+  <div class="one-of-two">
     <h3 class="text-left"><i class="fas fa-fw fa-cart-plus"></i> Renew an Account</h3>
     <p>Visit <a href="http://nevadagps.utah.gov/">Nevada GPS</a> and select <code>Renew Subscription</code>. You'll need a credit card, cost is $1200 for a year, enter the following information:</p>
     <ul>
@@ -58,15 +58,15 @@ categories: []
       <li>Password (8 characters)
     </ul>
     <p>When done you will receive a confirmation email and receipt. If the account is new or has expired, it will take about 24 hours for the subscription payment to cycle through and the activation to be complete for field work, otherwise you will not notice any interruption.</p>
-  </span>
+  </div>
 </div>
 
-<div class="flex flex--row flex--wrap flex--around">
-  <span style="width: 50%; padding: 1em">
+<div class="flex flex--row flex--wrap">
+  <div class="one-of-two">
     <h2 class="text-left"><i class="far fa-fw fa-life-ring"></i> Support Contacts</h2>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.turn %}</p>
-  </span>
-  <span style="width: 50%; padding: 1em">
+  </div>
+  <div class="one-of-two">
     <h2 class="text-left"><i class="fas fa-fw fa-book"></i> Related Resources</h2>
     <ul>
       <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/Nevada_Network2018_8x11.pdf" rel="noopener" target="_blank">Nevada GPS Network Map 8.5 x 11</a>
@@ -74,5 +74,5 @@ categories: []
       <li><a href="http://nevadagps.utah.gov/Map/SensorMap.aspx" rel="noopener" target="_blank">Nevada GPS Sensor Map</a>
       <li><a href="http://nevadagps.utah.gov/" rel="noopener" target="_blank">The Nevada GPS Network</a>
     </ul>
-  </span>
+  </div>
 </div>

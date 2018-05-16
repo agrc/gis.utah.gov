@@ -153,3 +153,20 @@ a:hover > i {
         margin-bottom: 1em;
     }
 }
+
+.one-of-two {
+    width: percentage(1 / 2);
+    box-sizing: border-box;
+    display: inline-block;
+    min-height: 1px;
+    padding-left: 20px;
+    margin-right: -.25em;
+    vertical-align: top;
+
+    @include media-query($on-medium) {
+        display: block;
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
