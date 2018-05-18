@@ -13,9 +13,9 @@ tags:
 - lidar
 ---
 
-AGRC has awarded Aero-Graphics, Inc. (AGI) to acquire [*10,450 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data. The LiDAR will be a combination of USGS Quality Level 1 (QL1), 8 ppsm and Quality Level 2 (QL2), 2 ppsm depending on the area. The acquisitions have begun and will continue throughout the year. The acquisitions will be completed in 2018 and project deliverables are scheduled to be completed by June 30, 2019.
+AGRC has awarded Aero-Graphics, Inc. (AGI) to acquire [*10,450 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data. The LiDAR will be a combination of USGS Quality Level 1 (_QL1_), 8 points per square meter and Quality Level 2 (_QL2_), 2 points per square meter depending on the area. The acquisitions have begun and will continue throughout the year. The acquisitions will be completed in 2018 and project deliverables are scheduled to be completed by June 30, 2019.
 
-The Federal Emergency Management Agency and the U.S. Geological Survey National Map: 3D Elevation Program (3DEP) are also acquiring [*4,690 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data this year. The LiDAR will be a combination of USGS Quality Level 1 (QL1), 8 ppsm and Quality Level 2 (QL2), 2 ppsm depending on the area. The acquisitions have begun and will continue throughout the spring. The acquisitions and project deliverables are scheduled to be completed around the end of December 2018.
+The Federal Emergency Management Agency and the U.S. Geological Survey National Map 3D Elevation Program (3DEP) are also acquiring [*4,690 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data this year. The LiDAR will be a combination of USGS Quality Level 1 (_QL1_), 8 points per square meter and Quality Level 2 (_QL2_), 2 points per square meter depending on the area. The acquisitions have begun and will continue throughout the spring. The acquisitions and project deliverables are scheduled to be completed around the end of December 2018.
 
 [![Project area map]({{"/images/2018UtahLidarAcquisition_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/2018UtahLidarAcquisition.png" | prepend:site.baseurl}}){:.inline-text-right}
 
@@ -35,7 +35,7 @@ The Federal Emergency Management Agency and the U.S. Geological Survey National 
 {: .text-left }
 
 - Raw Point Cloud
-- Classified Point Cloud (2 or 8 ppsm with 10cm vertical RMSE)
+- Classified Point Cloud (2 or 8 points per square meter with 10cm vertical RMSE)
   - Ground
   - Water
   - Bridge
