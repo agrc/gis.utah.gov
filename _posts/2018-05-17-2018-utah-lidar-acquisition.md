@@ -10,7 +10,7 @@ date: 2018-05-17 18:17:41
 categories:
 - Featured
 tags:
-
+- lidar
 ---
 
 AGRC has awarded Aero-Graphics, Inc. (AGI) to acquire [*10,450 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data. The LiDAR will be a combination of USGS Quality Level 1 (QL1), 8 ppsm and Quality Level 2 (QL2), 2 ppsm depending on the area. The acquisitions have begun and will continue throughout the year. The acquisitions will be completed in 2018 and project deliverables are scheduled to be completed by June 30, 2019.
@@ -18,7 +18,9 @@ AGRC has awarded Aero-Graphics, Inc. (AGI) to acquire [*10,450 square miles*](ht
 The Federal Emergency Management Agency and the U.S. Geological Survey National Map: 3D Elevation Program (3DEP) are also acquiring [*4,690 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data this year. The LiDAR will be a combination of USGS Quality Level 1 (QL1), 8 ppsm and Quality Level 2 (QL2), 2 ppsm depending on the area. The acquisitions have begun and will continue throughout the spring. The acquisitions and project deliverables are scheduled to be completed around the end of December 2018.
 
 [![Project area map]({{"/images/2018UtahLidarAcquisition_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/2018UtahLidarAcquisition.png" | prepend:site.baseurl}}){:.inline-text-right}
-The project areas include:
+
+### The Project Areas
+{: .text-left }
 
 - Greater Sevier Watershed
 - 2017 Brianhead Fire area
@@ -29,7 +31,8 @@ The project areas include:
   - 136 of the 251 Utah Municipalities
   - 133 of the 326 Utah Cities
 
-The project deliverables include:
+### The Project Deliverables
+{: .text-left }
 
 - Raw Point Cloud
 - Classified Point Cloud (2 or 8 ppsm with 10cm vertical RMSE)
@@ -42,7 +45,8 @@ The project deliverables include:
 - Intensity Images (0.5 or 1 meter resolution GeoTIFFs)
 - Metadata
 
-The project partners include:
+### The Project Partners
+{: .text-left }
 
 - U.S. Geological Survey National Map: 3D Elevation Program (3DEP)
 - National Resource Conservation Service
@@ -61,4 +65,5 @@ The project partners include:
 - Cochino County, AZ
 
 
-Please contact Matt Peters [mpeters@utah.gov](mailto:bgranberg@utah.gov) or Rick Kelson [rkelson@utah.gov](mailto:rkelson@utah.gov) with questions.
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
+{{ contact | strip_newlines }}
