@@ -13,7 +13,7 @@ tags:
 
 ---
 
-AGRC has awarded [Aero-Graphics, Inc. (AGI)](http://aero-graphics.com/) to acquire [*10,450 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data. The LiDAR will be a combination of USGS Quality Level 1 (QL1), 8 ppsm and Quality Level 2 (QL2), 2 ppsm depending on the area. The acquisitions have begun and will continue throughout the year. The acquisitions will be completed in 2018 and project deliverables are scheduled to be completed by June 30, 2019.
+AGRC has awarded Aero-Graphics, Inc. (AGI) to acquire [*10,450 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data. The LiDAR will be a combination of USGS Quality Level 1 (QL1), 8 ppsm and Quality Level 2 (QL2), 2 ppsm depending on the area. The acquisitions have begun and will continue throughout the year. The acquisitions will be completed in 2018 and project deliverables are scheduled to be completed by June 30, 2019.
 
 The Federal Emergency Management Agency and the U.S. Geological Survey National Map: 3D Elevation Program (3DEP) are also acquiring [*4,690 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data this year. The LiDAR will be a combination of USGS Quality Level 1 (QL1), 8 ppsm and Quality Level 2 (QL2), 2 ppsm depending on the area. The acquisitions have begun and will continue throughout the spring. The acquisitions and project deliverables are scheduled to be completed around the end of December 2018.
 
@@ -28,18 +28,6 @@ The project areas include:
   - 28 of the 29 Utah Counties
   - 136 of the 251 Utah Municipalities
   - 133 of the 326 Utah Cities
-  Some of these include:
-  - Park City
-  - Heber City
-  - Moab
-  - Hanksville
-  - Beaver
-  - Minersville
-  - Richfield
-  - Monticello
-  - Price
-  - Apple Valley
-  - Hilldale
 
 The project deliverables include:
 
