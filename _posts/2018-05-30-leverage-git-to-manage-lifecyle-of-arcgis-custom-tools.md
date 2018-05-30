@@ -3,7 +3,7 @@ title: "Leveraging Git and GitHub to Manage the Lifecycle of Custom ArcGIS Tools
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2018-05-15 12:01:59
+date: 2018-05-30 12:01:59
 categories:
   - Developer
 tags:
