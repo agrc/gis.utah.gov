@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
     file_path = join(dirname(__file__), '..', 'data', 'sgid-index', 'index.html')
 
-    with open(file_path + '.bak', 'w') as data:
+    with open(file_path + '.bak', 'wU') as data:
         data.writelines(html)
 
     rename(file_path + '.bak', file_path)
