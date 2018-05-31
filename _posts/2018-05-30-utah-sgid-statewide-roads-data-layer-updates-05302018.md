@@ -45,6 +45,6 @@ The following are highlights from this month's update:
 - The following SGID feature classes were also updated: SGID10.Transportation.UDOTMileposts; SGID10.Transportation.UDOTRoutes_LRS; and SGID10.Transportation.UDOTTenthMileRefPoints.
 
 #### General Update Notes for this Month:
-- Vertical Level field (VERT_LEVEL) attributes were assigned on non-highway roads based on semi-automated process of finding segments that had significant intersect, which were then visually inspected to assign vertical level.  All other segments were assigned ground level, for now.  Work is currently being done to look at highways and other suspect areas.
+- Vertical Level field (`VERT_LEVEL`) attributes were assigned on non-highway roads based on semi-automated process of finding segments that had significant intersect, which were then visually inspected to assign vertical level.  All other segments were assigned ground level, for now.  Work is currently being done to look at highways and other suspect areas.
 - Significant work was done to orient Interstate arc directions based on mileposts (arcs were oriented based address systems if address ranges were present - ie: Utah County, etc). One way attributes were also updated to reflect these changes.
-- The DOT Left and Right ownership fields (DOT_OWN_L and DOT_OWN_R) were appropriately populated and a domain was added for future maintenance.
+- The DOT Left and Right ownership fields (`DOT_OWN_L` and `DOT_OWN_R`) were appropriately populated and a domain was added for future maintenance.
