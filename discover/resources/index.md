@@ -64,7 +64,7 @@ Interested in using AGRC's Web Mercator services in your web maps? Take a look a
 ### Adding a WMS Service to CAD
 {: .text-left}
 
-- **Bentley Microstation** users should take a look at the [How To document](ftp://ftp.agrc.utah.gov/Google/MicroStationGoogleWMS_HowTo.pdf).
+- **Bentley Microstation** users should take a look at the [How To document]({{ "/downloads/MicroStationGoogleWMS_HowTo.pdf" | prepend: site.baseurl }}).
 - **AutoCAD Civil 3D 2016** users should take a look at the [How To document](https://us-support.nearmap.com/hc/en-us/articles/212242658-AutoCAD-Civil-3D-2016-WMS-Integration).
 
 ### Printing Web Maps with Discover Services
@@ -105,7 +105,7 @@ To access the GCP services individual organizations will be provided URL links f
 ### Google Logos
 {: .text-left}
 
-[Download zipfile of Google logos](ftp://ftp.agrc.utah.gov/Google/google_logos.zip)
+[Download zipfile of Google logos]({{ "/downloads/google_logos.zip" | prepend: site.baseurl }})
 ![white transparent]({{ "/images/ImageryCGoogle_WhiteTransparent.png" | prepend: site.baseurl }})
 ![white on black]({{ "/images/ImageryCGoogle_WhiteOnBlack.png" | prepend: site.baseurl }})
 
