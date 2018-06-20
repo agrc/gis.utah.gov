@@ -22,6 +22,7 @@ If you are not covered by the license agreement for the Google imagery service y
 
 - For imagery downloads visit [this page]({{ "/data/aerial-photography/" | prepend: site.baseurl }}).
 - Instructions on how to [use the Discover services in Pro/ArcMap](#adding-a-wmts-or-wms-service-to-esri-products).
+- Instructions on how to [use the Discover services in CAD](#adding-a-wms-service-to-cad).
 - Instructions on how to [use the Discover services in Web Maps]({{site.baseurl}}{% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}).
 
 ### Coordinate System and Datum
