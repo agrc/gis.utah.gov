@@ -21,7 +21,7 @@ One featured offering from Discover is statewide 6 inch imagery collected and li
 If you are not covered by the license agreement for the Google imagery service you will need to fill out the **[Discover Server Access](https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform)** form. Once the form has been completed, you will receive information about the services and URL links to access the Discover server. The URLs to access the server will contain a quad-word (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) unique to each user or organization.
 
 - For imagery downloads visit [this page]({{ "/data/aerial-photography/" | prepend: site.baseurl }}).
-- Instructions on how to [use the Discover services in Pro/ArcMap]({{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}).
+- Instructions on how to [use the Discover services in Pro/ArcMap](#adding-a-wmts-or-wms-service-to-esri-products).
 - Instructions on how to [use the Discover services in Web Maps]({{site.baseurl}}{% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}).
 
 ### Coordinate System and Datum
