@@ -55,6 +55,7 @@ _**bold italics**_
 - markdown
 ```md
 ![alt text]({{ "/path/to/item/" | prepend: site.baseurl }})
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fagrc%2Fgis.utah.gov.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fagrc%2Fgis.utah.gov?ref=badge_shield)
 ```
 - html
 ```html
@@ -104,3 +105,7 @@ The include has a few properties:
 ```liquid
 {% include contact.html subject=page.title contact=site.data.contacts.agrc %}
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fagrc%2Fgis.utah.gov.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fagrc%2Fgis.utah.gov?ref=badge_large)
