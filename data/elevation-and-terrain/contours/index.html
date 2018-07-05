@@ -27,6 +27,14 @@ categories: []
       label: All Salt Lake County Contours (1.4 GB File GDB)
   updates:
     - Unknown
+ContourPolygons:
+  downloads:
+    - url: https://drive.google.com/open?id=0B6R_P-pQXOcsTkJxb1hPME9wRUU
+      label: Contour Polygons: File Geodatabase
+    - url: https://drive.google.com/open?id=0B6R_P-pQXOcsLU1EeHJwQUl4RzA
+      label: Contour Polygons: Shapefile
+  updates:
+    - As needed
 ---
 <div class="caption">
   <img src="{{ "/images/500_ft_contours-lg.jpg" | prepend: site.baseurl }}" alt="Contours" />
@@ -65,4 +73,18 @@ abstract="This datasets contain a statewide coverage of 500 foot contours derive
   </div>
   {% include packagedata.html name="2Meter"
   info=page.2Meter %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="ContourPolygons">
+      <a href="#ContourPolygons" class="anchor--link">Generalized Contour Polygons 200 Foot</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{{ "/images/contourPolys.png" | prepend: site.baseurl }}" alt="Contours" />
+    <p>SGID10.ELEVATION.ContoursGeneralized200Ft are intended for general cartographic purposes and representing approximate elevation and terrain. Contours were created by applying a focal filter to a 30 meter DEM, reclassifying the DEM into 200 foot intervals and converting to polygons. An indepth discussion of how the contours were created and derived data can be found <a href="{{ "/dumbing-down-terrain-with-contour-polygons/" | prepend: site.baseurl }}">here.</a></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.countours %}</p>
+  </div>
+  {% include packagedata.html name="ContourPolygons"
+  info=page.ContourPolygons %}
 </div>
