@@ -19,7 +19,6 @@ Following are the changes and annexations since Jan. 1, 2018,  listed by County 
 
 | County | City | Number of Changes |
 | --- | --- | --- |
-
 | Cache | Hyde Park | 1 |
 | | Logan | 1 |
 | | Paradise | 1 |
