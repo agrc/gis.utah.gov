@@ -1,5 +1,5 @@
 ---
-title: 'Municipal Boundaries update for Second Quarter 2018 (calendar year)'
+title: 'Municipal Boundaries Update for Second Quarter 2018 (Calendar Year)'
 author:
   display_name: mheagin
   email: mheagin@utah.gov
@@ -12,10 +12,11 @@ tags:
   - annexations
 ---
 
-Year is half over, and we just keep rolling along. This is the Municipal Boundaries update for the second quarter 2018 (Calendar year). Catching up on things, lots going on this year we missed  the first quarter update (sorry), so here’s everything since January
-A little reminder for everyone, changes to city boundaries can affect others like voter precincts, or school districts. Be sure to share data with your Clerk offices or others that may have an interest.
+The year is half over, and we just keep rolling along. This is the municipal boundaries update for the second quarter of the 2018 calendar year. There's a lot going on this year, and we're catchcing up on things since we missed the first quarter update (sorry). So here’s everything since January.
 
-Following are the changes and annexations since Jan. 1, 2018,  listed by County and City:
+A little reminder for everyone: changes to city boundaries can affect others, like voting precincts and school districts. Be sure to share data with your county clerk offices, as well as other entities or individuals that may have an interest in the data.
+
+Following are the changes and annexations since January 1, 2018, listed by county and city:
 
 | County | City | Number of Changes |
 | --- | --- | --- |
@@ -24,11 +25,11 @@ Following are the changes and annexations since Jan. 1, 2018,  listed by County 
 | | Paradise | 1 |
 | Davis | Layton | 3 |
 | | Syracuse | 1 |
-| Emery | Castle Dale  | 1 |
+| Emery | Castle Dale | 1 |
 | Garfield | Panguitch | 1 |
 | Iron | Ench | 1 |
 | Juab | Mona | 1 |
-| Rich | Randolph  | 1 |
+| Rich | Randolph | 1 |
 | Salt Lake | Sandy | 1 |
 | Sanpete | Sterling | 1 |
 | Summit | Coalville | 2 |
