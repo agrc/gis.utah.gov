@@ -23,7 +23,7 @@ In a letter to Utah’s County Assessors, Evan Curtis, the State Planning Coordi
 Several **next steps** from the recommendations document are now in motion.
 
 - [A submission guidelines document, including a recommended data schema for submissions](https://docs.google.com/a/utah.gov/document/d/1pNqjCeF_3NZjNnBGqQ3EqliMkVaWtAbybn1eZ4gt038/edit?usp=sharing), was created by AGRC and reviewed by the Assessors and the work group representatives
-- [Download LIR parcel data schema](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/LIR_ParcelSchema.zip)
+- [Download LIR parcel data schema](https://drive.google.com/a/utah.gov/uc?id=1c_qpxkdjClxdEiHipYN6t5Esb1PyT0Rj&export=download)
 - An initial data submission ‘ask’ was made to Counties in late June
 - As part of the first round of submission, AGRC is volunteering technical support to assist Counties in loading parcel boundaries and tax assessment data into the recommended enhanced schema
 
