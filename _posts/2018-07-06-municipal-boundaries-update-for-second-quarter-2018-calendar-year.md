@@ -14,7 +14,7 @@ tags:
 
 The year is half over, and we just keep rolling along. This is the municipal boundaries update for the second quarter of the 2018 calendar year. There's a lot going on this year, and we're catchcing up on things since we missed the first quarter update (sorry). So here’s everything since January.
 
-A little reminder for everyone: changes to city boundaries can affect others, like voting precincts and school districts. Be sure to share data with your county clerk offices, as well as other entities or individuals that may have an interest in the data.
+A little reminder for everyone: changes to city boundaries can affect related boundary layers, like voting precincts and school districts. Be sure to share data with your county clerk offices, as well as other entities or individuals that may have an interest in the data.
 
 Following are the changes and annexations since January 1, 2018, listed by county and city:
 
@@ -27,7 +27,7 @@ Following are the changes and annexations since January 1, 2018, listed by count
 | | Syracuse | 1 |
 | Emery | Castle Dale | 1 |
 | Garfield | Panguitch | 1 |
-| Iron | Ench | 1 |
+| Iron | Enoch | 1 |
 | Juab | Mona | 1 |
 | Rich | Randolph | 1 |
 | Salt Lake | Sandy | 1 |
