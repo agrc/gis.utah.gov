@@ -19,11 +19,11 @@ layout: default
     <p class="main-text"><a href="#tiles"><i class="far fa-image fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> SGID aerial photography and base map services provide critical map context for GIS and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources. data resources.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-    <a href="#gps"><h3 class="main-heading">TURN GPS Network</h3></a>
+    <a href="{{ "/gps/" | prepend: site.baseurl }}"><h3 class="main-heading">VRS GPS Network</h3></a>
     <hr class="hr-separate" />
     <p class="main-text"><a href="#gps"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 64.2" class="turngps" aria-labelledby="svg-inline--fa-turn" role="img">
       <title id="svg-inline--fa-turn">News, Events, &amp; Coordination</title>
-      <path class="turngps-logo" d="M-195.3-268.5H937.5v566.4H-195.3z"/><path class="panel" d="M22.3 34.1L23 1 1.2 34.2z"/><path class="panel" d="M53.7 8.6L22.3 34.1 23 1z"/><path class="panel" d="M59.8 37.2l-37.5-3.1L53.7 8.6zM44.7 63L22.3 34.1l37.5 3.1z"/><path class="panel" d="M15.8 57.8l6.5-23.7L44.7 63z"/><path class="panel" d="M15.8 57.8L1.2 34.2l21.1-.1z"/><circle class="dot" cx="23" cy="1" r="1"/><circle class="dot" cx="53.7" cy="8.6" r="1"/><circle class="dot" cx="59.8" cy="37.2" r="1"/><circle class="dot" cx="44.7" cy="63" r="1"/><circle class="dot" cx="22.3" cy="34.1" r="1"/><circle class="dot" cx="15.8" cy="57.8" r="1"/><circle class="dot" cx="1.2" cy="34.1" r="1"/></svg></a> TURN GPS is the foundation for live, up-to-sub-centimeter precision GPS field surveying, mapping, and other measurement. TURN GPS employs a network of over 90 permanent GPS base stations across Utah and surrounding areas.</p>
+      <path class="turngps-logo" d="M-195.3-268.5H937.5v566.4H-195.3z"/><path class="panel" d="M22.3 34.1L23 1 1.2 34.2z"/><path class="panel" d="M53.7 8.6L22.3 34.1 23 1z"/><path class="panel" d="M59.8 37.2l-37.5-3.1L53.7 8.6zM44.7 63L22.3 34.1l37.5 3.1z"/><path class="panel" d="M15.8 57.8l6.5-23.7L44.7 63z"/><path class="panel" d="M15.8 57.8L1.2 34.2l21.1-.1z"/><circle class="dot" cx="23" cy="1" r="1"/><circle class="dot" cx="53.7" cy="8.6" r="1"/><circle class="dot" cx="59.8" cy="37.2" r="1"/><circle class="dot" cx="44.7" cy="63" r="1"/><circle class="dot" cx="22.3" cy="34.1" r="1"/><circle class="dot" cx="15.8" cy="57.8" r="1"/><circle class="dot" cx="1.2" cy="34.1" r="1"/></svg></a> VRS (virtual-reference-station) GPS Network is the foundation for live, up-to-sub-centimeter precision GPS field surveying, mapping, and construction. We currently maintain two networks, TURN GPS, which covers Utah and surrounding areas, and Nevada GPS covering Washoe County Nevada.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#dev"><h3 class="main-heading">Application Development</h3></a>
@@ -234,27 +234,6 @@ layout: default
       <a href="{{ "/discover/" | prepend: site.baseurl }}" class="btn">Discover Server Information</a>
       <a href="{{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}" class="btn">Base Map Information</a>
       <a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}" class="btn">Imagery Download Information</a>
-    </p>
-  </div>
-  <div class="grid__col section">
-    <a id="gps" class="anchor"></a>
-    <h2>TURN GPS Precision RTK Network</h2>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-    <p>The Utah Reference Network for GPS (TURN GPS) is a networked system of over 90 permanently located high precision GPS receivers, installed across Utah and neighboring states.</p>
-    <p>TURN GPS provides a real-time correction signal that factors out atmospheric variation between earth-orbiting GPS satellites and ground-based GPS receivers in the field.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <h5 class="text-center">TURN GPS Network Coverage</h5>
-      <a href="http://turngps.utah.gov/Map/SensorMap.aspx">
-        <img alt="TURN GPS Network Coverage" class="center lozad" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-      <p>Surveyors, construction crews, field mapping technicians, and GPS-controlled machinery are able to operate with up-to sub-centimeter precise measurement by connecting their existing GPS receivers to the TURN GPS correction service over a smart phone hotspot.</p>
-      <p>A partnership with state and local government agencies has allow TURN GPS base stations to be sited at existing Utah facilities in exchange for the partners' use of the system. One year subscriptions to the TURN GPS service are $600 per GPS device.</p>
-    </div>
-    <p class="section-read-more text-center">
-      <a href="{{ "/data/cadastre/turn-gps/" | prepend: site.baseurl }}" class="btn">More Information</a>
     </p>
   </div>
   <div class="grid__col section alternate">
