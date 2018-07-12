@@ -1,0 +1,60 @@
+---
+title: GPS Reference Network
+author:
+  display_name: Steve Gourley
+  email: sgourley@utah.gov
+tags:
+  - gps
+  - reference network
+  - cadastre
+date: 2018-04-09
+categories: []
+---
+<h2 class="text-left"><i class="fas fa-fw fa-question"></i> What Is a Reference Network?</h2>
+<img class="inline-text-right outline" src="images/turn.png" alt="TURN GPS Network">
+<p>A GPS network is a high-precision global navigation satellite system (GNSS) providing real-time corrections and data for post processing. A GNSS network consists of permanently located GPS receivers, installed across an area, that generate real-time, high-accuracy GPS positioning. Basically, all of the permanently installed GPS receivers send their data to a central system via the internet. This central system analyzes the input and adjusts and corrects the data to provide the most accurate locations, usually down to centimeter level. Our networks use the Trimble PIVOT VRS Platform. The generated data is sent from the GPS receiver to the GPS reference network through a wireless connection using the Networked Transport of <abbr title="Radio Technical Commission for Maritime Services">RTCM</abbr> via Internet Protocol (NTRIP).</p>
+
+
+<h2 class="text-left"><i class="fas fa-fw fa-user-plus"></i> Who Should Be Using a Network?</h2>
+<p>Any person or company that wants or requires precision GPS information should be using a GPS network. Surveyors, construction crews, field mapping technicians, and GPS-controlled machinery are able to operate with up-to sub-centimeter precise measurement by connecting their existing GPS receivers to the GPS Network correction service over a smart phone hotspot.
+
+<h2 class="text-left"><i class="fas fa-fw fa-signal"></i> What Are the Benefits of Using a Reference Network?</h2>
+<img src="images/accuracy.png" class="outline flex flex--center" style="margin-bottom:2em;width:100%;max-width:778px">
+<p>A reference network eliminates the need for a reference (base) station. As base stations and consumer devices require funding and staffing, using a reference network reduces your costs for quality GPS readings. Reference networks also minimize ionospheric errors for rovers in the network coverage and improve efficiency and productivity in your surveys.</p>
+<ul>
+  Cellular data is needed in order to connect to the network. For more information about coverage, view the <a href="https://broadband.utah.gov/map/" rel="noopener" target="_blank">cell coverage in Utah</a> and the <a href="http://www.connectnv.org/interactive-map" rel="noopener" target="_blank">cell coverage in Nevada.</a>
+</ul>
+
+<h2 class="text-left"><i class="fas fa-fw fa-location-arrow"></i> Where Are the Reference Networks Near Me?</h2>
+<p>Currently, AGRC is maintaining two seperate networks:</p>
+<ul>
+ <li>the TURN GPS Network, which serves Utah and some areas of surrounding states with 95 sensors; and</a>
+ <li>the Nevada GPS Network, which serves the greater Reno, Nevada, area with 12 sensors.</a>
+</ul>
+<p>For further information on these networks, select the appropriate link below.</p>
+<div class="flex flex--row text-center" style="justify-content:center">
+  <a href='{{ "/gps/ngps/" | prepend: site.baseurl }}'>
+    <svg style="display:block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125px" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+        <g><path
+            fill="none"
+            stroke="#000000"
+            stroke-width="0.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            d="M19.416,43.5   L20.5,8.625l52.75,0.5L75.125,78c-1.14,0.613-0.005,1.321-0.65,2.162c-0.727,0.946-1.704-0.153-1.871-1.018   c-1.18-0.307-2.639-1.264-3.86-0.177c-0.931,0.828-0.295,1.525-0.149,2.415c0.121,0.735,0.051,1.355,0.031,2.237   c-0.018,0.784,0.135,1.81,0.473,2.507c0.314,0.652,0.613,0.86,0.902,1.5c0.525,1.164,0.426,3.424-0.75,3.875L19.416,43.5z"/></g>
+    </svg>
+    Nevada</a>
+  <a href='{{ "/gps/turn/" | prepend: site.baseurl }}'>
+    <svg style="display:block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125px" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+        <g><path
+          fill="none"
+          stroke="#000000"
+          stroke-width="0.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-miterlimit="10"
+          d="   M16.625,5.625c0.033,0.111-0.054,0.052-0.125,0c0,0-3.27,85.535-2.875,85.75c0,0,68.917,0.375,68.875,0.375l-1.75-69.125   c0.094,0.01,0.135-0.032,0.125-0.125L55,22.875c0.081-0.07,0-16.75,0-16.75C54.815,6.157,54.773,6.116,54.875,6L16.625,5.625z"/></g>
+    </svg>
+    Utah</a>
+</div>

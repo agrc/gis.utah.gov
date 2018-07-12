@@ -1,0 +1,83 @@
+---
+tags:
+  - cadastre
+  - gps
+author:
+  display_name: AGRC Staff
+  email: agrc@utah.gov
+date: 2011-06-30 23:13:39 -0600
+title: The Nevada GPS Network
+categories: []
+---
+<div class="caption"><img title="map" src="../images/nevada_network.png">
+  <p class="caption-text">Nevada GPS Stations</p>
+</div>
+<h2 class="text-left"><i class="fas fa-fw fa-question"></i> What is a Reference Network</h2>
+<p>A GPS network is a high precision Global Navigation Satellite System (GNSS) providing real time corrections and data for post processing. A GNSS network consists of permanently located GPS receivers, installed across the state, that generate real time high accuracy GPS positioning. Basically, all of the permanetly installed GPS receivers send their data to a system that analyizes the input and adjusts and corrects the data to provide the most accurate locations.</p>
+
+<h2 class="text-left"><i class="fas fa-fw fa-info-circle"></i> About this Network</h2>
+<p>The Coordinate Reference Frame for this network is <strong>NAD83/94 (HARN)</strong>. The Latitude, Longitude and Ellipsoidal Height of each reference station was calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects application.</p>
+<p>With an activated subscription, set your GPS unit's VRS connection address to <code>168.179.231.11</code> and port <code>2102</code>. Enter your new device-specific username and password.</p>
+<h5>Connections from Source Table</h5>
+<p>For Trimble units we have three different connections.</p>
+<ul>
+  <li>VRS_CMR works older Trimble unit
+  <li>VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware.
+  <li>VRS_CMRx works with the newest up to date Trimble units
+</ul>
+<p>All of these give you the network solution.</p>
+<p>For non-Trimble units we have two different connections.</p>
+<ul>
+  <li>VRS_RTCM23 works older non-Trimble unit
+  <li>VRS_RTCM31 works with non-Trimble units
+  <li>VRS_RTCM3.2 works with non-Trimble units, gives a full GNSS solution (all available satelites)
+</ul>
+<p>Both of these give you the network solution.</p>
+<p>MS_CMR, MS_CMRP, MS_RTCM3.2 these are for connecting to single base when you are on the edge of the network or not getting a strong network solution. System will automatically find the closest station and connect you.</p>
+
+<h5>Rinex File Downloads</h5>
+<p>The Nevada GPS network is providing 24 hour Rinex files with 5 second epoch available for download here:
+  <a href="ftp://ftp.agrc.utah.gov/Rinex_NevadaGPS/">Nevada GPS Rinex Download</a>
+  Due to storage limits, files can only be stored for a 90 day period, than they are permanently deleted.</p>
+
+<h2 class="text-left"><i class="fas fa-fw fa-space-shuttle"></i> Getting Started</h2>
+<div class="flex flex--row flex--wrap">
+  <div class="one-of-two">
+    <h3 class="text-left"><i class="fas fa-fw fa-user-plus"></i> Create an Account</h3>
+    <p>Visit <a href="http://nevadagps.utah.gov/">Nevada GPS</a> You'll need a credit card, cost is $1200 for a year, you will need the following information:</p>
+    <ul>
+      <li>Organization (avoid punctuation)
+      <li>Login
+      <li>Password (8 characters)
+      <li>Contact Name, email, phone number (email will be locked with login and can't be used again)
+      <li>Physical location/address
+      <li>Mailing address
+    </ul>
+  </div>
+  <div class="one-of-two">
+    <h3 class="text-left"><i class="fas fa-fw fa-cart-plus"></i> Renew an Account</h3>
+    <p>Visit <a href="http://nevadagps.utah.gov/">Nevada GPS</a> and select <code>Renew Subscription</code>. You'll need a credit card, cost is $1200 for a year, enter the following information:</p>
+    <ul>
+      <li>Organization
+      <li>Login
+      <li>Password (8 characters)
+    </ul>
+    <p>When done you will receive a confirmation email and receipt. If the account is new or has expired, it will take about 24 hours for the subscription payment to cycle through and the activation to be complete for field work, otherwise you will not notice any interruption.</p>
+  </div>
+</div>
+
+<div class="flex flex--row flex--wrap">
+  <div class="one-of-two">
+    <h2 class="text-left"><i class="far fa-fw fa-life-ring"></i> Support Contacts</h2>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.turn %}</p>
+  </div>
+  <div class="one-of-two">
+    <h2 class="text-left"><i class="fas fa-fw fa-book"></i> Related Resources</h2>
+    <ul>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/Nevada_Network2018_8x11.pdf" rel="noopener" target="_blank">Nevada GPS Network Map 8.5 x 11</a>
+      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/CADASTRE/Nevada_Network2018_poster.pdf" rel="noopener" target="_blank">Nevada GPS Network Wall Map</a>
+      <li><a href="http://nevadagps.utah.gov/Map/SensorMap.aspx" rel="noopener" target="_blank">Nevada GPS Sensor Map</a>
+      <li><a href="http://nevadagps.utah.gov/" rel="noopener" target="_blank">The Nevada GPS Network</a>
+    </ul>
+  </div>
+</div>
