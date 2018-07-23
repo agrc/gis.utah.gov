@@ -9,16 +9,7 @@ date: 2018-7-23 23:29:51
 title: 2017 Millsite Reservoir LiDAR Elevation Data
 categories: []
 ---
-
-<style type="text/css">
-#logo {
-  max-width: 400px;
-  margin: 0 auto;
-}
-</style>
-<div id="logo">
-  <img src="{{ "/images/lidar_millsite.PNG" | prepend: site.baseurl }}" alt="Sample" />
-</div>
+<img class="flex flex--center outline" src="{{ "/images/lidar_millsite.PNG" | prepend: site.baseurl }}" alt="Sample" />
 
 [![Project area map]({{"/images/lidar_millsite_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_millsite_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
