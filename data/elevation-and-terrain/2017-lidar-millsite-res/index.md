@@ -28,7 +28,7 @@ During the Fall of 2017 AGRC and the U.S. Department of Agriculture, Natural Res
       <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/millsite-reservoir-2017/DEMs/MillsiteReservoir_Metadata.zip">Metadata</a>
   </li>
   <li>
-    <i class="fas fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/MillsiteReservoir-2017/DEMs/MillsiteReservoir_shps.zip">shapefiles</a> of project area, tile indices, and breaklines
+    <i class="fas fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/millsite-reservoir-2017/DEMs/MillsiteReservoir_shps.zip">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 
