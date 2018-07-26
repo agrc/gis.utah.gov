@@ -29,7 +29,7 @@ During the Spring of 2017 AGRC and the Utah Department of Natural Resources, Div
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fas fa-download"></i> <a href="https://raster.utah.gov/?cat=.5%20Meter%20%7B2017%20LiDAR%7D">Retrieve 2017 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      <i class="fas fa-download"></i> <a href="https://raster.utah.gov/?cat=.5%20Meter%20%7B2017%20Washakie%20and%20Whites%20Valley%20LiDAR%7D">Retrieve 2017 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
