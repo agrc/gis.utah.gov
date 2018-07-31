@@ -12,12 +12,12 @@ categories:
   - Developer
   - Featured
 ---
-<p>Since <a href="http://leafletjs.com/">LeafletJS</a> seems to be what all of the cool kids are using these days and <a href="https://www.mapbox.com/blog/vladimir-agafonkin-joins-mapbox/">it shows no signs of slowing down</a>, I thought that it would be fun to figure out how to use Leaflet to view AGRC's <a href="{{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}">awesome base map services</a>. This presented a unique challenge since they are not in a projection that is supported out-of-the-box by Leaflet (UTM Zone 12 NAD83). However, I found that it is possible with the help of a few additional JavaScript libraries. So, here's the solution:</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/omazICu/6/embed?js,output">ESRI-Leaflet &amp; ArcGIS Basemaps</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<p>Since <a href="https://leafletjs.com/">LeafletJS</a> seems to be what all of the cool kids are using these days and <a href="https://www.mapbox.com/blog/vladimir-agafonkin-joins-mapbox/">it shows no signs of slowing down</a>, I thought that it would be fun to figure out how to use Leaflet to view AGRC's <a href="{{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}">awesome base map services</a>. This presented a unique challenge since they are not in a projection that is supported out-of-the-box by Leaflet (UTM Zone 12 NAD83). However, I found that it is possible with the help of a few additional JavaScript libraries. So, here's the solution:</p>
+<p><a class="jsbin-embed" href="https://jsbin.com/omazICu/6/embed?js,output">ESRI-Leaflet &amp; ArcGIS Basemaps</a><script src="https://static.jsbin.com/js/embed.js"></script></p>
 <p>
 You'll notice that I've loaded these libraries in addition to the latest version of Leaflet:</p>
 <ul>
-<li><a href="http://esri.github.io/esri-leaflet/">Esri-Leaflet Plugin</a></li>
+<li><a href="https://esri.github.io/esri-leaflet/">Esri-Leaflet Plugin</a></li>
 <li><a href="https://github.com/proj4js/proj4js">Proj4js</a></li>
 <li><a href="https://github.com/kartena/Proj4Leaflet">Proj4Leaflet Plugin</a></li>
 </ul>

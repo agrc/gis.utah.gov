@@ -14,23 +14,23 @@ categories:
 <p>The first thing to do is create a simple <code>.html</code> page and import <a href="https://developers.arcgis.com/en/javascript/">ESRI's ArcGIS API for JavaScript</a>. You can load their API by a CSS file:</p>
 
 ```html
-<link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css">
+<link rel="stylesheet" href="https://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css">
 ```
 <p>and a script file: </p>
 ```html
-<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/"></script>
+<script src="https://serverapi.arcgisonline.com/jsapi/arcgis/3.5/"></script>
 ```
 
 <p>This will load all necessary dependencies including <a href="https://developers.arcgis.com/en/javascript/jshelp/inside_dojo.html">Dojo</a> into your application. Dojo is a widely used javascript library containing commonly used functionality for cross-browser compatible user interface presentation and management. Because it's built on top of Dojo, ESRI's API also employs the new <a href="https://en.wikipedia.org/wiki/Asynchronous_module_definition">Asynchronous Module Definition (AMD)</a> standard for loading external JavaScript libraries. With both Dojo and ESRI development teams using AMD, it is highly recommended that you also use the AMD loading syntax, as this should maximize the life-expectancy for the map-service consuming code that you write. All code examples in this post will be using the new AMD syntax. If you are unfamiliar with AMD you may want to check out <a href="https://dojotoolkit.org/documentation/tutorials/1.9/modules/">Dojo's excellent tutorial</a> on the subject.</p>
 <h2 id="base-maps">Base Maps</h2>
 <p>AGRC provides <a href="{{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}">seven high-quality, pre-rendered base map services</a>. These services are published through ESRI's <a href="https://www.esri.com/software/arcgis/arcgisserver">ArcGIS Server software</a>. The service directory end points can be found here: </p>
 <ul>
-<li><a href="http://mapserv.utah.gov/arcgis/rest/services/BaseMaps">http://mapserv.utah.gov/arcgis/rest/services/BaseMaps</a></li>
+<li><a href="https://mapserv.utah.gov/arcgis/rest/services/BaseMaps">https://mapserv.utah.gov/arcgis/rest/services/BaseMaps</a></li>
 </ul>
 <p>Adding one of these services to a map is relatively easy. First, we need to import a few ESRI modules. Then create a new map and tiled layer. Finally, we add the newly created layer to the map. Here's what the code looks like:</p>
 <p><script src="https://gist.github.com/stdavis/5979421.js"></script></p>
 <p>And here's the result; a fully interactive base map that shows off a lot of the great GIS data that is housed in the <a href="{{ "/data/" | prepend: site.baseurl }}">State Geographic Information Database (SGID)</a> that AGRC maintains.</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/elenab/8/embed?live">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<p><a class="jsbin-embed" href="https://jsbin.com/elenab/8/embed?live">JS Bin</a><script src="https://static.jsbin.com/js/embed.js"></script></p>
 <h2 id="geocoding-address-matching">Geocoding (Address Matching)</h2>
 <p>To <a href="https://en.wikipedia.org/wiki/Geocoding">geocode</a> an address means to find it's corresponding geographic coordinates (think latitude and longitude). AGRC provides a highly authoritative service for geocoding addresses which is regularly updated from <a href="{{ "/data/transportation/" | prepend: site.baseurl }}">road centerline</a> and <a href="{{ "/data/address/" | prepend: site.baseurl }}">address point data</a> available to AGRC through its local government partners across the state. In addition, the service has been optimized for the State of Utah's somewhat unique placename and addressing system conventions.</p>
 <p>Before you can use any of AGRC's web API services you will need to create an account and an API key for your domain. Check out the <a href="https://developer.mapserv.utah.gov/StartupGuide">Getting Started Guide</a> for more information. Once you have a key you can start using services such as <a href="https://api.mapserv.utah.gov/#geocoding">geocoding</a>. Here's an example of a typical geocoding request that finds coordinates for 123 S Main St, SLC:</p>
@@ -41,18 +41,18 @@ categories:
 <p>Perhaps the easiest way for you to use this service is to use the <code>FindAddress</code> widget in our <a href="https://github.com/agrc/agrc.widgets">AGRC Dojo Widget Library</a>. You can do this by adding a config object to your <code>require</code> call that defines an <code>agrc</code> package and its location. Here we have it pointing at the 'agrc' package on our CDN resource:</p>
 <p><script src="https://gist.github.com/stdavis/5985759.js"></script></p>
 <p>Once we have defined our <code>agrc</code> package, we can import modules just like any other package. This example shows how to import the <code>FindAddress</code> widget and initializing it with our <code>map</code> object and our <a href="https://api.mapserv.utah.gov/">AGRC Web API</a> key:</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/elenab/19/embed?live,javascript">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<p><a class="jsbin-embed" href="https://jsbin.com/elenab/19/embed?live,javascript">JS Bin</a><script src="https://static.jsbin.com/js/embed.js"></script></p>
 <h2 id="custom-data-overlays">Custom Data Overlays</h2>
 <p>The next step in our demo will be to add a data overlay on top of the base map. To do this you need to have access to a map web service, that points at your own data on a server and makes it accessible to web-based map requests. This is most commonly done using ESRI's <a href="https://www.esri.com/software/arcgis/arcgisserver">ArcGIS Server</a> or similar software or via cloud-hosted data and services platform such as <a href="https://www.arcgis.com/features/">ArcGIS Online</a>. If you do not have access to this software, you may want to <a href="{{ "/about/contact/" | prepend: site.baseurl }}">contact</a> us about getting a service set up on our servers for you. For this demo we will use a service that we host that shows the Utah Division of Fleet Operations' vehicle refueling sites around the state. The endpoint for this service is here:</p>
 <ul>
-<li><a href="http://mapserv.utah.gov/arcgis/rest/services/UtahDFOFuelSites/MapServer">http://mapserv.utah.gov/arcgis/rest/services/UtahDFOFuelSites/MapServer</a>.</li>
+<li><a href="https://mapserv.utah.gov/arcgis/rest/services/UtahDFOFuelSites/MapServer">https://mapserv.utah.gov/arcgis/rest/services/UtahDFOFuelSites/MapServer</a>.</li>
 </ul>
 <p>To add this map service to our map we need to import the <code>esri/layers/ArcGISDynamicMapServiceLayer</code> module and create a new layer using the url to the service. Then we can add it to the map. Here's what it looks like:</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/elenab/20/embed?live,javascript">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<p><a class="jsbin-embed" href="https://jsbin.com/elenab/20/embed?live,javascript">JS Bin</a><script src="https://static.jsbin.com/js/embed.js"></script></p>
 <h2>Spatial Queries</h2>
 <p>
 Another useful AGRC web API service is the ability to search for geographic features in any of the datasets in the SGID. This functionality is found in the Search service. You can check out the <a href="https://api.mapserv.utah.gov/#search">api docs for an example request and response</a>. We will use this service to display a message that tells us what city we are in when we click on the map. Within the map's click event we pass the coordinates from the map click event to the search service along with the feature class name (SGID10.BOUNDARIES.Municipalities) and the field name (NAME).  Then when the service returns, we populate the page with the data. Here's what it looks like:</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/elenab/23/embed?live,javascript">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<p><a class="jsbin-embed" href="https://jsbin.com/elenab/23/embed?live,javascript">JS Bin</a><script src="https://static.jsbin.com/js/embed.js"></script></p>
 <p>
 Please note that the <a href="https://api.mapserv.utah.gov/#info">api has services for accessing schema information for SGID database server content</a>. Feature class (map data layer) names are available by category (<a href="https://api.mapserv.utah.gov/api/v1/info/FeatureClassNames?sgidCategory=Political&sgidVersion=10&apikey=AGRC-CAAF88F2268506">example request for feature classes in Political category</a>). With a feature class name and category, the names of the fields/columns can be accessed via the Feature Class Attribute Names service (<a href="https://api.mapserv.utah.gov/api/v1/info/FieldNames/Municipalities?category=Boundaries&sgidVersion=10&apikey=AGRC-CAAF88F2268506">example for Municipalities feature class</a>).</p>
 <h2 id="wrap-up">Wrap-up</h2>
