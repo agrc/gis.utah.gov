@@ -21,20 +21,21 @@ categories: []
 <p>Eighteen <abbr title="National Geodetic Survey">NGS</abbr> Continually Operating Reference Stations (CORS) were selected along the perimeter and interior of the network and were constrained to the published coordinates to conduct the final adjustment of the network coordinates.</p>
 <p>With an activated subscription, set your GPS unit's VRS connection address to <code>168.179.231.9</code> and port <code>2101</code>. Enter your new device-specific username and password.</p>
 <h5>Connections from Source Table</h5>
-<p>For Trimble units we have three different connections.</p>
+<p>For Trimble units we have these different connections.</p>
 <ul>
-  <li>VRS_CMR works with older Trimble units.
-  <li>VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware.
-  <li>VRS_CMRx works with the newest Trimble units.
+  <li>VRSCMRX works with the newest Trimble units, newest firmware. 
+  <li>VRSCMRP works with Trimble units that are newer but may not have the latest updates to the firmware.
+  <li>VRSCMR works with older Trimble units.
 </ul>
-<p>All of these give you the network solution.</p>
-<p>For non-Trimble units we have two different connections.</p>
+<p> - - - - </p>
+<p>For non-Trimble units us these connections.</p>
 <ul>
-  <li>VRS_RTCM23 works with older non-Trimble units.
-  <li>VRS_RTCM31 works with non-Trimble units.
+  <li>VRSRTCM32 works with newest non-Trimble units.
+  <li>VRSRTCM31 works with non-Trimble units.
+  <li>VRSRTCM23 works with older non-Trimble units.
 </ul>
-<p>Both of these give you the network solution.</p>
-<p>MS_CMR and MS_CMRP are for connecting to a single base when you are on the edge of a network or are not getting a strong network solution. In these cases, the system will automatically find the closest station and connect you.</p>
+<p>All of these give you the network solution. They just deliver it in different ways and in some cases nano-seconds slower.</p>
+<p>MS_CMR, MS_CMRP, and MS_RTCM31 are for connecting to a single base when you are on the edge of a network or are not getting a strong network solution. In these cases, the system will automatically find the closest station and connect you.</p>
 
 <h2 class="text-left"><i class="fas fa-fw fa-space-shuttle"></i> Getting Started</h2>
 <div class="flex flex--row flex--wrap">
