@@ -2,7 +2,7 @@
     publishDay: 0
     canPublishIssues: true
     canPublishPullRequests: true
-    canPublishContributors: true
-    canPublishStargazers: true
+    canPublishContributors: false
+    canPublishStargazers: false
     canPublishCommits: true
   
