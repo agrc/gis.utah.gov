@@ -46,13 +46,13 @@ AGRC’s cloud-based server, [Discover]({{ "/discover/" | prepend: site.baseurl 
 
 <i class="fas fa-fw fa-map"></i> **Terrain**: This base map highlights elevation and features mountain peak elevation labels, contour lines, and locations of ski resort locations and other places of interest.
 
-<i class="fas fa-fw fa-map"></i> AGRC maintains a very minimal cache called **Lite**. It is very muted in color and does not distract from data overlayed on top of it.
+<i class="fas fa-fw fa-map"></i> AGRC maintains a very minimal cache called **Lite**. It is very muted in color and does not distract from data overlaid on top of it.
 
 <i class="fas fa-fw fa-map"></i> Up next is the **Imagery** base map. This tile set shows the Google aerial photography. For licensing reasons, you will need to qualify for an [organizational account login]({{ "/discover/license" | prepend: site.baseurl }}) to use to this base map.
 
-<i class="fas fa-fw fa-map"></i> An exciting offering (_that we call squiggles and dots internally_) is a service called **Overlay**. This is a transparent set of tiles that displays styled roads and plac-enames. This can be overlayed on data for reference. Combining this with **Imagery** can create a desired **Hybrid** effect.
+<i class="fas fa-fw fa-map"></i> An exciting offering (_that we call squiggles and dots internally_) is a service called **Overlay**. This is a transparent set of tiles that displays styled roads and plac-enames. This can be overlaid on data for reference. Combining this with **Imagery** can create a desired **Hybrid** effect.
 
-<i class="fas fa-fw fa-map"></i> We have the **Color Infrared**, **Address Points**, and **Topo** caches. The Color Infrared is a neat way to look at vegetation, while the Topo cache contains all of the USGS Quad Sheets. The Topo cache displays the most relevant quad sheet (250K, 100K, and 24K) depending on your scale. The Address Points cache is a fast way to view around 2.5 million address points.
+<i class="fas fa-fw fa-map"></i> We have the **Color Infrared**, **Address Points**, and **Topo** caches. The Color Infrared is a neat way to look at vegetation, while the Topo cache contains all of the USGS Quad Sheets. The Topo cache displays the most relevant quad sheet (i.e., 250K, 100K, or 24K) depending on your scale. The Address Points cache is a fast way to view around 2.5 million address points.
 
 <i class="fas fa-fw fa-map"></i> There is also historical NAIP and Google imagery.
 
