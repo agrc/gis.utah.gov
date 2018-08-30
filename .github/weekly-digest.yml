@@ -1,7 +1,8 @@
 # Configuration for weekly-digest - https://github.com/apps/weekly-digest
-    publishDay: 1
-    canPublishIssues: true
-    canPublishPullRequests: true
-    canPublishContributors: false
-    canPublishStargazers: false
-    canPublishCommits: true
+publishDay: 2
+canPublishIssues: true
+canPublishPullRequests: true
+canPublishContributors: false
+canPublishStargazers: false
+canPublishCommits: true
+canPublishReleases: false
