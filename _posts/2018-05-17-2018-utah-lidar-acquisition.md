@@ -2,11 +2,11 @@
 layout: post
 status: publish
 published: true
-title: '2018 Utah LiDAR Acquisition'
+title: '2018 Utah LiDAR Acquisition Updated'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2018-05-17 18:17:41
+date: 2018-08-29 18:17:41
 categories:
 - Featured
 tags:
@@ -17,7 +17,10 @@ AGRC has awarded Aero-Graphics, Inc. (AGI) to acquire [*10,450 square miles*](ht
 
 The Federal Emergency Management Agency and the U.S. Geological Survey National Map 3D Elevation Program (3DEP) are also acquiring [*4,690 square miles*](https://arcg.is/H5CzO "view project areas in ArcGIS Online") of LiDAR Elevation data this year. The LiDAR will be a combination of USGS Quality Level 1 (_QL1_), 8 points per square meter and Quality Level 2 (_QL2_), 2 points per square meter depending on the area. The acquisitions have begun and will continue throughout the spring. The acquisitions and project deliverables are scheduled to be completed around the end of December 2018.
 
-[![Project area map]({{"/images/2018UtahLidarAcquisition_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/2018UtahLidarAcquisition.png" | prepend:site.baseurl}}){:.inline-text-right}
+UPDATE:
+Three additional areas in Utah have been add to the 2018 project areas. The Box Elder project (~2,238 square miles) covers areas of northern Box Elder County. The Brian Head Addition Project (~216 square miles) completes the coverage of the Cedar City Ranger District and the 2017 Brianhead Fire area. The Sanpete Valley Project (~441 square miles) covers areas in Sanpete County and will be acquired by Aerial Surveys International, LLC. The acquisition of these areas will be completed in 2018 and project deliverables are scheduled to be completed by August 31, 2019.
+
+[![Project area map]({{"/images/2018UtahLidarAcquisition_8_30_18_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/2018UtahLidarAcquisition_8_30_18.png" | prepend:site.baseurl}}){:.inline-text-right}
 
 ### The Project Areas
 {: .text-left }
@@ -62,7 +65,7 @@ The Federal Emergency Management Agency and the U.S. Geological Survey National 
 - Park City Municipal Corp.
 - Tooele Army Depot
 - Wasatch Ski Resorts
-- Cochino County, AZ
+- Mohave County, AZ
 
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
