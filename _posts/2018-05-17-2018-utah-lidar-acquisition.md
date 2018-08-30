@@ -29,10 +29,11 @@ Three additional areas in Utah have been add to the 2018 project areas. The Box 
 - 2017 Brianhead Fire area
 - Cedar City Ranger District
 - Bryce Canyon National Park
+- Uintah Basin
 - Areas within:
   - 28 of the 29 Utah Counties
-  - 136 of the 251 Utah Municipalities
-  - 133 of the 326 Utah Cities
+  - 150 of the 251 Utah Municipalities
+  - 153 of the 326 Utah Cities
 
 ### The Project Deliverables
 {: .text-left }
