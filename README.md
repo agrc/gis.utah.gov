@@ -20,6 +20,7 @@ License: [MIT](/LICENSE).
 _italics_
 **bold**
 _**bold italics**_
+- list
 ```
 
 #### link to page
