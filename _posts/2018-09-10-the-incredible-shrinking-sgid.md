@@ -9,7 +9,6 @@ categories:
 tags:
   - SGID
   - data content
-  - 
 ---
 
 I believe that a review of a system should occur on a continual basis, especially a system as important as the SGID.  
