@@ -16,7 +16,7 @@ As the State of Utah moves closer to <abbr title="Next-Generation-911 implementa
 
 This post is focused on GIS as it relates to NG911 Core Services and the <abbr title="spatial interface">SI</abbr>. These are the services needed to process a call on the <abbr title="Emergency Services IP Network">ESINet</abbr> [(ref 9)](#further-reading). For GIS, this equates to address validation and 911 call routing. Essentially, these are the operations that take place before the call is received at the appropriate <abbr title="public safety answering point">PSAP</abbr>. As a result, NENA has established standards to ensure that these operations can be carried out flawlessly. Failing to comply with these standards could ultimately result in misrouted 911 calls [(section 2.2 of ref 5 and section 2 of ref 4)](#further-reading).
 
-Currently with E-911, the <abbr title="automatic location identification">ALI</abbr> <abbr title="Master Street Address Guide">MSAG</abbr>, and selective router are responsible for these functions. However, in a true NG911 environment, the GIS is the backbone to address validation and call routing, eventually replacing the MSAG, ALI, and selective router [(section 4.8 of ref 1, section 2.1 of ref 5, and section 2.1 of ref 3)](#further-reading). Within NG911 Core Services, the <abbr title="location validation function">LVF</abbr> will pre-validate addresses and the <abbr title="emergency call routing function">ECRF</abbr> will route calls to the appropriate PSAP based on a point-in-polygon query with either the pre-validated address (for landlines) or the cellular devices' x,y coordinates [(section 4.7 and 4.8 of ref 1, section 3 of ref 5, section 2 of ref 4, and section 2.1 of ref 3)](#further-reading). 
+Currently with E-911, the <abbr title="automatic location identification">ALI</abbr> <abbr title="Master Street Address Guide">MSAG</abbr>, and selective router are responsible for these functions. However, in a true NG911 environment, the GIS is the backbone to address validation and call routing, eventually replacing the MSAG, ALI, and selective router [(section 4.8 of ref 1, section 2.1 of ref 5, and section 2.1 of ref 3)](#further-reading). Within NG911 Core Services, the <abbr title="location validation function">LVF</abbr> will pre-validate addresses and the <abbr title="emergency call routing function">ECRF</abbr> will route calls to the appropriate PSAP based on a point-in-polygon query with either the pre-validated address (for landlines) or the cellular devices' x,y coordinates [(section 4.7 and 4.8 of ref 1, section 3 of ref 5, section 2 of ref 4, and section 2.1 of ref 3)](#further-reading).
 
 Now if you're not familiar with this topic, all these acronyms might sound like mumbo jumbo, and if that's the case, don't worry (and also, take a look at the [Recommended Reading and References](#further-reading) section below). We'll make it easy for you! The big takeaway is this: _accuracy and consistency of GIS data in NG911 systems are extremely critical_.
 
@@ -47,43 +47,45 @@ Now if you're not familiar with this topic, all these acronyms might sound like 
 
 For further reading see [(reference 3, 4, 5, 7, 8, 9, 10)](#further-reading)
 
-### Who's Responsible for What? [(see graphic below)](#graphic)  
+### Who's Responsible for What? [(see graphic below)](#graphic)
 {: .text-left}
-  
+
 <abbr title="Utah Communications Authority">UCA</abbr> `911 Division` in conjunction with `AGRC` will:
-- Provide Utah's statewide [NG911 GIS database](https://gis.utah.gov/data/911);
+- Provide Utah's statewide [NG911 GIS database](/data/911);
 - Aggregate and validate 911 data (perform QA/QC before providing data to the State's NG911 Core Services service provider);
 - Ensure that required GIS datasets adhere to NENA NG911 Data Model specifications;
-  - AGRC will look for discrepancies and inconsistencies in the aggregated statewide [NG911 GIS Database](https://gis.utah.gov/data/911) and report discrepancies back to the data providers [section 5.4.3 of ref 5)](#further-reading); and
+  - AGRC will look for discrepancies and inconsistencies in the aggregated statewide [NG911 GIS Database](/data/911) and report discrepancies back to the data providers [section 5.4.3 of ref 5)](#further-reading); and
 - Be the authoritative source for PSAP boundaries utilized by NG911 Core Services (ECRF/LVF) [(section 3.5 of ref 3)](#further-reading).
 
   For further reading see [section 4.7 of ref 1, sections 4.1 and 5.2.4 of ref 5, section 3 of ref 3, and section 2.2.3 of ref 10](#further-reading):
 
-`Authoritative Data Providers` will: 
+`Authoritative Data Providers` will:
 - Coordinate and collaborate with the <abbr title="Utah Communications Authority">UCA</abbr> 911 Division, AGRC, and neighboring agencies (PSAPs);
 - Create, maintain, and provide required GIS datasets (within their provisioning boundary) for NG911 Core Services (ECRF/LVF):
-  - Service area boundaries, and 
-  - Civic location data; 
+  - Service area boundaries, and
+  - Civic location data;
 - Ensure that the required GIS datasets adhere to current NENA standards:
   - Civic location data
     - Maintain consistency between site/structure address points and road centerlines
-  - Emergency service boundaries (e.g., law, fire, and EMS)  
-    - Ensure that there are no unintended gaps or overlaps; and 
+  - Emergency service boundaries (e.g., law, fire, and EMS)
+    - Ensure that there are no unintended gaps or overlaps; and
 - Perform regular QA/QC on required datasets.
-  
+
   For further reading see [section 4.7 of ref 1, section 5.2.1 of ref 5, and section 2.2.3 of ref 4](#further-reading):
 
 ## NG911 GIS Roadmap
 {: .text-left}
 #### `Near-Term`
 {: .text-left}
-![Near-term]({{ "/images/arrow_one.png" , prepend: site.baseurl }}){: .text-left}
+<span class="fa-2x" title="Near-Term">
+  <i class="fas fa-chevron-circle-right highlight fa-fw"></i><i class="fas fa-chevron-circle-right grey fa-fw"></i><i class="fas fa-chevron-circle-right grey fa-fw"></i>
+</span>
 
 Data validation and cleanup are the next, most logical steps for GIS readiness. These are often considered the first steps in NG911 transition. At the moment, AGRC is focused on facilitating two specific data validation checks, both mentioned in the previous Data Requirements section of this page:
 
 ##### ALI/MSAG and GIS
 
-- The <abbr title="Utah Communications Authority">UCA</abbr> 911 Division is in the process of obtaining statewide ALI and MSAG data for the purpose of GIS data synchronizing. AGRC will geocode the ALI database against the GIS data to ensure that all valid addresses in the phone carrier’s database can be located/validated in the GIS data [(section 6 of ref 1)](#further-reading). A similar process will need to happen with the MSAG data. All valid addresses in the ALI database must have a corresponding site/structure address point in the GIS data.  
+- The <abbr title="Utah Communications Authority">UCA</abbr> 911 Division is in the process of obtaining statewide ALI and MSAG data for the purpose of GIS data synchronizing. AGRC will geocode the ALI database against the GIS data to ensure that all valid addresses in the phone carrier’s database can be located/validated in the GIS data [(section 6 of ref 1)](#further-reading). A similar process will need to happen with the MSAG data. All valid addresses in the ALI database must have a corresponding site/structure address point in the GIS data.
 - AGRC will then work with the data providers to resolve any valid discrepancies.
 
 ##### Address Component Cross-Check
@@ -100,7 +102,9 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 #### `Mid-Term`
 {: .text-left}
-![Mid-term]({{ "/images/arrow_two.png" , prepend: site.baseurl }}){: .text-left}
+<span class="fa-2x" title="Mid-Term">
+  <i class="fas fa-chevron-circle-right highlight fa-fw"></i><i class="fas fa-chevron-circle-right highlight fa-fw"></i><i class="fas fa-chevron-circle-right fa-fw grey"></i>
+</span>
 - Identify and resolve any gaps and/or overlaps in the emergency service boundaries (e.g., law, fire, and EMS).
 - Resolve address range overlap in road centerlines.
 - Resolve duplicate records in site/structure address points.
@@ -113,20 +117,22 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 #### `Long-Term`
 {: .text-left}
-![Long-term]({{ "/images/arrow_three.png" , prepend: site.baseurl }}){: .text-left}
+<span class="highlight fa-2x" title="Long-Term">
+  <i class="fas fa-chevron-circle-right fa-fw"></i><i class="fas fa-chevron-circle-right fa-fw"></i><i class="fas fa-chevron-circle-right fa-fw"></i>
+</span>
 - Get all 911-related data providers the needed training and access to the statewide NG911 multi-user data editing platform/application.
 - Incorporate a workflow to review these edits (from the NG911 multi-user data editing platform) and push them into the official State of Utah NG911 database (on a daily basis).
 - Establish the NG911 multi-user data editing platform as Utah’s official NG911 data editor [(section 5.1 of ref 5 and section 4.7 of ref 1)](#further-reading).
-- Provision Utah's statewide, [NG911 GIS database](https://gis.utah.gov/data/911) so it can used locally by the PSAPs (for their record keeping and dispatch systems). This would eliminate data duplication and ultimately provide all 911 users with the best possible data.  This concept is in line with the <abbr title="Utah Communications Authority">UCA</abbr> 911 Division promotion of a consistent 911 service across the state [(sections 5.3 and 6 of ref 1)](#further-reading).  
+- Provision Utah's statewide, [NG911 GIS database](/data/911) so it can used locally by the PSAPs (for their record keeping and dispatch systems). This would eliminate data duplication and ultimately provide all 911 users with the best possible data.  This concept is in line with the <abbr title="Utah Communications Authority">UCA</abbr> 911 Division promotion of a consistent 911 service across the state [(sections 5.3 and 6 of ref 1)](#further-reading).
 
 ## What Can You Do Now?
 {: #do-now .text-left}
 
-If you are a 911 GIS data provider, it's in your best interest to begin validating and provisioning your data as soon as possible. In the coming months, AGRC will geocode the ALI database and begin working with the data providers to resolve missing addresses.  
+If you are a 911 GIS data provider, it's in your best interest to begin validating and provisioning your data as soon as possible. In the coming months, AGRC will geocode the ALI database and begin working with the data providers to resolve missing addresses.
 
 At the moment, the most effective thing you can do is to resolve unintended discrepancies between site/structure address points and road centerlines. To facilitate this effort, AGRC has created a custom process to perform these validation checks and then output the needed discrepancy reports for the 911 data providers. Get involved now by visiting the [project's homepage](https://gregbunce.github.io/AddressData_CrossCheck/).
 
-It's also in your best interest to view the current draft version of Utah's statewide [NG911 GIS database](https://gis.utah.gov/data/911). In particular, it is highly recommended that you validate your jurisdiction's PSAP, fire, law, and/or EMS boundaries, ensuring that they are correctly represented. AGRC will continue to push monthly updates and modifications into this database in hope that 911 data providers will view the data and help us resolve unintended discrepancies.
+It's also in your best interest to view the current draft version of Utah's statewide [NG911 GIS database](/data/911). In particular, it is highly recommended that you validate your jurisdiction's PSAP, fire, law, and/or EMS boundaries, ensuring that they are correctly represented. AGRC will continue to push monthly updates and modifications into this database in hope that 911 data providers will view the data and help us resolve unintended discrepancies.
 
 Keep in mind:
 1. NG911 implementation won't happen overnight: there will be a hybrid GIS/MSAG (GeoMSAG) approach at first.
@@ -138,7 +144,7 @@ Keep in mind:
 
 ## Recommended Reading and References
 {: #further-reading .text-left}
-The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](http://uca911.org/911-division) and [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) are two valuable sources for further reading on NG911. Below are a few recommended starting points for learning more about NG911 and how it affects us as GIS professionals. (These sources are in no specific order; the numbering is related to the references previously listed throughout this article.)  
+The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](http://uca911.org/911-division) and [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) are two valuable sources for further reading on NG911. Below are a few recommended starting points for learning more about NG911 and how it affects us as GIS professionals. (These sources are in no specific order; the numbering is related to the references previously listed throughout this article.)
 1.  [UCA: Phase II of UCA's Strategic Plan](http://uca911.org/911-division/911-division-documents)
 1.  [911 Terminology Master Glossary](https://www.nena.org/page/Glossary)
 1.  [NENA: NG911 GIS Data Model (NENA-STA-006.1-2018)](https://www.nena.org/page/NG911GISDataModel)
@@ -150,4 +156,4 @@ The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](http:/
 1.  [NENA: Detailed Functional and Interface Standards for the NENA i3 Solution (NENA-STA-010.2-2016)](https://www.nena.org/page/i3_Stage3)
 1. [NENA: NG9-1-1 Transition Planning Considerations (NG911NENA-INF-008.2.2013)](https://www.nena.org/page/NG911_TransitionPlng)
 
-![NG911 Data Workflow]({{ "/images/ng911_data_workflow.png" , prepend: site.baseurl }}){: #graphic .flex .flex--center}
+![NG911 Data Workflow]({{ "/images/ng911_data_workflow.png" | prepend: site.baseurl }}){: #graphic .flex .flex--center}
