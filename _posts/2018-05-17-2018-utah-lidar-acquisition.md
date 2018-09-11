@@ -25,7 +25,7 @@ Three additional areas in Utah have been added to the 2018 project areas:
 -The Brian Head Addition (~216 square miles) completes the coverage of the Cedar City Ranger District and the 2017 Brian Head Fire area.
 -The Sanpete Valley project (~441 square miles) covers areas in Sanpete County and will be acquired by Aerial Surveys International, LLC. 
 
-All three project areas will be acquired as USGS QL1, 8 points per square meter. The acquisition of these areas will be completed in 2018, and project deliverables are scheduled to be completed by August 31, 2019. You are welcome to download the boundaries for all the project areas as a [geodatabase](https://drive.google.com/a/utah.gov/uc?id=1BkO7aWhFARM-U--KGi4Wn3diNIx7kban&export=download).
+All three project areas will be acquired as USGS QL1, 8 points per square meter. The acquisition of these areas will be completed in 2018, and project deliverables are scheduled to be completed by August 31, 2019. You are welcome to download the boundaries for all the project areas as a [geodatabase or shapefile](https://drive.google.com/a/utah.gov/uc?id=1BkO7aWhFARM-U--KGi4Wn3diNIx7kban&export=download).
 
 [![Project area map]({{"/images/2018UtahLidarAcquisition_8_30_18_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/2018UtahLidarAcquisition_8_30_18.png" | prepend:site.baseurl}}){:.inline-text-right}
 
