@@ -15,12 +15,14 @@ This instance of the SGID is recommended if you are outside the State of Utah ne
 
 To connect, use the following connection properties:
 
-##### Database Platform: `SQL Server`
-##### Instance**: `agrc-mssql.cx5yqb6zy0hb.us-west-2.rds.amazonaws.com`
-##### Authentication Type**: `Database authentication`
-##### Username**: `agrc`
-##### Password**: `agrc`
+- **Database Platform**: `SQL Server`
+- **Instance**: `agrc-mssql.cx5yqb6zy0hb.us-west-2.rds.amazonaws.com`
+- **Authentication Type**: `Database authentication`
+- **Username**: `agrc`
+- **Password**: `agrc`
+
 
 You will notice a significant difference in performance between ArcGIS Pro and ArcMap when accessing the database. When making the initial connection, ArcGIS Pro is about three times faster than ArcMap; however, ArcMap is faster than Pro when a layer is added and is first drawn. Go figure . . .
 
-If you have questions or comments about this change, contact Zach Beck.
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.sgid %}{% endcapture %}
+{{ contact | strip_newlines }}
