@@ -19,10 +19,12 @@ In the 2017 General Session, the Utah State Legislature dedicated $150,000 to th
 Accordingly, the MRRC is currently looking for proposals for using these 2018 General Session funds. Per Utah Code (63F-1-510 Subsection (3)(b)(i), (ii), and (iii)), and as referenced by the MRRC in notifying the counties of this opportunity: 
 
 >(b) A county wishing to receive a grant under the program described in Subsection (3)(a) shall submit to the committee an application that:  
-> (i) identifies one or more monuments in the county that are in need of protection or rehabilitation;  
-> (ii) establishes a plan that is consistent with federal law or rule to protect or rehabilitate each monument identified under Subsection (3)(b)(i); and  
-> (iii) requests a specific amount of funding to complete the plan established under Subsection (3)(b)(ii).  
+>   (i) identifies one or more monuments in the county that are in need of protection or rehabilitation;  
+>   (ii) establishes a plan that is consistent with federal law or rule to protect or rehabilitate each monument identified under Subsection (3)(b)(i); and  
+>   (iii) requests a specific amount of funding to complete the plan established under Subsection (3)(b)(ii).  
 
 The committee also informed counties that “Grants will be awarded by the committee based on the evaluation criteria provided in the attached documents.” 
 
-If you would like to submit an application for this program, email the grant application and [supporting documents](https://drive.google.com/drive/folders/1nvi5bMQDJoz6DX-UPSXy5ONK6LWnt6BL) to sfernandez@utah.gov. Applications are due by October 5, 2018, at 5:00 p.m. MT. 
+
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.plss text="If you would like to submit an application for this program, email the grant application and [supporting documents](https://drive.google.com/drive/folders/1nvi5bMQDJoz6DX-UPSXy5ONK6LWnt6BL)" %}{% endcapture %}
+{{ contact | strip_newlines }} Applications are due by **October 5, 2018, at 5:00 p.m. MT**
