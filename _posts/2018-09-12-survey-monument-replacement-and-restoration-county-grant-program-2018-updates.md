@@ -25,6 +25,5 @@ Accordingly, the MRRC is currently looking for proposals for using these 2018 Ge
 
 The committee also informed counties that “Grants will be awarded by the committee based on the evaluation criteria provided in the attached documents.” 
 
-
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.plss text="If you would like to submit an application for this program, email the grant application and [supporting documents](https://drive.google.com/drive/folders/1nvi5bMQDJoz6DX-UPSXy5ONK6LWnt6BL)" %}{% endcapture %}
 {{ contact | strip_newlines }} Applications are due by **October 5, 2018, at 5:00 p.m. MT**
