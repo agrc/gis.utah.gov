@@ -17,10 +17,10 @@ Established by state law in 1991, Utah’s SGID ensures that GIS map layers are 
 
 In any shared system, especially a system as important as the SGID, review of the data, as well as how it is delivered and made available to users, should occur on a continual basis to ensure the accuracy and quality of that data. With that in mind, AGRC has been reviewing the SGID’s data layers and gathering information from a variety of sources within our data warehouse and services infrastructure. We have four areas we watch where data is accessed or stored: 
 
--the gis.utah.gov site and associated downloads, 
--the AGRC organizational account in ArcGIS Online/Open Data, 
--the SQL Server database that houses the SGID, and 
--api.mapserv.utah.gov, which is the web services gateway.   
+- the gis.utah.gov site and associated downloads, 
+- the AGRC organizational account in ArcGIS Online/Open Data, 
+- the SQL Server database that houses the SGID, and 
+- api.mapserv.utah.gov, which is the web services gateway.   
 
 Each of these areas is monitored differently: GIS.utah.gov is watched through Google Analytics; ArcGIS online has its own accounting; the SQL Server database, which contains the SGID, tracks each time a layer is accessed; and api.mapserv.utah.gov has logging associated with web services requests, both in geocoding and point in area queries. 
 
