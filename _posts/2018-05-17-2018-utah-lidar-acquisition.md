@@ -21,9 +21,9 @@ The Federal Emergency Management Agency and the U.S. Geological Survey (USGS) Na
 UPDATE:
 Three additional areas in Utah have been added to the 2018 project areas:
 
--The Box Elder project (~2,238 square miles) covers areas of northern Box Elder County.
--The Brian Head Addition (~216 square miles) completes the coverage of the Cedar City Ranger District and the 2017 Brian Head Fire area.
--The Sanpete Valley project (~441 square miles) covers areas in Sanpete County and will be acquired by Aerial Surveys International, LLC.
+- The Box Elder project (~2,238 square miles) covers areas of northern Box Elder County.
+- The Brian Head Addition (~216 square miles) completes the coverage of the Cedar City Ranger District and the 2017 Brian Head Fire area.
+- The Sanpete Valley project (~441 square miles) covers areas in Sanpete County and will be acquired by Aerial Surveys International, LLC.
 
 All three project areas will be acquired as USGS QL1, 8 points per square meter. The acquisition of these areas will be completed in 2018, and project deliverables are scheduled to be completed by August 31, 2019. You are welcome to download the boundaries for all the project areas as a [geodatabase and shapefile](https://drive.google.com/a/utah.gov/uc?id=1BkO7aWhFARM-U--KGi4Wn3diNIx7kban&export=download).
 
