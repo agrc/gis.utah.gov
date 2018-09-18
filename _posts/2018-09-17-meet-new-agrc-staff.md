@@ -1,12 +1,14 @@
 ---
-title: 'Meet Nathan - New AGRC Staff'
+title: 'Meet Nathan Kota - New AGRC Staff'
 author:
-  display_name: Nathan Kota
-  email: nathankota@utah.gov
+  display_name: AGRC
+  email: agrc@utah.gov
 date: 2018-09-17 20:16:10
 categories: []
 tags: []
 ---
+
+![Nathan in his new office habitat](https://github.com/nathankota/gis.utah.gov/blob/master/images/Copy%20of%20AGRC002.jpg)
 
 #### What’s your title at AGRC?
 
@@ -30,7 +32,7 @@ That’s a hard question. There have been so many of varying breadth and depth, 
 
 #### What do you want to accomplish at AGRC? 
 
-I look forward to connecting our colleagues throughout the state to the services that AGRC offers. There’s such a high level of expertise among the staff here, which allows us to offer solutions to so many GIS-related, and IT, needs. I plan to continue and strengthen the relationships AGRC has built over the years with so many different people and groups throughout Utah, and nationwide. I am interested in how I can potentially help to streamline some internal DTS and AGRC processes to increase efficiencies. And, finally, I would like to increase the incorporation of project management concepts and tools into the way we work with others in a client/vendor relationship. 
+I look forward to connecting our colleagues throughout the state to the services that AGRC offers. There’s such a high level of expertise among the staff here, which allows us to offer solutions to so many GIS-related, and IT, needs. I plan to continue and strengthen the relationships AGRC has built over the years with so many different people and groups throughout Utah, and nationwide. I am interested in how I can potentially help to streamline some internal DTS and AGRC processes to increase efficiencies. And, finally, I would like to increase the incorporation of project management concepts and tools into the way we work with others in a client/vendor relationship, and internally.
 
 #### How do you spend your time outside the office? Any favorite hobbies or activities? 
 
@@ -42,7 +44,7 @@ I can’t think of an absolute favorite, and I think it depends on the company a
 
 #### Favorite food? 
 
-That’s a hard question because I enjoy so many different foods of varying ethnic origins. Lately my favorite is my homemade pizza because I’ve figured out how to bake the crust to my liking, and my family loves it too. 
+I enjoy so many different foods of varying ethnic origins, but lately my favorite is my homemade pizza because I’ve figured out how to bake the crust to my liking, and my family loves it too. 
 
 #### Random skill that people don’t know you have?
 
