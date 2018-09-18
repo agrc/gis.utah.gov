@@ -145,16 +145,17 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <p>Transportation.UDOTRoutes_LRS is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepost measure coordinate.</p>
     <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0080PR18501 is the east bound off ramp at exit 185 on I-80). ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter x,y coordinate precision; 0.001 mile m coordinate precision). The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
-    <p>The CARTO code can be used to query subsets or classify different types of UDOT routes:
-    <ul><li>1 = Interstate highways</li>
-        <li>2 = US highways</li>
-        <li>3 = State highways</li>
-        <li>5 = Miscellaneous routes associated with interchanges</li>
-        <li>6 = Ramps, Interstates</li>
-        <li>7 = Ramps, US Highways</li>
-        <li>8 = Ramps, State highways</li>
-        <li>9 = Local routes, federal aid eligible</li>
-        <li>I = Institutional roads designated as state highways</li>
+    <p>The CARTO code can be used to query subsets or classify different types of UDOT routes:</p>
+    <ul>
+      <li>`1`: Interstate highways
+      <li>`2`: US highways
+      <li>`3`: State highways
+      <li>`5`: Miscellaneous routes associated with interchanges
+      <li>`6`: Ramps, Interstates
+      <li>`7`: Ramps, US Highways
+      <li>`8`: Ramps, State highways
+      <li>`9`: Local routes, federal aid eligible
+      <li>`I`: Institutional roads designated as state highways
     </ul>
     <h5>Related Resource</h5>
     <ul class="dotless">
