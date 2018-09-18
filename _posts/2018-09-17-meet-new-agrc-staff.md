@@ -8,7 +8,7 @@ categories: []
 tags: []
 ---
 
-![Nathan in his new office habitat]({{ "/images/Copy%20of%20AGRC002.jpg" | prepend: site.baseurl }})
+![Nathan in his new office habitat]({{ "/images/Kota_resize.jpg" | prepend: site.baseurl }}){: .flex .flex--center }
 
 #### What’s your title at AGRC?
 
