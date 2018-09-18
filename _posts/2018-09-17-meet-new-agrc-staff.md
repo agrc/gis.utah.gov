@@ -8,7 +8,7 @@ categories: []
 tags: []
 ---
 
-![Nathan in his new office habitat](https://github.com/nathankota/gis.utah.gov/blob/master/images/Copy%20of%20AGRC002.jpg)
+![Nathan in his new office habitat]({{ "/images/Copy%20of%20AGRC002.jpg" | prepend: site.baseurl }})
 
 #### What’s your title at AGRC?
 
