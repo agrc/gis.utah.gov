@@ -74,14 +74,16 @@ plss:
     phone: 801-209-9359
     agency: AGRC
 turn:
+  - name: Support Desk
+    phone: 801-538-3440
+    phone: 1-800-678-9440
+    agency: DTS
   - name: Mike Heagin
-    email: MHeagin@utah.gov
-    phone: 801-537-9296
+    email: mheagin@utah.gov
     agency: AGRC
   - name: Sean Fernandez
-    email: SFernandez@utah.gov
-    phone: 801-209-9359
-    agency: AGRC
+    Email: sfernandez@utah.gov
+agency: AGRC
 surveyor:
   name: Sean Fernandez
   email: SFernandez@utah.gov
