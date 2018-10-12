@@ -1,6 +1,3 @@
----
-documentation: https://www.netlify.com/docs/redirects/
----
 # source                                                                                destination                                                     status code
 /about/data-policies/                                                                                     /license-disclaimer/                                                          301
 /about/ugic/                                                                                              http://ugic.org/                                                              301
