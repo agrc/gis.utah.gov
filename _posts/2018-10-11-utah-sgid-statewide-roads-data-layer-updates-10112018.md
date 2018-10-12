@@ -28,7 +28,7 @@ New roads were added and road names and address ranges were updated for the foll
 
 - **San Juan County:** Obtained roads data on 08/16/2018. Previous update was on 01/2016.
 
-- **Summit Juan County:** Obtained roads data on 08/30/2018. Previous update was on 05/30/2018.
+- **Summit County:** Obtained roads data on 08/30/2018. Previous update was on 05/30/2018.
 
 - **Tooele County:** Obtained roads data on 08/10/2018. Previous update was on 06/27/2018.
 
