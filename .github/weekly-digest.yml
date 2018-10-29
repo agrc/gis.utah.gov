@@ -1,0 +1,7 @@
+publishDay: mon
+canPublishIssues: true
+canPublishPullRequests: true
+canPublishContributors: false
+canPublishStargazers: false
+canPublishCommits: true
+canPublishReleases: false
