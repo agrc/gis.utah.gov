@@ -25,7 +25,7 @@ We will post the exact date of the upgrade as we finalize our plans. {{ contact 
 ### Local Mosaic Datasets
 {: .text-left}
 
-The source data for the Image Services is available for download from [raster.utah.gov](https://raster.utah.gov/) as well as the [AGRC ftp site](ftp://ftp.agrc.utah.gov/Imagery/). This data allows for the creation of local [mosaic datasets](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-a-mosaic-dataset.htm) for visualization and analysis. The Image Services are a convenience that is no longer going to be offered and the public will have to manage its own mosaic datasets for advanced analysis.
+The source data for the Image Services is available for download from [raster.utah.gov](https://raster.utah.gov/). This data allows for the creation of local [mosaic datasets](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-a-mosaic-dataset.htm) for visualization and analysis. The Image Services are a convenience that is no longer going to be offered and the public will have to manage its own mosaic datasets for advanced analysis.
 
 ### Discover Services
 {: .text-left}
