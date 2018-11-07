@@ -1,5 +1,5 @@
 ---
-title: 'Multi-modal Travel Shed Project '
+title: 'Multi-modal Travel Shed Project'
 author:
   display_name: Bert Granberg
   email: bgranberg@wfrc.org
@@ -7,17 +7,11 @@ date: 2018-11-07 20:28:24
 categories:
   - Guestblog
 tags:
-  - Transportation
-  - Bike
-  - Pedestrian
-  - Transit
-  - Roads
-  - Network
-  - Analysis
-  - GIS
-  - Wasatch Front
-  - UDOT
-  - Network Analyst
+  - transportation
+  - bike
+  - pedestrian
+  - transit
+  - roads
 ---
 
 A travel shed is the set of all the destinations that can be reached from a location within a specified time budget. Travel sheds are valuable both for visualizing and analyzing residents’ access to key services, but also for defining service areas for businesses and other service provider locations such as schools, transit stations, hospitals and fire stations.
@@ -37,10 +31,10 @@ In the future it should be possible to build upon this project’s deliverables 
 
 ![Simple travelshed example around UTA transit stops]({{ "/images/travelsheds.PNG" | prepend: site.baseurl }}){: .inline-text-right .outline }The major project tasks, expected to be complete by Summer of 2019, are:
 
-* building region wide mode-to-mode connectors as GIS features that interconnect transit stations, local roads, bike/ped paths, and the local road network
-* densifying GIS path data around key destinations such as campuses, major transit stations, 
-* building both shortest path and quality-weighted impedance (travel cost) values
-* automating the process for assembling future updates, and, 
-* automating common analysis needs with Python code.
+- building region wide mode-to-mode connectors as GIS features that interconnect transit stations, local roads, bike/ped paths, and the local road network
+- densifying GIS path data around key destinations such as campuses, major transit stations, 
+- building both shortest path and quality-weighted impedance (travel cost) values
+- automating the process for assembling future updates, and, 
+- automating common analysis needs with Python code.
 
-As this project wraps up next year, the resulting GIS network analysis dataset and python code to perform the analyses on the ArcGIS software platform will be publicly available and announced here on gis.utah.gov.
+As this project wraps up next year, the resulting GIS network analysis dataset and python code to perform the analyses on the ArcGIS software platform will be publicly available and announced here on [gis.utah.gov](https://gis.utah.gov).
