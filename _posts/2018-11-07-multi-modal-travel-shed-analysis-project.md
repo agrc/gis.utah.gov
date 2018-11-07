@@ -42,4 +42,5 @@ In the future it should be possible to build upon this project’s deliverables 
 
 As this project wraps up next year, the resulting GIS network analysis dataset and python code to perform the analyses on the ArcGIS software platform will be publicly available and announced here on [gis.utah.gov](https://gis.utah.gov).
 
-For more information contact [Jordan Backman](mailto:jbackman@utah.gov) or [Bert Granberg](mailto:bgranberg@wfrc.org).
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.multimodal %}{% endcapture %}
+{{ contact | strip_newlines }}
