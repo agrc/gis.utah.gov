@@ -326,3 +326,10 @@ print_proxy:
   name: Scott Davis
   agency: AGRC
   email: stdavis@utah.gov
+multimodal:
+  - name: Bert Granberg
+    email: BGranberg@wfrc.org
+    agency: WFRC
+  - name: Jordan Backman
+    email: JBackman@utah.gov
+    agency: UDOT
