@@ -32,7 +32,7 @@ To give a tangible example of just one type of analysis that will be possible as
 
 In the future it should be possible to build upon this project’s deliverables to answer more complex questions like ‘What are my options for getting from BYU to Weber State for $20 using either light transportation or a ride share service paired with UTA trains and bus rapid transit. Expanding the project to include analysis capabilities beyond the Wasatch Front urban area is another potential area of future work.
 
-![Simple travelshed example around UTA transit stops]({{ "/images/travelsheds.png" | prepend: site.baseurl }}){: .inline-text-right .outline }The major project tasks, expected to be complete by Summer of 2019, are:
+![Simple travelshed example around UTA transit stops]({{ "/images/travelshed.png" | prepend: site.baseurl }}){: .inline-text-right .outline }The major project tasks, expected to be complete by Summer of 2019, are:
 
 - building region wide mode-to-mode connectors as GIS features that interconnect transit stations, local roads, bike/ped paths, and the local road network
 - densifying GIS path data around key destinations such as campuses, major transit stations, 
