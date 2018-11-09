@@ -10,12 +10,12 @@ categories:
 tags: []
 ---
 
-AGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 within the next few weeks. For the majority of our users, we do not expect any issues as _most_ services are being migrated as is. _However_, if you are consuming Image Services, **a migration is necessary** since AGRC is deprecating Image Services. 
+AGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 within the next few weeks. For the majority of our users, we do not expect any issues, as _most_ services are being migrated as is. _However_, if you are consuming image services, **a migration is necessary** since AGRC is deprecating image services. 
 
-### AGRC is deprecating the Image Services on mapserv.utah.gov
+### AGRC Is Deprecating the Image Services on mapserv.utah.gov
 {: .pop}
 
-{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If you notice any other issues after the upgrade, please let" hide-punctuation=true%}{% endcapture %}
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If you notice any issues after the upgrade, please let" hide-punctuation=true%}{% endcapture %}
 
 We will post the exact date of the upgrade as we finalize our plans. {{ contact | strip_newlines }} know so that we can address them as soon as possible.
 
@@ -25,19 +25,19 @@ We will post the exact date of the upgrade as we finalize our plans. {{ contact 
 ### Local Mosaic Datasets
 {: .text-left}
 
-The source data for the Image Services is available for download from [raster.utah.gov](https://raster.utah.gov/). This data allows for the creation of local [mosaic datasets](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-a-mosaic-dataset.htm) for visualization and analysis. The Image Services are a convenience that is no longer going to be offered and the public will have to manage its own mosaic datasets for advanced analysis.
+The source data for the image services on mapserv.utah.gov is available for download from [raster.utah.gov](https://raster.utah.gov/). This data allows for the creation of local [mosaic datasets](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-a-mosaic-dataset.htm) for visualization and analysis. The image services are a convenience that is no longer going to be offered, and the public will have to manage its own mosaic datasets for advanced analysis.
 
 ### Discover Services
 {: .text-left}
 
-The [Discover services](/discover) provided by AGRC intersect the Image Services. There is **not a complete 1 to 1 mapping** as you will see in the table below, but coverage is adequate and Discover has **many more services** not offered as Image Services. Since the majority of consumers of the Image Services use them for reference and not advanced image analysis, historgram stretching etc, the Discover services will provide a better end user experience. The prerendered tiles will be much faster than the on-the-fly processing from the Image Services.
+The [Discover services](/discover) provided by AGRC intersect the image services. There is **not a complete one-to-one mapping**, as you will see in the table below, but coverage is adequate and Discover has **many more services** not offered as image services. Since the majority of consumers of the image services use them for reference and not advanced image analysis, histogram stretching, etc., the Discover services will provide a better end user experience. The prerendered tiles will be much faster than the on-the-fly processing from the image services.
 
 Below is a table of services that will be removed during the software upgrade. The second column is the closest equivalent Discover service.
 
-## Services marked for deprection
+## Services Marked for Deprecation
 {: .text-left}
 
-| deprecated mapserv service | discover alternative |
+| Deprecated Mapserv Service | Discover Alternative |
 |:---------------------------|:---------------------|
 | AerialPhotography_BlackWhite/DOQ1990s_1Meter | DOQ 1990s BW |
 | AerialPhotography_BlackWhite/SCS_HistoricalImagery | N/A |
