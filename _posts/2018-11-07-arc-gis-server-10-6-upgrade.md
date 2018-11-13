@@ -10,7 +10,7 @@ categories:
 tags: []
 ---
 
-AGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 within the next few weeks. For the majority of our users, we do not expect any issues, as _most_ services are being migrated as is. _However_, if you are consuming image services, **a migration is necessary** since AGRC is deprecating image services. 
+AGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 within the next few weeks. For the majority of our users, we do not expect any issues, as _most_ services are being migrated as is. _However_, if you are consuming image services, **a migration is necessary** since the image services will no longer be offered.
 
 ### AGRC Is Deprecating the Image Services on mapserv.utah.gov
 {: .pop}
@@ -20,14 +20,14 @@ AGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 w
 We will post the exact date of the upgrade as we finalize our plans. {{ contact | strip_newlines }} know so that we can address them as soon as possible.
 
 ## Migration Options
+{: .text-left style="margin-bottom:0px"}
+
+### 1. Local Mosaic Datasets
 {: .text-left}
 
-### Local Mosaic Datasets
-{: .text-left}
+The source data for the image services on mapserv.utah.gov is available for download from [raster.utah.gov](https://raster.utah.gov/). This data allows for the creation of local [mosaic datasets](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-a-mosaic-dataset.htm) for visualization and analysis. Choose this option if you require advanced analysis of raster data.
 
-The source data for the image services on mapserv.utah.gov is available for download from [raster.utah.gov](https://raster.utah.gov/). This data allows for the creation of local [mosaic datasets](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-a-mosaic-dataset.htm) for visualization and analysis. The image services are a convenience that is no longer going to be offered, and the public will have to manage its own mosaic datasets for advanced analysis.
-
-### Discover Services
+### 2. Discover Services
 {: .text-left}
 
 The [Discover services](/discover) provided by AGRC intersect the image services. There is **not a complete one-to-one mapping**, as you will see in the table below, but coverage is adequate and Discover has **many more services** not offered as image services. Since the majority of consumers of the image services use them for reference and not advanced image analysis, histogram stretching, etc., the Discover services will provide a better end user experience. The prerendered tiles will be much faster than the on-the-fly processing from the image services.
@@ -35,7 +35,7 @@ The [Discover services](/discover) provided by AGRC intersect the image services
 Below is a table of services that will be removed during the software upgrade. The second column is the closest equivalent Discover service.
 
 ## Services Marked for Deprecation
-{: .text-left}
+{: .text-left style="margin-bottom:0px"}
 
 | Deprecated Mapserv Service | Discover Alternative |
 |:---------------------------|:---------------------|
