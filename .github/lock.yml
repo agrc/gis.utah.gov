@@ -1,3 +1,5 @@
 # Skip issues and pull requests created before a given timestamp. Timestamp must
 # follow ISO 8601 (`YYYY-MM-DD`). Set to `false` to disable
-skipCreatedBefore: 2018-01-01
+skipCreatedBefore: "2018-01-01"
+
+daysUntilLock: 91
