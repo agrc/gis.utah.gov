@@ -21,7 +21,7 @@ In preparation for the ArcGIS Server upgrade and the necessary image service mig
 
 On Saturday January 5th, AGRC will **temporarily** stop all of the image services on mapserv to simulate the future deprecation. The purpose of the brown out is to allow users to test for a successful migration and to be aware if more migration steps are required.
 
-We hope that after reading this article, migration plans will be drafted and executed. Then, in January, the migrations can be tested during the brown out. The image services will then be started on the evening of January 10 to avoid further down time for those not fully migrated. We will post the exact date of the entire system upgrade as we finalize our plans. **Please note that the image services are not being deprecated during the brown out.** {{ contact | strip_newlines }} know so that we can address them as soon as possible.
+We hope that after reading this article, migration plans will be drafted and executed. Then, in January, the migrations can be tested during the brown out. The image services will then be started on the evening of January 10 to avoid further down time for those not fully migrated. We will post the exact date of the entire system upgrade as we finalize our plans. **Please note that the image services are not being deprecated during the brown out,** but will be deprecated when the entire system is upgrade. {{ contact | strip_newlines }} know so that we can address them as soon as possible.
 
 ## Migration Options
 {: .text-left style="margin-bottom:0px"}
