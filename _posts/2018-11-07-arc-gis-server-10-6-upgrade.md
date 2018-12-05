@@ -10,14 +10,18 @@ categories:
 tags: []
 ---
 
-AGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 within the next few weeks. For the majority of our users, we do not expect any issues, as _most_ services are being migrated as is. _However_, if you are consuming image services, **a migration is necessary** since the image services will no longer be offered.
+AGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 within the next few weeks. For the majority of our users, we do not expect any issues, as _most_ services are being migrated as is. _However_, if you are consuming image services, **a migration is necessary** since the image services will no longer be offered. Please share this article with anyone who may be affected.
 
 ### AGRC Is Deprecating the Image Services on mapserv.utah.gov
 {: .pop}
 
-{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If you notice any issues after the upgrade, please let" hide-punctuation=true%}{% endcapture %}
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If you notice any issues after the upgrade or have any questions about the brown out, please let" hide-punctuation=true%}{% endcapture %}
 
-We will post the exact date of the upgrade as we finalize our plans. {{ contact | strip_newlines }} know so that we can address them as soon as possible.
+In preparation for the ArcGIS Server upgrade and the necessary image service migration, AGRC is planning a brown out of the image services on **Saturday January 5th through Thursday January 10th**. The brown out plan reference number in the Utah Change Management System is `CHG0019078`.
+
+On Saturday January 5th, AGRC will **temporarily** stop all of the image services on mapserv to simulate the future deprecation. The purpose of the brown out is to allow users to test for a successful migration and to be aware if more migration steps are required.
+
+We hope that after reading this article, migration plans will be drafted and executed. Then, in January, the migrations can be tested during the brown out. The image services will then be started on the evening of January 10 to avoid further down time for those not fully migrated. We will post the exact date of the entire system upgrade as we finalize our plans. **Please note that the image services are not being deprecated during the brown out.** {{ contact | strip_newlines }} know so that we can address them as soon as possible.
 
 ## Migration Options
 {: .text-left style="margin-bottom:0px"}
