@@ -1,5 +1,5 @@
 ---
-title: 'Submit New Trails for Governor&amp;#039;s 1000 Miles Campaign'
+title: 'Submit New Trails for Governor&amp\'s 1000 Miles Campaign'
 author:
   display_name: Chris Wiltsie
   email: chris@bikeutah.org
@@ -43,4 +43,4 @@ _And, tracking progress is just one of our responsibilities._ **We can also prov
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.bikeutah text="If you would like help improving the bicycle infrastructure in your community or have other questions, please contact" %}{% endcapture %}
 
-We want to help you and your community build family-friendly bicycle infrastructure! If you would like help improving the bicycle infrastructure in your community or have other questions, please contact {{ contact | strip_newlines }}
+We want to help you and your community build family-friendly bicycle infrastructure! {{ contact | strip_newlines }}
