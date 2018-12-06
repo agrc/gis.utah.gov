@@ -21,7 +21,7 @@ since May of 2017.
 We are looking for shapefiles, maps, or comprehensive descriptions for any new trail meeting the criteria shown below. 
 Please send all submissions to [chris@bikeutah.org](mailto:chris@bikeutah.org) and make sure to include your name, project name, location, distance, and a short description of the type of
 infrastructure. As soon as we verify the information, we will put it all [here](https://docs.google.com/spreadsheets/d/1QkSaARZNNcgHQZKaW2sVoCJ4cnSKIk4nVca29y_6l-w/edit#gid=0) where it will be
-shared with the Governor&#39;s office and public. A storymap is also being created for displaying this data as the campaign progresses.
+shared with the Governor's office and public. A storymap is also being created for displaying this data as the campaign progresses.
 
 ##So, what counts?
 
