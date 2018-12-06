@@ -7,11 +7,11 @@ date: 2018-12-06 17:57:09
 categories:
   - Guestblog
 tags:
-  - Transportation
-  - Recreation
-  - Policy
-  - Bike
-  - Trails
+  - transportation
+  - recreation
+  - policy
+  - bike
+  - trails
 ---
 
 The 1,000 Miles Campaign is looking for the help of Utah city, county, and state agency GIS experts across the state to
