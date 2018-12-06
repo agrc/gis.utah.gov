@@ -275,7 +275,7 @@ nhd:
 source_water:
   name: Kate Johnson
   email: KJohnson@utah.gov
-  agrncy: DEQ
+  agency: DEQ
 google_imagery:
   - name: Rick Kelson
     email: RKelson@utah.gov
@@ -333,3 +333,7 @@ multimodal:
   - name: Jordan Backman
     email: JBackman@utah.gov
     agency: UDOT
+bikeutah:
+  name: Chris Wiltsie
+  email: chris@bikeutah.org
+  agency: Bike Utah
