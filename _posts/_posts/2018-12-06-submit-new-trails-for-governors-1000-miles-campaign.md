@@ -23,7 +23,7 @@ Please send all submissions to [chris@bikeutah.org](mailto:chris@bikeutah.org) a
 infrastructure. As soon as we verify the information, we will put it all this [google doc](https://docs.google.com/spreadsheets/d/1QkSaARZNNcgHQZKaW2sVoCJ4cnSKIk4nVca29y_6l-w/edit#gid=0) where it will be
 shared with the Governor's office and public. A storymap is also being created for displaying this data as the campaign progresses.
 
-##So, what counts?
+## So, what counts?
 
 + **Mountain bike and hiking trails.** A range of difficulties are allowed so long as signage is posted indicating the level of
 difficulty, newly constructed trails qualify.
