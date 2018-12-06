@@ -38,7 +38,7 @@ In 2017 Governor Herbert and Lieutenant Governor Cox initiated the 1,000 Miles C
 
 Bike Utah is honored to be the nonprofit partner designated to carry out the implementation of the 1,000 Miles Campaign. 
 
-*And, tracking progress is just one of our responsibilities.* **We can also provide strategic planning, technical assistance, and connections to financial resources**, so communities can begin or continue developing bicycling in their area.
+_And, tracking progress is just one of our responsibilities._ **We can also provide strategic planning, technical assistance, and connections to financial resources**, so communities can begin or continue developing bicycling in their area.
 
 We want to help you and your community build family-friendly bicycle infrastructure! If you would like help improving the bicycle infrastructure in your community or have other questions, please contact [Chris Wiltsie](mailto:chris@bikeutah.org).
 
