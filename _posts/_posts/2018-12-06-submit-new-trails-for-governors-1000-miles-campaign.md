@@ -30,7 +30,7 @@ difficulty, newly constructed trails qualify.
 
 + **Paved bike and multi-use trails.** Both on-street bike infrastructure and off-street paths can be counted provided they fit into one of the three categories shown below:
 
-![ProEvergreen]({{ "/images/BikeUtah1000Miles.png" }}){: .outline .flex .flex--center}
+![Trail Types]({{ "/images/BikeUtah1000Miles.png" }}){: .outline .flex .flex--center}
 
 ## About the 1,000 miles campaign
 
