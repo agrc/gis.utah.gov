@@ -18,8 +18,11 @@ The 1,000 Miles Campaign is looking for the help of Utah city, county, and state
 help track all new family friendly (criteria explained below) bike paths, lanes, and trails completed
 since May of 2017.
 
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.bikeutah text="Please send all submissions to" hide-punctuation=true %}{% endcapture %}
+
+
 We are looking for shapefiles, maps, or comprehensive descriptions for any new trail meeting the criteria shown below. 
-Please send all submissions to [chris@bikeutah.org](mailto:chris@bikeutah.org) and make sure to include your name, project name, location, distance, and a short description of the type of
+{{ contact | strip_newlines }} and make sure to include your name, project name, location, distance, and a short description of the type of
 infrastructure. As soon as we verify the information, we will put it all this [google doc](https://docs.google.com/spreadsheets/d/1QkSaARZNNcgHQZKaW2sVoCJ4cnSKIk4nVca29y_6l-w/edit#gid=0) where it will be
 shared with the Governor's office and public. A storymap is also being created for displaying this data as the campaign progresses.
 
@@ -38,4 +41,6 @@ Bike Utah is honored to be the nonprofit partner designated to carry out the imp
 
 _And, tracking progress is just one of our responsibilities._ **We can also provide strategic planning, technical assistance, and connections to financial resources**, so communities can begin or continue developing bicycling in their area.
 
-We want to help you and your community build family-friendly bicycle infrastructure! If you would like help improving the bicycle infrastructure in your community or have other questions, please contact [Chris Wiltsie](mailto:chris@bikeutah.org).
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.bikeutah text="If you would like help improving the bicycle infrastructure in your community or have other questions, please contact" %}{% endcapture %}
+
+We want to help you and your community build family-friendly bicycle infrastructure! If you would like help improving the bicycle infrastructure in your community or have other questions, please contact {{ contact | strip_newlines }}
