@@ -1,5 +1,5 @@
 ---
-title: 'Submit New Trails for Governor&amp\'s 1000 Miles Campaign'
+title: Submit New Trails for Governor's 1000 Miles Campaign
 author:
   display_name: Chris Wiltsie
   email: chris@bikeutah.org
