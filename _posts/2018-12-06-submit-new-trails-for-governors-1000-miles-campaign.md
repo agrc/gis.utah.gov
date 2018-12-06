@@ -25,9 +25,8 @@ shared with the Governor's office and public. A storymap is also being created f
 
 ## So, what counts?
 
-+ **Mountain bike and hiking trails.** A range of difficulties are allowed so long as signage is posted indicating the level of difficulty, newly constructed trails qualify.
-
-+ **Paved bike and multi-use trails.** Both on-street bike infrastructure and off-street paths can be counted provided they fit into one of the three categories shown below:
+- **Mountain bike and hiking trails.** A range of difficulties are allowed so long as signage is posted indicating the level of difficulty, newly constructed trails qualify.
+- **Paved bike and multi-use trails.** Both on-street bike infrastructure and off-street paths can be counted provided they fit into one of the three categories shown below:
 
 ![Trail Types]({{ "/images/BikeUtah1000Miles.png" }}){: .outline .flex .flex--center}
 
