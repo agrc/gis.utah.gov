@@ -25,8 +25,7 @@ shared with the Governor's office and public. A storymap is also being created f
 
 ## So, what counts?
 
-+ **Mountain bike and hiking trails.** A range of difficulties are allowed so long as signage is posted indicating the level of
-difficulty, newly constructed trails qualify.
++ **Mountain bike and hiking trails.** A range of difficulties are allowed so long as signage is posted indicating the level of difficulty, newly constructed trails qualify.
 
 + **Paved bike and multi-use trails.** Both on-street bike infrastructure and off-street paths can be counted provided they fit into one of the three categories shown below:
 
@@ -41,7 +40,3 @@ Bike Utah is honored to be the nonprofit partner designated to carry out the imp
 _And, tracking progress is just one of our responsibilities._ **We can also provide strategic planning, technical assistance, and connections to financial resources**, so communities can begin or continue developing bicycling in their area.
 
 We want to help you and your community build family-friendly bicycle infrastructure! If you would like help improving the bicycle infrastructure in your community or have other questions, please contact [Chris Wiltsie](mailto:chris@bikeutah.org).
-
-
-
-
