@@ -33,7 +33,7 @@ I’ve had several interesting GIS projects that I’ve really enjoyed while tak
 
 I hope to be able to contribute to a wide variety of projects in which the AGRC is involved and learn from the vast experience and skills of my coworkers along the way. Specifically, I want to improve the labor-intensive 911 data preparation process with automation. This would ultimately lead to greater work efficiency, as well as increased data accuracy and timeliness. I also want to help guide the State’s efforts to adopt the Next Generation 911 (NG911) data standards and best practices, so we can further enhance emergency services and operate within the new standard. Beyond that, I just want to contribute in any way I can to leverage the power of GIS and improve processes wherever possible.
 
-#How do you spend your time outside the office? Any favorite hobbies or activities? 
+**How do you spend your time outside the office? Any favorite hobbies or activities?**
 
 My wife and I have a three-month-old daughter, so we now spend most of our time adoring her. We also like to get outside as much as possible to explore the state’s amazing scenery, trails, parks, and campgrounds, like most Utahns. Depending on the season, I like to snowboard and explore slot canyons while always keeping a watchful eye on the weather. Otherwise, I can usually be found running, golfing, or watching sports, especially Nebraska football and the NBA.
 
