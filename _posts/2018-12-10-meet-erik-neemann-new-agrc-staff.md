@@ -42,7 +42,7 @@ My wife and I have a three-month-old daughter, so we now spend most of our time 
 Almost anything involving a peak or a canyon is a hike that I’ll enjoy. One of my favorites has to be the iconic Angel’s Landing hike in Zion National Park. It’s just about the right distance and has a great combination of scenery, danger, and difficulty. It can get crowded though, so if you want to explore that hike, I’d recommend taking the first bus into the canyon to beat the masses and decrease the number of times you have to squeeze by someone on the edge of a cliff. 
 The state has such a great variety of trails; there’s something for everyone, no matter what level of difficulty or remoteness you’re seeking.
 
-#Favorite food? 
+**Favorite food?**
 
 I love most food, although my wife would point out some notable exceptions. Pizza and burgers are probably my favorite, but pretty much all of the unhealthy stuff tastes great to me!
 
