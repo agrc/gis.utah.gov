@@ -46,7 +46,7 @@ The state has such a great variety of trails; there’s something for everyone, 
 
 I love most food, although my wife would point out some notable exceptions. Pizza and burgers are probably my favorite, but pretty much all of the unhealthy stuff tastes great to me!
 
-#Random skill that people don’t know you have?
+**Random skill that people don’t know you have?**
 
 I can juggle a little bit.
 
