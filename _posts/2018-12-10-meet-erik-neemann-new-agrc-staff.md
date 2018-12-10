@@ -13,7 +13,7 @@ tags: []
 
 Technical Support Specialist II
 
-#(So what exactly do you do?)
+**(So what exactly do you do?)**
 
 Initially, I’ll be attempting to fill the void left by the venerable David Buell as he retires after over 26 years of public service! This will entail a lot of work with 911 data to support many of the State’s Public Safety Answering Points (PSAPs). I will help manage law enforcement, fire, and emergency service boundaries, as well as road system and addressing data. These data sets require a lot of maintenance and massaging to ensure that they are accurate and up-to-date and that they seamlessly integrate with PSAP software to enable efficient call-taking and dispatching. Beyond the 911-centric work, I’ll be helping out with The Utah Reference Network (TURN) GPS and any other GIS projects that need support.
 
