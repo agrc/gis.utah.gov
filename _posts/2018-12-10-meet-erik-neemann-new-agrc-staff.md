@@ -50,6 +50,6 @@ I love most food, although my wife would point out some notable exceptions. Pizz
 
 I can juggle a little bit.
 
-#Anything else? 
+**Anything else?**
 
 I’m just excited to get my feet under me in a new position and am thankful to be back at the AGRC. It’s a great place to work and provides an opportunity to interact and cooperate with a wide variety of organizations in Utah and beyond. If you’re still reading this, I look forward to working with you at some point in the future!
