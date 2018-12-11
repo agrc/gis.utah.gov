@@ -16,7 +16,7 @@ Technical Support Specialist II
 
 **(So what exactly do you do?)**
 
-![Erik Neemann photo]({{ "/images/Erik - Slot Canyon.JPG" | prepend: site.baseurl }}){: .inline-text-right .outline }
+![Erik Neemann photo]({{ "/images/staff-erik.png" | prepend: site.baseurl }}){: .inline-text-right .outline }
 
 Initially, I’ll be attempting to fill the void left by the venerable David Buell as he retires after over 26 years of public service! This will entail a lot of work with 911 data to support many of the State’s Public Safety Answering Points (PSAPs). I will help manage law enforcement, fire, and emergency service boundaries, as well as road system and addressing data. These data sets require a lot of maintenance and massaging to ensure that they are accurate and up-to-date and that they seamlessly integrate with PSAP software to enable efficient call-taking and dispatching. Beyond the 911-centric work, I’ll be helping out with The Utah Reference Network (TURN) GPS and any other GIS projects that need support.
 
@@ -32,7 +32,7 @@ As an undergraduate student and budding meteorologist in the 2000s, I became acc
 
 I’ve had several interesting GIS projects that I’ve really enjoyed while taking courses over the last few years. These range from mapping out trips as an Uber driver to estimating debris-flow probability following the Thomas Fire in southern California. However, my personal favorite was identifying the best place to watch the August 21, 2017, total solar eclipse. For the project, I mapped out a weighted eclipse suitability score that accounted for the eclipse’s path of totality, duration of totality, average August cloud cover, vegetation/land cover type, and population density. I also updated the map with recalculated scores based on cloud forecast data from the National Weather Service a few days before the event. According to my original climate-based results, the panhandle of Nebraska was the best viewing location, but my actual experience suggests that Howe, Idaho, was a great viewing location too!
 
-**What do you want to accomplish at AGRC?** 
+**What do you want to accomplish at AGRC?**
 
 I hope to be able to contribute to a wide variety of projects in which the AGRC is involved and learn from the vast experience and skills of my coworkers along the way. Specifically, I want to improve the labor-intensive 911 data preparation process with automation. This would ultimately lead to greater work efficiency, as well as increased data accuracy and timeliness. I also want to help guide the State’s efforts to adopt the Next Generation 911 (NG911) data standards and best practices, so we can further enhance emergency services and operate within the new standard. Beyond that, I just want to contribute in any way I can to leverage the power of GIS and improve processes wherever possible.
 
@@ -42,7 +42,7 @@ My wife and I have a three-month-old daughter, so we now spend most of our time 
 
 **Favorite Utah trail/hike?**
 
-Almost anything involving a peak or a canyon is a hike that I’ll enjoy. One of my favorites has to be the iconic Angel’s Landing hike in Zion National Park. It’s just about the right distance and has a great combination of scenery, danger, and difficulty. It can get crowded though, so if you want to explore that hike, I’d recommend taking the first bus into the canyon to beat the masses and decrease the number of times you have to squeeze by someone on the edge of a cliff. 
+Almost anything involving a peak or a canyon is a hike that I’ll enjoy. One of my favorites has to be the iconic Angel’s Landing hike in Zion National Park. It’s just about the right distance and has a great combination of scenery, danger, and difficulty. It can get crowded though, so if you want to explore that hike, I’d recommend taking the first bus into the canyon to beat the masses and decrease the number of times you have to squeeze by someone on the edge of a cliff.
 The state has such a great variety of trails; there’s something for everyone, no matter what level of difficulty or remoteness you’re seeking.
 
 **Favorite food?**
