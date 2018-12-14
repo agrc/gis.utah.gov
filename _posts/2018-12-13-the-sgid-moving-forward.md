@@ -21,6 +21,8 @@ The SGID was established by state law in 1991 and ensures that GIS map layers ar
 
 In the past, agencies completed data maturity assessments, which provide AGRC with a good foundation for updating and consolidating agency GIS data. 
 
+![SGID Data Lifecycle photo]({{ "/images/SGID photo, reduced.jpg" | prepend: site.baseurl }})
+
 **Oh yeah, that’s right. And what is AGRC working on now with the SGID?**
 
 For the past several months, AGRC has been assessing SGID data layer usage in order to identify the most and least frequently used layers. (Read our [“SGID Data Lifecycle”]({{site.baseurl}}{% post_url 2018-02-05-sgid-data-lifecycle %}) and [“The Incredible Shrinking SGID”]({{site.baseurl}}{% post_url 2018-09-10-the-incredible-shrinking-sgid %}) articles to get more background about the SGID and our data collection efforts.) Although SGID data layer usage is constantly changing, at this point the most frequently used SGID layers are:
