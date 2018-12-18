@@ -16,10 +16,11 @@ tags:
 In 2022 the <abbr title="National Geodetic Survey">NGS</abbr> plans to publish a series of new horizontal reference frames that will replace the <abbr title="North American Datum of 1983">NAD83</abbr> and a vertical reference frame that will replace the <abbr title="North American Vertical Datum of 1988">NAVD88</abbr>.
 
 The new horizontal reference frames are the: 
-* <abbr title="North American Terrestrial Reference Frame of 2022">NATRF2022</abbr>,
-* <abbr title="Pacific Terrestrial Reference Frame of 2022">PATRF2022</abbr>,
-* <abbr title="Caribbean Terrestrial Reference Frame of 2022">CATRF2022</abbr>, and 
-* <abbr title="Mariana Terrestrial Reference Frame of 2022">MATRF2022</abbr>.
+
+- <abbr title="North American Terrestrial Reference Frame of 2022">NATRF2022</abbr>,
+- <abbr title="Pacific Terrestrial Reference Frame of 2022">PATRF2022</abbr>,
+- <abbr title="Caribbean Terrestrial Reference Frame of 2022">CATRF2022</abbr>, and 
+- <abbr title="Mariana Terrestrial Reference Frame of 2022">MATRF2022</abbr>.
 
 The new vertical reference frame is the <abbr title="North American-Pacific Geopotential Datum of 2022">NAPGD2022</abbr>.
 
