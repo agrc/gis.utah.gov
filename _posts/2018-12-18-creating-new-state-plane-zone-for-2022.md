@@ -35,5 +35,6 @@ The map shows a preliminary layout of the proposed low distortion zones for SPCS
 
 AGRC will continue to be a part of this work group and provide feedback from the GIS community as it is received. 
 
-Sean Fernandez
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.surveyor %}{% endcapture %}
+{{ contact | strip_newlines }}
 State Cadastral Surveyor - Utah
