@@ -1,5 +1,5 @@
 ---
-title: ' Creating New State Plane Zone for 2022'
+title: 'Creating New State Plane Zone for 2022'
 author:
   display_name: Sean Fernandez
   email: sfernandez@utah.gov
