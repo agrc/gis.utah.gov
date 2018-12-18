@@ -29,7 +29,7 @@ Currently SPCs are projected from ground elevations to sea level and across very
 
 A work group with representatives from the Utah Department of Transportation, the Utah Council of Land Surveyors, the <abbr title="Utah Automated Geographic Reference Center">AGRC</abbr>, and the surveying/geomatics programs at Utah Valley University and Salt Lake Community College have been collaborating with the NGS to define low distortion SPC needs in Utah, and the group responded to a questionnaire from the NGS as follows:
 
->We see the value in having one state-wide layer, at an average ground elevation and a second layer of 15-25 low distortion zones each combining several counties that have similar topographic relief and elevation and that have a combined extent that still meets the design criteria.
+> We see the value in having one state-wide layer, at an average ground elevation and a second layer of 15-25 low distortion zones each combining several counties that have similar topographic relief and elevation and that have a combined extent that still meets the design criteria.
 
 The map shows a preliminary layout of the proposed low distortion zones for SPCS2022, which combines some counties together and creates 14 zones that are outlined by political boundaries along county lines. 
 
