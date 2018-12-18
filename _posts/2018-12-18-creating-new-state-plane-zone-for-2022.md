@@ -37,4 +37,3 @@ AGRC will continue to be a part of this work group and provide feedback from the
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.surveyor %}{% endcapture %}
 {{ contact | strip_newlines }}
-State Cadastral Surveyor - Utah
