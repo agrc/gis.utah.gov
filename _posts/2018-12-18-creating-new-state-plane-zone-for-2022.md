@@ -15,6 +15,8 @@ tags:
 ---
 In 2022 the <abbr title="National Geodetic Survey">NGS</abbr> plans to publish a series of new horizontal reference frames that will replace the <abbr title="North American Datum of 1983">NAD83</abbr> and a vertical reference frame that will replace the <abbr title="North American Vertical Datum of 1988">NAVD88</abbr>.
 
+![Preliminary zone layout]({{ "/images/Preliminary zone layout 20180830,reduced.jpg" | prepend: site.baseurl }})
+
 The new horizontal reference frames are the: 
 
 - <abbr title="North American Terrestrial Reference Frame of 2022">NATRF2022</abbr>,
