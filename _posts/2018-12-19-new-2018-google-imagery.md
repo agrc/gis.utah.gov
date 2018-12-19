@@ -18,7 +18,7 @@ The new imagery is already loaded into the `Google`, `Utah`, `Basemap-Hybrid`, a
 
 If you have not signed up for access to the Google imagery visit the [Discover - Imagery and Base Map Server]({{ "/discover/" | prepend:site.baseurl }}) page for details and to access the links needed to request an account.
 
-[![Google update]({{"/images/New2018_Google_sm.png" | prepend:site.baseurl}} "2018 Google Imagery updates - click for larger image")]({{"/images/New2018_Google.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![Google update]({{"/images/NewGoogle_2018_sm.png" | prepend:site.baseurl}} "2018 Google Imagery updates - click for larger image")]({{"/images/NewGoogle_2018.png" | prepend:site.baseurl}}){:.inline-text-right}
 
 {% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
 {{ license | strip_newlines }}
