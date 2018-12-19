@@ -24,7 +24,7 @@ If you have not signed up for access to the Google imagery visit the [Discover -
 
 #### Don't see the updated imagery?
 
-**ArcMap/ArcGIS Pro users will need to clear their local caches to see the new imagery.** Users can clear their entire ArcMap/ArcGIS Pro caches or clear caches for just the `Google`, `Utah`, and `Basemap-Hybrid` layers.
+**ArcMap/ArcGIS Pro users will need to clear their local caches to see the new imagery.** Users can clear their entire ArcMap/ArcGIS Pro caches or clear caches for just the `Google`, `Utah`, and `Basemap-Hybrid` layers. More information can be found on the Discover Server and Resources and Information page under [Pro/ArcMap User Considerations.]({{"/discover/resources/#proarcmap-user-considerations" | prepend:site.baseurl}}).
 
 #### Cache Clearing Instructions
 
