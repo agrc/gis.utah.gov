@@ -91,7 +91,7 @@ If you have not yet received quad-word links to the service (ex. `https://discov
 
 Users experiencing problems with the service, such as blurry tiles or different year vintages at different scales, may need to clear their local cache.
 
-- **ArcMap** Go to the service’s `Layer Properties -> Cache` tab and selecting `Clear Local Cache Now`. Be patient as this could take several minutes. If the blurry tiles persist you have the options to `Clear cache when the session ends` or `Don't cache and data locally`. Another option is to completely clear your ArcMap cache by going to `Customize -> ArcMap Options -> Display Cache -> Clear Cache`.
+- **ArcMap** Go to the service’s `Layer Properties -> Cache` tab and selecting `Clear Local Cache Now`. Be patient as this could take several minutes. If the blurry tiles persist you have the options to `Clear cache when the session ends` or `Don't cache any data locally`. Another option is to completely clear your ArcMap cache by going to `Customize -> ArcMap Options -> Display Cache -> Clear Cache`.
 
 - **ArcGIS Pro** Go to the service’s `Layer Properties -> Cache` tab and selecting `Clear Cache`. You can also clear your entire Pro cache by going to the Pro project's `Options -> Display` and check `Clear cache` and selecting `OK`.
 
