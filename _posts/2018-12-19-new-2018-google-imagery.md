@@ -12,7 +12,7 @@ tags:
   - discover
 ---
 
-The new 2018 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({{ "/discover/" | prepend:site.baseurl }})<sup>*</sup>! Updated areas (map below) include what Google calls the "Salt Lake and Logan blocks," which make up most of the Wasatch Front urban area (i.e., Brigham City, Weber County, Davis County, Salt Lake County, and Utah County).
+The new 2018 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({{ "/discover/" | prepend:site.baseurl }})[^1]! Updated areas (map below) include what Google calls the "Salt Lake and Logan blocks," which make up most of the Wasatch Front urban area (i.e., Brigham City, Weber County, Davis County, Salt Lake County, and Utah County).
 
 [![Google update]({{"/images/NewGoogle_2018_sm.png" | prepend:site.baseurl}} "2018 Google imagery updates - click for larger image")]({{"/images/NewGoogle_2018.png" | prepend:site.baseurl}}){:.inline-text-right}
 
@@ -33,4 +33,4 @@ If you have not signed up for access to the Google imagery, visit the [Discover 
 
 - **ArcGIS Pro** Go to the service’s `Layer Properties -> Cache` tab and select `Clear Cache`. You can also clear your entire Pro cache by going to the Pro project's `Options -> Display`, checking `Clear cache`, and selecting `OK`.
 
-<sup>*</sup>The 2018 NAIP imagery will also be available soon. This year instead of 1 meter resolution, it will be .6 meter.
+[^1]: The 2018 NAIP imagery will also be available soon. This year instead of 1 meter resolution, it will be .6 meter.
