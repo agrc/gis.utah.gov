@@ -11,7 +11,7 @@ tags:
   - imagery
 ---
 
-The statewide 2018 National Agricultural Imagery Program (NAIP) aerial photography is now available</a>. This year the imagery is higher resolution .6 meter (60 centimeter) imagery compared to 1 meter resolution in previous years. The imagery is currently only available as 3-band Natural Color (RGB) and 3-band Color Infrared (CIR) Mr. Sid compressed county mosaics. The 4-band GeoTIFF or JP2 tiles should be available in a couple months with statewide imagery services soon to follow.
+The statewide 2018 National Agricultural Imagery Program (NAIP) aerial photography is now available. This year the imagery is higher resolution .6 meter (60 centimeter) imagery compared to 1 meter resolution in previous years. The imagery is currently only available as 3-band Natural Color (RGB) and 3-band Color Infrared (CIR) Mr. Sid compressed county mosaics. The 4-band GeoTIFF or JP2 tiles should be available in a couple of months with statewide imagery services soon to follow.
 
 [![NAIP Sample]({{"/images/NAIP2016_sm.png" | prepend:site.baseurl}} "click to enlarge")]({{"/images/NAIP2016.png" | prepend:site.baseurl}}){:.inline-text-right}]
 
