@@ -1,0 +1,49 @@
+
+---
+title: 'NAIP 2018 Mr. Sid County Mosaics Available'
+author:
+  display_name: Rick Kelson
+  email: rkelson@utah.gov
+date: 2019-01-17 21:13:40
+categories:
+  - Featured
+tags:
+  - naip
+  - imagery
+---
+
+The statewide 2018 National Agricultural Imagery Program (NAIP) aerial photography is now available</a>. This year the imagery is higher resolution .6 meter (60 centimeter) imagery compared to 1 meter resolution in previous years. The imagery is currently only available as 3-band Natural Color (RGB) and 3-band Color Infrared (CIR) Mr. Sid compressed county mosaics. The 4-band GeoTIFF or JP2 tiles should be available in a couple months with statewide imagery services soon to follow.
+
+[![NAIP Sample]({{"/images/NAIP2016_sm.png" | prepend:site.baseurl}} "click to enlarge")]({{"/images/NAIP2016.png" | prepend:site.baseurl}}){:.inline-text-right}]
+
+The files are not yet available from [Raster.utah.gov](https://raster.utah.gov). In the meantime use the following links to download the files for your county of interest.
+
+Beaver [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Beaver_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Beaver_CIR.zip)
+BoxElder [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_BoxElder_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_BoxElder_CIR.zip)
+Cache [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Cache_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Cache_CIR.zip)
+Carbon [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Carbon_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Carbon_CIR.zip)
+Daggett [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Daggett_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Daggett_CIR.zip)
+Davis [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Davis_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Davis_CIR.zip)
+Duchesne [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Duchesne_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Duchesne_CIR.zip)
+Emery [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Emery_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Emery_CIR.zip)
+Garfield [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Garfield_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Garfield_CIR.zip)
+Grand [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Grand_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Grand_CIR.zip)
+Iron [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Iron_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Iron_CIR.zip)
+Juab [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Juab_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Juab_CIR.zip)
+Kane [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Kane_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Kane_CIR.zip)
+Millard [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Millard_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Millard_CIR.zip)
+Morgan [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Morgan_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Morgan_CIR.zip)
+Piute [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Piute_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Piute_CIR.zip)
+Rich [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Rich_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Rich_CIR.zip)
+SaltLake [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_SaltLake_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_SaltLake_CIR.zip)
+SanJuan [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_SanJuan_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_SanJuan_CIR.zip)
+Sanpete [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Sanpete_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Sanpete_CIR.zip)
+Sevier [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Sevier_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Sevier_CIR.zip)
+Summit [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Summit_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Summit_CIR.zip)
+Tooele [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Tooele_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Tooele_CIR.zip)
+Uintah [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Uintah_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Uintah_CIR.zip)
+Utah [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Utah_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Utah_CIR.zip)
+Wasatch [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Wasatch_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Wasatch_CIR.zip)
+Washington [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Washington_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Washington_CIR.zip)
+Wayne [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Wayne_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Wayne_CIR.zip)
+Weber [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Weber_RGB.zip)[Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Weber_CIR.zip)
