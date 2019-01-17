@@ -14,7 +14,7 @@ The AGRC brown out of the mapserv image services was very successful. We want to
 
 With that behind us, AGRC has chosen the date of **Thursday, February 14** to permanently remove the image services. The deprecation Utah Change Management System reference number is `CHG0019495` and will be discussed at the next two Change Management meetings.
 
-{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If more time is needed for your migration, please let" hide-punctuation=true%}{% endcapture %
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If more time is needed for your migration, please let" hide-punctuation=true%}{% endcapture %}
 
 We hope this deprecation does not surprise anyone. {{ contact | strip_newlines }} know so we can address them as soon as possible.
 
