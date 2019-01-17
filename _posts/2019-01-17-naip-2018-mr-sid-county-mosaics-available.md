@@ -1,4 +1,3 @@
-
 ---
 title: 'NAIP 2018 Mr. Sid County Mosaics Available'
 author:
