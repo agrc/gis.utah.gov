@@ -10,9 +10,9 @@ categories:
 tags: []
 ---
 
-The AGRC brown out of the mapserv image services was very successful. We want to thank you for your participation and apologize for any inconveniences. The few people that were affected and caught by surprise are now informed and on the migration path forward.
+The AGRC brownout of the mapserv image services was very successful. We want to thank you for your participation and apologize for any inconveniences. The few people that were affected and caught by surprise are now informed and are on the migration path forward.
 
-With that behind us, AGRC has chosen the date of **Thursday, February 14** to permanently remove the image services. The deprecation Utah Change Management System reference number is `CHG0019495` and will be discussed at the next two Change Management meetings.
+With the brownout behind us, AGRC has chosen the date of **Thursday, February 14**, to permanently remove the image services. The deprecation Utah Change Management System reference number is `CHG0019495` and will be discussed at the next two change management meetings.
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If more time is needed for your migration, please let" hide-punctuation=true%}{% endcapture %}
 
