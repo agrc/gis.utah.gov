@@ -10,6 +10,9 @@
         &.update {
             background-color: $section-header-footer;
         }
+        &.endpoint {
+            background-color: $alternate-highlight-color;
+        }
     }
     h3, h5 {
         width: 100%;
