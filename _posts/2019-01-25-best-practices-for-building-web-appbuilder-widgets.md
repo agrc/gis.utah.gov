@@ -31,7 +31,7 @@ Another great tip that I found was to write your WAB widgets as plain old dojo w
 ### 3.Use Polyfill.io.
 Using babel worked great for this project until I needed polyfills for older browsers. (I'm looking at you, Internet Explorer.) Loading third-party libraries via AMD from within WAB widgets [is a pain](https://developers.arcgis.com/web-appbuilder/sample-code/add-a-third-party-library.htm). Fortunately, I found [Polyfill.io](https://polyfill.io/v3/). This is a service that dynamically returns a set of polyfills as defined by query parameters. The cool part about this service is that it only loads the code required for the browser that is making the request. Using this library from within WAB requires [adding it to the `loadResource` method in `init.js`](https://github.com/agrc/wfrc-wab-widgets#add-a-polyfill-for-older-browsers).
 
-I hope that these tips save you some headaches in the future. {% capture contact %}{% include contact.html
+Through working on this project, I feel like I've got a much better understanding of WAB and how it fits into our offerings. There is definite potential as long as it's shortcomings are well understood by the developer and client. I hope that these tips save you some headaches if you decide that WAB is a good fit for your next project. {% capture contact %}{% include contact.html
   subject=page.title
   contact=site.data.contacts.wab
   text="Let me know if you have anything to add to them:"
