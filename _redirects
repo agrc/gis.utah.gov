@@ -1,4 +1,4 @@
-# source                                                                                destination                                                     status code
+# source                                                                                                  destination                                                           status code
 /about/data-policies/                                                                                     /license-disclaimer/                                                          301
 /about/ugic/                                                                                              http://ugic.org/                                                              301
 /ugic/                                                                                                    http://ugic.org/                                                              301
@@ -71,7 +71,7 @@
 /data/sgid-cadastre/plss/                                                                                 /data/cadastre/plss/                                                          301
 /data/sgid-cadastre/turn-gps/                                                                             /data/cadastre/turn-gps/                                                      301
 /data/sgid-disclaimer/                                                                                    /license-disclaimer/                                                          301
-/data/sgid-imagery-services/                                                                              /image-server/                                                                301
+/data/sgid-imagery-services/                                                                              /discover/                                                                301
 /data/sgid-indices/                                                                                       /data/indices/                                                                301
 /data/sgid-indices/aerial-photography-indices/                                                            /data/indices/aerial-photography-indices/                                     301
 /data/sgid-indices/auto-correlated-dem-indices/                                                           /data/indices/auto-correlated-dem-indices/                                    301
@@ -113,6 +113,7 @@
 /data/water-data-services/watersheds/                                                                     /data/water/watersheds/                                                       301
 /data/water-data-services/wetlands/                                                                       /data/water/wetlands/                                                         301
 /developer/base-maps/                                                                                     /data/base-map-and-imagery/                                                   301
+/image-server/                                                                                            /image-service-deprecation/                                                   301
 /new-sde-connection-properties-for-arcgis-desktop-10-1/                                                   /sgid-database/                                                               301
 /templater                                                                                                http://agrc.github.io/templater                                               301
 
@@ -139,7 +140,7 @@
 /index.php                                                                                                /                                                                             301
 /gisresources                                                                                             /                                                                             301
 /data/cadastral                                                                                           /data/cadastre/                                                               301
-/imagery-server                                                                                           /image-server/                                                                301
+/imagery-server                                                                                           /discover/                                                                301
 /login                                                                                                    /                                                                             301
 /register                                                                                                 /                                                                             301
 /mapserv                                                                                                  /developer/                                                                   301
