@@ -20,9 +20,10 @@ But before we get to those tips, let's talk about some of the general pros and c
 ### 1. Check out Esri's WAB-related Yeoman generators project
 
 The first big win for me was finding [Esri's WAB-related Yeoman generators project](https://github.com/Esri/generator-esri-appbuilder-js). It provides several different generators. The first sets up a project structure and development environment specific to developing WAB widgets. It includes:
-* a best practice folder structure;
-* grunt tasks for JS tooling, including babel, livereload, and sass; and
-* a grunt task to automate the copying of your development code to WAB developer edition.
+
+- a best practice folder structure;
+- grunt tasks for JS tooling, including babel, livereload, and sass; and
+- a grunt task to automate the copying of your development code to WAB developer edition.
 
 Esri also includes a generator for scaffolding out the widgets themselves. This project provided a great starting point for my work.
 
