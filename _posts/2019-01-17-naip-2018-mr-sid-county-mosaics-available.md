@@ -15,7 +15,7 @@ The statewide 2018 National Agricultural Imagery Program (NAIP) aerial photograp
 
 [![NAIP Sample]({{"/images/NAIP2016_sm.png" | prepend:site.baseurl}} "click to enlarge")]({{"/images/NAIP2016.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-The files are not yet available from [Raster.utah.gov](https://raster.utah.gov). In the meantime use the following links to download the files for your county of interest.
+The files can be downloaded from [Raster.utah.gov](http://raster.utah.gov/?cat=NAIP%202018%20(60cm)) or from the following links.
 
 - Beaver [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Beaver_RGB.zip) [Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_Beaver_CIR.zip)
 - BoxElder [Natural Color (RGB)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_BoxElder_RGB.zip) [Color Infrared (CIR)](https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/color-infrared/NAIP2018_BoxElder_CIR.zip)
