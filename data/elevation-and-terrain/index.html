@@ -43,27 +43,6 @@ USGS-3DEP-DEM:
     <ul class="dotless">
       <li><a href="https://www.usgs.gov/faqs/what-vertical-accuracy-seamless-3dep-dems">What is the vertical accuracy of the seamless 3DEP DEMs?</a>
     </ul>
-    <script>
-      document.getElementById('old_ned').addEventListener('click', function() {
-        ga('send', {
-          hitType: 'event',
-          eventCategory: 'data',
-          eventAction: 'related-download',
-          eventLabel: 'related-download-ned',
-          transport: 'beacon'
-        });
-      });
-
-      document.getElementById('old_dem').addEventListener('click', function() {
-        ga('send', {
-          hitType: 'event',
-          eventCategory: 'data',
-          eventAction: 'related-download',
-          eventLabel: 'related-download-dem',
-          transport: 'beacon'
-        });
-      });
-    </script>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>
   </div>
   {% include packagedata.html name="USGS-3DEP-DEM"
