@@ -151,10 +151,6 @@ oil_wells:
   name: Don Staley
   email: DonStaley@utah.gov
   agency: DNR
-oil_fields:
-  name: Brad Hill
-  email: BradHill@utah.gov
-  agency: DNR
 air_quality:
   name: Whitney Oswald
   email: WOswald@utah.gov
