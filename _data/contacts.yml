@@ -91,14 +91,14 @@ boundaries:
   phone: 801-537-9296
   agency: AGRC
 zip_codes:
-  name: David Buell
-  email: DBuell@utah.gov
-  phone: 801-503-4247
+  name: Erik Neemann
+  email: ENeemann@utah.gov
+  phone: 385-258-4299
   agency: AGRC
 emergencyzones:
-  name: David Buell
-  email: DBuell@utah.gov
-  phone: 801-503-4247
+  name: Erik Neemann
+  email: ENeemann@utah.gov
+  phone: 385-258-4299
   agency: AGRC
 sitla:
   name: the GIS staff
