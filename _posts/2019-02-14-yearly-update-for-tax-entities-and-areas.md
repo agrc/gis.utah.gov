@@ -16,7 +16,7 @@ tags:
 
 As of January 28, we’re officially in tax season, and AGRC can help you stay informed about taxation in Utah! We have updated our 2018 year-end tax entity data, and you can access the data on the [Sales Tax Areas and Tax Entity Areas page](https://gis.utah.gov/data/economy/taxingareas/) of the AGRC website. 
 
-### Newest Tax Entities for 2018
+#### Newest Tax Entities for 2018
 
 The [Tax Entities dataset](https://www.google.com/url?q=https://drive.google.com/drive/folders/1F_gcgx68eaco_KPoKaiygD2ehzuDEudZ&sa=D&ust=1550186734827000&usg=AFQjCNGDEpHwYonefD9gUJBqYa1zEvORJA) contains the 2018 year-end data for all tax entities, such as school districts, cities, special service districts, and even mosquito abatement districts, that have the power to levy a local property tax. While these areas do not represent exact legal boundaries, they are used by the Utah State Tax Commission, Property Tax Division, for assessing properties.
 
