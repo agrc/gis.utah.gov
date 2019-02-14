@@ -28,8 +28,8 @@ Sales tax areas are created from municipal boundaries, metro townships, special 
 
 #### Updated Transit Special Tax Areas
 
-Transit special tax areas represent areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses). As cities grow and annex the unincorporated areas the transit areas get smaller. Check out the updated Transit Special Tax Areas dataset [here](https://www.google.com/url?q=https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVlHOXQ0djUtaEU&sa=D&ust=1550186688195000&usg=AFQjCNF3mO46t3BMv_P_s1e7KxnHnZIzbA). 
+Transit special tax areas represent areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses). As cities grow and annex the unincorporated areas the transit areas get smaller. Check out the updated [Transit Special Tax Areas dataset](https://www.google.com/url?q=https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVlHOXQ0djUtaEU&sa=D&ust=1550186688195000&usg=AFQjCNF3mO46t3BMv_P_s1e7KxnHnZIzbA). 
 
-### Available for Download
+#### Available for Download
 
 All these data layers can be downloaded as a comprehensive dataset from the [Sales Tax Areas and Tax Entity Areas page]({{ "/data/economy/taxingareas/" | prepend: site.baseurl }}) of the AGRC website. 
