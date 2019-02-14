@@ -29,9 +29,8 @@ The 1,000 Miles Campaign is part of Governor Herbert's *Life Elevated 2020* plan
 
 ![Trail Types]({{ "/images/BikeUtah1000Miles.png" }}){: .outline .flex .flex--center}
 
-{{ contact | strip_newlines }}
-
-We are looking for shapefiles or maps with comprehensive descriptions, including your name; the project name, location, and estimated distance; and a short description of the type of infrastructure. As soon as we verify the information you provide, we will put it all in this [google doc](https://docs.google.com/spreadsheets/d/1QkSaARZNNcgHQZKaW2sVoCJ4cnSKIk4nVca29y_6l-w/edit#gid=0) where it will be
+### How to Get Involved
+We are looking for shapefiles or maps with comprehensive descriptions, including your name; the project name, location, and estimated distance; and a short description of the type of infrastructure. {{ contact | strip_newlines }} As soon as we verify the information you provide, we will put it all in this [google doc](https://docs.google.com/spreadsheets/d/1QkSaARZNNcgHQZKaW2sVoCJ4cnSKIk4nVca29y_6l-w/edit#gid=0) where it will be
 shared with the governor's office and the public. As the campaign progresses, a story map will also be created for displaying this data.
 
 _Tracking progress of these projects is just one of our responsibilities._ **We can also provide strategic planning, technical assistance, and connections to financial resources**, so communities can begin or continue developing bicycling in their areas.
