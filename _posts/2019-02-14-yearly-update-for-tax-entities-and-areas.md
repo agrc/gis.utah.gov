@@ -14,7 +14,7 @@ tags:
   - special transit areas
 ---
 
-As of January 28, we’re officially in tax season, and AGRC can help you stay informed about taxation in Utah! We have updated our 2018 year-end tax entity data, and you can access the data on the [Sales Tax Areas and Tax Entity Areas page](https://gis.utah.gov/data/economy/taxingareas/) of the AGRC website. 
+As of January 28, we’re officially in tax season, and AGRC can help you stay informed about taxation in Utah! We have updated our 2018 year-end tax entity data, and you can access the data on the [Sales Tax Areas and Tax Entity Areas page]({{ "/data/economy/taxingareas/" | prepend: site.baseurl }}) of the AGRC website. 
 
 #### Newest Tax Entities for 2018
 
@@ -32,4 +32,4 @@ Transit special tax areas represent areas outside of incorporated municipalities
 
 ### Available for Download
 
-All these data layers can be downloaded as a comprehensive dataset from the [Sales Tax Areas and Tax Entity Areas page](https://gis.utah.gov/data/economy/taxingareas/) of the AGRC website. 
+All these data layers can be downloaded as a comprehensive dataset from the [Sales Tax Areas and Tax Entity Areas page]({{ "/data/economy/taxingareas/" | prepend: site.baseurl }}) of the AGRC website. 
