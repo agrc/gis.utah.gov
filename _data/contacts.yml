@@ -250,6 +250,10 @@ flood_areas:
    - name: Brooke Conner
      agency: DEM
      email: brooke.conner@fema.dhs.gov
+alluvial_fans:
+  name: Jamie Huff
+  email: JHuff@utah.gov
+  agency: UDEM
 uta:
   name: Sumer Ellis
   agency: UTA
