@@ -1,0 +1,49 @@
+---
+tags:
+  - alluvial
+  - geoscience
+author:
+  display_name: Rick Kelson
+  email: rkelson@utah.gov
+date: 2019-02-20 16:53:14 -0600
+title: Alluvial Fans
+categories: []
+AlluvialFans:
+  downloads:
+    - url:
+      label: 'Alluvial Fans: File Geodatabase'
+    - url:
+      label: 'Alluvial Fans: Shapefile'
+    - url:
+      label: 'Alluvial Fans - Field Photos: File Geodatabase'
+    - url:
+      label: 'Alluvial Fans - Field Photos: Shapefile'
+  updates:
+    - 2017
+---
+<div class="caption">
+  <img src="{{ "/images/alluvialfans.png" | prepend: site.baseurl }}" alt="Alluvial Fans" />
+  <p class="caption-text">Alluvial Fans</p>
+</div>
+{% include abstract.html download="???????????"
+name="Alluvial Fans"
+stewards="UDEM"
+abstract="The mapped alluvial fans in the Wasatch Front region of the State of Utah." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="AlluvialFans">
+      <a href="#AlluvialFans" class="anchor--link">Alluvial Fans</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>Geoscience.QuaternaryFaults represents The Utah Geological Survey Quaternary Fault and Fold Database and Map of Utah. This data is a compilation of existing information on faults and fault-related folds considered to be potential earthquake sources (i.e., “active” faults and folds). The faults and folds contained in the database are those considered to have been sources of large earthquakes (about magnitude 6.5 or greater) during the Quaternary Period (past 2.6 million years); these geologic structures are the most likely sources of large earthquakes in the future. The data set is intended to be a comprehensive source of the most current information available for characterizing active faults and folds in Utah for seismic-hazard analysis. This version of the data incorporates fault data from geologic maps and other documents formally published through 2013.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://geology.utah.gov/hazards/earthquakes-faults/utah-faults">Geology.utah.gov fault information</a>
+    </ul>
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.alluvial_fans %}</p>
+  </div>
+  {% include packagedata.html name="AlluvialFans"
+  info=page.AlluvialFans %}
+</div>
