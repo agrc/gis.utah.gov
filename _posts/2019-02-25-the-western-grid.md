@@ -7,9 +7,8 @@ date: 2019-02-24 08:00:00
 categories:
   - Featured
 tags:
-  - 'PLSS'
-  - 'public lands survey'
-  - 'history'
+  - plss
+  - history
 ---
 
 <div class="caption"><a href="{{ "/images/SaltLakeHistoric.jpg" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/SaltLakeHistoric_sm.jpg" | prepend: site.baseurl }}" alt="1891 Salt Lake City Bird's Eye View"></a><p class="caption-text">Fig 1: 1891 Salt Lake City Bird's Eye View</p></div>
