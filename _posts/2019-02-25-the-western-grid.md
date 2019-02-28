@@ -17,7 +17,8 @@ Have you ever wondered why the patterns of development in the Western United Sta
 
 It turns out this gridiron pattern, actually, is connected to a 17th-century mathematician, the Treaty of Paris, and Thomas Jefferson. Yup, there's definitely a connection here, which also helps explain the West's notorious wide streets, big city blocks, as well as our nation’s entangled dependence on feet, yards, and miles (the United States customary units). Read on and we will explore it.
 
-### The Survey Chain
+## The Survey Chain
+{: .text-left}
 
 <div class="caption"><img src="{{ "/images/GunterChain.png" | prepend: site.baseurl }}" alt="Gunter Chain" /><p class="caption-text">Fig 2: Gunter Chain</p></div>
 
@@ -25,14 +26,18 @@ Let’s start with the 17th-century mathematician, Edmund Gunter. Actually, he w
 
 The Gunter Chain made its way across the Atlantic with the early colonists. It was so popular that the acre, noted in the Articles of Confederation (1781), was declared the standard unit of land measurement for the new nation.
 
-### Standard Units of Measure (the acre)
+## Standard Units of Measure (the acre)
+{: .text-left}
+
 <div class="caption"><img src="{{ "/images/NorthwestTerritory.png" | prepend: site.baseurl }}" alt="Northwest Territory" /><p class="caption-text">Fig 3: Northwest Territory</p></div>
 
 Okay, let’s jump ahead to 1783 and the Treaty of Paris. At this point in American history, the thirteen original colonies just pulled off the seemingly impossible and defeated the British Empire, ending their colonial rule. This treaty marked the official end of the Revolutionary War and the beginning of independent American governance. In addition to the thirteen colonies, a large swath of land referred to as the Northwestern Territory (Fig 3), was ceded to the United States. This was good news to a new nation carrying a sizable amount of wartime debt. Fortunately, the largely, uninhabited Northwest Territory could be divided and sold off in sections (parcels) to generate revenue for the new nation. Though, first, this land had to be surveyed.
 
 The early American Congress further solidified the acre as the official unit of land measurement with the Land Ordinance of 1785 and the resulting North West Ordinance of 1787. These ordinances provided the framework of the public lands and the procedures for organizing territorial lands west of the Application Mountains.
 
-### Public Land Survey System
+## Public Land Survey System
+{: .text-left}
+
 I know, I know… that was probably more history than you were looking for, but really, that’s the annotated, crash-course for understanding the basis of the present-day Public Land Survey System (PLSS) (Fig 4). This system was originally proposed by Thomas Jefferson, and was mandated by Congress to oversee the cadastral surveys of the public lands. Essentially, it was set up to facilitate the transfer of Federal lands to private citizens. The Bureau of Land Management (BLM) is the official record keeper of the surveys. Over the past 200 years, almost 1.5 billion acres have been surveyed into townships (and ranges) and sections. These surveys were conducted primarily west of the original thirteen colonies and north of Texas (Texas has Spanish roots and Spanish land grants).  Presently, areas of Alaska are still being surveyed.
 
 <div class="caption"><a href="{{ "/images/principal_meridians.png" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/principal_meridians_sm.png" | prepend: site.baseurl }}" alt="PLSS Principal Meridians"></a>
@@ -51,7 +56,9 @@ These early surveyors typically placed a permanent monument at Section and Quart
 
 It is precisely this survey pattern that explains why the Western United States is so orthogonal. Although the grid is not unique to the West, it's certainly at the core of all land sales and as a result it influences many development patterns. Let’s look at a few examples.
 
-### The Western Grid
+## The Western Grid
+{: .text-left}
+
 <div style="display: block">
 <div class="caption"><a href="{{ "/images/plat_of_zion.png" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/plat_of_zion_sm.png" | prepend: site.baseurl }}" alt="Plat of Zion"></a><p class="caption-text">Fig 7: Plat of Zion</p>
 </div><div class="caption"><a href="{{ "/images/ColonialBoston.png" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/ColonialBoston_sm.png" | prepend: site.baseurl }}" alt="Colonial Boston"></a><p class="caption-text">Fig 8: Colonial Boston</p></div>
@@ -67,7 +74,9 @@ Large city blocks are a common theme in the West. These typically vary between 1
 
 If you have ever tried to cross the street in downtown Salt Lake City, you’ll know our intersections are extremely wide. You’ll see the Gunter Chain’s lasting mark at these intersections as well. Looking at Portland (Fig 9) and Salt Lake City (Fig 9) again and you’ll notice two variations of the chain. Salt Lake City (Fig 9) has large intersections that are based on two chain lengths (132 feet), whereas in Portland and San Francisco intersections measure half a chain (33’). In Phoenix (Fig 9), you’ll notice intersections measure one full chain length (66 feet).
 
-### Section Lines and Addressing
+## Section Lines and Addressing
+{: .text-left}
+
 Another notable mention are “section line roads”. These roads are laid out in a one-mile by one-mile grid pattern that follow the section lines. Figure 10 shows a good example of this southwest of Boise, Idaho. This pattern is also very popular in Phoenix and Las Vegas.
 
 Section lines in North Dakota and South Dakota are often used as the basis for their street numbering systems. In Salt Lake City, a similar section-based addressing system is used, where the 100 blocks (ex: from 100 E to 200 E) are ten chains, or 660 feet, or quarter-quarter-quarter sections (10 chains or 660 feet).
