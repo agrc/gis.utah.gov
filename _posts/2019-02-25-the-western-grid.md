@@ -11,7 +11,8 @@ tags:
   - 'public lands survey'
   - 'history'
 ---
-<div class="caption"><a href="/images/SaltLakeHistoric.jpg" title="click to see the full sized image"><img src="/images/SaltLakeHistoric_sm.jpg" alt="1891 Salt Lake City Bird's Eye View"></a><p class="caption-text">Fig 1: 1891 Salt Lake City Bird's Eye View</p></div>
+
+<div class="caption"><a href="{{ "/images/SaltLakeHistoric.jpg" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/SaltLakeHistoric_sm.jpg" | prepend: site.baseurl }}" alt="1891 Salt Lake City Bird's Eye View"></a><p class="caption-text">Fig 1: 1891 Salt Lake City Bird's Eye View</p></div>
 
 Have you ever wondered why the patterns of development in the Western United States are so orthogonal?  Pan around a map and you'll see the confines of the grid just about everywhere.  Grid-like development is nothing new - it can be traced back to early developments in the Middle East.  But, why is it so prevalent in the West?
 
@@ -35,7 +36,7 @@ The early American Congress further solidified the acre as the official unit of 
 ### Public Land Survey System
 I know, I know… that was probably more history than you were looking for, but really, that’s the annotated, crash-course for understanding the basis of the present-day Public Land Survey System (PLSS) (Fig 4).  This system was originally proposed by Thomas Jefferson, and was mandated by Congress to oversee the cadastral surveys of the public lands.  Essentially, it was set up to facilitate the transfer of Federal lands to private citizens.  The Bureau of Land Management (BLM) is the official record keeper of the surveys.  Over the past 200 years, almost 1.5 billion acres have been surveyed into townships (and ranges) and sections.  These surveys were conducted primarily west of the original thirteen colonies and north of Texas (Texas has Spanish roots and Spanish land grants).   Presently, areas of Alaska are still being surveyed.
 
-<div class="caption"><a href="/images/principal_meridians.png" title="click to see the full sized image"><img src="/images/principal_meridians_sm.png" alt="PLSS Principal Meridians"></a>
+<div class="caption"><a href="{{ "/images/principal_meridians.png" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/principal_meridians_sm.png" | prepend: site.baseurl }}" alt="PLSS Principal Meridians"></a>
 <p class="caption-text">Fig 4: PLSS Principal Meridians</p></div>
 <div class="caption"><img src="{{ "/images/salt_lake_meridian.png" | prepend: site.baseurl }}" alt="Salt Lake Meridian" /><p class="caption-text">Fig 5: Salt Lake Meridian</p></div>
 
@@ -53,8 +54,8 @@ It is precisely this survey pattern that explains why the Western United States 
 
 ### The Western Grid
 <div style="display: block">
-<div class="caption"><a href="/images/plat_of_zion.png" title="click to see the full sized image"><img src="/images/plat_of_zion_sm.png" alt="Plat of Zion"></a><p class="caption-text">Fig 7: Plat of Zion</p>
-</div><div class="caption"><a href="/images/ColonialBoston.png" title="click to see the full sized image"><img src="/images/ColonialBoston_sm.png" alt="Colonial Boston"></a><p class="caption-text">Fig 8: Colonial Boston</p></div>
+<div class="caption"><a href="{{ "/images/plat_of_zion.png" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/plat_of_zion_sm.png" | prepend: site.baseurl }}" alt="Plat of Zion"></a><p class="caption-text">Fig 7: Plat of Zion</p>
+</div><div class="caption"><a href="{{ "/images/ColonialBoston.png" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/ColonialBoston_sm.png" | prepend: site.baseurl }}" alt="Colonial Boston"></a><p class="caption-text">Fig 8: Colonial Boston</p></div>
 </div>
 
 One of the more dominant patterns you'll see in the West is the rectangular city block. You could argue that the Mormon pioneers helped carry this development pattern west from Missouri with their Plat of Zion (Fig 7) - and their subsequent establishment of more than 700 communities.  Contrast this pattern with the pre-PLSS pattern of the early colonial settlers in Boston (Fig 8).
@@ -62,7 +63,7 @@ One of the more dominant patterns you'll see in the West is the rectangular city
 Large city blocks are a common theme in the West.  These typically vary between 198 feet, 330 feet, and 660 feet (which is 3, 5, and 10 chains).  Often, two sides of the block are 660 feet, with the adjacent sides being 198 feet or 330 feet.  Looking at Portland (Fig 9), their blocks are unusually small in the West at 198 feet x 198 feet.  On the other side of the spectrum, Salt Lake City (Fig 9) is known for having the largest blocks in the West at 660 feet x 660 feet.  Blocks are more rectangular in San Francisco (Fig 9) and Phoenix (Fig 9), as they measure 660 feet x 198 feet and 660 feet x 330 feet, respectfully.
 
 <p class="text-center">
-<div class="caption"><a href="/images/urban_grids.png" title="click to see the full sized image"><img src="/images/urban_grids_sm.png" alt="Western Urban Grid"></a><p class="caption-text">Fig 9: Variations on the Western Urban Grid</p></div>
+<div class="caption"><a href="{{ "/images/urban_grids.png" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/urban_grids_sm.png" | prepend: site.baseurl }}" alt="Western Urban Grid"></a><p class="caption-text">Fig 9: Variations on the Western Urban Grid</p></div>
 </p>
 
 If you have ever tried to cross the street in downtown Salt Lake City, you’ll know our intersections are extremely wide.  You’ll see the Gunter Chain’s lasting mark at these intersections as well.  Looking at Portland (Fig 9) and Salt Lake City (Fig 9) again and you’ll notice two variations of the chain.  Salt Lake City (Fig 9) has large intersections that are based on two chain lengths (132 feet), whereas in Portland and San Francisco intersections measure half a chain (33’).  In Phoenix (Fig 9), you’ll notice intersections measure one full chain length (66 feet).
@@ -74,9 +75,9 @@ Section lines in North Dakota and South Dakota are often used as the basis for t
 
 One last notable Western development pattern is the disguised grid. These are often large communities.  The land is typically purchased by the section (or more) and then made to feel less grid-like.  Two good examples of this are Sun Lakes (Fig 11) and Sun City in Arizona. As you move through these communities you forget that you're on the grid.
 
-<div class="caption"><a href="/images/SectionLineRoads.png" title="click to see the full sized image"><img src="/images/SectionLineRoads_sm.png" alt="Section Line Roads Southwest of Boise, ID"></a><p class="caption-text">Fig 10: Section Line Roads Southwest of Boise, ID</p></div>
-<div class="caption"><a href="/images/SunLakes_grid.png" title="click to see the full sized image"><img src="/images/SunLakes_grid_sm.png" alt="Sun City, AZ (Disguising the Grid)"></a><p class="caption-text">Fig 11: Sun City, AZ (disguising the grid)</p></div>
+<div class="caption"><a href="{{ "/images/SectionLineRoads.png" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/SectionLineRoads_sm.png" | prepend: site.baseurl }}" alt="Section Line Roads Southwest of Boise, ID"></a><p class="caption-text">Fig 10: Section Line Roads Southwest of Boise, ID</p></div>
+<div class="caption"><a href="{{ "/images/SunLakes_grid.png" | prepend: site.baseurl }}" title="click to see the full sized image"><img src="{{ "/images/SunLakes_grid_sm.png" | prepend: site.baseurl }}" alt="Sun City, AZ (Disguising the Grid)"></a><p class="caption-text">Fig 11: Sun City, AZ (disguising the grid)</p></div>
 
-It's remarkable how a few key points in history have permanently affected the growth and development patterns in the Western United States.  It's also interesting how these same decisions have made it difficult for us to turn our backs on the imperial-based measurement system (United States customary units).  
+It's remarkable how a few key points in history have permanently affected the growth and development patterns in the Western United States.  It's also interesting how these same decisions have made it difficult for us to turn our backs on the imperial-based measurement system (United States customary units).
 
-So, the next time you're out wandering the Western grid and you encounter a large intersection or a big city block, you can think back to Edmund Gunter, The Treaty of Paris, and Thomas Jefferson. 
+So, the next time you're out wandering the Western grid and you encounter a large intersection or a big city block, you can think back to Edmund Gunter, The Treaty of Paris, and Thomas Jefferson.
