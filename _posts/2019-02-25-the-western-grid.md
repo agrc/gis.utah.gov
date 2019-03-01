@@ -36,7 +36,7 @@ Because of its ease in calculations, the Gunter Chain was quickly adopted and be
 
 The Gunter Chain made its way across the Atlantic with the early colonists. It was so popular that the acre, noted in the Articles of Confederation (1781), was declared the standard unit of land measurement for the new nation.
 
-## Standard Units of Measure (the acre)
+## Standard Units of Measure (The Acre)
 {: .text-left}
 
 <div class="caption">
