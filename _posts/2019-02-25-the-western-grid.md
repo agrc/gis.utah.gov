@@ -135,4 +135,4 @@ One last notable Western development pattern is the disguised grid. These are of
 
 It's remarkable how a few key points in history have permanently affected the growth and development patterns in the Western United States. It's also interesting how these same decisions have made it difficult for us to turn our backs on the imperial-based measurement system (i.e., United States customary units).
 
-So, the next time you're out wandering the Western grid and you encounter a large intersection or a big city block, you can think back to Edmund Gunter, The Treaty of Paris, and Thomas Jefferson.
+So, the next time you're out wandering the Western grid and you encounter a large intersection or a big city block, you can think back to Edmund Gunter, the Treaty of Paris, and Thomas Jefferson.
