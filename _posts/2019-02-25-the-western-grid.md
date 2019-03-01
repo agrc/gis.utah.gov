@@ -18,7 +18,7 @@ tags:
   <p class="caption-text">Fig 1: 1891 Salt Lake City Bird's Eye View</p>
 </div>
 
-Have you ever wondered why the patterns of development in the Western United States are so orthogonal? Pan around a map and you'll see the confines of the grid just about everywhere. Grid-like development is nothing new - it can be traced back to early developments in the Middle East. But, why is it so prevalent in the West?
+Have you ever wondered why the patterns of development in the Western United States are so orthogonal (i.e., "right-angled")? Pan around a map and you'll see the confines of the grid just about everywhere. Grid-like development is nothing new - it can be traced back to early developments in the Middle East. But, why is it so prevalent in the West?
 
 It turns out this gridiron pattern, actually, is connected to a 17th-century mathematician, the Treaty of Paris, and Thomas Jefferson. Yup, there's definitely a connection here, which also helps explain the West's notorious wide streets, big city blocks, as well as our nation’s entangled dependence on feet, yards, and miles (the United States customary units). Read on and we will explore it.
 
