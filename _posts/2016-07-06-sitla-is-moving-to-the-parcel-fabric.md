@@ -15,19 +15,19 @@ categories:
 
 The State of Utah School and Institutional Trust Lands Administration (SITLA) is currently in the process of migrating land ownership data to the most current public land survey system (PLSS) parcel fabric version, maintained by the Automated Geographic Reference Center (AGRC). The land ownership is currently aligned to the 2006 version of the PLSS and is out-of-date. Now is the perfect opportunity to take advantage of the parcel fabric. SITLA is partnering with AGRC to make this happen and to ensure the harmonization between the parcel fabric and land ownership. Every time the parcel fabric is updated by AGRC, the land ownership will automatically be updated with it. The land ownership will move with changes in the parcel fabric which will yield a clean and quality product!
 
-<div class="caption">
+<figure class="caption caption--right">
 <a href ="{{ "/images/SITLA_ParcelFabric_fullsize.png" | prepend: site.baseurl }}">
 <img src="{{ "/images/SITLA_ParcelFabric.png" | prepend: site.baseurl }}" alt="SITLA Parcel Fabric Example" /></a>
-<p class="caption-text">Example of Land Ownership being integrated with PLSS Parcel Fabric</p>
-</div>
+<figcaption class="caption__text">Example of Land Ownership being integrated with PLSS Parcel Fabric</figcaption>
+</figure>
 
 There are a few steps that need to be taken to prepare the land ownership for migration into the parcel fabric. The first step is to actually migrate the land ownership to the current version of PLSS. This involves many small geoprocessing tasks that take approximately 5 to 6 hours to complete. Once completed, the land ownership needs to be verified and cleaned. Subsequent steps that need to be taken to ensure success include:
 
 - incorporating metes and bounds descriptions where needed,
 - adding missing aliquot parcels,
 - cutting natural boundaries,
-- verifying and re-calculating attributes, and 
-- creating true curves and validating topologies. 
+- verifying and re-calculating attributes, and
+- creating true curves and validating topologies.
 
 These steps are by far the most time consuming and tedious stage of the process, but are definitely most important to overall success. The land ownership has to be flawless before it can be loaded into the parcel fabric.
 

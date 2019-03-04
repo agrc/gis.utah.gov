@@ -23,7 +23,7 @@ categories:
 <ul>
 <li>12,904 exposures acquired at a 12.5 cm ground sample distance (GSD).</li>
 <li>247 flight lines flown with a Vexcel UltraCamX digital camera system.
-<div class="caption"><a href="{{ "/downloads/HRO2012_footprint.png" | prepend: site.baseurl }}"><img class=" wp-image-11683" style="border: 1px solid black;" title="HRO2012 Footprint (click to enlarge)" src="{{ "/images/HRO2012_footprint.png" | prepend: site.baseurl }}" alt="" width="150" height="248" /></a><p class="caption-text">HRO2012 Footprint (click to enlarge)</p></div></li>
+<figure class="caption caption--right"><a href="{{ "/downloads/HRO2012_footprint.png" | prepend: site.baseurl }}"><img style="border: 1px solid black;" title="HRO2012 Footprint (click to enlarge)" src="{{ "/images/HRO2012_footprint.png" | prepend: site.baseurl }}" alt="" width="150" height="248" /></a><figcaption class="caption__text">HRO2012 Footprint (click to enlarge)</figcaption></figure></li>
 <li>60% side and 80% forward overlap over downtown SLC and the U of U (to minimize building lean).</li>
 <li>4-band GeoTIFF delivery of 1,436 tiles in 2000m x 2000m tiles (roughly 1GB each).</li>
 <li>AGRC supplied local ground control which was used with supplemental aero-graphics control from other projects.</li>

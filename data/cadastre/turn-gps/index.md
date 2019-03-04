@@ -10,9 +10,9 @@ date: 2011-06-30 23:13:39 -0600
 title: The Utah Reference Network (TURN) GPS
 categories: []
 ---
-<div class="caption"><img title="map" src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
-  <p class="caption-text">TURN GPS Stations</p>
-</div>
+<figure class="caption caption--right"><img title="map" src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
+  <figcaption class="caption__text">TURN GPS Stations</figcaption>
+</figure>
 {% include abstract.html
 name="TURN GPS Network"
 stewards="AGRC"

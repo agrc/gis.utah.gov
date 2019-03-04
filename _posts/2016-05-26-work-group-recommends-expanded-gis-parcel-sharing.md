@@ -26,7 +26,7 @@ categories:
 Earlier this month, the Land Information Records work group, an informal committee organized by Evan Curtis, the State Planning Coordinator with the
 Governor’s Office of Management and Budget, produced [recommendations](https://docs.google.com/document/d/19urzWWDE62dX0g2hkcjWid1ctO5n_GR_pNe54o_Y4HY/edit?usp=sharing) for expanding the sharing of GIS-based parcel information.
 
-<div class="caption"><a href="https://docs.google.com/document/d/19urzWWDE62dX0g2hkcjWid1ctO5n_GR_pNe54o_Y4HY/edit?usp=sharing"><img src="{{ "/images/ParcelRecDocScreenshot.jpg" | prepend: site.baseurl }}" alt="Land Use Information Records Recommendations" /></a><p class="caption-text">Land Use Information Records Recommendations Document</p></div>
+<figure class="caption caption--right"><a href="https://docs.google.com/document/d/19urzWWDE62dX0g2hkcjWid1ctO5n_GR_pNe54o_Y4HY/edit?usp=sharing"><img src="{{ "/images/ParcelRecDocScreenshot.jpg" | prepend: site.baseurl }}" alt="Land Use Information Records Recommendations" /></a><figcaption class="caption__text">Land Use Information Records Recommendations Document</figcaption></figure>
 
 Participants in the LIR work group include representatives from county, regional, and state government, including the Utah Association of Counties (County Assessors and County Recorders), Wasatch Front Regional Council, Mountainland and Bear River AOGs, Utah League of Cities and Towns, UDOT, DNR, AGRC, the Division of Emergency Management, Blue Stakes, economic developers, and academic researchers.
 
@@ -36,7 +36,7 @@ An important realization made by the group was that ‘parcel data’ or ‘parc
 
 The LIR recommendations do not impact the periodic sharing of _**basic parcel GIS data**_ (boundary, ID, address) from the County Recorders to AGRC per [63F-1-506 (3.b.vi)](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S506.html). Both the tax year parcel and the basic parcel GIS layers are designed for general purpose uses, and are not substitutes for researching and obtaining the most current, legal land records information on file in County records.
 
-It is hoped that this new expanded parcel GIS layer will be put to immediate use supporting the best possible outcomes in public safety, economic development, transportation, planning, and the provision of public services. Two quick map examples, at the bottom of this post, illustrate how land value and vacant land can be visualized from the expanded parcel information. 
+It is hoped that this new expanded parcel GIS layer will be put to immediate use supporting the best possible outcomes in public safety, economic development, transportation, planning, and the provision of public services. Two quick map examples, at the bottom of this post, illustrate how land value and vacant land can be visualized from the expanded parcel information.
 
 Another aim of the work group was to improve the usability of the data (through development of standards and consistent metadata documentation) and the efficiency with which the data sharing is distributed.
 
