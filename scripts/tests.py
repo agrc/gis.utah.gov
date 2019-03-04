@@ -39,18 +39,18 @@ class TestCleanser(unittest.TestCase):
         self.assertEqual(cleanser.update_data_download_button(test), valid)
 
     def test_captions(self):
-        test = '<div class="caption"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/><p class="caption-text">Concept of an Address Locator</p></div>'
-        valid = '<div class="caption"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/><p class="caption-text">Concept of an Address Locator</p></div>'
+        test = '<div class="caption caption--right"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/><figcaption class="caption__text">Concept of an Address Locator</figcaption></div>'
+        valid = '<div class="caption caption--right"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/><figcaption class="caption__text">Concept of an Address Locator</figcaption></div>'
 
         self.assertEqual(cleanser.update_caption(test), valid)
 
-        test = '<div class="caption"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/></div>'
-        valid = '<div class="caption"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/></div>'
+        test = '<div class="caption caption--right"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/></div>'
+        valid = '<div class="caption caption--right"><img class="size-full wp-image-4794" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="ChangeMeLarge"/></div>'
 
         self.assertEqual(cleanser.update_caption(test), valid)
 
         test = '<p>[caption id="attachment_18156" align="alignright" width="300" caption="The pendulum swings back and forth..."]<a href="{{ "/downloads/Screen-Shot-2015-11-27-at-12.39.23-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-11-27-at-12.39.23-PM-300x220.png" | prepend: site.baseurl }}" alt="" title="The pendulum swings back and forth..." width="300" height="220" /></a>[/caption]</p>'
-        valid = '<div class="caption"><a href="{{ "/downloads/Screen-Shot-2015-11-27-at-12.39.23-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-11-27-at-12.39.23-PM-300x220.png" | prepend: site.baseurl }}" alt="" title="The pendulum swings back and forth..." width="300" height="220" /></a><p class="caption-text">The pendulum swings back and forth...</p></div>'
+        valid = '<div class="caption caption--right"><a href="{{ "/downloads/Screen-Shot-2015-11-27-at-12.39.23-PM.png" | prepend: site.baseurl }}"><img src="{{ "/images/Screen-Shot-2015-11-27-at-12.39.23-PM-300x220.png" | prepend: site.baseurl }}" alt="" title="The pendulum swings back and forth..." width="300" height="220" /></a><figcaption class="caption__text">The pendulum swings back and forth...</figcaption></div>'
 
         self.assertEqual(cleanser.update_caption(test), valid)
 
