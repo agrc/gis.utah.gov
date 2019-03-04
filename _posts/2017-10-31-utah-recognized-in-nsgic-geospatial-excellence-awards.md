@@ -17,32 +17,22 @@ Through its Geospatial Excellence Awards, the [National States Geographic Inform
 At NSGIC's Annual Conference this September, two of the national geospatial excellence awards ([see all](https://nsgic.memberclicks.net/2017-NSGIC-awards0)) went to Utah-led initiatives.
 
 <div class="flex flex--center flex--around">
-  <div>
-    <div class="caption">
-      <img src="{{ "/images/nsgic_awards/KColeGOEDSmall.png" | prepend: site.baseurl }}" alt="Kelleigh Cole and GOED, Champion Award" />
-      <p class="caption-text">Kelleigh Cole and GOED, Champion Award</p>
-    </div>
-  </div>
-  <div>
-    <div class="caption">
-      <img src="{{ "/images/nsgic_awards/ECurtisSmall.png" | prepend: site.baseurl }}" alt="Evan Curtis, Catalyst Award" />
-      <p class="caption-text">Evan Curtis, Catalyst Award</p>
-    </div>
-  </div>
-</div>
-<div class="flex flex--center flex--around">
-  <div>
-    <div class="caption">
-      <img src="{{ "/images/nsgic_awards/RodBennett.png" | prepend: site.baseurl }}" alt="Rod Bennett" />
-      <p class="caption-text">Rod Bennett (left), Catalyst Award</p>
-    </div>
-  </div>
-  <div>
-    <div class="caption">
-      <img src="{{ "/images/nsgic_awards/TKnowltonSmall.png" | prepend: site.baseurl }}" alt="Ted Knowlton, Catalyst Award" />
-      <p class="caption-text">Ted Knowlton, Catalyst Award</p>
-    </div>
-  </div>
+  <figure class="caption">
+    <img src="{{ "/images/nsgic_awards/KColeGOEDSmall.png" | prepend: site.baseurl }}" alt="Kelleigh Cole and GOED, Champion Award" />
+    <figcaption class="caption__text">Kelleigh Cole and GOED, Champion Award</figcaption>
+  </figure>
+  <figure class="caption">
+    <img src="{{ "/images/nsgic_awards/ECurtisSmall.png" | prepend: site.baseurl }}" alt="Evan Curtis, Catalyst Award" />
+    <figcaption class="caption__text">Evan Curtis, Catalyst Award</figcaption>
+  </figure>
+  <figure class="caption">
+    <img src="{{ "/images/nsgic_awards/RodBennett.png" | prepend: site.baseurl }}" alt="Rod Bennett" />
+    <figcaption class="caption__text">Rod Bennett (left), Catalyst Award</figcaption>
+  </figure>
+  <figure class="caption">
+    <img src="{{ "/images/nsgic_awards/TKnowltonSmall.png" | prepend: site.baseurl }}" alt="Ted Knowlton, Catalyst Award" />
+    <figcaption class="caption__text">Ted Knowlton, Catalyst Award</figcaption>
+  </figure>
 </div>
 
 **Champion Award**: _Utah Governor's Office of Economic Development_

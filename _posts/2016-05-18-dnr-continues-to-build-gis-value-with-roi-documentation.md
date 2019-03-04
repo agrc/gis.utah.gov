@@ -14,7 +14,7 @@ This year we awarded our Grand Prize Award to Aaron Austin of the Division Water
 
 Our Runner-Up Award this year went to Lee Eschler of the Division of Water Rights for his Water Right Distribution Activity Update project.  Lee was able to improve this workflow by 87%, avoid 787 hours of staff time and save his division almost $20,000 per year.  In addition to these notable quantitative results, this project also developed significant qualitative benefits such as a more connected field staff with access to near real-time water right activity data, thus enabling better, more informed  decisions in the field.
 
-<div class="caption"><img src="{{ "/images/DNRroi2016.jpg" | prepend: site.baseurl }}" alt="Lee Eschler and Aaron Austin with DNR Executive Director Mike Styler" /><p class="caption-text">Lee Eschler and Aaron Austin with DNR Executive Director Mike Styler</p></div>
+<figure class="caption caption--right"><img src="{{ "/images/DNRroi2016.jpg" | prepend: site.baseurl }}" alt="Lee Eschler and Aaron Austin with DNR Executive Director Mike Styler" /><figcaption class="caption__text">Lee Eschler and Aaron Austin with DNR Executive Director Mike Styler</figcaption></figure>
 
 While these two GIS projects are impressive, each of the GIS projects that completed a GIS ROI and Benefit Report revealed similar evidence of their heretofore hidden value.  This illumination of impact is essential for management to assign an accurate value of GIS and its role and potential in the organization.  At DNR, we have also come to learn that documenting GIS ROI can be personally beneficial to GIS staff.  It is definitely worth your time.
 

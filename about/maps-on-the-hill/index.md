@@ -8,6 +8,14 @@ categories: []
 ---
  Maps on the Hill, an event held at the State Capitol during the Utah Legislative Session, is supported by the Utah Geographic Information Council ([UGIC](http://ugic.info/)) and AGRC. The event highlights interesting maps and mapping technology with elected officials, fellow practitioners and the public. Students and professionals present on a broad range of topics to show the diversity of mapping resources in Utah, and to demonstrate how mapping technology can be used to support decision makers.
 
+## Maps on the Hill 2019
+
+### March 7, 2019
+
+The 8th Annual [Maps on the Hill event](https://ugic.org/maps-on-the-hill/), supported by the Utah Geographic Information Council (UGIC) and AGRC, will be held on **March 7, 2019** in the Capitol Rotunda, from **9:00AM – 12:00PM**. Registration closes February 21, 2019.
+
+[Reserve Your Spot Now](https://docs.google.com/forms/d/e/1FAIpQLSc-TKVeA6XvKIDMyFQST2_AKL3HnovGAvq2OqILlNob9byIcA/viewform)
+
 <div class="flex flex--row flex--wrap flex--around" markdown="1">
 
   <div markdown="1">

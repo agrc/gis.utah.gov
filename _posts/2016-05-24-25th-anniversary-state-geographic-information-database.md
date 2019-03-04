@@ -18,7 +18,7 @@ For those of us not in the GIS field at the time, 1991 was a significant year in
 
 In March of 1991, Governor Norman Bangerter signed into law Senate Bill 21, sponsored by Senator Dixie Leavitt. That was 25 years ago this Spring and, nationally, it was one of the, if not the first, instances of GIS being codified into state statute.
 
-<div class="caption"><a href ="{{ "/images/SGID25YEARS.png" | prepend: site.baseurl }}"><img src="{{ "/images/SGID25YEARS_small.png" | prepend: site.baseurl }}" alt="SGID 25th Anniversary Sticker" /></a><p class="caption-text">Commemorative SGID 25th<br>Anniversary Sticker</p></div>
+<figure class="caption caption--right"><a href ="{{ "/images/SGID25YEARS.png" | prepend: site.baseurl }}"><img src="{{ "/images/SGID25YEARS_small.png" | prepend: site.baseurl }}" alt="SGID 25th Anniversary Sticker" /></a><figcaption class="caption__text">Commemorative SGID 25th<br>Anniversary Sticker</figcaption></figure>
 
 Happy 25th Anniversary SGID!
 
