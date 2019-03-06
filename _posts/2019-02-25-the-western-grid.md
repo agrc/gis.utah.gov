@@ -26,7 +26,7 @@ It turns out this gridiron pattern is connected to a 17th-century mathematician,
 {: .text-left}
 
 <figure class="caption caption--right">
-  <img src="{{ "/images/GunterChain.png" | prepend: site.baseurl }}" alt="Gunter Chain" />
+  <img src="{{ "/images/Gunter chain2_reduced.jpg" | prepend: site.baseurl }}" alt="Gunter Chain" />
   <figcaption class="caption__text">Fig 2: Gunter Chain</figcaption>
 </figure>
 
