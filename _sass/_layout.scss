@@ -8,6 +8,15 @@
     }
 }
 
+.footnotes {
+    padding-top: 3em;
+    &::before {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
 .contact-list,
 .social-media-list {
     text-align: center;
