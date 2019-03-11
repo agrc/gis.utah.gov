@@ -135,14 +135,15 @@ It's remarkable how a few key points in history have permanently affected the gr
 
 So, the next time you're out wandering the Western Grid and you encounter a large intersection or a big city block, you can think back to Edmund Gunter, the Treaty of Paris, and Thomas Jefferson.
 
-[^1]: American Publishing Company, "Salt Lake City 1891 Bird's Eye View," Historic Map Works, Residential Genealogy, accessed March 1, 2019. http://www.historicmapworks.com/Atlas/US/9286/Salt+Lake+City+1891+Bird%27s+Eye+View.
-[^2]: “Gunter Chain,” (image) John Johnson (owner), Smithsonian National Museum of American History, accessed March 01, 2019. http://americanhistory.si.edu/collections/search/object/nmah_761634.
+
+[^1]: American Publishing Company, "Salt Lake City 1891 Bird's Eye View," Historic Map Works, Residential Genealogy, accessed March 1, 2019. <http://www.historicmapworks.com/Atlas/US/9286/Salt+Lake+City+1891+Bird%27s+Eye+View>.
+[^2]: “Gunter Chain,” (image) John Johnson (owner), Smithsonian National Museum of American History, accessed March 01, 2019. <http://americanhistory.si.edu/collections/search/object/nmah_761634>.
 [^3]: Golbez, “States and Territories of the United States of America August 7 1789 to April 2 1790,” Wikipedia, “Northwest Territory” page, accessed March 1, 2019. en.wikipedia.org/wiki/Northwest_Territory.
-[^4]: United States Bureau of Land Management, “Principal Meridians and Base Lines,” US Geological Survey, updated January 18, 2018, accessed March 01, 2019. https://nationalmap.gov/small_scale/a_plss.html.
-[^5]: “Great Salt Lake Meridian/Base Marker,” HowderFamily.com, updated August 13, 2013, accessed March 01, 2019. https://www.howderfamily.com/travel/utah/great-salt-lake-base-and-meridian.html.
-[^6]: “US Public Land Survey System,” (image), San Francisco Estuary Institute & The Aquatic Science Center, accessed March 01, 2019. https://www.sfei.org/it/gis/map-interpretation/projections-and-survey-systems#sthash.D2D94lF3.sWlKZBU3.dpbs.
-[^7]: Frederick G. Williams, “Revised Plat of the City of Zion, Circa Early August 1833,” The Church of Jesus Christ of Latter-day Saints, The Joseph Smith Papers, updated September 01, 2018, accessed March 01, 2019. https://www.josephsmithpapers.org/paper-summary/revised-plat-of-the-city-of-zion-circa-early-august-1833/1.
-[^8]: John Bonner, ca. 1643-1726; William Price, fl. 1725-1769; and Francis Dewing, fl. 1716-1722, “The town of Boston in New England,” Map, 1723, Norman B. Leventhal Map & Education Center, accessed March 01, 2019. collections.leventhalmap.org/search/commonwealth:9s161f21f.
+[^4]: United States Bureau of Land Management, “Principal Meridians and Base Lines,” US Geological Survey, updated January 18, 2018, accessed March 01, 2019. <https://nationalmap.gov/small_scale/a_plss.html>.
+[^5]: “Great Salt Lake Meridian/Base Marker,” HowderFamily.com, updated August 13, 2013, accessed March 01, 2019. <https://www.howderfamily.com/travel/utah/great-salt-lake-base-and-meridian.html>.
+[^6]: “US Public Land Survey System,” (image), San Francisco Estuary Institute & The Aquatic Science Center, accessed March 01, 2019. <https://www.sfei.org/it/gis/map-interpretation/projections-and-survey-systems#sthash.D2D94lF3.sWlKZBU3.dpbs>.
+[^7]: Frederick G. Williams, “Revised Plat of the City of Zion, Circa Early August 1833,” The Church of Jesus Christ of Latter-day Saints, The Joseph Smith Papers, updated September 01, 2018, accessed March 01, 2019. <https://www.josephsmithpapers.org/paper-summary/revised-plat-of-the-city-of-zion-circa-early-august-1833/1>.
+[^8]: John Bonner, ca. 1643-1726; William Price, fl. 1725-1769; and Francis Dewing, fl. 1716-1722, “The town of Boston in New England,” Map, 1723, Norman B. Leventhal Map & Education Center, accessed March 01, 2019. <https://collections.leventhalmap.org/search/commonwealth:9s161f21f>.
 [^9]: Greg Bunce, “Variations on the Western Urban Grid,” Automated Geographic Reference Center, March 01, 2019.
-[^10]: Google Maps, “Boise Idaho,” accessed March 01, 2019. google.com/maps/place/Boise,+ID/@43.6088162,-116.3498057,7348m/data=!3m1!1e3!4m5!3m4!1s0x54aef172e947b49d:0x9a5b989b36679d9b!8m2!3d43.6150186!4d-116.2023137.
-[^11]: Google Maps, “Sun Lakes, Arizona,” accessed March 01, 2019. google.com/maps/place/Sun+Lakes,+AZ+85248/@33.2181668,-111.8759392,3672m/data=!3m1!1e3!4m5!3m4!1s0x872b000a3cf645db:0xeb2fbae417540df7!8m2!3d33.2181797!4d-111.8759103.
+[^10]: Google Maps, “Boise Idaho,” accessed March 01, 2019. <https://google.com/maps/place/Boise,+ID/@43.6088162,-116.3498057,7348m/data=!3m1!1e3!4m5!3m4!1s0x54aef172e947b49d:0x9a5b989b36679d9b!8m2!3d43.6150186!4d-116.2023137>.
+[^11]: Google Maps, “Sun Lakes, Arizona,” accessed March 01, 2019. <https://google.com/maps/place/Sun+Lakes,+AZ+85248/@33.2181668,-111.8759392,3672m/data=!3m1!1e3!4m5!3m4!1s0x872b000a3cf645db:0xeb2fbae417540df7!8m2!3d33.2181797!4d-111.8759103>.
