@@ -4,6 +4,10 @@ agrc:
   agency: AGRC
   email: agrc@utah.gov
   phone: 801-538-3665
+agrc_director:
+  name: Matt Peters
+  email: mpeters@utah.gov
+  phone: 801-538-3563
 webapi:
   name: Steve Gourley
   agency: AGRC
