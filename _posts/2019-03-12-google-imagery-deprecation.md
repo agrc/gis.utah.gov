@@ -18,6 +18,6 @@ Thank you all for your support, both as users of the Google Imagery product and 
  
  {% assign director = site.data.contacts.agrc_director %}
  
-[{{ director.name }}]({{ director.email }})  
+[{{ director.name }}](mailto:{{ director.email }})  
 Director, Utah AGRC  
 {{ director.phone }} (o)
