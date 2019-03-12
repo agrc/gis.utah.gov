@@ -24,7 +24,7 @@ Visit [ugic.org](http://ugic.org) to keep up on UGIC news and sign up for the ma
 
 <figure class="caption caption--right">
 <a href ="{{ "/downloads/WhereinUtahQuiz2016.pdf " | prepend: site.baseurl }}">
-<img src="{{ "/images/WhereinUtahQuiz2016.jpg" | prepend: site.baseurl }}" alt="2016 Where in Utah Quiz?" /></a>
+<img class="caption__image" src="{{ "/images/WhereinUtahQuiz2016.jpg" | prepend: site.baseurl }}" alt="2016 Where in Utah Quiz?" /></a>
 <figcaption class="caption__text">2016 Where in Utah Quiz?</figcaption>
 </figure>
 AGRC's latest [Where in Utah Quiz]({{ "/downloads/WhereinUtahQuiz2016.pdf" | prepend: site.baseurl }}) for the UGIC brochure was a hit, albeit a tad more challenging this year. Test your own Utah geography skills by determining where the locations on the quiz are. If you are stumped or want to check your answers, here is the key: [2016 Where in Utah Answer Key]({{ "/downloads/WhereinUtahQuiz2016_ANSWER_KEY.pdf" | prepend: site.baseurl }}), warning, spoilers!

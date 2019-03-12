@@ -17,7 +17,7 @@ The State of Utah School and Institutional Trust Lands Administration (SITLA) is
 
 <figure class="caption caption--right">
 <a href ="{{ "/images/SITLA_ParcelFabric_fullsize.png" | prepend: site.baseurl }}">
-<img src="{{ "/images/SITLA_ParcelFabric.png" | prepend: site.baseurl }}" alt="SITLA Parcel Fabric Example" /></a>
+<img class="caption__image" src="{{ "/images/SITLA_ParcelFabric.png" | prepend: site.baseurl }}" alt="SITLA Parcel Fabric Example" /></a>
 <figcaption class="caption__text">Example of Land Ownership being integrated with PLSS Parcel Fabric</figcaption>
 </figure>
 

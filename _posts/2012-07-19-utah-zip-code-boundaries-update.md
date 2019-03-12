@@ -11,7 +11,7 @@ categories:
 <p>Updates were made recently to the SGID10.Boundaries.ZipCodes feature class that resides on the <a href="{{ "/sgid-database/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
 <p>The updated zip code boundary data is also available as shapefiles, file geodatabase files, and KMZ for download on the <a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/BOUNDARIES/UnpackagedData/ZipCodes/_Statewide/">SGID FTP site</a></p>
 <p>The following zip code boundaries (in Salt Lake City and West Valley City) have been adjusted to follow parcel boundaries that were not encompassed by their assigned zip code:</p>
-<figure class="caption caption--right"><a href="{{ "/downloads/ZipCodes.png" | prepend: site.baseurl }}"><img  title="Zip Code Boundaries" src="{{ "/images/ZipCodes.png" | prepend: site.baseurl }}" alt="" width="276" height="300" /></a><figcaption class="caption__text">Zip Code Boundaries</figcaption></figure>
+<figure class="caption caption--right"><a href="{{ "/downloads/ZipCodes.png" | prepend: site.baseurl }}"><img class="caption__image" title="Zip Code Boundaries" src="{{ "/images/ZipCodes.png" | prepend: site.baseurl }}" alt="" width="276" height="300" /></a><figcaption class="caption__text">Zip Code Boundaries</figcaption></figure>
 <p>84105, 84108<br />
 84102, 84108<br />
 84102, 84103<br />

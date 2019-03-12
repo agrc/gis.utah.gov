@@ -16,7 +16,7 @@ categories:
 <p><a href="{{ "/data/political/2012-2021-house-senate-congressional-districts/" | prepend: site.baseurl }}">Political districts for state-level offices</a> (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections in 2012 and ongoing representation after the new representatives are installed on<br />
 Jan 1, 2013.</p>
 <p>The new political district boundaries, originally formed from 2010 Census Block files have been adjusted by AGRC, working together with the Utah Legislature, the Lt. Governor's Elections Office and the County Clerks' offices to make recommendations that increased the geographic accuracy and ease of use in the elections process. Legislation to make recommended minor changes to the political districts changes was passed by the Legislature during the 2013 General Session and signed into law by the Governor.</p>
-<figure class="caption caption--right"><a href="{{ "/downloads/political12.png" | prepend: site.baseurl }}"><img title="Political and Precinct Boundaries sample" src="{{ "/images/political12-300x261.png" | prepend: site.baseurl }}" /></a><figcaption class="caption__text">Political and Precinct Boundaries</figcaption></figure>
+<figure class="caption caption--right"><a href="{{ "/downloads/political12.png" | prepend: site.baseurl }}"><img class="caption__image" title="Political and Precinct Boundaries sample" src="{{ "/images/political12-300x261.png" | prepend: site.baseurl }}" /></a><figcaption class="caption__text">Political and Precinct Boundaries</figcaption></figure>
 <p>Specifically, efforts were made to</p>
 <ol>
 <li>move boundary lines off of residential structures visible in the 2009 aerial photography;</li>
