@@ -25,4 +25,4 @@ The awards are a great way to call attention to particularly effective map prese
 
 The 2019 MOTH event was a success, and thanks to constructive feedback from the MOTH presenters, we’re hoping to make the event even more successful next year. Thanks to all the presenters and attendees of the event.
 
-To see photos of the event, visit the AGRC MOTH page.
+To see the map book calendar and photos of the event, visit the [AGRC MOTH page]({{ "/about/maps-on-the-hill/" | prepend: site.baseurl }}).
