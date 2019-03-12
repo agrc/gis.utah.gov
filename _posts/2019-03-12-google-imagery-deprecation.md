@@ -16,6 +16,8 @@ The State of Utah has enjoyed the relationship we have had with Google related t
 Thank you all for your support, both as users of the Google Imagery product and as financial supporters of this valuable resource. I have already submitted funding requests to some organizations, so to those organizations: thanks for your consideration of those requests. Please know that those requests are still important and valid as we pay for the 2018 imagery and look for a new source. We appreciate your continued support as we work to encourage and facilitate the effective use of geospatial information and technology for Utah. 
  
  
-[Matt Peters](mpeters@utah.gov)  
+ {% assign director = site.data.contacts.agrc_director %}
+ 
+[{{ director.name }}]({{ director.email }})  
 Director, Utah AGRC  
-801.538.3168 (o)
+{{ director.phone }} (o)
