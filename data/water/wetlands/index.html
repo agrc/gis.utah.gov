@@ -11,33 +11,21 @@ categories: []
 date: 2011-11-22 14:47:08 -0700
 Wetlands:
   downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbnlUUTNWbWdOclU&export=download
+    - url: https://drive.google.com/file/d/0ByStJjVZ7c7mbnlUUTNWbWdOclU
       label: 'Wetlands: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV084TkJ2S0JmOXc&export=download
+    - url: https://drive.google.com/drive/u/0/folders/0ByStJjVZ7c7mNW9iXzJrQUYyV0U
       label: 'Wetlands: Shapefile'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maWN0RUVCWXVOdTA&export=download
-      label: 'Wetlands Mapping Projects: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maUhMQWlVZzg1dm8&export=download
-      label: 'Wetlands Mapping Projects: Shapefile'
   updates:
-    - This feature class was first published in March 2014 and will be updated yearly
-WetlandsNWI:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTGNRTTZZMkZkUDA&export=download
-      label: 'Wetlands NWI: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV0E1cGs0NWxodGM&export=download
-      label: 'Wetlands NWI: Shapefile'
-  updates:
-    - March 2017
+    - Wetlands will be updated approximately twice per year when NWI releases new updates. The current version is up-to-date as of October 15, 2018.
 ---
 <figure class="caption caption--right">
   <img class="caption__image" title="map" src="{{ "/images/wetlands.png" | prepend: site.baseurl }}" alt="Wetlands" />
   <figcaption class="caption__text">Wetlands in the Bear River Migratory Bird Refuge Area</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mOXdndHpnektzV0U"
+{% include abstract.html download="https://drive.google.com/drive/u/0/folders/0ByStJjVZ7c7mNW9iXzJrQUYyV0U"
 name="Wetlands"
 stewards="Utah Geologic Survey, Department of Natural Resources"
-abstract="Water.Wetlands was compiled from the US Fish and Wildlife Service's National Wetland Inventory (NWI) with additional data from US Forest Service, Utah Geological Survey, and Utah Automated Geographic Reference Center using the Cowardin (1979) classification scheme. In addition to the Cowardin fields, data has been attributed by the Utah Geological Survey to provide functional and descriptive codes associated with each wetland class as described by the <a href='http://ugspub.nr.utah.gov/publications/open_file_reports/ofr-661.pdf'>Utah Wetland Functional Classification: Version 1</a>. This data set is maintained by the Utah Geologic Survey and will be updated as new mapping projects are completed." %}
+abstract="Wetland location and classification polygon map data, derived from the U.S. Fish and Wildlife Service’s [National Wetlands Inventory](https://www.fws.gov/wetlands/) (NWI), including information on wetlands, shallow and deep water, and riverine features. This layer will be updated approximately twice per year following the update schedule set by NWI." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="Wetlands">
@@ -46,31 +34,14 @@ abstract="Water.Wetlands was compiled from the US Fish and Wildlife Service's Na
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{{ "/images/wetlands2.png" | prepend: site.baseurl }}" alt="Wetlands" />
-    <p>Water.Wetlands represents wetland areas in Utah compiled from NWI, USFS, and UGS sources. In addition to the Cowardin fields, data has been attributed by the Utah Geological Survey to provide functional and descriptive codes associated with each wetland class. This data set is actively being maintained by the Utah Geologic Survey.</p>
+    <p>Water.Wetlands is derived from the U.S. Fish and Wildlife Service’s [National Wetlands Inventory](https://www.fws.gov/wetlands/) (NWI). NWI attributes wetlands with codes from the Cowardin Classification System; codes can be interpreted [online](https://www.fws.gov/wetlands/data/wetland-codes.html). Cowardin classes in this derived layer have been split into separate System, Class, and Water Regime fields. Wetlands spatial data were produced from a combination of aerial imagery examination and on-the-ground assessment and are not meant to be used as the basis for a jurisdictional wetland delineation.</p> 
+    <p>The associated metadata are a description of wetland mapping projects, including the scale at which mapping was conducted and the imagery year used for the mapping. Some mapping projects include supplemental map information that describes the projects in more detail. Most mapping in the state of Utah was conducted using imagery from the 1980s; the Utah Geological Survey is working to update wetlands data across the state. The location of recent and ongoing mapping projects can be found in the [Projects Mapper](https://www.fws.gov/wetlands/data/Mapper.html).</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://geology.utah.gov">Utah Geologic Survey</a></li>
     </ul>
-    <p>For questions, contact Ryhan Sempler at the Utah Geological Survey. 801-537-3338.</p>
+    <p>For questions, contact Diane Menuz at the Utah Geological Survey. 801-538-7436.</p>
   </div>
   {% include packagedata.html name="Wetlands"
   info=page.Wetlands %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="WetlandsNWI">
-      <a href="#WetlandsNWI" class="anchor--link">Wetlands NWI</a>
-    </h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/wetlands.png" | prepend: site.baseurl }}" alt="National Wetlands Inventory" />
-    <p>Water.WetlandsNWI represents wetland areas in Utah as delineated by the National Wetlands Inventory (NWI) conducted by the U.S. Fish and Wildlife Service (USFWS).</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="http://www.fws.gov/wetlands/">U.S. Fish and Wildlife Service National Wetlands Inventory</a></li>
-    </ul>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
-  </div>
-  {% include packagedata.html name="WetlandsNWI"
-  info=page.WetlandsNWI %}
 </div>
