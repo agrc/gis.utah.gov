@@ -3,6 +3,12 @@
     background: #f5f5f5;
     border: thin solid #ddd;
 
+    > img {
+        @include media-query($on-small) {
+            width: 100%;
+        }
+    }
+
     &__text {
         max-width: 350px;
         padding: .5em;
