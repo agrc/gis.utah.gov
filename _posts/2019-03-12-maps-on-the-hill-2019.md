@@ -12,8 +12,7 @@ tags:
   - ugic
 ---
 
-The eighth annual Maps on the Hill (MOTH) event, hosted by the Utah Geographic Information Council (UGIC) and AGRC, was held on March 7, 2019, at the Utah State Capitol to showcase the work of the local GIS community and build awareness of GIS-related issues in Utah.
-The MOTH event consists of GIS professionals creating maps and presentations to tell a story using GIS. Participants set up easels, large maps, and monitors in the capitol rotunda to inform viewers about the participants’ chosen subject matter.
+The eighth annual Maps on the Hill (MOTH) event, hosted by the Utah Geographic Information Council (UGIC) and AGRC, was held on March 7, 2019, at the Utah State Capitol to showcase the work of the local GIS community and build awareness of GIS-related issues in Utah. The MOTH event consists of GIS professionals creating maps and presentations to tell a story using GIS. Participants set up easels, large maps, and monitors in the capitol rotunda to inform viewers about the participants’ chosen subject matter.
 
 ![MOTH photo]({{ "/images/moth2019.png" | prepend: site.baseurl }}){: .flex .flex--center .outline style="width: 100%; max-width: 350px"}
 
