@@ -40,7 +40,7 @@ abstract="Wetland location and classification polygon map data, derived from the
     <ul class="dotless">
       <li><a href="https://geology.utah.gov">Utah Geologic Survey</a></li>
     </ul>
-    <p>For questions, contact Diane Menuz at the Utah Geological Survey. 801-538-7436.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.wetlands %}</p>
   </div>
   {% include packagedata.html name="Wetlands"
   info=page.Wetlands %}
