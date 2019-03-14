@@ -4,6 +4,8 @@ Read [about our new website](https://gis.utah.gov/about-our-new-v6-website-in-gh
 [Contribute](https://gis.utah.gov/about/contributing/) content or typos.
 License: [MIT](/LICENSE).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd943f0d-1816-4377-bdab-866190826309/deploy-status)](https://app.netlify.com/sites/gis-utah-gov/deploys)
+
 ## Local Development
 
 1. Check out this repository
