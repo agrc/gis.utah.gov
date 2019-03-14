@@ -15,9 +15,9 @@ tags:
   - utsurveyor
 ---
 
-*[TURN GPS]: The Utah Reference Network Global Positioning System provides real-time high precision centimeter positioning. As some reference stations within the network move slightly over time due to earth’s crustal displacement, the stations’ positions must be updated periodically to maintain accuracy.   
+TURN GPS provides real-time high precision centimeter positioning. As some reference stations within the network move slightly over time due to earth’s crustal displacement, the stations’ positions must be updated periodically to maintain accuracy.   
 
-Accordingly, the coordinates of 14 GPS stations will be updated on April 1, 2019, because their positions have exceeded the 2.5 cm variance limit. The new positions were determined by collecting 24 hours of raw GPS data from January 1, 2019, to January 2, 2019, and the data was processed using *[OPUS]: Online Positioning User Service Projects holding 21 published *[CORS]: Continuously Operating Reference Stations constrained.
+Accordingly, the coordinates of 14 GPS stations will be updated on April 1, 2019, because their positions have exceeded the 2.5 cm variance limit. The new positions were determined by collecting 24 hours of raw GPS data from January 1, 2019, to January 2, 2019, and the data was processed using OPUS Projects holding 21 published CORS constrained.
 
 I will be updating the coordinates from 7:00 to 8:00 p.m. MT on Sunday, March 31, and the system will be operating with the new coordinates starting first thing on Monday, April 1. 
 
@@ -41,3 +41,7 @@ State of Utah AGRC/DTS
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.turn %}{% endcapture %}
 {{ contact | strip_newlines }}
+
+*[TURN GPS]: The Utah Reference Network Global Positioning System
+*[OPUS]: Online Positioning User Service
+*[CORS]: Continuously Operating Reference Stations
