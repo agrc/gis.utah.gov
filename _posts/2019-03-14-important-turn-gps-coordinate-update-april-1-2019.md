@@ -1,5 +1,5 @@
 ---
-title: ' *Important* TURN GPS Coordinate Update April 1, 2019'
+title: '*Important* TURN GPS Coordinate Update April 1, 2019'
 author:
   display_name: Sean Fernandez
   email: sfernandez@utah.gov
