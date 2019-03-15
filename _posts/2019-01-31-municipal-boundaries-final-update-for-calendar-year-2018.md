@@ -47,7 +47,7 @@ The following table shows the changes and annexations (listed by county and city
 | | Sigurd | 1 |
 | Utah | American Fork | 2 |
 | | Lehi | 2 |
-| | Sanquin | 1 |
+| | Santaquin | 1 |
 | Wasatch | Charles Town | 1 |
 | Washington | Washington City | 3 |
 | Weber | North Ogden | 1 |
