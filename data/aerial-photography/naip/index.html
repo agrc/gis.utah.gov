@@ -21,8 +21,34 @@ categories: []
 {% include abstract.html
   name="NAIP"
   type="Imagery"
-  webapp="https://raster.utah.gov/?catGroup=NAIP%202016%20(1m),NAIP%202014%20(1m),NAIP%202011%20(1m),NAIP%202009%20(1m),NAIP%202006%20(1m),NAIP%202004%20(1m),NAIP%202003%20(2m)&title=Utah%20NAIP%20Imagery"
-  abstract="National Agricultural Imagery Program</a> is color aerial photography typically collected every 2 or 3 years in the middle of the summer. Starting in 2006 the acquisitions have been statewide. The resolution is usually 1 meter with a horizontal positional accuracy of 5 meters." %}
+  webapp="https://raster.utah.gov/?catGroup=NAIP%202018%20(60cm),NAIP%202016%20(1m),NAIP%202014%20(1m),NAIP%202011%20(1m),NAIP%202009%20(1m),NAIP%202006%20(1m),NAIP%202004%20(1m),NAIP%202003%20(2m)&title=Utah%20NAIP%20Imagery"
+  abstract="National Agricultural Imagery Program</a> is color aerial photography typically collected every 2 or 3 years in the middle of the summer. Starting in 2006 the acquisitions have been statewide. The resolution is usually 1 meter with a horizontal positional accuracy of 5 meters. The 2018 imagery is .6 meter (60 centimeter) resolution with a horizontal positional accuracy of -/+ 4 meters. 2018 might be the last year of the NAIP." %}
+
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="NAIP2018">
+      <a href="#NAIP2018" class="anchor--link">2018</a>
+    </h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>AGRC has statewide <a href="https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/index">National Agricultural Imagery Program</a> (NAIP) aerial photography for Utah. The imagery is .6 meter (60 centimeter) resolution and was collected in the summer of 2018. At this time AGRC only has the <a href="{{site.baseurl}}{% post_url 2019-01-17-naip-2018-mr-sid-county-mosaics-available %}">compressed county mosaics (CCMs)</a> in Natural Color (RGB) and Color Infrared (CIR).</p>
+    <p>The dates the photography was flown can be found in the shapefile associated with the CCM download. The images have a UTM NAD83 meters projection.</p>
+
+    <div class="grid__col grid__col--1-of-2">
+      <h5>Downloads</h5>
+        <ul class="dotless">
+          <li><a href="https://raster.utah.gov/?cat=NAIP%202018%20(60cm)">Retrieve 2018 NAIP via Interactive Map</a></li>
+        </ul>
+    </div>
+    <div class="grid__col grid__col--1-of-2">
+      <h5>Related Resources</h5>
+      <ul class="dotless">
+        <li>If you are having problems with the imagery from AGRC, <a href="{{ '/data/aerial-photography/imagery-problems/' | prepend: site.baseurl }}">read this document before contacting us.</a></li>
+      </ul>
+    </div>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.imagery %}</p>
+  </div>
+</div>
 
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
