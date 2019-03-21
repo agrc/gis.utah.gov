@@ -48,7 +48,7 @@ You can remove the `stripConsole` property also if it's in your profile. UglifyJ
 
 The next step is to install the [latest version of UglifyJS](https://www.npmjs.com/package/uglify-js) via:
 ```
-npm install uglify-js --save-dev
+npm install uglify-js grunt-contrib-uglify --save-dev
 ```
 
 Finally, we need to configure a new Grunt task to run UglifyJS as part of our normal build process. First, add a new task:
