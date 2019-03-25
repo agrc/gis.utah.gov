@@ -140,7 +140,8 @@
 /index.php                                                                                                /                                                                             301
 /gisresources                                                                                             /                                                                             301
 /data/cadastral                                                                                           /data/cadastre/                                                               301
-/imagery-server                                                                                           /discover/                                                                301
+/imagery-server                                                                                           /discover/                                                                    301
 /login                                                                                                    /                                                                             301
 /register                                                                                                 /                                                                             301
 /mapserv                                                                                                  /developer/                                                                   301
+/datta                                                                                                    /data/                                                                        301
