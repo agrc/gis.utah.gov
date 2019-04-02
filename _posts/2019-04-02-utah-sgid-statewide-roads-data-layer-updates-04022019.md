@@ -16,6 +16,7 @@ AGRC recently completed updates to the SGID10.Transportation.Roads feature class
 The following are highlights from this month's update.
 
 #### County Updates
+
 New roads were added and road names and address ranges were updated for the following counties:
 
 - **Cache County:** Obtained roads data on 02/13/2019. Previous update was on 01/24/2019.
@@ -40,9 +41,11 @@ Data was requested but not received for the following counties:
 
 
 #### Other Notes:
+
 - Average Daily Traffic Count fields (`DOT_AADT` and `DOT_AADTYR`) where populated to reflect the most-recent traffic count data.
 
 
 #### UDOT Route System:
-- The `DOT_F_MILE` (From Milepost) and `DOT_T_MILE` (To Milepost) fields that store the milepost attributes of the UDOT state and federal routes in SGID10.Transportation.Roads were updated.
-- The following SGID feature classes were also updated: SGID10.Transportation.UDOTMileposts; SGID10.Transportation.UDOTRoutes_LRS; and SGID10.Transportation.UDOTTenthMileRefPoints.
+
+- The `DOT_F_MILE` (From Milepost) and `DOT_T_MILE` (To Milepost) fields that store the milepost attributes of the UDOT state and federal routes in `SGID10.Transportation.Roads` were updated.
+- The following SGID feature classes were also updated: `SGID10.Transportation.UDOTMileposts`; `SGID10.Transportation.UDOTRoutes_LRS`; and `SGID10.Transportation.UDOTTenthMileRefPoints`.
