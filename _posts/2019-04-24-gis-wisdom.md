@@ -22,7 +22,9 @@ Here are seven common GIS concepts, and what we should learn from them.
 
 ![GIS Wisdom]({{ "/images/gis_wisdom.png" | prepend: site.baseurl }}){: .flex .flex--center style="width: 100%; max-width: 350px"}
 
-### 1. Versioning `resolving conflicts`
+### 1. Versioning 
+
+`resolving conflicts`
 
 Look no further than the versioning workflow to learn how to successfully resolve conflicts.  Honestly, GIS has this one figured out.  Here's how it works. 
 
@@ -98,4 +100,5 @@ Oddly, there's something freeing about having predetermined principles.  Knowing
 
 Learn the [basics of topology](https://pro.arcgis.com/en/pro-app/help/data/topologies/topology-basics.htm) and how it might assist you with data management.
 
+<br/><br/>
 Drop me an email If you can think of other forms of GIS wisdom.  I'll start a running list and post them below.
