@@ -23,6 +23,7 @@ Here are seven common GIS concepts, and what we should learn from them.
 ![GIS Wisdom]({{ "/images/gis_wisdom.png" | prepend: site.baseurl }}){: .flex .flex--center style="width: 100%; max-width: 350px"}
 
 ### 1. Versioning 
+{: .text-left}
 
 `resolving conflicts`
 
@@ -39,6 +40,7 @@ It's not hard to imagine how we can incorporate some of these concepts into our 
 Learn more about the [ArcGIS versioning process](http://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/the-version-editing-process.htm).
 
 ### 2. Networks 
+{: .text-left}
 
 `networking`
 
@@ -49,6 +51,7 @@ Likewise, building a personal network helps us determine who and what we allow o
 Learn more about [creating an ArcGIS network datasets](http://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/creating-a-network-dataset.htm) and [how connectivity works](http://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/understanding-connectivity.htm).
 
 ### 3. Extract, Translate, and Load (ETL) 
+{: .text-left}
 
 `being adaptable`
 
@@ -59,6 +62,7 @@ We should learn to be adaptable as well.  Life is not stagnant, and the ability 
 Learn more about [creating your own spatial ETL tools](http://desktop.arcgis.com/en/arcmap/10.6/extensions/data-interoperability/spatial-etl-tools.htm).
 
 ### 4. Open Data
+{: .text-left}
 
 `sharing`
 
@@ -69,6 +73,7 @@ On the human side, the more we share, the more we learn.  And when we share, we 
 Explore some of the [existing GIS open data](http://hub.arcgis.com/pages/open-data) or consider contributing to the [Open Street Maps project](https://www.openstreetmap.org/about).
 
 ### 5. Editing
+{: .text-left}
 
 `refinement`
 
@@ -79,6 +84,7 @@ But it's the refinement process that makes it valuable.  We too can continually 
 Brush-up on some [essential editing vocabulary](http://desktop.arcgis.com/en/arcmap/10.3/manage-data/editing/essential-editing-vocabulary.htm).
 
 ### 6. Domains
+{: .text-left}
 
 `consistency`
 
@@ -89,6 +95,7 @@ Much like with domains, consistency can lead to reliable and expected results in
 Learn more about [attribute domains](https://pro.arcgis.com/en/pro-app/help/data/geodatabases/overview/an-overview-of-attribute-domains.htm) and why they are so important. 
 
 ### 7. Topology
+{: .text-left}
 
 `establishing principles`
 
