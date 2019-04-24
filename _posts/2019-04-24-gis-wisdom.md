@@ -100,5 +100,5 @@ Oddly, there's something freeing about having predetermined principles.  Knowing
 
 Learn the [basics of topology](https://pro.arcgis.com/en/pro-app/help/data/topologies/topology-basics.htm) and how it might assist you with data management.
 
-<br/><br/>
+<br/>
 Drop me an email If you can think of other forms of GIS wisdom.  I'll start a running list and post them below.
