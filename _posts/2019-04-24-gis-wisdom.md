@@ -3,7 +3,7 @@ title: GIS Wisdom: Exploring the Reverse Approach
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2019-04-24 08:00:00
+date: 2019-04-24 10:07:46
 categories:
   - Featured
 tags:
@@ -100,5 +100,4 @@ Oddly, there's something freeing about having predetermined principles.  Knowing
 
 Learn the [basics of topology](https://pro.arcgis.com/en/pro-app/help/data/topologies/topology-basics.htm) and how it might assist you with data management.
 
-<br/>
 Drop me an email If you can think of other forms of GIS wisdom.  I'll start a running list and post them below.
