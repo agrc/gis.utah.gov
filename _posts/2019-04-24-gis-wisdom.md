@@ -50,7 +50,7 @@ Learn more about [creating an ArcGIS network datasets](http://desktop.arcgis.com
 
 ### 3. Extract, Translate, and Load (ETL) 
 
-`Being Adaptable`
+`being adaptable`
 
 You have probably heard the phrase, 'build once, use many'.  When building data, we say this when we want the output to be adaptable and used for many purposes.  Take road centerlines for example.  This dataset should be designed with many uses in mind (such as routing, mapping, locating, assessment management, etc.).  With a simple ‘extract, translate, and load’ (ETL), the data should meet the needs of many users.  
 
@@ -60,7 +60,7 @@ Learn more about [creating your own spatial ETL tools](http://desktop.arcgis.com
 
 ### 4. Open Data
 
-`Sharing`
+`sharing`
 
 Ideally, as GIS folks, we're all supporting or contributing to open data in some way.  In other words, advancing freely available data.  This philosophy promotes transparency,  innovation, and efficiency.  Data gets better the more it's used, and open data gets used.
 
@@ -70,7 +70,7 @@ Explore some of the [existing GIS open data](http://hub.arcgis.com/pages/open-da
 
 ### 5. Editing
 
-`Refinement`
+`refinement`
 
 The best datasets have lots of edits and editors.  They are continually being reviewed and refined. Think of multi-editing environments or Open Street Maps.  These datasets are so vast and valuable because they are 'live’ and diverse.  Everyone is bringing something unique to the product, which is difficult to produce with a small group of editors.
 
@@ -80,7 +80,7 @@ Brush-up on some [essential editing vocabulary](http://desktop.arcgis.com/en/arc
 
 ### 6. Domains
 
-`Consistency`
+`consistency`
 
 Domains are set up in the database to establish known consistently. They provide quality assurance on the front-end while ensuring consistency on the back-end.  What makes domains so great is that the end-user can reliably expect certain values or results.  Developers and cartographers benefit from this as well. 
 
@@ -90,7 +90,7 @@ Learn more about [attribute domains](https://pro.arcgis.com/en/pro-app/help/data
 
 ### 7. Topology
 
-`Establishing Principles`
+`establishing principles`
 
 Topology is all about rules.  Essentially, it allows us to keep our data clean by defining a set of spatial expectations.  We are able to validate when needed and also allow for the inevitable exception.  Topology is so powerful because once you define the rules, you are then free to focus your efforts on other aspects of the data.
 
