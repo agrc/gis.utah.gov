@@ -108,4 +108,5 @@ Oddly, there's something freeing about having predetermined principles.  Knowing
 Learn the [basics of topology](https://pro.arcgis.com/en/pro-app/help/data/topologies/topology-basics.htm) and how it might assist you with data management.
 
 <br/>
-Drop me an [email](mailto:gbunce@utah.gov) If you can think of other forms of GIS wisdom.  I'll start a running list and post them below.
+{% capture contact %}{% include contact.html text="Drop me an email if you can think of other forms of GIS wisdom.  I'll start a running list and post them below.  My contact info is " subject=page.title contact=site.data.contacts.roads %}{% endcapture %}
+{{ contact | strip_newlines }}
