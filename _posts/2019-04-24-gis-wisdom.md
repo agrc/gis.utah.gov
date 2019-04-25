@@ -55,7 +55,7 @@ Learn more about [creating an ArcGIS network datasets](http://desktop.arcgis.com
 
 `being adaptable`
 
-You have probably heard the phrase, 'build once, use many'.  When building data, we say this when we want the output to be adaptable and used for many purposes.  Take road centerlines for example.  This dataset should be designed with many uses in mind (such as routing, mapping, locating, assessment management, etc.).  With a simple ‘extract, translate, and load’ (ETL), the data should meet the needs of many users.  
+You have probably heard the phrase, 'build once, use many'.  When building data, we say this when we want the output to be adaptable and used for many purposes.  Take road centerlines for example.  This dataset should be designed with many uses in mind (such as routing, mapping, locating, asset management, etc.).  With a simple ‘extract, translate, and load’ (ETL), the data should meet the needs of many users.  
 
 We should learn to be adaptable as well.  Life is not stagnant, and the ability to change and adapt is beneficial.  Having a single-use in mind has the potential of putting us back at the drawing board, building again.
 
@@ -88,9 +88,9 @@ Brush-up on some [essential editing vocabulary](http://desktop.arcgis.com/en/arc
 
 `consistency`
 
-Domains are set up in the database to establish known consistently. They provide quality assurance on the front-end while ensuring consistency on the back-end.  What makes domains so great is that the end-user can reliably expect certain values or results.  Developers and cartographers benefit from this as well. 
+Domains are set up in the database to establish known consistency. They provide quality assurance on the front-end while ensuring consistency on the back-end.  What makes domains so great is that the end-user can reliably expect certain values or results.  Developers and cartographers benefit from this as well. 
 
-Much like with domains, consistency can lead to reliable and expected results in human performance as well.  Think of athletes or musicians.  It's their consistently (and consequently, the establishment of muscle memory) that make the best so reliable and successful. Sure, repetition plays a role, but without pre-established methods (ie: domains) the results vary.   
+Much like with domains, consistency can lead to reliable and expected results in human performance as well.  Think of athletes or musicians.  It's their consistency (and consequently, the establishment of muscle memory) that make the best so reliable and successful. Sure, repetition plays a role, but without pre-established methods (ie: domains) the results vary.   
 
 Learn more about [attribute domains](https://pro.arcgis.com/en/pro-app/help/data/geodatabases/overview/an-overview-of-attribute-domains.htm) and why they are so important. 
 
@@ -101,11 +101,11 @@ Learn more about [attribute domains](https://pro.arcgis.com/en/pro-app/help/data
 
 Topology is all about rules.  Essentially, it allows us to keep our data clean by defining a set of spatial expectations.  We are able to validate when needed and also allow for the inevitable exception.  Topology is so powerful because once you define the rules, you are then free to focus your efforts on other aspects of the data.
 
-Similarly, we also benefit from predefined rules -- or better yet, principles.  For example, think about driving an automobile.  We learn the rules-of-the-road before set foot in the vehicle.  Why?  Because we don’t want to create the rules ‘on-the-fly’.  Knowing the rules-of-the-road in advance, allows us to focus on more enjoyable things, such as conversation or a good audiobook.
+Similarly, we also benefit from predefined rules -- or better yet, principles.  For example, think about driving an automobile.  We learn the rules-of-the-road before we get behind the wheel.  Why?  Because we don’t want to create the rules ‘on-the-fly’.  Knowing the rules-of-the-road in advance, allows us to focus on more enjoyable things, such as conversation or a good audiobook.
 
 Oddly, there's something freeing about having predetermined principles.  Knowing our principles allows us to then explore greater things.
 
 Learn the [basics of topology](https://pro.arcgis.com/en/pro-app/help/data/topologies/topology-basics.htm) and how it might assist you with data management.
 
 <br/>
-Drop me an email If you can think of other forms of GIS wisdom.  I'll start a running list and post them below.
+Drop me an [email](mailto:gbunce@utah.gov) If you can think of other forms of GIS wisdom.  I'll start a running list and post them below.
