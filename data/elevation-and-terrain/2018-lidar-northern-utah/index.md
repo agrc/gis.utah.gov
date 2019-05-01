@@ -43,7 +43,7 @@ During 2018 AGRC, the Natural Resource Conservation Service (NRCS), and the Utah
   </li>
 </ul>
 
-The naming convention for the tiles are based off the [U.S. National Grid (USNG)]( http://www.fgdc.gov/usng/how-to-read-usng/index_html).
+The naming convention for the tiles are based off the [U.S. National Grid (USNG)](https://www.fgdc.gov/usng/how-to-read-usng/index_html).
 
 This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
 
