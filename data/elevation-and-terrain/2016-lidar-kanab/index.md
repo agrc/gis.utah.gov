@@ -47,4 +47,4 @@ The naming convention for the tiles are based off the [U.S. National Grid (USNG)
 
 This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
 
-If you need assistance contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov)
+{% capture elevation %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %} {{ elevation | strip_newlines }}
