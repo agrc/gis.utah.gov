@@ -26,7 +26,9 @@ categories: []
 
 [![Project area map]({{"/images/lidar_central_utah_2018_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_central_utah_2018_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-During 2018 AGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) [~3,759 square miles]({{ "/images/lidar_central_utah_2018_coverage.png/" | prepend: site.baseurl }}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Central Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, are also available [by request](mailto:rkelson@utah.gov). This elevation data was collected between April and October, 2018 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
+{% capture pcloud-dload %}{% include contact.html subject=page.title contact=site.data.contacts.elevation text='by request. Reach out to'%}{% endcapture %}
+
+During 2018 AGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) [~3,759 square miles]({{ "/images/lidar_central_utah_2018_coverage.png/" | prepend: site.baseurl }}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Central Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, are also available {{ pcloud-dload | strip_newlines }} This elevation data was collected between April and October, 2018 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
@@ -43,8 +45,8 @@ During 2018 AGRC, the Utah Division of Emergency Management, the Natural Resourc
   </li>
 </ul>
 
-The naming convention for the tiles are based off the [U.S. National Grid (USNG)](https://www.fgdc.gov/usng/how-to-read-usng/index_html).
+The naming convention for the tiles are based off the [U.S. National Grid (USNG)]( https://www.fgdc.gov/usng/how-to-read-usng/index_html).
 
 This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
 
-If you need assistance contact Rick Kelson at [rkelson@utah.gov](mailto:rkelson@utah.gov)
+{% capture elevation %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %} {{ elevation | strip_newlines }}
