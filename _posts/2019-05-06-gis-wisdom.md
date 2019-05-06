@@ -3,7 +3,7 @@ title: GIS Wisdom - Exploring the Reverse Approach
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2019-04-24 10:07:46
+date: 2019-05-06 10:07:46
 categories:
   - Featured
 tags:
