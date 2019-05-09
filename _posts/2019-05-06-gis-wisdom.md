@@ -120,4 +120,5 @@ Thanks for contributing!
 One transaction/thing at a time until it's done. Muti-tasking doesn't work nearly as well. `Bert Granberg`
 
 #### Web Services
+
 You don't have to build it or own it (efficiency of sharing economy... such as sharing a lawn mower with a neighbor or two). Planning to service a common set of specific needs.  `Bert Granberg`
