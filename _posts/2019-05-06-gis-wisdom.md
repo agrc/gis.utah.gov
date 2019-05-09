@@ -110,3 +110,13 @@ Learn the [basics of topology](https://pro.arcgis.com/en/pro-app/help/data/topol
 <br/>
 {% capture contact %}{% include contact.html text="Drop me an email if you can think of other forms of GIS wisdom.  I'll start a running list and post them below.  My contact info is " subject=page.title contact=site.data.contacts.roads %}{% endcapture %}
 {{ contact | strip_newlines }}
+
+Thanks for contributing!
+
+### Community Additions
+
+#### Atomicity (as in relational databases)
+One transaction/thing at a time until it's done. Muti-tasking doesn't work nearly as well. `Bert Granberg`
+
+#### Web Services
+You don't have to build it or own it (efficiency of sharing economy... such as sharing a lawn mower with a neighbor or two). Planning to service a common set of specific needs.  `Bert Granberg`
