@@ -116,6 +116,7 @@ Thanks for contributing!
 ### Community Additions
 
 #### Atomicity (as in relational databases)
+
 One transaction/thing at a time until it's done. Muti-tasking doesn't work nearly as well. `Bert Granberg`
 
 #### Web Services
