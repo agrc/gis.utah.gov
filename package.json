@@ -21,13 +21,8 @@
   "homepage": "https://github.com/agrc/gis.utah.gov#readme",
   "devDependencies": {
     "grunt": "^1.0.4",
-    "grunt-contrib-htmlmin": "^2.0.0",
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
-    "grunt-gh-pages": "^1.0.0",
-    "grunt-jekyll": "^0.4.7",
-    "grunt-newer": "^1.1.1",
-    "grunt-replace": "^1.0.1",
     "list.js": "^1.5.0",
     "mustache": "^2.3.2"
   }
