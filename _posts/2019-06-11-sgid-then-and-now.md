@@ -17,7 +17,7 @@ Access to high-quality GIS data is a privilege, and the fact that it's open and 
 
 This post explores some of the early milestones (‘highlights’) of the SGID, the current state of the SGID with usage stats, and finally the ‘where-are-we going-next’ - with a [survey](https://www.surveymonkey.com/r/3P58K98) requesting user-input!
 
-### `Early History of the SGID`
+### Early History of the SGID
 {: .text-left}
 
 Interestingly enough, development of the SGID parallels a lot of the early innovative GIS work being done at the national level.  Historically speaking, Utah plays a role in GIS history under a category I would call, ‘Early-Adopter States’.
