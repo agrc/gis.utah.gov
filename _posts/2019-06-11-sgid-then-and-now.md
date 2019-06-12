@@ -63,7 +63,7 @@ Technology and the use of GIS have come a long way since the inaugural SGID of 1
 
 The current makeup of the SGID is distributed, by design.  Internally, much of the framework data is managed on a SQL ArcSDE Database.  From there, data layers are distributed accordingly.
 
-The [sgid index]({{ "/data/sgid-index/" | prepend: site.baseurl }}) and user guide are located on the [AGRC’s website]({{ "/data/" | prepend: site.baseurl }}).  Here you will find descriptions of the data, update dates, data downloads, as well as links to other places where you can access the data.  It is recommended that you begin your data search there.
+The [sgid index]({{ "/data/sgid-index/" | prepend: site.baseurl }}) and user guide are located on [AGRC’s website]({{ "/data/" | prepend: site.baseurl }}).  Here you will find descriptions of the data, update dates, data downloads, as well as links to other places where you can access the data.  It is recommended that you begin your data search there.
 
 ![SGID 2019 User Guide]({{ "/images/SGID_2019_webpage_data.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
@@ -123,6 +123,6 @@ Additionally, AGRC has established a workflow with our partner agencies to serve
 
 Ultimately, our goal is provided the most-current, industry-accepted tools that allow our users to access high-quality, standardized, statewide GIS data for Utah.  Additionally, we design or paths forward with a reasonable amount of backward capability.  
 
-We are always curious to hear from our users on how you access the data, what formats you use, and how we can better get the data into your hands.  Please take a moment to fill out our [poll](https://www.surveymonkey.com/r/3P58K98) on your preferred method(s) of accessing SGID data.  This helps us gauge where we should focus our future efforts.
+We are always curious to hear from our users on how you access the data, what formats you use, and how we can better get the data into your hands.  Please take a moment to fill out our one-question [poll](https://www.surveymonkey.com/r/3P58K98) on your preferred method(s) of accessing SGID data.  This helps us gauge where we should focus our future efforts.
 
 [![Take the Survey]({{ "/images/SGID_2019_take_the_poll.png" | prepend: site.baseurl }}){: .flex .flex--center}](https://www.surveymonkey.com/r/3P58K98)
