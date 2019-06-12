@@ -15,7 +15,7 @@ tags:
 
 Access to high-quality GIS data is a privilege, and the fact that it's open and free is nothing short of amazing.  Yes, I’m talking about Utah's State Geographic Information Database (SGID).  From a local perspective, we’re all accustomed to it being there.  But really, this concept of readily-available, mature, open data is somewhat unique.  Over the years, many factors have played into the SGID’s development and current maturity.  Likewise, It takes ongoing maintenance and planning to ensure its continued success.
 
-This post explores some of the early milestones (‘highlights’) of the SGID, the current state of the SGID with usage stats, and finally the ‘where-are-we going-next’ - with a [survey](https://www.surveymonkey.com/r/3P58K98) requesting user-input!
+This post explores some of the early milestones (‘highlights’) of the SGID, the current state of the SGID with usage stats, and finally the ‘where-are-we going-next’ - with a [poll](https://www.surveymonkey.com/r/3P58K98) requesting user-input!
 
 ### Early History of the SGID
 {: .text-left}
@@ -123,6 +123,6 @@ Additionally, AGRC has established a workflow with our partner agencies to serve
 
 Ultimately, our goal is provided the most-current, industry-accepted tools that allow our users to access high-quality, standardized, statewide GIS data for Utah.  Additionally, we design or paths forward with a reasonable amount of backward capability.  
 
-We are always curious to hear from our users on how you access the data, what formats you use, and how we can better get the data into your hands.  Please take a moment to fill out our [survey](https://www.surveymonkey.com/r/3P58K98) on your preferred method(s) of accessing SGID data.  This helps us gauge where we should focus our future efforts.
+We are always curious to hear from our users on how you access the data, what formats you use, and how we can better get the data into your hands.  Please take a moment to fill out our [poll](https://www.surveymonkey.com/r/3P58K98) on your preferred method(s) of accessing SGID data.  This helps us gauge where we should focus our future efforts.
 
-[![Take the Survey]({{ "/images/SGID_2019_take_the_survey.png" | prepend: site.baseurl }}){: .flex .flex--center}](https://www.surveymonkey.com/r/3P58K98)
+[![Take the Survey]({{ "/images/SGID_2019_take_the_poll.png" | prepend: site.baseurl }}){: .flex .flex--center}](https://www.surveymonkey.com/r/3P58K98)
