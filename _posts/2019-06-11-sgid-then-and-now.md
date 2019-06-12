@@ -67,7 +67,7 @@ The [sgid index]({{ "/data/sgid-index/" | prepend: site.baseurl }}) and user gui
 
 ![SGID 2019 User Guide]({{ "/images/SGID_2019_webpage_data.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
-In order to meet the diverse needs of our users and applications, SGID data is served on a variety of platforms in a variety of formats, including direct database access, downloadable data, and API web services.
+In order to meet the diverse needs of our users and applications, SGID data is served on a variety of platforms in a variety of formats, including direct database access, downloadable data, [ArcGIS Online](https://gis.utah.gov/data), an [open data portal](https://opendata.gis.utah.gov/), and API web services.
 
 Here are some current SGID stats, showing top accessed data layers by platform:
 
