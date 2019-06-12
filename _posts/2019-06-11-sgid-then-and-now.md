@@ -108,7 +108,7 @@ Here are some current SGID stats, showing top accessed data layers by platform:
 - **[OpenData website](https://opendata.gis.utah.gov/)**
   - Currently, averaging 48 item views a day (17,413 views over the past year)
 
-### `Where is the SGID Going?`
+### Where is the SGID Going?
 {: .text-left}
 
 One of the challenges of working in technology is that over time file formats, and the way we access data, change.  This is similarly true for the SGID.  As a result, AGRC engages in regular discussions on where the SGID should be going.  
