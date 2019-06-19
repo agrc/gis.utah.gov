@@ -9,36 +9,35 @@ categories:
 tags: []
 ---
 
-Developing software for digital assistants is fun and a refreshing change from typical GIS projects. Over the past few months, AGRC was lucky enough to spend the time developing equivalent skills for the Google Assistant and the Amazon Alexa. Using both platforms allowed us to see their differences very clearly. We are excited to share our opinions on the strengths of each platform. To browse the code, visit [agrc/digital-assistant-skills](https://github.com/agrc/digital-assisant-skills) on GitHub and browse the `alexa-skill` and `google-skill` branches.
+Developing software for digital assistants is fun and a refreshing change from typical GIS projects. Over the past few months, AGRC was lucky enough to spend some time developing equivalent skills for Google Assistant and the Amazon Alexa. Using both platforms allowed us to see their differences very clearly. We are excited to share our opinions on the strengths of each platform. To browse the code, visit [agrc/digital-assistant-skills](https://github.com/agrc/digital-assisant-skills) on GitHub and browse the `alexa-skill` and `google-skill` branches.
 
 ## Background
 {: .text-left }
 
-In 2018 AGRC submitted a [proposal](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/proposal.md) for funds from the State of Utah Technology Innovation Program (i.e., Innovation Fund) and was [awarded](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/award.md) funding to experiment with digital assistants. Using GIS with the digital assistants was the niche to explore, and we learned a lot more along the way.
+In 2018 AGRC submitted a [proposal](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/proposal.md) for funds from the State of Utah Technology Innovation Program (i.e., Innovation Fund) and was [awarded](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/award.md) funding to experiment with digital assistants. Using GIS with digital assistants was the niche to explore, and we learned a lot more along the way.
 
 ## Getting Started
 {: .text-left }
 
 We started with the Alexa skill since we had prior [personal](https://github.com/steveoh/alexa-utah-avy-skill) [experience](https://github.com/stdavis/utah-air-quality-alexa-skill) with the ecosystem and we had a few [promotional devices](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion) that we could test with.
 
-Getting started with Amazon was time consuming because of the enterprise and government. The Utah and Amazon partnership was very young and all of the authentication and security systems were not in place. Amazon Web Services and Alexa are two separate entities that cannot share credentials. The state could not use the same account for Alexa and AWS. Restricting all of the IAM permissions for state developers to successfully deploy and debug while in an enterprise took some trial and error. While we waited for all of the pieces to fall into place, I used my personal Amazon account. All of the account permissions were straight forward and development progressed smoothly.
+Getting started with Amazon was time consuming because of the enterprise and government. At that time, the partnership between the State of Utah and Amazon was very young and authentication and security systems needed to be put in place before we could begin our work. AWS and Alexa are two separate entities that cannot share credentials, so the State could not use the same account for Alexa and AWS. Restricting all of the IAM permissions for State developers to successfully deploy and debug while in an enterprise environment took some trial and error. While we waited for all of the pieces to fall into place, I used my personal Amazon account. All of the account permissions were straightforward and development progressed smoothly.
 
-Utah is a Google Drive Enterprise customer and has been for many years. Therefore, getting started with the Google Assistant was very simple. Every state employee has a Google account. All we needed was an "enterprise" project to start development so the billing was accurate. There were no delays or major hoops to jump through.
+Utah is a Google Drive Enterprise customer and has been for many years. Therefore, getting started with Google Assistant was very simple. Every State employee has a Google account. All we needed was an "enterprise" project to start development so the billing was accurate. There were no delays or major hoops to jump through.
 
 ## Development
 {: .text-left }
-
 ### Debug Cycle
 
-Having a quick debug test loop is paramount to developer productivity. When developing in the cloud, this is often hindered by the time taken for deployments and the lack of access to the developer tooling we are familiar with on our machines. I chose to use python and [Flask](http://flask.pocoo.org/) for the Alexa skill to keep a fast loop. Flask let us handle Alexa requests locally removing the time necessary for deploying to lambda. This was a _huge_ productivity boost as we were able to use the python debugger and all of the debugging tools we are familiar with. And it is pleasing to take a break from callbacks and promises once in a while.
+Having a quick debug test loop is paramount to developer productivity. When developing in the cloud, this is often hindered by the time taken for deployments and the lack of access to the developer tooling we are familiar with on our machines. I chose to use Python and [Flask](http://flask.pocoo.org/) for the Alexa skill to keep a fast loop. Flask let us handle Alexa requests locally, which reduced the time required for deploying to lambda. This was a _huge_ productivity boost as we were able to use the Python debugger and all of the debugging tools we are familiar with. And it is pleasing to take a break from callbacks and promises once in a while.
 
-It was a relatively simple process to make Alexa send her requests to my [local flask server](https://github.com/agrc/digital-assisant-skills#development-ceremony) which was acting as a lambda function. Using [ngrok](https://dashboard.ngrok.com/get-started) to expose my laptop as a temporary public https url that I could set on Alexa was a key piece of the puzzle. Switching between lambda and my laptop required a change to two lines of code. I created a small [CLI](https://github.com/agrc/digital-assisant-skills/tree/alexa-skill/cli) tool to make that _even_ easier.
+It was a relatively simple process to make Alexa send her requests to my [local flask server](https://github.com/agrc/digital-assisant-skills#development-ceremony), which was acting as a lambda function. Using [ngrok](https://dashboard.ngrok.com/get-started) to expose my laptop as a temporary public https url that I could set on Alexa was a key piece of the puzzle. Switching between lambda and my laptop required a change to two lines of code. I created a small [CLI](https://github.com/agrc/digital-assisant-skills/tree/alexa-skill/cli) tool to make that _even_ easier.
 
-The Google Assistant leads you to Firebase functions for request fulfillment. Firebase only supports JavaScript for a node environment---so callbacks and promises it was! Thank goodness for async/await!
+Google Assistant leads you to Firebase functions for request fulfillment. Firebase only supports JavaScript for a node environment---so callbacks and promises it was! Thank goodness for async/await!
 
-I never did set up a local server for the Google Assistant. While the Firebase CLI is awesome and can start a local server, debugging what is going on inside that local server is **not** simple. I _could_ have set up an [Express](https://expressjs.com/) server, a roughly JS equivalent to Flask, but I chose to avoid the complexity. In hindsight, I would recommend the Express approach since (to my great frustration) I ended up `console.log` debugging in the Firebase logs.
+I never did set up a local server for Google Assistant. While the Firebase CLI is awesome and can start a local server, debugging what is going on inside that local server is **not** simple. I _could_ have set up an [Express](https://expressjs.com/) server, roughly a JS equivalent to Flask, but I chose to avoid the complexity. In hindsight, I would recommend the Express approach since (to my great frustration) I ended up `console.log` debugging in the Firebase logs.
 
-When you sign up for Firebase functions, you are placed on the free Spark plan. If making http requests to external resources is something your skill will do, and most do, you will need to upgrade to a paid tier. You will get unhelpful `ENOTFOUND` or `Error: getaddrinfo EAI_AGAIN` JavaScript errors if you [attempt this](https://stackoverflow.com/a/50007666/352432). It is **not** straight forward. We upgraded to the Blaze plan to make requests to the [AGRC WebAPI](https://api.mapserv.utah.gov).
+When you sign up for Firebase functions, you are placed on the free Spark plan. If making http requests to external resources is something your skill will do, and most do, you will need to upgrade to a paid tier. You will get unhelpful `ENOTFOUND` or `Error: getaddrinfo EAI_AGAIN` JavaScript errors if you [attempt this](https://stackoverflow.com/a/50007666/352432). It is **not** straightforward. We upgraded to the Blaze plan to make requests to the [AGRC WebAPI](https://api.mapserv.utah.gov).
 
 ### Skills as Code
 
@@ -85,3 +84,6 @@ Alexa also runs "[office hours](https://www.twitch.tv/amazonalexa)" on twitch. I
 {: .text-left }
 
 Developing software for digital assistants is fun. I very much enjoyed the developer experience for Alexa, but Google's natural language processing from Dialogflow required less training. I would expect the features from each company to be eventually consistent. One may have it first, but the competition will catch up and surpass. But Google Assistant and Amazon Alexa are both great tools, and I enjoyed my experience working with them.
+
+*[AWS]: Amazon Web Services
+*[IAM]: AWS Identity and Access Management
