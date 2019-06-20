@@ -81,7 +81,7 @@ The conference had great submissions for the Map, App, and Poster Gallery and Co
 
 [*Mobile Agenda*](https://website.webmobi.com/ugic2019): UGIC first used a conference app at the 2018 conference held in Vernal. The 2019 conference was the first UGIC conference where there wasn’t a paper agenda booklet in addition to any digital materials, and this was incredibly successful. The conference app provided attendees with easy-to-use venue maps and allowed users to make agenda changes on the fly as needed. 
 
-*Other*: A live band performed during the Wednesday evening vendor social. There were also a lot of friends and family who joined Thursday evening’s BBQ dinner and train ride.
+_Other_: A live band performed during the Wednesday evening vendor social. There were also a lot of friends and family who joined Thursday evening’s BBQ dinner and train ride.
 
 ### What Was the Same?
 {: .text-left}
