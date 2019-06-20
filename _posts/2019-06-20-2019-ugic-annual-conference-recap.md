@@ -95,6 +95,6 @@ Another consistent part of the conference is a great venue in one of Utah’s gr
 
 Utah has been recognized nationally as a great place for GIS innovations, data sharing, and collaboration.  The presentations at the UGIC conference each year highlight the fact that Utah is a great place for anyone using GIS. In fact, some members are now involved in the GIS field in other states, but they value the connections at UGIC so much that they keep coming back for the conference. This is a testament to the quality of GIS in Utah and why the UGIC conference is valuable locally, regionally, and nationally.
 
-[^1]:  Malotki, Ekkehart. *Kokopelli: The Making of an Icon*. (Lincoln, Nebraska: University of Nebraska Press). p. 1. Accessed via [Google Books](https://books.google.com/books?hl=en&lr=&id=qqOgjiqa7R4C&oi=fnd&pg=PR8&dq=kokopelli&ots=MXUc6Y_0p3&sig=wnVth6vhV-52Jpy4CliANmeSBpA#v=onepage&q=the%20overriding%20reason&f=false) on June 20, 2019.   
+[^1]:  Malotki, Ekkehart. _Kokopelli: The Making of an Icon_. (Lincoln, Nebraska: University of Nebraska Press). p. 1. Accessed via [Google Books](https://books.google.com/books?hl=en&lr=&id=qqOgjiqa7R4C&oi=fnd&pg=PR8&dq=kokopelli&ots=MXUc6Y_0p3&sig=wnVth6vhV-52Jpy4CliANmeSBpA#v=onepage&q=the%20overriding%20reason&f=false) on June 20, 2019.   
 [^2]:  Malotki. *Kokopelli: The Making of an Icon*. p 4. 
 (http://americanhistory.si.edu/collections/search/object/nmah_761634).
