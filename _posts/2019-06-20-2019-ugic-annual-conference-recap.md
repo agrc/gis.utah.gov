@@ -79,7 +79,7 @@ The conference had great submissions for the Map, App, and Poster Gallery and Co
 
 *Exceptional Attendance*: This year’s conference was exceptionally well attended, with a total of 263 attendees (including both registrants and vendors---possibly the highest number of vendors the conference has seen), 121 students in two days of preconference training (One section of the ArcGIS Pro preconference training even sold out, which is the first time, that UGIC knows of, that a class has been completely filled!), and over 200 people at the Thursday evening social on the Heber Valley Railroad. 
 
-[*Mobile Agenda*](https://website.webmobi.com/ugic2019): UGIC first used a conference app at the 2018 conference held in Vernal. The 2019 conference was the first UGIC conference where there wasn’t a paper agenda booklet in addition to any digital materials, and this was incredibly successful. The conference app provided attendees with easy-to-use venue maps and allowed users to make agenda changes on the fly as needed. 
+[_Mobile Agenda_](https://website.webmobi.com/ugic2019): UGIC first used a conference app at the 2018 conference held in Vernal. The 2019 conference was the first UGIC conference where there wasn’t a paper agenda booklet in addition to any digital materials, and this was incredibly successful. The conference app provided attendees with easy-to-use venue maps and allowed users to make agenda changes on the fly as needed. 
 
 _Other_: A live band performed during the Wednesday evening vendor social. There were also a lot of friends and family who joined Thursday evening’s BBQ dinner and train ride.
 
