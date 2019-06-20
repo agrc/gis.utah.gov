@@ -22,7 +22,7 @@ This post explores some of the early milestones ("highlights") of the SGID, the 
 
 Interestingly enough, development of the SGID parallels a lot of the early innovative GIS work being done at the national level. Historically speaking, Utah has played a role in GIS history as an "Early-Adopter State."
 
-As early as the late-1970s, Utah was discussing the idea of statewide geographic data.  At that time, GIS was being tested in a few agencies, so a committee was formed to look at the needs of each state agency.  The original concept for the centralized database was for resource management, planning, and inter-agency coordination.
+As early as the late 1970s, Utah was discussing the idea of statewide geographic data. At that time, GIS was being tested in a few agencies, so a committee was formed to look at the needs of each state agency.  The original concept was that Utah would create a centralized database for resource management, planning, and interagency coordination.
 
 In 1980, ESRI was hired as a consultant to assist with Utah’s GIS implementation plan. The following year the state signed a contract with ESRI to purchase hardware, software, and training.  The software they purchased pre-dated ARC/INFO, which was released a year later in 1982 under the banner [“the first commercial GIS”](https://www.esri.com/~/media/Files/Pdfs/about-esri/esri-history-up-close).  But, it was with this equipment that the state began creating Utah’s first statewide GIS database.
 
