@@ -20,7 +20,7 @@ This post explores some of the early milestones ("highlights") of the SGID, the 
 ### Early History of the SGID
 {: .text-left}
 
-Interestingly enough, development of the SGID parallels a lot of the early innovative GIS work being done at the national level.  Historically speaking, Utah plays a role in GIS history under a category I would call, ‘Early-Adopter States’.
+Interestingly enough, development of the SGID parallels a lot of the early innovative GIS work being done at the national level. Historically speaking, Utah has played a role in GIS history as an "Early-Adopter State."
 
 As early as the late-1970s, Utah was discussing the idea of statewide geographic data.  At that time, GIS was being tested in a few agencies, so a committee was formed to look at the needs of each state agency.  The original concept for the centralized database was for resource management, planning, and inter-agency coordination.
 
