@@ -123,6 +123,6 @@ Additionally, AGRC has established a workflow with our partner agencies to serve
 
 Ultimately, our goal is to provide the most current industry-accepted tools that allow our users to access high-quality, standardized, statewide GIS data for Utah. Additionally, we design our paths forward with a reasonable amount of backward capability.  
 
-We are always curious to hear from our users on how you access the data, what formats you use, and how we can better get the data into your hands.  Please take a moment to fill out our one-question [poll](https://www.surveymonkey.com/r/3P58K98) on your preferred method(s) of accessing SGID data.  This helps us gauge where we should focus our future efforts.
+We are always curious to hear from our users on how you access the SGID data, what formats you use, and how we can better get the data into your hands. Please take a moment to fill out our one-question [poll](https://www.surveymonkey.com/r/3P58K98) on your preferred method(s) of accessing SGID data. This will help us gauge where we should focus our future efforts.
 
 [![Take the Survey]({{ "/images/SGID_2019_take_the_poll.png" | prepend: site.baseurl }}){: .flex .flex--center}](https://www.surveymonkey.com/r/3P58K98)
