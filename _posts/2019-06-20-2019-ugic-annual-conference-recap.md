@@ -21,7 +21,7 @@ This conference is valuable to the GIS community in Utah because it’s the one 
 ## The Conference
 {: .text-left}
 
-So how was the conference this year? What did attendees talk about, and how did the conference compare to other years? Let’s discuss.  
+So how was the conference this year? [What did attendees talk about](https://drive.google.com/drive/u/0/folders/14svh-48imju91bsyYcB1zw2yRdy9w8fW), and how did the conference compare to other years? Let’s discuss.  
 
 <figure class="caption caption--right">
   <a href="{{ "/images/JackDangermondFeaturedKeynote.jpg" | prepend: site.baseurl }}" title="click to see the full sized image">
@@ -30,7 +30,7 @@ So how was the conference this year? What did attendees talk about, and how did 
   <figcaption class="caption__text" markdown="span">Jack Dangermond, featured keynote speaker]</figcaption>
 </figure>
 
-### [Sessions](https://drive.google.com/drive/u/0/folders/14svh-48imju91bsyYcB1zw2yRdy9w8fW)
+### Sessions
 {: .text-left}
 
 Jack Dangermond, President of ESRI, delivered the conference’s featured keynote address. He has been recognized as a thought leader in the GIS industry, and he discussed a number of emerging trends in GIS as more and more data becomes available and map creation is no longer limited to technical specialists.  He also focused on several new technologies available for mobile data collection and data sharing through web services and open data portals. UGIC was privileged to have Jack come to Utah again because he only visits a limited number of non-ESRI conferences each year.
@@ -58,13 +58,13 @@ The conference had great submissions for the Map, App, and Poster Gallery and Co
   <figcaption class="caption__text" markdown="span">"Provo Keyboard Map" by Stan McShinsky, winner of the Stan McShinsky Award</figcaption>
 </figure>
 
--*Stan McShinsky Award recipient*: “Provo Keyboard Map” by Stan McShinsky  
-- *Citizen Engagement*: “Wasatch Choice 2050: Vision for Our Future” by Bert Granberg and Nicole Proulx  
-- *Utah as Art*: “Canyonlands, Capitol Reef, San Rafael Swell and Zion-Mukuntuweap” by Ellie Leydsman McGinty  
-- *Small Map*: “TransPlan50: Regional Transportation Plan 2019-2050 for the Provo/Orem Metropolitan Area” by Kory Iman  
-- *Professional Map*: “The Wasatch Front Trail Network” by Brandon Plewe  
-- *Student Research Posters*: “Modeling water levels of the Great Salt Lake” by Ian Hazel, David Maack and Braeden Cook  
-- *Interactive Map*: “BLM Interactive Map” by Brian Mueller  
+- _Stan McShinsky Award recipient_: “Provo Keyboard Map” by Stan McShinsky  
+- _Citizen Engagement_: “Wasatch Choice 2050: Vision for Our Future” by Bert Granberg and Nicole Proulx  
+- _Utah as Art_: “Canyonlands, Capitol Reef, San Rafael Swell and Zion-Mukuntuweap” by Ellie Leydsman McGinty  
+- _Small Map_: “TransPlan50: Regional Transportation Plan 2019-2050 for the Provo/Orem Metropolitan Area” by Kory Iman  
+- _Professional Map_: “The Wasatch Front Trail Network” by Brandon Plewe  
+- _Student Research Posters_: “Modeling water levels of the Great Salt Lake” by Ian Hazel, David Maack and Braeden Cook  
+- _Interactive Map_: “BLM Interactive Map” by Brian Mueller  
 
 <figure class="caption caption--right">
   <img class="caption__image" src="{{ "/images/UGICConferenceLogo.jpg" | prepend: site.baseurl }}" alt="UGIC 2019 Conference Logo" />
@@ -95,6 +95,4 @@ Another consistent part of the conference is a great venue in one of Utah’s gr
 
 Utah has been recognized nationally as a great place for GIS innovations, data sharing, and collaboration.  The presentations at the UGIC conference each year highlight the fact that Utah is a great place for anyone using GIS. In fact, some members are now involved in the GIS field in other states, but they value the connections at UGIC so much that they keep coming back for the conference. This is a testament to the quality of GIS in Utah and why the UGIC conference is valuable locally, regionally, and nationally.
 
-[^1]:  Malotki, Ekkehart. _Kokopelli: The Making of an Icon_. (Lincoln, Nebraska: University of Nebraska Press). p. 1. Accessed via [Google Books](https://books.google.com/books?hl=en&lr=&id=qqOgjiqa7R4C&oi=fnd&pg=PR8&dq=kokopelli&ots=MXUc6Y_0p3&sig=wnVth6vhV-52Jpy4CliANmeSBpA#v=onepage&q=the%20overriding%20reason&f=false) on June 20, 2019.   
-[^2]:  Malotki. _Kokopelli: The Making of an Icon_. p 4. 
-(http://americanhistory.si.edu/collections/search/object/nmah_761634).
+[^1]:  Malotki, Ekkehart. _Kokopelli: The Making of an Icon_. (Lincoln, Nebraska: University of Nebraska Press). p. 1. Accessed via [Google Books](https://books.google.com/books?hl=en&lr=&id=qqOgjiqa7R4C&oi=fnd&pg=PR8&dq=kokopelli&ots=MXUc6Y_0p3&sig=wnVth6vhV-52Jpy4CliANmeSBpA#v=onepage&q=the%20overriding%20reason&f=false) on June 20, 2019. [^2]:  Malotki. _Kokopelli: The Making of an Icon_. p 4. (http://americanhistory.si.edu/collections/search/object/nmah_761634).
