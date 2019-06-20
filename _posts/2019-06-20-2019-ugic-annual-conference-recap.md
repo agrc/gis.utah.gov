@@ -9,7 +9,6 @@ categories:
 tags:
   - conference
   - UGIC
-  - GIS
 ---
 
 The Utah Geographic Information Council hosted its annual conference on May 6–10 in Midway to allow GIS professionals, students, and others who are passionate about spatial information to come together to share ideas, best practices, and new skills.      
