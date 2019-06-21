@@ -27,7 +27,7 @@ So how was the conference this year? [What did attendees talk about](https://dri
   <a href="{{ "/images/JackDangermondFeaturedKeynote.jpg" | prepend: site.baseurl }}" title="click to see the full sized image">
     <img class="caption__image" src="{{ "/images/JackDangermondFeaturedKeynote.jpg" | prepend: site.baseurl }}" alt="Jack Dangermond, featured keynote speaker">
   </a>
-  <figcaption class="caption__text" markdown="span">Jack Dangermond, featured keynote speaker]</figcaption>
+  <figcaption class="caption__text" markdown="span">Jack Dangermond, featured keynote speaker</figcaption>
 </figure>
 
 ### Sessions
