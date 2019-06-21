@@ -55,7 +55,7 @@ The conference had great submissions for the Map, App, and Poster Gallery and Co
 
 <figure class="caption caption--right">
   <img class="caption__image" src="{{ "/images/StanMcShinskyAwardMap.jpg" | prepend: site.baseurl }}" alt="Stan McShinsky Award Map" />
-  <figcaption class="caption__text" markdown="span">"Provo Keyboard Map" by Stan McShinsky, winner of the Stan McShinsky Award</figcaption>
+  <figcaption class="caption__text">"Provo Keyboard Map" by Stan McShinsky, winner of the Stan McShinsky Award</figcaption>
 </figure>
 
 - _Stan McShinsky Award recipient_: “Provo Keyboard Map” by Stan McShinsky  
