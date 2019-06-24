@@ -46,7 +46,7 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 
 ![1995 SGID CD-ROM photo]({{ "/images/SGID_1995_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
-- **SGID User’s Guide -10th Edition (1999)**
+- **SGID User’s Guide - 10th Edition (1999)**
   - This version of the user's guide was also distributed in a three-ring binder, and talked about the AGRC home page as the place where you can get direct access to the data, as well as view the FGDC metadata. It also mentions an FTP site. It notes that this version will be last printed user guide and that future guides will be available on the website for download in PDF format. Users could also request the data in the following formats: CD, 3.5 diskettes, 8mm tape, zip disc, or Coverages (which it mentions are the most popular).
 
 ![1999 SGID User Guide Binder]({{ "/images/SGID_1999_binders_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
