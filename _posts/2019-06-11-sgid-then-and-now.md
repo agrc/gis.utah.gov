@@ -90,7 +90,7 @@ Here are some current SGID stats showing top accessed data layers by platform:
   -  Municipal Boundaries - 35,000
   -  Parcels - 28,000
   -  Lakes - 26,000
-  -  Address Points - (17,000)
+  -  Address Points - 17,000
   -  Zip Codes - (17,000)
 
 - **SQL ArcSDE Database** - Desktop-user Views, from the past 12 months (approximately), rounded to the nearest one-hundred
