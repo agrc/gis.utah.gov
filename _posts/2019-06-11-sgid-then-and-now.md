@@ -32,7 +32,7 @@ In 1989, AGRC was created (replacing AGR). That change brought with it new GIS-r
 
 The SGID was further solidified in 1991 with the passage of [Senate Bill 21](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html).  Passing unanimously, this bill created the AGRC and the SGID in state statute and eliminated many uncertainties such as future funding for the database and AGRC’s responsibilities.
 
-The SGID has been in continuous operation since it’s completion in 1991.  Since then, It has seen numerous software and hardware configurations.  
+The SGID has been in continuous operation since its completion in 1991 and has seen numerous software and hardware configurations throughout the years.  
 
 Here are a few of the ‘highlights’ that have brought us to where we are now:
 
