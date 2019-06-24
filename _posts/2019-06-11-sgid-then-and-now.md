@@ -51,7 +51,7 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 
 ![1999 SGID User Guide Binder]({{ "/images/SGID_1999_binders_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
-- **SGID meets the World Wide Web (the early 2000s)**
+- **SGID Meets the World Wide Web (Early 2000s)**
   - By the early 2000s the SGID user's guide, data, and data viewer were all solely available over the Web. AGRC was using ArcSDE 8.2 to maintain the data and ArcIMS for the interactive mapping website. Users could also use a separate ArcIMS site to create their own exportable map using a [custom map authoring tool]({{ "/images/SGID_early2000s_create_custom_map.gif" | prepend: site.baseurl }}).
 
 [![SGID Early 2000s]({{ "/images/SGID_early2000s_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}]({{ "/images/SGID_early2000s.png" | prepend: site.baseurl }})
