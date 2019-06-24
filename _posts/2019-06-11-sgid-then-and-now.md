@@ -47,7 +47,7 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 ![1995 SGID CD-ROM photo]({{ "/images/SGID_1995_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
 - **SGID User’s Guide - 10th Edition (1999)**
-  - This version of the user's guide was also distributed in a three-ring binder, and talked about the AGRC home page as the place where you can get direct access to the data, as well as view the FGDC metadata. It also mentions an FTP site. It notes that this version will be last printed user guide and that future guides will be available on the website for download in PDF format. Users could also request the data in the following formats: CD, 3.5 diskettes, 8mm tape, zip disc, or Coverages (which it mentions are the most popular).
+  - This version of the user guide was also distributed in a three-ring binder and talked about the AGRC home page as the place where you could get direct access to the SGID data, as well as view the FGDC metadata. It also mentioned an FTP site. It noted that this version would be the last printed user guide and that future guides would be available on the website for download in PDF format. With this version, users could request SGID data in the following formats: CD, 3.5 diskettes, 8mm tape, zip disc, or Coverages (which the guide mentioned were the most popular at that time).
 
 ![1999 SGID User Guide Binder]({{ "/images/SGID_1999_binders_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
@@ -75,15 +75,15 @@ Here are some current SGID stats showing top accessed data layers by platform:
   - Parcels - 30,900
   - Elevation and Terrain - 20,400
   - Aerial Photography - 20,100
-  - Transportation - (18,200)
-  - USGS Scanned Topo Maps - (15,900)
-  - Boundaries - Landownership - (15,600)
-  - Boundaries - City, County, and State - (15,300)
-  - Oil and Gas - (8,000)
-  - Water - (7,600)
+  - Transportation - 18,200
+  - USGS Scanned Topo Maps - 15,900
+  - Boundaries - Landownership - 15,600
+  - Boundaries - City, County, and State - 15,300
+  - Oil and Gas - 8,000
+  - Water - 7,600
   - Basemap and Imagery - 5,300
 
-- **[ArcGIS Online](https://utah.maps.arcgis.com)** - The most popular content from June 2013 to May 2019, rounded to the nearest one-thousand
+- **[ArcGIS Online](https://utah.maps.arcgis.com)** - The most popular content from June 2013 to May 2019, as measured in page views (rounded to the nearest one-thousand)
   - SBI Operations (which includes: Law Enforcement Boundaries, City Courts, County Courts, State District Courts, and UHP Dispatch Zones) - 67,000
   -  Roads (minor and major roads combined stats) - 64,000
   -  County Boundaries - 47,000
@@ -93,29 +93,29 @@ Here are some current SGID stats showing top accessed data layers by platform:
   -  Address Points - 17,000
   -  Zip Codes - 17,000
 
-- **SQL ArcSDE Database** - Desktop-user Views, from the past 12 months (approximately), rounded to the nearest one-hundred
-  - Parcels, all counties combined - (14,000 table-locks)
-  - Counties - (8,000)
-  - Municipalities - (6,100)
-  - Landownership - (4,900)
-  - Roads - (4,700)
-  - Sections - (4,000)
-  - Townships - (3,600)
-  - Quarter-Quarter Sections - (1,500)
-  - Zip Codes - (2,100)
-  - Address Points - (2,100)
+- **SQL ArcSDE Database** - Desktop-user views from the past 12 months (approximately) rounded to the nearest one-hundred
+  - Parcels, all counties combined - 14,000 table-locks
+  - Counties - 8,000
+  - Municipalities - 6,100
+  - Landownership - 4,900
+  - Roads - 4,700
+  - Sections - 4,000
+  - Townships - 3,600
+  - Quarter-Quarter Sections - 1,500
+  - Zip Codes - 2,100
+  - Address Points - 2,100
 
-- **[OpenData website](https://opendata.gis.utah.gov/)**
-  - Currently, averaging 48 item views a day (17,413 views over the past year)
+- **[OpenData Website](https://opendata.gis.utah.gov/)**
+  - Currently averaging 48 item views a day (17,413 views over the past year)
 
-### Where is the SGID Going?
+### Where Is the SGID Going?
 {: .text-left}
 
-One of the challenges of working in technology is that over time file formats, and the way we access data, change.  This is similarly true for the SGID.  As a result, AGRC engages in regular discussions on where the SGID should be going.  
+One of the challenges of working in technology is that over time, file formats and the way we access data change. This is similarly true for the SGID. As a result, AGRC engages in regular discussions on where the SGID should be going.  
 
-Currently, we are working toward [trimming down the SQL ArcSDE enterprise database]({{site.baseurl}}{% post_url 2018-09-10-the-incredible-shrinking-sgid %}), which is available to those on the state network.  Moving forward, we will maintain only ‘live’ datasets in the SDE.  These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal, editing, and staging database.
+Currently, we are working toward [trimming down the SQL ArcSDE enterprise database]({{site.baseurl}}{% post_url 2018-09-10-the-incredible-shrinking-sgid %}), which is available to users on the State network.  Moving forward, we will maintain only "live" datasets in the SDE. These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal editing and staging database.
 
-All data layers being maintained in the SDE will also be available in [ArcGIS Online (AGOL)](https://utah.maps.arcgis.com) and [AGRC’s open data portal](https://opendata.gis.utah.gov/).  Here users can consume the web service or download the data.  Obsolete data will be written to object storage for retention and available on request.  
+All data layers being maintained in the SDE will also be available in [AGOL](https://utah.maps.arcgis.com) and [AGRC’s open data portal](https://opendata.gis.utah.gov/). Here users can consume the web service or download the data. Obsolete data will be written to object storage for retention and will be available on request.  
 
 AGRC is testing the option of a public-facing PostgreSQL cloud database where users can make direct connections from their desktop client. This will bring new functionality and an additional access point for our end users. We are excited about this offering, so keep an eye on our [Twitter](https://twitter.com/maputah) or [newsletter]({{ "/news/#mc_embed_signup" | prepend: site.baseurl }}) for upcoming details.  
 
