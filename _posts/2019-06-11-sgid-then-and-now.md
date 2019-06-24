@@ -81,7 +81,7 @@ Here are some current SGID stats showing top accessed data layers by platform:
   - Boundaries - City, County, and State - (15,300)
   - Oil and Gas - (8,000)
   - Water - (7,600)
-  - Basemap and Imagery - (5,300)
+  - Basemap and Imagery - 5,300
 
 - **[ArcGIS Online](https://utah.maps.arcgis.com)** - The most popular content from June 2013 to May 2019, rounded to the nearest one-thousand
   - SBI Operations (which includes: Law Enforcement Boundaries, City Courts, County Courts, State District Courts, UHP Dispatch Zones) - (67,000 views)
