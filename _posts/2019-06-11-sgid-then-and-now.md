@@ -89,7 +89,7 @@ Here are some current SGID stats showing top accessed data layers by platform:
   -  County Boundaries - 47,000
   -  Municipal Boundaries - 35,000
   -  Parcels - 28,000
-  -  Lakes - (26,000)
+  -  Lakes - 26,000
   -  Address Points - (17,000)
   -  Zip Codes - (17,000)
 
