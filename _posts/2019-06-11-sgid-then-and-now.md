@@ -74,7 +74,7 @@ Here are some current SGID stats showing top accessed data layers by platform:
 - **[AGRC Website](https://gis.utah.gov/data)** - Page views from the past 12 months (rounded to the nearest one-hundred)
   - Parcels - 30,900
   - Elevation and Terrain - 20,400
-  - Aerial Photography - (20,100)
+  - Aerial Photography - 20,100
   - Transportation - (18,200)
   - USGS Scanned Topo Maps - (15,900)
   - Boundaries - Landownership - (15,600)
