@@ -59,7 +59,7 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 ### Where Is the SGID Now?
 {: .text-left}
 
-Technology and the use of GIS have come a long way since the inaugural SGID of 1991.   What hasn't changed, though, is the notion of a centralized repository for searching and fetching statewide GIS data.  Sure, file formats and how we access data has changed, but the need for open, readily-accessible GIS data remains the same.
+Technology and the use of GIS have come a long way since the inaugural SGID of 1991. What hasn't changed though is the notion of a centralized repository for searching and fetching statewide GIS data. Sure, file formats and how we access data have changed, but the need for open, readily accessible GIS data remains the same.
 
 The current makeup of the SGID is distributed, by design.  Internally, much of the framework data is managed on a SQL ArcSDE Database.  From there, data layers are distributed accordingly.
 
