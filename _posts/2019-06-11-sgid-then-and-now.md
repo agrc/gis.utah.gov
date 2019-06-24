@@ -28,7 +28,7 @@ In 1980, ESRI was hired as a consultant to assist with Utah’s GIS implementati
 
 In 1982, the Automated Geographic Reference, or AGR, was established with the goal to catalog and maintain this data. AGR entered the modern era in 1984 with the purchase of ARC/INFO on a PRIME minicomputer.
 
-In 1989, AGRC was created (replacing AGR).  That change brought new priorities to the agency and at the top of the list was the completion of the SGID.  AGRC entered into a contract with the Governor’s Office of Planning and Budget for $80,000 to assist in the effort.  As a result, the first SGID infrastructure was completed in 1991.
+In 1989, AGRC was created (replacing AGR). That change brought with it new GIS-related priorities and at the top of the list was the completion of the SGID. AGRC entered into a contract with the Governor’s Office of Planning and Budget for $80,000 to assist in the effort. As a result, the first SGID infrastructure was completed in 1991.
 
 The SGID was further solidified in 1991 with the passage of [Senate Bill 21](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html).  Passing unanimously, this bill created the AGRC and the SGID in state statute and eliminated many uncertainties such as future funding for the database and AGRC’s responsibilities.
 
