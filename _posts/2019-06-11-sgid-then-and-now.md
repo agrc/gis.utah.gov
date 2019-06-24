@@ -56,7 +56,7 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 
 [![SGID Early 2000s]({{ "/images/SGID_early2000s_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}]({{ "/images/SGID_early2000s.png" | prepend: site.baseurl }})
 
-### Where is the SGID Now?
+### Where Is the SGID Now?
 {: .text-left}
 
 Technology and the use of GIS have come a long way since the inaugural SGID of 1991.   What hasn't changed, though, is the notion of a centralized repository for searching and fetching statewide GIS data.  Sure, file formats and how we access data has changed, but the need for open, readily-accessible GIS data remains the same.
