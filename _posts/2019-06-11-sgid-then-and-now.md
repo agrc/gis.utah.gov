@@ -87,7 +87,7 @@ Here are some current SGID stats showing top accessed data layers by platform:
   - SBI Operations (which includes: Law Enforcement Boundaries, City Courts, County Courts, State District Courts, and UHP Dispatch Zones) - 67,000
   -  Roads (minor and major roads combined stats) - 64,000
   -  County Boundaries - 47,000
-  -  Municipal Boundaries - (35,000)
+  -  Municipal Boundaries - 35,000
   -  Parcels - (28,000)
   -  Lakes - (26,000)
   -  Address Points - (17,000)
