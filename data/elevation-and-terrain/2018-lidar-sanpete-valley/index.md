@@ -10,7 +10,7 @@ author:
   email: rkelson@utah.gov
 published: true
 date: 2019-06-24 12:30:30
-title: 2018 Sanpete Valley County LiDAR Elevation Data
+title: 2018 Sanpete Valley LiDAR Elevation Data
 categories: []
 ---
 
