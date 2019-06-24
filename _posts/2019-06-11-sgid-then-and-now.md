@@ -37,7 +37,7 @@ The SGID has been in continuous operation since its completion in 1991 and has s
 Here are a few of the highlights that have brought the SGID to where it is now:
 
 - **SGID User's Guide - 7th Edition (1994)**
-  - This user guide was distributed in a three-ring binder. Data was then requested in the following available formats: ARC/INFO Coverages, USGS DLG, MOSS Export, and AutoCAD DXF. This guide also made note of an 'AGRC home page on the world wide web' which was to be debuting in November 1994.
+  - This user guide was distributed in a three-ring binder. Data was then requested in the following available formats: ARC/INFO Coverages, USGS DLG, MOSS Export, and AutoCAD DXF. This guide also makes note of an "AGRC home page on the world wide web," which was set to debut in November 1994.
 
 ![1994 SGID User Guide Binder]({{ "/images/SGID_1994_binders_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
