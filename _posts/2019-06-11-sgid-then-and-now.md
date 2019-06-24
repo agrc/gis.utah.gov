@@ -69,7 +69,7 @@ The [SGID index]({{ "/data/sgid-index/" | prepend: site.baseurl }}) and current 
 
 In order to meet the diverse needs of our users and applications, SGID data is served on a variety of platforms in a variety of formats, including direct database access, downloadable data, [ArcGIS Online](https://gis.utah.gov/data), an [open data portal](https://opendata.gis.utah.gov/), and API web services.
 
-Here are some current SGID stats, showing top accessed data layers by platform:
+Here are some current SGID stats showing top accessed data layers by platform:
 
 - **[AGRC Website](https://gis.utah.gov/data)** - Page-views from the past 12 months - rounded to the nearest one-hundred
   - Parcels - (30,900 page-views)
