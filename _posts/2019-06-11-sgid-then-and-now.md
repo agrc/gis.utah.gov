@@ -42,7 +42,7 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 ![1994 SGID User Guide Binder]({{ "/images/SGID_1994_binders_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
 - **The SGID on CD-ROM (1995)**
-  - In 1995, AGRC, ESRI, and Utah State University combined efforts and manufactured a CD-ROM containing SGID data and a built-in data viewer. To commemorate the milestone, we have made available the [original CD-ROM jacket](https://drive.google.com/open?id=17z_AYz68fa2ogToRIIBgX9rTprmA-U1b) as well as the [unaltered CD-ROM contents](https://drive.google.com/open?id=17h13sLMTe3k_g_WnhbphAI-dLPwp5odo).
+  - In 1995, AGRC, ESRI, and Utah State University combined forces and manufactured a CD-ROM containing SGID data and a built-in data viewer. To commemorate this milestone, we have made available the [original CD-ROM jacket](https://drive.google.com/open?id=17z_AYz68fa2ogToRIIBgX9rTprmA-U1b) as well as the [unaltered CD-ROM contents](https://drive.google.com/open?id=17h13sLMTe3k_g_WnhbphAI-dLPwp5odo).
 
 ![1995 SGID CD-ROM photo]({{ "/images/SGID_1995_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
