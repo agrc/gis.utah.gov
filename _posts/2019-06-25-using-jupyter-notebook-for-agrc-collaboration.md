@@ -9,7 +9,7 @@ categories:
 tags:
   - notebook
   - jupyter
-  - pyton
+  - python
 ---
 
 At AGRC we greatly value collaboration and sharing ideas. A terrific technology to support these values is [the Jupyter Notebook](https://jupyter.org/) project. 
