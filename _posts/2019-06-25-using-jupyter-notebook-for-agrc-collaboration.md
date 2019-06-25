@@ -6,6 +6,7 @@ author:
 date: 2019-06-25 21:29:10
 categories:
   - Featured
+  - Developer
 tags:
   - notebook
   - jupyter
