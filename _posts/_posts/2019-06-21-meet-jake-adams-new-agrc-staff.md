@@ -16,6 +16,8 @@ IT Analyst II
 
 ## (So what exactly do you do?)
 
+![Jacob Adams]({{ "/images/JacobAdams.jpg" | prepend: site.baseurl }}){: .inline-text-right .outline }
+
 I do a little bit of everything—I’m part developer, part data geek, part cartographer. I’ll be handling our Discover service for licensed aerial imagery and general basemaps and helping out with the data in the SGID.
 
 ## What’s your background?/How did you end up at AGRC? 
