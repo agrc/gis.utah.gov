@@ -1,5 +1,5 @@
 ---
-title: ' Where Will Population and Jobs Grow along the Wasatch Front?'
+title: 'Where Will Population and Jobs Grow along the Wasatch Front?'
 author:
   display_name: Bert Granberg
   email: bgranberg@wfrc.org
