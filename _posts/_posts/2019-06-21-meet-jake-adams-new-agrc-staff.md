@@ -1,5 +1,5 @@
 ---
-title: ' Meet Jake Adams - New AGRC Staff'
+title: 'Meet Jake Adams - New AGRC Staff'
 author:
   display_name: Jacob Adams
   email: jdadams@utah.gov
