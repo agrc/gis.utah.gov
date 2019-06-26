@@ -23,7 +23,7 @@ AGRC uses many different GIS technologies to get our work done. While proprietar
 
 The open Python notebook also uses [Google’s BigQuery GIS](https://cloud.google.com/bigquery/docs/gis-intro). While BigQuery is not technically open source, the BigQuery GIS functions do follow the PostGIS API, and you can query 1 TB of data for free every month. (Just for perspective, with 1 TB you could run the BigQuery cell in the notebook at least 7,500 times a month without providing a credit card.) Read [this Google blog post](https://cloud.google.com/blog/products/data-analytics/query-without-a-credit-card-introducing-bigquery-sandbox) to learn about setting up BigQuery.  
 
-Run this notebook yourself to see Utah’s broadband speeds at a random sample of address points.
+[Run this notebook](https://colab.research.google.com/drive/1J9ewT7qP8JDAuyYIuJVR-9K-l2phpcce) yourself to see Utah’s broadband speeds at a random sample of address points.
 
 ![Utah broadband speeds map]({{ "/images/MapAllLayers.png" | prepend: site.baseurl }})
 
