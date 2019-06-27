@@ -43,6 +43,12 @@ During 2015 and 2016 the U.S. Geological Survey and the U.S. Park Service acquir
   <li>
     <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/zion-np-2016/ZionNP_2015_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
   </li>
+  <li>
+      <i class="fa fa-download"></i> Download <a href="ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/USGS_LPC_UT_ZionNP_QL1_2016_LAS_2017/" target="_blank">shapefiles</a> QL1 Point Clouds from the USGS FTP site
+  </li>
+  <li>
+      <i class="fa fa-download"></i> Download <a href="ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/USGS_LPC_UT_ZionNP_QL2_2016_LAS_2017/" target="_blank">shapefiles</a> QL2 Point Clouds from the USGS FTP site
+  </li>
 </ul>
 
 The naming convention for the tiles are based off the [U.S. National Grid (USNG)](https://www.fgdc.gov/usng/how-to-read-usng/index_html).
