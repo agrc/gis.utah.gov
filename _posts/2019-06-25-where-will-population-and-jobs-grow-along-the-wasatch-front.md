@@ -13,7 +13,18 @@ tags:
   - wfrc
 ---
 
-Seven new GIS datasets are now available that provide annual projections, through 2050, of population and job densities for the Salt Lake - Provo - Ogden urban corridor extending from Santaquin north to Brigham City. Actually there are [14 datasets](http://data.wfrc.org/search?q=projections), as this data is available at two geographic levels:
+Seven new GIS datasets are now available that provide annual projections, through 2050, of population and job densities for the Salt Lake - Provo - Ogden urban corridor extending from Santaquin north to Brigham City. The projections datasets each present the annual forecasted counts for each year 2019 through 2050 for the following variables:
+
+- Population (excluding group quarters)
+- Household Count (excluding group quarters)
+- Total Jobs
+- Industrial Jobs
+- Office Jobs
+- Retail Jobs
+- Typical Jobs (a subtotal of jobs with typical travel & commuting patterns (sums Industrial, Office, & Retail Jobs) 
+- Nontypical Jobs (with non typical travel demand, sums agriculture, constructions, & mining jobs)
+
+Actually there are [14 datasets](http://data.wfrc.org/search?q=projections), as this data is available at two geographic levels:
 
   1. “City Areas” aggregations that closely reflect current city boundaries, and
   1. Traffic Analysis Zone polygons, which are much smaller.
