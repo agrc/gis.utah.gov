@@ -1,5 +1,5 @@
 ---
-title: 'Municipal Boundaries update for Second Quarter 2019 (calendar year)'
+title: 'Municipal Boundaries Update for Second Quarter 2019 (Calendar Year)'
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
@@ -13,15 +13,11 @@ tags:
   - cities
 ---
 
-At the halfway point in the year, or the beginning of the fiscal year, depending on your nature, things in the state are moving along. We have had an update from Census on population estimates for 2018 that have been included in the data for both the municipalities and counties. Check those out if you are interested.
+We are at the halfway point in the year, or the beginning of the fiscal year, depending on how you look at it, and things in Utah are moving along. The United States Census Bureau has updated the 2018 population estimates, and AGRC has included the updates in Utah's municipal and county data. Municipality updates can be viewed on the [ArcGIS Utah Municipality Modifications page](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63). You can also check out the [AGRC State, County, and Municipal Boundaries page]({{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}) to learn more about the City, County, and State Boundaries data layer.
 
-As always changes to town and city boundaries can affect other departments too, be sure to share your data with others. 
+As always, changes to town and city boundaries can affect other data layers, so if you are involved in municipal and county data, be sure to share your data with others. With the 2020 census coming up, AGRC is still pushing to get the State's data layers as perfect as we can, so we also encourage you to take a look at the State’s data and see whether we are missing anything, or if there is something strange, let us know.
 
-With the 2020 census coming up we are still pushing to get everything as perfect as we can so take a look at the state’s data and see if we are missing anything or if there is something strange, and let us know.
-
-Municipalities and updates can be viewed here: [Utah Municipality Modifications](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63)
-
-Following are the changes and annexations since Jan. 1, 2018,  listed by County and City:
+Following are the changes and annexations since January 1, 2018, listed by county and city:
 
 | County | City | Number of Changes |
 | --- | --- | --- |
