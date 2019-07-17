@@ -2,11 +2,11 @@
 layout: post
 status: publish
 published: true
-title: '2018 Utah LiDAR Acquisition Updated'
+title: '2018 Utah LiDAR Acquisition - Completed'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2018-05-17 18:17:41
+date: 2019-07-16 18:17:41
 update_date: 2018-09-11 14:17:41
 categories:
 - Featured
@@ -18,7 +18,7 @@ AGRC has awarded Aero-Graphics, Inc. (AGI) to acquire [*10,450 square miles*](ht
 
 The Federal Emergency Management Agency and the U.S. Geological Survey (USGS) National Map 3D Elevation Program (3DEP) are also acquiring [*4,690 square miles*](http://utah.maps.arcgis.com/home/webmap/viewer.html?webmap=579b517bd8d040969fc3418328c31f31 "view project areas in ArcGIS Online") of LiDAR Elevation data this year. The LiDAR will be a combination of USGS QL1, 8 points per square meter, and QL2, 2 points per square meter, depending on the area. The acquisitions have begun and will continue throughout the spring. The acquisitions and project deliverables are scheduled to be completed around the end of December 2018.
 
-UPDATE:
+UPDATE 9/11/2018:
 Three additional areas in Utah have been added to the 2018 project areas:
 
 - The Box Elder project (~2,238 square miles) covers areas of northern Box Elder County.
@@ -28,6 +28,14 @@ Three additional areas in Utah have been added to the 2018 project areas:
 All three project areas will be acquired as USGS QL1, 8 points per square meter. The acquisition of these areas will be completed in 2018, and project deliverables are scheduled to be completed by August 31, 2019. You are welcome to download the boundaries for all the project areas as a [geodatabase and shapefile](https://drive.google.com/a/utah.gov/uc?id=1BkO7aWhFARM-U--KGi4Wn3diNIx7kban&export=download).
 
 [![Project area map]({{"/images/2018UtahLidarAcquisition_8_30_18_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/2018UtahLidarAcquisition_8_30_18.png" | prepend:site.baseurl}}){:.inline-text-right}
+
+UPDATE 7/17/2019:
+With the exception of the Unitah Basin / Heber Valley project, managed through the USGS Geospatial Product and Service Contracts (GPSC), all other 2018 project areas are completed and available for download. The Unitah Basin / Heber Valley project should be completed and delivered soon. All other 2018 projects are available from [Raster.utah.gov](https://raster.utah.gov). Below are links to the individual web pages for each project.
+-	[Northern Utah] ({{"data/elevation-and-terrain/2018-lidar-northern-utah/ " | prepend:site.baseurl}})
+-	[Central Utah] ({{"data/elevation-and-terrain/2018-lidar-central-utah/ " | prepend:site.baseurl}})
+-	[Southern Utah] ({{"data/elevation-and-terrain/2018-lidar-southern-utah/ " | prepend:site.baseurl}}) (includes Brian Head Addition)
+-	[Sanpete Valley] ({{"data/elevation-and-terrain/2018-lidar-sanpete-valley/ " | prepend:site.baseurl}})
+-	[Box Elder] ({{"data/elevation-and-terrain/2018-lidar-box-elder/ " | prepend:site.baseurl}})
 
 ### The Project Areas
 {: .text-left }
