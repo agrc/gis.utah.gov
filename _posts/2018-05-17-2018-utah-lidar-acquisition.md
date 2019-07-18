@@ -36,11 +36,11 @@ All three project areas will be acquired as USGS QL1, 8 points per square meter.
 
 With the exception of the Unitah Basin / Heber Valley project, managed through the USGS Geospatial Product and Service Contracts (GPSC), all other 2018 project areas are completed and available for download. The Unitah Basin / Heber Valley project should be completed and delivered soon. All other 2018 projects are available from [Raster.utah.gov](https://raster.utah.gov). Below are links to the individual web pages for each project.
 
-- [Northern Utah]({{"data/elevation-and-terrain/2018-lidar-northern-utah/" | prepend:site.baseurl}})
-- [Central Utah]({{"data/elevation-and-terrain/2018-lidar-central-utah/" | prepend:site.baseurl}})
-- [Southern Utah]({{"data/elevation-and-terrain/2018-lidar-southern-utah/" | prepend:site.baseurl}}) (includes Brian Head Addition)
-- [Sanpete Valley]({{"data/elevation-and-terrain/2018-lidar-sanpete-valley/" | prepend:site.baseurl}})
-- [Box Elder]({{"data/elevation-and-terrain/2018-lidar-box-elder/" | prepend:site.baseurl}})
+- [Northern Utah]({{"/data/elevation-and-terrain/2018-lidar-northern-utah/" | prepend:site.baseurl}})
+- [Central Utah]({{"/data/elevation-and-terrain/2018-lidar-central-utah/" | prepend:site.baseurl}})
+- [Southern Utah]({{"/data/elevation-and-terrain/2018-lidar-southern-utah/" | prepend:site.baseurl}}) (includes Brian Head Addition)
+- [Sanpete Valley]({{"/data/elevation-and-terrain/2018-lidar-sanpete-valley/" | prepend:site.baseurl}})
+- [Box Elder]({{"/data/elevation-and-terrain/2018-lidar-box-elder/" | prepend:site.baseurl}})
 
 ### The Project Areas
 {: .text-left }
