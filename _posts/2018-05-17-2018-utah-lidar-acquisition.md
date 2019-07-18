@@ -6,8 +6,8 @@ title: '2018 Utah LiDAR Acquisition - Completed'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2019-07-16 18:17:41
-update_date: 2018-09-11 14:17:41
+date: 2018-05-17 18:17:41
+update_date: 2019-07-16 18:17:41
 categories:
 - Featured
 tags:
