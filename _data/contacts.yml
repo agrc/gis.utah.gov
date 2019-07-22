@@ -13,9 +13,9 @@ webapi:
   agency: AGRC
   email: SGourley@utah.gov
 geocoding_tools:
-  name: Keaton Walker
+  name: Scott Davis
   agency: AGRC
-  email: KWalker@utah.gov
+  email: STDavis@utah.gov
 locators:
   name: Greg Bunce
   agency: AGRC
