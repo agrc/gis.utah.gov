@@ -20,11 +20,12 @@ The imagery is hosted in Google's cloud and delivered as WMS and WTMS Open Geosp
 {: .text-left}
 
 - Utah state agencies
-- Utah National Guard
 - Cities, counties, and other political subdivisions of the state of Utah
 - Special districts (water, fire, etc) in the state of Utah
 - Utah K-12 schools and institutions of higher education, including students working on school projects
 - Tribal entities
+- Contractors and formal partners of an immediate licensee
+- Utah National Guard
 
 ### Who Doesn't Automatically Qualify?
 {: .text-left}
