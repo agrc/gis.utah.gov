@@ -18,8 +18,8 @@ categories:
 ---
 
 <p>
-    <a href="{{ "/images/LidarPlan_w_GoalMet_and2018.png" | prepend: site.baseurl }}" target="_blank" rel="noopener">
-        <img src="{{ "/images/LidarPlan_w_GoalMet_and2018_sm.png" | prepend: site.baseurl }}" alt="" title="LidarPlan" class="inline-text-left" />
+    <a href="{{ "/images/LidarPlan_w_GoalMet_and2020.png" | prepend: site.baseurl }}" target="_blank" rel="noopener">
+        <img src="{{ "/images/LidarPlan_w_GoalMet_and2020_sm.png" | prepend: site.baseurl }}" alt="" title="LidarPlan" class="inline-text-left" />
     </a>
     To aid the planning efforts for future Lidar acquisitions in Utah, AGRC and the Utah Department of Natural Resources have collaborated with various local, state, and federal entities to create the foundation for a Statewide Lidar Plan for Utah. The plan includes the <strong><a href="https://docs.google.com/a/utah.gov/document/d/1Z7QPeg9whuOnZP_Y_jOnkZrJsj6hVpqrp3vSkUJhEac/edit?usp=sharing">Lidar Plan strategy document</a></strong> and <strong><a href="{{ "/images/LidarPlan_w_GoalMet_and2018.png" | prepend: site.baseurl }}" target="_blank" rel="noopener">a map of statewide coverage priority and quality level specification goals</a></strong>.
 </p>
