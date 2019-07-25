@@ -57,4 +57,4 @@ The project partners include:
 - Bear Lake Watch
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}

@@ -56,7 +56,7 @@ Stated horizontal positional accuracy of the Google imagery is expected to achie
 
 {%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='send an email to' hide-punctuation=true %}{% endcapture %}
 
-Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({{"/using-agrcs-new-web-mercator-services-in-your-web-maps/" | prepend:site.baseurl}}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact | strip_newlines }} and provide your web map URL domains.
+Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({{"/using-agrcs-new-web-mercator-services-in-your-web-maps/" | prepend:site.baseurl}}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact }} and provide your web map URL domains.
 
 ### Adding a WMS Service to CAD
 {: .text-left}
@@ -72,13 +72,13 @@ Take a look at this blog post for information about [Printing Web Maps with Disc
 ### Google Archive Services
 {: .text-left}
 
-<i class="fas fa-fw fa-lock"></i> 
+<i class="fas fa-fw fa-lock"></i>
 In addition to the statewide `Google` imagery service layer, there are archive layers available (ex. `Google 2011archive`) of the Google imagery organized by year collected.
 
 ### Google Flight Dates
 {: .text-left}
 
-<i class="fas fa-fw fa-lock"></i> 
+<i class="fas fa-fw fa-lock"></i>
 The [dates of each Google imagery flight](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_UtahServiceDates/_Statewide/) block can be downloaded from our ftp site as a shapefile, viewed in [ArcGIS Online](https://arcg.is/1E0wq3b), or utilized through the `SGID10.INDICES.Google_UtahServiceDates` SGID layer.
 
 ### Pro/ArcMap User Considerations
@@ -86,7 +86,7 @@ The [dates of each Google imagery flight](ftp://ftp.agrc.utah.gov/UtahSGID_Vecto
 
 {%capture contact2 %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='please contact' %}{% endcapture %}
 
-Legacy username/password users: If you have not yet received quad-word links to the service (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) that do not require a username and password, {{ contact2 | strip_newlines }}
+Legacy username/password users: If you have not yet received quad-word links to the service (ex. `https://discover.agrc.utah.gov/login/path/your-unique-quad-word/`) that do not require a username and password, {{ contact2 }}
 
 Users experiencing problems with the service, such as blurry tiles or different year vintages at different scales, may need to clear their local cache:
 
@@ -117,12 +117,13 @@ Our license with Google requires you to put the appropriate logo on any products
 
 {%capture contact3 %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='Please provide the following information to' hide-punctuation=true %}{% endcapture %}
 
-You may request a local copy of the NAIP, HRO, and Google imagery for off-line consumption when the provided imagery service does not meet your needs. {{ contact3 | strip_newlines }} for consideration:
-  -	Name & organization:
-  - Reason for request:
-  - Working on behalf of:
-  - Project names:
-  - Project locations:
+You may request a local copy of the NAIP, HRO, and Google imagery for off-line consumption when the provided imagery service does not meet your needs. {{ contact3 }} for consideration:
+
+- Name & organization:
+- Reason for request:
+- Working on behalf of:
+- Project names:
+- Project locations:
 
 ### Other Tidbits
 {: .text-left}

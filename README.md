@@ -101,7 +101,7 @@ The include has a few properties:
 - markdown
 ```liquid
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}
 ```
 - html
 ```liquid

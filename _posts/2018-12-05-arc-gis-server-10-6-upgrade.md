@@ -17,11 +17,11 @@ AGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 w
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If you notice any issues after the upgrade or have any questions about the brownout, please let" hide-punctuation=true%}{% endcapture %}
 
-In preparation for the ArcGIS Server upgrade and the necessary image service migration, AGRC is planning a brownout of the image services from **Saturday, January 5, through Thursday, January 10**. On Saturday, January 5, AGRC will **temporarily** brownout (i.e., stop) all of the image services on mapserv to simulate the future deprecation. The image services will then be started up again on the evening of January 10 to avoid further downtime for those not fully migrated. 
+In preparation for the ArcGIS Server upgrade and the necessary image service migration, AGRC is planning a brownout of the image services from **Saturday, January 5, through Thursday, January 10**. On Saturday, January 5, AGRC will **temporarily** brownout (i.e., stop) all of the image services on mapserv to simulate the future deprecation. The image services will then be started up again on the evening of January 10 to avoid further downtime for those not fully migrated.
 
 The brownout plan reference number in the Utah Change Management System is `CHG0019078`.
 
-AGRC hopes that after reading this article, users of image services will draft and execute migration plans in preparation for the future deprecation. Then in January users can test for a successful migration during the brownout and learn whether more migration steps are required. **Please note that the image services are not being deprecated during the brownout** but will be deprecated when the entire system is upgraded. We will post the exact date of the entire system upgrade as soon as we finalize our plans. {{ contact | strip_newlines }} know so that we can address them as soon as possible.
+AGRC hopes that after reading this article, users of image services will draft and execute migration plans in preparation for the future deprecation. Then in January users can test for a successful migration during the brownout and learn whether more migration steps are required. **Please note that the image services are not being deprecated during the brownout** but will be deprecated when the entire system is upgraded. We will post the exact date of the entire system upgrade as soon as we finalize our plans. {{ contact }} know so that we can address them as soon as possible.
 
 ## Migration Options
 {: .text-left style="margin-bottom:0px"}

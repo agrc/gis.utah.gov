@@ -28,4 +28,4 @@ To connect, use the following connection properties:
 You will notice a significant difference in performance between ArcGIS Pro and ArcMap when accessing the database. When making the initial connection, ArcGIS Pro is about three times faster than ArcMap; however, ArcMap is faster than Pro when a layer is added and is first drawn. Go figure . . .
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.sgid %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}

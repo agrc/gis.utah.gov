@@ -45,7 +45,7 @@ We’ve got more work to complete under Phase 1, but Phase 2 blueprints are star
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc hide-punctuation=true text='feedback' %}{% endcapture %}
 
-As always, we welcome and appreciate your {{ contact | strip_newlines }} on the gis.utah.gov site.
+As always, we welcome and appreciate your {{ contact }} on the gis.utah.gov site.
 
 ![Teamwork Cake for AGRC Website]({{ "/images/teamwork.png" | prepend: site.baseurl }})
 {: .text-right}

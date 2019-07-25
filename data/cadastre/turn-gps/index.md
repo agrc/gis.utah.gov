@@ -76,7 +76,7 @@ MS_CMR, MS_CMRP these are for connecting to single base when you are on the edge
 
 {% capture turn %}{% include contact.html subject=page.title contact=site.data.contacts.turn  %}{% endcapture %}
 ##### Contacts
-{{ turn | strip_newlines }}
+{{ turn }}
 
 ##### Related Resources
 

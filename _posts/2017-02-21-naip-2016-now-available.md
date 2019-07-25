@@ -19,4 +19,4 @@ two separate services on Discover, _NAIP 2016 RGB_ and _NAIP 2016 NRG_.
 {:.inline-text-right}
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.imagery %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}

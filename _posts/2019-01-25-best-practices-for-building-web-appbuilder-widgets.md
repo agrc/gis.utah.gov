@@ -44,4 +44,4 @@ Through working on this project, I feel like I now have a much better understand
   subject=page.title
   contact=site.data.contacts.wab
   text="Let me know if you have anything to add to them:"
-%}{% endcapture %} {{ contact | strip_newlines }}
+%}{% endcapture %} {{ contact }}

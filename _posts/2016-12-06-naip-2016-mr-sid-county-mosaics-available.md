@@ -20,4 +20,4 @@ now available</a>. The imagery is currently only available as 3-band RGB Mr. Sid
 </ul>
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.imagery %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}

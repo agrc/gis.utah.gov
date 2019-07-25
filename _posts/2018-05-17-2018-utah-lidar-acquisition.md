@@ -89,4 +89,4 @@ With the exception of the Unitah Basin / Heber Valley project, managed through t
 - Mohave County, AZ
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}

@@ -31,9 +31,9 @@ The decision to participate in the LUCA review is made by your highest elected o
 
 AGRC, on behalf of the Census Bureau and in partnership with the Governor's Office of Management and Budget, has scheduled Utah's LUCA training session for:
 
-  Thursday, November 2nd, from 1pm - 5pm  
-  195 North 1950 West, Salt Lake City  
-  MASOB Building, Room 1019 A/B  
+  Thursday, November 2nd, from 1pm - 5pm
+  195 North 1950 West, Salt Lake City
+  MASOB Building, Room 1019 A/B
 
 Please **[RVSP for the Nov. 2nd training](https://docs.google.com/forms/d/e/1FAIpQLSczYHcjdbW33f-8VpnevDEq9rOL4V18astz6uU74VAUpXJFZg/viewform?usp=sf_link)**.
 {: .pop .text-center }
@@ -51,4 +51,4 @@ rural delivery route addresses, and communities with PO Box only mail delivery.
 The LUCA process will push us all to create/refine Utah address data resources. We'll also discuss how this work can best be organized to support the Census process but also meet similar data requirements for emergency response and other vital service needs, while complying with the strict legal restrictions for handling the input address data received from Census.
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.luca_liaison %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}

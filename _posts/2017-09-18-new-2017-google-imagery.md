@@ -24,7 +24,7 @@ If you have not signed up for access to the Google imagery visit the [Discover -
 [![Google update]({{"/images/2017UpdatedAreas.png" | prepend:site.baseurl}} "2017 Google Imagery updates - click for larger image")]({{"/images/New2017_Google.png" | prepend:site.baseurl}}){:.inline-text-right}
 
 {% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
-{{ license | strip_newlines }}
+{{ license }}
 
 #### Don't see the updated imagery?
 

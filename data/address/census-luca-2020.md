@@ -56,9 +56,9 @@ _Other_: In addition to the LUCA program, Census will operate a new construction
 {% capture trainer %}{% include contact.html subject=page.title contact=site.data.contacts.luca_trainer hide-punctuation=true text=' ' %}{% endcapture %}
 ### Contacts And Coordination
 {: .text-left }
-- State LUCA Liaison: {{ liaison | strip_newlines }}
+- State LUCA Liaison: {{ liaison }}
 - [Utah City and County LUCA participants](https://docs.google.com/a/utah.gov/spreadsheets/d/1uhPiDjofUyz9C4PKXkV-5i0Uyawfd1ozu_y2uffwsR0/edit?usp=sharing) (Final, as of Jan 04, 2018).
-- Census LUCA Trainer: {{ trainer | strip_newlines }}
+- Census LUCA Trainer: {{ trainer }}
 
 ### Prepping for LUCA Review
 {: .text-left }
@@ -94,7 +94,7 @@ And, for these reasons, you should design your process to improve your local add
 - State-level address lists. _TBD_ AGRC plans to contact state agency programs with address lists that may be valuable to the LUCA process, to explore data sharing. Potential data partners may include the Driver's License, Motor Vehicle Registration, and the Tax Commission. Ensuring confidentiality is expected to be critical in any use of these address resources.
 - [Utah-specific Address Geocoding Tools Webpage]({{ "/data/address-geocoders-locators/" | prepend: site.baseurl }}) allow users to geocode against Utah road centerlines or address points. ([Web API](https://api.mapserv.utah.gov), [ArcMap Add-in]({{ "/data/address-geocoders-locators/#GeocodingToolbox" | prepend: site.baseurl }}), [Google Sheets](https://chrome.google.com/webstore/detail/utah-address-locator/nepmlneiknaeojhadbeodpaefenhjkek?utm_source=permalink) and coming soon, a QGIS add-in that can be used within GUPS).
 - The LUCA data that will be provided to participants will reflect municipal and county boundaries that AGRC submitted to Census BAS boundary survey in spring of 2017. For this reason, addresses within annexations that took place after the AGRC's BAS submission will not appear in the address lists that cities receive.
-- AGRC will, periodically in the build up to the 2020 census, be providing Census with Utah's official municipal boundaries. All annexations of cities and counties that are certified by the Lt. Governor are kept in the [SGID.Boundaries.Municipalities layer]({{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}). AGRC extends an open invitation to review these boundaries for accuracy at anytime. {% capture boundaries %}{% include contact.html subject=page.title contact=site.data.contacts.boundaries %}{% endcapture %}{{ boundaries | strip_newlines }}
+- AGRC will, periodically in the build up to the 2020 census, be providing Census with Utah's official municipal boundaries. All annexations of cities and counties that are certified by the Lt. Governor are kept in the [SGID.Boundaries.Municipalities layer]({{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}). AGRC extends an open invitation to review these boundaries for accuracy at anytime. {% capture boundaries %}{% include contact.html subject=page.title contact=site.data.contacts.boundaries %}{% endcapture %}{{ boundaries }}
 
 ### Reference Materials
 {: .text-left }

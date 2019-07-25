@@ -22,7 +22,9 @@ Now if you're not familiar with this topic, all these acronyms might sound like 
 
 ### Standards and Best Practices
 {: .text-left}
+
 `Required Datasets`
+
 - Service area boundaries
   - PSAP boundaries
   - Emergency service boundaries (e.g., law, fire, and EMS)
@@ -34,6 +36,7 @@ Now if you're not familiar with this topic, all these acronyms might sound like 
   For further reading see [section 3 of ref 3 and section 4.2 of ref 5](#further-reading).
 
 `Data Requirements`
+
 - Prior to NG911 implementation, civic location data must be matched and reconciled against the MSAG and ALI.
   - The GIS data should contain all valid ALI/MSAG records [(section 2.2.1 of ref 4; ref 8)](#further-reading).
 - The required GIS datasets must adhere to NENA NG911 Data Model specifications, including: projection, field names, data types, domains, etc. [(ref 3)](#further-reading).
@@ -51,15 +54,17 @@ For further reading see [(reference 3, 4, 5, 7, 8, 9, 10)](#further-reading)
 {: .text-left}
 
 <abbr title="Utah Communications Authority">UCA</abbr> `911 Division` in conjunction with `AGRC` will:
+
 - Provide Utah's statewide [NG911 GIS database](/data/911);
 - Aggregate and validate 911 data (perform QA/QC before providing data to the State's NG911 Core Services service provider);
 - Ensure that required GIS datasets adhere to NENA NG911 Data Model specifications;
   - AGRC will look for discrepancies and inconsistencies in the aggregated statewide [NG911 GIS Database](/data/911) and report discrepancies back to the data providers [section 5.4.3 of ref 5)](#further-reading); and
 - Be the authoritative source for PSAP boundaries utilized by NG911 Core Services (ECRF/LVF) [(section 3.5 of ref 3)](#further-reading).
 
-  For further reading see [section 4.7 of ref 1, sections 4.1 and 5.2.4 of ref 5, section 3 of ref 3, and section 2.2.3 of ref 10](#further-reading):
+For further reading see [section 4.7 of ref 1, sections 4.1 and 5.2.4 of ref 5, section 3 of ref 3, and section 2.2.3 of ref 10](#further-reading):
 
 `Authoritative Data Providers` will:
+
 - Coordinate and collaborate with the <abbr title="Utah Communications Authority">UCA</abbr> 911 Division, AGRC, and neighboring agencies (PSAPs);
 - Create, maintain, and provide required GIS datasets (within their provisioning boundary) for NG911 Core Services (ECRF/LVF):
   - Service area boundaries, and
@@ -71,12 +76,14 @@ For further reading see [(reference 3, 4, 5, 7, 8, 9, 10)](#further-reading)
     - Ensure that there are no unintended gaps or overlaps; and
 - Perform regular QA/QC on required datasets.
 
-  For further reading see [section 4.7 of ref 1, section 5.2.1 of ref 5, and section 2.2.3 of ref 4](#further-reading):
+For further reading see [section 4.7 of ref 1, section 5.2.1 of ref 5, and section 2.2.3 of ref 4](#further-reading):
 
 ## NG911 GIS Roadmap
 {: .text-left}
+
 #### `Near-Term`
 {: .text-left}
+
 <span class="fa-2x" title="Near-Term">
   <i class="fas fa-chevron-circle-right highlight fa-fw"></i><i class="fas fa-chevron-circle-right grey fa-fw"></i><i class="fas fa-chevron-circle-right grey fa-fw"></i>
 </span>
@@ -90,26 +97,29 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 ##### Address Component Cross-Check
 {: #cross-check .text-left}
+
 - NG911 Core Services state that site/structure address points and road centerlines must be consistent. In other words: unless intended, each site/structure address point should match an associated road centerline. This supports the requirement that a civic address be considered valid if it can be located within the database uniquely [(section 4.8 of ref 1)](#further-reading). Here are some common mismatch issues AGRC has found:
-	- Address components don’t match, including mismatching in the following address component fields: pre-direction, street name, post type, and post direction.
-		- To resolve: Data providers must determine which dataset (i.e., site/structure address points or road centerlines) has the correct address component and then correct the issue.
-	- Site/structure address points cannot find corresponding road centerlines. Often this is because the road has the alias and primary names switched or the road segment has not been put into GIS yet.
+  - Address components don’t match, including mismatching in the following address component fields: pre-direction, street name, post type, and post direction.
+    - To resolve: Data providers must determine which dataset (i.e., site/structure address points or road centerlines) has the correct address component and then correct the issue.
+  - Site/structure address points cannot find corresponding road centerlines. Often this is because the road has the alias and primary names switched or the road segment has not been put into GIS yet.
     - To resolve: Data provider needs to determine the official primary street name and adjust dataset fields as needed.
-	- Road centerline address range does not accommodate the address point.
-		- To resolve: Typically, the road centerline address ranges need to be adjusted.
-* AGRC will work with data providers to resolve any unintended discrepancies (see the [What can you do now?](#do-now) section below).
+  - Road centerline address range does not accommodate the address point.
+    - To resolve: Typically, the road centerline address ranges need to be adjusted.
+- AGRC will work with data providers to resolve any unintended discrepancies (see the [What can you do now?](#do-now) section below).
 
 
 #### `Mid-Term`
 {: .text-left}
+
 <span class="fa-2x" title="Mid-Term">
   <i class="fas fa-chevron-circle-right highlight fa-fw"></i><i class="fas fa-chevron-circle-right highlight fa-fw"></i><i class="fas fa-chevron-circle-right fa-fw grey"></i>
 </span>
+
 - Identify and resolve any gaps and/or overlaps in the emergency service boundaries (e.g., law, fire, and EMS).
 - Resolve address range overlap in road centerlines.
 - Resolve duplicate records in site/structure address points.
 - Break/split all road centerline segments at PSAP and jurisdiction boundaries. This will ensure that road segments contain the proper spatial-boundary values.
-	- Fields corresponding to polygon boundaries will need to be updated as well.
+  - Fields corresponding to polygon boundaries will need to be updated as well.
 - Ensure the current PSAP boundaries are official and that each PSAP has signed off on them. It is essential that these boundaries are correct, as they will be used to route 911 calls.
   - Identify and resolve any gaps and/or overlaps in the PSAP boundaries.
 - Establish a statewide, multi-user mechanism that supports _near-live_ NG911 data editing in Utah. This would allow data providers (e.g., cities, counties, PSAPs, etc.) to quickly resolve conflicts and/or unintended discrepancies, allowing them to directly edit 911 GIS data [(section 4.7 of ref 1)](#further-reading).
@@ -117,9 +127,11 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 #### `Long-Term`
 {: .text-left}
+
 <span class="highlight fa-2x" title="Long-Term">
   <i class="fas fa-chevron-circle-right fa-fw"></i><i class="fas fa-chevron-circle-right fa-fw"></i><i class="fas fa-chevron-circle-right fa-fw"></i>
 </span>
+
 - Get all 911-related data providers the needed training and access to the statewide NG911 multi-user data editing platform/application.
 - Incorporate a workflow to review these edits (from the NG911 multi-user data editing platform) and push them into the official State of Utah NG911 database (on a daily basis).
 - Establish the NG911 multi-user data editing platform as Utah’s official NG911 data editor [(section 5.1 of ref 5 and section 4.7 of ref 1)](#further-reading).
@@ -135,25 +147,28 @@ At the moment, the most effective thing you can do is to resolve unintended disc
 It's also in your best interest to view the current draft version of Utah's statewide [NG911 GIS database](/data/911). In particular, it is highly recommended that you validate your jurisdiction's PSAP, fire, law, and/or EMS boundaries, ensuring that they are correctly represented. AGRC will continue to push monthly updates and modifications into this database in hope that 911 data providers will view the data and help us resolve unintended discrepancies.
 
 Keep in mind:
+
 1. NG911 implementation won't happen overnight: there will be a hybrid GIS/MSAG (GeoMSAG) approach at first.
 1. Provisioning data for NG911 Core Services (ECRF/LVF) is an ongoing process [(section 1 of ref 5)](#further-reading).
 1. We should all be [working together](#graphic), toward the same end goal of public safety.
 
 {% capture contact %}{% include contact.html text="Be proactive and get involved now.  For more information contact " subject=page.title contact=site.data.contacts.roads %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}
 
 ## Recommended Reading and References
 {: #further-reading .text-left}
+
 The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](http://uca911.org/911-division) and [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) are two valuable sources for further reading on NG911. Below are a few recommended starting points for learning more about NG911 and how it affects us as GIS professionals. (These sources are in no specific order; the numbering is related to the references previously listed throughout this article.)
-1.  [UCA: Phase II of UCA's Strategic Plan](http://uca911.org/911-division/911-division-documents)
-1.  [911 Terminology Master Glossary](https://www.nena.org/page/Glossary)
-1.  [NENA: NG911 GIS Data Model (NENA-STA-006.1-2018)](https://www.nena.org/page/NG911GISDataModel)
-1.  [NENA: Information Document for GIS Data Stewardship for Next Generation 911 (in final review now) (NENA-INF-028.1.2018)](https://www.nena.org/page/GIS_DataStewardship)
-1.  [NENA: Standards for the Provisioning and Maintenance of GIS data to ECRF and LVFs (NENA‑STA‑005.1‑2017)](https://www.nena.org/page/ProvGISECRFLVF)
-1.  [NENA: Next Generation 9-1-1 Data Management Requirements (NENA-REQ-002.1-2016)](https://www.nena.org/page/NGDataMgmt)
-1.  [NENA: Development of Site/Structure Address Point GIS Data for 9-1-1 (NENA-INF-014.1-2015)](https://www.nena.org/page/SSAP)
-1.  [NENA: Synchronizing GIS with MSAG & ALI (71-501 v1)](https://www.nena.org/general/custom.asp?page=synch_gis_msag_ali)
-1.  [NENA: Detailed Functional and Interface Standards for the NENA i3 Solution (NENA-STA-010.2-2016)](https://www.nena.org/page/i3_Stage3)
+
+1. [UCA: Phase II of UCA's Strategic Plan](http://uca911.org/911-division/911-division-documents)
+1. [911 Terminology Master Glossary](https://www.nena.org/page/Glossary)
+1. [NENA: NG911 GIS Data Model (NENA-STA-006.1-2018)](https://www.nena.org/page/NG911GISDataModel)
+1. [NENA: Information Document for GIS Data Stewardship for Next Generation 911 (in final review now) (NENA-INF-028.1.2018)](https://www.nena.org/page/GIS_DataStewardship)
+1. [NENA: Standards for the Provisioning and Maintenance of GIS data to ECRF and LVFs (NENA‑STA‑005.1‑2017)](https://www.nena.org/page/ProvGISECRFLVF)
+1. [NENA: Next Generation 9-1-1 Data Management Requirements (NENA-REQ-002.1-2016)](https://www.nena.org/page/NGDataMgmt)
+1. [NENA: Development of Site/Structure Address Point GIS Data for 9-1-1 (NENA-INF-014.1-2015)](https://www.nena.org/page/SSAP)
+1. [NENA: Synchronizing GIS with MSAG & ALI (71-501 v1)](https://www.nena.org/general/custom.asp?page=synch_gis_msag_ali)
+1. [NENA: Detailed Functional and Interface Standards for the NENA i3 Solution (NENA-STA-010.2-2016)](https://www.nena.org/page/i3_Stage3)
 1. [NENA: NG9-1-1 Transition Planning Considerations (NG911NENA-INF-008.2.2013)](https://www.nena.org/page/NG911_TransitionPlng)
 
 ![NG911 Data Workflow]({{ "/images/ng911_data_workflow.png" | prepend: site.baseurl }}){: #graphic .flex .flex--center}

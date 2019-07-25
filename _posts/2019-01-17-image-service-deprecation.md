@@ -16,6 +16,6 @@ With the brownout behind us, AGRC has chosen the date of **Thursday, February 14
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If more time is needed for your migration, please let" hide-punctuation=true%}{% endcapture %}
 
-We hope this deprecation does not surprise anyone. {{ contact | strip_newlines }} know so we can so we can make other arrangements as soon as possible.
+We hope this deprecation does not surprise anyone. {{ contact }} know so we can so we can make other arrangements as soon as possible.
 
 As always, please sign up for our newsletter (via the "Subscribe to our mailing list" form below), subscribe to our RSS feed, and follow us on twitter (@MapUtah) to stay informed about AGRC services and news.

@@ -12,7 +12,7 @@ tags:
   - best practices
 ---
 
-Those of us working in GIS know that it's really powerful and that it's utilized in just about every industry. If you aren’t yet a true believer, you should check out this impressive [list of uses](https://gisgeography.com/gis-applications-uses/).  
+Those of us working in GIS know that it's really powerful and that it's utilized in just about every industry. If you aren’t yet a true believer, you should check out this impressive [list of uses](https://gisgeography.com/gis-applications-uses/).
 
 GIS technology is continually evolving and is now embedded into so many aspects of modern life. As the saying goes, "technology advances us," right? That’s the story we continually tell ourselves, and I won't argue against it. But what if there is some truth in the reverse approach? What if technology can teach us something about being human?
 
@@ -22,24 +22,24 @@ Here are seven common GIS concepts and what we can learn from them.
 
 ![GIS Wisdom]({{ "/images/gis_wisdom.png" | prepend: site.baseurl }}){: .flex .flex--center style="width: 100%; max-width: 350px"}
 
-### 1. Versioning 
+### 1. Versioning
 {: .text-left}
 
 `resolving conflicts`
 
-Look no further than the versioning workflow to learn how to successfully resolve conflicts. Honestly, GIS has this one figured out.  Here's how it works. 
+Look no further than the versioning workflow to learn how to successfully resolve conflicts. Honestly, GIS has this one figured out.  Here's how it works.
 
-In the versioning workflow, each editor creates and checks out their own unique version of the data. This allows for multiple editors to be editing the data at the same time. Without versioning, we would encounter frequent data locks and unintended overwrites.  
+In the versioning workflow, each editor creates and checks out their own unique version of the data. This allows for multiple editors to be editing the data at the same time. Without versioning, we would encounter frequent data locks and unintended overwrites.
 
-In the versioning workflow, an editor eventually needs to validate their version's edits and push (aka: post) them to the parent version so other editors can see and incorporate them. This is called *reconcile and post*.  It is during this process that we may encounter data conflicts. 
+In the versioning workflow, an editor eventually needs to validate their version's edits and push (aka: post) them to the parent version so other editors can see and incorporate them. This is called *reconcile and post*.  It is during this process that we may encounter data conflicts.
 
-When an editor reconciles, the editor fetches what's new from the parent version and resolves any differences with it. It is only after an editor has resolved the differences that the editor can then post their edits to the parent version. Once an editor posts, their version is then safely validated and checked in. At that point, everyone has an agreed-upon baseline for the data on which we can safely begin editing again. 
+When an editor reconciles, the editor fetches what's new from the parent version and resolves any differences with it. It is only after an editor has resolved the differences that the editor can then post their edits to the parent version. Once an editor posts, their version is then safely validated and checked in. At that point, everyone has an agreed-upon baseline for the data on which we can safely begin editing again.
 
 It's not hard to imagine how we can incorporate some of these concepts into life. Think of how similar a version is to one's worldview. We often want to validate our views, so we engage in dialogue with others. Inevitably conflicts arise. Ideally, we should first attempt to fully understand the other viewpoint and then proceed with explaining our own. It is from there that we can work out our differences, or kindly "agree to disagree." Understanding both viewpoints can help us establish grounds to move forward on.
 
 Learn more about the [ArcGIS versioning process](http://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/the-version-editing-process.htm).
 
-### 2. Networks 
+### 2. Networks
 {: .text-left}
 
 `networking`
@@ -50,12 +50,12 @@ Likewise, building a personal network helps us determine who and what we allow o
 
 Learn more about [creating ArcGIS network datasets](http://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/creating-a-network-dataset.htm) and [how connectivity works](http://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/understanding-connectivity.htm).
 
-### 3. Extract, Translate, and Load (ETL) 
+### 3. Extract, Translate, and Load (ETL)
 {: .text-left}
 
 `being adaptable`
 
-You may have heard the phrase "build once, use many." When building data, we say this when we want the output to be adaptable and used for many purposes. Take road centerlines for example. This dataset should be designed with many uses in mind (such as routing, mapping, locating, asset management, etc.). With a simple "extract, translate, and load" (ETL), the data should meet the needs of many users.  
+You may have heard the phrase "build once, use many." When building data, we say this when we want the output to be adaptable and used for many purposes. Take road centerlines for example. This dataset should be designed with many uses in mind (such as routing, mapping, locating, asset management, etc.). With a simple "extract, translate, and load" (ETL), the data should meet the needs of many users.
 
 We should learn to be adaptable as well. Life is not stagnant, and the ability to change and adapt is beneficial. Having a single use in mind has the potential to put us back at the drawing board, building again.
 
@@ -68,7 +68,7 @@ Learn more about [creating your own spatial ETL tools](http://desktop.arcgis.com
 
 Ideally, as GIS folks, we're all supporting or contributing to open data in some way---in other words, advancing freely available data.  This philosophy promotes transparency, innovation, and efficiency. Data gets better the more it's used, and open data gets used.
 
-On the human side, the more we share, the more we learn. And when we share, we not only advance everyone's overall knowledge base, we also advance our own. Ideas grow when they are open and shared.  
+On the human side, the more we share, the more we learn. And when we share, we not only advance everyone's overall knowledge base, we also advance our own. Ideas grow when they are open and shared.
 
 Explore some of the [existing GIS open data](http://hub.arcgis.com/pages/open-data) or consider contributing to the [Open Street Maps project](https://www.openstreetmap.org/about).
 
@@ -77,7 +77,7 @@ Explore some of the [existing GIS open data](http://hub.arcgis.com/pages/open-da
 
 `refinement`
 
-The best datasets have lots of edits and editors. They are continually being reviewed and refined. Think of multi-editing environments or Open Street Maps. These datasets are so vast and valuable because they are "live" and diverse; everyone is bringing something unique to the product, which is difficult to produce with a small group of editors. It's the refinement process that makes the datasets more valuable. 
+The best datasets have lots of edits and editors. They are continually being reviewed and refined. Think of multi-editing environments or Open Street Maps. These datasets are so vast and valuable because they are "live" and diverse; everyone is bringing something unique to the product, which is difficult to produce with a small group of editors. It's the refinement process that makes the datasets more valuable.
 
 We too can continually refine through learning and sharing and practice and performance. In turn, this advances our skills and adds to our value.
 
@@ -88,11 +88,11 @@ Brush up on some [essential editing vocabulary](http://desktop.arcgis.com/en/arc
 
 `consistency`
 
-Domains are set up in a database to establish known consistency. They provide quality assurance on the front end while ensuring consistency on the back end. What makes domains so great is that they ensure that an end user can reliably expect certain values or results. Developers and cartographers especially benefit from this consistency. 
+Domains are set up in a database to establish known consistency. They provide quality assurance on the front end while ensuring consistency on the back end. What makes domains so great is that they ensure that an end user can reliably expect certain values or results. Developers and cartographers especially benefit from this consistency.
 
-Consistency in life, like the consistency in domains, can lead to reliable and expected results in human performance as well. Think of athletes or musicians. It's their consistency (and consequently, their establishment of muscle memory) that makes them the best, most reliable, and most successful. Sure, repetition plays a role, but without pre-established methods (i.e., domains) the results vary.   
+Consistency in life, like the consistency in domains, can lead to reliable and expected results in human performance as well. Think of athletes or musicians. It's their consistency (and consequently, their establishment of muscle memory) that makes them the best, most reliable, and most successful. Sure, repetition plays a role, but without pre-established methods (i.e., domains) the results vary.
 
-Learn more about [attribute domains](https://pro.arcgis.com/en/pro-app/help/data/geodatabases/overview/an-overview-of-attribute-domains.htm) and why they are so important. 
+Learn more about [attribute domains](https://pro.arcgis.com/en/pro-app/help/data/geodatabases/overview/an-overview-of-attribute-domains.htm) and why they are so important.
 
 ### 7. Topology
 {: .text-left}
@@ -109,7 +109,7 @@ Learn the [basics of topology](https://pro.arcgis.com/en/pro-app/help/data/topol
 
 <br/>
 {% capture contact %}{% include contact.html text="Drop me an email if you can think of other forms of GIS wisdom. I'll start a running list and post them below. My contact info is " subject=page.title contact=site.data.contacts.roads %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}
 
 Thanks for contributing!
 

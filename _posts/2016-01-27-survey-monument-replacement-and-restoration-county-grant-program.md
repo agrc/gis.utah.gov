@@ -20,4 +20,4 @@ A county wishing to submit an application to the Committee that meets the follow
 Supporting documents, including the grant application, are available [here](https://drive.google.com/open?id=0BxZfA5vHEKqzUGozazR5bFNPRU0">).
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.surveyor %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}

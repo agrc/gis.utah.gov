@@ -39,4 +39,4 @@ The service additions and changes are listed below. We also renamed most of the 
 More information about the services from Discover can be found on the page [Using SGID Base Map & Imagery Services in ArcMap]({{"/data/sgid-base-map-services-arcmap/" | prepend:site.baseurl}}).
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.discover %}{% endcapture %}
-{{ contact | strip_newlines }}
+{{ contact }}

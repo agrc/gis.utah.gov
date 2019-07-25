@@ -22,7 +22,7 @@ AGRC also built a "quick and dirty" interface to speed up the manual review and 
 To access the data, visit the [trails data page]({{ "/data/recreation/trails/" | prepend: site.baseurl }}), or [interactive map](https://utah.maps.arcgis.com/apps/SimpleViewer/index.html?appid=f3337951e0034ebb889ecebcb3a45f39).
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.trails text='to' %}{% endcapture %}
-AGRC will gladly integrate additional trails data that can be provided in a digital map format. Please send contributions {{ contact | strip_newlines }}
+AGRC will gladly integrate additional trails data that can be provided in a digital map format. Please send contributions {{ contact }}
 
 _Statewide trails_
 ![Statewide Trails Data]({{ "/images/StatewideTrails.png" | prepend: site.baseurl }})
