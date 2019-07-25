@@ -11,21 +11,12 @@ title: 2016 Bear Lake, Bear River, Cache Valley, and Upper Weber Valley LiDAR El
 categories: []
 ---
 
-<style type="text/css">
-#logo {
-  max-width: 400px;
-  margin: 0 auto;
-}
-</style>
-<div id="logo">
-  <img src="{{ "/images/lidar_blbrcvuwv.PNG" | prepend: site.baseurl }}" alt="Sample" />
-</div>
+![Sample]({{ "/images/lidar_blbrcvuwv.PNG" | prepend: site.baseurl }}){: .flex .flex--center .outline }
 
 [![Project area map]({{"/images/lidar_blbrcvuwv_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_blbrcvuwv_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-{%capture data %}{% include contact.html subject=page.title contact=site.data.contacts.elevation text='by request from' hide-punctuation=true %}{% endcapture %}
-
-During the Fall of 2016 AGRC, Cache and Weber County, and the Utah Department of Emergency Management acquired [~790 square miles]({{ "/images/lidar_blbrcvuwv_coverage.png/" | prepend: site.baseurl }}) of 8 points per meter Quality Level 1 LiDAR. The project areas cover the Cache Valley, Upper Weber Valley, Bear River from Cache County to the Great Salt Lake, and the Bear Lake shoreline. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are also available {{ data | strip_newlines }} or [The National Map](https://viewer.nationalmap.gov/basic/). This elevation data was collected between September and November, 2017 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
+{%- capture data -%}{%- include contact.html subject=page.title contact=site.data.contacts.elevation text='by request from' hide-punctuation=true -%}{%- endcapture -%}
+During the Fall of 2016 AGRC, Cache and Weber County, and the Utah Department of Emergency Management acquired [~790 square miles]({{ "/images/lidar_blbrcvuwv_coverage.png/" | prepend: site.baseurl }}) of 8 points per meter Quality Level 1 LiDAR. The project areas cover the Cache Valley, Upper Weber Valley, Bear River from Cache County to the Great Salt Lake, and the Bear Lake shoreline. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are also available {{ data }}, [The National Map](https://viewer.nationalmap.gov/basic/), and [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1). This elevation data was collected between September and November, 2017 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
@@ -42,9 +33,9 @@ During the Fall of 2016 AGRC, Cache and Weber County, and the Utah Department of
   </li>
 </ul>
 
-The naming convention for the tiles are based off the [U.S. National Grid (USNG)]( https://www.fgdc.gov/usng/how-to-read-usng/index_html).
+The naming convention for the tiles are based off the [U.S. National Grid (USNG)](https://www.fgdc.gov/usng/how-to-read-usng/index_html).
 
-This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
+This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 {% capture elevation %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
-{{ elevation | strip_newlines }}
+{{ elevation }}

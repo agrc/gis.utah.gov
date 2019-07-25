@@ -10,21 +10,12 @@ title: 2017 Washington County LiDAR Elevation Data
 categories: []
 ---
 
-<style type="text/css">
-#logo {
-  max-width: 400px;
-  margin: 0 auto;
-}
-</style>
-<div id="logo">
-  <img src="{{ "/images/lidar_washington_co.PNG" | prepend: site.baseurl }}" alt="Sample" />
-</div>
+![Sample]({{ "/images/lidar_washington_co.PNG" | prepend: site.baseurl }}){: .flex .flex--center .outline }
 
 [![Project area map]({{"/images/lidar_washington_co_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_washington_co_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-{%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation text='by request from' hide-punctuation=true %}{% endcapture %}
-
-During the Spring of 2017 AGRC, Washington County, and the Utah Division of Emergency Management acquired [~516 square miles]({{ "/images/lidar_washington_co_coverage.png/" | prepend: site.baseurl }}) of 2 points per meter Quality Level 2 LiDAR of areas within Washington County in Southwestern Utah. The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are also available {{ data | strip_newlines }} , [The National Map](https://viewer.nationalmap.gov/basic/), and [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1). This elevation data was collected between January and July, 2017 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
+{%- capture contact -%}{%- include contact.html subject=page.title contact=site.data.contacts.elevation text='by request from' hide-punctuation=true -%}{%- endcapture -%}
+During the Spring of 2017 AGRC, Washington County, and the Utah Division of Emergency Management acquired [~516 square miles]({{ "/images/lidar_washington_co_coverage.png/" | prepend: site.baseurl }}) of 2 points per meter Quality Level 2 LiDAR of areas within Washington County in Southwestern Utah. The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are also available {{ data }} , [The National Map](https://viewer.nationalmap.gov/basic/), and [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1). This elevation data was collected between January and July, 2017 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
@@ -41,9 +32,9 @@ During the Spring of 2017 AGRC, Washington County, and the Utah Division of Emer
   </li>
 </ul>
 
-The naming convention for the tiles are based off the [U.S. National Grid (USNG)]( https://www.fgdc.gov/usng/how-to-read-usng/index_html).
+The naming convention for the tiles are based off the [U.S. National Grid (USNG)](https://www.fgdc.gov/usng/how-to-read-usng/index_html).
 
-This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
+This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 {% capture elevation %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
-{{ elevation | strip_newlines }}
+{{ elevation }}

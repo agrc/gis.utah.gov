@@ -10,21 +10,12 @@ title: 2015 Colorado, Green, and Yampa Rivers LiDAR Elevation Data
 categories: []
 ---
 
-<style type="text/css">
-#logo {
-  max-width: 400px;
-  margin: 0 auto;
-}
-</style>
-<div id="logo">
-  <img src="{{ "/images/lidar_rivers.PNG" | prepend: site.baseurl }}" alt="Sample" />
-</div>
+![Sample]({{ "/images/lidar_rivers.PNG" | prepend: site.baseurl }}){: .flex .flex--center .outline }
 
 [![Project area map]({{"/images/lidar_rivers_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_rivers_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-{%capture data %}{% include contact.html subject=page.title contact=site.data.contacts.lidar_rivers text='by request from' %}{% endcapture %}
-
-During late Fall of 2015 the Utah Division of Foresty, Fire & State Lands and the U.S. National Park Service acquired [~152 square miles]({{ "/images/lidar_rivers_coverage.png/" | prepend: site.baseurl }}) covering ~680 river miles of 8 points per meter LiDAR of the Colorado, Green, and Yampa rivers in Utah and Colorado. The LiDAR collection is mainly of the river course and not the surounding canyons. A small ~.8 square mile area was also collected in Arches N.P. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are also available. This elevation data was collected October and November of 2015 during low flow conditions.
+{%- capture data -%}{%- include contact.html subject=page.title contact=site.data.contacts.lidar_rivers text='by request from' -%}{%- endcapture -%}
+During late Fall of 2015 the Utah Division of Foresty, Fire & State Lands and the U.S. National Park Service acquired [~152 square miles]({{ "/images/lidar_rivers_coverage.png/" | prepend: site.baseurl }}) covering ~680 river miles of 8 points per meter LiDAR of the Colorado, Green, and Yampa rivers in Utah and Colorado. The LiDAR collection is mainly of the river course and not the surounding canyons. A small ~.8 square mile area was also collected in Arches N.P. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are available from [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1). This elevation data was collected October and November of 2015 during low flow conditions.
 
 <ul class="dotless">
   <li>
@@ -44,4 +35,4 @@ During late Fall of 2015 the Utah Division of Foresty, Fire & State Lands and th
 This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 {% capture lidar %}{% include contact.html subject=page.title contact=site.data.contacts.lidar_rivers %}{% endcapture %}
-{{ lidar | strip_newlines }}
+{{ lidar }}

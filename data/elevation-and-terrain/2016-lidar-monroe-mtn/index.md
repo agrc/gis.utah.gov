@@ -10,21 +10,12 @@ title: 2016 Monroe Mountain LiDAR Elevation Data
 categories: []
 ---
 
-<style type="text/css">
-#logo {
-  max-width: 400px;
-  margin: 0 auto;
-}
-</style>
-<div id="logo">
-  <img src="{{ "/images/lidar_monroe.PNG" | prepend: site.baseurl }}" alt="Monroe Sample" />
-</div>
+![Sample]({{ "/images/lidar_monroe.PNG" | prepend: site.baseurl }}){: .flex .flex--center .outline }
 
 [![Project area map]({{"/images/lidar_monroe_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_monroe_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-{%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation text='by request from' hide-punctuation=true %}{% endcapture %}
-
-During the Summer of 2016 AGRC and the U.S. Forest Service acquired [292 square miles]({{ "/images/lidar_monroe_coverage.png/" | prepend: site.baseurl }}) of 8 points per meter Quality Level 1 LiDAR on Monroe Mountain in central Utah. The acquisition took place with leaf-on conditions to model the forest canopy in addition to ground elevations. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are also available {{ contact | strip_newlines }} or [The National Map](https://viewer.nationalmap.gov/basic/). This elevation data was collected between Aug. 27 and Sept. 11, 2016 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
+{%- capture contact -%}{%- include contact.html subject=page.title contact=site.data.contacts.elevation text='by request from' hide-punctuation=true -%}{%- endcapture -%}
+During the Summer of 2016 AGRC and the U.S. Forest Service acquired [292 square miles]({{ "/images/lidar_monroe_coverage.png/" | prepend: site.baseurl }}) of 8 points per meter Quality Level 1 LiDAR on Monroe Mountain in central Utah. The acquisition took place with leaf-on conditions to model the forest canopy in addition to ground elevations. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are also available {{ contact }}, [The National Map](https://viewer.nationalmap.gov/basic/), and [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1). This elevation data was collected between Aug. 27 and Sept. 11, 2016 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
@@ -41,12 +32,12 @@ During the Summer of 2016 AGRC and the U.S. Forest Service acquired [292 square 
   </li>
 </ul>
 
-The naming convention for the tiles are based off the [U.S. National Grid (USNG)]( https://www.fgdc.gov/usng/how-to-read-usng/index_html).
+The naming convention for the tiles are based off the [U.S. National Grid (USNG)](https://www.fgdc.gov/usng/how-to-read-usng/index_html).
 
-This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
+This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 {% capture elevation %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
-{{ elevation | strip_newlines }}
+{{ elevation }}
 
 <div id="logo">
   <img src="{{ "/images/monroe_DEM.png" | prepend: site.baseurl }}" alt="Monroe Sample" />

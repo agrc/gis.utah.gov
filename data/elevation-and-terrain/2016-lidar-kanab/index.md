@@ -14,21 +14,12 @@ title: 2016 Kanab Utah LiDAR Elevation Data
 categories: []
 ---
 
-<style type="text/css">
-#logo {
-  max-width: 400px;
-  margin: 0 auto;
-}
-</style>
-<div id="logo">
-  <img src="{{ "/images/lidar_kanab_2016.png" | prepend: site.baseurl }}" alt="Sample" />
-</div>
+![Sample]({{ "/images/lidar_kanab_2016.png" | prepend: site.baseurl }}){: .flex .flex--center .outline }
 
 [![Project area map]({{"/images/lidar_kanab_2016_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_kanab_2016_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-{% capture pcloud-dload %}{% include contact.html subject=page.title contact=site.data.contacts.elevation text='by request. Reach out to'%}{% endcapture %}
-
-In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around Fredonia, AZ that covers [~150 square miles]({{ "/images/lidar_kanab_2016_coverage.png/" | prepend: site.baseurl }}) of Utah with 8 points per meter Quality Level 1 LiDAR and includes Kanab, UT. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, low, medium, and high vegetation, are also available {{ pcloud-dload | strip_newlines }} This elevation data was collected between October and December, 2016 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
+{%- capture pcloud-dload -%}{%- include contact.html subject=page.title contact=site.data.contacts.elevation text='by request. Reach out to' -%}{%- endcapture -%}
+In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around Fredonia, AZ that covers [~150 square miles]({{ "/images/lidar_kanab_2016_coverage.png/" | prepend: site.baseurl }}) of Utah with 8 points per meter Quality Level 1 LiDAR and includes Kanab, UT. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, low, medium, and high vegetation, are also available {{ pcloud-dload }} This elevation data was collected between October and December, 2016 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
@@ -47,6 +38,7 @@ In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around F
 
 The naming convention for the tiles are based off the [U.S. National Grid (USNG)](https://www.fgdc.gov/usng/how-to-read-usng/index_html).
 
-This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection
+This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
-{% capture elevation %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %} {{ elevation | strip_newlines }}
+{% capture elevation %}{% include contact.html subject=page.title contact=site.data.contacts.elevation %}{% endcapture %}
+{{ elevation }}
