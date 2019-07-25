@@ -84,13 +84,13 @@
           </h2>
         </a>
       </div>
-      {% assign current = page.url | downcase | split: '/' %}
+      {%- assign current = page.url | downcase | split: '/' -%}
       <nav class="site-nav">
         <ul id="menu-main-menu" class="menu">
-          <li class="menu-item {% if current[1] == 'news' %}active-1{% endif %}"><a href="{{ "/news/" | prepend: site.baseurl }}">News</a></li>
-          <li class="menu-item {% if current[1] == 'data' %}active-2{% endif %}"><a href="{{ "/data/" | prepend: site.baseurl }}">Data</a></li>
-          <li class="menu-item {% if current[1] == 'developer' %}active-3{% endif %}"><a href="{{ "/developer/" | prepend: site.baseurl }}">Developer</a></li>
-          <li class="menu-item {% if current[1] == 'about' %}active-4{% endif %}"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
+          <li class="menu-item{%- if current[1] == 'news' -%}{{ "active-1" | prepend: " " }}{%- endif -%}"><a href="{{ "/news/" | prepend: site.baseurl }}">News</a></li>
+          <li class="menu-item{%- if current[1] == 'data' -%}{{ "active-2" | prepend: " " }}{%- endif -%}"><a href="{{ "/data/" | prepend: site.baseurl }}">Data</a></li>
+          <li class="menu-item{%- if current[1] == 'developer' -%}{{ "active-3" | prepend: " " }}{%- endif -%}"><a href="{{ "/developer/" | prepend: site.baseurl }}">Developer</a></li>
+          <li class="menu-item{%- if current[1] == 'about' -%}{{ "active-4" | prepend: " " }}{%- endif -%}"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
           <li class="menu-item"><a href="https://agrc-status.netlify.com/">Status</a></li>
           <li class="menu-item"><a href="{{ "/search/" | prepend: site.baseurl }}"><i class="fas fa-search" title="Site search link"></i></a></li>
         </ul>
@@ -167,31 +167,31 @@
       <div class="grid__col grid__col--1-of-2">
         <h3>Let's Connect</h3>
         <ul class="social-media-list">
-          {% if site.github_username %}
+          {%- if site.github_username -%}
           <li>
             <a class="clean" title="agrc github account" href="https://github.com/{{ site.github_username }}">
                 <i class="fab fa-github-square fa-3x" title="github link"></i>
             </a>
           </li>
-          {% endif %} {% if site.twitter_username %}
+          {%- endif -%} {%- if site.twitter_username -%}
           <li>
             <a class="clean" title="agrc twitter account" href="https://twitter.com/{{ site.twitter_username }}">
                 <i class="fab fa-twitter-square fa-3x" title="twitter link"></i>
             </a>
           </li>
-          {% endif %} {% if site.facebook_username %}
+          {%- endif -%} {%- if site.facebook_username -%}
           <li>
             <a class="clean" title="agrc facebook account" href="https://facebook.com/{{ site.facebook_username }}">
                 <i class="fab fa-facebook-square fa-3x" title="facebook link"></i>
             </a>
           </li>
-          {% endif %} {% if site.vimeo_username %}
+          {%- endif -%} {%- if site.vimeo_username -%}
           <li>
             <a class="clean" title="agrc vimeo account" href="https://vimeo.com/{{ site.vimeo_username }}">
                 <i class="fab fa-vimeo-square fa-3x" title="vimeo link"></i>
             </a>
           </li>
-          {% endif %}
+          {%- endif -%}
         </ul>
         <div class="clearfix"></div>
         <h3>Broken links, images, or misinformation?</h3>
@@ -205,11 +205,11 @@
         <a href="{{ "/license-disclaimer" | prepend: site.baseurl }}">
           <h3><i class="fas fa-exclamation-triangle fa-fw" title="AGRC Data Disclaimer"></i> AGRC Data Disclaimer</h3>
         </a>
-        {% if site.github %}
+        {%- if site.github -%}
         <div class="awesome text-center">
             build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
         </div>
-        {% endif %}
+        {%- endif -%}
       </div>
     </div>
     <div class="state-footer">

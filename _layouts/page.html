@@ -1,17 +1,14 @@
 ---
 layout: default
 ---
-{% include nav-breadcrumbs.html %}
+{%- include nav-breadcrumbs.html -%}
 <div class="post">
-
-{% if page.title %}
+{%- if page.title -%}
   <header class="page-header">
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
- {% endif %}
-
+ {%- endif -%}
   <article class="post-content">
     {{ content }}
   </article>
-
 </div>

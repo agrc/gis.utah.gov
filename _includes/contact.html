@@ -1,17 +1,16 @@
-{% assign text = include.text %}
-{% assign default_text = 'Comments, questions, compliments, or concerns can be directed to'%}
-{% capture subject %}
+{%- assign text = include.text -%}
+{%- assign default_text = 'Comments, questions, compliments, or concerns can be directed to'-%}
+{%- capture subject -%}
 ?subject={{ include.subject | default: 'gis.utah.gov' | escape_once | url_encode }}
-{% endcapture %}
-
-{% if include.contact %}
-  {% if include.contact.name %}
-{% capture mailto %}
+{%- endcapture -%}
+{%- if include.contact -%}
+  {%- if include.contact.name -%}
+{%- capture mailto -%}
 mailto:{{ include.contact.email }}
-{% endcapture %}
-{{ text | default: default_text}} {{ include.contact.name }} from {{ include.contact.agency }} at <a href="{{ mailto | append: subject }}">{{ include.contact.email }}</a>{% if include.contact.phone != nil %} or <a href="tel:{{ include.contact.phone }}">{{ include.contact.phone }}</a>{% endif %}{% unless include.hide-punctuation %}.{% endunless %}
-  {% else %}{{ text | default: default_text }}{% for contact in include.contact %}
-      {% if forloop.first != true %}or{% endif %}
-      {{ contact.name }} from {{ contact.agency }} at <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>{% if contact.phone != nil %} or <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a>{% endif %}{% if forloop.last != true %},{% endif %}{% endfor %}{% if include.punctuation %}.{% endif %}
-  {% endif %}
-{% endif %}
+{%- endcapture -%}
+{{ text | default: default_text}} {{ include.contact.name }} from {{ include.contact.agency }} at <a href="{{ mailto | append: subject }}">{{ include.contact.email }}</a>{%- if include.contact.phone != nil -%} or <a href="tel:{{ include.contact.phone }}">{{ include.contact.phone }}</a>{%- endif -%}{%- unless include.hide-punctuation -%}.{%- endunless -%}
+  {%- else -%}{{ text | default: default_text }}{%- for contact in include.contact -%}
+      {%- if forloop.first != true -%}or{%- endif -%}
+      {{ contact.name }} from {{ contact.agency }} at <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>{%- if contact.phone != nil -%} or <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a>{%- endif -%}{%- if forloop.last != true -%},{%- endif -%}{%- endfor -%}{%- if include.punctuation -%}.{%- endif -%}
+  {%- endif -%}
+{%- endif -%}

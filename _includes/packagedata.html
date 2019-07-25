@@ -4,8 +4,8 @@
       <h5 id="{{ include.name | replace: ' ', '' }}-downloads">Downloads</h5>
     </div>
     <div class="panel-content">
-      <ul id="{{ include.name | replace: ' ', '' }}-dlist" class="dotless no-padding">{% for download in include.info.downloads %}
-        <li><a href="{{ download.url }}">{{ download.label }}</a>{% endfor %}
+      <ul id="{{ include.name | replace: ' ', '' }}-dlist" class="dotless no-padding">{%- for download in include.info.downloads -%}
+        <li><a href="{{ download.url }}">{{ download.label }}</a>{%- endfor -%}
       </ul>
     </div>
   </div>
@@ -15,24 +15,24 @@
       <h5 id="{{ include.name | replace: ' ', '' }}-updates">Updates</h5>
     </div>
     <div class="panel-content">
-      <ul class="dotless no-padding">{% for update in include.info.updates %}
-        <li>{{ update }}{% endfor %}
+      <ul class="dotless no-padding">{%- for update in include.info.updates -%}
+        <li>{{ update }}{%- endfor -%}
       </ul>
     </div>
   </div>
-  {% if include.info.endpoints %}
+  {%- if include.info.endpoints -%}
   <div class="grid__col grid__col--1-of-2">
     <div class="panel endpoint">
       <i class="fas fa-pull-right fa-cloud fa-2x" data-fa-transform="down-2"></i>
       <h5 id="{{ include.name | replace: ' ', '' }}-web-services">Web Services</h5>
     </div>
     <div class="panel-content">
-      <ul class="dotless no-padding">{% for endpoint in include.info.endpoints %}
-        <li><a href="{{ endpoint.url }}">{{ endpoint.label }}</a>{% endfor %}
+      <ul class="dotless no-padding">{%- for endpoint in include.info.endpoints -%}
+        <li><a href="{{ endpoint.url }}">{{ endpoint.label }}</a>{%- endfor -%}
       </ul>
     </div>
   </div>
-  {% endif %}
+  {%- endif -%}
   <script>
     document.getElementById('{{ include.name | replace: ' ', '' }}-dlist').addEventListener('click', function() {
       ga('send', {
