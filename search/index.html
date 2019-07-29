@@ -8,39 +8,42 @@ categories: []
 tags: []
 ---
 <div name="search-form" class="search-form">
-      <input type="text" autofocus id="search" class="search-input" placeholder="What can we help you find today?" />
+  <input type="text" autofocus id="search" class="search-input" placeholder="What can we help you find today?" />
 </div>
 <div class="grid" id="content">
 </div>
+<div class="flex pop">
+  <span class="flex--center">
+    If you are searching for data please navigate to the <a href="{{ "/data/sgid-index" | prepend: site.baseurl }}">sgid index</a> and search there.
+  </span>
+</div>
 <script src="{{ "/js/dist/search.min.js" | prepend: site.baseurl }}" async defer></script>
-<script id="template" type="x-tmpl-mustache">
-{% raw %}
+<script id="template" type="x-tmpl-mustache">{% raw %}
 {{#data}}
-    <div class="grid__col grid__col--1-of-2 text-center">
-      <span class="post-meta">{{ date }}</span>
-      <h5 class="text-center">
-        <a href="{{ href }}">{{ title }}</a>
-       </h5>
-    </div>
+  <div class="grid__col grid__col--1-of-2 text-center">
+    <span class="post-meta">{{ date }}</span>
+    <h5 class="text-center">
+      <a href="{{ href }}">{{ title }}</a>
+      </h5>
+  </div>
 {{/data}}
 {{^data}}
     <p class="text-center">I am having trouble finding content like that.</p>
 {{/data}}
-{% endraw %}
-</script>
+{% endraw %}</script>
 <script>
-var data = [{% for post in site.posts %}
+var data = [{%- for post in site.posts -%}
   {
     "title": "{{ post.title | escape | downcase }}",
-     "href": "{{ post.url | prepend: site.baseurl }}",
-     "date": "{{ post.date | date: "%b %-d, %Y" }}"
-  }, {% endfor %}
-  false,{% for post in site.pages %}
+    "href": "{{ post.url | prepend: site.baseurl }}",
+    "date": "{{ post.date | date: "%b %-d, %Y" }}"
+  }, {%- endfor -%}
+  false,{%- for post in site.pages -%}
   {
-     "title": "{{ post.title | escape | downcase }}",
-     "href": "{{ post.url | prepend: site.baseurl }}",
-     "date": "{{ post.date | date: "%b %-d, %Y" }}"
-  },{% endfor %},
+    "title": "{{ post.title | escape | downcase }}",
+    "href": "{{ post.url | prepend: site.baseurl }}",
+    "date": "{{ post.date | date: "%b %-d, %Y" }}"
+  },{%- endfor -%},
   false
 ];
 </script>
