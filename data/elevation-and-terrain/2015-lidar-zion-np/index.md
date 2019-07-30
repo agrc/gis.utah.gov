@@ -18,7 +18,7 @@ categories: []
 
 [![Project area map]({{"/images/lidar_zion_np_2015_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_zion_np_2015_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
-{%- capture contact -%}{%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' hide-punctuation=true -%}{%- endcapture -%}
+{%- capture contact -%}{%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}{%- endcapture -%}
 During 2015 and 2016 the U.S. Geological Survey and the U.S. Park Service acquired [~239 square miles]({{ "/images/lidar_zion_np_2015_coverage.png/" | prepend: site.baseurl }}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for Zion National Park in Utah. The .5 and 1 meter resolution bare earth DEMs '.img' format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, low, medium, and high vegetation, are available from [The National Map](https://viewer.nationalmap.gov/basic/) {{ contact }} This elevation data was collected between November 2015 and July 2016 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12B) projection.
 
 <ul class="dotless">
