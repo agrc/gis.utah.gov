@@ -30,7 +30,7 @@ The new framework we plan to use, [ASP.NET Core](https://docs.microsoft.com/en-u
 
 ## <i class="fab fa-docker"></i> Containers <i class="fab fa-docker fa-flip-horizontal"></i>
 
-Version 2 of the WebAPI is being built for containers. It will run without them, but building the correct runtime environment is much simpler using them. The system is currently comprises  four containers that will likely expand to six or more.
+Version 2 of the WebAPI is being built for containers. It will run without them, but building the correct runtime environment is much simpler using them. The system is currently comprised of four containers that will likely expand to six or more.
 
 1. The ASP.NET Core WebAPI service
 2. The ASP.NET Core developer website
