@@ -19,9 +19,9 @@ categories: []
 [![Project area map]({{"/images/lidar_southern_utah_2018_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_southern_utah_2018_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
 
 {%- capture contact -%}
-{%- include contact.html subject=page.title contact=site.data.contacts.elevation text='by request. Reach out to'-%}
+{%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During 2018 AGRC, Utah Division of Emergency Management, US National Park Service, and US Forest Service acquired [~5,466 square miles]({{ "/images/lidar_southern_utah_2018_coverage.png/" | prepend: site.baseurl }}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Southern Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, are also available {{ contact }} This elevation data was collected between April and October, 2018 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
+During 2018 AGRC, Utah Division of Emergency Management, US National Park Service, and US Forest Service acquired [~5,466 square miles]({{ "/images/lidar_southern_utah_2018_coverage.png/" | prepend: site.baseurl }}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Southern Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, are available from [The National Map](https://viewer.nationalmap.gov/basic/) {{ contact }} This elevation data was collected between April and October, 2018 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
