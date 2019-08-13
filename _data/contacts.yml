@@ -55,9 +55,8 @@ parcels:
   email: RKelson@utah.gov
   agency: AGRC
 lir_parcels:
-  name: Sean Fernandez
-  email: SFernandez@utah.gov
-  phone: 801-209-9359
+  name: Rick Kelson
+  email: RKelson@utah.gov
   agency: AGRC
 indices:
   name: Rick Kelson
@@ -276,12 +275,12 @@ source_water:
   email: KJohnson@utah.gov
   agency: DEQ
 google_imagery:
-  - name: Rick Kelson
-    email: RKelson@utah.gov
+  - name: Jake Adams
+    email: jdadams@utah.gov
     agency: AGRC
 discover:
-  name: Rick Kelson
-  email: RKelson@utah.gov
+  name: Jake Adams
+  email: jdadams@utah.gov
   agency: AGRC
 change_manager:
   name: Matt Peters
