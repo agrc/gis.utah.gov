@@ -21,12 +21,12 @@ categories: []
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During 2018 the Federal Emergency Management Agency (FEMA) acquired [~4,693 square miles]({{ "/images/lidar_heber_uintah_basin_2018_coverage.png/" | prepend: site.baseurl }}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Northern Utah that include the Uintah Basin (QL2) and Heber Valley (QL1). The .5 and 1 meter resolution bare earth DEMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, are available from [The National Map](https://viewer.nationalmap.gov/basic/) {{ contact }} This elevation data was collected between June and October, 2018 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection. The project was acquired two weeks before the [Dollar Ridge Fire](https://inciweb.nwcg.gov/incident/5881/) started. Postfire LiDAR of the Strawberry River watershed, to be acquired in September 2019, coming early 2020.
+During 2018 the Federal Emergency Management Agency (FEMA) acquired [~4,693 square miles]({{ "/images/lidar_heber_uintah_basin_2018_coverage.png/" | prepend: site.baseurl }}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Northern Utah that include the Uintah Basin (QL2) and Heber Valley (QL1). The .5 and 1 meter resolution bare earth DEMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, are available from [The National Map](https://viewer.nationalmap.gov/basic/) {{ contact }} This elevation data was collected between June and October, 2018 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection. The project was acquired two weeks before the [Dollar Ridge Fire](https://inciweb.nwcg.gov/incident/5881/) started. Postfire LiDAR and aerial photography of the Strawberry River watershed, to be acquired in August 2019, coming early 2020.
 
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fa fa-download"></i> <a href="https://raster.utah.gov/?cat=.5%20Meter%20%7B2018%20Unitah%20Basin%20and%20Heber%20Valley%20LiDAR%7D" target="_blank">Retrieve 2018 Bare Earth DEMs via Interactive Map</a> First Return DSMs coming soon.
+      <i class="fa fa-download"></i> <a href="https://raster.utah.gov/?cat=.5%20Meter%20%7B2018%20Unitah%20Basin%20Heber%20Valley%20LiDAR%7D" target="_blank">Retrieve 2018 Bare Earth DEMs via Interactive Map</a> First Return DSMs coming soon.
     </strong>
   </li>
   <li>
