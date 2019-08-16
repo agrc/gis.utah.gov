@@ -5,7 +5,8 @@ author:
 tags:
   - base maps
   - open source
-date: 2019-08-16 07:51:04 -0700
+date: 2015-01-20 07:51:04 -0700
+updated: 2019-08-16 07:51:04 -0700
 title: How To Use AGRC Base Maps in QGIS
 categories:
   - Developer
