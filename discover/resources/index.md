@@ -66,6 +66,13 @@ Interested in using AGRC's Web Mercator services in your web maps? Take a look a
 - **Bentley Microstation** users should take a look at the [How To document]({{ "/downloads/MicroStationGoogleWMS_HowTo.pdf" | prepend: site.baseurl }}).
 - **AutoCAD Civil 3D** users should take a look at the [How To document](https://knowledge.autodesk.com/support/autocad-map-3d/learn-explore/caas/CloudHelp/cloudhelp/2017/ENU/MAP3D-Use/files/GUID-A9F620AD-6B9A-487D-9B33-7D365307D571-htm.html).
 
+### Adding a WMTS Service to QGIS
+{: .text-left}
+
+1. Add a new "WMS/WMTS" connection and paste in the URL to the discover WMTS service.
+
+Go to [this page]({{ "/how-to-use-agrc-base-maps-in-qgis/" | prepend: site.baseurl }}) for more details.
+
 ### Printing Web Maps with Discover Services
 {: .text-left}
 
