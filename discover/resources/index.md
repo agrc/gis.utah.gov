@@ -24,12 +24,14 @@ Discover provides high-performance imagery and base maps services in WMS and WMT
 ### Coordinate System and Datum
 {: .text-left}
 
-The native coordinate system for the Discover services is Web Mercator with a WGS 1984 datum (EPSG 3857). Many users work in coordinate systems with a different datum (for example, EPSG 3566: Utah Central with NAD 1983). It is critical for users who need the highest locational precision to use the appropriate [geographic transformation conversion]({{ "/downloads/Transformation.png" | prepend: site.baseurl }}). This remedies the roughly one meter difference between the WGS84 and NAD83 datums' “realization points.” Without the right transformation, you will not be able to get the highest level of positional accuracy. AGRC uses the `NAD_1983_To_WGS_1984_5` transformation when creating base map tiles and web applications, but **there may be more accurate transformations based on the data and area you are working with**. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information about these transformations can be found on ESRI's [NAD 1983 To WGS 1984](https://support.esri.com/en/knowledgebase/techarticles/detail/24159) How-To.
+The native coordinate system for the Discover services is Web Mercator with a WGS 1984 datum (EPSG 3857). Many users work in coordinate systems with a different datum (for example, EPSG 3566: Utah Central with NAD 1983). Users who need the highest locational precision must use the appropriate [geographic transformation conversion]({{ "/downloads/Transformation.png" | prepend: site.baseurl }}) to remedy the roughly one meter difference between the WGS84 and NAD83 datums' “realization points.” AGRC uses the `NAD_1983_To_WGS_1984_5` transformation when creating base map tiles and web applications, but **there may be more accurate transformations based on the data and area you are working with**. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information about these transformations can be found on ESRI's [NAD 1983 To WGS 1984](https://support.esri.com/en/knowledgebase/techarticles/detail/24159) How-To.
 
 ### Horizontal Positional Accuracy
 {: .text-left}
 
 Stated horizontal positional accuracy of the Google imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. You can generally expect higher precision in urban areas where existing supplemental ground control was more abundant.
+
+The pre-2018 NAIP layers have a stated horizontal positional accuracy of 5 meters, while the 2018 NAIP products have a horizontal positional accuracy of 4 meters.
 
 ### Adding a WMTS or WMS Service to ESRI Products
 {: .text-left}
@@ -44,8 +46,8 @@ Stated horizontal positional accuracy of the Google imagery is expected to achie
 
 **ArcMap 10.x**
 
-1. `Add Data -> GIS Server -> Add WMTS server`
-1. Paste the `WMTS` link [you have been provided]({{ "/discover/#connect" | prepend: site.baseurl }} "view Discover sign up information") into the `URL:` line and click `OK`
+1. `Add Data`, select `GIS Server` from the `Look in:` dropdown list, and double-click `Add WMTS server`
+1. Paste the `WMTS` link [you have been provided]({{ "/discover/#connect" | prepend: site.baseurl }} "view Discover sign up information") into the `URL:` line and click `OK` (don't worry about Parameters, Server Layers, or Username/Password)
 1. Navigate to the newly added `utah imagery – WMTS on discover.agrc.utah.gov` connection and **double click** to connect.
   - You can rename the connection after it has been added
 1. Expand the nodes until you see a list of all of the imagery and base map services that are avialbe to your login. The list can be viewed on the main [Discover]({{ "/discover/#services" | prepend: site.baseurl }}) page.
@@ -128,9 +130,9 @@ You may request a local copy of the NAIP, HRO, and Google imagery for off-line c
 ### Other Tidbits
 {: .text-left}
 
-- From time to time it is suggested that you refresh the connection to the imagery services by right-clicking your service connection, in ArcCatalog or ArcMap's Catalog Viewer, and select the `Refresh`  button to see the latest list of available services.
-- Since the Google acquisition flight blocks are not done all at once (as opposed to the NAIP product for example), there will certainly be color and positional changes at flight block boundaries. For large area maps, the color-balanced NAIP may be a more aesthetically pleasing cartographic choice.
+- We suggest that you occasionally refresh the connection to the imagery services by right-clicking your service connection in ArcCatalog or ArcMap's Catalog Viewer and selecting the `Refresh` button to see the latest list of available services.
+- Since the Google acquisition flight blocks are not done all at once (as opposed to the NAIP products, which cover the whole state for every acquisition), there will be distinct color and positional changes at flight block boundaries. For large area maps, the color-balanced NAIP may be a more aesthetically pleasing cartographic choice.
 - A tile index of the original .jp2 images that make up the Google imagery services is available from the SGID as SGID10.INDICES.Google_Tiles or as a [download from our ftp](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_Tiles/_Statewide/).
 - For future imagery updates, we can certainly pass along requests to Google for additional update areas or for specific collection periods. However, there is no provision in the current contract to create any expectation that those requests will be acted upon.
 - AGRC has downloaded a statewide master set of the image files for redistribution, as the download process directly from Google incurs transactional costs for cloud server & bandwidth usage.
-- AGRC has a [feedback reporting form](https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221) for imagery users around the state to report imagery and service issues so they can be passed along to Google. Please submit your feed back through this form.
+- AGRC has a [feedback reporting form](https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221) for imagery users around the state to report imagery and service issues so they can be passed along to Google. Please submit your feedback through this form.
