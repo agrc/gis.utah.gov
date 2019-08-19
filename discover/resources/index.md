@@ -29,7 +29,7 @@ The native coordinate system for the Discover services is Web Mercator with a WG
 ### Horizontal Positional Accuracy
 {: .text-left}
 
-Stated horizontal positional accuracy of the Google imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. You can generally expect higher precision in urban areas where existing supplemental ground control was more abundant.
+Stated horizontal accuracy of the Google imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. You can generally expect higher precision in urban areas where existing supplemental ground control was more abundant.
 
 The pre-2018 NAIP layers have a stated horizontal positional accuracy of 5 meters, while the 2018 NAIP products have a horizontal positional accuracy of 4 meters.
 
