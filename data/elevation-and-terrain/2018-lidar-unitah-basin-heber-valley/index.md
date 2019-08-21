@@ -16,7 +16,7 @@ categories: []
 
 ![Sample]({{ "/images/lidar_heber_uintah_basin_2018.png" | prepend: site.baseurl }}){: .flex .flex--center .outline }
 
-[![Project area map]({{"/images/lidar_heber_uintah_basin_2018_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_heber_uintah_basin_2018_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![Project area map]({{"/images/lidar_heber_uintah_basin_2018_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_heber_uintah_basin_2018.png" | prepend:site.baseurl}}){:.inline-text-right}
 
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
