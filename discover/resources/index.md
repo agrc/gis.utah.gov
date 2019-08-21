@@ -88,7 +88,7 @@ In addition to the statewide `Google` imagery service layer, there are archive l
 {: .text-left}
 
 <i class="fas fa-fw fa-lock"></i>
-The [dates of each Google imagery flight](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/INDICES/UnpackagedData/Google_UtahServiceDates/_Statewide/) block can be downloaded from our ftp site as a shapefile, viewed in [ArcGIS Online](https://arcg.is/1E0wq3b), or utilized through the `SGID10.INDICES.Google_UtahServiceDates` SGID layer.
+The dates of each Google imagery flight block can be downloaded as a [shapefile or geodatabase](https://drive.google.com/drive/folders/0ByStJjVZ7c7mcWEzaXNRU09FUGM), viewed in [ArcGIS Online](https://arcg.is/1E0wq3b), or utilized through the `SGID10.INDICES.Google_UtahServiceDates` SGID layer.
 
 ### Pro/ArcMap User Considerations
 {: .text-left}
