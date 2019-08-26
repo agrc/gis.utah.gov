@@ -9,10 +9,16 @@
     "Sevier",
     "Tooele",
     "Uintah",
+    "booleanize",
     "endcapture",
     "gourley",
     "naip",
+    "pydash",
+    "pygsheets",
+    "returnas",
     "rkelson",
     "sgourley"
-  ]
+  ],
+  "python.pythonPath": "~/.virtualenvs/gis.utah.gov/bin/python",
+  "python.formatting.provider": "yapf"
 }
