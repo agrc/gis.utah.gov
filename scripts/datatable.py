@@ -67,9 +67,24 @@ def munge_data(item, i, indices):
 
         return '<a href="{}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>'.format(value.strip())
 
-    return OrderedDict([('category', utf8_encode(category)), ('name', should_link(start_case(name.replace('_', ' ')))),
-                        ('agency', utf8_encode(item[indices['data_source']])), ('description', utf8_encode(item[indices['description']])), ('service', ''.join(
-                            [endpoint_link(item[indices['endpoint']]), webapp_link(item[indices['web_app']])]))])
+    def booleanize(value):
+        if value is None or len(value) == 0:
+            return False
+
+        return True
+
+
+    return OrderedDict([
+        ('category', utf8_encode(category)),
+        ('name', should_link(start_case(name.replace('_', ' ')))),
+        ('deprecated', booleanize(item[indices['deprecated']])),
+        ('agency', utf8_encode(item[indices['data_source']])),
+        ('description', utf8_encode(item[indices['description']])),
+        ('service', ''.join([
+            endpoint_link(item[indices['endpoint']]),
+            webapp_link(item[indices['web_app']])
+        ]))
+    ])
 
 
 def get_sheet_data(gc, sheet_id, worksheet_id):
@@ -84,7 +99,8 @@ def get_sheet_data(gc, sheet_id, worksheet_id):
         'url': header.index('Website URL'),
         'data_type': header.index('Data Type'),
         'endpoint': header.index('Endpoint'),
-        'web_app': header.index('Webapp')
+        'web_app': header.index('Webapp'),
+        'deprecated': header.index('Deprecated')
     }
 
     return [munge_data(item, i, indices) for i, item in enumerate(data)]
@@ -106,6 +122,9 @@ title: SGID Index
 
     once = True
     for item in data:
+        if item['deprecated']:
+            continue
+
         if once:
             html += '''        <thead>
             <tr>
@@ -113,12 +132,12 @@ title: SGID Index
             </tr>
         </thead>
         <tbody class='list'>'''.format('\n'.join(
-                ['                <th scope="col"><span class="sort" data-sort="{0}">{0}</span></th>'.format(key) for key in item.keys()]))
+                ['                <th scope="col"><span class="sort" data-sort="{0}">{0}</span></th>'.format(key) for key in item.keys() if key != 'deprecated']))
             once = False
         html += '''
             <tr>
 {}
-            </tr>'''.format('\n'.join(['                <td data-th="{0}" class="{0}">{1}</td>'.format(key, value) for key, value in item.items()]))
+            </tr>'''.format('\n'.join(['                <td data-th="{0}" class="{0}">{1}</td>'.format(key, value) for key, value in item.items() if key != 'deprecated']))
     html += '''
         </tbody>
     </table>
@@ -138,7 +157,7 @@ if __name__ == '__main__':
 
     file_path = join(dirname(__file__), '..', 'data', 'sgid-index', 'index.html')
 
-    with open(file_path + '.bak', 'w') as data:
+    with open(file_path + '.bak', 'w', newline='\r\n') as data:
         data.writelines(html)
 
     rename(file_path + '.bak', file_path)
