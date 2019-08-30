@@ -181,7 +181,7 @@ In 1987, the USGS developed the concept for the creation of DOQs. Essentially, t
 
 The USGS began scanning its popular 7.5-minute maps in 1995 (USGS “Overview of the USGS Digital Raster Graphic [DRG] Program” 2017). These TIFFs became known as DRGs and were georeferenced to the UTM coordinate system. The DRGs were very useful as digital base map layers or for digitizing the approximation of known features.
 
-Other notable USGS GIS data contributions include the NED and the NHD. The NED provided seamless, high-resolution raster elevation data for the entire nation in the form of DEM layers. This project was replaced by the 3DEP. (“3D Elevation Program [3DEP],” USGS). The NHD is a comprehensive GIS dataset consisting of surface water in the United States, including lakes, ponds, streams, rivers, canals, and oceans.
+Other notable USGS GIS data contributions include the NED and the NHD.
 
 A significant factor in the success of digital mapping can be contributed to the decision by the USGS to make all map datasets freely available online and in the public domain. This allowed the software industry to focus on software with the notion that end users would have access to readily available, high-quality data.
 
@@ -220,113 +220,111 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 ### Sources
 {: .text-left}
 
-Aguirre, Jessica Camille. “The Unlikely History of the Origins of Modern Maps.” Smithsonian.com. June 2, 2014. Accessed August 19, 2019. https://www.smithsonianmag.com/history/unlikely-history-origins-modern-maps-180951617/.
+* Aguirre, Jessica Camille. “The Unlikely History of the Origins of Modern Maps.” Smithsonian.com. June 2, 2014. Accessed August 19, 2019. https://www.smithsonianmag.com/history/unlikely-history-origins-modern-maps-180951617/.
 
-Anam, Aysha. “How India was measured: Story of the Great Trigonometrical Survey of India.” India Today. Published July 10, 2018. Updated July 12, 2018. Accessed August 19, 2019. https://www.indiatoday.in/education-today/gk-current-affairs/story/how-was-india-measured-why-is-it-important-to-measure-land-1281835-2018-07-10.
+* Anam, Aysha. “How India was measured: Story of the Great Trigonometrical Survey of India.” India Today. Published July 10, 2018. Updated July 12, 2018. Accessed August 19, 2019. https://www.indiatoday.in/education-today/gk-current-affairs/story/how-was-india-measured-why-is-it-important-to-measure-land-1281835-2018-07-10.
 
-ArcGIS. 1986 PC ARC/INFO Released. Retrieved from “Our Common History” story map.  https://www.arcgis.com/apps/MapJournal/index.html?appid=df8224427fc741ab9f8117e9af1d692a.
+* ArcGIS. 1986 PC ARC/INFO Released. Retrieved from “Our Common History” story map.  https://www.arcgis.com/apps/MapJournal/index.html?appid=df8224427fc741ab9f8117e9af1d692a.
 
-Artz, Matt. “Charting the Unknown: How Computer Mapping at Harvard Became GIS.” GIS and Science. November 17, 2009. Accessed August 19, 2019. https://gisandscience.com/2009/11/17/charting-the-unknown-how-computer-mapping-at-harvard-became-gis/.  
+* Artz, Matt. “Charting the Unknown: How Computer Mapping at Harvard Became GIS.” GIS and Science. November 17, 2009. Accessed August 19, 2019. https://gisandscience.com/2009/11/17/charting-the-unknown-how-computer-mapping-at-harvard-became-gis/.  
 
-Beniger, James Ralph. The Control Revolution: Technological and Economic Origins of the Information Society, 411–412. Cambridge (MA): Harvard University Press, 1997. Accessed on 7/31/2019 via Google Books.
+* Beniger, James Ralph. The Control Revolution: Technological and Economic Origins of the Information Society, 411–412. Cambridge (MA): Harvard University Press, 1997. Accessed on 7/31/2019 via Google Books.
 
-Chrisman, Nicholas. “Remembering the Lab: A short history of GIS at Harvard.” Presentation. 2006. Accessed August 19, 2019. https://docplayer.net/12667857-Remembering-the-lab.html.
+* Chrisman, Nicholas. “Remembering the Lab: A short history of GIS at Harvard.” Presentation. 2006. Accessed August 19, 2019. https://docplayer.net/12667857-Remembering-the-lab.html.
 
-Chrisman, Nick. Charting the Unknown: How Computer Mapping at Harvard Became GIS. Redlands, CA: Esri Press, 2006.
+* Chrisman, Nick. Charting the Unknown: How Computer Mapping at Harvard Became GIS. Redlands, CA: Esri Press, 2006.
 
-Coppock, J. Terry, and David W. Rhind. “The History of GIS.” In Applications. Vol. 2 of Geographical Information Systems: Principles and Applications. Edited by David J. Maguire,
+* Coppock, J. Terry, and David W. Rhind. “The History of GIS.” In Applications. Vol. 2 of Geographical Information Systems: Principles and Applications. Edited by David J. Maguire,
 
-Michael F. Goodchild, and David W. Rhind, 21–43. Harlow, UK: Longmans, 1991. https://oxfordbibliographiesonline.com/view/document/obo-9780199874002/obo-9780199874002-0143.xml#obo-9780199874002-0143-bibItemGroup-0001.
+* Michael F. Goodchild, and David W. Rhind, 21–43. Harlow, UK: Longmans, 1991. https://oxfordbibliographiesonline.com/view/document/obo-9780199874002/obo-9780199874002-0143.xml#obo-9780199874002-0143-bibItemGroup-0001.
 
-DeMers, Michael. “CGIS History Captioned.” Youtube. Uploaded by Michael DeMers on August 29, 2013. Accessed August 19, 2019. https://www.youtube.com/watch?v=3VLGvWEuZxI.
+* DeMers, Michael. “CGIS History Captioned.” Youtube. Uploaded by Michael DeMers on August 29, 2013. Accessed August 19, 2019. https://www.youtube.com/watch?v=3VLGvWEuZxI.
 
-DeMers, Michael. CGIS Screenshot. 2013. Screenshot from “CGIS History Captioned” YouTube video. https://www.youtube.com/watch?v=3VLGvWEuZxI.
+* DeMers, Michael. CGIS Screenshot. 2013. Screenshot from “CGIS History Captioned” YouTube video. https://www.youtube.com/watch?v=3VLGvWEuZxI.
 
-ESRI. “History of GIS.” Accessed August 19, 2019. https://www.esri.com/en-us/what-is-gis/history-of-gis.
+* ESRI. “History of GIS.” Accessed August 19, 2019. https://www.esri.com/en-us/what-is-gis/history-of-gis.
 
-ESRI. “History Up Close.” 2015. Accessed August 19, 2019. https://www.esri.com/~/media/Files/Pdfs/about-esri/esri-history-up-close.
+* ESRI. “History Up Close.” 2015. Accessed August 19, 2019. https://www.esri.com/~/media/Files/Pdfs/about-esri/esri-history-up-close.
 
-Fisk, Dale. “Programming with Punched Cards.” Columbia University. Accessed August 19, 2019. http://www.columbia.edu/cu/computinghistory/fisk.pdf.
+* Fisk, Dale. “Programming with Punched Cards.” Columbia University. Accessed August 19, 2019. http://www.columbia.edu/cu/computinghistory/fisk.pdf.
 
-Friendly, M. & Denis, D. J. Early SYMAP image of Connecticut. 2001. “1950-1974: Re-birth of data visualization” article on Milestones in the history of thematic cartography, statistical graphics, and data visualization site. http://www.datavis.ca/milestones/. Accessed August 29, 2019.
+* Friendly, M. & Denis, D. J. Early SYMAP image of Connecticut. 2001. “1950-1974: Re-birth of data visualization” article on Milestones in the history of thematic cartography, statistical graphics, and data visualization site. http://www.datavis.ca/milestones/. Accessed August 29, 2019.
 
-Garfield, Simon. On the Map: A Mind-Expanding Exploration of the Way the World Looks, 192, 194. New York: Gotham Books, 2013.
+* Garfield, Simon. On the Map: A Mind-Expanding Exploration of the Way the World Looks, 192, 194. New York: Gotham Books, 2013.
 
-GIS Geography. “The Remarkable History of GIS.” June 13, 2019. Accessed August 19, 2019. https://gisgeography.com/history-of-gis/.
+* GIS Geography. “The Remarkable History of GIS.” June 13, 2019. Accessed August 19, 2019. https://gisgeography.com/history-of-gis/.
 
-GIS Geography. “USGS Formats DLG, DRG and DOQ – Vector and Raster Formats.” Last updated January 5, 2019. Accessed August 19, 2019. https://gisgeography.com/usgs-formats-dlg-drg-doq/.
+* GIS Geography. “USGS Formats DLG, DRG and DOQ – Vector and Raster Formats.” Last updated January 5, 2019. Accessed August 19, 2019. https://gisgeography.com/usgs-formats-dlg-drg-doq/.
 
-GIS Geography.“TIGER GIS Data (Topologically Integrated Geographic Encoding & Referencing).” Last updated April 25, 2019. Accessed August 19, 2019. https://gisgeography.com/tiger-gis-data-topologically-integrated-geographic-encoding-referencing/.
+* GIS Geography.“TIGER GIS Data (Topologically Integrated Geographic Encoding & Referencing).” Last updated April 25, 2019. Accessed August 19, 2019. https://gisgeography.com/tiger-gis-data-topologically-integrated-geographic-encoding-referencing/.
 
-GISHistory. “Allan Schmidt talks about the Harvard Laboratory for Computer Graphics and Spatial Analysis, Part 1.” Youtube. Uploaded on November 2, 2009. Accessed August 19, 2019. https://www.youtube.com/watch?v=B14LfcJN490&feature=youtu.be.
+* GISHistory. “Allan Schmidt talks about the Harvard Laboratory for Computer Graphics and Spatial Analysis, Part 1.” Youtube. Uploaded on November 2, 2009. Accessed August 19, 2019. https://www.youtube.com/watch?v=B14LfcJN490&feature=youtu.be.
 
-GISHistory. “Jack Dangermond talks about the Harvard Laboratory for Computer Graphics and Spatial Analysis.” Youtube. Uploaded on October 30, 2009. Accessed August 19, 2019. https://www.youtube.com/watch?v=BaHXDMid78I&feature=youtu.be.
+* GISHistory. “Jack Dangermond talks about the Harvard Laboratory for Computer Graphics and Spatial Analysis.” Youtube. Uploaded on October 30, 2009. Accessed August 19, 2019. https://www.youtube.com/watch?v=BaHXDMid78I&feature=youtu.be.
 
-HowToWilderness.com. Aerial Photo Stowe VT. Retrieved from “Reading a Map” article. https://howtowilderness.com/map-training/.  
+* HowToWilderness.com. Aerial Photo Stowe VT. Retrieved from “Reading a Map” article. https://howtowilderness.com/map-training/.  
 
-Jones, Douglas W. “Punched Cards: A brief illustrated technical history.” The University of Iowa Department of Computer Science. Last modified June 28, 2017. Accessed August 19, 2019. http://homepage.divms.uiowa.edu/~jones/cards/history.html.
+* Jones, Douglas W. “Punched Cards: A brief illustrated technical history.” The University of Iowa Department of Computer Science. Last modified June 28, 2017. Accessed August 19, 2019. http://homepage.divms.uiowa.edu/~jones/cards/history.html.
 
-Library of Congress. Image of punched card of Herman Hollerith. 1895. Retrieved from Wikipedia Commons image “File:Hollerith Punched Card.jpg.” http://memory.loc.gov/mss/mcc/023/0008.jpg.
+* Library of Congress. Image of punched card of Herman Hollerith. 1895. Retrieved from Wikipedia Commons image “File:Hollerith Punched Card.jpg.” http://memory.loc.gov/mss/mcc/023/0008.jpg.
 
-Micronautes. Broad Street Map/Broadwick Street Water Pump. 2017. Retrieved from “John Snow and cholera” article by Laura Gómez. http://unautes.com/index.php/2017/11/16/john-snow-and-cholera/?lang=en.
+* Micronautes. Broad Street Map/Broadwick Street Water Pump. 2017. Retrieved from “John Snow and cholera” article by Laura Gómez. http://unautes.com/index.php/2017/11/16/john-snow-and-cholera/?lang=en.
 
-Ordnance Survey. “Our History.” 2019. Accessed August 19, 2019. https://www.ordnancesurvey.co.uk/about/overview/history.html.
+* Ordnance Survey. “Our History.” 2019. Accessed August 19, 2019. https://www.ordnancesurvey.co.uk/about/overview/history.html.
 
-Parecki, Aaron. Esri in 1969. Jack Dangermond, Scott Morehouse, SJ Camarata, Logan Hardison. 2013. Retrieved from Flickr. https://www.flickr.com/photos/aaronpk/9570322487/in/photostream/.  
+* Parecki, Aaron. Esri in 1969. Jack Dangermond, Scott Morehouse, SJ Camarata, Logan Hardison. 2013. Retrieved from Flickr. https://www.flickr.com/photos/aaronpk/9570322487/in/photostream/.  
 
-Pascual, Daniel Fernández. Great Trigonometrical Survey of India. 2012. Retrieved from “Mapping an Empire” article on Deconcrete.org. https://www.deconcrete.org/2012/03/12/mapping-an-empire/.
+* Pascual, Daniel Fernández. Great Trigonometrical Survey of India. 2012. Retrieved from “Mapping an Empire” article on Deconcrete.org. https://www.deconcrete.org/2012/03/12/mapping-an-empire/.
 
-Poiker, Thomas K.,  and Ian K. Crain. “Geographic Information Systems.” In The Canadian Encyclopedia. Historica Canada. Article published February 07, 2006; Last edited February 3, 2014. Accessed August 19, 2019. https://www.thecanadianencyclopedia.ca/en/article/geographic-information-systems
+* Poiker, Thomas K.,  and Ian K. Crain. “Geographic Information Systems.” In The Canadian Encyclopedia. Historica Canada. Article published February 07, 2006; Last edited February 3, 2014. Accessed August 19, 2019. https://www.thecanadianencyclopedia.ca/en/article/geographic-information-systems
 
-Rabbitt, Mary C. “The United States Geological Survey: 1879-1989.” Circular, 1989. https://pubs.usgs.gov/circ/1050/pdf/CIRC1050.pdf.
+* Rabbitt, Mary C. “The United States Geological Survey: 1879-1989.” Circular, 1989. https://pubs.usgs.gov/circ/1050/pdf/CIRC1050.pdf.
 
-Schuster, Adam. Proto IBM. 2007. Retrieved from Flickr. https://www.flickr.com/photos/44124384537@N01/411109339.   
+* Schuster, Adam. Proto IBM. 2007. Retrieved from Flickr. https://www.flickr.com/photos/44124384537@N01/411109339.   
 
-Thompson, Clive. “From Ptolemy to GPS, the Brief History of Maps.” Smithsonian Magazine. July 2017. Accessed August 19, 2019. https://www.smithsonianmag.com/innovation/brief-history-maps-180963685/.
+* Thompson, Clive. “From Ptolemy to GPS, the Brief History of Maps.” Smithsonian Magazine. July 2017. Accessed August 19, 2019. https://www.smithsonianmag.com/innovation/brief-history-maps-180963685/.
 
-Tomlinson 1984: Geographic Information Systems - the new frontier. The Operational Geographer 5: 31-6.
+* Tomlinson 1984: Geographic Information Systems - the new frontier. The Operational Geographer 5: 31-6.
 
-Tomlinson, Roger. “Origins of the Canada Geographic Information System.” ESRI. 2012. Accessed August 19, 2019. https://www.esri.com/news/arcnews/fall12articles/origins-of-the-canada-geographic-information-system.html.
+* Tomlinson, Roger. “Origins of the Canada Geographic Information System.” ESRI. 2012. Accessed August 19, 2019. https://www.esri.com/news/arcnews/fall12articles/origins-of-the-canada-geographic-information-system.html.
 
-University Consortium for Geographic Information Science. “Roger Tomlinson.” Accessed August 19, 2019. https://www.ucgis.org/roger-tomlinson.
+* University Consortium for Geographic Information Science. “Roger Tomlinson.” Accessed August 19, 2019. https://www.ucgis.org/roger-tomlinson.
 
-US Census Bureau.“Agency History.” Last revised May 30, 2019. Accessed August 19, 2019. https://www.census.gov/history/www/census_then_now/.
+* US Census Bureau.“Agency History.” Last revised May 30, 2019. Accessed August 19, 2019. https://www.census.gov/history/www/census_then_now/.
 
-US Census Bureau. “Census Bulletin.” Published September 6, 1968. Accessed August 19, 2019. https://www.census.gov/history/pdf/1968censusbulletin-dime.pdf.
+* US Census Bureau. “Census Bulletin.” Published September 6, 1968. Accessed August 19, 2019. https://www.census.gov/history/pdf/1968censusbulletin-dime.pdf.
 
-US Census Bureau. “Dual Independent Map Encoding.” Last revised May 30, 2019. Accessed August 19, 2019. https://www.census.gov/history/www/innovations/technology/dual_independent_map_encoding.html.
+* US Census Bureau. “Dual Independent Map Encoding.” Last revised May 30, 2019. Accessed August 19, 2019. https://www.census.gov/history/www/innovations/technology/dual_independent_map_encoding.html.
 
-US Census Bureau. “Herman Hollerith.” Last revised May 17, 2018. Accessed August 19, 2019. https://www.census.gov/history/www/census_then_now/notable_alumni/herman_hollerith.html.
+* US Census Bureau. “Herman Hollerith.” Last revised May 17, 2018. Accessed August 19, 2019. https://www.census.gov/history/www/census_then_now/notable_alumni/herman_hollerith.html.
 
-US Census Bureau. Logo for the United States Census Bureau's TIGER (Topologically Integrated Geographic Encoding and Referencing. Retrieved from Wikipedia Commons image
+* US Census Bureau. Logo for the United States Census Bureau's TIGER (Topologically Integrated Geographic Encoding and Referencing. Retrieved from Wikipedia Commons image
 “File:US-Census-TIGERLogo.svg.” https://commons.wikimedia.org/wiki/File:US-Census-TIGERLogo.svg.
 
-US Geological Survey. “3D Elevation Program (3DEP).” Accessed August 19, 2019. https://www.usgs.gov/core-science-systems/ngp/3dep/about-3dep-products-services.
+* US Geological Survey. “3D Elevation Program (3DEP).” Accessed August 19, 2019. https://www.usgs.gov/core-science-systems/ngp/3dep/about-3dep-products-services.
 
-US Geological Survey. “National Geospatial Program.” Accessed August 29, 2019. https://www.usgs.gov/core-science-systems/national-geospatial-program/topographic-maps.
+* US Geological Survey. “National Geospatial Program.” Accessed August 29, 2019. https://www.usgs.gov/core-science-systems/national-geospatial-program/topographic-maps.
 
-US Geological Survey. “Overview of the USGS Digital Raster Graphic (DRG) Program.” Last modified May 11, 2017. Archived February 9, 2018. Accessed August 19, 2019. https://archive.usgs.gov/archive/sites/topomaps.usgs.gov/drg/drg_overview.html.
+* US Geological Survey. “Overview of the USGS Digital Raster Graphic (DRG) Program.” Last modified May 11, 2017. Archived February 9, 2018. Accessed August 19, 2019. https://archive.usgs.gov/archive/sites/topomaps.usgs.gov/drg/drg_overview.html.
 
-US Geological Survey. The National Map. Last modified October 22, 2018. https://viewer.nationalmap.gov/advanced-viewer/.
+* US Geological Survey. The National Map. Last modified October 22, 2018. https://viewer.nationalmap.gov/advanced-viewer/.
 
-Usery, E. Lynn, Dalia Varanka, and Michael P. Finn. “Mapping Developments and GIS in the USGS, 1884-2009.” International Cartographic Association. Accessed August 19, 2019. https://icaci.org/files/documents/ICC_proceedings/ICC2009/html/nonref/7_13.pdf.   
+* Usery, E. Lynn, Dalia Varanka, and Michael P. Finn. “Mapping Developments and GIS in the USGS, 1884-2009.” International Cartographic Association. Accessed August 19, 2019. https://icaci.org/files/documents/ICC_proceedings/ICC2009/html/nonref/7_13.pdf.   
 
-Waldheim, Charles. “The Invention of GIS.” The Harvard Gazette. Video/Production: Ned Brown. October 12, 2011. Accessed August 19, 2019. https://news.harvard.edu/gazette/story/2011/10/the-invention-of-gis/.
+* Waldheim, Charles. “The Invention of GIS.” The Harvard Gazette. Video/Production: Ned Brown. October 12, 2011. Accessed August 19, 2019. https://news.harvard.edu/gazette/story/2011/10/the-invention-of-gis/.
 
-Winfields Outdoors. Image 1 from “Interview With Ordnance Survey - History & Future of OS Maps” article.  February 18, 2016. Accessed August 29, 2019. https://www.winfieldsoutdoors.co.uk/blog/ordnance-survey-interview/.
-
-
+* Winfields Outdoors. Image 1 from “Interview With Ordnance Survey - History & Future of OS Maps” article.  February 18, 2016. Accessed August 29, 2019. https://www.winfieldsoutdoors.co.uk/blog/ordnance-survey-interview/.
 
 
 *[3DEP]: 3D Elevation Project
 *[CAD]: Computer-aided design
 *[DEM]: Digital elevation model
- *[DLG]: Digital line graphs
+*[DLG]: Digital line graphs
 *[DOQ]: Digital Orthophoto Quadrangle
 *[DRG]: Digital raster graphics
 *[GIRAS]: Geographic Information Retrieval and Analysis System
-*[NED]: National Elevation Dataset
-*[NHD]: National Hydrography Dataset
+*[NED]: The National Elevation Dataset provided seamless, high-resolution raster elevation data for the entire nation in the form of DEM layers. This project was replaced by the 3DEP. (“3D Elevation Program [3DEP],” USGS).
+*[NHD]: The National Hydrography Dataset is a comprehensive GIS dataset consisting of surface water in the United States, including lakes, ponds, streams, rivers, canals, and oceans.
 *[PIOS]: Planning Information Overlay System
 *[TIGER]: Topologically integrated geographic encoding and referencing
 *[USCB]: US Census Bureau
