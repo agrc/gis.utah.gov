@@ -3,7 +3,7 @@ title: Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2019-08-29 10:07:46
+date: 2019-09-03 10:07:46
 categories:
   - Featured
 tags:
