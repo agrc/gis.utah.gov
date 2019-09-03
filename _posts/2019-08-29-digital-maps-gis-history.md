@@ -7,7 +7,7 @@ date: 2019-08-29 10:07:46
 categories:
   - Featured
 tags:
-  - gis history
+  - history
   - data
   - education
 ---
@@ -25,17 +25,18 @@ At this time in history, maps weren’t just symbols of power --- they conferred
 
 The British took mapping to the next level in the mid to late 1700s with the British Ordnance Survey (Ordnance Survey “Our History” 2019) and The Great Trigonometrical Survey of India (a British colony at the time). This survey-based mapping marked a shift from a routing and descriptive-based process to a mathematical, grid-based technique using triangulation (Garfield 2013, 192). It also introduced the notion of fixed reference points (based on a datum) and scalability to the world of mapping.
 
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/ord_survey_uk_history.jpg" | prepend: site.baseurl }}" alt="The British Ordinance Survey" />
-  <figcaption class="caption__text" markdown="span">The British Ordinance Survey (Winfields Outdoors Image 1 from “Interview With Ordnance Survey - History & Future of OS Maps”)</figcaption>
-</figure>
-<figure class="caption--center">
-  <a href="{{ "/images/Great_Trigonometrical_Survey_India_1870.jpg" | prepend: site.baseurl }}" title="click to see the full sized image">
-    <img class="caption__image" src="{{ "/images/Great_Trigonometrical_Survey_India_1870_sm.jpg" | prepend: site.baseurl }}" alt="PLSS Principal Meridians">
-  </a>
-  <figcaption class="caption__text" markdown="span">The Great Trigonometrical Survey India 1870 (Daniel Fernández Pascual Great Trigonometrical Survey of India 2012)</figcaption>
-</figure>
-
+<div class="flex flex--around" style="align-items: flex-start">
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/ord_survey_uk_history.jpg" | prepend: site.baseurl }}" alt="The British Ordinance Survey" />
+    <figcaption class="caption__text">The British Ordinance Survey (Winfields Outdoors Image 1 from “Interview With Ordnance Survey - History & Future of OS Maps”)</figcaption>
+  </figure>
+  <figure class="caption">
+    <a href="{{ "/images/Great_Trigonometrical_Survey_India_1870.jpg" | prepend: site.baseurl }}" title="click to see the full sized image">
+      <img class="caption__image" src="{{ "/images/Great_Trigonometrical_Survey_India_1870_sm.jpg" | prepend: site.baseurl }}" alt="PLSS Principal Meridians">
+    </a>
+    <figcaption class="caption__text">The Great Trigonometrical Survey India 1870 (Daniel Fernández Pascual Great Trigonometrical Survey of India 2012)</figcaption>
+  </figure>
+</div>
 
 These advancements made it possible to create accurate cadastre, land, and natural resource maps and eventually paved the way for spatial analysis and map overlays, as accurate and scalable maps could be overlayed and analyzed for spatial patterns.
 
@@ -44,10 +45,12 @@ These advancements made it possible to create accurate cadastre, land, and natur
 
 Without the availability of the Ordnance maps and the advancements made through Britain’s general obsession with mapping, the outbreak of cholera in a London neighborhood in 1854 could have done much more damage. But John Snow, a British physician, was able to use those maps and analyze the relationship between cholera deaths and water pumps in order to prove that the water was spreading the epidemic (GIS Geography “The Remarkable History of GIS” 2019). This was innovative in 1854, but, I would argue that place and heritage also played a role. If Snow hadn’t been in Britain during that time, and if Britain hadn’t had so many mapping developments, Snow may have taken a different --- and possibly longer --- path in solving the cholera outbreak.
 
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/choleramap.png" | prepend: site.baseurl }}" alt="John Snow Cholera Map" />
-  <figcaption class="caption__text" markdown="span">John Snow Cholera Map 1854 (Micronautes Broad Street Map/Broadwick Street Water Pump 2017)</figcaption>
-</figure>
+<div class="flex flex--around">
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/choleramap.png" | prepend: site.baseurl }}" alt="John Snow Cholera Map" />
+    <figcaption class="caption__text">John Snow Cholera Map 1854 (Micronautes Broad Street Map/Broadwick Street Water Pump 2017)</figcaption>
+  </figure>
+</div>
 
 ### The Database
 {: .text-left}
@@ -56,14 +59,16 @@ Now, enter the year 1887 as the USCB is still painfully tabulating the 1880 cens
 
 His device allowed the USCB to process and store the results on punch cards, ultimately saving tons of time. This tabulation machine eventually grew into the first database, which then became the precursor to the electronic computer. These inventions were driven by the need to speed up tabulation.
 
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/tabulation_machine.png" | prepend: site.baseurl }}" alt="Hollerith's Tabulation Machine" />
-  <figcaption class="caption__text" markdown="span">Hollerith's Tabulation Machine (Adam Schuster Proto IBM 2007)</figcaption>
-</figure>
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/hollerith_punch_card.png" | prepend: site.baseurl }}" alt="Hollerith's Punch Card" />
-  <figcaption class="caption__text" markdown="span">Hollerith's Punch Card (Library of Congress Image of punched card of Herman Hollerith 1895)</figcaption>
-</figure>
+<div class="flex flex--around" style="align-items: flex-start">
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/tabulation_machine.png" | prepend: site.baseurl }}" alt="Hollerith's Tabulation Machine" />
+    <figcaption class="caption__text">Hollerith's Tabulation Machine (Adam Schuster Proto IBM 2007)</figcaption>
+  </figure>
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/hollerith_punch_card.png" | prepend: site.baseurl }}" alt="Hollerith's Punch Card" />
+    <figcaption class="caption__text">Hollerith's Punch Card (Library of Congress Image of punched card of Herman Hollerith 1895)</figcaption>
+  </figure>
+</div>
 
 Interestingly enough, Hollerith’s company was eventually merged into what we now know as IBM (which we’ll come back to later), and punch card technology played a critical role in computer programming and digital mapping well into the mid-1970s. Throughout that time, punch cards were how programmers created, edited, and stored their programs (Fisk 2005).
 
@@ -72,7 +77,7 @@ Interestingly enough, Hollerith’s company was eventually merged into what we n
 
 Jump forward to the twentieth-century and, yet again, problem-solving that led another British-born scholar into exploring map overlays. This is exactly what was on the mind of geographer Roger Tomlinson in 1962 when he struck up a conversation with Lee Pratt (Tomlinson 2012). At the time, Tomlinson was working for an aerial surveying company in Canada, and Pratt was the newly appointed head of the Canadian Land Inventory. As chance would have it, they were seated next to each other on a flight, and they started chatting about natural resources and land management in Canada's vast territory. For Tomlinson, the timing couldn't have been more ideal.
 
-In the years leading up to this encounter, Tomlinson had been working on a British aid project with the Kenyan government to locate suitable areas for tree cultivation in Kenya. The goal of the project was for Britain to assist Kenya (a former British colony) in creating its own paper. Locating suitable land for tree cultivation involved numerous map overlays. It was during this process that Tomlinson realized that digital maps would be better suited for this level of analysis, so he started exploring the idea of computers and digital mapping. But before Tomlinson could do anything with his ideas, the project ran out of money.  
+In the years leading up to this encounter, Tomlinson had been working on a British aid project with the Kenyan government to locate suitable areas for tree cultivation in Kenya. The goal of the project was for Britain to assist Kenya (a former British colony) in creating its own paper. Locating suitable land for tree cultivation involved numerous map overlays. It was during this process that Tomlinson realized that digital maps would be better suited for this level of analysis, so he started exploring the idea of computers and digital mapping. But before Tomlinson could do anything with his ideas, the project ran out of money.
 
 So as you can imagine, Tomlinson spared little detail when describing to Pratt how digital mapping could improve land management at the Canadian Land Inventory.
 
@@ -83,10 +88,12 @@ Ultimately, it was this chance encounter between Tomlinson and Pratt that eventu
 
 The development of CGIS was also when IBM entered the GIS picture: in the mid 1960s IBM was hired to build the CGIS hardware, which consisted of an IBM 360/65 mainframe computer, an interactive terminal, a drum scanner, a digitizer table, and a printing plotter. Paper maps were digitized using the drum scanner and then were given a key coordinate using the digitizer table. Coordinates were stored on punch cards (thanks, Herman Hollerith!) and the map lines were stored on magnetic tape --- at no specific scale. This data was then merged and stored. Depending on the analysis, the technician would translate the request to punch cards, retrieve the corresponding tapes, and the computer would overlay the desired map data. The results were then plotted on a map at the desired scale.
 
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/cgis.png" | prepend: site.baseurl }}" alt="CGIS Hardware" />
-  <figcaption class="caption__text" markdown="span">CGIS Hardware (Michael DeMers CGIS Screenshot 2013)</figcaption>
-</figure>
+<div class="flex flex--around">
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/cgis.png" | prepend: site.baseurl }}" alt="CGIS Hardware" />
+    <figcaption class="caption__text">CGIS Hardware (Michael DeMers CGIS Screenshot 2013)</figcaption>
+  </figure>
+</div>
 
 As the system developed, Canadian government administrators started asking the system questions, such as "What is the best land use in each area?" and "Where should the government invest in development?" To answer these and other questions, the system could overlay additional datasets, such as census figures, income levels, and employment status.
 
@@ -99,10 +106,12 @@ The Lab was formed in 1965 with a grant from the Ford Foundation to develop and 
 
 The staff and students at the Lab lived and breathed mapping. They spent countless hours hunching over IBM keypunch machines creating the programs and data used to make the software and maps. The punch cards would then have to be brought to the nearby Harvard Computer Center where the decks would be turned over to the processor to run the batch (program and data). It was the only computer on campus, so during the day, turnaround time was typically eight hours. The staff and students at the Lab learned to visit the center at midnight when the turnaround was more like two hours. However, if their code contained errors, it was back to the keypunch machine in hopes of getting a map the next time.
 
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/symap_harvard.png" | prepend: site.baseurl }}" alt="SYMAP Connecticut Map" />
-  <figcaption class="caption__text" markdown="span">SYMAP Connecticut Map (M. Friendly and D.J. Denis Early SYMAP image of Connecticut 2001)</figcaption>
-</figure>
+<div class="flex flex--around">
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/symap_harvard.png" | prepend: site.baseurl }}" alt="SYMAP Connecticut Map" />
+    <figcaption class="caption__text">SYMAP Connecticut Map (M. Friendly and D.J. Denis Early SYMAP image of Connecticut 2001)</figcaption>
+  </figure>
+</div>
 
 The Lab also offered spatial analysis services and data creation as a way to generate additional revenue and stay afloat. One of the projects the Lab embarked on, the Urban Atlas Project, was with the USCB and the National Science Foundation to restructure urban atlas files. The project’s goal was to create atlases for each of the nation’s major metropolitan areas. This required digitizing maps for some 35,000 census tracts. This project revealed weaknesses in the Lab’s existing mapping program and, as a result, in the mid-1970s the Lab developed ODYSSEY, a vector-based GIS system, with Scott Morehouse as one of the core developers. With ODYSSEY’s ability to overlay maps very quickly, it eventually became the prototype for modern GIS (Artz 2007) (Coppock and Rhind 1991).
 
@@ -113,27 +122,31 @@ ODYSSEY was a big success for the Lab, but it also put the Lab in a difficult si
 
 The Environmental Systems Research Institute (ESRI) was established in 1969 and was one of a handful of GIS companies that spawned out of the Lab (others include Intergraph, ComputerVision, and Symercom, however, they all approached GIS from a CAD perspective) (ESRI “History of GIS”). But, it’s interesting to note how chance and timing played into this company's huge success. You can trace ESRI back to the University of Minnesota, where ESRI's founder, Jack Dangermond, was a student exploring digital mapping.
 
-In an interview for the Youtube channel GIShistory, Jack discusses how the Lab had an impact on his work in the field of GIS. Jack describes how while he was at Minnesota, he  discovered a small article about the Lab and decided he had to visit. He recalls that while at the Lab he met the Lab's founder, Howard Fisher, who had a  memorable and fanatical personally. Howard was impressed with Jack's work and told Jack the whole history of the Lab in one afternoon (while Jack’s wife waited in the car) and then said, "You've just got to work here!" And so Jack did. Jack became a research assistant at the Lab from 1968 to 1969. (And as Jack says in the interview, he “was paid well,” receiving a [whopping] $4.40 an hour!) (“Jack Dangermond talks about the Harvard Laboratory for Computer Graphics and Spatial Analysis” 2009).
+In an interview for the Youtube channel GIShistory, Jack discusses how the Lab had an impact on his work in the field of GIS. Jack describes how while he was at Minnesota, he discovered a small article about the Lab and decided he had to visit. He recalls that while at the Lab he met the Lab's founder, Howard Fisher, who had a memorable and fanatical personally. Howard was impressed with Jack's work and told Jack the whole history of the Lab in one afternoon (while Jack’s wife waited in the car) and then said, "You've just got to work here!" And so Jack did. Jack became a research assistant at the Lab from 1968 to 1969. (And as Jack says in the interview, he “was paid well,” receiving a [whopping] $4.40 an hour!) (“Jack Dangermond talks about the Harvard Laboratory for Computer Graphics and Spatial Analysis” 2009).
 
-Jack recalls that in the early days, it was hard to make a digital map. One of his first computer maps took him about thirty submissions over the course of a month (“Allan Schmidt talks about the Harvard Laboratory for Computer Graphics and Spatial Analysis, Part 1” 2009). He created it using punch cards and a mainframe computer. Ultimately, Jack was able to help advance the field of GIS through his time at the Lab.  
+Jack recalls that in the early days, it was hard to make a digital map. One of his first computer maps took him about thirty submissions over the course of a month (“Allan Schmidt talks about the Harvard Laboratory for Computer Graphics and Spatial Analysis, Part 1” 2009). He created it using punch cards and a mainframe computer. Ultimately, Jack was able to help advance the field of GIS through his time at the Lab.
 
 While Jack was there, Allan Schmidt (the executive director at the time) helped Jack launch the whole vision and idea of what became ESRI. ESRI began primarily as a nonprofit doing environmental consulting work. Then in the 1970s, ESRI developed a cell-based package called GRID and then a vector system called PIOS to perform analyses (ESRI “History Up Close,” 2015).
 
-Initially, ESRI used the mainframe computer at the University of California to do all of the company’s processing. Eventually, ESRI purchased its own minicomputer and in 1982 it launched ARC/INFO, which is often called the first commercial GIS (ESRI “History Up Close” 2015).  At that point, ESRI began advertising its product as a turnkey, do-it-yourself GIS. ESRI also shifted from a nonprofit to a for-profit organization. ESRI’s ability to make ARC/INFO work across computer platforms ranging from personal computers, workstations, minicomputers, and large mainframe computers was a huge factor in the product's success.
+Initially, ESRI used the mainframe computer at the University of California to do all of the company’s processing. Eventually, ESRI purchased its own minicomputer and in 1982 it launched ARC/INFO, which is often called the first commercial GIS (ESRI “History Up Close” 2015). At that point, ESRI began advertising its product as a turnkey, do-it-yourself GIS. ESRI also shifted from a nonprofit to a for-profit organization. ESRI’s ability to make ARC/INFO work across computer platforms ranging from personal computers, workstations, minicomputers, and large mainframe computers was a huge factor in the product's success.
 
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/pc_arcinfo_1986.jpg" | prepend: site.baseurl }}" alt="ARC/INFO on PC 1986" />
-  <figcaption class="caption__text" markdown="span">ARC/INFO on PC in 1986 (ArcGIS 1986 PC ARC/INFO Released)</figcaption>
-</figure>
+<div class="flex flex--around">
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/pc_arcinfo_1986.jpg" | prepend: site.baseurl }}" alt="ARC/INFO on PC 1986" />
+    <figcaption class="caption__text">ARC/INFO on PC in 1986 (ArcGIS 1986 PC ARC/INFO Released)</figcaption>
+  </figure>
+</div>
 
 Another critical moment for the company was when Scott Morehouse, the development lead on the ODYSSEY project, left the Harvard Lab in 1981 to join ESRI. He brought with him the framework that eventually grew into ESRI’s next generation of GIS. ESRI called it ArcInfo and it is often considered the first modern GIS (“History Up Close” 2015).
 
 Since the early 1970s, ESRI has expanded from a nonprofit with a staff of 15 to a global company of well over 3,800 employees.
 
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/esri_theearlydays.jpg" | prepend: site.baseurl }}" alt="The Early Days at ESRI" />
-  <figcaption class="caption__text" markdown="span">The Early Days at ESRI (ArcGIS 1986 PC ARC/INFO Released)</figcaption>
-</figure>
+<div class="flex flex--around">
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/esri_theearlydays.jpg" | prepend: site.baseurl }}" alt="The Early Days at ESRI" />
+    <figcaption class="caption__text">The Early Days at ESRI (ArcGIS 1986 PC ARC/INFO Released)</figcaption>
+  </figure>
+</div>
 
 ### The Development of National Datasets
 {: .text-left}
@@ -146,16 +159,18 @@ Software advancements were certainly a large piece of the digital-mapping puzzle
 Since its inception, the USCB has been tasked with storing and analyzing large datasets. (As you might recall, the USCB was the agency that helped advance the tabulating machine, which eventually morphed into IBM’s first database.)
 
 One of the USCB's challenges entering the 1960s was determining how to automate address matching. The USCB was required to produce area-based tabulations based on the postal address from returned mailing surveys. In the 1970s, the USCB developed a solution it called Dual Independent Map Encoding (USCB “Dual Independent Map Encoding” 2019).
-Essentially, this was an encoding system for describing geographic data. The DIME program used intersections, streets, and blocks, which are now analogous to points, lines, and polygons. The data was stored as map coordinates on punch cards. Computers would then create maps based on these punch cards.  
+Essentially, this was an encoding system for describing geographic data. The DIME program used intersections, streets, and blocks, which are now analogous to points, lines, and polygons. The data was stored as map coordinates on punch cards. Computers would then create maps based on these punch cards.
 
 The DIME project created a need for more data, and the data created for the project was stored as geographic base files (GBF/DIME). By the end of the 1970s, the USCB had created GBF/DIME files for every US city, which gave the Bureau a schematic street map within its tabulation areas. During the 1980s these files became key components to what eventually became the TIGER files (USCB “Dual Independent Map Encoding” 2019).
 
 It's difficult to overstate how important TIGER files were, not only to the 1990 census but also to the development of many local and regional datasets. These files provided a reliable base layer that many GIS offices used to further build out their in-house datasets. TIGER data was also one of the first glimpses of a seamless national dataset, and it currently makes up the base data for OpenStreetsMap.
 
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/census_tiger_logo.png" | prepend: site.baseurl }}" alt="The Census TIGER" />
-  <figcaption class="caption__text" markdown="span">(USCB Logo for the United States Census Bureau's TIGER (Topologically Integrated Geographic Encoding and Referencing) map data format</figcaption>
-</figure>
+<div class="flex flex--around">
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/census_tiger_logo.png" | prepend: site.baseurl }}" alt="The Census TIGER" />
+    <figcaption class="caption__text">(USCB Logo for the United States Census Bureau's TIGER (Topologically Integrated Geographic Encoding and Referencing) map data format</figcaption>
+  </figure>
+</div>
 
 #### USGS
 {: .text-left}
@@ -168,12 +183,14 @@ These early maps began as hand sketches created by field surveyors and included 
 
 Demand for maps with greater detail led to the production of the 1:24,000-scale, 7.5-minute quadrangle topographic maps. These are arguably the USGS's most popular maps. Production of these maps began in the 1940s (USGS “National Geospatial Program”), and by 1991 they were declared complete (Usery, Varanka, and Finn n.d., 1). At that point, they were the most complete large-scale maps for the nation (Usery, Varanka, and Finn n.d., 1).
 
-<figure class="caption--center">
-  <img class="caption__image" src="{{ "/images/usgs_7halfmin_uppercorner.jpg" | prepend: site.baseurl }}" alt="USGS 7.5 Minute Map" />
-  <figcaption class="caption__text" markdown="span">USGS 7.5 Minute Map (HowToWilderness.com Aerial Photo Stowe VT)</figcaption>
-</figure>
+<div class="flex flex--around">
+  <figure class="caption">
+    <img class="caption__image" src="{{ "/images/usgs_7halfmin_uppercorner.jpg" | prepend: site.baseurl }}" alt="USGS 7.5 Minute Map" />
+    <figcaption class="caption__text">USGS 7.5 Minute Map (HowToWilderness.com Aerial Photo Stowe VT)</figcaption>
+  </figure>
+</div>
 
-The USGS fully embraced the idea of digital mapping in the 1970s, though all of the Survey’s map data was in analog form (i.e., in paper form). USGS’s solution was to digitize the map features on the 7.5-minute maps and output digital cartographic binary files  (USGS “Overview of the USGS Digital Raster Graphic [DRG] Program” 2017). This was the beginning of the DLGs that most of us GIS folks are so familiar with.
+The USGS fully embraced the idea of digital mapping in the 1970s, though all of the Survey’s map data was in analog form (i.e., in paper form). USGS’s solution was to digitize the map features on the 7.5-minute maps and output digital cartographic binary files (USGS “Overview of the USGS Digital Raster Graphic [DRG] Program” 2017). This was the beginning of the DLGs that most of us GIS folks are so familiar with.
 
 The USGS also developed a land-cover mapping program in the 1970s that generated land-use and land-cover information from remotely sensed imagery. Digital data was created for hydrologic units, political boundaries, census tracts, and federal lands. Under the program, the USGS developed a GIS (specifically the GIRAS) to tabulate the land cover by county or hydrologic unit. As a result of this program, digital map data was generated for the entire United States in an arc-node vector format (Coppock and Rhind 1991, 31).
 
@@ -194,7 +211,7 @@ The USCB and the USGS have both played invaluable roles in advancing GIS. Not on
 
 The motivation for GIS has varied widely, but most of the field’s innovation grew from academic curiosity and the governmental challenges of looking for solutions with large datasets (Coppock and Rhind 1991, 21–43).
 
-When you explore the individual stories of GIS history, you see that chance, timing, and heritage played into its development.       
+When you explore the individual stories of GIS history, you see that chance, timing, and heritage played into its development.
 
 You see how the British, with their obsession with surveying and mapping, laid much of the groundwork for GIS and that many of the early key players in mapping were of British heritage. Not only did they have access to accurate maps and tools --- they were also wired with the mindset that mapping advances society.
 
@@ -208,12 +225,13 @@ You also see how timing played a role in the second generation of GIS, as person
 
 The current GIS platform is built on web applications, shareable web services, and cloud computing. But, in this article we explored the interwoven stories that you discover when you zoom in on the history of GIS. Hopefully, when you zoom back out you will now have a greater appreciation for today's GIS.
 
-<figure class="caption--center">
-  <a href="{{ "/images/20190829_AGRC_Infographic_KeyMomentsinGIS.png" | prepend: site.baseurl }}" title="click to see the full sized image">
-    <img class="caption__image" src="{{ "/images/20190829_AGRC_Infographic_KeyMomentsinGIS_sm.png" | prepend: site.baseurl }}" alt="Key Moments in GIS Historically">
-  </a>
-  <figcaption class="caption__text" markdown="span"></figcaption>
-</figure>
+<div class="flex flex--around">
+  <figure class="caption">
+    <a href="{{ "/images/20190829_AGRC_Infographic_KeyMomentsinGIS.png" | prepend: site.baseurl }}" title="click to see the full sized image">
+      <img class="caption__image" src="{{ "/images/20190829_AGRC_Infographic_KeyMomentsinGIS_sm.png" | prepend: site.baseurl }}" alt="Key Moments in GIS Historically">
+    </a>
+  </figure>
+</div>
 
 Note: a special thanks to the editor, Anna Tribolet for her awesome editing skills and for the creation of the 'Key Moments in GiS' infographic!
 
@@ -224,9 +242,9 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 
 * Anam, Aysha. “How India was measured: Story of the Great Trigonometrical Survey of India.” India Today. Published July 10, 2018. Updated July 12, 2018. Accessed August 19, 2019. https://www.indiatoday.in/education-today/gk-current-affairs/story/how-was-india-measured-why-is-it-important-to-measure-land-1281835-2018-07-10.
 
-* ArcGIS. 1986 PC ARC/INFO Released. Retrieved from “Our Common History” story map.  https://www.arcgis.com/apps/MapJournal/index.html?appid=df8224427fc741ab9f8117e9af1d692a.
+* ArcGIS. 1986 PC ARC/INFO Released. Retrieved from “Our Common History” story map. https://www.arcgis.com/apps/MapJournal/index.html?appid=df8224427fc741ab9f8117e9af1d692a.
 
-* Artz, Matt. “Charting the Unknown: How Computer Mapping at Harvard Became GIS.” GIS and Science. November 17, 2009. Accessed August 19, 2019. https://gisandscience.com/2009/11/17/charting-the-unknown-how-computer-mapping-at-harvard-became-gis/.  
+* Artz, Matt. “Charting the Unknown: How Computer Mapping at Harvard Became GIS.” GIS and Science. November 17, 2009. Accessed August 19, 2019. https://gisandscience.com/2009/11/17/charting-the-unknown-how-computer-mapping-at-harvard-became-gis/.
 
 * Beniger, James Ralph. The Control Revolution: Technological and Economic Origins of the Information Society, 411–412. Cambridge (MA): Harvard University Press, 1997. Accessed on 7/31/2019 via Google Books.
 
@@ -262,7 +280,7 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 
 * GISHistory. “Jack Dangermond talks about the Harvard Laboratory for Computer Graphics and Spatial Analysis.” Youtube. Uploaded on October 30, 2009. Accessed August 19, 2019. https://www.youtube.com/watch?v=BaHXDMid78I&feature=youtu.be.
 
-* HowToWilderness.com. Aerial Photo Stowe VT. Retrieved from “Reading a Map” article. https://howtowilderness.com/map-training/.  
+* HowToWilderness.com. Aerial Photo Stowe VT. Retrieved from “Reading a Map” article. https://howtowilderness.com/map-training/.
 
 * Jones, Douglas W. “Punched Cards: A brief illustrated technical history.” The University of Iowa Department of Computer Science. Last modified June 28, 2017. Accessed August 19, 2019. http://homepage.divms.uiowa.edu/~jones/cards/history.html.
 
@@ -272,15 +290,15 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 
 * Ordnance Survey. “Our History.” 2019. Accessed August 19, 2019. https://www.ordnancesurvey.co.uk/about/overview/history.html.
 
-* Parecki, Aaron. Esri in 1969. Jack Dangermond, Scott Morehouse, SJ Camarata, Logan Hardison. 2013. Retrieved from Flickr. https://www.flickr.com/photos/aaronpk/9570322487/in/photostream/.  
+* Parecki, Aaron. Esri in 1969. Jack Dangermond, Scott Morehouse, SJ Camarata, Logan Hardison. 2013. Retrieved from Flickr. https://www.flickr.com/photos/aaronpk/9570322487/in/photostream/.
 
 * Pascual, Daniel Fernández. Great Trigonometrical Survey of India. 2012. Retrieved from “Mapping an Empire” article on Deconcrete.org. https://www.deconcrete.org/2012/03/12/mapping-an-empire/.
 
-* Poiker, Thomas K.,  and Ian K. Crain. “Geographic Information Systems.” In The Canadian Encyclopedia. Historica Canada. Article published February 07, 2006; Last edited February 3, 2014. Accessed August 19, 2019. https://www.thecanadianencyclopedia.ca/en/article/geographic-information-systems
+* Poiker, Thomas K., and Ian K. Crain. “Geographic Information Systems.” In The Canadian Encyclopedia. Historica Canada. Article published February 07, 2006; Last edited February 3, 2014. Accessed August 19, 2019. https://www.thecanadianencyclopedia.ca/en/article/geographic-information-systems
 
 * Rabbitt, Mary C. “The United States Geological Survey: 1879-1989.” Circular, 1989. https://pubs.usgs.gov/circ/1050/pdf/CIRC1050.pdf.
 
-* Schuster, Adam. Proto IBM. 2007. Retrieved from Flickr. https://www.flickr.com/photos/44124384537@N01/411109339.   
+* Schuster, Adam. Proto IBM. 2007. Retrieved from Flickr. https://www.flickr.com/photos/44124384537@N01/411109339.
 
 * Thompson, Clive. “From Ptolemy to GPS, the Brief History of Maps.” Smithsonian Magazine. July 2017. Accessed August 19, 2019. https://www.smithsonianmag.com/innovation/brief-history-maps-180963685/.
 
@@ -309,11 +327,11 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 
 * US Geological Survey. The National Map. Last modified October 22, 2018. https://viewer.nationalmap.gov/advanced-viewer/.
 
-* Usery, E. Lynn, Dalia Varanka, and Michael P. Finn. “Mapping Developments and GIS in the USGS, 1884-2009.” International Cartographic Association. Accessed August 19, 2019. https://icaci.org/files/documents/ICC_proceedings/ICC2009/html/nonref/7_13.pdf.   
+* Usery, E. Lynn, Dalia Varanka, and Michael P. Finn. “Mapping Developments and GIS in the USGS, 1884-2009.” International Cartographic Association. Accessed August 19, 2019. https://icaci.org/files/documents/ICC_proceedings/ICC2009/html/nonref/7_13.pdf.
 
 * Waldheim, Charles. “The Invention of GIS.” The Harvard Gazette. Video/Production: Ned Brown. October 12, 2011. Accessed August 19, 2019. https://news.harvard.edu/gazette/story/2011/10/the-invention-of-gis/.
 
-* Winfields Outdoors. Image 1 from “Interview With Ordnance Survey - History & Future of OS Maps” article.  February 18, 2016. Accessed August 29, 2019. https://www.winfieldsoutdoors.co.uk/blog/ordnance-survey-interview/.
+* Winfields Outdoors. Image 1 from “Interview With Ordnance Survey - History & Future of OS Maps” article. February 18, 2016. Accessed August 29, 2019. https://www.winfieldsoutdoors.co.uk/blog/ordnance-survey-interview/.
 
 
 *[3DEP]: 3D Elevation Project
