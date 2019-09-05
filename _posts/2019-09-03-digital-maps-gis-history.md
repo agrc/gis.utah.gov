@@ -227,8 +227,8 @@ The current GIS platform is built on web applications, shareable web services, a
 
 <div class="flex flex--around">
   <figure class="caption">
-    <a href="{{ "/images/20190829_AGRC_Infographic_KeyMomentsinGIS.png" | prepend: site.baseurl }}" title="click to see the full sized image">
-      <img class="caption__image" src="{{ "/images/20190829_AGRC_Infographic_KeyMomentsinGIS_sm.png" | prepend: site.baseurl }}" alt="Key Moments in GIS Historically">
+    <a href="{{ "/images/201909KeyMomentsInfographic.jpg" | prepend: site.baseurl }}" title="click to see the full sized image">
+      <img class="caption__image" src="{{ "/images/201909KeyMomentsInfographic_sm.jpg" | prepend: site.baseurl }}" alt="Key Moments in GIS Historically">
     </a>
   </figure>
 </div>
