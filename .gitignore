@@ -6,5 +6,5 @@ node_modules/
 .bundle/
 Gemfile.lock
 *.pyc
-
+.jekyll-cache/
 scripts/*.json
