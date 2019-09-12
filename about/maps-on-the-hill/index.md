@@ -52,7 +52,7 @@ categories: []
 
 ![Maps on the Hill January 28, 2015](moth2015.png){: .outline }
 
-- [Map Book]({{ "/downloads/Maps-on-the-Hill-2015-Book-80-pages-FINAL-web.pdf" | prepend: site.baseurl }})
+- [Map Book]({% link downloads/Maps-on-the-Hill-2015-Book-80-pages-FINAL-web.pdf %})
 - [Photos](https://www.flickr.com/photos/118521371@N02/sets/72157650544752656/)
 {: .dotless .no-padding }
   </div>
@@ -61,7 +61,7 @@ categories: []
 
 ![Maps on the Hill January 29, 2014](moth2014.png){: .outline }
 
-- [Map Book]({{ "/downloads/Maps-on-the-Hill-Map-Book-2014-web.pdf" | prepend: site.baseurl }})
+- [Map Book]({% link downloads/Maps-on-the-Hill-Map-Book-2014-web.pdf %})
 - [Photos](https://www.flickr.com/photos/118521371@N02/albums/72157641427057164)
 {: .dotless .no-padding }
   </div>
@@ -70,7 +70,7 @@ categories: []
 
 ![Maps on the Hill January 28, 2013](moth2013.png){: .outline }
 
-- [Map Book]({{ "/downloads/MapsontheHillMapBook2013.pdf" | prepend: site.baseurl }})
+- [Map Book]({% link downloads/MapsontheHillMapBook2013.pdf %})
 {: .dotless .no-padding }
   </div>
   <div markdown="1">
@@ -78,7 +78,7 @@ categories: []
 
 ![Maps on the Hill February 29, 2012](moth2012.png){: .outline }
 
-- [Map Book]({{ "/downloads/2012MapsOnTheHill_bookletSM.pdf" | prepend: site.baseurl }})
+- [Map Book]({% link downloads/2012MapsOnTheHill_bookletSM.pdf %})
 {: .dotless .no-padding }
   </div>
 </div>

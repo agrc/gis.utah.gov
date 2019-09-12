@@ -9,8 +9,8 @@ categories: []
 date: 2013-07-09 17:38:46 -0600
 ---
 <p>
-    <img src="{{ "/images/NewsletterThumb.png" | prepend: site.baseurl }}" alt="" title="Newsletter Screenshot" class="inline-text-right" />
-    AGRC distributes a monthly newsletter that features AGRC news and other statewide GIS announcements. {% include contact.html subject=page.title contact=site.data.contacts.newsletter text='If you have an item you would like included in the newsletter, contact' %} Map spotlights, events, and other technical news from the community are always welcome. Subscribe to the newsletter at the bottom of any webpage on gis.utah.gov. All individual blogposts are available on the <a href="{{ "/news" | prepend: site.baseurl }}">news</a> page.</p>
+    <img src="{% link images/NewsletterThumb.png %}" alt="" title="Newsletter Screenshot" class="inline-text-right" />
+    AGRC distributes a monthly newsletter that features AGRC news and other statewide GIS announcements. {% include contact.html subject=page.title contact=site.data.contacts.newsletter text='If you have an item you would like included in the newsletter, contact' %} Map spotlights, events, and other technical news from the community are always welcome. Subscribe to the newsletter at the bottom of any webpage on gis.utah.gov. All individual blog posts are available on the <a href="{% link news/index.html %}">news</a> page.</p>
 <div class="clear"></div>
 <div class="grid">
     <div class="grid__col grid__col--1-of-3">
@@ -66,10 +66,10 @@ date: 2013-07-09 17:38:46 -0600
         <p><a href="https://us2.campaign-archive2.com/?u=0f7773ca3c6d02d1c38851ee9&id=013bd8e649">AGRC Newsletter October 2013</a></p>
         <p><a href="https://us2.campaign-archive1.com/?u=0f7773ca3c6d02d1c38851ee9&id=0576d3b0d0">AGRC Newsletter August/September 2013</a></p>
         <p><a href="https://us2.campaign-archive1.com/?u=0f7773ca3c6d02d1c38851ee9&id=7e8f68897c">AGRC Newsletter July 2013</a></p>
-        <p><a href="{{ "/downloads/AGRCNewsletter_June2013.pdf" | prepend: site.baseurl }}">AGRC Newsletter June 2013</a></p>
-        <p><a href="{{ "/downloads/AGRCNewsletter_April2013.pdf" | prepend: site.baseurl }}">AGRC Newsletter April 2013</a></p>
-        <p><a href="{{ "/downloads/AGRCNewsletter_March2013.pdf" | prepend: site.baseurl }}">AGRC Newsletter March 2013</a></p>
-        <p><a href="{{ "/downloads/AGRCNewsletter_December2012.pdf" | prepend: site.baseurl }}">AGRC Newsletter December 2012</a></p>
-        <p><a href="{{ "/downloads/AGRCNewsletter_November2012.pdf" | prepend: site.baseurl }}">AGRC Newsletter November 2012</a></p>
+        <p><a href="{% link downloads/AGRCNewsletter_June2013.pdf %}">AGRC Newsletter June 2013</a></p>
+        <p><a href="{% link downloads/AGRCNewsletter_April2013.pdf %}">AGRC Newsletter April 2013</a></p>
+        <p><a href="{% link downloads/AGRCNewsletter_March2013.pdf %}">AGRC Newsletter March 2013</a></p>
+        <p><a href="{% link downloads/AGRCNewsletter_December2012.pdf %}">AGRC Newsletter December 2012</a></p>
+        <p><a href="{% link downloads/AGRCNewsletter_November2012.pdf %}">AGRC Newsletter November 2012</a></p>
     </div>
 </div>

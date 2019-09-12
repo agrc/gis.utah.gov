@@ -28,7 +28,7 @@ PlaceAreas:
     - December 2010
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{{ "/images/GNISLarge.png" | prepend: site.baseurl }}" alt="UTGNIS" />
+  <img class="caption__image" src="{% link images/GNISLarge.png %}" alt="UTGNIS" />
   <figcaption class="caption__text">GNIS Points in Utah</figcaption>
 </figure>
 {% include abstract.html
@@ -45,7 +45,7 @@ PlaceAreas:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/GNISsmall.png" | prepend: site.baseurl }}" alt="GNIS" />
+    <img class="inline-text-left outline" src="{% link images/GNISsmall.png %}" alt="GNIS" />
     <p>Location.PlaceNamesGNIS2019 contains the latest release of the GNIS dataset for the state of Utah. The dataset consists of point locations with corresponding feature names. All point entities are categorized by feature type.</p>
     <p>There are no constraints or warranties with regard to the use of this dataset.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
@@ -64,7 +64,7 @@ PlaceAreas:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/PlaceAreas.png" | prepend: site.baseurl }}" alt="GNIS" />
+    <img class="inline-text-left outline" src="{% link images/PlaceAreas.png %}" alt="GNIS" />
     <p>This data contains polygons of commonly used places in mapping. It was created by AGRC from multiple sources including the GNIS point, municipalities, counties, political districts, zipcodes, etc.. The dataset is named <code>ZoomLocations</code> since the names and geometries can be used to zoom to common areas on a map with widgets like <a href="https://github.com/agrc-widgets/sherlock">Sherlock</a>.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>

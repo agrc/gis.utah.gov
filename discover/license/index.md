@@ -12,9 +12,9 @@ categories: []
 ### Background
 {: .text-left}
 
-At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial photography (_read the original post about the acquisition [here]({{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %})_). This license allows **Utah's cities, counties, special districts, state agencies, K12/Higher ed, and tribes** to use the imagery in web and desktop mapping applications through a streaming web service or, where needed, on-premise from locally-stored files. The license also allows **use by contractors and formal partners of the immediate licensees**.
+At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial photography (_read the original post about the [acquisition]({% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %})_). This license allows **Utah's cities, counties, special districts, state agencies, K12/Higher ed, and tribes** to use the imagery in web and desktop mapping applications through a streaming web service or, where needed, on-premise from locally-stored files. The license also allows **use by contractors and formal partners of the immediate licensees**.
 
-The imagery is hosted in Google's cloud and delivered as WMS and WTMS Open Geospatial Consortium (OGC) services via AGRC's **[Discover]({{ "/discover" | prepend: site.baseurl }})** basemap and imagery server. The original `.jp2` imagery tiles can be downloaded or obtained from AGRC, which keeps a master set of the imagery files.
+The imagery is hosted in Google's cloud and delivered as WMS and WTMS Open Geospatial Consortium (OGC) services via AGRC's **[Discover]({% link discover/index.html %})** basemap and imagery server. The original `.jp2` imagery tiles can be downloaded or obtained from AGRC, which keeps a master set of the imagery files.
 
 ### Who Qualifies?
 {: .text-left}
@@ -47,24 +47,24 @@ The imagery is hosted in Google's cloud and delivered as WMS and WTMS Open Geosp
 ### Sign Up Information
 {: .text-left}
 
-If you qualify to use the Google imagery under the terms of the license, visit the main [Discover]({{ "/discover" | prepend: site.baseurl }}) page for sign up information and a link to the Organizational Usage Agreement.
+If you qualify to use the Google imagery under the terms of the license, visit the main [Discover]({% link discover/index.html %}) page for sign up information and a link to the Organizational Usage Agreement.
 
-**Check out valuable information** and FAQs about [using Discover services]({{ "/discover/resources" | prepend: site.baseurl }}).
+**Check out valuable information** and FAQs about [using Discover services]({% link discover/resources/index.md %}).
 
 ### Archive news and updates
 {: .text-left}
 
-- Initial announcement: [Utah Acquires High Resolution Aerial Photography License]({{site.baseurl}}{% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}).
-- Using Utah's Google Imagery License [(March 5th, 2015)]({{site.baseurl}}{% post_url 2015-03-05-google-imagery-license-update-march-5th %})
-- Google Imagery [(Update, July 2015)]({{site.baseurl}}{% post_url 2015-07-30-google-imagery-update-july-2015 %})
-- Google Imagery [(Update, November 2015)]({{site.baseurl}}{% post_url 2015-11-24-google-imagery-service-speed-enhancements-more %})
+- Initial announcement: [Utah Acquires High Resolution Aerial Photography License]({% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}).
+- Using Utah's Google Imagery License [(March 5th, 2015)]({% post_url 2015-03-05-google-imagery-license-update-march-5th %})
+- Google Imagery [(Update, July 2015)]({% post_url 2015-07-30-google-imagery-update-july-2015 %})
+- Google Imagery [(Update, November 2015)]({% post_url 2015-11-24-google-imagery-service-speed-enhancements-more %})
 - <i class="fab fa-youtube" aria-hidden="true"></i> The [Google Imagery License Town Hall meeting](https://youtu.be/Wch2M2rBJhU) presents background on the license, GIS and developer user info, and a look forward at future options.
 
 {% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
 {{ license }}
 
-<a href="{{ "/downloads/Diverging-Diamond-Interchange-Google-Imagery.png" | prepend: site.baseurl }}">
-<img src="{{ "/images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png" | prepend: site.baseurl }}" alt="" title="Click to enlarge" />
+<a href="{% link downloads/Diverging-Diamond-Interchange-Google-Imagery.png %}">
+<img src="{% link images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png %}" alt="" title="Click to enlarge" />
 </a>
 
 Diverging diamond interchange @ I-15 and 11000 North, Lehi

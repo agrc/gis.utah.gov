@@ -19,7 +19,7 @@ RetailCulinaryWater:
     - December 2015
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{{ "/images/CulinaryWater255x255.png" | prepend: site.baseurl }}" alt="Culinary Water" />
+  <img class="caption__image" src="{% link images/CulinaryWater255x255.png %}" alt="Culinary Water" />
   <figcaption class="caption__text">Culinary Water Supplier Boundaries</figcaption>
 </figure>
 {% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVEYzSFhyWEY5bEE"
@@ -32,7 +32,7 @@ abstract="This dataset attempts to represent the retail culinary water suppliers
       <a href="#RetailCulinaryWater" class="anchor--link">Retail Culinary Water</a></h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/CulinaryWater90x90.png" | prepend: site.baseurl }}" alt="Culinary Water Thumb" />
+    <img class="inline-text-left outline" src="{% link images/CulinaryWater90x90.png %}" alt="Culinary Water Thumb" />
     <p>Utilities.RetailCulinaryWaterServiceAreas represents public community water suppliers. Eventually, public non-community (transient) and self-supplied industry (non-transient) suppliers will be added. This feature class includes system boundaries that are historical and no longer active. It also includes some systems that are outside the state. Historical and outside the state systems can be filtered using the <code>ENDYEAR</code> and <code>STATE</code> fields, respectively.These boundaries are derived from many different sources. They include spatial data received directly from the supplier, municipal boundaries, phone call descriptions of service areas, printed maps that had hand drawn boundaries that were then digitized, etc.</p>
   </div>
   {% include packagedata.html name="RetailCulinaryWater"

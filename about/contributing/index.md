@@ -9,7 +9,7 @@ categories:
   - Tutorial
 ---
 
-The Utah GIS community accomplishes great things when working together. The [UGIC Conference](http://ugic.info/), the many [GIS User Groups]({{ "/about/organizations/user-groups/" | prepend: site.baseurl }}), and datasets like Statewide [Address Points]({{ "/data/location/address-data/" | prepend: site.baseurl }}) are some examples of the community working together to create meaningful products. This website is no different; contributions to gis.utah.gov are welcome and encouraged!
+The Utah GIS community accomplishes great things when working together. The [UGIC Conference](http://ugic.info/), the many [GIS User Groups]({% link about/organizations/user-groups/index.md %}), and datasets like Statewide [Address Points]({% link data/location/address-data/index.html %}) are some examples of the community working together to create meaningful products. This website is no different; contributions to gis.utah.gov are welcome and encouraged!
 
 <div style="position:relative;left:50%;margin-left:-320px">
     <iframe src="https://player.vimeo.com/video/163472161" width="640" height="537" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -20,7 +20,7 @@ The Utah GIS community accomplishes great things when working together. The [UGI
 
 #### Modifying Existing content
 
-We have a great article that describes two methods for [editing existing content]({{ "/about/contributing/edit-existing/" | prepend: site.baseurl }}) on the gis.utah.gov website.
+We have a great article that describes two methods for [editing existing content]({% link about/contributing/edit-existing/index.md %}) on the gis.utah.gov website.
 
 #### Creating New Content
 
@@ -34,7 +34,7 @@ The first decision an author needs to make is whether to create a `Post` or a `P
 
 #### The Starting Point
 
-![templater screenshot]({{ "images/content-templater.png" | prepend: site.baseurl }})
+![templater screenshot]({% link about/contributing/images/content-templater.png %})
 {:.inline-text-right}
 The ever resourceful [Scott Davis](https://twitter.com/@SThomasDavis) created a great tool, the [Templater](http://agrc.github.io/templater/), to create a starting point for authoring new content. This is _the_ entry point for all authors creating new content.
 

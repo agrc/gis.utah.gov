@@ -7,7 +7,7 @@ layout: default
     <a href="{{ post.url | prepend: site.baseurl }}"><i class="far fa-newspaper"></i> {{ post.title | truncate: 80 }}</a>
   </div>{% endfor %}
 </div>
-<div class="lozad grid main" data-background-image="{{"/images/backgrounds/blueprint.jpg" | prepend: site.baseurl }}">
+<div class="lozad grid main" data-background-image="{% link images/backgrounds/blueprint.jpg %}">
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#data"><h3 class="main-heading">GIS Map Data</h3></a>
     <hr class="hr-separate" />
@@ -19,16 +19,16 @@ layout: default
     <p class="main-text"><a href="#tiles"><i class="far fa-image fa-4x fa-pull-left" title="Aerial Imagery &amp; Base Maps"></i></a> SGID aerial photography and base map services provide critical map context for GIS and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-    <a href="{{ "/gps/" | prepend: site.baseurl }}"><h3 class="main-heading">VRS GPS Network</h3></a>
+    <a href="{% link gps/index.html %}"><h3 class="main-heading">VRS GPS Network</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#gps"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 64.2" class="turngps" aria-labelledby="svg-inline--fa-turn" role="img">
+    <p class="main-text"><a href="{% link gps/index.html %}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 64.2" class="turngps" aria-labelledby="svg-inline--fa-turn" role="img">
       <title id="svg-inline--fa-turn">GPS Networks</title>
       <path class="turngps-logo" d="M-195.3-268.5H937.5v566.4H-195.3z"/><path class="panel" d="M22.3 34.1L23 1 1.2 34.2z"/><path class="panel" d="M53.7 8.6L22.3 34.1 23 1z"/><path class="panel" d="M59.8 37.2l-37.5-3.1L53.7 8.6zM44.7 63L22.3 34.1l37.5 3.1z"/><path class="panel" d="M15.8 57.8l6.5-23.7L44.7 63z"/><path class="panel" d="M15.8 57.8L1.2 34.2l21.1-.1z"/><circle class="dot" cx="23" cy="1" r="1"/><circle class="dot" cx="53.7" cy="8.6" r="1"/><circle class="dot" cx="59.8" cy="37.2" r="1"/><circle class="dot" cx="44.7" cy="63" r="1"/><circle class="dot" cx="22.3" cy="34.1" r="1"/><circle class="dot" cx="15.8" cy="57.8" r="1"/><circle class="dot" cx="1.2" cy="34.1" r="1"/></svg></a> VRS (virtual-reference-station) GPS Network is the foundation for live, up-to-sub-centimeter precision GPS field surveying, mapping, and construction. We currently maintain two networks, TURN GPS, which covers Utah and surrounding areas, and Nevada GPS covering Washoe County Nevada.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#dev"><h3 class="main-heading">Utah Map Applications</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#dev"><i class="fas fa-rocket fa-4x fa-pull-left" title="AGRC Dev Team Creations"></i></a> AGRC’s development team designs, builds, and hosts cutting edge map-based web applications, custom designed to best meet specific agency/program requirements. From <a href="https://atlas.utah.gov/" rel="no-opener">up-to-date Utah reference maps</a> to <a href="{{ "/developer/applications/" | prepend: site.baseurl }}" rel="no-opener">custom designed web apps</a> that best put specific agency/program information at your fingertips.</p>
+    <p class="main-text"><a href="#dev"><i class="fas fa-rocket fa-4x fa-pull-left" title="AGRC Dev Team Creations"></i></a> AGRC’s development team designs, builds, and hosts cutting edge map-based web applications, custom designed to best meet specific agency/program requirements. From <a href="https://atlas.utah.gov/" rel="no-opener">up-to-date Utah reference maps</a> to <a href="{% link developer/applications/index.html %}" rel="no-opener">custom designed web apps</a> that best put specific agency/program information at your fingertips.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#api"><h3 class="main-heading">Geo APIs</h3></a>
@@ -61,8 +61,8 @@ layout: default
       <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
     </div>{% endfor %}
     <p class="section-read-more">
-      <a href="{{ "/news/" | prepend: site.baseurl }}" class="btn">All Recent News</a>
-      <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}" class="btn">Past Newsletters</a>
+      <a href="{% link news/index.html %}" class="btn">All Recent News</a>
+      <a href="{% link agrc-newsletter/index.html %}" class="btn">Past Newsletters</a>
     </p>
     <hr class="hr-separate" style="margin-top: 2em" />
     <div class="grid__col grid__col--1-of-2">
@@ -70,7 +70,7 @@ layout: default
     </div>
     <div class="grid__col grid__col--1-of-2">
       <p>AGRC encourages GIS professionals and students to periodically contribute news and updates, to both our blog pages and
-      <a href="{{ "/agrc-newsletter/" | prepend: site.baseurl }}">newsletter</a>.
+      <a href="{% link agrc-newsletter/index.html %}">newsletter</a>.
       Use the form at the bottom of any gis.utah.gov page to subscribe. {% include contact.html subject="Contributing GIS News" contact=site.data.contacts.newsletter text='Contact' hide-punctuation=true %} to contribute.</p>
     </div>
   </div>
@@ -84,10 +84,10 @@ layout: default
     <div class="grid__col grid__col--1-of-2">
       <p>Today, interoperable GIS server technology has diminished the importance of a completely centralized map data repository. But, it's actually more critical that the latest and best quality GIS data resources are readily discovered and accessed. And that's true for resources available to users as downloadable shapefiles as well as resources available as connections to live streaming data services. AGRC strives to ensure that the SGID stays current as a state-level channel to aide in the discovery, access, and use of GIS data resources.</p>
     </div>
-    <h3>Filter the <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">master SGID Index table</a> for data &amp; services...</h3>
+    <h3>Filter the <a href="{% link data/sgid-index/index.html %}">master SGID Index table</a> for data &amp; services...</h3>
     <div class="grid__col--span-all grid__col--centered grid__col--s-hidden" style="width:568px">
-      <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">
-        <img alt="SGID Index Table Search" class="lozad" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/sgid-index.png" | prepend: site.baseurl }}">
+      <a href="{% link data/sgid-index/index.html %}">
+        <img alt="SGID Index Table Search" class="lozad" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/sgid-index.png %}">
       </a>
     </div>
     <h3>...or browse specific Data Categories</h3>
@@ -482,14 +482,14 @@ layout: default
       </a>
     </div>
     <p class="section-read-more">
-      <a href="{{ "/data/" | prepend: site.baseurl }}" class="btn">View All Data</a>
+      <a href="{% link data/index.html %}" class="btn">View All Data</a>
     </p>
   </div>
   <div class="grid__col section alternate">
     <a id="tiles" class="anchor"></a>
     <h2>Base Maps and Imagery</h2>
     <div class="grid__col grid__col--1-of-3">
-      <p>AGRC hosts aerial photography and pre-rendered base map services on its <a href="{{ "/discover/" | prepend: site.baseurl }}"> Discover</a> cloud-based server. After obtaining an organizational login, GIS users, CAD users, and web apps can connect to these multi-scale maps using the Open Geospatial Consortium WMS and WMTS protocols. The Discover service provides images and tiles in the Web Mercator projection, an industry standard for web map display.</p>
+      <p>AGRC hosts aerial photography and pre-rendered base map services on its <a href="{% link discover/index.html %}"> Discover</a> cloud-based server. After obtaining an organizational login, GIS users, CAD users, and web apps can connect to these multi-scale maps using the Open Geospatial Consortium WMS and WMTS protocols. The Discover service provides images and tiles in the Web Mercator projection, an industry standard for web map display.</p>
     </div>
     <div class="grid__col grid__col--1-of-3">
       <p>Layers accessible from the Discover server include themed base maps built from local &amp; state GIS data in terrain, lite, topo, and hybrid themes. Aerial photography offerings include the latest 6" statewide imagery licensed for state, local, &amp; tribal government from Google, as well as public domain color NAIP, Wasatch Front HRO, CIR/NRG imagery, and the historic B/W DOQ series.</p>
@@ -499,15 +499,15 @@ layout: default
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
       <h5 class="text-center">Terrain</h5>
-      <img alt="Terrain" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/brianhead_terrain_basemap.png" | prepend: site.baseurl }}">
+      <img alt="Terrain" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/brianhead_terrain_basemap.png %}">
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
       <h5 class="text-center">Imagery plus Overlay base maps</h5>
-      <img alt="Imagery plus Overlay base maps" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/stgeorge_hybrid_basemap.png" | prepend: site.baseurl }}">
+      <img alt="Imagery plus Overlay base maps" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/stgeorge_hybrid_basemap.png %}">
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
       <h5 class="text-center">Lite base map</h5>
-      <img alt="Lite base map" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/provo_lite_basemap.png" | prepend: site.baseurl }}">
+      <img alt="Lite base map" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/provo_lite_basemap.png %}">
     </div>
     <div class="grid__col grid__col--1-of-2">
       <p>AGRC's <a href="https://atlas.utah.gov">atlas.utah.gov</a> website allows for a quick preview of the most popular base map services. Zoom in for richer map content, click the map for key location-specific info, and use the base map selector in the upper right corner to select your base map of choice.</p>
@@ -516,9 +516,9 @@ layout: default
       <p>Among the locally sourced map layers that AGRC incorporates into its base maps are: municipal boundaries, building-specific address points, road centerlines per UDOT specs, and State-stewarded public lands boundaries.</p>
     </div>
     <p class="section-read-more">
-      <a href="{{ "/discover/" | prepend: site.baseurl }}" class="btn">Discover Server Information</a>
-      <a href="{{ "/data/base-map-and-imagery/" | prepend: site.baseurl }}" class="btn">Base Map Information</a>
-      <a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}" class="btn">Imagery Download Information</a>
+      <a href="{% link discover/index.html %}" class="btn">Discover Server Information</a>
+      <a href="{% link data/base-map-and-imagery/index.md %}" class="btn">Base Map Information</a>
+      <a href="{% link data/aerial-photography/index.html %}" class="btn">Imagery Download Information</a>
     </p>
   </div>
   <div class="grid__col section alternate">
@@ -533,37 +533,37 @@ layout: default
     <h5 class="text-center">Some of our recent, and occasionally award-winning, work includes:</h5>
     <br>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{{ "/developer/applications/watershed-restoration-initiative/" | prepend: site.baseurl }}"><h5 class="text-center">WRI (DNR-DWR)</h5>
-      <img alt="WRI (DNR-DWR)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/applications/wri_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <a href="{% link developer/applications/watershed-restoration-initiative/index.html %}"><h5 class="text-center">WRI (DNR-DWR)</h5>
+      <img alt="WRI (DNR-DWR)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/wri_utah_gov.png %}" /></a>
       <p class="muted">The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{{ "/developer/applications/vehicle-collision/" | prepend: site.baseurl }}"><h5 class="text-center">Crash Map (DPS / UDOT)</h5>
-      <img alt="Crash Map (DPS / UDOT)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/applications/crashmapping_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <a href="{% link developer/applications/vehicle-collision/index.html %}"><h5 class="text-center">Crash Map (DPS / UDOT)</h5>
+      <img alt="Crash Map (DPS / UDOT)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/crashmapping_utah_gov.png %}" /></a>
       <p class="muted">A statewide map of vehicle crashes, reported across all jurisdictions, that allows dynamic filtering for time, date, cause, severity, etc.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{{ "/developer/applications/locate/" | prepend: site.baseurl }}"><h5 class="text-center">locate.utah.gov (GOED)</h5>
-      <img alt="locate.utah.gov (GOED)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/applications/locate_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <a href="{% link developer/applications/locate/index.html %}"><h5 class="text-center">locate.utah.gov (GOED)</h5>
+      <img alt="locate.utah.gov (GOED)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/locate_utah_gov.png %}" /></a>
       <p class="muted">Utah's Economic Development Map depicts the landscape of what's important to businesses considering relocating to Utah.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{{ "/developer/applications/deq-environmental/" | prepend: site.baseurl }}"><h5 class="text-center">Environmental Map (DEQ)</h5>
-      <img alt="Environmental Interactive Map (DEQ)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/applications/deq_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <a href="{% link developer/applications/deq-environmental/index.html %}"><h5 class="text-center">Environmental Map (DEQ)</h5>
+      <img alt="Environmental Interactive Map (DEQ)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/deq_utah_gov.png %}" /></a>
       <p class="muted">Search for site-specific information relating to DEQ programs including regulated environmental sites, facilities, and designations.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{{ "/developer/applications/raster" | prepend: site.baseurl }}"><h5 class="text-center">SGID Raster Search (AGRC)</h5>
-      <img alt="SGID Raster Search (AGRC)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/applications/raster_utah_gov.png" | prepend: site.baseurl }}"/></a>
+      <a href="{% link developer/applications/raster/index.html %}"><h5 class="text-center">SGID Raster Search (AGRC)</h5>
+      <img alt="SGID Raster Search (AGRC)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/raster_utah_gov.png %}"/></a>
       <p class="muted">Get map-based results for all of the imagery, elevation, lidar, and scanned maps available from Utah's SGID.</p>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{{ "/developer/applications/parcels/" | prepend: site.baseurl }}"><h5 class="text-center">SGID Parcel Viewer (AGRC)</h5>
-      <img alt="SGID Parcel Viewer (AGRC)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "/images/parcels_utah_gov.png" | prepend: site.baseurl }}" /></a>
+      <a href="{% link developer/applications/parcels/index.html %}"><h5 class="text-center">SGID Parcel Viewer (AGRC)</h5>
+      <img alt="SGID Parcel Viewer (AGRC)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/parcels_utah_gov.png %}" /></a>
       <p class="muted">Zoom in to view parcel boundaries and basic attributes as assembled statewide by AGRC, in coordination with County Recorders.</p>
     </div>
     <p class="section-read-more text-center">
-      <a href="{{ "/developer/" | prepend: site.baseurl }}" class="btn">More Information</a>
+      <a href="{% link developer/index.md %}" class="btn">More Information</a>
     </p>
   </div>
   <div class="grid__col section no-border">
@@ -573,18 +573,18 @@ layout: default
       <p>APIs available through <a href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like address location (aka geocoding) and map search (point-in-polygon query) to be built into web applications and data-handling processes without the immediate need for GIS-specific software. These APIs are at the core of sites like <a href="https://le.utah.gov/GIS/findDistrict.jsp">Who Represents Me?</a>, <a href="https://secure.utah.gov/auditor-search/taxing-fee-entity-search.html">Who Taxes me?</a> etc.</p>
     </div>
     <div class="grid__col grid__col--1-of-3">
-      <p>AGRC's dev group maintains a library of <a href="{{ "/developer/widgets/" | prepend: site.baseurl }}"> Utah-specific map widgets</a> that provide common tools desired in web mapping applications. The library includes FindAddress (geocoding), TRSSearch (finds PLSS sections), and Sherlock (can be used to search for any feature in the SGID or layers in a map services. We also, on occasion publish customization for ArcGIS desktop like our <a href="{{site.baseurl}}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}"> geocoding api tool</a>.</p>
+      <p>AGRC's dev group maintains a library of <a href="{% link developer/widgets/index.md %}"> Utah-specific map widgets</a> that provide common tools desired in web mapping applications. The library includes FindAddress (geocoding), TRSSearch (finds PLSS sections), and Sherlock (can be used to search for any feature in the SGID or layers in a map services. We also, on occasion publish customization for ArcGIS desktop like our <a href="{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}"> geocoding api tool</a>.</p>
     </div>
    <div class="grid__col grid__col--1-of-3">
       <p>We are into <i>git</i>. By default, the AGRC dev team keeps its code current in <a href="https://github.com/agrc">AGRC's GitHub repository</a>. If it's a web site, widget, desktop add-in, or even the content of this website itself, it should be findable, and open-sourced in the AGRC repo.</p>
     </div>
     <p class="section-read-more">
-      <a href="{{ "/developer/" | prepend: site.baseurl }}" class="btn">More Information</a>
+      <a href="{% link developer/index.md %}" class="btn">More Information</a>
     </p>
   </div>
 </div>
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
-<script src="{{ "/bower_components/lozad/dist/lozad.min.js" | prepend: site.baseurl }}"></script>
+<script src="{% link bower_components/lozad/dist/lozad.min.js %}"></script>
 <script>
     ;(function() {
       const observer = lozad('.lozad', {

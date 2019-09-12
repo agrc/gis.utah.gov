@@ -20,7 +20,7 @@ categories: []
 <p>You will need to register for a free Discover account to access these services. There are two levels of Discover access:</p>
 <ul class="dotless">
   <li><i class="far fa-fw fa-circle"></i> <strong>General access</strong>, for anyone who wants to use our base maps, NAIP imagery, or HRO imagery.</li>
-  <li><i class="fas fa-fw fa-lock"></i> <strong>Licensed access</strong>, for Utah's <strong>cities, counties, special districts, state agencies, K-12 school districts, colleges, universities, and tribal entities</strong> (or contractors or formal partners of any of these entities). This provides access to <strong>statewide 6" high-resolution aerial imagery</strong> under the State's <a href="{{ "/discover/license/" | prepend: site.baseurl }}">Google Imagery License</a> in addition to the general base maps and imagery.</li>
+  <li><i class="fas fa-fw fa-lock"></i> <strong>Licensed access</strong>, for Utah's <strong>cities, counties, special districts, state agencies, K-12 school districts, colleges, universities, and tribal entities</strong> (or contractors or formal partners of any of these entities). This provides access to <strong>statewide 6" high-resolution aerial imagery</strong> under the State's <a href="{% link discover/license/index.md %}">Google Imagery License</a> in addition to the general base maps and imagery.</li>
 </ul>
 <p class="pop text-center">
   <strong>Anyone</strong> can use the general access imagery and base map services from Discover! To use these services, all you need is a <strong><em>free</em></strong> account and its corresponding quad-word connection link.
@@ -45,23 +45,23 @@ categories: []
   <li>WMTS: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/wmts/1.0.0/WMTSCapabilities.xml</code>
   <li>Tiles: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/tiles/{service}/{z}/{x}/{y}</code>
 </ul>
-<p>For best performance, we recommend using WMTS when possible. WMS is slower and has <a href="{{ "/discover/resources/#layers-not-exporting-when-using-wms" | prepend: site.baseurl }}">technical limitations</a> that could prevent the layer from drawing when exporting or printing maps.</p>
-<p>To learn more about using the Discover Server, be sure to visit our <a href="{{ "/discover/resources/" | prepend: site.baseurl }}">Discover Server Resources and Information</a> page. The following topics are covered in more depth on that page, but we've compiled them here as well for your convenience.</p>
+<p>For best performance, we recommend using WMTS when possible. WMS is slower and has <a href="{% link discover/resources/index.md %}#layers-not-exporting-when-using-wms">technical limitations</a> that could prevent the layer from drawing when exporting or printing maps.</p>
+<p>To learn more about using the Discover Server, be sure to visit our <a href="{% link discover/resources/index.md %}">Discover Server Resources and Information</a> page. The following topics are covered in more depth on that page, but we've compiled them here as well for your convenience.</p>
 <ul class="dotless">
-  <li><a href="{{ "/discover/resources/#coordinate-system-and-datum" | prepend: site.baseurl }}">Coordinate system and datum</a>
-  <li><a href="{{ "/discover/resources/#horizontal-positional-accuracy" | prepend: site.baseurl }}">Horizontal positional accuracy</a>
-  <li><a href="{{ "/discover/resources/#adding-a-wmts-or-wms-service-to-esri-products" | prepend: site.baseurl }}">Adding a service in an Esri product</a>
-  <li><a href="{{ "/discover/resources/#adding-a-wmts-or-wms-service-to-a-web-map" | prepend: site.baseurl }}">Adding a service in ArcGIS Online Web Maps</a>
-  <li><a href="{{site.baseurl}}{% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}">Use in JavaScript/Web Mapping application</a>
-  <li><a href="{{ "/discover/resources/#adding-a-wms-service-to-cad" | prepend: site.baseurl }}">Adding a service in CAD</a>
-  <li><a href="{{ "/discover/resources/#proarcmap-user-considerations" | prepend: site.baseurl }}">ArcGIS Pro considerations</a>
-  <li><a href="{{ "/discover/resources/#printing-web-maps-with-discover-services" | prepend: site.baseurl }}">Printing Discover services</a>
-  <li><a href="{{ "/discover/resources/#google-flight-dates" | prepend: site.baseurl }}">Flight dates</a>
-  <li><a href="{{ "/discover/resources/#requests-for-on-premise-use" | prepend: site.baseurl }}">On-premises use</a>
-  <li><a href="{{ "/discover/resources/#layers-not-exporting-when-using-wms" | prepend: site.baseurl }}">Layers not exporting when using WMS</a>
-  <li><a href="{{ "/discover/resources/#other-tidbits" | prepend: site.baseurl }}">Other tidbits</a>
+  <li><a href="{% link discover/resources/index.md %}#coordinate-system-and-datum">Coordinate system and datum</a>
+  <li><a href="{% link discover/resources/index.md %}#horizontal-positional-accuracy">Horizontal positional accuracy</a>
+  <li><a href="{% link discover/resources/index.md %}#adding-a-wmts-or-wms-service-to-esri-products">Adding a service in an Esri product</a>
+  <li><a href="{% link discover/resources/index.md %}#adding-a-wmts-or-wms-service-to-a-web-map">Adding a service in ArcGIS Online Web Maps</a>
+  <li><a href="{% link _posts/2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps.md %}">Use in JavaScript/Web Mapping application</a>
+  <li><a href="{% link discover/resources/index.md %}#adding-a-wms-service-to-cad">Adding a service in CAD</a>
+  <li><a href="{% link discover/resources/index.md %}#proarcmap-user-considerations">ArcGIS Pro considerations</a>
+  <li><a href="{% link discover/resources/index.md %}#printing-web-maps-with-discover-services">Printing Discover services</a>
+  <li><a href="{% link discover/resources/index.md %}#google-flight-dates">Flight dates</a>
+  <li><a href="{% link discover/resources/index.md %}#requests-for-on-premise-use">On-premises use</a>
+  <li><a href="{% link discover/resources/index.md %}#layers-not-exporting-when-using-wms">Layers not exporting when using WMS</a>
+  <li><a href="{% link discover/resources/index.md %}#other-tidbits">Other tidbits</a>
 </ul>
-<p>If you are looking for <strong>imagery downloads</strong>, navigate to the <a href="{{ "/data/aerial-photography/" | prepend:site.baseurl }}">aerial photography</a> section of the data pages.</p>
+<p>If you are looking for <strong>imagery downloads</strong>, navigate to the <a href="{% link data/aerial-photography/index.html %}">aerial photography</a> section of the data pages.</p>
 <h3 class="text-left" id="services"><i class="far fa-fw fa-map"></i> Available Services</h3>
 <ul class="dotless no-padding">
   <li><i class="fas fa-fw fa-lock"></i> <code>Utah</code> – Combination of the most recent 1-meter <abbr title="National Agriculture Imagery Program">NAIP</abbr> and 6-inch Google Imagery with scale-dependent rendering <strong>(licensed)</strong>
@@ -75,10 +75,10 @@ categories: []
   <li><i class="fas fa-fw fa-lock"></i> <code>Basemap-Hybrid</code> – Combination of the <code>Overlay</code> base map and the <code>Utah</code> imagery service <strong>(licensed)</strong>
   <li><i class="far fa-fw fa-circle"></i> <code>Basemap-Lite</code> – A light, muted reference base map that doesn't compete with your thematic data.
   <li><i class="far fa-fw fa-circle"></i> <code>Basemap-Terrain</code> – Base map of hillshade, highways and streets, parks, forests, water, etc.
-  <li><i class="far fa-fw fa-circle"></i> <code>Basemap-Topo</code> – Base map of US Geological Survey <a href="{{ "/data/usgs-scanned-topographic-maps" | prepend: site.baseurl }}">topographic maps</a>
+  <li><i class="far fa-fw fa-circle"></i> <code>Basemap-Topo</code> – Base map of US Geological Survey <a href="{% link data/usgs-scanned-topographic-maps/index.html %}">topographic maps</a>
   <li><i class="far fa-fw fa-circle"></i> <code><abbr title="Digital Ortho Photo Quads">DOQ</abbr> 1990s BW</code> – <a href="{{ "/data/aerial-photography/doq/#1990DOQ" | prepend: site.baseurl }}">1-meter statewide black-and-white</a> aerial photography, collected in the 1990s
-  <li><i class="far fa-fw fa-circle"></i> <code><abbr title="High Resolution Othophotography">HRO</abbr> 2012 RGB</code> – <a href="{{ "/data/aerial-photography/hro/#HRO2012" | prepend: site.baseurl }}">12.5-cm natural-color</a> aerial photography of the Wasatch Front, collected in 2012
-  <li><i class="far fa-fw fa-circle"></i> <code>NAIP {year} RGB</code> – <a href="{{ "/data/aerial-photography/naip" | prepend: site.baseurl }}">1-meter statewide natural-color</a> aerial photography
+  <li><i class="far fa-fw fa-circle"></i> <code><abbr title="High Resolution Orthophotography">HRO</abbr> 2012 RGB</code> – <a href="{{ "/data/aerial-photography/hro/#HRO2012" | prepend: site.baseurl }}">12.5-cm natural-color</a> aerial photography of the Wasatch Front, collected in 2012
+  <li><i class="far fa-fw fa-circle"></i> <code>NAIP {year} RGB</code> – <a href="{% link data/aerial-photography/naip/index.html %}">1-meter statewide natural-color</a> aerial photography
   <ul class="dotless no-margin">
     <li><em>Available Years: 2006, 2009, 2011, 2014, 2016, 2018</em>
   </ul>
@@ -91,6 +91,6 @@ categories: []
 <h3 class="text-left"><i class="far fa-fw fa-thumbs-up"></i> Best Practices</h3>
 <ul>
   <li>It is strongly recommended that you use WMTS for the best user experience.
-  <li>If you are, or will be, printing base maps from the web and are experiencing blank or empty output, read about our <a href="{{site.baseurl}}{% post_url 2017-02-02-printing-web-maps-with-discover-services %}">GP proxy service</a> or our new <a href="{{site.baseurl}}{% post_url 2018-02-26-success-with-serverless %}">serverless print proxy</a>.
-  <li>Any end products using the Google Imagery must attribute Google. See the <a href="{{ "/discover/resources/#google-logos" | prepend: site.baseurl }}">resources page</a> for logos.
+  <li>If you are, or will be, printing base maps from the web and are experiencing blank or empty output, read about our <a href="{% link _posts/2017-02-02-printing-web-maps-with-discover-services.md %}">GP proxy service</a> or our new <a href="{% link _posts/2018-02-26-success-with-serverless.md %}">serverless print proxy</a>.
+  <li>Any end products using the Google Imagery must attribute Google. See the <a href="{% link discover/resources/index.md %}#google-logos">resources page</a> for logos.
 </ul>

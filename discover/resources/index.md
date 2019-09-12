@@ -14,17 +14,17 @@ categories: []
 ## <i class="fas fa-fw fa-plane"></i> Discover Server
 {: .text-left}
 
-Discover provides high-performance imagery and base maps services in WMS and WMTS formats. For information about the services and directions to sign up, please see the main [Discover]({{ "/discover/" | prepend: site.baseurl }}) page.
+Discover provides high-performance imagery and base maps services in WMS and WMTS formats. For information about the services and directions to sign up, please see the main [Discover]({% link discover/index.html %}) page.
 
-- For imagery downloads visit the [aerial photography data page]({{ "/data/aerial-photography/" | prepend: site.baseurl }}).
+- For imagery downloads visit the [aerial photography data page]({% link data/aerial-photography/index.html %}).
 - Instructions on how to [use the Discover services in Pro/ArcMap](#adding-a-wmts-or-wms-service-to-esri-products).
 - Instructions on how to [use the Discover services in CAD](#adding-a-wms-service-to-cad).
-- Instructions on how to [use the Discover services in Web Maps]({{site.baseurl}}{% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}).
+- Instructions on how to [use the Discover services in Web Maps]({% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}).
 
 ### Coordinate System and Datum
 {: .text-left}
 
-The native coordinate system for the Discover services is Web Mercator with a WGS 1984 datum (EPSG 3857). Many users work in coordinate systems with a different datum (for example, EPSG 3566: Utah Central with NAD 1983). Users who need the highest locational precision must use the appropriate [geographic transformation conversion]({{ "/downloads/Transformation.png" | prepend: site.baseurl }}) to remedy the roughly one meter difference between the WGS84 and NAD83 datums' “realization points.” AGRC uses the `NAD_1983_To_WGS_1984_5` transformation when creating base map tiles and web applications, but **there may be more accurate transformations based on the data and area you are working with**. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information about these transformations can be found on ESRI's [NAD 1983 To WGS 1984](https://support.esri.com/en/knowledgebase/techarticles/detail/24159) How-To.
+The native coordinate system for the Discover services is Web Mercator with a WGS 1984 datum (EPSG 3857). Many users work in coordinate systems with a different datum (for example, EPSG 3566: Utah Central with NAD 1983). Users who need the highest locational precision must use the appropriate [geographic transformation conversion]({% link downloads/Transformation.PNG %}) to remedy the roughly one meter difference between the WGS84 and NAD83 datums' “realization points.” AGRC uses the `NAD_1983_To_WGS_1984_5` transformation when creating base map tiles and web applications, but **there may be more accurate transformations based on the data and area you are working with**. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information about these transformations can be found on ESRI's [NAD 1983 To WGS 1984](https://support.esri.com/en/knowledgebase/techarticles/detail/24159) How-To.
 
 ### Horizontal Positional Accuracy
 {: .text-left}
@@ -63,7 +63,7 @@ Interested in using AGRC's Web Mercator services in your web maps? Take a look a
 ### Adding a WMS Service to CAD
 {: .text-left}
 
-- **Bentley Microstation** users should take a look at the [How To document]({{ "/downloads/MicroStationGoogleWMS_HowTo.pdf" | prepend: site.baseurl }}).
+- **Bentley Microstation** users should take a look at the [How To document]({% link downloads/MicroStationGoogleWMS_HowTo.pdf %}).
 - **AutoCAD Civil 3D** users should take a look at the [How To document](https://knowledge.autodesk.com/support/autocad-map-3d/learn-explore/caas/CloudHelp/cloudhelp/2017/ENU/MAP3D-Use/files/GUID-A9F620AD-6B9A-487D-9B33-7D365307D571-htm.html).
 
 ### Adding a WMTS Service to QGIS
@@ -71,7 +71,7 @@ Interested in using AGRC's Web Mercator services in your web maps? Take a look a
 
 1. Add a new "WMS/WMTS" connection and paste in the URL to the discover WMTS service.
 
-Go to [this page]({{ "/how-to-use-agrc-base-maps-in-qgis/" | prepend: site.baseurl }}) for more details.
+Read this [blog post]({% post_url 2015-01-20-how-to-use-agrc-base-maps-in-qgis %}) for more details.
 
 ### Printing Web Maps with Discover Services
 {: .text-left}
@@ -118,8 +118,8 @@ Our license with Google requires you to put the appropriate logo on any products
 
 [Download zipfile of Google logos]({{ "/downloads/google_logos.zip" | prepend: site.baseurl }})
 
-![white transparent]({{ "/images/ImageryCGoogle_WhiteTransparent.png" | prepend: site.baseurl }})
-![white on black]({{ "/images/ImageryCGoogle_WhiteOnBlack.png" | prepend: site.baseurl }})
+![white transparent]({% link images/ImageryCGoogle_WhiteTransparent.png %})
+![white on black]({% link images/ImageryCGoogle_WhiteOnBlack.png %})
 
 ### Requests for On-Premise Use
 {: .text-left}

@@ -24,14 +24,14 @@ date: 2011-06-30 23:18:14 -0600
 ## Our Background
 {: .text-left }
 
-The Automated Geographic Reference Center (AGRC) is the State of Utah’s map technology coordination office. AGRC staff ([directory/contacts]({{ "/about/contact/" | prepend: site.baseurl }})) have knowledge and experience in geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state.
+The Automated Geographic Reference Center (AGRC) is the State of Utah’s map technology coordination office. AGRC staff ([directory/contacts]({% link about/contact/index.html %})) have knowledge and experience in geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state.
 
-We are located on the 5th floor of the State Office building, directly north of the Capitol [directions and parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }}).  AGRC and the Utah CIO’s office compose the Integrated Technologies division within the Department of Technology Services.
+We are located on the 5th floor of the State Office building, directly north of the Capitol [directions and parking]({% link about/visiting-agrc/index.html %}).  AGRC and the Utah CIO’s office compose the Integrated Technologies division within the Department of Technology Services.
 
 [![AGRC staff photo](./AGRC_Staff_2019_small.png){: .outline}](./AGRC_Staff_2019.png)
 {: .pull-right .pad-left }
 
-AGRC is directed under [mapping-related sections of Utah statute]({{ "/about/code" | prepend: site.baseurl }}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
+AGRC is directed under [mapping-related sections of Utah statute]({% link about/code/index.html %}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
 
 AGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. At 30+ years old, our full name may sound like its from a by-gone era. But AGRC is how people know us, so we're sticking with it. Years may pass, but our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
 
@@ -41,31 +41,31 @@ AGRC is funded through a combination of State general and restricted funds and c
 
 <div class="grid" markdown="1">
   <div class="grid__col grid__col--1-of-2" markdown="1">
-- [Utah’s State Geographic Information Database]({{ "/data/" | prepend: site.baseurl }})
-- [Address Geocoding Services]({{ "/data/address-geocoders-locators/" | prepend: site.baseurl }})
-- [Aerial Photography]({{ "/data/aerial-photography/" | prepend: site.baseurl }})
-- [Base Maps Web Services]({{ "/data/base-map-and-imagery/" | prepend: site.baseurl }})
+- [Utah’s State Geographic Information Database]({% link data/index.html %})
+- [Address Geocoding Services]({% link data/address-geocoders-locators/index.html %})
+- [Aerial Photography]({% link data/aerial-photography/index.html %})
+- [Base Maps Web Services]({% link data/base-map-and-imagery/index.md %})
 - Broadband Mapping Support
-- [Cartwheels]({{ "/images/Cartwheel.jpg" | prepend: site.baseurl}})
+- [Cartwheels]({% link images/Cartwheel.jpg %})
 - Custom Cartography
-- [Custom Web Map Apps]({{ "/developer/" | prepend: site.baseurl }})
+- [Custom Web Map Apps]({% link developer/index.md %})
 - Data Acquisition Partnerships & Contracting
-- [GIS Coordination Newsletter]({{ "/agrc-newsletter/" | prepend: site.baseurl }})
-- [gis.utah.gov website]({{"/about-our-new-v6-website-in-ghpages" | prepend: site.baseurl}})
+- [GIS Coordination Newsletter]({% link agrc-newsletter/index.html %})
+- [gis.utah.gov website]({% post_url 2016-03-25-about-our-new-v6-website-in-ghpages %})
 {: .dotless .no-padding }
 </div>
 <div class="grid__col grid__col--1-of-2" markdown="1">
-- [Google Imagery License]({{ "/discover/" | prepend: site.baseurl }})
-- [Lidar Elevation Models]({{ "/data/elevation-and-terrain/" | prepend: site.baseurl}})
+- [Google Imagery License]({% link discover/index.html %})
+- [Lidar Elevation Models]({% link data/elevation-and-terrain/index.html %})
 - Location Analytics
-- [911 Map Data Support]( {{"/about/gis-for-911/" | prepend: site.baseurl }} )
+- [911 Map Data Support]( {% link about/gis-for-911/index.html %} )
 - [Municipal](https://municert.utah.gov), Voting, and other Civic Boundaries
 - [Public Land Survey System](https://plss.utah.gov)
 - Spatial Database Design, Integration and Hosting
-- [Statewide Address Point Aggregation]({{ "/data/location/address-data/" | prepend: site.baseurl }})
-- [Statewide Road Centerline Aggregation]({{ "/data/transportation/roads-system" | prepend: site.baseurl }})
-- [Statewide GIS Strategic & Business Plans]({{"/about/strategic-and-business-plans/" | prepend: site.baseurl }})
-- [TURN GPS sub-centimeter precision]({{ "/data/cadastre/turn-gps/" | prepend: site.baseurl }})
+- [Statewide Address Point Aggregation]({% link data/location/address-data/index.html %})
+- [Statewide Road Centerline Aggregation]({% link data/transportation/roads-system/index.html %})
+- [Statewide GIS Strategic & Business Plans]({% link about/strategic-and-business-plans/index.html %})
+- [TURN GPS sub-centimeter precision]({% link data/cadastre/turn-gps/index.md %})
 {: .dotless .no-padding }
 </div>
 
@@ -76,14 +76,14 @@ AGRC is funded through a combination of State general and restricted funds and c
 ###### Utah Statewide GIS User Group
 
 - [Utah Geographic Information Council website](http://ugic.info)
-- [Annual UGIC Maps on the Hill event info]({{"/about/maps-on-the-hill/" | prepend: site.baseurl }})
+- [Annual UGIC Maps on the Hill event info]({% link about/maps-on-the-hill/index.md %})
 {: .dotless }
   </div>
   <div class="grid__col grid__col--1-of-2" markdown="1">
 ###### Utah's Local GIS User Groups
 
 - [Salt Lake User Group (SLUG)](http://www.slug-gis.info/)
-- [Other Local level GIS User Group info]({{"/about/organizations/user-groups/" | prepend: site.baseurl }})
+- [Other Local level GIS User Group info]({% link about/organizations/user-groups/index.md %})
 - [National States Geographic Information Council (NGSIC)](https://nsgic.org)
 {: .dotless }
   </div>

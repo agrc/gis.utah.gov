@@ -23,7 +23,7 @@
   <meta property="og:image" content="{{ "/images/facebookcard.jpg" | prepend: site.baseurl | prepend: site.url }}" />
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
-  <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/favicon.ico?" | prepend: site.baseurl }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="{% link images/favicon.ico %}" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/atom+xml" title="{{ site.title }} Sitewide ATOM Feed">
   <link rel="alternate" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }} Sitewide RSS Feed">
@@ -87,12 +87,12 @@
       {%- assign current = page.url | downcase | split: '/' -%}
       <nav class="site-nav">
         <ul id="menu-main-menu" class="menu">
-          <li class="menu-item{%- if current[1] == 'news' -%}{{ "active-1" | prepend: " " }}{%- endif -%}"><a href="{{ "/news/" | prepend: site.baseurl }}">News</a></li>
-          <li class="menu-item{%- if current[1] == 'data' -%}{{ "active-2" | prepend: " " }}{%- endif -%}"><a href="{{ "/data/" | prepend: site.baseurl }}">Data</a></li>
-          <li class="menu-item{%- if current[1] == 'developer' -%}{{ "active-3" | prepend: " " }}{%- endif -%}"><a href="{{ "/developer/" | prepend: site.baseurl }}">Developer</a></li>
-          <li class="menu-item{%- if current[1] == 'about' -%}{{ "active-4" | prepend: " " }}{%- endif -%}"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
+          <li class="menu-item{%- if current[1] == 'news' -%}{{ "active-1" | prepend: " " }}{%- endif -%}"><a href="{% link news/index.html %}">News</a></li>
+          <li class="menu-item{%- if current[1] == 'data' -%}{{ "active-2" | prepend: " " }}{%- endif -%}"><a href="{% link data/index.html %}">Data</a></li>
+          <li class="menu-item{%- if current[1] == 'developer' -%}{{ "active-3" | prepend: " " }}{%- endif -%}"><a href="{% link developer/index.md %}">Developer</a></li>
+          <li class="menu-item{%- if current[1] == 'about' -%}{{ "active-4" | prepend: " " }}{%- endif -%}"><a href="{% link about/index.md %}">About</a></li>
           <li class="menu-item"><a href="https://agrc-status.netlify.com/">Status</a></li>
-          <li class="menu-item"><a href="{{ "/search/" | prepend: site.baseurl }}"><i class="fas fa-search" title="Site search link"></i></a></li>
+          <li class="menu-item"><a href="{% link search/index.html %}"><i class="fas fa-search" title="Site search link"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -101,7 +101,7 @@
     <div class="wrapper">
       {{ content }}
       <p class="sub-title text-center muted" id="view-counter"></p>
-      <script src="{{ '/js/dist/view-counter.min.js' | prepend: site.baseurl }}" async defer></script>
+      <script src="{% link js/dist/view-counter.min.js %}" async defer></script>
     </div>
   </div>
   <footer class="site-footer wrapper">
@@ -200,7 +200,7 @@
             <i class="fas fa-code-branch fa-fw" title="edit problems in this page link"></i>
           </a>
           <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit this page</a> on GitHub or notify us <a href="{{ site.github.repository_url }}/issues/new">with an issue</a>.
-          <div>Be sure to read the <a href="{{ "/about/contributing/" | prepend: site.baseurl }}">contributing guide</a>; We accept public contributions!</div>
+          <div>Be sure to read the <a href="{% link about/contributing/index.md %}">contributing guide</a>; We accept public contributions!</div>
         </div>
         <a href="{% link about/policy/index.md %}">
           <h3><i class="fas fa-exclamation-triangle fa-fw" title="AGRC Data Disclaimer"></i> Data License, Disclaimer, and Policies</h3>

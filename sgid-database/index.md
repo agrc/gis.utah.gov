@@ -10,7 +10,7 @@ title: How to Connect to the SGID via ArcSDE
 layout: page_nocrumb
 categories: []
 ---
-The SGID is a collection of vector-format GIS feature classes. Its' content is available for download from the [data pages]({{ "/data/" | prepend: site.baseurl }}) on this website or via an ArcSDE database connection **for users within the State of Utah network**. Users with ArcGIS desktop clients that are at 10.2.1 or higher can use this resource.
+The SGID is a collection of vector-format GIS feature classes. Its' content is available for download from the [data pages]({% link data/index.html %}) on this website or via an ArcSDE database connection **for users within the State of Utah network**. Users with ArcGIS desktop clients that are at 10.2.1 or higher can use this resource.
 
 The SGID's organization is based on ISO Topic Categories. AGRC treats the ISO categories as a guideline, and the main goal is to maximize usability for GIS users.
 
@@ -21,8 +21,8 @@ Using a database connection to the most current ArcSDE server can be advantageou
 #### Connecting
 
 1. In ArcCatalog or ArcMap (from Add Data), browse to `Add Spatial Database Connections`
-  - <img src="{{ "/images/connect_tree.png" | prepend: site.baseurl }}" alt="ArcMap Add Spatial Connection Screenshot" />
+  - <img src="{% link images/connect_tree.png %}" alt="ArcMap Add Spatial Connection Screenshot" />
 1. Provide the following connection information, including the password `agrc`.
-  - <img src="{{ "/images/sgidconnect.png" | prepend: site.baseurl }}" title="database connection dialog" alt="database connection dialog" />
+  - <img src="{% link images/sgidconnect.png %}" title="database connection dialog" alt="database connection dialog" />
 
 After these steps you will be able to browse the entire SGID catalog and add data to your projects.

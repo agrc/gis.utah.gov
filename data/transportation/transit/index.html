@@ -59,7 +59,7 @@ UTALightRailStations:
     - May 12, 2013
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{{ '/images/Transit_Large.png' | prepend: site.baseurl }}" alt="Transit" />
+  <img class="caption__image" src="{% link images/Transit_Large.png %}" alt="Transit" />
   <figcaption class="caption__text">Light Rail & Bus Routes With Stops</figcaption>
 </figure>
 {% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcV8wS0otTmRRMWM"
@@ -74,7 +74,7 @@ UTALightRailStations:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ '/images/BusStops_Small.png' | prepend: site.baseurl }}" alt="Bus Stops" />
+    <img class="inline-text-left outline" src="{% link images/BusStops_Small.png %}" alt="Bus Stops" />
     <p>Transportation.BusRoutes_UTA includes bus stops along streets, at TRAX stations, and park & ride lots serviced by UTA buses. Transportation.BusStops_UTA includes redesigned bus routes that have been adjusted for internal monitoring purposes and ski bus routes to the Cottonwood Canyons and Sundance Ski Resort.</p>
     <p>The UTA Bus Stops dataset was digitized to the Wasatch Front counties' street base maps and then exported from Trapeze (scheduling software) in shapefile format.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
@@ -90,7 +90,7 @@ UTALightRailStations:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ '/images/CommuterRail_Small.png' | prepend: site.baseurl }}" alt="Commuter Rail" />
+    <img class="inline-text-left outline" src="{% link images/CommuterRail_Small.png %}" alt="Commuter Rail" />
     <p>Transportation.CommuterRailRoutes_UTA depicts the route of Utah Transit Authority's FrontRunner North and South commuter rail tracks as received from UTA May of 2013.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
   </div>
@@ -105,7 +105,7 @@ UTALightRailStations:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ '/images/CommuterStops_Small.png' | prepend: site.baseurl }}" alt="Commuter Stops" />
+    <img class="inline-text-left outline" src="{% link images/CommuterStops_Small.png %}" alt="Commuter Stops" />
     <p>Transportation.CommuterRailStations_UTA depicts the locations of Utah Transit Authority's FrontRunner North and South commuter rail stations as received from UTA.</p>
     <p>These data include an attribute of the address where the rail station is located.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
@@ -121,7 +121,7 @@ UTALightRailStations:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ '/images/LightRailRoutes_Small.png' | prepend: site.baseurl }}" alt="Light Railt Route" />
+    <img class="inline-text-left outline" src="{% link images/LightRailRoutes_Small.png %}" alt="Light Railt Route" />
     <p>Transportation.LightRail_UTA represents the light rail system for the main North-South (Downtown to Sandy), University/Medical Center, West Valley, Daybreak, and Airport lines. It also depicts the Sugar House trolley extension currently under construction.</p>
     <p>LightRail_UTA was digitized from aerial photographs dated August, 2016.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).</p>
@@ -138,7 +138,7 @@ UTALightRailStations:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ '/images/LightRailStops_Small.png' | prepend: site.baseurl }}" alt="Light Rail Stops" />
+    <img class="inline-text-left outline" src="{% link images/LightRailStops_Small.png %}" alt="Light Rail Stops" />
     <p>Transportation.LightRailStations_UTA represents the center of the platform at all UTA light rail stations.</p>
     <p>LightRailStations_UTA locations were digitized from aerial photographs dated 2012. The 900 South station and Sandy Expo station locations were obtained by GPS.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).</p>

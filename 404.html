@@ -6,7 +6,7 @@ permalink: /404.html
 .background {
     margin-top: 15px;
     min-height: 500px;
-    background-image: url({{ "/images/404.png" | prepend: site.baseurl }});
+    background-image: url({% link images/404.png %});
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -27,7 +27,7 @@ permalink: /404.html
 <div class="background">
     <h1 class="shadow error-heading text-center">We're Sorry...</h1>
     <h2 class="shadow error-sub-heading text-center">Page Not Found</h2>
-    <p class="shadow text-center">Try <a href="{{ "/search/" | prepend: site.baseurl }}">searching</a> for the page and notify us <a href="{{ site.github.repository_url }}/issues/new">by creating an issue</a>.</p>
+    <p class="shadow text-center">Try <a href="{% link search/index.html %}">searching</a> for the page and notify us <a href="{{ site.github.repository_url }}/issues/new">by creating an issue</a>.</p>
 <div>
 <script>
   window.onload = function (){

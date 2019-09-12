@@ -10,7 +10,7 @@ categories:
   - Developer
 ---
 <h3>A day in the life of Utah’s ArcGIS Server Basemaps 2014</h3>
-<p>On <a href="{{site.baseurl}}{% post_url 2014-01-14-a-day-in-the-life-of-utahs-arcgis-server-base-maps %}">Wednesday, November 6, 2013</a> we wrote about and displayed some charts displaying usage statistics for our basemaps. A year has passed and we have updated our graphs and included a few new ones. This year our usage stats were pulled from the first Wednesday in November which happened to be the 5th.</p>
+<p>On <a href="{% post_url 2014-01-14-a-day-in-the-life-of-utahs-arcgis-server-base-maps %}">Wednesday, November 6, 2013</a> we wrote about and displayed some charts displaying usage statistics for our basemaps. A year has passed and we have updated our graphs and included a few new ones. This year our usage stats were pulled from the first Wednesday in November which happened to be the 5th.</p>
 <p><img src="{{ "/downloads/2014.basemaps.png" | prepend: site.baseurl }}" alt="web application basemap usage"><br><br />
 Here you can see that the <i>Terrain</i> basemap is the most popular among web applications. Web developers seem to enjoy this basemap for it&#39;s reference data, muted tones, and overall good looks.  Another interesting take away here is the <strong>55</strong>% increase in the number of requested tiles from the previous year.</p>
 <p><img src="{{ "/downloads/2014.basemaps.arcmap.png" | prepend: site.baseurl }}" alt="arc map basemap usage"><br><br />

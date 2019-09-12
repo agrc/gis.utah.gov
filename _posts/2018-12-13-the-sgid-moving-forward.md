@@ -25,7 +25,7 @@ In the past, agencies completed data maturity assessments, which provide AGRC wi
 
 **Oh yeah, that’s right. And what is AGRC working on now with the SGID?**
 
-For the past several months, AGRC has been assessing SGID data layer usage in order to identify the most and least frequently used layers. (Read our [“SGID Data Lifecycle”]({{site.baseurl}}{% post_url 2018-02-05-sgid-data-lifecycle %}) and [“The Incredible Shrinking SGID”]({{site.baseurl}}{% post_url 2018-09-10-the-incredible-shrinking-sgid %}) articles to get more background about the SGID and our data collection efforts.) Although SGID data layer usage is constantly changing, at this point the most frequently used SGID layers are:
+For the past several months, AGRC has been assessing SGID data layer usage in order to identify the most and least frequently used layers. (Read our [“SGID Data Lifecycle”]({% post_url 2018-02-05-sgid-data-lifecycle %}) and [“The Incredible Shrinking SGID”]({% post_url 2018-09-10-the-incredible-shrinking-sgid %}) articles to get more background about the SGID and our data collection efforts.) Although SGID data layer usage is constantly changing, at this point the most frequently used SGID layers are:
 
 - County Boundaries
 - Municipal Boundaries
@@ -43,4 +43,4 @@ AGRC’s work on this step is underway, as we’ve started a pilot of asking eac
 
 **Down the road**
 
-Once we’ve compiled all the AGRC and agency-specific data layers that we can, we’ll be tasked with maintaining those data layers to ensure the quality and accuracy of the State GIS data. AGRC will work with agencies to develop update schedules and determine who is responsible for updating each layer. 
+Once we’ve compiled all the AGRC and agency-specific data layers that we can, we’ll be tasked with maintaining those data layers to ensure the quality and accuracy of the State GIS data. AGRC will work with agencies to develop update schedules and determine who is responsible for updating each layer.

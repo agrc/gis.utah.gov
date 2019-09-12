@@ -32,7 +32,7 @@ In 1989, AGRC was created (replacing AGR). That change brought with it new GIS-r
 
 The SGID was further solidified in 1991 with the passage of [Senate Bill 21](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html).  Passing unanimously, this bill created the AGRC and the SGID in state statute and eliminated many uncertainties such as future funding for the database and AGRC’s responsibilities.
 
-The SGID has been in continuous operation since its completion in 1991 and has seen numerous software and hardware configurations throughout the years.  
+The SGID has been in continuous operation since its completion in 1991 and has seen numerous software and hardware configurations throughout the years.
 
 Here are a few of the highlights that have brought the SGID to where it is now:
 
@@ -63,7 +63,7 @@ Technology and the use of GIS have come a long way since the inaugural SGID of 1
 
 The current makeup of the SGID is distributed, by design.  Internally, much of the framework data is managed on a SQL ArcSDE Database.  From there, data layers are distributed accordingly.
 
-The [SGID index]({{ "/data/sgid-index/" | prepend: site.baseurl }}) and current user guide are located on [the SGID page of AGRC’s website]({{ "/data/" | prepend: site.baseurl }}), where you will also find descriptions of the data, update dates, data downloads, and links to other places where you can access the data. If you're looking for data, that is the best place to start. 
+The [SGID index]({{ "/data/sgid-index/" | prepend: site.baseurl }}) and current user guide are located on [the SGID page of AGRC’s website]({{ "/data/" | prepend: site.baseurl }}), where you will also find descriptions of the data, update dates, data downloads, and links to other places where you can access the data. If you're looking for data, that is the best place to start.
 
 ![SGID 2019 User Guide]({{ "/images/SGID_2019_webpage_data.png" | prepend: site.baseurl }}){: .flex .flex--center}
 
@@ -111,17 +111,17 @@ Here are some current SGID stats showing top accessed data layers by platform:
 ### Where Is the SGID Going?
 {: .text-left}
 
-One of the challenges of working in technology is that over time, file formats and the way we access data change. This is similarly true for the SGID. As a result, AGRC engages in regular discussions on where the SGID should be going.  
+One of the challenges of working in technology is that over time, file formats and the way we access data change. This is similarly true for the SGID. As a result, AGRC engages in regular discussions on where the SGID should be going.
 
-Currently, we are working toward [trimming down the SQL ArcSDE enterprise database]({{site.baseurl}}{% post_url 2018-09-10-the-incredible-shrinking-sgid %}), which is available to users on the State network.  Moving forward, we will maintain only "live" datasets in the SDE. These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal editing and staging database.
+Currently, we are working toward [trimming down the SQL ArcSDE enterprise database]({% post_url 2018-09-10-the-incredible-shrinking-sgid %}), which is available to users on the State network.  Moving forward, we will maintain only "live" datasets in the SDE. These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal editing and staging database.
 
-All data layers being maintained in the SDE will also be available in [AGOL](https://utah.maps.arcgis.com) and [AGRC’s open data portal](https://opendata.gis.utah.gov/). Here users can consume the web service or download the data. Obsolete data will be written to object storage for retention and will be available on request.  
+All data layers being maintained in the SDE will also be available in [AGOL](https://utah.maps.arcgis.com) and [AGRC’s open data portal](https://opendata.gis.utah.gov/). Here users can consume the web service or download the data. Obsolete data will be written to object storage for retention and will be available on request.
 
-AGRC is testing the option of a public-facing PostgreSQL cloud database where users can make direct connections from their desktop client. This will bring new functionality and an additional access point for our end users. We are excited about this offering, so keep an eye on our [Twitter](https://twitter.com/maputah) or [newsletter]({{ "/news/#mc_embed_signup" | prepend: site.baseurl }}) for upcoming details.  
+AGRC is testing the option of a public-facing PostgreSQL cloud database where users can make direct connections from their desktop client. This will bring new functionality and an additional access point for our end users. We are excited about this offering, so keep an eye on our [Twitter](https://twitter.com/maputah) or [newsletter]({{ "/news/#mc_embed_signup" | prepend: site.baseurl }}) for upcoming details.
 
 Additionally, AGRC has established a workflow with our partner agencies to serve their authoritative data through AGOL. Essentially, their SGID-relevant data is cataloged and is discoverable on AGRC’s official AGOL page. We like to think of it as a live window into partner agencies' data. One of the biggest benefits to these partners is that their data no longer has a shelf life: in other words, the updates agencies make are available instantaneously. Currently we have set up workflows with [State History](https://history.utah.gov/) and [Water Rights](https://www.waterrights.utah.gov/). We are working to get other agencies on board in the coming months.
 
-Ultimately, our goal is to provide the most current industry-accepted tools that allow our users to access high-quality, standardized, statewide GIS data for Utah. Additionally, we design our paths forward with a reasonable amount of backward capability.  
+Ultimately, our goal is to provide the most current industry-accepted tools that allow our users to access high-quality, standardized, statewide GIS data for Utah. Additionally, we design our paths forward with a reasonable amount of backward capability.
 
 We are always curious to hear from our users on how you access the SGID data, what formats you use, and how we can better get the data into your hands. Please take a moment to fill out our one-question [poll](https://www.surveymonkey.com/r/3P58K98) on your preferred method(s) of accessing SGID data. This will help us gauge where we should focus our future efforts.
 

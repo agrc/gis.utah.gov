@@ -52,7 +52,7 @@ If you don’t have the required tools and software to interact with the NG911 d
 
 - [Utah Communications Authority's 911 Division](https://uca911.org/911-division)
 - [NENA’s Standard for NG9-1-1 GIS Data Model](https://dev.nena.org/higherlogic/ws/public/download/9828/20161206_NG9-1-1%20GIS%20Data%20Model_PubRvw.pdf)
-- [Utah Mapping Resources: Well-Prepared for NextGen 9-1-1]({{ site.baseurl }}{% post_url 2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911 %})
+- [Utah Mapping Resources: Well-Prepared for NextGen 9-1-1]({% post_url 2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911 %})
 - [AGRC’s NG911 Database webpage]({{ "/data/911/" | prepend: site.baseurl }})
 - [AGRC’s GitHub Code Repo for the Utah NG911 GIS database ETL process](https://github.com/gregbunce/NextGen911UtahGISDataLoader)
 

@@ -15,7 +15,7 @@ categories:
   <div class="application__links">
     <a class="application__url" href="https://atlas.utah.gov"><i aria-hidden="true" class="fas fa-external-link-square-alt"></i><span class="sr-only">external link</span> atlas.utah.gov</a>
     <a class="application__repo" href="https://github.com/agrc/atlas"><i aria-hidden="true" class="fab fa-github"></i><span class="sr-only">github repository link</span> Repository</a>
-    <a class="application__download" href="{{ "/data/transportation/" | prepend: site.baseurl }}"><i aria-hidden="true" class="fas fa-cloud-download-alt"></i><span class="sr-only">download data link</span> Download Application Data</a>
+    <a class="application__download" href="{% link data/transportation/index.html %}"><i aria-hidden="true" class="fas fa-cloud-download-alt"></i><span class="sr-only">download data link</span> Download Application Data</a>
   </div>
 </div>
 <figure class="application-figure application-figure--align-center">
@@ -23,7 +23,7 @@ categories:
   <figcaption class="application-figure__caption">AGRC widgets with an informational popup derived from SGID data</figcaption>
 </figure>
 <h3>Why</h3>
-<p>AGRC offers many online services to facilitate the use of GIS and Atlas is a combination of most of those services. Atlas contains the complete and most current <a href="{{ "/discover/" | prepend: site.baseurl }}">discover base maps</a>. Atlas also uses most of the <a href="{{ "/developer/widgets/" | prepend: site.baseurl }}">AGRC javascript widgets</a>. The popup makes http requests to the <a href="{{ "/developer/web-services/" | prepend: site.baseurl }}">AGRC Web API</a> to reverse geocode, search for the city, county, land ownership, elevation, and US National Grid of the point clicked. For AGRC developers, Atlas is a code base to keep improving its' usage of dojo and the esri js api. Atlas is often cloned and used as an application boilerplate for new projects as it's structure is optimal for the dojo build process.</p>
+<p>AGRC offers many online services to facilitate the use of GIS and Atlas is a combination of most of those services. Atlas contains the complete and most current <a href="{% link discover/index.html %}">discover base maps</a>. Atlas also uses most of the <a href="{% link developer/widgets/index.md %}">AGRC javascript widgets</a>. The popup makes http requests to the <a href="{% link developer/web-services/index.md %}">AGRC Web API</a> to reverse geocode, search for the city, county, land ownership, elevation, and US National Grid of the point clicked. For AGRC developers, Atlas is a code base to keep improving its' usage of dojo and the esri js api. Atlas is often cloned and used as an application boilerplate for new projects as it's structure is optimal for the dojo build process.</p>
 <script>
   document.getElementById('application__download').addEventListener('click', function() {
     ga('send', {

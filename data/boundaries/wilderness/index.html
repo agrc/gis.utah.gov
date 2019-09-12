@@ -52,7 +52,7 @@ BLMWildernessSuitability:
     - 1991
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{{ "/images/gallery/sgid/wilderness.jpg" | prepend: site.baseurl }}" alt="Wilderness Boundary" />
+  <img class="caption__image" src="{% link images/gallery/sgid/wilderness.jpg %}" alt="Wilderness Boundary" />
   <figcaption class="caption__text">Wilderness Boundary</figcaption>
 </figure>
 {% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV2JyekFMdHVqbEE"
@@ -66,8 +66,8 @@ abstract="This dataset contains GIS mapping data pertaining to wilderness bounda
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/wilderness-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Wilderness" />
-    <p>Boundaries of federally designated wilderness on both Forest Service and BLM lands. These boundaries are a subset of the statewide <a href="{{ "/data/cadastre/land-ownership/" | prepend: site.baseurl }}">CADASTRE.LandOwnership</a> layer and are attributed as <code>"desig"="Wilderness"</code>. Go find some wild places!<p>
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/wilderness-boundaries-ut.jpg %}" alt="Wilderness" />
+    <p>Boundaries of federally designated wilderness on both Forest Service and BLM lands. These boundaries are a subset of the statewide <a href="{% link data/cadastre/land-ownership/index.html %}">CADASTRE.LandOwnership</a> layer and are attributed as <code>"desig"="Wilderness"</code>. Go find some wild places!<p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the State Institutional Trust Lands (SITLA) in cooperation with the BLM and U.S. Forest service.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
@@ -95,7 +95,7 @@ abstract="This dataset contains GIS mapping data pertaining to wilderness bounda
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/fs_roadless-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Roadless" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/fs_roadless-boundaries-ut.jpg %}" alt="Roadless" />
     <p>BOUNDARIES.USFSRoadlessInventory dataset contains all the National Forest Inventoried Roadless Areas. The IRA data was originally submitted to GSTC (Geometronics Service and Technical Center) by all the national forests through their Regional Office for the Forest Service's Roadless Area Conservation Initiative. The data was consolidated at the GSTC and used the Draft Environment Impact Statement. Between the draft and final states of the Environmental Impact Statement, the data was updated by the forests to reflect any corrections to Inventories Roadless Areas that were based on their existing forest plan. The data was also supplemented to include Special Designated Area information and to include Inventories Roadless Areas with Special Designated Areas. The data was resubmitted to the GSTC on July 21, 2000 for consolidation and the completed coverage was used in the Roadless Area Conservation Final Environmental Impact Statement. IRAs are based on completed forest plans, forest plans in revision where the agency has established an inventory (this information should be available in Appendix C of most foret plans) or other assessments that are completed and adopted by the agency. RARE II information was used in cases where a forest does not have a more current roadless inventory that was established using RARE II information.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the United States Forest Service.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
@@ -108,7 +108,7 @@ abstract="This dataset contains GIS mapping data pertaining to wilderness bounda
     <h3 id="BLMWildernessStudyAreas">BLM Wilderness Study Areas (WSAs)</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/wsa-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="WSAs" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/wsa-boundaries-ut.jpg %}" alt="WSAs" />
     <p>BOUNDARIES.Wilderness_BLMWSAs dataset contains all the BLM Wilderness Study Areas (WSAs). It also identifies lands that are not WSAs but were administratively endorsed for wilderness by the BLM in the 1991 wilderness study reports sent to the President and Congress. It also identifies acquired lands that are not WSAs, but are managed as if they were WSAs as a result of congressional direction.</p>
     <p>This layer is generally used for WSA identification and management, planning, and case-by-case actions where NEPA documentations is prepared. The data was digitized at the BLM Utah State Office from 1:24,000 USGS quadrangle paper maps using MOSS ADS. This data was also integrated with GCDB, Transportation, and Hydrography at 1:24,000 scale.</p>
     <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the United States Forest Service.</p>
@@ -123,7 +123,7 @@ abstract="This dataset contains GIS mapping data pertaining to wilderness bounda
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/wilderness_blm-reinventory-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Reinventory" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/wilderness_blm-reinventory-boundaries-ut.jpg %}" alt="Reinventory" />
     <p>BOUNDARIES.Wilderness_BLM98Reinventory dataset represents the 1998 Bureau of Land Management (BLM) Wilderness Characteristics Inventory. It represents the BLM's inventory of areas that have Wilderness Characteristics. The data set is at 1:24,000. The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the United States Forest Service.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
@@ -137,7 +137,7 @@ abstract="This dataset contains GIS mapping data pertaining to wilderness bounda
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/wilderness_blm-suitability-boundaries-ut.jpg" | prepend: site.baseurl }}" alt="Suitability" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/wilderness_blm-suitability-boundaries-ut.jpg %}" alt="Suitability" />
     <p>BOUNDARIES.Wilderness_BLMSuitability data layer identifies which WSAs or portions of WSAs were recommended to Congress as suitable for wilderness designation. This layer is used as an historical reference only. This layer shows lands that was recomended to the President and Congress for wilderness designation as a result of the FLPMA Section 603 wilderness review mandate.</p>
     <p>Do not use this layer for WSA identification and management, planning, or for case-by-case actions where National Environmental Policy ACT (NEPA) documentation is prepared.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the United States Forest Service.</p>

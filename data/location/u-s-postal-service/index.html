@@ -31,7 +31,7 @@ ZipCodeBoundaries:
     - July 2011
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{{ "/images/USPSLarge.png" | prepend: site.baseurl }}" alt="Post Offices" />
+  <img class="caption__image" src="{% link images/USPSLarge.png %}" alt="Post Offices" />
   <figcaption class="caption__text">Post Offices and Zipcode Boundaries</figcaption>
 </figure>
 {% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mclo0ZWtWeWlBSUU"
@@ -45,7 +45,7 @@ abstract="These datasets are related to mail delivery. Included are post office 
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/USPSSmallB.png" | prepend: site.baseurl }}" alt="PostOffices" />
+    <img class="inline-text-left outline" src="{% link images/USPSSmallB.png %}" alt="PostOffices" />
     <p>Location.ZipcodePOBoxes represents the approximate locations of USPS Post Offices in Utah. Each zipcode's assigned post office has a point, therefore if a post office has multiple zipcodes, it will have multiple points.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
@@ -60,7 +60,7 @@ abstract="These datasets are related to mail delivery. Included are post office 
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/USPSSmall.png" | prepend: site.baseurl }}" alt="Zips" />
+    <img class="inline-text-left outline" src="{% link images/USPSSmall.png %}" alt="Zips" />
     <p>Boundaries.ZipCodes represents an ongoing effort to approximate the geographic extents of five digit zip codes. The dataset was produced using a combination of methods and is based on several sets of source data. Editing methods include:</p>
     <ul>
       <li>Using local zipcode polygon data obtained from counties and cities.

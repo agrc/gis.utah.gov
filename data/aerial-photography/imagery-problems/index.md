@@ -11,34 +11,32 @@ categories: []
 ---
 Some users experience problems using the latest imagery products provided by AGRC. This including the HRO from 2012 and NAIP from 2009, 2011, 2014, and 2016. Users affected are typically working on one of the following software platforms:
 
- - MicroStation
- - AutoCAD
- - Manifold
- - Apple Preview
- - Photoshop
- - Microsoft Picture Manager
+- MicroStation
+- AutoCAD
+- Manifold
+- Apple Preview
+- Photoshop
+- Microsoft Picture Manager
 
 ### Common Issues
 {:.text-left}
 
 #### Washedout or Unrecognized Images
 
-**4-Band Imagery**: The imagery products contain 4-bands of imagery (Infrared, Red, Green, Blue) as opposed to the standard 3-band color imagery (Red, Green, Blue) most are familiar with. The new imagery can, and most software platforms default to, display as a natural color image. **In some cases the 4th band of imagery is not recognized by the software and is either displayed with the other 3-bands of imagery** giving an odd <a href="{{ "/downloads/TIFF6_washedout.png" | prepend: site.baseurl }}">washedout</a> appearance. Other software platforms may <a href="{{ "/downloads/TIFF6_MicroStationError.jpg" | prepend: site.baseurl }}">not recognize</a> the imagery at all.
+**4-Band Imagery**: The imagery products contain 4-bands of imagery (Infrared, Red, Green, Blue) as opposed to the standard 3-band color imagery (Red, Green, Blue) most are familiar with. The new imagery can, and most software platforms default to, display as a natural color image. **In some cases the 4th band of imagery is not recognized by the software and is either displayed with the other 3-bands of imagery** giving an odd <a href="{% link downloads/TIFF6_washedout.png %}">washedout</a> appearance. Other software platforms may <a href="{% link downloads/TIFF6_MicroStationError.jpg %}">not recognize</a> the imagery at all.
 
 #### Solutions
 
-- Use our <a href="{{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}">Imagery Services.</a>
 - Use the ArcMap tool `Composite Bands (Data Management)` to convert the image to a different format. Specify the bands to use for the output file. Instead of adding the `.tif` image to the tool add `Band_1`, `Band_2`, and `Band_3` as the Input Rasters. (ex. `C:\HRO \12SVK240260.tif\Band_1`, `C:\HRO \12SVK240260.tif\Band_2`, `C:\HRO \12SVK240260.tif\Band_3`)
 - Use the ArcMap tool `Raster To Other Format (Conversion)` to convert the image to a different format.
- - **Microstation** users should convert the 4-band images into 3-band images and use the Raster Manager to add the new 3-band images. (_see FWTools example 1 below_)
+- **Microstation** users should convert the 4-band images into 3-band images and use the Raster Manager to add the new 3-band images. (_see FWTools example 1 below_)
 
 #### Striping or Artifacts
 
-**Compression**: The imagery is compressed from its native TIFF format to a JPEG in TIFF compression utilizing the YCbCr color space. The TIFF 6.0 format is widely implemented however some older software versions and even some new ones do not have the capability to utilize this format. This can cause images to be improperly displayed with <a href="{{ "/downloads/TIFF6_Stripes.png" | prepend: site.baseurl }}">stripes</a> or <a href="{{ "/downloads/TIFF6_Stripes2.png" | prepend: site.baseurl }}">other artifacts</a>.
+**Compression**: The imagery is compressed from its native TIFF format to a JPEG in TIFF compression utilizing the YCbCr color space. The TIFF 6.0 format is widely implemented however some older software versions and even some new ones do not have the capability to utilize this format. This can cause images to be improperly displayed with <a href="{% link downloads/TIFF6_Stripes.png %}">stripes</a> or <a href="{% link downloads/TIFF6_Stripes2.png %}">other artifacts</a>.
 
 #### Solutions
 
-- Use our <a href="{{ "/data/sgid-base-map-services-arcmap/" | prepend: site.baseurl }}">Imagery Services.</a>
 - Download the free image viewer<a href="http://www.irfanview.com/"> IrfanViewServer</a> and save the image to a `jpg` format.
 - Download the free <a href="http://fwtools.maptools.org/" target="_blank" rel="noopener">FWTools</a> toolkit and decompress the TIFF. (_see FWTools example 2 below_)
 

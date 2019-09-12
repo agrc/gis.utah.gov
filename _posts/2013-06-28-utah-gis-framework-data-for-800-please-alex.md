@@ -24,6 +24,6 @@ categories:
 <p>Many thanks to all who have worked or supported this important partnership!</p>
 <p><i><strong>Important Update 8/7/2013</strong></i></p>
 <ul>
-<li>The statewide address point layer is now being used as reference data for the <a href="{{site.baseurl}}{% post_url 2013-05-10-utah-statewide-address-geocoding-web-service-upgrade %}">api.mapserv.utah.gov</a> address locators</li>
+<li>The statewide address point layer is now being used as reference data for the <a href="{% post_url 2013-05-10-utah-statewide-address-geocoding-web-service-upgrade %}">api.mapserv.utah.gov</a> address locators</li>
 <li>The statewide address point layer is now available as a <a href="http://mapserv.utah.gov/arcgis/rest/services/BaseMaps/AddressPoints/MapServer?f=jsapi">REST-based tiled base map service</a> (<a href="http://mapserv.utah.gov/arcgis/rest/services/BaseMaps/AddressPoints/MapServer">service info</a>).
 </ul>

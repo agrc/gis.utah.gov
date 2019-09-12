@@ -14,10 +14,10 @@ tags: []
 </div>
 <div class="flex pop">
   <span class="flex--center">
-    If you are searching for data please navigate to the <a href="{{ "/data/sgid-index" | prepend: site.baseurl }}">sgid index</a> and search there.
+    If you are searching for data please navigate to the <a href="{% link data/sgid-index/index.html %}">sgid index</a> and search there.
   </span>
 </div>
-<script src="{{ "/js/dist/search.min.js" | prepend: site.baseurl }}" async defer></script>
+<script src="{% link /js/dist/search.min.js %}" async defer></script>
 <script id="template" type="x-tmpl-mustache">{% raw %}
 {{#data}}
   <div class="grid__col grid__col--1-of-2 text-center">

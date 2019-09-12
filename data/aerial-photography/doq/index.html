@@ -43,8 +43,8 @@ SCSPhotomaps:
     - 2003
 ---
 <figure class="caption caption--right">
-  <a href="{{ "/downloads/DOQ_sample.jpg" | prepend: site.baseurl }}">
-    <img class="caption__image" src="{{ "/images/DOQ_sample.jpg" | prepend: site.baseurl }}" alt="DOQ Sample" />
+  <a href="{% link downloads/DOQ_sample.jpg %}">
+    <img class="caption__image" src="{% link images/DOQ_sample.jpg %}" alt="DOQ Sample" />
   </a>
   <figcaption class="caption__text">1990's DOQ Sample</figcaption>
 </figure>
@@ -78,7 +78,7 @@ abstract="A Digital Orthophoto Quadrangle (DOQ) is a digital image that has the 
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>AGRC has a statewide coverage of 1-meter resolution Black and White Digital Orthophoto Quads (DOQs). All tiles have a UTM NAD83 Zone 12 North meters projection. The <code>.jpg</code> files are usually between 30 to 40 MB. <strong>The <code>.met</code> file is all the original header information from the image and contains the dates the images were flown and photographed.</strong> Some DOQs have <a href="{{ "/downloads/DOQ_two_vintages.txt" | prepend: site.baseurl }}">2 vintages</a> of dates the images were flown. Usually one image will be from 1993 and another 1997 or newer. Refer to <a href="{{ "/downloads/Find_a_DOQ.txt" | prepend: site.baseurl }}">Find_a_DOQ.txt</a> for quadrangle names and associated AGRC Q number.</p>
+    <p>AGRC has a statewide coverage of 1-meter resolution Black and White Digital Orthophoto Quads (DOQs). All tiles have a UTM NAD83 Zone 12 North meters projection. The <code>.jpg</code> files are usually between 30 to 40 MB. <strong>The <code>.met</code> file is all the original header information from the image and contains the dates the images were flown and photographed.</strong> Some DOQs have <a href="{% link downloads/DOQ_two_vintages.txt %}">2 vintages</a> of dates the images were flown. Usually one image will be from 1993 and another 1997 or newer. Refer to <a href="{% link downloads/Find_a_DOQ.txt %}">Find_a_DOQ.txt</a> for quadrangle names and associated AGRC Q number.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
         <li><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/doq/DOQ_Info.txt">DOQ Information Sheet</a>

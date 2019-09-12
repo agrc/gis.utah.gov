@@ -33,7 +33,7 @@ CompositeLocatorPackage:
       address locators.
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{{ "/images/AddPointsGC2.png" | prepend: site.baseurl }}" alt="Address Locator"/>
+  <img class="caption__image" src="{% link images/AddPointsGC2.png %}" alt="Address Locator"/>
   <figcaption class="caption__text">Concept of an Address Locator</figcaption>
 </figure>
 {% include abstract.html download="https://drive.google.com/a/utah.gov/uc?id=0B_Y2d5UmL8_zUUdDVzdBaTJIQ2c&export=download"
@@ -53,13 +53,13 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     <p><i class="fab fa-4x fa-mixcloud fa-pull-left"></i> The AGRC WebAPI is a C# .NET WebAPI project. This API can be accessed programmatically, over http (with standard get requests), without the use of GIS-specific software - such as a web application. This geocoding API uses 'front end' logic to resolve several common address standardization issues above and beyond what out-of-the-box geocoders handle. To get started, <a href="https://developer.mapserv.utah.gov/StartupGuide">read the getting started guide</a>. There are also examples of geocoding in <a href="https://github.com/agrc/GeocodingSample">multiple programming languages</a>.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="{{ "/developer/web-services/" | prepend: site.baseurl }}">Geospatial Web Services</a>
-      <li><a href="{{site.baseurl}}{% post_url 2014-10-30-agrc-edg-presentation %}">Using AGRC's Geocoding and Map-based Web Services</a>
+      <li><a href="{% link developer/web-services/index.md %}">Geospatial Web Services</a>
+      <li><a href="{% post_url 2014-10-30-agrc-edg-presentation %}">Using AGRC's Geocoding and Map-based Web Services</a>
       <li><a href="https://www.youtube.com/watch?v=BHhQxxXy6bo">EDG brown bag event presentation</a>
       <li><a href="http://agrc.github.io/Presentations/UGIC/2014/webapi/#0">2014 UGIC WebAPI Presentation slideds</a>
-      <li><a herf="{{site.baseurl}}{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">Rethinking Geocoders: Adding Local Vernacular into the Build Process</a>
-      <li><a href="{{site.baseurl}}{% post_url 2015-02-12-authoritative-utah-geocoding-results %}">Authoritative Utah Geocoding Results</a>
-      <li><a href="{{site.baseurl}}{% post_url 2013-05-10-utah-statewide-address-geocoding-web-service-upgrade %}">Utah Statewide Address Geocoding Web Service Upgrade</a>
+      <li><a herf="{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">Rethinking Geocoders: Adding Local Vernacular into the Build Process</a>
+      <li><a href="{% post_url 2015-02-12-authoritative-utah-geocoding-results %}">Authoritative Utah Geocoding Results</a>
+      <li><a href="{% post_url 2013-05-10-utah-statewide-address-geocoding-web-service-upgrade %}">Utah Statewide Address Geocoding Web Service Upgrade</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.webapi %} or the <a href="https://github.com/agrc/api.mapserv.utah.gov/issues/new">Github repository</a>.</p>
   </div>
@@ -74,7 +74,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     <p><i class="fas fa-4x fa-archive fa-pull-left"></i>This custom toolbox created by the AGRC that allows ArcGIS users to geocode a table of addresses. The geocoding tool makes use of the AGRC API and will produce as output a <code>.csv</code> file with the input unique identifier field, the input address information, and the match results. It also produces a file geodatabase table with the same information and will automatically add the table to the current project when run from ArcMap. A user can use the table to join on the unique record identifier to connect with the original results, and also to <code>Display XYEvents</code> to create a map layer of the results.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href='{{ site.baseurl }}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}'>Utah Geocoding Toolbox for ArcGIS Desktop</a>
+      <li><a href='{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}'>Utah Geocoding Toolbox for ArcGIS Desktop</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.geocoding_tools %} or the <a href="https://github.com/agrc/geocoding-toolbox/issues/new">Github repository</a>.</p>
   </div>
@@ -95,15 +95,15 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img style="float: left;font-size: 4em;margin-right: .3em" src="{{ "/images/address-geocode.png" | prepend: site.baseurl }}" alt="Address Locator" />
-    <p>AGRC_RoadsLocator is an ArcGIS 10 address locator that references the statewide Transportation.Roads feature class and uses the right and left zip code fields and/or the right and left address systems fields for zone. This address locator is built using an alternate names table, as recommeded in NextGen 911 model. For example, Redwood Road is aliased as both Highway 68 and 1700 West. Read more about the <a href="{{site.baseurl}}{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">underlying data for this locactor and how it was created</a>.</p>
+    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" />
+    <p>AGRC_RoadsLocator is an ArcGIS 10 address locator that references the statewide Transportation.Roads feature class and uses the right and left zip code fields and/or the right and left address systems fields for zone. This address locator is built using an alternate names table, as recommeded in NextGen 911 model. For example, Redwood Road is aliased as both Highway 68 and 1700 West. Read more about the <a href="{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">underlying data for this locactor and how it was created</a>.</p>
     <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>
     <p>The <code>.gcpk</code> packages are portable files that do not require the reference data: what is required of the data is included in the packaged. Once downloaded, <code>Unpack</code> the package and it is ready for use. You can <code>Unpack</code> the Locator Package in ArcCatalog by right-clicking on the package. Unpacking will always place the unpacked locator in your user profile <code>..\My Documents\ArcGIS\Packages</code>. Alternatly, you can use ESRI's <code>Extract Package</code> tool and specify an output location. You can also drag the <code>.gcpk</code> file into ArcMap and it will unpack automatically.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li>View <a href="{{"/data/transportation/roads-system/" | prepend: site.baseurl }}">recent updates</a> to the SGID Statewide Roads dataset.
-      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download the File Geodatabase</a> (to build your own locator) that was used to build this address locator. The dataset contains the roads' alternate names table as well as the <a href="{{site.baseurl}}{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">SGID-derived</a> roads feature class. This table can be joined back to the <code>GeocodeRoads</code> feature class via the <code>GLOBALID_SGID</code> field.
+      <li>View <a href="{% link data/transportation/roads-system/index.html %}">recent updates</a> to the SGID Statewide Roads dataset.
+      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download the File Geodatabase</a> (to build your own locator) that was used to build this address locator. The dataset contains the roads' alternate names table as well as the <a href="{% post_url 2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process %}">SGID-derived</a> roads feature class. This table can be joined back to the <code>GeocodeRoads</code> feature class via the <code>GLOBALID_SGID</code> field.
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.locators %}</p>
   </div>
@@ -117,7 +117,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img style="float: left;font-size: 4em;margin-right: .3em" src="{{ "/images/address-geocode.png" | prepend: site.baseurl }}" alt="Address Locator" />
+    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" />
     <p>AGRC_AddressPointLocator is an ArcGIS 10 address locator that references the statewide Location.AddressPoints feature class and uses zip code and/or address system for zone. Geocoding match rates will imporve as the Location.AddressPoints feature class continues to be developed.</p>
     <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>
@@ -138,7 +138,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img style="float: left;font-size: 4em;margin-right: .3em" src="{{ "/images/address-geocode.png" | prepend: site.baseurl }}" alt="Address Locator" />
+    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" />
     <p>AGRC_CompositeLocator is an ArcGIS 10 composite address locator built from the AGRC_AddressPointLocator and the AGRC_RoadsLocator locators and uses zip code and/or address system for zone. These locators reference the Transportation.Roads and Location.AddressPoints feature classes.</p>
     <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>

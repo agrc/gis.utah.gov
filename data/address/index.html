@@ -12,19 +12,19 @@ categories: []
 {% include table_overview.html name="Addressing" %}
   <tbody>
     <tr>
-      <td><a href="{{ "/data/location/address-data/" | prepend: site.baseurl }}">Address Points</a></td>
+      <td><a href="{% link data/location/address-data/index.html %}">Address Points</a></td>
       <td>GIS Data Layer</td>
       <td>AGRC, Local Governments</td>
       <td>Address point locations in Utah.</td>
     </tr>
     <tr>
-      <td><a href="{{ "/data/location/address-data/" | prepend: site.baseurl }}">Address System Quadrants</a></td>
+      <td><a href="{% link data/location/address-data/index.html %}">Address System Quadrants</a></td>
       <td>GIS Data Layer</td>
       <td>AGRC</td>
       <td>Polygons that depict the four quadrants of each address system in Utah.</td>
     </tr>
     <tr>
-      <td><a href="{{ "/data/address/address-grids/" | prepend: site.baseurl }}">Utah Local Addressing System (Address Grids) Information</a></td>
+      <td><a href="{% link data/address/address-grids/index.html %}">Utah Local Addressing System (Address Grids) Information</a></td>
       <td>Address Coordinate Descriptions</td>
       <td>AGRC</td>
       <td>Text that describes the address coordinate systems in Utah.</td>
@@ -36,13 +36,13 @@ categories: []
       <td>Custom geocoding http web api</td>
     </tr>
     <tr>
-      <td><a href="{{site.baseurl}}{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}">Utah Geocoding Toolbox</a></td>
+      <td><a href="{% post_url 2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2 %}">Utah Geocoding Toolbox</a></td>
       <td>Geocoding toolbox</td>
       <td>AGRC</td>
       <td>Custom geocoding toolbox for ArcGIS Desktop</td>
     </tr>
     <tr>
-      <td><a href="{{ "/data/address-geocoders-locators/" | prepend: site.baseurl }}">Address Locators</a></td>
+      <td><a href="{% link data/address-geocoders-locators/index.html %}">Address Locators</a></td>
       <td>Locator Service</td>
       <td>AGRC</td>
       <td>Address locators for geocoding that reference the statewide Transportation.Roads and Location.AddressPoints feature classes in the SGID.</td>
@@ -51,6 +51,6 @@ categories: []
 </table>
 <h4>Related Data</h4>
 <ul class="dotless">
-  <li><a href="{{ "/data/address/address-grids/" | prepend: site.baseurl }}">Utah Local Addressing Systems (Address Grids)</a>
-  <li><a href="{{ "/data/location/" | prepend: site.baseurl }}">Location</a>
+  <li><a href="{% link data/address/address-grids/index.html %}">Utah Local Addressing Systems (Address Grids)</a>
+  <li><a href="{% link data/location/index.html %}">Location</a>
 </ul>
