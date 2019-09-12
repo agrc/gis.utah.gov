@@ -3,7 +3,7 @@ version: "3"
 services:
   jekyll:
     container_name: "gis.utah.gov"
-    image: "jekyll/jekyll:3.7"
+    image: "jekyll/jekyll:4"
     command: "jekyll serve --watch --livereload"
     volumes:
       - "./:/srv/jekyll"

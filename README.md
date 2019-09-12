@@ -11,7 +11,7 @@ License: [MIT](/LICENSE).
 1. Check out this repository
 1. run `docker-compose up`
 1. browse to `localhost:4000`
-1. run `docker pull jekyll/jekyll:3.7` to update your image
+1. run `docker pull jekyll/jekyll:4` to update your image
 1. run `grunt imagemin:images` to minify images
 
 ## Common Website Tips
