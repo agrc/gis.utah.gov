@@ -12,11 +12,11 @@
         text-shadow: darken($base-background-color, 25%) .1em .1em .2em;
     }
     img {
-        border: .08em solid #333;
+        border: 1px solid #333;
     }
     a {
         img {
-            border: .08em solid #333;
+            border: 1px solid #333;
         }
     }
     &.featured {
