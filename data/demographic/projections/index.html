@@ -1,0 +1,185 @@
+author:
+ display_name: BG
+ email: bgranberg@wfrc.org
+tags:
+ - projections
+ - demographic
+ - employment
+ - economy
+ - planning
+ - population
+ - households
+ - society
+date: 2019-09-25 10:00:00 -0600
+title: Projections Data
+categories: []
+PopulationAndHouseholdsCityArea:
+ downloads:
+   - url: http://data.wfrc.org/datasets/household-projections-city-area
+     label: Household Count Projections, for City Areas (‘open data’ webpage)
+   - url: http://data.wfrc.org/datasets/population-projections-city-area
+     label: Population Projections, for City Areas (‘open data’ webpage)
+ updates:
+   - June 2019
+
+PopulationAndHouseholdsTAZ:   
+ downloads:
+   - url: http://data.wfrc.org/datasets/household-projections-taz
+     label: Household Count Projections, for TAZs (‘open data’ webpage)
+   - url: http://data.wfrc.org/datasets/population-projections-taz
+     label: Population Projections, for TAZs (‘open data’ webpage)
+ updates:
+   - June 2019
+
+EmploymentCityArea:
+ downloads:
+   - url: https://data.wfrc.org/datasets/all-jobs-projections-city-area
+     label: Total Jobs, for City Areas (‘open data’ webpage)
+   - url: https://data.wfrc.org/datasets/typical-jobs-projections-
+     label: Typical Commute Jobs (TCJ), for City Areas (‘open data’ webpage)
+   - url: https://data.wfrc.org/datasets/industrial-jobs-projections-city-area
+     label: Industrial Jobs (subset of TCJ), for City Areas (‘open data’ webpage)
+   - url: http://data.wfrc.org/datasets/office-jobs-projections-city-area
+     label: Office Jobs (subset of TCJ), for City Areas (‘open data’ webpage)
+   - url: https://data.wfrc.org/datasets/retail-jobs-projections-city-area
+     label: Retail Jobs (subset of TCJ), for City Areas (‘open data’ webpage)
+   - url: https://data.wfrc.org/datasets/nontypical-jobs-projections-city-area
+     label: Non-typical Commute Jobs, for City Areas (‘open data’ webpage)
+ update:
+   - June 2019
+
+EmploymentTAZ:
+ downloads:
+   - url: https://data.wfrc.org/datasets/all-jobs-projections-taz
+     label: Total Jobs, for TAZs (‘open data’ webpage)
+   - url: https://data.wfrc.org/datasets/typical-jobs-projections-taz
+     label: Typical Commute Jobs (TCJ), for TAZs (‘open data’ webpage)
+   - url: https://data.wfrc.org/datasets/industrial-jobs-projections-taz
+     label: Industrial Jobs (subset of TCJ), for TAZs (‘open data’ webpage)
+   - url: http://data.wfrc.org/datasets/office-jobs-projections-taz
+     label: Office Jobs (subset of TCJ), for TAZs (‘open data’ webpage)
+   - url: https://data.wfrc.org/datasets/retail-jobs-projections-taz
+     label: Retail Jobs (subset of TCJ), for TAZs (‘open data’ webpage)
+   - url: https://data.wfrc.org/datasets/nontypical-jobs-projections-taz
+     label: Non-typical Commute Jobs, for TAZs (‘open data’ webpage)
+ updates:
+   - June 2019
+---
+
+
+
+
+<figure class="caption caption--right">
+  <img class="caption__image" src="{{ "/images/gallery/sgid/projections3d.png" | prepend: site.baseurl }}" alt="2019-2050 Utah Population, Household, & Job Projections" />
+  <figcaption class="caption__text">2019-2050 Pop, HH, & JobProjections</figcaption>
+</figure>
+
+{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSThyMmZtSzJMREk"
+
+name="Utah Demographic & Employment Projections (Statewide, small area, 2019-2050)"
+stewards="Wasatch Front Regional Council (WFRC), Mountainland Association of Governments (MAG), Dixie MPO, Cache MPO, UDOT"
+
+abstract="Utah's 4 Metropolitan Planning Organizations, together with UDOT for the state's non-urbanized areas, prepare small area demographic and employment projections to support the transportation planning process. These small area projections are developed from county-level totals projected by the University of Utah Gardner Policy Institute. Two small area geographies are available: Traffic Analysis Zone (TAZ's) polygons and City Area polygons. TAZ's average about 1 square mile in size along the Wasatch Front but are larger in rural areas. City Areas are approximations of city boundaries built by combining TAZ polygons. All links point at ‘open data’ pages from which shapefiles, KML, CSV, and web services can be downloaded or utilized." %}
+
+<div class="grid package">
+ <div class="grid__col grid__col--12-of-12">
+   <h3 id="PopulationAndHouseholdsCityArea">
+   <a href="#populationhouseholdscityarea" class="anchor--link">Projected Population & Household Counts for City Areas (thru 2050)</a>
+   </h3>
+</div>
+
+<div class="grid__col grid__col--12-of-12 package-content">
+   <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/cityareadarkgreen.png" | prepend: site.baseurl }}" alt="Population And Households  Projections for City Areas" />
+   <p>Add text here</p>
+   <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+   <h5>Related Resources</h5>
+   <ul class="dotless">
+     <li><a href="metadataURL">see open data page for metadata, use 'More v' link to expand for full view /a>
+     <li><a href="https://wfrc.org">WFRC</a> and <a href="https://www.mountainland.org/mapsdata">MAG</a> metropolitan planning organizations (MPOs)
+     <li><a href="https://gardner.utah.edu/demographics/population-projections/">University of Utah Gardner Policy Institute</a>
+   </ul>
+
+   <p>{% include contact.html subject=page.title contact=site.data.contacts.wfrc %}</p>
+</div>
+
+ {% include packagedata.html name="PopulationAndHouseholdsCityArea"
+ info=page.PopulationAndHouseholdsCityArea %}
+</div>
+
+
+<div class="grid package">
+ <div class="grid__col grid__col--12-of-12">
+   <h3 id="PopulationAndHouseholdsTAZ">
+   <a href="#populationhouseholdstaz" class="anchor--link">Projected Population & Household Counts for TAZs (thru 2050)</a>
+   </h3>
+</div>
+
+<div class="grid__col grid__col--12-of-12 package-content">
+   <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/tazlightgreen.png" | prepend: site.baseurl }}" alt="Population And Households  Projections for TAZs" />
+   <p>Add text here</p>
+   <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+   <h5>Related Resources</h5>
+   <ul class="dotless">
+     <li><a href="metadataURL">Metadata</a>
+     <li><a href="https://wfrc.org">WFRC</a> and <a href="MAGURL">MAG</a> metropolitan planning organizations (MPOs)
+     <li><a href="GPI">University of Utah Gardner Policy Institute</a>
+   </ul>
+
+   <p>{% include contact.html subject=page.title contact=site.data.contacts.wfrc %}</p>
+</div>
+
+ {% include packagedata.html name="PopulationAndHouseholdsTAZ"
+ info=page.PopulationAndHouseholdsTAZ %}
+</div>
+
+
+<div class="grid package">
+ <div class="grid__col grid__col--12-of-12">
+   <h3 id="EmploymentCityArea">
+   <a href="#employmentcityarea" class="anchor--link">Projected Employment for City Areas (thru 2050)</a>
+   </h3>
+</div>
+
+<div class="grid__col grid__col--12-of-12 package-content">
+   <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/cityareadarkred.png" | prepend: site.baseurl }}" alt="Employment Projections for City Areas" />
+   <p>Add text here</p>
+   <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+   <h5>Related Resources</h5>
+   <ul class="dotless">
+     <li><a href="metadataURL">Metadata</a>
+     <li><a href="https://wfrc.org">WFRC</a> and <a href="MAGURL">MAG</a> metropolitan planning organizations (MPOs)
+     <li><a href="GPI">University of Utah Gardner Policy Institute</a>
+   </ul>
+
+   <p>{% include contact.html subject=page.title contact=site.data.contacts.wfrc %}</p>
+</div>
+
+ {% include packagedata.html name="EmploymentCityArea"
+ info=page.EmploymentCityArea %}
+</div>
+
+
+<div class="grid package">
+ <div class="grid__col grid__col--12-of-12">
+   <h3 id="employmenttaz">
+   <a href="#EmploymentTAZ" class="anchor--link">Projected Employment for TAZs (thru 2050)</a>
+   </h3>
+</div>
+
+<div class="grid__col grid__col--12-of-12 package-content">
+   <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/tazlightred.png" | prepend: site.baseurl }}" alt="Employment  Projections for TAZs" />
+   <p>Add text here</p>
+   <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+   <h5>Related Resources</h5>
+   <ul class="dotless">
+     <li><a href="metadataURL">Metadata</a>
+     <li><a href="https://wfrc.org">WFRC</a> and <a href="MAGURL">MAG</a> metropolitan planning organizations (MPOs)
+     <li><a href="GPI">University of Utah Gardner Policy Institute</a>
+   </ul>
+
+   <p>{% include contact.html subject=page.title contact=site.data.contacts.wfrc %}</p>
+</div>
+
+ {% include packagedata.html name="EmploymentTAZ"
+ info=page.EmploymentTAZ %}
+</div>
