@@ -134,6 +134,19 @@ You may request a local copy of the NAIP, HRO, and Google imagery for off-line c
 - Project names:
 - Project locations:
 
+### Layers Not Exporting When Using WMS
+{: .text-left}
+
+If you are using a WMS connection, you may find that the Discover layer does not show up when you export or print your map. This is due to a technical limitation of the WMS protocol. The only fixes are to use WMTS, export at a lower resolution, or use a local copy (for aerial imagery).
+
+**Background**
+
+In WMS, the client (ArcMap, a browser, etc) requests a map of a specific extent and resolution. The server creates a single image matching the request and returns it to the client—a 8.5" x 11" image at 100 dpi would be 850 x 1,100 pixels (just shy of one megapixel). Every time the user pans or zooms, the server creates and sends a completely new image, which consumes server processing power and bandwidth. To maintain performance for all users, WMS servers will not create and return an image if its dimensions exceed a certain size.
+
+Applications like ArcMap and web browsers have a relatively small window and use a resolution of 96 dpi, resulting in requests that fit within the server's allowed size. However, exporting a 20" x 30" map at 300 dpi results in a 6,000 x 9,000 pixel (54 megapixel) image. This far exceeds the server's limit, so it does not return an image. ArcMap dutifully finishes exporting the map instead of raising an error, resulting in a map without the layer. You can try changing the Output Image Quality (Resample Ratio) setting to reduce the requested resolution, but the output quality will suffer.
+
+In contrast, WMTS works by delivering a set of fixed-dimension tiles at the requested zoom level that cover the requested extent. Because the tiles are pre-rendered, all the server has to do is figure out which tiles to send and then send them—and this is sped up by the client caching previously received tiles and only requesting ones it hasn't seen yet. This allows WMTS to quickly serve up tiles for much larger and/or more detailed maps than WMS without clogging the server.
+
 ### Other Tidbits
 {: .text-left}
 

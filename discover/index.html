@@ -1,5 +1,5 @@
 ---
-title: Discover - Imagery and Base Map Server
+title: Discover — Our Imagery and Base Map Server
 layout: page_nocrumb
 author:
   display_name: Rick Kelson
@@ -33,6 +33,9 @@ categories: []
   <li><i class="far fa-fw fa-circle"></i> <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform">Discover Server Access Form</a>, for <strong>general access</strong>.
   <li><i class="fas fa-fw fa-lock"></i> <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a>, for <strong>licensed access</strong> by one of Utah’s <strong>cities, counties, special districts, state agencies, K-12 school districts, colleges, universities, or tribal entities</strong>, or a contractor or formal partner of one of these organizations. Students in the state of Utah working on school projects also qualify for licensed access; please provide a school-supplied e-mail if possible.
 </ul>
+<p class="pop text-center">
+  <strong>Students:</strong> Please use the <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a> (except for students at out-of-state schools)
+</p>
 <p>Once you have completed the appropriate form (please only fill out <strong>one</strong> or the other, not both), we will review your request, create your account, and send you an e-mail with information about the services.</p>
 <h3 class="text-left" id="connect"><i class="fab fa-fw fa-mixcloud"></i> Get Connected</h3>
 <p>Your account e-mail will contain URLs that you'll enter into your software or web application to access the WMS, WMTS, or tile services. They contain a quad-word (e.g., <code>https://discover.agrc.utah.gov/login/path/your-unique-quad-word/</code>) that is unique to your user and should not be shared with anyone. Multiple requests from the same organization may be given the same quad-word.</p>
@@ -42,7 +45,7 @@ categories: []
   <li>WMTS: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/wmts/1.0.0/WMTSCapabilities.xml</code>
   <li>Tiles: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/tiles/{service}/{z}/{x}/{y}</code>
 </ul>
-<p>For best performance, we recommend using WMTS when possible.</p>
+<p>For best performance, we recommend using WMTS when possible. WMS is slower and has <a href="{{ "/discover/resources/#layers-not-exporting-when-using-wms" | prepend: site.baseurl }}">tehcnical limitations</a> that could prevent the layer from drawing when exporting or printing maps.</p>
 <p>To learn more about using the Discover Server, be sure to visit our <a href="{{ "/discover/resources/" | prepend: site.baseurl }}">Discover Server Resources and Information</a> page. The following topics are covered in more depth on that page, but we've compiled them here as well for your convenience.</p>
 <ul class="dotless">
   <li><a href="{{ "/discover/resources/#coordinate-system-and-datum" | prepend: site.baseurl }}">Coordinate system and datum</a>
@@ -55,6 +58,7 @@ categories: []
   <li><a href="{{ "/discover/resources/#printing-web-maps-with-discover-services" | prepend: site.baseurl }}">Printing Discover services</a>
   <li><a href="{{ "/discover/resources/#google-flight-dates" | prepend: site.baseurl }}">Flight dates</a>
   <li><a href="{{ "/discover/resources/#requests-for-on-premise-use" | prepend: site.baseurl }}">On-premises use</a>
+  <li><a href="{{ "/discover/resources/#layers-not-exporting-when-using-wms" | prepend: site.baseurl }}">Layers not exporting when using WMS</a>
   <li><a href="{{ "/discover/resources/#other-tidbits" | prepend: site.baseurl }}">Other tidbits</a>
 </ul>
 <p>If you are looking for <strong>imagery downloads</strong>, navigate to the <a href="{{ "/data/aerial-photography/" | prepend:site.baseurl }}">aerial photography</a> section of the data pages.</p>
@@ -86,7 +90,7 @@ categories: []
 </ul>
 <h3 class="text-left"><i class="far fa-fw fa-thumbs-up"></i> Best Practices</h3>
 <ul>
-  <li>It is strongly recommended that you use WMTS for the best draw time/perceived performance.
+  <li>It is strongly recommended that you use WMTS for the best user experience.
   <li>If you are, or will be, printing base maps from the web and are experiencing blank or empty output, read about our <a href="{{site.baseurl}}{% post_url 2017-02-02-printing-web-maps-with-discover-services %}">GP proxy service</a> or our new <a href="{{site.baseurl}}{% post_url 2018-02-26-success-with-serverless %}">serverless print proxy</a>.
   <li>Any end products using the Google Imagery must attribute Google. See the <a href="{{ "/discover/resources/#google-logos" | prepend: site.baseurl }}">resources page</a> for logos.
 </ul>
