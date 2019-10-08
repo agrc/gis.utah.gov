@@ -26,7 +26,7 @@ During 2015 and 2016 the U.S. Geological Survey and the U.S. Park Service acquir
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fa fa-download"></i> <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2015%20Zion%20NP%20LiDAR%7D,1%20Meter%20%7B2015%20Zion%20NP%20LiDAR%7D&title=Zion%20National%20Park%202015%20LiDAR" target="_blank">Retrieve 2018 Bare Earth DEMs via Interactive Map</a>
+      <i class="fa fa-download"></i> <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2015%20Zion%20NP%20LiDAR%7D,1%20Meter%20%7B2015%20Zion%20NP%20LiDAR%7D&title=Zion%20National%20Park%202015%20LiDAR" target="_blank">Retrieve 2015 Bare Earth DEMs via Interactive Map</a>
     </strong>
   </li>
   <li>
