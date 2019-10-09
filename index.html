@@ -89,112 +89,409 @@ layout: default
     </div>
     <h3>...or browse specific Data Categories</h3>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 text-center">
-        <a href="{{ "/data/911/" | prepend: site.baseurl }}"><h5 class="text-center">911</h5>
-        <img class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/911.svg %}"></a>
+      <a href="{% link data/911/index.html %}"><h5 class="text-center">911</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb emergency" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+            <text transform="translate(17 59)" class="element">9</text>
+            <text transform="translate(46 60)" style="font-size:26px;font-weight:800;letter-spacing:-0.1em" class="label">11</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/address/" | prepend: site.baseurl }}"><h5 class="text-center">Addresses</h5>
-      <img alt="Addresses" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/address.svg %}"></a>
+      <a href="{% link data/address/index.html %}"><h5 class="text-center">Addresses</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb address" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(9 56)" class="element">Ad</text>
+          <text transform="translate(23 75)" class="label">Address</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/aerial-photography/" | prepend: site.baseurl }}"><h5 class="text-center">Aerial Photos</h5>
-      <img alt="Aerial Photos" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/aerial_photos.svg %}"></a>
+      <a href="{% link data/aerial-photography/index.html %}"><h5 class="text-center">Aerial Photos</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb aerial" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(10 56)" class="element">Ae</text>
+          <text transform="translate(9 75)" class="label">Aerial Photos</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/bioscience/" | prepend: site.baseurl }}"><h5 class="text-center">Bioscience</h5>
-      <img alt="Bioscience" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/bioscience.svg %}"></a>
+      <a href="{% link data/bioscience/index.html %}"><h5 class="text-center">Bioscience</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb bioscience" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(19 56)" class="element">Bi</text>
+          <text transform="translate(16 75)" class="label">Bioscience</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/boundaries/" | prepend: site.baseurl }}"><h5 class="text-center">Boundaries</h5>
-      <img alt="Boundaries" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/boundaries.svg %}"></a>
+      <a href="{% link data/boundaries/index.html %}"><h5 class="text-center">Boundaries</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb boundaries" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(10 56)" class="element">Bo</text>
+          <text transform="translate(14 75)" class="label">Boundaries</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/cadastre/" | prepend: site.baseurl }}"><h5 class="text-center">Cadastre</h5>
-      <img alt="Cadastre" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/cadastre.svg %}"></a>
+      <a href="{% link data/cadastre/index.html %}"><h5 class="text-center">Cadastre</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb cadastre" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(11 56)" class="element">Ca</text>
+          <text transform="translate(20 75)" class="label">Cadastre</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/climate/" | prepend: site.baseurl }}"><h5 class="text-center">Climate/Weather</h5>
-      <img alt="Climate/Weather" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/climate.svg %}"></a>
+      <a href="{% link data/climate/index.html %}"><h5 class="text-center">Climate/Weather</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb climate" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(19 56)" class="element">Ci</text>
+          <text transform="translate(24 75)" class="label">Climate</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 text-center">
-      <a href="{{ "/data/elevation-and-terrain/contours/" | prepend: site.baseurl }}"><h5 class="text-center">Contours</h5>
-        <img class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/contours.svg %}"></a>
+      <a href="{% link data/elevation-and-terrain/contours/index.html %}"><h5 class="text-center">Contours</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb contours" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(11 56)" class="element">Co</text>
+          <text transform="translate(20 75)" class="label">Contours</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/demographic/" | prepend: site.baseurl }}"><h5 class="text-center">Demographic</h5>
-      <img alt="Demographic" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/demographics.svg %}"></a>
+      <a href="{% link data/demographic/index.html %}"><h5 class="text-center">Demographic</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb demographic" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(9 56)" class="element">De</text>
+          <text transform="translate(5 75)" class="label">Demographics</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/economy/" | prepend: site.baseurl }}"><h5 class="text-center">Economy</h5>
-      <img alt="Economy" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/economy.svg %}"></a>
+      <a href="{% link data/economy/index.html %}"><h5 class="text-center">Economy</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb economy" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(16 56)" class="element">Ec</text>
+          <text transform="translate(20 75)" class="label">Economy</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/elevation-and-terrain/" | prepend: site.baseurl }}"><h5 class="text-center">Elevation/Terrain</h5>
-      <img alt="Elevation/Terrain" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/elevation.svg %}"></a>
+      <a href="{% link data/elevation-and-terrain/index.html %}"><h5 class="text-center">Elevation/Terrain</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb elevation" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(22 56)" class="element">El</text>
+          <text transform="translate(20 75)" class="label">Elevation</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/energy/" | prepend: site.baseurl }}"><h5 class="text-center">Energy</h5>
-      <img alt="Energy" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/energy.svg %}"></a>
+      <a href="{% link data/energy/index.html %}"><h5 class="text-center">Energy</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb energy" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(13 56)" class="element">En</text>
+          <text transform="translate(26 75)" class="label">Energy</text>>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/environment/" | prepend: site.baseurl }}"><h5 class="text-center">Environment</h5>
-      <img alt="Environment" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/environment.svg %}"></a>
+      <a href="{% link data/environment/index.html %}"><h5 class="text-center">Environment</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb environment" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(14 56)" class="element">Ev</text>
+          <text transform="translate(10 75)" class="label">Environment</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/farming/" | prepend: site.baseurl }}"><h5 class="text-center">Farming</h5>
-      <img alt="Farming" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/farming.svg %}"></a>
+      <a href="{% link data/farming/index.html %}"><h5 class="text-center">Farming</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb farming" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(14 56)" class="element">Fa</text>
+          <text transform="translate(22 75)" class="label">Farming</text>>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/geoscience/" | prepend: site.baseurl }}"><h5 class="text-center">Geoscience</h5>
-      <img alt="Geoscience" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/geoscience.svg %}"></a>
+      <a href="{% link data/geoscience/index.html %}"><h5 class="text-center">Geoscience</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb geoscience" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(9 56)" class="element">Ge</text>
+          <text transform="translate(14 75)" class="label">Geoscience</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/health/" | prepend: site.baseurl }}"><h5 class="text-center">Health</h5>
-      <img alt="Health" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/health.svg %}"></a>
+      <a href="{% link data/health/index.html %}"><h5 class="text-center">Health</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb health" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(9 56)" class="element">He</text>
+          <text transform="translate(27 75)" class="label">Health</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/history/" | prepend: site.baseurl }}"><h5 class="text-center">History</h5>
-      <img alt="History" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{%link images/front-page/history.svg %}"></a>
+      <a href="{% link data/history/index.html %}"><h5 class="text-center">History</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb history" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(16 56)" class="element">Hi</text>
+          <text transform="translate(25 75)" class="label">History</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 text-center">
-        <a href="{{ "/data/indices/" | prepend: site.baseurl }}"><h5 class="text-center">Indices</h5>
-        <img class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/indices.svg %}"></a>
+      <a href="{% link data/indices/index.html %}"><h5 class="text-center">Indices</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb indices" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(18 56)" class="element">In</text>
+          <text transform="translate(26 75)" class="label">Indices</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/location/" | prepend: site.baseurl }}"><h5 class="text-center">Location</h5>
-      <img alt="Location" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/location.svg %}"></a>
+      <a href="{% link data/location/index.html %}"><h5 class="text-center">Location</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb location" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(13 56)" class="element">Lo</text>
+          <text transform="translate(22 75)" class="label">Location</text>>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/planning/" | prepend: site.baseurl }}"><h5 class="text-center">Planning</h5>
-      <img alt="Planning" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/planning.svg %}"></a>
+      <a href="{% link data/planning/index.html %}"><h5 class="text-center">Planning</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb planning" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(20 56)" class="element">Pl</text>
+          <text transform="translate(21 75)" class="label">Planning</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/political/" | prepend: site.baseurl }}"><h5 class="text-center">Political</h5>
-      <img alt="Political" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/political.svg %}"></a>
+      <a href="{% link data/political/index.html %}"><h5 class="text-center">Political</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb political" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(12 56)" class="element">Po</text>
+          <text transform="translate(24 75)" class="label">Political</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/recreation/" | prepend: site.baseurl }}"><h5 class="text-center">Recreation</h5>
-      <img alt="Recreation" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/recreation.svg %}"></a>
+      <a href="{% link data/recreation/index.html %}"><h5 class="text-center">Recreation</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb recreation" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(11 56)" class="element">Re</text>
+          <text transform="translate(16 75)" class="label">Recreation</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/society/" | prepend: site.baseurl }}"><h5 class="text-center">Society</h5>
-      <img alt="Society" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/society.svg %}"></a>
+      <a href="{% link data/society/index.html %}"><h5 class="text-center">Society</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb society" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(13 56)" class="element">So</text>
+          <text transform="translate(25 75)" class="label">Society</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/transportation/" | prepend: site.baseurl }}"><h5 class="text-center">Transportation</h5>
-      <img alt="Transportation" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/transportation.svg %}"></a>
+      <a href="{% link data/transportation/index.html %}"><h5 class="text-center">Transportation</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb transportation" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(17 56)" class="element">Tr</text>
+          <text transform="translate(4 75)" class="label">Transportation</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/usgs-scanned-topographic-maps/" | prepend: site.baseurl }}"><h5 class="text-center">USGS Topo Maps</h5>
-      <img class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/topo_maps.svg %}"></a>
+      <a href="{% link data/usgs-scanned-topographic-maps/index.html %}"><h5 class="text-center">USGS Topo Maps</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb topo" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(13 56)" class="element">To</text>
+          <text transform="translate(15 75)" class="label">Topo Maps</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/utilities/" | prepend: site.baseurl }}"><h5 class="text-center">Utilities</h5>
-      <img alt="Utilities" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/utilities.svg %}"></a>
+      <a href="{% link data/utilities/index.html %}"><h5 class="text-center">Utilities</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb utilities" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(13 56)" class="element">Ut</text>
+          <text transform="translate(24 75)" class="label">Utilities</text>
+        </svg>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{{ "/data/water/" | prepend: site.baseurl }}"><h5 class="text-center">Water</h5>
-      <img alt="Water" class="lozad data-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/front-page/water.svg %}"></a>
+      <a href="{% link data/water/index.html %}"><h5 class="text-center">Water</h5>
+        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+          <rect class="data-thumb water" />
+          <g class="background">
+            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+          </g>
+          <text transform="translate(8 56)" class="element">Wa</text>
+          <text transform="translate(28 75)" class="label">Water</text>
+        </svg>
+      </a>
     </div>
     <p class="section-read-more">
       <a href="{{ "/data/" | prepend: site.baseurl }}" class="btn">View All Data</a>
