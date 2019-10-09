@@ -34,6 +34,106 @@ svg.logo {
 .data-thumb {
     width: 90px;
     height: 90px;
+    font-family: $base-font-family;
+    .element {
+        font-size: 52px;
+        font-weight: 800;
+        fill: #fff;
+    }
+    .label {
+        font-size: 11.5px;
+        fill: #fff;
+    }
+    .background {
+        opacity: 0.4;
+    }
+    .emergency {
+        fill: #2f2340
+    }
+    .address {
+        fill: #008b85
+    }
+    .aerial {
+        fill: #00728d
+    }
+    .basemaps {
+        fill: #c8cb9d
+    }
+    .bioscience {
+        fill: #7fdaff
+    }
+    .boundaries {
+        fill: #feca05
+    }
+    .cadastre {
+        fill: #253c56
+    }
+    .climate {
+        fill: #86e0e0
+    }
+    .contours {
+        fill: #632905
+    }
+    .elevation {
+        fill: #a44e51
+    }
+    .demographic {
+        fill: #413428
+    }
+    .economy {
+        fill: #00704b
+    }
+    .elevation {
+        fill: #a44e51
+    }
+    .energy {
+        fill: #ff3f38
+    }
+    .environment {
+        fill: #7ba43a
+    }
+    .farming {
+        fill: #726654
+    }
+    .geoscience {
+        fill: #778898
+    }
+    .health {
+        fill: #a10002
+    }
+    .history {
+        fill: #c98226
+    }
+    .indices {
+        fill: #223119
+    }
+    .location {
+        fill: #e6af2e
+    }
+    .planning {
+        fill: #5f9eac
+    }
+    .political {
+        fill: #ee3d97
+    }
+    .recreation {
+        fill: #ce5801
+    }
+    .society {
+        fill: #522e92
+    }
+    .transportation {
+        fill: #162b3f
+    }
+    .topo {
+        fill: #b98474
+    }
+    .utilities {
+        fill: #632b30
+    }
+    .water {
+        fill: #0865b3
+    }
 }
 .item-thumb {
     width: 300px;
