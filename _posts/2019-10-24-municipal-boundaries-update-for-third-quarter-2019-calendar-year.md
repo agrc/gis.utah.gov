@@ -15,11 +15,14 @@ tags:
 ---
 
 It’s already over three-quarters of the way through the year, things have slowed down while everyone is enjoying the summer, yet we’re still trying to catch up here. We still expect annexations to pick up some as we head for the end of the year, plenty of procrastinators out there. Here is our updates for the third quarter.
-As always these changes to town and city boundaries can affect other departments too, be sure to share your data with others. 
+
+As always these changes to town and city boundaries can affect other departments too, be sure to share your data with others.
+
 We still want everyone to remember the 2020 census is coming up we are still pushing to get everything as perfect as we can so take a look at the state’s data and see if we are missing anything or if there is something strange, and let us know.
-(link - https://www2.census.gov/geo/pdfs/partnerships/GEO_Program_Flyer.pdf )
-Municipalities and updates can be viewed here: Utah Municipality Modifications
-(link - https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63 )
+
+Here is a [census flyer](https://www2.census.gov/geo/pdfs/partnerships/GEO_Program_Flyer.pdf) giving reasons why GIS data is so important to the process.
+
+Municipalities and updates can be viewed on this [Utah Municipality Modifications](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63) web map.
 
 Following are the changes and annexations since June 30, 2019, through Oct 15, 2019 listed by County and City:
 
