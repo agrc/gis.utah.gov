@@ -7,11 +7,11 @@ date: 2019-10-24 21:39:38
 categories:
   - SGID Blog
 tags:
-  - City
-  - Town
-  - Municipalities
-  - Boundaries
-  - Annexations
+  - city
+  - town
+  - municipalities
+  - boundaries
+  - annexations
 ---
 
 It’s already over three-quarters of the way through the year, things have slowed down while everyone is enjoying the summer, yet we’re still trying to catch up here. We still expect annexations to pick up some as we head for the end of the year, plenty of procrastinators out there. Here is our updates for the third quarter.
