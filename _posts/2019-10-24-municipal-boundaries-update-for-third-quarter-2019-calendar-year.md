@@ -1,5 +1,5 @@
 ---
-title: 'Municipal Boundaries Update for Third Quarter 2019 (Calendar Year)'
+title: 'Municipal Boundaries update for Third Quarter 2019 (calendar year)'
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
@@ -14,17 +14,17 @@ tags:
   - annexations
 ---
 
-It’s already over three-quarters of the way through the year, and while things slowed down at AGRC during the summer, we’re trying to catch up now that it's fall. We're still expecting annexations to pick up as we head for the end of the year (there are plenty of procrastinators out there). In the meantime, here are our updates for the third quarter.
+It’s already over three-quarters of the way through the year, and while things slowed down while everyone is enjoying the summer, yet we’re still trying to catch up here. We're still expecting annexations to pick up some as we head for the end of the year plenty of procrastinators out there. Here is our updates for the third quarter.
 
-As always, these changes to town and city boundaries can affect other boundary layers, so be sure to share your data with others.
+As always, these changes to town and city boundaries can affect other boundary layers, so be sure to share your data with other departments too.
 
 First, we want to remind everyone that the 2020 census is coming up, and we are still pushing to get the State's data layers as perfect as we can. So please take a look at the State’s data and see whether we are missing anything, or if there is something strange, let us know.
 
-For information about why GIS data is so important to the census process, check out this [census flyer](https://www2.census.gov/geo/pdfs/partnerships/GEO_Program_Flyer.pdf).
+Here is a [census flyer](https://www2.census.gov/geo/pdfs/partnerships/GEO_Program_Flyer.pdf) giving reasons why GIS data is so important to the process.
 
-Municipalities and updates can be viewed on the [Utah Municipality Modifications](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63) web map.
+Municipalities and updates can be viewed on this [Utah Municipality Modifications](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63) web map.
 
-The following table shows the changes and annexations (listed by county and city) from June 30, 2019, to October 15, 2019:
+The following are the changes and annexations sunce June 30, 2019, through Oct 15, 2019 listed by County and City:
 
 | County | City | Number of Changes |
 | --- | --- | --- |
