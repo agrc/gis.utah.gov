@@ -18,11 +18,14 @@ While we're months away from any preliminary or final funding decisions, the par
 
 The proposed areas break down to the following square mileage:
 [![3DEP Proposal]({{"/images/3DEP_Lidar_Proposal_2020_sm.png" | prepend:site.baseurl}} "2020 3DEP Lidar Proposal A - click for larger image")]({{"/images/3DEP_Lidar_Proposal_2020.png" | prepend:site.baseurl}}){:.inline-text-right}  
+
 Projects Already Underway
+
 -	Kane County (QL2) - 6,055
--	Strawberry River (QL1 & 4-band aerial photography) - 88  
+-	Strawberry River (QL1 & 4-band aerial photography) - 88
 
 Proposed Projects
+
 -	Wasatch Back (QL1 or QL2) - 1,103
 - Iron County (QL1 & QL2) - 3,067
 - NRCS (QL1 or QL2) - 2,706
