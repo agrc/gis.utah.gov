@@ -26,7 +26,7 @@ Projects Already Underway
 
 Proposed Projects
 
--	Wasatch Back (QL1 or QL2) - 1,103
+- Wasatch Back (QL1 or QL2) - 1,103
 - Iron County (QL1 & QL2) - 3,067
 - NRCS (QL1 or QL2) - 2,706
 - Sanpete & Sevier County (QL2) - 2,397
