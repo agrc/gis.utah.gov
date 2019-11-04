@@ -37,4 +37,5 @@ A shapefile of the proposed Lidar coverage areas is available for [download](ftp
 *[BAA]: Broad Agency Announcement
 *[USGS]: United States Geological Survey
 *[3DEP]: 3D Elevation Program
-*[QL]: Quality Level
+*[QL1]: Quality Level
+*[QL2]: Quality Level
