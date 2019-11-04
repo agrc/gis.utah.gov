@@ -3,7 +3,7 @@ title: '3DEP Lidar Proposal for 2020'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2019-10-29 22:15:55
+date: 2019-11-04 12:15:55
 categories:
 - Featured
 tags:
