@@ -33,3 +33,8 @@ Proposed Projects
 - Garfield County (QL2) - 2,891
 
 A shapefile of the proposed Lidar coverage areas is available for [download](ftp://ftp.agrc.utah.gov/LiDAR/3DEP_Lidar_Proposal_2020.zip).
+
+*[BAA]: Broad Agency Announcement
+*[USGS]: United States Geological Survey
+*[3DEP]: 3D Elevation Program
+*[QL]: Quality Level
