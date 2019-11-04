@@ -29,7 +29,7 @@ Proposed Projects
 - Wasatch Back (QL1 or QL2) - 1,103
 - Iron County (QL1 and QL2) - 3,067
 - NRCS (QL1 or QL2) - 2,706
-- Sanpete & Sevier County (QL2) - 2,397
+- Sanpete and Sevier Counties (QL2) - 2,397
 - Garfield County (QL2) - 2,891
 
 A shapefile of the proposed Lidar coverage areas is available for [download](ftp://ftp.agrc.utah.gov/LiDAR/3DEP_Lidar_Proposal_2020.zip).
