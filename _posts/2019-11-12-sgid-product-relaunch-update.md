@@ -38,7 +38,7 @@ We have been using ArcGIS Online for organizations since its inception nearly a 
 ## New Data Editing Policy
 {: .text-left}
 
-AGRC continues to improve the way we serve our users. We are currently formalizing our policies on editing data in the SGID database in response to feedback from our users. All active editing will now be performed in an internal SGID database, and edits will be pushed to the public SGID database during off-hours. This will help reduce the risk of interrupting users while they are analyzing data within the time frame stated in [our policy](TODO). These new data editing policies mark the maturation of the SGID as a database product and our commitment to treat the SGID as a production service.
+AGRC continues to improve the way we serve our users. We are currently formalizing our policies on editing data in the SGID database in response to feedback from our users. All active editing will now be performed in an internal SGID database, and edits will be pushed to the public SGID database during off-hours. This will help reduce the risk of interrupting users while they are analyzing data within the time frame stated in our policy[^policy-link]. These new data editing policies mark the maturation of the SGID as a database product and our commitment to treat the SGID as a production service.
 
 ### Sweeper Project
 {: .text-left}
@@ -62,4 +62,5 @@ One of our main goals for the SGID moving forward is to continue to cultivate a 
 
 We are excited for the future of the SGID, and we hope you will get involved to help us provide the highest quality GIS data to the State of Utah.
 
+[^policy-link]: We are working to publish a public copy. This post will be updated when it is available.
 [^esri-requirements]: [ArcGIS PostGIS Requirements](https://pro.arcgis.com/en/pro-app/help/data/geodatabases/manage-postgresql/database-requirements-postgresql.htm)
