@@ -62,8 +62,4 @@ One of our main goals for the SGID moving forward is to continue to cultivate a 
 
 We are excited for the future of the SGID, and we hope you will get involved to help us provide the highest quality GIS data to the State of Utah.
 
-*[SGID]: State Geographic Information Database
-*[KML]: Keyhole Markup Language
-*[DNR]: Department of Natural Resources
-
 [^esri-requirements]: [ArcGIS PostGIS Requirements](https://pro.arcgis.com/en/pro-app/help/data/geodatabases/manage-postgresql/database-requirements-postgresql.htm)
