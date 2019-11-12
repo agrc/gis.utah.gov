@@ -13,7 +13,7 @@ categories: []
 Statewide GIS map data layers fulfill a critical need for many organizational business needs, including:
 
 | 911 & NextGen 911 (forthcoming) | Blue Stakes (811) Statewide Utility Notification | Utah Department of Transportation| State & Regional Economic Development |
-| Complete Count Preparation for 2020 Census | Utah State Tax Commission |  Utah Department of Natural Resources | Statewide Elections Management & Redistricting |
+| Complete Count Preparation for 2020 Census | Utah State Tax Commission | Utah Department of Natural Resources | Statewide Elections Management & Redistricting |
 
 AGRC works with partner agencies and local government toward standardization and interoperability of GIS data resources for reliable and consistent information at a statewide level. The State Geographic Informformation Database provides a 'one-stop-shop' to make discovery, access, and publishing of GIS data efficient.
 
@@ -26,7 +26,7 @@ AGRC has also led partnership efforts to fund, procure, and distribute additiona
 
 GIS data can be shared to AGRC for publication in the State Geographic Information Database (and related web serves) via [email]({{ "/about/contact/" | prepend: site.baseurl }}), [Dropbox](https://www.dropbox.com/), [ShareFile](https://www.sharefile.com/), or we can pull from an ArcSDE connection or web-accessible file geodatabase or shapefile (https://, ftp://, etc.).
 
-Listed below are the layers we hope to complete and keep current through partnership with county and local govenrment, and the desired attribute information.
+Listed below are the layers we hope to complete and keep current through partnership with county and local government, and the desired attribute information.
 
 ### Primary Datasets
 {: .text-left}
@@ -92,7 +92,6 @@ In addition to the parcel polygon geometry the following fields are a necessity 
 
 County and Municipal boundary changes should be submitted to the Lieutenant Governor's office and follow the requirements in state code. More information can be found on the [Utah Lieutenant Governor Municipal Certifications](https://municert.utah.gov/) website.
 
-
 ### [Building Footprints]({{"/data/location/building-footprint/" | prepend:site.baseurl}} "Building Footprints page"){: #building_footprints }
 
 ![Building Footprints]({{"/images/90x90_building_footprints.png" | prepend:site.baseurl}}){: .pull-right .outline}
@@ -100,7 +99,6 @@ County and Municipal boundary changes should be submitted to the Lieutenant Gove
 This is a multi-purpose dataset of building footprint polygons for cartography and location purposes. The attributes below are optional:
 
 | Name | Type | Address | Parcel ID | Source Year |
-
 
 ### [Trails]({{"/data/recreation/trails/" | prepend:site.baseurl}} "Trails page"){: #trails }
 
