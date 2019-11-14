@@ -18,6 +18,7 @@ tags:
 AGRC has created a Python script for law enforcement boundaries that automatically builds jurisdiction polygons based on existing boundaries (primarily county and municipal boundaries) in the State Geographic Information Database (SGID). In order to understand how this automation will improve law enforcement response, it's important to understand Next-generation 911 (NG911).
 
 ## Background
+{: .text-left}
 
 NG911 will change the paradigm for emergency call-routing from a table-based system to a GIS-based system. With NG911, each 911 call will be registered as a geographic point based on the location (i.e., latitude and longitude) of the cell phone or the address of the landline from which the call originates. Once that geographic point is determined, NG911 can determine which dispatch center, or public safety answering point (PSAP), boundary the point falls within, and the call can be routed appropriately. As a result, the GIS data informing the NG911 system is critical for ensuring that calls are routed to the correct PSAP. The new internet-based network infrastructure will also provide additional GIS-based information to the PSAP when the call is delivered. This information will include a recommendation on which agencies (i.e., which city’s/county’s law enforcement, fire, or emergency medical service agencies) should be dispatched according to the call's geographic location. 
 
