@@ -31,7 +31,7 @@ With that information in mind, let's get back to AGRC's Python script. Our new s
 This script will allow the NG911 boundaries to be dynamically updated as boundaries are adjusted, new municipalities form, or annexations occur. The basic script logic is as follows:
 
 1. Generate sheriff's office jurisdictions from SGID county boundaries
-2. Generate police department jurisdictions from SGID municipal boundaries
+1. Generate police department jurisdictions from SGID municipal boundaries
    - Only build boundaries for municipalities that have their own police department
    - Merge boundaries of municipalities that share a police department
 3. Insert police department boundaries into sheriff's office boundaries to create a combined boundaries layer
