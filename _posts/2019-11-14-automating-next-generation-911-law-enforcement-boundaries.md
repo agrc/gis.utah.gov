@@ -40,4 +40,4 @@ This script will allow the NG911 boundaries to be dynamically updated as boundar
 1. Insert police department boundaries into sheriff's office boundaries to create a combined boundaries layer
 1. Insert unique jurisdiction boundaries into combined boundaries layer
 
-If you would like to see the current law enforcement boundaries (November 2019) browse to this [web map](http://utah.maps.arcgis.com/home/webmap/viewer.html?useExisting=1). Please explore this map and let us know if there are any errors or discrepancies in your area. We want to ensure that these boundaries are as accurate as possible, and we welcome feedback that leads to better data.
+If you would like to see the current law enforcement boundaries (November 2019) browse to this [web map](http://utah.maps.arcgis.com/home/webmap/viewer.html?webmap=40a99fdba37244dbb0a3fb2fa4615f2d). Please explore this map and let us know if there are any errors or discrepancies in your area. We want to ensure that these boundaries are as accurate as possible, and we welcome feedback that leads to better data.
