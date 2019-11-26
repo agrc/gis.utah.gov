@@ -11,7 +11,7 @@ title: The Utah Reference Network (TURN) GPS
 categories: []
 ---
 <figure class="caption caption--right">
-  <img title="map" class="caption__image" src="{{ "/images/turn_gps_utah_network_rtk.png" | prepend: site.baseurl }}">
+  <img title="map" class="caption__image" src="{% link gps/images/turn_gps_utah_network_rtk.png %}">
   <figcaption class="caption__text">TURN GPS Stations</figcaption>
 </figure>
 {% include abstract.html
