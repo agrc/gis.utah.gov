@@ -48,10 +48,6 @@ abstract="These datasets are related to mail delivery. Included are post office 
     <img class="inline-text-left outline" src="{{ "/images/USPSSmallB.png" | prepend: site.baseurl }}" alt="PostOffices" />
     <p>Location.ZipcodePOBoxes represents the approximate locations of USPS Post Offices in Utah. Each zipcode's assigned post office has a point, therefore if a post office has multiple zipcodes, it will have multiple points.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.LOCATION.ZipCodePOBoxes.xml">FGDC format metadata</a></li>
-    </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="USPSPostOffices"
@@ -72,10 +68,6 @@ abstract="These datasets are related to mail delivery. Included are post office 
       <li>Using the 2000 Census TIGER line file’s zip code attributes.
     </ul>
     <p>In addition, AGRC has used the locations of mailing addresses known to be valid to fine tune this dataset. The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.BOUNDARIES.ZipCodes.xml">FGDC format metadata</a>
-    </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.zip_codes %}</p>
   </div>
   {% include packagedata.html name="ZipCodeBoundaries"
