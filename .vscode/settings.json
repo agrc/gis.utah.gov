@@ -11,6 +11,8 @@
     "Uintah",
     "booleanize",
     "endcapture",
+    "fema",
+    "fgdc",
     "foulger",
     "gourley",
     "luca",
@@ -21,7 +23,10 @@
     "pygsheets",
     "returnas",
     "rkelson",
-    "sgourley"
+    "sgourley",
+    "trimble",
+    "udot",
+    "usgs"
   ],
   "python.pythonPath": "~/.virtualenvs/gis.utah.gov/bin/python",
   "python.formatting.provider": "yapf"
