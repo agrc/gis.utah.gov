@@ -80,7 +80,6 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546">Road Centerlines: Data Model</a>
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.TRANSPORTATION.Roads.xml">Road Centerlines: FGDC Metadata</a>
     </ul>
   </div>
   <div class="grid__col grid__col--1-of-2">
@@ -117,13 +116,13 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <div class="panel-content">
       <p>Updates to this dataset are published every month, with approximately nine counties receiving detailed review.</p>
       <ul class="dotless no-padding">
-        <li><a href="{% post_url 2019-10-09-utah-sgid-statewide-roads-data-layer-updates-10092019 %}">October 9, 2019</a>         
-        <li><a href="{% post_url 2019-09-05-utah-sgid-statewide-roads-data-layer-updates-09052019 %}">September 5, 2019</a>           
-        <li><a href="{% post_url 2019-08-08-utah-sgid-statewide-roads-data-layer-updates-08082019 %}">August 8, 2019</a>        
-        <li><a href="{% post_url 2019-07-10-utah-sgid-statewide-roads-data-layer-updates-07102019 %}">July 10, 2019</a>         
-        <li><a href="{% post_url 2019-06-05-utah-sgid-statewide-roads-data-layer-updates-06052019 %}">June 5, 2019</a>        
-        <li><a href="{% post_url 2019-05-08-utah-sgid-statewide-roads-data-layer-updates-05082019 %}">May 8, 2019</a>               
-        <li><a href="{% post_url 2019-04-02-utah-sgid-statewide-roads-data-layer-updates-04022019 %}">April 2, 2019</a>        
+        <li><a href="{% post_url 2019-10-09-utah-sgid-statewide-roads-data-layer-updates-10092019 %}">October 9, 2019</a>
+        <li><a href="{% post_url 2019-09-05-utah-sgid-statewide-roads-data-layer-updates-09052019 %}">September 5, 2019</a>
+        <li><a href="{% post_url 2019-08-08-utah-sgid-statewide-roads-data-layer-updates-08082019 %}">August 8, 2019</a>
+        <li><a href="{% post_url 2019-07-10-utah-sgid-statewide-roads-data-layer-updates-07102019 %}">July 10, 2019</a>
+        <li><a href="{% post_url 2019-06-05-utah-sgid-statewide-roads-data-layer-updates-06052019 %}">June 5, 2019</a>
+        <li><a href="{% post_url 2019-05-08-utah-sgid-statewide-roads-data-layer-updates-05082019 %}">May 8, 2019</a>
+        <li><a href="{% post_url 2019-04-02-utah-sgid-statewide-roads-data-layer-updates-04022019 %}">April 2, 2019</a>
         <li><a href="{% post_url 2019-02-23-utah-sgid-statewide-roads-data-layer-updates-02232019 %}">February 23, 2019</a>
         <li><a href="{% post_url 2019-01-24-utah-sgid-statewide-roads-data-layer-updates-01242019 %}">January 24, 2019</a>
         <li><a href="{% post_url 2018-11-29-utah-sgid-statewide-roads-data-layer-updates-11292018 %}">November 29, 2018</a>
@@ -170,7 +169,6 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <h5>Related Resource</h5>
     <ul class="dotless">
       <li><a href="http://data.udot.utah.gov">data.udot.utah.gov</a>
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.TRANSPORTATION.UDOTRoutes_LRS.xml">FGDC format metadata</a>
     </ul>
   </div>
   {% include packagedata.html name="HighwayLinearReferencingSystemRoutes"
@@ -188,10 +186,6 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction).  ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
     <p>Per UDOT policy the actual location of mileposts can vary up to 50 feet, from the measured position where intersections and physical infrastructure make a more 'true' psoitioning impractical or undesirable.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.TRANSPORTATION.UDOTMileposts.xml">FGDC format metadata</a>
-    </ul>
   </div>
   {% include packagedata.html name="MilepostPoints"
   info=page.MilepostPoints %}
@@ -223,10 +217,6 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <p>Transportation.Roads_FreewayExits contains point locations for each freeway and limited access highway exit along with the exit number, name, associated route, and connected streets/routes.</p>
     <p>The EXITNAME field provides the primary route name and exit number plus the connecting route number or street name and place name carried by the exit sign. Route number and exit number are also carried in separate fields.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This dataset was assembled by AGRC from resources provided by UDOT, as a resource for 911 dispatch and for general map reference.</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.TRANSPORTATION.Roads.xml">FGDC format metadata</a>
-    </ul>
   </div>
   {% include packagedata.html name="FreewayExitPoints"
   info=page.FreewayExitPoints %}
@@ -243,10 +233,6 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <p>In ArcMap, define a label class for each CLASS field value. 1 is for freeways, 2 for US highways, and 3 is for state highways. Each label class should use a SQL expression to define the class and the default class should be disabled or deleted.</p>
     <p>When defined labeling properties are defined properly, the minimum number of freeway and highway shields should be displayed without introducing ambiguity.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This dataset was assembled by AGRC for general purpose cartography.</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.TRANSPORTATION.RoadsShieldLines.xml">FGDC format metadata</a>
-    </ul>
   </div>
   {% include packagedata.html name="ShieldLabelingLines"
   info=page.ShieldLabelingLines %}
