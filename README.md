@@ -11,13 +11,15 @@ License: [MIT](/LICENSE).
 1. Check out this repository
 1. run `docker-compose up`
 1. browse to `localhost:4000`
-1. run `docker pull jekyll/jekyll` to update your image
+1. run `docker pull jekyll/jekyll:3.7` to update your image
 1. run `grunt imagemin:images` to minify images
 
 ## Common Website Tips
 
 - [Kramdown reference](http://kramdown.gettalong.org/quickref.html)
 - [Jekyll Cheat Sheat](http://cheat.jekyll.tips/)
+
+## Markdown sytax conventions
 
 ```md
 _italics_
@@ -26,57 +28,70 @@ _**bold italics**_
 - list
 ```
 
-#### link to page
+### link to page
 
 - markdown
-```md
-[link text]({{ "/path/to/item/" | prepend: site.baseurl }})
-```
+
+  ```md
+  [link text]({% link path/to/item.with-extension %})
+  ```
+
 - html
-```html
-<a href="{{ "/path/to/item/" | prepend: site.baseurl }}">link text</a>
-```
-#### link to post:
+
+  ```html
+  <a href="{% link path/to/item.with-extension %}">link text</a>
+  ```
+
+### link to post
 
 - markdown
-```md
-[link text]({{site.baseurl}}{% post_url 2016-05-26-file-name-without-extension %})
-```
+
+  ```md
+  [link text]({% link _posts/2016-05-26-file-name.with-extension %})
+  ```
+
 - html
-```html
-<a href="{{site.baseurl}}{% post_url 2016-05-26-file-name-without-extension %}">link text</a>
-```
 
-#### external link
+  ```html
+  <a href="{% link _posts/2016-05-26-file-name.with-extension %}">link text</a>
+  ```
 
-- markdown
-```md
-[link text](http://external.website.location)
-```
-
-#### images
+### external link
 
 - markdown
-```md
-![alt text]({{ "/path/to/item/" | prepend: site.baseurl }})
-```
+
+  ```md
+  [link text](http://external.website.location)
+  ```
+
+### images
+
+- markdown
+
+  ```md
+  ![alt text]({% link path/to/item.with-extension %})
+  ```
+
 - html
-```html
-<img src="{{ "/path/to/image.jpg" alt="hover text" | prepend: site.baseurl }}"/>
+
+  ```html
+  <img src="{% link path/to/image.jpg" %} alt="hover text"/>
+  ```
+
+### link alt text
+
+```md
+[link text]({% link path/to/item.with-extension %} "popup text")
 ```
 
-#### link alt text
-```md
-[link text]({{ "/path/to/item/" | prepend: site.baseurl }} "popup text")
-```
+### css in markdown
 
-#### css in markdown
 ```md
-![alt text]({{ "/path/to/item/" | prepend: site.baseurl }})
+![alt text]({% link path/to/item.with-extension %})
 {: .css-class-name}
 ```
 
-#### font matter
+### font matter
 
 - `page` - the post vs page layout
 - `title: Title` - the title of the content
@@ -84,27 +99,30 @@ _**bold italics**_
 - `author.email: email@address` - The author email
 - `date: 2018-02-13` - the date the content was created
 - `update_date: 2018-02-13` - this will show in under the title that the page has been updated
-- `tags: ` a list of tags
+- `tags:` a list of tags
 - `categories: Featured|Developer|SGID Blog|GPS-surveyor|Guestblog`
 - `published: true|false`
 
-
-#### contact information
+### contact information
 
 Contacts are managed in a [yml file](./_data/contacts.yml). **Please do not put email addresses directly into content**.
 
 The include has a few properties:
+
 - **subject**: the subject of the email link. Most of the time using `page.title` is good enough™
 - **contact**: the contact in the yml file to create
 - **text**: update this to change the default text generated
 - **hide-punctuation**: set this to `true` if you would like to remove the `.` at the end of the text
 
 - markdown
-```liquid
-{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc %}{% endcapture %}
-{{ contact }}
-```
+
+  ```liquid
+  {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc %}{% endcapture %}
+  {{ contact }}
+  ```
+
 - html
-```liquid
-{% include contact.html subject=page.title contact=site.data.contacts.agrc %}
-```
+
+  ```liquid
+  {% include contact.html subject=page.title contact=site.data.contacts.agrc %}
+  ```
