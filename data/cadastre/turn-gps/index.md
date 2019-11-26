@@ -84,7 +84,7 @@ MS_CMR, MS_CMRP these are for connecting to single base when you are on the edge
 
 ##### Related Resources
 
-- [TURN GPS Network Wall Map]({% link downloads/TURNGPS_NetworkWallmap2019.pdf %})
+- [TURN GPS Network Wall Map]({% link gps/images/TURN_Network_poster_2019.pdf %})
 - [TURN GPS Sensor Map](http://turngps.utah.gov/Map/SensorMap.aspx)
 - [The Utah Reference Network GPS](http://turngps.utah.gov/)
 {: .dotless }
