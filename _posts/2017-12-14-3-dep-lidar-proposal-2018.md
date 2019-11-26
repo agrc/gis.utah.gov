@@ -20,9 +20,10 @@ It's important to keep in mind that we're still a month or two away from any pre
 
 The proposed areas break down to the following square mileages by USGS quality levels (QL1 - 8 points per meter | QL2 - 2 points per meter):
 [![3DEP Proposal]({{"/images/3DEP_Lidar_Proposal_2018_sm.png" | prepend:site.baseurl}} "2018 3DEP Lidar Proposal A - click for larger image")]({{"/images/3DEP_Lidar_Proposal_2018.png" | prepend:site.baseurl}}){:.inline-text-right}
--	QL1 - 1,892
--	QL2 - 7,018
--	QL1 (USGS) – 380
--	QL2 (USGS) - 4,310
+
+- QL1 - 1,892
+- QL2 - 7,018
+- QL1 (USGS) – 380
+- QL2 (USGS) - 4,310
 
  A shapefile of the proposed Lidar coverage areas is available for [download](ftp://ftp.agrc.utah.gov/LiDAR/3DEP_Lidar_Proposal_2018.zip).

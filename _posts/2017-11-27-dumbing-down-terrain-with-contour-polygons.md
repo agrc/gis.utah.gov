@@ -18,8 +18,7 @@ While technology advances towards products with greater resolution and accuracy,
 
 ![Contour Polygons]({{ "/images/contoursPolys.png" | prepend: site.baseurl }}){: .inline-text-right .outline }Generalized contour polygons are relatively easy to create (no GISP required) and allows the user multiple ways to symbolize the data depending on the desired cartographic effect. Probably the most difficult part of creating the contours is deciding how much to generalize the terrain and what contour interval is best suited for the intended scale, unfortunately a bit of trial and error can be involved. An added benefit of creating contour polygons are the derivative data products like Tanaka contours that can be created once the base elevation and polygons are generated.
 
-To create contours using the steps below you will need a [DEM](ftp://ftp.agrc.utah.gov/DEM/30meter_dem/StatewideDEM_30meter.zip) and ArcGIS with the Spatial Analyst Extension.
-
+To create contours using the steps below you will need a DEM and ArcGIS with the Spatial Analyst Extension.
 
 ## Step 1
 
