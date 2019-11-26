@@ -17,9 +17,9 @@ License: [MIT](/LICENSE).
 ## Common Website Tips
 
 - [Kramdown reference](http://kramdown.gettalong.org/quickref.html)
-- [Jekyll Cheat Sheat](http://cheat.jekyll.tips/)
+- [Jekyll Cheat Sheet](http://cheat.jekyll.tips/)
 
-## Markdown sytax conventions
+## Markdown syntax conventions
 
 ```md
 _italics_
