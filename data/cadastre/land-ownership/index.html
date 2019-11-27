@@ -11,10 +11,8 @@ title: Land Ownership
 categories: []
 LandOwnership:
   downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mR1YtUnZGYTlZd2M&export=download
-      label: 'Land Ownership: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNWhwdmEtci1TNzA&export=download
-      label: 'Land Ownership: Shapefile'
+    - url: https://data-sitla.opendata.arcgis.com/datasets/ut-sitla-ownership-landownership
+      label: 'Land Ownership: Utah SITLA Open Data'
   updates:
     - Weekly (Early Monday morning)
 ---
@@ -26,7 +24,7 @@ LandOwnership:
 Cadastre.LandOwnership feature class depicts land ownership status and areas of responsibility for the State of Utah surface lands at a scale of 1:24,000. Maintenance of this data layer is performed by a cooperative federal and state effort between the Bureau of Land Management (BLM) and the State of Utah School and Institutional Trust Lands Administration (SITLA). Cadastre.LandOwnership is a statewide dataset of land ownership status, and therefore is a compilation of all surface land ownership administration, and designation categories. Both the Utah School and Institutional Trust Lands Administration (SITLA) and the Bureau of Land Management (BLM) update this dataset regularly. Revisions of the dataset are made available weekly. SITLA publishes a <a href='https://gis.trustlands.utah.gov/server/rest/services/Ownership/UT_SITLA_Ownership_LandOwnership_WM/FeatureServer'>feature service</a> via their ArcGIS Server. Standard colors are recommended when displaying this feature class. A layer file containing the standard color scheme is available by contacting SITLA GIS staff directly by {% include contact.html subject=page.title contact=site.data.contacts.sitla hide-punctuation=true text='contacting' %}, or visiting <a href='https://trustlands.utah.gov'>https://trustlands.utah.gov</a>.
 {% endcapture %}
 
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mVl9DcnJNSUh6OUE"
+{% include abstract.html download="https://data-sitla.opendata.arcgis.com/datasets/ut-sitla-ownership-landownership"
 name="Land Ownership"
 stewards="SITLA, BLM, &amp; Partners"
 abstract=abstract %}
@@ -43,6 +41,7 @@ abstract=abstract %}
     <ul class="dotless">
       <li><a href="https://trustlands.utah.gov">School and Institutional Trust Lands Administration (SITLA)</a>
       <li><a href="https://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a>
+      <li><a href="https://data-sitla.opendata.arcgis.com/">SITLA Open Data Portal</a>
       <li><a href='https://gis.trustlands.utah.gov/server/rest/services/Ownership/UT_SITLA_Ownership_LandOwnership_WM/FeatureServer'>Land ownership feature service</a>
       <li><a href="https://www.blm.gov/services/land-records">Bureau of Land Management</a>
     </ul>
