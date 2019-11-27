@@ -41,10 +41,10 @@ abstract=abstract %}
     <p>{% include contact.html subject=page.title contact=site.data.contacts.sitla %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="https://trustlands.utah.gov">School and Institutional Trust Lands Administartion (SITLA)</a>
+      <li><a href="https://trustlands.utah.gov">School and Institutional Trust Lands Administration (SITLA)</a>
       <li><a href="https://trustlands.utah.gov/resources/maps/">SITLA GIS page (Mineral Lease Offerings, Mineral Ownership, Land Ownership layer files, etc.</a>
       <li><a href='https://gis.trustlands.utah.gov/server/rest/services/Ownership/UT_SITLA_Ownership_LandOwnership_WM/FeatureServer'>Land ownership feature service</a>
-      <li><a href="https://www.blm.gov/services/land-records">Burea of Land Management</a>
+      <li><a href="https://www.blm.gov/services/land-records">Bureau of Land Management</a>
     </ul>
     <p>Important descriptive attribute fields listed with valid values or, a short description of features with 'name' label attributes and examples.</p>
     <h6>OWNER</h6>
@@ -155,8 +155,8 @@ abstract=abstract %}
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>The following land ownership-related data layers can easily be derived from Cadastre.LandOwnership by using subset (defintion) queries to select a specific set of features:</p>
-    <p><img class="inline-text-left outline" src="{{ "/images/LandOwernship_Federal.png" | prepend: site.baseurl }}" alt="Federal Land ownership" /><strong>Land owned by the Federal Government.</strong> This includes land administered by the US Bureau of Land Management, the US Bureau of Reclamation, the US Department of Defense, the US Department of Energy, the US National Park Service, the Utah State Department of Wildlife Resources, the US Forest Service, the US Fish and Wildlife Service and, in some cases, the Utah State Department of State Parks.</p>
+    <p>The following land ownership-related data layers can easily be derived from Cadastre.LandOwnership by using subset (definition) queries to select a specific set of features:</p>
+    <p><img class="inline-text-left outline" src="{% link images/landownership_federal.png %}" alt="Federal Land ownership" /><strong>Land owned by the Federal Government.</strong> This includes land administered by the US Bureau of Land Management, the US Bureau of Reclamation, the US Department of Defense, the US Department of Energy, the US National Park Service, the Utah State Department of Wildlife Resources, the US Forest Service, the US Fish and Wildlife Service and, in some cases, the Utah State Department of State Parks.</p>
     <p>To work with only federal lands, specify a SELECT Where Clause of: <code>OWNER = 'Federal'</code></p>
 
     <p><img class="inline-text-left outline" src="{{ "/images/LandOwnership_BLM.png" | prepend: site.baseurl }}" alt="BLM Land ownership" /><strong>Bureau of Land Management (BLM).</strong> The BLM has a multi-use mission. Land uses include energy development, livestock grazing, recreation, and timber harvesting, while protecting a wide array of natural, cultural, and historical resources.</p>
