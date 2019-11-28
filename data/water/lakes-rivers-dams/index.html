@@ -53,7 +53,7 @@ abstract="The Lakes, Rivers, Streams & Springs data package contains feature lay
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{{ "/images/Lakes.png" | prepend: site.baseurl }}" alt="lakes" />
-    <p>Water.LakesNHDHighRes is the recommended data layer for depicting Utah's lakes, reservoirs, and smaller features, etc. This data is derived from the National Hydrology Database (NHD) compiled by the UGSS in partnership with AGRC and other states' GIS programs. The derivation and modification process has been performed by AGRC to provide a general purpose feature class of water bodies. Two fields have been added to this feature class (InUtah and IsMajor) and features have been split at the state boundary.</p>
+    <p>Water.LakesNHDHighRes is the recommended data layer for depicting Utah's lakes, reservoirs, and smaller features, etc. This data is derived from the National Hydrology Database (NHD) compiled by the USGS in partnership with AGRC and other states' GIS programs. The derivation and modification process has been performed by AGRC to provide a general purpose feature class of water bodies. Two fields have been added to this feature class (InUtah and IsMajor) and features have been split at the state boundary.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>NHD Codes</h5>
     <ul class="dotless">
@@ -70,8 +70,7 @@ abstract="The Lakes, Rivers, Streams & Springs data package contains feature lay
       <li><a href="https://nhd.usgs.gov/">National Hydrography Dataset</a>
     </ul>
   </div>
-  {% include packagedata.html name="NHDLakes"
-  info=page.NHDLakes %}
+  {% include packagedata.html name="NHDLakes" info=page.NHDLakes %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -81,7 +80,7 @@ abstract="The Lakes, Rivers, Streams & Springs data package contains feature lay
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{{ "/images/Streams.png" | prepend: site.baseurl }}" alt="Streams" />
-    <p>Water.StreamsNHDHighRes is the recommended data layer for depicting Utah's streams, canals, washes, etc. This is a large dataset that is derived from the National Hydrology Database (NHD) compiled by the UGSS in partnership with AGRC and other states' GIS programs. The derivation and modification process has been performed by AGRC to provide a general purpose feature class of streams. Two fields have been added to this feature class (InUtah and IsMajor) and features have been split at the state boundary.</p>
+    <p>Water.StreamsNHDHighRes is the recommended data layer for depicting Utah's streams, canals, washes, etc. This is a large dataset that is derived from the National Hydrology Database (NHD) compiled by the USGS in partnership with AGRC and other states' GIS programs. The derivation and modification process has been performed by AGRC to provide a general purpose feature class of streams. Two fields have been added to this feature class (InUtah and IsMajor) and features have been split at the state boundary.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>NHD Codes</h5>
     <ul class="dotless">
@@ -97,14 +96,13 @@ abstract="The Lakes, Rivers, Streams & Springs data package contains feature lay
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li>Points of Diversion depicts agricultural irrigation and other diversion points at or along water features. This dataset is stewarded by the Utah Division of Water Resources. {% include contact.html subject=page.title contact=site.data.contacts.nhd %}
-      <li>Source Water Protection Zones (Drinking Water) are maintained by the Utah Division of Drinking Water. {% include contact.html subject=page.title contact=site.data.contacts.source_water text='This dataset is considered a protected record. Those with a legimate need for this data are invited to contact' %}
-      <li>Water-Related Land Use characterizes the type of water usage (irrigation, crop type, urban uses, etc) for land, statewide (see SGID Planning for moredetail).
+      <li>Source Water Protection Zones (Drinking Water) are maintained by the Utah Division of Drinking Water. {% include contact.html subject=page.title contact=site.data.contacts.source_water text='This dataset is considered a protected record. Those with a legitimate need for this data are invited to contact' %}
+      <li>Water-Related Land Use characterizes the type of water usage (irrigation, crop type, urban uses, etc) for land, statewide (see SGID Planning for more detail).
       <li><a href="https://nhd.usgs.gov/">National Hydrography Dataset</a></li>
       <li><a href="https://nationalmap.gov/streamer/webApp/welcome.html">USGS / National Map - Streamer</a></li>
     </ul>
   </div>
-  {% include packagedata.html name="NHDStreams"
-  info=page.NHDStreams %}
+  {% include packagedata.html name="NHDStreams" info=page.NHDStreams %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -121,6 +119,5 @@ abstract="The Lakes, Rivers, Streams & Springs data package contains feature lay
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
-  {% include packagedata.html name="NHDSprings"
-  info=page.NHDSprings %}
+  {% include packagedata.html name="NHDSprings" info=page.NHDSprings %}
 </div>
