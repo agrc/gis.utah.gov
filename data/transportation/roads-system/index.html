@@ -1,5 +1,5 @@
 ---
-title: 'Roads and Highway System '
+title: 'Roads and Highway System'
 author:
   display_name: Greg Bunce
   email: agrc@utah.gov
@@ -152,7 +152,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/utah-gis-highway-lrs-udot.png" | prepend: site.baseurl }}" alt="utah-gis-highway-lrs-udot" />
     <p>Transportation.UDOTRoutes_LRS is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepost measure coordinate.</p>
-    <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0080PR18501 is the east bound off ramp at exit 185 on I-80). ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
+    <p>Major routes are named using UDOT's 5 character convention (ex. 0089P is US 89 in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0080PR18501 is the east bound off ramp at exit 185 on I-80). ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter x,y coordinate precision; 0.001 mile m coordinate precision). The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
     <p>The CARTO code can be used to query subsets or classify different types of UDOT routes:</p>
     <ul>
@@ -184,7 +184,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/utah-sgid-highway-milepost.png" | prepend: site.baseurl }}" alt="utah-sgid-highway-milepost" />
     <p>Transportation.UDOTMileposts represents the approximate location of state and federal highway mileposts as a single point. This dataset is derived directly from SGID10.Transportation.UDOTRoutes_LRS.</p>
     <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction).  ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
-    <p>Per UDOT policy the actual location of mileposts can vary up to 50 feet, from the measured position where intersections and physical infrastructure make a more 'true' psoitioning impractical or undesirable.</p>
+    <p>Per UDOT policy the actual location of mileposts can vary up to 50 feet, from the measured position where intersections and physical infrastructure make a more 'true' positioning impractical or undesirable.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
   </div>
   {% include packagedata.html name="MilepostPoints"
@@ -218,8 +218,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <p>The EXITNAME field provides the primary route name and exit number plus the connecting route number or street name and place name carried by the exit sign. Route number and exit number are also carried in separate fields.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This dataset was assembled by AGRC from resources provided by UDOT, as a resource for 911 dispatch and for general map reference.</p>
   </div>
-  {% include packagedata.html name="FreewayExitPoints"
-  info=page.FreewayExitPoints %}
+  {% include packagedata.html name="FreewayExitPoints" info=page.FreewayExitPoints %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -234,6 +233,5 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <p>When defined labeling properties are defined properly, the minimum number of freeway and highway shields should be displayed without introducing ambiguity.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This dataset was assembled by AGRC for general purpose cartography.</p>
   </div>
-  {% include packagedata.html name="ShieldLabelingLines"
-  info=page.ShieldLabelingLines %}
+  {% include packagedata.html name="ShieldLabelingLines" info=page.ShieldLabelingLines %}
 </div>
