@@ -72,7 +72,7 @@ AddressSystemQuadrants:
     - May 2014 - Changed address system name East Carbon-Sunnyside to East Carbon
       City
     - April 2014 - Updated address system boundaries to match recent annexations in
-      northern Utah County; misc improvements in Davis County; adjusted  - Laketown/Garden
+      northern Utah County; misc improvements in Davis County; adjusted - Laketown/Garden
       City boundary
     - February 2014 - Merged East Carbon and Sunnyside to create the East Carbon-Sunnyside
       address system
@@ -100,18 +100,16 @@ abstract="This dataset contains GIS mapping data representing address point loca
     <img class="inline-text-left outline" src="{{ "/images/AddPts_Small.png" | prepend: site.baseurl }}" alt="Address Points" />
     <p>Location.AddressPoints is a statewide dataset that contains address point data from all 29 Utah Counties. This dataset is a work in progress and some counties are more complete than others. One person in each county has been identified as the <a href="https://docs.google.com/spreadsheet/ccc?key=0AkScYXX9W5INdFFRVHZkcWFYczd5MXhZYS1WTVN1elE&usp=sharing">Master Address List</a> (MAL) Authority to eliminate duplication of address point data and to clarify the main person of contact. AGRC is working with each MAL Authority to continually improve this data and work toward monthly updates.</p>
     <h5>Address Points in Action</h5>
-    <p>The statewide address point layer is used as reference data for the <a href="{{site.baseurl}}{% post_url 2013-05-10-utah-statewide-address-geocoding-web-service-upgrade %}">api.mapserv.utah.gov</a> address locators. You can also find the address points in many <a href="https://atlas.utah.gov">web mapping applicaitons</a>.</p>
+    <p>The statewide address point layer is used as reference data for the <a href="{{site.baseurl}}{% post_url 2013-05-10-utah-statewide-address-geocoding-web-service-upgrade %}">api.mapserv.utah.gov</a> address locators. You can also find the address points in many <a href="https://atlas.utah.gov">web mapping applications</a>.</p>
     <h5>Address Points as a Service</h5>
     <p>The address points are published as an <a href="https://utah.maps.arcgis.com/home/item.html?id=5b92021338f64f5ba77765d6fc47cbc9">ArcGIS Online service</a> as well as a <a href="{{ "/discover" | prepend: site.baseurl }}">Discover service</a>.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.address_points %} For county specific questions, see the <a href="https://docs.google.com/spreadsheet/ccc?key=0AkScYXX9W5INdFFRVHZkcWFYczd5MXhZYS1WTVN1elE&usp=sharing">contact list</a> for the Master Address Authority at each county.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://docs.google.com/document/d/1fVmLrp0pbR3J1aXo83jTt3gtGUsPwSYztf-HM-RB-cI/edit?usp=sharing">Utah Address Point Schema Definitions</a>
-      <li><a href="https://utah.maps.arcgis.com/home/item.html?id=3f4f7a8efcd147febeca8bacaea67a14">AGRC's ArcGIS Online site</a>
     </ul>
   </div>
-  {% include packagedata.html name="AddressPoints"
-  info=page.AddressPoints %}
+  {% include packagedata.html name="AddressPoints" info=page.AddressPoints %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -125,6 +123,5 @@ abstract="This dataset contains GIS mapping data representing address point loca
     <p>For additional information regarding Address System Quadrants dataset, read the <a href="https://docs.google.com/document/d/1bMoBR_CZMjdIkZvOWFg0LI6-UokgqkUPSE-Ezp-ovas/edit">Utah Local Address Systems document</a></p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
-  {% include packagedata.html name="AddressSystemQuadrants"
-  info=page.AddressSystemQuadrants %}
+  {% include packagedata.html name="AddressSystemQuadrants" info=page.AddressSystemQuadrants %}
 </div>
