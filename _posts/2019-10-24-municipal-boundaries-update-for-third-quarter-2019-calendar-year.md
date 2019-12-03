@@ -24,7 +24,7 @@ Here is a [census flyer](https://www2.census.gov/geo/pdfs/partnerships/GEO_Progr
 
 Municipalities and updates can be viewed on this [Utah Municipality Modifications](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63) web map.
 
-The following are the changes and annexations sunce June 30, 2019, through Oct 15, 2019 listed by County and City:
+The following are the changes and annexations since June 30, 2019, through Oct 15, 2019 listed by County and City:
 
 | County | City | Number of Changes |
 | --- | --- | --- |
