@@ -42,7 +42,7 @@ ContourPolygons:
 </figure>
 {% include abstract.html download="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ELEVATION/UnpackagedData/Contours500Ft/_Statewide/"
 name="500 Foot Contours"
-abstract="This datasets contain a statewide coverage of 500 foot contours derived from the 10 meter National Elevation Dataset's (NED) Digital Elevation Model (DEM)." %}
+abstract="This datasets contain a statewide coverage of 500 foot contours derived from the 10 meter National Elevation Datasets (NED) Digital Elevation Model (DEM)." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="500FootContours">
@@ -66,7 +66,7 @@ abstract="This datasets contain a statewide coverage of 500 foot contours derive
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{{ "/images/SLCocontours.jpg" | prepend: site.baseurl }}" alt="Contours" />
-    <p>AGRC has 2 meter contours derived from 2 meter LiDAR collected in 2006 for Salt Lake County. No smoothing has been applied to the contour data but a <code>Smooth Line</code> in ArcMap with a <code>50 meter Smoothing Tolerance</code> cleans the data up nicely. Although the data is refered to as 2 meter, the contour intervals are .5 meter.</p>
+    <p>AGRC has 2 meter contours derived from 2 meter LiDAR collected in 2006 for Salt Lake County. No smoothing has been applied to the contour data but a <code>Smooth Line</code> in ArcMap with a <code>50 meter Smoothing Tolerance</code> cleans the data up nicely. Although the data is referred to as 2 meter, the contour intervals are .5 meter.</p>
     <p>To download areas of the contours refer to this <a href="{{ "/downloads/SLCo_2m_Contours.html" | prepend: site.baseurl }}">image map</a> to help find your ares of interest. Or this <a href="ftp://ftp.agrc.utah.gov/SLCo_2m_Contours/SLCo_2m_Index.zip">shapefile index</a> can be used to determine what files to download. These contour shapefiles cover 4,000x4,000 meter blocks.
     This data has a UTM NAD83 meters projection.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.contours %}</p>
@@ -82,7 +82,7 @@ abstract="This datasets contain a statewide coverage of 500 foot contours derive
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{{ "/images/contourPolys.png" | prepend: site.baseurl }}" alt="Contours" />
-    <p>SGID10.ELEVATION.ContoursGeneralized200Ft are intended for general cartographic purposes and representing approximate elevation and terrain. Contours were created by applying a focal filter to a 30 meter DEM, reclassifying the DEM into 200 foot intervals and converting to polygons. Would you like to create your own contour polygons or are you simply curious how it was done? Read the <a href="{{site.baseurl}}{% post_url 2017-11-27-dumbing-down-terrain-with-contour-polygons %}">indepth discussion</a> of how the contours were created and derived.</p>
+    <p>SGID10.ELEVATION.ContoursGeneralized200Ft are intended for general cartographic purposes and representing approximate elevation and terrain. Contours were created by applying a focal filter to a 30 meter DEM, reclassifying the DEM into 200 foot intervals and converting to polygons. Would you like to create your own contour polygons or are you simply curious how it was done? Read the <a href="{{site.baseurl}}{% post_url 2017-11-27-dumbing-down-terrain-with-contour-polygons %}">in-depth discussion</a> of how the contours were created and derived.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.contours %}</p>
   </div>
   {% include packagedata.html name="ContourPolygons"
