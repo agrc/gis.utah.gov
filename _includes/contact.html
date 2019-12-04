@@ -6,8 +6,7 @@
   {%- if include.contact.name -%}
 {%- capture mailto -%}mailto:{{ include.contact.email }}{%- endcapture -%}
 
-{{ text | default: default_text}} {{ include.contact.name }} from {{ include.contact.agency }} at <a href="{{ mailto | append: subject }}">{{ include.contact.email }}</a>
-{%- if include.contact.phone != nil -%} or <a href="tel:{{ include.contact.phone }}">{{ include.contact.phone }}</a>{%- endif -%}
+{{ text | default: default_text}} {{ include.contact.name }} from {{ include.contact.agency }} at <a href="{{ mailto | append: subject }}">{{ include.contact.email }}</a>{% if include.contact.phone != nil %} or <a href="tel:{{ include.contact.phone }}">{{ include.contact.phone }}</a>{%- endif -%}
 {%- unless include.hide-punctuation -%}.{%- endunless -%}
 {%- else -%}{{ text | default: default_text }}
   {%- for contact in include.contact -%}
