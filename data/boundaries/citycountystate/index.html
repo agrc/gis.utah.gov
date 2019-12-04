@@ -67,8 +67,8 @@ abstract="This dataset contains mapping data representing the state, county, mun
       <h5 id="MunicipalBoundaries-downloads">Downloads</h5>
     </div>
     <div class="panel-content">
-      <ul class="dotless no-padding" id="MunicipalBoundaries-dlist">
-        <li><a href="https://opendata.gis.utah.gov/datasets/utah-municipal-boundaries">Municipal Boundaries: SGID Open Data Downloads and Services</a>
+      <ul class="dotless no-padding">
+      {% include downloads.html name="Utah Municipal Boundaries" item_id="543fa1f073714198a3dbf8a292bdf30c" %}
       </ul>
     </div>
   </div>
@@ -92,17 +92,6 @@ abstract="This dataset contains mapping data representing the state, county, mun
       </ul>
     </div>
   </div>
-  <script>
-    document.getElementById('MunicipalBoundaries-dlist').addEventListener('click', function() {
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'data',
-        eventAction: 'specific-download',
-        eventLabel: 'specific-download-municipal-boundaries',
-        transport: 'beacon'
-      });
-    });
-  </script>
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -150,8 +139,8 @@ abstract="This dataset contains mapping data representing the state, county, mun
       <h5 id="CountyBoundaries-downloads">Downloads</h5>
     </div>
     <div class="panel-content">
-      <ul class="dotless no-padding" id="CountyBoundaries-dlist">
-        <li><a href="https://opendata.gis.utah.gov/datasets/utah-county-boundaries">County Boundaries: SGID Open Data Downloads and Services</a>
+      <ul class="dotless no-padding">
+      {% include downloads.html name="Utah County Boundaries" item_id="90431cac2f9f49f4bcf1505419583753" %}
       </ul>
     </div>
   </div>
@@ -169,17 +158,6 @@ abstract="This dataset contains mapping data representing the state, county, mun
         <li>March 2011
     </div>
   </div>
-  <script>
-    document.getElementById('CountyBoundaries-dlist').addEventListener('click', function() {
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'data',
-        eventAction: 'specific-download',
-        eventLabel: 'specific-download-county-boundaries',
-        transport: 'beacon'
-      });
-    });
-  </script>
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
