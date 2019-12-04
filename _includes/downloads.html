@@ -1,0 +1,33 @@
+{% assign id = include.name | downcase | replace: ' ', '-' %}
+<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.gdb?session=undefined" id="{{ id }}-gdb">{{ include.name }}: File Geodatabase</a>
+<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.zip?session=undefined" id="{{ id }}-shp">{{ include.name }}: Shapefile</a>
+<li><a href="https://opendata.gis.utah.gov/datasets/{{ id }}" id="{{ id }}-hub">{{ include.name }}: SGID Open Data Downloads and APIs</a>
+<script>
+  document.getElementById("{{ id }}-shp").addEventListener('click', function () {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'data',
+      eventAction: 'shapefile',
+      eventLabel: "{{ id }}",
+      transport: 'beacon'
+    });
+  });
+  document.getElementById("{{ id }}-gdb").addEventListener('click', function () {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'data',
+        eventAction: 'geodatabase',
+        eventLabel: "{{ id }}",
+        transport: 'beacon'
+      });
+    });
+    document.getElementById("{{ id }}-hub").addEventListener('click', function () {
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'data',
+          eventAction: 'open-data',
+          eventLabel: "{{ id }}",
+          transport: 'beacon'
+        });
+      });
+</script>

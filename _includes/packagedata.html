@@ -4,8 +4,15 @@
       <h5 id="{{ include.name | replace: ' ', '' }}-downloads">Downloads</h5>
     </div>
     <div class="panel-content">
-      <ul id="{{ include.name | replace: ' ', '' }}-dlist" class="dotless no-padding">{%- for download in include.info.downloads -%}
-        <li><a href="{{ download.url }}">{{ download.label }}</a>{%- endfor -%}
+      <ul id="{{ include.name | replace: ' ', '' }}-dlist" class="dotless no-padding">
+        {% if include.info.downloads.size > 0 %}
+        {%- for download in include.info.downloads -%}
+        <li><a href="{{ download.url }}">{{ download.label }}</a>
+        {%- endfor -%}
+        {% endif %}
+        {% if include.info.hub %}
+        {% include downloads.html name=include.info.hub.name item_id=include.info.hub.item_id %}
+        {% endif %}
       </ul>
     </div>
   </div>
