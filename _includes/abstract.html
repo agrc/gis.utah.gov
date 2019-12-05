@@ -29,9 +29,8 @@
 {%- else -%}<li><strong>Web Application:</strong> <a href="{{ app }}">View</a>{%- endif -%}{%- endfor -%}
   <li><strong>Abstract:</strong> {{ include.abstract }}
 </ul>
-<h4 class="package--header">Package Contents</h4>
-<p>The following data is available for download:</p>
-{%- if include.download != nul -%}<script>
+{%- if include.download != nul -%}
+<script>
   document.getElementById('package--download').addEventListener('click', function() {
     ga('send', {
       hitType: 'event',
@@ -41,4 +40,5 @@
       transport: 'beacon'
     });
   });
-</script>{%- endif -%}
+</script>
+{%- endif -%}
