@@ -1,5 +1,4 @@
 ---
-title: 'Roads and Highway System'
 author:
   display_name: Greg Bunce
   email: agrc@utah.gov
@@ -59,7 +58,7 @@ ShieldLabelingLines:
   <img class="caption__image" src="{% link images/gallery/sgid/utah-sgid-gis-roads-and-highways-sample.png %}" alt="Roads and Highways" />
   <figcaption class="caption__text">Roads and Highway System</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mN1NtTlRucTZleHc"
+{% include abstract.html
 name="Roads and Highway System"
 stewards="AGRC, Local Government partners"
 abstract="This dataset contains GIS mapping data representing the statewide roads centerline dataset for Utah and other road and highway related data such as milepost locations, exit numbers and names, polylineM highway linear referencing system (LRS) routes, and label lines for dynamic rendering of highway shields." %}
@@ -80,32 +79,19 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546">Road Centerlines: Data Model</a>
+      <li><a href="https://drive.google.com/uc?export=download&id=0ByStJjVZ7c7mMXdRSWk0SWhncXc">Road Centerlines Schema-Only: File Geodatabase</a>
     </ul>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
       <i class="fas fa-pull-right fa-download fa-2x" data-fa-transform="down-2"></i>
-      <h5 id="RoadCenterlines-downloads">Downloads</h5>
+      <h5 id="RoadCenterlines-downloads">Downloads and Web Services</h5>
     </div>
     <div class="panel-content" id="RoadCenterlines-list">
       <ul class="dotless no-padding">
-        <li><a href="https://opendata.gis.utah.gov/datasets/utah-roads">Road Centerlines: SGID Open Data Downloads and Services</a>
-        <li><a href="https://drive.google.com/uc?export=download&id=0ByStJjVZ7c7mMXdRSWk0SWhncXc">Road Centerlines Schema-Only: File Geodatabase</a>
+        {% include downloads.html name="Utah Roads" item_id="478fbef62481427f95a3510a4707b24a" %}
       </ul>
     </div>
-    <script>
-      document.getElementById('RoadCenterlines-dlist').addEventListener('click', function() {
-        if (evt.target.tagName.toLowerCase() === 'a') {
-          ga('send', {
-            hitType: 'event',
-            eventCategory: 'data',
-            eventAction: 'specific-download',
-            eventLabel: 'specific-download-road-centerlines',
-            transport: 'beacon'
-          });
-        }
-      });
-    </script>
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel update">
@@ -127,17 +113,6 @@ abstract="This dataset contains GIS mapping data representing the statewide road
         <li><a href="{% link _posts/2018-11-29-utah-sgid-statewide-roads-data-layer-updates-11292018.md %}">November 29, 2018</a>
         <li><a href="{% link _posts/2018-10-11-utah-sgid-statewide-roads-data-layer-updates-10112018.md %}">October 11, 2018</a>
         <li><a href="{% link _posts/2018-08-14-utah-sgid-statewide-roads-data-layer-updates-08142018.md %}">August 14, 2018</a>
-      </ul>
-    </div>
-  </div>
-  <div class="grid__col grid__col--1-of-2">
-    <div class="panel endpoint">
-      <i class="fas fa-pull-right fa-cloud fa-2x" data-fa-transform="down-2"></i>
-      <h5 id="RoadCenterlines-web-services">Web Services</h5>
-    </div>
-    <div class="panel-content">
-      <ul class="dotless no-padding">
-        <li><a href="https://utah.maps.arcgis.com/home/item.html?id=478fbef62481427f95a3510a4707b24a">ArcGIS Online Feature Service</a>
       </ul>
     </div>
   </div>

@@ -1,5 +1,4 @@
 ---
-title: Lakes, Rivers, Streams, and Springs
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -21,9 +20,9 @@ NHDLakes:
   updates:
     - December 2016
 NHDStreams:
-  downloads:
-    - url: https://opendata.gis.utah.gov/datasets/utah-streams-nhd
-      label: 'Streams NHD High Res: SGID Open Data Downloads and Services'
+  hub:
+    name: Utah Streams NHD
+    item_id: d9b5ac9220ff415994b193c9ce022f86
   updates:
     - December 2016
 NHDSprings:
@@ -39,7 +38,7 @@ NHDSprings:
   <img class="caption__image" src="{% link images/Water.png %}" alt="Water" />
   <figcaption class="caption__text">Water Sample</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mdjRzWWo0OUVKMVE"
+{% include abstract.html
 name="NHD Lakes, Rivers, Streams, and Springs"
 stewards="AGRC & USGS"
 abstract="The Lakes, Rivers, Streams & Springs data package contains feature layers that are derived from the <a href='https://nhd.usgs.gov/data.html'>National Hydrography Dataset (NHD)</a>. The NHD is the surface water component of the National Map created by the United States Geological Survey (USGS). The NHD contains a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. NHD data in it's entirety can be downloaded from <a href='ftp://nhdftp.usgs.gov/DataSets/Staged/States/FileGDB/HighResolution/'>here</a> (ex. NHDH_UT_). </p><p>The USGS has <a href='https://www.usgs.gov/news/nhd-and-wbd-map-services-moving-cloud'>web-based map services</a> of the NHD and WBD. You are also able to view the USGS services on <a href='https://hydro.nationalmap.gov/arcgis/rest/services/'>ArcGIS Server</a> or connect to their server with <code>https://hydro.nationalmap.gov/arcgis/services</code>.</p>" %}
