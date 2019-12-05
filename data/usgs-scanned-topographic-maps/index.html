@@ -18,27 +18,23 @@ categories: []
 date: 2011-08-15 18:16:39 -0600
 24K:
   downloads:
-    - url: ftp://ftp.agrc.utah.gov/DRG/24k/Countywide
-      label: GeoTIFF county wide mosaics of USGS Scanned Topographic Maps
-    - url: ftp://ftp.agrc.utah.gov/DRG/24k/Collared
-      label: GeoTIFFs of USGS Scanned Topographic Maps quads with collars
-    - url: https://raster.utah.gov/?cat=24K%20GeoPDF
-      label: GeoPDFs of USGS Topographic Maps by interactive map
+    - url: https://raster.utah.gov/?catGroup=24K%20DRG,100K%20DRG,250K%20DRG&title=USGS%20Topo%20Maps
+      label: USGS Topographic Maps via Interactive Map
   updates:
     - March 5, 2008
 500K:
   downloads:
-    - url: ftp://ftp.agrc.utah.gov/DRG/500k/Collared/state_DRG500K_NAD27.zip
-      label: Statewide NAD27 JPG
+    - url: https://storage.googleapis.com/state-of-utah-sgid-downloads/drgs/500k/Collared/state_DRG500K_NAD27.zip
+      label: Statewide 500K Topographic Map (NAD27)
 Vintage:
   downloads:
-    - url: ftp://ftp.agrc.utah.gov/Imagery/DRG_Vintage/
-      label: Vintage Topographic Maps
+    - url: https://raster.utah.gov/?catGroup=Vintage%20Topographic%20Map&title=USGS%20Vintage%20Topo%20Maps
+      label: USGS Vintage Topographic Maps via Interactive Map
 ---
 {% include abstract.html
   name="USGS Scanned Topographic Maps"
   type="Imagery"
-  webapp="https://raster.utah.gov/?catGroup=24K%20GeoPDF,24K%20DRG,100K%20DRG,250K%20DRG&title=USGS%20Topo%20Maps"
+  webapp="https://raster.utah.gov/?catGroup=24K%20DRG,100K%20DRG,250K%20DRG&title=USGS%20Topo%20Maps"
   abstract="The SGID contains complete statewide coverage of scanned standard series USGS topographic maps, also known as digital raster graphics (DRGs). AGRC has modified these DRGs so that they are collarless and are georeferenced to the surface of the earth using the UTM Zone 12 North, NAD83 projected coordinate system (except where noted). Every product on this page should be downloadable from <a href='https://raster.utah.gov'>raster.utah.gov</a>." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -47,19 +43,16 @@ Vintage:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" title="1:24K" src="{{ '/images/90x90_usgs_scanned_maps.png' | prepend: site.baseurl }}" alt="USGS Scanned Topo Map" />
+    <img class="inline-text-left outline" title="1:24K" src="{% link /images/90x90_usgs_scanned_maps.png %}" alt="USGS Scanned Topo Map" />
     <p>1:24K Resolution products from the USGS modified by AGRC.</p>
-    <p>The Collarless GeoTIFF Scanned USGS Topographic maps have been <a href="{{ '/data/usgs-scanned-topographic-maps/1-to-24000/' | prepend: site.baseurl }}">organized into a table</a> to help you quickly find the quad you are interested in.
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="https://raster.utah.gov/?catGroup=24K%20GeoPDF,24K%20DRG&title=USGS%2024K%20Topo%20Maps">By Interactive Map</a>
-      <li><a href="ftp://ftp.agrc.utah.gov/DRG/24k/Collarless/24KQuadIndex(sm).pdf">PDF Map of Utah 1:24K USGS Scanned Topographic Map with Quad Names</a>
-      <li><a href="ftp://ftp.agrc.utah.gov/DRG/24k/Collarless/Find_a_DRG.txt">Alphabetical list of Utah 1:24K USGS Scanned Topographic Map with 'Q Numbers'</a>
-      <li><a href="https://gis.utah.gov/geopdfs/">Information about USGS GeoPDF Topographic Maps</a>
+      <li><a href="https://raster.utah.gov/?catGroup=24K%20DRG&title=USGS%2024K%20Topo%20Maps">By Interactive Map (1:24,000)</a>
+      <li><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/drgs/24k/Collarless/24KQuadIndex(sm).pdf">PDF Map of Utah 1:24K USGS Scanned Topographic Map with Quad Names</a>
+      <li><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/drgs/24k/Collarless/Find_a_DRG.txt">Alphabetical list of Utah 1:24K USGS Scanned Topographic Map with 'Q Numbers'</a>
     </ul>
   </div>
-  {% include packagedata.html name="24K"
-  info=page.24K %}
+  {% include packagedata.html name="24K" info=page.24K %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -68,9 +61,8 @@ Vintage:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" title="1:100K" src="{{ '/images/90x90_usgs_scanned_maps.png' | prepend: site.baseurl }}" alt="USGS Scanned Topo Map" />
+    <img class="inline-text-left outline" title="1:100K" src="{% link /images/90x90_usgs_scanned_maps.png %}" alt="USGS Scanned Topo Map" />
     <p>1:100K Resolution products from the USGS modified by AGRC.</p>
-    <p>The Collarless GeoTIFF Scanned USGS Topographic maps have been <a href="{{ '/data/usgs-scanned-topographic-maps/1-to-100000/' | prepend: site.baseurl }}">organized into a table</a> to help you quickly find the quad you are interested in.
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://raster.utah.gov/?cat=100K%20DRG">By Interactive Map (1:100,000)</a>
@@ -84,9 +76,8 @@ Vintage:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" title="1:250K" src="{{ '/images/90x90_usgs_scanned_maps.png' | prepend: site.baseurl }}" alt="USGS Scanned Topo Map" />
+    <img class="inline-text-left outline" title="1:250K" src="{% link /images/90x90_usgs_scanned_maps.png %}" alt="USGS Scanned Topo Map" />
     <p>1:250K Resolution products from the USGS modified by AGRC.</p>
-    <p>The Collarless GeoTIFF Scanned USGS Topographic maps have been <a href="{{ '/data/usgs-scanned-topographic-maps/1-to-250000' | prepend: site.baseurl }}">organized into a table</a> to help you quickly find the quad you are interested in.
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://raster.utah.gov/?cat=250K%20DRG">By Interactive Map (1:250,000)</a>
@@ -100,11 +91,10 @@ Vintage:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" title="1:500K" src="{{ '/images/90x90_usgs_scanned_maps.png' | prepend: site.baseurl }}" alt="USGS Scanned Topo Map" />
+    <img class="inline-text-left outline" title="1:500K" src="{% link /images/90x90_usgs_scanned_maps.png %}" alt="USGS Scanned Topo Map" />
     <p>1:500K Resolution products from the USGS modified by AGRC.</p>
   </div>
-  {% include packagedata.html name="500K"
-  info=page.500K %}
+  {% include packagedata.html name="500K" info=page.500K %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -113,8 +103,8 @@ Vintage:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" title="Vintage Topo Example" src="{{ '/images/Vintage_DRG.png' | prepend: site.baseurl }}" alt="Vintage Topo Sample" />
-    <p>The Utah Geological Survey created digital 7.5, 15 and 30-minute vintage U.S. Geological Survey topographic quadrangle maps (1900-1966) by scanning original paper maps at a resolution of 500 dots per inch (dpi). These digital scans were enhanced in Adobe Photoshop as needed. Subsequent 16 point spline georeferencing was done in ArcMap. There is not a statewide collection of these vintage topographic maps and they have a NAD27 Datumn.</p>
+    <img class="inline-text-left outline" title="Vintage Topo Example" src="{% link /images/Vintage_DRG.png %}" alt="Vintage Topo Sample" />
+    <p>The Utah Geological Survey created digital 7.5, 15 and 30-minute vintage U.S. Geological Survey topographic quadrangle maps (1900-1966) by scanning original paper maps at a resolution of 500 dots per inch (dpi). These digital scans were enhanced in Adobe Photoshop as needed. Subsequent 16 point spline georeferencing was done in ArcMap. There is not a statewide collection of these vintage topographic maps and they have a NAD27 Datum.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://raster.utah.gov/?cat=Vintage%20Topographic%20Map">Vintage Topographic Maps via Interactive Map</a></li>
