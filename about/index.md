@@ -16,6 +16,7 @@ date: 2011-06-30 23:18:14 -0600
 - [AGRC Contacts]({{ "/about/contact/" | prepend: site.baseurl }})
 - [AGRC Directions and Parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }})
 - [Contributing to this website]({{ "/about/contributing" | prepend: site.baseurl }})
+- [AGRC Policies]({{ "/policies" | prepend: site.baseurl }})
 {: .dotless }
 </div>
 
