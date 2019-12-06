@@ -9,7 +9,8 @@ tags:
 categories: []
 date: 2019-12-04 10:01:27 -0500
 ---
-<i class="fas fa-2x fa-fw fa-clipboard-list"></i> These guidelines apply to data in the internal SGID database.
+
+The following guidelines apply to data in the internal SGID database.
 
 
 ### Table Naming Convention
@@ -66,8 +67,7 @@ date: 2019-12-04 10:01:27 -0500
 - PostGIS (this step is a work-in-progress)
   - If coded domains were affected, export the related domain table to a standalone table for use in PostGIS  
 
-
-### Removing Existing Tables
+<i class="fas fa-2x fa-fw fa-clipboard-list"></i> ### Removing Existing Tables
 {: .text-left }
 - Use the [Cemetery](https://github.com/agrc/cemetery) project
 
@@ -91,4 +91,8 @@ date: 2019-12-04 10:01:27 -0500
     - Run [Sweeper](https://github.com/agrc/sweeper) to report and optionally remove geometry errors
 
 - Remove duplicate records (duplicate geometry and duplicate attributes)
-    - Run [Sweeper](https://github.com/agrc/sweeper) to report and optionally remove duplicate records
+    - Run [Sweeper](https://github.com/agrc/sweeper) to report and optionally remove duplicate record
+
+<div class="grid pop">
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</div>
