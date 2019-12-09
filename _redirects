@@ -1,5 +1,6 @@
 # source                                                                                                  destination                                                           status code
-/about/data-policies/                                                                                     /license-disclaimer/                                                          301
+/about/data-policies/                                                                                     /about/policy/license-disclaimer/                                             301
+/license-disclaimer/                                                                                      /about/policy/license-disclaimer/                                             301
 /about/ugic/                                                                                              http://ugic.org/                                                              301
 /ugic/                                                                                                    http://ugic.org/                                                              301
 /about/organizations/geographic-names-committee/                                                          https://heritage.utah.gov/history/state-history-geographic-names-committee    301
