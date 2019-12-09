@@ -12,14 +12,12 @@ date: 2019-12-04 10:01:27 -0500
 
 The following guidelines apply to data in the internal SGID database.
 
-
 ### Table Naming Convention
 {: .text-left }
 
 - Using Dates in Table Names
   - Dates are allowed in table names when content is related to either census, political, or tax.
   - For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active.
-
 
 ### Adding New Tables
 {: .text-left }
@@ -45,7 +43,7 @@ The following guidelines apply to data in the internal SGID database.
 - Use existing domains (if possible)
   - If loading a new domain to the database
     - When possible, use same value for code and description
-      - Use the existing naming convention (ex: “CVDomain_DomainNameHere”)  
+      - Use the existing naming convention (ex: “CVDomain_DomainNameHere”)
 
 - Turn on Editor Tracking (on appropriate layers)
 
@@ -65,12 +63,11 @@ The following guidelines apply to data in the internal SGID database.
     - If layer is exposed to Open Data, enable multiple format downloads
 
 - PostGIS (this step is a work-in-progress)
-  - If coded domains were affected, export the related domain table to a standalone table for use in PostGIS  
+  - If coded domains were affected, export the related domain table to a standalone table for use in PostGIS
 
 <i class="fas fa-2x fa-fw fa-clipboard-list"></i> ### Removing Existing Tables
 {: .text-left }
 - Use the [Cemetery](https://github.com/agrc/cemetery) project
-
 
 ### Updating and Editing Existing Tables
 {: .text-left }
@@ -78,9 +75,9 @@ The following guidelines apply to data in the internal SGID database.
 - Comply with the scheduled downtime
   - No edits during scheduled downtimes
     - 7:00 pm to 10:00 am MST (for now, also check Forklift email report to verify)
-  - Ensure that data is production-ready before the scheduled update  
+  - Ensure that data is production-ready before the scheduled update
   - Database updates should be done during scheduled downtime
-  - Batch scripts and large processes should be run during scheduled downtime    
+  - Batch scripts and large processes should be run during scheduled downtime
 
 - Long-term edits should be performed locally then loaded when complete
 
@@ -88,10 +85,10 @@ The following guidelines apply to data in the internal SGID database.
   - Last update date
 
 - Remove records with empty geometry
-    - Run [Sweeper](https://github.com/agrc/sweeper) to report and optionally remove geometry errors
+  - Run [Sweeper](https://github.com/agrc/sweeper) to report and optionally remove geometry errors
 
 - Remove duplicate records (duplicate geometry and duplicate attributes)
-    - Run [Sweeper](https://github.com/agrc/sweeper) to report and optionally remove duplicate record
+  - Run [Sweeper](https://github.com/agrc/sweeper) to report and optionally remove duplicate record
 
 <div class="grid pop">
   <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

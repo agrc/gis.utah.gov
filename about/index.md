@@ -11,12 +11,12 @@ date: 2011-06-30 23:18:14 -0600
 <div class="pull-right" markdown="1">
 #### Quick Links
 
-- [AGRC Mission]({{ "/about/mission/" | prepend: site.baseurl }})
-- [GIS-related Utah Statute]({{ "/about/code" | prepend: site.baseurl }})
-- [AGRC Contacts]({{ "/about/contact/" | prepend: site.baseurl }})
-- [AGRC Directions and Parking]({{ "/about/visiting-agrc" | prepend: site.baseurl }})
-- [Contributing to this website]({{ "/about/contributing" | prepend: site.baseurl }})
-- [AGRC Policies]({{ "/policies" | prepend: site.baseurl }})
+- [AGRC Contacts]({% link about/contact/index.html %})
+- [AGRC Mission]({% link about/mission/index.md %})
+- [GIS-related Utah Statute]({% link about/code/index.html %})
+- [AGRC Policies]({% link about/policy/index.md %})
+- [AGRC Directions and Parking]({% link about/visiting-agrc/index.html %})
+- [Contributing to this website]({% link about/contributing/index.md %})
 {: .dotless }
 </div>
 
