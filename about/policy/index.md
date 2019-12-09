@@ -15,7 +15,7 @@ date: 2019-12-04 10:01:27 -0700
 
 AGRC’s data license and general data disclaimer.
 
-#### [SGID Database Guidelines and Editing Policies]({% link about/policy/sgid/index.md %})
+#### [SGID Database Policies]({% link about/policy/sgid/index.md %})
 {: .text-left}
 
-AGRC’s guidelines for storing and maintaining data in the SGID database.
+AGRC’s guidelines for creating, editing, maintaining, and removing data in the SGID database.
