@@ -12,7 +12,10 @@ date: 2019-12-07 15:59:23 -0700
 ---
 The following applies to all services, downloads, links, and other content included or referenced in all geospatial data, mapping products, and services created or hosted by the Utah Automated Geographic Reference Center (AGRC), including the contents of the SGID:
 
-## The data and services provided by AGRC is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
+## License
+{: .text-left}
+
+The data and services provided by AGRC is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
 {: .text-left}
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
@@ -21,7 +24,7 @@ The following applies to all services, downloads, links, and other content inclu
 ### License Attribution
 {: .text-left}
 
-AGRC requests that where possible and practical **appropriate attribution** shall be made by users of this website or any other services provided by AGRC with the following criteria:
+AGRC requests that where possible and practical, **appropriate attribution** shall be made by users of this website, data, or any other services provided by AGRC with the following criteria:
 
 - an appropriate statement, reflecting this disclaimer be used on all products using SGID geospatial data as a source, and that a currency date and stewardship credit for the data be included on the map; and
 - standards-compliant and/or [search engine-optimized (SEO) metadata]({% link gis-data-sharing/metadata/index.md %}), where available, be included with any distribution of all geospatial data
