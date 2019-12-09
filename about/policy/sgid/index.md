@@ -1,5 +1,5 @@
 ---
-title: SGID Database Guidelines and Editing Policy
+title: SGID Database Policy
 author:
   display_name: AGRC Office
   email: agrc@utah.gov
@@ -10,86 +10,57 @@ categories: []
 date: 2019-12-04 10:01:27 -0500
 ---
 
-The following guidelines apply to data in the internal SGID database.
+The following applies to data in the internal SGID database.
 
-### Table Naming Convention
+## Adding New Tables
 {: .text-left }
 
-- Using Dates in Table Names
-  - Dates are allowed in table names when content is related to either census, political, or tax.
-  - For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active.
+When adding a new table to the SGID, a corresponding record will be added to the Data Stewardship spreadsheet and a data page will be added to the AGRC website. The data stewardship spreadsheet will contain at a minimum
 
-### Adding New Tables
+- The authoritative access from location
+- The table name
+- A description
+- The data steward
+- The steward contact name and email
+- A link the the data page on the AGRC website
+- A link to the SGID Open Data page
+
+The ArcGIS Online item will contain a curated summary, description, and tags while residing in its ISO category folder. If the data is authoritative, it will be marked as `authoritative`. If the data does not receive updates, it will be tagged as `static`. If the data has historical relevance **but is not the most recent data** it will be tagged as `shelved`.
+
+A new record for the table will be added to the META.AGOLItems table containing the ArcGIS Online Item id and the public title if it will be shared to the SGID Open Data.
+
+If the data is shared with the SGID Open Data, it will have the enable multiple formats download option selected to allow for File Geodatabases and other non default downloads.
+
+The minimum metadata content will be populated.
+
+- Purpose of data
+- Owner of the data
+- Contact person
+- Date loaded
+- Last update date
+
+All empty geometries and duplicate records will be removed, with [Sweeper](https://github.com/agrc/sweeper) or some other form of automation.
+
+The ESRI default Resolution and Tolerance will be used.
+
+- XY Resolution: 0.0001 Meter
+- XY Tolerance: 0.001 Meter
+
+### Dates in Table Names
 {: .text-left }
 
-- Populate metadata
-  - Minimum content
-    - Purpose of data
-    - Owner of the data
-    - Contact person
-    - Date loaded
-    - Last update date
+Dates are acceptable in table names when content is related to either `census`, `political`, or `tax` ISO categories. For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active. This implies that the **most current and relevant** data contains **no date suffix**. Historical or future data _will_ contain a date suffix to help identification at a glance. The best way to learn about a dataset is to view the data page metadata.
 
-- Remove records with empty geometry
-  - Run [Sweeper](https://github.com/agrc/sweeper) to find and optionally remove geometry errors
-
-- Remove duplicate records (duplicate geometry and duplicate attributes)
-  - Run [Sweeper](https://github.com/agrc/sweeper) to find and optionally remove duplicate records
-
-- Use ESRI default Resolution and Tolerance
-  - XY Resolution: 0.0001 Meter
-  - XY Tolerance: 0.001 Meter
-
-- Use existing domains (if possible)
-  - If loading a new domain to the database
-    - When possible, use same value for code and description
-      - Use the existing naming convention (ex: “CVDomain_DomainNameHere”)
-
-- Turn on Editor Tracking (on appropriate layers)
-
-- Add a corresponding record to the Data Steward spreadsheet
-
-- Give appropriate rights/permissions
-  - SQL SGID
-    - internal (if desired)
-  - Open Data and AGOL
-    - Create a new record in Meta.AGOLItems table
-      - Populate ItemID
-      - Create public layer name
-    - Apply appropriate tags for SGID [Open Data](https://opendata.gis.utah.gov/)
-      - static
-      - ISO Category Group
-    - If appropriate, mark as authoritative
-    - If layer is exposed to Open Data, enable multiple format downloads
-
-- PostGIS (this step is a work-in-progress)
-  - If coded domains were affected, export the related domain table to a standalone table for use in PostGIS
-
-<i class="fas fa-2x fa-fw fa-clipboard-list"></i> ### Removing Existing Tables
-{: .text-left }
-- Use the [Cemetery](https://github.com/agrc/cemetery) project
-
-### Updating and Editing Existing Tables
+## Updating and Editing Existing Tables
 {: .text-left }
 
-- Comply with the scheduled downtime
-  - No edits during scheduled downtimes
-    - 7:00 pm to 10:00 am MST (for now, also check Forklift email report to verify)
-  - Ensure that data is production-ready before the scheduled update
-  - Database updates should be done during scheduled downtime
-  - Batch scripts and large processes should be run during scheduled downtime
+No edits will be made to the internal SGID from 7:00PM to 10:00AM MST to allow for automated scripts to push accurate updates to ArcGIS Online and ArcGIS Server. AGRC will ensure that data is production-ready before the editing windows ends.
 
-- Long-term edits should be performed locally then loaded when complete
+All database updates will be done during the editing window using [swapper](https://github.com/agrc/swapper) or some other automated process to reduce the amount of time with incomplete data. All data updates being pushed into the SGID will have removed empty geometries and duplicate records with [Sweeper](https://github.com/agrc/sweeper) or another automated process.
 
-- Update the metadata
-  - Last update date
+All edits made to the internal SGID will be captured in `Last update date` in the metadata, in the SGID Update log, and as an update on the AGRC website data page.
 
-- Remove records with empty geometry
-  - Run [Sweeper](https://github.com/agrc/sweeper) to report and optionally remove geometry errors
+## Removing SGID Products
+{: .text-left }
 
-- Remove duplicate records (duplicate geometry and duplicate attributes)
-  - Run [Sweeper](https://github.com/agrc/sweeper) to report and optionally remove duplicate record
-
-<div class="grid pop">
-  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-</div>
+When data or services are deprecated, the [Cemetery](https://github.com/agrc/cemetery) project is used.
