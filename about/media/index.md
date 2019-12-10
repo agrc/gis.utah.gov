@@ -27,6 +27,7 @@ categories: []
     <ul class="dotless fa-ul" style="width: 550px">
       <li><span class="fa-li"><i class="fa fa-check-square" style="color:#2ecc40"></i></span>Use these logos to advertise that your product (maps, apps, etc) was built with AGRC data and services</li>
       <li><span class="fa-li"><i class="fa fa-check-square" style="color:#2ecc40"></i></span>Modify the colors of the logo to match your product</li>
+      <li><span class="fa-li"><i class="fa fa-check-square" style="color:#2ecc40"></i></span>Modify the size to fit your product</li>
     </ul>
   </div>
   <div class="text-left">
