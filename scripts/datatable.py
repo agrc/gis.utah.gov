@@ -149,7 +149,7 @@ title: SGID Index
 
 
 if __name__ == '__main__':
-    gc = pygsheets.authorize(service_file='client_secret.json')
+    gc = pygsheets.authorize(service_file='client-secret.json')
 
     data = get_sheet_data(gc, '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ', 'SGID Stewardship Info')
     data = [x for x in data if len(x['name'].strip()) > 0]
