@@ -33,7 +33,7 @@ categories: []
   <div class="text-left">
     <h3>Don'ts</h3>
     <ul class="dotless fa-ul" style="width: 550px">
-      <li><span class="fa-li"><i class="fa fa-window-close" style="color:#ff4136"></i></span>Modify the shape or dimensions of the logo</li>
+      <li><span class="fa-li"><i class="fa fa-window-close" style="color:#ff4136"></i></span>Modify the shape, dimensions, or text of the logo</li>
       <li><span class="fa-li"><i class="fa fa-window-close" style="color:#ff4136"></i></span>Add your own text or images to the logo</li>
     </ul>
   </div>
