@@ -12,7 +12,7 @@ categories: []
     <div class="flex card__content">
       <img src="{% link about/media/agrc.png %}" alt="Tiara" style="padding: 1em; align-self: center">
     </div>
-    <a href="{% link about/media/agrc.zip %}" class="card__action text-center"><i class="fa fa-download"></i> Download tiara</a>
+    <a href="{% link about/media/agrc.zip %}" class="card__action text-center"><i class="fa fa-download"></i> Download tiara vertical</a>
   </div>
   <div class="flex flex--col card">
     <div class="flex card__content">
