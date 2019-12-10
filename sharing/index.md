@@ -33,22 +33,22 @@ We can link to existing services from our [SGID Index]({% link data/sgid-index/i
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc text="If you work on any of these datasets please get in touch with " hide-punctuation=true %}{% endcapture %}
 
-The SGID database is the source of truth for GIS data in Utah. It stores all of the [most important and vital](https://docs.google.com/spreadsheets/d/1FNCvSQxgQbFG--k3ZapscsTapbrxtSGlKqMcMLCsTYs/edit#gid=0) GIS data. SGID Open Data and mapserv all get their data from this source. Listed below are the layers we strive to keep current through partnerships with county and local government. {{contact}} so we can help improve Utah GIS data.
+The SGID database is the source of truth for GIS data in Utah. It stores all of the [most important and vital](https://docs.google.com/spreadsheets/d/1FNCvSQxgQbFG--k3ZapscsTapbrxtSGlKqMcMLCsTYs/edit#gid=0) GIS data. SGID Open Data and mapserv all get their data from this source. Listed below are the core layers we strive to keep current through partnerships with county and local government. {{contact}} so we can help improve Utah GIS data.
 
-### Primary Datasets
+### Primary Core Datasets
 {: .text-left }
 
-- [Road Centerlines]({% link sharing/foundational-data/index.md %}#road_centerlines)
-- [Address Points]({% link sharing/foundational-data/index.md %}#address_points)
-- [Parcels]({% link sharing/foundational-data/index.md %}#parcels)
+- [Road Centerlines]({% link sharing/core-data/index.md %}#road_centerlines)
+- [Address Points]({% link sharing/core-data/index.md %}#address_points)
+- [Parcels]({% link sharing/core-data/index.md %}#parcels)
 {: .dotless }
 
-### Secondary Datasets
+### Secondary Core Datasets
 {: .text-left}
 
-- [Boundaries]({% link sharing/foundational-data/index.md %}#boundaries)
-- [Building Footprints]({% link sharing/foundational-data/index.md %}#building_footprints)
-- [Trails]({% link sharing/foundational-data/index.md %}#trails)
+- [Boundaries]({% link sharing/core-data/index.md %}#boundaries)
+- [Building Footprints]({% link sharing/core-data/index.md %}#building_footprints)
+- [Trails]({% link sharing/core-data/index.md %}#trails)
 {: .dotless}
 
-Please read about the [desired schema and attribute information]({% link sharing/foundational-data/index.md %}) we would like to provide with these data.
+Please read about the [desired schema and attribute information]({% link sharing/core-data/index.md %}) we would like to provide with these data.

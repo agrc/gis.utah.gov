@@ -1,12 +1,11 @@
 ---
-layout: page_nocrumb
 tags:
   - sharing
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 date: 2017-01-26 23:40:06
-title: State - Local GIS Data Partnerships
+title: Core Data State and Local Partnerships
 categories: []
 ---
 
