@@ -21,5 +21,19 @@ categories: []
     <a href="{% link about/media/agrc_horizontal.zip %}" class="card__action text-center"><i class="fa fa-download"></i> Download tiara horizontal</a>
   </div>
 </div>
+<div class="flex flex--center" style="justify-content: space-evenly;">
+  <div class="text-left">
+    <h3>Do's</h3>
+    <ul class="dotless fa-ul" style="width: 550px">
+      <li><span class="fa-li"><i class="fa fa-check-square" style="color:#2ecc40"></i></span>Use these logos to advertise that your product (maps, apps, etc) was built with AGRC data and services</li>
+      <li><span class="fa-li"><i class="fa fa-check-square" style="color:#2ecc40"></i></span>Modify the colors of the logo to match your product</li>
+    </ul>
+  </div>
+  <div class="text-left">
+    <h3>Don't</h3>
+    <ul class="dotless fa-ul" style="width: 550px">
+      <li><span class="fa-li"><i class="fa fa-window-close" style="color:#ff4136"></i></span>Modify the shape or dimensions of the logo</li>
+      <li><span class="fa-li"><i class="fa fa-window-close" style="color:#ff4136"></i></span>Add your own text or images to the logo</li>
+    </ul>
   </div>
 </div>
