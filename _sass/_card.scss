@@ -1,0 +1,26 @@
+.card {
+  height: 250px;
+  width: 550px;
+  border: 1px solid $border-grey;
+  justify-content: flex-end;
+  margin: 1em;
+
+  &__content {
+    align-items: center;
+    justify-content: center;
+    flex:auto
+  }
+  &__action {
+    font-weight: bolder;
+    border-top: 1px solid $border-grey;
+    padding: 1em;
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+      background-color: $brand-color;
+      color: $base-background-color;
+      text-decoration: none;
+    }
+  }
+}
