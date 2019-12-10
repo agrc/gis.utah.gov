@@ -29,3 +29,9 @@ AGRC’s guidelines for using the Open SGID database.
 {: .text-left}
 
 Citation requirements for high-resolution imagery licensed from Google and Hexagon.
+AGRC’s policy for creating, editing, maintaining, and removing data in the SGID database.
+
+#### [Basic Metadata Guidelines]({% link about/policy/metadata/index.md %})
+{: .text-left}
+
+AGRC’s guidelines for metadata for data in the SGID database.

@@ -27,7 +27,7 @@ The data and services provided by AGRC is licensed under a [Creative Commons Att
 AGRC requests that where possible and practical, **appropriate attribution** shall be made by users of this website, data, or any other services provided by AGRC with the following criteria:
 
 - an appropriate statement, reflecting this disclaimer be used on all products using SGID geospatial data as a source, and that a currency date and stewardship credit for the data be included on the map; and
-- standards-compliant and/or [search engine-optimized (SEO) metadata]({% link gis-data-sharing/metadata/index.md %}), where available, be included with any distribution of all geospatial data
+- standards-compliant and/or [search engine-optimized (SEO) metadata]({% link about/policy/metadata/index.md %}), where available, be included with any distribution of all geospatial data
 
 Please add attribution with a logo from our [media resources]({% link about/media/index.md %}) page.
 
