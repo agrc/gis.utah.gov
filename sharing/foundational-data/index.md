@@ -15,7 +15,7 @@ Statewide GIS map data layers fulfill a critical need for many organizational bu
 | 911 & NextGen 911 (forthcoming) | Blue Stakes (811) Statewide Utility Notification | Utah Department of Transportation| State & Regional Economic Development |
 | Complete Count Preparation for 2020 Census | Utah State Tax Commission | Utah Department of Natural Resources | Statewide Elections Management & Redistricting |
 
-AGRC works with partner agencies and local government toward standardization and interoperability of GIS data resources for reliable and consistent information at a statewide level. The State Geographic Informformation Database provides a 'one-stop-shop' to make discovery, access, and publishing of GIS data efficient.
+AGRC works with partner agencies and local government toward standardization and interoperability of GIS data resources for reliable and consistent information at a statewide level. The State Geographic Information Database provides a 'one-stop-shop' to make discovery, access, and publishing of GIS data efficient.
 
 AGRC has also led partnership efforts to fund, procure, and distribute additional GIS data products, such as aerial photography and lidar purchased through cooperative efforts. Below are are examples of some of those products:
 
@@ -23,8 +23,6 @@ AGRC has also led partnership efforts to fund, procure, and distribute additiona
 | Address Geocoding Web Service | Lidar Acquisition (Statewide 3DEP-Type Program) | Lidar Acquisition (3DEP-type Projects) |
 | Realtime GPS Correction Service | Highway Milepost Reference | Highway Exit Numbers and Names |
 | State Agency Data Layers in SGID (DNR, DEQ, SITLA) | USGS Topo Quad Web Services | State Cadastral Grant Funding |
-
-GIS data can be shared to AGRC for publication in the State Geographic Information Database (and related web serves) via [email]({{ "/about/contact/" | prepend: site.baseurl }}), [Dropbox](https://www.dropbox.com/), [ShareFile](https://www.sharefile.com/), or we can pull from an ArcSDE connection or web-accessible file geodatabase or shapefile (https://, ftp://, etc.).
 
 Listed below are the layers we hope to complete and keep current through partnership with county and local government, and the desired attribute information.
 
