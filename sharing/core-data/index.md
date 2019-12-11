@@ -51,17 +51,12 @@ Listed below are the layers we hope to complete and keep current through partner
 ![Road Centerlines]({{"/images/90x90_utah-gis-highway-lrs-udot.png"| prepend:site.baseurl}}){: .pull-right .outline }
 
 This is a multi-purpose statewide roads dataset for cartography and range based-address location. View our
-[Transportation Data Model](https://drive.google.com/file/d/0Bz18jufMWioiU25icDNoQWlJa2M/view),
-[attribute descriptions and definitions](https://docs.google.com/document/d/1ojjqCa1Z6IG6Wj0oAbZatoYsmbKzO9XwdD88-kqm-zQ/edit),
-and [download the Transportation Data Model schema](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/UtahRoadsDataSchema/UtahRoadsDataSchema_gdb.zip).
+[Road Centerline Data Model](https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546) to see a complete list of field names, descriptions, and domains. You can also [download the Road Centerline Data Model schema](https://drive.google.com/uc?export=download&id=0ByStJjVZ7c7mMXdRSWk0SWhncXc) in File Geodatabase format.
 
 Listed below are considered the minimum attributes:
 
-| PREDIR | STREETNAME | STREETTYPE | SUFDIR |
-| L_F_ADD | L_T_ADD | R_F_ADD | R_T_ADD |
-| ALIAS1 | ALIAS1TYPE | ALIAS2 | ALIAS2TYPE |
-| ACSALIAS | ACSNAME | ACSSUF | CLASS |
-| MODIFYDATE | | | |
+| PREDIR | NAME | POSTTYPE | POSTDIR |
+| FROMADDR_L | TOADDR_L | FROMADDR_R | TOADDR_R |
 
 ### [Address Points]({{"/data/location/address-data/" | prepend:site.baseurl}} "Address Points page"){: #address_points }
 
