@@ -13,33 +13,31 @@ title: Digital Orthophoto Quadrangle
 categories: []
 SCSPhotomaps:
   downloads:
-    - url: ftp://ftp.agrc.utah.gov/Imagery/UGS_SCS_Historical/
-      label: Imagery Tiles
+    - url: https://raster.utah.gov/?cat=Historical
+      label: Imagery tiles via interactive map
   updates:
     - 1936-1952
 1970BLM:
   downloads:
     - url: https://raster.utah.gov/?cat=DOQ%201970s%20(1m)
-      label: Download imagery tiles via interactive map
+      label: Imagery tiles via interactive map
   updates:
     - 1970
 1977DOQ:
   downloads:
-    - url: ftp://ftp.agrc.utah.gov/Historical/SLCo/
+    - url: https://raster.utah.gov/?cat=DOQ%201977%20(1m)
       label: 1977 Salt Lake County DOQs
   updates:
     - 1977
 1990DOQ:
   downloads:
-    - url: ftp://ftp.agrc.utah.gov/Imagery/DOQ/
-      label: DOQs by Quad
-    - url: ftp://ftp.agrc.utah.gov/DOQMrSid/
-      label: DOQs by County
+    - url: https://raster.utah.gov/?cat=DOQ%201990s%20(1m)
+      label: DOQs by Quad or County
   updates:
     - Mid 1990's
 2003DOQ:
   downloads:
-    - url: ftp://ftp.agrc.utah.gov/DOQ_Color/
+    - url: https://raster.utah.gov/?cat=Color%20DOQ%202003%20(1m)
       label: Iron and Beaver County Color DOQs
   updates:
     - 2003
@@ -54,7 +52,7 @@ SCSPhotomaps:
 name="DOQs"
 stewards="AGRC"
 type="Imagery"
-webapp="https://raster.utah.gov/?catGroup=DOQ%201990s%20(1m),DOQ%201977%20(1m),Color%20DOQ%202003%20(1m)&title=Utah%20DOQ%20Imagery"
+webapp="https://raster.utah.gov/?catGroup=DOQ%201990s%20(1m),DOQ%201977%20(1m),Color%20DOQ%202003%20(1m),Historical&title=Utah%20DOQ%20Imagery"
 abstract="A Digital Orthophoto Quadrangle (DOQ) is a digital image that has the properties of an orthographic projection, derived from a digitized perspective aerial photograph or other remotely sensed image data by differential rectification so that image displacements caused by camera tilt and terrain relief are removed. The DOQ combines the image characteristics of the original photograph with the georeferenced qualities of a map. Ground features are displayed in their true position, allowing for the direct measurement of distance, areas, angles, and positions." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -80,10 +78,10 @@ abstract="A Digital Orthophoto Quadrangle (DOQ) is a digital image that has the 
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>AGRC has a statewide coverage of 1-meter resolution Black and White Digital Orthophoto Quads (DOQs). All tiles have a UTM NAD83 Zone 12 North meters projection. The <code>.jpg</code> files are usually between 30 to 40 MB. <strong>The <code>.met</code> file is all the original header information from the image and contains the dates the images were flown and photographed.</strong> Some DOQs have <a href="{{ "/downloads/DOQ_two_vintages.txt" | prepend: site.baseurl }}">2 vintages</a> of dates the images were flown. Usually one image will be from 1993 and another 1997 or newer. To retrieve these older files go to the <a href="ftp://ftp.agrc.utah.gov/DOQ/">FTP site</a> and look for the Q number of interest. Refer to <a href="{{ "/downloads/Find_a_DOQ.txt" | prepend: site.baseurl }}">Find_a_DOQ.txt</a> for quadrangle names and associated AGRC Q number.</p>
+    <p>AGRC has a statewide coverage of 1-meter resolution Black and White Digital Orthophoto Quads (DOQs). All tiles have a UTM NAD83 Zone 12 North meters projection. The <code>.jpg</code> files are usually between 30 to 40 MB. <strong>The <code>.met</code> file is all the original header information from the image and contains the dates the images were flown and photographed.</strong> Some DOQs have <a href="{{ "/downloads/DOQ_two_vintages.txt" | prepend: site.baseurl }}">2 vintages</a> of dates the images were flown. Usually one image will be from 1993 and another 1997 or newer. Refer to <a href="{{ "/downloads/Find_a_DOQ.txt" | prepend: site.baseurl }}">Find_a_DOQ.txt</a> for quadrangle names and associated AGRC Q number.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-        <li><a href="ftp://ftp.agrc.utah.gov/Imagery/DOQ/DOQ_Info.txt">DOQ Information Sheet</a>
+        <li><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/doq/DOQ_Info.txt">DOQ Information Sheet</a>
         <li><a href="https://raster.utah.gov/?cat=DOQ%201990s%20(1m)">Download - DOQ Interactive Map</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.imagery %}</p>
@@ -131,10 +129,10 @@ abstract="A Digital Orthophoto Quadrangle (DOQ) is a digital image that has the 
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>AGRC has 1-meter Black and White Soil Conservation Service (SCS) Photomaps from 1936-1952. This is not a statewide coverage. The Photomaps have a UTM NAD27 projection. The date the photo was taken can be found for some of the tiles in the <code>Year</code> field of the <a href="ftp://ftp.agrc.utah.gov/Imagery/UGS_SCS_Historical/UGS_SCS_Historical_Index.zip">tile-index</a>.</p>
+    <p>AGRC has 1-meter Black and White Soil Conservation Service (SCS) Photomaps from 1936-1952. This is not a statewide coverage. The Photomaps have a UTM NAD27 projection. The date the photo was taken can be found for some of the tiles in the <code>Year</code> field of the <a href="https://storage.googleapis.com/state-of-utah-ugs-historic-imagery/imagery/SCS/UGS_SCS_Historical_Index.zip">tile-index</a>.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="{{ "ftp://ftp.agrc.utah.gov/Imagery/UGS_SCS_Historical/UGS_SCS_Historical_Index.zip" }}">A Shapefile of the available imagery tile boundaries</a>
+      <li><a href="{{ "https://raster.utah.gov/?cat=Historical" }}">Download imagery tiles via interactive map</a>
     <ul>
   </div>
   {% include packagedata.html name="SCSPhotomaps"
