@@ -19,14 +19,6 @@ categories: []
       label: '500 Foot Contours: Shapefile'
   updates:
     - This dataset has not been updated recently.
-2Meter:
-  downloads:
-    - url: ftp://ftp.agrc.utah.gov/SLCo_2m_Contours/
-      label: Individual tiles
-    - url: ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/ELEVATION/UnpackagedData/Contours_2Meter_SLCounty/_Statewide/
-      label: All Salt Lake County Contours (1.4 GB File GDB)
-  updates:
-    - Unknown
 ContourPolygons:
   downloads:
     - url: https://drive.google.com/open?id=0B6R_P-pQXOcsTkJxb1hPME9wRUU
@@ -56,21 +48,6 @@ abstract="This datasets contain a statewide coverage of 500 foot contours derive
     <p>{% include contact.html subject=page.title contact=site.data.contacts.contours %}</p>
   </div>
   {% include packagedata.html name="500FootContours" info=page.500FootContours %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="2Meter">
-      <a href="#2Meter" class="anchor--link">Salt Lake County 2 Meter Contours</a>
-    </h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/SLCocontours.jpg %}" alt="Contours" />
-    <p>AGRC has 2 meter contours derived from 2 meter LiDAR collected in 2006 for Salt Lake County. No smoothing has been applied to the contour data but a <code>Smooth Line</code> in ArcMap with a <code>50 meter Smoothing Tolerance</code> cleans the data up nicely. Although the data is referred to as 2 meter, the contour intervals are .5 meter.</p>
-    <p>To download areas of the contours refer to this <a href="{% link /downloads/SLCo_2m_Contours.html %}">image map</a> to help find your ares of interest. Or this <a href="ftp://ftp.agrc.utah.gov/SLCo_2m_Contours/SLCo_2m_Index.zip">shapefile index</a> can be used to determine what files to download. These contour shapefiles cover 4,000x4,000 meter blocks.
-    This data has a UTM NAD83 meters projection.</p>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.contours %}</p>
-  </div>
-  {% include packagedata.html name="2Meter" info=page.2Meter %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
