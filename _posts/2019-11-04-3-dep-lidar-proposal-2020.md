@@ -32,7 +32,7 @@ Proposed Projects
 - Sanpete and Sevier Counties (QL2) - 2,397
 - Garfield County (QL2) - 2,891
 
-A shapefile of the proposed Lidar coverage areas is available for [download](ftp://ftp.agrc.utah.gov/LiDAR/3DEP_Lidar_Proposal_2020.zip).
+A shapefile of the proposed Lidar coverage areas is available for [download](https://drive.google.com/a/utah.gov/uc?id=1GgSYIfC_XMFlxtfr6w4w9pa-EyyhbBVN&export=download).
 
 *[BAA]: Broad Agency Announcement
 *[USGS]: United States Geological Survey
