@@ -26,4 +26,5 @@ The proposed areas break down to the following square mileages by USGS quality l
 - QL1 (USGS) – 380
 - QL2 (USGS) - 4,310
 
- A shapefile of the proposed Lidar coverage areas is available for [download](ftp://ftp.agrc.utah.gov/LiDAR/3DEP_Lidar_Proposal_2018.zip).
+ A shapefile of the proposed Lidar coverage areas is available for [download](
+https://drive.google.com/a/utah.gov/uc?id=1iCxenICL-GKWu-6zWMiYtgSXvD9H6o4g&export=download).
