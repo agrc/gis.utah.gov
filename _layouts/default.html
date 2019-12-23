@@ -208,8 +208,13 @@
         {%- if site.github -%}
         <div class="awesome text-center">
             build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
+
         </div>
         {%- endif -%}
+        <div class="awesome text-center">
+          <a href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-light.svg"/>
+          </a>
       </div>
     </div>
     <div class="state-footer">
