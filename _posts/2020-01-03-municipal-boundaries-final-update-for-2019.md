@@ -1,3 +1,18 @@
+---
+title: 'Municipal Boundaries Final update for 2019'
+author:
+  display_name: Mike Heagin
+  email: mheagin@utah.gov
+date: 2020-01-03 17:19:47
+categories:
+  - SGID Blog
+tags:
+  - Municipality
+  - Boundaries
+  - Annexations
+  - 
+---
+
 Once again we come to the end of the year, nothing we can do to prevent it, time moves on. 
 And so does progress, as the folks in Utah County know, they are growing all the time. They lead again in the number of annexation this year with 28, not too far behind is Cache County with 20. Both were far ahead of the other counties out there, almost three times the number of annexations.
 Again this year we are welcoming a new city to the state, welcome  to the Town of Brighton. Many are familiar with the area, now they are an incorporated city as well as a great place to ski and tour.
