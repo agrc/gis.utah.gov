@@ -14,14 +14,14 @@ title: 2018 Uintah Basin and Heber Valley LiDAR Elevation Data
 categories: []
 ---
 
-![Sample]({{ "/images/lidar_heber_uintah_basin_2018.png" | prepend: site.baseurl }}){: .flex .flex--center .outline }
+![Sample]({{% link images/lidar_heber_uintah_basin_2018.png %}}){: .flex .flex--center .outline }
 
-[![Project area map]({{"/images/lidar_heber_uintah_basin_2018_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_heber_uintah_basin_2018_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![Project area map]({{% link images/lidar_heber_uintah_basin_2018_coverage_sm.png %}} "click for map")]({{% link images/lidar_heber_uintah_basin_2018_coverage.png %}}){:.inline-text-right}
 
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During 2018 the Federal Emergency Management Agency (FEMA) acquired [~4,693 square miles]({{ "/images/lidar_heber_uintah_basin_2018_coverage.png/" | prepend: site.baseurl }}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Northern Utah that include the Uintah Basin (QL2) and Heber Valley (QL1). The .5 and 1 meter resolution bare earth DEMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, are available from [The National Map](https://viewer.nationalmap.gov/basic/) {{ contact }} This elevation data was collected between June and October, 2018 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection. The project was acquired two weeks before the [Dollar Ridge Fire](https://inciweb.nwcg.gov/incident/5881/) started. [Postfire LiDAR and aerial photography of the Strawberry River]({{"/data/elevation-and-terrain/2019-lidar-strawberry-river/" | prepend:site.baseurl}}), collected August 15-18, 2019 is also available.
+During 2018 the Federal Emergency Management Agency (FEMA) acquired [~4,693 square miles]({{% link images/lidar_heber_uintah_basin_2018_coverage.png %}}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Northern Utah that include the Uintah Basin (QL2) and Heber Valley (QL1). The .5 and 1 meter resolution bare earth DEMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, are available from [The National Map](https://viewer.nationalmap.gov/basic/) {{ contact }} This elevation data was collected between June and October, 2018 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection. The project was acquired two weeks before the [Dollar Ridge Fire](https://inciweb.nwcg.gov/incident/5881/) started. [Postfire LiDAR and aerial photography of the Strawberry River]({{% link data/elevation-and-terrain/2019-lidar-strawberry-river/index.md %}}), collected August 15-18, 2019 is also available.
 
 <ul class="dotless">
   <li>
