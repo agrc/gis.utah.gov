@@ -16,7 +16,7 @@ Once again we come to the end of the year, nothing we can do to prevent it, time
 
 To review the documents you can go here: [Utah Lt. Governor Municipal Certifications](https://municert.utah.gov/)
 
-Following are the changes and annexations since October 15th, 2019 listed by County and City:
+The following table shows the changes and annexations (listed by county and city) since October 15, 2019:
 
 | County | City | Number of Changes |
 | --- | --- | --- |
