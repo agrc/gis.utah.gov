@@ -17,10 +17,8 @@ Once again we come to the end of the year, nothing we can do to prevent it, time
 And so does progress, as the folks in Utah County know, they are growing all the time. They lead again in the number of annexation this year with 28, not too far behind is Cache County with 20. Both were far ahead of the other counties out there, almost three times the number of annexations.
 Again this year we are welcoming a new city to the state, welcome  to the Town of Brighton. Many are familiar with the area, now they are an incorporated city as well as a great place to ski and tour.
 Thanks to all the hard working Recorders and staff out there in the counties and towns. With your help the Lt. Governor’s Office and AGRC processed 104, annexation, adjustments, disconnections and incorporations. Special thanks to Emery and Weber Counties for helping get the state data up to date, by sending us a couple missing annexations.
-As always feel free to check out all the changes and make sure your boundaries are where you think they should be, view them here: Utah Municipality Modifications.
-(link - https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63 )
-To review the documents you can go here: Utah Lt. Governor Municipal Certifications 
-(link - https://municert.utah.gov/) 
+As always feel free to check out all the changes and make sure your boundaries are where you think they should be, view them here: [Utah Municipality Modifications](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63).
+To review the documents you can go here: [Utah Lt. Governor Municipal Certifications](https://municert.utah.gov/)
 
 Following are the changes and annexations since October 15th, 2019 listed by County and City:
 
