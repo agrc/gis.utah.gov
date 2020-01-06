@@ -46,14 +46,13 @@ USGSNationalElevationDataset:
     <ul class="dotless">
       <li><strong>Name</strong> - the name of the map
       <li><strong>OHIO_CODE</strong> - code used by USGS
-      <li><strong>TILE</strong> - the image tile name on FTP site
-      <li><strong>PATH</strong> - the directory where the topographic map tile resides on the FTP site
+      <li><strong>TILE</strong> - the image tile name
+      <li><strong>PATH</strong> - the directory where the topographic map tile resides
     </ul>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="{{ "/data/elevation-and-terrain/#USGSDEM" | prepend: site.baseurl }}">10, 30 and 90 meter USGS DEMs</a>
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.INDICES.USGS24KQuads.xml">FGDC format metadata</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
@@ -70,15 +69,14 @@ USGSNationalElevationDataset:
     <p>The USGS 24K tile index can be used to determine the 7.5 minute, 1:24,000 scale boundaries of the 10 and 30 meter USGS NED tiles for Utah.</p>
     <p>Each tile index contains the following attribute fields. The 10 meter USGS NED tiles are named according the TILE attribute:</p>
     <ul class="dotless">
-      <li><strong>TILE</strong> - the image tile name on FTP site
-      <li><strong>PATH</strong> - the directory where the topographic map tile resides on the FTP site
+      <li><strong>TILE</strong> - the image tile name
+      <li><strong>PATH</strong> - the directory where the topographic map tile resides
     </ul>
     <p>In addition to 10 meter NED available by 24K quad, there are county mosaics of the 10 and 30 meter datasets.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). Changes and updates are not planned to this dataset. There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="{{ "/data/elevation-and-terrain/#USGSNED" | prepend: site.baseurl }}">Download 10 and 30 meter USGS NED DEMs</a>
-      <li><a href="ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/Metadata/SGID10.INDICES.NED10_Quads.xml">View FGDC format metadata</a><br />
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
