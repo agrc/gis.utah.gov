@@ -27,12 +27,12 @@ The British took mapping to the next level in the mid to late 1700s with the Bri
 
 <div class="flex flex--around" style="align-items: flex-start">
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/ord_survey_uk_history.jpg" | prepend: site.baseurl }}" alt="The British Ordinance Survey" />
+    <img class="caption__image" src="{% link images/ord_survey_uk_history.jpg %}" alt="The British Ordinance Survey" />
     <figcaption class="caption__text">The British Ordinance Survey (Winfields Outdoors Image 1 from “Interview With Ordnance Survey - History & Future of OS Maps”)</figcaption>
   </figure>
   <figure class="caption">
-    <a href="{{ "/images/Great_Trigonometrical_Survey_India_1870.jpg" | prepend: site.baseurl }}" title="click to see the full sized image">
-      <img class="caption__image" src="{{ "/images/Great_Trigonometrical_Survey_India_1870_sm.jpg" | prepend: site.baseurl }}" alt="PLSS Principal Meridians">
+    <a href="{% link images/Great_Trigonometrical_Survey_India_1870.jpg %}" title="click to see the full sized image">
+      <img class="caption__image" src="{% link images/Great_Trigonometrical_Survey_India_1870_sm.jpg %}" alt="PLSS Principal Meridians">
     </a>
     <figcaption class="caption__text">The Great Trigonometrical Survey India 1870 (Daniel Fernández Pascual Great Trigonometrical Survey of India 2012)</figcaption>
   </figure>
@@ -47,7 +47,7 @@ Without the availability of the Ordnance maps and the advancements made through 
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/choleramap.png" | prepend: site.baseurl }}" alt="John Snow Cholera Map" />
+    <img class="caption__image" src="{% link images/choleramap.png %}" alt="John Snow Cholera Map" />
     <figcaption class="caption__text">John Snow Cholera Map 1854 (Micronautes Broad Street Map/Broadwick Street Water Pump 2017)</figcaption>
   </figure>
 </div>
@@ -61,11 +61,11 @@ His device allowed the USCB to process and store the results on punch cards, ult
 
 <div class="flex flex--around" style="align-items: flex-start">
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/tabulation_machine.png" | prepend: site.baseurl }}" alt="Hollerith's Tabulation Machine" />
+    <img class="caption__image" src="{% link images/tabulation_machine.png %}" alt="Hollerith's Tabulation Machine" />
     <figcaption class="caption__text">Hollerith's Tabulation Machine (Adam Schuster Proto IBM 2007)</figcaption>
   </figure>
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/hollerith_punch_card.png" | prepend: site.baseurl }}" alt="Hollerith's Punch Card" />
+    <img class="caption__image" src="{% link images/hollerith_punch_card.png %}" alt="Hollerith's Punch Card" />
     <figcaption class="caption__text">Hollerith's Punch Card (Library of Congress Image of punched card of Herman Hollerith 1895)</figcaption>
   </figure>
 </div>
@@ -90,7 +90,7 @@ The development of CGIS was also when IBM entered the GIS picture: in the mid 19
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/cgis.png" | prepend: site.baseurl }}" alt="CGIS Hardware" />
+    <img class="caption__image" src="{% link images/cgis.png %}" alt="CGIS Hardware" />
     <figcaption class="caption__text">CGIS Hardware (Michael DeMers CGIS Screenshot 2013)</figcaption>
   </figure>
 </div>
@@ -108,7 +108,7 @@ The staff and students at the Lab lived and breathed mapping. They spent countle
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/symap_harvard.png" | prepend: site.baseurl }}" alt="SYMAP Connecticut Map" />
+    <img class="caption__image" src="{% link images/symap_harvard.png %}" alt="SYMAP Connecticut Map" />
     <figcaption class="caption__text">SYMAP Connecticut Map (M. Friendly and D.J. Denis Early SYMAP image of Connecticut 2001)</figcaption>
   </figure>
 </div>
@@ -132,7 +132,7 @@ Initially, ESRI used the mainframe computer at the University of California to d
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/pc_arcinfo_1986.jpg" | prepend: site.baseurl }}" alt="ARC/INFO on PC 1986" />
+    <img class="caption__image" src="{% link images/pc_arcinfo_1986.jpg %}" alt="ARC/INFO on PC 1986" />
     <figcaption class="caption__text">ARC/INFO on PC in 1986 (ArcGIS 1986 PC ARC/INFO Released)</figcaption>
   </figure>
 </div>
@@ -143,7 +143,7 @@ Since the early 1970s, ESRI has expanded from a nonprofit with a staff of 15 to 
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/esri_theearlydays.jpg" | prepend: site.baseurl }}" alt="The Early Days at ESRI" />
+    <img class="caption__image" src="{% link images/esri_theearlydays.jpg %}" alt="The Early Days at ESRI" />
     <figcaption class="caption__text">The Early Days at ESRI (ArcGIS 1986 PC ARC/INFO Released)</figcaption>
   </figure>
 </div>
@@ -167,7 +167,7 @@ It's difficult to overstate how important TIGER files were, not only to the 1990
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/census_tiger_logo.png" | prepend: site.baseurl }}" alt="The Census TIGER" />
+    <img class="caption__image" src="{% link images/census_tiger_logo.png %}" alt="The Census TIGER" />
     <figcaption class="caption__text">(USCB Logo for the United States Census Bureau's TIGER (Topologically Integrated Geographic Encoding and Referencing) map data format</figcaption>
   </figure>
 </div>
@@ -185,7 +185,7 @@ Demand for maps with greater detail led to the production of the 1:24,000-scale,
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{{ "/images/usgs_7halfmin_uppercorner.jpg" | prepend: site.baseurl }}" alt="USGS 7.5 Minute Map" />
+    <img class="caption__image" src="{% link images/usgs_7halfmin_uppercorner.jpg %}" alt="USGS 7.5 Minute Map" />
     <figcaption class="caption__text">USGS 7.5 Minute Map (HowToWilderness.com Aerial Photo Stowe VT)</figcaption>
   </figure>
 </div>
@@ -227,8 +227,8 @@ The current GIS platform is built on web applications, shareable web services, a
 
 <div class="flex flex--around">
   <figure class="caption">
-    <a href="{{ "/images/201909KeyMomentsInfographic.jpg" | prepend: site.baseurl }}" title="click to see the full sized image">
-      <img class="caption__image" src="{{ "/images/201909KeyMomentsInfographic_sm.jpg" | prepend: site.baseurl }}" alt="Key Moments in GIS Historically">
+    <a href="{% link images/201909KeyMomentsInfographic.jpg %}" title="click to see the full sized image">
+      <img class="caption__image" src="{% link images/201909KeyMomentsInfographic_sm.jpg %}" alt="Key Moments in GIS Historically">
     </a>
   </figure>
 </div>

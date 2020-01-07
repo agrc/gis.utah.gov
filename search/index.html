@@ -35,13 +35,13 @@ tags: []
 var data = [{%- for post in site.posts -%}
   {
     "title": "{{ post.title | escape | downcase }}",
-    "href": "{{ post.url | prepend: site.baseurl }}",
+    "href": "{% link {{ post.path }} %}",
     "date": "{{ post.date | date: "%b %-d, %Y" }}"
   }, {%- endfor -%}
   false,{%- for post in site.pages -%}
   {
     "title": "{{ post.title | escape | downcase }}",
-    "href": "{{ post.url | prepend: site.baseurl }}",
+    "href": "{% link {{ post.path }} %}",
     "date": "{{ post.date | date: "%b %-d, %Y" }}"
   },{%- endfor -%},
   false

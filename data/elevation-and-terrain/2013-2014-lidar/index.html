@@ -27,7 +27,7 @@ LiDARWasatchFront:
     - 2014
 ---
 {% capture abstract %}
-During the Fall of 2013 and the Spring of 2014 AGRC and partners acquired <a href="{{ "/images/WasatchFront_LiDAR_2013-2014_Extent.png" | prepend: site.baseurl }}">1,422 square miles</a> of 8 points per meter Quality Level 1 LiDAR for areas along the Wasatch Front including the urbanized areas of Salt Lake County and Utah County and areas along the Wasatch Fault from Sanpete County north into Oneida County in southeast Idaho. The .5 meter resolution bare earth hydro flattened DTMs and first-return/highest-hit DSMs in .img format have a 9.25cm vertical RMSE accuracy. The LAS classified point clouds are also available {% include contact.html subject=page.title contact=site.data.contacts.elevation hide-punctuation=true text='by contacting' %} or from <a href='http://opentopo.sdsc.edu/datasetMetadata?otCollectionID=OT.122014.26912.1'>Open Topography</a>.  This elevation data has a <strong>UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12)</strong> projection.
+During the Fall of 2013 and the Spring of 2014 AGRC and partners acquired <a href="{% link images/WasatchFront_LiDAR_2013-2014_Extent.png %}">1,422 square miles</a> of 8 points per meter Quality Level 1 LiDAR for areas along the Wasatch Front including the urbanized areas of Salt Lake County and Utah County and areas along the Wasatch Fault from Sanpete County north into Oneida County in southeast Idaho. The .5 meter resolution bare earth hydro flattened DTMs and first-return/highest-hit DSMs in .img format have a 9.25cm vertical RMSE accuracy. The LAS classified point clouds are also available {% include contact.html subject=page.title contact=site.data.contacts.elevation hide-punctuation=true text='by contacting' %} or from <a href='http://opentopo.sdsc.edu/datasetMetadata?otCollectionID=OT.122014.26912.1'>Open Topography</a>.  This elevation data has a <strong>UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12)</strong> projection.
 {% endcapture %}
 {% include abstract.html
 name="Wasatch Front LiDAR Elevation Data"
@@ -49,7 +49,7 @@ abstract=abstract %}
       <li>Project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/WasatchFront_2013_2014_LiDAR_Report.zip">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/WasatchFront_2013_2014_LiDAR_Metadata.zip">Metadata</a>
       <li><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/WasatchFront_2013_2014_LiDAR_shp.zip">Shapefiles</a> of the project area, tile indices, and breaklines.</a>
       <li>LiDAR <em>derivative samples</em> (1GB file) [<a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/DerivativeSamples/LiDAR_Samples.zip">ArcMap</a> , <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/DerivativeSamples/LiDAR_Samples_CAD.zip">CAD</a>]
-      <li>For more information about LiDAR visit <a href="{{ "/data/elevation-and-terrain/exploring-lidar/" | prepend: site.baseurl }}">Exploring LiDAR</a>
+      <li>For more information about LiDAR visit <a href="{% link data/elevation-and-terrain/exploring-lidar/index.html %}">Exploring LiDAR</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>
   </div>
@@ -64,8 +64,8 @@ abstract=abstract %}
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <a alt="DTM Hillshade" href="{{ "/downloads/DTM2.jpg" | prepend: site.baseurl }}">
-      <img class="inline-text-left outline" src="{{ "/images/DTM.jpg" | prepend: site.baseurl }}" alt="dem" />
+    <a alt="DTM Hillshade" href="{% link downloads/DTM2.jpg %}">
+      <img class="inline-text-left outline" src="{% link images/DTM.jpg %}" alt="dem" />
     </a>
     <p>A Digital Terrain Model (DTM), commonly referred to as a DEM, is a digital file consisting of terrain elevations for ground positions at regularly spaced horizontal intervals. In this dataset features above the ground such as buildings and trees have been removed from the elevation model. The resolution of this data is .5 Meter and is sufficient for generating 1 foot contours. This data has a wide range of applications and is most commonly used in flood and hydro-logic modeling, geologic hazard mapping, contour line creation, and rectification of aerial photography and satellite imagery.</p>
   </div>
@@ -77,8 +77,8 @@ abstract=abstract %}
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <a alt="DSM Hillshade" href="{{ "/downloads/DSM.jpg" | prepend: site.baseurl }}">
-      <img class="inline-text-left outline" src="{{ "/images/DSM.jpg" | prepend: site.baseurl }}" alt="ned" />
+    <a alt="DSM Hillshade" href="{% link downloads/DSM.jpg %}">
+      <img class="inline-text-left outline" src="{% link images/DSM.jpg %}" alt="ned" />
     </a>
     <p> A Digital Surface Model (DSM) is similar to a DTM but features above the ground terrain have not been removed from the elevation model. The resolution of this data is .5 Meter. This data has a wide range of applications including analyzing solar potential, vegetation quantification, and building or surface feature delineation.</p>
   </div>
@@ -90,8 +90,8 @@ abstract=abstract %}
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <a alt="Point Cloud" href="{{ "/downloads/ptCloud.jpg" | prepend: site.baseurl }}">
-      <img class="inline-text-left outline" src="{{ "/images/ptCloud.jpg" | prepend: site.baseurl }}" alt="lidar" />
+    <a alt="Point Cloud" href="{% link downloads/ptCloud.jpg %}">
+      <img class="inline-text-left outline" src="{% link images/ptCloud.jpg %}" alt="lidar" />
     </a>
     <p>LiDAR is collected with laser pulses that return to the sensor and are stored as a point cloud. Each point in the cloud can be assigned an X,Y,Z, intensity, return number, RGB value etc. Each LiDAR point can also have classifications for landcover types (ex. ground, water, road, building, vegetation, etc.). The LAS point cloud files associated with this project have the following classifications yet further classification of the point cloud is possible:</p>
     <table>

@@ -7,7 +7,6 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-12-08 14:21:24 -0700
-title: DEQ Land-Related Contaminant and Cleanup Sites
 categories: []
 BFTARGETED:
   downloads:
@@ -131,11 +130,10 @@ FacilityUST:
     - Nightly
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{{ "/images/gallery/sgid/envirolandmain.png" | prepend: site.baseurl }}" alt="Land Locations" />
+  <img class="caption__image" src="{% link images/gallery/sgid/envirolandmain.png %}" alt="Land Locations" />
   <figcaption class="caption__text">DEQ Land Locations</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR3FKbTA2UDEwQWs"
-  name="DEQ Land-Related Contaminant and Cleanup Data"
+{% include abstract.html name="DEQ Land-Related Contaminant and Cleanup Data"
   stewards="Utah Department of Environmental Quality"
   webapp="https://enviro.deq.utah.gov/"
   abstract="US EPA and State designated hazardous materials storage sites and contamination clean up program sites including CERLA, National Priority List, Underground Storage Tanks (UST), Brownfields, Voluntary Cleanup (VCP), Tier 2, Toxic Release Inventory (TRI), User Oil Permitted Facilities, Formerly Used Defense (FUD), RCRA Large &amp; Small Quantity Hazardous Waste Generators, Solid Waste Facilities, and Enforceable Written Assurance sites. To view all DEQ geographic data online, see the <a href='https://enviro.deq.utah.gov/'>DEQ Interactive Map Viewer</a>." %}
@@ -146,11 +144,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirolargegenerators.png" | prepend: site.baseurl }}" alt="brownfields targeted map" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirolargegenerators.png %}" alt="brownfields targeted map" />
     <p>Environment.BFTARGETED contains the coordinates of Brownfields Projects targeted for cleanup. These locations were derived from maps and GPS data and represent sites, not contaminated areas. Brownfields are real property, the expansion, redevelopment, or reuse of which may be complicated by the presence or potential presence of a hazardous substance, pollutant, or contaminant.  Cleaning up and reinvesting in these properties takes development pressures off of undeveloped open land, and both improves and protects the environment. For more information see: <a href="https://www.epa.gov/brownfields/">https://www.epa.gov/brownfields/</a>.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.brownfields %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>
@@ -166,11 +163,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirosmallgenerators.png" | prepend: site.baseurl }}" alt="brownfields not for cleanup" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirosmallgenerators.png %}" alt="brownfields not for cleanup" />
     <p>Environment.BFNONTARGETED contains the coordinates of Brownfields Projects <strong>not</strong> targeted for cleanup. These locations represent sites, not contaminated areas, and were derived from maps and GPS data. For more information see:  https://www.epa.gov/brownfields/</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.brownfields %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>
@@ -186,11 +182,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirousedoil.png" | prepend: site.baseurl }}" alt="UsedOil" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirousedoil.png %}" alt="UsedOil" />
     <p>Environment.DWMRCHazWasteUsedOilFacilities contains sites that generate hazardous waste; that treat, store, or dispose of hazardous waste; and sites that transport, market, or recycle used oil.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.waste %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-waste-management-radiation-control/">Utah Department of Environmental Quality: Division of Solid & Hazardous Waste</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://deq.utah.gov/division-waste-management-radiation-control/gismeta/used%20oil%20permitted%20facilities.htm">Environment.DSHWPermittedUsedOilFacilities Metadata</a>
@@ -207,11 +202,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirollwaste.png" | prepend: site.baseurl }}" alt="Low Level Waste" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirollwaste.png %}" alt="Low Level Waste" />
     <p>Environment.DWMRCLLRWUMillFacilities contains sites that treat or dispose of radioactive waste or process uranium ore.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.waste %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-waste-management-radiation-control/">Utah Department of Environmental Quality: Division of Solid & Hazardous Waste</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>
@@ -227,11 +221,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirosolidwaste.png" | prepend: site.baseurl }}" alt="SolidWaste" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirosolidwaste.png %}" alt="SolidWaste" />
     <p>Environment.DWMRSolidWasteFacilities contains locations for open and closed Solid Waste Landfills in Utah.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.waste %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>
     </ul>
@@ -246,11 +239,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirofuds.png" | prepend: site.baseurl }}" alt="SolidWaste" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirofuds.png %}" alt="SolidWaste" />
     <p>Environment.FUD contains locations of potential Formerly Used Defense sites. The Department of Defense (DoD) is responsible for environmental restoration of FUDS. FUD locations are based on coordinates derived from maps and GPS data.  These locations represent sites, not contaminated areas.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.military %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="http://www.usace.army.mil/Missions/Environmental/Formerly-Used-Defense-Sites/">US Army Corps of Engineers Environmental Cop: FUDS</a>
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/gismeta/Formerly%20Used%20Defense.htm">Environment.FUD Metadata</a>
@@ -267,11 +259,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirommrps.png" | prepend: site.baseurl }}" alt="MMRP" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirommrps.png %}" alt="MMRP" />
     <p>Environment.MMRP contains locations of Military Munitions Response Program sites. MMRP manages the environmental, health and safety issues presented by unexploded ordnances (UXO), discarded military munitions (DMM) and munitions constituents (MC). Locations are based on coordinates derived from maps and GPS data. These locations represent sites, not contaminated areas.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.military %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="http://aec.army.mil/index.php/restore/MMRP">Military Munitions Response Program (MMRP)</a>
@@ -289,11 +280,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/enviroewa.png" | prepend: site.baseurl }}" alt="MMRP" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/enviroewa.png %}" alt="MMRP" />
     <p>Environment.EWA contains locations of potential Enforceable Written Assurance sites. EWAs will generally ensure to property owners or prospective property owners that there is no unacceptable risk to human health or the environment. EWA locations are based on coordinates derived from maps and GPS data. These locations represent sites, not contaminated areas.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.ewa %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://rules.utah.gov/publicat/code/r311/r311-600.htm">UT Hazardous Substances Mitigation Act: Enforeceable Written Assurances</a>
@@ -311,11 +301,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/environpl.png" | prepend: site.baseurl }}" alt="NPL" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/environpl.png %}" alt="NPL" />
     <p>Environment.NPL contains locations of Utah National Priorities List Sites. The NPL is the list of national priorities among the known releases or threatened releases of hazardous substances, pollutants, or contaminants throughout the United States. Locations are based on coordinates derived from maps and GPS data. These locations represent sites, not contaminated areas.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.npl %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://www.epa.gov/superfund/sites/npl/">National Priorities List</a>
@@ -333,11 +322,10 @@ FacilityUST:
       </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirositerem.png" | prepend: site.baseurl }}" alt="NPL" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirositerem.png %}" alt="NPL" />
     <p>Environment.SITEREM contains locations of potential EPA Superfund sites. The Comprehensive Environmental Response, Compensation, and Liability Act (CERCLA), commonly known as Superfund, imposes a tax on the chemical and petroleum industries and provides Federal authority to respond directly to releases or threatened releases of hazardous substances that may endanger public health or the environment. Locations are based on coordinates derived from maps and GPS data. These locations represent sites, not contaminated areas.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.superfund %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://www.epa.gov/superfund/policy/cercla.htm">US EPA CERCLA Overview</a>
@@ -354,11 +342,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/enviroicbuffers.png" | prepend: site.baseurl }}" alt="NPL" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/enviroicbuffers.png %}" alt="NPL" />
     <p>Environment.ICBUFFERZONES contains Institutional Control Buffer Zones in Utah.</p>
     <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
+    <ul <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
     </ul>
   </div>
   {% include packagedata.html name="InstitutionalControlBufferZones"
@@ -371,11 +358,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirotier2.png" | prepend: site.baseurl }}" alt="NPL" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirotier2.png %}" alt="NPL" />
     <p>Environment.TIER2 contains locations of Tier II facilities under the Emergency Planning and Community Right-to-Know Act (EPCRA). Qualifying facilities report on hazardous and toxic chemicals and are labeled either tier I or tier II. Locations are based on coordinates derived from maps and GPS data. These locations represent sites, not contaminated areas. The areas of contamination will be identified at a later stage.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.toxic_release %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://www.epa.gov/epcra">EPCRA Requirements</a>
@@ -393,11 +379,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirotri.png" | prepend: site.baseurl }}" alt="NPL" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirotri.png %}" alt="NPL" />
     <p>Environment.TRI contains TRI locations in Utah. TRI is an EPA database containing data on disposal or release of toxic chemicals from U.S. facilities and information about how facilities manage those chemicals through recycling, energy recovery, and treatment. Locations are based on coordinates derived from maps and GPS data.  These locations represent sites, not contaminated areas.  The areas of contamination will be identified at a later stage.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.toxic_release %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://www.epa.gov/tri/">US EPA Toxics Release Inventory (TRI)</a>
@@ -415,11 +400,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirovcps.png" | prepend: site.baseurl }}" alt="VCP" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirovcps.png %}" alt="VCP" />
     <p>Environment.VCP contains locations of Utah VCP. VCP is a program to encourage the voluntary cleanup of sites where there has been a contaminant release threatening public health and the environment. Locations are based on coordinates derived from maps and GPS data.  These locations represent sites, not contaminated areas.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.vcp %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/gismeta/Voluntary%20Cleanup%20Program.htm">Environment.VCP Metadata></a>
@@ -436,11 +420,10 @@ FacilityUST:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/gallery/sgid/envirofacilityusts.png" | prepend: site.baseurl }}" alt="VCP" />
+    <img class="inline-text-left outline" src="{% link images/gallery/sgid/envirofacilityusts.png %}" alt="VCP" />
     <p>Environment.FacilityUST contains the locations of facilities with underground storage tanks.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.ust %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
+    <h5> <ul class="dotless">
       <li><a href="https://deq.utah.gov/division-environmental-response-remediation/">Utah Department of Environmental Quality: The Division of Environmental Response and Remediation</a>
       <li><a href="https://deq.utah.gov/">Utah Department of Environmental Quality</a>
       <li><a href="https://enviro.deq.utah.gov/">DEQ Interactive Map Viewer</a>

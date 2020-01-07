@@ -8,7 +8,6 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-18 11:11:58 -0700
-title: Voting Precincts
 categories: []
 VotingPrecincts:
   downloads:
@@ -24,12 +23,10 @@ VotingPrecincts:
       updates to specific precinct features.
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{{ '/images/gallery/sgid/voterprecincts.png' | prepend: site.baseurl }}" alt="JudicialDistricts" />
+  <img class="caption__image" title="map" src="{% link images/gallery/sgid/voterprecincts.png %}" alt="JudicialDistricts" />
   <figcaption class="caption__text">Voting Precincts</figcaption>
 </figure>
-{% include abstract.html
-  name="Voting Precincts"
-  download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mX2FlbjZvXzNtYkU"
+{% include abstract.html name="Voting Precincts"
   abstract="Voting precincts determine a voter's ballot composition and polling location. Voting precinct boundaries take their shape from the boundaries of all political districts, including U.S Congress, State Senate, State House, School Board District, local council districts, special districts etc. However voter precincts must be drawn so that they contain less than maximum number of voters as specified by state law. Voting precincts are a critical part of the VISTA application, which is the statewide framework, overseen by the Lt. Governor's Office, for managing voters and elections."
 %}
 <div class="grid package">
@@ -39,7 +36,7 @@ VotingPrecincts:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ '/images/VoterPrecinctsSmall.png' | prepend: site.baseurl }}" alt="VotingPrecinctsSmall" />
+    <img class="inline-text-left outline" src="{% link images/VoterPrecinctsSmall.png %}" alt="VotingPrecinctsSmall" />
     <p>Political.VistaBallotAreas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.</p>
     <dl>
       <dt>VISTAID</dt>

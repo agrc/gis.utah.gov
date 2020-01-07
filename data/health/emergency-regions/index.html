@@ -7,7 +7,6 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-21 17:54:44 -0700
-title: Emergency Regions
 categories: []
 EmergencyRegions:
   downloads:
@@ -17,10 +16,10 @@ EmergencyRegions:
     - January 2012
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{{ "/images/EmergencyRegions_Large.png" | prepend: site.baseurl }}" />
+  <img class="caption__image" title="map" src="{% link images/EmergencyRegions_Large.png %}" />
   <figcaption class="caption__text">Emergency Regions</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mX21VVGtBRkdaTlE"
+{% include abstract.html
   name="Emergency Regions"
   stewards="AGRC and Utah Division of Emergency Management"
   abstract="This dataset represents the Emergency Management Regions of Utah." %}
@@ -31,7 +30,7 @@ EmergencyRegions:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ "/images/GNISsmall.png" | prepend: site.baseurl }}" alt="GNIS" />
+    <img class="inline-text-left outline" src="{% link images/GNISsmall.png %}" alt="GNIS" />
     <p>This dataset represents the Emergency Management Regions of Utah. This layer contains the 29 counties in Utah with the REGION field containing the district name.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>Related Resources</h5>

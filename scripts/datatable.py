@@ -41,9 +41,15 @@ def munge_data(item, i, indices):
             return utf8_encode(value)
 
         if url.lower().startswith('http') or url.lower().startswith('ftp'):
-            return '<a href="{}">{}</a>'.format(url, utf8_encode(value))
+            return f'<a href="{url}">{utf8_encode(value)}</a>'
 
-        return '<a href="{{{{ "/{}" | prepend: site.baseurl }}}}">{}</a>'.format(url, utf8_encode(value))
+
+        anchor_tag = item[indices['anchor']]
+
+        if anchor_tag is None or len(anchor_tag) == 0:
+            return f'<a href="{{% link {url} %}}">{utf8_encode(value)}</a>'
+
+        return f'<a href="{{% link {url} %}}#{anchor_tag}">{utf8_encode(value)}</a>'
 
     def endpoint_link(value):
         if value is None or len(value) == 0:
@@ -52,9 +58,9 @@ def munge_data(item, i, indices):
         if ',' in value:
             value = value.split(',')
 
-            return ''.join(['<a href="{}" class="pull-right"><i class="fab fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(v) for v in value])
+            return ''.join([f'<a href="{v}" class="pull-right"><i class="fab fa-mixcloud fa-fw" alt="service endpoint"></i></a>' for v in value])
 
-        return '<a href="{}" class="pull-right"><i class="fab fa-mixcloud fa-fw" alt="service endpoint"></i></a>'.format(value)
+        return f'<a href="{value}" class="pull-right"><i class="fab fa-mixcloud fa-fw" alt="service endpoint"></i></a>'
 
     def webapp_link(value):
         if value is None or len(value) == 0:
@@ -63,9 +69,9 @@ def munge_data(item, i, indices):
         if ',' in value:
             value = value.split(',')
 
-            return ''.join(['<a href="{}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>'.format(v.strip()) for v in value])
+            return ''.join([f'<a href="{v.strip()}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>' for v in value])
 
-        return '<a href="{}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>'.format(value.strip())
+        return f'<a href="{value.strip()}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>'
 
     def booleanize(value):
         if value is None or len(value) == 0:
@@ -80,9 +86,7 @@ def munge_data(item, i, indices):
         ('deprecated', booleanize(item[indices['deprecated']])),
         ('agency', utf8_encode(item[indices['data_source']])),
         ('description', utf8_encode(item[indices['description']])),
-        ('service', ''.join([
-            endpoint_link(item[indices['endpoint']]),
-            webapp_link(item[indices['web_app']])
+        ('service', ''.join([endpoint_link(item[indices['endpoint']]), webapp_link(item[indices['web_app']])
         ]))
     ])
 
@@ -97,6 +101,7 @@ def get_sheet_data(gc, sheet_id, worksheet_id):
         'description': header.index('Description'),
         'data_source': header.index('Data Source'),
         'url': header.index('Website URL'),
+        'anchor': header.index('Anchor'),
         'data_type': header.index('Data Type'),
         'endpoint': header.index('Endpoint'),
         'web_app': header.index('Webapp'),
@@ -142,7 +147,7 @@ title: SGID Index
         </tbody>
     </table>
 </div>
-<script src="{{ "/js/dist/list.min.js" | prepend: site.baseurl }}"></script>
+<script src="{% link js/dist/list.min.js %}"></script>
 '''
 
     return html

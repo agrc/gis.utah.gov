@@ -18,12 +18,10 @@ Cemeteries:
     - '2011'
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{{ '/images/cemeteriesB.png' | prepend: site.baseurl }}" alt="cemeteries in utah" />
+  <img class="caption__image" title="map" src="{% link images/cemeteriesB.png %}" alt="cemeteries in utah" />
   <figcaption class="caption__text">Locations of Cemeteries in Utah</figcaption>
 </figure>
-{% include abstract.html
-  download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mXzY5enhwaTBQa2s"
-  name="Cemeteries"
+{% include abstract.html name="Cemeteries"
   abstract="Society.Cemeteries contains over 400 cemeteries and their locations in Utah."
 %}
 <div class="grid package">

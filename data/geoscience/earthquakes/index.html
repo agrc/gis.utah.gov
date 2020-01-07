@@ -6,7 +6,6 @@ author:
   display_name: Matt Peters
   email: mpeters@utah.gov
 date: 2015-07-07 16:53:14 -0600
-title: Earthquakes
 categories: []
 EarthquakeEpicenters1850to2016:
   downloads:
@@ -29,7 +28,7 @@ EarthquakeEpicentersMiningInduced1968to2016:
   <img class="caption__image" src="{% link images/EpicentersLarge.png %}" alt="Earthquakes" />
   <figcaption class="caption__text">Earthquakes</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/u/0/folders/1h-J5vfUyZf6G9BpD0kqBiSCcXLKnmq2O"
+{% include abstract.html
 name="Earthquake Epicenters"
 stewards="UGS"
 abstract="The earthquake database consists of chronological list of earthquake origin time, location, and size for the Utah region." %}
@@ -59,7 +58,7 @@ abstract="The earthquake database consists of chronological list of earthquake o
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{{ '/images/EpicentersSmall.png' | prepend: site.baseurl }}" alt="Earthquake Epicenters Mining Induced" />
+    <img class="inline-text-left outline" src="{% link images/EpicentersSmall.png %}" alt="Earthquake Epicenters Mining Induced" />
     <p>Earthquake Epicenters Mining Induced 1968 to 2016 represents the modern epicenters of earthquakes in Utah that are mining induced.</p>
 
     <h5>Related Resources</h5>

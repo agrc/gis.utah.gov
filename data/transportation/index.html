@@ -13,7 +13,7 @@ date: 2011-07-06 20:27:31 -0600
 {% include table_overview.html name="Transportation" %}
   <tbody>
     <tr>
-      <td><a href="{{ '/data/transportation/air/' | prepend: site.baseurl }}">Air</a></td>
+      <td><a href="{% link data/transportation/air/index.html %}">Air</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Airport locations, airstrips/runways, and heliports</td>
@@ -25,31 +25,31 @@ date: 2011-07-06 20:27:31 -0600
       <td>Find route and milepost locations to 1/1000th of a mile</td>
     </tr>
     <tr>
-      <td><a href="{{ '/data/transportation/railroads/' | prepend: site.baseurl }}">Railroads</a></td>
+      <td><a href="{% link data/transportation/railroads/index.html %}">Railroads</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Statewide railroads data, including transit rail</td>
     </tr>
     <tr>
-      <td><a href="{{ '/data/transportation/railroads/#RailroadMPs' | prepend: site.baseurl }}">Railroad Milepost</a></td>
+      <td><a href="{% link data/transportation/railroads/index.html %}#RailroadMPs">Railroad Milepost</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Mileposts for mainline railroads</td>
     </tr>
     <tr>
-      <td><a title="Roads and Highway System" href="{{ '/data/transportation/roads-system/' | prepend: site.baseurl }}">Road and Highway System</a></td>
+      <td><a title="Roads and Highway System" href="{% link data/transportation/roads-system/index.html %}">Road and Highway System</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Statewide road and highway system data for cartography and address location. Includes local streets, mileposts, and numbered exit data.</td>
     </tr>
     <tr>
-      <td><a href="{{ '/data/transportation/street-network-analysis' | prepend: site.baseurl }}">Street Network Analysis</a></td>
+      <td><a href="{% link data/transportation/street-network-analysis/index.html %}">Street Network Analysis</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Dataset built for statewide network distance analysis</td>
     </tr>
     <tr>
-      <td><a href="{{ '/data/transportation/transit/' | prepend: site.baseurl }}">Transit</a></td>
+      <td><a href="{% link data/transportation/transit/index.html %}">Transit</a></td>
       <td>map data</td>
       <td>UTA</td>
       <td>Routes and stops for buses, light rail and commuter rail</td>
@@ -64,7 +64,7 @@ date: 2011-07-06 20:27:31 -0600
 </table>
 <h4>Related Data (see also)</h4>
 <ul class="dotless">
-  <li><a href="{{ '/data/address/' | prepend: site.baseurl }}">Addresses</a></li>
-  <li><a href="{{ '/data/address/address-grids/' | prepend: site.baseurl }}">Utah Local Addressing Systems (Address Grids)</a></li>
-  <li><a href="{{ '/data/recreation/ski-areas/' | prepend: site.baseurl }}">Ski Lifts (Recreation)</a></li>
+  <li><a href="{% link data/address/index.html %}">Addresses</a></li>
+  <li><a href="{% link data/address/address-grids/index.html %}">Utah Local Addressing Systems (Address Grids)</a></li>
+  <li><a href="{% link data/recreation/ski-areas/index.html %}">Ski Lifts (Recreation)</a></li>
 </ul>

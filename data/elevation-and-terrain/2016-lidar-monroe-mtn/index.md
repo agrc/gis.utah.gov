@@ -10,14 +10,14 @@ title: 2016 Monroe Mountain LiDAR Elevation Data
 categories: []
 ---
 
-![Sample]({{ "/images/lidar_monroe.PNG" | prepend: site.baseurl }}){: .flex .flex--center .outline }
+![Sample]({% link images/lidar_monroe.PNG %}){: .flex .flex--center .outline }
 
-[![Project area map]({{"/images/lidar_monroe_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_monroe_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![Project area map]({% link images/lidar_monroe_coverage_sm.png %} "click for map")]({% link images/lidar_monroe_coverage.png %}){:.inline-text-right}
 
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During the Summer of 2016 AGRC and the U.S. Forest Service acquired [292 square miles]({{ "/images/lidar_monroe_coverage.png/" | prepend: site.baseurl }}) of 8 points per meter Quality Level 1 LiDAR on Monroe Mountain in central Utah. The acquisition took place with leaf-on conditions to model the forest canopy in addition to ground elevations. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are available from [The National Map](https://viewer.nationalmap.gov/basic/), [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1), {{ contact }} This elevation data was collected between Aug. 27 and Sept. 11, 2016 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
+During the Summer of 2016 AGRC and the U.S. Forest Service acquired [292 square miles]({% link images/lidar_monroe_coverage.png %}) of 8 points per meter Quality Level 1 LiDAR on Monroe Mountain in central Utah. The acquisition took place with leaf-on conditions to model the forest canopy in addition to ground elevations. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are available from [The National Map](https://viewer.nationalmap.gov/basic/), [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1), {{ contact }} This elevation data was collected between Aug. 27 and Sept. 11, 2016 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
@@ -26,8 +26,7 @@ During the Summer of 2016 AGRC and the U.S. Forest Service acquired [292 square 
     </strong>
   </li>
   <li>
-    <i class="fas fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_Report.zip">Reports</a> and
-      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_Metadata.zip">Metadata</a>
+    <i class="fas fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_Report.zip">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_Metadata.zip">Metadata</a>
   </li>
   <li>
     <i class="fas fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_shp.zip">shapefiles</a> of project area, tile indices, and breaklines
@@ -41,8 +40,8 @@ This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) 
 {% include contact.html subject=page.title contact=site.data.contacts.elevation %}
 
 <div id="logo">
-  <img src="{{ "/images/monroe_DEM.png" | prepend: site.baseurl }}" alt="Monroe Sample" />
+  <img src="{% link images/monroe_DEM.png %}" alt="Monroe Sample" />
 </div>
 <div id="logo">
-  <img src="{{ "/images/monroe_DSM.png" | prepend: site.baseurl }}" alt="Monroe Sample" />
+  <img src="{% link images/monroe_DSM.png %}" alt="Monroe Sample" />
 </div>

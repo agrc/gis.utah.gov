@@ -7,7 +7,6 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-21 17:16:46 -0700
-title: Health Districts
 categories: []
 HealthDistricts:
   downloads:
@@ -17,11 +16,10 @@ HealthDistricts:
     - January 2016
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{{ "/images/HealthDistrictBndy.png" | prepend: site.baseurl }}" alt="HealthDistricts" />
+  <img class="caption__image" title="map" src="{% link images/HealthDistrictBndy.png %}" alt="HealthDistricts" />
   <figcaption class="caption__text">Health Districts 2015</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUjNwXzRwby0ycFE"
-name="Health Districts 2015"
+{% include abstract.html name="Health Districts 2015"
 stewards="Utah Department of Health & AGRC"
 abstract="Health.HealthDistricts2015 contains the health districts in the state of Utah.  These districts are often the main entity for reporting and tracking communicable diseases, as well as providing services to the community and state that include investigation of disease outbreaks, health education, health screenings and immunizations, and food regulation for establishments." %}
 <div class="grid package">
@@ -39,6 +37,5 @@ abstract="Health.HealthDistricts2015 contains the health districts in the state 
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
-  {% include packagedata.html name="HealthDistricts"
-  info=page.HealthDistricts %}
+  {% include packagedata.html name="HealthDistricts" info=page.HealthDistricts %}
 </div>

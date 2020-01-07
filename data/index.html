@@ -88,7 +88,7 @@ categories: []
             </a>
         </div>
         <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 text-center">
-            <a href="{{ "/data/cadastre/parcels/" | prepend: site.baseurl }}"><h5 class="text-center">Parcels</h5>
+            <a href="{% link data/cadastre/parcels/index.html %}"><h5 class="text-center">Parcels</h5>
                 <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
                     <rect class="data-thumb cadastre" />
                     <g class="background">
@@ -141,17 +141,17 @@ categories: []
     <div class="grid__col section">
         <h2>SGID Index</h2>
         <div class="grid__col--span-all grid__col--centered grid__col--s-hidden" style="width:568px">
-            <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}">
-                <img alt="SGID Index Table Search" class="text-center" src="{{ "/images/sgid-index.png" | prepend: site.baseurl }}">
+            <a href="{% link data/sgid-index/index.html %}">
+                <img alt="SGID Index Table Search" class="text-center" src="{% link images/sgid-index.png %}">
             </a>
         </div>
         <p class="readable">The SGID Index is a sortable and filterable table containing data items contained in our SGID. It is a great resource to quickly find GIS data and resources important to you. In the SGID Index, you will find the ISO category, the name of the resource, the agency who is the data steward, a short description and a link to a service endpoint if one is available. </p>
         <p class="section-read-more">
-            <a href="{{ "/data/sgid-index/" | prepend: site.baseurl }}" class="btn">SGID Index</a>
+            <a href="{% link data/sgid-index/index.html %}" class="btn">SGID Index</a>
         </p>
         <h2>Raster Discovery and Download</h2>
         <div class="grid__col--2-of-2 grid__col--centered grid__col--s-hidden" style="width:300px">
-            <img alt="SGID Index Table Search" class="text-center" src="{{ "/images/applications/raster_utah_gov.png" | prepend: site.baseurl }}">
+            <img alt="SGID Index Table Search" class="text-center" src="{% link images/applications/raster_utah_gov.png %}">
         </div>
         <p class="readable">The Raster Discovery App allows users to get map-based results for all of the imagery, elevation, lidar, and scanned maps available from Utah's SGID. Select the types of products you are interested in. Next, define your area of interest. The Raster Discovery App will search the product indices and produce a resulting list of items that intersected your area of interest. Finally, download the data! </p>
         <p class="section-read-more">
@@ -560,13 +560,13 @@ categories: []
             Getting GIS data listed within the SGID index increases the odds it won't be created duplicatively by others and that the data can be found by users in need. And, where appropriate and desired, AGRC can host your data as live services or for download.
         </p>
         <p class="readable">
-            If you have Utah GIS data files or web services that should be included in the Utah SGID, {% include contact.html subject="SGID Data Additions" contact=site.data.contacts.sgid text='please contact ' hide-punctuation=true %} or anyone else on the <a href="{{ "/about/contact" | prepend: site.baseurl }}">AGRC team</a>.
+            If you have Utah GIS data files or web services that should be included in the Utah SGID, {% include contact.html subject="SGID Data Additions" contact=site.data.contacts.sgid text='please contact ' hide-punctuation=true %} or anyone else on the <a href="{% link about/contact/index.html %}">AGRC team</a>.
             More information about the core datasets AGRC regularly updates and what you can contribute can be found from the <a href="/gis-data-sharing/">GIS Data Sharing</a> page.
         </p>
     </div>
 </div>
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
-<script src="{{ "/bower_components/lozad/dist/lozad.min.js" | prepend: site.baseurl }}"></script>
+<script src="{% link bower_components/lozad/dist/lozad.min.js %}"></script>
 <script>
     ;(function() {
       const observer = lozad('.lozad', {

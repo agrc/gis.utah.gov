@@ -4,7 +4,7 @@ layout: default
 <div class="section featured">
   {% for post in site.categories.Featured limit:3 %}
   <div class="grid__col grid__col--1-of-3 grid__col--am">
-    <a href="{{ post.url | prepend: site.baseurl }}"><i class="far fa-newspaper"></i> {{ post.title | truncate: 80 }}</a>
+    <a href="{% link {{ post.path }} %}"><i class="far fa-newspaper"></i> {{ post.title | truncate: 80 }}</a>
   </div>{% endfor %}
 </div>
 <div class="lozad grid main" data-background-image="{% link images/backgrounds/blueprint.jpg %}">
@@ -38,7 +38,7 @@ layout: default
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#news"><h3 class="main-heading">News, Events, &amp; Coordination</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#news"><i class="far fa-newspaper fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> Utah is widely recognized as a leader in the GIS field. Coordination, partnering and information sharing &mdash; in the form of news, events, tips, and data &mdash; fuel our collective success. <a href="{{ "/#mc_embed_signup" | prepend: site.baseurl }}">Sign up</a> for our newsletter to stay in touch!</p>
+    <p class="main-text"><a href="#news"><i class="far fa-newspaper fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> Utah is widely recognized as a leader in the GIS field. Coordination, partnering and information sharing &mdash; in the form of news, events, tips, and data &mdash; fuel our collective success. <a href="{% link index.html %}/#mc_embed_signup">Sign up</a> for our newsletter to stay in touch!</p>
   </div>
 </div>
 <div class="grid">
@@ -57,7 +57,7 @@ layout: default
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       <br/>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncate: 80 }}</a>
+      <a href="{% link {{ post.path }} %}">{{ post.title | truncate: 80 }}</a>
       <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
     </div>{% endfor %}
     <p class="section-read-more">

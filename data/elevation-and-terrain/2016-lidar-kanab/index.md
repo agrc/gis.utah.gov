@@ -14,14 +14,14 @@ title: 2016 Kanab Utah LiDAR Elevation Data
 categories: []
 ---
 
-![Sample]({{ "/images/lidar_kanab_2016.png" | prepend: site.baseurl }}){: .flex .flex--center .outline }
+![Sample]({% link images/lidar_kanab_2016.png %}){: .flex .flex--center .outline }
 
-[![Project area map]({{"/images/lidar_kanab_2016_coverage_sm.png" | prepend:site.baseurl}} "click for map")]({{"/images/lidar_kanab_2016_coverage.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![Project area map]({% link images/lidar_kanab_2016_coverage_sm.png %} "click for map")]({% link images/lidar_kanab_2016_coverage.png %}){:.inline-text-right}
 
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='by request. Reach out to' -%}
 {%- endcapture -%}
-In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around Fredonia, AZ that covers [~150 square miles]({{ "/images/lidar_kanab_2016_coverage.png/" | prepend: site.baseurl }}) of Utah with 8 points per meter Quality Level 1 LiDAR and includes Kanab, UT. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, low, medium, and high vegetation, are also available {{ contact }} This elevation data was collected between October and December, 2016 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
+In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around Fredonia, AZ that covers [~150 square miles]({% link images/lidar_kanab_2016_coverage.png %}) of Utah with 8 points per meter Quality Level 1 LiDAR and includes Kanab, UT. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, low, medium, and high vegetation, are also available {{ contact }} This elevation data was collected between October and December, 2016 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
@@ -30,8 +30,7 @@ In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around F
     </strong>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kanab-2016/DEMs/Kanab_2016_Reports.zip" target="_blank">Reports</a> and
-      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kanab-2016/DEMs/Kanab_2016_Metadata.zip" target="_blank">Metadata</a>
+    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kanab-2016/DEMs/Kanab_2016_Reports.zip" target="_blank">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kanab-2016/DEMs/Kanab_2016_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
     <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kanab-2016/DEMs/Kanab_2016_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines

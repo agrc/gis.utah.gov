@@ -9,7 +9,8 @@ categories:
   - Tutorial
 ---
 
-**Method 1: Edit an existing page from website**
+## Method 1: Edit an existing page from website
+{: .text-left}
 
 1. Create a free [GitHub account](https://github.com/join), if you do not already have one.
 1. Click `Edit this page on GitHub` in the bottom right of any webpage on gis.utah.gov.
@@ -29,7 +30,8 @@ categories:
 ![Create Pull Request]({% link about/contributing/edit-existing/images/CreatePullRequest_Button.png %})
 1. Congratulations! You contributed!
 
-**Method 2: Editing a page from within the AGRC Website GitHub repository**
+## Method 2: Editing a page from within the AGRC Website GitHub repository
+{: .text-left}
 
 1. Create a free [GitHub account](https://github.com/join), if you do not already have one.
 1. Go to the AGRC website repository on GitHub: [{{ site.github.repository_url }}]({{ site.github.repository_url }}).

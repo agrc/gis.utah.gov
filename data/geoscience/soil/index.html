@@ -6,7 +6,6 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-21 10:47:27 -0700
-title: Soil Types
 categories: []
 Soil:
   downloads:
@@ -16,11 +15,10 @@ Soil:
     - 2008
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" itle="map" src="{{ "/images/Soils.png" | prepend: site.baseurl }}" alt="soil types" />
+  <img class="caption__image" itle="map" src="{% link images/Soils.png %}" alt="soil types" />
   <figcaption class="caption__text">Soil Types</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mSDFxRU8waXdBQ28"
-name="Soil Types"
+{% include abstract.html name="Soil Types"
 stewards="U.S. Department of Agriculture, Natural Resources Conservation Service"
 abstract="Geoscience.Soils represents the extent of defined soil types throughout Utah. The dataset was created by digitizing maps, compiling information onto a planimetric correct base and digitizing or revising digitized maps using remotely sensed and other information. It is generally the most detailed level of soil geographic data developed by the National Cooperative Soil Survey." %}
 <div class="grid package">
@@ -33,5 +31,4 @@ abstract="Geoscience.Soils represents the extent of defined soil types throughou
     <p>All surveys areas have their own tables which are not interchangeable.  All sets of tables are found at the <a href="http://www.nrcs.usda.gov/wps/portal/nrcs/main/ut/soils/surveys/">NRCS Soil Mart</a>.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
-  {% include packagedata.html name="Soil"
-  info=page.Soil %}
+  {% include packagedata.html name="Soil" info=page.Soil %}

@@ -39,22 +39,22 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 - **SGID User's Guide - 7th Edition (1994)**
   - This user guide was distributed in a three-ring binder. Data was then requested in the following available formats: ARC/INFO Coverages, USGS DLG, MOSS Export, and AutoCAD DXF. This guide also makes note of an "AGRC home page on the world wide web," which was set to debut in November 1994.
 
-![1994 SGID User Guide Binder]({{ "/images/SGID_1994_binders_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
+![1994 SGID User Guide Binder]({% link images/SGID_1994_binders_cover_sm.png %}){: .flex .flex--center}
 
 - **The SGID on CD-ROM (1995)**
   - In 1995, AGRC, ESRI, and Utah State University combined forces and manufactured a CD-ROM containing SGID data and a built-in data viewer. To commemorate this milestone, we have made available the [original CD-ROM jacket](https://drive.google.com/open?id=17z_AYz68fa2ogToRIIBgX9rTprmA-U1b) as well as the [unaltered CD-ROM contents](https://drive.google.com/open?id=17h13sLMTe3k_g_WnhbphAI-dLPwp5odo).
 
-![1995 SGID CD-ROM photo]({{ "/images/SGID_1995_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
+![1995 SGID CD-ROM photo]({% link images/SGID_1995_cover_sm.png %}){: .flex .flex--center}
 
 - **SGID User’s Guide - 10th Edition (1999)**
   - This version of the user guide was also distributed in a three-ring binder and talked about the AGRC home page as the place where you could get direct access to the SGID data, as well as view the FGDC metadata. It also mentioned an FTP site. It noted that this version would be the last printed user guide and that future guides would be available on the website for download in PDF format. With this version, users could request SGID data in the following formats: CD, 3.5 diskettes, 8mm tape, zip disc, or Coverages (which the guide mentioned were the most popular at that time).
 
-![1999 SGID User Guide Binder]({{ "/images/SGID_1999_binders_cover_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}
+![1999 SGID User Guide Binder]({% link images/SGID_1999_binders_cover_sm.png %}){: .flex .flex--center}
 
 - **SGID Meets the World Wide Web (Early 2000s)**
-  - By the early 2000s the SGID user guide, data, and data viewer were all solely available over the Web. AGRC was using ArcSDE 8.2 to maintain the data and ArcIMS for the interactive mapping website. Users could also use a separate ArcIMS site to create their own exportable map using a [custom map authoring tool]({{ "/images/SGID_early2000s_create_custom_map.gif" | prepend: site.baseurl }}).
+  - By the early 2000s the SGID user guide, data, and data viewer were all solely available over the Web. AGRC was using ArcSDE 8.2 to maintain the data and ArcIMS for the interactive mapping website. Users could also use a separate ArcIMS site to create their own exportable map using a [custom map authoring tool]({% link images/SGID_early2000s_create_custom_map.gif %}).
 
-[![SGID Early 2000s]({{ "/images/SGID_early2000s_sm.png" | prepend: site.baseurl }}){: .flex .flex--center}]({{ "/images/SGID_early2000s.png" | prepend: site.baseurl }})
+[![SGID Early 2000s]({% link images/SGID_early2000s_sm.png %}){: .flex .flex--center}]({% link images/SGID_early2000s.png %})
 
 ### Where Is the SGID Now?
 {: .text-left}
@@ -63,9 +63,9 @@ Technology and the use of GIS have come a long way since the inaugural SGID of 1
 
 The current makeup of the SGID is distributed, by design.  Internally, much of the framework data is managed on a SQL ArcSDE Database.  From there, data layers are distributed accordingly.
 
-The [SGID index]({{ "/data/sgid-index/" | prepend: site.baseurl }}) and current user guide are located on [the SGID page of AGRC’s website]({{ "/data/" | prepend: site.baseurl }}), where you will also find descriptions of the data, update dates, data downloads, and links to other places where you can access the data. If you're looking for data, that is the best place to start.
+The [SGID index]({% link data/sgid-index/index.html %}) and current user guide are located on [the SGID page of AGRC’s website]({% link data/index.html %}), where you will also find descriptions of the data, update dates, data downloads, and links to other places where you can access the data. If you're looking for data, that is the best place to start.
 
-![SGID 2019 User Guide]({{ "/images/SGID_2019_webpage_data.png" | prepend: site.baseurl }}){: .flex .flex--center}
+![SGID 2019 User Guide]({% link images/SGID_2019_webpage_data.png %}){: .flex .flex--center}
 
 In order to meet the diverse needs of our users and applications, SGID data is served on a variety of platforms in a variety of formats, including direct database access, downloadable data, [ArcGIS Online](https://gis.utah.gov/data), an [open data portal](https://opendata.gis.utah.gov/), and API web services.
 
@@ -117,7 +117,7 @@ Currently, we are working toward [trimming down the SQL ArcSDE enterprise databa
 
 All data layers being maintained in the SDE will also be available in [AGOL](https://utah.maps.arcgis.com) and [AGRC’s open data portal](https://opendata.gis.utah.gov/). Here users can consume the web service or download the data. Obsolete data will be written to object storage for retention and will be available on request.
 
-AGRC is testing the option of a public-facing PostgreSQL cloud database where users can make direct connections from their desktop client. This will bring new functionality and an additional access point for our end users. We are excited about this offering, so keep an eye on our [Twitter](https://twitter.com/maputah) or [newsletter]({{ "/news/#mc_embed_signup" | prepend: site.baseurl }}) for upcoming details.
+AGRC is testing the option of a public-facing PostgreSQL cloud database where users can make direct connections from their desktop client. This will bring new functionality and an additional access point for our end users. We are excited about this offering, so keep an eye on our [Twitter](https://twitter.com/maputah) or [newsletter]({% link news/index.html %}#mc_embed_signup) for upcoming details.
 
 Additionally, AGRC has established a workflow with our partner agencies to serve their authoritative data through AGOL. Essentially, their SGID-relevant data is cataloged and is discoverable on AGRC’s official AGOL page. We like to think of it as a live window into partner agencies' data. One of the biggest benefits to these partners is that their data no longer has a shelf life: in other words, the updates agencies make are available instantaneously. Currently we have set up workflows with [State History](https://history.utah.gov/) and [Water Rights](https://www.waterrights.utah.gov/). We are working to get other agencies on board in the coming months.
 
@@ -125,7 +125,7 @@ Ultimately, our goal is to provide the most current industry-accepted tools that
 
 We are always curious to hear from our users on how you access the SGID data, what formats you use, and how we can better get the data into your hands. Please take a moment to fill out our one-question [poll](https://www.surveymonkey.com/r/3P58K98) on your preferred method(s) of accessing SGID data. This will help us gauge where we should focus our future efforts.
 
-[![Take the Survey]({{ "/images/SGID_2019_take_the_poll.png" | prepend: site.baseurl }}){: .flex .flex--center}](https://www.surveymonkey.com/r/3P58K98)
+[![Take the Survey]({% link images/SGID_2019_take_the_poll.png %}){: .flex .flex--center}](https://www.surveymonkey.com/r/3P58K98)
 
 *[GIS]: Geographic Information System
 *[SGID]: State Geographic Information Database

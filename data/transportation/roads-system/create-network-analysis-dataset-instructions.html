@@ -8,9 +8,9 @@ date: 2011-03-23 14:11:54 -0700
 categories: []
 ---
 
-<p>SGID93.Transportation.Roads is the recommended starting point for almost anything related to Utah street centerlines. This includes cartography, address location, and, now,&nbsp;network analysis. (It also worth mentioning that the UDOT linear referencing system is derived from attributes in this dataset)<br><br>While data used to support network analysis has many potential parameters, at a basic level, two components are especially important: 1) connectivity and 2) impedance (i.e. travel speed/costs).</p>
-<p>Connectivity of centerline features in SGID93.Transportation.Roads is actively maintained but an impedance measure, while planned for later this year, has not bee actively enforced to date. However, it is possible to use a combination of cartographic feature codes (CFCC field), spatial queries, and the existing values in the SPD_LMT field&nbsp;to create a relatively crude but effective representation of speed limits&nbsp;that, then, can be used&nbsp;as an input to an&nbsp;impedance measure.</p>
-<p>Using the steps decribed in the Process Notes below, SGID93.Transportation.Roads, was used to create a simple network solution (aka "routable") GIS dataset that can be used for routing, service area, and allocation problems.</p>
+<p>SGID93.Transportation.Roads is the recommended starting point for almost anything related to Utah street centerlines. This includes cartography, address location, and, now, network analysis. (It also worth mentioning that the UDOT linear referencing system is derived from attributes in this dataset)<br><br>While data used to support network analysis has many potential parameters, at a basic level, two components are especially important: 1) connectivity and 2) impedance (i.e. travel speed/costs).</p>
+<p>Connectivity of centerline features in SGID93.Transportation.Roads is actively maintained but an impedance measure, while planned for later this year, has not bee actively enforced to date. However, it is possible to use a combination of cartographic feature codes (CFCC field), spatial queries, and the existing values in the SPD_LMT field to create a relatively crude but effective representation of speed limits that, then, can be used as an input to an impedance measure.</p>
+<p>Using the steps described in the Process Notes below, SGID93.Transportation.Roads, was used to create a simple network solution (aka "routable") GIS dataset that can be used for routing, service area, and allocation problems.</p>
 <p>The finished draft product is available for download in a v10 file geodatabase. </p>
 <p>Please keep in mind that this is a first draft at a simple network dataset created to guide future AGRC efforts to improve and maintain routing capability in conjunction with SGID93.Transportation.Roads. There are a lot of different approaches and choices of what built-in functionality to employ. Expect that this approach will change as we learn more about the ArcGIS 10 Network Analysis capabilities and continue to hone our data for routing. </p>
 <p>{% include contact.html subject=page.title contact=site.data.contacts.address_network %}</p>
@@ -18,7 +18,7 @@ categories: []
     <strong>Sample Solution (below):</strong>
     <blockquote>I just finished my workout at the Kearns speed skating oval, now how do I get to Heber City for milkshakes?</blockquote>
 </p>
-<img src="{{ "/data/transportation/roads-system/networkanalysisexample.png" | prepend: site.baseurl }}" alt=" Kearns speed skating oval to milkshakes in Heber City" title=" Kearns speed skating oval to milkshakes in Heber City" width="524" height="501">
+<img src="{% link data/transportation/roads-system/networkanalysisexample.png %}" alt=" Kearns speed skating oval to milkshakes in Heber City" title=" Kearns speed skating oval to milkshakes in Heber City" width="524" height="501">
 <h3>Process Notes: </h3>
 <ol>
    <li>Create a new file geodatabase and within it, a feature dataset whose spatial reference is defined by importing the spatial reference from SGID93.Transportation.Roads. Copy SGID93.Transportation.Roads into thew new feature dataset</li>
@@ -44,7 +44,7 @@ categories: []
    <ul>
        <li>"CFCC" = 'A15' and (USEEXIST is null or "USEEXIST" &lt;&gt; '1')</li>
    </ul>
-   <li>Use a query to set speeds on&nbsp; all major state and US highways to 65*</li>
+   <li>Use a query to set speeds on  all major state and US highways to 65*</li>
    <ul>
        <li>((CFCC = 'A31' or CFCC = 'A35') and ALT_NAME like 'SR%') and (USEEXIST is null or "USEEXIST" &lt;&gt; '1')</li>
    </ul>
@@ -67,7 +67,7 @@ categories: []
    <li>Use Select By Location to select all roads that intersect the polygon feature class of urban areas and rural cities created in Step 3. For these selected roads, calculate URBTRAFFIC to a value of '1'.</li>
    <li>Down grade the speeds on all non-divided major local and major highways in settled areas to 40 using the query below. Also exclude Bangerter Highway and US 89 in Davis County. </li>
    <ul>
-       <li>(CFCC = 'A31' or CFCC = 'A21' ) and URBTRAFFIC = '1'&nbsp; and ( ALT_NAME is null or (ALT_NAME &lt;&gt; 'SR 154'&nbsp; and not (ALT_NAME = 'US 89' and DOT_RTPART = '10')))</li>
+       <li>(CFCC = 'A31' or CFCC = 'A21' ) and URBTRAFFIC = '1'  and ( ALT_NAME is null or (ALT_NAME &lt;&gt; 'SR 154'  and not (ALT_NAME = 'US 89' and DOT_RTPART = '10')))</li>
    </ul>
    <li>Down grade the speeds on all freeways in settled areas to 65 using the query below</li>
    <ul>
@@ -75,14 +75,14 @@ categories: []
    </ul>
    <li>Calculate impedence (in minutes) for all ramp-accessed roads (freeways) using query and calculation below:</li>
    <ul>
-       <li>Query: CFCC = 'A15' or CFCC = 'A25' or CFCC = 'A35'&nbsp; or "DOT_RTNAME" like '%R%' or "DOT_RTNAME" like '%C%' or URBTRAFFIC&nbsp; is null</li>
+       <li>Query: CFCC = 'A15' or CFCC = 'A25' or CFCC = 'A35'  or "DOT_RTNAME" like '%R%' or "DOT_RTNAME" like '%C%' or URBTRAFFIC  is null</li>
    </ul>
    <ul>
        <li>Calculation: ( [SHAPE_Length]/1609 * 60) / [SPD_LMT]</li>
    </ul>
    <li>Switch the selection and calculate the impedance (in minutes) for all traffic controlled roads by increasing the travel time by a factor of 1.3 (<strong>CHANGE TO 1.5 in future network builds to make for more realistic travel times!</strong>) to account for stop signs, signals, and turns</li>
    <ul>
-       <li>Query: CFCC = 'A15' or CFCC = 'A25' or CFCC = 'A35'&nbsp; or "DOT_RTNAME" like '%R%' or "DOT_RTNAME" like '%C%' or URBTRAFFIC = '1'</li>
+       <li>Query: CFCC = 'A15' or CFCC = 'A25' or CFCC = 'A35'  or "DOT_RTNAME" like '%R%' or "DOT_RTNAME" like '%C%' or URBTRAFFIC = '1'</li>
        <li>Calculation: ( [SHAPE_Length]/1609 * 60) / [SPD_LMT] *1.3 <strong>(CHANGE TO 1.5 in future builds) </strong></li>
    </ul>
    <li>Impedance needed to be be set differently for each direction on oneway streets and routes. Currently many of the ONE_WAY attributes for limited access freeways/highways needed to be fixed (this should be done in the next update of SGID93.Transportation.Roads in early April. Here's how this was done:</li>
@@ -134,16 +134,16 @@ categories: []
         </ul>
         <li>Query the coordinate values for these selected records (using two temporary fields populated by the calculate geometry field tool), to set the ONE_WAY attribute for these selected records as follows: </li>
         <ul>
-            <li>where y coordinate at start point is&nbsp;&gt; then y coordinate at end point: set oneway = 1</li>
-            <li>where y coordinate at start point is&nbsp;&lt; then y coordinate at end point: set oneway = 2</li>
+            <li>where y coordinate at start point is &gt; then y coordinate at end point: set oneway = 1</li>
+            <li>where y coordinate at start point is &lt; then y coordinate at end point: set oneway = 2</li>
         </ul>
     </ul>
 </ul>
 </ul>
    <li>Add a travel cost field for each direction and inflate the travel code for the wrong direction of travel on oneway segments by a large factor (100 is currently used).</li>
    <ul>
-       <li>Select all roads where the ONE_WAY attribute = 1 (in direction of road segment's orientation) and calculate T_F_IMP_MIN =&nbsp;&nbsp;IMPED_MIN * 100</li>
-       <li>Select all roads where the ONE_WAY attribute = 2 (in opposite direction of road segment's orientation) and calculate F_T_IMP_MIN =&nbsp; IMPED_MIN * 100</li>
+       <li>Select all roads where the ONE_WAY attribute = 1 (in direction of road segment's orientation) and calculate T_F_IMP_MIN =  IMPED_MIN * 100</li>
+       <li>Select all roads where the ONE_WAY attribute = 2 (in opposite direction of road segment's orientation) and calculate F_T_IMP_MIN =  IMPED_MIN * 100</li>
    </ul>
    <li>Building the Network Dataset in ArcCatalog:</li>
    <ul>
@@ -163,7 +163,7 @@ categories: []
          <li>Feature Classes to Participate: Roads</li>
          <li>Model Turns: Yes</li>
          <li>Connectivity: Click subtypes button and set connectivity to END POINT for Limited Access (SUB_TYPE =1 above) and ANY VERTEX for the other roads subtype (SUB_TYPE =2 )</li>
-         <li>Elevation fields = None&nbsp;</li>
+         <li>Elevation fields = None </li>
          <li>Attributes: Remove the default attribute and then click the Add... button. Add a new attribute named TravelMinutes (Cost, Minutes, Double). </li>
          <li>With TravelMinutes selected, click the Evaluators button and from the Source Values tab, set the From_To Type to Field and Value to F_T_IMP_MIN. Set the To_From Type to Field and its Value to T_F_IMP_MIN. Click the Default Values tab and setthe Type for Turn to Global Turn Delays and then click the properties button and set the Seconds cost for Straight(s) and Right to 0 and the Left and Reverse to 30.</li>
          <li>Back at the New Network Dataset attributes window, click Next</li>

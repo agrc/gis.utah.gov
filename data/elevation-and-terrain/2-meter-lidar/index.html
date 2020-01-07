@@ -37,7 +37,7 @@ TwoMeter:
     - 2006
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{{ "/images/DEM_2m_hillshade.jpg" | prepend: site.baseurl }}" alt="Lidar Sample"/>
+  <img class="caption__image" src="{% link images/DEM_2m_hillshade.jpg %}" alt="Lidar Sample"/>
   <figcaption class="caption__text">LiDAR Sample</figcaption>
 </figure>
 {% include abstract.html
@@ -55,7 +55,7 @@ abstract="AGRC has 1, 1.25, and 2 meter LiDAR in .asc format for various areas o
   <div class="grid__col grid__col--12-of-12 package-content">
     <p>Use this <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2006/WasatchFront-2m-2006/LiDAR_2m_Index.zip">shapefile</a> to determine what files to download in the Wasatch Front area. The Heber Valley and Iron County areas download as complete areas in a .zip file. These LiDAR files are in a .asc format and are around 10 mb per 2,000 X 2,000 meter block. This data has a UTM NAD83 NAVD88 Meters zone 12 Geoid 03 projection.</p>
     <ul class="dotless">
-      <li><a href="{{ "/downloads/ASCII_Elevation_Data.doc" | prepend: site.baseurl }}">How to use ASCII files in ArcMap</a>
+      <li><a href="{% link downloads/ASCII_Elevation_Data.doc %}">How to use ASCII files in ArcMap</a>
       <li><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2006/WasatchFront-2m-2006/2_meter_LiDAR_report.doc">2 meter LiDAR Report, Information, and Specifications</a>
       <li><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2006/WasatchFront-2m-2006/2_meter_LiDAR_QA_report.doc">2 meter LiDAR QA Report</a>
       <li><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2006/WasatchFront-2m-2006/2m_LiDAR_Metadata.XML">2 meter LiDAR Metadata</a>
@@ -96,5 +96,4 @@ abstract="AGRC has 1, 1.25, and 2 meter LiDAR in .asc format for various areas o
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>
   </div>
-  {% include packagedata.html name="1Meter"
-  info=page.1Meter %}
+  {% include packagedata.html name="1Meter" info=page.1Meter %}

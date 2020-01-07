@@ -19,7 +19,7 @@ Discover provides high-performance imagery and base maps services in WMS and WMT
 - For imagery downloads visit the [aerial photography data page]({% link data/aerial-photography/index.html %}).
 - Instructions on how to [use the Discover services in Pro/ArcMap](#adding-a-wmts-or-wms-service-to-esri-products).
 - Instructions on how to [use the Discover services in CAD](#adding-a-wms-service-to-cad).
-- Instructions on how to [use the Discover services in Web Maps]({% post_url 2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps %}).
+- Instructions on how to [use the Discover services in Web Maps]({% link _posts/2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps.md %}).
 
 ### Coordinate System and Datum
 {: .text-left}
@@ -39,18 +39,20 @@ The pre-2018 NAIP layers have a stated horizontal positional accuracy of 5 meter
 **ArcGIS Pro 2.x:**
 
 1. `Insert -> Connections -> New WMTS Server`
-1. Paste the `WMTS` link [you have been provided]({{ "/discover/#connect" | prepend: site.baseurl }} "view Discover sign up information") into the `Server URL:` line and click `OK`
+1. Paste the `WMTS` link [you have been provided]({% link discover/index.html %}#connect "view Discover sign up information") into the `Server URL:` line and click `OK`
 1. Navigate to the newly added `utah imagery - WMTS on discover.agrc.utah.gov.wmts` connection under `Servers` in the Catalog window.
-1. Expand the nodes until you see a list of all of the imagery and base map services that are available to your login. The full list can be viewed on the main [Discover]({{ "/discover/#services" | prepend: site.baseurl }}) page.
+1. Expand the nodes until you see a list of all of the imagery and base map services that are available to your login. The full list can be viewed on the main [Discover]({% link discover/index.html %}#services) page.
 1. Add your desired service to your map like you would any other layer.
 
 **ArcMap 10.x**
 
 1. `Add Data`, select `GIS Server` from the `Look in:` dropdown list, and double-click `Add WMTS server`
-1. Paste the `WMTS` link [you have been provided]({{ "/discover/#connect" | prepend: site.baseurl }} "view Discover sign up information") into the `URL:` line and click `OK` (don't worry about Parameters, Server Layers, or Username/Password)
+1. Paste the `WMTS` link [you have been provided]({% link discover/index.html %}#connect "view Discover sign up information") into the `URL:` line and click `OK` (don't worry about Parameters, Server Layers, or Username/Password)
 1. Navigate to the newly added `utah imagery – WMTS on discover.agrc.utah.gov` connection and **double click** to connect.
-  - You can rename the connection after it has been added
-1. Expand the nodes until you see a list of all of the imagery and base map services that are avialbe to your login. The list can be viewed on the main [Discover]({{ "/discover/#services" | prepend: site.baseurl }}) page.
+
+   - You can rename the connection after it has been added
+
+1. Expand the nodes until you see a list of all of the imagery and base map services that are available to your login. The list can be viewed on the main [Discover]({% link discover/index.html %}#services) page.
 1. Add your desired service to your map like you would any other layer.
 
 ### Adding a WMTS or WMS Service to a Web Map
@@ -58,7 +60,7 @@ The pre-2018 NAIP layers have a stated horizontal positional accuracy of 5 meter
 
 {%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='send an email to' hide-punctuation=true %}{% endcapture %}
 
-Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({{"/using-agrcs-new-web-mercator-services-in-your-web-maps/" | prepend:site.baseurl}}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact }} and provide your web map URL domains.
+Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({% link _posts/2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps.md %}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact }} and provide your web map URL domains.
 
 ### Adding a WMS Service to CAD
 {: .text-left}
@@ -71,12 +73,12 @@ Interested in using AGRC's Web Mercator services in your web maps? Take a look a
 
 1. Add a new "WMS/WMTS" connection and paste in the URL to the discover WMTS service.
 
-Read this [blog post]({% post_url 2015-01-20-how-to-use-agrc-base-maps-in-qgis %}) for more details.
+Read this [blog post]({% link _posts/2015-01-20-how-to-use-agrc-base-maps-in-qgis.md %}) for more details.
 
 ### Printing Web Maps with Discover Services
 {: .text-left}
 
-Take a look at this blog post for information about [Printing Web Maps with Discover Services]({{"/printing-web-maps-with-discover-services/" | prepend:site.baseurl}}).
+Take a look at this blog post for information about [Printing Web Maps with Discover Services]({% link _posts/2017-02-02-printing-web-maps-with-discover-services.md %}).
 
 ### Google Archive Services
 {: .text-left}
@@ -116,7 +118,7 @@ Individual organizations will be provided URL links for the Discover services th
 <i class="fas fa-fw fa-lock"></i>
 Our license with Google requires you to put the appropriate logo on any products made using the Google imagery.
 
-[Download zipfile of Google logos]({{ "/downloads/google_logos.zip" | prepend: site.baseurl }})
+[Download zipfile of Google logos]({% link downloads/google_logos.zip %})
 
 ![white transparent]({% link images/ImageryCGoogle_WhiteTransparent.png %})
 ![white on black]({% link images/ImageryCGoogle_WhiteOnBlack.png %})

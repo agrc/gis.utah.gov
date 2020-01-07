@@ -6,7 +6,6 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-22 15:02:38 -0700
-title: Golf Courses
 categories: []
 GolfCourses:
   downloads:
@@ -16,11 +15,10 @@ GolfCourses:
     - October 2016
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{{ "/images/GolfCourse.png" | prepend: site.baseurl }}" alt="Golf Course" />
+  <img class="caption__image" title="map" src="{% link images/GolfCourse.png %}" alt="Golf Course" />
   <figcaption class="caption__text">Golf Course Sample</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mZmdhbVRUdnlBeHc"
-name="Golf Courses"
+{% include abstract.html name="Golf Courses"
 stewards="AGRC"
 abstract="This dataset represents golf course locations within the State of Utah. It should be noted that this is based on the Utah Golf Association's website list of golf corses in Utah and may be incomplete. This dataset also contains the name, city, number of holes, par, and type of gold course." %}
 <div class="grid package">

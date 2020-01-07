@@ -1,5 +1,4 @@
 ---
-title: State Facilities
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -19,11 +18,10 @@ Facilities:
     - 2017
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{{ "/images/StateFacilities.png" | prepend: site.baseurl }}" alt="State Facility Points" />
+  <img class="caption__image" title="map" src="{% link images/StateFacilities.png %}" alt="State Facility Points" />
   <figcaption class="caption__text">Locations of State Facilities</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mbGN6YWlxRWJKcUU"
-name="State Facilities"
+{% include abstract.html name="State Facilities"
 stewards="AGRC & Other State Agencies"
 webapp="https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=dad9d8f66e974748bbc371cb214e31f1"
 abstract="Society.StateFacilities contains locations for state owned or leased buildings." %}
@@ -38,7 +36,7 @@ abstract="Society.StateFacilities contains locations for state owned or leased b
     <p>For users wanting a full Schools data layer please see Society.Schools.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="{{ "/data/society/schools-libraries" | prepend: site.baseurl }}" title="Schools data page">Society.Schools</a>
+      <li><a href="{% link data/society/schools-libraries/index.html %}" title="Schools data page">Society.Schools</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>

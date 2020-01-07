@@ -36,7 +36,7 @@ date: 2011-04-05 22:01:27 -0500
     {% for post in site.categories.Developer limit:6 %}
     <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br/>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a href="{% link  {{ post.path }} %}">{{ post.title }}</a>
       <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
     </li>
     {% endfor %}

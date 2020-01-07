@@ -6,7 +6,6 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-22 15:00:17 -0700
-title: Boat Ramps
 categories: []
 BoatRamps:
   downloads:
@@ -16,11 +15,10 @@ BoatRamps:
     - March 2009
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{{ "/images/BoatRamps.png" | prepend: site.baseurl }}" alt="Boat Ramps Sample" />
+  <img class="caption__image" title="map" src="{% link images/BoatRamps.png %}" alt="Boat Ramps Sample" />
   <figcaption class="caption__text">Boat Ramps Sample</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mYkJCMjg1NGZ5eTQ"
-name="Boat Ramps"
+{% include abstract.html name="Boat Ramps"
 stewards="AGRC and DNR"
 abstract="This dataset contains Utah Boat Ramps including State Parks, some National Park Service and other ramps. This dataset also contains the name of the boat ramp, the water body it is on, the type of vessels that can be launched, and the owner, agency, and administrator of the ramp." %}
 <div class="grid package">
