@@ -126,3 +126,17 @@ The include has a few properties:
   ```liquid
   {% include contact.html subject=page.title contact=site.data.contacts.agrc %}
   ```
+
+### hub downloads
+
+This creates the download links from hub.
+
+```yml
+Item:
+  hub:
+    name: ArcGIS Online name exactly eg Utah Address Points
+    item_id: the item id
+    skip_shapefile: true or false optional
+    skip_fgdb: true or false optional
+    skip_hub: true or false optional
+```

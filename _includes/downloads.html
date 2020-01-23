@@ -1,8 +1,15 @@
 {% assign id = include.name | downcase | replace: ' ', '-' %}
+{%- if include.skip_hub == nil or include.skip_hub == false -%}
 <li><a href="https://opendata.gis.utah.gov/datasets/{{ id }}" id="{{ id }}-hub">{{ include.name }}: SGID Open Data Downloads and APIs</a>
-<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.gdb?session=undefined" id="{{ id }}-gdb">{{ include.name }}: File Geodatabase</a>
-<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.zip?session=undefined" id="{{ id }}-shp">{{ include.name }}: Shapefile</a>
+{%- endif -%}
+{%- if include.skip_fgdb == nil or include.skip_fgdb == false -%}
+<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.gdb" id="{{ id }}-gdb">{{ include.name }}: File Geodatabase</a>
+{%- endif -%}
+{%- if include.skip_shapefile == nil or include.skip_shapefile == false -%}
+<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.zip" id="{{ id }}-shp">{{ include.name }}: Shapefile</a>
+{%- endif -%}
 <script>
+  {%- if include.skip_shapefile == nil or include.skip_shapefile == false -%}
   document.getElementById("{{ id }}-shp").addEventListener('click', function () {
     ga('send', {
       hitType: 'event',
@@ -12,6 +19,8 @@
       transport: 'beacon'
     });
   });
+  {%- endif -%}
+  {%- if include.skip_fgdb == nil or include.skip_fgdb == false -%}
   document.getElementById("{{ id }}-gdb").addEventListener('click', function () {
       ga('send', {
         hitType: 'event',
@@ -21,6 +30,8 @@
         transport: 'beacon'
       });
     });
+    {%- endif -%}
+    {%- if include.skip_hub == nil or include.skip_hub == false -%}
     document.getElementById("{{ id }}-hub").addEventListener('click', function () {
         ga('send', {
           hitType: 'event',
@@ -30,4 +41,5 @@
           transport: 'beacon'
         });
       });
+    {%- endif -%}
 </script>
