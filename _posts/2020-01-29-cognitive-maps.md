@@ -181,7 +181,7 @@ Check out this [Colab Python notebook](https://colab.research.google.com/drive/1
 
 [^Maguire-et-al-2000]: Maguire, E., Gadian, D., Johnsrude, I., Good, C., Ashburner, J., Frackowiak, R., & Frith, C. D. (2000). “Navigational Structural Change in the Hippocampi of Taxi Drivers”. Proceedings of the National Academy of Science 97 (8) 4398-4403.
 
-[^Philos-2009]: Reference required
+[^Woollett-et-al-2009]: Woollett, Katherine et al. “Talent in the taxi: a model system for exploring expertise.” Philosophical transactions of the Royal Society of London. Series B, Biological sciences vol. 364,1522 (2009): 1407-16. [doi:10.1098/rstb.2008.0288](doi:10.1098/rstb.2008.0288)
 
 [^BBC-2000]: BBC. “Taxi Drivers' Brains Grow on the Job”. March 14, 2000. [http://news.bbc.co.uk/2/hi/677048.stm](http://news.bbc.co.uk/2/hi/677048.stm) (accessed Dec 28, 2019)
 
