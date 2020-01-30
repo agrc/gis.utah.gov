@@ -13,9 +13,9 @@ tags:
 
 ![Network Head]({% link images/network_head.png %}){: .flex .flex--center}
 
-I bet you remember where you were on the morning of September 11th, 2001 when you heard the news. I’d venture to say that you also remember the city, state, and room that you were standing in. But why is this?  Why is it that certain memories are permanently tied to a geographic location?
+I bet you remember where you were on the morning of September 11th, 2001 when you heard the news. I’d venture to say that you also remember the city, state, and room that you were standing in. But why is this? Why is it that certain memories are permanently tied to a geographic location?
 
-True, September 11th was a life-altering event, but our brains function similarly with less eventful memories. For instance, maybe it's a particular bend in a road that triggers a specific conversation, or maybe it's a song that takes you back to a time and place. Regardless of the trigger, our brains are remarkably good at creating spatial connections. In addition to the conversation, your brain stored related content such as geographic location, time of day, and the individuals present. And when you retrieve this memory, you likely retrieve the geographic information as well.
+True, September 11th was a life-altering event, but our brains function similarly with less eventful memories. For instance, maybe it's a particular bend in a road that triggers a specific conversation, or maybe it's a song that takes you back to a time and place. Regardless of the trigger, our brains are remarkably good at creating spatial connections. In addition to the conversation, your brain stores related content such as geographic location, time of day, and the individuals present. And when you retrieve this memory, you likely retrieve the geographic information as well.
 
 Does this concept of a spatial storage and retrieval system sound familiar? In the software world we call it a geographic information system (GIS). Using a GIS, we create and store tabular data, along with its spatial component. The strength of this system is that information can be retrieved by either tabular or geographic queries.
 
@@ -28,7 +28,7 @@ The remainder of this article will explore some of the science behind our intern
 <div class="flex flex--around">
   <figure class="caption">
     <img class="caption__image" src="{% link images/place_experiences.png %}" alt="Place Experiences" />
-    <figcaption class="caption__text">Place Experiences (Map of the World: The World According to Illustrators and Storytellers 2013)</figcaption>
+    <figcaption class="caption__text">Place Experiences (London Map from "Map of the World: The World According to Illustrators and Storytellers" 2013)</figcaption>
   </figure>
 </div>
 
@@ -61,7 +61,7 @@ Research shows that in humans, spatial awareness is linked to a specific region 
 ### Episodic Memories
 {: .text-left}
 
-In humans, the hippocampus performs an additional function by looking at experience, time, and place. This unique combination allows us to have what are called episodic memories. These are the memories that are linked to a particular place and time - such as where you were when you heard the news about 9/11. The hippocampus is responsible for retrieving these events from the past. It is thought that this capability advanced in humans during the hunter-gathering days as an extension to the spatial functions found in other animals (Garfield 2013).
+In humans, the hippocampus performs an additional function by looking at experience, time, and place. This unique combination allows us to have what are called episodic memories. These are the memories that are linked to a particular place and time - such as where you were when you heard the news about September 11th. The hippocampus is responsible for retrieving these events from the past. It is thought that this capability advanced in humans during the hunter-gathering days as an extension to the spatial functions found in other animals (Garfield 2013).
 
 ### Memory Storage and Patient HM
 {: .text-left}
@@ -77,12 +77,12 @@ In addition to a spatial memory system, the brain also contains a remarkable onb
 ### Internal Navigation and London Cab Drivers
 {: .text-left}
 
-Known as ["The Knowledge”](https://tfl.gov.uk/info-for/taxis-and-private-hire/licensing/learn-the-knowledge-of-london), all licensed cab drivers in London are required to memorize the city’s 25,000-plus streets as well as thousands of locations and landmarks. The goal is to instantaneously calculate the quickest route between two locations. This requirement might seem excessive in an age when handheld routing devices are in just about everyone's pocket (abound). But, London’s street network is notorious for being one of the most difficult to navigate. The city's lack of grid-like layout can be a chore for the uninformed driver (Jacobs 2018).
+Known as ["The Knowledge”](https://tfl.gov.uk/info-for/taxis-and-private-hire/licensing/learn-the-knowledge-of-london), all licensed cab drivers in London are required to memorize the city’s 25,000-plus streets as well as thousands of locations and landmarks. The goal is to instantaneously calculate the quickest route between two locations. This requirement might seem excessive in an age when handheld routing devices are in just about everyone's pocket. But, London’s street network is notorious for being one of the most difficult to navigate. The city's lack of grid-like layout can be a chore for the uninformed driver (Jacobs 2018).
 
 <div class="flex flex--around">
   <figure class="caption">
     <img class="caption__image" src="{% link images/grid_like_street_networks.png %}" alt="Street Network Orientation" />
-    <figcaption class="caption__text">The Complexity of Street Networks (Jacobs 2018)</figcaption>
+    <figcaption class="caption__text">The Complexity of Street Networks ( <a href="https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid">Jacobs 2018</a> )</figcaption>
   </figure>
 </div>
 
@@ -95,7 +95,7 @@ Maguire’s study observed the drivers for four years as they prepared for the �
 <div class="flex flex--around">
   <figure class="caption">
     <img class="caption__image" src="{% link images/london_iconic_cabs.png %}" alt="London’s Black Cabs" />
-    <figcaption class="caption__text">London’s Iconic Black Cabs <a href="https://www.ft.com/content/ccdde2f0-c0d0-11e4-876d-00144feab7de">(Financial Times)</a></figcaption>
+    <figcaption class="caption__text">London’s Iconic Black Cabs (<a href="https://www.ft.com/content/ccdde2f0-c0d0-11e4-876d-00144feab7de">Financial Times</a>)</figcaption>
   </figure>
 </div>
 
@@ -106,7 +106,7 @@ The London cab driver studies have shown that the hippocampus plays a vital role
 ### Alzheimer's and the Hippocampus
 {: .text-left}
 
-We know that the hippocampus is important for spatial thinking, navigation, and memory creation - and we've seen with Patient HM what happens when it’s completely removed. But, what do we know about it when it’s non-functioning properly?  But, what do we know about the loss of function in the hippocampus?
+We know that the hippocampus is important for spatial thinking, navigation, and memory creation - and we've seen with Patient HM what happens when it’s completely removed. But, what do we know about the hippocampus when it’s not functioning properly?
 
 Often, the first signs of Alzheimer’s in an individual is a sense of disorientation and getting lost in familiar environments. Additionally, individuals begin to lose episodic memories (Setti et al 2017).
 
@@ -124,7 +124,7 @@ Again, looking back to the London cab driver findings, the studies show strong a
 <div class="flex flex--around">
   <figure class="caption">
     <img class="caption__image" src="{% link images/gnss_earth.png %}" alt="GNSS Constellations" />
-    <figcaption class="caption__text">GNSS Constellations <a href="https://www.researchgate.net/figure/All-current-and-planned-GNSS-core-constellations-and-augmentation-systems-This_fig4_323245224">(Tyler Reid, Research Gate)</a></figcaption>
+    <figcaption class="caption__text">GNSS Constellations ( <a href="https://www.researchgate.net/figure/All-current-and-planned-GNSS-core-constellations-and-augmentation-systems-This_fig4_323245224">Tyler Reid, Research Gate</a>)</figcaption>
   </figure>
 </div>
 
@@ -143,33 +143,33 @@ The brain connections that we make when we explore and navigate our environment 
 
 We now know that our brain is a spatial organ. The hippocampus, in particular, is responsible for mapping, navigation, and memory storage. These functions are linked to additional mechanisms such as episodic and long term memories. Research has shown that when we exercise these functions we see an increase in brain activity. These active neurons not only create new connections but preserve and organize existing ones (Javadi et al 2017).
 
-At the core of these functions is a system that stores and retrieves spatial information. In this context, it's easy to make a comparison between the brain a GIS. The hippocampus acts much like a file indexing system working with other parts of the brain, that function as a database, making transactions. When we add the episodic memory aspect, it's similar to enabling the spatial component on the database: memories now contain a geographic location. This explains why places, --such as a bend in the road-- or an event --such as 9/11-- can trigger the retrieval of certain memories. When we think of September 11th, 2001, we not only remember the event but also the where-we-were.
+At the core of these functions is a system that stores and retrieves spatial information. In this context, it's easy to make a comparison between the brain a GIS. The hippocampus acts much like a file indexing system working with other parts of the brain, that function as a database, making transactions. When we add the episodic memory aspect, it's similar to enabling the spatial component on the database: memories now contain a geographic location. This explains why places, --such as a bend in the road-- or an event --such as September 11th-- can trigger the retrieval of certain memories. When we think of September 11th, 2001, we not only remember the event but also the where-we-were.
 
 Neuroscientist Kate Jeffery, who studies cognitive maps, put it well when she said, “A map is a handy way to organize life’s experiences. This makes a lot of sense, since knowing where things happened is a critical part of knowing how to act in the world. The quest now is to understand how memories get attached to this map" (Jeffery 2017).
 
 ### Explore Cognitive Mapping in a GIS
 {: .text-left}
 
-Check out this [Colab Python notebook](https://colab.research.google.com/drive/1sla_wi3qDr_LQ_wC49zkrJ3MMUqYuKTq) that explores what the human brain's cognitive mapping system might look like in a software-based Geographic Information System.
+Check out this [Colab Python notebook](https://colab.research.google.com/drive/1sla_wi3qDr_LQ_wC49zkrJ3MMUqYuKTq) to explore what the human brain's cognitive mapping system might look like in a software-based Geographic Information System.
 
 ![Electric Brain]({% link images/electric_brain.png %}){: .flex .flex--center}
 
 ### Sources
 {: .text-left}
 
-- Advisory Board. “Can GPS Navigation Really 'Ruin Your Brain'?”. Aug 5, 2019. https://www.advisory.com/daily-briefing/2019/08/05/gps (accessed Jan 2, 2020)
+- Advisory Board. “Can GPS Navigation Really 'Ruin Your Brain'?”. Aug 5, 2019. [https://www.advisory.com/daily-briefing/2019/08/05/gps](https://www.advisory.com/daily-briefing/2019/08/05/gps) (accessed Jan 2, 2020)
 
-- Amos, Jonathan. “Arctic Tern's Epic Journey Mapped”. Jan 11, 2010. http://news.bbc.co.uk/2/hi/sci/tech/8451908.stm (accessed December 13, 2019).
+- Amos, Jonathan. “Arctic Tern's Epic Journey Mapped”. Jan 11, 2010. [http://news.bbc.co.uk/2/hi/sci/tech/8451908.stm](http://news.bbc.co.uk/2/hi/sci/tech/8451908.stm) (accessed December 13, 2019).
 
-- Antoniou, Antonis and Gestalten. Map of the World: The World According to Illustrators and Storytellers. January 2013. https://famillesummerbelle.typepad.com/fsblog/2013/02/a-map-of-the-world-book.html (accessed Jan 9, 2020)
+- Antoniou, Antonis and Gestalten. Map of the World: The World According to Illustrators and Storytellers. January 2013. [https://famillesummerbelle.typepad.com/fsblog/2013/02/a-map-of-the-world-book.html](https://famillesummerbelle.typepad.com/fsblog/2013/02/a-map-of-the-world-book.html) (accessed Jan 9, 2020)
 
-- Baby Sparks. “What is Spatial Awareness & How Does it Develop?”. 2019. https://babysparks.com/2019/02/20/what-is-spatial-awareness-how-does-it-develop/  source (accessed December 15, 2019).
+- Baby Sparks. “What is Spatial Awareness & How Does it Develop?”. 2019. [https://babysparks.com/2019/02/20/what-is-spatial-awareness-how-does-it-develop/](https://babysparks.com/2019/02/20/what-is-spatial-awareness-how-does-it-develop/) (accessed December 15, 2019).
 
-- BBC. “Taxi Drivers' Brains Grow on the Job”. March 14, 2000. http://news.bbc.co.uk/2/hi/677048.stm (accessed Dec 28, 2019)
+- BBC. “Taxi Drivers' Brains Grow on the Job”. March 14, 2000. [http://news.bbc.co.uk/2/hi/677048.stm](http://news.bbc.co.uk/2/hi/677048.stm) (accessed Dec 28, 2019)
 
-- Bonner-Jackson, Aaron. “Alzheimer’s and a Shrinking Hippocampus”. BioMed Central. October 15, 2015. https://blogs.biomedcentral.com/on-medicine/2015/10/15/alzheimers-shrinking-hippocampus/ (accessed Jan 2, 2020) 
+- Bonner-Jackson, Aaron. “Alzheimer’s and a Shrinking Hippocampus”. BioMed Central. October 15, 2015. [https://blogs.biomedcentral.com/on-medicine/2015/10/15/alzheimers-shrinking-hippocampus/](https://blogs.biomedcentral.com/on-medicine/2015/10/15/alzheimers-shrinking-hippocampus/) (accessed Jan 2, 2020) 
 
-- Fillit, Howard. “Dementia and Alzheimer's Disease: What's the Difference”. https://www.alzdiscovery.org/news-room/blog/dementia-alzheimers-disease-whats-the-difference (accessed Jan 12, 2020)
+- Fillit, Howard. “Dementia and Alzheimer's Disease: What's the Difference”. [https://www.alzdiscovery.org/news-room/blog/dementia-alzheimers-disease-whats-the-difference](https://www.alzdiscovery.org/news-room/blog/dementia-alzheimers-disease-whats-the-difference) (accessed Jan 12, 2020)
 
 - Frisch, Karl von. “The Dance Language and Orientation of Bees”. Harvard University Press. 1993.
 
@@ -177,15 +177,15 @@ Check out this [Colab Python notebook](https://colab.research.google.com/drive/1
 
 - Hoxeng, John. American Surveyor. “A Zoological Datum: How Honey Bees Use Datums for Mapping and Navigation”. October 5, 2019.
 
-- Jabr, Ferris. Scientific American.  “Cache Cab: Taxi Drivers’ Brains Grow to Navigate London’s Streets: Memorizing 25,000 City 
+- Jabr, Ferris. Scientific American. “Cache Cab: Taxi Drivers’ Brains Grow to Navigate London’s Streets: Memorizing 25,000 City 
 
 - Streets Balloons the Hippocampus, but Cabbies May Pay a Hidden Fare in Cognitive Skills”. December 8, 2011.
 
-- Jacobs, Frank. “Street grids matter more to your commute than you might think”. Big Think. July 23, 2018. https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid (accessed December 22, 2019)
+- Jacobs, Frank. “Street grids matter more to your commute than you might think”. Big Think. July 23, 2018. [https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid](https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid) (accessed December 22, 2019)
 
-- Javadi, A., Emo, B., Howard, L. et al. “Hippocampal and Prefrontal Processing of Network Topology to Simulate the Future”. Nat Commun 8, 14652 (2017). https://doi.org/10.1038/ncomms14652
+- Javadi, A., Emo, B., Howard, L. et al. “Hippocampal and Prefrontal Processing of Network Topology to Simulate the Future”. Nat Commun 8, 14652 (2017). [https://doi.org/10.1038/ncomms14652](https://doi.org/10.1038/ncomms14652)
 
-- Jeffrey, Kate. “Maps in the Head: How animals navigate their way around provides clues to how the brain forms, stores and retrieves memories”. Aeon. Jan 25, 2017. https://aeon.co/essays/how-cognitive-maps-help-animals-navigate-the-world (accessed on November 24, 2019)
+- Jeffrey, Kate. “Maps in the Head: How animals navigate their way around provides clues to how the brain forms, stores and retrieves memories”. Aeon. Jan 25, 2017. [https://aeon.co/essays/how-cognitive-maps-help-animals-navigate-the-world](https://aeon.co/essays/how-cognitive-maps-help-animals-navigate-the-world) (accessed on November 24, 2019)
 
 - Kean, Sam. “What Happens When a Neurosurgeon Removes Your Hippocampus”. Wired. May 8, 2014. 
 
