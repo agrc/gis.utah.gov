@@ -3,7 +3,7 @@ title: Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Na
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2020-01-29 10:07:46
+date: 2020-01-30 10:07:46
 categories:
   - Featured
 tags:
