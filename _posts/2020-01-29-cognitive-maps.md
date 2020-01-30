@@ -157,40 +157,40 @@ Check out this [Colab Python notebook](https://colab.research.google.com/drive/1
 ### Sources
 {: .text-left}
 
-* Advisory Board. “Can GPS Navigation Really 'Ruin Your Brain'?”. Aug 5, 2019. https://www.advisory.com/daily-briefing/2019/08/05/gps (accessed Jan 2, 2020)
+- Advisory Board. “Can GPS Navigation Really 'Ruin Your Brain'?”. Aug 5, 2019. https://www.advisory.com/daily-briefing/2019/08/05/gps (accessed Jan 2, 2020)
 
-* Amos, Jonathan. “Arctic Tern's Epic Journey Mapped”. Jan 11, 2010. http://news.bbc.co.uk/2/hi/sci/tech/8451908.stm (accessed December 13, 2019).
+- Amos, Jonathan. “Arctic Tern's Epic Journey Mapped”. Jan 11, 2010. http://news.bbc.co.uk/2/hi/sci/tech/8451908.stm (accessed December 13, 2019).
 
-* Antoniou, Antonis and Gestalten. Map of the World: The World According to Illustrators and Storytellers. January 2013. https://famillesummerbelle.typepad.com/fsblog/2013/02/a-map-of-the-world-book.html (accessed Jan 9, 2020)
+- Antoniou, Antonis and Gestalten. Map of the World: The World According to Illustrators and Storytellers. January 2013. https://famillesummerbelle.typepad.com/fsblog/2013/02/a-map-of-the-world-book.html (accessed Jan 9, 2020)
 
-* Baby Sparks. “What is Spatial Awareness & How Does it Develop?”. 2019. https://babysparks.com/2019/02/20/what-is-spatial-awareness-how-does-it-develop/  source (accessed December 15, 2019).
+- Baby Sparks. “What is Spatial Awareness & How Does it Develop?”. 2019. https://babysparks.com/2019/02/20/what-is-spatial-awareness-how-does-it-develop/  source (accessed December 15, 2019).
 
-* BBC. “Taxi Drivers' Brains Grow on the Job”. March 14, 2000. http://news.bbc.co.uk/2/hi/677048.stm (accessed Dec 28, 2019)
+- BBC. “Taxi Drivers' Brains Grow on the Job”. March 14, 2000. http://news.bbc.co.uk/2/hi/677048.stm (accessed Dec 28, 2019)
 
-* Bonner-Jackson, Aaron. “Alzheimer’s and a Shrinking Hippocampus”. BioMed Central. October 15, 2015. https://blogs.biomedcentral.com/on-medicine/2015/10/15/alzheimers-shrinking-hippocampus/ (accessed Jan 2, 2020) 
+- Bonner-Jackson, Aaron. “Alzheimer’s and a Shrinking Hippocampus”. BioMed Central. October 15, 2015. https://blogs.biomedcentral.com/on-medicine/2015/10/15/alzheimers-shrinking-hippocampus/ (accessed Jan 2, 2020) 
 
-* Fillit, Howard. “Dementia and Alzheimer's Disease: What's the Difference”. https://www.alzdiscovery.org/news-room/blog/dementia-alzheimers-disease-whats-the-difference (accessed Jan 12, 2020)
+- Fillit, Howard. “Dementia and Alzheimer's Disease: What's the Difference”. https://www.alzdiscovery.org/news-room/blog/dementia-alzheimers-disease-whats-the-difference (accessed Jan 12, 2020)
 
-* Frisch, Karl von. “The Dance Language and Orientation of Bees”. Harvard University Press. 1993.
+- Frisch, Karl von. “The Dance Language and Orientation of Bees”. Harvard University Press. 1993.
 
-* Garfield, Simon. On the Map: A Mind-Expanding Exploration of the Way the World Looks, 192, 194. New York: Gotham Books, 2013.
+- Garfield, Simon. On the Map: A Mind-Expanding Exploration of the Way the World Looks, 192, 194. New York: Gotham Books, 2013.
 
-* Hoxeng, John. American Surveyor. “A Zoological Datum: How Honey Bees Use Datums for Mapping and Navigation”. October 5, 2019.
+- Hoxeng, John. American Surveyor. “A Zoological Datum: How Honey Bees Use Datums for Mapping and Navigation”. October 5, 2019.
 
-* Jabr, Ferris. Scientific American.  “Cache Cab: Taxi Drivers’ Brains Grow to Navigate London’s Streets: Memorizing 25,000 City 
+- Jabr, Ferris. Scientific American.  “Cache Cab: Taxi Drivers’ Brains Grow to Navigate London’s Streets: Memorizing 25,000 City 
 
-* Streets Balloons the Hippocampus, but Cabbies May Pay a Hidden Fare in Cognitive Skills”. December 8, 2011.
+- Streets Balloons the Hippocampus, but Cabbies May Pay a Hidden Fare in Cognitive Skills”. December 8, 2011.
 
-* Jacobs, Frank. “Street grids matter more to your commute than you might think”. Big Think. July 23, 2018. https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid (accessed December 22, 2019)
+- Jacobs, Frank. “Street grids matter more to your commute than you might think”. Big Think. July 23, 2018. https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid (accessed December 22, 2019)
 
-* Javadi, A., Emo, B., Howard, L. et al. “Hippocampal and Prefrontal Processing of Network Topology to Simulate the Future”. Nat Commun 8, 14652 (2017). https://doi.org/10.1038/ncomms14652
+- Javadi, A., Emo, B., Howard, L. et al. “Hippocampal and Prefrontal Processing of Network Topology to Simulate the Future”. Nat Commun 8, 14652 (2017). https://doi.org/10.1038/ncomms14652
 
-* Jeffrey, Kate. “Maps in the Head: How animals navigate their way around provides clues to how the brain forms, stores and retrieves memories”. Aeon. Jan 25, 2017. https://aeon.co/essays/how-cognitive-maps-help-animals-navigate-the-world (accessed on November 24, 2019)
+- Jeffrey, Kate. “Maps in the Head: How animals navigate their way around provides clues to how the brain forms, stores and retrieves memories”. Aeon. Jan 25, 2017. https://aeon.co/essays/how-cognitive-maps-help-animals-navigate-the-world (accessed on November 24, 2019)
 
-* Kean, Sam. “What Happens When a Neurosurgeon Removes Your Hippocampus”. Wired. May 8, 2014. 
+- Kean, Sam. “What Happens When a Neurosurgeon Removes Your Hippocampus”. Wired. May 8, 2014. 
 
-* Maguire, E., Gadian, D., Johnsrude, I., Good, C., Ashburner, J., Frackowiak, R., & Frith, C. D. (2000). “Navigational Structural Change in the Hippocampi of Taxi Drivers”. Proceedings of the National Academy of Science 97 (8) 4398-4403.
+- Maguire, E., Gadian, D., Johnsrude, I., Good, C., Ashburner, J., Frackowiak, R., & Frith, C. D. (2000). “Navigational Structural Change in the Hippocampi of Taxi Drivers”. Proceedings of the National Academy of Science 97 (8) 4398-4403.
 
-* Setti, Sharay E et al. “Alterations in Hippocampal Activity and Alzheimer's Disease.” Translational issues in psychological science vol. 3,4 (2017): 348-356.
+- Setti, Sharay E et al. “Alterations in Hippocampal Activity and Alzheimer's Disease.” Translational issues in psychological science vol. 3,4 (2017): 348-356.
 
-* Tuan, Yi-fu. “Topophilia: a Study of Environmental Perception, Attitudes, and Values”. Englewood Cliffs, N.J: Prentice-Hall, 1974.
+- Tuan, Yi-fu. “Topophilia: a Study of Environmental Perception, Attitudes, and Values”. Englewood Cliffs, N.J: Prentice-Hall, 1974.
