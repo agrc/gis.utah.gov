@@ -26,7 +26,7 @@ During 2018 the Federal Emergency Management Agency (FEMA) acquired [~4,693 squa
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fa fa-download"></i> <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D,1%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D&title=Uintah%20Basin%20and%20Heber%20Valley%202018%20LiDAR" target="_blank">Retrieve 2018 Bare Earth DEMs via Interactive Map</a>. First Return DSMs coming soon.
+      <i class="fa fa-download"></i> <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D,1%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D&title=Uintah%20Basin%20and%20Heber%20Valley%202018%20LiDAR" target="_blank">Retrieve 2018 Bare Earth DEMs via Interactive Map</a>.
     </strong>
   </li>
   <li>
