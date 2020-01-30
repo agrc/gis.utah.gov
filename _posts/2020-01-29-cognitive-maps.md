@@ -147,7 +147,10 @@ At the core of these functions is a system that stores and retrieves spatial inf
 
 Neuroscientist Kate Jeffery, who studies cognitive maps, put it well when she said, “A map is a handy way to organize life’s experiences. This makes a lot of sense, since knowing where things happened is a critical part of knowing how to act in the world. The quest now is to understand how memories get attached to this map" (Jeffery 2017).
 
-`Check out this [Colab Python notebook](https://colab.research.google.com/drive/1sla_wi3qDr_LQ_wC49zkrJ3MMUqYuKTq) that explores what the human brain's cognitive mapping system might look like in a software-based Geographic Information System.`
+### Explore Cognitive Mapping in a GIS
+{: .text-left}
+
+Check out this [Colab Python notebook](https://colab.research.google.com/drive/1sla_wi3qDr_LQ_wC49zkrJ3MMUqYuKTq) that explores what the human brain's cognitive mapping system might look like in a software-based Geographic Information System.
 
 ![Electric Brain]({% link images/electric_brain.png %}){: .flex .flex--center}
 
