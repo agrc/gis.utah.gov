@@ -11,11 +11,11 @@ tags:
   - maps
 ---
 
-![Network Head]({% link images/network_head.png %}){: .flex .flex--center}
-
 I bet you remember where you were on the morning of September 11th, 2001 when you heard the news. I’d venture to say that you also remember the city, state, and room that you were standing in. But why is this? Why is it that certain memories are permanently tied to a geographic location?
 
 True, September 11th was a life-altering event, but our brains function similarly with less eventful memories. For instance, maybe it's a particular bend in a road that triggers a specific conversation, or maybe it's a song that takes you back to a time and place. Regardless of the trigger, our brains are remarkably good at creating spatial connections. In addition to the conversation, your brain stores related content such as geographic location, time of day, and the individuals present. And when you retrieve this memory, you likely retrieve the geographic information as well.
+
+![Network Head]({% link images/network_head.png %}){: .flex .flex--center}
 
 Does this concept of a spatial storage and retrieval system sound familiar? In the software world we call it a geographic information system (GIS). Using a GIS, we create and store tabular data, along with its spatial component. The strength of this system is that information can be retrieved by either tabular or geographic queries.
 
@@ -99,7 +99,7 @@ Maguire’s study observed the drivers for four years as they prepared for the �
   </figure>
 </div>
 
-Additional brain navigation studies were conducted using a highly accurate and interactive virtual reality (VR) simulation of London’s central city as both cab drivers and non-cab drivers navigated the landscape using the Sony Playstation video game, The Gateway[^Philos-2009]. The game’s streets network was created using map data from the British Ordnance Survey and also simulated entities such as traffic signals, traffic, and pedestrians. Functional MRI (fMRI) scans taken while they navigated around VR London showed that brain activity in the hippocampus was active in both the licensed cab drivers and the non-cab drivers.
+Additional brain navigation studies were conducted using a highly accurate and interactive virtual reality (VR) simulation of London’s central city as both cab drivers and non-cab drivers navigated the landscape using the Sony Playstation video game, The Gateway (Woollett et al 2009). The game’s streets network was created using map data from the British Ordnance Survey and also simulated entities such as traffic signals, traffic, and pedestrians. Functional MRI (fMRI) scans taken while they navigated around VR London showed that brain activity in the hippocampus was active in both the licensed cab drivers and the non-cab drivers.
 
 The London cab driver studies have shown that the hippocampus plays a vital role in spatial navigation. While creating these mental brain maps, it is thought that the hippocampus grows new neurons and that these neurons further make connections with one another. Researchers think that these findings could have important implications for people with brain damage for diseases such as Alzheimer’s and Parkinson’s[^BBC-2000].
 
@@ -143,7 +143,7 @@ The brain connections that we make when we explore and navigate our environment 
 
 We now know that our brain is a spatial organ. The hippocampus, in particular, is responsible for mapping, navigation, and memory storage. These functions are linked to additional mechanisms such as episodic and long term memories. Research has shown that when we exercise these functions we see an increase in brain activity. These active neurons not only create new connections but preserve and organize existing ones[^Javadi-et-al-2017].
 
-At the core of these functions is a system that stores and retrieves spatial information. In this context, it's easy to make a comparison between the brain a GIS. The hippocampus acts much like a file indexing system working with other parts of the brain, that function as a database, making transactions. When we add the episodic memory aspect, it's similar to enabling the spatial component on the database: memories now contain a geographic location. This explains why places, --such as a bend in the road-- or an event --such as September 11th-- can trigger the retrieval of certain memories. When we think of September 11th, 2001, we not only remember the event but also the where-we-were.
+At the core of these functions is a system that stores and retrieves spatial information. In this context, it's easy to make a comparison between the brain and GIS. The hippocampus acts much like a file indexing system working with other parts of the brain, that function as a database, making transactions. When we add the episodic memory aspect, it's similar to enabling the spatial component on the database: memories now contain a geographic location. This explains why places, --such as a bend in the road-- or an event --such as September 11th-- can trigger the retrieval of certain memories. When we think of September 11th, 2001, we not only remember the event but also the where-we-were.
 
 Neuroscientist Kate Jeffery, who studies cognitive maps, put it well when she said, “A map is a handy way to organize life’s experiences. This makes a lot of sense, since knowing where things happened is a critical part of knowing how to act in the world. The quest now is to understand how memories get attached to this map"[^Jeffery-2017].
 
