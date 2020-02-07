@@ -16,11 +16,11 @@ categories: []
 
 <img src="images/discover.png" alt="Discover Logo" class="flex flex--center outline" />
 <h2 class="text-left"><i class="fas fa-fw fa-plane"></i> About Discover</h2>
-<p>Discover is a cloud-based server that provides AGRC's aerial imagery and base maps to anyone who wants to use them in their GIS, CAD, or web applications. Discover's services are delivered in both <acronym title="Web Map Tile Service">WMTS</acronym> and <acronym title="Web Map Service">WMS</acronym> formats from the Open Geospatial Consortium (OGC) for broad compatibility. Like other common web map services, they are provided in the Web Mercator WGS84 projection (wkid/EPSG 3857).</p>
+<p>Discover is a cloud-based server that provides AGRC's aerial imagery and base maps to anyone who wants to use them in their GIS, CAD, or web applications. Discover delivers its services in both <acronym title="Web Map Tile Service">WMTS</acronym> and <acronym title="Web Map Service">WMS</acronym> formats from the Open Geospatial Consortium (OGC) for broad compatibility. Like other common web map services, they are provided in the Web Mercator WGS84 projection (wkid/EPSG 3857).</p>
 <p>You will need to register for a free Discover account to access these services. There are two levels of Discover access:</p>
 <ul class="dotless">
   <li><i class="far fa-fw fa-circle"></i> <strong>General access</strong>, for anyone who wants to use our base maps, NAIP imagery, or HRO imagery.</li>
-  <li><i class="fas fa-fw fa-lock"></i> <strong>Licensed access</strong>, for Utah's <strong>cities, counties, special districts, state agencies, K-12 school districts, colleges, universities, and tribal entities</strong> (or contractors or formal partners of any of these entities). This provides access to <strong>statewide 6" high-resolution aerial imagery</strong> under the State's <a href="{% link discover/license/index.md %}">Google Imagery License</a> in addition to the general base maps and imagery.</li>
+  <li><i class="fas fa-fw fa-lock"></i> <strong>Licensed access</strong>, for Utah's <strong>cities, counties, special districts, state agencies, K-12 school districts, colleges, universities, and tribal entities</strong> (or contractors or formal partners of any of these entities). This provides access to <strong>statewide high-resolution aerial imagery</strong> under the state's <a href="{% link discover/license/index.md %}">Google and Hexagon imagery licenses</a> in addition to the general base maps and imagery.</li>
 </ul>
 <p class="pop text-center">
   <strong>Anyone</strong> can use the general access imagery and base map services from Discover! To use these services, all you need is a <strong><em>free</em></strong> account and its corresponding quad-word connection link.
@@ -31,14 +31,14 @@ categories: []
 <p>To register a Discover account, fill out the appropriate form:</p>
 <ul class="dotless">
   <li><i class="far fa-fw fa-circle"></i> <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform">Discover Server Access Form</a>, for <strong>general access</strong>.
-  <li><i class="fas fa-fw fa-lock"></i> <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a>, for <strong>licensed access</strong> by one of Utah’s <strong>cities, counties, special districts, state agencies, K-12 school districts, colleges, universities, or tribal entities</strong>, or a contractor or formal partner of one of these organizations. Students in the state of Utah working on school projects also qualify for licensed access; please provide a school-supplied e-mail if possible.
+  <li><i class="fas fa-fw fa-lock"></i> <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a>, for <strong>licensed access</strong> by one of Utah’s <strong>cities, counties, special districts, state agencies, school districts, colleges, universities, or tribal entities</strong>, or a contractor or formal partner of one of these organizations. Students in the state of Utah working on school projects also qualify for licensed access.
 </ul>
 <p class="pop text-center">
-  <strong>Students:</strong> Please use the <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a> (except for students at out-of-state schools)
+  <strong>Students:</strong> Please use the <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a> (except for students at out-of-state schools) and provide a school-supplied e-mail if possible.
 </p>
 <p>Once you have completed the appropriate form (please only fill out <strong>one</strong> or the other, not both), we will review your request, create your account, and send you an e-mail with information about the services.</p>
 <h3 class="text-left" id="connect"><i class="fab fa-fw fa-mixcloud"></i> Get Connected</h3>
-<p>Your account e-mail will contain URLs that you'll enter into your software or web application to access the WMS, WMTS, or tile services. They contain a quad-word (e.g., <code>https://discover.agrc.utah.gov/login/path/your-unique-quad-word/</code>) that is unique to your user and should not be shared with anyone. Multiple requests from the same organization may be given the same quad-word.</p>
+<p>Your account e-mail will contain URLs that you'll enter into your software or web application to access the WMS, WMTS, or tile services. They contain a quad-word (e.g., <code>https://discover.agrc.utah.gov/login/path/your-unique-quad-word/</code>) that is unique to your user and should not be shared with anyone outside your immediate organization. Multiple requests from the same organization may be given the same quad-word.</p>
 <strong>Example Discover URL Templates</strong>
 <ul class="dotless">
   <li>WMS: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/wms</code>
@@ -46,7 +46,7 @@ categories: []
   <li>Tiles: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/tiles/{service}/{z}/{x}/{y}</code>
 </ul>
 <p>For best performance, we recommend using WMTS when possible. WMS is slower and has <a href="{% link discover/resources/index.md %}#layers-not-exporting-when-using-wms">technical limitations</a> that could prevent the layer from drawing when exporting or printing maps.</p>
-<p>To learn more about using the Discover Server, be sure to visit our <a href="{% link discover/resources/index.md %}">Discover Server Resources and Information</a> page. The following topics are covered in more depth on that page, but we've compiled them here as well for your convenience.</p>
+<p>Be sure to visit our <a href="{% link discover/resources/index.md %}">Discover Server Resources and Information</a> page to learn more about using the Discover Server. The following topics are covered in more depth there:</p>
 <ul class="dotless">
   <li><a href="{% link discover/resources/index.md %}#coordinate-system-and-datum">Coordinate system and datum</a>
   <li><a href="{% link discover/resources/index.md %}#horizontal-positional-accuracy">Horizontal positional accuracy</a>
@@ -61,10 +61,18 @@ categories: []
   <li><a href="{% link discover/resources/index.md %}#layers-not-exporting-when-using-wms">Layers not exporting when using WMS</a>
   <li><a href="{% link discover/resources/index.md %}#other-tidbits">Other tidbits</a>
 </ul>
-<p>If you are looking for <strong>imagery downloads</strong>, navigate to the <a href="{% link data/aerial-photography/index.html %}">aerial photography</a> section of the data pages.</p>
+<p>If you are looking for <strong>non-licensed imagery downloads</strong> (NAIP, HRO, etc), check out the <a href="{% link data/aerial-photography/index.html %}">aerial photography</a> section of the data pages.</p>
 <h3 class="text-left" id="services"><i class="far fa-fw fa-map"></i> Available Services</h3>
 <ul class="dotless no-padding">
-  <li><i class="fas fa-fw fa-lock"></i> <code>Utah</code> – Combination of the most recent 1-meter <abbr title="National Agriculture Imagery Program">NAIP</abbr> and 6-inch Google Imagery with scale-dependent rendering <strong>(licensed)</strong>
+  <li><i class="fas fa-fw fa-lock"></i> <code>Utah</code> – Combination of the 2018 Hexagon 30cm imagery and the 2019 Hexagon 15cm imagery (in the urban areas) with scale-dependent rendering <strong>(licensed)</strong>
+    <ul class="dotless no-margin">
+      <li><em>This layer was updated with the new Hexagon imagery. The rural areas now have 12" resolution instead of 6" but are more up-to-date. The Google imagery is still available in the <code>Google</code> service.</em>
+    </ul>
+  <li><i class="fas fa-fw fa-lock"></i> <code>Hexagon 15cm</code> – 6-inch natural-color <a href="{% link data/aerial-photography/index.html %}#HEXAGON">aerial photography from Hexagon</a> collected November 2019 covering the Wasatch Front, Logan, and St. George<strong> (licensed)</strong>
+  <li><i class="fas fa-fw fa-lock"></i> <code>Hexagon 30cm</code> – 12-inch statewide natural-color <a href="{% link data/aerial-photography/index.html %}#HEXAGON">aerial photography from Hexagon</a> collected in 2018<strong> (licensed)</strong>
+    <ul class="dotless no-margin">
+      <li><em>This layer is a higher-resolution copy of the 2018 NAIP imagery</em>
+    </ul>
   <li><i class="fas fa-fw fa-lock"></i> <code>Google</code> – Most recent 6-inch statewide natural-color <a href="{% link data/aerial-photography/index.html %}#GOOGLE">aerial photography from Google</a> collected over 2011–2018<strong> (licensed)</strong>
   <li><i class="fas fa-fw fa-lock"></i> <code>Google {year} archive</code> – Year-by-year updates to the Google Imagery (the latest blocks are always incorporated into the <code>Google</code> service) <strong>(licensed)</strong>
     <ul class="dotless no-margin">
@@ -90,7 +98,7 @@ categories: []
 </ul>
 <h3 class="text-left"><i class="far fa-fw fa-thumbs-up"></i> Best Practices</h3>
 <ul>
-  <li>It is strongly recommended that you use WMTS for the best user experience.
+  <li>We strongly recommended that you use WMTS for the best user experience.
   <li>If you are, or will be, printing base maps from the web and are experiencing blank or empty output, read about our <a href="{% link _posts/2017-02-02-printing-web-maps-with-discover-services.md %}">GP proxy service</a> or our new <a href="{% link _posts/2018-02-26-success-with-serverless.md %}">serverless print proxy</a>.
-  <li>Any end products using the Google Imagery must attribute Google. See the <a href="{% link discover/resources/index.md %}#google-logos">resources page</a> for logos.
+  <li>Any end products using the licensed imagery must attribute Google or Hexagon. See the <a href="{% link discover/resources/index.md %}#google-logos">resources page</a> for logos.
 </ul>
