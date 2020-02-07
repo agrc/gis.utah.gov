@@ -26,10 +26,14 @@ Discover provides high-performance imagery and base maps services in WMS and WMT
 
 The native coordinate system for the Discover services is Web Mercator with a WGS 1984 datum (EPSG 3857). Many users work in coordinate systems with a different datum (for example, EPSG 3566: Utah Central with NAD 1983). Users who need the highest locational precision must use the appropriate [geographic transformation conversion]({% link downloads/Transformation.PNG %}) to remedy the roughly one meter difference between the WGS84 and NAD83 datums' “realization points.” AGRC uses the `NAD_1983_To_WGS_1984_5` transformation when creating base map tiles and web applications, but **there may be more accurate transformations based on the data and area you are working with**. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information about these transformations can be found on ESRI's [NAD 1983 To WGS 1984](https://support.esri.com/en/knowledgebase/techarticles/detail/24159) How-To.
 
+ArcGIS Pro seems to load an appropriate transformation, but you may need to set the transformation in ArcMap or other software.
+
 ### Horizontal Positional Accuracy
 {: .text-left}
 
 Stated horizontal accuracy of the Google imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. You can generally expect higher precision in urban areas where existing supplemental ground control was more abundant.
+
+The 15cm and 30cm Hexagon imagery have stated horizontal accuracies of 1.07 and 2.6 meters (CE90), respectively.
 
 The pre-2018 NAIP layers have a stated horizontal positional accuracy of 5 meters, while the 2018 NAIP products have a horizontal positional accuracy of 4 meters.
 
@@ -128,7 +132,7 @@ Our license with Google requires you to put the appropriate logo on any products
 
 {%capture contact3 %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='Please provide the following information to' hide-punctuation=true %}{% endcapture %}
 
-You may request a local copy of the NAIP, HRO, and Google imagery for off-line consumption when the provided imagery service does not meet your needs. {{ contact3 }} for consideration:
+You may request a local copy of the NAIP, HRO, Hexagon, and Google imagery for off-line consumption when the provided imagery service does not meet your needs. {{ contact3 }} for consideration:
 
 - Name & organization:
 - Reason for request:
@@ -154,6 +158,5 @@ In contrast, WMTS works by delivering a set of fixed-dimension tiles at the requ
 
 - We suggest that you occasionally refresh the connection to the imagery services by right-clicking your service connection in ArcCatalog or ArcMap's Catalog Viewer and selecting the `Refresh` button to see the latest list of available services.
 - Since the Google acquisition flight blocks are not done all at once (as opposed to the NAIP products, which cover the whole state for every acquisition), there will be distinct color and positional changes at flight block boundaries. For large area maps, the color-balanced NAIP may be a more aesthetically pleasing cartographic choice.
-- For future imagery updates, we can certainly pass along requests to Google for additional update areas or for specific collection periods. However, there is no provision in the current contract to create any expectation that those requests will be acted upon.
-- AGRC has downloaded a statewide master set of the image files for redistribution, as the download process directly from Google incurs transactional costs for cloud server & bandwidth usage.
-- AGRC has a [feedback reporting form](https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221) for imagery users around the state to report imagery and service issues so they can be passed along to Google. Please submit your feedback through this form.
+- AGRC has downloaded a statewide master set of the image files for redistribution, as the download process directly from the Google Cloud Platform incurs transactional costs for cloud server & bandwidth usage.
+- AGRC has a [feedback reporting form](https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221) for imagery users around the state to report imagery and service issues so they can be passed along to the imagery producers. Please submit your feedback through this form.
