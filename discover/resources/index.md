@@ -31,11 +31,11 @@ ArcGIS Pro seems to load an appropriate transformation, but you may need to set 
 ### Horizontal Positional Accuracy
 {: .text-left}
 
-Stated horizontal accuracy of the Google imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. You can generally expect higher precision in urban areas where existing supplemental ground control was more abundant.
+Stated horizontal accuracy of the `Google` imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. You can generally expect higher precision in urban areas where existing supplemental ground control was more abundant.
 
-The 15cm and 30cm Hexagon imagery have stated horizontal accuracies of 1.07 and 2.6 meters (CE90), respectively.
+The 15cm and 30cm `Hexagon` imagery have stated horizontal accuracies of 1.07 and 2.6 meters (CE90), respectively.
 
-The pre-2018 NAIP layers have a stated horizontal positional accuracy of 5 meters, while the 2018 NAIP products have a horizontal positional accuracy of 4 meters.
+The pre-2018 `NAIP` layers have a stated horizontal positional accuracy of 5 meters, while the `2018 NAIP` products have a horizontal positional accuracy of 4 meters.
 
 ### Adding a WMTS or WMS Service to ESRI Products
 {: .text-left}
@@ -90,11 +90,14 @@ Take a look at this blog post for information about [Printing Web Maps with Disc
 <i class="fas fa-fw fa-lock"></i>
 In addition to the statewide `Google` imagery service layer, there are archive layers available (ex. `Google 2011archive`) of the Google imagery organized by year collected.
 
-### Google Flight Dates
+### Licensed Imagery Flight Dates
 {: .text-left}
 
 <i class="fas fa-fw fa-lock"></i>
-The dates of each Google imagery flight block can be downloaded as a [shapefile or geodatabase](https://drive.google.com/drive/folders/0ByStJjVZ7c7mcWEzaXNRU09FUGM), viewed in [ArcGIS Online](https://arcg.is/1E0wq3b), or utilized through the `SGID10.INDICES.Google_UtahServiceDates` SGID layer.
+The dates of each Hexagon imagery flight block can be found in the `SGID.INDICES.Hexagon_ServiceDates` SGID layer, which is available in our [Open Data site](https://opendata.gis.utah.gov/datasets/utah-hexagon-flight-blocks).
+
+<i class="fas fa-fw fa-lock"></i>
+Similarly, the dates of each Google imagery flight block can be found in the `SGID.INDICES.Google_UtahServiceDates` SGID layer available on [Open Data](https://opendata.gis.utah.gov/datasets/utah-google-flight-blocks).
 
 ### Pro/ArcMap User Considerations
 {: .text-left}
