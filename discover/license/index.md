@@ -9,15 +9,19 @@ date: 2015-03-10 14:54:47 -0600
 title: High-Resolution Imagery License
 categories: []
 ---
-### Background
+### What is the High-Resolution Imagery?
 {: .text-left}
 
-At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's high resolution (6 inch pixels) aerial photography (_read the original post about the [acquisition]({% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %})_). In 2019, Google announced they would no longer be offering this program and we started searching for other vendors. After evaluating all our options and financial resources, we selected Hexagon Geospatial and their high-resolution imagery. BLOG POST LINK HERE
+At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's state-wide, high-resolution (6-inch pixels) aerial photography as part of the state's on-going efforts to provide affordable high-resolution imagery. Google regularly updated the urban areas over the next few years, but some rural areas of the state were left with years-old imagery.
+
+Google announced in 2019 that they would no longer be offering their program so we started searching for other vendors. After evaluating all our options and financial resources, we selected Hexagon Geospatial and their high-resolution imagery. The first delivery includes state-wide 30cm (~12-inch) coverage flown in 2018 (a higher resolution version of the 2018 NAIP) and 15cm (~6-inch) coverage of the Wasatch Front, Logan, and St. George flown in November 2019. The next delivery in 2021 will provide 15cm coverage of the entire state.
+
+We will continue to provide the previously acquired imagery from the Google contract via the various `Google` services on Discover.
 
 ### The License
 {: .text-left}
 
-The licenses governing both the Google and Hexagon imagery are similar enough to group them together for this discussion. It allows **Utah's cities, counties, special districts, state agencies, school districts, colleges/universities, and tribes** to use the imagery in web and desktop mapping applications either from our streaming web service or from locally-stored files. **Contractors and formal partners of the immediate licensees** are also allowed to use the imagery.
+The licenses governing both the Google and Hexagon imagery are similar, and we will group them together for this discussion. They allows **Utah's cities, counties, special districts, state agencies, school districts, colleges/universities, and tribes** to use the imagery in web and desktop mapping applications either from our streaming web service or from locally-stored files. **Contractors and formal partners of the immediate licensees** are also allowed to use the imagery.
 
 The imagery is hosted on the Google Cloud Platform and delivered as WMS and WMTS Open Geospatial Consortium (OGC) services via AGRC's **[Discover]({% link discover/index.html %})** basemap and imagery server. You can download the original `.jp2` imagery tiles from the Discover index page or get a copy from AGRC, which keeps a master set of the imagery files.
 
@@ -56,25 +60,10 @@ If you qualify to use the licensed imagery under the terms listed above, visit t
 
 **Check out valuable information** and FAQs about [using Discover services]({% link discover/resources/index.md %}).
 
-### Archive news and updates
-{: .text-left}
-
-- Initial announcement: [Utah Acquires High Resolution Aerial Photography License]({% post_url 2015-02-02-utah-acquires-high-resolution-aerial-photography-license %}).
-- Using Utah's Google Imagery License [(March 5th, 2015)]({% post_url 2015-03-05-google-imagery-license-update-march-5th %})
-- Google Imagery [(Update, July 2015)]({% post_url 2015-07-30-google-imagery-update-july-2015 %})
-- Google Imagery [(Update, November 2015)]({% post_url 2015-11-24-google-imagery-service-speed-enhancements-more %})
-- <i class="fab fa-youtube" aria-hidden="true"></i> The [Google Imagery License Town Hall meeting](https://youtu.be/Wch2M2rBJhU) presents background on the license, GIS and developer user info, and a look forward at future options.
-
 {% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
 {{ license }}
 
+<img src="{% link discover/images/LoganCornMazeHarvest.png %}" alt="" title="Harvesting the corn maze at the American West Heritage Center, Wellsville" />
 
-# NEED TO CHANGE THIS IMAGE
-{: .text-left}
-(intersection has been rebuilt)
 
-<a href="{% link downloads/Diverging-Diamond-Interchange-Google-Imagery.png %}">
-<img src="{% link images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png %}" alt="" title="Click to enlarge" />
-</a>
-
-Diverging diamond interchange @ I-15 and 11000 North, Lehi
+Harvesting the corn maze at the American West Heritage Center, Wellsville
