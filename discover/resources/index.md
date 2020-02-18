@@ -94,10 +94,10 @@ In addition to the statewide `Google` imagery service layer, there are archive l
 {: .text-left}
 
 <i class="fas fa-fw fa-lock"></i>
-Once we receive the flight date information from Hexagon, the dates of each imagery flight block will be added to the `SGID.INDICES.Hexagon_ServiceDates` SGID layer. They will then be available on our [Open Data site](https://opendata.gis.utah.gov/datasets/utah-hexagon-service-dates), where you can get a link to their web service or download them in your choice of formats.
+The flight dates of each Hexagon imagery flight line are in the `SGID.INDICES.Hexagon_ServiceDates` SGID layer. This layer is also available on our [Open Data site](https://opendata.gis.utah.gov/datasets/utah-hexagon-service-dates), where you can get a link to the web service or download it in the format of your choice.
 
 <i class="fas fa-fw fa-lock"></i>
-Similarly, the dates of each Google imagery flight block can be found in the `SGID.INDICES.Google_UtahServiceDates` SGID layer available on [Open Data](https://opendata.gis.utah.gov/datasets/utah-google-flight-blocks).
+Similarly, the dates of each Google imagery flight block are stored in the `SGID.INDICES.Google_UtahServiceDates` SGID layer available on [Open Data](https://opendata.gis.utah.gov/datasets/utah-google-flight-blocks).
 
 ### Pro/ArcMap User Considerations
 {: .text-left}
