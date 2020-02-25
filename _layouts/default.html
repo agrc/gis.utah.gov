@@ -228,14 +228,15 @@
     </div>
   </footer>
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', _ => {
-      console.log('domcontentloaded');
-      anchors.options = {
-        placement: 'left'
-      };
+    ;(function() {
+        document.addEventListener('DOMContentLoaded', _ => {
+        anchors.options = {
+          placement: 'left'
+        };
 
-      anchors.add('h2,h3,h4').remove('.logo-text,.main-heading,.error-sub-heading');
-    });
+        anchors.add('h2,h3,h4').remove('.logo-text,.main-heading,.error-sub-heading');
+      });
+    })();
   </script>
   <script>
     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
