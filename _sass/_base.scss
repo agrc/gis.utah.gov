@@ -95,14 +95,10 @@ a {
     img {
         border: 0;
     }
-    &.anchor--link {
-        color: inherit;
-        text-decoration: none;
-    }
 }
 
 
-// Blockquotes
+// Block quotes
 blockquote {
     padding-left: $spacing-unit / 2;
     font-size: 1.2em;
