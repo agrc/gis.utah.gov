@@ -14,14 +14,14 @@ tags:
   - transit special tax areas
 ---
 
-With April just around the corner, it’s tax time again. If you don’t procrastinate and you've already done your taxes, you might be interested in knowing just who is getting that hard-earned money you make. 
+With April just around the corner, it’s tax time again. If you don’t procrastinate and you've already done your taxes, you might be interested in knowing just who is getting that hard-earned money you make.
 
 Well, we have data for that.
 
 #### Newest Tax Entities and Areas for 2017
 
-This is the final 2017 list of all incorporated bodies that have the power to levy a local property tax: school districts, cities, special service districts&mdash;even mosquito abatement districts. While these entities don't represent exact legal boundaries, they are used by the Utah State Tax Commission, Property Tax Division, for assessing properties. The entities can overlap, but the areas represent individual polygons of intersecting entities. 
- 
+This is the final 2017 list of all incorporated bodies that have the power to levy a local property tax: school districts, cities, special service districts&mdash;even mosquito abatement districts. While these entities don't represent exact legal boundaries, they are used by the Utah State Tax Commission, Property Tax Division, for assessing properties. The entities can overlap, but the areas represent individual polygons of intersecting entities.
+
 #### Newest Sales Tax Areas for Quarter 1, 2018
 
 Sales Tax Areas are created from municipal boundaries, metro townships, special sales tax districts, and unincorporated areas. They represent the approximate boundaries of Sales Tax Collection Areas in Utah.
@@ -32,4 +32,4 @@ Transit Special Tax Areas represent areas outside of incorporated municipalities
 
 #### Available for Download
 
-All these data layers can be downloaded from the AGRC website [Sales Tax Areas and Tax Entity Areas]({{ "/data/economy/taxingareas/" | prepend: site.baseurl }}).
+All these data layers can be downloaded from the AGRC website [Sales Tax Areas and Tax Entity Areas]({% link data/economy/taxingareas/index.html %}).

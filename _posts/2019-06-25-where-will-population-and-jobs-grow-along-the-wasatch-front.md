@@ -21,7 +21,7 @@ Seven new GIS datasets are now available that provide annual projections, throug
 - Industrial Jobs
 - Office Jobs
 - Retail Jobs
-- Typical Jobs (a subtotal of jobs with typical travel & commuting patterns (sums Industrial, Office, & Retail Jobs) 
+- Typical Jobs (a subtotal of jobs with typical travel & commuting patterns (sums Industrial, Office, & Retail Jobs)
 - Nontypical Jobs (with non typical travel demand, sums agriculture, constructions, & mining jobs)
 
 Actually there are [14 datasets](http://data.wfrc.org/search?q=projections), as this data is available at two geographic levels:
@@ -33,4 +33,4 @@ The projections datasets were created using the Real Estate Market Model (REMM),
 
 If you're looking to learn more about these datasets, this [metadata doc](https://docs.google.com/document/d/1kgaSewcLy8WIh0BzjwDqNF_3h0R9FN_rzraxoXRa5C8/edit?usp=sharing) is your friend.
 
-![Projected household density in 2050]({{ "/images/ProjectedHouseholdDensity.png" | prepend: site.baseurl }}){: .flex .flex--center .outline }
+![Projected household density in 2050]({% link images/ProjectedHouseholdDensity.png %}){: .flex .flex--center .outline }

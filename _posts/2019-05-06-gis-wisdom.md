@@ -20,7 +20,7 @@ I'd like to suggest that there are some aspects of our platform that we can lear
 
 Here are seven common GIS concepts and what we can learn from them.
 
-![GIS Wisdom]({{ "/images/gis_wisdom.png" | prepend: site.baseurl }}){: .flex .flex--center style="width: 100%; max-width: 350px"}
+![GIS Wisdom]({% link images/gis_wisdom.png %}){: .flex .flex--center style="width: 100%; max-width: 350px"}
 
 ### 1. Versioning
 {: .text-left}
