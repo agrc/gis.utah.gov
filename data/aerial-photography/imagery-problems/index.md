@@ -23,7 +23,7 @@ Some users experience problems using the latest imagery products provided by AGR
 
 #### Washedout or Unrecognized Images
 
-**4-Band Imagery**: The imagery products contain 4-bands of imagery (Infrared, Red, Green, Blue) as opposed to the standard 3-band color imagery (Red, Green, Blue) most are familiar with. The new imagery can, and most software platforms default to, display as a natural color image. **In some cases the 4th band of imagery is not recognized by the software and is either displayed with the other 3-bands of imagery** giving an odd <a href="{% link downloads/TIFF6_washedout.png %}">washedout</a> appearance. Other software platforms may <a href="{% link downloads/TIFF6_MicroStationError.jpg %}">not recognize</a> the imagery at all.
+**4-Band Imagery**: The imagery products contain 4-bands of imagery (Infrared, Red, Green, Blue) as opposed to the standard 3-band color imagery (Red, Green, Blue) most are familiar with. The new imagery can, and most software platforms default to, display as a natural color image. **In some cases the 4th band of imagery is not recognized by the software and is either displayed with the other 3-bands of imagery** giving an odd [washedout]({% link images/TIFF6_washedout.png %}) appearance. Other software platforms may [not recognize]({% link images/TIFF6_MicroStationError.jpg %}) the imagery at all.
 
 #### Solutions
 
@@ -33,12 +33,12 @@ Some users experience problems using the latest imagery products provided by AGR
 
 #### Striping or Artifacts
 
-**Compression**: The imagery is compressed from its native TIFF format to a JPEG in TIFF compression utilizing the YCbCr color space. The TIFF 6.0 format is widely implemented however some older software versions and even some new ones do not have the capability to utilize this format. This can cause images to be improperly displayed with <a href="{% link downloads/TIFF6_Stripes.png %}">stripes</a> or <a href="{% link downloads/TIFF6_Stripes2.png %}">other artifacts</a>.
+**Compression**: The imagery is compressed from its native TIFF format to a JPEG in TIFF compression utilizing the YCbCr color space. The TIFF 6.0 format is widely implemented however some older software versions and even some new ones do not have the capability to utilize this format. This can cause images to be improperly displayed with [stripes]({% link images/TIFF6_Stripes.png %}) or [other artifacts]({% link images/TIFF6_Stripes2.png %}).
 
 #### Solutions
 
-- Download the free image viewer<a href="http://www.irfanview.com/"> IrfanViewServer</a> and save the image to a `jpg` format.
-- Download the free <a href="http://fwtools.maptools.org/" target="_blank" rel="noopener">FWTools</a> toolkit and decompress the TIFF. (_see FWTools example 2 below_)
+- Download the free image viewer [IrfanViewServer](http://www.irfanview.com) and save the image to a `jpg` format.
+- Download the free [FWTools](http://fwtools.maptools.org) toolkit and decompress the TIFF. (_see FWTools example 2 below_)
 
 ##### FWTools
 

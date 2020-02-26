@@ -16,7 +16,7 @@ categories:
   - Featured
   - SGID Blog
 ---
-<p><a href="{{ "/downloads/NAIP2014_RGB-CIR.jpg" | prepend: site.baseurl }}"><img src="{{ "/images/NAIP2014_RGB-CIR.jpg" | prepend: site.baseurl }}" alt="" title="PLSSapp" width="250" height="250" class="inline-text-left" /></a></p>
+<p><a href="{% link images/NAIP2014_RGB-CIR.jpg %}"><img src="{% link images/NAIP2014_RGB-CIR.jpg %}" alt="" title="PLSSapp" width="250" height="250" class="inline-text-left" /></a></p>
 <p>The USDA's 2014 New, statewide one meter 2014 aerial photography is currently being collected as part of the <a href="https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/index" target="_blank" rel="noopener">National Agricultural Imagery Program (NAIP).</a> </p>
 <p>And, the preliminary 2014 NAIP imagery is available now for use as web services.</p>
 <p>This year, the Utah NAIP contractors are required to make the preliminary imagery available through an Early Access Web Service, approximately 5 business days after an area has been acquired. The coverage area will grow until the project is complete (several weeks) and the contractors will continue to make the preliminary imagery web service available until 30 days after final delivery of the final Digital Orthophoto Quarter Quads (DOQQs) products. When the acquisition is finalized, which is expected to be this Fall, the collection will be statewide 1 meter 4-band imagery and will be available as web services and for download from AGRC's servers.</p>
