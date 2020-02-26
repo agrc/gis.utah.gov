@@ -43,7 +43,7 @@ outDEM.save(r'C:\Contours.gdb\dem30_foc25')
 
 Figure out the contour interval and reclassify your DEM. To start, you will want to know the minimum and maximum values of your DEM. The easiest way to do this is right click the DEM in ArcCatalog and find the values under `Statistics` in the Raster Dataset Properties. Once you know the minimum/maximum values of your DEM you can define your contour interval and set up the code to reclassify your DEM.
 
-When [reclassifying](https://pro.arcgis.com/en/pro-app/tool-reference/spatial-analyst/reclassify.htm) the DEM, you will be  assigning elevation ranges defined by your contour interval to a new value. For example, if the minimum value of your DEM is 3000 feet and your contour interval is 200 ft, all elevations from 3000 to 3200 will be calculated to a new elevation of 3200. This will be done for all elevations in your DEM based on the countour interval, basically creating a DEM of terraces. Setting up the code for this part takes a little time, especially if your contour interval is small and your min/max elevation range is large, but on the plus side, you only have to do it once. Your code will look something like this:
+When [reclassifying](https://pro.arcgis.com/en/pro-app/tool-reference/spatial-analyst/reclassify.htm) the DEM, you will be  assigning elevation ranges defined by your contour interval to a new value. For example, if the minimum value of your DEM is 3000 feet and your contour interval is 200 ft, all elevations from 3000 to 3200 will be calculated to a new elevation of 3200. This will be done for all elevations in your DEM based on the contour interval, basically creating a DEM of terraces. Setting up the code for this part takes a little time, especially if your contour interval is small and your min/max elevation range is large, but on the plus side, you only have to do it once. Your code will look something like this:
 
 ```py
 import arcpy
@@ -52,7 +52,7 @@ from arcpy.sa import *
 
 
 arcpy.CheckOutExtension('spatial')
-env.workspace = r'C:\Countours.gdb'
+env.workspace = r'C:\Contours.gdb'
 #Define ranges for entire DEM
 newRange = RemapRange([[3000, 3200, 3200], [3200.1, 3400, 3400], [3400.1, 3600, 3600], [3600.1, 3800, 3800], \
                        [4600.1, 4800, 4800] ,,,,,,,,,,,,,,, [13200.1, 13400, 13400], [13400.1, 13600, 13600]])

@@ -38,7 +38,7 @@ The British took mapping to the next level in the mid to late 1700s with the Bri
   </figure>
 </div>
 
-These advancements made it possible to create accurate cadastre, land, and natural resource maps and eventually paved the way for spatial analysis and map overlays, as accurate and scalable maps could be overlayed and analyzed for spatial patterns.
+These advancements made it possible to create accurate cadastre, land, and natural resource maps and eventually paved the way for spatial analysis and map overlays, as accurate and scalable maps could be overlaid and analyzed for spatial patterns.
 
 ### Spatial Analysis and Map Overlays
 {: .text-left}
@@ -219,7 +219,7 @@ Yet, it took the composition of North America to give rise to the first GIS. The
 
 But development of the first GIS also took a bit of chance. It wasn't enough for the British-born Roger Tomlinson to have conceived the concept; it also took him sitting in the right seat on the right plane (i.e., next to Lee Pratt) on the right day to close the final gap.
 
-The first generation of GIS was dominated by mainframe computers and punch card technology. You see the reoccurrence of the IBM System 360 in the 1960s and its ability to be programmed to cover a range of applications.
+The first generation of GIS was dominated by mainframe computers and punch card technology. You see the recurrence of the IBM System 360 in the 1960s and its ability to be programmed to cover a range of applications.
 
 You also see how timing played a role in the second generation of GIS, as personal computing and software applications were the focus. Jack Dangermond's timing at the Lab put him in position to successfully launch ESRI, and then, by the 1980s, personal computers were prevalent enough for ESRI to bring the first cross-platform, do-it-yourself GIS application to market.
 

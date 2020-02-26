@@ -13,7 +13,7 @@ tags:
   - wms
   - wmts
 date: 2016-09-30 16:55:53
-title: Where and How? High Resolution Base Maps and Google Imagery Useage
+title: Where and How? High Resolution Base Maps and Google Imagery Usage
 categories:
   - Featured
 ---

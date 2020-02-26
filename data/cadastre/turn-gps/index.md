@@ -41,7 +41,7 @@ Visit [turngps.utah.gov](http://turngps.utah.gov) and follow these steps to get 
 1. That will take you to the payment page.
 1. Finally, it will take approximately 24 hours for the subscription payment to cycle through and the activation to be complete for field work.
 
-These are the things you wil need to fill out registration form.
+These are the things you will need to fill out registration form.
 
 - Organization (avoid punctuation)
 - Login

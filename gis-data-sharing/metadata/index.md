@@ -109,7 +109,7 @@ Functionally, this is quite possibly the most important section of the metadata.
 
   1. Use `Detailed Description --> Attribute --> General` tab to create a description for each field describing what the attribute values represent
   1. Use `Detailed Description --> Attribute --> General` tab to create a general field description and then use the `Attribute Domain Values` tab to enter codes and descriptions for each field.
-  1. Use Overview Description Tab's Entity and Attribite Overview or Entity and Attribite Detail Citation Link to an external (URL) or imbedded (and hopefully non-proprietary format) document within the metadata
+  1. Use Overview Description Tab's Entity and Attribute Overview or Entity and Attribute Detail Citation Link to an external (URL) or embedded (and hopefully non-proprietary format) document within the metadata
 
 ### Metadata Reference Tab
 #### Item 18. Metadata contact
