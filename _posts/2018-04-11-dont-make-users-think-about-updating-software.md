@@ -17,7 +17,7 @@ As software developers, we want the people who are using our software to ~~enjoy
 
 > The people who are using your software are motivated by the desire to save time.
 
-Building on the blog post from Scott Davis, _[Cache Breaking for Faster Web Application Updates]({% post_url 2018-03-23-cache-breaking-for-faster-web-application-updates %})_, which is about website caching techniques for delivering faster updates to users, at its core, the post is about improving the user experience of website applications. Getting updates to users is an often overlooked feature and an afterthought. But it is very important—_especially when you ship a lot of bugs_.
+Building on the blog post from Scott Davis, _[Cache Breaking for Faster Web Application Updates]({% link _posts/2018-03-23-cache-breaking-for-faster-web-application-updates.md %})_, which is about website caching techniques for delivering faster updates to users, at its core, the post is about improving the user experience of website applications. Getting updates to users is an often overlooked feature and an afterthought. But it is very important—_especially when you ship a lot of bugs_.
 
 > I did not find any UX for a Beginner books focused on improving the user experience of delivering software updates to users.
 

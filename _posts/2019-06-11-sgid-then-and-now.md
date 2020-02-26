@@ -113,7 +113,7 @@ Here are some current SGID stats showing top accessed data layers by platform:
 
 One of the challenges of working in technology is that over time, file formats and the way we access data change. This is similarly true for the SGID. As a result, AGRC engages in regular discussions on where the SGID should be going.
 
-Currently, we are working toward [trimming down the SQL ArcSDE enterprise database]({% post_url 2018-09-10-the-incredible-shrinking-sgid %}), which is available to users on the State network.  Moving forward, we will maintain only "live" datasets in the SDE. These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal editing and staging database.
+Currently, we are working toward [trimming down the SQL ArcSDE enterprise database]({% link _posts/2018-09-10-the-incredible-shrinking-sgid.md %}), which is available to users on the State network.  Moving forward, we will maintain only "live" datasets in the SDE. These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal editing and staging database.
 
 All data layers being maintained in the SDE will also be available in [AGOL](https://utah.maps.arcgis.com) and [AGRC’s open data portal](https://opendata.gis.utah.gov/). Here users can consume the web service or download the data. Obsolete data will be written to object storage for retention and will be available on request.
 

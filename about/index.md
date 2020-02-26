@@ -51,7 +51,7 @@ AGRC is funded through a combination of State general and restricted funds and c
 - [Custom Web Map Apps]({% link developer/index.md %})
 - Data Acquisition Partnerships & Contracting
 - [GIS Coordination Newsletter]({% link agrc-newsletter/index.html %})
-- [gis.utah.gov website]({% post_url 2016-03-25-about-our-new-v6-website-in-ghpages %})
+- [gis.utah.gov website]({% link _posts/2016-03-25-about-our-new-v6-website-in-ghpages.md %})
 {: .dotless .no-padding }
 </div>
 <div class="grid__col grid__col--1-of-2" markdown="1">

@@ -10,7 +10,7 @@ tags:
   - roads
 ---
 
-Updates were recently made to the SGID10.Transportation.Roads and [SGID10.Transportation.RoadsODM]({% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}) feature classes that resides on the [Utah SGID ArcSDE database server]({% link sgid-database/index.md %}). NOTE: This is the last update to [SGID10.Transportation.RoadsODM]({% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}).
+Updates were recently made to the SGID10.Transportation.Roads and [SGID10.Transportation.RoadsODM]({% link _posts/2017-08-15-major-updates-coming-to-roads-data-model.md %}) feature classes that resides on the [Utah SGID ArcSDE database server]({% link sgid-database/index.md %}). NOTE: This is the last update to [SGID10.Transportation.RoadsODM]({% link _posts/2017-08-15-major-updates-coming-to-roads-data-model.md %}).
 
 Updated roads data is also available as shapefiles and file geodatabase files for download on the [SGID Roads and Highway System download page]({% link data/transportation/roads-system/index.html %}).
 

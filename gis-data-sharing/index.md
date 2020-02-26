@@ -80,7 +80,7 @@ Listed below are considered the minimum attributes:
 
 ![Parcels]({% link images/90x90_parcels.png %}){: .pull-right .outline }
 
-The information below pertains to the _Basic Parcels_ however _Land Information Record Parcels_ (LIR) are also requested. More information about the LIR Parcels can be found on the [Work Group Recommends Expanded GIS Parcel Sharing]({% post_url 2016-05-26-work-group-recommends-expanded-gis-parcel-sharing %}) page.
+The information below pertains to the _Basic Parcels_ however _Land Information Record Parcels_ (LIR) are also requested. More information about the LIR Parcels can be found on the [Work Group Recommends Expanded GIS Parcel Sharing]({% link _posts/2016-05-26-work-group-recommends-expanded-gis-parcel-sharing.md %}) page.
 
 In addition to the parcel polygon geometry the following fields are a necessity and are considered the minimum attributes for the Basic Parcels:
 
