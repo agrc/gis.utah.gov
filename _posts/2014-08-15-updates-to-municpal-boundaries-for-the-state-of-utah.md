@@ -4,12 +4,12 @@ author:
   email: mheagin@utah.gov
 tags: []
 date: 2014-08-15 11:57:49 -0600
-title: Updates to Municpal Boundaries for the State of Utah
+title: Updates to Municipal Boundaries for the State of Utah
 categories: []
 ---
 <p>Updates were made recently to the<br />
-<a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />
-<a href="{{ "/sgid-database/" | prepend: site.baseurl }}">Utah SGID ArcSDE database server</a>.</p>
+<a href="{% link data/boundaries/citycountystate/index.html %}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />
+<a href="{% link sgid-database/index.md %}">Utah SGID ArcSDE database server</a>.</p>
 <p>The following highlights what has been updated through August 15, 2014:</p>
 <p>There were name changes for: City of North Salt Lake, and East Carbon (formerly East Carbon - Sunnyside City)</p>
 <p><span style="text-decoration: underline;">Municipalities Updates:</span></p>

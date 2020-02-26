@@ -19,7 +19,7 @@ tags:
 
 A travel shed is the set of all the destinations that can be reached from a location within a specified time budget. Travel sheds are valuable both for visualizing and analyzing residents’ access to key services, but also for defining service areas for businesses and other service provider locations, such as schools, transit stations, hospitals, and fire stations.
 
-![Multimodal means all of these working together]({{ "/images/multimodal.png" | prepend: site.baseurl }}){: .inline-text-right .outline }
+![Multimodal means all of these working together]({% link images/multimodal.png %}){: .inline-text-right .outline }
 Geographic information systems (GIS) software can compute and display travel sheds using a set of techniques called _network analysis_. We’re all somewhat familiar with the power of network analysis as, behind the scenes, it’s what makes the basic navigation apps on our phones work. And, of course, network analysis algorithms are completely dependent on having high-quality GIS data, which forms a digital model of the real world travel "network."
 
 Traditionally, much of the travel shed analysis has focused on vehicle travel using GIS data representing the geography of street segments and their characteristics, like speeds, intersections, and one-way restrictions. But thanks to a successful <abbr title="Federal Highway Administration">FHWA</abbr> grant application led by <abbr title="the Utah Department of Transportation">UDOT</abbr>, travel shed analysis capability is planned to be available next summer for bike, pedestrian, transit, and mixed-mode travel analysis along Utah’s Wasatch Front urban area.
@@ -32,7 +32,7 @@ To give a tangible example of just one type of analysis that will be possible as
 
 In the future it should be possible to build upon this project’s deliverables to answer more complex questions like "What are my options for getting from BYU to Weber State for $20 using either light transportation or a ride share service paired with UTA trains and bus rapid transit?" Expanding the project to include analysis capabilities beyond the Wasatch Front urban area is another potential area of future work.
 
-![Simple travelshed example around UTA transit stops]({{ "/images/travelshed.png" | prepend: site.baseurl }}){: .inline-text-right .outline }The major project tasks, expected to be complete by the summer of 2019, are:
+![Simple travelshed example around UTA transit stops]({% link images/travelshed.png %}){: .inline-text-right .outline }The major project tasks, expected to be complete by the summer of 2019, are:
 
 - building region-wide mode-to-mode connectors as GIS features that interconnect transit stations, local roads, bike/pedestrian paths, and the local road network;
 - densifying GIS path data around key destinations, such as campuses and major transit stations;
@@ -40,7 +40,7 @@ In the future it should be possible to build upon this project’s deliverables 
 - automating the process for assembling future updates; and
 - automating common analysis needs with Python code.
 
-As this project wraps up next year, the resulting GIS network analysis dataset and Python code to perform the analyses on the ArcGIS software platform will be publicly available and announced here on [gis.utah.gov](https://gis.utah.gov).
+As this project wraps up next year, the resulting GIS network analysis dataset and Python code to perform the analyses on the ArcGIS software platform will be publicly available and announced here on [gis.utah.gov]({% link index.html %}).
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.multimodal text="For more information contact" punctuation=true %}{% endcapture %}
 {{ contact }}

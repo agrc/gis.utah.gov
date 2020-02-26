@@ -18,7 +18,7 @@ For those of us not in the GIS field at the time, 1991 was a significant year in
 
 In March of 1991, Governor Norman Bangerter signed into law Senate Bill 21, sponsored by Senator Dixie Leavitt. That was 25 years ago this Spring and, nationally, it was one of the, if not the first, instances of GIS being codified into state statute.
 
-<figure class="caption caption--right"><a href ="{{ "/images/SGID25YEARS.png" | prepend: site.baseurl }}"><img class="caption__image" src="{{ "/images/SGID25YEARS_small.png" | prepend: site.baseurl }}" alt="SGID 25th Anniversary Sticker" /></a><figcaption class="caption__text">Commemorative SGID 25th<br>Anniversary Sticker</figcaption></figure>
+<figure class="caption caption--right"><a href ="{% link images/SGID25YEARS.png %}"><img class="caption__image" src="{% link images/SGID25YEARS_small.png %}" alt="SGID 25th Anniversary Sticker" /></a><figcaption class="caption__text">Commemorative SGID 25th<br>Anniversary Sticker</figcaption></figure>
 
 Happy 25th Anniversary SGID!
 
@@ -49,14 +49,14 @@ Get yours from an AGRC staffer at your next opportunity.
 <div class="grid">
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">Cover of SGID Data CD, 1995</h5>
-        <img alt="Cover, SGIC CD, 1995" src="{{ "/images/SGID_Cover.JPG" | prepend: site.baseurl }}">
+        <img alt="Cover, SGIC CD, 1995" src="{% link images/SGID_Cover.JPG %}">
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">SGID Data CD, 1995</h5>
-        <img alt="Inside, SGID CD, 1995" src="{{ "/images/SGID_CD.JPG" | prepend: site.baseurl }}">
+        <img alt="Inside, SGID CD, 1995" src="{% link images/SGID_CD.JPG %}">
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">SGID Data User Guide, 1999</h5>
-        <img alt="SGID Data User Guides, 1999" src="{{ "/images/SGID_UserGuide.JPG" | prepend: site.baseurl }}">
+        <img alt="SGID Data User Guides, 1999" src="{% link images/SGID_UserGuide.JPG %}">
     </div>
 </div>

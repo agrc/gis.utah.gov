@@ -41,6 +41,6 @@ A three-judge panel, consisting of Mike Canning (Deputy Director, Utah Departmen
 **Utah Community Development Office**
 </div>
 
-Most entries can be viewed in the [Maps on the Hill PDF booklet](https://drive.google.com/file/d/1i4_Lm8E0Rb2GpETe1K43DgkKD6maFufy/view?usp=sharing). Be sure to give the [photo album](https://drive.google.com/drive/folders/1Vn9oYHVd1-mvQTA0TYB4yoNcSc0r50md?usp=sharing) a view. And, you can look back on all the [Maps on the Hill events]({{ "/about/maps-on-the-hill" | prepend: site.baseurl }}) on our website.
+Most entries can be viewed in the [Maps on the Hill PDF booklet](https://drive.google.com/file/d/1i4_Lm8E0Rb2GpETe1K43DgkKD6maFufy/view?usp=sharing). Be sure to give the [photo album](https://drive.google.com/drive/folders/1Vn9oYHVd1-mvQTA0TYB4yoNcSc0r50md?usp=sharing) a view. And, you can look back on all the [Maps on the Hill events]({% link about/maps-on-the-hill/index.md %}) on our website.
 
 Thank you to our judges, participants, and volunteers for making this a quality, informative event.

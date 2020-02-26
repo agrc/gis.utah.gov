@@ -12,20 +12,20 @@ tags:
   - discover
 ---
 
-The new 2018 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({{ "/discover/" | prepend:site.baseurl }})[^1]! Updated areas (map below) include what Google calls the "Salt Lake and Logan blocks," which make up most of the Wasatch Front urban area (i.e., Brigham City, Weber County, Davis County, Salt Lake County, and Utah County). The Salt Lake block was flown 9/11/2018 and the Logan block was flown 9/15/2018.
+The new 2018 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({% link discover/index.html %})[^1]! Updated areas (map below) include what Google calls the "Salt Lake and Logan blocks," which make up most of the Wasatch Front urban area (i.e., Brigham City, Weber County, Davis County, Salt Lake County, and Utah County). The Salt Lake block was flown 9/11/2018 and the Logan block was flown 9/15/2018.
 
-[![Google update]({{"/images/NewGoogle_2018_sm.png" | prepend:site.baseurl}} "2018 Google imagery updates - click for larger image")]({{"/images/NewGoogle_2018.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![Google update]({% link images/NewGoogle_2018_sm.png %} "2018 Google imagery updates - click for larger image")]({% link images/NewGoogle_2018.png %}){:.inline-text-right}
 
 The new imagery is already loaded into the `Google`, `Utah`, `Basemap-Hybrid`, and `Google 2018archive` services. If you are using these services, you do not need to change anything layer-wise, but you may need to clear your cache (instructions below). The new imagery is also available for download as georeferenced jpeg files (.jp2) by all organizations that have signed up to use the licensed content on the Discover server.
 
-If you have not signed up for access to the Google imagery, visit the [Discover - Imagery and Base Map Server]({{ "/discover/" | prepend:site.baseurl }}) page for details and to access the links needed to request an account.
+If you have not signed up for access to the Google imagery, visit the [Discover - Imagery and Base Map Server]({% link discover/index.html %}) page for details and to access the links needed to request an account.
 
 {% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
 {{ license }}
 
 #### Don't see the updated imagery?
 
-**ArcMap/ArcGIS Pro users will need to clear their local caches to see the new imagery.** Users can clear their entire ArcMap/ArcGIS Pro caches or clear caches for just the `Google`, `Utah`, and `Basemap-Hybrid` layers. More information can be found on the [Pro/ArcMap User Considerations]({{"/discover/resources/#proarcmap-user-considerations" | prepend:site.baseurl}}) section on the Discover server and Resources and Information page, as well as in the following Cache Clearing Instructions section.
+**ArcMap/ArcGIS Pro users will need to clear their local caches to see the new imagery.** Users can clear their entire ArcMap/ArcGIS Pro caches or clear caches for just the `Google`, `Utah`, and `Basemap-Hybrid` layers. More information can be found on the [Pro/ArcMap User Considerations]({% link discover/resources/index.md %}#proarcmap-user-considerations) section on the Discover server and Resources and Information page, as well as in the following Cache Clearing Instructions section.
 
 #### Cache Clearing Instructions
 

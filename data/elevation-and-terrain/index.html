@@ -27,8 +27,8 @@ USGS-3DEP-DEM:
     <h3 id="USGS-3DEP-DEM">USGS 3DEP Elevation Products</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <a title="Slope" href="{% link images/gallery/sgid/ned_lg.jpg %}" class="inline-text-left">
-      <img src="{% link images/gallery/sgid/thumbs/thumbs_ned.jpg %}" class="inline-text-left outline" alt="dem"/>
+    <a title="Slope" href="{% link images/ned_lg.jpg %}" class="inline-text-left">
+      <img src="{% link images/thumbs_ned.jpg %}" class="inline-text-left outline" alt="dem"/>
     </a>
     <p>The USGS <a href="https://nationalmap.gov/3DEP/">3DEP</a> elevation products from <a href="https://nationalmap.gov/index.html">The National Map</a> are the primary elevation datasets available from the USGS. These elevation products are continually updated by the USGS with LiDAR collected through the 3DEP program as part of the <a href="https://nationalmap.gov/3DEP/neea.html">National Enhanced Elevation Assessment</a>. <a href="https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer">Imagery services</a> of these elevation products are also avalable.</p>
     <p>The AGRC has a statewide collection of the 10 and 30 meter bare-earth DEMs. This dataset was reprojected to UTM NAD83 Zone12 meters. The vertical datum is NAVD88. The boundaries of the elevation models can be viewed in the <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/usgs-3dep-dems/10meter/USGS_DEM_10meter_TileIndex.zip">10 meter</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/usgs-3dep-dems/30meter/USGS_DEM_30meter_TileIndex.zip">30 meter</a> tile index shapefiles.</p>
@@ -47,8 +47,8 @@ USGS-3DEP-DEM:
     <h3 id="LiDAR">LiDAR</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <a title="First Return" href="{% link images/gallery/sgid/lidar_lg.jpg %}">
-      <img class="inline-text-left outline" src="{% link images/gallery/sgid/thumbs/thumbs_lidar.jpg %}" alt="lidar"/>
+    <a title="First Return" href="{% link images/lidar_lg.jpg %}">
+      <img class="inline-text-left outline" src="{% link images/thumbs_lidar.jpg %}" alt="lidar"/>
     </a>
     <p>Light Detection and Ranging (LiDAR) elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by illuminating the target with light often using pulses from a laser. Currently this is the most accurate elevation dataset AGRC has but it is only available for some areas of the state. In addition to the bare-earth DEMs/DTMs and first-return DSMs, most LiDAR data also has point clouds available {% include contact.html subject=page.title contact=site.data.contacts.elevation text='by request from' %} Visit <a href="https://raster.utah.gov/">Raster.utah.gov</a> to explore all available LiDAR collections. For more information about LiDAR visit <a href="{% link data/elevation-and-terrain/exploring-lidar/index.html %}">Exploring LiDAR</a>.</p>
     <p>AGRC has partnered with different agencies over the years to acquire LiDAR data.</p>
@@ -194,8 +194,8 @@ USGS-3DEP-DEM:
     <h3 id="AutoCorrelatedDEM">Auto-Correlated DEM</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <a title="Hillshade" href="{% link images/gallery/sgid/auto-corr_dem_lg.jpg %}">
-      <img src="{% link images/gallery/sgid/thumbs/thumbs_auto-corr_dem.jpg %}" class="inline-text-left outline" alt="auto-corr_dem"/>
+    <a title="Hillshade" href="{% link images/auto-corr_dem_lg.jpg %}">
+      <img src="{% link images/thumbs_auto-corr_dem.jpg %}" class="inline-text-left outline" alt="auto-corr_dem"/>
     </a>
     <p>AGRC has a statewide coverage of 5 meter Auto-Correlated DEMs in addition to some 2 meter areas. The DEMs were created from the imagery collected during the 2006 NAIP and HRO aerial photography flights. <strong>The auto-correlation process is not as rigorous as other methods of elevation modeling such as photogrammetry, lidar mapping, radar mapping, etc, and therefore end-users should be aware that anomalies are expected within the elevation dataset.</strong> In comparison to the USGS DEM datasets, the 2 and 5-meter DEMs in some areas provides higher resolution and horizontal accuracy but anomalies are present within the data.</p>
     <p>The DEM files are stored as <code>.asc</code> formatted files and are ~10MB per 2,000 X 2,000 meter block. This data is in a UTM NAD83 meters projection. The 2 meter DEMs have a Vertical Accuracy of RMSE 4.27' - NSSDA 95% 8.4' and a Horizontal Accuracy NSSDA, radial RMSE of 4.4', 95% confidence 7.6'. The 5 meter DEMs have a have a Vertical Accuracy of RMSE 4m - NSSDA 95% of 9.8m and a Horizontal Accuracy RMSE 3m, NSSDA 95% of 5.2m. For more information about the stated accuracy of the datasets please refer to the metadata and quality assurance reports below.</p>

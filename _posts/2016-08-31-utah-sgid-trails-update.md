@@ -19,10 +19,10 @@ As part of the integration process, a semi-automated process was used to detect 
 
 AGRC also built a "quick and dirty" interface to speed up the manual review and acceptance process for new additions and changes. If a conflict between the two map layers was detected, the reviewer used the statewide 6” high resolution imagery to decide which trails data to include in the new updated version.
 
-To access the data, visit the [trails data page]({{ "/data/recreation/trails/" | prepend: site.baseurl }}), or [interactive map](https://utah.maps.arcgis.com/apps/SimpleViewer/index.html?appid=f3337951e0034ebb889ecebcb3a45f39).
+To access the data, visit the [trails data page]({% link data/recreation/trails/index.html %}), or [interactive map](https://utah.maps.arcgis.com/apps/SimpleViewer/index.html?appid=f3337951e0034ebb889ecebcb3a45f39).
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.trails text='to' %}{% endcapture %}
 AGRC will gladly integrate additional trails data that can be provided in a digital map format. Please send contributions {{ contact }}
 
 _Statewide trails_
-![Statewide Trails Data]({{ "/images/StatewideTrails.png" | prepend: site.baseurl }})
+![Statewide Trails Data]({% link images/StatewideTrails.png %})

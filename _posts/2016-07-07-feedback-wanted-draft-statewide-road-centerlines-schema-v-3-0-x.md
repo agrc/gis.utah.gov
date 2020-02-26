@@ -23,7 +23,7 @@ One future possibility is that the new schema may be used to pilot a shared edit
 
 __Please note that the road centerlines schema proposal is a starting point, and AGRC is looking forward to input as to errors, omissions, and suggestions for better ways to organize the information. Please [submit all feedback](http://goo.gl/forms/fdzA8sV4nuarXGDV2) by August 15, 2016.__
 
-<a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546 "><img src="{{ "/images/roadcenterlinenewschema.png" | prepend: site.baseurl }}" alt="" title="Centerlines Datasets Schema V3.0.3" class="inline-text-right" /></a>
+<a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546 "><img src="{% link images/roadcenterlinenewschema.png %}" alt="" title="Centerlines Datasets Schema V3.0.3" class="inline-text-right" /></a>
 
 A few notes about the new schema:
 

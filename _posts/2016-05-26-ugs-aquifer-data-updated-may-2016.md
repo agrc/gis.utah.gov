@@ -18,4 +18,4 @@ Some data was modified from the original work to provide a dataset with consiste
 
 Users should understand that localized areas of discharge will not be differentiated within the bedrock class and that there may be areas with confining layers within the bedrock that will require special purpose studies to differentiate.
 
-Download the updated data from the [Aquifers data page]({{ "/data/geoscience/aquifers/" | prepend: site.baseurl }}).
+Download the updated data from the [Aquifers data page]({% link data/geoscience/aquifers/index.html %}).

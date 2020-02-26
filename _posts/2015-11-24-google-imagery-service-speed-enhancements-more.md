@@ -10,10 +10,10 @@ categories:
 ---
 
 <div class="grid pop">
-  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{{ "/discover/" | prepend: site.baseurl }}">Discover</a> page.</p>
+  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{% link discover/index.html %}">Discover</a> page.</p>
 </div>
 
-<p><img src="{{ "/images/Screen-Shot-2015-11-24-at-3.45.51-PM-300x251.png" | prepend: site.baseurl }}" alt="" title="Screen Shot 2015-11-24 at 3.45.51 PM" width="300" height="251" class="inline-text-left" />
+<p><img src="{% link images/Screen-Shot-2015-11-24-at-3.45.51-PM-300x251.png %}" alt="" title="Screen Shot 2015-11-24 at 3.45.51 PM" width="300" height="251" class="inline-text-left" />
 <h4>1. Quick Update! WMTS Speeds Much Improved.</h4>
 <p>Last week, several behind-the-scenes changes were made by AppGeo to significantly increase the performance of the discover.agrc.utah.gov WMTS service. We’ve received consistent feedback from our test users indicating that the latest updates meet speed-level expectations for desktop GIS and web app use, including aggressive panning. WMTS should now, by far, out perform the older WMS protocol, the latter of which should really only be used as a last resort.</p>
 <p>For inquiring minds, these changes included offloading https/ssl handling from the application-level to the Google Cloud platform. This had the side benefit of enabling faster transfer from tile storage using the http2 protocol. The addition of a hard 2 second timeout on tile requests should also prevent the occasional latency spikes that were reported.</p>

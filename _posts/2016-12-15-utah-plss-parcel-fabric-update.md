@@ -20,7 +20,7 @@ AGRC is working with SITLA to add digital boundaries for the public and private 
 Since we are now doing all work on the PLSS/GCDB and CadNSDI in the fabric enviorment and the current version is a starting point, a new begining we are going to be calling this data **Utah PLSS Fabric v1.0**
 Sorry for any confusion this may have caused, this v1.0 is the original fabric no adjustments using local data have been made yet, as we do updates now we will build up from v1.0.
 
-The Utah PLSS Parcel Fabric production version is available for download in several forms from the **[PLSS / GCDB Cadastre Data Page]({{ "/data/cadastre/plss/" | prepend: site.baseurl }})**. The file sizes are quite large, so please consider this when downloading.
+The Utah PLSS Parcel Fabric production version is available for download in several forms from the **[PLSS / GCDB Cadastre Data Page]({% link data/cadastre/plss/index.html %})**. The file sizes are quite large, so please consider this when downloading.
 
 ***Available for download:***
 

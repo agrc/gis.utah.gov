@@ -10,12 +10,11 @@ tags:
   - roads
 ---
 
-Updates were recently made to the SGID10.Transportation.Roads and [SGID10.Transportation.RoadsODM]({% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}) feature classes that resides on the [Utah SGID ArcSDE database server]({{ "/sgid-database/" | prepend: site.baseurl }}).
+Updates were recently made to the SGID10.Transportation.Roads and [SGID10.Transportation.RoadsODM]({% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}) feature classes that resides on the [Utah SGID ArcSDE database server]({% link sgid-database/index.md %}).
 
-Updated roads data is also available as shapefiles and file geodatabase files for download on the [SGID Roads and Highway System download page]({{ "/data/transportation/roads-system/" | prepend: site.baseurl }}).
+Updated roads data is also available as shapefiles and file geodatabase files for download on the [SGID Roads and Highway System download page]({% link data/transportation/roads-system/index.html %}).
 
-These updates are also reflected in [AGRC's address locators]({{ "/data/address-geocoders-locators/" | prepend: site.baseurl }}) and the [Utah Next-Generation 911 GIS Database]({{ "/data/911/" | prepend: site.baseurl }}).
-
+These updates are also reflected in [AGRC's address locators]({% link data/address-geocoders-locators/index.html %}) and the [Utah Next-Generation 911 GIS Database]({% link data/911/index.html %}).
 
 The following are highlights from this month's update:
 

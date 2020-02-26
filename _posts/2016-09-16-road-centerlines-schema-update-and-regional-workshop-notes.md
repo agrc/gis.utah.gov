@@ -28,4 +28,4 @@ What follows are a few updates and resources related to this effort.
 
 **Regional Road Centerline Workshops**. Four regional workshops were held in June (Logan, SLC, Cedar City, and Price) with presentations [(view slide deck)](https://docs.google.com/presentation/d/1TZYthlekeE-wNb7I2z6lfuqrFNdz0ujEZdjqRAh22xs/edit?usp=sharing) by UDOT and AGRC staff. The consulting firm that organized the regional workshops as part of an FHWA pooled-funds study, Data Transfer Solutions, produced this [Summary Findings document](https://docs.google.com/document/d/1LbVmedJ2bSjso57p39Kk4sRCaSlI9TcBfHHYVXaEXFk/edit?usp=sharing) which provides a good overview of the workshops and the feedback that was received.
 
-![Logan Regional Road Centerline Workshop]({{ "/images/RoadCenterlineWorkshopBlog.JPG" | prepend: site.baseurl }})
+![Logan Regional Road Centerline Workshop]({% link images/RoadCenterlineWorkshopBlog.JPG %})

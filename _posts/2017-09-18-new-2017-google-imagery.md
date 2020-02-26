@@ -10,23 +10,23 @@ tags:
   - imagery
 ---
 
-The new 2017 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({{ "/discover/" | prepend:site.baseurl }})! Updated areas (map below) include the what Google calls the Salt Lake, Heber, Logan, St. George and Tooele blocks which comprise
+The new 2017 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({% link discover/index.html %})! Updated areas (map below) include the what Google calls the Salt Lake, Heber, Logan, St. George and Tooele blocks which comprise
 -most of the Wasatch Front urban area (Brigham City, Weber County, Davis County, Salt Lake County, and Utah County)
 -many Wasatch Back communities (Summit, Wasatch and Morgan Counties, and Tooele and Cedar Valley.
 -many of the Box Elder and Cache Valley communities
 -the St. George metro area
--western Uinta mountains, including much of the Mirror Lake Highway, Strawberry Reservior, and a northwestern portion of the Unitah Basin
+-western Uinta mountains, including much of the Mirror Lake Highway, Strawberry Reservoir, and a northwestern portion of the Unitah Basin
 
-The new imagery is already loaded into the `Google`, `Utah`, `Basemap-Hybrid`, and `Google 2017archive` services. If you're using these services, you don't need to change a thing layer-wise, but you may need to clear your cache (instructions below). The new imagery is also available for download as geo-referenced jpeg files (.jp2) by all organizations that have signup to use licensed content on the Discover server.
+The new imagery is already loaded into the `Google`, `Utah`, `Basemap-Hybrid`, and `Google 2017archive` services. If you're using these services, you don't need to change a thing layer-wise, but you may need to clear your cache (instructions below). The new imagery is also available for download as geo-referenced jpeg files (.jp2) by all organizations that have sign up to use licensed content on the Discover server.
 
-If you have not signed up for access to the Google imagery visit the [Discover - Imagery and Base Map Server]({{ "/discover/" | prepend:site.baseurl }}) page for details and to access the links needed to request an account.
+If you have not signed up for access to the Google imagery visit the [Discover - Imagery and Base Map Server]({% link discover/index.html %}) page for details and to access the links needed to request an account.
 
-[![Google update]({{"/images/2017UpdatedAreas.png" | prepend:site.baseurl}} "2017 Google Imagery updates - click for larger image")]({{"/images/New2017_Google.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![Google update]({% link images/2017UpdatedAreas.png %} "2017 Google Imagery updates - click for larger image")]({% link images/New2017_Google.png %}){:.inline-text-right}
 
 {% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
 {{ license }}
 
-#### Don't see the updated imagery?
+#### Don't see the updated imagery
 
 **ArcMap/ArcGIS Pro users will need to clear their local caches to see the new imagery.** Users can clear their entire ArcMap/ArcGIS Pro caches or clear caches for just the `Google`, `Utah`, and `Basemap-Hybrid` layers.
 
@@ -36,6 +36,6 @@ If you have not signed up for access to the Google imagery visit the [Discover -
 
 - **ArcGIS Pro** Go to the service’s `Layer Properties -> Cache` tab and select `Clear Cache`. You can also clear your entire Pro cache by going to the Pro project's `Options -> Display` and check `Clear cache` and selecting `OK`.
 
-#### Sponsoring Organizations (2017 Updates):
+#### Sponsoring Organizations (2017 Updates)
 
-![partners]({{"/images/ThankYou2017Partners_Large.png" | prepend:site.baseurl}})
+![partners]({% link images/ThankYou2017Partners_Large.png %})
