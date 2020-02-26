@@ -13,7 +13,7 @@ categories:
   - SGID Blog
 ---
 ### New Utah Political Districts
-{.text-left}
+{: .text-left}
 
 [Political districts for state-level offices]({% link data/political/2012-2021-house-senate-congressional-districts/index.html %}) (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections in 2012 and ongoing representation after the new representatives are installed on Jan 1, 2013.
 
@@ -33,7 +33,7 @@ Specifically, efforts were made to
 - make technical adjustments proposed by the County Clerks to improve district/precinct implementation, as passed by the Legislature during the first 2 weeks of the 2012 general session which include reassignment of specific census blocks and several changes made by boundary description.
 
 ### New Utah Voting Precincts
-{.text-left}
+{: .text-left}
 
 [Political.VistaBallotAreas, a statewide GIS data layer]({% link data/political/voter-precincts/index.html %}) depicting voting precinct and subprecinct boundaries is also available. This dataset is compiled from the County Clerks and is actively used in the 26 of 29 counties that have adopted a GIS-based process to manage precinct-to-residence assignment within VISTA, the statewide voter registration database.
 
