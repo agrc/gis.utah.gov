@@ -10,7 +10,7 @@ tags:
   - roads
 ---
 
-AGRC recently completed updates to the SGID10.Transportation.Roads feature class that resides on the [Utah SGID ArcSDE database server]({{ "/sgid-database/" | prepend: site.baseurl }}). Updated roads data is also available as shapefiles and geodatabase files for download on the [SGID Roads and Highway System download page]({{ "/data/transportation/roads-system/" | prepend: site.baseurl }}). These updates are also reflected in [AGRC's address locators]({{ "/data/address-geocoders-locators/" | prepend: site.baseurl }}) and the [Utah Next-Generation 911 GIS Database]({{ "/data/911/" | prepend: site.baseurl }}).
+AGRC recently completed updates to the SGID10.Transportation.Roads feature class that resides on the [Utah SGID ArcSDE database server]({% link sgid-database/index.md %}). Updated roads data is also available as shapefiles and geodatabase files for download on the [SGID Roads and Highway System download page]({% link data/transportation/roads-system/index.html %}). These updates are also reflected in [AGRC's address locators]({% link data/address-geocoders-locators/index.html %}) and the [Utah Next-Generation 911 GIS Database]({% link data/911/index.html %}).
 
 The following are highlights from this month's update.
 
@@ -19,9 +19,9 @@ The following are highlights from this month's update.
 New roads were added and road names and address ranges were updated for the following counties:
 
 - **Beaver County:** Obtained roads data on 06/07/2019. Previous update was on 08/14/2018.
-- **Box Elder County:** Obtained roads data on 06/07/2019. Previous update was on 05/08/2019. 
+- **Box Elder County:** Obtained roads data on 06/07/2019. Previous update was on 05/08/2019.
 - **Davis County:** Obtained roads data on 07/31/2019. Previous update was on 07/10/2019.
-- **Emery County:** Obtained roads data on 07/31/2019. Previous update was on 08/14/2018. 
+- **Emery County:** Obtained roads data on 07/31/2019. Previous update was on 08/14/2018.
 - **Salt Lake County:** Obtained roads data on 07/31/2019. Previous update was on 07/10/2019.
 - **Utah County:** Obtained roads data on 07/31/2019. Previous update was on 07/10/2019.
 - **Wasatch County:** Obtained roads data on 06/17/2019. Previous update was on 05/08/2019.

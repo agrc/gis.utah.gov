@@ -11,7 +11,7 @@ categories:
 
 AGRC has awarded [Quantum Spatial Inc. (QSI)](https://quantumspatial.com/) and [Digital Mapping Inc. (DMI)](http://admap.com) to acquire [*3,182 square miles*](https://www.arcgis.com/home/webmap/viewer.html?webmap=817e60a9c3374c95aab76c43876b8673&amp;extent=-117.1875,36.3217,-104.5752,43.2351 "view project areas in ArcGIS Online") of LiDAR Elevation data. The LiDAR will be a combination of USGS Quality Level 1 (QL1), 8 ppsm and Quality Level 2 (QL2), 2 ppsm depending on the area. The acquisitions will be during leaf-off conditions with the exception of Monroe Mountain project that will be collected leaf-on. The Monroe Mountain acquisition has already started. The rest of the areas will be collected starting mid-October with the exception of the non-vegetated areas of the Great Salt Lake that will start in the coming weeks. The acquisitions and project deliverables are scheduled to be completed by May 31, 2017 (extended to Aug. 31, 2017).
 
-[![Project area map]({{"/images/2016UtahLidarAcquisition_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/2016UtahLidarAcquisition.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![Project area map]({% link images/2016UtahLidarAcquisition_sm.png %} "view project area map")]({% link images/2016UtahLidarAcquisition.png %}){:.inline-text-right}
 The project areas include:
 
 - Great Salt Lake shoreline and wetlands

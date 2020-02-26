@@ -14,7 +14,7 @@ tags:
   - special transit areas
 ---
 
-As of January 28, we’re officially in tax season, and AGRC can help you stay informed about taxation in Utah! We have updated our 2018 year-end tax entity data, and you can access the data on the [Sales Tax Areas and Tax Entity Areas page]({{ "/data/economy/taxingareas/" | prepend: site.baseurl }}) of the AGRC website. 
+As of January 28, we’re officially in tax season, and AGRC can help you stay informed about taxation in Utah! We have updated our 2018 year-end tax entity data, and you can access the data on the [Sales Tax Areas and Tax Entity Areas page]({% link data/economy/taxingareas/index.html %}) of the AGRC website.
 
 #### Newest Tax Entities for 2018
 
@@ -24,12 +24,12 @@ The [Tax Areas](https://www.google.com/url?q=https://drive.google.com/drive/fold
 
 #### Newest Sales Tax Areas for Quarter 1, 2019
 
-Sales tax areas are created from municipal boundaries, metro townships, special sales tax districts, and  unincorporated areas. They represent the approximate boundaries of sales tax collection areas in Utah. Get the newest sales tax area data with the [Sales Tax Areas dataset](https://www.google.com/url?q=https://drive.google.com/drive/folders/0ByStJjVZ7c7mQy1iYXlqQTJLQUE&sa=D&ust=1550186721948000&usg=AFQjCNEpaTHvD8l59FSJmVzOty8IXj3Reg). 
+Sales tax areas are created from municipal boundaries, metro townships, special sales tax districts, and  unincorporated areas. They represent the approximate boundaries of sales tax collection areas in Utah. Get the newest sales tax area data with the [Sales Tax Areas dataset](https://www.google.com/url?q=https://drive.google.com/drive/folders/0ByStJjVZ7c7mQy1iYXlqQTJLQUE&sa=D&ust=1550186721948000&usg=AFQjCNEpaTHvD8l59FSJmVzOty8IXj3Reg).
 
 #### Updated Transit Special Tax Areas
 
-Transit special tax areas represent areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses). As cities grow and annex the unincorporated areas the transit areas get smaller. Check out the updated [Transit Special Tax Areas dataset](https://www.google.com/url?q=https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVlHOXQ0djUtaEU&sa=D&ust=1550186688195000&usg=AFQjCNF3mO46t3BMv_P_s1e7KxnHnZIzbA). 
+Transit special tax areas represent areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses). As cities grow and annex the unincorporated areas the transit areas get smaller. Check out the updated [Transit Special Tax Areas dataset](https://www.google.com/url?q=https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVlHOXQ0djUtaEU&sa=D&ust=1550186688195000&usg=AFQjCNF3mO46t3BMv_P_s1e7KxnHnZIzbA).
 
 #### Available for Download
 
-All these data layers can be downloaded as a comprehensive dataset from the [Sales Tax Areas and Tax Entity Areas page]({{ "/data/economy/taxingareas/" | prepend: site.baseurl }}) of the AGRC website. 
+All these data layers can be downloaded as a comprehensive dataset from the [Sales Tax Areas and Tax Entity Areas page]({% link data/economy/taxingareas/index.html %}) of the AGRC website.

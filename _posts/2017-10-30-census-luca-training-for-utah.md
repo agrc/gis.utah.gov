@@ -17,7 +17,7 @@ _The info below is a re-posting of information AGRC has emailed to county and ci
 ### What is LUCA?
 {: .text-left }
 
-![Census LUCA Program, 2018]({{ "/images/LUCA2018.png" | prepend: site.baseurl }}){: .inline-text-right .outline }The Census Bureau's Local Update of Census Addresses (LUCA) program allows city, county, and state government to review and suggest edits to the master residential address list that Census uses to plan and execute their survey work. Of particular importance is the ability for Census to track responses across multiple survey mechanisms (field workers, survey-by-mail, and, this year, online response).
+![Census LUCA Program, 2018]({% link images/LUCA2018.png %}){: .inline-text-right .outline }The Census Bureau's Local Update of Census Addresses (LUCA) program allows city, county, and state government to review and suggest edits to the master residential address list that Census uses to plan and execute their survey work. Of particular importance is the ability for Census to track responses across multiple survey mechanisms (field workers, survey-by-mail, and, this year, online response).
 
 While LUCA participation is optional, many cities and counties plan to participate in the address list review. The closer the Census Bureau's master database matches the actual addresses on the ground in your community, the better shot you've got to be fully counted.
 
@@ -40,7 +40,7 @@ Please **[RVSP for the Nov. 2nd training](https://docs.google.com/forms/d/e/1FAI
 
 At this meeting, Census will provide a technical overview of the options for participation in the LUCA address list review. AGRC has asked for Census to move quickly through the basics so additional time can be spent on the QGIS-based application and the shapefile submission option.
 
-Utah communities do not yet need to be formally registered for the LUCA review to attend this training. The training will cover how to get registered to participate in LUCA but you can review online materials ([flyer](https://www2.census.gov/geo/pdfs/partnerships/luca/2020CensusLUCA_Flyer.pdf) or [information guide](https://www2.census.gov/geo/pdfs/partnerships/luca/2020LUCA_InfoGuide.pdf)) to learn more and to get a start on assisting your jurisdiction's highest-elected offical in registering for LUCA now ([see Registration section of this page for instructions](https://www.census.gov/geo/partnerships/luca.html)).
+Utah communities do not yet need to be formally registered for the LUCA review to attend this training. The training will cover how to get registered to participate in LUCA but you can review online materials ([flyer](https://www2.census.gov/geo/pdfs/partnerships/luca/2020CensusLUCA_Flyer.pdf) or [information guide](https://www2.census.gov/geo/pdfs/partnerships/luca/2020LUCA_InfoGuide.pdf)) to learn more and to get a start on assisting your jurisdiction's highest-elected official in registering for LUCA now ([see Registration section of this page for instructions](https://www.census.gov/geo/partnerships/luca.html)).
 
 ### Larger Benefit
 {: .text-left }

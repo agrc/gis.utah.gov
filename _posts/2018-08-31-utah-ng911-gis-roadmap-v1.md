@@ -171,4 +171,4 @@ The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](http:/
 1. [NENA: Detailed Functional and Interface Standards for the NENA i3 Solution (NENA-STA-010.2-2016)](https://www.nena.org/page/i3_Stage3)
 1. [NENA: NG9-1-1 Transition Planning Considerations (NG911NENA-INF-008.2.2013)](https://www.nena.org/page/NG911_TransitionPlng)
 
-![NG911 Data Workflow]({{ "/images/ng911_data_workflow.png" | prepend: site.baseurl }}){: #graphic .flex .flex--center}
+![NG911 Data Workflow]({% link images/ng911_data_workflow.png %}){: #graphic .flex .flex--center}

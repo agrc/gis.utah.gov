@@ -17,13 +17,13 @@ It is common practice in a GIS system to err on the side of including prefix dir
 
 This is extremely common for 'alpha-named' roads (i.e. streets without grid names like 400 South) throughout Utah. And, what's worse, public safety address users prefer the additional information while, often the US Postal Service strips it out of their standardized mailing addresses (because it's unnecessary info within the specified zip code, we think). It is also very common to have entire roads exists in one address quadrant. McClelland Street in the Salt Lake City address system only exists in the southeast quadrant. Addresses assigned to this street in Salt Lake City must have a “South” prefix direction. Locally, “South” can be omitted when referring to addresses on McClelland Street. The same person might add in the prefix for one situation but omit it for another.
 
-A similar situation occurs on State Street in Salt Lake City. 
-![state street addressing]({{ "/images/StateStreetAddressing.png" | prepend: site.baseurl }}){: .inline-text-right}
-This image illustrates how only a small segment of this road has “North” addressing. The map shows that the majority of the addressing on State Street in Salt Lake City to be in the southeast address quadrant. It is unnecessary to provide a prefix direction for a house number greater than 300 on State Street. This is why it is just fine to say 1575 State Street in Salt Lake City. Our current geocoding services, however, are expecting the “South” in order to give a match score of 100. This situation is, of course, not unique to State Street. 
+A similar situation occurs on State Street in Salt Lake City.
+![state street addressing]({% link images/StateStreetAddressing.png %}){: .inline-text-right}
+This image illustrates how only a small segment of this road has “North” addressing. The map shows that the majority of the addressing on State Street in Salt Lake City to be in the southeast address quadrant. It is unnecessary to provide a prefix direction for a house number greater than 300 on State Street. This is why it is just fine to say 1575 State Street in Salt Lake City. Our current geocoding services, however, are expecting the “South” in order to give a match score of 100. This situation is, of course, not unique to State Street.
 
 Another challenge to building geocoders is the fact that we often assign a variety of names to the same road segment. Diagram 2 illustrates this well showing how Mario Capecchi Drive is also known as Medical Drive, Highway 282, and S 1900 E. We expect our geocoding services to find a match when given any of the assigned names. To account for this, you could build a geocoder for each alias field in your data. You then create a composite geocoder that links all the contributing geocoders together. In the case of AGRC's current geocoding service, we have a component service for the all four fields - primary name, alias1 name, alias2 name, and address coordinate name.
 
-![Road Alias Naming]({{ "/images/AliasRoadNaming.png" | prepend: site.baseurl }})
+![Road Alias Naming]({% link images/AliasRoadNaming.png %})
 
 Functionally this works fine, an errs on the side of finding the best definitive match, but the searching process can be slow due to the numerous geocoding services that could be called.
 
@@ -33,7 +33,7 @@ To remedy the often unnecessary expectation for a prefix directions, we programm
 
 We have thrown all of the road name aliases into the same alternate names relational table. This eliminates the need for us to build and maintain four separate geocoders and a composite geocoder. This equates to faster, more efficient geocoding for addresses that didn't match perfectly against the older, more rigid geocoding implementation. And it positions our reference data to be much more inline with the NG 911 GIS data standards that are being finalized by the National Emergency Number Association (NENA).
 
-When implementation is complete (in the coming weeks), we expect our geocoding services to be more versatile, faster, and with higher match scores. We hope this enhances end-user happiness, and, as always we'll look forward to hearing any feedback you can pass along. 
+When implementation is complete (in the coming weeks), we expect our geocoding services to be more versatile, faster, and with higher match scores. We hope this enhances end-user happiness, and, as always we'll look forward to hearing any feedback you can pass along.
 
 Download the geocoding data [here](https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download) and build your own geocoders.
 

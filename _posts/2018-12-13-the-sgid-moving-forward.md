@@ -21,7 +21,7 @@ The SGID was established by state law in 1991 and ensures that GIS map layers ar
 
 In the past, agencies completed data maturity assessments, which provide AGRC with a good foundation for updating and consolidating agency GIS data.
 
-![SGID Data Lifecycle photo]({{ "/images/SGID_lifecycle.jpg" | prepend: site.baseurl }}){: .flex .flex--center}
+![SGID Data Lifecycle photo]({% link images/SGID_lifecycle.jpg %}){: .flex .flex--center}
 
 **Oh yeah, that’s right. And what is AGRC working on now with the SGID?**
 

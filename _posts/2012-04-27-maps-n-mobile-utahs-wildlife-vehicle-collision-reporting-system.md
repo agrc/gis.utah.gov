@@ -12,7 +12,7 @@ title: "Maps n' Mobile: Wildlife-Vehicle Collision Reporting"
 categories:
   - Featured
 ---
-<p><img src="{{ "/images/roadkill.jpg" | prepend: site.baseurl }}" class="inline-text-right" /> Scott Davis, AGRC Developer recently presented at the 2012 ESRI Developer's Summit an a newly released application to help <a title="UDOT" href="https://www.udot.utah.gov">UDOT</a> and the State Division of Wildlife Resources track wildlife-vehicle events (politically palatable term for "roadkill"). Last year a graduate student approached UDOT with an idea to better track wildlife-vehicle collisions across the state.  After further investigation, it was decided that AGRC was best positioned to develop this application by leveraging GIS and mobile.</p>
+<p><img src="{% link images/roadkill.jpg %}" class="inline-text-right" /> Scott Davis, AGRC Developer recently presented at the 2012 ESRI Developer's Summit an a newly released application to help <a title="UDOT" href="https://www.udot.utah.gov">UDOT</a> and the State Division of Wildlife Resources track wildlife-vehicle events (politically palatable term for "roadkill"). Last year a graduate student approached UDOT with an idea to better track wildlife-vehicle collisions across the state.  After further investigation, it was decided that AGRC was best positioned to develop this application by leveraging GIS and mobile.</p>
 <p>Mobile and maps. No big deal, right?  But, two factors made this project unique.  Build an app that:</p>
 <ol>
 <li>Is not dependent on a native operating system (eg. iOS, Droid)</li>

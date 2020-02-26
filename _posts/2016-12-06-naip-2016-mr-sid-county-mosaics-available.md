@@ -10,9 +10,9 @@ title: NAIP 2016 Mr. Sid County Mosaics Available
 categories:
   - Featured
 ---
-[![NAIP 2016 Sample]({{"/images/NAIP2016_sm.png" | prepend:site.baseurl}} "view project area map")]({{"/images/NAIP2016.png" | prepend:site.baseurl}}){:.inline-text-right}
+[![NAIP 2016 Sample]({% link images/NAIP2016_sm.png %} "view project area map")]({% link images/NAIP2016.png %}){:.inline-text-right}
 The statewide 2016 National Agricultural Imagery Program (NAIP) 1 meter aerial photography
-<a href="{{ "/data/aerial-photography/2016-naip-1-meter-orthophotography/" | prepend: site.baseurl }}">is
+<a href="{% link data/aerial-photography/naip/index.html %}">is
 now available</a>. The imagery is currently only available as 3-band RGB Mr. Sid compressed county mosaics. The 4-band GeoTIFF or JP2 tiles should be available in a couple months with statewide imagery services soon to follow.
 
 <ul class="dotless">

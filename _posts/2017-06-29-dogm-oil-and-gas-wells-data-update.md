@@ -24,4 +24,4 @@ This new database was developed by contractors sponsored in part by the U.S. Dep
 {%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.oil_wells %}{% endcapture %}
 {{ contact }}
 
-More information can be found on the [Oil and Gas data resource page]({{ "/data/energy/oil-gas" | prepend: site.baseurl }}).
+More information can be found on the [Oil and Gas data resource page]({% link data/energy/oil-gas/index.html %}).

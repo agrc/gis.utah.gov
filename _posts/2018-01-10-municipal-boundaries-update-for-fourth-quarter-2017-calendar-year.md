@@ -22,7 +22,7 @@ Thanks to all the City and County personal who are responsible for this work.
 
 Another reminder the 2020 Census will be coming up soon so it’s a good time to review your data and get any missing areas included. We will be submitting data to Census BAS program again early in the new year. They like to see documentation of some kind for all areas included.
 
-{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.boundaries %}{% endcapture %} Current data can be downloaded from the [State, County, and Municipal Boundaries]({{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}) data page or you can contact us for more information. {{ contact }}
+{% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.boundaries %}{% endcapture %} Current data can be downloaded from the [State, County, and Municipal Boundaries]({% link data/boundaries/citycountystate/index.html %}) data page or you can contact us for more information. {{ contact }}
 
 Below are the changes and annexations since **September 5th, 2017**,  listed by County and City:
 

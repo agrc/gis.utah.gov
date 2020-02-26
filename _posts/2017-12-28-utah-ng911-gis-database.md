@@ -27,11 +27,11 @@ The live call-routing function uses what GIS professionals call a 'point-in-poly
 With the current system (referred to as E911 since the 'E' was added when mobile phones became supported more than twelve years ago), GIS is used after an emergency call has been delivered to the PSAP - typically to validate the incident location and coordinate the dispatch of responders. Currently, 911 calls are routed to the appropriate PSAP by way of lookup tables (known as Automatic Number Identification (ANI) and Automatic Location Information (ALI)) and a tabular street address table (known as the Master Street Address Guide (MSAG)) that is maintained by the PSAP. Pushing updates to the call-routing system, through these tables, can be timely and cumbersome and may consume valuable time during an emergency situation. NG911, however, will eliminate the need for these tables, as it relies solely on GIS map data. Within Utah, NG911 implementation will be coordinated by the [Utah Communications Authority's](https://uca911.org/911-division) (UCA) 911 Division. To learn more about NG911, visit the UCA [overview page](https://uca911.org/911-division/ng-911-gis).
 
 ## AGRC and NG911
-![NG911 Datasets]({{ "/images/utah-ng911-database.png" | prepend: site.baseurl }}){: .inline-text-right }
+![NG911 Datasets]({% link images/utah-ng911-database.png %}){: .inline-text-right }
 
 AGRC’s role in NG911 is centered on the GIS mapping, or 'geospatial' component. Truth be told - this GIS mapping task - in itself is quite an undertaking. It involves statewide GIS datasets that must be accurate, complete, and current, and the list of required and strongly recommended GIS map layers is comprehensive: address points, PSAP boundaries, municipal boundaries, mile markers and more. Thankfully though, Utah is already in good shape with this data, due to the partnership between AGRC and county and local government, which has resulted in most of these datasets already being NG911-ready. Additionally, AGRC has established state data standards and sharing agreements that facilitate the consistency and longevity of these datasets.
 
-Today, thanks to the willingness and cooperation of agencies within Utah, we are excited to announce the first release of the [Utah NG911 GIS database]({{ "/data/911/" | prepend: site.baseurl }}). This database is based on the National Emergency Number Association’s (NENA) standard for an NG9-1-1 [GIS Data Model](https://dev.nena.org/higherlogic/ws/public/download/9828/20161206_NG9-1-1%20GIS%20Data%20Model_PubRvw.pdf) in its current form. Schema-wise, AGRC will keep current with this standard and will update the Utah NG911 GIS database as NENA makes additions or changes to the specifications. NENA hopes to finalize this standard in the coming year or so.  In terms of data content, AGRC will update the Utah NG911 GIS database on a monthly cycle in conjunction with our [road update cycle]({{ "/data/transportation/roads-system/" | prepend: site.baseurl }}). However, AGRC can, and will, make updates more frequently as needed. AGRC continues to explore collaborative, web-based GIS editing platforms that will make near-live edits possible, thanks to authorative GIS data stewards around the state.
+Today, thanks to the willingness and cooperation of agencies within Utah, we are excited to announce the first release of the [Utah NG911 GIS database]({% link data/911/index.html %}). This database is based on the National Emergency Number Association’s (NENA) standard for an NG9-1-1 [GIS Data Model](https://dev.nena.org/higherlogic/ws/public/download/9828/20161206_NG9-1-1%20GIS%20Data%20Model_PubRvw.pdf) in its current form. Schema-wise, AGRC will keep current with this standard and will update the Utah NG911 GIS database as NENA makes additions or changes to the specifications. NENA hopes to finalize this standard in the coming year or so.  In terms of data content, AGRC will update the Utah NG911 GIS database on a monthly cycle in conjunction with our [road update cycle]({% link data/transportation/roads-system/index.html %}). However, AGRC can, and will, make updates more frequently as needed. AGRC continues to explore collaborative, web-based GIS editing platforms that will make near-live edits possible, thanks to authorative GIS data stewards around the state.
 
 ## Looking Ahead
 
@@ -41,19 +41,19 @@ AGRC also plans to coordinate with UCA to geocode the ALI tables against the Uta
 
 ## Want to Get Involved?
 
-We encourage you to download the [Utah NG911 GIS Database]({{ "/data/911/" | prepend: site.baseurl }}) and take a look at it. We are strong believers that the more eyes are on the data and the more the data is used, the better it will get. If nothing else, make sure house or business addresses, or both, are geocodable in both the `RoadCenterlines` and `AddressPoints` AGRC datasets. These are the datasets that will ensure proper 911 response to your location during an emergency situation.
+We encourage you to download the [Utah NG911 GIS Database]({% link data/911/index.html %}) and take a look at it. We are strong believers that the more eyes are on the data and the more the data is used, the better it will get. If nothing else, make sure house or business addresses, or both, are geocodable in both the `RoadCenterlines` and `AddressPoints` AGRC datasets. These are the datasets that will ensure proper 911 response to your location during an emergency situation.
 
 If you don’t have the required tools and software to interact with the NG911 dataset, you can use our [mapping website](https://atlas.utah.gov/) to validate your address using the same underlying datasets. These datasets are only as good as we collectively make them, so give them a try and let us know if you experience any problems.
 
 {% capture contact %}{% include contact.html text="Comments, questions, or concerns can be directed to" subject=page.title contact=site.data.contacts.roads %}{% endcapture %}
-{{ contact }}
+{{contact}}
 
 ### Resources and Further Reading
 
 - [Utah Communications Authority's 911 Division](https://uca911.org/911-division)
 - [NENA’s Standard for NG9-1-1 GIS Data Model](https://dev.nena.org/higherlogic/ws/public/download/9828/20161206_NG9-1-1%20GIS%20Data%20Model_PubRvw.pdf)
 - [Utah Mapping Resources: Well-Prepared for NextGen 9-1-1]({% post_url 2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911 %})
-- [AGRC’s NG911 Database webpage]({{ "/data/911/" | prepend: site.baseurl }})
+- [AGRC’s NG911 Database webpage]({% link data/911/index.html %})
 - [AGRC’s GitHub Code Repo for the Utah NG911 GIS database ETL process](https://github.com/gregbunce/NextGen911UtahGISDataLoader)
 
 ### NG911 Alphabet Soup

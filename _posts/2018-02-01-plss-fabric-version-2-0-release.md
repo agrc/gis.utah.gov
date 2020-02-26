@@ -28,7 +28,7 @@ For our part at AGRC, incorporating our data has been a little slower, as updati
 
 ## Available for download
 
-The Utah PLSS Fabric production version is available for download in several forms from the [PLSS / Geographic Coordinate Database (GCDB) Cadastre Data Page PLSS / GCDB Cadastre Data Page]({{ "/data/cadastre/plss/#ParcelFabric" | prepend: site.baseurl }}). The file sizes are quite large, so please consider this when downloading.
+The Utah PLSS Fabric production version is available for download in several forms from the [PLSS / Geographic Coordinate Database (GCDB) Cadastre Data Page PLSS / GCDB Cadastre Data Page]({% link data/cadastre/plss/index.html %}#ParcelFabric). The file sizes are quite large, so please consider this when downloading.
 
 - Utah PLSS Fabric V2.0 (833 GB zip file): the entire statewide fabric with an ArcMap 10.4 mxd and set layer files to correctly draw the PLSS data
 - Published CadNSDI V2.0 (509 MB zip file): PLSS Fabric data in the individual feature classes (i.e., townships, first division, second division, intersected, special survey, meandered water, metadata at a glance, and point) published in the CadNSDI schema

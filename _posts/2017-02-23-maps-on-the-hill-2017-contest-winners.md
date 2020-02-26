@@ -13,14 +13,14 @@ categories:
   - Featured
 ---
 
-In an effort to reward the best work at Maps on the Hill 2017, a judged contest was added to this year’s event in the capitol rotunda.  Recognition and small prizes (Utah AGRC wall maps and ESRI press books) were awarded to the map displays that best conveyed the value of GIS-based solutions. ![Judges' Deliberations]({{ "/images/MOTHJudges.png" | prepend: site.baseurl }}){:.inline-text-right}
+In an effort to reward the best work at Maps on the Hill 2017, a judged contest was added to this year’s event in the capitol rotunda.  Recognition and small prizes (Utah AGRC wall maps and ESRI press books) were awarded to the map displays that best conveyed the value of GIS-based solutions. ![Judges' Deliberations]({% link images/MOTHJudges.png %}){:.inline-text-right}
 
 A four judge panel, consisting of Beth Overhuls (Salt Lake County CIO), Evan Curtis (Governor’s Office of Management and Budget), Lance Newman (Dean, Westminster College Arts & Sciences), and Mike Hussey (State CIO), rated the map displays for overall effectiveness, visual appeal, data integration, and innovation.
 
 ### This year’s winners are:
 {:.clear}
 
-![FFSL Map Booklet Page]({{ "/images/FFSLWildfireRisk.png" | prepend: site.baseurl }}){:.inline-text-right}**UGIC 2017 Maps on the Hill - Best of Show**
+![FFSL Map Booklet Page]({% link images/FFSLWildfireRisk.png %}){:.inline-text-right}**UGIC 2017 Maps on the Hill - Best of Show**
 - Division of Forestry Fire and State Lands (FFSL) - Wildfire Risk (11)
 
 **UGIC 2017 Maps on the Hill - Awards of Excellence**
@@ -35,4 +35,4 @@ In the inaugural MOTH contest, the winning FFSL entry went so far as to deploy a
 
 Thanks again to our judges, participants, and volunteers for your part in making this a great event!
 
-![FFSL Table and Campfire]({{ "/images/FFSLCampfire.png" | prepend: site.baseurl }})
+![FFSL Table and Campfire]({% link images/FFSLCampfire.png %})

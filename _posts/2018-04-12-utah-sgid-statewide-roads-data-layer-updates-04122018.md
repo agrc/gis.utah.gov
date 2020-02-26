@@ -10,11 +10,11 @@ tags:
   - roads
 ---
 
-Updates were recently made to the SGID10.Transportation.Roads feature class that resides on the [Utah SGID ArcSDE database server]({{ "/sgid-database/" | prepend: site.baseurl }}).
+Updates were recently made to the SGID10.Transportation.Roads feature class that resides on the [Utah SGID ArcSDE database server]({% link sgid-database/index.md %}).
 
-Updated roads data is also available as shapefiles and file geodatabase files for download on the [SGID Roads and Highway System download page]({{ "/data/transportation/roads-system/" | prepend: site.baseurl }}).
+Updated roads data is also available as shapefiles and file geodatabase files for download on the [SGID Roads and Highway System download page]({% link data/transportation/roads-system/index.html %}).
 
-These updates are also reflected in [AGRC's address locators]({{ "/data/address-geocoders-locators/" | prepend: site.baseurl }}) and the [Utah Next-Generation 911 GIS Database]({{ "/data/911/" | prepend: site.baseurl }}).
+These updates are also reflected in [AGRC's address locators]({% link data/address-geocoders-locators/index.html %}) and the [Utah Next-Generation 911 GIS Database]({% link data/911/index.html %}).
 
 
 The following are highlights from this month's update:
@@ -22,7 +22,7 @@ The following are highlights from this month's update:
 #### County Updates:
 
 - **Box Elder County:** Obtained roads data on 03/06/2018: added new roads, updated road names and address ranges, etc. Previous update was on 01/19/2018.
- 
+
 - **Carbon County:** Obtained roads data on 03/06/2018: added new roads, updated road names and address ranges, etc. Previous update was on 10/27/2017.
 
 - **Davis County:** Obtained roads data on 03/26/2018: added new roads, updated road names and address ranges, etc. Previous update was on 03/16/2018.

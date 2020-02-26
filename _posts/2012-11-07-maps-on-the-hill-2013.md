@@ -9,7 +9,7 @@ title: Maps on the Hill 2013
 categories:
   - Featured
 ---
-<p><a href="{{ "/maps-on-the-hill-2013/dsc_0684/" | prepend: site.baseurl }}" rel="attachment wp-att-11998"><img class="inline-text-left" title="DSC_0684" src="{{ "/images/DSC_0684-800x531.jpg" | prepend: site.baseurl }}" alt="" width="480" height="319" /></a>The 2013 Maps on the Hill event will be held on<strong> January 28, 2013</strong> from 11:00am - 1:30pm at the State Capitol Building.</p>
+<p>The 2013 Maps on the Hill event will be held on<strong> January 28, 2013</strong> from 11:00am - 1:30pm at the State Capitol Building.</p>
 <p>Maps are used in government, business, and education for a wide variety of applications. The Maps on the Hill event gives mapping professionals and students an opportunity to share their latest work with Utah's elected officials and the public.</p>
 <p>Who should submit:</p>
 <ul>
@@ -24,7 +24,7 @@ categories:
 </ul>
 <p>Display Types</p>
 <ul>
-<li>You can submit hardcopy maps, interactive digital maps (you'll need to provide a means to show it on a computer), or both.</li>
+<li>You can submit hard copy maps, interactive digital maps (you'll need to provide a means to show it on a computer), or both.</li>
 <li>The focus of the event is interesting <em>maps</em> that are applicable to a wide variety of audiences.</li>
 <li>Maps can be of any topic</li>
 <li>This event is not a product/services marketing opportunity, it's purpose is to show elected officials the cool maps that people in Utah are making.</li>

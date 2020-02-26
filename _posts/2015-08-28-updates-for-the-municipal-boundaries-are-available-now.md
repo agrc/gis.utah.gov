@@ -10,19 +10,22 @@ title: Updates for the Municipal Boundaries are available now
 categories:
   - SGID Blog
 ---
-<p>    As we head into the last third of this year, we find two new towns in Utah.<br />
-In Wasatch County we now have <strong>Interlaken Town</strong> just north of Midway in the Heber Valley. And over in Daggett County, <strong>Dutch John</strong>  is now an incorporated city. Welcome to them both.<br />
-The following are other changes since April, listed by county:<br />
-Box Elder – Brigham City<br />
-Davis – Layton (3), Woods Cross, Farmington – Kaysville Boundary Adjustment<br />
-Garfield – Panguitch<br />
-Millard – Oak City<br />
-Rich – Garden City<br />
-Salt Lake – Sandy (2)<br />
-Sevier – Richfield<br />
-Summit – Francis, Park City<br />
-Utah – American Fork (4), Lehi (5), Provo, Salem, Spanish Fork, Saratoga Springs, & Boundary Adjustment American Fork and Lehi<br />
-Wasatch – Midway<br />
-Washington – Boundary Adjustment St George and Santa Clara<br />
-Weber – Ogden, West Haven</p>
-<p> <a href="{{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}"><strong>Click here for more info on, and to download the data layers listed above.</strong></a></p>
+
+As we head into the last third of this year, we find two new towns in Utah. In Wasatch County we now have **Interlaken Town** just north of Midway in the Heber Valley. And over in Daggett County, **Dutch John**  is now an incorporated city. Welcome to them both.
+
+The following are other changes since April, listed by county:
+
+- Box Elder – Brigham City
+- Davis – Layton (3), Woods Cross, Farmington – Kaysville Boundary Adjustment
+- Garfield – Panguitch
+- Millard – Oak City
+- Rich – Garden City
+- Salt Lake – Sandy (2)
+- Sevier – Richfield
+- Summit – Francis, Park City
+- Utah – American Fork (4), Lehi (5), Provo, Salem, Spanish Fork, Saratoga Springs, & Boundary Adjustment American Fork and Lehi
+- Wasatch – Midway
+- Washington – Boundary Adjustment St George and Santa Clara
+- Weber – Ogden, West Haven
+
+[Click for more info and to download]({% link data/boundaries/citycountystate/index.html %}) the data layers listed above.
