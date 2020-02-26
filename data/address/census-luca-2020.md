@@ -46,7 +46,7 @@ While limited paper and spreadsheet review options exist, **_the main vehicle fo
 - **_December 15, 2017_**. Deadline for counties and cities to register to participate in LUCA address review. ([see Registration section of this page for instructions](https://www.census.gov/geo/partnerships/luca.html))
 - **_February 2018_**. LUCA review process begins. Participants will each be assigned a 120 day review window that starts upon receipt of their jurisdictions address file from Census.
 - **_Summer 2019_**. Feedback received back from LUCA program.
-- **_Late 2019_*.* Census Bureau targeted addres canvassing field work begins.
+- **_Late 2019_*.* Census Bureau targeted address canvassing field work begins.
 - **_Summer 2019 - Spring 2020_**. Census Bureau New Construction address program in operation.
 - **_April 1, 2020_**. Census Day.
 
@@ -81,7 +81,7 @@ For these reasons, we encourage participants to focus on these types of addresse
 {: .text-left }
 One of the keys to understanding the LUCA process, and to keeping your organization out of trouble, is to remember that, within LUCA, data can only flow one way -- to the Census Bureau.
 
-This means you must keep the master address file provided by Census for your jurisdiction condfidential. You may not use the Census master address file to imporve your own address data resources in any way.
+This means you must keep the master address file provided by Census for your jurisdiction confidential. You may not use the Census master address file to improve your own address data resources in any way.
 
 And, for these reasons, you should design your process to improve your local address data first, ideally in GIS format. Then, when you're done creating and improving your own data, start the comparison and submission process that is specific to LUCA. Address data created outside of the LUCA review has fantastically broad benefit. But, if you create an address point within LUCA, it can only be used by the Census Bureau.
 

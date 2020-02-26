@@ -97,10 +97,10 @@ _Some of the organizations that we have partnered with or worked for recently_
 | [Blue Stakes of Utah](http://www.bluestakes.org/) | Brigham Young University | Bureau of Land Management |
 | Community Impact Board | Department of Agriculture & Food | DABC
 | Department of Commerce | Department of Corrections | [Department of Environmental Quality](https://deq.utah.gov) |
-| Departmemt of Health | Department of Human Services | Department of Heritage & Arts |
+| Department of Health | Department of Human Services | Department of Heritage & Arts |
 | [Department of Natural Resources](http://naturalresources.utah.gov) | Department of Public Safety | [Department of Transportation (UDOT)](http://udot.uplan.opendata.arcgis.com/) |
 | Department of Workforce Services | Federal Communications Commission | Governors Office of Economic Development |
-| Governors Office of Energy Development | Mountainland Asssociation of Government | NENA |
+| Governors Office of Energy Development | Mountainland Association of Government | NENA |
 | [NSGIC](https://www.nsgic.org) | [NTIA](https://www.ntia.doc.gov/) | [Office of Legislative Research & General Counsel](https://le.utah.gov/lrgc/lrgc.htm) |
 | [openaddresses.org](https://openaddresses.io/) | Public Lands Policy & Coordination Office | Public Service Commission |
 | Questar Gas | Salt Lake City | Salt Lake County Surveyor |

@@ -41,4 +41,4 @@ The following are highlights from this month's update:
 - The `DOT_RTID` field that stores UDOT's unique numeric route identifiers was updated
 
 #### General Dataset Maintenance
-Duplicate vertices (ie: vertices located within 1 meter of eachother) were identified and removed. This cleanup was performed on the entire statewide dataset.
+Duplicate vertices (ie: vertices located within 1 meter of each other) were identified and removed. This cleanup was performed on the entire statewide dataset.

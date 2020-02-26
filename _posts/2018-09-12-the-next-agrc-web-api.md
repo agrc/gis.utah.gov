@@ -70,6 +70,6 @@ In new version 2, we imported a current snapshot of the sheets data into Postgre
 
 Version 1 of the WebAPI contains a canary endpoint to make sure the required services are available. ASP.NET Core makes these [health checks](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/implement-resilient-applications/monitor-app-health) a first class feature. We can now write health checks that not only let Kubernetes and other monitoring systems know that we are in a healthy state but when things go wrong, we will know exactly what dependency is not functioning properly.
 
-It is a great time to be a software engineer. There are so many services and software to improve our effectiveness, make us more efficient, and help us deliver a better overall experience to our users. If you have not tried any of these softwares, you should strongly consider it.
+It is a great time to be a software engineer. There are so many services and software to improve our effectiveness, make us more efficient, and help us deliver a better overall experience to our users. If you have not tried any of these software, you should strongly consider it.
 
 It has been a fun and exciting experience developing the next version of the WebAPI. After all, if the work you are doing isn't enticing and fun, maybe it's time to make a change.

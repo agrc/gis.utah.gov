@@ -18,7 +18,7 @@ expand, and maintain the network.</p>
 <p>The Utah Reference Network (TURN) GPS is now a statewide network of 70 survey grade GPS receivers permanently located across Utah. The network is used by 350 paying and partnering subscribers including major utilities, UDOT and its contractors, public and private land surveyors, and heavy machinery (tractors, graders) control users in the construction and agricultural sectors. </p>
 <p>The network is highly dependent on an active partnership of cities, counties and state agencies for its success and consists of equipment, internet connections, and facilities furnished by partners and a central ‘solution server’ maintained by AGRC in the DTS data center. </p>
 <p>AGRC has a one-time funding need for maintenance for the TURN GPS Network. </p>
-<p><strong>Needed Maintenence:</strong><br />
+<p><strong>Needed Maintenance:</strong><br />
 • The network currently runs on software developed in 2002 and is limited to a 32 bit server platform.<br />
 • The 32 bit system has reached its processing threshold for network expansion and concurrent user growth.<br />
 • Approximately 35 of the 70 GPS network receivers are older models, unable to take advantage of GPS signals from new satellite deployments made by the international community.</p>

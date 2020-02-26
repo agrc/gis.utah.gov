@@ -57,7 +57,7 @@ Please note that the <a href="https://api.mapserv.utah.gov/#info">api has servic
 <h2 id="wrap-up">Wrap-up</h2>
 <p>This is just a small sampling of what AGRC has to offer in terms of web mapping services. If you are interested in an advanced example of one of our web applications you can check out our <a href="https://github.com/agrc/AGRCJavaScriptProjectBoilerPlate">AGRCJavaScriptBoilerPlate</a>. A <a href="https://video.esri.com/watch/2326/how-i-work-utah-agrc-javascript-boilerplate-project-tour">presentation</a> detailing how this sample was engineered was given at the ESRI Dev Summit in March 2013.</p>
 <style>
-/* override wordpress yellow background */<br />
+<br />
 .highlight {<br />
    background-color: transparent !important;<br />
 }<br />
