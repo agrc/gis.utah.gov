@@ -11,11 +11,11 @@ tags:
   - roads
 ---
 
-**Major changes to the Statewide Roads Data Model are coming on September 13th, 2017.  Please take the time to read the [blog post]({% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}) detailing the changes.**
+**Major changes to the Statewide Roads Data Model are coming on September 13th, 2017.  Please take the time to read the [blog post]({% link _posts/2017-08-15-major-updates-coming-to-roads-data-model.md %}) detailing the changes.**
 
-Updates were recently made to the SGID10.Transportation.Roads and [SGID10.Transportation.Roads_NextGen]({% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}) feature classes that resides on the [Utah SGID ArcSDE database server]({% link sgid-database/index.md %}).
+Updates were recently made to the SGID10.Transportation.Roads and [SGID10.Transportation.Roads_NextGen]({% link _posts/2017-08-15-major-updates-coming-to-roads-data-model.md %}) feature classes that resides on the [Utah SGID ArcSDE database server]({% link sgid-database/index.md %}).
 
-Updated roads data is also available as shapefiles and file geodatabase files for download on the [SGID Roads and Highway System download page]({% link data/transportation/roads-system/index.html %}).  Please consider using the [new data model]({% post_url 2017-08-15-major-updates-coming-to-roads-data-model %}) when downloading these datasets.
+Updated roads data is also available as shapefiles and file geodatabase files for download on the [SGID Roads and Highway System download page]({% link data/transportation/roads-system/index.html %}).  Please consider using the [new data model]({% link _posts/2017-08-15-major-updates-coming-to-roads-data-model.md %}) when downloading these datasets.
 
 The following are highlights from this month's update:
 

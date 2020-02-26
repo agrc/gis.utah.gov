@@ -12,7 +12,7 @@ categories:
   - Featured
 ---
 
-In May, the Land Information Records work group, a committee of county, regional, and state agencies, released its [recommendations for sharing an enhanced set of tax parcel GIS data](https://docs.google.com/document/d/19urzWWDE62dX0g2hkcjWid1ctO5n_GR_pNe54o_Y4HY/edit?usp=sharing), summarized in a [this blog post]({% post_url 2016-05-26-work-group-recommends-expanded-gis-parcel-sharing %}).
+In May, the Land Information Records work group, a committee of county, regional, and state agencies, released its [recommendations for sharing an enhanced set of tax parcel GIS data](https://docs.google.com/document/d/19urzWWDE62dX0g2hkcjWid1ctO5n_GR_pNe54o_Y4HY/edit?usp=sharing), summarized in a [this blog post]({% link _posts/2016-05-26-work-group-recommends-expanded-gis-parcel-sharing.md %}).
 
 In a letter to Utah’s County Assessors, Evan Curtis, the State Planning Coordinator with the Governor’s Office of Management and Budget, provided a nice overview of the work done on this initiative:
 

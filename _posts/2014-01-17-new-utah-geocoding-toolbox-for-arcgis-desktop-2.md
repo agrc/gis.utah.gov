@@ -11,7 +11,7 @@ categories:
 ---
 <p><a href="https://github.com/agrc/geocoding-toolbox/raw/master/AGRC%20Geocode%20Tools.tbx" class="button medium white"><span class="button-text">Download Geocoding Toolbox</span></a></p>
 <p>AGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.<a href="{% link images/geocoding-example.png %}"><img src="{% link images/geocoding-example.png %}" alt="" title="geocoding example" width="113" height="144" class="inline-text-left" /></a></p>
-<p>This custom geocoding toolbox allows ArcMap users to obtain geographic coordinates from <a href="{% post_url 2013-04-02-using-the-mapserv-utah-gov-api-to-geocode-address %}">AGRC's geocoding web service api</a> for any table of addresses in a ArcGIS accessible format.</p>
+<p>This custom geocoding toolbox allows ArcMap users to obtain geographic coordinates from <a href="{% link _posts/2013-04-02-using-the-mapserv-utah-gov-api-to-geocode-address.md %}">AGRC's geocoding web service api</a> for any table of addresses in a ArcGIS accessible format.</p>
 <p>While the geocoding api was built primarily for web applications it also provides value as a toolbox in ArcMap, as it uses current local data and solves for some common shortcomings with stock geocoding approaches by:</p>
 <p><a href="{% link images/geocodingtoolbox.png %}"><img src="{% link images/geocodingtoolbox.png %}" alt="" title="geocodingtoolbox" width="190" height="333" class="inline-text-right" /></a>
 <ul>
@@ -21,7 +21,7 @@ categories:
 <li>handles common placename usage and abbreviations (WVC, St George, Magna, Heber City, S Jordan, etc.) </li>
 <li>can find matches for numeric address 'reversals' (500 E 1991 S)</li>
 <li>can find address point matches, offset centerline matches, or best available.</li>
-<li><a href="{% post_url 2013-05-10-utah-statewide-address-geocoding-web-service-upgrade %}">more info</a></li>
+<li><a href="{% link _posts/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade.md %}">more info</a></li>
 </ul>
 <p>Use the <a href="https://api.mapserv.utah.gov/#geocoding">Street and Zone method on the api page</a> or <a href="https://atlas.utah.gov">the Find Address gui at atlas.utah.gov</a> to test the results from your problem addresses against the api.</p>
 <p>Installation is as easy as <a href="https://github.com/agrc/geocoding-toolbox/raw/master/AGRC%20Geocode%20Tools.tbx">downloading the AGRC Geocode Tools.tbx file</a> to your desired location and then in ArcToolbox, <a href="https://resources.arcgis.com/en/help/main/10.1/index.html#//003q0000001m000000">right clicking the Add Toolbox menu item</a>. Users must obtain an ip specific mapserv api key by <a href="https://developer.mapserv.utah.gov/AccountAccess">registering here</a> prior to use, as a unique api key is one of the required input parameters for running the tool.</p>

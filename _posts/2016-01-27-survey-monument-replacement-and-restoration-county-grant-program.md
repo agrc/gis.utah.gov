@@ -9,7 +9,7 @@ date: 2016-01-27 13:31:17 -0700
 title: Survey Monument Replacement and Restoration County Grant Program
 categories: []
 ---
-The 2015 Utah Legislative General Session passed Senate Bill 264, which established the Monument Replacement and Restoration Committee (MRRC), as well as funding to establish a County grant program to preserve public land survey monuments ([UCA 63F-1-510](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S510.html)). The committee [began meeting in September]({% post_url 2015-10-30-big-happenings-with-public-land-survey-system-gis %}), and is now accepting grant applications to restore survey monuments until <strong>February 16, 2016</strong>.
+The 2015 Utah Legislative General Session passed Senate Bill 264, which established the Monument Replacement and Restoration Committee (MRRC), as well as funding to establish a County grant program to preserve public land survey monuments ([UCA 63F-1-510](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S510.html)). The committee [began meeting in September]({% link _posts/2015-10-30-big-happenings-with-public-land-survey-system-gis.md %}), and is now accepting grant applications to restore survey monuments until <strong>February 16, 2016</strong>.
 
 A county wishing to submit an application to the Committee that meets the following requirements:
 

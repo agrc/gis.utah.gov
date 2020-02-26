@@ -11,7 +11,7 @@ title: Municipal Boundaries update for second quarter 2017 (calendar year)
 categories: []
 ---
 
-The year is half over and we keep rolling along. This is the Municipal Boundaries update for the second quarter of the 2017 calendar year. Things picked up a little from the [first quarter]({% post_url 2017-03-29-municipal-boundaries-update-for-first-quarter-calendar-year %}). _A little reminder for everyone_, **changes to city boundaries can affect you!** For instance, your voting precinct or school district may change.
+The year is half over and we keep rolling along. This is the Municipal Boundaries update for the second quarter of the 2017 calendar year. Things picked up a little from the [first quarter]({% link _posts/2017-03-29-municipal-boundaries-update-for-first-quarter-calendar-year.md %}). _A little reminder for everyone_, **changes to city boundaries can affect you!** For instance, your voting precinct or school district may change.
 
 Be sure to share data with your Clerks office or others that may have an interest.
 
