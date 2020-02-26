@@ -13,10 +13,9 @@ title: End of year 2016 (fourth quarter) Updates for Municipal Boundaries
 categories:
   - Featured
 ---
-[![SL Co Municipal Changes]({{"/images/MunicpalBoundaries2016Updates.png" | prepend:site.baseurl}} "view high res usage map")]({{"/downloads/MunicpalBoundaries2016Updates.pdf
-" | prepend:site.baseurl}}){:.inline-text-right}
+[![SL Co Municipal Changes]({% link images/MunicpalBoundaries2016Updates.png %} "view high res usage map")]({% link downloads/MunicpalBoundaries2016Updates.pdf %}){:.inline-text-right}
 
-Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download]({{ "/data/boundaries/citycountystate/" | prepend: site.baseurl }}) and listed below.
+Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download]({% link data/boundaries/citycountystate/index.html %}) and listed below.
 
 We would like to welcome the newest city in the state: Millcreek in Salt Lake County, seems like it was a long time coming and now it’s here. Hooray!
 

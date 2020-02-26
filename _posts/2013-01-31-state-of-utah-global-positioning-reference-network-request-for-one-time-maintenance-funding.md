@@ -8,7 +8,7 @@ title: State of Utah Global Positioning Reference Network, One-Time Maintenance 
 categories:
   - Featured
 ---
-<p><img src="{{ "/images/TURNGPS_MapsOnTheHill_Poster.jpg" | prepend: site.baseurl }}" align="right" alt="" title="TURNGPS_MapsOnTheHill_Poster" width="387" height="534" class="inline-text-left" />In 2005, the Utah Legislature, recognizing the need to support highly accurate GPS applications for surveying, engineering, construction, and GIS data<br />
+<p><img src="{% link images/TURNGPS_MapsOnTheHill_Poster.jpg %}" align="right" alt="" title="TURNGPS_MapsOnTheHill_Poster" width="387" height="534" class="inline-text-left" />In 2005, the Utah Legislature, recognizing the need to support highly accurate GPS applications for surveying, engineering, construction, and GIS data<br />
 collection, passed into law UCA 63F-1-509 to fund the initial build-out of a real time GPS base station network. </p>
 <p><strong>UCA 63F-1-509:</strong><br />
 • Created the Statewide Global Positioning Reference Network to improve the quality of geographic information system data and the productivity, efficiency, and cost-effectiveness of government services;<br />
@@ -22,4 +22,4 @@ expand, and maintain the network.</p>
 • The network currently runs on software developed in 2002 and is limited to a 32 bit server platform.<br />
 • The 32 bit system has reached its processing threshold for network expansion and concurrent user growth.<br />
 • Approximately 35 of the 70 GPS network receivers are older models, unable to take advantage of GPS signals from new satellite deployments made by the international community.</p>
-<p><strong><a href="{{ "/downloads/GPS-Network-Funding-Request.pdf" | prepend: site.baseurl }}">More information (fact sheet)</a>.</strong></p>
+<p><strong><a href="{% link downloads/GPS-Network-Funding-Request.pdf %}">More information (fact sheet)</a>.</strong></p>
