@@ -32,12 +32,12 @@ CompositeLocatorPackage:
   updates:
     - Updates to this composite locator coincide with the Roads and Address Points
       address locators.
-GeocodingAddin:
+GeocodingToolbox:
   downloads:
     - url: https://github.com/agrc/geocoding-toolbox/raw/master/AGRC%20Geocode%20Tools.tbx
-      label: 'ArcGIS Pro Add-in'
+      label: 'ArcGIS Pro Toolbox'
     - url: https://github.com/agrc/geocoding-toolbox/raw/desktop-python-2/AGRC%20Geocode%20Tools.tbx
-      label: 'ArcGIS Desktop starting at 10.3.1'
+      label: 'ArcGIS Desktop Toolbox (starting at 10.3.1)'
   updates:
     - March 2020, The ArcGIS Pro tool was promoted to master
     - January 2014, The ArcGIS Desktop tool was created
@@ -77,18 +77,16 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     <h3 id="GeocodingToolbox">Geocoding Toolbox</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p><i class="fas fa-4x fa-archive fa-pull-left"></i>This custom toolbox created by the AGRC allows ArcGIS users to geocode a table of addresses. The geocoding tool makes use of the <a href="https://api.mapserv.utah.gov">AGRC Web API</a> to perform the geocoding. A complimentary <a href="https://developer.mapserv.utah.gov">api key</a> will need to be obtained to run the tool. </p>
-    <p>After the tool has completed, you will find a <code>.csv</code> and <code>.fgdb</code> with the input unique identifier field, the input address information, and the match results as fields. The file geodatabase table will automatically be added to the current ArcGIS project. </p>
-    <p>The table can be joined on the unique record identifier to reconnect the results with the original data. The <a href="https://pro.arcgis.com/en/pro-app/tool-reference/data-management/make-xy-event-layer.htm">make xy event layer</a> tool can be used to create points from the x, y values to spatially view the locations in a map.</p>
-    <p>ArcMap versions of this tool can be found in the <a href="https://github.com/agrc/geocoding-toolbox/tree/desktop-python-2">desktop-python-2</a> branch.</p>
+    <p><i class="fas fa-4x fa-archive fa-pull-left"></i>This custom toolbox created by the AGRC allows ArcGIS users to geocode a table of addresses. The geocoding tool makes use of the <a href="https://api.mapserv.utah.gov">AGRC Web API</a> to perform the geocoding. A complimentary <a href="https://developer.mapserv.utah.gov">API key</a> will need to be obtained to run the tool. </p>
+    <p>The tool's documentation is maintained in <a href="https://github.com/agrc/geocoding-toolbox/">GitHub</a>. Please refer to the readme for the most current information on downloading and running the tool. ArcGIS Desktop versions of this tool can be found in the <a href="https://github.com/agrc/geocoding-toolbox/tree/desktop-python-2">desktop-python-2</a> branch.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="https://github.com/agrc/geocoding-toolbox/">GitHub repository</a>
-      <li><a href='{% link _posts/2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2.md %}'>Utah Geocoding Toolbox for ArcGIS Desktop</a>
+      <li><a href="https://github.com/agrc/geocoding-toolbox/">Geocoding toolbox GitHub repository</a>
+      <li><a href='{% link _posts/2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2.md %}'>Utah Geocoding Toolbox for ArcGIS Desktop release post</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.geocoding_tools hide-punctuation=true %} or the <a href="https://github.com/agrc/geocoding-toolbox/issues/new">Github repository</a>.</p>
-    {% include packagedata.html name="GeocodingAddin"
-  info=page.GeocodingAddin %}
+    {% include packagedata.html name="GeocodingToolbox"
+  info=page.GeocodingToolbox %}
   </div>
 </div>
 <div class="grid package">
