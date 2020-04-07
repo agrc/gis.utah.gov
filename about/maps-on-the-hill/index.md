@@ -15,8 +15,8 @@ categories: []
 
 ![Maps on the Hill February 25, 2020](moth2020.png){: .outline }
 
-- [Map Book Calendar](https://drive.google.com/open?id=1ZqQxav_aXgYLl3vh48TEqjbKJeOKys_8)
-- [Photos](https://drive.google.com/open?id=15xZn9NzIZ23BbKDbkKRg2uWGZEDNJ9-5)
+- [Map Book Calendar](https://www.dropbox.com/s/9jhfgwma8v6jdbu/Calendar.pdf?dl=0)
+- [Photos](https://www.dropbox.com/sh/rpwly5yno7wmrhf/AAAfMcBsYiiq6ZxEKRw4BY1ba?dl=0)
 {: .dotless .no-padding}
   </div>
 
