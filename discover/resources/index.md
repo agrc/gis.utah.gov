@@ -19,7 +19,7 @@ Discover provides high-performance imagery and base maps services in WMS and WMT
 - For imagery downloads visit the [aerial photography data page]({% link data/aerial-photography/index.html %}).
 - Instructions on how to [use the Discover services in Pro/ArcMap](#adding-a-wmts-or-wms-service-to-esri-products).
 - Instructions on how to [use the Discover services in CAD](#adding-a-wms-service-to-cad).
-- Instructions on how to [use the Discover services in Web Maps]({% link _posts/2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps.md %}).
+- Instructions on how to [use the Discover services in Web Maps]({% link developer/base-maps/discover/index.md %}).
 
 ### Coordinate System and Datum
 {: .text-left}
@@ -64,7 +64,7 @@ The pre-2018 `NAIP` layers have a stated horizontal positional accuracy of 5 met
 
 {%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='send an email to' hide-punctuation=true %}{% endcapture %}
 
-Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({% link _posts/2015-12-21-using-agrcs-new-web-mercator-services-in-your-web-maps.md %}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact }} and provide your web map URL domains.
+Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({% link developer/base-maps/discover/index.md %}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact }} and provide your web map URL domains.
 
 ### Adding a WMS Service to CAD
 {: .text-left}

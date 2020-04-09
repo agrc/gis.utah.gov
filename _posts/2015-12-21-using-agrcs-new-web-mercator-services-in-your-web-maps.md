@@ -13,6 +13,10 @@ categories:
   - Developer
   - Featured
 ---
+<p class="pop text-center">
+  <strong>Note:</strong> Please go to <a href="{% link developer/base-maps/discover/index.md %}">this page</a> for more updated information on using Discover services with the Esri JavaScript API v4.x.
+</p>
+
 <p>Recently, AGRC, in conjunction with DNR, hosted an <a href="https://www.youtube.com/watch?v=Wch2M2rBJhU">open house</a> discussing AGRC’s basemap and imagery strategies. During this open house, AGRC discussed details of new web mercator (WGS84) basemaps as the default presentation layer moving forward. Most of the UTM basemaps have been converted to web mercator and are hosted and served through discover.agrc.utah.gov. <strong>The plan is to sunset the UTM basemaps at the end of 2016.</strong></p>
 <p>While upgrading the UTM basemaps to web mercator, AGRC decided to modify the map services offered. Based on usage analytics and user feedback, the hillshade and vector basemap were removed. The Hybrid service was replaced by combining the Google imagery service and a new overlay service (a long-requested feature allowing users to “sandwich” their data within the basemap). The Lite, Terrain and Topo basemaps were converted with no changes. Finally, there is a new Color Infrared service derived from the 2011 NAIP.</p>
 <p class="text-center">
