@@ -14,7 +14,7 @@ categories:
   - Featured
 ---
 <p class="pop text-center">
-  <strong>Note:</strong> Please go to <a href="{% link developer/base-maps/discover/index.md %}">this page</a> for more updated information on using Discover services with the Esri JavaScript API v4.x.
+  The instructions on this page are dated. <a href="{% link developer/base-maps/discover/index.md %}">Using Discover services with the Esri JavaScript API v4.x</a> contains more current information.
 </p>
 
 <p>Recently, AGRC, in conjunction with DNR, hosted an <a href="https://www.youtube.com/watch?v=Wch2M2rBJhU">open house</a> discussing AGRC’s basemap and imagery strategies. During this open house, AGRC discussed details of new web mercator (WGS84) basemaps as the default presentation layer moving forward. Most of the UTM basemaps have been converted to web mercator and are hosted and served through discover.agrc.utah.gov. <strong>The plan is to sunset the UTM basemaps at the end of 2016.</strong></p>
