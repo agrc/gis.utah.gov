@@ -11,7 +11,7 @@ categories:
 date: 2020-04-09 00:00:00
 ---
 
-Base map services hosted on discover.utah.gov are delivered via [WMTS](https://en.wikipedia.org/wiki/Web_Map_Tile_Service). WMTS is an [OGC](https://www.ogc.org/) standard for delivering tiled map data. The [Esri JavaScript API](https://developers.arcgis.com/javascript/) provides a class for consuming with these services called a [WebTileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html). Using this class is as simple as passing in the URL to the WMTS service with the appropriate level, column and row tokens. For example:
+Base map services hosted on discover.utah.gov are delivered via [WMTS](https://en.wikipedia.org/wiki/Web_Map_Tile_Service). WMTS is an [OGC](https://www.ogc.org/) standard for delivering tiled map data. The [Esri JavaScript API](https://developers.arcgis.com/javascript/) provides a class for interacting with these services, called a [WebTileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html). Using this class is as simple as passing in the URL to the WMTS service with the appropriate level, column, and row tokens. For example:
 
 ```javascript
 require([
