@@ -65,7 +65,7 @@ indices:
 plss:
   - name: Mike Heagin
     email: MHeagin@utah.gov
-    phone: 801-537-9296
+    phone: 385-401-9667
     agency: AGRC
   - name: Sean Fernandez
     email: SFernandez@utah.gov
@@ -78,7 +78,7 @@ turn:
     agency: DTS
   - name: Mike Heagin
     email: mheagin@utah.gov
-    phone: 801-538-3440
+    phone: 385-401-9667
     agency: AGRC
   - name: Sean Fernandez
     email: sfernandez@utah.gov
@@ -91,7 +91,7 @@ surveyor:
 boundaries:
   name: Mike Heagin
   email: MHeagin@utah.gov
-  phone: 801-537-9296
+  phone: 385-401-9667
   agency: AGRC
 zip_codes:
   name: Erik Neemann
