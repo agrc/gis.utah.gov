@@ -13,9 +13,9 @@ tags:
 
 Over the years, GIS is trending more and more towards being web-based. AGRC has tried to keep step with this trend with the addition of the [discover]({% link discover/index.html %}), the [TurnGPS]({% link data/cadastre/turn-gps/index.md %}) RTK GPS service, and the [Web API](https://api.mapserv.utah.gov) handling over one million requests per month. More and more users rely on these services. Outages are _very_ disruptive and we're doing everything in our power to avoid them. But in the event of a system outage we want our users to know **what** is going on, that you're not alone and that AGRC is aware of the issue, and **when** it is likely to be resolved.
 
-AGRC is now maintaining a system status website for the services we provide. Users can visit and bookmark [https://agrc-status.netlify.com](https://agrc-status.netlify.com) to check on the status of AGRC systems.
+AGRC is now maintaining a system status website for the services we provide. Users can visit and bookmark [https://agrc-status.netlify.app](https://agrc-status.netlify.app) to check on the status of AGRC systems.
 
-If you notice an outage, please check the [agrc status website](https://agrc-status.netlify.com) **first** as this will get you the details quickly and it leaves AGRC with more time to work toward resolution. If you do not see the status accurately reflected on the status page, please get in contact with us immediately by [phone or email]({% link about/contact/index.html %}) with a description of the problem.
+If you notice an outage, please check the [agrc status website](https://agrc-status.netlify.app) **first** as this will get you the details quickly and it leaves AGRC with more time to work toward resolution. If you do not see the status accurately reflected on the status page, please get in contact with us immediately by [phone or email]({% link about/contact/index.html %}) with a description of the problem.
 
 When outages occur, AGRC will use the status website to let users know that:
 
