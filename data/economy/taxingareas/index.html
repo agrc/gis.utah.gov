@@ -16,21 +16,17 @@ SalesTaxAreas:
   updates:
     - Updated 1/31/2019 1st Quarter 2019
 TaxEntities:
-  downloads:
-    - url: https://drive.google.com/drive/folders/16Q9L3QY8ACBOBG6_sbXwgVbfFjKjDZH7
-      label: Tax Entities 2018
+  hub:
+    name: Utah Tax Entities 2019
+    item_id: 9f2b57215a6341729a94e0c7674f46f5
   updates:
-    - 2018
-    - 2017
-    - 2016
+    - January 2020
 TaxAreas:
-  downloads:
-    - url: https://drive.google.com/drive/folders/1F_gcgx68eaco_KPoKaiygD2ehzuDEudZ
-      label: Tax Areas 2018
+  hub:
+    name: Utah Tax Areas 2019
+    item_id: 7232bbbfdb8a485b972f0b89d264716c
   updates:
-    - 2018
-    - 2017
-    - 2016
+    - January 2020
 TransitSpecialTaxAreas:
   downloads:
     - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVlHOXQ0djUtaEU
@@ -68,13 +64,14 @@ TransitSpecialTaxAreas:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/TaxEntities.png %}" alt="Tax Entities" />
-    <p>Economy.TaxAreas2018 contains the set of taxing areas formed by each unique 2-dimensional intersection of incorporated taxing entities  in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state. The property tax levy rate within a tax area should be the same for a specified property type within that area.</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="https://tax.utah.gov/">Utah State Tax Commission</a>
-    </ul>
+    <p>Economy.TaxAreas2019 contains the set of taxing areas formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state. The property tax levy rate within a tax area should be the same for a specified property type within that area.</p>
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
-  {% include packagedata.html name="TaxAreas" info=page.TaxAreas %}
+  {% include packagedata.html
+    name="TaxAreas2019"
+    info=page.TaxAreas2019
+  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -97,7 +94,7 @@ TransitSpecialTaxAreas:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/TaxEntities.png %}" alt="TaxEntities" />
-    <p>Economy.TaxEntities2018 contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts. Economy.TaxEntities2016 dataset does not represent exact legal boundaries, but rather a set of boundaries used for the administrative purposes by the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities, etc).</p>
+    <p>Economy.TaxEntities2019 contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts. Economy.TaxEntities2016 dataset does not represent exact legal boundaries, but rather a set of boundaries used for the administrative purposes by the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities, etc).</p>
     <div>Tax Entities with...</div>
     <ul class="dotless">
       <li><strong>ENT_NBR</strong> of <code>1010</code> are counties
@@ -113,5 +110,8 @@ TransitSpecialTaxAreas:
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.tax %}</p>
   </div>
-  {% include packagedata.html name="TaxEntities" info=page.TaxEntities %}
+  {% include packagedata.html
+    name="TaxEntities2019"
+    info=page.TaxEntities2019
+  %}
 </div>
