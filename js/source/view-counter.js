@@ -16,6 +16,9 @@
     };
 
     request.addEventListener('load', onLoad);
-    request.open('GET', 'https://us-central1-utahkoopserver.cloudfunctions.net/viewcounter');
+    request.open(
+      "GET",
+      "https://us-central1-ut-dts-agrc-gis-utah-gov-prod.cloudfunctions.net/viewcounter"
+    );
     request.send();
 }());
