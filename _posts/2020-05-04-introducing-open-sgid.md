@@ -7,18 +7,18 @@ date: 2020-05-04
 categories:
   - Featured
 tags:
-  - SGID
+  - sgid
   - open source
   - cloud
-  - data
 ---
 
 It seems so long ago now, but it was less than a year ago when we first [hinted at the possibility]({% link _posts/2019-06-11-sgid-then-and-now.md %}#where-is-the-sgid-going) of a new SGID offering [(then again last fall)]({% link _posts/2019-11-12-sgid-product-relaunch-update.md %}#potential-google-cloud-managed-postgis). We are finally ready to announce the debut of a new open source SGID database - the Open SGID - a cloud-hosted PostgreSQL PostGIS database.
 
-<p align="center">Database Platform: PostgresSQL</p>
-<p align="center">Instance: opensgid.agrc.utah.gov</p>
-<p align="center">Username: agrc</p>
-<p align="center">Password: agrc</p>
+<div class="flex flex--center pop" style="max-width:50%;justify-content:center">
+  <h4 style="margin-bottom:0;padding-top:0"><strong>Database Platform</strong>: PostgresSQL</h4>
+  <h4 style="margin-top:0;margin-bottom:0;padding-top:0"><strong>Instance</strong>: opensgid.agrc.utah.gov</h4>
+  <h4 style="margin-top:0;margin-bottom:0;padding-top:0"><strong>Username</strong>: agrc <strong>Password</strong>: agrc</h4>
+</div>
 
 The timing could not be more perfect with the sudden increase in teleworking, which is not expected to wane any time soon, especially here in Utah with the implementation of the [Governor’s teleworking initiative](https://governor.utah.gov/2019/07/16/state-of-utah-introduces-teleworking-program-for-employees/). Not only does the Open SGID benefit Utahns, but it also signals the return to a truly publicly-available, direct database connection that can be utilized on a multitude of GIS platforms. Furthermore, it initiates the sunsetting of the state network-only SGID10 database, although both databases (Open SGID and SGID10) will run in parallel for some time to allow users to make the transition to the Open SGID and adapt to the change.
 
@@ -26,12 +26,13 @@ The new tools and processes developed collectively by AGRC staff to accomplish t
 
 A nearly month-long beta testing period was helpful to identify several issues and some inherent differences between the Open SGID and the enterprise geodatabase of the SGID10 era. A [GitHub repository](https://github.com/agrc/open-sgid) was created as the primary source of information for the Open SGID, and to catalog and address [these issues and differences](https://github.com/agrc/open-sgid/issues) with explanations or troubleshooting techniques.
 
-Known issues:
+#### Known issues
+
 - [Tables do not contain metadata](https://github.com/agrc/open-sgid/issues/5)
 - [Fields with domains currently only display coded values](https://github.com/agrc/open-sgid/issues/7)
-- [Some geoprocessing tools may fail for not having an OID field (client-specific)](https://github.com/agrc/open-sgid/issues/14)
 
-Differences from SQL SDE database:
+#### Differences from SQL SDE database
+
 - [Table names and casing](https://github.com/agrc/open-sgid/issues/12)
 - [Attribute names and casing](https://github.com/agrc/open-sgid/issues/13)
 - [Null value sorting behavior](https://github.com/agrc/open-sgid/issues/6)
