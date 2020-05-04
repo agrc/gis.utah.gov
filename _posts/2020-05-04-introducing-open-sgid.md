@@ -11,7 +11,7 @@ tags:
   - open source
   - cloud
   - data
- ---
+---
 
 It seems so long ago now, but it was less than a year ago when we first [hinted at the possibility]({% link _posts/2019-06-11-sgid-then-and-now.md %}#where-is-the-sgid-going) of a new SGID offering [(then again last fall)]({% link _posts/2019-11-12-sgid-product-relaunch-update.md %}#potential-google-cloud-managed-postgis). We are finally ready to announce the debut of a new open source SGID database - the Open SGID - a cloud-hosted PostgreSQL PostGIS database.
 
