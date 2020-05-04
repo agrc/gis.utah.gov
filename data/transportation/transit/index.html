@@ -14,15 +14,12 @@ tags:
 categories: []
 date: 2011-11-23 14:16:26 -0700
 UTABusRoutesStops:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mXy0wcENfR0NWN0k&export=download
-      label: 'Bus Routes: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRU9XR3FuTWhDMzA&export=download
-      label: 'Bus Routes: Shapefile'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRTJwVU52c1VCNDA&export=download
-      label: 'Bus Stops: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMF9ZUkdiMEpsb3M&export=download
-      label: 'Bus Stops: Shapefile'
+  hub:
+    name: Utah UTA Bus Routes Wasatch Front
+    item_id: e5ba4be5e29040989ff50dc49ef0cc17
+  hub:
+    name: BusStops_UTA
+    item_id: b047cfbab53f4b579756169aa45e94d4
   updates:
     - April, 2020
 UTACommuterRailRoutes:
@@ -77,8 +74,10 @@ UTALightRailStations:
     <p>The UTA Bus Stops dataset was digitized to the Wasatch Front counties' street base maps and then exported from Trapeze (scheduling software) in shapefile format.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
   </div>
-  {% include packagedata.html name="UTABusRoutesStops"
-    info=page.UTABusRoutesStops %}
+  {% include packagedata.html 
+    name="UTABusRoutesStops"
+    info=page.UTABusRoutesStops
+  %}
 </div>
 
 <div class="grid package">
