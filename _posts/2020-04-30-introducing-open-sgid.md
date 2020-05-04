@@ -39,6 +39,4 @@ Differences from SQL SDE database:
 
 Tags are assigned to each issue to provide a level of categorization. This repository will be an important reference for Open SGID users to search for information about known issues, and to submit new issues they encounter, so that AGRC staff and the general user population can collectively offer feedback and solutions. Use the green New issue button on the [issues page](https://github.com/agrc/open-sgid/issues) to submit yours, and visit this page when you first come across a problem with, or question about, the Open SGID to see if others have already found a solution.
 
-![New Issue]({% link images/open_github_new_issue.png %}){: .flex .flex--center}
-
 Although it may take some time to adjust to the PostgresSQL database format for traditional Esri clients that are familiar with the SQL SDE database, we view the Open SGID as an enhancement to AGRC’s data access points. It provides a direct SGID database connection that is no longer constrained to the Utah state government network, thereby living up to its name as a database that is truly open and accessible to all GIS platforms and users. We look forward to your feedback as both first-time and long-time SGID users utilize Utah’s most comprehensive and authoritative, open source, geospatial database for your cartographic and analytical workflows.
