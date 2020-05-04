@@ -27,15 +27,15 @@ The new tools and processes developed collectively by AGRC staff to accomplish t
 A nearly month-long beta testing period was helpful to identify several issues and some inherent differences between the Open SGID and the enterprise geodatabase of the SGID10 era. A [GitHub repository](https://github.com/agrc/open-sgid) was created as the primary source of information for the Open SGID, and to catalog and address [these issues and differences](https://github.com/agrc/open-sgid/issues) with explanations or troubleshooting techniques.
 
 Known issues:
-* [Tables do not contain metadata](https://github.com/agrc/open-sgid/issues/5)
-* [Fields with domains currently only display coded values](https://github.com/agrc/open-sgid/issues/7)
-* [Some geoprocessing tools may fail for not having an OID field (client-specific)](https://github.com/agrc/open-sgid/issues/14)
+- [Tables do not contain metadata](https://github.com/agrc/open-sgid/issues/5)
+- [Fields with domains currently only display coded values](https://github.com/agrc/open-sgid/issues/7)
+- [Some geoprocessing tools may fail for not having an OID field (client-specific)](https://github.com/agrc/open-sgid/issues/14)
 
 Differences from SQL SDE database:
-* [Table names and casing](https://github.com/agrc/open-sgid/issues/12)
-* [Attribute names and casing](https://github.com/agrc/open-sgid/issues/13)
-* [Null value sorting behavior](https://github.com/agrc/open-sgid/issues/6)
-* [ArcMap requires selection of unique ID field](https://github.com/agrc/open-sgid/issues/9)
+- [Table names and casing](https://github.com/agrc/open-sgid/issues/12)
+- [Attribute names and casing](https://github.com/agrc/open-sgid/issues/13)
+- [Null value sorting behavior](https://github.com/agrc/open-sgid/issues/6)
+- [ArcMap requires selection of unique ID field](https://github.com/agrc/open-sgid/issues/9)
 
 Tags are assigned to each issue to provide a level of categorization. This repository will be an important reference for Open SGID users to search for information about known issues, and to submit new issues they encounter, so that AGRC staff and the general user population can collectively offer feedback and solutions. Use the green New issue button on the [issues page](https://github.com/agrc/open-sgid/issues) to submit yours, and visit this page when you first come across a problem with, or question about, the Open SGID to see if others have already found a solution.
 
