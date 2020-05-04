@@ -10,7 +10,13 @@
             return; // don't do anything on request error
         }
 
-        var count = JSON.parse(request.responseText).count;
+        var body = JSON.parse(request.responseText);
+
+        if (body.hasOwnProperty('skip') && body.skip) {
+            return;
+        }
+
+        var count = body.count;
 
         span.innerHTML = 'This page has been viewed ' + count.toLocaleString() + ' times';
     };
