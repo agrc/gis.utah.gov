@@ -41,6 +41,10 @@ contours:
   email: ZBeck@utah.gov
   agency: AGRC
   phone: 801-538-3072
+opensgid:
+  name: Zach Beck
+  email: ZBeck@utah.gov
+  agency: AGRC
 sgid:
   - name: Zach Beck
     email: ZBeck@utah.gov
