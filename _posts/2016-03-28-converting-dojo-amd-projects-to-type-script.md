@@ -62,7 +62,7 @@ Notice that I did not use `declare` as the import name for `dojo/_base/declare`.
 ### AMD Loader Plugins
 The next problem that I encountered was trying to use the `dojo/text!` AMD plugin. The root of the problem is that [the current version of TypeScript doesn't support globbing of AMD modules](https://github.com/dojo/typings#amd-plugin-globbing). There is an [issue](https://github.com/Microsoft/TypeScript/issues/6615) that you can follow that shows promise of a resolution to this problem in the future but for now we need a workaround.
 
-The workaround to the problem is a bit of a pain. You need to declare an [ambient declaration](http://www.typescriptlang.org/docs/handbook/modules.html#ambient-modules) for each URL that you want to use with `dojo/text!`. For example:
+The workaround to the problem is a bit of a pain. You need to declare an [ambient declaration](https://www.typescriptlang.org/docs/handbook/modules.html) for each URL that you want to use with `dojo/text!`. For example:
 
 ```ts
 declare module 'dojo/text!./templates/ToasterItem.html' {

@@ -71,7 +71,7 @@ A semi acceptable fix to this problem would be to inspect the parameters sent to
 
 `python geocode.py milepost 300 15N`
 
-The python community has created many useful modules that we all can `pip` or `conda` install and start using. Command Line Interface (CLI) modules are no different. There are a [lot](https://pypi.python.org/pypi/clint/) of [command](http://click.pocoo.org/) [line](https://pypi.python.org/pypi/plac) [interface](http://docs.openstack.org/developer/cliff/) [modules](http://builtoncement.com/) because there are a lot of opinions on how they should work.
+The python community has created many useful modules that we all can `pip` or `conda` install and start using. Command Line Interface (CLI) modules are no different. There are a [lot](https://pypi.org/project/clint/) of [command](http://click.pocoo.org/) [line](https://pypi.org/project/plac/) [interface](https://docs.openstack.org/cliff/latest/) [modules](https://builtoncement.com/) because there are a lot of opinions on how they should work.
 
 AGRC has been using [docopt](http://docopt.org/) and really enjoying it. It is a lightweight module that uses POSIX style comments to define how your console application can be used. You get a CLI and documentation!
 

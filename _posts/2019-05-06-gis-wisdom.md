@@ -37,7 +37,7 @@ When an editor reconciles, the editor fetches what's new from the parent version
 
 It's not hard to imagine how we can incorporate some of these concepts into life. Think of how similar a version is to one's worldview. We often want to validate our views, so we engage in dialogue with others. Inevitably conflicts arise. Ideally, we should first attempt to fully understand the other viewpoint and then proceed with explaining our own. It is from there that we can work out our differences, or kindly "agree to disagree." Understanding both viewpoints can help us establish grounds to move forward on.
 
-Learn more about the [ArcGIS versioning process](http://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/the-version-editing-process.htm).
+Learn more about the [ArcGIS versioning process](https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/the-version-editing-process.htm).
 
 ### 2. Networks
 {: .text-left}
@@ -48,7 +48,7 @@ In GIS, we build network datasets for navigation. These networks are based on co
 
 Likewise, building a personal network helps us determine who and what we allow ourselves to connect with. A well-thought-out network not only tells us where we can connect but also where we should not. Taking the time to think about this connectivity ensures that we build a quality social network.
 
-Learn more about [creating ArcGIS network datasets](http://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/creating-a-network-dataset.htm) and [how connectivity works](http://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/understanding-connectivity.htm).
+Learn more about [creating ArcGIS network datasets](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/creating-a-network-dataset.htm) and [how connectivity works](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/understanding-connectivity.htm).
 
 ### 3. Extract, Translate, and Load (ETL)
 {: .text-left}
@@ -59,7 +59,7 @@ You may have heard the phrase "build once, use many." When building data, we say
 
 We should learn to be adaptable as well. Life is not stagnant, and the ability to change and adapt is beneficial. Having a single use in mind has the potential to put us back at the drawing board, building again.
 
-Learn more about [creating your own spatial ETL tools](http://desktop.arcgis.com/en/arcmap/10.6/extensions/data-interoperability/spatial-etl-tools.htm).
+Learn more about [creating your own spatial ETL tools](https://desktop.arcgis.com/en/arcmap/10.6/extensions/data-interoperability/spatial-etl-tools.htm).
 
 ### 4. Open Data
 {: .text-left}
@@ -81,7 +81,7 @@ The best datasets have lots of edits and editors. They are continually being rev
 
 We too can continually refine through learning and sharing and practice and performance. In turn, this advances our skills and adds to our value.
 
-Brush up on some [essential editing vocabulary](http://desktop.arcgis.com/en/arcmap/10.3/manage-data/editing/essential-editing-vocabulary.htm).
+Brush up on some [essential editing vocabulary](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/editing/essential-editing-vocabulary.htm).
 
 ### 6. Domains
 {: .text-left}

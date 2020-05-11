@@ -262,7 +262,7 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 
 * ESRI. “History of GIS.” Accessed August 19, 2019. https://www.esri.com/en-us/what-is-gis/history-of-gis.
 
-* ESRI. “History Up Close.” 2015. Accessed August 19, 2019. https://www.esri.com/~/media/Files/Pdfs/about-esri/esri-history-up-close.
+* ESRI. “History Up Close.” 2015. Accessed August 19, 2019. [https://www.esri.com/~/media/Files/Pdfs/about-esri/esri-history-up-close](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/about-esri/esri-history-up-close.pdf).
 
 * Fisk, Dale. “Programming with Punched Cards.” Columbia University. Accessed August 19, 2019. http://www.columbia.edu/cu/computinghistory/fisk.pdf.
 
@@ -288,7 +288,7 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 
 * Micronautes. Broad Street Map/Broadwick Street Water Pump. 2017. Retrieved from “John Snow and cholera” article by Laura Gómez. http://unautes.com/index.php/2017/11/16/john-snow-and-cholera/?lang=en.
 
-* Ordnance Survey. “Our History.” 2019. Accessed August 19, 2019. https://www.ordnancesurvey.co.uk/about/overview/history.html.
+* Ordnance Survey. “Our History.” 2019. Accessed August 19, 2019. [https://www.ordnancesurvey.co.uk/about/overview/history.html](https://www.ordnancesurvey.co.uk/about/history).
 
 * Parecki, Aaron. Esri in 1969. Jack Dangermond, Scott Morehouse, SJ Camarata, Logan Hardison. 2013. Retrieved from Flickr. https://www.flickr.com/photos/aaronpk/9570322487/in/photostream/.
 

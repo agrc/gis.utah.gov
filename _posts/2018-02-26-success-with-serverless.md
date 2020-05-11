@@ -32,7 +32,7 @@ This is where serverless computing came in.
 
 Serverless computing centers around a simple concept: abstracting away all of the pain that comes from managing systems and allowing developers to focus on building software. With serverless computing, you simply write the code and let the experts ([Google](https://cloud.google.com/functions/), [Amazon](https://aws.amazon.com/lambda/), [Microsoft](https://azure.microsoft.com/en-us/services/functions/), and others) take care of all of the headaches associated with deploying and hosting. And even better, you only pay when your service is actually invoked. Consequently, the cost ends up being pennies on the dollar compared to standing up a traditional server. In fact, AGRC, to date, has not crossed the threshold of the free tier.
 
-Many of the major vendors provide command-line utilities to help you get up and running quickly. We decided to give the provider-agnostic project, [Serverless](https://serverless.com), a try. [Getting started](https://serverless.com/framework/docs/providers/google/guide/quick-start/) was fairly simple:
+Many of the major vendors provide command-line utilities to help you get up and running quickly. We decided to give the provider-agnostic project, [Serverless](https://www.serverless.com/), a try. [Getting started](https://www.serverless.com/framework/docs/providers/google/guide/quick-start/) was fairly simple:
 1. Choose a programming language. (And make sure it's supported by your provider. We chose Node.js on Google Cloud Functions.)
 1. Create a template-based project.
 1. Set up credentials.

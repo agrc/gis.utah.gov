@@ -34,7 +34,7 @@ All three project areas will be acquired as USGS QL1, 8 points per square meter.
 #### UPDATE 7/17/2019
 {: .text-left }
 
-With the exception of the Unitah Basin / Heber Valley project, managed through the USGS Geospatial Product and Service Contracts (GPSC), all other 2018 project areas are completed and available for download. The Unitah Basin / Heber Valley project should be completed and delivered soon. All other 2018 projects are available from [Raster.utah.gov](https://raster.utah.gov). Below are links to the individual web pages for each project.
+With the exception of the Unitah Basin / Heber Valley project, managed through the USGS Geospatial Product and Service Contracts (GPSC), all other 2018 project areas are completed and available for download. The Unitah Basin / Heber Valley project should be completed and delivered soon. All other 2018 projects are available from [Raster.utah.gov](https://raster.utah.gov/). Below are links to the individual web pages for each project.
 
 - [Northern Utah]({% link data/elevation-and-terrain/2018-lidar-northern-utah/index.md %})
 - [Central Utah]({% link data/elevation-and-terrain/2018-lidar-central-utah/index.md %})

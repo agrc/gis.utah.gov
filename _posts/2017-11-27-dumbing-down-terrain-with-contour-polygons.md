@@ -85,7 +85,7 @@ arcpy.Aspect_3d(r'C:\Contours.gdb\dem30_reclass', 'ContourAspect')
 
 ![Shaded Contours]({% link images/tanakaShaded.png %}){: .inline-text-left .outline }Now that you’ve spent all this time creating data, it’s time to start experimenting with how it’s symbolized in ArcMap. For the two hillshades all you’ll need to do is adjust the transparency to your liking. For the aspect layer you will need to open the `Layer Properties Symbology` tab and check the box next to `Display Background Value` and set the value to `-1` and the color to `transparent`. This will remove all the black areas, leaving the portions of the contours that are either illuminated or shadowed. Everything else is a matter of personal preference.
 
-If you had trouble creating any of the layers in the steps above, or are interested in layer files for symbology, everything can be [downloaded](https://drive.google.com/drive/u/0/folders/10N9pYekwruxvCTH20lGbb_ocb9W3PkKr).
+If you had trouble creating any of the layers in the steps above, or are interested in layer files for symbology, everything can be [downloaded](https://drive.google.com/drive/folders/10N9pYekwruxvCTH20lGbb_ocb9W3PkKr).
 
 If you have a favorite cartographic technique or dataset that you would like to highlight, please send it our way.
 

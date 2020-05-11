@@ -12,7 +12,7 @@ tags:
   - plss
 ---
 
-Finally, an update for the Utah Public Land Survey System (PLSS) Fabric! The Automated Geographic Reference Center (AGRC) has published a PLSS Fabric Version 2.0 (V2.0) for the start of 2018. As the [US Geological Survey describes](https://nationalmap.gov/small_scale/a_plss.html), “The Public Land Survey System (PLSS) is a way of subdividing and describing land in the United States.” The PLSS Fabric is a new method for parcel management that allows all of the various PLSS data layers to be updated simultaneously, which has helped expedite the updating of the data.
+Finally, an update for the Utah Public Land Survey System (PLSS) Fabric! The Automated Geographic Reference Center (AGRC) has published a PLSS Fabric Version 2.0 (V2.0) for the start of 2018. As the [US Geological Survey describes](https://www.usgs.gov/core-science-systems/national-geospatial-program/small-scale-data), “The Public Land Survey System (PLSS) is a way of subdividing and describing land in the United States.” The PLSS Fabric is a new method for parcel management that allows all of the various PLSS data layers to be updated simultaneously, which has helped expedite the updating of the data.
 
 Utah’s updated version of the PLSS Fabric includes:
 

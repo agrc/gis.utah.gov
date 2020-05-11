@@ -29,7 +29,7 @@ A four judge panel, consisting of Beth Overhuls (Salt Lake County CIO), Evan Cur
 - Salt Lake City Public Utilities - Infrastructure Mapping (26-28)
 - Utah State Remote Sensing/GIS Lab - Sage Grouse Habitat (13,36)
 
-While the contest was based on the physical display at the event, the page numbers for the corresponding entry in this year’s [Maps on the Hill pdf booklet](https://drive.google.com/open?id=0BxoOAQyOvGgaNmdVdC1XSFVWdms) are shown in parentheses.
+While the contest was based on the physical display at the event, the page numbers for the corresponding entry in this year’s [Maps on the Hill pdf booklet](https://drive.google.com/file/d/0BxoOAQyOvGgaNmdVdC1XSFVWdms/view?usp=drive_open) are shown in parentheses.
 
 In the inaugural MOTH contest, the winning FFSL entry went so far as to deploy a made-special-for-the-event simulated campfire to complement their excellent map-based information on wildfire risk across the state. That sets the bar high for those thinking about competing for next year’s crown!
 

@@ -24,7 +24,7 @@ Seven new GIS datasets are now available that provide annual projections, throug
 - Typical Jobs (a subtotal of jobs with typical travel & commuting patterns (sums Industrial, Office, & Retail Jobs)
 - Nontypical Jobs (with non typical travel demand, sums agriculture, constructions, & mining jobs)
 
-Actually there are [14 datasets](http://data.wfrc.org/search?q=projections), as this data is available at two geographic levels:
+Actually there are [14 datasets](https://data.wfrc.org/search?q=projections), as this data is available at two geographic levels:
 
   1. “City Areas” aggregations that closely reflect current city boundaries, and
   1. Traffic Analysis Zone polygons, which are much smaller.

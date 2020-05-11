@@ -23,7 +23,7 @@ categories:
   - SGID Blog
 ---
 
-AGRC is in the process of finalizing a contract with [Watershed Sciences Inc. (WSI)](http://www.watershedsciences.com/ "WSI") to acquire 1,352 square miles of USGS Quality Level 1 LiDAR elevation data in the Fall of 2013. WSI won a competitive bid process this summer, that attracted 7 vendor submissions, for a project area that includes: the urbanized areas of the Salt Lake and Utah Valleys and areas along the Wasatch Fault from Sanpete County north into Onieda County in southeastern Idaho.
+AGRC is in the process of finalizing a contract with [Watershed Sciences Inc. (WSI)](https://quantumspatial.com/ "WSI") to acquire 1,352 square miles of USGS Quality Level 1 LiDAR elevation data in the Fall of 2013. WSI won a competitive bid process this summer, that attracted 7 vendor submissions, for a project area that includes: the urbanized areas of the Salt Lake and Utah Valleys and areas along the Wasatch Fault from Sanpete County north into Onieda County in southeastern Idaho.
 
 LiDAR stands for Light Detecting and Ranging. LiDAR data is collected using an airplane-mounted laser and a sensor that records the laser pulse reflections from surfaces on/near the ground. The timing of the pulse returns provides a surrogate for measuring distance. When the distance measurements are combined with the precise instantaneous position of the aircraft from its onboard GPS, the elevation and position of surface of the earth, structures, and vegetation can be measured with high precision.
 
@@ -31,13 +31,13 @@ Quality Level 1 is currently the 'Cadillac' data specification for LiDAR as it p
 
 The primary intended uses for the new LiDAR data include but are not limited to:
 
-- Planning, preparing & mitigating flooding hazards through [FEMA's Risk Map](https://www.fema.gov/risk-mapping-assessment-planning) modernization program
+- Planning, preparing & mitigating flooding hazards through [FEMA's Risk Map](https://www.fema.gov/risk-mapping-assessment-and-planning-risk-map) modernization program
 - Detailed detection of earthquake faults and related hazard modeling and vulnerability studies
 - Delineation of building and structure footprints for general purpose mapping
 
-Many other non-traditional uses of LiDAR data are possible such as detecting landslides and slumping, optimizing irrigation, and [quantifying solar energy systems potential](http://www.slideshare.net/bgranberg/salt-lake-solar-ignite) on rooftops and other surfaces.
+Many other non-traditional uses of LiDAR data are possible such as detecting landslides and slumping, optimizing irrigation, and [quantifying solar energy systems potential](https://www.slideshare.net/bgranberg/salt-lake-solar-ignite) on rooftops and other surfaces.
 
-The 2013 LiDAR acquisition is funded through a partnership of the [US Geological Survey](https://earthquake.usgs.gov/), [Utah Geological Survey](https://geology.utah.gov/), [Utah Division of Emergency Management](https://dem.utah.gov/), FEMA, and a consortium of local government led by the [Salt Lake County Surveyor's Office](http://surveyor.slco.org/). Flights are expected to begin mid Fall, weather conditions permitting, and data delivery is anticipated several months after the flights are completed.
+The 2013 LiDAR acquisition is funded through a partnership of the [US Geological Survey](https://earthquake.usgs.gov/), [Utah Geological Survey](https://geology.utah.gov/), [Utah Division of Emergency Management](https://dem.utah.gov/), FEMA, and a consortium of local government led by the [Salt Lake County Surveyor's Office](https://slco.org/surveyor/). Flights are expected to begin mid Fall, weather conditions permitting, and data delivery is anticipated several months after the flights are completed.
 
 Project deliverables include:
 

@@ -18,7 +18,7 @@ In a June 2019 post “SGID Then and Now,” we touched on [where we thought the
 ## Redesigned SGID Open Data Website
 {: .text-left}
 
-Today we are releasing the redesign of our [SGID Open Data](https://opendata.gis.utah.gov) website. We think the simple interface of the redesigned website and the new icon set will improve the user experience of searching, browsing, and exploring SGID data! We also updated the [AGRC website]({% link data/index.html %}) icons to make the data navigation experience familiar between the two websites. Esri is working on enhancing the Open Data product, and we are following suit by putting a lot more effort into SGID Open Data into the future. The interface and icon set enhancements mark the beginning.
+Today we are releasing the redesign of our [SGID Open Data](https://opendata.gis.utah.gov/) website. We think the simple interface of the redesigned website and the new icon set will improve the user experience of searching, browsing, and exploring SGID data! We also updated the [AGRC website]({% link data/index.html %}) icons to make the data navigation experience familiar between the two websites. Esri is working on enhancing the Open Data product, and we are following suit by putting a lot more effort into SGID Open Data into the future. The interface and icon set enhancements mark the beginning.
 
 ## Open Data into the Future
 {: .text-left}
@@ -58,7 +58,7 @@ AGRC is currently exploring the possibility of expanding the public database to 
 ## Open Data Sharing
 {: .text-left}
 
-One of our main goals for the SGID moving forward is to continue to cultivate a sense of open data sharing in the Utah GIS community. The SGID Open Data website is a great example of the success of our [data sharing workflow]({% link gis-data-sharing/open-data/index.md %}), as you can see from the [authoritative data](http://opendata.gis.utah.gov/search?source=utah%20dnr%20online%20maps%2Cutah%20division%20of%20water%20resources) being shared from our agency partners (DNR Water Resources, DNR Water Rights, and Utah Division of State History). We invite our readers to join these partners and participate in this data-sharing initiative. {% include contact.html subject=page.title text="Please get in touch with " contact=site.data.contacts.sgid %} if you have authoritative ArcGIS Online data to share to the SGID Open Data website.
+One of our main goals for the SGID moving forward is to continue to cultivate a sense of open data sharing in the Utah GIS community. The SGID Open Data website is a great example of the success of our [data sharing workflow]({% link gis-data-sharing/open-data/index.md %}), as you can see from the [authoritative data](https://opendata.gis.utah.gov/search?source=utah%20dnr%20online%20maps%2Cutah%20division%20of%20water%20resources) being shared from our agency partners (DNR Water Resources, DNR Water Rights, and Utah Division of State History). We invite our readers to join these partners and participate in this data-sharing initiative. {% include contact.html subject=page.title text="Please get in touch with " contact=site.data.contacts.sgid %} if you have authoritative ArcGIS Online data to share to the SGID Open Data website.
 
 We are excited for the future of the SGID, and we hope you will get involved to help us provide the highest quality GIS data to the State of Utah.
 

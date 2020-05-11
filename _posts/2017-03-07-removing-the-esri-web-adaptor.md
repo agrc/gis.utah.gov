@@ -9,11 +9,11 @@ categories:
   - Developer
 ---
 
-The [Esri web adaptor](https://server.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm) is a small load balancer/reverse proxy bundled into the ArcGIS Server install but do you know if you need it?
+The [Esri web adaptor](https://enterprise.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm) is a small load balancer/reverse proxy bundled into the ArcGIS Server install but do you know if you need it?
 
 > The esri Web Adaptor is an application that runs in your existing website and forwards requests to your ArcGIS Server machines.
 
-ArcGIS Server runs an http server exposed over the private port 6080. The web adaptor can then accept public requests on port 80 or 443 and choose to forward those requests to the ArcGIS Servers in your site or block the request all together. This scenario is a best practice for public facing ArcGIS Servers. This architecture secures the admin endpoints of ArcGIS Server as well as [many other benefits](https://server.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm). The web adaptor is not required though.
+ArcGIS Server runs an http server exposed over the private port 6080. The web adaptor can then accept public requests on port 80 or 443 and choose to forward those requests to the ArcGIS Servers in your site or block the request all together. This scenario is a best practice for public facing ArcGIS Servers. This architecture secures the admin endpoints of ArcGIS Server as well as [many other benefits](https://enterprise.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm). The web adaptor is not required though.
 
 ### When to install the web adaptor
 {: .text-left }
@@ -31,7 +31,7 @@ As a developer, it is beneficial to mimic your deployment scenario to avoid the 
 ### Replacing the web adaptor
 {: .text-left }
 
-To replace the web adaptor on an IIS machine it is first necessary to install the [Web Platform Installer](http://www.microsoft.com/web/downloads/platform.aspx). Using the web platform installer, search and install the **Application Request Routing** and **URL Rewrite** modules for IIS.
+To replace the web adaptor on an IIS machine it is first necessary to install the [Web Platform Installer](https://www.iis.net/downloads/microsoft/web-platform-installer). Using the web platform installer, search and install the **Application Request Routing** and **URL Rewrite** modules for IIS.
 
 Open IIS, select your instance, and find the new `Application Request Routing` module. Find the `Server Proxy Settings` and enabled the proxy.
 

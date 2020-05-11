@@ -12,7 +12,7 @@ tags:
   - utah 911
 ---
 
-As the State of Utah moves closer to <abbr title="Next-Generation-911 implementation">NG911</abbr>, GIS data providers will soon be required to adhere to national standards set forth by the [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) and the [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](http://uca911.org/911-division) [(section 6 of ref 1)](#further-reading). It can be daunting navigating these `standards` and `best practice` documents, so the intent of this article is to demystify the relevant information and lay out a road map of where we are going.
+As the State of Utah moves closer to <abbr title="Next-Generation-911 implementation">NG911</abbr>, GIS data providers will soon be required to adhere to national standards set forth by the [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) and the [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](https://uca911.org/911-division) [(section 6 of ref 1)](#further-reading). It can be daunting navigating these `standards` and `best practice` documents, so the intent of this article is to demystify the relevant information and lay out a road map of where we are going.
 
 This post is focused on GIS as it relates to NG911 Core Services and the <abbr title="spatial interface">SI</abbr>. These are the services needed to process a call on the <abbr title="Emergency Services IP Network">ESINet</abbr> [(ref 9)](#further-reading). For GIS, this equates to address validation and 911 call routing. Essentially, these are the operations that take place before the call is received at the appropriate <abbr title="public safety answering point">PSAP</abbr>. As a result, NENA has established standards to ensure that these operations can be carried out flawlessly. Failing to comply with these standards could ultimately result in misrouted 911 calls [(section 2.2 of ref 5 and section 2 of ref 4)](#further-reading).
 
@@ -158,9 +158,9 @@ Keep in mind:
 ## Recommended Reading and References
 {: #further-reading .text-left}
 
-The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](http://uca911.org/911-division) and [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) are two valuable sources for further reading on NG911. Below are a few recommended starting points for learning more about NG911 and how it affects us as GIS professionals. (These sources are in no specific order; the numbering is related to the references previously listed throughout this article.)
+The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](https://uca911.org/911-division) and [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) are two valuable sources for further reading on NG911. Below are a few recommended starting points for learning more about NG911 and how it affects us as GIS professionals. (These sources are in no specific order; the numbering is related to the references previously listed throughout this article.)
 
-1. [UCA: Phase II of UCA's Strategic Plan](http://uca911.org/911-division/911-division-documents)
+1. [UCA: Phase II of UCA's Strategic Plan](https://uca911.org/911-division/911-division-documents)
 1. [911 Terminology Master Glossary](https://www.nena.org/page/Glossary)
 1. [NENA: NG911 GIS Data Model (NENA-STA-006.1-2018)](https://www.nena.org/page/NG911GISDataModel)
 1. [NENA: Information Document for GIS Data Stewardship for Next Generation 911 (in final review now) (NENA-INF-028.1.2018)](https://www.nena.org/page/GIS_DataStewardship)

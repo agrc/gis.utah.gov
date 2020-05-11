@@ -15,5 +15,5 @@ It is our intent to update existing AGOL services without changing the service r
 
 The initial push will be to the regularly updated ~20 services that are considered SGID framework data: roads, address points, parcels, boundaries etc.  As we roll these services out as Web Mercator, we are also looking at possibly creating some web maps that will allow users to more easily consume the most popular map layers with large feature counts.
 
-In addition to the transition to Web Mercator, we have rolled out an updated Open Data site using Esri’s open data extension to AGOL.  The address for the site is [opendata.gis.utah.gov](http://opendata.gis.utah.gov).  We will continue to populate Utah’s authoritative framework data into this site for data exploration and download, either directly or via ‘portal federation’ made possible in ArcGIS 10.5.
+In addition to the transition to Web Mercator, we have rolled out an updated Open Data site using Esri’s open data extension to AGOL.  The address for the site is [opendata.gis.utah.gov](https://opendata.gis.utah.gov/).  We will continue to populate Utah’s authoritative framework data into this site for data exploration and download, either directly or via ‘portal federation’ made possible in ArcGIS 10.5.
 

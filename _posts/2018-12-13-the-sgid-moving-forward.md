@@ -17,7 +17,7 @@ The SGID was established by state law in 1991 and ensures that GIS map layers ar
 
 - streamline the SGID data lifecycle process;
 - make the currently compiled data clearer and more accessible for all involved parties, from AGRC to local, state, and federal partners; and
-- work with agencies to add their data to the SGID/[<abbr title="ArcGIS Online">AGOL</abbr>](https://utah.maps.arcgis.com/home/index.html) and share all the State’s GIS data with an even wider audience at [opendata.gis.utah.gov](http://opendata.gis.utah.gov).
+- work with agencies to add their data to the SGID/[<abbr title="ArcGIS Online">AGOL</abbr>](https://utah.maps.arcgis.com/home/index.html) and share all the State’s GIS data with an even wider audience at [opendata.gis.utah.gov](https://opendata.gis.utah.gov/).
 
 In the past, agencies completed data maturity assessments, which provide AGRC with a good foundation for updating and consolidating agency GIS data.
 
@@ -39,7 +39,7 @@ For the past several months, AGRC has been assessing SGID data layer usage in or
 
 We’ve compiled enough data that we’re getting to the point where we should be able to: (1) make some decisions about which data layers need to be updated most frequently and (2) determine how we’ll make sure that happens. Since we’ve got a pretty good handle on the data layers managed by AGRC, we’re also now in a place where we can start reaching out to state agencies and help compile and manage their agency-specific data so it’s accessible to a wider audience.
 
-AGRC’s work on this step is underway, as we’ve started a pilot of asking each agency to share agency-specific data with the relevant SGID group, such as “Water,” “Climate,” “Health,” “Political,” or many others, in AGOL. We’ve also asked agencies to add in a few more keywords with their data so when a user is looking at the various groups on AGOL, the user will see the agency data as a component of the enterprise SGID data. If an agency would like AGRC to harvest its data and publish the data for the agency, we can certainly provide that service. We want to focus on data that is used within the agency and also by other agencies. Eventually our goal is to discover other data layers that may not receive high usage but are important to an agency and make those data layers available for download at [https://gis.utah.gov](https://gis.utah.gov).
+AGRC’s work on this step is underway, as we’ve started a pilot of asking each agency to share agency-specific data with the relevant SGID group, such as “Water,” “Climate,” “Health,” “Political,” or many others, in AGOL. We’ve also asked agencies to add in a few more keywords with their data so when a user is looking at the various groups on AGOL, the user will see the agency data as a component of the enterprise SGID data. If an agency would like AGRC to harvest its data and publish the data for the agency, we can certainly provide that service. We want to focus on data that is used within the agency and also by other agencies. Eventually our goal is to discover other data layers that may not receive high usage but are important to an agency and make those data layers available for download at [https://gis.utah.gov](https://gis.utah.gov/).
 
 **Down the road**
 

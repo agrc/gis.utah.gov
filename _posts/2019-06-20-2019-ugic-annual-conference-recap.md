@@ -21,7 +21,7 @@ This conference is valuable to the GIS community in Utah because it’s the one 
 ## The Conference
 {: .text-left}
 
-So how was the conference this year? [What did attendees talk about](https://drive.google.com/drive/u/0/folders/14svh-48imju91bsyYcB1zw2yRdy9w8fW), and how did the conference compare to other years? Let’s discuss.
+So how was the conference this year? [What did attendees talk about](https://drive.google.com/drive/folders/14svh-48imju91bsyYcB1zw2yRdy9w8fW), and how did the conference compare to other years? Let’s discuss.
 
 <figure class="caption caption--right">
   <a href="{% link images/JackDangermondFeaturedKeynote.jpg %}" title="click to see the full sized image">

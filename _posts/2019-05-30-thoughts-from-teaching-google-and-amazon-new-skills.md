@@ -19,7 +19,7 @@ In 2018 AGRC submitted a [proposal](https://github.com/agrc/digital-assisant-ski
 ## Getting Started
 {: .text-left }
 
-We started with the Alexa skill since we had prior [personal](https://github.com/steveoh/alexa-utah-avy-skill) [experience](https://github.com/stdavis/utah-air-quality-alexa-skill) with the ecosystem and we had a few [promotional devices](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion) that we could test with.
+We started with the Alexa skill since we had prior [personal](https://github.com/steveoh/alexa-utah-avy-skill) [experience](https://github.com/stdavis/utah-air-quality-alexa-skill) with the ecosystem and we had a few [promotional devices](https://developer.amazon.com/en-US/alexa/alexa-skills-kit/alexa-developer-skill-promotion) that we could test with.
 
 Getting started with Amazon was time consuming because of the enterprise and government. At that time, the partnership between the State of Utah and Amazon was very young and authentication and security systems needed to be put in place before we could begin our work. AWS and Alexa are two separate entities that cannot share credentials, so the State could not use the same account for Alexa and AWS. Restricting all of the IAM permissions for State developers to successfully deploy and debug while in an enterprise environment took some trial and error. While we waited for all of the pieces to fall into place, I used my personal Amazon account. All of the account permissions were straightforward and development progressed smoothly.
 
@@ -51,7 +51,7 @@ To train Alexa to understand what to do when questions are asked was a bit cumbe
 
 ### Beyond Voice
 
-Digital assistants without screens existed for barely one year. Skills can now play videos, show images, and present content in basic HTML-like components to complement the voice responses. Alexa has a presentation language [APL](https://developer.amazon.com/docs/alexa-presentation-language/apl-overview.html) to design for this but is _kind of_ complicated. The Google Actions SDK for nodejs contains cards, buttons, tables, images, etc. all built in to the SDK. For Google it was simple and fun to add the visual components while developing. The simulator really helped us choose the right components by rendering the markup. It would be really nice to have a sample page of how the components draw without having to "Try it and see." This was a feature the Alexa skill never received because of the APL complexity, but the Alexa simulator is also capable of displaying the visual components.
+Digital assistants without screens existed for barely one year. Skills can now play videos, show images, and present content in basic HTML-like components to complement the voice responses. Alexa has a presentation language [APL](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/understand-apl.html) to design for this but is _kind of_ complicated. The Google Actions SDK for nodejs contains cards, buttons, tables, images, etc. all built in to the SDK. For Google it was simple and fun to add the visual components while developing. The simulator really helped us choose the right components by rendering the markup. It would be really nice to have a sample page of how the components draw without having to "Try it and see." This was a feature the Alexa skill never received because of the APL complexity, but the Alexa simulator is also capable of displaying the visual components.
 
 ## Testing
 {: .text-left }
