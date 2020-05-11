@@ -14,6 +14,11 @@ License: [MIT](/LICENSE).
 1. run `docker pull jekyll/jekyll:4` to update your image
 1. run `grunt imagemin:images` to minify images
 
+## Website maintenance
+
+1. Check for dead or redirected links
+   - `npx @tmcw/linkrot`
+
 ## Common Website Tips
 
 - [Kramdown reference](http://kramdown.gettalong.org/quickref.html)

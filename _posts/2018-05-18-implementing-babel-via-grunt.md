@@ -20,7 +20,7 @@ It does take a bit of setup but it's well worth the investment of time. Once you
 ```
 npm i grunt-babel babel-preset-latest babel-plugin-transform-remove-strict-mode --save-dev
 ```
-We use the last plugin to remove the `"use strict"` that Babel writes to all output files. This is because [dojo 1 has issues](https://stackoverflow.com/a/43212038/8049053) with [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode).
+We use the last plugin to remove the `"use strict"` that Babel writes to all output files. This is because [dojo 1 has issues](https://stackoverflow.com/questions/33208956/dojo-error-when-using-this-inheritedarguments-in-strict-mode/43212038#43212038) with [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode).
 
 1. Move the `src/app` folder to `_src/app` as well as any other files in `src` that are committed to source control such as `index.html`. This is because we are going to git ignore the `src` folder entirely since it will only hold Babel output as well as other dependencies.
 

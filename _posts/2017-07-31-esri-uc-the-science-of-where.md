@@ -37,4 +37,4 @@ Here are a couple of useful links from the UC:
 - [UC Plenary videos](https://www.esri.com/videos/watch?channelid=UC_yE3TatdZKAXvt_TzGJ6mw&videoid=Kq8y7N1kxR4&playlistid=PLaPDDLTCmy4b4_faC7--TcEP9OMcUXXYU&title=leading-the-science-of-where)
 - [UC Technical Workshops](https://proceedings.esri.com/library/userconf/proc17/tech-workshops.html)
 - [Learn ArcGIS](https://learn.arcgis.com/en/)
-- [ArcGIS Solutions Try It Live](http://solutions.arcgis.com/gallery/#s=0)
+- [ArcGIS Solutions Try It Live](https://solutions.arcgis.com/gallery/)

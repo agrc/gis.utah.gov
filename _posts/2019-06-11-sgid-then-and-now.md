@@ -42,7 +42,7 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 ![1994 SGID User Guide Binder]({% link images/SGID_1994_binders_cover_sm.png %}){: .flex .flex--center}
 
 - **The SGID on CD-ROM (1995)**
-  - In 1995, AGRC, ESRI, and Utah State University combined forces and manufactured a CD-ROM containing SGID data and a built-in data viewer. To commemorate this milestone, we have made available the [original CD-ROM jacket](https://drive.google.com/open?id=17z_AYz68fa2ogToRIIBgX9rTprmA-U1b) as well as the [unaltered CD-ROM contents](https://drive.google.com/open?id=17h13sLMTe3k_g_WnhbphAI-dLPwp5odo).
+  - In 1995, AGRC, ESRI, and Utah State University combined forces and manufactured a CD-ROM containing SGID data and a built-in data viewer. To commemorate this milestone, we have made available the [original CD-ROM jacket](https://drive.google.com/file/d/17z_AYz68fa2ogToRIIBgX9rTprmA-U1b/view?usp=drive_open) as well as the [unaltered CD-ROM contents](https://drive.google.com/drive/folders/17h13sLMTe3k_g_WnhbphAI-dLPwp5odo?usp=drive_open).
 
 ![1995 SGID CD-ROM photo]({% link images/SGID_1995_cover_sm.png %}){: .flex .flex--center}
 
@@ -67,11 +67,11 @@ The [SGID index]({% link data/sgid-index/index.html %}) and current user guide a
 
 ![SGID 2019 User Guide]({% link images/SGID_2019_webpage_data.png %}){: .flex .flex--center}
 
-In order to meet the diverse needs of our users and applications, SGID data is served on a variety of platforms in a variety of formats, including direct database access, downloadable data, [ArcGIS Online](https://gis.utah.gov/data), an [open data portal](https://opendata.gis.utah.gov/), and API web services.
+In order to meet the diverse needs of our users and applications, SGID data is served on a variety of platforms in a variety of formats, including direct database access, downloadable data, [ArcGIS Online](https://gis.utah.gov/data/), an [open data portal](https://opendata.gis.utah.gov/), and API web services.
 
 Here are some current SGID stats showing top accessed data layers by platform:
 
-- **[AGRC Website](https://gis.utah.gov/data)** - Page views from the past 12 months (rounded to the nearest one-hundred)
+- **[AGRC Website](https://gis.utah.gov/data/)** - Page views from the past 12 months (rounded to the nearest one-hundred)
   - Parcels - 30,900
   - Elevation and Terrain - 20,400
   - Aerial Photography - 20,100

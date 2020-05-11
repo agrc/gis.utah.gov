@@ -37,7 +37,7 @@ Google Assistant leads you to Firebase functions for request fulfillment. Fireba
 
 I never did set up a local server for Google Assistant. While the Firebase CLI is awesome and can start a local server, debugging what is going on inside that local server is **not** simple. I _could_ have set up an [Express](https://expressjs.com/) server, roughly a JS equivalent to Flask, but I chose to avoid the complexity. In hindsight, I would recommend the Express approach since (to my great frustration) I ended up `console.log` debugging in the Firebase logs.
 
-When you sign up for Firebase functions, you are placed on the free Spark plan. If making http requests to external resources is something your skill will do, and most do, you will need to upgrade to a paid tier. You will get unhelpful `ENOTFOUND` or `Error: getaddrinfo EAI_AGAIN` JavaScript errors if you [attempt this](https://stackoverflow.com/a/50007666/352432). It is **not** straightforward. We upgraded to the Blaze plan to make requests to the [AGRC WebAPI](https://api.mapserv.utah.gov).
+When you sign up for Firebase functions, you are placed on the free Spark plan. If making http requests to external resources is something your skill will do, and most do, you will need to upgrade to a paid tier. You will get unhelpful `ENOTFOUND` or `Error: getaddrinfo EAI_AGAIN` JavaScript errors if you [attempt this](https://stackoverflow.com/questions/50002469/http-request-to-an-external-api-in-firebase-cloud-functions-spark-tier-refused/50007666#50007666). It is **not** straightforward. We upgraded to the Blaze plan to make requests to the [AGRC WebAPI](https://api.mapserv.utah.gov).
 
 ### Skills as Code
 
