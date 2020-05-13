@@ -16,7 +16,7 @@ The following guidelines apply when using the Open SGID database.
 {: .text-left }
 
 - Search our [known-issues](https://github.com/agrc/open-sgid/issues) page if you are having trouble 
-- {% include contact.html subject=page.title text="Contact " contact=site.data.contacts.opensgid %} if you encounter an new issue.
+- {% include contact.html subject=page.title text="Contact " contact=site.data.contacts.opensgid %} if you encounter a new issue.
 - Use for individual purposes only. Examples include:
   - Cartography
   - Geoprocessing
@@ -26,8 +26,8 @@ The following guidelines apply when using the Open SGID database.
 ## Don't
 {: .text-left }
 
-- Create services from layers
-- Develop large-scale applications using database
+- Create web or map services from Open SGID tables
+- Create processes that make excessive database calls
 - Keep a connection open for multiple days
 
 SLA is 6:00 am - 7:00 pm, Mon-Fri. Contact us if you need an exception.
