@@ -20,7 +20,7 @@ AGRC’s data license and general data disclaimer.
 
 AGRC’s guidelines for creating, editing, maintaining, and removing data in the SGID database.
 
-#### [Open SGID Policy and Terms of Use]({% link about/policy/open-sgid/index.md %})
+#### [Open SGID Terms of Use]({% link about/policy/open-sgid/index.md %})
 {: .text-left}
 
 AGRC’s guidelines for using the Open SGID database.
