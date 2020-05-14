@@ -17,11 +17,11 @@ The following guidelines apply when using the Open SGID database.
 
 - Search our [known-issues](https://github.com/agrc/open-sgid/issues) page if you are having trouble 
 - {% include contact.html subject=page.title text="Contact " contact=site.data.contacts.opensgid %} if you encounter a new issue.
-- Use for individual purposes only. Examples include:
-  - Cartography
-  - Geoprocessing
-  - Analysis
-  - Scripting
+- Use for a wide variety of individual purposes, such as:
+  - making cool maps
+  - solving problems
+  - writing nifty spatial queries
+  - exporing the power of open source
 
 ## Don't
 {: .text-left }
