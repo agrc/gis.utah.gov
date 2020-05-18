@@ -26,7 +26,8 @@ The following guidelines apply when using the Open SGID database.
     - Write spatial queries
   - Scripting
     - Click less buttons
-  - Explore the power of open source spatial data
+  - Explore
+    - A rich catalog of statewide, open source spatial data    
 
 ## Don't
 {: .text-left }
