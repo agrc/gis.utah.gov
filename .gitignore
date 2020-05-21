@@ -9,3 +9,4 @@ Gemfile.lock
 *.pyc
 .jekyll-cache/
 scripts/*.json
+.env/
