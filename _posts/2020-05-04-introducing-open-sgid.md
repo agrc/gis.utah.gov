@@ -24,20 +24,20 @@ The timing could not be more perfect with the sudden increase in teleworking, wh
 
 The new tools and processes developed collectively by AGRC staff to accomplish the Open SGID, as well as the new and improved [Open Data site](https://opendata.gis.utah.gov/), are numerous and worthy of their own blogpost - perhaps some foreshadowing there. However, it is worth noting that a paradigm shift led to the creation of a new internal SGID database that serves as the sole editing environment and data source for the Open SGID and the Open Data site. Automated processes provide nightly updates to both data resources to maintain consistency between them, so you can be sure that you are utilizing the most current data available.
 
-A nearly month-long beta testing period was helpful to identify several issues and some inherent differences between the Open SGID and the enterprise geodatabase of the SGID10 era. A [GitHub repository](https://github.com/agrc/open-sgid) was created as the primary source of information for the Open SGID and to catalog and address [these issues and differences](https://github.com/agrc/open-sgid/issues) with explanations or troubleshooting techniques.
+A nearly month-long beta testing period was helpful to identify several issues and some inherent differences between the Open SGID and the enterprise geodatabase of the SGID10 era. A [GitHub repository](https://github.com/agrc/open-sgid) was created as the primary source of information for the Open SGID and to catalog and address [these issues and differences](https://github.com/agrc/open-sgid/issues) with explanations or troubleshooting techniques, or both. Tags are assigned to each issue to provide a level of categorization. 
 
 #### Known Issues
 
-- [Tables do not contain metadata](https://github.com/agrc/open-sgid/issues/5)
-- [Fields with domains currently only display coded values](https://github.com/agrc/open-sgid/issues/7)
+- [Tables do not contain metadata.](https://github.com/agrc/open-sgid/issues/5)
+- [Fields with domains currently only display coded values.](https://github.com/agrc/open-sgid/issues/7)
 
 #### Differences from SQL SDE Database
 
 - [Table names and casing](https://github.com/agrc/open-sgid/issues/12)
 - [Attribute names and casing](https://github.com/agrc/open-sgid/issues/13)
 - [Null value sorting behavior](https://github.com/agrc/open-sgid/issues/6)
-- [ArcMap requires selection of unique ID field](https://github.com/agrc/open-sgid/issues/9)
+- [Required  selection of unique ID field in ArcMap](https://github.com/agrc/open-sgid/issues/9)
 
-Tags are assigned to each issue to provide a level of categorization. This repository will be an important reference for Open SGID users to search for information about known issues, and to submit new issues they encounter, so AGRC staff and the general user population can collectively offer feedback and solutions. Use the green New issue button on the [issues page](https://github.com/agrc/open-sgid/issues) to submit yours, and visit this page when you first come across a problem with, or question about, the Open SGID to see if others have already found a solution.
+If you come across a problem with or have a question about the Open SGID, visit the [issues page](https://github.com/agrc/open-sgid/issues). This repository not only acts as an important resource for Open SGID users to search for information about known issues, but also allows users to submit new issues they encounter, so AGRC staff and the general user population can collectively offer feedback and solutions. If you have not yet found an answer or solution to your topic, you can use the green _New issue_ button to submit it to the community.
 
-Although it may take some time to adjust to the PostgresSQL database format for traditional Esri clients that are familiar with the SQL SDE database, we view the Open SGID as an enhancement to AGRC’s data access points. It provides a direct SGID database connection that is no longer constrained to the Utah state government network, thereby living up to its name as a database that is truly open and accessible to all GIS platforms and users. We look forward to your feedback as both first-time and long-time SGID users utilize Utah’s most comprehensive and authoritative, open-source, geospatial database for your cartographic and analytical workflows.
+Although it may take some time for traditional Esri clients who are familiar with the SQL SDE database to adjust to the PostgresSQL database format, we view the Open SGID as an enhancement to AGRC’s data access points. It provides a direct SGID database connection that is no longer constrained to the Utah state government network, thereby living up to its name as a database that is truly open and accessible to all GIS platforms and users. We look forward to your feedback as both first-time and long-time SGID users utilize Utah’s most comprehensive and authoritative open-source geospatial database for your cartographic and analytical workflows.
