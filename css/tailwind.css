@@ -1,0 +1,253 @@
+---
+# jekyll will process this now
+---
+
+@tailwind base;
+@tailwind components;
+/* Write your styles below this line. */
+
+.dots {
+    fill: #e67e15;
+}
+
+.land {
+    fill: #e3e3e3;
+}
+
+.hills {
+    fill: #0d7699;
+}
+
+.peak {
+    fill: #00a5d9;
+}
+
+svg.logo {
+    float: left;
+    height: 60px;
+    margin: 7px 10px;
+}
+
+#utahgov_statewideheader a#utahgov_statewideheader_brand {
+    background-color: #535353;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 28px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+#utahgov_statewideheader a#utahgov_statewideheader_brand svg {
+    height: 80%;
+    max-height: 80%
+}
+
+#utahgov_statewideheader_button_services a, #utahgov_statewideheader_button_listings a, #utahgov_statewideheader_button_add a, #search_activator span {
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 2em;
+    margin-left: 1em;
+}
+
+#utahgov_statewideheader_button_listings a {
+    margin-left: 20px;
+}
+
+#utahgov_statewideheader_button_add a {
+    width: 105px;
+}
+
+.state-footer {
+    background-color: lighten(#333, 2%);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300");
+.spotlight {
+    background: radial-gradient(30em circle, #119ac8, #0d7699);
+}
+
+.data-thumb {
+    width: 90px;
+    height: 90px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.data-thumb .element {
+    font-size: 52px;
+    font-weight: 800;
+    fill: #fff;
+}
+
+.data-thumb .label {
+    font-size: 11.5px;
+    fill: #fff;
+}
+
+.data-thumb .background {
+    opacity: 0.4;
+}
+
+.data-thumb .emergency {
+    fill: #2f2340
+}
+
+.data-thumb .address {
+    fill: #008b85
+}
+
+.data-thumb .aerial {
+    fill: #00728d
+}
+
+.data-thumb .basemaps {
+    fill: #c8cb9d
+}
+
+.data-thumb .bioscience {
+    fill: #7fdaff
+}
+
+.data-thumb .boundaries {
+    fill: #feca05
+}
+
+.data-thumb .cadastre {
+    fill: #253c56
+}
+
+.data-thumb .climate {
+    fill: #86e0e0
+}
+
+.data-thumb .contours {
+    fill: #632905
+}
+
+.data-thumb .elevation {
+    fill: #a44e51
+}
+
+.data-thumb .demographic {
+    fill: #413428
+}
+
+.data-thumb .economy {
+    fill: #00704b
+}
+
+.data-thumb .elevation {
+    fill: #a44e51
+}
+
+.data-thumb .energy {
+    fill: #ff3f38
+}
+
+.data-thumb .environment {
+    fill: #7ba43a
+}
+
+.data-thumb .farming {
+    fill: #726654
+}
+
+.data-thumb .geoscience {
+    fill: #778898
+}
+
+.data-thumb .health {
+    fill: #a10002
+}
+
+.data-thumb .history {
+    fill: #c98226
+}
+
+.data-thumb .indices {
+    fill: #223119
+}
+
+.data-thumb .location {
+    fill: #e6af2e
+}
+
+.data-thumb .planning {
+    fill: #5f9eac
+}
+
+.data-thumb .political {
+    fill: #ee3d97
+}
+
+.data-thumb .recreation {
+    fill: #ce5801
+}
+
+.data-thumb .society {
+    fill: #522e92
+}
+
+.data-thumb .transportation {
+    fill: #162b3f
+}
+
+.data-thumb .topo {
+    fill: #b98474
+}
+
+.data-thumb .utilities {
+    fill: #632b30
+}
+
+.data-thumb .water {
+    fill: #0865b3
+}
+
+.item-thumb {
+    width: 300px;
+    height: 150px;
+}
+
+.website-thumb {
+    width: 300px;
+    height: 222px;
+}
+
+.turngps {
+    float: left;
+    width: 59px;
+    height: 64px;
+    margin-right: 1em;
+}
+
+.turngps .panel {
+    fill: #0d7699;
+    stroke: #d1d3d4;
+    stroke-miterlimit: 10;
+}
+
+.turngps .dot {
+    fill: #333;
+}
+
+.turngps-logo {
+    display: none;
+}
+
+/* Write your styles above this line. */
+
+@tailwind utilities;

@@ -22,7 +22,7 @@
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:image" content="{{ "/images/facebookcard.jpg" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+  <link rel="stylesheet" href="{% link css/styles.css %}" />
   <link rel="shortcut icon" type="image/x-icon" href="{% link images/favicon.ico %}" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/atom+xml" title="{{ site.title }} Sitewide ATOM Feed">
@@ -36,30 +36,30 @@
 </head>
 <body>
   <div id="utahgov_statewideheader" style="font-size: 11px;">
-    <div class="pull-left">
+    <div class="float-left">
       <a href="https://www.utah.gov" title="Utah.gov" alt="Utah.gov" class="utahgov_statewideheader_brand" id="utahgov_statewideheader_brand"><svg viewBox="0 0 56 56" x="0px" y="0px" width="56px" height="56px" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M0 35.5c0-4.8 3.9-8.7 8.7-8.7 4.8 0 8.7 3.9 8.7 8.7 0 4.8-3.9 8.7-8.7 8.7S0 40.3 0 35.5z" fill="#E6B42A"></path><path d="M3 12v10.9c0 2.6 1.1 3.9 3.4 3.9 1 0 1.9-0.3 2.7-0.9 0.8-0.6 1.4-1.2 1.6-2v-12h3v17h-3v-2.4c-0.3 0.7-1 1.3-2 1.8 -1 0.6-2 0.8-3 0.8 -1.9 0-3.3-0.5-4.3-1.6S0 24.9 0 22.9V11.7H3L3 12 3 12zM17.2 14.4h-2V12h2V8.4l3-1.2v4.7h4.7v2.4h-4.7v8.5c0 1.4 0.2 2.4 0.7 3.1 0.5 0.6 1.3 0.9 2.3 0.9 0.8 0 1.6-0.2 2.4-0.6l0.4 2.7c-1.3 0.3-2.6 0.5-4.1 0.5 -1.3 0-2.5-0.5-3.4-1.5 -0.9-1-1.4-2.3-1.4-3.8L17.2 14.4 17.2 14.4zM36.8 27.1c-1.2 1.5-3.1 2.3-5.6 2.3 -1.3 0-2.5-0.5-3.5-1.5 -1-1-1.5-2.2-1.5-3.6 0-1.7 0.8-3.2 2.3-4.4 1.5-1.2 3.4-1.8 5.8-1.8 0.6 0 1.4 0.1 2.2 0.4 0-2.8-1.2-4.1-3.7-4.1 -1.9 0-3.3 0.5-4.4 1.5l-1.3-2.5c0.6-0.5 1.4-0.9 2.4-1.2 1-0.3 2-0.5 2.9-0.5 2.5 0 4.3 0.6 5.4 1.7 1.1 1.1 1.7 2.9 1.7 5.4v6.1c0 1.5 0.4 2.5 1.3 3v1.5c-1.2 0-2.2-0.2-2.8-0.5C37.5 28.5 37.1 27.9 36.8 27.1zM36.5 20.7c-1-0.2-1.6-0.3-2-0.3 -1.5 0-2.8 0.4-3.7 1.2 -1 0.8-1.4 1.7-1.4 2.8 0 1.8 1 2.7 3.1 2.7 1.5 0 2.9-0.7 4.1-2.2L36.5 20.7 36.5 20.7zM53 29.1V18.4c0-1.3-0.3-2.3-0.9-3 -0.6-0.7-1.5-1.1-2.6-1.1 -0.7 0-1.5 0.2-2.2 0.6 -0.7 0.4-1.3 0.9-1.7 1.5v12.7h-3v-23l3-1V14c0.4-0.6 1.1-1.1 1.9-1.6 0.9-0.4 1.8-0.6 2.8-0.6 1.8 0 3.2 0.6 4.2 1.8 1 1.2 1.5 2.8 1.5 4.9v10.7L53 29.1 53 29.1z" fill="#FFFFFF"></path><path d="M16.9 49l1.4-2.1c1.5 1 3 1.5 4.3 1.5 1.2 0 2.1-0.2 2.8-0.6s1-0.9 1-1.5c0-1.2-0.9-1.8-2.6-1.8 -0.3 0-0.8 0.1-1.6 0.2 -0.8 0.1-1.4 0.2-1.8 0.2 -2.1 0-3.2-0.8-3.2-2.4 0-0.5 0.2-0.9 0.7-1.3 0.5-0.4 1.1-0.7 1.8-0.9 -2.1-1-3.1-2.7-3.1-5.1 0-1.6 0.5-2.9 1.6-3.9 1.1-1 2.4-1.6 4-1.6 1.5 0 2.6 0.3 3.4 0.9l1.3-1.6 1.7 1.6L27 31.8c0.7 0.9 1 2 1 3.5 0 1.5-0.5 2.8-1.4 3.8 -0.9 1-2.2 1.6-3.7 1.8l-2.2 0.2c-0.3 0-0.6 0.1-1 0.3 -0.4 0.2-0.7 0.4-0.7 0.7 0 0.4 0.5 0.6 1.4 0.6 0.4 0 1-0.1 1.9-0.2 0.8-0.1 1.5-0.2 1.9-0.2 1.5 0 2.6 0.4 3.4 1.1 0.8 0.7 1.2 1.7 1.2 2.9 0 1.4-0.6 2.5-1.8 3.3 -1.2 0.8-2.8 1.3-4.7 1.3 -1 0-2-0.2-3-0.5C18.4 49.9 17.6 49.5 16.9 49zM22.5 31.8c-0.9 0-1.7 0.3-2.2 1 -0.6 0.6-0.9 1.4-0.9 2.4 0 1 0.3 1.9 0.8 2.6 0.6 0.7 1.3 1 2.3 1 0.9 0 1.7-0.3 2.2-1 0.5-0.7 0.8-1.5 0.8-2.6 0-0.9-0.3-1.7-0.9-2.4C24.1 32.2 23.4 31.8 22.5 31.8zM28.8 37.4c0-2.3 0.6-4.2 1.9-5.6 1.2-1.4 2.9-2.1 4.9-2.1 2.1 0 3.8 0.7 5 2 1.2 1.4 1.8 3.2 1.8 5.7 0 2.4-0.6 4.3-1.8 5.7 -1.2 1.4-2.8 2.1-4.9 2.1 -2.1 0-3.8-0.7-5-2.1C29.4 41.7 28.8 39.8 28.8 37.4zM31.5 37.4c0 3.7 1.3 5.6 4 5.6 1.2 0 2.2-0.5 2.9-1.5s1.1-2.4 1.1-4.1c0-3.7-1.3-5.5-4-5.5 -1.2 0-2.2 0.5-2.9 1.5C31.9 34.3 31.5 35.7 31.5 37.4zM49.5 45.2h-0.7L42.4 30h2.9l3.9 10.4 4-10.4H56L49.5 45.2z" fill="#FFFFFF"></path></svg></a>
     </div>
-    <div class="pull-left">
-      <ul class="dotless">
-        <li class="pull-left">
+    <div class="float-left">
+      <ul class="list-none">
+        <li class="float-left">
           <span id="utahgov_statewideheader_button_services"><a href="https://www.utah.gov/services/" target="_blank" rel="noopener">Services</a></span></li>
-        <li class="pull-left">
+        <li class="float-left">
           <span id="utahgov_statewideheader_button_listings"><a href="https://www.utah.gov/government/agencylist.html" title="Utah.gov Agency Listings" target="_blank" rel="noopener">Agencies</a></span></li>
       </ul>
     </div>
-    <div class="pull-right">
+    <div class="float-right">
       <div id="search_activator" style="margin-right: 5px">
         <span onclick="showsearch();" style="text-decoration: none;color: #535353;">Search all of Utah.gov »</span>
       </div>
-      <div id="utahgov_header_search" style="display: none" class="pull-right">
-        <input id="searchutgov" class="pull-left" type="text" title="Utah.gov Search" placeholder="Utah.gov Search" style="margin: 1px 0 0; background: #fff; border: 1px solid #dadada; padding: 0 4px 0 5px;border-radius: 5px 0 0 5px; height:21px; width: 100px;">
+      <div id="utahgov_header_search" class="hidden float-right">
+        <input id="searchutgov" class="float-left" type="text" title="Utah.gov Search" placeholder="Utah.gov Search" style="margin: 1px 0 0; background: #fff; border: 1px solid #dadada; padding: 0 4px 0 5px;border-radius: 5px 0 0 5px; height:21px; width: 100px;">
         <button id="searchutgovbtn" style="margin-top:1px">Search</button>
       </div>
     </div>
-    <div class="clear"></div>
+    <div class="clearfix"></div>
   </div>
-  <header class="header">
-    <div class="inner">
+  <header class="h-20 bg-gray-900">
+    <div class="h-full mx-auto my-0 relative">
       <div>
         <a href="{{ site.baseurl | prepend: site.url }}">
           <svg id="svg-logo" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 155">
@@ -80,103 +80,100 @@
               <path class="dots" d="M385.76,131.87l-1.08,7.44L398,141.25l1.09-7.44ZM363.55,129l-0.9,7.46L376,138.11l0.91-7.46Zm-22.15-2.19-0.72,7.48,13.43,1.3,0.73-7.48Zm-22.12-2-0.61,7.49,13.46,1.1,0.61-7.49ZM297,123.29l-0.53,7.5,13.46,1,0.54-7.5ZM274.83,122l-0.38,7.5,13.48,0.68,0.38-7.51Zm-22.61,6.56L265.71,129l0.27-7.51-13.48-.47Z"/>
             </g>
           </svg>
-          <h2 class="logo-text">UTAH AGRC
-            <span>Automated Geographic Reference Center</span>
-          </h2>
+          <h1 class="inline-block mb-0 font-bold text-4xl text-white text-left tracking-widest leading-none">UTAH AGRC
+            <span class="block text-sm tracking-normal font-normal">Automated Geographic Reference Center</span>
+          </h1>
         </a>
       </div>
       {%- assign current = page.url | downcase | split: '/' -%}
-      <nav class="site-nav">
-        <ul id="menu-main-menu" class="menu">
-          <li class="menu-item{%- if current[1] == 'news' -%}{{ "active-1" | prepend: " " }}{%- endif -%}"><a href="{% link news/index.html %}">News</a></li>
-          <li class="menu-item{%- if current[1] == 'data' -%}{{ "active-2" | prepend: " " }}{%- endif -%}"><a href="{% link data/index.html %}">Data</a></li>
-          <li class="menu-item{%- if current[1] == 'developer' -%}{{ "active-3" | prepend: " " }}{%- endif -%}"><a href="{% link developer/index.md %}">Developer</a></li>
-          <li class="menu-item{%- if current[1] == 'about' -%}{{ "active-4" | prepend: " " }}{%- endif -%}"><a href="{% link about/index.md %}">About</a></li>
-          <li class="menu-item"><a href="https://agrc-status.netlify.app/">Status</a></li>
-          <li class="menu-item"><a href="{% link search/index.html %}"><i class="fas fa-search" title="Site search link"></i></a></li>
+      <nav class="absolute float-right bottom-0" style="right: 25px">
+        <ul id="menu-main-menu">
+          <li class="relative inline float-left list-none my-0 mx-3 text-gray-100 text-xl{%- if current[1] == 'news' -%}{{ "active-1" | prepend: " " }}{%- endif -%}"><a href="{% link news/index.html %}">News</a></li>
+          <li class="relative inline float-left list-none my-0 mx-3 text-gray-100 text-xl{%- if current[1] == 'data' -%}{{ "active-2" | prepend: " " }}{%- endif -%}"><a href="{% link data/index.html %}">Data</a></li>
+          <li class="relative inline float-left list-none my-0 mx-3 text-gray-100 text-xl{%- if current[1] == 'developer' -%}{{ "active-3" | prepend: " " }}{%- endif -%}"><a href="{% link developer/index.md %}">Developer</a></li>
+          <li class="relative inline float-left list-none my-0 mx-3 text-gray-100 text-xl{%- if current[1] == 'about' -%}{{ "active-4" | prepend: " " }}{%- endif -%}"><a href="{% link about/index.md %}">About</a></li>
+          <li class="relative inline float-left list-none my-0 mx-3 text-gray-100 text-xl"><a href="https://agrc-status.netlify.app/">Status</a></li>
+          <li class="relative inline float-left list-none my-0 mx-3 text-gray-100 text-xl"><a href="{% link search/index.html %}"><i class="fas fa-search" title="Site search link"></i></a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <div class="page-content">
-    <div class="wrapper">
+  <div class="max-w-screen-xl m-auto">
+    <div class="mx-auto clearfix">
       {{ content }}
-      <p class="sub-title text-center muted" id="view-counter"></p>
+      <div class="uppercase text-center text-gray-300" id="view-counter"></div>
       <script src="{% link js/dist/view-counter.min.js %}" async defer></script>
     </div>
   </div>
-  <footer class="site-footer wrapper">
-    <div class="grid">
-      <div class="grid__col grid__col--1-of-2">
-        <h3>Stay informed with our mailing list</h3>
-        <div class="text-center">
-          <a class="btn" href="http://eepurl.com/ezapg">subscribe</a>
-
-          <p style="padding-top: 3em">Quick Links</p>
-          <ul class="dotless">
-            <li><a href="{% link about/contact/index.html %}">AGRC Contacts</a>
-            <li><a href="{% link about/mission/index.md %}">AGRC Mission</a>
-            <li><a href="{% link about/code/index.html %}">GIS-related Utah Statute</a>
-            <li><a href="{% link about/policy/index.md %}">AGRC Policies</a>
-            <li><a href="{% link about/media/index.md %}">AGRC Media Resources</a>
-            <li><a href="{% link about/visiting-agrc/index.html %}">AGRC Directions and Parking</a>
+  <footer class="mx-auto px-0 py-4 text-white bg-gray-900">
+    <div class="flex mb-4">
+      <div class="w-1/2 text-center">
+        <h2 class="text-3xl font-thin">Stay informed with our mailing list</h2>
+          <div class="my-5 mb-6">
+            <a class="bg-transparent text-white font-semibold border border-white py-2 px-4 m-3" href="http://eepurl.com/ezapg">subscribe</a>
+          </div>
+          <h3 class="text-2xl font-thin mb-3">Quick Links</h3>
+          <ul class="list-none font-light">
+            <li><a href="{% link about/contact/index.html %}">AGRC Contacts</a></li>
+            <li><a href="{% link about/mission/index.md %}">AGRC Mission</a></li>
+            <li><a href="{% link about/code/index.html %}">GIS-related Utah Statute</a></li>
+            <li><a href="{% link about/policy/index.md %}">AGRC Policies</a></li>
+            <li><a href="{% link about/media/index.md %}">AGRC Media Resources</a></li>
+            <li><a href="{% link about/visiting-agrc/index.html %}">AGRC Directions and Parking</a></li>
           </ul>
-        </div>
       </div>
-      <div class="grid__col grid__col--1-of-2">
-        <h3>Let's Connect</h3>
-        <ul class="social-media-list">
+      <div class="w-1/2">
+        <h2 class="text-3xl font-thin text-center">Let's Connect</h2>
+        <ul class="text-center list-none my-4">
           {%- if site.github_username -%}
-          <li>
-            <a class="clean" title="agrc github account" href="https://github.com/{{ site.github_username }}">
+          <li class="inline mx-3 my-1">
+            <a class="no-underline" title="agrc github account" href="https://github.com/{{ site.github_username }}">
                 <i class="fab fa-github-square fa-3x" title="github link"></i>
             </a>
           </li>
           {%- endif -%} {%- if site.twitter_username -%}
-          <li>
-            <a class="clean" title="agrc twitter account" href="https://twitter.com/{{ site.twitter_username }}">
+          <li class="inline mx-3 my-1">
+            <a class="no-underline" title="agrc twitter account" href="https://twitter.com/{{ site.twitter_username }}">
                 <i class="fab fa-twitter-square fa-3x" title="twitter link"></i>
             </a>
           </li>
           {%- endif -%} {%- if site.facebook_username -%}
-          <li>
-            <a class="clean" title="agrc facebook account" href="https://facebook.com/{{ site.facebook_username }}">
+          <li class="inline mx-3 my-1">
+            <a class="no-underline" title="agrc facebook account" href="https://facebook.com/{{ site.facebook_username }}">
                 <i class="fab fa-facebook-square fa-3x" title="facebook link"></i>
             </a>
           </li>
           {%- endif -%} {%- if site.vimeo_username -%}
-          <li>
-            <a class="clean" title="agrc vimeo account" href="https://vimeo.com/{{ site.vimeo_username }}">
+          <li class="inline mx-3 my-1">
+            <a class="no-underline" title="agrc vimeo account" href="https://vimeo.com/{{ site.vimeo_username }}">
                 <i class="fab fa-vimeo-square fa-3x" title="vimeo link"></i>
             </a>
           </li>
           {%- endif -%}
         </ul>
         <div class="clearfix"></div>
-        <h3>Broken links, images, or misinformation?</h3>
+        <h3 class="text-xl text-center mb-3">Broken links, images, or misinformation?</h3>
         <div class="text-center">
-          <a class="clean" href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
+          <a class="no-underline" href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
             <i class="fas fa-code-branch fa-fw" title="edit problems in this page link"></i>
           </a>
           <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit this page</a> on GitHub or notify us <a href="{{ site.github.repository_url }}/issues/new">with an issue</a>.
           <div>Be sure to read the <a href="{% link about/contributing/index.md %}">contributing guide</a>; We accept public contributions!</div>
         </div>
         <a href="{% link about/policy/index.md %}">
-          <h3><i class="fas fa-exclamation-triangle fa-fw" title="AGRC Data Disclaimer"></i> Data License, Disclaimer, and Policies</h3>
+          <h3 class="text-xl text-center"><i class="fas fa-exclamation-triangle fa-fw" title="AGRC Data Disclaimer"></i> Data License, Disclaimer, and Policies</h3>
         </a>
         {%- if site.github -%}
-        <div class="awesome text-center">
+        <div class="text-xs uppercase text-center text-pink-600 mt-6">
             build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
-
         </div>
         {%- endif -%}
-        <div class="awesome text-center">
-          <a href="https://www.netlify.com">
-            <img src="https://www.netlify.com/img/global/badges/netlify-light.svg"/>
-          </a>
+        <a class="mt-2" href="https://www.netlify.com">
+          <img class="mx-auto" src="https://www.netlify.com/img/global/badges/netlify-light.svg"/>
+        </a>
       </div>
     </div>
-    <div class="state-footer">
+    <div class="block">
       <strong>utah.gov links</strong>
       <span><a href="https://www.utah.gov">Home</a></span>
       <span><a href="https://www.utah.gov/disclaimer.html">Terms of Use</a></span>

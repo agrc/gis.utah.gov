@@ -1,583 +1,602 @@
 ---
 layout: default
 ---
-<div class="section featured">
-  {% for post in site.categories.Featured limit:3 %}
-  <div class="grid__col grid__col--1-of-3 grid__col--am">
-    <a href="{% link {{ post.path }} %}"><i class="far fa-newspaper"></i> {{ post.title | truncate: 80 }}</a>
-  </div>{% endfor %}
+<div class="w-full bg-white border-b border-orange-400 px-2">
+  <div class="flex">
+  {%- for post in site.categories.Featured limit:3 -%}
+    <div class="w-1/3 px-2">
+      <a href="{% link {{ post.path }} %}"><i class="far fa-newspaper"></i> {{ post.title | truncate: 80 }}</a>
+    </div>
+  {%- endfor -%}
+  </div>
 </div>
-<div class="lozad grid main" data-background-image="{% link images/backgrounds/blueprint.jpg %}">
-  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-    <a href="#data"><h3 class="main-heading">GIS Map Data</h3></a>
-    <hr class="hr-separate" />
-    <p class="main-text"><a href="#data"><i class="fas fa-database fa-4x fa-pull-left" title="Spatial Data"></i></a> Established in State law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop download and web service access to hundreds of GIS map data layers developed, aggregated, or acquired by state government.</p>
+<div class="lozad flex flex-wrap pb-5 text-gray-900 py-0 px-5 bg-no-repeat bg-top-left bg-cover border-b border-blue-900" data-background-image="{% link images/backgrounds/blueprint.jpg %}">
+  <div class="w-1/2 md:w-1/3">
+    <a href="#data"><h2 class="text-3xl text-center my-6">GIS Map Data</h2></a>
+    <p><a href="#data"><i class="fas fa-database fa-4x fa-pull-left" title="Spatial Data"></i></a> Established in State law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop download and web service access to hundreds of GIS map data layers developed, aggregated, or acquired by state government.</p>
   </div>
-  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-    <a href="#tiles"><h3 class="main-heading">Aerial Imagery &amp; Base Maps</h3></a>
-    <hr class="hr-separate" />
-    <p class="main-text"><a href="#tiles"><i class="far fa-image fa-4x fa-pull-left" title="Aerial Imagery &amp; Base Maps"></i></a> SGID aerial photography and base map services provide critical map context for GIS and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources.</p>
+  <div class="w-1/2 md:w-1/3">
+    <a href="#tiles"><h2 class="text-3xl text-center my-6">Aerial Imagery &amp; Base Maps</h2></a>
+    <p><a href="#tiles"><i class="far fa-image fa-4x fa-pull-left" title="Aerial Imagery &amp; Base Maps"></i></a> SGID aerial photography and base map services provide critical map context for GIS and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources.</p>
   </div>
-  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-    <a href="{% link gps/index.html %}"><h3 class="main-heading">VRS GPS Network</h3></a>
-    <hr class="hr-separate" />
-    <p class="main-text"><a href="{% link gps/index.html %}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 64.2" class="turngps" aria-labelledby="svg-inline--fa-turn" role="img">
+  <div class="w-1/2 md:w-1/3">
+    <a href="{% link gps/index.html %}"><h2 class="text-3xl text-center my-6">VRS GPS Network</h2></a>
+    <p><a href="{% link gps/index.html %}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 64.2" class="turngps" aria-labelledby="svg-inline--fa-turn" role="img">
       <title id="svg-inline--fa-turn">GPS Networks</title>
       <path class="turngps-logo" d="M-195.3-268.5H937.5v566.4H-195.3z"/><path class="panel" d="M22.3 34.1L23 1 1.2 34.2z"/><path class="panel" d="M53.7 8.6L22.3 34.1 23 1z"/><path class="panel" d="M59.8 37.2l-37.5-3.1L53.7 8.6zM44.7 63L22.3 34.1l37.5 3.1z"/><path class="panel" d="M15.8 57.8l6.5-23.7L44.7 63z"/><path class="panel" d="M15.8 57.8L1.2 34.2l21.1-.1z"/><circle class="dot" cx="23" cy="1" r="1"/><circle class="dot" cx="53.7" cy="8.6" r="1"/><circle class="dot" cx="59.8" cy="37.2" r="1"/><circle class="dot" cx="44.7" cy="63" r="1"/><circle class="dot" cx="22.3" cy="34.1" r="1"/><circle class="dot" cx="15.8" cy="57.8" r="1"/><circle class="dot" cx="1.2" cy="34.1" r="1"/></svg></a> VRS (virtual-reference-station) GPS Network is the foundation for live, up-to-sub-centimeter precision GPS field surveying, mapping, and construction. We currently maintain two networks, TURN GPS, which covers Utah and surrounding areas, and Nevada GPS covering Washoe County Nevada.</p>
   </div>
-  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-    <a href="#dev"><h3 class="main-heading">Utah Map Applications</h3></a>
-    <hr class="hr-separate" />
-    <p class="main-text"><a href="#dev"><i class="fas fa-rocket fa-4x fa-pull-left" title="AGRC Dev Team Creations"></i></a> AGRC’s development team designs, builds, and hosts cutting edge map-based web applications, custom designed to best meet specific agency/program requirements. From <a href="https://atlas.utah.gov/" rel="no-opener">up-to-date Utah reference maps</a> to <a href="{% link developer/applications/index.html %}" rel="no-opener">custom designed web apps</a> that best put specific agency/program information at your fingertips.</p>
+  <div class="w-1/2 md:w-1/3">
+    <a href="#dev"><h2 class="text-3xl text-center my-6">Utah Map Applications</h2></a>
+    <p><a href="#dev"><i class="fas fa-rocket fa-4x fa-pull-left" title="AGRC Dev Team Creations"></i></a> AGRC’s development team designs, builds, and hosts cutting edge map-based web applications, custom designed to best meet specific agency/program requirements. From <a href="https://atlas.utah.gov/" rel="no-opener">up-to-date Utah reference maps</a> to <a href="{% link developer/applications/index.html %}" rel="no-opener">custom designed web apps</a> that best put specific agency/program information at your fingertips.</p>
   </div>
-  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-    <a href="#api"><h3 class="main-heading">Geo APIs</h3></a>
-    <hr class="hr-separate" />
-    <p class="main-text"><a href="#api"><i class="fas fa-compass fa-4x fa-pull-left" title="Web apis you should be using"></i></a> Are you designing or coding an app or process that needs “Where is?” or “What’s At?" answers? Geocoding and point-in-polygon map queries are available via web APIs, from <a class="main-link" href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a>. Sign up for your complimentary account today!</p>
+  <div class="w-1/2 md:w-1/3">
+    <a href="#api"><h2 class="text-3xl text-center my-6">Geo APIs</h2></a>
+    <p><a href="#api"><i class="fas fa-compass fa-4x fa-pull-left" title="Web apis you should be using"></i></a> Are you designing or coding an app or process that needs “Where is?” or “What’s At?" answers? Geocoding and point-in-polygon map queries are available via web APIs, from <a class="main-link" href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a>. Sign up for your complimentary account today!</p>
   </div>
-  <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-    <a href="#news"><h3 class="main-heading">News, Events, &amp; Coordination</h3></a>
-    <hr class="hr-separate" />
-    <p class="main-text"><a href="#news"><i class="far fa-newspaper fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> Utah is widely recognized as a leader in the GIS field. Coordination, partnering and information sharing &mdash; in the form of news, events, tips, and data &mdash; fuel our collective success. <a href="{% link index.html %}/#mc_embed_signup">Sign up</a> for our newsletter to stay in touch!</p>
+  <div class="w-1/2 md:w-1/3">
+    <a href="#news"><h2 class="text-3xl text-center my-6">News, Events, &amp; Coordination</h2></a>
+    <p><a href="#news"><i class="far fa-newspaper fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> Utah is widely recognized as a leader in the GIS field. Coordination, partnering and information sharing &mdash; in the form of news, events, tips, and data &mdash; fuel our collective success. <a href="{% link index.html %}/#mc_embed_signup">Sign up</a> for our newsletter to stay in touch!</p>
   </div>
 </div>
-<div class="grid">
-  <div class="grid__col section action">
-    <h1 id="spotlight">Utah Geographic Information Council Conference 2020</h1>
-    <h3><strong>August 31 - September 4, 2020</strong></h3>
-    <p>The UGIC Board is pleased to announce that the 2020 conference will be held <strong>August 31 - September 4, 2020</strong> at the <strong>Ruby's Inn in Bryce Canyon, Utah</strong>. The board is working to make this the best UGIC conference yet! Save the date on your calendar, and stay tuned for more info in the coming weeks and months.</p> <a class="btn" href="http://events.r20.constantcontact.com/register/event?llr=arygxyiab&oeidk=a07eguwaasv0bb631d9">Register Now!</a>
+<div>
+  <div class="w-full bg-white border-b border-blue-900 pt-2 px-8 pb-8 text-white text-center spotlight">
+    <h1 id="spotlight" class="text-3xl pb-6">Utah Geographic Information Council Conference 2020</h1>
+    <h2 class="text-xl font-bold pb-4">August 31 - September 4, 2020</h2>
+    <p class="leading-relaxed">The UGIC Board is pleased to announce that the 2020 conference will be held <strong>August 31 - September 4, 2020</strong> at the <strong>Ruby's Inn in Bryce Canyon, Utah</strong>. The board is working to make this the best UGIC conference yet! Save the date on your calendar, and stay tuned for more info in the coming weeks and months.</p>
+    <div class="mt-8">
+      <a class="bg-transparent text-white font-semibold border border-white py-2 px-4" href="http://events.r20.constantcontact.com/register/event?llr=arygxyiab&oeidk=a07eguwaasv0bb631d9">Register Now!</a>
+    </div>
   </div>
-  <div class="grid__col section alternate">
+  <div class="w-full bg-gray-100 border-b border-gray-400 pt-2 px-8 pb-8 bg-gray-100">
     <a id="news" class="anchor"></a>
-    <h2>Featured News</h2>
-    {% for post in site.categories.Featured limit:6 %}
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <br/>
-      <a href="{% link {{ post.path }} %}">{{ post.title | truncate: 80 }}</a>
-      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    </div>{% endfor %}
-    <p class="section-read-more">
-      <a href="{% link news/index.html %}" class="btn">All Recent News</a>
-      <a href="{% link agrc-newsletter/index.html %}" class="btn">Past Newsletters</a>
-    </p>
-    <hr class="hr-separate" style="margin-top: 2em" />
-    <div class="grid__col grid__col--1-of-2">
-      <p>Coordination, technical skills transfer, and data sharing are critical to generating effective outcomes from Utah's investment in GIS. Coordination pays off by leveraging the efforts, talents, and success within the GIS community.</p>
+    <h2 class="text-3xl text-center text-blue-300">Featured News</h2>
+      <div class="flex flex-wrap justify-around">
+      {%- for post in site.categories.Featured limit:6 -%}
+        <div class="w-1/2 md:w-1/3 px-1 py-2">
+          <span class="text-orange-700 text-sm">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <br/>
+          <a href="{% link {{ post.path }} %}">{{ post.title | truncate: 80 }}</a>
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </div>
+      {%- endfor -%}
+      </div>
+    <div class="mt-8 mb-0 flex justify-center">
+      <a href="{% link news/index.html %}" class="bg-transparent font-semibold border border border-gray-500 py-2 px-4 mx-1">All Recent News</a>
+      <a href="{% link agrc-newsletter/index.html %}" class="bg-transparent font-semibold border border border-gray-500 py-2 px-4 mx-1">Past Newsletters</a>
     </div>
-    <div class="grid__col grid__col--1-of-2">
-      <p>AGRC encourages GIS professionals and students to periodically contribute news and updates, to both our blog pages and
-      <a href="{% link agrc-newsletter/index.html %}">newsletter</a>.
-      Use the form at the bottom of any gis.utah.gov page to subscribe. {% include contact.html subject="Contributing GIS News" contact=site.data.contacts.newsletter text='Contact' hide-punctuation=true %} to contribute.</p>
+    <div class="flex mt-8">
+      <div class="w-1/2">
+        <p>Coordination, technical skills transfer, and data sharing are critical to generating effective outcomes from Utah's investment in GIS. Coordination pays off by leveraging the efforts, talents, and success within the GIS community.</p>
+      </div>
+      <div class="w-1/2">
+        <p>AGRC encourages GIS professionals and students to periodically contribute news and updates, to both our blog pages and
+        <a href="{% link agrc-newsletter/index.html %}">newsletter</a>.
+        Use the form at the bottom of any gis.utah.gov page to subscribe. {% include contact.html subject="Contributing GIS News" contact=site.data.contacts.newsletter text='Contact' hide-punctuation=true %} to contribute.</p>
+      </div>
     </div>
   </div>
-  <div class="grid__col section">
+  <div class="w-full bg-white border-b border-gray-400 pt-2 px-8 pb-8">
     <a id="data" class="anchor"></a>
-    <h2>GIS Map Data</h2>
-    <div class="grid__col grid__col--1-of-2">
-      <p>Utah's State Geographic Information Database (a.k.a. "the SGID"), was established by policy makers to ensure that GIS map layers were developed in a coordinated fashion and shared openly, without redundant effort. Roads, boundaries, addressing, parcels, aerials, elevation, etc...you’ll find it available for download and as web services from the SGID.</p>
-      <p>The vision for the SGID was created almost two full decades before the government 'open data' and 'transparency' initiatives began hitting their stride. And, to the credit of the GIS community across the state, the SGID's GIS data resources are among the most mature and extensive in the nation.</p>
+    <h2 class="text-3xl text-center">GIS Map Data</h2>
+    <div class="flex mb-8">
+      <div class="w-1/2 pr-1">
+        <p class="mb-3">Utah's State Geographic Information Database (a.k.a. "the SGID"), was established by policy makers to ensure that GIS map layers were developed in a coordinated fashion and shared openly, without redundant effort. Roads, boundaries, addressing, parcels, aerials, elevation, etc...you’ll find it available for download and as web services from the SGID.</p>
+        <p>The vision for the SGID was created almost two full decades before the government 'open data' and 'transparency' initiatives began hitting their stride. And, to the credit of the GIS community across the state, the SGID's GIS data resources are among the most mature and extensive in the nation.</p>
+      </div>
+      <div class="w-1/2 pl-1">
+        <p>Today, interoperable GIS server technology has diminished the importance of a completely centralized map data repository. But, it's actually more critical that the latest and best quality GIS data resources are readily discovered and accessed. And that's true for resources available to users as downloadable shapefiles as well as resources available as connections to live streaming data services. AGRC strives to ensure that the SGID stays current as a state-level channel to aide in the discovery, access, and use of GIS data resources.</p>
+      </div>
     </div>
-    <div class="grid__col grid__col--1-of-2">
-      <p>Today, interoperable GIS server technology has diminished the importance of a completely centralized map data repository. But, it's actually more critical that the latest and best quality GIS data resources are readily discovered and accessed. And that's true for resources available to users as downloadable shapefiles as well as resources available as connections to live streaming data services. AGRC strives to ensure that the SGID stays current as a state-level channel to aide in the discovery, access, and use of GIS data resources.</p>
-    </div>
-    <h3>Filter the <a href="{% link data/sgid-index/index.html %}">master SGID Index table</a> for data &amp; services...</h3>
-    <div class="grid__col--span-all grid__col--centered grid__col--s-hidden" style="width:568px">
+    <h3 class="text-2xl text-center">Filter the <a href="{% link data/sgid-index/index.html %}">master SGID Index table</a> for data &amp; services...</h3>
+    <div class="mx-auto hidden md:block" style="width:568px">
       <a href="{% link data/sgid-index/index.html %}">
         <img alt="SGID Index Table Search" class="lozad" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/sgid-index.png %}">
       </a>
     </div>
-    <h3>...or browse specific Data Categories</h3>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 text-center">
-      <a href="{% link data/911/index.html %}"><h5 class="text-center">911</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb emergency" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-            <text transform="translate(17 59)" class="element">9</text>
-            <text transform="translate(46 60)" style="font-size:26px;font-weight:800;letter-spacing:-0.1em" class="label">11</text>
-        </svg>
-      </a>
+    <h3 class="text-2xl text-center">...or browse specific Data Categories</h3>
+    <div class="flex flex-wrap">
+      <div class="w-1/3 md:w-1/4 mt-3 mb-2">
+        <a href="{% link data/911/index.html %}"><h5 class="text-lg text-center">911</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb emergency" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+              <text transform="translate(17 59)" class="element">9</text>
+              <text transform="translate(46 60)" style="font-size:26px;font-weight:800;letter-spacing:-0.1em" class="label">11</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/address/index.html %}"><h5 class="text-lg text-center">Addresses</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb address" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(9 56)" class="element">Ad</text>
+            <text transform="translate(23 75)" class="label">Address</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/aerial-photography/index.html %}"><h5 class="text-lg text-center">Aerial Photos</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb aerial" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(10 56)" class="element">Ae</text>
+            <text transform="translate(9 75)" class="label">Aerial Photos</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/bioscience/index.html %}"><h5 class="text-lg text-center">Bioscience</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb bioscience" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(19 56)" class="element">Bi</text>
+            <text transform="translate(16 75)" class="label">Bioscience</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/boundaries/index.html %}"><h5 class="text-lg text-center">Boundaries</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb boundaries" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(10 56)" class="element">Bo</text>
+            <text transform="translate(14 75)" class="label">Boundaries</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/cadastre/index.html %}"><h5 class="text-lg text-center">Cadastre</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb cadastre" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(11 56)" class="element">Ca</text>
+            <text transform="translate(20 75)" class="label">Cadastre</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/climate/index.html %}"><h5 class="text-lg text-center">Climate/Weather</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb climate" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(19 56)" class="element">Ci</text>
+            <text transform="translate(24 75)" class="label">Climate</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 mt-3">
+        <a href="{% link data/elevation-and-terrain/contours/index.html %}"><h5 class="text-lg text-center">Contours</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb contours" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(11 56)" class="element">Co</text>
+            <text transform="translate(20 75)" class="label">Contours</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/demographic/index.html %}"><h5 class="text-lg text-center">Demographic</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb demographic" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(9 56)" class="element">De</text>
+            <text transform="translate(5 75)" class="label">Demographics</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/economy/index.html %}"><h5 class="text-lg text-center">Economy</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb economy" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(16 56)" class="element">Ec</text>
+            <text transform="translate(20 75)" class="label">Economy</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/elevation-and-terrain/index.html %}"><h5 class="text-lg text-center">Elevation/Terrain</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb elevation" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(22 56)" class="element">El</text>
+            <text transform="translate(20 75)" class="label">Elevation</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/energy/index.html %}"><h5 class="text-lg text-center">Energy</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb energy" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(13 56)" class="element">En</text>
+            <text transform="translate(26 75)" class="label">Energy</text>>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/environment/index.html %}"><h5 class="text-lg text-center">Environment</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb environment" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(14 56)" class="element">Ev</text>
+            <text transform="translate(10 75)" class="label">Environment</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/farming/index.html %}"><h5 class="text-lg text-center">Farming</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb farming" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(14 56)" class="element">Fa</text>
+            <text transform="translate(22 75)" class="label">Farming</text>>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/geoscience/index.html %}"><h5 class="text-lg text-center">Geoscience</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb geoscience" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(9 56)" class="element">Ge</text>
+            <text transform="translate(14 75)" class="label">Geoscience</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/health/index.html %}"><h5 class="text-lg text-center">Health</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb health" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(9 56)" class="element">He</text>
+            <text transform="translate(27 75)" class="label">Health</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/history/index.html %}"><h5 class="text-lg text-center">History</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb history" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(16 56)" class="element">Hi</text>
+            <text transform="translate(25 75)" class="label">History</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/location/index.html %}"><h5 class="text-lg text-center">Location</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb location" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(13 56)" class="element">Lo</text>
+            <text transform="translate(22 75)" class="label">Location</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/planning/index.html %}"><h5 class="text-lg text-center">Planning</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb planning" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(20 56)" class="element">Pl</text>
+            <text transform="translate(21 75)" class="label">Planning</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/political/index.html %}"><h5 class="text-lg text-center">Political</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb political" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(12 56)" class="element">Po</text>
+            <text transform="translate(24 75)" class="label">Political</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/recreation/index.html %}"><h5 class="text-lg text-center">Recreation</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb recreation" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(11 56)" class="element">Re</text>
+            <text transform="translate(16 75)" class="label">Recreation</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/society/index.html %}"><h5 class="text-lg text-center">Society</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb society" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(13 56)" class="element">So</text>
+            <text transform="translate(25 75)" class="label">Society</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/transportation/index.html %}"><h5 class="text-lg text-center">Transportation</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb transportation" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(17 56)" class="element">Tr</text>
+            <text transform="translate(4 75)" class="label">Transportation</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/usgs-scanned-topographic-maps/index.html %}"><h5 class="text-lg text-center">USGS Topo Maps</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb topo" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(13 56)" class="element">To</text>
+            <text transform="translate(15 75)" class="label">Topo Maps</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/utilities/index.html %}"><h5 class="text-lg text-center">Utilities</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb utilities" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(13 56)" class="element">Ut</text>
+            <text transform="translate(24 75)" class="label">Utilities</text>
+          </svg>
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/4 hidden md:block mt-3 mb-2">
+        <a href="{% link data/water/index.html %}"><h5 class="text-lg text-center">Water</h5>
+          <svg class="data-thumb border border-gray-800 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <rect class="data-thumb water" />
+            <g class="background">
+              <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
+              <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
+              <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
+              <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
+            </g>
+            <text transform="translate(8 56)" class="element">Wa</text>
+            <text transform="translate(28 75)" class="label">Water</text>
+          </svg>
+        </a>
+      </div>
     </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/address/index.html %}"><h5 class="text-center">Addresses</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb address" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(9 56)" class="element">Ad</text>
-          <text transform="translate(23 75)" class="label">Address</text>
-        </svg>
-      </a>
+    <div class="text-center mt-8">
+      <a href="{% link data/index.html %}" class="bg-transparent font-semibold border border border-gray-900 py-2 px-4 mx-1">View All Data</a>
     </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/aerial-photography/index.html %}"><h5 class="text-center">Aerial Photos</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb aerial" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(10 56)" class="element">Ae</text>
-          <text transform="translate(9 75)" class="label">Aerial Photos</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/bioscience/index.html %}"><h5 class="text-center">Bioscience</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb bioscience" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(19 56)" class="element">Bi</text>
-          <text transform="translate(16 75)" class="label">Bioscience</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/boundaries/index.html %}"><h5 class="text-center">Boundaries</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb boundaries" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(10 56)" class="element">Bo</text>
-          <text transform="translate(14 75)" class="label">Boundaries</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/cadastre/index.html %}"><h5 class="text-center">Cadastre</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb cadastre" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(11 56)" class="element">Ca</text>
-          <text transform="translate(20 75)" class="label">Cadastre</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/climate/index.html %}"><h5 class="text-center">Climate/Weather</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb climate" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(19 56)" class="element">Ci</text>
-          <text transform="translate(24 75)" class="label">Climate</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 text-center">
-      <a href="{% link data/elevation-and-terrain/contours/index.html %}"><h5 class="text-center">Contours</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb contours" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(11 56)" class="element">Co</text>
-          <text transform="translate(20 75)" class="label">Contours</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/demographic/index.html %}"><h5 class="text-center">Demographic</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb demographic" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(9 56)" class="element">De</text>
-          <text transform="translate(5 75)" class="label">Demographics</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/economy/index.html %}"><h5 class="text-center">Economy</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb economy" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(16 56)" class="element">Ec</text>
-          <text transform="translate(20 75)" class="label">Economy</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/elevation-and-terrain/index.html %}"><h5 class="text-center">Elevation/Terrain</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb elevation" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(22 56)" class="element">El</text>
-          <text transform="translate(20 75)" class="label">Elevation</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/energy/index.html %}"><h5 class="text-center">Energy</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb energy" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(13 56)" class="element">En</text>
-          <text transform="translate(26 75)" class="label">Energy</text>>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/environment/index.html %}"><h5 class="text-center">Environment</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb environment" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(14 56)" class="element">Ev</text>
-          <text transform="translate(10 75)" class="label">Environment</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/farming/index.html %}"><h5 class="text-center">Farming</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb farming" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(14 56)" class="element">Fa</text>
-          <text transform="translate(22 75)" class="label">Farming</text>>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/geoscience/index.html %}"><h5 class="text-center">Geoscience</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb geoscience" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(9 56)" class="element">Ge</text>
-          <text transform="translate(14 75)" class="label">Geoscience</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/health/index.html %}"><h5 class="text-center">Health</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb health" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(9 56)" class="element">He</text>
-          <text transform="translate(27 75)" class="label">Health</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/history/index.html %}"><h5 class="text-center">History</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb history" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(16 56)" class="element">Hi</text>
-          <text transform="translate(25 75)" class="label">History</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/location/index.html %}"><h5 class="text-center">Location</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb location" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(13 56)" class="element">Lo</text>
-          <text transform="translate(22 75)" class="label">Location</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/planning/index.html %}"><h5 class="text-center">Planning</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb planning" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(20 56)" class="element">Pl</text>
-          <text transform="translate(21 75)" class="label">Planning</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/political/index.html %}"><h5 class="text-center">Political</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb political" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(12 56)" class="element">Po</text>
-          <text transform="translate(24 75)" class="label">Political</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/recreation/index.html %}"><h5 class="text-center">Recreation</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb recreation" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(11 56)" class="element">Re</text>
-          <text transform="translate(16 75)" class="label">Recreation</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/society/index.html %}"><h5 class="text-center">Society</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb society" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(13 56)" class="element">So</text>
-          <text transform="translate(25 75)" class="label">Society</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/transportation/index.html %}"><h5 class="text-center">Transportation</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb transportation" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(17 56)" class="element">Tr</text>
-          <text transform="translate(4 75)" class="label">Transportation</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/usgs-scanned-topographic-maps/index.html %}"><h5 class="text-center">USGS Topo Maps</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb topo" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(13 56)" class="element">To</text>
-          <text transform="translate(15 75)" class="label">Topo Maps</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/utilities/index.html %}"><h5 class="text-center">Utilities</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb utilities" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(13 56)" class="element">Ut</text>
-          <text transform="translate(24 75)" class="label">Utilities</text>
-        </svg>
-      </a>
-    </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-hidden text-center">
-      <a href="{% link data/water/index.html %}"><h5 class="text-center">Water</h5>
-        <svg class="data-thumb outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-          <rect class="data-thumb water" />
-          <g class="background">
-            <path d="M5.76013,54.4137C22.1405,46.06537,39.81464,38.70416,51.78058,24.70081,57.96,17.47009,62.45734,8.66223,66.981,0H.00067V57.46545C1.91364,56.40558,3.839,55.39246,5.76013,54.4137Z" fill="#757575" />
-            <path d="M51.78058,24.70081C39.81464,38.70416,22.1405,46.06537,5.76013,54.4137,3.839,55.39246,1.91364,56.40558.00067,57.46545v28.6424A89.73115,89.73115,0,0,1,10.79858,82.0274L62.55383,65.60284c9.876-3.13421,20.50165-6.86187,27.4455-14.16882v.00067L90,51.434V0H66.98151C62.45807,8.66223,57.96,17.47009,51.78058,24.70081Z" fill="#8a8a8a" />
-            <path d="M86.20935,77.38763q1.8935-.06638,3.79-.08868V51.434c-6.94385,7.307-17.56952,11.03461-27.4455,14.16882L10.79858,82.0274A89.73115,89.73115,0,0,0,.00067,86.10785L0,86.10815V90H28.91632c.69232-.30914,1.38532-.60449,2.07221-.882A162.83436,162.83436,0,0,1,86.20935,77.38763Z" fill="#9e9e9e" />
-            <path d="M86.20935,77.38763A162.83568,162.83568,0,0,0,30.9892,89.118c-.68689.27747-1.37989.57282-2.07227.882h61.0824V77.299Q88.10291,77.32119,86.20935,77.38763Z" fill="#b3b3b3" />
-          </g>
-          <text transform="translate(8 56)" class="element">Wa</text>
-          <text transform="translate(28 75)" class="label">Water</text>
-        </svg>
-      </a>
-    </div>
-    <p class="section-read-more">
-      <a href="{% link data/index.html %}" class="btn">View All Data</a>
-    </p>
   </div>
-  <div class="grid__col section alternate">
+  <div class="w-full bg-white border-b border-gray-400 pt-2 px-8 pb-8 bg-gray-100">
     <a id="tiles" class="anchor"></a>
-    <h2>Base Maps and Imagery</h2>
-    <div class="grid__col grid__col--1-of-3">
-      <p>AGRC hosts aerial photography and pre-rendered base map services on its <a href="{% link discover/index.html %}"> Discover</a> cloud-based server. After obtaining an organizational login, GIS users, CAD users, and web apps can connect to these multi-scale maps using the Open Geospatial Consortium WMS and WMTS protocols. The Discover service provides images and tiles in the Web Mercator projection, an industry standard for web map display.</p>
+    <h2 class="text-3xl text-center">Base Maps and Imagery</h2>
+    <div class="flex flex-wrap mb-8">
+      <div class="w-full md:w-1/3 pr-2">
+        <p>AGRC hosts aerial photography and pre-rendered base map services on its <a href="{% link discover/index.html %}"> Discover</a> cloud-based server. After obtaining an organizational login, GIS users, CAD users, and web apps can connect to these multi-scale maps using the Open Geospatial Consortium WMS and WMTS protocols. The Discover service provides images and tiles in the Web Mercator projection, an industry standard for web map display.</p>
+      </div>
+      <div class="w-full md:w-1/3">
+        <p>Layers accessible from the Discover server include themed base maps built from local &amp; state GIS data in terrain, lite, topo, and hybrid themes. Aerial photography offerings include the latest 6" statewide imagery licensed for state, local, &amp; tribal government from Google, as well as public domain color NAIP, Wasatch Front HRO, CIR/NRG imagery, and the historic B/W DOQ series.</p>
+      </div>
+      <div class="w-full md:w-1/3 pl-2">
+        <p>Until January 31, 2017 AGRC provided base maps from its mapserv.utah.gov server in UTM NAD83 coordinates. These base map services have been retired in favor of the cloud-hosted OGC services served through Discover.</p>
+      </div>
     </div>
-    <div class="grid__col grid__col--1-of-3">
-      <p>Layers accessible from the Discover server include themed base maps built from local &amp; state GIS data in terrain, lite, topo, and hybrid themes. Aerial photography offerings include the latest 6" statewide imagery licensed for state, local, &amp; tribal government from Google, as well as public domain color NAIP, Wasatch Front HRO, CIR/NRG imagery, and the historic B/W DOQ series.</p>
+    <div class="flex flex-wrap mb-8">
+      <div class="w-full md:w-1/3 text-center">
+        <h5 class="text-2xl text-center">Terrain</h5>
+        <img alt="Terrain" class="lozad item-thumb border border-black mx-auto" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/brianhead_terrain_basemap.png %}">
+      </div>
+      <div class="w-full md:w-1/3 text-center">
+        <h5 class="text-2xl text-center">Imagery with Overlay</h5>
+        <img alt="Imagery plus Overlay base maps" class="lozad item-thumb border border-black mx-auto" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/stgeorge_hybrid_basemap.png %}">
+      </div>
+      <div class="w-full md:w-1/3 text-center">
+        <h5 class="text-2xl text-center">Lite</h5>
+        <img alt="Lite base map" class="lozad item-thumb border border-black mx-auto" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/provo_lite_basemap.png %}">
+      </div>
     </div>
-    <div class="grid__col grid__col--1-of-3">
-      <p>Until January 31, 2017 AGRC provided base maps from its mapserv.utah.gov server in UTM NAD83 coordinates. These base map services have been retired in favor of the cloud-hosted OGC services served through Discover.</p>
+    <div class="flex flex-wrap mb-8">
+      <div class="w-full md:w-1/2 md:pr-2">
+        <p>AGRC's <a href="https://atlas.utah.gov">atlas.utah.gov</a> website allows for a quick preview of the most popular base map services. Zoom in for richer map content, click the map for key location-specific info, and use the base map selector in the upper right corner to select your base map of choice.</p>
+      </div>
+      <div class="w-full md:w-1/2 md:pl-2">
+        <p>Among the locally sourced map layers that AGRC incorporates into its base maps are: municipal boundaries, building-specific address points, road centerlines per UDOT specs, and State-stewarded public lands boundaries.</p>
+      </div>
     </div>
-    <div class="grid__col grid__col--1-of-3 text-center">
-      <h5 class="text-center">Terrain</h5>
-      <img alt="Terrain" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/brianhead_terrain_basemap.png %}">
+    <div class="flex flex-wrap justify-center">
+      <a href="{% link discover/index.html %}" class="bg-transparent font-semibold border border border-gray-900 py-2 px-4 mx-1">Discover Server Information</a>
+      <a href="{% link data/base-map-and-imagery/index.md %}" class="bg-transparent font-semibold border border border-gray-900 py-2 px-4 mx-1">Base Map Information</a>
+      <a href="{% link data/aerial-photography/index.html %}" class="bg-transparent font-semibold border border border-gray-900 py-2 px-4 mx-1">Imagery Download Information</a>
     </div>
-    <div class="grid__col grid__col--1-of-3 text-center">
-      <h5 class="text-center">Imagery plus Overlay base maps</h5>
-      <img alt="Imagery plus Overlay base maps" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/stgeorge_hybrid_basemap.png %}">
-    </div>
-    <div class="grid__col grid__col--1-of-3 text-center">
-      <h5 class="text-center">Lite base map</h5>
-      <img alt="Lite base map" class="lozad item-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/provo_lite_basemap.png %}">
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-      <p>AGRC's <a href="https://atlas.utah.gov">atlas.utah.gov</a> website allows for a quick preview of the most popular base map services. Zoom in for richer map content, click the map for key location-specific info, and use the base map selector in the upper right corner to select your base map of choice.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-2">
-      <p>Among the locally sourced map layers that AGRC incorporates into its base maps are: municipal boundaries, building-specific address points, road centerlines per UDOT specs, and State-stewarded public lands boundaries.</p>
-    </div>
-    <p class="section-read-more">
-      <a href="{% link discover/index.html %}" class="btn">Discover Server Information</a>
-      <a href="{% link data/base-map-and-imagery/index.md %}" class="btn">Base Map Information</a>
-      <a href="{% link data/aerial-photography/index.html %}" class="btn">Imagery Download Information</a>
-    </p>
   </div>
-  <div class="grid__col section alternate">
+  <div class="w-full bg-white border-b border-gray-400 pt-2 px-8 pb-8">
     <a id="dev" class="anchor"></a>
-    <h2>Application Development</h2>
-    <div class="grid__col grid__col--1-of-2">
-      <p>There are many possible approaches to publishing data to web maps and web services. AGRC assists with a full range of web map solutions, from the simple to the most complex.</p>
+    <h2 class="text-3xl text-center">Application Development</h2>
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/2">
+        <p>There are many possible approaches to publishing data to web maps and web services. AGRC assists with a full range of web map solutions, from the simple to the most complex.</p>
+      </div>
+      <div class="w-full md:w-1/2">
+        <p>Our dev group specializes in custom applications, designed with agility to meet defined requirements, that maximize the communication, logical organization, and usability of information.</p>
+      </div>
     </div>
-    <div class="grid__col grid__col--1-of-2">
-      <p>Our dev group specializes in custom applications, designed with agility to meet defined requirements, that maximize the communication, logical organization, and usability of information.</p>
+    <h5 class="text-2xl text-center">Some of our recent, and occasionally award-winning, work</h5>
+    <div class="flex flex-wrap">
+      <div class="w-full sm:w-1/2 md:w-1/3 p-1 mt-2 text-center">
+        <a href="{% link developer/applications/watershed-restoration-initiative/index.html %}"><h5 class="text-lg text-center">WRI (DNR-DWR)</h5>
+        <img alt="WRI (DNR-DWR)" class="shadow-md rounded mx-auto lozad website-thumb border border-gray-500" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/wri_utah_gov.png %}" /></a>
+        <p class="pt-2 text-gray-700 text-xs leading-tight font-thin">The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</p>
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 p-1 mt-2 text-center">
+        <a href="{% link developer/applications/vehicle-collision/index.html %}"><h5 class="text-lg text-center">Crash Map (DPS / UDOT)</h5>
+        <img alt="Crash Map (DPS / UDOT)" class="shadow-md rounded mx-auto lozad website-thumb border border-gray-500" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/crashmapping_utah_gov.png %}" /></a>
+        <p class="pt-2 text-gray-700 text-xs leading-tight font-thin">A statewide map of vehicle crashes, reported across all jurisdictions, that allows dynamic filtering for time, date, cause, severity, etc.</p>
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 p-1 mt-2 text-center">
+        <a href="{% link developer/applications/locate/index.html %}"><h5 class="text-lg text-center">locate.utah.gov (GOED)</h5>
+        <img alt="locate.utah.gov (GOED)" class="shadow-md rounded mx-auto lozad website-thumb border border-gray-500" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/locate_utah_gov.png %}" /></a>
+        <p class="pt-2 text-gray-700 text-xs leading-tight font-thin">Utah's Economic Development Map depicts the landscape of what's important to businesses considering relocating to Utah.</p>
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 p-1 mt-2 text-center">
+        <a href="{% link developer/applications/deq-environmental/index.html %}"><h5 class="text-lg text-center">Environmental Map (DEQ)</h5>
+        <img alt="Environmental Interactive Map (DEQ)" class="shadow-md rounded mx-auto lozad website-thumb border border-gray-500" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/deq_utah_gov.png %}" /></a>
+        <p class="pt-2 text-gray-700 text-xs leading-tight font-thin">Search for site-specific information relating to DEQ programs including regulated environmental sites, facilities, and designations.</p>
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 p-1 mt-2 text-center">
+        <a href="{% link developer/applications/raster/index.html %}"><h5 class="text-lg text-center">SGID Raster Search (AGRC)</h5>
+        <img alt="SGID Raster Search (AGRC)" class="shadow-md rounded mx-auto lozad website-thumb border border-gray-500" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/raster_utah_gov.png %}"/></a>
+        <p class="pt-2 text-gray-700 text-xs leading-tight font-thin">Get map-based results for all of the imagery, elevation, lidar, and scanned maps available from Utah's SGID.</p>
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 p-1 mt-2 text-center">
+        <a href="{% link developer/applications/parcels/index.html %}"><h5 class="text-lg text-center">SGID Parcel Viewer (AGRC)</h5>
+        <img alt="SGID Parcel Viewer (AGRC)" class="shadow-md rounded mx-auto lozad website-thumb border border-gray-500" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/parcels_utah_gov.png %}" /></a>
+        <p class="pt-2 text-gray-700 text-xs leading-tight font-thin">Zoom in to view parcel boundaries and basic attributes as assembled statewide by AGRC, in coordination with County Recorders.</p>
+      </div>
     </div>
-    <h5 class="text-center">Some of our recent, and occasionally award-winning, work includes:</h5>
-    <br>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{% link developer/applications/watershed-restoration-initiative/index.html %}"><h5 class="text-center">WRI (DNR-DWR)</h5>
-      <img alt="WRI (DNR-DWR)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/wri_utah_gov.png %}" /></a>
-      <p class="muted">The Watershed Restoration Initiative website uses a shared web map to enable interagency project and resource coordination.</p>
+    <div class="flex justify-center mt-8">
+      <a href="{% link developer/index.md %}" class="bg-transparent font-semibold border border border-gray-900 py-2 px-4 mx-1">More Information</a>
     </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{% link developer/applications/vehicle-collision/index.html %}"><h5 class="text-center">Crash Map (DPS / UDOT)</h5>
-      <img alt="Crash Map (DPS / UDOT)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/crashmapping_utah_gov.png %}" /></a>
-      <p class="muted">A statewide map of vehicle crashes, reported across all jurisdictions, that allows dynamic filtering for time, date, cause, severity, etc.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{% link developer/applications/locate/index.html %}"><h5 class="text-center">locate.utah.gov (GOED)</h5>
-      <img alt="locate.utah.gov (GOED)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/locate_utah_gov.png %}" /></a>
-      <p class="muted">Utah's Economic Development Map depicts the landscape of what's important to businesses considering relocating to Utah.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{% link developer/applications/deq-environmental/index.html %}"><h5 class="text-center">Environmental Map (DEQ)</h5>
-      <img alt="Environmental Interactive Map (DEQ)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/deq_utah_gov.png %}" /></a>
-      <p class="muted">Search for site-specific information relating to DEQ programs including regulated environmental sites, facilities, and designations.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{% link developer/applications/raster/index.html %}"><h5 class="text-center">SGID Raster Search (AGRC)</h5>
-      <img alt="SGID Raster Search (AGRC)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/applications/raster_utah_gov.png %}"/></a>
-      <p class="muted">Get map-based results for all of the imagery, elevation, lidar, and scanned maps available from Utah's SGID.</p>
-    </div>
-    <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-      <a href="{% link developer/applications/parcels/index.html %}"><h5 class="text-center">SGID Parcel Viewer (AGRC)</h5>
-      <img alt="SGID Parcel Viewer (AGRC)" class="lozad website-thumb" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{% link images/parcels_utah_gov.png %}" /></a>
-      <p class="muted">Zoom in to view parcel boundaries and basic attributes as assembled statewide by AGRC, in coordination with County Recorders.</p>
-    </div>
-    <p class="section-read-more text-center">
-      <a href="{% link developer/index.md %}" class="btn">More Information</a>
-    </p>
   </div>
-  <div class="grid__col section no-border">
+  <div class="w-full bg-gray-100 border-b border-orange-400 pt-2 px-8 pb-8">
     <a id="api" class="anchor"></a>
-    <h2>APIs and JavaScript Widgets</h2>
-    <div class="grid__col grid__col--1-of-3">
-      <p>APIs available through <a href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like address location (aka geocoding) and map search (point-in-polygon query) to be built into web applications and data-handling processes without the immediate need for GIS-specific software. These APIs are at the core of sites like <a href="https://le.utah.gov/GIS/findDistrict.jsp">Who Represents Me?</a>, <a href="https://secure.utah.gov/auditor-search/taxing-fee-entity-search.html">Who Taxes me?</a> etc.</p>
+    <h2 class="text-3xl text-center">APIs and JavaScript Widgets</h2>
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/3 md:p-2">
+        <p>APIs available through <a href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a> enable common tasks like address location (aka geocoding) and map search (point-in-polygon query) to be built into web applications and data-handling processes without the immediate need for GIS-specific software. These APIs are at the core of sites like <a href="https://le.utah.gov/GIS/findDistrict.jsp">Who Represents Me?</a>, <a href="https://secure.utah.gov/auditor-search/taxing-fee-entity-search.html">Who Taxes me?</a> etc.</p>
+      </div>
+      <div class="w-full md:w-1/3 md:p-2">
+        <p>AGRC's dev group maintains a library of <a href="{% link developer/widgets/index.md %}"> Utah-specific map widgets</a> that provide common tools desired in web mapping applications. The library includes FindAddress (geocoding), TRSSearch (finds PLSS sections), and Sherlock (can be used to search for any feature in the SGID or layers in a map services. We also, on occasion publish customization for ArcGIS desktop like our <a href="{% link _posts/2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2.md %}"> geocoding api tool</a>.</p>
+      </div>
+      <div class="w-full md:w-1/3 md:p-2">
+        <p>We are into <i>git</i>. By default, the AGRC dev team keeps its code current in <a href="https://github.com/agrc">AGRC's GitHub repository</a>. If it's a web site, widget, desktop add-in, or even the content of this website itself, it should be findable, and open-sourced in the AGRC repo.</p>
+      </div>
     </div>
-    <div class="grid__col grid__col--1-of-3">
-      <p>AGRC's dev group maintains a library of <a href="{% link developer/widgets/index.md %}"> Utah-specific map widgets</a> that provide common tools desired in web mapping applications. The library includes FindAddress (geocoding), TRSSearch (finds PLSS sections), and Sherlock (can be used to search for any feature in the SGID or layers in a map services. We also, on occasion publish customization for ArcGIS desktop like our <a href="{% link _posts/2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2.md %}"> geocoding api tool</a>.</p>
+    <div class="text-center mt-8">
+      <a href="{% link developer/index.md %}" class="bg-transparent font-semibold border border border-gray-900 py-2 px-4 mx-">More Information</a>
     </div>
-   <div class="grid__col grid__col--1-of-3">
-      <p>We are into <i>git</i>. By default, the AGRC dev team keeps its code current in <a href="https://github.com/agrc">AGRC's GitHub repository</a>. If it's a web site, widget, desktop add-in, or even the content of this website itself, it should be findable, and open-sourced in the AGRC repo.</p>
-    </div>
-    <p class="section-read-more">
-      <a href="{% link developer/index.md %}" class="btn">More Information</a>
-    </p>
   </div>
 </div>
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
