@@ -4,7 +4,8 @@
   "description": "Jekyll website for gis.utah.gov",
   "main": "GruntFile.js",
   "scripts": {
-    "test": "jekyll serve"
+    "test": "jekyll serve",
+    "build:full-css": "tailwind build css/tailwind.css -o css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "list.js": "^1.5.0",
     "mustache": "^3.0.1",
     "postcss": "^7.0.30",
+    "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",
     "tailwindcss": "^1.4.6"
   }

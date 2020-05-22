@@ -16,8 +16,8 @@ reload_port: 35729
 analytics:
     google:
         tracking_id: 'UA-11849964-41'
-sass:
-    style: compressed
+# sass:
+#     style: compressed
 github:
     repository_url: https://github.com/agrc/gis.utah.gov
     repository_name: gis.utah.gov
@@ -46,6 +46,8 @@ defaults:
     values:
       layout: "page"
       published: "true"
+plugins:
+  - jekyll-postcss
 exclude:
     - "node_modules"
     - "scripts"
@@ -59,6 +61,8 @@ exclude:
     - "docker-compose.yml"
     - "LICENSE"
     - "CODE_OF_CONDUCT.md"
+    - postcss.config.js
+    - purgecss.config.js
 include:
     - "_redirects"
     - "_headers"
