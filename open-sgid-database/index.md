@@ -17,11 +17,17 @@ The Open SGID database is a PostGIS Cloud SQL mirror of the AGRC SGID database. 
 To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.html %}). To learn more about the SGID and the data, please visit the [AGRC data page]({% link data/index.html %}).
 
 ### Before you Connect...
+{: .text-left }
+
 - Please take a moment to read over the [Open SGID Terms of Use]( {% link about/policy/open-sgid/index.md %}).
 - Get familiar with the [Open SGID GitHub repository](https://github.com/agrc/open-sgid) where you can troubleshoot and track known issues.
 
 ### How to Connect
-There are a variety of clients and application that connect to a PostgreSQL/PostGIS database. Here's how to connect using a few of the more common applications (ArcGIS Desktop, ArcGIS Pro, DBeaver, and QGIS).
+{: .text-left }
+
+There are a variety of clients and application that connect to a PostgreSQL/PostGIS database. Here's how to connect using a few of the more common applications (ArcGIS Desktop, ArcGIS Pro, DBeaver, and QGIS). 
+
+The username and password can be found on the [Open SGID GitHub repository](https://github.com/agrc/open-sgid#connection-information).
 
 ##### ArcGIS Desktop
 - Open ArcCatalog and "Add Database Connection".
