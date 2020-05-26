@@ -66,7 +66,9 @@ counties = gpd.GeoDataFrame.from_postgis(sql, con, geom_col='shape')
 counties.plot(figsize=(10, 6), color='white', edgecolor='black')
 ```
 
-[![Utah County Boundaries]({% link images/EMN_20200526_counties_plot.png %} "Utah County Boundaries")]({% link images/EMN_20200526_counties_plot.png %}){:.inline-text-center}
+<p align="center">
+  <img src="images/EMN_20200526_counties_plot.png" alt="Utah County Boundaries">
+</p>
 
 ### Davis County Address Points by Zip Code
 
@@ -90,7 +92,9 @@ plt.title('Davis County Address Points')
 plt.show()
 ```
 
-[![Davis County Address Points]({% link images/EMN_20200526_addpts_plot.png %} "Davis County Address Points")]({% link images/EMN_20200526_addpts_plot.png %}){:.inline-text-center}
+<p align="center">
+  <img src="images/EMN_20200526_addpts_plot.png" alt="Davis County Address Points">
+</p>
 
 ### Utah Faults Longer than One Mile
 
@@ -114,7 +118,9 @@ plt.title('Utah Faults > 1 Mile')
 plt.show()
 ```
 
-[![Utah Faults > 1 Mile]({% link images/EMN_20200526_faults_plot.png %} "Utah Faults > 1 Mile")]({% link images/EMN_20200526_faults_plot.png %}){:.inline-text-center}
+<p align="center">
+  <img src="images/EMN_20200526_faults_plot.png" alt="Utah Faults > 1 Mile">
+</p>
 
 ## Libraries in State Senate District 24
 
@@ -141,6 +147,8 @@ plt.title('Libraries in Utah Senate District 24')
 plt.show()
 ```
 
-[![Libraries in Utah Senate District 24]({% link images/EMN_20200526_libraries_plot.png %} "Libraries in Utah Senate District 24")]({% link images/EMN_20200526_libraries_plot.png %}){:.inline-text-center}
+<p align="center">
+  <img src="EMN_20200526_libraries_plot.png" alt="Libraries in Utah Senate District 24">
+</p>
 
 That's it!  We've now gone over a few different ways to gather and analyze data from the Open SGID with the psycopg2 and geopandas libraries.  Hopefully this brief tutorial was helpful and will spark your interest in both the Open SGID and using open source Python tools.
