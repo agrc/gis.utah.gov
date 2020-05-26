@@ -119,16 +119,20 @@ Users experiencing problems with the service, such as blurry tiles or different 
 
 Individual organizations will be provided URL links for the Discover services that are unique to their organization. This will allow us to track general usage metrics and monitor the performance of the services. Do not distribute your URL links outside of your organization or division.
 
-### Google Logos
+### Citation and Logos
 {: .text-left}
 
 <i class="fas fa-fw fa-lock"></i>
-Our license with Google requires you to put the appropriate logo on any products made using the Google imagery.
+Our licenses with Google and Hexagon require proper attribution of any products created with their imagery.
 
-[Download zipfile of Google logos]({% link downloads/google_logos.zip %})
+- **Hexagon** requires the following attribution on any products made using the Hexagon imagery (15/30cm imagery 2018 and later):
 
-![white transparent]({% link images/ImageryCGoogle_WhiteTransparent.png %})
-![white on black]({% link images/ImageryCGoogle_WhiteOnBlack.png %})
+    `© 2020 HxGN Content Program, Hexagon`
+
+- **Google** requires you to put the appropriate logo [(zipfile)]({% link downloads/google_logos.zip %}) on any products made using the Google imagery (6" imagery earlier than 2018):
+
+    ![white transparent]({% link images/ImageryCGoogle_WhiteTransparent.png %})
+    ![white on black]({% link images/ImageryCGoogle_WhiteOnBlack.png %})
 
 ### Requests for On-Premise Use
 {: .text-left}
@@ -137,11 +141,11 @@ Our license with Google requires you to put the appropriate logo on any products
 
 You may request a local copy of the NAIP, HRO, Hexagon, and Google imagery for off-line consumption when the provided imagery service does not meet your needs. {{ contact3 }} for consideration:
 
-- Name & organization:
-- Reason for request:
-- Working on behalf of:
-- Project names:
-- Project locations:
+- Name & organization
+- Reason for request
+- Working on behalf of (for licensed Hexagon/Google imagery)
+- Project names
+- Project locations
 
 ### Layers Not Exporting When Using WMS
 {: .text-left}
