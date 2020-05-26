@@ -37,13 +37,13 @@ The rest of this blog will walk you through a few examples of how easy it can be
 
 In the two code blocks, called cells, we install the python libraries that aren't pre-installed (geopandas and psycopg2) and then import the needed libraries so they can be used in the script (geopandas, matplotlib, psycopg2).
 
-```
+```py
 # Install the libraries you'll need
 !pip install geopandas
 !pip install psycopg2
 ```
 
-```
+```py
 # Import the libraries
 import geopandas as gpd
 import matplotlib.pyplot as plt
@@ -54,7 +54,7 @@ import psycopg2
 
 We'll start with a very simple example where we pull county boundaries from the Open SGID using the psycopg2 database client for Postgres and plot them with a basic map.  First, we create a connection object that will hold the necessary arguments for the Postgres connection (database, user, password, and host).  Second, we build a SQL query that will be used to specify the data layer we want to retrieve.  Third, we use a GeoPandas method to read data from PostGIS, supplying it with our SQL query, connection information, and the field we will be using as the geometry column--this is typically the 'shape' field for the Open SGID.  Once we have our spatial data, we can create a simple plot of it with the GeoPandas '.plot()' method, which uses matplotlib behind the scenes.
 
-```
+```py
 # Postgres database connection information
 con = psycopg2.connect(database="opensgid", user="agrc", password="agrc",
     host="opensgid.agrc.utah.gov")
@@ -66,15 +66,13 @@ counties = gpd.GeoDataFrame.from_postgis(sql, con, geom_col='shape')
 counties.plot(figsize=(10, 6), color='white', edgecolor='black')
 ```
 
-<p align="center">
-  <img src="images/EMN_20200526_counties_plot.png" alt="Utah County Boundaries">
-</p>
+[![Utah County Boundaries]({% link images/EMN_20200526_counties_plot.png %} "Utah County Boundaries")]({% link images/EMN_20200526_counties_plot.png %}){: .outline .flex .flex--center}
 
 ### Davis County Address Points by Zip Code
 
 For the second example, we'll do something a little more colorful by plotting address points in Davis county, colored by zip code.  We'll need to create two data layers, one for the address points and one for the county boundary.  This time we'll also expand our SQL query by adding a 'where clause' to filter the address points down to just those in Davis county (`countyid = '49011'`) and select just Davis county's boundary (`name = 'DAVIS'`).  Our plot gets a little more complex, too, as we begin to customize the appearance a little more.  We create figure and axis objects that can provide more control over the plot's appearance using matplotlib.  Then, we add each layer to the plot, specifying the axis that we want to use, and and different color and size properties.  For the address points, we plot the colors based on the zip code (`column='zipcode'`), assign a colormap (`cmap='jet'`), and add a legend by specifying the title and location.  Finally, we can add a title to the plot (`plt.title('Davis County Address Points')`) and send it to the display with `plt.show()`.  [GeoPandas](https://geopandas.org/mapping.html) and [Matplotlib](https://matplotlib.org/tutorials/introductory/pyplot.html) both provide documentation on how to customize plots.
 
-```
+```py
 # Davis County address points by zip code
 sql_addpts = "select * from opensgid.location.address_points where countyid = '49011'"
 addpts = gpd.GeoDataFrame.from_postgis(sql_addpts, con, geom_col='shape')
@@ -92,15 +90,13 @@ plt.title('Davis County Address Points')
 plt.show()
 ```
 
-<p align="center">
-  <img src="images/EMN_20200526_addpts_plot.png" alt="Davis County Address Points">
-</p>
+[![Davis County Address Points]({% link images/EMN_20200526_addpts_plot.png %} "Davis County Address Points")]({% link images/EMN_20200526_addpts_plot.png %}){: .outline .flex .flex--center}
 
 ### Utah Faults Longer than One Mile
 
 In the third example, we'll demonstrate the subsetting capabilities of Pandas/GeoPandas to find and plot fault lines in Utah that are longer than 1 mile (1609.34 meters).  First, we'll specify the layer we want to work with in our SQL query.  Second, we'll create a subset of all the faults (called 'long_faults') by selecting those where the 'shape' field has a length greater than 1609.34 meters.  We use `.copy()` at the end of this line of code to prevent a 'chained assignment' warning in Pandas.  Next, we'll calculate a new field in this subset that converts the length into miles, for easier interpretation.  Finally, we plot the counties and faults longer than 1 mile, colored by length.  Note that the syntax for the legend is a little different now that we are plotting a continuous variable (lengths a floating point) rather than a discrete variable (zipcodes as strings).  We also specify the starting and ending ranges for the colorbar (`vmin` and `vmax`).
 
-```
+```py
 # Utah faults longer than 1 mile
 sql_faults = "select * from opensgid.geoscience.quaternary_faults"
 faults = gpd.GeoDataFrame.from_postgis(sql_faults, con, geom_col='shape')
@@ -118,15 +114,13 @@ plt.title('Utah Faults > 1 Mile')
 plt.show()
 ```
 
-<p align="center">
-  <img src="images/EMN_20200526_faults_plot.png" alt="Utah Faults > 1 Mile">
-</p>
+[![Utah Faults > 1 Mile]({% link images/EMN_20200526_faults_plot.png %} "Utah Faults > 1 Mile")]({% link images/EMN_20200526_faults_plot.png %}){: .outline .flex .flex--center}
 
 ## Libraries in State Senate District 24
 
 For the fourth example, we'll plot public libraries within State Senate district 24 by using a spatial operation, which is really where GeoPandas shines and set itself apart from non-spatial tools.  We start by selecting our data layers (hopefully the syntax is getting familiar now) with SQL queries and reading them in with GeoPandas.  Next, we subset the senate districts down to just district 24 using Pandas square bracket `[]` notation.  Then, we subset the libraries data set by getting the libraries (and their geometry) that are within district 24.  Finally, we plot all districts, our selected district (24), and all libraries that fall within our selected district.
 
-```
+```py
 # Utah Libraries in Senate District 24
 sql_sen = "select * from opensgid.political.senate_districts_2012"
 sen_districts = gpd.GeoDataFrame.from_postgis(sql_sen, con, geom_col='shape')
@@ -147,8 +141,6 @@ plt.title('Libraries in Utah Senate District 24')
 plt.show()
 ```
 
-<p align="center">
-  <img src="EMN_20200526_libraries_plot.png" alt="Libraries in Utah Senate District 24">
-</p>
+[![Libraries in Utah Senate District 24]({% link images/EMN_20200526_libraries_plot.png %} "Libraries in Utah Senate District 24")]({% link images/EMN_20200526_libraries_plot.png %}){: .outline .flex .flex--center}
 
 That's it!  We've now gone over a few different ways to gather and analyze data from the Open SGID with the psycopg2 and geopandas libraries.  Hopefully this brief tutorial was helpful and will spark your interest in both the Open SGID and using open source Python tools.
