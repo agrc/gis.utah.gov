@@ -26,17 +26,17 @@ The following guidelines apply when using the Open SGID database.
   - Analysis
     - Write spatial queries
   - Scripting
-    - Click less buttons
-  - Explore
-    - A rich catalog of statewide, open source spatial data
+    - Click fewer buttons
+  - Exploring
+    - Discover a rich catalog of statewide, open source spatial data
 
-## Don't
+## Do Not
 {: .text-left }
 
 - Create web or map services from Open SGID tables.
 - Create processes that make excessive database calls.
 - Keep a connection open for multiple days.
 
-SLA is 6:00 am - 7:00 pm, Mon-Fri. Contact us if you need an exception.
+AGRC will offer support for the Open SGID from 6:00 a.m. to 7:00 p.m. Monday through Friday. Please contact AGRC beforehand if you need to plan for assistance outside of this time frame.
 
-Visit the [Open SGID GitHub repository](https://github.com/agrc/open-sgid) for more information including database version, connection information, and known issues.
+Visit the [Open SGID GitHub repository](https://github.com/agrc/open-sgid) for more information, including the current database version, connection information, and known issues.
