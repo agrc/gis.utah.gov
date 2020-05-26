@@ -30,6 +30,7 @@ Automated processes provide nightly updates to both the Open SGID and the Open D
 
 And this is just one of the many benefits of using the Open SGID. The Open SGID makes it especially convenient to choose from a wide-ranging list of data, and to explore that data quickly. You can also use the Open SGID for other tasks, such as cartography (making cool maps), geoprocessing (solving problems), analyzing data (writing spatial queries), and scripting (clicking fewer buttons). 
 
+### Beta Testing Results
 A nearly month-long beta testing period was helpful to identify several issues and some inherent differences between the Open SGID and the enterprise geodatabase of the SGID10 era. A [GitHub repository](https://github.com/agrc/open-sgid) was created as the primary source of information for the Open SGID and to catalog and address [these issues and differences](https://github.com/agrc/open-sgid/issues) with explanations or troubleshooting techniques, or both. Tags are assigned to each issue to provide a level of categorization. 
 
 #### Known Issues
