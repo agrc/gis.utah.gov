@@ -1,8 +1,21 @@
-const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: ["./index.html"],
-  defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-});
+const jekyllEnv = process.env.JEKYLL_ENV || "development";
 
 module.exports = {
-  plugins: [require("tailwindcss"), require("autoprefixer"), purgecss],
+  plugins: [
+    require("postcss-import"),
+    require("tailwindcss")("./_includes/tailwind.config.js"),
+    require("autoprefixer"),
+    ...(jekyllEnv != "development"
+      ? [
+          require("@fullhuman/postcss-purgecss")({
+            enabled: true,
+            content: ["!(_site|node_modules)/**/*.+(html|js|md)", "*.html"],
+            whitelistPatternsChildren: [/highlight/],
+            defaultExtractor: (content) =>
+              content.match(/[\w-/:]+(?<!:)/g) || [],
+          }),
+          require("cssnano")({ preset: "default" }),
+        ]
+      : [])
+  ]
 };

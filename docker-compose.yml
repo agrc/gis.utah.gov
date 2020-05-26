@@ -5,6 +5,9 @@ services:
     container_name: "gis.utah.gov"
     image: "jekyll/jekyll:4"
     command: "jekyll serve --watch --livereload"
+    environment:
+      - JEKYLL_ENV=production
+      - NODE_ENV=production
     volumes:
       - "./:/srv/jekyll"
     ports:
