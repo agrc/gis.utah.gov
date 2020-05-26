@@ -14,7 +14,7 @@ The SGID is a collection of vector-format GIS feature classes. Its' content is a
 
 The SGID's organization is based on ISO Topic Categories. AGRC treats the ISO categories as a guideline, and the main goal is to maximize usability for GIS users.
 
-#### When to use?
+#### When to use
 
 Using a database connection to the most current ArcSDE server can be advantageous as users will see and query the most updated version of all feature classes housed at AGRC. Live connections are excellent for browsing, exploring, or making quick maps with SGID data layers. However, users are encouraged to download or export data files where editing, archiving project data, or optimal performance is required. Additionally, it is recommended and in some cases required that users' ArcMap release version be at or above the level of AGRC's ArcSDE server.
 

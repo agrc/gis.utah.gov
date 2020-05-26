@@ -142,7 +142,7 @@
 /code-*                                                                                                   /developer/                                                                   301
 /agrc_contact/*                                                                                           /about/                                                                       301
 /aerial-photography/*                                                                                     /data/aerial-photography/                                                     301
-/sgid/                                                                                                    /data/sgid-index/                                                             301
+/sgid-database/                                                                                           /sgid/                                                                        301
 /index.php                                                                                                /                                                                             301
 /gisresources                                                                                             /                                                                             301
 /data/cadastral                                                                                           /data/cadastre/                                                               301

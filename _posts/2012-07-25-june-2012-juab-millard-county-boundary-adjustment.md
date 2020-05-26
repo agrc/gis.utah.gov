@@ -18,5 +18,5 @@ categories:
 <li>the new boundary (red) which follows PLSS sections (white) and their quarter and 16th divisions</li>
 <li>the previous boundary (blue), which was generally described along ridge lines.</li>
 </ul>
-<p>GIS data representing county boundaries, in the State Geographic Information Database's <a title="How to Connect to the SGID via ArcSDE" href="{% link sgid-database/index.md %}">ArcGIS 10 SDE database server</a> and <a title="State, County, and Municipal Boundaries" href="{% link data/boundaries/citycountystate/index.html %}">downloadable shape and file geodatabase files</a>, has been edited to reflect this change.</p>
+<p>GIS data representing county boundaries, in the State Geographic Information Database's <a title="How to Connect to the SGID via ArcSDE" href="{% link sgid/state-only/index.md %}">ArcGIS 10 SDE database server</a> and <a title="State, County, and Municipal Boundaries" href="{% link data/boundaries/citycountystate/index.html %}">downloadable shape and file geodatabase files</a>, has been edited to reflect this change.</p>
 <p>As county boundaries are basic building blocks for other boundaries (special districts, tax units, election units, administrative jurisdictions, etc), GIS data users should expect to see similar adjustments made to related datasets in the coming months.</p>
