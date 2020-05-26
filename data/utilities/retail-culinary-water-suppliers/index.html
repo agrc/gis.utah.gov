@@ -10,11 +10,9 @@ tags:
 date: 2016-07-12 18:14:11 -0700
 categories: []
 RetailCulinaryWater:
-  downloads:
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mYTlnNFRhaFNfNEk
-      label: 'Culinary Water Suppliers: File Geodatabase'
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mSDhmeUw3OThuWEk
-      label: 'Culinary Water Suppliers: Shapefile'
+  hub:
+    name: Utah Retail Culinary Water Service Areas
+    item_id: 1d2535e8c31247b9aaff664f6ac9c45d
   updates:
     - May 2020
 ---
@@ -34,6 +32,8 @@ abstract="This dataset attempts to represent the retail culinary water suppliers
     <img class="inline-text-left outline" src="{% link images/CulinaryWater90x90.png %}" alt="Culinary Water Thumb" />
     <p>Utilities.RetailCulinaryWaterServiceAreas represents public community water suppliers. Eventually, public non-community (transient) and self-supplied industry (non-transient) suppliers will be added. This feature class includes system boundaries that are historical and no longer active. It also includes some systems that are outside the state. Historical and outside the state systems can be filtered using the <code>ENDYEAR</code> and <code>STATE</code> fields, respectively.These boundaries are derived from many different sources. They include spatial data received directly from the supplier, municipal boundaries, phone call descriptions of service areas, printed maps that had hand drawn boundaries that were then digitized, etc.</p>
   </div>
-  {% include packagedata.html name="RetailCulinaryWater"
-   info=page.RetailCulinaryWater %}
+  {% include packagedata.html
+    name="RetailCulinaryWater"
+    info=page.RetailCulinaryWater
+  %}
 </div>
