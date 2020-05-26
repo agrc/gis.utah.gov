@@ -123,7 +123,7 @@ Individual organizations will be provided URL links for the Discover services th
 {: .text-left}
 
 <i class="fas fa-fw fa-lock"></i>
-Our licenses with Google and Hexagon require proper attribution of any products created with their imagery.
+As part of our licenses with Google and Hexagon, you must provide proper attribution of any products created with their imagery.
 
 - **Hexagon** requires the following attribution on any products made using the Hexagon imagery (15/30cm imagery 2018 and later):
 
