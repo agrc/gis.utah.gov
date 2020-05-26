@@ -35,7 +35,7 @@ The rest of this blog will walk you through a few examples of how easy it can be
 
 ### Install and Import Needed Python Libraries
 
-In the two code blocks, called cells, we install the python libraries that aren't pre-installed (geopandas and psycopg2) and then import the needed libraries so they can be used in the script (geopandas, matplotlib, psycopg2).
+In the first two code blocks, called cells, we install the python libraries that aren't pre-installed (geopandas and psycopg2) and then import the needed libraries so they can be used in the script (geopandas, matplotlib, psycopg2).
 
 ```py
 # Install the libraries you'll need
