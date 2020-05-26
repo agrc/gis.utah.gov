@@ -24,3 +24,8 @@ AGRC’s guidelines for creating, editing, maintaining, and removing data in the
 {: .text-left}
 
 AGRC’s guidelines for using the Open SGID database.
+
+#### [Licensed High-Resolution Imagery Citation]({% link discover/resources/index.md %}#citation-and-logos)
+{: .text-left}
+
+Citation requirements for high-resolution imagery licensed from Google and Hexagon.
