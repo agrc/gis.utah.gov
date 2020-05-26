@@ -127,7 +127,8 @@ As part of our licenses with Google and Hexagon, you must provide proper attribu
 
 - **Hexagon** requires the following attribution on any products made using the Hexagon imagery (15/30cm imagery 2018 and later):
 
-    `© 2020 HxGN Content Program, Hexagon`
+  - Print: "© 2020 HxGN Content Program, Hexagon", with the year being the first year you published the product.
+  - Online: "© 2020 [HxGN Content Program](https://hxgncontent.com), Hexagon", with the year being the first year you published the product and the text `HxGN Content Program` linking to [https://hxgncontent.com](https://hxgncontent.com)
 
 - **Google** requires you to put the appropriate logo [(zipfile)]({% link downloads/google_logos.zip %}) on any products made using the Google imagery (6" imagery earlier than 2018):
 
