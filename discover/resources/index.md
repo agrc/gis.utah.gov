@@ -134,6 +134,8 @@ As part of our licenses with Google and Hexagon, you must provide proper attribu
     ![white transparent]({% link images/ImageryCGoogle_WhiteTransparent.png %})
     ![white on black]({% link images/ImageryCGoogle_WhiteOnBlack.png %})
 
+For products that use the AGRC-produced basemaps, please include a short attribution that complies with the main [AGRC Data License and Disclaimer]({% link about/policy/license-disclaimer/index.md %}) guidelines.
+
 ### Requests for On-Premise Use
 {: .text-left}
 
