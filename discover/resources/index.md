@@ -132,8 +132,9 @@ As part of our licenses with Google and Hexagon, you must provide proper attribu
 
 - **Google** requires you to put the appropriate logo [(zipfile)]({% link downloads/google_logos.zip %}) on any products made using the Google imagery (6" imagery earlier than 2018):
 
-    ![white transparent]({% link images/ImageryCGoogle_WhiteTransparent.png %})
-    ![white on black]({% link images/ImageryCGoogle_WhiteOnBlack.png %})
+  - ![white transparent]({% link images/ImageryCGoogle_WhiteTransparent.png %})
+  - ![white on black]({% link images/ImageryCGoogle_WhiteOnBlack.png %})
+  {: .dotless}
 
 For products that use the AGRC-produced basemaps, please include a short attribution that complies with the main [AGRC Data License and Disclaimer]({% link about/policy/license-disclaimer/index.md %}) guidelines.
 
