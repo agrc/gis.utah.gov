@@ -30,7 +30,7 @@ So, if you’ve got an interest or use for GIS bike data, here are some of the l
 Other bike-related information resources that are _coming soon_ (i.e., over the next few months):
 
 - **Wasatch Front Bike and Pedestrian Demand Score.** This is an update of the 2013 UCATS “Latent Demand” methodology that assigned a variety of demand-related indicators to the road network. [This dataset](http://wfrc.maps.arcgis.com/home/webmap/viewer.html?webmap=8ca837a9d3ff4b1299468e40b3eac383) will incorporate new and updated GIS data and will be published as a stand-alone layer that uses the road centerline geometry. Future enhancements building on this methodology are also planned by WFRC and partners.  
-- **Network Quality.** Metrics for nearby bike network quality have been implemented by UDOT and AGRC will also soon be available for the Wasatch Front metro area, 
+- **Network Quality.** Metrics for nearby bike network quality implemented by UDOT and AGRC will also soon be available for the Wasatch Front metro area, 
 Bike Data Resources Webmap. This integrated web map application allows all of the above datasets to be explored and downloaded for the Wasatch Front metro area.  
 - **Observed Bike Counts.** Observed bike counts are from fixed and mobile bike counters being deployed in urban areas. This is more "aspirational" than "project" at the moment, so expect the timeframe to be a bit longer.
 
