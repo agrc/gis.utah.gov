@@ -4,12 +4,11 @@ services:
   jekyll:
     container_name: "gis.utah.gov"
     image: "jekyll/jekyll:4"
-    command: "jekyll serve --watch --livereload"
+    command: "jekyll serve --livereload --drafts --future --port 5000 --livereload_port 35729"
     environment:
-      - JEKYLL_ENV=production
-      - NODE_ENV=production
+      - JEKYLL_ENV=docker
     volumes:
       - "./:/srv/jekyll"
     ports:
-      - "4000:4000"
+      - "5000:5000"
       - "35729:35729"
