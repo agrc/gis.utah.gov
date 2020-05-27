@@ -35,7 +35,7 @@ Data was requested but not received for the following counties:
 
 #### UDOT Route System
 
-- Read about the [changes coming to the LRS]("https://drive.google.com/file/d/1t03AWYHeqTjssTSKnzn60ygdIB-nqEAF/view").
+- Read about the [changes coming to the LRS](https://drive.google.com/file/d/1t03AWYHeqTjssTSKnzn60ygdIB-nqEAF/view).
 
 #### Bike Attributes Updates
 
