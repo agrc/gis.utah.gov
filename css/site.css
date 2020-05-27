@@ -1,0 +1,28 @@
+---
+---
+@tailwind base;
+@tailwind components;
+
+.dots {
+  fill: #e67e15;
+}
+
+.land {
+  fill: #e3e3e3;
+}
+
+.hills {
+  fill: #0d7699;
+}
+
+.peak {
+  fill: #00a5d9;
+}
+
+.logo {
+  float: left;
+  height: 60px;
+  margin: 7px 10px;
+}
+
+@tailwind utilities;
