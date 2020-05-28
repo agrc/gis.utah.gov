@@ -3,7 +3,7 @@ title: 'A Brief Tutorial on Exploring the Open SGID with Open Source Python Tool
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov
-date: 2020-05-26 16:17:43
+date: 2020-05-28 15:30:00
 categories:
   - SGID Blog
 tags:
@@ -27,10 +27,10 @@ The Open SGID also creates an opportunity for users to pull in data and perform 
 
 The rest of this article will walk you through a brief tutorial of how easy it can be to pull SGID data into Python to perform analysis or create simple maps. These basic building blocks, combined with a little gumption and googling, can put you well on your way to performing whatever analysis you desire. A link to the Jupyter notebook in Google Colab is also included, so you can run the code yourself and build upon it.
 
-*  [Psycopg2](https://www.psycopg.org/) - A PostgreSQL/PostGIS client for Python
-*  [GeoPandas](https://geopandas.org/) - An open source Python project for working with geospatial data
-  * Extends the popular [Pandas](https://pandas.pydata.org/) library to geospatial data
-* [Matplotlib](https://matplotlib.org/) - A plotting and visualization library for Python
+- [Psycopg2](https://www.psycopg.org/) - A PostgreSQL/PostGIS client for Python
+- [GeoPandas](https://geopandas.org/) - An open source Python project for working with geospatial data
+  - Extends the popular [Pandas](https://pandas.pydata.org/) library to geospatial data
+- [Matplotlib](https://matplotlib.org/) - A plotting and visualization library for Python
 
 (Note: some of the querying and filtering in these examples can be done entirely in SQL, but GeoPandas is used to demonstrate its capabilities)
 
@@ -57,7 +57,7 @@ Let's start with a very simple example where you'll pull county boundaries from 
 
 1. Create a connection object that will hold the necessary arguments for the Postgres connection (i.e., database, user, password, and host).
 1. Build a SQL query that will be used to specify the data layer you want to retrieve.
-1. Use a GeoPandas method to read data from PostGIS, supplying it with your SQL query, connection information, and the field you will be using as the geometry column—this is typically the shape field for the Open SGID.
+1. Use a GeoPandas method to read data from PostGIS, supplying it with your SQL query, connection information, and the field you will be using as the geometry column—this is always the shape field for the Open SGID.
 1. Finally, now that the spatial data is loaded in memory, create a simple plot of it with the GeoPandas `.plot()` method, which uses matplotlib behind the scenes.
 
 ```py
@@ -106,10 +106,10 @@ plt.show()
 
 ### EXAMPLE 3: Utah Faults Longer than One Mile
 
-This third example demonstrates the subsetting capabilities of Pandas/GeoPandas to find and plot fault lines in Utah that are longer than 1 mile (1609.34 meters).
+This third example demonstrates the subsetting capabilities of Pandas/GeoPandas to find and plot fault lines in Utah that are longer than 1 mile (1609.34 meters).  The native unit of Open SGID data is meters, so calculations and queries are performed in meters.  After performing the query, a conversion to miles is done to demonstrate how to add a field in GeoPandas and to improve human interpretation of the threshold used.
 1. First, specify the layer you want to work with in the SQL query.
 1. Second, create a subset of all the faults (called long_faults) by selecting those where the shape field has a length greater than 1609.34 meters. Use `.copy()` at the end of this line of code to prevent a “chained assignment” warning in Pandas.
-1. Next, calculate a new field in this subset that converts the length into miles, for easier interpretation.
+1. Next, calculate a new field in this subset that converts the length into miles.
 1. Finally, plot the counties and faults longer than 1 mile, colored by length. Note that the syntax for the legend is a little different now that you are plotting a continuous variable (the length field is formatted as a floating point number) rather than a discrete variable (the zipcode field is formatted as a string). You can also specify the starting and ending ranges for the colorbar (`vmin` and `vmax`).
 
 ```py
@@ -164,6 +164,7 @@ plt.show()
 [![Libraries in Utah Senate District 24]({% link images/EMN_20200526_libraries_plot.png %} "Libraries in Utah Senate District 24")]({% link images/EMN_20200526_libraries_plot.png %}){: .flex .flex--center }
 
 That's it! This brief tutorial has shown a few different ways to gather and analyze data from the Open SGID with the psycopg2 and GeoPandas libraries. Hopefully it was helpful and will spark your interest in both the Open SGID and using open source Python tools.
+
 
 * [AGRC]: Utah Automated Geographic Reference Center
 * [SGID]: State Geographic Information Database
