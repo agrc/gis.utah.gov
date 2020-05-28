@@ -24,7 +24,7 @@ The Open SGID also creates an opportunity to pull in data and perform analysis u
 
 ### Python Notebook and Libraries
 
-The rest of this blog will walk you through a few examples of how easy it can be to pull SGID data into Python to perform analysis or create simple maps.  These basic building blocks, combined with a little gumption and googling, can put you well on your way to performing whatever analysis you desire.  A link to the Jupyter notebook in Google Colab is also included, so you can run the code yourself and build upon it.  Following Python libraries will be used in this tutorial:
+The rest of this blog will walk you through a few examples of how easy it can be to pull SGID data into Python to perform analysis or create simple maps.  These basic building blocks, combined with a little gumption and googling, can put you well on your way to performing whatever analysis you desire.  A link to the Jupyter notebook in Google Colab is also included, so you can run the code yourself and build upon it.  The following Python libraries will be used in this tutorial:
 
 -   [Psycopg2](https://www.psycopg.org/) - A PostgreSQL/PostGIS client for Python
 -   [GeoPandas](https://geopandas.org/) - An open source Python project for working with geospatial data
