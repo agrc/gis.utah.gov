@@ -166,5 +166,5 @@ plt.show()
 That's it! This brief tutorial has shown a few different ways to gather and analyze data from the Open SGID with the psycopg2 and GeoPandas libraries. Hopefully it was helpful and will spark your interest in both the Open SGID and using open source Python tools.
 
 
-* [AGRC]: Utah Automated Geographic Reference Center
-* [SGID]: State Geographic Information Database
+*[AGRC]: Utah Automated Geographic Reference Center
+*[SGID]: State Geographic Information Database
