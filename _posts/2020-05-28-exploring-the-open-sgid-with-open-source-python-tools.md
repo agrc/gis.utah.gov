@@ -37,7 +37,6 @@ The rest of this article will walk you through a brief tutorial of how easy it c
 _(Note: some of the querying and filtering in these examples can be done entirely in SQL, but GeoPandas is used to demonstrate its capabilities)_
 
 ### Install and Import Needed Python Libraries
-
 {: .text-left}
 
 In the first couple of cells, install the Python libraries that aren't preinstalled (i.e., GeoPandas and psycopg2) and then import the needed libraries so they can be used in the script (i.e., GeoPandas, matplotlib, psycopg2).
