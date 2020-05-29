@@ -6,6 +6,7 @@ author:
 date: 2020-05-28 15:30:00
 categories:
   - SGID Blog
+  - Featured
 tags:
   - open sgid
   - python
