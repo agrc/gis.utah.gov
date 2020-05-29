@@ -25,7 +25,6 @@ The introduction of the [Open SGID](https://gis.utah.gov/introducing-open-sgid/)
 The Open SGID also creates an opportunity for users to pull in data and perform analysis using open source software and libraries-like Python. With this route, you don't need to worry about paying for licensed software or even installing GIS desktop software at all. And if you use a cloud-hosted Jupyter notebook—like Google Colab—you don't even have to install Python on your computer (or tablet or chromebook)!
 
 ### Python Notebook and Libraries
-
 {: .text-left}
 
 The rest of this article will walk you through a brief tutorial of how easy it can be to pull SGID data into Python to perform analysis or create simple maps. These basic building blocks, combined with a little gumption and googling, can put you well on your way to performing whatever analysis you desire. A link to the Jupyter notebook in Google Colab is also included, so you can run the code yourself and build upon it.
@@ -57,7 +56,6 @@ import psycopg2
 ```
 
 ### EXAMPLE 1: County Boundaries in Utah
-
 {: .text-left}
 
 Let's start with a very simple example where you'll pull county boundaries from the Open SGID using the psycopg2 database client for Postgres and plot them with a basic map.
@@ -82,7 +80,6 @@ counties.plot(figsize=(10, 6), color='white', edgecolor='black')
 [![Utah County Boundaries]({% link images/EMN_20200526_counties_plot.png %} "Utah County Boundaries")]({% link images/EMN_20200526_counties_plot.png %}){: .flex .flex--center }
 
 ### EXAMPLE 2: Davis County Address Points by Zip Code
-
 {: .text-left}
 
 For the second example, you'll do something a little more colorful by plotting Davis County address points, colored by zip code.
@@ -115,7 +112,6 @@ plt.show()
 [![Davis County Address Points]({% link images/EMN_20200526_addpts_plot.png %} "Davis County Address Points")]({% link images/EMN_20200526_addpts_plot.png %}){: .flex .flex--center }
 
 ### EXAMPLE 3: Utah Faults Longer than One Mile
-
 {: .text-left}
 
 This third example demonstrates the subsetting capabilities of Pandas/GeoPandas to find and plot fault lines in Utah that are longer than 1 mile (1609.34 meters). The native unit of Open SGID data is meters, so calculations and queries are performed in meters. After performing the query, a conversion to miles is done to demonstrate how to add a field in GeoPandas and to improve human interpretation of the threshold used.
@@ -146,7 +142,6 @@ plt.show()
 [![Utah Faults > 1 Mile]({% link images/EMN_20200526_faults_plot.png %} "Utah Faults > 1 Mile")]({% link images/EMN_20200526_faults_plot.png %}){: .flex .flex--center }
 
 ## EXAMPLE 4: Libraries in State Senate District 24
-
 {: .text-left}
 
 For this fourth example, you'll plot public libraries within State Senate District 24 by using a spatial operation, which is really where GeoPandas shines and sets itself apart from nonspatial tools.
@@ -181,5 +176,5 @@ plt.show()
 
 That's it! This brief tutorial has shown a few different ways to gather and analyze data from the Open SGID with the psycopg2 and GeoPandas libraries. Hopefully it was helpful and will spark your interest in both the Open SGID and using open source Python tools.
 
-_[AGRC]: Utah Automated Geographic Reference Center
-_[SGID]: State Geographic Information Database
+*[AGRC]: Utah Automated Geographic Reference Center
+*[SGID]: State Geographic Information Database
