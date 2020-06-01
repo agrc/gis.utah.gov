@@ -39,7 +39,7 @@ Data was requested but not received for the following counties:
 
 #### Bike Attributes Updates
 
-- In collaboration with UDOT and WFRC, significant updates were made to the following bike-related fields: `BIKE_L` (Existing Bike Feature Left), `BIKE_R` (Existing Bike Feature Right), `BIKE_PLN_L` (Planned Bike Feature Left), and `BIKE_PLN_R` (Planned Bike Feature Right). For more information on the bike fields, please see the [Road Centerlines Data Model]("https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546"). For more information on these bike-attribute updates, please read this related [blog post]({% link _posts/2020-05-27-bike-related-gis-data-resources.md %}).
+- In collaboration with UDOT and WFRC, significant updates were made to the following bike-related fields: `BIKE_L` (Existing Bike Feature Left), `BIKE_R` (Existing Bike Feature Right), `BIKE_PLN_L` (Planned Bike Feature Left), and `BIKE_PLN_R` (Planned Bike Feature Right). For more information on the bike fields, please see the [Road Centerlines Data Model](https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546). For more information on these bike-attribute updates, please read this related [blog post]({% link _posts/2020-05-27-bike-related-gis-data-resources.md %}).
 
 *[UDOT]: Utah Department of Transportation
 *[WFRC]: Wasatch Front Regional Council
