@@ -25,7 +25,12 @@ To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.
 ### How to Connect
 {: .text-left }
 
-There are a variety of clients and applications that can connect to a PostgreSQL database. Here's how to connect using a few of the more common applications (ArcGIS Desktop, ArcGIS Pro, DBeaver, and QGIS).
+There are a variety of clients and applications that can connect to a PostgreSQL database. Here are a few of the more common applications and how to connect.
+
+- [ArcGIS Desktop](#arcgis-desktop)
+- [ArcGIS Pro](#arcgis-pro)
+- [DBeaver](#dbeaver)
+- [QGIS](#qgis)
 
 The username and password can be found on the [Open SGID GitHub repository](https://github.com/agrc/open-sgid#connection-information).
 
