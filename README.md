@@ -4,7 +4,7 @@ Read [about our new website](https://gis.utah.gov/about-our-new-v6-website-in-gh
 [Contribute](https://gis.utah.gov/about/contributing/) content or typos.
 License: [MIT](/LICENSE).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fd943f0d-1816-4377-bdab-866190826309/deploy-status)](https://app.netlify.com/sites/gis-utah-gov/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29158e9e-9b1c-4d85-995b-a3ca444ff187/deploy-status)](https://app.netlify.com/sites/gis-utah-gov/deploys) ![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Fsecurityheaders.com%2F%3Fq%3Dgis.utah.gov%26followRedirects%3Don)
 
 ## Local Development
 
