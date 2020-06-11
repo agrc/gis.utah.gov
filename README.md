@@ -68,6 +68,12 @@ _**bold italics**_
   ```md
   [link text](http://external.website.location)
   ```
+  
+- html
+
+  ```html
+  <a href="https://url.com">link text</a>
+  ```
 
 ### images
 
