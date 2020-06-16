@@ -39,12 +39,14 @@ _**bold italics**_
 
   ```md
   [link text]({% link path/to/item.with-extension %})
+  [link text]({% link path/to/item.with-extension %}#to-anchor)
   ```
 
 - html
 
   ```html
   <a href="{% link path/to/item.with-extension %}">link text</a>
+  <a href="{% link path/to/item.with-extension %}#to-anchor">link text</a>
   ```
 
 ### link to post
@@ -53,12 +55,14 @@ _**bold italics**_
 
   ```md
   [link text]({% link _posts/2016-05-26-file-name.with-extension %})
+  [link text]({% link _posts/2016-05-26-file-name.with-extension %}#to-anchor)
   ```
 
 - html
 
   ```html
   <a href="{% link _posts/2016-05-26-file-name.with-extension %}">link text</a>
+  <a href="{% link _posts/2016-05-26-file-name.with-extension %}#to-anchor">link text</a>
   ```
 
 ### external link
@@ -67,12 +71,14 @@ _**bold italics**_
 
   ```md
   [link text](http://external.website.location)
+  [link text](http://external.website.location#to-anchor)
   ```
   
 - html
 
   ```html
   <a href="https://url.com">link text</a>
+  <a href="https://url.com#to-anchor">link text</a>
   ```
 
 ### images
