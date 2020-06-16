@@ -80,6 +80,14 @@ _**bold italics**_
   <a href="https://url.com">link text</a>
   <a href="https://url.com#to-anchor">link text</a>
   ```
+  
+### image link to an image
+
+- markdown
+
+   ```md
+   [![displayed image alt text]({% link path/to/item.with-extension %})](![link to alt text]({% link path/to/item.with-extension %})
+   ```
 
 ### images
 
