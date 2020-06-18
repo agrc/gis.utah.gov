@@ -32,7 +32,7 @@ There are a variety of clients and applications that can connect to a PostgreSQL
 - [DBeaver](#dbeaver)
 - [QGIS](#qgis)
 
-The username and password for these applications can be found on the [Open SGID GitHub repository](https://github.com/agrc/open-sgid#connection-information).
+The username and password to use to connect to the Open SGID can be found on the [Open SGID GitHub repository](https://github.com/agrc/open-sgid#connection-information).
 
 ##### ArcGIS Desktop
 
