@@ -12,7 +12,7 @@ tags:
   - open sgid
 ---
 
-The Open SGID database is a PostGIS Cloud SQL mirror of the AGRC SGID database. This database compliments the web services and data downloads offered on our [Open Data site](https://opendata.gis.utah.gov/).
+The Open SGID is a cloud hosted, publicly available PostGIS database containing SGID data. This database complements the web services and data downloads offered on our [Open Data site](https://opendata.gis.utah.gov/).
 
 To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.html %}). To learn more about the SGID and the data, please visit the [AGRC data page]({% link data/index.html %}).
 
@@ -20,19 +20,19 @@ To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.
 {: .text-left }
 
 - Please take a moment to read over the [Open SGID Terms of Use]( {% link about/policy/open-sgid/index.md %}).
-- Get familiar with the [Open SGID GitHub repository](https://github.com/agrc/open-sgid) where you can troubleshoot and track known issues.
+- Get familiar with the [Open SGID GitHub repository](https://github.com/agrc/open-sgid), where you can troubleshoot and track known issues.
 
 ### How to Connect
 {: .text-left }
 
-There are a variety of clients and applications that can connect to a PostgreSQL database. Here are a few of the more common applications and how to connect.
+There are a variety of clients and applications that can connect to a PostgreSQL database. Here are a few of the more common applications and how to connect to them.
 
 - [ArcGIS Desktop](#arcgis-desktop)
 - [ArcGIS Pro](#arcgis-pro)
 - [DBeaver](#dbeaver)
 - [QGIS](#qgis)
 
-The username and password can be found on the [Open SGID GitHub repository](https://github.com/agrc/open-sgid#connection-information).
+The username and password for these applications can be found on the [Open SGID GitHub repository](https://github.com/agrc/open-sgid#connection-information).
 
 ##### ArcGIS Desktop
 
@@ -46,7 +46,7 @@ The username and password can be found on the [Open SGID GitHub repository](http
 
 ##### ArcGIS Pro
 
-1. Open the Catalog pane, right-click `Databases`, and `Add Database`.
+1. Open the Catalog pane, right-click `Databases`, and select `Add Database`.
 
     ![ArcGIS Pro Add Database]({% link images/pro_opensgid_add_db.png %}){: .outline}
 
