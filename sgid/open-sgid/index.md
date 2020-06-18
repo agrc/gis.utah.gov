@@ -25,7 +25,7 @@ To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.
 ### How to Connect
 {: .text-left }
 
-There are a variety of clients and applications that can connect to a PostgreSQL database. Here are a few of the more common applications and how to connect to them.
+There are a variety of clients and applications that can connect to a PostgreSQL database. Here are a few of the more common applications and how to connect with them.
 
 - [ArcGIS Desktop](#arcgis-desktop)
 - [ArcGIS Pro](#arcgis-pro)
