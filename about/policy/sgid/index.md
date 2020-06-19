@@ -37,7 +37,7 @@ The [minimum metadata content](https://docs.google.com/document/d/1VkXRwfSn6MraI
 
 All empty geometries and duplicate records will be removed, with [Sweeper](https://github.com/agrc/sweeper) or some other form of automation.
 
-All new database domains will comply with the following rule: Domain values must match domain descriptions. See this [document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) to learn more about this rule.
+All new database domains will comply with the following rule: domain values must match domain descriptions. See this [document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) for background on this rule.
 
 The ESRI default Resolution and Tolerance will be used.
 
