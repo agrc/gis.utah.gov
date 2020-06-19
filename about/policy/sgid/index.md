@@ -15,7 +15,11 @@ The following applies to data in the internal SGID database.
 ## Adding New Tables
 {: .text-left }
 
-When adding a new table to the SGID, a corresponding record will be added to the [Data Stewardship spreadsheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1) and a data page will be added to the AGRC website. The data stewardship spreadsheet will contain at a minimum:
+When adding new data to the SGID, the steps outlined in the [Life Cycle](https://github.com/agrc/cemetery) project will be followed.
+
+Additional, related info:
+
+A corresponding record to the [Data Stewardship spreadsheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1) will be added, and will contain at a minimum:
 
 - The authoritative access from location
 - The table name
@@ -25,25 +29,22 @@ When adding a new table to the SGID, a corresponding record will be added to the
 - A link the the data page on the AGRC website
 - A link to the SGID Open Data page
 
-The ArcGIS Online item will contain a curated summary, description, and tags while residing in its ISO category folder. If the data is authoritative, it will be marked as `authoritative`. If the data does not receive updates, it will be tagged as `static`. If the data has historical relevance **but is not the most recent data** it will be tagged as `shelved`.
+The ArcGIS Online Item will reside in the corresponding ISO category folder and contain the appropriate tags. If the data is authoritative, it will be marked as `authoritative`. If the data does not receive updates, it will be tagged as `static`. If the data has historical relevance **but is not the most recent data** it will be tagged as `shelved`. Note: the [AGOL Validator](https://github.com/agrc/agol-validator) project will transfer metadata from the Internal SGID database, including summary, description, and use limitations.
 
+If the data is shared with the [SGID Open Data](https://opendata.gis.utah.gov/), it will have the enable multiple formats download option selected to allow for File Geodatabases and other non default downloads.
 
-If the data is shared with the SGID Open Data, it will have the enable multiple formats download option selected to allow for File Geodatabases and other non default downloads.
-
-The minimum metadata content will be populated.
-
-- Purpose of data
-- Owner of the data
-- Contact person
-- Date loaded
-- Last update date
+The [minimum metadata content](https://docs.google.com/document/d/1VkXRwfSn6MraI1VeLfei5tg6je4bd2pp_Vh1JuST9xs/edit?usp=sharing) will be populated. When creating new metadata, it is recommended that you use the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit).
 
 All empty geometries and duplicate records will be removed, with [Sweeper](https://github.com/agrc/sweeper) or some other form of automation.
+
+All new database domains will comply with the following rule: Domain values must match domain descriptions. See this [document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) to learn more about this rule.
 
 The ESRI default Resolution and Tolerance will be used.
 
 - XY Resolution: 0.0001 Meter
 - XY Tolerance: 0.001 Meter
+
+
 
 ### Dates in Table Names
 {: .text-left }
@@ -61,7 +62,9 @@ All data updates being pushed into the SGID will have removed empty geometries a
 
 All edits made to the internal SGID will be captured in `Last update date` in the metadata, in the [SGID Update log](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=0), and as an update on the AGRC website data page.
 
+If making a schema change, please consider updating any domain descriptions that do not match the domain value. See this [document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) to learn more about this effort.
+
 ## Removing SGID Products
 {: .text-left }
 
-When data or services are deprecated, the [Cemetery](https://github.com/agrc/cemetery) project is used.
+When deprecating data or services in the SGID, please follow the steps outlined in the [Life Cycle](https://github.com/agrc/cemetery) project.
