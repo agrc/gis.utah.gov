@@ -45,7 +45,6 @@ The ESRI default Resolution and Tolerance will be used.
 - XY Tolerance: 0.001 Meter
 
 
-
 ### Dates in Table Names
 {: .text-left }
 
