@@ -15,7 +15,7 @@ The following applies to data in the internal SGID database.
 ## Adding New Tables
 {: .text-left }
 
-When adding new data to the SGID, the steps outlined in the [Life Cycle](https://github.com/agrc/cemetery) project will be followed.
+When adding new data to the SGID, the steps outlined in the [Porter](https://github.com/agrc/porter) project will be followed.
 
 Additional, related info:
 
@@ -66,4 +66,4 @@ If making a schema change, please consider updating any domain descriptions that
 ## Removing SGID Products
 {: .text-left }
 
-When deprecating data or services in the SGID, please follow the steps outlined in the [Life Cycle](https://github.com/agrc/cemetery) project.
+When deprecating data or services in the SGID, please follow the steps outlined in the [Porter](https://github.com/agrc/porter) project.
