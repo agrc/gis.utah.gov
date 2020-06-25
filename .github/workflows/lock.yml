@@ -1,0 +1,18 @@
+name: 'Lock threads'
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/lock-threads@v2
+        with:
+          github-token: ${{ github.token }}
+          issue-lock-labels: 'pinned'
+          issue-lock-inactive-days: '91'
+          pr-lock-inactive-days: '91'
+          issue-exclude-created-before: '2018-01-01'
+          pr-exclude-created-before: '2018-01-01'
