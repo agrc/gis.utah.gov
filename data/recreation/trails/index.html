@@ -11,9 +11,9 @@ categories: []
 Trails:
   downloads:
     - url: https://drive.google.com/a/utah.gov/uc?id=1rEFJ5wcMHPNzNClGW7-UOP7a6EidpUhx&export=download
-      label: 'Trails: File Geodatabase'
+      label: 'Trails and Pathways: File Geodatabase'
     - url: https://drive.google.com/a/utah.gov/uc?id=1R70QPokUBeAlzWu9lu8fMFiSTsDihIbn&export=download
-      label: 'Trails: Shapefile'
+      label: 'Trails and Pathways: Shapefile'
   updates:
     - June 24, 2020
 Trailheads:
@@ -38,28 +38,43 @@ abstract="Many Utah trails and trail access points have been obtained through th
 <p>The trails dataset currently contains trail names, types, and some information on allowable modes of travel. Although it is very much ‘draft’ in nature, this dataset represents a starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data. </p>" %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="Trails">Trails</h3>
+    <h3 id="Trails">Trails and Pathways</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/trail.png %}" alt="Trails" />
-    <p>The trails map layer represents off-road recreational trail features and important road connections that augment Utah’s recreational trail network. This map layer features many of Utah’s recreational trails but is not yet complete.</p>
-    <p>Currently, the trails information primary depicts trails used by hiking and mountain biker users. It began with map data purchased from a private entity (Orbital View, Inc), for which full rights were purchased by the GOED Office of Outdoor Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah and Wasatch counties). Additional trails can be submitted to Utah AGRC for inclusion in this map layer.</p>
-    <p>The primary goal for the trails map layer is to assign a location and a name to each trail feature. However, the trails data is stored within a more complex <a href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing">data model</a> that will allow for collection and publishing of more robuts trail and trailhead information in the future.</p>
-    <p>Although it is a work in progress, this dataset represents a substantial starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data.</p>
-    <p>Note: Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be represented in this map layer.</p>
+    <p>The trails and pathways map layer represents off-street (features not represented in the [road centerline]({% link data/transportation/roads-system/index.html %}) layer) features and important road connections that augment Utah’s recreational trail and transportation network. This map layer features many of Utah’s recreational trails but is not yet complete.</p>
+    <p>Currently, the content primary depicts features used by hikers and bikers. It began with map data purchased from a private entity (Orbital View, Inc), for which full rights were purchased by the GOED Office of Outdoor Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah and Wasatch counties); 2018/2019 as part of the [multimodal project](({% link data/transportation/street-network-analysis/index.html %}#MultimodalNetwork)); and in 2020 ongoing updates by WFRC transportation planners.</p>
+    <p>Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the [statewide roads GIS layer](({% link data/transportation/roads-system/index.html %})) using left and right side attributes. On street bike infrastructure is not expected to be represented in this map layer.</p>    
+    <p>Although it is a work in progress, this dataset represents a substantial starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data. Additional segments can be submitted to Utah AGRC for inclusion in this map layer.</p>
+    <p>Note: Significant enhancements (including a schema change) where made to this layer in June 2020. Read more about the changes in this related [blog post]({% link _posts/2020-06-26-enhancements-to-sgid-utah-trails-dataset.md %}).</p>
     <dl>
-      <dt>PrimaryName</dt>
       <dt>CartoCode</dt>
-      <dd>For cartographic representation (summary info as of April 2017):
+      <dd>For a more specific query of facility types, use the CartoCode field:
         <ul class="dotless">
-          <li>1 = Hiking Only (3760 miles, 1888 features)
-          <li>2 = Singletrack, Hiking and Bicycles Allowed (5748 miles, 3944 features)
-          <li>3 = Paved Recreational Trail (696 miles, 2836 features)
-          <li>4 = Road-Concurrent Trail (15,112 miles, 8515 features)
+          <li>1 = Hiking Only (Hiking and walking are the only uses allowed on this facility)
+          <li>2 = Hiking and Biking (Singletrack, natural surface facility. Hiking and biking are allowed)
+          <li>3 = Paved Shared Use (Paved shared use path, recreational path, urban pathway)
+          <li>4 = Road-concurrent (Facility is on or adjacent to a road, generally a natural surface double track, forest service road, canal road, etc.)
+          <li>5 = Biking Only- (Biking is the primary or only use on this facility. High speeds, blind corners and technical features are common. For safety reasons, hiking, if not expressly prohibited, is not recommended.)
+          <li>6 = Equestrian Primary (Equestrian is the primary use on this facility)
+          <li>7 = Steps (Steps, staircase, or other feature that is not accessible to wheeled or assistive devices on otherwise paved / accessible route)
+          <li>8 = Bridge, Tunnel (Grade change above or below ground surface, generally a bridge or tunnel)
+          <li>9 = Link (Network route connection, see Link on CVDomain_TrailClass tab)
         </ul>
       </dd>
-      <dt>DataSource</dt>
-      <dd><a href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing">Full Data Model</a>
+      <dt>Class</dt>
+      <dd>For a general query of facility types, use the Class field:
+        <ul class="dotless"></ul>        
+          <li> Path (Paved, off-street travelway designed for non-motorized users, generally wider and with greater separation from roadway than a standard sidewalk.)
+          <li> Trail (Natural surface travelway (dirt, gravel, slickrock, snow, etc).)
+          <li> Link (Network route connection through a parking lot, alleyway, etc. where a road segment does not exist but can be traversed via walking or bicycling.)
+          <li> Steps (Developed (generally concrete) steps or stairs, usually occurring along a paved route.)
+          <li> Grade Separated Crossing (Paved crossing feature above or below roadway, train track, etc. for walking and bicycling use only.)
+        </ul>
+      </dd>  
+      <dt>Complete Data Model</dt>
+      <dd><a href="https://docs.google.com/spreadsheets/d/1ArawJ_8LLmbPWSQjG6YmovcjBnc0S9Md0gviBJudu78/edit?usp=sharing">Trails and Pathways Data Model</a>
+      <dd><a href="https://docs.google.com/spreadsheets/d/1PzCyosrMOEe43pTs_7AAjv8_n8tP8zER_zUuS2irisY/edit?usp=sharing">Previous Data Model (deprecated June 2020)</a>
       </dd>
     </dl>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
