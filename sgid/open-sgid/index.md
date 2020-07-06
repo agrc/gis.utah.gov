@@ -31,6 +31,7 @@ There are a variety of clients and applications that can connect to a PostgreSQL
 - [ArcGIS Pro](#arcgis-pro)
 - [DBeaver](#dbeaver)
 - [QGIS](#qgis)
+- [Global Mapper](#global-mapper)
 
 The username and password to use to connect to the Open SGID can be found on the [Open SGID GitHub repository](https://github.com/agrc/open-sgid#connection-information).
 
@@ -74,3 +75,14 @@ The username and password to use to connect to the Open SGID can be found on the
 1. Use the following connection properties:
 
     ![QGIS Connection Properties]({% link images/qgis_opensgid_conn.png %}){: .outline}
+
+
+##### Global Mapper
+
+1. In Global Mapper, click `File`, and select `Open Spatial Database....`.
+
+    ![Global Mapper Add Database]({% link images/gm_opensgid_add_db.png %})
+
+1. Use the following connection properties:
+
+    ![Global Mapper Connection Properties]({% link images/gm_opensgid_conn.png %}){: .outline}
