@@ -7,9 +7,9 @@ date: 2020-07-09 09:33:34 -0600
 title: Basic Metadata Guidelines
 categories: []
 ---
-By some accounts, no one would claim to enjoy creating geospatial metadata. But that doesn't mean it should be hard. And while it might not be fun, there is no doubt that good metadata is extremely useful.
+By most accounts, creating geospatial metadata is not the highlight of anyone's day. But that doesn't mean it should be hard. And while it might not be fun, there is no doubt that good metadata is extremely useful.
 
-On this page we have tried to make it easy for those contributing data to Utah's State Geographic Information Database (SGID) to provide at least the basic set of metadata elements that we would like to see available for all SGID data.
+On this page we have tried to make it easy for those contributing to Utah's State Geographic Information Database (SGID), and to provide at least a basic set of elements that we would like to see available for all SGID data.
 
 When creating or updating SGID metadata, we recommended that you use AGRC's [metadata questionnaire form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit). We created this form to make the process more enjoyable and conversational. It's designed to cover all the elements described below -and best of all- after you submit your responses, your portion of the process is done. AGRC, in collaboration with the DTS editor, will handle the remaining details.
 
