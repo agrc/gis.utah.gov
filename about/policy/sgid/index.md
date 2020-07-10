@@ -33,7 +33,7 @@ The ArcGIS Online Item will reside in the corresponding ISO category folder and 
 
 If the data is shared with the [SGID Open Data](https://opendata.gis.utah.gov/), it will have the enable multiple formats download option selected to allow for File Geodatabases and other non default downloads.
 
-The [minimum metadata content](https://docs.google.com/document/d/1VkXRwfSn6MraI1VeLfei5tg6je4bd2pp_Vh1JuST9xs/edit?usp=sharing) will be populated. When creating new metadata, it is recommended that you use the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit).
+The [minimum metadata content]({% link about/policy/metadata/index.md %}) will be populated. When creating new metadata, it is recommended that you use the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit).
 
 All empty geometries and duplicate records will be removed, with [Sweeper](https://github.com/agrc/sweeper) or some other form of automation.
 
