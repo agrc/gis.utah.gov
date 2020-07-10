@@ -7,9 +7,11 @@ date: 2020-07-09 09:33:34 -0600
 title: Basic Metadata Guidelines
 categories: []
 ---
-By some accounts, no one in their right mind could claim to enjoy geospatial metadata. But that doesn't mean it should be hard. And while it might not be fun, there is no doubt that good metadata is extremely useful.
+By some accounts, no one would claim to enjoy creating geospatial metadata. But that doesn't mean it should be hard. And while it might not be fun, there is no doubt that good metadata is extremely useful.
 
-On this page we have tried to make it easy for those contributing data to Utah's State Geographic Information Database (SGID) to provide at least the basic set of metadata elements that we would like to see available for all SGID data. We recommended that you begin by using AGRC's [metadata questionnaire form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit). Our goal with this form is to make the process more conversational. And best yet, after you submit your responses, we will take care of the remaining details.
+On this page we have tried to make it easy for those contributing data to Utah's State Geographic Information Database (SGID) to provide at least the basic set of metadata elements that we would like to see available for all SGID data.
+
+When creating or updating SGID metadata, we recommended that you use AGRC's [metadata questionnaire form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit). We created this form to make the process more enjoyable and conversational. It's designed to cover all the elements described below -and best of all- after you submit your responses, your portion of the process is done. AGRC, in collaboration with the DTS editor, will handle the remaining details.
 
 ### Basic SGID Metadata
 {: .text-left}
@@ -22,7 +24,9 @@ AGRC maintains geospatial metadata in an in-house ESRI database, using the [Item
 #### Title
 {: .text-left}
 
-The title should match the dataset name. If it's statewide dataset, the title should begin with the word, Utah.
+The title should match the dataset name. If it's a statewide dataset, the title should begin with the word "Utah".
+
+`example: Utah County Boundaries`
 
 #### Tags
 {: .text-left}
@@ -30,6 +34,8 @@ The title should match the dataset name. If it's statewide dataset, the title sh
 Tags are included in data searches, so at minimum, each SGID dataset should include the stewarding agency (ie: AGRC), SGID, and the appropriate ISO category tag. We also recommend adding any additional, relevant tags that might help with data discoverability. However, there is no need to include words that are contained in the layer's title (these will be omitted).
 
 All words in tags should be title-cased except for articles (“of”, “the”, “and”, etc.) or abbreviations. Each tag should be separated by a comma. Please refer to [Using tags effectively](https://www.esri.com/arcgis-blog/products/arcgis-online/data-management/using-tags-effectively/) for more ideas and information.
+
+`example: AGRC, SGID, Recreation, Paths, Biking, Hiking, Horseback Riding`
 
 #### Summary
 {: .text-left}
