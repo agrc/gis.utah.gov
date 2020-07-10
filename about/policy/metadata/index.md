@@ -45,7 +45,7 @@ The summary should summarize the Description in approximately 2 to 3 sentences. 
 The Description is a more in-depth version of the summary and it should stand on its own. This is important, particularly, in the event that the Summary is missing in the metadata (as is the case, currently, with [Open Data](https://opendata.gis.utah.gov/) datasets).
 
 - When was the dataset last updated? (this should be the first line of the Description)
-- A link to corresponding [gis.utah.gov data page]({% link data/ %})
+- A link to corresponding [gis.utah.gov data page]({% link data/index.html %})
 - What is this dataset (please expand on the content provided in the Summary)?
 - What is the purpose of this dataset?
 - What does this dataset represent (in layman's terms)?
