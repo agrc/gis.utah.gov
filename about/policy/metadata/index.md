@@ -2,17 +2,19 @@
 author:
   display_name: AGRC Office
   email: agrc@utah.gov
-tags: []
+tags:
+  - metadata
+  - sgid
 date: 2020-07-09 09:33:34 -0600
 title: Basic Metadata Guidelines
 categories: []
 ---
 
-By most accounts, creating metadata is right up there with organizing your garage - it's a chore. But it doesn't have to be. And while it might not be fun, there is no doubt that good metadata is extremely useful.
+By most accounts, creating metadata is right up there with organizing your garage - it can be a chore. But it doesn't have to be.
 
-At AGRC, we have decided to take a more conversational approach to the process. In other words, instead of looking at a long list of metadata requirements, we thought it would be easier to answer a few questions about the data. This is our solution to metadata procrastination.
+At AGRC, we have decided to make the process more conversational. In other words, instead of looking at a long list of metadata requirements, we thought it would be easier to talk about the data. This is our solution to metadata procrastination.
 
-We have distilled the basic elements of metadata into a few approachable questions. If you can answer these simple questions about your data, then you officially have good metadata.
+We have distilled the basic elements of metadata into a few approachable questions. If you can answer these simple questions about your data, then your officially on your way to good metadata.
 
 #### Can you answer these questions about your data?
 {: .text-left}
@@ -40,16 +42,16 @@ We have distilled the basic elements of metadata into a few approachable questio
   - ex: don’t use zip codes for demographic generalization
 - Are there any common misconceptions or assumptions about this data that should be further explained?
 
-##### Allow for Feedback and Collaboration
+##### Establish Contact Info
 {: .text-left}
 
 - Who created this dataset?
 - What is the best point of contact for this dataset?
   - if someone had further questions or would like to get involved, who should they contact?
 
-Your answers to these questions can be plugged into the basic metadata elements (discussed below). It's that simple - answer a few questions, transfer the responses, and you officially have informative, standardized metadata.
+Your answers to these questions can be plugged into the basic metadata elements (discussed below). It's that simple - answer a few questions, transfer your responses, and voilà, you officially have informative, standardized metadata.
 
-*Note: If you contribute data to Utah's State Geographic Information Database (SGID), we encourage you to use our [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit). It's a great way to update your metadata and make it more discoverable. It covers all the questions above -and best of all- after you submit your responses, your portion of the process is done! AGRC, in collaboration with the DTS editor, will handle the remaining details.*
+*Note: If you contribute data to Utah's State Geographic Information Database (SGID), we encourage you to use our [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit). It's a great way to update your metadata and make it more discoverable. The form covers all the questions above -and best of all- after you submit your responses, your portion of the process is done! AGRC, in collaboration with the DTS editor, will handle the remaining details.*
 
 The above questions were derived from the ESRI [Item Description](https://desktop.arcgis.com/en/arcmap/10.7/manage-data/metadata/metadata-standards-and-styles.htm#ESRI_SECTION1_29222DC149544E89A4147541A4ACAF86) style. We have found this style to be a good balance for creating useful, as well as achievable, metadata.  
 
@@ -79,7 +81,7 @@ All words in tags should be title-cased except for articles (“of”, “the”
 
 The summary should summarize the description in approximately 2 to 3 sentences.  
 
-When creating a summary, consider the questions presented above in the 'summarize the data' section.
+The summary should address the questions presented above in the [summarize your data](#summarize-your-data) section.
 
 #### Description
 {: .text-left}
@@ -90,14 +92,14 @@ The first line of the description should be a date, indicating the last update.
 
 This section should also contain a link to the corresponding [gis.utah.gov data page]({% link data/index.html %})
 
-Additionally, consider the questions presented above in the 'describe the data' section.
+Additionally, the description should address the questions presented above in the [describe your data](#describe-your-data) section.
 
 #### Credits (as in the source of the data)
 {: .text-left}
 
 This should cover who created the dataset and how you can get in contact with them.
 
-Consider the questions presented above in the 'allow for feedback and collaboration' section.
+The credits should address the questions presented above in the [establish contact info](#establish-contact-info) section.
 
 #### Use Limitations
 {: .text-left}

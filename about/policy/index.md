@@ -34,4 +34,4 @@ AGRC’s policy for creating, editing, maintaining, and removing data in the SGI
 #### [Basic Metadata Guidelines]({% link about/policy/metadata/index.md %})
 {: .text-left}
 
-AGRC’s guidelines for metadata for data in the SGID database.
+AGRC’s metadata guidelines for data in the SGID database.
