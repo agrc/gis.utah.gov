@@ -14,7 +14,7 @@ By most accounts, creating metadata is right up there with organizing your garag
 
 At AGRC, we have decided to make the process more conversational. In other words, instead of looking at a long list of metadata requirements, we thought it would be easier to talk about the data. This is our solution to metadata procrastination.
 
-We have distilled the basic elements of metadata into a few approachable questions. If you can answer these simple questions about your data, then your officially on your way to good metadata.
+We have distilled the basic elements of metadata into a few approachable questions. If you can answer these simple questions about your data, then you're officially on your way to good metadata.
 
 #### Can you answer these questions about your data?
 {: .text-left}
@@ -53,7 +53,7 @@ Your answers to these questions can be plugged into the basic metadata elements 
 
 *Note: If you contribute data to Utah's State Geographic Information Database (SGID), we encourage you to use our [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit). It's a great way to update your metadata and make it more discoverable. The form covers all the questions above -and best of all- after you submit your responses, your portion of the process is done! AGRC, in collaboration with the DTS editor, will handle the remaining details.*
 
-The above questions were derived from the ESRI [Item Description](https://desktop.arcgis.com/en/arcmap/10.7/manage-data/metadata/metadata-standards-and-styles.htm#ESRI_SECTION1_29222DC149544E89A4147541A4ACAF86) style. We have found this style to be well-balanced for creating useful, as well as achievable, metadata.  
+The above questions are designed to work with the ESRI [Item Description](https://desktop.arcgis.com/en/arcmap/10.7/manage-data/metadata/metadata-standards-and-styles.htm#ESRI_SECTION1_29222DC149544E89A4147541A4ACAF86) metadata style. We have found this style to be well-balanced for creating useful, as well as achievable, metadata.  
 
 Let's take a closer look at the basic elements of SGID metadata. We like to think of these as our minimum requirements.
 
