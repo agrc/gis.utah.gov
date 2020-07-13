@@ -51,7 +51,7 @@ We have distilled the basic elements of metadata into a few approachable questio
 
 Your answers to these questions can be plugged into the basic metadata elements (discussed below). It's that simple - answer a few questions, transfer your responses, and voilà, you officially have informative, standardized metadata.
 
-*Note: If you contribute data to Utah's State Geographic Information Database (SGID), we encourage you to use our [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit). It's a great way to update your metadata and make it more discoverable. The form covers all the questions above -and best of all- after you submit your responses, your portion of the process is done! AGRC, in collaboration with the DTS editor, will handle the remaining details.*
+_Note: If you contribute data to Utah's State Geographic Information Database (SGID), we encourage you to use our [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit). It's a great way to update your metadata and make it more discoverable. The form covers all the questions above -and best of all- after you submit your responses, your portion of the process is done! AGRC, in collaboration with the DTS editor, will handle the remaining details._
 
 The above questions are designed to work with the ESRI [Item Description](https://desktop.arcgis.com/en/arcmap/latest/manage-data/metadata/metadata-standards-and-styles.htm#ESRI_SECTION1_29222DC149544E89A4147541A4ACAF86) metadata style. We have found this style to be well-balanced for creating useful, as well as achievable, metadata.  
 
