@@ -41,7 +41,7 @@ We have distilled the basic elements of metadata into a few approachable questio
   - ex: don’t use parcels as a complete dataset for geocoding
   - ex: don’t use zip codes for demographic generalization
 - Are there any common misconceptions or assumptions about this data that should be further explained?
-
+  - ex: highway milepost markers are not an accurate length measurement. If a highway is lengthened or shortened, the markers are not adjusted. 
 ##### Establish Contact Info
 {: .text-left}
 
