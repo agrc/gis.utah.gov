@@ -79,7 +79,7 @@ All words in tags should be title-cased except for articles (“of”, “the”
 #### Summary
 {: .text-left}
 
-The summary should summarize the description in approximately 2 to 3 sentences.  
+The summary should summarize the description in approximately 2 to 3 sentences.
 
 The summary should address the questions presented above in the [summarize your data](#summarize-your-data) section.
 
