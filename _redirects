@@ -6,7 +6,8 @@
 /about/organizations/geographic-names-committee/                                                          https://heritage.utah.gov/history/state-history-geographic-names-committee    301
 /about/organizations/utah-department-of-technology-services/                                              https://dts.utah.gov                                                          301
 /agrc-system-status-page/                                                                                 /agrc-status/                                                                 301
-/basic-metadata-instructions/                                                                             /data/gis-data-sharing/metadata/                                              301
+/basic-metadata-instructions/                                                                             /about/policy/metadata/                                                       301
+/data/gis-data-sharing/metadata/                                                                          /about/policy/metadata/                                                       301
 /data/address-overview/                                                                                   /data/address/                                                                301
 /data/address-overview/address-grids/notes-utah-local-addressing-systems-address-grids/                   /data/address/address-grids/                                                  301
 /data/aerial-photography/1936-1952-soil-conservation-service-scs-photomaps/                               /data/aerial-photography/doq/                                                 301
