@@ -58,7 +58,7 @@ It's been said that “data is the new oil”, but I would add that “data is t
 
 As geospatial data and services become more widely used, GIS professionals should see this as an opportunity to reach out to our diverse communities and pave the path forward together. In doing so, we should strive to reach the following goals:
 
-![Collaboration]({% link images/collaboration.png %}){: .flex .flex--center}[^collaboration]
+![Collaboration]({% link images/collaboration.jpg %}){: .flex .flex--center}[^collaboration]
 
 - Bridge the Gap between IT and GIS
   - GIS and IT are no longer two separate industries/entities. Moving forward, we need to see ourselves seated in the same room, speaking the same language, and working together to provide seamless solutions and services to our customers. This approach encourages not only cross-pollination but also the formation of fresh, new ideas.
