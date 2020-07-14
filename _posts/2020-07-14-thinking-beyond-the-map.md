@@ -14,7 +14,8 @@ tags:
 
 Geospatial technology is an essential part of our daily lives. Its abilities and toolsets have the power to run small-scale phone applications as well as multibillion dollar businesses systems, including geointelligence, big tech, insurance, and healthcare,  just to name a few. As a result, the line is fading between information technology and GIS. This is exciting because as geospatial technology goes mainstream, we are seeing a wider array of uses for it—and often, the map is nowhere to be seen. It's the geospatial data and intelligence that’s driving these systems.
 
-![Location drives the system]({% link images/geospatial.png %}){: .flex .flex--center} [^location]
+![Location drives the system]({% link images/geospatial.png %}){: .flex .flex--center} 
+[^location]{: style="text-align: center"}
 
 ### Where's the map?
 {: .text-left}
@@ -74,6 +75,9 @@ As geospatial data and services become more widely used, GIS professionals shoul
 - Decentralize Data, Services, and Other Resources
   - As GIS further integrates into information technology, we need to embrace the idea that applications and skills are consuming data and services from a variety of sources. In a sense, these external dependencies create a level of vulnerability. However, it’s important that we create partnerships and relationships that allow us to understand shared goals, set expectations, and ultimately minimize unexpected results.
 
+### From maps to geospatial
+{: .text-left}
+
 Now more than ever, our data is being used among a diverse set of industries and users. It brings to mind the sentiments of Ed Parsons, geospatial technologist of Google, when he said, “We need to recognize that 95% of the consumers of whatever we create will not be GIS specialists”[^gim]. While that percentage may vary within our organizations, it's certainly a notion to embrace.
 
 While traditionally we think of GIS as a tool for making maps and creating and maintaining spatial data, it has become much more. It’s time to start thinking beyond the map.
@@ -83,7 +87,7 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 
 ![AGRC supports geospatial]({% link images/agrc-supports-geospatial.png %}){: .flex .flex--center}[^tribolet]
 
-#### Related links
+#### Links related to AGRC's efforts
 
 - [Partnerships and Sharing]({% link gis-data-sharing/index.md %})
 - [Data sharing Initiatives - Farm to AGOL project]({% link gis-data-sharing/open-data/index.md %})  
