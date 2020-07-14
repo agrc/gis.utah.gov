@@ -39,6 +39,7 @@ The use of GIS continues to evolve, and the benefits of the technology are becom
 Putting this all together, it's easy to envision a dialogue with a device that might sound something like this...
 
 >Human: How should I prepare for Thomas's birthday tomorrow?
+
 >Device: Tomorrow at Sugarhouse Park it will be sunny in the afternoon, but there are plenty of shade trees. Expect rain in the morning, so bring an umbrella, but there are ample pavilions for shelter on the north end. The park does have restrooms. Also, there is a half-marathon scheduled, which might affect your route. How do you plan to get there?
 
 As convenient as this sounds, this concept teeters between creepy and cool. Ultimately though, it will most likely be our comfort levels, and not technical ability, that influence the next wave of geospatial applications and skills.
@@ -82,17 +83,17 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 
 ![AGRC supports geospatial]({% link images/agrc-supports-geospatial.png %}){: .flex .flex--center}[^tribolet]
 
-- #### Related links
+#### Related links
 
-  - [Partnerships and Sharing]({% link gis-data-sharing/index.md %})
-  - [Data sharing Initiatives - Farm to AGOL project]({% link gis-data-sharing/open-data/index.md %})  
-  - [State Geographic Information Database (SGID) - data index]({% link data/index.html %})
-  - [Open Data - SGID ESRI Hub site](https://opendata.gis.utah.gov/)
-  - [Open SGID - PostgreSQL/PostGIS cloud SGID database]({% link _posts/2020-05-04-introducing-open-sgid.md %})
-  - [Open APIs](https://api.mapserv.utah.gov/)  
-  - [GitHub code and project repositories](https://github.com/agrc)
-  - [Utah Department of Technology Services' Citizen Portal project](https://demosite.utah.gov/citizen-portal/written-plans/next-generation-portal/)
-  - [AGRC Innovation Grant for Digital Assistant Skills]({% link _posts/2019-05-30-thoughts-from-teaching-google-and-amazon-new-skills.md %}), [Overview of the Grant]({% link _posts/2018-09-11-agrc-innovation-award-grant.md %})
+- [Partnerships and Sharing]({% link gis-data-sharing/index.md %})
+- [Data sharing Initiatives - Farm to AGOL project]({% link gis-data-sharing/open-data/index.md %})  
+- [State Geographic Information Database (SGID) - data index]({% link data/index.html %})
+- [Open Data - SGID ESRI Hub site](https://opendata.gis.utah.gov/)
+- [Open SGID - PostgreSQL/PostGIS cloud SGID database]({% link _posts/2020-05-04-introducing-open-sgid.md %})
+- [Open APIs](https://api.mapserv.utah.gov/)  
+- [GitHub code and project repositories](https://github.com/agrc)
+- [Utah Department of Technology Services' Citizen Portal project](https://demosite.utah.gov/citizen-portal/written-plans/next-generation-portal/)
+- [AGRC Innovation Grant for Digital Assistant Skills]({% link _posts/2019-05-30-thoughts-from-teaching-google-and-amazon-new-skills.md %}), [Overview of the Grant]({% link _posts/2018-09-11-agrc-innovation-award-grant.md %})
 
 #### Sources
 {: .text-left}
