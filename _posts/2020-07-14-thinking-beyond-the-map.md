@@ -14,8 +14,9 @@ tags:
 
 Geospatial technology is an essential part of our daily lives. Its abilities and toolsets have the power to run small-scale phone applications as well as multibillion dollar businesses systems, including geointelligence, big tech, insurance, and healthcare,  just to name a few. As a result, the line is fading between information technology and GIS. This is exciting because as geospatial technology goes mainstream, we are seeing a wider array of uses for it—and often, the map is nowhere to be seen. It's the geospatial data and intelligence that’s driving these systems.
 
-![Location drives the system]({% link images/geospatial.png %}){: .flex .flex--center} 
-[^location]{: style="text-align: center"}
+![Location drives the system]({% link images/geospatial.png %}){: .flex .flex--center}
+
+[^location]{: .flex .flex--center}
 
 ### Where's the map?
 {: .text-left}
@@ -120,4 +121,4 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 
 [^bhageshpur]: Bhageshpur, Kiran. 2019. "[Data Is The New Oil - And That's A Good Thing](https://www.forbes.com/sites/forbestechcouncil/2019/11/15/data-is-the-new-oil-and-thats-a-good-thing/#1d3b1a037304)". Forbes. Nov 15, 2019.
 
-[^tribolet]: Tribolet, Anna. 2020. "What is AGRC Doing to Support the Next Wave of Geospatial Technology?. State of Utah, Department of Technology Services.
+[^tribolet]: Tribolet, Anna. 2020. "What is AGRC Doing to Support the Next Wave of Geospatial Technology?". State of Utah, Department of Technology Services.
