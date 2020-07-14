@@ -3,7 +3,7 @@ title: GIS - Thinking Beyond the Map
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2020-07-13 10:07:46
+date: 2020-07-14 10:07:46
 categories:
   - Featured
 tags:
@@ -14,7 +14,7 @@ tags:
 
 Geospatial technology is an essential part of our daily lives. Its abilities and toolsets have the power to run small-scale phone applications as well as multibillion dollar businesses systems, including geointelligence, big tech, insurance, and healthcare,  just to name a few. As a result, the line is fading between information technology and GIS. This is exciting because as geospatial technology goes mainstream, we are seeing a wider array of uses for it—and often, the map is nowhere to be seen. It's the geospatial data and intelligence that’s driving these systems.
 
-![Location drives the system]({% link images/geospatial.png %}){: .flex .flex--center}[^location]
+![Location drives the system]({% link images/geospatial.png %}){: .flex .flex--center} [^location]
 
 ### Where's the map?
 {: .text-left}
@@ -38,9 +38,9 @@ The use of GIS continues to evolve, and the benefits of the technology are becom
 
 Putting this all together, it's easy to envision a dialogue with a device that might sound something like this...
 
-    `_Human: How should I prepare for Thomas's birthday tomorrow?
+`Human: How should I prepare for Thomas's birthday tomorrow?
 
-    Device: Tomorrow at Sugarhouse Park it will be sunny in the afternoon, but there are plenty of shade trees. Expect rain in the morning, so bring an umbrella, but there are ample pavilions for shelter on the north end. The park does have restrooms. Also, there is a half-marathon scheduled, which might affect your route. How do you plan to get there?_`
+Device: Tomorrow at Sugarhouse Park it will be sunny in the afternoon, but there are plenty of shade trees. Expect rain in the morning, so bring an umbrella, but there are ample pavilions for shelter on the north end. The park does have restrooms. Also, there is a half-marathon scheduled, which might affect your route. How do you plan to get there?`
 
 As convenient as this sounds, this concept teeters between creepy and cool. Ultimately though, it will most likely be our comfort levels, and not technical ability, that influence the next wave of geospatial applications and skills.
 
@@ -98,16 +98,7 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 #### Sources
 {: .text-left}
 
-[^bhageshpur]: Bhageshpur, Kiran. 2019. "[Data Is The New Oil - And That's A Good Thing](https://www.forbes.com/sites/forbestechcouncil/2019/11/15/data-is-the-new-oil-and-thats-a-good-thing/#1d3b1a037304)". Forbes. Nov 15, 2019.
-
-[^economist]: The Economist. 2017. "[The world’s most valuable resource is no longer oil, but data](https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data)". The Economist. May 6, 2017.
-
-[^toonders]: Toonders, Joris. 2014. "[Data Is the New Oil of the Digital Economy](https://www.wired.com/insights/2014/07/data-new-oil-digital-economy/)". Wired. July 2014.
-
 [^gim]: GIM International. 2015. "Bringing Geography into Everything". https://www.gim-international.com/content/news/bringing-geography-into-everything-gim-international-interviews-ed-parsons (accessed February 13, 2020).
-
-#### Image Sources
-{: .text-left}
 
 [^location]: gimbal https://gimbal.com/location-data-guide/
 
@@ -117,6 +108,12 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 
 [^locationdata]: 123rf. https://www.123rf.com/photo_75188771_stock-vector-black-binary-code-on-white-background-algorithm-binary-data-code-decryption-and-encoding-row-matrix-.html
 
+[^economist]: The Economist. 2017. "[The world’s most valuable resource is no longer oil, but data](https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data)". The Economist. May 6, 2017.
+
+[^toonders]: Toonders, Joris. 2014. "[Data Is the New Oil of the Digital Economy](https://www.wired.com/insights/2014/07/data-new-oil-digital-economy/)". Wired. July 2014.
+
 [^collaboration]: tapetapnetworks. https://www.taptapnetworks.com/bridging-the-gap-the-next-frontier-for-mobile-and-physical-commerce/
+
+[^bhageshpur]: Bhageshpur, Kiran. 2019. "[Data Is The New Oil - And That's A Good Thing](https://www.forbes.com/sites/forbestechcouncil/2019/11/15/data-is-the-new-oil-and-thats-a-good-thing/#1d3b1a037304)". Forbes. Nov 15, 2019.
 
 [^tribolet]: Tribolet, Anna. 2020. "What is AGRC Doing to Support the Next Wave of Geospatial Technology?. State of Utah, Department of Technology Services.
