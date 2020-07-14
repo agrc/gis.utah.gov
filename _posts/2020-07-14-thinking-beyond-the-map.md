@@ -27,7 +27,9 @@ GIS also plays an integral part in many voting systems. Election departments hav
 
 Another example of where geospatial technology is predominant is on our personal and voice-enabled devices. On these platforms, the map is often complementary if shown at all. This is particularly true as we build more complex applications and skills that allow us to more naturally interact with them. For example, think about the question, “What's the weather today?” In this case, we need to know the device's location as well as the nearest weather station. GIS handles the details, but ultimately we're only concerned with getting the forecast.
 
-![Voice queries]({% link images/voice-queries.png %}){: .flex .flex--center}[^voice]
+![Voice queries]({% link images/voice-queries.png %}){: .flex .flex--center}
+
+[^voice]{: style="text-align: center"}
 
 There are countless other questions that GIS can help answer: What day is my garbage pickup? What is the air quality today? Where am I? GIS is the engine that processes these queries, but the desired results are text based. For instance, to answer that last example question (i.e., Where am I?), reverse geocoding would return a human-readable civic address.
 
@@ -53,7 +55,7 @@ Geospatial data is now more important than ever. It’s the bridge between GIS p
 
 ![location data]({% link images/location-data.png %}){: .flex .flex--center}[^locationdata]
 
-It's been said that “data is the new oil”, but I would add that “data is the oil in/to the engine”[^bhageshpur],[^economist],[^toonders]. This makes it critical that we, as a GIS community, create quality data. The data we create today will be used to solve tomorrow's problems, and successful solutions depend on quality data.
+It's been said that “data is the new oil”, but I would add that “data is the oil to the engine”[^bhageshpur],[^economist],[^toonders]. This makes it critical that we, as a GIS community, create quality data. The data we create today will be used to solve tomorrow's problems, and successful solutions depend on quality data.
 
 ### The role of GIS professionals
 {: .text-left}
