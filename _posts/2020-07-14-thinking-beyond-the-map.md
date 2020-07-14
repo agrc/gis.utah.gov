@@ -38,9 +38,8 @@ The use of GIS continues to evolve, and the benefits of the technology are becom
 
 Putting this all together, it's easy to envision a dialogue with a device that might sound something like this...
 
-`Human: How should I prepare for Thomas's birthday tomorrow?
-
-Device: Tomorrow at Sugarhouse Park it will be sunny in the afternoon, but there are plenty of shade trees. Expect rain in the morning, so bring an umbrella, but there are ample pavilions for shelter on the north end. The park does have restrooms. Also, there is a half-marathon scheduled, which might affect your route. How do you plan to get there?`
+>Human: How should I prepare for Thomas's birthday tomorrow?
+>Device: Tomorrow at Sugarhouse Park it will be sunny in the afternoon, but there are plenty of shade trees. Expect rain in the morning, so bring an umbrella, but there are ample pavilions for shelter on the north end. The park does have restrooms. Also, there is a half-marathon scheduled, which might affect your route. How do you plan to get there?
 
 As convenient as this sounds, this concept teeters between creepy and cool. Ultimately though, it will most likely be our comfort levels, and not technical ability, that influence the next wave of geospatial applications and skills.
 
