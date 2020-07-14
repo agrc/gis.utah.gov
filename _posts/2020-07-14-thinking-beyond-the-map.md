@@ -15,8 +15,7 @@ tags:
 Geospatial technology is an essential part of our daily lives. Its abilities and toolsets have the power to run small-scale phone applications as well as multibillion dollar businesses systems, including geointelligence, big tech, insurance, and healthcare,  just to name a few. As a result, the line is fading between information technology and GIS. This is exciting because as geospatial technology goes mainstream, we are seeing a wider array of uses for it—and often, the map is nowhere to be seen. It's the geospatial data and intelligence that’s driving these systems.
 
 ![Location drives the system]({% link images/geospatial.png %}){: .flex .flex--center}
-
-[^location]{: .flex .flex--center}
+[^location]
 
 ### Where's the map?
 {: .text-left}
@@ -29,7 +28,7 @@ Another example of where geospatial technology is predominant is on our personal
 
 ![Voice queries]({% link images/voice-queries.png %}){: .flex .flex--center}
 
-[^voice]{: style="text-align: center"}
+[^voice]{: .text-center}
 
 There are countless other questions that GIS can help answer: What day is my garbage pickup? What is the air quality today? Where am I? GIS is the engine that processes these queries, but the desired results are text based. For instance, to answer that last example question (i.e., Where am I?), reverse geocoding would return a human-readable civic address.
 
