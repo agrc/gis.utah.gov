@@ -14,8 +14,8 @@ tags:
 
 Geospatial technology is an essential part of our daily lives. Its abilities and toolsets have the power to run small-scale phone applications as well as multibillion dollar businesses systems, including geointelligence, big tech, insurance, and healthcare,  just to name a few. As a result, the line is fading between information technology and GIS. This is exciting because as geospatial technology goes mainstream, we are seeing a wider array of uses for it—and often, the map is nowhere to be seen. It's the geospatial data and intelligence that’s driving these systems.
 
-![Location drives the system]({% link images/geospatial.png %}){: .flex .flex--center}
-[^location]
+![Location drives the system]({% link images/geospatial.png %})[^location]
+{: .flex .flex--center}
 
 ### Where's the map?
 {: .text-left}
@@ -26,9 +26,8 @@ GIS also plays an integral part in many voting systems. Election departments hav
 
 Another example of where geospatial technology is predominant is on our personal and voice-enabled devices. On these platforms, the map is often complementary if shown at all. This is particularly true as we build more complex applications and skills that allow us to more naturally interact with them. For example, think about the question, “What's the weather today?” In this case, we need to know the device's location as well as the nearest weather station. GIS handles the details, but ultimately we're only concerned with getting the forecast.
 
-![Voice queries]({% link images/voice-queries.png %}){: .flex .flex--center}
-
-[^voice]{: .text-center}
+![Voice queries]({% link images/voice-queries.png %})[^voice]
+{: .flex .flex--center }
 
 There are countless other questions that GIS can help answer: What day is my garbage pickup? What is the air quality today? Where am I? GIS is the engine that processes these queries, but the desired results are text based. For instance, to answer that last example question (i.e., Where am I?), reverse geocoding would return a human-readable civic address.
 
@@ -37,13 +36,14 @@ There are countless other questions that GIS can help answer: What day is my gar
 
 The use of GIS continues to evolve, and the benefits of the technology are becoming more ingrained in what we come to expect as “normal.”  As systems become more complex, the next wave of geospatial applications will increasingly consume data from multiple sources in a variety of formats. In addition to location, an application might pull data from the nearest weather service; the public alert system (e.g., for information about road closures, local events, and natural hazards); and our personal data, such as average walk speed, travel patterns, and calendars and pictures. Additionally, these applications will incorporate artificial intelligence and machine learning “on-the-fly” to interpret features on the ground, such as the existence of restrooms at a park or the location and density of shade trees.
 
-![What's next in geospatial?]({% link images/geospatial-whats-next.png %}){: .flex .flex--center}[^geospatialnext]
+![What's next in geospatial?]({% link images/geospatial-whats-next.png %}){: .outline }[^geospatialnext]
+{: .flex .flex--center }
 
 Putting this all together, it's easy to envision a dialogue with a device that might sound something like this...
 
->Human: How should I prepare for Thomas's birthday tomorrow?
-
->Device: Tomorrow at Sugarhouse Park it will be sunny in the afternoon, but there are plenty of shade trees. Expect rain in the morning, so bring an umbrella, but there are ample pavilions for shelter on the north end. The park does have restrooms. Also, there is a half-marathon scheduled, which might affect your route. How do you plan to get there?
+> Human: How should I prepare for Thomas's birthday tomorrow?
+>
+> Device: Tomorrow at Sugarhouse Park it will be sunny in the afternoon, but there are plenty of shade trees. Expect rain in the morning, so bring an umbrella, but there are ample pavilions for shelter on the north end. The park does have restrooms. Also, there is a half-marathon scheduled, which might affect your route. How do you plan to get there?
 
 As convenient as this sounds, this concept teeters between creepy and cool. Ultimately though, it will most likely be our comfort levels, and not technical ability, that influence the next wave of geospatial applications and skills.
 
@@ -52,7 +52,8 @@ As convenient as this sounds, this concept teeters between creepy and cool. Ulti
 
 Geospatial data is now more important than ever. It’s the bridge between GIS professionals and countless other industries. It’s the foundation that allows us to work together and speak the same language. A map, whether it’s present or not, is a cartographic representation of the data. But, it’s the data itself that connects us and powers our complex solutions.
 
-![location data]({% link images/location-data.png %}){: .flex .flex--center}[^locationdata]
+![location data]({% link images/location-data.png %}){: .outline }[^locationdata]
+{: .flex .flex--center}
 
 It's been said that “data is the new oil”, but I would add that “data is the oil to the engine”[^bhageshpur],[^economist],[^toonders]. This makes it critical that we, as a GIS community, create quality data. The data we create today will be used to solve tomorrow's problems, and successful solutions depend on quality data.
 
@@ -61,7 +62,8 @@ It's been said that “data is the new oil”, but I would add that “data is t
 
 As geospatial data and services become more widely used, GIS professionals should see this as an opportunity to reach out to our diverse communities and pave the path forward together. In doing so, we should strive to reach the following goals:
 
-![Collaboration]({% link images/collaboration.jpg %}){: .flex .flex--center}[^collaboration]
+![Collaboration]({% link images/collaboration.jpg %})[^collaboration]
+{: .flex .flex--center}
 
 - Bridge the Gap between IT and GIS
   - GIS and IT are no longer two separate industries/entities. Moving forward, we need to see ourselves seated in the same room, speaking the same language, and working together to provide seamless solutions and services to our customers. This approach encourages not only cross-pollination but also the formation of fresh, new ideas.
@@ -71,7 +73,7 @@ As geospatial data and services become more widely used, GIS professionals shoul
 
 - Continue Coordination and Partnership Efforts
   - As we move into the next era of GIS, it’s critical that we are moving forward collectively. This can be achieved by coordinating our efforts with other agencies and also collaborating with the public. The goal is to collectively build shared resources when appropriate and possible.
-  
+
   These relationships help us understand where we overlap and, therefore, where we can work together. Often, this leads to the creation of better, more-accurate authoritative data and services.
 
 - Decentralize Data, Services, and Other Resources
@@ -87,16 +89,17 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 ### What is AGRC doing?
 {: .text-left}
 
-![AGRC supports geospatial]({% link images/agrc-supports-geospatial.png %}){: .flex .flex--center}[^tribolet]
+![AGRC supports geospatial]({% link images/agrc-supports-geospatial.png %}){: .outline }[^tribolet]
+{: .flex .flex--center}
 
 #### Links related to AGRC's efforts
 
 - [Partnerships and Sharing]({% link gis-data-sharing/index.md %})
-- [Data sharing Initiatives - Farm to AGOL project]({% link gis-data-sharing/open-data/index.md %})  
+- [Data sharing Initiatives - Farm to AGOL project]({% link gis-data-sharing/open-data/index.md %})
 - [State Geographic Information Database (SGID) - data index]({% link data/index.html %})
 - [Open Data - SGID ESRI Hub site](https://opendata.gis.utah.gov/)
 - [Open SGID - PostgreSQL/PostGIS cloud SGID database]({% link _posts/2020-05-04-introducing-open-sgid.md %})
-- [Open APIs](https://api.mapserv.utah.gov/)  
+- [Open APIs](https://api.mapserv.utah.gov/)
 - [GitHub code and project repositories](https://github.com/agrc)
 - [Utah Department of Technology Services' Citizen Portal project](https://demosite.utah.gov/citizen-portal/written-plans/next-generation-portal/)
 - [AGRC Innovation Grant for Digital Assistant Skills]({% link _posts/2019-05-30-thoughts-from-teaching-google-and-amazon-new-skills.md %}), [Overview of the Grant]({% link _posts/2018-09-11-agrc-innovation-award-grant.md %})
