@@ -12,7 +12,7 @@ tags:
   - coordination
 ---
 
-Geospatial technology is an essential part of our daily lives. Its abilities and toolsets have the power to run small-scale phone applications as well as multibillion dollar businesses systems, including geointelligence, big tech, insurance, and healthcare,  just to name a few. As a result, the line is fading between information technology and GIS. This is exciting because as geospatial technology goes mainstream, we are seeing a wider array of uses for it—and often, the map is nowhere to be seen. It's the geospatial data and intelligence that’s driving these systems.
+Geospatial technology is an essential part of our daily lives. Its abilities and toolsets have the power to run small-scale phone applications as well as multibillion dollar businesses systems, including geointelligence, big tech, insurance, and healthcare, just to name a few. As a result, the line is fading between information technology and GIS. This is exciting because as geospatial technology goes mainstream, we are seeing a wider array of uses for it—and often, the map is nowhere to be seen. It's the geospatial data and intelligence that’s driving these systems.
 
 ![Location drives the system]({% link images/geospatial.png %})[^location]
 {: .flex .flex--center}
@@ -34,7 +34,7 @@ There are countless other questions that GIS can help answer: What day is my gar
 ### What's next?
 {: .text-left}
 
-The use of GIS continues to evolve, and the benefits of the technology are becoming more ingrained in what we come to expect as “normal.”  As systems become more complex, the next wave of geospatial applications will increasingly consume data from multiple sources in a variety of formats. In addition to location, an application might pull data from the nearest weather service; the public alert system (e.g., for information about road closures, local events, and natural hazards); and our personal data, such as average walk speed, travel patterns, and calendars and pictures. Additionally, these applications will incorporate artificial intelligence and machine learning “on-the-fly” to interpret features on the ground, such as the existence of restrooms at a park or the location and density of shade trees.
+The use of GIS continues to evolve, and the benefits of the technology are becoming more ingrained in what we come to expect as “normal.” As systems become more complex, the next wave of geospatial applications will increasingly consume data from multiple sources in a variety of formats. In addition to location, an application might pull data from the nearest weather service; the public alert system (e.g., for information about road closures, local events, and natural hazards); and our personal data, such as average walk speed, travel patterns, and calendars and pictures. Additionally, these applications will incorporate artificial intelligence and machine learning “on-the-fly” to interpret features on the ground, such as the existence of restrooms at a park or the location and density of shade trees.
 
 ![What's next in geospatial?]({% link images/geospatial-whats-next.png %}){: .outline }[^geospatialnext]
 {: .flex .flex--center }
