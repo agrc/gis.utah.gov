@@ -20,7 +20,7 @@ We are at a total of 56 annexations so far this year which puts us in similar te
 Hope everyone is staying safe and healthy. As always feel free to check out all the changes and make sure your boundaries are where you think they should be, view them on a the [Utah Municipality Modifications web map](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63). 
 To review the documents you can go the [Utah Lt. Governor Municipal Certifications website](https://municert.utah.gov/). Changes may be coming for this location, more on this later.
 
-Following are the changes and annexations since December 31,, 2019 listed by County and City:
+Following are the changes and annexations since December 31, 2019 listed by County and City:
 
 | County | City | Number of Changes |
 | --- | --- | --- |
