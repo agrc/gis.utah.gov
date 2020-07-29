@@ -1,6 +1,7 @@
 {% assign id = include.name | downcase | replace: ' ', '-' %}
+{%- if include.org == nil or include.org == false -%}
 {% assign dataset_id = id %}
-{%- if include.org != nil or include.org != false -%}
+{%- else -%}
 {%- assign dataset_id = include.org | append: "::" | append: id -%}
 {%- endif -%}
 {%- if include.skip_hub == nil or include.skip_hub == false -%}
