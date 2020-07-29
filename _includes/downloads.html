@@ -1,7 +1,7 @@
 {% assign id = include.name | downcase | replace: ' ', '-' %}
 {% assign dataset_id = id %}
 {%- if include.org != nil or include.org != false -%}
-{%- assign dataset_id = {{ include.org | concat "::" | concat id }} -%}
+{%- assign dataset_id = {{ include.org }}::{{ id }} -%}
 {%- endif -%}
 {%- if include.skip_hub == nil or include.skip_hub == false -%}
 <li><a href="https://opendata.gis.utah.gov/datasets/{{ dataset_id }}" id="{{ id }}-hub">{{ include.name }}: SGID Open Data Downloads and APIs</a>
