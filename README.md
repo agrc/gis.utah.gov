@@ -161,7 +161,8 @@ Item:
   hub:
     name: ArcGIS Online name exactly eg Utah Address Points
     item_id: the item id
-    skip_shapefile: true or false optional
-    skip_fgdb: true or false optional
-    skip_hub: true or false optional
+    org: the sharing org name e.g. `SITLA`. When an org shares items it gets prefixed with their name e.g. `/SITLA::land-ownership`
+    skip_shapefile: true or false [optional]
+    skip_fgdb: true or false [optional]
+    skip_hub: true or false [optional]
 ```
