@@ -11,7 +11,7 @@
         {%- endfor -%}
         {% endif %}
         {% if include.info.hub %}
-        {% include downloads.html name=include.info.hub.name item_id=include.info.hub.item_id %}
+        {% include downloads.html org=include.info.hub.org name=include.info.hub.name item_id=include.info.hub.item_id %}
         {% endif %}
         {% if include.info.opensgid %}
         {% include opensgid.html table=include.info.opensgid.table %}

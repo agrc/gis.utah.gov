@@ -1,6 +1,11 @@
 {% assign id = include.name | downcase | replace: ' ', '-' %}
+{%- if include.org == nil or include.org == false -%}
+{% assign dataset_id = id %}
+{%- else -%}
+{%- assign dataset_id = include.org | append: "::" | append: id -%}
+{%- endif -%}
 {%- if include.skip_hub == nil or include.skip_hub == false -%}
-<li><a href="https://opendata.gis.utah.gov/datasets/{{ id }}" id="{{ id }}-hub">{{ include.name }}: SGID Open Data Downloads and APIs</a>
+<li><a href="https://opendata.gis.utah.gov/datasets/{{ dataset_id }}" id="{{ id }}-hub">{{ include.name }}: SGID Open Data Downloads and APIs</a>
 {%- endif -%}
 {%- if include.skip_fgdb == nil or include.skip_fgdb == false -%}
 <li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.gdb" id="{{ id }}-gdb">{{ include.name }}: File Geodatabase</a>
