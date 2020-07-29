@@ -1,4 +1,4 @@
-{% assign id = include.name | downcase | replace: ' ', '-' %}
+{% assign id = include.name | replace: ' ', '-' %}
 {%- if include.skip_hub == nil or include.skip_hub == false -%}
 <li><a href="https://opendata.gis.utah.gov/datasets/{{ id }}" id="{{ id }}-hub">{{ include.name }}: SGID Open Data Downloads and APIs</a>
 {%- endif -%}
