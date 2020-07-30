@@ -1,5 +1,5 @@
 ---
-title: 'Municipal Boundaries Update for first half of 2020'
+title: 'Municipal Boundaries Update for First Half of 2020'
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
@@ -7,20 +7,22 @@ date: 2020-07-20 19:07:07
 categories:
   - SGID Blog
 tags:
-  - Municipal Boundary
+  - municipal boundary
   - municipalities
   - boundaries
   - annexations
 ---
 
-As you may have noticed a lot of different things going on in the world out there. AGRC is now mainly working from our homes. And communication through the internet and phones. As we transitioned to a more telecommuting environment we had a few bumps in the road, nothing drastract, and our data was always available to our users. Apologies for not getting updates out there for the municipal boundaries in a while (6 months), but here we are now. Still been busy as business goes on and the wheels of progress keep turning. Growth may have slowed a little but not really a noticeable amount from an annexation point of view.
+As you may have noticed, a lot of different things are going on in the world right now. AGRC staff are now working from home, and we’re communicating mostly electronically. We had a few bumps along the way during this transition, but we’re happy to say that throughout these changes, our data has always been available to our users. Also, despite the challenges of this year, we’ve kept busy and the wheels of progress have kept turning. With that in mind, we appreciate your patience on the following delayed municipal boundaries updates. 
 
-We are at a total of 56 annexations so far this year which puts us in similar territory as the previous years. Again Utah County leads the way with Cache County following. This year several other counties have joined them. Iron, Sevier, and Tooele counties, with more change coming for Tooele, but I won’t mention those yet.
+We are at a total of 56 annexations so far this year, which puts us in similar territory as this same time in previous years. As per usual, Utah County leads the way with the number of annexations, with Cache County following. This year several other counties have joined them (i.e., Iron, Sevier, and Tooele counties), and there is more change coming for Tooele.
    
-Hope everyone is staying safe and healthy. As always feel free to check out all the changes and make sure your boundaries are where you think they should be, view them on a the [Utah Municipality Modifications web map](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63). 
-To review the documents you can go the [Utah Lt. Governor Municipal Certifications website](https://municert.utah.gov/). Changes may be coming for this location, more on this later.
+As always, feel free to check out all the municipal boundary changes and make sure your boundaries are where you think they should be. You can view them on the [Utah Municipality Modifications web map](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63). 
+To review related documents, go the [Utah Lt. Governor Municipal Certifications website](https://municert.utah.gov/). We will keep you informed of upcoming changes. 
 
-Following are the changes and annexations since December 31, 2019 listed by County and City:
+The following table shows the changes and annexations (listed by county and city) since December 31, 2019. 
+
+Stay safe and healthy, everyone!
 
 | County | City | Number of Changes |
 | --- | --- | --- |
@@ -31,7 +33,7 @@ Following are the changes and annexations since December 31, 2019 listed by Coun
 | | Trenton | 1 |
 | Davis | Layton | 3 |
 | | Clearfield Syracuse adjustment | 1 |
-| Emery | Castle Cale | 1 |
+| Emery | Castle Dale | 1 |
 | Garfield | Panguitch  | 1 |
 | Iron | Cedar City  | 1 |
 | | Paragonah | 2 |
@@ -54,8 +56,8 @@ Following are the changes and annexations since December 31, 2019 listed by Coun
 | | Heber City  | 1 |
 | | Midway  | 1 |
 | Washington | Santa Clara  | 1 |
-| | St George  | 1 |
-| | Ivans Santa Clara adjustment  | 1 |
+| | St. George  | 1 |
+| | Ivins-Santa Clara adjustment  | 1 |
 | Weber | North Ogden | 1 |
 | | Plain City  | 1 |
 | | West Haven  | 2 |
