@@ -3,7 +3,7 @@ title: 'Municipal Boundaries Update for First Half of 2020'
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2020-07-20 19:07:07
+date: 2020-07-30 12:07:07
 categories:
   - SGID Blog
 tags:
