@@ -14,14 +14,14 @@ categories: []
 
 At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's state-wide, high-resolution (6-inch pixels) aerial photography as part of the state's on-going efforts to provide affordable high-resolution imagery. Google regularly updated the urban areas over the next few years, but some rural areas of the state were left with years-old imagery.
 
-Google announced in 2019 that they would no longer be offering their program so we started searching for other vendors. After evaluating all our options and financial resources, we selected Hexagon Geospatial and their high-resolution imagery. The first delivery includes state-wide 30cm (~12-inch) coverage flown in 2018 (a higher resolution version of the 2018 NAIP) and 15cm (~6-inch) coverage of the Wasatch Front, Logan, and St. George flown in November 2019. The next delivery in 2021 will provide 15cm coverage of the entire state.
+Google announced in 2019 that they would no longer be offering their program, so we started searching for other vendors. After evaluating all our options and financial resources, we selected Hexagon Geospatial and their high-resolution imagery. The first delivery includes state-wide 30cm (~12-inch) coverage flown in 2018 (a higher resolution version of the 2018 NAIP) and 15cm (~6-inch) coverage of the Wasatch Front, Logan, and St. George flown in November 2019. The next delivery in 2021 will provide 15cm coverage of the entire state.
 
 We will continue to provide the previously acquired imagery from the Google contract via the various `Google` services on Discover.
 
 ### The License
 {: .text-left}
 
-The licenses governing both the Google and Hexagon imagery are similar, and we will group them together for this discussion. They allows **Utah's cities, counties, special districts, state agencies, school districts, colleges/universities, and tribes** to use the imagery in web and desktop mapping applications either from our streaming web service or from locally-stored files. **Contractors and formal partners of the immediate licensees** are also allowed to use the imagery.
+The licenses governing both the Google and Hexagon imagery are similar, and we will group them together for this discussion. They allow **Utah's cities, counties, special districts, state agencies, school districts, colleges/universities, and tribes** to use the imagery in web and desktop mapping applications either from our streaming web service or from locally-stored files. **Contractors and formal partners of the immediate licensees** are also allowed to use the imagery.
 
 The imagery is hosted on the Google Cloud Platform and delivered as WMS and WMTS Open Geospatial Consortium (OGC) services via AGRC's **[Discover]({% link discover/index.html %})** basemap and imagery server. You can download the original `.jp2` imagery tiles from the Discover index page or get a copy from AGRC, which keeps a master set of the imagery files.
 
