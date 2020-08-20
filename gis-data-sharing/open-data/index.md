@@ -24,7 +24,7 @@ Now that you're a member of the groups, share each item to the appropriate group
 
 ## Presentation Tips
 
-![Open-Data-Card]({% link images/od_card_anno.png %}){: style="margin: 0 auto; display: block; width=75%" }
+![Open-Data-Card]({% link images/od_card_anno.png %}){: .flex .flex--center }
 
 - The **title** is first place people look for information. Because items in Open Data are also ArcGIS Online items that are searchable by anyone in the world, we have added "Utah" to the beginning of every title of our public ArcGIS Online items to provide better context.
 - A **user name** that includes the department/division's name or function helps users know where the dataset is coming from. For example, all the datasets we share are owned by the `UtahAGRC` user.
