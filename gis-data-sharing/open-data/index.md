@@ -10,7 +10,7 @@ title: Sharing Data through the SGID Open Data Site
 categories: []
 ---
 
-![Open-Data-Homepage]({% link images/od_homepage.png %}){: style="width:50%; margin: 0 auto; display: block;" .outline }
+![Open-Data-Homepage]({% link images/od_homepage.png %}){: .flex .flex--center .outline }
 
 Does your department or division have authoritative datasets hosted in your own ArcGIS Online organization? Do you want to make them easy to find by anyone searching for Utah GIS Data? Share them on the [SGID Open Data website!](https://opendata.gis.utah.gov/) This makes them them easily discoverable while giving you full control over when they are updated.
 
