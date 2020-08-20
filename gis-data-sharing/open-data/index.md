@@ -26,7 +26,7 @@ Now that you're a member of the groups, share each item to the appropriate group
 
 ![Open-Data-Card]({% link images/od_card_anno.png %}){: .flex .flex--center }
 
-- The **title** is first place people look for information. Because items in Open Data are also ArcGIS Online items that are searchable by anyone in the world, we have added "Utah" to the beginning of every title of our public ArcGIS Online items to provide better context.
+- The **title** is the first place people look for information. Because items in Open Data are also ArcGIS Online items that are searchable by anyone in the world, we have added "Utah" to the beginning of every title of our public ArcGIS Online items to provide better context.
 - A **user name** that includes the department/division's name or function helps users know where the dataset is coming from. For example, all the datasets we share are owned by the `UtahAGRC` user.
 - Open Data displays the text from the `Description` field of the source ArcGIS Online item for the **description**. You shouldn't count on any information in the ArcGIS Online `Summary` field to show up unless it's repeated in the description.
 - To help with searching, we include the "AGRC" and "SGID" **tags** on all our items while removing any tags that are repeated in the item's title. Please refer to Esri's [post about using tags effectively](https://www.esri.com/arcgis-blog/products/arcgis-online/data-management/using-tags-effectively/) for more ideas and information.
