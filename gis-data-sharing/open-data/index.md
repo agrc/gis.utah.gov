@@ -49,7 +49,7 @@ To change the organization name in the ArcGIS Online item's metadata, you need t
 
 ![Citation-Contact]({% link images/od_citation_contact_orgname.png %}){: style="width:400px; margin: 10px" .outline } ![Contact]({% link images/od_contact_orgname.png %}){: style="width:400px; margin: 10px" .outline }
 
-Depending on how you upload or overwrite your ArcGIS Online data, it may also overwrite the item's metadata with info from the source **feature class metadata**. We suggest you make any changes in both the feature class and ArcGIS Online metadata to avoid problems in the futre. In the FGDC CSDGM style, the `Resource > Citation > Contact > Organization Name` field is in `Overview > Citation Contacts`. The `Resource > Contact > Organization Name` field is in `Resource > Points of Contact`.
+Depending on how you upload or overwrite your ArcGIS Online data, it may also overwrite the item's metadata with info from the source **feature class metadata**. We suggest you make any changes in both the feature class and ArcGIS Online metadata to avoid problems in the future. In the FGDC CSDGM style, the `Resource > Citation > Contact > Organization Name` field is in `Overview > Citation Contacts`. The `Resource > Contact > Organization Name` field is in `Resource > Points of Contact`.
 
 ## Other ArcGIS Online Considerations
 
