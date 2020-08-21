@@ -18,9 +18,9 @@ Does your department or division have authoritative datasets hosted in your own 
 
 All you need to do is **share your ArcGIS Online items with the appropriate SGID groups**. Items shared with these ArcGIS Online groups are automatically added to the SGID Open Data site.
 
-First, you have to be a member of the SGID groups that are the best fit for your datasets. Navigate to AGRC's [groups page](https://utah.maps.arcgis.com/home/groups.html) and click on the appropriate group. Then click on "Join Group" to request access. We'll verify your request and add you to the group.
+First, you have to be a member of the SGID groups that are the best fit for your datasets. Reach out to [AGRC staff]({% link about/contact/index.html %}) to request an invite. We'll work with you to identify what datasets are good matches for the SGID Open Data site and what group they best fit in.
 
-Now that you're a member of the groups, share each item to the appropriate group. You also need to make sure the item is shared with "Everyone (public)". Otherwise, it will only be visible to you (or other members of your organization if shared to the organization) in Open Data.
+Once you're a member of the groups, share each approved item to the appropriate group. You also need to make sure the item is shared with "Everyone (public)". Otherwise, it will only be visible to you (or other members of your organization if shared to the organization) in Open Data.
 
 ## Presentation Tips
 
