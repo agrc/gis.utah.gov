@@ -9,21 +9,17 @@ date: 2015-07-07 16:53:14 -0600
 title: Geochronology
 categories: []
 Radiocarbon:
-  downloads:
-    - url: https://drive.google.com/open?id=12z9a1GnC0vSjuJrG5kNq5dQu-qMLEz7A&export=download
-      label: 'Radiocarbon: File Geodatabase'
-    - url: https://drive.google.com/open?id=1ud3oBWQaLoyL2pptXmZOsBPzp_72U9AM&export=download
-      label: 'Radiocarbon: Shapefile'
+  hub:
+    name: Utah Geochronology Radiocarbon
+    item_id: a7c13d5a3a7045c4a3a1f46f576803b6
   updates:
-    - November 2017
+    - August 2020
 Argon:
-  downloads:
-    - url: https://drive.google.com/open?id=1Rdn2r1dkc9EvQHHdBOPKl7ABbteQhI6D&export=download
-      label: 'Argon: File Geodatabase'
-    - url: https://drive.google.com/open?id=1jd_pGy1PpF7QQ0EsWsGJPg8zPZxbrbcQ&export=download
-      label: 'Argon: Shapefile'
+  hub:
+    name: Utah Geochronology Argon 
+    item_id: de953b38d0df43468bb2b1947697a508
   updates:
-    - November 2017
+    - August 2020
 Laboratory:
   downloads:
     - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV0wwbDRsVG5UdGs&export=download
@@ -31,23 +27,19 @@ Laboratory:
     - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUHVuQkgtbG4wZG8&export=download
       label: 'Laboratory: Table'
   updates:
-    - November 2017
+    - August 2020
 Luminescense:
-  downloads:
-    - url: https://drive.google.com/open?id=1mAx7gIfi0ZhzmleTI_-TU4xITklE8ufe&export=download
-      label: 'Luminescense: File Geodatabase'
-    - url: https://drive.google.com/open?id=1Av2XpFz-HXRKPZU8qSAj0wNJW3jQZfMi&export=download
-      label: 'Luminescense: Shapefile'
+  hub:
+    name: Utah Geochronology Luminescence
+    item_id: 3c3d19ed6a4c43ec8fb5d02d1dde37d4
   updates:
-    - November 2017
+    - August 2020
 Project:
-  downloads:
-    - url: https://drive.google.com/open?id=13a4RUURAulU-PsU4Jm8DIjcIA9ndfo79&export=download
-      label: 'Project: File Geodatabase'
-    - url: https://drive.google.com/open?id=18ZNF6yc7SsZnWkjCIYfM1Ha6TsjM1rhC&export=download
-      label: 'Project: Shapefile'
+  hub:
+    name: Utah Geochronology Project
+    item_id: b7b1333788004ba0a3c437812a82fc64
   updates:
-    - November 2017
+    - August 2020
 ---
 {% capture abstract %}
 The Utah Geochronology Database contains ages and related dating information of sampled geologic materials (soil and rock) using argon (40Ar/39Ar), luminescence (TL, IRSL, and OSL), or radiocarbon (14C) dating methods and were analyzed for a variety of geologic-related projects by the tah Geological Survey (UGS) and others. These ages were used in fault trench investigations to determine the timing of past earthquakes and to develop other paleoseismic parameters, in the dating of basalt flows for eruption histories and in dating fault movement, and similar projects. Since geochronologic methods have significantly evolved and improved through time, older data is often not as reliable or usable as more recently dated materials. The user should use caution in using this data, as significant knowledge and experience is often needed to interpret and apply geochronologic data to projects correctly. A <a href='https://geology.utah.gov/apps/geochron/'>web mapping application</a> for the database is available. As the database is expanded in the future, age results from other geochronologic dating methods are anticipated to be added. Various geochronologic data from geologic mapping projects that may not have yet been included in the database <a href='https://geology.utah.gov/resources/data-databases/analytical-data/'>may also be available</a>.  Donations of geochronologic data in Utah are appreciated, so that these data can be permanently archived and discoverable and available to all users. For more details {% include contact.html subject=page.title contact=site.data.contacts.geochronology_database text='contact'%}{% endcapture %}
@@ -74,8 +66,10 @@ abstract=abstract %}
     <p></p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
   </div>
-  {% include packagedata.html name="Argon"
-  info=page.Argon %}
+  {% include packagedata.html
+    name="Argon"
+    info=page.Argon
+  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -107,8 +101,10 @@ abstract=abstract %}
     <p></p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
   </div>
-  {% include packagedata.html name="Luminescense"
-  info=page.Luminescense %}
+  {% include packagedata.html
+    name="Luminescense"
+    info=page.Luminescense
+  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -124,8 +120,10 @@ abstract=abstract %}
     <p></p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
   </div>
-  {% include packagedata.html name="Project"
-  info=page.Project %}
+  {% include packagedata.html
+    name="Project"
+    info=page.Project
+  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -141,6 +139,8 @@ abstract=abstract %}
     <p></p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
   </div>
-  {% include packagedata.html name="Radiocarbon"
-  info=page.Radiocarbon %}
+  {% include packagedata.html
+    name="Radiocarbon"
+    info=page.Radiocarbon
+  %}
 </div>
