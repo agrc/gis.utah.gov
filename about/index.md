@@ -87,6 +87,19 @@ AGRC is funded through a combination of State general and restricted funds and c
 - [National States Geographic Information Council (NGSIC)](https://nsgic.org)
 {: .dotless }
   </div>
+  <div class="grid__col grid__col--1-of-2" markdown="1">
+###### Utah Geographic Information Systems Advisory Council (GISAC)
+
+- GISAC is composed of individuals from many state agencies.  We are all working together to further the cause of GIS in Utah.  AGRC is trying to create a forum in which all levels of GIS expertise can mingle and learn from each other and learn of each other's challenges. GISAC also sends recommendations to the CIO as potential rules or recommendations that would enhance GIS coordination and cooperation throughout Utah.
+- [Learn more]({% link about/gisac/index.md %})
+{: .dotless }
+  </div>
+  <div class="grid__col grid__col--1-of-2" markdown="1">
+###### National Groups
+
+- [National States Geographic Information Council (NGSIC)](https://nsgic.org)
+{: .dotless }
+  </div>
 </div>
 
 ## Recent Customers and Partners
