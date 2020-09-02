@@ -72,32 +72,32 @@ AGRC is funded through a combination of State general and restricted funds and c
 ## GIS Organizations & Affiliates
 
 <div class="grid" markdown="1">
-  <div class="grid__col grid__col--1-of-2" markdown="1">
-###### Utah Statewide GIS User Group
+  <div class="grid__col grid__col--1-of-1" markdown="1">
+### Statewide
 
-- [Utah Geographic Information Council website](http://ugic.info)
-- [Annual UGIC Maps on the Hill event info]({% link about/maps-on-the-hill/index.md %})
+- [Utah Geographic Information Systems Advisory Council (GISAC)]({% link about/gisac/index.md %})
+  - GISAC is composed of individuals from many state agencies all working together to further the cause of GIS in Utah. AGRC is trying to create a forum in which all levels of GIS expertise can mingle, learn from each other, and learn of each other's challenges. GISAC also sends recommendations to the CIO as potential rules or recommendations that would enhance GIS coordination and cooperation throughout Utah.
+  {: .dotless }
+- [Utah Geographic Information Council (UGIC)](https://ugic.org)
+  - UGIC is a nonprofit organization whose mission is to lead the effective application of geographic information in Utah. It is their vision to provide a modern, accurate, documented, and accessible geospatial information infrastructure for all of Utah.
+  {: .dotless }
 {: .dotless }
   </div>
   <div class="grid__col grid__col--1-of-2" markdown="1">
-###### Utah's Local GIS User Groups
+### Local
 
 - [Salt Lake User Group (SLUG)](http://www.slug-gis.info/)
-- [Other Local level GIS User Group info]({% link about/organizations/user-groups/index.md %})
-- [National States Geographic Information Council (NGSIC)](https://nsgic.org)
+  - SLUG brings together GIS practitioners in the core of the urbanized Wasatch Front with interesting presentations and discussions about GIS.
+  {: .dotless }
+- [Other local level GIS User Group info]({% link about/organizations/user-groups/index.md %})
 {: .dotless }
   </div>
   <div class="grid__col grid__col--1-of-2" markdown="1">
-###### Utah Geographic Information Systems Advisory Council (GISAC)
+### National
 
-- GISAC is composed of individuals from many state agencies.  We are all working together to further the cause of GIS in Utah.  AGRC is trying to create a forum in which all levels of GIS expertise can mingle and learn from each other and learn of each other's challenges. GISAC also sends recommendations to the CIO as potential rules or recommendations that would enhance GIS coordination and cooperation throughout Utah.
-- [Learn more]({% link about/gisac/index.md %})
-{: .dotless }
-  </div>
-  <div class="grid__col grid__col--1-of-2" markdown="1">
-###### National Groups
-
-- [National States Geographic Information Council (NGSIC)](https://nsgic.org)
+- [National States Geographic Information Council (NSGIC)](https://nsgic.org)
+  - NSGIC promotes the coordinated, impactful, and cost-efficient application of GIS and other location-based information and analytics to best serve the nation, with emphasis on the power of initiatives and public policy that connect across local, state, federal, and private sector partners.
+  {: .dotless }
 {: .dotless }
   </div>
 </div>
