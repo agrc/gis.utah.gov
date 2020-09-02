@@ -102,26 +102,3 @@ AGRC is funded through a combination of State general and restricted funds and c
   </div>
 </div>
 
-## Recent Customers and Partners
-
-_Some of the organizations that we have partnered with or worked for recently_
-{: .text-center }
-
-| [Blue Stakes of Utah](http://www.bluestakes.org/) | Brigham Young University | Bureau of Land Management |
-| Community Impact Board | Department of Agriculture & Food | DABC
-| Department of Commerce | Department of Corrections | [Department of Environmental Quality](https://deq.utah.gov) |
-| Department of Health | Department of Human Services | Department of Heritage & Arts |
-| [Department of Natural Resources](http://naturalresources.utah.gov) | Department of Public Safety | [Department of Transportation (UDOT)](http://udot.uplan.opendata.arcgis.com/) |
-| Department of Workforce Services | Federal Communications Commission | Governors Office of Economic Development |
-| Governors Office of Energy Development | Mountainland Association of Government | NENA |
-| [NSGIC](https://www.nsgic.org) | [NTIA](https://www.ntia.doc.gov/) | [Office of Legislative Research & General Counsel](https://le.utah.gov/lrgc/lrgc.htm) |
-| [openaddresses.org](https://openaddresses.io/) | Public Lands Policy & Coordination Office | Public Service Commission |
-| Questar Gas | Salt Lake City | Salt Lake County Surveyor |
-| [Trust Lands Administration (SITLA)](https://trustlands.utah.gov/resources/maps/) | [United States Geological Survey](https://www.usgs.gov/) | [University of Utah](http://www.geog.utah.edu/) |
-| [US Census Bureau](https://www.census.gov/geo/) | [US Library of Congress](http://www.digitalpreservation.gov/) | US Representative Jason Chaffetz |
-| US Representative Jim Matheson | US Representative Rob Bishop | US Senator Orrin Hatch |
-| [Utah 911 Advisory Committee](https://uca911.org/911-division) | [Utah Association of Counties](http://uacnet.org) | [Utah Communications Authority](https://uca911.org)|
-| [Utah Council of Land Surveyors](http://www.ucls.org/) | [Utah Education and Telehealth Network](http://uetn.org) | [Utah Geographic Information Council](http://ugic.info) |
-| Utah State Board of Regents | Utah State Elections Office | Utah State Legislature |
-| Utah State Tax Commission | Utah State University | Utah Transit Authority |
-| Utah Valley University | [Valley Emergency Communication Center](http://vecc9-1-1.com/) |
