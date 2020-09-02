@@ -9,7 +9,7 @@ title: Maps on the Hill 2015
 categories:
   - Featured
 ---
-<p>Maps on the Hill, supported by the <a href="http://www.ugic.info/">Utah Geographic Information Council</a> (UGIC) and AGRC, will be held on January 28, 2015. This event, in its fourth year, is a good opportunity for students and professionals to share maps, mapping tools, and mapping projects with elected officials, fellow practitioners, and the public.</p>
+<p>Maps on the Hill, supported by the <a href="https://ugic.org/">Utah Geographic Information Council</a> (UGIC) and AGRC, will be held on January 28, 2015. This event, in its fourth year, is a good opportunity for students and professionals to share maps, mapping tools, and mapping projects with elected officials, fellow practitioners, and the public.</p>
 <p><em>Who should participate:</em><br />
 Individuals: Anybody who makes a map through their work or education.<br />
 Organizations: An organization that has worked on multiple mapping projects.</p>
