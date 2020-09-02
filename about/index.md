@@ -102,3 +102,15 @@ AGRC is funded through a combination of State general and restricted funds and c
   </div>
 </div>
 
+### GIS Events
+
+- [Utah Geographic Information Council Annual Conference (UGIC)](https://ugic.org)
+  - The UGIC Conference is the premiere Utah GIS conference. It is a great way to meet local GIS professionals and stay current on what is happening with GIS trends.
+  {: .dotless }
+- [Annual UGIC Maps on the Hill (MOTH)]({% link about/maps-on-the-hill/index.md %})
+  - MOTH is an excellent opportunity for students and professionals to share maps, mapping tools, and mapping projects with elected officials, fellow practitioners, and the public.
+  {: .dotless }
+- GIS Day
+  - GIS Day showcases geospatial technologies to students to make them aware of the possibilities and capabilities of geographic information technologies and much more!
+  {: .dotless }
+{: .dotless }
