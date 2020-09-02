@@ -11,7 +11,7 @@ title: Come to Maps on the Hill 2014!
 categories:
   - Featured
 ---
-<p>Maps on the Hill is an annual event sponsored by <a href="http://ugic.info/">UGIC</a>, and held during the Utah legislative session as a means for professional and student mapmakers in Utah to share their maps with elected officials and the public. </p>
+<p>Maps on the Hill is an annual event sponsored by <a href="https://ugic.org/">UGIC</a>, and held during the Utah legislative session as a means for professional and student mapmakers in Utah to share their maps with elected officials and the public. </p>
 <p>When: Wednesday, January 29, 2014: Displays will be up from 10:30am-12:30pm<br />
 Where: Utah State Capitol Rotunda<br />
 What: Maps! Topics include public safety, natural resources, infrastructure & utilities, regional planning, emergency management, recreation, and transportation.</p>
