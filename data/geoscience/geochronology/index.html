@@ -19,6 +19,18 @@ Argon:
     item_id: de953b38d0df43468bb2b1947697a508
   updates:
     - August 2020
+Cosmogenic:
+  hub:
+    name: Utah Geochronology Cosmogenic 
+    item_id: 8c2f4e18e28a44af96d2f57d88dbd37c
+  updates:
+    - August 2020
+Fission Track:
+  hub:
+    name: Utah Geochronology Fission Track 
+    item_id: abfbd994faab4f8eb081bfb6b8532ce5
+  updates:
+    - August 2020
 Laboratory:
   downloads:
     - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mV0wwbDRsVG5UdGs&export=download
@@ -31,6 +43,30 @@ Luminescense:
   hub:
     name: Utah Geochronology Luminescence
     item_id: 3c3d19ed6a4c43ec8fb5d02d1dde37d4
+  updates:
+    - August 2020
+Rubidium Strontium:
+  hub:
+    name: Utah Geochronology Rubidium Strontium
+    item_id: 80cf8b453d844b098b29c6893e2561ee
+  updates:
+    - August 2020
+Tephrochronology:
+  hub:
+    name: Utah Geochronology Tephrochronology
+    item_id: 072d914fe370424680a353fce76a58a8
+  updates:
+    - August 2020
+Tritium:
+  hub:
+    name: Utah Geochronology Tritium
+    item_id: e0dd473d86e54aaca69f36c28acbaba3
+  updates:
+    - August 2020
+Uranium Thorium Lead:
+  hub:
+    name: Utah Geochronology Uranium Thorium Lead
+    item_id: fbfad28f761b4d1f8918178a31c3bd5e
   updates:
     - August 2020
 Project:
@@ -53,7 +89,7 @@ The Utah Geochronology Database contains ages and related dating information of 
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/argon.png %}" alt="Argon" />
-    <p>Argon: Argon–Argon (40Ar/39Ar) dating is a relative radiometric dating method that relies on neutron irradiation from a nuclear reactor to convert a stable form of potassium (39K) into the radioactive 39Ar, is primarily used on metamorphic and igneous minerals, and generally replaces the older potassium-argon (K/Ar) method.  The Geoscience.GeochronArgon data layer represents the argon (40Ar/39Ar) dating data in the Utah Geochronology Database.</p>
+    <p>Argon: Argon–Argon (40Ar/39Ar) dating is a relative radiometric dating method that relies on neutron irradiation from a nuclear reactor to convert a stable form of potassium (39K) into the radioactive 39Ar, is primarily used on metamorphic and igneous minerals, and generally replaces the older potassium-argon (K/Ar) method.  The Utah Geochronology Argon feature layer represents the argon (40Ar/39Ar) dating data in the Utah Geochronology Database.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
@@ -68,10 +104,48 @@ The Utah Geochronology Database contains ages and related dating information of 
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
+    <h3 id="Cosmogenic">Cosmogenic</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/radio.png %}" alt="Cosmogenic" />
+    <p>Cosmogenic: Cosmogenic nuclide dating refers to a dating method that examines the interaction between cosmic rays and nuclides to provide an estimate of the age of a landform or rock surface. The Utah Geochronology Cosmogenic feature layer represents the cosmogenic dating data in the Utah Geochronology Database.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
+  </div>
+  {% include packagedata.html
+    name="Cosmogenic"
+    info=page.Cosmogenic
+  %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="FissionTrack">Fission Track</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/lum.png %}" alt="FissionTrack" />
+    <p>Fission Track: Fission Track dating is a radiometric dating technique that analyizes the damage of tracks/trails left by fission fragments from the decay of uranium-238. The Utah Geochronology Fission Track feature layer represents the fission track dating data in the Utah Geochronology Database.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
+  </div>
+  {% include packagedata.html
+    name="FissionTrack"
+    info=page.FissionTrack
+  %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
     <h3 id="Laboratory">Laboratory</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    Laboratory: The Geoscience.GeochronLaboratory table represents the laboratory-related data (facility performing the geochronologic dating) for each dating method data layer in the Utah Geochronology Database.</p>
+    Laboratory: The Utah Geochronology Laboratory table represents the laboratory-related data (facility performing the geochronologic dating) for each dating method data layer in the Utah Geochronology Database.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
@@ -88,7 +162,7 @@ The Utah Geochronology Database contains ages and related dating information of 
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/lum.png %}" alt="Luminesence" />
-    <p>Luminescence: Luminescence dating refers to a group of methods, including optically stimulated luminescence (OSL), infrared stimulated luminescence (IRSL), and thermoluminescence dating (TL), that determine how long ago mineral grains were last exposed to sunlight or sufficient heating.  It is commonly used by geologists and archaeologists to determine when that event occurred, such as surface fault rupture from an earthquake.  Optical dating typically refers to OSL and IRSL, but not TL.The Geoscience.GeochronLuminescence data layer represents the luminescence (OSL, IRSL, and TL) dating data in the Utah Geochronology Database.</p>
+    <p>Luminescence: Luminescence dating refers to a group of methods, including optically stimulated luminescence (OSL), infrared stimulated luminescence (IRSL), and thermoluminescence dating (TL), that determine how long ago mineral grains were last exposed to sunlight or sufficient heating.  It is commonly used by geologists and archaeologists to determine when that event occurred, such as surface fault rupture from an earthquake.  Optical dating typically refers to OSL and IRSL, but not TL. The Geochronology Luminescence feature layer represents the luminescence (OSL, IRSL, and TL) dating data in the Utah Geochronology Database.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
@@ -107,7 +181,7 @@ The Utah Geochronology Database contains ages and related dating information of 
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/projects.png %}" alt="Project" />
-    <p>Project: The Geoscience.GeochronProject table represents the project-related data (organization, principal investigator, etc.) for each dating method data layer in the Utah Geochronology Database</p>
+    <p>Project: The Utah Geochronology Project table represents the project-related data (organization, principal investigator, etc.) for each dating method data layer in the Utah Geochronology Database</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
@@ -126,7 +200,7 @@ The Utah Geochronology Database contains ages and related dating information of 
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/radio.png %}" alt="Radiocarbon" />
-    <p>Radiocarbon: Radiocarbon dating is a radiometric dating method for determining the age of an object containing organic material by using the properties of the radioactive isotope of carbon (14C).  Measurement of radiocarbon was originally performed using beta-counting devices, which counted the amount of beta radiation emitted by decaying 14C atoms in a sample.  Accelerator mass spectrometry (AMS) is now used, and counts all of the 14C atoms in the sample, and not just the few that happen to decay during the measurement interval and can be used with significantly smaller samples (such as individual plant seeds), and gives results more quickly.  The Geoscience.GeochronRadiocarbon data layer represents the radiocarbon (C or AMS) dating data in the Utah Geochronology Database.</p>
+    <p>Radiocarbon: Radiocarbon dating is a radiometric dating method for determining the age of an object containing organic material by using the properties of the radioactive isotope of carbon (14C). Measurement of radiocarbon was originally performed using beta-counting devices, which counted the amount of beta radiation emitted by decaying 14C atoms in a sample.  Accelerator mass spectrometry (AMS) is now used, and counts all of the 14C atoms in the sample, and not just the few that happen to decay during the measurement interval and can be used with significantly smaller samples (such as individual plant seeds), and gives results more quickly.  The Utah Geochronology Radiocarbon feature layer represents the radiocarbon (C or AMS) dating data in the Utah Geochronology Database.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
@@ -137,5 +211,81 @@ The Utah Geochronology Database contains ages and related dating information of 
   {% include packagedata.html
     name="Radiocarbon"
     info=page.Radiocarbon
+  %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="RubidiumStrontium">Rubidium Strontium</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/argon.png %}" alt="RubidiumStrontium" />
+    <p>Rubidium Strontium: Rubidium Strontium is a radiometric dating technique which analyzes the amount of rubidium and strontium isotopes contained in rocks. The Utah Geochronology Rubidium Strontium feature layer is also found in the Utah Geochronology Database.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
+  </div>
+  {% include packagedata.html
+    name="RubidiumStrontium"
+    info=page.RubidiumStrontium
+  %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Tephrochronology">Tephrochronology</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/lum.png %}" alt="Tephrochronology" />
+    <p>Tephrochronology: Tephrochronology is a dating technique that uses distinct layers of volcanic ash to create a geochronology in which objects or events can be dated relatively to the ash stratigraphy.  The Utah Geochronology Tephrochronology feature layer represents the tephrochronology dating data in the Utah Geochronology Database.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
+  </div>
+  {% include packagedata.html
+    name="Tephrochronology"
+    info=page.Tephrochronology
+  %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Tritium">Tritium</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/radio.png %}" alt="Tritium" />
+    <p>Tritium: Tritium is a dating technique that uses the decay of the radioactive isotope of hydrogen. The Utah Geochronology Tritium feature layer represents the tritium dating data in the Utah Geochronology Database.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
+  </div>
+  {% include packagedata.html
+    name="Tritium"
+    info=page.Tritium
+  %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UraniumThoriumLead">Uranium Thorium Lead</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/argon.png %}" alt="UraniumThoriumLead" />
+    <p>Uranium Thorium Lead: Uranium Thorium Lead is a radiometric dating technique used to determine the ages of calcium carbonate materials. The Utah Geochronology Uranium Thorium Lead feature layer represents the uranium thorium lead dating data in the Utah Geochronology Database.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://geology.utah.gov/apps/geochron/">Utah Geochronology Database</a>
+    </ul>
+    <p></p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geochronology %}</p>
+  </div>
+  {% include packagedata.html
+    name="UraniumThoriumLead"
+    info=page.UraniumThoriumLead
   %}
 </div>
