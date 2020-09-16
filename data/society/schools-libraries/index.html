@@ -16,6 +16,12 @@ SchoolsPreKto12:
     item_id: 333206ff129346e3b8660e8f6f48540e
   updates:
     - August 2020
+SchoolsHigherEducation:
+  hub:
+    name: Utah Schools Higher Education 
+    item_id: 731644a217f445e5a638f9a84a7ada93
+  updates:
+    - September 2020
 Libraries:
   downloads:
     - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdEZiSUxHM3NJajA&export=download
@@ -43,7 +49,7 @@ abstract="This data package contains a statewide schools dataset and a statewide
     <p>This dataset contains point locations for preschool and K-12 schools in the state of Utah - updated for the 2019-2020 school year. Higher education and adult vocational training are not included in the dataset.</p>
     <p>The <code>Schools_PreKto12</code> dataset was built in collaboration with <a href="https://wfrc.org/">Wasatch Front Regional Council</a> (WFRC), the <a href="https://schools.utah.gov/">Utah State Board of Education</a> (USBE), and the <a href="{% link index.html %}">Utah Automated Geographic Reference Center</a> (AGRC). The dataset includes public and private K-12 school locations with enrollment and demographics info by grade for public schools (charter and traditional) reported to the USBE. While some preschools are included, this is not a comprehensive statewide dataset for preschools.</p>
     <p>Schools marked as 'closed' have not been included in this data. More information regarding schools in Utah can be found on the <a href="https://schools.utah.gov/">Utah State Board of Education website</a>.</p>
-    <p>The <code>Schools_PreKto12</code> will be updated annually in conjunction with USBE’s <a href="https://schools.utah.gov/data/reports">annual report</a> cycle.</p>    
+    <p>The <code>Schools_PreKto12</code> will be updated annually in conjunction with USBE’s <a href="https://schools.utah.gov/data/reports">annual report</a> cycle.</p>
     <h5>Methodology</h5>
     <ul class="dotless">
       <li>Tabular Data</li>
@@ -95,6 +101,37 @@ abstract="This data package contains a statewide schools dataset and a statewide
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="SchoolsPreKto12" info=page.SchoolsPreKto12 %}
+</div>
+<div class="grid package">
+    <div class="grid__col grid__col--12-of-12">
+        <h3 id="SchoolsHigherEducation">Schools (Higher Education)</h3>
+    </div>
+    <div class="grid__col grid__col--12-of-12 package-content">
+        <img class="inline-text-left outline" src="{% link images/Schools.png %}" alt="SchoolsHigherEducation" />
+        <p>This dataset contains point locations for higher education and adult vocational training in the state of Utah. This includes public and private colleges and universities, technical colleges, and other higher education institutions.</p>
+        <p>The <code>Schools_HigherEducation</code> will be updated annually and/or as needed.</p>
+        <h5>Methodology</h5>
+        <p>Institutions of higher education were identified on the state of Utah's <a href="https://www.utah.gov/education/colleges.html">college and universities</a> page. Using the websites of these institutions, addresses were identified for primary and branch campuses and geocoded using the <a href="http://api.mapserv.utah.gov/#geocoding">AGRC Geocoding Web API</a>.</p>
+        <h5>Fields Worth Noting</h5>
+        <ul class="dotless">
+            <li>SchoolType
+                <ul>
+                    <li>Public College or University</li>
+                    <li>Private College or University</li>
+                    <li>Other Institution</li>
+                    <li>Technical College</li>
+                </ul>
+            </li>
+            <li>CampusType
+                <ul>
+                    <li>Branch</li>
+                    <li>Primary</li>
+                </ul>
+            </li>
+        </ul>
+        <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+    </div>
+    {% include packagedata.html name="SchoolsHigherEducation" info=page.SchoolsHigherEducation %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
