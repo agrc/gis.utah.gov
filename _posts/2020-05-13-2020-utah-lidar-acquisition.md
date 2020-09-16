@@ -1,9 +1,10 @@
 ---
-title: '2019 and 2020 Utah Aerial Lidar Acquisition'
+title: '2019 and 2020 Utah Aerial Lidar Acquisition - Updated'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 date: 2020-05-13 12:10:00
+update_date: 2019-09-16 18:17:41
 categories:
 - Featured
 tags:
@@ -11,13 +12,13 @@ tags:
 - 3dep
 ---
 
-AGRC has awarded Aero-Graphics, Inc. and The Sanborn Map Company, Inc. to acquire [**20,958 square miles**](https://arcg.is/08W4bS "view project areas in ArcGIS Online") of aerial lidar elevation data. The lidar will be a combination of USGS Quality Level 1 (_QL1_), 8 points per square meter and Quality Level 2 (_QL2_), 2 points per square meter depending on the area. The 2019 QL2 project covering portions of Kane County, Utah was acquired last fall, is going through USGS Quality Assurance, and is scheduled to be completed by June 30, 2020. (_Due to Covid-19 related setbacks deliverables should be available by November 2020._) The 2020 acquisitions have begun and will continue throughout the year. These project areas will be completed in 2021 and project deliverables are scheduled to be completed by June 30, 2021.
+AGRC has awarded Aero-Graphics, Inc. and The Sanborn Map Company, Inc. to acquire [**26,036 square miles**](https://arcg.is/08W4bS "view project areas in ArcGIS Online") of aerial lidar elevation data. The lidar will be a combination of USGS Quality Level 1 (_QL1_), 8 points per square meter and Quality Level 2 (_QL2_), 2 points per square meter depending on the area. The 2019 QL2 project covering portions of Kane County, Utah was acquired last fall, is going through USGS Quality Assurance, and is scheduled to be completed by June 30, 2020. (_Due to Covid-19 related setbacks deliverables should be available by November 2020._) The 2020 acquisitions have begun and will continue throughout the year. These project areas will be completed in 2021 and project deliverables are scheduled to be completed by June 30, 2021.
 
 The Federal Emergency Management Agency, the U.S. Forest Service, and the U.S. Geological Survey (USGS) National Map 3D Elevation Program (3DEP) are also acquiring [**13,681 square miles**](https://arcg.is/08W4bS "view project areas in ArcGIS Online") of aerial lidar in Utah this year. The lidar will mostly be QL2, with a few small areas as QL1. The acquisitions will begin in the fall of 2020 and project deliverables are scheduled to be completed by June 30, 2022.
 
 You are welcome to download the boundaries for all the project areas as a [shapefile](https://drive.google.com/a/utah.gov/uc?id=1-oxmHxLEDPAhM2SKKKh_Df8Pa0iUWKvD&export=download).
 
-[![Project area map]({% link images/2020UtahLidarAcquisition_5_17_20_sm.png %} "view project area map")]({% link images/2020UtahLidarAcquisition_5_17_20.png %}){:.inline-text-right}
+[![Project area map]({% link images/2020UtahLidarAcquisition_9_16_20_sm.png %} "view project area map")]({% link images/2020UtahLidarAcquisition_9_16_20.png %}){:.inline-text-right}
 
 ### The Project Areas Include
 {: .text-left }
