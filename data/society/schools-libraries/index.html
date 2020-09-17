@@ -103,35 +103,37 @@ abstract="This data package contains a statewide schools dataset and a statewide
   {% include packagedata.html name="SchoolsPreKto12" info=page.SchoolsPreKto12 %}
 </div>
 <div class="grid package">
-    <div class="grid__col grid__col--12-of-12">
-        <h3 id="SchoolsHigherEducation">Schools (Higher Education)</h3>
-    </div>
-    <div class="grid__col grid__col--12-of-12 package-content">
-        <img class="inline-text-left outline" src="{% link images/Schools.png %}" alt="SchoolsHigherEducation" />
-        <p>This dataset contains point locations for higher education and adult vocational training in the state of Utah. This includes public and private colleges and universities, technical colleges, and other higher education institutions.</p>
-        <p>The <code>schools_higher_education</code> will be updated annually and/or as needed.</p>
-        <h5>Methodology</h5>
-        <p>Institutions of higher education were identified on the state of Utah's <a href="https://www.utah.gov/education/colleges.html">college and universities</a> page. Using the websites of these institutions, addresses were identified for primary and branch campuses and geocoded using the <a href="http://api.mapserv.utah.gov/#geocoding">AGRC Geocoding Web API</a>.</p>
-        <h5>Fields Worth Noting</h5>
-        <ul class="dotless">
-            <li>SchoolType
-                <ul>
-                    <li>Public College or University</li>
-                    <li>Private College or University</li>
-                    <li>Other Institution</li>
-                    <li>Technical College</li>
-                </ul>
-            </li>
-            <li>CampusType
-                <ul>
-                    <li>Branch</li>
-                    <li>Primary</li>
-                </ul>
-            </li>
-        </ul>
-        <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
-    </div>
-    {% include packagedata.html name="SchoolsHigherEducation" info=page.SchoolsHigherEducation %}
+  <div class="grid__col grid__col--12-of-12">
+      <h3 id="SchoolsHigherEducation">Schools (Higher Education)</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+      <img class="inline-text-left outline" src="{% link images/Schools.png %}" alt="SchoolsHigherEducation" />
+      <p>This dataset contains point locations for higher education and adult vocational training in the state of Utah. This includes public and private colleges and universities, technical colleges, and other higher education institutions.</p>
+      <p>The <code>schools_higher_education</code> will be updated annually and/or as needed.</p>
+      <h5>Methodology</h5>
+      <ul class="dotless">
+      <p>Institutions of higher education were identified on the state of Utah's <a href="https://www.utah.gov/education/colleges.html">college and universities</a> page. Using the websites of these institutions, addresses were identified for primary and branch campuses and geocoded using the <a href="http://api.mapserv.utah.gov/#geocoding">AGRC Geocoding Web API</a>.</p>
+      </ul>
+      <h5>Fields Worth Noting</h5>
+      <ul class="dotless">
+          <li>SchoolType
+              <ul>
+                  <li>Public College or University</li>
+                  <li>Private College or University</li>
+                  <li>Other Institution</li>
+                  <li>Technical College</li>
+              </ul>
+          </li>
+          <li>CampusType
+              <ul>
+                  <li>Branch</li>
+                  <li>Primary</li>
+              </ul>
+          </li>
+      </ul>
+      <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html name="SchoolsHigherEducation" info=page.SchoolsHigherEducation %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
