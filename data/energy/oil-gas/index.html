@@ -7,23 +7,14 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-18 15:48:42 -0700
-title: Oil and Gas
 categories: []
 OilandGasWells:
-  downloads:
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mbUV5Q0R5YWRPdEE
-      label: 'Oil and Gas Wells: File Geodatabase'
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mM2hOYmF4ZENpNVE
-      label: 'Oil and Gas Wells: Shapefile'
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mMTJKTEpXRWxvRm8
-      label: Oil and Gas Well Drill Paths (Horizontally Drilled)
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mQzM0aWpmNGlSQ0k
-      label: Oil and Gas Wells Locations (Horizontally Drilled)
+  hub:
+    org: utahDNR
+    name: utah oil and gas well locations
+    item_id: b2d4366fce8d449192b3a0a314bea48e
   updates:
     - Nightly
-  endpoints:
-    - url: https://utahdnr.maps.arcgis.com/home/item.html?id=b2d4366fce8d449192b3a0a314bea48e
-      label: ArcGIS Online Feature Layer
 OilandGasFields:
   downloads:
     - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdm9kUnpGdTZHbk0&export=download
@@ -40,18 +31,18 @@ OilandGasFields:
   <img class="caption__image" src="{% link images/utah-oil-and-gas-wells.png %}" alt="Oil and Gas Wells" />
   <figcaption class="caption__text">Oil and Gas Wells</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mS2c2djl3c2d6ZWs"
+{% include abstract.html
 name="Oil and Gas"
 stewards="AGRC & DNR-OGM"
 webapp="https://datamining.ogm.utah.gov/"
-abstract="These datasets depict oil and gas well surface points, units and fields polygons from the <a href='https://www.ogm.utah.gov/'>Utah Department of Natural Resources, Oil, Gas and Mining Division</a>. <strong>Note:</strong> On June 1, 2017, the Utah Division of Oil, Gas and Mining retired 5 old databases and went online with a new database. This prompted many changes to the data field names and content previously provided in the AGRC files. This new database was developed by contractors sponsored in part by the U.S. Department of Energy and the Ground Water Protection Council and provides the opportunity for the Division to collect more descriptive down-hole information for each wellbore permitted and drilled. Initially, much of the down-hole information will not be available because there was no place to save it in the previous databases. Eventually, as new wells are drilled and old legacy data is entered, more descriptive data will become available for the wells in Utah." %}
+abstract="These datasets depict oil and gas well surface points, units and fields polygons from the <a href='https://www.ogm.utah.gov/'>Utah Department of Natural Resources, Oil, Gas and Mining Division</a>. This data was developed by contractors sponsored in part by the U.S. Department of Energy and the Ground Water Protection Council and provides the opportunity for the Division to collect more descriptive down-hole information for each wellbore permitted and drilled. Initially, much of the down-hole information will not be available because there was no place to save it in the previous databases. Eventually, as new wells are drilled and old legacy data is entered, more descriptive data will become available for the wells in Utah." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="OilandGasWells">Oil and Gas Wells</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/utah-oil-gas-wells-small.png %}" alt="Oil Wells" />
-    <p>This dataset depicts oil and gas well points in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The dataset contains the API code, well and company name, account number, filed number, field name, elevation, locations coordinates, lease numbers, well type and status, total cumulative oil, gas and water, and more. The path (OilGasWells_Paths) and down holes (OilGasWells_DownHoles) for horizontally-drilled wells are available as a separate feature classes.</p>
+    <p>This dataset depicts oil and gas well points in Utah from the Utah Department of Natural Resources, Oil Gas and Mining Division. The dataset contains the API code, well and company name, account number, filed number, field name, elevation, locations coordinates, lease numbers, well type and status, total cumulative oil, gas and water, and more.</p>
     <table>
       <thead>
         <tr>
@@ -219,12 +210,13 @@ abstract="These datasets depict oil and gas well surface points, units and field
     <p>There are no constraints or warranties with regard to the use of this dataset.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
+      <li><a href="https://opendata.gis.utah.gov/datasets/utahDNR::utah-oil-and-gas-well-bottom-hole-locations">Utah Oil and Gas Well Bottom Hole Locations</a></li>
+      <li><a href="https://opendata.gis.utah.gov/datasets/utahDNR::utah-oil-and-gas-wells-paths">Utah Oil and Gas Well Paths</a></li>
       <li><a href="https://oilgas.ogm.utah.gov/oilgasweb/live-data-search/lds-well/well-main.xhtml">More information on well data from DNR - DOGM</a></li>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.oil_wells %}</p>
   </div>
-  {% include packagedata.html name="OilandGasWells"
-  info=page.OilandGasWells %}
+  {% include packagedata.html name="OilandGasWells" info=page.OilandGasWells %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -235,8 +227,7 @@ abstract="These datasets depict oil and gas well surface points, units and field
     <p>This dataset depicts oil and gas field polygons in Utah from the Utah Division of Oil, Gas and Mining. The dataset contains the field number, field name, status and more.</p>
     <p>Contact <a href="https://oilgas.ogm.utah.gov/oilgasweb/contact-us/contact-us-main.xhtml">the Utah Division of Oil, Gas and Mining</a> with any questions.</p>
   </div>
-  {% include packagedata.html name="OilandGasFields"
-  info=page.OilandGasFields %}
+  {% include packagedata.html name="OilandGasFields" info=page.OilandGasFields %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
