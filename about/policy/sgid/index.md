@@ -29,6 +29,8 @@ Datasets requested to be added to the SGID by a state or local agency or organiz
 
 We will periodically review the SGID for datasets that no longer meet these criteria. Specifically, we may consider removing datasets that see little to no usage for a prolonged period of time.
 
+You can still share datasets that don't meet the guidelines above with our [Open Data site](https://opendata.gis.utah.gov/). This is a great way to share data mainly intended for the general public with a wide audience. Please see our [Open Data sharing guidelines]({%link gis-data-sharing/open-data/index.md %}) for more information.
+
 ### Dataset Introduction Process
 {: .text-left }
 
