@@ -75,7 +75,7 @@ We remove datasets from the SGID geodatabase that are no longer current but do h
 ### Dates in Table Names
 {: .text-left }
 
-Dates are acceptable in table names when content belongs in either the `census`, `political`, or `tax` ISO categories. For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active. This implies that the **most current and relevant** data contains **no date suffix**. Historical or future data _will_ contain a date suffix to help identification at a glance. The best way to learn about a dataset is to view the data page metadata.
+Dates are acceptable in table names when content belongs in either the `census`, `political`, or `tax` ISO categories to identify datasets where the most current data may not reflect the current calendar year. For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active. This implies that the **most current and relevant** data contains **no date suffix**. Historical or future data _will_ contain a date suffix to help identification at a glance. The best way to learn about a dataset is to view the data page metadata.
 
 ## Updating and Editing Existing Datasets
 {: .text-left }
