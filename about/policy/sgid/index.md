@@ -70,14 +70,14 @@ All datasets in the SGID geodatabase are synced nightly with the [OpenSGID]({% l
 ### Shelved Data
 {: .text-left }
 
-SGID datasets that are no longer current but are of historical value (such as older Census/ACS data or previous arrangements of tax district boundaries) are removed from the SGID geodatabase. Their hosted feature services are placed in the "AGRC Shelf" ArcGIS Online group for future reference.
+We remove datasets from the SGID geodatabase that are no longer current but do have historical value (such as older Census/ACS data or previous arrangements of tax district boundaries). Their hosted feature services are tagged as `shelved` and placed in the public "AGRC Shelf" ArcGIS Online group for future reference.
 
 ### Dates in Table Names
 {: .text-left }
 
 Dates are acceptable in table names when content belongs in either the `census`, `political`, or `tax` ISO categories. For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active. This implies that the **most current and relevant** data contains **no date suffix**. Historical or future data _will_ contain a date suffix to help identification at a glance. The best way to learn about a dataset is to view the data page metadata.
 
-## Updating and Editing Existing Tables
+## Updating and Editing Existing Datasets
 {: .text-left }
 
 No edits will be made to the internal SGID from 7:00PM to 10:00AM MST to allow for automated scripts to push accurate updates to ArcGIS Online and ArcGIS Server. AGRC will ensure that data is production-ready before the editing windows ends.
@@ -86,11 +86,11 @@ All database updates will be done during the editing window using [Swapper](http
 
 All data updates being pushed into the SGID will have removed empty geometries and duplicate records with [Sweeper](https://github.com/agrc/sweeper) or another automated process.
 
-All edits made to the internal SGID will be captured in `Last update date` in the metadata, in the [SGID Update log](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=0), and as an update on the AGRC website data page.
+All edits made to the internal SGID will be captured in the `Last update date` in the metadata, in the [SGID Update log](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=0), and as an update on the AGRC website data page.
 
 If making a schema change, please consider updating any domain descriptions that do not match the domain value. See this [document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) to learn more about this effort.
 
-## Removing SGID Products
+## Removing SGID Datasets
 {: .text-left }
 
 When deprecating data or services in the SGID, please follow the steps outlined in the [Porter](https://github.com/agrc/porter) project.
