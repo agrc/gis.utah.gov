@@ -17,7 +17,7 @@ The following policies apply to data in the internal SGID Enterprise Geodatabase
 
 We strive to achieve and maintain a high standard of quality for the SGID. One of the best ways to do this is making sure all datasets coming into the SGID are high-quality datasets. We use the following policies and procedures to guide this effort.
 
-### Qualifying datasets
+### Qualifying Datasets
 {: .text-left }
 
 Datasets requested to be added to the SGID by a state or local agency or organization should meet all the following criteria:
