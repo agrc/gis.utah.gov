@@ -10,16 +10,31 @@ categories: []
 date: 2019-12-04 10:01:27 -0500
 ---
 
-The following applies to data in the internal SGID database.
+The following policies apply to data in the internal SGID Enterprise Geodatabase.
 
-## Adding New Tables
+## Adding New Datasets to the SGID
 {: .text-left }
 
-When adding new data to the SGID, the steps outlined in the [Porter](https://github.com/agrc/porter) project will be followed.
+We strive to achieve and maintain a high standard of quality for the SGID. One of the best ways to do this is making sure all datasets coming into the SGID are high-quality datasets. We use the following policies and procedures to guide this effort.
 
-Additional, related info:
+### Qualifying datasets
+{: .text-left }
 
-A corresponding record to the [Data Stewardship spreadsheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1) will be added, and will contain at a minimum:
+Datasets requested to be added to the SGID by a state or local agency or organization should meet all the following criteria:
+
+- The dataset should cover a **state-wide** geographic extent, be part of a state-wide project or initiative (such as roads, address points, and parcels), or be relevant to broader projects or mandates that have a state-wide interest (hazard mapping or endangered species mapping).
+- The dataset should be useful to the daily activities of **multiple agencies** or organizations. Datasets primarily used internally by a single agency don't belong in the SGID.
+- The entity providing the dataset should be the **authoritative** or original source (for example, a county's parcels must come from the County government).
+- The entity providing the dataset does not have the **ability** to publicly share data (such as an existing ArcGIS Online organization). An entity's data storage costs or server capacity may not be sufficient justification for adding data to the SGID.
+
+We will periodically review the SGID for datasets that no longer meet these criteria. Specifically, datasets that see little to no usage for a prolonged period of time will be considered for removal.
+
+### Dataset Introduction Process
+{: .text-left }
+
+We use the [Porter](https://github.com/agrc/porter) project to outline and track the steps needed to add data to the SGID. A brief overview of these steps is included below.
+
+We will add a corresponding record to the [Data Stewardship spreadsheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1). This will contain at a minimum:
 
 - The authoritative access from location
 - The table name
@@ -29,33 +44,45 @@ A corresponding record to the [Data Stewardship spreadsheet](https://docs.google
 - A link the the data page on the AGRC website
 - A link to the SGID Open Data page
 
-The ArcGIS Online Item will reside in the corresponding ISO category folder and contain the appropriate tags. If the data is authoritative, it will be marked as `authoritative`. If the data does not receive updates, it will be tagged as `static`. If the data has historical relevance **but is not the most recent data** it will be tagged as `shelved`. Note: the [AGOL Validator](https://github.com/agrc/agol-validator) project will transfer metadata from the Internal SGID database, including summary, description, and use limitations.
+We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding ISO category folder and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`. We don't anticipate some datasets ever receiving updates, such as the boundary lines for adjacent counties in the surrounding states. These datasets will only exist in ArcGIS Online and will be tagged as `static`.
 
-If the data is shared with the [SGID Open Data](https://opendata.gis.utah.gov/), it will have the enable multiple formats download option selected to allow for File Geodatabases and other non default downloads.
+The [Auditor](https://github.com/agrc/auditor) project will regularly evaluate and update the ArcGIS Online item's information (tags, thumbnail, title, etc) based off of information from a separate table and from the SGID. It will also update the ArcGIS Online item's metadata from the SGID's geodatabase.
 
-The [minimum metadata content]({% link about/policy/metadata/index.md %}) will be populated. When creating new metadata, it is recommended that you use the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit).
+If the dataset is shared with our [Open Data site](https://opendata.gis.utah.gov/), we will enable the multiple formats download option in the ArcGIS Online item page to allow users to download File Geodatabases and other non default download options.
 
-All empty geometries and duplicate records will be removed, with [Sweeper](https://github.com/agrc/sweeper) or some other form of automation.
+We will populate the [minimum metadata content]({% link about/policy/metadata/index.md %}) in the SGID geodatabase. We recommended that you use the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit) to create new metadata for the SGID.
 
-All new database domains will comply with the rule stating, domain values must match domain descriptions. See the [domain document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) for more information on this effort.
+The domain values for any new database domains must match domain their descriptions. See the [domain document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) for more information on this effort.
 
-The ESRI default Resolution and Tolerance will be used.
+We will use [Sweeper](https://github.com/agrc/sweeper) (or some other form of automation) to remove all empty geometries and duplicate records.
+
+The SGID uses the ESRI default Resolution and Tolerance:
 
 - XY Resolution: 0.0001 Meter
 - XY Tolerance: 0.001 Meter
 
 
+### OpenSGID
+{: .text-left }
+
+All datasets in the SGID geodatabase are synced nightly with the [OpenSGID]({% link sgid/open-sgid/index.md %}) cloud-hosted PostGIS database. This open standards-centric database is accessible to anyone with an internet connection.
+
+### Shelved Data
+{: .text-left }
+
+SGID datasets that are no longer current but are of historical value (such as older Census/ACS data or previous arrangements of tax district boundaries) are removed from the SGID geodatabase. Their hosted feature services are placed in the "AGRC Shelf" ArcGIS Online group for future reference.
+
 ### Dates in Table Names
 {: .text-left }
 
-Dates are acceptable in table names when content is related to either `census`, `political`, or `tax` ISO categories. For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active. This implies that the **most current and relevant** data contains **no date suffix**. Historical or future data _will_ contain a date suffix to help identification at a glance. The best way to learn about a dataset is to view the data page metadata.
+Dates are acceptable in table names when content belongs in either the `census`, `political`, or `tax` ISO categories. For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active. This implies that the **most current and relevant** data contains **no date suffix**. Historical or future data _will_ contain a date suffix to help identification at a glance. The best way to learn about a dataset is to view the data page metadata.
 
 ## Updating and Editing Existing Tables
 {: .text-left }
 
 No edits will be made to the internal SGID from 7:00PM to 10:00AM MST to allow for automated scripts to push accurate updates to ArcGIS Online and ArcGIS Server. AGRC will ensure that data is production-ready before the editing windows ends.
 
-All database updates will be done during the editing window using [swapper](https://github.com/agrc/swapper) or some other automated process to reduce the amount of time with incomplete data. 
+All database updates will be done during the editing window using [Swapper](https://github.com/agrc/swapper) or some other automated process to reduce the amount of time with incomplete data.
 
 All data updates being pushed into the SGID will have removed empty geometries and duplicate records with [Sweeper](https://github.com/agrc/sweeper) or another automated process.
 
