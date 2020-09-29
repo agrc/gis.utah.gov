@@ -1,5 +1,5 @@
 ---
-title: SGID Database Policy
+title: SGID Database Policies
 author:
   display_name: AGRC Office
   email: agrc@utah.gov
@@ -27,7 +27,7 @@ Datasets requested to be added to the SGID by a state or local agency or organiz
 - The entity providing the dataset should be the **authoritative** or original source (for example, a county's parcels must come from the County government).
 - The entity providing the dataset does not have the **ability** to publicly share data (such as an existing ArcGIS Online organization). An entity's data storage costs or server capacity may not be sufficient justification for adding data to the SGID.
 
-We will periodically review the SGID for datasets that no longer meet these criteria. Specifically, datasets that see little to no usage for a prolonged period of time will be considered for removal.
+We will periodically review the SGID for datasets that no longer meet these criteria. Specifically, we may consider removing datasets that see little to no usage for a prolonged period of time.
 
 ### Dataset Introduction Process
 {: .text-left }
@@ -60,7 +60,6 @@ The SGID uses the ESRI default Resolution and Tolerance:
 
 - XY Resolution: 0.0001 Meter
 - XY Tolerance: 0.001 Meter
-
 
 ### OpenSGID
 {: .text-left }
