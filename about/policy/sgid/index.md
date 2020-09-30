@@ -50,7 +50,7 @@ We will create a hosted feature service of the dataset in our ArcGIS Online orga
 
 The [Auditor](https://github.com/agrc/auditor) project will regularly evaluate and update the ArcGIS Online item's information (tags, thumbnail, title, etc) based off of information from a separate table and from the SGID. It will also update the ArcGIS Online item's metadata from the SGID's geodatabase.
 
-If the dataset is shared with our [Open Data site](https://opendata.gis.utah.gov/), we will enable the multiple formats download option in the ArcGIS Online item page to allow users to download File Geodatabases and other non default download options.
+If the dataset is shared with our [Open Data site](https://opendata.gis.utah.gov/), we will enable the multiple formats download option in the ArcGIS Online item page to allow users to download File Geodatabases and other non-default download options.
 
 We will populate the [minimum metadata content]({% link about/policy/metadata/index.md %}) in the SGID geodatabase. We recommended that you use the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit) to create new metadata for the SGID.
 
