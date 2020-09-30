@@ -46,7 +46,7 @@ We will add a corresponding record to the [Data Stewardship spreadsheet](https:/
 - A link the the data page on the AGRC website
 - A link to the SGID Open Data page
 
-We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding ISO category folder and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`. We don't anticipate some datasets ever receiving updates, such as the boundary lines for adjacent counties in the surrounding states. These datasets will only exist in ArcGIS Online and will be tagged as `static`.
+We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding ISO category folder and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`. We anticipate some datasets won't receive future updates, such as the boundary lines for adjacent counties in the surrounding states. These datasets will only exist in ArcGIS Online and will be tagged as `static`.
 
 The [Auditor](https://github.com/agrc/auditor) project will regularly evaluate and update the ArcGIS Online item's information (tags, thumbnail, title, etc) based off of information from a separate table and from the SGID. It will also update the ArcGIS Online item's metadata from the SGID's geodatabase.
 
