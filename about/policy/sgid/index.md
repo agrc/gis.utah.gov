@@ -56,7 +56,7 @@ We will populate the [minimum metadata content]({% link about/policy/metadata/in
 
 The domain values for any new database domains must match domain their descriptions. See the [domain document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) for more information on this effort.
 
-We will use [Sweeper](https://github.com/agrc/sweeper) (or some other form of automation) to remove all empty geometries and duplicate records.
+We will use [Sweeper](https://github.com/agrc/sweeper) (or some other form of automation) to remove all empty or invalid geometries and duplicate records.
 
 The SGID uses the ESRI default Resolution and Tolerance:
 
