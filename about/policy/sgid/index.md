@@ -54,7 +54,7 @@ If the dataset is shared with our [Open Data site](https://opendata.gis.utah.gov
 
 We will populate the [minimum metadata content]({% link about/policy/metadata/index.md %}) in the SGID geodatabase. We recommended that you use the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit) to create new metadata for the SGID.
 
-The domain values for any new database domains must match domain their descriptions. See the [domain document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) for more information on this effort.
+The domain values for any new database domains must match their corresponding descriptions. See the [domain document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) for more information on this effort.
 
 We will use [Sweeper](https://github.com/agrc/sweeper) (or some other form of automation) to remove all empty or invalid geometries and duplicate records.
 
