@@ -22,7 +22,7 @@ We strive to achieve and maintain a high standard of quality for the SGID. One o
 
 Datasets requested to be added to the SGID by a state or local agency or organization should meet all the following criteria:
 
-- The dataset should cover a **state-wide** geographic extent, be part of a state-wide project or initiative (such as roads, address points, and parcels), or be relevant to broader projects or mandates that have a state-wide interest (hazard mapping or endangered species mapping).
+- The dataset should cover a **state-wide** geographic extent, be part of a state-wide project or initiative (such as roads, address points, and parcels), or be relevant to broader projects or mandates that have a state-wide interest (e.g. geologic hazard mapping or endangered species mapping).
 - The dataset should be useful to the daily activities of **multiple agencies** or organizations. Datasets primarily used internally by a single agency don't belong in the SGID.
 - The entity providing the dataset should be the **authoritative** or original source (for example, a county's parcels must come from the County government).
 - The entity providing the dataset does not have the **ability** to publicly share data (such as an existing ArcGIS Online organization). An entity's data storage costs or server capacity may not be sufficient justification for adding data to the SGID.
