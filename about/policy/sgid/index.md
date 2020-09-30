@@ -20,7 +20,7 @@ We strive to achieve and maintain a high standard of quality for the SGID. We us
 ### Qualifying Datasets
 {: .text-left }
 
-Datasets requested to be added to the SGID by a state or local agency or organization should meet all the following criteria:
+Datasets should meet all the following criteria:
 
 - The dataset should cover a **state-wide** geographic extent, be part of a state-wide project or initiative (such as roads, address points, and parcels), or be relevant to broader projects or mandates that have a state-wide interest (e.g. geologic hazard mapping or endangered species mapping).
 - The dataset should be useful to **multiple agencies or organizations'** daily activities or decision-making. Datasets primarily used internally by a single agency aren't great candidates for the SGID.
