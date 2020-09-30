@@ -34,7 +34,7 @@ We will periodically review the SGID for datasets that no longer meet these crit
 ### Dataset Introduction Process
 {: .text-left }
 
-We use the [Porter](https://github.com/agrc/porter) project to outline and track the steps needed to add data to the SGID. A brief overview of these steps is included below.
+We will use the [Porter](https://github.com/agrc/porter) project to guide and track the steps needed to add or make breaking changes (remove, schema change, etc) to products contained in the SGID. A brief overview of these steps is included below.
 
 We will add a corresponding record to the [Data Stewardship spreadsheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1). This will contain at a minimum:
 
