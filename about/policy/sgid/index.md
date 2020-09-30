@@ -12,7 +12,7 @@ date: 2019-12-04 10:01:27 -0500
 
 The following policies apply to data in the internal SGID geodatabase, which is a curated database of state-wide datasets. It is maintained as an internal, AGRC-only Esri Enterprise Geodatabase and is available to everyone as the [Open SGID]({% link sgid/open-sgid/index.md %}) and as part of our [Open Data](https://opendata.gis.utah.gov) site.
 
-## Adding New Datasets to the SGID
+## Adding New Datasets to the SGID Geodatabase
 {: .text-left }
 
 We strive to achieve and maintain a high standard of quality for the SGID. We use the following policies and procedures to guide this effort.
@@ -66,7 +66,7 @@ The SGID uses the ESRI default Resolution and Tolerance:
 ### Open SGID
 {: .text-left }
 
-All datasets in the SGID geodatabase are synced nightly with the [OpenSGID]({% link sgid/open-sgid/index.md %}). This open standards-centric database is accessible to anyone with an internet connection.
+All datasets in the SGID geodatabase are synced nightly with the [Open SGID]({% link sgid/open-sgid/index.md %}). This open-standards-centric database is accessible to anyone with an internet connection.
 
 ### Shelved Data
 {: .text-left }
