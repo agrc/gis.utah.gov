@@ -66,7 +66,7 @@ The SGID uses the ESRI default Resolution and Tolerance:
 ### OpenSGID
 {: .text-left }
 
-All datasets in the SGID geodatabase are synced nightly with the [OpenSGID]({% link sgid/open-sgid/index.md %}) cloud-hosted PostGIS database. This open standards-centric database is accessible to anyone with an internet connection.
+All datasets in the SGID geodatabase are synced nightly with the [OpenSGID]({% link sgid/open-sgid/index.md %}). This open standards-centric database is accessible to anyone with an internet connection.
 
 ### Shelved Data
 {: .text-left }
