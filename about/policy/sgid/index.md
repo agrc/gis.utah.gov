@@ -10,12 +10,12 @@ categories: []
 date: 2019-12-04 10:01:27 -0500
 ---
 
-The following policies apply to data in the internal SGID Enterprise Geodatabase.
+The following policies apply to data in the internal SGID geodatabase, which is a curated database of state-wide datasets. It is maintained as an internal, AGRC-only Esri Enterprise Geodatabase and is available to everyone as the cloud-hosted, PostGIS-backed [OpenSGID]({% link sgid/open-sgid/index.md %}). The contents of the SGID are also uploaded to the Utah SGID groups of our [ArcGIS Online Organization](https://utah.maps.arcgis.com).
 
 ## Adding New Datasets to the SGID
 {: .text-left }
 
-We strive to achieve and maintain a high standard of quality for the SGID. One of the best ways to do this is making sure all datasets coming into the SGID are high-quality datasets. We use the following policies and procedures to guide this effort.
+We strive to achieve and maintain a high standard of quality for the SGID. We use the following policies and procedures to guide this effort.
 
 ### Qualifying Datasets
 {: .text-left }
