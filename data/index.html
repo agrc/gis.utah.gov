@@ -136,35 +136,43 @@ categories: []
     <div class="grid__col section alternate">
         <h2>State Geographic Information Database (SGID)</h2>
         <p class="readable">Established by state law in 1991, Utah’s SGID ensures that GIS map layers are developed in a coordinated fashion and shared openly. The SGID provides a one-stop access point to hundreds of data layers that were developed, aggregated, or acquired by state government. To the credit of the GIS community across the state, the SGID's data resources are among the most mature and extensive in the nation. </p>
-        <p class="readable">Today, interoperable GIS server technology has diminished the importance of a completely centralized GIS data repository, and it is critical that the latest, best quality GIS data resources are readily discovered and accessed. AGRC strives to ensure that this is true for SGID data layers that are available as downloadable shapefiles or live streaming data services. </p>
+        <p class="readable">The SGID was originally conceived as a single, centralized database. However, the rapid growth of GIS data across the state and the spread of cloud-based web services have made this impractical. Today, the SGID lives on in several forms: the curated Open SGID database, our Esri Open Data site, and the Raster Discovery web app. Tying all these together is the SGID Index, which makes it easy to find the latest and highest quality GIS data resources no matter where they're hosted.</p>
+        <p class="readable">We have organized our datasets into different categories based on some ISO thingee to bring order to the <s>galaxy</s> SGID. These categories are represented by a unified set of icons across all the SGID's different forms.</p>
+    </div>
+    <div class="grid__col section">
+        <h2>SGID Index</h2>
+            <div class="grid__col--span-all grid__col--centered grid__col--s-hidden" style="width:568px">
+                <a href="{% link data/sgid-index/index.html %}">
+                    <img alt="SGID Index Table Search" class="text-center" src="{% link images/sgid-index.png %}">
+                </a>
+            </div>
+            <p class="readable">The SGID Index is a sortable and searchable table of GIS resources from AGRC and many other state agencies. It is a great resource to quickly find GIS data and resources important to you. The index lists the resource's ISO category, name, and primary data steward, along with a short description of the resource and a link to a service endpoint (if available). </p>
+            <p class="section-read-more">
+                <a href="{% link data/sgid-index/index.html %}" class="btn">Search the Index</a>
+            </p>
     </div>
     <div class="grid__col section">
         <h2>The Open SGID</h2>
-        <p class="readable">The Open SGID is a cloud-hosted PostGIS database containing the datasets from the SGID which are also available from the <a href="http://opendata.gis.utah.gov/">AGRC Open Data</a>. It is a publicly-available, direct database connection that can be utilized on a multitude of GIS platforms to access Utah spatial data. A <a href="https://github.com/agrc/open-sgid">GitHub repository</a> is used as the primary source of information for the Open SGID, and to catalog and address issues with explanations and or troubleshooting techniques. Please read, understand, and abide by the <a href="{% link about/policy/open-sgid/index.md %}">terms of use</a> prior to connecting.</p>
+        <p class="readable">The Open SGID is a cloud-hosted PostGIS database containing our curated collection of GIS datasets. It is a publicly-available database connection that can be used in many GIS platforms to directly access Utah spatial data. You can find the most up-to-date information about the Open SGID, including troubleshooting tips and an issue tracker, in the <a href="https://github.com/agrc/open-sgid">GitHub repository</a>. Please read, understand, and abide by the <a href="{% link about/policy/open-sgid/index.md %}">terms of use</a> prior to connecting.</p>
         <p class="section-read-more">
-            <a href="{% link sgid/open-sgid/index.md %}" class="btn">Get connected</a>
-        </p>
-    </div>
-    <div class="grid__col section alternate">
-    <h2>SGID Index</h2>
-        <div class="grid__col--span-all grid__col--centered grid__col--s-hidden" style="width:568px">
-            <a href="{% link data/sgid-index/index.html %}">
-                <img alt="SGID Index Table Search" class="text-center" src="{% link images/sgid-index.png %}">
-            </a>
-        </div>
-        <p class="readable">The SGID Index is a sortable and filterable table containing data items contained in our SGID. It is a great resource to quickly find GIS data and resources important to you. In the SGID Index, you will find the ISO category, the name of the resource, the agency who is the data steward, a short description and a link to a service endpoint if one is available. </p>
-        <p class="section-read-more">
-            <a href="{% link data/sgid-index/index.html %}" class="btn">SGID Index</a>
+            <a href="{% link sgid/open-sgid/index.md %}" class="btn">Get Connected</a>
         </p>
     </div>
     <div class="grid__col section">
-        <h2>Raster Discovery and Download</h2>
+        <h2>The SGID Open Data Site</h2>
+        <p class="readable">The <a href="https://opendata.gis.utah.gov">SGID Open Data site</a> leverages Esri's Open Data platform to create a single portal for any GIS resources hosted on Esri's ArcGIS Online or Enterprise Portal solutions. Each item in Open Data contains web service links for consuming the datasets in webmaps and other applications along with direct data download links. We have uploaded all our curated datasets to ArcGIS Online and shared them with the site, and we encourage other agencies and organizations to <a href="{% link gis-data-sharing/open-data/index.md %}">share</a> their datasets with us as well.</p>
+        <p class="section-read-more">
+            <a href="https://opendata.gis.utah.gov" class="btn">Browse Open Data</a>
+        </p>
+    </div>
+    <div class="grid__col section">
+        <h2>The Raster Discovery App</h2>
         <div class="grid__col--2-of-2 grid__col--centered grid__col--s-hidden" style="width:300px">
             <img alt="SGID Index Table Search" class="text-center" src="{% link images/applications/raster_utah_gov.png %}">
         </div>
-        <p class="readable">The Raster Discovery App allows users to get map-based results for all of the imagery, elevation, lidar, and scanned maps available from Utah's SGID. Select the types of products you are interested in. Next, define your area of interest. The Raster Discovery App will search the product indices and produce a resulting list of items that intersected your area of interest. Finally, download the data! </p>
+        <p class="readable">The Raster Discovery App allows users to get map-based results for all of AGRC's publicly-available imagery, elevation, lidar, and scanned maps. Select the type of product you are looking for and define your area of interest. The app will search the product indices and produce a list of items that intersect your area of interest. You can then click on the link for each item in the list to download the data.</p>
         <p class="section-read-more">
-            <a href="https://raster.utah.gov" class="btn">Raster App</a>
+            <a href="https://raster.utah.gov" class="btn">Search Raster Data</a>
         </p>
     </div>
     <div class="grid__col section alternate">
