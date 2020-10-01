@@ -34,7 +34,7 @@ We will periodically review the SGID for datasets that no longer meet these crit
 ### Dataset Introduction Process
 {: .text-left }
 
-We will use the [Porter](https://github.com/agrc/porter) project to guide and track the steps needed to add or make breaking changes (remove, schema change, etc) to products contained in the SGID. A brief overview of these steps is included below.
+We will use the [Porter](https://github.com/agrc/porter) project to guide and track the steps needed to add or make breaking changes (remove, schema change, etc.) to products contained in the SGID. A brief overview of these steps is included below.
 
 We will add a corresponding record to the [Data Stewardship spreadsheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1). This will contain at a minimum:
 
@@ -43,14 +43,14 @@ We will add a corresponding record to the [Data Stewardship spreadsheet](https:/
 - A description
 - The data steward
 - The steward contact name and email
-- A link the the data page on the AGRC website
+- A link on the data page on the AGRC website
 - A link to the SGID Open Data page
 
 We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding ISO category folder and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`. We anticipate some datasets won't receive future updates, such as the boundary lines for adjacent counties in the surrounding states. These datasets will only exist in ArcGIS Online and will be tagged as `static`.
 
-The [Auditor](https://github.com/agrc/auditor) project will regularly evaluate and update the ArcGIS Online item's information (tags, thumbnail, title, etc) based off of information from a separate table and from the SGID. It will also update the ArcGIS Online item's metadata from the SGID's geodatabase.
+The [Auditor](https://github.com/agrc/auditor) project will regularly evaluate and update the ArcGIS Online item's information (tags, thumbnail, title, etc.) based on information contained in a separate table and from the SGID geodatabase. It will also update the ArcGIS Online item's metadata from the SGID geodatabase.
 
-If the dataset is shared with our [Open Data site](https://opendata.gis.utah.gov/), we will enable the multiple formats download option in the ArcGIS Online item page to allow users to download File Geodatabases and other non-default download options.
+If the dataset is shared with our [Open Data site](https://opendata.gis.utah.gov/), we will enable the multiple formats download option on the ArcGIS Online item page to allow users to download File Geodatabases and other non-default download options.
 
 We will populate the [minimum metadata content]({% link about/policy/metadata/index.md %}) in the SGID geodatabase. We recommended that you use the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit) to create new metadata for the SGID.
 
@@ -81,7 +81,7 @@ Dates are acceptable in table names when content belongs in either the `census`,
 ## Updating and Editing Existing Datasets
 {: .text-left }
 
-No edits will be made to the internal SGID from 7:00PM to 10:00AM MST to allow for automated scripts to push accurate updates to ArcGIS Online and ArcGIS Server. AGRC will ensure that data is production-ready before the editing windows ends.
+No edits will be made to the internal SGID from 7:00PM to 10:00AM MST to allow for automated scripts to push accurate updates to ArcGIS Online and ArcGIS Server. AGRC will ensure that data is production-ready before the editing window ends.
 
 All database updates will be done during the editing window using [Swapper](https://github.com/agrc/swapper) or some other automated process to reduce the amount of time with incomplete data.
 
