@@ -46,7 +46,7 @@ We will add a corresponding record to the [Data Stewardship spreadsheet](https:/
 - A link on the data page on the AGRC website
 - A link to the SGID Open Data page
 
-We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding ISO category folder and group and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`. We anticipate some datasets won't receive future updates, such as the boundary lines for adjacent counties in the surrounding states. These datasets will only exist in ArcGIS Online and will be tagged as `static`.
+We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding ISO category folder and group and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`.
 
 The [Auditor](https://github.com/agrc/auditor) project will regularly synchronize the ArcGIS Online item's information (tags, thumbnail, title, metadata, etc.) with information from the SGID geodatabase to ensure consistency across all our platforms.
 
@@ -68,11 +68,6 @@ The SGID uses the ESRI default Resolution and Tolerance:
 
 All datasets in the SGID geodatabase are synced nightly with the [Open SGID]({% link sgid/open-sgid/index.md %}). This open-standards-centric database is accessible to anyone with an internet connection.
 
-### Shelved Data
-{: .text-left }
-
-Over time, we will remove datasets from the SGID geodatabase that are no longer current but continue to have historical value (e.g., Census/ACS data or previous tax district boundaries). Their associated hosted feature services will be tagged as `shelved` and placed in the public [AGRC Shelf](http://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9) ArcGIS Online group for future reference.
-
 ### Dates in Table Names
 {: .text-left }
 
@@ -91,7 +86,28 @@ All edits made to the internal SGID will be captured in the `Last update date` i
 
 If making a schema change, please consider updating any domain descriptions that do not match the domain value. See this [document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) to learn more about this effort.
 
-## Removing SGID Datasets
+## Removing Datasets from the SGID Geodatabase
 {: .text-left }
 
-When deprecating data or services in the SGID, please follow the steps outlined in the [Porter](https://github.com/agrc/porter) project.
+Over time, we may remove datasets from the SGID geodatabase for various reasons, some of which include the following:
+
+- We have a new version of the dataset with a substantially different schema.
+- The dataset is out-of-date.
+- The dataset is no longer being updated by the steward.
+- The steward has requested us to remove the dataset.
+- A more authoritative source for the dataset exists elsewhere.
+- The dataset does not meet the qualifying criteria listed in the "Qualifying Datasets" section above.
+
+Just like when adding data, we will use the [Porter](https://github.com/agrc/porter) project to track and guide dataset deprecation.
+
+We acknowledge the impact removing datasets can have on maps and projects using our datasets. We will do our best to communicate and warn people as quickly as possible through our [@MapUtah](https://twitter.com/maputah) Twitter account and by marking items as `Deprecated` in ArcGIS Online before deleting them. We encourage everyone using our data to follow us on Twitter.
+
+### "Static" Datasets
+{: .text-left }
+
+We anticipate some SGID datasets won't receive future updates, such as the boundary lines for adjacent counties in the surrounding states. These datasets will be removed from the SGID geodatabase but left in ArcGIS Online, where they will be tagged as `static` and remain members of a Utah SGID group.
+
+### "Shelved" Datasets
+{: .text-left }
+
+Over time, we will remove datasets from the SGID geodatabase that are no longer current but continue to have historical value (e.g., Census/ACS data or previous tax district boundaries). Their associated ArcGIS Online items will be tagged as `shelved` and placed in the public [AGRC Shelf](http://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9) ArcGIS Online group for future reference.
