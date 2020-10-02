@@ -12,6 +12,9 @@ date: 2019-12-04 10:01:27 -0500
 
 The following policies apply to data in the internal SGID geodatabase, which is a curated database of state-wide datasets. It is maintained as an internal, AGRC-only Esri Enterprise Geodatabase and is available to everyone as the [Open SGID]({% link sgid/open-sgid/index.md %}) and as part of our [Open Data](https://opendata.gis.utah.gov) site.
 
+1. TOC list
+{:toc}
+
 ## Adding New Datasets to the SGID Geodatabase
 {: .text-left }
 
