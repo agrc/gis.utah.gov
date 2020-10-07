@@ -49,15 +49,15 @@ We will add a corresponding record to the [Data Stewardship spreadsheet](https:/
 - A link to the data page on the AGRC website
 - A link to the SGID Open Data page
 
-We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding ISO category folder and group and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`.
+We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding category folder and group and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`.
 
 The [Auditor](https://github.com/agrc/auditor) project will regularly synchronize the ArcGIS Online item's information (tags, thumbnail, title, metadata, etc.) with information from the SGID geodatabase to ensure consistency across all our platforms.
 
 If the dataset is shared with our [Open Data site](https://opendata.gis.utah.gov/), we will enable the multiple formats download option on the ArcGIS Online item page to allow users to download File Geodatabases and other non-default download options.
 
-We will populate the [minimum metadata content]({% link about/policy/metadata/index.md %}) in the SGID geodatabase. We recommended that you use the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit) to create new metadata for the SGID.
+We will populate the [minimum metadata content]({% link about/policy/metadata/index.md %}) in the SGID geodatabase. We recommended using the [metadata form](https://docs.google.com/forms/d/1u7gwdmRN-83Kh5zizi-kHRObeoNyaakM3scPkLT3zKY/edit) to create new metadata for the SGID.
 
-The domain values for any new database domains must match their corresponding descriptions. See the [domain document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) for more information on this effort.
+The domain values for any new coded value domain must match their corresponding descriptions. Read about this effort in the [improving data clarity with domains](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) document.
 
 We will use [Sweeper](https://github.com/agrc/sweeper) (or some other form of automation) to remove all empty or invalid geometries and duplicate records.
 
@@ -74,7 +74,7 @@ All datasets in the SGID geodatabase are synced nightly with the [Open SGID]({% 
 ### Dates in Table Names
 {: .text-left }
 
-Dates are acceptable in table names when content belongs in either the `census`, `political`, or `tax` ISO categories to identify datasets where the most current data may not reflect the current calendar year. For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active. This implies that the **most current and relevant** data contains **no date suffix**. Historical or future data _will_ contain a date suffix to help identification at a glance. The best way to learn about a dataset is to view the data page metadata.
+Dates are acceptable in table names when content belongs in either the `census`, `political`, or `tax` categories to identify datasets where the most current data may not reflect the current calendar year. For all other categories, dates should only be used for tables that are no longer effective/active or soon-to-be effective/active. This implies that the **most current and relevant** data contains **no date suffix**. Historical or future data _will_ contain a date suffix to help identification at a glance. The best way to learn about a dataset is to view the data page metadata.
 
 ## Updating and Editing Existing Datasets
 {: .text-left }
