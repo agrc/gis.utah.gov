@@ -46,7 +46,7 @@ We will add a corresponding record to the [Data Stewardship spreadsheet](https:/
 - A description
 - The data steward
 - The steward contact name and email
-- A link on the data page on the AGRC website
+- A link to the data page on the AGRC website
 - A link to the SGID Open Data page
 
 We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding ISO category folder and group and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`.
