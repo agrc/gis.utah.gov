@@ -28,7 +28,7 @@ Datasets should meet all the following criteria:
 - The dataset should cover a **state-wide** geographic extent, be part of a state-wide project or initiative (such as roads, address points, and parcels), or be relevant to broader projects or mandates that have a state-wide interest (e.g. geologic hazard mapping or endangered species mapping).
 - The dataset should be useful to **multiple agencies or organizations'** daily activities or decision-making. Datasets primarily used internally by a single agency aren't great candidates for the SGID.
 - The entity providing the dataset should be the **authoritative** or original source (for example, a county's parcels must come from the County government).
-- The entity providing the dataset does not have the **ability** to publicly share data (such as an existing ArcGIS Online organization). An entity's data storage costs or server capacity may not be sufficient justification for adding data to the SGID.
+- The entity providing the dataset does not have the internal **capability** to publicly serve the data (such as through an existing ArcGIS Online organization). An entity's data storage costs or server capacity may not be sufficient justification for adding data to the SGID.
 
 Agencies and organizations can still share datasets that don't meet the guidelines above with our [Open Data site](https://opendata.gis.utah.gov/). This is a great way to share data mainly intended for the general public with a wide audience. Please see our [Open Data sharing guidelines]({%link gis-data-sharing/open-data/index.md %}) for more information.
 
