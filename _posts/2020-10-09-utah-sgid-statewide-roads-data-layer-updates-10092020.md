@@ -26,7 +26,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Millard County:** Obtained roads data on 09/08/2020. Previous update was on 08/31/2016.
 - **Salt Lake County:** Obtained roads data on 09/23/2020. Previous update was on 07/28/2020.
 - **Utah County:** Obtained roads data on 09/02/2020. Previous update was on 07/28/2020.
-- **Wasatch County:** Obtained roads data on 09/12/2020. Previous update was on 10/11/2018.
+- **Wasatch County:** Obtained roads data on 09/12/2020. Previous update was on 05/20/2020.
 - **Washington County:** Obtained roads data on 09/30/2020. Previous update was on 09/04/2020.
 - **Weber County:** Obtained roads data on 09/31/2020. Previous update was on 09/04/2020.
 
