@@ -10,6 +10,10 @@ title: How to Connect to the SGID via ArcSDE
 layout: page_nocrumb
 categories: []
 ---
+
+**Heads up!** We are planning to replace the state-only ArcSDE-based SGID database with the [Open SGID]({% link sgid/open-sgid/index.md %}). This PostGIS-based database contains the same datasets and is available to anyone with an internet connection.
+{: .pop .text-center}
+
 The SGID is a collection of vector-format GIS feature classes. Its' content is available for download from the [data pages]({% link data/index.html %}) on this website or via an ArcSDE database connection **for users within the State of Utah network**. Users with ArcGIS desktop clients that are at 10.2.1 or higher can use this resource.
 
 The SGID's organization is based on ISO Topic Categories. AGRC treats the ISO categories as a guideline, and the main goal is to maximize usability for GIS users.
