@@ -25,7 +25,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Davis County:** Obtained roads data on 04/30/2020. Previous update was on 04/08/2020.
 - **Salt Lake County:** Obtained roads data on 04/30/2020. Previous update was on 04/08/2020.
 - **Utah County:** Obtained roads data on 04/30/2020. Previous update was on 04/08/2020.
-- **Wasatch Elder County:** Obtained roads data on 04/30/2020. Previous update was on 02/07/2020.
+- **Wasatch County:** Obtained roads data on 04/30/2020. Previous update was on 02/07/2020.
 - **Washington County:** Obtained roads data on 04/30/2020. Previous update was on 04/08/2020.
 - **Weber County:** Obtained roads data on 04/30/2020. Previous update was on 04/08/2020.
 
