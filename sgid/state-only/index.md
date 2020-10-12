@@ -11,7 +11,7 @@ layout: page_nocrumb
 categories: []
 ---
 
-**Heads up!** We will be replacing the state-only ArcSDE-based SGID10 database with the [Open SGID]({% link sgid/open-sgid/index.md %}) on **December 31st, 2020**. After this date, the SGID10 database will no longer be accessible. The PostGIS-based Open SGID contains the same datasets and is available to anyone with an internet connection. Please take time now to update your data references.
+**Heads up!** We will be replacing the state-only ArcSDE-based SGID10 database with the [Open SGID]({% link sgid/open-sgid/index.md %}) on **December 31st, 2020**. After this date, the SGID10 database will no longer be accessible. The PostGIS-based Open SGID is available now and contains the same datasets and is available to anyone with an internet connection. Please take time now to update your data references.
 {: .pop .text-center}
 
 The SGID is a collection of vector-format GIS feature classes. Its' content is available for download from the [data pages]({% link data/index.html %}) on this website or via an ArcSDE database connection **for users within the State of Utah network**. Users with ArcGIS desktop clients that are at 10.2.1 or higher can use this resource.
