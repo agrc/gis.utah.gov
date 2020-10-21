@@ -5,34 +5,35 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-21 17:25:17 -0700
-title: Small Health Statistical Areas
 categories: []
+2020SmallHealthStatisticalAreas:
+  hub:
+    name: Utah Health Small Statistical Areas 2020
+    item_id: 67edfe9ded464e3393c1932b4d39a6b2
+  updates:
+    - May 2020
 2018SmallHealthStatisticalAreas:
-  downloads:
-    - url: https://drive.google.com/drive/u/0/folders/164y4SenlrgzU-dXyPxMtKCDIbH3ZdXU9?ogsrc=32
-      label: 2018 Small Statistical Areas
+  hub:
+    name: Utah Health Small Statistical Areas 2018
+    item_id: c0a84e302c8142cb9ca34f88813f23b3
   updates:
     - October 2018
 2017SmallHealthStatisticalAreas:
-  downloads:
-    - url: https://drive.google.com/drive/u/0/folders/0B6R_P-pQXOcsQnc5bnBFajRfZzA
-      label: 2017 Small Statistical Areas
+  hub:
+    name: Utah Health Small Statistical Areas 2017
+    item_id: 6fe09518dc62415d88570dfd59fbb4c5
   updates:
     - November 2017
 2014SmallHealthStatisticalAreas:
   downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mYzR2TEdaTHIwa0E&export=download
-      label: '2014 Small Statistical Areas: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNlNPZU5SRVFJcVU&export=download
-      label: '2014 Small Statistical Areas: Shapefile'
+    - url: https://utah.maps.arcgis.com/home/item.html?id=30c1368e89314f34a547779772cb1d13
+      label: '2014 Small Statistical Areas'
   updates:
     - January 2014
 2012SmallHealthStatisticalAreas:
   downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWkFMd2RzVVVKdDg&export=download
-      label: '2012 Small Statistical Areas: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mYjZqLU00b1A3a2M&export=download
-      label: '2012 Small Statistical Areas: Shapefile'
+    - url: https://utah.maps.arcgis.com/home/item.html?id=908b5ff7b88c41a4b89119356c722fde
+      label: '2012 Small Statistical Areas'
   updates:
     - October 2012
 ---
@@ -40,10 +41,22 @@ categories: []
   <img class="caption__image" src="{% link images/StatisticalAreas_Large.png %}" alt="SmallStatisticalAreas" />
   <figcaption class="caption__text">2018 Small Health Statistical Areas</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/u/0/folders/164y4SenlrgzU-dXyPxMtKCDIbH3ZdXU9?ogsrc=32"
+{% include abstract.html
 name="Small Health Statistical Areas"
 stewards="AGRC and Utah Department of Health"
 abstract="First developed by the Department of Health in 1997, small statistical areas provide a means of geographically analyzing and presenting health statistics at the community level. Producing information at this level provides community planners and others with information that is specific to the populations living in their communities. Small area analysis allows an investigator to explore ecologic relationships between health status, lifestyle, the environment and the health system." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="2018SmallHealthStatisticalAreas">2020 Small Health Statistical Areas</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/SmallStatAreas_2009_small.png %}" alt="Small Health Areas" />
+    <p>"Utah Small Health Statistics Areas" was developed by the Utah Department of Health by combining neighboring ZIP code areas to create 104 small areas ranging in population of approximately 8,000 to 86,000 persons. These boundaries were created to allow for more meaningful analysis by reducing areas to the smallest unit where there is enough data to be reliable and the area is similar. </p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html name="2020SmallHealthStatisticalAreas"
+  info=page.2018SmallHealthStatisticalAreas %}
+</div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="2018SmallHealthStatisticalAreas">2018 Small Health Statistical Areas</h3>
@@ -82,7 +95,8 @@ abstract="First developed by the Department of Health in 1997, small statistical
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://health.utah.gov/">Utah Department of Health</a>
-      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mTEVKZ1VMbnJIdXc">2008 Small Statistical Areas</a>
+      <li><a href="https://utah.maps.arcgis.com/home/item.html?id=c54b6f0c2ccf4b7fa22cba399da508fc">2009 Small Statistical Areas</a>
+      <li><a href="https://utah.maps.arcgis.com/home/item.html?id=85c7b13cbae24dc79630efeb8f4f155c">2008 Small Statistical Areas</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
@@ -95,7 +109,7 @@ abstract="First developed by the Department of Health in 1997, small statistical
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/SmallStatAreas_2009_small.png %}" alt="Small Health Areas" />
-    <p>Health.HealthSmallStatisticalAreas2012 are the 62 small health statistical areas in Utah. These boundaries were developed by the Utah Department of Health by combining neighboring ZIP code areas to create 62 small areas of approximately 33,500 persons.</p>
+    <p>Health Small Statistical Areas 2012 are the 62 small health statistical areas in Utah. These boundaries were developed by the Utah Department of Health by combining neighboring ZIP code areas to create 62 small areas of approximately 33,500 persons.</p>
     <ul class="dotless">
       <li>The <code>Area_Code</code> field contains the statistical area code.
       <li>The <code>Area_Name</code> field contains the statistical area name.
@@ -103,7 +117,8 @@ abstract="First developed by the Department of Health in 1997, small statistical
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://health.utah.gov/">Utah Department of Health</a>
-      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mTEVKZ1VMbnJIdXc">2008 Small Statistical Areas</a>
+      <li><a href="https://utah.maps.arcgis.com/home/item.html?id=c54b6f0c2ccf4b7fa22cba399da508fc">2009 Small Statistical Areas</a>
+      <li><a href="http://utah.maps.arcgis.com/home/item.html?id=85c7b13cbae24dc79630efeb8f4f155c">2008 Small Statistical Areas</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
