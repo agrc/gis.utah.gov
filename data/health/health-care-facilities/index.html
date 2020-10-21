@@ -7,14 +7,11 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-21 13:27:50 -0700
-title: Healthcare Facilities
 categories: []
 HealthcareFacilities:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVVBUdS1FLW1acVk&export=download
-      label: 'Health Care Facilities: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb2ZSa2NsN1EtZ1E&export=download
-      label: 'Health Care Facilities: Shapefile'
+  hub:
+    name: Utah Health Care Facilities
+    item_id: f5e5d7c717c946fe9cd6f2c8d0bf8d86
   updates:
     - December, 2017
     - January, 2016
@@ -22,11 +19,9 @@ HealthcareFacilities:
     - June, 2015
     - June, 2013
 EmergencyMedicalServices:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMDZYZzFIMVM0Mmc&export=download
-      label: 'EMS Facilities: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7memtEYXpyeWR1eUk&export=download
-      label: 'EMS Facilities: Shapefile'
+  hub:
+    name: Utah Emergency Medical Services
+    item_id: 4d29084d6e434ef397ae5922ba7402b4
   updates:
     - June, 2013
 ---
@@ -34,7 +29,7 @@ EmergencyMedicalServices:
   <img class="caption__image" src="{% link images/Hospitals_Large.png %}" alt="Hospitals" />
   <figcaption class="caption__text">Health Care Facilities</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mR1lXZFJ5bkRZcnM"
+{% include abstract.html
 name="Healthcare Facilities"
 stewards="AGRC, Utah Department of Health, Utah Division of Emergency Management"
 abstract="The Healthcare Facilities data package contains all the datasets available that represent healthcare facilities in Utah.  The package includes a general Healthcare Facilities dataset as well as a specialized dataset that contains locations of Emergency Medical Service (EMS) facilities." %}
@@ -44,7 +39,7 @@ abstract="The Healthcare Facilities data package contains all the datasets avail
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/HealthCareFacilities_Small.png %}" alt="HealthCareFacilities" />
-    <p>Health.HealthCareFacilities represents clinics, dialysis centers, hospitals, and other healthcare related facilities. This dataset is a work in progress. Listed below are more completed datasets for specific types of healthcare facilities.</p>
+    <p>Health Care Facilities represents clinics, dialysis centers, hospitals, and other healthcare related facilities. This dataset is a work in progress. Listed below are more completed datasets for specific types of healthcare facilities.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
@@ -60,7 +55,7 @@ abstract="The Healthcare Facilities data package contains all the datasets avail
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/EMSFacilities_Small.png %}" alt="EmergencyMedicalServices" />
-    <p>Health.EmergencyMedicalServices represents the Emergency Medical Service (EMS) Facilities throughout the state of Utah.  An EMS Facility is any location where emergency medical services personnel are stationed or based out of, or where EMS equipment is stored and ready use. Health.EmergencyMedicalServices includes both private and governmental entities. The <code>NAME</code> field contains the name of the EMS Facility.</p>
+    <p>Emergency Medical Services represents the Emergency Medical Service (EMS) Facilities throughout the state of Utah.  An EMS Facility is any location where emergency medical services personnel are stationed or based out of, or where EMS equipment is stored and ready use. Health.EmergencyMedicalServices includes both private and governmental entities. The <code>NAME</code> field contains the name of the EMS Facility.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
