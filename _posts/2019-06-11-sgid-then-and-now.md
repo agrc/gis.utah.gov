@@ -15,7 +15,7 @@ tags:
 
 Access to high-quality GIS data is a privilege, and the fact that it's open and free is nothing short of amazing. Yes, I’m talking about Utah's SGID. From a local perspective, we’re all accustomed to it being there. But really, the concept of readily available, mature, open data is somewhat unique. Over the years, many factors have played into the SGID’s development and current maturity, and it takes ongoing maintenance and planning to ensure its continued success.
 
-This post explores some of the early milestones ("highlights") of the SGID, the current state of the SGID with usage stats, and, finally, where we are going next---with a [poll](https://www.surveymonkey.com/r/3P58K98) requesting user input!
+This post explores some of the early milestones ("highlights") of the SGID, the current state of the SGID with usage stats, and, finally, where we are going next---with a poll requesting user input!
 
 ### Early History of the SGID
 {: .text-left}
