@@ -29,7 +29,7 @@ A corresponding record to the [Data Stewardship spreadsheet](https://docs.google
 - A link the the data page on the AGRC website
 - A link to the SGID Open Data page
 
-The ArcGIS Online Item will reside in the corresponding ISO category folder and contain the appropriate tags. If the data is authoritative, it will be marked as `authoritative`. If the data does not receive updates, it will be tagged as `static`. If the data has historical relevance **but is not the most recent data** it will be tagged as `shelved`. Note: the [AGOL Validator](https://github.com/agrc/agol-validator) project will transfer metadata from the Internal SGID database, including summary, description, and use limitations.
+The ArcGIS Online Item will reside in the corresponding category folder and contain the appropriate tags. If the data is authoritative, it will be marked as `authoritative`. If the data does not receive updates, it will be tagged as `static`. If the data has historical relevance **but is not the most recent data** it will be tagged as `shelved`. Note: the [AGOL Validator](https://github.com/agrc/agol-validator) project will transfer metadata from the Internal SGID database, including summary, description, and use limitations.
 
 If the data is shared with the [SGID Open Data](https://opendata.gis.utah.gov/), it will have the enable multiple formats download option selected to allow for File Geodatabases and other non default downloads.
 
