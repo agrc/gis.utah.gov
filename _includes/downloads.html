@@ -12,10 +12,10 @@
 <li><a href="https://opendata.gis.utah.gov/datasets/{{ dataset_id }}" id="{{ id }}-hub">{{ display_name }}: SGID Open Data Downloads and APIs</a>
 {%- endif -%}
 {%- if include.skip_fgdb == nil or include.skip_fgdb == false -%}
-<li><a href="https://opendata.arcgis.com/api/v3/datasets/{{ include.item_id }}/downloads/data?format=fgdb&spatialRefId=26912" id="{{ id }}-gdb">{{ display_name }}: File Geodatabase</a>
+<li><a href="https://opendata.arcgis.com/api/v3/datasets/{{ include.item_id }}_0/downloads/data?format=fgdb&spatialRefId=26912" id="{{ id }}-gdb">{{ display_name }}: File Geodatabase</a>
 {%- endif -%}
 {%- if include.skip_shapefile == nil or include.skip_shapefile == false -%}
-<li><a href="https://opendata.arcgis.com/api/v3/datasets/{{ include.item_id }}/downloads/data?format=shp&spatialRefId=26912" id="{{ id }}-shp">{{ display_name }}: Shapefile</a>
+<li><a href="https://opendata.arcgis.com/api/v3/datasets/{{ include.item_id }}_0/downloads/data?format=shp&spatialRefId=26912" id="{{ id }}-shp">{{ display_name }}: Shapefile</a>
 {%- endif -%}
 <script>
   {%- if include.skip_shapefile == nil or include.skip_shapefile == false -%}
