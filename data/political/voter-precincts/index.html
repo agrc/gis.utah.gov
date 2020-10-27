@@ -10,13 +10,9 @@ author:
 date: 2011-11-18 11:11:58 -0700
 categories: []
 VotingPrecincts:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdGdWV0NxYWtRejA&export=download
-      label: 'Voting Precincts: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7meTJMRGZkYnRoOFE&export=download
-      label: 'Voting Precincts: Shapefile'
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mdzJtVk1sdGhWNjA
-      label: Archive dataset of 2011 Voting Precincts <strong>(no longer in use)</strong>
+  hub:
+    name: Utah Vista Ballot Areas
+    item_id: d33f596419d74948a45070275632b8e0
   updates:
     - October 11,2019
     - July 3,2019<br>Check attribute <code>RECEIVEDDATE</code> to identify latest
@@ -35,7 +31,7 @@ VotingPrecincts:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/VoterPrecinctsSmall.png %}" alt="VotingPrecinctsSmall" />
-    <p>Political.VistaBallotAreas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.</p>
+    <p>Vista Ballot Areas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.</p>
     <dl>
       <dt>VISTAID</dt>
       <dd>A 11 character field that contains the precinct ID and optional subprecinct ID (separated by a colon).</dd>
@@ -54,6 +50,7 @@ VotingPrecincts:
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://elections.utah.gov/">Lieutenent Governor's Office: Elections</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1BhXfEjXQ1_7z5cH-cj869XUwNDWdhQTu">Archive dataset of 2011 Voting Precincts <strong>(no longer in use)</strong></a>
     </ul>
   </div>
   {% include packagedata.html
