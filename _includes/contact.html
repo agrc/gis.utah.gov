@@ -1,5 +1,5 @@
 {%- assign text = include.text -%}
-{%- assign default_text = 'Comments, questions, compliments, or concerns can be directed to' -%}
+{%- assign default_text = 'Comments, questions, compliments, or concerns can be directed to ' -%}
 {%- capture subject -%}?subject={{ include.subject | default: 'gis.utah.gov' | escape_once | url_encode }}{%- endcapture -%}
 
 {%- if include.contact -%}
