@@ -12,11 +12,9 @@ tags:
 categories: []
 date: 2011-11-22 17:46:55 -0700
 NHDLakes:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mbzNaZ3ZTTjFXSEk&export=download
-      label: 'Lakes NHD High Res: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSDM1QnphZjVpWkU&export=download
-      label: 'Lakes NHD High Res: Shapefile'
+  hub:
+    name: Utah Lakes NHD
+    item_id: b505c3e3a8504da6b28e9900a9f602f8
   updates:
     - December 2016
 NHDStreams:
@@ -26,11 +24,9 @@ NHDStreams:
   updates:
     - December 2016
 NHDSprings:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mazdwZ1J3MTJWZFE&export=download
-      label: 'Springs NHD High Res: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVFVTU1hHUWtQTzA&export=download
-      label: 'Springs NHD High Res: Shapefile'
+  hub:
+    name: Utah Springs NHD
+    item_id: 322595dd1da149679cb9875a7d4ab069
   updates:
     - July 2015
 ---
@@ -41,7 +37,8 @@ NHDSprings:
 {% include abstract.html
 name="NHD Lakes, Rivers, Streams, and Springs"
 stewards="AGRC & USGS"
-abstract="The Lakes, Rivers, Streams & Springs data package contains feature layers that are derived from the <a href='https://nhd.usgs.gov/data.html'>National Hydrography Dataset (NHD)</a>. The NHD is the surface water component of the National Map created by the United States Geological Survey (USGS). The NHD contains a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. NHD data in it's entirety can be downloaded from <a href='ftp://nhdftp.usgs.gov/DataSets/Staged/States/FileGDB/HighResolution/'>here</a> (ex. NHDH_UT_). </p><p>The USGS has <a href='https://www.usgs.gov/news/nhd-and-wbd-map-services-moving-cloud'>web-based map services</a> of the NHD and WBD. You are also able to view the USGS services on <a href='https://hydro.nationalmap.gov/arcgis/rest/services/'>ArcGIS Server</a> or connect to their server with <code>https://hydro.nationalmap.gov/arcgis/services</code>.</p>" %}
+abstract="The Lakes, Rivers, Streams & Springs data package contains feature layers that are derived from the <a href='https://nhd.usgs.gov/data.html'>National Hydrography Dataset (NHD)</a>. The NHD is the surface water component of the National Map created by the United States Geological Survey (USGS). The NHD contains a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. NHD data in it's entirety can be downloaded from the <a href='https://www.usgs.gov/core-science-systems/ngp/national-hydrography/access-national-hydrography-products'>USGS</a>.</p>
+<p>The USGS has <a href='https://www.usgs.gov/news/nhd-and-wbd-map-services-moving-cloud'>web-based map services</a> of the NHD and WBD. You are also able to view the USGS services on <a href='https://hydro.nationalmap.gov/arcgis/rest/services/'>ArcGIS Server</a> or connect to their server with <code>https://hydro.nationalmap.gov/arcgis/services</code>.</p>" %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="NHDLakes">NHD Lakes</h3>
@@ -73,7 +70,7 @@ abstract="The Lakes, Rivers, Streams & Springs data package contains feature lay
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/Streams.png %}" alt="Streams" />
-    <p>Water.StreamsNHDHighRes is the recommended data layer for depicting Utah's streams, canals, washes, etc. This is a large dataset that is derived from the National Hydrology Database (NHD) compiled by the USGS in partnership with AGRC and other states' GIS programs. The derivation and modification process has been performed by AGRC to provide a general purpose feature class of streams. Two fields have been added to this feature class (InUtah and IsMajor) and features have been split at the state boundary.</p>
+    <p>Streams NHD High Res is the recommended data layer for depicting Utah's streams, canals, washes, etc. This is a large dataset that is derived from the National Hydrology Database (NHD) compiled by the USGS in partnership with AGRC and other states' GIS programs. The derivation and modification process has been performed by AGRC to provide a general purpose feature class of streams. Two fields have been added to this feature class (InUtah and IsMajor) and features have been split at the state boundary.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>NHD Codes</h5>
     <ul class="dotless">
