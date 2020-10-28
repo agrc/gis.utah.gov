@@ -13,7 +13,7 @@ tags:
 
     <div class="grid__col section">
         <h2>The State Geographic Information Database</h2>
-        <p class="readable">Established by State law in 1991, Utah’s State Geographic Information Database (SGID) provides a centralized collection of hundreds of GIS map data layers developed, aggregated, or acquired by the State. Evolving technologies have allowed us to transform the SGID from a single database to a broad collection of data resources under the SGID umbrella. It contains both AGRC-curated datasets and references to data from a wide variety of state and local agencies. Many resources have both download links and links to web services for direct consumption.</p>
+        <p class="readable">Established by State law in 1991, Utah’s State Geographic Information Database (SGID) provides a centralized collection of hundreds of GIS data layers developed, aggregated, or acquired by the State. Evolving technologies have allowed us to transform the SGID from a single database to a broad collection of data resources under the SGID umbrella. It contains both AGRC-curated datasets and references to data from a wide variety of state and local agencies. Many resources have both download links and links to web services for direct consumption.</p>
 
         <p class="readable">There are many pieces, or facets, to the SGID today, with each one addressing specific audiences or technologies. The SGID Index combines all of these along with links to externally-hosted resources to make it easy to find the latest and highest quality GIS data resources no matter where they're hosted.
 
@@ -38,7 +38,7 @@ tags:
                 <img alt="SGID Index Table Search" class="text-center" src="{% link images/sgid-index.png %}">
             </a>
         </div>
-        <p class="readable">The SGID Index is <b>the</b> master source of information about SGID datasets from AGRC and other GIS resources from many other state agencies. It is a great resource to quickly find GIS information important to you. The index lists the resource's category, name, and primary data steward, along with a short description of the resource and a link to a service endpoint (if available). </p>
+        <p class="readable">The SGID Index is <b>the</b> master source of information about SGID datasets from AGRC and other GIS resources from many other state agencies. It is a great resource to quickly find the GIS information you're looking for. The index lists the resource's category, name, and primary data steward, along with a short description of the resource and a link to a service endpoint (if available). </p>
         <p class="section-read-more">
             <a href="{% link data/sgid-index/index.html %}" class="btn">Search the Index</a>
         </p>
@@ -59,7 +59,7 @@ tags:
                 <img alt="AGRC ArcGIS Online" class="text-center" src="{% link images/agol_location_group.png %}">
             </a>
         </div>
-        <p class="readable">AGRC uploads all the curated datasets to <a href="https://utah.maps.arcgis.com">ArcGIS Online</a> as hosted feature services. You can search for these layers in Esri products and add them to your projects. The name of every SGID item in ArcGIS Online will start with "Utah" (i.e., "Utah Roads") and have an AGRC-branded thumbnail. They are also shared with a Utah SGID group that matches their category.</p>
+        <p class="readable">AGRC uploads all the curated datasets to <a href="https://utah.maps.arcgis.com">ArcGIS Online</a> as hosted feature services. You can access them via their service URLs or directly in Esri products. The name of every SGID item in ArcGIS Online will start with "Utah" (i.e., "Utah Roads") and have an AGRC-branded thumbnail. They are also shared with a Utah SGID group that matches their category.</p>
         <p class="readable">The AGRC ArcGIS Online organization also acts as the repository for "shelved" and "static" curated SGID datasets. These types of datasets are only available in ArcGIS Online as specified in our <a href="{% link about/policy/sgid/index.md%}"</a>SGID Database Policy</a>.</p>
         <p class="section-read-more">
             <a href="https://utah.maps.arcgis.com/home/groups.html" class="btn">Browse ArcGIS Online</a>
@@ -68,7 +68,7 @@ tags:
 
     <div class="grid__col section">
         <h2>SGID Open Data Site</h2>
-        <p class="readable">The <a href="https://opendata.gis.utah.gov">SGID Open Data site</a> leverages Esri's Open Data platform to create a single portal for GIS resources hosted in multiple ArcGIS Online organizations. Each item in Open Data contains web service links for consuming the datasets in webmaps and other applications along with data download links. We share all our curated datasets through the site and encourage other agencies and organizations to <a href="{% link gis-data-sharing/open-data/index.md %}">share</a> their datasets here as well to help us spread GIS data to the widest possible audience.</p>
+        <p class="readable">The <a href="https://opendata.gis.utah.gov">SGID Open Data site</a> is a single destination for GIS resources hosted in multiple ArcGIS Online organizations and ArcGIS Enterprise Portals. Each item in Open Data contains data download links along with web service links for consuming the datasets in webmaps and other applications. We share all our curated datasets through the site and encourage other agencies and organizations to <a href="{% link gis-data-sharing/open-data/index.md %}">share</a> their datasets here as well to help us spread GIS data to the widest possible audience.</p>
         <p class="section-read-more">
             <a href="https://opendata.gis.utah.gov" class="btn">Browse Open Data</a>
         </p>
@@ -81,7 +81,7 @@ tags:
                 <img alt="Raster Discover App" class="text-center" src="{% link images/applications/raster_utah_gov.png %}">
             </a>
         </div>
-        <p class="readable">The Raster Discovery App allows users to search all of AGRC's raster datasets, including publicly-available imagery, elevation, lidar, and scanned maps. We have tiled many of these datasets to provide better access to individual areas, and the app allows you to search for and download only the tiles that cover your area of interest.</p>
+        <p class="readable">The Raster Discovery App at <a href="https://raster.utah.gov">raster.utah.gov</a> allows users to search all of AGRC's raster datasets, including publicly-available imagery, elevation, lidar, and scanned maps. We have tiled many of these datasets to provide better access to individual areas, and the app allows you to search for and download only the tiles that cover your area of interest.</p>
         <p class="section-read-more">
             <a href="https://raster.utah.gov" class="btn">Search Raster Data</a>
         </p>
@@ -94,7 +94,7 @@ tags:
                 <img alt="Discover Basemap and Imagery Services" class="text-center" src="{% link /discover/images/discover.png %}">
             </a>
         </div>
-        <p class="readable">Discover, an implementation of AppGeo's <a href="https://www.appgeo.com/giza/">Giza</a> platform, serves up web services of our more popular raster products. These include both public-access and licensed aerial imagery products as well as the high-quality, Utah-specific basemaps created by AGRC's cartographers. Discover serves all these layers as WMS image and WMTS tiled image services that anyone can use in a wide variety of desktop and web applications.</p>
+        <p class="readable">Sometimes you just need background imagery or a reference map to sit beneath your data layers. Discover serves up several raster products, including our aerial imagery products and the high-quality, Utah-specific basemaps created by AGRC's cartographers, as WMS image and WMTS tiled image services that anyone can use in a wide variety of desktop and web applications.</p>
         <p class="section-read-more">
             <a href="{% link discover/index.html %}" class="btn">Sign Up for Discover Access</a>
         </p>
