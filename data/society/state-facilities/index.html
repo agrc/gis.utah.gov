@@ -11,9 +11,9 @@ tags:
 categories: []
 date: 2012-06-22 13:04:15 -0600
 Facilities:
-  downloads:
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mbGN6YWlxRWJKcUU
-      label: State Facilities
+  hub:
+    name: Utah State Facility Locations
+    item_id: a2cc4865b1a94352922c1a83bda24ba5
   updates:
     - 2017
 ---
@@ -24,17 +24,17 @@ Facilities:
 {% include abstract.html name="State Facilities"
 stewards="AGRC & Other State Agencies"
 webapp="https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=dad9d8f66e974748bbc371cb214e31f1"
-abstract="Society.StateFacilities contains locations for state owned or leased buildings." %}
+abstract="State Facilities contains locations for state owned or leased buildings." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="Facilities">State Facilities</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <p>This dataset contains a wide and varied collection, some schools in the k-12 system and also higher education buildings, Office buildings, port of entries, rest areas and fish hatcheries. It also contains many other facilities such as UDOT sheds, restrooms, and other smaller facilities. The web application showing this data, shows other facility data to give context.</p>
-    <p>For users wanting a full Schools data layer please see Society.Schools.</p>
+    <p>For users wanting a full Schools data layer please see <a href="{% link data/society/schools-libraries/index.html %}">Schools & Libraries</a>.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="{% link data/society/schools-libraries/index.html %}" title="Schools data page">Society.Schools</a>
+      <li><a href="{% link data/society/schools-libraries/index.html %}" title="Schools & Libraries data page">Schools & Libraries</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>

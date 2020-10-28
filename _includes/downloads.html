@@ -1,17 +1,21 @@
 {% assign id = include.name | downcase | replace: ' ', '-' %}
+{% assign display_name = include.alias %}
 {%- if include.org == nil or include.org == false -%}
 {% assign dataset_id = id %}
 {%- else -%}
 {%- assign dataset_id = include.org | append: "::" | append: id -%}
 {%- endif -%}
+{%- if display_name == "" or display_name == nil %}
+{% assign display_name = include.name %}
+{%- endif -%}
 {%- if include.skip_hub == nil or include.skip_hub == false -%}
-<li><a href="https://opendata.gis.utah.gov/datasets/{{ dataset_id }}" id="{{ id }}-hub">{{ include.name }}: SGID Open Data Downloads and APIs</a>
+<li><a href="https://opendata.gis.utah.gov/datasets/{{ dataset_id }}" id="{{ id }}-hub">{{ display_name }}: SGID Open Data Downloads and APIs</a>
 {%- endif -%}
 {%- if include.skip_fgdb == nil or include.skip_fgdb == false -%}
-<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.gdb" id="{{ id }}-gdb">{{ include.name }}: File Geodatabase</a>
+<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.gdb" id="{{ id }}-gdb">{{ display_name }}: File Geodatabase</a>
 {%- endif -%}
 {%- if include.skip_shapefile == nil or include.skip_shapefile == false -%}
-<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.zip" id="{{ id }}-shp">{{ include.name }}: Shapefile</a>
+<li><a href="https://opendata.arcgis.com/datasets/{{ include.item_id }}_0.zip" id="{{ id }}-shp">{{ display_name }}: Shapefile</a>
 {%- endif -%}
 <script>
   {%- if include.skip_shapefile == nil or include.skip_shapefile == false -%}

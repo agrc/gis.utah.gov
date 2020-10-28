@@ -43,8 +43,8 @@ In the first couple of cells, install the Python libraries that aren't preinstal
 
 ```py
 # Install the libraries you'll need
-!pip install geopandas
-!pip install psycopg2
+pip install geopandas
+pip install psycopg2-binary
 ```
 
 ```py

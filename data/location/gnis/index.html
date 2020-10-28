@@ -7,23 +7,17 @@ author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-23 09:22:52 -0700
-title: GNIS and Place Names
 categories: []
 GNIS2019:
-  downloads:
-    - url: https://drive.google.com/drive/folders/1h79QOA7ycP5PesxhImkS5fpILr2VrwAw
-      label: GNIS 2019
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mQ05IaFVQNmEyY0k
-      label: GNIS 2010
+  hub:
+    name: Utah GNIS Place Names
+    item_id: 153301fffc8a4128884833e2f7ee1d6e
   updates:
     - April 3, 2019
-  endpoints:
-    - url: https://utah.maps.arcgis.com/home/item.html?id=153301fffc8a4128884833e2f7ee1d6e
-      label: ArcGIS Online Feature Layer
 PlaceAreas:
-  downloads:
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7meTJwcV81QXJZb2c
-      label: Place Name Areas Shapefile and Geodatabase
+  hub:
+    name: Utah Zoom Locations
+    item_id: 183633e5f6ea4049858ac0b37f4fdd32
   updates:
     - December 2010
 ---
@@ -32,7 +26,6 @@ PlaceAreas:
   <figcaption class="caption__text">GNIS Points in Utah</figcaption>
 </figure>
 {% include abstract.html
-   download="https://drive.google.com/drive/folders/1h79QOA7ycP5PesxhImkS5fpILr2VrwAw"
    name="GNIS And Place Locations"
    type="GIS Data Layer"
    stewards="USGS"
@@ -40,16 +33,17 @@ PlaceAreas:
 %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="GNIS2019">GNIS2019</h3>
+    <h3 id="GNIS2019">GNIS 2019</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/GNISsmall.png %}" alt="GNIS" />
-    <p>Location.PlaceNamesGNIS2019 contains the latest release of the GNIS dataset for the state of Utah. The dataset consists of point locations with corresponding feature names. All point entities are categorized by feature type.</p>
+    <p>Utah GNIS Place Names contains the latest release of the GNIS dataset for the state of Utah. The dataset consists of point locations with corresponding feature names. All point entities are categorized by feature type.</p>
     <p>There are no constraints or warranties with regard to the use of this dataset.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="http://geonames.usgs.gov/">U.S. Board on Geographic Names</a>
+      <li><a href="https://www.usgs.gov/core-science-systems/ngp/board-on-geographic-names">U.S. Board on Geographic Names</a>
+      <li><a href="https://utah.maps.arcgis.com/home/item.html?id=a409efe179bb4ea9a5942fc62c2c29d2">Utah Place Names GNIS 2010</a>
     </ul>
   </div>
   {% include packagedata.html name="GNIS2019"

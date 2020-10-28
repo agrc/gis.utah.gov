@@ -73,14 +73,14 @@ _**bold italics**_
   [link text](http://external.website.location)
   [link text](http://external.website.location#to-anchor)
   ```
-  
+
 - html
 
   ```html
   <a href="https://url.com">link text</a>
   <a href="https://url.com#to-anchor">link text</a>
   ```
-  
+
 ### image link to an image
 
 - markdown
@@ -159,8 +159,9 @@ This creates the download links from hub.
 ```yml
 Item:
   hub:
-    name: ArcGIS Online name exactly eg Utah Address Points
-    item_id: the item id
+    name: ArcGIS Online name exactly eg Utah Address Points [required]
+    alias:  The name you would prefer to display instead of the value for name [optional]
+    item_id: the item id [required]
     org: the sharing org name e.g. `SITLA`. When an org shares items it gets prefixed with their name e.g. `/SITLA::land-ownership`
     skip_shapefile: true or false [optional]
     skip_fgdb: true or false [optional]

@@ -19,11 +19,9 @@ MetroTownships:
   opensgid:
     table: boundaries.metro_townships
 StateBoundary:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdDJVbzN3cWdBZzA&export=download
-      label: 'Utah State Boundary: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mRkJJaDBSZm9YSXc&export=download
-      label: 'Utah State Boundary: Shapefile'
+  hub:
+    name: Utah State Boundary
+    item_id: 8344c33ec2114341a59c4c1d72bcf38a
   updates:
     - July 2014 Adjusted to newest CadNSDI v2 PLSS-GCDB; biggest shift along Wyoming &amp; Summit County line (47 ft)
     - November 2011
@@ -44,8 +42,8 @@ abstract="This dataset contains mapping data representing the state, county, mun
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/MunicipalitiesStateSmall.png %}" alt="MunicipalBoundaries" />
-    <p>Boundaries.Municipalities is a multi-purpose statewide dataset of municipal boundaries for cartography and approximate boundary identification.</p>
-    <p>Boundaries.Municipalities boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.</p>
+    <p>Municipal Boundaries is a multi-purpose statewide dataset of municipal boundaries for cartography and approximate boundary identification.</p>
+    <p>Municipal Boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.</p>
     <p>Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules (e.g. no two cities or redevelopment areas may cover the same geographic extent).</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
     <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
@@ -96,8 +94,8 @@ abstract="This dataset contains mapping data representing the state, county, mun
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/MetroTownshipSmall.png %}" alt="MetroTownships" />
-    <p>Boundaries.MetroTownships is a multi-purpose statewide dataset of metro townships boundaries for cartography and approximate boundary identification.</p>
-    <p>Boundaries.MetroTownships boundaries represent unincorporated locations where the residents don't want to be part of an incorporated municipality but do want some say in how they are governed. They are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.</p>
+    <p>MetroTownships is a multi-purpose statewide dataset of metro townships boundaries for cartography and approximate boundary identification.</p>
+    <p>MetroTownships represent unincorporated locations where the residents don't want to be part of an incorporated municipality but do want some say in how they are governed. They are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.</p>
     <p>Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules (e.g. no two cities or township areas may cover the same geographic extent).</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. The metro townships boundary dataset is maintained by AGRC in partnership with state and local government.</p>
     <h5>Related Resources</h5>
@@ -114,10 +112,9 @@ abstract="This dataset contains mapping data representing the state, county, mun
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/CountyBoundaries_Small.png %}" alt="County Boundaries" />
-    <p>Boundaries.Counties is a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification. Includes July 2012 major update of Millard and Juab counties.</p>
-    <p>Boundaries.Counties boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices.</p>
+    <p>County Boundaries is a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification. Includes July 2012 major update of Millard and Juab counties.</p>
+    <p>County Boundaries are maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices.</p>
     <p>Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules.</p>
-    <p>There is also a county boundaries dataset the has been adjusted to the updated Geographic Coordinate Database SGID10.BOUNDARIES.Counties_GCDB</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The county boundary dataset is is maintained by AGRC in partnership with state and local government.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
@@ -153,12 +150,12 @@ abstract="This dataset contains mapping data representing the state, county, mun
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="StateBoundary">State Boundary</h3>
+    <h3 id="StateBoundary">Utah State Boundary</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/UtahBoundary.png %}" alt="Utah" />
-    <p>Boundaries.Utah is a dataset of the Utah state boundary.</p>
-    <p>Boundaries.Utah boundary is maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.</p>
+    <p>Utah State Boundary is a dataset of the Utah state boundary.</p>
+    <p>Utah State Boundary is maintained by AGRC with the help of many state, county, and local entities. Changes and updates are through certification by the Lt. Governor’s Office sent in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database (GCDB) points.</p>
     <p>Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data were adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set of boundaries used for the administrative purposes that conforms to logical &amp; administrative rules.</p>
     <p>In addition to the boundary of the state of Utah this dataset contains another larger boundary around the state that can be used for cartographic purposes to mask other data layers that extend past the boundary of the state. The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The state boundary dataset is is maintained by AGRC in partnership with state and local government.</p>
   </div>

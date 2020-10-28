@@ -15,7 +15,7 @@ tags:
 
 Access to high-quality GIS data is a privilege, and the fact that it's open and free is nothing short of amazing. Yes, I’m talking about Utah's SGID. From a local perspective, we’re all accustomed to it being there. But really, the concept of readily available, mature, open data is somewhat unique. Over the years, many factors have played into the SGID’s development and current maturity, and it takes ongoing maintenance and planning to ensure its continued success.
 
-This post explores some of the early milestones ("highlights") of the SGID, the current state of the SGID with usage stats, and, finally, where we are going next---with a [poll](https://www.surveymonkey.com/r/3P58K98) requesting user input!
+This post explores some of the early milestones ("highlights") of the SGID, the current state of the SGID with usage stats, and, finally, where we are going next---with a poll requesting user input!
 
 ### Early History of the SGID
 {: .text-left}
@@ -122,10 +122,6 @@ AGRC is testing the option of a public-facing PostgreSQL cloud database where us
 Additionally, AGRC has established a workflow with our partner agencies to serve their authoritative data through AGOL. Essentially, their SGID-relevant data is cataloged and is discoverable on AGRC’s official AGOL page. We like to think of it as a live window into partner agencies' data. One of the biggest benefits to these partners is that their data no longer has a shelf life: in other words, the updates agencies make are available instantaneously. Currently we have set up workflows with [State History](https://history.utah.gov/) and [Water Rights](https://www.waterrights.utah.gov/). We are working to get other agencies on board in the coming months.
 
 Ultimately, our goal is to provide the most current industry-accepted tools that allow our users to access high-quality, standardized, statewide GIS data for Utah. Additionally, we design our paths forward with a reasonable amount of backward capability.
-
-We are always curious to hear from our users on how you access the SGID data, what formats you use, and how we can better get the data into your hands. Please take a moment to fill out our one-question [poll](https://www.surveymonkey.com/r/3P58K98) on your preferred method(s) of accessing SGID data. This will help us gauge where we should focus our future efforts.
-
-[![Take the Survey]({% link images/SGID_2019_take_the_poll.png %}){: .flex .flex--center}](https://www.surveymonkey.com/r/3P58K98)
 
 *[GIS]: Geographic Information System
 *[SGID]: State Geographic Information Database

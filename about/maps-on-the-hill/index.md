@@ -16,7 +16,7 @@ categories: []
 ![Maps on the Hill February 25, 2020](moth2020.png){: .outline }
 
 - [Map Book Calendar](https://www.dropbox.com/s/9jhfgwma8v6jdbu/Calendar.pdf?dl=0)
-- [Photos](https://www.dropbox.com/sh/rpwly5yno7wmrhf/AAAfMcBsYiiq6ZxEKRw4BY1ba?dl=0)
+- [Photos](https://drive.google.com/drive/folders/1-wuzob3nLQe3G3afUql3g5ubd3goFPWj?usp=sharing)
 {: .dotless .no-padding}
   </div>
 
@@ -27,7 +27,7 @@ categories: []
 ![Maps on the Hill March 7, 2019](moth2019.png){: .outline }
 
 - [Map Book Calendar](https://drive.google.com/a/utah.gov/file/d/1bDUTg92jhrskI7BCljlRww2fNvFTYmTp/view?usp=sharing)
-- [Photos](https://www.dropbox.com/sh/ks9iwsbrkb2y38w/AADD_u2UUcFSV2GZ90BYhma4a?dl=0)
+- [Photos](https://drive.google.com/drive/folders/16Usf1lZaelqHtqxOItHhQSLL2h8Es8Do?usp=sharing)
 {: .dotless .no-padding}
   </div>
 
@@ -36,7 +36,7 @@ categories: []
 
 ![Maps on the Hill January 30, 2018](moth2018.png){: .outline }
 
-- [Map Book](https://drive.google.com/file/d/1i4_Lm8E0Rb2GpETe1K43DgkKD6maFufy/view?usp=sharing)
+- [Map Book](https://drive.google.com/file/d/1Dtrr93RL3JI7wpWqLe4eVRY9DNDWOP_1/view?usp=sharing)
 - [Photos](https://drive.google.com/drive/folders/1Vn9oYHVd1-mvQTA0TYB4yoNcSc0r50md?usp=sharing)
 {: .dotless .no-padding}
   </div>
@@ -54,7 +54,7 @@ categories: []
 ![Maps on the Hill March 1, 2016](moth2016.png){: .outline }
 
 - [Map Book](https://drive.google.com/file/d/0B0ScYXX9W5INQzdEZk40cVFnY2M/view)
-- [Photos](https://drive.google.com/folderview?id=0B2TozNhMXSiedlBmREtjdzFEUHc&usp=sharing)
+- [Photos](https://drive.google.com/drive/folders/1drEhhfvrx1XgMrV6emc0ns_bR_1x5-dP?usp=sharing)
 {: .dotless .no-padding }
   </div>
   <div markdown="1">
@@ -63,7 +63,7 @@ categories: []
 ![Maps on the Hill January 28, 2015](moth2015.png){: .outline }
 
 - [Map Book]({% link downloads/Maps-on-the-Hill-2015-Book-80-pages-FINAL-web.pdf %})
-- [Photos](https://www.flickr.com/photos/118521371@N02/sets/72157650544752656/)
+- [Photos](https://drive.google.com/drive/folders/11Gm7eZn5KEm1qSiWTSGvBvx5zbIZ8kRz?usp=sharing)
 {: .dotless .no-padding }
   </div>
   <div markdown="1">
@@ -72,7 +72,7 @@ categories: []
 ![Maps on the Hill January 29, 2014](moth2014.png){: .outline }
 
 - [Map Book]({% link downloads/Maps-on-the-Hill-Map-Book-2014-web.pdf %})
-- [Photos](https://www.flickr.com/photos/118521371@N02/albums/72157641427057164)
+- [Photos](https://drive.google.com/drive/folders/1hAzBThBwyBg-OCAxMz6d7kxwjsdwcXgg?usp=sharing)
 {: .dotless .no-padding }
   </div>
   <div markdown="1">
