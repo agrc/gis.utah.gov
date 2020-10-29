@@ -1,5 +1,4 @@
 ---
-title: Transit
 author:
   display_name: JP
   email: agrc@utah.gov
@@ -17,41 +16,30 @@ UTABusRoutesStops:
   hub:
     name: Utah UTA Bus Routes Wasatch Front
     item_id: e5ba4be5e29040989ff50dc49ef0cc17
-  hub:
-    name: Utah UTA Bus Stops Wasatch Front
-    item_id: b047cfbab53f4b579756169aa45e94d4
   updates:
     - April, 2020
 UTACommuterRailRoutes:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mUWczdHRhRkRSbVk&export=download
-      label: 'Commuter Rail Routes: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOTdYaXkxMWNtYzA&export=download
-      label: 'Commuter Rail Routes: Shapefile'
+  hub:
+    name: Utah UTA Commuter Rail Routes
+    item_id: 17705e20cecf4cceab61eac6ea51343e
   updates:
     - May, 2013
 UTACommuterRailStations:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mYzUtd3BFcE5LN3M&export=download
-      label: 'Commuter Rail Stations: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSmhydGg1NjVBSXM&export=download
-      label: 'Commuter Rail Stations: Shapefile'
+  hub:
+    name: Utah UTA Commuter Rail Stations
+    item_id: 6fd39acf47884e1dbe6c303e40f1367a
   updates:
     - May, 2013
 UTALightRail:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mX0FGNGZDeTd0cXM&export=download
-      label: 'Light Rail: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNGN4aGNicnNEX3M&export=download
-      label: 'Light Rail: Shapefile'
+  hub:
+    name: Utah UTA Light Rail Routes
+    item_id: fd41770e917344e4adef8be71a0a6741
   updates:
     - January, 2017
 UTALightRailStations:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVzU3THJ4aDdrSTQ&export=download
-      label: 'Light Rail Stations: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mNGpwWExjY1IwTkE&export=download
-      label: 'Light Rail Staions: Shapefile'
+  hub:
+    name: Utah UTA Light Rail Stations
+    item_id: bb8f7bc8871b4a7594bcc037631073e7
   updates:
     - May 12, 2013
 ---
@@ -59,7 +47,7 @@ UTALightRailStations:
   <img class="caption__image" src="{% link images/Transit_Large.png %}" alt="Transit" />
   <figcaption class="caption__text">Light Rail & Bus Routes With Stops</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mcV8wS0otTmRRMWM"
+{% include abstract.html
   name="Bus, Commuter, and Light Rail"
   stewards="Utah Transit Authority (UTA)"
   abstract="This dataset contains the UTA bus route and stop locations, commuter rail route and stop locations, and light rail route and stop locations.  The extent of these data is primarily along the Wasatch Front."
@@ -70,9 +58,13 @@ UTALightRailStations:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/BusStops_Small.png %}" alt="Bus Stops" />
-    <p>Transportation.BusRoutes_UTA includes bus stops along streets, at TRAX stations, and park & ride lots serviced by UTA buses. Transportation.BusStops_UTA includes redesigned bus routes that have been adjusted for internal monitoring purposes and ski bus routes to the Cottonwood Canyons and Sundance Ski Resort.</p>
+    <p>Utah UTA Bus Routes Wasatch Front includes bus stops along streets, at TRAX stations, and park & ride lots serviced by UTA buses. Utah UTA Bus Stops Wasatch Front includes redesigned bus routes that have been adjusted for internal monitoring purposes and ski bus routes to the Cottonwood Canyons and Sundance Ski Resort.</p>
     <p>The UTA Bus Stops dataset was digitized to the Wasatch Front counties' street base maps and then exported from Trapeze (scheduling software) in shapefile format.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://opendata.gis.utah.gov/datasets/utah-uta-bus-stops-wasatch-front">Utah UTA Bus Stops Wasatch Front</a></li>
+    </ul>
   </div>
   {% include packagedata.html 
     name="UTABusRoutesStops"
@@ -86,7 +78,7 @@ UTALightRailStations:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/CommuterRail_Small.png %}" alt="Commuter Rail" />
-    <p>Transportation.CommuterRailRoutes_UTA depicts the route of Utah Transit Authority's FrontRunner North and South commuter rail tracks as received from UTA May of 2013.</p>
+    <p>Utah UTA Commuter Rail Routes depicts the route of Utah Transit Authority's FrontRunner North and South commuter rail tracks as received from UTA May of 2013.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
   </div>
   {% include packagedata.html name="UTACommuterRailRoutes"
@@ -99,7 +91,7 @@ UTALightRailStations:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/CommuterStops_Small.png %}" alt="Commuter Stops" />
-    <p>Transportation.CommuterRailStations_UTA depicts the locations of Utah Transit Authority's FrontRunner North and South commuter rail stations as received from UTA.</p>
+    <p>Utah UTA Commuter Rail Stations depicts the locations of Utah Transit Authority's FrontRunner North and South commuter rail stations as received from UTA.</p>
     <p>These data include an attribute of the address where the rail station is located.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
   </div>
@@ -113,8 +105,8 @@ UTALightRailStations:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/LightRailRoutes_Small.png %}" alt="Light Railt Route" />
-    <p>Transportation.LightRail_UTA represents the light rail system for the main North-South (Downtown to Sandy), University/Medical Center, West Valley, Daybreak, and Airport lines. It also depicts the Sugar House trolley extension currently under construction.</p>
-    <p>LightRail_UTA was digitized from aerial photographs dated August, 2016.</p>
+    <p>Utah UTA Light Rail Routes represents the light rail system for the main North-South (Downtown to Sandy), University/Medical Center, West Valley, Daybreak, and Airport lines. It also depicts the Sugar House trolley extension currently under construction.</p>
+    <p>UTA Light Rail Routes was digitized from aerial photographs dated August, 2016.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
   </div>
@@ -128,8 +120,8 @@ UTALightRailStations:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/LightRailStops_Small.png %}" alt="Light Rail Stops" />
-    <p>Transportation.LightRailStations_UTA represents the center of the platform at all UTA light rail stations.</p>
-    <p>LightRailStations_UTA locations were digitized from aerial photographs dated 2012. The 900 South station and Sandy Expo station locations were obtained by GPS.</p>
+    <p>Utah UTA Light Rail Stations represents the center of the platform at all UTA light rail stations.</p>
+    <p>Utah UTA Light Rail Stations locations were digitized from aerial photographs dated 2012. The 900 South station and Sandy Expo station locations were obtained by GPS.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
   </div>
