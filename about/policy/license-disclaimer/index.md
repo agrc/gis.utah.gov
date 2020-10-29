@@ -34,4 +34,8 @@ Please add attribution with a logo from our [media resources]({% link about/medi
 ## Disclaimer
 {: .text-left}
 
-This product is for informational purposes and may not have been prepared for, or be suitable for legal, engineering, or surveying purposes. Users of this information should review or consult the primary data and information sources to ascertain the usability of the information. AGRC provides these data in good faith and shall in no event be liable for any incorrect results, any lost profits and special, indirect or consequential damages to any party, arising out of or in connection with the use or the inability to use the data hereon or the services provided. AGRC shall not be held liable for any third party’s interpretation of data provided by AGRC. AGRC provides these data and services as a public service. AGRC reserves the right to change or revise published data and/or these services at any time.
+The data herein, including but not limited to geographic data, tabular data, analytical data, electronic data structures or files, are provided as is; without warranty of any kind, either expressed or implied, or statutory, including, but not limited to, the implied warranties or merchantability and fitness for a particular purpose. 
+
+This data is provided as a public service and should be used for informational purposes only. AGRC reserves the right to change or revise published data and/or these services at any time. 
+
+AGRC and the state of Utah is not responsible for the misuse or misrepresentation of the data. The entire risk as to the quality and performance of the data is assumed by the user.
