@@ -34,7 +34,7 @@ Please add attribution with a logo from our [media resources]({% link about/medi
 ## Disclaimer
 {: .text-left}
 
-The data herein, including but not limited to geographic data, tabular data, analytical data, electronic data structures or files, are provided as is; without warranty of any kind, either expressed or implied, or statutory, including, but not limited to, the implied warranties or merchantability and fitness for a particular purpose. 
+These data, including (but not limited to) geographic data, tabular data, or analytical data, are provided "as is" without any express or implied warranties.
 
 This data is provided as a public service and should be used for informational purposes only. AGRC reserves the right to change or revise published data and/or these services at any time. 
 
