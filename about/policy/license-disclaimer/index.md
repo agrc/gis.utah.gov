@@ -38,4 +38,4 @@ These data, including (but not limited to) geographic data, tabular data, or ana
 
 These data are provided as a public service and should be used for informational purposes only. They cannot replace the proper evaluation of a location by a qualified professional. AGRC reserves the right to change or revise published data and/or services at any time. 
 
-AGRC and the state of Utah is not responsible for the misuse or misrepresentation of the data. The entire risk as to the quality and performance of the data is assumed by the user.
+Neither AGRC nor the State of Utah are responsible for the misuse or misrepresentation of the data. The user assumes the entire risk as to the quality and performance of the data.
