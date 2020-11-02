@@ -11,7 +11,7 @@ from os import rename
 from os.path import dirname, join
 
 import pygsheets
-from pydash.strings import start_case
+#: from pydash.strings import start_case
 
 
 def munge_data(item, i, indices):
@@ -151,6 +151,43 @@ title: SGID Index
 '''
 
     return html
+
+RE_WORDS = "/{upper}+(?={upper}{lower})|{upper}?{lower}|{upper}+|[0-9]+/g".format(
+    upper=UPPER, lower=LOWER
+)
+
+def capitalize(text, strict=True):
+    return text.capitalize() if strict else text[:1].upper() + text[1:]
+
+
+def start_case(text):
+   return  " ".join(capitalize(word, strict=False) for word in words(text))
+
+def words(text, pattern=None):
+    reg_exp_js_match(text, pattern or RE_WORDS)
+
+def regexp_js_match(text, reg_exp):
+    return js_to_py_re_find(reg_exp)(text)
+
+def js_to_py_re_find(reg_exp):
+    """Return Python regular expression matching function based on Javascript style regexp."""
+    pattern, options = reg_exp[1:].rsplit("/", 1)
+    flags = re.I if "i" in options else 0
+
+    def find(text):
+        if "g" in options:
+            results = re.findall(pattern, text, flags=flags)
+        else:
+            results = re.search(pattern, text, flags=flags)
+
+            if results:
+                results = [results.group()]
+            else:
+                results = []
+
+        return results
+
+    return find
 
 
 if __name__ == '__main__':
