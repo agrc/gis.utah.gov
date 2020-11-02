@@ -168,7 +168,7 @@ def start_case(text):
 def words(text, pattern=None):
     reg_exp_js_match(text, pattern or RE_WORDS)
 
-def regexp_js_match(text, reg_exp):
+def reg_exp_js_match(text, reg_exp):
     return js_to_py_re_find(reg_exp)(text)
 
 def js_to_py_re_find(reg_exp):
