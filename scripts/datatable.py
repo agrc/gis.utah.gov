@@ -165,12 +165,12 @@ def capitalize(text, strict=True):
 
 def start_case(text):
     if text is None:
-        text = " "
+        text = ""
 
     return  " ".join(capitalize(word, strict=False) for word in words(text))
 
 def words(text, pattern=None):
-    reg_exp_js_match(text, pattern or RE_WORDS)
+    return reg_exp_js_match(text, pattern or RE_WORDS)
 
 def reg_exp_js_match(text, reg_exp):
     return js_to_py_re_find(reg_exp)(text)
