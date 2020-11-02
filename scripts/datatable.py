@@ -9,6 +9,7 @@ A module that reads the stewardship spreadsheet and builds the sgid index page
 from collections import OrderedDict
 from os import rename
 from os.path import dirname, join
+import re
 
 import pygsheets
 #: from pydash.strings import start_case
