@@ -91,7 +91,7 @@ def munge_data(item, i, indices):
     ])
 
 
-ef get_sheet_data(gc, sheet_id, worksheet_id):
+def get_sheet_data(gc, sheet_id, worksheet_id):
     worksheet = gc.open_by_key(sheet_id).worksheet_by_title(worksheet_id)
     data = worksheet.get_all_values(returnas='matrix')
 
