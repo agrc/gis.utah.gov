@@ -152,6 +152,8 @@ title: SGID Index
 
     return html
 
+UPPER = "[A-Z\\xC0-\\xD6\\xD8-\\xDE]"
+LOWER = "[a-z\\xDf-\\xF6\\xF8-\\xFF]+"
 RE_WORDS = "/{upper}+(?={upper}{lower})|{upper}?{lower}|{upper}+|[0-9]+/g".format(
     upper=UPPER, lower=LOWER
 )
