@@ -165,7 +165,7 @@ def capitalize(text, strict=True):
 
 def start_case(text):
     if text is None:
-        text = ""
+        text = " "
 
     return  " ".join(capitalize(word, strict=False) for word in words(text))
 
