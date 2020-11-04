@@ -34,8 +34,8 @@ Please add attribution with a logo from our [media resources]({% link about/medi
 ## Disclaimer
 {: .text-left}
 
-These data, including (but not limited to) geographic data, tabular data, or analytical data, are provided "as is" without any express or implied warranties.
+The data, including but not limited to geographic data, tabular data, and analytical data, are provided “as is” and “as available”, with no guarantees relating to the availability, completeness, or accuracy of data, and without any express or implied warranties.
 
-These data are provided as a public service and should be used for informational purposes only. They cannot replace the proper evaluation of a location by a qualified professional. AGRC reserves the right to change or revise published data and/or services at any time. 
+These data are provided as a public service (removed: and should be used) for informational purposes only. You are solely responsible for obtaining the proper evaluation of a location and associated data by a qualified professional. AGRC reserves the right to change, revise, suspend or discontinue published data and services without notice at any time.
 
-Neither AGRC nor the State of Utah are responsible for the misuse or misrepresentation of the data. The user assumes the entire risk as to the quality and performance of the data.
+Neither AGRC nor the State of Utah are responsible for any misuse or misrepresentation of the data. AGRC and the State of Utah are not obligated to provide you with any maintenance or support. The user assumes the entire risk as to the quality and performance of the data. You agree to hold the State of Utah harmless for any claims, liability, costs, and damages relating to your use of the data. You agree that your sole remedy for any dissatisfaction or claims is to discontinue use of the data.
