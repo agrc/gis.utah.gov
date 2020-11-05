@@ -1,5 +1,4 @@
 ---
-title: '911'
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
@@ -20,16 +19,16 @@ NG911:
   updates:
     - November 06, 2020
   endpoints:
-    - url: https://utah.maps.arcgis.com/home/item.html?id=34f4c65991ce4d4299d3957efa35bf41
-      label: ArcGIS Online Feature Layer (PSAP Boundaries)
-    - url: https://utah.maps.arcgis.com/home/item.html?id=6c102c8fc5af413187db0910053d5ed8
-      label: ArcGIS Online Feature Layer (PSAP Locations)
+    - url: https://opendata.gis.utah.gov/datasets/utah-public-safety-answering-point-boundaries
+      label: Open Data Feature Layer (PSAP Boundaries)
+    - url: https://opendata.gis.utah.gov/datasets/utah-public-safety-answering-point-locations
+      label: Open Data Feature Layer (PSAP Locations)
 ---
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/utah-911-gis-database-thumbnail.png %}" alt="NG911 Sample" />
   <figcaption class="caption__text">Sample of NG911 Dataset</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/a/utah.gov/uc?id=1Sp6v4FmNV5fhdfEWPTxPGHMbnz-yeY47&export=download"
+{% include abstract.html
    name="911"
    exclude_parent=true
    type="GIS Database"
