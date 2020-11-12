@@ -24,15 +24,15 @@ categories:
 **A Proposal for Voluntary Expanding Parcel Data Sharing**
 
 Earlier this month, the Land Information Records work group, an informal committee organized by Evan Curtis, the State Planning Coordinator with the
-Governor’s Office of Management and Budget, produced [recommendations](https://docs.google.com/document/d/19urzWWDE62dX0g2hkcjWid1ctO5n_GR_pNe54o_Y4HY/edit?usp=sharing) for expanding the sharing of GIS-based parcel information.
+Governor’s Office of Management and Budget, produced [recommendations](https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_) for expanding the sharing of GIS-based parcel information.
 
-<figure class="caption caption--right"><a href="https://docs.google.com/document/d/19urzWWDE62dX0g2hkcjWid1ctO5n_GR_pNe54o_Y4HY/edit?usp=sharing"><img class="caption__image" src="{% link images/ParcelRecDocScreenshot.jpg %}" alt="Land Use Information Records Recommendations" /></a><figcaption class="caption__text">Land Use Information Records Recommendations Document</figcaption></figure>
+<figure class="caption caption--right"><a href="https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_"><img class="caption__image" src="{% link images/ParcelRecDocScreenshot.jpg %}" alt="Land Use Information Records Recommendations" /></a><figcaption class="caption__text">Land Use Information Records Recommendations Document</figcaption></figure>
 
 Participants in the LIR work group include representatives from county, regional, and state government, including the Utah Association of Counties (County Assessors and County Recorders), Wasatch Front Regional Council, Mountainland and Bear River AOGs, Utah League of Cities and Towns, UDOT, DNR, AGRC, the Division of Emergency Management, Blue Stakes, economic developers, and academic researchers.
 
 The LIR work group’s recommendations set the stage for voluntary sharing of additional objective/quantitative parcel GIS data, primarily around tax assessment-related information. Specifically the recommendations document establishes objectives, principles (including the role of local and state government), data content items, expected users, and a general process for data aggregation and publishing.
 
-An important realization made by the group was that ‘parcel data’ or ‘parcel record’ products have a different meaning to different users and data stewards ([see more detailed explanation](https://docs.google.com/presentation/d/1GJP7oKUOzvD-AcpuZokSNc38aBHoIjXCNP5iHgtnXf0/edit?usp=sharing)). The LIR group focused, specifically, on defining a data sharing recommendation around a _**tax year parcel GIS data**_ product, aligned with the finalization of the property tax roll by County Assessors on May 22nd of each year.
+An important realization made by the group was that ‘parcel data’ or ‘parcel record’ products have a different meaning to different users and data stewards ([see more detailed explanation](https://drive.google.com/file/d/1EANbFKyk0yBfmWiiY71gKB1BCVrrhZ6_)). The LIR group focused, specifically, on defining a data sharing recommendation around a _**tax year parcel GIS data**_ product, aligned with the finalization of the property tax roll by County Assessors on May 22nd of each year.
 
 The LIR recommendations do not impact the periodic sharing of _**basic parcel GIS data**_ (boundary, ID, address) from the County Recorders to AGRC per [63F-1-506 (3.b.vi)](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S506.html). Both the tax year parcel and the basic parcel GIS layers are designed for general purpose uses, and are not substitutes for researching and obtaining the most current, legal land records information on file in County records.
 
