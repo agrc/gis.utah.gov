@@ -12,7 +12,7 @@ categories:
   - Featured
 ---
 
-In May, the Land Information Records work group, a committee of county, regional, and state agencies, released its [recommendations for sharing an enhanced set of tax parcel GIS data](https://docs.google.com/document/d/19urzWWDE62dX0g2hkcjWid1ctO5n_GR_pNe54o_Y4HY/edit?usp=sharing), summarized in a [this blog post]({% link _posts/2016-05-26-work-group-recommends-expanded-gis-parcel-sharing.md %}).
+In May, the Land Information Records work group, a committee of county, regional, and state agencies, released its [recommendations for sharing an enhanced set of tax parcel GIS data](https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_), summarized in a [this blog post]({% link _posts/2016-05-26-work-group-recommends-expanded-gis-parcel-sharing.md %}).
 
 In a letter to Utah’s County Assessors, Evan Curtis, the State Planning Coordinator with the Governor’s Office of Management and Budget, provided a nice overview of the work done on this initiative:
 
@@ -22,8 +22,8 @@ In a letter to Utah’s County Assessors, Evan Curtis, the State Planning Coordi
 
 Several **next steps** from the recommendations document are now in motion.
 
-- [A submission guidelines document, including a recommended data schema for submissions](https://docs.google.com/a/utah.gov/document/d/1pNqjCeF_3NZjNnBGqQ3EqliMkVaWtAbybn1eZ4gt038/edit?usp=sharing), was created by AGRC and reviewed by the Assessors and the work group representatives
-- [Download LIR parcel data schema](https://drive.google.com/a/utah.gov/uc?id=1c_qpxkdjClxdEiHipYN6t5Esb1PyT0Rj&export=download)
+- [A submission guidelines document, including a recommended data schema for submissions](https://drive.google.com/file/d/1E40YeeN6zCSaTz9N3ohWMfV-3fEBofAW), was created by AGRC and reviewed by the Assessors and the work group representatives
+- [Download LIR parcel data schema](https://drive.google.com/a/utah.gov/uc?id=1E07b5rwBmAl8nvyn0ETUR-wVPYSdo9oB&export=download)
 - An initial data submission ‘ask’ was made to Counties in late June
 - As part of the first round of submission, AGRC is volunteering technical support to assist Counties in loading parcel boundaries and tax assessment data into the recommended enhanced schema
 
