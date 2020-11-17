@@ -16,7 +16,7 @@ AGRC will be temporarily [enabling HTTPS-only](https://support.esri.com/en/Techn
 
 ## Why?
 
-By enabling the HTTPS-only setting over a weekend, it gives people using our ArcGIS Online layers in their maps a chance to see if things are broken in a lower-traffic period before Esri throws the switch permanently. HTTPS plays a major role in ensuring internet communications are private (can't be read by someone else) and authentic (weren't replaced by altered content in transit).
+By enabling the HTTPS-only setting over a weekend, it gives people using our ArcGIS Online layers in their maps a chance to see if things are broken in a lower-traffic period before Esri throws the switch permanently. [HTTPS](https://en.wikipedia.org/wiki/HTTPS) plays a major role in ensuring internet communications are private (can't be read by someone else) and authentic (weren't replaced by altered content in transit).
 
 ## Who is affected?
 
