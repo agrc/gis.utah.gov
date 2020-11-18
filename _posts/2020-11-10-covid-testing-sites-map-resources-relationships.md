@@ -30,7 +30,7 @@ We saw a rise in usage over the summer as Utah experienced a surge in cases afte
 ![The usage in fall makes all earlier usage seem insignificant]({% link images/covid-testing-surge.png %})
 {: .flex .flex--center}
 
-However, as fall progressed we faced the grim reality that we're not out of the woods yet. The usage rose again alongside active cases. The last three weeks in particular have seen massive jumps. The summer usage bump that used to seem so significant almost disappears now as the usage climbs ever upward. The largest single day swing came after the Governor announced new restrictions on November 6th.
+However, as fall progressed we faced the grim reality that we're not out of the woods yet. The usage rose again alongside active cases. The last three weeks in particular have seen massive jumps. The summer usage bump that used to seem so significant almost disappears now as the usage climbs ever upward. The largest single day swing came after the Governor announced new plans to try to stop the spread on November 6th.
 
 As I've watched this, I've been painfully aware that our usage graph is just a proxy variable for active cases, hospitalizations, and, ultimately, deaths. It's a proxy for overworked nursers and doctors, concerned parents, and grieving family and friends.
 
