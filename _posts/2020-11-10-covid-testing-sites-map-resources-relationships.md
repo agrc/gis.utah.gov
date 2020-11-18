@@ -76,7 +76,7 @@ As a feature service, our data set can also be accessed programmatically via its
 
 ### Scaling
 
-ArcGIS Online has scaled seamlessly as our usage has taken off. Despite being relatively simple and only being seven months old, our dataset already has more requests in the last 12 months than any of our other ArcGIS Online-hosted datasets. The map has nearly 800,000 hits and is now averaging 10,000+ new hits a day. If we were hosting this on our own hardware with a custom application, we would be scrambling to upgrade the VM, feed it more bandwidth, and fix coding problems that matter when you've got thousands of hits.
+ArcGIS Online has scaled seamlessly as our usage has taken off. Despite being relatively simple and only being seven months old, our dataset already has more requests in the last 12 months than any of our other ArcGIS Online-hosted datasets. The map has nearly 800,000 hits and is now averaging 10,000+ new hits a day. Thanks to ArcGIS Online, we don't have to worry about monitoring server performance or bandwidth usage.
 
 In short, we've been able to combine our existing relationships with other agencies with the flexible and scalable ArcGIS Online infrastructure to make an accurate and responsive map despite ever-increasing demand.
 
