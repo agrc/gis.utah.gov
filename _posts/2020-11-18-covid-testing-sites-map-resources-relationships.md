@@ -3,7 +3,7 @@ title: "Utah's COVID-19 Testing Sites Map: The Importance of Relationships and R
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2020-11-10 11:30:00
+date: 2020-11-18 15:10:00
 categories:
   - Featured
 tags:
