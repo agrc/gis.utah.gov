@@ -32,7 +32,7 @@ We saw a rise in usage over the summer as Utah experienced a surge in cases afte
 
 However, as fall progressed we faced the grim reality that we're not out of the woods yet. The usage rose again alongside active cases. The last three weeks in particular have seen massive jumps. The summer usage bump that used to seem so significant almost disappears now as the usage climbs ever upward. The largest single day swing came after the Governor announced new plans to try to stop the spread on November 6th.
 
-As I've watched this, I've been painfully aware that our usage graph is just a proxy variable for active cases, hospitalizations, and, ultimately, deaths. It's a proxy for overworked nursers and doctors, concerned parents, and grieving family and friends.
+As I've watched this, I've been painfully aware that our usage graph is just a proxy variable for active cases, hospitalizations, and, ultimately, deaths. It's a proxy for overworked nurses and doctors, concerned parents, and grieving family and friends.
 
 How I wish I didn't have to make this map.
 
@@ -72,7 +72,7 @@ For our [data source](https://utah.maps.arcgis.com/home/item.html?id=83b9c8ea890
 
 Because our data source is a [hosted feature layer](https://doc.arcgis.com/en/arcgis-online/reference/feature-layers.htm) in ArcGIS Online, we can use a single, unified dataset for multiple purposes. We have a private view for editing that allows either us or the Dept. of Health to update the data or add new sites. We also have the public version (linked at the beginning of this section) used by the map and publicly available to anyone else who wants it. We don't have to worry about changes propagating through different copies.
 
-As a feature service, our data set can also be accessed programmatically via it's [REST](https://developers.arcgis.com/rest/) endpoint. This enabled Twenty Labs to scrape our data on a regular interval for their app, and has also allowed the coronavirus.utah.gov website folks from the Dept. of Technology Services  to create a [list-based view](https://coronavirus.utah.gov/covid-testing-locations-list) of the testing site data. They were able to put this interactive app together in just a few days because they can call the REST API directly with a simple HTTP request. They didn't have to learn any new frameworks, and they don't have to worry about maintaining their own version of the data.
+As a feature service, our data set can also be accessed programmatically via its [REST](https://developers.arcgis.com/rest/) endpoint. This enabled Twenty Labs to scrape our data on a regular interval for their app, and has also allowed the coronavirus.utah.gov website folks from the Dept. of Technology Services  to create a [list-based view](https://coronavirus.utah.gov/covid-testing-locations-list) of the testing site data. They were able to put this interactive app together in just a few days because they can call the REST API directly with a simple HTTP request. They didn't have to learn any new frameworks, and they don't have to worry about maintaining their own version of the data.
 
 ### Scaling
 
