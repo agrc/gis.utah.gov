@@ -46,21 +46,21 @@ As map geeks, we tend to focus on the latest and greatest tech. However, we've a
 
 ### Internal Relationships
 
-The Department of Health turned to us for this map because we've established a good relationship with them on past projects. When it came time to build something quickly, everyone already knew what to expect from each other even though we were all working remotely.
+The Department of Health turned to us for this map because we've established a good relationship with them on past projects. When it came time to build something quickly, everyone already knew what to expect from each other even though we were all working remotely. That relationship has solidified as we've worked together on this map.
 
 Because the Department of Technology Services, our parent department, was the one creating the main website, we just had to jump on a few video chats with them to work out how best to link the website and webmap technologies. Our existing relationships lowered the interpersonal barriers and let everyone just focus on the job at hand.
 
-Since launching the website, we've worked with the Dept. of Health to update both the underlying data and the structure of the map itself. We work in tandem to get data from providers and update it on the website, aided by a shared tracking spreadsheet. When we spun up a Spanish version of the map, they already had someone to help with translating everything, and this relationship has continued as each site's instructions are translated as needed.
+Since launching the map, we've worked with the Dept. of Health to update both the underlying data and the structure of the map itself. We work in tandem to get data from providers and update it on the website, aided by a shared tracking spreadsheet. When we spun up a Spanish version of the map, they already had someone to help with translating everything, and this relationship has continued as each site's instructions are translated as needed. This relationship allows us to respond to requests quickly and efficiently.
 
 ### External Relationships
 
-Perhaps the most critical relationships we've witnessed have been between the Dept. of Health and the individual healthcare providers, especially in rural areas. We've gotten just a glimpse of how these relationships, built over years of visits, calls, and emails, have smoothed the process of getting information to and from providers who may not have the resources of a large hospital network. These are bonds that are not always built easily but are vital to the map's statewide accuracy.
+Perhaps the most critical relationships we've witnessed have been between the Dept. of Health and the individual healthcare providers, especially in rural areas. We've gotten just a glimpse of how these relationships, built over years of visits, calls, and emails, have smoothed the process of getting information to and from providers who may not have the resources of a large hospital network. These bonds not always built easily but are vital to the map's statewide accuracy.
 
-Then there are relationships with larger, broader organizations. We've worked with Twenty Labs, the contractors who built the HealthyTogether app for the State and other institutions, to ensure data flows from our map to theirs easily. One of the challenges we've faced is sharing data our data with larger outside groups, like GISCorps or Google, while still keeping it in a format internally that serves the needs of our primary users. This is still a work in progress.
+Then there are our relationships with larger, broader organizations. We've worked with Twenty Labs, the contractors who built the HealthyTogether app for the State and other institutions, to ensure data flows from our map to theirs easily. One of the challenges we've faced is sharing data our data with larger outside groups, like GISCorps or Google, while still keeping it in a format internally that serves the needs of our primary users. This is still a work in progress.
 
 ## Resources: ArcGIS Online
 
-We created the map and dataset quickly and have seen a massive increase in their usage since. The cloud-based ArcGIS Online infrastructure and tools allowed us to create them quickly and scale them easily and effortlessly. We didn't have to write any custom code or handle any storage, performance, or network issues, even though they have become some of our most-used resources. This is the same infrastructure behind Johns Hopkins' COVID dashboard that has been a key part of our collective understanding of the pandemic.
+We created the map and its underlying dataset quickly and have seen a massive increase in their usage since. The cloud-based ArcGIS Online infrastructure and tools allowed us to create them quickly and scale them easily and effortlessly. We didn't have to write any custom code or handle any storage, performance, or network issues, even though they have become some of our most-used resources. This is the same infrastructure behind Johns Hopkins' COVID dashboard that has been a key part of our collective understanding of the pandemic.
 
 ### Web AppBuilder
 
