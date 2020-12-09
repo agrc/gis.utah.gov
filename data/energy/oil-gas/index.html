@@ -17,11 +17,11 @@ OilandGasWells:
     - Nightly
 OilandGasFields:
   hub:
-    name: Utah Oil Gas Fields
+    name: Utah Oil and Gas Fields
     item_id: 5bb6d8d0ea7440568764dc5a28418be8
     org: utahDNR
   updates:
-    - May 2016
+    - As Needed
 ---
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/utah-oil-and-gas-wells.png %}" alt="Oil and Gas Wells" />
@@ -221,7 +221,60 @@ abstract="These datasets depict oil and gas well surface points, units and field
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/OilFieldsSM.png %}" alt="Oil Fields" />
     <p>This dataset depicts oil and gas field polygons in Utah from the Utah Division of Oil, Gas and Mining. The dataset contains the field number, field name, status and more.</p>
+    <p>This layer is the most up-to-date version of the oil and gas fields in Utah. In 2020, ten fields were specifically expanded to incorporate wildcat/undesignated wells within the Uinta Basin.</p>
     <p>Contact <a href="https://oilgas.ogm.utah.gov/oilgasweb/contact-us/contact-us-main.xhtml">the Utah Division of Oil, Gas and Mining</a> with any questions.</p>
+    <p>Provided here are the most widely used PROD codes in the dataset. These codes are used in the following fields: PROD_FORM, FORM_2, FORM_4, and FORM_4.</p>  
+    <p>A complete list of PROD codes can be found [here](https://docs.google.com/spreadsheets/d/1O8PRzPuTXY9vhTikZj9G5Y6rmLL6x8p0MCD6nTvwPf8/edit?usp=sharing).</p>
+    <table>
+    <thead>
+      <tr>
+        <th class="text-left"><strong>Producing Formation (PROD) Code</strong></th>
+        <th class="text-left"><strong>Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>GRRV</td>
+        <td>GREEN RIVER</td>
+      </tr>
+      <tr>
+        <td>ISMY</td>
+        <td>ISMAY</td>
+      </tr>
+      <tr>
+        <td>DKTA</td>
+        <td>DAKOTA</td>
+      </tr>
+      <tr>
+        <td>WSTC</td>
+        <td>WASATCH</td>
+      </tr>
+      <tr>
+        <td>DSCR</td>
+        <td>DESERT CREEK</td>
+      </tr>
+      <tr>
+        <td>FRSD</td>
+        <td>FERRON SANDSTONE</td>
+      </tr>
+      <tr>
+        <td>PRDX</td>
+        <td>FERRON SANDSTONE</td>
+      </tr>
+      <tr>
+        <td>MRSN</td>
+        <td>MORRISON</td>
+      </tr>
+      <tr>
+        <td>MVRD</td>
+        <td>MESA VERDE</td>
+      </tr>
+      <tr>
+        <td>MNCS</td>
+        <td>MANCOS</td>
+      </tr>
+    </tbody>
+  </table>
   </div>
   {% include packagedata.html name="OilandGasFields" info=page.OilandGasFields %}
 </div>
