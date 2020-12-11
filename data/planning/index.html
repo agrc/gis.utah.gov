@@ -10,33 +10,83 @@ date: 2011-10-21 15:15:11 -0600
 title: Planning Overview
 categories: []
 ---
-{% include table_overview.html name="Planning" %}
+  <table>
+  <thead>  
+  <tr>
+      <th width "15%" scope="col">Subcategory</th>
+      <th width="25%" scope="col">Product Name</th>
+      <th scope="col">Type</th>
+      <th scope="col">Steward(s)</th>
+      <th width="40%" scope="col">Description</th>
+  </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td colspan="4">
+        <em>click a product name for more information and download links</em>
+      </td>
+    </tr>
+  </tfoot>
+    
   <tbody>
     <tr>
-      <td><a href="{% link data/planning/water-related-land/index.html %}">Water Related Land Use</a></td>
+      <td>Aerial Photography</td>
+      <td><a href="{% link discover/license/index.md %}">Current High Res Aerial Photography</a></td>
+      <td>map data services</td>
+      <td>AGRC</td>
+      <td>The most current high resolution aerial photography for Utah is made available to GIS users (desktop and webapps) from AGRC's Discover server. This commerically-licensed imagery is available at no charge to state and local government (including tribes, k-12, and colleges), and their contractors and formal partners, for download and as high-performance web services.</td>
+    </tr>
+     <tr>
+      <td>Aerial Photography</td>
+      <td><a href="{% link data/aerial-photography %}">Archival Aerial Photography</a></td>
       <td>map data</td>
-      <td>DNR</td>
-      <td>Water usage-related polygon map data, published annually that depicts the types and extent of irrigated crops as well as information concerning phreatophytes, wet/open water areas, dry land agriculture and residential/industrial areas</td>
+      <td>AGRC & UGS</td>
+      <td>This link opens the AGRC aerial photography page with information on accessing older aerial photography including 1990's era DOQ's and older scanned aerial imagery </td>
+    </tr>
+     <tr>
+      <td>Base Maps</td>
+      <td><a href="{% link discover/#services %}">Base Maps</a></td>
+      <td>map data services</td>
+      <td>AGRC</td>
+      <td>AGRC's Discover server provides high-performance base maps -- built exclusively from GIS data in the State Geographic Information Database -- from its Discover server. Base map themes include terrain, lite, topographic, address points, and overlay. These are open to public use,, but require a free Discover account.</td>
     </tr>
     <tr>
+      <td>Boundaries</td>
+      <td><a href="{% link data/boundaries/citycountystate/index.html %}">City, County and State Boundaries</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Utah city (municipal), county, and state boundaries</td>
+    </tr>   
+    <tr>
+      <td>Cadastral</td>
+      <td><a href="{% link data/cadastre/parcels/index.html %}">Parcels</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Parcel boundaries and information</td>
+    </tr>
+    <tr>
+      <tdEnvironment</td>
       <td><a href="https://utah.maps.arcgis.com/home/item.html?id=2bc95f1947ad4efaa75672da9a3b79ea">Conservation Easements</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Conservation Easements in Utah.</td>
     </tr>
     <tr>
+      <td>Environment</td>
       <td><a href="{% link data/boundaries/conservation-districts/index.html %}">Conservation Districts and Zones</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Conservation Districts and Zones in Utah.</td>
     </tr>
     <tr>
+      <td>Environment</td>
       <td><a href="https://opendata.gis.utah.gov/datasets/utah-primitive-prop-emery-county">Primitive Areas</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Only in Emery County.</td>
     </tr>
     <tr>
+      <td>Environment</td>
       <td><a href="https://opendata.gis.utah.gov/datasets/utah-pli-areas-proposal-jan16">Public Lands Initiative Proposal PLI Areas</a> and 
       <a href="https://opendata.gis.utah.gov/datasets/utah-pli-lines-proposal-jan16">Public Lands Initiative Proposal PLI Lines</a></td>
       <td>map data</td>
@@ -44,22 +94,67 @@ categories: []
       <td>Features in these data were produced by the BLM for <a href="https://www.congress.gov/bill/114th-congress/house-bill/5780">HR 5780</a> to designate federal lands as wilderness and components of the National Wilderness Preservation System in Utah. <a href="http://www.utahpli.com/">The Public Lands Initiative (PLI)</a> is a locally-driven effort to bring resolution and certainty to some of the most challenging land disputes in Utah. The initiative is rooted in the belief that conservation and economic development can coexist and make Utah a better place to live, work, and visit.</td>
     </tr>
     <tr>
+      <td>Environment</td>
       <td><a href="https://opendata.gis.utah.gov/datasets/utah-urban-interface-areas">Urban Interface Areas</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Locations of Wildland Urban Interfaces.</td>
     </tr>
     <tr>
+      <td>Environment</td>
       <td><a href="{% link data/boundaries/wilderness/index.html %}"> Wilderness, Proposals & Protected Areas</a></td>
       <td>map data</td>
       <td>USFS/BLM</td>
       <td>Wilderness boundaries including BLM re-inventory and suitability, WSAs, roadless inventory and existing wilderness.</td>
     </tr>
     <tr>
+      <td>Environment</td>
       <td><a href="{% link data/water/wetlands/index.html %}">Wetlands</a></td>
       <td>map data</td>
       <td>USFWS</td>
       <td>Wetland areas in Utah.</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td><a href="{% link data/transportation/railroads/index.html %}">Railroads</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Statewide railroads data, including transit rail</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td><a href="{% link data/transportation/roads-system/index.html %}">Road and Highway System</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Statewide road and highway system data for cartography and address location. Includes local streets, mileposts, and numbered exit data.</td>
+    </tr>
+     <tr>
+      <td>Transportation</td>       
+      <td><a href="{% link data/transportation/street-network-analysis/index.html %}">Street Network Analysis</a></td>
+      <td>map data</td>
+      <td>AGRC</td>
+      <td>Network datasets designed for routing, service areas, drive times, and distance analysis. Includes statewide street network dataset and Wasatch Front multimodal network dataset.</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>      
+      <td><a href="{% link data/transportation/transit/index.html %}">Transit</a></td>
+      <td>map data</td>
+      <td>UTA</td>
+      <td>Routes and stops for buses, light rail and commuter rail</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td><a href="https://data-uplan.opendata.arcgis.com/" target="_blank" rel="noopener">UDOT Business System Data</a></td>
+      <td>data portal</td>
+      <td>UDOT</td>
+      <td>Utah Department of Transportation geospatial data and services gateway website. Includes detailed data for projects, pavement management, planning, medians, barriers, signs,traffic volume, lanes, etc available in various formats</td>
+    </tr>   
+    <tr>
+      <td>Water</td>
+      <td><a href="{% link data/planning/water-related-land/index.html %}">Water Related Land Use</a></td>
+      <td>map data</td>
+      <td>DNR</td>
+      <td>Water usage-related polygon map data, published annually that depicts the types and extent of irrigated crops as well as information concerning phreatophytes, wet/open water areas, dry land agriculture and residential/industrial areas</td>
     </tr>
   </tbody>
 </table>
