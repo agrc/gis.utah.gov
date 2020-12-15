@@ -12,9 +12,9 @@ tags:
   - open sgid
 ---
 
-The Open SGID is a cloud hosted, publicly available PostGIS database containing SGID data. This database complements the web services and data downloads offered on our [Open Data site](https://opendata.gis.utah.gov/).
+The Open SGID is a cloud hosted, publicly available PostGIS database containing our currated SGID data. This database is one part of the [SGID]({% link sgid/index.html %}) and complements the web services and data downloads offered on our [Open Data site](https://opendata.gis.utah.gov/).
 
-To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.html %}). To learn more about the SGID and the data, please visit the [AGRC data page]({% link data/index.html %}).
+To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.html %}). To learn more about the data categories available in the SGID, please visit the [AGRC data page]({% link data/index.html %}).
 
 ### Before you Connect...
 {: .text-left }
@@ -41,17 +41,17 @@ The username and password to use to connect to the Open SGID can be found on the
 
     ![ArcGIS Desktop Add Database]({% link images/desktop_opensgid_add_db.png %}){: .outline}
 
-1. Use the following connection properties:
+1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
     ![ArcGIS Desktop Connection Properties]({% link images/desktop_opensgid_conn.png %}){: .outline}
 
 ##### ArcGIS Pro
 
-1. Open the Catalog pane, right-click `Databases`, and select `Add Database`.
+1. Open the Catalog pane, right-click `Databases`, and select `New Database Connection`.
 
     ![ArcGIS Pro Add Database]({% link images/pro_opensgid_add_db.png %}){: .outline}
 
-1. Use the following connection properties:
+1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
     ![ArcGIS Pro Connection Properties]({% link images/pro_opensgid_conn.png %}){: .outline}
 
@@ -61,7 +61,7 @@ The username and password to use to connect to the Open SGID can be found on the
 
     ![DBeaver Add Database]({% link images/dbeaver_opensgid_add_db.png %}){: .outline}
 
-1. Use the following connection properties:
+1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
     ![DBeaver Connection Properties]({% link images/dbeaver_opensgid_conn.png %}){: .outline}
 
@@ -72,7 +72,7 @@ The username and password to use to connect to the Open SGID can be found on the
 
     ![QGIS Add Database]({% link images/qgis_opensgid_add_db.png %})
 
-1. Use the following connection properties:
+1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
     ![QGIS Connection Properties]({% link images/qgis_opensgid_conn.png %}){: .outline}
 
@@ -83,6 +83,6 @@ The username and password to use to connect to the Open SGID can be found on the
 
     ![Global Mapper Add Database]({% link images/gm_opensgid_add_db.png %})
 
-1. Use the following connection properties:
+1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
     ![Global Mapper Connection Properties]({% link images/gm_opensgid_conn.png %}){: .outline}
