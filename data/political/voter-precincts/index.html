@@ -14,6 +14,7 @@ VotingPrecincts:
     name: Utah Vista Ballot Areas
     item_id: d33f596419d74948a45070275632b8e0
   updates:
+    - December 2020
     - September 2020
     - October 2019
     - July 2019
@@ -31,7 +32,7 @@ VotingPrecincts:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/VoterPrecinctsSmall.png %}" alt="VotingPrecinctsSmall" />
-    <p>Vista Ballot Areas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.</p>
+    <p>Vista Ballot Areas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines. Updates are done to the precincts periodically, corresponding with Annexations and city/town boundary changes.</p>
     <dl>
       <dt>VISTAID</dt>
       <dd>A 11 character field that contains the precinct ID and optional subprecinct ID (separated by a colon).</dd>
@@ -44,7 +45,7 @@ VotingPrecincts:
       <dt>EFFECTIVEDATE</dt>
       <dd>The date the precinct boundary took effect. A date of 1/1/2011 is the default effective date.</dd>
       <dt>RcvdDate</dt>
-      <dd>Indicate the date the precinct boundary was sent from the county to the AGRC.</dd>
+      <dd>Indicate the date the precinct boundary was sent from the county to the AGRC. Updates will reflect the new city/town boundaries due to annexations.</dd>
     </dl>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.voting %}</p>
     <h5>Related Resources</h5>
