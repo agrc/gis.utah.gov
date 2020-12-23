@@ -8,24 +8,24 @@ tags:
 categories: []
 date: 2011-11-23 15:24:53 -0700
 FuelSites:
-  downloads:
-    - url: https://utah.maps.arcgis.com/home/item.html?id=34fbc5c654ee44c4bfb14c8d9fc73fc5
-      label: State Fuel Sites
+  hub:
+    - name: Utah State Fuel Sites
+    - item_id: 8d9bc67285fb421fb15d55342148ac1e
   updates:
-    - 2009
+    - December 2020
 ---
 <figure class="caption caption--right">
   <img class="caption__image" title="map" src="{% link images/StateFuelSites.png %}" alt="State Fuel Sites" />
   <figcaption class="caption__text">State Fuel Sites</figcaption>
 </figure>
 {% include abstract.html name="State Fuel Sites"
-abstract="This dataset contains fuel sites for the State Of Utah and contains the site name and number, address, number of fuel tanks and type, facility type, status and more." %}
+abstract="This dataset contains fuel sites for the State Of Utah and contains the address, site name, site status, and whether it offers gas and/or diesel. The dataset receives periodic updates and is maintained in collaboration with the <a href="https://fleet.utah.gov">Utah Division of Fleet Operations</a>." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="FuelSites">State Fuel Sites</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>This dataset contains fuel sites for the State Of Utah and contains the site name and number, address, number of fuel tanks and type, facility type, status and more.</p>
+    <p>This dataset contains fuel sites for the State Of Utah and contains the address, site name, site status, and whether it offers gas and/or diesel. The dataset receives periodic updates and is maintained in collaboration with the <a href="https://fleet.utah.gov">Utah Division of Fleet Operations</a>.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="FuelSites"
