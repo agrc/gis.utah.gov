@@ -8,7 +8,7 @@ categories:
   - Featured
 tags:
   - gis
-  - election
-  - mapping
+  - elections
+  - maps
 ---
 
