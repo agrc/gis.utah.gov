@@ -22,7 +22,7 @@ categories: []
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
 During 2019 AGRC and the Utah Division of Emergency Management acquired [~6,114 square miles]({% link images/lidar_kane_county_2019_coverage.png %}) of 2 points per meter Quality Level 2 LiDAR of Kane County and portions of the Greater Sevier Watershed. The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from [The National Map](https://viewer.nationalmap.gov/basic/) {{ contact }}  
-_**Please note:** Out of respect of federally recognized Tribal lands, project deliverables over these lands have been withheld._
+_**Please note:** Out of respect for federally recognized Tribal lands, project deliverables over these lands have been withheld until permission to release has been granted._
 
 <ul class="dotless">
   <li>
