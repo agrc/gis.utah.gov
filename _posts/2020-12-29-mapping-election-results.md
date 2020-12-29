@@ -54,7 +54,7 @@ It’s no coincidence that maps have been used in elections for [more than a cen
 
 This post has shown how using a few simple GIS techniques can yield a clearer picture of the election. These techniques not only aid in telling a compelling story, but they also give us a better understanding of the political landscape and our local communities.
 
-You can explore the maps from this post in the accompanying [interactive web map] for Salt Lake County(https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc). The methodology used is described below.
+You can explore the maps from this post in the accompanying [interactive web map](https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc) for Salt Lake County. The methodology used is described below.
 
 I encourage you to apply these techniques when mapping other population-based data such as demographic, economic, or housing data.
 
