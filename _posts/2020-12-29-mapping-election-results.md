@@ -56,7 +56,7 @@ This post has shown how using a few simple GIS techniques can yield a clearer pi
 
 You can explore the political landscape in Salt Lake County in this accompanying [interactive web map](https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc). The methodology used is described at the end of this post.
 
-I encourage you to apply the methodology presented in this post when mapping other population-based data such as demographic, economic, or housing data.
+I encourage you to apply these techniques when mapping other population-based data such as demographic, economic, or housing data.
 
 Reach out to me via email or on [Twitter](https://twitter.com/bunce_greg) to continue the conversation.
 
