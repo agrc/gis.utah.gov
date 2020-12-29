@@ -14,7 +14,7 @@ tags:
 
 You've probably heard the saying, there are many ways to peel an orange. Similarly, you've likely noticed, there are [many ways](https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html) to display election results. In this post, we'll take a closer look at how GIS can yield a clearer picture of the political landscape.
 
-Many of the maps that we see on election night, or in the media afterward, over-represent the distribution of voters. These maps work well for tabulation, but if we want a more representative view of our community -or the nation-, we can to apply a few GIS techniques.
+Many of the maps that we see on election night, or in the media afterward, over-represent the distribution of voters. These maps work well for tabulation, but if we want a more representative view of our community -or the nation-, we can to apply a few simple GIS techniques.
 
 > The final product from this post can be viewed in this accompanying [interactive web map](https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc). The methodology used is described at the end of this post.
 
@@ -54,7 +54,7 @@ It’s no coincidence that maps have been used in elections for [more than a cen
 
 This post has shown how using a few simple GIS techniques can yield a clearer picture of the election. These techniques not only aid in telling a compelling story, but they also give us a better understanding of the political landscape and our local communities.
 
-You can explore the political landscape in Salt Lake County in this accompanying [interactive web map](https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc). The methodology used is described at the end of this post.
+You can explore the maps from this post in the accompanying [interactive web map] for Salt Lake County(https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc). The methodology used is described below.
 
 I encourage you to apply these techniques when mapping other population-based data such as demographic, economic, or housing data.
 
