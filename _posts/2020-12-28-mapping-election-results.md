@@ -67,6 +67,6 @@ I encourage you to apply the methodology presented in this post when mapping oth
 - Election results were downloaded from [Salt Lake County Clerk’s Office](https://results.enr.clarityelections.com/UT/Salt_Lake/107137/Web02.264677/#/?undefined).
 - The election results were joined to the [SGID Voting Precincts](https://opendata.gis.utah.gov/datasets/utah-vista-ballot-areas), using the precinctid field.
 - The voting precincts (now containing the election results) were then spatially joined to the 100-meter hexagons using Intersect.
-- The results were then symbolized using Graduated Colors, with Natural Breaks (Jenks), limited to 3 Classes.
+- The results were then symbolized using [Graduated Colors](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/graduated-colors.htm), with Natural Breaks (Jenks), limited to 3 Classes.
 
 Reach out to me via email or on [Twitter](https://twitter.com/bunce_greg) to continue the conversation.
