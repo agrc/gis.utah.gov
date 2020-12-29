@@ -62,7 +62,7 @@ I encourage you to apply the methodology presented in this post when mapping oth
 {: .text-left}
 
 - [SGID Address Points](https://opendata.gis.utah.gov/datasets/utah-address-points) were used as a proxy for voter residences in Salt Lake County. Non-residential addresses were removed.
-- The 100-meter hexagons (polygons) were created from the address point using [optimized hot spot analysis](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/optimized-hot-spot-analysis.htm).
+- The 100-meter hexagons (polygons) were created from the address point using [Optimized Hot Spot Analysis](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/optimized-hot-spot-analysis.htm).
 - Hexagons containing only one address were removed from the map.
 - Election results were downloaded from [Salt Lake County Clerk’s Office](https://results.enr.clarityelections.com/UT/Salt_Lake/107137/Web02.264677/#/?undefined).
 - The election results were joined to the [SGID Voting Precincts](https://opendata.gis.utah.gov/datasets/utah-vista-ballot-areas), using the precinctid field.
