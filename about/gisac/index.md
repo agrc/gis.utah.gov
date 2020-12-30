@@ -29,4 +29,8 @@ As a part of our effort to build a statewide directory of GIS professionals we h
 
 To best understand and document the skills and experiences of Utah GIS professionals, GISAC has created a [form](forms.gle/tsQvpCbTcUnzESx99)[^1] to aid the creation of an inventory of technical GIS-related products, including software, hardware, SaaS, and PaaS, that agencies have or are using. With the data collected through the form, GISAC can help spread relevant information to assist decision-makers when they are building or deploying GIS solutions. Please complete the [form](forms.gle/tsQvpCbTcUnzESx99)[^1] to help create this resource.
 
+### Stay Informed
+
+The [GISAC Utah Public Notice](https://utah.gov/pmn/sitemap/publicbody/2172.html) website is the resource to stay connected and informed of future meeting schedules and past meeting notes and other resources. We encourage you to sign up for email notifications.
+
 [^1]: This form is password protected and only available to UtahID account holders.
