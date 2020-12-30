@@ -21,7 +21,7 @@ date: 2020-08-28 00:00:00 -0600
 - Create a document that describes how GIS helps run the business of government. In other words, stories of how GIS streamlines business processes for the agencies we represent.
 - Create an index of IT and GIS widgets available to all or at least implemented and proven successful (i.e. repeatable)
 
-### Be Known. Be Found. Be Seen.
+### Be Known, Be Found, Be Seen
 
 As a part of our effort to build a statewide directory of GIS professionals we have created a form to collect your information. Please [register](https://forms.gle/ea6iPCQ72xwEkRR18) to become a part of this public GIS professional directory.
 
