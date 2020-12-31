@@ -10,9 +10,9 @@ title: 2015 Colorado, Green, and Yampa Rivers LiDAR Elevation Data
 categories: []
 ---
 
-![Sample]({% link images/lidar_rivers.png %}){: .flex .flex--center .outline }
+![Sample]({% link images/lidar_rivers.png %}){: .flex .flex--center .outline loading="lazy" }
 
-[![Project area map]({% link images/lidar_rivers_coverage_sm.png %} "click for map")]({% link images/lidar_rivers_coverage.png %}){:.inline-text-right}
+[![Project area map]({% link images/lidar_rivers_coverage_sm.png %} "click for map")]({% link images/lidar_rivers_coverage.png %}){:.inline-text-right loading="lazy" }
 
 During late Fall of 2015 the Utah Division of Forestry, Fire & State Lands and the U.S. National Park Service acquired [~152 square miles]({% link images/lidar_rivers_coverage.png %}) covering ~680 river miles of 8 points per meter LiDAR of the Colorado, Green, and Yampa rivers in Utah and Colorado. The LiDAR collection is mainly of the river course and not the surrounding canyons. A small ~.8 square mile area was also collected in Arches N.P. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are available from [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1). This elevation data was collected October and November of 2015 during low flow conditions.
 

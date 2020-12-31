@@ -19,7 +19,7 @@ The data and services provided by AGRC is licensed under a [Creative Commons Att
 {: .text-left}
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
-{: .text-center}
+{: .text-center loading="lazy" }
 
 ### License Attribution
 {: .text-left}

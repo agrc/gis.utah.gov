@@ -9,7 +9,7 @@ categories:
 tags:
   - imagery
 ---
-[![discover logo]({% link discover/images/discover-logo.png %}){: .flex .flex--center}]({% link discover/index.html %})
+[![discover logo]({% link discover/images/discover-logo.png %}){: .flex .flex--center loading="lazy"}]({% link discover/index.html %})
 
 Do you need a quick base map for your [GIS, CAD, or web services]({% link discover/index.html %}#connect)? AGRC provides several multiscale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow.
 

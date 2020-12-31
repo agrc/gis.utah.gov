@@ -29,7 +29,7 @@ The Automated Geographic Reference Center (AGRC) is the State of Utah’s map te
 We are located on the 5th floor of the State Office building, directly north of the Capitol [directions and parking]({% link about/visiting-agrc/index.html %}).  AGRC and the Utah CIO’s office compose the Integrated Technologies division within the Department of Technology Services.
 
 [![AGRC staff photo](./AGRC_Staff_2019_small.png){: .outline}](./AGRC_Staff_2019.png)
-{: .pull-right .pad-left }
+{: .pull-right .pad-left loading="lazy" }
 
 AGRC is directed under [mapping-related sections of Utah statute]({% link about/code/index.html %}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
 

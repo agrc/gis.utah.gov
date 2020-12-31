@@ -39,32 +39,31 @@ The username and password to use to connect to the Open SGID can be found on the
 
 1. Open ArcCatalog and `Add Database Connection`.
 
-    ![ArcGIS Desktop Add Database]({% link images/desktop_opensgid_add_db.png %}){: .outline}
+    ![ArcGIS Desktop Add Database]({% link images/desktop_opensgid_add_db.png %}){: .outline loading="lazy" }
 
 1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
-    ![ArcGIS Desktop Connection Properties]({% link images/desktop_opensgid_conn.png %}){: .outline}
+    ![ArcGIS Desktop Connection Properties]({% link images/desktop_opensgid_conn.png %}){: .outline loading="lazy" }
 
 ##### ArcGIS Pro
 
 1. Open the Catalog pane, right-click `Databases`, and select `New Database Connection`.
 
-    ![ArcGIS Pro Add Database]({% link images/pro_opensgid_add_db.png %}){: .outline}
+    ![ArcGIS Pro Add Database]({% link images/pro_opensgid_add_db.png %}){: .outline loading="lazy" }
 
 1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
-    ![ArcGIS Pro Connection Properties]({% link images/pro_opensgid_conn.png %}){: .outline}
+    ![ArcGIS Pro Connection Properties]({% link images/pro_opensgid_conn.png %}){: .outline loading="lazy" }
 
 ##### DBeaver
 
-1. In DBeaver, click the `New Database Connection` button and choose `PostresSQL`.
+1. In DBeaver, click the `New Database Connection` button and choose `PostgreSQL`.
 
-    ![DBeaver Add Database]({% link images/dbeaver_opensgid_add_db.png %}){: .outline}
+    ![DBeaver Add Database]({% link images/dbeaver_opensgid_add_db.png %}){: .outline loading="lazy" }
 
 1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
-    ![DBeaver Connection Properties]({% link images/dbeaver_opensgid_conn.png %}){: .outline}
-
+    ![DBeaver Connection Properties]({% link images/dbeaver_opensgid_conn.png %}){: .outline loading="lazy" }
 
 ##### QGIS
 
@@ -74,15 +73,14 @@ The username and password to use to connect to the Open SGID can be found on the
 
 1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
-    ![QGIS Connection Properties]({% link images/qgis_opensgid_conn.png %}){: .outline}
-
+    ![QGIS Connection Properties]({% link images/qgis_opensgid_conn.png %}){: .outline loading="lazy" }
 
 ##### Global Mapper
 
 1. In Global Mapper, click `File`, and select `Open Spatial Database....`.
 
-    ![Global Mapper Add Database]({% link images/gm_opensgid_add_db.png %})
+    ![Global Mapper Add Database]({% link images/gm_opensgid_add_db.png %}){: loading="lazy" }
 
 1. Enter the connection information from the [Open SGID repository](https://github.com/agrc/open-sgid#connection-information):
 
-    ![Global Mapper Connection Properties]({% link images/gm_opensgid_conn.png %}){: .outline}
+    ![Global Mapper Connection Properties]({% link images/gm_opensgid_conn.png %}){: .outline loading="lazy" }
