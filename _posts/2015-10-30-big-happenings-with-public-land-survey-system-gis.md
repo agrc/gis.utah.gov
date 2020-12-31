@@ -12,7 +12,7 @@ categories:
   - GPS-surveyor
 ---
 
-<a href="{% link images/CoMarker_large.jpg %}"><img src="{% link images/CoMarker.jpg %}" alt="" title="CoMarker" class="inline-text-left" /></a>Good things are happening in Utah regarding the Public Land Survey System (PLSS), also known as the township, range, and section grid, which forms the foundation for GIS map representations of public and private lands and other related Utah map layers.
+<a href="{% link images/CoMarker_large.jpg %}"><img src="{% link images/CoMarker.jpg %}" alt="" title="CoMarker" class="inline-text-left" loading="lazy" /></a>Good things are happening in Utah regarding the Public Land Survey System (PLSS), also known as the township, range, and section grid, which forms the foundation for GIS map representations of public and private lands and other related Utah map layers.
 
 The PLSS grid is physically defined on the ground in the form of survey monuments of various types. These take forms ranging from etched rocks to modern post and caps.
 

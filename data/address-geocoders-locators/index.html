@@ -44,7 +44,7 @@ GeocodingToolbox:
     - January 2014, The ArcGIS Desktop tool was created
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/AddPointsGC2.png %}" alt="Address Locator"/>
+  <img class="caption__image" src="{% link images/AddPointsGC2.png %}" alt="Address Locator" loading="lazy" />
   <figcaption class="caption__text">Concept of an Address Locator</figcaption>
 </figure>
 {% include abstract.html download="https://drive.google.com/a/utah.gov/uc?id=0B_Y2d5UmL8_zUUdDVzdBaTJIQ2c&export=download"
@@ -104,7 +104,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     <h3 id="RoadsAddressLocatorPackage">Roads Address Locator</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" />
+    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" loading="lazy" />
     <p>AGRC_RoadsLocator is an ArcGIS 10 address locator that references the statewide Transportation.Roads feature class and uses the right and left zip code fields and/or the right and left address systems fields for zone. This address locator is built using an alternate names table, as recommended in NextGen 911 model. For example, Redwood Road is aliased as both Highway 68 and 1700 West. Read more about the <a href="{% link _posts/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process.md %}">underlying data for this locator and how it was created</a>.</p>
     <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>
@@ -124,7 +124,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     <h3 id="AddressPointLocatorPackage">Address Points Address Locator</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" />
+    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" loading="lazy" />
     <p>AGRC_AddressPointLocator is an ArcGIS 10 address locator that references the statewide Location.AddressPoints feature class and uses zip code and/or address system for zone. Geocoding match rates will improve as the Location.AddressPoints feature class continues to be developed.</p>
     <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>
@@ -143,7 +143,7 @@ abstract="Adding a geographic point for an address is a fundamental GIS task. To
     <h3 id="CompositeLocatorPackage">Composite Address Locator</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" />
+    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" loading="lazy" />
     <p>AGRC_CompositeLocator is an ArcGIS 10 composite address locator built from the AGRC_AddressPointLocator and the AGRC_RoadsLocator locators and uses zip code and/or address system for zone. These locators reference the Transportation.Roads and Location.AddressPoints feature classes.</p>
     <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>

@@ -24,7 +24,7 @@ ContourPolygons:
     - As needed
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/500_ft_contours-lg.jpg %}" alt="Contours" />
+  <img class="caption__image" src="{% link images/500_ft_contours-lg.jpg %}" alt="Contours" loading="lazy" />
   <figcaption class="caption__text">Contour sample</figcaption>
 </figure>
 {% include abstract.html
@@ -36,7 +36,7 @@ abstract="This datasets contain a statewide coverage of 500 foot contours derive
     <h3 id="500FootContours">500 Foot Contours</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/500_ft_contours-sm.jpg %}" alt="Contours" />
+    <img class="inline-text-left outline" src="{% link images/500_ft_contours-sm.jpg %}" alt="Contours" loading="lazy" >
     <p>ELEVATION.Contours500Ft is a statewide dataset of contour lines at a 500 foot interval for cartography and approximate elevation identification. Elevation information is stored in the 500 Foot contour lines in an attribute <code>ELEV</code> associated with each contour isoline.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83. There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID. This contour dataset was created by AGRC.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.contours %}</p>
@@ -48,7 +48,7 @@ abstract="This datasets contain a statewide coverage of 500 foot contours derive
     <h3 id="ContourPolygons">Generalized Contour Polygons 200 Foot</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/contourPolys.png %}" alt="Contours" />
+    <img class="inline-text-left outline" src="{% link images/contourPolys.png %}" alt="Contours" loading="lazy" />
     <p>SGID10.ELEVATION.ContoursGeneralized200Ft are intended for general cartographic purposes and representing approximate elevation and terrain. Contours were created by applying a focal filter to a 30 meter DEM, reclassifying the DEM into 200 foot intervals and converting to polygons. Would you like to create your own contour polygons or are you simply curious how it was done? Read the <a href="{% link _posts/2017-11-27-dumbing-down-terrain-with-contour-polygons.md %}">in-depth discussion</a> of how the contours were created and derived.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.contours %}</p>
   </div>

@@ -30,7 +30,7 @@ USGS-3DEP-DEM:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <a title="Slope" href="{% link images/ned_lg.jpg %}" class="inline-text-left">
-      <img src="{% link images/thumbs_ned.jpg %}" class="inline-text-left outline" alt="dem"/>
+      <img src="{% link images/thumbs_ned.jpg %}" class="inline-text-left outline" alt="dem" loading="lazy" />
     </a>
     <p>The USGS <a href="https://nationalmap.gov/3DEP/">3DEP</a> elevation products from <a href="https://nationalmap.gov/index.html">The National Map</a> are the primary elevation datasets available from the USGS. These elevation products are continually updated by the USGS with LiDAR collected through the 3DEP program as part of the <a href="https://nationalmap.gov/3DEP/neea.html">National Enhanced Elevation Assessment</a>. <a href="https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer">Imagery services</a> of these elevation products are also available.</p>
     <p>Want to determine where lidar information was used to update 5, 10, and 30 meter USGS DEM products? There are spatial metadata files for each elevation product that have polygons depicting what the source data is for the DEM in that area. They can be found on the <a href="https://www.usgs.gov/core-science-systems/ngp/ss/3dep-product-metadata">3DEP Product Metadata</a> page. Links to the spatial metadata files for 5 meter, 1/3 Arc-Second (10 meter), and 1 Arc-Second (30 meter) can be found under “Standard DEMs”. The data dictionary that describes each attribute and their domains is also available from the <a href="https://www.usgs.gov/media/files/3dep-spatial-metadata-glossary">3DEP Spatial Metadata Glossery</a>. PMETHOD (Production Method) is the attribute you are looking for and any polygon with a PMETHOD value of <code>7</code> has lidar as it’s source. {% include contact.html subject="USGS Elevation Products" contact=site.data.contacts.tnm_help text="If you need further assistance please contact the" %}</p>
@@ -51,7 +51,7 @@ USGS-3DEP-DEM:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <a title="First Return" href="{% link images/lidar_lg.jpg %}">
-      <img class="inline-text-left outline" src="{% link images/thumbs_lidar.jpg %}" alt="lidar"/>
+      <img class="inline-text-left outline" src="{% link images/thumbs_lidar.jpg %}" alt="lidar" loading="lazy" />
     </a>
     <p>Light Detection and Ranging (LiDAR) elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by illuminating the target with light often using pulses from a laser. Currently this is the most accurate elevation dataset AGRC has but it is only available for some areas of the state. In addition to the bare-earth DEMs/DTMs and first-return DSMs, most LiDAR data also has point clouds available {% include contact.html subject=page.title contact=site.data.contacts.elevation text='by request from' %} Visit <a href="https://raster.utah.gov/">Raster.utah.gov</a> to explore all available LiDAR collections. For more information about LiDAR visit <a href="{% link data/elevation-and-terrain/exploring-lidar/index.html %}">Exploring LiDAR</a>.</p>
     <p>AGRC has partnered with different agencies over the years to acquire LiDAR data.</p>
@@ -68,7 +68,7 @@ USGS-3DEP-DEM:
           <td>1 meter</td>
           <td>Kane County</td>
           <td><a href="{% link data/elevation-and-terrain/2019-lidar-kane-county/index.md %}">View</a></td>
-        </tr>        
+        </tr>
         <tr>
           <td>2019</td>
           <td>.5 meter</td>
@@ -204,7 +204,7 @@ USGS-3DEP-DEM:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <a title="Hillshade" href="{% link images/auto-corr_dem_lg.jpg %}">
-      <img src="{% link images/thumbs_auto-corr_dem.jpg %}" class="inline-text-left outline" alt="auto-corr_dem"/>
+      <img src="{% link images/thumbs_auto-corr_dem.jpg %}" class="inline-text-left outline" alt="auto-corr_dem" loading="lazy" />
     </a>
     <p>AGRC has a statewide coverage of 5 meter Auto-Correlated DEMs in addition to some 2 meter areas. The DEMs were created from the imagery collected during the 2006 NAIP and HRO aerial photography flights. <strong>The auto-correlation process is not as rigorous as other methods of elevation modeling such as photogrammetry, lidar mapping, radar mapping, etc, and therefore end-users should be aware that anomalies are expected within the elevation dataset.</strong> In comparison to the USGS DEM datasets, the 2 and 5-meter DEMs in some areas provides higher resolution and horizontal accuracy but anomalies are present within the data.</p>
     <p>The DEM files are stored as <code>.asc</code> formatted files and are ~10MB per 2,000 X 2,000 meter block. This data is in a UTM NAD83 meters projection. The 2 meter DEMs have a Vertical Accuracy of RMSE 4.27' - NSSDA 95% 8.4' and a Horizontal Accuracy NSSDA, radial RMSE of 4.4', 95% confidence 7.6'. The 5 meter DEMs have a have a Vertical Accuracy of RMSE 4m - NSSDA 95% of 9.8m and a Horizontal Accuracy RMSE 3m, NSSDA 95% of 5.2m. For more information about the stated accuracy of the datasets please refer to the metadata and quality assurance reports below.</p>

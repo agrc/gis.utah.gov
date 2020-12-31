@@ -18,19 +18,19 @@ At NSGIC's Annual Conference this September, two of the national geospatial exce
 
 <div class="flex flex--center flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/nsgic_awards/KColeGOEDSmall.png %}" alt="Kelleigh Cole and GOED, Champion Award" />
+    <img class="caption__image" src="{% link images/nsgic_awards/KColeGOEDSmall.png %}" alt="Kelleigh Cole and GOED, Champion Award" loading="lazy" />
     <figcaption class="caption__text">Kelleigh Cole and GOED, Champion Award</figcaption>
   </figure>
   <figure class="caption">
-    <img class="caption__image" src="{% link images/nsgic_awards/ECurtisSmall.png %}" alt="Evan Curtis, Catalyst Award" />
+    <img class="caption__image" src="{% link images/nsgic_awards/ECurtisSmall.png %}" alt="Evan Curtis, Catalyst Award" loading="lazy" />
     <figcaption class="caption__text">Evan Curtis, Catalyst Award</figcaption>
   </figure>
   <figure class="caption">
-    <img class="caption__image" src="{% link images/nsgic_awards/RodBennett.png %}" alt="Rod Bennett" />
+    <img class="caption__image" src="{% link images/nsgic_awards/RodBennett.png %}" alt="Rod Bennett" loading="lazy" />
     <figcaption class="caption__text">Rod Bennett (left), Catalyst Award</figcaption>
   </figure>
   <figure class="caption">
-    <img class="caption__image" src="{% link images/nsgic_awards/TKnowltonSmall.png %}" alt="Ted Knowlton, Catalyst Award" />
+    <img class="caption__image" src="{% link images/nsgic_awards/TKnowltonSmall.png %}" alt="Ted Knowlton, Catalyst Award" loading="lazy" />
     <figcaption class="caption__text">Ted Knowlton, Catalyst Award</figcaption>
   </figure>
 </div>

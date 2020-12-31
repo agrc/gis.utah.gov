@@ -29,7 +29,7 @@ In the Voter Results map, our attention is drawn away from the industrial and na
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/pres_elec_2020_results.png %}" alt="2020 Election Results" />
+    <img class="caption__image" src="{% link images/pres_elec_2020_results.png %}" alt="2020 Election Results" loading="lazy" />
     <figcaption class="caption__text">Figure 1: 2020 Presidential Election Results in Salt Lake County</figcaption>
   </figure>
 </div>
@@ -45,7 +45,7 @@ You instantly notice that the Salt Lake Valley is polarized. But, with the addit
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/pres_elec_2020_results_gradient.png %}" alt="2020 Election Results Winning Margin" />
+    <img class="caption__image" src="{% link images/pres_elec_2020_results_gradient.png %}" alt="2020 Election Results Winning Margin" loading="lazy" />
     <figcaption class="caption__text">Figure 2: Symbolizing the Winning Margin</figcaption>
   </figure>
 </div>
