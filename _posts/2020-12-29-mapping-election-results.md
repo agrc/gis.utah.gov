@@ -14,7 +14,7 @@ tags:
 
 You've probably heard the saying, there are many ways to peel an orange. Similarly, you've likely noticed, there are [many ways](https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html) to display election results. In this post, we'll take a closer look at how GIS can yield a clearer picture of the political landscape.
 
-Many of the maps that we see on election night, or in the media afterward, over-represent the distribution of voters. These maps work well for tabulation, but if we want a more representative view of our community -or the nation-, we can to apply a few simple GIS techniques.
+Many of the maps that we see on election night, or in the media afterward, over-represent the distribution of voters. These maps work well for tabulation, but if we want a more representative view of our community -or the nation-, we can apply a few GIS techniques.
 
 > You can explore the maps from this post in the accompanying [interactive web map](https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc). The methodology is described below.
 
@@ -34,12 +34,12 @@ In the Voter Results map, our attention is drawn away from the industrial and na
   </figure>
 </div>
 
-### Display the winning margin
+### Display the percentage of votes
 {: .text-left}
 
-If we're trying to get a feel for the political landscape, then It's essential to see how the election was won. Displaying the winner is fundamental, but adding the winning margin can enrich the story. A close win tells a different story than that of a landslide. Presenting this information on the map helps paint a more telling story of our community.
+If we're trying to get a feel for the political landscape, then It's essential to see how the election was won. Displaying the winner is fundamental, but adding the percentage of win enriches the story. A close win tells a different story than that of a landslide. Presenting this information on the map helps paint a more telling story of our community.
 
-Displaying quantitative spatial data is where GIS shines. There are a variety of methods available, but the basic concept is to symbolize the results using a color gradient. In this case, darker colors intuitively represent areas where the winning margin is greatest. As shown in Figure 2, the winning margin adds a new dimension to the map and it gives the viewer another aspect to explore.
+Displaying quantitative spatial data is where GIS shines. There are a variety of methods available, but the basic concept is to symbolize the results using a color gradient. In our case, darker colors intuitively represent areas where a larger percentage went to the winning candidate. As shown in Figure 2, the percentage of votes adds a new dimension to the map and it gives the viewer another aspect to explore.
 
 You instantly notice that the Salt Lake Valley is polarized. But, with the addition of graduated colors, you also see that this polarization strengthens the further north or south you go. The downtown and university areas are in stark contrast to the newer, suburban neighborhoods in the south end of the valley.
 
@@ -69,4 +69,4 @@ Let's continue the conversation on [Twitter](https://twitter.com/bunce_greg) or
 - Election results were downloaded from [Salt Lake County Clerk’s Office](https://results.enr.clarityelections.com/UT/Salt_Lake/107137/Web02.264677/#/?undefined).
 - The election results were joined to the [SGID Voting Precincts](https://opendata.gis.utah.gov/datasets/utah-vista-ballot-areas), using the precinctid field.
 - The voting precincts (now containing the election results) were then spatially joined to the 100-meter hexagons using Intersect.
-- The results were then symbolized using [Graduated Colors](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/graduated-colors.htm), with Natural Breaks (Jenks), limited to 3 Classes.
+- The results were then symbolized based on the percentage of votes the winning candidate had of the total, using [Graduated Colors](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/graduated-colors.htm), with Manual Breaks, limited to 3 Classes.
