@@ -35,7 +35,7 @@ The first decision an author needs to make is whether to create a `Post` or a `P
 #### The Starting Point
 
 ![templater screenshot]({% link about/contributing/images/content-templater.png %})
-{:.inline-text-right}
+{:.inline-text-right loading="lazy" }
 The ever resourceful [Scott Davis](https://twitter.com/@SThomasDavis) created a great tool, the [Templater](http://agrc.github.io/templater/), to create a starting point for authoring new content. This is _the_ entry point for all authors creating new content.
 
 **Start** by creating a title. This will be used to create the url on the website and also the heading for the article. **Next** choose your content type based on the decision above. Fill out the Author information - This will be displayed above the title on the post. Please use your **full name**. Once you **click** `Generate`, the templater will present you with a `File Path` and `Contents`.

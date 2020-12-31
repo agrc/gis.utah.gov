@@ -54,7 +54,7 @@ Your answers to these questions can be plugged into the basic metadata elements 
 
 _Note: If you contribute data to Utah's State Geographic Information Database (SGID), we encourage you to use our [metadata form](https://docs.google.com/forms/d/e/1FAIpQLSeJSV935GTN3djtErkBdeXkumuZvd10z2805It1-eFn0Mlo9w/viewform?usp=sf_link). It's a great way to update your metadata and make it more discoverable. The form covers all the questions above -and best of all- after you submit your responses, your portion of the process is done! AGRC, in collaboration with the DTS editor, will handle the remaining details._
 
-The above questions are designed to work with the ESRI [Item Description](https://desktop.arcgis.com/en/arcmap/latest/manage-data/metadata/metadata-standards-and-styles.htm#ESRI_SECTION1_29222DC149544E89A4147541A4ACAF86) metadata style. We have found this style to be well-balanced for creating useful, as well as achievable, metadata.  
+The above questions are designed to work with the ESRI [Item Description](https://desktop.arcgis.com/en/arcmap/latest/manage-data/metadata/metadata-standards-and-styles.htm#ESRI_SECTION1_29222DC149544E89A4147541A4ACAF86) metadata style. We have found this style to be well-balanced for creating useful, as well as achievable, metadata.
 
 Let's take a closer look at the basic elements of SGID metadata. We like to think of these as our minimum requirements.
 
@@ -109,6 +109,6 @@ This section covers limitation and licensing on the data.
 
 The language presented here is for reference only and is populated automatically via our [Sweeper](https://github.com/agrc/sweeper) project.
 
->The data herein, including but not limited to geographic data, tabular data, analytical data, electronic data structures or files, are provided "as is" without warranty of any kind, either expressed or implied, or statutory, including, but not limited to, the implied warranties or merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of the data is assumed by the user.  
->[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
+>The data herein, including but not limited to geographic data, tabular data, analytical data, electronic data structures or files, are provided "as is" without warranty of any kind, either expressed or implied, or statutory, including, but not limited to, the implied warranties or merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of the data is assumed by the user.
+>[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/){: loading="lazy" }
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

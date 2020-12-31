@@ -13,7 +13,7 @@ tags:
   - location
   - luca
 ---
-![Census LUCA Program, 2018]({% link images/LUCA2018.png %}){: .inline-text-right .outline }This page contains information, data resources, tips, etc. for Utah participants in the US Census Bureau's Local Update of Census Addresses (LUCA) program.
+![Census LUCA Program, 2018]({% link images/LUCA2018.png %}){: .inline-text-right .outline loading="lazy" }This page contains information, data resources, tips, etc. for Utah participants in the US Census Bureau's Local Update of Census Addresses (LUCA) program.
 
 ### Contents
 {: .text-left }
@@ -87,7 +87,7 @@ And, for these reasons, you should design your process to improve your local add
 
 ### Data Resources
 {: .text-left }
-[![Address Count Comaprison Example - click to enlarge]({% link images/PreLUCAAddressCountComparison.png %}){: .inline-text-right .outline }](https://docs.google.com/presentation/d/1hSYqhRELa7idGcsfsF7Cnb1BqNfMl1zqInk_yud65-4/edit#slide=id.p)**Statewide GIS Data Resources for the LUCA process**
+[![Address Count Comparison Example - click to enlarge]({% link images/PreLUCAAddressCountComparison.png %}){: .inline-text-right .outline loading="lazy" }](https://docs.google.com/presentation/d/1hSYqhRELa7idGcsfsF7Cnb1BqNfMl1zqInk_yud65-4/edit#slide=id.p)**Statewide GIS Data Resources for the LUCA process**
 
 - Census Address Count Block File. AGRC has prepared this dataset per Census directions as a [statewide shapefile or file geodatabase download](https://drive.google.com/drive/folders/1sKMQxDBjW8LknsEojZXZwMdVY1T1UXvO) or it can be used via an SDE connection (SGID10.Location.LUCABlockAddressCounts2017). An additional field has been added that contains the count of records in the current version of the SGID10.Location.AddressPoints statewide address map layer compiled from county address authorities.
 - Roads Missing from Census TIGER. _Available February 2018_, this file will contain a statewide collection of road centerline segments missing from the Census LUCA data files. In its instructions at the Utah LUCA training, Census indicated that LUCA participants can submit missing road segments but encouraged everyone to focus on missing addresses or address corrections. As soon as AGRC receives the statewide LUCA files, we will use a change detection algorithm to identify missing roads statewide and these will be part of the Utah state-level LUCA submission. Since the LUCA roads layer is not protected Title 13 data, we will make the missing roads layer available for download and local jurisdictions can concentrate on addressing and any other missing roads (if desired).

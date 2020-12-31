@@ -10,7 +10,7 @@ title: Sharing Data through the SGID Open Data Site
 categories: []
 ---
 
-![Open Data Homepage]({% link images/od_homepage.png %}){: .flex .flex--center .outline }
+![Open Data Homepage]({% link images/od_homepage.png %}){: .flex .flex--center .outline loading="lazy" }
 
 Does your department or division have authoritative datasets hosted in your own ArcGIS Online organization? Do you want to make them easy to find by anyone searching for Utah GIS Data? Share them on the [SGID Open Data website!](https://opendata.gis.utah.gov/) This makes them them easily discoverable while giving you full control over when they are updated.
 
@@ -24,7 +24,7 @@ Once you're a member of the groups, share each approved item to the appropriate 
 
 ## Presentation Tips
 
-![An annotated Open Data item]({% link images/od_card_anno.png %}){: .flex .flex--center }
+![An annotated Open Data item]({% link images/od_card_anno.png %}){: .flex .flex--center loading="lazy" }
 
 - The **title** is the first place people look for information. Because items in Open Data are also ArcGIS Online items that are searchable by anyone in the world, we have added "Utah" to the beginning of every title of our public ArcGIS Online items to provide better context.
 - A **user name** that includes the department/division's name or function helps users know where the dataset is coming from. For example, all the datasets we share are owned by the `UtahAGRC` user.
@@ -47,7 +47,7 @@ If you'd like to customize the name displayed in the sources list, we suggest se
 
 To change the organization name in the ArcGIS Online item's metadata, you need to make sure your ArcGIS Online organization has [metadata enabled](https://doc.arcgis.com/en/arcgis-online/administer/configure-details.htm#ESRI_SECTION1_7FE1F060E03046E692BB36E5F6E3B2AE). Then you can use the Metadata editor on the ArcGIS Online item page to set either field:
 
-![Organization name sources in ArcGIS Online metadata]({% link images/od_agol_md.png %}){: .flex .flex--center .outline }
+![Organization name sources in ArcGIS Online metadata]({% link images/od_agol_md.png %}){: .flex .flex--center .outline loading="lazy" }
 
 Depending on how you upload or overwrite your ArcGIS Online data, it may also overwrite the item's metadata with info from the source **feature class metadata**. We suggest you make any changes in both the feature class and ArcGIS Online metadata to avoid problems in the future. In the FGDC CSDGM style, the `Resource > Citation > Contact > Organization Name` field is in `Overview > Citation Contacts`. The `Resource > Contact > Organization Name` field is in `Resource > Points of Contact`.
 
