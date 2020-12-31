@@ -36,7 +36,7 @@ categories:
 <li>Continue coding <a href="http://www.joelonsoftware.com/articles/fog0000000068.html">in the zone</a></li>
 </ol>
 <p>This is what it looks like:</p>
-<p><img src="https://github.com/agrc/AmdButler/raw/master/docs/butler_add.gif"/></p>
+<p><img src="https://github.com/agrc/AmdButler/raw/master/docs/butler_add.gif" loading="lazy" /></p>
 <p>
 AMD Butler dynamically crawls your existing modules and builds a quick list. It only takes a few keystrokes to find the correct one and then it automatically adds it to your list of dependencies with an appropriate associated factory function argument. All without affecting the position of your cursor. This is especially nice to use after <a href="{% link _posts/2014-09-22-grunt-esri-slurp.md %}">slurping ESRI JS modules</a>. No more scrolling, no more trying to remember module names or preferred argument aliases. Just quickly add a dependency and get back to what you were doing.</p>
 <p>

@@ -15,7 +15,7 @@ categories:
   - Guestblog
 ---
 
-<a href="{% link images/FaultsWebApp.png %}"><img src="{% link images/FaultsWebApp-293x300.png %}" alt="" title="FaultsWebApp" class="inline-text-right" /></a>
+<a href="{% link images/FaultsWebApp.png %}"><img src="{% link images/FaultsWebApp-293x300.png %}" alt="" title="FaultsWebApp" class="inline-text-right" loading="lazy" /></a>
 
 The Utah Geological Survey (UGS) has made the Utah Quaternary Fault and Fold Database available through a [new interactive web application on the UGS website](https://geology.utah.gov/apps/qfaults/index.html). This database contains information on faults and fault-related folds considered to be potential earthquake sources. The faults and folds in the database are considered to have been sources of large earthquakes (about magnitude 6.5 or greater) during the Quaternary geologic time period (past 2.6 million years); these geologic structures are the most likely sources of large earthquakes in the future. The Utah Quaternary Fault and Fold Database is the primary source of Utah data for the Quaternary Fault and Fold Database of the United States maintained by the U.S. Geological Survey (USGS).
 

@@ -63,7 +63,6 @@ If you qualify to use the licensed imagery under the terms listed above, visit t
 {% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
 {{ license }}
 
-<img src="{% link discover/images/LoganCornMazeHarvest.png %}" alt="" title="Harvesting the corn maze at the American West Heritage Center, Wellsville" />
-
+<img src="{% link discover/images/LoganCornMazeHarvest.png %}" alt="" title="Harvesting the corn maze at the American West Heritage Center, Wellsville" loading="lazy" />
 
 Harvesting the corn maze at the American West Heritage Center, Wellsville

@@ -16,15 +16,15 @@ Do you need a quick base map for your [GIS, CAD, or web services]({% link discov
 <div class="grid">
   <div class="grid__col grid__col--1-of-3 text-center">
       <h5 class="text-center">Imagery plus overlay</h5>
-      <img src="{% link images/stgeorge_hybrid_basemap.png %}" class="outline">
+      <img src="{% link images/stgeorge_hybrid_basemap.png %}" class="outline" loading="lazy" />
   </div>
   <div class="grid__col grid__col--1-of-3 text-center">
       <h5 class="text-center">Terrain</h5>
-      <img src="{% link images/brianhead_terrain_basemap.png %}" class="outline">
+      <img src="{% link images/brianhead_terrain_basemap.png %}" class="outline" loading="lazy" />
   </div>
   <div class="grid__col grid__col--1-of-3 text-center">
       <h5 class="text-center">Lite</h5>
-      <img src="{% link images/provo_lite_basemap.png %}" class="outline">
+      <img src="{% link images/provo_lite_basemap.png %}" class="outline" loading="lazy" />
   </div>
 </div>
 <i class="fas fa-exclamation-triangle"></i> **If you want to use the AGRC base maps, you'll need to request a [free account]({% link discover/index.html %}#sign-up) so we can create a quad word key for you**. <i class="fas fa-exclamation-triangle"></i>

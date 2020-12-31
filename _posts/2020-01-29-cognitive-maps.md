@@ -27,7 +27,7 @@ The remainder of this article will explore some of the science behind our intern
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/place_experiences.png %}" alt="Place Experiences" />
+    <img class="caption__image" src="{% link images/place_experiences.png %}" alt="Place Experiences" loading="lazy" />
     <figcaption class="caption__text">Place Experiences (London Map from "Map of the World: The World According to Illustrators and Storytellers" 2013)</figcaption>
   </figure>
 </div>
@@ -41,7 +41,7 @@ Bees take this a step further and communicate their spatial knowledge with other
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/waggle_dance.png %}" alt="Waggle Dance" />
+    <img class="caption__image" src="{% link images/waggle_dance.png %}" alt="Waggle Dance" loading="lazy" />
     <figcaption class="caption__text">The Waggle Dance (Wikimedia Commons CC BY-SA 2.5)</figcaption>
   </figure>
 </div>
@@ -53,7 +53,7 @@ Research shows that in humans, spatial awareness is linked to a specific region 
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/hippocampus.png %}" alt="The Hippocampus" />
+    <img class="caption__image" src="{% link images/hippocampus.png %}" alt="The Hippocampus" loading="lazy" />
     <figcaption class="caption__text">The Brain’s Hippocampus (Fillit 2017)</figcaption>
   </figure>
 </div>
@@ -81,7 +81,7 @@ Known as ["The Knowledge”](https://tfl.gov.uk/info-for/taxis-and-private-hire/
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/grid_like_street_networks.png %}" alt="Street Network Orientation" />
+    <img class="caption__image" src="{% link images/grid_like_street_networks.png %}" alt="Street Network Orientation" loading="lazy" />
     <figcaption class="caption__text">The Complexity of Street Networks ( <a href="https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid">Jacobs 2018</a> )</figcaption>
   </figure>
 </div>
@@ -94,7 +94,7 @@ Maguire’s study observed the drivers for four years as they prepared for the �
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/london_iconic_cabs.png %}" alt="London’s Black Cabs" />
+    <img class="caption__image" src="{% link images/london_iconic_cabs.png %}" alt="London’s Black Cabs" loading="lazy" />
     <figcaption class="caption__text">London’s Iconic Black Cabs (<a href="https://www.ft.com/content/ccdde2f0-c0d0-11e4-876d-00144feab7de">Financial Times</a>)</figcaption>
   </figure>
 </div>
@@ -123,7 +123,7 @@ Again, looking back to the London cab driver findings, the studies show strong a
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/gnss_earth.png %}" alt="GNSS Constellations" />
+    <img class="caption__image" src="{% link images/gnss_earth.png %}" alt="GNSS Constellations" loading="lazy" />
     <figcaption class="caption__text">GNSS Constellations ( <a href="https://www.researchgate.net/figure/All-current-and-planned-GNSS-core-constellations-and-augmentation-systems-This_fig4_323245224">Tyler Reid, Research Gate</a>)</figcaption>
   </figure>
 </div>

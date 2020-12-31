@@ -56,27 +56,27 @@ Lastly, check out AGRC's websites over the last 20+ years..
 
 <div class="grid">
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev0.png %}"><img alt="AGRC Website v0 Screenshot" src="{% link images/AGRCWebsitev0_thumb.png %}" /></a><br />
+        <a href="{% link images/AGRCWebsitev0.png %}"><img alt="AGRC Website v0 Screenshot" src="{% link images/AGRCWebsitev0_thumb.png %}" loading="lazy" /></a><br />
         <a href="https://web.archive.org/web/19970716211113/http://www.agr.state.ut.us/">AGRC Website v0</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev1.png %}"><img alt="AGRC Website v1 Screenshot" src="{% link images/AGRCWebsitev1_thumb.png %}" /></a><br />
+        <a href="{% link images/AGRCWebsitev1.png %}"><img alt="AGRC Website v1 Screenshot" src="{% link images/AGRCWebsitev1_thumb.png %}" loading="lazy" /></a><br />
         <a href="https://web.archive.org/web/19981201214147/http://www.its.state.ut.us/agrc/">AGRC Website v1</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev2.png %}"><img alt="AGRC Website v2 Screenshot" src="{% link images/AGRCWebsitev2_thumb.png %}" /></a><br />
+        <a href="{% link images/AGRCWebsitev2.png %}"><img alt="AGRC Website v2 Screenshot" src="{% link images/AGRCWebsitev2_thumb.png %}" loading="lazy" /></a><br />
         <a href="https://web.archive.org/web/20030214191929/http://gis.utah.gov/">AGRC Website v2</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev3.png %}"><img alt="AGRC Website v3 Screenshot" src="{% link images/AGRCWebsitev3_thumb.png %}" /></a><br />
+        <a href="{% link images/AGRCWebsitev3.png %}"><img alt="AGRC Website v3 Screenshot" src="{% link images/AGRCWebsitev3_thumb.png %}" /loading="lazy" ></a><br />
         <a href="https://web.archive.org/web/20030214191929/http://gis.utah.gov/">AGRC Website v3</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev4.png %}"><img alt="AGRC Website v4 Screenshot" src="{% link images/AGRCWebsitev4_thumb.png %}" /></a><br />
+        <a href="{% link images/AGRCWebsitev4.png %}"><img alt="AGRC Website v4 Screenshot" src="{% link images/AGRCWebsitev4_thumb.png %}" loading="lazy" /></a><br />
         <a href="https://web.archive.org/web/20090323175622/http://gis.utah.gov/">AGRC Website v4</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev5.png %}"><img alt="AGRC Website v5 Screenshot" src="{% link images/AGRCWebsitev5_thumb.png %}" /></a><br />
+        <a href="{% link images/AGRCWebsitev5.png %}"><img alt="AGRC Website v5 Screenshot" src="{% link images/AGRCWebsitev5_thumb.png %}" loading="lazy" /></a><br />
         <a href="https://web.archive.org/web/20140701075235/http://gis.utah.gov/">AGRC Website v5</a>
     </div>
 </div>

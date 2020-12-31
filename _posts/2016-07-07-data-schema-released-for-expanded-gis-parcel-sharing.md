@@ -18,7 +18,7 @@ In a letter to Utah’s County Assessors, Evan Curtis, the State Planning Coordi
 
 > Working together, Curtis wrote, we've been able to arrive at a solution that should provide regional and statewide planners, economic development professionals, emergency managers, and others with the data tools they need to make informed decisions without placing an undue burden on the counties and avoiding issues that would come with the addition of personally-identifiable information
 
-<a href="https://docs.google.com/a/utah.gov/document/d/1pNqjCeF_3NZjNnBGqQ3EqliMkVaWtAbybn1eZ4gt038/edit?usp=sharing "><img src="{% link images/taxparcelschema_thumb.png %}" alt="" title="Expanded Parcel Data Sharing, Implementation Guidelines" class="inline-text-right" /></a>
+<a href="https://docs.google.com/a/utah.gov/document/d/1pNqjCeF_3NZjNnBGqQ3EqliMkVaWtAbybn1eZ4gt038/edit?usp=sharing "><img src="{% link images/taxparcelschema_thumb.png %}" alt="" title="Expanded Parcel Data Sharing, Implementation Guidelines" class="inline-text-right" loading="lazy" /></a>
 
 Several **next steps** from the recommendations document are now in motion.
 

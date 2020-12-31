@@ -25,8 +25,8 @@ Using a database connection to the most current ArcSDE server can be advantageou
 #### Connecting
 
 1. In ArcCatalog or ArcMap (from Add Data), browse to `Add Spatial Database Connections`
-  - <img src="{% link images/connect_tree.png %}" alt="ArcMap Add Spatial Connection Screenshot" />
+  - <img src="{% link images/connect_tree.png %}" alt="ArcMap Add Spatial Connection Screenshot" loading="lazy" />
 1. Provide the following connection information, including the password `agrc`.
-  - <img src="{% link images/sgidconnect.png %}" title="database connection dialog" alt="database connection dialog" />
+  - <img src="{% link images/sgidconnect.png %}" title="database connection dialog" alt="database connection dialog" loading="lazy" />
 
 After these steps you will be able to browse the entire SGID catalog and add data to your projects.

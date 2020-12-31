@@ -16,7 +16,7 @@ categories:
 ---
 GIS users working on statewide projects in Utah need to know the specifics of three primary coordinate systems: Geographic (latitude/longitude), UTM NAD83, and WebMercator.
 
-<a href="{% link images/projections.png %}"><img src="{% link images/projections-300x288.png %}" alt="" title="projections" style="padding:1px;border:thin solid black;" class="inline-text-left" /></a>
+<a href="{% link images/projections.png %}"><img src="{% link images/projections-300x288.png %}" alt="" title="projections" style="padding:1px;border:thin solid black;" class="inline-text-left" loading="lazy" /></a>
 
 **Geographic** coordinates use latitude and longitude values to define positions on the 3D surface of the earth, which is of course, best modeled as an ellipsoid, not a sphere. The ellipsoid and its accompanying anchor point that ties it in to the real world, are known collectively as the WGS84 datum. The WGS84 datum is what the constellations of GPS satellites use natively.
 

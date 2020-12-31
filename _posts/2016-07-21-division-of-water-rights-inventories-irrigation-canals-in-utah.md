@@ -17,7 +17,7 @@ In 2014, the Division of Water Rights (DWRi) was tasked with creating an invento
 
 <figure class="caption caption--right">
 <a href="https://waterrights.utah.gov/canalinfo/20160714-CanalsPctContacted.jpg">
-<img class="caption__image" src="{% link images/CanalInventory.jpg %}" alt="Canal Inventory Status Map" /></a>
+<img class="caption__image" src="{% link images/CanalInventory.jpg %}" alt="Canal Inventory Status Map" loading="lazy" /></a>
 <figcaption class="caption__text">Estimated percentage of<br/>Canals researched by county</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Our strategy has been to go county by county, contacting companies we have on fi
 - and if the company adopted a safety management plan according to Utah code 73­10­33.
 
 <figure class="caption caption--right">
-<img class="caption__image" src="{% link images/CanalAerialImageryExample.jpg %}" alt="Canal on High Res Imagery" />
+<img class="caption__image" src="{% link images/CanalAerialImageryExample.jpg %}" alt="Canal on High Res Imagery" loading="lazy" />
 <figcaption class="caption__text">Example of canal on<br/>high resolution aerial imagery</figcaption>
 </figure>
 

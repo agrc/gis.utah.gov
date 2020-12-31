@@ -40,8 +40,8 @@ This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) 
 {% include contact.html subject=page.title contact=site.data.contacts.elevation %}
 
 <div id="logo">
-  <img src="{% link images/monroe_DEM.png %}" alt="Monroe Sample" />
+  <img src="{% link images/monroe_DEM.png %}" alt="Monroe Sample" loading="lazy" />
 </div>
 <div id="logo">
-  <img src="{% link images/monroe_DSM.png %}" alt="Monroe Sample" />
+  <img src="{% link images/monroe_DSM.png %}" alt="Monroe Sample" loading="lazy" >
 </div>

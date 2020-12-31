@@ -11,7 +11,7 @@ title: 'Evolving Utah SGID Web Services: A Proposal'
 categories:
   - Featured
 ---
-<figure class="caption caption--right"><a href="{% link images/pendulum_large.png %}"><img class="caption__image" src="{% link images/pendulum.png %}" alt="The pendulum swings back and forth..." title="The pendulum swings back and forth..." /></a><figcaption class="caption__text">The pendulum swings back and forth...</figcaption></figure>
+<figure class="caption caption--right"><a href="{% link images/pendulum_large.png %}"><img class="caption__image" src="{% link images/pendulum.png %}" alt="The pendulum swings back and forth..." title="The pendulum swings back and forth..." loading="lazy" /></a><figcaption class="caption__text">The pendulum swings back and forth...</figcaption></figure>
 
 As time passes in the GIS and IT world, sometimes it feels like there is a pendulum slowly swinging back and forth along the continuum between centralization and decentralization. Mainframes and early GIS software required centralization. PC’s and later web services, smart phones, and tablets seem to define decentralization. But then again, consider the roles of app stores, consolidated and cloud-based storage and email servers, ArcGIS Online (AGOL), etc which are not centralized in a single location, but certainly have a centralized impact and feel.
 
@@ -37,7 +37,7 @@ _How can the remarkable vision that founded the SGID be reconciled with the dist
 
 In the spirit of keeping it simple, the Tracking system should try to employ an online collaborative platform that is readily available to GIS staff that manage the update of State GIS data assets. Google Docs, GitHub, etc. are obvious possibilities.
 
-<figure class="caption caption--right"><a href="{% link images/inventory_to_update_log.png %}"><img class="caption__image" src="{% link images/inventory_to_update_log_sm.png %}" alt="" title="Data Elements: Authoritative GIS Layer Tracking" /></a><figcaption class="caption__text">Click to Enlarge</figcaption></figure>
+<figure class="caption caption--right"><a href="{% link images/inventory_to_update_log.png %}"><img class="caption__image" src="{% link images/inventory_to_update_log_sm.png %}" alt="" title="Data Elements: Authoritative GIS Layer Tracking" loading="lazy" /></a><figcaption class="caption__text">Click to Enlarge</figcaption></figure>
 
 The SGID Tracking system could be as simple as asking GIS data managers to help keep current two master tables up to date:
 
@@ -70,6 +70,6 @@ But it all starts with your review. {% include contact.html subject=page.title c
 
 Update Log Table & Dashboard Mockups:
 
-<figure class="caption caption--right"><a href="{% link images/update_dashboard_mockup.png %}"><img class="caption__image" src="{% link images/update_dashboard_mockup_sm.png %}" alt="" title="Update Log Mockup" /></a><figcaption class="caption__text">Click to Enlarge</figcaption></figure>
+<figure class="caption caption--right"><a href="{% link images/update_dashboard_mockup.png %}"><img class="caption__image" src="{% link images/update_dashboard_mockup_sm.png %}" alt="" title="Update Log Mockup" loading="lazy" /></a><figcaption class="caption__text">Click to Enlarge</figcaption></figure>
 
-<figure class="caption caption--right"><a href="{% link images/update_log_table.png %}"><img class="caption__image" src="{% link images/update_log_table_sm.png %}" alt="" title="SGID Update Dashboard Mockup" /></a><figcaption class="caption__text">Click to Enlarge</figcaption></figure>
+<figure class="caption caption--right"><a href="{% link images/update_log_table.png %}"><img class="caption__image" src="{% link images/update_log_table_sm.png %}" alt="" title="SGID Update Dashboard Mockup" loading="lazy" /></a><figcaption class="caption__text">Click to Enlarge</figcaption></figure>

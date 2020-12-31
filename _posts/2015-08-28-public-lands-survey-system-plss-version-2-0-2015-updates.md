@@ -19,7 +19,7 @@ The basic units of the PLSS comprise the foundation for public and private prope
 
 In the next month we will be getting all the contributed PLSS Corner Points integrated with this new BLM version of this feature class and updating it here. Stay tuned we will have more changes on the way.
 
-<a href="{% link images/NewPLSS_June2015.png %}"><img src="{% link images/NewPLSS_June2015_ThumbNail.png %}" alt="" title="NewPLSS_Changes2015" class="inline-text-left"/></a>
+<a href="{% link images/NewPLSS_June2015.png %}"><img src="{% link images/NewPLSS_June2015_ThumbNail.png %}" alt="" title="NewPLSS_Changes2015" class="inline-text-left" loading="lazy" /></a>
 
 The Township areas impacted by change in this updated version are shown on the map and include adjustments to the locations of corner points.
 

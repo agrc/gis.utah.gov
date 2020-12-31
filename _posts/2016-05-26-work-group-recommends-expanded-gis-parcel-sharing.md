@@ -26,7 +26,7 @@ categories:
 Earlier this month, the Land Information Records work group, an informal committee organized by Evan Curtis, the State Planning Coordinator with the
 Governor’s Office of Management and Budget, produced [recommendations](https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_) for expanding the sharing of GIS-based parcel information.
 
-<figure class="caption caption--right"><a href="https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_"><img class="caption__image" src="{% link images/ParcelRecDocScreenshot.jpg %}" alt="Land Use Information Records Recommendations" /></a><figcaption class="caption__text">Land Use Information Records Recommendations Document</figcaption></figure>
+<figure class="caption caption--right"><a href="https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_"><img class="caption__image" src="{% link images/ParcelRecDocScreenshot.jpg %}" alt="Land Use Information Records Recommendations" loading="lazy" /></a><figcaption class="caption__text">Land Use Information Records Recommendations Document</figcaption></figure>
 
 Participants in the LIR work group include representatives from county, regional, and state government, including the Utah Association of Counties (County Assessors and County Recorders), Wasatch Front Regional Council, Mountainland and Bear River AOGs, Utah League of Cities and Towns, UDOT, DNR, AGRC, the Division of Emergency Management, Blue Stakes, economic developers, and academic researchers.
 
@@ -51,13 +51,13 @@ Another aim of the work group was to improve the usability of the data (through 
 <div class="grid text-center">
     <div class="grid__col grid__col--1-of-2 text-center">
         <a href ="{% link downloads/ParcelAssessedLandValue.pdf %}">
-            <img src="{% link images/AssessedLandValue.jpg %}" alt="Assessed Land Value Example" />
+            <img src="{% link images/AssessedLandValue.jpg %}" alt="Assessed Land Value Example" loading="lazy" />
         </a>
         <p>Assessed Land Value, By Acre (Northern Utah County)</p>
     </div>
     <div class="grid__col grid__col--1-of-2 text-center">
         <a href ="{% link downloads/ParcelVacantPrivateLand.pdf %}">
-            <img src="{% link images/VacantPrivateLand.jpg %}" alt="Vacant Private Land Example" />
+            <img src="{% link images/VacantPrivateLand.jpg %}" alt="Vacant Private Land Example" loading="lazy" />
         </a>
         <p>Vacant Private Land (Northern Utah County)</p>
     </div>

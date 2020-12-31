@@ -14,7 +14,7 @@ title: Exploring LiDAR
 categories: []
 ---
 <a title="First-Return DSM" href="{% link images/lidar_lg.jpg %}">
-  <img class="inline-text-left outline" src="{% link images/thumbs_lidar.jpg %}" alt="lidar"/>
+  <img class="inline-text-left outline" src="{% link images/thumbs_lidar.jpg %}" alt="lidar" loading="lazy" />
 </a>
 <p>Light Detection and Ranging elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by illuminating the target with light pulses from a laser and measuring the time and intensity of the pulse return to the sensor. Laser pulses from the sensor can exceed 150,000 pulses per second. Aircraft position (X,Y,Z) is measured twice a second while aircraft attitude (pitch, roll, yaw) is measured 200 times per second. Currently this is the most accurate type of elevation data available. There are two main types of LiDAR collections, Terrestrial and Airborne. Airborne LiDAR is most commonly used and available from AGRC.</p>
 <div class="flex flex--center flex--col">
@@ -22,14 +22,14 @@ categories: []
   <p><a href="https://vimeo.com/89565010">AGRC Utah LiDAR applications video</a> from <a href="https://vimeo.com/utahagrc">AGRC</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 </div>
 <a title="Bare-Earth DEM" href="{% link images/Hillshd.jpg %}">
-  <img class="inline-text-left outline" src="{% link images/Hillshd_sm.jpg %}" alt="lidar" />
+  <img class="inline-text-left outline" src="{% link images/Hillshd_sm.jpg %}" alt="lidar" loading="lazy" />
 </a>
 <p>Bare-Earth Digital Elevation Models (DTM) and First-Return Digital Surface Models (DSM) are commonly used raster products derived from LiDAR point cloud collections. Bare-Earth DEMs have had features above the ground filtered out and are what is typically used for floodplain and hydro-logic modeling. First-return (highest-hit) raster products model a surface but retain the features above the ground such as buildings, utilities, other manmade structures and vegetation.</p>
 <p class="flex flex--center"><a title="Point Cloud Profile" href="{% link images/profile.jpg %}">
-  <img src="{% link images/profile_thumb.png %}" alt="lidar" />
+  <img src="{% link images/profile_thumb.png %}" alt="lidar" loading="lazy" />
 </a></p>
 <p><a title="Fully Classified Point Cloud" href="{% link images/ptCloud_large.jpg %}">
-  <img class="inline-text-left outline" src="{% link images/pt_cloud_full_sm.jpg %}" alt="lidar" />
+  <img class="inline-text-left outline" src="{% link images/pt_cloud_full_sm.jpg %}" alt="lidar" loading="lazy" />
 </a>LiDAR point clouds can be classified so that each point in the cloud is designated a land cover type (ex. ground, water, road, building, vegetation, etc.). The vendor for the <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/2013LidarPoster.pdf" title="project">2013-2014 Wasatch Front LiDAR</a> project, Watershed Sciences Inc. (WSI) now a <a href="http://quantumspatial.com/" title="WSI">Quantum Spatial</a> company, has provided the following samples that show some of what can be done with the collected LiDAR data. Please note that while the sample data below contains LAS point cloud data that are fully classified, the point clouds delivered for the project only has the following classifications (including intensity, return number, and RGB values), yet further classification of the point cloud is possible:</p>
 <table style="width:400px">
   <thead>
