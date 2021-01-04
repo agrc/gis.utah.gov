@@ -8,7 +8,8 @@ title: 'Guest Blog: Things I Learned Working at the Utah AGRC'
 categories: []
 ---
 
-Hi there! I’m [Christy](http://christyheaton.github.io/). I work at a small consulting firm in downtown Seattle called [SGSI](https://sgsi.com/). I also teach a summer GIS Programming course at the [University of Washington](https://geography.washington.edu/) and organize a Meetup group called [Maptime Seattle](https://www.meetup.com/MaptimeSEA/).
+Hi there! I’m [Christy](https://christyheaton.github.io/)
+. I work at a small consulting firm in downtown Seattle called [SGSI](https://sgsi.com/). I also teach a summer GIS Programming course at the [University of Washington](https://geography.washington.edu/) and organize a Meetup group called [Maptime Seattle](https://www.meetup.com/MaptimeSEA/).
 
 Back in November 2009, I got my professional start as a GIS intern at the AGRC. During my time at AGRC I was involved in large-scale projects such as the Utah Broadband Project, the 2012 Re-Precincting Analysis, the Utah Historic Buildings map database, and the creation of the previous edition of AGRC website (version 5, I'm told). In 2012 I was accepted into the Masters in GIS program at the University of Washington, left my job at the AGRC,  and made the big move to Seattle. I’m very happy with where I am in my career, and I have my start at AGRC to thank for that!
 
