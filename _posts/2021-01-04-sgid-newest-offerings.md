@@ -5,10 +5,10 @@ author:
   email: agrc@utah.gov
 date: 2021-01-04 16:01:51
 categories:
+  - Featured
   - SGID
-tags: [
-  sgid
-]
+tags: 
+  - sgid
 ---
 
 As of December 31, 2020, AGRC's SGID10 database has been deprecated. At this point, it is no longer our “star player”.
