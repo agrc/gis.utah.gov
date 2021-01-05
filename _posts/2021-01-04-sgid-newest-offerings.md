@@ -24,4 +24,4 @@ Here are a few related resources to get you connected:
 
 Our goal is to provide better access to SGID data. We feel that these new offerings are more in line with the current technology and that they reach a wider audience.
 
-Please don't hesitate to reach out if you have questions or issues.
+Please don't hesitate to reach out if you have questions.
