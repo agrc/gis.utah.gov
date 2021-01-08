@@ -31,7 +31,7 @@ Data was received but not processed for Wasatch County. This data will be includ
 
 #### Bike Data Updates
 
-- This month's update also includes significant statewide improvements in the SGID roads' bike lane data. This data can be found in the BIKE_L and BIKE_R fields. Read more about this [collaborative effort]({% link _posts/2021-01-08-statewide-bike-data.md %}) and how you can also play a role.
+- This month's update also includes significant statewide improvements in the SGID roads' bike lane data. This data can be found in the BIKE_L and BIKE_R fields. Read more about this [collaborative effort]({% link _posts/2021-01-08-statewide-bike-data.md %}) and how you can play an active role.
 
 #### UDOT Route System
 
