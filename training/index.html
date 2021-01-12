@@ -114,295 +114,7 @@ tags:
   </section>
   <img src="{% link training/images/arches.png %}" width="100%" class="training-footer-img" />
 </article>
-<style type="text/css">
-  p {
-    padding-left: .5em;
-  }
-  .text-3xl {
-    color: #347596;
-    font-size: 300%;
-    text-align: center;
-    margin: 0;
-  }
-  .text-2xl {
-    color: #347596;
-    background-color: #C9D0D7;
-    padding: 5px;
-    margin: 0;
-    text-align: left;
-  }
-  .text-xl {
-    font-size: 1.5em;
-    margin: 0;
-    text-align: left;
-  }
-  .text-lg {
-    margin: 0;
-    text-align: left;
-  }
-  .ml-1 {
-    margin-left: .5em;
-  }
-  .text-white {
-    color: #fff;
-  }
-  a.text-white:visited {
-    color: rgb(208, 208, 208);
-  }
-  a.text-white:hover {
-    color: #DD6B41;
-  }
-  .text-blue {
-    color: #347596;
-  }
-  .text-orange {
-    color: #DD6B41;
-  }
-  .bg-dark {
-    background-color: #163746;
-  }
-  .training {
-    grid-area: a;
-  }
-  .training-next {
-    grid-area: g;
-  }
-  .aside {
-    grid-area: b;
-    padding: .5em;
-  }
-  .training-left {
-    grid-area: c;
-  }
-  .training-right {
-    grid-area: d;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .filler {
-    grid-area: e;
-  }
-  .aside-note {
-    grid-area: f;
-    background-color: #347596;
-    padding: .5em;
-  }
-  .training-footer {
-    grid-area: h;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-style: italic;
-    padding: 10px;
-    height: 82px;
-  }
-  .training-footer-img {
-    grid-area: i;
-  }
-  .caps {
-    text-transform: uppercase;
-  }
-  .fa-ul {
-    margin-left: 0;
-  }
-
-  @media screen and (max-width: 750px) {
-    .post {
-      margin: 0 25px;
-    }
-    .training_container {
-      display: grid;
-      height: 100%;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-areas:
-        "a"
-        "b"
-        "g"
-        "c"
-        "d"
-        "f"
-        "h";
-      grid-gap: .5em;
-    }
-
-    .filler,
-    .training-footer-img {
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: 751px) and (max-width: 1000px) {
-    .training_container {
-      display: grid;
-      height: 100%;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas:
-        "a a"
-        "b b"
-        "g g"
-        "c d"
-        "f f"
-        "h h";
-      grid-gap: .5em;
-    }
-
-    .filler,
-    .training-footer-img {
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: 1001px) {
-    .training_container {
-      display: grid;
-      height: 100%;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas:
-        "a a b"
-        "g g b"
-        "c d e"
-        "c f f"
-        "h i i";
-      grid-gap: .5em;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .plss_container {
-      display: grid;
-      height: 100%;
-      grid-template-areas:
-        "image image image2 distance distance"
-        "title title title title conversion"
-        "text text text2 text2 conversion"
-        "township township section corner conversion"
-        "township blm id id id"
-        "footerimg footertext footer2 footer2 footer2";
-      grid-gap: .5em;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .image {
-      grid-area: image;
-    }
-    .image2 {
-      grid-area: image2;
-    }
-    .distance {
-      grid-area: distance;
-    }
-  }
-  .post-content ul.ul-unindent {
-    padding-left: .75em;
-  }
-  .bg-gray {
-    background-color: #D9D9D9;
-  }
-  .bg-light {
-    background-color: #347596;
-  }
-  .text-lg {
-      font-size: 1.25em;
-  }
-  .text-md {
-    font-size: .9em;
-  }
-  .text-right {
-    text-align:right;
-  }
-  .split {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .left {
-    grid-column: 1/2;
-  }
-  .right {
-    grid-column: 2/2;
-  }
-  .grid--center {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .plss_container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    height: 100%;
-    grid-template-areas:
-      "img        img        img2     distance distance"
-      "img        img        img3     distance distance"
-      "desc       desc       desc     distance distance"
-      "title      title      title    title    conversion"
-      "text       text       text2    text2    conversion"
-      "township   township   section  corner   conversion"
-      "township   township   blm      id       id"
-      "foot-img   foot-text  foot-text foot-text foot-text";
-
-    grid-gap: .5em;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .image {
-    grid-area: img;
-    width: 100%;
-  }
-  .image2 {
-    grid-area: img2;
-    width: 100%;
-  }
-  .image3 {
-    grid-area: img3;
-    width: 100%;
-  }
-  .distance {
-    grid-area: distance;
-  }
-  .description {
-    grid-area: desc;
-  }
-  .title {
-    grid-area: title;
-  }
-  .conversion {
-    grid-area: conversion;
-  }
-  .point-ids {
-    grid-area: text;
-  }
-  .id-irregularities {
-    grid-area: text2;
-  }
-  .township-img {
-    grid-area: township;
-    width: 100%;
-  }
-  .section-img {
-    grid-area: section;
-    width: 100%;
-  }
-  .corner-img {
-    grid-area: corner;
-    width: 100%;
-  }
-  .blm-label {
-    grid-area: blm;
-  }
-  .blm-id {
-    grid-area: id;
-  }
-  .foot-img {
-    grid-area: foot-img;
-  }
-  .foot-text {
-    grid-area: foot-text;
-    display: flex;
-  }
-</style>
-<h1 class="text-3xl caps">Public Land Survey System at a Glance</h1>
+<h1 class="text-3xl text-center caps">Public Land Survey System at a Glance</h1>
 <article class="plss_container">
   <img class="image" src="images/section.png" />
   <img class="image2" src="images/section-numbers.png" />
@@ -573,3 +285,305 @@ tags:
     </ul>
   </section>
 </article>
+<style type="text/css">
+  p {
+    padding-left: .5em;
+  }
+
+  .post-content ul.ul-unindent {
+    padding-left: .75em;
+  }
+
+  .ml-1 {
+    margin-left: .5em;
+  }
+
+  .fa-ul {
+    margin-left: 0;
+  }
+
+  .caps {
+    text-transform: uppercase;
+  }
+
+  .text-3xl {
+    color: #347596;
+    font-size: 300%;
+    margin: 0;
+  }
+
+  .text-2xl {
+    color: #347596;
+    background-color: #C9D0D7;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .text-xl {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .text-lg {
+    margin: 0;
+    font-size: 1.25em;
+  }
+
+  .text-md {
+    font-size: .9em;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .text-white {
+    color: #fff;
+  }
+
+  .text-blue {
+    color: #347596;
+  }
+
+  .text-orange {
+    color: #DD6B41;
+  }
+
+  a.text-white:visited {
+    color: rgb(208, 208, 208);
+  }
+
+  a.text-white:hover {
+    color: #DD6B41;
+  }
+
+  .bg-dark {
+    background-color: #163746;
+  }
+
+  .bg-gray {
+    background-color: #D9D9D9;
+  }
+
+  .bg-light {
+    background-color: #347596;
+  }
+
+  @media screen and (max-width: 750px) {
+    .post {
+      margin: 0 25px;
+    }
+
+    .training_container {
+      display: grid;
+      height: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: "a""b""g""c""d""f""h";
+      grid-gap: .5em;
+    }
+
+    .plss_container {
+      display: grid;
+      height: 100%;
+      grid-template-areas: "img img""img2 img3""desc desc""title title""text text""text2 text2""conversion conversion""distance distance""township township""section corner""blm id""foot-text foot-text";
+      grid-gap: .5em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .foot-img,
+    .filler,
+    .training-footer-img {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 751px) and (max-width: 1000px) {
+    .training_container {
+      display: grid;
+      height: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "a a""b b""g g""c d""f f""h h";
+      grid-gap: .5em;
+    }
+
+    .plss_container {
+      display: grid;
+      height: 100%;
+      grid-template-areas: "img img img img2""img img img img3""desc desc desc desc""title title title title""text text text2 text2""distance distance distance conversion""township township township township""section section corner corner""blm id id id""foot-img foot-text foot-text foot-text";
+      grid-gap: .5em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .filler,
+    .training-footer-img {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1001px) {
+    .training_container {
+      display: grid;
+      height: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "a a b""g g b""c d e""c f f""h i i";
+      grid-gap: .5em;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .plss_container {
+      display: grid;
+      height: 100%;
+      grid-template-areas: "img img img2 distance distance""img img img3 distance distance""desc desc desc distance distance""title title title title conversion""text text text2 text2 conversion""township township section corner conversion""township township blm id id""foot-img foot-text foot-text foot-text foot-text";
+      grid-gap: .5em;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .left {
+    grid-column: 1/2;
+  }
+
+  .right {
+    grid-column: 2/2;
+  }
+
+  .grid--center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .training {
+    grid-area: a;
+  }
+
+  .training-next {
+    grid-area: g;
+  }
+
+  .aside {
+    grid-area: b;
+    padding: .5em;
+  }
+
+  .training-left {
+    grid-area: c;
+  }
+
+  .training-right {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .filler {
+    grid-area: e;
+  }
+
+  .aside-note {
+    grid-area: f;
+    background-color: #347596;
+    padding: .5em;
+  }
+
+  .training-footer {
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: italic;
+    padding: 10px;
+    height: 82px;
+  }
+
+  .training-footer-img {
+    grid-area: i;
+  }
+
+  .image {
+    grid-area: img;
+    width: 100%;
+  }
+
+  .image2 {
+    grid-area: img2;
+    width: 100%;
+  }
+
+  .image3 {
+    grid-area: img3;
+    width: 100%;
+  }
+
+  .distance {
+    grid-area: distance;
+  }
+
+  .description {
+    grid-area: desc;
+  }
+
+  .title {
+    grid-area: title;
+  }
+
+  .conversion {
+    grid-area: conversion;
+  }
+
+  .point-ids {
+    grid-area: text;
+  }
+
+  .id-irregularities {
+    grid-area: text2;
+  }
+
+  .township-img {
+    grid-area: township;
+    width: 100%;
+  }
+
+  .section-img {
+    grid-area: section;
+    width: 100%;
+  }
+
+  .corner-img {
+    grid-area: corner;
+    width: 100%;
+  }
+
+  .blm-label {
+    grid-area: blm;
+  }
+
+  .blm-id {
+    grid-area: id;
+  }
+
+  .foot-img {
+    grid-area: foot-img;
+  }
+
+  .foot-text {
+    grid-area: foot-text;
+    display: flex;
+  }
+</style>
