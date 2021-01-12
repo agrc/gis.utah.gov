@@ -269,5 +269,307 @@ tags:
       margin-left: auto;
       margin-right: auto;
     }
+    .plss_container {
+      display: grid;
+      height: 100%;
+      grid-template-areas:
+        "image image image2 distance distance"
+        "title title title title conversion"
+        "text text text2 text2 conversion"
+        "township township section corner conversion"
+        "township blm id id id"
+        "footerimg footertext footer2 footer2 footer2";
+      grid-gap: .5em;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .image {
+      grid-area: image;
+    }
+    .image2 {
+      grid-area: image2;
+    }
+    .distance {
+      grid-area: distance;
+    }
+  }
+  .post-content ul.ul-unindent {
+    padding-left: .75em;
+  }
+  .bg-gray {
+    background-color: #D9D9D9;
+  }
+  .bg-light {
+    background-color: #347596;
+  }
+  .text-lg {
+      font-size: 1.25em;
+  }
+  .text-md {
+    font-size: .9em;
+  }
+  .text-right {
+    text-align:right;
+  }
+  .split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left {
+    grid-column: 1/2;
+  }
+  .right {
+    grid-column: 2/2;
+  }
+  .grid--center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .plss_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    grid-template-areas:
+      "img        img        img2     distance distance"
+      "img        img        img3     distance distance"
+      "desc       desc       desc     distance distance"
+      "title      title      title    title    conversion"
+      "text       text       text2    text2    conversion"
+      "township   township   section  corner   conversion"
+      "township   township   blm      id       id"
+      "foot-img   foot-text  foot-text foot-text foot-text";
+
+    grid-gap: .5em;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image {
+    grid-area: img;
+    width: 100%;
+  }
+  .image2 {
+    grid-area: img2;
+    width: 100%;
+  }
+  .image3 {
+    grid-area: img3;
+    width: 100%;
+  }
+  .distance {
+    grid-area: distance;
+  }
+  .description {
+    grid-area: desc;
+  }
+  .title {
+    grid-area: title;
+  }
+  .conversion {
+    grid-area: conversion;
+  }
+  .point-ids {
+    grid-area: text;
+  }
+  .id-irregularities {
+    grid-area: text2;
+  }
+  .township-img {
+    grid-area: township;
+    width: 100%;
+  }
+  .section-img {
+    grid-area: section;
+    width: 100%;
+  }
+  .corner-img {
+    grid-area: corner;
+    width: 100%;
+  }
+  .blm-label {
+    grid-area: blm;
+  }
+  .blm-id {
+    grid-area: id;
+  }
+  .foot-img {
+    grid-area: foot-img;
+  }
+  .foot-text {
+    grid-area: foot-text;
+    display: flex;
   }
 </style>
+<h1 class="text-3xl caps">Public Land Survey System at a Glance</h1>
+<article class="plss_container">
+  <img class="image" src="images/section.png" />
+  <img class="image2" src="images/section-numbers.png" />
+  <img class="image3" src="images/township-and-range.png" />
+  <section class="distance bg-dark text-white">
+    <h2 class="text-xl caps text-white text-center">Distance Conversions</h2>
+    <div class="split">
+      <div class="left">
+        <ul class="dotless">
+          <li class="text-lg">1 Mile</li>
+          <li>= 80 chains</li>
+          <li>= 320 rods</li>
+          <li>= 320 perches</li>
+          <li>= 320 poles</li>
+          <li>= 5,280 feet</li>
+          <li>= 8,000 links</li>
+          <li>= 1,609.2655 meters</li>
+        </ul>
+        <ul class="dotless">
+          <li class="text-lg">1 Chain</li>
+          <li>= 4 rods</li>
+          <li>= 4 perches</li>
+          <li>= 4 poles</li>
+          <li>= 66 feet</li>
+          <li>= 100 links</li>
+          <li>= 20.1168 meters</li>
+        </ul>
+        <ul class="dotless">
+          <li class="text-lg">1 inch</li>
+          <li>= 0.0254 meters</li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul class="dotless">
+          <li class="text-lg">1 Link</li>
+          <li>= 0.66 feet</li>
+          <li>= 7.92 inches</li>
+          <li>= 0.2017 meters</li>
+        </ul>
+        <ul class="dotless">
+          <li class="text-lg">1 Meter</li>
+          <li>= 39.370 inches</li>
+          <li>= 3.281 feet</li>
+        </ul>
+        <ul class="dotless">
+          <li class="text-lg">1 Rod</li>
+          <li>= 16.5 feet</li>
+        </ul>
+        <ul class="dotless">
+          <li class="text-lg">1 Perch</li>
+          <li>= 25 links</li>
+        </ul>
+        <ul class="dotless">
+          <li class="text-lg">1 Pole</li>
+          <li>= 5.0292 meters</li>
+        </ul>
+        <ul class="dotless">
+          <li class="text-lg">1 Foot</li>
+          <li>= 0.3048 meters</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="description">
+    <p>Example Description: A parcel of land situated in the south half of the southeast
+      quarter of the northeast quarter of Section 31, Township 2 South, Range 2 West, Salt
+      Lake Base and Meridian.</p>
+  </section>
+  <h2 class="title text-2xl">Geographic Coordinate Data Base (GCDB) Point ID's</h2>
+  <section class="conversion bg-light text-white">
+    <h2 class="caps text-xl text-center text-white" style="padding-top: 0;margin:6px 8px;border:1px white dashed">Area
+      Conversions</h2>
+    <ul class="dotless ul-unindent">
+      <li class="text-lg">1 Sq. Mile</li>
+      <li>= Nominal Section</li>
+      <li>= 640 acres</li>
+      <li>= 2.590 sq. km.</li>
+      <li>= 259 hectares</li>
+    </ul>
+    <ul class="dotless ul-unindent">
+      <li class="text-lg">1 Acre</li>
+      <li>= 10 sq. chains</li>
+      <li>= 160 sq. rods</li>
+      <li>= 160 perches</li>
+      <li>= 160 poles</li>
+      <li>= 43,560 sq. feet</li>
+      <li>= 0.4047 hectare</li>
+      <li>= 4,047 sq. meters</li>
+    </ul>
+    <ul class="dotless ul-unindent">
+      <li class="text-lg">1 Hectare</li>
+      <li>= 2.47 acres</li>
+    </ul>
+    <ul class="dotless ul-unindent">
+      <li class="text-lg">1 Sq. Meter</li>
+      <li>= 10.764 sq. ft.</li>
+    </ul>
+  </section>
+  <section class="point-ids text-md">
+    <p>XxxYyy, where Xxx = the following range of values</p>
+    <ul class="dotless ul-unindent">
+      <li>711 - 719 Town Sites, City Boundaries</li>
+      <li>720 - 739 County Boundaries</li>
+      <li>740 - 769 State Boundaries</li>
+      <li>770 - 799 Forest Service, Parks Service, Reservations,</li>
+      <li>Grant, Other Boundaries with Mileposts.</li>
+      <li>800 - 836 Meanders (right bank even #, left bank odd #.)</li>
+      <li>837 - 879 Tracts</li>
+      <li>880 - 899 Right of Ways</li>
+      <li>900 - 999 Mineral Surveys, Homestead Entries, etc.</li>
+    </ul>
+    <p>Yyy - Numbered sequentially along the survey in increments of 10. The prefix</p>
+    <p>Xxx - may be the same for all points in a similar survey.</p>
+  </section>
+  <section class="id-irregularities text-md">
+    <p>Irregularities of Townships for ones places of Xxx and Yyy.</p>
+    <p>1, 2, 8 or 9 -> offset corners along interior section lines and section subdivision lines where +/- 2 is the
+      recommended naming scheme and THE GRAPGICS RULE MUST BE FOLLOWED.</p>
+    <p>3 or 7 -> offset corners along township boundaries, angle points, witness corners, and witness points.</p>
+    <p>4 or 6 -> intersections of rectangular/special surveys and 1/16th corners of elongated sections.</p>
+    <p>0 -> all regular aliquot corners down to 1/16th.</p>
+    <p>5 -> all regular aliquot corners down to 1/256th.</p>
+  </section>
+  <img class="township-img" src="images/township.png" />
+  <img class="section-img" src="images/quarter-section.png" />
+  <img class="corner-img" src="images/quarter-quarter-section.png" />
+  <section class="blm-label bg-gray text-right grid--center" style="padding-right: .5em;">
+    <div>Bureau of Land</div>
+    <div>Management (BLM)</div>
+    <div>Point IDs</div>
+  </section>
+  <section class="blm-id bg-gray grid--center" style="margin-left: -.5em;padding:0 .5em;">
+    <img src="images/blm-point-id.png" style="width: 100%;border: 1px solid gray;" loading="lazy" />
+  </section>
+  <section class="foot-img bg-dark" style="margin-right: -.25em;">
+    <svg id="svg-logo" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 155" style="width:150px">
+      <title>AGRC</title>
+      <g id="peak">
+        <path class="peak"
+          d="M204.37,37.51l51.91,51.85c14.12,0.71,27.68,1.7,40.52,2.95L204.37,0,111.8,92.45c12.85-1.27,26.43-2.29,40.59-3Z">
+        </path>
+      </g>
+      <g id="hills">
+        <path class="hills" d="M149.78,39.37L131.09,20.7,50,101.71c13.38-2.9,28.72-5.41,45.59-7.47Z"></path>
+        <path class="hills" d="M278.92,20.7l-18.7,18.67,54.21,54.86c16.88,2.06,32.22,4.58,45.59,7.47Z"></path>
+      </g>
+      <g id="land">
+        <path class="land"
+          d="M370.39,114.15c-30.68-7.7-74.28-13.22-124.17-15.21L203.88,56.66,161.46,99c-50.24,2.12-93.95,7.83-124.26,15.74-17,4.43-29.84,9.57-37.19,15.15,22.44-5.19,52.15-9.49,86.72-12.5,23.16-2,48.51-3.46,75.31-4.22L203.88,155l41.92-41.87c27.61,0.74,53.7,2.2,77.48,4.28,34.57,3,64.28,7.31,86.72,12.5-7.7-5.84-21.38-11.19-39.61-15.77M220.9,107.92l-14.55,14.54-2.43,19.6-2.62-19.71-14.06-14-21.4-2.65,22-2.91L201.5,89.12,203.88,70l2.56,19.33,13.21,13.19,21.86,2.71Z">
+        </path>
+      </g>
+      <g id="dots">
+        <path class="dots"
+          d="M8.36,133.81l1.09,7.44,13.35-1.94-1.09-7.44Zm22.16-3.17,0.9,7.46,13.39-1.62L43.91,129Zm22.12-2.51,0.72,7.48,13.43-1.3-0.72-7.48ZM74.73,126l0.61,7.49,13.45-1.1-0.61-7.49ZM97,124.24l0.53,7.5,13.46-1-0.53-7.5Zm22.2-1.54,0.38,7.51,13.48-.68-0.38-7.5ZM155,121.07l-13.48.47,0.27,7.51,13.48-.47Z">
+        </path>
+        <path class="dots"
+          d="M385.76,131.87l-1.08,7.44L398,141.25l1.09-7.44ZM363.55,129l-0.9,7.46L376,138.11l0.91-7.46Zm-22.15-2.19-0.72,7.48,13.43,1.3,0.73-7.48Zm-22.12-2-0.61,7.49,13.46,1.1,0.61-7.49ZM297,123.29l-0.53,7.5,13.46,1,0.54-7.5ZM274.83,122l-0.38,7.5,13.48,0.68,0.38-7.51Zm-22.61,6.56L265.71,129l0.27-7.51-13.48-.47Z">
+        </path>
+      </g>
+    </svg>
+  </section>
+  <section class="foot-text bg-dark text-white text-md" style="margin-left:-.3em;">
+    <p>Township and Range<br />(5 characters each)</p>
+    <ul class="dotless ul-unindent">
+      <li>3 digits for Township or Range number</li>
+      <li>1 digit for fraction (0 for no fraction, 1 for 1/4 township, 2 for 1/2 township, 3 for 3/4 township)</li>
+      <li>1 letter for direction</li>
+    </ul>
+  </section>
+</article>
