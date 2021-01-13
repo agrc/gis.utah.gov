@@ -197,7 +197,7 @@ def js_to_py_re_find(reg_exp):
 
 
 if __name__ == '__main__':
-    gc = pygsheets.authorize(service_file='client-secret.json')
+    gc = pygsheets.authorize(service_account_env_var='GIS_DRIVE_API_CREDENTIALS')
 
     data = get_sheet_data(gc, '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ', 'SGID Stewardship Info')
     data = [x for x in data if len(x['name'].strip()) > 0]

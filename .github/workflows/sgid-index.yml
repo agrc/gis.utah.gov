@@ -1,0 +1,41 @@
+name: 'SGID Index'
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: 'Update SGID Index'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: scripts
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Rebuild SGID Index
+        run: python datatable.py
+
+      - name: Update composer packages
+        uses: technote-space/create-pr-action@v2
+        env:
+          GIS_DRIVE_API_CREDENTIALS: ${{ secrets.SA }}
+        with:
+          EXECUTE_COMMANDS: |
+            python datatable.py
+          COMMIT_MESSAGE: 'chore: :package: update sgid-index'
+          PR_BRANCH_PREFIX: 'bot/'
+          PR_BRANCH_NAME: 'sgid-index-update-${PR_ID}'
+          PR_TITLE: 'chore: update sgid-index'
