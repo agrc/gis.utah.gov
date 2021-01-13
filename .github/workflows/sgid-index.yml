@@ -9,15 +9,12 @@ jobs:
   check:
     name: 'Update SGID Index'
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: scripts
 
     steps:
       - name: Install Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.9
 
       - name: Update SGID Index
         uses: technote-space/create-pr-action@v2
@@ -25,9 +22,9 @@ jobs:
           GIS_DRIVE_API_CREDENTIALS: ${{ secrets.SA }}
         with:
           EXECUTE_COMMANDS: |
-            cd scripts
-            pip install -r requirements.txt
-            python datatable.py
+            pwd
+            pip install -r scripts/requirements.txt
+            python scripts/datatable.py
           COMMIT_MESSAGE: 'chore: :package: update sgid-index'
           PR_BRANCH_PREFIX: 'bot/'
           PR_BRANCH_NAME: 'sgid-index-update-${PR_ID}'
