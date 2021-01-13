@@ -14,23 +14,19 @@ jobs:
         working-directory: scripts
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
       - name: Install Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
 
-      - name: Install Python Dependencies
-        run: pip install -r requirements.txt
-
-      - name: Update composer packages
+      - name: Update SGID Index
         uses: technote-space/create-pr-action@v2
         env:
           GIS_DRIVE_API_CREDENTIALS: ${{ secrets.SA }}
         with:
           EXECUTE_COMMANDS: |
+            cd scripts
+            pip install -r requirements.txt
             python datatable.py
           COMMIT_MESSAGE: 'chore: :package: update sgid-index'
           PR_BRANCH_PREFIX: 'bot/'
