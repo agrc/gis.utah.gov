@@ -25,9 +25,6 @@ jobs:
       - name: Install Python Dependencies
         run: pip install -r requirements.txt
 
-      - name: Rebuild SGID Index
-        run: python datatable.py
-
       - name: Update composer packages
         uses: technote-space/create-pr-action@v2
         env:
