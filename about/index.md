@@ -15,6 +15,7 @@ date: 2011-06-30 23:18:14 -0600
 - [AGRC Mission]({% link about/mission/index.md %})
 - [GIS-related Utah Statute]({% link about/code/index.html %})
 - [AGRC Policies]({% link about/policy/index.md %})
+- [Utah GIS Resources]({% link training/index.html %})
 - [AGRC Media Resources]({% link about/media/index.md %})
 - [AGRC Directions and Parking]({% link about/visiting-agrc/index.html %})
 - [Contributing to this website]({% link about/contributing/index.md %})
