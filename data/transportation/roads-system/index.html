@@ -112,14 +112,14 @@ abstract="This dataset contains GIS mapping data representing the statewide road
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="HighwayLinearReferencingSystemRoutes">Highway Linear Referencing System Routes</h3>
+    <h3 id="HighwayLinearReferencingSystemRoutes">Linear Referencing System Routes</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/utah-gis-highway-lrs-udot.png %}" alt="utah-gis-highway-lrs-udot" loading="lazy" />
-    <p>Transportation.UDOTRoutes_LRS is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepost measure coordinate.</p>
-    <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0080PR18501 is the east bound off ramp at exit 185 on I-80). ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
+    <p>The UDOT Routes ALRS layer is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepost measure coordinate.</p>
+    <p>Major routes (shown in the <code>ROUTE_ID</code> field) are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0080PR18501 is the east bound off ramp at exit 185 on I-80). ‘P’ direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5 freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific LRS event features.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter x,y coordinate precision; 0.001 mile m coordinate precision). The GIS dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
-    <p>The CARTO code can be used to query subsets or classify different types of UDOT routes:</p>
+    <p>The <code>CARTO_CODE</code> field can be used to query subsets or classify different types of UDOT routes:</p>
     <ul>
       <li>1: Interstate highways
       <li>2: US highways
