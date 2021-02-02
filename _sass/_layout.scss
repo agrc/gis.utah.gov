@@ -161,6 +161,8 @@ a:hover > i {
 
     ul, ol {
         padding-left: 40px;
+    }
+    ul:not(li ul), ol:not(li ul) {
         margin-bottom: 1em;
     }
 }
