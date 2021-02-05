@@ -119,6 +119,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <p>The UDOT Routes ALRS layer is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepoint measure coordinate.</p>
     <p>Major routes (shown in the <code>ROUTE_ID</code> field) are named using UDOT’s naming convention (ex. 0089PM is US-89, a mainline route in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0015NR31703 is at exit 317 on I-15).</p>
     <img class="center" src="{% link images/udot_ramp_numbering.png %}" alt="UDOT Ramp Codes Diagram" loading="lazy" />
+    <p><code>ROUTE_ID</code> field codes:</p>    
     <ul>
       <li><code>P</code> represents Positive direction (increasing milepoint values)
       <li><code>N</code> represents Negative direction (for divided routes only)
