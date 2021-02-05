@@ -33,4 +33,4 @@ Data was received but not processed for Sevier and Wasatch Counties. These updat
 
 #### UDOT Route System
 
-- The SGID LRS page now points to [UDOT's newest Advanced LRS (ALRS) data({% link data/transportation/roads-system/index.html %}#HighwayLinearReferencingSystemRoutes).
+- The [SGID LRS page]({% link data/transportation/roads-system/index.html %}#HighwayLinearReferencingSystemRoutes) now points to UDOT's newest Advanced LRS (ALRS) data.
