@@ -17,7 +17,7 @@ categories: []
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During the Spring of 2017 AGRC and the Utah Department of Natural Resources, Division of Water Resources acquired [~28 square miles]({% link images/lidar_wvw_coverage.png %}) of 8 points per meter Quality Level 1 LiDAR of Washakie, Utah and Whites Valley in Northern Utah. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are available from [The National Map](https://viewer.nationalmap.gov/basic/), [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1), {{ contact }} This elevation data was collected April 15-16, 2017 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
+During the Spring of 2017 AGRC and the Utah Department of Natural Resources, Division of Water Resources acquired [~28 square miles]({% link images/lidar_wvw_coverage.png %}) of 8 points per meter Quality Level 1 LiDAR of Washakie, Utah and Whites Valley in Northern Utah. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS classified point clouds are available from [The National Map](https://apps.nationalmap.gov/downloader), [Open Topography](http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.092018.6341.1), {{ contact }} This elevation data was collected April 15-16, 2017 and has a UTM NAD83 (2011) zone 12 north meter NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>

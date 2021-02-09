@@ -21,7 +21,7 @@ categories: []
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around Fredonia, AZ that covers [~150 square miles]({% link images/lidar_kanab_2016_coverage.png %}) of Utah with 8 points per meter Quality Level 1 LiDAR and includes Kanab, UT. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, low, medium, and high vegetation, are available from [The National Map](https://viewer.nationalmap.gov/basic/) {{ contact }} This elevation data was collected between October and December, 2016 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
+In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around Fredonia, AZ that covers [~150 square miles]({% link images/lidar_kanab_2016_coverage.png %}) of Utah with 8 points per meter Quality Level 1 LiDAR and includes Kanab, UT. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, classified to ground, low, medium, and high vegetation, are available from [The National Map](https://apps.nationalmap.gov/downloader) {{ contact }} This elevation data was collected between October and December, 2016 and has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 <ul class="dotless">
   <li>
