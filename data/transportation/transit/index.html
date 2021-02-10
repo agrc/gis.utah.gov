@@ -12,12 +12,18 @@ tags:
   - uta
 categories: []
 date: 2011-11-23 14:16:26 -0700
-UTABusRoutesStops:
+UTARoutesAndMostRecentRidership:
   hub:
-    name: Utah UTA Bus Routes Wasatch Front
-    item_id: e5ba4be5e29040989ff50dc49ef0cc17
+    name: UTA Routes & Most Recent Ridership
+    item_id: 4347f3565fbe4d5dbb97b016768b8907
   updates:
-    - April, 2020
+    - February, 2021
+UTAStopsAndMostRecentRidership:
+  hub:
+    name: UTA Stops & Most Recent Ridership
+    item_id: 41a38bb40ca245fdbfcc69ab8e50d80f
+  updates:
+    - January, 2021
 UTACommuterRailRoutes:
   hub:
     name: Utah UTA Commuter Rail Routes
@@ -54,24 +60,40 @@ UTALightRailStations:
 %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="UTABusRoutesStops">UTA Bus Routes & Stops</h3>
+    <h3 id="UTARoutesAndMostRecentRidership">UTA Routes & Most Recent Ridership</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/BusStops_Small.png %}" alt="Bus Stops" loading="lazy" />
-    <p>Utah UTA Bus Routes Wasatch Front includes bus stops along streets, at TRAX stations, and park & ride lots serviced by UTA buses. Utah UTA Bus Stops Wasatch Front includes redesigned bus routes that have been adjusted for internal monitoring purposes and ski bus routes to the Cottonwood Canyons and Sundance Ski Resort.</p>
-    <p>The UTA Bus Stops dataset was digitized to the Wasatch Front counties' street base maps and then exported from Trapeze (scheduling software) in shapefile format.</p>
+    <p>UTA bus, Trax, and Frontrunner routes and ridership values along the Wasatch Front. Route data includes route number (UTA's short name), route name, frequency in minutes, average ridership, and all cities and counties the route services. This data is updated biannually</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="https://opendata.gis.utah.gov/datasets/utah-uta-bus-stops-wasatch-front">Utah UTA Bus Stops Wasatch Front</a></li>
+      <li><a href="https://opendata.gis.utah.gov/datasets/utah-uta-bus-stops-wasatch-front">UTA Stops & Most Recent Ridership</a></li>
     </ul>
   </div>
   {% include packagedata.html
-    name="UTABusRoutesStops"
-    info=page.UTABusRoutesStops
+    name="UTARoutesAndMostRecentRidership"
+    info=page.UTARoutesAndMostRecentRidership
   %}
 </div>
-
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UTAStopsAndMostRecentRidership">UTA Stops & Most Recent Ridership</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/BusStops_Small.png %}" alt="Bus Stops" loading="lazy" />
+    <p>All UTA stops, including bus, Trax, and Frontrunner rail. Stop locations include Stop Name, City, Zip Code, County, UTA Stop ID and the Latitude and Longitude of the stop. Each stop displays Average Weekday Boarding and Alighting and which Routes are served at each stop. In UTA Stop ID: Numeric stops are regular bus stops, "BB" is Bus Bay, "FR" is a FrontRunner Station, "S" is Ski, "TX" is TRAX Station. This data is updated biannually.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://opendata.gis.utah.gov/datasets/rideuta::uta-routes-most-recent-ridership">UTA Routes & Most Recent Ridership</a></li>
+    </ul>
+  </div>
+  {% include packagedata.html
+    name="UTAStopsAndMostRecentRidership"
+    info=page.UTAStopsAndMostRecentRidership
+  %}
+</div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="UTACommuterRailRoutes">UTA Commuter Rail Routes</h3>
