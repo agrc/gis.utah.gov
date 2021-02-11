@@ -16,12 +16,14 @@ UTARoutesAndMostRecentRidership:
   hub:
     name: UTA Routes & Most Recent Ridership
     item_id: 4347f3565fbe4d5dbb97b016768b8907
+    org: rideuta
   updates:
     - February, 2021
 UTAStopsAndMostRecentRidership:
   hub:
     name: UTA Stops & Most Recent Ridership
     item_id: 41a38bb40ca245fdbfcc69ab8e50d80f
+    org: rideuta
   updates:
     - January, 2021
 UTACommuterRailRoutes:
@@ -64,12 +66,8 @@ UTALightRailStations:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/BusStops_Small.png %}" alt="Bus Stops" loading="lazy" />
-    <p>UTA bus, Trax, and Frontrunner routes and ridership values along the Wasatch Front. Route data includes route number (UTA's short name), route name, frequency in minutes, average ridership, and all cities and counties the route services. This data is updated biannually</p>
+    <p>UTA bus, Trax, and Frontrunner routes and ridership values along the Wasatch Front. Route data includes route number (UTA's short name), route name, frequency in minutes, average ridership, and all cities and counties the route services. This data is updated biannually.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="https://opendata.gis.utah.gov/datasets/utah-uta-bus-stops-wasatch-front">UTA Stops & Most Recent Ridership</a></li>
-    </ul>
   </div>
   {% include packagedata.html
     name="UTARoutesAndMostRecentRidership"
@@ -84,10 +82,6 @@ UTALightRailStations:
     <img class="inline-text-left outline" src="{% link images/BusStops_Small.png %}" alt="Bus Stops" loading="lazy" />
     <p>All UTA stops, including bus, Trax, and Frontrunner rail. Stop locations include Stop Name, City, Zip Code, County, UTA Stop ID and the Latitude and Longitude of the stop. Each stop displays Average Weekday Boarding and Alighting and which Routes are served at each stop. In UTA Stop ID: Numeric stops are regular bus stops, "BB" is Bus Bay, "FR" is a FrontRunner Station, "S" is Ski, "TX" is TRAX Station. This data is updated biannually.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="https://opendata.gis.utah.gov/datasets/rideuta::uta-routes-most-recent-ridership">UTA Routes & Most Recent Ridership</a></li>
-    </ul>
   </div>
   {% include packagedata.html
     name="UTAStopsAndMostRecentRidership"
