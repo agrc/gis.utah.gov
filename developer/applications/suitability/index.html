@@ -41,6 +41,10 @@
     </style>
   </head>
   <body>
+    <h1>Neighborhood Suitability Analysis in Utah</h1>
+    <p>
+      Suitability analysis, using GIS, allows a user to spatially explore the appropriateness of an area for the specific criteria that you define. This application highlights suitable areas on the map based on the weights given in the interactive slider bars. Darker hexagons indicate areas of higher suitability. Conversely, this map can be used to explore areas that are less suitable.
+    </p>
     <div id="container">
       <div id="controlContainer">
         <label for="childcareWeight">Childcare</label>
@@ -66,6 +70,24 @@
       </div>
       <div id="mapContainer"></div>
     </div>
+
+    <p>This map was created using <a href="https://wiki.openstreetmap.org/wiki/API" rel="nofollow">OSM</a> and the <a href="https://github.com/uber/h3">Uber H3 Hexagonal Geospatial Indexing System</a>, <a href="https://h3geo.org/docs/core-library/restable" rel="nofollow">resolution 8</a>.</p>
+
+    <p>
+      <strong>Data Sources</strong><br>
+      Childcare - <a href="https://data.wfrc.org/datasets/utah-child-care-centers" rel="nofollow">WFRC Child Care Centers GIS layer</a><br>
+      Hospitals - <a href="https://data.wfrc.org/datasets/utah-hospitals" rel="nofollow">WFRC Hospitals GIS layer</a><br>
+      Grocery and Food - <a href="https://data.wfrc.org/datasets/utah-grocery-and-food-stores-uda" rel="nofollow">WFRC Grocery and Food Stores GIS layer</a><br>
+      Public Libraries - <a href="https://opendata.gis.utah.gov/datasets/utah-public-libraries/" rel="nofollow">AGRC Public Libraries GIS layer</a><br>
+      Charter Schools - <a href="https://opendata.gis.utah.gov/datasets/utah-schools-prek-to-12" rel="nofollow">AGRC Schools GIS layer</a><br>
+      Colleges and Universities - <a href="https://opendata.gis.utah.gov/datasets/utah-schools-higher-education/" rel="nofollow">AGRC Colleges and Universities GIS layer</a><br>
+      UTA Commuter Rail Stations - <a href="https://opendata.gis.utah.gov/datasets/utah-uta-light-rail-stations/" rel="nofollow">UTA Commuter Rail Stations GIS layer</a><br>
+      UTA Bus Stops - <a href="https://opendata.gis.utah.gov/datasets/utah-uta-bus-stops-wasatch-front/" rel="nofollow">UTA Bus Stops GIS layer</a><br>
+      Community Centers - <a href="https://data.wfrc.org/datasets/community-centers/" rel="nofollow">WFRC Community Centers GIS layer</a><br>
+      Local Parks - <a href="https://opendata.gis.utah.gov/datasets/utah-parks-local" rel="nofollow">AGRC Local Parks GIS layer</a>
+    </p>
+
+    Built by <a href="https://gis.utah.gov">AGRC</a>.
 
     <script type="module">
       import geojson2h3 from "https://cdn.skypack.dev/geojson2h3@1.0.1";
