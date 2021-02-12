@@ -1,0 +1,386 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@1.13.0-rc.4/dist/mapbox-gl.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <script src="https://unpkg.com/d3-fetch@2.0.0"></script>
+    <script src="https://unpkg.com/maplibre-gl@1.13.0-rc.4"></script>
+    <script src="https://unpkg.com/h3-js@3.7.0"></script>
+
+    <style>
+      body {
+        padding: 15px;
+      }
+      @media (max-width: 800px) {
+        #container {
+          height: 650px;
+          grid-template-columns: none !important;
+          grid-template-rows: auto 1fr;
+        }
+        #mapContainer {
+          height: auto !important;
+        }
+      }
+      #container {
+        display: grid;
+        grid-template-columns: 370px 1fr;
+      }
+      #mapContainer {
+        height: 600px;
+      }
+      #controlContainer {
+        margin-top: 10px;
+        display: grid;
+        grid-column-gap: 10px;
+        align-self: center;
+      }
+      #controlContainer label {
+        grid-column: 1 / span 1;
+        text-align: end;
+      }
+      #controlContainer input {
+        grid-column: 2 / span 1;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Neighborhood Suitability Analysis in Utah</h1>
+    <p>
+      Suitability analysis allows a user to explore the appropriateness of an area based on a specific set of criteria. This application allows the user to select the individual criteria on which to assess and assign a weight to that criteria by moving the respective slider bar. When you move a slider bar to the right, the areas on the map that are higher in this criteria will be highlighted (i.e., darker hexagons indicate areas of higher suitability). Conversely, this map can also be used to explore areas that are less suitable.
+    </p>
+    <div id="container">
+      <div id="controlContainer">
+        <label for="childcareWeight">Childcare</label>
+        <input id="childcareWeight" type="range" min="0" max="1" step="any" value="0" />
+        <label for="hospitalWeight">Hospitals</label>
+        <input id="hospitalWeight" type="range" min="0" max="1" step="any" value="0" />
+        <label for="groceryWeight">Grocery and Food</label>
+        <input id="groceryWeight" type="range" min="0" max="1" step="any" value="0" />
+        <label for="libraryWeight">Public Libraries</label>
+        <input id="libraryWeight" type="range" min="0" max="1" step="any" value="0" />
+        <label for="charterschoolsWeight">Charter Schools</label>
+        <input id="charterschoolsWeight" type="range" min="0" max="1" step="any" value="0" />
+        <label for="higheredWeight">Colleges and Universities</label>
+        <input id="higheredWeight" type="range" min="0" max="1" step="any" value="0" />
+        <label for="utarailstationlayerWeight">UTA Light Rail Stations</label>
+        <input id="utarailstationlayerWeight" type="range" min="0" max="1" step="any" value="0" />
+        <label for="utabusstopslayerWeight">UTA Bus Stops</label>
+        <input id="utabusstopslayerWeight" type="range" min="0" max="1" step="any" value="0" />
+        <label for="commcentersWeight">Community Centers</label>
+        <input id="commcentersWeight" type="range" min="0" max="1" step="any" value="0" />
+        <label for="localparksWeight">Local Parks</label>
+        <input id="localparksWeight" type="range" min="0" max="1" step="any" value="0" />
+      </div>
+      <div id="mapContainer"></div>
+    </div>
+
+    <p>This map was created using <a href="https://wiki.openstreetmap.org/wiki/API" rel="nofollow">OSM</a> and the <a href="https://github.com/uber/h3">Uber H3 Hexagonal Geospatial Indexing System</a>, <a href="https://h3geo.org/docs/core-library/restable" rel="nofollow">resolution 8</a>.</p>
+
+    <p>
+      <strong>Data Sources</strong><br>
+      Childcare - <a href="https://data.wfrc.org/datasets/utah-child-care-centers" rel="nofollow">WFRC Child Care Centers GIS layer</a><br>
+      Hospitals - <a href="https://data.wfrc.org/datasets/utah-hospitals" rel="nofollow">WFRC Hospitals GIS layer</a><br>
+      Grocery and Food - <a href="https://data.wfrc.org/datasets/utah-grocery-and-food-stores-uda" rel="nofollow">WFRC Grocery and Food Stores GIS layer</a><br>
+      Public Libraries - <a href="https://opendata.gis.utah.gov/datasets/utah-public-libraries/" rel="nofollow">AGRC Public Libraries GIS layer</a><br>
+      Charter Schools - <a href="https://opendata.gis.utah.gov/datasets/utah-schools-prek-to-12" rel="nofollow">AGRC Schools GIS layer</a><br>
+      Colleges and Universities - <a href="https://opendata.gis.utah.gov/datasets/utah-schools-higher-education/" rel="nofollow">AGRC Colleges and Universities GIS layer</a><br>
+      UTA Light Rail Stations - <a href="https://opendata.gis.utah.gov/datasets/utah-uta-light-rail-stations/" rel="nofollow">UTA Light Rail Stations GIS layer</a><br>
+      UTA Bus Stops - <a href="https://opendata.gis.utah.gov/datasets/utah-uta-bus-stops-wasatch-front/" rel="nofollow">UTA Bus Stops GIS layer</a><br>
+      Community Centers - <a href="https://data.wfrc.org/datasets/community-centers/" rel="nofollow">WFRC Community Centers GIS layer</a><br>
+      Local Parks - <a href="https://opendata.gis.utah.gov/datasets/utah-parks-local" rel="nofollow">AGRC Local Parks GIS layer</a>
+    </p>
+
+    Built by <a href="https://gis.utah.gov">AGRC</a>
+
+    <script type="module">
+      import geojson2h3 from "https://cdn.skypack.dev/geojson2h3@1.0.1";
+
+      // Config
+      const config = {
+        lng: -111.904,
+        lat: 40.719,
+        zoom: 9,
+        fillOpacity: 0.6,
+        colorScale: ["#ffffD9", "#50BAC3", "#1A468A"],
+        h3Resolution: 8
+      };
+
+      // Utilities
+      function normalizeLayer(layer, baseAtZero = false) {
+        const hexagons = Object.keys(layer);
+        // Pass one, get max
+        const max = hexagons.reduce(
+          (max, hex) => Math.max(max, layer[hex]),
+          -Infinity
+        );
+        const min = baseAtZero
+          ? hexagons.reduce((min, hex) => Math.min(min, layer[hex]), Infinity)
+          : 0;
+        // Pass two, normalize
+        hexagons.forEach((hex) => {
+          layer[hex] = (layer[hex] - min) / (max - min);
+        });
+        return layer;
+      }
+
+      function getSliderValue(id) {
+        const input = document.getElementById(id);
+        const value = parseFloat(input.value);
+        console.log(`${id}: ${value}`);
+
+        return value;
+      }
+
+      // Transform a kilometer measurement to a k-ring radius
+      function kmToRadius(km, resolution) {
+        return Math.floor(km / h3.edgeLength(resolution, h3.UNITS.km));
+      }
+
+      function bufferPointsLinear(geojson, radius, h3Resolution) {
+        const layer = {};
+        geojson.features.forEach((feature) => {
+          const [lng, lat] = feature.geometry.coordinates;
+          const stationIndex = h3.geoToH3(
+            lat,
+            lng,
+            h3Resolution
+          );
+          // add surrounding multiple surrounding rings, with less weight in each
+          const rings = h3.kRingDistances(stationIndex, radius);
+          const step = 1 / (radius + 1);
+          rings.forEach((ring, distance) => {
+            ring.forEach((h3Index) => {
+              layer[h3Index] = (layer[h3Index] || 0) + 1 - distance * step;
+            });
+          });
+        });
+
+        return normalizeLayer(layer);
+      }
+
+      let hospitals;
+      let childcare;
+      let grocery;
+      let libraries;
+      let highered;
+      let utabusstops;
+      let utarailstations;
+      let commcenters;
+      let localparks;
+      let charterschools;
+
+      async function getRawData() {
+        hospitals = await d3.json(
+          "https://opendata.arcgis.com/datasets/39aba645ea9847668df557d1c8dbd666_0.geojson"
+        );
+        childcare = await d3.json(
+          "https://opendata.arcgis.com/datasets/64dd5af56d63483d8bb6841879bb9702_0.geojson"
+        );
+        grocery = await d3.json(
+          "https://opendata.arcgis.com/datasets/81b4eeea6c6c426aa9b165df6eb56870_0.geojson"
+        );
+        libraries = await d3.json(
+          "https://opendata.arcgis.com/datasets/f6cf0c8ef65344b6a6e5ebeaa108f549_0.geojson"
+        );
+        highered = await d3.json(
+          "https://opendata.arcgis.com/datasets/731644a217f445e5a638f9a84a7ada93_0.geojson"
+        );
+        utabusstops = await d3.json("uta_bus_stops.geojson");
+        utarailstations = await d3.json(
+          "https://opendata.arcgis.com/datasets/bb8f7bc8871b4a7594bcc037631073e7_0.geojson"
+        );
+        commcenters = await d3.json(
+          "https://opendata.arcgis.com/datasets/25dba734a2f34059bf58143834284d0f_0.geojson"
+        );
+        localparks = await d3.json("local_parks_centroids.geojson");
+        charterschools = await d3.json("charter_schools.geojson");
+      }
+
+      async function getData() {
+        console.log('getData');
+
+        const h3Resolution = config.h3Resolution;
+        // Data Layers
+        const hospitallayer = normalizeLayer(
+          bufferPointsLinear(hospitals, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+        const childcarelayer = normalizeLayer(
+          bufferPointsLinear(childcare, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+        const grocerylayer = normalizeLayer(
+          bufferPointsLinear(grocery, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+        const librarylayer = normalizeLayer(
+          bufferPointsLinear(libraries, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+        const higheredlayer = normalizeLayer(
+          bufferPointsLinear(highered, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+        const utarailstationlayer = normalizeLayer(
+          bufferPointsLinear(utarailstations, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+        const commcenterslayer = normalizeLayer(
+          bufferPointsLinear(commcenters, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+        const localparkslayer = normalizeLayer(
+          bufferPointsLinear(commcenters, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+        const charterschoolslayer = normalizeLayer(
+          bufferPointsLinear(charterschools, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+        const utabusstopslayer = normalizeLayer(
+          bufferPointsLinear(utabusstops, kmToRadius(1, h3Resolution), h3Resolution)
+        );
+
+        // Combining Layers
+        const mapLayers = [
+          { hexagons: hospitallayer, weight: getSliderValue("hospitalWeight") },
+          {
+            hexagons: childcarelayer,
+            weight: getSliderValue("childcareWeight"),
+          },
+          { hexagons: grocerylayer, weight: getSliderValue("groceryWeight") },
+          { hexagons: librarylayer, weight: getSliderValue("libraryWeight") },
+          { hexagons: higheredlayer, weight: getSliderValue("higheredWeight") },
+          {
+            hexagons: commcenterslayer,
+            weight: getSliderValue("commcentersWeight"),
+          },
+          {
+            hexagons: utarailstationlayer,
+            weight: getSliderValue("utarailstationlayerWeight"),
+          },
+          {
+            hexagons: localparkslayer,
+            weight: getSliderValue("localparksWeight"),
+          },
+          {
+            hexagons: charterschoolslayer,
+            weight: getSliderValue("charterschoolsWeight"),
+          },
+          {
+            hexagons: utabusstopslayer,
+            weight: getSliderValue("utabusstopslayerWeight"),
+          },
+        ];
+
+        const combinedLayers = {};
+        mapLayers.forEach(({ hexagons, weight }) => {
+          Object.keys(hexagons).forEach((hex) => {
+            combinedLayers[hex] =
+              (combinedLayers[hex] || 0) + hexagons[hex] * weight;
+          });
+        });
+
+        return combinedLayers;
+      }
+
+      // Map Rendering
+      function init() {
+        console.log("init");
+
+        const style = {
+          version: 8,
+          sources: {
+            osm: {
+              type: "raster",
+              tiles: ["https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"],
+              tileSize: 256,
+              attribution: "&copy; OpenStreetMap Contributors",
+              maxzoom: 19
+            }
+          },
+          layers: [
+            {
+              id: "osm",
+              type: "raster",
+              source: "osm" // This must match the source key above
+            }
+          ]
+        };
+
+        const map = new mapboxgl.Map({
+          container: document.getElementById("mapContainer"),
+          center: [config.lng, config.lat],
+          zoom: config.zoom,
+          style,
+          touchPitch: false
+        });
+        map.on("load", async () => {
+          console.log("map load");
+
+          await getRawData();
+
+          refreshMap(map);
+
+          const inputs = document.getElementsByTagName("input");
+          for (let input of inputs) {
+            input.addEventListener("change", () => {
+              refreshMap(map);
+            });
+          }
+        });
+      }
+
+      async function refreshMap(map) {
+        console.log('refreshMap');
+
+        const combinedLayers = await getData();
+
+        renderHexes(map, combinedLayers);
+      }
+
+      function renderHexes(map, hexagons) {
+        console.log("renderHexes");
+
+        // Transform the current hexagon map into a GeoJSON object
+        const geojson = geojson2h3.h3SetToFeatureCollection(
+          Object.keys(hexagons),
+          (hex) => ({ value: hexagons[hex] })
+        );
+
+        const sourceId = "h3-hexes";
+        const layerId = `${sourceId}-layer`;
+        let source = map.getSource(sourceId);
+
+        // Add the source and layer if we haven't created them yet
+        if (!source) {
+          map.addSource(sourceId, {
+            type: "geojson",
+            data: geojson,
+          });
+          map.addLayer({
+            id: layerId,
+            source: sourceId,
+            type: "fill",
+            interactive: false,
+            paint: {
+              "fill-outline-color": "rgba(0,0,0,0)",
+            },
+          });
+          source = map.getSource(sourceId);
+        }
+
+        // Update the geojson data
+        source.setData(geojson);
+
+        // Update the layer paint properties, using the current config values
+        map.setPaintProperty(layerId, "fill-color", {
+          property: "value",
+          stops: [
+            [0, config.colorScale[0]],
+            [0.5, config.colorScale[1]],
+            [1, config.colorScale[2]],
+          ],
+        });
+
+        map.setPaintProperty(layerId, "fill-opacity", config.fillOpacity);
+      }
+
+      init();
+    </script>
+  </body>
+</html>
