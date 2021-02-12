@@ -188,21 +188,15 @@
         highered = await d3.json(
           "https://opendata.arcgis.com/datasets/731644a217f445e5a638f9a84a7ada93_0.geojson"
         );
-        utabusstops = await d3.json(
-          "https://gist.githubusercontent.com/gregbunce/66986c3236b283cf0dfeb9d45cc30ac2/raw/f26ca373e8984e64b8b1f8ff01e670240213de69/uta_bus_stops.geojson"
-        );
+        utabusstops = await d3.json("uta_bus_stops.geojson");
         utarailstations = await d3.json(
           "https://opendata.arcgis.com/datasets/bb8f7bc8871b4a7594bcc037631073e7_0.geojson"
         );
         commcenters = await d3.json(
           "https://opendata.arcgis.com/datasets/25dba734a2f34059bf58143834284d0f_0.geojson"
         );
-        localparks = await d3.json(
-          "https://raw.githubusercontent.com/gregbunce/GeoJSON/master/local_parks_centroids.geojson"
-        );
-        charterschools = await d3.json(
-          "https://raw.githubusercontent.com/gregbunce/GeoJSON/master/charter_schools.geojson"
-        );
+        localparks = await d3.json("local_parks_centroids.geojson");
+        charterschools = await d3.json("charter_schools.geojson");
       }
 
       async function getData() {
