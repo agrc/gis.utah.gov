@@ -155,7 +155,6 @@
         return normalizeLayer(layer);
       }
 
-      let healthdists;
       let hospitals;
       let childcare;
       let grocery;
@@ -168,9 +167,6 @@
       let charterschools;
 
       async function getRawData() {
-        healthdists = await d3.json(
-          "https://raw.githubusercontent.com/gregbunce/intergenerational-poverty/main/data/sgid_health_dists_2020.json"
-        );
         hospitals = await d3.json(
           "https://opendata.arcgis.com/datasets/39aba645ea9847668df557d1c8dbd666_0.geojson"
         );
