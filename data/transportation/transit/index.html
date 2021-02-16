@@ -66,7 +66,7 @@ UTALightRailStations:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/BusStops_Small.png %}" alt="Bus Stops" loading="lazy" />
-    <p>UTA bus, Trax, and Frontrunner routes and ridership values along the Wasatch Front. Route data includes route number (UTA's short name), route name, frequency in minutes, average ridership, and all cities and counties the route services. This data is updated biannually.</p>
+    <p>UTA bus, Trax, and Frontrunner routes and ridership values along the Wasatch Front. Route data includes route number (UTA's short name), route name, frequency in minutes, average ridership, and all cities and counties the route services. Routes are updated 3 times a year (usually April, August, and December), weekday ridership values (AvgBrd) are updated monthly.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
   </div>
   {% include packagedata.html
@@ -80,7 +80,21 @@ UTALightRailStations:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/BusStops_Small.png %}" alt="Bus Stops" loading="lazy" />
-    <p>All UTA stops, including bus, Trax, and Frontrunner rail. Stop locations include Stop Name, City, Zip Code, County, UTA Stop ID and the Latitude and Longitude of the stop. Each stop displays Average Weekday Boarding and Alighting and which Routes are served at each stop. In UTA Stop ID: Numeric stops are regular bus stops, "BB" is Bus Bay, "FR" is a FrontRunner Station, "S" is Ski, "TX" is TRAX Station. This data is updated biannually.</p>
+    <p>This dataset includes all UTA stops, for bus, Trax, and Frontrunner rail. The records include stop name, city, zip code, county, UTA stop id and the latitude and longitude of the stop. Each stop contains average weekday boarding and alighting and a list of which routes are served at each stop.</p>
+    <p>The UTA abbreviated stop id's (StopAbbr_J) describe the type of stop.</p>
+        <dl>
+          <dt>All numeric values</dt>
+          <dd>A regular bus stop.</dd>
+          <dt>Beginning with BB</dt>
+          <dd>A bus bay</dd>
+          <dt>Beginning with FR</dt>
+          <dd>A FrontRunner station</dd>
+          <dt>Beginning with S</dt>
+          <dd>Ski resort access stop</dd>
+          <dt>Beginning with TX</dt>
+          <dd>A TRAX station</dt>
+    </dl> 
+    <p>Stop locations are updated 3 times a year (usually April, August, and December), weekday ridership values (AVGBoard, AVGAlight) are updated monthly.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.uta %}</p>
   </div>
   {% include packagedata.html
