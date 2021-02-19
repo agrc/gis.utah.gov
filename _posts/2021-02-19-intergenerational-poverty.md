@@ -32,13 +32,13 @@ Ultimately, the goal is to provide residents a viable path to upward economic mo
 
 Using spatial tools like suitability analysis, we can highlight areas on a map that meet these specific criteria (shown in Figure 1). The more layers we add, the bigger the questions we can ask. This is powerful when looking at complex issues such as [intergenerational poverty](https://jobs.utah.gov/edo/intergenerational/whatisigp.pdf).
 
+Geographic information systems allow us to ask big questions. As a community tool, GIS can empower residents and community leaders to make smarter decisions. With intergenerational poverty, the key is to provide residents with access to services that give them a fair opportunity to succeed. Planning for the success of future generations involves investing in these services now. As we move forward, GIS should be a required tool in the community toolbox.
+
+> Take a look AGRC’s [interactive neighborhood suitability map]({% link developer/applications/suitability/index.html %}) to further explore the map in Figure 1. The layers in this map give the user the ability to discover areas in the state where residents do and do-not have access to essential services, such as childcare, hospitals, grocery stores, libraries, and transit stops. This map shows a sample of what can be done using GIS and spatial analysis.
+
 <div class="flex flex--around">
   <figure class="caption">
     <img class="caption__image" src="{% link images/suitability_analysis_wasatchfront.png %}" alt="Suitability Analysis Wasatch Front" loading="lazy" />
     <figcaption class="caption__text"><a href="{% link developer/applications/suitability/index.html %}">Figure 1: Suitability Analysis along the Wasatch Front</a></figcaption>
   </figure>
 </div>
-
-Take a look AGRC’s [interactive neighborhood suitability map]({% link developer/applications/suitability/index.html %}) to further explore the map in Figure 1. The layers in this map give the user the ability to discover areas in the state where residents do and do-not have access to essential services, such as childcare, hospitals, grocery stores, libraries, and transit stops. This map shows a sample of what can be done using GIS and spatial analysis.
-
-Geographic information systems allow us to ask big questions. As a community tool, GIS can empower residents and community leaders to make smarter decisions. With intergenerational poverty, the key is to provide residents with access to services that give them a fair opportunity to succeed. Planning for the success of future generations involves investing in these services now. As we move forward, GIS should be a required tool in the community toolbox.
