@@ -15,11 +15,11 @@ tags:
 ### Poverty and Place
 {: .text-left}
 
-We now know that poverty and place are connected. [Numerous studies](https://www.nytimes.com/2015/05/04/upshot/an-atlas-of-upward-mobility-shows-paths-out-of-poverty.html) point to evidence showing that place matters a great deal to an individual’s economic outlook. This is particularly true for children.
+We now know that poverty and place are connected. Numerous [studies](https://www.nytimes.com/2015/05/04/upshot/an-atlas-of-upward-mobility-shows-paths-out-of-poverty.html) point to evidence showing that place matters a great deal to an individual’s economic outlook. This is particularly true for children.
 
-Moreover, [research](http://www.equality-of-opportunity.org/images/nbhds_exec_summary.pdf) shows that children growing up in poverty are more likely to remain in poverty. But, children who move -particularly before their teenage years- to neighborhoods with more opportunity have a much better chance of breaking the cycle.
+[Research](http://www.equality-of-opportunity.org/images/nbhds_exec_summary.pdf) also shows that children growing up in poverty are more likely to remain in poverty. But, children who move to neighborhoods with more opportunity (particularly before their teenage years) have a much better chance of breaking the cycle.
 
-This tells us two things: that neighborhoods play a significant role in the pattern of [intergenerational poverty](https://jobs.utah.gov/edo/intergenerational/index.html) and that neighborhoods with better services and more opportunities provide residents a greater chance to succeed. 
+This tells us two things - that neighborhoods play a significant role in the pattern of [intergenerational poverty](https://jobs.utah.gov/edo/intergenerational/index.html) and that neighborhoods with better services and more opportunities provide residents a greater chance to succeed. 
 
 While it might be possible for some families to relocate to better areas, it’s more practical to improve services in underserved neighborhoods. 
 
@@ -43,4 +43,4 @@ To see Figure 1 in action, take a look [AGRC’s interactive neighborhood suitab
 
 Geographic information systems allow us to ask big questions. As a community tool, GIS can empower residents and community leaders to make smarter decisions. With intergenerational poverty, the key is to provide residents with access to services that give them a fair opportunity to succeed. Planning for the success of future generations involves investing in these services now. As we move forward, GIS should be a required tool in the community toolbox.
 
-<iframe src="{% link developer/applications/suitability/index.html %}" width="100%" height="700px"></iframe>
+<iframe src="{% link developer/applications/suitability/index.html %}" width="100%" height="100%"></iframe>
