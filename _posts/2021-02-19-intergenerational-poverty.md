@@ -1,5 +1,5 @@
 ---
-title: GIS as a Tool for Addressing Generational Poverty
+title: GIS as a Tool for Addressing Intergenerational Poverty
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
@@ -19,7 +19,7 @@ We now know that poverty and place are connected. [Numerous studies](https://www
 
 Moreover, [research](http://www.equality-of-opportunity.org/images/nbhds_exec_summary.pdf) shows that children growing up in poverty are more likely to remain in poverty. But, children who move -particularly before their teenage years- to neighborhoods with more opportunity have a much better chance of breaking the cycle.
 
-This tells us two things: that neighborhoods play a significant role in the pattern of intergenerational poverty and that neighborhoods with better services and more opportunities provide residents a greater chance to succeed. 
+This tells us two things: that neighborhoods play a significant role in the pattern of [intergenerational poverty](https://jobs.utah.gov/edo/intergenerational/index.html) and that neighborhoods with better services and more opportunities provide residents a greater chance to succeed. 
 
 While it might be possible for some families to relocate to better areas, it’s more practical to improve services in underserved neighborhoods. 
 
@@ -30,7 +30,7 @@ Ultimately, the goal is to provide residents a viable path to upward economic mo
 
 [Identifying areas](https://www.nytimes.com/interactive/2015/05/03/upshot/the-best-and-worst-places-to-grow-up-how-your-area-compares.html) in the community that provide or lack these services is an essential step to creating a path forward. Geographic information systems (GIS) are well suited for this task. Using GIS, we are able to visualize the data as layers in a map. Combining the layers into one system allows us to spatially analyze the data together and ask questions such as “What areas in our community are best suited for a new charter school?”, or “Based on recent growth, where do we need to expand healthcare and transit services?”.
 
-Using spatial tools like suitability analysis, we can highlight areas on a map that meet these specific criteria. The more layers we add, the bigger the questions we can ask. This is powerful when looking at complex issues such as intergenerational poverty.
+Using spatial tools like suitability analysis, we can highlight areas on a map that meet these specific criteria. The more layers we add, the bigger the questions we can ask. This is powerful when looking at complex issues such as [intergenerational poverty](https://jobs.utah.gov/edo/intergenerational/whatisigp.pdf).
 
 <div class="flex flex--around">
   <figure class="caption">
