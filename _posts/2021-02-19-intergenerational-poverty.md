@@ -17,7 +17,7 @@ tags:
 
 We now know that poverty and place are connected. Numerous [studies](https://www.nytimes.com/2015/05/04/upshot/an-atlas-of-upward-mobility-shows-paths-out-of-poverty.html) point to evidence showing that place matters a great deal to an individual’s economic outlook. This is particularly true for children. 
 
-[Research](http://www.equality-of-opportunity.org/images/nbhds_exec_summary.pdf) shows that children growing up in poverty are more likely to remain in poverty. But, children who move to neighborhoods with more opportunity (particularly before their teenage years) have a much better chance of breaking the cycle.
+[Research](http://www.equality-of-opportunity.org/images/nbhds_exec_summary.pdf) shows that children growing up in poverty are more likely to remain in poverty, but children who move to neighborhoods with more opportunity (particularly before their teenage years) have a much better chance of breaking the cycle.
 
 This tells us two things - that neighborhoods play a significant role in the pattern of [intergenerational poverty](https://jobs.utah.gov/edo/intergenerational/index.html) and that neighborhoods with better services and more opportunities provide residents a greater chance to succeed. 
 
