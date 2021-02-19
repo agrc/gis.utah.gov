@@ -39,6 +39,6 @@ Using spatial tools like suitability analysis, we can highlight areas on a map t
   </figure>
 </div>
 
-To see this in action, take a look AGRC’s interactive neighborhood suitability analysis map. The layers in this map give the user the ability to explore areas in the state where residents do and do not have access to essential services, such as childcare, hospitals, grocery stores, libraries, and transit stops. This map shows a sample of what can be done using GIS and spatial analysis.
+To see this in action, take a look AGRC’s interactive [neighborhood suitability analysis map]({% link developer/applications/suitability/index.html %}). The layers in this map give the user the ability to explore areas in the state where residents do and do not have access to essential services, such as childcare, hospitals, grocery stores, libraries, and transit stops. This map shows a sample of what can be done using GIS and spatial analysis.
 
 Geographic information systems allow us to ask big questions. As a community tool, GIS can empower residents and community leaders to make smarter decisions. With intergenerational poverty, the key is to provide residents with access to services that give them a fair opportunity to succeed. Planning for the success of future generations involves investing in these services now. As we move forward, GIS should be a required tool in the community toolbox.
