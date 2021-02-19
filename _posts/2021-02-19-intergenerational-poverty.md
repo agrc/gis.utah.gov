@@ -30,12 +30,12 @@ Ultimately, the goal is to provide residents a viable path to upward economic mo
 
 [Identifying areas](https://www.nytimes.com/interactive/2015/05/03/upshot/the-best-and-worst-places-to-grow-up-how-your-area-compares.html) in the community that provide or lack these services is an essential step to creating a path forward. Geographic information systems (GIS) are well suited for this task. Using GIS, we are able to visualize the data as layers in a map. Combining the layers into one system allows us to spatially analyze the data together and ask questions such as “What areas in our community are best suited for a new charter school?”, or “Based on recent growth, where do we need to expand healthcare and transit services?”.
 
-Using spatial tools like suitability analysis, we can highlight areas on a map that meet these specific criteria. The more layers we add, the bigger the questions we can ask. This is powerful when looking at complex issues such as [intergenerational poverty](https://jobs.utah.gov/edo/intergenerational/whatisigp.pdf).
+Using spatial tools like suitability analysis (shown in Figure 1), we can highlight areas on a map that meet these specific criteria. The more layers we add, the bigger the questions we can ask. This is powerful when looking at complex issues such as [intergenerational poverty](https://jobs.utah.gov/edo/intergenerational/whatisigp.pdf).
 
 <div class="flex flex--around">
   <figure class="caption">
     <img class="caption__image" src="{% link images/suitability_analysis_wasatchfront.png %}" alt="Suitability Analysis Wasatch Front" loading="lazy" />
-    <figcaption class="caption__text">Suitability Analysis along the Wasatch Front</figcaption>
+    <figcaption class="caption__text">Figure 1: Suitability Analysis along the Wasatch Front</figcaption>
   </figure>
 </div>
 
