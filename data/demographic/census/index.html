@@ -1,12 +1,30 @@
 ---
 author:
-  display_name: JP
+  display_name: AGRC Office
   email: agrc@utah.gov
 tags:
   - census
   - demographic
 date: 2011-11-02 14:35:08 -0600
 categories: []
+2020Census:
+  downloads:
+    - url: "https://drive.google.com/uc?id=1_Gp0JVHFbjw5OqDcFGbFjo9b-lJbzRsW&export=download"
+      label: 'File Geodatabase: Census Data package for Utah'
+    - url: "https://drive.google.com/uc?id=1Efr1XXq5w4yTDa-KwLFL8oFrn-2Z8Afq&export=download"
+      label: 'Shapefile: Census Blocks for Utah'
+    - url: "https://drive.google.com/uc?id=1pSy_UwEybUFf3DFUpi1Zqhsj3LMN7gAn&export=download"
+      label: 'Shapefile: Census Block Groups for Utah'
+    - url: "https://drive.google.com/uc?id=1PBJg5DG95aGHGDbTff_wzWnM07SYjvRP&export=download"
+      label: 'Shapefile: Census Tracts for Utah'
+    - url: "https://drive.google.com/uc?id=1xgk1Jmnbl-kMSpkuoeUktX6dFgGJ1W4V&export=download"
+      label: 'Shapefile: Census Places for Utah'
+    - url: "https://drive.google.com/uc?id=1thr46UZOe2kZo97Pma2GOSMHQlgcYSrh&export=download"
+      label: 'Shapefile: Census Counties for Utah'
+    - url: "https://drive.google.com/uc?id=1WldVUwSCRgB8frB4clSf18RSG8p5uqas&export=download"
+      label: 'Shapefile: Census State Boundary for Utah'
+  updates:
+    - February, 2021
 2000Census:
   downloads:
     - url: https://drive.google.com/drive/folders/16hcPe8qHPEtwLQPPbzg6HFUTMutRY4Vq
@@ -59,7 +77,43 @@ UrbanAreasCensus2010:
 {% include abstract.html
 name="Demographic Data"
 stewards="AGRC and U.S. Census Bureau"
-abstract="This data package contains demographic information collected by the Census Bureau in 2010 and 2000. Demographic population includes population counts, household counts, ethnicity counts, etc.  Below, the U.S. Census Bureau Data is the data in the format released by the Census Bureau, with just a few modifications to make the data more user friendly. The Populated Block Areas 2010 Approximation and Populated Place Points 2010 Approximation are datasets derived by AGRC from 2010 Census data." %}
+abstract="This page contains demographic data collected by the Census Bureau for the years 2020, 2010 and 2000. Demographic population includes population counts, household counts, ethnicity counts, etc.  Below, the U.S. Census Bureau Data is the data in the format released by the Census Bureau, with just a few modifications to make the data more user friendly." %}
+<h5>Commonly-Used Census Bureau Geography</h5>
+<p>The Census Bureau provides data within two types of boundaries: statistical and legal. Statistical boundaries depend on population thresholds and typically follow features like roads, power lines, and rivers. Legal boundaries are more familiar, such as city, county, and state boundaries.</p>
+<h5>Census tracts (statistical)</h5>
+<p>Small, relatively permanent subdivisions of a county designed to present and compare statistical data for areas of roughly equal population. Census tracts generally contain between 1,200 and 8,000 people, with an optimum population of 4,000. The spatial size of a census tract be smaller in higher-density areas, and larger more sparsely populated areas. In higher-density areas, tracts can be considered approximately “neighborhood” sized.</p>
+<h5>Block groups (statistical)</h5>
+<p>Divisions of census tracts that generally contain between 600 and 3,000 people. A block group consists of a cluster of census blocks within the same census tract.</p>
+<h5>Census blocks (statistical)</h5>
+<p>The smallest geographic areas and the basis for all tabulated census data. Blocks are statistical areas bounded by visible features, such as streets, road, streams, and railroad tracks, and by nonvisible boundaries, such as selected property lines and city, township, school district, and county limits. A block often represents a typical city block area, however, as with other statistical geographies, blocks in rural areas may be very large in area.</p>
+<h5>Places (legal or statistical)</h5>
+<p>In Utah, “places” include cities, towns, metro townships, and census-designated places (CDPs). The first three are legal boundaries in Utah, representing incorporated places that provide governmental functions for a concentration of people. CDPs are statistical boundaries delineated to provide data for recognizable places that are not legally incorporated.</p>
+<p>Visit the <a href="https://www.census.gov/programs-surveys/geography/about/glossary.html">Census Bureau Geography Glossary</a> to learn more about all census geographies.</p>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+      <h3 id="2020Census">2020 U.S. Census Bureau Data</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+      <img class="inline-text-left outline" src="{% link images/censussmall.png %}" alt="2020 U.S. Census Bureau Data" loading="lazy" />
+      <p>The data in this section contains census blocks, census block groups, census tracts, census places, census counties, and the census state boundary.</p>
+      <p>Utah’s 2020 census geographic boundaries became available in February 2021. Due to delays associated with the COVID-19 pandemic, the corresponding demographic data will not be released until September 2021.</p>
+      <p>The 2020 data available on this page was downloaded from the Census <a href="https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html#P2">2020 Census Redistricting Data (P.L. 94-171)</a> page. All boundaries reference January 1, 2020. Additional GIS files and support products are also available the census redistricting data page.</p>
+      <p>Geography is a fundamental aspect of the census, providing the framework for the once-a-decade count of population and housing. Read more about some of the key geography changes in Utah in the <a href="https://gardner.utah.edu/blog-2020-census-geographic-support-products-available/">Kem C. Gardner Policy Institute analysis of 2020 Census</a></p>
+      <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+      <p>Note: AGRC is currently loading the 2020 census data into the SGID where it will available to consume as a web map service or direct database access. In the meantime, this data is available for download below - as individual shapefiles or packaged in a file geodatabase.</p>
+      <h5>Related Resources</h5>
+      <ul class="dotless">
+      <li><a href="https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020pl/TGRSHP2020PL_TechDoc.pdf">2020 Census Redistricting Data
+        (P.L. 94-171) TIGER/Line - Technical Documentation</a>
+      <li><a href="https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/summary-file/2020Census_PL94_171Redistricting_StatesTechDoc_English.pdf">2020 Census State Redistricting Data Summary File</a>
+      <li><a href="https://www.census.gov/programs-surveys/decennial-census/about/rdo/program-management.html">The Census Redistricting Data Program</a>
+      <li><a href="https://www.census.gov/">U.S. Census Bureau</a>
+      </ul>
+      <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html name="2020Census"
+  info=page.2020Census %}
+</div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="2010Census">2010 U.S. Census Bureau Data</h3>
