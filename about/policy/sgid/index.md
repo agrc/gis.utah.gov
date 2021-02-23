@@ -103,7 +103,7 @@ Over time, we may remove datasets from the SGID geodatabase for various reasons,
 
 Just like when adding data, we will use the [Porter](https://github.com/agrc/porter) project to track and guide dataset deprecation.
 
-We acknowledge the impact removing datasets can have on maps and projects using our datasets. We will do our best to communicate and warn people as quickly as possible through our [@MapUtah](https://twitter.com/maputah) Twitter account and by marking items as `Deprecated` in ArcGIS Online before deleting them. We encourage everyone using our data to follow us on Twitter.
+We acknowledge the impact removing datasets can have on maps and projects using our datasets. We will do our best to communicate and warn people as quickly as possible through our [@MapUtah](https://twitter.com/maputah) Twitter account and by marking items as `Deprecated` in ArcGIS Online before deleting them. We encourage everyone using our data to follow us on Twitter. The default duration for when deprecation actions are started is 30 days after the first communication. The communication and porter issue will contain migration steps.
 
 ### "Static" Datasets
 {: .text-left }
