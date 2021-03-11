@@ -27,10 +27,17 @@ FireStations:
 LawEnforcement:
   hub:
     name: Utah Law Enforcement
+    alias: Utah Law Enforcement Facilities
     item_id: 5a99475d434941359462307ede77d980
   updates:
     - June 2013
     - August 2011
+LawEnforcementBoundaries:
+  hub:
+    name: Utah Law Enforcement Boundaries
+    item_id: 2e29c65cc23c48bd88b619a3ea218626
+  updates:
+    - March 11, 2021 - Updates for initial NG911 submission
 PSAPLocations:
   hub:
     name: Utah Public Safety Answering Point Locations
@@ -109,6 +116,20 @@ StateAgencyDispatch:
   {% include packagedata.html
     name="LawEnforcement"
     info=page.LawEnforcement
+    %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="LawEnforcementBoundaries">Law Enforcement Boundaries</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/Lawboundaries.png %}" alt="Law Boundary icon" loading="lazy" />
+    <p>Society.LawEnforcementBoundaries contains jurisdictional boundaries for law enforcement agencies in Utah. Law enforcement boundaries indicate which law enforcement agency has the primary responsibility in a specific area. These boundaries are also used in the Next-Generation 911 system for recommending which agency should respond to a specific location.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html
+    name="LawEnforcementBoundaries"
+    info=page.LawEnforcementBoundaries
     %}
 </div>
 <div class="grid package">
