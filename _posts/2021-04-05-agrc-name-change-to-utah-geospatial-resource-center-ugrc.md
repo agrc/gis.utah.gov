@@ -6,11 +6,6 @@ author:
 date: 2021-04-05 17:53:13
 categories:
   - Featured
-tags:
-  - Name change
-  - AGRC
-  - UGRC
-  - session
 ---
 
 During the 2021 General Session, the Utah Legislature agreed to change the name of AGRC to the Utah Geospatial Resource Center (UGRC), as passed in House Bill 261, “Geographic Reference Center Amendments.” This bill takes effect on May 5, 2021, and, accordingly, AGRC will be working on rebranding efforts, including updating our name on the AGRC website and all communications materials, as well as creating a new logo and other items as needed.
