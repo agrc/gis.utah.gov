@@ -1,5 +1,5 @@
 ---
-title: 'Municipal Boundaries update for first quarter of 2021'
+title: 'Municipal Boundaries Update for First Quarter of 2021'
 author:
   display_name: mheagin
   email: mheagin@utah.gov
@@ -11,16 +11,17 @@ tags:
   - boundary
 ---
 
-A new year, a new start for the state. While everyone starts the year still under the pandemic restrictions and have been now for a little more than a year, growth still goes on.
+It's a new year and a new start for the state. While we entered the year still under pandemic restrictions, which we have been under for a little more than a year now, we're still experiencing growth, albeit slower than in other years.
 
-It has been a slower start to the year as things change with an election and changes to county and city personal. The last Lt. Governor is now the Governor and we have a new Lt. Governor and some new staff, who are in charge of annexation and boundaries in the state.
-Welcome Lt Governor Henderson and any new staff who will be working with us.
+This slower start may be, at least in part, due to the changes brought on by an election and subsequent changes to county and city personnel. The last lieutenant governor is now the governor, and we have a new lieutenant governor and some new staff, who are in charge of annexation and boundaries in the state.
 
-Stay safe and healthy. As always feel free to check out all the changes and make sure your boundaries are where you think they should be, view them here: [Utah Municipality Modifications](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63 )
+AGRC welcomes Lt. Governor Henderson and any new staff who will be working with us. We also hope that everyone stays safe and healthy. 
 
-To review the documents you can go here: [Utah Lt. Governor Municipal Certifications](https://municert.utah.gov/) Changes may be coming for this location, more on this later.
+As always, feel free to check out all the municipal boundaries changes and make sure your boundaries are where you think they should be. You can view them on the [Utah Municipality Modifications page](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63 ).
 
-Following are the changes and annexations since December 31,, 2019 listed by County and City:
+To review any specific annexation document, go to the [Utah Lt. Governor Municipal Certifications page](https://municert.utah.gov/). Changes may be coming for this page location; more on this later.
+
+The following table shows the changes and annexations (listed by county and city) since December 31, 2020:
 
 | County | City | Number of Changes |
 | --- | --- | --- |
