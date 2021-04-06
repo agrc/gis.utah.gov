@@ -3,8 +3,8 @@ title: '2019 and 2020 Utah Aerial Lidar Acquisition - Updated'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2020-05-13 12:10:00
-update_date: 2019-09-16 18:17:41
+date: 2019-09-16 18:17:41
+update_date: 2020-05-13 12:10:00
 categories:
 - Featured
 tags:
