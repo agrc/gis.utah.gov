@@ -15,7 +15,6 @@ Over the last several months the newly renamed Utah Geospatial Resource Center (
 
 To facilitate this paradigm shift, nearly everyone at UGRC has been working (directly or indirectly) to ensure NG911 is a success.  Dating back over the last few years, we've served as the geospatial subject matter expert for the Utah Communications Authority (UCA) as they reviewed contractor proposals.  More recently, Motorola was awarded as the service provider for network infrastructure, PSAP call-handling systems, and the geospatial backbone of NG911, known as the core services.  As the NG911 implementation date nears for Utah's first counties later this year, UGRC has been preparing the GIS data that will feed the system and working with 911 Datamaster to perform quality assurance/quality control (QA/QC).  Specifically, we've built the following [datasets](https://gis.utah.gov/data/911/) that will be included in the initial NG911 rollout:
 
-
 - PSAP Boundaries - the foundational GIS layer that will route 911 calls to a specific PSAP based on the geographic boundary from which the call originates within
 - Road Centerlines - the representation of public roadways from which addresses are assigned and located
 - Address Points - the location of individual addresses used to locate landline calls and find nearby address for cellular calls
