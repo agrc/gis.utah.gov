@@ -6,6 +6,7 @@
 
   const response = await fetch(
     "https://us-central1-ut-dts-agrc-gis-utah-gov-prod.cloudfunctions.net/viewcounter",
+    // "http://localhost:8080/", // for local development
     {
       method: "POST",
       body: location.href,
