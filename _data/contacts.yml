@@ -254,9 +254,9 @@ flood_areas:
    - name: Jamie Huff
      agency: DEM
      email: JHuff@utah.gov
-   - name: Brooke Conner
+   - name: Margaret Doherty
      agency: DEM
-     email: brooke.conner@fema.dhs.gov
+     email: Margaret.Doherty2@fema.dhs.gov
 alluvial_fans:
   name: Jamie Huff
   email: JHuff@utah.gov
