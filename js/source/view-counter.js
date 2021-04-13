@@ -1,30 +1,28 @@
-(function () {
-    var request = new XMLHttpRequest();
-    var span = document.getElementById('view-counter');
-    if (!span) {
-        return; // abort if no view-counter element is found
+(async function () {
+  const span = document.getElementById("view-counter");
+  if (!span) {
+    return; // abort if no view-counter element is found
+  }
+
+  const response = await fetch(
+    "https://us-central1-ut-dts-agrc-gis-utah-gov-prod.cloudfunctions.net/viewcounter",
+    // "http://localhost:8080/", // for local development
+    {
+      method: "POST",
+      body: location.href,
     }
+  );
+  if (response.status !== 200) {
+    console.warn("error with view counter response", response);
 
-    var onLoad = function () {
-        if (request.status !== 200) {
-            return; // don't do anything on request error
-        }
+    return; // don't do anything on request error
+  }
 
-        var body = JSON.parse(request.responseText);
+  const responseJson = await response.json();
 
-        if (body.hasOwnProperty('skip') && body.skip) {
-            return;
-        }
+  if (responseJson.hasOwnProperty("skip") && responseJson.skip) {
+    return;
+  }
 
-        var count = body.count;
-
-        span.innerHTML = 'This page has been viewed ' + count.toLocaleString() + ' times';
-    };
-
-    request.addEventListener('load', onLoad);
-    request.open(
-      "GET",
-      "https://us-central1-ut-dts-agrc-gis-utah-gov-prod.cloudfunctions.net/viewcounter"
-    );
-    request.send();
-}());
+  span.innerHTML = `This page has been viewed ${responseJson.count.toLocaleString()} times`;
+})();
