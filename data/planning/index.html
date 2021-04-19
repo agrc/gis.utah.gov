@@ -4,22 +4,20 @@ tags:
   - overview
   - planning
 author:
-  display_name: JP
+  display_name: ugrc
   email: agrc@utah.gov
 date: 2011-10-21 15:15:11 -0600
-title: Planning Overview
+title: Planning Data Resources
 categories: []
 ---
-<h6 class="text-center">Planning Data Resources</h6> 
-
 <p>The list shown below includes dataset names, descriptions, and links to some of the most important statewide and regional data resources for transportation planning, land use planning, and economic development. It also includes some datasets that represent the geography of notable formal plans and proposals.</p>
 <p>The list is meant as a starting point and users are encouraged to reach out to agencies, local government, and further search across UGRC's State Geographic Information Database for additional existing data. The overall objective of keeping this list is to connect others to valuable resources efficiently and avoid duplicative work.</p>
-<p>If you have ideas for additions to this list, {% include contact.html subject="Planning Data Page Additions" contact=site.data.contacts.sgid text='please contact ' hide-punctuation=true %}, or {% include contact.html subject="Planning Data Page Additions" contact=site.data.contacts.wfrc hide-punctuation=true %}</p>
+<p>If you have ideas for additions to this list, {% include contact.html subject="Planning Data Page Additions" contact=site.data.contacts.sgid text="please contact " hide-punctuation=true %}, or {% include contact.html subject="Planning Data Page Additions" text=" " contact=site.data.contacts.wfrc %}</p>
 
 <table>
-  <thead>  
+  <thead>
   <tr>
-      <th width "15%" scope="col">Subcategory</th>
+      <th width="15%" scope="col">Subcategory</th>
       <th width="25%" scope="col">Product Name</th>
       <th scope="col">Type</th>
       <th scope="col">Steward(s)</th>
@@ -33,7 +31,7 @@ categories: []
       </td>
     </tr>
   </tfoot>
-    
+
   <tbody>
     <tr>
       <td>Accessibility</td>
@@ -41,14 +39,14 @@ categories: []
       <td>map data</td>
       <td>WFRC</td>
       <td>Workplace Access to Opportunities (ATO) metrics for typical peak period auto and transit commutes, at the Traffic Analysis Zone (TAZ) level. Includes measures for household (access to jobs) and employer (access to workers/customers) perspectives. These datasets use a 'distance decay' travel cost weighting based on typical Wasatch Front commuting and are designed to take the place of "jobs within x minutes" datasets. This extent of this dataset currently is the Wasatch Front urban area although this will soon be expanded statewide. <a href="https://wfrc.org/ato"> More info on ATO</a></td>
-    </tr>  
+    </tr>
     <tr>
       <td>Accessibility</td>
       <td><a href="https://data.wfrc.org/datasets/commute-source-intensity">Household and Employment Intensity</a></td>
       <td>map data</td>
       <td>WFRC</td>
       <td>A quick summary of residential and employment intensity within ~1/4 mile for city-block-sized polygons in the Wasatch Front urban areas. This roughly represents commuter trip producing and attracting areas. <a href="https://wfrc.org/ato"> More info on ATO</a></td>
-    </tr> 
+    </tr>
     <tr>
       <td>Active Transportation</td>
       <td><a href="{% link data/transportation/roads-system/index.html %}">On-Street Bike Facilities</a></td>
@@ -62,14 +60,14 @@ categories: []
       <td>map data</td>
       <td>AGRC</td>
       <td>Existing and planned trails and pathways (off-street), statewide. The Status field differentiates planned from existing and Carto_Code and Class differentiate different types of trails and pathways. See On-Street Bike Facilities for bike lanes, cycle tracks, etc.</td>
-    </tr>    
+    </tr>
     <tr>
       <td>Active Transportation</td>
       <td><a href="{% link data/transportation/roads-system/index.html %}">Road and Highway System</a></td>
       <td>map data</td>
       <td>AGRC, WFRC, MAG</td>
       <td>Existing and planned bicycle infrastructure on/near roadways is coded on the road centerline dataset using Bike_L(eft), Bike_R(ight), Bike_Plan_L, Bike_Pln_R attributes. The Bike_RegPr field is used to distinguish regional bike facilities from more locally oriented facilities. This dataset is populated based on local data and local plans compiled by WFRC & MAG, and 2019 aerial photography review by UDOT Traffic and Safety.</td>
-    </tr>    
+    </tr>
     <tr>
       <td>Aerial Photography</td>
       <td><a href="{% link discover/license/index.md %}">Current High Res Aerial Photography</a></td>
@@ -97,7 +95,7 @@ categories: []
       <td>map data</td>
       <td>AGRC</td>
       <td>Utah city (municipal), county, and state boundaries</td>
-    </tr>   
+    </tr>
     <tr>
       <td>Cadastral (Land Ownership)</td>
       <td><a href="{% link data/cadastre/parcels/index.html %}">Parcels</a></td>
@@ -125,21 +123,21 @@ categories: []
       <td>map data</td>
       <td>WFRC</td>
       <td>Recreation centers, libraries, and other community recreation facilities along the Wasatch Front</td>
-    </tr> 
+    </tr>
     <tr>
       <td>Destinations</td>
       <td><a href="https://data.wfrc.org/datasets/community-services">Community Services</a></td>
       <td>map data</td>
       <td>WFRC/UDAF</td>
       <td>Community services along the Wasatch Front including city halls, county offices, courthouses, food banks, human services, the state capitol, vehicle services, and workforce services. Locations were primarily derived from digitizing or geocoding office locations listed on various state and nonprofit websites (DMV, Utah Food Bank, DWS)</td>
-    </tr>     
+    </tr>
     <tr>
       <td>Destinations</td>
       <td><a href="https://data.wfrc.org/datasets/utah-grocery-and-food-stores-udaf">Grocery Stores</a></td>
       <td>map data</td>
       <td>WFRC/UDAF</td>
       <td>Grocery Stores and other food stores from the Utah Department of Agriculture and Food (UDAF) database (2018). Use the 'TYPE' field to filter by type of store.</td>
-    </tr> 
+    </tr>
     <tr>
       <td>Destinations</td>
       <td><a href="https://data.wfrc.org/datasets/utah-child-care-centers">Child Care Facilities</a></td>
@@ -167,7 +165,7 @@ categories: []
       <td>map data</td>
       <td>WFRC</td>
       <td>Locations of shopping malls and retail centers along the Wasatch Front.</td>
-    </tr>    
+    </tr>
     <tr>
       <td>Destinations</td>
       <td><a href="{% link data/society/schools-libraries/index.html %}">Schools & Libraries</td>
@@ -198,7 +196,7 @@ categories: []
     </tr>
     <tr>
       <td>Environment</td>
-      <td><a href="https://opendata.gis.utah.gov/datasets/utah-pli-areas-proposal-jan16">Public Lands Initiative Proposal PLI Areas</a> and 
+      <td><a href="https://opendata.gis.utah.gov/datasets/utah-pli-areas-proposal-jan16">Public Lands Initiative Proposal PLI Areas</a> and
       <a href="https://opendata.gis.utah.gov/datasets/utah-pli-lines-proposal-jan16">Public Lands Initiative Proposal PLI Lines</a></td>
       <td>map data</td>
       <td>BLM</td>
@@ -238,7 +236,7 @@ categories: []
       <td>map data</td>
       <td>WFRC</td>
       <td>Mobile Home parks in the Wasatch Front and Wasatch back areas (Davis, Morgan, Salt Lake, Summit, Tooele, Utah, Wasatch, Weber counties</td>
-    </tr>   
+    </tr>
     <tr>
       <td>Land Use</td>
       <td><a href="{% link data/society/cemeteries/index.html %}">Cemeteries</a></td>
@@ -252,7 +250,7 @@ categories: []
       <td>map data</td>
       <td>WFRC</td>
       <td>A generalized interpretation (2020) of city and county general plans in the WFRC urban area. General plans present a community's aspirations for allowable future land use types and intensities.</td>
-    </tr>    
+    </tr>
     <tr>
       <td>Land Use</td>
       <td><a href="{% link data/recreation/golf-courses/index.html %}">Golf Courses</a></td>
@@ -266,21 +264,21 @@ categories: []
       <td>map data</td>
       <td>AGRC</td>
       <td>Locations of non state and non federal parks.</td>
-    </tr> 
+    </tr>
     <tr>
       <td>Land Use</td>
       <td><a href="https://data.wfrc.org/datasets/wasatch-choice-2050-centers-vision-map">Wasatch Choice Urban Centers</a></td>
       <td>map data</td>
       <td>WFRC/MAG</td>
       <td>This dataset represents the regionally significant centers and other specialized land use from the Wasatch Choice 2050 Vision Map. Land use types in this dataset include four levels of centers (metropolitan, urban, city, neighborhood), employment districts, education districts, industrial districts, and special districts (airports, mining, military, etc.).</td>
-    </tr>      
+    </tr>
     <tr>
       <td>Transportation</td>
       <td><a href="https://data.wfrc.org/datasets/utah-statewide-traffic-volume-historic-and-forecast">Annual Average Daily Traffic (AADT), Historic & Forecasted</a></td>
       <td>map data</td>
       <td>WFRC, MAG, Cache MPO, Dixie MPO, UDOT</td>
       <td>This statewide traffic volume GIS dataset contains observed (historic, from UDOT) and forecasted traffic volumes (from MPOs and UDOT) on highways and major roads.</td>
-    </tr> 
+    </tr>
     <tr>
       <td>Transportation</td>
       <td><a href="https://wfrc.org/traffic-volume-map/">Annual Average Daily Traffic (AADT), Historic & Forecasted</a></td>
@@ -301,21 +299,21 @@ categories: []
       <td>map data</td>
       <td>UDOT</td>
       <td>UDOT Functional Class definitions (interstate, other freeway/expressway, principal/minor arterial, major/minor collector, etc.) for existing and planned UDOT and federal aid eligible roads. This dataset can be viewed in this <a href="https://www.arcgis.com/home/webmap/viewer.html?webmap=494d57208ea4464bb664ac2da38f9c91">webmap</a>.</td>
-    </tr>      
+    </tr>
     <tr>
       <td>Transportation</td>
       <td><a href="https://data.wfrc.org/datasets/sb34-major-transit-investment-corridors">Major Transit Investment Corridors (per SB34)</a></td>
       <td>map data</td>
       <td>WFRC</td>
       <td>This dataset identifies transit service routes that meet the definition within Senate Bill 34 (line 858), passed during the Utah Legislature's 2019 General Session</td>
-    </tr>   
+    </tr>
     <tr>
       <td>Transportation</td>
       <td><a href="{% link data/recreation/trails/index.html %}">Pathways, Trails, and Trailheads</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Established trails and trailheads in Utah.</td>
-    </tr>   
+    </tr>
     <tr>
       <td>Transportation</td>
       <td><a href="{% link data/transportation/railroads/index.html %}">Railroads</a></td>
@@ -338,14 +336,14 @@ categories: []
       <td>Street Connectivity analysis datasets for the Wasatch Front and Back counties. Data set options include intersection points, dead ends/culdesacs, and intersection density scores by 1 km hexagon and by traffic analysis zone (TAZ). These can be viewed in WFRC's <a href="https://wfrc.maps.arcgis.com/apps/MapSeries/index.html?appid=1d40a6dc0a644abc8ec84f81cebeb6b2">Street Connectivity interactive map</a>.</td>
     </tr>
      <tr>
-      <td>Transportation</td>       
+      <td>Transportation</td>
       <td><a href="{% link data/transportation/street-network-analysis/index.html %}">Street Network Analysis</a></td>
       <td>map data</td>
       <td>AGRC</td>
       <td>Network datasets designed for routing, service areas, drive times, and distance analysis. Includes statewide street network dataset and Wasatch Front multimodal network dataset.</td>
     </tr>
     <tr>
-      <td>Transportation</td>      
+      <td>Transportation</td>
       <td><a href="{% link data/transportation/transit/index.html %}">Transit Routes, Stations, and Stops</a></td>
       <td>map data</td>
       <td>UTA</td>
@@ -358,21 +356,21 @@ categories: []
       <td>UDOT</td>
       <td>Utah Department of Transportation geospatial data and services gateway website. Includes detailed data for projects, pavement management, planning, medians, barriers, signs,traffic volume, lanes, etc available in various formats</td>
     </tr>
-    
+
     <tr>
       <td>Transportation</td>
       <td><a href="https://data-rideuta.opendata.arcgis.com/search?tags=UTA_SERVICE_DATA">Utah Transit Authority (UTA) Open Data Site</a></td>
       <td>data portal</td>
       <td>UTA</td>
       <td>Utah Transit Authority (UTA) geospatial data and services gateway website. Includes stop/station, route, and mode-level boarding counts.</td>
-    </tr>    
+    </tr>
     <tr>
       <td>Transportation</td>
       <td><a href="https://rideuta.maps.arcgis.com/apps/opsdashboard/index.html#/43fc692872714c418a83343f481c2e99">Utah Transit Authority (UTA) Ridership Dashboard</a></td>
       <td>dashboard</td>
       <td>UTA</td>
       <td>Utah Transit Authority (UTA) ridership dashboard, includes views of Commuter Rail, Light Rail, Streetcar, Regular Bus, Express Bus, Ski Bus, BRT Bus (UVX), Vanpool, and Paratransit modes</td>
-    </tr>   
+    </tr>
     <tr>
       <td>Water</td>
       <td><a href="{% link data/planning/water-related-land/index.html %}">Water Related Land Use</a></td>
