@@ -26,15 +26,15 @@ During 2018 the Federal Emergency Management Agency (FEMA) acquired [~4,693 squa
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fa fa-download"></i> <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D,1%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D&title=Uintah%20Basin%20and%20Heber%20Valley%202018%20LiDAR" target="_blank">Retrieve 2018 Bare Earth DEMs via Interactive Map</a>.
+      {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D,1%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D&title=Uintah%20Basin%20and%20Heber%20Valley%202018%20LiDAR" target="_blank">Retrieve 2018 Bare Earth DEMs via Interactive Map</a>.
     </strong>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/heber-valley-uintah-basin-2018/FEMAHQ_2018_Reports.zip" target="_blank">Reports</a> and
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/heber-valley-uintah-basin-2018/FEMAHQ_2018_Reports.zip" target="_blank">Reports</a> and
       <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/heber-valley-uintah-basin-2018/FEMAHQ_2018_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/heber-valley-uintah-basin-2018/FEMAHQ_2018_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/heber-valley-uintah-basin-2018/FEMAHQ_2018_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 

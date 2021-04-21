@@ -26,14 +26,14 @@ During 2018 AGRC, the Utah Division of Emergency Management, the Natural Resourc
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fa fa-download"></i> <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D&title=Central%20Utah%202018%20LiDAR" target="_blank">Retrieve 2018 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D&title=Central%20Utah%202018%20LiDAR" target="_blank">Retrieve 2018 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-utah-2018/CentralUtah_2018_Reports.zip" target="_blank">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-utah-2018/CentralUtah_2018_Metadata.zip" target="_blank">Metadata</a>
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-utah-2018/CentralUtah_2018_Reports.zip" target="_blank">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-utah-2018/CentralUtah_2018_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-utah-2018/CentralUtah_2018_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-utah-2018/CentralUtah_2018_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 

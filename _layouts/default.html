@@ -7,44 +7,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="{{ site.twitter_username }}" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <meta name="twitter:image" content="{{ "/images/twittercard.png" | prepend: site.baseurl | prepend: site.url }}" />
+  <meta name="twitter:description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="twitter:image" content="{{ " /images/twittercard.png" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:url"
+    content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Utah GIS Portal" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:image" content="{{ "/images/facebookcard.jpg" | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image" content="{{ " /images/facebookcard.jpg" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+  <style rel="style">
+    .dots {
+      fill: #e67e15
+    }
+
+    .land {
+      fill: #e3e3e3
+    }
+
+    .hills {
+      fill: #0d7699
+    }
+
+    .peak {
+      fill: #00a5d9
+    }
+
+    svg.logo {
+      float: left;
+      height: 60px;
+      margin: 7px 10px
+    }
+
+    @media screen and (max-width: 525px) {
+      svg.logo {
+        float: none
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="{{ " /css/main.css" | prepend: site.baseurl }}" />
   <link rel="shortcut icon" type="image/x-icon" href="{% link images/favicon.ico %}" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="alternate" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/atom+xml" title="{{ site.title }} Sitewide ATOM Feed">
-  <link rel="alternate" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }} Sitewide RSS Feed">
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.2/anchor.min.js"></script>
+  <link rel="alternate" href="{{ " /atom.xml" | prepend: site.baseurl | prepend: site.url }}"
+    type="application/atom+xml" title="{{ site.title }} Sitewide ATOM Feed">
+  <link rel="alternate" href="{{ " /feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml"
+    title="{{ site.title }} Sitewide RSS Feed">
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.2/anchor.min.js" async defer></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
 </head>
+
 <body>
   <div id="utahgov_statewideheader" style="font-size: 11px;">
     <div class="pull-left">
-      <a href="https://www.utah.gov" title="Utah.gov" alt="Utah.gov" class="utahgov_statewideheader_brand" id="utahgov_statewideheader_brand"><svg viewBox="0 0 56 56" x="0px" y="0px" width="56px" height="56px" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M0 35.5c0-4.8 3.9-8.7 8.7-8.7 4.8 0 8.7 3.9 8.7 8.7 0 4.8-3.9 8.7-8.7 8.7S0 40.3 0 35.5z" fill="#E6B42A"></path><path d="M3 12v10.9c0 2.6 1.1 3.9 3.4 3.9 1 0 1.9-0.3 2.7-0.9 0.8-0.6 1.4-1.2 1.6-2v-12h3v17h-3v-2.4c-0.3 0.7-1 1.3-2 1.8 -1 0.6-2 0.8-3 0.8 -1.9 0-3.3-0.5-4.3-1.6S0 24.9 0 22.9V11.7H3L3 12 3 12zM17.2 14.4h-2V12h2V8.4l3-1.2v4.7h4.7v2.4h-4.7v8.5c0 1.4 0.2 2.4 0.7 3.1 0.5 0.6 1.3 0.9 2.3 0.9 0.8 0 1.6-0.2 2.4-0.6l0.4 2.7c-1.3 0.3-2.6 0.5-4.1 0.5 -1.3 0-2.5-0.5-3.4-1.5 -0.9-1-1.4-2.3-1.4-3.8L17.2 14.4 17.2 14.4zM36.8 27.1c-1.2 1.5-3.1 2.3-5.6 2.3 -1.3 0-2.5-0.5-3.5-1.5 -1-1-1.5-2.2-1.5-3.6 0-1.7 0.8-3.2 2.3-4.4 1.5-1.2 3.4-1.8 5.8-1.8 0.6 0 1.4 0.1 2.2 0.4 0-2.8-1.2-4.1-3.7-4.1 -1.9 0-3.3 0.5-4.4 1.5l-1.3-2.5c0.6-0.5 1.4-0.9 2.4-1.2 1-0.3 2-0.5 2.9-0.5 2.5 0 4.3 0.6 5.4 1.7 1.1 1.1 1.7 2.9 1.7 5.4v6.1c0 1.5 0.4 2.5 1.3 3v1.5c-1.2 0-2.2-0.2-2.8-0.5C37.5 28.5 37.1 27.9 36.8 27.1zM36.5 20.7c-1-0.2-1.6-0.3-2-0.3 -1.5 0-2.8 0.4-3.7 1.2 -1 0.8-1.4 1.7-1.4 2.8 0 1.8 1 2.7 3.1 2.7 1.5 0 2.9-0.7 4.1-2.2L36.5 20.7 36.5 20.7zM53 29.1V18.4c0-1.3-0.3-2.3-0.9-3 -0.6-0.7-1.5-1.1-2.6-1.1 -0.7 0-1.5 0.2-2.2 0.6 -0.7 0.4-1.3 0.9-1.7 1.5v12.7h-3v-23l3-1V14c0.4-0.6 1.1-1.1 1.9-1.6 0.9-0.4 1.8-0.6 2.8-0.6 1.8 0 3.2 0.6 4.2 1.8 1 1.2 1.5 2.8 1.5 4.9v10.7L53 29.1 53 29.1z" fill="#FFFFFF"></path><path d="M16.9 49l1.4-2.1c1.5 1 3 1.5 4.3 1.5 1.2 0 2.1-0.2 2.8-0.6s1-0.9 1-1.5c0-1.2-0.9-1.8-2.6-1.8 -0.3 0-0.8 0.1-1.6 0.2 -0.8 0.1-1.4 0.2-1.8 0.2 -2.1 0-3.2-0.8-3.2-2.4 0-0.5 0.2-0.9 0.7-1.3 0.5-0.4 1.1-0.7 1.8-0.9 -2.1-1-3.1-2.7-3.1-5.1 0-1.6 0.5-2.9 1.6-3.9 1.1-1 2.4-1.6 4-1.6 1.5 0 2.6 0.3 3.4 0.9l1.3-1.6 1.7 1.6L27 31.8c0.7 0.9 1 2 1 3.5 0 1.5-0.5 2.8-1.4 3.8 -0.9 1-2.2 1.6-3.7 1.8l-2.2 0.2c-0.3 0-0.6 0.1-1 0.3 -0.4 0.2-0.7 0.4-0.7 0.7 0 0.4 0.5 0.6 1.4 0.6 0.4 0 1-0.1 1.9-0.2 0.8-0.1 1.5-0.2 1.9-0.2 1.5 0 2.6 0.4 3.4 1.1 0.8 0.7 1.2 1.7 1.2 2.9 0 1.4-0.6 2.5-1.8 3.3 -1.2 0.8-2.8 1.3-4.7 1.3 -1 0-2-0.2-3-0.5C18.4 49.9 17.6 49.5 16.9 49zM22.5 31.8c-0.9 0-1.7 0.3-2.2 1 -0.6 0.6-0.9 1.4-0.9 2.4 0 1 0.3 1.9 0.8 2.6 0.6 0.7 1.3 1 2.3 1 0.9 0 1.7-0.3 2.2-1 0.5-0.7 0.8-1.5 0.8-2.6 0-0.9-0.3-1.7-0.9-2.4C24.1 32.2 23.4 31.8 22.5 31.8zM28.8 37.4c0-2.3 0.6-4.2 1.9-5.6 1.2-1.4 2.9-2.1 4.9-2.1 2.1 0 3.8 0.7 5 2 1.2 1.4 1.8 3.2 1.8 5.7 0 2.4-0.6 4.3-1.8 5.7 -1.2 1.4-2.8 2.1-4.9 2.1 -2.1 0-3.8-0.7-5-2.1C29.4 41.7 28.8 39.8 28.8 37.4zM31.5 37.4c0 3.7 1.3 5.6 4 5.6 1.2 0 2.2-0.5 2.9-1.5s1.1-2.4 1.1-4.1c0-3.7-1.3-5.5-4-5.5 -1.2 0-2.2 0.5-2.9 1.5C31.9 34.3 31.5 35.7 31.5 37.4zM49.5 45.2h-0.7L42.4 30h2.9l3.9 10.4 4-10.4H56L49.5 45.2z" fill="#FFFFFF"></path></svg></a>
+      <a href="https://www.utah.gov" title="Utah.gov" alt="Utah.gov" class="utahgov_statewideheader_brand"
+        id="utahgov_statewideheader_brand"><svg viewBox="0 0 56 56" x="0px" y="0px" width="56px" height="56px"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path d="M0 35.5c0-4.8 3.9-8.7 8.7-8.7 4.8 0 8.7 3.9 8.7 8.7 0 4.8-3.9 8.7-8.7 8.7S0 40.3 0 35.5z"
+            fill="#E6B42A"></path>
+          <path
+            d="M3 12v10.9c0 2.6 1.1 3.9 3.4 3.9 1 0 1.9-0.3 2.7-0.9 0.8-0.6 1.4-1.2 1.6-2v-12h3v17h-3v-2.4c-0.3 0.7-1 1.3-2 1.8 -1 0.6-2 0.8-3 0.8 -1.9 0-3.3-0.5-4.3-1.6S0 24.9 0 22.9V11.7H3L3 12 3 12zM17.2 14.4h-2V12h2V8.4l3-1.2v4.7h4.7v2.4h-4.7v8.5c0 1.4 0.2 2.4 0.7 3.1 0.5 0.6 1.3 0.9 2.3 0.9 0.8 0 1.6-0.2 2.4-0.6l0.4 2.7c-1.3 0.3-2.6 0.5-4.1 0.5 -1.3 0-2.5-0.5-3.4-1.5 -0.9-1-1.4-2.3-1.4-3.8L17.2 14.4 17.2 14.4zM36.8 27.1c-1.2 1.5-3.1 2.3-5.6 2.3 -1.3 0-2.5-0.5-3.5-1.5 -1-1-1.5-2.2-1.5-3.6 0-1.7 0.8-3.2 2.3-4.4 1.5-1.2 3.4-1.8 5.8-1.8 0.6 0 1.4 0.1 2.2 0.4 0-2.8-1.2-4.1-3.7-4.1 -1.9 0-3.3 0.5-4.4 1.5l-1.3-2.5c0.6-0.5 1.4-0.9 2.4-1.2 1-0.3 2-0.5 2.9-0.5 2.5 0 4.3 0.6 5.4 1.7 1.1 1.1 1.7 2.9 1.7 5.4v6.1c0 1.5 0.4 2.5 1.3 3v1.5c-1.2 0-2.2-0.2-2.8-0.5C37.5 28.5 37.1 27.9 36.8 27.1zM36.5 20.7c-1-0.2-1.6-0.3-2-0.3 -1.5 0-2.8 0.4-3.7 1.2 -1 0.8-1.4 1.7-1.4 2.8 0 1.8 1 2.7 3.1 2.7 1.5 0 2.9-0.7 4.1-2.2L36.5 20.7 36.5 20.7zM53 29.1V18.4c0-1.3-0.3-2.3-0.9-3 -0.6-0.7-1.5-1.1-2.6-1.1 -0.7 0-1.5 0.2-2.2 0.6 -0.7 0.4-1.3 0.9-1.7 1.5v12.7h-3v-23l3-1V14c0.4-0.6 1.1-1.1 1.9-1.6 0.9-0.4 1.8-0.6 2.8-0.6 1.8 0 3.2 0.6 4.2 1.8 1 1.2 1.5 2.8 1.5 4.9v10.7L53 29.1 53 29.1z"
+            fill="#FFFFFF"></path>
+          <path
+            d="M16.9 49l1.4-2.1c1.5 1 3 1.5 4.3 1.5 1.2 0 2.1-0.2 2.8-0.6s1-0.9 1-1.5c0-1.2-0.9-1.8-2.6-1.8 -0.3 0-0.8 0.1-1.6 0.2 -0.8 0.1-1.4 0.2-1.8 0.2 -2.1 0-3.2-0.8-3.2-2.4 0-0.5 0.2-0.9 0.7-1.3 0.5-0.4 1.1-0.7 1.8-0.9 -2.1-1-3.1-2.7-3.1-5.1 0-1.6 0.5-2.9 1.6-3.9 1.1-1 2.4-1.6 4-1.6 1.5 0 2.6 0.3 3.4 0.9l1.3-1.6 1.7 1.6L27 31.8c0.7 0.9 1 2 1 3.5 0 1.5-0.5 2.8-1.4 3.8 -0.9 1-2.2 1.6-3.7 1.8l-2.2 0.2c-0.3 0-0.6 0.1-1 0.3 -0.4 0.2-0.7 0.4-0.7 0.7 0 0.4 0.5 0.6 1.4 0.6 0.4 0 1-0.1 1.9-0.2 0.8-0.1 1.5-0.2 1.9-0.2 1.5 0 2.6 0.4 3.4 1.1 0.8 0.7 1.2 1.7 1.2 2.9 0 1.4-0.6 2.5-1.8 3.3 -1.2 0.8-2.8 1.3-4.7 1.3 -1 0-2-0.2-3-0.5C18.4 49.9 17.6 49.5 16.9 49zM22.5 31.8c-0.9 0-1.7 0.3-2.2 1 -0.6 0.6-0.9 1.4-0.9 2.4 0 1 0.3 1.9 0.8 2.6 0.6 0.7 1.3 1 2.3 1 0.9 0 1.7-0.3 2.2-1 0.5-0.7 0.8-1.5 0.8-2.6 0-0.9-0.3-1.7-0.9-2.4C24.1 32.2 23.4 31.8 22.5 31.8zM28.8 37.4c0-2.3 0.6-4.2 1.9-5.6 1.2-1.4 2.9-2.1 4.9-2.1 2.1 0 3.8 0.7 5 2 1.2 1.4 1.8 3.2 1.8 5.7 0 2.4-0.6 4.3-1.8 5.7 -1.2 1.4-2.8 2.1-4.9 2.1 -2.1 0-3.8-0.7-5-2.1C29.4 41.7 28.8 39.8 28.8 37.4zM31.5 37.4c0 3.7 1.3 5.6 4 5.6 1.2 0 2.2-0.5 2.9-1.5s1.1-2.4 1.1-4.1c0-3.7-1.3-5.5-4-5.5 -1.2 0-2.2 0.5-2.9 1.5C31.9 34.3 31.5 35.7 31.5 37.4zM49.5 45.2h-0.7L42.4 30h2.9l3.9 10.4 4-10.4H56L49.5 45.2z"
+            fill="#FFFFFF"></path>
+        </svg></a>
     </div>
     <div class="pull-left">
       <ul class="dotless">
         <li class="pull-left">
-          <span id="utahgov_statewideheader_button_services"><a href="https://www.utah.gov/services/" target="_blank" rel="noopener">Services</a></span></li>
+          <span id="utahgov_statewideheader_button_services"><a href="https://www.utah.gov/services/" target="_blank"
+              rel="noopener">Services</a></span>
+        </li>
         <li class="pull-left">
-          <span id="utahgov_statewideheader_button_listings"><a href="https://www.utah.gov/government/agencylist.html" title="Utah.gov Agency Listings" target="_blank" rel="noopener">Agencies</a></span></li>
+          <span id="utahgov_statewideheader_button_listings"><a href="https://www.utah.gov/government/agencylist.html"
+              title="Utah.gov Agency Listings" target="_blank" rel="noopener">Agencies</a></span>
+        </li>
       </ul>
     </div>
     <div class="pull-right">
@@ -52,7 +103,8 @@
         <span onclick="showsearch();" style="text-decoration: none;color: #535353;">Search all of Utah.gov »</span>
       </div>
       <div id="utahgov_header_search" style="display: none" class="pull-right">
-        <input id="searchutgov" class="pull-left" type="text" title="Utah.gov Search" placeholder="Utah.gov Search" style="margin: 1px 0 0; background: #fff; border: 1px solid #dadada; padding: 0 4px 0 5px;border-radius: 5px 0 0 5px; height:21px; width: 100px;">
+        <input id="searchutgov" class="pull-left" type="text" title="Utah.gov Search" placeholder="Utah.gov Search"
+          style="margin: 1px 0 0; background: #fff; border: 1px solid #dadada; padding: 0 4px 0 5px;border-radius: 5px 0 0 5px; height:21px; width: 100px;">
         <button id="searchutgovbtn" style="margin-top:1px">Search</button>
       </div>
     </div>
@@ -65,19 +117,22 @@
           <svg id="svg-logo" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 155">
             <title>AGRC</title>
             <g id='peak'>
-              <path class="peak" d="M204.37,37.51l51.91,51.85c14.12,0.71,27.68,1.7,40.52,2.95L204.37,0,111.8,92.45c12.85-1.27,26.43-2.29,40.59-3Z" />
+              <path class="peak"
+                d="M204.37,37.51l51.91,51.85c14.12,0.71,27.68,1.7,40.52,2.95L204.37,0,111.8,92.45c12.85-1.27,26.43-2.29,40.59-3Z" />
             </g>
             <g id='hills'>
               <path class="hills" d="M149.78,39.37L131.09,20.7,50,101.71c13.38-2.9,28.72-5.41,45.59-7.47Z" />
-              <path class="hills" d="M278.92,20.7l-18.7,18.67,54.21,54.86c16.88,2.06,32.22,4.58,45.59,7.47Z"  />
+              <path class="hills" d="M278.92,20.7l-18.7,18.67,54.21,54.86c16.88,2.06,32.22,4.58,45.59,7.47Z" />
             </g>
             <g id="land">
-              <path class="land" d="M370.39,114.15c-30.68-7.7-74.28-13.22-124.17-15.21L203.88,56.66,161.46,99c-50.24,2.12-93.95,7.83-124.26,15.74-17,4.43-29.84,9.57-37.19,15.15,22.44-5.19,52.15-9.49,86.72-12.5,23.16-2,48.51-3.46,75.31-4.22L203.88,155l41.92-41.87c27.61,0.74,53.7,2.2,77.48,4.28,34.57,3,64.28,7.31,86.72,12.5-7.7-5.84-21.38-11.19-39.61-15.77M220.9,107.92l-14.55,14.54-2.43,19.6-2.62-19.71-14.06-14-21.4-2.65,22-2.91L201.5,89.12,203.88,70l2.56,19.33,13.21,13.19,21.86,2.71Z"
-              />
+              <path class="land"
+                d="M370.39,114.15c-30.68-7.7-74.28-13.22-124.17-15.21L203.88,56.66,161.46,99c-50.24,2.12-93.95,7.83-124.26,15.74-17,4.43-29.84,9.57-37.19,15.15,22.44-5.19,52.15-9.49,86.72-12.5,23.16-2,48.51-3.46,75.31-4.22L203.88,155l41.92-41.87c27.61,0.74,53.7,2.2,77.48,4.28,34.57,3,64.28,7.31,86.72,12.5-7.7-5.84-21.38-11.19-39.61-15.77M220.9,107.92l-14.55,14.54-2.43,19.6-2.62-19.71-14.06-14-21.4-2.65,22-2.91L201.5,89.12,203.88,70l2.56,19.33,13.21,13.19,21.86,2.71Z" />
             </g>
             <g id="dots">
-              <path class="dots" d="M8.36,133.81l1.09,7.44,13.35-1.94-1.09-7.44Zm22.16-3.17,0.9,7.46,13.39-1.62L43.91,129Zm22.12-2.51,0.72,7.48,13.43-1.3-0.72-7.48ZM74.73,126l0.61,7.49,13.45-1.1-0.61-7.49ZM97,124.24l0.53,7.5,13.46-1-0.53-7.5Zm22.2-1.54,0.38,7.51,13.48-.68-0.38-7.5ZM155,121.07l-13.48.47,0.27,7.51,13.48-.47Z" />
-              <path class="dots" d="M385.76,131.87l-1.08,7.44L398,141.25l1.09-7.44ZM363.55,129l-0.9,7.46L376,138.11l0.91-7.46Zm-22.15-2.19-0.72,7.48,13.43,1.3,0.73-7.48Zm-22.12-2-0.61,7.49,13.46,1.1,0.61-7.49ZM297,123.29l-0.53,7.5,13.46,1,0.54-7.5ZM274.83,122l-0.38,7.5,13.48,0.68,0.38-7.51Zm-22.61,6.56L265.71,129l0.27-7.51-13.48-.47Z"/>
+              <path class="dots"
+                d="M8.36,133.81l1.09,7.44,13.35-1.94-1.09-7.44Zm22.16-3.17,0.9,7.46,13.39-1.62L43.91,129Zm22.12-2.51,0.72,7.48,13.43-1.3-0.72-7.48ZM74.73,126l0.61,7.49,13.45-1.1-0.61-7.49ZM97,124.24l0.53,7.5,13.46-1-0.53-7.5Zm22.2-1.54,0.38,7.51,13.48-.68-0.38-7.5ZM155,121.07l-13.48.47,0.27,7.51,13.48-.47Z" />
+              <path class="dots"
+                d="M385.76,131.87l-1.08,7.44L398,141.25l1.09-7.44ZM363.55,129l-0.9,7.46L376,138.11l0.91-7.46Zm-22.15-2.19-0.72,7.48,13.43,1.3,0.73-7.48Zm-22.12-2-0.61,7.49,13.46,1.1,0.61-7.49ZM297,123.29l-0.53,7.5,13.46,1,0.54-7.5ZM274.83,122l-0.38,7.5,13.48,0.68,0.38-7.51Zm-22.61,6.56L265.71,129l0.27-7.51-13.48-.47Z" />
             </g>
           </svg>
           <h2 class="logo-text">UTAH AGRC
@@ -88,12 +143,17 @@
       {%- assign current = page.url | downcase | split: '/' -%}
       <nav class="site-nav">
         <ul id="menu-main-menu" class="menu">
-          <li class="menu-item{%- if current[1] == 'news' -%}{{ "active-1" | prepend: " " }}{%- endif -%}"><a href="{% link news/index.html %}">News</a></li>
-          <li class="menu-item{%- if current[1] == 'data' -%}{{ "active-2" | prepend: " " }}{%- endif -%}"><a href="{% link data/index.html %}">Data</a></li>
-          <li class="menu-item{%- if current[1] == 'developer' -%}{{ "active-3" | prepend: " " }}{%- endif -%}"><a href="{% link developer/index.md %}">Developer</a></li>
-          <li class="menu-item{%- if current[1] == 'about' -%}{{ "active-4" | prepend: " " }}{%- endif -%}"><a href="{% link about/index.md %}">About</a></li>
+          <li class="menu-item{%- if current[1] == 'news' -%}{{ " active-1" | prepend: " " }}{%- endif -%}"><a
+              href="{% link news/index.html %}">News</a></li>
+          <li class="menu-item{%- if current[1] == 'data' -%}{{ " active-2" | prepend: " " }}{%- endif -%}"><a
+              href="{% link data/index.html %}">Data</a></li>
+          <li class="menu-item{%- if current[1] == 'developer' -%}{{ " active-3" | prepend: " " }}{%- endif -%}"><a
+              href="{% link developer/index.md %}">Developer</a></li>
+          <li class="menu-item{%- if current[1] == 'about' -%}{{ " active-4" | prepend: " " }}{%- endif -%}"><a
+              href="{% link about/index.md %}">About</a></li>
           <li class="menu-item"><a href="https://agrc-status.netlify.app/">Status</a></li>
-          <li class="menu-item"><a href="{% link search/index.html %}"><i class="fas fa-search" title="Site search link"></i></a></li>
+          <li class="menu-item"><a href="{% link search/index.html %}">{% include fa_icon.html class="svg-inline--fa
+              fa-w-16" search=true %}</a></li>
         </ul>
       </nav>
     </div>
@@ -102,7 +162,6 @@
     <div class="wrapper">
       {{ content }}
       <p class="sub-title text-center muted" id="view-counter"></p>
-      <script src="{% link js/dist/view-counter.min.js %}" async defer></script>
     </div>
   </div>
   <footer class="site-footer wrapper">
@@ -128,25 +187,25 @@
           {%- if site.github_username -%}
           <li>
             <a class="clean" title="agrc github account" href="https://github.com/{{ site.github_username }}">
-                <i class="fab fa-github-square fa-3x" title="github link"></i>
+              {% include icon_social.html github=true %}
             </a>
           </li>
           {%- endif -%} {%- if site.twitter_username -%}
           <li>
             <a class="clean" title="agrc twitter account" href="https://twitter.com/{{ site.twitter_username }}">
-                <i class="fab fa-twitter-square fa-3x" title="twitter link"></i>
+              {% include icon_social.html twitter=true %}
             </a>
           </li>
           {%- endif -%} {%- if site.facebook_username -%}
           <li>
             <a class="clean" title="agrc facebook account" href="https://facebook.com/{{ site.facebook_username }}">
-                <i class="fab fa-facebook-square fa-3x" title="facebook link"></i>
+              {% include icon_social.html facebook=true %}
             </a>
           </li>
           {%- endif -%} {%- if site.vimeo_username -%}
           <li>
             <a class="clean" title="agrc vimeo account" href="https://vimeo.com/{{ site.vimeo_username }}">
-                <i class="fab fa-vimeo-square fa-3x" title="vimeo link"></i>
+              {% include icon_social.html vimeo=true %}
             </a>
           </li>
           {%- endif -%}
@@ -155,17 +214,21 @@
         <h3>Broken links, images, or misinformation?</h3>
         <div class="text-center">
           <a class="clean" href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
-            <i class="fas fa-code-branch fa-fw" title="edit problems in this page link"></i>
+            {% include fa_icon.html pr=true class="fas fa-code-branch fa-fw" %}
           </a>
-          <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit this page</a> on GitHub or notify us <a href="{{ site.github.repository_url }}/issues/new">with an issue</a>.
-          <div>Be sure to read the <a href="{% link about/contributing/index.md %}">contributing guide</a>; We accept public contributions!</div>
+          <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit this page</a> on GitHub or notify
+          us <a href="{{ site.github.repository_url }}/issues/new">with an issue</a>.
+          <div>Be sure to read the <a href="{% link about/contributing/index.md %}">contributing guide</a>; We accept
+            public contributions!</div>
         </div>
         <a href="{% link about/policy/index.md %}">
-          <h3><i class="fas fa-exclamation-triangle fa-fw" title="AGRC Data Disclaimer"></i> Data License, Disclaimer, and Policies</h3>
+          <h3>{% include fa_icon.html exclamation=true class="fas fa-exclamation-triangle fa-fw" %} Data License,
+            Disclaimer, and Policies</h3>
         </a>
         {%- if site.github -%}
         <div class="awesome text-center">
-            build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | slice: 0, 7 }}</a>
+          build: <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{
+            site.github.build_revision | slice: 0, 7 }}</a>
 
         </div>
         {%- endif -%}
@@ -173,20 +236,20 @@
           <a href="https://www.netlify.com">
             <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" loading="lazy" />
           </a>
+        </div>
       </div>
-    </div>
-    <div class="state-footer">
-      <strong>utah.gov links</strong>
-      <span><a href="https://www.utah.gov">Home</a></span>
-      <span><a href="https://www.utah.gov/disclaimer.html">Terms of Use</a></span>
-      <span><a href="https://www.utah.gov/privacypolicy.html">Privacy Policy</a></span>
-      <span><a href="https://www.utah.gov/accessibility.html">Accessibility Policy</a></span>
-      <span><a href="https://www.utah.gov/translate.html">Translate</a></span>
-    </div>
+      <div class="state-footer">
+        <strong>utah.gov links</strong>
+        <span><a href="https://www.utah.gov">Home</a></span>
+        <span><a href="https://www.utah.gov/disclaimer.html">Terms of Use</a></span>
+        <span><a href="https://www.utah.gov/privacypolicy.html">Privacy Policy</a></span>
+        <span><a href="https://www.utah.gov/accessibility.html">Accessibility Policy</a></span>
+        <span><a href="https://www.utah.gov/translate.html">Translate</a></span>
+      </div>
   </footer>
   <script type="text/javascript">
-    ;(function() {
-        document.addEventListener('DOMContentLoaded', _ => {
+    ; (function () {
+      document.addEventListener('DOMContentLoaded', _ => {
         anchors.options = {
           placement: 'left'
         };
@@ -195,13 +258,15 @@
       });
     })();
   </script>
+  <script src="{% link js/dist/view-counter.min.js %}" async defer></script>
   <script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','{{ site.analytics.google.tracking_id }}','auto');ga('send','pageview')
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', '{{ site.analytics.google.tracking_id }}', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   <script type="text/javascript">
-    function showsearch(){document.getElementById("utahgov_header_search").style.display="block",document.getElementById("search_activator").style.display="none"}var utgovsearch=[];utgovsearch.input=document.getElementById("searchutgov"),utgovsearch.btn=document.getElementById("searchutgovbtn"),utgovsearch.go=function(a){var b=utgovsearch.input.value;13===a.keyCode&&b.length>0?window.location.href="https://www.utah.gov/search-results.html?q="+b:"click"===a.type&&b.length>0&&(window.location.href="https://www.utah.gov/search-results.html?q="+b)},utgovsearch.btn.onclick=utgovsearch.go,utgovsearch.input.onkeypress=utgovsearch.go;
+    function showsearch() { document.getElementById("utahgov_header_search").style.display = "block", document.getElementById("search_activator").style.display = "none" } var utgovsearch = []; utgovsearch.input = document.getElementById("searchutgov"), utgovsearch.btn = document.getElementById("searchutgovbtn"), utgovsearch.go = function (a) { var b = utgovsearch.input.value; 13 === a.keyCode && b.length > 0 ? window.location.href = "https://www.utah.gov/search-results.html?q=" + b : "click" === a.type && b.length > 0 && (window.location.href = "https://www.utah.gov/search-results.html?q=" + b) }, utgovsearch.btn.onclick = utgovsearch.go, utgovsearch.input.onkeypress = utgovsearch.go;
   </script>
 </body>
+
 </html>

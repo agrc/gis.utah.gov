@@ -16,7 +16,7 @@ The current [WebAPI](https://api.mapserv.utah.gov) has been in production servin
 
 The interesting and often wild office discussions about how to improve the WebAPI have not been backed by concrete efforts until now. Implementing these ideas is now possible since key technologies have made amazing advancements while others have matured. AGRC is ready to combine our ideas with new technologies to make the WebAPI even better. Work has already started on what will most likely be [version 2](https://github.com/agrc/api.mapserv.utah.gov/tree/development) of the WebAPI. And we hope to bring the same improvements to version 1 without interruption.
 
-## <i class="fas fa-history"></i> The History <i class="fas fa-history fa-flip-horizontal"></i>
+## The History
 
 The WebAPI proof of concept was built using [ASP.NET WCF](https://docs.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf). After getting positive internal feedback (_and usage in production, of course_), we wrote version 1 of the WebAPI using ASP.NET WebAPI 3. The ASP.NET WebAPI then merged with ASP.NET MVC, and we are currently running on ASP.NET MVC 5.
 
@@ -24,11 +24,11 @@ The WebAPI proof of concept was built using [ASP.NET WCF](https://docs.microsoft
 
 Reading that last paragraph may have made you think that it would be hard to replicate or upgrade the entire WebAPI system. If that's the case--you are  [correct](https://github.com/agrc/api.mapserv.utah.gov/wiki). The list of installation instructions and documentation for the version 1 WebAPI system are as frustrating as they are long. A design goal of version 2 is to eliminate that friction as much as possible.
 
-## <i class="fas fa-rocket"></i> The Future <i class="fas fa-rocket fa-flip-horizontal"></i>
+## The Future
 
 The new framework we plan to use, [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1), is a ground-up redesign of ASP.NET 4 with the important design goals of being cross platform, lean, and modular. From our experience, this framework is [fast](https://www.techempower.com/benchmarks/#section=data-r16&hw=ph&test=plaintext)! The WebAPI in development is running on ASP.NET Core 2.2 preview 2. From our testing, it can handle much more throughput than the current system. A huge benefit of this framework is that developers at the AGRC can run or develop this code using [Visual Studio Code](https://code.visualstudio.com/) and [Visual Studio IDE](https://visualstudio.microsoft.com/) on Windows, Mac, and Linux. This creates a great developer experience by allowing any and all development environments. The cross platform abilities enables this project to enter the world of [Docker](https://www.docker.com/) and [Kubernetes](https://kubernetes.io/).
 
-## <i class="fab fa-docker"></i> Containers <i class="fab fa-docker fa-flip-horizontal"></i>
+## Containers
 
 Version 2 of the WebAPI is being built for containers. It will run without them, but building the correct runtime environment is much simpler using them. The system is currently comprised of four containers that will likely expand to six or more.
 
@@ -46,7 +46,7 @@ ASP.NET Core runs very well in a container and will drive the WebAPI and develop
 
 Redis remains our choice for in-memory caching and also runs very well in a container. The main goal of using containers is that [docker compose](https://docs.docker.com/compose/) can start the entire system with **one command**. Using Docker, _anyone_ can play with the system without having to install additional software.
 
-## <i class="fas fa-stamp"></i> Orchestration <i class="fas fa-stamp fa-flip-horizontal"></i>
+## Orchestration
 
 Our version 2 WebAPI will run many containers at the same time, and managing how those containers work together is what Kubernetes was designed to do. Kubernetes allows AGRC to scale the WebAPI automatically or using a [CLI tool](https://kubernetes.io/docs/tasks/tools/install-kubectl/). Kubernetes will update our containers when AGRC makes changes to the code and can do so without any downtime. It can also monitor and manage the health of our containers to maintain our SLA.
 
@@ -54,7 +54,7 @@ To recap, AGRC is writing code and organizing it into separate containers. The c
 
 We have taken it one step further with [Terraform](https://www.terraform.io/). Terraform allows AGRC to template and script the infrastructure that Kubernetes and the containers run on. To build on the magic of running the WebAPI with one command, with Terraform, we can have the WebAPI running in the Google Cloud Platform with **one command**--all of the nodes, networks, etc. We are very excited for this level of predictability and declarative configuration to run this important AGRC system.
 
-## <i class="fas fa-search-minus"></i> The Minutia <i class="fas fa-search-minus fa-flip-horizontal"></i>
+## The Minutia
 
 There are a few notable changes to the WebAPI source code that happened during this transition that only a software developer would appreciate.
 

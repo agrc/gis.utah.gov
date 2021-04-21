@@ -13,7 +13,7 @@ tags:
 
 As software developers, we want the people who are using our software to ~~enjoy~~ _not hate_ the experience. Developers strive to create a positive user experience to increase the popularity and usage of their software. Consequently, we spend many hours designing, debating, and redesigning to ensure that user interactions with our software are simple, effective, and intuitive.
 
-### skip to the [tl;dr <i class="fas fa-long-arrow-alt-down"></i>](#tldr)
+### skip to the [tl;dr](#tldr)
 
 > The people who are using your software are motivated by the desire to save time.
 

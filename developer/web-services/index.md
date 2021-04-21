@@ -10,7 +10,7 @@ categories:
   - Developer
 date: 2011-06-30 18:23:51
 ---
-<i class="fas fa-2x fa-fw fa-magic"></i> The Automated Geographic Reference Center (AGRC) is the State of Utah's map technology coordination office. The AGRC creates, maintains, and stores geospatial data in the State Geographic Information Database (SGID), a one-stop shop to hundreds of data layers developed, aggregated, or acquired by state government. [AGRC's Web API](https://api.mapserv.utah.gov) is an http-enabled service for accessing this valuable geospatial data.
+The Automated Geographic Reference Center (AGRC) is the State of Utah's map technology coordination office. The AGRC creates, maintains, and stores geospatial data in the State Geographic Information Database (SGID), a one-stop shop to hundreds of data layers developed, aggregated, or acquired by state government. [AGRC's Web API](https://api.mapserv.utah.gov) is an http-enabled service for accessing this valuable geospatial data.
 
 From querying any data layer in the SGID to geocoding addresses against the most accurate statewide roads dataset, the application of the API is endless. The API also powers AGRC's [widgets, toolboxes, and add-ins]({% link developer/widgets/index.md %}#arcgis-tools), which can help you navigate the sea of data in the SGID.
 

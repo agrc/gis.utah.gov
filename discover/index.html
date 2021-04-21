@@ -15,29 +15,29 @@ categories: []
 ---
 
 <img src="images/discover.png" alt="Discover Logo" class="flex flex--center outline" loading="lazy" />
-<h2 class="text-left"><i class="fas fa-fw fa-plane"></i> About Discover</h2>
+<h2 class="text-left">{% include fa_icon.html plane=true class="svg-inline--fa fa-w-18 fa-fw" %} About Discover</h2>
 <p>Discover is a cloud-based server that provides AGRC's aerial imagery and base maps to anyone who wants to use them in their GIS, CAD, or web applications. Discover delivers its services in both <acronym title="Web Map Tile Service">WMTS</acronym> and <acronym title="Web Map Service">WMS</acronym> formats from the Open Geospatial Consortium (OGC) for broad compatibility. Like other common web map services, they are provided in the Web Mercator WGS84 projection (wkid/EPSG 3857).</p>
 <p>You will need to register for a free Discover account to access these services. There are two levels of Discover access:</p>
 <ul class="dotless">
-  <li><i class="far fa-fw fa-circle"></i> <strong>General access</strong>, for anyone who wants to use our base maps, NAIP imagery, or HRO imagery.</li>
-  <li><i class="fas fa-fw fa-lock"></i> <strong>Licensed access</strong>, for Utah's <strong>cities, counties, special districts, state agencies, K-12 school districts, colleges, universities, and tribal entities</strong> (or contractors or formal partners of any of these entities). This provides access to <strong>statewide high-resolution aerial imagery</strong> under the state's Google and Hexagon imagery licenses in addition to the general base maps and imagery. Visit the <a href="{% link discover/license/index.md %}">license information page</a> for more details.</li>
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <strong>General access</strong>, for anyone who wants to use our base maps, NAIP imagery, or HRO imagery.</li>
+  <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <strong>Licensed access</strong>, for Utah's <strong>cities, counties, special districts, state agencies, K-12 school districts, colleges, universities, and tribal entities</strong> (or contractors or formal partners of any of these entities). This provides access to <strong>statewide high-resolution aerial imagery</strong> under the state's Google and Hexagon imagery licenses in addition to the general base maps and imagery. Visit the <a href="{% link discover/license/index.md %}">license information page</a> for more details.</li>
 </ul>
 <p class="pop text-center">
   <strong>Anyone</strong> can use the general access imagery and base map services from Discover! To use these services, all you need is a <strong><em>free</em></strong> account and its corresponding quad-word connection link.
 </p>
-<h3 class="text-left"><i class="far fa-fw fa-keyboard"></i> Sign Up</h3>
+<h3 class="text-left">{% include fa_icon.html keyboard=true class="svg-inline--fa fa-w-18 fa-fw" %} Sign Up</h3>
 <h5>Choose the Right Form</h5>
 <p><em><pre>You must choose. But choose wisely, for as the true form will bring you maps, the false form will take them from you.<br>     — The Grail Knight (probably)</pre></em></p>
 <p>To register a Discover account, fill out the appropriate form:</p>
 <ul class="dotless">
-  <li><i class="far fa-fw fa-circle"></i> <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform">Discover Server Access Form</a>, for <strong>general access</strong>.
-  <li><i class="fas fa-fw fa-lock"></i> <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a>, for <strong>licensed access</strong> by one of Utah’s <strong>cities, counties, special districts, state agencies, school districts, colleges, universities, or tribal entities</strong>, or a contractor or formal partner of one of these organizations. Students in the state of Utah working on school projects also qualify for licensed access.
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform">Discover Server Access Form</a>, for <strong>general access</strong>.
+  <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a>, for <strong>licensed access</strong> by one of Utah’s <strong>cities, counties, special districts, state agencies, school districts, colleges, universities, or tribal entities</strong>, or a contractor or formal partner of one of these organizations. Students in the state of Utah working on school projects also qualify for licensed access.
 </ul>
 <p class="pop text-center">
   <strong>Students:</strong> Please use the <a href="https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScL5uUQIvw7op_ZcF4bijxcoOMGhNF0MXwJNGqSXS6IbjbKhA/viewform">Organizational Usage Agreement Form</a> (except for students at out-of-state schools) and provide a school-supplied e-mail if possible.
 </p>
 <p>Once you have completed the appropriate form (please only fill out <strong>one</strong> or the other, not both), we will review your request, create your account, and send you an e-mail with information about the services.</p>
-<h3 class="text-left" id="connect"><i class="fab fa-fw fa-mixcloud"></i> Get Connected</h3>
+<h3 class="text-left" id="connect">{% include fa_icon.html api=true class="svg-inline--fa fa-w-20 fa-fw" %} Get Connected</h3>
 <p>Your account e-mail will contain URLs that you'll enter into your software or web application to access the WMS, WMTS, or tile services. They contain a quad-word (e.g., <code>https://discover.agrc.utah.gov/login/path/your-unique-quad-word/</code>) that is unique to your user and should not be shared with anyone outside your immediate organization. Multiple requests from the same organization may be given the same quad-word.</p>
 <strong>Example Discover URL Templates</strong>
 <ul class="dotless">
@@ -63,41 +63,41 @@ categories: []
   <li><a href="{% link discover/resources/index.md %}#other-tidbits">Other tidbits</a>
 </ul>
 <p>If you are looking for <strong>non-licensed imagery downloads</strong> (NAIP, HRO, etc), check out the <a href="{% link data/aerial-photography/index.html %}">aerial photography</a> section of the data pages.</p>
-<h3 class="text-left" id="services"><i class="far fa-fw fa-map"></i> Available Services</h3>
+<h3 class="text-left" id="services">{% include fa_icon.html map=true class="svg-inline--fa fa-w-18 fa-fw" %} Available Services</h3>
 <ul class="dotless no-padding">
-  <li><i class="fas fa-fw fa-lock"></i> <code>Utah</code> – Combination of the 2018 Hexagon 30cm imagery and the 2019 Hexagon 15cm imagery with scale-dependent rendering <strong>(licensed)</strong>
+  <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Utah</code> – Combination of the 2018 Hexagon 30cm imagery and the 2019 Hexagon 15cm imagery with scale-dependent rendering <strong>(licensed)</strong>
     <ul class="dotless no-margin">
       <li><em>This layer now uses the Hexagon imagery instead of the Google imagery. The rural areas have a slightly lower resolution than before but are more up-to-date. The most recent Google imagery is still available in the <code>Google</code> service.</em>
     </ul>
-  <li><i class="fas fa-fw fa-lock"></i> <code>Hexagon 15cm</code> – Approximately 6-inch natural-color <a href="{% link data/aerial-photography/index.html %}#HEXAGON">aerial photography from Hexagon</a> collected November 2019 covering the Wasatch Front, Logan, and St. George<strong> (licensed)</strong>
-  <li><i class="fas fa-fw fa-lock"></i> <code>Hexagon 30cm</code> – Approximately 12-inch statewide natural-color <a href="{% link data/aerial-photography/index.html %}#HEXAGON">aerial photography from Hexagon</a> collected in 2018<strong> (licensed)</strong>
+  <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Hexagon 15cm</code> – Approximately 6-inch natural-color <a href="{% link data/aerial-photography/index.html %}#HEXAGON">aerial photography from Hexagon</a> collected November 2019 covering the Wasatch Front, Logan, and St. George<strong> (licensed)</strong>
+  <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Hexagon 30cm</code> – Approximately 12-inch statewide natural-color <a href="{% link data/aerial-photography/index.html %}#HEXAGON">aerial photography from Hexagon</a> collected in 2018<strong> (licensed)</strong>
     <ul class="dotless no-margin">
       <li><em>This layer is a higher-resolution copy of the 2018 NAIP imagery</em>
     </ul>
-  <li><i class="fas fa-fw fa-lock"></i> <code>Google</code> – Most recent 6-inch statewide natural-color <a href="{% link data/aerial-photography/index.html %}#GOOGLE">aerial photography from Google</a> collected over 2011–2018<strong> (licensed)</strong>
-  <li><i class="fas fa-fw fa-lock"></i> <code>Google {year} archive</code> – Year-by-year updates to the Google Imagery (the latest blocks are always incorporated into the <code>Google</code> service) <strong>(licensed)</strong>
+  <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Google</code> – Most recent 6-inch statewide natural-color <a href="{% link data/aerial-photography/index.html %}#GOOGLE">aerial photography from Google</a> collected over 2011–2018<strong> (licensed)</strong>
+  <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Google {year} archive</code> – Year-by-year updates to the Google Imagery (the latest blocks are always incorporated into the <code>Google</code> service) <strong>(licensed)</strong>
     <ul class="dotless no-margin">
       <li><em>Available Years: 2011–2018</em>
     </ul>
-  <li><i class="far fa-fw fa-circle"></i> <code>Basemap-Address_Points</code> – Base map of <a href="{% link data/location/address-data/index.html %}#AddressPoints">address point</a> locations
-  <li><i class="far fa-fw fa-circle"></i> <code>Basemap-Overlay</code> – General reference features—highways and streets, cities, address points, parcels, etc—with a transparent background, suitable for layering over your thematic data.
-  <li><i class="fas fa-fw fa-lock"></i> <code>Basemap-Hybrid</code> – Combination of the <code>Overlay</code> base map and the <code>Utah</code> imagery service <strong>(licensed)</strong>
-  <li><i class="far fa-fw fa-circle"></i> <code>Basemap-Lite</code> – A light, muted reference base map that doesn't compete with your thematic data.
-  <li><i class="far fa-fw fa-circle"></i> <code>Basemap-Terrain</code> – Base map of hillshade, highways and streets, parks, forests, water, etc.
-  <li><i class="far fa-fw fa-circle"></i> <code>Basemap-Topo</code> – Base map of US Geological Survey <a href="{% link data/usgs-scanned-topographic-maps/index.html %}">topographic maps</a>
-  <li><i class="far fa-fw fa-circle"></i> <code><abbr title="Digital Ortho Photo Quads">DOQ</abbr> 1990s BW</code> – <a href="{% link data/aerial-photography/doq/index.html %}#1990DOQ">1-meter statewide black-and-white</a> aerial photography, collected in the 1990s
-  <li><i class="far fa-fw fa-circle"></i> <code><abbr title="High Resolution Orthophotography">HRO</abbr> 2012 RGB</code> – <a href="{% link data/aerial-photography/hro/index.html %}#HRO2012">12.5-cm natural-color</a> aerial photography of the Wasatch Front, collected in 2012
-  <li><i class="far fa-fw fa-circle"></i> <code>NAIP {year} RGB</code> – <a href="{% link data/aerial-photography/naip/index.html %}">1-meter statewide natural-color</a> aerial photography
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Basemap-Address_Points</code> – Base map of <a href="{% link data/location/address-data/index.html %}#AddressPoints">address point</a> locations
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Basemap-Overlay</code> – General reference features—highways and streets, cities, address points, parcels, etc—with a transparent background, suitable for layering over your thematic data.
+  <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Basemap-Hybrid</code> – Combination of the <code>Overlay</code> base map and the <code>Utah</code> imagery service <strong>(licensed)</strong>
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Basemap-Lite</code> – A light, muted reference base map that doesn't compete with your thematic data.
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Basemap-Terrain</code> – Base map of hillshade, highways and streets, parks, forests, water, etc.
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Basemap-Topo</code> – Base map of US Geological Survey <a href="{% link data/usgs-scanned-topographic-maps/index.html %}">topographic maps</a>
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code><abbr title="Digital Ortho Photo Quads">DOQ</abbr> 1990s BW</code> – <a href="{% link data/aerial-photography/doq/index.html %}#1990DOQ">1-meter statewide black-and-white</a> aerial photography, collected in the 1990s
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code><abbr title="High Resolution Orthophotography">HRO</abbr> 2012 RGB</code> – <a href="{% link data/aerial-photography/hro/index.html %}#HRO2012">12.5-cm natural-color</a> aerial photography of the Wasatch Front, collected in 2012
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>NAIP {year} RGB</code> – <a href="{% link data/aerial-photography/naip/index.html %}">1-meter statewide natural-color</a> aerial photography
   <ul class="dotless no-margin">
     <li><em>Available Years: 2006, 2009, 2011, 2014, 2016, 2018</em>
   </ul>
-  <li><i class="far fa-fw fa-circle"></i> <code>NAIP {year} NRG</code> – 1-meter statewide color infrared aerial photography
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>NAIP {year} NRG</code> – 1-meter statewide color infrared aerial photography
   <ul class="dotless no-margin">
     <li><em>Available Years: 2006, 2011, 2014, 2016, 2018</em>
   </ul>
-  <li><i class="far fa-fw fa-circle"></i> <code>Hillshade</code> – 10-meter statewide combined hillshade and slope
+  <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Hillshade</code> – 10-meter statewide combined hillshade and slope
 </ul>
-<h3 class="text-left"><i class="far fa-fw fa-thumbs-up"></i> Best Practices</h3>
+<h3 class="text-left">{% include fa_icon.html thumbs=true class="svg-inline--fa fa-w-16 fa-fw" %} Best Practices</h3>
 <ul>
   <li>We strongly recommended that you use WMTS for the best user experience.
   <li>If you are, or will be, printing base maps from the web and are experiencing blank or empty output, read about our <a href="{% link _posts/2017-02-02-printing-web-maps-with-discover-services.md %}">GP proxy service</a> or our new <a href="{% link _posts/2018-02-26-success-with-serverless.md %}">serverless print proxy</a>.
