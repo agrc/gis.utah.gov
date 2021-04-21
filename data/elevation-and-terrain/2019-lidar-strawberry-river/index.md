@@ -26,14 +26,14 @@ During 2019 AGRC and the Utah Reclamation Mitigation Conservation Commission (UR
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fa fa-download"></i> <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2019%20Strawberry%20River%20LiDAR%7D,HRO%202019%20(10cm)&title=2019%20Strawberry%20River%20Lidar%20DEMs%20and%20Aerial%20Photography" target="_blank">Retrieve 2019 Bare Earth DEMs, First Return DSMs, and Aerial Photography via Interactive Map</a>
+      {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2019%20Strawberry%20River%20LiDAR%7D,HRO%202019%20(10cm)&title=2019%20Strawberry%20River%20Lidar%20DEMs%20and%20Aerial%20Photography" target="_blank">Retrieve 2019 Bare Earth DEMs, First Return DSMs, and Aerial Photography via Interactive Map</a>
     </strong>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/strawberry-river-2019/StrawberryRiver_2019_Reports.zip" target="_blank">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/strawberry-river-2019/StrawberryRiver_2019_Metadata.zip" target="_blank">Metadata</a>
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/strawberry-river-2019/StrawberryRiver_2019_Reports.zip" target="_blank">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/strawberry-river-2019/StrawberryRiver_2019_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
-    <i class="fa fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/strawberry-river-2019/StrawberryRiver_2019_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/strawberry-river-2019/StrawberryRiver_2019_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 

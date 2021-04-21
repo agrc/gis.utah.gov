@@ -78,7 +78,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
-      <i class="fas fa-pull-right fa-download fa-2x" data-fa-transform="down-2"></i>
+      {% include fa_icon.html download=true lower=true class="svg-inline--fa fa-w-16 fa-pull-right fa-2x" %}
       <h5 id="RoadCenterlines-downloads">Downloads and Web Services</h5>
     </div>
     <div class="panel-content" id="RoadCenterlines-list">
@@ -89,14 +89,14 @@ abstract="This dataset contains GIS mapping data representing the statewide road
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel update">
-      <i class="fas fa-pull-right fa-calendar fa-2x" data-fa-transform="down-2"></i>
+      {% include fa_icon.html calendar=true class="svg-inline--fa fa-w-16 fa-pull-right fa-2x" %}
       <h5 id="RoadCenterlines-updates">Updates</h5>
     </div>
     <div class="panel-content">
       <p>Updates to this dataset are published every month, with approximately nine counties receiving detailed review.</p>
       <ul class="dotless no-padding">
-        <li><a href="{% link _posts/2021-04-13-utah-sgid-statewide-roads-data-layer-updates-04132021.md %}">April 13, 2021</a>         
-        <li><a href="{% link _posts/2021-03-05-utah-sgid-statewide-roads-data-layer-updates-03052021.md %}">March 05, 2021</a>        
+        <li><a href="{% link _posts/2021-04-13-utah-sgid-statewide-roads-data-layer-updates-04132021.md %}">April 13, 2021</a>
+        <li><a href="{% link _posts/2021-03-05-utah-sgid-statewide-roads-data-layer-updates-03052021.md %}">March 05, 2021</a>
         <li><a href="{% link _posts/2021-02-05-utah-sgid-statewide-roads-data-layer-updates-02052021.md %}">February 05, 2021</a>
         <li><a href="{% link _posts/2021-01-08-utah-sgid-statewide-roads-data-layer-updates-01082021.md %}">January 08, 2021</a>
         <li><a href="{% link _posts/2020-12-04-utah-sgid-statewide-roads-data-layer-updates-12042020.md %}">December 04, 2020</a>
@@ -120,7 +120,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <p>The UDOT Routes ALRS layer is a polylineM dataset wherein each state and federal route is a single feature whose vertices include a milepoint measure coordinate.</p>
     <p>Major routes (shown in the <code>ROUTE_ID</code> field) are named using UDOT’s naming convention (ex. 0089PM is US-89, a mainline route in the positive direction). Ramps and collectors are also included and have 11 character identifiers (ex. 0015NR31703 is at exit 317 on I-15).</p>
     <img class="center" src="{% link images/udot_ramp_numbering.png %}" alt="UDOT Ramp Codes Diagram" loading="lazy" />
-    <p><code>ROUTE_ID</code> field codes:</p>    
+    <p><code>ROUTE_ID</code> field codes:</p>
     <ul>
       <li><code>P</code> represents Positive direction (increasing milepoint values)
       <li><code>N</code> represents Negative direction (for divided routes only)
@@ -128,7 +128,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
       <li><code>R</code> represents Ramp
       <li><code>C</code> represents Collector
       <li><code>X</code> represents Other
-    </ul>    
+    </ul>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83. The GIS dataset representing the UDOT ALRS is stewarded by UDOT with assistance from DTS, AGRC and local government.</p>
     <p>The <code>CARTO_CODE</code> field can be used to query subsets or classify different types of UDOT routes:</p>
     <ul>
@@ -146,7 +146,7 @@ abstract="This dataset contains GIS mapping data representing the statewide road
     <ul class="dotless">
       <li><a href="http://data.udot.utah.gov">data.udot.utah.gov</a>
       <li><a href="https://drive.google.com/file/d/1t03AWYHeqTjssTSKnzn60ygdIB-nqEAF/view">Read about the changes coming to the LRS</a>
-      <li><a href="https://drive.google.com/file/d/1PR7Th4HzhBjhoe_t2k_-XWELY7Jtgv0t/view?usp=sharing">Metadata for LRS Routes</a>   
+      <li><a href="https://drive.google.com/file/d/1PR7Th4HzhBjhoe_t2k_-XWELY7Jtgv0t/view?usp=sharing">Metadata for LRS Routes</a>
     </ul>
   </div>
   {% include packagedata.html name="HighwayLinearReferencingSystemRoutes" info=page.HighwayLinearReferencingSystemRoutes %}

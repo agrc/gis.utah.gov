@@ -59,9 +59,9 @@ def munge_data(item, i, indices):
         if ',' in value:
             value = value.split(',')
 
-            return ''.join([f'<a href="{v}" class="pull-right"><i class="fab fa-mixcloud fa-fw" alt="service endpoint"></i></a>' for v in value])
+            return ''.join([f'<a href="{v}" class="pull-right">{{% include fa_icon.html api=true class="svg-inline--fa fa-w-20 fa-fw" %}}</i></a>' for v in value])
 
-        return f'<a href="{value}" class="pull-right"><i class="fab fa-mixcloud fa-fw" alt="service endpoint"></i></a>'
+        return f'<a href="{value}" class="pull-right">{{% include fa_icon.html api=true class="svg-inline--fa fa-w-20 fa-fw" %}}</i></a>'
 
     def webapp_link(value):
         if value is None or len(value) == 0:
@@ -70,9 +70,9 @@ def munge_data(item, i, indices):
         if ',' in value:
             value = value.split(',')
 
-            return ''.join([f'<a href="{v.strip()}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>' for v in value])
+            return ''.join([f'<a href="{v.strip()}" class="pull-right">{{% include fa_icon.html globe=true class="svg-inline--fa fa-w-16 fa-fw" %}}</a>' for v in value])
 
-        return f'<a href="{value.strip()}" class="pull-right"><i class="fas fa-globe fa-fw" alt="website link"></i></a>'
+        return f'<a href="{value.strip()}" class="pull-right">{{% include fa_icon.html globe=true class="svg-inline--fa fa-w-16 fa-fw" %}}</a>'
 
     def booleanize(value):
         if value is None or len(value) == 0:

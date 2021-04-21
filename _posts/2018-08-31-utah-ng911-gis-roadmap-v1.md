@@ -84,10 +84,6 @@ For further reading see [section 4.7 of ref 1, section 5.2.1 of ref 5, and secti
 #### `Near-Term`
 {: .text-left}
 
-<span class="fa-2x" title="Near-Term">
-  <i class="fas fa-chevron-circle-right highlight fa-fw"></i><i class="fas fa-chevron-circle-right grey fa-fw"></i><i class="fas fa-chevron-circle-right grey fa-fw"></i>
-</span>
-
 Data validation and cleanup are the next, most logical steps for GIS readiness. These are often considered the first steps in NG911 transition. At the moment, AGRC is focused on facilitating two specific data validation checks, both mentioned in the previous Data Requirements section of this page:
 
 ##### ALI/MSAG and GIS
@@ -107,13 +103,8 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
     - To resolve: Typically, the road centerline address ranges need to be adjusted.
 - AGRC will work with data providers to resolve any unintended discrepancies (see the [What can you do now?](#do-now) section below).
 
-
 #### `Mid-Term`
 {: .text-left}
-
-<span class="fa-2x" title="Mid-Term">
-  <i class="fas fa-chevron-circle-right highlight fa-fw"></i><i class="fas fa-chevron-circle-right highlight fa-fw"></i><i class="fas fa-chevron-circle-right fa-fw grey"></i>
-</span>
 
 - Identify and resolve any gaps and/or overlaps in the emergency service boundaries (e.g., law, fire, and EMS).
 - Resolve address range overlap in road centerlines.
@@ -127,10 +118,6 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 #### `Long-Term`
 {: .text-left}
-
-<span class="highlight fa-2x" title="Long-Term">
-  <i class="fas fa-chevron-circle-right fa-fw"></i><i class="fas fa-chevron-circle-right fa-fw"></i><i class="fas fa-chevron-circle-right fa-fw"></i>
-</span>
 
 - Get all 911-related data providers the needed training and access to the statewide NG911 multi-user data editing platform/application.
 - Incorporate a workflow to review these edits (from the NG911 multi-user data editing platform) and push them into the official State of Utah NG911 database (on a daily basis).

@@ -13,7 +13,7 @@ date: 2011-06-30 18:22:37 -0500
 ---
 #### Save yourself some time and use our widgets!
 
-<i class="fas fa-2x fa-fw fa-terminal"></i> AGRC is actively developing and maintaining a core set of geospatial javascript widgets, and ArcGIS Toolbox and Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs]({% link developer/web-services/index.md %}) that you can use to solve spatial problems, derive spatial context, or create your own add-ins, toolbox, and widgets.
+AGRC is actively developing and maintaining a core set of geospatial javascript widgets, and ArcGIS Toolbox and Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs]({% link developer/web-services/index.md %}) that you can use to solve spatial problems, derive spatial context, or create your own add-ins, toolbox, and widgets.
 
 ### JavaScript
 

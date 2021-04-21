@@ -19,14 +19,14 @@ During late Fall of 2015 the Utah Division of Forestry, Fire & State Lands and t
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fas fa-download"></i> <a href="https://raster.utah.gov/?cat=.5%20Meter%20%7B2015%20LiDAR%7D">Retrieve 2015 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} <a href="https://raster.utah.gov/?cat=.5%20Meter%20%7B2015%20LiDAR%7D">Retrieve 2015 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
-    <i class="fas fa-download"></i> Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Reports.zip">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Metadata.zip">Metadata</a>
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Reports.zip">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Metadata.zip">Metadata</a>
   </li>
   <li>
-    <i class="fas fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_shps.zip">shapefiles</a> of the project area, tile indices, breaklines, and river centerlines
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_shps.zip">shapefiles</a> of the project area, tile indices, breaklines, and river centerlines
   </li>
 </ul>
 

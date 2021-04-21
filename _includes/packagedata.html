@@ -1,6 +1,6 @@
   <div class="grid__col grid__col--1-of-2">
     <div class="panel">
-      <i class="fas fa-pull-right fa-download fa-2x" data-fa-transform="down-2"></i>
+      {% include fa_icon.html download=true lower=true class="svg-inline--fa fa-download fa-w-16 fa-pull-right fa-2x" %}
       <h5 id="{{ include.name | replace: ' ', '' }}-downloads">Downloads and Web Services</h5>
     </div>
     <div class="panel-content">
@@ -26,7 +26,7 @@
   </div>
   <div class="grid__col grid__col--1-of-2">
     <div class="panel update">
-      <i class="fas fa-pull-right fa-calendar fa-2x" data-fa-transform="down-2"></i>
+      {% include fa_icon.html calendar=true class="svg-inline--fa fa-calendar fa-w-14 fa-pull-right fa-2x"%}
       <h5 id="{{ include.name | replace: ' ', '' }}-updates">Updates</h5>
     </div>
     <div class="panel-content">
@@ -38,7 +38,7 @@
   {%- if include.info.endpoints -%}
   <div class="grid__col grid__col--1-of-2">
     <div class="panel endpoint">
-      <i class="fas fa-pull-right fa-cloud fa-2x" data-fa-transform="down-2"></i>
+      {% include fa_icon.html services=true class="svg-inline--fa fa-cloud fa-w-20 fa-pull-right fa-2x" %}
       <h5 id="{{ include.name | replace: ' ', '' }}-web-services">Web Services</h5>
     </div>
     <div class="panel-content">

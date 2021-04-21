@@ -13,10 +13,10 @@ categories: []
   <figcaption class="caption__text">TURN GPS Stations</figcaption>
 </div>
 
-<h2 class="text-left"><i class="fas fa-fw fa-question"></i> What Is a Reference Network?</h2>
+<h2 class="text-left">What Is a Reference Network?</h2>
 <p>A <a href="http://arcg.is/1Wa8Ov">GPS Network</a> is a high-precision global navigation satellite system (GNSS) providing real-time corrections and data for post processing. A <abbr title="global navigation satellite system">GNSS</abbr> network consists of permanently located GPS receivers, installed across the state, that generate real-time, high-accuracy GPS positioning. Basically, all of the permanently installed GPS receivers send their data to a system that analyzes the input and adjusts and corrects the data to provide the most accurate locations.</p>
 
-<h2 class="text-left"><i class="fas fa-fw fa-info-circle"></i> About this Network</h2>
+<h2 class="text-left">{% include fa_icon.html information=true class="svg-inline--fa fa-w-16 fa-fw" %} About this Network</h2>
 <p>The coordinate reference frame for this network is <strong>NAD83(2011)(EPOCH:2010.0000.)</strong>. The latitude, longitude, and ellipsoidal height of each reference station were calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects application.</p>
 <p>Eighteen <abbr title="National Geodetic Survey">NGS</abbr> Continually Operating Reference Stations (CORS) were selected along the perimeter and interior of the network and were constrained to the published coordinates to conduct the final adjustment of the network coordinates.</p>
 <p>With an activated subscription, set your GPS unit's VRS connection address to <code>168.179.231.9</code> and port <code>2101</code>. Enter your new device-specific username and password.</p>
@@ -37,10 +37,10 @@ categories: []
 <p>All of these give you the network solution. They just deliver it in different ways and in some cases nano-seconds slower.</p>
 <p>MS_CMR, MS_CMRP, and MS_RTCM31 are for connecting to a single base when you are on the edge of a network or are not getting a strong network solution. In these cases, the system will automatically find the closest station and connect you.</p>
 
-<h2 class="text-left"><i class="fas fa-fw fa-space-shuttle"></i> Getting Started</h2>
+<h2 class="text-left">Getting Started</h2>
 <div class="flex flex--row flex--wrap">
   <span class="one-of-two">
-    <h3 class="text-left"><i class="fas fa-fw fa-user-plus"></i> Create an Account</h3>
+    <h3 class="text-left">Create an Account</h3>
     <p>Visit <a href="https://secure.utah.gov/turngps/">The Utah Reference Network GPS Payment</a> and select <code>New Registration</code>, then follow the instructions. The cost is $600 and you now get access to the Nevada GPS covering Washoe County in Nevada. You'll need a credit card, and the following information...</p>
     <ul>
       <li>Organization (avoid punctuation)
@@ -52,7 +52,7 @@ categories: []
     </ul>
   </span>
   <span class="one-of-two">
-    <h3 class="text-left"><i class="fas fa-fw fa-cart-plus"></i> Renew an Account</h3>
+    <h3 class="text-left">Renew an Account</h3>
     <p>Visit <a href="https://secure.utah.gov/turngps/">The Utah Reference Network GPS Payment</a> and select <code>Renew Subscription</code>. The cost is $600 and you now get access to the Nevada GPS covering Washoe County in Nevada. You'll need a credit card, and the following information...</p>
     <ul>
       <li>Organization (avoid punctuation)
@@ -65,11 +65,11 @@ categories: []
 
 <div class="flex flex--row flex--wrap">
   <span class="one-of-two">
-    <h2 class="text-left"><i class="far fa-fw fa-life-ring"></i> Support Contacts</h2>
+    <h2 class="text-left">Support Contacts</h2>
     <p>{% include contact.html text="If you have questions or require help contact the " subject=page.title contact=site.data.contacts.turn punctuation="true" %}</p>
   </span>
   <span class="one-of-two">
-    <h2 class="text-left"><i class="fas fa-fw fa-book"></i> Related Resources</h2>
+    <h2 class="text-left">Related Resources</h2>
     <ul>
       <li><a href="{% link gps/images/TURN_Network_8x11_2019.jpg %}" rel="noopener" target="_blank">TURN GPS Network Map 8.5 x 11</a>
       <li><a href="{% link gps/images/TURN_Network_poster_2019.pdf %}" rel="noopener" target="_blank">TURN GPS Network Wall Map</a>

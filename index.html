@@ -4,19 +4,19 @@ layout: default
 <div class="section featured">
   {% for post in site.categories.Featured limit:3 %}
   <div class="grid__col grid__col--1-of-3 grid__col--am">
-    <a href="{% link {{ post.path }} %}"><i class="far fa-newspaper"></i> {{ post.title | truncate: 80 }}</a>
+    <a href="{% link {{ post.path }} %}">{% include fa_icon.html newspaper=true class="svg-inline--fa fa-newspaper fa-w-18" %} {{ post.title | truncate: 80 }}</a>
   </div>{% endfor %}
 </div>
 <div class="lozad grid main" data-background-image="{% link images/backgrounds/blueprint.jpg %}">
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#data"><h3 class="main-heading">GIS Map Data</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#data"><i class="fas fa-database fa-4x fa-pull-left" title="Spatial Data"></i></a> Established in State law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop download and web service access to hundreds of GIS map data layers developed, aggregated, or acquired by state government.</p>
+    <p class="main-text"><a href="#data">{% include fa_icon.html database=true class="svg-inline--fa fa-database fa-w-14 fa-4x fa-pull-left" %}</a> Established in State law in 1991, Utah’s State Geographic Information Database (SGID) provides one-stop download and web service access to hundreds of GIS map data layers developed, aggregated, or acquired by state government.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#tiles"><h3 class="main-heading">Aerial Imagery &amp; Base Maps</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#tiles"><i class="far fa-image fa-4x fa-pull-left" title="Aerial Imagery &amp; Base Maps"></i></a> SGID aerial photography and base map services provide critical map context for GIS and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources.</p>
+    <p class="main-text"><a href="#tiles">{% include fa_icon.html photo=true class="svg-inline--fa fa-image fa-w-16 fa-4x fa-pull-left" %}</a> SGID aerial photography and base map services provide critical map context for GIS and CAD users, as well as web and mobile applications. Many vintages and themes are available, created from Utah GIS data resources.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="{% link gps/index.html %}"><h3 class="main-heading">VRS GPS Network</h3></a>
@@ -28,17 +28,17 @@ layout: default
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#dev"><h3 class="main-heading">Utah Map Applications</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#dev"><i class="fas fa-rocket fa-4x fa-pull-left" title="AGRC Dev Team Creations"></i></a> AGRC’s development team designs, builds, and hosts cutting edge map-based web applications, custom designed to best meet specific agency/program requirements. From <a href="https://atlas.utah.gov/" rel="no-opener">up-to-date Utah reference maps</a> to <a href="{% link developer/applications/index.html %}" rel="no-opener">custom designed web apps</a> that best put specific agency/program information at your fingertips.</p>
+    <p class="main-text"><a href="#dev">{% include fa_icon.html rocket=true class="svg-inline--fa fa-rocket fa-w-16 fa-4x fa-pull-left" %}</a> AGRC’s development team designs, builds, and hosts cutting edge map-based web applications, custom designed to best meet specific agency/program requirements. From <a href="https://atlas.utah.gov/" rel="no-opener">up-to-date Utah reference maps</a> to <a href="{% link developer/applications/index.html %}" rel="no-opener">custom designed web apps</a> that best put specific agency/program information at your fingertips.</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#api"><h3 class="main-heading">Geo APIs</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#api"><i class="fas fa-compass fa-4x fa-pull-left" title="Web apis you should be using"></i></a> Are you designing or coding an app or process that needs “Where is?” or “What’s At?" answers? Geocoding and point-in-polygon map queries are available via web APIs, from <a class="main-link" href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a>. Sign up for your complimentary account today!</p>
+    <p class="main-text"><a href="#api">{% include fa_icon.html compass=true class="svg-inline--fa fa-compass fa-w-16 fa-4x fa-pull-left" %}</a> Are you designing or coding an app or process that needs “Where is?” or “What’s At?" answers? Geocoding and point-in-polygon map queries are available via web APIs, from <a class="main-link" href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a>. Sign up for your complimentary account today!</p>
   </div>
   <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2">
     <a href="#news"><h3 class="main-heading">News, Events, &amp; Coordination</h3></a>
     <hr class="hr-separate" />
-    <p class="main-text"><a href="#news"><i class="far fa-newspaper fa-4x fa-pull-left" title="News, Events, &amp; Coordination"></i></a> Utah is widely recognized as a leader in the GIS field. Coordination, partnering and information sharing &mdash; in the form of news, events, tips, and data &mdash; fuel our collective success. <a href="{% link index.html %}/#mc_embed_signup">Sign up</a> for our newsletter to stay in touch!</p>
+    <p class="main-text"><a href="#news">{% include fa_icon.html newspaper=true class="svg-inline--fa fa-newspaper fa-w-18 fa-4x fa-pull-left" %}</a> Utah is widely recognized as a leader in the GIS field. Coordination, partnering and information sharing &mdash; in the form of news, events, tips, and data &mdash; fuel our collective success. <a href="{% link index.html %}/#mc_embed_signup">Sign up</a> for our newsletter to stay in touch!</p>
   </div>
 </div>
 <div class="grid">

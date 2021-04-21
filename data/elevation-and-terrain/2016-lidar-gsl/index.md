@@ -22,14 +22,14 @@ During the Fall of 2016 AGRC, Utah Geological Survey, and the Utah Division of F
 <ul class="dotless">
   <li>
     <strong>
-      <i class="fas fa-download"></i> <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2016%20LiDAR%7D,1%20Meter%20%7B2016%20LiDAR%7D&title=Utah%202016%20LiDAR">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
+      {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2016%20LiDAR%7D,1%20Meter%20%7B2016%20LiDAR%7D&title=Utah%202016%20LiDAR">Retrieve 2016 Bare Earth DEMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
-    <i class="fas fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_Reports.zip">GSL Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_Metadata.zip">GLS Metadata</a> or <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/UtahLake_Reports.zip">Utah Lake Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/UtahLake_Metadata.zip">Utah Lake Metadata</a>
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_Reports.zip">GSL Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_Metadata.zip">GLS Metadata</a> or <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/UtahLake_Reports.zip">Utah Lake Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/UtahLake_Metadata.zip">Utah Lake Metadata</a>
   </li>
   <li>
-    <i class="fas fa-download"></i> Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_shps.zip">GSL shapefiles</a> or <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/UtahLake_shps.zip">Utah Lake shapefiles</a> of the project area, tile indices, and breaklines
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_shps.zip">GSL shapefiles</a> or <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/UtahLake_shps.zip">Utah Lake shapefiles</a> of the project area, tile indices, and breaklines
   </li>
 </ul>
 

@@ -11,8 +11,9 @@ title: Discover Server Resources and Information
 categories: []
 ---
 
-## <i class="fas fa-fw fa-plane"></i> Discover Server
-{: .text-left}
+<h2 class="text-left">
+{% include fa_icon.html plane=true class="svg-inline--fa fa-w-18 fa-fw" %} Discover Server
+</h2>
 
 Discover provides high-performance imagery and base maps services in WMS and WMTS formats. For information about the services and directions to sign up, please see the main [Discover]({% link discover/index.html %}) page.
 
@@ -87,17 +88,20 @@ Take a look at this blog post for information about [Printing Web Maps with Disc
 ### Google Archive Services
 {: .text-left}
 
-<i class="fas fa-fw fa-lock"></i>
-In addition to the statewide `Google` imagery service layer, there are archive layers available (ex. `Google 2011archive`) of the Google imagery organized by year collected.
+<p markdown="span">
+{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} In addition to the statewide `Google` imagery service layer, there are archive layers available (ex. `Google 2011archive`) of the Google imagery organized by year collected.
+</p>
 
 ### Licensed Imagery Flight Dates
 {: .text-left}
 
-<i class="fas fa-fw fa-lock"></i>
-The flight dates of each Hexagon imagery flight line are in the `SGID.INDICES.Hexagon_ServiceDates` SGID layer. This layer is also available on our [Open Data site](https://opendata.gis.utah.gov/datasets/utah-hexagon-service-dates), where you can get a link to the web service or download it in the format of your choice.
+<p markdown="span">
+{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} The flight dates of each Hexagon imagery flight line are in the `SGID.INDICES.Hexagon_ServiceDates` SGID layer. This layer is also available on our [Open Data site](https://opendata.gis.utah.gov/datasets/utah-hexagon-service-dates), where you can get a link to the web service or download it in the format of your choice.
+</p>
 
-<i class="fas fa-fw fa-lock"></i>
-Similarly, the dates of each Google imagery flight block are stored in the `SGID.INDICES.Google_UtahServiceDates` SGID layer available on [Open Data](https://opendata.gis.utah.gov/datasets/utah-google-flight-blocks).
+<p markdown="span">
+{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} Similarly, the dates of each Google imagery flight block are stored in the `SGID.INDICES.Google_UtahServiceDates` SGID layer available on [Open Data](https://opendata.gis.utah.gov/datasets/utah-google-flight-blocks).
+</p>
 
 ### Pro/ArcMap User Considerations
 {: .text-left}
@@ -122,8 +126,9 @@ Individual organizations will be provided URL links for the Discover services th
 ### Citation and Logos
 {: .text-left}
 
-<i class="fas fa-fw fa-lock"></i>
-As part of our licenses with Google and Hexagon, you must provide proper attribution of any products created with their imagery.
+<p markdown="span">
+{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} As part of our licenses with Google and Hexagon, you must provide proper attribution of any products created with their imagery.
+</p>
 
 - **Hexagon** requires the following attribution on any products made using the Hexagon imagery (15/30cm imagery 2018 and later):
 
