@@ -25,8 +25,6 @@ Inspired by a suggestion from one of our colleagues at the Wasatch Front Regiona
 
 > *Disclaimer:* These are not "official" codes. They are codes that we created to (hopefully) make life just a little easier in Utah. They are not blessed by the National Institute of Standards and Technology, or the U.S. Census Bureau, or the International Organization for Standardization, or the Utah Geographic Information Council, or the Utah League of Cities and Towns, or the Utah Brewer's Guild, or any other credible or dubious organization. Just the UGRC...hence the name, UGRCode.
 
-  
-
 In coming up with the 3-letter codes we tried to follow a few guiding principles, which are listed below. However, in order to deconflict the codes, add clarity, or maintain continuity, we had to stray from these principles occasionally.
 
 - Align codes with 3-letter "City Codes" that already exist in 911 dispatch datasets wherever possible
@@ -41,4 +39,4 @@ In coming up with the 3-letter codes we tried to follow a few guiding principles
  - E.g., Emigration Canyon (EMT), Kearns (KMT), Magna (MMT)
   
 #### Future Enhancements
-In the future, we may continue to expand on this idea by including the code field in additional datasets (road centerlines, address points, etc.). We believe UGRCodes could serve as a useful and intuitive code for querying and joining data across several datasets. The expanded use of this field may depend on how useful we find the codes, your feedback as you use the codesyour feedback as you use the codes, or more. So reach out to us and let us know what you think via email ([agrc@utah.gov](mailto:agrc@utah.gov)) or Twitter ([@maputah](https://twitter.com/maputah)).
+In the future, we may continue to expand on this idea by including the code field in additional datasets (road centerlines, address points, etc.). We believe UGRCodes could serve as a useful and intuitive code for querying and joining data across several datasets. The expanded use of this field may depend on how useful we find the codes, your feedback as you use the codes, or more. So reach out to us and let us know what you think via email ([agrc@utah.gov](mailto:agrc@utah.gov)) or Twitter ([@maputah](https://twitter.com/maputah)).
