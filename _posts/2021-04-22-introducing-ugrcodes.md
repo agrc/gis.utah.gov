@@ -28,15 +28,15 @@ Inspired by a suggestion from one of our colleagues at the Wasatch Front Regiona
 In coming up with the 3-letter codes we tried to follow a few guiding principles, which are listed below. However, in order to deconflict the codes, add clarity, or maintain continuity, we had to stray from these principles occasionally.
 
 - Align codes with 3-letter "City Codes" that already exist in 911 dispatch datasets wherever possible
- - E.g., Beaver (BVR), Millcreeak (MLC), Saint George (STG)
+  - E.g., Beaver (BVR), Millcreeak (MLC), Saint George (STG)
 - Preferentially use the first 3 letters of a municipality's name
- - E.g., Hinckley (HIN), Layton (LAY), Mapleton (MAP)
+  - E.g., Hinckley (HIN), Layton (LAY), Mapleton (MAP)
 - Incorporate the first letters of multiple-word municipality names
- - E.g., Salt Lake City (SLC), West Valley City (WVC), Bear River City (BRC)
+  - E.g., Salt Lake City (SLC), West Valley City (WVC), Bear River City (BRC)
 - Distinguish municipalities with similar names or beginnings as much as possible
- - E.g., Kanab (KNB), Kanarraville (KNV), Kanosh (KNS)
+  - E.g., Kanab (KNB), Kanarraville (KNV), Kanosh (KNS)
 - Metro Townships have "MT" in their code - or just "T" if new ones conflict with current codes
- - E.g., Emigration Canyon (EMT), Kearns (KMT), Magna (MMT)
+  - E.g., Emigration Canyon (EMT), Kearns (KMT), Magna (MMT)
   
 #### Future Enhancements
 In the future, we may continue to expand on this idea by including the code field in additional datasets (road centerlines, address points, etc.). We believe UGRCodes could serve as a useful and intuitive code for querying and joining data across several datasets. The expanded use of this field may depend on how useful we find the codes, your feedback as you use the codes, or more. So reach out to us and let us know what you think via email ([agrc@utah.gov](mailto:agrc@utah.gov)) or Twitter ([@maputah](https://twitter.com/maputah)).
