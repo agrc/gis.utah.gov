@@ -16,7 +16,7 @@ Are you tired of fighting with esoteric municipal FIPS codes? Have you even trie
 
 [![UGRCodes in Salt Lake County]({% link images/20210422_ugrcodes.png %} "UGRCodes in Salt Lake County")]({% link images/20210422_ugrcodes.png %}){: .flex .flex--center }
 
-Inspired by a suggestion from one of our colleagues at the Wasatch Front Regional Council, we believe these codes provide several advantages that make them more useful and easier to use than FIPS codes or municipality names for uniquely identifying municipalities in Utah. They also support our efforts to ensure that attribute domain values match their corresponding descriptions within our datasets. Some advantages of the UGRCodes are:
+Inspired by a suggestion from one of our colleagues at the Wasatch Front Regional Council, we believe these codes provide several advantages that make them more useful and easier to use than FIPS codes or municipality names for uniquely identifying municipalities in Utah. They also [support our efforts](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit) to ensure that attribute domain values match their corresponding descriptions within our datasets. Some advantages of the UGRCodes are:
 
 - Much more intuitive than FIPS codes
 
