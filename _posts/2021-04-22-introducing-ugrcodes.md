@@ -41,5 +41,5 @@ In coming up with the 3-letter codes we tried to follow a few guiding principles
   
 #### Future Enhancements
 
-In the future, we may continue to expand on this idea by including the code field in additional datasets (road centerlines, address points, etc.). We believe UGRCodes could serve as a useful and intuitive code for querying and joining data across several datasets. The expanded use of this field may depend on how useful we find the codes, your feedback as you use the codes, or more. So let us know what you think and reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc text='' hide-punctuation=true %}{% endcapture %}
+In the future, we may continue to expand on this idea by including the code field in additional datasets (road centerlines, address points, etc.). We believe UGRCodes could serve as a useful and intuitive code for querying and joining data across several datasets. The expanded use of this field may depend on how useful we find the codes, your feedback as you use the codes, or more. So let us know what you think and reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }} or on Twitter ([@maputah](https://twitter.com/maputah)).
