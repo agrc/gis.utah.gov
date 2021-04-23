@@ -11,13 +11,15 @@ tags:
   - sgid
 ---
 
-Are you tired of fighting with esoteric municipal FIPS codes? Have you even tried using them? It's not easy and it's certainly not intuitive. Five digit integer codes with minimal consistency and continuity across space, and require a lookup table to understand, don't lend themselves as a simple identifier for a municipality. As a solution, UGRC is implementing a new attribute field called the UGRCode (get it?) in our [Municipal Boundaries](https://opendata.gis.utah.gov/datasets/utah-municipal-boundaries) and [Metro Townships](https://opendata.gis.utah.gov/datasets/utah-metro-townships) data. The full list of UGRCodes can be found [here](https://docs.google.com/spreadsheets/d/19cwbXoewTynDDv_fJ3hGekD4VbLef5VxrnSJfRx8My8/edit#gid=2028111876).
+Are you tired of fighting with esoteric municipal FIPS codes? Have you even tried using them? It's not easy and it's certainly not intuitive. Five digit integer codes with minimal consistency and continuity across space, and require a lookup table to understand, don't lend themselves as a simple identifier for a municipality. As a solution, UGRC is implementing a new attribute field called the UGRCode (get it?) in our [Municipal Boundaries](https://opendata.gis.utah.gov/datasets/utah-municipal-boundaries) and [Metro Townships](https://opendata.gis.utah.gov/datasets/utah-metro-townships) data. The full list of UGRCodes can be found [in this spreadsheet](https://docs.google.com/spreadsheets/d/19cwbXoewTynDDv_fJ3hGekD4VbLef5VxrnSJfRx8My8/edit#gid=2028111876).
+
 
 [![UGRCodes in Salt Lake County]({% link images/20210422_ugrcodes.png %} "UGRCodes in Salt Lake County")]({% link images/20210422_ugrcodes.png %}){: .flex .flex--center }
 
 Inspired by a suggestion from one of our colleagues at the Wasatch Front Regional Council, we believe these codes provide several advantages that make them more useful and easier to use than FIPS codes or municipality names for uniquely identifying municipalities in Utah. They also support our efforts to ensure that attribute domain values match their corresponding descriptions within our datasets. Some advantages of the UGRCodes are:
 
-- Much more intuitive than FIPS codes    
+- Much more intuitive than FIPS codes
+
 - Provide a unique identifier for municipalities
 - Avoid the need to account for differences in upper-, lower-, and title-casing across different datasets
 - Provide a static field for referencing a municipality without having to worry about alternate names or representations (Saint George vs St George vs St. George)
@@ -39,4 +41,5 @@ In coming up with the 3-letter codes we tried to follow a few guiding principles
   - E.g., Emigration Canyon (EMT), Kearns (KMT), Magna (MMT)
   
 #### Future Enhancements
+
 In the future, we may continue to expand on this idea by including the code field in additional datasets (road centerlines, address points, etc.). We believe UGRCodes could serve as a useful and intuitive code for querying and joining data across several datasets. The expanded use of this field may depend on how useful we find the codes, your feedback as you use the codes, or more. So reach out to us and let us know what you think via email ([agrc@utah.gov](mailto:agrc@utah.gov)) or Twitter ([@maputah](https://twitter.com/maputah)).
