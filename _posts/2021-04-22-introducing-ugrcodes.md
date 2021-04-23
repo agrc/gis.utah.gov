@@ -19,7 +19,6 @@ Are you tired of fighting with esoteric municipal FIPS codes? Have you even trie
 Inspired by a suggestion from one of our colleagues at the Wasatch Front Regional Council, we believe these codes provide several advantages that make them more useful and easier to use than FIPS codes or municipality names for uniquely identifying municipalities in Utah. They also [support our efforts](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit) to ensure that attribute domain values match their corresponding descriptions within our datasets. Some advantages of the UGRCodes are:
 
 - Much more intuitive than FIPS codes
-
 - Provide a unique identifier for municipalities
 - Avoid the need to account for differences in upper-, lower-, and title-casing across different datasets
 - Provide a static field for referencing a municipality without having to worry about alternate names or representations (Saint George vs St George vs St. George)
@@ -42,5 +41,5 @@ In coming up with the 3-letter codes we tried to follow a few guiding principles
   
 #### Future Enhancements
 
-In the future, we may continue to expand on this idea by including the code field in additional datasets (road centerlines, address points, etc.). We believe UGRCodes could serve as a useful and intuitive code for querying and joining data across several datasets. The expanded use of this field may depend on how useful we find the codes, your feedback as you use the codes, or more. So reach out to us and let us know what you think via {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc text='email to our staff' %}{% endcapture %}
-{{ contact }} or Twitter ([@maputah](https://twitter.com/maputah)).
+In the future, we may continue to expand on this idea by including the code field in additional datasets (road centerlines, address points, etc.). We believe UGRCodes could serve as a useful and intuitive code for querying and joining data across several datasets. The expanded use of this field may depend on how useful we find the codes, your feedback as you use the codes, or more. So let us know what you think and reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc hide-punctuation=true %}{% endcapture %}
+{{ contact }} or on Twitter ([@maputah](https://twitter.com/maputah)).
