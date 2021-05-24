@@ -11,4 +11,4 @@ jobs:
         uses: tmcw/notfoundbot@v2.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EXCEPTIONS: www.exploreutah.com ugic.org
+          EXCEPTIONS: ${{ secrets.NOT_FOUND_EXCEPTIONS}}
