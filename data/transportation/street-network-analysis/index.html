@@ -21,7 +21,7 @@ MultimodalNetwork:
     - url: https://drive.google.com/uc?id=1DK1eYvl7NAHeL0zdFe8MgwSP2NA9XQcN&export=download
       label: Multimodal Network Dataset: File Geodatabase
     - url: https://drive.google.com/uc?id=1gFLwycp6SChbczQ7o4ov-DGQo-LgQFK5&export=download
-      Multimodal layer: Shapefile
+      label: Multimodal layer: Shapefile
   updates:
     - June 04, 2021
 ---
@@ -62,7 +62,7 @@ The network datasets have been derived from the <a href="{% link data/transporta
     <p>This dataset is built using SGID <a href="{% link data/transportation/roads-system/index.html %}">Roads</a>, <a href="{% link data/recreation/trails/index.html %}">Trails</a>, and <a href="{% link data/transportation/transit/index.html %}">UTA Transit</a> (light-rail and commuter rail) data, as well as 2019 <a href="https://gtfs.org/">GTFS</a> transit routes and stops. In addition, ‘connector’ lines are created during the build process to provide the needed junctions.</p>
     <p>Currently, the dataset is limited to the <a href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/WasatchFrontRegion.geojson">Wasatch Front region</a> (Box Elder, Davis, Salt Lake, Utah, and Weber county). Furthermore, as part of the scope of the project, <a href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites.geojson">50 sites</a> were chosen where the data is optimized for multimodal connectivity (particularly the bike and pedestrian modes of travel). Pedestrian data was densified within <a href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites_halfmile_buff.geojson">.5 miles of the sites</a> and bike data was densified within <a href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites_1mile_buff.geojson">1 mile of the sites</a>. In other words, your mileage may vary when you venture beyond these zones.</p>
     <p>The multimodal network dataset will be updated in conjunction with <a href="{% link data/transportation/roads-system/index.html %}">SGID Road updates</a>.</p>
-    <p>This dataset can also be used with ESRI's Network Analyst <a href="https://docs.google.com/document/d/1OsXexJTap9tDY89Y_v2woGatK_u5nYd_jDdlMwWRhog/edit">for routing and to build travel sheds</a>.</p>
+    <p>This dataset can also be used with ESRI's Network Analyst <a href="https://docs.google.com/document/d/1OsXexJTap9tDY89Y_v2woGatK_u5nYd_jDdlMwWRhog/edit">for routing and travel sheds</a>.</p>
     <p>Please visit this project’s <a href="https://github.com/gregbunce/MultimodalNetworkScripts">GitHub repository</a> to learn more about (or contribute to) the build process.</p>
     <p>We hope to continue the project and expand the multimodal footprint beyond these original 50 sites. Please get in contact with us if you are interested in contributing or playing a role.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.roads %}</p>
