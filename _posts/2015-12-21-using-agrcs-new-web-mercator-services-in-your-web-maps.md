@@ -13,7 +13,7 @@ categories:
   - Developer
   - Featured
 ---
-<p class="pop text-center">
+<p class="text-center pop">
   The instructions on this page are dated. <a href="{% link developer/base-maps/discover/index.md %}">Using Discover services with the Esri JavaScript API v4.x</a> contains more current information.
 </p>
 
@@ -29,45 +29,6 @@ categories:
 <p>WebTiledLayer and WMTS integrate together slightly different than  <a href="https://developers.arcgis.com/javascript/jsapi/arcgistiledmapservicelayer-amd.html">ArcGISTiledMapServiceLayer</a> and ArcGIS Server cached map services. The main caveat being ArcGIS services store metadata about the service that WebTiledLayers do not. The piece of metadata that will affect developers the most is the cache level information. WebTiledLayers cache levels are based on a suggested set that is common amongst popular tile providers. The suggested set uses 0 through 19. If the tile set you are using deviates from these levels, you will be responsible for setting those values or you will not be given the UI to see the full tile set. As you can see in the sample below it takes a fair amount of work.</p>
 <p><script src="https://gist.github.com/stdavis/6e5c721d50401ddbf126.js"></script></p>
 <p>AGRC has a new widget called the <a href="https://github.com/agrc-widgets/layer-selector">layer-selector</a> that handles these issues as well as makes working with basemaps more streamlined. It’s main purpose is to provide users the ability to quickly switch between basemaps and toggle associated overlays.</p>
-<link rel="stylesheet" href="https://js.arcgis.com/3.15/esri/css/esri.css">
-<script src="https://js.arcgis.com/3.15/"></script>
-<link rel='stylesheet' href='https://mapserv.utah.gov/cdn/blog_support/web-mercator-services/resources/LayerSelector.css'>
-<div id='mapDiv' style='border: 1px solid #ddd;'></div>
-<script type="javascript">
-require({
-    packages: [{
-        name: 'layer-selector',
-        location: 'https://mapserv.utah.gov/cdn/blog_support/web-mercator-services'
-    }]
-},[
-    'layer-selector',
-    'esri/geometry/Extent',
-    'esri/map',
-    'dojo/domReady!'
-], function(LayerSelector, Extent, Map) {
-    var map = new Map('mapDiv', {
-        center: [-112, 41.5],
-        zoom: 12,
-        smartNavigation: false
-    });
-    map.on('load', function () {
-        map.disableScrollWheelZoom();
-    });
-    var layerSelector = new LayerSelector({
-        map: map,
-        quadWord: 'bottle-apple-crater-oberon',
-        baseLayers: [
-            'Imagery',
-            { token: 'Hybrid', selected: true },
-            'Topo',
-            'Terrain',
-            'Color IR'
-        ],
-        overlays: ['Overlay']
-    });
-    layerSelector.startup();
-});
-</script>
 <p>Basemaps and overlays can be defined by passing in layer factories that define a constructor and parameters.</p>
 <p><script src="https://gist.github.com/stdavis/b8582911f12e45bfb873.js"></script></p>
 <p>Alternatively, developers can pass in their discover.agrc.utah.gov quad word and simple token strings that are associated with each of the AGRC basemaps. This greatly simplifies the amount of code required.</p>
