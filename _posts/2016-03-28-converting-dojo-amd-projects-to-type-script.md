@@ -89,7 +89,7 @@ export default dojoDeclare([_WidgetBase, _TemplatedMixin], {
 });
 ```
 
-These were the major gotcha's that ran into when trying to convert a project to TypeScript. [Here's a link](https://github.com/agrc-widgets/toaster) to a simple project that I recently ported to TypeScript. It has almost no TypeScript upgrades (yet) other than what it took to get the project to run.
+These were the major gotcha's that ran into when trying to convert a project to TypeScript. [Here's a link](https://github.com/agrc/toaster) to a simple project that I recently ported to TypeScript. It has almost no TypeScript upgrades (yet) other than what it took to get the project to run.
 
 The [dojo/typings](https://github.com/dojo/typings) repository is the source for ambient declarations for Dojo 1.x code and also has a lot of great resources to help convert Dojo-based projects to TypeScript.
 

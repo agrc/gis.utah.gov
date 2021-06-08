@@ -13,7 +13,7 @@ categories:
   - Developer
   - Featured
 ---
-<p class="pop text-center">
+<p class="text-center pop">
   The instructions on this page are dated. <a href="{% link developer/base-maps/discover/index.md %}">Using Discover services with the Esri JavaScript API v4.x</a> contains more current information.
 </p>
 
@@ -28,12 +28,12 @@ categories:
 <p>All of our base maps are cached from levels 5 through 19 with the exception of Topo which is cached to level 17. The Google imagery service has an additional level, 20, to allow users to take full advantage of the high resolution (6” pixels). You can see a table of min and max zoom levels on the <a href="https://discover.agrc.utah.gov/layer">discover.agrc.utah.gov website</a>. This can create problems when using the Esri JavaScript API <a href="https://developers.arcgis.com/javascript/jsapi/map-amd.html">map class</a>. The map sets the zoom levels based on the first layer that is added to it. For example, if a service is added to the map that is cached to level 19 and then the Google imagery service is added, the map will not allow you to zoom into level 20. </p>
 <p>WebTiledLayer and WMTS integrate together slightly different than  <a href="https://developers.arcgis.com/javascript/jsapi/arcgistiledmapservicelayer-amd.html">ArcGISTiledMapServiceLayer</a> and ArcGIS Server cached map services. The main caveat being ArcGIS services store metadata about the service that WebTiledLayers do not. The piece of metadata that will affect developers the most is the cache level information. WebTiledLayers cache levels are based on a suggested set that is common amongst popular tile providers. The suggested set uses 0 through 19. If the tile set you are using deviates from these levels, you will be responsible for setting those values or you will not be given the UI to see the full tile set. As you can see in the sample below it takes a fair amount of work.</p>
 <p><script src="https://gist.github.com/stdavis/6e5c721d50401ddbf126.js"></script></p>
-<p>AGRC has a new widget called the <a href="https://github.com/agrc-widgets/layer-selector">layer-selector</a> that handles these issues as well as makes working with basemaps more streamlined. It’s main purpose is to provide users the ability to quickly switch between basemaps and toggle associated overlays.</p>
+<p>AGRC has a new widget called the <a href="https://github.com/agrc/layer-selector">layer-selector</a> that handles these issues as well as makes working with basemaps more streamlined. It’s main purpose is to provide users the ability to quickly switch between basemaps and toggle associated overlays.</p>
 <link rel="stylesheet" href="https://js.arcgis.com/3.15/esri/css/esri.css">
 <script src="https://js.arcgis.com/3.15/"></script>
 <link rel='stylesheet' href='https://mapserv.utah.gov/cdn/blog_support/web-mercator-services/resources/LayerSelector.css'>
 <div id='mapDiv' style='border: 1px solid #ddd;'></div>
-<script type="javascript">
+<script type="javascript">agrcagrcagrcagrc
 require({
     packages: [{
         name: 'layer-selector',
