@@ -33,7 +33,7 @@ categories:
 <script src="https://js.arcgis.com/3.15/"></script>
 <link rel='stylesheet' href='https://mapserv.utah.gov/cdn/blog_support/web-mercator-services/resources/LayerSelector.css'>
 <div id='mapDiv' style='border: 1px solid #ddd;'></div>
-<script type="javascript">agrcagrcagrcagrc
+<script type="javascript">
 require({
     packages: [{
         name: 'layer-selector',
