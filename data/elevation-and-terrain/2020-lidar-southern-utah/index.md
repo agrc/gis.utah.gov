@@ -21,12 +21,12 @@ categories: []
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During 2020 AGRC and the Utah Division of Emergency Management acquired [~9,740 square miles]({% link images/lidar_southern_utah_2020_coverage.png %}) of 2 points per meter Quality Level 2 LiDAR of portions of Southern Utah. The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from [The National Map](https://apps.nationalmap.gov/downloader) {{ contact }}
+During 2020 AGRC and the Utah Division of Emergency Management acquired [~9,740 square miles]({% link images/lidar_southern_utah_2020_coverage.png %}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR of portions of Southern Utah. The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from [The National Map](https://apps.nationalmap.gov/downloader) {{ contact }}
 
 <ul class="dotless">
   <li>
     <strong>
-      {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} <a href="https://raster.utah.gov/?cat=1%20Meter%20%7B2020%20Southern%20Utah%20LiDAR%7D" target="_blank">Retrieve 2020 Bare Earth DTMs and First Return DSMs via Interactive Map</a>
+      {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} <a href="https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20Southern%20Utah%20LiDAR%7D,1%20Meter%20%7B2020%20Southern%20Utah%20LiDAR%7D&title=Southern%20Utah%202020%20LiDAR" target="_blank">Retrieve 2020 Bare Earth DTMs and First Return DSMs via Interactive Map</a>
     </strong>
   </li>
   <li>
