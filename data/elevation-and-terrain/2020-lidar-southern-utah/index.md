@@ -21,7 +21,7 @@ categories: []
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During 2020 AGRC and the Utah Division of Emergency Management acquired [~9,740 square miles]({% link images/lidar_southern_utah_2020_coverage.png %}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR of portions of Southern Utah. The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from [The National Map](https://apps.nationalmap.gov/downloader) {{ contact }}
+During 2020 AGRC and the Utah Division of Emergency Management acquired [~9,740 square miles]({% link images/lidar_southern_utah_2020_coverage.png %}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR of portions of Southern Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from [The National Map](https://apps.nationalmap.gov/downloader) {{ contact }}
 
 <ul class="dotless">
   <li>
@@ -30,10 +30,10 @@ During 2020 AGRC and the Utah Division of Emergency Management acquired [~9,740 
     </strong>
   </li>
   <li>
-    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2020/Southern_Utah_2020_Reports.zip" target="_blank">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2020/Southern_Utah_2020_Metadata.zip" target="_blank">Metadata</a>
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2020/SouthernUtah_2020_Reports.zip" target="_blank">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2020/SouthernUtah_2020_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
-    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2020/Southern_Utah_2020_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2020/SouthernUtah_2020_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 
