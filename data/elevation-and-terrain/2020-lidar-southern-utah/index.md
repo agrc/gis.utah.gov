@@ -21,7 +21,7 @@ categories: []
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During 2020 AGRC and the Utah Division of Emergency Management acquired [~9,740 square miles]({% link images/lidar_southern_utah_2020_coverage.png %}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR of portions of Southern Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from [The National Map](https://apps.nationalmap.gov/downloader) {{ contact }}
+During 2020 AGRC and the Utah Division of Emergency Management acquired [~9,740 square miles]({% link images/lidar_southern_utah_2020_coverage.png %}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR of portions of Southern Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from [The National Map](https://apps.nationalmap.gov/downloader) {{ contact }} This elevation data was collected between May and July, 2020.
 
 <ul class="dotless">
   <li>
