@@ -9,7 +9,7 @@ author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 published: true
-date: 2020-06-01 12:30:30
+date: 2020-06-22 12:30:30
 title: 2020 Southern Utah Lidar Elevation Data
 categories: []
 ---
