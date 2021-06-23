@@ -3,7 +3,7 @@ title: Choosing the Right Transformation
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2021-06-21 8:30:00
+date: 2021-06-23 15:30:00
 categories:
   - Featured
   - SGID Blog
@@ -48,7 +48,7 @@ Because a projection using NAD83 and another using WGS84 are no longer starting 
 
 Fortunately, we can use [___transformations___](https://desktop.arcgis.com/en/arcmap/latest/map/projections/choosing-an-appropriate-transformation.htm) to figure out the differences between datums. Each different transformation uses its own methods and starting reference points to translate coordinates.
 
-The trick is choosing the right transformation. The pitfall is that the default is usually wrong if you're going from NAD83 to WGS84.
+The trick is choosing the right transformation. The pitfall is that the default is usually just slightly off if you're going from NAD83 to WGS84.
 
 ___Our recommended transformation between NAD83 and WGS84 in Utah___ is `NAD_1983_To_WGS_1984_5`. Other transformations may work better for other geographic areas or for other projections using different datums.
 
@@ -58,9 +58,9 @@ ___Our recommended transformation between NAD83 and WGS84 in Utah___ is `NAD_198
 
 Using the right transformation with SGID data has become more important with the proliferation of AGOL-hosted feature services and the SGID layers shared via [opendata.gis.utah.gov](https://opendata.gis.utah.gov).
 
-Internally, all the SGID layers hosted by UGRC are kept in the UTM 12N NAD83 projection (EPSG 26912). As its name suggests, this uses the NAD83 datum. If you've downloaded data from us in the past or used our old direct SDE connection, you got UTM data. Our new [Open SGID](https://gis.utah.gov/sgid/#open-sgid) database offering also serves out data in UTM.
+Internally, all the SGID layers hosted by UGRC are kept in the UTM 12N NAD83 projection (EPSG 26912). As its name suggests, this uses the NAD83 datum. If you've downloaded data from us in the past or used our old direct SDE connection, you got UTM data. Our new [Open SGID]({% link sgid/index.html %}#open-sgid) database offering also serves out data in UTM.
 
-We've made a large push over the last year or so to host all our SGID data in ArcGIS Online as well. This allows you to search for data right in ArcGIS Pro or in AGOL webmaps. It also allowed us to set up [opendata.gis.utah.gov](https://opendata.gis.utah.gov), which in turn drives all the download links on our [data pages](https://gis.utah.gov/data/#data-categories).
+We've made a large push over the last year or so to host all our SGID data in ArcGIS Online as well. This allows you to search for data right in ArcGIS Pro or in AGOL webmaps. It also allowed us to set up [opendata.gis.utah.gov](https://opendata.gis.utah.gov), which in turn drives all the download links on our [data pages]({% link data/index.html %}#data-categories).
 
 ___If you're downloading data from the data pages, or pulling it in from ArcGIS Online, you're getting data in the Web Mercator projection___. Combining this data with UTM 12N NAD83 data—or any other data that uses the NAD83 datum—may lead to differences between geometries that should be equal.
 
@@ -99,7 +99,7 @@ In the Pro Options dialog, go to the `Application` -> `Map and Scene` entry. Exp
 
 ## Show Me The Goods
 
-If you want to see this in action, load our [county boundaries layer](https://gis.utah.gov/data/boundaries/citycountystate/#CountyBoundaries) from both Open SGID (`opensgid.boundaries.county_boundaries`) and AGOL (`Utah County Boundaries`). Make sure the default `WGS 1984 (ITRF00) To NAD 1983` transformation is selected. Then run the `Split` tool between the two layers on the `NAME` field and look at one of the output feature classes. You'll see extra features for most or all of the surrounding counties with pretty small `shape_Area`'s:
+If you want to see this in action, load our [county boundaries layer]({% link data/boundaries/citycountystate/index.html %}#CountyBoundaries) from both Open SGID (`opensgid.boundaries.county_boundaries`) and AGOL (`Utah County Boundaries`). Make sure the default `WGS 1984 (ITRF00) To NAD 1983` transformation is selected. Then run the `Split` tool between the two layers on the `NAME` field and look at one of the output feature classes. You'll see extra features for most or all of the surrounding counties with pretty small `shape_Area`'s:
 
 [![Split with default transformation creates slivers from neighboring counties]({% link images/transformations_proslivers.jpg %}){:width="800px"}]({% link images/transformations_proslivers.jpg %}) 
 {: .flex .flex--center}
