@@ -19,7 +19,7 @@ _From the I Hate Slivers department_
 
 Modern GIS software goes to great lengths to automate the mundane tasks and hide the boring stuff from us. As a relative newcomer to the field, I've heard the old-timers talk about how spoiled we are with on-the-fly projections (now excuse me while I get off their lawn). But really, we are. Being able to display and process data in a variety of projections without first having to reproject it all saves both time and sanity.
 
-This is even more true with the rise of web gis and external databases. If I were working for a county, I could pull in local data in a State Plane projection, OpenSGID layers in UTM 12N NAD83, and AGOL layers in Web Mercator and they'd all look just about right.
+This is even more true with the rise of web GIS and external databases. If I were working for a county, I could pull in local data in a State Plane projection, OpenSGID layers in UTM 12N NAD83, and AGOL layers in Web Mercator and they'd all look just about right.
 
 "Just about."
 
@@ -30,11 +30,11 @@ This tiny gap is caused by using the wrong transformation when working with data
 
 ## A Brief Refresher on Spheroids, Datums, and Projections
 
-To understand what's going on, let's go through a [brief refresher](https://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/about-the-geoid-ellipsoid-spheroid-and-datum-and-h.htm) on the geodetic foundations that projections are built upon. It all starts with a ___spheroid___, a simple mathematical approximation of the earth's shape: almost, but not quite, a sphere.
+To understand what's going on, let's go through a [brief refresher](https://desktop.arcgis.com/en/arcmap/latest/map/projections/about-the-geoid-ellipsoid-spheroid-and-datum-and-h.htm) on the geodetic foundations that projections are built upon. It all starts with a ___spheroid___, a simple mathematical approximation of the earth's shape: almost, but not quite, a sphere.
 
 The spheroid is used to create a ___datum___, which provides a more locally accurate model of the earth's surface. These take into account the "lumpiness" of the earth. A datum can be used as it's own "projection" (really, a geographic coordinate system) to define locations in latitude and longitude. Common datums include WGS84, NAD27, and NAD83.
 
-Side note: the fun part is that datums shift over time, so just saying "NAD83" is actually incomplete.  Because a datum can be tied to monuments on earth, it can shift over time due to tectonics. We mostly skip over this fact in GIS ([unless you live on the west coast](https://www.xyht.com/surveying/links-need-seeing-to-datum-epochs-and-how-to-understand-them/), apparently), but a complete definition of a datum also includes the epoch, or the date when it was updated. Unfortunately, most projections and GIS software gloss over this fact, which is another reason GIS means Get It Surveyed.
+Side note: the fun part is that datums shift over time, so just saying "NAD83" is actually incomplete. Because a datum can be tied to monuments on earth, it can shift over time due to tectonics. We mostly skip over this fact in GIS ([unless you live on the west coast](https://www.xyht.com/surveying/links-need-seeing-to-datum-epochs-and-how-to-understand-them/), apparently), but a complete definition of a datum also includes the epoch, or the date when it was updated. Unfortunately, most projections and GIS software gloss over this fact, which is another reason GIS means Get It Surveyed.
 
 Using the word properly, a ___projection___ spreads this 3D model of the surface of the earth onto a flat, two-dimensional plane. These are the projections we all know and love (or [hate](https://xkcd.com/977))—Robinson, Mercator, UTM, etc.
 
@@ -46,7 +46,7 @@ Because a projection using NAD83 and another using WGS84 are no longer starting 
 
 ## Maybe Not So Irreconcilable
 
-Fortunately, we can use [___transformations___](https://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/choosing-an-appropriate-transformation.htm) to figure out the differences between datums. Each different transformation uses its own methods and starting reference points to translate coordinates.
+Fortunately, we can use [___transformations___](https://desktop.arcgis.com/en/arcmap/latest/map/projections/choosing-an-appropriate-transformation.htm) to figure out the differences between datums. Each different transformation uses its own methods and starting reference points to translate coordinates.
 
 The trick is choosing the right transformation. The pitfall is that the default is usually wrong if you're going from NAD83 to WGS84.
 
