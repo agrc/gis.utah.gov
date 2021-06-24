@@ -23,7 +23,7 @@ This is even more true with the rise of web GIS and external databases. If I wer
 
 "Just about."
 
-[![Close but no cigar]({% link images/transformations_measurement.jpg %}){:width="800px"}]({% link images/transformations_measurement.jpg %})
+[![Close but no cigar]({% link images/transformations_measurement.jpg %}){:width="75%" max-width="800px"}]({% link images/transformations_measurement.jpg %})
 {: .flex .flex--center}
 
 This tiny gap is caused by using the wrong transformation when working with data in projections that use different datums (most commonly NAD83 and WGS84). While it may not matter pragmatically, it can still cause slivers and gaps with certain geoprocessing operations.
@@ -52,7 +52,7 @@ The trick is choosing the right transformation. The pitfall is that the default 
 
 ___Our recommended transformation between NAD83 and WGS84 in Utah___ is `NAD_1983_To_WGS_1984_5`. Other transformations may work better for other geographic areas or for other projections using different datums.
 
-![NAD 1983 to WGS 1984 5 is the right transformation]({% link images/transformations_proper.jpg %}){: .flex .flex--center}
+[![NAD 1983 to WGS 1984 5 is the right transformation]({% link images/transformations_proper.jpg %}){:width="75%" max-width="770px"}]({% link images/transformations_proper.jpg %}){: .flex .flex--center}
 
 ## UTM, SGID, and You
 
@@ -70,43 +70,43 @@ We use the `NAD_1983_To_WGS_1984_5` for all our data when working in both UTM 12
 
 ArcMap is somewhat helpful when you load data from both UTM 12N NAD83 and Web Mercator—it displays a nice big warning dialog:
 
-![ArcMap Warning Dialog]({% link images/transformations_arcmapdialog.jpg %}){:width="800px" .flex .flex--center}
+[![ArcMap Warning Dialog]({% link images/transformations_arcmapdialog.jpg %}){: width="75%" max-width="800px"}]({% link images/transformations_arcmapdialog.jpg %}){: .flex .flex--center}
 
 I don't know about you, but when I first started doing GIS I didn't know what all this meant (with apologies to my GIS professors in college). My coworker said "Oh, just hit close and move on." So I just got in that habit. Some people probably hit the `Don't warn me again ever` checkbox years ago and forgot all about it.
 
 ArcMap is asking you to choose a transformation. ___By skipping this, no transformation is used at all. The underlying difference between the two datums is left for all to see:___
 
-![Default when no transformation is selected]({% link images/transformations_default.jpg %}){: .flex .flex--center}
+[![Default when no transformation is selected]({% link images/transformations_default.jpg %}){: width="75%" max-width="779px"}]({% link images/transformations_default.jpg %}){: .flex .flex--center}
 
 _(Yes, I realize this is in ArcGIS Pro, but the result is the same)_
 {: .flex .flex--center}
 
 ArcGIS Pro is better about this... and worse, actually. If you add Web Mercator data to a UTM 12N NAD83 map, it happily chooses a transformation for you. However, by default it chooses the `WGS 1984 (ITRF00) To NAD 1983` transformation. While very, very similar, this still produces the 0.03 ft difference seen in the screenshot at the top of the page.
 
-![ArcGIS Pro's default transformation]({% link images/transformations_prodefault.jpg %}){: .flex .flex--center}
+[![ArcGIS Pro's default transformation]({% link images/transformations_prodefault.jpg %}){:width="75%" max-width="725px"}]({% link images/transformations_prodefault.jpg %}){: .flex .flex--center}
 
-To be frank, at these distances, the error from using the default transformation is much less than the potential error in the original data. However, it is just large enough to be outside of the default geodatabase tolerances. If you're doing something like a dissolve or split between the two datasets, or trying to enforce topology, you'll get annoying, almost invisible slivers and gaps.
+___To be frank, at these distances, the error from using the default transformation is much less than the potential error in the original data.___ However, it is just large enough to be outside of the default geodatabase tolerances. If you're doing something like a dissolve or split between the two datasets, or trying to enforce topology, you'll get annoying, almost invisible slivers and gaps.
 
 ## Can You At Least Give Me a Warning?
 
 By default, it doesn't appear that ArcGIS Pro will give you a warning like ArcMap does. You can, however, enable a little warning popup in the top right of the window (where you've been ignoring that "A software update is available for ArcGIS Pro" message for weeks now):
 
-![ArcGIS Pro warning dialog]({% link images/transformations_prowarning.jpg %}){: .flex .flex--center}
+![ArcGIS Pro warning dialog]({% link images/transformations_prowarning.jpg %}){:width="75%" max-width="325px" .flex .flex--center}
 
 In the Pro Options dialog, go to the `Application` -> `Map and Scene` entry. Expand the `Spatial Reference` section; here you can choose your default spatial reference for new maps. Below this, there is a checkbox labeled `Warn if transformation between geographic coordinate system is required to align data sources correctly.`
 
-![Enabling warning in ArcGIS Pro]({% link images/transformations_prowarningsetting.jpg %}){: .flex .flex--center}
+[![Enabling warning in ArcGIS Pro]({% link images/transformations_prowarningsetting.jpg %}){: width="75%" max-width="792px"}]({% link images/transformations_prowarningsetting.jpg %}){: .flex .flex--center}
 
 ## Show Me The Goods
 
 If you want to see this in action, load our [county boundaries layer]({% link data/boundaries/citycountystate/index.html %}#CountyBoundaries) from both Open SGID (`opensgid.boundaries.county_boundaries`) and AGOL (`Utah County Boundaries`). Make sure the default `WGS 1984 (ITRF00) To NAD 1983` transformation is selected. Then run the `Split` tool between the two layers on the `NAME` field and look at one of the output feature classes. You'll see extra features for most or all of the surrounding counties with pretty small `shape_Area`'s:
 
-[![Split with default transformation creates slivers from neighboring counties]({% link images/transformations_proslivers.jpg %}){:width="800px"}]({% link images/transformations_proslivers.jpg %}) 
+[![Split with default transformation creates slivers from neighboring counties]({% link images/transformations_proslivers.jpg %}){:width="75%" max-width="800px"}]({% link images/transformations_proslivers.jpg %})
 {: .flex .flex--center}
 
 If you're feeling particularly crazy, explode the multipart polygons for each neighboring county—I got 182 distinct slivers between Salt Lake County and its neighbors:
 
-[![Split with default transformation creates slivers from neighboring counties]({% link images/transformations_prosinglepart.jpg %}){:width="800px"}]({% link images/transformations_prosinglepart.jpg %})
+[![Split with default transformation creates slivers from neighboring counties]({% link images/transformations_prosinglepart.jpg %}){:width="75%" max-width="800px"}]({% link images/transformations_prosinglepart.jpg %})
 {: .flex .flex--center}
 
 ## Can I Go Home Now?
