@@ -89,7 +89,7 @@ ArcGIS Pro is better about this... and worse, actually. If you add Web Mercator 
 [![ArcGIS Pro's default transformation]({% link images/transformations_prodefault.jpg %}){:width="75%" max-width="725px"}]({% link images/transformations_prodefault.jpg %}){:target="_blank"}
 {: .flex .flex--center}
 
-___To be frank, at these distances, the error from using the default transformation is much less than the potential error in the original data.___ However, it is just large enough to be outside of the default geodatabase tolerances. If you're doing something like a dissolve or split between the two datasets, or trying to enforce topology, you'll get annoying, almost invisible slivers and gaps.
+___To be frank, at these distances, the difference from using the default transformation is much less than the potential error in the original data.___ It's the classic problem of spurious precision. However, the difference is just large enough to be outside of the default geodatabase tolerances. If you're doing something like a dissolve or split between the two datasets, or trying to enforce topology, you'll get annoying, almost invisible slivers and gaps. The problem we're trying to solve is topological accuracy, not absolute accuracy.
 
 ## Can You At Least Give Me a Warning?
 
