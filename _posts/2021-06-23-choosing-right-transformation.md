@@ -52,7 +52,7 @@ Because a projection using NAD83 and another using WGS84 are no longer starting 
 
 Fortunately, we can use [___transformations___](https://desktop.arcgis.com/en/arcmap/latest/map/projections/choosing-an-appropriate-transformation.htm) to figure out the differences between datums. Each different transformation uses its own methods and starting reference points to translate coordinates.
 
-The trick is choosing the right transformation. The pitfall is that the default is usually just slightly off if you're going from NAD83 to WGS84.
+The trick is choosing the right transformation. The pitfall is that ArcGIS Pro may choose a default transformation that is usually just slightly off if you're going from NAD83 to WGS84.
 
 ___Our recommended transformation between NAD83 and WGS84 in Utah___ is `NAD_1983_To_WGS_1984_5`. Other transformations may work better for other geographic areas or for other projections using different datums.
 
@@ -88,7 +88,7 @@ ArcMap is asking you to choose a transformation. ___By skipping this, no transfo
 _(Yes, I realize this is in ArcGIS Pro, but the result is the same)_
 {: .flex .flex--center}
 
-ArcGIS Pro is better about this... and worse, actually. If you add Web Mercator data to a UTM 12N NAD83 map, it happily chooses a transformation for you. However, by default it chooses the `WGS 1984 (ITRF00) To NAD 1983` transformation. While very, very similar, this still produces the 0.03 ft difference seen in the screenshot at the top of the page.
+ArcGIS Pro is better about this... and sometimes worse, actually. If you add Web Mercator data to a UTM 12N NAD83 map, it happily chooses a transformation for you. However, it frequently chooses the `WGS 1984 (ITRF00) To NAD 1983` transformation. While very, very similar, this still produces the 0.03 ft difference seen in the screenshot at the top of the page.
 
 [![ArcGIS Pro's default transformation]({% link images/transformations_prodefault.jpg %}){:width="75%" max-width="725px"}]({% link images/transformations_prodefault.jpg %}){:target="_blank"}
 {: .flex .flex--center}
@@ -121,4 +121,4 @@ If you're feeling particularly crazy, explode the multipart polygons for each ne
 
 ## Can I Go Home Now?
 
-So there you have it. At the distances that matter in GIS, the difference between the default Pro transformation and `NAD_1983_To_WGS_1984_5` is practically irrelevant in day-to-day use. However, it may cause slivers when you run certain operations. If you're not using any transformation at all, the difference is more noticeable and may trigger the OCD part of your brain to figure out why your boundaries don't line up.
+So there you have it. At the distances that matter in GIS, the difference between the usual Pro transformation and `NAD_1983_To_WGS_1984_5` is practically irrelevant in day-to-day use. However, it may cause slivers when you run certain operations. If you're not using any transformation at all, the difference is more noticeable. Either way, it may trigger the OCD part of your brain to figure out why your boundaries don't line up.
