@@ -32,11 +32,15 @@ This tiny gap is caused by using the wrong transformation when working with data
 
 To understand what's going on, let's go through a [brief refresher](https://desktop.arcgis.com/en/arcmap/latest/map/projections/about-the-geoid-ellipsoid-spheroid-and-datum-and-h.htm) on the geodetic foundations that projections are built upon. It all starts with a ___spheroid___, a simple mathematical approximation of the earth's shape: almost, but not quite, a sphere.
 
-The spheroid is used to create a ___datum___, which provides a more locally accurate model of the earth's surface. These take into account the "lumpiness" of the earth. A datum can be used as it's own "projection" (really, a geographic coordinate system) to define locations in latitude and longitude. Common datums include WGS84, NAD27, and NAD83.
+The spheroid is used to create a ___datum___, which provides a more locally accurate model of the earth's surface. These take into account the "lumpiness" of the earth. A datum can be used as it's own "projection" (really, a geographic coordinate system acting as a spatial refernce) to define locations in latitude and longitude. Common datums include WGS84, NAD27, and NAD83.
 
-Side note: the fun part is that datums shift over time, so just saying "NAD83" is actually incomplete. Because a datum can be tied to monuments on earth, it can shift over time due to tectonics. We mostly skip over this fact in GIS ([unless you live on the west coast](https://www.xyht.com/surveying/links-need-seeing-to-datum-epochs-and-how-to-understand-them/), apparently), but a complete definition of a datum also includes the epoch, or the date when it was updated. Unfortunately, most projections and GIS software gloss over this fact, which is another reason GIS means Get It Surveyed.
+Side note: the fun part is that datums shift over time, so just saying "NAD83" is actually incomplete. Because a datum can be tied to monuments on earth, it can shift over time due to tectonics. We mostly skip over this fact in GIS ([unless you live on the west coast](https://www.xyht.com/surveying/links-need-seeing-to-datum-epochs-and-how-to-understand-them/), apparently), but a complete definition of a datum also includes the epoch, or the date when it was updated. Unfortunately, support for more detailed projections including multiple epochs in ArcGIS requires a separate download, so many pepole may not have them installed and just gloss over this detail. Yet another reason GIS means Get It Surveyed.
 
-Using the word properly, a ___projection___ spreads this 3D model of the surface of the earth onto a flat, two-dimensional plane. These are the projections we all know and love (or [hate](https://xkcd.com/977))—Robinson, Mercator, UTM, etc.
+Using the word properly, a ___projection___ spreads this datum, this advanced model of the surface of the earth, onto a flat, two-dimensional plane. These are the projections we all know and love (or [hate](https://xkcd.com/977))—Robinson, Mercator, UTM, etc.
+
+Within GIS software, a ___spatial reference___ is the end point of our chain of concepts—it's what we usually mean when we say "projection". It tells the software what the spatial coordinates in the data refer to. A spatial reference can be either a geographic coordinate system in latitude and longitude (a datum) or a projected coordinate system in some planar unit like feet or meters (a projection).
+
+Esri has a great [presentation](https://www.youtube.com/watch?v=kG6vdjDDs8s) from the 2018 Developer's Summit covering these basics.
 
 ## Irreconcilable Differences
 
