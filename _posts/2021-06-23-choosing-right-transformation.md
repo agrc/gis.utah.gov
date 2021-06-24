@@ -59,13 +59,13 @@ ___Our recommended transformation between NAD83 and WGS84 in Utah___ is `NAD_198
 
 Using the right transformation with SGID data has become more important with the proliferation of AGOL-hosted feature services and the SGID layers shared via [opendata.gis.utah.gov](https://opendata.gis.utah.gov).
 
-Internally, all the SGID layers hosted by UGRC are kept in the UTM 12N NAD83 projection (EPSG 26912). As its name suggests, this uses the NAD83 datum. If you've downloaded data from us in the past or used our old direct SDE connection, you got UTM data. Our new [Open SGID]({% link sgid/index.html %}#open-sgid) database offering also serves out data in UTM.
+Internally, all of the SGID layers hosted by UGRC are kept in the UTM 12N NAD83 projection (EPSG 26912). As its name suggests, this uses the NAD83 datum. If you've downloaded data from us in the past or used our old direct SDE connection, you got UTM data. Our new [Open SGID]({% link sgid/index.html %}#open-sgid) database offering also serves out data in UTM.
 
-We've made a large push over the last year or so to host all our SGID data in ArcGIS Online as well. This allows you to search for data right in ArcGIS Pro or in AGOL webmaps. It also allowed us to set up [opendata.gis.utah.gov](https://opendata.gis.utah.gov), which in turn drives all the download links on our [data pages]({% link data/index.html %}#data-categories).
+We've made a large push over the last year or so to host all of our SGID data in ArcGIS Online as well. This allows you to search for data right in ArcGIS Pro or in AGOL webmaps. It also allowed us to set up [opendata.gis.utah.gov](https://opendata.gis.utah.gov), which in turn drives all of the download links on our [data pages]({% link data/index.html %}#data-categories).
 
-___If you're downloading data from the data pages, or pulling it in from ArcGIS Online, you're getting data in the Web Mercator projection___. Combining this data with UTM 12N NAD83 data—or any other data that uses the NAD83 datum—may lead to differences between geometries that should be equal.
+___If you're downloading data from the data pages, or pulling it in from ArcGIS Online, you're getting data in the Web Mercator projection (EPSG 3857)___. Combining this data with UTM 12N NAD83 data—or any other data that uses the NAD83 datum—may lead to differences between geometries that should be equal.
 
-We use the `NAD_1983_To_WGS_1984_5` for all our data when working in both UTM 12N NAD83 and Web Mercator.
+We use the `NAD_1983_To_WGS_1984_5` for all of our data when working in both UTM 12N NAD83 and Web Mercator.
 
 ## When Defaults are at Fault
 
