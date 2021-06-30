@@ -37,7 +37,7 @@ Thanks,
 
 Sean Fernandez, PLS
 State Cadastral Surveyor/Division Manager
-State of Utah AGRC/DTS
+State of UGRC/DTS
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.turn %}{% endcapture %}
 {{ contact }}

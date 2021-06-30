@@ -14,9 +14,9 @@ categories:
   - SGID Blog
 ---
 
-It has always been one of our goals to stay ahead of the coming changes at the NextGen 911 and FHWA level, so after much statewide [coordination]({% link _posts/2016-09-16-road-centerlines-schema-update-and-regional-workshop-notes.md %}) and [feedback]({% link _posts/2014-04-30-feedback-wanted-proposed-best-practices-for-tagging-utah-metadata.md %}), AGRC is officially adopting a [new statewide roads data model](https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546). The two main drivers for this update are the Next Generation 911 GIS requirements and the Federal Highway Administration’s All Roads Network Of Linear-referenced Data (ARNOLD) reporting requirements for state DOTs.
+It has always been one of our goals to stay ahead of the coming changes at the NextGen 911 and FHWA level, so after much statewide [coordination]({% link _posts/2016-09-16-road-centerlines-schema-update-and-regional-workshop-notes.md %}) and [feedback]({% link _posts/2014-04-30-feedback-wanted-proposed-best-practices-for-tagging-utah-metadata.md %}), UGRC is officially adopting a [new statewide roads data model](https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546). The two main drivers for this update are the Next Generation 911 GIS requirements and the Federal Highway Administration’s All Roads Network Of Linear-referenced Data (ARNOLD) reporting requirements for state DOTs.
 
-AGRC will officially adopt this new roads data model on September 13th, 2017. The purpose of this blog post is to give our users a heads-up on the coming changes and to allow the necessary time to adjust your internal workflows, beforehand. After that date, we will continue to provide downloadable data (and an SDE layer) in the older model, until March 21st, 2018.  However, we encourage you to adopt this newer model sooner than later, as it will be the official statewide roads data model. There will be a subsequent blog post in September, before the official change.
+UGRC will officially adopt this new roads data model on September 13th, 2017. The purpose of this blog post is to give our users a heads-up on the coming changes and to allow the necessary time to adjust your internal workflows, beforehand. After that date, we will continue to provide downloadable data (and an SDE layer) in the older model, until March 21st, 2018.  However, we encourage you to adopt this newer model sooner than later, as it will be the official statewide roads data model. There will be a subsequent blog post in September, before the official change.
 
 ## Download the New Data
 
@@ -28,11 +28,11 @@ Spatial data for this model was directly derived from the former data model. Dur
 
 ## The Take Away
 
-- AGRC will officially adopt this new data model on **September 13th, 2017**
-- AGRC will maintain and publish both models until **March 21sth, 2018**
+- UGRC will officially adopt this new data model on **September 13th, 2017**
+- UGRC will maintain and publish both models until **March 21sth, 2018**
 - The new data model is based on the NextGen911 and FHA's ARNOLD requirements
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.roads text='contact' hide-punctuation=true %}{% endcapture %}
 Please do not hesitate to {{ contact }} if you have any questions or concerns about the new data model or this transition. If you regularly you use this layer, we encourage you to adopt this new model within your own agency. Let me know if you are planning on doing so and are looking for guidance or assistance with the ETL process.
 
-Follow AGRC on [Twitter](https://twitter.com/MapUtah?lang=en) to stay up-to-date on this transition, as well as other GIS related news.
+Follow UGRC on [Twitter](https://twitter.com/MapUtah?lang=en) to stay up-to-date on this transition, as well as other GIS related news.

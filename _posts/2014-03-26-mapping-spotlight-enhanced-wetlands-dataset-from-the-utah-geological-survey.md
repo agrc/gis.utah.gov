@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 tags:
   - bioscience
   - dnr

@@ -86,23 +86,23 @@ Now more than ever, our data is being used among a diverse set of industries and
 
 While traditionally we think of GIS as a tool for making maps and creating and maintaining spatial data, it has become much more. It’s time to start thinking beyond the map.
 
-### What is AGRC doing?
+### What is UGRC doing?
 {: .text-left}
 
-![AGRC supports geospatial]({% link images/agrc-supports-geospatial.png %}){: .outline }[^tribolet]
+![UGRC supports geospatial]({% link images/agrc-supports-geospatial.png %}){: .outline }[^tribolet]
 {: .flex .flex--center}
 
-#### Links related to AGRC's efforts
+#### Links related to UGRC's efforts
 
 - [Partnerships and Sharing]({% link gis-data-sharing/index.md %})
 - [Data sharing Initiatives - Farm to AGOL project]({% link gis-data-sharing/open-data/index.md %})
 - [State Geographic Information Database (SGID) - data index]({% link data/index.html %})
 - [Open Data - SGID ESRI Hub site](https://opendata.gis.utah.gov/)
 - [Open SGID - PostgreSQL/PostGIS cloud SGID database]({% link _posts/2020-05-04-introducing-open-sgid.md %})
-- [AGRC Web API](https://api.mapserv.utah.gov/)
+- [UGRC Web API](https://api.mapserv.utah.gov/)
 - [GitHub code and project repositories](https://github.com/agrc)
 - [Utah Department of Technology Services' Citizen Portal project](https://demosite.utah.gov/citizen-portal/written-plans/next-generation-portal/)
-- [AGRC Innovation Grant for Digital Assistant Skills]({% link _posts/2019-05-30-thoughts-from-teaching-google-and-amazon-new-skills.md %}), [Overview of the Grant]({% link _posts/2018-09-11-agrc-innovation-award-grant.md %})
+- [UGRC Innovation Grant for Digital Assistant Skills]({% link _posts/2019-05-30-thoughts-from-teaching-google-and-amazon-new-skills.md %}), [Overview of the Grant]({% link _posts/2018-09-11-agrc-innovation-award-grant.md %})
 
 #### Sources
 {: .text-left}
@@ -125,4 +125,4 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 
 [^bhageshpur]: Bhageshpur, Kiran. 2019. "[Data Is The New Oil - And That's A Good Thing](https://www.forbes.com/sites/forbestechcouncil/2019/11/15/data-is-the-new-oil-and-thats-a-good-thing/#1d3b1a037304)". Forbes. Nov 15, 2019.
 
-[^tribolet]: Tribolet, Anna. 2020. "What is AGRC Doing to Support the Next Wave of Geospatial Technology?". State of Utah, Department of Technology Services.
+[^tribolet]: Tribolet, Anna. 2020. "What is UGRC Doing to Support the Next Wave of Geospatial Technology?". State of Utah, Department of Technology Services.

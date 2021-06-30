@@ -15,7 +15,7 @@ Updates were recently made to the SGID10.Transportation.Roads and [SGID10.Transp
 
 Updated roads data is also available as shapefiles and file geodatabase files for download on the [SGID Roads and Highway System download page]({% link data/transportation/roads-system/index.html %}).
 
-These updates are also reflected in [AGRC's address locators]({% link data/address-geocoders-locators/index.html %}).
+These updates are also reflected in [UGRC's address locators]({% link data/address-geocoders-locators/index.html %}).
 
 
 The following are highlights from this month's update:

@@ -2,7 +2,7 @@
 title: How to Edit Existing Content on gis.utah.gov
 author:
   display_name: JP
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 tags: []
 date: 2016-04-19 16:11:21
 categories:
@@ -16,7 +16,7 @@ categories:
 1. Click `Edit this page on GitHub` in the bottom right of any webpage on gis.utah.gov.
 ![Edit this page on GitHub]({% link about/contributing/edit-existing/images/editgithub.png %}){: loading="lazy" }
 1. You will be brought to a page where you can propose a file change to the webpage.
-    1. By proposing a file change using this method, GitHub will automatically create your own local version of the AGRC Website, or a “fork”, in your GitHub account.
+    1. By proposing a file change using this method, GitHub will automatically create your own local version of the UGRC Website, or a “fork”, in your GitHub account.
     1. The fork will contain a branch called `Patch-1`.
 1. Edit the file in GitHub window.
     1. Files are either in html or markdown. Check the file extension.
@@ -30,11 +30,11 @@ categories:
 ![Create Pull Request]({% link about/contributing/edit-existing/images/CreatePullRequest_Button.png %}){: loading="lazy" }
 1. Congratulations! You contributed!
 
-## Method 2: Editing a page from within the AGRC Website GitHub repository
+## Method 2: Editing a page from within the UGRC Website GitHub repository
 {: .text-left}
 
 1. Create a free [GitHub account](https://github.com/join), if you do not already have one.
-1. Go to the AGRC website repository on GitHub: [{{ site.github.repository_url }}]({{ site.github.repository_url }}).
+1. Go to the UGRC website repository on GitHub: [{{ site.github.repository_url }}]({{ site.github.repository_url }}).
 1. You’ll need to create your own “fork”, or version, of the website repository. To do this, click ![Fork]({% link about/contributing/edit-existing/images/GitHubFork_Button.png %}) in the upper right. Then, click your GitHub username.
 1. Navigate to the page you wish to edit.
     1. Blog posts are in the `_posts` folder.

@@ -1,29 +1,29 @@
 ---
 tags:
-  - data
-  - ems
-  - health
+- data
+- ems
+- health
 author:
-  display_name: JP
-  email: agrc@utah.gov
+display_name: JP
+email: ugrc@utah.gov
 date: 2011-11-21 13:27:50 -0700
 categories: []
 HealthcareFacilities:
-  hub:
-    name: Utah Health Care Facilities
-    item_id: f5e5d7c717c946fe9cd6f2c8d0bf8d86
-  updates:
-    - December, 2017
-    - January, 2016
-    - July, 2015
-    - June, 2015
-    - June, 2013
+hub:
+name: Utah Health Care Facilities
+item_id: f5e5d7c717c946fe9cd6f2c8d0bf8d86
+updates:
+- December, 2017
+- January, 2016
+- July, 2015
+- June, 2015
+- June, 2013
 EmergencyMedicalServices:
-  hub:
-    name: Utah Emergency Medical Services
-    item_id: 4d29084d6e434ef397ae5922ba7402b4
-  updates:
-    - June, 2013
+hub:
+name: Utah Emergency Medical Services
+item_id: 4d29084d6e434ef397ae5922ba7402b4
+updates:
+- June, 2013
 ---
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/Hospitals_Large.png %}" alt="Hospitals" loading="lazy" />
@@ -31,15 +31,20 @@ EmergencyMedicalServices:
 </figure>
 {% include abstract.html
 name="Healthcare Facilities"
-stewards="AGRC, Utah Department of Health, Utah Division of Emergency Management"
-abstract="The Healthcare Facilities data package contains all the datasets available that represent healthcare facilities in Utah.  The package includes a general Healthcare Facilities dataset as well as a specialized dataset that contains locations of Emergency Medical Service (EMS) facilities." %}
+stewards="UGRC, Utah Department of Health, Utah Division of Emergency Management"
+abstract="The Healthcare Facilities data package contains all the datasets available that represent healthcare
+facilities in Utah. The package includes a general Healthcare Facilities dataset as well as a specialized dataset that
+contains locations of Emergency Medical Service (EMS) facilities." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="HealthcareFacilities">Healthcare Facilities</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/HealthCareFacilities_Small.png %}" alt="HealthCareFacilities" loading="lazy" />
-    <p>Health Care Facilities represents clinics, dialysis centers, hospitals, and other healthcare related facilities. This dataset is a work in progress. Listed below are more completed datasets for specific types of healthcare facilities.</p>
+    <img class="inline-text-left outline" src="{% link images/HealthCareFacilities_Small.png %}"
+      alt="HealthCareFacilities" loading="lazy" />
+    <p>Health Care Facilities represents clinics, dialysis centers, hospitals, and other healthcare related facilities.
+      This dataset is a work in progress. Listed below are more completed datasets for specific types of healthcare
+      facilities.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
@@ -54,8 +59,12 @@ abstract="The Healthcare Facilities data package contains all the datasets avail
     <h3 id="EmergencyMedicalServices">Emergency Medical Services</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/EMSFacilities_Small.png %}" alt="EmergencyMedicalServices" loading="lazy" />
-    <p>Emergency Medical Services represents the Emergency Medical Service (EMS) Facilities throughout the state of Utah.  An EMS Facility is any location where emergency medical services personnel are stationed or based out of, or where EMS equipment is stored and ready use. Health.EmergencyMedicalServices includes both private and governmental entities. The <code>NAME</code> field contains the name of the EMS Facility.</p>
+    <img class="inline-text-left outline" src="{% link images/EMSFacilities_Small.png %}" alt="EmergencyMedicalServices"
+      loading="lazy" />
+    <p>Emergency Medical Services represents the Emergency Medical Service (EMS) Facilities throughout the state of
+      Utah. An EMS Facility is any location where emergency medical services personnel are stationed or based out of, or
+      where EMS equipment is stored and ready use. Health.EmergencyMedicalServices includes both private and
+      governmental entities. The <code>NAME</code> field contains the name of the EMS Facility.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">

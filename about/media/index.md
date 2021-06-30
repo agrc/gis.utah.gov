@@ -1,10 +1,10 @@
 ---
 author:
-  display_name: AGRC Office
-  email: agrc@utah.gov
+  display_name: UGRC Office
+  email: ugrc@utah.gov
 tags: []
 date: 2019-12-09 09:33:34 -0700
-title: AGRC Logos and Usage
+title: UGRC Logos and Usage
 categories: []
 ---
 <div class="flex flex--center" style="justify-content: space-evenly;">
@@ -25,7 +25,7 @@ categories: []
   <div class="text-left">
     <h3>Do's</h3>
     <ul class="dotless fa-ul" style="width: 550px">
-      <li><span class="fa-li" style="color:#2ecc40">{% include fa_icon.html check=true class="svg-inline--fa fa-w-14" %}</span>Use these logos to advertise that your product (maps, apps, etc) was built with AGRC data and services</li>
+      <li><span class="fa-li" style="color:#2ecc40">{% include fa_icon.html check=true class="svg-inline--fa fa-w-14" %}</span>Use these logos to advertise that your product (maps, apps, etc) was built with UGRC data and services</li>
       <li><span class="fa-li" style="color:#2ecc40">{% include fa_icon.html check=true class="svg-inline--fa fa-w-14" %}</span>Modify the colors of the logo to match your product</li>
       <li><span class="fa-li" style="color:#2ecc40">{% include fa_icon.html check=true class="svg-inline--fa fa-w-14" %}</span>Modify the size to fit your product</li>
     </ul>
