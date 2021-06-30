@@ -1,21 +1,21 @@
 ---
 author:
-  display_name: JP
-  email: agrc@utah.gov
+display_name: JP
+email: ugrc@utah.gov
 tags:
-  - alcohol
-  - data
-  - liquor
-  - utah department of alcoholic beverage control
-  - wine
+- alcohol
+- data
+- liquor
+- utah department of alcoholic beverage control
+- wine
 categories: []
 date: 2012-06-19 12:39:39 -0600
 LiquorStores:
-  hub:
-    name: Utah Liquor Stores
-    item_id: 61b7f10c194b4ec69d02e169db1da09a
-  updates:
-    - 3/15/2017
+hub:
+name: Utah Liquor Stores
+item_id: 61b7f10c194b4ec69d02e169db1da09a
+updates:
+- 3/15/2017
 ---
 <figure class="caption caption--right">
   <img class="caption__image" title="map" src="{% link images/LiquorStores.png %}" alt="Liquor stores" loading="lazy" />
@@ -23,22 +23,25 @@ LiquorStores:
 </figure>
 {% include abstract.html
 name="Liquor Stores"
-stewards="AGRC & DABC"
+stewards="UGRC & DABC"
 webapp="https://abc.utah.gov/stores/index.html"
-abstract="Society.LiquorStores contains information and locations for liquor stores and package agencies controlled by the Department of Alcoholic Beverage Control of Utah." %}
+abstract="Society.LiquorStores contains information and locations for liquor stores and package agencies controlled by
+the Department of Alcoholic Beverage Control of Utah." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="LiquorStores">Liquor Stores</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>LiquorStores contains information and locations for liquor stores and package agencies controlled by the Department of Alcoholic Beverage Control of Utah. The source of this dataset is the Utah Department of Alcoholic Beverage Control's <a href="https://abc.utah.gov/stores/index.html">online map</a>.</p>
+    <p>LiquorStores contains information and locations for liquor stores and package agencies controlled by the
+      Department of Alcoholic Beverage Control of Utah. The source of this dataset is the Utah Department of Alcoholic
+      Beverage Control's <a href="https://abc.utah.gov/stores/index.html">online map</a>.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://abc.utah.gov/">Department of Alcoholic Beverage Control</a>
     </ul>
   </div>
   {% include packagedata.html
-    name="LiquorStores"
-    info=page.LiquorStores
+  name="LiquorStores"
+  info=page.LiquorStores
   %}
 </div>

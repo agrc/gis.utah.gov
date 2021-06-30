@@ -1,9 +1,9 @@
 ---
-title: About AGRC
+title: About UGRC
 layout: page_nocrumb
 author:
-  display_name: AGRC Staff
-  email: agrc@utah.gov
+  display_name: UGRC Staff
+  email: ugrc@utah.gov
 tags: []
 categories: []
 date: 2011-06-30 23:18:14 -0600
@@ -11,13 +11,13 @@ date: 2011-06-30 23:18:14 -0600
 <div class="pull-right" markdown="1">
 #### Quick Links
 
-- [AGRC Contacts]({% link about/contact/index.html %})
-- [AGRC Mission]({% link about/mission/index.md %})
+- [UGRC Contacts]({% link about/contact/index.html %})
+- [UGRC Mission]({% link about/mission/index.md %})
 - [GIS-related Utah Statute]({% link about/code/index.html %})
-- [AGRC Policies]({% link about/policy/index.md %})
+- [UGRC Policies]({% link about/policy/index.md %})
 - [Utah GIS Resources]({% link training/index.html %})
-- [AGRC Media Resources]({% link about/media/index.md %})
-- [AGRC Directions and Parking]({% link about/visiting-agrc/index.html %})
+- [UGRC Media Resources]({% link about/media/index.md %})
+- [UGRC Directions and Parking]({% link about/visiting-agrc/index.html %})
 - [Contributing to this website]({% link about/contributing/index.md %})
 {: .dotless }
 </div>
@@ -25,20 +25,20 @@ date: 2011-06-30 23:18:14 -0600
 ## Our Background
 {: .text-left }
 
-The Automated Geographic Reference Center (AGRC) is the State of Utah’s map technology coordination office. AGRC staff ([directory/contacts]({% link about/contact/index.html %})) have knowledge of and experience with geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state. Since 1984, we have been [encouraging and facilitating](https://storymaps.arcgis.com/stories/8be2e6de2abf442eb72f5faa8a32dd2b) the effective use of geospatial information and technology for Utah. Read more about how we aim to continue this mission in our [strategic plan](https://drive.google.com/a/utah.gov/uc?id=1fMCCpjSbjKrHBIPuMiagakcmBBD61F9d&export=download), last updated in 2020.
+The Utah Geospatial Resource Center (UGRC) is the State of Utah’s map technology coordination office. UGRC staff ([directory/contacts]({% link about/contact/index.html %})) have knowledge of and experience with geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state. Since 1984, we have been [encouraging and facilitating](https://storymaps.arcgis.com/stories/8be2e6de2abf442eb72f5faa8a32dd2b) the effective use of geospatial information and technology for Utah. Read more about how we aim to continue this mission in our [strategic plan](https://drive.google.com/a/utah.gov/uc?id=1fMCCpjSbjKrHBIPuMiagakcmBBD61F9d&export=download), last updated in 2020.
 
-We are located on the 5th floor of the State Office building, directly north of the Capitol ([directions and parking]({% link about/visiting-agrc/index.html %})). AGRC and the Utah CIO’s office compose the Integrated Technologies division within the Department of Technology Services.
+We are located on the 5th floor of the State Office building, directly north of the Capitol ([directions and parking]({% link about/visiting-agrc/index.html %})). UGRC and the Utah CIO’s office compose the Integrated Technologies division within the Department of Technology Services.
 
-[![AGRC staff photo](./AGRC_Staff_2019_small.png){: .outline}](./AGRC_Staff_2019.png)
+[![UGRC staff photo](./AGRC_Staff_2019_small.png){: .outline}](./AGRC_Staff_2019.png)
 {: .pull-right .pad-left loading="lazy" }
 
-AGRC is directed under [mapping-related sections of Utah statute]({% link about/code/index.html %}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
+UGRC is directed under [mapping-related sections of Utah statute]({% link about/code/index.html %}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
 
-AGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. At 30+ years old, our full name may sound like its from a by-gone era. But AGRC is how people know us, so we're sticking with it. Years may pass, but our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
+UGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. At 30+ years old, our full name may sound like its from a by-gone era. But UGRC is how people know us, so we're sticking with it. Years may pass, but our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
 
-AGRC is funded through a combination of State general and restricted funds and cost-recovery revenue sources from project work and grant awards. This hybrid approach ensures some stable base for SGID and coordination activities but keeps us on our toes by requiring us to keep up with the latest developments in our field so we can offer cutting edge GIS consulting services to those in need.
+UGRC is funded through a combination of State general and restricted funds and cost-recovery revenue sources from project work and grant awards. This hybrid approach ensures some stable base for SGID and coordination activities but keeps us on our toes by requiring us to keep up with the latest developments in our field so we can offer cutting edge GIS consulting services to those in need.
 
-## What We Do at AGRC
+## What We Do at UGRC
 
 <div class="grid" markdown="1">
   <div class="grid__col grid__col--1-of-2" markdown="1">
@@ -77,7 +77,7 @@ AGRC is funded through a combination of State general and restricted funds and c
 ### Statewide
 
 - [Utah Geographic Information Systems Advisory Council (GISAC)]({% link about/gisac/index.md %})
-  - GISAC is composed of individuals from many state agencies all working together to further the cause of GIS in Utah. AGRC is trying to create a forum in which all levels of GIS expertise can mingle, learn from each other, and learn of each other's challenges. GISAC also sends recommendations to the CIO as potential rules or recommendations that would enhance GIS coordination and cooperation throughout Utah.
+  - GISAC is composed of individuals from many state agencies all working together to further the cause of GIS in Utah. UGRC is trying to create a forum in which all levels of GIS expertise can mingle, learn from each other, and learn of each other's challenges. GISAC also sends recommendations to the CIO as potential rules or recommendations that would enhance GIS coordination and cooperation throughout Utah.
   {: .dotless }
 - [Utah Geographic Information Council (UGIC)](https://ugic.org)
   - UGIC is a nonprofit organization whose mission is to lead the effective application of geographic information in Utah. It is their vision to provide a modern, accurate, documented, and accessible geospatial information infrastructure for all of Utah.

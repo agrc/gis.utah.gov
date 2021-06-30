@@ -16,11 +16,11 @@ categories: []
 
 The SGID is a collection of vector-format GIS feature classes. Its' content is available for download from the [data pages]({% link data/index.html %}) on this website or via an ArcSDE database connection **for users within the State of Utah network**. Users with ArcGIS desktop clients that are at 10.2.1 or higher can use this resource.
 
-The SGID's organization is based on ISO Topic Categories. AGRC treats the ISO categories as a guideline, and the main goal is to maximize usability for GIS users.
+The SGID's organization is based on ISO Topic Categories. UGRC treats the ISO categories as a guideline, and the main goal is to maximize usability for GIS users.
 
 #### When to use
 
-Using a database connection to the most current ArcSDE server can be advantageous as users will see and query the most updated version of all feature classes housed at AGRC. Live connections are excellent for browsing, exploring, or making quick maps with SGID data layers. However, users are encouraged to download or export data files where editing, archiving project data, or optimal performance is required. Additionally, it is recommended and in some cases required that users' ArcMap release version be at or above the level of AGRC's ArcSDE server.
+Using a database connection to the most current ArcSDE server can be advantageous as users will see and query the most updated version of all feature classes housed at UGRC. Live connections are excellent for browsing, exploring, or making quick maps with SGID data layers. However, users are encouraged to download or export data files where editing, archiving project data, or optimal performance is required. Additionally, it is recommended and in some cases required that users' ArcMap release version be at or above the level of UGRC's ArcSDE server.
 
 #### Connecting
 

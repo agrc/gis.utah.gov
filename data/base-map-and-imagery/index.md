@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 date: 2011-11-03 18:11:05 -0600
 title: SGID Base Map and Imagery Services
 categories:
@@ -11,7 +11,7 @@ tags:
 ---
 [![discover logo]({% link discover/images/discover-logo.png %}){: .flex .flex--center loading="lazy"}]({% link discover/index.html %})
 
-Do you need a quick base map for your [GIS, CAD, or web services]({% link discover/index.html %}#connect)? AGRC provides several multiscale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow.
+Do you need a quick base map for your [GIS, CAD, or web services]({% link discover/index.html %}#connect)? UGRC provides several multiscale base map and imagery service options that deliver pre-rendered base map tiles to your platform as fast as your internet connection will allow.
 
 <div class="grid">
   <div class="grid__col grid__col--1-of-3 text-center">
@@ -29,12 +29,12 @@ Do you need a quick base map for your [GIS, CAD, or web services]({% link discov
 </div>
 <p markdown="span">
   {% include fa_icon.html exclamation=true class="svg-inline--fa fa-w-18" %}
-  **If you want to use the AGRC base maps, you'll need to request a [free account]({% link discover/index.html %}#sign-up") so we can create a quad word key for you**.
+  **If you want to use the UGRC base maps, you'll need to request a [free account]({% link discover/index.html %}#sign-up") so we can create a quad word key for you**.
   {% include fa_icon.html exclamation=true class="svg-inline--fa fa-w-18" %}
 </p>
 {: .pop .text-center }
 
-AGRC’s [Discover]({% link discover/index.html %}) cloud-base server provides imagery and base map services in OGC-standard WMTS and WMS formats in the Web Mercator WGS84 projection (wkid: 3857). Discover provides over [20 services]({% link discover/index.html %}#services) that are free to use (**however, a few services do require a [signed license agreement]({% link discover/license/index.md %}))**.
+UGRC’s [Discover]({% link discover/index.html %}) cloud-base server provides imagery and base map services in OGC-standard WMTS and WMS formats in the Web Mercator WGS84 projection (wkid: 3857). Discover provides over [20 services]({% link discover/index.html %}#services) that are free to use (**however, a few services do require a [signed license agreement]({% link discover/license/index.md %}))**.
 
 <p markdown="span">
 {% include fa_icon.html information=true class="svg-inline--fa fa-w-16 fa-fw" %} Each cache consists of around **3 to 17 million** 256-pixel square tiles ranging from **15G to over 200GB**. These caches use the subset of the Google, Microsoft, and esri [scale levels]({% link developer/base-maps/basemap-scales/index.md %}) that apply to our state. The [update schedule]({% link developer/base-maps/basemap-maintenance-schedule/index.md %}) will keep you in the loop as to when the tiles were last updated. If you would like to download imagery, visit the [aerial photography]({% link data/aerial-photography/index.html %}) data page.

@@ -12,7 +12,7 @@ tags:
   - discover
 ---
 
-The new 2018 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({% link discover/index.html %})[^1]! Updated areas (map below) include what Google calls the "Salt Lake and Logan blocks," which make up most of the Wasatch Front urban area (i.e., Brigham City, Weber County, Davis County, Salt Lake County, and Utah County). The Salt Lake block was flown 9/11/2018 and the Logan block was flown 9/15/2018.
+The new 2018 high-resolution Google imagery (6" pixels) is available through UGRC's [Discover server]({% link discover/index.html %})[^1]! Updated areas (map below) include what Google calls the "Salt Lake and Logan blocks," which make up most of the Wasatch Front urban area (i.e., Brigham City, Weber County, Davis County, Salt Lake County, and Utah County). The Salt Lake block was flown 9/11/2018 and the Logan block was flown 9/15/2018.
 
 [![Google update]({% link images/NewGoogle_2018_sm.png %} "2018 Google imagery updates - click for larger image")]({% link images/NewGoogle_2018.png %}){:.inline-text-right}
 

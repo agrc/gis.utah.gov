@@ -12,7 +12,7 @@ categories:
   - Featured
   - SGID Blog
 ---
-<p>AGRC has updated some layers in the State Geographic Information Database (SGID). The updates are a result of the work that's been done for the Utah Broadband Project's, Community Anchor Institutions layer. During this update process AGRC did some house cleaning and consolidated some layers, with a common theme, into one layer. The layer that was consolidated has been removed from the SGID.</p>
+<p>UGRC has updated some layers in the State Geographic Information Database (SGID). The updates are a result of the work that's been done for the Utah Broadband Project's, Community Anchor Institutions layer. During this update process UGRC did some house cleaning and consolidated some layers, with a common theme, into one layer. The layer that was consolidated has been removed from the SGID.</p>
 <p>The updated SGID layers are:<br />
 * SGID10.SOCIETY.Schools<br />
 * SGID10.SOCIETY.Libraries<br />

@@ -11,7 +11,7 @@ categories:
   - Developer
 date: 2011-08-05 00:05:21 -0600
 ---
-AGRC plans on updating the data driving these cached base maps on a regular schedule where applicable. This way our online base map caches will remain current with the most up to date data in our SGID.
+UGRC plans on updating the data driving these cached base maps on a regular schedule where applicable. This way our online base map caches will remain current with the most up to date data in our SGID.
 
 The last updated dates for the base map are as follows:
 

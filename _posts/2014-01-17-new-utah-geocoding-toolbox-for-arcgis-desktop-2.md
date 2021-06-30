@@ -1,7 +1,7 @@
 ---
 author:
-  display_name: AGRC Dev Team
-  email: agrc@utah.gov
+  display_name: UGRC Dev Team
+  email: ugrc@utah.gov
 tags:
   - geocoding
 date: 2014-01-17 11:57:08
@@ -13,9 +13,9 @@ categories:
 This tool has been updated to work with ArcGIS Pro. Some of the information below may be outdated. Please refer to [GitHub](https://github.com/agrc/geocoding-toolbox) for the most current documentation.
 {: .pop}
 
-AGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.
+UGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.
 
-This custom geocoding toolbox allows ArcGIS users to obtain geographic coordinates from AGRC's Web API [geocoding endpoint](https://api.mapserv.utah.gov/#geocoding) for any table of addresses in an ArcGIS accessible format.
+This custom geocoding toolbox allows ArcGIS users to obtain geographic coordinates from UGRC's Web API [geocoding endpoint](https://api.mapserv.utah.gov/#geocoding) for any table of addresses in an ArcGIS accessible format.
 
 While the geocoding endpoint was built primarily for web applications it also provides value as a toolbox in ArcGIS, as it uses current local data and solves for some common shortcomings with stock geocoding approaches by:
 

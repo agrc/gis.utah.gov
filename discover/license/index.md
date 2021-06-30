@@ -23,7 +23,7 @@ We will continue to provide the previously acquired imagery from the Google cont
 
 The licenses governing both the Google and Hexagon imagery are similar, and we will group them together for this discussion. They allow **Utah's cities, counties, special districts, state agencies, school districts, colleges/universities, and tribes** to use the imagery in web and desktop mapping applications either from our streaming web service or from locally-stored files. **Contractors and formal partners of the immediate licensees** are also allowed to use the imagery.
 
-The imagery is hosted on the Google Cloud Platform and delivered as WMS and WMTS Open Geospatial Consortium (OGC) services via AGRC's **[Discover]({% link discover/index.html %})** basemap and imagery server. You can download the original `.jp2` imagery tiles from the Discover index page or get a copy from AGRC, which keeps a master set of the imagery files.
+The imagery is hosted on the Google Cloud Platform and delivered as WMS and WMTS Open Geospatial Consortium (OGC) services via UGRC's **[Discover]({% link discover/index.html %})** basemap and imagery server. You can download the original `.jp2` imagery tiles from the Discover index page or get a copy from UGRC, which keeps a master set of the imagery files.
 
 ### Who Qualifies?
 {: .text-left}
