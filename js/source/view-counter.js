@@ -9,7 +9,7 @@
     // "http://localhost:8080/", // for local development
     {
       method: "POST",
-      body: location.href,
+      body: `${location.origin}${location.pathname}`,
     }
   );
   if (response.status !== 200) {
