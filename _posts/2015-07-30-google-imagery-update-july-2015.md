@@ -35,7 +35,7 @@ Work to incorporate the Google imagery into our Hybrid Base Map for developed ar
 <p><strong>Download</strong><br />
 The discover.agrc.utah.gov allows the raw .jp2 image files to be downloaded in small quantities from a browser. To utilize the download functionality, login to the server with your organizational username and password. Next, select the Download viewer link (link ending in <em>footprint/utah/preview</em>). Then, simply zoom into your area of interest and once you have zoomed in far enough you will start to see a red and black checkerboard pattern. You can either click on a tile to download it or click the button in the upper right corner to Download Tiles in Current View. The .jp2 tiles are in WGS84 coordinates.</p>
 <p><strong>On-premise Request</strong><br />
-AGRC has a full collection of the original 6" .jp2 imagery tiles. If you prefer not to use the download viewer you can arrange to get copies of the image tiles by {% include contact.html subject=page.title contact=site.data.contacts.discover text='contacting' %}</p>
+UGRC has a full collection of the original 6" .jp2 imagery tiles. If you prefer not to use the download viewer you can arrange to get copies of the image tiles by {% include contact.html subject=page.title contact=site.data.contacts.discover text='contacting' %}</p>
 <p><strong>Troubleshooting</strong><br />
 Having trouble using or connecting to the imagery services? <a href="https://docs.google.com/a/utah.gov/document/d/1pp9Q-zjaBwWXYPTC_4ndp0IueOPxhluJy65pjBa0RMo/edit?usp=sharing">Here is a document</a> we will update as needed that attempts to address some of the common problems and fixes various users have encountered.</p>
 <p><strong>Want to use the WMTS?</strong><br />

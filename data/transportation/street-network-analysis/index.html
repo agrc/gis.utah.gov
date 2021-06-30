@@ -26,31 +26,43 @@ MultimodalNetwork:
     - June 04, 2021
 ---
 {% capture abstract %}
-The network datasets have been derived from the <a href="{% link data/transportation/roads-system/index.html %}">Transportation.Roads</a> dataset and are designed to be used for network analysis (drive times, routes, service areas).
+The network datasets have been derived from the <a
+  href="{% link data/transportation/roads-system/index.html %}">Transportation.Roads</a> dataset and are designed to be
+used for network analysis (drive times, routes, service areas).
 {% endcapture %}
 {% include abstract.html
-  name="Street Network Analysis"
-  download="https://drive.google.com/a/utah.gov/uc?id=1NmMCS8HjxFPF-K6XjaV0FznhS0ejwqRc&export=download"
-  abstract=abstract %}
+name="Street Network Analysis"
+download="https://drive.google.com/a/utah.gov/uc?id=1NmMCS8HjxFPF-K6XjaV0FznhS0ejwqRc&export=download"
+abstract=abstract %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="StreetNetwork">Street Network</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p><a href="{% link data/transportation/roads-system/index.html %}">Transportation.Roads</a> is the recommended starting point for almost anything related to Utah street centerlines. This includes cartography, address location, and, now, network analysis. (It is also worth mentioning that the UDOT linear referencing system is derived from attributes in this dataset).</p>
-    <p>While data used to support network analysis has many potential parameters, at a basic level, two components are especially important: 1) connectivity and 2) impedance (i.e. travel speed/costs).</p>
-    <p>Connectivity of centerline features in Transportation.Roads is actively maintained but an impedance measure, while planned for later this year, has not been actively enforced to date. However, it is possible to use a combination of cartographic feature codes (<code>CFCC</code> field), spatial queries, and the existing values in the <code>SPD_LMT</code> field to create a relatively crude but effective representation of speed limits that, then, can be used as an input to an impedance measure.</p>
+    <p><a href="{% link data/transportation/roads-system/index.html %}">Transportation.Roads</a> is the recommended
+      starting point for almost anything related to Utah street centerlines. This includes cartography, address
+      location, and, now, network analysis. (It is also worth mentioning that the UDOT linear referencing system is
+      derived from attributes in this dataset).</p>
+    <p>While data used to support network analysis has many potential parameters, at a basic level, two components are
+      especially important: 1) connectivity and 2) impedance (i.e. travel speed/costs).</p>
+    <p>Connectivity of centerline features in Transportation.Roads is actively maintained but an impedance measure,
+      while planned for later this year, has not been actively enforced to date. However, it is possible to use a
+      combination of cartographic feature codes (<code>CFCC</code> field), spatial queries, and the existing values in
+      the <code>SPD_LMT</code> field to create a relatively crude but effective representation of speed limits that,
+      then, can be used as an input to an impedance measure.</p>
     Important Fields:
     <ul class="dotless">
       <li><code>F_T_IMP_MIN</code> Impedance, estimated in minutes in direction of line's orientation.</li>
       <li><code>T_F_IMP_MIN</code> Impedance, estimated in minutes in the opposite direction of line's orientation.</li>
     </ul>
-    <p>In areas where surface streets are likely to encounter traffic controls at intersections and other congestion, travel time has been increased by a factor of 1.3 (this will be 1.5 in future datasets). Otherwise the approximate speed limit was used to estimate travel time.</p>
+    <p>In areas where surface streets are likely to encounter traffic controls at intersections and other congestion,
+      travel time has been increased by a factor of 1.3 (this will be 1.5 in future datasets). Otherwise the approximate
+      speed limit was used to estimate travel time.</p>
     <p>There are no constraints or warranties with regard to the use of this dataset.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.roads %}</p>
   </div>
   {% include packagedata.html name="StreetNetwork"
-    info=page.StreetNetwork
+  info=page.StreetNetwork
   %}
 </div>
 <div class="grid package">
@@ -58,16 +70,39 @@ The network datasets have been derived from the <a href="{% link data/transporta
     <h3 id="MultimodalNetwork">Multimodal Network</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>The multimodal network dataset was originally developed as part of a 2018 FHWA-funded <a href='{% link _posts/2018-11-07-multi-modal-travel-shed-analysis-project.md %}'>Multimodal Travelshed Project</a>. The project, led by UDOT, was a pilot for <a href="https://drive.google.com/file/d/0B0e8NYR9m9MTX091S3d5Ri00S2drVi16ZDNyZFRhb3dFT3VZ/view"> measuring multimodal network connectivity</a>. Other partners included WFRC, MAG, and AGRC.</p>
-    <p>This dataset is built using SGID <a href="{% link data/transportation/roads-system/index.html %}">Roads</a>, <a href="{% link data/recreation/trails/index.html %}">Trails</a>, and <a href="{% link data/transportation/transit/index.html %}">UTA Transit</a> (light-rail and commuter rail) data, as well as 2019 <a href="https://gtfs.org/">GTFS</a> transit routes and stops. In addition, ‘connector’ lines are created during the build process to provide the needed junctions.</p>
-    <p>Currently, the dataset is limited to the <a href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/WasatchFrontRegion.geojson">Wasatch Front region</a> (Box Elder, Davis, Salt Lake, Utah, and Weber county). Furthermore, as part of the scope of the project, <a href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites.geojson">50 sites</a> were chosen where the data is optimized for multimodal connectivity (particularly the bike and pedestrian modes of travel). Pedestrian data was densified within <a href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites_halfmile_buff.geojson">.5 miles of the sites</a> and bike data was densified within <a href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites_1mile_buff.geojson">1 mile of the sites</a>. In other words, your mileage may vary when you venture beyond these zones.</p>
-    <p>The multimodal network dataset will be updated in conjunction with <a href="{% link data/transportation/roads-system/index.html %}">SGID Road updates</a>.</p>
-    <p>This dataset can also be used with ESRI's Network Analyst for routing and <a href="https://docs.google.com/document/d/1OsXexJTap9tDY89Y_v2woGatK_u5nYd_jDdlMwWRhog/edit"> travel sheds</a>.</p>
-    <p>Please visit this project’s <a href="https://github.com/gregbunce/MultimodalNetworkScripts">GitHub repository</a> to learn more about (or contribute to) the build process.</p>
-    <p>We hope to continue the project and expand the multimodal footprint beyond these original 50 sites. Please get in contact with us if you are interested in contributing or playing a role.</p>
+    <p>The multimodal network dataset was originally developed as part of a 2018 FHWA-funded <a
+        href='{% link _posts/2018-11-07-multi-modal-travel-shed-analysis-project.md %}'>Multimodal Travelshed
+        Project</a>. The project, led by UDOT, was a pilot for <a
+        href="https://drive.google.com/file/d/0B0e8NYR9m9MTX091S3d5Ri00S2drVi16ZDNyZFRhb3dFT3VZ/view"> measuring
+        multimodal network connectivity</a>. Other partners included WFRC, MAG, and UGRC.</p>
+    <p>This dataset is built using SGID <a href="{% link data/transportation/roads-system/index.html %}">Roads</a>, <a
+        href="{% link data/recreation/trails/index.html %}">Trails</a>, and <a
+        href="{% link data/transportation/transit/index.html %}">UTA Transit</a> (light-rail and commuter rail) data, as
+      well as 2019 <a href="https://gtfs.org/">GTFS</a> transit routes and stops. In addition, ‘connector’ lines are
+      created during the build process to provide the needed junctions.</p>
+    <p>Currently, the dataset is limited to the <a
+        href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/WasatchFrontRegion.geojson">Wasatch
+        Front region</a> (Box Elder, Davis, Salt Lake, Utah, and Weber county). Furthermore, as part of the scope of the
+      project, <a
+        href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites.geojson">50
+        sites</a> were chosen where the data is optimized for multimodal connectivity (particularly the bike and
+      pedestrian modes of travel). Pedestrian data was densified within <a
+        href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites_halfmile_buff.geojson">.5
+        miles of the sites</a> and bike data was densified within <a
+        href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites_1mile_buff.geojson">1
+        mile of the sites</a>. In other words, your mileage may vary when you venture beyond these zones.</p>
+    <p>The multimodal network dataset will be updated in conjunction with <a
+        href="{% link data/transportation/roads-system/index.html %}">SGID Road updates</a>.</p>
+    <p>This dataset can also be used with ESRI's Network Analyst for routing and <a
+        href="https://docs.google.com/document/d/1OsXexJTap9tDY89Y_v2woGatK_u5nYd_jDdlMwWRhog/edit"> travel sheds</a>.
+    </p>
+    <p>Please visit this project’s <a href="https://github.com/gregbunce/MultimodalNetworkScripts">GitHub repository</a>
+      to learn more about (or contribute to) the build process.</p>
+    <p>We hope to continue the project and expand the multimodal footprint beyond these original 50 sites. Please get in
+      contact with us if you are interested in contributing or playing a role.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.roads %}</p>
   </div>
-{% include packagedata.html name="MultimodalNetwork"
-    info=page.MultimodalNetwork
+  {% include packagedata.html name="MultimodalNetwork"
+  info=page.MultimodalNetwork
   %}
 </div>

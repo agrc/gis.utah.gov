@@ -15,7 +15,7 @@ It's a new year and a new start for the state. While we entered the year still u
 
 This slower start may be, at least in part, due to the changes brought on by an election and subsequent changes to county and city personnel. The last lieutenant governor is now the governor, and we have a new lieutenant governor and some new staff, who are in charge of annexation and boundaries in the state.
 
-AGRC welcomes Lt. Governor Henderson and any new staff who will be working with us. We also hope that everyone stays safe and healthy. 
+UGRC welcomes Lt. Governor Henderson and any new staff who will be working with us. We also hope that everyone stays safe and healthy.
 
 As always, feel free to check out all the municipal boundaries changes and make sure your boundaries are where you think they should be. You can view them on the [Utah Municipality Modifications page](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63 ).
 

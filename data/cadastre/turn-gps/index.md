@@ -4,8 +4,8 @@ tags:
   - gps
   - turn
 author:
-  display_name: AGRC Staff
-  email: agrc@utah.gov
+  display_name: UGRC Staff
+  email: ugrc@utah.gov
 date: 2011-06-30 23:13:39 -0600
 title: The Utah Reference Network (TURN) GPS
 categories: []
@@ -16,7 +16,7 @@ categories: []
 </figure>
 {% include abstract.html
 name="TURN GPS Network"
-stewards="AGRC"
+stewards="UGRC"
 type="GPS Network with $600 Annual Subscription"
 webapp="http://turngps.utah.gov/"
 abstract="The Utah Reference Network (TURN) GPS is a GNSS network of permanently located GPS receivers, installed across the state, to generate real time high accuracy GPS positioning. TURN GPS uses the Trimble PIVOT VRS Platform. TURN GPS is used for a range of precision GPS applications including surveying, engineering, construction, and GIS data collection. The current cost is $600 for each user login and is good for a full year from the sign up date.</p>

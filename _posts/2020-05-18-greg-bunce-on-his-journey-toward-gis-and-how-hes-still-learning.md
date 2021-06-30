@@ -12,9 +12,9 @@ tags:
   - agol
 ---
 
-In this article, we’re trying something a little different. I normally only interview the new AGRC employees, and, even then, I just send them a list of questions and they provide answers. It’s more of a fill-in-the-blank situation than a comprehensive interview—a practical format, but not exactly in line with the more casual tone that I’ve come to appreciate about the AGRC office.
+In this article, we’re trying something a little different. I normally only interview the new UGRC employees, and, even then, I just send them a list of questions and they provide answers. It’s more of a fill-in-the-blank situation than a comprehensive interview—a practical format, but not exactly in line with the more casual tone that I’ve come to appreciate about the UGRC office.
 
-I was curious to see what we could come up with during a more formal interview, and Greg Bunce (the data coordinator at AGRC), I thought, was the perfect test subject. Over the past three years of working with Greg, I’ve found him to be curious and open to exploring new ideas. “Being curious,” he tells me, “is key” for the field of GIS.
+I was curious to see what we could come up with during a more formal interview, and Greg Bunce (the data coordinator at UGRC), I thought, was the perfect test subject. Over the past three years of working with Greg, I’ve found him to be curious and open to exploring new ideas. “Being curious,” he tells me, “is key” for the field of GIS.
 
 ✼✼✼
 {: .text-center}
@@ -27,13 +27,13 @@ He laughed. “It’s my son’s room.”
 
 “I figured,” I said, looking at the large lettering of his son’s name on the door.
 
-We start our conversation casually, chatting about working from home and how to dive into our interview questions. I start simply by asking him his title at AGRC (“IT Analyst III” technically, but “Data Coordinator” on a more practical level) and what the job entails. He tells me about his work with the road centerlines dataset, which is linked to the geocoder and the network dataset, which is linked to NG911 information, and so on and so forth. There’s connection after connection. Even at this early point in the conversation, we’re hitting on an idea that I stumble upon in almost every GIS-related discussion I have: GIS is everywhere. It’s all connected, and everyone uses it.
+We start our conversation casually, chatting about working from home and how to dive into our interview questions. I start simply by asking him his title at UGRC (“IT Analyst III” technically, but “Data Coordinator” on a more practical level) and what the job entails. He tells me about his work with the road centerlines dataset, which is linked to the geocoder and the network dataset, which is linked to NG911 information, and so on and so forth. There’s connection after connection. Even at this early point in the conversation, we’re hitting on an idea that I stumble upon in almost every GIS-related discussion I have: GIS is everywhere. It’s all connected, and everyone uses it.
 
 I wanted to know how Greg got into this interesting, expansive field. “What’s your story? How’d you get here?” I ask him.
 
 He tells me it all began with maps. “Through the exploration of maps I would say.” He’d take road trips when he was younger, and he’d use AAA maps and highlight the route with a highlighter and bring the accompanying book with all the attractions and rest stops. We talk about how the field of GIS is changing, how fewer and fewer people are using hard-copy maps like that these days, how the younger generation leans ever more heavily on GPS. Greg says that to combat this issue he always tries to keep a hard-copy map in the car when his family is on a trip so the kids can follow along and know where they are. He wants them to know, “We are here on this paper, and we’re going here.”
 
-I think reading maps is a valuable, albeit perhaps fading, skill for kids to learn these days, and it’s great that Greg seems to be passing on his love of learning to his family. As I find out, it’s Greg’s love of learning and discovery, a common trait among AGRC staff members, that brought him across the country from Upstate New York.
+I think reading maps is a valuable, albeit perhaps fading, skill for kids to learn these days, and it’s great that Greg seems to be passing on his love of learning to his family. As I find out, it’s Greg’s love of learning and discovery, a common trait among UGRC staff members, that brought him across the country from Upstate New York.
 
 “[At first] I was really into planning and the built environment, which brought me to architecture,” he says. “It was interesting,” but he knew it wasn’t his ideal field. As a pastime, he’d often go exploring at bookstores. He tells me his theory about bookstores: he says that if you’re not sure what to do in life, you should ask yourself, “Where do you find yourself in the bookstore on a casual Saturday afternoon?” This question, he’d later learn, would have a big impact on the direction of his life.
 
@@ -47,7 +47,7 @@ I comment on the fact that he found this book during a journey across the countr
 
 “That’s fun. I didn’t even piece that together. You’re right,” he says.
 
-His newfound career direction brought him to the geography department at the University of Utah, which led him to GIS (because “GIS had a strong presence in the department”), and eventually to work at AGRC. Once Greg decided on a career in GIS, he knew he wanted to work somewhere that was well established and had a strong reputation like AGRC, but he was waiting for the right opportunity.
+His newfound career direction brought him to the geography department at the University of Utah, which led him to GIS (because “GIS had a strong presence in the department”), and eventually to work at UGRC. Once Greg decided on a career in GIS, he knew he wanted to work somewhere that was well established and had a strong reputation like UGRC, but he was waiting for the right opportunity.
 
 While studying GIS at graduate school at Northern Arizona University, he took an “Applications in GIS” class to learn more about the field. He thought, “‘This is going to be fun. I’m going to learn about all the ways you can apply GIS.’ And on day one, we go right into code. It was application meaning writing applications, as in coding. Essentially, you’re customizing the software, which is really cool, but not what I was expecting.” We laughed at his misunderstanding, understandable from the title of the class.
 
@@ -57,9 +57,9 @@ He struggled through the class, one of the hardest he ever took, and was so reli
 
 To me, this story perfectly describes what I’ve learned about working with GIS: it’s all about solving problems, learning new things, and being flexible, as Greg learned in that early position. “There are always new challenges to solve. And there’s always something to work on or learn about.”
 
-When Greg heard about the open position at AGRC, a position managing the road centerlines data, he knew the position would bring new challenges, but he wanted to take them on. He’d been applying for other jobs, but when the AGRC position opened, he thought,, “This is the one!” He knew it was the right job for him, and he took a leap of faith. One day he and his family were living a very predictable, routine life in Arizona, and the next day they were packing up to move to Utah. “It was recklessly insane,” he says. But it all worked out.
+When Greg heard about the open position at UGRC, a position managing the road centerlines data, he knew the position would bring new challenges, but he wanted to take them on. He’d been applying for other jobs, but when the UGRC position opened, he thought,, “This is the one!” He knew it was the right job for him, and he took a leap of faith. One day he and his family were living a very predictable, routine life in Arizona, and the next day they were packing up to move to Utah. “It was recklessly insane,” he says. But it all worked out.
 
-Greg started at AGRC in 2016, and since then, he’s created the workflows and process to get data “in and out the door” for the road centerlines dataset. He tells me that it’s one of his goals for his work at AGRC to get the data processed faster and to also get the data added to a shared editing environment. “Ideally, we should all be editing and working with the same dataset. To me, that’s the goal.” He’s also currently working on a “Farm to AGOL” project (a wordplay on “farm to table”), which allows AGRC to “serve data directly from the source.” The goal of the project is to minimize the movement of data, which ultimately gets the data more quickly and more efficiently into the hands of data users.
+Greg started at UGRC in 2016, and since then, he’s created the workflows and process to get data “in and out the door” for the road centerlines dataset. He tells me that it’s one of his goals for his work at UGRC to get the data processed faster and to also get the data added to a shared editing environment. “Ideally, we should all be editing and working with the same dataset. To me, that’s the goal.” He’s also currently working on a “Farm to AGOL” project (a wordplay on “farm to table”), which allows UGRC to “serve data directly from the source.” The goal of the project is to minimize the movement of data, which ultimately gets the data more quickly and more efficiently into the hands of data users.
 
 The kind of creative problem solving involved in the Farm to AGOL project is one of the things that Greg likes most about working in GIS. “I love problems. I can’t really pass an unfinished jigsaw puzzle. I have to sit there till it’s done.” To solve these problems, you have to be able to self-learn and continue learning, which, Greg says, is essential if you want a job in this field.
 
@@ -67,7 +67,7 @@ That problem-solving aspect of GIS is why the field is so important. GIS helps s
 
 And I agree with Greg on this. GIS is for everyone. Everyone uses GIS in different ways, and there are spatial aspects to every part of our everyday lives. That’s part of why, Greg says, there are “unlimited opportunities in the field if you’re a curious person. Because there are so many aspects to it, and if you stay curious, you can always find some aspect to apply GIS in, and that always opens up different opportunities.”
 
-*[AGRC]: Utah Automated Geographic Information Center
+*[UGRC]: Utah Geospatial Resource Center
 *[GIS]: Geographic information systems
 *[AAA]: American Automobile Association
 *[GPS]: Global positioning system

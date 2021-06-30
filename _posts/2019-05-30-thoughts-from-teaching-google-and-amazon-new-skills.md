@@ -9,12 +9,12 @@ categories:
 tags: []
 ---
 
-Developing software for digital assistants is fun and a refreshing change from typical GIS projects. Over the past few months, AGRC was lucky enough to spend some time developing equivalent skills for Google Assistant and the Amazon Alexa. Using both platforms allowed us to see their differences very clearly. We are excited to share our opinions on the strengths of each platform. To browse the code, visit [agrc/digital-assistant-skills](https://github.com/agrc/digital-assisant-skills) on GitHub and browse the `alexa-skill` and `google-skill` branches.
+Developing software for digital assistants is fun and a refreshing change from typical GIS projects. Over the past few months, UGRC was lucky enough to spend some time developing equivalent skills for Google Assistant and the Amazon Alexa. Using both platforms allowed us to see their differences very clearly. We are excited to share our opinions on the strengths of each platform. To browse the code, visit [agrc/digital-assistant-skills](https://github.com/agrc/digital-assisant-skills) on GitHub and browse the `alexa-skill` and `google-skill` branches.
 
 ## Background
 {: .text-left }
 
-In 2018 AGRC submitted a [proposal](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/proposal.md) for funds from the State of Utah Technology Innovation Program (i.e., Innovation Fund) and was [awarded](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/award.md) funding to experiment with digital assistants. Using GIS with digital assistants was the niche to explore, and we learned a lot more along the way.
+In 2018 UGRC submitted a [proposal](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/proposal.md) for funds from the State of Utah Technology Innovation Program (i.e., Innovation Fund) and was [awarded](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/award.md) funding to experiment with digital assistants. Using GIS with digital assistants was the niche to explore, and we learned a lot more along the way.
 
 ## Getting Started
 {: .text-left }
@@ -37,7 +37,7 @@ Google Assistant leads you to Firebase functions for request fulfillment. Fireba
 
 I never did set up a local server for Google Assistant. While the Firebase CLI is awesome and can start a local server, debugging what is going on inside that local server is **not** simple. I _could_ have set up an [Express](https://expressjs.com/) server, roughly a JS equivalent to Flask, but I chose to avoid the complexity. In hindsight, I would recommend the Express approach since (to my great frustration) I ended up `console.log` debugging in the Firebase logs.
 
-When you sign up for Firebase functions, you are placed on the free Spark plan. If making http requests to external resources is something your skill will do, and most do, you will need to upgrade to a paid tier. You will get unhelpful `ENOTFOUND` or `Error: getaddrinfo EAI_AGAIN` JavaScript errors if you [attempt this](https://stackoverflow.com/questions/50002469/http-request-to-an-external-api-in-firebase-cloud-functions-spark-tier-refused/50007666#50007666). It is **not** straightforward. We upgraded to the Blaze plan to make requests to the [AGRC WebAPI](https://api.mapserv.utah.gov).
+When you sign up for Firebase functions, you are placed on the free Spark plan. If making http requests to external resources is something your skill will do, and most do, you will need to upgrade to a paid tier. You will get unhelpful `ENOTFOUND` or `Error: getaddrinfo EAI_AGAIN` JavaScript errors if you [attempt this](https://stackoverflow.com/questions/50002469/http-request-to-an-external-api-in-firebase-cloud-functions-spark-tier-refused/50007666#50007666). It is **not** straightforward. We upgraded to the Blaze plan to make requests to the [UGRC WebAPI](https://api.mapserv.utah.gov).
 
 ### Skills as Code
 

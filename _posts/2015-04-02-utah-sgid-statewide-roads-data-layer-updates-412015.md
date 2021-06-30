@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Data Queen
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 tags:
   - address
   - data

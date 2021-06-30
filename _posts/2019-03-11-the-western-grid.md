@@ -145,7 +145,7 @@ So, the next time you're out wandering the Western Grid and you encounter a larg
 [^6]: “US Public Land Survey System,” (image), San Francisco Estuary Institute & The Aquatic Science Center, accessed March 01, 2019. <https://www.sfei.org/it/gis/map-interpretation/projections-and-survey-systems#sthash.D2D94lF3.sWlKZBU3.dpbs>.
 [^7]: Frederick G. Williams, “Revised Plat of the City of Zion, Circa Early August 1833,” The Church of Jesus Christ of Latter-day Saints, The Joseph Smith Papers, updated September 01, 2018, accessed March 01, 2019. <https://www.josephsmithpapers.org/paper-summary/revised-plat-of-the-city-of-zion-circa-early-august-1833/1>.
 [^8]: John Bonner, ca. 1643-1726; William Price, fl. 1725-1769; and Francis Dewing, fl. 1716-1722, “The town of Boston in New England,” Map, 1723, Norman B. Leventhal Map & Education Center, accessed March 01, 2019. [https://collections.leventhalmap.org](https://collections.leventhalmap.org/search/commonwealth:9s161f21f).
-[^9]: Greg Bunce, “Variations on the Western Urban Grid,” Automated Geographic Reference Center, March 01, 2019.
+[^9]: Greg Bunce, “Variations on the Western Urban Grid,” Utah Geospatial Resource Center, March 01, 2019.
 [^10]: Google Maps, “Boise Idaho,” accessed March 01, 2019. [https://google.com/maps/place/Boise,+ID/](https://www.google.com/maps/place/Boise,+ID/@43.6088162,-116.3498057,7348m/data=!3m1!1e3!4m5!3m4!1s0x54aef172e947b49d:0x9a5b989b36679d9b!8m2!3d43.6150186!4d-116.2023137).
 [^11]: Google Maps, “Sun Lakes, Arizona,” accessed March 01, 2019. [https://google.com/maps/place/Sun+Lakes,+AZ](https://www.google.com/maps/place/Sun+Lakes,+AZ+85248/@33.2181668,-111.8759392,3672m/data=!3m1!1e3!4m5!3m4!1s0x872b000a3cf645db:0xeb2fbae417540df7!8m2!3d33.2181797!4d-111.8759103).
 

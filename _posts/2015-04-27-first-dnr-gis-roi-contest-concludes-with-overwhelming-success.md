@@ -1,7 +1,7 @@
 ---
 author:
   display_name: JP
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 tags:
   - dnr
   - roi

@@ -1,49 +1,52 @@
 ---
 tags:
-  - data
-  - deq
-  - environment
+- data
+- deq
+- environment
 author:
-  display_name: JP
-  email: agrc@utah.gov
+display_name: JP
+email: ugrc@utah.gov
 date: 2011-12-08 14:25:57 -0700
 categories: []
 AssessmentUnits:
-  hub:
-    name: Utah DWQ Assessment Units
-    item_id: 0f39afb3b29d4c0a8abf7c46ed2e0354
-  updates:
-    - 2010
+hub:
+name: Utah DWQ Assessment Units
+item_id: 0f39afb3b29d4c0a8abf7c46ed2e0354
+updates:
+- 2010
 MonitoredLakes:
-  downloads:
-  hub:
-    name: Utah Lake Monitoring
-    item_id: 95f664327f724c0c8c87f6cd38bf9311
-  updates:
-    - 2010
+downloads:
+hub:
+name: Utah Lake Monitoring
+item_id: 95f664327f724c0c8c87f6cd38bf9311
+updates:
+- 2010
 GroundWaterPermits:
-  hub:
-    name: Utah DWQ Groundwater Permits
-    item_id: eb1bb5fbe37d43f1aa002b19dd678ac5
-  updates:
-    - 2010
+hub:
+name: Utah DWQ Groundwater Permits
+item_id: eb1bb5fbe37d43f1aa002b19dd678ac5
+updates:
+- 2010
 StreamMonitoredSites:
-  downloads:
-  hub:
-    name: Utah Stream Monitor Sites
-    item_id: fbcb87a051fc4784a041074f2a919e4a
-  updates:
-    - 2007
+downloads:
+hub:
+name: Utah Stream Monitor Sites
+item_id: fbcb87a051fc4784a041074f2a919e4a
+updates:
+- 2007
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/EnviroWaterLarge.png %}" alt="DEQ Water-Related Data Graphic" loading="lazy" />
+  <img class="caption__image" src="{% link images/EnviroWaterLarge.png %}" alt="DEQ Water-Related Data Graphic"
+    loading="lazy" />
   <figcaption class="caption__text">DEQ Water-Related Data</figcaption>
 </figure>
 {% include abstract.html
-  name="DEQ Water-Related Monitoring"
-  stewards="Utah Department of Environmental Quality"
-  webapp="https://enviro.deq.utah.gov/"
-  abstract="The DEQ's Division of Water Quality is responsible for safe drinking water and monitoring water quality. Below are DEQ datasets related to protection zones for drinking water. To view all DEQ geographic data online, see the <a href='https://enviro.deq.utah.gov/'>DEQ Interactive Map Viewer</a>" %}
+name="DEQ Water-Related Monitoring"
+stewards="Utah Department of Environmental Quality"
+webapp="https://enviro.deq.utah.gov/"
+abstract="The DEQ's Division of Water Quality is responsible for safe drinking water and monitoring water quality. Below
+are DEQ datasets related to protection zones for drinking water. To view all DEQ geographic data online, see the <a
+  href='https://enviro.deq.utah.gov/'>DEQ Interactive Map Viewer</a>" %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="AssessmentUnits">Assessment Units</h3>
@@ -59,7 +62,7 @@ StreamMonitoredSites:
     </ul>
   </div>
   {% include packagedata.html name="AssessmentUnits"
-     info=page.AssessmentUnits %}
+  info=page.AssessmentUnits %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -67,7 +70,9 @@ StreamMonitoredSites:
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/enviromonitoredlakes.png %}" alt="Lakes" loading="lazy" />
-    <p>Utah Lake Monitor Sites contains locations of the 204 lakes in Utah monitored for water quality by the Division of Water Quality (Department of Environmental Quality). Utah Lake Monitoring contains 729 Monitored Lakes. Each location is a point, which is located within the lake's high water level shoreline.</p>
+    <p>Utah Lake Monitor Sites contains locations of the 204 lakes in Utah monitored for water quality by the Division
+      of Water Quality (Department of Environmental Quality). Utah Lake Monitoring contains 729 Monitored Lakes. Each
+      location is a point, which is located within the lake's high water level shoreline.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.drinking_water %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
@@ -77,15 +82,17 @@ StreamMonitoredSites:
     </ul>
   </div>
   {% include packagedata.html name="MonitoredLakes"
-     info=page.MonitoredLakes %}
+  info=page.MonitoredLakes %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-      <h3 id="GroundWaterPermits">Ground Water Permits</h3>
+    <h3 id="GroundWaterPermits">Ground Water Permits</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/enviromowaterpermits.png %}" alt="Ground Water Permits" loading="lazy" />
-    <p>Utah DWQ Groundwater Permits contains the location, permittee, permitted activity or facility for groundwater permits, and the Utah Division of Water Quality (DWQ) staff personnel handling the permit.</p>
+    <img class="inline-text-left outline" src="{% link images/enviromowaterpermits.png %}" alt="Ground Water Permits"
+      loading="lazy" />
+    <p>Utah DWQ Groundwater Permits contains the location, permittee, permitted activity or facility for groundwater
+      permits, and the Utah Division of Water Quality (DWQ) staff personnel handling the permit.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.drinking_water %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
@@ -94,14 +101,15 @@ StreamMonitoredSites:
     </ul>
   </div>
   {% include packagedata.html name="GroundWaterPermits"
-     info=page.GroundWaterPermits %}
+  info=page.GroundWaterPermits %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="StreamMonitoredSites">Stream Monitored Sites</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/enviromowaterpermits.png %}" alt="Stream Monitored Sites" loading="lazy" />
+    <img class="inline-text-left outline" src="{% link images/enviromowaterpermits.png %}" alt="Stream Monitored Sites"
+      loading="lazy" />
     <p>Utah Stream Monitor Sites contains locations for stream water quality monitoring sites in Utah</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.drinking_water %}</p>
     <h5>Related Resources</h5>
@@ -111,5 +119,5 @@ StreamMonitoredSites:
     </ul>
   </div>
   {% include packagedata.html name="StreamMonitoredSites"
-     info=page.StreamMonitoredSites %}
+  info=page.StreamMonitoredSites %}
 </div>

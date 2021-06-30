@@ -20,7 +20,7 @@ The accompanying Python Notebook for this blog post can be found [here on Google
 
 ### The Open SGID
 
-The introduction of the [Open SGID](https://gis.utah.gov/introducing-open-sgid/) has opened the door for new ways to explore Utah's GIS data. Before the Open SGID, a user would typically have gone to the AGRC web page to find the data they were looking for and download it in shapefile or file geodatabase format. This can still be done today, but now that AGRC has leveraged the [Open Data](https://opendata.gis.utah.gov/) platform, there are more options for users to access geospatial data in their preferred way. Data can now be streamed to clients via web services or can be downloaded in even more formats (e.g., GeoJSON, KML, and CSV). But the recently launched Open SGID is an especially valuable resource because it is a cloud-hosted PostgreSQL PostGIS database that anyone can connect to. As the Open SGID has nightly automated updates, tapping into the Open SGID means you'll have a living connection to the freshest SGID data available.
+The introduction of the [Open SGID](https://gis.utah.gov/introducing-open-sgid/) has opened the door for new ways to explore Utah's GIS data. Before the Open SGID, a user would typically have gone to the UGRC web page to find the data they were looking for and download it in shapefile or file geodatabase format. This can still be done today, but now that UGRC has leveraged the [Open Data](https://opendata.gis.utah.gov/) platform, there are more options for users to access geospatial data in their preferred way. Data can now be streamed to clients via web services or can be downloaded in even more formats (e.g., GeoJSON, KML, and CSV). But the recently launched Open SGID is an especially valuable resource because it is a cloud-hosted PostgreSQL PostGIS database that anyone can connect to. As the Open SGID has nightly automated updates, tapping into the Open SGID means you'll have a living connection to the freshest SGID data available.
 
 The Open SGID also creates an opportunity for users to pull in data and perform analysis using open source software and libraries-like Python. With this route, you don't need to worry about paying for licensed software or even installing GIS desktop software at all. And if you use a cloud-hosted Jupyter notebook—like Google Colab—you don't even have to install Python on your computer (or tablet or chromebook)!
 
@@ -175,5 +175,5 @@ plt.show()
 
 That's it! This brief tutorial has shown a few different ways to gather and analyze data from the Open SGID with the psycopg2 and GeoPandas libraries. Hopefully it was helpful and will spark your interest in both the Open SGID and using open source Python tools.
 
-*[AGRC]: Utah Automated Geographic Reference Center
+*[UGRC]: Utah Geospatial Resource Center
 *[SGID]: State Geographic Information Database

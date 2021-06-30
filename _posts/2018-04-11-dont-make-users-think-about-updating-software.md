@@ -33,30 +33,30 @@ Modern browsers and app stores remove the hurdles to keeping your and their soft
 
 When operating outside of a browser or an app store, the burden is put on the developer to make sure that the code running on your users' machines is kept current. I have lived through and experienced the harm and hassle created by developing and distributing ArcGIS desktop add-ins without evergreen capabilities. There is no app store for ArcGIS add-ins and there probably never will be. If you are developing extensions for ArcGIS, consider how you will provide updates to your users while taking into account their experience.
 
-### AGRC Extension Building History
+### UGRC Extension Building History
 
 <div class="flex flex--around flex--wrap">
   <div style="width:50%;padding:1em" markdown="1">
-#### AGRC Extension Building v1.0.0
+#### UGRC Extension Building v1.0.0
 
-Historically, AGRC has developed extensions for the ArcGIS platform and distributed them via email upon request. If a bug was found, updates were made, and another email was sent. This _can_ work for a single user. But if you have more than one user or if a user shares the software with a friend, you now have **two** or more different versions of your software out in the wild. This brings up some questions: do you send an email to everyone with the new update? Do you have the email address of each person who is using the software?
+Historically, UGRC has developed extensions for the ArcGIS platform and distributed them via email upon request. If a bug was found, updates were made, and another email was sent. This _can_ work for a single user. But if you have more than one user or if a user shares the software with a friend, you now have **two** or more different versions of your software out in the wild. This brings up some questions: do you send an email to everyone with the new update? Do you have the email address of each person who is using the software?
   </div>
   <div style="width:50%;padding:1em" markdown="1">
-#### AGRC Extension Building v1.1.0
+#### UGRC Extension Building v1.1.0
 
 We ran into the problem of people using outdated software with deprecated urls and services. We then centralized all of our code on GitHub and this improved our issues slightly. Users were now able to download newer versions without sending binaries over email. But if the tool did not stop working, users wouldn't be forced to look for a new version. Placing the responsibility on users to check for updates is _bad_ UX. Subsequently, old code was still being run in the wild.
   </div>
   <div style="width:50%;padding:1em" markdown="1">
-#### AGRC Extension Building v1.2.0
+#### UGRC Extension Building v1.2.0
 
 To combat the problem of people not checking GitHub for updates, we updated our extensions to ping GitHub and notify users to go and download the new version. This improved the user experience but the user interaction was still **unacceptable**.
   </div>
 </div>
 
 # tl;dr
-## AGRC Extension Building v2.0.0
+## UGRC Extension Building v2.0.0
 
-AGRC has created [Pro Evergreen](https://github.com/steveoh/pro-evergreen), an autoupdate utility for ArcGIS Pro add-ins. Every add-in that comes out of AGRC will use this package to keep the add-ins evergreen. Pro Evergreen has the functionality to compare the installed version of an add-in with the latest releases on GitHub. More importantly, the functionality to update an add-in is quite simple for the developer.
+UGRC has created [Pro Evergreen](https://github.com/steveoh/pro-evergreen), an autoupdate utility for ArcGIS Pro add-ins. Every add-in that comes out of UGRC will use this package to keep the add-ins evergreen. Pro Evergreen has the functionality to compare the installed version of an add-in with the latest releases on GitHub. More importantly, the functionality to update an add-in is quite simple for the developer.
 
 > evergreen.Update(newVersion);
 
