@@ -16,6 +16,6 @@ categories:
 <p>Here's the presentation:</p>
 <div class="prezi-player"><object id="prezi_docefknvo3hq" width="500" height="400" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="flashvars" value="prezi_id=docefknvo3hq&amp;lock_to_path=1&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0" /><param name="src" value="http://prezi.com/bin/preziloader.swf" /><embed id="prezi_docefknvo3hq" width="500" height="400" type="application/x-shockwave-flash" src="http://prezi.com/bin/preziloader.swf" allowfullscreen="true" allowscriptaccess="always" flashvars="prezi_id=docefknvo3hq&amp;lock_to_path=1&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0" /></object></p>
 <div class="prezi-player-links">
-<p><a title="                                                          No description                                                      " href="http://prezi.com/docefknvo3hq/UGRC-update-nov-16-2011/">UGRC Update - Nov. 16, 2011</a></p>
+<p><a title="                                                          No description                                                      " href="http://prezi.com/docefknvo3hq/agrc-update-nov-16-2011/">UGRC Update - Nov. 16, 2011</a></p>
 </div>
 </div>
