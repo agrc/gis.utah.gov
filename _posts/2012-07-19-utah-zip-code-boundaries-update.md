@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Data Queen
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags: []
 date: 2012-07-19 17:49:57 -0600
 title: Utah Zip Code Boundaries Update

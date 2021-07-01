@@ -1,8 +1,8 @@
 ---
 title: Open SGID Policy and Terms of Use
 author:
-  display_name: UGRC Office
-  email: ugrc@utah.gov
+  display_name: AGRC Office
+  email: agrc@utah.gov
 tags:
   - policy
   - sgid
@@ -37,7 +37,7 @@ The following guidelines apply when using the Open SGID database.
 - Create processes that make excessive database calls.
 - Keep a connection open for multiple days.
 
-UGRC will offer support for the Open SGID from 6:00 a.m. to 7:00 p.m. Monday through Friday. Please contact UGRC beforehand if you need to plan for assistance outside of this time frame.
+AGRC will offer support for the Open SGID from 6:00 a.m. to 7:00 p.m. Monday through Friday. Please contact AGRC beforehand if you need to plan for assistance outside of this time frame.
 
 Visit the [Open SGID GitHub repository](https://github.com/agrc/open-sgid) for more information, including the current database version, connection information, and known issues.
 

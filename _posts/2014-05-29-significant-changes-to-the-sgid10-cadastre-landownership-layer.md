@@ -1,7 +1,7 @@
 ---
 author:
   display_name: JP
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - blm
   - data

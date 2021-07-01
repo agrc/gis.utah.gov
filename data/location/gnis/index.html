@@ -1,39 +1,35 @@
 ---
 tags:
-- gnis
-- location
-- placenames
+  - gnis
+  - location
+  - placenames
 author:
-display_name: JP
-email: ugrc@utah.gov
+  display_name: JP
+  email: agrc@utah.gov
 date: 2011-11-23 09:22:52 -0700
 categories: []
 GNIS2019:
-hub:
-name: Utah GNIS Place Names
-item_id: 153301fffc8a4128884833e2f7ee1d6e
-updates:
-- April 3, 2019
+  hub:
+    name: Utah GNIS Place Names
+    item_id: 153301fffc8a4128884833e2f7ee1d6e
+  updates:
+    - April 3, 2019
 PlaceAreas:
-hub:
-name: Utah Zoom Locations
-item_id: 183633e5f6ea4049858ac0b37f4fdd32
-updates:
-- December 2010
+  hub:
+    name: Utah Zoom Locations
+    item_id: 183633e5f6ea4049858ac0b37f4fdd32
+  updates:
+    - December 2010
 ---
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/GNISLarge.png %}" alt="UT GNIS" loading="lazy" />
   <figcaption class="caption__text">GNIS Points in Utah</figcaption>
 </figure>
 {% include abstract.html
-name="GNIS And Place Locations"
-type="GIS Data Layer"
-stewards="USGS"
-abstract="The Geographic Names Information System (GNIS) was developed by the U.S. Geological Survey in cooperation with
-the U.S. Board on Geographic Names (BGN), local governments and other interested organizations. The GNIS contains
-information about physical and cultural geographic features in the United States and associated areas, both current and
-historical, but not including roads and highways. The goal of GNIS is to meet major national needs regarding geographic
-names and their standardization and dissemination."
+   name="GNIS And Place Locations"
+   type="GIS Data Layer"
+   stewards="USGS"
+   abstract="The Geographic Names Information System (GNIS) was developed by the U.S. Geological Survey in cooperation with the U.S. Board on Geographic Names (BGN), local governments and other interested organizations. The GNIS contains information about physical and cultural geographic features in the United States and associated areas, both current and historical, but not including roads and highways. The goal of GNIS is to meet major national needs regarding geographic names and their standardization and dissemination."
 %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -41,20 +37,17 @@ names and their standardization and dissemination."
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/GNISsmall.png %}" alt="GNIS" loading="lazy" />
-    <p>Utah GNIS Place Names contains the latest release of the GNIS dataset for the state of Utah. The dataset consists
-      of point locations with corresponding feature names. All point entities are categorized by feature type.</p>
+    <p>Utah GNIS Place Names contains the latest release of the GNIS dataset for the state of Utah. The dataset consists of point locations with corresponding feature names. All point entities are categorized by feature type.</p>
     <p>There are no constraints or warranties with regard to the use of this dataset.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="https://www.usgs.gov/core-science-systems/ngp/board-on-geographic-names">U.S. Board on Geographic
-          Names</a>
-      <li><a href="https://utah.maps.arcgis.com/home/item.html?id=a409efe179bb4ea9a5942fc62c2c29d2">Utah Place Names
-          GNIS 2010</a>
+      <li><a href="https://www.usgs.gov/core-science-systems/ngp/board-on-geographic-names">U.S. Board on Geographic Names</a>
+      <li><a href="https://utah.maps.arcgis.com/home/item.html?id=a409efe179bb4ea9a5942fc62c2c29d2">Utah Place Names GNIS 2010</a>
     </ul>
   </div>
   {% include packagedata.html name="GNIS2019"
-  info=page.GNIS2019 %}
+    info=page.GNIS2019  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -62,11 +55,7 @@ names and their standardization and dissemination."
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/PlaceAreas.png %}" alt="GNIS" loading="lazy" />
-    <p>This data contains polygons of commonly used places in mapping. It was created by UGRC from multiple sources
-      including the GNIS point, municipalities, counties, political districts, zipcodes, etc.. The dataset is named
-      <code>ZoomLocations</code> since the names and geometries can be used to zoom to common areas on a map with
-      widgets like <a href="https://www.npmjs.com/package/@agrc/sherlock">Sherlock</a>.
-    </p>
+    <p>This data contains polygons of commonly used places in mapping. It was created by AGRC from multiple sources including the GNIS point, municipalities, counties, political districts, zipcodes, etc.. The dataset is named <code>ZoomLocations</code> since the names and geometries can be used to zoom to common areas on a map with widgets like <a href="https://www.npmjs.com/package/@agrc/sherlock">Sherlock</a>.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="PlaceAreas"

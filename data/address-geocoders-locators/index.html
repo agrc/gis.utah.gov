@@ -1,7 +1,7 @@
 ---
 author:
   display_name: DevTeam
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - address
   - geocoding
@@ -15,19 +15,23 @@ RoadsAddressLocatorPackage:
     - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7meXU3X0toSGVNbzA&export=download
       label: Roads Address Locator Package
   updates:
-    - Updates coincide with SGID Transportation.Roads update. Updates to the Roads are published every month, with approximately nine counties receiving detailed review during each update cycle.
+    - Updates coincide with SGID Transportation.Roads update. Updates to the Roads
+      are published every month, with approximately nine counties receiving detailed
+      review during each update cycle.
 AddressPointLocatorPackage:
   downloads:
     - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdTMzQ2xnLXd4M2s&export=download
       label: Address Points Address Locator Package
   updates:
-    - Updates coincide with SGID Location.AddressPoints updates. Updates to the Address Points are published every month.
+    - Updates coincide with SGID Location.AddressPoints updates. Updates to the Address
+      Points are published every month.
 CompositeLocatorPackage:
   downloads:
     - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mZTJxTUc5LUFSX1U&export=download
       label: Composite Address Locator Package
   updates:
-    - Updates to this composite locator coincide with the Roads and Address Points address locators.
+    - Updates to this composite locator coincide with the Roads and Address Points
+      address locators.
 GeocodingToolbox:
   downloads:
     - url: https://github.com/agrc/geocoding-toolbox/blob/master/tool/AGRC%20Geocode%20Tools.zip?raw=true
@@ -39,108 +43,34 @@ GeocodingToolbox:
     - March 2020, The ArcGIS Pro tool was promoted to master
     - January 2014, The ArcGIS Desktop tool was created
 ---
-
 <figure class="caption caption--right">
-  <img
-    class="caption__image"
-    src="{% link images/AddPointsGC2.png %}"
-    alt="Address Locator"
-    loading="lazy"
-  />
+  <img class="caption__image" src="{% link images/AddPointsGC2.png %}" alt="Address Locator" loading="lazy" />
   <figcaption class="caption__text">Concept of an Address Locator</figcaption>
 </figure>
-{% include abstract.html
-download="https://drive.google.com/a/utah.gov/uc?id=0B_Y2d5UmL8_zUUdDVzdBaTJIQ2c&export=download"
-name="Address Locators" stewards="UGRC" type="Geolocators" category="address"
-webapp="https://api.mapserv.utah.gov" abstract="Adding a geographic point for an
-address is a fundamental GIS task. To handle this task, UGRC has created many
-services and tools to cater to the wide geocoding user base. Starting from the
-ground up, UGRC helps maintain statewide address points and roads datasets.
-These two datasets are the foundation for geocoding. Building on top of the
-reference data, UGRC creates and maintains ArcGIS Locators. Locators are where
-most of the magic happens - taking the input data and finding a location from
-the reference data. These locators are available for download on this page. With
-the reference data and the locators blocks in place, UGRC can put together
-geocoding systems and tools. The UGRC WebAPI is a web service that can geocode
-over the web via http. Users can send requests via their favorite programming
-language, application, or web browser. This service has some magic to get the
-best results out of user input and is the recommended way to geocode addresses.
-UGRC also provides an ArcMap Geoprocessing tool and a Google spreadsheet
-geocoding tool that access the WebAPI. UGRC hopes to have the data and tools
-ready for your needs to geocode." %}
+{% include abstract.html download="https://drive.google.com/a/utah.gov/uc?id=0B_Y2d5UmL8_zUUdDVzdBaTJIQ2c&export=download"
+name="Address Locators"
+stewards="AGRC"
+type="Geolocators"
+category="address"
+webapp="https://api.mapserv.utah.gov"
+abstract="Adding a geographic point for an address is a fundamental GIS task. To handle this task, AGRC has created many services and tools to cater to the wide geocoding user base. Starting from the ground up, AGRC helps maintain statewide address points and roads datasets. These two datasets are the foundation for geocoding. Building on top of the reference data, AGRC creates and maintains ArcGIS Locators. Locators are where most of the magic happens - taking the input data and finding a location from the reference data. These locators are available for download on this page. With the reference data and the locators blocks in place, AGRC can put together geocoding systems and tools. The AGRC WebAPI is a web service that can geocode over the web via http. Users can send requests via their favorite programming language, application, or web browser. This service has some magic to get the best results out of user input and is the recommended way to geocode addresses. AGRC also provides an ArcMap Geoprocessing tool and a Google spreadsheet geocoding tool that access the WebAPI. AGRC hopes to have the data and tools ready for your needs to geocode." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="WebAPI">UGRC Web API</h3>
+    <h3 id="WebAPI">AGRC Web API</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      {% include fa_icon.html api=true class="svg-inline--fa fa-w-20 fa-4x
-      fa-pull-left" %} The UGRC WebAPI is a C# .NET WebAPI project. This API can
-      be accessed programmatically, over http (with standard get requests),
-      without the use of GIS-specific software - such as a web application. This
-      geocoding API uses 'front end' logic to resolve several common address
-      standardization issues above and beyond what out-of-the-box geocoders
-      handle. To get started,
-      <a href="https://developer.mapserv.utah.gov/StartupGuide"
-        >read the getting started guide</a
-      >. There are also examples of geocoding in
-      <a href="https://github.com/agrc/GeocodingSample"
-        >multiple programming languages</a
-      >.
-    </p>
+    <p>{% include fa_icon.html api=true class="svg-inline--fa fa-w-20 fa-4x fa-pull-left" %} The AGRC WebAPI is a C# .NET WebAPI project. This API can be accessed programmatically, over http (with standard get requests), without the use of GIS-specific software - such as a web application. This geocoding API uses 'front end' logic to resolve several common address standardization issues above and beyond what out-of-the-box geocoders handle. To get started, <a href="https://developer.mapserv.utah.gov/StartupGuide">read the getting started guide</a>. There are also examples of geocoding in <a href="https://github.com/agrc/GeocodingSample">multiple programming languages</a>.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li>
-        <a href="{% link developer/web-services/index.md %}"
-          >Geospatial Web Services</a
-        >
-      </li>
-      <li>
-        <a href="{% link _posts/2014-10-30-agrc-edg-presentation.md %}"
-          >Using UGRC's Geocoding and Map-based Web Services</a
-        >
-      </li>
-
-      <li>
-        <a href="https://www.youtube.com/watch?v=BHhQxxXy6bo"
-          >EDG brown bag event presentation</a
-        >
-      </li>
-      <li>
-        <a href="http://agrc.github.io/Presentations/UGIC/2014/webapi/#0"
-          >2014 UGIC WebAPI Presentation slides</a
-        >
-      </li>
-      <li>
-        <a
-          href="{% link _posts/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process.md %}"
-          >Rethinking Geocoders: Adding Local Vernacular into the Build
-          Process</a
-        >
-      </li>
-
-      <li>
-        <a
-          href="{% link _posts/2015-02-12-authoritative-utah-geocoding-results.md %}"
-          >Authoritative Utah Geocoding Results</a
-        >
-      </li>
-
-      <li>
-        <a
-          href="{% link _posts/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade.md %}"
-          >Utah Statewide Address Geocoding Web Service Upgrade</a
-        >
-      </li>
+      <li><a href="{% link developer/web-services/index.md %}">Geospatial Web Services</a>
+      <li><a href="{% link _posts/2014-10-30-agrc-edg-presentation.md %}">Using AGRC's Geocoding and Map-based Web Services</a>
+      <li><a href="https://www.youtube.com/watch?v=BHhQxxXy6bo">EDG brown bag event presentation</a>
+      <li><a href="http://agrc.github.io/Presentations/UGIC/2014/webapi/#0">2014 UGIC WebAPI Presentation slides</a>
+      <li><a href="{% link _posts/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process.md %}">Rethinking Geocoders: Adding Local Vernacular into the Build Process</a>
+      <li><a href="{% link _posts/2015-02-12-authoritative-utah-geocoding-results.md %}">Authoritative Utah Geocoding Results</a>
+      <li><a href="{% link _posts/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade.md %}">Utah Statewide Address Geocoding Web Service Upgrade</a>
     </ul>
-
-    <p>
-      {% include contact.html subject=page.title
-      contact=site.data.contacts.webapi %} or the
-      <a href="https://github.com/agrc/api.mapserv.utah.gov/issues/new"
-        >Github repository</a
-      >.
-    </p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.webapi %} or the <a href="https://github.com/agrc/api.mapserv.utah.gov/issues/new">Github repository</a>.</p>
   </div>
 </div>
 <div class="grid package">
@@ -148,51 +78,17 @@ ready for your needs to geocode." %}
     <h3 id="GeocodingToolbox">Geocoding Toolbox</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      This custom toolbox created by the UGRC allows ArcGIS users to geocode a
-      table of addresses. The geocoding tool makes use of the
-      <a href="https://api.mapserv.utah.gov">UGRC Web API</a> to perform the
-      geocoding. A complimentary
-      <a href="https://developer.mapserv.utah.gov">API key</a> will need to be
-      obtained to run the tool.
-    </p>
-    <p>
-      The tool's documentation is maintained in
-      <a href="https://github.com/agrc/geocoding-toolbox/">GitHub</a>. Please
-      refer to the readme for the most current information on downloading and
-      running the tool. ArcGIS Desktop versions of this tool can be found in the
-      <a href="https://github.com/agrc/geocoding-toolbox/tree/py-2">py-2</a>
-      branch.
-    </p>
-    <p>
-      We've put together a
-      <a href="https://vimeo.com/539838894">how-to video</a> explaining the
-      basics of using the toolbox.
-    </p>
+    <p>This custom toolbox created by the AGRC allows ArcGIS users to geocode a table of addresses. The geocoding tool makes use of the <a href="https://api.mapserv.utah.gov">AGRC Web API</a> to perform the geocoding. A complimentary <a href="https://developer.mapserv.utah.gov">API key</a> will need to be obtained to run the tool. </p>
+    <p>The tool's documentation is maintained in <a href="https://github.com/agrc/geocoding-toolbox/">GitHub</a>. Please refer to the readme for the most current information on downloading and running the tool. ArcGIS Desktop versions of this tool can be found in the <a href="https://github.com/agrc/geocoding-toolbox/tree/py-2">py-2</a> branch.</p>
+    <p>We've put together a <a href="https://vimeo.com/539838894">how-to video</a> explaining the basics of using the toolbox.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li>
-        <a href="https://github.com/agrc/geocoding-toolbox/"
-          >Geocoding toolbox GitHub repository</a
-        >
-      </li>
-      <li>
-        <a
-          href="{% link _posts/2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2.md %}"
-          >Utah Geocoding Toolbox for ArcGIS Desktop release post</a
-        >
-      </li>
+      <li><a href="https://github.com/agrc/geocoding-toolbox/">Geocoding toolbox GitHub repository</a>
+      <li><a href='{% link _posts/2014-01-17-new-utah-geocoding-toolbox-for-arcgis-desktop-2.md %}'>Utah Geocoding Toolbox for ArcGIS Desktop release post</a>
     </ul>
-
-    <p>
-      {% include contact.html subject=page.title
-      contact=site.data.contacts.geocoding_tools hide-punctuation=true %} or the
-      <a href="https://github.com/agrc/geocoding-toolbox/issues/new"
-        >Github repository</a
-      >.
-    </p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geocoding_tools hide-punctuation=true %} or the <a href="https://github.com/agrc/geocoding-toolbox/issues/new">Github repository</a>.</p>
     {% include packagedata.html name="GeocodingToolbox"
-    info=page.GeocodingToolbox %}
+  info=page.GeocodingToolbox %}
   </div>
 </div>
 <div class="grid package">
@@ -200,21 +96,8 @@ ready for your needs to geocode." %}
     <h3 id="GoogleSheets">Google Sheets Addon</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>
-      UGRC has developed a
-      <a
-        href="https://chrome.google.com/webstore/detail/utah-address-locator/nepmlneiknaeojhadbeodpaefenhjkek?utm_source=permalink"
-      >
-        Google Sheets Add-on (via Chrome browser)</a
-      >
-      for Utah G Suite for Government users that provides geocoding directly
-      within a Google spreadsheet. This can be used by anyone with a utah.gov
-      email address.
-    </p>
-    <p>
-      {% include contact.html subject=page.title
-      contact=site.data.contacts.geocoding_tools %}
-    </p>
+    <p>AGRC has developed a <a href="https://chrome.google.com/webstore/detail/utah-address-locator/nepmlneiknaeojhadbeodpaefenhjkek?utm_source=permalink"> Google Sheets Add-on (via Chrome browser)</a> for Utah G Suite for Government users that provides geocoding directly within a Google spreadsheet. This can be used by anyone with a utah.gov email address.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.geocoding_tools %}</p>
   </div>
 </div>
 <div class="grid package">
@@ -222,70 +105,17 @@ ready for your needs to geocode." %}
     <h3 id="RoadsAddressLocatorPackage">Roads Address Locator</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img
-      style="float: left; font-size: 4em; margin-right: 0.3em"
-      src="{% link images/address-geocode.png %}"
-      alt="Address Locator"
-      loading="lazy"
-    />
-    <p>
-      AGRC_RoadsLocator is an ArcGIS 10 address locator that references the
-      statewide Transportation.Roads feature class and uses the right and left
-      zip code fields and/or the right and left address systems fields for zone.
-      This address locator is built using an alternate names table, as
-      recommended in NextGen 911 model. For example, Redwood Road is aliased as
-      both Highway 68 and 1700 West. Read more about the
-      <a
-        href="{% link _posts/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process.md %}"
-        >underlying data for this locator and how it was created</a
-      >.
-    </p>
-    <div class="pop">
-      Locator Packages are not supported in ArcGIS 10.0 or earlier
-    </div>
+    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" loading="lazy" />
+    <p>AGRC_RoadsLocator is an ArcGIS 10 address locator that references the statewide Transportation.Roads feature class and uses the right and left zip code fields and/or the right and left address systems fields for zone. This address locator is built using an alternate names table, as recommended in NextGen 911 model. For example, Redwood Road is aliased as both Highway 68 and 1700 West. Read more about the <a href="{% link _posts/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process.md %}">underlying data for this locator and how it was created</a>.</p>
+    <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>
-    <p>
-      The <code>.gcpk</code> packages are portable files that do not require the
-      reference data: what is required of the data is included in the packaged.
-      Once downloaded, <code>Unpack</code> the package and it is ready for use.
-      You can <code>Unpack</code> the Locator Package in ArcCatalog by
-      right-clicking on the package. Unpacking will always place the unpacked
-      locator in your user profile <code>..\My Documents\ArcGIS\Packages</code>.
-      Alternately, you can use ESRI's <code>Extract Package</code> tool and
-      specify an output location. You can also drag the <code>.gcpk</code> file
-      into ArcMap and it will unpack automatically.
-    </p>
+    <p>The <code>.gcpk</code> packages are portable files that do not require the reference data: what is required of the data is included in the packaged. Once downloaded, <code>Unpack</code> the package and it is ready for use. You can <code>Unpack</code> the Locator Package in ArcCatalog by right-clicking on the package. Unpacking will always place the unpacked locator in your user profile <code>..\My Documents\ArcGIS\Packages</code>. Alternately, you can use ESRI's <code>Extract Package</code> tool and specify an output location. You can also drag the <code>.gcpk</code> file into ArcMap and it will unpack automatically.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li>
-        View
-        <a href="{% link data/transportation/roads-system/index.html %}"
-          >recent updates</a
-        >
-        to the SGID Statewide Roads dataset.
-      </li>
-
-      <li>
-        <a
-          href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download"
-          >Download the File Geodatabase</a
-        >
-        (to build your own locator) that was used to build this address locator.
-        The dataset contains the roads' alternate names table as well as the
-        <a
-          href="{% link _posts/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process.md %}"
-          >SGID-derived</a
-        >
-        roads feature class. This table can be joined back to the
-        <code>GeocodeRoads</code> feature class via the
-        <code>GLOBALID_SGID</code> field.
-      </li>
+      <li>View <a href="{% link data/transportation/roads-system/index.html %}">recent updates</a> to the SGID Statewide Roads dataset.
+      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download the File Geodatabase</a> (to build your own locator) that was used to build this address locator. The dataset contains the roads' alternate names table as well as the <a href="{% link _posts/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process.md %}">SGID-derived</a> roads feature class. This table can be joined back to the <code>GeocodeRoads</code> feature class via the <code>GLOBALID_SGID</code> field.
     </ul>
-
-    <p>
-      {% include contact.html subject=page.title
-      contact=site.data.contacts.locators %}
-    </p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.locators %}</p>
   </div>
   {% include packagedata.html name="RoadsAddressLocatorPackage"
   info=page.RoadsAddressLocatorPackage %}
@@ -295,91 +125,31 @@ ready for your needs to geocode." %}
     <h3 id="AddressPointLocatorPackage">Address Points Address Locator</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img
-      style="float: left; font-size: 4em; margin-right: 0.3em"
-      src="{% link images/address-geocode.png %}"
-      alt="Address Locator"
-      loading="lazy"
-    />
-    <p>
-      AGRC_AddressPointLocator is an ArcGIS 10 address locator that references
-      the statewide Location.AddressPoints feature class and uses zip code
-      and/or address system for zone. Geocoding match rates will improve as the
-      Location.AddressPoints feature class continues to be developed.
-    </p>
-    <div class="pop">
-      Locator Packages are not supported in ArcGIS 10.0 or earlier
-    </div>
+    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" loading="lazy" />
+    <p>AGRC_AddressPointLocator is an ArcGIS 10 address locator that references the statewide Location.AddressPoints feature class and uses zip code and/or address system for zone. Geocoding match rates will improve as the Location.AddressPoints feature class continues to be developed.</p>
+    <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>
-    <p>
-      The <code>.gcpk</code> packages are portable files that do not require the
-      reference data: what is required of the data is included in the packaged.
-      Once downloaded, <code>Unpack</code> the package and it is ready for use.
-      You can <code>Unpack</code> the Locator Package in ArcCatalog by
-      right-clicking on the package. Unpacking will always place the unpacked
-      locator in your user profile <code>..\My Documents\ArcGIS\Packages</code>.
-      Alternately, you can use ESRI's <code>Extract Package</code> tool and
-      specify an output location. You can also drag the <code>.gcpk</code> file
-      into ArcMap and it will unpack automatically.
-    </p>
+    <p>The <code>.gcpk</code> packages are portable files that do not require the reference data: what is required of the data is included in the packaged. Once downloaded, <code>Unpack</code> the package and it is ready for use. You can <code>Unpack</code> the Locator Package in ArcCatalog by right-clicking on the package. Unpacking will always place the unpacked locator in your user profile <code>..\My Documents\ArcGIS\Packages</code>. Alternately, you can use ESRI's <code>Extract Package</code> tool and specify an output location. You can also drag the <code>.gcpk</code> file into ArcMap and it will unpack automatically.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li>
-        <a
-          href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download"
-          >Download the File Geodatabase</a
-        >
-        (to build your own locator), which contains the address points'
-        alternate names table used to build this address locator. This table can
-        be joined back to the <code>SgidAddrPnts</code> feature class via the
-        <code>UTAddPtID</code> field.
-      </li>
+      <li><a href="https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVmJJRWdTUjlqN1U&export=download">Download the File Geodatabase</a> (to build your own locator), which contains the address points' alternate names table used to build this address locator. This table can be joined back to the <code>SgidAddrPnts</code> feature class via the <code>UTAddPtID</code> field.
     </ul>
-
-    <p>
-      {% include contact.html subject=page.title
-      contact=site.data.contacts.locators %}
-    </p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.locators %}</p>
   </div>
-  {% include packagedata.html name="AddressPointLocatorPackage"
-  info=page.AddressPointLocatorPackage %}
+    {% include packagedata.html name="AddressPointLocatorPackage"
+    info=page.AddressPointLocatorPackage %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="CompositeLocatorPackage">Composite Address Locator</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img
-      style="float: left; font-size: 4em; margin-right: 0.3em"
-      src="{% link images/address-geocode.png %}"
-      alt="Address Locator"
-      loading="lazy"
-    />
-    <p>
-      AGRC_CompositeLocator is an ArcGIS 10 composite address locator built from
-      the AGRC_AddressPointLocator and the AGRC_RoadsLocator locators and uses
-      zip code and/or address system for zone. These locators reference the
-      Transportation.Roads and Location.AddressPoints feature classes.
-    </p>
-    <div class="pop">
-      Locator Packages are not supported in ArcGIS 10.0 or earlier
-    </div>
+    <img style="float: left;font-size: 4em;margin-right: .3em" src="{% link images/address-geocode.png %}" alt="Address Locator" loading="lazy" />
+    <p>AGRC_CompositeLocator is an ArcGIS 10 composite address locator built from the AGRC_AddressPointLocator and the AGRC_RoadsLocator locators and uses zip code and/or address system for zone. These locators reference the Transportation.Roads and Location.AddressPoints feature classes.</p>
+    <div class="pop">Locator Packages are not supported in ArcGIS 10.0 or earlier</div>
     <h5>Usage</h5>
-    <p>
-      The <code>.gcpk</code> packages are portable files that do not require the
-      reference data: what is required of the data is included in the packaged.
-      Once downloaded, <code>Unpack</code> the package and it is ready for use.
-      You can <code>Unpack</code> the Locator Package in ArcCatalog by
-      right-clicking on the package. Unpacking will always place the unpacked
-      locator in your user profile <code>..\My Documents\ArcGIS\Packages</code>.
-      Alternately, you can use ESRI's <code>Extract Package</code> tool and
-      specify an output location. You can also drag the <code>.gcpk</code> file
-      into ArcMap and it will unpack automatically.
-    </p>
-    <p>
-      {% include contact.html subject=page.title
-      contact=site.data.contacts.locators %}
-    </p>
+    <p>The <code>.gcpk</code> packages are portable files that do not require the reference data: what is required of the data is included in the packaged. Once downloaded, <code>Unpack</code> the package and it is ready for use. You can <code>Unpack</code> the Locator Package in ArcCatalog by right-clicking on the package. Unpacking will always place the unpacked locator in your user profile <code>..\My Documents\ArcGIS\Packages</code>. Alternately, you can use ESRI's <code>Extract Package</code> tool and specify an output location. You can also drag the <code>.gcpk</code> file into ArcMap and it will unpack automatically.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.locators %}</p>
   </div>
   {% include packagedata.html name="CompositeLocatorPackage"
   info=page.CompositeLocatorPackage %}

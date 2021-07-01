@@ -1,14 +1,14 @@
 ---
 tags:
-- contour
-- dem
-- elevation
-- hillshade
-- lidar
-- topography
+  - contour
+  - dem
+  - elevation
+  - hillshade
+  - lidar
+  - topography
 author:
-display_name: Rick Kelson
-email: rkelson@utah.gov
+  display_name: Rick Kelson
+  email: rkelson@utah.gov
 date: 2014-04-01 17:06:47 -0600
 title: Exploring LiDAR
 categories: []
@@ -16,40 +16,21 @@ categories: []
 <a title="First-Return DSM" href="{% link images/lidar_lg.jpg %}">
   <img class="inline-text-left outline" src="{% link images/thumbs_lidar.jpg %}" alt="lidar" loading="lazy" />
 </a>
-<p>Light Detection and Ranging elevation data is an optical remote sensing technology that can measure the distance to,
-  or other properties of a target by illuminating the target with light pulses from a laser and measuring the time and
-  intensity of the pulse return to the sensor. Laser pulses from the sensor can exceed 150,000 pulses per second.
-  Aircraft position (X,Y,Z) is measured twice a second while aircraft attitude (pitch, roll, yaw) is measured 200 times
-  per second. Currently this is the most accurate type of elevation data available. There are two main types of LiDAR
-  collections, Terrestrial and Airborne. Airborne LiDAR is most commonly used and available from UGRC.</p>
+<p>Light Detection and Ranging elevation data is an optical remote sensing technology that can measure the distance to, or other properties of a target by illuminating the target with light pulses from a laser and measuring the time and intensity of the pulse return to the sensor. Laser pulses from the sensor can exceed 150,000 pulses per second. Aircraft position (X,Y,Z) is measured twice a second while aircraft attitude (pitch, roll, yaw) is measured 200 times per second. Currently this is the most accurate type of elevation data available. There are two main types of LiDAR collections, Terrestrial and Airborne. Airborne LiDAR is most commonly used and available from AGRC.</p>
 <div class="flex flex--center flex--col">
-  <iframe class="flex flex--center" src="//player.vimeo.com/video/89565010" width="500" height="281" frameborder="0"
-    allowfullscreen></iframe>
-  <p><a href="https://vimeo.com/89565010">UGRC Utah LiDAR applications video</a> from <a
-      href="https://vimeo.com/utahUGRC">UGRC</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  <iframe class="flex flex--center" src="//player.vimeo.com/video/89565010" width="500" height="281" frameborder="0" allowfullscreen></iframe>
+  <p><a href="https://vimeo.com/89565010">AGRC Utah LiDAR applications video</a> from <a href="https://vimeo.com/utahagrc">AGRC</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 </div>
 <a title="Bare-Earth DEM" href="{% link images/Hillshd.jpg %}">
   <img class="inline-text-left outline" src="{% link images/Hillshd_sm.jpg %}" alt="lidar" loading="lazy" />
 </a>
-<p>Bare-Earth Digital Elevation Models (DTM) and First-Return Digital Surface Models (DSM) are commonly used raster
-  products derived from LiDAR point cloud collections. Bare-Earth DEMs have had features above the ground filtered out
-  and are what is typically used for floodplain and hydro-logic modeling. First-return (highest-hit) raster products
-  model a surface but retain the features above the ground such as buildings, utilities, other manmade structures and
-  vegetation.</p>
+<p>Bare-Earth Digital Elevation Models (DTM) and First-Return Digital Surface Models (DSM) are commonly used raster products derived from LiDAR point cloud collections. Bare-Earth DEMs have had features above the ground filtered out and are what is typically used for floodplain and hydro-logic modeling. First-return (highest-hit) raster products model a surface but retain the features above the ground such as buildings, utilities, other manmade structures and vegetation.</p>
 <p class="flex flex--center"><a title="Point Cloud Profile" href="{% link images/profile.jpg %}">
-    <img src="{% link images/profile_thumb.png %}" alt="lidar" loading="lazy" />
-  </a></p>
+  <img src="{% link images/profile_thumb.png %}" alt="lidar" loading="lazy" />
+</a></p>
 <p><a title="Fully Classified Point Cloud" href="{% link images/ptCloud_large.jpg %}">
-    <img class="inline-text-left outline" src="{% link images/pt_cloud_full_sm.jpg %}" alt="lidar" loading="lazy" />
-  </a>LiDAR point clouds can be classified so that each point in the cloud is designated a land cover type (ex. ground,
-  water, road, building, vegetation, etc.). The vendor for the <a
-    href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/2013LidarPoster.pdf"
-    title="project">2013-2014 Wasatch Front LiDAR</a> project, Watershed Sciences Inc. (WSI) now a <a
-    href="http://quantumspatial.com/" title="WSI">Quantum Spatial</a> company, has provided the following samples that
-  show some of what can be done with the collected LiDAR data. Please note that while the sample data below contains LAS
-  point cloud data that are fully classified, the point clouds delivered for the project only has the following
-  classifications (including intensity, return number, and RGB values), yet further classification of the point cloud is
-  possible:</p>
+  <img class="inline-text-left outline" src="{% link images/pt_cloud_full_sm.jpg %}" alt="lidar" loading="lazy" />
+</a>LiDAR point clouds can be classified so that each point in the cloud is designated a land cover type (ex. ground, water, road, building, vegetation, etc.). The vendor for the <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/2013LidarPoster.pdf" title="project">2013-2014 Wasatch Front LiDAR</a> project, Watershed Sciences Inc. (WSI) now a <a href="http://quantumspatial.com/" title="WSI">Quantum Spatial</a> company, has provided the following samples that show some of what can be done with the collected LiDAR data. Please note that while the sample data below contains LAS point cloud data that are fully classified, the point clouds delivered for the project only has the following classifications (including intensity, return number, and RGB values), yet further classification of the point cloud is possible:</p>
 <table style="width:400px">
   <thead>
     <tr>
@@ -86,23 +67,15 @@ categories: []
 </table>
 <h4>Lidar Samples</h4>
 <ul>
-  <li><a
-      href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/UGRC%20Utah%20LiDAR%20applications%20writeup.pdf">LiDAR
-      Applications</a></li>
+  <li><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/AGRC%20Utah%20LiDAR%20applications%20writeup.pdf">LiDAR Applications</a></li>
   <li><a href="https://vimeo.com/89565010">LiDAR Applications Video</a></li>
-  <li>Download LiDAR <i>derivative samples</i> package <a
-      href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/DerivativeSamples/LiDAR_Samples.zip">(ArcMap
-      users)</a><a
-      href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/DerivativeSamples/LiDAR_Samples_CAD.zip">(CAD
-      users)</a></li>
+  <li>Download LiDAR <i>derivative samples</i> package <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/DerivativeSamples/LiDAR_Samples.zip">(ArcMap users)</a><a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/DerivativeSamples/LiDAR_Samples_CAD.zip">(CAD users)</a></li>
 </ul>
 <h4>Lidar Resources</h4>
 <ul>
-  <li><a href="{% link data/elevation-and-terrain/index.html %}">UGRC Elevation and Terrain Data</a></li>
-  <li><a href="{% link _posts/2017-11-27-dumbing-down-terrain-with-contour-polygons.md %}">Dumbing Down Terrain with
-      Contour Polygons</a></li>
-  <li><a href="https://docs.google.com/document/d/188M11SoXovnHeg3J8RwEb89FsWBJQJEwFB5SWyXwask/edit?usp=sharing">Working
-      with Mosaic and Reference Datasets</a></li>
+  <li><a href="{% link data/elevation-and-terrain/index.html %}">AGRC Elevation and Terrain Data</a></li>
+  <li><a href="{% link _posts/2017-11-27-dumbing-down-terrain-with-contour-polygons.md %}">Dumbing Down Terrain with Contour Polygons</a></li>
+  <li><a href="https://docs.google.com/document/d/188M11SoXovnHeg3J8RwEb89FsWBJQJEwFB5SWyXwask/edit?usp=sharing">Working with Mosaic and Reference Datasets</a></li>
   <li><a href="https://apps.nationalmap.gov/downloader">The National Map</a></li>
   <li><a href="https://opentopography.org/index.php">Open Topography</a></li>
   <li><a href="https://resources.arcgis.com/en/communities/3d/">ArcGIS 3D Community</a></li>
@@ -122,12 +95,8 @@ categories: []
   <li>landslide potential</li>
   <li>solar potential</li>
   <li>3D modeling</li>
-  <p><em>* - products delivered for the 2013-2014 Wasatch Front project</em>
+<p><em>* - products delivered for the 2013-2014 Wasatch Front project</em>
 </ul>
-<p>If you are a <strong>CAD / Microstation user</strong> you may need to convert the <code>.img</code> files into a
-  different file format such as <code>.tif</code> or <code>.las</code>. A web search for <code>AutoCad and .img</code>
-  will produce helpful results or search user forums. You will find discussions about converting the <code>.img</code>
-  format to a format you can use. There are many tools that can convert the files - FW Tools and ER Viewer (free),
-  Global Mapper (trial version), <a href="https://mygeodata.cloud/">MyGeodata Cloud</a>, and ArcMap to name a few.
+<p>If you are a <strong>CAD / Microstation user</strong> you may need to convert the <code>.img</code> files into a different file format such as <code>.tif</code> or <code>.las</code>. A web search for <code>AutoCad and .img</code> will produce helpful results or search user forums. You will find discussions about converting the <code>.img</code> format to a format you can use. There are many tools that can convert the files - FW Tools and ER Viewer (free), Global Mapper (trial version), <a href="https://mygeodata.cloud/">MyGeodata Cloud</a>, and ArcMap to name a few.
 </p>
 <p>{% include contact.html subject=page.title contact=site.data.contacts.elevation %}</p>

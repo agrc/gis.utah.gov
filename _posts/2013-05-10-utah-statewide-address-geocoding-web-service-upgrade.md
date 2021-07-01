@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - address
   - api
@@ -13,7 +13,7 @@ categories:
   - Featured
   - SGID Blog
 ---
-Last week, UGRC finished a substantial upgrade to the Utah statewide address locator (geocoding) web service. This service utilizes point and road-based address map reference data compiled into the State Geographic Information Database (SGID) from local sources, and published on a bi-monthly basis.
+Last week, AGRC finished a substantial upgrade to the Utah statewide address locator (geocoding) web service. This service utilizes point and road-based address map reference data compiled into the State Geographic Information Database (SGID) from local sources, and published on a bi-monthly basis.
 
 [![Geocoding image]({% link images/Geocode-300x223.png %})](![Large]({% link images/Geocode.png %}))
 {: .inline-text-left .outline}
@@ -28,7 +28,7 @@ The URI below demonstrates just one of the many ways RESTful requests can be use
 
 Documentation for the service is integrated into a test/demo interface at [https://api.mapserv.utah.gov](https://api.mapserv.utah.gov). Registration information and API key access for desktop and web application users, and, metric/tracking for registered API keys can be accessed from the same site.
 
-The upgrades were funded by a partnership between the Department of Public Safety's Division of Highway Safety and the UDOT Traffic and Safety Division. UGRC will assist these agencies in using the new API to enhance mapping of crashes, citations, and other safety-related events.
+The upgrades were funded by a partnership between the Department of Public Safety's Division of Highway Safety and the UDOT Traffic and Safety Division. AGRC will assist these agencies in using the new API to enhance mapping of crashes, citations, and other safety-related events.
 
 The updates are perhaps most easily described by the short series of Need/Solution statements below.
 

@@ -1,7 +1,7 @@
 # Site settings
 title: Utah Mapping Portal
-email: ugrc@utah.gov
-description: Utah Mapping Portal | The Utah Geospatial Resource Center
+email: agrc@utah.gov
+description: Utah Mapping Portal | The Utah Automated Geographic Reference Center
 baseurl: ""
 url: "https://gis.utah.gov"
 highlighter: rouge
@@ -10,53 +10,55 @@ github_username: agrc
 facebook_username: UtahAGRC
 vimeo_username: utahagrc
 permalink: /:title/
-production_url: "https://gis.utah.gov"
+production_url: 'https://gis.utah.gov'
 livereload: true
 reload_port: 35729
 analytics:
-  google:
-    tracking_id: "UA-11849964-41"
+    google:
+        tracking_id: 'UA-11849964-41'
 sass:
-  style: compressed
+    style: compressed
 github:
-  repository_url: https://github.com/agrc/gis.utah.gov
-  repository_name: gis.utah.gov
+    repository_url: https://github.com/agrc/gis.utah.gov
+    repository_name: gis.utah.gov
 markdown: kramdown
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  hard_wrap: false
+    input: GFM
+    syntax_highlighter: rouge
+    hard_wrap: false
 timezone: America/Denver
 breadcrumbs:
-  root:
-    hide: false # show breadcrumbs on root/home page
-    image: false # Show image or title text
+    root:
+        hide: false  # show breadcrumbs on root/home page
+        image: false # Show image or title text
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       published: "true"
-  - scope:
+  -
+    scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
       published: "true"
 exclude:
-  - "node_modules"
-  - "scripts"
-  - "Gemfile.lock"
-  - "Gemfile"
-  - "GruntFile.js"
-  - "bower.json"
-  - "package.json"
-  - "*.bak"
-  - "README.md"
-  - "docker-compose.yml"
-  - "LICENSE"
-  - "CODE_OF_CONDUCT.md"
+    - "node_modules"
+    - "scripts"
+    - "Gemfile.lock"
+    - "Gemfile"
+    - "GruntFile.js"
+    - "bower.json"
+    - "package.json"
+    - "*.bak"
+    - "README.md"
+    - "docker-compose.yml"
+    - "LICENSE"
+    - "CODE_OF_CONDUCT.md"
 include:
-  - "_redirects"
-  - "_headers"
+    - "_redirects"
+    - "_headers"

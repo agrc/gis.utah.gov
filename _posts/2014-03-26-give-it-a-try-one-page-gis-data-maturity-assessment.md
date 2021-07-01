@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - assessment
   - deq

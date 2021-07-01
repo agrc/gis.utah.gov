@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - gomb
   - parcels
@@ -22,9 +22,9 @@ In a letter to Utah’s County Assessors, Evan Curtis, the State Planning Coordi
 
 Several **next steps** from the recommendations document are now in motion.
 
-- [A submission guidelines document, including a recommended data schema for submissions](https://drive.google.com/file/d/1E40YeeN6zCSaTz9N3ohWMfV-3fEBofAW), was created by UGRC and reviewed by the Assessors and the work group representatives
+- [A submission guidelines document, including a recommended data schema for submissions](https://drive.google.com/file/d/1E40YeeN6zCSaTz9N3ohWMfV-3fEBofAW), was created by AGRC and reviewed by the Assessors and the work group representatives
 - [Download LIR parcel data schema](https://drive.google.com/a/utah.gov/uc?id=1E07b5rwBmAl8nvyn0ETUR-wVPYSdo9oB&export=download)
 - An initial data submission ‘ask’ was made to Counties in late June
-- As part of the first round of submission, UGRC is volunteering technical support to assist Counties in loading parcel boundaries and tax assessment data into the recommended enhanced schema
+- As part of the first round of submission, AGRC is volunteering technical support to assist Counties in loading parcel boundaries and tax assessment data into the recommended enhanced schema
 
 For this first submission year, the enhanced tax parcel layer will likely take some time to assemble across the state, but many counties have indicated they plan to submit later this month. The tax parcel layer will be updated on gis.utah.gov and on the SGID SDE server as submissions are received.

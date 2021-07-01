@@ -1,10 +1,10 @@
 ---
 tags:
-- cadastre
-- gps
+  - cadastre
+  - gps
 author:
-display_name: UGRC Staff
-email: ugrc@utah.gov
+  display_name: AGRC Staff
+  email: agrc@utah.gov
 date: 2011-06-30 23:13:39 -0600
 title: The Nevada GPS Network
 categories: []
@@ -13,22 +13,12 @@ categories: []
   <figcaption class="caption__text">Nevada GPS Stations</figcaption>
 </figure>
 <h2 class="text-left">What is a Reference Network</h2>
-<p>A <a href="http://arcg.is/1Wa8Ov">GPS Network</a> is a high precision Global Navigation Satellite System (GNSS)
-  providing real time corrections and data for post processing. A GNSS network consists of permanently located GPS
-  receivers, installed across the state, that generate real time high accuracy GPS positioning. Basically, all of the
-  permanently installed GPS receivers send their data to a system that analyzes the input and adjusts and corrects the
-  data to provide the most accurate locations.</p>
+<p>A <a href="http://arcg.is/1Wa8Ov">GPS Network</a> is a high precision Global Navigation Satellite System (GNSS) providing real time corrections and data for post processing. A GNSS network consists of permanently located GPS receivers, installed across the state, that generate real time high accuracy GPS positioning. Basically, all of the permanently installed GPS receivers send their data to a system that analyzes the input and adjusts and corrects the data to provide the most accurate locations.</p>
 
-<h2 class="text-left">{% include fa_icon.html information=true class="svg-inline--fa fa-w-16 fa-fw" %} About this
-  Network</h2>
-<p>The Nevada GPS Network (formerly Washoe County GPS Network) is now being managed by the State of Utah. The Nevada GPS
-  Network provides users with real time corrections and data for post processing.
-  The Coordinate Reference Frame for this network is <strong>NAD83/94 (HARN)</strong>. The Latitude, Longitude and
-  Ellipsoidal Height of each reference station was calculated by processing 24 hour files using the National Geodetic
-  Survey (NGS) Online Positioning User Service (OPUS) Projects application.</p>
-<p>With an activated subscription, set your GPS unit's VRS connection address to <code>168.179.231.11</code> and port
-  <code>2102</code>. Enter your new device-specific username and password.
-</p>
+<h2 class="text-left">{% include fa_icon.html information=true class="svg-inline--fa fa-w-16 fa-fw" %} About this Network</h2>
+<p>The Nevada GPS Network (formerly Washoe County GPS Network) is now being managed by the State of Utah. The Nevada GPS Network provides users with real time corrections and data for post processing.
+The Coordinate Reference Frame for this network is <strong>NAD83/94 (HARN)</strong>. The Latitude, Longitude and Ellipsoidal Height of each reference station was calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects application.</p>
+<p>With an activated subscription, set your GPS unit's VRS connection address to <code>168.179.231.11</code> and port <code>2102</code>. Enter your new device-specific username and password.</p>
 <h5>Connections from Source Table</h5>
 <p>For Trimble units we have three different connections.</p>
 <ul>
@@ -44,69 +34,47 @@ categories: []
   <li>VRS_RTCM3.2 works with non-Trimble units, gives a full GNSS solution (all available satellites)
 </ul>
 <p>Both of these give you the network solution.</p>
-<p>MS_CMR, MS_CMRP, MS_RTCM3.2 these are for connecting to single base when you are on the edge of the network or not
-  getting a strong network solution. System will automatically find the closest station and connect you.</p>
+<p>MS_CMR, MS_CMRP, MS_RTCM3.2 these are for connecting to single base when you are on the edge of the network or not getting a strong network solution. System will automatically find the closest station and connect you.</p>
 
 <h5>Rinex File Downloads</h5>
 <p>The Nevada GPS network is providing 24 hour Rinex files with 5 second epoch available for download here:
   <a href="http://nevadagps.utah.gov/4ngs ">Nevada GPS Rinex Download</a>
-  Due to storage limits, files can only be stored for a 90 day period, than they are permanently deleted.
-</p>
+  Due to storage limits, files can only be stored for a 90 day period, than they are permanently deleted.</p>
 
 <h2 class="text-left">Getting Started</h2>
 <div class="flex flex--row flex--wrap">
-  <h3 class="text-left">Create a New, or Renew an Existing, Subscription for <a href="http://nevadagps.utah.gov">Nevada
-      GPS</a></h3>
-  <p>To create a new subscription or renew an existing subscription for Nevada GPS, you’ll need to provide the following
-    information:</p>
+  <h3 class="text-left">Create a New, or Renew an Existing, Subscription for <a href="http://nevadagps.utah.gov">Nevada GPS</a></h3>
+  <p>To create a new subscription or renew an existing subscription for Nevada GPS, you’ll need to provide the following information:</p>
   <ul>
     <li>the name of your organization (avoid punctuation);
     <li>a login/username;
     <li>a password (8 characters);
-    <li>a contact name, email address (once you add in your email address, it will be associated/connected with your
-      account and can't be used again), and phone number;
+    <li>a contact name, email address (once you add in your email address, it will be associated/connected with your account and can't be used again), and phone number;
     <li>your physical location/address; and
     <li>your mailing address.
   </ul>
-  <p>To pay for your subscription, visit turngps.utah.gov to access the online payment system. The cost is $600 and
-    gives you access to TURN GPS Network also. You’ll need a credit card to process your payment.</p>
+  <p>To pay for your subscription, visit turngps.utah.gov to access the online payment system. The cost is $600 and gives you access to TURN GPS Network also. You’ll need a credit card to process your payment.</p>
   <ul>
     <li>Select “Register” on the navigation pane on the left-hand side of the page.
-    <li>Click the “New Registration” button. (Note: Both new subscriptions and renewed subscriptions for Nevada GPS are
-      considered “new” to the TURN system.)
+    <li>Click the “New Registration” button. (Note: Both new subscriptions and renewed subscriptions for Nevada GPS are considered “new” to the TURN system.)
     <li>Review the Terms and Conditions, and then click “I agree” to continue.
-    <li>Fill out all the required fields, including the name of your organization, your login/username, a password for
-      your TURN GPS account, and your personal contact information.
+    <li>Fill out all the required fields, including the name of your organization, your login/username, a password for your TURN GPS account, and your personal contact information.
     <li>Click “Register” to create your account.
   </ul>
-  <p>At this point, the system will direct you to the payment page. Make sure that you have your payment information
-    readily available, as the system will automatically time out after a while, requiring you to start over with a whole
-    new login/username, password, and email. If the system keeps coming back with the password field empty, the system
-    may think that your email is already in use and, therefore, will not allow you to move forward. Each subscription
-    needs a unique email address (even if it is a made-up one [e.g., gps_login@BobsBigBurger.com]).</p>
-  <p>After you have created/renewed and paid for your subscription, you will receive an email with a receipt. It
-    typically takes the system about 24 hours to process a payment and activate an account for fieldwork using the TURN
-    GPS Network. {% include contact.html subject='VRS Network Creation/Renewal' contact=site.data.contacts.turn
-    text='Accordingly, to avoid a disruption or delay in service please email' hide-punctuation=true %} with your
-    organization, login/username, and password. We will manually renew or create your subscription in the Nevada GPS
-    network and push your subscription through the system as soon as possible. Once your account is successfully
-    activated, you will receive another email confirming your subscription.</p>
+  <p>At this point, the system will direct you to the payment page. Make sure that you have your payment information readily available, as the system will automatically time out after a while, requiring you to start over with a whole new login/username, password, and email. If the system keeps coming back with the password field empty, the system may think that your email is already in use and, therefore, will not allow you to move forward. Each subscription needs a unique email address (even if it is a made-up one [e.g., gps_login@BobsBigBurger.com]).</p>
+  <p>After you have created/renewed and paid for your subscription, you will receive an email with a receipt. It typically takes the system about 24 hours to process a payment and activate an account for fieldwork using the TURN GPS Network.  {% include contact.html subject='VRS Network Creation/Renewal' contact=site.data.contacts.turn text='Accordingly, to avoid a disruption or delay in service please email' hide-punctuation=true %} with your organization, login/username, and password. We will manually renew or create your subscription in the Nevada GPS network and push your subscription through the system as soon as possible. Once your account is successfully activated, you will receive another email confirming your subscription.</p>
 </div>
 <div class="flex flex--row flex--wrap">
   <div class="one-of-two">
     <h2 class="text-left">Support Contacts</h2>
-    <p>{% include contact.html text="If you have questions or require help contact the " subject=page.title
-      contact=site.data.contacts.turn punctuation="true" %}</p>
+    <p>{% include contact.html text="If you have questions or require help contact the " subject=page.title contact=site.data.contacts.turn punctuation="true" %}</p>
   </div>
   <div class="one-of-two">
     <h2 class="text-left">Related Resources</h2>
     <ul>
-      <li><a href="{% link gps/images/Nevada_Network_8x11_2018.pdf %}" rel="noopener" target="_blank">Nevada GPS Network
-          Map 8.5 x 11</a>
-      <li><a href="{% link gps/images/Nevada_Network_poster_2018.pdf %}" rel="noopener" target="_blank">Nevada GPS
-          Network Wall Map</a>
-      <li><a href="http://nevadagps.utah.gov/Map/SensorMap.aspx" rel="noopener" target="_blank">Nevada GPS Sensor
-          Map</a>
+      <li><a href="{% link gps/images/Nevada_Network_8x11_2018.pdf %}" rel="noopener" target="_blank">Nevada GPS Network Map 8.5 x 11</a>
+      <li><a href="{% link gps/images/Nevada_Network_poster_2018.pdf %}" rel="noopener" target="_blank">Nevada GPS Network Wall Map</a>
+      <li><a href="http://nevadagps.utah.gov/Map/SensorMap.aspx" rel="noopener" target="_blank">Nevada GPS Sensor Map</a>
       <li><a href="http://nevadagps.utah.gov/" rel="noopener" target="_blank">The Nevada GPS Network</a>
     </ul>
   </div>

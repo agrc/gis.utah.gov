@@ -1,5 +1,5 @@
 ---
-title: Unleash the power of the SGID with the UGRC Web API
+title: Unleash the power of the SGID with the AGRC Web API
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
@@ -10,20 +10,20 @@ categories:
   - Developer
 date: 2011-06-30 18:23:51
 ---
-The Utah Geospatial Resource Center (UGRC) is the State of Utah's map technology coordination office. The UGRC creates, maintains, and stores geospatial data in the State Geographic Information Database (SGID), a one-stop shop to hundreds of data layers developed, aggregated, or acquired by state government. [UGRC's Web API](https://api.mapserv.utah.gov) is an http-enabled service for accessing this valuable geospatial data.
+The Automated Geographic Reference Center (AGRC) is the State of Utah's map technology coordination office. The AGRC creates, maintains, and stores geospatial data in the State Geographic Information Database (SGID), a one-stop shop to hundreds of data layers developed, aggregated, or acquired by state government. [AGRC's Web API](https://api.mapserv.utah.gov) is an http-enabled service for accessing this valuable geospatial data.
 
-From querying any data layer in the SGID to geocoding addresses against the most accurate statewide roads dataset, the application of the API is endless. The API also powers UGRC's [widgets, toolboxes, and add-ins]({% link developer/widgets/index.md %}#arcgis-tools), which can help you navigate the sea of data in the SGID.
+From querying any data layer in the SGID to geocoding addresses against the most accurate statewide roads dataset, the application of the API is endless. The API also powers AGRC's [widgets, toolboxes, and add-ins]({% link developer/widgets/index.md %}#arcgis-tools), which can help you navigate the sea of data in the SGID.
 
 ## Possibilities
 {: .text-left }
 
 The main endpoints that we offer in the Web API are **geocoding** and **searching**.
 
-_**Geocoding**_ allows you to find a geographic location (i.e., the geographical coordinates) from an address. UGRC's geocoding philosophy is unique since we would rather give you _no match_ than the wrong match. But we assure you: we will have the best match rates for Utah addresses.
+_**Geocoding**_ allows you to find a geographic location (i.e., the geographical coordinates) from an address. AGRC's geocoding philosophy is unique since we would rather give you _no match_ than the wrong match. But we assure you: we will have the best match rates for Utah addresses.
 
 How can we be so sure?—Because we’re the experts in Utah geospatial data.
 
-UGRC was developed specifically to coordinate Utah-specific data, and we’ve been doing this for quite a while (30+ years. But who’s counting?). Other programs can provide you with similar data, but if you’re looking for information that considers the nuances of Utah addresses, this is it—we’ve got the most comprehensive Utah geospatial data, and we want to share it with you.
+AGRC was developed specifically to coordinate Utah-specific data, and we’ve been doing this for quite a while (30+ years. But who’s counting?). Other programs can provide you with similar data, but if you’re looking for information that considers the nuances of Utah addresses, this is it—we’ve got the most comprehensive Utah geospatial data, and we want to share it with you.
 
 The other main endpoint, _**searching**_, allows you to (you guessed it!) search through SGID data. With over 300 layers of real-world data that you can run queries against in the SGID, the possibilities can be a little overwhelming. But the searching endpoint really opens up the opportunity for serious information gathering. You need a way to sift through all that information and make sense of it, and our search endpoint can help you do that.
 

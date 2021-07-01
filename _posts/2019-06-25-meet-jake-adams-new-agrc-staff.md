@@ -1,5 +1,5 @@
 ---
-title: 'Meet Jake Adams - New UGRC Staff'
+title: 'Meet Jake Adams - New AGRC Staff'
 author:
   display_name: Jacob Adams
   email: jdadams@utah.gov
@@ -9,9 +9,9 @@ categories:
 tags: []
 ---
 
-UGRC would like to welcome Jake Adams to the team! Jake will be using his GIS experience working with Cache County and Taylorsville City, as well as his Master of Urban and Regional Planning Degree, to help UGRC with the Discover service, SGID, and other UGRC efforts. We're happy to have Jake on the team!
+AGRC would like to welcome Jake Adams to the team! Jake will be using his GIS experience working with Cache County and Taylorsville City, as well as his Master of Urban and Regional Planning Degree, to help AGRC with the Discover service, SGID, and other AGRC efforts. We're happy to have Jake on the team!
 
-## What’s your title at UGRC?
+## What’s your title at AGRC?
 {: .text-left}
 
 IT Analyst II
@@ -23,12 +23,12 @@ IT Analyst II
 
 I do a little bit of everything—I’m part developer, part data geek, part cartographer. I’ll be handling our Discover service for licensed aerial imagery and general basemaps and helping out with the data in the SGID.
 
-## What’s your background?/How did you end up at UGRC?
+## What’s your background?/How did you end up at AGRC?
 {: .text-left}
 
-When I was considering a major in geography, UGRC was the answer to “where do I want this to take me?” I had seen in class just how easy the SGID made finding and using high-quality, statewide data, and the ideals behind UGRC appealed to my open-source sensibilities. I got sidetracked into a Master of Urban and Regional Planning Degree from Portland State and spent a year doing zoning administration but returned to GIS working with the fun team at Cache County. I spent some quality time there and became their in-house mad scientist working with historical aerial imagery and processing elevation data created from the 2016 Lidar flights.
+When I was considering a major in geography, AGRC was the answer to “where do I want this to take me?” I had seen in class just how easy the SGID made finding and using high-quality, statewide data, and the ideals behind AGRC appealed to my open-source sensibilities. I got sidetracked into a Master of Urban and Regional Planning Degree from Portland State and spent a year doing zoning administration but returned to GIS working with the fun team at Cache County. I spent some quality time there and became their in-house mad scientist working with historical aerial imagery and processing elevation data created from the 2016 Lidar flights.
 
-I left Cache County to return to Taylorsville City, where I’d done some planning work in years past. My time there was short but exciting, full of projects and maps that supported planning, economic development, and the cemetery. I gained an appreciation for how local governments rely on UGRC data and contribute to the body of public GIS data in turn.
+I left Cache County to return to Taylorsville City, where I’d done some planning work in years past. My time there was short but exciting, full of projects and maps that supported planning, economic development, and the cemetery. I gained an appreciation for how local governments rely on AGRC data and contribute to the body of public GIS data in turn.
 
 ## GIS is a unique field; what made you decide to pursue a career in this field?
 {: .text-left}
@@ -42,10 +42,10 @@ I love GIS and cartography because I love to find new ways to display the beauti
 
 By far it’s been processing elevation data for better (read: prettier) cartographic display. I wrote a Python script that smooths arbitrarily large DEMs and applies Kennelly and Stewart’s sky shading technique to create potentially stunning, almost hand-drawn hillshades. It was a chance to indulge and merge my inner geek and my inner artist.
 
-## What do you want to accomplish at UGRC?
+## What do you want to accomplish at AGRC?
 {: .text-left}
 
-I want to support UGRC’s tradition of providing high-quality GIS data to anyone who wants to use it—I believe that good data enables better decisions and should be available to everyone. I also want to provide creative solutions for the State’s problems and opportunities. With any luck, I may even convince Zach to share some of his cartography work.
+I want to support AGRC’s tradition of providing high-quality GIS data to anyone who wants to use it—I believe that good data enables better decisions and should be available to everyone. I also want to provide creative solutions for the State’s problems and opportunities. With any luck, I may even convince Zach to share some of his cartography work.
 
 ## How do you spend your time outside the office? Any favorite hobbies or activities?
 {: .text-left}

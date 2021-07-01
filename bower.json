@@ -3,7 +3,7 @@
   "description": "Jekyll website for gis.utah.gov",
   "main": "GruntFile.js",
   "authors": [
-    "UGRC"
+    "AGRC"
   ],
   "license": "MIT",
   "keywords": [

@@ -1,7 +1,7 @@
 ---
 author:
   display_name: JP
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - events
   - legislature
@@ -13,7 +13,7 @@ title: Signup for Maps on the Hill 2016
 categories:
   - Featured
 ---
-<p>Maps on the Hill, supported by the Utah Geographic Information Council (UGIC) and UGRC, will be held on March 1, 2016. This event, in its fifth year, is a good opportunity for students and professionals to share maps, mapping tools, and mapping projects with elected officials, fellow practitioners, and the public.</p>
+<p>Maps on the Hill, supported by the Utah Geographic Information Council (UGIC) and AGRC, will be held on March 1, 2016. This event, in its fifth year, is a good opportunity for students and professionals to share maps, mapping tools, and mapping projects with elected officials, fellow practitioners, and the public.</p>
 <p><strong><a href="https://docs.google.com/forms/d/1W8k87Gf6O-Oe46KLrg8Un0PIP4W9W2o3f8IzOVt4Y-A/viewform#start=invite">CLICK HERE TO SIGNUP.</a></strong> Signsups close Friday, February 5.</p>
 <p><strong><em>Who should participate:</em></strong><br />
 Individuals: Anybody who makes a map through their work or education.<br />

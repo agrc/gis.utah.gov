@@ -1,42 +1,38 @@
 ---
 author:
-display_name: JP
-email: ugrc@utah.gov
+  display_name: JP
+  email: agrc@utah.gov
 tags:
-- burial
-- cemetery
-- grave
-- history
+  - burial
+  - cemetery
+  - grave
+  - history
 categories: []
 date: 2012-06-18 10:56:49 -0600
 Cemeteries:
-hub:
-name: Utah Cemeteries
-item_id: f54d1c00020940ec95a729b39518e020
-updates:
-- '2011'
+  hub:
+    name: Utah Cemeteries
+    item_id: f54d1c00020940ec95a729b39518e020
+  updates:
+    - '2011'
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{% link images/cemeteriesB.png %}" alt="cemeteries in utah"
-    loading="lazy" />
+  <img class="caption__image" title="map" src="{% link images/cemeteriesB.png %}" alt="cemeteries in utah" loading="lazy" />
   <figcaption class="caption__text">Locations of Cemeteries in Utah</figcaption>
 </figure>
 {% include abstract.html name="Cemeteries"
-abstract="Society.Cemeteries contains over 400 cemeteries and their locations in Utah."
+  abstract="Society.Cemeteries contains over 400 cemeteries and their locations in Utah."
 %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="Cemeteries">Cemeteries</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>The main source of this dataset is the <a href="https://heritage.utah.gov/history/cemeteries">Utah State History
-        Research Centers Cemetery and Burial Database</a>. Some of the cemeteries in this database are inactive, and may
-      be in poor condition. Cemetery information contains year of first burial, number of burials, contact and owner
-      information, and directions.</p>
+    <p>The main source of this dataset is the <a href="https://heritage.utah.gov/history/cemeteries">Utah State History Research Centers Cemetery and Burial Database</a>. Some of the cemeteries in this database are inactive, and may be in poor condition. Cemetery information contains year of first burial, number of burials, contact and owner information, and directions.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html
-  name="Cemeteries"
-  info=page.Cemeteries
+    name="Cemeteries"
+    info=page.Cemeteries
   %}
 </div>

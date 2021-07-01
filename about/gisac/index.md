@@ -1,8 +1,8 @@
 ---
 title: Utah Geographic Information Systems Advisory Council (GISAC)
 author:
-  display_name: UGRC Staff
-  email: ugrc@utah.gov
+  display_name: AGRC Staff
+  email: agrc@utah.gov
 tags: []
 categories: []
 date: 2020-08-28 00:00:00 -0600
@@ -11,7 +11,7 @@ date: 2020-08-28 00:00:00 -0600
 ### GISAC Tasks
 
 - Define a [minimum metadata standard]({% link about/policy/metadata/index.md %}) for Utah ✔️
-- Recommend the use of UGRC's geocoding and address validation tool as a starting point for new projects
+- Recommend the use of AGRC's geocoding and address validation tool as a starting point for new projects
 - Provide guidelines for AGOL tags
 - Create a data maturity assessment checklist
 - Create a statewide directory of GIS professionals/contacts

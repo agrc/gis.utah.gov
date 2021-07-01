@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Data Queen
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - address
   - data
@@ -24,7 +24,7 @@ The following highlights what has been updated:
 County Updates:
 
 - **Salt Lake:** Received VECC's centerline update 5/28/2014: added new roads since the last update on 4/30/2014; geocoding improvements
-- **San Juan:** UGRC is providing ongoing GIS data support to San Juan County: added new roads, road names, and address ranges; geocoding improvements
+- **San Juan:** AGRC is providing ongoing GIS data support to San Juan County: added new roads, road names, and address ranges; geocoding improvements
 - **Sevier** Received centerline update 5/20/2014: added new roads, road names, address ranges; geocoding improvements
 - **Utah:** Received centerline update 5/28/2014: added new roads since the last update on 4/30/2014; geocoding improvements
 - **Washington:** Received centerline update 5/29/2014: added new roads since the last update on 4/30/2014; geocoding improvements

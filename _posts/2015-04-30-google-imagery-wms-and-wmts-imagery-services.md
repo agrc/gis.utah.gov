@@ -1,7 +1,7 @@
 ---
 author:
   display_name: JP
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - aerial photography
   - google
@@ -30,11 +30,11 @@ With two choices of OGC standard-based imagery services to choose from, WMS and 
 
 Users will find that both services will time out when they are unused for long periods. Refreshing the service in ArcMap should be as easy as opening the ArcCatalog view in ArcMap, and double clicking the service in that view to wake it up. See example at right.
 
-UGRC now has the imagery files on premise and we hope, in the near future, to begin processing 'on premise' file requests that have been filed through the online Organizational Usage Agreement form. When ready, we'll reach out to you, the primary contacts, to begin that process.
+AGRC now has the imagery files on premise and we hope, in the near future, to begin processing 'on premise' file requests that have been filed through the online Organizational Usage Agreement form. When ready, we'll reach out to you, the primary contacts, to begin that process.
 
 Several users have asked for a link to view the imagery in a browser. You can do this now using [https://discover.agrc.utah.gov/tiles/utah/preview](https://discover.agrc.utah.gov/tiles/utah/preview), together with your organization's username and password. As this web view of the imagery uses the core WMTS service, it is a great way to begin any troubleshooting you may need to do.
 
-We plan to incorporate the high resolution Google imagery into UGRC's hybrid base map, as well as adding WMTS as a service directly within web applications.
+We plan to incorporate the high resolution Google imagery into AGRC's hybrid base map, as well as adding WMTS as a service directly within web applications.
 
 Last but not least, a friendly reminder. Keep in mind that the WMS and WMTS services use the WGS84 datum which means users in other datums (NAD83 for example) will need to set an appropriate datum transformation within the viewing application, in addition to the desired projection. This is critical for getting the last meter or so of horizontal position accuracy. This and more is described at the **[Discover resource page]({% link discover/resources/index.md %})**.
 

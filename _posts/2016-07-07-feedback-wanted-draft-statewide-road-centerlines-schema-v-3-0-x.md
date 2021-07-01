@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - roads
   - schema
@@ -11,17 +11,17 @@ categories:
   - Featured
 ---
 
-Since 2003, UGRC has maintained a statewide aggregation of road centerline GIS layers sourced from local data stewards. This layer is one of the hardest working GIS data assets in the state and is put to task in high profile uses, including 911/public safety, transportation management and planning, voter registration, sales tax, and Census block geography used for demographics and redistricting.
+Since 2003, AGRC has maintained a statewide aggregation of road centerline GIS layers sourced from local data stewards. This layer is one of the hardest working GIS data assets in the state and is put to task in high profile uses, including 911/public safety, transportation management and planning, voter registration, sales tax, and Census block geography used for demographics and redistricting.
 
-Occasionally, UGRC revisits the data schema (aka data model) that we use to store the descriptive attributes of each road feature in the statewide database. If you attended the regional road centerline workshops hosted by UDOT last month  in Logan, Cedar City, Price, and Salt Lake, you’re well aware that some road centerline changes are coming. The two main drivers for these changes are the Next Generation 911 GIS requirements and the Federal Highway Administration’s all roads network (ARNOLD) reporting requirements for state DOTs.
+Occasionally, AGRC revisits the data schema (aka data model) that we use to store the descriptive attributes of each road feature in the statewide database. If you attended the regional road centerline workshops hosted by UDOT last month  in Logan, Cedar City, Price, and Salt Lake, you’re well aware that some road centerline changes are coming. The two main drivers for these changes are the Next Generation 911 GIS requirements and the Federal Highway Administration’s all roads network (ARNOLD) reporting requirements for state DOTs.
 
-In response to the updated requirements, UGRC has developed a [new schema proposal for the statewide road centerlines](https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546). We’ve borrowed a great idea from the Utah County GIS office, organizing the data elements into color-coded functional areas (Thanks Patrick and Mary Jane!).
+In response to the updated requirements, AGRC has developed a [new schema proposal for the statewide road centerlines](https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546). We’ve borrowed a great idea from the Utah County GIS office, organizing the data elements into color-coded functional areas (Thanks Patrick and Mary Jane!).
 
-For data users, any schema change will be reflected in how UGRC publishes the data for download and as web services.
-For data stewards, the schema will be the structure into which UGRC will be mapping the data that you provide in the short term.
+For data users, any schema change will be reflected in how AGRC publishes the data for download and as web services.
+For data stewards, the schema will be the structure into which AGRC will be mapping the data that you provide in the short term.
 One future possibility is that the new schema may be used to pilot a shared editing platform for road centerlines — one possible recommendation from the regional road centerline workshops.
 
-__Please note that the road centerlines schema proposal is a starting point, and UGRC is looking forward to input as to errors, omissions, and suggestions for better ways to organize the information. Please [submit all feedback](http://goo.gl/forms/fdzA8sV4nuarXGDV2) by August 15, 2016.__
+__Please note that the road centerlines schema proposal is a starting point, and AGRC is looking forward to input as to errors, omissions, and suggestions for better ways to organize the information. Please [submit all feedback](http://goo.gl/forms/fdzA8sV4nuarXGDV2) by August 15, 2016.__
 
 <a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546 "><img src="{% link images/roadcenterlinenewschema.png %}" alt="" title="Centerlines Datasets Schema V3.0.3" class="inline-text-right" loading="lazy" /></a>
 

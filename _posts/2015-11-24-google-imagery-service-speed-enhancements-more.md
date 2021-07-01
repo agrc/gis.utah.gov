@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags: []
 date: 2015-11-24 15:57:20 -0700
 title: Google Imagery Service Speed Enhancements & More
@@ -28,7 +28,7 @@ categories:
 <p>To make a web app tile request, replace 'layer' with 'tiles/LAYERNAMEHERE/{z}/{x}/{y}' for any specific layer accessed from the link above. <em>Remember to get a web app specific quad word URL (see italics under section 2)</em>.</p>
 <p>We are working on adding a terrain-themed basemap and an overlay that will allow for a 'hybrid' style map to be created on top of the 6 inch Google imagery. Look for updates on both of these in December. All are natively in the Web Mercator projection.</p>
 <h4>4. Small Batch Downloads of the Google Imagery Jpgs.</h4>
-<p>All POC's for the Google imagery license, within the service information email sent by UGRC, have access to the discover.agrc.utah.gov footprint viewer. This allows the raw Google imagery jpg files to be downloaded in small batches (ex. neighborhoods, projects areas, etc). For large areas, please make a request and send us a flash or hard drive.</p>
+<p>All POC's for the Google imagery license, within the service information email sent by AGRC, have access to the discover.agrc.utah.gov footprint viewer. This allows the raw Google imagery jpg files to be downloaded in small batches (ex. neighborhoods, projects areas, etc). For large areas, please make a request and send us a flash or hard drive.</p>
 <ul>
 <li>example: https://discover.agrc.utah.gov/login/path/YOUR-QUAD-WORDS-HERE/footprint/utah/preview</li>
 </ul>

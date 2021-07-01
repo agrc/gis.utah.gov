@@ -13,7 +13,7 @@ categories:
 ![plss sample]({% link images/NewPLSS_LrgSample1.png %})
 {:.inline-text-right}
 
-UGRC recently made available the latest version of the Geographic Coordinate Database (GCDB) version 2.0, 2015 updates to the Townships, Sections, and Quarter Section divisions of the Public Land Survey System (PLSS) contained in Utah’s State Geographic Information Database (SGID).
+AGRC recently made available the latest version of the Geographic Coordinate Database (GCDB) version 2.0, 2015 updates to the Townships, Sections, and Quarter Section divisions of the Public Land Survey System (PLSS) contained in Utah’s State Geographic Information Database (SGID).
 
 The basic units of the PLSS comprise the foundation for public and private property boundaries in Utah. The digital GIS representations of the PLSS in the SGID, while in no way a substitute for physical surveys and monumentation, serve as an important supporting reference for surveying and map-based administrative representations of property extents.
 
@@ -26,9 +26,9 @@ The Township areas impacted by change in this updated version are shown on the m
 #### Download Options
 {: .text-left}
 
-GCDB v2.0, as provided to UGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is available for [download]({% link data/cadastre/plss/index.html %}#CadNSDI-downloads).
+GCDB v2.0, as provided to AGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is available for [download]({% link data/cadastre/plss/index.html %}#CadNSDI-downloads).
 
-UGRC derived GIS layers that have been updated in the SGID are:
+AGRC derived GIS layers that have been updated in the SGID are:
 
 - SGID10.Cadastre.PLSSTownships_GCDB
 - SGID10.Cadastre.PLSSSections_GCDB

@@ -1,8 +1,8 @@
 ---
 title: 'SGID Product Relaunch Update'
 author:
-  display_name: UGRC Office
-  email: ugrc@utah.gov
+  display_name: AGRC Office
+  email: agrc@utah.gov
 date: 2019-11-12 18:01:51
 categories:
   - Featured
@@ -18,12 +18,12 @@ In a June 2019 post “SGID Then and Now,” we touched on [where we thought the
 ## Redesigned SGID Open Data Website
 {: .text-left}
 
-Today we are releasing the redesign of our [SGID Open Data](https://opendata.gis.utah.gov/) website. We think the simple interface of the redesigned website and the new icon set will improve the user experience of searching, browsing, and exploring SGID data! We also updated the [UGRC website]({% link data/index.html %}) icons to make the data navigation experience familiar between the two websites. Esri is working on enhancing the Open Data product, and we are following suit by putting a lot more effort into SGID Open Data into the future. The interface and icon set enhancements mark the beginning.
+Today we are releasing the redesign of our [SGID Open Data](https://opendata.gis.utah.gov/) website. We think the simple interface of the redesigned website and the new icon set will improve the user experience of searching, browsing, and exploring SGID data! We also updated the [AGRC website]({% link data/index.html %}) icons to make the data navigation experience familiar between the two websites. Esri is working on enhancing the Open Data product, and we are following suit by putting a lot more effort into SGID Open Data into the future. The interface and icon set enhancements mark the beginning.
 
 ## Open Data into the Future
 {: .text-left}
 
-Over the next few months, the download links on the UGRC website will be transitioning from static Google downloads to Open Data links. This will coincide with the authoritative data being shared through SGID Open Data. This adds new export formats (e.g., file geodatabase, shapefile, KML, and spreadsheet downloads), as well as feature service and GeoJSON APIs. The [UGRC website]({% link index.html %}) will continue to remain the [SGID data index]({% link data/sgid-index/index.html %}) where users can search and learn about SGID data, including data usage, descriptions, update cycles, and downloads for non Open Data content types.
+Over the next few months, the download links on the AGRC website will be transitioning from static Google downloads to Open Data links. This will coincide with the authoritative data being shared through SGID Open Data. This adds new export formats (e.g., file geodatabase, shapefile, KML, and spreadsheet downloads), as well as feature service and GeoJSON APIs. The [AGRC website]({% link index.html %}) will continue to remain the [SGID data index]({% link data/sgid-index/index.html %}) where users can search and learn about SGID data, including data usage, descriptions, update cycles, and downloads for non Open Data content types.
 
 ## Static SGID Data Layers
 {: .text-left}
@@ -38,12 +38,12 @@ We have been using ArcGIS Online for organizations since its inception nearly a 
 ## New Data Editing Policy
 {: .text-left}
 
-UGRC continues to improve the way we serve our users. We are currently formalizing our policies on editing data in the SGID database in response to feedback from our users. All active editing will now be performed in an internal SGID database, and edits will be pushed to the public SGID database during off-hours. This will help reduce the risk of interrupting users while they are analyzing data within the time frame stated in our policy[^policy-link]. These new data editing policies mark the maturation of the SGID as a database product and our commitment to treat the SGID as a production service.
+AGRC continues to improve the way we serve our users. We are currently formalizing our policies on editing data in the SGID database in response to feedback from our users. All active editing will now be performed in an internal SGID database, and edits will be pushed to the public SGID database during off-hours. This will help reduce the risk of interrupting users while they are analyzing data within the time frame stated in our policy[^policy-link]. These new data editing policies mark the maturation of the SGID as a database product and our commitment to treat the SGID as a production service.
 
 ### Sweeper Project
 {: .text-left}
 
-Along with formalizing our data editing policy, UGRC has started the [sweeper](https://github.com/agrc/sweeper) project to show our commitment to continually increase and stabilize the quality of SGID data. This open-source project gives us constant feedback about an increasing number of data quality metrics. All of the data being loaded into the internal SGID has passed every sweeper check, so all data entering the SGID will be issue free, and the checks are scheduled to run periodically to maintain this high quality of data.
+Along with formalizing our data editing policy, AGRC has started the [sweeper](https://github.com/agrc/sweeper) project to show our commitment to continually increase and stabilize the quality of SGID data. This open-source project gives us constant feedback about an increasing number of data quality metrics. All of the data being loaded into the internal SGID has passed every sweeper check, so all data entering the SGID will be issue free, and the checks are scheduled to run periodically to maintain this high quality of data.
 
 ### SGID Data Life Cycle
 {: .text-left}
@@ -53,7 +53,7 @@ At some point, datasets and applications reach the end of their usefulness. In a
 ## Potential Google Cloud Managed PostGIS
 {: .text-left}
 
-UGRC is currently exploring the possibility of expanding the public database to users outside of the State Network with a Google Cloud managed PostGIS database. We are excited for this service since PostGIS can support the open-source GIS community and Esri clients[^esri-requirements]. If this is something that is of interest to you, {% include contact.html subject="PostGIS Beta Opportunity" text="please send an email to " contact=site.data.contacts.webapi hide-punctuation=true %} for a beta testing opportunity. These tests will help determine the feasibility of this solution.
+AGRC is currently exploring the possibility of expanding the public database to users outside of the State Network with a Google Cloud managed PostGIS database. We are excited for this service since PostGIS can support the open-source GIS community and Esri clients[^esri-requirements]. If this is something that is of interest to you, {% include contact.html subject="PostGIS Beta Opportunity" text="please send an email to " contact=site.data.contacts.webapi hide-punctuation=true %} for a beta testing opportunity. These tests will help determine the feasibility of this solution.
 
 ## Open Data Sharing
 {: .text-left}
