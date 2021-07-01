@@ -2,7 +2,7 @@
 title: Census LUCA Training for Utah
 author:
   display_name: Bert Granberg
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 date: 2017-10-30 22:09:42
 categories: []
 tags:
@@ -12,7 +12,7 @@ tags:
 ---
 As a lot of folks know, it's in Utah communities' interest to get a full population count during the upcoming 2020 census. For example, [funding formulas for many programs are tied to demographic data collected by the Census Bureau](https://www.nsgic.org/gwu-counting-for-dollars--census-informed-federal-program-funding). The census count is also used as a guide for redrawing local, state, and national election districts. Helping Census prepare for 2020 is important and something that Utah GIS and addressing professionals are uniquely positioned to do.
 
-_The info below is a re-posting of information UGRC has emailed to county and city GIS and address contacts._
+_The info below is a re-posting of information AGRC has emailed to county and city GIS and address contacts._
 
 ### What is LUCA?
 {: .text-left }
@@ -29,7 +29,7 @@ The decision to participate in the LUCA review is made by your highest elected o
 ### LUCA Training
 {: .text-left }
 
-UGRC, on behalf of the Census Bureau and in partnership with the Governor's Office of Management and Budget, has scheduled Utah's LUCA training session for:
+AGRC, on behalf of the Census Bureau and in partnership with the Governor's Office of Management and Budget, has scheduled Utah's LUCA training session for:
 
   Thursday, November 2nd, from 1pm - 5pm
   195 North 1950 West, Salt Lake City
@@ -38,7 +38,7 @@ UGRC, on behalf of the Census Bureau and in partnership with the Governor's Offi
 Please **[RVSP for the Nov. 2nd training](https://docs.google.com/forms/d/e/1FAIpQLSczYHcjdbW33f-8VpnevDEq9rOL4V18astz6uU74VAUpXJFZg/viewform?usp=sf_link)**.
 {: .pop .text-center }
 
-At this meeting, Census will provide a technical overview of the options for participation in the LUCA address list review. UGRC has asked for Census to move quickly through the basics so additional time can be spent on the QGIS-based application and the shapefile submission option.
+At this meeting, Census will provide a technical overview of the options for participation in the LUCA address list review. AGRC has asked for Census to move quickly through the basics so additional time can be spent on the QGIS-based application and the shapefile submission option.
 
 Utah communities do not yet need to be formally registered for the LUCA review to attend this training. The training will cover how to get registered to participate in LUCA but you can review online materials ([flyer](https://www2.census.gov/geo/pdfs/partnerships/luca/2020CensusLUCA_Flyer.pdf) or [information guide](https://www2.census.gov/geo/pdfs/partnerships/luca/2020LUCA_InfoGuide.pdf)) to learn more and to get a start on assisting your jurisdiction's highest-elected official in registering for LUCA now ([see Registration section of this page for instructions](https://www.census.gov/geo/partnerships/luca.html)).
 

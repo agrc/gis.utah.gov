@@ -32,4 +32,4 @@ Transit Special Tax Areas represent areas outside of incorporated municipalities
 
 #### Available for Download
 
-All these data layers can be downloaded from the UGRC website [Sales Tax Areas and Tax Entity Areas]({% link data/economy/taxingareas/index.html %}).
+All these data layers can be downloaded from the AGRC website [Sales Tax Areas and Tax Entity Areas]({% link data/economy/taxingareas/index.html %}).

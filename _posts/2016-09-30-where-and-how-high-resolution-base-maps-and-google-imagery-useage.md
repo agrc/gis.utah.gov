@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - aerial photography
   - cad
@@ -18,7 +18,7 @@ categories:
   - Featured
 ---
 [![Google Imagery Usage Map]({% link images/HighResImageryAndBaseMaps_Sept2016thumb.jpg %} "view high res usage map")]({% link downloads/HighResImageryAndBaseMaps_Sept2016.pdf %}){:.inline-text-right}
-It has been about 18 months since the statewide high resolution (6") aerial photography content and services, licensed from Google and funded through the Utah Mapping and Information Partnership (UMIP), were made available to state and local government through UGRC's Discover imagery server.
+It has been about 18 months since the statewide high resolution (6") aerial photography content and services, licensed from Google and funded through the Utah Mapping and Information Partnership (UMIP), were made available to state and local government through AGRC's Discover imagery server.
 
 *So, what have we learned so far?* A lot actually, thanks to two resources: an extensive user survey and metrics collected by the server itself.
 
@@ -40,4 +40,4 @@ Here are several overview-scale observations:
 - Image quality, resolution, horizontal positioning of the imagery, and update frequency are all important but in varying degrees to different organizations.
 - The web service delivery mechanism provides efficient access to the aerial photography. Speed increases last Fall were a significant improvement. CAD users report more issues (than GIS users) with their software's ability to consume the web services.
 
-Information from the recent user survey and from server logs that describe and depict usage will greatly impact the imagery recommendations and business plan (currently in progress) that UGRC will present to the UMIP Steering Committee and partners, as we consider next steps in this arena.
+Information from the recent user survey and from server logs that describe and depict usage will greatly impact the imagery recommendations and business plan (currently in progress) that AGRC will present to the UMIP Steering Committee and partners, as we consider next steps in this arena.

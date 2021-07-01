@@ -1,21 +1,21 @@
 ---
 tags: []
 author:
-display_name: UGRC Staff
-email: ugrc@utah.gov
+  display_name: AGRC Staff
+  email: agrc@utah.gov
 date: 2011-06-29 18:37:36 -0600
 title: SGID Blog
 categories: []
 ---
 <div class="grid">
-  {% for post in site.categories['SGID Blog'] %}
+{% for post in site.categories['SGID Blog'] %}
   <div class="grid__col grid__col--1-of-3">
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     <h5 class="blog-list">
-      <a class="post-link" href="{% link {{ post.path }} %}">{{ post.title }}</a>
+        <a class="post-link" href="{% link {{ post.path }} %}">{{ post.title }}</a>
     </h5>
     <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    <hr class="hr-separate" />
+  <hr class="hr-separate"/>
   </div>
-  {% endfor %}
+ {% endfor %}
 </div>

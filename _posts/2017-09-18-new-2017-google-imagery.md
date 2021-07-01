@@ -10,7 +10,7 @@ tags:
   - imagery
 ---
 
-The new 2017 high-resolution Google imagery (6" pixels) is available through UGRC's [Discover server]({% link discover/index.html %})! Updated areas (map below) include the what Google calls the Salt Lake, Heber, Logan, St. George and Tooele blocks which comprise
+The new 2017 high-resolution Google imagery (6" pixels) is available through AGRC's [Discover server]({% link discover/index.html %})! Updated areas (map below) include the what Google calls the Salt Lake, Heber, Logan, St. George and Tooele blocks which comprise
 -most of the Wasatch Front urban area (Brigham City, Weber County, Davis County, Salt Lake County, and Utah County)
 -many Wasatch Back communities (Summit, Wasatch and Morgan Counties, and Tooele and Cedar Valley.
 -many of the Box Elder and Cache Valley communities

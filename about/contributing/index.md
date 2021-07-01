@@ -14,7 +14,7 @@ The Utah GIS community accomplishes great things when working together. The [UGI
 <div style="position:relative;left:50%;margin-left:-320px">
     <iframe src="https://player.vimeo.com/video/163472161" width="640" height="537" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     <p>
-        <a href="https://vimeo.com/163472161">How to create a post on gis.utah.gov</a> from <a href="https://vimeo.com/utahagrc">UGRC</a> on <a href="https://vimeo.com">Vimeo</a>.
+        <a href="https://vimeo.com/163472161">How to create a post on gis.utah.gov</a> from <a href="https://vimeo.com/utahagrc">AGRC</a> on <a href="https://vimeo.com">Vimeo</a>.
     </p>
 </div>
 
@@ -42,7 +42,7 @@ The ever resourceful [Scott Davis](https://twitter.com/@SThomasDavis) created a 
 
 #### GitHub
 
-You will need a GitHub account to participate, so [create a free GitHub account](https://github.com/join) if you do not already have one. Navigate to the [UGRC organization](https://github.com/agrc/) on GitHub and find the [website source code]({{ site.github.repository_url }}). [Fork](https://help.github.com/articles/github-glossary/#fork) the [repository](https://help.github.com/articles/github-glossary/#repository) to create a personal copy of gis.utah.gov website in the GitHub cloud.
+You will need a GitHub account to participate, so [create a free GitHub account](https://github.com/join) if you do not already have one. Navigate to the [agrc organization](https://github.com/agrc/) on GitHub and find the [website source code]({{ site.github.repository_url }}). [Fork](https://help.github.com/articles/github-glossary/#fork) the [repository](https://help.github.com/articles/github-glossary/#repository) to create a personal copy of gis.utah.gov website in the GitHub cloud.
 
 #### Creating and Naming New Content
 
@@ -68,9 +68,9 @@ By convention, the gis.utah.gov website places all of it's images in the [`image
 
 #### The Pull Request
 
-To close the contribution loop, a [pull request](https://help.github.com/articles/github-glossary/#pull-request) must be created asking UGRC to pull in your commits to be incorporated into the website. In your fork of the website, there will be a `Pull request` button. Clicking this button and following through the steps to completion will summarize the changes made and send a notification to UGRC of the request. The pull request creates a link between your [branch](https://help.github.com/articles/github-glossary/#branch) and the UGRC repository. Any subsequent commits will show up in the pull request. It is a living connection while the pull request is open. This gives UGRC and the contributor a chance to have a discussion and fix any errors.
+To close the contribution loop, a [pull request](https://help.github.com/articles/github-glossary/#pull-request) must be created asking AGRC to pull in your commits to be incorporated into the website. In your fork of the website, there will be a `Pull request` button. Clicking this button and following through the steps to completion will summarize the changes made and send a notification to AGRC of the request. The pull request creates a link between your [branch](https://help.github.com/articles/github-glossary/#branch) and the AGRC repository. Any subsequent commits will show up in the pull request. It is a living connection while the pull request is open. This gives AGRC and the contributor a chance to have a discussion and fix any errors.
 
-Once the pull request is accepted and merged, the website will automatically regenerate and deploy to production. The edits will be live, [@MapUtah](https://twitter.com/@MapUtah) will tweet about the new content the UGRC  [facebook](https://facebook.com/utahagrc) page will post about the new content.
+Once the pull request is accepted and merged, the website will automatically regenerate and deploy to production. The edits will be live, [@MapUtah](https://twitter.com/@MapUtah) will tweet about the new content the AGRC  [facebook](https://facebook.com/utahagrc) page will post about the new content.
 
 #### Clean Up
 

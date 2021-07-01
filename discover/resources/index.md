@@ -25,7 +25,7 @@ Discover provides high-performance imagery and base maps services in WMS and WMT
 ### Coordinate System and Datum
 {: .text-left}
 
-The native coordinate system for the Discover services is Web Mercator with a WGS 1984 datum (EPSG 3857). Many users work in coordinate systems with a different datum (for example, EPSG 3566: Utah Central with NAD 1983). Users who need the highest locational precision must use the appropriate [geographic transformation conversion]({% link images/Transformation.png %}) to remedy the roughly one meter difference between the WGS84 and NAD83 datums' “realization points.” UGRC uses the `NAD_1983_To_WGS_1984_5` transformation when creating base map tiles and web applications, but **there may be more accurate transformations based on the data and area you are working with**. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information about these transformations can be found on ESRI's [NAD 1983 To WGS 1984](https://support.esri.com/en/knowledgebase/techarticles/detail/24159) How-To.
+The native coordinate system for the Discover services is Web Mercator with a WGS 1984 datum (EPSG 3857). Many users work in coordinate systems with a different datum (for example, EPSG 3566: Utah Central with NAD 1983). Users who need the highest locational precision must use the appropriate [geographic transformation conversion]({% link images/Transformation.png %}) to remedy the roughly one meter difference between the WGS84 and NAD83 datums' “realization points.” AGRC uses the `NAD_1983_To_WGS_1984_5` transformation when creating base map tiles and web applications, but **there may be more accurate transformations based on the data and area you are working with**. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information about these transformations can be found on ESRI's [NAD 1983 To WGS 1984](https://support.esri.com/en/knowledgebase/techarticles/detail/24159) How-To.
 
 ArcGIS Pro seems to load an appropriate transformation, but you may need to set the transformation in ArcMap or other software.
 
@@ -65,7 +65,7 @@ The pre-2018 `NAIP` layers have a stated horizontal positional accuracy of 5 met
 
 {%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='send an email to' hide-punctuation=true %}{% endcapture %}
 
-Interested in using UGRC's Web Mercator services in your web maps? Take a look at [this page]({% link developer/base-maps/discover/index.md %}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact }} and provide your web map URL domains.
+Interested in using AGRC's Web Mercator services in your web maps? Take a look at [this page]({% link developer/base-maps/discover/index.md %}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact }} and provide your web map URL domains.
 
 ### Adding a WMS Service to CAD
 {: .text-left}
@@ -141,7 +141,7 @@ Individual organizations will be provided URL links for the Discover services th
   - ![white on black]({% link images/ImageryCGoogle_WhiteOnBlack.png %}){: loading="lazy" }
   {: .dotless}
 
-For products that use the UGRC-produced basemaps, please include a short attribution that complies with the main [UGRC Data License and Disclaimer]({% link about/policy/license-disclaimer/index.md %}) guidelines.
+For products that use the AGRC-produced basemaps, please include a short attribution that complies with the main [AGRC Data License and Disclaimer]({% link about/policy/license-disclaimer/index.md %}) guidelines.
 
 ### Requests for On-Premise Use
 {: .text-left}
@@ -174,5 +174,5 @@ In contrast, WMTS works by delivering a set of fixed-dimension tiles at the requ
 
 - We suggest that you occasionally refresh the connection to the imagery services by right-clicking your service connection in ArcCatalog or ArcMap's Catalog Viewer and selecting the `Refresh` button to see the latest list of available services.
 - Since the Google acquisition flight blocks are not done all at once (as opposed to the NAIP products, which cover the whole state for every acquisition), there will be distinct color and positional changes at flight block boundaries. For large area maps, the color-balanced NAIP may be a more aesthetically pleasing cartographic choice.
-- UGRC has downloaded a statewide master set of the image files for redistribution, as the download process directly from the Google Cloud Platform incurs transactional costs for cloud server & bandwidth usage.
-- UGRC has a [feedback reporting form](https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221) for imagery users around the state to report imagery and service issues so they can be passed along to the imagery producers. Please submit your feedback through this form.
+- AGRC has downloaded a statewide master set of the image files for redistribution, as the download process directly from the Google Cloud Platform incurs transactional costs for cloud server & bandwidth usage.
+- AGRC has a [feedback reporting form](https://docs.google.com/a/utah.gov/forms/d/1UGU77SPM_HX0r8zblIs05C-H5mLyRja1gRT7Fu4aKZk/viewform?fbzx=-6743712545663240221) for imagery users around the state to report imagery and service issues so they can be passed along to the imagery producers. Please submit your feedback through this form.

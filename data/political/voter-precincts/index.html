@@ -1,49 +1,39 @@
 ---
 tags:
-- political
-- polling location
-- precinct
-- vote
+  - political
+  - polling location
+  - precinct
+  - vote
 author:
-display_name: JP
-email: ugrc@utah.gov
+  display_name: JP
+  email: agrc@utah.gov
 date: 2011-11-18 11:11:58 -0700
 categories: []
 VotingPrecincts:
-hub:
-name: Utah Vista Ballot Areas
-item_id: d33f596419d74948a45070275632b8e0
-updates:
-- June 2021
-- December 2020
-- September 2020
-- October 2019
-- July 2019
+  hub:
+    name: Utah Vista Ballot Areas
+    item_id: d33f596419d74948a45070275632b8e0
+  updates:
+    - June 2021
+    - December 2020
+    - September 2020
+    - October 2019
+    - July 2019
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{% link images/voterprecincts.png %}" alt="JudicialDistricts"
-    loading="lazy" />
+  <img class="caption__image" title="map" src="{% link images/voterprecincts.png %}" alt="JudicialDistricts" loading="lazy" />
   <figcaption class="caption__text">Voting Precincts</figcaption>
 </figure>
 {% include abstract.html name="Voting Precincts"
-abstract="Voting precincts determine a voter's ballot composition and polling location. Voting precinct boundaries take
-their shape from the boundaries of all political districts, including U.S Congress, State Senate, State House, School
-Board District, local council districts, special districts etc. However voter precincts must be drawn so that they
-contain less than maximum number of voters as specified by state law. Voting precincts are a critical part of the VISTA
-application, which is the statewide framework, overseen by the Lt. Governor's Office, for managing voters and
-elections."
+  abstract="Voting precincts determine a voter's ballot composition and polling location. Voting precinct boundaries take their shape from the boundaries of all political districts, including U.S Congress, State Senate, State House, School Board District, local council districts, special districts etc. However voter precincts must be drawn so that they contain less than maximum number of voters as specified by state law. Voting precincts are a critical part of the VISTA application, which is the statewide framework, overseen by the Lt. Governor's Office, for managing voters and elections."
 %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="VotingPrecincts">Voting Precincts</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/VoterPrecinctsSmall.png %}" alt="VotingPrecinctsSmall"
-      loading="lazy" />
-    <p>Vista Ballot Areas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County
-      Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this
-      dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.
-      Updates are done to the precincts periodically, corresponding with Annexations and city/town boundary changes.</p>
+    <img class="inline-text-left outline" src="{% link images/VoterPrecinctsSmall.png %}" alt="VotingPrecinctsSmall" loading="lazy" />
+    <p>Vista Ballot Areas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines. Updates are done to the precincts periodically, corresponding with Annexations and city/town boundary changes.</p>
     <dl>
       <dt>VISTAID</dt>
       <dd>An 11 character field that contains the precinct ID and optional subprecinct ID (separated by a colon).</dd>
@@ -56,19 +46,17 @@ elections."
       <dt>EFFECTIVEDATE</dt>
       <dd>The date the precinct boundary took effect. A date of 1/1/2011 is the default effective date.</dd>
       <dt>RcvdDate</dt>
-      <dd>Indicate the date the precinct boundary was sent from the county to the UGRC. Updates will reflect the new
-        city/town boundaries due to annexations.</dd>
+      <dd>Indicate the date the precinct boundary was sent from the county to the AGRC. Updates will reflect the new city/town boundaries due to annexations.</dd>
     </dl>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.voting %}</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://elections.utah.gov/">Lieutenent Governor's Office: Elections</a></li>
-      <li><a href="https://drive.google.com/drive/folders/1BhXfEjXQ1_7z5cH-cj869XUwNDWdhQTu">Archive dataset of 2011
-          Voting Precincts <strong>(no longer in use)</strong></a>
+      <li><a href="https://drive.google.com/drive/folders/1BhXfEjXQ1_7z5cH-cj869XUwNDWdhQTu">Archive dataset of 2011 Voting Precincts <strong>(no longer in use)</strong></a>
     </ul>
   </div>
   {% include packagedata.html
-  name="VotingPrecincts"
-  info=page.VotingPrecincts
-  %}
+    name="VotingPrecincts"
+    info=page.VotingPrecincts
+    %}
 </div>

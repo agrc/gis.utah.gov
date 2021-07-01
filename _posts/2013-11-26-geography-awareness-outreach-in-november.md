@@ -1,7 +1,7 @@
 ---
 author:
   display_name: JP
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - gis day
 date: 2013-11-26 16:11:27 -0700

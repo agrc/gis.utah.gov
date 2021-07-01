@@ -1,7 +1,7 @@
 ---
 author:
-  display_name: UGRC Office
-  email: ugrc@utah.gov
+  display_name: AGRC Office
+  email: agrc@utah.gov
 tags:
   - metadata
   - sgid
@@ -12,7 +12,7 @@ categories: []
 
 By most accounts, creating metadata is right up there with organizing your garage. It can be a chore, but it doesn't have to be.
 
-At UGRC, we have decided to make the process more conversational. In other words, instead of looking at a long list of metadata requirements, we thought it would be easier to talk about the data. This is our solution to metadata procrastination.
+At AGRC, we have decided to make the process more conversational. In other words, instead of looking at a long list of metadata requirements, we thought it would be easier to talk about the data. This is our solution to metadata procrastination.
 
 We have distilled the basic elements of metadata into a few approachable questions. If you can answer these simple questions about your data, then you're officially on your way to good metadata.
 
@@ -52,7 +52,7 @@ We have distilled the basic elements of metadata into a few approachable questio
 
 Your answers to these questions can be plugged into the basic metadata elements (discussed below). It's that simple - answer a few questions, transfer your responses, and voilà, you officially have informative, standardized metadata.
 
-_Note: If you contribute data to Utah's State Geographic Information Database (SGID), we encourage you to use our [metadata form](https://docs.google.com/forms/d/e/1FAIpQLSeJSV935GTN3djtErkBdeXkumuZvd10z2805It1-eFn0Mlo9w/viewform?usp=sf_link). It's a great way to update your metadata and make it more discoverable. The form covers all the questions above -and best of all- after you submit your responses, your portion of the process is done! UGRC, in collaboration with the DTS editor, will handle the remaining details._
+_Note: If you contribute data to Utah's State Geographic Information Database (SGID), we encourage you to use our [metadata form](https://docs.google.com/forms/d/e/1FAIpQLSeJSV935GTN3djtErkBdeXkumuZvd10z2805It1-eFn0Mlo9w/viewform?usp=sf_link). It's a great way to update your metadata and make it more discoverable. The form covers all the questions above -and best of all- after you submit your responses, your portion of the process is done! AGRC, in collaboration with the DTS editor, will handle the remaining details._
 
 The above questions are designed to work with the ESRI [Item Description](https://desktop.arcgis.com/en/arcmap/latest/manage-data/metadata/metadata-standards-and-styles.htm#ESRI_SECTION1_29222DC149544E89A4147541A4ACAF86) metadata style. We have found this style to be well-balanced for creating useful, as well as achievable, metadata.
 
@@ -71,11 +71,11 @@ The title should match the dataset name. If it's a statewide dataset, the title 
 #### Tags
 {: .text-left}
 
-Tags are included in data searches, so at minimum, each SGID dataset should include the stewarding agency (ie: UGRC), SGID, and the appropriate ISO category tag. We also recommend adding any additional, relevant tags that might help with data discoverability. However, there is no need to include words that are contained in the layer's title (these will be omitted).
+Tags are included in data searches, so at minimum, each SGID dataset should include the stewarding agency (ie: AGRC), SGID, and the appropriate ISO category tag. We also recommend adding any additional, relevant tags that might help with data discoverability. However, there is no need to include words that are contained in the layer's title (these will be omitted).
 
 All words in tags should be title-cased except for articles (“of”, “the”, “and”, etc.) or abbreviations. Each tag should be separated by a comma. Please refer to [Using tags effectively](https://www.esri.com/arcgis-blog/products/arcgis-online/data-management/using-tags-effectively/) for more ideas and information.
 
-`example: UGRC, SGID, Recreation, Paths, Biking, Hiking, Horseback Riding`
+`example: AGRC, SGID, Recreation, Paths, Biking, Hiking, Horseback Riding`
 
 #### Summary
 {: .text-left}

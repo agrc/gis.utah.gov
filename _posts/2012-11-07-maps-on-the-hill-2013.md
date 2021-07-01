@@ -1,7 +1,7 @@
 ---
 author:
   display_name: JP
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags: []
 published: false
 date: 2012-11-07 10:58:17 -0700
@@ -35,7 +35,7 @@ categories:
 <li>If multiple people are submitting from your office, we ask that one point person is identified for the office and that <em>one</em> submission per office is completed.</li>
 <li>The limit on the number of maps an organization can submit is 6. If space fills, you may be asked to further limit your map display.</li>
 </ul>
-<p>UGIC and UGRC look forward to this event, and hope to again have substantial and diverse participation that reflects the many uses of GIS across the state.</p>
-<p>Any questions should be directed at  ugrc@utah.gov, or 801-538-3037.</p>
+<p>UGIC and AGRC look forward to this event, and hope to again have substantial and diverse participation that reflects the many uses of GIS across the state.</p>
+<p>Any questions should be directed at  agrc@utah.gov, or 801-538-3037.</p>
 <p style="font-size: 16px;"><a href="https://docs.google.com/a/utah.gov/spreadsheet/viewform?formkey=dDRuMzktTHZkWTNCOGVqTEJDbjZCSUE6MQ#gid=0" target="_blank" rel="noopener"><em><strong>Signups are due December 21, 2012.</strong></em></a></p>
-<p>Note: All maps and abstracts will need be submitted by<strong> January 11, 2013</strong>. (Details on how to submit your map(s) and abstract(s) will be sent to you after you fill out the <a href="https://docs.google.com/a/utah.gov/spreadsheet/viewform?formkey=dDRuMzktTHZkWTNCOGVqTEJDbjZCSUE6MQ#gid=0" target="_blank" rel="noopener">sign up form</a>, same link as above.)</p>
+<p>Note: All maps and abstracts will need be submitted by<strong> January 11, 2013</strong>. (Details on how to submit your map(s) and abstract(s) will be sent to you after you fill out the <a href="https://docs.google.com/a/utah.gov/spreadsheet/viewform?formkey=dDRuMzktTHZkWTNCOGVqTEJDbjZCSUE6MQ#gid=0" target="_blank" rel="noopener">signup form</a>, same link as above.)</p>

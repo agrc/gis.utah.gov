@@ -11,7 +11,7 @@ categories:
 ---
 Updates were made recently to the SGID10.BOUNDARIES.Municipalities feature class that resides on the Utah SGID ArcSDE database server.
 
-The UGRC base maps have been updated to reflect these changes.
+The AGRC basemaps have been updated to reflect these changes.
 
 The following highlights what has been updated:
 

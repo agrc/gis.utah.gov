@@ -1,17 +1,17 @@
 ---
 title: 'Connecting to the Newest SGID Offerings'
 author:
-  display_name: UGRC Office
-  email: ugrc@utah.gov
+  display_name: AGRC Office
+  email: agrc@utah.gov
 date: 2021-01-04 16:01:51
 categories:
   - Featured
   - SGID
-tags:
+tags: 
   - sgid
 ---
 
-As of December 31, 2020, UGRC's SGID10 database has been deprecated. At this point, it is no longer our “star player”.
+As of December 31, 2020, AGRC's SGID10 database has been deprecated. At this point, it is no longer our “star player”.
 
 As a reminder, the replacement offerings include web services and data downloads via our [Open Data site](https://opendata.gis.utah.gov/) as well as direct database access via the [Open SGID]({% link sgid/open-sgid/index.md %}). You can read more about choosing the right data source on our [SGID data page]({% link data/index.html %}).
 

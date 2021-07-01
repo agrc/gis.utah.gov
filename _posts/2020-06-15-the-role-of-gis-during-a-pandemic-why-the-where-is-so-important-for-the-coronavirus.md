@@ -12,7 +12,7 @@ tags:
   - health
 ---
 
-Having worked with UGRC for the past three years, I’ve started to notice that GIS is involved in just about everything. That’s why I’ve found it so interesting to see how GIS is “having a moment,” so to speak, during this coronavirus pandemic. The field of GIS, which is already involved in so many aspects of our daily lives, even if it’s normally behind the scenes, is in the spotlight now more than ever. Take the [Johns Hopkins Coronavirus Resource Center world map](https://coronavirus.jhu.edu/map.html) for instance. The [COVID-19 Map FAQs page](https://systems.jhu.edu/research/public-health/2019-ncov-map-faqs/) states that, “Feature requests per day on the dashboard have grown from about 200 million in late January to 1.2 billion daily requests in early March. A ‘feature request’ represents the number of times visitors have accessed the underlying data while visiting the dashboard.” That’s an astounding increase! But why is this resource, and others like it, so helpful to people right now? Why are people turning to maps to make sense of what’s happening in the world?
+Having worked with AGRC for the past three years, I’ve started to notice that GIS is involved in just about everything. That’s why I’ve found it so interesting to see how GIS is “having a moment,” so to speak, during this coronavirus pandemic. The field of GIS, which is already involved in so many aspects of our daily lives, even if it’s normally behind the scenes, is in the spotlight now more than ever. Take the [Johns Hopkins Coronavirus Resource Center world map](https://coronavirus.jhu.edu/map.html) for instance. The [COVID-19 Map FAQs page](https://systems.jhu.edu/research/public-health/2019-ncov-map-faqs/) states that, “Feature requests per day on the dashboard have grown from about 200 million in late January to 1.2 billion daily requests in early March. A ‘feature request’ represents the number of times visitors have accessed the underlying data while visiting the dashboard.” That’s an astounding increase! But why is this resource, and others like it, so helpful to people right now? Why are people turning to maps to make sense of what’s happening in the world?
 
 These questions led me down a rabbit hole of research into the relationship between GIS and public health, and I found a few answers about why GIS may be so important in light of the coronavirus.
 
@@ -34,7 +34,7 @@ As evidenced by these situations, GIS has been successful in providing a deeper 
 ### 2) GIS helps people navigate through complicated layers of information.
 {: .text-left}
 
-GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page]({% link data/index.html %}), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
+GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [AGRC SGID page]({% link data/index.html %}), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
 
 Going back to the [Johns Hopkins’ map](https://coronavirus.jhu.edu/map.html) as an example: on the site’s [Maps & Trends page](https://coronavirus.jhu.edu/data#charts) of the Critical Trends tab, it has a whole list of questions that GIS can help answer.
 ![Johns Hopkins Coronavirus Map FAQ page]({% link images/JohnsHopkinsCoronavirusMapFAQs.jpg %}){: .inline-text-right .outline }
@@ -48,7 +48,7 @@ To answer the question of “Where are COVID-19 cases increasing?” Johns Hopki
 ### 3) GIS naturally involves intergroup collaboration, which is essential for coronavirus response.
 {: .text-left}
 
-Collaboration between groups is an essential part of the GIS field, and that’s another reason why GIS could be so important in relation to the coronavirus. Let’s go back to the “Where are COVID-19 cases increasing?” question and apply it on a local Utah level. To answer this question, you might first want to examine Utah counties, and to find out the geographic boundaries of each county, you’d need to work with the state’s county recorders. To learn about the population for each county, you’d be relying on the US Census Bureau. To learn about the number of cases of coronavirus in a county, you might look to the county health department. And so on. And then in Utah, UGRC would be the keeper of all this data, so we’d work with contacts from all of those groups.
+Collaboration between groups is an essential part of the GIS field, and that’s another reason why GIS could be so important in relation to the coronavirus. Let’s go back to the “Where are COVID-19 cases increasing?” question and apply it on a local Utah level. To answer this question, you might first want to examine Utah counties, and to find out the geographic boundaries of each county, you’d need to work with the state’s county recorders. To learn about the population for each county, you’d be relying on the US Census Bureau. To learn about the number of cases of coronavirus in a county, you might look to the county health department. And so on. And then in Utah, AGRC would be the keeper of all this data, so we’d work with contacts from all of those groups.
 
 You can begin to see how many different groups are involved in collecting and making sense of GIS data. GIS, in general, is only as good as its data, and data is only as good as the collaboration between various entities to get that data.
 
@@ -63,7 +63,7 @@ In order for any country to effectively respond to the coronavirus, it is essent
 
 Now, all those reasons are valid and important in discussing how and why GIS is so essential during this pandemic. But I also have to wonder though about one more potential reason that we’re so interested in GIS, especially during times of uncertainty: Is spatial information about the coronavirus particularly helpful because our brains are naturally wired to process information spatially and visually? Maybe we’re  turning to GIS right now because processing information in that way naturally makes sense to our brains, and when things are uncertain and unpredictable in the world, like they are right now, we turn toward things that are familiar in order to gain a sense of comfort and control.
 
-As stated in the UGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”]({% link _posts/2020-01-29-cognitive-maps.md %}) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
+As stated in the AGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”]({% link _posts/2020-01-29-cognitive-maps.md %}) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
 
 People are more likely to notice and pay attention to visual information than written information (which I find especially ironic as I write this article). Jon Puleston, Kantar Consulting, explains this phenomenon well in the article [“The Science of Visuals”](http://www.lightspeedresearch.com/science-visuals/): “The human brain thinks in pictures.” And what are maps but pictures that share information about a specific area?
 
@@ -83,9 +83,9 @@ Whatever the reason for the current focus and reliance on GIS during this pandem
 ### Sources
 {: .text-left}
 
-Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” UGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/]({% link _posts/2020-01-29-cognitive-maps.md %}).
+Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” AGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/]({% link _posts/2020-01-29-cognitive-maps.md %}).
 
-Bunce, Greg. “Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS.” UGRC Blog. Published September 3, 2019. Accessed May 14, 2020. [https://gis.utah.gov/digital-maps-gis-history/]({% link _posts/2019-09-03-digital-maps-gis-history.md %}).
+Bunce, Greg. “Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS.” AGRC Blog. Published September 3, 2019. Accessed May 14, 2020. [https://gis.utah.gov/digital-maps-gis-history/]({% link _posts/2019-09-03-digital-maps-gis-history.md %}).
 
 _Geographic Information Systems (GIS) and Cancer Research._ US Department of Health and Human Services, National Institutes of Health, National Cancer Institute, 2006. (NIH Publication No. 07-6096). Reproduced by the US Department of Commerce National Technical Information Service. Springfield, VA. Accessed electronically on June 11, 2020. [https://classic.ntis.gov/assets/pdf/st-on-cd/PB2007103350.pdf](https://classic.ntis.gov/assets/pdf/st-on-cd/PB2007103350.pdf).
 
@@ -129,6 +129,7 @@ Robert B. Bechtel, and Arza Churchman. _Handbook of Environmental Psychology._ N
 
 Schenk, Frithjof Benjamin. “Mental Maps: The Cognitive Mapping of the Continent as an Object of Research of European History.” European History Online (EGO). Leibniz Institute of European History (IEG). Published July 08, 2013. [http://www.ieg-ego.eu/schenkf-2013-en](http://www.ieg-ego.eu/schenkf-2013-en).
 
-*[UGRC]: The Utah Geospatial Resource Center
+*[AGRC]: The Utah Automated Geographic Reference Center
 *[GIS]: Geographic information systems
 *[SGID]: State Geographic Information Database
+

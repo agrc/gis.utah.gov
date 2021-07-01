@@ -18,7 +18,7 @@ Does your department or division have authoritative datasets hosted in your own 
 
 All you need to do is **share your ArcGIS Online items with the appropriate SGID groups**. Items shared with these ArcGIS Online groups are automatically added to the SGID Open Data site.
 
-First, you have to be a member of the SGID groups that are the best fit for your datasets. Reach out to [UGRC staff]({% link about/contact/index.html %}) to request an invite. We'll work with you to identify what datasets are good matches for the SGID Open Data site and what group they best fit in.
+First, you have to be a member of the SGID groups that are the best fit for your datasets. Reach out to [AGRC staff]({% link about/contact/index.html %}) to request an invite. We'll work with you to identify what datasets are good matches for the SGID Open Data site and what group they best fit in.
 
 Once you're a member of the groups, share each approved item to the appropriate group. You also need to make sure the item is shared with "Everyone (public)". Otherwise, it will only be visible to you (or other members of your organization if shared to the organization) in Open Data.
 
@@ -29,7 +29,7 @@ Once you're a member of the groups, share each approved item to the appropriate 
 - The **title** is the first place people look for information. Because items in Open Data are also ArcGIS Online items that are searchable by anyone in the world, we have added "Utah" to the beginning of every title of our public ArcGIS Online items to provide better context.
 - A **user name** that includes the department/division's name or function helps users know where the dataset is coming from. For example, all the datasets we share are owned by the `UtahAGRC` user.
 - Open Data displays the text from the `Description` field of the source ArcGIS Online item for the **description**. You shouldn't count on any information in the ArcGIS Online `Summary` field to show up unless it's repeated in the description.
-- To help with searching, we include the "UGRC" and "SGID" **tags** on all our items while removing any tags that are repeated in the item's title. Please refer to Esri's [post about using tags effectively](https://www.esri.com/arcgis-blog/products/arcgis-online/data-management/using-tags-effectively/) for more ideas and information.
+- To help with searching, we include the "AGRC" and "SGID" **tags** on all our items while removing any tags that are repeated in the item's title. Please refer to Esri's [post about using tags effectively](https://www.esri.com/arcgis-blog/products/arcgis-online/data-management/using-tags-effectively/) for more ideas and information.
 - The "Last Updated" **date** is based on the last time the _ArcGIS Online item_ was changed, not the _data itself_. Things like updating the item's description or changing the thumbnail may update this date. For some frequently-updated datasets, we include the last update date in the description text or refer to the layer's description page on [gis.utah.gov/data]({% link data/index.html %}).
 - Keeping your **data schema** constant is a real help to your users. Some will be using your feature services directly in their webmaps rather than self-hosting a copy of your data and trying to keep it up-to-date. Removing fields or changing their types can break popups, search widgets, and other functionality. Adding new fields is less dangerous.
 - By default, users can't download spatial datasets from ArcGIS Online/Open Data as **File Geodatabases**. To enable this, go to the item's page in ArcGIS Online and click on the "Settings" tab. Scroll to the bottom and check the box to "Allow others to export data to different formats".
@@ -43,7 +43,7 @@ We've tried to be careful with our data to keep any superfluous sources out of t
 
 So where do the source values come from? Esri explains it [in this FAQ](https://doc.arcgis.com/en/hub/get-started/frequently-asked-questions.htm#GUID-9843B713-46D2-4938-A961-EC0CD81AE410). The main take away is that it first searches the **ArcGIS Online item's metadata** for an organization name. If it doesn't find anything there, it falls back to your **ArcGIS organization name**.
 
-If you'd like to customize the name displayed in the sources list, we suggest setting it in the `Resource > Citation > Contact > Organization Name` metadata field. Otherwise, make sure the metadata contact fields are empty and let it pick up your ArcGIS Online organization name. We use this second way to show "Utah Geospatial Resource Center (UGRC)" as the source for all our datasets.
+If you'd like to customize the name displayed in the sources list, we suggest setting it in the `Resource > Citation > Contact > Organization Name` metadata field. Otherwise, make sure the metadata contact fields are empty and let it pick up your ArcGIS Online organization name. We use this second way to show "Utah Automated Geographic Reference Center (AGRC)" as the source for all our datasets.
 
 To change the organization name in the ArcGIS Online item's metadata, you need to make sure your ArcGIS Online organization has [metadata enabled](https://doc.arcgis.com/en/arcgis-online/administer/configure-details.htm#ESRI_SECTION1_7FE1F060E03046E692BB36E5F6E3B2AE). Then you can use the Metadata editor on the ArcGIS Online item page to set either field:
 

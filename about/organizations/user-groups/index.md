@@ -1,8 +1,8 @@
 ---
 title: User Groups
 author:
-  display_name: UGRC Staff
-  email: ugrc@utah.gov
+  display_name: AGRC Staff
+  email: agrc@utah.gov
 tags: []
 categories: []
 date: 2011-06-30 23:16:09 -0600

@@ -13,7 +13,7 @@ date: 2011-06-30 18:22:37 -0500
 ---
 #### Save yourself some time and use our widgets!
 
-UGRC is actively developing and maintaining a core set of geospatial javascript widgets, and ArcGIS Toolbox and Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs]({% link developer/web-services/index.md %}) that you can use to solve spatial problems, derive spatial context, or create your own add-ins, toolbox, and widgets.
+AGRC is actively developing and maintaining a core set of geospatial javascript widgets, and ArcGIS Toolbox and Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs]({% link developer/web-services/index.md %}) that you can use to solve spatial problems, derive spatial context, or create your own add-ins, toolbox, and widgets.
 
 ### JavaScript
 
@@ -23,7 +23,7 @@ A few key pieces of functionality that our widgets offer are:
 
 - [**Geocoding addresses**](https://www.npmjs.com/package/@agrc/dart-board) - This widget provides the UI/UX and code to allow a user to input an address and provides the developer with the coordinates for the address.
 - [**Finding places**](https://www.npmjs.com/package/@agrc/sherlock) - With this widgets, a developer can quickly setup type ahead functionality for any layer in the SGID. The geometry for the selected element is returned. Popular uses for this are, Township, Range and Section queries, and other political boundary queries.
-- **UGRC Base maps** - You can also quickly add common mapping elements, like a map and [layer selector](https://www.npmjs.com/package/@agrc/layer-selector), to your website or blog.
+- **AGRC Base maps** - You can also quickly add common mapping elements, like a map and [layer selector](https://www.npmjs.com/package/@agrc/layer-selector), to your website or blog.
 
 Our widget library, and most all of the work that we do, is open source and accepting contributions. This easily allows for other developers to make improvements to the code. Browse our [GitHub organization](https://github.com/agrc) and fork the code!
 

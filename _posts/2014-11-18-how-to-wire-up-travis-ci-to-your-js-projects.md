@@ -8,7 +8,7 @@ title: How to Wire up Travis-CI to your JS Projects
 categories:
   - Developer
 ---
-<p>For the past six months, UGRC has been using <a href="https://travis-ci.org">Travis CI</a> to automatically test and lint our projects each time we push a commit to the associated GitHub repository. Even though we run these tasks locally it&#39;s been helpful to have them run on Travis for when we miss things. It&#39;s also a major step towards automated deployments as well as running our tests via something like <a href="https://saucelabs.com">Sauce Labs</a> or <a href="http://www.browserstack.com/">Browser Stack</a>.</p>
+<p>For the past six months, AGRC has been using <a href="https://travis-ci.org">Travis CI</a> to automatically test and lint our projects each time we push a commit to the associated GitHub repository. Even though we run these tasks locally it&#39;s been helpful to have them run on Travis for when we miss things. It&#39;s also a major step towards automated deployments as well as running our tests via something like <a href="https://saucelabs.com">Sauce Labs</a> or <a href="http://www.browserstack.com/">Browser Stack</a>.</p>
 <h3 id="travis-ci-org">travis-ci.org</h3>
 <p>The set up is relatively simple. The first step is to sign into <a href="https://travis-ci.org">travis-ci-.org</a> with your <a href="https://github.com">GitHub</a> account. Once you&#39;re signed in you can go to your accounts page and see all of the GitHub repositories associated with your account. Switching a repository to &quot;ON&quot; tells Travis-CI to start watching any new commits that you push to that repository.</p>
 <p><img src="{% link images/TravisSettings.png %}" alt="accounts page"></p>

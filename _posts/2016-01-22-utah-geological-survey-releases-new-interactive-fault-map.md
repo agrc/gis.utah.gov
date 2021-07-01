@@ -1,7 +1,7 @@
 ---
 author:
   display_name: JP
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - faults
   - geologic hazards
@@ -21,6 +21,6 @@ The Utah Geological Survey (UGS) has made the Utah Quaternary Fault and Fold Dat
 
 The interactive map’s user interface was built using ESRI’s JavaScript API. Several search options allow the user to locate a fault of interest, or specify a location to see if any Quaternary faults are nearby. Pop-up windows provide a brief summary of important information associated with the faults, as well as a link to detailed reports available through the USGS national database. Users can select from a variety of basemaps including topographic, shaded relief, and satellite imagery. A glossary explains terms used in the pop-up windows as well as terms used in the detailed reports that may be unfamiliar to non-geologists.
 
-In addition to the UGS interactive map, the Utah Quaternary Fault and Fold Database exists as a fully attributed GIS feature class in the State Geographic Information Database, and can be [downloaded from the UGRC]({% link data/geoscience/quaternary-faults/index.html %}).
+In addition to the UGS interactive map, the Utah Quaternary Fault and Fold Database exists as a fully attributed GIS feature class in the State Geographic Information Database, and can be [downloaded from the AGRC]({% link data/geoscience/quaternary-faults/index.html %}).
 
 _Guest Blog by the Utah Geological Survey_

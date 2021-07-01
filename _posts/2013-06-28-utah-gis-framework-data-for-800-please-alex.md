@@ -1,7 +1,7 @@
 ---
 author:
   display_name: JP
-  email: ugrc@utah.gov
+  email: agrc@utah.gov
 tags:
   - address
   - address points
@@ -15,7 +15,7 @@ categories:
 <p><a href="{% link images/AddressSample_A.jpg %}"><img src="{% link images/AddressSample_A-300x217.jpg %}" alt="" title="AddressSample_A" width="300" height="217" class="inline-text-left" /></a><i>ATrebek: "The answer Is.. 'At almost a million points and growing, this new statewide data resource adds extra precision to address location.'"</p>
 <p>KJennings: "What is Utah's Statewide Address Point Dataset?" </p>
 <p>ATrebek: "Correct."</i></p>
-<p>Built utilizing the expertise of Utah's county-level governments, a grant from the Department of Commerce's National Telecommunications and Information Administration (NTIA), and facilitation by UGRC and the Utah Broadband Project, this new data asset will deliver value to any application area that needs enhanced locational precision and/or a set of discrete addresses for Utah addresses. Public Safety, Point of Delivery Sales Tax, and Elections Management are three possible application areas. </p>
+<p>Built utilizing the expertise of Utah's county-level governments, a grant from the Department of Commerce's National Telecommunications and Information Administration (NTIA), and facilitation by AGRC and the Utah Broadband Project, this new data asset will deliver value to any application area that needs enhanced locational precision and/or a set of discrete addresses for Utah addresses. Public Safety, Point of Delivery Sales Tax, and Elections Management are three possible application areas. </p>
 <p>As with other GIS datasets in Utah's State Geographic Information Database (SGID), details about the data format, contents, completeness, update cycle, contacts, and accessibility for download or use via data-as-a-service at its dataset specific webpage, which in this case is: </p>
 <ul>
 <li><a href="{% link data/location/address-data/index.html %}">SGID10.Location.AddressPoints</a></li>

@@ -1,15 +1,15 @@
 ---
-title: 'Meet Nathan Kota - New UGRC Staff'
+title: 'Meet Nathan Kota - New AGRC Staff'
 author:
-  display_name: UGRC
-  email: ugrc@utah.gov
+  display_name: AGRC
+  email: agrc@utah.gov
 date: 2018-09-17 20:16:10
 categories: []
 tags: []
 ---
-UGRC would like to welcome Nathan Kota, the new Information Technology Manager. Nathan is going to help build and manage the development team as well as take our project management skills to the next level! We are excited to have Nathan as a part of the team.
+AGRC would like to welcome Nathan Kota, the new Information Technology Manager. Nathan is going to help build and manage the development team as well as take our project management skills to the next level! We are excited to have Nathan as a part of the team.
 
-#### What’s your title at UGRC?
+#### What’s your title at AGRC?
 
 Information Technology Manager
 
@@ -17,23 +17,23 @@ Information Technology Manager
 
 ![Nathan in his new office habitat]({% link images/Kota.png %}){: .inline-text-right .outline }
 
-It’s a mix of project and personnel management and everything in between. On a daily basis, I communicate with people from various Utah state agencies, local governments, and non-governmental entities about their GIS needs and how we can help address them. I work to build an understanding of those needs so I can define specific requirements that guide UGRC staff through project development. Then I ensure that our staff have the time and technology resources to produce quality deliverables for our clients, as well as to meet our internal needs. I also work with other DTS staff to ensure that things run smoothly so that UGRC staff can do their work and not be encumbered by bureaucratic procedures or processes. I attend a lot of meetings, and, ultimately, I ensure that the UGRC staff that I’m responsible for get their paychecks (ha!).
+It’s a mix of project and personnel management and everything in between. On a daily basis, I communicate with people from various Utah state agencies, local governments, and non-governmental entities about their GIS needs and how we can help address them. I work to build an understanding of those needs so I can define specific requirements that guide AGRC staff through project development. Then I ensure that our staff have the time and technology resources to produce quality deliverables for our clients, as well as to meet our internal needs. I also work with other DTS staff to ensure that things run smoothly so that AGRC staff can do their work and not be encumbered by bureaucratic procedures or processes. I attend a lot of meetings, and, ultimately, I ensure that the AGRC staff that I’m responsible for get their paychecks (ha!).
 
-#### What’s your background?/How did you end up at UGRC?
+#### What’s your background?/How did you end up at AGRC?
 
-I think I ended up at UGRC through a more circuitous and unconventional route than most. I actually earned both undergraduate and graduate degrees in biology. I then went to work for Utah’s wildlife management agency (i.e., the Utah Division of Wildlife Resources) as a geospatial database technician for the Utah Natural Heritage Program. I transitioned to assisting in the management of the Watershed Restoration Initiative, where I worked with UGRC to develop a business management and mapping application for the statewide watershed program. I then worked as a GIS analyst for UDWR before coming to UGRC. During my time at UDWR I also obtained a GIS certificate. So I’ve been working with GIS and in the GIS community for over a decade, and before I ended up at UGRC, I’d worked with various UGRC staff members on different projects throughout the years.
+I think I ended up at AGRC through a more circuitous and unconventional route than most. I actually earned both undergraduate and graduate degrees in biology. I then went to work for Utah’s wildlife management agency (i.e., the Utah Division of Wildlife Resources) as a geospatial database technician for the Utah Natural Heritage Program. I transitioned to assisting in the management of the Watershed Restoration Initiative, where I worked with AGRC to develop a business management and mapping application for the statewide watershed program. I then worked as a GIS analyst for UDWR before coming to AGRC. During my time at UDWR I also obtained a GIS certificate. So I’ve been working with GIS and in the GIS community for over a decade, and before I ended up at AGRC, I’d worked with various AGRC staff members on different projects throughout the years.
 
 #### GIS is a unique field; what made you decide to pursue a career in this field?
 
-Even as a kid I was naturally drawn to maps but had no idea of the depth and breadth of the application of maps and spatial data until I started working in the GIS field. While in graduate school, I recognized the connection between biological and geospatial data, and I took a few GIS classes. I got more interested in GIS while working as a geospatial database technician right out of graduate school, and I built my skills over time throughout my working career. Through local and national GIS conferences and meetings, I was amazed at how the technology could be beneficial to so many different fields. Working at UGRC now enables me to see that firsthand and to participate in enabling and expanding the use of GIS across a wide range of governmental (and non-governmental) entities.
+Even as a kid I was naturally drawn to maps but had no idea of the depth and breadth of the application of maps and spatial data until I started working in the GIS field. While in graduate school, I recognized the connection between biological and geospatial data, and I took a few GIS classes. I got more interested in GIS while working as a geospatial database technician right out of graduate school, and I built my skills over time throughout my working career. Through local and national GIS conferences and meetings, I was amazed at how the technology could be beneficial to so many different fields. Working at AGRC now enables me to see that firsthand and to participate in enabling and expanding the use of GIS across a wide range of governmental (and non-governmental) entities.
 
 #### What’s the most interesting GIS project you’ve ever worked on, and why?
 
-That’s a hard question. There have been so many of varying breadth and depth, all of which were important to someone. Most recently, before I came to UGRC, the GIS group at UDWR worked closely with biologists who put GPS collars on varying wildlife species to track their movements. With UGRC’s help, in fact, we set up a system to ingest, store, display in near real-time, and analyze species’ movement data. It was a vast improvement to the previous methods biologists had used to work with the data. The GIS solution provides a more efficient and effective way to view and analyze wildlife movement patterns, which influences wildlife management and conservation decision-making and practices.
+That’s a hard question. There have been so many of varying breadth and depth, all of which were important to someone. Most recently, before I came to AGRC, the GIS group at UDWR worked closely with biologists who put GPS collars on varying wildlife species to track their movements. With AGRC’s help, in fact, we set up a system to ingest, store, display in near real-time, and analyze species’ movement data. It was a vast improvement to the previous methods biologists had used to work with the data. The GIS solution provides a more efficient and effective way to view and analyze wildlife movement patterns, which influences wildlife management and conservation decision-making and practices.
 
-#### What do you want to accomplish at UGRC?
+#### What do you want to accomplish at AGRC?
 
-I look forward to connecting our colleagues throughout the state to the services that UGRC offers. There’s such a high level of expertise among the staff here, which allows us to offer solutions to so many GIS-related, and IT, needs. I plan to continue and strengthen the relationships UGRC has built over the years with so many different people and groups throughout Utah, and nationwide. I am interested in how I can potentially help to streamline some internal DTS and UGRC processes to increase efficiencies. And, finally, I would like to increase the incorporation of project management concepts and tools into the way we work with others in a client/vendor relationship, and internally.
+I look forward to connecting our colleagues throughout the state to the services that AGRC offers. There’s such a high level of expertise among the staff here, which allows us to offer solutions to so many GIS-related, and IT, needs. I plan to continue and strengthen the relationships AGRC has built over the years with so many different people and groups throughout Utah, and nationwide. I am interested in how I can potentially help to streamline some internal DTS and AGRC processes to increase efficiencies. And, finally, I would like to increase the incorporation of project management concepts and tools into the way we work with others in a client/vendor relationship, and internally.
 
 #### How do you spend your time outside the office? Any favorite hobbies or activities?
 
@@ -53,4 +53,4 @@ Cooking and cleaning!
 
 #### Anything else?
 
-I am grateful that UGRC has hired me in this role, and I will do my best to meet both the internal and external expectations of me across the vast sphere of interaction that UGRC has across the GIS and IT community.
+I am grateful that AGRC has hired me in this role, and I will do my best to meet both the internal and external expectations of me across the vast sphere of interaction that AGRC has across the GIS and IT community.
