@@ -6,10 +6,10 @@ author:
 date: 2019-09-16 18:17:41
 update_date: 2020-05-13 12:10:00
 categories:
-- Featured
+  - Featured
 tags:
-- lidar
-- 3dep
+  - lidar
+  - 3dep
 ---
 
 UGRC has awarded Aero-Graphics, Inc. and The Sanborn Map Company, Inc. to acquire [**26,036 square miles**](https://arcg.is/08W4bS "view project areas in ArcGIS Online") of aerial lidar elevation data. The lidar will be a combination of USGS Quality Level 1 (_QL1_), 8 points per square meter and Quality Level 2 (_QL2_), 2 points per square meter depending on the area. The 2019 QL2 project covering portions of Kane County, Utah was acquired last fall, is going through USGS Quality Assurance, and is scheduled to be completed by June 30, 2020. (_Due to Covid-19 related setbacks deliverables should be available by November 2020._) The 2020 acquisitions have begun and will continue throughout the year. These project areas will be completed in 2021 and project deliverables are scheduled to be completed by June 30, 2021.

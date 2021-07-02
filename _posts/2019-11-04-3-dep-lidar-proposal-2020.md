@@ -5,10 +5,10 @@ author:
   email: rkelson@utah.gov
 date: 2019-11-04 12:15:55
 categories:
-- Featured
+  - Featured
 tags:
-- lidar
-- 3dep
+  - lidar
+  - 3dep
 ---
 
 In October a partnership of Utah organizations submitted a proposal to the [USGS 3DEP FY19/20 BAA](https://www.usgs.gov/core-science-systems/ngp/3dep/fy1920-usgs-broad-agency-announcement-baa-3d-elevation-program-3dep) for over 18,217 square miles for 2020 Lidar acquisition projects. A couple projects (i.e., Kane County [Greater Sevier Addition] and Strawberry River) have already begun.
