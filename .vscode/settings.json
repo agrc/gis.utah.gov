@@ -1,4 +1,5 @@
 {
+  "prettier.enable": false,
   "cSpell.words": [
     "ASOF",
     "BLM's",
