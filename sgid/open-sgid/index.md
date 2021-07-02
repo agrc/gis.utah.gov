@@ -1,8 +1,8 @@
 ---
 title: Connect to the Open SGID
 author:
-  display_name: AGRC Office
-  email: agrc@utah.gov
+  display_name: UGRC Office
+  email: ugrc@utah.gov
 date: 2020-05-26 13:58:58 -0600
 layout: page_nocrumb
 categories: []
@@ -14,7 +14,7 @@ tags:
 
 The Open SGID is a cloud hosted, publicly available PostGIS database containing our currated SGID data. This database is one part of the [SGID]({% link sgid/index.html %}) and complements the web services and data downloads offered on our [Open Data site](https://opendata.gis.utah.gov/).
 
-To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.html %}). To learn more about the data categories available in the SGID, please visit the [AGRC data page]({% link data/index.html %}).
+To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.html %}). To learn more about the data categories available in the SGID, please visit the [UGRC data page]({% link data/index.html %}).
 
 ### Before you Connect...
 {: .text-left }

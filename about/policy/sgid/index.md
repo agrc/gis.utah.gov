@@ -1,8 +1,8 @@
 ---
 title: SGID Database Policies
 author:
-  display_name: AGRC Office
-  email: agrc@utah.gov
+  display_name: UGRC Office
+  email: ugrc@utah.gov
 tags:
   - policy
   - sgid
@@ -10,7 +10,7 @@ categories: []
 date: 2019-12-04 10:01:27 -0500
 ---
 
-The following policies apply to data in the internal SGID geodatabase, which is a curated database of state-wide datasets. It is maintained as an internal, AGRC-only Esri Enterprise Geodatabase and is available to everyone as the [Open SGID]({% link sgid/open-sgid/index.md %}) and as part of our [Open Data](https://opendata.gis.utah.gov) site.
+The following policies apply to data in the internal SGID geodatabase, which is a curated database of state-wide datasets. It is maintained as an internal, UGRC-only Esri Enterprise Geodatabase and is available to everyone as the [Open SGID]({% link sgid/open-sgid/index.md %}) and as part of our [Open Data](https://opendata.gis.utah.gov) site.
 
 1. TOC list
 {:toc}
@@ -46,7 +46,7 @@ We will add a corresponding record to the [Data Stewardship spreadsheet](https:/
 - A description
 - The data steward
 - The steward contact name and email
-- A link to the data page on the AGRC website
+- A link to the data page on the UGRC website
 - A link to the SGID Open Data page
 
 We will create a hosted feature service of the dataset in our ArcGIS Online organization. The ArcGIS Online item for this feature service will reside in the corresponding category folder and group and contain the appropriate tags. If the dataset is authoritative, it will be marked as `authoritative`.
@@ -79,13 +79,13 @@ Dates are acceptable in table names when content belongs in either the `census`,
 ## Updating and Editing Existing Datasets
 {: .text-left }
 
-No edits will be made to the internal SGID from 7:00PM to 10:00AM MST to allow for automated scripts to push accurate updates to ArcGIS Online and ArcGIS Server. AGRC will ensure that data is production-ready before the editing window ends.
+No edits will be made to the internal SGID from 7:00PM to 10:00AM MST to allow for automated scripts to push accurate updates to ArcGIS Online and ArcGIS Server. UGRC will ensure that data is production-ready before the editing window ends.
 
 All database updates will be done during the editing window using [Swapper](https://github.com/agrc/swapper) or some other automated process to reduce the amount of time with incomplete data.
 
 All data updates being pushed into the SGID will have removed empty geometries and duplicate records with [Sweeper](https://github.com/agrc/sweeper) or another automated process.
 
-All edits made to the internal SGID will be captured in the `Last update date` in the metadata, in the [Data Stewardship spreadsheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=0), and as an update on the AGRC website data page.
+All edits made to the internal SGID will be captured in the `Last update date` in the metadata, in the [Data Stewardship spreadsheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=0), and as an update on the UGRC website data page.
 
 If making a schema change, please consider updating any domain descriptions that do not match the domain value. See this [document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) to learn more about this effort.
 

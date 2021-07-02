@@ -14,7 +14,7 @@ Users of [TURN GPS]({% link data/cadastre/turn-gps/index.md %}) and other GPS se
 
 ![GPS Jamming Affected Locations]({% link images/GPS_Jamming_Map.png %})
 
-Please feel free to share your findings with the State of Utah AGRC.
+Please feel free to share your findings with the State of Utah UGRC.
 
 ### Testing Dates and Times
 

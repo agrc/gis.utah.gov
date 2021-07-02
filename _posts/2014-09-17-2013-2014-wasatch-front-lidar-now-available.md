@@ -30,13 +30,13 @@ categories:
   - SGID Blog
 ---
 
-Through partnerships with FEMA and the Utah Division of Emergency Management, USGS, Utah Geological Survey, and the Salt Lake County Surveyor's office and partner cities, AGRC is pleased to announce the new 2013-2014 Wasatch Front Lidar is now available. The 1,422 square miles of USGS Quality Level 1 Lidar was collected as an 8 point per meter (8 ppm) point cloud. The resulting bare earth hydro flattened (DTM) DEMs and first return or highest-hit (DSM) DEMs have a resolution of .5 meters.
+Through partnerships with FEMA and the Utah Division of Emergency Management, USGS, Utah Geological Survey, and the Salt Lake County Surveyor's office and partner cities, UGRC is pleased to announce the new 2013-2014 Wasatch Front Lidar is now available. The 1,422 square miles of USGS Quality Level 1 Lidar was collected as an 8 point per meter (8 ppm) point cloud. The resulting bare earth hydro flattened (DTM) DEMs and first return or highest-hit (DSM) DEMs have a resolution of .5 meters.
 
 This public domain elevation data is the latest addition to the State Geographic Information Database’s (SGID) elevation data collection. This dataset was collected during the late Fall of 2013 and the Spring of 2014. It will be put to work for a diverse set of uses including: the RiskMap modernization of flood hazard maps, fault studies, transportation project design, infrastructure mapping, solar energy quantification, and tree and vegetation studies.
 
-The 2013-2014 Wasatch Front Lidar can be downloaded through the [AGRC Raster Data Discovery](https://mapserv.utah.gov/raster/?cat=.5%20Meter%20%7B2013-2014%20LiDAR%7D) application.
+The 2013-2014 Wasatch Front Lidar can be downloaded through the [UGRC Raster Data Discovery](https://raster.utah.gov/?cat=.5%20Meter%20%7B2013-2014%20LiDAR%7D) application.
 
-Large area and .las point cloud requests can be filled by {% include contact.html subject=page.title contact=site.data.contacts.elevation hide-punctuation=true text='contacting' %} to schedule a time to bring in an external hard drive to AGRC. {% include contact.html subject=page.title contact=site.data.contacts.elevation %}
+Large area and .las point cloud requests can be filled by {% include contact.html subject=page.title contact=site.data.contacts.elevation hide-punctuation=true text='contacting' %} to schedule a time to bring in an external hard drive to UGRC. {% include contact.html subject=page.title contact=site.data.contacts.elevation %}
 
 The imagery was collected by WSI, now a Quantum Spatial company, based out of Portland, OR. Here is an overview of the data collection effort:
 

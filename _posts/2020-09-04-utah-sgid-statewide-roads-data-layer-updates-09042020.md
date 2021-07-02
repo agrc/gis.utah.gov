@@ -10,9 +10,9 @@ tags:
   - roads
 ---
 
-AGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System]({% link data/transportation/roads-system/index.html %}) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.
+UGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System]({% link data/transportation/roads-system/index.html %}) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.
 
-These road updates are also reflected in [AGRC's address locators]({% link data/address-geocoders-locators/index.html %}) and the [Utah Next-Generation 911 GIS Database]({% link data/911/index.html %}).
+These road updates are also reflected in [UGRC's address locators]({% link data/address-geocoders-locators/index.html %}) and the [Utah Next-Generation 911 GIS Database]({% link data/911/index.html %}).
 
 The following are highlights from this month's update.
 
@@ -37,8 +37,8 @@ Data was requested but not received for the following counties:
 
 Notes:
 
-- **Salt Lake County:** AGRC had complications with this month's update. It has been resolved and next month's update will include any missing updates. We apologies for any inconvenience.
-- **Utah County:** AGRC had complications with this month's update. It has been resolved and next month's update will include any missing updates. We apologies for any inconvenience.
+- **Salt Lake County:** UGRC had complications with this month's update. It has been resolved and next month's update will include any missing updates. We apologies for any inconvenience.
+- **Utah County:** UGRC had complications with this month's update. It has been resolved and next month's update will include any missing updates. We apologies for any inconvenience.
 
 #### UDOT Route System
 

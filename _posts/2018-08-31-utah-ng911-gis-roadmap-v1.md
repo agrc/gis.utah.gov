@@ -53,19 +53,19 @@ For further reading see [(reference 3, 4, 5, 7, 8, 9, 10)](#further-reading)
 ### Who's Responsible for What? [(see graphic below)](#graphic)
 {: .text-left}
 
-<abbr title="Utah Communications Authority">UCA</abbr> `911 Division` in conjunction with `AGRC` will:
+<abbr title="Utah Communications Authority">UCA</abbr> `911 Division` in conjunction with `UGRC` will:
 
 - Provide Utah's statewide [NG911 GIS database](/data/911);
 - Aggregate and validate 911 data (perform QA/QC before providing data to the State's NG911 Core Services service provider);
 - Ensure that required GIS datasets adhere to NENA NG911 Data Model specifications;
-  - AGRC will look for discrepancies and inconsistencies in the aggregated statewide [NG911 GIS Database](/data/911) and report discrepancies back to the data providers [section 5.4.3 of ref 5)](#further-reading); and
+  - UGRC will look for discrepancies and inconsistencies in the aggregated statewide [NG911 GIS Database](/data/911) and report discrepancies back to the data providers [section 5.4.3 of ref 5)](#further-reading); and
 - Be the authoritative source for PSAP boundaries utilized by NG911 Core Services (ECRF/LVF) [(section 3.5 of ref 3)](#further-reading).
 
 For further reading see [section 4.7 of ref 1, sections 4.1 and 5.2.4 of ref 5, section 3 of ref 3, and section 2.2.3 of ref 10](#further-reading):
 
 `Authoritative Data Providers` will:
 
-- Coordinate and collaborate with the <abbr title="Utah Communications Authority">UCA</abbr> 911 Division, AGRC, and neighboring agencies (PSAPs);
+- Coordinate and collaborate with the <abbr title="Utah Communications Authority">UCA</abbr> 911 Division, UGRC, and neighboring agencies (PSAPs);
 - Create, maintain, and provide required GIS datasets (within their provisioning boundary) for NG911 Core Services (ECRF/LVF):
   - Service area boundaries, and
   - Civic location data;
@@ -84,24 +84,24 @@ For further reading see [section 4.7 of ref 1, section 5.2.1 of ref 5, and secti
 #### `Near-Term`
 {: .text-left}
 
-Data validation and cleanup are the next, most logical steps for GIS readiness. These are often considered the first steps in NG911 transition. At the moment, AGRC is focused on facilitating two specific data validation checks, both mentioned in the previous Data Requirements section of this page:
+Data validation and cleanup are the next, most logical steps for GIS readiness. These are often considered the first steps in NG911 transition. At the moment, UGRC is focused on facilitating two specific data validation checks, both mentioned in the previous Data Requirements section of this page:
 
 ##### ALI/MSAG and GIS
 
-- The <abbr title="Utah Communications Authority">UCA</abbr> 911 Division is in the process of obtaining statewide ALI and MSAG data for the purpose of GIS data synchronizing. AGRC will geocode the ALI database against the GIS data to ensure that all valid addresses in the phone carrier’s database can be located/validated in the GIS data [(section 6 of ref 1)](#further-reading). A similar process will need to happen with the MSAG data. All valid addresses in the ALI database must have a corresponding site/structure address point in the GIS data.
-- AGRC will then work with the data providers to resolve any valid discrepancies.
+- The <abbr title="Utah Communications Authority">UCA</abbr> 911 Division is in the process of obtaining statewide ALI and MSAG data for the purpose of GIS data synchronizing. UGRC will geocode the ALI database against the GIS data to ensure that all valid addresses in the phone carrier’s database can be located/validated in the GIS data [(section 6 of ref 1)](#further-reading). A similar process will need to happen with the MSAG data. All valid addresses in the ALI database must have a corresponding site/structure address point in the GIS data.
+- UGRC will then work with the data providers to resolve any valid discrepancies.
 
 ##### Address Component Cross-Check
 {: #cross-check .text-left}
 
-- NG911 Core Services state that site/structure address points and road centerlines must be consistent. In other words: unless intended, each site/structure address point should match an associated road centerline. This supports the requirement that a civic address be considered valid if it can be located within the database uniquely [(section 4.8 of ref 1)](#further-reading). Here are some common mismatch issues AGRC has found:
+- NG911 Core Services state that site/structure address points and road centerlines must be consistent. In other words: unless intended, each site/structure address point should match an associated road centerline. This supports the requirement that a civic address be considered valid if it can be located within the database uniquely [(section 4.8 of ref 1)](#further-reading). Here are some common mismatch issues UGRC has found:
   - Address components don’t match, including mismatching in the following address component fields: pre-direction, street name, post type, and post direction.
     - To resolve: Data providers must determine which dataset (i.e., site/structure address points or road centerlines) has the correct address component and then correct the issue.
   - Site/structure address points cannot find corresponding road centerlines. Often this is because the road has the alias and primary names switched or the road segment has not been put into GIS yet.
     - To resolve: Data provider needs to determine the official primary street name and adjust dataset fields as needed.
   - Road centerline address range does not accommodate the address point.
     - To resolve: Typically, the road centerline address ranges need to be adjusted.
-- AGRC will work with data providers to resolve any unintended discrepancies (see the [What can you do now?](#do-now) section below).
+- UGRC will work with data providers to resolve any unintended discrepancies (see the [What can you do now?](#do-now) section below).
 
 #### `Mid-Term`
 {: .text-left}
@@ -127,11 +127,11 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 ## What Can You Do Now?
 {: #do-now .text-left}
 
-If you are a 911 GIS data provider, it's in your best interest to begin validating and provisioning your data as soon as possible. In the coming months, AGRC will geocode the ALI database and begin working with the data providers to resolve missing addresses.
+If you are a 911 GIS data provider, it's in your best interest to begin validating and provisioning your data as soon as possible. In the coming months, UGRC will geocode the ALI database and begin working with the data providers to resolve missing addresses.
 
-At the moment, the most effective thing you can do is to resolve unintended discrepancies between site/structure address points and road centerlines. To facilitate this effort, AGRC has created a custom process to perform these validation checks and then output the needed discrepancy reports for the 911 data providers. Get involved now by visiting the [project's homepage](https://gregbunce.github.io/AddressData_CrossCheck/).
+At the moment, the most effective thing you can do is to resolve unintended discrepancies between site/structure address points and road centerlines. To facilitate this effort, UGRC has created a custom process to perform these validation checks and then output the needed discrepancy reports for the 911 data providers. Get involved now by visiting the [project's homepage](https://gregbunce.github.io/AddressData_CrossCheck/).
 
-It's also in your best interest to view the current draft version of Utah's statewide [NG911 GIS database](/data/911). In particular, it is highly recommended that you validate your jurisdiction's PSAP, fire, law, and/or EMS boundaries, ensuring that they are correctly represented. AGRC will continue to push monthly updates and modifications into this database in hope that 911 data providers will view the data and help us resolve unintended discrepancies.
+It's also in your best interest to view the current draft version of Utah's statewide [NG911 GIS database](/data/911). In particular, it is highly recommended that you validate your jurisdiction's PSAP, fire, law, and/or EMS boundaries, ensuring that they are correctly represented. UGRC will continue to push monthly updates and modifications into this database in hope that 911 data providers will view the data and help us resolve unintended discrepancies.
 
 Keep in mind:
 

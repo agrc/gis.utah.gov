@@ -1,7 +1,7 @@
 ---
 author:
-  display_name: AGRC
-  email: agrc@utah.gov
+  display_name: UGRC
+  email: ugrc@utah.gov
 tags:
   - fuel sites
   - society
@@ -15,7 +15,8 @@ FuelSites:
     - December 2020
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" title="map" src="{% link images/StateFuelSites.png %}" alt="State Fuel Sites" loading="lazy" />
+  <img class="caption__image" title="map" src="{% link images/StateFuelSites.png %}" alt="State Fuel Sites"
+    loading="lazy" />
   <figcaption class="caption__text">State Fuel Sites</figcaption>
 </figure>
 {% include abstract.html name="State Fuel Sites"
@@ -25,7 +26,9 @@ abstract="This dataset contains fueling locations operated by the State Of Utah"
     <h3 id="FuelSites">State Fuel Sites</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>This dataset contains state-run fuel sites in the State Of Utah and contains the site name, site status, address and whether it offers gas and/or diesel. The dataset receives periodic updates and is maintained in collaboration with the <a href="https://fleet.utah.gov">Utah Division of Fleet Operations</a>.</p>
+    <p>This dataset contains state-run fuel sites in the State Of Utah and contains the site name, site status, address
+      and whether it offers gas and/or diesel. The dataset receives periodic updates and is maintained in collaboration
+      with the <a href="https://fleet.utah.gov">Utah Division of Fleet Operations</a>.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="FuelSites"

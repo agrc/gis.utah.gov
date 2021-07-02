@@ -13,22 +13,36 @@ categories:
   <h1>Raster Data Discovery</h1>
   <h3>Tools for finding and discovering raster products</h3>
   <div class="application__links">
-    <a class="application__url" href="https://raster.utah.gov"><i aria-hidden="true" class="fas fa-external-link-square-alt"></i><span class="sr-only">external link</span> raster.utah.gov</a>
-    <a class="application__repo" href="https://github.com/agrc/raster"><i aria-hidden="true" class="fab fa-github"></i><span class="sr-only">github repository link</span> Repository</a>
-    <a id="application__download" class="application__download" href="{% link data/aerial-photography/index.html %}"><i aria-hidden="true" class="fas fa-cloud-download-alt"></i><span class="sr-only">download data link</span> Download Application Data</a>
+    <a class="application__url" href="https://raster.utah.gov"><i aria-hidden="true"
+        class="fas fa-external-link-square-alt"></i><span class="sr-only">external link</span> raster.utah.gov</a>
+    <a class="application__repo" href="https://github.com/agrc/raster"><i aria-hidden="true"
+        class="fab fa-github"></i><span class="sr-only">github repository link</span> Repository</a>
+    <a id="application__download" class="application__download" href="{% link data/aerial-photography/index.html %}"><i
+        aria-hidden="true" class="fas fa-cloud-download-alt"></i><span class="sr-only">download data link</span>
+      Download Application Data</a>
   </div>
 </div>
 <figure class="application-figure application-figure--align-center">
-  <img src="raster_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423" height="579" loading="lazy" />
-  <figcaption class="application-figure__caption">Raster preview with a 1990s vintage black and white photo of Utah's State Capitol building</figcaption>
+  <img src="raster_utah_gov.png" class="application-figure__image outline" alt="initial view of application"
+    width="1423" height="579" loading="lazy" />
+  <figcaption class="application-figure__caption">Raster preview with a 1990s vintage black and white photo of Utah's
+    State Capitol building</figcaption>
 </figure>
 <h3>Why</h3>
-<p>Aerial photography, digital elevation models, LiDAR, topographic maps and elevation contours are invaluable asset for GIS and other industries. Knowing what resources are available for a location is a must. AGRC continues to organize the purchase of new LiDAR, elevation models and imagery while keeping the historical products available as services or as a download.</p>
-<p>Individually handling every unique public request for data does not scale and basic ftp downloads do not provide an acceptable user experience by AGRC standards. The Raster Data Discovery application is updated when new products are available making it the one stop web application for discovering and downloading the information you need.</p>
+<p>Aerial photography, digital elevation models, LiDAR, topographic maps and elevation contours are invaluable asset for
+  GIS and other industries. Knowing what resources are available for a location is a must. UGRC continues to organize
+  the purchase of new LiDAR, elevation models and imagery while keeping the historical products available as services or
+  as a download.</p>
+<p>Individually handling every unique public request for data does not scale and basic ftp downloads do not provide an
+  acceptable user experience by UGRC standards. The Raster Data Discovery application is updated when new products are
+  available making it the one stop web application for discovering and downloading the information you need.</p>
 <h3>Data Challenges</h3>
-<p>The sheer volume of data for this application presented a challenge. There are many dozens of layers and associated services. This was made manageable by creating extent polygons for each product. These are managed in polygon feature classes; one for each raster product category. This allows us to not have to query the tile indices for the actual products until a specific product is chosen.</p>
+<p>The sheer volume of data for this application presented a challenge. There are many dozens of layers and associated
+  services. This was made manageable by creating extent polygons for each product. These are managed in polygon feature
+  classes; one for each raster product category. This allows us to not have to query the tile indices for the actual
+  products until a specific product is chosen.</p>
 <script>
-  document.getElementById('application__download').addEventListener('click', function() {
+  document.getElementById('application__download').addEventListener('click', function () {
     ga('send', {
       hitType: 'event',
       eventCategory: 'data',

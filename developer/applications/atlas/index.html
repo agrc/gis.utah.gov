@@ -13,19 +13,31 @@ categories:
   <h1>Atlas</h1>
   <h3>Tools for visualizing Utah Roads, Imagery, and Widgets</h3>
   <div class="application__links">
-    <a class="application__url" href="https://atlas.utah.gov"><i aria-hidden="true" class="fas fa-external-link-square-alt"></i><span class="sr-only">external link</span> atlas.utah.gov</a>
-    <a class="application__repo" href="https://github.com/agrc/atlas"><i aria-hidden="true" class="fab fa-github"></i><span class="sr-only">github repository link</span> Repository</a>
-    <a id="application__download" class="application__download" href="{% link data/transportation/index.html %}"><i aria-hidden="true" class="fas fa-cloud-download-alt"></i><span class="sr-only">download data link</span> Download Application Data</a>
+    <a class="application__url" href="https://atlas.utah.gov"><i aria-hidden="true"
+        class="fas fa-external-link-square-alt"></i><span class="sr-only">external link</span> atlas.utah.gov</a>
+    <a class="application__repo" href="https://github.com/agrc/atlas"><i aria-hidden="true"
+        class="fab fa-github"></i><span class="sr-only">github repository link</span> Repository</a>
+    <a id="application__download" class="application__download" href="{% link data/transportation/index.html %}"><i
+        aria-hidden="true" class="fas fa-cloud-download-alt"></i><span class="sr-only">download data link</span>
+      Download Application Data</a>
   </div>
 </div>
 <figure class="application-figure application-figure--align-center">
-  <img src="atlas_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423" height="579" loading="lazy" />
-  <figcaption class="application-figure__caption">AGRC widgets with an informational popup derived from SGID data</figcaption>
+  <img src="atlas_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423"
+    height="579" loading="lazy" />
+  <figcaption class="application-figure__caption">UGRC widgets with an informational popup derived from SGID data
+  </figcaption>
 </figure>
 <h3>Why</h3>
-<p>AGRC offers many online services to facilitate the use of GIS and Atlas is a combination of most of those services. Atlas contains the complete and most current <a href="{% link discover/index.html %}">discover base maps</a>. Atlas also uses most of the <a href="{% link developer/widgets/index.md %}">AGRC javascript widgets</a>. The popup makes http requests to the <a href="{% link developer/web-services/index.md %}">AGRC Web API</a> to reverse geocode, search for the city, county, land ownership, elevation, and US National Grid of the point clicked. For AGRC developers, Atlas is a code base to keep improving its' usage of dojo and the esri js api. Atlas is often cloned and used as an application boilerplate for new projects as it's structure is optimal for the dojo build process.</p>
+<p>UGRC offers many online services to facilitate the use of GIS and Atlas is a combination of most of those services.
+  Atlas contains the complete and most current <a href="{% link discover/index.html %}">discover base maps</a>. Atlas
+  also uses most of the <a href="{% link developer/widgets/index.md %}">UGRC javascript widgets</a>. The popup makes
+  http requests to the <a href="{% link developer/web-services/index.md %}">UGRC Web API</a> to reverse geocode, search
+  for the city, county, land ownership, elevation, and US National Grid of the point clicked. For UGRC developers, Atlas
+  is a code base to keep improving its' usage of dojo and the esri js api. Atlas is often cloned and used as an
+  application boilerplate for new projects as it's structure is optimal for the dojo build process.</p>
 <script>
-  document.getElementById('application__download').addEventListener('click', function() {
+  document.getElementById('application__download').addEventListener('click', function () {
     ga('send', {
       hitType: 'event',
       eventCategory: 'data',

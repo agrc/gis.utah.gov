@@ -1,7 +1,7 @@
 ---
 author:
-  display_name: AGRC Staff
-  email: agrc@utah.gov
+  display_name: UGRC Staff
+  email: ugrc@utah.gov
 tags:
   - developers
   - javascript
