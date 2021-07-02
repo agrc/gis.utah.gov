@@ -5,14 +5,14 @@
 <ul class="dotless no-padding">
   {%- if include.category != nil -%}
   <li><strong>Category:</strong> <a href="{{ " /data/" | append: include.category | prepend: site.baseurl }}">{{
-      include.category | capitalize }}</a>
+      include.category | capitalize }}</a></li>
     {%- elsif include.exclude_parent == true -%}
     {%- else -%}
     {%- assign url_parts = page.url | split: "/" -%}
     {%- assign parts = url_parts | size | minus: 1 -%}
     {%- assign category = url_parts | slice: 2 | join: "" | capitalize -%}
   <li><strong>Category:</strong> <a href="{{ url_parts | slice: 0, parts | join: " /" | append: "/" | prepend:
-      site.baseurl }}" id="parent--category">{{ category }}</a>
+      site.baseurl }}" id="parent--category">{{ category }}</a></li>
     <script>
       document.getElementById('parent--category').addEventListener('click', function () {
         ga('send', {
@@ -25,13 +25,13 @@
       });
     </script>
     {%- endif -%}
-  <li><strong>Data Type:</strong> {{ include.type | default: "GIS Data Layer" }}
-  <li><strong>Steward(s):</strong> {{ include.stewards | default: "UGRC" }}
+  <li><strong>Data Type:</strong> {{ include.type | default: "GIS Data Layer" }}</li>
+  <li><strong>Steward(s):</strong> {{ include.stewards | default: "UGRC" }}</li>
     {%- for app in include.webapp -%}{%- if app.url != nil -%}
-  <li><strong>Web Application:</strong> <a href="{{ app.url }}">{{ app.label }}</a>
+  <li><strong>Web Application:</strong> <a href="{{ app.url }}">{{ app.label }}</a></li>
     {%- else -%}
-  <li><strong>Web Application:</strong> <a href="{{ app }}">View</a>{%- endif -%}{%- endfor -%}
-  <li><strong>Abstract:</strong> {{ include.abstract }}
+  <li><strong>Web Application:</strong> <a href="{{ app }}">View</a>{%- endif -%}{%- endfor -%}</li>
+  <li><strong>Abstract:</strong> {{ include.abstract }}</li>
 </ul>
 {%- if include.download != nul -%}
 <script>
