@@ -113,4 +113,4 @@ We anticipate some SGID datasets won't receive future updates, such as the bound
 ### "Shelved" Datasets
 {: .text-left }
 
-Over time, we will remove datasets from the SGID geodatabase that are no longer current but continue to have historical value (e.g., Census/ACS data or previous tax district boundaries). Their associated ArcGIS Online items will be tagged as `shelved` and placed in the public [UGRC Shelf](http://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9) ArcGIS Online group for future reference.
+Over time, we will remove datasets from the SGID geodatabase that are no longer current but continue to have historical value (e.g., Census/ACS data or previous tax district boundaries). Their associated ArcGIS Online items will be tagged as `shelved` and placed in the public [AGRC Shelf](http://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9) ArcGIS Online group for future reference.
