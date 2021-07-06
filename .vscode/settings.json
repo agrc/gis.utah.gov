@@ -1,5 +1,8 @@
 {
   "prettier.enable": false,
+  "files.associations": {
+    "*.html": "jekyll"
+  },
   "cSpell.words": [
     "ASOF",
     "BLM's",
