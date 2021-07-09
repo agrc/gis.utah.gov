@@ -2,7 +2,7 @@
 title: Utah Recognized in NSGIC Geospatial Excellence Awards
 author:
   display_name: Bert Granberg
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 date: 2017-10-31 20:41:59
 categories:
   - Featured

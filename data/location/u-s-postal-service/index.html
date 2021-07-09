@@ -31,15 +31,17 @@ ZipCodeBoundaries:
 </figure>
 {% include abstract.html
 name="United States Postal Service"
-stewards="AGRC and the USPS"
-abstract="These datasets are related to mail delivery. Included are post office locations and zipcode boundaries in Utah." %}
+stewards="UGRC and the USPS"
+abstract="These datasets are related to mail delivery. Included are post office locations and zipcode boundaries in
+Utah." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="USPSPostOffices">USPS Post Offices</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/USPSSmallB.png %}" alt="PostOffices" loading="lazy" />
-    <p>Utah Zip Code PO Boxes represents the approximate locations of USPS Post Offices in Utah. Each zipcode's assigned post office has a point, therefore if a post office has multiple zipcodes, it will have multiple points.</p>
+    <p>Utah Zip Code PO Boxes represents the approximate locations of USPS Post Offices in Utah. Each zipcode's assigned
+      post office has a point, therefore if a post office has multiple zipcodes, it will have multiple points.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
@@ -52,13 +54,17 @@ abstract="These datasets are related to mail delivery. Included are post office 
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/USPSSmall.png %}" alt="Zips" loading="lazy" />
-    <p>Utah ZIP Code Areas represents an ongoing effort to approximate the geographic extents of five digit zip codes. The dataset was produced using a combination of methods and is based on several sets of source data. Editing methods include:</p>
+    <p>Utah ZIP Code Areas represents an ongoing effort to approximate the geographic extents of five digit zip codes.
+      The dataset was produced using a combination of methods and is based on several sets of source data. Editing
+      methods include:</p>
     <ul>
       <li>Using local zipcode polygon data obtained from counties and cities.
-      <li>Identifying place locations (cities, towns, populated areas, etc.) from the postal service website and address information system (AIS) and building zipcode boundaries around these places.
+      <li>Identifying place locations (cities, towns, populated areas, etc.) from the postal service website and address
+        information system (AIS) and building zipcode boundaries around these places.
       <li>Using the 2000 Census TIGER line file’s zip code attributes.
     </ul>
-    <p>In addition, AGRC has used the locations of mailing addresses known to be valid to fine tune this dataset. The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+    <p>In addition, UGRC has used the locations of mailing addresses known to be valid to fine tune this dataset. The
+      native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.zip_codes %}</p>
   </div>
   {% include packagedata.html name="ZipCodeBoundaries"

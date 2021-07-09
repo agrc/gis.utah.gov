@@ -1,17 +1,17 @@
 ---
 author:
   display_name: Bert Granberg
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 tags:
   - address
   - geocoding
 date: 2013-04-02 08:51:51
-title: Using the AGRC Web API to geocode addresses
+title: Using the UGRC Web API to geocode addresses
 categories:
   - Featured
 ---
 
-Geographic coordinates for Utah addresses can now be located using the AGRC's Web API. This is the same API that are used by AGRC web applications.
+Geographic coordinates for Utah addresses can now be located using the UGRC's Web API. This is the same API that are used by UGRC web applications.
 
 [![API Explorer]({% link images/agrcapiexplorer-150x150.png %})](https://api.mapserv.utah.gov)
 {: .inline-text-right .outline}

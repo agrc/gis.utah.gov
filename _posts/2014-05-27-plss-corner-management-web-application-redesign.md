@@ -1,7 +1,7 @@
 ---
 author:
   display_name: JP
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 tags:
   - plss
   - surveyor
@@ -14,7 +14,7 @@ categories:
 <p><a href="{% link images/PLSSapp.png %}"><img src="{% link images/PLSSapp-251x300.png %}" alt="" title="PLSSapp" width="251" height="300" class="inline-text-right" /></a>The <a href="https://plss.utah.gov/">PLSS Corner Management Web Application</a> has been updated with a cleaner look which is much more user friendly. The PLSS web app gives users the ability to view section corner monument record sheets for corners that have already been published throughout the state, and it provides an online form that can be submitted for newly collected data on monuments.</p>
 <p>Features of this application include:</p>
 <ul>
-<li>AGRC standard map caches with an overlay of PLSS township lines, section lines and section points.</li>
+<li>UGRC standard map caches with an overlay of PLSS township lines, section lines and section points.</li>
 <li>Zoom tools with options to find a places of interest, a specific township, range and section, and the ability to zoom to specified coordinates.</li>
 <li>The ability to fill out an easy online form to submit corner data or submit an existing sheet created on your own desktop.</li>
 </ul>

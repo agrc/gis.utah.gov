@@ -1,14 +1,14 @@
 ---
 author:
   display_name: JP
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 tags:
   - bryce
   - conference
   - quiz
   - ugic
 date: 2016-05-26 19:01:07
-title: AGRC&#039;s Latest Where in Utah Quiz and UGIC 2016 Conf Recap
+title: UGRC&#039;s Latest Where in Utah Quiz and UGIC 2016 Conf Recap
 categories: []
 ---
 
@@ -27,4 +27,4 @@ Visit [ugic.org](https://ugic.org/) to keep up on UGIC news and sign up for the 
 <img class="caption__image" src="{% link images/WhereinUtahQuiz2016.jpg %}" alt="2016 Where in Utah Quiz?" loading="lazy" /></a>
 <figcaption class="caption__text">2016 Where in Utah Quiz?</figcaption>
 </figure>
-AGRC's latest [Where in Utah Quiz]({% link downloads/WhereinUtahQuiz2016.pdf %}) for the UGIC brochure was a hit, albeit a tad more challenging this year. Test your own Utah geography skills by determining where the locations on the quiz are. If you are stumped or want to check your answers, here is the key: [2016 Where in Utah Answer Key]({% link downloads/WhereinUtahQuiz2016_ANSWER_KEY.pdf %}), warning, spoilers!
+UGRC's latest [Where in Utah Quiz]({% link downloads/WhereinUtahQuiz2016.pdf %}) for the UGIC brochure was a hit, albeit a tad more challenging this year. Test your own Utah geography skills by determining where the locations on the quiz are. If you are stumped or want to check your answers, here is the key: [2016 Where in Utah Answer Key]({% link downloads/WhereinUtahQuiz2016_ANSWER_KEY.pdf %}), warning, spoilers!

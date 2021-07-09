@@ -13,16 +13,23 @@ categories: []
   <figcaption class="caption__text">Sample of Basic Parcels</figcaption>
 </figure>
 {%- capture abstract -%}
-Parcel data contains GIS mapping data representing parcel boundaries. AGRC has parcel data for all 29 counties. Some counties are more complete than others. In addition to the polygon geometry the attributes <code>PARCEL ID</code>, <code>PARCEL ADDRESS</code>, <code>PARCELS CITY</code>, <code>PARCEL ZIP CODE</code>, <code>OWNERSHIP TYPE</code>, and <code>RECORDER</code> contact are maintained in the Basic Parcel dataset when available. Users should be aware the owner type field <code>OWN_TYPE</code> in the parcel polygons is a very generalized ownership type (Federal, Private, State, Tribal). It is populated with the value of the <code>OWNER</code> field where the parcel's centroid intersects the <a href='{% link data/cadastre/land-ownership/index.html %}'>Land Ownership</a> polygon layer.
+Parcel data contains GIS mapping data representing parcel boundaries. UGRC has parcel data for all 29 counties. Some
+counties are more complete than others. In addition to the polygon geometry the attributes <code>PARCEL ID</code>,
+<code>PARCEL ADDRESS</code>, <code>PARCELS CITY</code>, <code>PARCEL ZIP CODE</code>, <code>OWNERSHIP TYPE</code>, and
+<code>RECORDER</code> contact are maintained in the Basic Parcel dataset when available. Users should be aware the owner
+type field <code>OWN_TYPE</code> in the parcel polygons is a very generalized ownership type (Federal, Private, State,
+Tribal). It is populated with the value of the <code>OWNER</code> field where the parcel's centroid intersects the <a
+  href='{% link data/cadastre/land-ownership/index.html %}'>Land Ownership</a> polygon layer.
 {%- endcapture -%}
 
 {% include abstract.html
 name="Utah Parcel Data"
-stewards="AGRC and Local Government"
+stewards="UGRC and Local Government"
 webapp="https://parcels.utah.gov"
 abstract=abstract %}
 
-<p class="pop">While addresses are provided with the parcel boundaries the authoritative dataset for addresses from AGRC is the <a href="{% link data/location/address-data/index.html %}">Address Points</a> layer.</p>
+<p class="pop">While addresses are provided with the parcel boundaries the authoritative dataset for addresses from UGRC
+  is the <a href="{% link data/location/address-data/index.html %}">Address Points</a> layer.</p>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="UtahParcels">Utah Basic Parcels</h3>
@@ -30,11 +37,27 @@ abstract=abstract %}
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/parcels.png %}" alt="Parcels" loading="lazy" />
     <p>Parcels_{County name} are datasets for cartography and approximate boundary identification.</p>
-    <p>In 2005, HB113 was passed requiring the AGRC Cadastral Surveyor to work with local government to create a parcel database for the State. <p><blockquote>63F-1-506.(3) (c) coordinate with county recorders and surveyors to create a statewide parcel layer in the State Geographic Information Database (SGID) containing parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information.</blockquote></p>
-    <p>The SGID contains county parcel data for each of the 29 counties in Utah and is updated as new data is provided from the data steward in each county. <a href="https://opendata.gis.utah.gov/datasets/utah-statewide-parcels-1?geometry=-125.574%2C36.998%2C-97.521%2C42.002">A statewide parcel dataset</a> is available from the Utah AGRC Open Data site.</p>
-    <p>Parcel polygons contain attributes unique to each parcel such as a unique parcel number (<code>PARCEL_ID</code>), address for the parcel (<code>PARCEL_ADD</code>, <code>PARCEL_CITY</code>, <code>PARCEL_ZIP</code>), update information (<code>ParcelsCur</code>, <code>ParcelsRec</code>, <code>ParcelsPub</code>, <code>ParcelYear</code>, <code>ParcelNotes</code>), a generalized land ownership designation (<code>OWN_TYPE</code>), and the phone number for the county recorders office (<code>RECORDER</code>).</p>
-    <p>This data when possible is updated twice a year with the newest data available from the counties. Some counties along the Wasatch Front are updated monthly when possible.</p>
-    <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
+    <p>In 2005, HB113 was passed requiring the UGRC Cadastral Surveyor to work with local government to create a parcel
+      database for the State.
+    <p>
+    <blockquote>63F-1-506.(3) (c) coordinate with county recorders and surveyors to create a statewide parcel layer in
+      the State Geographic Information Database (SGID) containing parcel boundary, parcel identifier, parcel address,
+      owner type, and county recorder contact information.</blockquote>
+    </p>
+    <p>The SGID contains county parcel data for each of the 29 counties in Utah and is updated as new data is provided
+      from the data steward in each county. <a
+        href="https://opendata.gis.utah.gov/datasets/utah-statewide-parcels-1?geometry=-125.574%2C36.998%2C-97.521%2C42.002">A
+        statewide parcel dataset</a> is available from the UGRC Open Data site.</p>
+    <p>Parcel polygons contain attributes unique to each parcel such as a unique parcel number (<code>PARCEL_ID</code>),
+      address for the parcel (<code>PARCEL_ADD</code>, <code>PARCEL_CITY</code>, <code>PARCEL_ZIP</code>), update
+      information (<code>ParcelsCur</code>, <code>ParcelsRec</code>, <code>ParcelsPub</code>, <code>ParcelYear</code>,
+      <code>ParcelNotes</code>), a generalized land ownership designation (<code>OWN_TYPE</code>), and the phone number
+      for the county recorders office (<code>RECORDER</code>).
+    </p>
+    <p>This data when possible is updated twice a year with the newest data available from the counties. Some counties
+      along the Wasatch Front are updated monthly when possible.</p>
+    <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute
+      content to: State of Utah, SGID.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.parcels %}</p>
   </div>
   <div class="grid__col grid__col--1-of-2">
@@ -52,21 +75,24 @@ abstract=abstract %}
         </tr>
         <tr>
           <td>Beaver</td>
-          <td><a href="https://opendata.gis.utah.gov/datasets/utah-beaver-county-parcels">July 2020</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-beaver-county-parcels">July 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-beaver-county-parcels-lir">2020</a></td>
-          <td><a title="county website" href="https://beaver.utah.gov/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="https://beaver.utah.gov/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Box Elder</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-box-elder-county-parcels">April 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-box-elder-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="http://gis.boxeldercounty.org/webmap/" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app" href="http://gis.boxeldercounty.org/webmap/" target="_blank"
+              rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>Cache</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-cache-county-parcels">August 2020</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-cache-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="https://www.cachecounty.org/gis/property-/-parcel-viewer.html" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app" href="https://www.cachecounty.org/gis/property-/-parcel-viewer.html"
+              target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>Carbon</td>
@@ -78,159 +104,190 @@ abstract=abstract %}
           <td>Daggett</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-daggett-county-parcels">June 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-daggett-county-parcels-lir">2020</a></td>
-          <td><a title="county website" href="https://www.daggettcounty.org/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="https://www.daggettcounty.org/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Davis</td>
-          <td><a href="https://opendata.gis.utah.gov/datasets/utah-davis-county-parcels">June 2021</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-davis-county-parcels">July 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-davis-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="https://www.co.davis.ut.us/recorder/property-search" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app" href="https://www.co.davis.ut.us/recorder/property-search"
+              target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>Duchesne</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-duchesne-county-parcels">March 2019</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-duchesne-county-parcels-lir">2017</a></td>
-          <td><a title="county parcel web app" href="https://duchesnecounty.maps.arcgis.com/apps/webappviewer/index.html?id=90c3cc34ed1a47c79d2b4b508ee9e507" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app"
+              href="https://duchesnecounty.maps.arcgis.com/apps/webappviewer/index.html?id=90c3cc34ed1a47c79d2b4b508ee9e507"
+              target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>Emery</td>
-          <td><a href="https://opendata.gis.utah.gov/datasets/utah-emery-county-parcels">July 2020</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-emery-county-parcels">July 2021</a></td>
           <td></td>
-          <td><a title="county website" href="http://www.emerycounty.com/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://www.emerycounty.com/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Garfield</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-garfield-county-parcels">April 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-garfield-county-parcels-lir">2020</a></td>
-          <td><a title="county website" href="http://garfield.utah.gov/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://garfield.utah.gov/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Grand</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-grand-county-parcels">February 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-grand-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="https://www.grandcountyutah.net/790/Parcel-Viewer-Map" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app" href="https://www.grandcountyutah.net/790/Parcel-Viewer-Map"
+              target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>Iron</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-iron-county-parcels">April 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-iron-county-parcels-lir">2020</a></td>
-          <td><a title="county website" href="https://www.ironcounty.net/government/departments/information-technology/gis" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website"
+              href="https://www.ironcounty.net/government/departments/information-technology/gis" target="_blank"
+              rel="noopener">county website</a></td>
         </tr>
         <tr>
           <td>Juab</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-juab-county-parcels">November 2018</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-juab-county-parcels-lir">2018</a></td>
-          <td><a title="county website" href="http://www.co.juab.ut.us/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://www.co.juab.ut.us/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Kane</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-kane-county-parcels">June 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-kane-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel search" href="http://eagleweb.kane.utah.gov/eaglesoftware/web/login.jsp" target="_blank" rel="noopener">county parcel search</a></td>
+          <td><a title="county parcel search" href="http://eagleweb.kane.utah.gov/eaglesoftware/web/login.jsp"
+              target="_blank" rel="noopener">county parcel search</a></td>
         </tr>
         <tr>
           <td>Millard</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-millard-county-parcels">September 2020</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-millard-county-parcels-lir">2020</a></td>
-          <td><a title="county website" href="https://www.millardcounty.org/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="https://www.millardcounty.org/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Morgan</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-morgan-county-parcels">October 2020</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-morgan-county-parcels-lir">2020</a></td>
-          <td><a title="county website" href="http://www.morgan-county.net/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://www.morgan-county.net/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Piute</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-piute-county-parcels">May 2021</a></td>
           <td></td>
-          <td><a title="county website" href="http://www.piute.org/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://www.piute.org/" target="_blank" rel="noopener">county website</a>
+          </td>
         </tr>
         <tr>
           <td>Rich</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-rich-county-parcels">May 2020</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-rich-county-parcels-lir">2020</a></td>
-          <td><a title="county website" href="http://www.richcountyut.org/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://www.richcountyut.org/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Salt Lake</td>
-          <td><a href="https://opendata.gis.utah.gov/datasets/utah-salt-lake-county-parcels">May 2021</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-salt-lake-county-parcels">July 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-salt-lake-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="https://slco.org/assessor/new/query/intropage.cfm" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app" href="https://slco.org/assessor/new/query/intropage.cfm" target="_blank"
+              rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>San Juan</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-san-juan-county-parcels">May 2014</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-san-juan-county-parcels-lir">2018</a></td>
-          <td><a title="county website" href="https://www.sanjuancounty.org/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="https://www.sanjuancounty.org/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Sanpete</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-sanpete-county-parcels">October 2015</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-sanpete-county-parcels-lir">2017</a></td>
-          <td><a title="county website" href="http://sanpete.com/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://sanpete.com/" target="_blank" rel="noopener">county website</a>
+          </td>
         </tr>
         <tr>
           <td>Sevier</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-sevier-county-parcels">June 2011</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-sevier-county-parcels-lir">2018</a></td>
-          <td><a title="county website" href="https://www.sevierutah.net/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="https://www.sevierutah.net/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Summit</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-summit-county-parcels">February 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-summit-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="http://maps.summitcounty.org/flexviewers/countymap/" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app" href="http://maps.summitcounty.org/flexviewers/countymap/"
+              target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>Tooele</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-tooele-county-parcels">October 2020</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-tooele-county-parcels-lir">2020</a></td>
-          <td><a title="county website" href="http://www.co.tooele.ut.us/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://www.co.tooele.ut.us/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Uintah</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-uintah-county-parcels">May 2020</a></td>
           <td></td>
-          <td><a title="county website" href="http://www.co.uintah.ut.us/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://www.co.uintah.ut.us/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Utah</td>
-          <td><a href="https://opendata.gis.utah.gov/datasets/utah-utah-county-parcels">June 2021</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-utah-county-parcels">July 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-utah-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="https://maps.utahcounty.gov/ParcelMap/ParcelMap.html" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app" href="https://maps.utahcounty.gov/ParcelMap/ParcelMap.html"
+              target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>Wasatch</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-wasatch-county-parcels">September 2020</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-wasatch-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="https://wasatch.maps.arcgis.com/apps/webappviewer/index.html?id=fe65f93c14a84f44814a81f97fa0fa5b" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app"
+              href="https://wasatch.maps.arcgis.com/apps/webappviewer/index.html?id=fe65f93c14a84f44814a81f97fa0fa5b"
+              target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>Washington</td>
-          <td><a href="https://opendata.gis.utah.gov/datasets/utah-washington-county-parcels">June 2021</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-washington-county-parcels">July 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-washington-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="https://geoprodvm.washco.utah.gov/Html5Viewer/?viewer=WashingtonCounty" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app"
+              href="https://geoprodvm.washco.utah.gov/Html5Viewer/?viewer=WashingtonCounty" target="_blank"
+              rel="noopener">county parcel web app</a></td>
           <td></td>
         </tr>
         <tr>
           <td>Wayne</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-wayne-county-parcels">July 2010</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-wayne-county-parcels-lir">2018</a></td>
-          <td><a title="county website" href="http://www.waynecountyutah.org/" target="_blank" rel="noopener">county website</a></td>
+          <td><a title="county website" href="http://www.waynecountyutah.org/" target="_blank" rel="noopener">county
+              website</a></td>
         </tr>
         <tr>
           <td>Weber</td>
-          <td><a href="https://opendata.gis.utah.gov/datasets/utah-weber-county-parcels">June 2021</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-weber-county-parcels">July 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-weber-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="https://www3.co.weber.ut.us/psearch/" target="_blank" rel="noopener">county parcel web app</a></td>
+          <td><a title="county parcel web app" href="https://www3.co.weber.ut.us/psearch/" target="_blank"
+              rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
-          <td colspan="4" style="text-align: center;"><strong><a href="https://drive.google.com/drive/folders/1ne7HkZI1L_NrnbszMraIIUGPV7cDCMtH">LIR Parcels Archive</a></strong></td>
+          <td colspan="4" style="text-align: center;"><strong><a
+                href="https://drive.google.com/drive/folders/1ne7HkZI1L_NrnbszMraIIUGPV7cDCMtH">LIR Parcels
+                Archive</a></strong></td>
         </tr>
       </table>
       <script>
-        document.getElementById('UtahParcels-dlist-table').addEventListener('click', function(evt) {
+        document.getElementById('UtahParcels-dlist-table').addEventListener('click', function (evt) {
           if (evt.target.tagName.toLowerCase() === 'a') {
             ga('send', {
               hitType: 'event',
@@ -251,6 +308,7 @@ abstract=abstract %}
     </div>
     <div class="panel-content">
       <ul class="dotless no-padding">
+        <li><strong>July 2021</strong> - Beaver, Emery, Davis, Salt Lake, Utah, Washington, Weber
         <li><strong>June 2021</strong> - Daggett, Davis, Kane, Utah, Washington, Weber
         <li><strong>May 2021</strong> - Davis, Kane, Piute, Salt Lake, Utah, Washington, Weber
         <li><strong>April 2021</strong> - Box Elder, Davis, Garfield, Iron, Kane, Utah, Washington, Weber
@@ -273,7 +331,8 @@ abstract=abstract %}
         <li><strong>October 2019</strong> - Carbon, Morgan, Salt Lake, Utah, Washington, Weber
         <li><strong>September 2019</strong> - Davis, Cache, Salt Lake, Tooele, Utah, Washington, Weber
         <li><strong>August 2019</strong> - Daggett, Davis, Iron, Salt Lake, Summit, Utah, Washington, Weber
-        <li><strong>July 2019</strong> - Beaver, Box Elder, Cache, Davis, Emery, Kane, Millard, Salt Lake, Utah, Wasatch, Washington, Weber
+        <li><strong>July 2019</strong> - Beaver, Box Elder, Cache, Davis, Emery, Kane, Millard, Salt Lake, Utah,
+          Wasatch, Washington, Weber
         <li><strong>June 2019</strong> - Daggett, Davis, Salt Lake, Tooele, Utah, Washington, Weber
         <li><strong>May 2019</strong> - Davis, Iron, Salt Lake, Utah, Washington, Weber
         <li><strong>April 2019</strong> - Box Elder, Salt Lake, Utah, Wasatch, Washington, Weber
@@ -290,7 +349,8 @@ abstract=abstract %}
         <li><strong>May 2018</strong> - Davis, Salt Lake, Tooele, Utah, Wasatch, Washington, Weber
         <li><strong>April 2018</strong> - Salt Lake, Utah, Washington
         <li><strong>March 2018</strong> - Box Elder, Davis, Morgan, Salt Lake, Utah, Washington, Weber
-        <li><strong>February 2018</strong> - Cache, Davis, Garfield, Piute, Salt Lake, Summit, Tooele, Utah, Washington, Wasatch, Weber
+        <li><strong>February 2018</strong> - Cache, Davis, Garfield, Piute, Salt Lake, Summit, Tooele, Utah, Washington,
+          Wasatch, Weber
         <li><strong>January 2018</strong> - Salt Lake, Utah, Washington
       </ul>
     </div>
@@ -303,11 +363,32 @@ abstract=abstract %}
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/parcels.png %}" alt="Parcels" loading="lazy" />
     <p>Parcels_{County name}_LIR are datasets for cartography and approximate boundary identification.</p>
-    <p>The Land Information Record Parcels (LIR) contain GIS mapping data representing parcel boundaries and county tax roll attributes. AGRC has Land Information Record Parcels for some of the counties in Utah. Since each County has its own database and process for maintaining tax year assessment information, users should expect some variability in each County's LIR dataset.</p>
-    <p>In addition to the polygon geometry the attributes <code>COUNTY_NAME</code>, <code>COUNTY_ID</code>, <code>ASSESSOR_SRC</code>, <code>BOUNDARY_SRC</code>, <code>DISCLAIMER</code>, <code>CURRENT_ASOF</code>, <code>PARCEL_ID</code>, <code>SERIAL_NUM</code>, <code>PARCEL_ADD</code>, <code>PARCEL_CITY</code>, <code>TAXEXEMPT_TYPE</code>, <code>TAX_DISTRICT</code>, <code>TOTAL_MKT_VALUE</code>, <code>LAND_MKT_VALUE</code>, <code>PARCEL_ACRES</code>, <code>PROP_CLASS</code>, <code>PRIMARY_RES</code>, <code>HOUSE_CNT</code>, <code>SUBDIV_NAME</code>, <code>BLDG_SQFT</code>, <code>BLDG_SQFT_INFO</code>, <code>FLOORS_CNT</code>, <code>FLOORS_INFO</code>, <code>BUILT_YR</code>, <code>EFFBUILT_YR</code>, <code>CONST_MATERIAL</code> are maintained in the Land Information Record Parcels dataset when available.</p>
-    <p>The Land Information Records (LIR) work group organized by the Governor’s Office of Management and Budget has facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety, economic development, transportation, planning and the provisions of public services. In May of 2016, the Land Information Records work group released its <a href="{% link _posts/2016-05-26-work-group-recommends-expanded-gis-parcel-sharing.md %}">recommendations for sharing an enhanced set of tax parcel GIS data</a>. A <a href="{% link _posts/2016-07-07-data-schema-released-for-expanded-gis-parcel-sharing.md %}">draft of the tax year parcel GIS data schema</a> is available. </p>
-    <p>Tax year parcel GIS data will be updated annually with the finalized year-end tax assessment data that is completed by May 22nd each year then submitted to the Automated Geographic Reference Center (AGRC) for loading into SDE by July 1st each year. </p>
-    <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
+    <p>The Land Information Record Parcels (LIR) contain GIS mapping data representing parcel boundaries and county tax
+      roll attributes. UGRC has Land Information Record Parcels for some of the counties in Utah. Since each County has
+      its own database and process for maintaining tax year assessment information, users should expect some variability
+      in each County's LIR dataset.</p>
+    <p>In addition to the polygon geometry the attributes <code>COUNTY_NAME</code>, <code>COUNTY_ID</code>,
+      <code>ASSESSOR_SRC</code>, <code>BOUNDARY_SRC</code>, <code>DISCLAIMER</code>, <code>CURRENT_ASOF</code>,
+      <code>PARCEL_ID</code>, <code>SERIAL_NUM</code>, <code>PARCEL_ADD</code>, <code>PARCEL_CITY</code>,
+      <code>TAXEXEMPT_TYPE</code>, <code>TAX_DISTRICT</code>, <code>TOTAL_MKT_VALUE</code>, <code>LAND_MKT_VALUE</code>,
+      <code>PARCEL_ACRES</code>, <code>PROP_CLASS</code>, <code>PRIMARY_RES</code>, <code>HOUSE_CNT</code>,
+      <code>SUBDIV_NAME</code>, <code>BLDG_SQFT</code>, <code>BLDG_SQFT_INFO</code>, <code>FLOORS_CNT</code>,
+      <code>FLOORS_INFO</code>, <code>BUILT_YR</code>, <code>EFFBUILT_YR</code>, <code>CONST_MATERIAL</code> are
+      maintained in the Land Information Record Parcels dataset when available.
+    </p>
+    <p>The Land Information Records (LIR) work group organized by the Governor’s Office of Management and Budget has
+      facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety, economic
+      development, transportation, planning and the provisions of public services. In May of 2016, the Land Information
+      Records work group released its <a
+        href="{% link _posts/2016-05-26-work-group-recommends-expanded-gis-parcel-sharing.md %}">recommendations for
+        sharing an enhanced set of tax parcel GIS data</a>. A <a
+        href="{% link _posts/2016-07-07-data-schema-released-for-expanded-gis-parcel-sharing.md %}">draft of the tax
+        year parcel GIS data schema</a> is available. </p>
+    <p>Tax year parcel GIS data will be updated annually with the finalized year-end tax assessment data that is
+      completed by May 22nd each year then submitted to the Utah Geospatial Resource Center (UGRC) for loading into SDE
+      by July 1st each year. </p>
+    <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute
+      content to: State of Utah, SGID.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.lir_parcels %}</p>
   </div>
   <div class="grid__col grid__col--1-of-2">

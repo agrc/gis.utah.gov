@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 tags:
   - developer
   - github
@@ -23,7 +23,7 @@ While, it is true that we are putting our faith in the engineers at GitHub to ke
 
 Another nice feature of GH Pages is its cloud-based, static website generator system. Our content repository is at [{{ site.github.repository_url }}]({{ site.github.repository_url }}), and any time an edit is approved and merged into the repo, the appropriate static pages on github.io servers are updated in seconds. And, through a clever bit of DNS work, the github.io servers are what the world sees as {% link index.html %}.
 
-![Forking the AGRC Website Repo in GitHub]({% link images/forkingagrc.png %})
+![Forking the UGRC Website Repo in GitHub]({% link images/forkingagrc.png %})
 {: .inline-text-left}
 
 The new architecture allows us to keep the distributed, multi-user editing capabilities expected in a CMS -- anyone can fork our website content repo and submit pull requests, containing the proposed changes, for our approval. In addition to administrative control over the content, GitHub also provides capabilities for easy local backups, and a complete transactional history of the site over time.
@@ -47,36 +47,36 @@ We’ve got more work to complete under Phase 1, but Phase 2 blueprints are star
 
 As always, we welcome and appreciate your {{ contact }} on the gis.utah.gov site.
 
-![Teamwork Cake for AGRC Website]({% link images/teamwork.png %})
+![Teamwork Cake for UGRC Website]({% link images/teamwork.png %})
 {: .text-right}
 
-Thanks to [@SteveAGRC](https://twitter.com/steveagrc) for the vision, leadership, and GitHub mentoring that got us all to v6.0!
+Thanks to [@steve_ugrc](https://twitter.com/steve_ugrc) for the vision, leadership, and GitHub mentoring that got us all to v6.0!
 
-Lastly, check out AGRC's websites over the last 20+ years..
+Lastly, check out UGRC's websites over the last 20+ years..
 
 <div class="grid">
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev0.png %}"><img alt="AGRC Website v0 Screenshot" src="{% link images/AGRCWebsitev0_thumb.png %}" loading="lazy" /></a><br />
-        <a href="https://web.archive.org/web/19970716211113/http://www.agr.state.ut.us/">AGRC Website v0</a>
+        <a href="{% link images/AGRCWebsitev0.png %}"><img alt="UGRC Website v0 Screenshot" src="{% link images/AGRCWebsitev0_thumb.png %}" loading="lazy" /></a><br />
+        <a href="https://web.archive.org/web/19970716211113/http://www.agr.state.ut.us/">UGRC Website v0</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev1.png %}"><img alt="AGRC Website v1 Screenshot" src="{% link images/AGRCWebsitev1_thumb.png %}" loading="lazy" /></a><br />
-        <a href="https://web.archive.org/web/19981201214147/http://www.its.state.ut.us/agrc/">AGRC Website v1</a>
+        <a href="{% link images/AGRCWebsitev1.png %}"><img alt="UGRC Website v1 Screenshot" src="{% link images/AGRCWebsitev1_thumb.png %}" loading="lazy" /></a><br />
+        <a href="https://web.archive.org/web/19981201214147/http://www.its.state.ut.us/agrc/">UGRC Website v1</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev2.png %}"><img alt="AGRC Website v2 Screenshot" src="{% link images/AGRCWebsitev2_thumb.png %}" loading="lazy" /></a><br />
-        <a href="https://web.archive.org/web/20030214191929/http://gis.utah.gov/">AGRC Website v2</a>
+        <a href="{% link images/AGRCWebsitev2.png %}"><img alt="UGRC Website v2 Screenshot" src="{% link images/AGRCWebsitev2_thumb.png %}" loading="lazy" /></a><br />
+        <a href="https://web.archive.org/web/20030214191929/http://gis.utah.gov/">UGRC Website v2</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev3.png %}"><img alt="AGRC Website v3 Screenshot" src="{% link images/AGRCWebsitev3_thumb.png %}" /loading="lazy" ></a><br />
-        <a href="https://web.archive.org/web/20030214191929/http://gis.utah.gov/">AGRC Website v3</a>
+        <a href="{% link images/AGRCWebsitev3.png %}"><img alt="UGRC Website v3 Screenshot" src="{% link images/AGRCWebsitev3_thumb.png %}" loading="lazy" ></a><br />
+        <a href="https://web.archive.org/web/20030214191929/http://gis.utah.gov/">UGRC Website v3</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev4.png %}"><img alt="AGRC Website v4 Screenshot" src="{% link images/AGRCWebsitev4_thumb.png %}" loading="lazy" /></a><br />
-        <a href="https://web.archive.org/web/20090323175622/http://gis.utah.gov/">AGRC Website v4</a>
+        <a href="{% link images/AGRCWebsitev4.png %}"><img alt="UGRC Website v4 Screenshot" src="{% link images/AGRCWebsitev4_thumb.png %}" loading="lazy" /></a><br />
+        <a href="https://web.archive.org/web/20090323175622/http://gis.utah.gov/">UGRC Website v4</a>
     </div>
     <div class="grid__col grid__col--1-of-3 grid__col--m-1-of-2 text-center">
-        <a href="{% link images/AGRCWebsitev5.png %}"><img alt="AGRC Website v5 Screenshot" src="{% link images/AGRCWebsitev5_thumb.png %}" loading="lazy" /></a><br />
-        <a href="https://web.archive.org/web/20140701075235/http://gis.utah.gov/">AGRC Website v5</a>
+        <a href="{% link images/AGRCWebsitev5.png %}"><img alt="UGRC Website v5 Screenshot" src="{% link images/AGRCWebsitev5_thumb.png %}" loading="lazy" /></a><br />
+        <a href="https://web.archive.org/web/20140701075235/http://gis.utah.gov/">UGRC Website v5</a>
     </div>
 </div>

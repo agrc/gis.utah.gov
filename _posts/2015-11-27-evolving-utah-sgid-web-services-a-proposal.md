@@ -1,7 +1,7 @@
 ---
 author:
   display_name: Bert Granberg
-  email: agrc@utah.gov
+  email: ugrc@utah.gov
 tags:
   - centralize
   - data
@@ -20,7 +20,7 @@ The topic of this post is how best to organize, and provide access to Utah’s e
 #### A Little SGID Background...
 {: .text-left}
 
-Utah’s State Geographic Information Database (aka, 'the SGID’), was formally established in 1991 by the passage of SB21, the 'Geographic Information Systems Data Sharing and Conformity Bill,’ which remains in effect today as [63F-1-507](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html). Key provisions of the SGID statute are: a central clearinghouse and repository, the requirement of for state agencies to contribute all geographic data acquired or produced that is classified public, and a role for AGRC in setting GIS standards and requirements. [More early Utah GIS history](https://drive.google.com/file/d/0BxoOAQyOvGgac2wzV3g3X0lmX25oQlk3TDVDQVlwSV9TaVVn/view?usp=sharing).
+Utah’s State Geographic Information Database (aka, 'the SGID’), was formally established in 1991 by the passage of SB21, the 'Geographic Information Systems Data Sharing and Conformity Bill,’ which remains in effect today as [63F-1-507](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html). Key provisions of the SGID statute are: a central clearinghouse and repository, the requirement of for state agencies to contribute all geographic data acquired or produced that is classified public, and a role for UGRC in setting GIS standards and requirements. [More early Utah GIS history](https://drive.google.com/file/d/0BxoOAQyOvGgac2wzV3g3X0lmX25oQlk3TDVDQVlwSV9TaVVn/view?usp=sharing).
 
 A decade in, GIS web services are much more more manageable by data stewards due to the proliferation of UI-driven platform tools within ArcGIS Server, AGOL, Socrata, Github, etc. It is arguably now easier to publish GIS data content as a web services, than it is to:
 
@@ -48,7 +48,7 @@ The **Inventory Table** would contain 1 record _for every authoritative GIS laye
 
 The **Update Log Table** would contain 1 record created _each time a data content update was published to the endpoint_ listed for an authoritative GIS Layer listed in the Inventory Table. (See mockup of the Update Log Table near the bottom of this post).
 
-AGRC has used a similar Google Docs-based approach for logging internal GIS data updates. To be useful for tracking changes to _decentralized_ GIS data resources, we would need to work with GIS data managers to both define the overall process and edit options for getting updates into the two tables (direct to table or notification to AGRC).
+UGRC has used a similar Google Docs-based approach for logging internal GIS data updates. To be useful for tracking changes to _decentralized_ GIS data resources, we would need to work with GIS data managers to both define the overall process and edit options for getting updates into the two tables (direct to table or notification to UGRC).
 
 Ideally, the information in these two tables could be pulled, via API or other means, and styled to present a list of authoritative GIS data resources to end users. Additionally, a dashboard (mockup at bottom of the post) could be shown that shows the stated update frequency goal, the time until the next update, and the status relating to the update goal (how well are we doing?).
 
@@ -59,12 +59,12 @@ We feel that the proposed Tracking system is a good method for ensuring that our
 #### Feedback and Next Steps...
 {: .text-left}
 
-We've aired this idea with a few of you already and have received generally positive reactions and suggestions for refinement. After receiving your additional feedback in coming week(s), AGRC would like use this concept to begin implementing a publicly accessible 'tracking system' for GIS web service and data updates.
+We've aired this idea with a few of you already and have received generally positive reactions and suggestions for refinement. After receiving your additional feedback in coming week(s), UGRC would like use this concept to begin implementing a publicly accessible 'tracking system' for GIS web service and data updates.
 
 ![dog food]({% link images/dog_food.png %})
 {: .inline-text-left}
 
-We'll start by [eating our own dog food](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) -- populating these tables with the information that we manage here at AGRC. Next we'll work with UDOT and other UMIP partner agencies to add all of the GIS layers used within the PEL preliminary environmental screening application. And after that, we'll work with willing GIS data managers to add their content to the system.
+We'll start by [eating our own dog food](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) -- populating these tables with the information that we manage here at UGRC. Next we'll work with UDOT and other UMIP partner agencies to add all of the GIS layers used within the PEL preliminary environmental screening application. And after that, we'll work with willing GIS data managers to add their content to the system.
 
 But it all starts with your review. {% include contact.html subject=page.title contact=site.data.contacts.agrc %}
 
