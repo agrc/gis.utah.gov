@@ -20,7 +20,7 @@ The topic of this post is how best to organize, and provide access to Utah’s e
 #### A Little SGID Background...
 {: .text-left}
 
-Utah’s State Geographic Information Database (aka, 'the SGID’), was formally established in 1991 by the passage of SB21, the 'Geographic Information Systems Data Sharing and Conformity Bill,’ which remains in effect today as [63F-1-507](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html). Key provisions of the SGID statute are: a central clearinghouse and repository, the requirement of for state agencies to contribute all geographic data acquired or produced that is classified public, and a role for UGRC in setting GIS standards and requirements. [More early Utah GIS history](https://drive.google.com/file/d/0BxoOAQyOvGgac2wzV3g3X0lmX25oQlk3TDVDQVlwSV9TaVVn/view?usp=sharing).
+Utah’s State Geographic Information Database (aka, 'the SGID’), was formally established in 1991 by the passage of SB21, the 'Geographic Information Systems Data Sharing and Conformity Bill,’ which remains in effect today as [63F-1-507](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html). Key provisions of the SGID statute are: a central clearinghouse and repository, the requirement of for state agencies to contribute all geographic data acquired or produced that is classified public, and a role for UGRC in setting GIS standards and requirements. [More early Utah GIS history](https://drive.google.com/file/d/1H0KaE5JqL5KSNwCK5YTlQGSlbjnEWZfj/view?usp=sharing).
 
 A decade in, GIS web services are much more more manageable by data stewards due to the proliferation of UI-driven platform tools within ArcGIS Server, AGOL, Socrata, Github, etc. It is arguably now easier to publish GIS data content as a web services, than it is to:
 

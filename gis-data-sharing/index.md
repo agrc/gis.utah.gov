@@ -57,7 +57,7 @@ Listed below are the layers we hope to complete and keep current through partner
 This is a multi-purpose statewide roads dataset for cartography and range based-address location. View our
 [Transportation Data Model](https://drive.google.com/file/d/0Bz18jufMWioiU25icDNoQWlJa2M/view),
 [attribute descriptions and definitions](https://docs.google.com/document/d/1ojjqCa1Z6IG6Wj0oAbZatoYsmbKzO9XwdD88-kqm-zQ/edit),
-and [download the Transportation Data Model schema](ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/UtahRoadsDataSchema/UtahRoadsDataSchema_gdb.zip).
+and [download the Transportation Data Model schema](https://drive.google.com/uc?export=download&id=0ByStJjVZ7c7mMXdRSWk0SWhncXc).
 
 Listed below are considered the minimum attributes:
 
@@ -71,8 +71,7 @@ Listed below are considered the minimum attributes:
 
 ![Address Points]({% link images/90x90_address_points.png %}){: .pull-right .outline loading="lazy" }
 
-View our
-[Address Points Data Model](https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit?usp=sharing) and samples of [what they are used for]({% link downloads/Address_Point_Database_Values_V1_051914.pdf %}).
+View samples of [what they are used for]({% link downloads/Address_Point_Database_Values_V1_051914.pdf %}).
 Listed below are considered the minimum attributes:
 
 | Full Address (physical/situs)(ex. 622 N KAYCIE LN) | City | Zip Code | Parcel ID |
