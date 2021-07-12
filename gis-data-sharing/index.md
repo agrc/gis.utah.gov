@@ -57,7 +57,7 @@ Listed below are the layers we hope to complete and keep current through partner
 This is a multi-purpose statewide roads dataset for cartography and range based-address location. View our
 [Transportation Data Model](https://drive.google.com/file/d/0Bz18jufMWioiU25icDNoQWlJa2M/view),
 [attribute descriptions and definitions](https://docs.google.com/document/d/1ojjqCa1Z6IG6Wj0oAbZatoYsmbKzO9XwdD88-kqm-zQ/edit),
-and [download the Transportation Data Model schema](https://drive.google.com/uc?export=download&id=0ByStJjVZ7c7mMXdRSWk0SWhncXc).
+and [download the Transportation Data Model schema](https://drive.google.com/file/d/1Oi24SLBBFLr-H_pIIjQDTMP31jel5bET/view?usp=sharing).
 
 Listed below are considered the minimum attributes:
 
