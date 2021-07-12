@@ -17,7 +17,5 @@ A county wishing to submit an application to the Committee that meets the follow
 - Establishes a plan that is consistent with federal law or rule to protect or rehabilitate each monument.
 - Requests a specific amount of funding to complete the plan.
 
-Supporting documents, including the grant application, are available [here](https://drive.google.com/open?id=0BxZfA5vHEKqzUGozazR5bFNPRU0">).
-
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.surveyor %}{% endcapture %}
 {{ contact }}
