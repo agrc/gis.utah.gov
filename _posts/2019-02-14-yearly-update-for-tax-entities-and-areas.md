@@ -24,11 +24,11 @@ The Tax Areas for 2018 are individual, unique polygons that show the tax entitie
 
 #### Newest Sales Tax Areas for Quarter 1, 2019
 
-Sales tax areas are created from municipal boundaries, metro townships, special sales tax districts, and  unincorporated areas. They represent the approximate boundaries of sales tax collection areas in Utah. Get the newest sales tax area data with the [Sales Tax Areas dataset](https://www.google.com/url?q=https://drive.google.com/drive/folders/0ByStJjVZ7c7mQy1iYXlqQTJLQUE&sa=D&ust=1550186721948000&usg=AFQjCNEpaTHvD8l59FSJmVzOty8IXj3Reg).
+Sales tax areas are created from municipal boundaries, metro townships, special sales tax districts, and  unincorporated areas. They represent the approximate boundaries of sales tax collection areas in Utah. Get the newest sales tax area data with the [Sales Tax Areas dataset](https://opendata.gis.utah.gov/datasets/utah-sales-tax-zones).
 
 #### Updated Transit Special Tax Areas
 
-Transit special tax areas represent areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses). As cities grow and annex the unincorporated areas the transit areas get smaller. Check out the updated [Transit Special Tax Areas dataset](https://www.google.com/url?q=https://drive.google.com/drive/folders/0ByStJjVZ7c7mcVlHOXQ0djUtaEU&sa=D&ust=1550186688195000&usg=AFQjCNF3mO46t3BMv_P_s1e7KxnHnZIzbA).
+Transit special tax areas represent areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses). As cities grow and annex the unincorporated areas the transit areas get smaller. Check out the updated [Transit Special Tax Areas dataset](https://opendata.gis.utah.gov/datasets/utah-transit-special-tax-areas).
 
 #### Available for Download
 

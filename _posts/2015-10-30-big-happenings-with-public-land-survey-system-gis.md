@@ -21,7 +21,7 @@ Two parallel developments -- state stewardship of the PLSS GIS layers and the es
 ### State Stewardship of the PLSS GIS Layers
 {: .text-left}
 
-This August, the State of Utah negotiated and signed a [Memorandum of Understanding](https://drive.google.com/a/utah.gov/file/d/0BxoOAQyOvGgaV3Y4ZFByNEJ2dl9rN0ZIelZXTXJBTDIxOERz/view) (MOU) with the BLM to take over stewardship of the PLSS corner point and township, range, and section GIS layers. The goal of the MOU is to improve the spatial accuracy of this dataset by incorporating locally collected survey control, incorporating a change management process, and adopting the ESRI Parcel Fabric data model for the ongoing maintenance of Utah’s PLSS dataset.
+This August, the State of Utah negotiated and signed a [Memorandum of Understanding](https://drive.google.com/file/d/1GoNuIEhg80KFB5e2FqL64RkspyCJlzu7/view?usp=sharing) (MOU) with the BLM to take over stewardship of the PLSS corner point and township, range, and section GIS layers. The goal of the MOU is to improve the spatial accuracy of this dataset by incorporating locally collected survey control, incorporating a change management process, and adopting the ESRI Parcel Fabric data model for the ongoing maintenance of Utah’s PLSS dataset.
 
 The MOU establishes roles and responsibilities for UGRC, SITLA, and the BLM:
 
