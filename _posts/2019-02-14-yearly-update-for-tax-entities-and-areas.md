@@ -18,9 +18,9 @@ As of January 28, we’re officially in tax season, and UGRC can help you stay i
 
 #### Newest Tax Entities for 2018
 
-The [Tax Entities dataset](https://www.google.com/url?q=https://drive.google.com/drive/folders/1F_gcgx68eaco_KPoKaiygD2ehzuDEudZ&sa=D&ust=1550186734827000&usg=AFQjCNGDEpHwYonefD9gUJBqYa1zEvORJA) contains the 2018 year-end data for all tax entities, such as school districts, cities, special service districts, and even mosquito abatement districts, that have the power to levy a local property tax. While these areas do not represent exact legal boundaries, they are used by the Utah State Tax Commission, Property Tax Division, for assessing properties.
+The Tax Entities dataset contains the 2018 year-end data for all tax entities, such as school districts, cities, special service districts, and even mosquito abatement districts, that have the power to levy a local property tax. While these areas do not represent exact legal boundaries, they are used by the Utah State Tax Commission, Property Tax Division, for assessing properties.
 
-The [Tax Areas](https://www.google.com/url?q=https://drive.google.com/drive/folders/1F_gcgx68eaco_KPoKaiygD2ehzuDEudZ&sa=D&ust=1550186771768000&usg=AFQjCNGR53iCWfSTRToeCDGYF9NbKa6hdg) for 2018 are individual, unique polygons that show the tax entities for that area. They can include anywhere from 2 up to 24 entities, with an average of 10 entities. These will be the entities that you pay taxes to. Which tax area do you live in?
+The Tax Areas for 2018 are individual, unique polygons that show the tax entities for that area. They can include anywhere from 2 up to 24 entities, with an average of 10 entities. These will be the entities that you pay taxes to. Which tax area do you live in?
 
 #### Newest Sales Tax Areas for Quarter 1, 2019
 
