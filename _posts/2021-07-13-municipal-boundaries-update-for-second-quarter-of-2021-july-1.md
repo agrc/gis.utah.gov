@@ -6,10 +6,11 @@ author:
 date: 2021-07-13 21:51:04
 categories:
   - SGID Blog
+  - Featured
 tags:
-  - Municipalities
+  - municipalities
   - boundaries
-  - Annexations
+  - annexations
 ---
 
 We find ourselves in the middle of a very hot and dry year. Hope everyone is keeping cool and hydrated. So the state is open up again and things are trying to get back to normal since the pandemic took over last year. It has been a slower start but things are picking up in the second quarter of this year. The Lt. Governor’s Office is still going through some transition and a few annexations have been misplaced in the cracks, we are working to correct that. We will get things worked out in the next little while. 
@@ -18,6 +19,7 @@ Stay safe and healthy. As always feel free to check out all the changes and make
 They are still working on the webpage so some documents are missing from: [Utah Lt. Governor Municipal Certifications](https://municert.utah.gov/) Still awaiting any changes that may be coming for this location, stay tuned for updates.
 
 Following are the changes and annexations since April 1, 2021 listed by County and City:
+
 | County | City | Number of Changes |
 | --- | --- | --- |
 | Cache | Hyde Park | 1 |
