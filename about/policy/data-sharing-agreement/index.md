@@ -16,7 +16,7 @@ date: 2021-07-16 17:00:00 -0700
 
 The following Data Sharing Agreement applies to all individuals and organizations sharing data with the SGID in any way.
 
-In order to reduce the friction of adding data to the SGID, by submitting a [Porter issue](https://github.com/agrc/porter/issues) to introduce your data to the SGID, you consent to this Data Sharing Agreement. In cases where UGRC submits the Porter issue on your behalf, UGRC will contact you via email to get your consent to this agreement.
+You consent to this Data Sharing Agreement when you submit a [Porter issue](https://github.com/agrc/porter/issues/new?assignees=%40steveoh%2C+%40gregbunce%2C+%40rkelson&labels=introduction%2C+porter&template=1-introduce-sgid-dataset.md&title=Add+%3Cdataset+name%3E+from+%3Csource%3E) to introduce your data to the SGID. In cases where UGRC submits the Porter issue on your behalf, UGRC will contact you via email to get your consent to this agreement. If you need to discuss different GRAMA/license/disclaimer terms, please note this in the Porter issue.
 
 ## Definitions
 {: .text-left}
