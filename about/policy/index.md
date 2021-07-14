@@ -10,10 +10,16 @@ tags:
 categories: []
 date: 2019-12-04 10:01:27 -0700
 ---
+
 #### [UGRC Data License and Disclaimer]({% link about/policy/license-disclaimer/index.md %})
 {: .text-left}
 
 UGRC’s data license and general data disclaimer.
+
+#### [UGRC Data Sharing Agreement]({% link about/policy/data-sharing-agreement/index.md %})
+{: .text-left}
+
+Agreement between UGRC and data stewards for data shared through the SGID.
 
 #### [SGID Database Policies]({% link about/policy/sgid/index.md %})
 {: .text-left}
