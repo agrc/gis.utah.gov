@@ -15,7 +15,7 @@ The following Data Sharing Agreement applies to all individuals and organization
 
 `<Four different levels of getting agreement/acknowledgement, from easiest to most onerous>`
 
-In order to ~~emulate the automatic EULAs of big, powerful software companies~~ reduce the friction of adding data to the SGID, by completing a [Porter issue](https://github.com/agrc/porter/issues) to submit your data to the SGID, you agree to this Data Sharing Agreement.
+In order to ~~emulate the automatic EULAs of big, powerful software companies~~ reduce the friction of adding data to the SGID, by submitting a [Porter issue](https://github.com/agrc/porter/issues) to submit your data to the SGID, you consent to this Data Sharing Agreement. In cases where UGRC submits the Porter issue on your behalf, UGRC will contact you via email to get your consent to this agreement.
 
 —OR—
 
@@ -55,6 +55,7 @@ The **"steward"** refers to the individual or organization that shares data with
 - UGRC may edit any aggregate data to conform with established standards and schemas for statewide datasets.
 - The steward will ensure any links or connections to external data remain live and do not require any form of login or account.
 - The steward will take reasonable efforts to not modify the schema of all external data, with the exception of adding new fields.
+- The steward will provide UGRC with two weeks prior notice, if possible, of any schema changes to hosted data.
 - The steward may request UGRC to remove their SGID entries at any time. UGRC will comply with these requests as quickly as possible through the normal [dataset deprecation process](https://github.com/agrc/porter/blob/main/.github/ISSUE_TEMPLATE/2-deprecate-sgid-dataset.md).
 - UGRC will grant requests for immediate removal of accidentally shared non-public data or other urgent situations and will handle these on a case-by-case basis.
 
