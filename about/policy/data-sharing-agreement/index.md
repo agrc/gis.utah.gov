@@ -15,7 +15,7 @@ The following Data Sharing Agreement applies to all individuals and organization
 
 `<Four different levels of getting agreement/acknowledgement, from easiest to most onerous>`
 
-In order to ~~emulate the automatic EULAs of big, powerful software companies~~ reduce the friction of adding data to the SGID, by submitting a [Porter issue](https://github.com/agrc/porter/issues) to submit your data to the SGID, you consent to this Data Sharing Agreement. In cases where UGRC submits the Porter issue on your behalf, UGRC will contact you via email to get your consent to this agreement.
+In order to ~~emulate the automatic EULAs of big, powerful software companies~~ reduce the friction of adding data to the SGID, by submitting a [Porter issue](https://github.com/agrc/porter/issues) to introduce your data to the SGID, you consent to this Data Sharing Agreement. In cases where UGRC submits the Porter issue on your behalf, UGRC will contact you via email to get your consent to this agreement.
 
 —OR—
 
