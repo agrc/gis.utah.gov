@@ -3,7 +3,7 @@ title: 'Municipal Boundaries Update for Second Quarter of 2021 (July 1)'
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2021-07-13 21:51:04
+date: 2021-07-14 12:51:04
 categories:
   - SGID Blog
   - Featured
