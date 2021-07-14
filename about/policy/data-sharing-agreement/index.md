@@ -47,12 +47,13 @@ You must submit a signed copy of this Data Sharing Agreement to our office prior
 
 The **"steward"** refers to the individual or organization that shares data with UGRC for inclusion in the SGID.
 
-## Access and Data Quality Provisions
+## General Provisions
 {: .text-left}
 
 - UGRC will make all SGID entries available to the general public without any form of login or account.
 - UGRC may edit any hosted data to fix any technical errors that prevent the data from being shared in the SGID.
 - UGRC may edit any aggregate data to conform with established standards and schemas for statewide datasets.
+- UGRC will follow our established [SGID policies]({% link about/policy/sgid/index.md %}).
 - The steward will ensure any links or connections to external data remain live and do not require any form of login or account.
 - The steward will take reasonable efforts to not modify the schema of all external data, with the exception of adding new fields.
 - The steward will provide UGRC with two weeks prior notice, if possible, of any schema changes to hosted data.
