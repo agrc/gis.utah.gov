@@ -57,7 +57,7 @@ The **"steward"** refers to the individual or organization that shares data with
 - The steward will ensure any links or connections to external data remain live and do not require any form of login or account.
 - The steward will take reasonable efforts to not modify the schema of all external data, with the exception of adding new fields.
 - The steward will provide UGRC with two weeks prior notice, if possible, of any schema changes to hosted data.
-- The steward may request UGRC to remove their SGID entries at any time. UGRC will comply with these requests as quickly as possible through the normal [dataset deprecation process](https://github.com/agrc/porter/blob/main/.github/ISSUE_TEMPLATE/2-deprecate-sgid-dataset.md).
+- Either upon request by the steward or as spelled out in our [removal policy]({% link about/policy/sgid/index.md %}#reasons-for-removal), UGRC will remove SGID entries through the normal [dataset deprecation process](https://github.com/agrc/porter/blob/main/.github/ISSUE_TEMPLATE/2-deprecate-sgid-dataset.md).
 - UGRC will grant requests for immediate removal of accidentally shared non-public data or other urgent situations and will handle these on a case-by-case basis.
 
 ## License and Disclaimer
