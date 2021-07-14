@@ -8,26 +8,15 @@ tags:
   - license
   - policy
 categories: []
-date: 2020-01-25 17:00:00 -0700
+date: 2021-07-16 17:00:00 -0700
 ---
+
+## Applicability
+{: .text-left}
 
 The following Data Sharing Agreement applies to all individuals and organizations sharing data with the SGID in any way.
 
-`<Four different levels of getting agreement/acknowledgement, from easiest to most onerous>`
-
-In order to ~~emulate the automatic EULAs of big, powerful software companies~~ reduce the friction of adding data to the SGID, by submitting a [Porter issue](https://github.com/agrc/porter/issues) to introduce your data to the SGID, you consent to this Data Sharing Agreement. In cases where UGRC submits the Porter issue on your behalf, UGRC will contact you via email to get your consent to this agreement.
-
-—OR—
-
-You accept this Data Sharing Agreement by checking the appropriate checkbox in the [Porter issue](https://github.com/agrc/porter/issues) tracking your SGID data submission.
-
-—OR—
-
-You must visit `<Google Form/other web-based form and response tracker>` and agree to this Data Sharing Agreement prior to creating a new [Porter issue](https://github.com/agrc/porter/issues) to submit your data to the SGID.
-
-—OR—
-
-You must submit a signed copy of this Data Sharing Agreement to our office prior to creating a new [Porter issue](https://github.com/agrc/porter/issues) to submit your data to the SGID.
+In order to reduce the friction of adding data to the SGID, by submitting a [Porter issue](https://github.com/agrc/porter/issues) to introduce your data to the SGID, you consent to this Data Sharing Agreement. In cases where UGRC submits the Porter issue on your behalf, UGRC will contact you via email to get your consent to this agreement.
 
 ## Definitions
 {: .text-left}
@@ -41,7 +30,7 @@ You must submit a signed copy of this Data Sharing Agreement to our office prior
 **"SGID entry"** refers to any of the following:
 
 1. Links in the SGID Index to external data
-1. Links and references in opendata.gis.utah.gov to external data in the form of ArcGIS Online items owned by other organizations
+1. Links and references in [opendata.gis.utah.gov](https://opendata.gis.utah.gov) to external data in the form of ArcGIS Online items owned by other organizations
 1. Hosted data in the Open SGID
 1. Hosted data in UGRC's ArcGIS Online organization that are shared with an SGID ArcGIS Online group or the "AGRC Shelf" group
 
