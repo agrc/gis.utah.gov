@@ -29,7 +29,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Washington County:** Obtained roads data on 06/17/2021. Previous update was on 06/04/2021.
 - **Weber County:** Obtained roads data on 06/23/2021. Previous update was on 06/04/2021.
 
-Note: Data was received from Dagget and Wayne county but due to interanal processing snags it is not included in this update. These counties will be included in next month's update.
+Note: Data was received from Dagget and Wayne county but due to internal processing snags it is not included in this update. These counties will be included in next month's update.
 
 #### UDOT Route System
 
