@@ -8,7 +8,7 @@ tags:
   - license
   - policy
 categories: []
-date: 2021-07-16 17:00:00 -0700
+date: 2021-07-14 17:00:00 -0700
 ---
 
 ## Applicability
