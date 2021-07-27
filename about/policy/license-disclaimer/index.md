@@ -1,5 +1,5 @@
 ---
-title: State Geographic Information Database License and Disclaimer
+title: Utah Geospatial Resource Center Data License and Disclaimer
 layout: page_nocrumb
 author:
   display_name: UGRC Office
@@ -8,16 +8,19 @@ tags:
   - license
   - policy
 categories: []
-date: 2019-12-07 15:59:23 -0700
+date: 2021-07-21 12:00:00 -0700
 ---
-The following applies to all services, downloads, links, and other content included or referenced in all geospatial data, mapping products, and services created or hosted by the Utah Geospatial Resource Center (UGRC), including SGID data hosted or provided by UGRC.
+The following applies to all services and content created or hosted by the Utah Geospatial Resource Center (UGRC), including SGID data hosted or aggregated by UGRC.
 
-The only exceptions are the high-resolution imagery from Google and Hexagon, which have their own license and [attribution requirements]({% link discover/resources/index.md %}#citation-and-logos).
+There are two exceptions to this coverage:
+
+1. The high-resolution imagery from Google and Hexagon, which have their own license and [attribution requirements]({% link discover/resources/index.md %}#citation-and-logos).
+2. External data hosted by other organizations and included in the SGID by reference, which are subject to the licenses and disclaimers specified by their owners.
 
 ## License
 {: .text-left}
 
-The data and services provided by UGRC is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+Unless otherwise stated in a dataset's metadata, UGRC licenses our data and services under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 {: .text-left}
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
@@ -26,17 +29,28 @@ The data and services provided by UGRC is licensed under a [Creative Commons Att
 ### License Attribution
 {: .text-left}
 
-UGRC requests that where possible and practical, **appropriate attribution** shall be made by users of this website, data, or any other services provided by UGRC with the following criteria:
+UGRC requests that wherever possible and practical, you include **appropriate attribution** when using data or services provided by UGRC in your maps, web applications, or other content. This includes providing credit to UGRC and indicating you made any changes to the data.
 
-- an appropriate statement, reflecting this disclaimer be used on all products using SGID geospatial data as a source, and that a currency date and stewardship credit for the data be included on the map; and
-- standards-compliant and/or [search engine-optimized (SEO) metadata]({% link about/policy/metadata/index.md %}), where available, be included with any distribution of all geospatial data
+For referenced data hosted by other organizations (such as data from the Utah Geological Survey), please contact the owner for attribution guidelines.
 
-Please add attribution with a logo from our [media resources]({% link about/media/index.md %}) page.
+**Detailed references** in a paper or book should follow your particular style guide. Please include the last updated date if it is available in the metadata or the date you accessed/downloaded the data if not. For example, this is what it could look like in an MLA-esque format:
+
+- State Geographic Information Database. _Utah Address Points_. (Feature class). Salt Lake City, UT: Utah Geographic Resource Center, July 2021. Geospatial point data. 27 July 2021. https://gis.utah.gov/data/location/address-data/.
+
+**Maps** and **web apps** should include a reference to both UGRC and the SGID in the "Sources" attribution:
+
+- `Data Sources: ESRI, US Census Bureau, UGRC SGID (data modified), ...`
+
+Any **data distributions** (databases, web services, etc) must include credit to UGRC, a link to the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and a note of any changes made to the data. They should also include the disclaimer below and relevant metadata as outlined in our [metadata policy]({% link about/policy/metadata/index.md %}). The dataset's description could include the following line:
+
+- County boundary data derived from the UGRC SGID under the CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/). Several new fields were calculated from US Census Bureau data.
+
+If you are using **logos** as part of your attribution, you can download our current logos in `.png`, `.ai`, and `.psd` formats from our [media resources]({% link about/media/index.md %}) page.
 
 ## Disclaimer
 {: .text-left}
 
-We created the following standard disclaimer for all SGID data with input from the State Attorney General's office:
+We created the following standard disclaimer for all hosted SGID data with input from the State Attorney General's office:
 
 > The data, including but not limited to geographic data, tabular data, and analytical data, are provided “as is” and “as available”, with no guarantees relating to the availability, completeness, or accuracy of data, and without any express or implied warranties.
 >
@@ -48,3 +62,5 @@ We created the following standard disclaimer for all SGID data with input from t
     font-style: normal;
     color: #111;
     "}
+
+We created this disclaimer with the hope that it could provide inspiration if you are looking for an example disclaimer. However, we are not lawyers. Please work with your own legal counsel before adopting a disclaimer. Any republished UGRC data should include this disclaimer in it's unmodified form.
