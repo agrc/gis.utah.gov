@@ -31,11 +31,6 @@ UGRC’s guidelines for creating, editing, maintaining, and removing data in the
 
 UGRC’s guidelines for using the Open SGID database.
 
-#### [UGRC Data License and Disclaimer]({% link about/policy/license-disclaimer/index.md %})
-{: .text-left}
-
-UGRC’s data license and general data disclaimer.
-
 #### [Licensed High-Resolution Imagery Citation]({% link discover/resources/index.md %}#citation-and-logos)
 {: .text-left}
 
