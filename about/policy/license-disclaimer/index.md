@@ -29,7 +29,7 @@ Unless otherwise stated in a dataset's metadata, UGRC licenses our data and serv
 ### License Attribution
 {: .text-left}
 
-UGRC requests that wherever possible and practical, you include **appropriate attribution** when using data or services provided by UGRC in your maps, web applications, or other content. This includes providing credit to UGRC and indicating you made any changes to the data.
+You should include **appropriate attribution** when using data or services provided by UGRC in your maps, web applications, or other content. This includes providing credit to UGRC and indicating you made any changes to the data. We may consider exceptions to this requirement on a case-by-case basis.
 
 For referenced data hosted by other organizations (such as data from the Utah Geological Survey), please contact the owner for attribution guidelines.
 
@@ -41,7 +41,7 @@ For referenced data hosted by other organizations (such as data from the Utah Ge
 
 - `Data Sources: ESRI, US Census Bureau, UGRC SGID (data modified), ...`
 
-Any **data distributions** (databases, web services, etc) must include credit to UGRC, a link to the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and a note of any changes made to the data. They should also include the disclaimer below and relevant metadata as outlined in our [metadata policy]({% link about/policy/metadata/index.md %}). The dataset's description could include the following line:
+Any **data distributions** (databases, web services, etc) that contain SGID data must include credit to UGRC, a link to the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and a note of any changes made to the data. They should also include the disclaimer below and relevant metadata as outlined in our [metadata policy]({% link about/policy/metadata/index.md %}). The dataset's description could include the following line:
 
 - County boundary data derived from the UGRC SGID under the CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/). Several new fields were calculated from US Census Bureau data.
 
