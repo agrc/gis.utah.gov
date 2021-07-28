@@ -35,13 +35,13 @@ For referenced data hosted by other organizations (such as data from the Utah Ge
 
 **Detailed references** in a paper or book should follow your particular style guide. Please include the last updated date if it is available in the metadata or the date you accessed/downloaded the data if not. For example, this is what it could look like in an MLA-esque format:
 
-- State Geographic Information Database. _Utah Address Points_. (Feature class). Salt Lake City, UT: Utah Geographic Resource Center, July 2021. Geospatial point data. 27 July 2021. https://gis.utah.gov/data/location/address-data/.
+- State Geographic Information Database. _Utah Address Points_. (Feature class). Salt Lake City, UT: Utah Geospatial Resource Center, July 2021. Geospatial point data. 27 July 2021. https://gis.utah.gov/data/location/address-data/.
 
 **Maps** and **web apps** should include a reference to both UGRC and the SGID in the "Sources" attribution:
 
 - `Data Sources: ESRI, US Census Bureau, UGRC SGID (data modified), ...`
 
-Any **data distributions** (databases, web services, etc) that contain SGID data must include credit to UGRC, a link to the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and a note of any changes made to the data. They should also include the disclaimer below and relevant metadata as outlined in our [metadata policy]({% link about/policy/metadata/index.md %}). The dataset's description could include the following line:
+Any **data distributions** (databases, web services, etc.) that contain SGID data must include credit to UGRC, a link to the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and a note of any changes made to the data. They should also include the disclaimer below and relevant metadata as outlined in our [metadata policy]({% link about/policy/metadata/index.md %}). The dataset's description could include the following line:
 
 - County boundary data derived from the UGRC SGID under the CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/). Several new fields were calculated from US Census Bureau data.
 
