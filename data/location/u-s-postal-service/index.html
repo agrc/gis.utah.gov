@@ -1,13 +1,23 @@
 ---
 tags:
   - location
+  - society
   - usps
+  - post office
+  - zip code
+  - po box
 author:
   display_name: JP
   email: agrc@utah.gov
 date: 2011-11-23 09:29:34 -0700
 categories: []
 USPSPostOffices:
+  hub:
+    name: Utah USPS Post Offices
+    item_id: c58ebc2a7c2643fca10e67dd55af71f1
+  updates:
+    - February 2018
+ZipCodePOBoxes:
   hub:
     name: Utah Zip Code PO Boxes
     item_id: 9a07e9d337314bb2af4de8f32502428e
@@ -18,12 +28,12 @@ ZipCodeBoundaries:
     name: Utah ZIP Code Areas
     item_id: 4f9d1d1301864f8cabef08cbae7b2d3c
   updates:
-    - July 2015 - Split the 84095 (South Jordan) zip code along the Bangerter Hwy
-      to create the new zip code 84009 (South Jordan)
-    - July 2012 - Salt Lake City and West Valley City zip code adjustments
-    - July 2012 - adjusted 84638, 84648, 84649 to follow the Juab/Millard County boundary
-      change
-    - July 2011
+    - November, 2019 - Added 84765 polygon for Motoqua in Washington County
+    - January, 2019 - Added 84059 zip code in Utah County
+    - February, 2016 - Updated 84321, 84235, 85326, 84332, 84339
+    - July, 2015 - Split the 84095 (South Jordan) zip code along the Bangerter Hwy to create the new zip code 84009 (South Jordan)
+    - January, 2015 - Improvements were made to 84773 (Teasdale) and 84775 (Torrey)
+    - January, 2015 - Adjusted the 84747 (Loa) and 84716 (Boulder) zip code boundaries to follow the address grid quadrant boundaries
 ---
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/USPSLarge.png %}" alt="Post Offices" loading="lazy" />
@@ -32,7 +42,7 @@ ZipCodeBoundaries:
 {% include abstract.html
 name="United States Postal Service"
 stewards="UGRC and the USPS"
-abstract="These datasets are related to mail delivery. Included are post office locations and zipcode boundaries in
+abstract="These datasets are related to mail delivery. Included are post office locations, zip code PO boxes, and zipcode boundaries in
 Utah." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
@@ -40,9 +50,8 @@ Utah." %}
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/USPSSmallB.png %}" alt="PostOffices" loading="lazy" />
-    <p>Utah Zip Code PO Boxes represents the approximate locations of USPS Post Offices in Utah. Each zipcode's assigned
-      post office has a point, therefore if a post office has multiple zipcodes, it will have multiple points.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+    <p>Utah Post Offices represents the approximate locations of USPS Post Offices in Utah. Each post office includes
+      the post office name, address, city, zip code, and post office type.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="USPSPostOffices"
@@ -50,22 +59,59 @@ Utah." %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
+    <h3 id="ZipCodePOBoxes">Zip Code PO Boxes</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/USPSSmallB.png %}" alt="PostOffices" loading="lazy" />
+    <p>Utah Zip Code PO Boxes represents the approximate locations of USPS PO Boxes in Utah. Each zipcode's assigned
+      post office has a point, therefore if a post office has multiple zipcodes, it will have multiple points.</p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html name="ZipCodePOBoxes"
+  info=page.ZipCodePOBoxes %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
     <h3 id="ZipCodeBoundaries">Zip Code Boundaries</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/USPSSmall.png %}" alt="Zips" loading="lazy" />
-    <p>Utah ZIP Code Areas represents an ongoing effort to approximate the geographic extents of five digit zip codes.
-      The dataset was produced using a combination of methods and is based on several sets of source data. Editing
-      methods include:</p>
-    <ul>
-      <li>Using local zipcode polygon data obtained from counties and cities.
-      <li>Identifying place locations (cities, towns, populated areas, etc.) from the postal service website and address
-        information system (AIS) and building zipcode boundaries around these places.
-      <li>Using the 2000 Census TIGER line file’s zip code attributes.
-    </ul>
-    <p>In addition, UGRC has used the locations of mailing addresses known to be valid to fine tune this dataset. The
-      native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.zip_codes %}</p>
+    <img
+      class="inline-text-left outline"
+      src="{% link images/ZipCodeSm.png %}"
+      alt="Zip Codes"
+      loading="lazy"
+    />
+    <p>
+      Zip Codes Boundaries represent an ongoing effort to approximate the
+      geographic extents of five digit zip codes. The dataset was produced using
+      a combination of methods and is based on several sets of source data.
+      Editing methods include:
+    </p>
+    <ol style="display: inline-block">
+      <li>
+        Using local zipcode polygon data obtained from counties and cities.
+      </li>
+      <li>
+        Identifying place locations (cities, towns, populated areas, etc.) from
+        the postal service website and address information system (AIS) and
+        building zipcode boundaries around these places.
+      </li>
+
+      <li>Using the 2000 Census TIGER line file’s zip code attributes.</li>
+    </ol>
+
+    <p>
+      In addition, UGRC has used the locations of mailing addresses known to be
+      valid to fine tune this dataset. The native spatial reference for this
+      dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There
+      are no constraints or warranties with regard to the use of this dataset.
+      Users are encouraged to attribute content to: State of Utah, SGID.
+    </p>
+    <p>
+      {% include contact.html subject=page.title
+      contact=site.data.contacts.zip_codes %}
+    </p>
   </div>
   {% include packagedata.html name="ZipCodeBoundaries"
   info=page.ZipCodeBoundaries %}
