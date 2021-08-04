@@ -51,7 +51,8 @@ Utah." %}
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/USPSSmallB.png %}" alt="PostOffices" loading="lazy" />
     <p>Utah Post Offices represents the approximate locations of USPS Post Offices in Utah. Each post office includes
-      the post office name, address, city, zip code, and post office type.</p>
+      the post office name, address, city, zip code, and post office type.  Data were originally geocoded from a
+      USPS list of post office addresses.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="USPSPostOffices"
@@ -62,7 +63,7 @@ Utah." %}
     <h3 id="ZipCodePOBoxes">Zip Code PO Boxes</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/USPSSmallB.png %}" alt="PostOffices" loading="lazy" />
+    <img class="inline-text-left outline" src="{% link images/POBox.png %}" alt="POBox" loading="lazy" />
     <p>Utah Zip Code PO Boxes represents the approximate locations of USPS PO Boxes in Utah. Each zipcode's assigned
       post office has a point, therefore if a post office has multiple zipcodes, it will have multiple points.</p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
