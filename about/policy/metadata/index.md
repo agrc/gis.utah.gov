@@ -41,7 +41,7 @@ Example: `Utah public library and bookmobile locations`
 
 The description is a more in-depth version of the summary and should stand on its own. It is a great place for details on the source of the data, how frequently it's updated, its usability at certain scales, or any common misconceptions. A good description is also important because it's the main info displayed in [Open Data](https://opendata.gis.utah.gov/) (the summary is not shown).
 
-The first line of the description should be be the date the dataset was last updated so people have a clear and consistent place to see how fresh or stale it is.
+The first line of the description should be the date the dataset was last updated so people have a clear and consistent place to see how fresh or stale it is.
 
 For datasets hosted by UGRC, this section should also contain a link to the corresponding [gis.utah.gov data page]({% link data/index.html %}).
 

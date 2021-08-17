@@ -17,7 +17,7 @@ categories: []
 
 The Utah [State Geographic Information Database (SGID)]({% link sgid/index.html%}) is one of the premier statewide GIS data resources in the country, providing clean, consistent, and authoritative data across every geography in the state. People have been turning to the SGID for nearly [30 years]({% link _posts/2019-06-11-sgid-then-and-now.md%}) to support their personal, commercial, academic, and government projects.
 
-Nearly all the data that make the SGID such a valuable resource come from cities, counties, and other State agencies. We offer a heartfelt **Thank You!** on behalf of both UGRC and all the users of the SGID to everyone who has contributed data.
+Nearly all the data that make the SGID such a valuable resource come from cities, counties, and other state agencies. We offer a heartfelt **Thank You!** on behalf of both UGRC and all the users of the SGID to everyone who has contributed data.
 
 We hope you'll follow the [example]({% link sharing/examples/index.md %}) of our current contributors and consider sharing your data with a broad audience through the SGID. We have three separate "tracks" to follow based on where your data fit best: the **SGID Index**, the **SGID Open Data Site**, or the **Open SGID**. There's also a separate process for contributing to or updating an existing SGID dataset.
 

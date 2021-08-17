@@ -26,7 +26,7 @@ We are fortunate to have the luxury of free, up-to-date, and comprehensive [road
 ## Land Ownership - Sharing
 {: .text-left}
 
-Sometimes a project needs a 10,000-foot overview of land ownership, especially in Utah where large amounts of land are owned by private individuals, the State, and the Federal Government. Utah has tasked the State Institutional Trust Lands Administration (SITLA) with maintaining a state-wide [land ownership layer]({% link data/cadastre/land-ownership/index.html%}#LandOwnership) as part of their responsibilities, which they share on their [website](https://trustlands.utah.gov/resources/maps/). Because this is such an important and fundamental dataset, SITLA also shares the data with the Open SGID and the SGID Open Data site for easy access to all.
+Sometimes a project needs a 10,000-foot overview of land ownership, especially in Utah where large amounts of land are owned by private individuals, the state, and the federal government. Utah has tasked the State Institutional Trust Lands Administration (SITLA) with maintaining a state-wide [land ownership layer]({% link data/cadastre/land-ownership/index.html%}#LandOwnership) as part of their responsibilities, which they share on their [website](https://trustlands.utah.gov/resources/maps/). Because this is such an important and fundamental dataset, SITLA also shares the data with the Open SGID and the SGID Open Data site for easy access to all.
 
 ## Natural Hazards - Sharing
 {: .text-left}
