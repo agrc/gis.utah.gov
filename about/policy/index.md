@@ -24,7 +24,7 @@ Agreement between UGRC and data stewards for data shared through the SGID.
 #### [SGID Database Policies]({% link about/policy/sgid/index.md %})
 {: .text-left}
 
-UGRC’s guidelines for creating, editing, maintaining, and removing data in the SGID database.
+UGRC’s guidelines for creating, editing, maintaining, and removing data in the SGID.
 
 #### [Open SGID Terms of Use]({% link about/policy/open-sgid/index.md %})
 {: .text-left}
