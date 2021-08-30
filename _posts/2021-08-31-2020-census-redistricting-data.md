@@ -42,7 +42,7 @@ For users looking for additional data elements, we’ve made available the full 
 
 {{{Insert screenshot here}}}
 
-Note that the field names in these tables follow the traditional census field naming convention. You can find detailed information on field names, including descriptions, in the Census’ PL  94-171 [technical documentation](https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/summary-file/2020Census_PL94_171Redistricting_StatesTechDoc_English.pdf) or in their [downloadable Excel spreadsheet](https://www2.census.gov/programs-surveys/decennial/rdo/about/2020-census-program/Phase3/SupportMaterials/2020_PLSummaryFile_FieldNames.xlsx). 
+Note that the field names in these tables follow the traditional census field naming convention. You can find detailed information on field names, including descriptions, in the Census PL 94-171 [technical documentation](https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/summary-file/2020Census_PL94_171Redistricting_StatesTechDoc_English.pdf) or in [Excel spreadsheet](https://www2.census.gov/programs-surveys/decennial/rdo/about/2020-census-program/Phase3/SupportMaterials/2020_PLSummaryFile_FieldNames.xlsx) format. 
 
 ### Data for everyone
 
