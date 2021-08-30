@@ -3,7 +3,7 @@ title: 2020 Census Redistricting Data in Easy to Use GIS Formats
 author:
   display_name: Bert Granberg and Greg Bunce
   email: gbunce@utah.gov
-date: 2021-08-31 10:01:46
+date: 2021-08-30 10:01:46
 categories:
   - Featured
 tags:
