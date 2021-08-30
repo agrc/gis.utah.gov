@@ -18,11 +18,11 @@ tags:
 In mid-August, the Census Bureau published the [PL 94-171 Redistricting Data Summary Files](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html) from the 2020 Census. This is a pre-release of the 2020 census data, in legacy format, and contains the elements that pertain to drawing new congressional districts and state legislative districts (state senate and house). 
  
 The primary data characteristics released are down to the block level and show:
-population
-voting age population
-race/ethnicity identification
-occupied and vacant housing unit counts
-group quarters populations
+- population
+- voting age population
+- race/ethnicity identification
+- occupied and vacant housing unit counts
+- group quarters populations
  
 The Census expects to release this data in more user-friendly formats on September 30, 2021 - and sometime in the not-so-distant future, the full 2020 Census summary files will be released (no announcement from Census yet). The more detailed files were released starting in October of 2011 for the last census, but this decade's release has been 5-6 months behind schedule so far. So make your own guess and cross your fingers.
 
