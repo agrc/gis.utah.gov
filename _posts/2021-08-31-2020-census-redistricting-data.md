@@ -38,7 +38,7 @@ The exciting news is that key elements from the PL 94-171 Summary Files are now 
 
 ### PL 94-171 Summary Files for all SGID geographies in tabular GIS format
 
-For users looking for additional data elements, we’ve made available the full PL 94-171 Redistricting Data Summary Files in ESRI File Geodatabase tabular format. These tables can be downloaded on the UGRC [2020 Census 2020 data page](https://gis.utah.gov/data/demographic/census/#2020Census) and joined to the corresponding SGID GIS data layer, using the `GEOID` fields.
+For users looking for additional data elements, we’ve made available the full PL 94-171 Redistricting Data Summary Files in ESRI File Geodatabase tabular format. These tables can be downloaded on the UGRC [2020 Census data page](https://gis.utah.gov/data/demographic/census/#2020Census) and joined to the corresponding SGID GIS data layer, using the `GEOID` fields.
 
 {{{Insert screenshot here}}}
 
