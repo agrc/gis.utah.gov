@@ -50,4 +50,4 @@ While PL 94-171 Summary File data is released under the banner of redistricting,
 
 You can find more information on this data, including how to access it, on the UGRC [2020 Census data page](https://gis.utah.gov/data/demographic/census/#2020Census). 
 
-If you have any questions about the data or the processes used, please reach out to Bert Granberg or Greg Bunce.
+If you have any questions about the data or the processes used, please reach out to Bert Granberg (bgranberg@wfrc.org) or Greg Bunce (gbunce@utah.gov).
