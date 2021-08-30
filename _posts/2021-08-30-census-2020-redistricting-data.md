@@ -31,7 +31,7 @@ In the meantime, UGRC, with collaboration from the Analytics Group at [WFRC](htt
 ###  PL 94-171 Summary Flies for Census Blocks in GIS format
 {: .text-left}
 
-The exciting news is that key elements from the PL 94-171 Summary Files are now available in the SGID [Utah Census Blocks 2020 GIS layer]({% link data/demographic/census/index.md %}). These elements combine the primary information pieces from across the summary file tables and employ more user-friendly field names (for shapefile users) and field aliasing for geodatabase users.
+The exciting news is that key elements from the PL 94-171 Summary Files are now available in the SGID [Utah Census Blocks 2020 GIS layer]({% link data/demographic/census/index.html %}#2020Census). These elements combine the primary information pieces from across the summary file tables and employ more user-friendly field names (for shapefile users) and field aliasing for geodatabase users.
  
 ![Alias Fields Naming Convention]({% link images/census2020_block_pl_94_171_alias_fields.png %}) 
 {: .flex .flex--center}
@@ -57,6 +57,6 @@ Note that the field names in these tables follow the traditional census field na
 
 While PL 94-171 Summary File data is released under the banner of redistricting, let's not overlook that It's the first wave of census demographic data and it's wide open for use in any scenario that you can dream up.  
 
-You can find more information on this data, including how to access it, on the UGRC [2020 Census data page]({% link data/demographic/census/index.md %}). 
+You can find more information on this data, including how to access it, on the UGRC [2020 Census data page]({% link data/demographic/census/index.html %}#2020Census). 
 
 If you have any questions about the data or the processes used, please reach out to Bert Granberg (bgranberg@wfrc.org) or Greg Bunce (gbunce@utah.gov).
