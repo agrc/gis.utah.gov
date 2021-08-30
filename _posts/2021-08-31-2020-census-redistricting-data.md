@@ -30,7 +30,7 @@ In the meantime, UGRC, with collaboration from the Analytics Group at [WFRC](htt
 
 ###  PL 94-171 Block-level Summary Flies in GIS format
 
-The exciting news is that key elements from the PL 94-171 Summary Files are now available in the SGID [Utah Census Blocks 2020 GIS layer](https://gis.utah.gov/data/demographic/census/#2020Censuse). These elements combine the primary information pieces from across the tables and employ more user-friendly field names (for shapefile users) and field aliasing for geodatabase users.
+The exciting news is that key elements from the PL 94-171 Summary Files are now available in the SGID [Utah Census Blocks 2020 GIS layer](https://gis.utah.gov/data/demographic/census/#2020Censuse). These elements combine the primary information pieces from across the summary file tables and employ more user-friendly field names (for shapefile users) and field aliasing for geodatabase users.
  
 {{{Insert screenshot here}}}
  
