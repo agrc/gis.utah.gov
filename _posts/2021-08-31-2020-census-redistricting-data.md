@@ -25,11 +25,11 @@ occupied and vacant housing unit counts
 group quarters populations
  
 The Census expects to release this data in more user-friendly formats on September 30, 2021 - and sometime in the not-so-distant future, the full 2020 Census summary files will be released (no announcement from Census yet). The more detailed files were released starting in October of 2011 for the last census, but this decade's release has been 5-6 months behind schedule so far. So make your own guess and cross your fingers.
- 
+
 In the meantime, UGRC, with collaboration from the Analytics Group at [WFRC](https://wfrc.org/), has worked with the mid-August release and has created ready-to-use GIS data in several formats that hopefully make the 2020 redistricting data easier to use. 
 
 ###  PL 94-171 Block-level Summary Flies in GIS format
- 
+
 The exciting news is that key elements from the PL 94-171 Summary Files are now available in the SGID [2020 census blocks GIS layer](data page). These elements combine the primary information pieces from across the tables and employ more user-friendly field names (for shapefile users) and field aliasing for geodatabase users.
  
 {{{Insert screenshot here}}}
@@ -42,11 +42,11 @@ For users looking for additional data elements, we’ve made available the full 
 
 {{{Insert screenshot here}}}
 
-Note that the field names in these tables follow the traditional census field naming convention. You can find detailed information on field names, including descriptions, in census spreadsheet. 
+Note that the field names in these tables follow the traditional census field naming convention. You can find detailed information on field names, including descriptions, in the Census’ PL  94-171 [technical documentation](https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/summary-file/2020Census_PL94_171Redistricting_StatesTechDoc_English.pdf) or in their [downloadable Excel spreadsheet](https://www2.census.gov/programs-surveys/decennial/rdo/about/2020-census-program/Phase3/SupportMaterials/2020_PLSummaryFile_FieldNames.xlsx). 
 
 ### Data for everyone
 
-While PL 94-171 Summary File data is released under the banner of redistricting, let's not overlook that It's the first wave of census demographic data that is wide open for use in any scenario that you can dream up.  
+While PL 94-171 Summary File data is released under the banner of redistricting, let's not overlook that It's the first wave of census demographic data and it's wide open for use in any scenario that you can dream up.  
 
 You can find more information on this data, including how to access it, on the UGRC 2020 Census data page. 
 
