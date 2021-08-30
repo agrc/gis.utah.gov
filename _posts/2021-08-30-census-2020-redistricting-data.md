@@ -15,7 +15,7 @@ tags:
   - demographic
 ---
 
-In mid-August, the Census Bureau published the [PL 94-171 Redistricting Data Summary Files](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html) from the 2020 Census. This is a pre-release of the 2020 census data, in legacy format, and contains the elements that pertain to drawing new congressional districts and state legislative districts (state senate and house). 
+In mid-August, the Census Bureau published the [PL 94-171 Redistricting Data Summary Files](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html) from the 2020 Census. This is a pre-release of the 2020 census data, in legacy file format, and contains the elements that pertain to drawing new congressional districts and state legislative districts (state senate and house). 
  
 The primary data characteristics released are down to the block level and show:
 - population
