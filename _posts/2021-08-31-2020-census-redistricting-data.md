@@ -2,24 +2,52 @@
 title: 2020 Census Redistricting Data in Easy to Use GIS Formats
 author:
   display_name: Bert Granberg and Greg Bunce
-  email: ugrc@utah.gov
+  email: gbunce@utah.gov
 date: 2021-08-31 10:01:46
 categories:
   - Featured
 tags:
   - gis
-  - united states census bureau
+  - census
   - redistricting
   - elections
   - voting
   - demographic
 ---
 
-Earlier this month, the Census Bureau published the PL 94-171 Redistricting Data Summary data files from the 2020 Census. This is a prerelease of the 2020 census data with the data elements that pertain most to drawing new political district boundaries for congress, state house, and state senate districts.
+In mid-August, the Census Bureau published the [PL 94-171 Redistricting Data Summary Files](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html) from the 2020 Census. This is a pre-release of the 2020 census data, in legacy format, and contains the elements that pertain to drawing new congressional districts and state legislative districts (state senate and house). 
+ 
+The primary data characteristics released are down to the block level and show:
+population
+voting age population
+race/ethnicity identification
+occupied and vacant housing unit counts
+group quarters populations
+ 
+The Census expects to release this data in more user-friendly formats on September 30, 2021 - and sometime in the not-so-distant future, the full 2020 Census summary files will be released (no announcement from Census yet). The more detailed files were released starting in October of 2011 for the last census, but this decade's release has been 5-6 months behind schedule so far. So make your own guess and cross your fingers.
+ 
+In the meantime, UGRC, with collaboration from the Analytics Group at [WFRC](https://wfrc.org/), has worked with the mid-August release and has created ready-to-use GIS data in several formats that hopefully make the 2020 redistricting data easier to use. 
 
-The primary data elements included in the 4 tables that have been released are block-level population, voting age population, race/ethnicity identification, occupied and vacant housing unit counts, and group quarters populations.
+###  PL 94-171 Block-level Summary Flies in GIS format
+ 
+The exciting news is that key elements from the PL 94-171 Summary Files are now available in the SGID [2020 census blocks GIS layer](data page). These elements combine the primary information pieces from across the tables and employ more user-friendly field names (for shapefile users) and field aliasing for geodatabase users.
+ 
+{{{Insert screenshot here}}}
+ 
+Note: These elements are available now in [Open SGID](https://gis.utah.gov/sgid/open-sgid/) and will be available in [Open Data](https://opendata.gis.utah.gov/) on Wednesday, September 1, 2021. 
 
-Census expects to release this data in more user friendly formats in the coming month. And, sometime in the not so distant future (no announcement from Census yet) the full 2020 Census summary files will be released. These more detailed files were released starting in October of 2011 for the last census, but this decade's release has been 5-6 months behind schedule so far. So make your own guess and cross your fingers.
+### PL 94-171 Summary Files for all SGID geographies in tabular GIS format
 
-In the meantime, UGRC, with collaboration from the Analytics Group at WFRC, has created several GIS layers that hopefully make the 2020 redistricting data easier to use. The blocks files combines the primary information pieces from across the tables and employs more user friendly fieldnames (for shapefile users) and field aliasing for geodatabase users.
+For users looking for additional data elements, we’ve made available the full PL 94-171 Redistricting Data Summary Files in ESRI File Geodatabase tabular format. These tables can be downloaded on the UGRC 2020 Census 2020 data page and joined to the corresponding SGID GIS data layer, using the GeoID fields.
 
+{{{Insert screenshot here}}}
+
+Note that the field names in these tables follow the traditional census field naming convention. You can find detailed information on field names, including descriptions, in census spreadsheet. 
+
+### Data for everyone
+
+While PL 94-171 Summary File data is released under the banner of redistricting, let's not overlook that It's the first wave of census demographic data that is wide open for use in any scenario that you can dream up.  
+
+You can find more information on this data, including how to access it, on the UGRC 2020 Census data page. 
+
+If you have any questions about the data or the processes used, please reach out to Bert Granberg or Greg Bunce.
