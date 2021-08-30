@@ -24,7 +24,7 @@ The primary data characteristics released are down to the block level and show:
 - occupied and vacant housing unit counts
 - group quarters populations
  
-The Census expects to release this data in more user-friendly formats on September 30, 2021 - and sometime in the not-so-distant future, the full 2020 Census summary files will be released (no announcement from Census yet). The more detailed files were released starting in October of 2011 for the last census, but this decade's release has been 5-6 months behind schedule so far. So make your own guess and cross your fingers.
+The Census expects to release this redistricting data in more user-friendly formats on September 30, 2021. The full 2020 Census summary files will be released sometime in the not-so-distant future (no announcement from Census yet). The more detailed files were released starting in October of 2011 for the last census, but this decade's release has been 5-6 months behind schedule so far. So make your own guess and cross your fingers.
 
 In the meantime, UGRC, with collaboration from the Analytics Group at [WFRC](https://wfrc.org/), has worked with the mid-August release and has created ready-to-use GIS data in several formats that hopefully make the 2020 redistricting data easier to use. 
 
@@ -34,11 +34,11 @@ The exciting news is that key elements from the PL 94-171 Summary Files are now 
  
 {{{Insert screenshot here}}}
  
-Note: These elements are available now in [Open SGID](https://gis.utah.gov/sgid/open-sgid/) and will be available in [Open Data](https://opendata.gis.utah.gov/) on Wednesday, September 1, 2021. 
+> Note: These elements are available now in [Open SGID](https://gis.utah.gov/sgid/open-sgid/) and will be available in [Open Data](https://opendata.gis.utah.gov/) on Wednesday, September 1, 2021. 
 
 ### PL 94-171 Summary Files for all SGID geographies in tabular GIS format
 
-For users looking for additional data elements, we’ve made available the full PL 94-171 Redistricting Data Summary Files in ESRI File Geodatabase tabular format. These tables can be downloaded on the UGRC 2020 Census 2020 data page and joined to the corresponding SGID GIS data layer, using the GeoID fields.
+For users looking for additional data elements, we’ve made available the full PL 94-171 Redistricting Data Summary Files in ESRI File Geodatabase tabular format. These tables can be downloaded on the UGRC 2020 Census 2020 data page and joined to the corresponding SGID GIS data layer, using the `GEOID` fields.
 
 {{{Insert screenshot here}}}
 
