@@ -28,11 +28,11 @@ The Census expects to release this redistricting data in more user-friendly form
 
 In the meantime, UGRC, with collaboration from the Analytics Group at [WFRC](https://wfrc.org/), has worked with the mid-August release and has created ready-to-use GIS data in several formats that hopefully make the 2020 redistricting data easier to use. 
 
-###  PL 94-171 Block-level Summary Flies in GIS format
+###  PL 94-171 Summary Flies for Census Blocks in GIS format
 
 The exciting news is that key elements from the PL 94-171 Summary Files are now available in the SGID [Utah Census Blocks 2020 GIS layer](https://gis.utah.gov/data/demographic/census/#2020Censuse). These elements combine the primary information pieces from across the summary file tables and employ more user-friendly field names (for shapefile users) and field aliasing for geodatabase users.
  
-{{{Insert screenshot here}}}
+![Alias Fields Naming Convention]({% link images/census2020_block_pl_94_171_alias_fields.png %}) {: .flex .flex--center}
  
 > Note: These elements are available now in [Open SGID](https://gis.utah.gov/sgid/open-sgid/) and will be available in [Open Data](https://opendata.gis.utah.gov/) on Wednesday, September 1, 2021. 
 
@@ -40,9 +40,12 @@ The exciting news is that key elements from the PL 94-171 Summary Files are now 
 
 For users looking for additional data elements, we’ve made available the full PL 94-171 Redistricting Data Summary Files in ESRI File Geodatabase tabular format. These tables can be downloaded on the UGRC [2020 Census data page](https://gis.utah.gov/data/demographic/census/#2020Census) and joined to the corresponding SGID GIS data layer, using the `GEOID` fields.
 
-{{{Insert screenshot here}}}
+![Tabular Summary Files in FGDB Format]({% link images/census2020_pl_94_171_summaryfiles.png %}) {: .flex .flex--center}
 
-Note that the field names in these tables follow the traditional census field naming convention. You can find detailed information on field names, including descriptions, in the Census PL 94-171 [technical documentation](https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/summary-file/2020Census_PL94_171Redistricting_StatesTechDoc_English.pdf) or in [Excel spreadsheet](https://www2.census.gov/programs-surveys/decennial/rdo/about/2020-census-program/Phase3/SupportMaterials/2020_PLSummaryFile_FieldNames.xlsx) format. 
+![Joining Summary Files to GIS data]({% link images/census2020_pl_94_171_summaryfiles_join_tables.png %}) {: .flex .flex--center}
+
+Note that the field names in these tables follow the traditional census field naming convention. You can find detailed information on field names, including descriptions, in the Census PL 94-171 [technical documentation](https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/summary-file/2020Census_PL94_171Redistricting_StatesTechDoc_English.pdf) or in [Excel spreadsheet](https://www2.census.gov/programs-surveys/decennial/rdo/about/2020-census-program/Phase3/SupportMaterials/2020_PLSummaryFile_FieldNames.xlsx) format.
+
 
 ### Data for everyone
 
