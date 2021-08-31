@@ -351,3 +351,11 @@ tnm_help:
   name: National Map Help Desk
   agency: USGS
   email: tnm_help@usgs.gov
+census:
+  - name: Bert Granberg
+    email: BGranberg@wfrc.org
+    agency: WFRC
+  - name: Greg Bunce
+    email: GBunce@utah.gov
+    agency: UGRC
+    
