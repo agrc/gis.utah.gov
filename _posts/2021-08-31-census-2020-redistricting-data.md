@@ -61,8 +61,7 @@ While PL 94-171 Summary File data is released under the banner of redistricting,
 
 You can find more information on this data, including how to access it, on the UGRC [2020 Census data page]({% link data/demographic/census/index.html %}#2020Census). 
 
-If you have any questions about the data or the processes used, please reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.wfrc text=' ' hide-punctuation=true %}{% endcapture %}
-{{ contact }} or {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.roads text=' ' hide-punctuation=true %}{% endcapture %}
+If you have any questions about the data or the processes used, please reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.census text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.
 
 
