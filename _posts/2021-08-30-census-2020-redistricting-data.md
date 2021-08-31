@@ -15,7 +15,7 @@ tags:
   - demographic
 ---
 
-Good news, 2020 census redistricting data is now available for the state of Utah in easy to use GIS formats!
+Good news, 2020 census redistricting data is now available for Utah in easy to use GIS formats!
 
 In mid-August, the Census Bureau published the [PL 94-171 Redistricting Data Summary Files](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html) from the 2020 Census. This is a pre-release of the 2020 census data, in legacy file format, and contains the elements that pertain to drawing new congressional districts and state legislative districts (state senate and house).
  
@@ -57,7 +57,7 @@ Note that the field names in these tables follow the traditional census field na
 ### Data for everyone
 {: .text-left}
 
-While PL 94-171 Summary File data is released under the banner of redistricting, let's not overlook that It's the first wave of census demographic data and it's wide open for use in any scenario that you can dream up.  
+While PL 94-171 Summary File data is released under the banner of redistricting, let's not overlook that it's the first wave of census demographic data and it's open for use in any scenario that you can dream up.  
 
 You can find more information on this data, including how to access it, on the UGRC [2020 Census data page]({% link data/demographic/census/index.html %}#2020Census). 
 
