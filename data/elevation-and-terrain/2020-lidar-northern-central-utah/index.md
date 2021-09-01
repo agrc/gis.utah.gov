@@ -33,7 +33,7 @@ During 2020 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah
     {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download project <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northern-central-utah-2020/NorthernCentralUtah_2020_Reports.zip" target="_blank">Reports</a> and <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northern-central-utah-2020/NorthernCentralUtah_2020_Metadata.zip" target="_blank">Metadata</a>
   </li>
   <li>
-    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northren-central-utah-2020/NorthernCentralUtah_2020_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northern-central-utah-2020/NorthernCentralUtah_2020_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
   </li>
 </ul>
 
