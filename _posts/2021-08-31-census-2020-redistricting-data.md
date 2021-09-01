@@ -37,8 +37,6 @@ The exciting news is that key elements from the PL 94-171 Summary Files are now 
  
 ![Alias Fields Naming Convention]({% link images/census2020_block_pl_94_171_alias_fields.png %}) 
 {: .flex .flex--center}
- 
-> Note: These elements are available now in [Open SGID]({% link sgid/open-sgid/index.md %}) and will be available in [Open Data](https://opendata.gis.utah.gov/) on Wednesday, September 1, 2021. 
 
 ### PL 94-171 Summary Files for all SGID geographies in tabular GIS format
 {: .text-left}
