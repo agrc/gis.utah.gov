@@ -25,7 +25,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Utah County:** Obtained roads data on 08/17/2021. Previous update was on 08/06/2021.
 - **Washington County:** Obtained roads data on 08/18/2021. Previous update was on 08/06/2021.
 
-Note: Data was requeted but not received from Juab County, Kane County, Tooele County, and Weber County. Data was received from Morgan County and Salt Lake County but due to internal processing issues it was not processed for this month.
+Note: Data was requested but not received from Juab County, Kane County, Tooele County, and Weber County. Data was received from Morgan County and Salt Lake County but due to internal processing issues it was not processed for this month.
 
 #### UDOT Route System
 
