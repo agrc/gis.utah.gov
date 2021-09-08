@@ -9,7 +9,7 @@ author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 published: true
-date: 2020-07-05 12:30:30
+date: 2020-09-08 11:00:00
 title: 2020 Northern & Central Utah Lidar Elevation Data
 categories: []
 ---
