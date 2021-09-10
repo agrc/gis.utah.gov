@@ -51,6 +51,13 @@ For users looking for additional data elements, we’ve made available the full 
 
 Note that the field names in these tables follow the traditional census field naming convention. You can find detailed information on field names, including descriptions, in the Census PL 94-171 [technical documentation](https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/summary-file/2020Census_PL94_171Redistricting_StatesTechDoc_English.pdf) or in [Excel spreadsheet](https://www2.census.gov/programs-surveys/decennial/rdo/about/2020-census-program/Phase3/SupportMaterials/2020_PLSummaryFile_FieldNames.xlsx) format.
 
+### Streamlined Race Data
+{: .text-left}
+
+Additionally, the Analytics Group at [WFRC](https://wfrc.org/) streamlined the race fields in the 2020 block data and made it available for [download](https://drive.google.com/uc?id=1sv6pAi-fn6UPbMHJ2BZzIM9ApBRAZLVP&export=download). This tabular data can be joined to the [CensusBlocks2020](({% link data/demographic/census/index.html %}#2020Census) GIS layer using the GEOID field. Here's a bit on the methodology that was used:
+
+> The decennial census form allows for respondents to report single and multiple racial identifications. Accordingly, the redistricting release of the 2020 census results includes counts for both single race identification and each combination of racial identifications made when more than one was selected. This table sums, for each racial group, the single racial identification count with a count of the multiple race identifying respondents that included an identification for that specific racial group. Fields that sum across single and multiple racial identification carry the "ANY" at the end of their field name header. Note that summing the counts across the ANY fields will produce a count of the number of identifications made (single and multiple) which will be much greater that the total population count.
+
 
 ### Data for everyone
 {: .text-left}
