@@ -58,7 +58,6 @@ Additionally, the Analytics Group at [WFRC](https://wfrc.org/) streamlined the r
 
 > The decennial census form allows for respondents to report single and multiple racial identifications. Accordingly, the redistricting release of the 2020 census results includes counts for both single race identification and each combination of racial identifications made when more than one was selected. This table sums, for each racial group, the single racial identification count with a count of the multiple race identifying respondents that included an identification for that specific racial group. Fields that sum across single and multiple racial identification carry the "ANY" at the end of their field name header. Note that summing the counts across the ANY fields will produce a count of the number of identifications made (single and multiple) which will be much greater that the total population count.
 
-
 ### Data for everyone
 {: .text-left}
 
@@ -68,5 +67,3 @@ You can find more information on this data, including how to access it, on the U
 
 If you have any questions about the data or the processes used, please reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.census text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.
-
-
