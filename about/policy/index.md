@@ -41,3 +41,8 @@ UGRC’s policy for creating, editing, maintaining, and removing data in the SGI
 {: .text-left}
 
 UGRC’s metadata guidelines for data in the SGID database.
+
+#### [State of Utah Privacy Policy](https://www.utah.gov/support/privacypolicy.html)
+{: .text-left}
+
+[gis.utah.gov]({% link index.html %}) follows the state's master Privacy Policy.
