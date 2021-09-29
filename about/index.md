@@ -38,6 +38,11 @@ UGRC was one of the first geospatial information offices in the country, establi
 
 UGRC is funded through a combination of State general and restricted funds and cost-recovery revenue sources from project work and grant awards. This hybrid approach ensures some stable base for SGID and coordination activities but keeps us on our toes by requiring us to keep up with the latest developments in our field so we can offer cutting edge GIS consulting services to those in need.
 
+<div style="padding:56.25% 0 0 0;position:relative;">
+  <iframe src="https://player.vimeo.com/video/618091475?h=b433f2866f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="UGRC - What we do"></iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
 ## What We Do at UGRC
 
 <div class="grid" markdown="1">
