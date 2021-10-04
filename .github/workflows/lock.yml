@@ -3,6 +3,13 @@ name: 'Lock threads'
 on:
   schedule:
     - cron: '0 0 * * *'
+    
+permissions:
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: lock
 
 jobs:
   lock:
@@ -11,8 +18,17 @@ jobs:
       - uses: dessant/lock-threads@v3
         with:
           github-token: ${{ github.token }}
-          issue-lock-labels: 'pinned'
-          issue-lock-inactive-days: '91'
-          pr-lock-inactive-days: '91'
-          issue-exclude-created-before: '2018-01-01'
-          pr-exclude-created-before: '2018-01-01'
+          exclude-any-issue-labels: 'pinned'
+          issue-inactive-days: '91'
+          pr-inactive-days: '91'
+          exclude-issue-created-before: '2018-01-01'
+          exclude-pr-created-beforee: '2018-01-01'
+          add-issue-labels: 'outdated'
+          issue-comment: >
+            This issue has been automatically locked since there
+            has not been any recent activity after it was closed.
+            Please open a new issue for related bugs.
+          pr-comment: >
+            This pull request has been automatically locked since there
+            has not been any recent activity after it was closed.
+            Please open a new issue for related bugs.
