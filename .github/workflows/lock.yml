@@ -22,7 +22,7 @@ jobs:
           issue-inactive-days: '91'
           pr-inactive-days: '91'
           exclude-issue-created-before: '2018-01-01'
-          exclude-pr-created-beforee: '2018-01-01'
+          exclude-pr-created-before: '2018-01-01'
           add-issue-labels: 'outdated'
           issue-comment: >
             This issue has been automatically locked since there
