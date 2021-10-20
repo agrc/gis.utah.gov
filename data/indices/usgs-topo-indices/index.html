@@ -21,14 +21,16 @@ USGS100KDRGIndices:
   updates:
     - Updates to this dataset are not planned
 USGS250KDRGIndices:
-  hub:
-    name: USGS 250K DRG Index 1x1
-    item_id: 606d75b70d254c7e9da5785704c60369
   downloads:
+    - url: https://opendata.gis.utah.gov/datasets/usgs-250k-drg-index-1x2
+      label: 'USGS 250K DRG Index 1x2: SGID Open Data Downloads and APIs'
     - url: https://opendata.arcgis.com/datasets/ed39436090e8472593149659b4ed257e_0.gdb
       label: 'USGS 250K Index 1x2: File Geodatabase'
     - url: https://opendata.arcgis.com/datasets/ed39436090e8472593149659b4ed257e_0.shp
       label: 'USGS 250K Index 1x2: Shapefile'
+  hub:
+    name: USGS 250K DRG Index 1x1
+    item_id: 606d75b70d254c7e9da5785704c60369
   updates:
     - Updates to this dataset are not planned
 ---
@@ -36,8 +38,7 @@ USGS250KDRGIndices:
   <img class="caption__image" src="{% link images/DRG24k-Index-UT_LG.png %}" alt="DRG Sample" loading="lazy" />
   <figcaption class="caption__text">USGS Topographic Map Index</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7meG9ZM2N4QzZrM0E"
-name="Topographic Map Indices"
+{% include abstract.html name="Topographic Map Indices"
 abstract="This dataset contains GIS mapping data representing the tile indices for the 24K, 100K, and 250K USGS scanned
 topographic maps (DRGs)." %}
 <div class="grid package">
