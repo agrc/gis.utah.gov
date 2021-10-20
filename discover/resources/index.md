@@ -169,6 +169,13 @@ Applications like ArcMap and web browsers have a relatively small window and use
 
 In contrast, WMTS works by delivering a set of fixed-dimension tiles at the requested zoom level that cover the requested extent. Because the tiles are pre-rendered, all the server has to do is figure out which tiles to send and then send them—and this is sped up by the client caching previously received tiles and only requesting ones it hasn't seen yet. This allows WMTS to quickly serve up tiles for much larger and/or more detailed maps than WMS without clogging the server.
 
+### Small Text/Symbology in QGIS
+{: .text-left}
+
+When using the basemap services in QGIS, you may experience small text and symbology when using bilinear or cubic resampling at scales other than the normal [web map scales](https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated/). The resampling settings are defined in `Layer Properties > Symbology > Resampling`. Using bilinear or cubic resampling can look much better than the default nearest neighbor method.
+
+This behavior is controlled by the "oversampling" value. At values greater than `1.00`, the text/symbology can appear smaller (QGIS is sending a "zoomed out" WMTS request and sampling it down to your desired scale). At values less than `1.00`, text/symbology can appear larger (it sends a "zoomed in" request and samples it up). QGIS uses the resampling method selected in the "in" dropdown at values less than `1.00`, and the "out" method at values greater than `1.00`.
+
 ### Other Tidbits
 {: .text-left}
 
