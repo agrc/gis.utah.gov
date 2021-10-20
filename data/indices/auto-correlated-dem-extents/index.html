@@ -1,5 +1,4 @@
 ---
-title: Auto-Correlated DEM Extents and Indices
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -11,41 +10,27 @@ tags:
 categories: []
 date: 2011-09-15 12:54:10 -0600
 AutoCorrelatedDEMExtents:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7maEFtYUtDOVB0YVE&export=download
-      label: 'Auto-Correlated DEM Extents: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSU42bWVOSHg5eWM&export=download
-      label: 'Auto-Correlated DEM Extents: Shapefile'
-  updates:
-    - Static since 2007 with no planned updates
-AutoCorrelatedDEMIndices:
-  downloads:
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mUUpwYTd4Qi1rRmM
-      label: Auto-Correlated DEM Extents and Indices Package
+  hub:
+    name: Auto Correlated DEM Extents
+    item_id: 3e82e35d69744ce4991c15daa4edd775
   updates:
     - Static since 2007 with no planned updates
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/auto-corr_dem-extents-index-ut.jpg %}" alt="Auto-Correlated Sample"
+  <img class="caption__image" src="{% link images/auto-corr_dem-extents-ut.jpg %}" alt="Auto-Correlated Sample"
     loading="lazy" />
-  <figcaption class="caption__text">Auto-Correlated DEM Extent and Index</figcaption>
+  <figcaption class="caption__text">Auto-Correlated DEM Extent</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUUpwYTd4Qi1rRmM"
-name="Auto-Correlated DEM Extents and Indices"
+{% include abstract.html name="Auto-Correlated DEM Extents"
 abstract="This dataset contains GIS mapping data representing the auto-correlated DEM Elevations data available in the
-State of Utah. The ‘Extents’ are the boundaries of the DEM while the ‘Indices’ are the individual DEM tiles covered by
-the ‘Extents’." %}
+State of Utah." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="Auto-CorrelatedDEMExtents">Auto-Correlated DEM Extents</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/auto-corr_dem-extents-ut.jpg %}"
-      alt="Auto-Corr DEM Extent Sample" loading="lazy" />
-    <p>INDICES.AutoCorrelated_DEM_Extents is a polygon dataset of the areas where auto-correlated DEM elevation is
+    <p>AutoCorrelated DEM Extents is a polygon dataset of the areas where auto-correlated DEM elevation is
       available in the State of Utah.</p>
-    <p>INDICES.AutoCorrelated_DEM_Extents is intended to be used to determine what auto-correlated DEM elevation
-      datasets are available for areas across the State of Utah.</p>
     <p><strong>The auto-correlation process is not as rigorous as other methods of elevation modeling such as
         photogrammetry, LiDAR mapping, radar mapping, etc, and therefore end-users should be aware that anomalies are
         expected within the elevation dataset.</strong></p>
@@ -82,46 +67,10 @@ the ‘Extents’." %}
     This dataset is maintained by UGRC in partnership with state and local government.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mUUpwYTd4Qi1rRmM">Auto-Correlated DEM Extents and
-          Indices Package</a>
       <li><a href="{% link data/elevation-and-terrain/index.html %}">Download Elevation and Terrain Data</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="AutoCorrelatedDEMExtents"
   info=page.AutoCorrelatedDEMExtents %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="Auto-CorrelatedDEMIndices">Auto-Correlated DEM Indices</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/auto-corr_dem-index-ut.jpg %}"
-      alt="Auto-Corr DEM Index Sample" loading="lazy" />
-    <p>The auto-correlated DEM tile indices can be used to determine the boundaries of the 2 meter (from HRO2006
-      imagery) and 5 meter (from NAIP2006 imagery) auto-correlated DEMs from 2006.</p>
-    <p><strong>The auto-correlation process is not as rigorous as other methods of elevation modeling such as
-        photogrammetry, LiDAR mapping, radar mapping, etc, and therefore end-users should be aware that anomalies are
-        expected within the elevation dataset.</strong></p>
-    <p>Each tile index contain the following attribute fields:</p>
-    <ul class="dotless no-padding">
-      <li><strong>TILE</strong> - the image tile name
-      <li><strong>PATH</strong> - the directory where the DEM tile resides on the FTP site
-      <li><strong>SIZE</strong> - the average file size of each tile
-      <li><strong>Origin</strong> - the Ground Sample Distance (GSD) or resolution of the original imagery the data was
-        auto-correlated from
-    </ul>
-    <p>The auto-correlated DEM tile indices are maintained by UGRC. Changes and updates are <strong>not planned</strong>
-      to these datasets.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
-    <p>There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute
-      content to: State of Utah, SGID.</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="{% link data/elevation-and-terrain/index.html %}">Download Elevation and Terrain Data</a>
-    </ul>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
-  </div>
-  {% include packagedata.html name="AutoCorrelatedDEMIndices"
-  info=page.AutoCorrelatedDEMIndices %}
 </div>
