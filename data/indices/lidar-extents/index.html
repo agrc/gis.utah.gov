@@ -1,5 +1,4 @@
 ---
-title: LiDAR Extents and Indices
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -10,41 +9,25 @@ tags:
 categories: []
 date: 2011-09-15 09:48:35 -0600
 LiDARExtents:
-  downloads:
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mNmdGeEdWYjZoY0U
-      label: 'LiDAR Extents: File Geodatabase'
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7malk4TVhjbGotejQ
-      label: 'LiDAR Extents: Shapefile'
+  hub:
+    name: LiDAR Extents
+    item_id: 90556bb0e09640648be66013a6ab56e6
   updates:
-    - July 2011
-LiDARIndices:
-  downloads:
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mV3l5cERKdk14NTA
-      label: LiDAR Extents and Indices Package
-  updates:
-    - No planned updates
+    - 2021
 ---
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/lidar-extents-index-ut.jpg %}" alt="LiDAR Extents and Indices"
+  <img class="caption__image" src="{% link images/lidar-extents-ut.jpg %}" alt="LiDAR Extents"
     loading="lazy" />
   <figcaption class="caption__text">LiDAR Extent and Index</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7mV3l5cERKdk14NTA"
-name="LiDAR Extents and Indices"
-abstract="This dataset contains GIS mapping data representing the LiDAR elevation data available in the State of Utah.
-The 'Extents' are the boundaries of the LiDAR while the 'Indices' are the individual LiDAR tiles covered by the
-'Extents'." %}
+{% include abstract.html name="LiDAR Extents and Indices"
+abstract="This dataset contains GIS mapping data representing the LiDAR elevation data available in the State of Utah." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="LiDARExtents">LiDAR Extents</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/lidar-extents-ut.jpg %}" alt="LiDAR Extent Sample"
-      loading="lazy" />
-    <p>INDICES.LiDAR_Extents is a polygon dataset of the areas where LiDAR elevation data is available in the State of
-      Utah.</p>
-    <p>INDICES.LiDAR_Extents is intended to be used to determine what LiDAR datasets are available for areas across the
-      State of Utah.</p>
+    <p>LiDAR Extents is a polygon dataset of the areas where LiDAR elevation data is available in the State of Utah.</p>
     <p>Each polygon extent contains the following attribute fields when available or applicable:</p>
     <ul class="dotless">
       <li><strong>Resolution</strong> - the resolution or average point spacing
@@ -69,6 +52,8 @@ The 'Extents' are the boundaries of the LiDAR while the 'Indices' are the indivi
       <li><strong>FlightDate_Location</strong> - where to find the exact flight date for each individual tile of data
       <li><strong>Tile_Index</strong> - the tile index in the SGID for each product
       <li><strong>Upload_Date</strong> - the date the polygon extent was loaded into the dataset
+      <li><strong>USGS_QualityLevel</strong> - denotes the USGS Quality Level if applicable
+      <li><strong>Coverage</strong> - denotes the bare earth extents that are USGS Quality Level 1 or 2
     </ul>
     <p>These boundaries are maintained by UGRC with the help of many state, county, and local entities. Changes and
       updates are made as new LiDAR is a acquired in Utah. The native spatial reference for this dataset is UTM Zone
@@ -81,32 +66,4 @@ The 'Extents' are the boundaries of the LiDAR while the 'Indices' are the indivi
     <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
   {% include packagedata.html name="LiDARExtents" info=page.LiDARExtents %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="LiDARIndices">LiDAR Indices</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/lidar-indices-ut.jpg %}" alt="LiDAR Index Sample"
-      loading="lazy" />
-    <p>The 2006 LiDAR tile indices can be used to determine the boundaries of the LiDAR data collected in 2006. In
-      addition to bare earth DEM data there is also raw point cloud data and some first and last return LiDAR data. This
-      data is in an ASCii format.</p>
-    <p>Each tile index contain the following attribute fields:</p>
-    <ul class="dotless">
-      <li><strong>TILE</strong> - the image tile name
-      <li><strong>PATH</strong> - the directory where the LiDAR tile resides on the FTP site
-      <li><strong>SIZE</strong> - the average file size of each tile
-      <li><strong>RESOLUTION</strong> - the resolution or average point spacing
-    </ul>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). Changes
-      and updates are not planned to these datasets. There are no constraints or warranties with regard to the use of
-      this dataset. Users are encouraged to attribute content to: State of Utah, SGID.</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="{% link data/elevation-and-terrain/index.html %}">Elevation and Terrain Data</a>
-    </ul>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
-  </div>
-  {% include packagedata.html name="LiDARIndices" info=page.LiDARIndices %}
 </div>
