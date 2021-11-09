@@ -7,7 +7,7 @@ date: 2021-11-09 10:30:00
 categories:
   - Featured
 tags:
-  - Roads
+  - roads
 ---
 
 UGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System]({% link data/transportation/roads-system/index.html %}) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.
