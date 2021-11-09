@@ -32,7 +32,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Washington County:** Obtained roads data on 10/20/2021. Previous update was on 09/03/2021.
 - **Weber County:** Obtained roads data on 10/26/2021. Previous update was on 08/06/2021.
 
-Note: This month's road update combines data updates from September and October for the folowing counties: Davis, Salt Lake, Utah, Washington, Weber.
+Note: This month's road update combines data updates from September and October for the following counties: Davis, Salt Lake, Utah, Washington, Weber.
 
 #### UDOT Route System
 
