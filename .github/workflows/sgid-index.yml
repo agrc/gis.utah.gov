@@ -17,7 +17,7 @@ jobs:
           python-version: 3.9
 
       - name: Update SGID Index
-        uses: technote-space/create-pr-action@v2.0.32
+        uses: technote-space/create-pr-action@v2.0.33
         env:
           GIS_DRIVE_API_CREDENTIALS: ${{ secrets.SA }}
         with:
