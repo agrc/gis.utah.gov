@@ -11,7 +11,7 @@ categories:
   - Featured
 ---
 
-In July, UGRC staff completed a significant update to the statewide trails GIS map layer. The updates integrated trail data published by each of Utah’s National Forests on the [USFS Geodata Clearinghouse](https://data.fs.usda.gov/geodata/). Additionally, over 190 miles of trails were added from data shared by the Mountainland Association of Governments (MAG).
+In July, UGRC staff completed a significant update to the statewide trails GIS map layer. The updates integrated trail data published by each of Utah’s National Forests on the [USFS Geodata Clearinghouse](https://web.archive.org/web/20160825052630/http://data.fs.usda.gov:80/geodata/). Additionally, over 190 miles of trails were added from data shared by the Mountainland Association of Governments (MAG).
 
 The USFS trails integration added 2,964 miles of trails to the statewide map layer, picking up many missing trails in less-prominent recreation areas that were not in the initial trails data whose rights were purchased in 2014.
 
