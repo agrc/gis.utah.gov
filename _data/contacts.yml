@@ -358,4 +358,9 @@ census:
   - name: Greg Bunce
     email: GBunce@utah.gov
     agency: UGRC
+voter_count_tool:
+  name: Erik Neemann
+  email: ENeemann@utah.gov
+  phone: 385-258-4299
+  agency: UGRC
 
