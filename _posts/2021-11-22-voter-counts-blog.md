@@ -22,4 +22,5 @@ The ArcGIS Pro Toolbox can be [downloaded](https://drive.google.com/file/d/1i9OZ
 
 [![Voter Counts Tool]({% link images/voter_tool.PNG %} "Voter Counts Tool")]({% link images/voter_tool.PNG %}){: .flex .flex--center }
 
-If you're interested in using the voter counts tool to help with redrawing your precincts, please reach out to us and we can help set you up.  Questions, issues, or access requests can be directed to Erik Neemann at ([eneemann@utah.gov](mailto:eneemann@utah.gov)).
+If you're interested in using the voter counts tool to help with redrawing your precincts, please reach out to us and we can help set you up.  Questions, issues, or access requests can be directed to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.voter_count_tool %}{% endcapture %}
+{{ contact }}.
