@@ -3,7 +3,7 @@ title: 'UGRC Voter Count Tool for Redrawing Precincts'
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov
-date: 2021-11-22 9:30:01
+date: 2021-11-23 9:30:01
 categories:
   - Featured
 tags:
