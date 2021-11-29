@@ -30,7 +30,7 @@ The official [UGRC API client](https://github.com/agrc/api-client) is now availa
 - You only need to create one API key ever. Did your IP address change? No problem! Your access will not be interrupted.
 - API keys are validated before the geocoding task starts. The create a key, try to geocode, fail, read the error message, create a new key, succeed loop is broken!
 
-There are many improvements compared to our other desktop clients that you will need to download the app and see for yourself. We are not finished. We have many [new features](https://github.com/agrc/api-client/issues) planned for this client that you will not want to miss.
+There are many other improvements compared to our other desktop clients. You'll have to [download](https://github.com/agrc/api-client/releases) and install the app to see them for yourself. And we are not yet finished. We have plenty of [new features](https://github.com/agrc/api-client/issues) planned for this client that you will not want to miss.
 
 ![UGRC API Logo]({% link images/api-client/web_api_logo.png %})
 {: .flex .flex--center }
