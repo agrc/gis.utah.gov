@@ -14,7 +14,9 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v2.3.0
         with:
-          python-version: 3.9
+          python-version: 3.9          
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
 
       - name: Update SGID Index
         uses: technote-space/create-pr-action@v2.0.33
