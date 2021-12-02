@@ -1,5 +1,4 @@
 ---
-title: USGS Digital Topographic Maps (DRGs) Indices
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -10,39 +9,28 @@ tags:
 categories: []
 date: 2011-09-15 14:42:10 -0600
 USGS24KDRGIndices:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mWTZLZGRfdGx2b1E&export=download
-      label: 'USGS 24K Quad Index: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVDlfMndnVzMzaVU&export=download
-      label: 'USGS 24K Quad Index: Shapefile'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mVnZXUlNUaUJSWFU&export=download
-      label: 'USGS 24K Quarter Quad Index: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mSnpEbmhhXzB3aXc&export=download
-      label: 'USGS 24K Quarter Quad Index: Shapefile'
+  hub:
+    name: USGS 24K DRG Index
+    item_id: fe10115354c14260aef62a60b3137488
   updates:
     - Updates to this dataset are not planned
 USGS100KDRGIndices:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mdmlfbUctZXRMYjA&export=download
-      label: 'USGS 100K Index: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mYUFsVEpVWmozYzg&export=download
-      label: 'USGS 100K Index: Shapefile'
+  hub:
+    name: USGS 100K DRG Index
+    item_id: 80042c4b51a843c3b480ada0b8d68177
   updates:
     - Updates to this dataset are not planned
 USGS250KDRGIndices:
+  hub:
+    name: USGS 250K Index 1x1
+    item_id: 606d75b70d254c7e9da5785704c60369
   downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mTHBEOVJpQVpPdzA&export=download
-      label: 'USGS 250K Index 1x1: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mQmtkeDlzVklVZ3M&export=download
-      label: 'USGS 250K Index 1x1: Shapefile'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMF83VXVUUlBMUGM&export=download
-      label: 'USGS 250K Index 1x2: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mb1ZMUTVKbFdWWjA&export=download
-      label: 'USGS 250K Index 1x2: Shapefile'
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mbTNDWW5TcUNZRFk
-      label: INDICES.USGS250KQuads1x1
-    - url: https://drive.google.com/drive/folders/0ByStJjVZ7c7mMmloWWtXbjcyRkE
-      label: INDICES.USGS250KQuads1x2
+    - url: https://opendata.gis.utah.gov/datasets/usgs-250k-drg-index-1x2
+      label: 'USGS 250K DRG Index 1x2: SGID Open Data Downloads and APIs'
+    - url: https://opendata.arcgis.com/datasets/ed39436090e8472593149659b4ed257e_0.gdb
+      label: 'USGS 250K DRG Index 1x2: File Geodatabase'
+    - url: https://opendata.arcgis.com/datasets/ed39436090e8472593149659b4ed257e_0.shp
+      label: 'USGS 250K DRG Index 1x2: Shapefile'
   updates:
     - Updates to this dataset are not planned
 ---
@@ -50,8 +38,7 @@ USGS250KDRGIndices:
   <img class="caption__image" src="{% link images/DRG24k-Index-UT_LG.png %}" alt="DRG Sample" loading="lazy" />
   <figcaption class="caption__text">USGS Topographic Map Index</figcaption>
 </figure>
-{% include abstract.html download="https://drive.google.com/drive/folders/0ByStJjVZ7c7meG9ZM2N4QzZrM0E"
-name="Topographic Map Indices"
+{% include abstract.html name="Topographic Map Indices"
 abstract="This dataset contains GIS mapping data representing the tile indices for the 24K, 100K, and 250K USGS scanned
 topographic maps (DRGs)." %}
 <div class="grid package">
@@ -74,8 +61,9 @@ topographic maps (DRGs)." %}
       State of Utah, SGID.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}">USGS 24K Topographic Maps</a>
-      <li><a href="https://drive.google.com/drive/folders/0ByStJjVZ7c7mb1RJRmQ3ZTdPbjQ">INDICES.USGS24KQuads</a>
+      <li><a href="https://utah.maps.arcgis.com/home/item.html?id=baa0bf569643469a9511e1fb753f4a60">USGS 24K Quarter Quads Index</a>
+      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}/#24K">USGS 24K Topographic Maps</a>
+      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}/#Vintage">Vintage Topographic Maps</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
@@ -101,7 +89,7 @@ topographic maps (DRGs)." %}
       State of Utah, SGID.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}">USGS 100K Topographic Maps</a>
+      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}/#100K">USGS 100K Topographic Maps</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
@@ -124,11 +112,7 @@ topographic maps (DRGs)." %}
       State of Utah, SGID.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}">USGS 250K Topographic Maps</a>
-      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}">USGS 500K Topographic Maps</a>
-      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}">Vintage Collared USGS</a>
-      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}">1:62.5K and 1:125K </a>
-      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}">Topographic Maps</a>
+      <li><a href="{% link data/usgs-scanned-topographic-maps/index.html %}/#250K">USGS 250K Topographic Maps</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.indices %}</p>
   </div>
