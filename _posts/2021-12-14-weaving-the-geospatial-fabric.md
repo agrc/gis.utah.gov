@@ -24,7 +24,7 @@ It’s been said that it took about [one-hundred-thousand](https://www.historymu
 ### Geospatial Collaboration
 {: .text-left}
 
-Geospatial folks are some of the best collaborators. For one, geospatial data is inherently visual. Much like adding pieces to a puzzle, it’s rewarding to assemble. Second, geospatial folks generally speak the same language. In the early days, most folks in the industry were using [ESRI](www.esri.com)
+Geospatial folks are some of the best collaborators. For one, geospatial data is inherently visual. Much like adding pieces to a puzzle, it’s rewarding to assemble. Second, geospatial folks generally speak the same language. In the early days, most folks in the industry were using [ESRI](https://www.esri.com/en-us/home)
  products and were creating and sharing data in similar formats; this is generally still true in the public sector. Collaboration is embedded in the geospatial community
 
 What's exciting now is that technology continues to make this easier. Because of this, we have entered a time when siloed data should be a thing of the past. The individual work that we do can now be aggregated together to form a seamless, uniform fabric of our world. As geospatial folks, we are weaving the fabric. This is particularly true with authoritative data.
