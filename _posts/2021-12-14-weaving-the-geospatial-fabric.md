@@ -63,7 +63,7 @@ Geospatial advisory groups are a great place to communicate and discover common 
 ### Utah Geospatial Information Advisory Committee (GISAC)
 {: .text-left}
 
-If you maintain geospatial data in the state of Utah, you should consider joining GISAC’s Surveying and Mapping committee. This committee works to develop and update data content standards and to consolidate statewide mapping requirements for the most widely used geographic data in Utah. These standards are only valuable if they are being implemented and the best way to encourage their implementation is to collectively take ownership of them. The only way this works is if we own these standards together. This is where your voice matters.
+If you maintain geospatial data in the state of Utah, you should consider joining GISAC’s Surveying and Mapping committee. This committee works to develop and update data content standards and to consolidate statewide mapping requirements for the most widely used geographic data in Utah. These standards are only valuable if they are being implemented, and the best way to encourage their implementation is to collectively take ownership of them. This is where your voice matters.
 
 Established standards and best practices are key to speedy and efficient data updates. Ultimately, we all benefit from this by way of improved emergency services, accurate election ballots, and timely grocery deliveries.
 
