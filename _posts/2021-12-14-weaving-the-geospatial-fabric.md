@@ -74,7 +74,7 @@ If we're doing it right, the geospatial fabric should stretch across the nation 
 
 Our goal is to efficiently weave authoritative data together in a timely manner so that end users are able to access a single stream of data that helps everyone make data-driven decisions. Collectively, we all play a role in this process, and it's rewarding to know that the data we create is being used in broader systems to solve large-scale problems.
 
-If you would like to learn more about GISAC or one of its five subcommittees including the Survey and Mapping Committee, please reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.gisac text=' ' hide-punctuation=true %}{% endcapture %}
+If you would like to learn more about GISAC or one of its five subcommittees, including the Survey and Mapping Committee mentioned earlier, please reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.gisac text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.
 
 ![SGID Hexagon Globe]({% link images/hex_globe_sgid.png %})
