@@ -38,7 +38,7 @@ Authoritative data is different from crowd-sourced and proprietary data. Users s
 
 The clearest use cases for authoritative data are solutions for systems like emergency management, 911, elections, health, and taxation. These support vital government services such as election ballots, public safety, and taxation rates. It is important to have a clearly defined steward with full accountability for the data.
 
-Authoritative datasets have a wide array of use cases and it is important that we are using them when called for.
+Authoritative datasets have a wide array of use cases, and it is important that we turn to them first when possible.
 
 ### Stewardship and Aggregation
 {: .text-left}
