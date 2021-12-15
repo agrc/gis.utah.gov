@@ -363,4 +363,11 @@ voter_count_tool:
   email: ENeemann@utah.gov
   phone: 385-258-4299
   agency: UGRC
-
+gisac:
+  - name: Matt Peters
+    email: mpeters@utah.gov
+    agency: UGRC
+  - name: Greg Bunce
+    email: gbunce@utah.gov
+    agency: UGRC
+    
