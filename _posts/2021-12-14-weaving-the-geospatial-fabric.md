@@ -19,12 +19,13 @@ tags:
 ### Many Hands Make Light Work
 {: .text-left}
 
-It’s been said that it took about [one-hundred-thousand](https://www.historymuseum.ca/cmc/exhibitions/civil/egypt/egca12e.html#:~:text=The%20Greek%20historian%20Herodotus%20was,creates%20a%20very%20stable%20structure.) humans to build the Pyramids of Giza and a [similar number](https://www.peoplesworld.org/article/today-in-labor-history-panama-canal-built-by-75-000-opens/) to build the Panama Canal. Prior to the internet, large-scale collaboration is generally thought to be limited to that number. Any more, and it became difficult to manage. What made these projects successful is that they were well-organized and that they adhered to a set of standards. Today we are able to collaborate with an infinite number of people, however, organization and standards are still limiting/inhibiting factors.
+It’s been said that it took about [one-hundred-thousand](https://www.historymuseum.ca/cmc/exhibitions/civil/egypt/egca12e.html#:~:text=The%20Greek%20historian%20Herodotus%20was,creates%20a%20very%20stable%20structure.) humans to build the Pyramids of Giza and a [similar number](https://www.peoplesworld.org/article/today-in-labor-history-panama-canal-built-by-75-000-opens/) to build the Panama Canal. Prior to the internet, large-scale collaboration is generally thought to be limited to that number. Any more, and it became difficult to manage. What made these projects successful is that they were well-organized and that they adhered to a set of standards. Today we are able to collaborate with an infinite number of people, however, organization and standards are still limiting factors.
 
 ### Geospatial Collaboration
 {: .text-left}
 
-Geospatial folks are some of the best collaborators. For one, geospatial data is inherently visual. Much like adding pieces to a puzzle, it’s rewarding to assemble. Second, geospatial folks generally speak the same language. In the early days, most folks in the industry were using ESRI products and were creating and sharing data in similar formats; this is generally still true in the public sector. Collaboration is embedded in the geospatial community
+Geospatial folks are some of the best collaborators. For one, geospatial data is inherently visual. Much like adding pieces to a puzzle, it’s rewarding to assemble. Second, geospatial folks generally speak the same language. In the early days, most folks in the industry were using [ESRI](www.esri.com)
+ products and were creating and sharing data in similar formats; this is generally still true in the public sector. Collaboration is embedded in the geospatial community
 
 What's exciting now is that technology continues to make this easier. Because of this, we have entered a time when siloed data should be a thing of the past. The individual work that we do can now be aggregated together to form a seamless, uniform fabric of our world. As geospatial folks, we are weaving the fabric. This is particularly true with authoritative data.
 
@@ -33,7 +34,7 @@ What's exciting now is that technology continues to make this easier. Because of
 
 In general, authoritative data can be defined as data provisioned by an authoritative source such as a surveyor or authoritative governing entity (aka an entity that is authorized to develop or manage the data such as a governmental jurisdiction).
 
-Authoritative data is different from crowd-sourced and proprietary data. Users should understand the any limitations or restrictions when working with either of these data sources, as each of them have best-suited use cases. 
+Authoritative data is different from crowd-sourced and proprietary data. Users should understand any limitations or restrictions when working with either of these data sources, as each of them have best-suited use cases. 
 
 The clearest use case for authoritative data is in business solutions such as emergency management, 911, elections, health, and taxation. These systems ensure government services such as election ballots, public safety, and rates of taxation. For these solutions, it is best to have a clear defined steward with full accountability of the data.
 
