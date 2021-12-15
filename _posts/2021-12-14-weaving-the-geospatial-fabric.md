@@ -45,7 +45,7 @@ Authoritative datasets have a wide array of use cases, and it is important that 
 
 Authoritative data is typically woven together through a process of aggregation. In this model, there are data stewards and data aggregators (with occasional overlap). Ideally, the data stewards are the folks who are governing or who are closest to the assets. This is often local government for datasets such as address points, land parcels, and road centerlines.
 
-Data aggregators, such as UGRC, have a wider scope and tend to be positioned at the state and national levels. The role of the aggregator is to build relationships with the stewards and to standardize and aggregate a woven together product.  Additionally, their role is to also make it available to a broader audience.
+Data aggregators, such as UGRC, have a wider scope and tend to be positioned at the state and national levels. The role of the aggregator is to build relationships with the stewards, standardize and aggregate a final product woven together from their data, and make the final product available to a broader audience.
 
 This steward-aggregator model has well-defined roles and contains accountability at all levels. One of the many benefits of this is that when an asset is created or modified (such as an address point), it is done at the source. Through aggregation, all downstream users benefit from the enhancement. This eliminates duplication and promotes a single source of truth in the data. It also ensures that users from the local to the national level are using the same data. This is great because the more the data is used, the better it becomes.
 
