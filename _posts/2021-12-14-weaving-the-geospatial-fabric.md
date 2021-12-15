@@ -52,18 +52,18 @@ This steward-aggregator model has well-defined roles and contains accountability
 ### Data Standards and the Role of Advisory Groups
 {: .text-left}
 
-The Pyramids of Giza were not built overnight. Their success not only hinged on collaboration and organization but also established [standards](https://www.fgdc.gov/ngac/meetings/march-2017/ngac-paper-geospatial-standards-a-national-asset.pdf). Without standards, it’s difficult to ensure that the individual pieces fit together. 
+The Pyramids of Giza and the Panama Canal were not built overnight. Their success not only hinged on collaboration and organization but also established [standards](https://www.fgdc.gov/ngac/meetings/march-2017/ngac-paper-geospatial-standards-a-national-asset.pdf). Without standards, it’s difficult to ensure that the individual pieces fit together. 
 
-Today, the geospatial fabric is held together by collaboration, relationships, and agreed-upon standards. Much like collaboration and relationships, standards require communication among stakeholders. A big part of this is understanding our roles and each other's goals.
+Today, the geospatial fabric is held together by collaboration, relationships, and agreed-upon standards. Much like collaboration and relationships, standards require communication among stakeholders. A big part of this is understanding our roles and eachother's goals.
 
 Data stewards typically maintain data for specific purposes, however, as we communicate we discover that we share common goals. Agreeing on these details allows us to greatly increase the efficiency and speed of aggregation within statewide or national datasets.
 
-Geospatial advisory groups are a great place to communicate and discover common goals. A few examples of these include the [Federal Geospatial Data Committee](https://www.fgdc.gov/) (FGDC), the [National Geospatial Advisory Committee](https://www.fgdc.gov/ngac) (NGAC), the [Open Geospatial Consortium](https://www.ogc.org/) (OGC), and the [Utah Geospatial Information Advisory Committee](https://gis.utah.gov/about/gisac/) (GISAC). These groups exist to ensure that the wider geospatial community is being heard and that we are collectively moving forward together. By taking an active role in one of these groups, you can help to ensure that your industry is represented and that the work you do fits together to form the larger fabric.
+Geospatial advisory groups are a great place to communicate and discover common goals. A few examples of these include the [Federal Geospatial Data Committee](https://www.fgdc.gov/) (FGDC), the [National Geospatial Advisory Committee](https://www.fgdc.gov/ngac) (NGAC), the [Open Geospatial Consortium](https://www.ogc.org/) (OGC), and the [Utah Geospatial Information Advisory Committee]({% link about/gisac/index.md %}) (GISAC). These groups exist to ensure that the wider geospatial community is being heard and that we are collectively moving forward together. By taking an active role in one of these groups, you can help to ensure that your industry is represented and that the work you do fits together to form the larger fabric.
 
 ### Utah Geospatial Information Advisory Committee (GISAC)
 {: .text-left}
 
-If you maintain geospatial data in the state of Utah, you should consider joining GISAC’s Surveying and Mapping committee. This committee works to develop and update data content standards and to consolidate statewide mapping requirements for the most widely used geographic data in Utah. These standards are only valuable if they are being implemented and the best way to encourage their implementation is to collectively take ownership of them. This is where your voice matters. The only way this works is if we own these standards together.
+If you maintain geospatial data in the state of Utah, you should consider joining GISAC’s Surveying and Mapping committee. This committee works to develop and update data content standards and to consolidate statewide mapping requirements for the most widely used geographic data in Utah. These standards are only valuable if they are being implemented and the best way to encourage their implementation is to collectively take ownership of them. The only way this works is if we own these standards together. This is where your voice matters.
 
 Established standards and best practices are key to speedy and efficient data updates. Ultimately, we all benefit from this by way of improved emergency services, accurate election ballots, and timely grocery deliveries.
 
