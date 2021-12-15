@@ -47,7 +47,7 @@ Authoritative data is typically woven together through a process of aggregation.
 
 Data aggregators, such as UGRC, have a wider scope and tend to be positioned at the state and national levels. The role of the aggregator is to build relationships with the stewards, standardize and aggregate a final product woven together from their data, and make the final product available to a broader audience.
 
-This steward-aggregator model has well-defined roles and contains accountability at all levels. One of the many benefits of this is that when an asset is created or modified (such as an address point), it is done at the source. Through aggregation, all downstream users benefit from the enhancement. This eliminates duplication and promotes a single source of truth in the data. It also ensures that users from the local to the national level are using the same data. This is great because the more the data is used, the better it becomes.
+This steward-aggregator model has well-defined roles and contains accountability at all levels. One of the many benefits of this is that when an asset (such as an address point) is created or modified, it is done at the authoritative source. Through aggregation, all downstream users benefit from the enhancement. This eliminates duplication and promotes a single source of truth for the data. It also ensures that users from the local to the national level are using the same data. This is great because the more the data is used, the better it becomes.
 
 ### Data Standards and the Role of Advisory Groups
 {: .text-left}
