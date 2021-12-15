@@ -32,7 +32,7 @@ What's exciting now is that technology continues to make this easier. Because of
 ### Authoritative Data
 {: .text-left}
 
-In general, authoritative data can be defined as data provisioned by an authoritative source such as a surveyor or authoritative governing entity (aka an entity that is authorized to develop or manage the data such as a governmental jurisdiction).
+In general, authoritative data can be defined as data provided by a recognized source such as a surveyor or governing entity (ie, an entity that is authorized to develop or manage the data, such as a governmental jurisdiction).
 
 Authoritative data is different from crowd-sourced and proprietary data. Users should understand any limitations or restrictions when working with either of these data sources, as each of them have best-suited use cases. 
 
