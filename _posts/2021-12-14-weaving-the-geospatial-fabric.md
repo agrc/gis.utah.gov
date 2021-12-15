@@ -3,7 +3,7 @@ title: Weaving the Fabric - Building Authoritative Geospatial Datasets through C
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2021-12-15 10:01:46
+date: 2021-12-14 10:01:46
 categories:
   - Featured
 tags:
