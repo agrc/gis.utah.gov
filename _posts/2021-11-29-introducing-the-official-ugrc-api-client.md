@@ -11,9 +11,9 @@ tags:
   - geocoding
 ---
 
-{% include embedded_video.html embed_url="https://player.vimeo.com/video/659380032" %}
-
 Assigning a geographic coordinate to an address, otherwise known as geocoding, is one of the simplest ways to enable data to be visualized on a map. This makes geocoding a gateway to a Geographic Information System (GIS). Because location matters to us, we make geocoding simple!
+
+{% include embedded_video.html embed_url="https://player.vimeo.com/video/659380032" %}
 
 Since the creation of the [UGRC API](https://api.mapserv.utah.gov) over 10 years ago, UGRC has been building geocoding clients. A geocoding client is a piece of software that understands how to interact with the UGRC API, and hide the complexity, to make geocoding simple. The first [geocoding client](https://github.com/agrc/kitchen-sink/tree/main/packages/dartboard) enabled users in a [web application](https://atlas.utah.gov) to quickly find their house in aerial imagery and understand what is near them. An ArcGIS tool client brought the same functionality to desktop GIS. No user is going to be left out.
 
