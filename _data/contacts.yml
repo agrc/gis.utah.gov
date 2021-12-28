@@ -238,8 +238,8 @@ earthquakes:
   phone: 801-538-4810
   agency: Utah Geologic Survey(UGS)
 water_related_land_use:
-  name: Aaron Austin
-  email: AaronAustin@utah.gov
+  name: Thomas Moore
+  email: tmoore@utah.gov
   agency: DNR
 voting:
   name: Justin Lee
@@ -266,10 +266,10 @@ uta:
   agency: UTA
   email: SEllis@rideuta.com
 ugs:
-  name: Gordon Douglass
+  name: Cyndi Andersen
   agency: DNR
-  email: gdouglass@utah.gov
-  phone: 801-538-4810
+  email: cyndiandersen@utah.gov
+  phone: 385-379-7478
 nhd:
   name: Lee Eschler
   email: LeeEschler@utah.gov
