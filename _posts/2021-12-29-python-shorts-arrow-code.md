@@ -3,7 +3,7 @@ title: "Python Shorts: Flattening Arrow Code"
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2021-12-28 17:00:00
+date: 2021-12-29 11:00:00
 categories:
   - Featured
   - Developer
