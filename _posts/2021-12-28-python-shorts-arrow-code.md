@@ -11,7 +11,9 @@ tags:
   - python
 ---
 
-"Arrow Code" refers to a series of nested `if` statements that increase your indentation level at each statement, creating a arrow of whitespace if mirrored by accompanying else blocks. While they arise naturally from the way our brains work through problems — "if this is true, and if that is true, and if this final bit is true, then finally do this" — they make our code less readable. Readability counts in programming. Code is read more than it's written, and code that is easy to read and understand is code that is easier to modify or extend without errors.
+"Arrow Code" refers to a series of nested `if` statements that increase your indentation level at each statement, creating an arrow of whitespace when the `if`s are mirrored by accompanying `else` blocks. 
+
+While arrow code arises naturally from the way our brains work through problems — "if this is true, and if that is true, and if this final bit is true, then finally do this" — they make our code less readable. Readability counts in programming. Code is read more than it's written, and code that is easy to read and understand is code that is easier to modify or extend without errors.
 
 While I was working on a task today I realized it would make a great example of how to flatten arrow code, so I'm going to share it with you. This example uses Jeff Atwood's [3rd and 4th flattening tactics](https://blog.codinghorror.com/flattening-arrow-code/).
 
@@ -90,6 +92,8 @@ In addition, the `if not value` existence check is common enough that it's easil
 Finally, I **`return` from the function as soon as possible** instead of chaining the comparisons together or using an `if/elif/else` switch. Because any one of our checks indicates that the site is not open, I can bomb out as soon as one fails. Otherwise, if it passes all the tests, I know that it's open so I can just `return True`.
 
 This pattern of returning early may not seem as readable to you if you've not encountered it before or are used to just a single return at the end of a function. But, once you're familiar with it, the pattern becomes easy to pick out and improves code comprehension. We now gain the advantage of being able to easily add new conditions without risking missing an `and` or confusing it with an `or`.
+
+As a bonus, each condition is now functionally independent from the others. This reduces the opportunity for weird interactions and side effects, and we can also test each one individually.
 
 ## Hammers Optional
 {: .text-left}
