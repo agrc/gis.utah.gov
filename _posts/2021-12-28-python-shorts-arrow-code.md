@@ -101,7 +101,6 @@ As a bonus, each condition is now functionally independent from the others. This
 So there you have it. Flattening arrow code (even if it doesn't originally look like a full arrow) will make your code easier to read, easier to understand, and easier to extend. If you don't want to use the hammer, just save on postage and use the [extract of llama](https://www.imdb.com/title/tt0120917/) instead.
 
 ![Feel the power]({% link images/feel_the_power.jpg %})
-<!-- {: .responsive } -->
 {: .flex .flex--center }
 
 ### Bonus reading
