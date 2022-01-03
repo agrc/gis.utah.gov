@@ -83,7 +83,7 @@ def is_open(value):
 
 First, I **extract this logic into its own function**. This not only allows us to use `return` to great effect, but also helps isolate this bit of potentially non-trivial logic for testing (ideally, with it's own series of unit tests).
 
-Unit tests are particularly helpful with these kind of complicated conditionals. They both give you another chance to make sure your logic is correct and, if you need to expend the conditional, they give you the confidence that your earlier test conditions still perform the way they should.
+Unit tests are particularly helpful with these kind of complicated conditionals. They both give you another chance to make sure your logic is correct and, if you need to expand the conditional, they give you the confidence that your earlier test conditions still perform the way they should.
 
 Next, I invert the checks to **use as many positive checks as possible**. Instead of one positive check (`if value`) and two negative checks, we now have one negative and two positives. This gets rid of the potential brain twisters of `!=` and `not in`, making it easier to understand what the `if` statement is testing.
 
