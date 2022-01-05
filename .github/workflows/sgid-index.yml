@@ -22,7 +22,7 @@ jobs:
           cache-dependency-path: "scripts/requirements.txt"
 
       - name: Update SGID Index
-        uses: technote-space/create-pr-action@v2.0.33
+        uses: technote-space/create-pr-action@v2.0.34
         env:
           GIS_DRIVE_API_CREDENTIALS: ${{ secrets.SA }}
         with:
