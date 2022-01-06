@@ -100,7 +100,7 @@ Take a look at this blog post for information about [Printing Web Maps with Disc
 </p>
 
 <p markdown="span">
-{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} Similarly, the dates of each Google imagery flight block are stored in the `SGID.INDICES.Google_UtahServiceDates` SGID layer available on [Open Data](https://opendata.gis.utah.gov/datasets/utah-google-flight-blocks).
+{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} Similarly, the dates of the 'Google' imagery service layer are stored in the `SGID.INDICES.Google_UtahServiceDates` SGID layer available on [Open Data](https://opendata.gis.utah.gov/datasets/utah-google-service-dates).
 </p>
 
 ### Pro/ArcMap User Considerations
