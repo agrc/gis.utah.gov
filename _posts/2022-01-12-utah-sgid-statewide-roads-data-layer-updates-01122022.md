@@ -21,15 +21,15 @@ The following are highlights from this month's update.
 New roads were added and road names and address ranges were updated for the following counties:
 
 - **Cache County:** Obtained roads data on 11/15/2021. Previous update was on 09/03/2021.
-- **Davis County:** Obtained roads data on 11/15/2021. Previous update was on 12/15/2021.
-- **Iron County:** Obtained roads data on 11/15/2021. Previous update was on 12/10/2021.
-- **Millard County:** Obtained roads data on 11/15/2021. Previous update was on 12/10/2021.
-- **Rich County:** Obtained roads data on 11/15/2021. Previous update was on 11/15/2021.
-- **Salt Lake County:** Obtained roads data on 11/15/2021. Previous update was on 12/20/2021.
-- **Tooele County:** Obtained roads data on 11/15/2021. Previous update was on 11/15/2021.
-- **Washington County:** Obtained roads data on 11/15/2021. Previous update was on 12/20/2021.
-- **Wayne County:** Obtained roads data on 11/15/2021. Previous update was on 11/15/2021.
-- **Weber County:** Obtained roads data on 11/15/2021. Previous update was on 12/15/2021.
+- **Davis County:** Obtained roads data on 12/15/2021. Previous update was on 12/13/2021.
+- **Iron County:** Obtained roads data on 12/10/2021. Previous update was on 04/13/2021.
+- **Millard County:** Obtained roads data on 12/10/2021. Previous update was on 11/09/2021.
+- **Rich County:** Obtained roads data on 11/15/2021. Previous update was on 12/04/2020.
+- **Salt Lake County:** Obtained roads data on 12/20/2021. Previous update was on 12/13/2021.
+- **Tooele County:** Obtained roads data on 11/15/2021. Previous update was on 11/09/2021.
+- **Washington County:** Obtained roads data on 12/20/2021. Previous update was on 11/09/2021.
+- **Wayne County:** Obtained roads data on 11/15/2021. Previous update was on 08/06/2021.
+- **Weber County:** Obtained roads data on 12/15/2021. Previous update was on 12/13/2021.
 
 #### UDOT Route System
 
