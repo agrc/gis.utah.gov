@@ -1,0 +1,65 @@
+---
+tags:
+  - projection
+  - spcs
+author:
+  display_name: Sean Fernandez
+  email: sfernandez@utah.gov
+date: 2022-01-112 16:09:38 -0700
+categories: []
+---
+<figure class="caption caption--right">
+  <img class="caption__image" title="map" src="{% link images/Utah_SPCS2022.png %}" alt="SPCS 2022"
+    loading="lazy" />
+  <figcaption class="caption__text">SPCS 2022</figcaption>
+</figure>
+{% include abstract.html
+name="SPCS 2022"
+stewards="UGRC"
+webapp="https://arcg.is/1zGqWX0"
+abstract="The State Plane Coordinate System of 2022 (SPCS2022) in Utah is three separate layers:
+a statewide single-zone layer, a multi-zone layers proposed as eleven zones, similar to Utah’s
+historic three-zone SPCS of 1983, and a multi-zone Low Distortion Projection (LDP) which is used
+in areas like highway corridors where elevations change drastically." %}
+
+<p class="pop">We can put something here is you want it to POP and <a href="{% link data/location/address-data/index.html %}">link to something</a> layer.</p>
+
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="SPCS2022LDP">SPCS 2022 Low Distortion Projection Zones</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <a alt="SPCS 2022 Low Distortion Projection Zones" href="{% link images/Utah_SPCS2022_LowDistortionProjectionZones.png %}">
+      <figure class="caption caption--left">
+        <img class="caption__image" src="{% link images/Utah_SPCS2022_LowDistortionProjectionZones_sm.png %}" alt="SPCS 2022 Low Distortion Projection Zones" loading="lazy" />
+        <figcaption class="caption__text">SPCS 2022 Low Distortion Projection Zones</figcaption>
+      </figure>
+   </a>
+    <p>What is this is?</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.plss %}</p>
+  </div>
+
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <a alt="SPCS 2022 Regional Zones" href="{% link images/Utah_SPCS2022_RegionalZones.png %}">
+      <figure class="caption caption--left">
+        <img class="caption__image" src="{% link images/Utah_SPCS2022_RegionalZones_sm.png %}" alt="SPCS 2022 Regional Zones" loading="lazy" />
+        <figcaption class="caption__text">SPCS 2022 Regional Zones</figcaption>
+      </figure>
+   </a>
+    <p>What is this is?</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.plss %}</p>
+  </div>
+
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <a alt="SPCS 2022 Statewide Zone" href="{% link images/Utah_SPCS2022_StatewideZone.png %}">
+      <figure class="caption caption--left">
+        <img class="caption__image" src="{% link images/Utah_SPCS2022_StatewideZone_sm.png %}" alt="SPCS 2022 Statewide Zone" loading="lazy" />
+        <figcaption class="caption__text">SPCS 2022 Statewide Zone</figcaption>
+      </figure>
+   </a>
+    <p>What is this is?</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.plss %}</p>
+  </div>
+
+  {% include packagedata.html name="SPC2022" info=page.SPC2022 %}
+</div>
