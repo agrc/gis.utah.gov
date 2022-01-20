@@ -31,8 +31,40 @@ history of the NAIP collections take a look at this <a
 {% include abstract.html
 name="NAIP"
 type="Imagery"
-webapp="https://raster.utah.gov/?catGroup=NAIP%202018%20(60cm),NAIP%202016%20(1m),NAIP%202014%20(1m),NAIP%202011%20(1m),NAIP%202009%20(1m),NAIP%202006%20(1m),NAIP%202004%20(1m),NAIP%202003%20(2m)&title=Utah%20NAIP%20Imagery"
+webapp="https://raster.utah.gov/?catGroup=NAIP%202021%20(60cm),NAIP%202018%20(60cm),NAIP%202016%20(1m),NAIP%202014%20(1m),NAIP%202011%20(1m),NAIP%202009%20(1m),NAIP%202006%20(1m),NAIP%202004%20(1m),NAIP%202003%20(2m)&title=Utah%20NAIP%20Imagery"
 abstract=abstract %}
+
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="NAIP2018">2018</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>AGRC has the preliminary statewide <a href="http://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/index">
+      National Agricultural Imagery Program</a>
+      (NAIP) 3-band aerial photography for Utah in Mr. Sid county mosaics.
+      The imagery is .6-meter resolution and was collected in the summer and fall of 2021.
+      The date the photography was flown can be found in the <code>IDATE</code> field in the associated shapefile.
+      Be aware some of the larger counties (ex. San Juan, Millard, Tooele and Box Elder) are no longer split
+      into multiple parts and their file size is upwards of 4 to 7 GB. The images have a UTM NAD83 meters projection.
+    </p>
+
+    <div class="grid__col grid__col--1-of-2">
+      <h5>Downloads</h5>
+      <ul class="dotless">
+        <li><a href="https://raster.utah.gov/?cat=NAIP%202021%20(60cm)">Retrieve 2021 NAIP via Interactive Map</a></li>
+      </ul>
+    </div>
+    <div class="grid__col grid__col--1-of-2">
+      <h5>Related Resources</h5>
+      <ul class="dotless">
+        <li>If you are having problems with the imagery from UGRC, <a
+            href="{% link data/aerial-photography/imagery-problems/index.md %}">read this document before contacting
+            us.</a></li>
+      </ul>
+    </div>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.imagery %}</p>
+  </div>
+</div>
 
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
