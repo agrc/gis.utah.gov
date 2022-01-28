@@ -14,7 +14,7 @@ categories:
   - Featured
 ---
 
-Earlier this summer, The [Utah Division of Forestry, Fire and State Lands](http://www.ffsl.utah.gov/) launched a new Wildfire Risk Assessment Portal (uWRAP) to educate and inform the public and land management professionals. The portal assesses the users location or area of interest and provides general and/or detailed information about the wildfire risks associated with a location or area.
+Earlier this summer, The [Utah Division of Forestry, Fire and State Lands](https://www.ffsl.utah.gov/) launched a new Wildfire Risk Assessment Portal (uWRAP) to educate and inform the public and land management professionals. The portal assesses the users location or area of interest and provides general and/or detailed information about the wildfire risks associated with a location or area.
 
 [![uWRAP]\({% link images/fireriskblog.png %} "Wildfire Risk Assessment Portal")](https://wildfirerisk.utah.gov/)
 {: .inline-text-right}
