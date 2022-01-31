@@ -37,7 +37,7 @@ The primary intended uses for the new LiDAR data include but are not limited to:
 
 Many other non-traditional uses of LiDAR data are possible such as detecting landslides and slumping, optimizing irrigation, and [quantifying solar energy systems potential](https://www.slideshare.net/bgranberg/salt-lake-solar-ignite) on rooftops and other surfaces.
 
-The 2013 LiDAR acquisition is funded through a partnership of the [US Geological Survey](https://earthquake.usgs.gov/), [Utah Geological Survey](https://geology.utah.gov/), [Utah Division of Emergency Management](https://dem.utah.gov/), FEMA, and a consortium of local government led by the [Salt Lake County Surveyor's Office](https://slco.org/surveyor/). Flights are expected to begin mid Fall, weather conditions permitting, and data delivery is anticipated several months after the flights are completed.
+The 2013 LiDAR acquisition is funded through a partnership of the [US Geological Survey](https://earthquake.usgs.gov/), [Utah Geological Survey](https://geology.utah.gov/), [Utah Division of Emergency Management](https://web.archive.org/web/20150504040213/http://dem.utah.gov/), FEMA, and a consortium of local government led by the [Salt Lake County Surveyor's Office](https://slco.org/surveyor/). Flights are expected to begin mid Fall, weather conditions permitting, and data delivery is anticipated several months after the flights are completed.
 
 Project deliverables include:
 
