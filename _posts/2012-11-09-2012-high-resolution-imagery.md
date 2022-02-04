@@ -22,7 +22,7 @@ This public domain imagery is the latest addition to the State Geographic Inform
 
 The HRO 2012 imagery can be viewed and downloaded from UGRC's <a href="https://raster.utah.gov/?cat=HRO%202012%20(12.5cm)">interactive map.
 
-The imagery was collected by [Aero-Graphics](http://www.aero-graphics.com/) based in Salt Lake City. Here is an overview of the data collection effort:
+The imagery was collected by [Aero-Graphics](https://www.aero-graphics.com/) based in Salt Lake City. Here is an overview of the data collection effort:
 
 - 12,904 exposures acquired at a 12.5 cm ground sample distance (GSD).
 - 247 flight lines flown with a Vexcel UltraCamX digital camera system.
