@@ -20,13 +20,13 @@ The following are highlights from this month's update.
 
 New roads were added and road names and address ranges were updated for the following counties:
 
-- **Davis County:** Obtained roads data on 01/14/2021. Previous update was on 01/12/2022.
-- **Salt Lake County:** Obtained roads data on 01/31/2021. Previous update was on 01/12/2022.
-- **Summit County:** Obtained roads data on 01/14/2021. Previous update was on 12/13/2021.
-- **Utah County:** Obtained roads data on 01/14/2021. Previous update was on 12/13/2021.
-- **Wasatch County:** Obtained roads data on 02/03/2021. Previous update was on 11/09/2021.
-- **Washington County:** Obtained roads data on 01/14/2021. Previous update was on 01/12/2022.
-- **Weber County:** Obtained roads data on 01/14/2021. Previous update was on 01/12/2022.
+- **Davis County:** Obtained roads data on 01/14/2022. Previous update was on 01/12/2022.
+- **Salt Lake County:** Obtained roads data on 01/31/2022. Previous update was on 01/12/2022.
+- **Summit County:** Obtained roads data on 01/14/2022. Previous update was on 12/13/2021.
+- **Utah County:** Obtained roads data on 01/14/2022. Previous update was on 12/13/2021.
+- **Wasatch County:** Obtained roads data on 02/03/2022. Previous update was on 11/09/2021.
+- **Washington County:** Obtained roads data on 01/14/2022. Previous update was on 01/12/2022.
+- **Weber County:** Obtained roads data on 01/14/2022. Previous update was on 01/12/2022.
 
 #### UDOT Route System
 
