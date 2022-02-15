@@ -96,11 +96,11 @@ Take a look at this blog post for information about [Printing Web Maps with Disc
 {: .text-left}
 
 <p markdown="span">
-{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} The flight dates of each Hexagon imagery flight line are in the `SGID.INDICES.Hexagon_ServiceDates` SGID layer. This layer is also available on our [Open Data site](https://opendata.gis.utah.gov/datasets/utah-hexagon-service-dates), where you can get a link to the web service or download it in the format of your choice.
+{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} The flight dates of each Hexagon imagery flight line are in the `opensgid.indices.hexagon_service_dates` SGID layer. This layer is also available on our [Open Data site](https://opendata.gis.utah.gov/datasets/utah-hexagon-service-dates), where you can get a link to the web service or download it in the format of your choice.
 </p>
 
 <p markdown="span">
-{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} Similarly, the dates of the 'Google' imagery service layer are stored in the `SGID.INDICES.Google_UtahServiceDates` SGID layer available on [Open Data](https://opendata.gis.utah.gov/datasets/utah-google-service-dates).
+{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} Similarly, the dates of the 'Google' imagery service layer are stored in the `opensgid.indices.google_service_dates` SGID layer available on our [Open Data site](https://opendata.gis.utah.gov/datasets/utah-google-service-dates).
 </p>
 
 ### Pro/ArcMap User Considerations
