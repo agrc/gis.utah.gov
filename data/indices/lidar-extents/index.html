@@ -13,7 +13,7 @@ LiDARExtents:
     name: LiDAR Extents
     item_id: 90556bb0e09640648be66013a6ab56e6
   updates:
-    - 2021
+    - 2022
 ---
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/lidar-extents-ut.jpg %}" alt="LiDAR Extents"
@@ -21,7 +21,7 @@ LiDARExtents:
   <figcaption class="caption__text">LiDAR Extent</figcaption>
 </figure>
 {% include abstract.html name="LiDAR Extents"
-abstract="This dataset contains GIS mapping data representing the LiDAR elevation data available in the State of Utah." %}
+abstract="This dataset contains GIS mapping data representing the LiDAR elevation data available or being collected in the State of Utah." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="LiDARExtents">LiDAR Extents</h3>
@@ -54,6 +54,8 @@ abstract="This dataset contains GIS mapping data representing the LiDAR elevatio
       <li><strong>Upload_Date</strong> - the date the polygon extent was loaded into the dataset
       <li><strong>USGS_QualityLevel</strong> - the USGS Quality Level if applicable
       <li><strong>Coverage</strong> - the bare earth extents that are USGS Quality Level 1 or 2
+      <li><strong>Project_Name</strong> - generalized reference name for project area
+      <li><strong>Project_Status</strong> - denotes if the project is Complete or In Progress
     </ul>
     <p>These boundaries are maintained by UGRC with the help of many state, county, and local entities. Changes and
       updates are made as new LiDAR is a acquired in Utah. The native spatial reference for this dataset is UTM Zone
