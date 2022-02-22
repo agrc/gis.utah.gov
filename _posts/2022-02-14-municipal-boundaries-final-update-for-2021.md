@@ -3,14 +3,12 @@ title: 'Municipal Boundaries Final update for 2021'
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2022-02-14 22:59:20
+date: 2022-02-12 11:59:20
 categories:
   - SGID Blog
 tags:
   - municipal boundaries
-  - Muni&#x27;s
   - annexations
-  - 
 ---
 Finally the end of 2021 is here. Another year of ups and downs and with growth slowing down some. Utah County once again leads the way with 18 annexations, and Cache County a close second at 16. We end the year with a total of with 97 annexations this year. Just about the same as the last couple of years.
 The latest incorporation is Erda in Tooele County, making the total number of cities in Utah now at 249 with 5 Metro Townships. Something for your next Trivia round.
