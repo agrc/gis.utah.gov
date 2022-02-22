@@ -10,14 +10,11 @@ tags:
   - municipal boundaries
   - annexations
 ---
-Finally the end of 2021 is here. Another year of ups and downs and with growth slowing down some. Utah County once again leads the way with 18 annexations, and Cache County a close second at 16. We end the year with a total of with 97 annexations this year. Just about the same as the last couple of years.
-The latest incorporation is Erda in Tooele County, making the total number of cities in Utah now at 249 with 5 Metro Townships. Something for your next Trivia round.
-As always feel free to check out all the changes and make sure your boundaries are where you think they should be, view them here: [Utah Municipality Modifications].
-(https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63).
-To review any specific annexation document, you can go here: [Utah Lt. Governor Municipal Certifications]  (https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/).
-This is a website in transition so it may change in the future.
+Finally the end of 2021 is here. Another year of ups and downs and growth has slowed down. Utah County once again leads the growth with 18 annexations and Cache County is a close second with 16. We end the year with a total of 97 annexations. This is very similar to the last couple of years. The latest incorporation is Erda in Tooele County. Utah now has 249 cities with 5 Metro Townships. Remember those numbers for your next Trivia round.
 
-Following are the changes and annexations since July 1, 2021 listed by County and City:
+As always feel free to check out all the changes and make sure your boundaries are where you think they should be, view them on the [Utah Municipality Modifications map](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63). To review any specific annexation document, go to the [Utah Lt. Governor Municipal Certifications](https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/) website. This website is in a transition phase so it may change in the future.
+
+The following table shows the changes and annexations (listed by county and city) since July 1, 2021:
 
 | County | City | Number of Changes |  
 | --- | --- | --- |
