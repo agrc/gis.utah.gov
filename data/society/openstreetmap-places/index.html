@@ -1,0 +1,43 @@
+---
+author:
+  display_name: Erik Neemann
+  email: ugrc@utah.gov
+tags:
+  - openstreetmap
+  - places
+  - points of interest
+  - businesses
+categories: []
+date: 2022-03-08 09:00:00 -0600
+update_date: 2022-03-09 09:00:00 -0600
+OpenStreetMapPlaces:
+  hub:
+    name: Utah OpenStreetMap Places
+    item_id: f54dxxxxxxxxxxxxxxxxxxxx
+  updates:
+    - 'March 2022 - Initial data load'
+---
+<figure class="caption caption--right">
+  <img class="caption__image" title="map" src="{% link images/cemeteriesB.png %}" alt="OpenStreetMap Places in Utah"
+    loading="lazy" />
+  <figcaption class="caption__text">OpenStreetMap Places in Utah</figcaption>
+</figure>
+{% include abstract.html name="OpenStreetMap Places"
+abstract="Society.OpenStreetMap_Places contains a point representation of places of interest in Utah that have been derived from OpenStreetMap (OSM)."
+%}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="OpenStreetMap Places">OpenStreetMap Places</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>The main source of this dataset is the <a href="https://heritage.utah.gov/history/cemeteries">Utah State History
+        Research Centers Cemetery and Burial Database</a>. Some of the cemeteries in this database are inactive, and may
+      be in poor condition. Cemetery information contains year of first burial, number of burials, contact and owner
+      information, and directions.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html
+  name="OpenStreetMap Places"
+  info=page.Cemeteries
+  %}
+</div>
