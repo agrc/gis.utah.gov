@@ -66,15 +66,16 @@ abstract="Utah OpenStreetMap Places contains a point representation of places of
     </p>
     <h4 id="FieldDescriptions">Field Descriptions</h4>
     <ul>
-        <li><code>addr_dist</code> - the distance (m) to the nearest UGRC address point within 25 m
         <li><code>osm_id</code> - the feature ID in the OSM database
-        <li><code>category</code> - the feature's data class based on the 4-digit code and tags in the OSM database
         <li><code>name</code> - the name of the feature in the OSM database
+        <li><code>category</code> - the feature's data class based on the 4-digit code and tags in the OSM database
         <li><code>county</code> - the county the feature is located in (assigned from UGRC's county boundaries)
         <li><code>city</code> - the city the feature is located in (assigned from UGRC's municipal boundaries)
         <li><code>zip</code> - the zip code of the feature (assigned from UGRC's approximation of zip code boundaries)
         <li><code>block_id</code> - the census block the feature is located in (assigned from UGRC's census block boundaries)
+        <li><code>osm_addr</code> - the feature's address in the OSM database, if available  
         <li><code>ugrc_addr</code> - the nearest address (within 25 m) from the UGRC address point database
+        <li><code>addr_dist</code> - the distance (m) to the nearest UGRC address point within 25 m
         <li><code>disclaimer</code> - a note from UGRC about the ugrc_addr field
         <li><code>lon</code> - the approximate longitude of the feature, calculated in WGS84 [EPSG:4326] (for the most precision, it is recommended that the feature's geometry is used instead of this field)
         <li><code>lat</code> - the approximate latitude of the feature, calculated in WGS84 [EPSG:4326] (for the most precision, it is recommended that the feature's geometry is used instead of this field)
@@ -85,7 +86,6 @@ abstract="Utah OpenStreetMap Places contains a point representation of places of
         <li><code>website</code> - the feature's website in the OSM database, if available
         <li><code>phone</code> - the feature's phone number(s) in the OSM database, if available
         <li><code>open_hours</code> - the feature's operating hours in the OSM database, if available
-        <li><code>osm_addr</code> - the feature's address in the OSM database, if available
       </ul>
     <h4 id="DataSources">Data Sources</h4>
     <ul>
