@@ -59,7 +59,8 @@ It's pretty easy, really.  All you need to do is create a free [OSM account](htt
    - Downloads in your favorite data format (shapefile, file geodatabase, GeoJSON, KML, CSV)
 
 
-### **What else should I know?**
+### What else should I know?
+{: .text-left}
 
 - The OSM data isn't perfect, so you may find some typos, missing locations, locations that no longer exist, etc.
 - OSM data tends to have a European 'flavour' (see what I did there?).  Be mindful that many categories or attributes may be spelled in a British/European English manner.  Business or location names shouldn't be affected, but attribute examples you might encounter include:
