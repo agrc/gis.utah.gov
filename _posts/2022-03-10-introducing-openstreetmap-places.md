@@ -15,9 +15,9 @@ tags:
   - businesses
 ---
 
-There's an exciting new data layer that has been recently added to the State Geographic Information Datasource (SGID): OpenStreetMap Places.  This is a brand-new offering that is created from open source data and is intended to represent places of interest in the state of Utah.  These may include businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, car dealerships, etc., etc., …almost anything that you can find in OpenStreetMap (OSM).  There are over 23,000 features in the data, and the best part of all?  You can make updates and contribute directly to this layer through [OpenStreetMap](http://openstreetmap.org)! (more on that later)
-
 ![OpenStreetMap]({% link images/osm_logo.png %} "OpenStreetMap"){: style="float: right"}
+
+There's an exciting new data layer that has been recently added to the State Geographic Information Datasource (SGID): OpenStreetMap Places.  This is a brand-new offering that is created from open source data and is intended to represent places of interest in the state of Utah.  These may include businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, car dealerships, etc., etc., …almost anything that you can find in OpenStreetMap (OSM).  There are over 23,000 features in the data, and the best part of all?  You can make updates and contribute directly to this layer through [OpenStreetMap](http://openstreetmap.org)! (more on that later)
 
 ### What kind of points of interest are in the data?
 {: .text-left}
