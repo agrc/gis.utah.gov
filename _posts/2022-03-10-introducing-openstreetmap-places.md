@@ -29,12 +29,12 @@ All kinds!  There are businesses, restaurants, churches, schools, banks, hotels,
 ### How can it be used?
 {: .text-left}
 
-We think there will be numerous potential use cases for such a large and varied dataset, for state and local agencies, citizens, and even researchers.  The data could be used to perform different analyses on certain business types or even specific businesses.  How many Beans and Brews locations are within a half-mile of Starbucks?  The businesses and landmarks could be used as a reference for 911 call-takers, first responders, or emergency managers.  This can be particularly helpful because we don't always know the address of our emergencies, but we usually know a point of interest or place name.  The data could even use it to quality control other datasets and look for features that we may be missing.  Are we missing any schools, fire stations, liquor stores, or cemeteries from our authoritative datasets?
+We think there will be numerous potential use cases for such a large and varied dataset, for state and local agencies, citizens, and even researchers.  The data could be used to perform different analyses on certain business types or even specific businesses.  How many Beans and Brews locations are within a half-mile of Starbucks?  The businesses and landmarks could be used as a reference for 911 call-takers, first responders, or emergency managers.  This can be particularly helpful because we don't always know the address of our emergencies, but we usually know a point of interest or place name.  The data could even be used to quality control other datasets by looking for features that we may be missing.  Are we missing any schools, fire stations, liquor stores, or cemeteries from our authoritative datasets?
 
 ### How can I contribute?
 {: .text-left}
 
-It's pretty easy, really.  All you need to do is create a free [OSM account](https://www.openstreetmap.org/user/new), login, start editing or creating places (iD is the default editor), and save your updates.  Then, the next time we run our python script to update this layer, your changes will be included and published in the SGID.  In addition to the default, web-based editor on openstreetmap.org ([iD](https://www.openstreetmap.org/edit?editor=id)), there are several desktop and mobile (Android and iOS) editors can be used, including, [JOSM](https://josm.openstreetmap.de/), [Vespucci](https://vespucci.io/), [GoMap!!](https://apps.apple.com/app/id592990211), and the [ArcGIS OpenStreetMap Editor](https://github.com/Esri/arcgis-osm-editor) (ArcGIS Desktop 10+ only).  A larger list of editors is maintained on the [OSM Wiki](https://wiki.openstreetmap.org/wiki/Comparison_of_editors).  If creating an OSM account and using an editor are too cumbersome, you can also submit businesses anonymously with a simple form entry and pin-location at [OnOSM](http://onosm.org).  Your submissions through OnOSM will be reviewed and added by an OSM user.
+It's pretty easy, really.  All you need to do is create a free [OSM account](https://www.openstreetmap.org/user/new), login, start editing or creating places (iD is the default editor), and save your updates.  Then, the next time we run our python script to update this layer, your changes will be included and published in the SGID.  In addition to the default, web-based editor on openstreetmap.org ([iD](https://www.openstreetmap.org/edit?editor=id)), there are several desktop and mobile (Android and iOS) editors that can be used, including, [JOSM](https://josm.openstreetmap.de/), [Vespucci](https://vespucci.io/), and [GoMap!!](https://apps.apple.com/app/id592990211). The [ArcGIS OpenStreetMap Editor](https://github.com/Esri/arcgis-osm-editor) (ArcGIS Desktop 10+ only) is also available for ESRI users.  A larger list of editors is maintained on the [OSM Wiki](https://wiki.openstreetmap.org/wiki/Comparison_of_editors).  If creating an OSM account and using an editor are too cumbersome, you can also submit businesses anonymously with a simple form entry and pin-location at [OnOSM](http://onosm.org).  Your submissions through OnOSM will be reviewed and added by an OSM user.
 
 ![OSM Handshake]({% link images/osm_handshake.png %} "OSM Handshake"){: .flex .flex--center}
 
@@ -57,7 +57,6 @@ It's pretty easy, really.  All you need to do is create a free [OSM account](htt
    - OpenData
    - OpenSGID - our Postgres database in the Google Cloud
    - Downloads in your favorite data format (shapefile, file geodatabase, GeoJSON, KML, CSV)
-
 
 ### What else should I know?
 {: .text-left}
