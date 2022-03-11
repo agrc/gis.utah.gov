@@ -87,7 +87,7 @@ It's pretty easy, really. All you need to do is create a free [OSM account](http
 
 The OSM Places layer is created by a Python script that pulls statewide OSM data from a nightly archive provided by [Geofabrik](https://www.geofabrik.de/data/download.html). The archive data contains nearly 20 shapefiles, some that are relevant and some that aren't. So, the OSM Places layer is built by filtering the data in those shapefiles down to a single point dataset with specific categories and attributes. Additional de-duplication and spatial filtering are done along the way, to ensure the data is as clean as possible. Then, additional fields are created and assigned from UGRC's SGID data (county, city, zip, nearby address, etc.) via point-in-polygon analysis. Finally, additional attributes (OSM address, open hours, cuisine, etc.) are pulled from the [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) and joined to the filtered data using the 'osm_id' field as the join key. Additional information can be found on the OpenStreetMap Places data page.
 
-If you really want to get into the _nitty gritty_ details, come to the UGRC talk the [2022 UGIC Conference](https://ugic.org/uncategorized/ugic-registration-open/) or keep your eyes peeled :eyes: for a future blog post.
+If you really want to get into the _nitty gritty_ details, come to my [2022 UGIC Conference](https://ugic.org/uncategorized/ugic-registration-open/) presentation or keep your eyes peeled 👀 for a future blog post.
 
 Let us know what you think and reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.osm_places text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }} or on Twitter ([@maputah](https://twitter.com/maputah)).
