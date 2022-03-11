@@ -45,7 +45,7 @@ It's pretty easy, really.  All you need to do is create a free [OSM account](htt
 - It has a different license - instead of our usual [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, it carries the [ODbL 1.0](https://opendatacommons.org/licenses/odbl/summary/) license
 - It's more dynamic - it gets updated frequently, is constantly growing, and anyone can contribute to it
 
-. OpenStreetMap® is _open data_, licensed under the [Open Data Commons Open Database License](https://opendatacommons.org/licenses/odbl/) (ODbL) by the [OpenStreetMap Foundation](https://osmfoundation.org/) (OSMF).
+> OpenStreetMap® is _open data_, licensed under the [Open Data Commons Open Database License](https://opendatacommons.org/licenses/odbl/) (ODbL) by the [OpenStreetMap Foundation](https://osmfoundation.org/) (OSMF).
 
 ### How is it similar to other SGID data?
 {: .text-left}
