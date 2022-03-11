@@ -71,7 +71,7 @@ It's pretty easy, really. All you need to do is create a free [OSM account](http
    - tyres (instead of tires)
 - There are two types of addresses provided in the data:
    1. The address contained in the OSM data (`osm_addr`). These were input by OSM contributors, but only a small percentage of the points come with an address (~24%).
-   1. The address of the nearest UGRC address point (`ugrc_addr`). These are not official addresses of the businesses or points of interest, but provide a very close address for a greater percentage of points (~59%). They are the nearest address (within 25m) in the [UGRC Address Points](https://opendata.gis.utah.gov/datasets/utah-address-points/explore) dataset. The `addr_dist` field provides the distance (in meters) from the OSM point to the nearby address point.
+   1. The address of the nearest UGRC address point (`ugrc_addr`). These are not official addresses of the businesses or points of interest, but provide a very close address for a greater percentage of points (~59%). They are the nearest address (within 25m) in the [UGRC Address Points]({% link data/location/address-data/index.html %}#AddressPoints) dataset. The `addr_dist` field provides the distance (in meters) from the OSM point to the nearby address point.
 - The attributes can be used to filter the data down to your desired types of points
    - The `category` field represents a general classification for a location. Examples include: restaurant, fast_food, viewpoint, fire_station, etc.
    - The other fields provide additional details about the location, where available
