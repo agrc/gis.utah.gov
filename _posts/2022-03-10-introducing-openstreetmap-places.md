@@ -43,7 +43,7 @@ It's pretty easy, really. All you need to do is create a free [OSM account](http
 
 - It's **not** authoritative - due to the nature of crowdsourced data, we can't guarantee that it's perfect or accurate
 - It has a different license - instead of our usual [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, it carries the [ODbL 1.0](https://opendatacommons.org/licenses/odbl/summary/) license
-- It's more dynamic - it gets updated frequently, is constantly growing, and anyone can contribute to it
+- Any user can contribute to it - the data can be quickly improved and grown by OSM users
 
 > OpenStreetMap® is _open data_, licensed under the [Open Data Commons Open Database License](https://opendatacommons.org/licenses/odbl/) (ODbL) by the [OpenStreetMap Foundation](https://osmfoundation.org/) (OSMF).
 
