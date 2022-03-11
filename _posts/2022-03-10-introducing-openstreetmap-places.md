@@ -55,7 +55,7 @@ It's pretty easy, really. All you need to do is create a free [OSM account](http
 - It's available in a variety of ways and data formats
    - ArcGIS Online services
    - OpenData
-   - OpenSGID - our Postgres database in the Google Cloud
+   - OpenSGID
    - Downloads in your favorite data format (shapefile, file geodatabase, GeoJSON, KML, CSV)
 
 ### What else should I know?
