@@ -370,4 +370,8 @@ gisac:
   - name: Greg Bunce
     email: gbunce@utah.gov
     agency: UGRC
-    
+osm_places:
+  name: Erik Neemann
+  email: ENeemann@utah.gov
+  phone: 385-258-4299
+  agency: UGRC
