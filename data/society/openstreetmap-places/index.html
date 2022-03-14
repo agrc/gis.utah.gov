@@ -1,0 +1,118 @@
+---
+author:
+  display_name: Erik Neemann
+  email: ugrc@utah.gov
+tags:
+  - openstreetmap
+  - osm
+  - places
+  - points of interest
+  - businesses
+  - restaurants
+categories: []
+date: 2022-03-08 09:00:00 -0600
+update_date: 2022-03-09 09:00:00 -0600
+OpenStreetMapPlaces:
+  hub:
+    name: Utah OpenStreetMap Places
+    item_id: 03d363c7fa554aaea41f407707fdfb8a
+  updates:
+    - 'March 2022 - Initial data build'
+---
+<figure class="caption caption--right">
+  <img class="caption__image" title="map" src="{% link images/osm_places.PNG %}" alt="OpenStreetMap Places in Utah"
+    loading="lazy" />
+  <figcaption class="caption__text">OpenStreetMap Places in Utah</figcaption>
+</figure>
+{% include abstract.html
+name="OpenStreetMap Places"
+type="GIS Data Layer"
+stewards="OpenStreetMap Contributors and UGRC"
+abstract="Utah OpenStreetMap Places contains a point representation of places of interest in Utah that have been derived from OpenStreetMap (OSM)."
+%}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="OpenStreetMapPlaces">OpenStreetMap Places</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>This point data was generated and filtered from OpenStreetMap (OSM) and is intended to represent places of interest in 
+        the state of Utah. Per the <a href="https://wiki.openstreetmap.org/wiki/Main_Page">OSM Wiki</a>: "the [OSM] project…creates 
+        and distributes free geographic data for the world…because most maps you think of as free actually have legal or 
+        technical restrictions on their use, holding back people from using them in creative, productive, or unexpected ways." 
+        These data may include businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, car 
+        dealerships…almost anything that you can find in OSM. There are over 23,000 features in the original dataset 
+        (March 2022) and users can directly contribute to it through <a href="https://www.openstreetmap.org">openstreetmap.org</a>. 
+        The data is updated approximately once every month and will likely continue to grow over time with additional user input and activity.
+
+    </p>
+    <h4 id="DataCreation">Data Creation Process</h4>
+    <p>The OSM Places layer is created by a Python script that pulls statewide OSM data from a nightly archive provided by 
+        <a href="https://download.geofabrik.de/index.html">Geofabrik</a>. The archive data contains nearly 20 shapefiles, some that 
+        are relevant to this dataset and some that aren't. The OSM Places layer is built by filtering the polygon and point 
+        data in those shapefiles down to a single point feature class with specific categories and attributes that UGRC 
+        determines would be of widest interest. The polygon features (buildings, areas, complexes, etc.) are converted to 
+        points using an internal centroid. Spatial filtering is done as the data from multiple shapefiles is combined 
+        into a single layer to minimize the occurrence of duplicate features. (For example, a restaurant can be represented 
+        in OSM as both a point of interest and as a building polygon. The spatial filtering helps reduce the chances that 
+        both of these features are present in the final dataset.) Additional de-duplication is performed by using the 
+        'block_id' field as a spatial index, to ensure that no two features of the same name exist within a census block. 
+        Then, additional fields are created and assigned from UGRC's SGID data (county, city, zip, nearby address, etc.) 
+        via point-in-polygon and near analyses. A numeric check is done on the 'name' field to remove features where the name is 
+        less than 3 characters long or more than 50% numeric characters. This eliminates several features derived from 
+        the buildings layer where the 'name' is simply an apartment complex building number (ex: 3A) or house number 
+        (ex: 1612). Finally, additional attributes (osm_addr, open_hours, phone, website, cuisine, etc.) are pulled 
+        from the <a href="https://wiki.openstreetmap.org/wiki/Overpass_API">Overpass API</a> and joined to the filtered data using 
+        the 'osm_id' field as the join key.
+    </p>
+    <h4 id="FieldDescriptions">Field Descriptions</h4>
+    <ul>
+        <li><code>osm_id</code> - the feature ID in the OSM database
+        <li><code>name</code> - the name of the feature in the OSM database
+        <li><code>category</code> - the feature's data class based on the 4-digit code and tags in the OSM database
+        <li><code>county</code> - the county the feature is located in (assigned from UGRC's county boundaries)
+        <li><code>city</code> - the city the feature is located in (assigned from UGRC's municipal boundaries)
+        <li><code>zip</code> - the zip code of the feature (assigned from UGRC's approximation of zip code boundaries)
+        <li><code>block_id</code> - the census block the feature is located in (assigned from UGRC's census block boundaries)
+        <li><code>osm_addr</code> - the feature's address in the OSM database, if available 
+        <li><code>ugrc_addr</code> - the nearest address (within 25 m) from the UGRC address point database
+        <li><code>addr_dist</code> - the distance (m) to the nearest UGRC address point within 25 m
+        <li><code>disclaimer</code> - a note from UGRC about the ugrc_addr field
+        <li><code>lon</code> - the approximate longitude of the feature, calculated in WGS84 [EPSG:4326] (for the most precision, it is recommended that the feature's geometry is used instead of this field)
+        <li><code>lat</code> - the approximate latitude of the feature, calculated in WGS84 [EPSG:4326] (for the most precision, it is recommended that the feature's geometry is used instead of this field)
+        <li><code>amenity</code> - the amenity available at the feature (if applicable), often similar to the category
+        <li><code>cuisine</code> - the type of food available (if applicable), multiple types are separated by semicolons (;)
+        <li><code>tourism</code> - the type of tourist location, if applicable (zoo, viewpoint, hotel, attraction, etc.)
+        <li><code>shop</code> -  the type of shop, if applicable
+        <li><code>website</code> - the feature's website in the OSM database, if available
+        <li><code>phone</code> - the feature's phone number(s) in the OSM database, if available
+        <li><code>open_hours</code> - the feature's operating hours in the OSM database, if available
+      </ul>
+    <h4 id="DataSources">Data Sources</h4>
+    <ul>
+        <li>The original bulk set of OSM data for the state of Utah is downloaded from <a href="https://download.geofabrik.de/index.html">Geofabrik</a>:
+            <ul>
+                <li><a href="https://download.geofabrik.de/north-america/us/utah-latest-free.shp.zip">https://download.geofabrik.de/north-america/us/utah-latest-free.shp.zip</a></li>
+            </ul>
+        <li>Additional OSM attributes for the Utah features are gathered via the <a href="https://wiki.openstreetmap.org/wiki/Overpass_API">Overpass API</a> using the following query:
+            <ul>
+                <li><a href="https://overpass-turbo.eu/s/1geR">https://overpass-turbo.eu/s/1geR</a></li>
+            </ul>
+    </ul>
+    <h4 id="License">Data License and Copyright</h4>
+    <p>The OpenStreetMap Places data carries a different license than most UGRC data.
+    </p>
+    <p>OpenStreetMap® is open data, licensed under the <a href="https://opendatacommons.org/licenses/odbl/" rel="license nofollow noopener ugc">Open Data Commons Open Database License</a> (ODbL) by the <a href="https://osmfoundation.org/" rel="license nofollow noopener ugc">OpenStreetMap Foundation</a> (OSMF).
+    </p>
+    <p>You are free to copy, distribute, transmit and adapt our data, as long as you credit OpenStreetMap and its contributors. If you alter or build upon our data, you may distribute the result only under the same license. The full <a href="https://opendatacommons.org/licenses/odbl/1.0/" rel="license nofollow noopener ugc">legal code</a> explains your rights and responsibilities.
+    </p>
+    <p>&copy; OpenStreetMap contributors
+    </p>
+    <p>For more information, visit <a href="https://www.openstreetmap.org/copyright" rel="license nofollow noopener ugc">openstreetmap.org/copyright</a>, <a href="https://www.openstreetmap.org" rel="license nofollow noopener ugc">openstreetmap.org</a>, and <a href="https://www.opendatacommons.org" rel="license nofollow noopener ugc">opendatacommons.org</a>.
+    </p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.osm_places %}</p>
+  </div>
+  {% include packagedata.html
+  name="OpenStreetMapPlaces"
+  info=page.OpenStreetMapPlaces
+  %}
+</div>
