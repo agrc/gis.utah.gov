@@ -24,7 +24,7 @@ There's an exciting new data layer that has been recently added to the State Geo
 
 All kinds! There are businesses, restaurants, churches, schools, banks, hotels, viewpoints, attractions, and more. Take a look at this chart showing the counts of the 25 most popular types of locations.
 
-![Open Source Places Feature Counts]({% link images/osm_counts.png %} "Open Source Places Feature Counts"){: .flex .flex--center}
+![Open Source Places Feature Counts]({% link images/os_counts.png %} "Open Source Places Feature Counts"){: .flex .flex--center}
 
 ### How can it be used?
 {: .text-left}
