@@ -46,9 +46,9 @@ abstract="Utah Open Source Places contains a point representation of places of i
 
     </p>
     <h4 id="DataCreation">Data Creation Process</h4>
-    <p>The OSM Places layer is created by a Python script that pulls statewide OSM data from a nightly archive provided by 
+    <p>The Open Source Places layer is created by a Python script that pulls statewide OSM data from a nightly archive provided by 
         <a href="https://download.geofabrik.de/index.html">Geofabrik</a>. The archive data contains nearly 20 shapefiles, some that 
-        are relevant to this dataset and some that aren't. The OSM Places layer is built by filtering the polygon and point 
+        are relevant to this dataset and some that aren't. The Open Source Places layer is built by filtering the polygon and point 
         data in those shapefiles down to a single point feature class with specific categories and attributes that UGRC 
         determines would be of widest interest. The polygon features (buildings, areas, complexes, etc.) are converted to 
         points using an internal centroid. Spatial filtering is done as the data from multiple shapefiles is combined 
@@ -93,7 +93,7 @@ abstract="Utah Open Source Places contains a point representation of places of i
             <ul>
                 <li><a href="https://download.geofabrik.de/north-america/us/utah-latest-free.shp.zip">https://download.geofabrik.de/north-america/us/utah-latest-free.shp.zip</a></li>
             </ul>
-        <li>Additional OSM attributes for the Utah features are gathered via the <a href="https://wiki.openstreetmap.org/wiki/Overpass_API">Overpass API</a> using the following query:
+        <li>Additional attributes for the Utah features are gathered via the <a href="https://wiki.openstreetmap.org/wiki/Overpass_API">Overpass API</a> using the following query:
             <ul>
                 <li><a href="https://overpass-turbo.eu/s/1geR">https://overpass-turbo.eu/s/1geR</a></li>
             </ul>
@@ -109,7 +109,7 @@ abstract="Utah Open Source Places contains a point representation of places of i
     </p>
     <p>For more information, visit <a href="https://www.openstreetmap.org/copyright" rel="license nofollow noopener ugc">openstreetmap.org/copyright</a>, <a href="https://www.openstreetmap.org" rel="license nofollow noopener ugc">openstreetmap.org</a>, and <a href="https://www.opendatacommons.org" rel="license nofollow noopener ugc">opendatacommons.org</a>.
     </p>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.osm_places %}</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.os_places %}</p>
   </div>
   {% include packagedata.html
   name="OpenSourcePlaces"
