@@ -36,7 +36,7 @@ We think there will be numerous potential use cases for such a large and varied 
 
 It's pretty easy, really. All you need to do is create a free [OSM account](https://www.openstreetmap.org/user/new), login, start editing or creating places (iD is the default editor), and save your updates. Then, the next time we run our python script to update this layer, your changes will be included and published in the SGID. In addition to the default, web-based editor on openstreetmap.org ([iD](https://www.openstreetmap.org/edit?editor=id)), there are several desktop and mobile (Android and iOS) editors that can be used, including, [JOSM](https://josm.openstreetmap.de/), [Vespucci](https://vespucci.io/), and [GoMap!!](https://apps.apple.com/app/id592990211). The [ArcGIS OpenStreetMap Editor](https://github.com/Esri/arcgis-osm-editor) (ArcGIS Desktop 10+ only) is also available for ESRI users. A larger list of editors is maintained on the [OSM Wiki](https://wiki.openstreetmap.org/wiki/Comparison_of_editors). If creating an OSM account and using an editor are too cumbersome, you can also submit businesses anonymously with a simple form entry and pin-location at [OnOSM](http://onosm.org). Your submissions through OnOSM will be reviewed and added by an OSM user.
 
-![OSM Handshake]({% link images/osm_handshake.png %} "OSM Handshake"){: .flex .flex--center}
+![Epic Handshake]({% link images/os_handshake.png %} "Epic Handshake"){: .flex .flex--center}
 
 ### How does it differ from other SGID data?
 {: .text-left}
