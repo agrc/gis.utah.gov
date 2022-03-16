@@ -1,5 +1,5 @@
 ---
-title: 'Introducing OpenStreetMap Places'
+title: 'Introducing Open Source Places'
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov
@@ -15,16 +15,16 @@ tags:
   - businesses
 ---
 
-![OpenStreetMap]({% link images/osm_logo.png %} "OpenStreetMap"){: style="float: right"}
+![OpenSourcePlaces]({% link images/osm_logo.png %} "OpenSourcePlaces"){: style="float: right"}
 
-There's an exciting new data layer that has been recently added to the State Geographic Information Datasource (SGID): [OpenStreetMap Places]({% link data/society/openstreetmap-places/index.html %}). This is a brand-new offering that is created from open source data and is intended to represent places of interest in the state of Utah. These may include businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, car dealerships, etc., etc., …almost anything that you can find in OpenStreetMap (OSM). There are over 23,000 features in the data, and the best part of all? You can make updates and contribute directly to this layer through [OpenStreetMap](http://openstreetmap.org)! (more on that later)
+There's an exciting new data layer that has been recently added to the State Geographic Information Datasource (SGID): [Open Source Places]({% link data/society/openstreetmap-places/index.html %}). This is a brand-new offering that is created from open source data and is intended to represent places of interest in the state of Utah. These may include businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, car dealerships, etc., etc., …almost anything that you can find in OpenStreetMap (OSM). There are over 23,000 features in the data, and the best part of all? You can make updates and contribute directly to this layer through [OpenStreetMap](http://openstreetmap.org)! (more on that later)
 
 ### What kind of points of interest are in the data?
 {: .text-left}
 
 All kinds! There are businesses, restaurants, churches, schools, banks, hotels, viewpoints, attractions, and more. Take a look at this chart showing the counts of the 25 most popular types of locations.
 
-![OpenStreetMap Feature Counts]({% link images/osm_counts.png %} "OpenStreetMap Feature Counts"){: .flex .flex--center}
+![Open Source Places Feature Counts]({% link images/osm_counts.png %} "Open Source Places Feature Counts"){: .flex .flex--center}
 
 ### How can it be used?
 {: .text-left}
@@ -61,7 +61,7 @@ It's pretty easy, really. All you need to do is create a free [OSM account](http
 ### What else should I know?
 {: .text-left}
 
-- The OSM data isn't perfect, so you may find some typos, missing locations, locations that no longer exist, etc.
+- The Open Source Places data isn't perfect, so you may find some typos, missing locations, locations that no longer exist, etc.
 - OSM data tends to have a European 'flavour' (see what I did there?). Be mindful that many categories or attributes may be spelled in a British/European English manner.  Business or location names shouldn't be affected, but attribute examples you might encounter include:
    - centre (instead of center, ex: sports_centre, arts_centre, garden_centre)
    - theatre (instead of theater)
@@ -70,8 +70,8 @@ It's pretty easy, really. All you need to do is create a free [OSM account](http
    - chemist (instead of pharmacy)
    - tyres (instead of tires)
 - There are two types of addresses provided in the data:
-   1. The address contained in the OSM data (`osm_addr`). These were input by OSM contributors, but only a small percentage of the points come with an address (~24%).
-   1. The address of the nearest UGRC address point (`ugrc_addr`). These are not official addresses of the businesses or points of interest, but provide a very close address for a greater percentage of points (~59%). They are the nearest address (within 25m) in the [UGRC Address Points]({% link data/location/address-data/index.html %}#AddressPoints) dataset. The `addr_dist` field provides the distance (in meters) from the OSM point to the nearby address point.
+   1. The address contained in the original OSM data (`osm_addr`). These were input by OSM contributors, but only a small percentage of the points come with an address (~24%).
+   1. The address of the nearest UGRC address point (`ugrc_addr`). These are not official addresses of the businesses or points of interest, but provide a very close address for a greater percentage of points (~59%). They are the nearest address (within 25m) in the [UGRC Address Points]({% link data/location/address-data/index.html %}#AddressPoints) dataset. The `addr_dist` field provides the distance (in meters) from the actual point to the nearby address point.
 - The attributes can be used to filter the data down to your desired types of points
    - The `category` field represents a general classification for a location. Examples include: restaurant, fast_food, viewpoint, fire_station, etc.
    - The other fields provide additional details about the location, where available
@@ -85,9 +85,9 @@ It's pretty easy, really. All you need to do is create a free [OSM account](http
 ### What are the details on how this data is created?
 {: .text-left}
 
-The OSM Places layer is created by a Python script that pulls statewide OSM data from a nightly archive provided by [Geofabrik](https://www.geofabrik.de/data/download.html). The archive data contains nearly 20 shapefiles, some that are relevant and some that aren't. So, the OSM Places layer is built by filtering the data in those shapefiles down to a single point dataset with specific categories and attributes. Additional de-duplication and spatial filtering are done along the way, to ensure the data is as clean as possible. Then, additional fields are created and assigned from UGRC's SGID data (county, city, zip, nearby address, etc.) via point-in-polygon analysis. Finally, additional attributes (OSM address, open hours, cuisine, etc.) are pulled from the [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) and joined to the filtered data using the 'osm_id' field as the join key. Additional information can be found on the [OpenStreetMap Places data page]({% link data/society/openstreetmap-places/index.html %}).
+The Open Source Places layer is created by a Python script that pulls statewide OSM data from a nightly archive provided by [Geofabrik](https://www.geofabrik.de/data/download.html). The archive data contains nearly 20 shapefiles, some that are relevant and some that aren't. So, the Open Source Places layer is built by filtering the data in those shapefiles down to a single point dataset with specific categories and attributes. Additional de-duplication and spatial filtering are done along the way, to ensure the data is as clean as possible. Then, additional fields are created and assigned from UGRC's SGID data (county, city, zip, nearby address, etc.) via point-in-polygon analysis. Finally, additional attributes (OSM address, open hours, cuisine, etc.) are pulled from the [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) and joined to the filtered data using the 'osm_id' field as the join key. Additional information can be found on the [Open Source Places data page]({% link data/society/open-source-places/index.html %}).
 
 If you really want to get into the _nitty gritty_ details, come to my [2022 UGIC Conference](https://ugic.org/uncategorized/ugic-registration-open/) presentation or keep your eyes peeled 👀 for a future blog post.
 
-Let us know what you think and reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.osm_places text=' ' hide-punctuation=true %}{% endcapture %}
+Let us know what you think and reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.os_places text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }} or on Twitter ([@maputah](https://twitter.com/maputah)).
