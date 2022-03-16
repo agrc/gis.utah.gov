@@ -3,7 +3,7 @@ title: 'Introducing Open Source Places'
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov
-date: 2022-03-10 10:00:00
+date: 2022-03-16 10:00:00
 categories:
   - Featured
   - SGID Blog
