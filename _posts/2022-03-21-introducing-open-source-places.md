@@ -67,7 +67,7 @@ You can get involved in the OSM community by checking out upcoming events on the
 - OSM data tends to have a European 'flavour' (see what I did there?). Be mindful that many categories or attributes may be spelled in a British/European English manner.  Business or location names shouldn't be affected, but attribute examples you might encounter include:
    - centre (instead of center, ex: sports_centre, arts_centre, garden_centre)
    - theatre (instead of theater)
-   - caravan_site (instead of rv_park or trailer_park
+   - caravan_site (instead of rv_park or trailer_park)
    - archaeological (instead of archeological)
    - chemist (instead of pharmacy)
    - tyres (instead of tires)
