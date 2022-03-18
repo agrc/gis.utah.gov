@@ -11,7 +11,7 @@ tags:
   - roads
   - transportation
 categories: []
-date: 2011-08-25 23:12:40 -0600
+date: 2022-03-18 11:12:40 -0600
 HighwayLinearReferencingSystemRoutes:
   hub:
     name: UDOT Routes ALRS
@@ -25,12 +25,6 @@ MilepostPoints:
   hub:
     name: Utah UDOT Mileposts
     item_id: ba0d4dcd6d3b4c368a3f14fe09998df5
-  updates:
-    - Updates to this dataset are published periodically.
-TenthMileReferencePoints:
-  hub:
-    name: Utah UDOT Tenth Mile Ref Points
-    item_id: 2b9972e0879248c2978da1c91d77ab4f
   updates:
     - Updates to this dataset are published periodically.
 FreewayExitPoints:
@@ -221,49 +215,30 @@ system (LRS) routes, and label lines for dynamic rendering of highway shields." 
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="MilepostPoints">Milepost Points</h3>
+    <h3 id="MilepostPoints">Mile Reference Posts</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/utah-sgid-highway-milepost.png %}"
       alt="utah-sgid-highway-milepost" loading="lazy" />
-    <p>Transportation.UDOTMileposts represents the approximate location of state and federal highway mileposts as a
-      single point. This dataset is derived directly from SGID10.Transportation.UDOTRoutes_LRS.</p>
-    <p><a href="https://drive.google.com/file/d/14QFEDCvicSNsO13fBolRjpuYgs9RGZv_/view?usp=sharing">See this info sheet</a> to learn
-      more about the difference between mile reference posts that are seen on the side of the road and linear
-      referencing system mile point measures (milepost points).</p>
-    <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction).  ‘P’
-      direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5
-      freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific
-      LRS event features.</p>
-    <p>Per UDOT policy the actual location of mileposts can vary up to 50 feet, from the measured position where
-      intersections and physical infrastructure make a more 'true' positioning impractical or undesirable.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The GIS
-      dataset representing the UDOT LRS is stewarded by UDOT with assistance from DTS, UGRC and local government.</p>
+    <p>The Mile Reference Posts dataset contains the location of milepost signs as they located in physical world. This collection 
+        technique is different from milepost locations that are <a href="https://data-uplan.opendata.arcgis.com/datasets/linear-measure-lm-tenth-opendata/explore">derived from a linear reference system </a>
+         (LRS). The advantage of this collection method is that the mile reference posts stay in roughly the same place over time and do not change when other sections of the road, or LRS, are realigned.</p>
+    <p>For more information on the difference between mile reference posts and linear measures (mileposts derived from an LRS), please refer to UDOT’s <a href="https://lrs-hub.udot.utah.gov/pages/alrs-additional-information">webpage</a> addressing this or their <a href="https://drive.google.com/file/d/14QFEDCvicSNsO13fBolRjpuYgs9RGZv_/view?usp=sharing">Reference Post vs Linear Measure</a> informational document.</p>
+    <p>Mile reference post locations are derived from images captured by <a href="https://www.mandli.com/"">Mandli Communications</a>, using on-the-ground asset collection technology. These locations were then aligned to UDOT’s linear referencing system.</p>
+    <p>Mandli Communications will update this data every 2 years under the current contract. The data served on this page was captured in 2021 and reflects what was on the ground at that time.</p>
+    <p><code>FIELDS</code> worth noting:</p>
+    <ul>
+      <li><code>Legend</code> - Milepost number on sign
+      <li><code>Measure</code> - Location of the milepost along the LRS
+      <li><code>Station Label</code> - Highway name + direction of route along LRS (P = positive, milepost numbers increasing; N = negative, milepost numbers decreasing) + milepost number. For example the value 0015PM_271 translates to mile marker 217 on Interstate-15 on the north bound side.
+    </ul>
+    <p>The Mile Reference Posts is an <a href="https://www.esri.com/en-us/arcgis/products/arcgis-roads-highways/overview">ESRI Roads and Highways Event</a> layer and supports the <a href="https://maps.udot.utah.gov/wadocuments/Apps/Stationing/">RP Stationing App</a>.</p>
+    <h5>Related Resource</h5>
+    <ul class="dotless">
+      <li><a href="https://data-uplan.opendata.arcgis.com/datasets/linear-measure-lm-tenth-opendata/explore">Linear measure based mileposts (derived from UDOT’s linear reference system and contains tenth-mile measures)</a>
+    </ul>
   </div>
   {% include packagedata.html name="MilepostPoints" info=page.MilepostPoints %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="TenthMileReferencePoints">Tenth Mile Reference Points</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" title="utah gis highway freeway shield lines"
-      src="{% link images/utah-gis-highway-freeway-shield-lines.png %}" alt="Tenth Mile References" loading="lazy" />
-    <p>Transportation.UDOTTenthMileRefPoints represents the approximate location of state and federal highway tenth of a
-      mile locations as a single point. This dataset is derived directly from SGID10.Transportation.UDOTRoutes_LRS.</p>
-    <p><a href="https://drive.google.com/file/d/14QFEDCvicSNsO13fBolRjpuYgs9RGZv_/view?usp=sharing">See this info sheet</a> to learn
-      more about the difference between mile reference posts that are seen on the side of the road and linear
-      referencing system mile point measures (milepost points).</p>
-    <p>Major routes are named using UDOT’s 5 character convention (ex. 0089P is US 89 in the positive direction). ‘P’
-      direction routes are those in the direction of increasing milepost values. ‘N’ direction routes for the Utah’s 5
-      freeways (0015, 0070, 0080, 0084, 0215) should be ignored (use ‘X’ instead) except when working with UDOT-specific
-      LRS event features.</p>
-    <p>Per UDOT policy the actual location of tenth of mile locations can vary up to 50 feet, from the measured position
-      where intersections and physical infrastructure make a more ‘true’ positioning impractical or undesirable.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This
-      dataset was assembled by UDOT for general purpose cartography.</p>
-  </div>
-  {% include packagedata.html name="TenthMileReferencePoints" info=page.TenthMileReferencePoints %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
