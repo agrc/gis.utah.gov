@@ -6,12 +6,12 @@ author:
 date: 2022-03-21 14:10:46
 categories: []
 tags:
-  - SGID
-  - Web API
-  - UGRC Funding
+  - sgid
+  - web api
+  - ugrc funding
 ---
 
-UGRC sometimes seeks additional funds for our work.  In particular the Web API and associated services.  We were successful.  I wanted to share out the request we made as I think it tells the UGRC story eloquently.  Enjoy the read.
+UGRC received additional funds for our work on the Web API and associated services.I wanted to share out the request we made as I think it tells the UGRC story eloquently.
 
 UGRC Web Services Enhancements Budget Request
 
