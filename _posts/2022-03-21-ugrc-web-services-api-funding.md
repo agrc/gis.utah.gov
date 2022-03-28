@@ -15,7 +15,7 @@ UGRC received additional funds for our work on the Web API and associated servic
 
 UGRC Web Services Enhancements Budget Request
 
-The Utah Geospatial Resource Center (UGRC) is responsible for acquiring, aggregating, and developing geospatial data for the State of Utah. Over the years UGRC has worked with countless partners to amass important spatial data, which is stored in the State Geographic Information Database (SGID). UGRC web services, specifically the web application programming interface (API), allow users to visualize and use this SGID data in a myriad of ways, from anywhere, for whatever reason, without licensed software. 
+The Utah Geospatial Resource Center (UGRC) is responsible for acquiring, aggregating, and developing geospatial data for the State of Utah. Over the years UGRC has worked with countless partners to amass important spatial data, which is stored in the State Geographic Information Datasource (SGID). UGRC web services, specifically the web application programming interface (API), allow users to visualize and use this SGID data in a myriad of ways, from anywhere, for whatever reason, without licensed software. 
 
 In the early days of UGRC, the Web API was not a known technology; now it has become the de facto standard for enhancing and providing access to the SGID data. UGRC does not have a current budget for this effort. For years UGRC developed the technology with funds from: other projects that utilize the API, appropriation funding, and small enhancement request funding from other agencies and organizations that are interested in supporting the API. However, none of these undedicated sources are sufficient to properly enhance, update, and maintain the UGRC Web API system.
 
