@@ -38,6 +38,7 @@ Additional web services funding will allow UGRC to make required changes and imp
 UGRC has used existing resources to develop web services to their current state and have tried to continue on this path; however, the significant adoption and reliance on the UGRC Web API requires a much more focused and attentive approach, as monthly requests to the API have risen in excess of twelve million. UGRC’s need to generate revenue by providing cost-recovery project work greatly limits the time we are able to put toward the Web API. We are simply not able to maintain it like we should, such as updating dependencies and implementing new technologies to ensure its robustness. These standard IT practices should be happening regularly; however, the last major update to this enterprise service was over five years ago.
 
 Benefits and Value
+
 Improving UGRC web services is at the crux of modernization and innovation efforts for Utah state government. By continually developing, maintaining, and improving the quality and accessibility of citizen address coordinates and related spatial data, the Web API provides a single, consistent source of truth from which all government agencies can pull data about the relationship of their services to the citizens of Utah. With increased funding, UGRC web services will be ready to handle the increasing demand for agencies to integrate spatial data into their business processes. 
 
 Funding for UGRC web services will also add value in the following areas: 
