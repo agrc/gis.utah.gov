@@ -21,8 +21,8 @@ In the early days of UGRC, the Web API was not a known technology; now it has be
 
 As agencies continually move toward data-driven approaches to serve the citizens of Utah, location data must be consistently robust, repeatable, and easily accessed by problem solvers so they can make the most relevant data-driven decisions. To meet the increasing demand for consistent statewide data, UGRC needs consistent, increased funding. This increased funding would support several web services, including Next Generation 911 (NG911), lieutenant governor voting efforts and administrative boundary certification, Medicaid fraud detection, treasurer’s office unclaimed property section, fleet management, streamlined sales tax, and other programs that require a citizen location to provide the appropriate services.
 
-
 Why UGRC Web Services? 
+
 UGRC web services require funding because they support so many other government applications, including the following services:
 
 NG911: Improved routing of emergency calls to a public safety answering point and dispatch of emergency vehicles
