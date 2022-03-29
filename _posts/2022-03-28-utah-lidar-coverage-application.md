@@ -1,5 +1,5 @@
 ---
-title: 'Introduction: Utah Lidar Coverage Application'
+title: 'Introduction: Utah LiDAR Coverage Application'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
@@ -17,7 +17,7 @@ Since 2006 UGRC has partnered with various agencies to acquire public domain hig
 
 To accompany our [web pages of lidar projects]({% link data/elevation-and-terrain/index.html %}#LiDAR) and downloads from the [UGRC Raster Data Discovery](https://raster.utah.gov/) application, the [Utah Lidar Coverage](https://utah.maps.arcgis.com/apps/instant/minimalist/index.html?appid=35d08d7d23ca4293b657d570f1005822) application has been created. It depicts the lidar projects that have been proposed, are in progress, or have been completed in Utah. This will allow users to see the distribution of lidar projects over the years and their [USGS Quality Level](https://www.usgs.gov/3d-elevation-program/topographic-data-quality-levels-qls) in addition to other information and resources related to the projects.
 
-_Please note: The proposed project footprints can change frequently and will be updated as we receive more information._
+_**Please note:** The proposed project footprints can change frequently and will be updated as we receive more information._
 
 [![Lidar Coverage Application]({% link images/lidar_coverage_app_sm.png %} "Lidar Coverage Application")](https://utah.maps.arcgis.com/apps/instant/minimalist/index.html?appid=35d08d7d23ca4293b657d570f1005822)
 {: .flex .flex--center }
