@@ -41,7 +41,7 @@ UGRC has used existing resources to develop web services to their current state 
 
 Improving UGRC web services is at the crux of modernization and innovation efforts for Utah state government. By continually developing, maintaining, and improving the quality and accessibility of citizen address coordinates and related spatial data, the Web API provides a single, consistent source of truth from which all government agencies can pull data about the relationship of their services to the citizens of Utah. With increased funding, UGRC web services will be ready to handle the increasing demand for agencies to integrate spatial data into their business processes. 
 
-The Funding UGRC has received for web services will also add value in the following areas: 
+The Funding UGRC is requesting for web services will also add value in the following areas: 
 
 - Promote economic advancement - Citizen addresses paired with broadband availability areas inform where service is needed. The Broadband Economic Development Map shows other data that helps ascertain the location of economic opportunity in rural Utah.
 - Assist with education innovation and investment - When students move from one district to another, geocoding helps identify the to and from district, then funds can be transferred.
