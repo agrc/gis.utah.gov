@@ -11,7 +11,7 @@ tags:
   - ugrc funding
 ---
 
-UGRC received additional funds for our work on the Web API and associated services. Below is the justification I submitted.
+UGRC received additional funds for our work on the Web API and associated services. Below is the justification I submitted for the request to the legislature.
 
 ## UGRC Web Services Enhancements Budget Request
 {: .text-left}
