@@ -45,6 +45,6 @@ Funding for UGRC web services will also add value in the following areas:
 
 - Promote economic advancement - Citizen addresses paired with broadband availability areas inform where service is needed. The Broadband Economic Development Map shows other data that helps ascertain the location of economic opportunity in rural Utah.
 - Assist with education innovation and investment - When students move from one district to another, geocoding helps identify the to and from district, then funds can be transferred.
-- Streamline and modernize state government - UGRC web services offer an authoritative data source, a single source of truth for all agencies providing services based on the location of citizens.
+- Streamline and modernize state government - UGRC web services offer an authoritative data source, a single source of truth for all agencies providing services based on the location of citizens' addresses.
 
 All Utahns will ultimately benefit from UGRC web services, as locational accuracy of citizens and their relationship to government services and opportunities affects many aspects of the quality of citizens’ lives from safety (911), education (school districts), voting and elections (districts and precincts), monetary (tax entities and areas), recreation (proximity to parks and outdoor areas), and health care (available services and providers).  
