@@ -32,7 +32,7 @@ UGRC web services require funding because they support so many other government 
 - Detection of Medicaid and other types of fraud
 - Assistance with the Watershed Restoration Initiative 
 
-Additional web services funding will allow UGRC to make required changes and improvements that are needed to handle the widespread increase in demand for these centralized UGRC services. 
+Additional web services funding will allow UGRC to raise the bar for making location data available. This is especially relevant with the widespread increase in demand for these centralized and authoritative UGRC services. 
 
 UGRC has used existing resources to develop web services to their current state and have tried to continue on this path; however, the significant adoption and reliance on the UGRC Web API requires a much more focused and attentive approach, as monthly requests to the API have risen in excess of twelve million. UGRC’s need to generate revenue by providing cost-recovery project work greatly limits the time we are able to put toward the Web API. We are simply not able to maintain it like we should, such as updating dependencies and implementing new technologies to ensure its robustness. These standard IT practices should be happening regularly; however UGRC always makes sure the system is viable, reliable, and a valuable resource.
 
