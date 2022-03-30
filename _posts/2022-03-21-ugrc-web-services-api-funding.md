@@ -25,7 +25,7 @@ As agencies continually move toward data-driven approaches to serve the citizens
 ## Why UGRC Web Services?
 {: .text-left}
 
-UGRC web services require funding because they support so many other government applications, including the following services:
+UGRC web services require funding because location is a very important piece within many other government systems. The following systems are a few I would like to highlight:
 
 - NG911: Improved routing of emergency calls to a public safety answering point and dispatch of emergency vehicles
 - Voting Applications: Assignment of voters to precincts, and precincts to districts 
