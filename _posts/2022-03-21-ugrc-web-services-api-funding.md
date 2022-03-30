@@ -1,5 +1,5 @@
 ---
-title: 'UGRC web services API funding'
+title: 'UGRC Web Service Funding'
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
