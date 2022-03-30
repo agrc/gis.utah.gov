@@ -11,7 +11,7 @@ tags:
   - ugrc funding
 ---
 
-UGRC received additional funds for our work on the Web API and associated services. Below is the justification I submitted for the request to the legislature.
+UGRC received additional funds for our work on the Web API and associated services. UGRC did not receive all funds requested however we did get ongoing funds, so users can expect to see enhancements in the near future.  UGRC is also very open to suggestionfs for changes to our web services. Below is the justification I submitted for the request to the legislature.
 
 ## UGRC Web Services Enhancements Budget Request
 {: .text-left}
@@ -32,7 +32,7 @@ UGRC web services require funding because location is a very important piece wit
 - Detection of Medicaid and other types of fraud
 - Assistance with the Watershed Restoration Initiative 
 
-Additional web services funding will allow UGRC to raise the bar for making location data available. This is especially relevant with the widespread increase in demand for these centralized and authoritative UGRC services. 
+Additional web services funding will now allow UGRC to raise the bar for making location data available. This is especially relevant with the widespread increase in demand for these centralized and authoritative UGRC services. 
 
 UGRC has used existing resources to develop web services to their current state and have tried to continue on this path; however, the significant adoption and reliance on the UGRC Web API requires a much more focused and attentive approach, as monthly requests to the API have risen in excess of twelve million. UGRC’s need to generate revenue by providing cost-recovery project work greatly limits the time we are able to put toward the Web API. We are simply not able to maintain and enhance the API as we would like to; however UGRC always makes sure the system is viable, reliable, and a valuable resource.
 
@@ -41,7 +41,7 @@ UGRC has used existing resources to develop web services to their current state 
 
 Improving UGRC web services is at the crux of modernization and innovation efforts for Utah state government. By continually developing, maintaining, and improving the quality and accessibility of citizen address coordinates and related spatial data, the Web API provides a single, consistent source of truth from which all government agencies can pull data about the relationship of their services to the citizens of Utah. With increased funding, UGRC web services will be ready to handle the increasing demand for agencies to integrate spatial data into their business processes. 
 
-Funding for UGRC web services will also add value in the following areas: 
+The Funding UGRC has received for web services will also add value in the following areas: 
 
 - Promote economic advancement - Citizen addresses paired with broadband availability areas inform where service is needed. The Broadband Economic Development Map shows other data that helps ascertain the location of economic opportunity in rural Utah.
 - Assist with education innovation and investment - When students move from one district to another, geocoding helps identify the to and from district, then funds can be transferred.
