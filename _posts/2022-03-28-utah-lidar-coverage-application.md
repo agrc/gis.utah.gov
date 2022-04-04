@@ -19,5 +19,5 @@ To accompany our [web pages of lidar projects]({% link data/elevation-and-terrai
 
 _**Please note:** The proposed project footprints can change frequently and will be updated as we receive more information._
 
-[![Lidar Coverage Application]({% link images/lidar_coverage_app_sm.png %} "Lidar Coverage Application")](https://utah.maps.arcgis.com/apps/instant/minimalist/index.html?appid=35d08d7d23ca4293b657d570f1005822)
+[![LiDAR Coverage Application]({% link images/lidar_coverage_app_sm.png %} "LiDAR Coverage Application")](https://utah.maps.arcgis.com/apps/instant/minimalist/index.html?appid=35d08d7d23ca4293b657d570f1005822)
 {: .flex .flex--center }
