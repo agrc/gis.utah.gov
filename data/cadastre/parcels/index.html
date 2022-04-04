@@ -13,12 +13,10 @@ categories: []
   <figcaption class="caption__text">Sample of Basic Parcels</figcaption>
 </figure>
 {%- capture abstract -%}
-Parcel data contains GIS mapping data representing parcel boundaries. UGRC has parcel data for all 29 counties. Some
-counties are more complete than others. In addition to the polygon geometry the attributes <code>PARCEL ID</code>,
-<code>PARCEL ADDRESS</code>, <code>PARCELS CITY</code>, <code>PARCEL ZIP CODE</code>, <code>OWNERSHIP TYPE</code>, and
-<code>RECORDER</code> contact are maintained in the Basic Parcel dataset when available. Users should be aware the owner
-type field <code>OWN_TYPE</code> in the parcel polygons is a very generalized ownership type (Federal, Private, State,
-Tribal). It is populated with the value of the <code>OWNER</code> field where the parcel's centroid intersects the <a
+Utah parcel data contains GIS mapping data representing parcel boundaries. UGRC has parcel data for all 29 Utah counties. Some
+counties are more complete than others. In addition to the polygon geometry various attributes are provided. Users should be aware the owner
+type field <code>OWN_TYPE</code> in the Basic Parcel polygons is a very generalized ownership type (Federal, Private, State,
+Tribal) and is populated with the value of the <code>OWNER</code> field where the parcel's centroid intersects the <a
   href='{% link data/cadastre/land-ownership/index.html %}'>Land Ownership</a> polygon layer.
 {%- endcapture -%}
 
