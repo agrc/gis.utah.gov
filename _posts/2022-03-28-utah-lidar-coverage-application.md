@@ -21,3 +21,6 @@ _**Please note:** The proposed project footprints can change frequently and will
 
 [![LiDAR Coverage Application]({% link images/lidar_coverage_app_sm.png %} "LiDAR Coverage Application")](https://utah.maps.arcgis.com/apps/instant/minimalist/index.html?appid=35d08d7d23ca4293b657d570f1005822)
 {: .flex .flex--center }
+
+Let us know what you think and reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.os_places text=' ' hide-punctuation=true %}{% endcapture %}
+{{ contact }} or on Twitter ([@maputah](https://twitter.com/maputah)).
