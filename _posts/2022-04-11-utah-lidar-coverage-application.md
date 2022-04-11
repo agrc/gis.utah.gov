@@ -3,7 +3,7 @@ title: 'Introduction: Utah LiDAR Coverage Application'
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2022-03-28 09:00:00
+date: 2022-04-11 09:00:00
 categories:
   - Featured
   - SGID Blog
