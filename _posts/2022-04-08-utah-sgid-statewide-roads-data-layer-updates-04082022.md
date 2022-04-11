@@ -26,7 +26,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Kane County:** Obtained roads data on 03/15/2022. Previous update was on 11/09/2021.
 - **Millard County:** Obtained roads data on 01/27/2022. Previous update was on 01/12/2022.
 - **Salt Lake County:** Obtained roads data on 03/15/2022. Previous update was on 03/10/2022.
-- **Utah County:** Obtained roads data on . Previous update was on 03/10/2022.
+- **Utah County:** Obtained roads data on 03/15/2022. Previous update was on 03/10/2022.
 - **Washington County:** Obtained roads data on 03/15/2022. Previous update was on 03/10/2022.
 - **Weber County:** Obtained roads data on 03/15/2022. Previous update was on 03/10/2022.
 
