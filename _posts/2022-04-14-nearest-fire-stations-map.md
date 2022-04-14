@@ -44,5 +44,5 @@ With the SGID, access to high-quality, authoritative data is a few clicks away. 
 
 GIS enables us to ask big questions and get reliable answers.
 
-If you have any questions about geospatial data or mapping please reach out to us at {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc text=' ' hide-punctuation=true %}{% endcapture %}
+If you have any questions about geospatial data or mapping please reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.
