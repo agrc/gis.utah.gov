@@ -40,7 +40,7 @@ Maps are a great starting point for conversations such as what areas are being s
 
 Using maps to visualize data is powerful. If a picture can paint a thousand words, then a map can initiate a thousand conversations. 
 
-With the SGID, access to high-quality, authoritative data is a few clicks away. I encourage you to begin your next spatially-oriented question or curiosity with [SGID Index search tool]({% link data/sgid-index/index.html %}).
+With the SGID, access to high-quality, authoritative data is a few clicks away. I encourage you to begin your next spatially-oriented question or curiosity with the [SGID Index search tool]({% link data/sgid-index/index.html %}).
 
 GIS enables us to ask big questions and get reliable answers.
 
