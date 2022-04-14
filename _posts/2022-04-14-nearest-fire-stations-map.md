@@ -26,7 +26,7 @@ In Utah, the best place to begin any GIS project is with the [State Geographic I
 ### Show me the map!
 {: .text-left}
   
-When exploring the question _Is Your Home Close Enough to the Nearest Fire Station?_, I was able to [search the SGID]({% link data/sgid-index/index.html %}) data offerings and quickly locate the statewide fire stations layer, the road centerline network dataset, and a basemap. After applying some basic network analysis, I was then able to create an interactive map showing the **[Standard Network Travel Times from Fire Stations in Utah](https://arcg.is/0T01i4)**.
+When exploring the question, _Is Your Home Close Enough to the Nearest Fire Station?_, I was able to [search the SGID]({% link data/sgid-index/index.html %}) data offerings and quickly locate the statewide fire stations layer, the road centerline network dataset, and a basemap. After applying some basic network analysis, I was then able to create an interactive map showing the **[Standard Network Travel Times from Fire Stations in Utah](https://arcg.is/0T01i4)**.
   
 This map shows standard travel times (aka: keeping the speed limit) at intervals of two, four, and six minutes. As you explore the interactive map, you will notice that some areas in Utah fall outside of a reasonable response time. Mapping this data allows us to easily identify and explore these areas.
 
