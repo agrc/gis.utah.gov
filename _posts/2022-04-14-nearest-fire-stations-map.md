@@ -36,7 +36,7 @@ This map shows standard travel times (aka: keeping the speed limit) at intervals
 ### Maps and Visualization
 {: .text-left}
   
-Maps are a great starting point for conversations such as, _What areas are being serviced?_ ,and, _Where are the best locations for new or enhanced services?_ The fire stations map is a good example of this.
+Maps are a great starting point for conversations such as, _What areas are being serviced?_ and, _Where are the best locations for new or enhanced services?_ The fire stations map is a good example of this.
 
 Using maps to visualize data is powerful. If a picture can paint a thousand words, then a map can initiate a thousand conversations. 
 
