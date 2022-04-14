@@ -3,7 +3,7 @@ title: Is your house close enough to the nearest fire station?
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2022-04-13 10:01:46
+date: 2022-04-14 10:01:46
 categories:
   - Featured
 tags:
