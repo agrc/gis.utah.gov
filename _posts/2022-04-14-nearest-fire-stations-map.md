@@ -30,7 +30,8 @@ When exploring the question _“Is your house close enough to the nearest fire s
   
 This map shows standard travel times (aka: keeping the speed limit) at intervals of two, four, and six minutes. As you explore the map, you will notice that some areas in Utah fall outside of the recommended/reasonable response time. Mapping this data allows us to easily identify and explore these areas.
 
-<insert map screenshot here>
+![Fire Station Travel Times]({% link images/fire_station_travel_times.png %})
+{: .flex .flex--center}
 
 ### Maps and Visualization
 {: .text-left}
