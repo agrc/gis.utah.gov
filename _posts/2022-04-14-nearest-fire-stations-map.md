@@ -15,7 +15,8 @@ tags:
 
 Living close to a fire station can be noisy, but on the other hand, not living close enough can result in delayed, or even worse, inadequate fire service. The National Fire Protection Association (NFPA) recommends a total response time of [six minutes](https://www.purvis.com/current-state-of-turnout-times/). This includes one minute for dispatch, one minute for turnout (getting out of the station), and four minutes for travel. Ideally, all occupied buildings in the US would be located within this six-minute window, or response zone. This is where Geographic information systems (GIS) come into play. GIS can help us visualize these response zones and also identify neighborhoods with inadequate service.
 
-<insert sgid logo here>
+![SGID Logo]({% link images/sgid_logo_sm.png %})
+{: .flex .flex--center}
   
 ### The SGID
 {: .text-left}
