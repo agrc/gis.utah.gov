@@ -21,7 +21,7 @@ Living close to a fire station can be noisy, but on the other hand, not living c
 ### The SGID
 {: .text-left}
   
-In Utah, the best place to begin any GIS project is with the [State Geographic Information Datasource]{% link data/index.html %}#welcome-to-the-state-geographic-information-database-sgid) (SGID). The SGID is hosted by the [Utah Geospatial Resource Center](https://gis.utah.gov/) (UGRC) and contains hundreds of statewide geospatial datasets, many of which are considered framework data that are used in larger government systems such as 911, voting, and taxation. Because of this, data in the SGID is updated frequently and adheres to established [policies and standards]({% link about/policy/sgid/index.html %}#internal-database-standards).
+In Utah, the best place to begin any GIS project is with the [State Geographic Information Datasource]{% link data/index.html %}#welcome-to-the-state-geographic-information-database-sgid) (SGID). The SGID is hosted by the [Utah Geospatial Resource Center](https://gis.utah.gov/) (UGRC) and contains hundreds of statewide geospatial datasets, many of which are considered framework data that are used in larger government systems such as 911, voting, and taxation. Because of this, data in the SGID is updated frequently and adheres to established [policies and standards]({% link about/policy/sgid/index.md %}#internal-database-standards).
   
 ### Show me the map!
 {: .text-left}
