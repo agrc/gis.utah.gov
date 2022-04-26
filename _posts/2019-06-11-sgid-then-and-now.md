@@ -28,9 +28,11 @@ In 1980, ESRI was hired as a consultant to assist with Utah’s GIS implementati
 
 In 1982, the Automated Geographic Reference, or AGR, was established with the goal to catalog and maintain this data. AGR entered the modern era in 1984 with the purchase of ARC/INFO on a PRIME minicomputer.
 
-In 1989, UGRC was created (replacing AGR). That change brought with it new GIS-related priorities and at the top of the list was the completion of the SGID. UGRC entered into a contract with the Governor’s Office of Planning and Budget for $80,000 to assist in the effort. As a result, the first SGID infrastructure was completed in 1991.
+In 1989, AGRC was created (replacing AGR). That change brought with it new GIS-related priorities and at the top of the list was the completion of the SGID. AGRC entered into a contract with the Governor’s Office of Planning and Budget for $80,000 to assist in the effort. As a result, the first SGID infrastructure was completed in 1991.
 
-The SGID was further solidified in 1991 with the passage of [Senate Bill 21](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html).  Passing unanimously, this bill created the UGRC and the SGID in state statute and eliminated many uncertainties such as future funding for the database and UGRC’s responsibilities.
+The SGID was further solidified in 1991 with the passage of [Senate Bill 21](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html).  Passing unanimously, this bill created the AGRC and the SGID in state statute and eliminated many uncertainties such as future funding for the database and UGRC’s responsibilities.
+
+During the 2021 General Session, the Utah Legislature agreed to change the name of AGRC to the Utah Geospatial Resource Center (UGRC), as passed in House Bill 261, “Geographic Reference Center Amendments.” (the new name took effect on May 5, 2021). This rebranding was an effort to better align the office with the larger geospatial industry as well as our current role within the state.
 
 The SGID has been in continuous operation since its completion in 1991 and has seen numerous software and hardware configurations throughout the years.
 
@@ -42,17 +44,17 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 ![1994 SGID User Guide Binder]({% link images/SGID_1994_binders_cover_sm.png %}){: .flex .flex--center}
 
 - **The SGID on CD-ROM (1995)**
-  - In 1995, UGRC, ESRI, and Utah State University combined forces and manufactured a CD-ROM containing SGID data and a built-in data viewer. To commemorate this milestone, we have made available the [original CD-ROM jacket](https://drive.google.com/file/d/1D_AI5EdonRLbLoJAdiVUORFycNwY1S3A/view?usp=sharing) as well as the [unaltered CD-ROM contents](https://drive.google.com/file/d/1iJ-oBpnCGK8XmPr9B4jvE1AhodTC85tp/view?usp=sharing).
+  - In 1995, AGRC, ESRI, and Utah State University combined forces and manufactured a CD-ROM containing SGID data and a built-in data viewer. To commemorate this milestone, we have made available the [original CD-ROM jacket](https://drive.google.com/file/d/1D_AI5EdonRLbLoJAdiVUORFycNwY1S3A/view?usp=sharing) as well as the [unaltered CD-ROM contents](https://drive.google.com/file/d/1iJ-oBpnCGK8XmPr9B4jvE1AhodTC85tp/view?usp=sharing).
 
 ![1995 SGID CD-ROM photo]({% link images/SGID_1995_cover_sm.png %}){: .flex .flex--center}
 
 - **SGID User’s Guide - 10th Edition (1999)**
-  - This version of the user guide was also distributed in a three-ring binder and talked about the UGRC home page as the place where you could get direct access to the SGID data, as well as view the FGDC metadata. It also mentioned an FTP site. It noted that this version would be the last printed user guide and that future guides would be available on the website for download in PDF format. With this version, users could request SGID data in the following formats: CD, 3.5 diskettes, 8mm tape, zip disc, or Coverages (which the guide mentioned were the most popular at that time).
+  - This version of the user guide was also distributed in a three-ring binder and talked about the AGRC home page as the place where you could get direct access to the SGID data, as well as view the FGDC metadata. It also mentioned an FTP site. It noted that this version would be the last printed user guide and that future guides would be available on the website for download in PDF format. With this version, users could request SGID data in the following formats: CD, 3.5 diskettes, 8mm tape, zip disc, or Coverages (which the guide mentioned were the most popular at that time).
 
 ![1999 SGID User Guide Binder]({% link images/SGID_1999_binders_cover_sm.png %}){: .flex .flex--center}
 
 - **SGID Meets the World Wide Web (Early 2000s)**
-  - By the early 2000s the SGID user guide, data, and data viewer were all solely available over the Web. UGRC was using ArcSDE 8.2 to maintain the data and ArcIMS for the interactive mapping website. Users could also use a separate ArcIMS site to create their own exportable map using a [custom map authoring tool]({% link images/SGID_early2000s_create_custom_map.gif %}).
+  - By the early 2000s the SGID user guide, data, and data viewer were all solely available over the Web. AGRC was using ArcSDE 8.2 to maintain the data and ArcIMS for the interactive mapping website. Users could also use a separate ArcIMS site to create their own exportable map using a [custom map authoring tool]({% link images/SGID_early2000s_create_custom_map.gif %}).
 
 [![SGID Early 2000s]({% link images/SGID_early2000s_sm.png %}){: .flex .flex--center}]({% link images/SGID_early2000s.png %})
 
