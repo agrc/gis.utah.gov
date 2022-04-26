@@ -32,7 +32,7 @@ In 1989, AGRC was created (replacing AGR). That change brought with it new GIS-r
 
 The SGID was further solidified in 1991 with the passage of [Senate Bill 21](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html).  Passing unanimously, this bill created the AGRC and the SGID in state statute and eliminated many uncertainties such as future funding for the database and UGRC’s responsibilities.
 
-During the 2021 General Session, the Utah Legislature agreed to change the name of AGRC to the Utah Geospatial Resource Center (UGRC), as passed in House Bill 261, “Geographic Reference Center Amendments.” (the new name took effect on May 5, 2021). This rebranding was an effort to better align the office with the larger geospatial industry as well as our current role within the state.
+During the 2021 General Session, the Utah Legislature agreed to [change the name of AGRC]({% link _posts/2021-04-05-agrc-name-change-to-utah-geospatial-resource-center-ugrc.md %}) to the Utah Geospatial Resource Center (UGRC), as passed in House Bill 261, “Geographic Reference Center Amendments.” (the new name took effect on May 5, 2021). This rebranding was an effort to better align the office with the larger geospatial industry as well as our current role within the state.
 
 The SGID has been in continuous operation since its completion in 1991 and has seen numerous software and hardware configurations throughout the years.
 
