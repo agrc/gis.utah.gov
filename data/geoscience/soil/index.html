@@ -10,27 +10,30 @@ categories: []
 Soil:
   downloads:
     - url: https://opendata.gis.utah.gov/datasets/utah-soils
-      label: Soil Types
+      label: Soils
   updates:
-    - 2008
+    - 2022
 ---
 <figure class="caption caption--right">
   <img class="caption__image" title="map" src="{% link images/Soils.png %}" alt="soil types" loading="lazy" />
-  <figcaption class="caption__text">Soil Types</figcaption>
+  <figcaption class="caption__text">Soils</figcaption>
 </figure>
-{% include abstract.html name="Soil Types"
+{% include abstract.html name="Soils"
 stewards="U.S. Department of Agriculture, Natural Resources Conservation Service"
-abstract="Soil Types represent the extent of defined soil types throughout Utah. The dataset was created by digitizing
-maps, compiling information onto a planimetric correct base and digitizing or revising digitized maps using remotely
-sensed and other information. It is generally the most detailed level of soil geographic data developed by the National
-Cooperative Soil Survey." %}
+abstract="Soil types and characteristics of Utah derived from the SSURGO database." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="Soil">Soil Types</h3>
+    <h3 id="Soil">Soils</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>All surveys areas have their own tables which are not interchangeable. All sets of tables are found at the <a
-        href="http://www.nrcs.usda.gov/wps/portal/nrcs/main/ut/soils/surveys/">NRCS Soil Mart</a>.</p>
+    <p>Utah Soils is a subset of the more comprehensive Natural Resources Conservation Service (NRCS) SSURGO database. 
+      The SSURGO database is a collection of 6 feature classes, one raster, 76 tables, and 69 relationship classes that 
+      represent over a century's worth of soil data collected by the National Cooperative Soil Survey. 
+      Utah Soils is a collection of the more widely used SSURGO soil attributes and SSURGO MUPOLYGON geometry to provide 
+      users an overview of Utah soils data without the complexity of the SSURGO database itself. Users are encouraged to 
+      explore the SSURGO database found <a href="https://nrcs.app.box.com/v/soils">here</a> 
+      for a more detailed description of the soils of Utah. More information about NRCS and SSURGO can also be found 
+      <a href="https://www.nrcs.usda.gov/wps/portal/nrcs/site/soils/home/">here.</a></p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="Soil" info=page.Soil %}
