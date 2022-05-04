@@ -1,0 +1,53 @@
+---
+author:
+  display_name: UGRC Staff
+  email: ugrc@utah.gov
+tags:
+  - history
+  - lakes
+  - water
+  - gsl
+categories: []
+date: 2022-05-03 12:00:00 -0600
+GSL2016:
+  hub:
+    name: Utah Great Salt Lake Water Level 2016
+    item_id: NEED THIS
+  updates:
+    - 2016
+---
+<figure class="caption caption--right">
+ <a href="{% link images/GSL2016_lg.png %}">
+  <img class="caption__image" title="map" src="{% link images/GSL2016.png %}"
+    alt="UtahGreatSaltLakeWaterLevel2016" loading="lazy" /></a>
+  <figcaption class="caption__text">GSL Water Level 2016</figcaption>
+</figure>
+{% include abstract.html
+name="Great Salt Lake Resources"
+stewards="UGRC"
+abstract="Various resources related to the Great Salt Lake." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="GSL2016">Utah Great Salt Lake Water Level 2016</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>This dataset was derived from the [breakline features](https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_shps.zip)
+    associated with the [2016 Great Salt Lake LiDAR project]({% link data/elevation-and-terrain/2016-lidar-gsl/index.md %}). To create this dataset the _lake Pond_
+    features were extracted from the _GreatSaltLake_Breaklines_ shapefile and converted into polygons. All polygons outside of the
+    main north and south arms of the lake were removed. The _Elevation_m_ & _Elevation_ft_ values represent the elevation of the water when the LiDAR was acquired.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://wasatchweatherweenies.blogspot.com/2022/04/the-great-salt-finger-lake.html">The Great Salt Finger Lake (2022)</a></li>
+      <li><a href="https://www.hydroshare.org/resource/582060f00f6b443bb26e896426d9f62a/">Great Salt Lake Bathymetry (2017)</a></li>
+      <li><a href="https://wildlife.utah.gov/gslep/about/water-levels.html">Great Salt Lake Water Levels Viewer</a></li>
+      <li><a href="https://utahdnr.hub.arcgis.com/datasets/utahDNR::great-salt-lake-lakebed-contours">Great Salt Lake Lakebed Contours</a></li>
+      <li><a href="https://gis.utah.gov/data/water/historic-lake-bonneville/">Historic Lake Bonneville</a></li>
+      <li><a href="https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-shoreline">Great Salt Lake Shoreline</a></li>
+      <li><a href="https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-flooding">Great Salt Lake Flooding</a></li>
+      <li><a href="https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-shoreline-flooding">Great Salt Lake Shoreline Flooding</a></li>
+    </ul>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html name="GSL2016"
+  info=page.GSL2016 %}
+</div>
