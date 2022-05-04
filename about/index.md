@@ -15,14 +15,17 @@ date: 2011-06-30 23:18:14 -0600
 - [UGRC Mission]({% link about/mission/index.md %})
 - [GIS-related Utah Statute]({% link about/code/index.html %})
 - [UGRC Policies]({% link about/policy/index.md %})
+- [UGRC Staff Presentations](https://agrc.github.io/Presentations)
 - [Utah GIS Resources]({% link training/index.html %})
 - [UGRC Media Resources]({% link about/media/index.md %})
 - [UGRC Directions and Parking]({% link about/visiting-agrc/index.html %})
 - [Contributing to this website]({% link about/contributing/index.md %})
 {: .dotless }
+
 </div>
 
 ## Our Background
+
 {: .text-left }
 
 The Utah Geospatial Resource Center (UGRC) is the State of Utah’s map technology coordination office. UGRC staff ([directory/contacts]({% link about/contact/index.html %})) have knowledge of and experience with geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state. Since 1984, we have been [encouraging and facilitating](https://storymaps.arcgis.com/stories/8be2e6de2abf442eb72f5faa8a32dd2b) the effective use of geospatial information and technology for Utah. Read more about how we aim to continue this mission in our [strategic plan](https://drive.google.com/a/utah.gov/uc?id=1fMCCpjSbjKrHBIPuMiagakcmBBD61F9d&export=download), last updated in 2020.
@@ -90,6 +93,7 @@ UGRC is funded through a combination of State general and restricted funds and c
 {: .dotless }
   </div>
   <div class="grid__col grid__col--1-of-2" markdown="1">
+
 ### Local
 
 - [Salt Lake User Group (SLUG)](http://www.slug-gis.info/)
@@ -99,6 +103,7 @@ UGRC is funded through a combination of State general and restricted funds and c
 {: .dotless }
   </div>
   <div class="grid__col grid__col--1-of-2" markdown="1">
+
 ### National
 
 - [National States Geographic Information Council (NSGIC)](https://nsgic.org)
@@ -106,6 +111,7 @@ UGRC is funded through a combination of State general and restricted funds and c
   {: .dotless }
 {: .dotless }
   </div>
+
 </div>
 
 ### GIS Events
