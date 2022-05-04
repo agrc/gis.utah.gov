@@ -39,6 +39,12 @@ UnitedStatesCongressionalDistricts:
     item_id: b5ef0b24f994467fb4f22b27b1a47e25
   updates:
     - This dataset was last updated in 2022.
+CombinedDistricts:
+  hub:
+    name: Utah District Combination Areas 2022
+    item_id: 12fb03b51a9a4ab9aacd90e19ac6a06f
+  updates:
+    - This dataset was last updated in 2022.
 ---
 
 <figure class="caption caption--right">
@@ -49,7 +55,9 @@ UnitedStatesCongressionalDistricts:
 {% include abstract.html
 name="Political Districts"
 stewards="UGRC and The Lieutenant Governor's Office"
-abstract="Utah State House, Senate, School Board Districts, and U.S. Congressional Districts will be used during the 2022 state and federal elections and will take effect after the November 2022 general elections. They will remain in effect until after the November 2032 general elections. All political districts are set by the legislature and are updated after a new national census year."
+abstract="Utah State House, Senate, School Board Districts, and U.S. Congressional Districts will be used during the 2022 state
+and federal elections and will take effect after the November 2022 general elections. They will remain in effect until after 
+the November 2032 general elections. All political districts are set by the legislature and are updated after a new national census year."
 %}
 
 <div class="grid package">
@@ -62,7 +70,7 @@ abstract="Utah State House, Senate, School Board Districts, and U.S. Congression
         Districts 2012 shows the house districts that elected officials represent.</p>
       <p>The <code>DIST</code> field contains the House district number.</p>
       <p>The <code>COLOR4</code> field can be used in coloring districts using only 4 colors, usually with no adjacent districts
-        displayed with the same color. In the case of the House Districts the number of districts and sizes this does not alway work.</p>
+        displayed with the same color. This does not always work for the House Districts due to the number and size of the districts.</p>
       <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
       <h5>Related Resources</h5>
       <ul class="dotless">
@@ -133,13 +141,32 @@ abstract="Utah State House, Senate, School Board Districts, and U.S. Congression
     <div class="grid__col grid__col--12-of-12 package-content">
       <img class="inline-text-left outline" src="{% link images/CongressionalDistricts2012_Small.png %}"
         alt="CongressNew" loading="lazy" />
-      <p>Political.US Congress Districts 2022 to 2032 shows the U.S congressional districts that elected officials represent.</p>
+      <p>US Congress Districts 2022 to 2032 shows the U.S congressional districts that elected officials represent.</p>
       <p>The <code>DISTRICT</code> field contains the US Congressional district number.</p>
       <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
     </div>
     {% include packagedata.html
     name="UnitedStatesCongressionalDistricts"
     info=page.UnitedStatesCongressionalDistricts
+    %}
+  </div>
+</div>
+
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="CombinedDistricts">Combined Political Districts 2022 to 2032</h3>
+    <div class="grid__col grid__col--12-of-12 package-content">
+      <img class="inline-text-left outline" src="{% link images/HouseSmall2.png %}" alt="StateHouseNew"
+        loading="lazy" />
+      <p>Utah District Combination Areas 2022 is comprised of all 4 politcal districts including the House, Senate, U.S. Congressional, and School Board districs.</p>
+      <p>The <code>Congress</code>, <code>House</code>, <code>School</code>, and <code>Senate</code> fields contains the district number.</p>
+      <p>The <code>COLOR4</code>, <code>COLOR4_House</code>, <code>COLOR4_Senate</code>, and <code>COLOR4_SB</code> fields can be used in coloring districts using
+	only 4 colors, usually with no adjacent district displayed with the same color. This does not always work for the House Districts due to the number and size of the districts.</p>
+      <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+    </div>
+    {% include packagedata.html
+    name="CombinedDistricts"
+    info=page.CombinedDistricts
     %}
   </div>
 </div>
