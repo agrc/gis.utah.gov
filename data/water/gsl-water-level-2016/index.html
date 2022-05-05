@@ -15,6 +15,12 @@ GSL2016:
     item_id: NEED THIS
   updates:
     - 2016
+Bonneville:
+  hub:
+    name: Utah Historic Lake Bonneville
+    item_id: fb95503ddf904428af3f308eca0eff6e
+  updates:
+    - 2007
 ---
 <figure class="caption caption--right">
  <a href="{% link images/GSL2016_lg.png %}">
@@ -58,4 +64,20 @@ abstract="Various resources related to the Great Salt Lake." %}
   </div>
   {% include packagedata.html name="GSL2016"
   info=page.GSL2016 %}
+</div>
+
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Bonneville">Historic Lake Bonneville</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>Historic Lake Bonneville represents the geographic extent of the historic Lake Bonneville shoreline. 
+      This data set was derived from classified shoreline polylines found in the publication Revisiting the deformed
+      high shoreline of Lake Bonneville, by Christine Y. Chen and Adam C. Maloof. More information and other Lake
+      Bonneville related data can be found on <a href="https://doi.org/10.1016/j.quascirev.2016.12.019">Science
+        Direct</a>.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html name="Bonneville"
+  info=page.Bonneville %}
 </div>
