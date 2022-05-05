@@ -26,17 +26,8 @@ GSL2016:
 name="Great Salt Lake Resources"
 stewards="UGRC"
 abstract="Various resources related to the Great Salt Lake." %}
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="GSL2016">Utah Great Salt Lake Water Level 2016</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <p>This dataset was derived from the 
-    <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_shps.zip">breakline features</a> 
-    associated with the <a href="{% link data/elevation-and-terrain/2016-lidar-gsl/index.md %}">2016 Great Salt Lake LiDAR project</a>. 
-    To create this dataset the <code>Lake Pond</code> features were extracted from the <code>GreatSaltLake_Breaklines</code> shapefile and converted 
-    into polygons. All polygons outside of the main north and south arms of the lake were removed. The <Code>Elevation_m (elev_m)</code> & <code>Elevation_ft (elev_ft)</code> 
-    values represent the elevation of the water when the LiDAR was acquired.</p>
+
+<div>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://wasatchweatherweenies.blogspot.com/2022/04/the-great-salt-finger-lake.html">The Great Salt Finger Lake (2022)</a></li>
@@ -49,6 +40,20 @@ abstract="Various resources related to the Great Salt Lake." %}
       <li><a href="https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-flooding">Great Salt Lake Flooding</a></li>
       <li><a href="https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-shoreline-flooding">Great Salt Lake Shoreline Flooding</a></li>
     </ul>
+</div>
+
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="GSL2016">Utah Great Salt Lake Water Level 2016</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>This dataset was derived from the 
+    <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_shps.zip">breakline features</a> 
+    associated with the <a href="{% link data/elevation-and-terrain/2016-lidar-gsl/index.md %}">2016 Great Salt Lake LiDAR project</a>. 
+    To create this dataset the <code>Lake Pond</code> features were extracted from the <code>GreatSaltLake_Breaklines</code> shapefile and converted 
+    into polygons. All polygons outside of the main north and south arms of the lake were removed. The <Code>Elevation_m (elev_m)</code> & <code>Elevation_ft (elev_ft)</code> 
+    values represent the elevation of the water when the LiDAR was acquired.</p>
+
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="GSL2016"
