@@ -15,7 +15,7 @@ categories:
 ### New Utah Political Districts
 {: .text-left}
 
-[Political districts for state-level offices]({% link data/political/2012-2021-house-senate-congressional-districts/index.html %}) (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections in 2012 and ongoing representation after the new representatives are installed on Jan 1, 2013.
+[Political districts for state-level offices]({% link data/political/2012-2022-political-districts/index.html %}) (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections in 2012 and ongoing representation after the new representatives are installed on Jan 1, 2013.
 
 The new political district boundaries, originally formed from 2010 Census Block files have been adjusted by UGRC, working together with the Utah Legislature, the Lt. Governor's Elections Office and the County Clerks' offices to make recommendations that increased the geographic accuracy and ease of use in the elections process. Legislation to make recommended minor changes to the political districts changes was passed by the Legislature during the 2013 General Session and signed into law by the Governor.
 

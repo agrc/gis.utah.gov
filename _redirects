@@ -67,6 +67,8 @@
 /data/google-imagery-license/                                                                             /discover/license/                                                            301
 /data/googleimagery/                                                                                      /data/discover-server-information/                                            301
 /data/how-to-connect-to-the-sgid-via-sde/                                                                 /sgid-database/                                                               301
+/data/political/2012-2021-house-senate-congressional-districts/	                                          /data/political/2012-2022-political-districts/                                301
+/data/political/2022-2032-house-senate-congressional-districts/                                           /data/political/2022-2032-political-districts/                                301
 /data/sgid-base-map-services-arcmap/                                                                      /discover/resources/                                                          301
 /data/sgid-cadastre/                                                                                      /data/cadastre/                                                               301
 /data/sgid-cadastre/land-ownership/                                                                       /data/cadastre/land-ownership/                                                301
