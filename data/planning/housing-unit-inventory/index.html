@@ -9,9 +9,10 @@ categories: [Planning]
 HousingUnitInventory:
   hub:
     name: Utah Housing Unit Inventory
-    item_id: (AGOL Item ID))
+    item_id: bbdc62867c2340949f530a71666223ab
   updates:
-    - Annually. <code>InventoryYear</code> contains the year a particular feature was evaluated.
+    - <code>InventoryYear</code> contains the year a particular feature was evaluated.
+    - May 2022 - Initial load for Salt Lake, Davis, and Weber Counties
 ---
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/utah-housing-unit-inventory-thumbnail.png %}" alt="Housing Unit Inventory in the Avenues"
@@ -20,7 +21,7 @@ HousingUnitInventory:
 </figure>
 {% include abstract.html name="Housing Unit Inventory"
 stewards="WFRC, MAG, UGRC"
-abstract="The Housing Unit Inventory (HUI) is a derivative dataset that attempts to add information to the county assessor tax parcel data for Utah's most urban counties. It is not a substitute for the excellent datasets maintained by the Assessors but, rather, presents additional, standardized information about the type and number of housing units, associated grounds and common areas, and related short-term and long-term trends. The HUI is a best-effort product of a resource-limited analysis -- users are encouraged to do their own quality assessment, share their findings, and cite this metadata describing how the HUI was produced." %}
+abstract="The Housing Unit Inventory (HUI) is a derivative dataset that attempts to add information to the county assessor tax parcel data for Utah's most urban counties. It is not a substitute for the excellent datasets maintained by the Assessors but instead presents additional, standardized information about the type and number of housing units, associated grounds and common areas, and related short-term and long-term trends. The HUI is a best-effort product of a resource-limited analysis — users are encouraged to do their own quality assessment, share their findings, and cite this metadata describing how the HUI was produced." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="HousingUnitInventory">Housing Unit Inventory</h3>
@@ -28,7 +29,7 @@ abstract="The Housing Unit Inventory (HUI) is a derivative dataset that attempts
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/utah-housing-unit-inventory-small.png %}"
       loading="lazy" />
-    <p>WFRC, MAG, and UGRC are creating this dataset from the <a href="{% link data/cadastre/parcels/index.html %}#UtahLIRParcels">Land Information Record (LIR)</a> parcel datasets published by UGRC. The LIR datasets are made possible by the county assessors voluntary sharing their annual tax assessment data. The tax roll data are frozen as of midnight Jan 1st for the specified year, finalized in late May, and is typically made available for distribution in the SGID later in the summer of the same year.</p>
+    <p>WFRC, MAG, and UGRC are creating this dataset from the <a href="{% link data/cadastre/parcels/index.html %}#UtahLIRParcels">Land Information Record (LIR)</a> parcel datasets published by UGRC. The LIR datasets are made possible by the county assessors voluntary sharing their annual tax assessment data. The tax roll data are frozen as of midnight Jan 1st for the specified year, finalized in late May, and typically loaded into the SGID later that summer.</p>
     <p>WFRC, the metropolitan planning organization for the urban portions of Salt Lake County, Davis County, and Weber county, prepared the initial 2020 Housing Inventory dataset for their counties and defined the inventory process laid out below. MAG will be providing data for their counties, and UGRC is working with other counties to create inventories as requested.</p>
     <ul>
       <li>The inventory applies apartment unit counts to multi-family rental properties that do not have individually-owned and platted units (traditional apartment buildings, quadplexes, triplexes, mixed use buildings etc). These unit counts come from the <a href="{% link data/address/index.html %}">address point</a> data layer, with some counts being assigned manually using information from recent aerial photography and other sources.</li>
