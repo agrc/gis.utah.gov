@@ -375,3 +375,10 @@ os_places:
   email: ENeemann@utah.gov
   phone: 385-258-4299
   agency: UGRC
+housing_unit_inventory:
+  - name: Jacob Adams
+    agency: UGRC
+    email: jdadams@utah.gov
+  - name: the analytics team
+    agency: WFRC
+    email: analytics@wfrc.org
