@@ -4,7 +4,7 @@ services:
   jekyll:
     container_name: "gis.utah.gov"
     image: "jekyll/jekyll:4"
-    command: "jekyll serve --watch --livereload --force_polling"
+    command: "jekyll serve --watch --livereload --incremental"
     volumes:
       - "./:/srv/jekyll"
     ports:
