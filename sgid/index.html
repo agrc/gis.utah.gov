@@ -14,6 +14,8 @@ tags:
 
     <div class="grid__col section alternate">
         <h2>The State Geographic Information Database</h2>
+        <img alt="Discover Basemap and Imagery Services" class="flex flex--center" style="border:none;margin-bottom:2em;max-width:60%;"
+                src="{% link about/media/ugrc-logo-SGID-wavy_gravy.png %}" loading="lazy" />
         <p class="readable">Established by State law in 1991, Utah’s State Geographic Information Database (SGID)
             provides a centralized collection of hundreds of GIS data layers developed, aggregated, or acquired by the
             State. Evolving technologies have allowed us to transform the SGID from a single database to a broad
@@ -44,10 +46,10 @@ tags:
 
     <div class="grid__col section">
         <h2>SGID Index</h2>
-        <div class="grid__col--span-all grid__col--centered grid__col--s-hidden" style="width:568px">
-            <a href="{% link data/sgid-index/index.html %}">
+        <div class="grid__col--span-all grid__col--centered grid__col--s-hidden">
+            <a href="{% link data/sgid-index/index.html %}" class="flex flex--center">
                 <img alt="SGID Index Table Search" class="text-center" src="{% link images/sgid-index.png %}"
-                    loading="lazy" />
+                    loading="lazy" style="margin-bottom:2em;max-width:60%" />
             </a>
         </div>
         <p class="readable">The SGID Index is <b>the</b> master source of information about SGID datasets. It includes
@@ -120,10 +122,10 @@ tags:
 
     <div class="grid__col section alternate">
         <h2>Discover Basemap and Imagery Services</h2>
-        <div class="grid__col--span-all grid__col--centered grid__col--s-hidden" style="width:485px">
-            <a href="{% link discover/index.html %}">
-                <img alt="Discover Basemap and Imagery Services" class="text-center"
-                    src="{% link /discover/images/discover.png %}" loading="lazy" />
+        <div class="grid__col--span-all grid__col--centered grid__col--s-hidden">
+        <a href="{% link discover/index.html %}" class="flex flex--center">
+            <img alt="Discover Basemap and Imagery Services" class="text-center" style="border:none;max-width:60%"
+                src="{% link about/media/ugrc-logo-Discover.png %}" loading="lazy" />
             </a>
         </div>
         <p class="readable">Sometimes you just need background imagery or a reference map to sit beneath your data
@@ -137,6 +139,12 @@ tags:
 
     <div class="grid__col section no-border">
         <h2>The UGRC Web API</h2>
+        <div class="grid__col--span-all grid__col--centered grid__col--s-hidden">
+        <a href="https://api.mapserv.utah.gov" class="flex flex--center">
+            <img alt="UGRC Web API logo" class="text-center" style="border:none;max-width:60%"
+                src="{% link about/media/ugrc-logo-WebAPI.png %}" loading="lazy" />
+                </a>
+        </div>
         <p class="readable">The UGRC Web API provides developers access to all the curated SGID datasets and to our
             Utah-centric geocoder through simple HTTP requests. This service allows you to leverage GIS without
             complicated or costly software. We use this API to build features for apps like the <a
