@@ -11,15 +11,15 @@ tags:
   - surface
   - terrain
 date: 2015-08-19 14:29:46 -0600
-update_date: 2018-03-01 01:00:00
+update_date: 2022-05-24 01:00:00
 title: Statewide Lidar Plan for Utah
 categories:
   - Featured
 ---
 
 <p>
-    <a href="{% link images/LidarPlan_w_GoalMet_and2020.png %}" target="_blank" rel="noopener">
-        <img src="{% link images/LidarPlan_w_GoalMet_and2020_sm.png %}" alt="" title="LidarPlan" class="inline-text-left" loading="lazy" />
+    <a href="{% link images/LidarPlan_w_GoalMet_and2022.png %}" target="_blank" rel="noopener">
+        <img src="{% link images/LidarPlan_w_GoalMet_and2022_sm.png %}" alt="" title="LidarPlan" class="inline-text-left" loading="lazy" />
     </a>
     To aid the planning efforts for future Lidar acquisitions in Utah, UGRC and the Utah Department of Natural Resources have collaborated with various local, state, and federal entities to create the foundation for a Statewide Lidar Plan for Utah. The plan includes the <strong><a href="https://docs.google.com/a/utah.gov/document/d/1Z7QPeg9whuOnZP_Y_jOnkZrJsj6hVpqrp3vSkUJhEac/edit?usp=sharing">Lidar Plan strategy document</a></strong>.
 </p>
