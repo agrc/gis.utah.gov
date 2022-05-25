@@ -15,7 +15,7 @@ AddressPoints:
     item_id: 3f4f7a8efcd147febeca8bacaea67a14
   updates:
     - April 2022 - Davis, Iron, Salt Lake, Sevier, Uintah, Utah, Wasatch, Washington, Wayne, Weber Counties
-    - March 2022 - Box Elder, Davis, Garfield, Salt Lake, Utah, Washington, Weber Counties 
+    - March 2022 - Box Elder, Davis, Garfield, Salt Lake, Utah, Washington, Weber Counties
     - February 2022 - Carbon, Davis, Millard, Morgan, Salt Lake, Utah, Wasatch, Washington, Weber Counties
     - January 2022 - Davis, Salt Lake, Summit, Utah, Washington, Weber Counties
     - December 2021 - Davis, Iron, Millard, Salt Lake, Utah, Washington, Weber Counties
@@ -90,13 +90,22 @@ grid system quadrant boundaries (NE, SE, SW, NW) in Utah." %}
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/AddPts_Small.png %}" alt="Address Points"
       loading="lazy" />
-    <p>Location.AddressPoints is a statewide dataset that contains address point data from all 29 Utah Counties. This
-      dataset is a work in progress and some counties are more complete than others. One person in each county has been
-      identified as the <a
-        href="https://docs.google.com/spreadsheet/ccc?key=0AkScYXX9W5INdFFRVHZkcWFYczd5MXhZYS1WTVN1elE&usp=sharing">Master
-        Address List</a> (MAL) Authority to eliminate duplication of address point data and to clarify the main person
-      of contact. UGRC is working with each MAL Authority to continually improve this data and work toward monthly
-      updates.</p>
+      <p>This dataset contains geographic information system (GIS) mapping data representing address point locations for all twenty-nine Utah counties. This data layer ensures that all state entities are using the same verified, accurate county and municipality address information.</p>
+      <p>An address point represents a geographic location that has been assigned a US Postal Service (USPS) address by the local address authority (i.e., county or municipality) but does not necessarily receive mail. Address points may include several pieces of information about the structure or location that's being mapped, such as:</p>
+      <ul>
+        <li>the full address (i.e., the USPS mailing address, if the address is for a physical location [rather than a PO box]);
+        <li>the landmark name;
+        <li>whether the location is a building;
+        <li>the type of unit;
+        <li>the city and ZIP code;
+        <li>unique code identifiers of the specific geographic location, including the Federal Information Processing Standard Publication (FIPS) county code and the US National Grid (USNG) spatial address;
+        <li>the address source; and
+        <li>the date that the address point was loaded into the map layer.
+      </ul>
+      <p>This dataset is mapping grade; it is a framework layer that receives regular updates. As with all our datasets, the Utah Geospatial Resource Center (UGRC) works to ensure the quality and accuracy of our data to the best of our abilities.</p>
+      <p>Maintaining the dataset is now an ongoing effort between UGRC, counties, and municipalities. Specifically, UGRC works with each county or municipality's <a href="https://docs.google.com/spreadsheet/ccc?key=0AkScYXX9W5INdFFRVHZkcWFYczd5MXhZYS1WTVN1elE&usp=sharing">Master Address List</a> (MAL) authority to continually improve the address point data. Counties have been placed on an update schedule depending on the rate of new development and change within them. Populous counties, such as Weber, Davis, Salt Lake, Utah, and Washington, are more complete and are updated monthly, while rural or less populous counties may be updated quarterly or every six months.</p>
+      <p>The information in the Address Points dataset was originally compiled by Utah counties and municipalities and was aggregated by UGRC for the MAL grant initiative in 2012. The purpose of this initiative was to make sure that all state entities were using the same verified, accurate county and municipal address information.</p>
+      <p>Since 2012, more data has been added to the Address Points GIS data and is used for geocoding, 911 response, and analysis and planning purposes. The Address Point data is also used as reference data for the <a href="https://api.mapserv.utah.gov">api.mapserv.utah.gov</a> geocoding endpoint, and you can find the address points in many web mapping applications.</p>
     <h5>Address Points in Action</h5>
     <p>The statewide address point layer is used as reference data for the <a
         href="{% link _posts/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade.md %}">api.mapserv.utah.gov</a>
@@ -112,9 +121,7 @@ grid system quadrant boundaries (NE, SE, SW, NW) in Utah." %}
         list</a> for the Master Address Authority at each county.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a
-          href="https://docs.google.com/document/d/1fVmLrp0pbR3J1aXo83jTt3gtGUsPwSYztf-HM-RB-cI/edit?usp=sharing">Utah
-          Address Point Schema Definitions</a>
+      <li><a href="https://docs.google.com/document/d/1fVmLrp0pbR3J1aXo83jTt3gtGUsPwSYztf-HM-RB-cI/edit?usp=sharing">Utah Address Point Schema Definitions</a>
     </ul>
   </div>
   {% include packagedata.html name="AddressPoints" info=page.AddressPoints %}
