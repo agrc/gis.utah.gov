@@ -9,7 +9,14 @@ tags:
 date: 2017-08-29 16:08:29 -0600
 title: Address Locators
 categories: []
-
+OfficialClient:
+  downloads:
+    - url: https://github.com/agrc/api-client/releases/download/v1.6.0/UGRC.API.Client-1.6.0-x64.dmg
+      label: MacOS App
+    - url: https://github.com/agrc/api-client/releases/download/v1.6.0/ugrc-api-client-1.6.0-win32-setup.exe
+      label: Windows App
+  updates:
+    - Review the <a href="https://github.com/agrc/api-client/releases">release notes</a> on GitHub.
 RoadsAddressLocatorPackage:
   downloads:
     - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7meXU3X0toSGVNbzA&export=download
@@ -52,89 +59,32 @@ GeocodingToolbox:
 {% include abstract.html
 download="https://drive.google.com/a/utah.gov/uc?id=0B_Y2d5UmL8_zUUdDVzdBaTJIQ2c&export=download"
 name="Address Locators" stewards="UGRC" type="Geolocators" category="address"
-webapp="https://api.mapserv.utah.gov" abstract="Adding a geographic point for an
-address is a fundamental GIS task. To handle this task, UGRC has created many
-services and tools to cater to the wide geocoding user base. Starting from the
-ground up, UGRC helps maintain statewide address points and roads datasets.
-These two datasets are the foundation for geocoding. Building on top of the
-reference data, UGRC creates and maintains ArcGIS Locators. Locators are where
-most of the magic happens - taking the input data and finding a location from
-the reference data. These locators are available for download on this page. With
-the reference data and the locators blocks in place, UGRC can put together
-geocoding systems and tools. The UGRC WebAPI is a web service that can geocode
-over the web via http. Users can send requests via their favorite programming
-language, application, or web browser. This service has some magic to get the
-best results out of user input and is the recommended way to geocode addresses.
-UGRC also provide pre-built clients to use the Web API that can be downloaded below. UGRC hopes to have the data and tools
-ready for your needs to geocode." %}
+webapp="https://api.mapserv.utah.gov" abstract="Adding a geographic point for an address is a fundamental GIS task. To handle this task, UGRC has created many services and tools to cater to the wide geocoding user base. Starting from the ground up, UGRC helps maintain statewide address points and roads datasets. These two datasets are the foundation for geocoding. Building on top of the reference data, UGRC creates and maintains ArcGIS Locators. Locators are where most of the magic happens - taking the input data and finding a location from the reference data. These locators are available for download on this page. With the reference data and the locators blocks in place, UGRC can put together geocoding systems and tools. The UGRC WebAPI is a web service that can geocode over the web via http. Users can send requests via their favorite programming language, application, or web browser. This service has intimate Utah addressing knowledge to get the best results out of user input and is the recommended way to geocode addresses. UGRC also provides pre-built clients to use the Web API that can be downloaded below. UGRC hopes to have the data and tools ready for your needs to geocode." %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
-    <h3 id="WebAPI">UGRC Web API</h3>
+    <h3 id="OfficialClient">Official UGRC API Client</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
     <p>
-      {% include fa_icon.html api=true class="svg-inline--fa fa-w-20 fa-4x
-      fa-pull-left" %} The UGRC Web API is an http enabeled service for accessing (via the internet) the geospatial data that we store in the State Geographic Information Database (SGID). The endpoints provided by the API are a great way to add geospatial functionality to your web pages and applications or desktop workflows. You will be able to geocode addresses and search all the data in the SGID. To get started,
-      <a href="https://developer.mapserv.utah.gov/StartupGuide"
-        >read the getting started guide</a
-      >. There are also examples of geocoding in
-      <a href="https://github.com/agrc/GeocodingSample"
-        >multiple programming languages</a
-      >.
+      <img src="{% link images/api-client/web_api_logo.png %}" width="92" class="inline-text-left" alt="UGRC API logo" loading="lazy"/>The UGRC API Client is a cross-platform desktop geocoding tool designed to carefully and successfully guide you through your geocoding tasks. This app is our best and most user friendly geocoding client. The app will geocode <code>*.csv</code> files. It will require no license or subscription to use. It will automatically download updates as soon as they are available to stay current and add new features.
     </p>
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li>
-        <a href="{% link developer/web-services/index.md %}"
-          >Geospatial Web Services</a
-        >
-      </li>
-      <li>
-        <a href="{% link _posts/2014-10-30-agrc-edg-presentation.md %}"
-          >Using UGRC's Geocoding and Map-based Web Services</a
-        >
-      </li>
-
-      <li>
-        <a href="https://www.youtube.com/watch?v=BHhQxxXy6bo"
-          >EDG brown bag event presentation</a
-        >
-      </li>
-      <li>
-        <a href="http://agrc.github.io/Presentations/UGIC/2014/webapi/#0"
-          >2014 UGIC WebAPI Presentation slides</a
-        >
-      </li>
-      <li>
-        <a
-          href="{% link _posts/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process.md %}"
-          >Rethinking Geocoders: Adding Local Vernacular into the Build
-          Process</a
-        >
-      </li>
-
-      <li>
-        <a
-          href="{% link _posts/2015-02-12-authoritative-utah-geocoding-results.md %}"
-          >Authoritative Utah Geocoding Results</a
-        >
-      </li>
-
-      <li>
-        <a
-          href="{% link _posts/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade.md %}"
-          >Utah Statewide Address Geocoding Web Service Upgrade</a
-        >
+        <a href="{% link _posts/2021-11-29-introducing-the-official-ugrc-api-client.md %}">Introducing the Official UGRC API Client</a>
+      </li><li>
+        <a href="https://github.com/agrc/api-client/">GitHub Repository</a>
       </li>
     </ul>
-
     <p>
-      {% include contact.html subject=page.title
-      contact=site.data.contacts.webapi %} or the
-      <a href="https://github.com/agrc/api.mapserv.utah.gov/issues/new"
+      {% include contact.html subject=page.title hide-punctuation=true
+      contact=site.data.contacts.webapi %} or new issues can be created in the
+      <a href="https://github.com/agrc/api-client/issues/new"
         >Github repository</a
       >.
     </p>
+    {% include packagedata.html name="OfficialClient"
+    info=page.OfficialClient %}
   </div>
 </div>
 <div class="grid package">
@@ -180,13 +130,76 @@ ready for your needs to geocode." %}
 
     <p>
       {% include contact.html subject=page.title
-      contact=site.data.contacts.geocoding_tools hide-punctuation=true %} or the
+      contact=site.data.contacts.geocoding_tools hide-punctuation=true %} or new issues can be created in the
       <a href="https://github.com/agrc/geocoding-toolbox/issues/new"
         >Github repository</a
       >.
     </p>
     {% include packagedata.html name="GeocodingToolbox"
     info=page.GeocodingToolbox %}
+  </div>
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="WebAPI">UGRC API</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>
+      {% include fa_icon.html api=true class="svg-inline--fa fa-w-20 fa-4x
+      fa-pull-left" %} The UGRC API is an http enabeled service for accessing (via the internet) the geospatial data that we store in the State Geographic Information Datasource (SGID). The endpoints provided by the API are a great way to add geospatial functionality to your web pages and applications or desktop workflows. You will be able to geocode addresses and search all the data in the SGID. To get started,
+      <a href="https://developer.mapserv.utah.gov/StartupGuide">read the getting started guide</a>. There are also examples of geocoding in <a href="https://github.com/agrc/GeocodingSample">multiple programming languages</a>. To use the UGRC API, you will need a general understanding of programming. If you are new to programming, or do not know how to program, you can you one of the prebuilt clients.
+    </p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li>
+        <a href="{% link developer/web-services/index.md %}">Geospatial Web Services</a>
+      </li>
+      <li>
+        <a href="{% link _posts/2014-10-30-agrc-edg-presentation.md %}"
+          >Using UGRC's Geocoding and Map-based Web Services</a
+        >
+      </li>
+
+      <li>
+        <a href="https://www.youtube.com/watch?v=BHhQxxXy6bo"
+          >EDG brown bag event presentation</a
+        >
+      </li>
+      <li>
+        <a href="http://agrc.github.io/Presentations/UGIC/2014/webapi/#0"
+          >2014 UGIC WebAPI Presentation slides</a
+        >
+      </li>
+      <li>
+        <a
+          href="{% link _posts/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process.md %}"
+          >Rethinking Geocoders: Adding Local Vernacular into the Build
+          Process</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="{% link _posts/2015-02-12-authoritative-utah-geocoding-results.md %}"
+          >Authoritative Utah Geocoding Results</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="{% link _posts/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade.md %}"
+          >Utah Statewide Address Geocoding Web Service Upgrade</a
+        >
+      </li>
+    </ul>
+
+    <p>
+      {% include contact.html subject=page.title hide-punctuation=true
+      contact=site.data.contacts.webapi %} or new issues can be created in the
+      <a href="https://github.com/agrc/api.mapserv.utah.gov/issues/new"
+        >Github repository</a
+      >.
+    </p>
   </div>
 </div>
 <div class="grid package">
