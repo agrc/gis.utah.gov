@@ -27,7 +27,7 @@ The official [UGRC API client](https://github.com/agrc/api-client) is now availa
 ## A few highlights we are proud of
 
 - No license is needed to use the client! It is download and go.
-- The client is cross-platform. It works on [MacOS](https://github.com/agrc/api-client/releases/download/v1.6.0/UGRC.API.Client-1.6.0-x64.dmg) and [Windows](https://github.com/agrc/api-client/releases/download/v1.6.0/ugrc-api-client-1.6.0-win32-setup.exe).
+- The client is cross-platform. It works on [MacOS]({% link data/address-geocoders-locators/index.html %}#OfficialClient) and [Windows]({% link data/address-geocoders-locators/index.html %}#OfficialClient).
 - The client is evergreen. The app will automatically download updates as soon as they are available. Every time the application restarts, it will be the best, most recent version.
 - You only need to create one API key ever. Did your IP address change? No problem! Your access will not be interrupted.
 - API keys are validated before the geocoding task starts. The create a key, try to geocode, fail, read the error message, create a new key, succeed loop is broken!
