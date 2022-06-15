@@ -15,8 +15,8 @@ categories: []
 
 ![Maps on the Hill February 15, 2022](moth2022.png){: .outline loading="lazy" }
 
-- [Map Book Calendar]([https://www.dropbox.com/s/9jhfgwma8v6jdbu/Calendar.pdf?dl=0](https://drive.google.com/file/d/1SbkAqKBmDsT_tINy-poxLy5MtK8VWRLD/view?usp=sharing)
-- [Photos][(https://drive.google.com/drive/folders/1-wuzob3nLQe3G3afUql3g5ubd3goFPWj?usp=sharing](https://drive.google.com/drive/folders/16WD6rrPGTrmRYPMSk-S99oXOI7jASoh_?usp=sharing)
+- [Map Book Calendar](https://drive.google.com/file/d/1SbkAqKBmDsT_tINy-poxLy5MtK8VWRLD/view?usp=sharing)
+- [Photos](https://drive.google.com/drive/folders/16WD6rrPGTrmRYPMSk-S99oXOI7jASoh_?usp=sharing)
 {: .dotless .no-padding}
   </div>
 
