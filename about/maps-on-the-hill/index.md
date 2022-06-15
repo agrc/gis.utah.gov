@@ -14,7 +14,7 @@ categories: []
   
 #### Maps on the Hill 2022
 
-![Maps on the Hill February 15, 2022](MOTH2022.jpg){: .outline loading="lazy" }
+![Maps on the Hill February 15, 2022](moth2022.jpg){: .outline loading="lazy" }
 
 - [Map Book Calendar](https://drive.google.com/file/d/1SbkAqKBmDsT_tINy-poxLy5MtK8VWRLD/view?usp=sharing)
 - [Photos](https://drive.google.com/drive/folders/16WD6rrPGTrmRYPMSk-S99oXOI7jASoh_?usp=sharing)
