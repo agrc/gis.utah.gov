@@ -11,6 +11,18 @@ categories: []
 <div class="flex flex--row flex--wrap flex--around" markdown="1">
 
   <div markdown="1">
+  
+#### Maps on the Hill 2022
+
+![Maps on the Hill February 15, 2022](moth2022.jpg){: .outline loading="lazy" }
+
+- [Map Book Calendar](https://drive.google.com/file/d/1SbkAqKBmDsT_tINy-poxLy5MtK8VWRLD/view?usp=sharing)
+- [Photos](https://drive.google.com/drive/folders/16WD6rrPGTrmRYPMSk-S99oXOI7jASoh_?usp=sharing)
+{: .dotless .no-padding}
+  </div>
+
+  <div markdown="1">
+
 #### Maps on the Hill 2020
 
 ![Maps on the Hill February 25, 2020](moth2020.png){: .outline loading="lazy" }
@@ -32,6 +44,7 @@ categories: []
   </div>
 
   <div markdown="1">
+
 #### Maps on the Hill 2018
 
 ![Maps on the Hill January 30, 2018](moth2018.png){: .outline loading="lazy" }
@@ -41,6 +54,7 @@ categories: []
 {: .dotless .no-padding}
   </div>
   <div markdown="1">
+
 #### Maps on the Hill 2017
 
 ![Maps on the Hill January 25, 2017](moth2017.png){: .outline loading="lazy" }
@@ -49,6 +63,7 @@ categories: []
 {: .dotless .no-padding }
   </div>
   <div markdown="1">
+
 #### Maps on the Hill 2016
 
 ![Maps on the Hill March 1, 2016](moth2016.png){: .outline loading="lazy" }
@@ -58,6 +73,7 @@ categories: []
 {: .dotless .no-padding }
   </div>
   <div markdown="1">
+
 #### Maps on the Hill 2015
 
 ![Maps on the Hill January 28, 2015](moth2015.png){: .outline loading="lazy" }
@@ -67,6 +83,7 @@ categories: []
 {: .dotless .no-padding }
   </div>
   <div markdown="1">
+
 #### Maps on the Hill 2014
 
 ![Maps on the Hill January 29, 2014](moth2014.png){: .outline loading="lazy" }
@@ -76,6 +93,7 @@ categories: []
 {: .dotless .no-padding }
   </div>
   <div markdown="1">
+
 #### Maps on the Hill 2013
 
 ![Maps on the Hill January 28, 2013](moth2013.png){: .outline loading="lazy" }
@@ -84,6 +102,7 @@ categories: []
 {: .dotless .no-padding }
   </div>
   <div markdown="1">
+
 #### Maps on the Hill 2012
 
 ![Maps on the Hill February 29, 2012](moth2012.png){: .outline loading="lazy" }
@@ -91,4 +110,5 @@ categories: []
 - [Map Book]({% link downloads/2012MapsOnTheHill_bookletSM.pdf %})
 {: .dotless .no-padding }
   </div>
+
 </div>
