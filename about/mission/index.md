@@ -15,4 +15,4 @@ The Utah Geospatial Resource Center (UGRC) provides a wide range of Geographic I
 
 Other services include stewardship of the State Geographic Information Database (SGID), facilitation of programs and activities to implement GIS technology across the state, and coordination of GIS policy development and implementation activities.
 
-UGRC also provides consulting services to federal, state, and local government and other organizations, including GIS analysis and application development, GIS training courses, and map and web service development and hosting.
+UGRC also provides consulting services to federal, state, and local government and other organizations, including GIS analysis and application development, and map and web service development and hosting.
