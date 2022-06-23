@@ -25,6 +25,18 @@ FireStations:
     - October 2020 - Updates to Weber County fire stations
     - June 2013
     - August 2011
+FireResponseAreas:
+  hub:
+    name: Utah Fire Response Areas
+    item_id: xxxxxxxxxxxxxxxxxxx
+  updates:
+    - June 22, 2022 - Initial version of data
+EMSResponseAreas:
+  hub:
+    name: Utah EMS Response Areas
+    item_id: xxxxxxxxxxxxxxxxxxx
+  updates:
+    - June 22, 2022 - Initial version of data
 LawEnforcement:
   hub:
     name: Utah Law Enforcement
@@ -121,7 +133,51 @@ boundaries (where appropriate) are included for correctional, fire, law enforcem
   </div>
   {% include packagedata.html
   name="FireStations"
-  info=page.FireStations %}
+  info=page.FireStations
+  %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="FireResponseAreas">Fire Response Areas</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/fire_areas_256.png %}" alt="Fire Response Areas"
+      loading="lazy" />
+    <p>Fire Response Areas in Utah represent the primary agency, typical a local fire department, that will respond to
+      fire-related emergencies at a given location. The dataset was created to provide response recommendations for the
+      Next-Generation 911 system and was compiled from a variety of data sources. The response areas represent career
+      and volunteer fire departments at a variety of levels including local, municipal, county, state, and federal
+      agencies, as well as a few private or industrial organizations. The dataset was built from computer-aided dispatch
+      (CAD) data within the state, tax entities, municipal boundaries, county boundaries, land ownership, inputs from Utah
+      Forestry, Fire, and State Lands (FFSL), and other datasets.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html
+  name="FireResponseAreas"
+  info=page.FireResponseAreas
+  %}
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="EMSResponseAreas">EMS Response Areas</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/ems_areas_256.png %}" alt="EMS Response Areas"
+      loading="lazy" />
+    <p>EMS Response Areas in Utah represent the primary agency that will respond to medical emergencies at a given location.
+      The dataset was created to provide response recommendations for the Next-Generation 911 system and was compiled from a
+      variety of data sources. The response areas represent a variety of service levels (paramedic, advanced EMT, with or without
+      transport capability, etc.), but generally include 911 scene response. The data was compiled using written descriptions
+      from the licensing database of the Bureau of Emergency Medical Services and Preparedness <a href="https://bemsp.utah.gov/">(BEMSP)</a>,
+      which is part of the Utah Department of Health and Human Services' (DHHS). In some instances, the BEMSP data was incomplete
+      or the written descriptions were inaccurate, contradictory, ambiguous, or failed to close.  To make the data more complete,
+      computer-aided dispatch (CAD) data from within the state was used to resolve conflicts, fill in gaps, and improve completeness.</p>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+  </div>
+  {% include packagedata.html
+  name="EMSResponseAreas"
+  info=page.EMSResponseAreas
+  %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
