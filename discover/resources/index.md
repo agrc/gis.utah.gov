@@ -65,7 +65,7 @@ The pre-2018 `NAIP` layers have a stated horizontal positional accuracy of 5 met
 
 {%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='send an email to' hide-punctuation=true %}{% endcapture %}
 
-Interested in using UGRC's Web Mercator services in your web maps? Take a look at [this page]({% link developer/base-maps/discover/index.md %}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-work link**. To do this {{ contact }} and provide your web map URL domains.
+Interested in using UGRC's Web Mercator services in your web maps? Take a look at [this page]({% link developer/base-maps/discover/index.md %}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-word link**. To do this {{ contact }} and provide your web map URL domains.
 
 ### Adding a WMS Service to CAD
 {: .text-left}
