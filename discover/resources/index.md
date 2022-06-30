@@ -34,7 +34,7 @@ ArcGIS Pro seems to load an appropriate transformation, but you may need to set 
 
 Stated horizontal accuracy of the `Google` imagery is expected to achieve or exceed one meter (CE90) in most areas without significant vertical relief. You can generally expect higher precision in urban areas where existing supplemental ground control was more abundant.
 
-The `Hexagon` imagery had stated horizontal accuracies of 1.07 and 2.6 meters (CE90), respectively.
+The `Hexagon` imagery have a stated horizontal accuracies of 1.07 and 2.6 meters (CE90), respectively.
 
 The pre-2018 `NAIP` layers have a stated horizontal positional accuracy of 5 meters, while the `2018 and post-2018 NAIP` products have a horizontal positional accuracy of 4 meters.
 
