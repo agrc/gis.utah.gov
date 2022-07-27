@@ -23,7 +23,7 @@ require([
 
   const layer = new WebTileLayer({
     urlTemplate:
-      "https://discover.agrc.utah.gov/login/path/dragon-visitor-honey-perfume/tiles/lite_basemap/{level}/{col}/{row}"
+      " https://discover.agrc.utah.gov/login/path/bottle-apple-crater-oberon/tiles/lite_basemap/{level}/{col}/{row}"
   });
 
   map.add(layer);
