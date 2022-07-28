@@ -31,4 +31,4 @@ Our widget library, and most all of the work that we do, is open source and acce
 
 ### ArcGIS Tools
 
-We have a few publicly distributed ArcGIS Tools. Tools, in the form of a toolbox or add-in, allow users to bring the convenience of our API and web widgets in to the desktop GIS environment. You can [batch geocode](https://github.com/agrc/geocoding-toolbox) addresses against our [geospatial web APIs]({% link developer/web-services/index.md %}) to get the best matches possible or [zoom to township, range, section polygons](https://github.com/agrc/trs-zoom-addin) to name a few.
+We have a few publicly distributed ArcGIS Tools. Tools, in the form of a toolbox or add-in, allow users to bring the convenience of our API and web widgets in to the desktop GIS environment. You can [batch geocode](https://github.com/agrc/masquerade#batch-geocoding) addresses against our [geospatial web APIs]({% link developer/web-services/index.md %}) to get the best matches possible or [zoom to township, range, section polygons](https://github.com/agrc/trs-zoom-addin) to name a few.
