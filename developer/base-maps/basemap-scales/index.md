@@ -11,7 +11,7 @@ categories: []
 ---
 The base map services that we offer fall in between the world view (scale 0) and the much more zoomed in manhole cover (scale 20). The table below describes the base map that we offer with it's min and max zoom levels. The table below that describes the scale to which that zoom level is equivalent to.
 
-Handling these different scales requires some extra effort within the Esri JavaScript API. In order to make these services accessible and easy to work with we have created the [layer selector](https://www.npmjs.com/package/@agrc/layer-selector) widget.
+Handling these different scales requires some extra effort within the Esri JavaScript API. In order to make these services accessible and easy to work with we have created the [layer selector](https://www.npmjs.com/package/@ugrc/layer-selector) widget.
 
 For a list of base maps and their corresponding scale levels [log into your discover account](https://discover.agrc.utah.gov/layers).
 

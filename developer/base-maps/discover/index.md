@@ -101,4 +101,4 @@ require([
 });
 ```
 
-UGRC has a widget called [layer-selector](https://www.npmjs.com/package/@agrc/layer-selector) that handles these issues as well as makes working with basemaps more streamlined. It’s main purpose is to provide users the ability to quickly switch between basemaps and toggle associated overlays.
+UGRC has a widget called [layer-selector](https://www.npmjs.com/package/@ugrc/layer-selector) that handles these issues as well as makes working with basemaps more streamlined. It’s main purpose is to provide users the ability to quickly switch between basemaps and toggle associated overlays.
