@@ -21,9 +21,9 @@ A great place to get started with web mapping javascript and our widgets is the 
 
 A few key pieces of functionality that our widgets offer are:
 
-- [**Geocoding addresses**](https://www.npmjs.com/package/@agrc/dart-board) - This widget provides the UI/UX and code to allow a user to input an address and provides the developer with the coordinates for the address.
-- [**Finding places**](https://www.npmjs.com/package/@agrc/sherlock) - With this widgets, a developer can quickly setup type ahead functionality for any layer in the SGID. The geometry for the selected element is returned. Popular uses for this are, Township, Range and Section queries, and other political boundary queries.
-- **UGRC Base maps** - You can also quickly add common mapping elements, like a map and [layer selector](https://www.npmjs.com/package/@agrc/layer-selector), to your website or blog.
+- [**Geocoding addresses**](https://www.npmjs.com/package/@ugrc/dart-board) - This widget provides the UI/UX and code to allow a user to input an address and provides the developer with the coordinates for the address.
+- [**Finding places**](https://www.npmjs.com/package/@ugrc/sherlock) - With this widgets, a developer can quickly setup type ahead functionality for any layer in the SGID. The geometry for the selected element is returned. Popular uses for this are, Township, Range and Section queries, and other political boundary queries.
+- **UGRC Base maps** - You can also quickly add common mapping elements, like a map and [layer selector](https://www.npmjs.com/package/@ugrc/layer-selector), to your website or blog.
 
 Our widget library, and most all of the work that we do, is open source and accepting contributions. This easily allows for other developers to make improvements to the code. Browse our [GitHub organization](https://github.com/agrc) and fork the code!
 
