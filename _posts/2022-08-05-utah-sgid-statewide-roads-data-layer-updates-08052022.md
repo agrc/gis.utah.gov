@@ -30,8 +30,6 @@ New roads were added and road names and address ranges were updated for the foll
 - **Washington County:** Obtained roads data on 07/21/2022. Previous update was on 06/15/2022.
 - **Weber County:** Obtained roads data on 07/15/2022. Previous update was on 06/15/2022.
 
-Note: Data was requested but not received for Daggett County.
-
 #### UDOT Route System
 
 - Visit the [SGID LRS page]({% link data/transportation/roads-system/index.html %}#HighwayLinearReferencingSystemRoutes) for information on UDOT's Advanced LRS (ALRS) data.
