@@ -43,13 +43,18 @@ abstract=abstract %}
     <h3 id="NAIP2021">2021</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p>UGRC has the preliminary statewide <a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-national-agriculture-imagery-program-naip">
-      National Agricultural Imagery Program</a>
-      (NAIP) 3-band aerial photography in natural color (RGB) and color infrared (CIR) for Utah in <code>Mr. Sid</code> county mosaics.
-      The imagery is .6-meter (60 centimeter) resolution and was collected in the summer and fall of 2021.
-      The date the photography was flown can be found in the <code>IDATE</code> field in the associated shapefile.
-      Be aware some of the larger counties (ex. San Juan, Millard, Tooele and Box Elder) are no longer split
-      into multiple parts and their file size is upwards of 4 to 7 GB. The images have a UTM NAD83 meters projection.
+    <p>UGRC has statewide <a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-national-agriculture-imagery-program-naip">
+      National Agricultural Imagery Program</a> (NAIP) aerial photography for Utah. The imagery is .6 meter (60 centimeter)
+      resolution and was collected in the summer and fall of 2021. Although the NAIP imagery collection is typically 4-band
+      imagery, we have separated the Red, Green, and Blue bands from the Infrared band. To merge the RGB images with the
+      single infrared band to create a 4-band image you can use the ArcGIS Composite Bands (Data Management) tool, the
+      Image Analysis window to add a <a href="{% link images/FunctionTemplateEditor.jpg %}">Function Chain</a>, or
+      create a <a href="{% link images/FunctionChain.jpg %}">Reference Mosaic</a>. 3-band <code>Mr. Sid</code> RGB and CIR (NIR-R-G) county
+      mosaics are also available.</p>
+    <p>The date the photography was flown can be found in the <code>SrcImgDate</code> field of the <a
+        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2021/NAIP2021_Index.zip">NAIP2021
+        Index shapefile</a>, in the <code>.txt</code> metadata files after <code>Calendar_Date</code>, or the
+      <code>SDATE</code> field of the county mosaics shapefile. The images have a UTM NAD83 meters projection.
     </p>
 
     <div class="grid__col grid__col--1-of-2">
@@ -83,10 +88,12 @@ abstract=abstract %}
       Image Analysis window to add a <a href="{% link images/FunctionTemplateEditor.jpg %}">Function Chain</a>, or
       create a <a href="{% link images/FunctionChain.jpg %}">Reference Mosaic</a>. 3-band <code>Mr. Sid</code> RGB and CIR (NIR-R-G) county
       mosaics are also available.</p>
-    <p>The date the photography was flown can be found in the <code>SrcImgDate</code> field of the <a
-        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Index.zip">NAIP2018
-        Index shapefile</a>, in the <code>.txt</code> metadata files after <code>Calendar_Date</code>, or the
-      <code>SDATE</code> field of the county mosaics shapefile. The images have a UTM NAD83 meters projection.
+    <p>The date the photography was flown can be found in the <code>IDATE</code>, <code>SDATE</code> and <code>EDATE</code> fields of the <a
+        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2021/NAIP2021_FlightDates.zip">NAIP2021
+        Flight Dates shapefile</a>, in the <code>.xml</code> metadata files after <code>Calendar_Date</code>, or the
+      <code>SDATE</code> field of the county mosaics shapefile. A 
+      <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2021/NAIP2021_Index.zip">NAIP2021
+        Index shapefile</a> is also available. The images have a UTM NAD83 meters projection.
     </p>
 
     <div class="grid__col grid__col--1-of-2">
