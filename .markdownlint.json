@@ -1,0 +1,4 @@
+{
+    "MD013": false,
+    "MD022": false //Disable space below headings for stuff like {: .text-left}
+}

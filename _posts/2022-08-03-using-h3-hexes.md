@@ -1,0 +1,82 @@
+---
+title: 'Aggregating and Analyzing Point Data with H3 Hexes'
+author:
+  display_name: Jake Adams
+  email: jdadams@utah.gov
+date: 2022-08-03 12:20:21
+categories:
+  - Featured
+  - Developer
+tags:
+  - data
+  - analysis
+---
+
+There are many ways to map point data into areas to evaluate the spatial trends of a phenomenon. Census tracts or blocks are popular targets for aggregating point data, allowing you to compare your data to census data.
+
+However, administrative boundaries like census tracts, city boundaries, or political districts are inherently irregular. They don't "tile the plane" in a standard, repeating pattern that allows you to see how a dataset changes over space.
+
+Because [hexagons are the bestagons](https://www.youtube.com/watch?v=thOifuHs6eY), many people create hex grids that cover their area of interest and then aggregate their point data to these hexes.
+
+However, these custom hex grids are usually project-specific and **don't conform to any sort of common grid**, making it difficult to pull in other hexed data. And while hexagons tile a plane beautifully, you can't tesselate them to create a perfect larger hexagon, which means **it's difficult to create a larger or smaller grid** that relates to your original grid. And as anyone who's tried to aggregate a ton of points into a ton of hexagons can tell you, **spatial joins can be slow**.
+
+## H3: The Solution
+{: .text-left}
+
+Uber created and open-sourced the [H3 geospatial indexing system](https://h3geo.org/) to solve these problems. The grid used by H3 is a mathematically-defined series of hexagons arranged in tiers or resolutions such that each hexagon _logically_ completely contains seven child hexagons that are _geographically_ mostly contained by the larger hexagon.
+
+![H3 Hexagons at various scales]({% link images/h3_hexes.png %})
+{: .flex .flex--center}
+
+### The Basics
+{: .text-left}
+
+To understand how H3 solves these problems, we need to understand how it works. Coming from the GIS world, we think of the "point in polygon" problem spatially: search to see if the given point is inside the given area. To understand H3, we need to shift our thinking. **H3 takes a lat/long and assigns an ID that corresponds to a mathematically-defined hex.** There's nothing inherently spatial about it, it's all just math. The output is just a number.
+
+### Common Grids
+{: .text-left}
+
+As an open-source system, H3 has become a sort of de facto standard. Anyone can use it, and anyone can take someone else's data with H3 grid ids and compare it with their own. While it's been around for a few years, there's a definite "flavor of the month" aspect at play so it remains to be seen how widely it will be adopted.
+
+However, even if it doesn't become the overwhelming global standard, the H3 system can still be useful for **standardizing analyses across projects within an organization.** If we at UGRC do a project for one state agency with the grid, it would be easy to pull that data into another project down the road.
+
+### Scaling Grid Resolution
+{: .text-left}
+
+It is mathematically impossible <sup>(citation needed)</sup> to create a larger hexagon from smaller hexagons (assuming we're using regular hexagons), which makes creating a perfect _geographical_ hierarchy of hexes impossible. However, H3 makes a _logical_ hierarchy by rotating the larger, parent hex to cover as much of its seven children as possible, as visible in the image above. The H3 [indexing page](https://h3geo.org/docs/highlights/indexing) has more detail on how this works.
+
+Using these multiple scales (which H3 calls resolutions), we can **create hexes at multiple scales to aggregate our data to larger and larger areas.** With these, we can view trends at the neighborhood, city, or county level. We can also create web maps that allow us to drill down from general trends to neighborhood or block level to see what areas contribute the most.
+
+### Performance
+{: .text-left}
+
+As noted above, H3 use some fancy mathematics under the hood to assign hex ids instead of doing spatial analysis. Written in C and exposed through a variety of bindings in other languages, these calculations are **pretty darn fast at figuring out what hex cell a point belongs in.**
+
+For example, I used `%timeit` to  assign a resolution 9 ID to all 1,339,635 of our [address points]({% link data/location/address-data/index.html %}) (after projecting them to WGS84 to get direct access to lat/long in the SHAPE field):
+
+```python
+def assign_h3(df, resolution):
+    df[f'h3_{resolution}'] = df.apply(lambda row: h3.h3_to_string(h3.geo_to_h3(row['SHAPE']['y'], row['SHAPE']['x'], resolution)), axis=1)
+
+addr_df = pd.DataFrame.spatial.from_featureclass(r'C:\gis\Projects\H3\H3.gdb\address_points_20220727_wgs84')
+
+%timeit assign_h3(addr_df, 9)
+```
+
+`> 23.8 s ± 377 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)`
+
+24 Seconds for 1.3 million points. That's fast 🏃‍♀️💨
+
+Note: To get this speed, you'll need to use the `h3.api.numpy_int` API as noted in the `h3-py` [documentation](https://uber.github.io/h3-py/api_comparison)
+
+## Mapping H3 Hexes
+{: .text-left}
+
+Ok, so we can assign a hex id to point data quickly and easily. But, at some point, we need a spatial representation of the hexes if we're going to map it out.
+
+The H3 API provides the `polyfill` method for identifying all hex IDs whose _centroids_ are within a polygon along with the `h3_to_geo_boundary` method for returning the polygon corresponding to a specifc hex ID. In the code below, we
+
+```python
+1 state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'C:\Users\jdadams\AppData\Roaming\Esri\ArcGISPro\Favorites\opensgid.agrc.utah.gov.sde\opensgid.boundaries.state_boundary')
+2 buffered = state_boundary_df.iloc[1, -1].buffer(5000)
+```
