@@ -10,6 +10,7 @@ categories:
 tags:
   - data
   - analysis
+  - python
 ---
 
 There are many ways to map point data into areas to evaluate the spatial trends of a phenomenon. Census tracts or blocks are popular targets for aggregating point data, allowing you to compare your data to census data.
