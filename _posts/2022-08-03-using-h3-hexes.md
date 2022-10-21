@@ -74,9 +74,41 @@ Note: To get this speed, you'll need to use the `h3.api.numpy_int` API as noted 
 
 Ok, so we can assign a hex id to point data quickly and easily. But, at some point, we need a spatial representation of the hexes if we're going to map it out.
 
-The H3 API provides the `polyfill` method for identifying all hex IDs whose _centroids_ are within a polygon along with the `h3_to_geo_boundary` method for returning the polygon corresponding to a specifc hex ID. In the code below, we
+The H3 API provides the `polyfill` method for identifying all hex IDs whose _centroids_ are within a polygon along with the `h3_to_geo_boundary` method for returning the polygon corresponding to a specific hex ID. In the code below we first buffer the state boundary so that we get all the hexes that cover the state. Then, we get the hex ids, get the polygons associated with those ids as geojson, and convert the geojson to a spatially-enabled dataframe. Finally, we write that dataframe out to disk.
 
 ```python
-1 state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'C:\Users\jdadams\AppData\Roaming\Esri\ArcGISPro\Favorites\opensgid.agrc.utah.gov.sde\opensgid.boundaries.state_boundary')
-2 buffered = state_boundary_df.iloc[1, -1].buffer(5000)
+state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'C:\Users\jdadams\AppData\Roaming\Esri\ArcGISPro\Favorites\opensgid.agrc.utah.gov.sde\opensgid.boundaries.state_boundary')
+
+#: We only want the state boundary (the second polygon in the feature class), not the exterior mask
+#: Also, the SHAPE field is the last item in the column index
+buffered = state_boundary_df.iloc[1, -1].buffer(5000)
+buffered_df = pd.DataFrame.spatial.from_df(
+                pd.DataFrame({'SHAPE': [buffered]}), 
+                geometry_column='SHAPE', sr=26912
+                )
+
+#: Project our polygon to WGS84 and convert to geojson for the H3 analysis
+buffered_df.spatial.project(4326)
+geojson_dict = json.loads(buffered_df.spatial.to_featureset().to_geojson)
+
+#: Get both the hex numbers and their hexadecimal representation in string form
+#: We have to specify the geometry from the first feature in the geosjon dict, even though we only have 
+#: one feature in there
+hexes = h3.polyfill(geojson_dict['features'][0]['geometry'], 6, geo_json_conformant=True)
+str_hexes = [h3.h3_to_string(h) for h in hexes]
+
+#: Create a new spatially-enabled data frame by calling h3_to_geo_boundary and creating a Geometry object
+#: in one fell swoop
+#: And yes, it's generally bad form to assign a lambda function a name, but this breaks the code up
+polygoniser = lambda hex_id: arcgis.geometry.Geometry({
+                'rings': [h3.h3_to_geo_boundary(hex_id, geo_json=True)],
+                'spatialReference': {'wkid': 4326}
+                })
+hexes_df = pd.DataFrame.spatial.from_df(
+                pd.DataFrame({'hex_id': str_hexes, 'SHAPE': list(map(polygoniser, hexes))}),
+                geometry_column='SHAPE', sr=4326
+                )
+
+#: Finally, write it out
+hexes_df.spatial.to_featureclass(r'C:\gis\Projects\H3\H3.gdb\state_h3_6_wgs')
 ```
