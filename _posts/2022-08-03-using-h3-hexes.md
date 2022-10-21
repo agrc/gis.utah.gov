@@ -43,7 +43,7 @@ However, even if it doesn't become the overwhelming global standard, the H3 syst
 ### Scaling Grid Resolution
 {: .text-left}
 
-It is mathematically impossible <sup>(citation needed)</sup> to create a larger hexagon from smaller hexagons (assuming we're using regular hexagons), which makes creating a perfect _geographical_ hierarchy of hexes impossible. However, H3 makes a _logical_ hierarchy by rotating the larger, parent hex to cover as much of its seven children as possible, as visible in the image above. The H3 [indexing page](https://h3geo.org/docs/highlights/indexing) has more detail on how this works.
+It is mathematically impossible<sup>1</sup> to create a larger hexagon from smaller hexagons, which makes creating a perfect _geographical_ hierarchy of hexes impossible. However, H3 makes a _logical_ hierarchy by rotating the larger, parent hex to cover as much of its seven children as possible, as visible in the image above. The H3 [indexing page](https://h3geo.org/docs/highlights/indexing) has more detail on how this works.
 
 Using these multiple scales (which H3 calls resolutions), we can **create hexes at multiple scales to aggregate our data to larger and larger areas.** With these, we can view trends at the neighborhood, city, or county level. We can also create web maps that allow us to drill down from general trends to neighborhood or block level to see what areas contribute the most.
 
@@ -77,7 +77,7 @@ Ok, so we can assign a hex id to point data quickly and easily. But, at some poi
 The H3 API provides the `polyfill` method for identifying all hex IDs whose _centroids_ are within a polygon along with the `h3_to_geo_boundary` method for returning the polygon corresponding to a specific hex ID. In the code below we first buffer the state boundary so that we get all the hexes that cover the state. Then, we get the hex ids, get the polygons associated with those ids as geojson, and convert the geojson to a spatially-enabled dataframe. Finally, we write that dataframe out to disk.
 
 ```python
-state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'C:\Users\jdadams\AppData\Roaming\Esri\ArcGISPro\Favorites\opensgid.agrc.utah.gov.sde\opensgid.boundaries.state_boundary')
+state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'C:\gis\Projects\H3\opensgid.agrc.utah.gov.sde\opensgid.boundaries.state_boundary')
 
 #: We only want the state boundary (the second polygon in the feature class), not the exterior mask
 #: Also, the SHAPE field is the last item in the column index
@@ -99,7 +99,7 @@ str_hexes = [h3.h3_to_string(h) for h in hexes]
 
 #: Create a new spatially-enabled data frame by calling h3_to_geo_boundary and creating a Geometry object
 #: in one fell swoop
-#: And yes, it's generally bad form to assign a lambda function a name, but this breaks the code up
+#: And yes, it's generally bad form to assign a lambda function a name, but this helps break the code up
 polygoniser = lambda hex_id: arcgis.geometry.Geometry({
                 'rings': [h3.h3_to_geo_boundary(hex_id, geo_json=True)],
                 'spatialReference': {'wkid': 4326}
@@ -112,3 +112,15 @@ hexes_df = pd.DataFrame.spatial.from_df(
 #: Finally, write it out
 hexes_df.spatial.to_featureclass(r'C:\gis\Projects\H3\H3.gdb\state_h3_6_wgs')
 ```
+
+If geopandas and geojson is your thing, Guilherme M. Iablonovski has a [write-up](https://towardsdatascience.com/how-to-download-ubers-hexagonal-grid-with-python-3140fe95e19a) on Medium for this same process without any Esri formats or libraries. My code above is a translation of his process into Esri-land.
+
+## Notes
+
+1- Consider a regular polygon (a polygon where all interior angles have the same measurement and all sides are equal, like a square). If you want to place two polygons next to each other so that their outer edges create a straight line, they must have interior angles that, when placed next to each other, add up to 180 degrees.
+
+For example, place two squares next to each other. Their top edges create a straight line above both squares, and the sum of the two interior angles that are adjacent to each other is 180 degrees (90 + 90). Or, place three equilateral triangles next to each other so that their three points all touch. The three 60 degree interior angles all add up to 180 degrees, and you have a flat line on top.
+
+A regular hexagon has interior angles of 120 degrees. No matter how you rotate them, there is no way to place two hexagons next to each other so that their two interior angles add up to 180. Ergo, there is no way to place two hexagons next to each other so that any of the resulting boundaries create a straight line.
+
+Because of this inability to form a straight line when we tile (or tesselate) hexagons together, we cannot create a larger, regular polygon (hexagon or otherwise) from hexagons.
