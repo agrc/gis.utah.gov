@@ -16,6 +16,11 @@ tags:
 ![Address points per supermarket]({% link images/h3_supermarkets.png %})
 {: .flex .flex--center}
 
+## H3: The Solution
+{: .text-left}
+
+Uber created and open-sourced the [H3 geospatial indexing system](https://h3geo.org/) to solve these problems. The grid used by H3 is a mathematically-defined series of hexagons (and a handful of pentagons to handle the earth's curvature) arranged in tiers or resolutions such that each hexagon _logically_ completely contains seven child hexagons that are _geographically_ mostly contained by the larger hexagon.
+
 There are many ways to map point data into areas to evaluate the spatial trends of a phenomenon. Census tracts or blocks are popular targets for aggregating point data, allowing you to compare your data to census data.
 
 However, administrative boundaries like census tracts, city boundaries, or political districts are inherently irregular. They don't "tile the plane" in a standard, repeating pattern that allows you to see how a dataset changes over space.
@@ -23,11 +28,6 @@ However, administrative boundaries like census tracts, city boundaries, or polit
 Because [hexagons are the bestagons](https://www.youtube.com/watch?v=thOifuHs6eY), many people create hex grids that cover their area of interest and then aggregate their point data to these hexes.
 
 However, these custom hex grids are usually project-specific and **don't conform to any sort of common grid**, making it difficult to pull in other hexed data. And while hexagons tile a plane beautifully, you can't tesselate them to create a perfect larger hexagon, which means **it's difficult to create a larger or smaller grid** that relates to your original grid. And as anyone who's tried to aggregate a ton of points into a ton of hexagons can tell you, **spatial joins can be slow**.
-
-## H3: The Solution
-{: .text-left}
-
-Uber created and open-sourced the [H3 geospatial indexing system](https://h3geo.org/) to solve these problems. The grid used by H3 is a mathematically-defined series of hexagons (and a handful of pentagons to handle the earth's curvature) arranged in tiers or resolutions such that each hexagon _logically_ completely contains seven child hexagons that are _geographically_ mostly contained by the larger hexagon.
 
 ![H3 Hexagons at various scales]({% link images/h3_hexes.png %})
 {: .flex .flex--center}
@@ -48,6 +48,8 @@ However, even if it doesn't become the overwhelming global standard, the H3 syst
 {: .text-left}
 
 It is mathematically impossible[^1] to create a larger hexagon from smaller hexagons, which means we can't create a _geographical_ hierarchy of hexes where one level of hexes perfectly cover the same area as a single larger hex. However, H3 makes a _logical_ hierarchy by rotating the larger, parent hex to cover as much of its seven children as possible, as visible in the image above. The H3 [indexing page](https://h3geo.org/docs/highlights/indexing) has more detail on how this works.
+
+The important point is that an individual hex ID contains the IDs of the hexes "above" it in the hierarchy, kind of like how census GeoIDs contain the block, tract, county, and state codes. This makes it easy to traverse up to a larger hex without re-calculating the IDs.
 
 Using these multiple scales (which H3 calls resolutions), we can **create hexes at multiple scales to aggregate our data to larger and larger areas.** With these, we can view trends at the neighborhood, city, or county level. We can also create web maps that allow us to drill down from general trends to neighborhood or block level to see what areas contribute the most.
 
