@@ -64,7 +64,7 @@ For example, I used `%timeit` to  assign a resolution 9 ID to all 1,339,635 of o
 def assign_h3(df, resolution):
     df[f'h3_{resolution}'] = df.apply(lambda row: h3.h3_to_string(h3.geo_to_h3(row['SHAPE']['y'], row['SHAPE']['x'], resolution)), axis=1)
 
-addr_df = pd.DataFrame.spatial.from_featureclass(r'C:\gis\Projects\H3\H3.gdb\address_points_20220727_wgs84')
+addr_df = pd.DataFrame.spatial.from_featureclass(r'H3\H3.gdb\address_points_20220727_wgs84')
 
 %timeit assign_h3(addr_df, 9)
 ```
@@ -90,7 +90,7 @@ First, we need the actual polygons of the hexes themselves. The H3 API provides 
 In the code below we first buffer the state boundary so that we get all the hexes that cover the state. Then, we get the hex ids, get the polygons associated with those ids as geojson, and convert the geojson to a spatially-enabled dataframe. Finally, we write that dataframe out to disk.
 
 ```python
-state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'C:\gis\Projects\H3\opensgid.agrc.utah.gov.sde\opensgid.boundaries.state_boundary')
+state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'H3\opensgid.agrc.utah.gov.sde\opensgid.boundaries.state_boundary')
 
 #: Buffer the state boundary by 5km
 #: Row index 0 is a mask outside the state boundary, index 1 is the boundary itself.
@@ -125,7 +125,7 @@ hexes_df = pd.DataFrame.spatial.from_df(
                 )
 
 #: Finally, write it out
-hexes_df.spatial.to_featureclass(r'C:\gis\Projects\H3\H3.gdb\state_h3_6_wgs')
+hexes_df.spatial.to_featureclass(r'H3\H3.gdb\state_h3_6_wgs')
 ```
 
 If geopandas and geojson is your thing, Guilherme M. Iablonovski has a [write-up](https://towardsdatascience.com/how-to-download-ubers-hexagonal-grid-with-python-3140fe95e19a) on Medium for this same process without any Esri formats or libraries. My code above is a translation of his process into Esri-land.
@@ -137,7 +137,7 @@ Now that we've got the boundaries, we can do our analysis and map it out. First,
 
 ```python
 #: Load the open source places, project to lat/long, and get hex ids at level 6
-osp_points_df = pd.DataFrame.spatial.from_featureclass(r'C:\gis\Projects\H3\opensgid.agrc.utah.gov.sde\opensgid.society.open_source_places')
+osp_points_df = pd.DataFrame.spatial.from_featureclass(r'H3\opensgid.agrc.utah.gov.sde\opensgid.society.open_source_places')
 osp_points_df.spatial.project(4326)
 assign_h3(osp_points_df, 6)
 
