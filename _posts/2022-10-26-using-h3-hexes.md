@@ -3,7 +3,7 @@ title: 'Aggregating and Analyzing Point Data with H3 Hexes and Pandas'
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2022-10-25 12:20:21
+date: 2022-10-26 08:00:00
 categories:
   - Featured
   - Developer
