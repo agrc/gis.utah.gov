@@ -201,6 +201,12 @@
               {% include icon_social.html vimeo=true %}
             </a>
           </li>
+          {%- endif -%} {%- if site.podcast_username -%}
+          <li>
+            <a class="clean" title="UGRC podcast account" href="https://{{ site.podcast_username }}.buzzsprout.com">
+              {% include icon_social.html podcast=true %}
+            </a>
+          </li>
           {%- endif -%}
         </ul>
         <div class="clearfix"></div>

@@ -9,6 +9,7 @@ twitter_username: MapUtah
 github_username: agrc
 facebook_username: UtahAGRC
 vimeo_username: utahagrc
+podcast_username: utahgeospatialpodcast
 permalink: /:title/
 production_url: "https://gis.utah.gov"
 livereload: true
