@@ -154,4 +154,7 @@
 /register                                                                                                 /                                                                             301
 /mapserv                                                                                                  /developer/                                                                   301
 /datta                                                                                                    /data/                                                                        301
-/presentations                                                                                            https://agrc.github.io/Presentations                                                     301
+/presentations                                                                                            https://agrc.github.io/Presentations                                          301
+/maps                                                                                                     https://atlas.utah.gov                                                        301
+/map                                                                                                      https://atlas.utah.gov                                                        301
+/api                                                                                                      https://api.mapserv.utah.gov                                                  301
