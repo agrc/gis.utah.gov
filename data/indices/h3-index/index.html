@@ -1,0 +1,43 @@
+---
+author:
+  display_name: Jake Adams
+  email: jdadams@utah.gov
+tags:
+  - data
+  - indices
+  - h3
+categories: []
+date: 2022-12-12 12:00:00 -0600
+H3SpatialIndex:
+  hub:
+    name: United States National Grid
+    item_id: 2eeec11a38d64637a74b5c9ddef0f76f
+  updates:
+    - 2022
+---
+<figure class="caption caption--right">
+  <img class="caption__image" src="{% link images/h3_hexes_square.png %}" alt="H3 Spatial Index" loading="lazy" />
+  <figcaption class="caption__text">H3 Spatial Index</figcaption>
+</figure>
+{% include abstract.html name="H3 Spatial Grid"
+stewards="UGRC using technology developed by Uber Technologies, Inc"
+abstract="This dataset contains the H3 reference polygons covering the State of Utah at resolutions 5 through 9." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="H3SpatialIndex">H3 Spatial Index</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/h3_single.png %}" alt="H3 Index Sample"
+      loading="lazy" />
+    <p>The <a href='https://h3geo.org/'>H3 Spatial Index</a> (created by Uber) helps users aggregate point data using an easily reusable common grid. This allows you to maintain a consistent geometry across all your analyses, which makes them easier to compare. H3 uses highly-optimized math routines to assign lat/long coordinates an ID corresponding to a polygon (almost always hexes) at a given resolution rather than performing a much slower point-in-polygon geometrical operation. Once you've generated IDs for your points, you can use these polygons to aggregate them and display summary statistics on a map.</p>
+    <p>We used the H3 library to create the index polygons that cover the entire State of Utah at resolutions 5 through 9. You can find more information about how we created them, along with an example of how to use them, in our <a href='{% link _posts/2022-10-26-using-h3-hexes.md %}'>H3 blog post</a>.</p>
+    <p>Like the rest of our SGID data, the spatial reference for these polygons is UTM Zone 12N, NAD83. However, remember that your points must be in WGS 84 lat/long in order to use the H3 API to assign them a hex ID. The polygons are copyright 2022 Uber Technologies, Inc and licensed under version 2.0 of the <a href='http://www.apache.org/licenses/LICENSE-2.0'> Apache License</a>.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://h3geo.org/docs/core-library/restable/">Table of hexagon dimensions for different resolutions</a>
+      <li><a href='{% link _posts/2022-10-26-using-h3-hexes.md %}'>Our H3 blog post</a>
+    </ul>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.jacob %}</p>
+  </div>
+  {% include packagedata.html name="UnitedStatesNationalGrid" info=page.UnitedStatesNationalGrid %}
+  <div>
