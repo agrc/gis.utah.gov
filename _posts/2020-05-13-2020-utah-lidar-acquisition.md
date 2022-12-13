@@ -29,14 +29,12 @@ With the exception of the 2020 FEMA HQ project, managed through the USGS Geospat
 - [2020 Northern & Central Utah]({% link data/elevation-and-terrain/2020-lidar-northern-central-utah/index.md %})
 - [2020 Southern Utah]({% link data/elevation-and-terrain/2020-lidar-southern-utah/index.md %}) 
 
-Preliminary project deliverables for the 2020 FEMA HQ project are available for [Blocks 1-3](https://drive.google.com/file/d/1PuPhfohwLxYQtn0pgLewdUan_EMR6QJM/view?usp=sharing). These include project [rasters](https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/OPR/Projects/UT_FEMA_FS_FlamingGorge_2020_B20/) and [point clouds](https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/UT_FEMA_FS_FlamingGorge_2020_B20/UT_FlamingGorge_1_2020/). Block 4 should be available after 5/2023. Here is more [information about downloading](https://drive.google.com/file/d/1a8lx16Iry1PlWanDIDVOFBTZwFVD9KjF/view?usp=sharing).
-
 ### The Project Areas Include
 {: .text-left }
 
 - Grand Staircase-Escalante National Monument
 - Bears Ears National Monument
-- Capitlol Reef National Park
+- Capitol Reef National Park
 - Arches National Park
 - Flaming Gorge National Recreation Area
 - Glen Canyon National Recreation Area
