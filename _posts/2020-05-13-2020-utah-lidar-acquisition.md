@@ -4,7 +4,7 @@ author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 date: 2019-09-16 18:17:41
-update_date: 2020-05-13 12:10:00
+update_date: 2020-12-13 12:10:00
 categories:
   - Featured
 tags:
@@ -23,7 +23,7 @@ You are welcome to download the boundaries for all the project areas as a [shape
 #### UPDATE 12/13/2022
 {: .text-left }
 
-With the exception of the 2020 FEMA HQ project, managed through the USGS Geospatial Product and Service Contracts (GPSC), all other 2020 project areas are completed and available for download from [Raster.utah.gov](https://raster.utah.gov/), from the <a href=”{% link data/elevation-and-terrain %}#LiDAR”>LiDAR section</a> of our Elevation and Terrain Data webpage, or from the individual web pages for each project listed below:
+With the exception of the 2020 FEMA HQ project, managed through the USGS Geospatial Product and Service Contracts (GPSC), all other 2020 project areas are completed and available for download from [Raster.utah.gov](https://raster.utah.gov/), from the <a href="{% link data/elevation-and-terrain %}#LiDAR">LiDAR section</a> of our Elevation and Terrain Data webpage, or from the individual web pages for each project listed below:
 
 - [2020 Central & Southern Utah]({% link data/elevation-and-terrain/2020-lidar-central-southern-utah/index.md %})
 - [2020 Northern & Central Utah]({% link data/elevation-and-terrain/2020-lidar-northern-central-utah/index.md %})
