@@ -8,12 +8,6 @@ tags:
   - h3
 categories: []
 date: 2022-12-12 12:00:00 -0600
-H3SpatialIndex:
-  hub:
-    name: United States National Grid
-    item_id: 2eeec11a38d64637a74b5c9ddef0f76f
-  updates:
-    - 2022
 ---
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/h3_hexes_square.png %}" alt="H3 Spatial Index" loading="lazy" />
@@ -39,5 +33,71 @@ abstract="This dataset contains the H3 reference polygons covering the State of 
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.jacob %}</p>
   </div>
-  {% include packagedata.html name="UnitedStatesNationalGrid" info=page.UnitedStatesNationalGrid %}
-  <div>
+  <div class="grid__col grid__col--1-of-2">
+    <div class="panel">
+      {% include fa_icon.html download=true lower=true class="svg-inline--fa fa-w-16 fa-pull-right fa-2x" %}
+      <h5 id="UtahParcels-downloads">Downloads</h5>
+    </div>
+    <div class="panel-content">
+      <table id="UtahParcels-dlist-table">
+        <tr>
+          <th class="text-left">Resolution</th>
+          <th class="text-left">SGID Open Data</th>
+          <th class="text-left">File Geodatabase</th>
+          <th class="text-left">Shapefile</th>
+        </tr>
+        <tr>
+          <td>Level 5</td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-h3-hexes-level-5">Downloads and APIs</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/980d3af37717456b92d7039d9ffa35f3_0.gdb">Download</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/980d3af37717456b92d7039d9ffa35f3_0.zip">Download</a></td>
+        </tr>
+        <tr>
+          <td>Level 6</td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-h3-hexes-level-6">Downloads and APIs</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/992228ada5cd4016b5f9c4d68751d1ca_0.gdb">Download</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/992228ada5cd4016b5f9c4d68751d1ca_0.zip">Download</a></td>
+        </tr>
+        <tr>
+          <td>Level 7</td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-h3-hexes-level-7">Downloads and APIs</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/3dcd072755cd453885bda7dc69a82fef_0.gdb">Download</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/3dcd072755cd453885bda7dc69a82fef_0.zip">Download</a></td>
+        </tr>
+        <tr>
+          <td>Level 8</td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-h3-hexes-level-8">Downloads and APIs</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/008865ed31514569a9fd11a6dc8a7ee0_0.gdb">Download</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/008865ed31514569a9fd11a6dc8a7ee0_0.zip">Download</a></td>
+        </tr>
+        <tr>
+          <td>Level 9</td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/utah-h3-hexes-level-9">Downloads and APIs</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/f11c3c7302924c2e869112ec95543c6c_0.gdb">Download</a></td>
+          <td><a href="https://opendata.gis.utah.gov/datasets/f11c3c7302924c2e869112ec95543c6c_0.zip">Download</a></td>
+        </tr>
+      </table>
+      <script>
+        document.getElementById('UtahParcels-dlist-table').addEventListener('click', function (evt) {
+          if (evt.target.tagName.toLowerCase() === 'a') {
+            ga('send', {
+              hitType: 'event',
+              eventCategory: 'data',
+              eventAction: 'specific-download',
+              eventLabel: 'specific-download-parcels',
+              transport: 'beacon'
+            });
+          }
+        });
+      </script>
+    </div>
+  </div>
+  <div class="grid__col grid__col--1-of-2">
+    <div class="panel update">
+      {% include fa_icon.html calendar=true class="svg-inline--fa fa-w-16 fa-pull-right fa-2x" %}
+      <h5>Updates</h5>
+    </div>
+    <div class="panel-content">
+    <p>2022</p>
+  </div>
+</div>  
