@@ -13,7 +13,7 @@ tags:
 
 There are a [myriad of ways]({% link sgid/open-sgid/index.md %}) you can access data from the Open SGID. However, these all require some form of desktop client application. What if you want programmatic access to our spatial data? Because the Open SGID uses the open-source PostGIS extension to Postgres, you can use any libraries that can load Postgres tables and process the geometry data (or just ignore that if all you want is the tabular data).
 
-In the python world, pandas DataFrames are a common and powerful structure for evaluating data. Our developer team has put together this code snippet for loading an SGID layer into either a geopandas geodataframe or an Esri spatially-enabled dataframe.
+In the python world, pandas DataFrames are a common and powerful structure for evaluating data. Our developer team has put together this code snippet for loading an SGID layer into either a [geopandas geodataframe](https://geopandas.org/en/stable/docs.html) or an Esri [spatially-enabled dataframe](https://developers.arcgis.com/python/guide/introduction-to-the-spatially-enabled-dataframe/).
 
 Now that you've got the SGID layer loaded into a dataframe, you can integrate it into the rest of your application. Our colleague Erik Neemann has written a pretty in-depth [blog post]({% link _posts/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools.md %}) on harnessing the power of geopandas for GUI-less GIS analysis.
 
