@@ -9,7 +9,7 @@ categories:
   - Featured
 ---
 
-The updated [Watershed Restoration Initiative (WRI) Application](https://wri.utah.gov/wri/) will be adding a Digital Government Achievement Award to its trophy case this month. WRI was one of 3 winners in the 2016 "Driving Digital Government" state government category. ![]({% link images/DGAAaward.png %}){:.inline-text-right}
+The updated [Watershed Restoration Initiative (WRI) Application](https://web.archive.org/web/20161115035833/https://wri.utah.gov/wri/) will be adding a Digital Government Achievement Award to its trophy case this month. WRI was one of 3 winners in the 2016 "Driving Digital Government" state government category. ![]({% link images/DGAAaward.png %}){:.inline-text-right}
 
 The WRI application, built by a partnership between the Division of Wildlife Resources, the Dept. of Technology Services AppDev team, and UGRC, allows for collaborative project proposals, scheduling, funding, tracking, and mapping across the many participating agencies and levels of government. The WRI App integrates GIS-based digital maps extensively to organize, analyze, and visualize project information.
 
