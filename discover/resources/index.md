@@ -41,7 +41,7 @@ The pre-2018 `NAIP` layers have a stated horizontal positional accuracy of 5 met
 ### Adding a WMTS or WMS Service to ESRI Products
 {: .text-left}
 
-**ArcGIS Pro 2.x:**
+**ArcGIS Pro 2.x & 3.x:**
 
 1. `Insert -> Connections -> New WMTS Server`
 1. Paste the `WMTS` link [you have been provided]({% link discover/index.html %}#connect "view Discover sign up information") into the `Server URL:` line and click `OK`
