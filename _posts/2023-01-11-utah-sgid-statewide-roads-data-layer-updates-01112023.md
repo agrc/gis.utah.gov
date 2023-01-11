@@ -23,6 +23,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Cache County:** Obtained roads data on 10/18/2022. Previous update was on 09/07/2022.
 - **Davis County:** Obtained roads data on 12/20/2022. Previous update was on 11/14/2022.
 - **Sevier County:** Obtained roads data on 10/19/2022. Previous update was on 08/05/2022.
+- **Utah County:** Obtained roads data on 12/20/2022. Previous update was on 11/14/2022.
 - **Washington County:** Obtained roads data on 12/20/2022. Previous update was on 12/13/2022.
 
 #### Notable Mentions
