@@ -1,9 +1,9 @@
 ---
-title: Utah SGID Statewide Roads Data Layer Updates 01/11/2023
+title: Utah SGID Statewide Roads Data Layer Updates 01/12/2023
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2023-01-11 7:30:00
+date: 2023-01-12 7:30:00
 categories:
   - Featured
 tags:
