@@ -3,7 +3,7 @@ title: 'Municipal Boundaries Final update for 2022'
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2023-01-26 15:58:20
+date: 2023-01-30 10:58:20
 categories:
   - SGID Blog
   - Featured
