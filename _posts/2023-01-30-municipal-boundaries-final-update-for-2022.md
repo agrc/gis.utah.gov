@@ -14,7 +14,7 @@ tags:
 
 It is the end of another long year and, ready or not, 2023 is here. It was another year of growth for the state which has slowed down some. The top contributors were Utah and Cache County once again with 23 annexations in Utah and 16 in Cache. 5 other counties had between 5 to 7 annexations in 2022. There was a tie for the biggest growing city, with 6 annexations, between Utah County's Lehi and Sevier County's Richfield. The State's total for the year is 90 annexations. This breaks down to 84 annexations, 3 disconnections, 2 adjustments, and 1 incorporation. This is similar to the last couple of years.
 
-The latest incorporation was in Tooele County again this year. Everyone join us in welcoming the city of Erda. Erda is the 249th city in Utah alongside 5 Metro Townships. Enjoy these facts for your next Trivia round.
+The latest incorporation was in Tooele County again this year. Everyone join us in welcoming the city of Lake Point. Lake Point is the 250th city in Utah alongside 5 Metro Townships. Enjoy these facts for your next Trivia round.
 
 We would like to thank all of the hardworking recorders and staff in the counties and towns. With your help, the Lieutenant Governor's Office and UGRC processed all of the annexations, adjustments, disconnections, and incorporations for the state.
 
