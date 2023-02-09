@@ -25,17 +25,17 @@ categories:
 <figure class="application-figure application-figure--align-center">
   <img src="atlas_utah_gov.png" class="application-figure__image outline" alt="initial view of application" width="1423"
     height="579" loading="lazy" />
-  <figcaption class="application-figure__caption">UGRC widgets with an informational popup derived from SGID data
+  <figcaption class="application-figure__caption">UGRC components with an informational panel derived from SGID data
   </figcaption>
 </figure>
 <h3>Why</h3>
 <p>UGRC offers many online services to facilitate the use of GIS and Atlas is a combination of most of those services.
-  Atlas contains the complete and most current <a href="{% link discover/index.html %}">discover base maps</a>. Atlas
-  also uses most of the <a href="{% link developer/widgets/index.md %}">UGRC javascript widgets</a>. The popup makes
+  Atlas contains the complete and most current <a href="{% link discover/index.html %}">Discover base maps</a>. Atlas
+  also uses most of the <a href="https://github.com/agrc/kitchen-sink">UGRC Components</a>. Clicking anywhere on the map makes
   http requests to the <a href="{% link developer/web-services/index.md %}">UGRC Web API</a> to reverse geocode, search
-  for the city, county, land ownership, elevation, and US National Grid of the point clicked. For UGRC developers, Atlas
-  is a code base to keep improving its' usage of dojo and the esri js api. Atlas is often cloned and used as an
-  application boilerplate for new projects as it's structure is optimal for the dojo build process.</p>
+  for the city, county, land ownership, elevation, and US National Grid of the point clicked; and display the results in the left panel. 
+  For UGRC developers, Atlas is a code base to keep improving its usage of dojo and the ArcGIS Maps SDK for JavaScript. 
+  <a href="https://github.com/agrc/atlas">Atlas</a> is a GitHub template that you can use to create your own website.</p>
 <script>
   document.getElementById('application__download').addEventListener('click', function () {
     ga('send', {
