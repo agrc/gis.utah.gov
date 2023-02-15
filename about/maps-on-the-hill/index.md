@@ -12,6 +12,17 @@ categories: []
 
   <div markdown="1">
   
+#### Maps on the Hill 2023
+
+![Maps on the Hill February 14, 2023](MOTH2023.jpg){: .outline loading="lazy" }
+
+- [Map Book Calendar](https://drive.google.com/file/d/1adOJtmxluQTJhiGPK89wt8u4cFFoGwu4/view?usp=sharing)
+- [Photos](https://drive.google.com/file/d/1BRzS87HRxZxMQD0zs9EdntHuinHFCbhj/view?usp=sharing)
+{: .dotless .no-padding}
+  </div>
+
+  <div markdown="1">
+  
 #### Maps on the Hill 2022
 
 ![Maps on the Hill February 15, 2022](moth2022.jpg){: .outline loading="lazy" }
