@@ -9,7 +9,7 @@ categories:
   - SGID Blog
 ---
 <p><strong>Utah Political Districts:</strong></p>
-<p><a href="{% link data/political/2012-2022-political-districts/index.html %}">Political districts for state-level offices</a> (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections and ongoing representation.</p>
+<p><a href="{% link data/political/index.html %}">Political districts for state-level offices</a> (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections and ongoing representation.</p>
 <p>Small administrative changes have been made to the political district boundary GIS layers, after requests for determination made to the Lt. Governor's Elections Office.</p>
 <p>Specifically, </p>
 <ol>
