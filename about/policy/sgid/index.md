@@ -134,7 +134,7 @@ We anticipate some SGID datasets historically made available through the SDE con
 ### "Shelved" Datasets
 {: .text-left}
 
-Over time, we will remove datasets from the Open SGID that are no longer current but continue to have historical value (e.g., Census/ACS data or previous tax district boundaries). Their associated ArcGIS Online items will be tagged as `shelved` and placed in the public [AGRC Shelf](http://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9) ArcGIS Online group for future reference. Shelved datasets are not included in the SGID Open Data site.
+Over time, we will remove datasets from the Open SGID that are no longer current but continue to have historical value (e.g., Census/ACS data or previous tax district boundaries). Their associated ArcGIS Online items will be tagged as `shelved` and placed in the public [UGRC Shelf](http://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9) ArcGIS Online group for future reference. Shelved datasets are not included in the SGID Open Data site.
 
 ---
 
@@ -172,6 +172,6 @@ Whenever a dataset is updated, the `Last update date` must be updated in the fol
 - The dataset's data page
 - The first line of the metadata's `Description` field
 
-AGRC should implement a unified metadata database and associated automated tools to capture the last update date in a single location.
+UGRC should implement a unified metadata database and associated automated tools to capture the last update date in a single location.
 
 Any time a schema change or update is performed, the editor should also update any coded-value domain descriptions that do not match the domain value. See this [document](https://docs.google.com/document/d/12bdtmtv-ZVF9g-lFshbobx8DbKX9LfbL44HawLjFTVw/edit?usp=sharing) for more on this effort.
