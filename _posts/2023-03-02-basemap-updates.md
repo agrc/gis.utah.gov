@@ -15,7 +15,7 @@ tags:
 ![New Terrain basemap]({% link images/new_terrain.png %})
 {: .flex .flex--center}
 
-It’s been about 10 years since the UGRC has updated the look and feel of the basemaps and changes are on the way. The current basemaps were originally authored in ArcMap and have been imported into Pro for the purpose of maintaining the cached raster tiles. Rather than have them limp along in their current form it’s probably best to put them out of their misery and create new basemaps from scratch.
+It has been almost a decade since UGRC has updated the look and feel of any of the base maps but changes are on the way! The current suite of base maps were originally authored in ArcMap. These projects have been imported into ArcGIS Pro to continue to provide data updates. But to take advantage of the advancements in ArcGIS Pro, we decided to create new base map projects from the ground up using all of the new features available. These new documents are less complex and easier to maintain.
 
 We were most excited to start this process and make improvements to the Terrain base map. Similar to version 1 of the Terrain base map, version 2 will be served from Discover as WMS and WMS-T raster tiles and features a number of improvements including:
 
