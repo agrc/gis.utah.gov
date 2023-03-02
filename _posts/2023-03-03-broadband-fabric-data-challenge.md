@@ -3,7 +3,7 @@ title: "The Broadband Fabric Data Challenge Process: A Tale of Collaboration"
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2023-03-03 12:00:00
+date: 2023-03-01 12:00:00
 categories:
   - Featured
 tags:
