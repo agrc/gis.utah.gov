@@ -17,7 +17,7 @@ tags:
 
 It’s been about 10 years since the UGRC has updated the look and feel of the basemaps and changes are on the way. The current basemaps were originally authored in ArcMap and have been imported into Pro for the purpose of maintaining the cached raster tiles. Rather than have them limp along in their current form it’s probably best to put them out of their misery and create new basemaps from scratch.
 
-The first basemap on the chopping block to be updated is Terrain. Like the old, the new Terrain basemap will be made up of raster tiles and features a number of improvements including:
+We were most excited to start this process and make improvements to the Terrain base map. Similar to version 1 of the Terrain base map, version 2 will be served from Discover as WMS and WMS-T raster tiles and features a number of improvements including:
 
 - New shaded relief from Jake “255 Shades of Gray” Adams
 - Improved contours
