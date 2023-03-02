@@ -25,7 +25,7 @@ The first basemap on the chopping block to be updated is Terrain. Like the old, 
 - Water related land use agricultural areas
 - ArcGIS Pro symbology
 
-The new Terrain basemap is set to be published in the coming weeks and will overwrite the existing service. If you have the links to the current Terrain basemap saved in a ArcMap or Pro document they will be automatically be replaced by the new service. Since the style of the new Terrain basemap is similar to, but different than the old, overlaid layers symbology may need to be adjusted to the new basemap below.
+The version 2 Terrain base map tiles are set to be published in the coming weeks and will replace the existing tiles. If you have connections to the v1 Terrain base map in a web, ArcMap, or Pro project, the newly styled tiles will start to display after the switch is made. Version 2 will use the same connection url and the version 1 symbology will no longer be accessible. Since the style of the v2 Terrain base map is similar to, but different than v1, overlaid layer symbology may need to be adjusted to visually match the new symbology. 
 
 Be on the lookout this spring for new vector tiles as well.
 
