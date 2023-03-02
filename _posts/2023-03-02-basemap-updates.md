@@ -3,7 +3,7 @@ title: "Basemaps: Out With the Old, In With the New"
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
-date: 2022-12-22 11:00:00
+date: 2023-03-02 11:00:00
 categories:
   - Featured
 tags:
