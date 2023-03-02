@@ -27,6 +27,6 @@ The first basemap on the chopping block to be updated is Terrain. Like the old, 
 
 The version 2 Terrain base map tiles are set to be published in the coming weeks and will replace the existing tiles. If you have connections to the v1 Terrain base map in a web, ArcMap, or Pro project, the newly styled tiles will start to display after the switch is made. Version 2 will use the same connection url and the version 1 symbology will no longer be accessible. Since the style of the v2 Terrain base map is similar to, but different than v1, overlaid layer symbology may need to be adjusted to visually match the new symbology. 
 
-Be on the lookout this spring for new vector tiles as well.
+Be on the lookout this spring for more base map updates from us, including vector tile services.
 
 
