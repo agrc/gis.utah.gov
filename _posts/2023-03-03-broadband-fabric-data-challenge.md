@@ -1,5 +1,5 @@
 ---
-title: "The Broadband Fabric Data Challenge Process: A Tale of Collaboration"
+title: "Utah Crushes the Broadband Data Collection Challenge with Collaboration"
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
