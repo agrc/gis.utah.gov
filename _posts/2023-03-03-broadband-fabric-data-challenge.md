@@ -1,5 +1,5 @@
 ---
-title: "Utah Crushes the Broadband Data Collection Challenge with Collaboration"
+title: "Utah Crushes Broadband Challenge through Collaboration"
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
@@ -60,7 +60,7 @@ While the fabric will be updated twice a year, this first challenge period was v
 
 This seven-week window to get our challenges into the second version was the biggest hurdle in the challenge process. The Utah Broadband Center sent an invitation to both the counties and the tribal governments to participate in this last-minute effort. The invite included our brief analysis of the fabric compared against our statewide address points along with some template datasets and instructions to help them prepare their challenges if they had the time and resources.
 
-### Crushing the Challenge with Collaboration
+### Collaboration Creates A Concrete Challenge to Confer Communications Capital
 {: .flex .flex--left}
 
 We are thrilled at the responses we received from the counties despite the short notice. Even though there was only a handful of counties that were able to reallocate their limited resources, Utah submitted more challenges, and had more challenges accepted, than any other state in the nation. This speaks highly of the skill of the county GIS staffers and the quality of their data.
