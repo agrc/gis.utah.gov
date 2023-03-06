@@ -27,13 +27,13 @@ We express a heart-felt **Thank You!** to Box Elder, Weber, Tooele, Salt Lake, U
 ![Utah had by far the most accepted challenges]({% link images/bb_challenge_results.png %})
 {: .flex .flex--center}
 
-_Source: NTIA_
+_Source: X-Lab (PSU), via the Marconi Society_
 {: .flex .flex--center}
 
 ## The Collection Process: Every Program Needs Acronyms
 {: .flex .flex--left}
 
-The work behind the FCC's new [broadband map](https://broadbandmap.fcc.gov/home) has been christened the [Broadband Data Collection](https://www.fcc.gov/BroadbandData), or BDC for short. There are two critical pieces to the BDC: (1) a  "fabric" of Broadband Serviceable Locations (BSLs) and (2) the actual availability data that is built on top of the BSLs.
+The work behind the FCC's new [broadband map](https://broadbandmap.fcc.gov/home) has been christened the [Broadband Data Collection](https://www.fcc.gov/BroadbandData), or BDC for short. There are two critical pieces to the BDC: (1) a "fabric" of Broadband Serviceable Locations (BSLs) and (2) the actual availability data that is built on top of the BSLs.
 
 While the map will support decision making for years to come, there's also a more immediate need. The National Telecommunications and Information Administration (NTIA) will be making its state-level allocations of the $42.45 billion [Broadband Equity, Access, and Deployment (BEAD) program](https://broadbandusa.ntia.doc.gov/taxonomy/term/158/broadband-equity-access-and-deployment-bead-program) based on the data in the map.
 
