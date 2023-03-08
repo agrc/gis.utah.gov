@@ -17,27 +17,7 @@ Wetlands:
     - url: "https://www.fws.gov/wetlands/Data/State-Downloads/UT_shapefile_wetlands.zip"
       label: "Utah Wetlands Data: Shapefile"
   updates:
-    - These datasets have a varied update schedule but are updated continuously.
-WetlandsMappingProjects:
-  downloads:
-    - url: "https://www.fws.gov/node/264847"
-      label: "U.S. Fish & Wildlife Service Downloads"
-    - url: "https://www.fws.gov/wetlands/Data/State-Downloads/UT_geodatabase_wetlands.zip"
-      label: "Utah Wetlands Data: File Geodatabase"
-    - url: "https://www.fws.gov/wetlands/Data/State-Downloads/UT_shapefile_wetlands.zip"
-      label: "Utah Wetlands Data: Shapefile"
-  updates:
-    - These datasets have a varied update schedule but are updated continuously.
-RiparianAreas:
-  downloads:
-    - url: "https://www.fws.gov/node/264847"
-      label: "U.S. Fish & Wildlife Service Downloads"
-    - url: "https://www.fws.gov/wetlands/Data/State-Downloads/UT_geodatabase_wetlands.zip"
-      label: "Utah Wetlands Data: File Geodatabase"
-    - url: "https://www.fws.gov/wetlands/Data/State-Downloads/UT_shapefile_wetlands.zip"
-      label: "Utah Wetlands Data: Shapefile"
-  updates:
-    - These datasets have a varied update schedule but are updated continuously.
+    - These datasets have a varied update schedule and are updated continuously.
 ---
 <figure class="caption caption--right">
   <img class="caption__image" title="map" src="{% link images/wetlands2.png %}" alt="Wetlands" loading="lazy" />
@@ -56,15 +36,27 @@ following the update schedule set by the NWI." %}
     <h3 id="Wetlands">Wetlands</h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/wetlands2.png %}" alt="Wetlands" loading="lazy" />
-    <p>Utah Wetlands is derived from the U.S. Fish and Wildlife Service’s <a
-        href="https://www.fws.gov/wetlands/">National Wetlands Inventory</a> (NWI). NWI attributes wetlands with codes
-      from the Cowardin Classification System; codes can be interpreted <a
-        href="https://www.fws.gov/wetlands/data/wetland-codes.html">online</a>. Cowardin classes in this derived layer
+    <p>Utah Wetlands is derived from the U.S. Fish and Wildlife Service’s 
+      <a href="https://www.fws.gov/wetlands/">National Wetlands Inventory</a> (NWI). NWI attributes wetlands with codes
+      from the Cowardin Classification System; codes can be interpreted 
+      <a href="https://www.fws.gov/wetlands/data/wetland-codes.html">online</a>. Cowardin classes in this derived layer
       have been split into separate System, Class, and Water Regime fields. Wetlands spatial data were produced from a
       combination of aerial imagery examination and on-the-ground assessment and are not meant to be used as the basis
       for a jurisdictional wetland delineation. The associated metadata for each wetland mapping project can be found
       below in Wetlands Mapping Projects.</p>
+      
+      <p>Wetland Mapping Projects are the associated metadata and descriptions of wetland areas that have been mapped.
+      Wetland mapping project areas are generally represented by USGS topo quad boundaries or aggregations of topo
+      quads, in some cases they are shown as a watershed boundary. This data includes the scale at which wetlands
+      mapping was conducted and the imagery year used for the mapping. Some mapping projects include supplemental map
+      information that describes the projects in more detail. The location of recent and ongoing mapping projects can be
+      found in the <a href="https://www.fws.gov/wetlands/data/Mapper.html">Projects Mapper</a>.</p>
+      
+      <p>Extent, approximate location, and type of riparian habitat of Utah developed by the <a
+      href="https://www.fws.gov/wetlands/"> U.S. Fish and Wildlife Service National Wetlands Inventory</a>. These data
+      delineate the aerial extent of riparian habitats as defined by A System For Mapping Riparian Areas in the United
+      States (USFWS 2009).</p>  
+    
     <h5>Related Resources</h5>
     <ul class="dotless">
       <li><a href="https://geology.utah.gov/apps/wetlands/index.html">Utah Geologic Survey Wetlands Mapping Application</a></li>
@@ -74,47 +66,5 @@ following the update schedule set by the NWI." %}
   {% include packagedata.html
   name="Wetlands"
   info=page.Wetlands
-  %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="WetlandsMappingProjects">Wetlands Mapping Projects</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <p>Wetland Mapping Projects are the associated metadata and descriptions of wetland areas that have been mapped.
-      Wetland mapping project areas are generally represented by USGS topo quad boundaries or aggregations of topo
-      quads, in some cases they are shown as a watershed boundary. This data includes the scale at which wetlands
-      mapping was conducted and the imagery year used for the mapping. Some mapping projects include supplemental map
-      information that describes the projects in more detail. The location of recent and ongoing mapping projects can be
-      found in the <a href="https://www.fws.gov/wetlands/data/Mapper.html">Projects Mapper</a>.</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="https://geology.utah.gov/apps/wetlands/index.html">Utah Geologic Survey Wetlands Mapping Application</a></li>
-    </ul>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.wetlands %}</p>
-  </div>
-  {% include packagedata.html
-  name="WetlandsMappingProjects"
-  info=page.WetlandsMappingProjects
-  %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="RiparianAreas">Riparian Areas</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <p>Extent, approximate location, and type of riparian habitat of Utah developed by the <a
-        href="https://www.fws.gov/wetlands/"> U.S. Fish and Wildlife Service National Wetlands Inventory</a>. These data
-      delineate the aerial extent of riparian habitats as defined by A System For Mapping Riparian Areas in the United
-      States (USFWS 2009).</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="https://geology.utah.gov/apps/wetlands/index.html">Utah Geologic Survey Wetlands Mapping Application</a></li>
-    </ul>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.wetlands %}</p>
-  </div>
-  {% include packagedata.html
-  name="RiparianAreas"
-  info=page.RiparianAreas
   %}
 </div>
