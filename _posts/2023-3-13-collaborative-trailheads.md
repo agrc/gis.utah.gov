@@ -39,7 +39,7 @@ In the map challenge, there are essentially two scenarios:
 - In the first scenario, the SGID trailhead is marked as new to OSM. In that case, you would review the information supplied and either add the missing trailhead to OSM or decline it with a valid reason.
 - In the second scenario, the SGID trailhead is marked as not new to OSM. In this case, you're working on a task to review (and possibly update) existing OSM data. The task is to look at both features and ensure that the most current information is in OSM.
 
-Linked below are three short vidoes that walk you through the map challenge.
+Three short vidoes are linked below that walk you through the map challenge.
 
 ### What’s Next for the Trailheads Dataset?
 {: .flex .flex--left}
