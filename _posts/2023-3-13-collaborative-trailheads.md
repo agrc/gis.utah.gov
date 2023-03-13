@@ -61,7 +61,7 @@ We hope you’ll join us in this effort.
 
 If you’d like to contribute to the project, you can start by watching our three short how-to videos. 
 
-- How to [create an OSM account and link it to the map challenge](https://vimeo.com/807581370)
+- How to [create an OSM account and link it to the map challenge](https://vimeo.com/807718819)
 - How to [add a new trailhead to OSM](https://vimeo.com/807595086)
 - How to [update an existing OSM trailhead](https://vimeo.com/807604623)
 
