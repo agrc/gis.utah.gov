@@ -15,7 +15,7 @@ tags:
 
 Certain datasets are best managed collectively. These datasets tend to be dynamic and have more than one steward. 
 
-Trailheads are great examples of this. They receive frequent updates and are governed by a variety of entities including cities and towns, counties, land trusts, preserves, BLM, USFS, State Parks, National Parks, etc. Because of this, it can be a challenge to keep this layer current in the SGID. But, what if we used a collaborative approach to manage this data?
+Trailheads are great examples of this. They receive frequent updates and are governed by a variety of entities including cities and towns, counties, land trusts, land preservation goups, BLM, USFS, State Parks, National Parks, etc. Because of this, it can be a challenge to keep this layer current in the SGID. But, what if we used a collaborative approach to manage this data?
 
 
 ### OpenStreetMap and Collective Stewardship
