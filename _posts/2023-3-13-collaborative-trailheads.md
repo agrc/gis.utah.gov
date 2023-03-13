@@ -48,7 +48,7 @@ Once the map challenge is complete, we’ll then direct all maintenance for the 
 
 At that point, we will source the SGID Trailheads layer from OSM much like we do with the SGID Open Source Places layer. This involves bringing the OSM data in-house, running a few validations and quality checks, and then serving it through the SGID so it can be consumed as a GIS layer. 
 
-The beauty of this collective stewardship model is that, collectively, we have the tools to keep the data current.
+The beauty of this stewardship model is that, collectively, we have the tools to keep the data current.
 
 As we move forward with this model, we will also be working with the authoritative stewards to see how this project fits into similar initiatives that are already underway such as the [OSM for Government](https://wiki.openstreetmap.org/wiki/OpenStreetMap_for_Government) and the [Public Domain Map](https://publicdomainmap.org/).
 
