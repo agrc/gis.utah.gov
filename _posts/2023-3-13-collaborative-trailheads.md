@@ -13,7 +13,7 @@ tags:
   - OpenStreetMap
 ---
 
-At UGRC, we serve up datasets from a vast array of sources. Some, like municipal boundaries or voting precincts, are created in-house. Others are pulled from a single steward, like the land ownership data maintained by SITLA. A large part of our work is aggregating datasets from multiple stewards into coherent, state-wide datasets. Roads, parcels, and address points all fall into this category. 
+At UGRC, we serve up datasets from a vast array of sources. Some, like municipal boundaries, are created in-house. Others are pulled from a single steward, like the land ownership data maintained by SITLA. A large part of our work is aggregating datasets from multiple stewards into coherent, state-wide datasets. Roads, parcels, and address points all fall into this category. 
 
 However, there are some datasets that are so broad in their geographic scope and so dynamic in their content that even an aggregation strategy fails to keep up with their changes and fails to capture all the possible data sources.
 
