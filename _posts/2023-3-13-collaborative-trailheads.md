@@ -27,7 +27,7 @@ OpenStreetMap (OSM) is a collaborative platform for collectively editing data in
 
 We already have an [established OSM workflow]({% link _posts/2022-03-21-introducing-open-source-places.md %}) for the [Open Source Places SGID layer]({% link data/society/open-source-places/index.html %}). This workflow allows us to source the data directly from OSM. Our goal is to eventually incorporate this collective stewardship model into as many suitable datasets as we can. For now, we have identified [trailheads]({% link data/recreation/trails/index.html %}) as the next suitable SGID layer for this collaborative editing model.
 
-### Collaborate Trailheads
+### Collaborative Trailheads
 {: .flex .flex--left}
 
 The first step is to incorporate the [existing SGID Trailheads](https://opendata.gis.utah.gov/datasets/utah-trailheads/explore) into OSM. Essentially, we need to conflate –or merge– the two datasets to ensure we’re getting the best of both worlds.
