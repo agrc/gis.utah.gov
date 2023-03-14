@@ -9,8 +9,7 @@ categories:
 tags:
   - data
   - trailheads
-  - OSM
-  - OpenStreetMap
+  - osm
 ---
 
 At UGRC, we serve up datasets from a vast array of sources. Some, like municipal boundaries, are created in-house. Others are pulled from a single steward, like the land ownership data maintained by SITLA. A large part of our work is aggregating datasets from multiple stewards into coherent, state-wide datasets. Roads, parcels, and address points all fall into this category. 
