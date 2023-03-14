@@ -12,19 +12,18 @@ tags:
   - osm
 ---
 
-At UGRC, we serve up datasets from a vast array of sources. Some, like municipal boundaries, are created in-house. Others are pulled from a single steward, like the land ownership data maintained by SITLA. A large part of our work is aggregating datasets from multiple stewards into coherent, state-wide datasets. Roads, parcels, and address points all fall into this category. 
+At UGRC, we serve up datasets from a vast array of sources. Some, like municipal boundaries, are created in-house. Others are pulled from a single steward, like the land ownership data maintained by SITLA. A large part of our work is aggregating datasets from multiple stewards into coherent, state-wide datasets. Roads, parcels, and address points all fall into this category.
 
 However, there are some datasets that are so broad in their geographic scope and so dynamic in their content that even an aggregation strategy fails to keep up with their changes and fails to capture all the possible data sources.
 
 Trailheads are great examples of this. They receive frequent updates and are governed by a variety of entities including cities and towns, counties, land preservation trusts, BLM, USFS, State Parks, and National Parks, to name a few. Because of this, it can be a challenge to keep this layer current in the SGID. But, what if we used a collaborative approach to manage this data?
 
-
 ### OpenStreetMap and Collective Stewardship
 {: .flex .flex--left}
 
-At UGRC, we see [OpenStreetMap](https://www.openstreetmap.org/) (OSM) as an ideal platform for managing and maintaining datasets such as trails, trailheads, campgrounds, and a variety of other layers - because who better to steward this data than all of us? 
+At UGRC, we see [OpenStreetMap](https://www.openstreetmap.org/) (OSM) as an ideal platform for managing and maintaining datasets such as trails, trailheads, campgrounds, and a variety of other layers - because who better to steward this data than all of us?
 
-OpenStreetMap (OSM) is a collaborative platform for collectively editing data in real-time. In the case of trailheads, mapping enthusiasts can work side-by-side (so to speak) along the data stewards to keep the data up-to-date.  
+OpenStreetMap (OSM) is a collaborative platform for collectively editing data in real-time. In the case of trailheads, mapping enthusiasts can work side-by-side (so to speak) along the data stewards to keep the data up-to-date.
 
 We already have an [established OSM workflow]({% link _posts/2022-03-21-introducing-open-source-places.md %}) for the [Open Source Places SGID layer]({% link data/society/open-source-places/index.html %}). This workflow allows us to source the data directly from OSM. Our goal is to eventually incorporate this collective stewardship model into as many suitable datasets as we can. For now, we have identified [trailheads]({% link data/recreation/trails/index.html %}) as the next suitable SGID layer for this collaborative editing model.
 
@@ -45,9 +44,9 @@ Three short vidoes are linked below that walk you through the map challenge.
 ### What’s Next for the Trailheads Dataset?
 {: .flex .flex--left}
 
-Once the map challenge is complete, we’ll then direct all maintenance for the trailheads layer to OSM. 
+Once the map challenge is complete, we’ll then direct all maintenance for the trailheads layer to OSM.
 
-At that point, we will source the SGID Trailheads layer from OSM much like we do with the SGID Open Source Places layer. This involves bringing the OSM data in-house, running a few validations and quality checks, and then serving it through the SGID so it can be consumed as a GIS layer. 
+At that point, we will source the SGID Trailheads layer from OSM much like we do with the SGID Open Source Places layer. This involves bringing the OSM data in-house, running a few validations and quality checks, and then serving it through the SGID so it can be consumed as a GIS layer.
 
 The beauty of this stewardship model is that, collectively, we have the tools to keep the data current.
 
@@ -60,7 +59,7 @@ We hope you’ll join us in this effort.
 ### Get Involved in the Map Challenge!
 {: .flex .flex--left}
 
-If you’d like to contribute to the project, you can start by watching our three short how-to videos. 
+If you’d like to contribute to the project, you can start by watching our three short how-to videos.
 
 - How to [create an OSM account and link it to the map challenge](https://vimeo.com/807718819)
 - How to [add a new trailhead to OSM](https://vimeo.com/807721784)
@@ -71,6 +70,5 @@ If you’d like to contribute to the project, you can start by watching our thre
 
 You can follow along with this project by visiting our [collaborative trailheads GitHub repository](https://github.com/agrc/collaborative-trailheads) or by reaching out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.
-
 
 Happy mapping!
