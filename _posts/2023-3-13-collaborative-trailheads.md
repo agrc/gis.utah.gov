@@ -41,6 +41,12 @@ In the map challenge, there are essentially two scenarios:
 
 Three short videos are linked below that walk you through the map challenge.
 
+<div class="text-center">
+  <a class="button medium white" href="https://maproulette.org/browse/challenges/28673">
+    <span class="button-text">Participate in the map challenge</span>
+  </a>
+</div>
+
 ### What’s Next for the Trailheads Dataset?
 {: .flex .flex--left}
 
