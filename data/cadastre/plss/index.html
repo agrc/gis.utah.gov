@@ -29,15 +29,6 @@ CadNSDI:
     - January 1, 2018
     - November 1, 2016
     - August 28, 2015
-PLSSPoints:
-  hub:
-    name: Utah PLSS Point AGRC
-    item_id: abc953231dbb4a2e8b6511d66b13af91
-  updates:
-    - December 15, 2020
-    - October 1, 2017
-    - November 1, 2016
-    - March 2012
 PLSSPointsGCDB:
   hub:
     name: Utah PLSS Point GCDB
@@ -192,38 +183,6 @@ PLSS network. This data is a key component of geographic data upon which all cad
         Management Utah Contacts</a></p>
   </div>
   {% include packagedata.html name="CadNSDI" info=page.CadNSDI %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="PLSSPoints">PLSS Point AGRC</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" src="{% link images/plsspoint_agrc.jpg %}" alt="PLSS Point AGRC"
-      loading="lazy" />
-    <p>The new release of Points_UGRC data layer is now created from the plss_point_gcdb and a “Control” points feature
-      class in the Fabric. The “Control” points are collected tie sheets points submitted to the UGRC that have been
-      used to adjust and improve the PLSS Fabric.</p>
-    <p>plss_point_agrc is a point dataset that represents the UGRC schema of the GCDB point layer. Which includes a link
-      and Tie Sheet name for each Tie Sheet submitted. We are still (Dec. 2020) redesigning and improving this dataset.
-      Points incorporated into the fabric as Control, will become <code>plss_point_agrc</code> as we move through the
-      data. The layer <code>plss_point_gcdb</code> in the Open SGID and available for download, is the original source
-      for this layer. The <code>plss_point_agrc</code> layer is used in the PLSS Corner Management App.</p>
-    <p>The download versions is from the current CadNSDI GIS Version 2.3. The latest submitted Tie Sheets may not be
-      included yet, as we work through a backlog of data county by county.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter x,y coordinate precision; 0.001
-      mile m coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users
-      are encouraged to attribute content to UGRC. This statewide dataset is maintained by UGRC in partnership with the
-      BLM and local government. The geographic coordinates and their associated products are NOT legal land survey
-      records. The coordinates can NOT be used as a substitute for a legal land survey. They can be used for record
-      keeping, mapping, graphics and planning purposes only. No warranty is made by the Bureau of Land Management for
-      use of the data for purposes not intended by BLM.</p>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="https://arcg.is/2lDUXVJ">Survey Monument Preservation Act of 2015 story map</a>
-    </ul>
-    <p>{% include contact.html subject=page.title contact=site.data.contacts.plss %}</p>
-  </div>
-  {% include packagedata.html name="PLSSPoints" info=page.PLSSPoints %}
 </div>
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
