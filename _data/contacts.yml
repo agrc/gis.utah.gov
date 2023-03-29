@@ -208,12 +208,12 @@ ust:
   phone: 801-536-4128
   agency: DEQ
 drinking_water:
-  name: Diedre Beck
+  name: Deidre Beck
   email: DBeck@utah.gov
   phone: 801-536-4201
   agency: DEQ
 aquifers:
-  name: Diedre Beck
+  name: Deidre Beck
   email: DBeck@utah.gov
   phone: 801-536-4201
   agency: DEQ
@@ -279,9 +279,9 @@ source_water:
   email: KJohnson@utah.gov
   agency: DEQ
 google_imagery:
-  - name: Jake Adams
-    email: jdadams@utah.gov
-    agency: UGRC
+  name: Jake Adams
+  email: jdadams@utah.gov
+  agency: UGRC
 discover:
   name: Jake Adams
   email: jdadams@utah.gov
@@ -313,12 +313,9 @@ license_manager:
   agency: UGRC
   phone: 801-652-2258
 protected_water:
-  - name: Diedre Beck
-    email: DBeck@utah.gov
-    agency: DEQ
-  - name: Kate Johnson
-    email: KJohnson@utah.gov
-    agency: DEQ
+  name: Deidre Beck
+  email: DBeck@utah.gov
+  agency: DEQ
 geochronology_database:
   name: Steve Bowman
   agency: UGS
