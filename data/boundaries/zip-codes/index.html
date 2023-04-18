@@ -34,19 +34,6 @@ ZipCodeBoundaries:
 {% include abstract.html name="Zip Codes" stewards="UGRC" abstract="This dataset
 contains the estimated geographic extents for all five digit zip codes in Utah
 that are not P.O. box only." %}
-
-<div>
-    <h5>Related Resources</h5>
-    <ul class="dotless">
-      <li><a href="{% link data/location/u-s-postal-service/index.html %}">US Postal Service data page</a></li>
-        <ul>
-          <li><a href="{% link data/location/u-s-postal-service/index.html %}#USPSPostOffices">USPS Post Offices</a>
-          <li><a href="{% link data/location/u-s-postal-service/index.html %}#ZipCodePOBoxes">Zip Code PO Boxes and Delivery Points</a></li>
-        </ul>
-      </li>
-    </ul>
-</div>
-
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="ZipCodeBoundaries">Zip Code Boundaries</h3>
@@ -84,6 +71,14 @@ that are not P.O. box only." %}
       are no constraints or warranties with regard to the use of this dataset.
       Users are encouraged to attribute content to: State of Utah, SGID.
     </p>
+
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="{% link data/location/u-s-postal-service/index.html %}">US Postal Service data page</a></li>
+      <li><a href="{% link data/location/u-s-postal-service/index.html %}#USPSPostOffices">USPS Post Offices</a>
+      <li><a href="{% link data/location/u-s-postal-service/index.html %}#ZipCodePOBoxes">Zip Code PO Boxes and Delivery Points</a></li>
+    </ul>
+
     <p>
       {% include contact.html subject=page.title
       contact=site.data.contacts.zip_codes %}
