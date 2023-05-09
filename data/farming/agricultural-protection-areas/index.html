@@ -1,0 +1,45 @@
+---
+tags:
+  - data
+  - farming
+author:
+  display_name: Greg Bunce
+  email: gbuncen@utah.gov
+date: 2023-05-09 07:55:57 -0600
+categories: []
+AgriculturalProtectionAreas:
+  hub:
+    name: Utah Agricultural Protection Areas
+    item_id: a9fc125d02d54681aec1e5576954ded6
+  updates:
+    - July 2022
+---
+<figure class="caption caption--right">
+  <img class="caption__image" src="{% link images/AgriculturalProtection.png %}" alt="Agricultural" loading="lazy" />
+  <figcaption class="caption__text">Agricultural Protection Areas Sample</figcaption>
+</figure>
+{% include abstract.html
+name="Agricultural Protection Areas"
+stewards="UDAF"
+abstract="These datasets contain statewide Agricultural Protection Area boundaries for use in planning and land management." %}
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="AgriculturalProtectionAreas">Agricultural Protection Areas</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/AgriculturalProtectionSM.png %}" alt="Agricultural Protection Areas"
+      loading="lazy" />
+    <p>This layer compiles Utah property parcels that have been included in an Agriculture Protection Area (APA) resolution.</p> 
+    <p>APAs are approved by the county in which they are located, and catalogued by Utah Department of Agriculture and Food.</p>
+    <p>APAs provide legal protection for agricultural land uses and activities, it also provides notice to neighboring landowners that they border an APA and should expect normal agricultural activities to take place.</p>
+    <p>Not every county has created APAs; Sanpete and Sevier Counties have created APAs, but they are currently not included in this dataset.</p>
+    <p><a href="https://le.utah.gov/xcode/Title17/Chapter41/17-41.html">Utah Code Title 17, Chapter 41(Agriculture, Industrial, or Critical Infrastructure Materials Protection Areas)</a> details how Agriculture Protection Areas are created.</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://ag.utah.gov/farmers/conservation-division/ag-land-preservation/">General Agricultural Protection Areas Information</a>
+    </ul>
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+  </div>
+  {% include packagedata.html name="AgriculturalProtectionAreas"
+  info=page.AgriculturalProtectionAreas %}
+</div>
