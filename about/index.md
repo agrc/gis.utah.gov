@@ -59,7 +59,7 @@ UGRC is funded through a combination of State general and restricted funds and c
 - Custom Cartography
 - [Custom Web Map Apps]({% link developer/index.md %})
 - Data Acquisition Partnerships & Contracting
-- [GIS Coordination Newsletter]({% link agrc-newsletter/index.html %})
+- [GIS Coordination Newsletter]({% link ugrc-newsletter/index.md %})
 - [gis.utah.gov website]({% link _posts/2016-03-25-about-our-new-v6-website-in-ghpages.md %})
 {: .dotless .no-padding }
 </div>
