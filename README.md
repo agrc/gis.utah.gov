@@ -161,9 +161,10 @@ Item:
   hub:
     name: ArcGIS Online name exactly eg Utah Address Points [required]
     alias:  The name you would prefer to display instead of the value for name [optional]
-    item_id: the item id [required]
-    org: the sharing org name e.g. `SITLA`. When an org shares items it gets prefixed with their name e.g. `/SITLA::land-ownership`
-    skip_shapefile: true or false [optional]
-    skip_fgdb: true or false [optional]
-    skip_hub: true or false [optional]
+    item_id: The item id [required]
+    layer_id: The layer id within the feature service [optional]. Defaults to 0 (for services with a single layer).
+    org: The sharing org name e.g. `SITLA`. When an org shares items it gets prefixed with their name e.g. `/SITLA::land-ownership`
+    skip_shapefile: True or false [optional]
+    skip_fgdb: True or false [optional]
+    skip_hub: True or false [optional]
 ```
