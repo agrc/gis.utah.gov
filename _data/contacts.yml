@@ -98,15 +98,15 @@ boundaries:
   phone: 385-401-9667
   agency: UGRC
 zip_codes:
-  name: Erik Neemann
-  email: ENeemann@utah.gov
-  phone: 385-258-4299
+  name: Greg Bunce
   agency: UGRC
+  email: GBunce@utah.gov
+  phone: 801-349-0039
 emergencyzones:
-  name: Erik Neemann
-  email: ENeemann@utah.gov
-  phone: 385-258-4299
+  name: Greg Bunce
   agency: UGRC
+  email: GBunce@utah.gov
+  phone: 801-349-0039
 sitla:
   name: the GIS staff
   email: TLA-GIS@utah.gov
@@ -356,10 +356,10 @@ census:
     email: GBunce@utah.gov
     agency: UGRC
 voter_count_tool:
-  name: Erik Neemann
-  email: ENeemann@utah.gov
-  phone: 385-258-4299
+  name: Greg Bunce
   agency: UGRC
+  email: GBunce@utah.gov
+  phone: 801-349-0039
 gisac:
   - name: Matt Peters
     email: mpeters@utah.gov
@@ -368,10 +368,10 @@ gisac:
     email: gbunce@utah.gov
     agency: UGRC
 os_places:
-  name: Erik Neemann
-  email: ENeemann@utah.gov
-  phone: 385-258-4299
+  name: Greg Bunce
   agency: UGRC
+  email: GBunce@utah.gov
+  phone: 801-349-0039
 housing_unit_inventory:
   - name: Jacob Adams
     agency: UGRC
