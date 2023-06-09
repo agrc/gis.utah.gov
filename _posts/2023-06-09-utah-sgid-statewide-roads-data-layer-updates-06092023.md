@@ -20,7 +20,7 @@ The following are highlights from this month's update.
 
 New roads were added and road names and address ranges were updated for the following counties:
 
-- **Cache Elder County:** Obtained roads data on 05/20/2023. Previous update was on 03/10/2023.
+- **Cache County:** Obtained roads data on 05/20/2023. Previous update was on 03/10/2023.
 - **Davis County:** Obtained roads data on 05/20/2023. Previous update was on 04/06/2023.
 - **Summit County:** Obtained roads data on 04/15/2023. Previous update was on 09/07/2022.
 - **Utah County:** Obtained roads data on 05/17/2023. Previous update was on 04/06/2023.
