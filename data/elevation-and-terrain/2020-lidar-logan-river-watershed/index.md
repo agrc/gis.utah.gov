@@ -1,17 +1,14 @@
 ---
-status: publish
-layout: page
+title: 2020 Logan River Watershed Lidar Elevation Data
+author:
+  display_name: Rick Kelson
+  email: rkelson@utah.gov
 tags:
   - dem
   - lidar
   - elevation
-author:
-  display_name: Rick Kelson
-  email: rkelson@utah.gov
-published: true
-date: 2023-06-14 12:30:30
-title: 2020 Logan River Watershed Lidar Elevation Data
 categories: []
+date: 2023-06-14 12:30:30
 ---
 
 ![Sample]({% link images/lidar_logan_river_watershed_utah_2020.png %}){: .flex .flex--center .outline }
