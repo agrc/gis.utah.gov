@@ -30,7 +30,7 @@ During 2020 Utah State University, Utah Water Research Laboratory acquired [~216
     {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/logan-river-watershed-2020/LoganRiverWatershed_AerialLiDAR_Report.zip" target="_blank">Project Report</a>
   </li>
   <li>
-    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/logan-river-watershed-2020/LoganRiverWatershed_AerialLiDAR_Report_shps.zip" target="_blank">shapefiles</a> of project area, tile indices, and breaklines
+    {% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} Download <a href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/logan-river-watershed-2020/LoganRiverWatershed_AerialLiDAR_Shapefiles.zip" target="_blank">shapefiles</a> of project area and tile index
   </li>
 </ul>
 
