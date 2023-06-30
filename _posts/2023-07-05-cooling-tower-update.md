@@ -3,7 +3,7 @@ title: 'Results Update: Detecting Cooling Towers with Computer Vision Tools'
 author:
   display_name: Erik Neemann
   email: eneemann@slco.org
-date: 2023-07-05 09:00:00
+date: 2023-06-30 09:00:00
 categories:
   - Featured
 tags:
