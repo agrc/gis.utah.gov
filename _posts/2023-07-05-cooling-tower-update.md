@@ -21,11 +21,11 @@ If you were at the 2023 Utah Geographic Information Council (UGIC) Conference in
 
 Knowing the location of cooling towers in the state is important to DHHS, because it can significantly streamline investigations into Legionella outbreaks.  Legionella is a bacteria that can cause a serious type of pneumonia called Legionnaires' disease.  The bacteria can grow/spread in large building water systems, including water tanks, HVAC components, large/complex plumbing systems, and cooling towers. Cooling towers are particularly concerning because they can release aerosolized water into the atmosphere. If Legionella is present, the aerosolized water can spread the bacteria over miles ([Controlling Legionella in Cooling Towers](https://www.cdc.gov/legionella/wmp/control-toolkit/cooling-towers.html)).
 
-Cooling towers can cause outbreaks of Legionnaires’ disease when they are not adequately maintained. They are often investigated and located using aerial imagery during Legionnaires' outbreaks and have distinctive features that make them identifiable([CDC Procedures for Identifying Cooling Towers](https://www.cdc.gov/legionella/health-depts/environmental-inv-resources/id-cooling-towers.html)).  The combination of distinctive features and high resolution of aerial imagery make detecting cooling towers a good candidate for computer vision tools. In fact, researchers and the CDC have already begun to use object-detection models like [TowerScout](https://github.com/TowerScout/TowerScout) to identify potential cooling towers in aerial imagery.  TowerScout is based on the [YOLOv5 model](https://github.com/ultralytics/yolov5) within the [PyTorch](https://pytorch.org/) framework. For this project, we’ve employed a pre-trained version of the TowerScout model to scan aerial imagery in Utah.
+Cooling towers can cause outbreaks of Legionnaires’ disease when they are not adequately maintained. They are often investigated and located using aerial imagery during Legionnaires' outbreaks and have distinctive features that make them identifiable ([CDC Procedures for Identifying Cooling Towers](https://www.cdc.gov/legionella/health-depts/environmental-inv-resources/id-cooling-towers.html)).  The combination of distinctive features and high resolution of aerial imagery make detecting cooling towers a good candidate for computer vision tools. In fact, researchers and the CDC have already begun to use object-detection models like [TowerScout](https://github.com/TowerScout/TowerScout) to identify potential cooling towers in aerial imagery.  TowerScout is based on the [YOLOv5 model](https://github.com/ultralytics/yolov5) within the [PyTorch](https://pytorch.org/) framework. For this project, we’ve employed a pre-trained version of the TowerScout model to scan aerial imagery in Utah.
 
 ## Methodology
 
-The rest of this blog post will largely focus on the project results, because the methodology of the project was covered in detail in the UGIC presentation (slides 33-43).  A brief summary is listed below:
+The rest of this blog post will largely focus on the project results, because the methodology of the project was covered in detail in the [UGIC presentation](https://agrc.github.io/Presentations/UGIC/2023/ComputerVision.pdf) (slides 33-43).  A brief summary is listed below:
 
 1. Build imagery index & processing footprint
    - Build tile index at highest zoom level (20)
@@ -52,7 +52,7 @@ Much like the parcel detection project for the Utah Department of Transportation
 
 In the PyTorch model, we took the approach of maximizing cooling tower detections by lowering the model's confidence threshold.  That way, we could prioritize data validation on the high-confidence detections, but keep the low-confidence detections available, in case some of them were good or we wanted to review additional detections at a later time.  (In testing, some detections with confidence scores as low as 0.01 ended up being valid).
 
-In the end, the TowerScout model detected 6,324 potential towers with a confidence score > 0.5.  These relatively high-confidence detections were manually reviewed, and 1561 tower locations were validated.
+In the end, the TowerScout model detected 6,324 potential towers with a confidence score > 0.5.  These relatively high-confidence detections were manually reviewed, and 1,561 tower locations were validated.
 
 ![Map of cooling towers with confidence > 0.5]({% link images/cooling_tower_map.png %} "Map of cooling towers with confidence > 0.5"){: .flex .flex--center}
 
