@@ -3,7 +3,7 @@ title: 'Results Update: Detecting Cooling Towers with Computer Vision Tools'
 author:
   display_name: Erik Neemann
   email: eneemann@slco.org
-date: 2023-07-04 09:00:00
+date: 2023-06-30 09:00:00
 categories:
   - Featured
 tags:
@@ -19,9 +19,9 @@ If you were at the 2023 Utah Geographic Information Council (UGIC) Conference in
 
 ## Background
 
-Knowing the location of cooling towers in the state is important to DHHS, because it can significantly streamline investigations into Legionella outbreaks. Legionella is a bacteria that can cause a serious type of pneumonia called Legionnaires' disease. The bacteria can grow/spread in large building water systems, including water tanks, HVAC components, large/complex plumbing systems, and cooling towers. Cooling towers are particularly concerning because they can release aerosolized water into the atmosphere. If Legionella is present, the aerosolized water can spread the bacteria over miles[CDC].
+Knowing the location of cooling towers in the state is important to DHHS, because it can significantly streamline investigations into Legionella outbreaks. Legionella is a bacteria that can cause a serious type of pneumonia called Legionnaires' disease. The bacteria can grow/spread in large building water systems, including water tanks, HVAC components, large/complex plumbing systems, and cooling towers. Cooling towers are particularly concerning because they can release aerosolized water into the atmosphere. If Legionella is present, the aerosolized water can spread the bacteria over miles[^1].
 
-Cooling towers can cause outbreaks of Legionnaires’ disease when they are not adequately maintained. They are often investigated and located using aerial imagery during Legionnaires' outbreaks and have distinctive features that make them identifiable[Identifying Cooling Towers]. The combination of distinctive features and the high resolution of aerial imagery makes detecting cooling towers a good candidate for computer vision tools. In fact, researchers and the CDC have already begun to use object-detection models like [TowerScout](https://github.com/TowerScout/TowerScout) to identify potential cooling towers in aerial imagery. TowerScout is based on the [YOLOv5 model](https://github.com/ultralytics/yolov5) within the [PyTorch](https://pytorch.org/) framework. For this project, the TowerScout developers provided us a pre-trained version of the model, which we used to scan aerial imagery in Utah. The Python code was executed using [Cloud Run Jobs](https://cloud.google.com/run/docs/create-jobs) in the Google Cloud Platform.
+Cooling towers can cause outbreaks of Legionnaires’ disease when they are not adequately maintained. They are often investigated and located using aerial imagery during Legionnaires' outbreaks and have distinctive features that make them identifiable[^2]. The combination of distinctive features and the high resolution of aerial imagery makes detecting cooling towers a good candidate for computer vision tools. In fact, researchers and the CDC have already begun to use object-detection models like [TowerScout](https://github.com/TowerScout/TowerScout) to identify potential cooling towers in aerial imagery. TowerScout is based on the [YOLOv5 model](https://github.com/ultralytics/yolov5) within the [PyTorch](https://pytorch.org/) framework. For this project, the TowerScout developers provided us a pre-trained version of the model, which we used to scan aerial imagery in Utah. The Python code was executed using [Cloud Run Jobs](https://cloud.google.com/run/docs/create-jobs) in the Google Cloud Platform.
 
 ## Methodology
 
@@ -60,5 +60,5 @@ In the end, the TowerScout model detected 6,324 potential towers with a confiden
 
 The final steps in the project will include enriching the geospatial data with additional attributes and building a web map for DHHS to use in Legionella outbreak investigations. The additional attributes will include things like the nearest address, county, municipality (if applicable), zip code, small health statistical area, health department, etc., for a given cooling tower.
 
-[CDC]: https://www.cdc.gov/legionella/wmp/control-toolkit/cooling-towers.html "Controlling Legionella in Cooling Towers"
-[Identifying Cooling Towers]: https://www.cdc.gov/legionella/health-depts/environmental-inv-resources/id-cooling-towers.html "CDC Procedures for Identifying Cooling Towers"
+[^1]: Controlling Legionella in Cooling Towers, accessed July 03, 2023. [https://www.cdc.gov/legionella/wmp/control-toolkit/cooling-towers.html](https://www.cdc.gov/legionella/wmp/control-toolkit/cooling-towers.html).
+[^2]: CDC Procedures for Identifying Cooling Towers, access July 03, 2023. [https://www.cdc.gov/legionella/health-depts/environmental-inv-resources/id-cooling-towers.html](https://www.cdc.gov/legionella/health-depts/environmental-inv-resources/id-cooling-towers.html)
