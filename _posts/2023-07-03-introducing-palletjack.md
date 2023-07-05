@@ -23,6 +23,7 @@ I'm excited to introduce `palletjack`, a library for updating hosted feature ser
 palletjack can speed up your ETL script development time by handling all the drudgery of extracting data from external sources and loading your transformed data into AGOL hosted feature layers, freeing you to focus on the transformations specific to your unique project.
 
 ![palletjack does lots of the repetitive work for you]({% link images/palletjack_overview.png %})
+{: .flex .flex--center}
 
 palletjack uses [spatially-enabled DataFrames](https://developers.arcgis.com/python/guide/introduction-to-the-spatially-enabled-dataframe/) as the common data format between many different external data formats and hosted feature services in AGOL. They allow you to simply and quickly transform your data as desired: adding or renaming attributes, calculating new attributes, or merging multiple datasets into one.
 
@@ -76,4 +77,4 @@ I've tried to make the [palletjack documentation](https://agrc.github.io/palletj
 ## Um, A Little Help Here?
 {: .text-left}
 
-If you run into problems using palletjack, please reach out! You can contact {% include contact.html subject=page.title contact=site.data.contacts.palletjack text=' ' hide-punctuation=true %} directly if you need help. If you find a bug, or want to keep track of updates, you can watch the palletjack [GitHub repo](https://github.com/agrc/palletjack).
+If you run into problems using palletjack, please reach out! You can contact {% include contact.html subject=page.title contact=site.data.contacts.palletjack text=' ' hide-punctuation=true %} if you need help. If you find a bug, or want to keep track of updates, you can watch the palletjack [GitHub repo](https://github.com/agrc/palletjack).
