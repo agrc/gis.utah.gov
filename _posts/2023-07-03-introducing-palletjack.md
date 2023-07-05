@@ -75,4 +75,4 @@ I've tried to make the [palletjack documentation](https://agrc.github.io/palletj
 
 ## Um, Some Help Here?
 
-If you run into problems using palletjack, please reach out! You can contact {% include contact.html subject=palletjack help contact=site.data.contacts.palletjack %} directy if you need help. If you find a bug, or want to keep track of updates, you can watch the palletjack [GitHub repo](https://github.com/agrc/palletjack).
+If you run into problems using palletjack, please reach out! You can contact {% include contact.html subject=page.title contact=site.data.contacts.palletjack %} directy if you need help. If you find a bug, or want to keep track of updates, you can watch the palletjack [GitHub repo](https://github.com/agrc/palletjack).
