@@ -58,7 +58,7 @@ While palletjack can't magically figure out your transformations for you, it doe
 ## Step Three: Load the Data into an Existing Hosted Feature Service
 {: .text-left}
 
-Now that our new DataFrame looks the way we want it, it's time to update our live data. The [`palletjack.load.FeatureServiceUpdater`](https://agrc.github.io/palletjack/palletjack/load.html#palletjack.load.FeatureServiceUpdater) class provides four methods for each possible updating scenario: adding new features, updating existing features, removing features we don't need any longer, and finally truncating the entire service and loading completely new data. It's your job to figure out which one (or more) methods to use. Each one takes a DataFrame as its input,
+Now that our new DataFrame looks the way we want it to, it's time to update our live data. The [`palletjack.load.FeatureServiceUpdater`](https://agrc.github.io/palletjack/palletjack/load.html#palletjack.load.FeatureServiceUpdater) class provides four methods for each possible updating scenario: adding new features, updating existing features, removing features we don't need any longer, and finally truncating the entire service and loading completely new data. It's your job to figure out which one (or more) methods to use. They each take a DataFrame of new/updated info to push up to the feature service (or a list of ObjectIDs to delete).
 
 Before palletjack, I had to reinvent the wheel every time we needed to update a feature service. I'd often go copy/paste code from a different project—and then spend hours troubleshooting when it wouldn't work with this particular dataset. Later, when I'd update the uploading code in the first project, I'd never remember to update the second.
 
