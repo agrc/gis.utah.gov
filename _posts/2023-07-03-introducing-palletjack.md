@@ -3,7 +3,7 @@ title: "Introducing palletjack: Updating AGOL feature services from external sou
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2023-07-03 11:00:00
+date: 2023-07-05 15:00:00
 categories:
   - Featured
   - Developer
