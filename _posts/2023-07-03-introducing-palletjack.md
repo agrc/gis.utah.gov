@@ -18,7 +18,7 @@ Do you hate writing the same bits of code over and over again? Do you hate fixin
 
 Me too!
 
-I'm excited to introduce `palletjack`, a library for updating hosted feature services in AGOL. Instead of being an all-in-one tool, palletjack is a toolbox of classes and their methods to help you in each part of the Extract, Transform, and Load steps of your own ETL scripts.
+I'm excited to introduce `palletjack`, a python data pipeline library for updating feature services that are hosted in ArcGIS Online. palletjack is a toolbox of classes and their methods to help you in each part of the Extract, Transform, and Load steps of your own ETL scripts, instead of being a stand-alone application that you feed your data into.
 
 palletjack can speed up your ETL script development time by handling all the drudgery of extracting data from external sources and loading your transformed data into AGOL hosted feature layers, freeing you to focus on the transformations specific to your unique project.
 
