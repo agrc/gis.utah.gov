@@ -74,5 +74,6 @@ Installing palletjack is easy- just run `pip install ugrc-palletjack` inside you
 I've tried to make the [palletjack documentation](https://agrc.github.io/palletjack/palletjack/) as helpful and useful as possible. In addition, palletjack tries to add more info to common errors to help you track down what went wrong or what you need to change in your data. The [source repo](https://github.com/agrc/palletjack/) has an [example script](https://github.com/agrc/palletjack/blob/main/docs/examples.py) with some simplified examples. Finally, you're free to crib from our scripts that use palletjack (which we call "skids")—just search our GitHub organization for ["skid"](https://github.com/agrc?q=skid&type=all&language=&sort=). Be warned, though, these have a lot of extra code meant to facilitate running the script as a Google Cloud Function.
 
 ## Um, Some Help Here?
+{: .text-left}
 
-If you run into problems using palletjack, please reach out! You can contact {% include contact.html subject=page.title contact=site.data.contacts.palletjack %} directy if you need help. If you find a bug, or want to keep track of updates, you can watch the palletjack [GitHub repo](https://github.com/agrc/palletjack).
+If you run into problems using palletjack, please reach out! You can contact {% include contact.html subject=page.title contact=site.data.contacts.palletjack text='' hide-punctuation=true %} directy if you need help. If you find a bug, or want to keep track of updates, you can watch the palletjack [GitHub repo](https://github.com/agrc/palletjack).
