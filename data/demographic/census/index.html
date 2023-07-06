@@ -26,7 +26,7 @@ categories: []
   - url: https://drive.google.com/uc?id=1sv6pAi-fn6UPbMHJ2BZzIM9ApBRAZLVP&export=download
     label: Utah Census Block 2020 Streamlined Race Data in File Geodatabase format
   updates:
-    - August, 2021
+    - August 2021
 2000Census:
   downloads:
     - url: https://drive.google.com/drive/folders/16hcPe8qHPEtwLQPPbzg6HFUTMutRY4Vq
@@ -52,25 +52,31 @@ categories: []
     - url: https://opendata.arcgis.com/datasets/ad629aab2f89456c82457aac06c59601_0.zip
       label: 'Shapefile: Census Tracts'
   updates:
-    - January, 2011
+    - January 2011
 PopulatedBlockAreas2010Approximation:
   hub:
     name: Utah Population Block Areas 2010 Approx
     item_id: 061407fed6324bcfabf1813764caef0a
   updates:
-    - January, 2011
+    - January 2011
 PopulatedPlacePoints2010Approximation:
   hub:
     name: Utah Population Place Points 2010 Approx
     item_id: 03158991802e4bf0b9cc3234eddd0e76
   updates:
-    - January, 2011
+    - January 2011
 UrbanAreasCensus2010:
   hub:
     name: Utah Urban Areas Census 2010
     item_id: 5fefbcf3e7a5499c845872d0be11b1c2
   updates:
-    - January, 2011
+    - January 2011
+UrbanAreasCensus2020:
+  hub:
+    name: Utah Urban Areas Census 2020
+    item_id: 
+  updates:
+    - July 2023
 ---
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/censusmain_2.png %}" alt="2010 Demographic Data" loading="lazy" />
@@ -223,6 +229,24 @@ with just a few modifications for usability." %}
   {% include packagedata.html name="PopulatedPlacePoints2010Approximation"
   info=page.PopulatedPlacePoints2010Approximation %}
 </div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="UrbanAreasCensus2020">Urban Areas Census 2020</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <img class="inline-text-left outline" src="{% link images/UrbanAreas.png %}" alt="Urban Areas Census 2020"
+      loading="lazy" />
+    <p>The urban areas created by the US Census Bureau "represent densely developed territory, and encompass residential, commercial, and other nonresidential urban land uses. Each urban area must encompass at least 2,000 housing units or at least 5,000 people." They were created by the Bureau following the 2020 census based on the population and housing unit density of individual blocks. </p>
+    <p>The 2020 Census increased the urban population and housing unit count requirements for the first time since 1910, resulting in differences between the 2010 and 2020 boundaries beyond those resulting from population change. In addition, they also stopped distinguishing between "urbanized areas" and "urban clusters" and renamed areas as needed to reflect the updated boundaries. </p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li><a href="https://www.census.gov/">U.S. Census Bureau</a></li>
+      <li><a
+          href="https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html">Urban Areas resource page</a></li>
+    </ul>
+    <p>{% include contact.html subject=page.title contact=site.data.contacts.census %}</p>
+  </div>
+  {% include packagedata.html name="UrbanAreasCensus2020"
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="UrbanAreasCensus2010">Urban Areas Census 2010</h3>
