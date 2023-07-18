@@ -18,7 +18,7 @@ date: 2023-06-14 12:30:30
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During 2020 Utah State University, Utah Water Research Laboratory acquired [~216 square miles]({% link images/lidar_logan_river_watershed_utah_2020_coverage.png %}) of 8 points per meter LiDAR of the Logan River Watershed in Northern Utah. The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have been tested to a 0.106 ft vertical RMSE accuracy and are available for download. This elevation data was collected August 12-13, 2020.
+During 2020 Utah State University, Utah Water Research Laboratory acquired [~216 square miles]({% link images/lidar_logan_river_watershed_utah_2020_coverage.png %}) of 8 points per meter LiDAR of the Logan River Watershed in Northern Utah. The 0.5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have been tested to a 0.106 ft vertical RMSE accuracy and are available for download. This elevation data was collected August 12-13, 2020.
 
 <ul class="dotless">
   <li>
