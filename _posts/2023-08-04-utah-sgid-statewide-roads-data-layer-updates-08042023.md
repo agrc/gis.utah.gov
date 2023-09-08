@@ -20,7 +20,7 @@ The following are highlights from this month's update.
 
 New roads were added and road names and address ranges were updated for the following counties:
 
-- **Davis County:** Obtained roads data on 07/18/2023. Previous update was on 07/21/20233.
+- **Davis County:** Obtained roads data on 07/18/2023. Previous update was on 07/21/2023.
 - **Salt Lake County:** Obtained roads data on 07/17/2023. Previous update was on 07/21/2023.
 - **San Juan County:** Obtained roads data on 07/17/2023. Previous update was on 10/07/2023.
 - **Summit County:** Obtained roads data on 07/19/2023. Previous update was on 09/07/2022.
