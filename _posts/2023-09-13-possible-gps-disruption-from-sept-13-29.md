@@ -22,7 +22,8 @@ Testing will be centered on the Dugway Proving Grounds with a 199.1 mile radius 
 **Mountain Home, Idaho (211.7 Mile Radius): September 13th - 29th, 2023**
 
 Testing will occur near Mountain Home, ID with a 211.7 mile radius taking place between 1400-1700 hours and 1900-2300 hours on varying dates, as listed below:
-| Date | Time |
+
+| Date      | Time                |
 | --------- | ------------------- |
 | 13 SEP 23 | 1400 MDT – 1700 MDT |
 | 14 SEP 23 | 1900 MDT - 2300 MDT |
