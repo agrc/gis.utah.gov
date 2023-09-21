@@ -23,6 +23,7 @@ License: [MIT](/LICENSE).
 
 - [Kramdown reference](http://kramdown.gettalong.org/quickref.html)
 - [Jekyll Cheat Sheet](http://cheat.jekyll.tips/)
+- [Post/Page Templater](https://agrc.github.io/templater/) - Quickly bootstrap the frontmatter for a new post or page.
 
 ## Markdown syntax conventions
 
