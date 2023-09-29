@@ -23,7 +23,7 @@ Please keep in mind that the coordinate frame on the new platform has been updat
 
 New stations have been added at Antelope Island in Davis County and to Beaver in Beaver County. This widens and strengthens the coverage area along the west side of Davis County and the I-15 corridor in the south.
 
-A map showing the station locations and health of the stations can be viewed on the web page [here](http://www.turngps.utah.gov/Map/SensorMap.aspx).
+A map showing the station locations and health of the stations can be viewed on the web page [here](https://web.archive.org/web/20150315050819/http://turngps.utah.gov:80/Map/SensorMap.aspx).
 
 There are still 14 stations that are GPS only and we are in the process of changing those out. The other 68 stations throughout the entire network are capable of receiving data from multiple satellite constellations including satellites from the USA GPS system, Russian GLONASS System, European Galileo and the Chinese COMPASS System.
 
