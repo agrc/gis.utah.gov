@@ -12,7 +12,9 @@ jobs:
 
     steps:
       - name: ⬇️ Set up code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          show-progress: false
 
       - name: 🐍 Install Python
         uses: actions/setup-python@v4
