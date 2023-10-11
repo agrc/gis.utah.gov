@@ -9,9 +9,10 @@ categories:
 tags:
   - municipal boundaries
   - annexations
+---
+It seems like 2023 is flying by; We're already into October and fall is here. It has been a quiet summer for annexations, presumably most folks were dealing with the special election. Utah did have a few annexations and once again Utah County led the way.
 
-Seems like 2023 is flying, we’re already into October and fall is here. It has been a quiet summer for annexations, most folks were dealing with the special election. Did have a few and once again Utah County led the way. 
-Be sure to check out all the changes that have been made, and to make sure your boundaries are where they should be, view them on the [Utah Municipality Modifications map](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63). All recent annexation documents can be viewed here: [Utah Lt. Governor Municipal Certifications](https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/) website. This website is still in a transition phase so it may change in the future.
+Be sure to check out all the changes that have been made and to make sure your boundaries are where they should be. Wiew them on the [Utah Municipality Modifications map](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63). All recent annexation documents can be viewed on the [Utah Lt. Governor Municipal Certifications](https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/) website. This website is still in a transition phase so it may change in the future.
 
 The following table shows the changes and annexations (listed by county and city) since July  1, 2023:
  
