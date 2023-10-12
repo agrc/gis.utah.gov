@@ -6,8 +6,9 @@
         "node": true
     },
     "globals": {
-        'List'
-        },
+        "List": true,
+        "gtag": true
+    },
     "rules": {
         "no-bitwise": 2,
         "curly": [

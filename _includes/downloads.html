@@ -26,34 +26,25 @@
 <script>
   {%- if include.skip_shapefile == nil or include.skip_shapefile == false -%}
   document.getElementById("{{ id }}-shp").addEventListener('click', function () {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'data',
-      eventAction: 'shapefile',
-      eventLabel: "{{ id }}",
-      transport: 'beacon'
+    gtag('event', 'data', {
+      action: 'shapefile',
+      label: "{{ id }}",
     });
   });
   {%- endif -%}
   {%- if include.skip_fgdb == nil or include.skip_fgdb == false -%}
   document.getElementById("{{ id }}-gdb").addEventListener('click', function () {
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'data',
-        eventAction: 'geodatabase',
-        eventLabel: "{{ id }}",
-        transport: 'beacon'
+      gtag('event', 'data', {
+        action: 'geodatabase',
+        label: "{{ id }}",
       });
     });
     {%- endif -%}
     {%- if include.skip_hub == nil or include.skip_hub == false -%}
     document.getElementById("{{ id }}-hub").addEventListener('click', function () {
-        ga('send', {
-          hitType: 'event',
-          eventCategory: 'data',
-          eventAction: 'open-data',
-          eventLabel: "{{ id }}",
-          transport: 'beacon'
+        gtag('event', 'data', {
+          action: 'open-data',
+          label: "{{ id }}",
         });
       });
     {%- endif -%}

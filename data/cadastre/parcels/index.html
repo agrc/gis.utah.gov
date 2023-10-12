@@ -83,7 +83,7 @@ abstract=abstract %}
           <td>Box Elder</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-box-elder-county-parcels">July 2023</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-box-elder-county-parcels-lir">2020</a></td>
-          <td><a title="county parcel web app" href="http://gis.boxeldercounty.org/webmap/" 
+          <td><a title="county parcel web app" href="http://gis.boxeldercounty.org/webmap/"
               target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
@@ -104,7 +104,7 @@ abstract=abstract %}
           <td>Daggett</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-daggett-county-parcels">June 2021</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-daggett-county-parcels-lir">2021</a></td>
-          <td><a title="county parcel web app" href="https://daggettutah.maps.arcgis.com/apps/webappviewer/index.html?id=29791ce279974618857a9a1ebf97f6f2" 
+          <td><a title="county parcel web app" href="https://daggettutah.maps.arcgis.com/apps/webappviewer/index.html?id=29791ce279974618857a9a1ebf97f6f2"
               target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
@@ -147,14 +147,14 @@ abstract=abstract %}
           <td>Iron</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-iron-county-parcels">September 2023</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-iron-county-parcels-lir">2023</a></td>
-          <td><a title="county parcel web app" href="https://irongis.maps.arcgis.com/apps/webappviewer/index.html?id=4b8e40e3c17d45d282a2b1515fbdd160" 
+          <td><a title="county parcel web app" href="https://irongis.maps.arcgis.com/apps/webappviewer/index.html?id=4b8e40e3c17d45d282a2b1515fbdd160"
               target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
           <td>Juab</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-juab-county-parcels">May 2023</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-juab-county-parcels-lir">2023</a></td>
-          <td><a title="county parcel search" href="http://63.78.118.148/recorder/web/login.jsp" 
+          <td><a title="county parcel search" href="http://63.78.118.148/recorder/web/login.jsp"
                  target="_blank" rel="noopener">county parcel search</a></td>
         </tr>
         <tr>
@@ -168,7 +168,7 @@ abstract=abstract %}
           <td>Millard</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-millard-county-parcels">August 2022</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-millard-county-parcels-lir">2023</a></td>
-          <td><a title="county parcel web app" href="https://millardgis.maps.arcgis.com/apps/webappviewer/index.html?id=a6349d390b9041a1aeae35e29a398035" 
+          <td><a title="county parcel web app" href="https://millardgis.maps.arcgis.com/apps/webappviewer/index.html?id=a6349d390b9041a1aeae35e29a398035"
               target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
@@ -196,7 +196,7 @@ abstract=abstract %}
           <td>Salt Lake</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-salt-lake-county-parcels">September 2023</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-salt-lake-county-parcels-lir">2023</a></td>
-          <td><a title="county parcel web app" href="https://slco.org/assessor/new/query/intropage.cfm" 
+          <td><a title="county parcel web app" href="https://slco.org/assessor/new/query/intropage.cfm"
               target="_blank" rel="noopener">county parcel web app</a></td>
         </tr>
         <tr>
@@ -261,7 +261,7 @@ abstract=abstract %}
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-washington-county-parcels">September 2023</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-washington-county-parcels-lir">2023</a></td>
           <td><a title="county parcel web app"
-              href="https://geoprodvm.washco.utah.gov/Html5Viewer/?viewer=WashingtonCounty" 
+              href="https://geoprodvm.washco.utah.gov/Html5Viewer/?viewer=WashingtonCounty"
               target="_blank" rel="noopener">county parcel web app</a></td>
           <td></td>
         </tr>
@@ -276,7 +276,7 @@ abstract=abstract %}
           <td>Weber</td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-weber-county-parcels">September 2023</a></td>
           <td><a href="https://opendata.gis.utah.gov/datasets/utah-weber-county-parcels-lir">2023</a></td>
-          <td><a title="county parcel search" href="https://www3.co.weber.ut.us/psearch/" 
+          <td><a title="county parcel search" href="https://www3.co.weber.ut.us/psearch/"
               target="_blank" rel="noopener">county parcel search</a></td>
         </tr>
         <tr>
@@ -288,12 +288,9 @@ abstract=abstract %}
       <script>
         document.getElementById('UtahParcels-dlist-table').addEventListener('click', function (evt) {
           if (evt.target.tagName.toLowerCase() === 'a') {
-            ga('send', {
-              hitType: 'event',
-              eventCategory: 'data',
-              eventAction: 'specific-download',
-              eventLabel: 'specific-download-parcels',
-              transport: 'beacon'
+            gtag('event', 'data', {
+              action: 'specific-download',
+              label: 'specific-download-parcels',
             });
           }
         });

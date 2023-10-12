@@ -15,12 +15,9 @@
       site.baseurl }}" id="parent--category">{{ category }}</a></li>
     <script>
       document.getElementById('parent--category').addEventListener('click', function () {
-        ga('send', {
-          hitType: 'event',
-          eventCategory: 'click',
-          eventAction: 'parent-category',
-          eventLabel: 'parent-category-{{ category | downcase }}',
-          transport: 'beacon'
+        gtag('event', 'click', {
+          action: 'parent-category',
+          label: 'parent-category-{{ category | downcase }}',
         });
       });
     </script>
@@ -36,12 +33,9 @@
 {%- if include.download != nul -%}
 <script>
   document.getElementById('package--download').addEventListener('click', function () {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'data',
-      eventAction: 'package-download',
-      eventLabel: 'package-download-{{ include.name | downcase | replace: " ", "-" }}',
-      transport: 'beacon'
+    gtag('event', 'data', {
+      action: 'package-download',
+      label: 'package-download-{{ include.name | downcase | replace: " ", "-" }}',
     });
   });
 </script>

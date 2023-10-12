@@ -85,15 +85,12 @@ abstract="This dataset contains the H3 reference polygons covering the State of 
     <script>
       document.getElementById('UtahH3Hexes-dlist-table').addEventListener('click', function (evt) {
         if (evt.target.tagName.toLowerCase() === 'a') {
-          ga('send', {
-            hitType: 'event',
-            eventCategory: 'data',
-            eventAction: 'specific-download',
-            eventLabel: 'specific-download-h3-hexes',
-            transport: 'beacon'
+          gtag('event', 'data', {
+            action: 'specific-download',
+            label: 'specific-download-h3-hexes',
           });
         }
       });
     </script>
   </div>
-</div>  
+</div>
