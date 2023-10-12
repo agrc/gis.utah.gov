@@ -16,7 +16,7 @@ livereload: true
 reload_port: 35729
 analytics:
   google:
-    tracking_id: "UA-11849964-41"
+    tracking_id: "G-MD7LCFF9Y1"
 sass:
   style: compressed
 github:
