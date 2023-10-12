@@ -31,7 +31,7 @@ The following table shows the changes and annexations (listed by county and city
 | Wasatch | Heber City | 1 |
 | Washington | St George | 1 |
 | Weber | Farr West | 1 |
-| Marriott-Slaterville | 1 |
-| North Ogden | 1 |
-| Pleasant View | 1 |
+| | Marriott-Slaterville | 1 |
+| | North Ogden | 1 |
+| | Pleasant View | 1 |
 | Davis & Weber | County Boundary Adjustment | 1 |
