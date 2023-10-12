@@ -1,10 +1,21 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: npm
+    directory: /
     schedule:
-      interval: "monthly"
-  - package-ecosystem: "npm"
-    directory: "/"
+      interval: monthly
+    groups:
+      safe-dependencies:
+        update-types: ['minor', 'patch']
+      major-dependencies:
+        update-types: ['major']
+    commit-message:
+      prefix: deps
+      prefix-development: deps(dev)
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "monthly"
+      interval: monthly
+    groups:
+      ci-dependencies:
+        dependency-type: 'production'
