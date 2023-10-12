@@ -4,7 +4,7 @@ author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 date: 2019-09-16 18:17:41
-update_date: 2020-12-13 12:10:00
+update_date: 2023-10-17 12:10:00
 categories:
   - Featured
 tags:
@@ -20,16 +20,15 @@ You are welcome to download the boundaries for all the project areas as a [shape
 
 [![Project area map]({% link images/2020UtahLidarAcquisition_9_16_20_sm.png %} "view project area map")]({% link images/2020UtahLidarAcquisition_9_16_20.png %}){:.inline-text-right}
 
-#### UPDATE 12/13/2022
+#### UPDATE 10/17/2023
 {: .text-left }
 
-With the exception of the 2020 FEMA HQ project, managed through the USGS Geospatial Product and Service Contracts (GPSC), all other 2020 project areas are completed and available for download from [Raster.utah.gov](https://raster.utah.gov), from the [LiDAR section]({% link data/elevation-and-terrain/index.html %}#LiDAR) of our Elevation and Terrain Data webpage, or from the individual web pages for each project listed below:
+All 2019 and 2020 project areas are completed and available for download from [Raster.utah.gov](https://raster.utah.gov), from the [LiDAR section]({% link data/elevation-and-terrain/index.html %}#LiDAR) of our Elevation and Terrain Data webpage, or from the individual web pages for each project listed below:
 
 - [2020 Central & Southern Utah]({% link data/elevation-and-terrain/2020-lidar-central-southern-utah/index.md %})
 - [2020 Northern & Central Utah]({% link data/elevation-and-terrain/2020-lidar-northern-central-utah/index.md %})
-- [2020 Southern Utah]({% link data/elevation-and-terrain/2020-lidar-southern-utah/index.md %}) 
-
-Preliminary project deliverables for the 2020 FEMA HQ project are available for [Blocks 1-3](https://drive.google.com/file/d/1PuPhfohwLxYQtn0pgLewdUan_EMR6QJM/view?usp=sharing). These include project [rasters](https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/OPR/Projects/UT_FEMA_FS_FlamingGorge_2020_B20/) and [point clouds](https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/UT_FEMA_FS_FlamingGorge_2020_B20/). Block 4 should be available after 5/2023. Here is more [information about downloading](https://drive.google.com/file/d/1a8lx16Iry1PlWanDIDVOFBTZwFVD9KjF/view?usp=sharing).
+- [2020 Southern Utah]({% link data/elevation-and-terrain/2020-lidar-southern-utah/index.md %})
+- [2020 FEMA HQ]({% link data/elevation-and-terrain/2020-lidar-fema-hq/index.md %}) 
 
 ### The Project Areas Include
 {: .text-left }
