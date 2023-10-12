@@ -52,12 +52,9 @@ categories:
   capability over the entire state.</p>
 <script>
   document.getElementById('application__download').addEventListener('click', function () {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'data',
-      eventAction: 'application-download',
-      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
-      transport: 'beacon'
+    gtag('event', 'data', {
+      action: 'application-download',
+      label: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
     });
   });
 </script>

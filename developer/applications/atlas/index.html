@@ -38,12 +38,9 @@ categories:
   <a href="https://github.com/agrc/atlas">Atlas</a> is a GitHub template that you can use to create your own website.</p>
 <script>
   document.getElementById('application__download').addEventListener('click', function () {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'data',
-      eventAction: 'application-download',
-      eventLabel: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
-      transport: 'beacon'
+    gtag('event', 'data', {
+      action: 'application-download',
+      label: 'application-download-{{ page.title | downcase | replace: " ", "-" }}',
     });
   });
 </script>
