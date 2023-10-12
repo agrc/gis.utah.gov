@@ -3,7 +3,7 @@ title: 'Municipal Boundaries, Third quarter update for 2023'
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2023-10-19 8:30:00
+date: 2023-10-10 8:30:00
 categories:
   - SGID Blog
   - Featured
