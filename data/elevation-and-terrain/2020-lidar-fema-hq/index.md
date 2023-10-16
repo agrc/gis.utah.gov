@@ -39,6 +39,6 @@ During 2020 UGRC, the Utah Division of Emergency Management, the Natural Resourc
 
 The naming convention for the tiles are based off the [U.S. National Grid (USNG)](https://www.fgdc.gov/usng/how-to-read-usng/index_html).
 
-This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection with the exception of a small strip on the western edge of the project area in zone 11.
+This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.
 
 {% include contact.html subject=page.title contact=site.data.contacts.elevation %}
