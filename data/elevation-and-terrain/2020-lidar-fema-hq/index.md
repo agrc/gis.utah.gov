@@ -21,7 +21,7 @@ categories: []
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-During 2020 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), the U.S. Forest Service (USFS), and the Federal Emergency Management Agency (FEMA) acquired [~13,686 square miles]({% link images/lidar_femahq_2020_coverage.png %}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR of portions Utah. The .5 and 1 meter resolution bare earth DEMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from [The National Map](https://apps.nationalmap.gov/downloader) {{ contact }} This elevation data was collected between August and November, 2020.
+During 2020 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), the U.S. Forest Service (USFS), and the Federal Emergency Management Agency (FEMA) acquired [~13,686 square miles]({% link images/lidar_femahq_2020_coverage.png %}) of 2 and 8 points per meter Quality Level 1 & 2 LiDAR of portions Utah. The .5 and 1 meter resolution bare earth DEMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from [The National Map](https://apps.nationalmap.gov/downloader) This elevation data was collected between August and November, 2020.
 
 <ul class="dotless">
   <li>
