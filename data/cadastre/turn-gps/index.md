@@ -50,7 +50,7 @@ These are the things you will need to fill out registration form.
 - Physical location/address
 - Mailing  address
 
-With an activated subscription, set your GPS unit's VRS connection address to `168.179.231.9` and port `2101`
+With an activated subscription, set your GPS unit's VRS connection address to `165.239.144.5` and port `2101`
 Enter your new device-specific username and password.
 {: .pop }
 
