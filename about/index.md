@@ -73,7 +73,7 @@ UGRC is funded through a combination of State general and restricted funds and c
 - Spatial Database Design, Integration and Hosting
 - [Statewide Address Point Aggregation]({% link data/location/address-data/index.html %})
 - [Statewide Road Centerline Aggregation]({% link data/transportation/roads-system/index.html %})
-- [Statewide GIS Strategic & Business Plans]({% link about/strategic-and-business-plans/index.html %})
+- Statewide GIS Strategic & Business Plans
 - [TURN GPS sub-centimeter precision]({% link data/cadastre/turn-gps/index.md %})
 {: .dotless .no-padding }
 </div>
