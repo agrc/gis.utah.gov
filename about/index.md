@@ -37,7 +37,7 @@ We are located on the 4th floor of the Taylorsville State Office building. You c
 
 UGRC is directed under [mapping-related sections of Utah statute]({% link about/code/index.html %}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
 
-UGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. At 30+ years old, our full name may sound like its from a by-gone era. But UGRC is how people know us, so we're sticking with it. Years may pass, but our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
+UGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. After many years, our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
 
 UGRC is funded through a combination of State general and restricted funds and cost-recovery revenue sources from project work and grant awards. This hybrid approach ensures some stable base for SGID and coordination activities but keeps us on our toes by requiring us to keep up with the latest developments in our field so we can offer cutting edge GIS consulting services to those in need.
 
