@@ -1,5 +1,6 @@
 ---
 title: 'Note from the Director Regarding the Google Imagery Deprecation'
+published: false
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov

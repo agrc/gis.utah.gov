@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2014-11-05 10:27:43 -0700
 title: Maps Assist in Accessing Election Results
+published: false
 categories:
   - Featured
   - SGID Blog

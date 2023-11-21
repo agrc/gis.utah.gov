@@ -8,6 +8,7 @@ tags:
   - turngps
 date: 2013-09-13 12:41:14 -0600
 title: TURN GPS Network Updates
+published: false
 categories:
   - Featured
   - GPS-surveyor

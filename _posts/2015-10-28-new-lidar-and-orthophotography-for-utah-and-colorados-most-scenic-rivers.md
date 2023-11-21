@@ -13,6 +13,7 @@ tags:
   - sovereign lands
 date: 2015-10-28 11:42:28 -0600
 title: New Lidar and Orthophotography for Utah and Colorado’s Most Scenic Rivers
+published: false
 categories:
   - Featured
   - Guestblog

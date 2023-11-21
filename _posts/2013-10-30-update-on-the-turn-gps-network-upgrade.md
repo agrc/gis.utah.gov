@@ -8,6 +8,7 @@ tags:
   - turn gps
 date: 2013-10-30 11:36:07 -0600
 title: Update on the TURN GPS Network Upgrade
+published: false
 categories:
   - Featured
   - GPS-surveyor

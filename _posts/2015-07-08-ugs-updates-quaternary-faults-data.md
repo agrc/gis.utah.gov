@@ -11,6 +11,7 @@ tags:
   - utah geologic survey
 date: 2015-07-08 11:05:04 -0600
 title: UGS Updates Quaternary Faults Data
+published: false
 categories:
   - Featured
 ---

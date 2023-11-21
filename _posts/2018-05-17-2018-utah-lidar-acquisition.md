@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: '2018 Utah LiDAR Acquisition - Completed'
 author:
   display_name: Rick Kelson

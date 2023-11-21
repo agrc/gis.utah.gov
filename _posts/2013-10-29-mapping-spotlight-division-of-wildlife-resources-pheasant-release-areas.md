@@ -10,6 +10,7 @@ tags:
   - wildlife
 date: 2013-10-29 16:10:49 -0600
 title: 'Mapping Spotlight: DWR Pheasant Release Areas'
+published: false
 categories:
   - Featured
 ---

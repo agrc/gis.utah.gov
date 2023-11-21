@@ -1,5 +1,6 @@
 ---
 title: UGRC ArcGIS Online HTTP Brownout Nov 20 - 22
+published: false
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov

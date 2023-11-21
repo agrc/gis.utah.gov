@@ -7,6 +7,7 @@ tags:
   - surveyor
 date: 2014-05-27 16:30:10 -0600
 title: PLSS Corner Management Web Application Redesign
+published: false
 categories:
   - Featured
   - GPS-surveyor

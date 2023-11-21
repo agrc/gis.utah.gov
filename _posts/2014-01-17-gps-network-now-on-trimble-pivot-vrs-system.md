@@ -8,6 +8,7 @@ tags:
   - trimble pivot
 date: 2014-01-17 12:38:58 -0700
 title: GPS Network now on Trimble Pivot VRS System
+published: false
 categories:
   - Featured
   - GPS-surveyor

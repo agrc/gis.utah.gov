@@ -9,6 +9,7 @@ tags:
   - sitla
 date: 2014-05-29 12:02:17 -0600
 title: Significant Changes to the Utah Land Ownership GIS Layer
+published: false
 categories:
   - Featured
 ---

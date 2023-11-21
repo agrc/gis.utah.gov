@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2012-08-01 15:10:36 -0600
 title: 'Using Utah GIS Elevation Data to Visualize Terrain'
+published: false
 categories:
   - Featured
   - SGID Blog

@@ -8,6 +8,7 @@ tags:
   - sitla
 date: 2016-12-15 22:57:07
 title: Utah PLSS Parcel Fabric Update
+published: false
 categories:
   - Featured
 ---

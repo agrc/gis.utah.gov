@@ -5,6 +5,7 @@ author:
 tags:
   - fire
 date: 2012-07-11 12:39:41 -0600
+published: false
 title: Interactive Map of State Fire Restrictions
 categories:
   - Featured

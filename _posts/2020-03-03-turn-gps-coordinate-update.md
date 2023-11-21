@@ -1,5 +1,6 @@
 ---
 title: 'TURN GPS Coordinate Update'
+published: false
 author:
   display_name: Sean Fernandez
   email: SFernandez@utah.gov

@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2016-08-23 22:42:20
 title: SGID Database Upgrade 10.0 to 10.2
+published: false
 categories:
   - Featured
 ---

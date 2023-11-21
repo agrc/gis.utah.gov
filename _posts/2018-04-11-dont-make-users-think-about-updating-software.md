@@ -67,17 +67,17 @@ The developer has the choice of how (and whether) they want to notify the user o
 The evergreen documentation is in the repository [read me](https://github.com/steveoh/pro-evergreen/blob/master/README.md) and getting started with Pro Evergreen is 10 steps or fewer.
 
 1. Add [Pro Evergreen](https://www.nuget.org/packages/ProEvergreen) to your C# add-in project via [NuGet](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio)
-2. Create an Evergreen object `var evergreen = new Evergreen("github username", "repository");`
-3. Get the version of the add-in currently running `evergreen.GetCurrentAddInVersion();`
-3. Get the latest releases from GitHub `evergreen.GetLatestReleaseFromGithub();`
-4. Compare the versions to see whether the add-in is current `evergreen.IsCurrent(addinVerion, gitHubVersion);`
-5. Update the add-in `evergreen.Update(release);`
+1. Create an Evergreen object `var evergreen = new Evergreen("github username", "repository");`
+1. Get the version of the add-in currently running `evergreen.GetCurrentAddInVersion();`
+1. Get the latest releases from GitHub `evergreen.GetLatestReleaseFromGithub();`
+1. Compare the versions to see whether the add-in is current `evergreen.IsCurrent(addinVerion, gitHubVersion);`
+1. Update the add-in `evergreen.Update(release);`
 
 #### Prerequisites
 
 1. Create a [GitHub account](https://github.com/join)
-2. Create a GitHub repository for your add-in
-2. Create a [GitHub release](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository) using [semantic versioning](https://semver.org/)
-3. Add the compiled add-in as a release asset (_#7 from the GitHub release help_)
+1. Create a GitHub repository for your add-in
+1. Create a [GitHub release](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository) using [semantic versioning](https://semver.org/)
+1. Add the compiled add-in as a release asset (_#7 from the GitHub release help_)
 
 ![ProEvergreen](https://github.com/steveoh/pro-evergreen/raw/master/proevergreen.png){: .flex .flex--center }

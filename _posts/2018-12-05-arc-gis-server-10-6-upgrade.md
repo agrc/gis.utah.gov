@@ -1,5 +1,6 @@
 ---
 title: 'ArcGIS Server 10.6 Upgrade'
+published: false
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov

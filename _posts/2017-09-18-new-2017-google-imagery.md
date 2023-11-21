@@ -1,5 +1,6 @@
 ---
 title: New 2017 Google Imagery
+published: false
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov

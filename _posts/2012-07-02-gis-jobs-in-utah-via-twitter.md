@@ -8,6 +8,7 @@ tags:
   - twitter
   - ugic
 date: 2012-07-02 15:59:16 -0600
+published: false
 title: GIS jobs in Utah....via Twitter
 categories:
   - Featured

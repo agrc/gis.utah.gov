@@ -7,6 +7,7 @@ tags:
   - discover
 date: 2016-12-20 23:21:12
 title: Important GIS Web Services Continuity Notes from DNR and UGRC
+published: false
 categories:
   - Featured
 ---

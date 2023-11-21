@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2015-02-02 16:00:36 -0700
 title: Utah Acquires High Resolution Aerial Photography License
+published: false
 categories:
   - Featured
   - SGID Blog

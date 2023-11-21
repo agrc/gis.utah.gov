@@ -7,6 +7,7 @@ tags:
   - municipalities
 date: 2015-08-28 09:45:42 -0600
 title: Updates for the Municipal Boundaries are available now
+published: false
 categories:
   - SGID Blog
 ---

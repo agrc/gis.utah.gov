@@ -1,5 +1,6 @@
 ---
 title: 3DEP Lidar Proposal for 2018
+published: false
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov

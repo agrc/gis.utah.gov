@@ -1,5 +1,6 @@
 ---
 title: 'Make Old Dojo Builds More Beautiful With UglifyJS'
+published: false
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov

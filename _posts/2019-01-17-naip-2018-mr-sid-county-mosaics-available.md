@@ -1,5 +1,6 @@
 ---
 title: 'NAIP 2018 Mr. Sid County Mosaics Available'
+published: false
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov

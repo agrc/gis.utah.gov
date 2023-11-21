@@ -6,6 +6,7 @@ tags:
   - twitter
   - ugic
 date: 2012-06-07 12:41:35 -0600
+published: false
 title: '#utmap: A Twitter Tag for Utah GIS'
 categories:
   - Featured

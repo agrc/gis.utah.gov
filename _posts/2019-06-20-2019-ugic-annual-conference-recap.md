@@ -1,5 +1,6 @@
 ---
 title: '2019 UGIC Annual Conference Recap'
+published: false
 author:
   display_name: Josh Groeneveld
   email: jgroeneveld@utah.gov

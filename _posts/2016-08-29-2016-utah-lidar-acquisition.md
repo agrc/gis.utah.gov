@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2016-08-29 18:17:41
 title: 2016 Utah LiDAR Acquisition Updated
+published: false
 categories:
   - Featured
 ---

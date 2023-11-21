@@ -10,7 +10,7 @@ tags:
   - sgid
 ---
 
-If you depend on any of the geospatial services from The School and Institutional Trust Lands Administration (SITLA), you might have noticed that the services started having issues on the 5th of October. They worked with Esri to try to resolve the issue but were unable to do so. Fortunately for SITLA, they had a cloud environment available to fill the gap. We were told that this cloud migration was scheduled for next year but when the on-prem solution failed, they had to fast track the migration. There are some notable differences between the on-prem and cloud systems that require user action to migrate from one system to the other. Here is what you need to know.
+If you depend on any of the geospatial services from The School and Institutional Trust Lands Administration (SITLA), you might have noticed that the services started having issues on the 5th of October. SITLA worked with Esri to try to resolve the issue but were unable to do so. Fortunately for SITLA, they had a cloud environment available to fill the gap. We were told that this cloud migration was scheduled for next year but when the on-prem solution failed, they had to fast track the migration. There are some notable differences between the on-prem and cloud systems that require user action to migrate from one system to the other. Here is what you need to know.
 
 ### Issue 1
 {: .text-left }
