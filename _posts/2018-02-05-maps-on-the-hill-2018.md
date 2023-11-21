@@ -14,11 +14,11 @@ tags:
 
 The seventh annual Maps on the Hill event was held on January 30, 2018, in the Utah State Capitol building rotunda. This annual event provides a valuable opportunity to raise awareness of the GIS field and to engage legislators in discussion of GIS-related issues. There was a great turnout this year, with just under fifty displays of maps and apps. These displays were created by various contributors, including Utah cities, universities, state and county departments, offices, and more, and covered a range of topics, such as showing vulnerability during an earthquake in Salt Lake City, mapping Utah film history, and mapping Uber rides in the Salt Lake Valley.  Each display told a story of different GIS data, and the displays were judged and awarded based on their ability to convey the value of GIS-based solutions.
 
-![2018 Maps on the Hill]({{ "/images/MOTH2018.png" }}){: .outline .flex .flex--center}
+![2018 Maps on the Hill]({% link "/images/MOTH2018.png" %}){: .outline .flex .flex--center}
 
 A three-judge panel, consisting of Mike Canning (Deputy Director, Utah Department of Wildlife Resources), Amber Knapp (State Government Account Manager, ESRI, formerly of Cook County, Illinois), and Zach Posner (Chief Information Officer, Salt Lake County) rated the displays on overall effectiveness, visual appeal, data integration, and innovation.
 
-![2018 Maps on the Hill]({{ "/images/MOTH2018-2.png" }}){: .outline .flex .flex--center}
+![2018 Maps on the Hill]({% link "/images/MOTH2018-2.png" %}){: .outline .flex .flex--center}
 
 # The 2018 winners
 
