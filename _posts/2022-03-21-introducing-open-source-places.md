@@ -1,5 +1,6 @@
 ---
 title: 'Introducing Open Source Places'
+published: false
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov

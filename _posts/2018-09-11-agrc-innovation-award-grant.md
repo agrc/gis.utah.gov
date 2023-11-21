@@ -1,5 +1,6 @@
 ---
 title: 'UGRC Innovation Award Grant'
+published: false
 author:
   display_name: Anna Tribolet
   email: atribolet@utah.gov

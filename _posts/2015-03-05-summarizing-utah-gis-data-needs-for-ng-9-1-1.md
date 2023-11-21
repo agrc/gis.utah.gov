@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2015-03-05 16:02:52 -0700
 title: Summarizing Utah GIS Data Needs for NG 9-1-1
+published: false
 categories:
   - Featured
   - SGID Blog

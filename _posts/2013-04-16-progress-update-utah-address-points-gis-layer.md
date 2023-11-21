@@ -8,6 +8,7 @@ tags:
   - geocoding
 date: 2013-04-16 17:50:19 -0600
 title: Progress Update, Utah Address Points GIS Layer
+published: false
 categories:
   - Featured
 ---

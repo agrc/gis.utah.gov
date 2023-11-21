@@ -6,6 +6,7 @@ tags:
   - data
 date: 2017-06-29
 title: DOGM Oil and Gas Wells Data Update
+published: false
 categories:
   - Featured
 ---

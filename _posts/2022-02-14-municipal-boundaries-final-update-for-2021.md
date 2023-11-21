@@ -1,5 +1,6 @@
 ---
 title: 'Municipal Boundaries Final update for 2021'
+published: false
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
@@ -16,7 +17,7 @@ As always feel free to check out all the changes and make sure your boundaries a
 
 The following table shows the changes and annexations (listed by county and city) since July 1, 2021:
 
-| County | City | Number of Changes |  
+| County | City | Number of Changes |
 | --- | --- | --- |
 | Cache | Millville | 1 |
 | | Providence | 1 |

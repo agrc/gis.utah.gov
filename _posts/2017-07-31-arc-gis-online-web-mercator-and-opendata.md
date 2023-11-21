@@ -1,5 +1,6 @@
 ---
 title: ArcGIS Online Web Mercator and Opendata
+published: false
 author:
   display_name: Michael M. Foulger
   email: MICHAELFOULGER@utah.gov

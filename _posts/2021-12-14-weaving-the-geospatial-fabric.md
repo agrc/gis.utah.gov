@@ -34,7 +34,7 @@ What's exciting now is that technology continues to make this easier. Because of
 
 In general, authoritative data can be defined as data provided by a recognized source such as a surveyor or governing entity (ie, an entity that is authorized to develop or manage the data, such as a governmental jurisdiction).
 
-Authoritative data is different from crowd-sourced and proprietary data. Users should understand any limitations or restrictions when working with either of these data sources, as each of them have best-suited use cases. 
+Authoritative data is different from crowd-sourced and proprietary data. Users should understand any limitations or restrictions when working with either of these data sources, as each of them have best-suited use cases.
 
 The clearest use cases for authoritative data are solutions for systems like emergency management, 911, elections, health, and taxation. These support vital government services such as election ballots, public safety, and taxation rates. It is important to have a clearly defined steward with full accountability for the data.
 
@@ -52,7 +52,7 @@ This steward-aggregator model has well-defined roles and contains accountability
 ### Data Standards and the Role of Advisory Groups
 {: .text-left}
 
-The Pyramids of Giza and the Panama Canal were not built overnight. Their success not only hinged on collaboration and organization but also established [standards](https://www.fgdc.gov/ngac/meetings/march-2017/ngac-paper-geospatial-standards-a-national-asset.pdf). Without standards, it’s difficult to ensure that the individual pieces fit together. 
+The Pyramids of Giza and the Panama Canal were not built overnight. Their success not only hinged on collaboration and organization but also established [standards](https://www.fgdc.gov/ngac/meetings/march-2017/ngac-paper-geospatial-standards-a-national-asset.pdf). Without standards, it’s difficult to ensure that the individual pieces fit together.
 
 Today, the geospatial fabric is held together by collaboration, relationships, and agreed-upon standards. Much like collaboration and relationships, standards require communication among stakeholders. A big part of this is understanding our roles and eachother's goals.
 

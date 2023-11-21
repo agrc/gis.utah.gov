@@ -11,6 +11,7 @@ tags:
   - senate
 date: 2014-08-26 18:00:53 -0600
 title: Large Format Utah Political District Maps Now Available
+published: false
 categories:
   - Featured
   - SGID Blog

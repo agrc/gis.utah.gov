@@ -9,6 +9,7 @@ tags:
   - turn gps
 date: 2014-03-26 15:03:26 -0600
 title: GPS Network News
+published: false
 categories:
   - Featured
   - GPS-surveyor

@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2014-08-29 14:25:49 -0600
 title: Coordinating a Statewide Recreational Trails GIS Dataset
+published: false
 categories:
   - Featured
   - SGID Blog

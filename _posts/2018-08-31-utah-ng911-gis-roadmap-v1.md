@@ -1,5 +1,6 @@
 ---
 title: Utah's NG911 GIS Roadmap
+published: false
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov

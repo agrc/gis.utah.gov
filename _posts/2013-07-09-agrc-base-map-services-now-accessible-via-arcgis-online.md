@@ -6,6 +6,7 @@ tags:
   - agol
 date: 2013-07-09 14:34:21 -0600
 title: UGRC Base Map Services Now Accessible via ArcGIS Online
+published: false
 categories:
   - Featured
   - SGID Blog

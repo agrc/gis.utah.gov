@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2014-09-25 14:48:06 -0600
 title: Proposed Lidar Project, Northern Utah
+published: false
 categories:
   - Featured
   - SGID Blog

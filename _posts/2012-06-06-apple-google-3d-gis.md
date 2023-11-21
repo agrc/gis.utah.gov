@@ -6,6 +6,7 @@ tags:
   - apple
   - google
 date: 2012-06-06 10:52:29 -0600
+published: false
 title: Apple, Google, 3D and GIS
 categories:
   - Featured

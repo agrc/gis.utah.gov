@@ -53,7 +53,7 @@ Because unit testing involves programmatically setting up the inputs to your fun
 
 One of the guiding principles for writing functions and classes is that they do one thing and one thing only. In scholarly circles, this is known as the [single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) ([Sandi Metz](https://youtu.be/npOGOmkxuio?t=478) has some rules on this that will really push you).
 
-In practice, its very easy for functions to grow. I often start programing with a broad view of how to solve a problem, maybe three or four general steps. Each step becomes its own function. Then, each function grows as I figure out how to solve the smaller problems within that step.
+In practice, its very easy for functions to grow. I often start programming with a broad view of how to solve a problem, maybe three or four general steps. Each step becomes its own function. Then, each function grows as I figure out how to solve the smaller problems within that step.
 
 The most useful (and easiest to write) unit tests only test one thing, one solution to a problem, at a time. Does that complex logical expression work the way I think it does? Does my translation of math to code work the way it should?
 

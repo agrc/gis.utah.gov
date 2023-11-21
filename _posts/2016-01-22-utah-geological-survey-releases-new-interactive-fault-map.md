@@ -10,6 +10,7 @@ tags:
   - utah geologic survey
 date: 2016-01-22 13:31:17 -0700
 title: Utah Geological Survey Releases New Interactive Fault Map
+published: false
 categories:
   - Featured
   - Guestblog

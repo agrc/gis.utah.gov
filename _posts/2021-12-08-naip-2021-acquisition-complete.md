@@ -1,5 +1,6 @@
 ---
 title: '2021 Aerial Photography Acquisition Completed'
+published: false
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov

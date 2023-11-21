@@ -11,13 +11,13 @@ tags:
   - python
 ---
 
-"Arrow Code" refers to a series of nested `if` statements that increase your indentation level at each statement, creating an arrow of whitespace when the `if`s are mirrored by accompanying `else` blocks. 
+"Arrow Code" refers to a series of nested `if` statements that increase your indentation level at each statement, creating an arrow of whitespace when the `if`s are mirrored by accompanying `else` blocks.
 
 While arrow code arises naturally from the way our brains work through problems — "if this is true, and if that is true, and if this final bit is true, then finally do this" — they make our code less readable. Readability counts in programming. Code is read more than it's written, and code that is easy to read and understand is code that is easier to modify or extend without errors.
 
 While I was working on a task today I realized it would make a great example of how to flatten arrow code, so I'm going to share it with you. This example uses Jeff Atwood's [3rd and 4th flattening tactics](https://blog.codinghorror.com/flattening-arrow-code/).
 
-This is also an example of how the logical structure of arrow code isn't always manifested as a physical arrow but can be hidden in complex boolean conditional statements. While the physical structure is different, the problems and the logical structure of the solution are the same. 
+This is also an example of how the logical structure of arrow code isn't always manifested as a physical arrow but can be hidden in complex boolean conditional statements. While the physical structure is different, the problems and the logical structure of the solution are the same.
 
 ## The Task
 {: .text-left}

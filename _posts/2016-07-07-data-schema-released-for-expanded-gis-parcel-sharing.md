@@ -8,6 +8,7 @@ tags:
   - planning
 date: 2016-07-07 20:05:49
 title: Data Schema Released for Expanded GIS Parcel Sharing
+published: false
 categories:
   - Featured
 ---

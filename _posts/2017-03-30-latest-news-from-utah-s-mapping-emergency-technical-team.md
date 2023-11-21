@@ -6,6 +6,7 @@ tags:
   - emergency response
 date: 2017-03-30 18:36:33
 title: Latest News from the Utah Mapping Emergency Technical Team
+published: false
 categories:
   - Featured
 ---

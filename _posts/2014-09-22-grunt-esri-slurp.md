@@ -7,6 +7,7 @@ tags:
   - javascript
 date: 2014-09-22 11:09:51 -0600
 title: grunt-esri-slurp
+published: false
 categories:
   - Developer
 ---

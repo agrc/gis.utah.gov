@@ -9,6 +9,7 @@ tags:
   - sitla
 date: 2016-07-06 17:22:32
 title: SITLA is Moving to the Utah PLSS Parcel Fabric
+published: false
 categories:
   - Guestblog
 ---

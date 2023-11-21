@@ -8,6 +8,7 @@ tags:
   - naip
 date: 2017-02-21 22:06:11
 title: New Services on Discover Imagery & Base Map Server
+published: false
 categories:
   - Featured
 ---

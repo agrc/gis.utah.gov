@@ -1,5 +1,6 @@
 ---
 title: 'Latest Developments in Bike-Related GIS Data Resources'
+published: false
 author:
   display_name: Bert Granberg
   email: bgranberg@wfrc.org

@@ -30,7 +30,7 @@ Let's assume your tool is built and successfully deployed on Desktop 10.4. Great
 {: .text-left}
 Git is an open-source version-control system that has been around since 2005. It was developed by Linus Torvalds, the creator of the Linux kernel. Git was developed to track changes in computer files, but it's typically used by developers to track changes in their source code. When you initialize Git within a local directory, that directory becomes a code repository with complete file tracking. Combine this with a remote repository, such as GitHub, and some basic Git commands to maintain your local repository, and you're suddenly maintaining a single code base for all versions of your tool.
 
-In addition to code efficiency, Git will give you full version control and the ability to revert to a previous snapshot of your code. Another powerful feature of Git is the ability to branch your code. This is useful when exploring new functionality with your tools, but you might not want to commit these code changes to the stable version of your tool. In this situation, you would create a branch and then do your code testing on that branch. If you choose to incorporate this new functionality into your tool, you can merge this branch with your main branch. The stable, main branch is typically known as the *master* branch. 
+In addition to code efficiency, Git will give you full version control and the ability to revert to a previous snapshot of your code. Another powerful feature of Git is the ability to branch your code. This is useful when exploring new functionality with your tools, but you might not want to commit these code changes to the stable version of your tool. In this situation, you would create a branch and then do your code testing on that branch. If you choose to incorporate this new functionality into your tool, you can merge this branch with your main branch. The stable, main branch is typically known as the *master* branch.
 
 ### GitHub (The Remote Repository)
 {: .text-left}
@@ -41,15 +41,15 @@ GitHub also makes working with others and collaborating on projects much easier.
 ### Putting It All Together
 {: .text-left}
 So, let's see how this looks in action. Assuming you have a development machine built with the appropriate SDK, the only additional prerequisites are that you:
-1. [install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your development machine, and 
-2. have a [GitHub](https://github.com/) account. 
+1. [install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your development machine, and
+2. have a [GitHub](https://github.com/) account.
 The free account is all you need if you're okay with public-facing code.
 
-The idea is to use Git and GitHub to manage your code in a way that allows you to maintain a single code base for all versions of your tool. But even with a single code base, you'll still need to build separate development machines that correspond to the SDK versions you are supporting. I recommend building and then making all code modifications on the development machine with the lowest version you are supporting. In my case, that's ArcGIS Desktop 10.4, so that's where I do all my development and code modifications. When this code is stable, you *push* the changes/modifications to the remote repository (GitHub). Essentially, in this scenario, the remote repository contains the stable version of the code and then also acts as the messenger to the other development machines. You can then *pull* the changes from the remote repository to your development machine that is supporting the higher version (in my case, ArcGIS Desktop 10.5). We'll talk more about push and pull in the [Git Cheatsheet](#git-cheatsheet) section. 
+The idea is to use Git and GitHub to manage your code in a way that allows you to maintain a single code base for all versions of your tool. But even with a single code base, you'll still need to build separate development machines that correspond to the SDK versions you are supporting. I recommend building and then making all code modifications on the development machine with the lowest version you are supporting. In my case, that's ArcGIS Desktop 10.4, so that's where I do all my development and code modifications. When this code is stable, you *push* the changes/modifications to the remote repository (GitHub). Essentially, in this scenario, the remote repository contains the stable version of the code and then also acts as the messenger to the other development machines. You can then *pull* the changes from the remote repository to your development machine that is supporting the higher version (in my case, ArcGIS Desktop 10.5). We'll talk more about push and pull in the [Git Cheatsheet](#git-cheatsheet) section.
 
-In my dev environment, this workflow works because I'm building the tools on the lowest version of the SDK that I'm supporting, so I can rely on the API libraries being present in the higher versions of the SDK (see the [Know the APIs](#know-the-apis) section for more info). As far as getting around the version-specific SDK dependencies (see the [Dealing with SDK Dependencies](#sdk-dependencies) section for more info), you will want to set the specific version to "false" for all your ESRI reference libraries (in Visual Studio). This will tell the .NET compiler, when building the solution, that the reference libraries are relative to the development machine (and are not hard coded to a specific version-based directory). 
+In my dev environment, this workflow works because I'm building the tools on the lowest version of the SDK that I'm supporting, so I can rely on the API libraries being present in the higher versions of the SDK (see the [Know the APIs](#know-the-apis) section for more info). As far as getting around the version-specific SDK dependencies (see the [Dealing with SDK Dependencies](#sdk-dependencies) section for more info), you will want to set the specific version to "false" for all your ESRI reference libraries (in Visual Studio). This will tell the .NET compiler, when building the solution, that the reference libraries are relative to the development machine (and are not hard coded to a specific version-based directory).
 
-A final setup note for this workflow is that you will want the local repository (i.e., the repository managed by Git) on all of your development machines to be pointing to the same remote repository (i.e., your GitHub repository for this project). This is how you move your local changes around and how you keep all development environments in sync with the master/stable version. The easiest way to set this up is to *clone* the GitHub repository onto the development machines. For example, if I want to support my existing ArcGIS tools on Desktop 10.6, I'll build a 10.6-specific development machine and then clone the corresponding GitHub repository that I'm maintaining on the 10.4 machine. This brings down the remote repository code (in its current state) to my local machine. If I'm still supporting 10.4, then I'll continue to make all code modifications there and then pull the changes to the 10.5 and 10.6 machines as needed. This is all done via common Git commands (see the [Git Cheatsheet](#git-cheatsheet)section). 
+A final setup note for this workflow is that you will want the local repository (i.e., the repository managed by Git) on all of your development machines to be pointing to the same remote repository (i.e., your GitHub repository for this project). This is how you move your local changes around and how you keep all development environments in sync with the master/stable version. The easiest way to set this up is to *clone* the GitHub repository onto the development machines. For example, if I want to support my existing ArcGIS tools on Desktop 10.6, I'll build a 10.6-specific development machine and then clone the corresponding GitHub repository that I'm maintaining on the 10.4 machine. This brings down the remote repository code (in its current state) to my local machine. If I'm still supporting 10.4, then I'll continue to make all code modifications there and then pull the changes to the 10.5 and 10.6 machines as needed. This is all done via common Git commands (see the [Git Cheatsheet](#git-cheatsheet)section).
 
 ### The End Is Near
 {: .text-left}
@@ -59,21 +59,21 @@ Lastly, if you're not ready to dive in with your live code, then I would highly 
 
 ### Git Cheatsheet
 {: #git-cheatsheet .text-left}
-You will need to know a few common Git commands to manage your versions and keep all your code in sync. There are many great [Git tutorials](https://git-scm.com/book/en/v2) and references available online, but here I'll highlight the basic commands that you will need in order to adopt the workflow presented in this blog post. 
+You will need to know a few common Git commands to manage your versions and keep all your code in sync. There are many great [Git tutorials](https://git-scm.com/book/en/v2) and references available online, but here I'll highlight the basic commands that you will need in order to adopt the workflow presented in this blog post.
 
-Git commands are executed using the command line. On Windows, I recommend Git Bash for executing commands and if you've installed Git for Windows it should have been included. You can also use Powershell or the Command Prompt (or Terminal on Mac). 
+Git commands are executed using the command line. On Windows, I recommend Git Bash for executing commands and if you've installed Git for Windows it should have been included. You can also use Powershell or the Command Prompt (or Terminal on Mac).
 
 - Change Directory
     - While changing a directory is not a Git operation, I mention it here because it is essential when working with Git. You will need to enter your working, local directory via the *cd* command.
       - `$ cd <your_local_git_directory>`
 
-- Initialize a Local Repository                      
+- Initialize a Local Repository
     - The [*init* command](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) gives Git permission to manage your local working directory with version control and to track all changes that occur. Essentially, this is what gets Git up and running. Note: If you've cloned a remote repository (via a GitHub repo URL) using Git, then you won't need to initialize your local repository&mdash;it is automatically handled within the *clone* command.
-      - `$ git init`     
+      - `$ git init`
 
 - Clone an Existing GitHub Repository
-    - [Cloning](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) allows you to get a copy of an existing repository. 
-    - Using the Command Line:  
+    - [Cloning](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) allows you to get a copy of an existing repository.
+    - Using the Command Line:
       - If you clone a repository by way of the command line, then the remote repository is added for you explicitly.
         - `$ git clone https://github.com/<your_name/repo_name>`
     - Using GitHub:
@@ -87,7 +87,7 @@ Git commands are executed using the command line. On Windows, I recommend Git Ba
       - `$ git remote -v`
 
 - Create a Branch
-    - Each repository, by default, contains a master branch. I think of this as the "parent" branch. When developing tools, I find it useful to create [branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell). The idea is that you keep your master clean and then merge the "child" branch back to master when you are certain you want to incorporate that functionality. I do all modifications on a working branch and then merge the changes back to master after the code/tool is stable, and I've pulled all the changes to my other development machines (see Push and Pull sections below).   
+    - Each repository, by default, contains a master branch. I think of this as the "parent" branch. When developing tools, I find it useful to create [branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell). The idea is that you keep your master clean and then merge the "child" branch back to master when you are certain you want to incorporate that functionality. I do all modifications on a working branch and then merge the changes back to master after the code/tool is stable, and I've pulled all the changes to my other development machines (see Push and Pull sections below).
     - Create a new branch
       - `$ git branch <branch_name>`
     - Check out a branch (you have to manually switch to a branch)
@@ -115,7 +115,7 @@ Git commands are executed using the command line. On Windows, I recommend Git Ba
       - `$ git log -5`
 
 - Push to the Remote
-    - The push command simply takes all the local changes you've committed, and pushe them to the remote (i.e., your GitHub repository). In my workflow, I push to GitHub after I've successfully deployed my lowest version. For me that means the code is stable and it is now ready to be pulled onto the development machines with the higher versions.   
+    - The push command simply takes all the local changes you've committed, and pushe them to the remote (i.e., your GitHub repository). In my workflow, I push to GitHub after I've successfully deployed my lowest version. For me that means the code is stable and it is now ready to be pulled onto the development machines with the higher versions.
       - `$ git push <remote> <branch>`
 
 - Pull from the Remote

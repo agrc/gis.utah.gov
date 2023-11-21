@@ -12,6 +12,7 @@ tags:
   - usda
 date: 2014-06-25 12:57:48 -0600
 title: National Agricultural Imagery Program (NAIP) 2014 - Early Access Web Service
+published: false
 categories:
   - Featured
   - SGID Blog

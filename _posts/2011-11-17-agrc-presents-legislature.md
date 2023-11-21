@@ -7,6 +7,7 @@ tags:
   - legislature
   - presentation
   - web services
+published: false
 date: 2011-11-17 08:34:02 -0700
 title: UGRC presents to Legislature
 categories:

@@ -8,6 +8,7 @@ tags:
   - municipal boundaries
 date: 2017-03-29 16:57:20
 title: Municipal Boundaries update for first quarter (Calendar year)
+published: false
 categories:
   - Featured
 ---
@@ -39,4 +40,3 @@ Following are the changes and annexations since Dec. 31, 2016 listed by County a
 | Wasatch | Heber | 2 |
 | Washington | St George | 1 |
 | Weber | North Ogden | 2 |
-

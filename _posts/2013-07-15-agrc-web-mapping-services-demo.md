@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2013-07-15 11:31:37 -0600
 title: UGRC Web Mapping Services Demo
+published: false
 categories:
   - Developer
 ---

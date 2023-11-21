@@ -1,5 +1,6 @@
 ---
 title: 'Greg Bunce on His Journey toward GIS and How He’s Still Learning'
+published: false
 author:
   display_name: Anna Tribolet
   email: atribolet@utah.gov

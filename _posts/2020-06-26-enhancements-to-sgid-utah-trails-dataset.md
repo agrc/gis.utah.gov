@@ -1,5 +1,6 @@
 ---
 title: 'Enhancements to the SGID Utah Trails Dataset 06/26/2020'
+published: false
 author:
   display_name: UGRC Office
   email: gbunce@utah.gov

@@ -8,6 +8,7 @@ tags:
   - tracking
 date: 2015-11-27 13:45:52 -0700
 title: 'Evolving Utah SGID Web Services: A Proposal'
+published: false
 categories:
   - Featured
 ---

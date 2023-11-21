@@ -7,6 +7,7 @@ tags:
   - cache
   - redistricting
   - web services
+published: false
 date: 2011-11-21 14:39:22 -0700
 title: Redistricting interactive map available
 categories:

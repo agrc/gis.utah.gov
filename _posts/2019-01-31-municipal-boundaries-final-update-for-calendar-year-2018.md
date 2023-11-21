@@ -1,5 +1,6 @@
 ---
 title: 'Municipal Boundaries Final Update  for Calendar Year 2018'
+published: false
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
@@ -12,7 +13,7 @@ tags:
   - census
 ---
 
-There have been several changes and annexations in Utah since September 1, 2018; read on to learn about some of the general updates, as well as the specific changes and annexations for the last quarter of the 2018 calendar year. 
+There have been several changes and annexations in Utah since September 1, 2018; read on to learn about some of the general updates, as well as the specific changes and annexations for the last quarter of the 2018 calendar year.
 
 ### General Updates
 

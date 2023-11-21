@@ -10,7 +10,7 @@ tags:
   - projections
   - web applications
 date: 2015-12-21 12:11:45 -0700
-title: The Earth is Not Round! Utah, NAD83 and WebMercator Projections
+title: The Earth is Not Round! Utah, NAD83 and Web Mercator Projections
 categories:
   - Featured
 ---

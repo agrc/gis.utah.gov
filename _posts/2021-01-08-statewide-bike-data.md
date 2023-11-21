@@ -1,5 +1,6 @@
 ---
 title: New Bicycle Facility GIS Data for the State - Help Us Keep it Up to Date!
+published: false
 author:
   display_name: Stephanie Tomlin
   email: satomlin@utah.gov

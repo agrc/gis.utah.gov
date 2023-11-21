@@ -5,6 +5,7 @@ author:
 tags: []
 date: 2012-11-19 16:44:25 -0700
 title: Introducing the new UGRC Newsletter
+published: false
 categories:
   - Featured
 ---

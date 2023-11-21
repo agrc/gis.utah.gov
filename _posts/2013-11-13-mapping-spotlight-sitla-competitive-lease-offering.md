@@ -8,6 +8,7 @@ tags:
   - sitla
 date: 2013-11-13 16:35:19 -0700
 title: 'Mapping Spotlight: SITLA Competitive Lease Offering'
+published: false
 categories:
   - Featured
 ---

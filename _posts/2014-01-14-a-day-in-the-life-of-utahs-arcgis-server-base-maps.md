@@ -6,6 +6,7 @@ tags:
   - base maps
 date: 2014-01-14 14:58:59 -0700
 title: A day in the life of Utah's ArcGIS Server Base Maps
+published: false
 categories:
   - Featured
 ---

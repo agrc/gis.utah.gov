@@ -8,6 +8,7 @@ tags:
   - imagery
 date: 2015-03-05 15:59:52 -0700
 title: Using Utah's Google Imagery License
+published: false
 categories:
   - Featured
 ---

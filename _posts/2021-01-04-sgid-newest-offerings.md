@@ -1,5 +1,6 @@
 ---
 title: 'Connecting to the Newest SGID Offerings'
+published: false
 author:
   display_name: UGRC Office
   email: ugrc@utah.gov

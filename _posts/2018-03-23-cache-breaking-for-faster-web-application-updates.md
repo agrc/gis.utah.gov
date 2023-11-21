@@ -10,9 +10,11 @@ tags: []
 ---
 
 ### When Production Is Broken, It Needs to Be Fixed Now!
+
 Recently, the URL changed for one of the map services we use in several of our applications. This came as a bit of a surprise to us, so we quickly updated our applications and deployed new versions. Everything seemed great and we continued on our way. However, two days later one of our clients reported that some of his users still did not have the updated applications in their browsers. As a programmer, I knew that the simple solution was to have them clear their browser caches. But it felt unprofessional for me to walk them through this process when it was something I could fix for them, and it was a skill they really didn’t need to know. So I started doing some digging on how I could solve this problem behind the scenes.
 
 ### Head[er]aches
+
 Here's an example of a request for the main JS file for our application:
 
 ![screenshot of headers]({% link images/cache_headers.png %}){: .flex .flex--center .outline }
@@ -20,6 +22,7 @@ Here's an example of a request for the main JS file for our application:
 Notice the "`(from disk cache)`" next to the status code? That means that the browser wasn't even making a request to the server for this file. This is really great for speeding up the loading of the application, but it's not so great when you're trying to get updates to users' browsers. The problem with this request is that because it doesn't specify the `Cache-Control` or `Expires` header, the browser is left playing a guessing game about how long it should cache the resource. The length of time a browser will cache a resource can vary between browsers, so, in general, going along with this guessing game is a bad idea. But we also don't want to completely disable caching either&mdash;it can make a huge difference on page load speed. (Google's Web Fundamentals site has [a really great article on this subject](https://web.dev/http-cache/). This article not only helped me understand the problem, it gave me direction on a solution.)
 
 ### The Best of Both Worlds
+
 What if we could cache the majority of our application code to keep it loading fast, but also get updates to our users the first time they load our application after a deploy? The key to making this possible is to disable client-side caching on the main application file, `index.html`, and then aggressively cache all other resources. This keeps our application load time down since `index.html` is nothing more than a [50+ line shell around the application](https://github.com/agrc/deq-enviro/blob/c11865a477be1d5970c457636d9c738df58483e0/_src/index.html).
 
 Here's an example of new headers for this file:
