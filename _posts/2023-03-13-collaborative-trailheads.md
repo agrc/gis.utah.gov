@@ -25,7 +25,7 @@ At UGRC, we see [OpenStreetMap](https://www.openstreetmap.org/) (OSM) as an idea
 
 OpenStreetMap (OSM) is a collaborative platform for collectively editing data in real-time. In the case of trailheads, mapping enthusiasts can work side-by-side (so to speak) along the data stewards to keep the data up-to-date.
 
-We already have an [established OSM workflow]({% link _posts/2022-03-21-introducing-open-source-places.md %}) for the [Open Source Places SGID layer]({% link data/society/open-source-places/index.html %}). This workflow allows us to source the data directly from OSM. Our goal is to eventually incorporate this collective stewardship model into as many suitable datasets as we can. For now, we have identified [trailheads]({% link data/recreation/trails/index.html %}) as the next suitable SGID layer for this collaborative editing model.
+We already have an established OSM workflow for the [Open Source Places SGID layer]({% link data/society/open-source-places/index.html %}). This workflow allows us to source the data directly from OSM. Our goal is to eventually incorporate this collective stewardship model into as many suitable datasets as we can. For now, we have identified [trailheads]({% link data/recreation/trails/index.html %}) as the next suitable SGID layer for this collaborative editing model.
 
 ### Collaborative Trailheads
 {: .flex .flex--left}
