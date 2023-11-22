@@ -1,6 +1,5 @@
 ---
 title: 'Possible GPS Disruption from Sept. 13 - 29'
-published: false
 author:
   display_name: Denise Peterson
   email: denisepeterson@utah.gov
