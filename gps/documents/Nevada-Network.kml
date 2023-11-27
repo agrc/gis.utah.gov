@@ -9,6 +9,2061 @@
     <name>NevadaNetwork</name>
     <snippet></snippet>
     <description><![CDATA[<DIV STYLE="text-align:Left;"><P><SPAN>This data represents The Utah Reference Network Global Positioning System (TURN GPS) base station locations. It models the current base station locations on the network. In some areas we extends past the boundary of Utah when we have been invited by those communities.</SPAN></P></DIV>]]></description>
+    <Placemark id="ID_00000">
+      <name>DOT1_Carson City</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>DOT1_Carson City</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>DOT1_Carson City</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 9' 22.281" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 45' 48.306" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1416.429 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.156189</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.763423</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>ALLOY</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>1263 S. Stewart St., Carson City, Nevada 89712                                                      </td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>DOT1</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>Trimble Zephyr Geodetic Model 2 </td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.7634311920933,39.15619445879881,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name>FLN1_Fallon</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>FLN1_Fallon</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>FLN1_Fallon</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 27' 59.828" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>118° 45' 49.442" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1187.939 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.466619</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-118.763732</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>ALLOY</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>888 Harigan Road, Fallon, Nevada 89406</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>FLN1</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>Trimble Zephyr Geodetic Model 2 </td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -118.7637468093061,39.46662433060913,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name>COPF1_Fernley</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>COPF1_Fernley</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>COPF1_Fernley</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 36' 18.048" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 14' 26.219" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1252.621 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.605013</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.240618</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>NETR3</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>Fernley City Hall, 595 Silver Lace Blvd, Fernley, Nevada</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>COPF1</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>TRM33429.00+GP Trimble L1/L2 Microcentered</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.2406292812475,39.6050186068723,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name>GARD_Gardnerville</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>GARD_Gardnerville</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>GARD_Gardnerville</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>38° 54' 44.893" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 41' 31.778" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1497.158 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>38.91247</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.692166</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>ALLOY</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>GARD</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>TRM41249.00 with TZGD with Radome</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.6921733737639,38.91247548097593,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name>GERL_Gerlach</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>GERL_Gerlach</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>GERL_Gerlach</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>40° 38' 59.293" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 21' 39.050" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1187.435 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>40.649804</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.360844</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>NETR9</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>Washoe County Roads Dept Yard, 180 Del Ora Ave, Gerlach, Nevada</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>GERL</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>TRM33429.00+GP Trimble L1/L2 Microcentered</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.3608603476817,40.6498090125107,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00005">
+      <name>INV1_Incline Village</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>INV1_Incline Village</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>INV1_Incline Village</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 15' 7.667" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 58' 13.727" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1948.714 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.25213</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.970487</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>NETR5</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>Washoe County Roads Department, Incline Village, Nevada 89451</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>INV1</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>Trimble Zephyr Geodetic</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.9704927256947,39.25213497377243,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00006">
+      <name>RNO1_Northwest Reno</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>RNO1_Northwest Reno</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>RNO1_Northwest Reno</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 32' 16.447" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 53' 8.872" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1531.277 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.537902</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.885799</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>ALLOY</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>Northwest Reno Library, 2325 Robb Dr, Reno, Nevada 89712</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>RNO1</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>Trimble Zephyr Geodetic</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.8858108085064,39.53790733382798,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00007">
+      <name>SSB2_Sparks (Spanish Springs)</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>SSB2_Sparks (Spanish Springs)</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>SSB2_Sparks (Spanish Springs)</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 37' 14.509" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 43' 21.257" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1357.915 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.620697</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.722573</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>NETRS</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>7200 Pyramid Way, Sparks, Nevada 89441</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>SSB2</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>Trimble Zephyr Geodetic</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.7225845187857,39.6207022430257,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00008">
+      <name>STEA_Reno</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>STEA_Reno</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>STEA_Reno</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 37' 31.939" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 53' 1.160" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1534.864 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.625539</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.883657</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>NETR5</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>Truckee Meadows Fire Protection District, Station 3, 10575 Silver Lake Blvd, Reno, Nevada</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>STEA</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>Trimble Zephyr Geodetic</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.8836685879498,39.62554387186072,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00009">
+      <name>YER1_Yerington</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>YER1_Yerington</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>YER1_Yerington</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>38° 59' 31.287" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 9' 44.123" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1317.903 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>38.992024</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.162263</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>ALLOY</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>NDOT Maintenance Yard, Yerington, Nevada</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>YER1</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>Trimble Zephyr Geodetic Model 2 </td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.162269221553,38.99202955187835,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00010">
+      <name>WWRF_Sparks  </name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>WWRF_Sparks  </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>WWRF_Sparks</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 31' 12.718" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 42' 10.277" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1326.259 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.5202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.702857</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>ALLOY</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>Waste Water Reclamation Facility, 8500 Clean Water Way, Sparks, Nevada</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>WWRF</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>Trimble Zephyr Geodetic</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.70286785646,39.52020484515627,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00011">
+      <name>NVMM_Monsen Marty</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>NVMM_Monsen Marty</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>NVMM_Monsen Marty</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 26' 57.500" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 46' 49.200" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>1354.877 m</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.449306</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>-119.780309</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>O</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>NETR3</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>8249 Rocky Meadows Cir, Reno, NV 89511</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>NVMM</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.7803463415345,39.44931084245144,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00012">
+      <name>NVP2_Silver Springs</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>NVP2_Silver Springs</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>STATION_NAME</td>
+
+<td>NVP2_Silver Springs</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>39° 24' 10.600" N</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>119° 15' 9.100" W</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Ellipsoid_Height</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>LAT_DD</td>
+
+<td>39.402944</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LOND_DD</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>P</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE_OF_STATION</td>
+
+<td>NETR5</td>
+
+</tr>
+
+<tr>
+
+<td>LOCATION</td>
+
+<td>1991 US-50, Silver Springs, NV 89429</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>StationCode</td>
+
+<td>NVP2</td>
+
+</tr>
+
+<tr>
+
+<td>AntennaType</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Network</td>
+
+<td>Nevada GPS</td>
+
+</tr>
+
+<tr>
+
+<td>Photos</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body><script type="text/javascript">
+
+				function changeImage(attElement, nameElement) {
+
+				document.getElementById('imageAttachment').src = attElement;
+
+				document.getElementById('imageName').innerHTML = nameElement;}
+
+			</script></html>
+
+]]></description>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -119.2525406928835,39.402949768631,0</coordinates>
+      </Point>
+    </Placemark>
   </Folder>
+  <Style id="IconStyle00">
+    <IconStyle>
+      <scale>1.000000</scale>
+      <Icon><href>Layer0_Symbol_eda91790_0.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
 </Document>
 </kml>
