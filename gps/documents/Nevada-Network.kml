@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="NevadaNetwork">
+  <name>NevadaNetwork</name>
+  <snippet></snippet>
+  <description><![CDATA[<DIV STYLE="text-align:Left;"><P><SPAN>This data represents The Utah Reference Network Global Positioning System (TURN GPS) base station locations. It models the current base station locations on the network. In some areas we extends past the boundary of Utah when we have been invited by those communities.</SPAN></P></DIV>]]></description>
+  <Folder id="FeatureLayer0">
+    <name>NevadaNetwork</name>
+    <snippet></snippet>
+    <description><![CDATA[<DIV STYLE="text-align:Left;"><P><SPAN>This data represents The Utah Reference Network Global Positioning System (TURN GPS) base station locations. It models the current base station locations on the network. In some areas we extends past the boundary of Utah when we have been invited by those communities.</SPAN></P></DIV>]]></description>
+  </Folder>
+</Document>
+</kml>
