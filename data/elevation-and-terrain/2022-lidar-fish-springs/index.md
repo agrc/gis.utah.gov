@@ -14,14 +14,14 @@ title: 2022 Fish Springs Topobathymetric Lidar Elevation Data
 categories: []
 ---
 
-![Sample]({% link images/lidar_fish_spring_2022.png %}){: .flex .flex--center .outline }
+![Sample]({% link images/lidar_fish_springs_2022.png %}){: .flex .flex--center .outline }
 
-[![Project area map]({% link images/lidar_fish_spring_2022_coverage_sm.png %} "click for map")]({% link images/lidar_fish_spring_2022_coverage.png %}){:.inline-text-right}
+[![Project area map]({% link images/lidar_fish_springs_2022_coverage_sm.png %} "click for map")]({% link images/lidar_fish_springs_2022_coverage.png %}){:.inline-text-right}
 
 {%- capture contact -%}
 {%- include contact.html subject=page.title contact=site.data.contacts.elevation text='or by request from' -%}
 {%- endcapture -%}
-In 2022 the U.S. Geological Survey (USGS) acquired [29.5 square miles]({% link images/lidar_fish_spring_2022_coverage.png %}) of 8 points per meter Quality Level 1 Topobathymetric LiDAR of Fish Springs National Wildlife Refuge in Utah. The .5 resolution topo-bathy DEMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, intensity images, and orthophotography are available from [The National Map](https://apps.nationalmap.gov/lidar-explorer/#/). This elevation data was collected September 24, 2022.
+In 2022 the U.S. Geological Survey (USGS) acquired [29.5 square miles]({% link images/lidar_fish_springs_2022_coverage.png %}) of 8 points per meter Quality Level 1 Topobathymetric LiDAR of Fish Springs National Wildlife Refuge in Utah. The .5 resolution topo-bathy DEMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds, intensity images, and orthophotography are available from [The National Map](https://apps.nationalmap.gov/lidar-explorer/#/). This elevation data was collected September 24, 2022.
 
 <ul class="dotless">
   <li>
