@@ -38,8 +38,8 @@ NHDSprings:
 name="NHD Lakes, Rivers, Streams, and Springs"
 stewards="UGRC & USGS"
 abstract="The Lakes, Rivers, Streams & Springs data contains feature layers that are derived from the <a
-  href='https://nhd.usgs.gov/data.html'>National Hydrography Dataset (NHD)</a>. The NHD is the surface water component
-of the National Map created by the United States Geological Survey (USGS). The NHD contains a feature-based database
+  href='https://www.usgs.gov/national-hydrography/national-hydrography-dataset'>National Hydrography Dataset (NHD)</a>. The NHD is the surface water component
+of The National Map created by the U.S. Geological Survey (USGS). The NHD contains a feature-based database
 that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water
 drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country.
 NHD data in it's entirety can be downloaded from the <a
@@ -64,19 +64,19 @@ NHD data in it's entirety can be downloaded from the <a
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>NHD Codes</h5>
     <ul class="dotless">
-      <li><a href="https://nhd.usgs.gov/userGuide/Robohelpfiles/NHD_User_Guide/Feature_Catalog/Hydrography_Dataset/Complete_FCode_List.htm"><code>FCODE</code></a> can be used to classify water body features by functional type.
-      <li><code>FNAME</code> is the name of the water body feature
+      <li><a href="https://www.usgs.gov/index.php/ngp-standards-and-specifications/national-hydrography-dataset-nhd-data-dictionary-feature-domains"><code>FCode</code></a> can be used to classify water body features by functional type.
+      <li><code>GNIS_Name</code> is the name of the water body feature
     </ul>
     <h5>UGRC maintained codes for cartography</h5>
     <ul class="dotless">
-      <li><code>ISMAJOR</code> can be used to query only the major lakes for coarse scale mapping
-      <li><code>INUTAH</code> can be used to exclude water bodies outside the state boundary. All water body features
+      <li><code>IsMajor</code> can be used to query only the major lakes for coarse scale mapping
+      <li><code>InUtah</code> can be used to exclude water bodies outside the state boundary. All water body features
         that cross the state boundary have been split and attributed (<code>1</code> = in Utah and <code>0</code> =
         outside Utah)
         <ul>
           <h5>Related Resources</h5>
           <ul class="dotless">
-            <li><a href="https://nhd.usgs.gov/">National Hydrography Dataset</a>
+            <li><a href="https://www.usgs.gov/national-hydrography/national-hydrography-dataset">National Hydrography Dataset</a>
           </ul>
   </div>
   {% include packagedata.html name="NHDLakes" info=page.NHDLakes %}
@@ -95,15 +95,15 @@ NHD data in it's entirety can be downloaded from the <a
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
     <h5>NHD Codes</h5>
     <ul class="dotless">
-      <li><a href="https://nhd.usgs.gov/userGuide/Robohelpfiles/NHD_User_Guide/Feature_Catalog/Hydrography_Dataset/Complete_FCode_List.htm"><code>FCODE</code></a> can be used to classify water course features by functional type.
-      <li><code>FNAME</code> is the name of the water course
+      <li><a href="https://www.usgs.gov/index.php/ngp-standards-and-specifications/national-hydrography-dataset-nhd-data-dictionary-feature-domains"><code>FCode</code></a> can be used to classify water course features by functional type.
+      <li><code>GNIS_Name</code> is the name of the water course
     </ul>
     <h5>UGRC maintained codes for cartography</h5>
     <ul class="dotless">
-      <li><code>ISMAJOR</code> can be used to query only the major water courses for coarse scale mapping
-      <li><code>ISSUBMERGED</code> can be used to exclude the hydrologic network features that have been added across
+      <li><code>IsMajor</code> can be used to query only the major water courses for coarse scale mapping
+      <li><code>Submerged</code> can be used to exclude the hydrologic network features that have been added across
         water bodies to the NHD dataset for linear water flow modeling
-      <li><code>INUTAH</code> can be used to exclude water courses outside the state boundary. All water courses
+      <li><code>InUtah</code> can be used to exclude water courses outside the state boundary. All water courses
         features that cross the state boundary have been split and attributed (<code>1</code> = in Utah and
         <code>0</code> = outside Utah)
     </ul>
@@ -117,7 +117,7 @@ NHD data in it's entirety can be downloaded from the <a
         a protected record. Those with a legitimate need for this data are invited to contact' %}
       <li>Water-Related Land Use characterizes the type of water usage (irrigation, crop type, urban uses, etc) for
         land, statewide (see SGID Planning for more detail).
-      <li><a href="https://nhd.usgs.gov/">National Hydrography Dataset</a></li>
+      <li><a href="https://www.usgs.gov/national-hydrography/national-hydrography-dataset">National Hydrography Dataset</a></li>
       <li><a href="https://nationalmap.gov/streamer/webApp/welcome.html">USGS / National Map - Streamer</a></li>
     </ul>
   </div>
@@ -132,12 +132,12 @@ NHD data in it's entirety can be downloaded from the <a
     <p>Utah Springs NHD is a point layer derived by UGRC from the NHD.</p>
     <h5>Related Resources</h5>
     <ul class="dotless">
-      <li><a href="https://nhd.usgs.gov/">National Hydrography Dataset</a>
+      <li><a href="https://www.usgs.gov/national-hydrography/national-hydrography-dataset">National Hydrography Dataset</a>
     </ul>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
         <h5>NHD Codes</h5>
     <ul class="dotless">
-      <li><a href="https://nhd.usgs.gov/userGuide/Robohelpfiles/NHD_User_Guide/Feature_Catalog/Hydrography_Dataset/Complete_FCode_List.htm"><code>FCODE</code></a> can be used to classify spring features by functional type.
+      <li><a href="https://www.usgs.gov/index.php/ngp-standards-and-specifications/national-hydrography-dataset-nhd-data-dictionary-feature-domains"><code>FCode</code></a> can be used to classify spring features by functional type.
       <li><code>GNIS_Name</code> is the name of the spring feature
     </ul>
   </div>
