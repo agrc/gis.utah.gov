@@ -11,7 +11,7 @@ tags:
   - roads
   - transportation
 categories: []
-date: 2022-03-18 11:12:40 -0600
+date: 2023-12-21 11:12:40 -0600
 HighwayLinearReferencingSystemRoutes:
   hub:
     name: UDOT Routes ALRS 1
@@ -35,14 +35,6 @@ FreewayExitPoints:
     alias: Utah Roads Freeway Exits
     item_id: 13137de7f65e4fffa4ee9f0b397045f5
     org: uplan
-  updates:
-    - Updates to this dataset are published infrequently.
-ShieldLabelingLines:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMFFPbFIxZkt6am8&export=download
-      label: 'Shield Labeling Lines: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOVNuSlBGU1k5aUU&export=download
-      label: 'Shield Labeling Lines: Shapefile'
   updates:
     - Updates to this dataset are published infrequently.
 ---
@@ -267,22 +259,6 @@ location and length of the roadway.</p>
   </div>
   {% include packagedata.html name="FreewayExitPoints" info=page.FreewayExitPoints %}
 </div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="ShieldLabelingLines">Shield Labeling Lines</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" title="utah gis highway freeway shield lines"
-      src="{% link images/utah-gis-highway-freeway-shield-lines.png %}" alt="freeway shield lines" loading="lazy" />
-    <p>Transportation.RoadsShieldLines consists of highway route lines edited to best enable non-redundant, dynamic
-      label rendering of highway shields for freeways, US highways, and state highways.</p>
-    <p>In ArcMap, define a label class for each CLASS field value. 1 is for freeways, 2 for US highways, and 3 is for
-      state highways. Each label class should use a SQL expression to define the class and the default class should be
-      disabled or deleted.</p>
-    <p>When defined labeling properties are defined properly, the minimum number of freeway and highway shields should
-      be displayed without introducing ambiguity.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This
-      dataset was assembled by UGRC for general purpose cartography.</p>
   </div>
   {% include packagedata.html name="ShieldLabelingLines" info=page.ShieldLabelingLines %}
 </div>
