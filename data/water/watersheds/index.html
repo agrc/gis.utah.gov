@@ -41,6 +41,12 @@ abstract="Watershed areas represent the watershed area boundaries throughout Uta
     </ul>
     <p>This dataset was built using data from the <a href="https://www.usgs.gov/national-hydrography/access-national-hydrography-products">USGS Watershed Boundary Dataset (WBD)</a>. Data was downloded from the download-by-state area in <a href="https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/State/GDB/NHD_H_Utah_State_GDB.zip">GDB format</a>. HUC8, HUC10 and HUC12 datasets were merged into this dataset, maintaining the linework for HUC12. This allows the data to be dissolved by HUC level to obtain HUC10 and HUC8 boundaries as the boundaries are coincident. The data contains the attributes from all 3 HUC levels.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li>
+        <a href="https://hydrowfs.nationalmap.gov/arcgis/rest/services/wbd/MapServer">USGS Watershed Boundary Dataset MapServer</a>
+      </li>
+    </ul>
   </div>
   {% include packagedata.html name="Watershed"
   info=page.Watershed %}
