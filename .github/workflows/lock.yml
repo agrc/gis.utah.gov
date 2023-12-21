@@ -3,7 +3,7 @@ name: 'Lock threads'
 on:
   schedule:
     - cron: '0 7 * * *'
-    
+
 permissions:
   issues: write
   pull-requests: write
@@ -15,12 +15,13 @@ jobs:
   lock:
     runs-on: ubuntu-latest
     steps:
-      - uses: dessant/lock-threads@v4
+      - uses: dessant/lock-threads@v5
         with:
           github-token: ${{ github.token }}
           exclude-any-issue-labels: 'pinned'
           issue-inactive-days: '91'
           pr-inactive-days: '91'
+          process-only: 'issues, prs'
           exclude-issue-created-before: '2018-01-01'
           exclude-pr-created-before: '2018-01-01'
           add-issue-labels: 'outdated'
