@@ -39,13 +39,7 @@ abstract="Watershed areas represent the watershed area boundaries throughout Uta
       <li><code>HUG_12</code> contains the 12 digit hydrologic unit code for the 6th level subwatersheds
       <li><code>HU_12_NAME</code> contains the subwatershed name
     </ul>
-    <p>This dataset was built using data from the USGS Watershed Boundary Dataset (WBD).  
-      https://www.usgs.gov/national-hydrography/access-national-hydrography-products
-      Data was downloded from the download-by-state area in GDB format.  
-      https://prd-tnm.s3.amazonaws.com/index.html?prefix=StagedProducts/Hydrography/NHD/State/GDB/
-      HUC8, HUC10 and HUC12 datasets were merged into this dataset, maintaining the linework for HUC12.  
-      This allows this dataset to be dissolved by HUC level to obtain HUC10 and HUC8 boundaries
-    as the boundaries are coincident.  The data contains the attributes from all 3 HUC levels.</p>
+    <p>This dataset was built using data from the <a href="https://www.usgs.gov/national-hydrography/access-national-hydrography-products">USGS Watershed Boundary Dataset (WBD)</a>. Data was downloded from the download-by-state area in <a href="https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/State/GDB/NHD_H_Utah_State_GDB.zip">GDB format</a>. HUC8, HUC10 and HUC12 datasets were merged into this dataset, maintaining the linework for HUC12. This allows the data to be dissolved by HUC level to obtain HUC10 and HUC8 boundaries as the boundaries are coincident. The data contains the attributes from all 3 HUC levels.</p>
     <p>{% include contact.html subject=page.title contact=site.data.contacts.agrc %}</p>
   </div>
   {% include packagedata.html name="Watershed"
