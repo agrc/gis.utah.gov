@@ -11,35 +11,32 @@ tags:
   - roads
   - transportation
 categories: []
-date: 2022-03-18 11:12:40 -0600
+date: 2023-12-21 11:12:40 -0600
 HighwayLinearReferencingSystemRoutes:
   hub:
-    name: UDOT Routes ALRS
+    name: UDOT Routes ALRS 1
     alias: Utah Advanced LRS Routes (UDOT)
-    item_id: 7e53a418e78b464bbf8cc9e209c4109d
+    item_id: ecb09af7f887450e851c2634dac92edb
     org: uplan
   updates:
     - Updates to this dataset are published periodically to refine route representation,
       add additional routes, and in response to route realignment.
 MilepostPoints:
   hub:
-    name: Utah UDOT Mile Reference Posts
-    item_id: 1680c84cd7fb426194505eec5fead902
-    skip_fgdb: true
+    name: physical location of reference post rp
+    alias: Utah Mile Reference Posts
+    item_id: 768b285ed14e40e5853f45963f2d137a
+    org: uplan
+    skip_shapefile: True
+    skip_fgdb: True
   updates:
-    - 2021
+    - Updates to this dataset are published periodically
 FreewayExitPoints:
   hub:
-    name: Utah Roads Freeway Exits
-    item_id: ead23cdea2184a45a92007261675457e
-  updates:
-    - Updates to this dataset are published infrequently.
-ShieldLabelingLines:
-  downloads:
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mMFFPbFIxZkt6am8&export=download
-      label: 'Shield Labeling Lines: File Geodatabase'
-    - url: https://drive.google.com/a/utah.gov/uc?id=0ByStJjVZ7c7mOVNuSlBGU1k5aUU&export=download
-      label: 'Shield Labeling Lines: Shapefile'
+    name: freeway exit locations 1
+    alias: Utah Roads Freeway Exits
+    item_id: 13137de7f65e4fffa4ee9f0b397045f5
+    org: uplan
   updates:
     - Updates to this dataset are published infrequently.
 ---
@@ -214,10 +211,10 @@ system (LRS) routes, and label lines for dynamic rendering of highway shields." 
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/utah-sgid-highway-milepost.png %}"
       alt="utah-sgid-highway-milepost" loading="lazy" />
-    <p>The Mile Reference Posts dataset contains the location of milepost signs as they are located along the roads. This collection
-        technique is different from milepost locations that are <a href="https://data-uplan.opendata.arcgis.com/datasets/linear-measure-lm-tenth-opendata/explore">derived from a linear reference system </a>
+    <p>The Mile Reference Posts dataset contains the physical location of milepost signs as they are located along the roads. This collection
+        technique is different from <a href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth">linear mile point measures</a> that are derived from a linear reference system
          (LRS). The advantage of this collection method is that the mile reference posts stay in roughly the same place over time and do not change when other sections of the road, or LRS, are realigned.</p>
-    <p>Mile reference post locations are derived from images captured by <a href="https://www.mandli.com/"">Mandli Communications</a>, using on-the-ground asset collection technology. These locations were then aligned to UDOT’s linear referencing system.</p>
+    <p>Mile reference post locations are derived from images captured by <a href="https://www.mandli.com/">Mandli Communications</a>, using on-the-ground asset collection technology. These locations were then aligned to UDOT’s linear referencing system.</p>
     <p>This data will be updated through on-the-ground collection every 2 years under the current contract. The data served on this page was captured in 2021 and reflects what was on the ground at that time.</p>
           <p>The Mile Reference Posts is an <a href="https://www.esri.com/en-us/arcgis/products/arcgis-roads-highways/overview">ESRI Roads and Highways Event</a> layer and supports the <a href="https://maps.udot.utah.gov/wadocuments/Apps/Stationing/">RP Stationing App</a>.</p>
     <p><code>FIELDS worth noting</code></p>
@@ -226,11 +223,11 @@ system (LRS) routes, and label lines for dynamic rendering of highway shields." 
       <li><code>Measure</code> - Location of the milepost along the LRS
       <li><code>Station Label</code> - Highway name + direction of route along LRS (P = positive, milepost numbers increasing; N = negative, milepost numbers decreasing) + milepost number. For example the value 0015PM_271 translates to mile marker 217 on Interstate-15 on the north bound (P) side.
     </ul>
-    <h5>Mile Reference Posts vs Linear Measures</h5>
+    <h5>Mile Reference Posts vs Linear Mile Point Measures</h5>
       <ul class="dotless">
         <li><p>Mile Reference Posts are signs located in physical locations. They are helpful for navigation but
 may not reflect the linear referencing measurement.</p>
-        <li><p>Linear referencing system mile point measures (linear measures) are calculated based on
+        <li><p><a href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth">Linear Mile Point Measures</a> are calculated based on
 geometric lengths of data and are spatially accurate. They may or may
 not align with actual Mile Reference Posts and are updated every time a
 change is made in the spatial data to reflect updates in the physical
@@ -239,7 +236,7 @@ location and length of the roadway.</p>
       </ul>
     <h5>Related Resource</h5>
     <ul class="dotless">
-      <li><a href="https://data-uplan.opendata.arcgis.com/datasets/linear-measure-lm-tenth-opendata/explore">Linear-measure based mileposts</a> (derived from UDOT’s linear referencing system and contains tenth-mile points)
+      <li><a href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth">LRS Mile Point Measures</a> (contains tenth-mile points)
       <li><a href="https://api.mapserv.utah.gov/#geocoding">UGRC Milepost and Reverse Milepost Geocoding Web API</a>
       <li><a href="https://maps.udot.utah.gov/wadocuments/Apps/Stationing/">UDOT Mile Reference Post Stationing Application</a> (RP Stationing App)
     </ul>
@@ -263,23 +260,4 @@ location and length of the roadway.</p>
       reference.</p>
   </div>
   {% include packagedata.html name="FreewayExitPoints" info=page.FreewayExitPoints %}
-</div>
-<div class="grid package">
-  <div class="grid__col grid__col--12-of-12">
-    <h3 id="ShieldLabelingLines">Shield Labeling Lines</h3>
-  </div>
-  <div class="grid__col grid__col--12-of-12 package-content">
-    <img class="inline-text-left outline" title="utah gis highway freeway shield lines"
-      src="{% link images/utah-gis-highway-freeway-shield-lines.png %}" alt="freeway shield lines" loading="lazy" />
-    <p>Transportation.RoadsShieldLines consists of highway route lines edited to best enable non-redundant, dynamic
-      label rendering of highway shields for freeways, US highways, and state highways.</p>
-    <p>In ArcMap, define a label class for each CLASS field value. 1 is for freeways, 2 for US highways, and 3 is for
-      state highways. Each label class should use a SQL expression to define the class and the default class should be
-      disabled or deleted.</p>
-    <p>When defined labeling properties are defined properly, the minimum number of freeway and highway shields should
-      be displayed without introducing ambiguity.</p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This
-      dataset was assembled by UGRC for general purpose cartography.</p>
-  </div>
-  {% include packagedata.html name="ShieldLabelingLines" info=page.ShieldLabelingLines %}
 </div>
