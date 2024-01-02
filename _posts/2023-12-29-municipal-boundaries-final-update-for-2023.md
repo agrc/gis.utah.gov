@@ -11,12 +11,11 @@ tags:
   - boundaries
   - annexations
 ---
-Finally, the end of 2023 is here—another year of growth. Utah County again led the way with 16 annexations, followed by Weber with 10, Box Elder with 8, and Cache County with 7. Four other counties followed with 4 to 6 annexations this year with a total of only 72 annexations this year—a little behind past years, but with more growth outside the Wasatch Front counties. 
-No new incorporation but several areas are doing feasibility studies to see if it is possible to incorporate. We’ll find out next year, stay tuned.
-As always feel free to check out all the changes and make sure your boundaries are where you think they should be, view them here: [Utah Municipality Modifications].
-(https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63).
-To review any specific annexation document, you can go here: [Utah Lt. Governor Municipal Certifications]  (https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/).
-This is a website in transition so it may change in the future.
+Finally, the end of 2023 is here—another year of growth. Utah County again led the way with 16 annexations, followed by Weber with 10, Box Elder with 8, and Cache County with 7. Four other counties followed with 4 to 6 annexations this year with a total of only 72 annexations this year—a little behind past years, but with more growth outside the Wasatch Front counties. No new incorporation but several areas are doing feasibility studies to see if it is possible to incorporate. We’ll find out next year, stay tuned.
+
+As always feel free to check out all the changes and make sure your boundaries are where you think they should be on the [Utah Municipality Modifications](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63) map.
+
+To review any specific annexation document, vist the [Utah Lt. Governor Municipal Certifications](https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/). This is a website in transition so it may change in the future.
 
 Following are the changes and annexations since January of this year, listed by County and City:
 
