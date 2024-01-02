@@ -15,7 +15,7 @@ Finally, the end of 2023 is here—another year of growth. Utah County again led
 
 As always feel free to check out all the changes and make sure your boundaries are where you think they should be on the [Utah Municipality Modifications](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63) map.
 
-To review any specific annexation document, vist the [Utah Lt. Governor Municipal Certifications](https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/). This is a website in transition so it may change in the future.
+To review any specific annexation document, vist the [Utah Lt. Governor Municipal Certifications](https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/) website.
 
 Following are the changes and annexations since January of this year, listed by County and City:
 
