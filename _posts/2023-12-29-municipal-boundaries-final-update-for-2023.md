@@ -11,7 +11,7 @@ tags:
   - boundaries
   - annexations
 ---
-Finally the end of 2023 is here. Another year of growth. Utah County once again leads the way with 16 annexations, followed by Weber with 10, Box Elder with 8 and  Cache County 7. Four other counties follow with 4 to 6 annexations this year. We total out with only 72 annexations this year. A little behind past years, but more growth outside the Wasatch Front counties. 
+Finally, the end of 2023 is here—another year of growth. Utah County again led the way with 16 annexations, followed by Weber with 10, Box Elder with 8, and Cache County with 7. Four other counties followed with 4 to 6 annexations this year with a total of only 72 annexations this year—a little behind past years, but with more growth outside the Wasatch Front counties. 
 No new incorporation but several areas are doing feasibility studies to see if it is possible to incorporate. We’ll find out next year, stay tuned.
 As always feel free to check out all the changes and make sure your boundaries are where you think they should be, view them here: [Utah Municipality Modifications].
 (https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63).
