@@ -67,9 +67,9 @@ indices:
   email: RKelson@utah.gov
   agency: UGRC
 plss:
-  - name: Mike Heagin
-    email: MHeagin@utah.gov
-    phone: 385-401-9667
+  - name: Denise Peterson
+    email: denisepeterson@utah.gov
+    phone: 385-392-4011
     agency: UGRC
   - name: Sean Fernandez
     email: SFernandez@utah.gov
@@ -80,9 +80,9 @@ turn:
     phone: 1-800-678-3440
     email: ugrc@utah.gov
     agency: DTS
-  - name: Mike Heagin
-    email: mheagin@utah.gov
-    phone: 385-401-9667
+  - name: Denise Peterson
+    email: denisepeterson@utah.gov
+    phone: 385-392-4011
     agency: UGRC
   - name: Sean Fernandez
     email: sfernandez@utah.gov
@@ -93,9 +93,9 @@ surveyor:
   phone: 801-209-9359
   agency: UGRC
 boundaries:
-  name: Mike Heagin
-  email: MHeagin@utah.gov
-  phone: 385-401-9667
+  name: Denise Peterson
+  email: denisepeterson@utah.gov
+  phone: 385-392-4011
   agency: UGRC
 zip_codes:
   name: Greg Bunce
