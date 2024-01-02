@@ -32,9 +32,6 @@ The Utah Geospatial Resource Center (UGRC) is the State of Utah’s map technolo
 
 We are located on the 4th floor of the Taylorsville State Office building. You can follow these ([directions to find parking]({% link about/visiting-agrc/index.html %})). UGRC is within the [Division of Technology Services](https://dts.utah.gov/) within the [Department of Government Operations](https://govops.utah.gov/).
 
-[![UGRC staff photo](./AGRC_Staff_2019_small.png){: .outline}](./AGRC_Staff_2019.png)
-{: .pull-right .pad-left loading="lazy" }
-
 UGRC is directed under [mapping-related sections of Utah statute]({% link about/code/index.html %}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
 
 UGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. After many years, our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
