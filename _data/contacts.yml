@@ -16,6 +16,10 @@ geocoding_tools:
   name: Scott Davis
   agency: UGRC
   email: STDavis@utah.gov
+masquerade:
+  name: Scott Davis
+  agency: UGRC
+  email: STDavis@utah.gov
 locators:
   name: Greg Bunce
   agency: UGRC

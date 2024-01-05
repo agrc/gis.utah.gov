@@ -9,6 +9,12 @@ tags:
 date: 2017-08-29 16:08:29 -0600
 title: Address Locators
 categories: []
+Masquerade:
+  downloads:
+    - url: https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer
+      label: Service URL
+  updates:
+    - Review the <a href="https://github.com/agrc/masquerade/releases">release notes</a> on GitHub.
 OfficialClient:
   downloads:
     - url: https://github.com/agrc/api-client/releases/download/v1.6.8/UGRC.API.Client-1.6.8-x64.dmg
@@ -66,6 +72,37 @@ webapp="https://api.mapserv.utah.gov" abstract="Adding a geographic point for an
     </p>
     {% include packagedata.html name="OfficialClient"
     info=page.OfficialClient %}
+  </div>
+</div>
+<div class="grid package">
+  <div class="grid__col grid__col--12-of-12">
+    <h3 id="Masquerade">Masquerade</h3>
+  </div>
+  <div class="grid__col grid__col--12-of-12 package-content">
+    <p>
+      Masquerade is a proxy service hosted by UGRC that makes our geocoding service and Open SGID datasets easily accessible in Esri products. It does this by impersonating an Esri locator service. You should be able to use the URL below anywhere you would normally use an Esri geocode service:
+    </p>
+    <p>
+      <a href="https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer">https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer</a>
+    </p>
+    <h5>Related Resources</h5>
+    <ul class="dotless">
+      <li>
+        <a href="{% link _posts/2022-07-27-introducing-masquerade.md %}">Introducing Masquerade Blog Post</a>
+      </li>
+      <li>
+        <a href="https://github.com/agrc/masquerade/">GitHub Repository</a>
+      </li>
+    </ul>
+    <p>
+      {% include contact.html subject=page.title hide-punctuation=true
+      contact=site.data.contacts.masquerade %} or new issues can be created in the
+      <a href="https://github.com/agrc/masquerade/issues/new"
+        >Github repository</a
+      >.
+    </p>
+    {% include packagedata.html name="Masquerade"
+    info=page.Masquerade %}
   </div>
 </div>
 <div class="grid package">
