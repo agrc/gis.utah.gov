@@ -3,10 +3,9 @@ version: "3"
 services:
   jekyll:
     container_name: "gis.utah.gov"
-    image: "jekyll/jekyll:4"
-    command: "jekyll serve --watch --livereload --incremental"
+    image: "bretfisher/jekyll-serve"
     volumes:
-      - "./:/srv/jekyll"
+      - "./:/site"
     ports:
       - "4000:4000"
       - "35729:35729"
