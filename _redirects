@@ -118,6 +118,7 @@
 
 /data/usgs-scanned-topographic-maps-drgs/vintage-usgs-topo-maps/                                          /data/usgs-scanned-topographic-maps/                                                                  301
 /data/usgs-scanned-topographic-maps-drgs/download-usgs-scanned-topographic-maps/                          /data/usgs-scanned-topographic-maps/                                                                  301
+/data/utilities/telephone-infrastructure-and-rural-telcom-boundaries/                                     /data/utilities/telecom-boundaries/                                                                   301      
 /data/water-data-services/                                                                                /data/water/                                                                                          301
 /data/water-data-services/flood-areas/                                                                    /data/water/flood-areas/                                                                              301
 /data/water-data-services/historic-lake-bonneville/                                                       /data/water/historic-lake-bonneville/                                                                 301
