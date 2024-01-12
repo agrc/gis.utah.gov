@@ -14,6 +14,6 @@ categories:
 ---
 Updates were made recently to the SGID10.Society.Schools feature class that resides on the Utah SGID ArcSDE database server.
 
-Based on information provided by the [Utah State Office of Education](https://www.schools.utah.gov/main/) (as of July 2012), the update includes enhancements to the geographic location of schools, address, district information, internal ids, grade levels, and new point locations of schools built since the dataset was originally created in November 2010.
+Based on information provided by the [Utah State Office of Education](https://web.archive.org/web/20130410135626/http://www.schools.utah.gov/main/) (as of July 2012), the update includes enhancements to the geographic location of schools, address, district information, internal ids, grade levels, and new point locations of schools built since the dataset was originally created in November 2010.
 
 Additionally, the Schools data is now being stored in a more intuitive and user friendly schema. The new schema now includes fields that indicate which Utah House and Senate District each school is located in.
