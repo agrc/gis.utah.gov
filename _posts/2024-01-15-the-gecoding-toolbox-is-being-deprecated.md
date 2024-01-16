@@ -21,7 +21,7 @@ Back in 2014, we released a custom python toolbox for ArcGIS Desktop called the 
 
 For those who are using Esri products including ArcGIS Pro and ArcGIS Online, our [Masquerade](https://github.com/agrc/masquerade) service will allow you to access our geocoding service without any downloaded software. This service enables you to geocode Utah addresses and search for features in our [Open SGID]({% link /data/index.html %}) datasets. It can be used in the same way as any other locator. See the [project page](https://github.com/agrc/masquerade?tab=readme-ov-file#masquerade) for more details.
 
-If you are not using Esri-products, our [API Client](https://github.com/agrc/api-client) is a great option. It is a small downloadable desktop application that requires no Esri licensing. It is super-streamlined and easy to use. See the [introductory blog post]({% link _posts/2021-11-29-introducing-the-official-ugrc-api-client.md %}) for more details.
+If you are not using Esri-products, our [API Client](https://github.com/agrc/api-client) is a great option. It is a small downloadable desktop application that requires no licensing. It is streamlined and easy to use. See the [introductory blog post]({% link _posts/2021-11-29-introducing-the-official-ugrc-api-client.md %}) for more details.
 
 ## What If I Still Want to Use the Toolbox?
 
