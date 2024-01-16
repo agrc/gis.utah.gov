@@ -15,7 +15,7 @@ tags:
 
 ## First, Some History
 
-Back in 2014, we released a custom python toolbox for ArcGIS Desktop called the [Geocoding Toolbox](https://github.com/agrc/geocoding-toolbox). It allowed users to geocode Utah addresses using our [web API](https://api.mapserv.utah.gov/#geocoding). It was a great tool for the time, but there are now better options available. For this reason we have decided to deprecate the toolbox to allow us to focus our efforts and simplify our offerings.
+Back in 2014, we released a custom python toolbox for ArcGIS Desktop called the [Geocoding Toolbox](https://github.com/agrc/geocoding-toolbox). It allowed users to geocode Utah addresses using the [UGRC API](https://api.mapserv.utah.gov/#geocoding). It was a great tool for the time, but we have better options available now. For this reason we have decided to deprecate the toolbox to focus our efforts and simplify our offerings.
 
 ## What Are the Better Options?
 
