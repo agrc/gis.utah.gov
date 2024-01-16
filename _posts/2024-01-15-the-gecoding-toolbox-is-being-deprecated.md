@@ -1,5 +1,5 @@
 ---
-title: 'The Gecoding Toolbox Is Being Deprecated'
+title: 'The Geocoding Toolbox Is Being Deprecated'
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
