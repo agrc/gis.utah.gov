@@ -1,17 +1,16 @@
 {
-  "prettier.enable": false,
   "files.associations": {
-    "*.html": "jekyll"
+    "*.html": "astro"
   },
   "cSpell.words": [
     "agol",
     "anchorjs",
     "ASOF",
+    "astro",
     "Bankhead",
     "bfnontargeted",
     "bftargeted",
     "BLM's",
-    "BLM’s",
     "bluffdale",
     "booleanize",
     "brownfields",
@@ -41,9 +40,6 @@
     "drgs",
     "Duchesne",
     "Dugway",
-    "dwmrc",
-    "dwmrcllrwu",
-    "dzhwf",
     "EFFBUILT",
     "endcapture",
     "endunless",
@@ -60,7 +56,6 @@
     "Fishlake",
     "FNAME",
     "focusable",
-    "forloop",
     "foulger",
     "gas",
     "GCDB",
@@ -112,7 +107,6 @@
     "kearns",
     "Kelson",
     "koosharem",
-    "Kramdown",
     "Laketown",
     "Lehi",
     "lifecycle",
@@ -138,7 +132,6 @@
     "NTRIP",
     "oil",
     "oiland",
-    "opensgid",
     "Orderville",
     "orem",
     "Orthophoto",
@@ -155,8 +148,6 @@
     "plsspoint",
     "prepend",
     "psap",
-    "pydash",
-    "pygsheets",
     "qgis",
     "quarterquarter",
     "Rehost",
@@ -186,6 +177,7 @@
     "SUBDIV",
     "subprecinct",
     "Sunnyside",
+    "tailwindcss",
     "TAXEXEMPT",
     "taxparcelschema",
     "taylorsville",
@@ -205,7 +197,6 @@
     "udem",
     "udot",
     "UDOT's",
-    "UDOT’s",
     "udsh",
     "UDWR",
     "ugic",
@@ -238,9 +229,6 @@
     "xlink",
     "zipcode"
   ],
-  "python.formatting.provider": "yapf",
-  "python.linting.pylintEnabled": true,
-  "python.linting.enabled": true,
   "[markdown]": {
     "editor.fontSize": 14,
     "editor.lineHeight": 26,
@@ -251,7 +239,6 @@
       "comments": "off",
       "strings": "off",
       "other": "off"
-    },
-    "editor.minimap.enabled": false
+    }
   }
 }
