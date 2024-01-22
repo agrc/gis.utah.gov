@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/FullWidth.astro';
+import Section from '../components/page/Section.astro';
+
+const { pathname } = Astro.url;
+---
+
+<Layout title="null island">
+  <Section title="404">
+    <h2>We're sorry but...</h2>
+    <h3>{pathname} was not found or created yet</h3>
+    <ul class="list-disc text-left">
+      <li class="list-decimal">Make sure the above URI is spelled correctly.</li>
+      <li>
+        Try <a href="/search/index.html">searching</a> for the page and
+      </li>
+      <li>finally notify us <a href="https://github.com/agrc/gis.utah.gov/issues/new">by creating an issue</a>.</li>
+      <div>
+        <script>
+          window.onload = function () {
+            gtag('event', '404', {
+              action: '404-path-' + document.location.pathname,
+              label: '404-referrer-' + document.referrer,
+            });
+          };
+        </script>
+      </div>
+    </ul>
+  </Section>
+</Layout>
