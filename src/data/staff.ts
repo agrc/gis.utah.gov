@@ -65,6 +65,7 @@ export const staff = [
     phone: '385-499-0786',
     email: 'jdadams@utah.gov',
     twitter: '@gis_jake',
+    photo: 'jake-adams.png',
     tags: ['Discover', 'configurable apps', 'python', 'AGOL', 'ArcGIS Hub'],
   },
   {
