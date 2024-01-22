@@ -4,7 +4,9 @@ import { getCollection } from 'astro:content';
 import GridForLatestNews from '../components/page/GridForLatestNews.astro';
 import CardWithDate from '../components/page/CardWithDate.astro';
 
-const posts = (await getCollection('blog')).sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf());
+const posts = (await getCollection('blog'))
+  .filter((post) => post.data.published)
+  .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf());
 const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
 ---
 
