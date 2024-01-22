@@ -5,7 +5,7 @@ export const staff = [
     phone: '385-202-3297',
     email: 'mpeters@utah.gov',
     twitter: '@MattUGRC',
-    tags: ['vision', 'strategy', 'leadership', 'management', 'GIS','new opportunities'],
+    tags: ['vision', 'strategy', 'leadership', 'management', 'new opportunities'],
   },
   {
     name: 'Nathan Kota',
