@@ -1,12 +1,21 @@
-.sass-cache/
-.grunt/
-_site/
-.jekyll-metadata
+# build output
+dist/
+
+# generated types
+.astro/
+
+# dependencies
 node_modules/
-.bundle/
-Gemfile.lock
-.jekyll-cache/
-*.pyc
-.jekyll-cache/
-scripts/*.json
-.env/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
