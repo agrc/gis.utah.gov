@@ -1,0 +1,53 @@
+---
+import type { ImageMetadata } from 'astro';
+
+interface Person {
+  name: string;
+  team: string;
+  tags?: string[];
+  email: string;
+  twitter?: string;
+  photo?: string;
+}
+
+const { name, team, twitter, tags, email, photo } = Astro.props as Person;
+import { Image } from 'astro:assets';
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/*.{svg,png}');
+---
+
+<li>
+  <div class="grid-cols-3-150 grid h-60 items-center gap-1 gap-y-6 p-3">
+    <Image
+      class="h-32 w-32 rounded-full border-2 border-primary shadow-xl dark:border-black/50"
+      src={photo
+        ? images[`/src/images/pillar-contact/${photo}`]()
+        : `https://api.dicebear.com/7.x/personas/svg?seed=${name}`}
+      alt={`portrait of ${name} with a white background`}
+      width="128"
+      height="128"
+    />
+    <div>
+      <h3 class="text-base font-semibold leading-7 tracking-tight">{name}</h3>
+      <div class="text-base text-secondary dark:text-accent">
+        <p class="text-sm font-semibold leading-6">{email}</p>
+        {twitter && <p class="text-sm font-semibold leading-6">{twitter}</p>}
+      </div>
+      <div class="text-sm font-semibold leading-6">
+        <div class="flex items-center text-base text-zinc-400 dark:text-zinc-300">
+          <p class="text-sm font-medium leading-6">{team}</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-end gap-0.5 self-center text-xs">
+      {
+        tags &&
+          tags?.map((tag) => (
+            <div class="max-w-fit select-none rounded-full border border-secondary bg-primary/90 px-4 py-1 text-white dark:border-accent/30 dark:bg-secondary">
+              <span>{tag}</span>
+            </div>
+          ))
+      }
+    </div>
+  </div>
+</li>

@@ -1,0 +1,27 @@
+---
+interface Props {
+  description: string;
+  title: string;
+  slug: string;
+  date: Date;
+}
+
+import FormattedDate from '../FormattedDate.astro';
+
+const { title, description, slug, date } = Astro.props;
+---
+
+<div class="rounded bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70">
+  <a href={`/blog/${slug}/`} class="flex flex-1 divide-x-2 divide-zinc-300/60 p-4">
+    <div class="pr-3">
+      <FormattedDate date={date} style="short" />
+    </div>
+    <div class="flex flex-1 pl-3">
+      <div class="flex flex-1 flex-col">
+        <p class="line-clamp-1 grow font-semibold text-primary dark:text-white">{title}</p>
+        <p class="line-clamp-2 grow text-zinc-500 dark:text-zinc-400">{description}</p>
+      </div>
+      <div class="self-center text-4xl text-primary dark:text-white">&#x2192;</div>
+    </div>
+  </a>
+</div>

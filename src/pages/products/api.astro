@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Pillar.astro';
+import Section from '../../components/page/Section.astro';
+import CardWithPopularLink from '../../components/page/CardWithPopularLink.astro';
+import CardWithSideImage from '../../components/page/CardWithSideImage.astro';
+import CardWithSmallLink from '../../components/page/CardWithSmallLink.astro';
+import CardWithTopImage from '../../components/page/CardWithTopImage.astro';
+import GridForMoreResources from '../../components/page/GridForMoreResources.astro';
+import GridForPillars from '../../components/page/GridForPillars.astro';
+import GridForYouMightLike from '../../components/page/GridForYouMightLike.astro';
+import GridForPopularResources from '../../components/page/GridForPopularResources.astro';
+
+import { Image } from 'astro:assets';
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-api/*.{svg,png}');
+---
+
+<Layout title="UGRC API">
+  <Fragment slot="popular-level-ones">
+    <Section>
+      <Fragment slot="title">The UGRC API</Fragment>
+      <Image
+        src={images['/src/images/pillar-api/api-logo.svg']()}
+        slot="image"
+        alt="wavy gravy api logo"
+        class="w-full rounded-2xl dark:brightness-200 dark:grayscale"
+      />
+      <p>
+        The demand for geospatial and location based information has increased dramatically as many disciplines realize
+        the power of spatial data. A customer's address stored in a database has only so many uses. With this API, the
+        door opens to many spatial opportunities from visually seeing customer locations on a map to being able to
+        spatially analyze their relationship or patterns in conjunction with other events such as disease occurrences,
+        natural disaster affected areas, and other location based occurrences. This API's two main endpoints allow you
+        to geocode and search SGID data.
+      </p>
+      <p>
+        Geocoding allows you to find a geographic location (i.e., the geographical coordinates) from an address. UGRC's
+        geocoding philosophy is unique in that we would rather give you no match than the wrong match. But we assure
+        you: we will have the best match rates for Utah addresses. How can we be so sure?—Because we're the experts in
+        Utah geospatial data.
+      </p>
+      <p>
+        Searching allows you to search through more than 1,000,000 rows of spatial SGID data. With over 300 layers of
+        real-world data that you can run queries against in the SGID, the possibilities can be a little overwhelming.
+        But the searching endpoint really opens up the opportunity for serious information gathering. You need a way to
+        sift through all that information and make sense of it and our search endpoint can help you do that.
+      </p>
+    </Section>
+
+    <Section stripe>
+      <GridForPillars>
+        <CardWithTopImage
+          title="Sign up"
+          actionText="Get started"
+          actionUrl="https://ut-dts-agrc-web-api-dev.web.app/getting-started/"
+        >
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-api/sign-up.svg']()}
+            alt="a person using a search egine"
+            class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          The UGRC API is a free service that allows you to geocode and search SGID data. To use the API, you need to have
+          an account and create API keys. These key are used to authenticate requests and to give you usage analytics. Click
+          the link below to get started.
+        </CardWithTopImage>
+        <CardWithTopImage
+          title="Documentation"
+          actionText="Start learning"
+          actionUrl="https://ut-dts-agrc-web-api-dev.web.app/docs/"
+        >
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-api/documentation.svg']()}
+            alt="a person connected to a database"
+            class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          There are many ways to use the UGRC API. We have created documentation to help you get started. Click the link
+          below to learn more about the API and how to use it.
+        </CardWithTopImage>
+        <CardWithTopImage
+          title="API Client"
+          actionText="Start geocoding"
+          actionUrl="/products/api/api-client"
+          class="lg:col-span-2 xl:col-span-1"
+        >
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-api/api-client-install.svg']()}
+            alt="people connected to a network through geography"
+            class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          The API Client is a desktop tool to thoughtfully guide you through the process of using the UGRC API to geocode
+          your data. It allows you to geocode your data without any knowledge of the API. It requires no license and is free
+          to use. Click the link below to download the application and visualize your data.
+        </CardWithTopImage>
+      </GridForPillars>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="popular-resources">
+    <Section title="Popular API Resources">
+      <GridForPopularResources>
+        <CardWithPopularLink
+          title="Sample Code"
+          href="https://github.com/agrc/api.mapserv.utah.gov/tree/development/samples"
+        >
+          Sample code calling the API in multiple programming languages
+        </CardWithPopularLink>
+        <CardWithPopularLink title="dart-board" href="https://www.npmjs.com/package/@ugrc/dart-board">
+          A react component for geocoding addresses and route/mileposts using UGRC's API.
+        </CardWithPopularLink>
+        <CardWithPopularLink title="sherlock" href="https://www.npmjs.com/package/@ugrc/sherlock">
+          A react component for searching for data and zooming to it on an ArcGIS map using UGRC's API as well as other
+          providers.
+        </CardWithPopularLink>
+        <CardWithPopularLink title="masquerade" href="https://github.com/agrc/masquerade">
+          A proxy service that impersonates an Esri locator using the UGRC API and SGID data.
+        </CardWithPopularLink>
+      </GridForPopularResources>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="more-resources">
+    <Section title="More API Resources" stripe>
+      <GridForMoreResources>
+        <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-api/privacy.svg']()}
+            alt="a computer with a lock on the screen"
+            class="self-center"
+          />
+          UGRC's data license and general data disclaimer.
+        </CardWithSideImage>
+        <CardWithSideImage title="API Self Service" actionUrl="https://ut-dts-agrc-web-api-dev-self-service.web.app/">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-api/self-service.svg']()}
+            alt="a person checking out at the grocery store"
+            class="self-center"
+          />
+          The self service website to create, manage, and view analyics for your API keys.
+        </CardWithSideImage>
+      </GridForMoreResources>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="you-might-also-like">
+    <Section title="You might also like">
+      <GridForYouMightLike>
+        <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
+          This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
+          by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's
+          current and authoritative datasets.
+        </CardWithSmallLink>
+        <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+          Discover spatial data and tools that empower informed land management decisions
+        </CardWithSmallLink>
+        <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
+          Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
+          management.
+        </CardWithSmallLink>
+      </GridForYouMightLike>
+    </Section>
+  </Fragment>
+</Layout>

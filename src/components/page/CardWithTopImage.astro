@@ -1,0 +1,32 @@
+---
+import ButtonLink from './ButtonLink.astro';
+
+interface Props {
+  title: string;
+  actionUrl: string;
+  actionText?: string;
+  class?: string;
+  primary?: boolean;
+}
+
+const { primary, title, actionText = 'See more', actionUrl, class: className } = Astro.props;
+---
+
+<section class:list={['flex w-96 flex-col rounded-2xl', className]}>
+  <slot name="image" />
+  <div
+    class="flex flex-1 flex-col rounded-b-2xl border-x border-b border-zinc-400 px-7 py-6 leading-tight shadow dark:border-black/50 dark:bg-black/40"
+  >
+    <header>
+      <h3>{title}</h3>
+    </header>
+    <p class="grow">
+      <slot />
+    </p>
+    <footer class="flex flex-row-reverse pt-4">
+      <ButtonLink href={actionUrl} decorate="arrow">
+        {actionText}
+      </ButtonLink>
+    </footer>
+  </div>
+</section>

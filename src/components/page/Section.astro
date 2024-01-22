@@ -1,0 +1,59 @@
+---
+import ButtonLink from './ButtonLink.astro';
+interface Props {
+  actionUrl?: string;
+  actionText?: string;
+  title?: string;
+  stripe?: boolean;
+  primary?: boolean;
+}
+const { actionUrl, actionText, title, stripe, primary } = Astro.props;
+const hasImage = await Astro.slots.render('image');
+---
+
+<section
+  class:list={[
+    'w-full pb-16 pt-10',
+    stripe
+      ? primary
+        ? 'bg-primary text-zinc-200'
+        : 'bg-white dark:bg-primary dark:text-zinc-300'
+      : 'bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300',
+  ]}
+>
+  {
+    title && (
+      <div class="mx-auto max-w-prose px-8 pb-6 text-center lg:max-w-7xl">
+        <h2>{title}</h2>
+      </div>
+    )
+  }
+  <div class="flex justify-center px-6">
+    <div
+      class:list={[
+        'grid max-w-prose grid-cols-1 gap-12 lg:max-w-7xl lg:px-8 2xl:px-0',
+        hasImage ? 'lg:grid-cols-2' : null,
+      ]}
+    >
+      <div class="flex flex-1 flex-col gap-6 self-center">
+        <slot />
+        {
+          actionUrl && (
+            <div class="mx-auto">
+              <ButtonLink href={actionUrl} decorate="arrow" color="secondary">
+                {actionText}
+              </ButtonLink>
+            </div>
+          )
+        }
+      </div>
+      {
+        hasImage?.length && (
+          <div class:list={['flex items-start justify-center', stripe ? 'order-first' : 'order-last']}>
+            <slot name="image" />
+          </div>
+        )
+      }
+    </div>
+  </div>
+</section>

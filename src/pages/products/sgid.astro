@@ -1,0 +1,160 @@
+---
+import Layout from '../../layouts/Pillar.astro';
+import Section from '../../components/page/Section.astro';
+import CardWithPopularLink from '../../components/page/CardWithPopularLink.astro';
+import CardWithSideImage from '../../components/page/CardWithSideImage.astro';
+import CardWithSmallLink from '../../components/page/CardWithSmallLink.astro';
+import CardWithTopImage from '../../components/page/CardWithTopImage.astro';
+import GridForMoreResources from '../../components/page/GridForMoreResources.astro';
+import GridForPillars from '../../components/page/GridForPillars.astro';
+import GridForYouMightLike from '../../components/page/GridForYouMightLike.astro';
+import GridForPopularResources from '../../components/page/GridForPopularResources.astro';
+
+import { Image } from 'astro:assets';
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-sgid/*.{svg,png}');
+---
+
+<Layout title="State Geographic Information Datasource">
+  <Fragment slot="popular-level-ones">
+    <Section>
+      <Fragment slot="title">The State Geographic Information Datasource</Fragment>
+      <Image
+        src={images['/src/images/pillar-sgid/sgid-logo.svg']()}
+        slot="image"
+        alt="sgid logo"
+        class="w-full rounded-2xl dark:brightness-200 dark:grayscale"
+      />
+      <p>
+        Established by State law in 1991, Utah's State Geographic Information Datasource (SGID) provides a centralized
+        collection of hundreds of GIS data layers developed, aggregated, or acquired by the State. Evolving technologies
+        have allowed us to transform the SGID from a single database to a broad collection of data resources under the
+        SGID umbrella. It contains both UGRC-curated datasets and references to data from a wide variety of state and
+        local agencies. Many resources have both download links and links to web services for direct consumption.
+      </p>
+      <p>
+        There are many facets, or parts, to the SGID today, with each one addressing specific audiences and
+        technologies. The SGID Index combines all of these facets plus links to externally-hosted resources to make it
+        easy to find the latest and highest quality GIS data resources no matter where they're hosted.
+      </p>
+      <p>
+        UGRC and our numerous partners at cities, counties, and state agencies are working hard to maintain this
+        high-quality asset to help everyone discover, access, and use Utah GIS data resources.
+      </p>
+    </Section>
+
+    <Section stripe>
+      <GridForPillars>
+        <CardWithTopImage title="SGID Index" actionText="Search the index" actionUrl="/products/sgid-index">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/sgid-index.svg']()}
+            alt="a person using a search egine"
+            class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          The SGID Index is <span class="font-bold">the primary source</span> of information for SGID datasets. It includes
+          links to detailed information pages about UGRC-maintained datasets as well as direct links to the authoritative
+          sources for datasets served by other state agencies. The index lists the resource's category, name, and primary
+          data steward, along with a short description of the resource and links to web services (if available).
+        </CardWithTopImage>
+        <CardWithTopImage title="Open SGID" actionText="Get connected" actionUrl="products/open-sgid">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/open-sgid.svg']()}
+            alt="a person connected to a database"
+            class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          The Open SGID is a publicly available database containing our curated collection of GIS datasets. You can use this
+          vendor-neutral database connection to directly access Utah spatial data in a wide variety of applications, including
+          most GIS programs and common database clients.
+        </CardWithTopImage>
+        <CardWithTopImage
+          title="SGID ArcGIS Hub"
+          actionText="Explore Utah data"
+          actionUrl="https://opendata.gis.utah.gov/"
+          class="lg:col-span-2 xl:col-span-1"
+        >
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/sgid-opendata.svg']()}
+            alt="people connected to a network through geography"
+            class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          The SGID ArcGIS Hub site is a single destination for GIS resources hosted in multiple agencies. Each item in the
+          Hub contains data download links along with web service links for consuming the datasets in webmaps and other applications.
+          We share all our curated datasets through the site and encourage other agencies and organizations to <a
+            href="{% link sharing/index.md %}">share</a
+          > their datasets here as well to help spread GIS data to the widest possible audience.
+        </CardWithTopImage>
+      </GridForPillars>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="popular-resources">
+    <Section title="Popular SGID Resources">
+      <GridForPopularResources>
+        <CardWithPopularLink title="ArcGIS Online Services" href="https://utah.maps.arcgis.com/home/groups.html">
+          Browse ArcGIS Online services
+        </CardWithPopularLink>
+        <CardWithPopularLink title="The Raster Discovery App" href="/products/discover/raster">
+          Search raster data
+        </CardWithPopularLink>
+        <CardWithPopularLink title="Discover Base map and Imagery Services" href="/products/discover">
+          Access several raster products, including our aerial imagery products and the high-quality, Utah-specific
+          basemaps.
+        </CardWithPopularLink>
+        <CardWithPopularLink title="UGRC API" href="http://api.mapserv.utah.gov">
+          Access SGID datasets and geocoding without complicated or costly software
+        </CardWithPopularLink>
+      </GridForPopularResources>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="more-resources">
+    <Section title="More SGID Resources" stripe>
+      <GridForMoreResources>
+        <CardWithSideImage title="Data and license disclaimer" actionUrl="/products/sgid/disclaimer">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/license-disclaimer.svg']()}
+            alt="man in front of warning sign"
+            class="self-center"
+          />
+          UGRC's data license and general data disclaimer.
+        </CardWithSideImage>
+        <CardWithSideImage title="Data sharing agreement" actionUrl="/products/sgid/sharing">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/data-sharing-agreement.svg']()}
+            alt="people shaking hands"
+            class="self-center"
+          />
+          Agreement between UGRC and data stewards for data shared through the SGID.
+        </CardWithSideImage>
+      </GridForMoreResources>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="you-might-also-like">
+    <Section title="You might also like">
+      <GridForYouMightLike>
+        <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
+          This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
+          by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's
+          current and authoritative datasets.
+        </CardWithSmallLink>
+        <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+          Discover spatial data and tools that empower informed land management decisions
+        </CardWithSmallLink>
+        <CardWithSmallLink
+          title="DNR Data Portal"
+          href="https://dwr-data-utahdnr.hub.arcgis.com/"
+          class="sm:col-span-2"
+        >
+          Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
+          management.
+        </CardWithSmallLink>
+      </GridForYouMightLike>
+    </Section>
+  </Fragment>
+</Layout>

@@ -1,0 +1,116 @@
+---
+import Layout from '../layouts/Pillar.astro';
+import Section from '../components/page/Section.astro';
+import GridForPillars from '../components/page/GridForPillars.astro';
+import CardWithTopImage from '../components/page/CardWithTopImage.astro';
+
+import { Image } from 'astro:assets';
+import GridForPopularResources from '../components/page/GridForPopularResources.astro';
+import CardWithPopularLink from '../components/page/CardWithPopularLink.astro';
+import GridForMoreResources from '../components/page/GridForMoreResources.astro';
+import CardWithSideImage from '../components/page/CardWithSideImage.astro';
+import GridForYouMightLike from '../components/page/GridForYouMightLike.astro';
+import CardWithSmallLink from '../components/page/CardWithSmallLink.astro';
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-sgid/*.{svg,png}');
+---
+
+<Layout title="Documentation">
+  <Fragment slot="popular-level-ones">
+    <Section stripe>
+      <GridForPillars>
+        <CardWithTopImage title="SGID" actionUrl="/documentation/sgid">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/sgid-index.svg']()}
+            alt="a person using a search egine"
+            class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          blah blah blah
+        </CardWithTopImage>
+        <CardWithTopImage title="Discover Base map and Imagery Services" actionUrl="documentatio/discover">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/open-sgid.svg']()}
+            alt="a person connected to a database"
+            class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          yada yada yada
+        </CardWithTopImage>
+        <CardWithTopImage
+          title="UGRC API"
+          actionText="Learn more"
+          actionUrl="https://api.mapserv.utah.gov/"
+          class="lg:col-span-2 xl:col-span-1"
+        >
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/sgid-opendata.svg']()}
+            alt="people connected to a network through geography"
+            class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          blerg blerg blerg
+        </CardWithTopImage>
+      </GridForPillars>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="popular-resources">
+    <Section title="Popular Documentation Resources">
+      <GridForPopularResources>
+        <CardWithPopularLink title="TURN GPS" href="/documentation/turn">
+          Sign up and access the TURN GPS service
+        </CardWithPopularLink>
+        <CardWithPopularLink title="Porter" href="/products/discover/raster">Learn about porter?</CardWithPopularLink>
+        <CardWithPopularLink title="Palletjack" href="/products/discover">palletjack docs?</CardWithPopularLink>
+        <CardWithPopularLink title="API Client" href="http://api.mapserv.utah.gov">
+          API Client stuff
+        </CardWithPopularLink>
+      </GridForPopularResources>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="more-resources">
+    <Section title="More Documentation Resources" stripe>
+      <GridForMoreResources>
+        <CardWithSideImage title="Masquerade" actionUrl="/documentation/masquerade">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/license-disclaimer.svg']()}
+            alt="man in front of warning sign"
+            class="self-center"
+          />
+          The UGRC API and SGID accessed through Esri clients.
+        </CardWithSideImage>
+        <CardWithSideImage title="?" actionUrl="/products/sgid/sharing">
+          <Image
+            slot="image"
+            src={images['/src/images/pillar-sgid/data-sharing-agreement.svg']()}
+            alt="people shaking hands"
+            class="self-center"
+          />
+          Something
+        </CardWithSideImage>
+      </GridForMoreResources>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="you-might-also-like">
+    <Section title="You might also like">
+      <GridForYouMightLike>
+        <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
+          This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
+          by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's
+          current and authoritative datasets.
+        </CardWithSmallLink>
+        <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+          Discover spatial data and tools that empower informed land management decisions
+        </CardWithSmallLink>
+        <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
+          Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
+          management.
+        </CardWithSmallLink>
+      </GridForYouMightLike>
+    </Section>
+  </Fragment>
+</Layout>

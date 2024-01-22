@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/FullWidth.astro';
+import Section from '../components/page/Section.astro';
+import GridForYouMightLike from '../components/page/GridForYouMightLike.astro';
+import CardWithSmallLink from '../components/page/CardWithSmallLink.astro';
+
+import { YouTube } from '@astro-community/astro-embed-youtube';
+---
+
+<Layout title="Who We Are">
+  <Section title="Who is the UGRC">
+    <p class="max-w-prose">
+      UGRC is the state's map technology coordination office. We aggregate and make available important statewide data
+      sets (e.g. roads, address points) to the public and for government systems; engage and advise on GIS
+      implementations and best practices; and build custom tools, services, and applications for all levels of
+      government throughout the state to improve their business processes by integrating spatial data.
+    </p>
+    <div class="mx-auto max-w-prose px-8 text-center lg:max-w-7xl"><h2>Our Mission</h2></div>
+    <p class="max-w-prose">
+      The mission of UGRC is to encourage and facilitate the effective use of geospatial information and technology for
+      Utah. The Utah Geospatial Resource Center (UGRC) provides a wide range of Geographic Information System (GIS) and
+      other geospatial support services. UGRC strives to ensure a high level of coordination among Utah GIS users and
+      effective, efficient use of GIS resources. Other services include stewardship of the State Geographic Information
+      Database (SGID), facilitation of programs and activities to implement GIS technology across the state, and
+      coordination of GIS policy development and implementation activities. UGRC also provides consulting services to
+      federal, state, and local government and other organizations, including GIS analysis and application development,
+      and map and web service development and hosting.
+    </p>
+  </Section>
+  <Section stripe title="What we do">
+    <div class="mx-auto w-screen max-w-4xl">
+      <YouTube
+        class="aspect-video max-w-full rounded-lg border-2 border-black shadow-xl"
+        id="QOd54USXL8A"
+        playlabel="Hear Matt explain what we do"
+      />
+    </div>
+  </Section>
+  <Section title="Our Vision">
+    <p class="max-w-prose">
+      UGRC is directed under mapping-related sections of Utah statute to coordinate GIS resources within state
+      government including the management of the State Geographic Information Database (SGID) and the operation of The
+      Utah Reference Network for Global Positioning Systems (TURNGPS) that provides high precision correction services
+      for surveying, mapping, and machine control.
+    </p>
+    <div class="mx-auto max-w-prose px-8 text-center lg:max-w-7xl"><h2>Our History</h2></div>
+    <p class="max-w-prose">
+      UGRC was one of the first geospatial information offices in the country, established a few years before its formal
+      adoption in code in 1984. After many years, our storefront remains located at the intersection of geography,
+      technology, and the quest for enterprise-wide efficiency.
+    </p>
+  </Section>
+  <Section stripe title="You might also like">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="GIS-related Utah Statute" href="/about/statute">
+        State of Utah statute and administrative rules pertaining to Geographic Information Systems & Mapping
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Historical documents" href="/about/history">
+        Maybe our wikipedia page that was never approved?
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Staff presentations" href="https://agrc.github.io/Presentations/">
+        A collection of talks given by UGRC staff
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Logos and Media" href="/about/logos">
+        UGRC logos and media to use in your projects and maps
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

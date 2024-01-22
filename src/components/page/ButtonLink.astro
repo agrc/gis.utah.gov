@@ -1,0 +1,53 @@
+---
+interface Props {
+  href: string;
+  decorate?: 'arrow';
+  status?: 'idle' | 'loading' | 'success' | 'error' | 'disabled';
+  style?: 'outline' | 'solid';
+  color?: 'primary' | 'secondary' | 'accent';
+}
+const { href, decorate, status = 'idle', color = 'primary', style = 'solid' } = Astro.props;
+const list = [
+  'relative',
+  'flex',
+  'min-h-9',
+  'cursor-pointer',
+  'items-center',
+  'justify-center',
+  'rounded-full',
+  'border-2',
+  'border-zinc-400',
+  'px-8',
+  'no-underline',
+  'transition-all',
+  'transition-500',
+  'hover:contrast-125',
+  'hover:shadow',
+  'hover:border-zinc-600',
+  'active:scale-95',
+  'active:shadow-inner',
+  'focus:outline-2',
+  'focus:outline-accent',
+  'focus:transition-none',
+  'dark:border-zinc-400/30',
+  'dark:hover:border-white/30',
+];
+
+if (color === 'primary') {
+  list.push('bg-primary');
+  list.push('text-zinc-200');
+} else if (color === 'secondary') {
+  list.push('bg-secondary');
+  list.push('text-zinc-200');
+} else if (color === 'accent') {
+  list.push('bg-accent');
+  list.push('text-zinc-200');
+}
+---
+
+<a href={href} role="button" class:list={list}>
+  <button type="button" tabindex="-1">
+    <slot />
+    {decorate === 'arrow' && <span class="ml-2">&#x2192;</span>}
+  </button>
+</a>

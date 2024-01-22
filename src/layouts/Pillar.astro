@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/FullWidth.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title = 'UGRC' } = Astro.props;
+---
+
+<Layout title={title}>
+  <slot name="popular-level-ones" />
+  <slot name="popular-resources" />
+  <slot name="more-resources" />
+  <slot name="you-might-also-like" />
+</Layout>

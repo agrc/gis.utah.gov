@@ -1,0 +1,38 @@
+---
+interface Props {
+  date: Date;
+  style: 'long' | 'short';
+}
+
+const { date, style } = Astro.props;
+---
+
+<time datetime={date.toISOString()}>
+  {
+    style === 'long' && (
+      <div class="text-center font-medium text-primary/80 dark:text-accent">
+        {date.toLocaleDateString('en-us', {
+          month: 'short',
+          year: 'numeric',
+          day: 'numeric',
+        })}
+      </div>
+    )
+  }
+  {
+    style === 'short' && (
+      <div class="flex flex-col">
+        <div class="text-center font-medium text-primary/80 dark:text-accent">
+          {date.toLocaleDateString('en-us', {
+            month: 'long',
+          })}
+        </div>
+        <div class="w-16 text-center text-3xl font-bold text-primary/80 dark:text-accent">
+          {date.toLocaleDateString('en-us', {
+            day: 'numeric',
+          })}
+        </div>
+      </div>
+    )
+  }
+</time>

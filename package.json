@@ -1,0 +1,46 @@
+{
+  "name": "gis-portal",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier \"src/**/*.{astro,js,jsx,ts,json,mjs,md,mdx}\" --write"
+  },
+  "dependencies": {
+    "@astro-community/astro-embed-youtube": "^0.4.4",
+    "@astrojs/mdx": "^2.0.5",
+    "@astrojs/react": "^3.0.9",
+    "@astrojs/rss": "^4.0.2",
+    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/tailwind": "^5.1.0",
+    "@heroicons/react": "^2.1.1",
+    "@radix-ui/react-collapsible": "^1.0.3",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
+    "@radix-ui/react-popover": "^1.0.7",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "astro": "^4.2.1",
+    "classnames": "^2.5.1",
+    "firebase-tools": "^13.0.3",
+    "prettier-plugin-astro": "^0.12.3",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "plugins": [
+      "prettier-plugin-astro",
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/FullWidth.astro';
+
+import CardWithTopImage from '../components/page/CardWithTopImage.astro';
+import CardWithSmallLink from '../components/page/CardWithSmallLink.astro';
+import GridForPillars from '../components/page/GridForPillars.astro';
+import GridForLatestNews from '../components/page/GridForLatestNews.astro';
+import GridForYouMightLike from '../components/page/GridForYouMightLike.astro';
+import Section from '../components/page/Section.astro';
+
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import CardWithDate from '../components/page/CardWithDate.astro';
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/landing/*.{svg,png}');
+
+const posts = (await getCollection('blog'))
+  .sort((b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<Layout title="UGRC">
+  <Section>
+    <GridForPillars>
+      <CardWithTopImage title="Products" actionUrl="/products">
+        <Image
+          src={images['/src/images/landing/products.svg']()}
+          slot="image"
+          alt="an assembly line of people making produts"
+          class="block h-80 rounded-t-2xl bg-primary"
+        />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </CardWithTopImage>
+      <CardWithTopImage title="Solutions" actionUrl="/solutions">
+        <Image
+          src={images['/src/images/landing/solutions.svg']()}
+          slot="image"
+          alt="a person standing in front of a chalkboard with a solution written on it"
+          class="block h-80 rounded-t-2xl bg-primary"
+        />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </CardWithTopImage>
+      <CardWithTopImage title="Collaboration" actionUrl="/collaboration" class="sm:col-span-2 xl:col-span-1">
+        <Image
+          src={images['/src/images/landing/collaboration.svg']()}
+          slot="image"
+          alt="people pulling a rope together"
+          class="block h-80 rounded-t-2xl bg-primary"
+        />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </CardWithTopImage>
+    </GridForPillars>
+  </Section>
+  <Section stripe primary title="Latest News" actionText="Read more news" actionUrl="/blog">
+    <GridForLatestNews>
+      {
+        posts.map((post) => (
+          <CardWithDate
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.pubDate}
+            slug={post.slug}
+          />
+        ))
+      }
+    </GridForLatestNews>
+  </Section>
+  <Section title="You might also like">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Getting Started" href="/">Putting the pieces of the puzzle together.</CardWithSmallLink>
+      <CardWithSmallLink title="Getting Started" href="/">description</CardWithSmallLink>
+      <CardWithSmallLink title="Getting Started" href="/">description</CardWithSmallLink>
+      <CardWithSmallLink title="Getting Started" href="/">description</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

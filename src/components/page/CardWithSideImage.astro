@@ -1,0 +1,37 @@
+---
+import ButtonLink from './ButtonLink.astro';
+
+interface Props {
+  title: string;
+  actionText?: string;
+  class?: string;
+  actionUrl?: string;
+}
+
+const { title, actionText = 'See more', actionUrl } = Astro.props;
+---
+
+<div class="grid-cols-150 grid">
+  <div
+    class="flex h-full border-2 border-r-0 border-primary bg-primary shadow dark:border-zinc-900/50 dark:bg-zinc-900/70"
+  >
+    <slot name="image" />
+  </div>
+  <div
+    class="flex flex-auto flex-col border-2 border-l-0 border-primary bg-white px-7 py-6 leading-tight shadow dark:border-zinc-900/50 dark:bg-zinc-900/50"
+  >
+    <h3>{title}</h3>
+    <p class="lg:min-w-72">
+      <slot />
+    </p>
+    {
+      actionUrl && (
+        <div class="flex flex-row-reverse pt-4 align-baseline">
+          <ButtonLink href={actionUrl} decorate="arrow">
+            {actionText}
+          </ButtonLink>
+        </div>
+      )
+    }
+  </div>
+</div>

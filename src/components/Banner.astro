@@ -1,0 +1,50 @@
+---
+interface Props {
+  title: string;
+}
+
+import { getImage } from 'astro:assets';
+import image from '../images/hero/banner.png';
+
+const { title = 'UGRC' } = Astro.props;
+
+const banner = await getImage({ src: image, format: 'webp' });
+---
+
+<div
+  class="relative z-[1] flex h-[150px] w-full justify-end border-b-2
+    border-primary
+    bg-cover
+    before:absolute
+    before:inset-0
+    before:bg-gradient-to-r
+    before:from-primary
+    before:via-secondary
+    before:to-transparent
+    before:opacity-60"
+  style={{
+    backgroundImage: `url(${banner.src})`,
+  }}
+>
+  <div class="relative h-[150px] basis-5/12">
+    <div class="absolute bottom-0 left-0 flex w-full flex-col flex-wrap content-end items-end justify-start">
+      <div class="absolute bottom-0 left-0 h-full w-full shrink grow-0 basis-auto overflow-hidden">
+        <svg class="h-full fill-black/70" viewBox="0 0 4000 400">
+          <g>
+            <path d="M0,400H4000V0H268L0,400Z"></path>
+          </g>
+        </svg>
+      </div><div
+        class="relative flex w-4/5 shrink grow-0 basis-auto flex-col flex-wrap content-end items-end justify-start border-0 p-6"
+      >
+        <div class="relative min-w-px border-0">
+          <div class="flex">
+            <div class="block min-w-px max-w-full grow">
+              <h1 class="text-right text-white dark:text-white/80">{title}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+---
+import Layout from './Chrome.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title = 'UGRC' } = Astro.props;
+---
+
+<Layout title={title}>
+  <main id="main" class="w-full self-center text-zinc-700 dark:bg-primary">
+    <section class="flex flex-1 flex-col">
+      <slot />
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,106 @@
+---
+import { Image } from 'astro:assets';
+
+import govOpsLogo from '../images/footer/govops-logo.png';
+---
+
+<section>
+  <div
+    class="grid grid-cols-1 gap-8 bg-zinc-600 p-4 text-center text-zinc-50 sm:grid-cols-3 sm:p-8 sm:text-left md:grid-cols-5"
+  >
+    <div class="order-last col-span-1 sm:col-span-3 md:order-first md:col-span-2">
+      <div>
+        <div class="max-w-xs">
+          <Image src={govOpsLogo} alt="Department of Government Operations" />
+        </div>
+        <div class="mt-4 text-xl">
+          <div class="whitespace-nowrap font-semibold">Division of Technology Services</div>
+          <div class="whitespace-nowrap font-medium">Utah Geospatial Resource Center</div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div>4315 South 2700 West</div>
+        <div>Taylorsville, UT 84129</div>
+      </div>
+    </div>
+    <div>
+      <div class="whitespace-nowrap text-lg font-bold">Main Menu</div>
+      <ul class="pl-1 text-sm leading-loose text-white">
+        <li><a href="/" class="action-card hover:underline">Home</a></li>
+        <li><a href="/products" class="action-card hover:underline">Products</a></li>
+        <li><a href="/solutions" class="action-card hover:underline">Solutions</a></li>
+        <li><a href="/documentation" class="action-card hover:underline">Documentation</a></li>
+        <li><a href="/collaboration" class="action-card hover:underline">Collaboration</a></li>
+        <li><a href="/blog" class="action-card hover:underline">Blog</a></li>
+        <li><a href="/about" class="action-card hover:underline">About</a></li>
+        <li><a href="/contact" class="action-card hover:underline">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="whitespace-nowrap text-lg font-bold">Helpful Links</div>
+      <ul class="pl-1 text-sm leading-loose text-white">
+        <li><a href="/about/contributing" class="action-card hover:underline">Content contributing guide</a></li>
+        <li><a href="/about/media" class="action-card hover:underline">Logos and media resources</a></li>
+        <li><a href="/about/policy" class="action-card hover:underline">UGRC Policies</a></li>
+        <li><a href="/about/statute" class="action-card hover:underline">GIS-related Utah statute</a></li>
+        <li>
+          <a
+            href="https://cdn.forms-content.sg-form.com/61e82d28-f0d5-11ec-847c-a26809937a38"
+            class="action-card hover:underline">Sign up for our newsletter</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="whitespace-nowrap text-lg font-bold">Website Information</div>
+      <ul class="pl-1 text-sm leading-loose text-white">
+        <li>Build: ae87578</li>
+        <li>
+          <a href="https://github.com/agrc/gis.utah.gov/edit/master/index.html" class="action-card hover:underline"
+            >Edit this page</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/agrc/gis.utah.gov/issues/new" class="action-card external-link hover:underline"
+            >Report an issue</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="w-full bg-zinc-600">
+  <div class="relative flex flex-col flex-wrap items-center justify-between p-8 lg:flex-row">
+    <div class="flex flex-col items-center gap-4 text-center lg:h-8 lg:flex-row lg:divide-x lg:text-left">
+      <div class="h-full" id="utah-logo-svg">
+        <svg class="block h-8 w-auto fill-white" viewBox="0 0 107 30.51" role="img">
+          <g>
+            <path
+              d="m12.44,30.51c-4.21,0-7.33-1.22-9.38-3.66C1.02,24.4,0,20.61,0,15.48V0h7.93v16.4c0,2.67.36,4.55,1.08,5.65.77,1.12,2.08,1.74,3.43,1.64,1.36.1,2.68-.52,3.48-1.63.75-1.09,1.13-2.97,1.13-5.65V0h7.65v15.48c0,5.13-1,8.92-3,11.36-2,2.44-5.09,3.66-9.26,3.66Zm24.42-.56V6.64h-7.93V0h23.78v6.64h-7.93v23.31h-7.92Zm26.17-14.56l-.51,2.07h5.53l-.51-2.07c-.37-1.44-.74-3.01-1.11-4.7-.37-1.69-.74-3.29-1.11-4.79h-.18c-.34,1.53-.68,3.14-1.04,4.82-.35,1.68-.71,3.24-1.08,4.68Zm-11.52,14.56L60.64,0h9.58l9.12,29.95h-8.39l-1.48-6.36h-8.38l-1.47,6.36h-8.11Zm30.69,0V0h7.93v11.15h8.94V0h7.93v29.95h-7.93v-11.89h-8.94v11.89h-7.93Z"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <div class="pl-4">
+        <div class="text-lg font-semibold text-white">
+          An official website of the{' '}
+          <span class="whitespace-no-wrap">State of Utah</span>
+        </div>
+        <div class="text-sm text-white">© State of Utah</div>
+      </div>
+    </div>
+    <div class="pt-6 text-center text-sm text-white lg:pt-0">
+      <div class="space-x-2 whitespace-pre-wrap lg:space-x-4">
+        <a href="https://www.utah.gov" target="__blank" rel="noreferrer">Utah.gov Home</a>
+        <span class="border-l-2" aria-hidden="true"></span>
+        <a href="https://www.utah.gov/disclaimer.html" target="__blank" rel="noreferrer">Terms of Use</a>
+        <span class="border-l-2" aria-hidden="true"></span>
+        <a href="https://www.utah.gov/privacypolicy.html" target="__blank" rel="noreferrer">Privacy Policy</a>
+        <span class="border-l-2" aria-hidden="true"></span>
+        <a href="https://www.utah.gov/accessibility.html" target="__blank" rel="noreferrer">Accessibility</a>
+        <span class="border-l-2" aria-hidden="true"></span>
+        <a href="https://www.utah.gov/translate.html" target="__blank" rel="noreferrer">Translate</a>
+      </div>
+    </div>
+  </div>
+</div>
