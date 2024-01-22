@@ -14,7 +14,7 @@ export const staff = [
     email: 'nathankota@utah.gov',
     twitter: '@nathankota',
     photo: 'nathan-kota.png',
-    tags: ['new projects', 'planning', 'coordination', 'budgets', 'SAFe'],
+    tags: ['new projects', 'collaboration', 'partnerships', 'budgets', 'ongoing support'],
   },
   {
     name: 'Zach Beck',
