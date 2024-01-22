@@ -1,7 +1,7 @@
 ---
 interface Props {
   date: Date;
-  style: 'long' | 'short';
+  style: 'long' | 'short' | 'short-with-year';
 }
 
 const { date, style } = Astro.props;
@@ -20,11 +20,11 @@ const { date, style } = Astro.props;
     )
   }
   {
-    style === 'short' && (
-      <div class="flex flex-col">
+    style.startsWith('short') && (
+      <div class="flex flex-col items-center justify-center">
         <div class="text-center font-medium text-primary/80 dark:text-accent">
           {date.toLocaleDateString('en-us', {
-            month: 'long',
+            month: 'short',
           })}
         </div>
         <div class="w-16 text-center text-3xl font-bold text-primary/80 dark:text-accent">
@@ -32,6 +32,13 @@ const { date, style } = Astro.props;
             day: 'numeric',
           })}
         </div>
+        {style === 'short-with-year' && (
+          <div class="text-center font-medium text-primary/80 dark:text-accent">
+            {date.toLocaleDateString('en-us', {
+              year: 'numeric',
+            })}
+          </div>
+        )}
       </div>
     )
   }

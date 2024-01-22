@@ -14,9 +14,8 @@ import CardWithDate from '../components/page/CardWithDate.astro';
 
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/landing/*.{svg,png}');
 
-const posts = (await getCollection('blog'))
-  .sort((b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
-  .slice(0, 3);
+const posts = (await getCollection('blog')).sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf()).slice(0, 3);
+const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
 ---
 
 <Layout title="UGRC">
@@ -60,8 +59,8 @@ const posts = (await getCollection('blog'))
         posts.map((post) => (
           <CardWithDate
             title={post.data.title}
-            description={post.data.description}
-            date={post.data.pubDate}
+            description={post.body.replaceAll(regex, '').slice(0, 160) ?? 'a blot post'}
+            date={post.data.date}
             slug={post.slug}
           />
         ))

@@ -5,22 +5,19 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, date: pubDate, updated } = Astro.props;
 ---
 
-<Layout>
+<Layout title={title}>
   <article>
-    <div class="hero-image">
-      {heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
-    </div>
     <div class="prose">
       <div class="title">
         <div class="date">
-          <!-- <FormattedDate date={pubDate} /> -->
+          <FormattedDate date={pubDate} style="long" />
           {
-            updatedDate && (
+            updated && (
               <div class="last-updated-on">
-                Last updated on <FormattedDate date={updatedDate} />
+                Last updated on <FormattedDate date={updated} style="long" />
               </div>
             )
           }

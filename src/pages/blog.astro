@@ -1,27 +1,25 @@
 ---
 import Layout from '../layouts/Prose.astro';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../components/FormattedDate.astro';
+import GridForLatestNews from '../components/page/GridForLatestNews.astro';
+import CardWithDate from '../components/page/CardWithDate.astro';
 
-const posts = (await getCollection('blog')).sort((b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+const posts = (await getCollection('blog')).sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf());
+const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
 ---
 
-<Layout>
-  <section>
-    <ul>
-      {
-        posts.map((post) => (
-          <li>
-            <a href={`/blog/${post.slug}/`}>
-              <img width={720} height={360} src={post.data.heroImage} alt="" />
-              <h4 class="title">{post.data.title}</h4>
-              <p class="date">
-                <FormattedDate date={post.data.pubDate} style="long" />
-              </p>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
+<Layout title="From the blog">
+  <GridForLatestNews>
+    {
+      posts.map((post) => (
+        <CardWithDate
+          includeYear
+          title={post.data.title}
+          description={post.body.replaceAll(regex, '').slice(0, 160) ?? 'a blot post'}
+          date={post.data.date}
+          slug={post.slug}
+        />
+      ))
+    }
+  </GridForLatestNews>
 </Layout>
