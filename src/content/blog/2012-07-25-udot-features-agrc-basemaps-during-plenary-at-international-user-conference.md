@@ -10,6 +10,7 @@ published: false
 categories:
   - Featured
 ---
+
 <img src="{% link images/JohnThomas-150x150.png %}" class="inline-text-right pull-right" />
 
 The Utah Department of Transportation was featured during the opening Plenary Session of the ESRI International User Conference on July 23.  For those no familiar, the ESRI User Conference attracts 15,000+ GIS and mapping professionals every year to be part of hundreds of meetings discussing the use of GIS across all enterprises.  ESRI is a primary software company for GIS and has pioneered the industry's use of technology in mapping and data analysis.

@@ -10,6 +10,7 @@ categories:
   - Featured
   - SGID Blog
 ---
+
 <p>Late this spring, the Millard and Juab County Commissions agreed to adjust the counties' common north-south trending boundary, in an area generally west of Interstate 15.</p>
 <figure class="caption caption--right"><a href="{% link images/2012-juab-millard-county-boundary-change.png %}"><img class="caption__image" title="2012 Juab-Millard County Boundary Change Agreement" src="{% link images/2012-juab-millard-county-boundary-change-264x300.png %}" alt="" width="264" height="300" /></a><figcaption class="caption__text">Click to Enlarge</figcaption></figure>
 <p>The boundary change, described in the <a href="https://municert.utah.gov/Media/Default/Municipal%20Certifications/2012/Juab%20and%20Millard%20Counties%20boundary%20adjustment%206-6-12.pdf">joint resolution</a> submitted by the counties, was officially certified by the Lt. Governor Greg Bell on June 21, 2012, according to provisions outlined by state law governing county consolidations and annexations (<a href="https://le.utah.gov/xcode/Title17/Chapter2/17-2-S209.html">UCA 17-2-209</a>).</p>

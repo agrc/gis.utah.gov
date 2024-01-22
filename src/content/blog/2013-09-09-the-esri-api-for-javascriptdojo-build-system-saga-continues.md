@@ -10,6 +10,7 @@ published: false
 categories:
   - Developer
 ---
+
 <blockquote class="twitter-tweet">
 That's right, my entire app JS is in this one file *including <a href="https://twitter.com/Esri">@ESRI</a> modules* <a href="https://t.co/06S4KCtkuR">https://t.co/06S4KCtkuR</a> cc <a href="https://twitter.com/DavidSpriggs">@DavidSpriggs</a> <a href="https://twitter.com/derekswingley">@derekswingley</a><br />
 — Scott Davis (@SThomasDavis) <a href="https://twitter.com/SThomasDavis/statuses/336948454968418305">May 21, 2013</a></p></blockquote>

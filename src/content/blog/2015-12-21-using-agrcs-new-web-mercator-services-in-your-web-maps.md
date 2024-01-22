@@ -14,6 +14,7 @@ categories:
   - Developer
   - Featured
 ---
+
 <p class="text-center pop">
   The instructions on this page are dated. <a href="{% link developer/base-maps/discover/index.md %}">Using Discover services with the Esri JavaScript API v4.x</a> contains more current information.
 </p>

@@ -13,6 +13,7 @@ categories:
   - Featured
   - GPS-surveyor
 ---
+
 <p><a href="{% link images/TURNGPS_BG2014_web1.png %}"><img src="{% link images/TURNGPS_BG2014_web1.png %}" alt="" title="TURNGPS_BG2014_web" width="245" height="300" class="inline-text-right" /></a>UGRC is pleased to announce the Trimble Pivot VRS System is now live. The install is complete and testing has proven repeatable results. This means it is time for everyone to begin converting over to the new system.</p>
 <p>We would like to have everyone moved over to the new system by <strong>February 1, 2014</strong>, so please take some time get set up by following the 3 simple steps below. </p>
 <p>*Note: If you do not have a current subscription please register and pay by going to turngps.utah.gov and click on the registration button. Fill in the requested information then pay with a credit card at the end.</p>

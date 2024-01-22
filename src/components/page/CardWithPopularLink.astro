@@ -7,7 +7,7 @@ interface Props {
 const { title, href } = Astro.props;
 ---
 
-<a href={href} class="action-card lg:w-96 max-w-md sm:px-6 sm:py-3 text-secondary hover:text-primary">
+<a href={href} class="action-card max-w-md text-secondary hover:text-primary sm:px-6 sm:py-3 lg:w-96">
   <div class="flex justify-center gap-2">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const { title, href } = Astro.props;
       ></path>
     </svg>
     <div class="pt-2">
-      <h3 class="lg:min-w-80 grow">{title}</h3>
+      <h3 class="grow lg:min-w-80">{title}</h3>
       <p class="text-sm text-zinc-500 dark:text-zinc-200"><slot /></p>
     </div>
   </div>

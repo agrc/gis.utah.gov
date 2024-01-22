@@ -8,6 +8,7 @@ title: Newest updates to Municipal Boundaries
 published: false
 categories: []
 ---
+
 <p>Updates were made recently to the <a href="{% link data/boundaries/citycountystate/index.html %}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the <a href="{% link sgid/open-sgid/index.md %}">Utah SGID ArcSDE database server</a></p>
 <p>The following highlights what has been updated through Aug. 9, 2013:</p>
 <p><span style="text-decoration: underline;">Municipalities Updates:</span></p>

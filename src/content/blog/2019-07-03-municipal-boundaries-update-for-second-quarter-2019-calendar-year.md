@@ -20,41 +20,41 @@ As always, changes to town and city boundaries can affect other data layers, so 
 
 Following are the changes and annexations since January 1, 2018, listed by county and city:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Box Elder | Brigham City | 2 |
-| Cache | Hyde Park | 2 |
-| | Hyrum | 1 |
-| | Logan | 1 |
-| | Nibley City | 2 |
-| | Providence | 1 |
-| | Smithfield | 3 |
-| Davis | Layton | 1 |
-| | Syracuse | 1 |
-| | West Bountiful | 1 |
-| Duchesne | Duchesne  | 1 |
-| | Roosevelt | 2 |
-| Garfield | Panguitch | 4 |
-| Iron | Cedar City | 1 |
-| Juab | Nephi | 1 |
-| Salt Lake | Sandy | 1 |
-| San Juan | Blanding | 1 |
-| | Bluff | 1 |
-| Sanpete | Mayfield | 1 |
-| Sevier | Richfield | 1 |
-| Summit | Francis | 2 |
-| Utah | American Fork | 7 |
-| | Lehi | 2 |
-| | Payson | 1 |
-| | Salem | 1 |
-| | Saratoga Springs | 1 |
-| | Spanish Fork | 2 |
-| | Adj. Lehi & Saratoga Springs | 1 |
-| Wasatch | Heber City | 2 |
-| | Wallsburg | 1 |
-| Washington | Virgin | 1 |
-| | Washington City | 1 |
-| | Adj. Santa Clara & St George | 1 |
-| Weber | North Ogden | 1 |
-| | Plain City | 1 |
-| | West Haven | 1 |
+| County     | City                         | Number of Changes |
+| ---------- | ---------------------------- | ----------------- |
+| Box Elder  | Brigham City                 | 2                 |
+| Cache      | Hyde Park                    | 2                 |
+|            | Hyrum                        | 1                 |
+|            | Logan                        | 1                 |
+|            | Nibley City                  | 2                 |
+|            | Providence                   | 1                 |
+|            | Smithfield                   | 3                 |
+| Davis      | Layton                       | 1                 |
+|            | Syracuse                     | 1                 |
+|            | West Bountiful               | 1                 |
+| Duchesne   | Duchesne                     | 1                 |
+|            | Roosevelt                    | 2                 |
+| Garfield   | Panguitch                    | 4                 |
+| Iron       | Cedar City                   | 1                 |
+| Juab       | Nephi                        | 1                 |
+| Salt Lake  | Sandy                        | 1                 |
+| San Juan   | Blanding                     | 1                 |
+|            | Bluff                        | 1                 |
+| Sanpete    | Mayfield                     | 1                 |
+| Sevier     | Richfield                    | 1                 |
+| Summit     | Francis                      | 2                 |
+| Utah       | American Fork                | 7                 |
+|            | Lehi                         | 2                 |
+|            | Payson                       | 1                 |
+|            | Salem                        | 1                 |
+|            | Saratoga Springs             | 1                 |
+|            | Spanish Fork                 | 2                 |
+|            | Adj. Lehi & Saratoga Springs | 1                 |
+| Wasatch    | Heber City                   | 2                 |
+|            | Wallsburg                    | 1                 |
+| Washington | Virgin                       | 1                 |
+|            | Washington City              | 1                 |
+|            | Adj. Santa Clara & St George | 1                 |
+| Weber      | North Ogden                  | 1                 |
+|            | Plain City                   | 1                 |
+|            | West Haven                   | 1                 |

@@ -17,6 +17,7 @@ categories:
   - Featured
   - SGID Blog
 ---
+
 <p>As part of responsibilities for maintaining the Utah's State Geographic Information Database (SGID), UGRC has operated web services that deliver aerial photography and other geographic imagery to applications and desktop GIS users since 2006. ImageServer, an Esri software product, allows very fast mosaicing and resampling of large imagery source data files for delivery as a small, single file  for a custom map extent, to internet-connected clients.</p>
 <p>Available aerial photography layers include the most current statewide NAIP imagery (2011, 1 meter pixel resolution) and Wasatch Front urban area high resolution imagery (2012, 5 inch pixels). Other imagery layers include scanned USGS topographic maps, terrain hillshades, and older vintage or local (West Jordan, Uintah County) aerial photography series.</p>
 <p>ImageServer produces daily log files that can be processed to detail the number of unique users, session counts for each imagery layer, and the total number of image requests. Snapshots for these counts are shown in the graphs below for an arbitrarily picked workday last month (Wednesday, November 6th).</p>

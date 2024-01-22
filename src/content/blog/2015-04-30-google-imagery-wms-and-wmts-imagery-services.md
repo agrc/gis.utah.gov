@@ -20,6 +20,7 @@ categories:
 Users of [Google's statewide high resolution aerial photography]({% link _posts/2015-02-02-utah-acquires-high-resolution-aerial-photography-license.md %}) are transitioning to accessing the data through the new GCP-based discover.agrc.utah.gov server and its twin WMS and WMTS imagery services. The new services on the 'discover' server are much more capable and deliver higher image quality. For more information and a connection to discover.agrc.utah.gov, {% include contact.html subject=page.title contact=site.data.contacts.discover text='contact' %}
 
 ### WMS vs WMTS
+
 {: .text-left}
 
 With two choices of OGC standard-based imagery services to choose from, WMS and WMTS, which should you use? The WMTS protocol should deliver the imagery faster so use it if works on your platform. But, the WMS service is an older standard that may be more maturely implemented within software applications, and is what ESRI users not yet at v10.2 should use.
@@ -27,6 +28,7 @@ With two choices of OGC standard-based imagery services to choose from, WMS and 
 <a href="{% link images/WakeUp-Google.png %}"><img src="{% link images/WakeUp-Google-246x300.png %}" alt="" title="WakeUp Google" class="inline-text-right" loading="lazy" /></a>
 
 ### Other items
+
 {: .text-left}
 
 Users will find that both services will time out when they are unused for long periods. Refreshing the service in ArcMap should be as easy as opening the ArcCatalog view in ArcMap, and double clicking the service in that view to wake it up. See example at right.

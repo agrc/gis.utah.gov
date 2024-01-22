@@ -13,6 +13,7 @@ categories:
   - Featured
   - GPS-surveyor
 ---
+
 <p>This week UGRC began a transition to updated TURN GPS Network software by doing the initial install on a separate server from the existing system. </p>
 <p>The two separate systems will operate independently for approximately four weeks. During this time we will be testing the new network and verifying the performance and precision against the existing system. During the transition there will be no disruption to the existing network and you can plan to do business as usual. </p>
 <p>When we are satisfied with the performance of the new system we will provide information on how all users with a valid subscription can connect. And shortly, thereafter, the existing server will be decommissioned.</p>

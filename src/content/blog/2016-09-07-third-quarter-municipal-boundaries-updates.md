@@ -14,18 +14,18 @@ All of these documents can be reviewed on the [2016 Municipal Certification webs
 
 Following are the changes and annexations listed by County and City:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Box Elder | Fielding Town | 1 |
-| Cache | Hyrum | 1 |
-| | Paradise | 1 |
-| Davis | Farmington | 2 |
-| | Kaysville | 1 |
-| Emery | Green River  | 1 |
-| Salt Lake | Sandy | 1 |
-| | Herriman & Riverton  Adjustment | 1 |
-| Utah | American Fork | 1 |
-| | Cedar Hills & Pleasant Grove Adjustment | 1 |
-| | Highland  | 1 |
-| | Lehi | 2 |
-| Tooele | Wendover | 1 |
+| County    | City                                    | Number of Changes |
+| --------- | --------------------------------------- | ----------------- |
+| Box Elder | Fielding Town                           | 1                 |
+| Cache     | Hyrum                                   | 1                 |
+|           | Paradise                                | 1                 |
+| Davis     | Farmington                              | 2                 |
+|           | Kaysville                               | 1                 |
+| Emery     | Green River                             | 1                 |
+| Salt Lake | Sandy                                   | 1                 |
+|           | Herriman & Riverton Adjustment          | 1                 |
+| Utah      | American Fork                           | 1                 |
+|           | Cedar Hills & Pleasant Grove Adjustment | 1                 |
+|           | Highland                                | 1                 |
+|           | Lehi                                    | 2                 |
+| Tooele    | Wendover                                | 1                 |

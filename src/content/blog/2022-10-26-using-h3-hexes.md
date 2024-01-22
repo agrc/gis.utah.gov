@@ -19,6 +19,7 @@ tags:
 I recently discovered Uber's open-source [H3 geospatial indexing system](https://h3geo.org/) while working on a project with a lot of point data. This is a great tool for aggregating points into regularly-sized polygon geometries so that you can map and evaluate the spatial trends of a point-based phenomenon, but it needs a bit of an introduction to understand why it's great and how to use it with traditional GIS data.
 
 ### The Status Quo: Slow and Incompatible
+
 {: .text-left}
 
 You've probably aggregated and mapped point data before by using the Summarize Within tool to spatially join your points to other boundary datasets, like cities or counties. Census tracts or blocks are often popular targets, allowing you to compare your data to census data.
@@ -30,11 +31,13 @@ Because [hexagons are the bestagons](https://www.youtube.com/watch?v=thOifuHs6eY
 However, these custom hex grids are usually project-specific and **don't conform to any sort of common, well-known grid**, making it difficult to pull in other hexed data. And while hexagons tile a plane beautifully, you can't tesselate them to create a perfect larger hexagon, which means **it's difficult to create a larger or smaller grid** that relates to your original grid. And as anyone who's tried to aggregate a ton of points into a ton of hexagons can tell you, **spatial joins can be slow**.
 
 ### H3 Uses Math, Not Spatial Operations
+
 {: .text-left}
 
 To understand how H3 solves these problems, we need to understand how it works. Coming from the GIS world, we think of the "point in polygon" problem spatially: search to see if the given point is inside the given area. We can then aggregate or summarize all the data within that area to come up with a single number or metric. However, with H3 we need to shift our thinking. **H3 takes a lat/long and assigns an ID that corresponds to a mathematically-defined hex.** There's nothing inherently spatial about it, it's all just math. The output is just a number.
 
 ### It's a Common Grid (kind of)
+
 {: .text-left}
 
 As an open-source system, H3 has become a sort of de facto standard. Anyone can use it, and anyone can take someone else's data with H3 grid ids and compare it with their own. While it's been around for a few years, there could be a novelty factor driving it's adoption, so it remains to be seen how widely it will be adopted.
@@ -42,6 +45,7 @@ As an open-source system, H3 has become a sort of de facto standard. Anyone can 
 However, even if it doesn't become the overwhelming global standard, the H3 system can still be useful for **standardizing analyses across projects within an organization.** If we at UGRC do a project for one state agency with the grid, it would be easy to pull that data into another project in the future knowing that they both use the same hexes.
 
 ### H3 Handles Different Grid Resolutions Elegantly
+
 {: .text-left}
 
 It is mathematically impossible[^1] to create a larger hexagon from smaller hexagons, which means we can't create a _geographical_ hierarchy of hexes where one level of hexes perfectly cover the same area as a single larger hex. However, H3 makes a _logical_ hierarchy by rotating the larger, parent hex to cover as much of its seven children as possible, as visible in the image below. The H3 [indexing page](https://h3geo.org/docs/highlights/indexing) has more detail on how this works.
@@ -54,11 +58,12 @@ The important point is that an individual hex ID contains the IDs of the hexes "
 Using these multiple scales (which H3 calls resolutions), we can **create hexes at multiple scales to aggregate our data to larger and larger areas.** With these, we can view trends at the neighborhood, city, or county level. We can also create web maps that allow us to drill down from general trends to neighborhood or block level to see what areas contribute the most.
 
 ### Assigning H3 IDs is Fast
+
 {: .text-left}
 
 As noted above, H3 uses some fancy mathematics under the hood to assign hex ids instead of doing spatial analysis. Written in C and exposed through a variety of bindings in other languages, these calculations are **pretty darn fast at figuring out what hex cell a point belongs in.**
 
-For example, I used `%timeit` to  assign a resolution 9 ID to all 1,339,635 of our [address points]({% link data/location/address-data/index.html %}) (after projecting them to WGS84 to get direct access to lat/long in the SHAPE field):
+For example, I used `%timeit` to assign a resolution 9 ID to all 1,339,635 of our [address points]({% link data/location/address-data/index.html %}) (after projecting them to WGS84 to get direct access to lat/long in the SHAPE field):
 
 ```python
 def assign_h3(df, resolution):
@@ -76,6 +81,7 @@ addr_df = pd.DataFrame.spatial.from_featureclass(r'H3\H3.gdb\address_points_2022
 Note: To get this speed, you'll need to use the `h3.api.numpy_int` API as noted in the `h3-py` [documentation](https://uber.github.io/h3-py/api_comparison)
 
 ## Using H3 Hexes in A Map: Analyzing Supermarket Availability
+
 {: .text-left}
 
 Ok, so we can assign a hex id to point data quickly and easily. But, at some point, we need a spatial representation of the hexes if we're going to map out our summarized or aggregated data. Once we've got that, we can then use pandas to aggregate our data and join it to the hex geometries.
@@ -83,6 +89,7 @@ Ok, so we can assign a hex id to point data quickly and easily. But, at some poi
 To show this in action, we'll use our [Open Source Places]({% link data/society/open-source-places/index.html %}) and the address points we investigated earlier to do a quick analysis of the number of addresses per grocery store throughout the state.
 
 ### Creating an H3 Hex Feature Class
+
 {: .text-left}
 
 First, we need the actual polygons of the hexes themselves. The H3 API provides the `polyfill` method for identifying all hex IDs whose _centroids_ are within a polygon along with the `h3_to_geo_boundary` method for returning the polygon corresponding to a specific hex ID.
@@ -97,7 +104,7 @@ state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'H3\opensgid.agrc.ut
 #: Also, the SHAPE field is the last item in the column index
 buffered = state_boundary_df.iloc[1, -1].buffer(5000)
 buffered_df = pd.DataFrame.spatial.from_df(
-                pd.DataFrame({'SHAPE': [buffered]}), 
+                pd.DataFrame({'SHAPE': [buffered]}),
                 geometry_column='SHAPE', sr=26912
                 )
 
@@ -106,7 +113,7 @@ buffered_df.spatial.project(4326)
 geojson_dict = json.loads(buffered_df.spatial.to_featureset().to_geojson)
 
 #: Get both the hexagon numbers and their hexadecimal representation in string form
-#: We have to specify the geometry from the first feature in the geosjon dict, even though we only have 
+#: We have to specify the geometry from the first feature in the geosjon dict, even though we only have
 #: one feature in there
 resolution = 6
 hexes = h3.polyfill(geojson_dict['features'][0]['geometry'], resolution, geo_json_conformant=True)
@@ -131,6 +138,7 @@ hexes_df.spatial.to_featureclass(r'H3\H3.gdb\state_h3_6_wgs')
 If geopandas and geojson is your thing, Guilherme M. Iablonovski has a [write-up](https://towardsdatascience.com/how-to-download-ubers-hexagonal-grid-with-python-3140fe95e19a) on Medium for this same process without any Esri formats or libraries. My code above is a translation of his process into Esri-land.
 
 ### Aggregating Our Data per Hex and Joining the Polygons
+
 {: .text-left}
 
 Now that we've got the boundaries, we can do our analysis and map it out. First, we'll use pandas' [groupby](https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html) functionality on both the address points and open source places to group according to the hex id and get the count of unique records within each group. We then combine the two resulting series with the hex polygons, and finally we map the resulting data.
@@ -142,7 +150,7 @@ osp_points_df.spatial.project(4326)
 assign_h3(osp_points_df, 6)
 
 #: Perform the aggregation for each dataset and call the count() method on a column to get the number of features
-#: in each group. 
+#: in each group.
 #: Note that we pre-filter the places to the 'supermarket' category.
 addrs_per_hex = addr_df.groupby('h3_6')['utaddptid'].count()
 supermarkets_per_hex = osp_points_df[osp_points_df['category']=='supermarket'].groupby('h3_6')['osm_id'].count()
@@ -157,18 +165,18 @@ data_hexes = pd.concat([addrs_per_hex, supermarkets_per_hex], axis=1)
 #: Calculate our new metric
 data_hexes['addrs_per_supermarket'] = data_hexes['addrs'] / data_hexes['supermarkets']
 
-#: Join our new data with the hex polygons, keeping only the ones 
+#: Join our new data with the hex polygons, keeping only the ones
 merged_df = hexes_df.merge(data_hexes, left_on='hex_id', right_on='h3_6', how='inner').sort_values(by='addrs_per_supermarket')
 ```
 
 At this point we can write the result out to disk or do whatever else we want with it. I went ahead and plotted it in a jupyter notebook to get the screenshot at the top of the page:
 
 ```python
-map1 = merged_df.spatial.plot(renderer_type='c', 
-                              method='esriClassifyQuantile', 
-                              col='addrs_per_supermarket', 
-                              class_count=5, 
-                              cmap='RdYlGn_r', 
+map1 = merged_df.spatial.plot(renderer_type='c',
+                              method='esriClassifyQuantile',
+                              col='addrs_per_supermarket',
+                              class_count=5,
+                              cmap='RdYlGn_r',
                               alpha=.5)
 map1.center = [40.6, -111.9]
 map1.zoom = 9
@@ -186,5 +194,4 @@ The H3 grid/id system makes it quick and easy[^2] to do this spatial assignment,
 
     Because of this inability to form a straight line when we tile (or tesselate) hexagons together, we cannot create a larger, regular polygon (hexagon or otherwise) from hexagons.
 
-[^2]:
-    Just so long as your definitions of quick and easy involve a snake and copious amounts of Monty Python references.
+[^2]: Just so long as your definitions of quick and easy involve a snake and copious amounts of Monty Python references.

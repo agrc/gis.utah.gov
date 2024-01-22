@@ -1,5 +1,5 @@
 ---
-title: "Python Shorts: The Benefits of Unit Testing"
+title: 'Python Shorts: The Benefits of Unit Testing'
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
@@ -63,7 +63,7 @@ Because each test requires calling a function, thinking about making a solution 
 
 This next benefit follows on from writing smaller, more self-contained functions/methods.
 
-"[Coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming))" in programming refers to code that explicitly or implicitly relies on variables and objects from other parts of your program. Highly coupled code is fragile code: what seems to be a simple change to one part of the program could have hidden side effects down the line that will have you tearing your hair out trying to debug.
+"[Coupling](<https://en.wikipedia.org/wiki/Coupling_(computer_programming)>)" in programming refers to code that explicitly or implicitly relies on variables and objects from other parts of your program. Highly coupled code is fragile code: what seems to be a simple change to one part of the program could have hidden side effects down the line that will have you tearing your hair out trying to debug.
 
 As you get used to writing unit tests, you're constantly thinking "what data will I need to perform this one operation?", "what other functions and libraries does this use?", and "what other bits of my program does this need to run?" You're always identifying what data structures you'll have to create and which objects or methods you'll need to create stand-ins for (referred to as [mock objects](https://en.wikipedia.org/wiki/Mock_object)).
 

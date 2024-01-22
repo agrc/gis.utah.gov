@@ -14,6 +14,7 @@ categories:
 On June 1, 2017, the Utah Division of Oil, Gas and Mining retired 5 old databases and went online with a new database. This prompted many changes to the data field names and content previously provided in the SGID (`SGID10.ENERGY.DNROilGasWells`, `SGID10.ENERGY.DNROilGasWells_HDBottom`, & `SGID10.ENERGY.DNROilGasWells_HDPath`).
 
 In order to facilitate a smooth transition to the new database scheme the new datasets have been published in SGID along side of the old ones. The new datasets are:
+
 - `SGID10.ENERGY.OilGasWells` (surface location)
 - `SGID10.ENERGY.OilGasWells_DownHoles` (wellbore points including the bottom)
 - `SGID10.ENERGY.OilGasWells_Paths` (lines connecting the surface and down hole points)

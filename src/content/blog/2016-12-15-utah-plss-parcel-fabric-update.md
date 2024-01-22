@@ -17,13 +17,13 @@ The final extract for the [Utah PLSS Parcel Fabric](https://plss.utah.gov/) has 
 
 UGRC is working with SITLA to add digital boundaries for the public and private land ownership and designations into the fabric one county at a time. Working in the parcel fabric allows any and all adjustments or additions to be applied at once to all the layers involved in the PLSS: Townships, Sections, Secondary Division, Special Surveys, and the Land Ownership features that SITLA contributes. Land ownership boundaries for Davis and Morgan counties have been added to the fabric and adjusted with the addition of the high precision survey control points. Summit County is currently in progress, with Sevier, Sanpete, and Cache counties on deck. The digital survey control for these counties has been compiled and validated and is ready for integration into the Fabric when they are ready.
 
-***Update for Fabric naming:***
+**_Update for Fabric naming:_**
 Since we are now doing all work on the PLSS/GCDB and CadNSDI in the fabric environment and the current version is a starting point, a new beginning we are going to be calling this data **Utah PLSS Fabric v1.0**
 Sorry for any confusion this may have caused, this v1.0 is the original fabric no adjustments using local data have been made yet, as we do updates now we will build up from v1.0.
 
 The Utah PLSS Parcel Fabric production version is available for download in several forms from the **[PLSS / GCDB Cadastre Data Page]({% link data/cadastre/plss/index.html %})**. The file sizes are quite large, so please consider this when downloading.
 
-***Available for download:***
+**_Available for download:_**
 
 - Utah PLSS Fabric v1.0 (1.75 GB zip file) the entire statewide fabric with an mxd
 - Published CadNSDI v1.0 (250 MB zip file) PLSS fabric data in the individual feature classes published in the CadNSDI (Townships, First Division, Second Division, Intersected, Special Survey, Meandered Water, Metadata at a Glance, Point.

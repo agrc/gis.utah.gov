@@ -1,5 +1,5 @@
 ---
-title: "Python Shorts: Flattening Arrow Code"
+title: 'Python Shorts: Flattening Arrow Code'
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
@@ -20,6 +20,7 @@ While I was working on a task today I realized it would make a great example of 
 This is also an example of how the logical structure of arrow code isn't always manifested as a physical arrow but can be hidden in complex boolean conditional statements. While the physical structure is different, the problems and the logical structure of the solution are the same.
 
 ## The Task
+
 {: .text-left}
 
 I needed to determine if something was open based on three checks on it's value:
@@ -29,6 +30,7 @@ I needed to determine if something was open based on three checks on it's value:
 1. It couldn't have a certain string (`'Provider'`) in its value
 
 ## Full Arrow
+
 {: .text-left}
 
 The full arrow approach would be to make each one of these its own `if` statement:
@@ -47,6 +49,7 @@ else:
 ```
 
 ## One-Liner
+
 {: .text-left}
 
 Admittedly, that arrow is contrived for the sake of physically showing the arrow. It's pretty easy to realize that we can combine the `if`'s onto one line, and because the `else` case is the same for each `if` we can just set it at the beginning and get rid of the `else`:
@@ -64,6 +67,7 @@ In my prototyping today this was the conditional to a dictionary comprehension, 
 If you've not seen it before (it was new to me when I first saw it), `casefold()` is a more internationalization-safe form of making a string lower case. Not strictly necessary here, but a habit I've gotten into.
 
 ## Flattening
+
 {: .text-left}
 
 So how do we fix it?
@@ -96,6 +100,7 @@ This pattern of returning early may not seem as readable to you if you've not en
 As a bonus, each condition is now functionally independent from the others. This reduces the opportunity for weird interactions and side effects, and we can also test each one individually.
 
 ## Hammers Optional
+
 {: .text-left}
 
 So there you have it. Flattening arrow code (even if it doesn't originally look like a full arrow) will make your code easier to read, easier to understand, and easier to extend. If you don't want to use the hammer, just save on postage and use the [extract of llama](https://www.imdb.com/title/tt0120917/) instead.
@@ -104,6 +109,7 @@ So there you have it. Flattening arrow code (even if it doesn't originally look 
 {: .flex .flex--center }
 
 ### Bonus reading
+
 {: .text-left}
 
 This inversion of the conditionals and changing the `and` into an effective `or` (because only one of our `if`s need to be true to cause it to `return`) is an application of [De Morgan's law](https://en.wikipedia.org/wiki/De_Morgan%27s_laws).

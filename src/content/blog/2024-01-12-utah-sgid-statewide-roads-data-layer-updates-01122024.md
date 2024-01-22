@@ -25,7 +25,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Davis County:** Obtained roads data on 12/21/2023. Previous update was on 12/15/2023.
 - **Iron County:** Obtained roads data on 12/21/2023. Previous update was on 10/06/2023.
 - **Salt Lake County:** Obtained roads data on 12/21/2023. Previous update was on 12/15/2023.
-- **Sevier County:** Obtained roads data on 10/19/2023. Previous update was on 04/13/2023. 
+- **Sevier County:** Obtained roads data on 10/19/2023. Previous update was on 04/13/2023.
 - **Utah County:** Obtained roads data on 12/21/2023. Previous update was on 12/15/2023.
 - **Washington County:** Obtained roads data on 12/21/2023. Previous update was on 12/15/2023.
 - **Weber County:** Obtained roads data on 12/21/2023. Previous update was on 12/15/2023.

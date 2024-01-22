@@ -10,4 +10,5 @@ categories:
   - Featured
   - SGID Blog
 ---
+
 The newest Tax Areas (SGID10.ECONOMY.TaxAreas2014) and Tax Entities (SGID10.ECONOMY.TaxEntities2014) were recently added to the feature classes that resides on the Utah SGID ArcSDE database server.

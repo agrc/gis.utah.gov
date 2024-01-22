@@ -18,22 +18,22 @@ This slower start may be, at least in part, due to the changes brought on by an 
 
 UGRC welcomes Lt. Governor Henderson and any new staff who will be working with us. We also hope that everyone stays safe and healthy.
 
-As always, feel free to check out all the municipal boundaries changes and make sure your boundaries are where you think they should be. You can view them on the [Utah Municipality Modifications page](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63 ).
+As always, feel free to check out all the municipal boundaries changes and make sure your boundaries are where you think they should be. You can view them on the [Utah Municipality Modifications page](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63).
 
 To review any specific annexation document, go to the [Utah Lt. Governor Municipal Certifications page](https://municert.utah.gov/). Changes may be coming for this page location; more on this later.
 
 The following table shows the changes and annexations (listed by county and city) since December 31, 2020:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Box Elder | Tremonton | 1 |
-| Cache | Hyde Park | 1 |
-| | Nibley | 1 |
-| | Providence | 1 |
-| | Smithfield | 1 |
-| Juab | Nephi  | 1 |
-| Sevier | Richfield | 1 |
-| Utah | Eagle Mountain | 1 |
-| | Salem  | 2 |
-| | Spanish Fork  | 2 |
-| Weber | Ogden | 1 |
+| County    | City           | Number of Changes |
+| --------- | -------------- | ----------------- |
+| Box Elder | Tremonton      | 1                 |
+| Cache     | Hyde Park      | 1                 |
+|           | Nibley         | 1                 |
+|           | Providence     | 1                 |
+|           | Smithfield     | 1                 |
+| Juab      | Nephi          | 1                 |
+| Sevier    | Richfield      | 1                 |
+| Utah      | Eagle Mountain | 1                 |
+|           | Salem          | 2                 |
+|           | Spanish Fork   | 2                 |
+| Weber     | Ogden          | 1                 |

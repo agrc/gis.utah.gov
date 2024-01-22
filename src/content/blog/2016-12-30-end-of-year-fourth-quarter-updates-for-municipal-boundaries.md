@@ -14,6 +14,7 @@ published: false
 categories:
   - Featured
 ---
+
 [![SL Co Municipal Changes]({% link images/MunicpalBoundaries2016Updates.png %} "view high res usage map")]({% link downloads/MunicpalBoundaries2016Updates.pdf %}){:.inline-text-right}
 
 Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download]({% link data/boundaries/citycountystate/index.html %}) and listed below.
@@ -31,25 +32,25 @@ website](https://municert.utah.gov/2016-certifications).
 
 The following are the changes and annexations since Sept. 9, 2016 listed by County and City:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Box Elder | Garland | 1 |
-| | Willard (Dissolve) | 1 |
-| Cache | Hyrum | 1 |
-| | Millville | 1 |
-| | Smithfield | 2 |
-| Davis | Layton | 2 |
-| Grand | Moab | 2 |
-| Millard | Fillmore  | 1 |
-| Salt Lake | Sandy | 2 |
-| | Millcreek Incorporation | 1 |
-| San Juan | Blanding | 1 |
-| Sevier | Monroe | 1 |
-| | Richfield | 1 |
-| Utah | American Fork | 2 |
-| | Lehi | 2 |
-| | Mapleton | 1 |
-| | Salem  | 1 |
-| | Spanish Fork | 1 |
-| Tooele | Ophir (Dissolution) | 1 |
-| Wasatch | Heber | 2 |
+| County    | City                    | Number of Changes |
+| --------- | ----------------------- | ----------------- |
+| Box Elder | Garland                 | 1                 |
+|           | Willard (Dissolve)      | 1                 |
+| Cache     | Hyrum                   | 1                 |
+|           | Millville               | 1                 |
+|           | Smithfield              | 2                 |
+| Davis     | Layton                  | 2                 |
+| Grand     | Moab                    | 2                 |
+| Millard   | Fillmore                | 1                 |
+| Salt Lake | Sandy                   | 2                 |
+|           | Millcreek Incorporation | 1                 |
+| San Juan  | Blanding                | 1                 |
+| Sevier    | Monroe                  | 1                 |
+|           | Richfield               | 1                 |
+| Utah      | American Fork           | 2                 |
+|           | Lehi                    | 2                 |
+|           | Mapleton                | 1                 |
+|           | Salem                   | 1                 |
+|           | Spanish Fork            | 1                 |
+| Tooele    | Ophir (Dissolution)     | 1                 |
+| Wasatch   | Heber                   | 2                 |

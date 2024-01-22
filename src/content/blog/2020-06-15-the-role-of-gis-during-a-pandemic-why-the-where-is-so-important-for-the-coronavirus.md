@@ -17,6 +17,7 @@ Having worked with UGRC for the past three years, I’ve started to notice that 
 These questions led me down a rabbit hole of research into the relationship between GIS and public health, and I found a few answers about why GIS may be so important in light of the coronavirus.
 
 ### 1) Historically, GIS has a solid track record for helping us understand public health situations.
+
 {: .text-left}
 
 As Greg Bunce discusses in his [“Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS” article]({% link _posts/2019-09-03-digital-maps-gis-history.md %}), GIS really made its debut in connection to health when it helped resolve the London cholera epidemic of 1854. John Snow, a British physician, analyzed the relationship between water pumps and cholera cases, and he realized that water was the culprit in the spread of the disease. He made a spatial connection between the pumps and the disease, and that made all the difference in preventing further spread. Even from this early case study, “Mapping was an approach employed both by the officials charged with responding to this or that disease incursion and the medical personnel who struggled to treat those afflicted. . . . Then as well as now, mapping served and serves the science of its day” (Koch 2005, 2).
@@ -32,6 +33,7 @@ Since then, GIS has had an impact on several other health situations:
 As evidenced by these situations, GIS has been successful in providing a deeper understanding of public health issues. With that successful history, it’s no wonder that people are turning to GIS for answers about the coronavirus. GIS has helped in the past, so maybe it can help again.
 
 ### 2) GIS helps people navigate through complicated layers of information.
+
 {: .text-left}
 
 GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page]({% link data/index.html %}), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
@@ -46,6 +48,7 @@ But GIS can help us draw connections between each of these complicated layers an
 To answer the question of “Where are COVID-19 cases increasing?” Johns Hopkins Coronavirus Resource Center has an [animated map](https://coronavirus.jhu.edu/data/animated-world-map) that color-codes the population for each country for each week, and the countries visually change colors to show you the trends. In a few seconds, the map is able to provide you the same information that it would otherwise take paragraphs to describe. And instead of just answering the question of “Where are COVID-19 cases increasing?” with perhaps a list of countries with their case numbers, the map answers the larger question of “How has the number of cases of COVID-19 changed globally over time?” And that’s the beauty of GIS.
 
 ### 3) GIS naturally involves intergroup collaboration, which is essential for coronavirus response.
+
 {: .text-left}
 
 Collaboration between groups is an essential part of the GIS field, and that’s another reason why GIS could be so important in relation to the coronavirus. Let’s go back to the “Where are COVID-19 cases increasing?” question and apply it on a local Utah level. To answer this question, you might first want to examine Utah counties, and to find out the geographic boundaries of each county, you’d need to work with the state’s county recorders. To learn about the population for each county, you’d be relying on the US Census Bureau. To learn about the number of cases of coronavirus in a county, you might look to the county health department. And so on. And then in Utah, UGRC would be the keeper of all this data, so we’d work with contacts from all of those groups.
@@ -59,9 +62,10 @@ Agendra Kumar, Esri India president, describes this collaborative atmosphere wel
 In order for any country to effectively respond to the coronavirus, it is essential that various local and national groups work together to share information, assess that information, and take action on that information. GIS naturally opens the door for this collaboration.
 
 ### The Coronavirus and Our Spatial Brains
+
 {: .text-left}
 
-Now, all those reasons are valid and important in discussing how and why GIS is so essential during this pandemic. But I also have to wonder though about one more potential reason that we’re so interested in GIS, especially during times of uncertainty: Is spatial information about the coronavirus particularly helpful because our brains are naturally wired to process information spatially and visually? Maybe we’re  turning to GIS right now because processing information in that way naturally makes sense to our brains, and when things are uncertain and unpredictable in the world, like they are right now, we turn toward things that are familiar in order to gain a sense of comfort and control.
+Now, all those reasons are valid and important in discussing how and why GIS is so essential during this pandemic. But I also have to wonder though about one more potential reason that we’re so interested in GIS, especially during times of uncertainty: Is spatial information about the coronavirus particularly helpful because our brains are naturally wired to process information spatially and visually? Maybe we’re turning to GIS right now because processing information in that way naturally makes sense to our brains, and when things are uncertain and unpredictable in the world, like they are right now, we turn toward things that are familiar in order to gain a sense of comfort and control.
 
 As stated in the UGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”]({% link _posts/2020-01-29-cognitive-maps.md %}) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
 
@@ -76,11 +80,13 @@ Going back to the question of “Where are COVID-19 cases increasing?”: when w
 In fact, as humans, we’ve been communicating through symbols since prehistoric times. Before humans started communicating information via written language, they were communicating through symbols and graphics ([Frédéric Zalac and Kris Fleerackers 2015](https://www.cbc.ca/news/technology/did-early-humans-communicate-with-cave-signs-1.3040723#:~:text=While%20cave%20paintings%20have%20long,humans%20before%20the%20written%20word)). GIS is a modern-day continuation, and expansion, of our innate human ability to communicate through symbols.
 
 ### Wrapping Things Up
+
 {: .text-left}
 
 Whatever the reason for the current focus and reliance on GIS during this pandemic, I’m glad we have such a great resource to help us process information in a meaningful way. Hopefully GIS can continue to shed light on the current health situation and help us better prepare for whatever the pandemic holds moving forward.
 
 ### Sources
+
 {: .text-left}
 
 Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” UGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/]({% link _posts/2020-01-29-cognitive-maps.md %}).
@@ -112,10 +118,11 @@ Waller, Lance A., and Carol A. Gotway. _Applied Spatial Statistics for Public He
 Zalac, Frédéric, and Kris Fleerackers. “Did early humans communicate with cave signs?” CBC News. Posted May 20, 2015. Last updated May 21, 2015. Accessed June 11, 2020. [https://www.cbc.ca/news/technology/did-early-humans-communicate-with-cave-signs-1.3040723#:~:text=While%20cave%20paintings%20have%20long,humans%20before%20the%20written%20word](https://www.cbc.ca/news/technology/did-early-humans-communicate-with-cave-signs-1.3040723#:~:text=While%20cave%20paintings%20have%20long,humans%20before%20the%20written%20word).
 
 ### General Reading/References
+
 {: .text-left}
 
 “Allocentric vs. Egocentric Spatial Processing.” Mental Imagery and Human-Computer Interaction Lab. Harvard Medical School Department of Radiology. Accessed June 11, 2020. [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308).
-*The publications page here: [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11) has some great resources.
+\*The publications page here: [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11) has some great resources.
 
 Cartographic Guidelines for Public Health. Centers for Disease Control and Prevention, Geography and Geospatial Science Working Group. Published August 2012. [https://www.cdc.gov/dhdsp/maps/gisx/resources/cartographic_guidelines.pdf](https://www.cdc.gov/dhdsp/maps/gisx/resources/cartographic_guidelines.pdf).
 
@@ -123,12 +130,11 @@ Cromley, Ellen K., and Sara L. McLafferty. _GIS and Public Health._ 2nd ed. New 
 
 Foster, Stephanie, Erica Adams, Ian Dunn, and Andrew Dent. “Geographic Information System Data.” _The CDC Field Epidemiology Manual._ Centers for Disease Control and Prevention. Last reviewed December 13, 2018. [https://www.cdc.gov/eis/field-epi-manual/chapters/GIS-data.html#ref7](https://www.cdc.gov/eis/field-epi-manual/chapters/GIS-data.html#ref7).
 
-Herweg Nora A., and Kahana Michael J. “Spatial Representations in the Human Brain.” _Frontiers in Human Neuroscience_ 12 (2018).  doi:10.1086/591611. [https://www.frontiersin.org/article/10.3389/fnhum.2018.00297](https://www.frontiersin.org/article/10.3389/fnhum.2018.00297).
+Herweg Nora A., and Kahana Michael J. “Spatial Representations in the Human Brain.” _Frontiers in Human Neuroscience_ 12 (2018). doi:10.1086/591611. [https://www.frontiersin.org/article/10.3389/fnhum.2018.00297](https://www.frontiersin.org/article/10.3389/fnhum.2018.00297).
 
 Robert B. Bechtel, and Arza Churchman. _Handbook of Environmental Psychology._ New York: John Wiley & Sons, Inc., 2002. Accessed electronically via [https://books.google.com/books?id=G1F2nlg1pIAC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false](https://books.google.com/books?id=G1F2nlg1pIAC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false).
 
 Schenk, Frithjof Benjamin. “Mental Maps: The Cognitive Mapping of the Continent as an Object of Research of European History.” European History Online (EGO). Leibniz Institute of European History (IEG). Published July 08, 2013. [http://www.ieg-ego.eu/schenkf-2013-en](http://www.ieg-ego.eu/schenkf-2013-en).
 
-*[UGRC]: The Utah Geospatial Resource Center
-*[GIS]: Geographic information systems
-*[SGID]: State Geographic Information Database
+_[UGRC]: The Utah Geospatial Resource Center
+_[GIS]: Geographic information systems \*[SGID]: State Geographic Information Database

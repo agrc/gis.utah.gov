@@ -27,8 +27,8 @@ Seven new GIS datasets are now available that provide annual projections, throug
 
 Actually there are [14 datasets](https://data.wfrc.org/search?q=projections), as this data is available at two geographic levels:
 
-  1. “City Areas” aggregations that closely reflect current city boundaries, and
-  1. Traffic Analysis Zone polygons, which are much smaller.
+1. “City Areas” aggregations that closely reflect current city boundaries, and
+1. Traffic Analysis Zone polygons, which are much smaller.
 
 The projections datasets were created using the Real Estate Market Model (REMM), an UrbanSim-based model developed by WFRC and MAG to support transportation and land use planning. To arrive at its predictions for our future, REMM relies upon a developer profitability module and input data, including: detailed county tax parcel GIS layers, transportation plans, envisioned land uses, and county-level projections from the U of U’s Gardner Policy Institute (control totals).
 

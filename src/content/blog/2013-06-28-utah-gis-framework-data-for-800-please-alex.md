@@ -13,6 +13,7 @@ categories:
   - Featured
   - SGID Blog
 ---
+
 <p><a href="{% link images/AddressSample_A.jpg %}"><img src="{% link images/AddressSample_A-300x217.jpg %}" alt="" title="AddressSample_A" width="300" height="217" class="inline-text-left" /></a><i>ATrebek: "The answer Is.. 'At almost a million points and growing, this new statewide data resource adds extra precision to address location.'"</p>
 <p>KJennings: "What is Utah's Statewide Address Point Dataset?" </p>
 <p>ATrebek: "Correct."</i></p>

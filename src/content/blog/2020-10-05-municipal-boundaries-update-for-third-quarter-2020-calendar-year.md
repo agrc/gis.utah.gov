@@ -20,14 +20,14 @@ Municipality updates can be viewed on the ArcGIS [Utah Municipality Modification
 
 The following table shows the changes and annexations (listed by county and city) since July 2020:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Cache | Smithfield | 1 |
-| Davis | Bountiful  | 1 |
-| Duchesne | Tabiona | 1 |
-| Grand | Moab | 1 |
-| Tooele | Grantsville | 2 |
-| Utah | Highland | 1 |
-| | Lehi | 1 |
-| | Payson | 2 |
-| Washington | Hurricane | 1 |
+| County     | City        | Number of Changes |
+| ---------- | ----------- | ----------------- |
+| Cache      | Smithfield  | 1                 |
+| Davis      | Bountiful   | 1                 |
+| Duchesne   | Tabiona     | 1                 |
+| Grand      | Moab        | 1                 |
+| Tooele     | Grantsville | 2                 |
+| Utah       | Highland    | 1                 |
+|            | Lehi        | 1                 |
+|            | Payson      | 2                 |
+| Washington | Hurricane   | 1                 |

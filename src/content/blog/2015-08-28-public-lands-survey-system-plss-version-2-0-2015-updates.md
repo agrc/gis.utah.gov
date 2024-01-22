@@ -25,6 +25,7 @@ In the next month we will be getting all the contributed PLSS Corner Points inte
 The Township areas impacted by change in this updated version are shown on the map and include adjustments to the locations of corner points.
 
 #### Download Options
+
 {: .text-left}
 
 GCDB v2.0, as provided to UGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is available for [download]({% link data/cadastre/plss/index.html %}#CadNSDI-downloads).
@@ -40,4 +41,4 @@ UGRC derived GIS layers that have been updated in the SGID are:
 - SGID10.Cadastre.MetadataGlance_GCDB (available on request)
 - SGID10.Cadastre.SpecialSurveys_GCDB (available on request)
 
- To download and view more information about the data listed above please visit the [plss data page]({% link data/cadastre/plss/index.html %}).
+To download and view more information about the data listed above please visit the [plss data page]({% link data/cadastre/plss/index.html %}).

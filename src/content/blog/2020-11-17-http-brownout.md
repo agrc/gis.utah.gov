@@ -28,6 +28,7 @@ Anyone who is consuming any of our ArcGIS Online layers in a webmap or other app
 In ArcGIS Online webmaps, you can use the "Update Layers to HTTPS" button in the Settings tab on the map's ArcGIS Online item page. See [Esri's documentation](https://doc.arcgis.com/en/arcgis-online/reference/faq.htm#LAYERS_HTTPS) for more info. For other applications, update your link text to HTTPS (`https://utah.maps.arcgis.com/...`).
 
 ## Who should I contact?
+
 {%capture contact %}{% include contact.html subject='HTTP Brownout Post' contact=site.data.contacts.discover text='send an email to' hide-punctuation=true %}{% endcapture %}
 
 If you have questions **specific to UGRC's ArcGIS Online services**, {{ contact }}. For general ArcGIS Online HTTPS questions, please contact Esri directly.

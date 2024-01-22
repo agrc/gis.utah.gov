@@ -21,6 +21,7 @@ categories:
   - Featured
   - SGID Blog
 ---
+
 <p>Change is in the works for how the 9-1-1 system connects those in need with emergency responders. The <a href="https://www.nena.org?page=AboutNENA">National Emergency Number Association</a> (NENA), which represents 9-1-1 professionals and organizations, has been at the forefront of creating the standards that will guide and govern the coming upgrade.</p>
 <p>This blog post attempts to describe the existing enhanced 9-1-1 system as background, what the Next Generation 9-1-1 (a.k.a. NextGen 9-1-1 or NG 9-1-1 or just NG) system will entail, and how digital mapping information sourced from geographic information systems (GIS) will play a crucial role in its success. There's certainly more complexity to this area but, hopefully, this summary will provide a good introduction.</p>
 <p><a href="{% link images/NG-911-and-GIS-Mapping.jpg %}"><img src="{% link images/NG-911-and-GIS-Mapping-800x332.jpg %}" alt="" title="NG 9-1-1 and GIS Mapping" width="600" height="249" class="aligncenter size-large wp-image-14167" /></a></p>

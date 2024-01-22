@@ -11,6 +11,7 @@ published: false
 categories:
   - SGID Blog
 ---
+
 <p>Updates were made recently to the<br />
 <a href="{% link data/boundaries/citycountystate/index.html %}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />
 <a href="{% link sgid/open-sgid/index.md %}">Utah SGID ArcSDE database server</a>.</p>

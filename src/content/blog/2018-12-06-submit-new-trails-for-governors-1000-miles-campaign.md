@@ -20,11 +20,13 @@ Bike Utah is looking for the help of GIS experts throughout the state to track a
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.bikeutah text="Please send all submissions to" %}{% endcapture %}
 
 ### About the 1,000 Miles Campaign
+
 {: .text-left }
 
-The 1,000 Miles Campaign is part of Governor Herbert's *Life Elevated 2020* plan and aims to "develop 1,000 miles of family-friendly trails and bike paths over the next 10 years in order to provide and promote active connections to school, work, and outdoor recreation in urban and rural communities throughout the state." Bike Utah is honored to be the nonprofit partner designated to carry out the implementation of the campaign. (Check out Governor Herbert's [campaign designation letter](https://static1.squarespace.com/static/5b8b54d1f407b40494055e8f/t/5bdb2820cd8366e93792c238/1541089317373/1%2C000+Miles+Partnership+Letter.pdf) for more details.)
+The 1,000 Miles Campaign is part of Governor Herbert's _Life Elevated 2020_ plan and aims to "develop 1,000 miles of family-friendly trails and bike paths over the next 10 years in order to provide and promote active connections to school, work, and outdoor recreation in urban and rural communities throughout the state." Bike Utah is honored to be the nonprofit partner designated to carry out the implementation of the campaign. (Check out Governor Herbert's [campaign designation letter](https://static1.squarespace.com/static/5b8b54d1f407b40494055e8f/t/5bdb2820cd8366e93792c238/1541089317373/1%2C000+Miles+Partnership+Letter.pdf) for more details.)
 
 ### So, what counts as "family friendly"?
+
 {: .text-left }
 
 - **Mountain bike and hiking trails.** Trails of various difficulties are allowed as long as signage is posted on each trail indicating the trail's level of difficulty.
@@ -33,6 +35,7 @@ The 1,000 Miles Campaign is part of Governor Herbert's *Life Elevated 2020* plan
 ![Trail Types]({{ "/images/BikeUtah1000Miles.png" }}){: .outline .flex .flex--center}
 
 ### How to Get Involved
+
 {: .text-left }
 
 We are looking for shapefiles or maps with comprehensive descriptions, including your name; the project name, location, and estimated distance; and a short description of the type of infrastructure. {{ contact }} As soon as we verify the information you provide, we will put it all in this [google doc](https://docs.google.com/spreadsheets/d/1QkSaARZNNcgHQZKaW2sVoCJ4cnSKIk4nVca29y_6l-w/edit#gid=0) where it will be

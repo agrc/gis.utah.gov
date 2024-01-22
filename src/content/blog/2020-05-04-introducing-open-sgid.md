@@ -31,6 +31,7 @@ Automated processes provide nightly updates to both the Open SGID and the Open D
 And this is just one of the many benefits of using the Open SGID. The Open SGID makes it especially convenient to choose from a wide-ranging list of data, and to explore that data quickly. You can also use the Open SGID for other tasks, such as cartography (making cool maps), geoprocessing (solving problems), analyzing data (writing spatial queries), and scripting (clicking fewer buttons).
 
 ### Beta Testing Results
+
 A nearly month-long beta testing period was helpful to identify several issues and some inherent differences between the Open SGID and the enterprise geodatabase of the SGID10 era. A [GitHub repository](https://github.com/agrc/open-sgid) was created as the primary source of information for the Open SGID and to catalog and address [these issues and differences](https://github.com/agrc/open-sgid/issues) with explanations or troubleshooting techniques, or both. Tags are assigned to each issue to provide a level of categorization.
 
 #### Known Issues
@@ -43,10 +44,9 @@ A nearly month-long beta testing period was helpful to identify several issues a
 - [Table names and casing](https://github.com/agrc/open-sgid/issues/12)
 - [Attribute names and casing](https://github.com/agrc/open-sgid/issues/13)
 - [Null value sorting behavior](https://github.com/agrc/open-sgid/issues/6)
-- [Required  selection of unique ID field in ArcMap](https://github.com/agrc/open-sgid/issues/9)
+- [Required selection of unique ID field in ArcMap](https://github.com/agrc/open-sgid/issues/9)
 
 If you come across a problem with or have a question about the Open SGID, visit the [issues page](https://github.com/agrc/open-sgid/issues). This repository not only acts as an important resource for Open SGID users to search for information about known issues, but also allows users to submit new issues they encounter, so UGRC staff and the general user population can collectively offer feedback and solutions. If you have not yet found an answer or solution to your topic, you can use the green _New issue_ button to submit it to the community. Also be sure to check out the [Open SGID Policy and Terms of Use page]({% link about/policy/open-sgid/index.md %}), which provides additional information.
-
 
 ### A Truly Open Database
 

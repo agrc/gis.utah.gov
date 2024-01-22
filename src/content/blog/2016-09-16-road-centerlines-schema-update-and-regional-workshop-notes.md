@@ -15,6 +15,7 @@ published: false
 categories:
   - Featured
 ---
+
 This year, UGRC has devoted a significant amount of energy toward realigning our processes for maintaining a statewide road centerline layer. The desire is to best position the state to meet requirements for Next Generation 911, as well as new federal reporting requirements placed on state DOTs.
 
 The three primary components of the realignment are:

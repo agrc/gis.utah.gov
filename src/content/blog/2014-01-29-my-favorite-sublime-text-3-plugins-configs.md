@@ -9,6 +9,7 @@ published: false
 categories:
   - Developer
 ---
+
 <p>I'm a huge fan of <a href="http://www.sublimetext.com/3">Sublime Text 3</a>. I love it's simplicity and strong package community. Here's a list of my favorite packages and config tweaks:</p>
 <h3>
 Packages</h3>

@@ -114,10 +114,13 @@ Usage:
 **That one script now has 3 sub commands and is 3x more useful.**
 
 Given the input
+
 ```
 geocode address 84109 326 east south temple
 ```
+
 docopt will generate a python dictionary from the inputs.
+
 ```py
 # output
 {

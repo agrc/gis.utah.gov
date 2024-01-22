@@ -22,27 +22,27 @@ To review any specific annexation document, go to the [Utah Lt. Governor Municip
 
 The following table shows the changes and annexations (listed by county and city) since October 1, 2020:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Cache | Millville | 1 |
-| | Newton | 1 |
-| | Smithfield | 2 |
-| | Wellsville | 1 |
-| Duchesne | Tabiona | 1 |
-| Iron | Town of Cedar Highlands Dissolution | 1 |
-| | Parowan, Disconnect | 1 |
-| Juab | Mona  | 1 |
-| | Nephi | 3 |
-| Salt Lake | Sandy | 4 |
-| Sevier | Richfield | 1 |
-| Summit | Hideout | 1 |
-| Utah | Alpine | 1 |
-| | Highland | 1 |
-| | Lehi | 1 |
-| | Orem | 1 |
-| | Salem | 1 |
-| | Santaquin  | 1 |
-| Washington | Washington City | 1 |
-| Wasatch| Hideout | 1 |
-| | North Ogden  | 1 |
-| | West Haven  | 2 |
+| County     | City                                | Number of Changes |
+| ---------- | ----------------------------------- | ----------------- |
+| Cache      | Millville                           | 1                 |
+|            | Newton                              | 1                 |
+|            | Smithfield                          | 2                 |
+|            | Wellsville                          | 1                 |
+| Duchesne   | Tabiona                             | 1                 |
+| Iron       | Town of Cedar Highlands Dissolution | 1                 |
+|            | Parowan, Disconnect                 | 1                 |
+| Juab       | Mona                                | 1                 |
+|            | Nephi                               | 3                 |
+| Salt Lake  | Sandy                               | 4                 |
+| Sevier     | Richfield                           | 1                 |
+| Summit     | Hideout                             | 1                 |
+| Utah       | Alpine                              | 1                 |
+|            | Highland                            | 1                 |
+|            | Lehi                                | 1                 |
+|            | Orem                                | 1                 |
+|            | Salem                               | 1                 |
+|            | Santaquin                           | 1                 |
+| Washington | Washington City                     | 1                 |
+| Wasatch    | Hideout                             | 1                 |
+|            | North Ogden                         | 1                 |
+|            | West Haven                          | 2                 |

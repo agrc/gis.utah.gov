@@ -64,6 +64,5 @@ Another aim of the work group was to improve the usability of the data (through 
     </div>
 </div>
 
-
-*[LIR]: Land Information Records
-*[AOG]: Association of Governments
+_[LIR]: Land Information Records
+_[AOG]: Association of Governments

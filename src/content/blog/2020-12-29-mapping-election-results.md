@@ -19,6 +19,7 @@ Many of the maps that we see on election night, or in the media afterward, over-
 > You can explore the maps from this post in the accompanying [interactive web map](https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc). The methodology is described below.
 
 ### Remove the uninhabited areas
+
 {: .text-left}
 
 In presidential elections, voting precincts are the lowest level of tabulation. Precincts primarily [cover all areas of the nation](https://www.nytimes.com/interactive/2018/upshot/election-2016-voting-precinct-maps.html) - whether inhabited or not. However, displaying results at the precinct level gives the impression that voters are evenly distributed across the landscape. Further confusing the viewer, precincts containing the fewest voters are often the largest in size - as they cover mountains and uninhabited areas. As a result, maps displayed at the precinct level often over-represent the vote count. A good example of this is in the surrounding areas of the Salt Lake Valley (Shown in Figure 1: Precinct Results). The large precinct in the northwest corner of the valley contains 27 registered voters. Likewise, one of the large precincts east of the valley, in the mountainous area, contains 15 registered voters. As you can see, when the results are mapped at the precinct level, these areas inflate the results.
@@ -35,6 +36,7 @@ In the Voter Results map, our attention is drawn away from the industrial and na
 </div>
 
 ### Display the percentage of votes
+
 {: .text-left}
 
 If we're trying to get a feel for the political landscape, then It's essential to see how the election was won. Displaying the winner is fundamental, but adding the percentage of win enriches the story. A close win tells a different story than that of a landslide. Presenting this information on the map helps paint a more telling story of our community.
@@ -61,6 +63,7 @@ I encourage you to apply these techniques when mapping other population-based da
 Let's continue the conversation on [Twitter](https://twitter.com/bunce_greg) or email.
 
 ### Methodology
+
 {: .text-left}
 
 - [SGID Address Points](https://opendata.gis.utah.gov/datasets/utah-address-points) were used as a proxy for voter residences in Salt Lake County. Non-residential addresses were removed.

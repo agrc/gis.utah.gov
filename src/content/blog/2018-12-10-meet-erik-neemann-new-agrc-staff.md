@@ -9,6 +9,7 @@ categories:
   - Featured
 tags: []
 ---
+
 UGRC would like to welcome Erik Neemann to the team! Erik brings a background in meteorology, as well as years of experience in the Air Force, to his new role as technical support specialist at UGRC. Erik will be working on 911-centric work, as well as various other GIS efforts. We’re happy to have Erik on the UGRC team!
 
 **What’s your title at UGRC?**

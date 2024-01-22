@@ -9,6 +9,7 @@ title: 'SGID Database Upgrade 10.0 to 10.2: Date of Upgrade 7/28/2016'
 categories:
   - Featured
 ---
+
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager %}{% endcapture %}
 This change was rolled back due to technical difficulties. It will be resecheduled for a later date.
 {: .pop}

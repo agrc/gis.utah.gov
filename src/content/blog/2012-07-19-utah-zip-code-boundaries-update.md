@@ -9,6 +9,7 @@ published: false
 categories:
   - SGID Blog
 ---
+
 Updates were made recently to the SGID10.Boundaries.ZipCodes feature class that resides on the Utah SGID ArcSDE database server.
 
 The following zip code boundaries (in Salt Lake City and West Valley City) have been adjusted to follow parcel boundaries that were not encompassed by their assigned zip code:

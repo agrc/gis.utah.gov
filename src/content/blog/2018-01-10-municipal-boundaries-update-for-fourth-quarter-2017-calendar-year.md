@@ -25,19 +25,19 @@ Another reminder the 2020 Census will be coming up soon so it’s a good time to
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.boundaries %}{% endcapture %} Current data can be downloaded from the [State, County, and Municipal Boundaries]({% link data/boundaries/citycountystate/index.html %}) data page or you can contact us for more information. {{ contact }}
 
-Below are the changes and annexations since **September 5th, 2017**,  listed by County and City:
+Below are the changes and annexations since **September 5th, 2017**, listed by County and City:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Box Elder | Fielding | 1 |
-| Cache | Hyrum | 1 |
-| | Hyde Park | 1 |
-| Iron | Cedar Highland Incorporation | 1 |
-| | Enoch City | 1 |
-| Rich | Woodruff | 1 |
-| Salt Lake | Sandy | 1 |
-| Sanpete | Ephraim | 2 |
-| Utah | American Fork | 5 |
-| | Lehi | 4 |
-| | Saratoga Springs | 3 |
-| Wasatch | Heber City | 1 |
+| County    | City                         | Number of Changes |
+| --------- | ---------------------------- | ----------------- |
+| Box Elder | Fielding                     | 1                 |
+| Cache     | Hyrum                        | 1                 |
+|           | Hyde Park                    | 1                 |
+| Iron      | Cedar Highland Incorporation | 1                 |
+|           | Enoch City                   | 1                 |
+| Rich      | Woodruff                     | 1                 |
+| Salt Lake | Sandy                        | 1                 |
+| Sanpete   | Ephraim                      | 2                 |
+| Utah      | American Fork                | 5                 |
+|           | Lehi                         | 4                 |
+|           | Saratoga Springs             | 3                 |
+| Wasatch   | Heber City                   | 1                 |

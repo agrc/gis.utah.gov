@@ -19,6 +19,7 @@ The PLSS grid is physically defined on the ground in the form of survey monument
 Two parallel developments -- state stewardship of the PLSS GIS layers and the establishment of the Monument Replacement and Rehabilitation Committee and associated grant program -- will improve and protect the PLSS as both physical and information resources.
 
 ### State Stewardship of the PLSS GIS Layers
+
 {: .text-left}
 
 This August, the State of Utah negotiated and signed a [Memorandum of Understanding](https://drive.google.com/file/d/1GoNuIEhg80KFB5e2FqL64RkspyCJlzu7/view?usp=sharing) (MOU) with the BLM to take over stewardship of the PLSS corner point and township, range, and section GIS layers. The goal of the MOU is to improve the spatial accuracy of this dataset by incorporating locally collected survey control, incorporating a change management process, and adopting the ESRI Parcel Fabric data model for the ongoing maintenance of Utah’s PLSS dataset.
@@ -32,6 +33,7 @@ The MOU establishes roles and responsibilities for UGRC, SITLA, and the BLM:
 This approach just makes too much sense. Having all three stakeholder organizations actively participating and providing ongoing guidance to the project should result in an excellent, quality product. And, with possible additions of other land-owning agencies who may wish to participate by adding additional associated layers, the new platform has the potential to provide for greater efficiencies and an improved digital model of land ownership in Utah.
 
 ### Monument Replacement and Restoration Committee (MRRC)
+
 {: .text-left}
 
 As property descriptions are all ultimately described using the exact location of the physical survey monuments as a starting point, it is important that the monuments are protected, and as a backup, their locations are collected and preserved.
@@ -44,7 +46,7 @@ The MRRC met for the first time on September 17, 2015. The committee is staffed 
 
 Goals were set in the first meeting to provide resources for Counties to protect, restore, rehabilitate and perpetuate PLSS Corners within the State of Utah and make the information available and accessible to the public and government agencies on the web for use toward the public’s best interests.
 
-The MMRC expects to begin accepting application from Counties to perform monument restoration and replacement projects in January 2016, and will award grants to high priority/need  projects. Grant information will be sent to county officials prior to January 1st including submission instructions.
+The MMRC expects to begin accepting application from Counties to perform monument restoration and replacement projects in January 2016, and will award grants to high priority/need projects. Grant information will be sent to county officials prior to January 1st including submission instructions.
 
 Those performing the work will be encouraged to submit PLSS corner data electronically to UGRC using the [Utah PLSS Corner Management Web Application](https://plss.utah.gov/).
 

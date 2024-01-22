@@ -13,6 +13,7 @@ tags:
 I have spent the last 4 months learning and using ArcPro while also learning a new job (see the end of this post). Like many of my fellow GIS users, I was hesitant to make the leap into the unknown after 10 years using ArcMap. I had heard rumors of ArcPro being “buggy”, everything being hard to find, and data management being a mystery. While I can neither confirm nor deny the truth behind those complaints, I am writing this blogpost to provide a bit of advice for those contemplating/starting the switch to ArcPro, as well as to hopefully provide some “I’ve been there” support for those who have already made the switch.
 
 ## Advice on Switching from ArcMap to ArcPro
+
 {: .text-left }
 
 <figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_ArcProScreenshot.png %}" alt="ArcPro Screenshot" loading="lazy" /><figcaption class="caption__text">A typical view in ArcPro</figcaption></figure>
@@ -58,7 +59,8 @@ Thanks to a supportive supervisor, my resignation to the ways of changing techno
 
 <div class="clear"></div>
 
-----------
+---
+
 #### My Background
 
 ![Petra]({% link images/guestblog/jp_JessieinJordan.png %}){: .inline-text-right .outline }

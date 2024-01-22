@@ -9,6 +9,7 @@ title: 'Quick JavaScript Tip: The Arguments Object'
 categories:
   - Developer
 ---
+
 <p>Recently, as I was slowly working my way through <a href="https://rmurphey.com/">Rebecca Murphy's</a> excellent <a href="https://github.com/rmurphey/js-assessment">js-assessment test suite</a>, I ran into a problem that was quite vexing. I was creating a function that <a href="https://github.com/rmurphey/js-assessment/blob/master/tests/app/functions.js#L109-119">was to take an arbitrary number of arguments and combine them with an existing array</a>. I thought that this would be as trivial as using the concat method on the existing array and passing in the arguments object. However, as you can see below, it didn't work.</p>
 <p data-height="345" data-theme-id="0" data-slug-hash="BPVWdQ" data-default-tab="js,result" data-user="stdavis" data-pen-title="Arguments Concat Method" class="codepen">See the Pen <a href="https://codepen.io/stdavis/pen/BPVWdQ/">Arguments Concat Method</a> by Scott Davis (<a href="https://codepen.io/stdavis">@stdavis</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

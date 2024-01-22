@@ -23,7 +23,7 @@ The WebAPI proof of concept was built using [ASP.NET WCF](https://docs.microsoft
 
 [RavenDB](https://ravendb.net/) is the user and key store and [Redis](https://redis.io) is being used for analytics and reporting. Redis and RavenDB are both running as Windows services and the WebAPI and developer website are hosted as separate sites in IIS. Supplementary data is cached from Google Sheets to allow for easy modifications.
 
-Reading that last paragraph may have made you think that it would be hard to replicate or upgrade the entire WebAPI system. If that's the case--you are  [correct](https://github.com/agrc/api.mapserv.utah.gov/wiki). The list of installation instructions and documentation for the version 1 WebAPI system are as frustrating as they are long. A design goal of version 2 is to eliminate that friction as much as possible.
+Reading that last paragraph may have made you think that it would be hard to replicate or upgrade the entire WebAPI system. If that's the case--you are [correct](https://github.com/agrc/api.mapserv.utah.gov/wiki). The list of installation instructions and documentation for the version 1 WebAPI system are as frustrating as they are long. A design goal of version 2 is to eliminate that friction as much as possible.
 
 ## The Future
 
@@ -37,11 +37,11 @@ Version 2 of the WebAPI is being built for containers. It will run without them,
 2. The ASP.NET Core developer website
 3. The PostgreSQL database
 4. The Redis database
-5. The API Explorer website *
-6. The Google sheet synchronization service *
-7. The logging/reporting service (Kibana) *
+5. The API Explorer website \*
+6. The Google sheet synchronization service \*
+7. The logging/reporting service (Kibana) \*
 
-_*not yet built_
+_\*not yet built_
 
 ASP.NET Core runs very well in a container and will drive the WebAPI and developer websites. We chose to replace RavenDB with Postgres as the user and key store. This change is because PostgreSQL runs amazing in a Docker container for development. It isn't quite durable enough for production, but since the major cloud providers offer cloud SQL equivalents to Postgres, the WebAPI can use a managed cloud database for production.
 

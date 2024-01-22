@@ -11,6 +11,7 @@ tags:
   - surveyor
   - NGS
 ---
+
 In 2022 the <abbr title="National Geodetic Survey">NGS</abbr> plans to publish a series of new horizontal reference frames that will replace the <abbr title="North American Datum of 1983">NAD83</abbr> and a vertical reference frame that will replace the <abbr title="North American Vertical Datum of 1988">NAVD88</abbr>.
 
 [![Preliminary zone layout]({% link images/preliminary_zone_layout_thumb.png %}){: .outline .inline-text-right}]({% link images/preliminary_zone_layout.png %})

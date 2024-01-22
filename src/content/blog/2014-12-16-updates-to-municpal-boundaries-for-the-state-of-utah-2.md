@@ -11,6 +11,7 @@ published: false
 categories:
   - SGID Blog
 ---
+
 Updates were made recently to the SGID10.BOUNDARIES.Municipalities feature classes that reside on the Utah SGID ArcSDE database server.
 
 The following highlights what has been updated through December 16, 2014:

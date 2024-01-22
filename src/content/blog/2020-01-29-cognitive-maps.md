@@ -33,11 +33,12 @@ The remainder of this article will explore some of the science behind our intern
 </div>
 
 ### Mapping and Navigation in the Animal World
+
 {: .text-left}
 
 It turns out that humans are not the only creatures on the planet that are spatially aware. Internal mapping and navigation is widely seen throughout the animal world. Instinctually, it's linked to foraging and habitat. This can be seen in birds and mammals when they cache food and dig it up later. Their brains are memorizing locations[^Jabr-2011]. Homing pigeons are a good example of using internal navigation; they can return home after being transported hundreds of miles away. Arctic tern travel even greater distances. Using geolocators, a group of researchers found that these birds migrate a total of 43,000 miles as they travel from the North Pole to the South and back again[^Amos-2010].
 
-Bees take this a step further and communicate their spatial knowledge with others in their hive. Apart from humans, they are thought to be the only creatures known to do this[^Hoxeng-2019]. Using the position of the sun as a datum, they share distance and direction to nearby food sources with other bees[^Frisch-1993]. The Smithsonian has captured this remarkable behavior, which is known as the waggle dance, in this [YouTube clip](https://www.youtube.com/watch?v=LU_KD1enR3Q){:target="_blank"}.
+Bees take this a step further and communicate their spatial knowledge with others in their hive. Apart from humans, they are thought to be the only creatures known to do this[^Hoxeng-2019]. Using the position of the sun as a datum, they share distance and direction to nearby food sources with other bees[^Frisch-1993]. The Smithsonian has captured this remarkable behavior, which is known as the waggle dance, in this [YouTube clip](https://www.youtube.com/watch?v=LU_KD1enR3Q){:target="\_blank"}.
 
 <div class="flex flex--around">
   <figure class="caption">
@@ -47,6 +48,7 @@ Bees take this a step further and communicate their spatial knowledge with other
 </div>
 
 ### The “Where” in Spatial Awareness
+
 {: .text-left}
 
 Research shows that in humans, spatial awareness is linked to a specific region buried deep in the brain called the hippocampus (figure 3). Scientists now know that this seahorse-shaped region of the brain (derived from the Greek words hippos, meaning “horse,” and kampos, meaning “sea monster”) functions as both a map and a memory system. The hippocampus is crucial to many parts of life. It allows us to orient ourselves in space and it gives us a sense of direction. You can think of the hippocampus as the brain’s spatial memory system.
@@ -59,11 +61,13 @@ Research shows that in humans, spatial awareness is linked to a specific region 
 </div>
 
 ### Episodic Memories
+
 {: .text-left}
 
 In humans, the hippocampus performs an additional function by looking at experience, time, and place. This unique combination allows us to have what are called episodic memories. These are the memories that are linked to a particular place and time - such as where you were when you heard the news about September 11th. The hippocampus is responsible for retrieving these events from the past. It is thought that this capability advanced in humans during the hunter-gathering days as an extension to the spatial functions found in other animals[^Garfield-2013].
 
 ### Memory Storage and Patient HM
+
 {: .text-left}
 
 Much of what we know about the hippocampus and its role in memories can be attributed to a man with no memory at all. As a young boy, Henry Molaison (commonly known as Patient HM) was hit by a car while riding his bike and suffered a brain injury. Soon after that, he began to experience severe epileptic seizures. In 1953, at the age of 27, he decided to undergo experimental brain surgery and have his hippocampus removed. His seizures immediately disappeared, but so did his recent memories.
@@ -75,6 +79,7 @@ This explains why Patient HM could not create new memories. Additionally, becaus
 In addition to a spatial memory system, the brain also contains a remarkable onboard navigation system. A study looking at London cab drivers took a closer look at this.
 
 ### Internal Navigation and London Cab Drivers
+
 {: .text-left}
 
 Known as ["The Knowledge”](https://tfl.gov.uk/info-for/taxis-and-private-hire/licensing/learn-the-knowledge-of-london), all licensed cab drivers in London are required to memorize the city’s 25,000-plus streets as well as thousands of locations and landmarks. The goal is to instantaneously calculate the quickest route between two locations. This requirement might seem excessive in an age when handheld routing devices are in just about everyone's pocket. But, London’s street network is notorious for being one of the most difficult to navigate. The city's lack of grid-like layout can be a chore for the uninformed driver[^Jacobs-2018].
@@ -104,6 +109,7 @@ Additional brain navigation studies were conducted using a highly accurate and i
 The London cab driver studies have shown that the hippocampus plays a vital role in spatial navigation. While creating these mental brain maps, it is thought that the hippocampus grows new neurons and that these neurons further make connections with one another. Researchers think that these findings could have important implications for people with brain damage for diseases such as Alzheimer’s and Parkinson’s[^BBC-2000].
 
 ### Alzheimer's and the Hippocampus
+
 {: .text-left}
 
 We know that the hippocampus is important for spatial thinking, navigation, and memory creation - and we've seen with Patient HM what happens when it’s completely removed. But, what do we know about the hippocampus when it’s not functioning properly?
@@ -117,6 +123,7 @@ Currently, there is no effective treatment for Alzheimer's, however, there is in
 Neuroscientist Véronique Bohbot thinks that intervention, focused on executing the hippocampus might help offset age-related impairments or even neurodegenerative disease. She says, “If we are paying attention to our environment, we are stimulating our hippocampus, and a bigger hippocampus seems to be protective against Alzheimer’s disease”.
 
 ### The Effects of GNSS/GPS on the Brain
+
 {: .text-left}
 
 Again, looking back to the London cab driver findings, the studies show strong activity in the hippocampus when drivers routed themselves based on memory. It makes you wonder how our increasing reliance on GNSS/GPS and turn-by-turn directions affect the overall hippocampal functions.
@@ -139,6 +146,7 @@ While the verdict is still out on the long term effects of GPS-based navigation,
 The brain connections that we make when we explore and navigate our environment help us better connect to the world around while nourishing what is called topophilia - “a strong sense of place, which often becomes mixed with the sense of cultural identity among certain people and a love of certain aspects of such a place”[^Tuan-1974].
 
 ### Organizing Life's Experiences
+
 {: .text-left}
 
 We now know that our brain is a spatial organ. The hippocampus, in particular, is responsible for mapping, navigation, and memory storage. These functions are linked to additional mechanisms such as episodic and long term memories. Research has shown that when we exercise these functions we see an increase in brain activity. These active neurons not only create new connections but preserve and organize existing ones[^Javadi-et-al-2017].
@@ -148,6 +156,7 @@ At the core of these functions is a system that stores and retrieves spatial inf
 Neuroscientist Kate Jeffery, who studies cognitive maps, put it well when she said, “A map is a handy way to organize life’s experiences. This makes a lot of sense, since knowing where things happened is a critical part of knowing how to act in the world. The quest now is to understand how memories get attached to this map"[^Jeffery-2017].
 
 ### Explore Cognitive Mapping in a GIS
+
 {: .text-left}
 
 Check out this [Colab Python notebook](https://colab.research.google.com/drive/1sla_wi3qDr_LQ_wC49zkrJ3MMUqYuKTq) to explore what the human brain's cognitive mapping system might look like in a software-based Geographic Information System.
@@ -155,44 +164,26 @@ Check out this [Colab Python notebook](https://colab.research.google.com/drive/1
 ![Electric Brain]({% link images/electric_brain.png %}){: .flex .flex--center}
 
 ### Sources
+
 {: .text-left}
 
 [^antoniou]: Antoniou, Antonis and Gestalten. Map of the World: The World According to Illustrators and Storytellers. January 2013. [https://famillesummerbelle.typepad.com/fsblog/2013/02/a-map-of-the-world-book.html](https://famillesummerbelle.typepad.com/fsblog/2013/02/a-map-of-the-world-book.html) (accessed Jan 9, 2020)
-
 [^Fillet-2017]: Fillit, Howard. “Dementia and Alzheimer's Disease: What's the Difference”. [https://www.alzdiscovery.org/news-room/blog/dementia-alzheimers-disease-whats-the-difference](https://www.alzdiscovery.org/news-room/blog/dementia-alzheimers-disease-whats-the-difference) (accessed Jan 12, 2020)
-
 [^streets]: Streets Balloons the Hippocampus, but Cabbies May Pay a Hidden Fare in Cognitive Skills”. December 8, 2011.
-
 [^Baby-Sparks-2019]: Baby Sparks. “What is Spatial Awareness & How Does it Develop?”. 2019. [https://babysparks.com/2019/02/20/what-is-spatial-awareness-how-does-it-develop/](https://babysparks.com/2019/02/20/what-is-spatial-awareness-how-does-it-develop/) (accessed December 15, 2019).
-
 [^Jabr-2011]: Jabr, Ferris. Scientific American. “Cache Cab: Taxi Drivers’ Brains Grow to Navigate London’s Streets: Memorizing 25,000 City
-
 [^Amos-2010]: Amos, Jonathan. “Arctic Tern's Epic Journey Mapped”. Jan 11, 2010. [http://news.bbc.co.uk/2/hi/sci/tech/8451908.stm](http://news.bbc.co.uk/2/hi/sci/tech/8451908.stm) (accessed December 13, 2019).
-
 [^Hoxeng-2019]: Hoxeng, John. American Surveyor. “A Zoological Datum: How Honey Bees Use Datums for Mapping and Navigation”. October 5, 2019.
-
 [^Frisch-1993]: Frisch, Karl von. “The Dance Language and Orientation of Bees”. Harvard University Press. 1993.
-
 [^Garfield-2013]: Garfield, Simon. On the Map: A Mind-Expanding Exploration of the Way the World Looks, 192, 194. New York: Gotham Books, 2013.
-
 [^Kean-2014]: Kean, Sam. “What Happens When a Neurosurgeon Removes Your Hippocampus”. Wired. May 8, 2014.
-
 [^Jacobs-2018]: Jacobs, Frank. “Street grids matter more to your commute than you might think”. Big Think. July 23, 2018. [https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid](https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid) (accessed December 22, 2019)
-
 [^Maguire-et-al-2000]: Maguire, E., Gadian, D., Johnsrude, I., Good, C., Ashburner, J., Frackowiak, R., & Frith, C. D. (2000). “Navigational Structural Change in the Hippocampi of Taxi Drivers”. Proceedings of the National Academy of Science 97 (8) 4398-4403.
-
 [^Woollett-et-al-2009]: Woollett, Katherine et al. “Talent in the taxi: a model system for exploring expertise.” Philosophical transactions of the Royal Society of London. Series B, Biological sciences vol. 364,1522 (2009): 1407-16. [doi:10.1098/rstb.2008.0288](doi:10.1098/rstb.2008.0288)
-
 [^BBC-2000]: BBC. “Taxi Drivers' Brains Grow on the Job”. March 14, 2000. [http://news.bbc.co.uk/2/hi/677048.stm](http://news.bbc.co.uk/2/hi/677048.stm) (accessed Dec 28, 2019)
-
 [^Setti-et-al-2017]: Setti, Sharay E et al. “Alterations in Hippocampal Activity and Alzheimer's Disease.” Translational issues in psychological science vol. 3,4 (2017): 348-356.
-
 [^Bonner-Jackson-2015]: Bonner-Jackson, Aaron. “Alzheimer’s and a Shrinking Hippocampus”. BioMed Central. October 15, 2015. [https://blogs.biomedcentral.com/on-medicine/2015/10/15/alzheimers-shrinking-hippocampus/](https://blogs.biomedcentral.com/on-medicine/2015/10/15/alzheimers-shrinking-hippocampus/) (accessed Jan 2, 2020)
-
 [^Javadi-et-al-2017]: Javadi, A., Emo, B., Howard, L. et al. “Hippocampal and Prefrontal Processing of Network Topology to Simulate the Future”. Nat Commun 8, 14652 (2017). [https://doi.org/10.1038/ncomms14652](https://doi.org/10.1038/ncomms14652)
-
 [^Advisory-Board-2019]: Advisory Board. “Can GPS Navigation Really 'Ruin Your Brain'?”. Aug 5, 2019. [https://www.advisory.com/daily-briefing/2019/08/05/gps](https://www.advisory.com/daily-briefing/2019/08/05/gps) (accessed Jan 2, 2020)
-
 [^Tuan-1974]: Tuan, Yi-fu. “Topophilia: a Study of Environmental Perception, Attitudes, and Values”. Englewood Cliffs, N.J: Prentice-Hall, 1974.
-
 [^Jeffery-2017]: Jeffrey, Kate. “Maps in the Head: How animals navigate their way around provides clues to how the brain forms, stores and retrieves memories”. Aeon. Jan 25, 2017. [https://aeon.co/essays/how-cognitive-maps-help-animals-navigate-the-world](https://aeon.co/essays/how-cognitive-maps-help-animals-navigate-the-world) (accessed on November 24, 2019)

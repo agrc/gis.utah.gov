@@ -11,6 +11,7 @@ title: Now Hiring! Experienced Developer
 categories:
   - Featured
 ---
+
 <p>[note title="Some of the benefits of working for UGRC:" align="right"]</p>
 <ul>
 <li>Extensive benefits including medical, dental, vision</li>

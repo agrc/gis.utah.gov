@@ -9,6 +9,7 @@ published: false
 categories:
   - Featured
 ---
+
 <p>On November 14, UGRC sent the first edition of a short-format <a href="https://us2.campaign-archive1.com/?u=0f7773ca3c6d02d1c38851ee9&amp;id=48c1ab7af9&amp;e=[UNIQID]" target="_blank" rel="noopener">newsletter</a> to subscribers who signed up on the gis.utah.gov website.</p>
 <p>The newsletter features recent announcements, blog posts and other information relevant to Utah's GIS and mapping community.</p>
 <p>To receive our newsletter, fill out the 'Newsletter' form found in the footer section of any pages on <a href="gis.utah.gov">gis.utah.gov</a>.</p>

@@ -21,27 +21,27 @@ To review the documents you can go here: [Utah Lt. Governor Municipal Certificat
 
 The following table shows the changes and annexations (listed by county and city) since October 15, 2019:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Box Elder | Brigham City | 1 |
-| Cache | Hyrum | 2 |
-| | Logan | 1 |
-| | Lewiston | 1 |
-| Duchesne | Roosevelt | 2 |
-| Emery | Castle Cale | 1 |
-| | Cleveland | 1 |
-| Juab | Mona  | 1 |
-| Salt Lake | Sandy | 1 |
-| | Herriman | 1 |
-| | Brighton City Incorporation | 1 |
-| | Riverton & South Jordan Adj | 1 |
-| | Salt Lake City & Millcreek Adj | 2 |
-| Summit | Francis | 1 |
-| Utah | American Fork | 1 |
-| | Lehi | 2 |
-| | Payson & Salem Adj | 1 |
-| | Saratoga Springs  | 1 |
-| Washington | New Harmony | 1 |
-| | St George  | 1 |
-| Weber | North Ogden | 2 |
-| | South Ogden  | 1 |
+| County     | City                           | Number of Changes |
+| ---------- | ------------------------------ | ----------------- |
+| Box Elder  | Brigham City                   | 1                 |
+| Cache      | Hyrum                          | 2                 |
+|            | Logan                          | 1                 |
+|            | Lewiston                       | 1                 |
+| Duchesne   | Roosevelt                      | 2                 |
+| Emery      | Castle Cale                    | 1                 |
+|            | Cleveland                      | 1                 |
+| Juab       | Mona                           | 1                 |
+| Salt Lake  | Sandy                          | 1                 |
+|            | Herriman                       | 1                 |
+|            | Brighton City Incorporation    | 1                 |
+|            | Riverton & South Jordan Adj    | 1                 |
+|            | Salt Lake City & Millcreek Adj | 2                 |
+| Summit     | Francis                        | 1                 |
+| Utah       | American Fork                  | 1                 |
+|            | Lehi                           | 2                 |
+|            | Payson & Salem Adj             | 1                 |
+|            | Saratoga Springs               | 1                 |
+| Washington | New Harmony                    | 1                 |
+|            | St George                      | 1                 |
+| Weber      | North Ogden                    | 2                 |
+|            | South Ogden                    | 1                 |

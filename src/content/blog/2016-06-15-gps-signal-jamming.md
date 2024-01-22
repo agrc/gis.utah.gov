@@ -19,10 +19,10 @@ Please feel free to share your findings with the State of Utah UGRC.
 
 ### Testing Dates and Times
 
-| Date        | Time          |
-| ------------|:-------------:|
-| JUNE 7, 2016 | 16:30 – 22:30 |
-| JUNE 9, 2016 |  16:30 – 22:30 |
+| Date          |     Time      |
+| ------------- | :-----------: |
+| JUNE 7, 2016  | 16:30 – 22:30 |
+| JUNE 9, 2016  | 16:30 – 22:30 |
 | JUNE 21, 2016 | 16:30 – 22:30 |
 | JUNE 23, 2016 | 16:30 – 22:30 |
 | JUNE 28, 2016 | 16:30 – 22:30 |

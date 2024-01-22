@@ -11,6 +11,7 @@ published: false
 categories:
   - Featured
 ---
+
 <p>The Utah Department of Natural Resources (DNR) honored six employees from five divisions as a part of its GIS Return on Investment (ROI) Contest. Tanna Fullenkamp, from Forestry, Fire, & State Lands was named grand prize winner for her sovereign lands GIS project.</p>
 <p>Fullenkamp’s project demonstrated effective GIS management of hundreds or thousands of records distributed throughout the state. In her case, sovereign land properties and leases can now be identified, tracked and queried spatially, which leads to less errors and more revenue. Rather than sourcing information from physical files, the lease and property data is immediately available to staff, which saves time and money while improving customer service.</p>
 <p>Contest finalists also included Kent Brown, Utah Geological Survey, for his 3D stereo models; Aaron Austin, Division of Water Resources, for his water budget collaboration process; Rachel Williams, Division of Oil, Gas & Mining, for her GIS request form and Ben Sutter and Avery Cook, Division of Wildlife Resources, for their wild turkey distribution map.</p>

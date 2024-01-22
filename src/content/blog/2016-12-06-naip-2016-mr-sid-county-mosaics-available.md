@@ -11,6 +11,7 @@ published: false
 categories:
   - Featured
 ---
+
 [![NAIP 2016 Sample]({% link images/NAIP2016_sm.png %} "view project area map")]({% link images/NAIP2016.png %}){:.inline-text-right}
 The statewide 2016 National Agricultural Imagery Program (NAIP) 1 meter aerial photography
 <a href="{% link data/aerial-photography/naip/index.html %}">is

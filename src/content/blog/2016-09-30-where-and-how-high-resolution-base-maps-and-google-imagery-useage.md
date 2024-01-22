@@ -18,14 +18,15 @@ published: false
 categories:
   - Featured
 ---
+
 [![Google Imagery Usage Map]({% link images/HighResImageryAndBaseMaps_Sept2016thumb.jpg %} "view high res usage map")]({% link downloads/HighResImageryAndBaseMaps_Sept2016.pdf %}){:.inline-text-right}
 It has been about 18 months since the statewide high resolution (6") aerial photography content and services, licensed from Google and funded through the Utah Mapping and Information Partnership (UMIP), were made available to state and local government through UGRC's Discover imagery server.
 
-*So, what have we learned so far?* A lot actually, thanks to two resources: an extensive user survey and metrics collected by the server itself.
+_So, what have we learned so far?_ A lot actually, thanks to two resources: an extensive user survey and metrics collected by the server itself.
 
 The user survey, conducted late this Spring, identifies how the aerial photography services are being used, what the benefits are to organizations using the license, and suggestions for future updates and enhancements. A [summary of the Utah High Res (6") Aerial Photography User Survey](https://docs.google.com/presentation/d/1VbTqkHDGoprPYwGtmnOZ-BUVdfFnBz4Sk9VAZMs3mbM/edit?usp=sharing) is now available, and includes a list of [responses](https://docs.google.com/document/d/1iwLi8icm3OqF0GvEnblD6REiwcmUdug03Dny2vvXMMM/edit?usp=sharing) to free-text questions.
 
-Additionally, usage metrics from the Discover server identify who is using the services, how much, and maybe most importantly, WHERE use is the highest, and how it varies around the state. The server metrics emphatically show usage has steadily increased and, that usage, as expected, varies greatly in different parts of the state. It is worth noting that the server metrics  understate use, as they do not account for the use of large-area custom mosaics created for 911 dispatch centers and others who require on-premise copies of the imagery. Caching of imagery tiles that have already been viewed, by ArcGIS and other applications, also means the numbers do not reflect full usage.
+Additionally, usage metrics from the Discover server identify who is using the services, how much, and maybe most importantly, WHERE use is the highest, and how it varies around the state. The server metrics emphatically show usage has steadily increased and, that usage, as expected, varies greatly in different parts of the state. It is worth noting that the server metrics understate use, as they do not account for the use of large-area custom mosaics created for 911 dispatch centers and others who require on-premise copies of the imagery. Caching of imagery tiles that have already been viewed, by ArcGIS and other applications, also means the numbers do not reflect full usage.
 
 The **WHERE** piece to the imagery question is quite important, as the single most expensive component for all models of aerial photography acquisition, is the size of the area of interest. And, as Utah considers what areas to re-acquire or subscribe to, having a spatial representation of current usage is critical. Where there's current use, there's probably future use and the accompanying expectation for periodic update.
 

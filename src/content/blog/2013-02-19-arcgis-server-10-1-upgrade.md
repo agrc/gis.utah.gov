@@ -10,6 +10,7 @@ categories:
   - Developer
   - Featured
 ---
+
 <p>UGRC is planning to upgrade our main ArcGIS Server instance (<a href="http://mapserv.utah.gov/arcgis/rest">mapserv.utah.gov/arcgis/rest</a>) to version 10.1 within the next few weeks. For the majority of our users, we do not think that this will have much affect on services. However, if you access our base map caches through SOAP/WMS (this includes ArcMap users) there will be breaking changes.</p>
 <p>The URL's to our cached base map services will be changing. This is due to ArcGIS Server not supporting the "-" character in service names at 10.1. Here's a table mapping the URL changes:<br />
 <iframe width='505' height='280' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Aqee4VOgQcXcdEpDUHg5ZC16SzRaR0RwQjRiZGloWGc&single=true&gid=0&output=html&widget=true'></iframe></p>

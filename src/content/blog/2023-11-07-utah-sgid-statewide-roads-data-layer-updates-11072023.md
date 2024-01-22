@@ -30,4 +30,3 @@ New roads were added and road names and address ranges were updated for the foll
 #### UDOT Route System
 
 - Visit the [SGID LRS page]({% link data/transportation/roads-system/index.html %}#HighwayLinearReferencingSystemRoutes) for information on UDOT's Advanced LRS (ALRS) data.
-

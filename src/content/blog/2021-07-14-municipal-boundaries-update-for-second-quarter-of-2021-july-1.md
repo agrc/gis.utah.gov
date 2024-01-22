@@ -21,29 +21,29 @@ To review any specific annexation document, go to the [Utah Lt. Governor Municip
 
 The following table shows the changes and annexations (listed by county and city) since April 1, 2021:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Cache | Hyde Park | 1 |
-| | Logan | 1 |
-| | Providence | 2 |
-| | Richmond | 1 |
-| | Smithfield | 1 |
-| Emery | Castle Dale | 1 |
-| Garfield | Panguitch | 2 |
-| Iron | Enoch | 1 |
-| Millard | Oak City  | 2 |
-| Salt Lake | Salt Lake City | 1 |
-| | Sandy | 3 |
-| Sevier | Elsinore | 1 |
-| | Richfield | 5 |
-| | Salina | 1 |
-| Utah | Provo | 1 |
-| | Salem  | 1 |
-| | Spanish Fork  | 1 |
-| Wasatch | Midway | 1 |
-| Washington | Enterprise | 1 |
-| | St George (Bndy Adj)  | 2 |
-| | Washington City (Bndy Adj) | 2 |
-| Wayne | Torrey | 1 |
-| Weber | North Ogden | 3 |
-| Weber | West Haven | 1 |
+| County     | City                       | Number of Changes |
+| ---------- | -------------------------- | ----------------- |
+| Cache      | Hyde Park                  | 1                 |
+|            | Logan                      | 1                 |
+|            | Providence                 | 2                 |
+|            | Richmond                   | 1                 |
+|            | Smithfield                 | 1                 |
+| Emery      | Castle Dale                | 1                 |
+| Garfield   | Panguitch                  | 2                 |
+| Iron       | Enoch                      | 1                 |
+| Millard    | Oak City                   | 2                 |
+| Salt Lake  | Salt Lake City             | 1                 |
+|            | Sandy                      | 3                 |
+| Sevier     | Elsinore                   | 1                 |
+|            | Richfield                  | 5                 |
+|            | Salina                     | 1                 |
+| Utah       | Provo                      | 1                 |
+|            | Salem                      | 1                 |
+|            | Spanish Fork               | 1                 |
+| Wasatch    | Midway                     | 1                 |
+| Washington | Enterprise                 | 1                 |
+|            | St George (Bndy Adj)       | 2                 |
+|            | Washington City (Bndy Adj) | 2                 |
+| Wayne      | Torrey                     | 1                 |
+| Weber      | North Ogden                | 3                 |
+| Weber      | West Haven                 | 1                 |

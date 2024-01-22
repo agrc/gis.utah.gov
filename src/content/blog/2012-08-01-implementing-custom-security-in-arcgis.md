@@ -11,6 +11,7 @@ title: Implementing custom security in ArcGIS
 categories:
   - Developer
 ---
+
 <p>Securing ArcGIS services is often an after thought. I can speak from experience when saying that unchecking the box to 'Enable Web Access' on a map service was thought to be enough smoke and mirrors to secure a service behind a login screen. After all, if a person can't see the service in the REST services directory or when connected to the server via ArcCatalog, then that service must be secure. </p>
 <p>ArcGIS Server, by design, is multitenanted in the sense that one server is handling requests for many different applications and users. All of these applications have separate requirements and user bases and this is where the default install of ArcGIS Server breaks down.</p>
 <p>By default ArcGIS Server does not enable security. Retrofitting security is a bit of a pain because you need to schedule down time; When you enable security, all of your services become unreachable. To re-allow access to them you need to add the 'Everyone' role to the allowed roles for all services. This gives the services the same functional state as before security was enabled.</p>

@@ -9,6 +9,7 @@ published: false
 categories:
   - Featured
 ---
+
 <p>The National State Geographic Information Council (NSGIC) exists to </p>
 <ul>
 <li>1) Promote statewide geospatial coordination activities in all states </li>

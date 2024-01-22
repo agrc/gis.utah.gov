@@ -19,32 +19,32 @@ A little reminder for everyone: changes to city boundaries can affect related bo
 
 Following are the changes and annexations since January 1, 2018, listed by county and city:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Cache | Hyde Park | 1 |
-| | Logan | 1 |
-| | Paradise | 1 |
-| Davis | Layton | 3 |
-| | Syracuse | 1 |
-| Emery | Castle Dale | 1 |
-| Garfield | Panguitch | 1 |
-| Iron | Enoch | 1 |
-| Juab | Mona | 1 |
-| Rich | Randolph | 1 |
-| Salt Lake | Sandy | 1 |
-| Sanpete | Sterling | 1 |
-| Summit | Coalville | 2 |
-| | Hoytsville | 1 |
-| Tooele | Grantsville | 2 |
-| Utah | American Fork | 3 |
-| | Lehi | 6 |
-| | Mapleton | 1 |
-| | Pleasant Grove | 1 |
-| | Payson | 1 |
-| | Salem | 1 |
-| | Santaquin | 1 |
-| | Spanish Fork | 2 |
-| Wasatch | Wallsburg | 1 |
-| Weber | North Ogden | 1 |
-| | South Ogden | 1 |
-| | Roy & Hooper Adjustment | 1 |
+| County    | City                    | Number of Changes |
+| --------- | ----------------------- | ----------------- |
+| Cache     | Hyde Park               | 1                 |
+|           | Logan                   | 1                 |
+|           | Paradise                | 1                 |
+| Davis     | Layton                  | 3                 |
+|           | Syracuse                | 1                 |
+| Emery     | Castle Dale             | 1                 |
+| Garfield  | Panguitch               | 1                 |
+| Iron      | Enoch                   | 1                 |
+| Juab      | Mona                    | 1                 |
+| Rich      | Randolph                | 1                 |
+| Salt Lake | Sandy                   | 1                 |
+| Sanpete   | Sterling                | 1                 |
+| Summit    | Coalville               | 2                 |
+|           | Hoytsville              | 1                 |
+| Tooele    | Grantsville             | 2                 |
+| Utah      | American Fork           | 3                 |
+|           | Lehi                    | 6                 |
+|           | Mapleton                | 1                 |
+|           | Pleasant Grove          | 1                 |
+|           | Payson                  | 1                 |
+|           | Salem                   | 1                 |
+|           | Santaquin               | 1                 |
+|           | Spanish Fork            | 2                 |
+| Wasatch   | Wallsburg               | 1                 |
+| Weber     | North Ogden             | 1                 |
+|           | South Ogden             | 1                 |
+|           | Roy & Hooper Adjustment | 1                 |

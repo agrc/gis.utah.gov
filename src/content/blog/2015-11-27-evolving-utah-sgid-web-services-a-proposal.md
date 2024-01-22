@@ -12,6 +12,7 @@ published: false
 categories:
   - Featured
 ---
+
 <figure class="caption caption--right"><a href="{% link images/pendulum_large.png %}"><img class="caption__image" src="{% link images/pendulum.png %}" alt="The pendulum swings back and forth..." title="The pendulum swings back and forth..." loading="lazy" /></a><figcaption class="caption__text">The pendulum swings back and forth...</figcaption></figure>
 
 As time passes in the GIS and IT world, sometimes it feels like there is a pendulum slowly swinging back and forth along the continuum between centralization and decentralization. Mainframes and early GIS software required centralization. PC’s and later web services, smart phones, and tablets seem to define decentralization. But then again, consider the roles of app stores, consolidated and cloud-based storage and email servers, ArcGIS Online (AGOL), etc which are not centralized in a single location, but certainly have a centralized impact and feel.
@@ -19,6 +20,7 @@ As time passes in the GIS and IT world, sometimes it feels like there is a pendu
 The topic of this post is how best to organize, and provide access to Utah’s excellent and voluminous GIS data content assets. The basic question in 2015 and forward, is how to play to the strengths of decentralization while providing 'one stop shopping’ ease of access. What follows is a little background and a proposal for a simple framework that harnesses both ends of the pendulum’s swing.
 
 #### A Little SGID Background...
+
 {: .text-left}
 
 Utah’s State Geographic Information Database (aka, 'the SGID’), was formally established in 1991 by the passage of SB21, the 'Geographic Information Systems Data Sharing and Conformity Bill,’ which remains in effect today as [63F-1-507](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html). Key provisions of the SGID statute are: a central clearinghouse and repository, the requirement of for state agencies to contribute all geographic data acquired or produced that is classified public, and a role for UGRC in setting GIS standards and requirements. [More early Utah GIS history](https://drive.google.com/file/d/1H0KaE5JqL5KSNwCK5YTlQGSlbjnEWZfj/view?usp=sharing).
@@ -34,6 +36,7 @@ A decade in, GIS web services are much more more manageable by data stewards due
 _How can the remarkable vision that founded the SGID be reconciled with the distributed world of web-powered GIS data services? Can this be accomplished with minimal overhead, while taking advantage of the GIS workforce, distributed across State agencies? We believe that it can with a centralized tracking system_.
 
 #### A Proposal: Tracking SGID Web Services
+
 {: .text-left}
 
 In the spirit of keeping it simple, the Tracking system should try to employ an online collaborative platform that is readily available to GIS staff that manage the update of State GIS data assets. Google Docs, GitHub, etc. are obvious possibilities.
@@ -58,6 +61,7 @@ GIS data managers and data users alike, want the most current data available, us
 We feel that the proposed Tracking system is a good method for ensuring that our GIS efforts have the maximum positive impact on agency operations and decision-making. But, ultimately, we'll need input and participation from GIS data managers to make this work.
 
 #### Feedback and Next Steps...
+
 {: .text-left}
 
 We've aired this idea with a few of you already and have received generally positive reactions and suggestions for refinement. After receiving your additional feedback in coming week(s), UGRC would like use this concept to begin implementing a publicly accessible 'tracking system' for GIS web service and data updates.

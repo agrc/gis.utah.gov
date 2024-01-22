@@ -11,6 +11,7 @@ tags:
   - turngps
   - gps
 ---
+
 The Utah Geospatial Resource Center (UGRC), along with the Utah Statewide Information and Analysis Center (SIAC), has been made aware of planned GPS testing that will lead to intermittent GPS disruptions throughout large portions of Utah, Idaho, and a small portion of Wyoming between September 13th - 29th, 2023. The testing will be centered at both Dugway Proving Grounds, Utah and near Mountain Home, Idaho.
 
 This interference may impact users that are reliant on the GPS network to operate survey equipment. The testing schedule is as follows:

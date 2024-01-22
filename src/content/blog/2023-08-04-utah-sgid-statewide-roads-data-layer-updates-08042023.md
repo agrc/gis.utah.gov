@@ -30,6 +30,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Weber County:** Obtained roads data on 07/18/2023. Previous update was on 07/21/2023.
 
 #### Notable Mentions
+
 - Significant updates were made to the Bike Lane fields, compliments of the Analytics Team at [Wasatch Front Regional Council (WFRC)](https://wfrc.org/).
 
 #### UDOT Route System

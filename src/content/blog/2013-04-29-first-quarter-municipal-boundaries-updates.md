@@ -8,6 +8,7 @@ published: false
 title: First quarter Municipal Boundaries updates
 categories: []
 ---
+
 Updates were made recently to the SGID10.BOUNDARIES.Municipalities feature classes that reside on the Utah SGID ArcSDE database server.
 
 The following highlights what has been updated through April 30 2013:

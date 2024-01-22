@@ -14,6 +14,7 @@ categories:
   - Featured
   - SGID Blog
 ---
+
 Last week, UGRC finished a substantial upgrade to the Utah statewide address locator (geocoding) web service. This service utilizes point and road-based address map reference data compiled into the State Geographic Information Database (SGID) from local sources, and published on a bi-monthly basis.
 
 [![Geocoding image]({% link images/Geocode-300x223.png %})](![Large]({% link images/Geocode.png %}))
@@ -37,7 +38,7 @@ The updates are perhaps most easily described by the short series of Need/Soluti
 
 **Solution**: Street addresses, like `120 S Main St`, are obviously not unique across the entire state without additional information describing place. This makes a search zone required to locate an address within the desired area. Search zones can be a city/community name or a zip code. Often, the zip code or city information associated with a street addresses is either incorrect or unknown. With the exception of one's home and workplace, zip code and city boundaries are not well known and are not visible to data gatherers out in the physical world.
 
-Address system boundaries are actually more readily understood and are the real 'parent' objects of all assigned street addresses. The new geocoding endpoint uses address system boundaries as the backend search zones and any zip code or community name within that address system can be used as a surrogate for that address system zone.  In other words, if you are looking to find an address within the Salt Lake County-wide address area, you can supply any zip code or community name within the Salt Lake County grid and the returned match location will also provide the correct zip code information. The correct city information can be found by using the Boundaries.Municipalities as parameters within the Attribute Search endpoint.
+Address system boundaries are actually more readily understood and are the real 'parent' objects of all assigned street addresses. The new geocoding endpoint uses address system boundaries as the backend search zones and any zip code or community name within that address system can be used as a surrogate for that address system zone. In other words, if you are looking to find an address within the Salt Lake County-wide address area, you can supply any zip code or community name within the Salt Lake County grid and the returned match location will also provide the correct zip code information. The correct city information can be found by using the Boundaries.Municipalities as parameters within the Attribute Search endpoint.
 
 Additionally, where County address assignment systems are used for unincorporated areas but addresses are supplied using the nearest city placename, the city address grid will be searched first and if no suitable match is found, the county address system will be searched as a secondary attempt to find a match location. This is especially useful in areas like northern Utah County where the addressing system changes on a block by block basis (for example from Lehi to Provo-based County grid and back) in some areas.
 
@@ -53,17 +54,17 @@ Where needed, the new geocoding endpoint will switch the address components in a
 
 ##### Need: Place Name Abbreviations
 
-**Solution:**  Placename abbreviations are often used and are not done so uniformly. The previous version of the endpoint required the use of a standardized placename (we were using the place names from the state highway map).
+**Solution:** Placename abbreviations are often used and are not done so uniformly. The previous version of the endpoint required the use of a standardized placename (we were using the place names from the state highway map).
 
 The new endpoint references a lookup table containing many common abbreviations like `SLC, SALT LAKE, S JORDAN, WVC, HEBER, HEBER CITY, ST GEORGE, SAINT GEORGE, ST. GEORGE, etc`.
 
 ##### Need: Support for common coordinate systems
 
-**Solution:**  The new endpoint uses an optional input parameter to set the spatial reference system of the output geographic coordinates (lat/long, utm, state plane, web mercator, etc)
+**Solution:** The new endpoint uses an optional input parameter to set the spatial reference system of the output geographic coordinates (lat/long, utm, state plane, web mercator, etc)
 
 ##### Need: Finding locations specified by highway route and milepost
 
-**Solution:**  A new, specific REST-based method has been added for finding Route and Milepost locations. It is described and testable within the Geocoding section of the API Explorer and includes the option to set the side for all sections of highway defined by UDOT as divided.
+**Solution:** A new, specific REST-based method has been added for finding Route and Milepost locations. It is described and testable within the Geocoding section of the API Explorer and includes the option to set the side for all sections of highway defined by UDOT as divided.
 
 ##### Other key upgrades
 

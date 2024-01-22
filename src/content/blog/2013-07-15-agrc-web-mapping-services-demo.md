@@ -9,14 +9,16 @@ published: false
 categories:
   - Developer
 ---
+
 <p>UGRC offers a variety of mapping-related web services that make it easy to add authoritative Utah web maps to your applications. The two most popular are our <a href="{% link data/base-map-and-imagery/index.md %}">base maps</a> and <a href="https://api.mapserv.utah.gov/#geocoding">geocoding service</a>. These web services, together with a custom map service that shows your own agency/business-specific data, can add great geographic context to your web applications.</p>
 <p>This post will show you how simple it is to leverage UGRC's services with JavaScript. We will develop a simple web app that contains a dynamic map and simple address finding controls. Please note that we've added a simple glossary of terms at the bottom of this page.</p>
 <h2 id="esri-javascript-api">ESRI JavaScript API</h2>
 <p>The first thing to do is create a simple <code>.html</code> page and import <a href="https://developers.arcgis.com/en/javascript/">ESRI's ArcGIS API for JavaScript</a>. You can load their API by a CSS file:</p>
 
 ```html
-<link rel="stylesheet" href="https://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css">
+<link rel="stylesheet" href="https://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css" />
 ```
+
 <p>and a script file: </p>
 ```html
 <script src="https://serverapi.arcgisonline.com/jsapi/arcgis/3.5/"></script>

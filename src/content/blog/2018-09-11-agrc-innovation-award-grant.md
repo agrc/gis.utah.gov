@@ -9,6 +9,7 @@ categories:
   - Featured
 tags: []
 ---
+
 The DTS Technology Advisory Board has recently awarded UGRC an innovation grant of $25,000 for the Digital Assistant Skill for Voting Project.
 
 The goal of this project is to make voting information more accessible to Utah citizens and, ultimately, increase engagement in the voting and political process. This effort aligns with the Innovation Fund’s mission to support projects that promote a “greater efficiency in a government process or a cost saving in the delivery of a government service, or both” [(2018 General Session, H.B. 395, Technology Innovation Amendments)](https://le.utah.gov/~2018/bills/static/HB0395.html).

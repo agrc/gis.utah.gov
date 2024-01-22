@@ -16,6 +16,7 @@ The [Esri web adaptor](https://enterprise.arcgis.com/en/server/latest/install/wi
 ArcGIS Server runs an http server exposed over the private port 6080. The web adaptor can then accept public requests on port 80 or 443 and choose to forward those requests to the ArcGIS Servers in your site or block the request all together. This scenario is a best practice for public facing ArcGIS Servers. This architecture secures the admin endpoints of ArcGIS Server as well as [many other benefits](https://enterprise.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm). The web adaptor is not required though.
 
 ### When to install the web adaptor
+
 {: .text-left }
 
 ![Web adaptor flow chart]({% link images/web-adaptor-flow.png %})
@@ -29,6 +30,7 @@ If your organization has _comparable request forwarding and security technology_
 As a developer, it is beneficial to mimic your deployment scenario to avoid the "Works on my machine" problem. Although, it is not always possible to match identically. I chose to use IIS's **Application Request Routing** and **URL Rewrite** to remove the dependency of the web adaptor on my development machines.
 
 ### Replacing the web adaptor
+
 {: .text-left }
 
 To replace the web adaptor on an IIS machine it is first necessary to install the [Web Platform Installer](https://www.iis.net/downloads/microsoft/web-platform-installer). Using the web platform installer, search and install the **Application Request Routing** and **URL Rewrite** modules for IIS.

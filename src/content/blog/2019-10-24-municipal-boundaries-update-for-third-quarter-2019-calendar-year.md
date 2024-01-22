@@ -27,26 +27,26 @@ Municipalities and updates can be viewed on this [Utah Municipality Modification
 
 The following are the changes and annexations since June 30, 2019, through Oct 15, 2019 listed by County and City:
 
-| County | City | Number of Changes |
-| --- | --- | --- |
-| Box Elder | Tremonton | 1 |
-| Cache | Hyde Park | 1 |
-| | Hyrum | 1 |
-| | Richmond City | 1 |
-| | Providence | 1 |
-| | Smithfield | 3 |
-| Emery | Cleveland  | 1 |
-| Juab | Nephi | 1 |
-| Salt Lake | Sandy | 1 |
-| Sevier | Monroe | 1 |
-| | Richfield | 1 |
-| Utah | American Fork | 2 |
-| | Lehi | 4 |
-| | Payson | 3 |
-| | Saratoga Springs | 2 |
-| | Adj Cedar Hills & Pleasant Grove | 1 |
-| | Adj Payson & Salem | 1 |
-| Wasatch | Heber City | 1 |
-| Washington | New Harmony | 1 |
-| Weber | Plain City | 1 |
-| | West Haven | 1 |
+| County     | City                             | Number of Changes |
+| ---------- | -------------------------------- | ----------------- |
+| Box Elder  | Tremonton                        | 1                 |
+| Cache      | Hyde Park                        | 1                 |
+|            | Hyrum                            | 1                 |
+|            | Richmond City                    | 1                 |
+|            | Providence                       | 1                 |
+|            | Smithfield                       | 3                 |
+| Emery      | Cleveland                        | 1                 |
+| Juab       | Nephi                            | 1                 |
+| Salt Lake  | Sandy                            | 1                 |
+| Sevier     | Monroe                           | 1                 |
+|            | Richfield                        | 1                 |
+| Utah       | American Fork                    | 2                 |
+|            | Lehi                             | 4                 |
+|            | Payson                           | 3                 |
+|            | Saratoga Springs                 | 2                 |
+|            | Adj Cedar Hills & Pleasant Grove | 1                 |
+|            | Adj Payson & Salem               | 1                 |
+| Wasatch    | Heber City                       | 1                 |
+| Washington | New Harmony                      | 1                 |
+| Weber      | Plain City                       | 1                 |
+|            | West Haven                       | 1                 |

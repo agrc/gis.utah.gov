@@ -68,8 +68,7 @@ That problem-solving aspect of GIS is why the field is so important. GIS helps s
 
 And I agree with Greg on this. GIS is for everyone. Everyone uses GIS in different ways, and there are spatial aspects to every part of our everyday lives. That’s part of why, Greg says, there are “unlimited opportunities in the field if you’re a curious person. Because there are so many aspects to it, and if you stay curious, you can always find some aspect to apply GIS in, and that always opens up different opportunities.”
 
-*[UGRC]: Utah Geospatial Resource Center
-*[GIS]: Geographic information systems
-*[AAA]: American Automobile Association
-*[GPS]: Global positioning system
-*[AGOL]: ArcGIS Online
+_[UGRC]: Utah Geospatial Resource Center
+_[GIS]: Geographic information systems
+_[AAA]: American Automobile Association
+_[GPS]: Global positioning system \*[AGOL]: ArcGIS Online

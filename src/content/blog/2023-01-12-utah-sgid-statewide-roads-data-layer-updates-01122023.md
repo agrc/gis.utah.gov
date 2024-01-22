@@ -27,8 +27,8 @@ New roads were added and road names and address ranges were updated for the foll
 - **Washington County:** Obtained roads data on 12/20/2022. Previous update was on 12/13/2022.
 
 #### Notable Mentions
-- A bulk update was made to the `ADDRSYS_L` and `ADDRSYS_R` fields to reflect recent enhancements in the [Address System Quadrants]({% link data/location/address-data/index.html %}#AddressSystemQuadrants) layer.
 
+- A bulk update was made to the `ADDRSYS_L` and `ADDRSYS_R` fields to reflect recent enhancements in the [Address System Quadrants]({% link data/location/address-data/index.html %}#AddressSystemQuadrants) layer.
 
 #### UDOT Route System
 

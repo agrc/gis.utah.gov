@@ -1,5 +1,5 @@
 ---
-title: "Introducing UGRCodes"
+title: 'Introducing UGRCodes'
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov
@@ -23,7 +23,7 @@ Inspired by a suggestion from one of our colleagues at the Wasatch Front Regiona
 - Provide a static field for referencing a municipality without having to worry about alternate names or representations (Saint George vs St George vs St. George)
 - Simplify joins and queries by implementing a clearer, more memorable key field
 
-> *Disclaimer:* These are not "official" codes. They are codes that we created to (hopefully) make life just a little easier in Utah. They are not blessed by the National Institute of Standards and Technology, or the U.S. Census Bureau, or the International Organization for Standardization, or the Utah Geographic Information Council, or the Utah League of Cities and Towns, or the Utah Brewer's Guild, or any other credible or dubious organization. Just the UGRC...hence the name, UGRCode.
+> _Disclaimer:_ These are not "official" codes. They are codes that we created to (hopefully) make life just a little easier in Utah. They are not blessed by the National Institute of Standards and Technology, or the U.S. Census Bureau, or the International Organization for Standardization, or the Utah Geographic Information Council, or the Utah League of Cities and Towns, or the Utah Brewer's Guild, or any other credible or dubious organization. Just the UGRC...hence the name, UGRCode.
 
 In coming up with the 3-letter codes we tried to follow a few guiding principles, which are listed below. However, in order to deconflict the codes, add clarity, or maintain continuity, we had to stray from these principles occasionally.
 

@@ -12,11 +12,13 @@ tags: []
 Developing software for digital assistants is fun and a refreshing change from typical GIS projects. Over the past few months, UGRC was lucky enough to spend some time developing equivalent skills for Google Assistant and the Amazon Alexa. Using both platforms allowed us to see their differences very clearly. We are excited to share our opinions on the strengths of each platform. To browse the code, visit [agrc/digital-assistant-skills](https://github.com/agrc/digital-assisant-skills) on GitHub and browse the `alexa-skill` and `google-skill` branches.
 
 ## Background
+
 {: .text-left }
 
 In 2018 UGRC submitted a [proposal](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/proposal.md) for funds from the State of Utah Technology Innovation Program (i.e., Innovation Fund) and was [awarded](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/award.md) funding to experiment with digital assistants. Using GIS with digital assistants was the niche to explore, and we learned a lot more along the way.
 
 ## Getting Started
+
 {: .text-left }
 
 We started with the Alexa skill since we had prior [personal](https://github.com/steveoh/alexa-utah-avy-skill) [experience](https://github.com/stdavis/utah-air-quality-alexa-skill) with the ecosystem and we had a few [promotional devices](https://developer.amazon.com/en-US/alexa/alexa-skills-kit/alexa-developer-skill-promotion) that we could test with.
@@ -26,7 +28,9 @@ Getting started with Amazon was time consuming because of the enterprise and gov
 Utah is a Google Drive Enterprise customer and has been for many years. Therefore, getting started with Google Assistant was very simple. Every State employee has a Google account. All we needed was an "enterprise" project to start development so the billing was accurate. There were no delays or major hoops to jump through.
 
 ## Development
+
 {: .text-left }
+
 ### Debug Cycle
 
 Having a quick debug test loop is paramount to developer productivity. When developing in the cloud, this is often hindered by the time taken for deployments and the lack of access to the developer tooling we are familiar with on our machines. I chose to use Python and [Flask](http://flask.pocoo.org/) for the Alexa skill to keep a fast loop. Flask let us handle Alexa requests locally, which eliminated the need to deploy to lambda, and, thus, saved us time. This was a _huge_ productivity boost as we were able to use the Python debugger and all of the debugging tools we are familiar with. And it is pleasing to take a break from callbacks and promises once in a while.
@@ -54,6 +58,7 @@ To train Alexa to understand what to do when questions are asked was a bit cumbe
 Digital assistants without screens existed for barely one year. Skills can now play videos, show images, and present content in basic HTML-like components to complement the voice responses. Alexa has a presentation language [APL](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/understand-apl.html) to design for this but is _kind of_ complicated. The Google Actions SDK for nodejs contains cards, buttons, tables, images, etc. all built in to the SDK. For Google it was simple and fun to add the visual components while developing. The simulator really helped us choose the right components by rendering the markup. It would be really nice to have a sample page of how the components draw without having to "Try it and see." This was a feature the Alexa skill never received because of the APL complexity, but the Alexa simulator is also capable of displaying the visual components.
 
 ## Testing
+
 {: .text-left }
 
 I really enjoyed the way the ASK CLI allows you to test a skill. Talking to your skill over and over again is bad™, and typing it over and over is **worse**. The ASK CLI supports playing generated [text file recordings](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/recordings/all.template) that direct the conversation in the test. The CLI outputs the Alexa responses and you can visually approve the conversation. I could not find an equivalent in the Google Assistant simulator or actions CLI. The Google nodejs SKD does have a component called `Suggestions` that displays a suggestion chip that users can click instead of typing, and although that was an improvement, it was still not as pleasant as the recordings.
@@ -63,6 +68,7 @@ I really enjoyed the way the ASK CLI allows you to test a skill. Talking to your
 The Google Assistant and Alexa simulators are very laborsaving. They give you screens to test your conversations, view the presentation markup output, and many other features. One feature that the Alexa simulator is missing is spoofing location. You **cannot** set a location for the simulator to use. Google makes this very simple and a first-class feature on the main UI. The major difference between the two assistants, in terms of locations, is that addresses are assigned to devices in Amazon. Amazon is thinking, "Where do we ship all of your packages?" while the Google Assistant is on every Android phone and their roots are in mapping and navigation, so location is "Where are you now?"
 
 ## Resources
+
 {: .text-left }
 
 ### Documentation
@@ -81,11 +87,12 @@ The Alexa slack channel is **awesome**. There are a lot of knowledgeable people 
 Alexa also runs "[office hours](https://www.twitch.tv/amazonalexa)" on twitch. If you have never used twitch, it is becoming a valuable developer relations outreach tool. _It is not only for gaming_. Alexa developers host an hour "show" where they demonstrate new features, live code samples, and answer questions submitted by watchers. If a watcher stumps the host with a question, the developers get back to the watcher later. This is as good as it gets without pair programming with an Amazon Alexa employee.
 
 ## Wrap-Up
+
 {: .text-left }
 
 Developing software for digital assistants is fun. I very much enjoyed the developer experience for Alexa, but Google's natural language processing from Dialogflow required less training. I would expect the features from each company to be eventually consistent. One may have it first, but the competition will catch up and surpass. But Google Assistant and Amazon Alexa are both great tools, and I enjoyed my experience working with them.
 
-*[AWS]: Amazon Web Services
-*[IAM]: AWS Identity and Access Management
-*[ASK CLI]: Alexa Skills Kit Command Line Interface
-*[APL]: Alexa Presentation Language
+_[AWS]: Amazon Web Services
+_[IAM]: AWS Identity and Access Management
+_[ASK CLI]: Alexa Skills Kit Command Line Interface
+_[APL]: Alexa Presentation Language

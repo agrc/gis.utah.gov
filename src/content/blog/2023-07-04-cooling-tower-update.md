@@ -15,7 +15,7 @@ tags:
 
 If you were at the 2023 Utah Geographic Information Council (UGIC) Conference in May, you **might** remember that I presented on [Generating Useful Data with Computer Vision Tools](https://agrc.github.io/Presentations/UGIC/2023/ComputerVision.pdf). But my second use case, detecting cooling towers in aerial imagery for the Utah Department of Health and Human Services (DHHS), was still a work in progress with results yet to be determined. I promised to provide an update via blog post, and now I’m (finally) fulfilling that promise.
 
-> *SIDE NOTE: Shortly after UGIC, I accepted a new position as the GIS Manager in the Salt Lake County Surveyor’s Office. Although I’m no longer at UGRC, we were able to complete the data processing and validation before my transition to Salt Lake County.*
+> _SIDE NOTE: Shortly after UGIC, I accepted a new position as the GIS Manager in the Salt Lake County Surveyor’s Office. Although I’m no longer at UGRC, we were able to complete the data processing and validation before my transition to Salt Lake County._
 
 ## Background
 

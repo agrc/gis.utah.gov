@@ -23,15 +23,16 @@ Here are seven common GIS concepts and what we can learn from them.
 ![GIS Wisdom]({% link images/gis_wisdom.png %}){: .flex .flex--center style="width: 100%; max-width: 350px"}
 
 ### 1. Versioning
+
 {: .text-left}
 
 `resolving conflicts`
 
-Look no further than the versioning workflow to learn how to successfully resolve conflicts. Honestly, GIS has this one figured out.  Here's how it works.
+Look no further than the versioning workflow to learn how to successfully resolve conflicts. Honestly, GIS has this one figured out. Here's how it works.
 
 In the versioning workflow, each editor creates and checks out their own unique version of the data. This allows for multiple editors to be editing the data at the same time. Without versioning, we would encounter frequent data locks and unintended overwrites.
 
-In the versioning workflow, an editor eventually needs to validate their version's edits and push (aka: post) them to the parent version so other editors can see and incorporate them. This is called *reconcile and post*.  It is during this process that we may encounter data conflicts.
+In the versioning workflow, an editor eventually needs to validate their version's edits and push (aka: post) them to the parent version so other editors can see and incorporate them. This is called _reconcile and post_. It is during this process that we may encounter data conflicts.
 
 When an editor reconciles, the editor fetches what's new from the parent version and resolves any differences with it. It is only after an editor has resolved the differences that the editor can then post their edits to the parent version. Once an editor posts, their version is then safely validated and checked in. At that point, everyone has an agreed-upon baseline for the data on which we can safely begin editing again.
 
@@ -40,17 +41,19 @@ It's not hard to imagine how we can incorporate some of these concepts into life
 Learn more about the [ArcGIS versioning process](https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/the-version-editing-process.htm).
 
 ### 2. Networks
+
 {: .text-left}
 
 `networking`
 
-In GIS, we build network datasets for navigation. These networks are based on connectivity. We use terms such as *edges* and *junctions*, but really we’re just establishing resource groups to which we grant connectivity to other sources.
+In GIS, we build network datasets for navigation. These networks are based on connectivity. We use terms such as _edges_ and _junctions_, but really we’re just establishing resource groups to which we grant connectivity to other sources.
 
 Likewise, building a personal network helps us determine who and what we allow ourselves to connect with. A well-thought-out network not only tells us where we can connect but also where we should not. Taking the time to think about this connectivity ensures that we build a quality social network.
 
 Learn more about [creating ArcGIS network datasets](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/creating-a-network-dataset.htm) and [how connectivity works](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/understanding-connectivity.htm).
 
 ### 3. Extract, Translate, and Load (ETL)
+
 {: .text-left}
 
 `being adaptable`
@@ -62,17 +65,19 @@ We should learn to be adaptable as well. Life is not stagnant, and the ability t
 Learn more about [creating your own spatial ETL tools](https://desktop.arcgis.com/en/arcmap/10.6/extensions/data-interoperability/spatial-etl-tools.htm).
 
 ### 4. Open Data
+
 {: .text-left}
 
 `sharing`
 
-Ideally, as GIS folks, we're all supporting or contributing to open data in some way---in other words, advancing freely available data.  This philosophy promotes transparency, innovation, and efficiency. Data gets better the more it's used, and open data gets used.
+Ideally, as GIS folks, we're all supporting or contributing to open data in some way---in other words, advancing freely available data. This philosophy promotes transparency, innovation, and efficiency. Data gets better the more it's used, and open data gets used.
 
 On the human side, the more we share, the more we learn. And when we share, we not only advance everyone's overall knowledge base, we also advance our own. Ideas grow when they are open and shared.
 
 Explore some of the [existing GIS open data](http://hub.arcgis.com/pages/open-data) or consider contributing to the [Open Street Maps project](https://www.openstreetmap.org/about).
 
 ### 5. Editing
+
 {: .text-left}
 
 `refinement`
@@ -84,6 +89,7 @@ We too can continually refine through learning and sharing and practice and perf
 Brush up on some [essential editing vocabulary](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/editing/essential-editing-vocabulary.htm).
 
 ### 6. Domains
+
 {: .text-left}
 
 `consistency`
@@ -95,6 +101,7 @@ Consistency in life, like the consistency in domains, can lead to reliable and e
 Learn more about [attribute domains](https://pro.arcgis.com/en/pro-app/help/data/geodatabases/overview/an-overview-of-attribute-domains.htm) and why they are so important.
 
 ### 7. Topology
+
 {: .text-left}
 
 `establishing principles`
@@ -121,4 +128,4 @@ One transaction/thing at a time until it's done. Mutitasking doesn't work nearly
 
 #### Web Services
 
-You don't have to build it or own it (efficiency of sharing economy... such as sharing a lawn mower with a neighbor or two). Planning to service a common set of specific needs.  `Bert Granberg`
+You don't have to build it or own it (efficiency of sharing economy... such as sharing a lawn mower with a neighbor or two). Planning to service a common set of specific needs. `Bert Granberg`

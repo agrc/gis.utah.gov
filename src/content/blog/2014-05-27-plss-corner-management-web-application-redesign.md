@@ -12,6 +12,7 @@ categories:
   - Featured
   - GPS-surveyor
 ---
+
 <p><a href="{% link images/PLSSapp.png %}"><img src="{% link images/PLSSapp-251x300.png %}" alt="" title="PLSSapp" width="251" height="300" class="inline-text-right" /></a>The <a href="https://plss.utah.gov/">PLSS Corner Management Web Application</a> has been updated with a cleaner look which is much more user friendly. The PLSS web app gives users the ability to view section corner monument record sheets for corners that have already been published throughout the state, and it provides an online form that can be submitted for newly collected data on monuments.</p>
 <p>Features of this application include:</p>
 <ul>

@@ -17,6 +17,7 @@ categories:
   - Featured
   - SGID Blog
 ---
+
 <p><a href="{% link images/NAIP2014_RGB-CIR.jpg %}"><img src="{% link images/NAIP2014_RGB-CIR.jpg %}" alt="" title="PLSSapp" width="250" height="250" class="inline-text-left" /></a></p>
 <p>The USDA's 2014 New, statewide one meter 2014 aerial photography is currently being collected as part of the <a href="https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/index" target="_blank" rel="noopener">National Agricultural Imagery Program (NAIP).</a> </p>
 <p>And, the preliminary 2014 NAIP imagery is available now for use as web services.</p>

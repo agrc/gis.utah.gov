@@ -14,11 +14,12 @@ categories:
 
 At some point in every TypeScript introduction that I have been to, the presenter says something to the effect of:
 
->Since TypeScript is a superset of JavaScript, all JavaScript is valid TypeScript. Getting started is easy. Just change the file name extensions from `.js` to `.ts` and then incrementally upgrade your code to TypeScript.
+> Since TypeScript is a superset of JavaScript, all JavaScript is valid TypeScript. Getting started is easy. Just change the file name extensions from `.js` to `.ts` and then incrementally upgrade your code to TypeScript.
 
 For Dojo/AMD-based projects, I’ve found this statement a little too good to be true. Following are the changes that I had to make (after changing the file extensions) to get the project back up and running again.
 
 ### Module Imports
+
 The first issue that I encountered was that my AMD module declaration did not work. While TypeScript can output AMD modules I couldn't find a way to author `.ts` file using AMD. So the first step was to convert all of my modules to the ES6-style that TypeScript uses. For example, this AMD module:
 
 ```js
@@ -61,22 +62,24 @@ Notice that I did not use `declare` as the import name for `dojo/_base/declare`.
 **Note:** If you are going to be exporting your TypeScript class to AMD modules then non-TypeScript consumers will need to update their code to use the `default` property of the return module parameter (e.g. `new Module.default(...);`).
 
 ### AMD Loader Plugins
+
 The next problem that I encountered was trying to use the `dojo/text!` AMD plugin. The root of the problem is that [the current version of TypeScript doesn't support globbing of AMD modules](https://github.com/dojo/typings#amd-plugin-globbing). There is an [issue](https://github.com/Microsoft/TypeScript/issues/6615) that you can follow that shows promise of a resolution to this problem in the future but for now we need a workaround.
 
 The workaround to the problem is a bit of a pain. You need to declare an [ambient declaration](https://www.typescriptlang.org/docs/handbook/modules.html) for each URL that you want to use with `dojo/text!`. For example:
 
 ```ts
 declare module 'dojo/text!./templates/ToasterItem.html' {
-    const ToasterItem: string;
-    export = ToasterItem;
+  const ToasterItem: string;
+  export = ToasterItem;
 }
 declare module 'dojo/text!./templates/Toaster.html' {
-    const Toaster: string;
-    export = Toaster
+  const Toaster: string;
+  export = Toaster;
 }
 ```
 
 ### Exporting Types in Modules
+
 For TypeScript modules that I used in other TypeScript modules I had to export the types in order to make the transpiler happy. So this meant a lot of duplicate property names and types between my `dojo/_base/declare` call and the type exports. For example:
 
 ```ts

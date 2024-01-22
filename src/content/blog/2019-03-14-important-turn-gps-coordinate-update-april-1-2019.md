@@ -26,7 +26,7 @@ If you have a project tied to any of the following stations, please recollect po
 
 IDIF, IDRU, NVCS, P016, UTBE, UTCE, UTEM, UTGK, UTKA, UTLO, UTMG, UTP2, UTRI, UTWE
 
-To view these stations on a map and get additional information,  read the following Twitter posts:
+To view these stations on a map and get additional information, read the following Twitter posts:
 
 - [https://twitter.com/UTSurveyor/status/1105909536781557760](https://twitter.com/UTSurveyor/status/1105909536781557760)
 - [https://twitter.com/UTSurveyor/status/1105910332478746624](https://twitter.com/UTSurveyor/status/1105910332478746624)
@@ -43,6 +43,5 @@ State of UGRC/DTS
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.turn %}{% endcapture %}
 {{ contact }}
 
-*[TURN GPS]: The Utah Reference Network Global Positioning System
-*[OPUS]: Online Positioning User Service
-*[CORS]: Continuously Operating Reference Stations
+_[TURN GPS]: The Utah Reference Network Global Positioning System
+_[OPUS]: Online Positioning User Service \*[CORS]: Continuously Operating Reference Stations

@@ -11,6 +11,7 @@ title: '#utmap: A Twitter Tag for Utah GIS'
 categories:
   - Featured
 ---
+
 <p><a href="https://twitter.com/#!/search/realtime/%23utmap"><img class="inline-text-left" title="view #utmap posts on Twitter" src="{% link images/twitterwhaleutmap-300x160.jpg %}" alt="" width="300" height="160" /></a>Twitter is a low commitment social media tool that can be great for professional collaboration and sharing. It allows users to quickly search and scan recent tweets (posts) for relevant information. And, the 140 character limit of Twitter's 'microblog' format is just a starting point. Tweets can include URL links (usually shortened using a URL shortener) that access additional information including pictures, blog posts, code samples, Google and other online documents, map locations, interactive maps, job postings, etc.</p>
 <p>The twitter web site and mobile apps, as well as popular third party twitter clients (<a href="https://hootsuite.com">hootsuite</a>, <a href="https://tweetdeck.com">tweetdeck</a>, etc) make it easy to view posts by specific individuals, groups, or keywords.</p>
 <p>Within tweets, hash tags (anything proceeded directly by the '#' character) allow users to turn portions of their 140 character tweets into keywords or to otherwise add emphasis (#justsayin).</p>

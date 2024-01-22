@@ -12,7 +12,7 @@ categories:
   - SGID Blog
 ---
 
-As we head into the last third of this year, we find two new towns in Utah. In Wasatch County we now have **Interlaken Town** just north of Midway in the Heber Valley. And over in Daggett County, **Dutch John**  is now an incorporated city. Welcome to them both.
+As we head into the last third of this year, we find two new towns in Utah. In Wasatch County we now have **Interlaken Town** just north of Midway in the Heber Valley. And over in Daggett County, **Dutch John** is now an incorporated city. Welcome to them both.
 
 The following are other changes since April, listed by county:
 

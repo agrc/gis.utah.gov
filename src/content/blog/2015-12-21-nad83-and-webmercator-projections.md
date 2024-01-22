@@ -14,6 +14,7 @@ title: The Earth is Not Round! Utah, NAD83 and Web Mercator Projections
 categories:
   - Featured
 ---
+
 GIS users working on statewide projects in Utah need to know the specifics of three primary coordinate systems: Geographic (latitude/longitude), UTM NAD83, and WebMercator.
 
 <a href="{% link images/projections.png %}"><img src="{% link images/projections-300x288.png %}" alt="" title="projections" style="padding:1px;border:thin solid black;" class="inline-text-left" loading="lazy" /></a>
@@ -22,7 +23,7 @@ GIS users working on statewide projects in Utah need to know the specifics of th
 
 **UTM NAD83** is a projected coordinate system that represents physical locations abstracted to a flat, cartesian coordinate system. The UTM NAD83 projection uses the GRS80 ellipsoid and a center-of-the-earth anchor point as its datum, both of which are slightly different than the WGS datum. The advantage of the NAD83 datum is more accuracy for modeling and analyzing locational data in North America. As almost all of Utah fits conveniently within one UTM NAD83 zone (12 North), it’s the best projection system for measuring distance and area when working with statewide GIS data.
 
-**Web Mercator** is the projected coordinate system of Utah's latest statewide high-res imagery, licensed from Google.  It's also the native display coordinate system for Google Earth, Bing maps, ArcGIS Online, and UGRC's new cloud-hosted web mercator base maps. Web mercator is a recent addition to projected coordinate systems, introduced specifically to support worldwide map applications on the web. In short, it uses the same WGS84 datum as the GPS system. It attempts to preserve the shape of features in the areas where people are most interested, while making the behind the scenes coordinate conversion math run faster. The latter is important for thin clients like browsers and mobile apps.
+**Web Mercator** is the projected coordinate system of Utah's latest statewide high-res imagery, licensed from Google. It's also the native display coordinate system for Google Earth, Bing maps, ArcGIS Online, and UGRC's new cloud-hosted web mercator base maps. Web mercator is a recent addition to projected coordinate systems, introduced specifically to support worldwide map applications on the web. In short, it uses the same WGS84 datum as the GPS system. It attempts to preserve the shape of features in the areas where people are most interested, while making the behind the scenes coordinate conversion math run faster. The latter is important for thin clients like browsers and mobile apps.
 
 So here are a few good rules of thumb that are worth reviewing:
 

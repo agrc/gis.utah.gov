@@ -17,19 +17,19 @@ We are halfway through 2023 and the annexations are slowing down. Hopefully that
 Be sure to check out all the changes that have been made and to make sure your boundaries are where they should be. View them on the [Utah Municipality Modifications map](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63). All recent annexation documents can be viewed on the [Utah Lt. Governor Municipal Certifications](https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/) website.
 
 The following table shows the changes and annexations (listed by county and city) since March 31, 2023:
- 
-| County | City | Number of Changes |  
-| --- | --- | --- |
-| Box Elder | Willard | 1 |
-| Cache | Millville | 2 |
-| | Providence | 1 |
-| Davis | West Point | 1 |
-| Iron | Parowan | 1 |
-| Salt Lake | South Jordan | 1 |
-| Sanpete | Ephraim | 1 |
-| Sevier | Richfield | 2 |
-| Utah | American Fork | 1 |
-| | Provo | 1 |
-| Wasatch | Heber City | 1 |
-| Weber | North Ogden | 3 |
-| | Pleasant View | 1 |
+
+| County    | City          | Number of Changes |
+| --------- | ------------- | ----------------- |
+| Box Elder | Willard       | 1                 |
+| Cache     | Millville     | 2                 |
+|           | Providence    | 1                 |
+| Davis     | West Point    | 1                 |
+| Iron      | Parowan       | 1                 |
+| Salt Lake | South Jordan  | 1                 |
+| Sanpete   | Ephraim       | 1                 |
+| Sevier    | Richfield     | 2                 |
+| Utah      | American Fork | 1                 |
+|           | Provo         | 1                 |
+| Wasatch   | Heber City    | 1                 |
+| Weber     | North Ogden   | 3                 |
+|           | Pleasant View | 1                 |

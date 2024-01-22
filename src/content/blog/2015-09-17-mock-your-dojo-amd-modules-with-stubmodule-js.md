@@ -18,17 +18,17 @@ You might think that it would be as easy as adding a [map config to the Dojo loa
 
 Using this tool is fairly straight forward. stub-module.js returns a single method that accepts two parameters. The first is the module identifier (MID) of the module that you want to test. The second is an object with keys that are MID&#39;s of the dependencies that you want to mock and values that are the mocked returned values. The method returns a [promise](https://dojotoolkit.org/reference-guide/1.10/dojo/promise.html) that resolves with the stubbed module. For example (using [Jasmine](https://jasmine.github.io/)):
 
-``` js
+```js
 it('this is a demo', function (done) {
-    var stub = jasmine.createSpy('request');
-    stubModule('test/Module', {'dojo/request': stub}).then(function (StubbedModule) {
-        var testObject = new StubbedModule();
-        testObject.makeRequest();
+  var stub = jasmine.createSpy('request');
+  stubModule('test/Module', { 'dojo/request': stub }).then(function (StubbedModule) {
+    var testObject = new StubbedModule();
+    testObject.makeRequest();
 
-        expect(stub).toHaveBeenCalledWith('some/url');
+    expect(stub).toHaveBeenCalledWith('some/url');
 
-        done();
-    });
+    done();
+  });
 });
 ```
 

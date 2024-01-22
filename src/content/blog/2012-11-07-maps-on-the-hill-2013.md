@@ -9,6 +9,7 @@ title: Maps on the Hill 2013
 categories:
   - Featured
 ---
+
 <p>The 2013 Maps on the Hill event will be held on<strong> January 28, 2013</strong> from 11:00am - 1:30pm at the State Capitol Building.</p>
 <p>Maps are used in government, business, and education for a wide variety of applications. The Maps on the Hill event gives mapping professionals and students an opportunity to share their latest work with Utah's elected officials and the public.</p>
 <p>Who should submit:</p>

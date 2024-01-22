@@ -10,11 +10,12 @@ title: 'Now You Know: About the gis.utah.gov v6.0 Refresh'
 categories:
   - Featured
 ---
+
 Four years is a long time for anything, and that certainly applies to website releases. For a number of reasons, gis.utah.gov, has been overdue for a refresh.
 
 In releasing the new, updated gis.utah.gov, we feel we have taken logical, evolutionary steps to improve the site and to better reflect the leading trends in GIS and IT. What follows is an overview of the changes we made and then a preview of some intended next steps.
 
-The primary driver behind this release was to solve some nagging issues associated with operating a locally-hosted Content Management System (CMS). Our new GitHub Pages ([GH Pages](https://pages.github.com/)) architecture releases us from the  ‘upkeep’ that included care and feeding for WordPress, its associated extensions, a relational database (mySQL), dynamic programming interface (PHP), a server OS, and operation and hosting expenses for a virtual machine. GitHub’s **free** hosting policy for openly-sourced content means we are saving real resources that can be applied to other priorities.
+The primary driver behind this release was to solve some nagging issues associated with operating a locally-hosted Content Management System (CMS). Our new GitHub Pages ([GH Pages](https://pages.github.com/)) architecture releases us from the ‘upkeep’ that included care and feeding for WordPress, its associated extensions, a relational database (mySQL), dynamic programming interface (PHP), a server OS, and operation and hosting expenses for a virtual machine. GitHub’s **free** hosting policy for openly-sourced content means we are saving real resources that can be applied to other priorities.
 
 [![How Git Works]({% link images/howgitworkssmall.png %})]({% link images/howgitworks.png %})
 {: .inline-text-right}

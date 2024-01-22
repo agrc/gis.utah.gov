@@ -38,16 +38,18 @@ ception: TypeError: UglifyJS.Compressor is not a function TypeError: UglifyJS.Co
 The trouble seemed to be related to using an older version of UglifyJS. However, upgrading it to work with the dated DBS was not working. Fortunately for me, I have smart co-workers. Among them is Mr. [Steve Gourley](https://twitter.com/steve_ugrc) who had the great idea of doing minification outside of the DBS after it has done all of the concatenation, interning of strings, etc. This allows us to have more fine-tuned control over which files actually get minified and more flexibility with upgrading independent of Dojo. Applying this idea to my projects that had the spontaneously failing builds solved the issue.
 
 The first step is to disable minification in the DBS. This is usually done via the build profile:
+
 ```js
 var profile = {
-    optimize: false,
-    layerOptimize: false
+  optimize: false,
+  layerOptimize: false,
 };
 ```
 
 You can remove the `stripConsole` property also if it's in your profile. UglifyJS will take care of all of this in a subsequent build step.
 
 The next step is to install the [latest version of UglifyJS](https://www.npmjs.com/package/uglify-js) via:
+
 ```
 npm install uglify-js grunt-contrib-uglify --save-dev
 ```
@@ -88,6 +90,7 @@ uglify: {
 You'll notice that I have two subtasks set up. `prod` minifies everything except for the problematic Proj4 files. `stage` only minifies the layer file. This makes staging builds so much faster to build and consequently a lot easier to work out build issues.
 
 The final step is to add the new task to your build tasks:
+
 ```js
 grunt registerTask('build-stage', [
     'clean:build',

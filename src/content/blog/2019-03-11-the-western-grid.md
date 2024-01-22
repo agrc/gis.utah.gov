@@ -25,6 +25,7 @@ Pan around a map and you'll see the confines of the grid just about everywhere. 
 It turns out this gridiron pattern is connected to a 17th-century mathematician, the Treaty of Paris, and Thomas Jefferson. Yup, there's definitely a connection here, which also helps explain the West's notoriously wide streets and big city blocks, as well as our nation’s entangled dependence on feet, yards, and miles (i.e., the United States customary units). Read on and we will explore the Western Grid more.
 
 ## The Survey Chain
+
 {: .text-left}
 
 <figure class="caption caption--right">
@@ -39,6 +40,7 @@ The Gunter Chain, which was used for surveying, was quickly adopted as a statuto
 Because of its ease in calculations, the Gunter Chain was quickly adopted and became widely used for surveying and land management records. In fact, it was so popular that it made its way across the Atlantic with the early colonists. The acre, noted in the Articles of Confederation (1781), was declared the standard unit of land measurement for the new nation. The Gunter Chain made a huge impact when it was developed, and we can still see its lasting effect as we begin to look closer at the western United States grid.
 
 ## Standard Units of Measure (The Acre)
+
 {: .text-left}
 
 <figure class="caption caption--right">
@@ -51,9 +53,10 @@ Okay, let’s jump ahead to 1783 and the Treaty of Paris. At this point in Ameri
 The early American Congress further solidified the acre as the official unit of land measurement with the Land Ordinance of 1785 and the resulting Northwest Ordinance of 1787. These ordinances provided the framework for public lands and the procedures for organizing territorial lands west of the Appalachian Mountains.
 
 ## Public Land Survey System
+
 {: .text-left}
 
-I know, I know… that was probably more history than you were looking for, but really, that’s the annotated crash course for understanding the basis of the present-day Public Land Survey System (PLSS) (Fig 4). This system was originally proposed by Thomas Jefferson and was mandated by Congress to oversee the cadastral surveys of the public lands. Essentially, it was set up to facilitate the transfer of federal lands to private citizens. The Bureau of Land Management (BLM) is the official record keeper of the surveys. Over the past 200 years, almost 1.5 billion acres have been surveyed into townships (and ranges) and sections. These surveys were conducted primarily west of the original thirteen colonies and north of Texas (Texas has Spanish roots and Spanish land grants).  Presently, areas of Alaska are still being surveyed.
+I know, I know… that was probably more history than you were looking for, but really, that’s the annotated crash course for understanding the basis of the present-day Public Land Survey System (PLSS) (Fig 4). This system was originally proposed by Thomas Jefferson and was mandated by Congress to oversee the cadastral surveys of the public lands. Essentially, it was set up to facilitate the transfer of federal lands to private citizens. The Bureau of Land Management (BLM) is the official record keeper of the surveys. Over the past 200 years, almost 1.5 billion acres have been surveyed into townships (and ranges) and sections. These surveys were conducted primarily west of the original thirteen colonies and north of Texas (Texas has Spanish roots and Spanish land grants). Presently, areas of Alaska are still being surveyed.
 
 <figure class="caption caption--left caption--flow">
   <a href="{% link images/principal_meridians.png %}" title="click to see the full sized image">
@@ -66,7 +69,7 @@ I know, I know… that was probably more history than you were looking for, but 
   <figcaption class="caption__text" markdown="span">Fig 5: Salt Lake Meridian[^5]</figcaption>
 </figure>
 
-As with any measuring system, you need a starting point. Within each PLSS system, this is where a defined meridian line (north-south) meets a defined base line (east-west). Most of Utah is within the Salt Lake Meridian PLSS system for which the base and meridian intersection point is at Main Street and South Temple in downtown SLC (Fig 5). A small portion of NE Utah is governed by the [Uintah Special Meridian](https://en.wikipedia.org/wiki/Uintah_meridian)  which is its own separate PLSS system whose base and meridian lines intersect in the city of Roosevelt. All official surveys in Utah have an underlying reference to one of these two points. In other words, every township and section in Utah is numbered off of these locations. Other PLSS states have their own unique meridians (Fig 4).
+As with any measuring system, you need a starting point. Within each PLSS system, this is where a defined meridian line (north-south) meets a defined base line (east-west). Most of Utah is within the Salt Lake Meridian PLSS system for which the base and meridian intersection point is at Main Street and South Temple in downtown SLC (Fig 5). A small portion of NE Utah is governed by the [Uintah Special Meridian](https://en.wikipedia.org/wiki/Uintah_meridian) which is its own separate PLSS system whose base and meridian lines intersect in the city of Roosevelt. All official surveys in Utah have an underlying reference to one of these two points. In other words, every township and section in Utah is numbered off of these locations. Other PLSS states have their own unique meridians (Fig 4).
 
 Townships are made up of thirty-six square miles, with each square mile known as a section. Sections are eventually subdivided down to an acre by way of half sections, quarter sections, quarter-quarter sections, etc. (Fig 6). An acre, again, is simply 10 square chains, and there are 640 acres in a section (a square-mile) or 40 acres in a quarter-quarter section. Hence the phrase, “40 acres and mule” is all you needed to be self-sufficient.
 
@@ -82,6 +85,7 @@ These early surveyors typically placed a permanent monument at section and quart
 It is precisely this survey pattern that explains why the western United States is so orthogonal. Although the grid is not unique to the West, it's certainly at the core of all land sales and, as a result, it influences many development patterns. Let’s look at a few examples.
 
 ## The Western Grid
+
 {: .text-left}
 
 <figure class="caption caption--left caption--flow">
@@ -111,6 +115,7 @@ Large city blocks are a common theme in the West. They typically vary between 19
 If you have ever tried to cross the street in downtown Salt Lake City, you know our intersections are extremely wide. You’ll see the Gunter Chain’s lasting mark at these intersections as well. Looking at Portland (Fig 9) and Salt Lake City (Fig 9) again, you’ll notice two variations of the chain. Salt Lake City (Fig 9) has large intersections that are based on two chain lengths (132 feet), whereas in Portland and San Francisco intersections measure half a chain (33’). In Phoenix (Fig 9), you’ll notice intersections measure one full chain length (66 feet).
 
 ## Section Lines and Addressing
+
 {: .text-left}
 
 Another notable mention are “section line roads.” These roads are laid out in a one-mile by one-mile grid pattern that follows the section lines. Figure 10 shows a good example of this southwest of Boise, Idaho. This pattern is also very popular in Phoenix and Las Vegas.

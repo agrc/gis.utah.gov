@@ -10,6 +10,7 @@ published: false
 categories:
   - Featured
 ---
+
 <p>Hypertext Transfer Protocol Secure (https) combines the Hypertext Transfer Protocol (HTTP) with the Secure Socket Layer (SSL)/Transport Layer Security (TLS) protocol. TLS is an authentication and security protocol widely implemented in browsers and Web servers.  </p>
 <p>In a nutshell, it allows your browser to make a secure connection to a trusted server, with security certificate, to enable 2 way encrypted data transfer between the providing server and the client.</p>
 <p>Https is quickly gaining popularity for website and web service URLs for two reasons. First, several search engines have announced that their page ranking algorithms will raise the score of https-based sites. Second, the performance of https traffic, relative to vanilla http, has greatly improved and can be faster even though more work is being done on both sides.</p>

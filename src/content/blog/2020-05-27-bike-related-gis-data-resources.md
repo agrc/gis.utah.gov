@@ -23,7 +23,7 @@ The goal of the regional, and eventually statewide, bike datasets assembled by U
 So, if you’ve got an interest or use for GIS bike data, here are some of the latest developments that you are invited to explore. Keep in mind that we are hoping that these datasets will continue to improve and stay current, so please consider how you might share feedback or data updates or otherwise help improve these processes and data products.
 
 - **Existing On-street Bike Lanes and Near-street Bike Paths.** Thanks to work being done by UDOT Traffic and Safety and UDOT Planning staff, the existing bike facility attributes stored within [Utah’s statewide road centerline GIS dataset]({% link data/transportation/roads-system/index.html %}) have been revised to the most up-to-date 2018 aerial photography. Initial work for the Wasatch Front metro area (i.e., Salt Lake, Utah, Davis, Weber, and southern Box Elder counties) has been completed and is now available in the May 2020 road centerline update available from UGRC. Attributes are stored in the `Bike_L` and `Bike_R` fields using a [coded-value domain](https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=2110432100). UDOT plans to complete the photo revision of road-based bike facilities for other areas of the state in upcoming months.
-[![Existing Bike Features]({% link images/20200527_ExistingBikeFeatures.jpg %} "click to enlarge")]({% link images/Existing Bike Features Example Big.png %}){:.inline-text-right .outline }
+  [![Existing Bike Features]({% link images/20200527_ExistingBikeFeatures.jpg %} "click to enlarge")]({% link images/Existing Bike Features Example Big.png %}){:.inline-text-right .outline }
 - **Existing and Planned Off-street Bike Paths.** [Utah’s Recreation.Trails dataset]({% link data/recreation/trails/index.html %}), hosted by UGRC, contains known off-street bike paths like the Jordan River Parkway. Paved trails can be queried from this dataset by using this SQL expression: `[CARTOCODE] = 3 and not [STATUS] = “PROPOSED”`
 - **Planned Bike Lanes and Pathways for the WFRC Area.** WFRC staff have worked to integrate local and regional bike facility plans into the UGRC-hosted road centerline and trails datasets for (Salt Lake, Davis, Weber, and southern Box Elder counties). In the road centerline dataset, the planned facilities are stored in the `BIKE_PLN_L` and `BIKE_PLN_R` fields using the same coded-value domain noted above. WFRC has coordinated with UGRC to add planned off-street pathways for the same area. They can be found by querying Recreation.Trails with this SQL expression: `[CARTOCODE] = 3 and [STATUS] = “PROPOSED”`
 - **WFRC-area Bike Plan Areas.** WFRC has created a polygon dataset with links to recent local completed and in-progress bike plans. This dataset is featured in an interactive map on [BikeUtah’s webpage](https://www.bikeutah.org/wbp) and has links to local plan documents.
@@ -36,9 +36,9 @@ Other bike-related information resources that are _coming soon_ (i.e., over the 
 - **Network Quality.** Metrics for nearby bike network quality implemented by UDOT and UGRC will also soon be available for the Wasatch Front metro area, Bike Data Resources Webmap. This integrated web map application allows all of the above datasets to be explored and downloaded for the Wasatch Front metro area.
 - **Observed Bike Counts.** Observed bike counts are from fixed and mobile bike counters being deployed in urban areas. This is more "aspirational" than "project" at the moment, so expect the timeframe to be a bit longer.
 
-*[UDOT]: Utah Department of Transportation
-*[UGRC]: Utah Geospatial Resource Center
-*[WFRC]: Wasatch Front Regional Council
-*[MAG]: Mountainland Association of Governments
-*[UCATS]: Utah Collaborative Active Transportation Study
-*[FHWA]: Federal Highway Administration
+_[UDOT]: Utah Department of Transportation
+_[UGRC]: Utah Geospatial Resource Center
+_[WFRC]: Wasatch Front Regional Council
+_[MAG]: Mountainland Association of Governments
+_[UCATS]: Utah Collaborative Active Transportation Study
+_[FHWA]: Federal Highway Administration

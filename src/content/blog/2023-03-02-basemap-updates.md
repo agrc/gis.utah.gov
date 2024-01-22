@@ -1,5 +1,5 @@
 ---
-title: "Base maps: Out With the Old, In With the New"
+title: 'Base maps: Out With the Old, In With the New'
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
@@ -31,6 +31,7 @@ The version 2 Terrain base map tiles are set to be published in the coming weeks
 Be on the lookout this spring for more base map updates from us, including vector tile services.
 
 #### UPDATE 3/22/2023
+
 {: .text-left }
 
 The new and improved Terrain base map has been published. It is suggested that users clear their local cache. Please look at the [Pro/ArcMap User Considerations]({% link discover/resources/index.md %}#proarcmap-user-considerations) for instructions on how to accomplish this.

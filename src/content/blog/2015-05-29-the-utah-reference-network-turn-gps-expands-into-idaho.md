@@ -18,6 +18,6 @@ Since 2005, UGRC has administered the Statewide Global Positioning Reference Net
 
 <a href="http://turngps.utah.gov/Map/SensorMap.aspx"><img class="inline-text-right" style="border: 1px solid black;" src="{% link images/GPSNetwork_March2014-291x300.png %}" alt="ned" loading="lazy" /></a>
 
-The network is used by over 400 subscribers. Legislative and local government support keeps the yearly subscription rate to only $600. These low subscription fees result in more usage, and more accurate locations for surveying monuments, public lands, and private property.  The network is used for a range of precision GPS applications including surveying, engineering, construction, and GIS data collection.
+The network is used by over 400 subscribers. Legislative and local government support keeps the yearly subscription rate to only $600. These low subscription fees result in more usage, and more accurate locations for surveying monuments, public lands, and private property. The network is used for a range of precision GPS applications including surveying, engineering, construction, and GIS data collection.
 
 To learn more about the Network and to subscribe, visit the [GPS Network webpage]({% link data/cadastre/turn-gps/index.md %}).

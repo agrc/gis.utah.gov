@@ -16,9 +16,9 @@ GIS web services are relied upon by increasingly. Here are two important service
 
 **DNR’s Public GIS Datasets Get New https:// URLs**
 
-As part of the State of Utah’s move toward GIS best practices, including greater data security, DNR is moving their public, GIS data servers from HTTP to HTTPS protocol.  This action will, unfortunately, break data links within .mxds, other desktop GIS software, web maps, and custom applications that reference DNR data currently found at http://maps.dnr.utah.gov/arcgis/rest/services.
+As part of the State of Utah’s move toward GIS best practices, including greater data security, DNR is moving their public, GIS data servers from HTTP to HTTPS protocol. This action will, unfortunately, break data links within .mxds, other desktop GIS software, web maps, and custom applications that reference DNR data currently found at http://maps.dnr.utah.gov/arcgis/rest/services.
 
-DNR will make this change on January 4th at 5pm.  If you use/incorporate DNR web services, it may be wise to remove the layer(s) from your projects/apps and add the services back in, using the URLs after Jan. 4th from its new directory address at https://maps.dnr.utah.gov/arcgis/rest/services.
+DNR will make this change on January 4th at 5pm. If you use/incorporate DNR web services, it may be wise to remove the layer(s) from your projects/apps and add the services back in, using the URLs after Jan. 4th from its new directory address at https://maps.dnr.utah.gov/arcgis/rest/services.
 
 **UGRC plans January 31 shutdown for NAD83 base maps.**
 
@@ -28,7 +28,7 @@ We've set a target date/time of January 31 at 6:00pm MST to shut down the existi
 
 These services were first built almost ten years ago, before web mercator became the defacto projection for online tiled map services. It's sad to see them replaced but it's good to coalesce around best practices and reduce duplicate maintenance and storage.
 
-Also, UGRC is now creating accounts for the discover.agrc.utah.gov server for those not previously eligible to access the **[licensed Google imagery]({% link discover/license/index.md %})**. These new 'public' accounts allow access to statewide NAIP aerial photography and color infrared layers, older black and white aerials, and all of UGRC's custom base map tile services. ***If you already have a Discover account, you do not need to create another account to access the base maps.*** To obtain access to the non-licensed content on Discover please fill out the **[Discover Server Access](https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform)** form.
+Also, UGRC is now creating accounts for the discover.agrc.utah.gov server for those not previously eligible to access the **[licensed Google imagery]({% link discover/license/index.md %})**. These new 'public' accounts allow access to statewide NAIP aerial photography and color infrared layers, older black and white aerials, and all of UGRC's custom base map tile services. **_If you already have a Discover account, you do not need to create another account to access the base maps._** To obtain access to the non-licensed content on Discover please fill out the **[Discover Server Access](https://docs.google.com/a/utah.gov/forms/d/e/1FAIpQLScvASb37-R9WeFHNUsbIYEcVzQ_ceT__G4PZUaCx_xZxTuEpA/viewform)** form.
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager %}{% endcapture %}
 {{ contact }}
