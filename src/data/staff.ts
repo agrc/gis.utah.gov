@@ -22,7 +22,7 @@ export const staff = [
     phone: '801-433-8422',
     email: 'zbeck@utah.gov',
     twitter: '@ZachAGRC',
-    tags: ['cartography', 'address points', 'base maps', 'configurable apps', 'data management'],
+    tags: ['cartography', 'address points', 'base maps', 'configurable apps', 'python', 'SGID'],
   },
   {
     name: 'Greg Bunce',
