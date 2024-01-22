@@ -1,5 +1,4 @@
 ---
-layout: post
 status: publish
 published: false
 title: '2018 Utah LiDAR Acquisition - Completed'
