@@ -22,6 +22,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
       <Image
         src={images['/src/images/pillar-api/api-logo.svg']()}
         slot="image"
+        loading="eager"
         alt="wavy gravy api logo"
         class="w-full rounded-2xl dark:brightness-200 dark:grayscale"
       />
