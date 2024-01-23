@@ -1,0 +1,21 @@
+---
+interface Props {
+  href: string;
+  code: string;
+  title: string;
+}
+const { href, code, title } = Astro.props;
+---
+
+<div class="rounded-lg border border-white/20 bg-primary px-6 py-3 text-zinc-50">
+  <div class="flex">
+    <div class="grow">
+      <h4 class="uppercase text-zinc-50">{title}</h4>
+      <p class="uppercase dark:text-accent">{code}</p>
+    </div>
+    <a href={href} class="ml-2 text-2xl">&#x2192;</a>
+  </div>
+  <div class="text-sm">
+    <slot />
+  </div>
+</div>
