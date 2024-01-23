@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Pillar.astro';
 import Section from '../../components/page/Section.astro';
+import Link from '../../components/Link.astro';
 import CardWithPopularLink from '../../components/page/CardWithPopularLink.astro';
 import CardWithSideImage from '../../components/page/CardWithSideImage.astro';
 import CardWithSmallLink from '../../components/page/CardWithSmallLink.astro';
@@ -83,8 +84,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
           />
           The SGID ArcGIS Hub site is a single destination for GIS resources hosted in multiple agencies. Each item in the
           Hub contains data download links along with web service links for consuming the datasets in webmaps and other applications.
-          We share all our curated datasets through the site and encourage other agencies and organizations to <a
-            href="{% link sharing/index.md %}">share</a
+          We share all our curated datasets through the site and encourage other agencies and organizations to <Link
+            href="{% link sharing/index.md %}">share</Link
           > their datasets here as well to help spread GIS data to the widest possible audience.
         </CardWithTopImage>
       </GridForPillars>
@@ -152,7 +153,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
           management.
         </CardWithSmallLink>
         <CardWithSmallLink title="DEQ Data Portal" href="https://utahdeq.maps.arcgis.com/home/index.html">
-          Explore spatial data relevant to safeguarding and improving Utah’s air, land and water through balanced regulation.
+          Explore spatial data relevant to safeguarding and improving Utah’s air, land and water through balanced
+          regulation.
         </CardWithSmallLink>
       </GridForYouMightLike>
     </Section>

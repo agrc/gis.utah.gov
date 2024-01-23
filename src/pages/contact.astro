@@ -4,6 +4,7 @@ import type { ImageMetadata } from 'astro';
 import Layout from '../layouts/FullWidth.astro';
 import Section from '../components/page/Section.astro';
 import StaffMember from '../components/page/StaffMember.astro';
+import Link from '../components/Link.astro';
 
 import { Image } from 'astro:assets';
 
@@ -53,7 +54,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
     <p>
       Twitter is a low commitment social media tool that can be great for professional collaboration and sharing. It
       allows users to quickly search and scan recent posts for relevant information. UGRC posts to Twitter using the
-      handle <a href="https://twitter.com/MapUtah">@MapUtah</a>. We post about achievements, GIS events, SGID
+      handle <Link href="https://twitter.com/MapUtah">@MapUtah</Link>. We post about achievements, GIS events, SGID
       modifications, and service outages as they happen. It is the best way to say in touch with UGRC.
     </p>
     <p>
@@ -81,7 +82,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
     />
     <p>
       UGRC combines all of the latest GIS news into a quarterly newsletter. If you work in the GIS industry, use our
-      services, are are generally interseted in GIS and mapping we encourage you to sign up
+      services, are are generally interested in GIS and mapping we encourage you to sign up
     </p>
   </Section>
 </Layout>
