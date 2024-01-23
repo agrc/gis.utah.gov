@@ -1,0 +1,159 @@
+---
+import Layout from '../layouts/FullWidth.astro';
+import Section from '../components/page/Section.astro';
+import CardForStatute from '../components/page/CardForStatute.astro';
+import CardWithDate from '../components/page/CardWithDate.astro';
+import CardWithPopularLink from '../components/page/CardWithPopularLink.astro';
+import CardWithSideImage from '../components/page/CardWithSideImage.astro';
+import CardWithSmallLink from '../components/page/CardWithSmallLink.astro';
+import CardWithTopImage from '../components/page/CardWithTopImage.astro';
+import GridForLatestNews from '../components/page/GridForLatestNews.astro';
+import GridForMoreResources from '../components/page/GridForMoreResources.astro';
+import GridForPillars from '../components/page/GridForPillars.astro';
+import GridForPopularResources from '../components/page/GridForPopularResources.astro';
+import GridForYouMightLike from '../components/page/GridForYouMightLike.astro';
+import ButtonLink from '../components/page/ButtonLink.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+
+import { Image } from 'astro:assets';
+import image from '../images/ugrc.svg';
+---
+
+<Layout title="Layout title">
+  <Section
+    primary
+    stripe
+    title="Section with primary background color and image"
+    actionText="Action text"
+    actionUrl="/design-system"
+  >
+    <Image src={image} alt="UGRC logo" slot="image" />
+
+    <p>Content with a <a href="/design-system">link</a>.</p>
+
+    <h2>Button Link</h2>
+    <ButtonLink href="/design-system">Button link</ButtonLink>
+
+    <h2>Card for Statute</h2>
+    <CardForStatute href="/design-system" code="code" title="Code title">
+      <p>Card for Statute Content with a <a href="/design-system">link</a>.</p>
+    </CardForStatute>
+
+    <h2>Card with Date</h2>
+    <CardWithDate title="Title" description="A short description" slug="/design-system" date={new Date()} />
+
+    <h2>Card with Popular Link</h2>
+    <CardWithPopularLink title="Title" href="/design-system" />
+
+    <h2>Card with Side Image</h2>
+    <CardWithSideImage title="Title" actionText="Action text" actionUrl="/design-system">
+      <Image src={image} alt="UGRC logo" slot="image" />
+      <p>Card with Side Image Content with a <a href="/design-system">link</a>.</p>
+    </CardWithSideImage>
+
+    <h2>Card with Small Link</h2>
+    <CardWithSmallLink title="Title" href="/design-system">
+      Card with small link content cannot contain links.
+    </CardWithSmallLink>
+
+    <h2>Card with Top Image</h2>
+    <CardWithTopImage title="Title" actionText="Action text" actionUrl="/design-system">
+      <Image
+        src={image}
+        alt="UGRC logo"
+        slot="image"
+        class="h-64 w-full rounded-t-2xl bg-primary px-2 dark:bg-zinc-900/70"
+      />
+      A text area that can contain main words as well as <a href="/design-system">links</a>.
+    </CardWithTopImage>
+  </Section>
+
+  <Section title="Section with no attributes and image" actionText="Action text" actionUrl="/design-system">
+    <Image src={image} alt="UGRC logo" slot="image" />
+
+    <p>Content with a <a href="/design-system">link</a>.</p>
+
+    <h2>Button Link</h2>
+    <ButtonLink href="/design-system">Button link</ButtonLink>
+
+    <h2>Card for Statute</h2>
+    <CardForStatute href="/design-system" code="code" title="Code title">
+      <p>Card for Statute Content with a <a href="/design-system">link</a>.</p>
+    </CardForStatute>
+
+    <h2>Card with Date</h2>
+    <CardWithDate title="Title" description="A short description" slug="/design-system" date={new Date()} />
+
+    <h2>Card with Popular Link</h2>
+    <CardWithPopularLink title="Title" href="/design-system" />
+
+    <h2>Card with Side Image</h2>
+    <CardWithSideImage title="Title" actionText="Action text" actionUrl="/design-system">
+      <Image src={image} alt="UGRC logo" slot="image" />
+      <p>Card with Side Image Content with a <a href="/design-system">link</a>.</p>
+    </CardWithSideImage>
+
+    <h2>Card with Small Link</h2>
+    <CardWithSmallLink title="Title" href="/design-system">
+      Card with small link content cannot contain links.
+    </CardWithSmallLink>
+
+    <h2>Card with Top Image</h2>
+    <CardWithTopImage title="Title" actionText="Action text" actionUrl="/design-system">
+      <Image
+        src={image}
+        alt="UGRC logo"
+        slot="image"
+        class="h-64 w-full rounded-t-2xl bg-primary px-2 dark:bg-zinc-900/70"
+      />
+      A text area that can contain main words as well as <a href="/design-system">links</a>.
+    </CardWithTopImage>
+  </Section>
+
+  <Section
+    stripe
+    title="Section with the stripe attribute and image"
+    actionText="Action text"
+    actionUrl="/design-system"
+  >
+    <Image src={image} alt="UGRC logo" slot="image" />
+
+    <p>Content with a <a href="/design-system">link</a>.</p>
+
+    <h2>Button Link</h2>
+    <ButtonLink href="/design-system">Button link</ButtonLink>
+
+    <h2>Card for Statute</h2>
+    <CardForStatute href="/design-system" code="code" title="Code title">
+      <p>Card for Statute Content with a <a href="/design-system">link</a>.</p>
+    </CardForStatute>
+
+    <h2>Card with Date</h2>
+    <CardWithDate title="Title" description="A short description" slug="/design-system" date={new Date()} />
+
+    <h2>Card with Popular Link</h2>
+    <CardWithPopularLink title="Title" href="/design-system" />
+
+    <h2>Card with Side Image</h2>
+    <CardWithSideImage title="Title" actionText="Action text" actionUrl="/design-system">
+      <Image src={image} alt="UGRC logo" slot="image" />
+      <p>Card with Side Image Content with a <a href="/design-system">link</a>.</p>
+    </CardWithSideImage>
+
+    <h2>Card with Small Link</h2>
+    <CardWithSmallLink title="Title" href="/design-system">
+      Card with small link content cannot contain links.
+    </CardWithSmallLink>
+
+    <h2>Card with Top Image</h2>
+    <CardWithTopImage title="Title" actionText="Action text" actionUrl="/design-system">
+      <Image
+        src={image}
+        alt="UGRC logo"
+        slot="image"
+        class="h-64 w-full rounded-t-2xl bg-primary px-2 dark:bg-zinc-900/70"
+      />
+      A text area that can contain main words as well as <a href="/design-system">links</a>.
+    </CardWithTopImage>
+  </Section>
+</Layout>
