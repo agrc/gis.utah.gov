@@ -6,7 +6,7 @@ import { forwardRef } from 'react';
 
 const menuTextCss = (isActive) =>
   classNames(
-    'transition duration-300 group relative flex select-none items-center justify-between gap-1 py-[2px] px-4 font-semibold text-sm leading-none text-zinc-600 outline-none dark:text-zinc-50 h-6 hover:text-zinc-900 dark:hover:text-zinc-100 rounded-full hover:bg-white/20',
+    'custom-style transition duration-300 group relative flex select-none items-center justify-between gap-1 py-[2px] px-4 font-semibold text-sm leading-none text-zinc-600 outline-none dark:text-zinc-50 h-6 hover:text-zinc-900 dark:hover:text-zinc-100 rounded-full hover:bg-white/20',
     {
       'text-secondary before:absolute before:-top-2 before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent ':
         isActive,
@@ -206,7 +206,7 @@ const ListItem = forwardRef(({ className, children, title, to, ...props }, forwa
     <NavigationMenu.Link asChild>
       <a
         className={classNames(
-          'focus:shadow-mustard-400 block select-none rounded p-3 text-base no-underline outline-none hover:bg-zinc-100 focus:shadow-[0_0_0_2px] sm:py-1',
+          'custom-style focus:shadow-mustard-400 block select-none rounded p-3 text-base no-underline outline-none hover:bg-zinc-100 focus:shadow-[0_0_0_2px] sm:py-1',
           className,
         )}
         href={to}

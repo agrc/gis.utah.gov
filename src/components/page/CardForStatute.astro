@@ -7,15 +7,13 @@ interface Props {
 const { href, code, title } = Astro.props;
 ---
 
-<div class="rounded-lg border border-white/20 bg-primary px-6 py-3 text-zinc-50">
-  <div class="flex">
-    <div class="grow">
-      <h4 class="uppercase text-zinc-50">{title}</h4>
-      <p class="uppercase dark:text-accent">{code}</p>
+<div class="flex rounded-lg border border-zinc-400 bg-primary px-6 py-3 dark:border-white/20">
+  <div class="flex grow flex-col">
+    <h4 class="uppercase text-zinc-50">{title}</h4>
+    <p class="font-semibold uppercase text-accent">{code}</p>
+    <div class="primary-background pr-2 text-sm text-zinc-50">
+      <slot />
     </div>
-    <a href={href} class="ml-2 text-2xl">&#x2192;</a>
   </div>
-  <div class="text-sm">
-    <slot />
-  </div>
+  <a href={href} class="custom-style -mr-4 self-center justify-self-end text-2xl text-zinc-50">&#x2192;</a>
 </div>

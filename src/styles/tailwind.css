@@ -5,6 +5,18 @@
   #root {
     @apply flex h-full min-h-full w-full flex-col;
   }
+  .stripe-background a:not(.custom-style) {
+    @apply text-secondary hover:text-primary dark:text-accent hover:dark:text-accent;
+  }
+  .primary-background a:not(.custom-style) {
+    @apply text-accent hover:bg-white/10;
+  }
+  a:not(.custom-style) {
+    @apply font-semibold text-primary hover:bg-black/10 dark:text-accent dark:hover:bg-white/10;
+  }
+  .card a:not(.custom-style) {
+    @apply font-semibold text-primary hover:bg-black/10 dark:text-accent dark:hover:bg-white/10;
+  }
   h1 {
     @apply text-3xl font-bold md:text-4xl;
   }

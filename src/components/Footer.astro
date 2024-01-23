@@ -26,27 +26,27 @@ import govOpsLogo from '../images/footer/govops-logo.png';
     <div>
       <div class="whitespace-nowrap text-lg font-bold">Main Menu</div>
       <ul class="pl-1 text-sm leading-loose text-zinc-50">
-        <li><a href="/" class="action-card hover:underline">Home</a></li>
-        <li><a href="/products" class="action-card hover:underline">Products</a></li>
-        <li><a href="/solutions" class="action-card hover:underline">Solutions</a></li>
-        <li><a href="/documentation" class="action-card hover:underline">Documentation</a></li>
-        <li><a href="/collaboration" class="action-card hover:underline">Collaboration</a></li>
-        <li><a href="/blog" class="action-card hover:underline">Blog</a></li>
-        <li><a href="/about" class="action-card hover:underline">About</a></li>
-        <li><a href="/contact" class="action-card hover:underline">Contact</a></li>
+        <li><a href="/" class="custom-style hover:underline">Home</a></li>
+        <li><a href="/products" class="custom-style hover:underline">Products</a></li>
+        <li><a href="/solutions" class="custom-style hover:underline">Solutions</a></li>
+        <li><a href="/documentation" class="custom-style hover:underline">Documentation</a></li>
+        <li><a href="/collaboration" class="custom-style hover:underline">Collaboration</a></li>
+        <li><a href="/blog" class="custom-style hover:underline">Blog</a></li>
+        <li><a href="/about" class="custom-style hover:underline">About</a></li>
+        <li><a href="/contact" class="custom-style hover:underline">Contact</a></li>
       </ul>
     </div>
     <div>
       <div class="whitespace-nowrap text-lg font-bold">Helpful Links</div>
       <ul class="pl-1 text-sm leading-loose text-zinc-50">
-        <li><a href="/about/contributing" class="action-card hover:underline">Content contributing guide</a></li>
-        <li><a href="/about/media" class="action-card hover:underline">Logos and media resources</a></li>
-        <li><a href="/about/policy" class="action-card hover:underline">UGRC Policies</a></li>
-        <li><a href="/about/statute" class="action-card hover:underline">GIS-related Utah statute</a></li>
+        <li><a href="/about/contributing" class="custom-style hover:underline">Content contributing guide</a></li>
+        <li><a href="/about/media" class="custom-style hover:underline">Logos and media resources</a></li>
+        <li><a href="/about/policy" class="custom-style hover:underline">UGRC Policies</a></li>
+        <li><a href="/about/statute" class="custom-style hover:underline">GIS-related Utah statute</a></li>
         <li>
           <a
             href="https://cdn.forms-content.sg-form.com/61e82d28-f0d5-11ec-847c-a26809937a38"
-            class="action-card hover:underline">Sign up for our newsletter</a
+            class="custom-style hover:underline">Sign up for our newsletter</a
           >
         </li>
       </ul>
@@ -54,16 +54,21 @@ import govOpsLogo from '../images/footer/govops-logo.png';
     <div>
       <div class="whitespace-nowrap text-lg font-bold">Website Information</div>
       <ul class="pl-1 text-sm leading-loose text-zinc-50">
-        <li>Build: ae87578</li>
+        <li>Build: {import.meta.env.COMMIT_REF}</li>
         <li>
-          <a href="https://github.com/agrc/gis.utah.gov/edit/master/index.html" class="action-card hover:underline"
+          <a href="https://github.com/agrc/gis.utah.gov/edit/main/index.astro" class="custom-style hover:underline"
             >Edit this page</a
           >
         </li>
         <li>
-          <a href="https://github.com/agrc/gis.utah.gov/issues/new" class="action-card external-link hover:underline"
+          <a href="https://github.com/agrc/gis.utah.gov/issues/new" class="custom-style external-link hover:underline"
             >Report an issue</a
           >
+        </li>
+        <li>
+          <a href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" class="mt-4" loading="lazy" />
+          </a>
         </li>
       </ul>
     </div>
@@ -93,15 +98,23 @@ import govOpsLogo from '../images/footer/govops-logo.png';
     </div>
     <div class="pt-6 text-center text-sm text-zinc-50 lg:pt-0">
       <div class="space-x-2 whitespace-pre-wrap lg:space-x-4">
-        <a href="https://www.utah.gov" target="__blank" rel="noreferrer">Utah.gov Home</a>
+        <a href="https://www.utah.gov" class="custom-style" target="__blank" rel="noreferrer">Utah.gov Home</a>
         <span class="border-l-2" aria-hidden="true"></span>
-        <a href="https://www.utah.gov/disclaimer.html" target="__blank" rel="noreferrer">Terms of Use</a>
+        <a href="https://www.utah.gov/disclaimer.html" class="custom-style" target="__blank" rel="noreferrer"
+          >Terms of Use</a
+        >
         <span class="border-l-2" aria-hidden="true"></span>
-        <a href="https://www.utah.gov/privacypolicy.html" target="__blank" rel="noreferrer">Privacy Policy</a>
+        <a href="https://www.utah.gov/privacypolicy.html" class="custom-style" target="__blank" rel="noreferrer"
+          >Privacy Policy</a
+        >
         <span class="border-l-2" aria-hidden="true"></span>
-        <a href="https://www.utah.gov/accessibility.html" target="__blank" rel="noreferrer">Accessibility</a>
+        <a href="https://www.utah.gov/accessibility.html" class="custom-style" target="__blank" rel="noreferrer"
+          >Accessibility</a
+        >
         <span class="border-l-2" aria-hidden="true"></span>
-        <a href="https://www.utah.gov/translate.html" target="__blank" rel="noreferrer">Translate</a>
+        <a href="https://www.utah.gov/translate.html" class="custom-style" target="__blank" rel="noreferrer"
+          >Translate</a
+        >
       </div>
     </div>
   </div>

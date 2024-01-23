@@ -12,8 +12,8 @@ import FormattedDate from '../FormattedDate.astro';
 const { title, description, slug, date, includeYear } = Astro.props;
 ---
 
-<div class="rounded bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70">
-  <a href={`/blog/${slug}/`} class="flex flex-1 divide-x-2 divide-zinc-300/60 p-4">
+<div class="rounded-lg border border-zinc-400 bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70">
+  <a href={`/blog/${slug}/`} class="custom-style flex flex-1 divide-x-2 divide-zinc-300/60 p-4">
     <div class="pr-3">
       <FormattedDate date={date} style={includeYear ? 'short-with-year' : 'short'} />
     </div>
