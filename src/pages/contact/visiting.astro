@@ -1,0 +1,64 @@
+---
+import Layout from '../../layouts/FullWidth.astro';
+import Section from '../../components/page/Section.astro';
+import { Image } from 'astro:assets';
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/visiting/*.{jpg,png,svg}');
+---
+
+<Layout title="Meet us">
+  <Section title="Visiting UGRC">
+    <Image
+      class="rounded-lg border-2 border-primary"
+      src={images['/src/images/pillar-contact/visiting/visiting_ugrc_location.png']()}
+      alt="Map with pin of Taylorsville State Office Building Location"
+      slot="image"
+      height={400}
+    />
+    <p>
+      UGRC's office is in the Taylorsville State Office Building (TSOB), which is in the center of the Salt Lake valley
+      just north of the Utah Public Health Lab and UDOT's Calvin Rampton Complex.
+    </p>
+    <h4>Getting here by bike</h4>
+    <p>
+      If you want to bike in, 3900 South/4100 South is a good east-west route with fairly wide shoulders between the
+      Jordan River Parkway and 2700 West. 2700 West itself has decent bike lanes except for the pinch points around the
+      4700 South intersection or the light rail tracks around 3300 South but is otherwise a great north-south route.
+    </p>
+    <h4>Getting here by transit</h4>
+    <p>
+      The Utah Transit Authority <a href="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/704-Green-Line"
+        >Green Line</a
+      > light rail service runs from downtown to the West Valley City offices and Valley Fair Mall about 1.5 miles north
+      of the TSOB (or about a 30 minute walk). <a
+        href="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/227-2700-West">Bus route 227</a
+      > runs along 2700 West between the Green and Red Lines (3600 South to 8300 South) on an hourly basis, and <a
+        href="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/47-4700-South">route 47</a
+      > starts at the Murray Central Trax/FrontRunner station every half hour and has a stop at 4700 South and 2700 West,
+      a 3/4-mile (15 minute) walk from the TSOB.
+    </p>
+  </Section>
+  <Section stripe title="Where to park">
+    <Image
+      class="rounded-lg border-2 border-primary"
+      src={images['/src/images/pillar-contact/visiting/visiting_ugrc_parking.jpg']()}
+      alt="Aerial image of Taylorsville State Office Building parking lot"
+      slot="image"
+      height={400}
+    />
+    <h4>Getting here by car</h4>
+    <p>
+      If you're arriving by car, use either the 3500 South or 4700 South exits on the west side I-215 belt route and
+      then turn onto 2700 West. The TSOB is on the east side of the road at approximately 4300 South. You can park in
+      either of the lots west of the building.
+    </p>
+  </Section>
+  <Section title="Checking in">
+    <Image
+      src={images['/src/images/pillar-contact/visiting/check-in.svg']()}
+      alt="A person at a log in screen"
+      slot="image"
+    />
+    <p>Once you arrive, check in at the main (west) entrance. Someone will come down and escort you to our offices.</p>
+  </Section>
+</Layout>
