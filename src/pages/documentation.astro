@@ -23,12 +23,12 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
           <Image
             slot="image"
             src={images['/src/images/pillar-sgid/sgid-index.svg']()}
-            alt="a person using a search egine"
+            alt="a person using a search engine"
             class="block h-80 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
           />
           blah blah blah
         </CardWithTopImage>
-        <CardWithTopImage title="Discover Base map and Imagery Services" actionUrl="documentatio/discover">
+        <CardWithTopImage title="Discover Base map and Imagery Services" actionUrl="documentation/discover">
           <Image
             slot="image"
             src={images['/src/images/pillar-sgid/open-sgid.svg']()}
@@ -58,11 +58,11 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
   <Fragment slot="popular-resources">
     <Section title="Popular Documentation Resources">
       <GridForPopularResources>
+        <CardWithPopularLink title="Policies" href="/documentation/policies">UGRC Policies</CardWithPopularLink>
         <CardWithPopularLink title="TURN GPS" href="/documentation/turn">
           Sign up and access the TURN GPS service
         </CardWithPopularLink>
         <CardWithPopularLink title="Porter" href="/products/discover/raster">Learn about porter?</CardWithPopularLink>
-        <CardWithPopularLink title="Palletjack" href="/products/discover">palletjack docs?</CardWithPopularLink>
         <CardWithPopularLink title="API Client" href="http://api.mapserv.utah.gov">
           API Client stuff
         </CardWithPopularLink>
@@ -82,7 +82,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
           />
           The UGRC API and SGID accessed through Esri clients.
         </CardWithSideImage>
-        <CardWithSideImage title="?" actionUrl="/products/sgid/sharing">
+        <CardWithSideImage title="palletjack" actionUrl="/products/sgid/sharing">
           <Image
             slot="image"
             src={images['/src/images/pillar-sgid/data-sharing-agreement.svg']()}
