@@ -15,7 +15,7 @@ export const staff = [
     email: 'nathankota@utah.gov',
     twitter: '@nathankota',
     photo: 'nathan-kota.png',
-    tags: ['new projects', 'collaboration', 'partnerships', 'budgets', 'ongoing support'],
+    tags: ['collaboration', 'partnerships', 'budgets', 'new projects', 'ongoing support'],
   },
   {
     name: 'Zach Beck',
@@ -58,7 +58,7 @@ export const staff = [
     email: 'sgourley@utah.gov',
     twitter: '@steve_ugrc',
     photo: 'steve-gourley.png',
-    tags: ['web development', 'google cloud', 'geocoding', 'web services', 'data management'],
+    tags: ['Apps', 'Web Development', 'Programming', 'Google Cloud', 'Geocoding',],
   },
   {
     name: 'Jake Adams',
@@ -67,7 +67,7 @@ export const staff = [
     email: 'jdadams@utah.gov',
     twitter: '@gis_jake',
     photo: 'jake-adams.png',
-    tags: ['Discover', 'configurable apps', 'python', 'AGOL', 'ArcGIS Hub'],
+    tags: ['Configurable Apps', 'Discover', 'Python', 'AGOL', 'ArcGIS Hub'],
   },
   {
     name: 'Sean Fernandez',
@@ -75,7 +75,7 @@ export const staff = [
     phone: '801-209-9359',
     email: 'sfernandez@utah.gov',
     twitter: '@UTSurveyor',
-    tags: ['survey control', 'PLSS monuments', 'GPS', 'NGS State Coordinator', 'spatial reference'],
+    tags: ['PLSS monuments', 'Survey Control', 'GPS', 'NGS State Coordinator', 'Spatial Reference'],
   },
   {
     name: 'Hank Chou',
@@ -83,7 +83,8 @@ export const staff = [
     phone: '435-319-0307',
     email: 'hchou@utah.gov',
     twitter: '',
-    tags: ['911', 'PSAP support', 'data management', 'Motorola systems'],
+    photo: 'hank-chou.png',
+    tags: ['PSAP support', 'Open Source', 'ArcGIS Pro', 'Data ETL', '911',],
   },
   {
     name: 'Rick Kelson',
@@ -92,7 +93,7 @@ export const staff = [
     email: 'rkelson@utah.gov',
     twitter: '@RickUGRC',
     photo: 'rick-kelson.png',
-    tags: ['Discover', 'LiDAR', 'parcels', 'Imagery', 'data management'],
+    tags: ['Discover', 'LiDAR', 'Imagery', 'parcels', 'data management'],
   },
   {
     name: 'Denise Peterson',
