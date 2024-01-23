@@ -13,7 +13,7 @@ interface Person {
 const { name, team, twitter, tags, email, photo } = Astro.props as Person;
 import { Image } from 'astro:assets';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/*.{svg,png}');
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/staff/*.{svg,png}');
 ---
 
 <li>
@@ -21,7 +21,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
     <Image
       class="h-32 w-32 rounded-full border-2 border-primary shadow-xl dark:border-black/50"
       src={photo
-        ? images[`/src/images/pillar-contact/${photo}`]()
+        ? images[`/src/images/pillar-contact/staff/${photo}`]()
         : `https://api.dicebear.com/7.x/personas/svg?seed=${name}`}
       alt={`portrait of ${name} with a white background`}
       width="128"
