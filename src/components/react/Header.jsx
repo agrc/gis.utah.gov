@@ -45,13 +45,13 @@ export const Header = ({ className, children }) => {
 const Flyout = () => {
   return (
     <div className="relative z-10 bg-zinc-600 px-6 py-4 shadow-lg">
-      <h3 className="mb-8 text-white lg:mb-4">
+      <h3 className="mb-8 text-zinc-50 lg:mb-4">
         This is an official website of the State of Utah. Here&apos;s how you know:
       </h3>
       <div className="flex flex-col justify-around gap-10 lg:flex-row">
         <div className="flex items-center gap-2 lg:w-96 lg:items-start">
-          <CheckBadgeIcon className="w-16 text-white" />
-          <p className="text-white">
+          <CheckBadgeIcon className="w-16 text-zinc-50" />
+          <p className="text-zinc-50">
             <span className="block font-bold">
               Official Utah websites use utah.gov in the browser&apos;s address bar.
             </span>
@@ -59,13 +59,13 @@ const Flyout = () => {
           </p>
         </div>
         <div className="flex items-center gap-2 lg:w-96 lg:items-start">
-          <LockClosedIcon className="w-16 text-white" />
-          <div className="text-white">
+          <LockClosedIcon className="w-16 text-zinc-50" />
+          <div className="text-zinc-50">
             <span className="block font-bold">Be careful when sharing sensitive information.</span>
             Share sensitive information only on secure official Utah.gov websites.
           </div>
         </div>
-        <div className="flex items-center gap-4 text-white sm:flex-col sm:gap-0">
+        <div className="flex items-center gap-4 text-zinc-50 sm:flex-col sm:gap-0">
           <svg
             className="w-36 fill-current text-sm"
             style={{
@@ -88,7 +88,7 @@ const Flyout = () => {
           <div className="text-sm">© State of Utah</div>
         </div>
       </div>
-      <Collapsible.Trigger className="absolute right-2 top-2 rounded-full p-1 text-white hover:bg-black/10">
+      <Collapsible.Trigger className="absolute right-2 top-2 rounded-full p-1 text-zinc-50 hover:bg-black/10">
         <XMarkIcon className="w-7" />
         <span className="sr-only">Close official website popup</span>
       </Collapsible.Trigger>

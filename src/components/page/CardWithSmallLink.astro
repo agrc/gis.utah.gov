@@ -8,10 +8,10 @@ interface Props {
 const { title, href, class: className } = Astro.props;
 ---
 
-<a href={href} class:list={['you-might-like h-24 rounded-lg bg-primary px-6 py-3 text-white', className]}>
+<a href={href} class:list={['h-24 rounded-lg border bg-primary px-6 py-3 text-zinc-50', className]}>
   <div class="flex">
     <h6 class="grow uppercase">{title}</h6>
     <span class="ml-2 text-2xl">&#x2192;</span>
   </div>
-  <p class="line-clamp-2 text-sm opacity-70"><slot /></p>
+  <p class="line-clamp-2 text-sm text-zinc-300"><slot /></p>
 </a>

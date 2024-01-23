@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         primary: '#4d2a54',
-        secondary: '#4d7b8d',
+        secondary: '#33505d',
+        'secondary-200': '#4d7b8d',
         accent: '#eaca00',
       },
       gridTemplateColumns: {
