@@ -6,19 +6,20 @@ interface Props {
   actionUrl: string;
   actionText?: string;
   class?: string;
-  primary?: boolean;
 }
 
-const { primary, title, actionText = 'See more', actionUrl, class: className } = Astro.props;
+const { title, actionText = 'See more', actionUrl, class: className } = Astro.props;
 ---
 
 <section class:list={['flex w-96 flex-col rounded-2xl', className]}>
-  <slot name="image" />
+  <div class="rounded-t-2xl border border-b-0 border-zinc-400 dark:border-white/20 dark:bg-black/40">
+    <slot name="image" />
+  </div>
   <div
-    class="flex flex-1 flex-col rounded-b-2xl border-x border-b border-zinc-400 bg-white/50 px-7 py-6 leading-tight shadow dark:border-black/50 dark:bg-black/40"
+    class="flex flex-1 flex-col rounded-b-2xl border border-t-0 border-zinc-400 bg-white px-7 py-6 leading-tight shadow dark:border-white/20 dark:bg-black/40"
   >
     <header>
-      <h3>{title}</h3>
+      <h3 class="text-primary dark:text-zinc-300">{title}</h3>
     </header>
     <p class="card grow text-zinc-500 dark:text-zinc-400">
       <slot />

@@ -22,7 +22,7 @@ const { date, style } = Astro.props;
   {
     style.startsWith('short') && (
       <div class="flex flex-col items-center justify-center">
-        <div class="text-center font-medium text-primary/80 dark:text-accent">
+        <div class="text-center font-medium text-primary/90 dark:text-accent">
           {date.toLocaleDateString('en-us', {
             month: 'short',
           })}

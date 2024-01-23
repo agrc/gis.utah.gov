@@ -8,10 +8,16 @@ interface Props {
 const { title, href, class: className } = Astro.props;
 ---
 
-<a href={href} class:list={['h-24 rounded-lg border bg-primary px-6 py-3 text-zinc-50', className]}>
-  <div class="flex">
-    <h6 class="grow uppercase">{title}</h6>
-    <span class="ml-2 text-2xl">&#x2192;</span>
+<a
+  href={href}
+  class:list={[
+    'custom-style flex h-24 rounded-lg border border-zinc-400 bg-primary px-6 py-3 text-zinc-50 shadow dark:border-white/20',
+    className,
+  ]}
+>
+  <div class="flex grow flex-col">
+    <h6 class="uppercase">{title}</h6>
+    <p class="line-clamp-2 text-sm text-zinc-300"><slot /></p>
   </div>
-  <p class="line-clamp-2 text-sm text-zinc-300"><slot /></p>
+  <span class="-mr-4 self-center justify-self-end text-2xl">&#x2192;</span>
 </a>

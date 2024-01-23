@@ -52,8 +52,7 @@ export const Menu = ({ currentUri }) => {
               </MegaMenuItem>
               <MegaMenuItem title="Discover" containerCss="md:w-1/4">
                 <ListItem to="/products/discover">
-                  A cloud-based server that provides UGRC's aerial imagery and base maps to anyone who wants to use them
-                  in their GIS, CAD, or web applications.
+                  A cloud-based server that provides aerial imagery and base maps for GIS, CAD, or web applications.
                 </ListItem>
               </MegaMenuItem>
               <MegaMenuItem title="TURN GPS" containerCss="md:w-1/4">
@@ -197,7 +196,7 @@ export const MegaMenuChrome = ({ children }) => (
 export const MegaMenuItem = ({ children, title, containerCss }) => (
   <div className={classNames('grow-0 pl-6 align-top', containerCss)}>
     <p className="text-lg font-bold uppercase text-zinc-600/70 md:text-sm">{title}</p>
-    <ul className="one m-0 grid list-none">{children}</ul>
+    <ul className="m-0 grid list-none">{children}</ul>
   </div>
 );
 

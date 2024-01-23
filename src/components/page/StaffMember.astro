@@ -24,8 +24,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         ? images[`/src/images/pillar-contact/staff/${photo}`]()
         : `https://api.dicebear.com/7.x/personas/svg?seed=${name}`}
       alt={`portrait of ${name} with a white background`}
-      width="128"
-      height="128"
+      width={128}
+      height={128}
     />
     <div>
       <h3 class="text-base font-semibold leading-7 tracking-tight">{name}</h3>
@@ -34,7 +34,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         {twitter && <p class="text-sm font-semibold leading-6">{twitter}</p>}
       </div>
       <div class="text-sm font-semibold leading-6">
-        <div class="flex items-center text-base text-zinc-400 dark:text-zinc-300">
+        <div class="flex items-center text-base text-zinc-500 dark:text-zinc-300">
           <p class="text-sm font-medium leading-6">{team}</p>
         </div>
       </div>
@@ -42,11 +42,13 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
     <div class="flex flex-col items-end gap-0.5 self-center text-xs">
       {
         tags &&
-          tags?.map((tag) => (
-            <div class="max-w-fit select-none rounded-full border border-secondary bg-primary/90 px-4 py-1 text-zinc-50 dark:border-accent/30 dark:bg-secondary">
-              <span>{tag}</span>
-            </div>
-          ))
+          tags
+            .sort((a, b) => a.length - b.length)
+            .map((tag) => (
+              <div class="select-none self-center rounded-full border border-secondary bg-primary/90 px-4 py-1 text-center font-semibold lowercase text-zinc-50 dark:border-accent/30 dark:bg-secondary">
+                {tag.replaceAll(' ', '-')}
+              </div>
+            ))
       }
     </div>
   </div>
