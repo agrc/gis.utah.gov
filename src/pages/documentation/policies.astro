@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/FullWidth.astro';
+import Section from '../../components/page/Section.astro';
+import CardWithSmallLink from '../../components/page/CardWithSmallLink.astro';
+import GridForPopularResources from '../../components/page/GridForPopularResources.astro';
+import { Image } from 'astro:assets';
+
+const location = '/src/images/pillar-documentation/';
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-documentation/*.svg');
+---
+
+<Layout title="Documentation">
+  <Section title="UGRC policies, procedures, and guidelines">
+    <Image
+      src={images[`${location}license-disclaimer.svg`]()}
+      slot="image"
+      loading="eager"
+      alt="A person thinking in front of a caution sign"
+      class="w-1/2"
+    />
+    <p>
+      UGRC documents its policies and procedures in the following documents. These documents act as a guide for UGRC
+      staff and partners to ensure that UGRC is operating in a consistent and transparent manner. Please read and
+      familiarize yourself with the policies and guidelines that are relevant to your work with UGRC.
+    </p>
+  </Section>
+  <Section stripe title="Data license and attribution">
+    <GridForPopularResources>
+      <CardWithSmallLink title="UGRC data license and disclaimer" href="/documentation/policy/license">
+        UGRC's data license and general data disclaimer.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Data Sharing Agreement" href="/documentation/policy/license">
+        The agreement between UGRC and data stewards for data shared through the SGID.
+      </CardWithSmallLink>
+      <CardWithSmallLink
+        title="Licensed High-Resolution Imagery Citation"
+        href="/documentation/policy/license"
+        class="sm:col-span-2"
+      >
+        The citation requirements for high-resolution imagery licensed from Google and Hexagon.
+      </CardWithSmallLink>
+    </GridForPopularResources>
+  </Section>
+  <Section title="Database policies">
+    <GridForPopularResources>
+      <CardWithSmallLink title="SGID Policies" href="/documentation/policy/license">
+        UGRC's policy for creating, editing, maintaining, and removing data in the SGID database.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Open SGID Terms of Use" href="/documentation/policy/license">
+        The guidelines for using the Open SGID database.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Basic Metadata Guidelines" href="/documentation/policy/license" class="sm:col-span-2">
+        The metadata guidelines for data in the SGID database.
+      </CardWithSmallLink>
+    </GridForPopularResources>
+  </Section>
+  <Section stripe title="Privacy policies">
+    <GridForPopularResources>
+      <CardWithSmallLink title="UGRC API Privacy Policy" href="/documentation/policy/license">
+        UGRC's privacy policy about requests coming to the UGRC API.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="State of Utah Privacy Policy" href="/documentation/policy/license">
+        To inform those accessing State Web sites about the collection and use of the personally identifiable
+        information of its users.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="UGRC Record Series" href="/documentation/policy/license" class="sm:col-span-2">
+        UGRC's record series which define data retention and acceptable use.
+      </CardWithSmallLink>
+    </GridForPopularResources>
+  </Section>
+</Layout>
