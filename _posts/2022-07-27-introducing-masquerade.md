@@ -57,7 +57,7 @@ If you are looking for a way to quickly navigate your map to Utah addresses or p
 1. Start typing in the search box and type-ahead suggestions will start appearing. Click on any suggestion to zoom the map to it.
 1. For geocoding single-line addresses that do not show up in the type-ahead suggestions, type in the complete address with a zip or city and press enter. (e.g. `123 S Main Street, Holladay`).
 
-You should see typeahead suggestions from all of the [Open SGID](https://gis.utah.gov/sgid/open-sgid/) tables above.
+You should see typeahead suggestions from all of the [Open SGID]({% link sgid/open-sgid/index.md %}) tables above.
 
 #### Batch Geocoding
 
