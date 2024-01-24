@@ -102,6 +102,7 @@ export const staff = [
     phone: '385-392-4011',
     email: 'denisepeterson@utah.gov',
     twitter: '',
+    photo: 'denise-peterson.png',
     tags: ['GPS', 'Configurable apps', 'AGOL', 'data management', 'boundaries'],
   },
 ];
