@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-
 import govOpsLogo from '../images/footer/govops-logo.png';
+
 const sha = import.meta.env.COMMIT_REF.substring(0, 8);
 ---
 
@@ -68,7 +68,13 @@ const sha = import.meta.env.COMMIT_REF.substring(0, 8);
         </li>
         <li>
           <a href="https://www.netlify.com">
-            <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" class="mt-4" loading="lazy" />
+            <Image
+              src="https://www.netlify.com/img/global/badges/netlify-light.svg"
+              class="mt-4"
+              alt="logo showing the site is hosted on netlify"
+              width={100}
+              height={44}
+            />
           </a>
         </li>
       </ul>
