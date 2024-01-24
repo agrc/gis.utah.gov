@@ -47,17 +47,21 @@ Reverse Geocode has not been implemented. [Let us know](https://github.com/agrc/
 
 #### Locate Pane
 
-If you are looking for a way to quickly navigate your map to Utah addresses or points of interest within ArcGIS Pro, Masquerade can help. By adding [UGRC's "Utah Locator (Masquerade)"](https://utah.maps.arcgis.com/home/item.html?id=f19e6205b9bd49e8a39ed51ddd58164a) (hosted in ArcGIS Online) [to your project](https://pro.arcgis.com/en/pro-app/latest/help/data/geocoding/add-locators-to-a-project.htm) it becomes available to use within the [Locate pane](https://pro.arcgis.com/en/pro-app/latest/help/data/geocoding/find-places-on-the-map.htm). To accomplish this, follow these steps (see the [project page](https://github.com/agrc/masquerade#locate-pane) for more details):
+If you are looking for a way to quickly navigate your map to Utah addresses or points of interest within ArcGIS Pro, Masquerade can help. By adding [UGRC's "Utah Locator (Masquerade)"](https://utah.maps.arcgis.com/home/item.html?id=f19e6205b9bd49e8a39ed51ddd58164a) (hosted in ArcGIS Online) [to your project](https://pro.arcgis.com/en/pro-app/latest/help/data/geocoding/add-locators-to-a-project.htm) it becomes available to use within the [Locate pane](https://pro.arcgis.com/en/pro-app/latest/help/data/geocoding/find-places-on-the-map.htm). To accomplish this, follow these steps:
 
-1. Add the "Utah Locator (Masquerade)" locator (hosted in AGOL) to your project
+1. Add the locator to your project by right-clicking in the "Locators" folder and selecting "Add Locator"
+1. Browse to Portal -> ArcGIS Online and then search for "Masquerade"
+1. Select "Utah Locator (Masquerade)"
 1. Open any map and then go to the "Locate" pane
-1. Select the newly added locator as a search option
+1. Click on the settings options drop-down button to the left of the search bar and verify that "Utah Locator (Masquerade)" is selected.
 1. Start typing in the search box and type-ahead suggestions will start appearing. Click on any suggestion to zoom the map to it.
-1. For geocoding single line addresses that do not show up in the type-ahead suggestions, type in the complete address with a zip or city and press enter. (e.g. `123 S Main Street, Holladay`).
+1. For geocoding single-line addresses that do not show up in the type-ahead suggestions, type in the complete address with a zip or city and press enter. (e.g. `123 S Main Street, Holladay`).
+
+You should see typeahead suggestions from all of the [Open SGID](https://gis.utah.gov/sgid/open-sgid/) tables above.
 
 #### Batch Geocoding
 
-Once Masquerade has been added as a locator to your project, you can also use it as an input address locator with the [Geocode Addresses geoprocessing tool](https://pro.arcgis.com/en/pro-app/latest/tool-reference/geocoding/geocode-addresses.htm) for batch geocoding of address data.
+Once Masquerade has been added as a locator to your project, you can also use it as an input address locator with the [Geocode Addresses geoprocessing tool](https://pro.arcgis.com/en/pro-app/latest/tool-reference/geocoding/geocode-addresses.htm) for batch geocoding of address data. This makes Masquerade an easier alternative to the [Geocoding Toolbox](https://github.com/agrc/geocoding-toolbox).
 
 ### Web AppBuilder/Experience Builder
 {: .text-left}
