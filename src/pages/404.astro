@@ -3,18 +3,27 @@ import Layout from '../layouts/FullWidth.astro';
 import Section from '../components/page/Section.astro';
 
 const { pathname } = Astro.url;
+import { Image, getImage } from 'astro:assets';
+import myBackground from '../images/404.png';
 ---
 
 <Layout title="null island">
-  <Section title="404">
+  <Section title="This page was not found">
+    <Image src={myBackground} alt="null island" slot="image" class="border" />
     <h2>We're sorry but...</h2>
-    <h3>{pathname} was not found or created yet</h3>
-    <ul class="list-disc text-left">
-      <li class="list-decimal">Make sure the above URI is spelled correctly.</li>
+    <div>
+      <p>
+        <span class="font-black">{pathname}</span> was not found or created yet – or someone forgot to set the spatial reference...
+      </p>
+    </div>
+    <ul class="list-decimal pl-6 text-left">
+      <li>Make sure the above URI is spelled correctly.</li>
       <li>
         Try <a href="/search/index.html">searching</a> for the page and
       </li>
-      <li>finally notify us <a href="https://github.com/agrc/gis.utah.gov/issues/new">by creating an issue</a>.</li>
+      <li>
+        Finally, notify us <a href="https://github.com/agrc/gis.utah.gov/issues/new">by creating an issue</a>.
+      </li>
       <div>
         <script>
           window.onload = function () {
