@@ -75,6 +75,7 @@ export const staff = [
     phone: '801-209-9359',
     email: 'sfernandez@utah.gov',
     twitter: '@UTSurveyor',
+    photo: 'sean-fernandez.png',
     tags: ['PLSS monuments', 'Survey Control', 'GPS', 'NGS State Coordinator', 'Spatial Reference'],
   },
   {
