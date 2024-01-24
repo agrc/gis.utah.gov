@@ -45,9 +45,9 @@ export const Header = ({ className, children }) => {
 const Flyout = () => {
   return (
     <div className="relative z-10 bg-zinc-600 px-6 py-4 shadow-lg">
-      <h3 className="mb-8 text-zinc-50 lg:mb-4">
+      <p className="mb-8 text-xl font-bold text-zinc-50 md:text-2xl lg:mb-4">
         This is an official website of the State of Utah. Here&apos;s how you know:
-      </h3>
+      </p>
       <div className="flex flex-col justify-around gap-10 lg:flex-row">
         <div className="flex items-center gap-2 lg:w-96 lg:items-start">
           <CheckBadgeIcon className="w-16 text-zinc-50" />
