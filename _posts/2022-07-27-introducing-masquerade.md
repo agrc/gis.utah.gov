@@ -61,7 +61,7 @@ You should see typeahead suggestions from all of the [Open SGID](https://gis.uta
 
 #### Batch Geocoding
 
-Once Masquerade has been added as a locator to your project, you can also use it as an input address locator with the [Geocode Addresses geoprocessing tool](https://pro.arcgis.com/en/pro-app/latest/tool-reference/geocoding/geocode-addresses.htm) for batch geocoding of address data. This makes Masquerade an easier alternative to the [Geocoding Toolbox](https://github.com/agrc/geocoding-toolbox).
+Once Masquerade has been added as a locator to your project, you can also use it as an input address locator with the [Geocode Addresses geoprocessing tool](https://pro.arcgis.com/en/pro-app/latest/tool-reference/geocoding/geocode-addresses.htm) for batch geocoding of address data.
 
 ### Web AppBuilder/Experience Builder
 {: .text-left}
