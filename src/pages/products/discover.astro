@@ -12,7 +12,8 @@ import GridForPopularResources from '../../components/page/GridForPopularResourc
 
 import { Image } from 'astro:assets';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-api/*.{svg,png}');
+const location = '/src/images/pillar-discover/';
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-discover/*.{svg,png}');
 ---
 
 <Layout title="Discover base maps">
@@ -20,7 +21,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
     <Section>
       <Fragment slot="title">Discover imagery and base maps</Fragment>
       <Image
-        src={images['/src/images/pillar-api/api-logo.svg']()}
+        src={images[`${location}discover-logo.svg`]()}
         slot="image"
         loading="eager"
         alt="wavy gravy api logo"
@@ -36,42 +37,50 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
 
     <Section stripe>
       <GridForPillars>
-        <CardWithTopImage title="Sign up" actionText="Get started" actionUrl="/products/discover/access">
+        <CardWithTopImage
+          title="General access"
+          actionText="Register now"
+          actionUrl="https://docs.google.com/forms/d/1vS0Yw9DKezmDcJOCU-2MA-xXTHPMp3mBW4Y16RxMI0o/edit?ts=5cf67b75"
+        >
           <Image
             slot="image"
-            src={images['/src/images/pillar-api/sign-up.svg']()}
-            alt="a person using a search engine"
+            src={images[`${location}sign-up.svg`]()}
+            alt="a person filling out a form"
             class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
           />
-          The UGRC API is a free service that allows you to geocode and search SGID data. To use the API, you need to have
-          an account and create API keys. These key are used to authenticate requests and to give you usage analytics. Click
-          the link below to get started.
-        </CardWithTopImage>
-        <CardWithTopImage title="Services" actionText="View services" actionUrl="/products/discover/services">
-          <Image
-            slot="image"
-            src={images['/src/images/pillar-api/documentation.svg']()}
-            alt="a person connected to a database"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
-          />
-          There are many ways to use the UGRC API. We have created documentation to help you get started. Click the link
-          below to learn more about the API and how to use it.
+          Anyone can sign up for a free general access to our base maps, NAIP aerial imagery, and older high-resolution orthophoto
+          (HRO) products. These make great backdrops for many different datasets, and the NAIP imagery is a great free-to-use
+          aerial imagery layer for medium- and small-scale maps.
         </CardWithTopImage>
         <CardWithTopImage
-          title="Title"
-          actionText="See more"
+          title="Licensed access"
+          actionText="Register now"
+          actionUrl="https://docs.google.com/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/edit?ts=5cf67d38"
+        >
+          <Image
+            slot="image"
+            src={images[`${location}licensed-access.svg`]()}
+            alt="a person connected to a database with a lock and key shield"
+            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          Utah state agencies, cities, counties, special service districts, educational institutions and their students,
+          and tribal entities (along with formal partners of these groups) can sign up for licensed access to our latest
+          state-wide high-resolution aerial imagery in both streaming and downloadable formats.
+        </CardWithTopImage>
+        <CardWithTopImage
+          title="Get connected"
+          actionText="Get started"
           actionUrl="/products/discover/resources"
           class="lg:col-span-2 xl:col-span-1"
         >
           <Image
             slot="image"
-            src={images['/src/images/pillar-api/api-client-install.svg']()}
+            src={images[`${location}get-connected.svg`]()}
             alt="people connected to a network through geography"
             class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
           />
-          The API Client is a desktop tool to thoughtfully guide you through the process of using the UGRC API to geocode
-          your data. It allows you to geocode your data without any knowledge of the API. It requires no license and is free
-          to use. Click the link below to download the application and visualize your data.
+          The WMTS and WMS links you receive after registering for access work in a wide variety of software programs and
+          web development platforms. We've put together guides for the most popular programs to help you get started.
         </CardWithTopImage>
       </GridForPillars>
     </Section>
@@ -80,11 +89,17 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
   <Fragment slot="popular-resources">
     <Section title="Popular Discover Resources">
       <GridForPopularResources>
-        <CardWithPopularLink title="Raster discovery app" href="https://raster.utahgov">
-          A web application for discovering and downloading aerial imagery and elevation data.
+        <CardWithPopularLink title="Raster discovery app" href="https://raster.utah.gov">
+          Download NAIP and HRO imagery.
         </CardWithPopularLink>
-        <CardWithPopularLink title="Best practices" href="/products/discover">
-          Learn about best practices for using the Discover service.
+        <CardWithPopularLink title="Licensed access details" href="/products/discover/license">
+          Who qualifies and why.
+        </CardWithPopularLink>
+        <CardWithPopularLink title="Discover the docs" href="/products/discover/resources"
+          >Discover new ways to use Discover
+        </CardWithPopularLink>
+        <CardWithPopularLink title="Atlas" href="https://atlas.utah.gov"
+          >Explore our base maps and licensed imagery in your browser- no account required!
         </CardWithPopularLink>
       </GridForPopularResources>
     </Section>
@@ -93,23 +108,23 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
   <Fragment slot="more-resources">
     <Section title="More Discover Resources" stripe>
       <GridForMoreResources>
-        <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
+        <CardWithSideImage title="Citing your sources" actionUrl="/documentation/policies/citation">
           <Image
             slot="image"
-            src={images['/src/images/pillar-api/privacy.svg']()}
+            src={images[`${location}cite.svg`]()}
             alt="a computer with a lock on the screen"
             class="self-center"
           />
-          UGRC's data license and general data disclaimer.
+          Using the licensed imagery may require additional citation.
         </CardWithSideImage>
-        <CardWithSideImage title="API Self Service" actionUrl="https://ut-dts-agrc-web-api-dev-self-service.web.app/">
+        <CardWithSideImage title="Base map update schedule" actionUrl="/">
           <Image
             slot="image"
-            src={images['/src/images/pillar-api/self-service.svg']()}
+            src={images[`${location}schedule.svg`]()}
             alt="a person checking out at the grocery store"
             class="self-center"
           />
-          The self service website to create, manage, and view analytics for your API keys.
+          See when your favorite base map was last updated with our authoritative data.
         </CardWithSideImage>
       </GridForMoreResources>
     </Section>
@@ -118,9 +133,17 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
   <Fragment slot="you-might-also-like">
     <Section title="You might also like">
       <GridForYouMightLike>
-        <CardWithSmallLink title="Base maps" href="/products/data/base-maps-and-imagery">Content.</CardWithSmallLink>
         <CardWithSmallLink title="SGID" href="/products/sgid">
           View the data from the base maps in the SGID.
+        </CardWithSmallLink>
+        <CardWithSmallLink title="UGS aerial imagery database" href="https://imagery.geology.utah.gov/"
+          >Travel back in time with historic imagery.
+        </CardWithSmallLink>
+        <CardWithSmallLink title="USGS TopoView" href="https://ngmdb.usgs.gov/topoview/"
+          >Explore, interact, and download topographic maps from the USGS free of charge.
+        </CardWithSmallLink>
+        <CardWithSmallLink title="USGS EarthExplorer" href="https://earthexplorer.usgs.gov/"
+          >Download vector, topographical, and remote sensing data.
         </CardWithSmallLink>
       </GridForYouMightLike>
     </Section>
