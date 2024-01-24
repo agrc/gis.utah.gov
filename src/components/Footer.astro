@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 
 import govOpsLogo from '../images/footer/govops-logo.png';
+const sha = import.meta.env.COMMIT_REF.substring(0, 8);
 ---
 
 <section>
@@ -54,7 +55,7 @@ import govOpsLogo from '../images/footer/govops-logo.png';
     <div>
       <div class="whitespace-nowrap text-lg font-bold">Website Information</div>
       <ul class="pl-1 text-sm leading-loose text-zinc-50">
-        <li>Build: {import.meta.env.COMMIT_REF}</li>
+        <li>Build: {sha}</li>
         <li>
           <a href="https://github.com/agrc/gis.utah.gov/edit/main/index.astro" class="custom-style hover:underline"
             >Edit this page</a
