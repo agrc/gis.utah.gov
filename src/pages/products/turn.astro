@@ -1,0 +1,139 @@
+---
+import Layout from '../../layouts/Pillar.astro';
+import Section from '../../components/page/Section.astro';
+import CardWithPopularLink from '../../components/page/CardWithPopularLink.astro';
+import CardWithSideImage from '../../components/page/CardWithSideImage.astro';
+import CardWithSmallLink from '../../components/page/CardWithSmallLink.astro';
+import CardWithTopImage from '../../components/page/CardWithTopImage.astro';
+import GridForMoreResources from '../../components/page/GridForMoreResources.astro';
+import GridForPillars from '../../components/page/GridForPillars.astro';
+import GridForYouMightLike from '../../components/page/GridForYouMightLike.astro';
+import GridForPopularResources from '../../components/page/GridForPopularResources.astro';
+
+import { Image } from 'astro:assets';
+
+const location = '/src/images/product-turn/';
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-turn/*.{svg,png}');
+---
+
+<Layout title="TURN GPS">
+  <Fragment slot="popular-level-ones">
+    <Section>
+      <Fragment slot="title">The Utah Reference Network</Fragment>
+      <Image
+        src={images[`${location}logo-turn.svg`]()}
+        slot="image"
+        loading="eager"
+        alt="wavy gravy turn logo"
+        class="w-full rounded-2xl dark:brightness-200 dark:grayscale"
+      />
+      <p>
+        The Utah Reference Network, TURN, is a high-precision global navigation satellite system (GNSS) providing
+        real-time corrections and data for post processing. A GNSS network consists of permanently located GPS
+        receivers, installed across an area, that generate real-time, high-accuracy GPS positioning. All of the
+        permanently installed GPS receivers send their data to a central system via the internet. The central system
+        analyzes the input to adjust and correct the data to provide the most accurate locations, usually down to
+        centimeter level. Our networks use the Trimble PIVOT VRS Platform. The generated data is sent from the GPS
+        receiver to the GPS reference network through a wireless connection using the Networked Transport of RTCM via
+        Internet Protocol (NTRIP).
+      </p>
+    </Section>
+
+    <Section stripe>
+      <GridForPillars>
+        <CardWithTopImage
+          title="Registration"
+          actionText="Register now"
+          actionUrl="https://turngps-subscription.ugrc.utah.gov"
+        >
+          <Image
+            slot="image"
+            src={images[`${location}sign-up.svg`]()}
+            alt="a person filling out a form"
+            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          Having centimeter precision is the new norm for surveying and mapping. Join the hundreds of others using the TURN
+          GPS system to improve your accuracy. All that is required is a small yearly subscription and it only takes a few
+          minutes to get started.
+        </CardWithTopImage>
+        <CardWithTopImage title="Get connected" actionText="Connect now" actionUrl="/products/turn/connecting">
+          <Image
+            slot="image"
+            src={images[`${location}get-connected.svg`]()}
+            alt="a person connected to a database with a lock and key shield"
+            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          Once you have an account you can connect to the network using a variety of devices. We've put together guides for
+          many popular devices. If you don't see your device listed, contact us and we'll help you get connected.
+        </CardWithTopImage>
+        <CardWithTopImage title="Resources" actionUrl="/products/turn/resources" class="lg:col-span-2 xl:col-span-1">
+          <Image
+            slot="image"
+            src={images[`${location}learning.svg`]()}
+            alt="a person reading a book learning"
+            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+          />
+          There are many artifacts and resources available to help you get the most out of the TURN GPS system. We've put
+          together a list of the most popular resources to help you get started including site logs and maps.
+        </CardWithTopImage>
+      </GridForPillars>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="popular-resources">
+    <Section title="Popular TURN Resources">
+      <GridForPopularResources>
+        <CardWithPopularLink title="TURN Network Map" href="https://arcg.is/0SG5ra0">
+          View all of GPS station information in one place.
+        </CardWithPopularLink>
+        <CardWithPopularLink title="TURN Sensor map" href="https://turngps.utah.gov/Map/SensorMap.aspx">
+          GPS Sensor map health and information.
+        </CardWithPopularLink>
+      </GridForPopularResources>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="more-resources">
+    <Section title="More TURN Resources" stripe>
+      <GridForMoreResources>
+        <CardWithSideImage title="TURN PDF wall map" actionUrl="/documentation/policy/citation">
+          <Image
+            slot="image"
+            src={images[`${location}map.svg`]()}
+            alt="a person holding a map with pins on it"
+            class="self-center"
+          />
+          Hang the network on your wall.
+        </CardWithSideImage>
+        <CardWithSideImage title="Empty" actionUrl="/">
+          <Image
+            slot="image"
+            src={images[`${location}map.svg`]()}
+            alt="a person checking out at the grocery store"
+            class="self-center"
+          />
+          Description
+        </CardWithSideImage>
+      </GridForMoreResources>
+    </Section>
+  </Fragment>
+
+  <Fragment slot="you-might-also-like">
+    <Section title="You might also like">
+      <GridForYouMightLike>
+        <CardWithSmallLink title="SGID" href="/products/sgid">
+          View the data from the base maps in the SGID.
+        </CardWithSmallLink>
+        <CardWithSmallLink title="UGS aerial imagery database" href="https://imagery.geology.utah.gov/"
+          >Travel back in time with historic imagery.
+        </CardWithSmallLink>
+        <CardWithSmallLink title="USGS TopoView" href="https://ngmdb.usgs.gov/topoview/"
+          >Explore, interact, and download topographic maps from the USGS free of charge.
+        </CardWithSmallLink>
+        <CardWithSmallLink title="USGS EarthExplorer" href="https://earthexplorer.usgs.gov/"
+          >Download vector, topographical, and remote sensing data.
+        </CardWithSmallLink>
+      </GridForYouMightLike>
+    </Section>
+  </Fragment>
+</Layout>

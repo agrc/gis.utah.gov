@@ -53,7 +53,7 @@ export const Menu = ({ currentUri }) => {
                 </ListItem>
               </MegaMenuItem>
               <MegaMenuItem title="TURN GPS" containerCss="md:w-1/4">
-                <ListItem to="/products/gps">
+                <ListItem to="/products/turn">
                   High-precision global navigation satellite system (GNSS) providing real-time corrections and data for
                   post processing.
                 </ListItem>
