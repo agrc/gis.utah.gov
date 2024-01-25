@@ -2,7 +2,7 @@
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 
-interface Person {
+interface Props {
   name: string;
   team: string;
   tags?: string[];
@@ -13,7 +13,7 @@ interface Person {
 
 const convert = (name: string) => name.toLowerCase().replaceAll(' ', '-');
 
-const { name, team, twitter, tags, email } = Astro.props as Person;
+const { name, team, twitter, tags, email } = Astro.props;
 
 const location = '/src/images/pillar-contact/staff/';
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/staff/*.{svg,png}');
