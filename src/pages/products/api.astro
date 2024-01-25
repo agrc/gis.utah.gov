@@ -12,7 +12,7 @@ import GridForPopularResources from '../../components/page/GridForPopularResourc
 
 import { Image } from 'astro:assets';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-api/*.{svg,png}');
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-api/*.{svg,png}');
 ---
 
 <Layout title="UGRC API">
@@ -20,7 +20,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
     <Section>
       <Fragment slot="title">The UGRC API</Fragment>
       <Image
-        src={images['/src/images/pillar-api/api-logo.svg']()}
+        src={images['/src/images/product-api/api-logo.svg']()}
         slot="image"
         loading="eager"
         alt="wavy gravy api logo"
@@ -57,7 +57,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         >
           <Image
             slot="image"
-            src={images['/src/images/pillar-api/sign-up.svg']()}
+            src={images['/src/images/product-api/sign-up.svg']()}
             alt="a person using a search engine"
             class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
           />
@@ -72,7 +72,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         >
           <Image
             slot="image"
-            src={images['/src/images/pillar-api/documentation.svg']()}
+            src={images['/src/images/product-api/documentation.svg']()}
             alt="a person connected to a database"
             class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
           />
@@ -87,7 +87,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         >
           <Image
             slot="image"
-            src={images['/src/images/pillar-api/api-client-install.svg']()}
+            src={images['/src/images/product-api/api-client-install.svg']()}
             alt="people connected to a network through geography"
             class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
           />
@@ -128,7 +128,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
           <Image
             slot="image"
-            src={images['/src/images/pillar-api/privacy.svg']()}
+            src={images['/src/images/product-api/privacy.svg']()}
             alt="a computer with a lock on the screen"
             class="self-center"
           />
@@ -137,7 +137,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         <CardWithSideImage title="API Self Service" actionUrl="https://ut-dts-agrc-web-api-dev-self-service.web.app/">
           <Image
             slot="image"
-            src={images['/src/images/pillar-api/self-service.svg']()}
+            src={images['/src/images/product-api/self-service.svg']()}
             alt="a person checking out at the grocery store"
             class="self-center"
           />

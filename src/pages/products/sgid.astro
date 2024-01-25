@@ -12,7 +12,7 @@ import GridForPopularResources from '../../components/page/GridForPopularResourc
 
 import { Image } from 'astro:assets';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-sgid/*.{svg,png}');
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-sgid/*.{svg,png}');
 ---
 
 <Layout title="State Geographic Information Datasource">
@@ -20,7 +20,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
     <Section>
       <Fragment slot="title">The State Geographic Information Datasource</Fragment>
       <Image
-        src={images['/src/images/pillar-sgid/sgid-logo.svg']()}
+        src={images['/src/images/product-sgid/sgid-logo.svg']()}
         slot="image"
         loading="eager"
         alt="sgid logo"
@@ -49,7 +49,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         <CardWithTopImage title="SGID Index" actionText="Search the index" actionUrl="/products/sgid-index">
           <Image
             slot="image"
-            src={images['/src/images/pillar-sgid/sgid-index.svg']()}
+            src={images['/src/images/product-sgid/sgid-index.svg']()}
             alt="a person using a search engine"
             class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
           />
@@ -61,7 +61,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         <CardWithTopImage title="Open SGID" actionText="Get connected" actionUrl="products/open-sgid">
           <Image
             slot="image"
-            src={images['/src/images/pillar-sgid/open-sgid.svg']()}
+            src={images['/src/images/product-sgid/open-sgid.svg']()}
             alt="a person connected to a database"
             class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
           />
@@ -77,7 +77,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         >
           <Image
             slot="image"
-            src={images['/src/images/pillar-sgid/sgid-opendata.svg']()}
+            src={images['/src/images/product-sgid/sgid-opendata.svg']()}
             alt="people connected to a network through geography"
             class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
           />
@@ -117,7 +117,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         <CardWithSideImage title="Data and license disclaimer" actionUrl="/products/sgid/disclaimer">
           <Image
             slot="image"
-            src={images['/src/images/pillar-sgid/license-disclaimer.svg']()}
+            src={images['/src/images/product-sgid/license-disclaimer.svg']()}
             alt="man in front of warning sign"
             class="self-center"
           />
@@ -126,7 +126,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         <CardWithSideImage title="Data sharing agreement" actionUrl="/products/sgid/sharing">
           <Image
             slot="image"
-            src={images['/src/images/pillar-sgid/data-sharing-agreement.svg']()}
+            src={images['/src/images/product-sgid/data-sharing-agreement.svg']()}
             alt="people shaking hands"
             class="self-center"
           />
