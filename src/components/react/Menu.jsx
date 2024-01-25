@@ -26,21 +26,16 @@ const isActive = (slug, currentUri) => {
 
 export const Menu = ({ currentUri }) => {
   return (
-    <NavigationMenu.Root
-      // value="radix-:r0Rr:"
-      // value="radix-:r0R13:"
-      onValueChange={console.log}
-      className="relative z-10 flex w-screen min-w-0 justify-start border-b border-dashed border-b-zinc-300 bg-zinc-100 pb-1 pl-2 pr-6 pt-[1.5px] dark:bg-secondary"
-    >
+    <NavigationMenu.Root className="relative z-10 flex h-11 w-screen min-w-0 justify-start border-b border-dashed border-b-zinc-300 bg-zinc-100 pb-1 pl-2 pr-6 pt-[1.5px] dark:bg-secondary">
       <NavigationMenu.List className="flex list-none justify-center pb-1 pt-[6px]">
-        <NavigationMenu.Item>
+        <NavigationMenu.Item value="home">
           <MenuTrigger hasCaret={false}>
             <MenuLink className={menuTextCss(isActive('/', currentUri))} to="/">
               Home
             </MenuLink>
           </MenuTrigger>
         </NavigationMenu.Item>
-        <NavigationMenu.Item>
+        <NavigationMenu.Item value="products">
           <MenuTrigger className={menuTextCss(isActive('/products', currentUri))}>Products</MenuTrigger>
           <NavigationMenu.Content className={menuItemCss}>
             <MegaMenuChrome>
@@ -69,7 +64,7 @@ export const Menu = ({ currentUri }) => {
             </MegaMenuChrome>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
-        <NavigationMenu.Item>
+        <NavigationMenu.Item value="solutions">
           <MenuTrigger className={menuTextCss(isActive('/solutions', currentUri))}>Solutions</MenuTrigger>
           <NavigationMenu.Content className={menuItemCss}>
             <MegaMenuChrome>
@@ -115,35 +110,35 @@ export const Menu = ({ currentUri }) => {
             </MegaMenuChrome>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
-        <NavigationMenu.Item>
+        <NavigationMenu.Item value="documentation">
           <MenuTrigger currentUri={currentUri} slug="/documentation" hasCaret={false}>
             <MenuLink to="/documentation" className={menuTextCss(isActive('/documentation', currentUri))}>
               Documentation
             </MenuLink>
           </MenuTrigger>
         </NavigationMenu.Item>
-        <NavigationMenu.Item>
+        <NavigationMenu.Item value="collaboration">
           <MenuTrigger hasCaret={false}>
             <MenuLink to="/collaboration" className={menuTextCss(isActive('/collaboration', currentUri))}>
               Collaboration
             </MenuLink>
           </MenuTrigger>
         </NavigationMenu.Item>
-        <NavigationMenu.Item>
+        <NavigationMenu.Item value="blog">
           <MenuTrigger hasCaret={false}>
             <MenuLink to="/blog" className={menuTextCss(isActive('/blog', currentUri))}>
               Blog
             </MenuLink>
           </MenuTrigger>
         </NavigationMenu.Item>
-        <NavigationMenu.Item>
+        <NavigationMenu.Item value="about">
           <MenuTrigger hasCaret={false}>
             <MenuLink to="/about" className={menuTextCss(isActive('/about', currentUri))}>
               About
             </MenuLink>
           </MenuTrigger>
         </NavigationMenu.Item>
-        <NavigationMenu.Item>
+        <NavigationMenu.Item value="contact">
           <MenuTrigger hasCaret={false}>
             <MenuLink to="/contact" className={menuTextCss(isActive('/contact', currentUri))}>
               Contact
