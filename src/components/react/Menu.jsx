@@ -103,17 +103,6 @@ export const Menu = ({ currentUri }) => {
                   Read how GIS can fit in your business.
                 </ListItem>
               </MegaMenuItem>
-              <MegaMenuItem title="By business need" containerCss="md:w-1/3">
-                <ListItem href="/solutions/providing-location" title="Location based services">
-                  Learn how location can improve the service you provide to citizens.
-                </ListItem>
-                <ListItem href="/solutions/improving-resources" title="Enhancing natural resources">
-                  Learn what we can offer you.
-                </ListItem>
-                <ListItem href="/solutions/location-services" title="GIS strategy">
-                  Let location take you places.
-                </ListItem>
-              </MegaMenuItem>
             </MegaMenuChrome>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
