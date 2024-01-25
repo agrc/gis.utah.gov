@@ -76,17 +76,16 @@ export const Menu = ({ currentUri }) => {
                 <ListItem href="/solutions/for-government" title="Government employees">
                   Learn what we can offer you.
                 </ListItem>
-                <ListItem href="/solutions/for-students" title="Students">
-                  Learn what we can offer you.
-                </ListItem>
                 <ListItem href="/solutions/for-gis-users" title="GIS users">
                   Learn what we can offer you.
                 </ListItem>
-
                 <ListItem href="/solutions/for-application-developers" title="Application developers">
                   Learn what we can offer you.
                 </ListItem>
                 <ListItem href="/solutions/for-surveyors" title="Surveyors">
+                  Learn what we can offer you.
+                </ListItem>
+                <ListItem href="/solutions/for-students" title="Students">
                   Learn what we can offer you.
                 </ListItem>
               </MegaMenuItem>
