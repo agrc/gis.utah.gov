@@ -3,9 +3,10 @@ interface Props {
   title: string;
   href: string;
   class?: string;
+  style?: 'primary' | 'secondary';
 }
 
-const { title, href, class: className } = Astro.props;
+const { title, href, style = 'primary', class: className } = Astro.props;
 ---
 
 <a

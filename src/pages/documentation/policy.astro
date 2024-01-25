@@ -26,16 +26,22 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
   </Section>
   <Section stripe title="Data license and attribution">
     <GridForPopularResources>
-      <CardWithSmallLink title="UGRC data license and disclaimer" href="/documentation/policy/license">
+      <CardWithSmallLink
+        title="UGRC data license and disclaimer"
+        href="/documentation/policy/license"
+        style="secondary"
+      >
         UGRC's data license and general data disclaimer.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Data Sharing Agreement" href="/documentation/policy/license">
+      <CardWithSmallLink title="Data Sharing Agreement" href="/documentation/policy/license" style="secondary">
         The agreement between UGRC and data stewards for data shared through the SGID.
       </CardWithSmallLink>
       <CardWithSmallLink
+        style="secondary"
         title="Licensed High-Resolution Imagery Citation"
         href="/documentation/policy/license"
         class="sm:col-span-2"
+        style="secondary"
       >
         The citation requirements for high-resolution imagery licensed from Google and Hexagon.
       </CardWithSmallLink>
@@ -56,14 +62,19 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
   </Section>
   <Section stripe title="Privacy policies">
     <GridForPopularResources>
-      <CardWithSmallLink title="UGRC API Privacy Policy" href="/documentation/policy/license">
+      <CardWithSmallLink title="UGRC API Privacy Policy" href="/documentation/policy/license" style="secondary">
         UGRC's privacy policy about requests coming to the UGRC API.
       </CardWithSmallLink>
-      <CardWithSmallLink title="State of Utah Privacy Policy" href="/documentation/policy/license">
+      <CardWithSmallLink title="State of Utah Privacy Policy" href="/documentation/policy/license" style="secondary">
         To inform those accessing State Web sites about the collection and use of the personally identifiable
         information of its users.
       </CardWithSmallLink>
-      <CardWithSmallLink title="UGRC Record Series" href="/documentation/policy/license" class="sm:col-span-2">
+      <CardWithSmallLink
+        title="UGRC Record Series"
+        href="/documentation/policy/license"
+        class="sm:col-span-2"
+        style="secondary"
+      >
         UGRC's record series which define data retention and acceptable use.
       </CardWithSmallLink>
     </GridForPopularResources>
