@@ -26,7 +26,10 @@ const isActive = (slug, currentUri) => {
 
 export const Menu = ({ currentUri }) => {
   return (
-    <NavigationMenu.Root className="relative z-10 flex h-11 w-screen min-w-0 justify-start border-b border-dashed border-b-zinc-300 bg-zinc-100 pb-1 pl-2 pr-6 pt-[1.5px] dark:bg-secondary">
+    <NavigationMenu.Root
+      // value="products"
+      className="relative z-10 flex h-11 w-screen min-w-0 justify-start border-b border-dashed border-b-zinc-300 bg-zinc-100 pb-1 pl-2 pr-6 pt-[1.5px] dark:bg-secondary"
+    >
       <NavigationMenu.List className="flex list-none justify-center pb-1 pt-[6px]">
         <NavigationMenu.Item value="home">
           <NavigationMenuTrigger hasCaret={false}>
@@ -40,25 +43,25 @@ export const Menu = ({ currentUri }) => {
             Products
           </NavigationMenuTrigger>
           <NavigationMenu.Content className={menuItemCss}>
-            <MegaMenuChrome>
-              <MegaMenuItem title="SGID" containerCss="md:w-1/4">
-                <ListItem to="/products/sgid" title="">
+            <MegaMenuChrome className="flex w-full flex-col gap-4 pr-6 md:gap-2">
+              <MegaMenuItem title="SGID">
+                <ListItem to="/products/sgid">
                   A multi-faceted centralized collection of hundreds of GIS data layers developed, aggregated, or
                   acquired by the State of Utah.
                 </ListItem>
               </MegaMenuItem>
-              <MegaMenuItem title="Discover" containerCss="md:w-1/4">
+              <MegaMenuItem title="Discover">
                 <ListItem to="/products/discover">
                   A cloud-based server that provides aerial imagery and base maps for GIS, CAD, or web applications.
                 </ListItem>
               </MegaMenuItem>
-              <MegaMenuItem title="TURN GPS" containerCss="md:w-1/4">
+              <MegaMenuItem title="TURN GPS">
                 <ListItem to="/products/turn">
                   High-precision global navigation satellite system (GNSS) providing real-time corrections and data for
                   post processing.
                 </ListItem>
               </MegaMenuItem>
-              <MegaMenuItem title="UGRC API" containerCss="md:w-1/4">
+              <MegaMenuItem title="UGRC API">
                 <ListItem to="/products/api">
                   An HTTP accessible API with endpoints to search the SGID and geocode.
                 </ListItem>
@@ -71,7 +74,7 @@ export const Menu = ({ currentUri }) => {
             Solutions
           </NavigationMenuTrigger>
           <NavigationMenu.Content className={menuItemCss}>
-            <MegaMenuChrome>
+            <MegaMenuChrome className="flex w-full flex-row gap-4 pr-6 md:gap-2">
               <MegaMenuItem title="By audience" containerCss="md:w-1/3">
                 <ListItem href="/solutions/for-government" title="Government employees">
                   Learn what we can offer you.
@@ -179,14 +182,14 @@ NavigationMenuTrigger.propTypes = {
   classNames: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
-export const MegaMenuChrome = ({ children }) => (
-  <section className="min-h-40 w-[calc(100vw-1rem)] min-w-[640px] bg-zinc-50 py-5">
-    <div className="flex gap-4 sm:flex-col md:flex-row md:gap-2">{children}</div>
+export const MegaMenuChrome = ({ children, className }) => (
+  <section className="min-h-40 min-w-[720px] bg-zinc-50 py-5">
+    <div className={className}>{children}</div>
   </section>
 );
 export const MegaMenuItem = ({ children, title, containerCss }) => (
-  <div className={classNames('grow-0 pl-6 align-top', containerCss)}>
-    <p className="text-lg font-bold uppercase text-zinc-600/70 md:text-sm">{title}</p>
+  <div className={classNames('grow pl-6 align-top', containerCss)}>
+    <p className="text-lg font-bold uppercase text-zinc-600 md:text-sm">{title}</p>
     <ul className="m-0 grid list-none">{children}</ul>
   </div>
 );
@@ -196,15 +199,15 @@ const ListItem = forwardRef(({ className, children, title, to, ...props }, forwa
     <NavigationMenu.Link asChild>
       <a
         className={classNames(
-          'custom-style focus:shadow-mustard-400 block select-none rounded p-3 text-base no-underline outline-none hover:bg-zinc-100 focus:shadow-[0_0_0_2px] sm:py-1',
+          'custom-style focus:shadow-mustard-400 block select-none rounded p-3 text-base no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] sm:py-1',
           className,
         )}
         href={to}
         {...props}
         ref={forwardedRef}
       >
-        <div className="dark:text-mustard-600 font-medium text-zinc-700">{title}</div>
-        <p className="dark:text-mustard-100/50 text-sm text-zinc-500">{children}</p>
+        <div className="font-medium text-zinc-700">{title}</div>
+        <p className="text-sm text-zinc-500">{children}</p>
       </a>
     </NavigationMenu.Link>
   </li>
