@@ -1,5 +1,6 @@
 ---
 import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
 
 interface Person {
   name: string;
@@ -10,9 +11,11 @@ interface Person {
   photo?: string;
 }
 
-const { name, team, twitter, tags, email, photo } = Astro.props as Person;
-import { Image } from 'astro:assets';
+const convert = (name: string) => name.toLowerCase().replaceAll(' ', '-');
 
+const { name, team, twitter, tags, email } = Astro.props as Person;
+
+const location = '/src/images/pillar-contact/staff/';
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/staff/*.{svg,png}');
 ---
 
@@ -20,9 +23,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
   <div class="grid h-60 grid-cols-3-150 items-center gap-1 gap-y-6 p-3">
     <Image
       class="h-32 w-32 rounded-full border-2 border-primary shadow-xl dark:border-black/50"
-      src={photo
-        ? images[`/src/images/pillar-contact/staff/${photo}`]()
-        : `https://api.dicebear.com/7.x/personas/svg?seed=${name}`}
+      src={images[`${location}${convert(name)}.png`]()}
       alt={`portrait of ${name} with a white background`}
       width={128}
       height={128}

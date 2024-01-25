@@ -5,7 +5,6 @@ export const staff = [
     phone: '385-202-3297',
     email: 'mpeters@utah.gov',
     twitter: '@MattUGRC',
-    photo: 'matt-peters.png',
     tags: ['vision', 'strategy', 'leadership', 'management', 'new opportunities'],
   },
   {
@@ -14,7 +13,6 @@ export const staff = [
     phone: '385-226-1875',
     email: 'nathankota@utah.gov',
     twitter: '@nathankota',
-    photo: 'nathan-kota.png',
     tags: ['collaboration', 'partnerships', 'budgets', 'new projects', 'ongoing support'],
   },
   {
@@ -31,7 +29,6 @@ export const staff = [
     phone: '801-349-0039',
     email: 'gbunce@utah.gov',
     twitter: '@bunce_greg',
-    photo: 'greg-bunce.png',
     tags: ['SGID', 'transportation', 'collaboration', '911', 'data management'],
   },
   {
@@ -40,7 +37,6 @@ export const staff = [
     phone: '801-699-7187',
     email: 'stdavis@utah.gov',
     twitter: '@SThomasDavis',
-    photo: 'scott-davis.png',
     tags: ['web development', 'React', 'JavaScript', 'apps', 'data management'],
   },
   {
@@ -57,7 +53,6 @@ export const staff = [
     phone: '385-202-3394',
     email: 'sgourley@utah.gov',
     twitter: '@steve_ugrc',
-    photo: 'steve-gourley.png',
     tags: ['Apps', 'Web Development', 'Programming', 'Google Cloud', 'Geocoding',],
   },
   {
@@ -66,7 +61,6 @@ export const staff = [
     phone: '385-499-0786',
     email: 'jdadams@utah.gov',
     twitter: '@gis_jake',
-    photo: 'jake-adams.png',
     tags: ['Configurable Apps', 'Discover', 'Python', 'AGOL', 'ArcGIS Hub'],
   },
   {
@@ -75,7 +69,6 @@ export const staff = [
     phone: '801-209-9359',
     email: 'sfernandez@utah.gov',
     twitter: '@UTSurveyor',
-    photo: 'sean-fernandez.png',
     tags: ['PLSS monuments', 'Survey Control', 'GPS', 'NGS State Coordinator', 'Spatial Reference'],
   },
   {
@@ -84,7 +77,6 @@ export const staff = [
     phone: '435-319-0307',
     email: 'hchou@utah.gov',
     twitter: '',
-    photo: 'hank-chou.png',
     tags: ['PSAP support', 'Open Source', 'ArcGIS Pro', 'Data ETL', '911',],
   },
   {
@@ -93,7 +85,6 @@ export const staff = [
     phone: '385-313-0798',
     email: 'rkelson@utah.gov',
     twitter: '@RickUGRC',
-    photo: 'rick-kelson.png',
     tags: ['Discover', 'LiDAR', 'Imagery', 'parcels', 'data management'],
   },
   {
@@ -102,7 +93,6 @@ export const staff = [
     phone: '385-392-4011',
     email: 'denisepeterson@utah.gov',
     twitter: '',
-    photo: 'denise-peterson.png',
     tags: ['GPS', 'Configurable apps', 'AGOL', 'data management', 'boundaries'],
   },
 ];

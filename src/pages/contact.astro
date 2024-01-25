@@ -9,6 +9,7 @@ import { Image } from 'astro:assets';
 
 import { staff } from '../data/staff';
 
+const location = '/src/images/pillar-contact/';
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/*.svg');
 ---
 
@@ -17,7 +18,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
     <Image
       slot="image"
       loading="eager"
-      src={images['/src/images/pillar-contact/office.svg']()}
+      src={images[`${location}office.svg`]()}
       alt="people sitting at a desk with a clock on the wall"
       class="w-full max-w-[400px] rounded-2xl"
     />
@@ -46,7 +47,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
   <Section title="UGRC Social Media" actionUrl="https://twitter.com/MapUtah" actionText="Check us out">
     <Image
       slot="image"
-      src={images['/src/images/pillar-contact/social-media.svg']()}
+      src={images[`${location}social-media.svg`]()}
       alt="social media"
       class="w-full max-w-[400px] rounded-2xl"
     />
@@ -75,7 +76,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
   >
     <Image
       slot="image"
-      src={images['/src/images/pillar-contact/newsletter.svg']()}
+      src={images[`${location}newsletter.svg`]()}
       alt="UGRC quarterly newsletter"
       class="w-full max-w-[400px] rounded-2xl"
     />
