@@ -14,9 +14,19 @@ import GridForPopularResources from '../components/page/GridForPopularResources.
 import GridForYouMightLike from '../components/page/GridForYouMightLike.astro';
 import ButtonLink from '../components/page/ButtonLink.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import QuickLinks from '../components/page/QuickLinks.astro';
 
 import { Image } from 'astro:assets';
 import image from '../images/ugrc.svg';
+
+const links = [
+  { name: 'Gmail', anchor: 'gmail' },
+  { name: 'Google', anchor: 'google' },
+  { name: 'Mobile Devices', anchor: 'Mobile devices' },
+  { name: 'Gmail', anchor: 'gmail' },
+  { name: 'Google', anchor: 'google' },
+  { name: 'Mobile Devices', anchor: 'Mobile devices' },
+];
 ---
 
 <Layout title="Layout title">
@@ -27,6 +37,7 @@ import image from '../images/ugrc.svg';
     actionText="Action text"
     actionUrl="/design-system"
   >
+    <QuickLinks links={links} slot="quick-links" />
     <Image src={image} alt="UGRC logo" slot="image" />
 
     <p>Content with a <a href="/design-system">link</a>.</p>
@@ -69,6 +80,7 @@ import image from '../images/ugrc.svg';
   </Section>
 
   <Section title="Section with no attributes and image" actionText="Action text" actionUrl="/design-system">
+    <QuickLinks links={links} slot="quick-links" />
     <Image src={image} alt="UGRC logo" slot="image" />
 
     <p>Content with a <a href="/design-system">link</a>.</p>
@@ -116,6 +128,7 @@ import image from '../images/ugrc.svg';
     actionText="Action text"
     actionUrl="/design-system"
   >
+    <QuickLinks links={links} slot="quick-links" />
     <Image src={image} alt="UGRC logo" slot="image" />
 
     <p>Content with a <a href="/design-system">link</a>.</p>

@@ -25,6 +25,7 @@ const hasImage = await Astro.slots.render('image');
     title && (
       <div class="mx-auto max-w-prose px-8 pb-6 text-center lg:max-w-7xl">
         <h1 class="text-2xl font-bold md:text-3xl">{title}</h1>
+        <slot name="quick-links" />
       </div>
     )
   }
