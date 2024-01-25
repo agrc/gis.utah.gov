@@ -26,7 +26,10 @@ const isActive = (slug, currentUri) => {
 
 export const Menu = ({ currentUri }) => {
   return (
-    <NavigationMenu.Root className="relative z-10 flex h-11 w-screen min-w-0 justify-start border-b border-dashed border-b-zinc-300 bg-zinc-100 pb-1 pl-2 pr-6 pt-[1.5px] dark:bg-secondary">
+    <NavigationMenu.Root
+      value="solutions"
+      className="relative z-10 flex h-11 w-screen min-w-0 justify-start border-b border-dashed border-b-zinc-300 bg-zinc-100 pb-1 pl-2 pr-6 pt-[1.5px] dark:bg-secondary"
+    >
       <NavigationMenu.List className="flex list-none justify-center pb-1 pt-[6px]">
         <NavigationMenu.Item value="home">
           <NavigationMenuTrigger hasCaret={false}>
