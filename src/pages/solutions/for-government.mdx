@@ -1,32 +1,35 @@
 ---
-layout: ../../layouts/Prose.astro
-description: 'Lorem ipsum dolor sit amet'
-date: 'Jul 08 2022'
+title: What we can offer Government employees
+quickLinks:
+  - name: Consultation
+    anchor: consultation
+  - name: Data Transparency
+    anchor: transparency
+  - name: Application Development
+    anchor: development
+  - name: Spatial Analysis
+    anchor: analysis
+  - name: Data Aggregation
+    anchor: aggregation
 ---
 
-# Government
+import Layout from '../../layouts/FullWidth.astro';
+import Section from '../../components/page/Section.astro';
+import QuickLinks from '../../components/page/QuickLinks.astro';
 
-## Brainstorming
-
-- What is at an address, what is nearby, location awareness
-- Enriching data
-
-> [!NOTE]
-> In my opinion the government page should be our main marketing page towards other state agencies. It can be something we share with agencies to drum up work. We should highlight the solutions we are providing to other stage agencies here to let them know what they could also be doing.
->
-> Some ideas could be
->
-> - data transparency (deq enviro makes deq agency data visible, palletjack takes data out of secure places and makes it public in AGOL, etc)
-> - application development (WRI, WFRC, UDOT, TowerScout, experience builder apps)
-> - geocoding (Unclaimed property, schools?, etc)
-> - analysis (Broadband, etc)
-> - cartography, large scale printing
-> - data aggregation (roads, address points, etc)
-> - maybe link to emergency response?
-
-## Design Guidance
-
-We will have two buttons below each pain point - solution. The first button is the preferred path we want them to take. The second button is just more reading. We are always trying to push people into the preferred action (first button) all the detail will be some on the product page, and probably a significant amount on the documentation section
+<Layout title={frontmatter.title}>
+  <QuickLinks links={frontmatter.quickLinks}/>
+  <Section stripe title="Consultation">
+  </Section>
+  <Section title="Data transparency">
+  </Section>
+  <Section stripe title="Application Development">
+  </Section>
+  <Section title="Analysis">
+  </Section>
+  <Section stripe title="Data aggregation">
+  </Section>
+  <Section title="Notes">
 
 > [!NOTE]
 > we need 3-4 nice hooks for this section......some pain points. Think of what we have done for folks figure out how to write them as pain points - solution. like getting the data out of salesforce to load into AGOL etc.
@@ -70,3 +73,6 @@ There are many resources for people to help in this effort such as the intro to 
 ### You might also like
 
 a link to examples of applications using the geocoder?
+
+  </Section>
+</Layout>
