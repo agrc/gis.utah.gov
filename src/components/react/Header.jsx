@@ -7,7 +7,7 @@ export const Header = ({ className, children }) => {
   return (
     <Collapsible.Root>
       <header className={className}>
-        <div className="flex items-center justify-between border-b border-dashed border-b-primary px-3 py-2 dark:border-black/10">
+        <div className="flex items-center justify-between border-b border-b-primary/30 px-3 pb-2 pt-1 dark:border-black/10">
           <div className="flex h-16 flex-1 flex-row space-x-6 divide-x divide-slate-500">
             <Collapsible.Trigger className="h-16 w-28">
               <span className="sr-only">An official website of the State of Utah. Click to learn more.</span>
