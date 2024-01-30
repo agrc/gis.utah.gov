@@ -53,7 +53,7 @@ export const staff = [
     phone: '385-202-3394',
     email: 'sgourley@utah.gov',
     twitter: '@steve_ugrc',
-    tags: ['Apps', 'Web Development', 'Programming', 'Google Cloud', 'Geocoding',],
+    tags: ['Apps', 'Web Development', 'Programming', 'Google Cloud', 'Geocoding'],
   },
   {
     name: 'Jake Adams',
@@ -77,7 +77,7 @@ export const staff = [
     phone: '435-319-0307',
     email: 'hchou@utah.gov',
     twitter: '',
-    tags: ['PSAP support', 'Open Source', 'ArcGIS Pro', 'Data ETL', '911',],
+    tags: ['PSAP support', 'Open Source', 'ArcGIS Pro', 'Data ETL', '911'],
   },
   {
     name: 'Rick Kelson',
