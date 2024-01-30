@@ -10,7 +10,7 @@ import Banner from '../components/Banner.astro';
 import SocialMedia from '../components/SocialMedia.astro';
 import Footer from '../components/Footer.astro';
 
-import { Menu } from '../components/react/Menu.jsx';
+import { Menu, SmallMenu } from '../components/react/Menu.jsx';
 import { Header } from '../components/react/Header';
 
 import '../styles/tailwind.css';
@@ -25,7 +25,7 @@ const { title = 'UGRC' } = Astro.props;
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body class="bg-white dark:bg-primary/90">
-    <Header client:load>
+    <Header client:load className="">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" class="block h-16 text-zinc-600 dark:text-white">
         <defs>
           <clipPath id="a">
@@ -74,7 +74,8 @@ const { title = 'UGRC' } = Astro.props;
         ></path>
       </svg>
     </Header>
-    <Menu client:load currentUri={pathname} />
+    <Menu client:visible currentUri={pathname} />
+    <SmallMenu client:visible currentUri={pathname} />
     <Banner title={title} />
     <slot />
     <footer>
