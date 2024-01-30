@@ -11,8 +11,10 @@ interface Props {
 const { title, actionText = 'See more', actionUrl, class: className } = Astro.props;
 ---
 
-<section class:list={['flex w-96 flex-col rounded-2xl', className]}>
-  <div class="rounded-t-2xl border border-b-0 border-zinc-400 dark:border-white/20 dark:bg-black/40">
+<section class:list={['flex min-w-80 max-w-lg grow-0 flex-col xl:w-80', className]}>
+  <div
+    class="flex max-h-80 justify-center overflow-hidden rounded-t-2xl border border-b-0 border-zinc-400 bg-primary xl:max-h-44 dark:border-white/20 dark:bg-black/40"
+  >
     <slot name="image" />
   </div>
   <div
