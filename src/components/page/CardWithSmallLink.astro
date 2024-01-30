@@ -21,17 +21,17 @@ const { title, href, style = 'primary', class: className } = Astro.props;
     <p class="text-sm font-bold uppercase md:text-base">{title}</p>
     <p class="line-clamp-2 pr-2 text-sm text-zinc-300"><slot /></p>
   </div>
-  {href.startsWith('/') && <span class="-mr-4 self-center justify-self-end text-2xl">&#x2192;</span>}
+  {href.startsWith('/') && <span class="-mr-4 justify-center self-start text-2xl">&#x2192;</span>}
   {
     href.startsWith('http') && (
-      <span class="-mr-4 self-center justify-self-end text-2xl">
+      <span class="-mr-4 justify-center self-start text-2xl text-[1.3em]" aria-hidden="true">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="h-6 w-6"
+          class="size-[1.3em]"
         >
           <path
             stroke-linecap="round"
