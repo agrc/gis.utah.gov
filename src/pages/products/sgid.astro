@@ -51,7 +51,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             slot="image"
             src={images['/src/images/product-sgid/sgid-index.svg']()}
             alt="a person using a search engine"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           The SGID Index is <span class="font-bold">the primary source</span> of information for SGID datasets. It includes
           links to detailed information pages about UGRC-maintained datasets as well as direct links to the authoritative
@@ -63,7 +63,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             slot="image"
             src={images['/src/images/product-sgid/open-sgid.svg']()}
             alt="a person connected to a database"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           The Open SGID is a publicly available database containing our curated collection of GIS datasets. You can use this
           vendor-neutral database connection to directly access Utah spatial data in a wide variety of applications, including
@@ -73,13 +73,12 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
           title="SGID ArcGIS Hub"
           actionText="Explore Utah data"
           actionUrl="https://opendata.gis.utah.gov/"
-          class="lg:col-span-2 xl:col-span-1"
         >
           <Image
             slot="image"
             src={images['/src/images/product-sgid/sgid-opendata.svg']()}
             alt="people connected to a network through geography"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           The SGID ArcGIS Hub site is a single destination for GIS resources hosted in multiple agencies. Each item in the
           Hub contains data download links along with web service links for consuming the datasets in webmaps and other applications.

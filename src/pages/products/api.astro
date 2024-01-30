@@ -59,7 +59,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             slot="image"
             src={images['/src/images/product-api/sign-up.svg']()}
             alt="a person using a search engine"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           The UGRC API is a free service that allows you to geocode and search SGID data. To use the API, you need to have
           an account and create API keys. These key are used to authenticate requests and to give you usage analytics. Click
@@ -74,22 +74,17 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             slot="image"
             src={images['/src/images/product-api/documentation.svg']()}
             alt="a person connected to a database"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           There are many ways to use the UGRC API. We have created documentation to help you get started. Click the link
           below to learn more about the API and how to use it.
         </CardWithTopImage>
-        <CardWithTopImage
-          title="API Client"
-          actionText="Start geocoding"
-          actionUrl="/products/api/api-client"
-          class="lg:col-span-2 xl:col-span-1"
-        >
+        <CardWithTopImage title="API Client" actionText="Start geocoding" actionUrl="/products/api/api-client">
           <Image
             slot="image"
             src={images['/src/images/product-api/api-client-install.svg']()}
             alt="people connected to a network through geography"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           The API Client is a desktop tool to thoughtfully guide you through the process of using the UGRC API to geocode
           your data. It allows you to geocode your data without any knowledge of the API. It requires no license and is free

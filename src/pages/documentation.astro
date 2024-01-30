@@ -24,7 +24,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             slot="image"
             src={images['/src/images/product-sgid/sgid-index.svg']()}
             alt="a person using a search engine"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           blah blah blah
         </CardWithTopImage>
@@ -33,21 +33,16 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             slot="image"
             src={images['/src/images/product-sgid/open-sgid.svg']()}
             alt="a person connected to a database"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           yada yada yada
         </CardWithTopImage>
-        <CardWithTopImage
-          title="UGRC API"
-          actionText="Learn more"
-          actionUrl="https://api.mapserv.utah.gov/"
-          class="lg:col-span-2 xl:col-span-1"
-        >
+        <CardWithTopImage title="UGRC API" actionText="Learn more" actionUrl="https://api.mapserv.utah.gov/">
           <Image
             slot="image"
             src={images['/src/images/product-sgid/sgid-opendata.svg']()}
             alt="people connected to a network through geography"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           blerg blerg blerg
         </CardWithTopImage>

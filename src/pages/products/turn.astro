@@ -50,7 +50,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             slot="image"
             src={images[`${location}sign-up.svg`]()}
             alt="a person filling out a form"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           Having centimeter precision is the new norm for surveying and mapping. Join the hundreds of others using the TURN
           GPS system to improve your accuracy. All that is required is a small yearly subscription and it only takes a few
@@ -61,17 +61,17 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             slot="image"
             src={images[`${location}get-connected.svg`]()}
             alt="a person connected to a database with a lock and key shield"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           Once you have an account you can connect to the network using a variety of devices. We've put together guides for
           many popular devices. If you don't see your device listed, contact us and we'll help you get connected.
         </CardWithTopImage>
-        <CardWithTopImage title="Resources" actionUrl="/products/turn/resources" class="lg:col-span-2 xl:col-span-1">
+        <CardWithTopImage title="Resources" actionUrl="/products/turn/resources">
           <Image
             slot="image"
             src={images[`${location}learning.svg`]()}
             alt="a person reading a book learning"
-            class="block h-64 rounded-t-2xl bg-primary dark:bg-zinc-900/70"
+            class="block h-44"
           />
           There are many artifacts and resources available to help you get the most out of the TURN GPS system. We've put
           together a list of the most popular resources to help you get started including site logs and maps.
