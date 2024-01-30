@@ -1,13 +1,14 @@
 ---
 import { Image } from 'astro:assets';
 import govOpsLogo from '../images/footer/govops-logo.png';
+import ExternalLink from './page/ExternalLink.astro';
 
 const sha = import.meta.env.COMMIT_REF.substring(0, 8);
 ---
 
 <section>
   <div
-    class="grid grid-cols-1 gap-8 bg-zinc-600 p-4 text-center text-zinc-50 sm:grid-cols-3 sm:p-8 sm:text-left md:grid-cols-5"
+    class="grid grid-cols-1 justify-items-center gap-8 bg-zinc-600 p-4 text-center text-zinc-50 sm:grid-cols-3 sm:p-8 sm:text-left md:grid-cols-5"
   >
     <div class="order-last col-span-1 sm:col-span-3 md:order-first md:col-span-2">
       <div>
@@ -69,7 +70,7 @@ const sha = import.meta.env.COMMIT_REF.substring(0, 8);
           >
         </li>
         <li>
-          <a href="https://www.netlify.com">
+          <a href="https://www.netlify.com" class="inline-flex items-center">
             <Image
               src="https://www.netlify.com/img/global/badges/netlify-light.svg"
               class="mt-4"
@@ -106,24 +107,16 @@ const sha = import.meta.env.COMMIT_REF.substring(0, 8);
       </div>
     </div>
     <div class="pt-6 text-center text-sm text-zinc-50 lg:pt-0">
-      <div class="space-x-2 whitespace-pre-wrap leading-10 lg:space-x-4">
-        <a href="https://www.utah.gov" class="custom-style" target="__blank" rel="noreferrer">Utah.gov Home</a>
+      <div class="space-x-2 leading-10 lg:space-x-4">
+        <ExternalLink href="https://www.utah.gov">Utah.gov Home</ExternalLink>
         <span class="border-l-2" aria-hidden="true"></span>
-        <a href="https://www.utah.gov/disclaimer.html" class="custom-style" target="__blank" rel="noreferrer"
-          >Terms of Use</a
-        >
+        <ExternalLink href="https://www.utah.gov/disclaimer.html">Terms of Use</ExternalLink>
         <span class="border-l-2" aria-hidden="true"></span>
-        <a href="https://www.utah.gov/privacypolicy.html" class="custom-style" target="__blank" rel="noreferrer"
-          >Privacy Policy</a
-        >
+        <ExternalLink href="https://www.utah.gov/privacypolicy.html">Privacy Policy</ExternalLink>
         <span class="border-l-2" aria-hidden="true"></span>
-        <a href="https://www.utah.gov/accessibility.html" class="custom-style" target="__blank" rel="noreferrer"
-          >Accessibility</a
-        >
+        <ExternalLink href="https://www.utah.gov/accessibility.html">Accessibility</ExternalLink>
         <span class="border-l-2" aria-hidden="true"></span>
-        <a href="https://www.utah.gov/translate.html" class="custom-style" target="__blank" rel="noreferrer"
-          >Translate</a
-        >
+        <ExternalLink href="https://www.utah.gov/translate.html">Translate</ExternalLink>
       </div>
     </div>
   </div>
