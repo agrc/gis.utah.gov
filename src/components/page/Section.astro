@@ -40,7 +40,7 @@ const hasImage = await Astro.slots.render('image');
         <slot />
         {
           actionUrl && (
-            <div class="mx-auto">
+            <div class="max-w-fit">
               <ButtonLink href={actionUrl} decorate="arrow" color="secondary">
                 {actionText}
               </ButtonLink>
