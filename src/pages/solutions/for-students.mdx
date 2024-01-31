@@ -1,0 +1,53 @@
+---
+title: What we can offer Government employees
+quickLinks:
+  - name: Data
+    anchor: data
+  - name: Metadata
+    anchor: metadata
+  - name: Citations
+    anchor: citations
+  - name: Basemaps and Imagery
+    anchor: imagery
+  - name: Conferences and Events
+    anchor: conferences
+---
+
+import Layout from '../../layouts/FullWidth.astro';
+import Section from '../../components/page/Section.astro';
+import QuickLinks from '../../components/page/QuickLinks.astro';
+
+<Layout title={frontmatter.title}>
+  <QuickLinks links={frontmatter.quickLinks}/>
+  <Section stripe title="Data">
+
+    Got data? The <a href="{% link products/sgid.astro %}">State Geospatial Information Datasource</a> has a large <a href="{% link products/sgid-index.astro %}">catalog</a> of freely-available data you can use in your classwork, projects, or personal tinkering. You can connect directly to the <a href="{% link products/open-sgid.astro %}">Open SGID</a> in your GIS software or access downloads and Esri web feature services through our <a href="https://opendata.gis.utah.gov">SGID Hub</a>.
+
+  </Section>
+  <Section title="Data transparency">
+
+    - UGRC helps agencies expose their data to users such as https://enviro.deq.utah.gov/
+
+  </Section>
+  <Section stripe title="Application Development">
+
+    - Custom development. We can re-imagine your entire business process on the web carefully including the advantages of GIS. Examples
+    - Configurable apps
+    - Low code no code
+
+  </Section>
+  <Section title="Analysis">
+
+    - UGRC can help you find service areas for state buildings.
+    - How many citizens can be served based on a 30 minute drive time
+    - find my cash reporting,
+    - corona virus work?
+
+  </Section>
+  <Section stripe title="Data aggregation">
+
+    - UGRC currently aggregates parcels, address points, roads data from counties in support of 911, Taxation, and Elections
+    - We can work together to aggregate data from your agency
+
+  </Section>
+</Layout>
