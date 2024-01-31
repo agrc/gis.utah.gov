@@ -13,7 +13,7 @@ import GridForPopularResources from '@components/page/GridForPopularResources.as
 import { Image } from 'astro:assets';
 
 const location = '/src/images/product-sgid';
-const images = import.meta.glob<{ default: ImageMetadata }>('@images/sgid/*.{svg,png}');
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-sgid/*.{svg,png}');
 ---
 
 <Layout title="State Geographic Information Datasource">
