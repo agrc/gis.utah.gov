@@ -18,6 +18,8 @@ quickLinks:
 import Layout from '../../layouts/FullWidth.astro';
 import Section from '../../components/page/Section.astro';
 import QuickLinks from '../../components/page/QuickLinks.astro';
+import Blockquote from '../../components/page/Blockquote.astro';
+export const components = { blockquote: Blockquote };
 
 <Layout title={frontmatter.title}>
   <QuickLinks links={frontmatter.quickLinks}/>
