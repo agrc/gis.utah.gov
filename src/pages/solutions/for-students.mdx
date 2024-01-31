@@ -15,20 +15,36 @@ quickLinks:
     anchor: citations
 ---
 
-import Layout from '../../layouts/FullWidth.astro';
-import Section from '../../components/page/Section.astro';
-import QuickLinks from '../../components/page/QuickLinks.astro';
-import Blockquote from '../../components/page/Blockquote.astro';
+import Layout from '@layouts/FullWidth.astro';
+import Section from '@components/page/Section.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Blockquote from '@components/page/Blockquote.astro';
+import { Image } from 'astro:assets';
+
 export const components = { blockquote: Blockquote };
+import dataPhoto from '@images/solutions/data.svg';
+import studentPhoto from '@images/solutions/students.svg';
 
 <Layout title={frontmatter.title}>
   <Section stripe title="Solutions for Students">
-  <QuickLinks links={frontmatter.quickLinks}/>
+  <QuickLinks links={frontmatter.quickLinks} slot="quick-links" />
+    <Image
+      slot="image"
+      src={studentPhoto}
+      alt="students sitting in front of a university building"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
 
     UGRC loves students! We want to help you get the best education you can. We've got a host of resources that can help you with class projects, personal exploration, and preparing for life after school. Have you made something cool? <a href="https://twitter.com/MapUtah">Tweet</a> us about it, we'd love to hear!
 
   </Section>
   <Section title="Data">
+    <Image
+      slot="image"
+      src={dataPhoto}
+      alt="a person connected to a database"
+      class="w-full max-w-[400px] "
+    />
 
     > Data! Data! Data! I can't make bricks without clay! - Sherlock Holmes
 
