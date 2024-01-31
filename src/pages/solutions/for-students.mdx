@@ -3,7 +3,7 @@ title: We help students
 quickLinks:
   - name: Data
     anchor: data
-  - name: Basemaps and Imagery
+  - name: Base Maps and Imagery
     anchor: imagery
   - name: Conferences and Events
     anchor: conferences
@@ -21,20 +21,29 @@ import QuickLinks from '../../components/page/QuickLinks.astro';
 
 <Layout title={frontmatter.title}>
   <QuickLinks links={frontmatter.quickLinks}/>
+  <Section strip title="Solutions for Students">
+
+    UGRC loves students! We want to help you get the best education you can. We've got a host of resources that can help you with class projects, personal exploration, and preparing for life after school. Have you made something cool? <a href="https://twitter.com/MapUtah">Tweet</a> us about it, we'd love to hear!
+
+  </Section>
   <Section stripe title="Data">
 
-    `Data! Data! Data! I can't make bricks without clay!` - Sherlock Holmes
+    > Data! Data! Data! I can't make bricks without clay! - Sherlock Holmes
+
+    Do you need road data to build a network dataset? What about a high-resolution DEM for a suitability analysis? Or school locations for a demographic study?
 
     The <a href="/products/sgid/">State Geospatial Information Datasource</a> has a large <a href="/products/sgid-index/">catalog</a> of freely-available data you can use in your classwork, projects, or personal tinkering.
 
-    You can connect directly to the <a href="/products/open-sgid/">Open SGID</a> in your GIS software or access downloads and Esri web feature services through our <a href="https://opendata.gis.utah.gov">SGID Hub</a>.
+    You can connect directly to the <a href="/products/open-sgid/">Open SGID</a> in your GIS software or access downloads and Esri web feature services through our <a href="https://opendata.gis.utah.gov">SGID Hub</a>. You can download our raster data (aerial imagery, DEMs, etc.) at https://raster.utah.gov.
 
   </Section>
-  <Section title="Basemaps and Imagery">
+  <Section title="Base Maps and Imagery">
 
-    Need high-res imagery for a research project? Students and faculty of Utah-funded schools can sign up for licensed access to <a href="/products/discover/">Discover</a>, our basemaps and imagery web services.
+    Does your research project have you counting trees in aerial imagery? Or do you have data ready to map and just need a clean canvas to put it on? Our <a href="/products/discover/">Discover</a> base map and imagery web services provide access to both aerial imagery and our set of gorgeous <a href="/data/basemaps/">base maps</a> that you can use in both static and web maps.
 
-    And don't worry, out-of-staters—we love you too! Anyone can sign up for general access to use our gorgeous basemaps and the latest NAIP imagery.
+    Students and faculty of Utah-funded schools can sign up for licensed access to Discover, which includes the high-res imagery we've purchased for the State of Utah along with our base maps.
+
+    And don't worry, out-of-staters—we love you too! Anyone can sign up for general access to use our gorgeous base maps and the latest NAIP imagery.
 
   </Section>
   <Section stripe title="Conferences and Events">
@@ -61,6 +70,5 @@ import QuickLinks from '../../components/page/QuickLinks.astro';
     Need to cite your source for a paper? Check out our <a href="/documentation/policy/license/">attribution page</a> for guidelines and examples.
 
   </Section>
-
 
 </Layout>
