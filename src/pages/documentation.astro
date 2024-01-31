@@ -1,16 +1,16 @@
 ---
-import Layout from '../layouts/Pillar.astro';
-import Section from '../components/page/Section.astro';
-import GridForPillars from '../components/page/GridForPillars.astro';
-import CardWithTopImage from '../components/page/CardWithTopImage.astro';
+import Layout from '@layouts/Pillar.astro';
+import Section from '@components/page/Section.astro';
+import GridForPillars from '@components/page/GridForPillars.astro';
+import CardWithTopImage from '@components/page/CardWithTopImage.astro';
 
 import { Image } from 'astro:assets';
-import GridForPopularResources from '../components/page/GridForPopularResources.astro';
-import CardWithPopularLink from '../components/page/CardWithPopularLink.astro';
-import GridForMoreResources from '../components/page/GridForMoreResources.astro';
-import CardWithSideImage from '../components/page/CardWithSideImage.astro';
-import GridForYouMightLike from '../components/page/GridForYouMightLike.astro';
-import CardWithSmallLink from '../components/page/CardWithSmallLink.astro';
+import GridForPopularResources from '@components/page/GridForPopularResources.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import CardWithSideImage from '@components/page/CardWithSideImage.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-sgid/*.{svg,png}');
 ---

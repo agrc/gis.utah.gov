@@ -1,6 +1,6 @@
 ---
-import Layout from '../../layouts/FullWidth.astro';
-import Section from '../../components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+import Section from '@components/page/Section.astro';
 import { Image } from 'astro:assets';
 
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/visiting/*.{jpg,png,svg}');

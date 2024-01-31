@@ -13,9 +13,9 @@ quickLinks:
     anchor: aggregation
 ---
 
-import Layout from '../../layouts/FullWidth.astro';
-import Section from '../../components/page/Section.astro';
-import QuickLinks from '../../components/page/QuickLinks.astro';
+import Layout from '@layouts/FullWidth.astro';
+import Section from '@components/page/Section.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
 
 <Layout title={frontmatter.title}>
   <QuickLinks links={frontmatter.quickLinks}/>

@@ -1,8 +1,8 @@
 ---
-import Layout from '../layouts/Prose.astro';
+import Layout from '@layouts/Prose.astro';
 import { getCollection } from 'astro:content';
-import GridForLatestNews from '../components/page/GridForLatestNews.astro';
-import CardWithDate from '../components/page/CardWithDate.astro';
+import GridForLatestNews from '@components/page/GridForLatestNews.astro';
+import CardWithDate from '@components/page/CardWithDate.astro';
 
 const posts = (await getCollection('blog'))
   .filter((post) => post.data.published)

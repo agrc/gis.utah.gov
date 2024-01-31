@@ -1,16 +1,16 @@
 ---
-import Layout from '../layouts/FullWidth.astro';
+import Layout from '@layouts/FullWidth.astro';
 
-import CardWithTopImage from '../components/page/CardWithTopImage.astro';
-import CardWithSmallLink from '../components/page/CardWithSmallLink.astro';
-import GridForPillars from '../components/page/GridForPillars.astro';
-import GridForLatestNews from '../components/page/GridForLatestNews.astro';
-import GridForYouMightLike from '../components/page/GridForYouMightLike.astro';
-import Section from '../components/page/Section.astro';
+import CardWithTopImage from '@components/page/CardWithTopImage.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForPillars from '@components/page/GridForPillars.astro';
+import GridForLatestNews from '@components/page/GridForLatestNews.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
 
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
-import CardWithDate from '../components/page/CardWithDate.astro';
+import CardWithDate from '@components/page/CardWithDate.astro';
 
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/landing/*.{svg,png}');
 
