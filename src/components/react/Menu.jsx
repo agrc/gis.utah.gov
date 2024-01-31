@@ -60,7 +60,7 @@ export const Menu = ({ currentUri }) => {
                   Learn what we can offer you.
                 </ListItem>
                 <ListItem href="/solutions/for-students" title="Students">
-                  Learn what we can offer you.
+                  Learning never ends.
                 </ListItem>
               </MegaMenuItem>
               <MegaMenuItem title="By use case" containerCss="md:w-1/3">
