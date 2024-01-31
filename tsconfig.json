@@ -11,7 +11,10 @@
       ],
       "@components/*": [
         "src/components/*"
-      ]
+      ],
+      "@images/sgid/*": [
+        "src/images/product-sgid/*"
+      ],
     }
   }
 }
