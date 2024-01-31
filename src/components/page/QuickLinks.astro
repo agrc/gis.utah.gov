@@ -11,9 +11,9 @@ interface Props {
 const { links } = Astro.props;
 ---
 
-<div class="mb-6 flex flex-col items-center gap-2 border-b border-black/30 py-4 lg:mb-12">
+<div class="mb-6 flex flex-col items-center gap-2 border-b border-black/30 pb-6">
   <p class="text-lg">Quick Links</p>
-  <ul class="flex w-full flex-wrap justify-center gap-x-16 gap-y-2 lg:gap-x-32">
+  <ul class="flex w-full flex-wrap justify-center gap-x-8 gap-y-2 whitespace-pre">
     {
       links.map((link) => (
         <li>
