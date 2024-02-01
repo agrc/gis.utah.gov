@@ -1,12 +1,13 @@
 ---
-interface Props {
+interface Props extends Pick<import('@components/page/Section.astro').Props, 'titlePosition'> {
   title?: string;
   subTitle?: string;
 }
-const { title, subTitle } = Astro.props;
+
+const { title, subTitle, titlePosition = 'inline' } = Astro.props;
 ---
 
-<div class="mx-auto max-w-prose px-8 pb-6 text-center md:max-w-screen-lg">
+<div class:list={titlePosition === 'inline' ? [] : ['mx-auto max-w-prose px-8 pb-6 text-center md:max-w-screen-lg']}>
   <h1 class="text-2xl font-bold md:text-3xl">{title}</h1>
   {subTitle && <p class="mt-2 text-xs uppercase text-primary dark:text-accent">Last updated {subTitle}</p>}
   <slot name="quick-links" />

@@ -8,8 +8,9 @@ interface Props {
   subTitle?: string;
   stripe?: boolean;
   primary?: boolean;
+  titlePosition?: 'center' | 'inline';
 }
-const { actionUrl, actionText, title, subTitle, stripe, primary } = Astro.props;
+const { actionUrl, actionText, title, subTitle, stripe, primary, titlePosition = 'inline' } = Astro.props;
 const hasImage = await Astro.slots.render('image');
 ---
 
@@ -23,7 +24,11 @@ const hasImage = await Astro.slots.render('image');
       : 'bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300',
   ]}
 >
-  {title && <SectionTitle title={title} subTitle={subTitle} />}
+  {
+    title && titlePosition === 'center' && (
+      <SectionTitle title={title} subTitle={subTitle} titlePosition={titlePosition} />
+    )
+  }
   <div class="flex justify-center px-6">
     <div
       class:list={[
@@ -32,6 +37,11 @@ const hasImage = await Astro.slots.render('image');
       ]}
     >
       <div class="flex flex-1 flex-col gap-6 self-center">
+        {
+          title && titlePosition === 'inline' && (
+            <SectionTitle title={title} subTitle={subTitle} titlePosition={titlePosition} />
+          )
+        }
         <slot />
         {
           actionUrl && (
