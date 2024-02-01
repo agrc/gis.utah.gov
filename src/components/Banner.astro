@@ -21,14 +21,15 @@ const banner = await getImage({ src: image, format: 'webp' });
     before:from-primary
     before:via-secondary
     before:to-transparent
-    before:opacity-60"
+    before:opacity-60
+    dark:border-zinc-800/20"
   style={{
     backgroundImage: `url(${banner.src})`,
   }}
 >
   <div class="relative h-[150px] basis-5/12">
     <div class="absolute bottom-0 left-0 flex w-full flex-col flex-wrap content-end items-end justify-start">
-      <div class="absolute bottom-0 left-0 h-full w-full shrink grow-0 basis-auto overflow-hidden">
+      <div class="absolute bottom-[2px] left-0 h-full w-full shrink grow-0 basis-auto overflow-hidden">
         <svg class="h-full fill-black/70" viewBox="0 0 4000 400">
           <g>
             <path d="M0,400H4000V0H268L0,400Z"></path>
