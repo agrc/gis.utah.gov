@@ -62,6 +62,7 @@
     "gas",
     "GCDB",
     "geocode",
+    "geocoded",
     "Geocoder",
     "geocoders",
     "geodata",
