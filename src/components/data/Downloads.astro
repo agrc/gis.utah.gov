@@ -1,0 +1,59 @@
+---
+import ButtonLink from '@components/page/ButtonLink.astro';
+
+interface Props {
+  name: string;
+  itemId: string;
+  oddHubName?: string;
+  externalHubOrganization?: string;
+  layerId?: number;
+}
+const { name, oddHubName, itemId, externalHubOrganization, openSgid, layerId = 0 } = Astro.props;
+
+let id = oddHubName?.toLowerCase() || name.toLowerCase().replaceAll(' ', '-');
+
+if (externalHubOrganization) {
+  id = `${externalHubOrganization.toUpperCase()}::${id}`;
+}
+---
+
+<div class="grid grid-cols-1 gap-10 xl:grid-cols-3">
+  <div>
+    <h4>Static file downloads</h4>
+    <div>
+      <p class="text-sm">
+        The download links are provided by the SGID ArcGIS Hub. You can find more formats on the hub.
+      </p>
+      <ul>
+        <li>
+          <a href={`https://opendata.arcgis.com/datasets/${id}_${layerId}.gdb`}>File Geodatabase</a>
+        </li>
+        <li>
+          <a href={`https://opendata.arcgis.com/datasets/${id}_${layerId}.zip`}>Shapefile</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <h4>SGID ArcGIS Hub services and downloads</h4>
+    <div>
+      <span class="block">This data is available in the <a href="/products/sgid/open-sgid">SGID ArcGIS Hub</a></span>
+      <ul>
+        <li>
+          <a href={`https://opendata.gis.utah.gov/datasets/${id}`}>SGID ArcGIS Hub Downloads and APIs</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <h4>Open SGID</h4>
+    <div>
+      <span class="block"
+        >This data is available in the <a href="/products/sgid/open-sgid">Open SGID</a> as
+        <code>{openSgid}</code></span
+      >
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+---
+import ButtonLink from '@components/page/ButtonLink.astro';
+
+const { category, type, stewards, application } = Astro.props;
+---
+
+<div class="flex flex-col gap-x-2 border-t border-primary/30 pt-6 text-sm font-medium md:flex-row dark:border-white/30">
+  <span>
+    <span class="font-semibold text-primary dark:text-white">Category:</span>{' '}<span>{category}</span>
+  </span>
+  <span>
+    <span class="font-semibold text-primary dark:text-white">Data Type:</span>{' '}<span>{type}</span>
+  </span>
+  <span>
+    <span class="font-semibold text-primary dark:text-white"
+      >{stewards?.length === 1 ? 'Steward' : 'Stewards'}:{' '}</span
+    ><span>{stewards?.join(' & ')}</span>
+  </span>
+</div>

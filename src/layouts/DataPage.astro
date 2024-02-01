@@ -1,0 +1,29 @@
+---
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+interface Props {
+  title: string;
+  subTitle?: string;
+  category?: string;
+}
+
+const { title = 'UGRC', subTitle, category = '' } = Astro.props;
+---
+
+<Layout title={category}>
+  <Section title={title} subTitle={subTitle} stripe>
+    <slot name="metadata" />
+    <!-- <h2>Summary</h2> -->
+    <slot name="summary" />
+    <slot name="application-link" />
+    <!-- <h2>Description</h2> -->
+    <slot name="description" />
+    <slot name="disclaimer" />
+  </Section>
+  <Section title="Use the data">
+    <slot name="downloads" />
+  </Section>
+  <slot name="more-resources" />
+  <slot name="you-might-also-like" />
+</Layout>
