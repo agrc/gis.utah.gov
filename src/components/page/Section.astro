@@ -1,13 +1,15 @@
 ---
-import ButtonLink from './ButtonLink.astro';
+import ButtonLink from '@components/page/ButtonLink.astro';
+import SectionTitle from '@components/page/supporting/SectionTitle.astro';
 interface Props {
   actionUrl?: string;
   actionText?: string;
   title?: string;
+  subTitle?: string;
   stripe?: boolean;
   primary?: boolean;
 }
-const { actionUrl, actionText, title, stripe, primary } = Astro.props;
+const { actionUrl, actionText, title, subTitle, stripe, primary } = Astro.props;
 const hasImage = await Astro.slots.render('image');
 ---
 
@@ -21,14 +23,7 @@ const hasImage = await Astro.slots.render('image');
       : 'bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300',
   ]}
 >
-  {
-    title && (
-      <div class="mx-auto max-w-prose px-8 pb-6 text-center md:max-w-screen-lg">
-        <h1 class="text-2xl font-bold md:text-3xl">{title}</h1>
-        <slot name="quick-links" />
-      </div>
-    )
-  }
+  {title && <SectionTitle title={title} subTitle={subTitle} />}
   <div class="flex justify-center px-6">
     <div
       class:list={[
