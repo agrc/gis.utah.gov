@@ -76,6 +76,9 @@ export const Menu = ({ currentUri }) => {
                 <ListItem href="/solutions/gis-integration" title="Integrating GIS">
                   Read how GIS can fit in your business.
                 </ListItem>
+                <ListItem href="/solutions/high-precision-location" title="High precision location">
+                  Use cases for centimeter GPS precision.
+                </ListItem>
               </MegaMenuItem>
             </MegaMenuChrome>
           </NavigationMenu.Content>
@@ -174,6 +177,7 @@ export const SmallMenu = ({ currentUri }) => (
                     <MobileListItem href="/solutions/911">Emergency response (911)</MobileListItem>
                     <MobileListItem href="/solutions/gis-strategy">GIS strategy</MobileListItem>
                     <MobileListItem href="/solutions/gis-integration">Integrating GIS</MobileListItem>
+                    <MobileListItem href="/solutions/high-precision-location">High Precision Location</MobileListItem>
                   </NavigationMenu.Item>
                 </NavigationMenu.List>
               </NavigationMenu.Content>

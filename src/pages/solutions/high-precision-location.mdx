@@ -1,0 +1,70 @@
+---
+title: High precision location
+quickLinks:
+  - name: heading
+    anchor: anchor-link
+---
+
+import Layout from '@layouts/FullWidth.astro';
+import Section from '@components/page/Section.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import { Image } from 'astro:assets';
+
+import mapPhoto from '@images/solutions/map.svg';
+import rocketPhoto from '@images/solutions/rocket.svg';
+import developmentPhoto from '@images/solutions/development.svg';
+import enhancePhoto from '@images/solutions/enhance.svg';
+
+<Layout title={frontmatter.title}>
+  <Section title="High precision location" stripe>
+  <QuickLinks links={frontmatter.quickLinks} slot="quick-links" />
+    <Image
+      slot="image"
+      src={developmentPhoto}
+      loading="eager"
+      alt="a person with a prototype on an easel and the app partially built on a phone"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+
+      - Mainly related to uses of TURN
+      - E.g. Delivery of medications via drone to cancer patients (with U Cancer Institute)
+      - Driverless vehicles
+      - drones
+      - GSL causeway project (lake height monitoring?)
+      - Weather monitoring
+      - Audience
+      - BOR
+      - Higher ed
+
+  </Section>
+  <Section title="Driverless vehicles">
+    <Image
+      slot="image"
+      src={rocketPhoto}
+      alt="a rocket ship launching off a screen"
+      class="w-full max-w-[400px]"
+    />
+
+  </Section>
+  <Section title="Drones" actionText="View our base maps" actionUrl="/products/discover" stripe>
+    <Image
+      slot="image"
+      src={mapPhoto}
+      alt="two people holding a map"
+      class="w-full max-w-[400px]"
+    />
+
+  </Section>
+  <Section title="Monitoring" actionText="Browse our data" actionUrl="/products/sgid">
+    <Image
+      slot="image"
+      src={enhancePhoto}
+      alt="a person with a box labeled v2 that is upgrading their application"
+      class="w-full max-w-[400px]"
+    />
+
+  </Section>
+  <Section title="Weather" stripe>
+
+  </Section>
+</Layout>
