@@ -16,15 +16,13 @@ quickLinks:
 import Layout from '@layouts/FullWidth.astro';
 import Section from '@components/page/Section.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
-import Blockquote from '@components/page/Blockquote.astro';
 import { Image } from 'astro:assets';
 
-export const components = { blockquote: Blockquote };
 import dataPhoto from '@images/solutions/data.svg';
 import studentPhoto from '@images/solutions/students.svg';
 
 <Layout title={frontmatter.title}>
-  <Section stripe title="Solutions for GIS users">
+  <Section title="Solutions for GIS users" stripe>
   <QuickLinks links={frontmatter.quickLinks} slot="quick-links" />
     <Image
       slot="image"
@@ -58,7 +56,7 @@ import studentPhoto from '@images/solutions/students.svg';
 
 
   </Section>
-  <Section stripe title="UGRC API">
+  <Section title="UGRC API" stripe>
 
     The UGRC API is designed for users who want to interact with the SGID through an Application Programming Interface (API). Users query the SGID through web calls often from a desktop or web application. Returned results are then processed on the client side, suiting the needs of the specific application.
 
@@ -76,7 +74,7 @@ import studentPhoto from '@images/solutions/students.svg';
     You can learn more, including how to access them, on our address locator page.
 
   </Section>
-  <Section stripe title="Base maps and Imagery ">
+  <Section title="Base maps and Imagery" stripe>
 
     All mapping projects should begin with a beautiful base map. Base maps are a great way to bring your data to life. They give your data context by putting it on the map.
 

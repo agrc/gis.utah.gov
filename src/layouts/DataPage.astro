@@ -12,7 +12,7 @@ const { title = 'UGRC', subTitle, category = '' } = Astro.props;
 ---
 
 <Layout title={category}>
-  <Section title={title} subTitle={subTitle} stripe>
+  <Section title={title} subTitle={subTitle} stripe titlePosition="center">
     <slot name="metadata" />
     <!-- <h2>Summary</h2> -->
     <slot name="summary" />
@@ -21,7 +21,7 @@ const { title = 'UGRC', subTitle, category = '' } = Astro.props;
     <slot name="description" />
     <slot name="disclaimer" />
   </Section>
-  <Section title="Use the data">
+  <Section title="Use the data" titlePosition="center">
     <slot name="downloads" />
   </Section>
   <slot name="more-resources" />

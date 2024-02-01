@@ -81,66 +81,60 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     </Section>
   </Fragment>
 
-  <Fragment slot="popular-resources">
-    <Section title="Popular Discover Resources">
-      <GridForPopularResources>
-        <CardWithPopularLink title="Raster discovery app" href="https://raster.utah.gov">
-          Download NAIP and HRO imagery.
-        </CardWithPopularLink>
-        <CardWithPopularLink title="Licensed access details" href="/products/discover/license">
-          Who qualifies and why.
-        </CardWithPopularLink>
-        <CardWithPopularLink title="Discover the docs" href="/products/discover/resources"
-          >Discover new ways to use Discover
-        </CardWithPopularLink>
-        <CardWithPopularLink title="Atlas" href="https://atlas.utah.gov"
-          >Explore our base maps and licensed imagery in your browser- no account required!
-        </CardWithPopularLink>
-      </GridForPopularResources>
-    </Section>
-  </Fragment>
+  <Section title="Popular Discover Resources" slot="popular-resources" titlePosition="center">
+    <GridForPopularResources>
+      <CardWithPopularLink title="Raster discovery app" href="https://raster.utah.gov">
+        Download NAIP and HRO imagery.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="Licensed access details" href="/products/discover/license">
+        Who qualifies and why.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="Discover the docs" href="/products/discover/resources"
+        >Discover new ways to use Discover
+      </CardWithPopularLink>
+      <CardWithPopularLink title="Atlas" href="https://atlas.utah.gov"
+        >Explore our base maps and licensed imagery in your browser- no account required!
+      </CardWithPopularLink>
+    </GridForPopularResources>
+  </Section>
 
-  <Fragment slot="more-resources">
-    <Section title="More Discover Resources" stripe>
-      <GridForMoreResources>
-        <CardWithSideImage title="Citing your sources" actionUrl="/documentation/policy/citation">
-          <Image
-            slot="image"
-            src={images[`${location}cite.svg`]()}
-            alt="a computer with a lock on the screen"
-            class="self-center"
-          />
-          Using the licensed imagery may require additional citation.
-        </CardWithSideImage>
-        <CardWithSideImage title="Base map update schedule" actionUrl="/">
-          <Image
-            slot="image"
-            src={images[`${location}schedule.svg`]()}
-            alt="a person checking out at the grocery store"
-            class="self-center"
-          />
-          See when your favorite base map was last updated with our authoritative data.
-        </CardWithSideImage>
-      </GridForMoreResources>
-    </Section>
-  </Fragment>
+  <Section title="More Discover Resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithSideImage title="Citing your sources" actionUrl="/documentation/policy/citation">
+        <Image
+          slot="image"
+          src={images[`${location}cite.svg`]()}
+          alt="a computer with a lock on the screen"
+          class="self-center"
+        />
+        Using the licensed imagery may require additional citation.
+      </CardWithSideImage>
+      <CardWithSideImage title="Base map update schedule" actionUrl="/">
+        <Image
+          slot="image"
+          src={images[`${location}schedule.svg`]()}
+          alt="a person checking out at the grocery store"
+          class="self-center"
+        />
+        See when your favorite base map was last updated with our authoritative data.
+      </CardWithSideImage>
+    </GridForMoreResources>
+  </Section>
 
-  <Fragment slot="you-might-also-like">
-    <Section title="You might also like">
-      <GridForYouMightLike>
-        <CardWithSmallLink title="SGID" href="/products/sgid">
-          View the data from the base maps in the SGID.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="UGS aerial imagery database" href="https://imagery.geology.utah.gov/"
-          >Travel back in time with historic imagery.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="USGS TopoView" href="https://ngmdb.usgs.gov/topoview/"
-          >Explore, interact, and download topographic maps from the USGS free of charge.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="USGS EarthExplorer" href="https://earthexplorer.usgs.gov/"
-          >Download vector, topographical, and remote sensing data.
-        </CardWithSmallLink>
-      </GridForYouMightLike>
-    </Section>
-  </Fragment>
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="SGID" href="/products/sgid">
+        View the data from the base maps in the SGID.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="UGS aerial imagery database" href="https://imagery.geology.utah.gov/"
+        >Travel back in time with historic imagery.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="USGS TopoView" href="https://ngmdb.usgs.gov/topoview/"
+        >Explore, interact, and download topographic maps from the USGS free of charge.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="USGS EarthExplorer" href="https://earthexplorer.usgs.gov/"
+        >Download vector, topographical, and remote sensing data.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
 </Layout>

@@ -16,98 +16,90 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
 ---
 
 <Layout title="Collaboration">
-  <Fragment slot="popular-level-ones">
-    <Section stripe>
-      <GridForPillars>
-        <CardWithTopImage title="Community" actionUrl="/collaboration/community">
-          <Image
-            slot="image"
-            src={images['/src/images/product-sgid/sgid-index.svg']()}
-            alt="a person using a search engine"
-            class="block h-44"
-          />
-          blah blah blah
-        </CardWithTopImage>
-        <CardWithTopImage title="Events" actionUrl="/collaboration/events">
-          <Image
-            slot="image"
-            src={images['/src/images/product-sgid/open-sgid.svg']()}
-            alt="a person connected to a database"
-            class="block h-44"
-          />
-          yada yada yada
-        </CardWithTopImage>
-        <CardWithTopImage title="Resources" actionUrl="https://api.mapserv.utah.gov/">
-          <Image
-            slot="image"
-            src={images['/src/images/product-sgid/sgid-opendata.svg']()}
-            alt="people connected to a network through geography"
-            class="block h-44"
-          />
-          blerg blerg blerg
-        </CardWithTopImage>
-      </GridForPillars>
-    </Section>
-  </Fragment>
+  <Section slot="popular-level-ones" stripe titlePosition="center">
+    <GridForPillars>
+      <CardWithTopImage title="Community" actionUrl="/collaboration/community">
+        <Image
+          slot="image"
+          src={images['/src/images/product-sgid/sgid-index.svg']()}
+          alt="a person using a search engine"
+          class="block h-44"
+        />
+        blah blah blah
+      </CardWithTopImage>
+      <CardWithTopImage title="Events" actionUrl="/collaboration/events">
+        <Image
+          slot="image"
+          src={images['/src/images/product-sgid/open-sgid.svg']()}
+          alt="a person connected to a database"
+          class="block h-44"
+        />
+        yada yada yada
+      </CardWithTopImage>
+      <CardWithTopImage title="Resources" actionUrl="https://api.mapserv.utah.gov/">
+        <Image
+          slot="image"
+          src={images['/src/images/product-sgid/sgid-opendata.svg']()}
+          alt="people connected to a network through geography"
+          class="block h-44"
+        />
+        blerg blerg blerg
+      </CardWithTopImage>
+    </GridForPillars>
+  </Section>
 
-  <Fragment slot="popular-resources">
-    <Section title="Popular Documentation Resources">
-      <GridForPopularResources>
-        <CardWithPopularLink title="UGIC" href="/collaboration/events/ugic">present or join</CardWithPopularLink>
-        <CardWithPopularLink title="Maps on the Hill" href="/collaboration/events/moth">
-          participate
-        </CardWithPopularLink>
-        <CardWithPopularLink title="Presentations" href="/collaboration/resources/presentations">
-          UGRC presentations
-        </CardWithPopularLink>
-        <CardWithPopularLink title="User Groups" href="/collaboration/community/user-groups">
-          Connect with Utah GIS user groups
-        </CardWithPopularLink>
-      </GridForPopularResources>
-    </Section>
-  </Fragment>
+  <Section title="Popular Documentation Resources" slot="popular-resources" titlePosition="center">
+    <GridForPopularResources>
+      <CardWithPopularLink title="UGIC" href="/collaboration/events/ugic">present or join</CardWithPopularLink>
+      <CardWithPopularLink title="Maps on the Hill" href="/collaboration/events/moth">
+        participate
+      </CardWithPopularLink>
+      <CardWithPopularLink title="Presentations" href="/collaboration/resources/presentations">
+        UGRC presentations
+      </CardWithPopularLink>
+      <CardWithPopularLink title="User Groups" href="/collaboration/community/user-groups">
+        Connect with Utah GIS user groups
+      </CardWithPopularLink>
+    </GridForPopularResources>
+  </Section>
 
-  <Fragment slot="more-resources">
-    <Section title="More Community Resources" stripe>
-      <GridForMoreResources>
-        <CardWithSideImage title="NSGIC" actionUrl="/collaboration/community/user-groups/nsgic">
-          <Image
-            slot="image"
-            src={images['/src/images/product-sgid/license-disclaimer.svg']()}
-            alt="man in front of warning sign"
-            class="self-center"
-          />
-          Nationsl States Geographic Information Council
-        </CardWithSideImage>
-        <CardWithSideImage title="GISAC" actionUrl="/collaboration/community/user-groups/GISAC">
-          <Image
-            slot="image"
-            src={images['/src/images/product-sgid/data-sharing-agreement.svg']()}
-            alt="people shaking hands"
-            class="self-center"
-          />
-          Geographic Information Systems Advisory Committee
-        </CardWithSideImage>
-      </GridForMoreResources>
-    </Section>
-  </Fragment>
+  <Section title="More Community Resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithSideImage title="NSGIC" actionUrl="/collaboration/community/user-groups/nsgic">
+        <Image
+          slot="image"
+          src={images['/src/images/product-sgid/license-disclaimer.svg']()}
+          alt="man in front of warning sign"
+          class="self-center"
+        />
+        Nationsl States Geographic Information Council
+      </CardWithSideImage>
+      <CardWithSideImage title="GISAC" actionUrl="/collaboration/community/user-groups/GISAC">
+        <Image
+          slot="image"
+          src={images['/src/images/product-sgid/data-sharing-agreement.svg']()}
+          alt="people shaking hands"
+          class="self-center"
+        />
+        Geographic Information Systems Advisory Committee
+      </CardWithSideImage>
+    </GridForMoreResources>
+  </Section>
 
-  <Fragment slot="you-might-also-like">
-    <Section title="You might also like">
-      <GridForYouMightLike>
-        <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
-          This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
-          by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's
-          current and authoritative datasets.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
-          Discover spatial data and tools that empower informed land management decisions
-        </CardWithSmallLink>
-        <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
-          Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
-          management.
-        </CardWithSmallLink>
-      </GridForYouMightLike>
-    </Section>
-  </Fragment>
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
+        This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
+        by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's current
+        and authoritative datasets.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+        Discover spatial data and tools that empower informed land management decisions
+      </CardWithSmallLink>
+      <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
+        Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
+        management.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
 </Layout>

@@ -94,70 +94,64 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     </Section>
   </Fragment>
 
-  <Fragment slot="popular-resources">
-    <Section title="Popular API Resources">
-      <GridForPopularResources>
-        <CardWithPopularLink
-          title="Sample Code"
-          href="https://github.com/agrc/api.mapserv.utah.gov/tree/development/samples"
-        >
-          Sample code calling the API in multiple programming languages
-        </CardWithPopularLink>
-        <CardWithPopularLink title="dart-board" href="https://www.npmjs.com/package/@ugrc/dart-board">
-          A react component for geocoding addresses and route/mileposts using UGRC's API.
-        </CardWithPopularLink>
-        <CardWithPopularLink title="sherlock" href="https://www.npmjs.com/package/@ugrc/sherlock">
-          A react component for searching for data and zooming to it on an ArcGIS map using UGRC's API as well as other
-          providers.
-        </CardWithPopularLink>
-        <CardWithPopularLink title="masquerade" href="https://github.com/agrc/masquerade">
-          A proxy service that impersonates an Esri locator using the UGRC API and SGID data.
-        </CardWithPopularLink>
-      </GridForPopularResources>
-    </Section>
-  </Fragment>
+  <Section title="Popular API Resources" slot="popular-resources" titlePosition="center">
+    <GridForPopularResources>
+      <CardWithPopularLink
+        title="Sample Code"
+        href="https://github.com/agrc/api.mapserv.utah.gov/tree/development/samples"
+      >
+        Sample code calling the API in multiple programming languages
+      </CardWithPopularLink>
+      <CardWithPopularLink title="dart-board" href="https://www.npmjs.com/package/@ugrc/dart-board">
+        A react component for geocoding addresses and route/mileposts using UGRC's API.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="sherlock" href="https://www.npmjs.com/package/@ugrc/sherlock">
+        A react component for searching for data and zooming to it on an ArcGIS map using UGRC's API as well as other
+        providers.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="masquerade" href="https://github.com/agrc/masquerade">
+        A proxy service that impersonates an Esri locator using the UGRC API and SGID data.
+      </CardWithPopularLink>
+    </GridForPopularResources>
+  </Section>
 
-  <Fragment slot="more-resources">
-    <Section title="More API Resources" stripe>
-      <GridForMoreResources>
-        <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
-          <Image
-            slot="image"
-            src={images['/src/images/product-api/privacy.svg']()}
-            alt="a computer with a lock on the screen"
-            class="self-center"
-          />
-          UGRC's data license and general data disclaimer.
-        </CardWithSideImage>
-        <CardWithSideImage title="API Self Service" actionUrl="https://ut-dts-agrc-web-api-dev-self-service.web.app/">
-          <Image
-            slot="image"
-            src={images['/src/images/product-api/self-service.svg']()}
-            alt="a person checking out at the grocery store"
-            class="self-center"
-          />
-          The self service website to create, manage, and view analyics for your API keys.
-        </CardWithSideImage>
-      </GridForMoreResources>
-    </Section>
-  </Fragment>
+  <Section title="More API Resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
+        <Image
+          slot="image"
+          src={images['/src/images/product-api/privacy.svg']()}
+          alt="a computer with a lock on the screen"
+          class="self-center"
+        />
+        UGRC's data license and general data disclaimer.
+      </CardWithSideImage>
+      <CardWithSideImage title="API Self Service" actionUrl="https://ut-dts-agrc-web-api-dev-self-service.web.app/">
+        <Image
+          slot="image"
+          src={images['/src/images/product-api/self-service.svg']()}
+          alt="a person checking out at the grocery store"
+          class="self-center"
+        />
+        The self service website to create, manage, and view analyics for your API keys.
+      </CardWithSideImage>
+    </GridForMoreResources>
+  </Section>
 
-  <Fragment slot="you-might-also-like">
-    <Section title="You might also like">
-      <GridForYouMightLike>
-        <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
-          This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
-          by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's
-          current and authoritative datasets.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
-          Discover spatial data and tools that empower informed land management decisions
-        </CardWithSmallLink>
-        <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
-          Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
-          management.
-        </CardWithSmallLink>
-      </GridForYouMightLike>
-    </Section>
-  </Fragment>
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
+        This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
+        by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's current
+        and authoritative datasets.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+        Discover spatial data and tools that empower informed land management decisions
+      </CardWithSmallLink>
+      <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
+        Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
+        management.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
 </Layout>

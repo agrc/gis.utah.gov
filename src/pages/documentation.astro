@@ -51,7 +51,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
   </Fragment>
 
   <Fragment slot="popular-resources">
-    <Section title="Popular Documentation Resources">
+    <Section title="Popular Documentation Resources" titlePosition="center">
       <GridForPopularResources>
         <CardWithPopularLink title="Policies" href="/documentation/policy">UGRC Policies</CardWithPopularLink>
         <CardWithPopularLink title="TURN GPS" href="/documentation/turn">
@@ -66,7 +66,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
   </Fragment>
 
   <Fragment slot="more-resources">
-    <Section title="More Documentation Resources" stripe>
+    <Section title="More Documentation Resources" stripe titlePosition="center">
       <GridForMoreResources>
         <CardWithSideImage title="Masquerade" actionUrl="/documentation/masquerade">
           <Image
@@ -91,7 +91,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
   </Fragment>
 
   <Fragment slot="you-might-also-like">
-    <Section title="You might also like">
+    <Section title="You might also like" titlePosition="center">
       <GridForYouMightLike>
         <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
           This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable

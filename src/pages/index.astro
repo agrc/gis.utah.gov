@@ -65,7 +65,7 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
       </CardWithTopImage>
     </GridForPillars>
   </Section>
-  <Section stripe primary title="Latest News" actionText="Read more news" actionUrl="/blog">
+  <Section title="Latest News" actionText="Read more news" actionUrl="/blog" stripe primary titlePosition="center">
     <GridForLatestNews>
       {
         posts.map((post) => (
@@ -79,9 +79,9 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
       }
     </GridForLatestNews>
   </Section>
-  <Section title="You might also like">
+  <Section title="You might also like" titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Explore Utah data on ArcGIS Hub" href="https://opendata.gis.utah.gov/"
+      <CardWithSmallLink title="Explore Utah data on ArcGIS" href="https://opendata.gis.utah.gov/"
         >Download and use web services in your maps, apps, and projects.</CardWithSmallLink
       >
       <CardWithSmallLink title="UGRC Projects" href="https://github.com/agrc"

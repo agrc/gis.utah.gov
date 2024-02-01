@@ -71,7 +71,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
           most GIS programs and common database clients.
         </CardWithTopImage>
         <CardWithTopImage
-          title="SGID ArcGIS Hub"
+          title="SGID on ArcGIS"
           actionText="Explore Utah data"
           actionUrl="https://opendata.gis.utah.gov/"
         >
@@ -81,7 +81,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             alt="people connected to a network through geography"
             class="block h-44"
           />
-          The SGID ArcGIS Hub site is a single destination for GIS resources hosted in multiple agencies. Each item in the
+          The SGID on ArcGIS site is a single destination for GIS resources hosted in multiple agencies. Each item in the
           Hub contains data download links along with web service links for consuming the datasets in webmaps and other applications.
           We share all our curated datasets through the site and encourage other agencies and organizations to <a
             href="{% link sharing/index.md %}">share</a
@@ -91,71 +91,65 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     </Section>
   </Fragment>
 
-  <Fragment slot="popular-resources">
-    <Section title="Popular SGID Resources">
-      <GridForPopularResources>
-        <CardWithPopularLink title="ArcGIS Online Services" href="https://utah.maps.arcgis.com/home/groups.html">
-          Browse ArcGIS Online services
-        </CardWithPopularLink>
-        <CardWithPopularLink title="The Raster Discovery App" href="/products/discover/raster">
-          Search raster data
-        </CardWithPopularLink>
-        <CardWithPopularLink title="Discover Base map and Imagery Services" href="/products/discover">
-          Access several raster products, including our aerial imagery products and the high-quality, Utah-specific base
-          maps.
-        </CardWithPopularLink>
-        <CardWithPopularLink title="UGRC API" href="http://api.mapserv.utah.gov">
-          Access SGID datasets and geocoding without complicated or costly software
-        </CardWithPopularLink>
-      </GridForPopularResources>
-    </Section>
-  </Fragment>
+  <Section title="Popular SGID Resources" slot="popular-resources" titlePosition="center">
+    <GridForPopularResources>
+      <CardWithPopularLink title="ArcGIS Online Services" href="https://utah.maps.arcgis.com/home/groups.html">
+        Browse ArcGIS Online services
+      </CardWithPopularLink>
+      <CardWithPopularLink title="The Raster Discovery App" href="/products/discover/raster">
+        Search raster data
+      </CardWithPopularLink>
+      <CardWithPopularLink title="Discover Base map and Imagery Services" href="/products/discover">
+        Access several raster products, including our aerial imagery products and the high-quality, Utah-specific base
+        maps.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="UGRC API" href="http://api.mapserv.utah.gov">
+        Access SGID datasets and geocoding without complicated or costly software
+      </CardWithPopularLink>
+    </GridForPopularResources>
+  </Section>
 
-  <Fragment slot="more-resources">
-    <Section title="More SGID Resources" stripe>
-      <GridForMoreResources>
-        <CardWithSideImage title="Data and license disclaimer" actionUrl="/products/sgid/disclaimer">
-          <Image
-            slot="image"
-            src={images[`${location}/license-disclaimer.svg`]()}
-            alt="man in front of warning sign"
-            class="self-center"
-          />
-          UGRC's data license and general data disclaimer.
-        </CardWithSideImage>
-        <CardWithSideImage title="Data sharing agreement" actionUrl="/products/sgid/sharing">
-          <Image
-            slot="image"
-            src={images[`${location}/data-sharing-agreement.svg`]()}
-            alt="people shaking hands"
-            class="self-center"
-          />
-          Agreement between UGRC and data stewards for data shared through the SGID.
-        </CardWithSideImage>
-      </GridForMoreResources>
-    </Section>
-  </Fragment>
+  <Section title="More SGID Resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithSideImage title="Data and license disclaimer" actionUrl="/products/sgid/disclaimer">
+        <Image
+          slot="image"
+          src={images[`${location}/license-disclaimer.svg`]()}
+          alt="man in front of warning sign"
+          class="self-center"
+        />
+        UGRC's data license and general data disclaimer.
+      </CardWithSideImage>
+      <CardWithSideImage title="Data sharing agreement" actionUrl="/products/sgid/sharing">
+        <Image
+          slot="image"
+          src={images[`${location}/data-sharing-agreement.svg`]()}
+          alt="people shaking hands"
+          class="self-center"
+        />
+        Agreement between UGRC and data stewards for data shared through the SGID.
+      </CardWithSideImage>
+    </GridForMoreResources>
+  </Section>
 
-  <Fragment slot="you-might-also-like">
-    <Section title="You might also like">
-      <GridForYouMightLike>
-        <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
-          This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
-          by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's
-          current and authoritative datasets.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
-          Discover spatial data and tools that empower informed land management decisions
-        </CardWithSmallLink>
-        <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
-          Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
-          management.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="DEQ Data Portal" href="https://utahdeq.maps.arcgis.com/home/index.html">
-          Explore spatial data relevant to safeguarding and improving Utah’s air, land and water through balanced
-          regulation.
-        </CardWithSmallLink>
-      </GridForYouMightLike>
-    </Section>
-  </Fragment>
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
+        This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
+        by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's current
+        and authoritative datasets.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+        Discover spatial data and tools that empower informed land management decisions
+      </CardWithSmallLink>
+      <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
+        Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
+        management.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="DEQ Data Portal" href="https://utahdeq.maps.arcgis.com/home/index.html">
+        Explore spatial data relevant to safeguarding and improving Utah’s air, land and water through balanced
+        regulation.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
 </Layout>

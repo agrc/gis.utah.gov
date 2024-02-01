@@ -44,7 +44,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
         <CardWithTopImage
           title="Registration"
           actionText="Register now"
-          actionUrl="https://turngps-subscription.ugrc.utah.gov"
+          actionUrl="https://turngps-billpay.ugrc.utah.gov"
         >
           <Image
             slot="image"
@@ -80,60 +80,54 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     </Section>
   </Fragment>
 
-  <Fragment slot="popular-resources">
-    <Section title="Popular TURN Resources">
-      <GridForPopularResources>
-        <CardWithPopularLink title="TURN Network Map" href="https://arcg.is/0SG5ra0">
-          View all of GPS station information in one place.
-        </CardWithPopularLink>
-        <CardWithPopularLink title="TURN Sensor map" href="https://turngps.utah.gov/Map/SensorMap.aspx">
-          GPS Sensor map health and information.
-        </CardWithPopularLink>
-      </GridForPopularResources>
-    </Section>
-  </Fragment>
+  <Section title="Popular TURN Resources" slot="popular-resources" titlePosition="center">
+    <GridForPopularResources>
+      <CardWithPopularLink title="TURN Network Map" href="https://arcg.is/0SG5ra0">
+        View all of GPS station information in one place.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="TURN Sensor map" href="https://turngps.utah.gov/Map/SensorMap.aspx">
+        GPS Sensor map health and information.
+      </CardWithPopularLink>
+    </GridForPopularResources>
+  </Section>
 
-  <Fragment slot="more-resources">
-    <Section title="More TURN Resources" stripe>
-      <GridForMoreResources>
-        <CardWithSideImage title="TURN PDF wall map" actionUrl="/documentation/policy/citation">
-          <Image
-            slot="image"
-            src={images[`${location}map.svg`]()}
-            alt="a person holding a map with pins on it"
-            class="self-center"
-          />
-          Hang the network on your wall.
-        </CardWithSideImage>
-        <CardWithSideImage title="Empty" actionUrl="/">
-          <Image
-            slot="image"
-            src={images[`${location}map.svg`]()}
-            alt="a person checking out at the grocery store"
-            class="self-center"
-          />
-          Description
-        </CardWithSideImage>
-      </GridForMoreResources>
-    </Section>
-  </Fragment>
+  <Section title="More TURN Resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithSideImage title="TURN PDF wall map" actionUrl="/documentation/policy/citation">
+        <Image
+          slot="image"
+          src={images[`${location}map.svg`]()}
+          alt="a person holding a map with pins on it"
+          class="self-center"
+        />
+        Hang the network on your wall.
+      </CardWithSideImage>
+      <CardWithSideImage title="Empty" actionUrl="/">
+        <Image
+          slot="image"
+          src={images[`${location}map.svg`]()}
+          alt="a person checking out at the grocery store"
+          class="self-center"
+        />
+        Description
+      </CardWithSideImage>
+    </GridForMoreResources>
+  </Section>
 
-  <Fragment slot="you-might-also-like">
-    <Section title="You might also like">
-      <GridForYouMightLike>
-        <CardWithSmallLink title="SGID" href="/products/sgid">
-          View the data from the base maps in the SGID.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="UGS aerial imagery database" href="https://imagery.geology.utah.gov/"
-          >Travel back in time with historic imagery.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="USGS TopoView" href="https://ngmdb.usgs.gov/topoview/"
-          >Explore, interact, and download topographic maps from the USGS free of charge.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="USGS EarthExplorer" href="https://earthexplorer.usgs.gov/"
-          >Download vector, topographical, and remote sensing data.
-        </CardWithSmallLink>
-      </GridForYouMightLike>
-    </Section>
-  </Fragment>
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="SGID" href="/products/sgid">
+        View the data from the base maps in the SGID.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="UGS aerial imagery database" href="https://imagery.geology.utah.gov/"
+        >Travel back in time with historic imagery.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="USGS TopoView" href="https://ngmdb.usgs.gov/topoview/"
+        >Explore, interact, and download topographic maps from the USGS free of charge.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="USGS EarthExplorer" href="https://earthexplorer.usgs.gov/"
+        >Download vector, topographical, and remote sensing data.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
 </Layout>
