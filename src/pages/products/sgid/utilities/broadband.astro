@@ -28,8 +28,11 @@ const hub = {
 
 <Layout title={metadata.title} subTitle={metadata.lastUpdate} category={metadata.category}>
   <Metadata slot="metadata" {...metadata} />
+
   <ApplicationLink slot="application-link" href={metadata.application} />
+
   <Downloads slot="downloads" {...hub} />
+
   <Fragment slot="summary">
     <p>
       Broadband service areas depicts broadband coverage over any transmission technology, including fixed and mobile
@@ -38,6 +41,7 @@ const hub = {
       from Fall 2015. For broadband coverage previous to Fall 2015, see // TODO: needs link SBI Broadband Data.
     </p>
   </Fragment>
+
   <Fragment slot="description">
     <h3>Attribute schema explanation</h3>
     <ul class="pl-4">
@@ -67,6 +71,7 @@ const hub = {
       </li><li><code class="font-semibold">80</code>: Terrestrial Mobile Wireless</li>
     </ul>
   </Fragment>
+
   <Disclaimer slot="disclaimer">
     Broadband service availability and characteristics are depicted as derived from data assembled by the Utah Broadband
     Outreach Center mapping team. Data sources include biannual broadband service provider submissions and publicly
@@ -79,41 +84,39 @@ const hub = {
     limited to the fitness for use for a particular purpose. This data is managed by UGRC for the Governor’s Office of
     Economic Development Broadband Outreach Center.
   </Disclaimer>
-  <Fragment slot="more-resources">
-    <Section title={`More ${metadata.title} resources`} stripe>
-      <GridForMoreResources>
-        <CardWithPopularLink title="GOEO" href="https://broadband.utah.gov/">
-          The Utah Broadband Center website.
-        </CardWithPopularLink>
-        <CardWithPopularLink
-          title="Historic data"
-          href="https://drive.google.com/drive/folders/1BwZ_p5bZVtewcQehU-o51el78eIHyQ1s"
-        >
-          File downloads of historic broadband coverage data.
-        </CardWithPopularLink>
-      </GridForMoreResources>
-    </Section>
-  </Fragment>
-  <Fragment slot="you-might-also-like">
-    <Section title="You might also like">
-      <GridForYouMightLike>
-        <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
-          This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
-          by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's
-          current and authoritative datasets.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
-          Discover spatial data and tools that empower informed land management decisions
-        </CardWithSmallLink>
-        <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
-          Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
-          management.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="DEQ Data Portal" href="https://utahdeq.maps.arcgis.com/home/index.html">
-          Explore spatial data relevant to safeguarding and improving Utah’s air, land and water through balanced
-          regulation.
-        </CardWithSmallLink>
-      </GridForYouMightLike>
-    </Section>
-  </Fragment>
+
+  <Section title={`More ${metadata.title} resources`} slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="GOEO" href="https://broadband.utah.gov/">
+        The Utah Broadband Center website.
+      </CardWithPopularLink>
+      <CardWithPopularLink
+        title="Historic data"
+        href="https://drive.google.com/drive/folders/1BwZ_p5bZVtewcQehU-o51el78eIHyQ1s"
+      >
+        File downloads of historic broadband coverage data.
+      </CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
+        This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
+        by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's current
+        and authoritative datasets.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+        Discover spatial data and tools that empower informed land management decisions
+      </CardWithSmallLink>
+      <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
+        Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
+        management.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="DEQ Data Portal" href="https://utahdeq.maps.arcgis.com/home/index.html">
+        Explore spatial data relevant to safeguarding and improving Utah’s air, land and water through balanced
+        regulation.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
 </Layout>

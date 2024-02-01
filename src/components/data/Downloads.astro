@@ -17,43 +17,30 @@ if (externalHubOrganization) {
 }
 ---
 
-<div class="grid grid-cols-1 gap-10 xl:grid-cols-3">
+<div class="grid grid-cols-1 gap-10 xl:grid-cols-2">
   <div>
-    <h4>Static file downloads</h4>
+    <h4>Evergreen Services</h4>
     <div>
-      <p class="text-sm">
-        The download links are provided by the SGID ArcGIS Hub. You can find more formats on the hub.
-      </p>
       <ul>
         <li>
-          <a href={`https://opendata.arcgis.com/datasets/${id}_${layerId}.gdb`}>File Geodatabase</a>
+          <a href={`https://opendata.arcgis.com/datasets/${id}_${layerId}.gdb`}>Esri Feature Service</a>
         </li>
         <li>
-          <a href={`https://opendata.arcgis.com/datasets/${id}_${layerId}.zip`}>Shapefile</a>
+          {openSgid} in the <a href="/products/sgid/open-sgid">Open SGID</a>
         </li>
       </ul>
     </div>
   </div>
 
   <div>
-    <h4>SGID ArcGIS Hub services and downloads</h4>
+    <h4>Download and Explore on SGID on ArcGIS</h4>
     <div>
-      <span class="block">This data is available in the <a href="/products/sgid/open-sgid">SGID ArcGIS Hub</a></span>
+      <span class="block">This data is available in the <a href="/products/sgid/open-sgid">SGID on ArcGIS</a></span>
       <ul>
         <li>
-          <a href={`https://opendata.gis.utah.gov/datasets/${id}`}>SGID ArcGIS Hub Downloads and APIs</a>
+          <a href={`https://opendata.gis.utah.gov/datasets/${id}`}>SGID on ArcGIS Downloads and APIs</a>
         </li>
       </ul>
-    </div>
-  </div>
-
-  <div>
-    <h4>Open SGID</h4>
-    <div>
-      <span class="block"
-        >This data is available in the <a href="/products/sgid/open-sgid">Open SGID</a> as
-        <code>{openSgid}</code></span
-      >
     </div>
   </div>
 </div>
