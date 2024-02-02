@@ -1,6 +1,7 @@
 {
   "files.associations": {
-    "*.html": "astro"
+    "*.html": "astro",
+    "*.mdx": "astro"
   },
   "cSpell.words": [
     "agol",
