@@ -4,11 +4,22 @@ import Section from '@components/page/Section.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 
+import { Image } from 'astro:assets';
+
 import { YouTube } from '@astro-community/astro-embed-youtube';
+
+import aboutUsPhoto from '@images/about/about-us.svg';
 ---
 
 <Layout title="About the UGRC">
   <Section title="Who is the UGRC">
+    <Image
+      slot="image"
+      src={aboutUsPhoto}
+      loading="eager"
+      alt="a person sitting in a char using a computer to work with maps and data"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
     <p>
       UGRC is the state's map technology coordination office. We aggregate and make available important statewide data
       sets (e.g. roads, address points) to the public and for government systems; engage and advise on GIS

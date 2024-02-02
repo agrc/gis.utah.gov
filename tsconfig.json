@@ -18,6 +18,9 @@
       "@images/sgid/*": [
         "src/images/product-sgid/*"
       ],
+      "@images/about/*": [
+        "src/images/pillar-about/*"
+      ],
     }
   }
 }
