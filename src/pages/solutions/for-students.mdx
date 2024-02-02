@@ -23,7 +23,12 @@ import { Image } from 'astro:assets';
 
 export const components = { blockquote: Blockquote };
 import dataPhoto from '@images/solutions/data.svg';
+import citePhoto from '@images/solutions/cite.svg';
+import metadataPhoto from '@images/solutions/metadata.svg';
 import studentPhoto from '@images/solutions/students.svg';
+import jobPhoto from '@images/solutions/jobs.svg';
+import conferencePhoto from '@images/solutions/conference.svg';
+import baseMapPhoto from '@images/solutions/base-map.svg';
 
 <Layout title={frontmatter.title}>
   <Section title="Solutions for Students" stripe>
@@ -56,7 +61,13 @@ import studentPhoto from '@images/solutions/students.svg';
     You can connect directly to the <a href="/products/open-sgid/">Open SGID</a> in your GIS software or access downloads and Esri web feature services through our <a href="https://opendata.gis.utah.gov">SGID Hub</a>. You can download our raster data (aerial imagery, DEMs, etc.) at https://raster.utah.gov.
 
   </Section>
-  <Section title="Base Maps and Imagery" stripe>
+  <Section title="Base maps and imagery" stripe>
+    <Image
+      slot="image"
+      src={baseMapPhoto}
+      alt="a person admiring a map on a wall"
+      class="w-full max-w-[400px]"
+    />
 
     Does your research project have you counting trees in aerial imagery? Or do you have data ready to map and just need a clean canvas to put it on? Our <a href="/products/discover/">Discover</a> base map and imagery web services provide access to both aerial imagery and our set of gorgeous <a href="/data/base-maps/">base maps</a> that you can use in both static and web maps.
 
@@ -65,7 +76,13 @@ import studentPhoto from '@images/solutions/students.svg';
     And don't worry, out-of-staters—we love you too! Anyone can sign up for general access to use our gorgeous base maps and the latest NAIP imagery.
 
   </Section>
-  <Section title="Conferences and Events">
+  <Section title="Conferences and events">
+    <Image
+      slot="image"
+      src={conferencePhoto}
+      alt="a person presenting at a conference"
+      class="w-full max-w-[400px]"
+    />
 
     Get your name out there! UGRC sponsors and helps out with many different GIS events throughout the year and is actively involved with the <a href="https://ugic.org/">Utah Geographic Information Council</a> (UGIC), the state's GIS community. Be sure to sign up for their newsletter!
 
@@ -74,17 +91,35 @@ import studentPhoto from '@images/solutions/students.svg';
     There are also local <a href="/collaboration/user-groups/">GIS user groups</a> that meet throughout the year. These meetings are great opportunities to network and learn from other GIS professionals.
 
   </Section>
-  <Section title="Jobs and Internships" stripe>
+  <Section title="Jobs and internships" stripe>
+    <Image
+      slot="image"
+      src={jobPhoto}
+      alt="a person with a magnifying glass looking at job postings on a computer screen"
+      class="w-full max-w-[400px]"
+    />
 
     GIS is useful in a broad spectrum of industries, and jobs and positions come available throughout the year. Be sure to sign up for the <a href="https://ugic.org/about-2/sign-up-for-our-email-list/">UGIC mailing list</a> to stay up-to-date on the latest local (and often regional) openings. Whenever we have an opening here at UGRC, we post it to the UGIC list. Local user groups often have their own mailing lists as well.
 
   </Section>
   <Section title="Metadata">
+    <Image
+      slot="image"
+      src={metadataPhoto}
+      alt="a person looking at a screen with a information bubbles around their face"
+      class="w-full max-w-[400px]"
+    />
 
     Looking for more information about our data? Check out our <a href="/data/">Data Pages</a>, where you'll find  updates schedules, field definitions, and other relevant tidbits.
 
   </Section>
   <Section title="Citations" stripe>
+    <Image
+      slot="image"
+      src={citePhoto}
+      alt="a pencil writing on a piece of paper"
+      class="w-full max-w-[400px]"
+    />
 
     Need to cite your source for a paper? Check out our <a href="/documentation/policy/license/">attribution page</a> for guidelines and examples.
 
