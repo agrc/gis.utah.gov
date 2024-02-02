@@ -16,28 +16,78 @@ quickLinks:
 import Layout from '@layouts/FullWidth.astro';
 import Section from '@components/page/Section.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
+import { Image } from 'astro:assets';
+
+import agreementPhoto from '@images/solutions/agreement.svg';
+import imaginationPhoto from '@images/solutions/imagination.svg';
+import applicationDevelopmentPhoto from '@images/solutions/application-development.svg';
+import dataSciencePhoto from '@images/solutions/data-science.svg';
+import accessiblePhoto from '@images/solutions/accessible.svg';
 
 <Layout title={frontmatter.title}>
-  <QuickLinks links={frontmatter.quickLinks}/>
-  <Section title="Consultation" stripe>
+  <Section title="Solutions for government agencies" stripe>
+  <QuickLinks links={frontmatter.quickLinks} slot="quick-links" />
 
-    - UGRC helps agencies to develop a GIS strategy to fulfill agency goals. UGRC works with agencies to create a plan to implement the most cost effective GIS solution.
-    - From big to small tasks, UGRC's involvement in mapping projects early on can help guide you to the best possible solution or something like that.
+    UGRC uses a cost recovery model to contract with State of Utah agencies to provide high quality, innovative, and cost effective GIS, mapping, and data-related solutions and services.
+
+    For example…
+
+    - UDOT ROW
+    - DHHS cooling towers
+    - Roadkill mobile app
+    - WRI or another business process app
+
+    With hundreds of years of combined experience in the geospatial world, we've seen and done a lot. No partnership is too big or small, and getting in touch with us early in your process often ensures the greatest return on your investment and the easiest pathway to success.
+
+    (AI-generated:)
+    Drawing on extensive experience in the geospatial field, we've encountered diverse challenges and accomplishments. Whether our partnership with you is large or small, reaching out to us early in your process typically guarantees optimal returns on investment and a smoother path to success.
+
+    Below are the common areas where we collaborate with other government agencies, yet we excel at everything “spatial”. Contact us today to start a conversation about how GIS and geospatial data can meet your agency's goals and business objectives, and how UGRC can help.
 
   </Section>
-  <Section title="Data transparency">
 
-    - UGRC helps agencies expose their data to users such as https://enviro.deq.utah.gov/
+  <Section title="Plan with us">
+    <Image
+      slot="image"
+      src={agreementPhoto}
+      alt="two people shaking hands in agreement"
+      class="w-full max-w-[400px]"
+    />
+
+    UGRC can help government agencies develop strategies and plans for implementing robust and effective GIS solutions to meet agency goals and their audience or constituents' needs. From troubleshooting and best practices to data-driven decision making, our extensive experience and expertise can be leveraged to guide a plan of action for a wide range of geospatial and mapping tasks and objectives. We are available to our government agency partners for ad hoc questions and ideation without any contractual obligations, yet more extensive consultation needs that require ample UGRC staff time and effort are considered a cost recovery service. Involve us early in your planning and let us know about your project so we can provide recommendations and help you consider the best possible options.
 
   </Section>
-  <Section title="Application Development" stripe>
+  <Section title="Make data accessible" stripe>
+    <Image
+      slot="image"
+      src={accessiblePhoto}
+      alt="a person breaking down a wall"
+      class="w-full max-w-[400px]"
+    />
+
+    Making data accessible is our forte. Since its inception, UGRC has been tasked with creating, aggregating, curating, promoting, and integrating authoritative Utah spatial data into important systems such as 911, elections, taxation, and many other services. If you need authoritative, available data, look to us first. If you are seeking to make your agency-specific data accessible for spatial analysis, mapping, and visualization, we can also help. More recently, we have built processes to automate the extraction, transformation, and loading (ETL) of data from a multitude of sources including sheets, databases, and SaaS products into mappable, analyzable data layers. We even have professional cartographers to create masterful hard copy maps of data layers for display, discussion, planning, and other purposes.
+
+  </Section>
+  <Section title="Application Development">
+    <Image
+      slot="image"
+      src={applicationDevelopmentPhoto}
+      alt="a person standing in front of a monitor holding a wrench with a crane in the background"
+      class="w-full max-w-[400px]"
+    />
 
     - Custom development. We can re-imagine your entire business process on the web carefully including the advantages of GIS. Examples
     - Configurable apps
     - Low code no code
 
   </Section>
-  <Section title="Analysis">
+  <Section title="Imagine it" stripe>
+    <Image
+      slot="image"
+      src={imaginationPhoto}
+      alt="two people placing puzzle pieces together in the shape of a road leading to a lightbulb"
+      class="w-full max-w-[400px]"
+    />
 
     - UGRC can help you find service areas for state buildings.
     - How many citizens can be served based on a 30 minute drive time
@@ -45,7 +95,13 @@ import QuickLinks from '@components/page/QuickLinks.astro';
     - corona virus work?
 
   </Section>
-  <Section title="Data aggregation" stripe>
+  <Section title="Data science">
+    <Image
+      slot="image"
+      src={dataSciencePhoto}
+      alt="beakers and a microscope"
+      class="w-full max-w-[400px]"
+    />
 
     - UGRC currently aggregates parcels, address points, roads data from counties in support of 911, Taxation, and Elections
     - We can work together to aggregate data from your agency
