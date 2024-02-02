@@ -19,16 +19,20 @@ import QuickLinks from '@components/page/QuickLinks.astro';
 import { Image } from 'astro:assets';
 
 import dataPhoto from '@images/solutions/data.svg';
-import studentPhoto from '@images/solutions/students.svg';
+import gisUsersPhoto from '@images/solutions/gis-users.svg';
+import apiLogoPhoto from '@images/solutions/api-logo-small.svg';
+import mapPhoto from '@images/solutions/map.svg';
+import gpsPhoto from '@images/solutions/gps.svg';
+import baseMapPhoto from '@images/solutions/base-map.svg';
 
 <Layout title={frontmatter.title}>
   <Section title="Solutions for GIS users" stripe>
   <QuickLinks links={frontmatter.quickLinks} slot="quick-links" />
     <Image
       slot="image"
-      src={studentPhoto}
+      src={gisUsersPhoto}
       loading="eager"
-      alt="students sitting in front of a university building"
+      alt="a person sitting in a char using a computer to work with maps and data"
       class="w-full max-w-[400px] rounded-2xl"
     />
 
@@ -45,7 +49,7 @@ import studentPhoto from '@images/solutions/students.svg';
       slot="image"
       src={dataPhoto}
       alt="a person connected to a database"
-      class="w-full max-w-[400px] "
+      class="w-full max-w-[400px]"
     />
 
     The SGID is a curated geospatial data library. It is the perfect starting point for all mapping-related projects in Utah. UGRC works with state and local governments and federal partners to offer authoritative data through the SGID. We make it easy by making a wide array of data available in one searchable location.
@@ -57,6 +61,12 @@ import studentPhoto from '@images/solutions/students.svg';
 
   </Section>
   <Section title="UGRC API" stripe>
+    <Image
+      slot="image"
+      src={apiLogoPhoto}
+      alt="the UGRC API logo which is a circle with the state of utah in the middle"
+      class="w-full max-w-[200px]"
+    />
 
     The UGRC API is designed for users who want to interact with the SGID through an Application Programming Interface (API). Users query the SGID through web calls often from a desktop or web application. Returned results are then processed on the client side, suiting the needs of the specific application.
 
@@ -64,6 +74,12 @@ import studentPhoto from '@images/solutions/students.svg';
 
   </Section>
   <Section title="Address geocoding">
+   <Image
+      slot="image"
+      src={mapPhoto}
+      alt="a map with geocoded map markers on it"
+      class="w-full max-w-[400px]"
+    />
 
     UGRC's address locators are a quick and simple way to convert tabular address data into geospatial data that can be mapped!
 
@@ -74,7 +90,13 @@ import studentPhoto from '@images/solutions/students.svg';
     You can learn more, including how to access them, on our address locator page.
 
   </Section>
-  <Section title="Base maps and Imagery" stripe>
+  <Section title="Base maps and imagery" stripe>
+    <Image
+      slot="image"
+      src={baseMapPhoto}
+      alt="a person admiring a map on a wall"
+      class="w-full max-w-[400px]"
+    />
 
     All mapping projects should begin with a beautiful base map. Base maps are a great way to bring your data to life. They give your data context by putting it on the map.
 
@@ -88,6 +110,12 @@ import studentPhoto from '@images/solutions/students.svg';
 
   </Section>
   <Section title="GPS Location Services">
+    <Image
+      slot="image"
+      src={gpsPhoto}
+      alt="a satellite in orbit around the earth with a GPS signal coming from it"
+      class="w-full max-w-[400px]"
+    />
 
     There are times when commercial-grade GPS is not precise enough. That's where the Utah Reference Network (TURN) GPS comes in. Through a network of permanently located GPS ground receivers, UGRC's TURN GPS service offers centimeter accuracy with the use of GPS receivers.
 
