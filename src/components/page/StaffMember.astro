@@ -20,9 +20,9 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
 ---
 
 <li>
-  <div class="grid h-60 grid-cols-3-150 items-center gap-1 gap-y-6 p-3">
+  <div class="grid h-60 grid-cols-150 items-center gap-1 p-3 sm:grid-cols-3-150">
     <Image
-      class="h-32 w-32 rounded-full border-2 border-primary shadow-xl dark:border-black/50"
+      class="size-32 rounded-full border-2 border-primary/90 shadow-xl dark:border-accent"
       src={images[`${location}${convert(name)}.png`]()}
       alt={`portrait of ${name} with a white background`}
       width={128}
@@ -40,7 +40,9 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-end gap-0.5 self-center text-xs">
+    <div
+      class="col-span-2 flex flex-row flex-wrap items-end justify-center gap-2 self-center text-xs sm:col-span-1 sm:flex-col sm:gap-0.5"
+    >
       {
         tags &&
           tags

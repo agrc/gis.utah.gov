@@ -49,7 +49,7 @@ export const staff = [
   },
   {
     name: 'Steve Gourley',
-    team: 'Development Team',
+    team: 'Development Team Lead',
     phone: '385-202-3394',
     email: 'sgourley@utah.gov',
     twitter: '@steve_ugrc',
