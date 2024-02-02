@@ -65,7 +65,15 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
       </CardWithTopImage>
     </GridForPillars>
   </Section>
-  <Section title="Latest News" actionText="Read more news" actionUrl="/blog" stripe primary titlePosition="center">
+  <Section
+    title="Latest News"
+    actionText="Read more news"
+    actionUrl="/blog"
+    stripe
+    primary
+    titlePosition="center"
+    buttonPosition="center"
+  >
     <GridForLatestNews>
       {
         posts.map((post) => (

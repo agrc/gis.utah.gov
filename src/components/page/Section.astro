@@ -9,8 +9,18 @@ interface Props {
   stripe?: boolean;
   primary?: boolean;
   titlePosition?: 'center' | 'inline';
+  buttonPosition?: 'center' | 'inline';
 }
-const { actionUrl, actionText, title, subTitle, stripe, primary, titlePosition = 'inline' } = Astro.props;
+const {
+  actionUrl,
+  actionText,
+  title,
+  subTitle,
+  stripe,
+  primary,
+  titlePosition = 'inline',
+  buttonPosition = 'inline',
+} = Astro.props;
 const hasImage = await Astro.slots.render('image');
 ---
 
@@ -45,7 +55,7 @@ const hasImage = await Astro.slots.render('image');
         <slot />
         {
           actionUrl && (
-            <div class="max-w-fit">
+            <div class={buttonPosition === 'inline' ? 'max-w-fit' : 'mx-auto'}>
               <ButtonLink href={actionUrl} decorate="arrow" color="secondary">
                 {actionText}
               </ButtonLink>
