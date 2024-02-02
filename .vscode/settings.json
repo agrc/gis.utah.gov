@@ -241,11 +241,15 @@
     "xlink",
     "zipcode"
   ],
+  "[astro]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+  },
   "[markdown]": {
     "editor.fontSize": 14,
     "editor.lineHeight": 26,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 64,
+    "editor.wordWrapColumn": 100,
     "editor.lineNumbers": "off",
     "editor.quickSuggestions": {
       "comments": "off",
