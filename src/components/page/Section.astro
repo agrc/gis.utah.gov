@@ -55,7 +55,7 @@ const hasImage = await Astro.slots.render('image');
       </div>
       {
         hasImage?.length && (
-          <div class:list={['flex items-start justify-center', stripe ? 'order-first' : 'order-last']}>
+          <div class:list={['flex items-start justify-center', stripe ? 'order-first' : 'order-first lg:order-last']}>
             <slot name="image" />
           </div>
         )

@@ -8,7 +8,7 @@ export const Header = ({ className, children }) => {
     <Collapsible.Root>
       <header className={className}>
         <div className="flex items-center justify-between border-b border-b-primary/30 px-3 pb-2 pt-1 dark:border-black/10">
-          <div className="flex h-16 flex-1 flex-row space-x-6 divide-x divide-slate-500">
+          <div className="flex h-16 flex-1 flex-row space-x-4 divide-x divide-slate-500 sm:space-x-6">
             <Collapsible.Trigger className="h-16 w-28">
               <span className="sr-only">An official website of the State of Utah. Click to learn more.</span>
               <svg
@@ -31,7 +31,7 @@ export const Header = ({ className, children }) => {
                 </g>
               </svg>
             </Collapsible.Trigger>
-            <div className="flex flex-1 justify-start pl-6">{children}</div>
+            <div className="flex flex-1 justify-start pl-3 sm:pl-5">{children}</div>
           </div>
         </div>
       </header>
