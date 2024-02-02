@@ -27,7 +27,7 @@ import enhancePhoto from '@images/solutions/enhance.svg';
 import automationPhoto from '@images/solutions/automation.svg';
 
 <Layout title={frontmatter.title}>
-  <Section stripe title="Solutions for developers">
+  <Section title="Solutions for developers" stripe>
   <QuickLinks links={frontmatter.quickLinks} slot="quick-links" />
     <Image
       slot="image"
@@ -55,7 +55,7 @@ import automationPhoto from '@images/solutions/automation.svg';
       Even if we haven't built the specific component you require, our expertise extends to creating custom solutions across many platforms, including popular front-end libraries like React and Angular, as well as platform as a service (PaaS) implementations like Salesforce. Let us navigate the intricacies of geospatial integration, so you can focus on building the core functionalities of your app.
 
   </Section>
-  <Section stripe title="Show it off" actionText="View our base maps" actionUrl="/products/discover">
+  <Section title="Show it off" actionText="View our base maps" actionUrl="/products/discover" stripe>
     <Image
       slot="image"
       src={mapPhoto}
@@ -81,7 +81,7 @@ import automationPhoto from '@images/solutions/automation.svg';
     For example, you can use the coordinates of a geocoded address to find the legislative districts that it falls within. Or if a parcel of land is in a floodplain. Or how many people live within a certain distance of a proposed development. The possibilities are endless.
 
   </Section>
-  <Section stripe title="Automate it" actionText="Contact us" actionUrl="/contact">
+  <Section title="Automate it" actionText="Contact us" actionUrl="/contact" stripe>
    <Image
       slot="image"
       src={automationPhoto}
