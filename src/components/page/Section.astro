@@ -36,7 +36,9 @@ const hasImage = await Astro.slots.render('image');
 >
   {
     title && titlePosition === 'center' && (
-      <SectionTitle title={title} subTitle={subTitle} titlePosition={titlePosition} />
+      <SectionTitle title={title} subTitle={subTitle} titlePosition={titlePosition}>
+        <slot name="quick-links" />
+      </SectionTitle>
     )
   }
   <div class="flex justify-center px-6">
