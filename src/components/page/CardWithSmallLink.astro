@@ -12,14 +12,14 @@ const { title, href, style = 'primary', class: className } = Astro.props;
 <a
   href={href}
   class:list={[
-    'custom-style flex h-24 rounded-lg border border-zinc-400 bg-primary px-6 py-3 text-zinc-50 shadow dark:border-white/20',
+    'custom-style flex rounded-lg border border-zinc-400 bg-primary px-6 py-3 text-zinc-50 shadow dark:border-white/20',
     className,
     style === 'secondary' && 'dark:bg-secondary',
   ]}
 >
   <div class="flex grow flex-col">
     <p class="text-sm font-bold uppercase md:text-base">{title}</p>
-    <p class="line-clamp-2 pr-2 text-sm text-zinc-300"><slot /></p>
+    <p class="line-clamp-4 pr-2 text-sm text-zinc-300"><slot /></p>
   </div>
   {href.startsWith('/') && <span class="-mr-4 justify-center self-start text-2xl">&#x2192;</span>}
   {
