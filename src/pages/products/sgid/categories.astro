@@ -1,0 +1,183 @@
+---
+import Layout from '@layouts/FullWidth.astro';
+import Section from '@components/page/Section.astro';
+import DataCategory from '@components/page/DataCategory.astro';
+const colors = {};
+---
+
+<Layout title="SGID data categories">
+  <Section title="SGID data categories">
+    <div class="grid grid-cols-3 gap-4 lg:grid-cols-5 lg:gap-16">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/911/index.html %}">
+        <DataCategory element="9" name="11" label="911" key="emergency" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/address/index.html %}">
+        <DataCategory element="Ad" name="Address" key="address" />
+      </a>
+      <a
+        class="inline-flex flex-col items-center justify-self-center p-2"
+        href="{% link data/aerial-photography/index.html %}"
+      >
+        <DataCategory element="Ae" name="Aerial Photos" key="aerial" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/bioscience/index.html %}">
+        <DataCategory element="Bi" name="Bioscience" key="bioscience" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/boundaries/index.html %}">
+        <DataCategory element="Bo" name="Boundaries" key="boundaries" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/cadastre/index.html %}">
+        <DataCategory element="Ca" name="Cadastre" key="cadastre" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/climate/index.html %}">
+        <DataCategory element="Ci" name="Climate" label="Climate/Weather" key="climate" />
+      </a>
+      <a
+        class="inline-flex flex-col items-center justify-self-center p-2"
+        href="{% link data/elevation-and-terrain/contours/index.html %}"
+      >
+        <DataCategory element="Co" name="Contours" key="contours" />
+      </a>
+      <a
+        class="inline-flex flex-col items-center justify-self-center p-2"
+        href="{% link data/demographic/index.html %}"
+      >
+        <DataCategory element="De" name="Demographics" key="demographic" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/economy/index.html %}">
+        <DataCategory element="Ec" name="Economy" key="economy" />
+      </a>
+      <a
+        class="inline-flex flex-col items-center justify-self-center p-2"
+        href="{% link data/elevation-and-terrain/index.html %}"
+      >
+        <DataCategory element="El" name="Elevation" label="Elevation/Terrain" key="elevation" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/energy/index.html %}">
+        <DataCategory element="En" name="Energy" key="energy" />
+      </a>
+      <a
+        class="inline-flex flex-col items-center justify-self-center p-2"
+        href="{% link data/environment/index.html %}"
+      >
+        <DataCategory element="Ev" name="Environment" key="environment" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/farming/index.html %}">
+        <DataCategory element="Fa" name="Farming" key="farming" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/geoscience/index.html %}">
+        <DataCategory element="Ge" name="Geoscience" key="geoscience" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/health/index.html %}">
+        <DataCategory element="He" name="Health" key="health" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/history/index.html %}">
+        <DataCategory element="Hi" name="History" key="history" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/indices/index.html %}">
+        <DataCategory element="In" name="Indices" key="indices" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/location/index.html %}">
+        <DataCategory element="Lo" name="Location" key="location" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/planning/index.html %}">
+        <DataCategory element="Pl" name="Planning" key="planning" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/political/index.html %}">
+        <DataCategory element="Po" name="Political" key="political" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/recreation/index.html %}">
+        <DataCategory element="Re" name="Recreation" key="recreation" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/society/index.html %}">
+        <DataCategory element="So" name="Society" key="society" />
+      </a>
+      <a
+        class="inline-flex flex-col items-center justify-self-center p-2"
+        href="{% link data/transportation/index.html %}"
+      >
+        <DataCategory element="Tr" name="Transportation" key="transportation" />
+      </a>
+      <a
+        class="inline-flex flex-col items-center justify-self-center p-2"
+        href="{% link data/usgs-scanned-topographic-maps/index.html %}"
+      >
+        <DataCategory element="To" name="Topo Maps" label="USGS Topo maps" key="topo" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/utilities/index.html %}">
+        <DataCategory element="Ut" name="Utilities" key="utilities" />
+      </a>
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/water/index.html %}">
+        <DataCategory element="Wa" name="Water" key="water" />
+      </a>
+    </div>
+  </Section>
+  <Section title="Choosing a data source" stripe>
+    <p>
+      With so many ways to get SGID Data, how do you you know which one to use? We created a guide to help you
+      understand the best ways to access the data based on your use case.
+    </p>
+    <dl>
+      <dt>Browsing for Data</dt>
+      <dd>- Use the <a href="{% link data/sgid-index/index.html %}">SGID Index</a></dd>
+      <dd>- Search the <a href="https://opendata.gis.utah.gov">SGID Open Data site</a></dd>
+      <dd>
+        - Browse the Utah SGID groups in our <a href="https://utah.maps.arcgis.com/home/groups.html"
+          >ArcGIS Online organization</a
+        >
+      </dd>
+      <dt>Desktop mapping (ArcGIS, QGIS, etc)</dt>
+      <dd>
+        - Connect directly to the <a href="{% link sgid/open-sgid/index.md %}">Open SGID</a> to load UGRC-curated vector
+        data
+      </dd>
+      <dd>
+        - Consume feature services from <a href="https://utah.maps.arcgis.com/home/groups.html">ArcGIS Online</a> or
+        <a href="https://opendata.gis.utah.gov">Open Data</a>
+      </dd>
+      <dd>
+        - Download shapefiles or geodatabases from <a href="https://opendata.gis.utah.gov">Open Data</a> or from the steward's
+        website
+      </dd>
+      <dd>
+        - Add a raster base map or imagery from <a href="{% link discover/index.html %}">Discover</a>
+      </dd>
+      <dd>- Download raster data from the <a href="https://raster.utah.gov">Raster Discovery web app</a></dd>
+      <dt>ArcGIS Online webmaps and storymaps</dt>
+      <dd>
+        - Consume feature services from <a href="https://utah.maps.arcgis.com/home/groups.html">ArcGIS Online</a> or
+        <a href="https://opendata.gis.utah.gov">Open Data</a>
+      </dd>
+      <dd>
+        - Add a raster base map or imagery from <a href="{% link discover/index.html %}">Discover</a>
+      </dd>
+      <dt>Custom web app development</dt>
+      <dd>
+        - Consume feature services from <a href="https://utah.maps.arcgis.com/home/groups.html">ArcGIS Online</a> or
+        <a href="https://opendata.gis.utah.gov">Open Data</a>
+      </dd>
+      <dd>
+        - Zoom to an address and search for a boundary or nearby feature with the <a
+          href="https://developer.mapserv.utah.gov/StartupGuide">UGRC Web API</a
+        >
+      </dd>
+      <dd>
+        - Add a raster base map or imagery from <a href="{% link discover/index.html %}">Discover</a>
+      </dd>
+      <dt>Geocoding Addresses</dt>
+      <dd>
+        - Geocode individual addresses with the <a href="https://developer.mapserv.utah.gov/StartupGuide"
+          >UGRC Web API</a
+        >
+      </dd>
+      <dd>
+        - Download our <a href="{% link _posts/2021-11-29-introducing-the-official-ugrc-api-client.md %}">API Client</a>
+        to geocode a table of addresses with the UGRC Web API
+      </dd>
+      <dd>
+        - Use our <a href="https://github.com/agrc/masquerade?tab=readme-ov-file#masquerade">Masquerade service </a>
+        to geocode within Esri products.
+      </dd>
+    </dl>
+  </Section>
+</Layout>
