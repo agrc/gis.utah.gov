@@ -18,13 +18,14 @@ quickLinks:
 import Layout from '@layouts/FullWidth.astro';
 import Section from '@components/page/Section.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
-import { Image } from 'astro:assets';
 
 import mapPhoto from '@images/solutions/map.svg';
 import rocketPhoto from '@images/solutions/rocket.svg';
 import developmentPhoto from '@images/solutions/development.svg';
 import enhancePhoto from '@images/solutions/enhance.svg';
 import automationPhoto from '@images/solutions/automation.svg';
+
+import { Image } from 'astro:assets';
 
 <Layout title={frontmatter.title}>
   <QuickLinks links={frontmatter.quickLinks} slot="quick-links" />

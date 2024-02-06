@@ -14,11 +14,10 @@ const { title = 'UGRC', subTitle, category = '' } = Astro.props;
 <Layout title={category}>
   <Section title={title} subTitle={subTitle} stripe titlePosition="center">
     <slot name="metadata" />
-    <!-- <h2>Summary</h2> -->
     <slot name="summary" />
     <slot name="application-link" />
-    <!-- <h2>Description</h2> -->
     <slot name="description" />
+    <slot name="update-history" />
     <slot name="disclaimer" />
   </Section>
   <Section title="Use the data" titlePosition="center">

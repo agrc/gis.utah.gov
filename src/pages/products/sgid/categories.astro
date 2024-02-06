@@ -8,106 +8,91 @@ const colors = {};
 <Layout title="SGID data categories">
   <Section title="SGID data categories">
     <div class="grid grid-cols-3 gap-4 lg:grid-cols-5 lg:gap-16">
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/911/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/911">
         <DataCategory element="9" name="11" label="911" key="emergency" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/address/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/address">
         <DataCategory element="Ad" name="Address" key="address" />
       </a>
-      <a
-        class="inline-flex flex-col items-center justify-self-center p-2"
-        href="{% link data/aerial-photography/index.html %}"
-      >
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/aerial-photography">
         <DataCategory element="Ae" name="Aerial Photos" key="aerial" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/bioscience/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/bioscience">
         <DataCategory element="Bi" name="Bioscience" key="bioscience" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/boundaries/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/boundaries">
         <DataCategory element="Bo" name="Boundaries" key="boundaries" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/cadastre/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/cadastre">
         <DataCategory element="Ca" name="Cadastre" key="cadastre" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/climate/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/climate">
         <DataCategory element="Ci" name="Climate" label="Climate/Weather" key="climate" />
       </a>
       <a
         class="inline-flex flex-col items-center justify-self-center p-2"
-        href="{% link data/elevation-and-terrain/contours/index.html %}"
+        href="/products/sgid/elevation-and-terrain/contours"
       >
         <DataCategory element="Co" name="Contours" key="contours" />
       </a>
-      <a
-        class="inline-flex flex-col items-center justify-self-center p-2"
-        href="{% link data/demographic/index.html %}"
-      >
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/demographic">
         <DataCategory element="De" name="Demographics" key="demographic" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/economy/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/economy">
         <DataCategory element="Ec" name="Economy" key="economy" />
       </a>
-      <a
-        class="inline-flex flex-col items-center justify-self-center p-2"
-        href="{% link data/elevation-and-terrain/index.html %}"
-      >
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/elevation-and-terrain">
         <DataCategory element="El" name="Elevation" label="Elevation/Terrain" key="elevation" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/energy/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/energy">
         <DataCategory element="En" name="Energy" key="energy" />
       </a>
-      <a
-        class="inline-flex flex-col items-center justify-self-center p-2"
-        href="{% link data/environment/index.html %}"
-      >
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/environment">
         <DataCategory element="Ev" name="Environment" key="environment" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/farming/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/farming">
         <DataCategory element="Fa" name="Farming" key="farming" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/geoscience/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/geoscience">
         <DataCategory element="Ge" name="Geoscience" key="geoscience" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/health/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/health">
         <DataCategory element="He" name="Health" key="health" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/history/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/history">
         <DataCategory element="Hi" name="History" key="history" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/indices/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/indices">
         <DataCategory element="In" name="Indices" key="indices" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/location/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/location">
         <DataCategory element="Lo" name="Location" key="location" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/planning/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/planning">
         <DataCategory element="Pl" name="Planning" key="planning" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/political/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/political">
         <DataCategory element="Po" name="Political" key="political" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/recreation/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/recreation">
         <DataCategory element="Re" name="Recreation" key="recreation" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/society/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/society">
         <DataCategory element="So" name="Society" key="society" />
       </a>
-      <a
-        class="inline-flex flex-col items-center justify-self-center p-2"
-        href="{% link data/transportation/index.html %}"
-      >
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/transportation">
         <DataCategory element="Tr" name="Transportation" key="transportation" />
       </a>
       <a
         class="inline-flex flex-col items-center justify-self-center p-2"
-        href="{% link data/usgs-scanned-topographic-maps/index.html %}"
+        href="/products/sgid/usgs-scanned-topographic-maps"
       >
         <DataCategory element="To" name="Topo Maps" label="USGS Topo maps" key="topo" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/utilities/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/utilities">
         <DataCategory element="Ut" name="Utilities" key="utilities" />
       </a>
-      <a class="inline-flex flex-col items-center justify-self-center p-2" href="{% link data/water/index.html %}">
+      <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/water">
         <DataCategory element="Wa" name="Water" key="water" />
       </a>
     </div>

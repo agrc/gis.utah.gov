@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  href: string;
+  type: string;
+  stewards: string[];
+}
+const { href, title, type, stewards } = Astro.props;
+---
+
+<a
+  href={href}
+  class="custom-style flex rounded-lg border border-zinc-400/20 px-6 py-3 transition-colors duration-200 ease-in-out hover:cursor-pointer hover:bg-zinc-300 dark:border-white/20 dark:bg-zinc-600 dark:hover:bg-zinc-800"
+>
+  <div class="flex grow flex-col">
+    <h4 class="uppercase text-primary dark:text-accent">{title}</h4>
+    <p class="text-sm font-semibold uppercase text-primary dark:text-zinc-50">{type}</p>
+    <div class="primary-background py-2 dark:text-white">
+      <slot />
+    </div>
+    <div>
+      <span class="text-sm font-semibold text-primary dark:text-white"
+        >{stewards?.length === 1 ? 'Steward' : 'Stewards'}:{' '}</span
+      ><span>{stewards?.join(' & ')}</span>
+    </div>
+  </div>
+  <div class="-mr-4 self-center justify-self-end text-2xl text-primary dark:text-accent">&#x2192;</div>
+</a>

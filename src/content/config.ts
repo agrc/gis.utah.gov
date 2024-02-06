@@ -17,4 +17,16 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const sgid = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    category: z.string(),
+    stewards: z.array(z.string()).optional(),
+    application: z.string().url().optional(),
+    lastUpdate: z.string(),
+    type: z.string().optional(),
+  })
+});
+
+export const collections = { blog, sgid };

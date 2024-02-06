@@ -1,46 +1,90 @@
 ---
-import ButtonLink from '@components/page/ButtonLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import Alert from '@components/page/Alert.astro';
+
+import { ClipboardCopy } from '@astro-github-elements/clipboard-copy';
 
 interface Props {
   name: string;
-  itemId: string;
   oddHubName?: string;
   externalHubOrganization?: string;
   layerId?: number;
+  openSgid?: string;
 }
-const { name, oddHubName, itemId, externalHubOrganization, openSgid, layerId = 0 } = Astro.props;
+const { name, oddHubName, externalHubOrganization, openSgid, layerId = 0 } = Astro.props;
 
 let id = oddHubName?.toLowerCase() || name.toLowerCase().replaceAll(' ', '-');
 
 if (externalHubOrganization) {
   id = `${externalHubOrganization.toUpperCase()}::${id}`;
 }
+const featureServiceUrl = `https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/${name.replaceAll(' ', '')}/FeatureServer/${layerId}`;
 ---
 
-<div class="grid grid-cols-1 gap-10 xl:grid-cols-2">
-  <div>
-    <h4>Evergreen Services</h4>
-    <div>
-      <ul>
-        <li>
-          <a href={`https://opendata.arcgis.com/datasets/${id}_${layerId}.gdb`}>Esri Feature Service</a>
-        </li>
-        <li>
-          {openSgid} in the <a href="/products/sgid/open-sgid">Open SGID</a>
-        </li>
-      </ul>
+<div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
+  <div class="flex flex-col">
+    <h2>Download and Explore</h2>
+    <span>
+      <ExternalLink href={`https://opendata.gis.utah.gov/datasets/${id}`}>{name}</ExternalLink> in the SGID on ArcGIS
+    </span>
+    <ExternalLink href={featureServiceUrl}>{name} feature service</ExternalLink>
+  </div>
+  <div class="flex flex-col gap-1">
+    <h2>Quick clips</h2>
+    <p>Feature service URL</p>
+    <div class="inline-flex">
+      <code
+        class="max-w-lg overflow-scroll rounded border border-zinc-400 px-2 py-1 text-sm text-zinc-600 dark:border-zinc-700 dark:text-zinc-300"
+        >{featureServiceUrl}</code
+      >
+      <ClipboardCopy value={featureServiceUrl}
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mx-2 size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+          ></path>
+        </svg>
+      </ClipboardCopy>
+    </div>
+    <p>Open SGID sample query</p>
+    <div class="inline-flex">
+      <code
+        class="max-w-lg overflow-scroll rounded border border-zinc-400 px-2 py-1 text-sm text-zinc-600 dark:border-zinc-700 dark:text-zinc-300"
+        >{`select * from ${openSgid} limit 10;`}</code
+      >
+      <ClipboardCopy value={`select * from ${openSgid} limit 10;`}
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mx-2 size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+          ></path>
+        </svg>
+      </ClipboardCopy>
     </div>
   </div>
-
-  <div>
-    <h4>Download and Explore on SGID on ArcGIS</h4>
-    <div>
-      <span class="block">This data is available in the <a href="/products/sgid/open-sgid">SGID on ArcGIS</a></span>
-      <ul>
-        <li>
-          <a href={`https://opendata.gis.utah.gov/datasets/${id}`}>SGID on ArcGIS Downloads and APIs</a>
-        </li>
-      </ul>
-    </div>
+  <div class="flex flex-col">
+    <h2>Getting started</h2>
+    <div>Learn more about the <a href="/documentation/sgid">SGID on ArcGIS</a>.</div>
+    <div>Learn more about the <a href="/documentation/sgid">Open SGID</a> and how to connect.</div>
   </div>
+  <Alert title="Tip">
+    You can copy and paste the feature service URL above into ArcGIS Pro or a web map to visualize this data or access
+    the query endpoint to query the data with your favorite programming language.
+  </Alert>
 </div>

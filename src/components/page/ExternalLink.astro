@@ -1,15 +1,21 @@
 ---
 interface Props {
   href: string;
+  type?: string;
 }
-const { href } = Astro.props;
+const { href, type = 'normal' } = Astro.props;
 ---
 
-<a href={href} class="custom-style inline-flex items-center gap-x-1" target="__blank" rel="noreferrer">
+<a
+  href={href}
+  class:list={['inline-flex items-center gap-x-1', type === 'custom' ? 'custom-style' : null]}
+  target="__blank"
+  rel="noreferrer"
+>
   <span>
     <slot />
   </span>
-  <span class="" aria-hidden="true">
+  <span aria-hidden="true">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
