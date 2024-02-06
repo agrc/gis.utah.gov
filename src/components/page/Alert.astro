@@ -28,7 +28,9 @@ const { title } = Astro.props;
     </svg>
     <span set:html={title} />
   </p>
-  <div class="margin-0 line-clamp-4 border-l-4 border-l-secondary px-4 pb-4 text-black dark:border-l-accent">
+  <div
+    class="margin-0 line-clamp-4 border-l-4 border-l-secondary px-4 pb-4 text-black dark:border-l-accent dark:text-zinc-300"
+  >
     <slot />
   </div>
 </div>
