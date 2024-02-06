@@ -70,7 +70,7 @@ By convention, the gis.utah.gov website places all of it's images in the [`image
 
 To close the contribution loop, a [pull request](https://help.github.com/articles/github-glossary/#pull-request) must be created asking UGRC to pull in your commits to be incorporated into the website. In your fork of the website, there will be a `Pull request` button. Clicking this button and following through the steps to completion will summarize the changes made and send a notification to UGRC of the request. The pull request creates a link between your [branch](https://help.github.com/articles/github-glossary/#branch) and the UGRC repository. Any subsequent commits will show up in the pull request. It is a living connection while the pull request is open. This gives UGRC and the contributor a chance to have a discussion and fix any errors.
 
-Once the pull request is accepted and merged, the website will automatically regenerate and deploy to production. The edits will be live, [@MapUtah](https://twitter.com/@MapUtah) will tweet about the new content the UGRC  [facebook](https://facebook.com/utahagrc) page will post about the new content.
+Once the pull request is accepted and merged, the website will automatically regenerate and deploy to production. The edits will be live, [@MapUtah](https://twitter.com/@MapUtah) will post about the new content the UGRC [facebook](https://facebook.com/utahagrc) page will post about the new content.
 
 #### Clean Up
 
