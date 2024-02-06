@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import govOpsLogo from '../images/footer/govops-logo.png';
 import ExternalLink from './page/ExternalLink.astro';
 
-const sha = import.meta.env.COMMIT_REF.substring(0, 8);
+const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
 ---
 
 <section>
