@@ -7,13 +7,13 @@ interface Props {
   team: string;
   tags?: string[];
   email: string;
-  twitter?: string;
+  x?: string;
   photo?: string;
 }
 
 const convert = (name: string) => name.toLowerCase().replaceAll(' ', '-');
 
-const { name, team, twitter, tags, email } = Astro.props;
+const { name, team, x, tags, email } = Astro.props;
 
 const location = '/src/images/pillar-contact/staff/';
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/staff/*.{svg,png}');
@@ -32,7 +32,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
       <h3 class="text-base font-semibold leading-7 tracking-tight">{name}</h3>
       <div class="text-base text-secondary dark:text-accent">
         <p class="text-sm font-semibold leading-6">{email}</p>
-        {twitter && <p class="text-sm font-semibold leading-6">{twitter}</p>}
+        {x && <p class="text-sm font-semibold leading-6">{x}</p>}
       </div>
       <div class="text-sm font-semibold leading-6">
         <div class="flex items-center text-base text-zinc-500 dark:text-zinc-300">
