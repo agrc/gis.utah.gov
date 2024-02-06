@@ -103,7 +103,7 @@ Datasets being removed from the SGID must follow these policies.
 - We reserve the right to remove any dataset at any time.
 - Removals should be tracked in [Porter](https://github.com/agrc/porter).
 - The steward should give users a heads up at least two weeks prior to removal whenever possible.
-  - UGRC should post removal and deprecation notices on the [@MapUtah](https://twitter.com/maputah) Twitter account.
+  - UGRC should post removal and deprecation notices on the [@MapUtah](https://twitter.com/maputah) X account.
 - Stewards of ArcGIS Online services should perform a brownout by marking the data as `Deprecated` in the item's settings and including "deprecated" in the item's title.
 - When possible, UGRC will change the sharing level of items being removed from our own ArcGIS Online organization from public to private two weeks before deleting the items completely to allow quick restoration if end users need time to find an alternative.
   - End users should not rely on this two-week blackout.

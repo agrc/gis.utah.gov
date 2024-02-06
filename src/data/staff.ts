@@ -4,7 +4,7 @@ export const staff = [
     team: 'Team Lead',
     phone: '385-202-3297',
     email: 'mpeters@utah.gov',
-    twitter: '@MattUGRC',
+    x: '@MattUGRC',
     tags: ['vision', 'strategy', 'leadership', 'management', 'new opportunities'],
   },
   {
@@ -12,7 +12,7 @@ export const staff = [
     team: 'Team Manager',
     phone: '385-226-1875',
     email: 'nathankota@utah.gov',
-    twitter: '@nathankota',
+    x: '@nathankota',
     tags: ['collaboration', 'partnerships', 'budgets', 'new projects', 'ongoing support'],
   },
   {
@@ -20,7 +20,7 @@ export const staff = [
     team: 'Data Team',
     phone: '801-433-8422',
     email: 'zbeck@utah.gov',
-    twitter: '@ZachAGRC',
+    x: '@ZachAGRC',
     tags: ['cartography', 'address points', 'base maps', 'configurable apps', 'python'],
   },
   {
@@ -28,7 +28,7 @@ export const staff = [
     team: 'Data Team Lead',
     phone: '801-349-0039',
     email: 'gbunce@utah.gov',
-    twitter: '@bunce_greg',
+    x: '@bunce_greg',
     tags: ['SGID', 'transportation', 'collaboration', '911', 'data management'],
   },
   {
@@ -36,7 +36,7 @@ export const staff = [
     team: 'Development Team',
     phone: '801-699-7187',
     email: 'stdavis@utah.gov',
-    twitter: '@SThomasDavis',
+    x: '@SThomasDavis',
     tags: ['web development', 'React', 'JavaScript', 'apps', 'data management'],
   },
   {
@@ -44,7 +44,7 @@ export const staff = [
     team: 'Data Team',
     phone: '801-652-2258',
     email: 'michaelfoulger@utah.gov',
-    twitter: '@MichaelAGRC',
+    x: '@MichaelAGRC',
     tags: ['SGID', 'AGOL', 'data management', 'Databases', 'roads'],
   },
   {
@@ -52,7 +52,7 @@ export const staff = [
     team: 'Development Team Lead',
     phone: '385-202-3394',
     email: 'sgourley@utah.gov',
-    twitter: '@steve_ugrc',
+    x: '@steve_ugrc',
     tags: ['Apps', 'Web Development', 'Programming', 'Google Cloud', 'Geocoding'],
   },
   {
@@ -60,7 +60,7 @@ export const staff = [
     team: 'Development Team',
     phone: '385-499-0786',
     email: 'jdadams@utah.gov',
-    twitter: '@gis_jake',
+    x: '@gis_jake',
     tags: ['Configurable Apps', 'Discover', 'Python', 'AGOL', 'ArcGIS Hub'],
   },
   {
@@ -68,7 +68,7 @@ export const staff = [
     team: 'Data Team',
     phone: '801-209-9359',
     email: 'sfernandez@utah.gov',
-    twitter: '@UTSurveyor',
+    x: '@UTSurveyor',
     tags: ['PLSS monuments', 'Survey Control', 'GPS', 'NGS State Coordinator', 'Spatial Reference'],
   },
   {
@@ -76,7 +76,7 @@ export const staff = [
     team: 'Data Team',
     phone: '435-319-0307',
     email: 'hchou@utah.gov',
-    twitter: '',
+    x: '',
     tags: ['PSAP support', 'Open Source', 'ArcGIS Pro', 'Data ETL', '911'],
   },
   {
@@ -84,7 +84,7 @@ export const staff = [
     team: 'Data Team',
     phone: '385-313-0798',
     email: 'rkelson@utah.gov',
-    twitter: '@RickUGRC',
+    x: '@RickUGRC',
     tags: ['Discover', 'LiDAR', 'Imagery', 'parcels', 'data management'],
   },
   {
@@ -92,7 +92,7 @@ export const staff = [
     team: 'Data Team',
     phone: '385-392-4011',
     email: 'denisepeterson@utah.gov',
-    twitter: '',
+    x: '',
     tags: ['GPS', 'Configurable apps', 'AGOL', 'data management', 'boundaries'],
   },
 ];
