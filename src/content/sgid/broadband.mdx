@@ -8,11 +8,11 @@ type: Polygon GIS data
 application: 'https://broadband.ugrc.utah.gov/'
 lastUpdate: Fall 2023
 description: Broadband coverage polygons over any transmission technology, including fixed and mobile services.
-
 hub:
   name: Utah Broadband Service
+  featureServiceId: BroadBandService
   itemId: 2b479a30791c445eb135e05acf77dbcc
-  layerId: 1
+  layerId: 0
   openSgid: utilities.broadband_service
 ---
 
@@ -20,7 +20,7 @@ import Layout from '@layouts/DataPage.astro';
 import Metadata from '@components/data/Metadata.astro';
 import Disclaimer from '@components/data/Disclaimer.astro';
 import ApplicationLink from '@components/data/ApplicationLink.astro';
-import Downloads from '@components/data/Downloads.astro';
+import HubDownloads from '@components/data/HubDownloads.astro';
 import Section from '@components/page/Section.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
@@ -32,7 +32,7 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 
   <ApplicationLink slot="application-link" href={frontmatter.application} />
 
-  <Downloads slot="downloads" {...frontmatter.hub} />
+  <HubDownloads slot="downloads" {...frontmatter.hub} />
 
   <Fragment slot="summary">
     <p>

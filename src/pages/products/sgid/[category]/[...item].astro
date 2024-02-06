@@ -8,6 +8,7 @@ const { category, item } = Astro.params;
 
 export async function getStaticPaths() {
   const categories = [
+    '911',
     'address',
     'aerial',
     'bioscience',
@@ -39,6 +40,7 @@ export async function getStaticPaths() {
   const sgidDataPages = await getCollection('sgid');
 
   let paths = [];
+  // Add a path for each category and each item in that category
   categories.forEach((category) => {
     const categoryPages = sgidDataPages.filter((post) => post.data.category.toLowerCase() === category);
 
@@ -65,11 +67,15 @@ let entries = [];
 let Content = {};
 let entry = {};
 
+// If there is an item, get the entry and render it
+// If there is no item, get the collection and filter it by category and secondaryCategory
 if (item) {
   entry = await getEntry('sgid', item);
   Content = (await entry.render()).Content;
 } else {
-  entries = (await getCollection('sgid')).filter((post) => post.data.category.toLowerCase() === category);
+  entries = (await getCollection('sgid')).filter((post) =>
+    [post.data.category, post.data.secondaryCategory ?? ''].map((item) => item.toLowerCase()).includes(category),
+  );
 }
 ---
 
@@ -78,7 +84,7 @@ if (item) {
     <Layout title={`SGID ${category} index`}>
       <Section title={`${properCase(category)} index`}>
         {entries.map((post) => (
-          <CardForData href={`/products/sgid/${category}/${post.slug}`} {...post.data}>
+          <CardForData href={`/products/sgid/${post.data.category.toLowerCase()}/${post.slug}`} {...post.data}>
             {post.data.description}
           </CardForData>
         ))}

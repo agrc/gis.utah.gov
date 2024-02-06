@@ -6,19 +6,21 @@ import { ClipboardCopy } from '@astro-github-elements/clipboard-copy';
 
 interface Props {
   name: string;
+  featureServiceId?: string;
   oddHubName?: string;
   externalHubOrganization?: string;
   layerId?: number;
   openSgid?: string;
 }
-const { name, oddHubName, externalHubOrganization, openSgid, layerId = 0 } = Astro.props;
+
+const { name, oddHubName, externalHubOrganization, openSgid, layerId = 0, featureServiceId } = Astro.props;
 
 let id = oddHubName?.toLowerCase() || name.toLowerCase().replaceAll(' ', '-');
-
+let featureService = featureServiceId || name.toLowerCase().replaceAll(' ', '-');
 if (externalHubOrganization) {
   id = `${externalHubOrganization.toUpperCase()}::${id}`;
 }
-const featureServiceUrl = `https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/${name.replaceAll(' ', '')}/FeatureServer/${layerId}`;
+const featureServiceUrl = `https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/${featureService}/FeatureServer/${layerId}`;
 ---
 
 <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">

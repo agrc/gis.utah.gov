@@ -6,9 +6,10 @@ interface Props {
   title: string;
   subTitle?: string;
   category?: string;
+  downloadSectionTitle?: string;
 }
 
-const { title = 'UGRC', subTitle, category = '' } = Astro.props;
+const { title = 'UGRC', subTitle, downloadSectionTitle = 'Use the data', category = '' } = Astro.props;
 ---
 
 <Layout title={category}>
@@ -20,7 +21,7 @@ const { title = 'UGRC', subTitle, category = '' } = Astro.props;
     <slot name="update-history" />
     <slot name="disclaimer" />
   </Section>
-  <Section title="Use the data" titlePosition="center">
+  <Section title={downloadSectionTitle} titlePosition="center">
     <slot name="downloads" />
   </Section>
   <slot name="more-resources" />

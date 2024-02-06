@@ -4,6 +4,12 @@ import ButtonLink from '@components/page/ButtonLink.astro';
 const { href } = Astro.props;
 ---
 
-<div class="max-w-fit">
-  <ButtonLink href={href} decorate="arrow">See the data in action</ButtonLink>
-</div>
+{
+  href && (
+    <div class="max-w-fit">
+      <ButtonLink href={href} decorate="arrow">
+        See the data in action
+      </ButtonLink>
+    </div>
+  )
+}

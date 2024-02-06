@@ -22,10 +22,13 @@ const sgid = defineCollection({
     title: z.string(),
     description: z.string(),
     category: z.string(),
+    secondaryCategory: z.string().optional(),
     stewards: z.array(z.string()).optional(),
     application: z.string().url().optional(),
     lastUpdate: z.string(),
     type: z.string().optional(),
+    hub: z.object({}).optional(),
+    downloads: z.array(z.object({})).optional()
   })
 });
 

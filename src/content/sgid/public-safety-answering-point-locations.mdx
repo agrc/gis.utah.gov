@@ -1,21 +1,21 @@
 ---
-title: Utah Address Points
-category: Location
+title: Utah Public Safety Answering Point Locations
+category: Society
+secondaryCategory: '911'
 stewards:
   - UGRC
-  - local government partners
 type: Point GIS data
-application: 'https://addressing.utah.gov/'
-lastUpdate: January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties
+lastUpdate: January 12, 2024
 description: |
-  An address point represents a geographic location that has been assigned a US Postal Service (USPS) address by the
-  local address authority (i.e., county or municipality) but does not necessarily receive mail.
-
+  PSAP Locations represent the primary Public Safety Answering Point (PSAP) locations in Utah.
+  The Salt Lake County Sheriff Office PSAP is secondary.
+  The original dataset was created in December 2004 by geocoding the PSAP addresses provided by the E911 Executive Committee.
 hub:
-  name: Utah Address Points
-  itemId: 3f4f7a8efcd147febeca8bacaea67a14
+  name: Utah Public Safety Answering Point Locations
+  featureServiceId: UtahPSAP_Locations
+  itemId: 6c102c8fc5af413187db0910053d5ed8
   layerId: 0
-  openSgid: location.address_points
+  openSgid: society.public_safety_answering_point_locations
 ---
 
 import Layout from '@layouts/DataPage.astro';
@@ -30,7 +30,7 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 
 <Layout title={frontmatter.title} subTitle={frontmatter.lastUpdate} category={frontmatter.category}>
-<Metadata slot="metadata" {...frontmatter} />
+  <Metadata slot="metadata" {...frontmatter} />
 
   <ApplicationLink slot="application-link" href={frontmatter.application} />
 
@@ -43,7 +43,7 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
   <Fragment slot="description">
     Address points may include several pieces of information about the structure or location that's being mapped, such as:
 
-    - the full address (i.e., the USPS mailing address, if the address is for a physical location rather than a PO box);
+    - the full address (i.e., the USPS mailing address, if the address is for a physical location [rather than a PO box]);
     - the landmark name;
     - whether the location is a building;
     - the type of unit;
@@ -115,7 +115,7 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
         <>Transportation related data sets.</>
       </CardWithSmallLink>
       <CardWithSmallLink title="Addresses" href="/products/sgid/address">
-        <>Address releated datasets, applications, and services.</>
+        <>Address related datasets, applications, and services.</>
       </CardWithSmallLink>
       <CardWithSmallLink title="Discover" href="/products/discover">
         <>Discover has an address point base map service for your projects and maps.</>

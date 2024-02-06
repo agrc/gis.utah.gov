@@ -1,7 +1,7 @@
 {
   "files.associations": {
     "*.html": "astro",
-    "*.mdx": "astro"
+    "*.mdx": "astro",
   },
   "cSpell.words": [
     "agol",
@@ -60,6 +60,7 @@
     "FNAME",
     "focusable",
     "foulger",
+    "frontmatter",
     "gas",
     "GCDB",
     "geocode",
@@ -112,11 +113,14 @@
     "kaysville",
     "kearns",
     "Kelson",
+    "keyof",
     "koosharem",
     "Kota",
     "Laketown",
     "Lehi",
     "lifecycle",
+    "linecap",
+    "linejoin",
     "luca",
     "mapserv",
     "Mendon",
@@ -204,6 +208,7 @@
     "trimble",
     "tsob",
     "turngps",
+    "typeof",
     "udem",
     "udot",
     "UDOT's",
