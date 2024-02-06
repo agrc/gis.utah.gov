@@ -78,7 +78,7 @@ if (item) {
     <Layout title={`SGID ${category} index`}>
       <Section title={`${properCase(category)} index`}>
         {entries.map((post) => (
-          <CardForData href={category + '/' + post.slug} {...post.data}>
+          <CardForData href={`/products/sgid/${category}/${post.slug}`} {...post.data}>
             {post.data.description}
           </CardForData>
         ))}
