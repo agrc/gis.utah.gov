@@ -1,4 +1,6 @@
 ---
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
 import Layout from '@layouts/DataPage.astro';
 
 import Metadata from '@components/data/Metadata.astro';
@@ -10,21 +12,21 @@ import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
-import { getGithubReleases } from '@utilities/github';
+import { getGithubReleases } from '@utils/github';
 
 const dateFormatter = Intl.DateTimeFormat('en-US', { dateStyle: 'full' });
 
 let releaseMetadata = await getGithubReleases('masquerade');
 
-export const metadata = {
+export const metadata: IMetadata = {
   title: 'Masquerade',
   description: `Disguising UGRC's API endpoints as an Esri locator service to allow for credit free geocoding and searching in Esri products.`,
   stewards: ['UGRC'],
-  type: 'Web service',
-  category: 'Address',
+  type: ProductType.WEB_SERVICE,
+  category: SgidCategory.ADDRESS,
 };
 
-const page = {
+const page: IPageMetadata = {
   ...metadata,
   application: 'https://github.com/agrc/masquerade',
   lastUpdate:
@@ -157,4 +159,3 @@ const agol = 'https://utah.maps.arcgis.com/home/item.html?id=f19e6205b9bd49e8a39
     </GridForYouMightLike>
   </Section>
 </Layout>
-@utilities/github

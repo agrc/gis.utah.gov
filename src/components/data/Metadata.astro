@@ -1,4 +1,13 @@
 ---
+import { ProductType, type SgidCategory } from '@models/products/sgid/types';
+import { convertProductType } from '@utils/data';
+
+interface Props {
+  category: SgidCategory;
+  type: ProductType;
+  stewards: string[];
+}
+
 const { category, type, stewards } = Astro.props;
 ---
 
@@ -7,7 +16,9 @@ const { category, type, stewards } = Astro.props;
     <span class="font-semibold text-primary dark:text-white">Category:</span>{' '}<span>{category}</span>
   </span>
   <span>
-    <span class="font-semibold text-primary dark:text-white">Data Type:</span>{' '}<span>{type}</span>
+    <span class="font-semibold text-primary dark:text-white">Data Type:</span>{' '}<span
+      >{convertProductType(type)}</span
+    >
   </span>
   <span>
     <span class="font-semibold text-primary dark:text-white"

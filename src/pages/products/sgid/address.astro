@@ -1,22 +1,12 @@
 ---
+import type { IDataCategory } from '@models/products/sgid/types';
+
 import CardForData from '@components/data/CardForData.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
-interface Page {
-  metadata: {
-    title: string;
-    stewards: string[];
-    type: string;
-    description: string;
-    category: string;
-    secondaryCategory?: string;
-  };
-  url: string;
-}
-
 const category = 'address';
-const pages = (await Astro.glob<Page>('../**/*.astro')).filter((page) => {
+const pages = (await Astro.glob<IDataCategory>('../**/*.astro')).filter((page) => {
   return [page.metadata?.category?.toLowerCase(), page?.metadata?.secondaryCategory?.toLowerCase()].includes(category);
 });
 ---

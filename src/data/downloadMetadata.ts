@@ -1,4 +1,7 @@
-export const dataPages = {
+interface DownloadMetadata {
+  [key: string]: IHubDownload
+};
+export const dataPages: DownloadMetadata = {
   'Utah Wildfire Perimeters': {
     itemId: "45aef8e1d4dd412ab538a7ec21eff4c7",
     name: "Utah Wildfire Perimeters",
@@ -1738,8 +1741,8 @@ export const dataPages = {
   'Utah Address System Quadrants': {
     itemId: "3d6d2db8f3554cc8b3ff24b820035fb3",
     name: "Utah Address System Quadrants",
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'AddressSystemQuadrants',
+    openSgid: 'address_system_quadrants',
     layerId: 0,
     type: "POLYGON"
   },

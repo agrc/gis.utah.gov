@@ -1,11 +1,10 @@
 ---
+import type { IDownloadLink } from '@models/products/sgid/types';
+
 import ExternalLink from '@components/page/ExternalLink.astro';
 
 interface Props {
-  links: {
-    title: string;
-    url: string;
-  }[];
+  links: IDownloadLink[];
   title?: string;
 }
 

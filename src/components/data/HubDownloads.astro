@@ -1,22 +1,22 @@
 ---
-import ExternalLink from '@components/page/ExternalLink.astro';
+import type { IHubDownload } from '@models/products/sgid/types';
+
 import Alert from '@components/page/Alert.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 
 import Clipboard from '@components/page/Clipboard.astro';
 
-interface Props {
-  name: string;
-  featureServiceId?: string;
-  oddHubName?: string;
-  externalHubOrganization?: string;
-  layerId?: number;
-  openSgid?: string;
-}
-
-const { name, oddHubName, externalHubOrganization, openSgid, layerId = 0, featureServiceId } = Astro.props;
+const {
+  name,
+  oddHubName,
+  externalHubOrganization,
+  openSgid,
+  layerId = 0,
+  featureServiceId,
+} = Astro.props as IHubDownload;
 
 let id = oddHubName?.toLowerCase() || name.toLowerCase().replaceAll(' ', '-');
-let featureService = featureServiceId || name.toLowerCase().replaceAll(' ', '-');
+let featureService = featureServiceId || name.toLowerCase().replaceAll(' ', '');
 if (externalHubOrganization) {
   id = `${externalHubOrganization.toUpperCase()}::${id}`;
 }

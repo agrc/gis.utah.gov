@@ -1,4 +1,6 @@
 ---
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
 import Layout from '@layouts/DataPage.astro';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
@@ -12,26 +14,24 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
-export const metadata = {
+export const metadata: IMetadata = {
   title: 'Utah Address Points',
   description:
     'An address point represents a geographic location that has been assigned a US Postal Service (USPS) address by the local address authority (i.e., county or municipality) but does not necessarily receive mail.',
   stewards: ['UGRC', 'local government partners'],
-  type: 'Point GIS data',
-  category: 'Location',
-  secondaryCategory: 'Address',
+  type: ProductType.POINT,
+  category: SgidCategory.ADDRESS,
+  secondaryCategory: SgidCategory.ADDRESS,
 };
 
-const page = {
+const page: IPageMetadata = {
   ...metadata,
   application: 'https://addressing.utah.gov/',
   lastUpdate: 'January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties',
   hub: {
-    ...dataPages['Utah Address Points'],
+    ...dataPages[metadata.title],
   },
 };
-
-console.log('page', page);
 ---
 
 <Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>

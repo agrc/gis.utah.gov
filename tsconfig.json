@@ -21,11 +21,14 @@
       "@images/about/*": [
         "src/images/pillar-about/*"
       ],
-      "@utilities/*": [
+      "@utils/*": [
         "src/utilities/*"
       ],
       "@data/*": [
         "src/data/*"
+      ],
+      "@models/*": [
+        "src/pages/*"
       ],
     }
   }

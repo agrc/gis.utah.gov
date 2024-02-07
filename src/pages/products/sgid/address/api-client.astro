@@ -1,4 +1,7 @@
 ---
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
 import Layout from '@layouts/DataPage.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
@@ -11,7 +14,7 @@ import Section from '@components/page/Section.astro';
 import DirectDownloads from '@components/data/DirectDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 
-import { getGithubReleases } from '@utilities/github';
+import { getGithubReleases } from '@utils/github';
 
 import { YouTube } from '@astro-community/astro-embed-youtube';
 
@@ -19,18 +22,18 @@ const dateFormatter = Intl.DateTimeFormat('en-US', { dateStyle: 'full' });
 
 let releaseMetadata = await getGithubReleases('api-client');
 
-export const metadata = {
+export const metadata: IMetadata = {
   title: 'UGRC API Client',
   description: `
     The UGRC API Client is a cross-platform, stand-alone desktop geocoding tool designed
     to carefully guide you step-by-step through your address geocoding workflows.
   `,
   stewards: ['UGRC'],
-  type: 'Desktop application',
-  category: 'Address',
+  type: ProductType.DESKTOP_APPLICATION,
+  category: SgidCategory.ADDRESS,
 };
 
-const page = {
+const page: IPageMetadata = {
   ...metadata,
   lastUpdate:
     releaseMetadata?.published_at ?? false
@@ -53,7 +56,7 @@ const page = {
   <Metadata slot="metadata" {...page} />
 
   <Section title="Get the app" titlePosition="center" slot="downloads">
-    <DirectDownloads title="Install links" links={page.links} />
+    <DirectDownloads title="Install links" links={page.links!} />
   </Section>
 
   <Fragment slot="summary">
@@ -140,4 +143,3 @@ const page = {
     </GridForYouMightLike>
   </Section>
 </Layout>
-@utilities/github

@@ -1,0 +1,79 @@
+---
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Layout from '@layouts/DataPage.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import Metadata from '@components/data/Metadata.astro';
+
+export const metadata: IMetadata = {
+  title: 'UGRC API',
+  description: `
+    The UGRC API is a web accessible service with endpoints for the geocoding and reverse geocoding of addresses and mileposts.
+  `,
+  stewards: ['UGRC'],
+  type: ProductType.WEB_SERVICE,
+  category: SgidCategory.ADDRESS,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  lastUpdate: `<a href="http://github.com/agrc/api.mapserv.utah.gov/releases">GitHub Release History</a>`,
+};
+---
+
+<Layout title={page.title} subTitle={page.lastUpdate} category={page.category}>
+  <Metadata slot="metadata" {...page} />
+
+  <Section title="Get the app" titlePosition="center" slot="downloads">
+    <!-- <DirectDownloads title="Install links" links={page.links} /> -->
+  </Section>
+
+  <Fragment slot="summary">
+    <p>
+      The UGRC API Client is a cross-platform, stand-alone desktop geocoding tool designed to carefully guide you
+      step-by-step through your geocoding tasks. This app is our most user friendly geocoding client for geocoding <code
+        >*.csv</code
+      > files. It does not require a license or subscription to use and automatically downloads updates as soon as they are
+      available to stay current and add new features.
+    </p>
+  </Fragment>
+
+  <Fragment slot="description">
+    <p></p>
+  </Fragment>
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UGRC API Explorer" href="https://api.mapserv.utah.gov">
+        The landing page for the UGRC API. You can explore the API endpoints live in the browser.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="UGRC Self Service Website" href="https://developer.mapserv.utah.gov">
+        The self service website to create keys for calling the API endpoints and view analytics for the keys.
+      </CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/roads">
+        The roads dataset that is used for geocoding
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Address Points" href="/products/sgid/address/address-points">
+        The address point dataset that is used for geocoding
+      </CardWithSmallLink>
+      <CardWithSmallLink title="UGRC API GitHub" href="https://github.com/agrc/api-client">
+        The open source GitHub repository for the API Client. You may submit issues or enhancements on this website.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov">
+        This web app is an example of using the UGRC API in a web application
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

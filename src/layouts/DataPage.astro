@@ -6,7 +6,7 @@ interface Props {
   title: string;
   subTitle?: string;
   category: string;
-  actionUrl?: string;
+  actionUrl?: string | null;
 }
 
 const { title = 'UGRC', subTitle, category, actionUrl = '' } = Astro.props;
