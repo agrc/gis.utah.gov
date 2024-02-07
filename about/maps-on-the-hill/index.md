@@ -19,11 +19,10 @@ Maps on the Hill, an event held at the State Capitol during the Utah Legislative
 
 - [Map Book Calendar](https://drive.google.com/file/d/18-KtXJ-R0EsYMo5wVwjt15kp5r8gpQcC/view?usp=sharing)
 - [Photos](https://drive.google.com/drive/folders/1Pn2qhLTruQDpMxwdHi8AOtKdMRzzPS-e?usp=sharing)
-  {: .dotless .no-padding}
-    </div>
+{: .dotless .no-padding}
+  </div>
 
-    <div markdown="1">
-
+  <div markdown="1">
 
 #### Maps on the Hill 2023
 
@@ -31,11 +30,10 @@ Maps on the Hill, an event held at the State Capitol during the Utah Legislative
 
 - [Map Book Calendar](https://drive.google.com/file/d/1adOJtmxluQTJhiGPK89wt8u4cFFoGwu4/view?usp=sharing)
 - [Photos](https://drive.google.com/drive/folders/11Q-Lj61Sn-bEJALVaTCI7uA101GVCxXN?usp=sharing)
-  {: .dotless .no-padding}
-    </div>
+{: .dotless .no-padding}
+  </div>
 
-    <div markdown="1">
-
+  <div markdown="1">
 
 #### Maps on the Hill 2022
 
@@ -43,10 +41,10 @@ Maps on the Hill, an event held at the State Capitol during the Utah Legislative
 
 - [Map Book Calendar](https://drive.google.com/file/d/1SbkAqKBmDsT_tINy-poxLy5MtK8VWRLD/view?usp=sharing)
 - [Photos](https://drive.google.com/drive/folders/16WD6rrPGTrmRYPMSk-S99oXOI7jASoh_?usp=sharing)
-  {: .dotless .no-padding}
-    </div>
+{: .dotless .no-padding}
+  </div>
 
-    <div markdown="1">
+  <div markdown="1">
 
 #### Maps on the Hill 2020
 
@@ -54,10 +52,10 @@ Maps on the Hill, an event held at the State Capitol during the Utah Legislative
 
 - [Map Book Calendar](https://www.dropbox.com/s/9jhfgwma8v6jdbu/Calendar.pdf?dl=0)
 - [Photos](https://drive.google.com/drive/folders/1-wuzob3nLQe3G3afUql3g5ubd3goFPWj?usp=sharing)
-  {: .dotless .no-padding}
-    </div>
+{: .dotless .no-padding}
+  </div>
 
-    <div markdown="1">
+  <div markdown="1">
 
 #### Maps on the Hill 2019
 
@@ -65,10 +63,10 @@ Maps on the Hill, an event held at the State Capitol during the Utah Legislative
 
 - [Map Book Calendar](https://drive.google.com/a/utah.gov/file/d/1bDUTg92jhrskI7BCljlRww2fNvFTYmTp/view?usp=sharing)
 - [Photos](https://drive.google.com/drive/folders/16Usf1lZaelqHtqxOItHhQSLL2h8Es8Do?usp=sharing)
-  {: .dotless .no-padding}
-    </div>
+{: .dotless .no-padding}
+  </div>
 
-    <div markdown="1">
+  <div markdown="1">
 
 #### Maps on the Hill 2018
 
