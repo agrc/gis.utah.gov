@@ -17,19 +17,4 @@ const blog = defineCollection({
   }),
 });
 
-const sgid = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    category: z.string(),
-    secondaryCategory: z.string().optional(),
-    stewards: z.array(z.string()).optional(),
-    application: z.string().url().optional(),
-    lastUpdate: z.string(),
-    type: z.string().optional(),
-    hub: z.object({}).optional(),
-    downloads: z.array(z.object({})).optional()
-  })
-});
-
-export const collections = { blog, sgid };
+export const collections = { blog };

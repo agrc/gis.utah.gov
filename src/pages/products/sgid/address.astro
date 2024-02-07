@@ -1,0 +1,35 @@
+---
+import Layout from '@layouts/FullWidth.astro';
+import Section from '@components/page/Section.astro';
+import CardForData from '@components/data/CardForData.astro';
+
+interface Page {
+  metadata: {
+    title: string;
+    stewards: string[];
+    type: string;
+    description: string;
+  };
+  url: string;
+}
+
+const pages = await Astro.glob<Page>('./address/*.astro');
+---
+
+<Layout title="Address data">
+  <Section>
+    <h1>The address data index</h1>
+    {
+      pages.map((page) => (
+        <CardForData
+          title={page.metadata.title}
+          stewards={page.metadata.stewards}
+          type={page.metadata.type}
+          href={page.url}
+        >
+          {page.metadata.description}
+        </CardForData>
+      ))
+    }
+  </Section>
+</Layout>

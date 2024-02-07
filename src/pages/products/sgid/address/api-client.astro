@@ -1,0 +1,122 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import Section from '@components/page/Section.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+
+import Metadata from '@components/data/Metadata.astro';
+import ApplicationLink from '@components/data/ApplicationLink.astro';
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
+const dateFormatter = Intl.DateTimeFormat('en-US', { dateStyle: 'full' });
+
+const res = await fetch('https://api.github.com/repos/agrc/api-client/releases?per_page=1');
+const data = await res.json();
+
+export const metadata = {
+  title: 'UGRC API Client',
+  description: `
+    The UGRC API Client is a cross-platform, stand-alone desktop geocoding tool designed
+    to carefully guide you step-by-step through your address geocoding workflows.
+  `,
+  stewards: ['UGRC'],
+  type: 'Desktop application',
+};
+const page = {
+  title: metadata.title,
+  description: metadata.description,
+  stewards: metadata.stewards,
+  type: metadata.type,
+  category: 'Address',
+  application: null,
+  lastUpdate: dateFormatter.format(new Date(data[0].published_at)),
+  links: [
+    {
+      title: 'UGRC API Client for Windows',
+      url: data[0].assets.find((asset) => asset.name.includes('win32-setup.exe')).browser_download_url,
+    },
+    {
+      title: 'UGRC API Client for MacOS',
+      url: data[0].assets.find((asset) => asset.name.includes('x64.dmg')).browser_download_url,
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.lastUpdate} category={page.category} downloadSectionTitle="Get the app">
+  <Metadata slot="metadata" {...page} />
+
+  <ApplicationLink slot="application-link" href={page.application} />
+
+  <DirectDownloads title="Install links" slot="downloads" links={page.links} />
+
+  <Fragment slot="summary">
+    The UGRC API Client is a cross-platform, stand-alone desktop geocoding tool designed to carefully guide you
+    step-by-step through your geocoding tasks. This app is our most user friendly geocoding client for geocoding <code
+      >*.csv</code
+    >
+    files. It does not require a license or subscription to use and automatically downloads updates as soon as they are available
+    to stay current and add new features.
+  </Fragment>
+
+  <Fragment slot="description">
+    <p>
+      The API Client is a great tool for users who are not familiar with the programming languages to interact with the
+      API directly and want a user friendly interface to geocode their files. ## Getting started
+    </p>
+
+    <div class="mx-auto w-full max-w-4xl">
+      <YouTube
+        class="aspect-video max-w-full rounded-lg border-2 border-black shadow-xl"
+        id="BSmQ_9E0cVE"
+        playlabel="Listen to Jake Adams explain how to use the UGRC API Client."
+      />
+    </div>
+
+    <p>
+      To get started, download the API Client for the operating system that you are running below. MacOS and windows are
+      the only supported operating systems at this time. Once you have downloaded the application, you will be
+      instructed to create an account on the <ExternalLink href="https://developer.mapserv.utah.gov"
+        >API self service website]</ExternalLink
+      >. Be sure to verify the email address you sign up with! Once you have created an account, you will be able to
+      generate an API key that you will use to authenticate with the API Client. You are now ready to geocode your <code
+        >*.csv</code
+      > files. The API Client will guide you through the process of geocoding your file and will creating a report of the
+      results that you can join back to your data.
+    </p>
+  </Fragment>
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UGRC API Explorer" href="https://api.mapserv.utah.gov">
+        The landing page for the UGRC API. You can explore the API endpoints live in the browser.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="UGRC Self Service Website" href="https://developer.mapserv.utah.gov">
+        The self service website to create keys for calling the API endpoints and view analytics for the keys.
+      </CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/roads">
+        The roads dataset that is used for geocoding
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Address Points" href="/products/sgid/address/address-points">
+        The address point dataset that is used for geocoding
+      </CardWithSmallLink>
+      <CardWithSmallLink title="UGRC API GitHub" href="https://github.com/agrc/api-client">
+        The open source GitHub repository for the API Client. You may submit issues or enhancements on this website.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov">
+        This web app is an example of using the UGRC API in a web application
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
