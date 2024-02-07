@@ -10,6 +10,7 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
+import { dataPages } from '@data/downloadMetadata';
 
 export const metadata = {
   title: 'Utah Address Points',
@@ -17,20 +18,20 @@ export const metadata = {
     'An address point represents a geographic location that has been assigned a US Postal Service (USPS) address by the local address authority (i.e., county or municipality) but does not necessarily receive mail.',
   stewards: ['UGRC', 'local government partners'],
   type: 'Point GIS data',
+  category: 'Location',
+  secondaryCategory: 'Address',
 };
 
 const page = {
   ...metadata,
-  category: 'Location',
   application: 'https://addressing.utah.gov/',
   lastUpdate: 'January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties',
   hub: {
-    name: 'Utah Address Points',
-    itemId: '3f4f7a8efcd147febeca8bacaea67a14',
-    layerId: 0,
-    openSgid: 'location.address_points',
+    ...dataPages['Utah Address Points'],
   },
 };
+
+console.log('page', page);
 ---
 
 <Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>
