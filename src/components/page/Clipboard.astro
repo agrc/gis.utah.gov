@@ -12,8 +12,8 @@ const { title, value } = Astro.props;
 <p>{title}</p>
 <div class="inline-flex items-center">
   <code
-    class="max-w-lg overflow-scroll rounded border border-zinc-400 px-2 py-1 text-sm text-zinc-600 dark:border-zinc-700 dark:text-zinc-300"
-    >{value}</code
+    class="min-w-48 max-w-lg overflow-scroll rounded border border-zinc-400 px-2 py-1 text-sm text-zinc-600 dark:border-zinc-700 dark:text-zinc-300"
+    >{value || 'value not set'}</code
   >
   <ClipboardCopy value={value}
     ><svg
