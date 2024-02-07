@@ -1,22 +1,23 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import Section from '@components/page/Section.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
-import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
-import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Section from '@components/page/Section.astro';
 
-import Metadata from '@components/data/Metadata.astro';
 import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import { getGithubReleases } from '@utilities/github';
 
 import { YouTube } from '@astro-community/astro-embed-youtube';
 
 const dateFormatter = Intl.DateTimeFormat('en-US', { dateStyle: 'full' });
 
-const res = await fetch('https://api.github.com/repos/agrc/api-client/releases?per_page=1');
-const data = await res.json();
+let releaseMetadata = await getGithubReleases('api-client');
 
 export const metadata = {
   title: 'UGRC API Client',
@@ -28,23 +29,20 @@ export const metadata = {
   type: 'Desktop application',
 };
 const page = {
-  title: metadata.title,
-  description: metadata.description,
-  stewards: metadata.stewards,
-  type: metadata.type,
+  ...metadata,
   category: 'Address',
   lastUpdate:
-    data[0]?.published_at ?? false
-      ? dateFormatter.format(new Date(data[0].published_at))
+    releaseMetadata?.published_at ?? false
+      ? dateFormatter.format(new Date(releaseMetadata.published_at))
       : `<a href="http://github.com/agrc/api-client/releases">GitHub Release History</a>`,
   links: [
     {
       title: 'UGRC API Client for Windows',
-      url: data[0].assets.find((asset) => asset.name.includes('win32-setup.exe')).browser_download_url,
+      url: releaseMetadata.assets.find((asset) => asset.name.includes('win32-setup.exe')).browser_download_url,
     },
     {
       title: 'UGRC API Client for MacOS',
-      url: data[0].assets.find((asset) => asset.name.includes('x64.dmg')).browser_download_url,
+      url: releaseMetadata.assets.find((asset) => asset.name.includes('x64.dmg')).browser_download_url,
     },
   ],
 };
@@ -141,3 +139,4 @@ const page = {
     </GridForYouMightLike>
   </Section>
 </Layout>
+@utilities/github

@@ -3,19 +3,18 @@ import Layout from '@layouts/DataPage.astro';
 
 import Metadata from '@components/data/Metadata.astro';
 
-import Section from '@components/page/Section.astro';
-import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
-import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import Clipboard from '@components/page/Clipboard.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+import { getGithubReleases } from '@utilities/github';
 
 const dateFormatter = Intl.DateTimeFormat('en-US', { dateStyle: 'full' });
 
-const res = await fetch('https://api.github.com/repos/agrc/masquerade/releases?per_page=1');
-const data = await res.json();
-// const data = {};
+let releaseMetadata = await getGithubReleases('masquerade');
 
 export const metadata = {
   title: 'Masquerade',
@@ -25,15 +24,12 @@ export const metadata = {
 };
 
 const page = {
-  title: metadata.title,
-  description: metadata.description,
-  stewards: metadata.stewards,
-  type: metadata.type,
+  ...metadata,
   category: 'Address',
   application: 'https://github.com/agrc/masquerade',
   lastUpdate:
-    data[0]?.published_at ?? false
-      ? dateFormatter.format(new Date(data[0].published_at))
+    releaseMetadata?.published_at ?? false
+      ? dateFormatter.format(new Date(releaseMetadata.published_at))
       : `<a href="http://github.com/agrc/masquerade/releases">GitHub Release History</a>`,
 };
 
@@ -161,3 +157,4 @@ const agol = 'https://utah.maps.arcgis.com/home/item.html?id=f19e6205b9bd49e8a39
     </GridForYouMightLike>
   </Section>
 </Layout>
+@utilities/github
