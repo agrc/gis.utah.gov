@@ -1,7 +1,7 @@
 ---
-import Layout from '@layouts/FullWidth.astro';
-import Section from '@components/page/Section.astro';
 import CardForData from '@components/data/CardForData.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
 
 interface Page {
   metadata: {
@@ -9,11 +9,16 @@ interface Page {
     stewards: string[];
     type: string;
     description: string;
+    category: string;
+    secondaryCategory?: string;
   };
   url: string;
 }
 
-const pages = await Astro.glob<Page>('./address/*.astro');
+const category = 'address';
+const pages = (await Astro.glob<Page>('../**/*.astro')).filter((page) => {
+  return [page.metadata?.category?.toLowerCase(), page?.metadata?.secondaryCategory?.toLowerCase()].includes(category);
+});
 ---
 
 <Layout title="Address data">
