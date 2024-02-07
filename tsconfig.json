@@ -24,6 +24,9 @@
       "@utilities/*": [
         "src/utilities/*"
       ],
+      "@data/*": [
+        "src/data/*"
+      ],
     }
   }
 }
