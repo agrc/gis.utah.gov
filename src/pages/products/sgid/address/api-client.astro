@@ -9,7 +9,6 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 
 import Metadata from '@components/data/Metadata.astro';
-import ApplicationLink from '@components/data/ApplicationLink.astro';
 import DirectDownloads from '@components/data/DirectDownloads.astro';
 
 import { YouTube } from '@astro-community/astro-embed-youtube';
@@ -34,8 +33,10 @@ const page = {
   stewards: metadata.stewards,
   type: metadata.type,
   category: 'Address',
-  application: null,
-  lastUpdate: dateFormatter.format(new Date(data[0].published_at)),
+  lastUpdate:
+    data[0]?.published_at ?? false
+      ? dateFormatter.format(new Date(data[0].published_at))
+      : `<a href="http://github.com/agrc/api-client/releases">GitHub Release History</a>`,
   links: [
     {
       title: 'UGRC API Client for Windows',
@@ -49,27 +50,48 @@ const page = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.lastUpdate} category={page.category} downloadSectionTitle="Get the app">
+<Layout title={page.title} subTitle={page.lastUpdate} category={page.category}>
   <Metadata slot="metadata" {...page} />
 
-  <ApplicationLink slot="application-link" href={page.application} />
-
-  <DirectDownloads title="Install links" slot="downloads" links={page.links} />
+  <Section title="Get the app" titlePosition="center" slot="downloads">
+    <DirectDownloads title="Install links" links={page.links} />
+  </Section>
 
   <Fragment slot="summary">
-    The UGRC API Client is a cross-platform, stand-alone desktop geocoding tool designed to carefully guide you
-    step-by-step through your geocoding tasks. This app is our most user friendly geocoding client for geocoding <code
-      >*.csv</code
-    >
-    files. It does not require a license or subscription to use and automatically downloads updates as soon as they are available
-    to stay current and add new features.
+    <p>
+      The UGRC API Client is a cross-platform, stand-alone desktop geocoding tool designed to carefully guide you
+      step-by-step through your geocoding tasks. This app is our most user friendly geocoding client for geocoding <code
+        >*.csv</code
+      > files. It does not require a license or subscription to use and automatically downloads updates as soon as they are
+      available to stay current and add new features.
+    </p>
   </Fragment>
 
   <Fragment slot="description">
     <p>
       The API Client is a great tool for users who are not familiar with the programming languages to interact with the
-      API directly and want a user friendly interface to geocode their files. ## Getting started
+      API directly and want a user friendly interface to geocode their files.
     </p>
+
+    <h2 id="a-few-highlights-we-are-proud-of">A few highlights we are proud of</h2>
+    <ul class="list-disc pl-4">
+      <li>No license is needed to use the client! It is download and go.</li>
+      <li>The client is cross-platform. It works on MacOS and Windows.</li>
+      <li>
+        The client is evergreen. The app will automatically download updates as soon as they are available. Every time
+        the application restarts, it will be the best, most recent version.
+      </li>
+      <li>
+        You only need to create one API key ever. Did your IP address change? No problem! Your access will not be
+        interrupted.
+      </li>
+      <li>
+        API keys are validated before the geocoding task starts. The create a key, try to geocode, fail, read the error
+        message, create a new key, succeed loop is broken!
+      </li>
+    </ul>
+
+    <h2>Getting started</h2>
 
     <div class="mx-auto w-full max-w-4xl">
       <YouTube
@@ -80,10 +102,9 @@ const page = {
     </div>
 
     <p>
-      To get started, download the API Client for the operating system that you are running below. MacOS and windows are
-      the only supported operating systems at this time. Once you have downloaded the application, you will be
-      instructed to create an account on the <ExternalLink href="https://developer.mapserv.utah.gov"
-        >API self service website]</ExternalLink
+      Download the API Client now for the operating system that you are running below! Once you have downloaded the
+      application, you will be instructed to create an account on the <ExternalLink
+        href="https://developer.mapserv.utah.gov">API self service website]</ExternalLink
       >. Be sure to verify the email address you sign up with! Once you have created an account, you will be able to
       generate an API key that you will use to authenticate with the API Client. You are now ready to geocode your <code
         >*.csv</code
@@ -92,7 +113,7 @@ const page = {
     </p>
   </Fragment>
 
-  <Section title={`More ${page.title} resources`} slot="more-resources" stripe titlePosition="center">
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="UGRC API Explorer" href="https://api.mapserv.utah.gov">
         The landing page for the UGRC API. You can explore the API endpoints live in the browser.
@@ -103,7 +124,7 @@ const page = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Roads" href="/products/sgid/transportation/roads">
         The roads dataset that is used for geocoding

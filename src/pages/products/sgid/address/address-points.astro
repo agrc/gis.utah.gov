@@ -3,7 +3,6 @@ import Layout from '@layouts/DataPage.astro';
 
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
-import ApplicationLink from '@components/data/ApplicationLink.astro';
 import HubDownloads from '@components/data/HubDownloads.astro';
 
 import Section from '@components/page/Section.astro';
@@ -37,12 +36,12 @@ const page = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.lastUpdate} category={page.category}>
+<Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
-  <ApplicationLink slot="application-link" href={page.application} />
-
-  <HubDownloads slot="downloads" {...page.hub} />
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
 
   <Fragment slot="summary">
     <p>
@@ -150,7 +149,7 @@ const page = {
     </ul>
   </UpdateHistory>
 
-  <Section title={`More ${page.title} resources`} slot="more-resources" stripe titlePosition="center">
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink
         title="Schema definitions"
@@ -167,7 +166,7 @@ const page = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">
         This web app uses the address points for geocoding and you can toggle an address point base map layer.

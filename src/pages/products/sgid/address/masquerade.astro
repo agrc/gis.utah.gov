@@ -1,0 +1,163 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import Metadata from '@components/data/Metadata.astro';
+
+import Section from '@components/page/Section.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import Clipboard from '@components/page/Clipboard.astro';
+
+const dateFormatter = Intl.DateTimeFormat('en-US', { dateStyle: 'full' });
+
+const res = await fetch('https://api.github.com/repos/agrc/masquerade/releases?per_page=1');
+const data = await res.json();
+// const data = {};
+
+export const metadata = {
+  title: 'Masquerade',
+  description: `Disguising UGRC's API endpoints as an Esri locator service to allow for credit free geocoding and searching in Esri products.`,
+  stewards: ['UGRC'],
+  type: 'Web service',
+};
+
+const page = {
+  title: metadata.title,
+  description: metadata.description,
+  stewards: metadata.stewards,
+  type: metadata.type,
+  category: 'Address',
+  application: 'https://github.com/agrc/masquerade',
+  lastUpdate:
+    data[0]?.published_at ?? false
+      ? dateFormatter.format(new Date(data[0].published_at))
+      : `<a href="http://github.com/agrc/masquerade/releases">GitHub Release History</a>`,
+};
+
+const direct = 'https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer';
+const agol = 'https://utah.maps.arcgis.com/home/item.html?id=f19e6205b9bd49e8a39ed51ddd58164a';
+---
+
+<Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Masquerade is a proxy service that impersonates an Esri locator using UGRC data and web services. Use the
+      following URL in Esri products anywhere you would use a <ExternalLink
+        href="https://www.esri.com/en-us/arcgis/products/arcgis-platform/services/geocoding-search"
+        >geocode service</ExternalLink
+      >.
+    </p>
+  </Fragment>
+
+  <Fragment slot="description">
+    <h2 id="capabilities">Capabilities</h2>
+    <ul>
+      <li>
+        Single line address geocoding (convert an address to an x,y coordinate). Powered by the <a
+          href="https://api.mapserv.utah.gov/#geocoding">UGRC web API</a
+        >.
+      </li>
+      <li>
+        Provides type-ahead suggestions from the following datasets in <a href="https://gis.utah.gov/sgid/open-sgid/"
+          >Open SGID</a
+        > and returns the centroid:
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://opendata.gis.utah.gov/maps/utah-house-districts-2022-to-2032"
+          >Utah House Districts 2022 to 2032</a
+        >
+      </li>
+      <li>
+        <a href="https://opendata.gis.utah.gov/maps/utah-school-board-districts-2022-to-2032"
+          >Utah School Board Districts 2022 to 2032</a
+        >
+      </li>
+      <li>
+        <a href="https://opendata.gis.utah.gov/maps/utah-senate-districts-2022-to-2032"
+          >Utah Senate Districts 2022 to 2032</a
+        >
+      </li>
+      <li>
+        <a href="https://opendata.gis.utah.gov/maps/utah-us-congress-districts-2022-to-2032"
+          >Utah US Congress Districts 2022 to 2032</a
+        >
+      </li>
+      <li>
+        <a href="https://opendata.gis.utah.gov/datasets/utah-address-points">Utah Address Points</a><a
+          href="https://opendata.gis.utah.gov/datasets/utah-county-boundaries">Utah County Boundaries</a
+        >
+      </li>
+      <li><a href="https://opendata.gis.utah.gov/maps/utah-municipal-boundaries">Utah Municipal Boundaries</a></li>
+      <li><a href="https://opendata.gis.utah.gov/maps/utah-zip-code-areas">Utah ZIP Code Areas</a></li>
+      <li><a href="https://opendata.gis.utah.gov/maps/utah-gnis-place-names">Utah GNIS Place Names</a></li>
+    </ul>
+
+    <h3 id="supported-esri-geocode-service-operations">Supported Esri Geocode Service Operations</h3>
+    <ul>
+      <li>✅ Find Address Candidates</li>
+      <li>✅ Geocode Addresses</li>
+      <li>✅ Suggest</li>
+    </ul>
+  </Fragment>
+
+  <Section title="Use the service" slot="downloads" titlePosition="center">
+    <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
+      <div class="flex flex-col gap-2">
+        <h2>Use in ArcGIS</h2>
+        <p>Use the ArcGIS Online item URL as the "Locator URL" value in the geocoding settings.</p>
+        <p>Use the direct url for the search widget in Experience Builder.</p>
+      </div>
+      <div class="flex flex-col gap-1">
+        <h2>Quick clips</h2>
+        <Clipboard title="ArcGIS Online item URL" value={agol} />
+        <Clipboard title="ArcGIS Online item URL" value={direct} />
+      </div>
+      <div class="flex flex-col gap-2">
+        <h2>Getting started</h2>
+        <p>
+          Learn how to use the service in your applications and maps in the <ExternalLink
+            href="https://github.com/agrc/masquerade">masquerade project readme</ExternalLink
+          >.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Masquerade GitHub repository" href="https://github.com/agrc/masquerade">
+        Read the changelog, create issues, and star the repository!
+      </CardWithPopularLink>
+      <CardWithPopularLink
+        title="County Master Address List (MAL) contacts"
+        href="https://docs.google.com/spreadsheet/ccc?key=0AkScYXX9W5INdFFRVHZkcWFYczd5MXhZYS1WTVN1elE&usp=sharing"
+      >
+        Comment and questions can be directed to the Master Address List (MAL) authority at each county.
+      </CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">
+        This web app uses the address points for geocoding and you can toggle an address point base map layer.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">
+        Transportation related data sets.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address">
+        Address related datasets, applications, and services.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Discover" href="/products/discover">
+        Discover has an address point base map service for your projects and maps.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

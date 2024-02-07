@@ -5,24 +5,31 @@ import Layout from '@layouts/FullWidth.astro';
 interface Props {
   title: string;
   subTitle?: string;
-  category?: string;
-  downloadSectionTitle?: string;
+  category: string;
+  actionUrl?: string;
 }
 
-const { title = 'UGRC', subTitle, downloadSectionTitle = 'Use the data', category = '' } = Astro.props;
+const { title = 'UGRC', subTitle, category, actionUrl = '' } = Astro.props;
 ---
 
-<Layout title={category}>
-  <Section title={title} subTitle={subTitle} stripe titlePosition="center">
+<Layout title={`SGID ${category}`}>
+  <Section
+    title={title}
+    subTitle={subTitle}
+    stripe
+    actionText="See the data in action"
+    actionUrl={actionUrl}
+    titlePosition="center"
+  >
     <slot name="metadata" />
     <slot name="summary" />
     <slot name="application-link" />
+  </Section>
+  <slot name="downloads" />
+  <Section title={`${title} in depth`} stripe titlePosition="center">
     <slot name="description" />
     <slot name="update-history" />
     <slot name="disclaimer" />
-  </Section>
-  <Section title={downloadSectionTitle} titlePosition="center">
-    <slot name="downloads" />
   </Section>
   <slot name="more-resources" />
   <slot name="you-might-also-like" />
