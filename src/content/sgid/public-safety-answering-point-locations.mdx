@@ -32,13 +32,19 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 <Layout title={frontmatter.title} subTitle={frontmatter.lastUpdate} category={frontmatter.category}>
   <Metadata slot="metadata" {...frontmatter} />
 
-  <ApplicationLink slot="application-link" href={frontmatter.application} />
+{' '}
+<ApplicationLink slot="application-link" href={frontmatter.application} />
 
-  <HubDownloads slot="downloads" {...frontmatter.hub} />
+{' '}
+<HubDownloads slot="downloads" {...frontmatter.hub} />
 
-  <Fragment slot="summary">
-      An address point represents a geographic location that has been assigned a US Postal Service (USPS) address by the local address authority (i.e., county or municipality) but does not necessarily receive mail. This data layer contains points for all twenty-nine Utah counties and ensures that all state entities are using the same verified, accurate county and municipality address information.
-  </Fragment>
+{' '}
+<Fragment slot="summary">
+  An address point represents a geographic location that has been assigned a US Postal Service (USPS) address by the
+  local address authority (i.e., county or municipality) but does not necessarily receive mail. This data layer contains
+  points for all twenty-nine Utah counties and ensures that all state entities are using the same verified, accurate
+  county and municipality address information.
+</Fragment>
 
   <Fragment slot="description">
     Address points may include several pieces of information about the structure or location that's being mapped, such as:
@@ -72,7 +78,6 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 
   </Fragment>
 
-
   <UpdateHistory slot="update-history">
 
     - January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties
@@ -92,19 +97,20 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 
   </UpdateHistory>
 
-  <Section title={`More ${frontmatter.title} resources`} slot="more-resources" stripe titlePosition="center">
-    <GridForMoreResources>
-      <CardWithPopularLink title="Schema definitions" href="https://docs.google.com/document/d/1fVmLrp0pbR3J1aXo83jTt3gtGUsPwSYztf-HM-RB-cI/edit?usp=sharing">
-        <>The definition and meanings of every attribute and value for the dataset.</>
-      </CardWithPopularLink>
-      <CardWithPopularLink
-        title="???"
-        href="https://drive.google.com/drive/folders/1BwZ_p5bZVtewcQehU-o51el78eIHyQ1s"
-      >
-        <>Text.</>
-      </CardWithPopularLink>
-    </GridForMoreResources>
-  </Section>
+{' '}
+<Section title={`More ${frontmatter.title} resources`} slot="more-resources" stripe titlePosition="center">
+  <GridForMoreResources>
+    <CardWithPopularLink
+      title="Schema definitions"
+      href="https://docs.google.com/document/d/1fVmLrp0pbR3J1aXo83jTt3gtGUsPwSYztf-HM-RB-cI/edit?usp=sharing"
+    >
+      <>The definition and meanings of every attribute and value for the dataset.</>
+    </CardWithPopularLink>
+    <CardWithPopularLink title="???" href="https://drive.google.com/drive/folders/1BwZ_p5bZVtewcQehU-o51el78eIHyQ1s">
+      <>Text.</>
+    </CardWithPopularLink>
+  </GridForMoreResources>
+</Section>
 
   <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>

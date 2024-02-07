@@ -1,14 +1,14 @@
 ---
-import Layout from '@layouts/Pillar.astro';
-import Section from '@components/page/Section.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSideImage from '@components/page/CardWithSideImage.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import CardWithTopImage from '@components/page/CardWithTopImage.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForPillars from '@components/page/GridForPillars.astro';
-import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import GridForPopularResources from '@components/page/GridForPopularResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/Pillar.astro';
 
 import { Image } from 'astro:assets';
 
@@ -23,6 +23,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
         <CardWithTopImage title="What is the SGID" actionText="Learn more" actionUrl="/documentation/sgid">
           <Image
             slot="image"
+            loading="eager"
             src={images[`${location}/sgid-opendata.svg`]()}
             alt="people connected to a network through geography"
             class="block h-44"

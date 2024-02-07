@@ -1,15 +1,15 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
+import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
-import HubDownloads from '@components/data/HubDownloads.astro';
 
-import Section from '@components/page/Section.astro';
-import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
-import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
 
 export const metadata = {
   title: 'Utah Address Points',
@@ -20,10 +20,7 @@ export const metadata = {
 };
 
 const page = {
-  title: metadata.title,
-  description: metadata.description,
-  stewards: metadata.stewards,
-  type: metadata.type,
+  ...metadata,
   category: 'Location',
   application: 'https://addressing.utah.gov/',
   lastUpdate: 'January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties',
