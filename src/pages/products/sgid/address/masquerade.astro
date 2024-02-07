@@ -21,11 +21,11 @@ export const metadata = {
   description: `Disguising UGRC's API endpoints as an Esri locator service to allow for credit free geocoding and searching in Esri products.`,
   stewards: ['UGRC'],
   type: 'Web service',
+  category: 'Address',
 };
 
 const page = {
   ...metadata,
-  category: 'Address',
   application: 'https://github.com/agrc/masquerade',
   lastUpdate:
     releaseMetadata?.published_at ?? false

@@ -27,10 +27,11 @@ export const metadata = {
   `,
   stewards: ['UGRC'],
   type: 'Desktop application',
+  category: 'Address',
 };
+
 const page = {
   ...metadata,
-  category: 'Address',
   lastUpdate:
     releaseMetadata?.published_at ?? false
       ? dateFormatter.format(new Date(releaseMetadata.published_at))
