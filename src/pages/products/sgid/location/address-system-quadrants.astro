@@ -1,7 +1,7 @@
 ---
+import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
 import { ProductType, SgidCategory } from '@models/products/sgid/types';
-import Layout from '@layouts/DataPage.astro';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -587,58 +587,58 @@ const page: IPageMetadata = {
       <h2>Weber County</h2>
       <div>Countywide origin - Wall Ave (100 E/W) between addresses of 120 N Wall and 106 (S) Wall Ave (in Ogden)</div>
     </p>
+  </Fragment>
 
-    <UpdateHistory slot="update-history">
-      <ul>
-        <li>January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties</li>
-      </ul>
-      <li>December 2023 - Davis, Iron, Salt Lake, Utah, Washington, and Weber Counties</li></UpdateHistory
-    >
-    <li>November 2023 - Davis, Kane, Salt Lake, Tooele, Utah, Washington, and Weber Counties</li></Fragment
-  >
-  <li>October 2023 - Box Elder, Carbon, Davis, Salt Lake, Sevier, Utah, Washington and Weber Counties</li></Layout
->
-<li>September 2023 - Davis, Iron, Salt Lake, Utah, Washington, and Weber Counties</li>
-<li>August 2023 - Davis, Garfield, Salt Lake, Tooele, Utah, Washington, and Weber Counties</li>
-<li>July 2023 - Box Elder, Davis, Grand, Salt Lake, San Juan, Summit, Utah, Washington, and Weber Counties</li>
-<li>June 2023 - Beaver, Emery, Davis, Salt Lake, Utah, Washington, and Weber Counties</li>
-<li>May 2023 - Cache, Davis, Morgan, Salt Lake, Tooele, Utah, Wasatch, Washington, and Weber Counties</li>
-<li>April 2023 - Davis, Morgan, Piute, Salt Lake, Sevier, Summit, Utah, Washington, and Weber Counties</li>
-<li>March 2023 - Box Elder, Cache, Davis, Iron, Salt Lake, Utah, Washington, Weber Counties</li>
-<li>February 2023 - Carbon, Davis, Garfield, Grand, Salt Lake, Tooele, Utah, Washington, Weber Counties</li>
-<li>January 2023 - Box Elder, Davis, Iron, Salt Lake, Utah, Wasatch, Washington, Weber Counties</li>
-<li>Address Points were made public by UGRC on June 27, 2013</li>
+  <UpdateHistory slot="update-history">
+    <ul>
+      <li>January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties</li>
+      <li>December 2023 - Davis, Iron, Salt Lake, Utah, Washington, and Weber Counties</li>
+      <li>November 2023 - Davis, Kane, Salt Lake, Tooele, Utah, Washington, and Weber Counties</li>
+      <li>October 2023 - Box Elder, Carbon, Davis, Salt Lake, Sevier, Utah, Washington and Weber Counties</li>
+      <li>September 2023 - Davis, Iron, Salt Lake, Utah, Washington, and Weber Counties</li>
+      <li>August 2023 - Davis, Garfield, Salt Lake, Tooele, Utah, Washington, and Weber Counties</li>
+      <li>July 2023 - Box Elder, Davis, Grand, Salt Lake, San Juan, Summit, Utah, Washington, and Weber Counties</li>
+      <li>June 2023 - Beaver, Emery, Davis, Salt Lake, Utah, Washington, and Weber Counties</li>
+      <li>May 2023 - Cache, Davis, Morgan, Salt Lake, Tooele, Utah, Wasatch, Washington, and Weber Counties</li>
+      <li>April 2023 - Davis, Morgan, Piute, Salt Lake, Sevier, Summit, Utah, Washington, and Weber Counties</li>
+      <li>March 2023 - Box Elder, Cache, Davis, Iron, Salt Lake, Utah, Washington, Weber Counties</li>
+      <li>February 2023 - Carbon, Davis, Garfield, Grand, Salt Lake, Tooele, Utah, Washington, Weber Counties</li>
+      <li>January 2023 - Box Elder, Davis, Iron, Salt Lake, Utah, Wasatch, Washington, Weber Counties</li>
+      <li>Address Points were made public by UGRC on June 27, 2013</li>
+    </ul>
+  </UpdateHistory>
 
-<Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
-  <GridForMoreResources>
-    <CardWithPopularLink
-      title="Schema definitions"
-      href="https://docs.google.com/document/d/1fVmLrp0pbR3J1aXo83jTt3gtGUsPwSYztf-HM-RB-cI/edit?usp=sharing"
-    >
-      The definition and meanings of every attribute and value for the dataset.
-    </CardWithPopularLink>
-    <CardWithPopularLink
-      title="County Master Address List (MAL) contacts"
-      href="https://docs.google.com/spreadsheet/ccc?key=0AkScYXX9W5INdFFRVHZkcWFYczd5MXhZYS1WTVN1elE&usp=sharing"
-    >
-      Comment and questions can be directed to the Master Address List (MAL) authority at each county.
-    </CardWithPopularLink>
-  </GridForMoreResources>
-</Section>
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Schema definitions"
+        href="https://docs.google.com/document/d/1fVmLrp0pbR3J1aXo83jTt3gtGUsPwSYztf-HM-RB-cI/edit?usp=sharing"
+      >
+        The definition and meanings of every attribute and value for the dataset.
+      </CardWithPopularLink>
+      <CardWithPopularLink
+        title="County Master Address List (MAL) contacts"
+        href="https://docs.google.com/spreadsheet/ccc?key=0AkScYXX9W5INdFFRVHZkcWFYczd5MXhZYS1WTVN1elE&usp=sharing"
+      >
+        Comment and questions can be directed to the Master Address List (MAL) authority at each county.
+      </CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
 
-<Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
-  <GridForYouMightLike>
-    <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">
-      This web app uses the address points for geocoding and you can toggle an address point base map layer.
-    </CardWithSmallLink>
-    <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">
-      Transportation related data sets.
-    </CardWithSmallLink>
-    <CardWithSmallLink title="Addresses" href="/products/sgid/address">
-      Address releated datasets, applications, and services.
-    </CardWithSmallLink>
-    <CardWithSmallLink title="Discover" href="/products/discover">
-      Discover has an address point base map service for your projects and maps.
-    </CardWithSmallLink>
-  </GridForYouMightLike>
-</Section>
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">
+        This web app uses the address points for geocoding and you can toggle an address point base map layer.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">
+        Transportation related data sets.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address">
+        Address related datasets, applications, and services.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Discover" href="/products/discover">
+        Discover has an address point base map service for your projects and maps.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
