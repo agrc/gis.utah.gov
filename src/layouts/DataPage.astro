@@ -6,10 +6,10 @@ interface Props {
   title: string;
   subTitle?: string;
   category: string;
-  actionUrl?: string | null;
+  actionUrl?: string;
 }
 
-const { title = 'UGRC', subTitle, category, actionUrl = '' } = Astro.props;
+const { title = 'UGRC', subTitle, category, actionUrl } = Astro.props;
 ---
 
 <Layout title={`SGID ${category}`}>
@@ -23,7 +23,6 @@ const { title = 'UGRC', subTitle, category, actionUrl = '' } = Astro.props;
   >
     <slot name="metadata" />
     <slot name="summary" />
-    <slot name="application-link" />
   </Section>
   <slot name="downloads" />
   <Section title={`${title} in depth`} stripe titlePosition="center">
