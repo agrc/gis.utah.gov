@@ -1,7 +1,7 @@
 ---
+import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
 import { ProductType, SgidCategory } from '@models/products/sgid/types';
-import Layout from '@layouts/DataPage.astro';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -20,7 +20,7 @@ export const metadata: IMetadata = {
     'An address point represents a geographic location that has been assigned a US Postal Service (USPS) address by the local address authority (i.e., county or municipality) but does not necessarily receive mail.',
   stewards: ['UGRC', 'local government partners'],
   type: ProductType.POINT,
-  category: SgidCategory.ADDRESS,
+  category: SgidCategory.LOCATION,
   secondaryCategory: SgidCategory.ADDRESS,
 };
 
@@ -173,7 +173,7 @@ const page: IPageMetadata = {
         Transportation related data sets.
       </CardWithSmallLink>
       <CardWithSmallLink title="Addresses" href="/products/sgid/address">
-        Address releated datasets, applications, and services.
+        Address related datasets, applications, and services.
       </CardWithSmallLink>
       <CardWithSmallLink title="Discover" href="/products/discover">
         Discover has an address point base map service for your projects and maps.
