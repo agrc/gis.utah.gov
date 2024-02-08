@@ -1,0 +1,115 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Disclaimer from '@components/data/Disclaimer.astro';
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'ArcGIS Online Title Goes Here (Utah blah blah)',
+  description: `A short description of what the dataset is, so when people read it in the list of datasets they know what it is.`,
+  stewards: ['UGRC', 'these', 'are', 'combined'],
+  type: ProductType.POINT, // This comes from the ProductType enum in types.ts
+  category: SgidCategory.ADDRESS, // This comes from the SgidCategory enum in types.ts
+  secondaryCategory: SgidCategory.ADDRESS, // This is optional and only used when a dataset is in two categories
+};
+
+const page: IPageMetadata = {
+  ...metadata, // this brings all the data from the metadata object above into the page object
+  application: 'https://gis.utah.gov/', // this is optional and only used when a product has an associated web application. It creates a button under the summary that says `See the data in action`. Delete if it is unused.
+  lastUpdate: 'This shows under the title and should be the most current update date and description if there is one',
+
+  // hub is optional but it is the primary download type for most datasets
+  // the dataPages object is the modified AGOLItems table from the internal SGID database
+  // You can view it in `/data/downloadMetadata.ts`
+  // The title from line 18 should be in the dataPages list.
+  // The object in dataPages is not complete and a few properties need to be added.
+  // 1. The feature service id. That is the name of the feature server created in our arcgis online account. You can view all of the services in https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services
+  // 2. Verify that the layer id for the feature service is 0. If it is not, modify it to match. In the feature server you will see Layers: AvalanchePaths (0). The 0 is the layer id.
+  // 3. The open sgid table name. Open the Open SGID and add the schema.table_name value to the object.
+  // delete this if it is unused
+  hub: {
+    ...dataPages[metadata.title],
+  },
+
+  // links are optional and only used when a product has download type of links that aren't ArcGIS Hub
+  // delete this if it is unused
+  links: [
+    {
+      title: 'The link title',
+      url: 'https://link-to-the-resource.com',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <!-- the title for hub data is typically `Use the data` but it can be anything
+  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
+    <HubDownloads {...page.hub} />
+    <!-- links use the direct downloads component. Only keep one element and delete the unused. -->
+    <DirectDownloads title="A title describing the links. e.g. Install links" links={page.links!} />
+  </Section>
+
+  <Fragment slot="summary">
+    <p>
+      the summary of the product. This is the important information the user should know but save the longer deeper
+      knowledge content for the description. It should be limited to 1 or 2 paragraphs. You use standard html in the
+      summary slot.
+    </p>
+  </Fragment>
+
+  <Fragment slot="description">
+    <p>A description of the product. This is the extra information that didn't fit into the summary.</p>
+    <p>
+      Schema definitions, and deeper dive things that only a few will read. You use standard html in the summary slot.
+    </p>
+  </Fragment>
+
+  <!-- this is the complete update history for a dataset. Duplicate the newest item in the page.lastUpdate property. -->
+  <UpdateHistory slot="update-history">
+    <ul>
+      <li>January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties</li>
+    </ul>
+  </UpdateHistory>
+
+  <Disclaimer slot="disclaimer">
+    <p>
+      If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
+      element
+    </p>
+  </Disclaimer>
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Item 1" href="https://gis.utah.gov">Item 1 description.</CardWithPopularLink>
+      <CardWithPopularLink title="Item 2" href="/products/sgid/address/">Item 2 description.</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">Description</CardWithSmallLink>
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">Description</CardWithSmallLink>
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address">Description</CardWithSmallLink>
+      <CardWithSmallLink title="Discover" href="/products/discover">Description</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
