@@ -12,6 +12,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -81,35 +82,44 @@ const page: IPageMetadata = {
     <p>
       Schema definitions, and deeper dive things that only a few will read. You use standard html in the summary slot.
     </p>
-  </Fragment>
-
-  <!-- this is the complete update history for a dataset. Duplicate the newest item in the page.lastUpdate property. -->
-  <UpdateHistory slot="update-history">
-    <ul>
-      <li>January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties</li>
-    </ul>
-  </UpdateHistory>
-
-  <Disclaimer slot="disclaimer">
     <p>
-      If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
-      element
+      Use the <ExternalLink href="https://gis.utah.gov">ExternalLink</ExternalLink> component for external links. Use <a
+        href="/products/sgid/address">relative links</a
+      > for internal links.
     </p>
-  </Disclaimer>
+    <p>
+      Styling is done with <ExternalLink href="https://tailwindcss.com/docs/utility-first">tailwindcss</ExternalLink>.
+      But I can help take care of any extra formatting you are missing.
+    </p>
 
-  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
-    <GridForMoreResources>
-      <CardWithPopularLink title="Item 1" href="https://gis.utah.gov">Item 1 description.</CardWithPopularLink>
-      <CardWithPopularLink title="Item 2" href="/products/sgid/address/">Item 2 description.</CardWithPopularLink>
-    </GridForMoreResources>
-  </Section>
+    <!-- this is the complete update history for a dataset. Duplicate the newest item in the page.lastUpdate property. -->
+    <UpdateHistory slot="update-history">
+      <ul>
+        <li>January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties</li>
+      </ul>
+    </UpdateHistory>
 
-  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
-    <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">Description</CardWithSmallLink>
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">Description</CardWithSmallLink>
-      <CardWithSmallLink title="Addresses" href="/products/sgid/address">Description</CardWithSmallLink>
-      <CardWithSmallLink title="Discover" href="/products/discover">Description</CardWithSmallLink>
-    </GridForYouMightLike>
-  </Section>
+    <Disclaimer slot="disclaimer">
+      <p>
+        If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
+        element
+      </p>
+    </Disclaimer>
+
+    <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+      <GridForMoreResources>
+        <CardWithPopularLink title="Item 1" href="https://gis.utah.gov">Item 1 description.</CardWithPopularLink>
+        <CardWithPopularLink title="Item 2" href="/products/sgid/address/">Item 2 description.</CardWithPopularLink>
+      </GridForMoreResources>
+    </Section>
+
+    <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+      <GridForYouMightLike>
+        <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">Description</CardWithSmallLink>
+        <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">Description</CardWithSmallLink>
+        <CardWithSmallLink title="Addresses" href="/products/sgid/address">Description</CardWithSmallLink>
+        <CardWithSmallLink title="Discover" href="/products/discover">Description</CardWithSmallLink>
+      </GridForYouMightLike>
+    </Section>
+  </Fragment>
 </Layout>
