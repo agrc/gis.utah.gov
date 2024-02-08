@@ -9,9 +9,11 @@ export const convertProductType = (type: ProductType) => {
     case ProductType.POLYGON:
       return 'Polygon GIS data';
     case ProductType.WEB_SERVICE:
-      return 'Web Service';
+      return 'Web service';
     case ProductType.DESKTOP_APPLICATION:
-      return 'Desktop Application';
+      return 'Desktop application';
+    case ProductType.DISCOVER_SERVICE:
+      return 'Imagery web service';
     default:
       return type;
   }
