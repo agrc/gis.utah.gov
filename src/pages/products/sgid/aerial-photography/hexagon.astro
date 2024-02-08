@@ -7,8 +7,10 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 import Metadata from '@components/data/Metadata.astro';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Alert from '@components/page/Alert.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Clipboard from '@components/page/Clipboard.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
@@ -16,7 +18,7 @@ import Section from '@components/page/Section.astro';
 
 export const metadata: IMetadata = {
   title: 'Utah Hexagon licensed imagery',
-  description: `A copy of the 2021 statewide NAIP imagery with a higher resolution (15cm). This data is available as a service or download to licensed Discover users.`,
+  description: `A copy of the 2021 statewide NAIP imagery with a higher resolution (15cm). This data is available as a service or download for licensed Discover users.`,
   stewards: ['UGRC', 'Hexagon'],
   type: ProductType.DISCOVER_SERVICE,
   category: SgidCategory.AERIAL_PHOTOGRAPHY,
@@ -47,12 +49,37 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <p>
-      Utah state agencies, cities, counties, special service districts, educational institutions and their students, and
-      tribal entities (along with formal partners of these groups) can sign up for licensed access to our latest
-      state-wide high-resolution aerial imagery in both streaming and downloadable formats.
-    </p>
-    <DirectDownloads title="Request access" links={page.links!} />
+    <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
+      <div class="flex flex-col">
+        <DirectDownloads title="Request access" links={page.links!} />
+      </div>
+      <div class="flex flex-col gap-1">
+        <h2>Quick clips</h2>
+        <Clipboard
+          title="Citing printed products"
+          value={`© ${new Date().getUTCFullYear()} HxGN Content Program, Hexagon`}
+        />
+        <Clipboard
+          title="Online citation"
+          value={`© ${new Date().getUTCFullYear()} <a href="https://hxgncontent.com">HxGN Content Program</a>, Hexagon`}
+        />
+      </div>
+      <div class="flex flex-col">
+        <h2>Getting started</h2>
+        <p>
+          Utah state agencies, cities, counties, special service districts, educational institutions and their students,
+          and tribal entities (along with formal partners of these groups) can sign up for licensed access to our latest
+          state-wide high-resolution aerial imagery in both streaming and downloadable formats. Read more about getting
+          started with <a href="/products/discover">Discover</a>.
+        </p>
+      </div>
+      <Alert title="Hexagon citation requirements">
+        <p>
+          As part of our licenses with Hexagon, you must provide proper attribution of any products created with their
+          imagery. The year should be replaced with the first year you published the product using the imagery.
+        </p>
+      </Alert>
+    </div>
   </Section>
 
   <Fragment slot="summary">
