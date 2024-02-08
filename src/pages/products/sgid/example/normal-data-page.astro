@@ -20,7 +20,7 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'ArcGIS Online Title Goes Here (Utah blah blah)',
+  title: 'Utah Address Points', // The ArcGIS Online title Goes Here (Utah blah blah)
   description: `A short description of what the dataset is, so when people read it in the list of datasets they know what it is.`,
   stewards: ['UGRC', 'these', 'are', 'combined'],
   type: ProductType.POINT, // This comes from the ProductType enum in types.ts
@@ -91,35 +91,35 @@ const page: IPageMetadata = {
       Styling is done with <ExternalLink href="https://tailwindcss.com/docs/utility-first">tailwindcss</ExternalLink>.
       But I can help take care of any extra formatting you are missing.
     </p>
-
-    <!-- this is the complete update history for a dataset. Duplicate the newest item in the page.lastUpdate property. -->
-    <UpdateHistory slot="update-history">
-      <ul>
-        <li>January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties</li>
-      </ul>
-    </UpdateHistory>
-
-    <Disclaimer slot="disclaimer">
-      <p>
-        If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
-        element
-      </p>
-    </Disclaimer>
-
-    <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
-      <GridForMoreResources>
-        <CardWithPopularLink title="Item 1" href="https://gis.utah.gov">Item 1 description.</CardWithPopularLink>
-        <CardWithPopularLink title="Item 2" href="/products/sgid/address/">Item 2 description.</CardWithPopularLink>
-      </GridForMoreResources>
-    </Section>
-
-    <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
-      <GridForYouMightLike>
-        <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">Description</CardWithSmallLink>
-        <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">Description</CardWithSmallLink>
-        <CardWithSmallLink title="Addresses" href="/products/sgid/address">Description</CardWithSmallLink>
-        <CardWithSmallLink title="Discover" href="/products/discover">Description</CardWithSmallLink>
-      </GridForYouMightLike>
-    </Section>
   </Fragment>
+
+  <!-- this is the complete update history for a dataset. Duplicate the newest item in the page.lastUpdate property. -->
+  <UpdateHistory slot="update-history">
+    <ul>
+      <li>January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties</li>
+    </ul>
+  </UpdateHistory>
+
+  <Disclaimer slot="disclaimer">
+    <p>
+      If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
+      element
+    </p>
+  </Disclaimer>
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Item 1" href="https://gis.utah.gov">Item 1 description.</CardWithPopularLink>
+      <CardWithPopularLink title="Item 2" href="/products/sgid/address/">Item 2 description.</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">Description</CardWithSmallLink>
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">Description</CardWithSmallLink>
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address">Description</CardWithSmallLink>
+      <CardWithSmallLink title="Discover" href="/products/discover">Description</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
 </Layout>
