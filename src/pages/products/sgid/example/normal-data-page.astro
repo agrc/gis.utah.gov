@@ -24,7 +24,7 @@ export const metadata: IMetadata = {
   description: `A short description of what the dataset is, so when people read it in the list of datasets they know what it is.`,
   stewards: ['UGRC', 'these', 'are', 'combined'],
   type: ProductType.POINT, // This comes from the ProductType enum in types.ts
-  category: SgidCategory.ADDRESS, // This comes from the SgidCategory enum in types.ts
+  category: SgidCategory.LOCATION, // This comes from the SgidCategory enum in types.ts
   secondaryCategory: SgidCategory.ADDRESS, // This is optional and only used when a dataset is in two categories
 };
 
@@ -36,7 +36,7 @@ const page: IPageMetadata = {
   // hub is optional but it is the primary download type for most datasets
   // the dataPages object is the modified AGOLItems table from the internal SGID database
   // You can view it in `/data/downloadMetadata.ts`
-  // The title from line 18 should be in the dataPages list.
+  // The title from line 23 should be in the dataPages list.
   // The object in dataPages is not complete and a few properties need to be added.
   // 1. The feature service id. That is the name of the feature server created in our arcgis online account. You can view all of the services in https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services
   // 2. Verify that the layer id for the feature service is 0. If it is not, modify it to match. In the feature server you will see Layers: AvalanchePaths (0). The 0 is the layer id.
