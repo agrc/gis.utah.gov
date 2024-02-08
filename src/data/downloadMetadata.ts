@@ -1,3 +1,5 @@
+import type { IHubDownload } from "@models/products/sgid/types";
+
 interface DownloadMetadata {
   [key: string]: IHubDownload
 };
@@ -1742,7 +1744,7 @@ export const dataPages: DownloadMetadata = {
     itemId: "3d6d2db8f3554cc8b3ff24b820035fb3",
     name: "Utah Address System Quadrants",
     featureServiceId: 'AddressSystemQuadrants',
-    openSgid: 'address_system_quadrants',
+    openSgid: 'location.address_system_quadrants',
     layerId: 0,
     type: "POLYGON"
   },
