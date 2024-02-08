@@ -30,6 +30,9 @@
       "@models/*": [
         "src/pages/*"
       ],
+      "@partials/*": [
+        "src/pages/_partials/*"
+      ],
     }
   }
 }

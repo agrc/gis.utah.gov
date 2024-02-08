@@ -12,6 +12,9 @@ import Section from '@components/page/Section.astro';
 
 import Metadata from '@components/data/Metadata.astro';
 
+import ExternalLink from '@components/page/ExternalLink.astro';
+import ApiDescription from '@partials/ApiDescription.astro';
+
 export const metadata: IMetadata = {
   title: 'UGRC API',
   description: `
@@ -31,22 +34,99 @@ const page: IPageMetadata = {
 <Layout title={page.title} subTitle={page.lastUpdate} category={page.category}>
   <Metadata slot="metadata" {...page} />
 
-  <Section title="Get the app" titlePosition="center" slot="downloads">
-    <!-- <DirectDownloads title="Install links" links={page.links} /> -->
+  <Section title="Use the service" titlePosition="center" slot="downloads">
+    <ul class="md:row-gap-10 list-none md:grid md:grid-cols-2 md:gap-8">
+      <li>
+        <div class="flex">
+          <div class="flex-shrink-0 md:self-center">
+            <div
+              class="te xt-3xl flex size-12 items-center justify-center rounded-md border border-secondary bg-secondary/75 font-black text-white drop-shadow-lg md:size-20 md:text-7xl dark:border-white/80 dark:bg-white/20"
+            >
+              1
+            </div>
+          </div>
+          <div class="ml-4">
+            <h5 class="text-zinc-600 dark:text-zinc-50">
+              Create a complimentary account<p class="text-base font-normal text-zinc-700 dark:text-zinc-200">
+                Manage and view analytics for all of your API keys in the <ExternalLink
+                  href="https://developer.mapserv.uath.gov">self service website</ExternalLink
+                >.
+              </p>
+            </h5>
+          </div>
+        </div>
+      </li>
+      <li class="mt-10 md:mt-0">
+        <div class="flex">
+          <div class="flex-shrink-0 md:self-center">
+            <div
+              class="te xt-3xl flex size-12 items-center justify-center rounded-md border border-secondary bg-secondary/75 font-black text-white drop-shadow-lg md:size-20 md:text-7xl dark:border-white/80 dark:bg-white/20"
+            >
+              2
+            </div>
+          </div>
+          <div class="ml-4">
+            <h5 class="text-zinc-600 dark:text-zinc-50">
+              Confirm your email<p class="text-base font-normal text-zinc-700 dark:text-zinc-200">
+                Confirm ownership and control spam and bots.
+              </p>
+            </h5>
+          </div>
+        </div>
+      </li>
+      <li class="mt-10 md:mt-0">
+        <div class="flex">
+          <div class="flex-shrink-0 md:self-center">
+            <div
+              class="te xt-3xl flex size-12 items-center justify-center rounded-md border border-secondary bg-secondary/75 font-black text-white drop-shadow-lg md:size-20 md:text-7xl dark:border-white/80 dark:bg-white/20"
+            >
+              3
+            </div>
+          </div>
+          <div class="ml-4">
+            <h5 class="text-zinc-600 dark:text-zinc-50">
+              Generate an API key<p class="text-base font-normal text-zinc-700 dark:text-zinc-200">
+                Keep track of usage analytics and authorize requests.
+              </p>
+            </h5>
+          </div>
+        </div>
+      </li>
+      <li class="mt-10 md:mt-0">
+        <div class="flex">
+          <div class="flex-shrink-0 md:self-center">
+            <div
+              class="te xt-3xl flex size-12 items-center justify-center rounded-md border border-secondary bg-secondary/75 font-black text-white drop-shadow-lg md:size-20 md:text-7xl dark:border-white/80 dark:bg-white/20"
+            >
+              4
+            </div>
+          </div>
+          <div class="ml-4">
+            <h5 class="text-zinc-600 dark:text-zinc-50">
+              Make a request<p class="text-base font-normal text-zinc-700 dark:text-zinc-200">
+                Use your favorite programming language or an UGRC tool. Maybe the <a
+                  href="products/sgid/address/api-client">API Client</a
+                >?
+              </p>
+            </h5>
+          </div>
+        </div>
+      </li>
+    </ul>
   </Section>
 
   <Fragment slot="summary">
     <p>
-      The UGRC API Client is a cross-platform, stand-alone desktop geocoding tool designed to carefully guide you
-      step-by-step through your geocoding tasks. This app is our most user friendly geocoding client for geocoding <code
-        >*.csv</code
-      > files. It does not require a license or subscription to use and automatically downloads updates as soon as they are
-      available to stay current and add new features.
+      The UGRC creates, maintains, and stores geospatial data in the State Geographic Information Datasource (SGID), a
+      one-stop shop to hundreds of data layers developed, aggregated, or acquired by state government. The UGRC API is a
+      free service that allows you to geocode and search SGID data. To use the API, you need to have an account and
+      create API keys. These key are used to authenticate requests and to give you usage analytics. Click the link below
+      to get started.
     </p>
   </Fragment>
 
   <Fragment slot="description">
-    <p></p>
+    <ApiDescription />
   </Fragment>
 
   <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
@@ -68,11 +148,11 @@ const page: IPageMetadata = {
       <CardWithSmallLink title="Address Points" href="/products/sgid/address/address-points">
         The address point dataset that is used for geocoding
       </CardWithSmallLink>
-      <CardWithSmallLink title="UGRC API GitHub" href="https://github.com/agrc/api-client">
-        The open source GitHub repository for the API Client. You may submit issues or enhancements on this website.
+      <CardWithSmallLink title="UGRC API GitHub" href="https://github.com/agrc/api.mapserv.utah.gov">
+        The open source GitHub repository for the API. You may submit issues or enhancements on this website.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov">
-        This web app is an example of using the UGRC API in a web application
+      <CardWithSmallLink title="UGRC API Client" href="/products/sgid/address/api-client">
+        A desktop application to carefully guide you through your geocoding tasks.
       </CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
