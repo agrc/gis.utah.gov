@@ -1,4 +1,6 @@
 import type { IHubDownload } from "@models/products/sgid/types";
+import { ProductType } from '@models/products/sgid/types';
+
 
 interface DownloadMetadata {
   [key: string]: IHubDownload
@@ -10,7 +12,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Fire Perimeters': {
     itemId: "2899e80dfe2640798e9b3208ca459008",
@@ -18,7 +20,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Dominant Vegetation': {
     itemId: "da0db6d91f134adfa55ca622b9b36427",
@@ -26,7 +28,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Inland Port Authority HB2001': {
     itemId: "44eb28894d1f4853ad4de8dcd8e503ae",
@@ -34,7 +36,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness BLM 98 Reinventory': {
     itemId: "100c91969f42465aba4be03065a6c659",
@@ -42,7 +44,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Conservation Districts': {
     itemId: "9c41b6d6ce7346858ed0ea0dc7727c13",
@@ -50,7 +52,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Conservation Zones': {
     itemId: "355fe28d943e49e7a400ac1fb2140413",
@@ -58,7 +60,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness BLM Suitability': {
     itemId: "0edc4466143e4c57960e9eb5df05f233",
@@ -66,7 +68,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah USFS Roadless Inventory': {
     itemId: "a4a2f064846b4981824ffb2246b050c9",
@@ -74,7 +76,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'BLM Wilderness Study Areas for Utah': {
     itemId: "abd5d645b0e144558d0ab15e1f043490",
@@ -82,7 +84,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Navajo Chapters': {
     itemId: "17870fe3030c4f398411fb0ea4c78331",
@@ -90,7 +92,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Municipal Boundaries Cartography': {
     itemId: "009eb81635854c21a05e5ca1a4e375cf",
@@ -98,7 +100,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Municipalities Modifications': {
     itemId: "572efbac3c8b4799bf729cbeac36dc11",
@@ -106,7 +108,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah School District Boundaries': {
     itemId: "3e69ecf5c46a492aa9974f6fa03d1378",
@@ -114,7 +116,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Municipal Boundaries': {
     itemId: "543fa1f073714198a3dbf8a292bdf30c",
@@ -122,7 +124,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah ZIP Code Areas': {
     itemId: "4f9d1d1301864f8cabef08cbae7b2d3c",
@@ -130,7 +132,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Metro Townships': {
     itemId: "103c6dc6764747079919c20927f40a9f",
@@ -138,7 +140,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'US States': {
     itemId: "221d727bbc044ce99dc05fbce913b4a1",
@@ -146,7 +148,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Grand Staircase Escalante NM': {
     itemId: "37a66e7b84a643358f0a681901ab4aca",
@@ -154,7 +156,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah State Boundary': {
     itemId: "8344c33ec2114341a59c4c1d72bcf38a",
@@ -162,7 +164,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Forest Service Boundaries': {
     itemId: "468140207bae4cf19aef5df754cc387e",
@@ -170,7 +172,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Counties Modifications': {
     itemId: "21fb018384634dbc96e912cf25b24ed4",
@@ -178,7 +180,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Counties Label Lines': {
     itemId: "ff62647a2f544cee9bae8eed2afd0eda",
@@ -194,7 +196,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah BLM Monuments and NCAs Historic': {
     itemId: "d5560a571a86436fbb3a664c3edd5488",
@@ -202,7 +204,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah BLM Monuments and NCAs': {
     itemId: "feaa4faae66747a792b6d664c1159fc7",
@@ -210,7 +212,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah BLM Districts': {
     itemId: "9443cc4f99b04c6aa3c6ddf6638e9dde",
@@ -218,7 +220,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Association Of Governments': {
     itemId: "171958e3afe94e2486046719f0e8c9b1",
@@ -226,7 +228,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Grand County Parcels': {
     itemId: "396cb59c84644e94b63ff6bbed9d366b",
@@ -234,7 +236,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Grand County Parcels LIR': {
     itemId: "b99abea67a144872bb16109f047b447c",
@@ -242,7 +244,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Iron County Parcels': {
     itemId: "1099575242dd45348ee840d69dba3207",
@@ -250,7 +252,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Iron County Parcels LIR': {
     itemId: "555d3282b06d44a1a1a2fb7571e200a1",
@@ -258,7 +260,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Juab County Parcels': {
     itemId: "4613ab6110c9413a9fd2e3fd1b03cbdf",
@@ -266,7 +268,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Juab County Parcels LIR': {
     itemId: "58eea1dc738f4c389890cf17effd10bf",
@@ -274,7 +276,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Kane County Parcels': {
     itemId: "44e17c6ae3864917850f7131bd88c473",
@@ -282,7 +284,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Kane County Parcels LIR': {
     itemId: "957c4cf3469040a996a8dc34eca0a49a",
@@ -290,7 +292,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Millard County Parcels': {
     itemId: "b895aa80403b4aa3bf5278d7084da243",
@@ -298,7 +300,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Millard County Parcels LIR': {
     itemId: "ec382a8a177d4509867d8f920baa1237",
@@ -306,7 +308,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Morgan County Parcels': {
     itemId: "1480916d4105403296899ab291bfa321",
@@ -314,7 +316,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Morgan County Parcels LIR': {
     itemId: "c42241c8c58b425a8a971b4772dbcf61",
@@ -322,7 +324,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Piute County Parcels': {
     itemId: "cef8a96c8f75437cb05a3dc7a610d1b0",
@@ -330,7 +332,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Rich County Parcels': {
     itemId: "43bf47fa17f343c28d7fdd03d8be0b0f",
@@ -338,7 +340,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Rich County Parcels LIR': {
     itemId: "d4b01011ef674732a8787825a14c1a61",
@@ -346,7 +348,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Salt Lake County Parcels': {
     itemId: "f1f56e5da01b4f5e9def939ec80943e5",
@@ -354,7 +356,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Salt Lake County Parcels LIR': {
     itemId: "6f900727e16d4ce1a83f2a1ec1d82e60",
@@ -362,7 +364,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah San Juan County Parcels': {
     itemId: "c4b4d4a730ca482f868a014328004640",
@@ -370,7 +372,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah San Juan County Parcels LIR': {
     itemId: "2331a0f50ddc4162a0959ebf456d4f6a",
@@ -378,7 +380,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Sanpete County Parcels': {
     itemId: "777e751aa4164b83bf1d76f811f8e5b3",
@@ -386,7 +388,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Sanpete County Parcels LIR': {
     itemId: "33e4b5432ba641de92a9e9446ca72d18",
@@ -394,7 +396,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Sevier County Parcels': {
     itemId: "dd4642decdc04ff38bc0cc6680b242cc",
@@ -402,7 +404,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Sevier County Parcels LIR': {
     itemId: "ed39f70f6c054ccf85a1e6947b52fec2",
@@ -410,7 +412,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Summit County Parcels': {
     itemId: "10f0f8bd49dd4d57bd629580f617b7f3",
@@ -418,7 +420,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Summit County Parcels LIR': {
     itemId: "517326aa554244baabee9e1083086278",
@@ -426,7 +428,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Tooele County Parcels': {
     itemId: "da344111a2f3421c9e21efbde73da76f",
@@ -434,7 +436,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Tooele County Parcels LIR': {
     itemId: "7e7839f486d14ff681a8755009d9e2b1",
@@ -442,7 +444,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Uintah County Parcels': {
     itemId: "9ad8f6ecbc7d4002a444ccfbe8d17e1b",
@@ -450,7 +452,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Utah County Parcels': {
     itemId: "a26808bcf48241e0a71bd862eeefb57a",
@@ -458,7 +460,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Utah County Parcels LIR': {
     itemId: "69477c1143924bc9990cdb930b033fb5",
@@ -466,7 +468,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wasatch County Parcels': {
     itemId: "20ad11cc6f864053bbfc6e416dc76e09",
@@ -474,7 +476,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wasatch County Parcels LIR': {
     itemId: "f6e1e6e25c304d31948b896d1ca8b980",
@@ -482,7 +484,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Washington County Parcels': {
     itemId: "01e2c63e81f6490982f0cdfa51df30e7",
@@ -490,7 +492,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Washington County Parcels LIR': {
     itemId: "3685a5539be649079d6d4d3f229972c4",
@@ -498,7 +500,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wayne County Parcels': {
     itemId: "effc6e776f4742e098ff6d49adaaa6ab",
@@ -506,7 +508,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wayne County Parcels LIR': {
     itemId: "260da57dd7694c70bd795a6f1457dc12",
@@ -514,7 +516,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Weber County Parcels': {
     itemId: "2246e51228fa437fafa15d212435143e",
@@ -522,7 +524,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Weber County Parcels LIR': {
     itemId: "9d7e4ec3b1a64f6d8b5e7ad76339e703",
@@ -530,7 +532,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah PLSS Edit Tracker': {
     itemId: "b5007f1fb8664fa69a71299f88ca5e15",
@@ -538,7 +540,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah PLSS Point GCDB': {
     itemId: "ef75c3c063ac4b9b996b70e21ce248fe",
@@ -554,7 +556,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah PLSS Quarter Sections GCDB': {
     itemId: "58b655046e2f4a258dbbf6a6aeaa7b23",
@@ -562,7 +564,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah PLSS Sections GCDB': {
     itemId: "471c7281c52849b2860d36135e751c83",
@@ -570,7 +572,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah PLSS Townships GCDB': {
     itemId: "5f801b03df2644dd99dcbaa5840bf12d",
@@ -578,7 +580,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah TURN GPS BaseLines': {
     itemId: "af0cf475021844d99ac2f728bfd0ec33",
@@ -610,7 +612,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Unincorporated Areas 2010 Approx': {
     itemId: "3c7aa67bc8b945ddab57cf9537ff291f",
@@ -618,7 +620,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Urban Areas Census 2010': {
     itemId: "5fefbcf3e7a5499c845872d0be11b1c2",
@@ -626,7 +628,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Population Place Points 2010 Approx': {
     itemId: "03158991802e4bf0b9cc3234eddd0e76",
@@ -642,7 +644,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Metro Micro Statistical Areas': {
     itemId: "2fb0ffa26e284316911ea5f0d94c4255",
@@ -650,7 +652,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Unpopulated Areas 2010 Approx': {
     itemId: "cd5550c9e2a5401986819cc363dc3fe6",
@@ -658,7 +660,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Census Tracts 2010': {
     itemId: "ad629aab2f89456c82457aac06c59601",
@@ -666,7 +668,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Census Places 2010': {
     itemId: "c8a84c9d562f49baaf3cafd62e06a6d6",
@@ -674,7 +676,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Census Place Points 2010': {
     itemId: "aad2bc96abf84621bfb26bb197144145",
@@ -698,7 +700,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Census Blocks 2010': {
     itemId: "b92a5e772855488a9b7f9c367475d955",
@@ -706,7 +708,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Census Block Groups 2010': {
     itemId: "8fa5d65451694f64b05f17d9e5f9d67e",
@@ -714,7 +716,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Entities Non Tax': {
     itemId: "2e8759ad687041de9b4eab63e05060f4",
@@ -722,7 +724,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Transit Special Tax Areas': {
     itemId: "17b06b8c22444f0291703c4c05f18b07",
@@ -730,7 +732,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Sales Tax Zones': {
     itemId: "852bc8eeaa534cc586b8936e1b451f54",
@@ -738,7 +740,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Enterprise Zones': {
     itemId: "dc4539cb9d1548e1a1f31cf5b63e3ad5",
@@ -746,7 +748,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah USGS 3DEP 1K Grid': {
     itemId: "c3227d48ca1347cdb21f1707862b5a03",
@@ -754,7 +756,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Highest Peaks': {
     itemId: "27faf1a5aef2429fb2d660139b6583d6",
@@ -770,7 +772,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Contours 500 Foot': {
     itemId: "46024bfcf19545e4bdfbc3b1e86b74e0",
@@ -794,7 +796,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Coal Deposit Areas 1988': {
     itemId: "b24d12d0009748be899d909a546d2d05",
@@ -802,7 +804,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Coal 4 Foot Seams': {
     itemId: "bb1d4c7c4d3a43e79a5872c3b1f29c68",
@@ -810,7 +812,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Coal Leases': {
     itemId: "c00a09d1407742e19d9ff61c7d6c82db",
@@ -818,7 +820,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Coal Mines UGS': {
     itemId: "af6fc24c88354f6bbd0cf7dcf3e1049c",
@@ -834,7 +836,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Energy Corridor Areas': {
     itemId: "3c39e10f78c34cd981f28bde8ad76e14",
@@ -842,7 +844,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Energy Corridor Centerline': {
     itemId: "0845e0757fee4992bee279ffb1f95c5d",
@@ -874,7 +876,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Geothermal Leases': {
     itemId: "01b4a3e0a8ca4e4086ac05a843b5701a",
@@ -882,7 +884,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Oil Gas Wells': {
     itemId: "hosted by DOGM",
@@ -938,7 +940,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah UGS Uranium Districts': {
     itemId: "1b9c8a48aae84adb81294e766cbe4b3c",
@@ -946,7 +948,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Uranium Mills': {
     itemId: "d49fd89f13c04a43b9b6ff0a684ad875",
@@ -970,7 +972,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah UREZ Phase 1 Solar Zones': {
     itemId: "d1bf59d975014f63ab4fd469324d5475",
@@ -978,7 +980,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah UREZ Phase 1 Transmission': {
     itemId: "62ddb0b1622a420f84a725b3c27c3189",
@@ -1002,7 +1004,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah UREZ Phase 2 Conceptual Transmission': {
     itemId: "bdb7106ae67543f18eab28129737ed50",
@@ -1026,7 +1028,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah DAQ Air Emissions Inventory': {
     itemId: "57a8775a05a04166ba6c808451457583",
@@ -1122,7 +1124,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah DWQ Assessment Units': {
     itemId: "0f39afb3b29d4c0a8abf7c46ed2e0354",
@@ -1130,7 +1132,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah DWQ Groundwater Permits': {
     itemId: "eb1bb5fbe37d43f1aa002b19dd678ac5",
@@ -1154,7 +1156,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah DWQ Monitoring Locations': {
     itemId: "e3d89f76e52942c2bc76dcec65a435ab",
@@ -1202,7 +1204,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Lake Monitoring': {
     itemId: "95f664327f724c0c8c87f6cd38bf9311",
@@ -1234,7 +1236,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah UPDES Sites': {
     itemId: "8da500d7889749b6a412426a3b09cc2f",
@@ -1322,7 +1324,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Grazing Allotments': {
     itemId: "822d0cf8e7da44b7922f8351d7b252e5",
@@ -1330,7 +1332,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Physiographic Subdivisions': {
     itemId: "436818d1a5004ed7a51e9550baf9cff8",
@@ -1338,7 +1340,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Quaternary Volcanic Vents': {
     itemId: "209899d96d93418cbeabec23d9e674d4",
@@ -1354,7 +1356,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Landslide Inventory Mapped Areas': {
     itemId: "e0ec1e7d0d5c47e388cc86e89928fe92",
@@ -1362,7 +1364,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Quaternary Volcanic Flow': {
     itemId: "3b6cf0a8a7284fbdbb02fb4ec83e4bcf",
@@ -1370,7 +1372,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Landslide Compilation Scarps': {
     itemId: "e22096dacc604d5eb8b2e3c5e21f0a58",
@@ -1386,7 +1388,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Landslide Compilation Debris Flow Paths': {
     itemId: "cda61391c65a4d4aa94a581f6bf57057",
@@ -1410,7 +1412,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Shallow Ground Water': {
     itemId: "a60e041ddf614cf3913c389fa65775ac",
@@ -1418,7 +1420,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Geologic Contacts': {
     itemId: "8be65c11d9784427bc388d7684f99c43",
@@ -1466,7 +1468,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Debris Flow Wasatch Front': {
     itemId: "79850526bd5747c1ab2e36b064c77547",
@@ -1474,7 +1476,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Volcanic Cones': {
     itemId: "e8622ef0f5f148bf89440e37cd1f9a93",
@@ -1498,7 +1500,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Geologic Veins': {
     itemId: "b71b1eb763d4494e8a15c45e7e894bf1",
@@ -1514,7 +1516,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Aquifer Basin Fill Boundary': {
     itemId: "ad928a732ddb4a8db1579a0a8bb8abfe",
@@ -1530,7 +1532,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Minerals': {
     itemId: "9d2e949a9492425dbb4e5d5212f9ef19",
@@ -1546,7 +1548,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Health Small Statistical Areas 2017': {
     itemId: "6fe09518dc62415d88570dfd59fbb4c5",
@@ -1554,7 +1556,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Health Care Districts': {
     itemId: "2c738e87f55e4383b82a3c1cd08c8208",
@@ -1562,7 +1564,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Health Care Facilities': {
     itemId: "f5e5d7c717c946fe9cd6f2c8d0bf8d86",
@@ -1594,7 +1596,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Historic Trails': {
     itemId: "20742e3d34354509b8a9f567f1003509",
@@ -1610,7 +1612,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah USGS 24K Quarter Quads': {
     itemId: "baa0bf569643469a9511e1fb753f4a60",
@@ -1618,7 +1620,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah USGS DEM Extents': {
     itemId: "855e7b6e4ce9481ca0faef64c9113f8a",
@@ -1626,7 +1628,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah USGS 250K Quads 1x1': {
     itemId: "606d75b70d254c7e9da5785704c60369",
@@ -1634,7 +1636,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah USGS 250K Quads 1x2': {
     itemId: "ed39436090e8472593149659b4ed257e",
@@ -1642,7 +1644,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Google Flight Blocks': {
     itemId: "fd67267e14534f3a96f1b53be22c0caf",
@@ -1650,7 +1652,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah USGS 100K Quads': {
     itemId: "80042c4b51a843c3b480ada0b8d68177",
@@ -1658,7 +1660,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah USGS 24K Quads': {
     itemId: "fe10115354c14260aef62a60b3137488",
@@ -1666,7 +1668,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah LiDAR Extents': {
     itemId: "90556bb0e09640648be66013a6ab56e6",
@@ -1674,7 +1676,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah National Grid': {
     itemId: "2eeec11a38d64637a74b5c9ddef0f76f",
@@ -1682,7 +1684,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Contour Line Extents': {
     itemId: "df220fc45d2a44f7b9a8ca2a3635e777",
@@ -1690,7 +1692,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah DRG Extents': {
     itemId: "7da0b87ffa894450b65f955daae23bfb",
@@ -1698,7 +1700,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Auto Correlated DEM Extents': {
     itemId: "3e82e35d69744ce4991c15daa4edd775",
@@ -1706,7 +1708,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Aerial Photography Extents': {
     itemId: "91f0336b027a426ba14d62aa95a4af9b",
@@ -1714,7 +1716,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah LUCA Block Address Counts 2017': {
     itemId: "58936cbbeaf2425c89131d156e1e5785",
@@ -1722,7 +1724,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah City and Town Locations': {
     itemId: "62a6b78d53a943db906de0abd1c9174f",
@@ -1746,7 +1748,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: 'AddressSystemQuadrants',
     openSgid: 'location.address_system_quadrants',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Hexagon Grid 1km': {
     itemId: "6c399a8b17c14de79bc9e89510cb952a",
@@ -1754,7 +1756,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Zip Code PO Boxes': {
     itemId: "9a07e9d337314bb2af4de8f32502428e",
@@ -1770,7 +1772,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Address Points': {
     itemId: "3f4f7a8efcd147febeca8bacaea67a14",
@@ -1786,7 +1788,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness Proposal Washington County': {
     itemId: "0c0958b6d31942dab4e18e9bd7bd512f",
@@ -1794,7 +1796,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness Proposal West Desert 1999': {
     itemId: "a1622e65d5bd4631a1f0f73ea87fc2da",
@@ -1802,7 +1804,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah PLI Lines Proposal Jan16': {
     itemId: "b5e4e5236c2e4fe1a575ab5535b44677",
@@ -1818,7 +1820,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah PLI Areas Proposal Jan16': {
     itemId: "4d2327d21f2f4f729e99473b64ff1794",
@@ -1826,7 +1828,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah UWC 2008 Cherry Stem Roads': {
     itemId: "424c8379e8b747e69f88f48aa3f243f1",
@@ -1842,7 +1844,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness Proposal UWC 1989': {
     itemId: "68da537a68c249928787b2a090c9e0c8",
@@ -1850,7 +1852,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness Proposal UWC 1995': {
     itemId: "1cfca2d849884ce0911a55f0e6aa6593",
@@ -1858,7 +1860,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness Proposal UWC 2008': {
     itemId: "52c7c9adc97346d1b862fb7963361b7d",
@@ -1866,7 +1868,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Public Lands Initiative HR5780 Areas BLM 2016': {
     itemId: "44943332b600478fa4a3bb5bbd400d57",
@@ -1874,7 +1876,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Public Lands Initiative HR5780 Lines BLM 2016': {
     itemId: "87010f24614f4c5db6aef2efd886192c",
@@ -1890,7 +1892,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Urban Interface Areas': {
     itemId: "75fc277292c34760900bb27d8a8152fb",
@@ -1898,7 +1900,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Water Related Land Use': {
     itemId: "e3e7fc9316bb4ad09474401ff46e734f",
@@ -1906,7 +1908,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness Proposal BLM': {
     itemId: "6bbb3f528a654fb5bd0bbb6db3fcb382",
@@ -1914,7 +1916,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness Proposal HR1500': {
     itemId: "24ac08e1662844efabf175e614e1b40e",
@@ -1922,7 +1924,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness Proposal HR1745': {
     itemId: "2f016a495db94c53a0b019276a2c430f",
@@ -1930,7 +1932,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Wilderness Proposal Red Rock': {
     itemId: "b9f7202178694f82a49b855e810f222d",
@@ -1938,7 +1940,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah GSENM Special Recreation Management Area': {
     itemId: "d0ba9850685140018a956e37cc441ca4",
@@ -1946,7 +1948,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah NCA Prop San Juan County': {
     itemId: "ae16bcb9bd8e4f5e9db30a0b5e9fe52d",
@@ -1954,7 +1956,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Primitive Prop Emery County': {
     itemId: "ab12d72764b345dbae7f8c5e55cefe93",
@@ -1962,7 +1964,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah GSENM Special Management Area': {
     itemId: "e72802b65c8f4b19b7d22ccf7f7049a9",
@@ -1970,7 +1972,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Agricultural Protection Areas': {
     itemId: "a9fc125d02d54681aec1e5576954ded6",
@@ -1978,7 +1980,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Tax Areas 2022': {
     itemId: "1c962302668e431db53d9763962c09f5",
@@ -1986,7 +1988,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Vista Ballot Areas Proposed': {
     itemId: "exclude from AGOL",
@@ -1994,7 +1996,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Tax Entities 2022': {
     itemId: "cf717be2436e46758a263d53b63b8cf7",
@@ -2002,7 +2004,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Telecom Boundaries': {
     itemId: "3dee591783a14252b8252fe27332eaef",
@@ -2010,7 +2012,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Vista Ballot Areas': {
     itemId: "d33f596419d74948a45070275632b8e0",
@@ -2018,7 +2020,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Judicial Districts': {
     itemId: "c8c231440f444f9d881f0e546842dfac",
@@ -2026,7 +2028,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Ski Area Boundaries': {
     itemId: "b84f9467fff5430b8a2fca157f45a5cd",
@@ -2034,7 +2036,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Ski Area Resort Locations': {
     itemId: "24029712a33f47feacc7b3f2ef75f179",
@@ -2050,7 +2052,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Ski Trails XC': {
     itemId: "c94307ff26e641159510005e076f5bfd",
@@ -2074,7 +2076,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Ski Lifts': {
     itemId: "51d8a963411d4356ab3fa7a24146d203",
@@ -2098,7 +2100,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah State Agency Dispatch': {
     itemId: "dc84c0dfd07648718114f683c933ea93",
@@ -2106,7 +2108,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah State Court Districts': {
     itemId: "2938c95d71444c5cb527a2fda25629d9",
@@ -2114,7 +2116,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah State Facility Locations': {
     itemId: "a2cc4865b1a94352922c1a83bda24ba5",
@@ -2130,7 +2132,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Public Safety Answering Point Locations': {
     itemId: "6c102c8fc5af413187db0910053d5ed8",
@@ -2146,7 +2148,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah US Congress Districts 2022 to 2032': {
     itemId: "b5ef0b24f994467fb4f22b27b1a47e25",
@@ -2154,7 +2156,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Liquor Stores': {
     itemId: "61b7f10c194b4ec69d02e169db1da09a",
@@ -2178,7 +2180,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Law Enforcement': {
     itemId: "5a99475d434941359462307ede77d980",
@@ -2210,7 +2212,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'City Courts of Utah': {
     itemId: "a111451581934197a6bd8f29a530643a",
@@ -2218,7 +2220,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Correctional Facilities': {
     itemId: "1d643eaf1a4c4868a765b199f8ff8085",
@@ -2234,7 +2236,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Cemeteries': {
     itemId: "f54d1c00020940ec95a729b39518e020",
@@ -2298,7 +2300,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah UTA Light Rail Routes': {
     itemId: "fd41770e917344e4adef8be71a0a6741",
@@ -2370,7 +2372,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Electrical Service': {
     itemId: "92916071272248d48dcd546dd2ec72ec",
@@ -2378,7 +2380,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Electrical Lines': {
     itemId: "5b115a0aafa54f0392c901db333310b4",
@@ -2394,7 +2396,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Streams NHD': {
     itemId: "d9b5ac9220ff415994b193c9ce022f86",
@@ -2410,7 +2412,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Lakes NHD': {
     itemId: "b505c3e3a8504da6b28e9900a9f602f8",
@@ -2418,7 +2420,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah NHD Points All': {
     itemId: "9c0c7205d20b43228d3ee683b0158c9d",
@@ -2450,7 +2452,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Watersheds Area': {
     itemId: "eedaf451685b4cbe875ecf692e1b54ff",
@@ -2458,7 +2460,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Piute County Parcels LIR': {
     itemId: "d75188a6edcc4af2a128001c89522b32",
@@ -2466,7 +2468,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Great Salt Lake Flooding': {
     itemId: "d8e7d2483a364d58a6d7eac4a250449e",
@@ -2474,7 +2476,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Great Salt Lake Shoreline': {
     itemId: "b4a3d065c7b94b968bb059044291507c",
@@ -2482,7 +2484,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Great Salt Lake Shoreline Flooding': {
     itemId: "275cc3a094d142bb979f23ff7b036843",
@@ -2498,7 +2500,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah HUC Boundaries': {
     itemId: "0edf7e04e21e478cb9a0df5ab6d361a7",
@@ -2506,7 +2508,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Stations': {
     itemId: "8a07fdbd2013420fa22eecc8fb2903ff",
@@ -2522,7 +2524,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Emery County Parcels LIR': {
     itemId: "f0bef21aad044f6f94f2a01559f64633",
@@ -2530,7 +2532,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah PLSS Section Lookup': {
     itemId: "477550a77ca34fa69412506a6cdb21bc",
@@ -2618,7 +2620,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah DEQMAP EI Chemical': {
     itemId: "05cf64d5fbd049c7a88bec6fae200b64",
@@ -2650,7 +2652,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah EMS Response Areas': {
     itemId: "2c242ea8b8df44f5adec02ee73cdeb16",
@@ -2658,7 +2660,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah DEQMAP TIER2RPTYR': {
     itemId: "19e445c1b06449beab227868bdc69c26",
@@ -2714,7 +2716,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah House Districts 2022 to 2032': {
     itemId: "f2a30099ab1f404db2c0dffbc2856746",
@@ -2722,7 +2724,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Census Tracts 2020': {
     itemId: "ac683b3f52a14c5ab4d6c17bbfd6b573",
@@ -2730,7 +2732,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Schools Higher Education': {
     itemId: "731644a217f445e5a638f9a84a7ada93",
@@ -2746,7 +2748,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Public Libraries': {
     itemId: "f6cf0c8ef65344b6a6e5ebeaa108f549",
@@ -2762,7 +2764,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Census Places 2020': {
     itemId: "3bcd211d3f17416aac97bcca86bb191a",
@@ -2770,7 +2772,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah School Board Districts 2022 to 2032': {
     itemId: "ebb7b8e8a0104b448d3bbf3ee82a5580",
@@ -2778,7 +2780,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Beaver County Parcels LIR': {
     itemId: "fcd55deadaed4fa4bf0cb119b8631b12",
@@ -2786,7 +2788,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah BLM RMP Targeted Lands': {
     itemId: "3bb2bca367874938a5eedd5db953193b",
@@ -2794,7 +2796,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Great Salt Lake Meander Line': {
     itemId: "f6b166791c2a4c20b0ce4a127328a4a6",
@@ -2802,7 +2804,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Box Elder County Parcels': {
     itemId: "bc9dfd8b1168447ea67d714c96a18417",
@@ -2810,7 +2812,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Box Elder County Parcels LIR': {
     itemId: "bfda12ed550a4586916faf0db3e2a8a0",
@@ -2818,7 +2820,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Cache County Parcels': {
     itemId: "e2313ec943224dafbebee9371b57c43a",
@@ -2826,7 +2828,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Cache County Parcels LIR': {
     itemId: "c3f1604c134043348437d8cd04b9afb2",
@@ -2834,7 +2836,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Carbon County Parcels': {
     itemId: "6bab6b394b4749ae9f404953670bbd24",
@@ -2842,7 +2844,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Carbon County Parcels LIR': {
     itemId: "d0e2d87667a246b397e35ac038a01eeb",
@@ -2850,7 +2852,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Daggett County Parcels': {
     itemId: "b112d286c9694e73b697fe120815c140",
@@ -2858,7 +2860,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Daggett County Parcels LIR': {
     itemId: "a1e2f3dc1619413f9ba98283940413a9",
@@ -2866,7 +2868,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Davis County Parcels': {
     itemId: "69d2965ec1014e938cfb8d2eabb64e13",
@@ -2874,7 +2876,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Davis County Parcels LIR': {
     itemId: "a6e9c713822249129e060c4a26e1fb85",
@@ -2882,7 +2884,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Duchesne County Parcels': {
     itemId: "30168700f4f04059a3f3fca72735ba0a",
@@ -2890,7 +2892,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Duchesne County Parcels LIR': {
     itemId: "581761d051924e97afdd67715f917d83",
@@ -2898,7 +2900,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Emery County Parcels': {
     itemId: "818821c2893147c48060bb809c7a1477",
@@ -2906,7 +2908,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Garfield County Parcels': {
     itemId: "2f45c1012d724bd7a229867208a416e4",
@@ -2914,7 +2916,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Garfield County Parcels LIR': {
     itemId: "0d2f76daf7d540edbefea6df6d7345d8",
@@ -2922,7 +2924,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Beaver County Parcels': {
     itemId: "57e395fa72dc4cbf9435f8fd34fbc3a3",
@@ -2930,7 +2932,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah H3 Hexes Level 5': {
     itemId: "980d3af37717456b92d7039d9ffa35f3",
@@ -2938,7 +2940,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Senate Districts 2022 to 2032': {
     itemId: "5289f23d9e76421f89d9a9ef4864937a",
@@ -2946,7 +2948,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Health Small Statistical Areas 2020': {
     itemId: "67edfe9ded464e3393c1932b4d39a6b2",
@@ -2954,7 +2956,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Tax Areas 2021': {
     itemId: "e06fee6ff03f43ca8da9b06b17ad0ed3",
@@ -2962,7 +2964,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Tax Entities 2021': {
     itemId: "228ac715bbb446e4a4ecfb6dea3c52b1",
@@ -2970,7 +2972,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Monuments and Markers': {
     itemId: "63de4118823e4e3eba943ca43caefc72",
@@ -3002,7 +3004,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah H3 Hexes Level 7': {
     itemId: "3dcd072755cd453885bda7dc69a82fef",
@@ -3010,7 +3012,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah District Combination Areas 2022': {
     itemId: "12fb03b51a9a4ab9aacd90e19ac6a06f",
@@ -3018,7 +3020,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Land Ownership': {
     itemId: "hosted by SITLA",
@@ -3026,7 +3028,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'UDOT Routes ALRS': {
     itemId: "hosted by UDOT",
@@ -3042,7 +3044,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah H3 Hexes Level 9': {
     itemId: "f11c3c7302924c2e869112ec95543c6c",
@@ -3050,7 +3052,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Census Counties 2020': {
     itemId: "31c8dd6f1f3e4e5c993d12c2ad8a5686",
@@ -3058,7 +3060,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Census State 2020': {
     itemId: "fb85601788424239846ec8c9df201369",
@@ -3066,7 +3068,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Hexagon Service Dates': {
     itemId: "7df5278c3e1a46389693c957a75b2b99",
@@ -3074,7 +3076,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'uta routes and ridership': {
     itemId: "hosted by UTA",
@@ -3114,7 +3116,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   },
   'Utah Great Salt Lake Water Level 2016': {
     itemId: "015723bdb92447f788471450c8fcab16",
@@ -3122,6 +3124,6 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: null,
     openSgid: '',
     layerId: 0,
-    type: "POLYGON"
+    type: ProductType.POLYGON
   }
 };
