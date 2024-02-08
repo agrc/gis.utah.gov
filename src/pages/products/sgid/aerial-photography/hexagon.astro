@@ -1,0 +1,100 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Metadata from '@components/data/Metadata.astro';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+export const metadata: IMetadata = {
+  title: 'Utah Hexagon licensed imagery',
+  description: `A copy of the 2021 statewide NAIP imagery with a higher resolution (15cm). This data is available as a service or download to licensed Discover users.`,
+  stewards: ['UGRC', 'Hexagon'],
+  type: ProductType.DISCOVER_SERVICE,
+  category: SgidCategory.AERIAL_PHOTOGRAPHY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://atlas.utah.gov/',
+  lastUpdate: '2021',
+  links: [
+    {
+      title: 'Discover licensed access form',
+      url: 'https://docs.google.com/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/edit?ts=5cf67d38',
+    },
+  ],
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.lastUpdate}
+  category={page.category}
+  actionUrl={page.application}
+  config={{
+    skipInDepth: true,
+  }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <p>
+      Utah state agencies, cities, counties, special service districts, educational institutions and their students, and
+      tribal entities (along with formal partners of these groups) can sign up for licensed access to our latest
+      state-wide high-resolution aerial imagery in both streaming and downloadable formats.
+    </p>
+    <DirectDownloads title="Request access" links={page.links!} />
+  </Section>
+
+  <Fragment slot="summary">
+    <p>
+      UGRC has a public-sector license to Hexagon's 15cm (~6-inch) aerial photography. The 15cm Hexagon imagery is a
+      higher-resolution copy of the statewide 2021 NAIP imagery. You must have Discover licensed access to use this
+      product.
+    </p>
+    <p>The Hexagon imagery have a stated horizontal accuracies of 1.07 and 2.6 meters (CE90), respectively.</p>
+    <p>
+      The flight dates of the imagery can be found in the
+      <ExternalLink href="https://opendata.gis.utah.gov/datasets/utah-hexagon-service-dates"
+        >Utah Hexagon Service Dates</ExternalLink
+      > layer from our Open Data site.
+    </p>
+  </Fragment>
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Flight dates" href="https://opendata.gis.utah.gov/datasets/utah-hexagon-service-dates"
+        >View flight date polygons.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Discover" href="/products/discover"
+        >Read more about the Discover imagery service and the available services.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov"
+        >View this imagery as a base map service in the atlas web app.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Aerial photography index" href="/products/sgid/aerial-photography/"
+        >View other aerial photography products</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Common imagery issues"
+        href="/documentation/discover/aerial-imagery/common-imagery-issues/"
+        class="lg:col-span-2"
+        >Find solutions to some common issues using the latest imagery products provided by UGRC.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

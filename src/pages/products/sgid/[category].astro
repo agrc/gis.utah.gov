@@ -8,31 +8,36 @@ import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
 interface Props {
-  category?: string;
+  category?: SgidCategory;
 }
 
 const { category } = Astro.params as Props;
+const categoryString = category?.toLowerCase();
+const readableCategory = categoryString?.replaceAll('-', ' ');
 
+// generate index pages for all the SgidCategory enums
 export async function getStaticPaths() {
   let paths = [] as GetStaticPathsResult;
 
   for (let category in SgidCategory) {
-    paths.push({ params: { category: category.toLowerCase() } });
+    // kebab case the snake case category enum
+    paths.push({ params: { category: category.toLowerCase().replaceAll('_', '-') } });
   }
 
   return paths;
 }
 
+// filter and find all pages for the given category
 const pages = (await Astro.glob<IDataCategory>('../**/*.astro')).filter((page) => {
   return [page.metadata?.category?.toLowerCase(), page?.metadata?.secondaryCategory?.toLowerCase()].includes(
-    category?.toLowerCase(),
+    categoryString,
   );
 });
 ---
 
-<Layout title={`SGID ${category} data`}>
+<Layout title={`SGID ${readableCategory} data`}>
   <Section>
-    <h1>The {category?.toLowerCase()} data index</h1>
+    <h1>The {readableCategory} data index</h1>
     {
       pages.map((page) => (
         <CardForData

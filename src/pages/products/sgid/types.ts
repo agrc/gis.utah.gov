@@ -5,7 +5,7 @@ export interface IDataCategory {
 
 export enum SgidCategory {
   ADDRESS = "Address",
-  AERIAL = "Aerial",
+  AERIAL_PHOTOGRAPHY = "Aerial-Photography",
   BIOSCIENCE = "Bioscience",
   BOUNDARIES = "Boundaries",
   CADASTRE = "Cadastre",
@@ -60,6 +60,7 @@ export enum ProductType {
   POLYGON,
   WEB_SERVICE,
   DESKTOP_APPLICATION,
+  DISCOVER_SERVICE,
 }
 
 export interface IHubDownload {
