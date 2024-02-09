@@ -31,7 +31,9 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata, // this brings all the data from the metadata object above into the page object
   application: 'https://gis.utah.gov/', // this is optional and only used when a product has an associated web application. It creates a button under the summary that says `See the data in action`. Delete if it is unused.
-  lastUpdate: 'This shows under the title and should be the most current update date and description if there is one',
+  updateHistory: [
+    `This shows under the title and should be the most current update date and description if there is one`,
+  ],
 
   // hub is optional but it is the primary download type for most datasets
   // the dataPages object is the modified AGOLItems table from the internal SGID database
@@ -57,7 +59,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

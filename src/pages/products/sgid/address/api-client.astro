@@ -35,10 +35,11 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  lastUpdate:
+  updateHistory: [
     releaseMetadata?.published_at ?? false
       ? dateFormatter.format(new Date(releaseMetadata.published_at))
       : `<a href="http://github.com/agrc/api-client/releases">GitHub Release History</a>`,
+  ],
   links: [
     {
       title: 'UGRC API Client for Windows',
@@ -52,7 +53,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.lastUpdate} category={page.category}>
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category}>
   <Metadata slot="metadata" {...page} />
 
   <Section title="Get the app" titlePosition="center" slot="downloads">

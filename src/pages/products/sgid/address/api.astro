@@ -27,11 +27,11 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  lastUpdate: `<a href="http://github.com/agrc/api.mapserv.utah.gov/releases">GitHub Release History</a>`,
+  updateHistory: [`<a href="http://github.com/agrc/api.mapserv.utah.gov/releases">GitHub Release History</a>`],
 };
 ---
 
-<Layout title={page.title} subTitle={page.lastUpdate} category={page.category}>
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category}>
   <Metadata slot="metadata" {...page} />
 
   <Section title="Use the service" titlePosition="center" slot="downloads">

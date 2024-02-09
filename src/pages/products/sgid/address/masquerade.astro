@@ -1,7 +1,7 @@
 ---
+import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
 import { ProductType, SgidCategory } from '@models/products/sgid/types';
-import Layout from '@layouts/DataPage.astro';
 
 import Metadata from '@components/data/Metadata.astro';
 
@@ -29,17 +29,18 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   application: 'https://github.com/agrc/masquerade',
-  lastUpdate:
+  updateHistory: [
     releaseMetadata?.published_at ?? false
       ? dateFormatter.format(new Date(releaseMetadata.published_at))
       : `<a href="http://github.com/agrc/masquerade/releases">GitHub Release History</a>`,
+  ],
 };
 
 const direct = 'https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer';
 const agol = 'https://utah.maps.arcgis.com/home/item.html?id=f19e6205b9bd49e8a39ed51ddd58164a';
 ---
 
-<Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

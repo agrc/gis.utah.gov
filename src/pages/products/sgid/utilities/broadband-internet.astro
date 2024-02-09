@@ -29,14 +29,14 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   application: 'https://broadband.ugrc.utah.gov/',
-  lastUpdate: 'Fall 2023',
+  updateHistory: ['Fall 2023', 'Spring 2023', 'Fall 2022', 'Spring 2022'],
   hub: {
     ...dataPages[metadata.title],
   },
 };
 ---
 
-<Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
@@ -91,15 +91,7 @@ const page: IPageMetadata = {
     </ul>
   </Fragment>
 
-  <!-- this is the complete update history for a dataset. Duplicate the newest item in the page.lastUpdate property. -->
-  <UpdateHistory slot="update-history">
-    <ul>
-      <li>Fall 2023</li>
-      <li>Spring 2023</li>
-      <li>Fall 2022</li>
-      <li>Spring 2022</li>
-    </ul>
-  </UpdateHistory>
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Disclaimer slot="disclaimer">
     <p>

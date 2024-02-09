@@ -44,7 +44,7 @@ export interface IMetadata {
 
 export interface IPageMetadata extends IMetadata {
   application?: string;
-  lastUpdate: string;
+  updateHistory: string[];
   hub?: IHubDownload;
   links?: IDownloadLink[];
 }

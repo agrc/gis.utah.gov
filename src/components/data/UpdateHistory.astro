@@ -1,5 +1,9 @@
 ---
+interface Props {
+  updates: string[];
+}
 
+const { updates } = Astro.props;
 ---
 
 <details
@@ -24,6 +28,8 @@
     </div>
   </summary>
   <div class="pt-4">
-    <slot />
+    <ul>
+      {updates.map((update) => <li set:html={update} />)}
+    </ul>
   </div>
 </details>

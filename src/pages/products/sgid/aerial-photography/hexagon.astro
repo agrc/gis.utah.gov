@@ -27,7 +27,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   application: 'https://atlas.utah.gov/',
-  lastUpdate: '2021',
+  updateHistory: ['2021'],
   links: [
     {
       title: 'Discover licensed access form',
@@ -39,7 +39,7 @@ const page: IPageMetadata = {
 
 <Layout
   title={page.title}
-  subTitle={page.lastUpdate}
+  subTitle={page.updateHistory[0]}
   category={page.category}
   actionUrl={page.application}
   config={{
