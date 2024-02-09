@@ -55,6 +55,7 @@ export interface IDownloadLink {
 }
 
 export enum ProductType {
+  TABLE,
   POINT,
   POLYLINE,
   POLYGON,
