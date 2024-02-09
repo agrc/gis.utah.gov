@@ -25,19 +25,19 @@ const featureServiceUrl = `https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/
 
 <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
   <div class="flex flex-col">
-    <h2>Explore and Download</h2>
+    <h2 class="pb-1">Explore and Download</h2>
     <span>
       <ExternalLink href={`https://opendata.gis.utah.gov/datasets/${id}`}>{name}</ExternalLink> in the SGID on ArcGIS
     </span>
     <ExternalLink href={featureServiceUrl}>{name} feature service</ExternalLink>
   </div>
   <div class="flex flex-col gap-1">
-    <h2>Quick clips</h2>
+    <h2 class="pb-1">Quick clips</h2>
     <Clipboard title="Feature service URL" value={featureServiceUrl} />
     <Clipboard title="Open SGID sample query" value={`select * from ${openSgid} limit 10;`} />
   </div>
   <div class="flex flex-col">
-    <h2>Getting started</h2>
+    <h2 class="pb-1">Getting started</h2>
     <div>Learn more about the <a href="/documentation/sgid">SGID on ArcGIS</a>.</div>
     <div>Learn more about the <a href="/documentation/sgid">Open SGID</a> and how to connect.</div>
   </div>
