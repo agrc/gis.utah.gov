@@ -60,6 +60,14 @@ const page: IPageMetadata = {
 <Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
+  <Fragment slot="summary">
+    <p>
+      the summary of the product. This is the important information the user should know but save the longer deeper
+      knowledge content for the description. It should be limited to 1 or 2 paragraphs. You use standard html in the
+      summary slot.
+    </p>
+  </Fragment>
+
   <!-- the title for hub data is typically `Use the data` but it can be anything
   When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -68,14 +76,6 @@ const page: IPageMetadata = {
     <!-- links use the direct downloads component. Only keep one element and delete the unused. -->
     <DirectDownloads title="A title describing the links. e.g. Install links" links={page.links!} />
   </Section>
-
-  <Fragment slot="summary">
-    <p>
-      the summary of the product. This is the important information the user should know but save the longer deeper
-      knowledge content for the description. It should be limited to 1 or 2 paragraphs. You use standard html in the
-      summary slot.
-    </p>
-  </Fragment>
 
   <Fragment slot="description">
     <p>A description of the product. This is the extra information that didn't fit into the summary.</p>
