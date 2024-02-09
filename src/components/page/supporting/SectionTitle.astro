@@ -11,7 +11,7 @@ const { title, subTitle, titlePosition = 'inline' } = Astro.props;
   <h1>{title}</h1>
   {
     subTitle && (
-      <p class="mt-2 text-xs uppercase text-primary dark:text-accent" set:html={`Last updated · ${subTitle}`} />
+      <p class="mt-2 text-xs uppercase text-primary dark:text-accent" set:html={`Last update · ${subTitle}`} />
     )
   }
 </div>

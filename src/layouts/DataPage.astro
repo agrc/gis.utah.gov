@@ -15,7 +15,7 @@ interface Props {
 const { title = 'UGRC', subTitle, category, actionUrl, config } = Astro.props;
 ---
 
-<Layout title={`SGID ${category}`}>
+<Layout title={`SGID ${category.replaceAll('-', ' ').toLowerCase()}`}>
   <Section
     title={title}
     subTitle={subTitle}

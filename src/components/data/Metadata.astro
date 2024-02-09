@@ -1,7 +1,7 @@
 ---
 import { ProductType, type SgidCategory } from '@models/products/sgid/types';
 import { convertProductType } from '@utils/data';
-
+import capitalize from 'lodash.capitalize';
 interface Props {
   category: SgidCategory;
   type: ProductType;
@@ -13,7 +13,9 @@ const { category, type, stewards } = Astro.props;
 
 <div class="flex flex-col gap-x-2 border-t border-primary/30 pt-6 text-sm font-medium md:flex-row dark:border-white/30">
   <span>
-    <span class="font-semibold text-primary dark:text-white">Category:</span>{' '}<span>{category}</span>
+    <span class="font-semibold text-primary dark:text-white">Category:</span>{' '}<span
+      >{capitalize(category.replaceAll('-', ' '))}</span
+    >
   </span>
   <span>
     <span class="font-semibold text-primary dark:text-white">Data Type:</span>{' '}<span
