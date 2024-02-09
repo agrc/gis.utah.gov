@@ -1,0 +1,153 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Disclaimer from '@components/data/Disclaimer.astro';
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import ExternalLink from '@components/page/ExternalLink.astro';
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Broadband Service',
+  description: `Broadband coverage area polygons over any transmission technology, including fixed and mobile services`,
+  stewards: ['UGRC', `The Governor's Office Of Economic Development (GOED)`],
+  type: ProductType.POLYGON,
+  category: SgidCategory.UTILITIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://broadband.ugrc.utah.gov/',
+  lastUpdate: 'Fall 2023',
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.lastUpdate} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Broadband service areas depicts broadband coverage over any transmission technology, including fixed and mobile
+      services. Fixed service is typically used as a home internet connection over DSL, other copper, cable, and fiber
+      technologies. This data is open to be utilized for public analysis. Note that historic broadband coverage dates
+      from Fall 2015. For broadband coverage previous to Fall 2015, see // TODO: needs link SBI Broadband Data.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <h3>Attribute schema explanation</h3>
+    <ul class="pl-4">
+      <li>
+        <code class="font-semibold">UTProvCode</code>: Broadband Provider Company Name (
+        <ExternalLink href="https://business.utah.gov/broadband/utah-broadband-providers/"
+          >partnering providers list</ExternalLink
+        >).
+      </li>
+      <li>
+        <code class="font-semibold">TransTech</code>: See Transmission Technology Codes below
+      </li>
+      <li>
+        <code class="font-semibold">MAXADDOW</code>: Maximum Advertised Download Speed in Mbps
+      </li>
+      <li>
+        <code class="font-semibold">MAXADUP</code>: Maximum Advertised Upload Speed in Mbps
+      </li>
+      <li>
+        <code class="font-semibold">LastEdit</code>: Last data edit
+      </li>
+      <li>
+        <code class="font-semibold">LastVerified</code>: Last date provider verified data currency or submitted updates.
+      </li>
+    </ul>
+    <h3>Transmission Technology code look up (TransTech)</h3>
+    <ul class="pl-4">
+      <li><code class="font-semibold">10</code>: Asymmetric DSL</li>
+      <li><code class="font-semibold">20</code>: Symmetric DSL</li>
+      <li><code class="font-semibold">30</code>: Other Copper Wireline</li>
+      <li><code class="font-semibold">40</code>: Cable Modem - DOCSIS 3.0</li>
+      <li><code class="font-semibold">41</code>: Cable Modem - Other</li>
+      <li><code class="font-semibold">50</code>: Optical Carrier/Fiber to the End User</li>
+      <li><code class="font-semibold">70</code>: Terrestrial Fixed Wireless - Unlicensed</li>
+      <li><code class="font-semibold">71</code>: Terrestrial Fixed Wireless - Licensed</li>
+      <li><code class="font-semibold">80</code>: Terrestrial Mobile Wireless</li>
+    </ul>
+  </Fragment>
+
+  <!-- this is the complete update history for a dataset. Duplicate the newest item in the page.lastUpdate property. -->
+  <UpdateHistory slot="update-history">
+    <ul>
+      <li>Fall 2023</li>
+      <li>Spring 2023</li>
+      <li>Fall 2022</li>
+      <li>Spring 2022</li>
+    </ul>
+  </UpdateHistory>
+
+  <Disclaimer slot="disclaimer">
+    <p>
+      Broadband service availability and characteristics are depicted as derived from data assembled by the Utah
+      Broadband Outreach Center mapping team. Data sources include biannual broadband service provider submissions and
+      publicly available sources. Speeds shown are the 'maximum advertised' for the geographic features depicted, and
+      must exceed 0.768 Mbps download and 0.2 Mbps upload to be included. Actual speeds may vary within service area,
+      due to the granularity and currency of the data, technological limitations, and service plan limitations. Users of
+      the site are encouraged to inquire directly to providers for current service availability and speed. All
+      information presented on the Utah's interactive broadband map is for general reference purposes only and may
+      contain errors and omissions. The State of Utah makes no warranty with respect to information available, express
+      or implied, including but not limited to the fitness for use for a particular purpose. This data is managed by
+      UGRC for the Governor's Office of Economic Development Broadband Outreach Center.
+    </p>
+  </Disclaimer>
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="GOED" href="https://broadband.utah.gov/">
+        The Utah Broadband Center website.
+      </CardWithPopularLink>
+      <CardWithPopularLink
+        title="Historic data"
+        href="https://drive.google.com/drive/folders/1BwZ_p5bZVtewcQehU-o51el78eIHyQ1s"
+      >
+        File downloads of historic broadband coverage data.
+      </CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
+        This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
+        by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's current
+        and authoritative datasets.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+        Discover spatial data and tools that empower informed land management decisions
+      </CardWithSmallLink>
+      <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
+        Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
+        management.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="DEQ Data Portal" href="https://utahdeq.maps.arcgis.com/home/index.html">
+        Explore spatial data relevant to safeguarding and improving Utah's air, land and water through balanced
+        regulation.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
