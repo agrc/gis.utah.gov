@@ -4,10 +4,10 @@ import * as Dialog from '@radix-ui/react-dialog';
 import classNames from 'classnames';
 import { CaretDownIcon, HamburgerMenuIcon } from '@radix-ui/react-icons';
 
-export const Menu = ({ currentUri }) => {
+export const Menu = ({ children, currentUri }) => {
   return (
     <NavigationMenu.Root className="relative z-10 hidden h-12 min-h-12 w-screen items-center bg-zinc-100 lg:flex dark:bg-secondary">
-      <NavigationMenu.List className="m-0 flex list-none p-1 text-center">
+      <NavigationMenu.List className="m-0 flex flex-1 list-none p-1 text-center">
         <NavigationMenu.Item value="home">
           <MenuLink href="/" currentUri={currentUri}>
             Home
@@ -113,6 +113,9 @@ export const Menu = ({ currentUri }) => {
             Contact
           </MenuLink>
         </NavigationMenu.Item>
+
+        {/* TODO: justify right */}
+        {children}
 
         <NavigationMenu.Indicator className="top-full z-10 flex h-1 items-end justify-center overflow-hidden bg-primary transition-all data-[state=visible]:animate-in data-[state=hidden]:animate-out data-[state=hidden]:fade-out data-[state=visible]:fade-in" />
       </NavigationMenu.List>

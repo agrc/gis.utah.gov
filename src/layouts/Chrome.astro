@@ -1,5 +1,6 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts.js';
+import Search from '@components/Search.astro';
 
 interface Props {
   title: string;
@@ -78,7 +79,9 @@ const { title = 'UGRC' } = Astro.props;
         ></path>
       </svg>
     </Header>
-    <Menu client:visible currentUri={pathname} />
+    <Menu client:visible currentUri={pathname}>
+      <Search />
+    </Menu>
     <SmallMenu client:visible currentUri={pathname} />
     <Banner title={title} />
     <slot />

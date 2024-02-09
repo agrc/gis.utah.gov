@@ -12,6 +12,9 @@
       "@components/*": [
         "src/components/*"
       ],
+      "@images/header/*": [
+        "src/images/header/*"
+      ],
       "@images/solutions/*": [
         "src/images/solutions/*"
       ],
