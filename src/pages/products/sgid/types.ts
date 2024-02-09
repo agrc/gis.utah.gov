@@ -1,36 +1,36 @@
 export interface IDataCategory {
   metadata: IMetadata;
   url: string;
-};
+}
 
 export enum SgidCategory {
-  ADDRESS = "Address",
-  AERIAL_PHOTOGRAPHY = "Aerial-Photography",
-  BIOSCIENCE = "Bioscience",
-  BOUNDARIES = "Boundaries",
-  CADASTRE = "Cadastre",
-  CLIMATE = "Climate",
-  CONTOURS = "Contours",
-  DEMOGRAPHIC = "Demographic",
-  ECONOMY = "Economy",
-  ELEVATION = "Elevation",
-  EMERGENCY = "Emergency",
-  ENERGY = "Energy",
-  ENVIRONMENT = "Environment",
-  FARMING = "Farming",
-  GEOSCIENCE = "Geoscience",
-  HEALTH = "Health",
-  HISTORY = "History",
-  INDICES = "Indices",
-  LOCATION = "Location",
-  PLANNING = "Planning",
-  POLITICAL = "Political",
-  RECREATION = "Recreation",
-  SOCIETY = "Society",
-  TOPO = "Topo",
-  TRANSPORTATION = "Transportation",
-  UTILITIES = "Utilities",
-  WATER = "Water",
+  ADDRESS = 'Address',
+  AERIAL_PHOTOGRAPHY = 'Aerial-Photography',
+  BIOSCIENCE = 'Bioscience',
+  BOUNDARIES = 'Boundaries',
+  CADASTRE = 'Cadastre',
+  CLIMATE = 'Climate',
+  CONTOURS = 'Contours',
+  DEMOGRAPHIC = 'Demographic',
+  ECONOMY = 'Economy',
+  ELEVATION = 'Elevation',
+  EMERGENCY = 'Emergency',
+  ENERGY = 'Energy',
+  ENVIRONMENT = 'Environment',
+  FARMING = 'Farming',
+  GEOSCIENCE = 'Geoscience',
+  HEALTH = 'Health',
+  HISTORY = 'History',
+  INDICES = 'Indices',
+  LOCATION = 'Location',
+  PLANNING = 'Planning',
+  POLITICAL = 'Political',
+  RECREATION = 'Recreation',
+  SOCIETY = 'Society',
+  TOPO = 'Topo',
+  TRANSPORTATION = 'Transportation',
+  UTILITIES = 'Utilities',
+  WATER = 'Water',
 }
 
 export interface IMetadata {
@@ -40,7 +40,7 @@ export interface IMetadata {
   description: string;
   category: SgidCategory;
   secondaryCategory?: SgidCategory;
-};
+}
 
 export interface IPageMetadata extends IMetadata {
   application?: string;
@@ -71,5 +71,5 @@ export interface IHubDownload {
   layerId?: number;
   externalHubOrganization?: string;
   oddHubName?: string;
-  type: ProductType
+  type: ProductType;
 }
