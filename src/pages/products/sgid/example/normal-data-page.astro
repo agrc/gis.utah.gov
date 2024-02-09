@@ -31,6 +31,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata, // this brings all the data from the metadata object above into the page object
   application: 'https://gis.utah.gov/', // this is optional and only used when a product has an associated web application. It creates a button under the summary that says `See the data in action`. Delete if it is unused.
+  // the update history is the complete set up updates. They are in the order of newest first. The 0 index item will be shown as the last update in the top of the page.
   updateHistory: [
     `This shows under the title and should be the most current update date and description if there is one`,
   ],
@@ -38,9 +39,9 @@ const page: IPageMetadata = {
   // hub is optional but it is the primary download type for most datasets
   // the dataPages object is the modified AGOLItems table from the internal SGID database
   // You can view it in `/data/downloadMetadata.ts`
-  // The title from line 23 should be in the dataPages list.
+  // The title from metadata.title above should be in the dataPages list.
   // The object in dataPages is not complete and a few properties need to be added.
-  // 1. The feature service id. That is the name of the feature server created in our arcgis online account. You can view all of the services in https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services
+  // 1. The feature service id. That is the name of the feature server created in our ArcGIS online account. You can view all of the services in https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services
   // 2. Verify that the layer id for the feature service is 0. If it is not, modify it to match. In the feature server you will see Layers: AvalanchePaths (0). The 0 is the layer id.
   // 3. The open sgid table name. Open the Open SGID and add the schema.table_name value to the object.
   // delete this if it is unused
@@ -95,12 +96,7 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <!-- this is the complete update history for a dataset. Duplicate the newest item in the page.lastUpdate property. -->
-  <UpdateHistory slot="update-history">
-    <ul>
-      <li>January 2024 - Box Elder, Davis, Millard, Morgan, Salt Lake, Utah, Washington, and Weber Counties</li>
-    </ul>
-  </UpdateHistory>
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Disclaimer slot="disclaimer">
     <p>
