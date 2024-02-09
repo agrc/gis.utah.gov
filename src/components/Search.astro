@@ -1,0 +1,213 @@
+---
+import '@pagefind/default-ui/css/ui.css';
+import searchIcon from '@images/header/search.svg';
+import { Image } from 'astro:assets';
+---
+
+<site-search>
+  <button data-open-modal>
+    <Image class="" slot="image" src={searchIcon} loading="eager" alt="Search our website" />
+  </button>
+  <dialog
+    class="m-auto mt-20 w-2/3 rounded-md bg-zinc-200 shadow-md shadow-gray-600 dark:bg-zinc-900"
+    aria-label="site search"
+  >
+    <div class="dialog-frame px-5 py-4 text-primary dark:text-zinc-300">
+      <h3 class="mb-2 text-left">Search our website</h3>
+      <div id="pagefind-ui"></div>
+      <button class="absolute right-2 top-2" data-close-modal>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </dialog>
+</site-search>
+
+<script>
+  class SiteSearch extends HTMLElement {
+    constructor() {
+      super();
+      const openBtn = this.querySelector('button[data-open-modal]')!;
+      const closeBtn = this.querySelector('button[data-close-modal]')!;
+      const dialog = this.querySelector('dialog')!;
+      const dialogFrame = this.querySelector('.dialog-frame')!;
+
+      /** Close the modal if a user clicks on a link or outside of the modal. */
+      const onClick = (event: MouseEvent) => {
+        const isLink = 'href' in (event.target || {});
+        if (isLink || (document.body.contains(event.target as Node) && !dialogFrame.contains(event.target as Node))) {
+          closeModal();
+        }
+      };
+
+      const openModal = (event?: MouseEvent): void => {
+        dialog.showModal();
+        document.body.toggleAttribute('data-search-modal-open', true);
+        this.querySelector('input')!.focus();
+        event?.stopPropagation();
+        window.addEventListener('click', onClick);
+      };
+
+      const closeModal = () => {
+        dialog.close();
+      };
+
+      openBtn.addEventListener('click', openModal as EventListener);
+      closeBtn.addEventListener('click', closeModal);
+      dialog.addEventListener('close', () => {
+        document.body.toggleAttribute('data-search-modal-open', false);
+        window.removeEventListener('click', onClick);
+      });
+
+      // Listen for `/` and `cmd + k` keyboard shortcuts.
+      window.addEventListener('keydown', (e) => {
+        const isInput =
+          document.activeElement instanceof HTMLElement &&
+          (['input', 'select', 'textarea'].includes(document.activeElement.tagName.toLowerCase()) ||
+            document.activeElement.isContentEditable);
+        if (e.metaKey === true && e.key === 'k') {
+          dialog.open ? closeModal() : openModal();
+          e.preventDefault();
+        } else if (e.key === '/' && !dialog.open && !isInput) {
+          openModal();
+          e.preventDefault();
+        }
+      });
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
+        onIdle(async () => {
+          const { PagefindUI } = await import('@pagefind/default-ui');
+          new PagefindUI({
+            element: '#pagefind-ui',
+            // TODO: switch this to the correct path for the built app
+            bundlePath: '/dist/pagefind/',
+            showSubResults: true,
+            showImages: false,
+            resetStyles: false,
+          });
+
+          // use for testing
+          openModal();
+          this.querySelector('input')!.value = 'geocoding';
+          this.querySelector('input')!.dispatchEvent(new Event('input'));
+        });
+      });
+    }
+  }
+  customElements.define('site-search', SiteSearch);
+</script>
+
+<style>
+  dialog::backdrop {
+    @apply backdrop-blur-sm;
+  }
+</style>
+
+<style is:global>
+  [data-search-modal-open] {
+    overflow: hidden;
+  }
+  #pagefind-ui {
+    --pagefind-ui-primary: #034ad8;
+    --pagefind-ui-text: theme(colors.zinc.600);
+    --pagefind-ui-background: theme(colors.white);
+    --pagefind-ui-border: #eeeeee;
+    --pagefind-ui-tag: #eeeeee;
+    --pagefind-ui-border-width: 2px;
+    --pagefind-ui-border-radius: 8px;
+    --pagefind-ui-image-border-radius: 8px;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    #pagefind-ui {
+      --pagefind-ui-primary: #034ad8;
+      --pagefind-ui-text: theme(colors.zinc.400);
+      --pagefind-ui-border: #eeeeee;
+      --pagefind-ui-tag: #eeeeee;
+    }
+  }
+  #pagefind-ui .pagefind-ui__result {
+    @apply mb-3 rounded-2xl border border-zinc-400 bg-white p-0 dark:border-white/20 dark:bg-black/40;
+  }
+  #pagefind-ui .pagefind-ui__result-title {
+    @apply w-full pb-1 pl-10 pr-4 pt-1 text-left;
+  }
+  #pagefind-ui .pagefind-ui__result-excerpt {
+    @apply w-full px-4 pb-3 pl-10 text-left;
+  }
+  #pagefind-ui .pagefind-ui__result-nested {
+    @apply relative w-full border-t border-zinc-400 text-left dark:border-white/20;
+  }
+  #pagefind-ui .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)):hover,
+  #pagefind-ui .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)):focus-within,
+  #pagefind-ui .pagefind-ui__result-nested:hover,
+  #pagefind-ui .pagefind-ui__result-nested:focus-within {
+    outline: 1px solid yellow;
+    @apply bg-zinc-100 dark:bg-black/60;
+  }
+
+  #pagefind-ui .pagefind-ui__result-link {
+    position: unset;
+  }
+
+  /* make the anchor expand to fill the container */
+  #pagefind-ui .pagefind-ui__result-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  #pagefind-ui .pagefind-ui__result-link:hover {
+    text-decoration: none;
+  }
+
+  #pagefind-ui .pagefind-ui__result-nested .pagefind-ui__result-link::before {
+    content: unset;
+  }
+
+  #pagefind-ui .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)),
+  #pagefind-ui .pagefind-ui__result-nested {
+    position: relative;
+  }
+
+  #pagefind-ui .pagefind-ui__result-inner > .pagefind-ui__result-title::before {
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 8px;
+    width: 1.5rem;
+    background: var(--pagefind-ui-text);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M9 10h1a1 1 0 1 0 0-2H9a1 1 0 0 0 0 2Zm0 2a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2H9Zm11-3V8l-6-6a1 1 0 0 0-1 0H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V9Zm-6-4 3 3h-2a1 1 0 0 1-1-1V5Zm4 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5v3a3 3 0 0 0 3 3h3v9Zm-3-3H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z'/%3E%3C/svg%3E")
+      center no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M9 10h1a1 1 0 1 0 0-2H9a1 1 0 0 0 0 2Zm0 2a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2H9Zm11-3V8l-6-6a1 1 0 0 0-1 0H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V9Zm-6-4 3 3h-2a1 1 0 0 1-1-1V5Zm4 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5v3a3 3 0 0 0 3 3h3v9Zm-3-3H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z'/%3E%3C/svg%3E")
+      center no-repeat;
+  }
+
+  #pagefind-ui .pagefind-ui__result-nested::before {
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 8px;
+    width: 2rem;
+    background: var(--pagefind-ui-text);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' viewBox='0 0 16 1000' preserveAspectRatio='xMinYMin slice'%3E%3Cpath d='M8 0v1000m6-988H8'/%3E%3C/svg%3E")
+      0% 0% / 100% no-repeat;
+  }
+  #pagefind-ui .pagefind-ui__result-nested:last-child::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 16 16'%3E%3Cpath d='M8 0v12m6 0H8'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 16 16'%3E%3Cpath d='M8 0v12m6 0H8'/%3E%3C/svg%3E");
+  }
+  #pagefind-ui mark {
+    @apply bg-accent;
+  }
+</style>

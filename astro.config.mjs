@@ -1,9 +1,10 @@
 import mdx from '@astrojs/mdx';
-import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import { defineConfig } from 'astro/config';
+import { execSync } from 'child_process';
 
+import react from '@astrojs/react';
 import metaTags from 'astro-meta-tags';
 
 // https://astro.build/config
@@ -19,6 +20,17 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     react(),
+    {
+      name: 'pagefind',
+      hooks: {
+        'astro:build:done': ({ logger }) => {
+          // TODO: figure out how to ignore `published: false` blog posts
+          execSync('npx pagefind --site dist', {
+            stdio: [process.stdin, process.stdout, process.stderr],
+          });
+        },
+      },
+    },
     metaTags(),
   ],
 });
