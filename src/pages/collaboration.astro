@@ -1,54 +1,55 @@
 ---
-import Layout from '@layouts/Pillar.astro';
-import Section from '@components/page/Section.astro';
-import GridForPillars from '@components/page/GridForPillars.astro';
 import CardWithTopImage from '@components/page/CardWithTopImage.astro';
+import GridForPillars from '@components/page/GridForPillars.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/Pillar.astro';
 
-import { Image } from 'astro:assets';
-import GridForPopularResources from '@components/page/GridForPopularResources.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
-import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import CardWithSideImage from '@components/page/CardWithSideImage.astro';
-import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForPopularResources from '@components/page/GridForPopularResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import { Image } from 'astro:assets';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-sgid/*.{svg,png}');
+import communityPhoto from '@images/collaboration/community.svg';
+import conferencePhoto from '@images/collaboration/conference.svg';
+import eventsPhoto from '@images/collaboration/events.svg';
+import resourcesPhoto from '@images/collaboration/resources.svg';
 ---
 
 <Layout title="Collaboration">
   <Section slot="popular-level-ones" stripe titlePosition="center">
     <GridForPillars>
       <CardWithTopImage title="Community" actionUrl="/collaboration/community">
-        <Image
-          slot="image"
-          src={images['/src/images/product-sgid/sgid-index.svg']()}
-          alt="a person using a search engine"
-          class="block h-44"
-        />
-        blah blah blah
+        <Image slot="image" src={communityPhoto} loading="eager" alt="people together in a room" class="block h-44" />
+        Utah has a robust geospatial community with user groups, Coordinating councils and a collaborative atmosphere.
       </CardWithTopImage>
       <CardWithTopImage title="Events" actionUrl="/collaboration/events">
         <Image
           slot="image"
-          src={images['/src/images/product-sgid/open-sgid.svg']()}
-          alt="a person connected to a database"
+          src={eventsPhoto}
+          loading="eager"
+          alt="a person circling a date on a calendar"
           class="block h-44"
         />
-        yada yada yada
+        Come and join your colleagues at one of the statewide conferences and events with a focus on learning and fun.
       </CardWithTopImage>
-      <CardWithTopImage title="Resources" actionUrl="https://api.mapserv.utah.gov/">
+      <CardWithTopImage title="Resources" actionUrl="/collaboration/resources">
         <Image
           slot="image"
-          src={images['/src/images/product-sgid/sgid-opendata.svg']()}
-          alt="people connected to a network through geography"
+          loading="eager"
+          src={resourcesPhoto}
+          alt="a person searches a manilla folder containing a lot of documents "
           class="block h-44"
         />
-        blerg blerg blerg
+        UGRC resources contain many blog posts with great information, free training opportunities, all our past presentations
+        and media resources.
       </CardWithTopImage>
     </GridForPillars>
   </Section>
 
-  <Section title="Popular Documentation Resources" slot="popular-resources" titlePosition="center">
+  <Section title="Popular Collaboration Resources" slot="popular-resources" titlePosition="center">
     <GridForPopularResources>
       <CardWithPopularLink title="UGIC" href="/collaboration/events/ugic">present or join</CardWithPopularLink>
       <CardWithPopularLink title="Maps on the Hill" href="/collaboration/events/moth">
@@ -63,24 +64,14 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     </GridForPopularResources>
   </Section>
 
-  <Section title="More Community Resources" slot="more-resources" stripe titlePosition="center">
+  <Section title="More Collaboration Resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
       <CardWithSideImage title="NSGIC" actionUrl="/collaboration/community/user-groups/nsgic">
-        <Image
-          slot="image"
-          src={images['/src/images/product-sgid/license-disclaimer.svg']()}
-          alt="man in front of warning sign"
-          class="self-center"
-        />
-        Nationsl States Geographic Information Council
+        <Image slot="image" src={conferencePhoto} alt="man in front of warning sign" class="self-center" />
+        National States Geographic Information Council
       </CardWithSideImage>
       <CardWithSideImage title="GISAC" actionUrl="/collaboration/community/user-groups/GISAC">
-        <Image
-          slot="image"
-          src={images['/src/images/product-sgid/data-sharing-agreement.svg']()}
-          alt="people shaking hands"
-          class="self-center"
-        />
+        <Image slot="image" src={conferencePhoto} alt="people shaking hands" class="self-center" />
         Geographic Information Systems Advisory Committee
       </CardWithSideImage>
     </GridForMoreResources>

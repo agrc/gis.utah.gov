@@ -1,0 +1,29 @@
+---
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import eventsPhoto from '@images/collaboration/events.svg';
+---
+
+<Layout title="GIS events">
+  <Section>
+    <Image
+      slot="image"
+      src={eventsPhoto}
+      loading="eager"
+      alt="a person circling a date on a calendar"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    Utah is home to the Utah Geographic Information Council conference. Usually one is along the Wasatch Front and the other
+    is in rural Utah on alternating years. There are also other opportunities to show off your work, such as Maps On The
+    Hill (MOTH) during the legislative session each year.
+  </Section>
+  <Section stripe>
+    <ul>
+      <li>UGIC conference</li>
+      <li>MOTH</li>
+    </ul>
+  </Section>
+</Layout>

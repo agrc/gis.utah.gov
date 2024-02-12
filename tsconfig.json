@@ -21,6 +21,9 @@
       "@images/about/*": [
         "src/images/pillar-about/*"
       ],
+      "@images/collaboration/*": [
+        "src/images/pillar-collaboration/*"
+      ],
       "@utils/*": [
         "src/utilities/*"
       ],

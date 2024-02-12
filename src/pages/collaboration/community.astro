@@ -1,0 +1,35 @@
+---
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import communityPhoto from '@images/collaboration/community.svg';
+---
+
+<Layout title="GIS community">
+  <Section>
+    <Image
+      slot="image"
+      src={communityPhoto}
+      loading="eager"
+      alt="people together in a room"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    Utah is home to a variety of user groups that cover the state and include, federal, state, and local agencies as well
+    as other interested partners.
+  </Section>
+  <Section stripe>
+    <ul>
+      <li>Utah Geographic Information Council (UGIC)</li>
+      <li>Utah Council of Land Surveyors (UCLT)</li>
+      <li>Northern Utah Geographic Information Systems group (NUGIS)</li>
+      <li>Central Utah Group (CUG)</li>
+      <li>Canyon Country Partnership (CCP)</li>
+      <li>Utah Valley GIS Users Group</li>
+      <li>G5 - Southwestern Utah counties</li>
+      <li>Uintah Basin User Group (UBUG)</li>
+      <li>Salt Lake User Group (SLUG)</li>
+    </ul>
+  </Section>
+</Layout>
