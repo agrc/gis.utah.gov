@@ -1666,8 +1666,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Water Related Land Use': {
     itemId: 'e3e7fc9316bb4ad09474401ff46e734f',
     name: 'Utah Water Related Land Use',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'WaterRelatedLandUse',
+    openSgid: 'planning.water_related_land_use',
     layerId: 0,
   },
   'Utah Wilderness Proposal BLM': {
