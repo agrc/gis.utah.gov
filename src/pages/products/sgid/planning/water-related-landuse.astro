@@ -62,9 +62,26 @@ const page: IPageMetadata = {
       Irrigation type (Irrigated, Sub-Irrigated, Non-Irrigated, Riparian, Urban, etc).
     </p>
     <p>
-      See the accompanying FGDC metadata for description of extensive Land Use, Irrigation Type, and Vegetation Cover
-      codes. There are no constraints or warranties with regard to the use of this dataset.
+      The Landuse and IRR_Method fields are described below.
     </p>
+    <ul class="list-disc pl-4">
+      <li>Landuse - A general land cover classification differentiating how the land is used:</li>     
+        <ul class="list-disc pl-8">
+          <li>Agriculture: Land managed for crop or livestock purposes.</li>
+          <li>Other: A broad classification of wildland.</li>
+          <li>Riparian/Wetland: Wildland influenced by a high water table, often close to surface water.</li>
+          <li>Urban: Developed areas, includes urban greenspace such as parks.</li>
+          <li>Water: Surface water such as wet flats, streams, and lakes.</li>
+        </ul>
+      <li>IRR_Method - Crop Irrigation Method carried over from statewide field surveys ending in 2015 and updated based on imagery and yearly field checks.</li>
+      <ul class="list-disc pl-8">
+        <li>Drip: Water is applied through lines that slowly release water onto the surface or subsurface of the crop.</li>
+        <li>Dry Crop: No irrigation method is applied to this agricultural land, the crop is irrigated via natural processes.</li>
+        <li>Flood: Water is diverted from ditches or pipes upland from the crop in sufficient quantities to flood the irrigated plot.</li>
+        <li>None: Associated with non-agricultural land</li>
+        <li>Sub-irrigated: This land does not have irrigation water applied, but due to a high water table receives more water, and is generally closely associated with a riparian area.</li>
+      </ul>
+    </ul>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
