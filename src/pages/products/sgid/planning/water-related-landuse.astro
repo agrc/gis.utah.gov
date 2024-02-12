@@ -6,7 +6,6 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
-import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -40,8 +39,11 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Water usage-related polygon map data, published annually by the Utah Division of Water Resources at DNR that depicts the types and extent of irrigated crops, as well as information concerning phreatophytes, wet/open water areas, dry land agriculture and residential/industrial areas. The primary business driver for this dataset is for constructing and analyzing the state's annual water budget.
-      </p>
+      Water usage-related polygon map data, published annually by the Utah Division of Water Resources at DNR that
+      depicts the types and extent of irrigated crops, as well as information concerning phreatophytes, wet/open water
+      areas, dry land agriculture and residential/industrial areas. The primary business driver for this dataset is for
+      constructing and analyzing the state's annual water budget.
+    </p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -50,7 +52,9 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      As part of developing and updating the State Water Plan, the <ExternalLink href="https://water.utah.gov/">Utah Division of Water Resources</ExternalLink> collects water-related land use data for the entire state. This data includes the types and extent of irrigated crops
+      As part of developing and updating the State Water Plan, the <ExternalLink href="https://water.utah.gov/"
+        >Utah Division of Water Resources</ExternalLink
+      > collects water-related land use data for the entire state. This data includes the types and extent of irrigated crops
       as well as information concerning phreatophytes, wet/open water areas, dry land agriculture and residential/industrial
       areas.
     </p>
@@ -61,44 +65,64 @@ const page: IPageMetadata = {
       the data are utilized by many other state and federal agencies. Water-related land use can be used to depict
       Irrigation type (Irrigated, Sub-Irrigated, Non-Irrigated, Riparian, Urban, etc).
     </p>
-    <p>
-      The Landuse and IRR_Method fields are described below.
-    </p>
+    <p>The Landuse and IRR_Method fields are described below.</p>
     <ul class="list-disc pl-4">
-      <li>Landuse - A general land cover classification differentiating how the land is used:</li>     
-        <ul class="list-disc pl-8">
-          <li>Agriculture: Land managed for crop or livestock purposes.</li>
-          <li>Other: A broad classification of wildland.</li>
-          <li>Riparian/Wetland: Wildland influenced by a high water table, often close to surface water.</li>
-          <li>Urban: Developed areas, includes urban greenspace such as parks.</li>
-          <li>Water: Surface water such as wet flats, streams, and lakes.</li>
-        </ul>
-      <li>IRR_Method - Crop Irrigation Method carried over from statewide field surveys ending in 2015 and updated based on imagery and yearly field checks.</li>
+      <li>Landuse - A general land cover classification differentiating how the land is used:</li>
       <ul class="list-disc pl-8">
-        <li>Drip: Water is applied through lines that slowly release water onto the surface or subsurface of the crop.</li>
-        <li>Dry Crop: No irrigation method is applied to this agricultural land, the crop is irrigated via natural processes.</li>
-        <li>Flood: Water is diverted from ditches or pipes upland from the crop in sufficient quantities to flood the irrigated plot.</li>
+        <li>Agriculture: Land managed for crop or livestock purposes.</li>
+        <li>Other: A broad classification of wildland.</li>
+        <li>Riparian/Wetland: Wildland influenced by a high water table, often close to surface water.</li>
+        <li>Urban: Developed areas, includes urban greenspace such as parks.</li>
+        <li>Water: Surface water such as wet flats, streams, and lakes.</li>
+      </ul>
+      <li>
+        IRR_Method - Crop Irrigation Method carried over from statewide field surveys ending in 2015 and updated based
+        on imagery and yearly field checks.
+      </li>
+      <ul class="list-disc pl-8">
+        <li>
+          Drip: Water is applied through lines that slowly release water onto the surface or subsurface of the crop.
+        </li>
+        <li>
+          Dry Crop: No irrigation method is applied to this agricultural land, the crop is irrigated via natural
+          processes.
+        </li>
+        <li>
+          Flood: Water is diverted from ditches or pipes upland from the crop in sufficient quantities to flood the
+          irrigated plot.
+        </li>
         <li>None: Associated with non-agricultural land</li>
-        <li>Sub-irrigated: This land does not have irrigation water applied, but due to a high water table receives more water, and is generally closely associated with a riparian area.</li>
+        <li>
+          Sub-irrigated: This land does not have irrigation water applied, but due to a high water table receives more
+          water, and is generally closely associated with a riparian area.
+        </li>
       </ul>
     </ul>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
-
-
   <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Utah Division of Water Resources WRLU Program" href="https://dwre-utahdnr.opendata.arcgis.com/pages/wrlu/">More info about the Water Related Land Use Program</CardWithPopularLink>
-      <CardWithPopularLink title="Historic Data" href="https://docs.google.com/a/utah.gov/folderview?id=0B8agagPrSa5xQmJxMjJHNm9vekU">Historic Water Related Land Use Data.</CardWithPopularLink>
+      <CardWithPopularLink
+        title="Utah Division of Water Resources WRLU Program"
+        href="https://dwre-utahdnr.opendata.arcgis.com/pages/wrlu/"
+        >More info about the Water Related Land Use Program</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Historic Data"
+        href="https://docs.google.com/a/utah.gov/folderview?id=0B8agagPrSa5xQmJxMjJHNm9vekU"
+        >Historic Water Related Land Use Data.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Utah Division of Water Resources" href="https://water.utah.gov/">Division home page</CardWithSmallLink>
-      <CardWithSmallLink title="NAIP Imagery" href="/products/sgid/aerial-photography/naip">National Agricultural Imagery Program Imagery hosted at UGRC</CardWithSmallLink>
-
+      <CardWithSmallLink title="Utah Division of Water Resources" href="https://water.utah.gov/"
+        >Division home page</CardWithSmallLink
+      >
+      <CardWithSmallLink title="NAIP Imagery" href="/products/sgid/aerial-photography/naip"
+        >National Agricultural Imagery Program Imagery hosted at UGRC</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>
