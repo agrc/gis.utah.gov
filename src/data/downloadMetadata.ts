@@ -2184,8 +2184,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Historic Lake Bonneville': {
     itemId: 'fb95503ddf904428af3f308eca0eff6e',
     name: 'Utah Historic Lake Bonneville',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'HistoricLakeBonneville',
+    openSgid: 'water.historic_lake_bonneville',
     layerId: 0,
   },
   'Utah HUC Boundaries': {
