@@ -4,8 +4,6 @@ import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
 import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
-import DirectDownloads from '@components/data/DirectDownloads.astro';
-import Disclaimer from '@components/data/Disclaimer.astro';
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
@@ -20,12 +18,12 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Address Points', // The ArcGIS Online title Goes Here (Utah blah blah)
-  description: `A short description of what the dataset is, so when people read it in the list of datasets they know what it is.`,
-  stewards: ['UGRC', 'these', 'are', 'combined'],
-  type: ProductType.POINT, // This comes from the ProductType enum in types.ts
-  category: SgidCategory.LOCATION, // This comes from the SgidCategory enum in types.ts
-  secondaryCategory: SgidCategory.ADDRESS, // This is optional and only used when a dataset is in two categories
+  title: 'Utah Trails and Pathways', // The ArcGIS Online title Goes Here
+  description: `Established trails and pathways in Utah`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYLINE, // This comes from the ProductType enum in types.ts
+  category: SgidCategory.RECREATION, // This comes from the SgidCategory enum in types.ts
+  secondaryCategory: SgidCategory.TRANSPORTATION, // This is optional and only used when a dataset is in two categories
 };
 
 const page: IPageMetadata = {
@@ -33,7 +31,7 @@ const page: IPageMetadata = {
   application: 'https://gis.utah.gov/', // this is optional and only used when a product has an associated web application. It creates a button under the summary that says `See the data in action`. Delete if it is unused.
   // the update history is the complete set up updates. They are in the order of newest first. The 0 index item will be shown as the last update in the top of the page.
   updateHistory: [
-    `This shows under the title and should be the most current update date and description if there is one`,
+    `October 6, 2023`,
   ],
 
   // hub is optional but it is the primary download type for most datasets
@@ -65,9 +63,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      the summary of the product. This is the important information the user should know but save the longer deeper
-      knowledge content for the description. It should be limited to 1 or 2 paragraphs. You use standard html in the
-      summary slot.
+      The Utah Trails and Pathways map layer represents off-street features and important road connections that augment Utah’s recreational trail and transportation network. This map layer features many of Utah’s trails and pathways but is not yet complete.
     </p>
   </Fragment>
 
@@ -76,14 +72,33 @@ const page: IPageMetadata = {
   <Section title="Use the data" slot="downloads" titlePosition="center">
     <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
     <HubDownloads {...page.hub} />
-    <!-- links use the direct downloads component. Only keep one element and delete the unused. -->
-    <DirectDownloads title="A title describing the links. e.g. Install links" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
-    <p>A description of the product. This is the extra information that didn't fit into the summary.</p>
+    <p>Currently, this dataset primarily depicts features used by hikers/pedestrians and bikers. It began with map data purchased from a private entity (Orbital View, Inc), for which full rights were purchased by the GOED Office of Outdoor Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah and Wasatch counties); 2018/2019 additions as part of the multimodal project; and currently ongoing updates by WFRC transportation planners.</p>
+
+    <p>Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be represented in this map layer.</p>
+      
+    <p>Although it is a work in progress, this dataset represents a substantial starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data. Additional segments can be submitted to UGRC for inclusion in this dataset.</p>
+      
+    <p>Note: Significant enhancements (including a schema change) were made to this layer in June 2020.</p>
+
     <p>
-      Schema definitions, and deeper dive things that only a few will read. You use standard html in the summary slot.
+      <li>
+        
+        <ul class="list-disc pl-8">
+          <li>1 - Hiking Only (Hiking and walking are the only uses allowed on this facility)</li>
+          <li>2 - Hiking and Biking (Singletrack, natural surface facility. Hiking and biking are allowed)</li>
+          <li>3 - Paved Shared Use (Paved shared use path, recreational path, urban pathway)</li>
+          <li>4 - Road-concurrent (Facility is on or adjacent to a road, generally a natural surface double track, forest service road, canal road, etc.)</li>
+          <li>Single family with Accessory Dwelling Units (ADUs, currently only for Salt Lake County)</li>
+          <li>5 - Biking Only- (Biking is the primary or only use on this facility. High speeds, blind corners and technical features are common. For safety reasons, hiking, if not expressly prohibited, is not recommended.)</li>
+          <li>6 - Equestrian Primary (Equestrian is the primary use on this facility)</li>
+          <li>7 - Steps (Steps, staircase, or other feature that is not accessible to wheeled or assistive devices on otherwise paved / accessible route)</li>
+          <li>8 - Bridge, Tunnel (Grade change above or below ground surface, generally a bridge or tunnel)</li>
+          <li>9 - Link (Network route connection, see Link on CVDomain_TrailClass tab)</li>
+        </ul>
+      </li>
     </p>
     <p>
       Use the <ExternalLink href="https://gis.utah.gov">ExternalLink</ExternalLink> component for external links. Use <a
@@ -97,13 +112,6 @@ const page: IPageMetadata = {
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
-
-  <Disclaimer slot="disclaimer">
-    <p>
-      If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
-      element
-    </p>
-  </Disclaimer>
 
   <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
     <GridForMoreResources>
