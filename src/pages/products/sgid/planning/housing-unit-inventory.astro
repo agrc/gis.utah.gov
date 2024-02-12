@@ -1,0 +1,184 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Housing Unit Inventory', // The ArcGIS Online title Goes Here (Utah blah blah)
+  description: `A best-effort inventory of housing units in Utah's most populous counties using parcel, LIR, and county assessor data.`,
+  stewards: ['UGRC', 'WFRC, MAG'],
+  type: ProductType.POLYGON, // This comes from the ProductType enum in types.ts
+  category: SgidCategory.PLANNING, // This comes from the SgidCategory enum in types.ts
+  // secondaryCategory: SgidCategory.ADDRESS, // This is optional and only used when a dataset is in two categories
+};
+
+const page: IPageMetadata = {
+  ...metadata, // this brings all the data from the metadata object above into the page object
+  updateHistory: [
+    `Jan 2024 - Initial load for Washington County`,
+    `May 2022 - Initial load for Salt Lake, Davis, and Weber Counties`,
+  ],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The Housing Unit Inventory (HUI) is a derivative dataset that, per <a
+        href="https://le.utah.gov/xcode/Title63A/Chapter16/63A-16-S506.html">UCA 63A-16-S506(4)</a
+      >, adds additional housing characteristics to the County Assessors' tax parcel data for Utah's most urban
+      counties. It is not a substitute for the excellent datasets maintained by the Assessors but instead presents
+      additional, standardized information about the type and number of housing units, associated grounds and common
+      areas, and related short-term and long-term trends. The HUI is a best-effort product of a resource-limited
+      analysis — users are encouraged to do their own quality assessment, share their findings, and cite this metadata
+      describing how the HUI was produced.
+    </p>
+  </Fragment>
+
+  <!-- the title for hub data is typically `Use the data` but it can be anything
+  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      WFRC, MAG, and UGRC are creating this dataset from the <a href="products/sgid/cadastre/parcels"
+        >Land Information Record (LIR)</a
+      > parcel datasets published by UGRC. The LIR datasets are made possible by the county assessors voluntary sharing their
+      annual tax assessment data. The tax roll data are frozen as of midnight Jan 1st for the specified year, finalized in
+      late May, and typically loaded into the SGID later that summer.
+    </p>
+    <p>
+      WFRC, the metropolitan planning organization for the urban portions of Salt Lake County, Davis County, and Weber
+      county, prepared the initial 2020 Housing Inventory dataset for their counties and defined the inventory process
+      laid out below. MAG will be providing data for their counties, and UGRC is working with other counties to create
+      inventories as requested.
+    </p>
+    <ul class="list-disc pl-4">
+      <li>
+        The inventory applies apartment unit counts to multi-family rental properties that do not have
+        individually-owned and platted units (traditional apartment buildings, quadplexes, triplexes, mixed use
+        buildings etc). These unit counts come from the <a href="products/sgid/address">address point</a> data layer, with
+        some counts being assigned manually using information from recent aerial photography and other sources.
+      </li>
+      <li>
+        For cases where individual condos, townhomes, and single family homes have associated common areas, the
+        inventory aggregates and combines the geometries and attributes of the individual units and common areas into a
+        single composite parcel feature called an "owned unit grouping". This sums, averages, and counts the appropriate
+        attributes of the contributing parcels to better characterize the density of these residential land uses
+        (dwelling units per acre or DUA).
+      </li>
+      <li>
+        Every county uses a slightly different set of designations when defining residential parcel types. The inventory
+        attempts to standardize all the different classifications into the following categories:
+        <ul class="list-disc pl-8">
+          <li>Townhouse</li>
+          <li>Condo</li>
+          <li>Apartment</li>
+          <li>Single family</li>
+          <li>Single family with Accessory Dwelling Units (ADUs, currently only for Salt Lake County)</li>
+          <li>Duplex</li>
+          <li>Mixed use (commercial and residential)</li>
+          <li>Mobile home</li>
+          <li>Pud (mixed)</li>
+          <li>Group quarters</li>
+        </ul>
+      </li>
+      <li>
+        The inventory doesn't include the following types of residential properties:
+        <ul class="list-disc pl-8">
+          <li>Nursing, rehabilitation, or assisted living centers</li>
+          <li>Extended stay hotels</li>
+          <li>Incarceration facilities</li>
+          <li>Student housing or dormitories</li>
+          <li>ADUs outside Salt Lake County</li>
+        </ul>
+      </li>
+    </ul>
+    <p>The inventory uses the following fields to provide data on each parcel or owned unit grouping:</p>
+    <ul class="list-disc pl-4">
+      <li><code>TYPE</code>: General housing type, single- or multi-family</li>
+      <li><code>SUBTYPE</code>: More detailed housing type classification</li>
+      <li>
+        <code>IS_OUG</code>: 1 or Yes for features that are owned unit groupings (as opposed to a single-parcel home or
+        apartment)
+      </li>
+      <li><code>UNIT_COUNT</code>: The number of dwelling units, based on address point data</li>
+      <li><code>DUA</code>: Density in dwelling units per acre</li>
+      <li><code>ACRES</code>: Total acreage</li>
+      <li><code>TOT_BD_FT2</code>: Total building(s) square footage</li>
+      <li><code>TOT_VALUE</code>: Total market value</li>
+      <li><code>APX_BLT_YR</code>: Approximate year built</li>
+      <li><code>BLT_DECADE</code>: The decade the structure(s) were built</li>
+      <li>
+        <code>CITY</code>: The features' city based on the SGID's <a href="products/sgid/boundaries/citycountystate"
+          >municipal boundaries</a
+        > data
+      </li>
+      <li><code>COUNTY</code>: The features' county</li>
+      <li>
+        <code>SUBCOUNTY</code>: If provided in the analysis, this groups the features into predefined areas for later
+        grouping and analysis
+      </li>
+    </ul>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <!-- <Disclaimer slot="disclaimer">
+    <p>
+      If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
+      element
+    </p>
+  </Disclaimer> -->
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Parcel Data" href="/products/sgid/cadastre/parcels"
+        >Statewide parcel info by county.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Land Information Record (LIR) Data" href="/products/sgid/cadastre/LIR"
+        >Parcel info enhanced with additional data.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="WFRC's Housing Inventory Explorer"
+        href="https://wfrc.org/housing-inventory-explorer/?geom=pt&x=-12455945&y=4979633&zoom=14&op=And"
+        >WFRC's interactive housing inventory map</CardWithSmallLink
+      >
+      <CardWithSmallLink title="UGRC's Code Repo" href="https://github.com/agrc/housing-unit-inventory/tree/dev"
+        >UGRC's code for creating the Washington County data</CardWithSmallLink
+      >
+      <CardWithSmallLink title="WFRC's Code Repo" href="https://github.com/WFRCAnalytics/Housing-Unit-Inventory"
+        >WFRC's code for the intial process</CardWithSmallLink
+      >
+      <CardWithSmallLink title="MAG Community Profiles" href="https://mountainland.org/community-profiles"
+        >MAG's Community Profiles tool</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

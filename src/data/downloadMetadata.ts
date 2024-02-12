@@ -2723,8 +2723,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Housing Unit Inventory': {
     itemId: 'bbdc62867c2340949f530a71666223ab',
     name: 'Utah Housing Unit Inventory',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'HousingUnitInventory',
+    openSgid: 'planning.housing_unit_inventory',
     layerId: 0,
   },
   'Utah Great Salt Lake Water Level 2016': {
