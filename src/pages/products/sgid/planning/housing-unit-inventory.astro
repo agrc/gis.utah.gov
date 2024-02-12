@@ -10,6 +10,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -28,7 +29,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata, // this brings all the data from the metadata object above into the page object
   updateHistory: [
-    `Jan 2024 - Initial load for Washington County`,
+    `January 2024 - Initial load for Washington County`,
     `May 2022 - Initial load for Salt Lake, Davis, and Weber Counties`,
   ],
   hub: {
@@ -42,8 +43,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      The Housing Unit Inventory (HUI) is a derivative dataset that, per <a
-        href="https://le.utah.gov/xcode/Title63A/Chapter16/63A-16-S506.html">UCA 63A-16-S506(4)</a
+      The Housing Unit Inventory (HUI) is a derivative dataset that, per <ExternalLink
+        href="https://le.utah.gov/xcode/Title63A/Chapter16/63A-16-S506.html">UCA 63A-16-S506(4)</ExternalLink
       >, adds additional housing characteristics to the County Assessors' tax parcel data for Utah's most urban
       counties. It is not a substitute for the excellent datasets maintained by the Assessors but instead presents
       additional, standardized information about the type and number of housing units, associated grounds and common
@@ -62,7 +63,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      WFRC, MAG, and UGRC are creating this dataset from the <a href="products/sgid/cadastre/parcels"
+      WFRC, MAG, and UGRC are creating this dataset from the <a href="/products/sgid/cadastre/parcels"
         >Land Information Record (LIR)</a
       > parcel datasets published by UGRC. The LIR datasets are made possible by the county assessors voluntary sharing their
       annual tax assessment data. The tax roll data are frozen as of midnight Jan 1st for the specified year, finalized in
@@ -78,7 +79,7 @@ const page: IPageMetadata = {
       <li>
         The inventory applies apartment unit counts to multi-family rental properties that do not have
         individually-owned and platted units (traditional apartment buildings, quadplexes, triplexes, mixed use
-        buildings etc). These unit counts come from the <a href="products/sgid/address">address point</a> data layer, with
+        buildings etc). These unit counts come from the <a href="/products/sgid/address">address point</a> data layer, with
         some counts being assigned manually using information from recent aerial photography and other sources.
       </li>
       <li>
@@ -131,7 +132,7 @@ const page: IPageMetadata = {
       <li><code>APX_BLT_YR</code>: Approximate year built</li>
       <li><code>BLT_DECADE</code>: The decade the structure(s) were built</li>
       <li>
-        <code>CITY</code>: The features' city based on the SGID's <a href="products/sgid/boundaries/citycountystate"
+        <code>CITY</code>: The features' city based on the SGID's <a href="/products/sgid/boundaries/citycountystate"
           >municipal boundaries</a
         > data
       </li>
