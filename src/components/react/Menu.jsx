@@ -6,7 +6,7 @@ import React from 'react';
 
 export const Menu = ({ children, currentUri }) => {
   return (
-    <NavigationMenu.Root className="relative z-10 h-12 min-h-12 w-screen items-center bg-zinc-100 lg:flex dark:bg-secondary [&>div]:flex-1">
+    <NavigationMenu.Root className="relative z-10 h-12 min-h-12 items-center bg-zinc-100 lg:flex dark:bg-secondary [&>div]:flex-1">
       <NavigationMenu.List className="m-0 flex flex-1 list-none px-1 text-center">
         <NavigationMenu.Item className="" value="home">
           <MenuLink href="/" currentUri={currentUri}>
