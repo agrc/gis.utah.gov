@@ -1883,8 +1883,8 @@ export const dataPages: DownloadMetadata = {
   'Utah US Congress Districts 2022 to 2032': {
     itemId: 'b5ef0b24f994467fb4f22b27b1a47e25',
     name: 'Utah US Congress Districts 2022 to 2032',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'USCongressDistricts2022to2032 ',
+    openSgid: 'us_congress_districts_2022_to_2032',
     layerId: 0,
   },
   'Utah Liquor Stores': {
