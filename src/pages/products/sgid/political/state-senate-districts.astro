@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah House Districts 2022 to 2032',
-  description: `State House of Representatives Districts for 2022 to 2032`,
+  title: 'Utah Senate Districts 2022 to 2032',
+  description: `State Senate Districts for 2022 to 2032`,
   stewards: ['UGRC', `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
   category: SgidCategory.POLITICAL,
@@ -42,7 +42,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Utah House of Representatives Districts for 2022 to 2032
+      Utah Senate Districts for 2022 to 2032
     </p>
   </Fragment>
 
@@ -51,9 +51,9 @@ const page: IPageMetadata = {
   </Section>
 
   <Fragment slot="description">
-    <p>The Utah House of Representatives is comprised of 75 men and women elected to two-year terms. Utah House Districts 2022 to 2032 shows the house districts that elected officials represent. These boundaries are redrawn by the legislature after each decenial census.</p>
-    <p>The <code>DIST</code> field contains the House district number.</p>
-    <p>The <code>COLOR4</code> field can be used in coloring districts using only 4 colors, usually with no adjacent districts displayed with the same color. This does not always work for the House Districts due to the number and size of the districts.</p>
+    <p>The Utah State Senate is comprised of 29 men and women elected to four-year terms. Utah Senate Districts 2022 to 2032 shows the senate districts that elected officials represent. These boundaries are redrawn by the legislature after each decenial census.</p>
+    <p>The <code>DIST</code> field contains the Senate district number.</p>
+    <p>The <code>COLOR4</code> field can be used in coloring districts using only 4 colors, usually with no adjacent districts displayed with the same color.</p>
     <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
   </Fragment>
 
@@ -61,10 +61,10 @@ const page: IPageMetadata = {
 
   <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="State Senate Districts" href="/products/sgid/political/state-senate-districts">Utah State Senate Districts 2022-2032</CardWithPopularLink>
+      <CardWithPopularLink title="Utah House Districts" href="/products/sgid/political/state-house-districts">Utah State House of Representatives Districts 2022-2032</CardWithPopularLink>
       <CardWithPopularLink title="US Congressional Districts" href="/products/sgid/political/us-congressional-districts">US House of Representatives district boundaries</CardWithPopularLink>
-      <CardWithPopularLink title="Previous Data: 2012-2022" href="https://opendata.gis.utah.gov/datasets/utah-house-districts-2012-to-2022">State House Districts from 2012-2022</CardWithPopularLink>
-      <CardWithPopularLink title="Previous Data: 2002-2012" href="https://opendata.gis.utah.gov/datasets/utah-house-districts-2002-to-2012">State House Districts from 2002-2012</CardWithPopularLink>
+      <CardWithPopularLink title="Previous Data: 2012-2022" href="https://opendata.gis.utah.gov/datasets/utah-senate-districts-2012-to-2022">State Senate Districts from 2012-2022</CardWithPopularLink>
+      <CardWithPopularLink title="Previous Data: 2002-2012" href="https://opendata.gis.utah.gov/datasets/utah-senate-districts-2002-to-2012">State Senate Districts from 2002-2012</CardWithPopularLink>
     </GridForMoreResources>
   </Section>
 
