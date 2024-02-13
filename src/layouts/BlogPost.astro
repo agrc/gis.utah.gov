@@ -24,7 +24,7 @@ const { title, date: pubDate, updated, estimatedReadTime } = Astro.props;
               </div>
             )
           }
-          <span>{estimatedReadTime}</span>
+          <div class="flex justify-center text-primary/80 dark:text-accent">{estimatedReadTime}</div>
         </div>
         <h1>{title}</h1>
         <hr />
