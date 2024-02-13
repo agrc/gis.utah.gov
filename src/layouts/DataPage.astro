@@ -35,7 +35,7 @@ const { title = 'UGRC', subTitle, category, actionUrl, config } = Astro.props;
 
   {
     !(config?.skipInDepth ?? false) && (
-      <Section title="In depth" stripe titlePosition="center">
+      <Section title="More details" stripe titlePosition="center">
         <slot name="description" />
         <slot name="update-history" />
         <slot name="disclaimer" />

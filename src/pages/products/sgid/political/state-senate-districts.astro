@@ -16,6 +16,8 @@ import Section from '@components/page/Section.astro';
 
 import { dataPages } from '@data/downloadMetadata';
 
+const friendlyTitle = 'Utah Senate Districts';
+
 export const metadata: IMetadata = {
   title: 'Utah Senate Districts 2022 to 2032',
   description: `State Senate Districts for 2022 to 2032`,
@@ -37,11 +39,11 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout title={friendlyTitle} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>Utah Senate Districts for 2022 to 2032.</p>
+    <p>Utah Senate Districts defined after every decennial census.</p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">

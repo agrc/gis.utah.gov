@@ -16,6 +16,8 @@ import Section from '@components/page/Section.astro';
 
 import { dataPages } from '@data/downloadMetadata';
 
+const friendlyTitle = 'Utah School Board Districts';
+
 export const metadata: IMetadata = {
   title: 'Utah School Board Districts 2022 to 2032',
   description: `State School Board Districts for 2022 to 2032`,
@@ -33,11 +35,11 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout title={friendlyTitle} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>Utah School Board Districts for 2022 to 2032.</p>
+    <p>Utah School Board Districts defined after every decennial census.</p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
