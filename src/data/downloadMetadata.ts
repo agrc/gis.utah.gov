@@ -1155,15 +1155,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Grazing Improvement Regions': {
     itemId: '0527832735284326980bb970495b9ee0',
     name: 'Utah Grazing Improvement Regions',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'GrazingImprovementRegions',
+    openSgid: 'farming.grazing_improvement_regions',
     layerId: 0,
   },
   'Utah Grazing Allotments': {
     itemId: '822d0cf8e7da44b7922f8351d7b252e5',
     name: 'Utah Grazing Allotments',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId:'GrazingAllotments',
+    openSgid: 'farming.grazing_allotments',
     layerId: 0,
   },
   'Utah Physiographic Subdivisions': {
@@ -1729,8 +1729,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Agricultural Protection Areas': {
     itemId: 'a9fc125d02d54681aec1e5576954ded6',
     name: 'Utah Agricultural Protection Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'AgriculturalProtectionAreas',
+    openSgid: 'farming.agricultural_protection_areas',
     layerId: 0,
   },
   'Utah Tax Areas 2022': {
