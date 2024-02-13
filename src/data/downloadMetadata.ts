@@ -1162,7 +1162,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Grazing Allotments': {
     itemId: '822d0cf8e7da44b7922f8351d7b252e5',
     name: 'Utah Grazing Allotments',
-    featureServiceId:'GrazingAllotments',
+    featureServiceId: 'GrazingAllotments',
     openSgid: 'farming.grazing_allotments',
     layerId: 0,
   },
@@ -1744,7 +1744,7 @@ export const dataPages: DownloadMetadata = {
     itemId: 'exclude from AGOL',
     name: 'Utah Vista Ballot Areas Proposed',
     featureServiceId: null,
-    openSgid: '',
+    openSgid: 'political.vista_ballot_areas_proposed',
     layerId: 0,
   },
   'Utah Tax Entities 2022': {
@@ -1764,8 +1764,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Vista Ballot Areas': {
     itemId: 'd33f596419d74948a45070275632b8e0',
     name: 'Utah Vista Ballot Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'VistaBallotAreas',
+    openSgid: 'political.vista_ballot_areas',
     layerId: 0,
   },
   'Utah Judicial Districts': {
