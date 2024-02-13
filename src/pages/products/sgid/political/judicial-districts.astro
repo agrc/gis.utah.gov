@@ -26,9 +26,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [
-    `2005`,
-  ],
+  updateHistory: [`2005`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -40,7 +38,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      This dataset represents the State Judicial Districts as designated by their political boundaries. District, Juvenile and Justice courts are located in each of the state's eight judicial districts.
+      This dataset represents the State Judicial Districts as designated by their political boundaries. District,
+      Juvenile and Justice courts are located in each of the state's eight judicial districts.
     </p>
   </Fragment>
 
@@ -50,24 +49,34 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      This dataset contains the boundaries for Utah's Judicial Districts along with the location of the district and juvenile courts and the constituent counties. They were created by intersecting the boundaries of the state-level political districts.
+      This dataset contains the boundaries for Utah's Judicial Districts along with the location of the district and
+      juvenile courts and the constituent counties. They were created by intersecting the boundaries of the state-level
+      political districts.
     </p>
     <p>The <code>DISTRICT</code> field contains the judicial district number.</p>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
-  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+  <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="City Courts" href="https://opendata.gis.utah.gov/datasets/city-courts-of-utah">Municipal court boundaries</CardWithPopularLink>
-      <CardWithPopularLink title="County Courts" href="https://opendata.gis.utah.gov/datasets/county-courts-of-utah">County court boundaries</CardWithPopularLink>
+      <CardWithPopularLink title="City Courts" href="https://opendata.gis.utah.gov/datasets/city-courts-of-utah"
+        >Municipal court boundaries</CardWithPopularLink
+      >
+      <CardWithPopularLink title="County Courts" href="https://opendata.gis.utah.gov/datasets/county-courts-of-utah"
+        >County court boundaries</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Utah State Courts" href="https://www.utcourts.gov">The Judicial Branch of Utah</CardWithSmallLink>
-      <CardWithSmallLink title="Judicial Links" href="https://www.utah.gov/government/judicial.html">Judicial-related links from utah.gov</CardWithSmallLink>
+      <CardWithSmallLink title="Utah State Courts" href="https://www.utcourts.gov"
+        >The Judicial Branch of Utah</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Judicial Links" href="https://www.utah.gov/government/judicial.html"
+        >Judicial-related links from utah.gov</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>

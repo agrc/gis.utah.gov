@@ -29,7 +29,7 @@ const page: IPageMetadata = {
   updateHistory: [
     `2022: Redistricting after 2020 Census`,
     `2012: Redistricting after 2010 Census`,
-    `2002: Redistricting after 2000 Census`,  
+    `2002: Redistricting after 2000 Census`,
   ],
   hub: {
     ...dataPages[metadata.title],
@@ -41,9 +41,7 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>
-      US House of Representatives Districts for Utah for 2022 to 2032
-    </p>
+    <p>US House of Representatives Districts for Utah for 2022 to 2032.</p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -53,24 +51,43 @@ const page: IPageMetadata = {
   <Fragment slot="description">
     <p>U.S. Congress Districts 2022 to 2032 shows the U.S. Congressional Districts that elected officials represent.</p>
     <p>The <code>DISTRICT</code> field contains the U.S. Congress district number.</p>
-    <p>Statewide political district boundaries are drawn by the Utah Legislature after each decenial census and adopted into state law.</p>
+    <p>
+      Statewide political district boundaries are drawn by the Utah Legislature after each decenial census and adopted
+      into state law.
+    </p>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
-  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+  <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Utah House Districts" href="/products/sgid/political/state-house-districts">Utah State House of Representatives Districts 2022-2032</CardWithPopularLink>
-      <CardWithPopularLink title="State Senate Districts" href="/products/sgid/political/state-senate-districts">Utah State Senate Districts 2022-2032</CardWithPopularLink>
-      <CardWithPopularLink title="Previous Data: 2012-2022" href="https://opendata.gis.utah.gov/datasets/utah-us-congress-districts-2012-to-2022">State House Districts from 2012-2022</CardWithPopularLink>
-      <CardWithPopularLink title="Previous Data: 2002-2012" href="https://opendata.gis.utah.gov/datasets/utah-us-congress-districts-2002-to-2012/explore">State House Districts from 2002-2012</CardWithPopularLink>
+      <CardWithPopularLink title="Utah House Districts" href="/products/sgid/political/state-house-districts"
+        >Utah State House of Representatives Districts 2022-2032</CardWithPopularLink
+      >
+      <CardWithPopularLink title="State Senate Districts" href="/products/sgid/political/state-senate-districts"
+        >Utah State Senate Districts 2022-2032</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Previous Data: 2012-2022"
+        href="https://opendata.gis.utah.gov/datasets/utah-us-congress-districts-2012-to-2022"
+        >State House Districts from 2012-2022</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Previous Data: 2002-2012"
+        href="https://opendata.gis.utah.gov/datasets/utah-us-congress-districts-2002-to-2012/explore"
+        >State House Districts from 2002-2012</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="United States Congress" href="https://www.congress.gov/">The granddaddy of them all</CardWithSmallLink>
-      <CardWithSmallLink title="Utah State Legislature" href="https://le.utah.gov/">The Legislature's main site</CardWithSmallLink>
+      <CardWithSmallLink title="United States Congress" href="https://www.congress.gov/"
+        >The granddaddy of them all</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Utah State Legislature" href="https://le.utah.gov/"
+        >The Legislature's main site</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>
