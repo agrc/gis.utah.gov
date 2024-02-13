@@ -79,10 +79,10 @@ const { title = 'UGRC' } = Astro.props;
         ></path>
       </svg>
     </Header>
-    <Menu client:only currentUri={pathname}>
+    <Menu client:visible currentUri={pathname}>
       <Search suffix="large" />
     </Menu>
-    <SmallMenu client:only currentUri={pathname}>
+    <SmallMenu client:visible currentUri={pathname}>
       <Search suffix="small" />
     </SmallMenu>
     <Banner title={title} />
