@@ -1,0 +1,114 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import DefinitionList from '@components/page/DefinitionList.astro';
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Vista Ballot Areas',
+  description: `The official voting precincts used by Utah's VISTA election framework.`,
+  stewards: ['UGRC', `Lieutenant Governor's Office`],
+  type: ProductType.POLYGON,
+  category: SgidCategory.POLITICAL,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://votesearch.utah.gov/voter-search/search/search-by-address/how-and-where-can-i-vote',
+  updateHistory: [
+     "January 12, 2024",
+     "February 28, 2022",
+     "June 2021",
+     "December 2020",
+     "September 2020",
+     "October 2019",
+     "July 2019",
+],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Voting precincts determine a voter's ballot composition and polling location based on the boundaries of all political districts covering their address (U.S Congress, State House and Senate, state school board, municipal districts, special districts, etc) in conjunction with a legislatively-mandated maximum limit of voters per precinct.
+    </p>
+    <p>
+      This dataset drives many of the State's voter information pages and lookups.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>Vista Ballot Areas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County
+      Clerk offices. Where precincts are split into formal subprecincts, only the subprecincts are included in this
+      dataset. A 'Dissolve' operation on the PRECINCTID field will produce precinct polygons without subprecinct lines.
+      Updates are done to the precincts periodically, corresponding with Annexations and city/town boundary changes.</p>
+    <dl>
+      <DefinitionList title="VISTAID">An 11 character field that contains the precinct ID and optional subprecinct ID (separated by a colon).</DefinitionList>
+      <DefinitionList title="PRECINCTID">The precinct component of VISTAID.</DefinitionList>
+      <DefinitionList title="SUBPRECINCTID">The subprecinct component, where applicable, of VISTAID.</DefinitionList> 
+      <DefinitionList title="VERSIONNBR">An optional version reference name assigned by the county.</DefinitionList>
+      <DefinitionList title="EFFECTIVEDATE">The date the precinct boundary took effect. A date of 1/1/2011 is the default effective date.</DefinitionList>
+      <DefinitionList title="RcvdDate">Indicate the date the precinct boundary was sent from the county to the UGRC. Updates will reflect the new city/town boundaries due to annexations.</DefinitionList>
+    </dl>
+
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah House Districts" href="/products/sgid/political/state-house-districts"
+        >Utah State House of Representatives Districts 2022-2032</CardWithPopularLink
+      >
+      <CardWithPopularLink title="State Senate Districts" href="/products/sgid/political/state-senate-districts"
+        >Utah State Senate Districts 2022-2032</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Utah School Board Districts"
+        href="/products/sgid/political/state-school-board-districts"
+        >Utah School Board Districts 2022-2032</CardWithPopularLink
+      >
+      <CardWithPopularLink title="US Congressional Districts" href="/products/sgid/political/us-congressional-districts"
+        >US House of Representatives district boundaries</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Previous Data: 2011"
+        href="https://drive.google.com/drive/folders/1BhXfEjXQ1_7z5cH-cj869XUwNDWdhQTu"
+        >Archive of 2011 precincts <strong>(no longer in use)</strong></CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="vote.utah.gov" href="https://vote.utah.gov/"
+        >Find your voting information</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Elections" href="https://elections.utah.gov/"
+        >Lieutenent Governor's Office: Elections</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
