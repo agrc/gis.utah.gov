@@ -2639,8 +2639,8 @@ export const dataPages: DownloadMetadata = {
   'Utah District Combination Areas 2022': {
     itemId: '12fb03b51a9a4ab9aacd90e19ac6a06f',
     name: 'Utah District Combination Areas 2022',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'DistrictCombinationAreas2022',
+    openSgid: 'political.district_combination_areas_2022',
     layerId: 0,
   },
   'Utah Land Ownership': {
