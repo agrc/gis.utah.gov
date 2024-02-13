@@ -1,10 +1,12 @@
 ---
 const bundlePath = import.meta.env.DEV ? '/dist/pagefind/' : `${import.meta.env.BASE_URL}pagefind/`;
+const { suffix } = Astro.props;
 ---
 
 <site-search
   class="flex flex-col justify-center rounded-full px-3 hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100"
   data-bundle-path={bundlePath}
+  data-suffix={suffix}
 >
   <button data-open-modal>
     <svg
@@ -27,7 +29,7 @@ const bundlePath = import.meta.env.DEV ? '/dist/pagefind/' : `${import.meta.env.
   >
     <div class="dialog-frame px-5 py-4">
       <h3 class="mb-2 text-left text-zinc-700 dark:text-zinc-300">Search our website</h3>
-      <div id="pagefind-ui"></div>
+      <div id={`pagefind-ui-${suffix}`}></div>
       <button class="absolute right-2 top-2" data-close-modal>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +101,7 @@ const bundlePath = import.meta.env.DEV ? '/dist/pagefind/' : `${import.meta.env.
       onIdle(async () => {
         const { PagefindUI } = await import('@pagefind/default-ui');
         new PagefindUI({
-          element: '#pagefind-ui',
+          element: `#pagefind-ui-${this.dataset.suffix}`,
           bundlePath: this.dataset.bundlePath,
           showSubResults: true,
           showImages: false,
@@ -123,50 +125,50 @@ const bundlePath = import.meta.env.DEV ? '/dist/pagefind/' : `${import.meta.env.
     overflow: hidden;
   }
 
-  #pagefind-ui form {
+  site-search form {
     @apply relative;
   }
 
-  #pagefind-ui input {
+  site-search input {
     @apply w-full rounded-md border border-gray-300 px-3 py-2 dark:border-gray-700;
   }
 
-  #pagefind-ui button.pagefind-ui__search-clear {
+  site-search button.pagefind-ui__search-clear {
     @apply absolute right-3 top-[14px] text-xs;
   }
 
-  #pagefind-ui .pagefind-ui__message {
+  site-search .pagefind-ui__message {
     @apply my-2 text-sm font-bold text-primary dark:text-zinc-300;
   }
 
-  #pagefind-ui mark {
+  site-search mark {
     @apply bg-accent;
   }
 
-  #pagefind-ui .pagefind-ui__result {
+  site-search .pagefind-ui__result {
     @apply my-4 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-800;
   }
 
-  #pagefind-ui .pagefind-ui__result-title a {
+  site-search .pagefind-ui__result-title a {
     @apply text-lg font-bold;
   }
-  #pagefind-ui .pagefind-ui__result-nested .pagefind-ui__result-title a {
+  site-search .pagefind-ui__result-nested .pagefind-ui__result-title a {
     @apply text-base font-semibold;
   }
 
-  #pagefind-ui .pagefind-ui__result-excerpt {
+  site-search .pagefind-ui__result-excerpt {
     @apply text-zinc-600 dark:text-zinc-50;
   }
-  #pagefind-ui .pagefind-ui__result-nested {
+  site-search .pagefind-ui__result-nested {
     @apply relative pl-4 pt-1;
   }
 
-  #pagefind-ui .pagefind-ui__result-nested::before {
+  site-search .pagefind-ui__result-nested::before {
     content: '"';
     @apply absolute -left-1 -top-1 text-4xl italic text-primary dark:text-zinc-300;
   }
 
-  #pagefind-ui button.pagefind-ui__button {
+  site-search button.pagefind-ui__button {
     @apply relative flex min-h-9 cursor-pointer items-center justify-center rounded-full border-2 border-zinc-400 bg-secondary px-8 text-zinc-50 no-underline transition-all hover:border-zinc-600 hover:shadow hover:contrast-125 focus:outline-2 focus:outline-accent focus:transition-none active:scale-95 active:shadow-inner dark:border-zinc-400/30 dark:hover:border-white/30;
   }
 </style>
