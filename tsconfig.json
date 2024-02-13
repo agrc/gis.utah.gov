@@ -18,6 +18,15 @@
       "@images/sgid/*": [
         "src/images/product-sgid/*"
       ],
+      "@images/discover/*": [
+        "src/images/product-discover/*"
+      ],
+      "@images/turn/*": [
+        "src/images/product-turn/*"
+      ],
+      "@images/api/*": [
+        "src/images/product-api/*"
+      ],
       "@images/about/*": [
         "src/images/pillar-about/*"
       ],

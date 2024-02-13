@@ -1,8 +1,50 @@
 ---
-import Layout from '@layouts/FullWidth.astro';
 import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import apiLogo from '@images/api/api-logo.svg';
+import discoverLogo from '@images/discover/discover-logo.svg';
+import sgidLogo from '@images/sgid/sgid-logo.svg';
+import turnLogo from '@images/turn/turn-logo.svg';
 ---
 
-<Layout title="Products">
-  <Section title="SGID" />
+<Layout title="UGRC products">
+  <Section title="SGID" actionUrl="/products/sgid" stripe>
+    <Image slot="image" src={sgidLogo} loading="eager" alt="the SGID logo" class="w-full max-w-[400px] rounded-2xl" />
+    <p>
+      The SGID aims to be the primary source for state-wide GIS data in Utah by creating a single portal to datasets
+      created by many different agencies and organizations. With such a broad scope, SGID datasets live in many
+      different places depending on their type, availability, and popularity.
+    </p>
+  </Section>
+
+  <Section title="Discover" actionUrl="/products/discover">
+    <Image slot="image" src={discoverLogo} alt="the discover logo" class="w-full max-w-[400px] rounded-2xl" />
+    <p>
+      Discover is a cloud-based web service serving aerial imagery and base maps. These services are available in both
+      WMTS and WMS formats from the Open Geospatial Consortium (OGC) for broad compatibility and are provided in the Web
+      Mercator WGS84 projection (wkid/EPSG 3857).
+    </p>
+    <p>Discover offers over 20 services that are free to use (however, a few require a signed license agreement).</p>
+  </Section>
+
+  <Section title="TURN GPS" actionUrl="/products/turn" stripe>
+    <Image slot="image" src={turnLogo} alt="the TURN GPS logo" class="w-full max-w-[400px] rounded-2xl" />
+    <p>
+      The Utah Reference Network, TURN, is a high-precision global navigation satellite system (GNSS) providing
+      real-time corrections and data for post processing. A GNSS network consists of permanently located GPS receivers,
+      installed across an area, that generate real-time, high-accuracy GPS positioning. All of the permanently installed
+      GPS receivers send their data to a central system via the internet. The central system analyzes the input to
+      adjust and correct the data to provide the most accurate locations, usually down to centimeter level. Our networks
+      use the Trimble PIVOT VRS Platform. The generated data is sent from the GPS receiver to the GPS reference network
+      through a wireless connection using the Networked Transport of RTCM via Internet Protocol (NTRIP).
+    </p>
+  </Section>
+
+  <Section title="UGRC API" actionUrl="/products/api">
+    <Image slot="image" src={apiLogo} alt="the UGRC API logo" class="w-full max-w-[400px] rounded-2xl" />
+    <p>The UGRC API is a free web service that allows you to geocode and search SGID data with HTTP requests.</p>
+  </Section>
 </Layout>
