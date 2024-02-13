@@ -1,6 +1,7 @@
 ---
 import BlogPost from '@layouts/BlogPost.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
+import getReadingTime from 'reading-time';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -8,7 +9,13 @@ export async function getStaticPaths() {
     .filter((post) => post.data.published)
     .map((post) => ({
       params: { slug: post.slug },
-      props: post,
+      props: {
+        ...post,
+        data: {
+          ...post.data,
+          estimatedReadTime: getReadingTime(post.body).text,
+        },
+      },
     }));
 }
 type Props = CollectionEntry<'blog'>;

@@ -1,11 +1,14 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import Layout from '@layouts/Prose.astro';
 import FormattedDate from '@components/FormattedDate.astro';
+import Layout from '@layouts/Prose.astro';
+import type { CollectionEntry } from 'astro:content';
 
-type Props = CollectionEntry<'blog'>['data'];
+type BlogPost = CollectionEntry<'blog'>['data'];
+interface Props extends BlogPost {
+  estimatedReadTime?: string;
+}
 
-const { title, date: pubDate, updated } = Astro.props;
+const { title, date: pubDate, updated, estimatedReadTime } = Astro.props;
 ---
 
 <Layout title={title}>
@@ -21,6 +24,7 @@ const { title, date: pubDate, updated } = Astro.props;
               </div>
             )
           }
+          <span>{estimatedReadTime}</span>
         </div>
         <h1>{title}</h1>
         <hr />
