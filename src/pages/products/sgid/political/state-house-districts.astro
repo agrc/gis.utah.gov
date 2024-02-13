@@ -29,7 +29,7 @@ const page: IPageMetadata = {
   updateHistory: [
     `2022: Redistricting after 2020 Census`,
     `2012: Redistricting after 2010 Census`,
-    `2002: Redistricting after 2000 Census`,  
+    `2002: Redistricting after 2000 Census`,
   ],
   hub: {
     ...dataPages[metadata.title],
@@ -41,9 +41,7 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>
-      Utah House of Representatives Districts for 2022 to 2032
-    </p>
+    <p>Utah House of Representatives Districts for 2022 to 2032.</p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -51,27 +49,53 @@ const page: IPageMetadata = {
   </Section>
 
   <Fragment slot="description">
-    <p>The Utah House of Representatives is comprised of 75 men and women elected to two-year terms. Utah House Districts 2022 to 2032 shows the house districts that elected officials represent.</p>
+    <p>
+      The Utah House of Representatives is comprised of 75 men and women elected to two-year terms. Utah House Districts
+      2022 to 2032 shows the house districts that elected officials represent.
+    </p>
     <p>The <code>DIST</code> field contains the House district number.</p>
-    <p>The <code>COLOR4</code> field can be used in coloring districts using only 4 colors, usually with no adjacent districts displayed with the same color. This does not always work for the House Districts due to the number and size of the districts.</p>
-    <p>Statewide house district boundaries are drawn by the Utah Legislature after each decenial census and adopted into state law.</p>
+    <p>
+      The <code>COLOR4</code> field can be used in coloring districts using only 4 colors, usually with no adjacent districts
+      displayed with the same color. This does not always work for the House Districts due to the number and size of the
+      districts.
+    </p>
+    <p>
+      Statewide house district boundaries are drawn by the Utah Legislature after each decenial census and adopted into
+      state law.
+    </p>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
-  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+  <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="State Senate Districts" href="/products/sgid/political/state-senate-districts">Utah State Senate Districts 2022-2032</CardWithPopularLink>
-      <CardWithPopularLink title="US Congressional Districts" href="/products/sgid/political/us-congressional-districts">US House of Representatives district boundaries</CardWithPopularLink>
-      <CardWithPopularLink title="Previous Data: 2012-2022" href="https://opendata.gis.utah.gov/datasets/utah-house-districts-2012-to-2022">State House Districts from 2012-2022</CardWithPopularLink>
-      <CardWithPopularLink title="Previous Data: 2002-2012" href="https://opendata.gis.utah.gov/datasets/utah-house-districts-2002-to-2012">State House Districts from 2002-2012</CardWithPopularLink>
+      <CardWithPopularLink title="State Senate Districts" href="/products/sgid/political/state-senate-districts"
+        >Utah State Senate Districts 2022-2032</CardWithPopularLink
+      >
+      <CardWithPopularLink title="US Congressional Districts" href="/products/sgid/political/us-congressional-districts"
+        >US House of Representatives district boundaries</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Previous Data: 2012-2022"
+        href="https://opendata.gis.utah.gov/datasets/utah-house-districts-2012-to-2022"
+        >State House Districts from 2012-2022</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Previous Data: 2002-2012"
+        href="https://opendata.gis.utah.gov/datasets/utah-house-districts-2002-to-2012"
+        >State House Districts from 2002-2012</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Utah State Legislature" href="https://le.utah.gov/">The Legislature's main site</CardWithSmallLink>
-      <CardWithSmallLink title="Utah House of Representatives" href="https://le.utah.gov/house2/index.html">The House of Representatives' main site</CardWithSmallLink>
+      <CardWithSmallLink title="Utah State Legislature" href="https://le.utah.gov/"
+        >The Legislature's main site</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Utah House of Representatives" href="https://le.utah.gov/house2/index.html"
+        >The House of Representatives' main site</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>
