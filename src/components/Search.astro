@@ -1,19 +1,30 @@
 ---
-import '@pagefind/default-ui/css/ui.css';
-import searchIcon from '@images/header/search.svg';
-import { Image } from 'astro:assets';
+
 ---
 
-<site-search>
+<site-search class="flex flex-col justify-center">
   <button data-open-modal>
-    <Image class="" slot="image" src={searchIcon} loading="eager" alt="Search our website" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="h-6 w-6 text-zinc-600 dark:text-zinc-50"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+    </svg>
   </button>
   <dialog
-    class="m-auto mt-20 w-2/3 rounded-md bg-zinc-200 shadow-md shadow-gray-600 dark:bg-zinc-900"
+    class="mx-auto mt-20 h-max w-2/3 rounded-md border border-zinc-400 bg-zinc-200 text-left shadow backdrop:backdrop-blur-sm dark:bg-zinc-900"
+    style={{ maxHeight: 'calc(100% - 6rem)' }}
     aria-label="site search"
   >
-    <div class="dialog-frame px-5 py-4 text-primary dark:text-zinc-300">
-      <h3 class="mb-2 text-left">Search our website</h3>
+    <div class="dialog-frame px-5 py-4">
+      <h3 class="mb-2 text-left text-zinc-700 dark:text-zinc-300">Search our website</h3>
       <div id="pagefind-ui"></div>
       <button class="absolute right-2 top-2" data-close-modal>
         <svg
@@ -22,7 +33,7 @@ import { Image } from 'astro:assets';
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="h-6 w-6"
+          class="h-6 w-6 text-primary dark:text-zinc-300"
         >
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
         </svg>
@@ -71,7 +82,7 @@ import { Image } from 'astro:assets';
       window.addEventListener('keydown', (e) => {
         const isInput =
           document.activeElement instanceof HTMLElement &&
-          (['input', 'select', 'textarea'].includes(document.activeElement.tagName.toLowerCase()) ||
+          (['input select textarea'].includes(document.activeElement.tagName.toLowerCase()) ||
             document.activeElement.isContentEditable);
         if (e.metaKey === true && e.key === 'k') {
           dialog.open ? closeModal() : openModal();
@@ -96,9 +107,9 @@ import { Image } from 'astro:assets';
           });
 
           // use for testing
-          openModal();
-          this.querySelector('input')!.value = 'geocoding';
-          this.querySelector('input')!.dispatchEvent(new Event('input'));
+          // openModal();
+          // this.querySelector('input')!.value = 'geocoding';
+          // this.querySelector('input')!.dispatchEvent(new Event('input'));
         });
       });
     }
@@ -106,108 +117,57 @@ import { Image } from 'astro:assets';
   customElements.define('site-search', SiteSearch);
 </script>
 
-<style>
-  dialog::backdrop {
-    @apply backdrop-blur-sm;
-  }
-</style>
-
+<!-- is:global is required, perhaps because it's within a dialog? -->
 <style is:global>
+  /* prevent scrolling the page when the modal is open */
   [data-search-modal-open] {
     overflow: hidden;
   }
-  #pagefind-ui {
-    --pagefind-ui-primary: #034ad8;
-    --pagefind-ui-text: theme(colors.zinc.600);
-    --pagefind-ui-background: theme(colors.white);
-    --pagefind-ui-border: #eeeeee;
-    --pagefind-ui-tag: #eeeeee;
-    --pagefind-ui-border-width: 2px;
-    --pagefind-ui-border-radius: 8px;
-    --pagefind-ui-image-border-radius: 8px;
-    --pagefind-ui-image-box-ratio: 3 / 2;
-    --pagefind-ui-font: sans-serif;
+
+  #pagefind-ui form {
+    @apply relative;
   }
-  @media (prefers-color-scheme: dark) {
-    #pagefind-ui {
-      --pagefind-ui-primary: #034ad8;
-      --pagefind-ui-text: theme(colors.zinc.400);
-      --pagefind-ui-border: #eeeeee;
-      --pagefind-ui-tag: #eeeeee;
-    }
+
+  #pagefind-ui input {
+    @apply w-full rounded-md border border-gray-300 px-3 py-2 dark:border-gray-700;
   }
+
+  #pagefind-ui button.pagefind-ui__search-clear {
+    @apply absolute right-3 top-[14px] text-xs;
+  }
+
+  #pagefind-ui .pagefind-ui__message {
+    @apply my-2 text-sm font-bold text-primary dark:text-zinc-300;
+  }
+
+  #pagefind-ui mark {
+    @apply bg-accent;
+  }
+
   #pagefind-ui .pagefind-ui__result {
-    @apply mb-3 rounded-2xl border border-zinc-400 bg-white p-0 dark:border-white/20 dark:bg-black/40;
+    @apply my-4 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-800;
   }
-  #pagefind-ui .pagefind-ui__result-title {
-    @apply w-full pb-1 pl-10 pr-4 pt-1 text-left;
+
+  #pagefind-ui .pagefind-ui__result-title a {
+    @apply text-lg font-bold;
   }
+  #pagefind-ui .pagefind-ui__result-nested .pagefind-ui__result-title a {
+    @apply text-base font-semibold;
+  }
+
   #pagefind-ui .pagefind-ui__result-excerpt {
-    @apply w-full px-4 pb-3 pl-10 text-left;
+    @apply text-zinc-600 dark:text-zinc-50;
   }
   #pagefind-ui .pagefind-ui__result-nested {
-    @apply relative w-full border-t border-zinc-400 text-left dark:border-white/20;
-  }
-  #pagefind-ui .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)):hover,
-  #pagefind-ui .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)):focus-within,
-  #pagefind-ui .pagefind-ui__result-nested:hover,
-  #pagefind-ui .pagefind-ui__result-nested:focus-within {
-    outline: 1px solid yellow;
-    @apply bg-zinc-100 dark:bg-black/60;
-  }
-
-  #pagefind-ui .pagefind-ui__result-link {
-    position: unset;
-  }
-
-  /* make the anchor expand to fill the container */
-  #pagefind-ui .pagefind-ui__result-link::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-  }
-
-  #pagefind-ui .pagefind-ui__result-link:hover {
-    text-decoration: none;
-  }
-
-  #pagefind-ui .pagefind-ui__result-nested .pagefind-ui__result-link::before {
-    content: unset;
-  }
-
-  #pagefind-ui .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)),
-  #pagefind-ui .pagefind-ui__result-nested {
-    position: relative;
-  }
-
-  #pagefind-ui .pagefind-ui__result-inner > .pagefind-ui__result-title::before {
-    content: '';
-    position: absolute;
-    inset-block: 0;
-    inset-inline-start: 8px;
-    width: 1.5rem;
-    background: var(--pagefind-ui-text);
-    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M9 10h1a1 1 0 1 0 0-2H9a1 1 0 0 0 0 2Zm0 2a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2H9Zm11-3V8l-6-6a1 1 0 0 0-1 0H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V9Zm-6-4 3 3h-2a1 1 0 0 1-1-1V5Zm4 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5v3a3 3 0 0 0 3 3h3v9Zm-3-3H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z'/%3E%3C/svg%3E")
-      center no-repeat;
-    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M9 10h1a1 1 0 1 0 0-2H9a1 1 0 0 0 0 2Zm0 2a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2H9Zm11-3V8l-6-6a1 1 0 0 0-1 0H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V9Zm-6-4 3 3h-2a1 1 0 0 1-1-1V5Zm4 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5v3a3 3 0 0 0 3 3h3v9Zm-3-3H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z'/%3E%3C/svg%3E")
-      center no-repeat;
+    @apply relative pl-4 pt-1;
   }
 
   #pagefind-ui .pagefind-ui__result-nested::before {
-    content: '';
-    position: absolute;
-    inset-block: 0;
-    inset-inline-start: 8px;
-    width: 2rem;
-    background: var(--pagefind-ui-text);
-    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' viewBox='0 0 16 1000' preserveAspectRatio='xMinYMin slice'%3E%3Cpath d='M8 0v1000m6-988H8'/%3E%3C/svg%3E")
-      0% 0% / 100% no-repeat;
+    content: '"';
+    @apply absolute -left-1 -top-1 text-4xl italic text-primary dark:text-zinc-300;
   }
-  #pagefind-ui .pagefind-ui__result-nested:last-child::before {
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 16 16'%3E%3Cpath d='M8 0v12m6 0H8'/%3E%3C/svg%3E");
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 16 16'%3E%3Cpath d='M8 0v12m6 0H8'/%3E%3C/svg%3E");
-  }
-  #pagefind-ui mark {
-    @apply bg-accent;
+
+  #pagefind-ui button.pagefind-ui__button {
+    @apply relative flex min-h-9 cursor-pointer items-center justify-center rounded-full border-2 border-zinc-400 bg-secondary px-8 text-zinc-50 no-underline transition-all hover:border-zinc-600 hover:shadow hover:contrast-125 focus:outline-2 focus:outline-accent focus:transition-none active:scale-95 active:shadow-inner dark:border-zinc-400/30 dark:hover:border-white/30;
   }
 </style>
