@@ -1,18 +1,18 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts.js';
 import Search from '@components/Search.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts.js';
 
 interface Props {
   title: string;
 }
 
-import BaseHead from '@components/BaseHead.astro';
 import Banner from '@components/Banner.astro';
-import SocialMedia from '@components/SocialMedia.astro';
+import BaseHead from '@components/BaseHead.astro';
 import Footer from '@components/Footer.astro';
+import SocialMedia from '@components/SocialMedia.astro';
 
-import { Menu, SmallMenu } from '@components/react/Menu.jsx';
 import { Header } from '@components/react/Header';
+import { Menu, SmallMenu } from '@components/react/Menu.jsx';
 
 import '../styles/tailwind.css';
 
@@ -82,7 +82,9 @@ const { title = 'UGRC' } = Astro.props;
     <Menu client:visible currentUri={pathname}>
       <Search />
     </Menu>
-    <SmallMenu client:visible currentUri={pathname} />
+    <SmallMenu client:visible currentUri={pathname}>
+      <Search />
+    </SmallMenu>
     <Banner title={title} />
     <slot />
     <footer>

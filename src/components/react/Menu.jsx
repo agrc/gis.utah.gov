@@ -1,14 +1,14 @@
-import React from 'react';
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import * as Dialog from '@radix-ui/react-dialog';
-import classNames from 'classnames';
 import { CaretDownIcon, HamburgerMenuIcon } from '@radix-ui/react-icons';
+import * as NavigationMenu from '@radix-ui/react-navigation-menu';
+import classNames from 'classnames';
+import React from 'react';
 
 export const Menu = ({ children, currentUri }) => {
   return (
-    <NavigationMenu.Root className="relative z-10 hidden h-12 min-h-12 w-screen items-center bg-zinc-100 lg:flex dark:bg-secondary">
-      <NavigationMenu.List className="m-0 flex flex-1 list-none p-1 text-center">
-        <NavigationMenu.Item value="home">
+    <NavigationMenu.Root className="relative z-10 hidden h-12 min-h-12 w-screen items-center bg-zinc-100 lg:flex dark:bg-secondary [&>div]:flex-1">
+      <NavigationMenu.List className="m-0 flex flex-1 list-none px-1 text-center">
+        <NavigationMenu.Item className="" value="home">
           <MenuLink href="/" currentUri={currentUri}>
             Home
           </MenuLink>
@@ -114,10 +114,11 @@ export const Menu = ({ children, currentUri }) => {
           </MenuLink>
         </NavigationMenu.Item>
 
-        {/* TODO: justify right */}
-        {children}
+        <NavigationMenu.Item className="flex flex-1 justify-end" value="site-search">
+          {children}
+        </NavigationMenu.Item>
 
-        <NavigationMenu.Indicator className="top-full z-10 flex h-1 items-end justify-center overflow-hidden bg-primary transition-all data-[state=visible]:animate-in data-[state=hidden]:animate-out data-[state=hidden]:fade-out data-[state=visible]:fade-in" />
+        <NavigationMenu.Indicator className="z-10 mt-[0.3rem] h-1 overflow-hidden rounded-t-full bg-primary transition-all data-[state=visible]:animate-in data-[state=hidden]:animate-out data-[state=hidden]:fade-out data-[state=visible]:fade-in" />
       </NavigationMenu.List>
 
       <div className="absolute left-3 top-full flex w-full perspective-[2000px]">
@@ -256,7 +257,7 @@ const MenuLink = ({ href, children, currentUri }) => {
       className={classNames(
         'custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100',
         {
-          'text-secondary before:absolute before:-top-2 before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
+          'text-secondary before:absolute before:-top-[0.6rem] before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
             isActive(href, currentUri),
         },
       )}
