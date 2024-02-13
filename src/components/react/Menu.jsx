@@ -127,14 +127,17 @@ export const Menu = ({ children, currentUri }) => {
     </NavigationMenu.Root>
   );
 };
-export const SmallMenu = ({ currentUri }) => (
+export const SmallMenu = ({ children, currentUri }) => (
   <Dialog.Root>
-    <div className="flex h-12 shrink-0 items-center bg-zinc-100 lg:hidden dark:bg-secondary">
-      <Dialog.Trigger asChild className="outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary">
-        <button className="ml-2 rounded-full p-1 outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary">
-          <HamburgerMenuIcon className="size-6 text-zinc-800 focus:outline-none dark:text-zinc-50" />
-        </button>
-      </Dialog.Trigger>
+    <div className="items-between flex h-12 shrink-0 bg-zinc-100 lg:hidden dark:bg-secondary">
+      <div className="flex flex-1 items-center justify-between">
+        <Dialog.Trigger asChild className="outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary">
+          <button className="ml-2 rounded-full p-1 outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary">
+            <HamburgerMenuIcon className="size-6 text-zinc-800 focus:outline-none dark:text-zinc-50" />
+          </button>
+        </Dialog.Trigger>
+        <span className="mr-2">{children}</span>
+      </div>
     </div>
     <Dialog.Portal>
       <Dialog.Overlay className="fixed inset-0 z-40 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=open]:fade-in" />
@@ -362,3 +365,18 @@ const MobileListItem = React.forwardRef(({ className, children, ...props }, forw
     </NavigationMenu.Link>
   </li>
 ));
+export const MenuRenderer = ({ children, currentUri }) => {
+  if (window.innerWidth < 1024) {
+    return (
+      <SmallMenu client:visible currentUri={currentUri}>
+        {children}
+      </SmallMenu>
+    );
+  } else {
+    return (
+      <Menu client:visible currentUri={currentUri}>
+        {children}
+      </Menu>
+    );
+  }
+};
