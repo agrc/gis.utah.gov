@@ -19,8 +19,7 @@
     </svg>
   </button>
   <dialog
-    class="mx-auto mt-20 h-max w-2/3 rounded-md border border-zinc-400 bg-zinc-200 text-left shadow backdrop:backdrop-blur-sm dark:bg-zinc-900"
-    style={{ maxHeight: 'calc(100% - 6rem)' }}
+    class="lg:max-h-[calc(100% - 6rem)] m-0 h-full max-h-full w-full max-w-full border border-zinc-400 bg-zinc-200 text-left shadow lg:mx-auto lg:mt-20 lg:h-max lg:w-2/3 lg:rounded-md lg:backdrop:backdrop-blur-sm dark:bg-zinc-900"
     aria-label="site search"
   >
     <div class="dialog-frame px-5 py-4">
@@ -93,24 +92,24 @@
         }
       });
 
-      window.addEventListener('DOMContentLoaded', () => {
-        const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
-        onIdle(async () => {
-          const { PagefindUI } = await import('@pagefind/default-ui');
-          new PagefindUI({
-            element: '#pagefind-ui',
-            // TODO: switch this to the correct path for the built app
-            bundlePath: '/dist/pagefind/',
-            showSubResults: true,
-            showImages: false,
-            resetStyles: false,
-          });
-
-          // use for testing
-          // openModal();
-          // this.querySelector('input')!.value = 'geocoding';
-          // this.querySelector('input')!.dispatchEvent(new Event('input'));
+      const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
+      onIdle(async () => {
+        const { PagefindUI } = await import('@pagefind/default-ui');
+        new PagefindUI({
+          element: '#pagefind-ui',
+          // TODO: switch this to the correct path for the built app
+          bundlePath: '/dist/pagefind/',
+          showSubResults: true,
+          showImages: false,
+          resetStyles: false,
         });
+
+        console.log('search initialized');
+
+        // use for testing
+        // openModal();
+        // this.querySelector('input')!.value = 'geocoding';
+        // this.querySelector('input')!.dispatchEvent(new Event('input'));
       });
     }
   }

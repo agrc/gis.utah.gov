@@ -12,7 +12,7 @@ import Footer from '@components/Footer.astro';
 import SocialMedia from '@components/SocialMedia.astro';
 
 import { Header } from '@components/react/Header';
-import { Menu, SmallMenu } from '@components/react/Menu.jsx';
+import { MenuRenderer } from '@components/react/Menu.jsx';
 
 import '../styles/tailwind.css';
 
@@ -79,12 +79,9 @@ const { title = 'UGRC' } = Astro.props;
         ></path>
       </svg>
     </Header>
-    <Menu client:visible currentUri={pathname}>
+    <MenuRenderer client:only currentUri={pathname}>
       <Search />
-    </Menu>
-    <SmallMenu client:visible currentUri={pathname}>
-      <Search />
-    </SmallMenu>
+    </MenuRenderer>
     <Banner title={title} />
     <slot />
     <footer>
