@@ -36,6 +36,9 @@
       "@partials/*": [
         "src/pages/_partials/*"
       ],
+      "@downloads/*": [
+        "src/downloads/*"
+      ],
     }
   }
 }

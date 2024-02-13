@@ -15,6 +15,8 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import logos from '@downloads/google_logos.zip?url';
+
 export const metadata: IMetadata = {
   title: 'Utah Google licensed imagery',
   description: `Statewide Google licensed 6-inch aerial photography. This data is available as a service or download for licensed Discover users.`,
@@ -71,8 +73,8 @@ const page: IPageMetadata = {
       <Alert title="Google citation requirements">
         <p>
           As part of our licenses with Google, you must provide proper attribution of any products created with their
-          imagery. Add one of the following <a href="/downloads/google_logos.zip"> logos (compressed zip file)</a> to your
-          published product to be in comp.
+          imagery. Add one of the following <a href={logos}> logos (compressed zip file)</a> to your published product to
+          be in comp.
         </p>
       </Alert>
       <div class="flex flex-col gap-2">
@@ -110,7 +112,7 @@ const page: IPageMetadata = {
         title="Common imagery issues"
         href="/documentation/discover/aerial-imagery/common-imagery-issues/"
         >Find solutions to some common issues using the latest imagery products provided by UGRC.</CardWithSmallLink
-      ><CardWithSmallLink title="Logos for citation" href="/downloads/google_logos.zip"
+      ><CardWithSmallLink title="Logos for citation" href={logos}
         >Dark and light Google logos for citation purposes.</CardWithSmallLink
       >
     </GridForYouMightLike>
