@@ -2576,8 +2576,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Senate Districts 2022 to 2032': {
     itemId: '5289f23d9e76421f89d9a9ef4864937a',
     name: 'Utah Senate Districts 2022 to 2032',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahSenateDistricts2022to2032 ',
+    openSgid: 'political.senate_districts_2022_to_2032',
     layerId: 0,
   },
   'Utah Health Small Statistical Areas 2020': {
