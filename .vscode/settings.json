@@ -1,7 +1,7 @@
 {
   "files.associations": {
     "*.html": "astro",
-    "*.mdx": "astro",
+    "*.mdx": "astro"
   },
   "cSpell.words": [
     "Adamsville",
@@ -216,6 +216,7 @@
     "plsspoint",
     "POLYLINE",
     "polylines",
+    "PRECINCTID",
     "prepend",
     "psap",
     "qgis",
@@ -250,6 +251,7 @@
     "storymaps",
     "SUBDIV",
     "subprecinct",
+    "subprecincts",
     "Sulphurdale",
     "Sunnyside",
     "tabindex",
@@ -297,6 +299,7 @@
     "utmap",
     "Veyo",
     "viewshed",
+    "VISTAID",
     "VRSCMR",
     "VRSCMRP",
     "VRSCMRX",
@@ -321,7 +324,7 @@
   ],
   "[astro]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 120,
+    "editor.wordWrapColumn": 120
   },
   "[markdown]": {
     "editor.fontSize": 14,
