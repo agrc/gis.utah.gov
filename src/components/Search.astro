@@ -1,8 +1,8 @@
 ---
-
+const bundlePath = import.meta.env.DEV ? '/dist/pagefind/' : `${import.meta.env.BASE_URL}pagefind/`;
 ---
 
-<site-search class="flex flex-col justify-center">
+<site-search class="flex flex-col justify-center" data-bundle-path={bundlePath}>
   <button data-open-modal>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -97,14 +97,11 @@
         const { PagefindUI } = await import('@pagefind/default-ui');
         new PagefindUI({
           element: '#pagefind-ui',
-          // TODO: switch this to the correct path for the built app
-          bundlePath: '/dist/pagefind/',
+          bundlePath: this.dataset.bundlePath,
           showSubResults: true,
           showImages: false,
           resetStyles: false,
         });
-
-        console.log('search initialized');
 
         // use for testing
         // openModal();
