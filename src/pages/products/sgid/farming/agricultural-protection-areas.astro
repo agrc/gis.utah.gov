@@ -16,62 +16,71 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Agricultural Protection Areas', // The ArcGIS Online title Goes Here (Utah blah blah)
+  title: 'Utah Agricultural Protection Areas',
   description: `Statewide Agricultural Protection Area boundaries for use in planning and land management.`,
   stewards: ['UDAF'],
-  type: ProductType.POLYGON, // This comes from the ProductType enum in types.ts
-  category: SgidCategory.FARMING, // This comes from the SgidCategory enum in types.ts
+  type: ProductType.POLYGON,
+  category: SgidCategory.FARMING,
 };
 
 const page: IPageMetadata = {
-  ...metadata, // this brings all the data from the metadata object above into the page object
-  // the update history is the complete set up updates. They are in the order of newest first. The 0 index item will be shown as the last update in the top of the page.
-  updateHistory: [
-    `July 2022`,
-  ],
-
-  // hub is optional but it is the primary download type for most datasets
-  // the dataPages object is the modified AGOLItems table from the internal SGID database
-  // You can view it in `/data/downloadMetadata.ts`
-  // The title from metadata.title above should be in the dataPages list.
-  // The object in dataPages is not complete and a few properties need to be added.
-  // 1. The feature service id. That is the name of the feature server created in our ArcGIS online account. You can view all of the services in https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services
-  // 2. Verify that the layer id for the feature service is 0. If it is not, modify it to match. In the feature server you will see Layers: AvalanchePaths (0). The 0 is the layer id.
-  // 3. The open sgid table name. Open the Open SGID and add the schema.table_name value to the object.
-  // delete this if it is unused
+  ...metadata,
+  updateHistory: [`July 2022`],
   hub: {
     ...dataPages[metadata.title],
   },
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application} config={{skipInDepth: true}}>
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
     <p>
-      This layer compiles Utah property parcels that have been included in an Agriculture Protection Area (APA) resolution. APAs are approved by the county in which they are located, and catalogued by Utah Department of Agriculture and Food. APAs provide legal protection for agricultural land uses and activities, it also provides notice to neighboring landowners that they border an APA and should expect normal agricultural activities to take place. Not every county has created APAs; Sanpete and Sevier Counties have created APAs, but they are currently not included in this dataset.
+      This layer compiles Utah property parcels that have been included in an Agriculture Protection Area (APA)
+      resolution. APAs are approved by the county in which they are located, and catalogued by Utah Department of
+      Agriculture and Food. APAs provide legal protection for agricultural land uses and activities, it also provides
+      notice to neighboring landowners that they border an APA and should expect normal agricultural activities to take
+      place. Not every county has created APAs; Sanpete and Sevier Counties have created APAs, but they are currently
+      not included in this dataset.
     </p>
   </Fragment>
 
-    <!-- the title for hub data is typically `Use the data` but it can be anything
-  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
     <HubDownloads {...page.hub} />
   </Section>
 
   <Section title={`More ${page.title} resources`} slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="General Agricultural Protection Areas Information" href="https://ag.utah.gov/farmers/conservation-division/ag-land-preservation/">The Utah Department of Agriculture and Food is working to raise public awareness about the values of protecting critical lands such as farmland, wetlands, and other open spaces. </CardWithPopularLink>
-      <CardWithPopularLink title="Utah Code Title 17, Chapter 41" href="https://le.utah.gov/xcode/Title17/Chapter41/17-41.html">Details for how Agriculture Protection Areas are created.</CardWithPopularLink>
+      <CardWithPopularLink
+        title="General Agricultural Protection Areas Information"
+        href="https://ag.utah.gov/farmers/conservation-division/ag-land-preservation/"
+        >The Utah Department of Agriculture and Food is working to raise public awareness about the values of protecting
+        critical lands such as farmland, wetlands, and other open spaces.
+      </CardWithPopularLink>
+      <CardWithPopularLink
+        title="Utah Code Title 17, Chapter 41"
+        href="https://le.utah.gov/xcode/Title17/Chapter41/17-41.html"
+        >Details for how Agriculture Protection Areas are created.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Water Related Land Use" href="/products/planning/water-related-land/">Water usage-related polygon map data that depicts the types and extent of irrigated crops.</CardWithSmallLink>
-      <CardWithSmallLink title="Utah Grazing Improvement Program" href="https://ag.utah.gov/?s=grazing+improvement+program">Utah grazing allotments.</CardWithSmallLink>
+      <CardWithSmallLink title="Water Related Land Use" href="/products/planning/water-related-land/"
+        >Water usage-related polygon map data that depicts the types and extent of irrigated crops.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Utah Grazing Improvement Program"
+        href="https://ag.utah.gov/?s=grazing+improvement+program">Utah grazing allotments.</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>
