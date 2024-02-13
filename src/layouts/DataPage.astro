@@ -1,11 +1,13 @@
 ---
+import BreadCrumbs from '@components/data/BreadCrumbs.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
+import type { SgidCategory } from '@models/products/sgid/types';
 
 interface Props {
   title: string;
   subTitle?: string;
-  category: string;
+  category: SgidCategory;
   actionUrl?: string;
   config?: {
     skipInDepth?: boolean;
@@ -16,6 +18,8 @@ const { title = 'UGRC', subTitle, category, actionUrl, config } = Astro.props;
 ---
 
 <Layout title={`SGID ${category.replaceAll('-', ' ').toLowerCase()}`}>
+  <BreadCrumbs category={category} product={title} />
+
   <Section
     title={title}
     subTitle={subTitle}
