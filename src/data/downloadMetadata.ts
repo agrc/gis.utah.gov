@@ -1771,8 +1771,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Judicial Districts': {
     itemId: 'c8c231440f444f9d881f0e546842dfac',
     name: 'Utah Judicial Districts',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'JudicialDistricts' ,
+    openSgid: 'political.judicial_districts',
     layerId: 0,
   },
   'Utah Ski Area Boundaries': {
