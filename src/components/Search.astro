@@ -48,54 +48,80 @@ const { suffix } = Astro.props;
 
 <script>
   class SiteSearch extends HTMLElement {
+    initialized = false;
+    dialog = this.querySelector('dialog')!;
+    dialogFrame = this.querySelector('.dialog-frame')!;
+    openBtn = this.querySelector('button[data-open-modal]')!;
+    closeBtn = this.querySelector('button[data-close-modal]')!;
+
     constructor() {
       super();
-      const openBtn = this.querySelector('button[data-open-modal]')!;
-      const closeBtn = this.querySelector('button[data-close-modal]')!;
-      const dialog = this.querySelector('dialog')!;
-      const dialogFrame = this.querySelector('.dialog-frame')!;
 
-      /** Close the modal if a user clicks on a link or outside of the modal. */
-      const onClick = (event: MouseEvent) => {
-        const isLink = 'href' in (event.target || {});
-        if (isLink || (document.body.contains(event.target as Node) && !dialogFrame.contains(event.target as Node))) {
-          closeModal();
-        }
-      };
+      this.onWindowResize();
 
-      const openModal = (event?: MouseEvent): void => {
-        dialog.showModal();
-        document.body.toggleAttribute('data-search-modal-open', true);
-        this.querySelector('input')!.focus();
-        event?.stopPropagation();
-        window.addEventListener('click', onClick);
-      };
+      window.addEventListener('resize', this.onWindowResize);
+    }
 
-      const closeModal = () => {
-        dialog.close();
-      };
+    onWindowResize = (): void => {
+      // prevent initializing two instances of the same component
+      if (window.innerWidth >= 1024 && this.dataset.suffix === 'large') {
+        this.init();
+      } else if (window.innerWidth < 1024 && this.dataset.suffix === 'small') {
+        this.init();
+      } else {
+        this.destroy();
+      }
+    };
 
-      openBtn.addEventListener('click', openModal as EventListener);
-      closeBtn.addEventListener('click', closeModal);
-      dialog.addEventListener('close', () => {
-        document.body.toggleAttribute('data-search-modal-open', false);
-        window.removeEventListener('click', onClick);
-      });
+    openModal = (event?: MouseEvent): void => {
+      this.dialog.showModal();
+      document.body.toggleAttribute('data-search-modal-open', true);
+      this.querySelector('input')!.focus();
+      event?.stopPropagation();
+      window.addEventListener('click', this.onPageClick);
+    };
 
+    closeModal = (): void => {
+      this.dialog.close();
+    };
+
+    onPageClick = (event: MouseEvent): void => {
+      // Close the modal if a user clicks on a link or outside of the modal.
+      const isLink = 'href' in (event.target || {});
+      if (
+        isLink ||
+        (document.body.contains(event.target as Node) && !this.dialogFrame.contains(event.target as Node))
+      ) {
+        this.closeModal();
+      }
+    };
+
+    onKeyDown = (event: KeyboardEvent): void => {
       // Listen for `/` and `cmd + k` keyboard shortcuts.
-      window.addEventListener('keydown', (e) => {
-        const isInput =
-          document.activeElement instanceof HTMLElement &&
-          (['input select textarea'].includes(document.activeElement.tagName.toLowerCase()) ||
-            document.activeElement.isContentEditable);
-        if (e.metaKey === true && e.key === 'k') {
-          dialog.open ? closeModal() : openModal();
-          e.preventDefault();
-        } else if (e.key === '/' && !dialog.open && !isInput) {
-          openModal();
-          e.preventDefault();
-        }
+      const isInput =
+        document.activeElement instanceof HTMLElement &&
+        (['input select textarea'].includes(document.activeElement.tagName.toLowerCase()) ||
+          document.activeElement.isContentEditable);
+      if (event.metaKey === true && event.key === 'k') {
+        this.dialog.open ? this.closeModal() : this.openModal();
+        event.preventDefault();
+      } else if (event.key === '/' && !this.dialog.open && !isInput) {
+        this.openModal();
+        event.preventDefault();
+      }
+    };
+
+    init = (): void => {
+      if (this.initialized) return;
+
+      // events
+      this.openBtn.addEventListener('click', this.openModal as EventListener);
+      this.closeBtn.addEventListener('click', this.closeModal);
+      this.dialog.addEventListener('close', () => {
+        document.body.toggleAttribute('data-search-modal-open', false);
+        window.removeEventListener('click', this.onPageClick);
       });
+      window.addEventListener('keydown', this.onKeyDown);
 
       const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
       onIdle(async () => {
@@ -113,8 +139,28 @@ const { suffix } = Astro.props;
         // this.querySelector('input')!.value = 'geocoding';
         // this.querySelector('input')!.dispatchEvent(new Event('input'));
       });
-    }
+
+      console.log('SiteSearch initialized', this.dataset.suffix, this.dataset.bundlePath);
+
+      this.initialized = true;
+    };
+
+    destroy = (): void => {
+      if (!this.initialized) return;
+
+      this.querySelector(`#pagefind-ui-${this.dataset.suffix}`)!.innerHTML = '';
+      this.closeModal();
+      this.openBtn.removeEventListener('click', this.openModal as EventListener);
+      this.closeBtn.removeEventListener('click', this.closeModal);
+      window.removeEventListener('click', this.onPageClick);
+      window.removeEventListener('keydown', this.onKeyDown);
+
+      this.initialized = false;
+
+      console.log('SiteSearch destroyed', this.dataset.suffix, this.dataset.bundlePath);
+    };
   }
+
   customElements.define('site-search', SiteSearch);
 </script>
 
