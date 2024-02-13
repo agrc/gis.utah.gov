@@ -6,7 +6,7 @@ import React from 'react';
 
 export const Menu = ({ children, currentUri }) => {
   return (
-    <NavigationMenu.Root className="relative z-10 hidden h-12 min-h-12 w-screen items-center bg-zinc-100 lg:flex dark:bg-secondary [&>div]:flex-1">
+    <NavigationMenu.Root className="relative z-10 h-12 min-h-12 w-screen items-center bg-zinc-100 lg:flex dark:bg-secondary [&>div]:flex-1">
       <NavigationMenu.List className="m-0 flex flex-1 list-none px-1 text-center">
         <NavigationMenu.Item className="" value="home">
           <MenuLink href="/" currentUri={currentUri}>
@@ -129,7 +129,7 @@ export const Menu = ({ children, currentUri }) => {
 };
 export const SmallMenu = ({ children, currentUri }) => (
   <Dialog.Root>
-    <div className="items-between flex h-12 shrink-0 bg-zinc-100 lg:hidden dark:bg-secondary">
+    <div className="items-between flex h-12 shrink-0 bg-zinc-100 dark:bg-secondary">
       <div className="flex flex-1 items-center justify-between">
         <Dialog.Trigger asChild className="outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary">
           <button className="ml-2 rounded-full p-1 outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary">
