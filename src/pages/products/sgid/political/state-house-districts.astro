@@ -1,0 +1,77 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'State House Districts 2022 to 2032',
+  description: `State House of Representatives Districts for 2022 to 2032`,
+  stewards: ['UGRC', `Lieutenant Governor's Office`],
+  type: ProductType.POLYGON,
+  category: SgidCategory.POLITICAL,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [
+    `2022`,
+  ],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      State House of Representatives Districts for 2022 to 2032
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>The Utah House of Representatives is comprised of 75 men and women elected to two-year terms. Utah House
+      Districts 2022 to 2032 shows the house districts that elected officials represent.</p>
+    <p>The <code>DIST</code> field contains the House district number.</p>
+    <p>The <code>COLOR4</code> field can be used in coloring districts using only 4 colors, usually with no adjacent districts
+      displayed with the same color. This does not always work for the House Districts due to the number and size of the districts.</p>
+    <p>Statewide Political District Boundaries are drawn by the Utah Legislature and adopted into state law.</p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="State Senate Districts" href="/products/sgid/political/state-senate-districts">Utah State Senate Districts 2022-2032</CardWithPopularLink>
+      <CardWithPopularLink title="US Congressional Districts" href="/products/sgid/political/us-congressional-districts">US House of Representatives district boundaries</CardWithPopularLink>
+      <CardWithPopularLink title="Previous Data: 2012-2022" href="https://opendata.gis.utah.gov/datasets/utah-house-districts-2012-to-2022">State House Districts from 2012-2022</CardWithPopularLink>
+      <CardWithPopularLink title="Previous Data: 2022-2012" href="https://opendata.gis.utah.gov/datasets/utah-house-districts-2002-to-2012">State House Districts from 2002-2012</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Utah State Legislature" href="https://le.utah.gov/">The Legislature's main site</CardWithSmallLink>
+      <CardWithSmallLink title="Utah House of Representatives" href="https://le.utah.gov/house2/index.html">The House of Representatives' main site</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

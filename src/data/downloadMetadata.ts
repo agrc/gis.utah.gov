@@ -1771,7 +1771,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Judicial Districts': {
     itemId: 'c8c231440f444f9d881f0e546842dfac',
     name: 'Utah Judicial Districts',
-    featureServiceId: 'JudicialDistricts' ,
+    featureServiceId: 'JudicialDistricts',
     openSgid: 'political.judicial_districts',
     layerId: 0,
   },
@@ -2380,8 +2380,8 @@ export const dataPages: DownloadMetadata = {
   'Utah House Districts 2022 to 2032': {
     itemId: 'f2a30099ab1f404db2c0dffbc2856746',
     name: 'Utah House Districts 2022 to 2032',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahHouseDistricts2022to2032',
+    openSgid: 'political.house_districts_2022_to_2032',
     layerId: 0,
   },
   'Utah Census Tracts 2020': {
