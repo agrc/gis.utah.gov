@@ -24,7 +24,6 @@ export default defineConfig({
       name: 'pagefind',
       hooks: {
         'astro:build:done': ({ logger }) => {
-          // TODO: figure out how to ignore `published: false` blog posts
           execSync('npx pagefind --site dist', {
             stdio: [process.stdin, process.stdout, process.stderr],
           });
