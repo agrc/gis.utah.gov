@@ -1,0 +1,76 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah US Congress Districts 2022 to 2032',
+  description: `Utah Congressional Districts for 2022 to 2032`,
+  stewards: ['UGRC', `Lieutenant Governor's Office`],
+  type: ProductType.POLYGON,
+  category: SgidCategory.POLITICAL,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [
+    `2022: Redistricting after 2020 Census`,
+    `2012: Redistricting after 2010 Census`,
+    `2002: Redistricting after 2000 Census`,  
+  ],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      US House of Representatives Districts for Utah for 2022 to 2032
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>U.S. Congress Districts 2022 to 2032 shows the U.S. Congressional Districts that elected officials represent.</p>
+    <p>The <code>DISTRICT</code> field contains the U.S. Congress district number.</p>
+    <p>Statewide political district boundaries are drawn by the Utah Legislature after each decenial census and adopted into state law.</p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah House Districts" href="/products/sgid/political/state-house-districts">Utah State House of Representatives Districts 2022-2032</CardWithPopularLink>
+      <CardWithPopularLink title="State Senate Districts" href="/products/sgid/political/state-senate-districts">Utah State Senate Districts 2022-2032</CardWithPopularLink>
+      <CardWithPopularLink title="Previous Data: 2012-2022" href="https://opendata.gis.utah.gov/datasets/utah-us-congress-districts-2012-to-2022">State House Districts from 2012-2022</CardWithPopularLink>
+      <CardWithPopularLink title="Previous Data: 2002-2012" href="https://opendata.gis.utah.gov/datasets/utah-us-congress-districts-2002-to-2012/explore">State House Districts from 2002-2012</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="United States Congress" href="https://www.congress.gov/">The granddaddy of them all</CardWithSmallLink>
+      <CardWithSmallLink title="Utah State Legislature" href="https://le.utah.gov/">The Legislature's main site</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
