@@ -5,11 +5,12 @@ interface Props {
   slug: string;
   date: Date;
   includeYear?: boolean;
+  estimatedReadingTime?: string;
 }
 
 import FormattedDate from '../FormattedDate.astro';
 
-const { title, description, slug, date, includeYear } = Astro.props;
+const { title, description, slug, date, includeYear, estimatedReadingTime } = Astro.props;
 ---
 
 <div class="rounded-lg border border-zinc-400 bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70">
@@ -19,7 +20,10 @@ const { title, description, slug, date, includeYear } = Astro.props;
     </div>
     <div class="flex flex-1 pl-6">
       <div class="flex flex-1 flex-col">
-        <p class="line-clamp-1 grow font-semibold text-primary dark:text-zinc-200">{title}</p>
+        <p class="line-clamp-1 grow font-semibold text-primary dark:text-zinc-200">
+          {title}
+          <span class="text-sm">({estimatedReadingTime})</span>
+        </p>
         <p class="line-clamp-2 grow text-zinc-600 dark:text-zinc-300">{description}</p>
       </div>
       <div class="hidden self-center text-4xl text-primary sm:block dark:text-zinc-300">&#x2192;</div>

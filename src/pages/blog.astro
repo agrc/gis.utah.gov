@@ -1,12 +1,20 @@
 ---
+import CardWithDate from '@components/page/CardWithDate.astro';
+import GridForLatestNews from '@components/page/GridForLatestNews.astro';
 import Layout from '@layouts/Prose.astro';
 import { getCollection } from 'astro:content';
-import GridForLatestNews from '@components/page/GridForLatestNews.astro';
-import CardWithDate from '@components/page/CardWithDate.astro';
+import getReadingTime from 'reading-time';
 
 const posts = (await getCollection('blog'))
   .filter((post) => post.data.published)
-  .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf());
+  .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf())
+  .map((post) => ({
+    ...post,
+    data: {
+      ...post.data,
+      estimatedReadTime: getReadingTime(post.body).text,
+    },
+  }));
 const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
 ---
 
@@ -17,9 +25,10 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
         <CardWithDate
           includeYear
           title={post.data.title}
-          description={post.body.replaceAll(regex, '').slice(0, 160) ?? 'a blot post'}
+          description={post.body.replaceAll(regex, '').slice(0, 160) ?? 'a blog post'}
           date={post.data.date}
           slug={post.slug}
+          estimatedReadingTime={post.data.estimatedReadTime}
         />
       ))
     }
