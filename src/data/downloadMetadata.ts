@@ -2429,8 +2429,8 @@ export const dataPages: DownloadMetadata = {
   'Utah School Board Districts 2022 to 2032': {
     itemId: 'ebb7b8e8a0104b448d3bbf3ee82a5580',
     name: 'Utah School Board Districts 2022 to 2032',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahSchoolBoardDistricts2022to2032 ',
+    openSgid: 'political.school_board_districts_2022_to_2032',
     layerId: 0,
   },
   'Utah Beaver County Parcels LIR': {
