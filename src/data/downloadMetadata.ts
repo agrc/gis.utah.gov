@@ -1337,8 +1337,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Alluvial Fans': {
     itemId: '9bdcd03de4b64cffae7e10b58e07757e',
     name: 'Utah Alluvial Fans',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'AlluvialFans',
+    openSgid: 'geoscience.alluvial_fans',
     layerId: 0,
   },
   'Utah Minerals': {

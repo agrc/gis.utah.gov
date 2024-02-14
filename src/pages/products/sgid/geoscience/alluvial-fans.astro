@@ -1,0 +1,89 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Alluvial Fans', 
+  description: `Active Alluvial Fan designations for Utah. Data represents a combination of existing geologic mapping 1964 – 2013, USGS Quadrangles 1:24,000, 2-ft contour data, historical and modern aerial photography 1937 – 2017, UGS flood and landslide hazard mapping, FEMA National Flood Hazard Layer, and field investigation with photos. The primary risk classification used are high and medium based on the presence of population at risk. Data is supported by a full study report. More detailed information on alluvial fan hazards in Utah is available from the Division of Emergency Management.`,
+  stewards: ['Utah Division of Emergency Management (DEM)'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.GEOSCIENCE,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`2019`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout 
+  title={page.title} 
+  subTitle={page.updateHistory[0]} 
+  category={page.category} 
+  actionUrl={page.application}>
+  config={{ skipInDepth: true }}
+
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      What is an Alluvial Fan?
+
+      Alluvial fans are created as flowing water interacts with mountains, hills, or steep canyon walls. Silt, sand, gravel, boulders, and woody debris can be deposited over time by powerful rivers or small creeks. The top, or narrow point, of the alluvial fan is called the “apex,” and the wider portion is called the “apron” or “cone.” Alluvial fans can be small or large, depending on the historical water flows. Alluvial fans formed on a steep slope, are narrow, and thus more cone than fan-shaped.
+      
+      Alluvial fan landforms pose unique flooding hazards that are not present on non-fan landforms (e.g. rivers, streams, whose flooding hazards are commonly defined through Federal Emergency Management Agency (FEMA) regulatory floodplains). FEMA defines alluvial fan flooding as “Flooding occurring on the surface of an alluvial fan or similar landform which originates at the apex and is characterized by high-velocity flows; active processes of erosion, sediment transport, and deposition; and unpredictable flowpaths. Alluvial fan flooding is depicted on a Flood Insurance Rate Map (FIRM) as Zone AO, with a flood depth and velocity” (FEMA, 2003). Alluvial fans are generally located at a topographic apex between a mountain front and the adjacent piedmont landform. Properly identifying alluvial fan landforms is a critical first step in understanding flood risk to downstream development.
+      
+      Active alluvial fan landforms are defined by location, composition, and flooding characteristics. They are located at a topographic break between a mountain front and the piedmont, they are composed of unconsolidated alluvium, and exhibit flooding characteristics described previously. Inactive alluvial fan landforms are geologically older and are no longer subject to active fan flooding processes. As they age, inactive alluvial fans develop their own internal, tributary drainage networks that exhibit riverine flooding characteristics.
+      
+      It is recommended that the alluvial fan landform GIS layer and supporting data be used by regulatory officials (federal, state, local, and tribal) when evaluating development and flooding hazards in their jurisdictions.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+       title="UT Alluvial Fan Mapping Methodology" 
+       href="https://drive.google.com/open?id=1aUZrCcorPBe0DBVWzpZkaporDsIpoJOT"
+       >USACE 2019 Alluvial Fan Study Methology
+      </CardWithPopularLink>
+      <CardWithPopularLink 
+       title="Active Alluvial Fan Landform Inventory Report" 
+       href="https://drive.google.com/open?id=18J-3_GPHHGFo_TGosRuiPGWU0ktCq4AD"
+       >Active Alluvial Fan Landform Inventory Report - Wasatch and Oquirrh Ranges</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+       title="Geoscience"
+       href="/products/sgid/geoscience">Geoscience page</CardWithSmallLink
+      >
+      <CardWithSmallLink 
+       title="UGS Hazards" 
+       href="https://geology.utah.gov/apps/hazards/">Utah Geologic Hazards Portal</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
