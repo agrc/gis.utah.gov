@@ -4,6 +4,8 @@ import GridForLatestNews from '@components/page/GridForLatestNews.astro';
 import FullWidth from '@layouts/FullWidth.astro';
 import getReadingTimeFromMarkdown from '@utils/readingTime';
 import { getCollection } from 'astro:content';
+import { fromMarkdown } from 'mdast-util-from-markdown';
+import { toString } from 'mdast-util-to-string';
 
 const posts = (await getCollection('blog'))
   .filter((post) => post.data.published)
@@ -15,7 +17,6 @@ const posts = (await getCollection('blog'))
       estimatedReadTime: getReadingTimeFromMarkdown(post.body),
     },
   }));
-const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
 ---
 
 <FullWidth title="From the blog">
@@ -25,7 +26,7 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
         <CardWithDate
           includeYear
           title={post.data.title}
-          description={post.body.replaceAll(regex, '').slice(0, 200) ?? 'a blog post'}
+          description={toString(fromMarkdown(post.body)).slice(0, 200) ?? 'a blog post'}
           date={post.data.date}
           slug={post.slug}
           estimatedReadingTime={post.data.estimatedReadTime}
