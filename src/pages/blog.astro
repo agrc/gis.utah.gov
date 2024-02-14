@@ -2,8 +2,8 @@
 import CardWithDate from '@components/page/CardWithDate.astro';
 import GridForLatestNews from '@components/page/GridForLatestNews.astro';
 import Layout from '@layouts/Prose.astro';
+import getReadingTimeFromMarkdown from '@utils/readingTime';
 import { getCollection } from 'astro:content';
-import getReadingTime from 'reading-time';
 
 const posts = (await getCollection('blog'))
   .filter((post) => post.data.published)
@@ -12,7 +12,7 @@ const posts = (await getCollection('blog'))
     ...post,
     data: {
       ...post.data,
-      estimatedReadTime: getReadingTime(post.body).text,
+      estimatedReadTime: getReadingTimeFromMarkdown(post.body),
     },
   }));
 const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
