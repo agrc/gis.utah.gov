@@ -1,9 +1,20 @@
 ---
 import BlogPost from '@layouts/BlogPost.astro';
+import Layout from '@layouts/FullWidth.astro';
 import getReadingTimeFromMarkdown from '@utils/readingTime';
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { execSync } from 'child_process';
 
 export async function getStaticPaths() {
+  const getLastModifiedTime = (path: string) => {
+    if (import.meta.env.DEV) {
+      return new Date();
+    }
+
+    const updated = execSync(`git log -1 --pretty="format:%cI" ./src/content/blog/${path}`).toString();
+
+    return !updated ? new Date() : new Date(updated);
+  };
   const posts = await getCollection('blog');
   return posts
     .filter((post) => post.data.published)
@@ -14,16 +25,19 @@ export async function getStaticPaths() {
         data: {
           ...post.data,
           estimatedReadTime: getReadingTimeFromMarkdown(post.body),
+          lastUpdated: getLastModifiedTime(post.id),
         },
       },
     }));
 }
-type Props = CollectionEntry<'blog'>;
+type BlogPost = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data}>
-  <Content />
-</BlogPost>
+<Layout title="From the blog">
+  <BlogPost {...post.data}>
+    <Content />
+  </BlogPost>
+</Layout>
