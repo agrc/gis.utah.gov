@@ -1,0 +1,108 @@
+---
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+
+const location = '/src/images/product-discover'
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-discover/*.{svg,png}');
+
+const quickLinks = [
+  {
+    name: "Connecting your client",
+    anchor: "connecting-your-client",
+  },
+  {
+    name: "Licensed imagery",
+    anchor: "licensed-imagery",
+  },
+  {
+    name: "Coordinate systems and accuracy",
+    anchor: "coordinate-systems-and-accuracy",
+  },
+  {
+    name: "Common problems and issues",
+    anchor: "common-problems-and-issues",
+  },
+  {
+    name: "Web map printing with licensed imagery",
+    anchor: "web-map-printing-with-licensed-imagery",
+  },
+];
+
+---
+<Layout title="Discover">
+  <QuickLinks links={quickLinks} slot="quick-links" />
+  <Section stripe>
+    <Image
+    slot="image"
+    src={images[`${location}/discover-logo.svg`]()}
+    loading="eager"
+    alt="Discover logo"
+    class="w-full max-w-[400px] rounded-2xl"
+  />
+  <p>
+    Discover allows you to connect to streaming tile services of our base maps and imagery, freeing you from downloading and storing massive amounts of data. They also work great in web maps as background layers for your data.
+  </p>
+  </Section>
+  <Section title = "Connecting your client" actionUrl="/documentation/discover/clients" actionText='Get Connected'>
+    <Image
+    slot="image"
+    src={images[`${location}/get-connected.svg`]()}
+    alt="Connect to Discover"
+    class="w-full max-w-[400px] rounded-2xl"
+  />
+    <p>
+      You can connect to Discover using a variety of desktop and web clients, including QGIS, ArcGIS Pro, AutoCAD, and ArcGIS Online.
+    </p>
+  </Section>
+  <Section title = "Licensed imagery" actionUrl="/documentation/discover/licensed-imagery" actionText='See who qualifies' stripe>
+    <Image
+    slot="image"
+    src={images[`${location}/licensed-access.svg`]()}
+    alt="Secure access to licensed imagery"
+    class="w-full max-w-[400px] rounded-2xl"
+  />
+    <p>
+      Licensed Discover access includes our high-res imagery licensed from Hexagon and Google. These services have their own considerations and restrictions and are only available to users associated with the State or its entities.
+    </p>
+  </Section> 
+  <Section title = "Coordinate systems and accuracy" actionUrl="/documentation/discover/coord-system" actionText='Check your CRS'>
+    <Image
+    slot="image"
+    src={images[`${location}/accuracy.svg`]()}
+    alt="Getting your data accurate"
+    class="w-full max-w-[400px] rounded-2xl"
+  />
+    <p>
+      Discover services use the Web Mercator WGS84 projection (wkid/EPSG 3857). You may need to transform or project your data to match. 
+    </p>
+    <p>
+      Discover hosts several different imagery services, each with its own accuracy and resolution.
+    </p>
+  </Section>
+  <Section title="Common problems and issues" actionUrl="/documentation/discover/problems" actionText="Get help" stripe>
+    <Image
+    slot="image"
+    src={images[`${location}/problems.svg`]()}
+    alt="Solving problems"
+    class="w-full max-w-[400px] rounded-2xl"
+  />
+    <p>
+      Discover uses the common and open source WMS and WMTS standards, but you may still run into some problems.
+    </p>
+  </Section>
+  <Section title = "Web map printing with licensed imagery" actionUrl="/documentation/discover/printing" actionText='Print securely' >
+    <Image
+    slot="image"
+    src={images[`${location}/printing.svg`]()}
+    alt="printing maps with licensed imagery"
+    class="w-full max-w-[400px] rounded-2xl"
+  />
+    <p>
+      Licensed imagery in a public-facing web map requires a locked-down link, which breaks the standard web map print services. We've built a serverless print proxy you can deploy in the Google Cloud Platform to enable printing without exposing your public links.
+    </p>
+  </Section>
+</Layout>
