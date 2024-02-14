@@ -9,8 +9,7 @@ const { href, type = 'normal' } = Astro.props;
 <a
   href={href}
   class:list={['inline-flex items-center gap-x-1', type === 'custom' ? 'custom-style' : null]}
-  target="__blank"
-  rel="noreferrer"
+  rel="nofollow"
 >
   <span>
     <slot />
