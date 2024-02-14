@@ -1,35 +1,50 @@
 ---
 import FormattedDate from '@components/FormattedDate.astro';
-import Layout from '@layouts/Prose.astro';
 import type { CollectionEntry } from 'astro:content';
 
 type BlogPost = CollectionEntry<'blog'>['data'];
 interface Props extends BlogPost {
   estimatedReadTime?: string;
+  lastUpdated: Date;
 }
 
-const { title, date: pubDate, updated, estimatedReadTime } = Astro.props;
+const { title, date: pubDate, updated, estimatedReadTime, lastUpdated } = Astro.props;
 ---
 
-<Layout title={title}>
-  <article>
-    <div class="prose">
-      <div class="title">
-        <div class="date">
-          <FormattedDate date={pubDate} style="long" />
-          {
-            updated && (
-              <div class="last-updated-on">
-                Last updated on <FormattedDate date={updated} style="long" />
-              </div>
-            )
-          }
-          <div class="flex justify-center text-sm text-primary/80 dark:text-accent">{estimatedReadTime}</div>
+<article class="flex justify-center px-6 pb-16 pt-4 lg:px-0 lg:pt-10 dark:text-zinc-300">
+  <div class="flex max-w-3xl flex-1 flex-col gap-6">
+    <div class="mx-auto max-w-3xl text-center md:max-w-screen-lg">
+      <h1 class="pb-4">{title}</h1>
+      <div
+        class="flex flex-col gap-x-2 border-t border-primary/30 pt-3 text-sm font-medium md:flex-row dark:border-white/30"
+      >
+        <div class="flex justify-center gap-1 text-sm">
+          <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Published</span>
+          <span>·</span>
+          <span class="whitespace-nowrap uppercase">
+            <FormattedDate date={pubDate} style="long" />
+          </span>
         </div>
-        <h1>{title}</h1>
-        <hr />
+        {
+          lastUpdated && (
+            <div class="flex justify-center gap-1 text-sm">
+              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Last modified</span>
+              <span>·</span>
+              <span class="whitespace-nowrap uppercase">
+                <FormattedDate date={lastUpdated} style="long" />
+              </span>
+            </div>
+          )
+        }
+        <div class="flex justify-center gap-1 text-sm">
+          <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Read time</span>
+          <span>·</span>
+          <span class="whitespace-nowrap">
+            {estimatedReadTime}
+          </span>
+        </div>
       </div>
-      <slot />
     </div>
-  </article>
-</Layout>
+    <slot />
+  </div>
+</article>
