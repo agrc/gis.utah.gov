@@ -1,0 +1,151 @@
+---
+// import QuickLinks from '@components/page/QuickLinks.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import NumberedListItem from '@components/page/NumberedListItem.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Code } from 'astro:components';
+
+---
+<Layout title="Connecting Clients">
+  <Section stripe>
+  <p>
+    You can connect to Discover using a variety of desktop and web clients, including QGIS, ArcGIS Pro, AutoCAD, and ArcGIS Online. These instructions generally apply to the WMTS links, but the WMS process is usually similar (if not identical).
+  </p>
+  <p>
+    If your client asks for authentication info, you can leave that section blank. Discover handles authentication through the unique links sent to each user.
+  </p>
+  </Section>
+  <Section title = "QGIS" >
+    <p>
+      <ExternalLink href="https://qgis.org/en/site/">QGIS</ExternalLink> is a fully-featured open source desktop GIS application that makes it easy to use Discover services alongside many other data layers.
+    </p>
+    <ol class="list-decimal list-inside">
+      <NumberedListItem>Go to Layer -> Add Layer -> Add WMS/WMTS Layer... (opens the Data Source Manager)</NumberedListItem>
+      <NumberedListItem>Click the New button at the top to add a new connection</NumberedListItem>
+      <NumberedListItem>Choose a name for the Name field ("UGRC Discover" works great)</NumberedListItem>
+      <NumberedListItem>Enter your WMTS link into the URL field</NumberedListItem>
+      <NumberedListItem>Leave everything else as it is and click OK</NumberedListItem>
+      <NumberedListItem>Click Close on the Data Source Manager</NumberedListItem>
+      <NumberedListItem>Expand the WMS/WMTS item in the Browser panel to see the Discover server with the name you provided. Expand the server item to browse the layers and add them to your map.</NumberedListItem>
+    </ol>
+  </Section>
+  <Section title="ArcGIS Pro" stripe>
+    <p>
+      For ArcGIS Pro, you'll add Discover as a new WMTS server and then browse the services available. Check out <ExternalLink href="https://pro.arcgis.com/en/pro-app/latest/help/data/services/add-wmts-services.htm">Esri's documentation</ExternalLink> for the most up-to-date instructions.
+    </p>
+  </Section>
+  <Section title="ArcGIS Online" >
+    <p>
+      You can <ExternalLink href="https://doc.arcgis.com/en/arcgis-online/manage-data/add-item-from-url.htm">add</ExternalLink> individual layers within Discover as items in ArcGIS Online, making them available in both web maps and ArcGIS Pro through your organization's content.
+    </p>
+    <p>
+      You can also <ExternalLink href="https://doc.arcgis.com/en/arcgis-online/create-maps/add-layers-from-url.htm#ESRI_SECTION1_0255B1BD71534C53A5CF2F01092BC99A">add WMTS layers</ExternalLink> directly to web maps.
+    </p>
+    <p><strong>Remember!</strong> If you want to use licensed links for the high-res imagery in a publicly-available webmap, you need to request a set of locked-down links.</p>
+  </Section>
+  <Section title="CAD Programs" stripe>
+    <p>
+      Check out <ExternalLink href="https://help.autodesk.com/view/MAP/2023/ENU/?guid=GUID-A9F620AD-6B9A-487D-9B33-7D365307D571">AutoCAD's documentation</ExternalLink> for adding Discover layers via WMS. You may be able to use WMTS as well, but we've not seen good success with it so far due to AutoCAD's implementation of the WMTS protocol. 
+    </p>
+    <p>
+      For other CAD programs, please check the product's documentation for WMS or WMTS support.
+    </p>
+  </Section>
+  <Section title="Custom Web Apps" >
+    <p>
+      The <ExternalLink href="https://developers.arcgis.com/javascript/">Esri JavaScript API</ExternalLink> provides a class for interacting with these services, called a <ExternalLink href="https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html">WebTileLayer</ExternalLink>. Using this class is as simple as passing in the URL to the WMTS service with the appropriate level, column, and row tokens. For example:
+    </p>
+    <Code lang="js" code= 
+    `
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/layers/WebTileLayer"
+    ], function (Map, MapView, WebTileLayer) {
+      const map = new Map();
+    
+      const layer = new WebTileLayer({
+        urlTemplate:
+          "https://discover.agrc.utah.gov/login/path/bottle-apple-crater-oberon/tiles/lite_basemap/{level}/{col}/{row}"
+      });
+    
+      map.add(layer);
+    
+      const view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-111.5, 40],
+        zoom: 11
+      });
+    });`
+    />
+    <p>
+      There is one caveat to using discover services with WebTileLayer; it does not store metadata about the service. The piece of metadata that will affect developers the most is the cache level information. WebTileLayer's cache levels are based on a suggested set that is common amongst popular tile providers. The suggested set uses 0 through 19. If the base map you are using deviates from these levels (most of our base maps are 0-19 but <a href="/documentation/developer/base-maps/basemap-scales">there are a few exceptions</a>), you will be responsible for setting those values or you will not be given the UI to see the full tile set. As you can see in the sample below it takes a fair amount of work.
+    </p>
+    <Code lang="js" code=
+    `
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/layers/WebTileLayer",
+      "esri/layers/support/LOD",
+      "esri/layers/support/TileInfo"
+    ], function (Map, MapView, WebTileLayer, LOD, TileInfo) {
+      const tilesize = 256;
+      const earthCircumference = 40075016.685568;
+      const inchesPerMeter = 39.37;
+      const initialResolution = earthCircumference / tilesize;
+    
+      const dpi = 96;
+      const maxLevel = 12;
+      const squared = 2;
+      const lods = [];
+      for (let level = 0; level <= maxLevel; level++) {
+        const resolution = initialResolution / Math.pow(squared, level);
+        const scale = resolution * dpi * inchesPerMeter;
+        lods.push(
+          new LOD({
+            level: level,
+            scale: scale,
+            resolution: resolution
+          })
+        );
+      }
+    
+      const tileInfo = {
+        dpi: dpi,
+        size: tilesize,
+        origin: {
+          x: -20037508.342787,
+          y: 20037508.342787
+        },
+        spatialReference: {
+          wkid: 3857
+        },
+        lods: lods
+      };
+      const map = new Map();
+    
+      const layer = new WebTileLayer({
+        urlTemplate:
+          "https://discover.agrc.utah.gov/login/path/your-quad-word-here/tiles/lite_basemap/{level}/{col}/{row}",
+        tileInfo
+      });
+    
+      map.add(layer);
+    
+      const view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-111.5, 40],
+        zoom: 11
+      });
+    });
+    ` />
+    <p>
+      UGRC has a widget called <ExternalLink href="https://www.npmjs.com/package/@ugrc/layer-selector">layer-selector</ExternalLink> that handles these issues as well as makes working with base maps more streamlined. It's main purpose is to provide users the ability to quickly switch between base maps and toggle associated overlays.
+    </p>
+    </Section>
+</Layout>

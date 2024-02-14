@@ -10,7 +10,11 @@ const location = '/src/images/product-discover'
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-discover/*.{svg,png}');
 
 const quickLinks = [
-  {
+{
+    name: "Discover basics",
+    anchor: "discover-basics",
+  },
+{
     name: "Connecting your client",
     anchor: "connecting-your-client",
   },
@@ -35,7 +39,7 @@ const quickLinks = [
 ---
 <Layout title="Discover">
   <QuickLinks links={quickLinks} slot="quick-links" />
-  <Section stripe>
+  <Section stripe actionUrl="/documentation/discover/basics" actionText='Learn the basics'>
     <Image
     slot="image"
     src={images[`${location}/discover-logo.svg`]()}
@@ -45,6 +49,9 @@ const quickLinks = [
   />
   <p>
     Discover allows you to connect to streaming tile services of our base maps and imagery, freeing you from downloading and storing massive amounts of data. They also work great in web maps as background layers for your data.
+  </p>
+  <p>
+    Discover serves data as either a single full raster (WMS) or a set of pre-rendered raster tiles (WMTS). WMTS should be used wherever possible to access any of our base maps or imagery services.
   </p>
   </Section>
   <Section title = "Connecting your client" actionUrl="/documentation/discover/clients" actionText='Get Connected'>
