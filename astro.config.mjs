@@ -1,11 +1,12 @@
 import mdx from '@astrojs/mdx';
+import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
+import metaTags from 'astro-meta-tags';
 import { defineConfig } from 'astro/config';
 import { execSync } from 'child_process';
-
-import react from '@astrojs/react';
-import metaTags from 'astro-meta-tags';
+import rehypeExternalLinks from 'rehype-external-links';
+import externalLinkConfig from './plugins/externalLinks';
 
 // https://astro.build/config
 export default defineConfig({
@@ -32,4 +33,7 @@ export default defineConfig({
     },
     metaTags(),
   ],
+  markdown: {
+    rehypePlugins: [[rehypeExternalLinks, externalLinkConfig]],
+  },
 });
