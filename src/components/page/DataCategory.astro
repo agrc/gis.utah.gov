@@ -209,7 +209,12 @@ const { element, name, label, key } = Astro.props;
 ---
 
 <p class="whitespace-nowrap">{label || name}</p>
-<svg class="size-24 border border-primary dark:border-white/70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+<svg
+  class="size-24 border border-primary dark:border-white/70"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 90 90"
+  aria-hidden="true"
+>
   <rect class="size-24" style={`fill:${metadata[key].fill}`}></rect>
   <g class="opacity-40">
     <path
