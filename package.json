@@ -50,6 +50,8 @@
     ]
   },
   "devDependencies": {
+    "mdast-util-from-markdown": "^2.0.0",
+    "mdast-util-to-string": "^4.0.0",
     "reading-time": "^1.5.0"
   }
 }
