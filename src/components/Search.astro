@@ -8,7 +8,7 @@ const { suffix } = Astro.props;
   data-bundle-path={bundlePath}
   data-suffix={suffix}
 >
-  <button data-open-modal>
+  <button data-open-modal aria-label="open site search dialog">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -30,7 +30,7 @@ const { suffix } = Astro.props;
     <div data-dialog-frame class="px-5 py-4">
       <h3 class="mb-2 text-left text-zinc-700 dark:text-zinc-300">Search our website</h3>
       <div id={`pagefind-ui-${suffix}`}></div>
-      <button class="absolute right-2 top-2" data-close-modal>
+      <button class="absolute right-2 top-2" data-close-modal aria-label="close site search dialog">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
