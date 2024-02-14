@@ -15,8 +15,7 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 import { dataPages } from '@data/downloadMetadata';
-
-const friendlyTitle = 'Utah District Combination Areas';
+import { removeDateRange } from '@utils/data';
 
 export const metadata: IMetadata = {
   title: 'Utah District Combination Areas 2022',
@@ -35,12 +34,18 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={friendlyTitle} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout
+  title={removeDateRange(page.title)}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
     <p>
-      The unique combination of Utah's state legislative, school board, and congressional districts defined after every decennial census.
+      The unique combination of Utah's state legislative, school board, and congressional districts defined after every
+      decennial census.
     </p>
   </Fragment>
 

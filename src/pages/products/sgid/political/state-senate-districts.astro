@@ -15,8 +15,7 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 import { dataPages } from '@data/downloadMetadata';
-
-const friendlyTitle = 'Utah Senate Districts';
+import { removeDateRange } from '@utils/data';
 
 export const metadata: IMetadata = {
   title: 'Utah Senate Districts 2022 to 2032',
@@ -39,7 +38,12 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={friendlyTitle} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout
+  title={removeDateRange(page.title)}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

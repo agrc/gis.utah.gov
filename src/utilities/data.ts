@@ -18,3 +18,7 @@ export const convertProductType = (type: ProductType) => {
       return type;
   }
 };
+
+export const removeDateRange = (title: string) => {
+  return title.replace(/\s\d{4}( to \d{4})?$/, '').trim();
+}
