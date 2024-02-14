@@ -60,6 +60,7 @@ export enum ProductType {
   POLYLINE,
   POLYGON,
   WEB_SERVICE,
+  WEB_MAP,
   DESKTOP_APPLICATION,
   DISCOVER_SERVICE,
 }
