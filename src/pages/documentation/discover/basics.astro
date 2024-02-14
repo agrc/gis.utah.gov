@@ -1,0 +1,117 @@
+---
+// import QuickLinks from '@components/page/QuickLinks.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+
+---
+<Layout title="Discover Basics">
+  <Section stripe>
+  <p>
+    Discover serves raster data (raster base maps and aerial imagery) as web services using the <ExternalLink href="https://www.ogc.org/standard/wms/">WMS</ExternalLink> and <ExternalLink href="https://www.ogc.org/standard/wmts/">WMTS</ExternalLink> standards from the Open Geospatial Consortium (OGC).
+  </p>
+  </Section>
+  <Section title="Access levels and links">
+    <p>
+      We have two different levels of access to Discover: general and licensed. General access is available to anyone and includes all our base maps and our publicly-available imagery (including the NAIP imagery). These services are only subject to our standard <a href="/documentation/policy/license">data license and disclaimer</a>.
+    </p>
+    <p>
+      Our high res imagery is provided by third parties and we are subject to their licensing requirements. Only entities associated with the state as defined in the <a href="/documentation/discover/license">license details</a> may access these layers.
+    </p>
+    <p>
+      When you register for either general or licensed access, you will receive a set of links for the services. These links contain a "quad-word" that is unique to your organization. This allows us to track usage and disable licensed links that are compromised. 
+    </p>
+    <p>
+      You are welcome to share your links within your organization-there's no need for individual users to register separately. However, please do not share your links outside of your organization. 
+    </p>
+    <p>
+      Licensed links may not be used in publicly-available applications or services without being locked down to the application's domain. Please contact us if you need to get a set of locked-down links. We will disable any "wide-open" licensed links that are being used in publicly-available applications.
+    </p>
+  </Section>
+  <Section title="Available Layers" stripe>
+    <p>
+      Each layer below is available as a separate service. Layers with the "(licensed)" tag are limited to specific groups as noted in the <a href="/documentation/discover/license">license documentation</a>.
+    </p>
+    <dl>
+      <DefinitionListItem title="Utah (licensed)"> 
+        Our latest high-res imagery (currently the Hexagon imagery below)
+      </DefinitionListItem>
+
+      <DefinitionListItem title="Hexagon (licensed)">
+        Approximately 6-inch natural-color <a href="/products/sgid/aerial-photography/hexagon">aerial photography from Hexagon</a> collected 2021. This statewide layer is a higher-resolution copy of the 2021 NAIP imagery. This layer was previously named Hexagon 30cm.
+      </DefinitionListItem>
+          
+      <DefinitionListItem title="Hexagon 15cm (licensed)">
+        Approximately 6-inch natural-color <a href="/products/sgid/aerial-photography/hexagon">aerial photography from Hexagon</a> collected 2021. This statewide layer is a higher-resolution copy of the 2021 NAIP imagery. This layer was previously named Hexagon 30cm.
+      </DefinitionListItem>
+      
+      <DefinitionListItem title="Google (licensed)">
+        Mosaic of the most recent 6-inch statewide natural-color <a href="/products/sgid/aerial-photography/google">aerial photography from Google</a> collected over 2011-2018.
+      </DefinitionListItem>
+
+      <DefinitionListItem title="Google [year] (licensed)">
+        Year-by-year updates to the Google Imagery (the latest blocks are always incorporated into the <code>Google</code> service). Available Years: 2011-2018
+      </DefinitionListItem>
+          
+      <DefinitionListItem title="Basemap-Address_Points">
+        Base map of <a href="/products/sgid/location/address-points">address point</a> locations
+      </DefinitionListItem>
+
+      <DefinitionListItem title="Basemap-Overlay">
+        General reference features (highways and streets, cities, address points, parcels, etc) with a transparent background, suitable for layering over imagery or thematic data.
+      </DefinitionListItem>
+
+      <DefinitionListItem title="Basemap-Hybrid (licensed)">
+        Combination of the <code>Overlay</code> base map and the <code>Utah</code> imagery service
+      </DefinitionListItem> 
+
+      <DefinitionListItem title="Basemap-Lite">
+        A light, muted reference base map that doesn't compete with your thematic data.
+      </DefinitionListItem>
+
+      <DefinitionListItem title="Basemap-Terrain">
+        Base map of hillshade, highways and streets, parks, forests, water, etc.
+      </DefinitionListItem>
+
+      <DefinitionListItem title="Basemap-Topo">
+        Base map of US Geological Survey <a href="/products/sgid/usgs-scanned-topographic-maps"> topo maps</a>
+      </DefinitionListItem>
+
+      <DefinitionListItem title="Digital Ortho Photo Quads (DOQ) 1990s BW">
+        <a href="/products/sgid/aerial-photography/doq">1-meter statewide black-and-white</a> aerial
+        photography, collected in the 1990s
+      </DefinitionListItem>
+
+      <DefinitionListItem title="High Resolution Orthophotography (HRO) 2012 RGB">
+        <a href="/products/sgid/aerial-photography/hro">12.5-cm natural-color</a> aerial photography of
+        the Wasatch Front, collected in 2012
+      </DefinitionListItem>
+
+      <DefinitionListItem title="NAIP [year]">
+        <a href="/products/sgid/aerial-photography/naip">NAIP</a> 1-meter statewide natural-color aerial photography. Available Years: 2006, 2009, 2011, 2014, 2016, 2018, 2021.
+      </DefinitionListItem>
+
+      <DefinitionListItem title="NAIP [year]">
+        <a href="/products/sgid/aerial-photography/naip">NAIP</a> 1-meter statewide color infrared aerial photography. Available Years: 2006, 2011, 2014, 2016, 2018, 2021.
+      </DefinitionListItem>
+
+      <DefinitionListItem title="Hillshade">
+        10-meter statewide combined hillshade and slope
+      </DefinitionListItem>
+    </dl>
+  </Section>
+  <Section title="WMTS vs WMS">
+    <p>
+      While WMS and WMTS both return raster data that your client renders as a map layer, there are some key differences that make WMTS the better choice. Almost all modern clients support WMTS; generally, you should only use WMS if your software does not support WMTS.
+    </p>
+    <p>
+      WMS renders each request on the server according to the spatial extent requested by the client, using the server's resources to render a single, custom image for each request. While this results in a custom render for every zoom level, each pan and zoom queries a new request and a new render. In addition, to keep the server from being overwhelmed, WMS requests are often limited to a maximum number of pixels, which can cause problems when exporting or printing at large sizes or resolutions.
+    </p>
+    <p>
+      In contrast, WMTS simply servers up a pre-rendered set of tiles that cover the requested extent. This results in much faster performance and unlimited export and print capabilities. However, these tiles are only rendered at the common zoom levels, so the client must interpolate between these levels to render the map at custom scales, resulting in interpolation artifacts.
+    </p>
+  </Section>
+
+</Layout>
