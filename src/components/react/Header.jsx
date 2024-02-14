@@ -18,6 +18,7 @@ export const Header = ({ className, children }) => {
                 }}
                 viewBox="0 0 105.9496 47.6226"
                 role="img"
+                aria-hidden="true"
               >
                 <g>
                   <g>
