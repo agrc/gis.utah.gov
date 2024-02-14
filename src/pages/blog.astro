@@ -25,7 +25,7 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
         <CardWithDate
           includeYear
           title={post.data.title}
-          description={post.body.replaceAll(regex, '').slice(0, 160) ?? 'a blog post'}
+          description={post.body.replaceAll(regex, '').slice(0, 200) ?? 'a blog post'}
           date={post.data.date}
           slug={post.slug}
           estimatedReadingTime={post.data.estimatedReadTime}
