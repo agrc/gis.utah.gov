@@ -1,23 +1,32 @@
 ---
 import Layout from '@layouts/FullWidth.astro';
 
-import CardWithTopImage from '@components/page/CardWithTopImage.astro';
+import CardWithDate from '@components/page/CardWithDate.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import GridForPillars from '@components/page/GridForPillars.astro';
+import CardWithTopImage from '@components/page/CardWithTopImage.astro';
 import GridForLatestNews from '@components/page/GridForLatestNews.astro';
+import GridForPillars from '@components/page/GridForPillars.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
-import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
-import CardWithDate from '@components/page/CardWithDate.astro';
+import { getCollection } from 'astro:content';
+
+import getReadingTimeFromMarkdown from '@utils/readingTime';
 
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/landing/*.{svg,png}');
 
 const posts = (await getCollection('blog'))
   .filter((post) => post.data.published)
   .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf())
-  .slice(0, 3);
+  .slice(0, 3)
+  .map((post) => ({
+    ...post,
+    data: {
+      ...post.data,
+      estimatedReadTime: getReadingTimeFromMarkdown(post.body),
+    },
+  }));
 
 const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
 ---
@@ -82,6 +91,7 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
             description={post.body.replaceAll(regex, '').slice(0, 160) ?? 'a blot post'}
             date={post.data.date}
             slug={post.slug}
+            estimatedReadingTime={post.data.estimatedReadTime}
           />
         ))
       }
