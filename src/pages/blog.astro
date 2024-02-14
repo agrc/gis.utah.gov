@@ -1,7 +1,7 @@
 ---
 import CardWithDate from '@components/page/CardWithDate.astro';
 import GridForLatestNews from '@components/page/GridForLatestNews.astro';
-import Layout from '@layouts/Prose.astro';
+import FullWidth from '@layouts/FullWidth.astro';
 import getReadingTimeFromMarkdown from '@utils/readingTime';
 import { getCollection } from 'astro:content';
 
@@ -18,7 +18,7 @@ const posts = (await getCollection('blog'))
 const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
 ---
 
-<Layout title="From the blog">
+<FullWidth title="From the blog">
   <GridForLatestNews>
     {
       posts.map((post) => (
@@ -33,4 +33,4 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
       ))
     }
   </GridForLatestNews>
-</Layout>
+</FullWidth>
