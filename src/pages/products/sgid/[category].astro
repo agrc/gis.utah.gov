@@ -36,8 +36,10 @@ const pages = (await Astro.glob<IDataCategory>('../**/*.astro')).filter((page) =
 ---
 
 <Layout title={`SGID ${readableCategory} data`}>
-  <Section>
-    <h1>The {readableCategory} data index</h1>
+  <Section
+    title=`The ${readableCategory} data index`
+    subTitle={`To view all ${readableCategory} data from stewards besides UGRC, search the <a href="/products/sgid/sgid-index">SGID Index</a>.`}
+  >
     {
       pages.map((page) => (
         <CardForData
