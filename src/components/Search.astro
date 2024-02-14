@@ -27,7 +27,7 @@ const { suffix } = Astro.props;
     class="m-0 h-full max-h-full w-full max-w-full border border-zinc-400 bg-zinc-200 text-left shadow lg:mx-auto lg:mt-20 lg:h-max lg:max-h-[calc(100%-6rem)] lg:w-2/3 lg:rounded-md lg:backdrop:backdrop-blur-sm dark:bg-zinc-900"
     aria-label="site search"
   >
-    <div class="px-5 py-4">
+    <div data-dialog-frame class="px-5 py-4">
       <h3 class="mb-2 text-left text-zinc-700 dark:text-zinc-300">Search our website</h3>
       <div id={`pagefind-ui-${suffix}`}></div>
       <button class="absolute right-2 top-2" data-close-modal>
@@ -50,7 +50,7 @@ const { suffix } = Astro.props;
   class SiteSearch extends HTMLElement {
     initialized = false;
     dialog = this.querySelector('dialog')!;
-    dialogFrame = this.querySelector('.dialog-frame')!;
+    dialogFrame = this.querySelector('div[data-dialog-frame]')!;
     openBtn = this.querySelector('button[data-open-modal]')!;
     closeBtn = this.querySelector('button[data-close-modal]')!;
 
