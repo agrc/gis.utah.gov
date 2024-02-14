@@ -32,7 +32,6 @@ const { title = 'UGRC', subTitle, category, actionUrl, config } = Astro.props;
     <slot name="summary" />
   </Section>
   <slot name="downloads" />
-
   {
     !(config?.skipInDepth ?? false) && (
       <Section title="A closer look" stripe titlePosition="center">
