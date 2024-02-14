@@ -113,5 +113,12 @@ import Layout from '@layouts/FullWidth.astro';
       In contrast, WMTS simply servers up a pre-rendered set of tiles that cover the requested extent. This results in much faster performance and unlimited export and print capabilities. However, these tiles are only rendered at the common zoom levels, so the client must interpolate between these levels to render the map at custom scales, resulting in interpolation artifacts.
     </p>
   </Section>
-
+  <Section title="Offline imagery access">
+    <p>
+      If you need local access to our aerial imagery, check out <a href="https://raster.utah.gov/">raster.utah.gov</a>, where you can download individual NAIP tiles or full county mosaics.
+    </p>
+    <p>
+      Licensed users can use their Web Viewer and Download link to download individual Hexagon or Google imagery tiles. If you need a larger area, please contact us and we'll either help you set up a python script to download the tiles or arrange a way to transfer the data via hard drive.
+    </p>
+  </Section>
 </Layout>
