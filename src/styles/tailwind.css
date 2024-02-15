@@ -44,4 +44,9 @@
   }
 }
 @tailwind components;
+@layer astroComponents {
+  .astro-code {
+    @apply rounded-lg p-3;
+  }
+}
 @tailwind utilities;
