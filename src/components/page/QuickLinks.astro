@@ -1,11 +1,10 @@
 ---
-interface Links {
-  name: string;
-  anchor: string;
-}
-
 interface Props {
-  links: Links[];
+  links: {
+    [key: string]: {
+      sectionTitle: string;
+    };
+  };
 }
 
 const { links } = Astro.props;
@@ -15,9 +14,9 @@ const { links } = Astro.props;
   <p class="text-lg dark:text-white">Quick Links</p>
   <ul class="flex w-full flex-wrap justify-center gap-x-8 gap-y-2 whitespace-pre">
     {
-      links.map((link) => (
+      Object.entries(links).map(([key, value]) => (
         <li>
-          <a href={'#' + link.anchor.toLowerCase().replaceAll(' ', '-')}>{link.name}</a>
+          <a href={'#' + value.sectionTitle.toLowerCase().replaceAll(' ', '-')}>{key}</a>
         </li>
       ))
     }

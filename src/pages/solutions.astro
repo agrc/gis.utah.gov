@@ -1,8 +1,117 @@
 ---
-import Layout from '@layouts/FullWidth.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import agreementPhoto from '@images/solutions/agreement.svg';
+import developmentPhoto from '@images/solutions/development.svg';
+import gisUsersPhoto from '@images/solutions/gis-users.svg';
+import gpsPhoto from '@images/solutions/gps.svg';
+import studentPhoto from '@images/solutions/students.svg';
+
+const page = {
+  title: 'UGRC solutions',
+  quickLinks: {
+    'Government employees': { sectionTitle: 'For government employees' },
+    'GIS users': { sectionTitle: 'For GIS users' },
+    'Application developers': { sectionTitle: 'For application developers' },
+    Surveyors: { sectionTitle: 'For surveyors' },
+    Students: { sectionTitle: 'For students' },
+  },
+};
 ---
 
-<Layout title="Solutions">
-  <Section title="For government" />
+<Layout title={page.title}>
+  <QuickLinks links={page.quickLinks} slot="quick-links" />
+  <Section
+    title={page.quickLinks['Government employees'].sectionTitle}
+    actionUrl="/solutions/for-government"
+    actionText="Let's collaborate"
+    stripe
+  >
+    <Image
+      slot="image"
+      src={agreementPhoto}
+      loading="eager"
+      alt="two government employees shaking hands"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      UGRC uses a cost recovery model to contract with State of Utah agencies to provide high quality, innovative, and
+      cost effective GIS, mapping, and data-related solutions and services.
+    </p>
+    <p>
+      Drawing on extensive experience in the geospatial field, we've encountered diverse challenges and accomplishments.
+      Whether our partnership with you is large or small, reaching out to us early in your process often ensures optimal
+      returns on investment and a smoother path to success.
+    </p>
+    <p>Click to read about some ways we can collaborate with your government agency.</p>
+  </Section>
+  <Section title={page.quickLinks['GIS users'].sectionTitle} actionUrl="/solutions/for-gis-users">
+    <Image
+      slot="image"
+      src={gisUsersPhoto}
+      alt="a person sitting in a chair using a computer to work with maps and data"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      UGRC offers a wide range of solutions for GIS users. We are known for authoritative geospatial data (SGID) however
+      our offerings include base maps, imagery, address locator, a web API, GPS location services, LiDAR, and more. Best
+      of all, they are all free to use (with the exception of the GPS service)!
+    </p>
+    <p>
+      GIS users are at the forefront of our minds in all of our products. The data and services we provide adhere to
+      industry standards and can be used on a variety of platforms - including macOS and Windows.
+    </p>
+    <p>We encourage you to explore our products, as we are certain to have a solution for your mapping needs.</p>
+  </Section>
+  <Section
+    title={page.quickLinks['Application developers'].sectionTitle}
+    actionUrl="/solutions/for-application-developers"
+    actionText="Explore our resources"
+    stripe
+  >
+    <Image
+      slot="image"
+      src={developmentPhoto}
+      alt="a person with a prototype on an easel and the app partially built on a phone"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      Explore the variety of tools and resources that we offer to integrate geospatial tech, craft custom apps, and
+      access valuable data. Whether you're a casual developer tinkering with configurable apps, an experienced
+      developer, or a data scientist, we've got something for your current or next app project!
+    </p>
+  </Section>
+  <Section title={page.quickLinks.Surveyors.sectionTitle} actionUrl="/solutions/for-surveyors">
+    <Image
+      slot="image"
+      src={gpsPhoto}
+      alt="a satellite in orbit around the earth with a GPS signal coming from it"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>text</p>
+  </Section>
+  <Section
+    title={page.quickLinks.Students.sectionTitle}
+    actionUrl="/solutions/for-students"
+    actionText="Explore our resources"
+    stripe
+  >
+    <Image
+      slot="image"
+      src={studentPhoto}
+      loading="eager"
+      alt="students sitting in front of a university building"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      UGRC loves students! We want to help you get the best education you can. We've got a host of resources that can
+      help you with class projects, personal exploration, and preparing for life after school. Have you made something
+      cool? <ExternalLink href="https://twitter.com/MapUtah">Let us know about it</ExternalLink>, we'd love to hear!
+    </p>
+  </Section>
 </Layout>
