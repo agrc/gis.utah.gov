@@ -10,7 +10,7 @@ import Layout from '@layouts/FullWidth.astro';
 <Layout title="Coordinate System and Accuracy">
   <Section title="Discover's coordinate system" stripe>
     <p>
-      The Discover services' native coordinate system is Web Mercator with a WGS 1984 datum (EPSG 3857). Many users work in coordinate systems with a different datum (for example, EPSG 3566: Utah Central with NAD 1983). Users who need the highest locational precision must use the appropriate <a href="/blog/post-about-transformations">geographic transformation</a> to remedy the roughly one meter difference between the WGS84 and NAD83 datums' “realization points.” 
+      The Discover services' native coordinate system is Web Mercator with a WGS 1984 datum (EPSG 3857). Many users work in coordinate systems with a different datum (for example, EPSG 3566: Utah Central with NAD 1983). Users who need the highest locational precision must use the appropriate <a href="/blog/2021-06-23-choosing-right-transformation">geographic transformation</a> to remedy the roughly one meter difference between the WGS84 and NAD83 datums' “realization points.” 
     </p>
     <p>  
       UGRC uses the `NAD_1983_To_WGS_1984_5` transformation when creating base map tiles and web applications, but **there may be more accurate transformations based on the data and area you are working with**. The default (no transformation specified) will likely introduce several feet of horizontal positional error. More information about these transformations can be found on ESRI's <ExternalLink href="https://support.esri.com/en-us/knowledge-base/determine-which-nad-1983-to-wgs-1984-transformation-to--000005929">NAD 1983 To WGS 1984 How-To</ExternalLink>.
