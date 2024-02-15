@@ -1,8 +1,11 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
+import { stripeSections } from '@utils/page';
 
 import { Image } from 'astro:assets';
 
@@ -12,26 +15,25 @@ import gisUsersPhoto from '@images/solutions/gis-users.svg';
 import gpsPhoto from '@images/solutions/gps.svg';
 import studentPhoto from '@images/solutions/students.svg';
 
-const page = {
+const page: IStandardPageMetadata = {
   title: 'UGRC solutions',
-  quickLinks: {
-    'Government employees': { sectionTitle: 'For government employees' },
-    'GIS users': { sectionTitle: 'For GIS users' },
-    'Application developers': { sectionTitle: 'For application developers' },
-    Surveyors: { sectionTitle: 'For surveyors' },
-    Students: { sectionTitle: 'For students' },
-  },
+  section: stripeSections([
+    { title: 'For government employees', actionUrl: '/solutions/for-government', actionText: "Let's collaborate" },
+    { title: 'For GIS users', actionUrl: '/solutions/for-gis-users' },
+    {
+      title: 'For application developers',
+      actionUrl: '/solutions/for-application-developers',
+      actionText: 'Explore our resources',
+    },
+    { title: 'For surveyors', actionUrl: '/solutions/for-surveyors' },
+    { title: 'For students', actionUrl: '/solutions/for-students', actionText: 'Explore our resources' },
+  ]),
 };
 ---
 
 <Layout title={page.title}>
-  <QuickLinks links={page.quickLinks} slot="quick-links" />
-  <Section
-    title={page.quickLinks['Government employees'].sectionTitle}
-    actionUrl="/solutions/for-government"
-    actionText="Let's collaborate"
-    stripe
-  >
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
     <Image
       slot="image"
       src={agreementPhoto}
@@ -50,7 +52,7 @@ const page = {
     </p>
     <p>Click to read about some ways we can collaborate with your government agency.</p>
   </Section>
-  <Section title={page.quickLinks['GIS users'].sectionTitle} actionUrl="/solutions/for-gis-users">
+  <Section {...page.section[1]}>
     <Image
       slot="image"
       src={gisUsersPhoto}
@@ -68,12 +70,7 @@ const page = {
     </p>
     <p>We encourage you to explore our products, as we are certain to have a solution for your mapping needs.</p>
   </Section>
-  <Section
-    title={page.quickLinks['Application developers'].sectionTitle}
-    actionUrl="/solutions/for-application-developers"
-    actionText="Explore our resources"
-    stripe
-  >
+  <Section {...page.section[2]}>
     <Image
       slot="image"
       src={developmentPhoto}
@@ -86,7 +83,7 @@ const page = {
       developer, or a data scientist, we've got something for your current or next app project!
     </p>
   </Section>
-  <Section title={page.quickLinks.Surveyors.sectionTitle} actionUrl="/solutions/for-surveyors">
+  <Section {...page.section[3]}>
     <Image
       slot="image"
       src={gpsPhoto}
@@ -95,12 +92,7 @@ const page = {
     />
     <p>text</p>
   </Section>
-  <Section
-    title={page.quickLinks.Students.sectionTitle}
-    actionUrl="/solutions/for-students"
-    actionText="Explore our resources"
-    stripe
-  >
+  <Section {...page.section[4]}>
     <Image
       slot="image"
       src={studentPhoto}

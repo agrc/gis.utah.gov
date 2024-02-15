@@ -1,4 +1,6 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
@@ -14,22 +16,25 @@ import jobPhoto from '@images/solutions/jobs.svg';
 import metadataPhoto from '@images/solutions/metadata.svg';
 import studentPhoto from '@images/solutions/students.svg';
 
-const page = {
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
   title: 'We help students',
-  quickLinks: [
-    { name: 'Data', anchor: 'data' },
-    { name: 'Base maps and imagery', anchor: 'imagery' },
-    { name: 'Conferences and events', anchor: 'conferences' },
-    { name: 'Jobs and internships', anchor: 'jobs' },
-    { name: 'Metadata', anchor: 'metadata' },
-    { name: 'Citations', anchor: 'citations' },
-  ],
+  section: stripeSections([
+    { title: 'Solutions for students' },
+    { title: 'Get the data' },
+    { title: 'Base maps and imagery' },
+    { title: 'Be seen' },
+    { title: 'Get paid' },
+    { title: 'Metadata' },
+    { title: 'Cite your sources' },
+  ]),
 };
 ---
 
 <Layout title={page.title}>
-  <QuickLinks links={page.quickLinks} slot="quick-links" />
-  <Section title="Solutions for students" stripe>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
     <Image
       slot="image"
       src={studentPhoto}
@@ -44,7 +49,7 @@ const page = {
       cool? <ExternalLink href="https://twitter.com/MapUtah">Let us know about it</ExternalLink>, we'd love to hear!
     </p>
   </Section>
-  <Section title="Data">
+  <Section {...page.section[1]}>
     <Image slot="image" src={dataPhoto} alt="a person connected to a database" class="w-full max-w-[400px]" />
     <p>
       Do you need road data to build a network dataset? What about a high-resolution DEM for a suitability analysis? Or
@@ -66,7 +71,7 @@ const page = {
       >.
     </p>
   </Section>
-  <Section title="Base maps and imagery" stripe>
+  <Section {...page.section[2]}>
     <Image slot="image" src={baseMapPhoto} alt="a person admiring a map on a wall" class="w-full max-w-[400px]" />
 
     <p>
@@ -85,7 +90,7 @@ const page = {
       latest NAIP imagery.
     </p>
   </Section>
-  <Section title="Conferences and events">
+  <Section {...page.section[3]}>
     <Image slot="image" src={conferencePhoto} alt="a person presenting at a conference" class="w-full max-w-[400px]" />
 
     <p>
@@ -106,7 +111,7 @@ const page = {
       meetings are great opportunities to network and learn from other GIS professionals.
     </p>
   </Section>
-  <Section title="Jobs and internships" stripe>
+  <Section {...page.section[4]}>
     <Image
       slot="image"
       src={jobPhoto}
@@ -122,7 +127,7 @@ const page = {
       post it to the UGIC list. Local user groups often have their own mailing lists as well.
     </p>
   </Section>
-  <Section title="Metadata">
+  <Section {...page.section[5]}>
     <Image
       slot="image"
       src={metadataPhoto}
@@ -135,7 +140,7 @@ const page = {
       >, where you'll find updates schedules, field definitions, and other relevant tidbits.
     </p>
   </Section>
-  <Section title="Citations" stripe>
+  <Section {...page.section[6]}>
     <Image slot="image" src={citePhoto} alt="a pencil writing on a piece of paper" class="w-full max-w-[400px]" />
 
     <p>
