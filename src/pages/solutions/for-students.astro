@@ -1,0 +1,146 @@
+---
+import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import baseMapPhoto from '@images/solutions/base-map.svg';
+import citePhoto from '@images/solutions/cite.svg';
+import conferencePhoto from '@images/solutions/conference.svg';
+import dataPhoto from '@images/solutions/data.svg';
+import jobPhoto from '@images/solutions/jobs.svg';
+import metadataPhoto from '@images/solutions/metadata.svg';
+import studentPhoto from '@images/solutions/students.svg';
+
+const page = {
+  title: 'We help students',
+  quickLinks: [
+    { name: 'Data', anchor: 'data' },
+    { name: 'Base maps and imagery', anchor: 'imagery' },
+    { name: 'Conferences and events', anchor: 'conferences' },
+    { name: 'Jobs and internships', anchor: 'jobs' },
+    { name: 'Metadata', anchor: 'metadata' },
+    { name: 'Citations', anchor: 'citations' },
+  ],
+};
+---
+
+<Layout title={page.title}>
+  <QuickLinks links={page.quickLinks} slot="quick-links" />
+  <Section title="Solutions for students" stripe>
+    <Image
+      slot="image"
+      src={studentPhoto}
+      loading="eager"
+      alt="students sitting in front of a university building"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+
+    <p>
+      UGRC loves students! We want to help you get the best education you can. We've got a host of resources that can
+      help you with class projects, personal exploration, and preparing for life after school. Have you made something
+      cool? <ExternalLink href="https://twitter.com/MapUtah">Let us know about it</ExternalLink>, we'd love to hear!
+    </p>
+  </Section>
+  <Section title="Data">
+    <Image slot="image" src={dataPhoto} alt="a person connected to a database" class="w-full max-w-[400px]" />
+    <p>
+      Do you need road data to build a network dataset? What about a high-resolution DEM for a suitability analysis? Or
+      school locations for a demographic study?
+    </p>
+
+    <p>
+      The <a href="/products/sgid/">State Geospatial Information Datasource</a> has a large <a
+        href="/products/sgid/sgid-index/">catalog</a
+      > of freely-available data you can use in your classwork, projects, or personal tinkering.
+    </p>
+
+    <p>
+      You can connect directly to the <a href="/products/open-sgid/">Open SGID</a> in your GIS software or access downloads
+      and Esri web feature services through our <ExternalLink href="https://opendata.gis.utah.gov"
+        >SGID on ArcGIS</ExternalLink
+      >. You can download our raster data (aerial imagery, DEMs, etc.) at <ExternalLink href="https://raster.utah.gov"
+        >raster.utah.gov</ExternalLink
+      >.
+    </p>
+  </Section>
+  <Section title="Base maps and imagery" stripe>
+    <Image slot="image" src={baseMapPhoto} alt="a person admiring a map on a wall" class="w-full max-w-[400px]" />
+
+    <p>
+      Does your research project have you counting trees in aerial imagery? Or do you have data ready to map and just
+      need a clean canvas to put it on? Our <a href="/products/discover/">Discover</a> base map and imagery web services
+      provide access to both aerial imagery and our set of gorgeous <a href="/data/base-maps/">base maps</a> that you can
+      use in both static and web maps.
+    </p>
+
+    <p>
+      Students and faculty of Utah-funded schools can sign up for licensed access to Discover, which includes the
+      high-res imagery we've purchased for the State of Utah along with our base maps.
+    </p>
+    <p>
+      And don't worry, out-of-staters, anyone can sign up for general access to use our gorgeous base maps and the
+      latest NAIP imagery.
+    </p>
+  </Section>
+  <Section title="Conferences and events">
+    <Image slot="image" src={conferencePhoto} alt="a person presenting at a conference" class="w-full max-w-[400px]" />
+
+    <p>
+      Get your name out there! UGRC sponsors and helps out with many different GIS events throughout the year and is
+      actively involved with the <ExternalLink href="https://ugic.org/"
+        >Utah Geographic Information Council</ExternalLink
+      > (UGIC), the state's GIS community. Be sure to sign up for their newsletter!
+    </p>
+
+    <p>
+      <ExternalLink href="https://ugic.org/maps-on-the-hill/">Maps on the Hill</ExternalLink> is a great opportunity to showcase
+      your work at the State Capitol during the legislative session and rub shoulders with fellow map geeks. The annual <ExternalLink
+        href="https://ugic.org/ugic-annual-conference/">UGIC conference</ExternalLink
+      > in May is loaded with great sessions, and student presentations are always welcome!
+    </p>
+    <p>
+      There are also local <a href="/collaboration/user-groups/">GIS user groups</a> that meet throughout the year. These
+      meetings are great opportunities to network and learn from other GIS professionals.
+    </p>
+  </Section>
+  <Section title="Jobs and internships" stripe>
+    <Image
+      slot="image"
+      src={jobPhoto}
+      alt="a person with a magnifying glass looking at job postings on a computer screen"
+      class="w-full max-w-[400px]"
+    />
+
+    <p>
+      GIS is useful in a broad spectrum of industries, and jobs and positions come available throughout the year. Be
+      sure to sign up for the <ExternalLink href="https://ugic.org/about-2/sign-up-for-our-email-list/"
+        >UGIC mailing list</ExternalLink
+      > to stay up-to-date on the latest local (and often regional) openings. Whenever we have an opening here at UGRC, we
+      post it to the UGIC list. Local user groups often have their own mailing lists as well.
+    </p>
+  </Section>
+  <Section title="Metadata">
+    <Image
+      slot="image"
+      src={metadataPhoto}
+      alt="a person looking at a screen with a information bubbles around their face"
+      class="w-full max-w-[400px]"
+    />
+
+    <p>
+      Looking for more information about our data? Check out our <a href="/products/sgid/categories">SGID data pages</a
+      >, where you'll find updates schedules, field definitions, and other relevant tidbits.
+    </p>
+  </Section>
+  <Section title="Citations" stripe>
+    <Image slot="image" src={citePhoto} alt="a pencil writing on a piece of paper" class="w-full max-w-[400px]" />
+
+    <p>
+      Need to cite your source for a paper? Check out our <a href="/documentation/policy/license/">attribution page</a> for
+      guidelines and examples.
+    </p>
+  </Section>
+</Layout>
