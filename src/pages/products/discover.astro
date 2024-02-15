@@ -1,14 +1,14 @@
 ---
-import Layout from '@layouts/Pillar.astro';
-import Section from '@components/page/Section.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSideImage from '@components/page/CardWithSideImage.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import CardWithTopImage from '@components/page/CardWithTopImage.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForPillars from '@components/page/GridForPillars.astro';
-import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import GridForPopularResources from '@components/page/GridForPopularResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/Pillar.astro';
 
 import { Image } from 'astro:assets';
 
@@ -67,7 +67,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
           and tribal entities (along with formal partners of these groups) can sign up for licensed access to our latest
           state-wide high-resolution aerial imagery in both streaming and downloadable formats.
         </CardWithTopImage>
-        <CardWithTopImage title="Get connected" actionText="Get started" actionUrl="/products/discover/resources">
+        <CardWithTopImage title="Get connected" actionText="Get started" actionUrl="/documentation/discover/basics">
           <Image
             slot="image"
             src={images[`${location}get-connected.svg`]()}
@@ -86,10 +86,10 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
       <CardWithPopularLink title="Raster discovery app" href="https://raster.utah.gov">
         Download NAIP and HRO imagery.
       </CardWithPopularLink>
-      <CardWithPopularLink title="Licensed access details" href="/products/discover/license">
+      <CardWithPopularLink title="Licensed access details" href="/documentation/discover/licensed-imagery">
         Who qualifies and why.
       </CardWithPopularLink>
-      <CardWithPopularLink title="Discover the docs" href="/products/discover/resources"
+      <CardWithPopularLink title="Discover the docs" href="/documentation/discover"
         >Discover new ways to use Discover
       </CardWithPopularLink>
       <CardWithPopularLink title="Atlas" href="https://atlas.utah.gov"
@@ -100,7 +100,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
 
   <Section title="More Discover Resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithSideImage title="Citing your sources" actionUrl="/documentation/policy/citation">
+      <CardWithSideImage title="Citing your sources" actionUrl="/documentation/discover/licensed-imagery">
         <Image
           slot="image"
           src={images[`${location}cite.svg`]()}
