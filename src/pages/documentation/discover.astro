@@ -1,100 +1,101 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
+import { stripeSections } from '@utils/page';
+
 import { Image } from 'astro:assets';
 
-
-const location = '/src/images/product-discover'
+const location = '/src/images/product-discover';
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-discover/*.{svg,png}');
 
-const quickLinks = [
-{
-    name: "Discover basics",
-    anchor: "discover-basics",
-  },
-{
-    name: "Connecting your client",
-    anchor: "connecting-your-client",
-  },
-  {
-    name: "Licensed imagery",
-    anchor: "licensed-imagery",
-  },
-  {
-    name: "Coordinate systems and accuracy",
-    anchor: "coordinate-systems-and-accuracy",
-  },
-  {
-    name: "Common problems and issues",
-    anchor: "common-problems-and-issues",
-  },
-];
-
+const page: IStandardPageMetadata = {
+  title: 'Discover',
+  section: stripeSections([
+    { actionUrl: '/documentation/discover/basics', actionText: 'Learn the basics' },
+    { title: 'Connecting your client', actionUrl: '/documentation/discover/clients', actionText: 'Get Connected' },
+    {
+      title: 'Licensed imagery',
+      actionUrl: '/documentation/discover/licensed-imagery',
+      actionText: 'See who qualifies',
+    },
+    {
+      title: 'Coordinate systems and accuracy',
+      actionUrl: '/documentation/discover/coord-system',
+      actionText: 'Check your CRS',
+    },
+    { title: 'Common problems and issues', actionUrl: '/documentation/discover/problems', actionText: 'Get help' },
+  ]),
+};
 ---
-<Layout title="Discover">
-  <QuickLinks links={quickLinks} slot="quick-links" />
-  <Section stripe actionUrl="/documentation/discover/basics" actionText='Learn the basics'>
+
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
     <Image
-    slot="image"
-    src={images[`${location}/discover-logo.svg`]()}
-    loading="eager"
-    alt="Discover logo"
-    class="w-full max-w-[400px] rounded-2xl"
-  />
-  <p>
-    Discover allows you to connect to streaming tile services of our base maps and imagery, freeing you from downloading and storing massive amounts of data. They also work great in web maps as background layers for your data.
-  </p>
-  <p>
-    Discover serves data as either a single full raster (WMS) or a set of pre-rendered raster tiles (WMTS). WMTS should be used wherever possible to access any of our base maps or imagery services.
-  </p>
-  </Section>
-  <Section title = "Connecting your client" actionUrl="/documentation/discover/clients" actionText='Get Connected'>
-    <Image
-    slot="image"
-    src={images[`${location}/get-connected.svg`]()}
-    alt="Connect to Discover"
-    class="w-full max-w-[400px] rounded-2xl"
-  />
+      slot="image"
+      src={images[`${location}/discover-logo.svg`]()}
+      loading="eager"
+      alt="Discover logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
     <p>
-      You can connect to Discover using a variety of desktop and web clients, including QGIS, ArcGIS Pro, AutoCAD, and ArcGIS Online.
+      Discover allows you to connect to streaming tile services of our base maps and imagery, freeing you from
+      downloading and storing massive amounts of data. They also work great in web maps as background layers for your
+      data.
+    </p>
+    <p>
+      Discover serves data as either a single full raster (WMS) or a set of pre-rendered raster tiles (WMTS). WMTS
+      should be used wherever possible to access any of our base maps or imagery services.
     </p>
   </Section>
-  <Section title = "Licensed imagery" actionUrl="/documentation/discover/licensed-imagery" actionText='See who qualifies' stripe>
+  <Section {...page.section[1]}>
     <Image
-    slot="image"
-    src={images[`${location}/licensed-access.svg`]()}
-    alt="Secure access to licensed imagery"
-    class="w-full max-w-[400px] rounded-2xl"
-  />
+      slot="image"
+      src={images[`${location}/get-connected.svg`]()}
+      alt="Connect to Discover"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
     <p>
-      Licensed Discover access includes our high-res imagery licensed from Hexagon and Google. These services have their own considerations and restrictions and are only available to users associated with the State or its entities.
-    </p>
-  </Section> 
-  <Section title = "Coordinate systems and accuracy" actionUrl="/documentation/discover/coord-system" actionText='Check your CRS'>
-    <Image
-    slot="image"
-    src={images[`${location}/accuracy.svg`]()}
-    alt="Getting your data accurate"
-    class="w-full max-w-[400px] rounded-2xl"
-  />
-    <p>
-      Discover services use the Web Mercator WGS84 projection (wkid/EPSG 3857). You may need to transform or project your data to match. 
-    </p>
-    <p>
-      Discover hosts several different imagery services, each with its own accuracy and resolution.
+      You can connect to Discover using a variety of desktop and web clients, including QGIS, ArcGIS Pro, AutoCAD, and
+      ArcGIS Online.
     </p>
   </Section>
-  <Section title="Common problems and issues" actionUrl="/documentation/discover/problems" actionText="Get help" stripe>
+  <Section {...page.section[2]}>
     <Image
-    slot="image"
-    src={images[`${location}/problems.svg`]()}
-    alt="Solving problems"
-    class="w-full max-w-[400px] rounded-2xl"
-  />
+      slot="image"
+      src={images[`${location}/licensed-access.svg`]()}
+      alt="Secure access to licensed imagery"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
     <p>
-      Discover uses the common and open source WMS and WMTS standards, but you may still run into some problems.
+      Licensed Discover access includes our high-res imagery licensed from Hexagon and Google. These services have their
+      own considerations and restrictions and are only available to users associated with the State or its entities.
     </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      src={images[`${location}/accuracy.svg`]()}
+      alt="Getting your data accurate"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      Discover services use the Web Mercator WGS84 projection (wkid/EPSG 3857). You may need to transform or project
+      your data to match.
+    </p>
+    <p>Discover hosts several different imagery services, each with its own accuracy and resolution.</p>
+  </Section>
+  <Section {...page.section[4]}>
+    <Image
+      slot="image"
+      src={images[`${location}/problems.svg`]()}
+      alt="Solving problems"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>Discover uses the common and open source WMS and WMTS standards, but you may still run into some problems.</p>
   </Section>
 </Layout>
