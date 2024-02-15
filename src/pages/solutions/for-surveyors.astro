@@ -1,4 +1,6 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
@@ -8,33 +10,43 @@ import accessiblePhoto from '@images/solutions/accessible.svg';
 import agreementPhoto from '@images/solutions/agreement.svg';
 import applicationDevelopmentPhoto from '@images/solutions/application-development.svg';
 
-const page = {
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
   title: 'What we offer surveyors',
-  quickLinks: [
-    { name: 'Consultation', anchor: 'consultation' },
-    { name: 'Data Transparency', anchor: 'transparency' },
-    { name: 'Application Development', anchor: 'development' },
-    { name: 'Spatial Analysis', anchor: 'analysis' },
-    { name: 'Data Aggregation', anchor: 'aggregation' },
-  ],
+  section: stripeSections([
+    {},
+    { title: 'Solutions for surveyors' },
+    { title: 'Stuff' },
+    { title: 'More stuff' },
+    { title: 'GPS location services' },
+  ]),
 };
 ---
 
 <Layout title={page.title}>
-  <QuickLinks links={page.quickLinks} slot="quick-links" />
-  <Section title="Solutions for surveyors" stripe>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
     <p>text</p>
   </Section>
-
-  <Section title="title">
+  <Section {...page.section[1]}>
     <Image slot="image" src={agreementPhoto} alt="two people shaking hands in agreement" class="w-full max-w-[400px]" />
     <p>text</p>
   </Section>
-  <Section title="title" stripe>
+  <Section {...page.section[2]}>
     <Image slot="image" src={accessiblePhoto} alt="a person breaking down a wall" class="w-full max-w-[400px]" />
     <p>text</p>
   </Section>
-  <Section title="title">
+  <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      src={applicationDevelopmentPhoto}
+      alt="a person standing in front of a monitor holding a wrench with a crane in the background"
+      class="w-full max-w-[400px]"
+    />
+    <p>text</p>
+  </Section>
+  <Section {...page.section[4]}>
     <Image
       slot="image"
       src={applicationDevelopmentPhoto}

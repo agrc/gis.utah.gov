@@ -1,6 +1,10 @@
 ---
+import type { IStandardPageMetadata } from './products/sgid/types';
+
+import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
+import { stripeSections } from '@utils/page';
 
 import { Image } from 'astro:assets';
 
@@ -8,10 +12,22 @@ import apiLogo from '@images/api/api-logo.svg';
 import discoverLogo from '@images/discover/discover-logo.svg';
 import sgidLogo from '@images/sgid/sgid-logo.svg';
 import turnLogo from '@images/turn/turn-logo.svg';
+
+const page: IStandardPageMetadata = {
+  title: 'UGRC products',
+  section: stripeSections([
+    { title: 'SGID', actionUrl: '/products/sgid' },
+    { title: 'Discover', actionUrl: '/solutions/discover' },
+    { title: 'TURN GPS', actionUrl: '/products/turn' },
+    { title: 'UGRC API', actionUrl: '/products/api' },
+  ]),
+};
 ---
 
-<Layout title="UGRC products">
-  <Section title="SGID" actionUrl="/products/sgid" stripe>
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+
+  <Section {...page.section[0]}>
     <Image slot="image" src={sgidLogo} loading="eager" alt="the SGID logo" class="w-full max-w-[400px] rounded-2xl" />
     <p>
       The SGID aims to be the primary source for state-wide GIS data in Utah by creating a single portal to datasets
@@ -20,7 +36,7 @@ import turnLogo from '@images/turn/turn-logo.svg';
     </p>
   </Section>
 
-  <Section title="Discover" actionUrl="/products/discover">
+  <Section {...page.section[1]}>
     <Image slot="image" src={discoverLogo} alt="the discover logo" class="w-full max-w-[400px] rounded-2xl" />
     <p>
       Discover is a cloud-based web service serving aerial imagery and base maps. These services are available in both
@@ -30,7 +46,7 @@ import turnLogo from '@images/turn/turn-logo.svg';
     <p>Discover offers over 20 services that are free to use (however, a few require a signed license agreement).</p>
   </Section>
 
-  <Section title="TURN GPS" actionUrl="/products/turn" stripe>
+  <Section {...page.section[2]}>
     <Image slot="image" src={turnLogo} alt="the TURN GPS logo" class="w-full max-w-[400px] rounded-2xl" />
     <p>
       The Utah Reference Network, TURN, is a high-precision global navigation satellite system (GNSS) providing
@@ -43,7 +59,7 @@ import turnLogo from '@images/turn/turn-logo.svg';
     </p>
   </Section>
 
-  <Section title="UGRC API" actionUrl="/products/api">
+  <Section {...page.section[3]}>
     <Image slot="image" src={apiLogo} alt="the UGRC API logo" class="w-full max-w-[400px] rounded-2xl" />
     <p>The UGRC API is a free web service that allows you to geocode and search SGID data with HTTP requests.</p>
   </Section>

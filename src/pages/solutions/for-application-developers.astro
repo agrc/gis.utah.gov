@@ -1,4 +1,6 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
@@ -10,22 +12,24 @@ import mapPhoto from '@images/solutions/map.svg';
 import rocketPhoto from '@images/solutions/rocket.svg';
 
 import { Image } from 'astro:assets';
-const page = {
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
   title: 'Developer solutions',
-  quickLinks: [
-    { name: 'Data', anchor: 'data' },
-    { name: 'Base Maps and Imagery', anchor: 'imagery' },
-    { name: 'Conferences and Events', anchor: 'conferences' },
-    { name: 'Jobs and Internships', anchor: 'jobs' },
-    { name: 'Metadata', anchor: 'metadata' },
-    { name: 'Citations', anchor: 'citations' },
-  ],
+  section: stripeSections([
+    {},
+    { title: 'Spatially enable it', actionText: 'Start geocoding', actionUrl: '/products/api' },
+    { title: 'Show it off', actionText: 'View our base maps', actionUrl: '/products/discover' },
+    { title: 'Enrich it', actionText: 'Browse our data', actionUrl: '/products/sgid' },
+    { title: 'Automate it', actionText: 'Contact us', actionUrl: '/contact' },
+  ]),
 };
 ---
 
 <Layout title={page.title}>
-  <QuickLinks links={page.quickLinks} slot="quick-links" />
-  <Section title="Solutions for developers" stripe>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section title="Solutions for developers" {...page.section[0]}>
     <Image
       slot="image"
       src={developmentPhoto}
@@ -40,9 +44,8 @@ const page = {
       developer, or a data scientist, we've got something for your current or next app project!
     </p>
   </Section>
-  <Section title="Spatially enable it" actionText="Start geocoding" actionUrl="/products/api">
+  <Section {...page.section[1]}>
     <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
-
     <p>
       The gateway to the spatial world often begins with an address. Let us enable you to geocode your address data
       <strong>without restriction</strong>. Once you have spatial data, the possibilities become limitless. The UGRC API
@@ -57,7 +60,7 @@ const page = {
       functionalities of your app.
     </p>
   </Section>
-  <Section title="Show it off" actionText="View our base maps" actionUrl="/products/discover" stripe>
+  <Section {...page.section[2]}>
     <Image slot="image" src={mapPhoto} alt="two people holding a map" class="w-full max-w-[400px]" />
 
     <p>
@@ -70,7 +73,7 @@ const page = {
       of applications and are available in a variety of formats including vector and raster tiles.
     </p>
   </Section>
-  <Section title="Enrich it" actionText="Browse our data" actionUrl="/products/sgid">
+  <Section {...page.section[3]}>
     <Image
       slot="image"
       src={enhancePhoto}
@@ -88,7 +91,7 @@ const page = {
       development. The possibilities are endless.
     </p>
   </Section>
-  <Section title="Automate it" actionText="Contact us" actionUrl="/contact" stripe>
+  <Section {...page.section[4]}>
     <Image slot="image" src={automationPhoto} alt="a robot automating a task" class="w-full max-w-[400px]" />
 
     <p>

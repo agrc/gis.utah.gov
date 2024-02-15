@@ -1,4 +1,6 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
@@ -11,21 +13,24 @@ import gisUsersPhoto from '@images/solutions/gis-users.svg';
 import gpsPhoto from '@images/solutions/gps.svg';
 import mapPhoto from '@images/solutions/map.svg';
 
-const page = {
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
   title: 'We help GIS users',
-  quickLinks: [
-    { name: 'SGID', anchor: 'sgid' },
-    { name: 'UGRC API', anchor: 'api' },
-    { name: 'Address geocoding', anchor: 'geocoding' },
-    { name: 'Base Maps and Imagery', anchor: 'imagery' },
-    { name: 'GPS location services', anchor: 'turn' },
-  ],
+  section: stripeSections([
+    {},
+    { title: 'The SGID' },
+    { title: 'UGRC API' },
+    { title: 'Address geocoding' },
+    { title: 'Base maps and imagery' },
+    { title: 'GPS location services' },
+  ]),
 };
 ---
 
 <Layout title={page.title}>
-  <QuickLinks links={page.quickLinks} slot="quick-links" />
-  <Section title="Solutions for GIS users" stripe>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section title="Solutions for GIS users" {...page.section[0]}>
     <Image
       slot="image"
       src={gisUsersPhoto}
@@ -44,7 +49,7 @@ const page = {
     </p>
     <p>We encourage you to explore our products, as we are certain to have a solution for your mapping needs.</p>
   </Section>
-  <Section title="The SGID">
+  <Section {...page.section[1]}>
     <Image slot="image" src={dataPhoto} alt="a person connected to a database" class="w-full max-w-[400px]" />
 
     <p>
@@ -56,7 +61,7 @@ const page = {
       services and direct database access. Visit the SGID landing page to learn more.
     </p>
   </Section>
-  <Section title="UGRC API" stripe>
+  <Section {...page.section[2]}>
     <Image
       slot="image"
       src={apiLogoPhoto}
@@ -71,7 +76,7 @@ const page = {
       over ten years and is extremely robust. More information can be found on the Getting Started page.
     </p>
   </Section>
-  <Section title="Address geocoding">
+  <Section {...page.section[3]}>
     <Image slot="image" src={mapPhoto} alt="a map with geocoded map markers on it" class="w-full max-w-[400px]" />
 
     <p>
@@ -84,7 +89,7 @@ const page = {
       page.
     </p>
   </Section>
-  <Section title="Base maps and imagery" stripe>
+  <Section {...page.section[4]}>
     <Image slot="image" src={baseMapPhoto} alt="a person admiring a map on a wall" class="w-full max-w-[400px]" />
 
     <p>
@@ -99,7 +104,7 @@ const page = {
       Raster map application. Visit the Discover page to learn more about base maps and imagery.
     </p>
   </Section>
-  <Section title="GPS Location Services">
+  <Section {...page.section[5]}>
     <Image
       slot="image"
       src={gpsPhoto}
