@@ -1,12 +1,11 @@
 ---
+import type { Props as SectionProp } from '@components/pages/Section.astro';
+
 interface Props {
-  links: {
-    [key: string]: {
-      sectionTitle: string;
-    };
-  };
+  links: SectionProp[];
 }
 
+import { createIdFromTitle } from '@utils/page';
 const { links } = Astro.props;
 ---
 
@@ -14,11 +13,15 @@ const { links } = Astro.props;
   <p class="text-lg dark:text-white">Quick Links</p>
   <ul class="flex w-full flex-wrap justify-center gap-x-8 gap-y-2 whitespace-pre">
     {
-      Object.entries(links).map(([key, value]) => (
-        <li>
-          <a href={'#' + value.sectionTitle.toLowerCase().replaceAll(' ', '-')}>{key}</a>
-        </li>
-      ))
+      links.map((section) => {
+        if (section.title) {
+          return (
+            <li>
+              <a href={'#' + createIdFromTitle(section.title)}>{section.title}</a>
+            </li>
+          );
+        }
+      })
     }
   </ul>
 </div>
