@@ -1,0 +1,62 @@
+---
+// import QuickLinks from '@components/page/QuickLinks.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+
+---
+<Layout title="Common problems and issues">
+  <Section title="Blurry, missing, or stuck tiles" stripe>
+    <p>
+      Occasionally you may see a WMTS tile that is stuck at a different zoom level from the rest, is blurry, or missing altogether. The first step is to clear your cache.
+    </p>
+    <dl>
+      <DefinitionListItem title="ArcGIS Pro">
+        Go to the service's Layer Properties -> Cache tab and selecting Clear Cache. You can also clear your entire Pro cache by going to the Pro project's Options -> Display and check Clear cache and selecting OK.
+      </DefinitionListItem>
+      <DefinitionListItem title="Browser">
+        For web maps, you'll need to clear your browser's cache. This is usually done by pressing `Ctrl+Shift+Delete` and selecting the appropriate options. For more specific instructions search "clear cache" and your browser's name.
+    </dl>
+    <p>
+      If you're still seeing problems after clearing your cache, reach out and we'll see if we can reproduce the issue and figure out what's going on.
+    </p>
+
+  </Section>
+  <Section title="WMS layers not exporting">
+    <p>
+      If you are using a WMS connection, you may find that the Discover layer does not show up when you export or print your map. This is due to a technical limitation of the WMS protocol. The only fixes are to use WMTS, export at a lower resolution, or use a local copy (for aerial imagery).
+    </p>
+    <p>
+      <strong>Background</strong>
+    </p>
+    <p>
+      In WMS, the client (ArcMap, a browser, etc) requests a map of a specific extent and resolution. The server creates a single image matching the request and returns it to the client—a 8.5" x 11" image at 100 dpi would be 850 x 1,100 pixels (just shy of one megapixel). Every time the user pans or zooms, the server creates and sends a completely new image, which consumes server processing power and bandwidth. To maintain performance for all users, WMS servers will not create and return an image if its dimensions exceed a certain size.
+    </p>
+    <p>
+      Applications like ArcMap and web browsers have a relatively small window and use a resolution of 96 dpi, resulting in requests that fit within the server's allowed size. However, exporting a 20" x 30" map at 300 dpi results in a 6,000 x 9,000 pixel (54 megapixel) image. This far exceeds the server's limit, so it does not return an image. ArcMap dutifully finishes exporting the map instead of raising an error, resulting in a map without the layer. You can try changing the Output Image Quality (Resample Ratio) setting to reduce the requested resolution, but the output quality will suffer.
+    </p>
+    <p>
+      In contrast, WMTS works by delivering a set of fixed-dimension tiles at the requested zoom level that cover the requested extent. Because the tiles are pre-rendered, all the server has to do is figure out which tiles to send and then send them—and this is sped up by the client caching previously received tiles and only requesting ones it hasn't seen yet. This allows WMTS to quickly serve up tiles for much larger and/or more detailed maps than WMS without clogging the server.
+    </p>
+  </Section>
+  <Section title="Small Text/Symbology in QGIS" stripe>
+    <p>
+      When using the basemap services in QGIS, you may experience small text and symbology when using bilinear or cubic resampling at scales other than the normal <ExternalLink href="https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated/">web map scales</ExternalLink>. The resampling settings are defined in `Layer Properties > Symbology > Resampling`. Using bilinear or cubic resampling can look much better than the default nearest neighbor method.
+    </p>
+    <p>
+      This behavior is controlled by the "oversampling" value. At values greater than `1.00`, the text/symbology can appear smaller (QGIS is sending a "zoomed out" WMTS request and sampling it down to your desired scale). At values less than `1.00`, text/symbology can appear larger (it sends a "zoomed in" request and samples it up). QGIS uses the resampling method selected in the "in" dropdown at values less than `1.00`, and the "out" method at values greater than `1.00`.
+    </p>
+  </Section>
+  <Section title="Printing web maps with secured links">
+    <p>
+      As explained in the <a href="/documentation/discover/licensed-imagery">licensed imagery documentation</a>, public web maps using licensed services must use a link that is locked down to the URL of the server (usually your ArcGIS Online organization URL). However, this can cause problems with the default ArcGIS Online print widgets, which may send your webmap to an external <ExternalLink href=https://doc.arcgis.com/en/arcgis-online/administer/configure-services.htm">Print Service</ExternalLink>. The locked-down links will not respond to requests from this service's domain and the layer won't export/print.
+    </p>
+    <p>
+      To work around this issue, we developed a <ExternalLink href="https://cloud.google.com/functions/">Google Cloud function</ExternalLink> called <ExternalLink href="https://github.com/agrc/serverless-print-proxy">serverless-print-proxy</ExternalLink>. Our proxy service takes the same parameters as Esri's Export Web Map. When it receives a request, it swaps out any locked-down quad-words with wide open quad-words. Then it simply passes on the request to your Export Web Map service and passes back the response stripped of the wide open quad-words for security. You can read more about how we built serverless-print-proxy in <a href="/blog/2017-02-02-printing-web-maps-with-discover-services">our blog post about it</a>. To get started, you need to get your account added to <ExternalLink href="https://github.com/agrc/serverless-print-proxy/blob/master/accounts.js">accounts.js</ExternalLink>. You can do this by <ExternalLink href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">submitting a pull request</ExternalLink>.
+    </p>
+
+  </Section>
+
+</Layout>
