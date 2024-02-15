@@ -10,7 +10,6 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -83,9 +82,9 @@ const page: IPageMetadata = {
       
     <p>Note: Significant enhancements (including a schema change) were made to this layer in June 2020.</p>
 
-    <p>
+      <b>CartoCode</b>
+      <p>For a more specific query of facility types, use the CartoCode field:</p>
       <li>
-        
         <ul class="list-disc pl-8">
           <li>1 - Hiking Only (Hiking and walking are the only uses allowed on this facility)</li>
           <li>2 - Hiking and Biking (Singletrack, natural surface facility. Hiking and biking are allowed)</li>
@@ -99,33 +98,34 @@ const page: IPageMetadata = {
           <li>9 - Link (Network route connection, see Link on CVDomain_TrailClass tab)</li>
         </ul>
       </li>
-    </p>
-    <p>
-      Use the <ExternalLink href="https://gis.utah.gov">ExternalLink</ExternalLink> component for external links. Use <a
-        href="/products/sgid/address">relative links</a
-      > for internal links.
-    </p>
-    <p>
-      Styling is done with <ExternalLink href="https://tailwindcss.com/docs/utility-first">tailwindcss</ExternalLink>.
-      But I can help take care of any extra formatting you are missing.
-    </p>
+      <b>Class</b>
+      For a general query of facility types, use the Class field:
+      <ul class="list-disc pl-8">
+        <li>Path - Paved, off-street travelway designed for non-motorized users, generally wider and with greater separation from roadway than a standard sidewalk</li>
+        <li>Trail - Natural surface travelway (dirt, gravel, slickrock, snow, etc)</li>
+        <li>Link - Network route connection through a parking lot, alleyway, etc. where a road segment does not exist but can be traversed via walking or bicycling</li>
+        <li>Steps - Developed (generally concrete) steps or stairs, usually occurring along a paved route</li>
+        <li>Single family with Accessory Dwelling Units (ADUs, currently only for Salt Lake County)</li>
+        <li>Grade Separated Crossing - Paved crossing feature above or below roadway, train track, etc. for walking and bicycling use only</li>
+      </ul>
+    </li>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title={`More ${page.title} resources`} slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Item 1" href="https://gis.utah.gov">Item 1 description.</CardWithPopularLink>
-      <CardWithPopularLink title="Item 2" href="/products/sgid/address/">Item 2 description.</CardWithPopularLink>
+      <CardWithPopularLink title="Trails and Pathways Data Model" href="https://docs.google.com/spreadsheets/d/1ArawJ_8LLmbPWSQjG6YmovcjBnc0S9Md0gviBJudu78/edit#gid=0">Explore the fields and domain values for this layer.</CardWithPopularLink>
+      <CardWithPopularLink title="Utah Trails Forum" href="https://recreation.utah.gov/utah-trails-forum/">Bringing together industry professionals, trail advocates, volunteers, and community leaders.</CardWithPopularLink>
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">Description</CardWithSmallLink>
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">Description</CardWithSmallLink>
-      <CardWithSmallLink title="Addresses" href="/products/sgid/address">Description</CardWithSmallLink>
-      <CardWithSmallLink title="Discover" href="/products/discover">Description</CardWithSmallLink>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov/">Explore this data UGRC's interactive mapping application</CardWithSmallLink>
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">Read how this data works with the transportaion layers</CardWithSmallLink>
+      <CardWithSmallLink title="Multi-Modal Network Dataset" href="/products/sgid/transportation/network-data">ESRI Network Dataset</CardWithSmallLink>
+      <CardWithSmallLink title="Discover" href="/products/discover">Explore UGRC's aerial imagery and base maps</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>
