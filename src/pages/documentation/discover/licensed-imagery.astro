@@ -1,44 +1,72 @@
 ---
-// import QuickLinks from '@components/page/QuickLinks.astro';
-import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import ExternalLink from '@components/page/ExternalLink.astro';
 import NumberedListItem from '@components/page/NumberedListItem.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
+import logos from '@downloads/google_logos.zip?url';
 
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'License',
+  pillar: 'Discover',
+  section: stripeSections([
+    { title: 'What is high-resolution imagery' },
+    { title: 'The license' },
+    { title: 'Who qualifies' },
+    { title: `Who doesn't automatically qualify` },
+    { title: 'Citation and logos' },
+  ]),
+};
 ---
-<Layout title="License">
-  <Section title="What is the High-Resolution Imagery?" stripe>
+
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
     <p>
-      At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google's state-wide, high-resolution (6-inch pixels) aerial photography as part of the state's on-going efforts to provide affordable high-resolution imagery. Google regularly updated the urban areas over the next few years, but some rural areas of the state were left with years-old imagery.
+      At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to
+      Google's state-wide, high-resolution (6-inch pixels) aerial photography as part of the state's on-going efforts to
+      provide affordable high-resolution imagery. Google regularly updated the urban areas over the next few years, but
+      some rural areas of the state were left with years-old imagery.
     </p>
     <p>
-      Google announced that they would no longer be offering their imagery after 2018, so we started searching for other vendors. After evaluating all our options and financial resources, we selected Hexagon Geospatial and their high-resolution imagery. Their 2021 imagery provides 15cm (~6 inch) coverage of the entire state, and we are anticipating a delivery of new updated imagery in 2024.
+      Google announced that they would no longer be offering their imagery after 2018, so we started searching for other
+      vendors. After evaluating all our options and financial resources, Hexagon Geospatial was selected and their
+      high-resolution imagery. Their 2021 imagery provides 15cm (~6 inch) coverage of the entire state, and we are
+      anticipating a delivery of new updated imagery in 2024.
     </p>
     <p>
-      We will continue to provide the previously acquired imagery from the Google contract via the various "Google" services on Discover.
+      We will continue to provide the previously acquired imagery from the Google contract via the various "Google"
+      services on Discover.
     </p>
   </Section>
-  <Section title="The license">
+  <Section {...page.section[1]}>
     <p>
-      The licenses governing both the Google and Hexagon imagery are very similar. They allow <strong>Utah's cities, counties, special districts, state agencies, school districts, colleges/universities, and tribes</strong> to use the imagery in web and desktop mapping applications either from our streaming web service or from locally-stored files. <strong>Contractors and formal partners of the immediate licensees</strong> are also allowed to use the imagery.
-      
+      The licenses governing both the Google and Hexagon imagery are very similar. They allow <strong
+        >Utah's cities, counties, special districts, state agencies, school districts, colleges/universities, and tribes</strong
+      > to use the imagery in web and desktop mapping applications either from our streaming web service or from locally-stored
+      files. <strong>Contractors and formal partners of the immediate licensees</strong> are also allowed to use the imagery.
     </p>
   </Section>
-  <Section title="Who qualifies?" stripe>
-    <ul class="list-disc list-inside">
+  <Section {...page.section[2]}>
+    <ul class="list-inside list-disc">
       <NumberedListItem>Utah state agencies</NumberedListItem>
       <NumberedListItem>Cities, counties, and other political subdivisions of the state of Utah</NumberedListItem>
       <NumberedListItem>Special districts (water, fire, etc) in the state of Utah</NumberedListItem>
-      <NumberedListItem>Students, faculty, and staff at Utah K-12 schools and institutions of higher education</NumberedListItem>
+      <NumberedListItem
+        >Students, faculty, and staff at Utah K-12 schools and institutions of higher education</NumberedListItem
+      >
       <NumberedListItem>Tribal entities</NumberedListItem>
       <NumberedListItem>Contractors and formal partners of an immediate licensee</NumberedListItem>
       <NumberedListItem>Utah National Guard</NumberedListItem>
     </ul>
   </Section>
-  <Section title="Who doesn't automatically qualify?">
-    <ul class="list-disc list-inside">
+  <Section {...page.section[3]}>
+    <ul class="list-inside list-disc">
       <NumberedListItem>Federal agencies</NumberedListItem>
       <NumberedListItem>US Military</NumberedListItem>
       <NumberedListItem>Cities, counties, or state agencies outside of the state of Utah</NumberedListItem>
@@ -50,29 +78,44 @@ import Layout from '@layouts/FullWidth.astro';
       <NumberedListItem>Consultants and contractors</NumberedListItem>
     </ul>
     <p>
-      <strong>Note</strong>: Federal agencies, US military entities, consultants, contractors, or other formal partners <strong>can qualify</strong> if they are directly performing work on behalf of a qualified licensee, but only for the specific project in the contract.
+      <strong>Note</strong>: Federal agencies, US military entities, consultants, contractors, or other formal partners <strong
+        >can qualify</strong
+      > if they are directly performing work on behalf of a qualified licensee, but only for the specific project in the
+      contract.
     </p>
   </Section>
-  <Section title="Citation and Logos" stripe>
+  <Section {...page.section[4]}>
     <p>
-      As part of our licenses with Google and Hexagon, you must provide proper attribution of any products created with their imagery.
+      As part of our licenses with Google and Hexagon, you must provide proper attribution of any products created with
+      their imagery.
+    </p>
+    <div>
+      <h3>Hexagon</h3>
+      <div class="space-y-1 pl-4">
+        <p>
+          You must cite any products using the Hexagon imagery (high-res 6" imagery from 2021 and later) with the
+          following text (with the year being the first year you published the product):
+        </p>
+        <h4>Print</h4>
+        <p class="pl-4">
+          "© {new Date().getFullYear()} HxGN Content Program, Hexagon", with the year being the first year you published
+          the product.
+        </p>
+        <h4>Online</h4>
+        <p class="pl-4">
+          "© {new Date().getFullYear()} HxGN Content Program, Hexagon", with the year being the first year you published
+          the product and the text "HxGN Content Program" linking to <ExternalLink href="https://hxgncontent.com"
+            >https://hxgncontent.com"</ExternalLink
+          >.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h3>Google</h3>
+      <p class="pl-4">
+        You must put the appropriate logo <a href={logos}>(zip file)</a> on any products made using the Google imagery (6"
+        imagery earlier than 2018)
       </p>
-      <dl>
-        <DefinitionListItem title="Hexagon">
-          <p>
-            You must cite any products using the Hexagon imagery (high-res 6" imagery from 2021 and later) with the following text (with the year being the first year you published the product):
-          </p>
-          <dl>
-            <DefinitionListItem title="Print">
-              "© 2024 HxGN Content Program, Hexagon", with the year being the first year you published the product.
-            </DefinitionListItem>
-            <DefinitionListItem title="Online">
-              "© 2024 HxGN Content Program, Hexagon", with the year being the first year you published the product and the text "HxGN Content Program" linking to <ExternalLink href="https://hxgncontent.com">https://hxgncontent.com"</ExternalLink>
-            </DefinitionListItem>
-          </dl>
-        <DefinitionListItem title="Google">
-          You must put the appropriate logo <a href="/downloads/google_logos.zip">(zipfile)</a> on any products made using the Google imagery (6" imagery earlier than 2018)
-        </DefinitionListItem>
-      </dl>
+    </div>
   </Section>
 </Layout>
