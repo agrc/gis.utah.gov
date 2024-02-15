@@ -1,3 +1,5 @@
+import type { Props as SectionProps } from '@components/pages/Section.astro';
+
 export interface IDataCategory {
   metadata: IMetadata;
   url: string;
@@ -31,6 +33,13 @@ export enum SgidCategory {
   TRANSPORTATION = 'Transportation',
   UTILITIES = 'Utilities',
   WATER = 'Water',
+}
+
+type OptionalPick<T, K extends PropertyKey> = Pick<T, Extract<keyof T, K>>
+export interface IStandardPageMetadata {
+  title: string;
+  pillar?: string;
+  section: OptionalPick<SectionProps, 'title' | 'subTitle' | 'actionUrl' | 'actionText'>[];
 }
 
 export interface IMetadata {

@@ -1,13 +1,16 @@
 ---
+import { createIdFromTitle } from '@utils/page';
+
 interface Props extends Pick<import('@components/page/Section.astro').Props, 'titlePosition'> {
-  title?: string;
+  title: string;
   subTitle?: string;
 }
 
 const { title, subTitle, titlePosition = 'inline' } = Astro.props;
+const anchor = createIdFromTitle(title);
 ---
 
 <div class:list={titlePosition === 'inline' ? [] : ['mx-auto max-w-prose px-8 pb-6 text-center md:max-w-screen-lg']}>
-  <h1 id={title?.toLowerCase().replaceAll(' ', '-')}>{title}</h1>
+  <h1 id={anchor}>{title}</h1>
   {subTitle && <p class="mt-2 text-xs uppercase text-primary dark:text-accent" set:html={subTitle} />}
 </div>

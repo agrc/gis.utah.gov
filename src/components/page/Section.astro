@@ -1,7 +1,8 @@
 ---
 import ButtonLink from '@components/page/ButtonLink.astro';
 import SectionTitle from '@components/page/supporting/SectionTitle.astro';
-interface Props {
+
+export interface Props {
   actionUrl?: string | null;
   actionText?: string;
   title?: string;
@@ -11,6 +12,7 @@ interface Props {
   titlePosition?: 'center' | 'inline';
   buttonPosition?: 'center' | 'inline';
 }
+
 const {
   actionUrl,
   actionText = 'See more',
@@ -21,6 +23,7 @@ const {
   titlePosition = 'inline',
   buttonPosition = 'inline',
 } = Astro.props;
+
 const hasImage = await Astro.slots.render('image');
 ---
 
@@ -31,7 +34,7 @@ const hasImage = await Astro.slots.render('image');
       ? primary
         ? 'primary-background bg-primary text-zinc-50'
         : 'stripe-background bg-white dark:bg-primary dark:text-zinc-300'
-      : 'bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300',
+      : 'bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300',
   ]}
 >
   {
