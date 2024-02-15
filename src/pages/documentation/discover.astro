@@ -30,10 +30,6 @@ const quickLinks = [
     name: "Common problems and issues",
     anchor: "common-problems-and-issues",
   },
-  {
-    name: "Web map printing with licensed imagery",
-    anchor: "web-map-printing-with-licensed-imagery",
-  },
 ];
 
 ---
@@ -99,17 +95,6 @@ const quickLinks = [
   />
     <p>
       Discover uses the common and open source WMS and WMTS standards, but you may still run into some problems.
-    </p>
-  </Section>
-  <Section title = "Web map printing with licensed imagery" actionUrl="/documentation/discover/printing" actionText='Print securely' >
-    <Image
-    slot="image"
-    src={images[`${location}/printing.svg`]()}
-    alt="printing maps with licensed imagery"
-    class="w-full max-w-[400px] rounded-2xl"
-  />
-    <p>
-      Licensed imagery in a public-facing web map requires a locked-down link, which breaks the standard web map print services. We've built a serverless print proxy you can deploy in the Google Cloud Platform to enable printing without exposing your public links.
     </p>
   </Section>
 </Layout>

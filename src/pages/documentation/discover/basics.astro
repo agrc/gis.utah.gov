@@ -110,7 +110,7 @@ import Layout from '@layouts/FullWidth.astro';
       WMS renders each request on the server according to the spatial extent requested by the client, using the server's resources to render a single, custom image for each request. While this results in a custom render for every zoom level, each pan and zoom queries a new request and a new render. In addition, to keep the server from being overwhelmed, WMS requests are often limited to a maximum number of pixels, which can cause problems when exporting or printing at large sizes or resolutions.
     </p>
     <p>
-      In contrast, WMTS simply servers up a pre-rendered set of tiles that cover the requested extent. This results in much faster performance and unlimited export and print capabilities. However, these tiles are only rendered at the common zoom levels, so the client must interpolate between these levels to render the map at custom scales, resulting in interpolation artifacts.
+      In contrast, WMTS simply servers up a pre-rendered set of tiles that cover the requested extent. This results in much faster performance and unlimited export and print capabilities. However, these tiles are only pre-rendered at the <ExternalLink href="https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated/">common zoom scales</ExternalLink>, so the client must interpolate between these levels to render the map at custom scales, resulting in interpolation artifacts.
     </p>
   </Section>
   <Section title="Offline imagery access">
