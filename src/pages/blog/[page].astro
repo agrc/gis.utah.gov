@@ -29,7 +29,6 @@ const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
 ---
 
 <FullWidth title="From the blog">
-  <Pagination page={page} class="mb-3" />
   <GridForLatestNews>
     {
       page.data.map((post) => (
@@ -44,4 +43,5 @@ const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
       ))
     }
   </GridForLatestNews>
+  <Pagination page={page} class="mb-3" />
 </FullWidth>
