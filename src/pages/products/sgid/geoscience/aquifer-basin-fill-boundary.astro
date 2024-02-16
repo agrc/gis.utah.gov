@@ -1,0 +1,64 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Aquifer Basin Fill Boundary',
+  description: `Aquifer Basin Fill Boundary contains the approximate boundaries of basin fill in ground-water recharge and discharge areas of the principal aquifers along the Wasatch Front and adjacent areas.`,
+  stewards: ['UGRC', 'USGS', 'DEQ'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.GEOSCIENCE,
+  secondaryCategory: SgidCategory.WATER,
+};
+
+const page: IPageMetadata = {
+  ...metadata, // this brings all the data from the metadata object above into the page object
+  updateHistory: [`August 2021`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application} config={{ skipInDepth: true }}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Aquifer Basin Fill Boundary contains the approximate boundaries of basin fill in ground-water recharge and discharge areas of the principal aquifers along the Wasatch Front and adjacent areas.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah Water Science Center" href="https://www.usgs.gov/centers/utah-water-science-center">USGS - Utah Water Science Center website.</CardWithPopularLink>
+      <CardWithPopularLink title="Division of Water Quality" href="https://deq.utah.gov/division-water-quality">Utah DEQ - Division of Water Quality website.</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Geoscience" href="/products/sgid/geoscience">Geoscience page</CardWithSmallLink>
+      <CardWithSmallLink title="UGS Hazards" href="https://geology.utah.gov/apps/hazards/"
+        >Utah Geologic Hazards Portal</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
