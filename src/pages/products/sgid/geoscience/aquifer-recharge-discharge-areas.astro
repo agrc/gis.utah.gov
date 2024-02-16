@@ -25,7 +25,7 @@ export const metadata: IMetadata = {
 };
 
 const page: IPageMetadata = {
-  ...metadata, // this brings all the data from the metadata object above into the page object
+  ...metadata,
   updateHistory: [`May 2016`],
   hub: {
     ...dataPages[metadata.title],
@@ -33,12 +33,19 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application} config={{ skipInDepth: true }}>
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
     <p>
-      Aquifer Recharge Discharge Areas contain the recharge and discharge areas of the principal aquifers along the Wasatch Front and adjacent areas.
+      Aquifer Recharge Discharge Areas contain the recharge and discharge areas of the principal aquifers along the
+      Wasatch Front and adjacent areas.
     </p>
   </Fragment>
 
@@ -46,10 +53,16 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <Section title="More resources" slot="more-resources"  stripe titlePosition="center">
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Utah Water Science Center" href="https://www.usgs.gov/centers/utah-water-science-center">USGS - Utah Water Science Center website.</CardWithPopularLink>
-      <CardWithPopularLink title="Division of Water Quality" href="https://deq.utah.gov/division-water-quality">Utah DEQ - Division of Water Quality website.</CardWithPopularLink>
+      <CardWithPopularLink
+        title="Utah Water Science Center"
+        href="https://www.usgs.gov/centers/utah-water-science-center"
+        >USGS - Utah Water Science Center website.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Division of Water Quality" href="https://deq.utah.gov/division-water-quality"
+        >Utah DEQ - Division of Water Quality website.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
