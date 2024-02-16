@@ -17,7 +17,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah Alluvial Fans',
-  description: `Active Alluvial Fan designations for Utah. Data represents a combination of existing geologic mapping 1964 – 2013, USGS Quadrangles 1:24,000, 2-ft contour data, historical and modern aerial photography 1937 – 2017, UGS flood and landslide hazard mapping, FEMA National Flood Hazard Layer, and field investigation with photos. The primary risk classification used are high and medium based on the presence of population at risk. Data is supported by a full study report. More detailed information on alluvial fan hazards in Utah is available from the Division of Emergency Management.`,
+  description: `Active Alluvial Fan designations for Utah. Active alluvial fan landforms are defined by location, composition, and flooding characteristics.`,
   stewards: ['Utah Division of Emergency Management (DEM)'],
   type: ProductType.POLYGON,
   category: SgidCategory.GEOSCIENCE,
@@ -33,12 +33,21 @@ const page: IPageMetadata = {
 ---
 
 <Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
-  config={{ skipInDepth: true }}
-
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>What is an Alluvial Fan?</p>
+    <p>
+      Active Alluvial Fan designations for Utah. This data represents a combination of existing geologic mapping 1964 –
+      2013, USGS Quadrangles 1:24,000, 2-ft contour data, historical and modern aerial photography 1937 – 2017, UGS
+      flood and landslide hazard mapping, FEMA National Flood Hazard Layer, and field investigation with photos. The
+      primary risk classification used are high and medium based on the presence of population at risk. Data is
+      supported by a full study report. More detailed information on alluvial fan hazards in Utah is available from the
+      Division of Emergency Management.
+    </p>
+  </Fragment>
+
+  <Fragment slot="description">
+    <h3>What is an Alluvial Fan?</h3>
 
     <p>
       Alluvial fans are created as flowing water interacts with mountains, hills, or steep canyon walls. Silt, sand,
