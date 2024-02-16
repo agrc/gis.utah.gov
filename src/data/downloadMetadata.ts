@@ -1323,15 +1323,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Aquifer Recharge Discharge Areas': {
     itemId: '6c3c9b1d4a0a45f0ae851e92b01940c3',
     name: 'Utah Aquifer Recharge Discharge Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Aquifer_RechargeDischargeAreas',
+    openSgid: 'geoscience.aquifer_recharge_discharge_areas',
     layerId: 0,
   },
   'Utah Aquifer Basin Fill Boundary': {
     itemId: 'ad928a732ddb4a8db1579a0a8bb8abfe',
     name: 'Utah Aquifer Basin Fill Boundary',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Aquifer_BasinFillBoundary',
+    openSgid: 'geoscience.aquifer_basin_fill_boundary',
     layerId: 0,
   },
   'Utah Alluvial Fans': {
