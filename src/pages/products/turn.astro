@@ -63,9 +63,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
             alt="a person connected to a database with a lock and key shield"
             class="block h-44"
           />
-          Once you have an account you can connect to the network using a variety of devices by simply entering the IP Address,
-          Port, Username, Password and mountpoint from the source list. We've put together a guide for selecting the best
-          mountpoint for your situation.
+          Once you have an account you can connect to the network using a variety of devices. We've put together guides for
+          many popular devices. If you don't see your device listed, contact us and we'll help you get connected.
         </CardWithTopImage>
         <CardWithTopImage title="Resources" actionUrl="/products/turn/resources">
           <Image
@@ -103,14 +102,14 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
         />
         Hang the network on your wall.
       </CardWithSideImage>
-      <CardWithSideImage title="Empty" actionUrl="/">
+      <CardWithSideImage title="Purchase or renew an account" actionUrl="/">
         <Image
           slot="image"
           src={images[`${location}map.svg`]()}
           alt="a person checking out at the grocery store"
           class="self-center"
         />
-        Description
+        Instructions on how you can sign up for or renew your account.
       </CardWithSideImage>
     </GridForMoreResources>
   </Section>
