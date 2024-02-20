@@ -3,24 +3,14 @@ import Pagination from '@components/Pagination.astro';
 import CardWithDate from '@components/page/CardWithDate.astro';
 import GridForLatestNews from '@components/page/GridForLatestNews.astro';
 import FullWidth from '@layouts/FullWidth.astro';
-import getReadingTimeFromMarkdown from '@utils/readingTime';
+import { getBlogPosts } from '@utils/collections';
 import type { Page } from 'astro';
 import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
 import { fromMarkdown } from 'mdast-util-from-markdown';
 import { toString } from 'mdast-util-to-string';
 
 export async function getStaticPaths({ paginate }) {
-  const posts = (await getCollection('blog'))
-    .filter((post) => post.data.published)
-    .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf())
-    .map((post) => ({
-      ...post,
-      data: {
-        ...post.data,
-        estimatedReadTime: getReadingTimeFromMarkdown(post.body),
-      },
-    }));
+  const posts = await getBlogPosts();
 
   return paginate(posts, { pageSize: 20 });
 }
