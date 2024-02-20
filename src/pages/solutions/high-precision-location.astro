@@ -1,0 +1,90 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+import { Image } from 'astro:assets';
+
+import developmentPhoto from '@images/solutions/development.svg';
+import enhancePhoto from '@images/solutions/enhance.svg';
+import mapPhoto from '@images/solutions/map.svg';
+import rocketPhoto from '@images/solutions/rocket.svg';
+
+import ExternalLink from '@components/page/ExternalLink.astro';
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'High precision location',
+  section: stripeSections([
+    {},
+    { title: 'Drones' },
+    { title: 'Driverless vehicles' },
+    { title: 'Monitoring' },
+    { title: 'Weather' },
+  ]),
+};
+---
+
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      slot="image"
+      src={developmentPhoto}
+      loading="eager"
+      alt="a person with a prototype on an easel and the app partially built on a phone"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+
+    <p>
+      Our Global Navigation Satellite System (GNSS) network consists of permanently located GPS receivers, installed
+      across an area, that generates real-time, high-accuracy GPS positioning. All of our permanently installed GPS
+      receivers send their data to a central system via the internet. This central system analyzes the input and adjusts
+      and corrects the data to provide the most accurate locations, usually down to centimeter level. Our networks use
+      the Trimble PIVOT VRS Platform. The generated data is sent from the GPS receiver to the GPS reference network
+      through a wireless connection using the Networked Transport of RTCM via Internet Protocol (NTRIP).
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
+    <p>
+      Our real-time GPS network plays a crucial role in keeping drones in designated flight corridors. This aids a
+      multitude of services including critical medical deliveries.
+
+      <i>insert image of drone flying medical supplies</i>
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <Image slot="image" src={mapPhoto} alt="two people holding a map" class="w-full max-w-[400px]" />
+  </Section>
+  <Section title="Monitoring" actionText="Browse our data" actionUrl="/products/sgid">
+    <Image
+      slot="image"
+      src={enhancePhoto}
+      alt="a person with a box labeled v2 that is upgrading their application"
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      Navigation of driverless vehicles is greatly improved when using a real-time network versus a standard GPS
+      network. Having a reliable network helps keep drivers safe by preventing collisions and keeping vehicles in the
+      appropriate lane. <i>insert images of vehicle driving with standard GPS and real-time network</i>
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <p>
+      High-accuracy GNSS networks have been used in science and research to study and better understand the world around
+      us. Our GNSS network can help support Disaster Response Management, agricultural and forestry, landslide
+      monitoring, and more! This <ExternalLink
+        href="https://drive.google.com/file/d/1b1VQn5dk7fcTm1IEaQ4-veqZm6HvzWkp/view?usp=sharing">example</ExternalLink
+      > shows land movement following a 2011 earthquake in Japan.
+    </p>
+  </Section>
+  <Section {...page.section[4]}>
+    <p>
+      A high-accuracy GNSS network plays a crucial role in meteorology and mitigating the effects of climate change.
+      Real-time measurements can help improve weather predictions, severe weather monitoring, atmospheric modeling, and
+      much more!
+    </p>
+  </Section>
+</Layout>

@@ -1,13 +1,22 @@
 ---
-import Layout from '@layouts/FullWidth.astro';
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
 import { Image } from 'astro:assets';
 
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/visiting/*.{jpg,png,svg}');
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Meet us',
+  section: stripeSections([{ title: 'Visiting UGRC' }, { title: 'Where to park' }, { title: 'Checking in' }]),
+};
 ---
 
-<Layout title="Meet us">
-  <Section title="Visiting UGRC">
+<Layout title={page.title}>
+  <Section {...page.section[0]}>
     <Image
       class="rounded-lg border-2 border-primary"
       src={images['/src/images/pillar-contact/visiting/visiting_ugrc_location.png']()}
@@ -38,7 +47,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
       a 3/4-mile (15 minute) walk from the TSOB.
     </p>
   </Section>
-  <Section title="Where to park" stripe>
+  <Section {...page.section[1]}>
     <Image
       class="rounded-lg border-2 border-primary"
       src={images['/src/images/pillar-contact/visiting/visiting_ugrc_parking.jpg']()}
@@ -53,7 +62,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
       either of the lots west of the building.
     </p>
   </Section>
-  <Section title="Checking in">
+  <Section {...page.section[2]}>
     <Image
       src={images['/src/images/pillar-contact/visiting/check-in.svg']()}
       alt="A person at a log in screen"

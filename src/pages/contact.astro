@@ -1,20 +1,43 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
 import type { ImageMetadata } from 'astro';
 
-import Layout from '@layouts/FullWidth.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import StaffMember from '@components/page/StaffMember.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { staff } from '@data/staff';
 
 import { Image } from 'astro:assets';
 
-import { staff } from '../data/staff';
-
 const location = '/src/images/pillar-contact/';
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/*.svg');
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Contact',
+  section: stripeSections([
+    { title: 'General office information', actionUrl: '/contact/visiting', actionText: 'Get directions' },
+    { title: 'Meet our team', titlePosition: 'center' },
+    {
+      title: 'UGRC social media',
+      actionUrl: 'https://twitter.com/MapUtah',
+      actionText: 'Get connected',
+    },
+    {
+      title: 'UGRC quarterly newsletter',
+      actionUrl: 'https://cdn.forms-content.sg-form.com/61e82d28-f0d5-11ec-847c-a26809937a38',
+      actionText: 'Sign up',
+    },
+  ]),
+};
 ---
 
-<Layout title="Contact">
-  <Section title="General Office Information" actionUrl="/contact/visiting" actionText="Get directions">
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
     <Image
       slot="image"
       loading="eager"
@@ -39,12 +62,12 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
       </div>
     </div>
   </Section>
-  <Section title="Meet our team" stripe titlePosition="center">
+  <Section {...page.section[1]}>
     <ul role="list" class="mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
       {staff.map((member) => <StaffMember {...member} />)}
     </ul>
   </Section>
-  <Section title="UGRC Social Media" actionUrl="https://twitter.com/MapUtah" actionText="Check us out">
+  <Section {...page.section[2]}>
     <Image
       slot="image"
       src={images[`${location}social-media.svg`]()}
@@ -69,12 +92,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
       newsletter to stay up to date.
     </p>
   </Section>
-  <Section
-    title="UGRC quarterly newsletter"
-    actionUrl="https://cdn.forms-content.sg-form.com/61e82d28-f0d5-11ec-847c-a26809937a38"
-    actionText="Sign up"
-    stripe
-  >
+  <Section {...page.section[3]}>
     <Image
       slot="image"
       src={images[`${location}newsletter.svg`]()}

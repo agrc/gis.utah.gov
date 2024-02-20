@@ -1,18 +1,34 @@
 ---
-import Layout from '@layouts/FullWidth.astro';
-import Section from '@components/page/Section.astro';
-import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
 import { YouTube } from '@astro-community/astro-embed-youtube';
 
 import aboutUsPhoto from '@images/about/about-us.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'About the UGRC',
+  section: stripeSections([
+    { title: 'Who is the UGRC' },
+    { title: 'What we do', titlePosition: 'center' },
+    { title: 'Our Vision' },
+    { title: 'You might also like', titlePosition: 'center' },
+  ]),
+};
 ---
 
-<Layout title="About the UGRC">
-  <Section title="Who is the UGRC">
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
     <Image
       slot="image"
       src={aboutUsPhoto}
@@ -38,7 +54,7 @@ import aboutUsPhoto from '@images/about/about-us.svg';
       and map and web service development and hosting.
     </p>
   </Section>
-  <Section title="What we do" stripe titlePosition="center">
+  <Section {...page.section[1]}>
     <div class="mx-auto w-full max-w-4xl">
       <YouTube
         class="aspect-video max-w-full rounded-lg border-2 border-black shadow-xl"
@@ -47,7 +63,7 @@ import aboutUsPhoto from '@images/about/about-us.svg';
       />
     </div>
   </Section>
-  <Section title="Our Vision">
+  <Section {...page.section[2]}>
     <p>
       UGRC is directed under mapping-related sections of Utah statute to coordinate GIS resources within state
       government including the management of the State Geographic Information Database (SGID) and the operation of The
@@ -61,7 +77,7 @@ import aboutUsPhoto from '@images/about/about-us.svg';
       technology, and the quest for enterprise-wide efficiency.
     </p>
   </Section>
-  <Section title="You might also like" stripe titlePosition="center">
+  <Section {...page.section[3]}>
     <GridForYouMightLike>
       <CardWithSmallLink title="GIS-related Utah Statute" href="/about/code" style="secondary">
         State of Utah statute and administrative rules pertaining to Geographic Information Systems & Mapping
