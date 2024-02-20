@@ -333,6 +333,9 @@
     "xlink",
     "zipcode"
   ],
+  "cSpell.enableFiletypes": [
+    "astro"
+  ],
   "[astro]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120
