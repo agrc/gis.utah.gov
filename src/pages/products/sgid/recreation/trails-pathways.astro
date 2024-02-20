@@ -17,43 +17,24 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Trails and Pathways', // The ArcGIS Online title Goes Here
+  title: 'Utah Trails and Pathways',
   description: `Established trails and pathways in Utah`,
   stewards: ['UGRC'],
-  type: ProductType.POLYLINE, // This comes from the ProductType enum in types.ts
-  category: SgidCategory.RECREATION, // This comes from the SgidCategory enum in types.ts
-  secondaryCategory: SgidCategory.TRANSPORTATION, // This is optional and only used when a dataset is in two categories
+  type: ProductType.POLYLINE,
+  category: SgidCategory.RECREATION,
+  secondaryCategory: SgidCategory.TRANSPORTATION,
 };
 
 const page: IPageMetadata = {
-  ...metadata, // this brings all the data from the metadata object above into the page object
-  application: 'https://gis.utah.gov/', // this is optional and only used when a product has an associated web application. It creates a button under the summary that says `See the data in action`. Delete if it is unused.
-  // the update history is the complete set up updates. They are in the order of newest first. The 0 index item will be shown as the last update in the top of the page.
+  ...metadata,
+
   updateHistory: [
     `October 6, 2023`,
   ],
 
-  // hub is optional but it is the primary download type for most datasets
-  // the dataPages object is the modified AGOLItems table from the internal SGID database
-  // You can view it in `/data/downloadMetadata.ts`
-  // The title from metadata.title above should be in the dataPages list.
-  // The object in dataPages is not complete and a few properties need to be added.
-  // 1. The feature service id. That is the name of the feature server created in our ArcGIS online account. You can view all of the services in https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services
-  // 2. Verify that the layer id for the feature service is 0. If it is not, modify it to match. In the feature server you will see Layers: AvalanchePaths (0). The 0 is the layer id.
-  // 3. The open sgid table name. Open the Open SGID and add the schema.table_name value to the object.
-  // delete this if it is unused
   hub: {
     ...dataPages[metadata.title],
   },
-
-  // links are optional and only used when a product has download type of links that aren't ArcGIS Hub
-  // delete this if it is unused
-  links: [
-    {
-      title: 'The link title',
-      url: 'https://link-to-the-resource.com',
-    },
-  ],
 };
 ---
 
@@ -66,15 +47,12 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <!-- the title for hub data is typically `Use the data` but it can be anything
-  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
     <HubDownloads {...page.hub} />
   </Section>
 
   <Fragment slot="description">
-    <p>This dataset primarily depicts features used by hikers/pedestrians and bikers. It began with map data purchased from a private entity (Orbital View, Inc), for which full rights were purchased by the GOED Office of Outdoor Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah and Wasatch counties); 2018/2019 additions as part of the multimodal project; and currently ongoing updates by WFRC transportation planners.</p>
+    <p>This dataset primarily depicts features used by hikers/pedestrians and bikers. It began with map data purchased from a private entity (Orbital View, Inc), for which full rights werCe purchased by the GOED Office of Outdoor Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah and Wasatch counties); 2018/2019 additions as part of the multimodal project; and currently ongoing updates by WFRC transportation planners.</p>
 
     <p>Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be represented in this map layer.</p>
       
@@ -84,31 +62,36 @@ const page: IPageMetadata = {
 
       <b>CartoCode</b>
       <p>For a more specific query of facility types, use the CartoCode field:</p>
-      <li>
-        <ul class="list-disc pl-8">
-          <li>1 - Hiking Only (Hiking and walking are the only uses allowed on this facility)</li>
-          <li>2 - Hiking and Biking (Singletrack, natural surface facility. Hiking and biking are allowed)</li>
-          <li>3 - Paved Shared Use (Paved shared use path, recreational path, urban pathway)</li>
-          <li>4 - Road-concurrent (Facility is on or adjacent to a road, generally a natural surface double track, forest service road, canal road, etc.)</li>
-          <li>Single family with Accessory Dwelling Units (ADUs, currently only for Salt Lake County)</li>
-          <li>5 - Biking Only- (Biking is the primary or only use on this facility. High speeds, blind corners and technical features are common. For safety reasons, hiking, if not expressly prohibited, is not recommended.)</li>
-          <li>6 - Equestrian Primary (Equestrian is the primary use on this facility)</li>
-          <li>7 - Steps (Steps, staircase, or other feature that is not accessible to wheeled or assistive devices on otherwise paved / accessible route)</li>
-          <li>8 - Bridge, Tunnel (Grade change above or below ground surface, generally a bridge or tunnel)</li>
-          <li>9 - Link (Network route connection, see Link on CVDomain_TrailClass tab)</li>
-        </ul>
-      </li>
+      <ol>
+        <li>
+          <ul class="list-disc pl-8">
+            <li>1 - Hiking Only (Hiking and walking are the only uses allowed on this facility)</li>
+            <li>2 - Hiking and Biking (Singletrack, natural surface facility. Hiking and biking are allowed)</li>
+            <li>3 - Paved Shared Use (Paved shared use path, recreational path, urban pathway)</li>
+            <li>4 - Road-concurrent (Facility is on or adjacent to a road, generally a natural surface double track, forest service road, canal road, etc.)</li>
+            <li>Single family with Accessory Dwelling Units (ADUs, currently only for Salt Lake County)</li>
+            <li>5 - Biking Only- (Biking is the primary or only use on this facility. High speeds, blind corners and technical features are common. For safety reasons, hiking, if not expressly prohibited, is not recommended.)</li>
+            <li>6 - Equestrian Primary (Equestrian is the primary use on this facility)</li>
+            <li>7 - Steps (Steps, staircase, or other feature that is not accessible to wheeled or assistive devices on otherwise paved / accessible route)</li>
+            <li>8 - Bridge, Tunnel (Grade change above or below ground surface, generally a bridge or tunnel)</li>
+            <li>9 - Link (Network route connection, see Link on CVDomain_TrailClass tab)</li>
+          </ul>
+        </li>
+      </ol>
       <b>Class</b>
       For a general query of facility types, use the Class field:
-      <ul class="list-disc pl-8">
-        <li>Path - Paved, off-street travelway designed for non-motorized users, generally wider and with greater separation from roadway than a standard sidewalk</li>
-        <li>Trail - Natural surface travelway (dirt, gravel, slickrock, snow, etc)</li>
-        <li>Link - Network route connection through a parking lot, alleyway, etc. where a road segment does not exist but can be traversed via walking or bicycling</li>
-        <li>Steps - Developed (generally concrete) steps or stairs, usually occurring along a paved route</li>
-        <li>Single family with Accessory Dwelling Units (ADUs, currently only for Salt Lake County)</li>
-        <li>Grade Separated Crossing - Paved crossing feature above or below roadway, train track, etc. for walking and bicycling use only</li>
-      </ul>
-    </li>
+      <ol>
+        <li>
+        <ul class="list-disc pl-8">
+          <li>Path - Paved, off-street travelway designed for non-motorized users, generally wider and with greater separation from roadway than a standard sidewalk</li>
+          <li>Trail - Natural surface travelway (dirt, gravel, slickrock, snow, etc)</li>
+          <li>Link - Network route connection through a parking lot, alleyway, etc. where a road segment does not exist but can be traversed via walking or bicycling</li>
+          <li>Steps - Developed (generally concrete) steps or stairs, usually occurring along a paved route</li>
+          <li>Single family with Accessory Dwelling Units (ADUs, currently only for Salt Lake County)</li>
+          <li>Grade Separated Crossing - Paved crossing feature above or below roadway, train track, etc. for walking and bicycling use only</li>
+        </ul>
+        </li>
+      </ol>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
