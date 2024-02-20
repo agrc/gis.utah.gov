@@ -26,10 +26,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   application: 'https://abs.utah.gov/shop-products/find-store/',
-  updateHistory: [
-    `August 2023`,
-    `March 2017`,
-  ],
+  updateHistory: [`August 2023`, `March 2017`],
 
   hub: {
     ...dataPages[metadata.title],
@@ -37,39 +34,52 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application} config={{skipInDepth:true}}>
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>Liquor stores contains information and locations for liquor stores and package agencies controlled by the
+    <p>
+      Liquor stores contains information and locations for liquor stores and package agencies controlled by the
       Department of Alcoholic Beverage Services of Utah. These locations were originally geocoded from DABS store
-      addresses and are now being updated as locations are added, moved, or closed.</p>
+      addresses and are now being updated as locations are added, moved, or closed.
+    </p>
   </Fragment>
 
-  <!-- the title for hub data is typically `Use the data` but it can be anything
-  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
     <HubDownloads {...page.hub} />
   </Section>
 
-
-  <!-- <UpdateHistory slot="update-history" updates={page.updateHistory} /> -->
-
-
   <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="DABS" href="https://abs.utah.gov/">Department of Alcoholic Beverage Services.</CardWithPopularLink>
-      <CardWithPopularLink title="Visit Utah" href="/products/sgid/address/">Utah Liquor Laws Visitor Guide.</CardWithPopularLink>
+      <CardWithPopularLink title="DABS" href="https://abs.utah.gov/"
+        >Department of Alcoholic Beverage Services website.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Visit Utah" href="/products/sgid/address/"
+        >Get up to speed on Utah liquor laws.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov">Utah base maps and more</CardWithSmallLink>
-      <CardWithSmallLink title="Health Care Facilities" href="/products/sgid/health/health-care-facilities/">Hospitals and other health care locations</CardWithSmallLink>
-      <CardWithSmallLink title="Law Enforcement" href="/products/sgid/society/law-enforcement/">Law enforcement office locations</CardWithSmallLink>
-      <CardWithSmallLink title="Ski Areas" href="/products/sgid/recreation/ski-areas/">Ski area locations</CardWithSmallLink>
+      <CardWithSmallLink title="Golf courses" href="/products/sgid/recreation/golf-courses"
+        >Explore Utah golf course locations.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Health care facilities" href="/products/sgid/health/health-care-facilities/"
+        >Hospitals and other health care locations.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Law enforcement" href="/products/sgid/society/law-enforcement/"
+        >Law enforcement office locations.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Ski areas" href="/products/sgid/recreation/ski-areas/"
+        >Ski area locations.</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>
