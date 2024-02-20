@@ -2149,7 +2149,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Watersheds Area': {
     itemId: 'eedaf451685b4cbe875ecf692e1b54ff',
     name: 'Utah Watersheds Area',
-    featureServiceId: null,
+    featureServiceId: 'Watersheds_Area',
     openSgid: '',
     layerId: 0,
   },

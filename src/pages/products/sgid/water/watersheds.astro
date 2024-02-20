@@ -1,0 +1,88 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Watersheds Area', // The ArcGIS Online title Goes Here (Utah blah blah)
+  description: `Watershed boundaries of Utah.`,
+  stewards: ['UGRC', 'USGS'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.WATER,
+};
+
+const page: IPageMetadata = {
+  ...metadata, // this brings all the data from the metadata object above into the page object
+  updateHistory: [
+    `November 2023`,
+  ],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah watershed areas represented by Hydrologic Unit Codes (HUC) 8, 10, and 12.
+    </p>
+  </Fragment>
+
+  <!-- the title for hub data is typically `Use the data` but it can be anything
+  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>Utah Watershed Area was built using data from the USGS Watershed Boundary Dataset (WBD). Data was downloded from
+       the download-by-state area in GDB format. HUC8, HUC10 and HUC12 datasets were merged into this dataset, maintaining the linework for HUC12. This allows the data to be dissolved by HUC level to obtain HUC10 and HUC8 boundaries as the boundaries are coincident. The data contains the attributes from all 3 HUC levels.
+
+      <li><code>HUC_8</code> contains the 8 digit hydrologic unit code for the 4th level sub-basins.</li>
+      <li><code>HU_8_NAME</code> contains the sub-basin name.</li>
+      <li><code>HUC_10</code> contains the 10 digit hydrologic unit code for the 5th level watersheds.</li>
+      <li><code>HU_10_NAME</code> contains the watershed name.</li>
+      <li><code>HUG_12</code> contains the 12 digit hydrologic unit code for the 6th level subwatersheds.</li>
+      <li><code>HU_12_NAME</code> contains the subwatershed name.</li>
+      
+      This data set is intended to be used as a tool for water-resource management and planning activities, particularly for site-specific and localized studies requiring a level of detail provided by large-scale map information.
+    </p>
+ 
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="USGS NHD" href="https://www.usgs.gov/national-hydrography/access-national-hydrography-products">National Hydrography Dataset (NHD) products and downloads.</CardWithPopularLink>
+      <CardWithPopularLink title="USGS WBD" href="https://www.usgs.gov/national-hydrography/watershed-boundary-dataset">About the Watershed Boundary Dataset (WBD).</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="NHD Lakes" href="/products/sgid/water/lakes-nhd">National Hydrography Dataset lakes</CardWithSmallLink>
+      <CardWithSmallLink title="NHD Rivers" href="/products/sgid/water/streams-nhd">National Hydrography Dataset streams/rivers</CardWithSmallLink>
+      <CardWithSmallLink title="NHD Springs" href="/products/sgid/water/springs-nhd">National Hydrography Dataset spring locations</CardWithSmallLink>
+      <CardWithSmallLink title="NHD Stream Guages" href="/products/sgid/water/stream-guage-nhd">National Hydrography Dataset stream flow guages</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
