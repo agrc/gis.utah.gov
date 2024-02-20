@@ -29,9 +29,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
 
-  updateHistory: [
-    `October 6, 2023`,
-  ],
+  updateHistory: [`October 6, 2023`],
 
   hub: {
     ...dataPages[metadata.title],
@@ -44,7 +42,9 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      The Utah Trails and Pathways map layer represents off-street features and important road connections that augment Utah’s recreational trail and transportation network. This map layer features many of Utah’s trails and pathways but is not yet complete.
+      The Utah Trails and Pathways map layer represents off-street features and important road connections that augment
+      Utah's recreational trail and transportation network. This map layer features many of Utah's trails and pathways
+      but is not yet complete.
     </p>
   </Fragment>
 
@@ -53,12 +53,29 @@ const page: IPageMetadata = {
   </Section>
 
   <Fragment slot="description">
-    <p>This dataset primarily depicts features used by hikers/pedestrians and bikers. It began with map data purchased from a private entity (Orbital View, Inc), for which full rights werCe purchased by the GOED Office of Outdoor Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of Governments (Utah and Wasatch counties); 2018/2019 additions as part of the multimodal project; and currently ongoing updates by WFRC transportation planners.</p>
+    <p>
+      This dataset primarily depicts features used by hikers/pedestrians and bikers. It began with map data purchased
+      from a private entity (Orbital View, Inc), for which full rights werCe purchased by the GOED Office of Outdoor
+      Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions
+      from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest
+      Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of
+      Governments (Utah and Wasatch counties); 2018/2019 additions as part of the multimodal project; and currently
+      ongoing updates by WFRC transportation planners.
+    </p>
 
-    <p>Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be represented in this map layer.</p>
-      
-    <p>Although it is a work in progress, this dataset represents a substantial starting point to integrate additional trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local government and land stewards to review and continue to improve upon this data. Additional segments can be submitted to UGRC for inclusion in this dataset.</p>
-      
+    <p>
+      Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide
+      roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be
+      represented in this map layer.
+    </p>
+
+    <p>
+      Although it is a work in progress, this dataset represents a substantial starting point to integrate additional
+      trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local
+      government and land stewards to review and continue to improve upon this data. Additional segments can be
+      submitted to UGRC for inclusion in this dataset.
+    </p>
+
     <p>Note: Significant enhancements (including a schema change) were made to this layer in June 2020.</p>
 
     <b>CartoCode</b>
@@ -122,8 +139,14 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Trails and Pathways Data Model" href="https://docs.google.com/spreadsheets/d/1ArawJ_8LLmbPWSQjG6YmovcjBnc0S9Md0gviBJudu78/edit#gid=0">Explore the fields and domain values for this layer.</CardWithPopularLink>
-      <CardWithPopularLink title="Utah Trails Forum" href="https://recreation.utah.gov/utah-trails-forum/">Bringing together industry professionals, trail advocates, volunteers, and community leaders.</CardWithPopularLink>
+      <CardWithPopularLink
+        title="Trails and Pathways Data Model"
+        href="https://docs.google.com/spreadsheets/d/1ArawJ_8LLmbPWSQjG6YmovcjBnc0S9Md0gviBJudu78/edit#gid=0"
+        >Explore the fields and domain values for this layer.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah Trails Forum" href="https://recreation.utah.gov/utah-trails-forum/"
+        >Bringing together industry professionals, trail advocates, volunteers, and community leaders.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
