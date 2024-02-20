@@ -1,14 +1,32 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
 import communityPhoto from '@images/collaboration/community.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'GIS community',
+  section: stripeSections([
+    {},
+    {
+      title: 'Demonstration heading',
+      actionUrl: '/collaboration/somewhere',
+      actionText: 'Link text... can be empty for default value',
+    },
+  ]),
+};
 ---
 
-<Layout title="GIS community">
-  <Section>
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
     <Image
       slot="image"
       src={communityPhoto}
@@ -19,7 +37,7 @@ import communityPhoto from '@images/collaboration/community.svg';
     Utah is home to a variety of user groups that cover the state and include, federal, state, and local agencies as well
     as other interested partners.
   </Section>
-  <Section stripe>
+  <Section {...page.section[1]}>
     <ul>
       <li>Utah Geographic Information Council (UGIC)</li>
       <li>Utah Council of Land Surveyors (UCLT)</li>
