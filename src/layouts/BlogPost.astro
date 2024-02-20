@@ -2,8 +2,8 @@
 import FormattedDate from '@components/FormattedDate.astro';
 import type { CollectionEntry } from 'astro:content';
 
-type BlogPost = CollectionEntry<'blog'>['data'];
-interface Props extends BlogPost {
+type BlogData = CollectionEntry<'blog'>['data'];
+interface Props extends BlogData {
   estimatedReadTime?: string;
   lastUpdated: Date;
 }
