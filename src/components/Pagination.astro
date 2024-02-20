@@ -6,8 +6,9 @@ import { twMerge } from 'tailwind-merge';
 interface Props {
   page: Page;
   class: string;
+  baseHref: string;
 }
-const { page, class: className } = Astro.props;
+const { page, class: className, baseHref } = Astro.props;
 const maxLinks = 5;
 
 let bufferLinks = Math.floor(maxLinks / 2);
@@ -47,7 +48,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
       hasStartEllipsis ? (
         <>
           <li>
-            <a href={`./${1}`} class={linkClasses} aria-label="go to first page">
+            <a href={`/${baseHref}`} class={linkClasses} aria-label="go to first page">
               {1}
             </a>
           </li>
@@ -72,7 +73,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
       links.map((num) => (
         <li>
           <a
-            href={`./${num}`}
+            href={`/${baseHref}/${num === 1 ? '' : num}`}
             class={twMerge(linkClasses, num === page.currentPage && 'bg-zinc-200 dark:text-zinc-600')}
             aria-current={num === page.currentPage ? 'page' : undefined}
             aria-label={num !== page.currentPage ? `go to page ${page.currentPage}` : undefined}
@@ -100,7 +101,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
             />
           </svg>
           <li>
-            <a href={`./${page.lastPage}`} class={linkClasses} aria-label="go to last page">
+            <a href={`/${baseHref}/${page.lastPage}`} class={linkClasses} aria-label="go to last page">
               {page.lastPage}
             </a>
           </li>

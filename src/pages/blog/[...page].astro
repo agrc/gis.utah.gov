@@ -43,5 +43,5 @@ const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
       ))
     }
   </GridForLatestNews>
-  <Pagination page={page} class="mb-3" />
+  <Pagination page={page} class="mb-3" baseHref="blog" />
 </FullWidth>
