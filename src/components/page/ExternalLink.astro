@@ -8,7 +8,7 @@ const { href, type = 'normal' } = Astro.props;
 
 <a
   href={href}
-  class:list={['inline-flex items-center gap-x-1', type === 'custom' ? 'custom-style' : null]}
+  class:list={['inline-flex flex-wrap items-center gap-x-1', type === 'custom' ? 'custom-style' : null]}
   rel="nofollow"
 >
   <span>
