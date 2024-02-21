@@ -1,6 +1,8 @@
 import getReadingTimeFromMarkdown from '@utils/readingTime';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { execSync } from 'child_process';
+import { fromMarkdown } from 'mdast-util-from-markdown';
+import { toString } from 'mdast-util-to-string';
 
 const getLastModifiedTime = (path: string) => {
   if (import.meta.env.DEV) {
@@ -35,6 +37,7 @@ export async function getBlogPosts(): Promise<DecoratedBlogEntry[]> {
         ...post,
         data: {
           ...post.data,
+          description: toString(fromMarkdown(post.body)).slice(0, 200) ?? 'a blog post',
           estimatedReadTime: getReadingTimeFromMarkdown(post.body),
           lastUpdated: getLastModifiedTime(post.id),
         },
