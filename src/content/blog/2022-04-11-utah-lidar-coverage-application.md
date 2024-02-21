@@ -10,7 +10,7 @@ categories:
   - SGID Blog
 tags:
   - lidar
-  - dem
+  - digital elevation model
   - elevation
 ---
 

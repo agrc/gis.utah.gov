@@ -4,7 +4,7 @@ author:
   email: rkelson@utah.gov
 tags:
   - contours
-  - dem
+  - digital elevation model
   - elevation
   - las
   - lidar

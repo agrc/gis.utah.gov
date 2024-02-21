@@ -3,12 +3,9 @@ author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags:
-  - dem
   - digital elevation model
   - digital surface model
   - digital terrain model
-  - dsm
-  - dtm
   - lidar
   - viewshed
 date: 2014-11-17 12:15:04 -0700

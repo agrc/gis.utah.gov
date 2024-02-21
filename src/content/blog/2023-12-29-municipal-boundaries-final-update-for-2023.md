@@ -7,7 +7,7 @@ date: 2023-12-29 16:38:39
 categories:
   - SGID Blog
 tags:
-  - municipal
+  - municipal boundaries
   - boundaries
   - annexations
 ---
