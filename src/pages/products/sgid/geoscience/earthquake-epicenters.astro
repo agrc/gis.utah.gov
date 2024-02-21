@@ -16,16 +16,16 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Avalanche Paths',
-  description: `Avalanche paths in Utah.`,
-  stewards: ['UGRC'],
+  title: 'Utah Earthquake Epicenters 1850 to 2016',
+  description: `Earthquake Epicenters 1850 to 2016 represents the modern epicenters of earthquakes in Utah.`,
+  stewards: ['UGS'],
   type: ProductType.POLYGON,
   category: SgidCategory.GEOSCIENCE,
 };
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`2009`],
+  updateHistory: [`November 2017`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -43,10 +43,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      This dataset represents snow avalanche paths in the tri-canyon area of the Wasatch Front. This data contains the
-      name, size of the slide path, return interval, starting zone elevation, vertical fall, and starting zone aspect
-      for some of the avalanches. This data was prepared for the Salt Lake County Wasatch Canyons Master Plan originally
-      published in September 1989.
+      The earthquake database consists of chronological list of earthquake origin time, location, and size for the Utah
+      region. This dataset represents the modern epicenters of earthquakes in Utah from 1850 to 2016.
     </p>
   </Fragment>
 
@@ -57,12 +55,12 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink
-        title="Cottonwood Canyons avalanche information"
-        href="https://cottonwoodcanyons.udot.utah.gov/avalanche-information/"
-        >Cottonwood Canyons avalanche slide paths and zones.</CardWithPopularLink
+        title="Utah Earthquake Information"
+        href="https://geology.utah.gov/hazards/earthquakes-faults/utah-earthquakes/"
+        >UGS - Utah earthquake information.</CardWithPopularLink
       >
-      <CardWithPopularLink title="Utah Avalanche Center (UAC)" href="https://utahavalanchecenter.org/"
-        >Avalanche forecast center for Utah.</CardWithPopularLink
+      <CardWithPopularLink title="Utah Geological Survery" href="https://geology.utah.gov/"
+        >Utah Geological Survery website.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
