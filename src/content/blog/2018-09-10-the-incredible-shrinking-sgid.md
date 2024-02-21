@@ -8,7 +8,7 @@ categories:
   - Featured
 tags:
   - SGID
-  - data content
+  - data
 ---
 
 Over the past several months, UGRC has been reviewing the usage of the State Geographic Information Database (SGID) data layers in order to determine how to most effectively be a steward of the state’s GIS data.

@@ -7,10 +7,10 @@ tags:
   - 8ppm
   - classified
   - contours
-  - dem
+  - digital elevation model
   - download
-  - dsm
-  - dtm
+  - digital surface model
+  - digital terrain model
   - elevation
   - las
   - lidar

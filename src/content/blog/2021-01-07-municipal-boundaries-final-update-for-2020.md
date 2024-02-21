@@ -8,7 +8,7 @@ date: 2021-01-07 12:22:58
 categories:
   - SGID Blog
 tags:
-  - municipal
+  - municipal boundaries
   - boundaries
   - annexations
 ---
@@ -23,7 +23,7 @@ To review any specific annexation document, go to the [Utah Lt. Governor Municip
 The following table shows the changes and annexations (listed by county and city) since October 1, 2020:
 
 | County     | City                                | Number of Changes |
-| ---------- | ----------------------------------- | ----------------- |
+|------------|-------------------------------------|-------------------|
 | Cache      | Millville                           | 1                 |
 |            | Newton                              | 1                 |
 |            | Smithfield                          | 2                 |
