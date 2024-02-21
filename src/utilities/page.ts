@@ -15,3 +15,21 @@ export const createIdFromTitle = (title: string) => {
 
   return kebab;
 }
+
+export const getDateParts = (date: Date) => {
+  const day = date.toLocaleDateString('en-us', {
+    day: 'numeric',
+  });
+  const month = date.toLocaleDateString('en-us', {
+    month: 'short',
+  });
+  const year = date.toLocaleDateString('en-us', {
+    year: 'numeric',
+  });
+
+  return {
+    day,
+    month,
+    year,
+  };
+}

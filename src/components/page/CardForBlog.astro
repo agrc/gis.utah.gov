@@ -1,0 +1,47 @@
+---
+import { getDateParts } from '@utils/page';
+
+interface Props {
+  description?: string;
+  title: string;
+  slug: string;
+  date: Date;
+  estimatedReadingTime?: string;
+  tags?: string[];
+  category?: string;
+}
+
+const { category, title, description, slug, date, estimatedReadingTime } = Astro.props;
+const { year, month, day } = getDateParts(date);
+---
+
+<div
+  class="max-w-sm overflow-hidden rounded-lg border border-zinc-400 bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70"
+>
+  <div class="bg-primary px-4 py-1 text-center text-sm font-black uppercase text-zinc-50">
+    <span class="pl-2">{category}</span>
+  </div>
+  <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-primary/20">
+    <img
+      src={`/default-social-card.png`}
+      alt="Cover image"
+      class="h-48 w-full rounded-t-lg bg-primary/10 object-contain"
+    />
+    <div class="flex min-w-0 flex-1 p-4 pb-2 pt-2">
+      <div class="flex min-w-0 flex-1 flex-col justify-around">
+        <p class="line-clamp-1 font-semibold text-primary dark:text-zinc-200">
+          {title}
+          <span class="text-sm font-normal">({estimatedReadingTime})</span>
+        </p>
+        <p class="line-clamp-4 text-ellipsis text-zinc-600 dark:text-zinc-300">{description}</p>
+      </div>
+    </div>
+    <time
+      datetime={date.toISOString()}
+      class="flex items-center justify-between bg-secondary-200 px-4 py-1 text-zinc-50 dark:bg-secondary dark:text-zinc-300"
+    >
+      <span class="font-black">{year}</span>
+      <span class="text-xs uppercase">{month} {day}</span></time
+    >
+  </a>
+</div>
