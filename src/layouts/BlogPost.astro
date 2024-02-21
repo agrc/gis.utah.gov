@@ -4,7 +4,7 @@ import type { DecoratedBlogEntry } from '@utils/collections';
 import { slugify } from '@utils/collections';
 
 const {
-  categories,
+  category,
   author: {display_name: displayName},
   tags,
   title,
@@ -49,14 +49,12 @@ const {
       </div>
       <div class="flex flex-col gap-x-2 pt-3 text-sm font-medium md:flex-row dark:border-white/30">
         {
-          !!categories ? (
+          !!category ? (
             <div class="flex justify-center gap-1 text-sm">
-              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Categories</span>
+              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Category</span>
               <span>·</span>
               <span class="whitespace-nowrap">
-                {categories.map((category, i) => (
-                  <a href={`/blog/categories/${slugify(category)}`}>{category}</a><span class="ml-3"></span>
-                ))}
+                  <a href={`/blog/categories/${slugify(category)}`}>{category}</a>
               </span>
             </div>
           ) : null
