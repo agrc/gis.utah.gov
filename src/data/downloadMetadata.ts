@@ -1267,15 +1267,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Earthquake Epicenters Mining Induced 1928 to 2016': {
     itemId: 'af0cbb8ecca942d58367f68bcd2643b6',
     name: 'Utah Earthquake Epicenters Mining Induced 1928 to 2016',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'EarthquakeEpicentersMiningInduced_1928to2016',
+    openSgid: 'geoscience.earthquake_epicenters_mining_induced_1928_to_2016',
     layerId: 0,
   },
   'Utah Earthquake Epicenters 1850 to 2016': {
     itemId: '4c162e09b7b5436bae9a0e656b5343a7',
     name: 'Utah Earthquake Epicenters 1850 to 2016',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'EarthquakeEpicenters_1850to2016',
+    openSgid: 'geoscience.earthquake_epicenters_1850_to_2016',
     layerId: 0,
   },
   'Utah Debris Flow Wasatch Study Boundary': {
