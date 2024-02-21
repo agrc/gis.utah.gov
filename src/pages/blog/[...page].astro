@@ -1,24 +1,26 @@
 ---
 import Pagination from '@components/Pagination.astro';
-import CardWithDate from '@components/page/CardWithDate.astro';
-import GridForLatestNews from '@components/page/GridForLatestNews.astro';
-import FullWidth from '@layouts/FullWidth.astro';
+import CardForBlog from '@components/page/CardForBlog.astro';
+import Layout from '@layouts/BlogPostIndex.astro';
+
 import { getBlogFilters, getBlogPosts, type BlogFilter } from '@utils/collections';
+
 import type { Page } from 'astro';
 import type { CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths({ paginate }) {
   const posts = await getBlogPosts();
 
-  return paginate(posts, { pageSize: 20 });
+  return paginate(posts, { pageSize: 9 });
 }
 
 const categories = await getBlogFilters('categories');
 const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
 ---
 
-<FullWidth title="From the blog">
-  <div class="mt-3 flex justify-center space-x-6">
+<Layout title="Post categories" category="All">
+  <Pagination page={page} class="my-5" baseHref="blog" slot="pagination" />
+  <Fragment slot="categories">
     {
       categories.map((category: BlogFilter) => (
         <a href={`/blog/categories/${category.slug}`} class="mr-2">
@@ -26,20 +28,18 @@ const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
         </a>
       ))
     }
-  </div>
-  <GridForLatestNews>
-    {
-      page.data.map((post) => (
-        <CardWithDate
-          includeYear
-          title={post.data.title}
-          description={post.data.description}
-          date={post.data.date}
-          slug={post.slug}
-          estimatedReadingTime={post.data.estimatedReadTime}
-        />
-      ))
-    }
-  </GridForLatestNews>
-  <Pagination page={page} class="mb-3" baseHref="blog" />
-</FullWidth>
+  </Fragment>
+  {
+    page.data.map((post) => (
+      <CardForBlog
+        title={post.data.title}
+        description={post.data.description}
+        date={post.data.date}
+        slug={post.slug}
+        estimatedReadingTime={post.data.estimatedReadTime}
+        category={post.data.category}
+        tags={post.data.tags}
+      />
+    ))
+  }
+</Layout>

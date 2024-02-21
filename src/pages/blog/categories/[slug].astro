@@ -1,22 +1,17 @@
 ---
-import CardWithDate from '@components/page/CardWithDate.astro';
-import GridForLatestNews from '@components/page/GridForLatestNews.astro';
-import FullWidth from '@layouts/FullWidth.astro';
-import { getBlogFilters, type DecoratedBlogPost } from '@utils/collections';
-import { fromMarkdown } from 'mdast-util-from-markdown';
-import { toString } from 'mdast-util-to-string';
+import CardForBlog from '@components/page/CardForBlog.astro';
+import Layout from '@layouts/BlogPostIndex.astro';
+import { getBlogFilters, type BlogFilter, type DecoratedBlogEntry } from '@utils/collections';
+import type { GetStaticPathsResult } from 'astro';
 
-type Path = {
-  params: {
-    slug: string;
-  };
-  props: {
-    category: string;
-    posts: DecoratedBlogPost[];
-  };
-};
+interface Props {
+  category: string;
+  posts: DecoratedBlogEntry[];
+}
 
-export async function getStaticPaths(): Promise<Path[]> {
+const categories = await getBlogFilters('categories');
+
+export async function getStaticPaths(): Promise<GetStaticPathsResult> {
   const categories = await getBlogFilters('categories');
 
   return categories.map((category) => ({
@@ -30,23 +25,31 @@ export async function getStaticPaths(): Promise<Path[]> {
   }));
 }
 
-const { category, posts } = Astro.props as Path['props'];
+const { category, posts } = Astro.props;
 ---
 
-<FullWidth title="From the blog">
-  <h2 class="mt-3 text-center dark:text-zinc-200">Category: {category} ({category.length})</h2>
-  <GridForLatestNews>
+<Layout title="Post categories" category={category}>
+  <Fragment slot="categories">
     {
-      posts.map((post) => (
-        <CardWithDate
-          includeYear
-          title={post.data.title}
-          description={toString(fromMarkdown(post.body)).slice(0, 200) ?? 'a blog post'}
-          date={post.data.date}
-          slug={post.slug}
-          estimatedReadingTime={post.data.estimatedReadTime}
-        />
+      categories.map((category: BlogFilter) => (
+        <a href={`/blog/categories/${category.slug}`} class="mr-2">
+          {category.name}
+        </a>
       ))
     }
-  </GridForLatestNews>
-</FullWidth>
+  </Fragment>
+
+  {
+    posts.map((post) => (
+      <CardForBlog
+        title={post.data.title}
+        description={post.data.description}
+        date={post.data.date}
+        slug={post.slug}
+        estimatedReadingTime={post.data.estimatedReadTime}
+        category={post.data.category}
+        tags={post.data.tags}
+      />
+    ))
+  }
+</Layout>
