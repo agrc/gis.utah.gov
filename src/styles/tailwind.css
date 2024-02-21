@@ -3,7 +3,7 @@
   html,
   body,
   #root {
-    @apply flex h-full min-h-full w-full flex-col;
+    @apply h-full min-h-full w-full;
   }
   .stripe-background a:not(.custom-style) {
     @apply text-secondary hover:text-primary dark:text-accent hover:dark:text-accent;
