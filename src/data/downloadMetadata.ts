@@ -1757,8 +1757,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Telecom Boundaries': {
     itemId: '3dee591783a14252b8252fe27332eaef',
     name: 'Utah Telecom Boundaries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'TelecomBoundaries',
+    openSgid: 'utilities.telecom_boundaries',
     layerId: 0,
   },
   'Utah Vista Ballot Areas': {
