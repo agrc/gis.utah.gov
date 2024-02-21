@@ -1,14 +1,17 @@
 ---
 import FormattedDate from '@components/FormattedDate.astro';
-import type { CollectionEntry } from 'astro:content';
+import type { DecoratedBlogEntry } from '@utils/collections';
+import { slugify } from '@utils/collections';
 
-type BlogData = CollectionEntry<'blog'>['data'];
-interface Props extends BlogData {
-  estimatedReadTime?: string;
-  lastUpdated: Date;
-}
-
-const { title, date: pubDate, updated, estimatedReadTime, lastUpdated } = Astro.props;
+const {
+  categories,
+  author: {display_name: displayName},
+  tags,
+  title,
+  date: pubDate,
+  estimatedReadTime,
+  lastUpdated,
+} = Astro.props as DecoratedBlogEntry['data'];
 ---
 
 <article class="flex justify-center px-6 pb-16 pt-4 lg:px-0 lg:pt-10 dark:text-zinc-300">
@@ -43,6 +46,47 @@ const { title, date: pubDate, updated, estimatedReadTime, lastUpdated } = Astro.
             {estimatedReadTime}
           </span>
         </div>
+      </div>
+      <div class="flex flex-col gap-x-2 pt-3 text-sm font-medium md:flex-row dark:border-white/30">
+        {
+          !!categories ? (
+            <div class="flex justify-center gap-1 text-sm">
+              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Categories</span>
+              <span>·</span>
+              <span class="whitespace-nowrap">
+                {categories.map((category, i) => (
+                  <a href={`/blog/categories/${slugify(category)}`}>{category}</a><span class="ml-3"></span>
+                ))}
+              </span>
+            </div>
+          ) : null
+        }
+      </div>
+      <div class="flex flex-col gap-x-2 pt-3 text-sm font-medium md:flex-row dark:border-white/30">
+        {
+          !!tags ? (
+            <div class="flex justify-center gap-1 text-sm">
+              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Tags</span>
+              <span>·</span>
+              <span class="whitespace-nowrap">
+                {tags.map((tag) => ((<a href={`/blog/tags/${slugify(tag)}`}>{tag}</a><span class="ml-3"></span>)))}
+              </span>
+            </div>
+          ) : null
+        }
+      </div>
+      <div class="flex flex-col gap-x-2 pt-3 text-sm font-medium md:flex-row dark:border-white/30">
+        {
+          !!displayName ? (
+            <div class="flex justify-center gap-1 text-sm">
+              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Author</span>
+              <span>·</span>
+              <span class="whitespace-nowrap">
+                <a href={`/blog/authors/${slugify(displayName)}`}>{displayName}</a>
+              </span>
+            </div>
+          ) : null
+        }
       </div>
     </div>
     <slot />

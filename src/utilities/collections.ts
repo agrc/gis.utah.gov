@@ -36,3 +36,44 @@ export async function getBlogPosts(): Promise<DecoratedBlogEntry[]> {
       }),
     );
 }
+
+export function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w ]+/g, '')
+    .replace(/ +/g, '-');
+}
+
+export type BlogFilter = {
+  name: string;
+  slug: string;
+  posts: DecoratedBlogEntry[];
+};
+
+export async function getBlogFilters(filterType: 'categories' | 'tags' | 'author'): Promise<BlogFilter[]> {
+  const posts = await getBlogPosts();
+
+  const filtersWithPosts = posts.reduce((acc: Record<string, BlogFilter>, post: DecoratedBlogEntry) => {
+    function addValue(filterValue: string) {
+      const slug = slugify(filterValue);
+      if (!acc[slug]) {
+        acc[slug] = { slug, name: filterValue, posts: [] };
+      }
+
+      acc[slug].posts.push(post);
+    }
+    if (filterType === 'author' && post.data.author.display_name) {
+      addValue(post.data.author.display_name);
+    } else if (post.data[filterType]) {
+      post.data[filterType as 'categories' | 'tags']!.forEach(addValue);
+    }
+
+    return acc;
+  }, {});
+
+  return Object.keys(filtersWithPosts)
+    .sort()
+    .map((slug) => ({
+      ...filtersWithPosts[slug],
+    }));
+}
