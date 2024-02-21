@@ -10,9 +10,14 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForPopularResources from '@components/page/GridForPopularResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+
 import { Image } from 'astro:assets';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-sgid/*.{svg,png}');
+import dataSharingPhoto from '@images/sgid/data-sharing-agreement.svg';
+import licensePhoto from '@images/sgid/license-disclaimer.svg';
+import openSgid from '@images/sgid/open-sgid.svg';
+import sgidIndex from '@images/sgid/sgid-index.svg';
+import sgidOpenData from '@images/sgid/sgid-opendata.svg';
 ---
 
 <Layout title="Documentation">
@@ -20,29 +25,17 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     <Section stripe>
       <GridForPillars>
         <CardWithTopImage title="SGID" actionUrl="/documentation/sgid">
-          <Image
-            slot="image"
-            src={images['/src/images/product-sgid/sgid-index.svg']()}
-            alt="a person using a search engine"
-            class="block h-44"
-          />
+          <Image slot="image" src={sgidIndex} alt="a person using a search engine" class="block h-44" />
           blah blah blah
         </CardWithTopImage>
         <CardWithTopImage title="Discover Base map and Imagery Services" actionUrl="/documentation/discover">
-          <Image
-            slot="image"
-            src={images['/src/images/product-sgid/open-sgid.svg']()}
-            alt="a person connected to a database"
-            class="block h-44"
-          />
-          <p>
-            Our Discover services provide streaming access to our base maps and aerial imagery.
-          </p>
+          <Image slot="image" src={openSgid} alt="a person connected to a database" class="block h-44" />
+          <p>Our Discover services provide streaming access to our base maps and aerial imagery.</p>
         </CardWithTopImage>
         <CardWithTopImage title="UGRC API" actionText="Learn more" actionUrl="https://api.mapserv.utah.gov/">
           <Image
             slot="image"
-            src={images['/src/images/product-sgid/sgid-opendata.svg']()}
+            src={sgidOpenData}
             alt="people connected to a network through geography"
             class="block h-44"
           />
@@ -71,21 +64,11 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     <Section title="More Documentation Resources" stripe titlePosition="center">
       <GridForMoreResources>
         <CardWithSideImage title="Masquerade" actionUrl="/documentation/masquerade">
-          <Image
-            slot="image"
-            src={images['/src/images/product-sgid/license-disclaimer.svg']()}
-            alt="man in front of warning sign"
-            class="self-center"
-          />
+          <Image slot="image" src={licensePhoto} alt="man in front of warning sign" class="self-center" />
           The UGRC API and SGID accessed through Esri clients.
         </CardWithSideImage>
         <CardWithSideImage title="palletjack" actionUrl="/products/sgid/sharing">
-          <Image
-            slot="image"
-            src={images['/src/images/product-sgid/data-sharing-agreement.svg']()}
-            alt="people shaking hands"
-            class="self-center"
-          />
+          <Image slot="image" src={dataSharingPhoto} alt="people shaking hands" class="self-center" />
           Something
         </CardWithSideImage>
       </GridForMoreResources>

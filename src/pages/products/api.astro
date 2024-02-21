@@ -13,7 +13,12 @@ import ApiDescription from '@partials/ApiDescription.astro';
 
 import { Image } from 'astro:assets';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-api/*.{svg,png}');
+import apiClientInstallPhoto from '@images/api/api-client-install.svg';
+import apiLogo from '@images/api/api-logo.svg';
+import documentationPhoto from '@images/api/documentation.svg';
+import privacyPhoto from '@images/api/privacy.svg';
+import selfServicePhoto from '@images/api/self-service.svg';
+import signUpPhoto from '@images/api/sign-up.svg';
 ---
 
 <Layout title="UGRC API">
@@ -21,7 +26,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     <Section>
       <Fragment slot="title">The UGRC API</Fragment>
       <Image
-        src={images['/src/images/product-api/api-logo.svg']()}
+        src={apiLogo}
         slot="image"
         loading="eager"
         alt="wavy gravy api logo"
@@ -37,12 +42,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
           actionText="Get started"
           actionUrl="https://ut-dts-agrc-web-api-dev.web.app/getting-started/"
         >
-          <Image
-            slot="image"
-            src={images['/src/images/product-api/sign-up.svg']()}
-            alt="a person using a search engine"
-            class="block h-44"
-          />
+          <Image slot="image" src={signUpPhoto} alt="a person filling out a form" class="block h-44" />
           The UGRC API is a free service that allows you to geocode and search SGID data. To use the API, you need to have
           an account and create API keys. These key are used to authenticate requests and to give you usage analytics. Click
           the link below to get started.
@@ -52,20 +52,15 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
           actionText="Start learning"
           actionUrl="https://ut-dts-agrc-web-api-dev.web.app/docs/"
         >
-          <Image
-            slot="image"
-            src={images['/src/images/product-api/documentation.svg']()}
-            alt="a person connected to a database"
-            class="block h-44"
-          />
+          <Image slot="image" src={documentationPhoto} alt="a person reading books" class="block h-44" />
           There are many ways to use the UGRC API. We have created documentation to help you get started. Click the link
           below to learn more about the API and how to use it.
         </CardWithTopImage>
         <CardWithTopImage title="API Client" actionText="Start geocoding" actionUrl="/products/api/api-client">
           <Image
             slot="image"
-            src={images['/src/images/product-api/api-client-install.svg']()}
-            alt="people connected to a network through geography"
+            src={apiClientInstallPhoto}
+            alt="a person installing a program on a computer with a loading screen"
             class="block h-44"
           />
           The API Client is a desktop tool to thoughtfully guide you through the process of using the UGRC API to geocode
@@ -76,7 +71,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     </Section>
   </Fragment>
 
-  <Section title="Popular API Resources" slot="popular-resources" titlePosition="center">
+  <Section title="Popular Resources" slot="popular-resources" titlePosition="center">
     <GridForPopularResources>
       <CardWithPopularLink
         title="Sample Code"
@@ -97,21 +92,16 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     </GridForPopularResources>
   </Section>
 
-  <Section title="More API Resources" slot="more-resources" stripe titlePosition="center">
+  <Section title="More Resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
       <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
-        <Image
-          slot="image"
-          src={images['/src/images/product-api/privacy.svg']()}
-          alt="a computer with a lock on the screen"
-          class="self-center"
-        />
+        <Image slot="image" src={privacyPhoto} alt="a computer with a lock on the screen" class="self-center" />
         UGRC's data license and general data disclaimer.
       </CardWithSideImage>
       <CardWithSideImage title="API Self Service" actionUrl="https://ut-dts-agrc-web-api-dev-self-service.web.app/">
         <Image
           slot="image"
-          src={images['/src/images/product-api/self-service.svg']()}
+          src={selfServicePhoto}
           alt="a person checking out at the grocery store"
           class="self-center"
         />

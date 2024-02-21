@@ -1,13 +1,15 @@
 ---
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
-
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 import { Image } from 'astro:assets';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/visiting/*.{jpg,png,svg}');
-
 import { stripeSections } from '@utils/page';
+
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import checkInPhoto from '@images/contact/check-in.svg';
+import visitingPhoto from '@images/contact/visiting_ugrc_location.png';
+import parkingPhoto from '@images/contact/visiting_ugrc_parking.jpg';
 
 const page: IStandardPageMetadata = {
   title: 'Meet us',
@@ -19,7 +21,7 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[0]}>
     <Image
       class="rounded-lg border-2 border-primary"
-      src={images['/src/images/pillar-contact/visiting/visiting_ugrc_location.png']()}
+      src={visitingPhoto}
       alt="Map with pin of Taylorsville State Office Building Location"
       slot="image"
       height={400}
@@ -50,7 +52,7 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[1]}>
     <Image
       class="rounded-lg border-2 border-primary"
-      src={images['/src/images/pillar-contact/visiting/visiting_ugrc_parking.jpg']()}
+      src={parkingPhoto}
       alt="Aerial image of Taylorsville State Office Building parking lot"
       slot="image"
       height={400}
@@ -63,11 +65,7 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[2]}>
-    <Image
-      src={images['/src/images/pillar-contact/visiting/check-in.svg']()}
-      alt="A person at a log in screen"
-      slot="image"
-    />
+    <Image src={checkInPhoto} alt="A person at a log in screen" slot="image" />
     <p>Once you arrive, check in at the main (west) entrance. Someone will come down and escort you to our offices.</p>
   </Section>
 </Layout>

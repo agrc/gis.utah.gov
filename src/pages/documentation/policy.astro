@@ -9,8 +9,7 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
-const location = '/src/images/pillar-documentation/';
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-documentation/*.svg');
+import licensePhoto from '@images/documentation/license-disclaimer.svg';
 
 import { stripeSections } from '@utils/page';
 
@@ -29,7 +28,7 @@ const page: IStandardPageMetadata = {
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image
-      src={images[`${location}license-disclaimer.svg`]()}
+      src={licensePhoto}
       slot="image"
       loading="eager"
       alt="A person thinking in front of a caution sign"

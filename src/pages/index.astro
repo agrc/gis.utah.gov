@@ -14,7 +14,9 @@ import { getCollection } from 'astro:content';
 
 import getReadingTimeFromMarkdown from '@utils/readingTime';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/landing/*.{svg,png}');
+import collaborationPhoto from '@images/landing/collaboration.svg';
+import productsPhoto from '@images/landing/products.svg';
+import solutionsPhoto from '@images/landing/solutions.svg';
 
 const posts = (await getCollection('blog'))
   .filter((post) => post.data.published)
@@ -36,7 +38,7 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
     <GridForPillars>
       <CardWithTopImage title="Products" actionUrl="/products">
         <Image
-          src={images['/src/images/landing/products.svg']()}
+          src={productsPhoto}
           slot="image"
           loading="eager"
           alt="an assembly line of people making products"
@@ -49,7 +51,7 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
       </CardWithTopImage>
       <CardWithTopImage title="Solutions" actionUrl="/solutions">
         <Image
-          src={images['/src/images/landing/solutions.svg']()}
+          src={solutionsPhoto}
           slot="image"
           loading="eager"
           alt="a person standing in front of a chalkboard with a solution written on it"
@@ -62,7 +64,7 @@ const regex: RegExp = /(^#.*| {2,4}-.*|^-.*|\[(?=.*\])|](?<=\])\(.*\))/gm;
       </CardWithTopImage>
       <CardWithTopImage title="Collaboration" actionUrl="/collaboration">
         <Image
-          src={images['/src/images/landing/collaboration.svg']()}
+          src={collaborationPhoto}
           slot="image"
           loading="eager"
           alt="people pulling a rope together"

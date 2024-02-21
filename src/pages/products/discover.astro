@@ -12,8 +12,12 @@ import Layout from '@layouts/Pillar.astro';
 
 import { Image } from 'astro:assets';
 
-const location = '/src/images/product-discover/';
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-discover/*.{svg,png}');
+import citePhoto from '@images/discover/cite.svg';
+import discoverLogo from '@images/discover/discover-logo.svg';
+import getConnectedPhoto from '@images/discover/get-connected.svg';
+import licensedAccessPhoto from '@images/discover/licensed-access.svg';
+import schedulePhoto from '@images/discover/schedule.svg';
+import signUpPhoto from '@images/discover/sign-up.svg';
 ---
 
 <Layout title="Discover base maps">
@@ -21,7 +25,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     <Section>
       <Fragment slot="title">Discover imagery and base maps</Fragment>
       <Image
-        src={images[`${location}discover-logo.svg`]()}
+        src={discoverLogo}
         slot="image"
         loading="eager"
         alt="wavy gravy api logo"
@@ -42,12 +46,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
           actionText="Register now"
           actionUrl="https://docs.google.com/forms/d/1vS0Yw9DKezmDcJOCU-2MA-xXTHPMp3mBW4Y16RxMI0o/edit?ts=5cf67b75"
         >
-          <Image
-            slot="image"
-            src={images[`${location}sign-up.svg`]()}
-            alt="a person filling out a form"
-            class="block h-44"
-          />
+          <Image slot="image" src={signUpPhoto} alt="a person filling out a form" class="block h-44" />
           Anyone can sign up for a free general access to our base maps, NAIP aerial imagery, and older high-resolution orthophoto
           (HRO) products. These make great backdrops for many different datasets, and the NAIP imagery is a great free-to-use
           aerial imagery layer for medium- and small-scale maps.
@@ -59,8 +58,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
         >
           <Image
             slot="image"
-            src={images[`${location}licensed-access.svg`]()}
-            alt="a person connected to a database with a lock and key shield"
+            src={licensedAccessPhoto}
+            alt="A person looking at their phone with a fingerprint on the screen and a lock"
             class="block h-44"
           />
           Utah state agencies, cities, counties, special service districts, educational institutions and their students,
@@ -68,12 +67,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
           state-wide high-resolution aerial imagery in both streaming and downloadable formats.
         </CardWithTopImage>
         <CardWithTopImage title="Get connected" actionText="Get started" actionUrl="/documentation/discover/clients">
-          <Image
-            slot="image"
-            src={images[`${location}get-connected.svg`]()}
-            alt="people connected to a network through geography"
-            class="block h-44"
-          />
+          <Image slot="image" src={getConnectedPhoto} alt="A person sitting on a globe" class="block h-44" />
           The WMTS and WMS links you receive after registering for access work in a wide variety of software programs and
           web development platforms. We've put together guides for the most popular programs to help you get started.
         </CardWithTopImage>
@@ -81,7 +75,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     </Section>
   </Fragment>
 
-  <Section title="Popular Discover Resources" slot="popular-resources" titlePosition="center">
+  <Section title="Popular Resources" slot="popular-resources" titlePosition="center">
     <GridForPopularResources>
       <CardWithPopularLink title="Raster discovery app" href="https://raster.utah.gov">
         Download NAIP and HRO imagery.
@@ -98,24 +92,14 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     </GridForPopularResources>
   </Section>
 
-  <Section title="More Discover Resources" slot="more-resources" stripe titlePosition="center">
+  <Section title="More Resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
       <CardWithSideImage title="Citing your sources" actionUrl="/documentation/discover/licensed-imagery">
-        <Image
-          slot="image"
-          src={images[`${location}cite.svg`]()}
-          alt="a computer with a lock on the screen"
-          class="self-center"
-        />
+        <Image slot="image" src={citePhoto} alt="an arm holding a pencil on a piece of paper" class="self-center" />
         Using the licensed imagery may require additional citation.
       </CardWithSideImage>
       <CardWithSideImage title="Base map update schedule" actionUrl="/">
-        <Image
-          slot="image"
-          src={images[`${location}schedule.svg`]()}
-          alt="a person checking out at the grocery store"
-          class="self-center"
-        />
+        <Image slot="image" src={schedulePhoto} alt="a person pointing at a calendar" class="self-center" />
         See when your favorite base map was last updated with our authoritative data.
       </CardWithSideImage>
     </GridForMoreResources>
