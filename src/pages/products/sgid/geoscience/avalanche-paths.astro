@@ -1,0 +1,76 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Avalanche Paths',
+  description: `Avalanche paths in Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.GEOSCIENCE,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`2009`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset represents snow avalanche paths in the tri-canyon area of the Wasatch Front, Utah. This dataset
+      contains the name, size of slidepath, return interval, starting zone elevation, vertical fall and starting zone
+      aspect for some of the avalanches. This data was prepared for the Salt Lake County Wasatch Canyons Master Plan
+      originally published in September 1989.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Utah Water Science Center"
+        href="https://www.usgs.gov/centers/utah-water-science-center"
+        >USGS - Utah Water Science Center website.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah Avalanche Center (UAC)" href="https://utahavalanchecenter.org/"
+        >Avalanche forcast center for Utah.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Geoscience" href="/products/sgid/geoscience">Geoscience page</CardWithSmallLink>
+      <CardWithSmallLink title="Recreation" href="/products/sgid/recreation">Description</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
