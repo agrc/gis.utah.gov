@@ -19,7 +19,7 @@ It's important to keep in mind that we're still a month or two away from any pre
 in advance, in an effort to promote coordination and avoid potential duplication of effort in these areas.
 
 The proposed areas break down to the following square mileages by USGS quality levels (QL1 - 8 points per meter | QL2 - 2 points per meter):
-[![3DEP Proposal]({% link images/3DEP_Lidar_Proposal_2018_sm.png %} "2018 3DEP Lidar Proposal A - click for larger image")]({% link images/3DEP_Lidar_Proposal_2018.png %}){:.inline-text-right}
+[![3DEP Proposal]({% link images/3DEP_Lidar_Proposal_2018_sm.png %} "2018 3DEP Lidar Proposal A - click for larger image")]({% link images/3DEP_Lidar_Proposal_2018.png %})
 
 - QL1 - 1,892
 - QL2 - 7,018

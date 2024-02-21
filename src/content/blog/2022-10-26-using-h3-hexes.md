@@ -12,13 +12,13 @@ category: Developer
 ---
 
 ![Address points per supermarket]({% link images/h3_supermarkets.png %})
-{: .flex .flex--center}
+
 
 I recently discovered Uber's open-source [H3 geospatial indexing system](https://h3geo.org/) while working on a project with a lot of point data. This is a great tool for aggregating points into regularly-sized polygon geometries so that you can map and evaluate the spatial trends of a point-based phenomenon, but it needs a bit of an introduction to understand why it's great and how to use it with traditional GIS data.
 
 ### The Status Quo: Slow and Incompatible
 
-{: .text-left}
+
 
 You've probably aggregated and mapped point data before by using the Summarize Within tool to spatially join your points to other boundary datasets, like cities or counties. Census tracts or blocks are often popular targets, allowing you to compare your data to census data.
 
@@ -30,13 +30,13 @@ However, these custom hex grids are usually project-specific and **don't conform
 
 ### H3 Uses Math, Not Spatial Operations
 
-{: .text-left}
+
 
 To understand how H3 solves these problems, we need to understand how it works. Coming from the GIS world, we think of the "point in polygon" problem spatially: search to see if the given point is inside the given area. We can then aggregate or summarize all the data within that area to come up with a single number or metric. However, with H3 we need to shift our thinking. **H3 takes a lat/long and assigns an ID that corresponds to a mathematically-defined hex.** There's nothing inherently spatial about it, it's all just math. The output is just a number.
 
 ### It's a Common Grid (kind of)
 
-{: .text-left}
+
 
 As an open-source system, H3 has become a sort of de facto standard. Anyone can use it, and anyone can take someone else's data with H3 grid ids and compare it with their own. While it's been around for a few years, there could be a novelty factor driving it's adoption, so it remains to be seen how widely it will be adopted.
 
@@ -44,12 +44,12 @@ However, even if it doesn't become the overwhelming global standard, the H3 syst
 
 ### H3 Handles Different Grid Resolutions Elegantly
 
-{: .text-left}
+
 
 It is mathematically impossible[^1] to create a larger hexagon from smaller hexagons, which means we can't create a _geographical_ hierarchy of hexes where one level of hexes perfectly cover the same area as a single larger hex. However, H3 makes a _logical_ hierarchy by rotating the larger, parent hex to cover as much of its seven children as possible, as visible in the image below. The H3 [indexing page](https://h3geo.org/docs/highlights/indexing) has more detail on how this works.
 
 ![H3 Hexagons at various scales]({% link images/h3_hexes.png %})
-{: .flex .flex--center}
+
 
 The important point is that an individual hex ID contains the IDs of the hexes "above" it in the hierarchy, kind of like how census GeoIDs contain the block, tract, county, and state codes. This makes it easy to traverse up to a larger hex without re-calculating the IDs.
 
@@ -57,7 +57,7 @@ Using these multiple scales (which H3 calls resolutions), we can **create hexes 
 
 ### Assigning H3 IDs is Fast
 
-{: .text-left}
+
 
 As noted above, H3 uses some fancy mathematics under the hood to assign hex ids instead of doing spatial analysis. Written in C and exposed through a variety of bindings in other languages, these calculations are **pretty darn fast at figuring out what hex cell a point belongs in.**
 
@@ -80,7 +80,7 @@ Note: To get this speed, you'll need to use the `h3.api.numpy_int` API as noted 
 
 ## Using H3 Hexes in A Map: Analyzing Supermarket Availability
 
-{: .text-left}
+
 
 Ok, so we can assign a hex id to point data quickly and easily. But, at some point, we need a spatial representation of the hexes if we're going to map out our summarized or aggregated data. Once we've got that, we can then use pandas to aggregate our data and join it to the hex geometries.
 
@@ -88,7 +88,7 @@ To show this in action, we'll use our [Open Source Places]({% link data/society/
 
 ### Creating an H3 Hex Feature Class
 
-{: .text-left}
+
 
 First, we need the actual polygons of the hexes themselves. The H3 API provides the `polyfill` method for identifying all hex IDs whose _centroids_ are within a polygon along with the `h3_to_geo_boundary` method for returning the polygon corresponding to a specific hex ID.
 
@@ -137,7 +137,7 @@ If geopandas and geojson is your thing, Guilherme M. Iablonovski has a [write-up
 
 ### Aggregating Our Data per Hex and Joining the Polygons
 
-{: .text-left}
+
 
 Now that we've got the boundaries, we can do our analysis and map it out. First, we'll use pandas' [groupby](https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html) functionality on both the address points and open source places to group according to the hex id and get the count of unique records within each group. We then combine the two resulting series with the hex polygons, and finally we map the resulting data.
 

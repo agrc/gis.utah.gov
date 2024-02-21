@@ -13,12 +13,12 @@ If you depend on any of the geospatial services from The School and Institutiona
 
 ### Issue 1
 
-{: .text-left }
+
 
 The first issue to be aware of is that the URL to access any of the services is slightly different.
 
 If the URL you are using from SITLA has `/server/` in it, you will need to migrate.
-{: .pop }
+
 
 #### The on-prem system
 
@@ -32,12 +32,12 @@ The difference may be difficult to spot, but the on-prem system used `server` wh
 
 ### Issue 2
 
-{: .text-left }
+
 
 The second issue is the on-prem system organized services in folders and the cloud system has all of the services in the root directory. This affects the URL to access any SITLA service that was not already hosted in the root directory.
 
 If the URL you are using from SITLA has `/rest/services/*`, where `*` is anything other than the service name, you will need to migrate.
-{: .pop }
+
 
 #### The on-prem system
 
@@ -51,12 +51,12 @@ For example, the Land Ownership framework dataset from SITLA was hosted in `/res
 
 ### Issue 3
 
-{: .text-left }
+
 
 The third issue is the naming convention for the services has changed.
 
 If the service you are using from SITLA has `UT_SITLA_*`, where `*` is a category, you will need to migrate.
-{: .pop }
+
 
 #### The on-prem system
 
@@ -72,12 +72,12 @@ All of the new services and names can be found in SITLA's cloud system [services
 
 ### Issue 4
 
-{: .text-left }
+
 
 The final issue we were able to discover has to do with feature attribute names. The cloud system has all lowercase attribute names.
 
 If you are symbolizing or querying a SITLA service by a field name with capitol letters, you may need to migrate.
-{: .pop }
+
 
 #### The on-prem system
 
@@ -91,7 +91,7 @@ Using Land Ownership as an example again, the `OWNER` field is now `owner`. This
 
 ## Temporary Partial Mitigation
 
-{: .text-left }
+
 
 On the first of November the SITLA team were able to set up a rewrite rule for the Land Ownership layer to restore the connection to clients using the old URL. This stopgap appears to only be effective for the Land Ownership layer and is a temporary solution. **We are told it will be removed by the end of the year**. This means that you may not be experiencing any issues now but it will stop working at the end of the year if you do not migrate when the rewrite rule is removed.
 

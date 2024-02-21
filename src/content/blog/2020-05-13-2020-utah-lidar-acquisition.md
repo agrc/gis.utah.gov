@@ -17,11 +17,11 @@ The Federal Emergency Management Agency, the U.S. Forest Service, and the U.S. G
 
 You are welcome to download the boundaries for all the project areas as a [shapefile](https://drive.google.com/a/utah.gov/uc?id=1-oxmHxLEDPAhM2SKKKh_Df8Pa0iUWKvD&export=download).
 
-[![Project area map]({% link images/2020UtahLidarAcquisition_9_16_20_sm.png %} "view project area map")]({% link images/2020UtahLidarAcquisition_9_16_20.png %}){:.inline-text-right}
+[![Project area map]({% link images/2020UtahLidarAcquisition_9_16_20_sm.png %} "view project area map")]({% link images/2020UtahLidarAcquisition_9_16_20.png %})
 
 #### UPDATE 10/17/2023
 
-{: .text-left }
+
 
 All 2019 and 2020 project areas are completed and available for download from [Raster.utah.gov](https://raster.utah.gov), from the [LiDAR section]({% link data/elevation-and-terrain/index.html %}#LiDAR) of our Elevation and Terrain Data webpage, or from the individual web pages for each project listed below:
 
@@ -32,7 +32,7 @@ All 2019 and 2020 project areas are completed and available for download from [R
 
 ### The Project Areas Include
 
-{: .text-left }
+
 
 - Grand Staircase-Escalante National Monument
 - Bears Ears National Monument
@@ -50,7 +50,7 @@ All 2019 and 2020 project areas are completed and available for download from [R
 
 ### The Project Deliverables
 
-{: .text-left }
+
 
 - Raw Point Cloud
 - Classified Point Cloud (2 or 8 points per square meter with 10cm vertical RMSE)
@@ -67,7 +67,7 @@ All 2019 and 2020 project areas are completed and available for download from [R
 
 ### The Project Partners
 
-{: .text-left }
+
 
 - U.S. Geological Survey National Map: 3D Elevation Program (3DEP)
 - Federal Emergency Management Agency (FEMA)

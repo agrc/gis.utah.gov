@@ -13,7 +13,7 @@ I have spent the last 4 months learning and using ArcPro while also learning a n
 
 ## Advice on Switching from ArcMap to ArcPro
 
-{: .text-left }
+
 
 <!-- <figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_ArcProScreenshot.png %}" alt="ArcPro Screenshot" loading="lazy" /><figcaption class="caption__text">A typical view in ArcPro</figcaption></figure> -->
 
@@ -34,7 +34,7 @@ This is the universal advice for learning a new skill, but important to include 
 #### Leave all expectations behind
 
 ![GIS Humor]({% link images/guestblog/jp_Spongebob.png %})
-{: .pull-right .outline }
+
 
 Seriously, ArcPro’s tools are not anywhere near where they are in ArcMap. Letting go of expectations not only helped my sanity, it helped me be a better ArcPro user. Until a couple weeks ago I assumed you could not choose the file format for exporting data because it was not where it is in ArcMap. Of course you can choose your file format, it is just in a separate tool in Pro, I should have tried harder to find out how.
 
@@ -62,7 +62,7 @@ Thanks to a supportive supervisor, my resignation to the ways of changing techno
 
 #### My Background
 
-![Petra]({% link images/guestblog/jp_JessieinJordan.png %}){: .inline-text-right .outline }
+![Petra]({% link images/guestblog/jp_JessieinJordan.png %})
 
 After eight years of gaining valuable experience at UGRC I left the State of Utah last summer to try GIS in a different context, the humanitarian field. I currently am living in Amman, Jordan working for [IMPACT Initiatives](http://www.impact-initiatives.org/) as part of a team that assesses developing humanitarian needs in Syria. Since arriving I have mapped everything from access to water/healthcare/food/education/etc, to building destruction in Raqqa to human displacement. Our work is part of REACH, a joint initiative with another NGO and the UN, whose goal is to provide information to all humanitarian actors. Therefore all of our work is publicly available on the [REACH Resource Center](https://www.reachresourcecentre.info/).
 

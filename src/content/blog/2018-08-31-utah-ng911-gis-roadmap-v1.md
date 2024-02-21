@@ -22,7 +22,7 @@ Now if you're not familiar with this topic, all these acronyms might sound like 
 
 ### Standards and Best Practices
 
-{: .text-left}
+
 
 `Required Datasets`
 
@@ -54,7 +54,7 @@ For further reading see [(reference 3, 4, 5, 7, 8, 9, 10)](#further-reading)
 
 ### Who's Responsible for What? [(see graphic below)](#graphic)
 
-{: .text-left}
+
 
 <abbr title="Utah Communications Authority">UCA</abbr> `911 Division` in conjunction with `UGRC` will:
 
@@ -83,11 +83,11 @@ For further reading see [section 4.7 of ref 1, section 5.2.1 of ref 5, and secti
 
 ## NG911 GIS Roadmap
 
-{: .text-left}
+
 
 #### `Near-Term`
 
-{: .text-left}
+
 
 Data validation and cleanup are the next, most logical steps for GIS readiness. These are often considered the first steps in NG911 transition. At the moment, UGRC is focused on facilitating two specific data validation checks, both mentioned in the previous Data Requirements section of this page:
 
@@ -98,7 +98,7 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 ##### Address Component Cross-Check
 
-{: #cross-check .text-left}
+
 
 - NG911 Core Services state that site/structure address points and road centerlines must be consistent. In other words: unless intended, each site/structure address point should match an associated road centerline. This supports the requirement that a civic address be considered valid if it can be located within the database uniquely [(section 4.8 of ref 1)](#further-reading). Here are some common mismatch issues UGRC has found:
   - Address components don’t match, including mismatching in the following address component fields: pre-direction, street name, post type, and post direction.
@@ -111,7 +111,7 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 #### `Mid-Term`
 
-{: .text-left}
+
 
 - Identify and resolve any gaps and/or overlaps in the emergency service boundaries (e.g., law, fire, and EMS).
 - Resolve address range overlap in road centerlines.
@@ -125,7 +125,7 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 #### `Long-Term`
 
-{: .text-left}
+
 
 - Get all 911-related data providers the needed training and access to the statewide NG911 multi-user data editing platform/application.
 - Incorporate a workflow to review these edits (from the NG911 multi-user data editing platform) and push them into the official State of Utah NG911 database (on a daily basis).
@@ -134,7 +134,7 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 ## What Can You Do Now?
 
-{: #do-now .text-left}
+
 
 If you are a 911 GIS data provider, it's in your best interest to begin validating and provisioning your data as soon as possible. In the coming months, UGRC will geocode the ALI database and begin working with the data providers to resolve missing addresses.
 
@@ -153,7 +153,7 @@ Keep in mind:
 
 ## Recommended Reading and References
 
-{: #further-reading .text-left}
+
 
 The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](https://uca911.org/911-division) and [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) are two valuable sources for further reading on NG911. Below are a few recommended starting points for learning more about NG911 and how it affects us as GIS professionals. (These sources are in no specific order; the numbering is related to the references previously listed throughout this article.)
 
@@ -168,4 +168,4 @@ The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](https:
 1. [NENA: Detailed Functional and Interface Standards for the NENA i3 Solution (NENA-STA-010.2-2016)](https://www.nena.org/page/i3_Stage3)
 1. [NENA: NG9-1-1 Transition Planning Considerations (NG911NENA-INF-008.2.2013)](https://www.nena.org/page/NG911_TransitionPlng)
 
-![NG911 Data Workflow]({% link images/ng911_data_workflow.png %}){: #graphic .flex .flex--center}
+![NG911 Data Workflow]({% link images/ng911_data_workflow.png %})

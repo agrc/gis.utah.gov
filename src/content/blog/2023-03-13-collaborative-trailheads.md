@@ -19,7 +19,7 @@ Trailheads are great examples of this. They receive frequent updates and are gov
 
 ### OpenStreetMap and Collective Stewardship
 
-{: .flex .flex--left}
+
 
 At UGRC, we see [OpenStreetMap](https://www.openstreetmap.org/) (OSM) as an ideal platform for managing and maintaining datasets such as trails, trailheads, campgrounds, and a variety of other layers - because who better to steward this data than all of us?
 
@@ -29,7 +29,7 @@ We already have an established OSM workflow for the [Open Source Places SGID lay
 
 ### Collaborative Trailheads
 
-{: .flex .flex--left}
+
 
 The first step is to incorporate the [existing SGID Trailheads](https://opendata.gis.utah.gov/datasets/utah-trailheads/explore) into OSM. Essentially, we need to conflate –or merge– the two datasets to ensure we’re getting the best of both worlds.
 
@@ -50,7 +50,7 @@ Three short videos are linked below that walk you through the map challenge.
 
 ### What’s Next for the Trailheads Dataset?
 
-{: .flex .flex--left}
+
 
 Once the map challenge is complete, we’ll then direct all maintenance for the trailheads layer to OSM.
 
@@ -66,7 +66,7 @@ We hope you’ll join us in this effort.
 
 ### Get Involved in the Map Challenge!
 
-{: .flex .flex--left}
+
 
 If you’d like to contribute to the project, you can start by watching our three short how-to videos.
 
@@ -76,7 +76,7 @@ If you’d like to contribute to the project, you can start by watching our thre
 
 ### Follow Along with the Project
 
-{: .flex .flex--left}
+
 
 You can follow along with this project by visiting our [collaborative trailheads GitHub repository](https://github.com/agrc/collaborative-trailheads) or by reaching out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.

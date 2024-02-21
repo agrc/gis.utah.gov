@@ -14,7 +14,7 @@ category: SGID Blog
 ---
 
 ![map with marker]({% link images/authoritative_geocoding.png %})
-{: .inline-text-left}
+
 
 ### Geocoding Assurance _or_ Why you should trust the results
 

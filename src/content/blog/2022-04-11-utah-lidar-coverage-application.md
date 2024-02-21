@@ -19,7 +19,7 @@ To accompany our [web pages of lidar projects]({% link data/elevation-and-terrai
 _**Please note:** The proposed project footprints can change frequently and will be updated as we receive more information._
 
 [![LiDAR Coverage Application]({% link images/lidar_coverage_app_sm.png %} "LiDAR Coverage Application")](https://arcg.is/18SWjy)
-{: .flex .flex--center }
+
 
 Have questions? Reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.

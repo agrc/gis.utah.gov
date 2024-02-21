@@ -29,7 +29,7 @@ With the current system (referred to as E911 since the 'E' was added when mobile
 
 ## UGRC and NG911
 
-![NG911 Datasets]({% link images/utah-ng911-database.png %}){: .inline-text-right }
+![NG911 Datasets]({% link images/utah-ng911-database.png %})
 
 UGRC’s role in NG911 is centered on the GIS mapping, or 'geospatial' component. Truth be told - this GIS mapping task - in itself is quite an undertaking. It involves statewide GIS datasets that must be accurate, complete, and current, and the list of required and strongly recommended GIS map layers is comprehensive: address points, PSAP boundaries, municipal boundaries, mile markers and more. Thankfully though, Utah is already in good shape with this data, due to the partnership between UGRC and county and local government, which has resulted in most of these datasets already being NG911-ready. Additionally, UGRC has established state data standards and sharing agreements that facilitate the consistency and longevity of these datasets.
 

@@ -17,14 +17,14 @@ In releasing the new, updated gis.utah.gov, we feel we have taken logical, evolu
 The primary driver behind this release was to solve some nagging issues associated with operating a locally-hosted Content Management System (CMS). Our new GitHub Pages ([GH Pages](https://pages.github.com/)) architecture releases us from the ‘upkeep’ that included care and feeding for WordPress, its associated extensions, a relational database (mySQL), dynamic programming interface (PHP), a server OS, and operation and hosting expenses for a virtual machine. GitHub’s **free** hosting policy for openly-sourced content means we are saving real resources that can be applied to other priorities.
 
 [![How Git Works]({% link images/howgitworkssmall.png %})]({% link images/howgitworks.png %})
-{: .inline-text-right}
+
 
 While, it is true that we are putting our faith in the engineers at GitHub to keep their stack [running for us](https://www.githubstatus.com/), we are not solely in the company of freeloaders. The paid services GitHub provides to their top-tier paying customers (many of the largest software firms in the world, including the most prominent commercial GIS software vendor), should ensure we are in good hands. And since all our pages are static (as opposed to dynamically generated from PHP database calls), we could easily port the site to another cloud platform if we ever find the need.
 
 Another nice feature of GH Pages is its cloud-based, static website generator system. Our content repository is at [{{ site.github.repository_url }}]({{ site.github.repository_url }}), and any time an edit is approved and merged into the repo, the appropriate static pages on github.io servers are updated in seconds. And, through a clever bit of DNS work, the github.io servers are what the world sees as {% link index.html %}.
 
 ![Forking the UGRC Website Repo in GitHub]({% link images/forkingagrc.png %})
-{: .inline-text-left}
+
 
 The new architecture allows us to keep the distributed, multi-user editing capabilities expected in a CMS -- anyone can fork our website content repo and submit pull requests, containing the proposed changes, for our approval. In addition to administrative control over the content, GitHub also provides capabilities for easy local backups, and a complete transactional history of the site over time.
 
@@ -48,7 +48,7 @@ We’ve got more work to complete under Phase 1, but Phase 2 blueprints are star
 As always, we welcome and appreciate your {{ contact }} on the gis.utah.gov site.
 
 ![Teamwork Cake for UGRC Website]({% link images/teamwork.png %})
-{: .text-right}
+
 
 Thanks to [@steve_ugrc](https://twitter.com/steve_ugrc) for the vision, leadership, and GitHub mentoring that got us all to v6.0!
 
