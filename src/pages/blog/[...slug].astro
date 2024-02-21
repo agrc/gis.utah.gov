@@ -1,7 +1,8 @@
 ---
+import Section from '@components/page/Section.astro';
 import BlogPost from '@layouts/BlogPost.astro';
 import Layout from '@layouts/FullWidth.astro';
-import { getBlogPosts, type DecoratedBlogEntry } from '@utils/collections';
+import { getBlogPosts, slugify, type DecoratedBlogEntry } from '@utils/collections';
 
 export async function getStaticPaths() {
   return (await getBlogPosts()).map((post) => ({
@@ -15,7 +16,16 @@ const { Content } = await post.render();
 ---
 
 <Layout title="From the blog">
-  <BlogPost {...post.data}>
-    <Content />
-  </BlogPost>
+  <Section title={post.data.title} titlePosition="center" stripe>
+    <div class="flex justify-center gap-1 text-sm" slot="sub-title">
+      <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Author</span>
+      <span>·</span>
+      <span class="whitespace-nowrap">
+        <a href={`/blog/authors/${slugify(post.data.author.display_name)}`}>{post.data.author.display_name}</a>
+      </span>
+    </div>
+    <BlogPost {...post.data}>
+      <Content />
+    </BlogPost>
+  </Section>
 </Layout>
