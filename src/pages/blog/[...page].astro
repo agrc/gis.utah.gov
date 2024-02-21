@@ -3,7 +3,7 @@ import Pagination from '@components/Pagination.astro';
 import CardWithDate from '@components/page/CardWithDate.astro';
 import GridForLatestNews from '@components/page/GridForLatestNews.astro';
 import FullWidth from '@layouts/FullWidth.astro';
-import { getBlogPosts } from '@utils/collections';
+import { getBlogFilters, getBlogPosts, type BlogFilter } from '@utils/collections';
 import type { Page } from 'astro';
 import type { CollectionEntry } from 'astro:content';
 import { fromMarkdown } from 'mdast-util-from-markdown';
@@ -15,10 +15,20 @@ export async function getStaticPaths({ paginate }) {
   return paginate(posts, { pageSize: 20 });
 }
 
+const categories = await getBlogFilters('categories');
 const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
 ---
 
 <FullWidth title="From the blog">
+  <div class="mt-3 flex justify-center space-x-6">
+    {
+      categories.map((category: BlogFilter) => (
+        <a href={`/blog/categories/${category.slug}`} class="mr-2">
+          {category.name}
+        </a>
+      ))
+    }
+  </div>
   <GridForLatestNews>
     {
       page.data.map((post) => (

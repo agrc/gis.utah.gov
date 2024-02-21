@@ -1,0 +1,52 @@
+---
+import CardWithDate from '@components/page/CardWithDate.astro';
+import GridForLatestNews from '@components/page/GridForLatestNews.astro';
+import FullWidth from '@layouts/FullWidth.astro';
+import { getBlogFilters, type DecoratedBlogPost } from '@utils/collections';
+import { fromMarkdown } from 'mdast-util-from-markdown';
+import { toString } from 'mdast-util-to-string';
+
+type Path = {
+  params: {
+    slug: string;
+  };
+  props: {
+    category: string;
+    posts: DecoratedBlogPost[];
+  };
+};
+
+export async function getStaticPaths(): Promise<Path[]> {
+  const categories = await getBlogFilters('categories');
+
+  return categories.map((category) => ({
+    params: {
+      slug: category.slug,
+    },
+    props: {
+      category: category.name,
+      posts: category.posts,
+    },
+  }));
+}
+
+const { category, posts } = Astro.props as Path['props'];
+---
+
+<FullWidth title="From the blog">
+  <h2 class="mt-3 text-center dark:text-zinc-200">Category: {category} ({category.length})</h2>
+  <GridForLatestNews>
+    {
+      posts.map((post) => (
+        <CardWithDate
+          includeYear
+          title={post.data.title}
+          description={toString(fromMarkdown(post.body)).slice(0, 200) ?? 'a blog post'}
+          date={post.data.date}
+          slug={post.slug}
+          estimatedReadingTime={post.data.estimatedReadTime}
+        />
+      ))
+    }
+  </GridForLatestNews>
+</FullWidth>
