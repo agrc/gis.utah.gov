@@ -18,17 +18,17 @@ But that other one-in-a-hundred map is so sobering you wish the numbers would st
 Seven months ago (April 2020), the Utah Department of Health approached us to create a [map](https://coronavirus.utah.gov/utah-covid-19-testing-locations) for the State's [coronavirus.utah.gov](https://coronavirus.utah.gov) resource and information site.
 
 ![The usage graph seemed to wane after two months]({% link images/covid-testing-first-months.png %})
-{: .flex .flex--center}
+
 
 For the first few weeks of its existence, we watched in concern as the initial usage wave died down and it seemed like the map wasn't being used. Normally, I'd be worrying about my work being appreciated, but this was a lot cartographically closer to a life-or-death subject than I'd ever come. We made this map to help Utah survive and recover, and if the map wasn't being used it meant we weren't fulfilling our duty to the people of Utah.
 
 ![The usage graph mirrors the surge in cases over the summer]({% link images/covid-testing-summer.png %})
-{: .flex .flex--center}
+
 
 We saw a rise in usage over the summer as Utah experienced a surge in cases after Memorial Day. I began to feel like the map was living up to its promise. People were getting tested, and because of this testing they would know if they needed to take individual steps to stop the spread. We continued to add sites as new providers came online and make modifications to existing sites. Many sites shifted their hours towards the morning to avoid the summer heat.
 
 ![The usage in fall makes all earlier usage seem insignificant]({% link images/covid-testing-surge.png %})
-{: .flex .flex--center}
+
 
 However, as fall progressed we faced the grim reality that we're not out of the woods yet. The usage rose again alongside active cases. The last three weeks in particular have seen massive jumps. The summer usage bump that used to seem so significant almost disappears now as the usage climbs ever upward. The largest single day swing came after the Governor announced new plans to try to stop the spread on November 6th.
 

@@ -17,7 +17,7 @@ Now that you've got the SGID layer loaded into a dataframe, you can integrate it
 
 ## Requirements
 
-{: .text-left}
+
 
 This code requires three additional libraries besides pandas (or four if you want a spatially-enabled dataframe). These are all pip-installable from [PyPi](https://pypi.org), so they can be used in the vast majority of python environments.
 
@@ -28,7 +28,7 @@ This code requires three additional libraries besides pandas (or four if you wan
 
 ## The Code
 
-{: .text-left}
+
 
 ```python
 import geopandas as gpd

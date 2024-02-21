@@ -9,11 +9,11 @@ published: false
 category: Uncategorized
 ---
 
-The updated [Watershed Restoration Initiative (WRI) Application](https://wri.utah.gov/wri/) will be adding a Digital Government Achievement Award to its trophy case this month. WRI was one of 3 winners in the 2016 "Driving Digital Government" state government category. ![]({% link images/DGAAaward.png %}){:.inline-text-right}
+The updated [Watershed Restoration Initiative (WRI) Application](https://wri.utah.gov/wri/) will be adding a Digital Government Achievement Award to its trophy case this month. WRI was one of 3 winners in the 2016 "Driving Digital Government" state government category. ![]({% link images/DGAAaward.png %})
 
 The WRI application, built by a partnership between the Division of Wildlife Resources, the Dept. of Technology Services AppDev team, and UGRC, allows for collaborative project proposals, scheduling, funding, tracking, and mapping across the many participating agencies and levels of government. The WRI App integrates GIS-based digital maps extensively to organize, analyze, and visualize project information.
 
-![WRI Application Screenshot]({% link images/WRIAppMap2.png %}){:.inline-text-right}To date, large-scale landscape remediation and improvement projects managed in the WRI environment total almost $200 million. Participating organizations have included, at least 6 state agencies, 8 non-profits, and 5 federal agencies, plus, in some cases, private land owners.
+![WRI Application Screenshot]({% link images/WRIAppMap2.png %})To date, large-scale landscape remediation and improvement projects managed in the WRI environment total almost $200 million. Participating organizations have included, at least 6 state agencies, 8 non-profits, and 5 federal agencies, plus, in some cases, private land owners.
 
 The WRI team includes, pictured from left Steve Gourley, Scott Davis, Jase Hopkin, Jessie Pechmann, Mike Blake, Casey Wardle, Tyler Thompson, Aaron McElwee, John Angus, Chad Smith, and Nathan Kota. Other team members, not pictured, are: Kiril Boyadjieff, Mike Casey, Alan Clark, and Rose Cordova.
 

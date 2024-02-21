@@ -10,7 +10,7 @@ category: Developer
 ---
 
 _From the I Love Being Lazy department_
-{: .text-center}
+
 
 Do you hate writing the same bits of code over and over again? Do you hate fixing the same thing again and again? Do you think "there's got to be a way to do that, but I don't have time to figure it out?"
 
@@ -21,7 +21,7 @@ I'm excited to introduce `palletjack`, a python data pipeline library for updati
 palletjack can speed up your ETL script development time by handling all the drudgery of extracting data from external sources and loading your transformed data into AGOL hosted feature layers, freeing you to focus on the transformations specific to your unique project.
 
 ![palletjack does lots of the repetitive work for you]({% link images/palletjack_overview.png %})
-{: .flex .flex--center}
+
 
 palletjack uses [spatially-enabled DataFrames](https://developers.arcgis.com/python/guide/introduction-to-the-spatially-enabled-dataframe/) as the common data format between many different external data formats and hosted feature services in AGOL. They allow you to simply and quickly transform your data as desired: adding or renaming attributes, calculating new attributes, or merging multiple datasets into one.
 
@@ -35,7 +35,7 @@ Don't want to read? Watch the recording of the palletjack presentation at UGIC's
 
 ## Step One: Extract Data from External Sources
 
-{: .text-left}
+
 
 A common task in modern GIS is taking tabular data from a non-spatial source and either georeferencing it using data in the table (such as addresses or lat/long pairs) or joining it to some pre-existing spatial dataset.
 
@@ -47,7 +47,7 @@ The [`palletjack.extract`](https://agrc.github.io/palletjack/palletjack/extract.
 
 ## Step Two: Transform the Data
 
-{: .text-left}
+
 
 Unfortunately, external data is rarely plug and play. We often have to massage it into form, like joining the rental assistance data to the zip code geometries or adding the proper county to the recycling data.
 
@@ -57,7 +57,7 @@ While palletjack can't magically figure out your transformations for you, it doe
 
 ## Step Three: Load the Data into an Existing Hosted Feature Service
 
-{: .text-left}
+
 
 Now that our new DataFrame looks the way we want it to, it's time to update our live data. The [`palletjack.load.FeatureServiceUpdater`](https://agrc.github.io/palletjack/palletjack/load.html#palletjack.load.FeatureServiceUpdater) class provides four methods for each possible updating scenario: adding new features, updating existing features, removing features we don't need any longer, and finally truncating the entire service and loading completely new data. It's your job to figure out which one (or more) methods to use. They each take a DataFrame of new/updated info to push up to the feature service (or a list of ObjectIDs to delete).
 
@@ -67,7 +67,7 @@ palletjack fixes this by doing all the heavy lifting for you. You only have to c
 
 ## Sign Me Up
 
-{: .text-left}
+
 
 "Ok," I can hear you saying, "I'm convinced! palletjack will completely change my life, restore my thinning hair, and magically plop a Lamborghini in my driveway. [How do I get that goodness in me?](https://www.youtube.com/watch?v=_xOsqQM8jFU)"
 
@@ -75,7 +75,7 @@ Installing palletjack is easy: set up your python environment using your preferr
 
 ## Tell Me More
 
-{: .text-left}
+
 
 I've tried to make the [palletjack documentation](https://agrc.github.io/palletjack/palletjack/) as helpful and useful as possible. In addition, palletjack tries to add more info to common errors to help you track down what went wrong or what you need to change in your data. The [source repo](https://github.com/agrc/palletjack/) has an [example script](https://github.com/agrc/palletjack/blob/main/docs/examples.py) with some simplified examples.
 
@@ -83,6 +83,6 @@ Finally, you're free to crib from our scripts that use palletjack (which we call
 
 ## Um, A Little Help Here?
 
-{: .text-left}
+
 
 If you run into problems using palletjack, please reach out! You can contact {% include contact.html subject=page.title contact=site.data.contacts.palletjack text=' ' hide-punctuation=true %} if you need help. If you find a bug, or want to keep track of updates, you can watch the palletjack [GitHub repo](https://github.com/agrc/palletjack).

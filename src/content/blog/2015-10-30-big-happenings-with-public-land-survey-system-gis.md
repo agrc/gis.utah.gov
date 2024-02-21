@@ -18,7 +18,7 @@ Two parallel developments -- state stewardship of the PLSS GIS layers and the es
 
 ### State Stewardship of the PLSS GIS Layers
 
-{: .text-left}
+
 
 This August, the State of Utah negotiated and signed a [Memorandum of Understanding](https://drive.google.com/file/d/1GoNuIEhg80KFB5e2FqL64RkspyCJlzu7/view?usp=sharing) (MOU) with the BLM to take over stewardship of the PLSS corner point and township, range, and section GIS layers. The goal of the MOU is to improve the spatial accuracy of this dataset by incorporating locally collected survey control, incorporating a change management process, and adopting the ESRI Parcel Fabric data model for the ongoing maintenance of Utah’s PLSS dataset.
 
@@ -32,7 +32,7 @@ This approach just makes too much sense. Having all three stakeholder organizati
 
 ### Monument Replacement and Restoration Committee (MRRC)
 
-{: .text-left}
+
 
 As property descriptions are all ultimately described using the exact location of the physical survey monuments as a starting point, it is important that the monuments are protected, and as a backup, their locations are collected and preserved.
 

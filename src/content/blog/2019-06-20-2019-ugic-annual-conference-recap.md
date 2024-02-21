@@ -15,13 +15,13 @@ The Utah Geographic Information Council hosted its annual conference on May 6–
 
 ## Why Does It Matter?
 
-{: .text-left}
+
 
 This conference is valuable to the GIS community in Utah because it’s the one time of the year when everyone can get together. There are other conferences that many UGIC members attend, like the ESRI User Conference, but the UGIC conference is small enough that attendees can actually spend time connecting with their peers from all over the state and other states in the Intermountain West. There are always a lot of great presentations from UGIC members who are developing innovative solutions for their everyday problems. The UGIC conference is also a very accessible conference, meaning that many people who may feel intimidated presenting in a larger forum have a place to showcase their work with an encouraging group of like-minded people.
 
 ## The Conference
 
-{: .text-left}
+
 
 So how was the conference this year? [What did attendees talk about](https://drive.google.com/drive/folders/14svh-48imju91bsyYcB1zw2yRdy9w8fW), and how did the conference compare to other years? Let’s discuss.
 
@@ -34,7 +34,7 @@ So how was the conference this year? [What did attendees talk about](https://dri
 
 ### Sessions
 
-{: .text-left}
+
 
 Jack Dangermond, President of ESRI, delivered the conference’s featured keynote address. He has been recognized as a thought leader in the GIS industry, and he discussed a number of emerging trends in GIS as more and more data becomes available and map creation is no longer limited to technical specialists. He also focused on several new technologies available for mobile data collection and data sharing through web services and open data portals. UGIC was privileged to have Jack come to Utah again because he only visits a limited number of non-ESRI conferences each year.
 
@@ -48,7 +48,7 @@ There were also a number of panel discussions led primarily by members of the UG
 
 ### UGIC 2019 Map, App, and Poster Gallery and Competition
 
-{: .text-left}
+
 
 The conference had great submissions for the Map, App, and Poster Gallery and Competition this year. Here are some highlights:
 
@@ -77,11 +77,11 @@ The conference had great submissions for the Map, App, and Poster Gallery and Co
 
 ## Reflecting on This Year’s Conference
 
-{: .text-left}
+
 
 ### What Was New?
 
-{: .text-left}
+
 
 _Exceptional Attendance_: This year’s conference was exceptionally well attended, with a total of 263 attendees (including both registrants and vendors---possibly the highest number of vendors the conference has seen), 121 students in two days of preconference training (One section of the ArcGIS Pro preconference training even sold out, which is the first time, that UGIC knows of, that a class has been completely filled!), and over 200 people at the Thursday evening social on the Heber Valley Railroad.
 
@@ -91,7 +91,7 @@ _Other_: A live band performed during the Wednesday evening vendor social. There
 
 ### What Was the Same?
 
-{: .text-left}
+
 
 Some aspects of the conference are consistent from year to year, for instance: the fantastic presentations from the Utah GIS community. Also, the UGIC conference is a great time for all attendees! Between the excellent sessions, the vendor social, the indoor golf tournament, the BBQ dinner, and train ride, there was something for everyone.
 
@@ -99,7 +99,7 @@ Another consistent part of the conference is a great venue in one of Utah’s gr
 
 ## To Sum It Up
 
-{: .text-left}
+
 
 Utah has been recognized nationally as a great place for GIS innovations, data sharing, and collaboration. The presentations at the UGIC conference each year highlight the fact that Utah is a great place for anyone using GIS. In fact, some members are now involved in the GIS field in other states, but they value the connections at UGIC so much that they keep coming back for the conference. This is a testament to the quality of GIS in Utah and why the UGIC conference is valuable locally, regionally, and nationally.
 

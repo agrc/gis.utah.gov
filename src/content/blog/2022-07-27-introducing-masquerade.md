@@ -17,7 +17,7 @@ Masquerade is a new proxy service hosted by UGRC that makes [our geocoding servi
 
 ## Capabilities
 
-{: .text-left}
+
 
 - Single line address geocoding (convert an address to an x,y coordinate). Powered by the [UGRC web API](https://api.mapserv.utah.gov/#geocoding).
 - Provides typeahead suggestions from a variety of datasets in [Open SGID]({% link sgid/open-sgid/index.md %}) such as political districts, municipal and county boundaries, and GNIS place names.
@@ -26,7 +26,7 @@ _Give Masquerade's awesome searching capabilities a try in this [simple web app]
 
 ### Supported Esri Geocode Service Operations
 
-{: .text-left}
+
 
 ✅ Find Address Candidates
 
@@ -40,11 +40,11 @@ Reverse Geocode has not been implemented. [Let us know](https://github.com/agrc/
 
 ## Common Use Cases
 
-{: .text-left}
+
 
 ### ArcGIS Pro
 
-{: .text-left}
+
 
 #### Locate Pane
 
@@ -62,7 +62,7 @@ Once Masquerade has been added as a locator to your project, you can also use it
 
 ### Web AppBuilder/Experience Builder
 
-{: .text-left}
+
 
 Masquerade can be used to power the search widget in [Web AppBuilder](https://doc.arcgis.com/en/web-appbuilder/latest/create-apps/widget-search.htm) or [Experience Builder](https://developers.arcgis.com/experience-builder/guide/search-widget/). To configure, use the following URL as the "Geocoder URL" (WAB) or "Locator URL" (EB) value in the search widget settings:
 
@@ -70,10 +70,10 @@ Masquerade can be used to power the search widget in [Web AppBuilder](https://do
 
 ## Alternatives
 
-{: .text-left}
+
 
 ### UGRC API Client Desktop Application
 
-{: .text-left}
+
 
 If you are not already using Esri products, you likely want to check out the [Official UGRC API Client]({% link _posts/2021-11-29-introducing-the-official-ugrc-api-client.md %}). This is a streamlined, stand-alone desktop application that requires no Esri products or licenses.

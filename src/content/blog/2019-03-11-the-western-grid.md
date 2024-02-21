@@ -25,7 +25,7 @@ It turns out this gridiron pattern is connected to a 17th-century mathematician,
 
 ## The Survey Chain
 
-{: .text-left}
+
 
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/GunterChain.jpg %}" alt="Gunter Chain" loading="lazy" />
@@ -40,7 +40,7 @@ Because of its ease in calculations, the Gunter Chain was quickly adopted and be
 
 ## Standard Units of Measure (The Acre)
 
-{: .text-left}
+
 
 <figure class="caption caption--right">
   <img class="caption__image" src="{% link images/NorthwestTerritory.png %}" alt="Northwest Territory" loading="lazy" />
@@ -53,7 +53,7 @@ The early American Congress further solidified the acre as the official unit of 
 
 ## Public Land Survey System
 
-{: .text-left}
+
 
 I know, I know… that was probably more history than you were looking for, but really, that’s the annotated crash course for understanding the basis of the present-day Public Land Survey System (PLSS) (Fig 4). This system was originally proposed by Thomas Jefferson and was mandated by Congress to oversee the cadastral surveys of the public lands. Essentially, it was set up to facilitate the transfer of federal lands to private citizens. The Bureau of Land Management (BLM) is the official record keeper of the surveys. Over the past 200 years, almost 1.5 billion acres have been surveyed into townships (and ranges) and sections. These surveys were conducted primarily west of the original thirteen colonies and north of Texas (Texas has Spanish roots and Spanish land grants). Presently, areas of Alaska are still being surveyed.
 
@@ -85,7 +85,7 @@ It is precisely this survey pattern that explains why the western United States 
 
 ## The Western Grid
 
-{: .text-left}
+
 
 <figure class="caption caption--left caption--flow">
   <a href="{% link images/plat_of_zion.png %}" title="click to see the full sized image">
@@ -115,7 +115,7 @@ If you have ever tried to cross the street in downtown Salt Lake City, you know 
 
 ## Section Lines and Addressing
 
-{: .text-left}
+
 
 Another notable mention are “section line roads.” These roads are laid out in a one-mile by one-mile grid pattern that follows the section lines. Figure 10 shows a good example of this southwest of Boise, Idaho. This pattern is also very popular in Phoenix and Las Vegas.
 

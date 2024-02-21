@@ -11,7 +11,7 @@ category: Uncategorized
 ---
 
 This tool has been updated to work with ArcGIS Pro. Some of the information below may be outdated. Please refer to [GitHub](https://github.com/agrc/geocoding-toolbox) for the most current documentation.
-{: .pop}
+
 
 UGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.
 
@@ -19,7 +19,7 @@ This custom geocoding toolbox allows ArcGIS users to obtain geographic coordinat
 
 While the geocoding endpoint was built primarily for web applications it also provides value as a toolbox in ArcGIS, as it uses current local data and solves for some common shortcomings with stock geocoding approaches by:
 
-![geocoding toolbox]({% link images/geocodingtoolbox.png %}){: .inline-text-right }
+![geocoding toolbox]({% link images/geocodingtoolbox.png %})
 
 - using hierarchical street name and address coordinate system aliasing
 - use of either zip codes or place names as zones

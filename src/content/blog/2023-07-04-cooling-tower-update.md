@@ -43,7 +43,7 @@ The rest of this blog post will largely focus on the project results, because th
    - Enrich the data with additional attributes
 1. Build a web map with other relevant layers
 
-![Cooling Tower Project Overview]({% link images/dhhs_process.png %} "Cooling Tower Project Overview"){: .flex .flex--center}
+![Cooling Tower Project Overview]({% link images/dhhs_process.png %} "Cooling Tower Project Overview")
 
 ## Results
 
@@ -53,7 +53,7 @@ In the PyTorch model, we took the approach of maximizing cooling tower detection
 
 In the end, the TowerScout model detected 6,324 potential towers with a confidence score > 0.5. These relatively high-confidence detections were manually reviewed, and 1,561 tower locations were validated.
 
-![Map of cooling towers with confidence > 0.5]({% link images/cooling_tower_map.png %} "Map of cooling towers with confidence > 0.5"){: .flex .flex--center}
+![Map of cooling towers with confidence > 0.5]({% link images/cooling_tower_map.png %} "Map of cooling towers with confidence > 0.5")
 
 ## Next Steps
 
