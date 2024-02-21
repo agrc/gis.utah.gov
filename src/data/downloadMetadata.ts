@@ -1890,8 +1890,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Liquor Stores': {
     itemId: '61b7f10c194b4ec69d02e169db1da09a',
     name: 'Utah Liquor Stores',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahLiquorStores',
+    openSgid: 'liquor_stores',
     layerId: 0,
   },
   'Utah Post Offices': {
