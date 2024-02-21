@@ -14,8 +14,12 @@ import Layout from '@layouts/Pillar.astro';
 
 import { Image } from 'astro:assets';
 
-const location = '/src/images/product-sgid';
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-sgid/*.{svg,png}');
+import dataSharingAgreementPhoto from '@images/sgid/data-sharing-agreement.svg';
+import licenseDisclaimerPhoto from '@images/sgid/license-disclaimer.svg';
+import openSgidPhoto from '@images/sgid/open-sgid.svg';
+import sgidIndexPhoto from '@images/sgid/sgid-index.svg';
+import sgidLogo from '@images/sgid/sgid-logo.svg';
+import sgidOpenDataPhoto from '@images/sgid/sgid-opendata.svg';
 
 const page: IStandardPageMetadata = {
   title: 'State Geographic Information Datasource',
@@ -27,7 +31,7 @@ const page: IStandardPageMetadata = {
     <Section>
       <Fragment slot="title">The State Geographic Information Datasource</Fragment>
       <Image
-        src={images[`${location}/sgid-logo.svg`]()}
+        src={sgidLogo}
         slot="image"
         loading="eager"
         alt="sgid logo"
@@ -54,24 +58,14 @@ const page: IStandardPageMetadata = {
     <Section stripe>
       <GridForPillars>
         <CardWithTopImage title="SGID Index" actionText="Search the index" actionUrl="/products/sgid-index">
-          <Image
-            slot="image"
-            src={images[`${location}/sgid-index.svg`]()}
-            alt="a person using a search engine"
-            class="block h-44"
-          />
+          <Image slot="image" src={sgidIndexPhoto} alt="a person using a search engine" class="block h-44" />
           The SGID Index is <span class="font-bold">the primary source</span> of information for SGID datasets. It includes
           links to detailed information pages about UGRC-maintained datasets as well as direct links to the authoritative
           sources for datasets served by other state agencies. The index lists the resource's category, name, and primary
           data steward, along with a short description of the resource and links to web services (if available).
         </CardWithTopImage>
         <CardWithTopImage title="Open SGID" actionText="Get connected" actionUrl="products/open-sgid">
-          <Image
-            slot="image"
-            src={images[`${location}/open-sgid.svg`]()}
-            alt="a person connected to a database"
-            class="block h-44"
-          />
+          <Image slot="image" src={openSgidPhoto} alt="a person connected to a database" class="block h-44" />
           The Open SGID is a publicly available database containing our curated collection of GIS datasets. You can use this
           vendor-neutral database connection to directly access Utah spatial data in a wide variety of applications, including
           most GIS programs and common database clients.
@@ -83,7 +77,7 @@ const page: IStandardPageMetadata = {
         >
           <Image
             slot="image"
-            src={images[`${location}/sgid-opendata.svg`]()}
+            src={sgidOpenDataPhoto}
             alt="people connected to a network through geography"
             class="block h-44"
           />
@@ -118,21 +112,11 @@ const page: IStandardPageMetadata = {
   <Section title="More SGID Resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
       <CardWithSideImage title="Data and license disclaimer" actionUrl="/products/sgid/disclaimer">
-        <Image
-          slot="image"
-          src={images[`${location}/license-disclaimer.svg`]()}
-          alt="man in front of warning sign"
-          class="self-center"
-        />
+        <Image slot="image" src={licenseDisclaimerPhoto} alt="man in front of warning sign" class="self-center" />
         UGRC's data license and general data disclaimer.
       </CardWithSideImage>
       <CardWithSideImage title="Data sharing agreement" actionUrl="/products/sgid/sharing">
-        <Image
-          slot="image"
-          src={images[`${location}/data-sharing-agreement.svg`]()}
-          alt="people shaking hands"
-          class="self-center"
-        />
+        <Image slot="image" src={dataSharingAgreementPhoto} alt="people shaking hands" class="self-center" />
         Agreement between UGRC and data stewards for data shared through the SGID.
       </CardWithSideImage>
     </GridForMoreResources>

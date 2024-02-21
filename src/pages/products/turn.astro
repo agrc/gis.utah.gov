@@ -12,8 +12,11 @@ import Layout from '@layouts/Pillar.astro';
 
 import { Image } from 'astro:assets';
 
-const location = '/src/images/product-turn/';
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-turn/*.{svg,png}');
+import getConnectedPhoto from '@images/turn/get-connected.svg';
+import learningPhoto from '@images/turn/learning.svg';
+import mapPhoto from '@images/turn/map.svg';
+import signUpPhoto from '@images/turn/sign-up.svg';
+import turnLogo from '@images/turn/turn-logo.svg';
 ---
 
 <Layout title="TURN GPS">
@@ -21,7 +24,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
     <Section>
       <Fragment slot="title">The Utah Reference Network</Fragment>
       <Image
-        src={images[`${location}turn-logo.svg`]()}
+        src={turnLogo}
         slot="image"
         loading="eager"
         alt="wavy gravy turn logo"
@@ -46,12 +49,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
           actionText="Register now"
           actionUrl="https://turngps-billpay.ugrc.utah.gov"
         >
-          <Image
-            slot="image"
-            src={images[`${location}sign-up.svg`]()}
-            alt="a person filling out a form"
-            class="block h-44"
-          />
+          <Image slot="image" src={signUpPhoto} alt="a person filling out a form" class="block h-44" />
           Having centimeter precision is the new norm for surveying and mapping. Join the hundreds of others using the TURN
           GPS system to improve your accuracy. All that is required is a small yearly subscription and it only takes a few
           minutes to get started.
@@ -59,7 +57,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
         <CardWithTopImage title="Get connected" actionText="Connect now" actionUrl="/products/turn/connecting">
           <Image
             slot="image"
-            src={images[`${location}get-connected.svg`]()}
+            src={getConnectedPhoto}
             alt="a person connected to a database with a lock and key shield"
             class="block h-44"
           />
@@ -67,12 +65,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
           many popular devices. If you don't see your device listed, contact us and we'll help you get connected.
         </CardWithTopImage>
         <CardWithTopImage title="Resources" actionUrl="/products/turn/resources">
-          <Image
-            slot="image"
-            src={images[`${location}learning.svg`]()}
-            alt="a person reading a book learning"
-            class="block h-44"
-          />
+          <Image slot="image" src={learningPhoto} alt="a person reading a book learning" class="block h-44" />
           There are many artifacts and resources available to help you get the most out of the TURN GPS system. We've put
           together a list of the most popular resources to help you get started including site logs and maps.
         </CardWithTopImage>
@@ -94,21 +87,11 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product
   <Section title="More TURN Resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
       <CardWithSideImage title="TURN PDF wall map" actionUrl="/documentation/policy/citation">
-        <Image
-          slot="image"
-          src={images[`${location}map.svg`]()}
-          alt="a person holding a map with pins on it"
-          class="self-center"
-        />
+        <Image slot="image" src={mapPhoto} alt="a person holding a map with pins on it" class="self-center" />
         Hang the network on your wall.
       </CardWithSideImage>
       <CardWithSideImage title="Purchase or renew an account" actionUrl="/">
-        <Image
-          slot="image"
-          src={images[`${location}map.svg`]()}
-          alt="a person checking out at the grocery store"
-          class="self-center"
-        />
+        <Image slot="image" src={mapPhoto} alt="a person checking out at the grocery store" class="self-center" />
         Instructions on how you can sign up for or renew your account.
       </CardWithSideImage>
     </GridForMoreResources>

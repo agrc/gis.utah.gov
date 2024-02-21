@@ -9,8 +9,11 @@ import { stripeSections } from '@utils/page';
 
 import { Image } from 'astro:assets';
 
-const location = '/src/images/product-discover';
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/product-discover/*.{svg,png}');
+import accuracy from '@images/discover/accuracy.svg';
+import discoverLogo from '@images/discover/discover-logo.svg';
+import getConnected from '@images/discover/get-connected.svg';
+import licensedAccess from '@images/discover/licensed-access.svg';
+import problems from '@images/discover/problems.svg';
 
 const page: IStandardPageMetadata = {
   title: 'Discover',
@@ -37,7 +40,7 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[0]}>
     <Image
       slot="image"
-      src={images[`${location}/discover-logo.svg`]()}
+      src={discoverLogo}
       loading="eager"
       alt="Discover logo"
       class="w-full max-w-[400px] rounded-2xl"
@@ -53,12 +56,7 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image
-      slot="image"
-      src={images[`${location}/get-connected.svg`]()}
-      alt="Connect to Discover"
-      class="w-full max-w-[400px] rounded-2xl"
-    />
+    <Image slot="image" src={getConnected} alt="A person sitting on a globe" class="w-full max-w-[400px] rounded-2xl" />
     <p>
       You can connect to Discover using a variety of desktop and web clients, including QGIS, ArcGIS Pro, AutoCAD, and
       ArcGIS Online.
@@ -67,8 +65,8 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[2]}>
     <Image
       slot="image"
-      src={images[`${location}/licensed-access.svg`]()}
-      alt="Secure access to licensed imagery"
+      src={licensedAccess}
+      alt="A person looking at their phone with a fingerprint on the screen and a lock"
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
@@ -79,8 +77,8 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[3]}>
     <Image
       slot="image"
-      src={images[`${location}/accuracy.svg`]()}
-      alt="Getting your data accurate"
+      src={accuracy}
+      alt="A person shooting arrows at a target"
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
@@ -92,8 +90,8 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[4]}>
     <Image
       slot="image"
-      src={images[`${location}/problems.svg`]()}
-      alt="Solving problems"
+      src={problems}
+      alt="A person struggling to solve a problem with his hand on his head"
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>Discover uses the common and open source WMS and WMTS standards, but you may still run into some problems.</p>

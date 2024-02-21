@@ -1,6 +1,5 @@
 ---
 import type { IStandardPageMetadata } from '@models/products/sgid/types';
-import type { ImageMetadata } from 'astro';
 
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
@@ -11,8 +10,9 @@ import { staff } from '@data/staff';
 
 import { Image } from 'astro:assets';
 
-const location = '/src/images/pillar-contact/';
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/*.svg');
+import newsletterPhoto from '@images/contact/newsletter.svg';
+import officePhoto from '@images/contact/office.svg';
+import socialMediaPhoto from '@images/contact/social-media.svg';
 
 import { stripeSections } from '@utils/page';
 
@@ -41,7 +41,7 @@ const page: IStandardPageMetadata = {
     <Image
       slot="image"
       loading="eager"
-      src={images[`${location}office.svg`]()}
+      src={officePhoto}
       alt="people sitting at a desk with a clock on the wall"
       class="w-full max-w-[400px] rounded-2xl"
     />
@@ -68,12 +68,7 @@ const page: IStandardPageMetadata = {
     </ul>
   </Section>
   <Section {...page.section[2]}>
-    <Image
-      slot="image"
-      src={images[`${location}social-media.svg`]()}
-      alt="social media"
-      class="w-full max-w-[400px] rounded-2xl"
-    />
+    <Image slot="image" src={socialMediaPhoto} alt="social media" class="w-full max-w-[400px] rounded-2xl" />
     <p>
       X is a low commitment social media tool that can be great for professional collaboration and sharing. It allows
       users to quickly search and scan recent posts for relevant information. UGRC posts to X using the handle <a
@@ -95,7 +90,7 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[3]}>
     <Image
       slot="image"
-      src={images[`${location}newsletter.svg`]()}
+      src={newsletterPhoto}
       alt="UGRC quarterly newsletter"
       class="w-full max-w-[400px] rounded-2xl"
     />
