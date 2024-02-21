@@ -3,13 +3,12 @@ title: GIS as a Tool for Addressing Intergenerational Poverty
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2021-02-19 10:01:46
-categories:
-  - Featured
+date: 2021-02-19T10:01:46.000Z
 tags:
   - gis
   - maps
   - spatial analysis
+category: Uncategorized
 ---
 
 ### Poverty and Place

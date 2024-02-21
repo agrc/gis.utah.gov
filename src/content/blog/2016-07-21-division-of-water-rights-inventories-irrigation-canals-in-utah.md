@@ -7,11 +7,10 @@ tags:
   - dwr
   - nhd
   - water
-date: 2016-07-21 19:30:03
+date: 2016-07-21T19:30:03.000Z
 title: Division of Water Rights Inventories Irrigation Canals in Utah
 published: false
-categories:
-  - Guestblog
+category: Guestblog
 ---
 
 In 2014, the Division of Water Rights (DWRi) was tasked with creating an inventory of irrigation canals in the State of Utah. The [legislation](https://le.utah.gov/~2014/bills/static/HB0370.html) requiring the inventory required the following criteria: canals had to be open, human­ made, and carry more than 5 cubic feet per second (CFS) of water. All private and commercial canals that meet the criteria are included. With little data meeting the criteria available initially, we started with the DWRi databases of water and irrigation companies and the USGS National Hydrology Dataset (NHD). The legislation requires the inventory to be completed within three years. In that time we will have to research over 1,100 water companies and 9,800 miles of features in the NHD data attributed as ‘canals’.

@@ -3,11 +3,10 @@ title: Utah SGID Statewide Roads Data Layer Updates 01/12/2024
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2024-01-12 8:30:00
-categories:
-  - Featured
+date: 2024-01-12T08:30:00.000Z
 tags:
   - roads
+category: SGID Blog
 ---
 
 UGRC recently completed updates to the SGID Roads data layer. Please visit our [Roads and Highway System]({% link data/transportation/roads-system/index.html %}) data page where you will find information about the Roads data model, as well as a web service layer to the SGID Roads data and direct download links in shapefile and geodatabase format.

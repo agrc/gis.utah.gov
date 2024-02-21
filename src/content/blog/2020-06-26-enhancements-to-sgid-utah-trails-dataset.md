@@ -1,17 +1,16 @@
 ---
-title: 'Enhancements to the SGID Utah Trails Dataset 06/26/2020'
+title: Enhancements to the SGID Utah Trails Dataset 06/26/2020
 published: false
 author:
   display_name: UGRC Office
   email: gbunce@utah.gov
-date: 2020-06-26 11:05:48
-categories:
-  - Featured
+date: 2020-06-26T11:05:48.000Z
 tags:
   - sgid
   - trails
   - transportation
   - recreation
+category: Uncategorized
 ---
 
 We are happy to announce significant updates and enhancements to the Utah Trails dataset. For one, the dataset was renamed to [Utah Trails and Pathways]({% link data/recreation/trails/index.html %}). The new name more accurately reflects the use and purpose of this data.

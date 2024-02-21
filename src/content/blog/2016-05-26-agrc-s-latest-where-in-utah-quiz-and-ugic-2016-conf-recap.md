@@ -7,10 +7,10 @@ tags:
   - conference
   - quiz
   - ugic
-date: 2016-05-26 19:01:07
+date: 2016-05-26T19:01:07.000Z
 title: UGRC&#039;s Latest Where in Utah Quiz and UGIC 2016 Conf Recap
 published: false
-categories: []
+category: Uncategorized
 ---
 
 The annual Utah Geographic Information Council (UGIC) Conference was held May 9-13, 2016 in Bryce Canyon, Utah. The conference had over 200 attendees and over 60 breakouts. Thank you to everyone who participated and helped make the conference a success!

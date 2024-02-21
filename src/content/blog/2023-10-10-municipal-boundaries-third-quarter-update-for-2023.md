@@ -1,15 +1,13 @@
 ---
-title: 'Municipal Boundaries, Third quarter update for 2023'
+title: Municipal Boundaries, Third quarter update for 2023
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2023-10-10 8:30:00
-categories:
-  - SGID Blog
-  - Featured
+date: 2023-10-10T08:30:00.000Z
 tags:
   - municipal boundaries
   - annexations
+category: SGID Blog
 ---
 
 It seems like 2023 is flying by; We're already into October and fall is here. It has been a quiet summer for annexations, presumably most folks were dealing with the special election. Utah did have a few annexations and once again Utah County led the way.

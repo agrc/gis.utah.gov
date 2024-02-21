@@ -10,8 +10,7 @@ tags:
 published: false
 date: 2011-11-17 08:34:02 -0700
 title: UGRC presents to Legislature
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>UGRC had an opportunity to update the <a href="https://le.utah.gov/asp/interim/Commit.asp?Year=2011&amp;Com=INTPUT">Public Utilities and Technology Interim Committee</a> on its recent projects.  It was a great opportunity to bring some visibility to legislators on the work of UGRC as well as many of its agency partners and associates in digital mapping. The general theme was one of collaboration and UGRC striving to continue its mission as a central repository of data and services that support state agencies, local governments, and federal agencies in digital mapping. The general feedback seemed positive and legislators seemed interested in the various areas of GIS UGRC supports.</p>

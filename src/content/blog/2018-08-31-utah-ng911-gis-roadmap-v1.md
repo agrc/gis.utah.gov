@@ -4,13 +4,12 @@ published: false
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2018-08-31 11:00:00
-categories:
-  - Featured
+date: 2018-08-31T11:00:00.000Z
 tags:
-  - '911'
+  - "911"
   - next generation 911
   - utah 911
+category: Uncategorized
 ---
 
 As the State of Utah moves closer to <abbr title="Next-Generation-911 implementation">NG911</abbr>, GIS data providers will soon be required to adhere to national standards set forth by the [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) and the [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](https://uca911.org/911-division) [(section 6 of ref 1)](#further-reading). It can be daunting navigating these `standards` and `best practice` documents, so the intent of this article is to demystify the relevant information and lay out a road map of where we are going.

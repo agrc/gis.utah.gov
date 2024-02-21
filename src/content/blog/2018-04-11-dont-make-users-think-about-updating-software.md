@@ -1,14 +1,13 @@
 ---
-title: "Don't Make Users Think about Updating Software"
+title: Don't Make Users Think about Updating Software
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
-date: 2018-04-11 23:13:59
-categories:
-  - Developer
+date: 2018-04-11T23:13:59.000Z
 tags:
   - arcgis-pro
   - update-service
+category: Developer
 ---
 
 As software developers, we want the people who are using our software to ~~enjoy~~ _not hate_ the experience. Developers strive to create a positive user experience to increase the popularity and usage of their software. Consequently, we spend many hours designing, debating, and redesigning to ensure that user interactions with our software are simple, effective, and intuitive.

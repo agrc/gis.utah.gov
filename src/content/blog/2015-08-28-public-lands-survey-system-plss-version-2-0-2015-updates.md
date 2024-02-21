@@ -6,9 +6,7 @@ tags: []
 date: 2015-08-28 13:53:33 -0600
 title: Public Lands Survey System (PLSS) Version 2.0, 2015 updates
 published: false
-categories:
-  - GPS-surveyor
-  - SGID Blog
+category: GPS-surveyor
 ---
 
 ![plss sample]({% link images/NewPLSS_LrgSample1.png %})

@@ -10,8 +10,7 @@ tags:
 published: false
 date: 2011-11-21 14:39:22 -0700
 title: Redistricting interactive map available
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p><img src="{% link images/redistmap.png %}" class="inline-text-left" loading="lazy" />Lieutenant Governor Greg Bell announced the launch of the <a href="https://elections.utah.gov/map/district-maps">Political District Maps website</a>. The website will display interactive maps of the state house, state senate, state school board and congressional districts recently passed by the Utah State Legislature.  The districts represented by these maps take effect on January 1, 2012, for electoral purposes and on January 1, 2013, for all other purposes. The public will be able to study the maps online and print off static renderings of each new district.</p>

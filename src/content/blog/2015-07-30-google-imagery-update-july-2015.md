@@ -11,9 +11,7 @@ tags:
 date: 2015-07-30 15:06:19 -0600
 title: Google Imagery (Update, July 2015)
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <div class="grid pop">

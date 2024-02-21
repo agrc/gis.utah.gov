@@ -1,12 +1,10 @@
 ---
-title: '*Important* TURN GPS Coordinate Update April 1, 2019'
+title: "*Important* TURN GPS Coordinate Update April 1, 2019"
 published: false
 author:
   display_name: Sean Fernandez
   email: sfernandez@utah.gov
-date: 2019-03-14 19:27:10
-categories:
-  - Featured
+date: 2019-03-14T19:27:10.000Z
 tags:
   - turn gps
   - coordinates
@@ -14,6 +12,7 @@ tags:
   - network
   - calibrate
   - utsurveyor
+category: Uncategorized
 ---
 
 TURN GPS provides real-time high precision centimeter positioning. As some reference stations within the network move slightly over time due to earth’s crustal displacement, the stations’ positions must be updated periodically to maintain accuracy.

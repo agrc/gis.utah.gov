@@ -1,14 +1,12 @@
 ---
-title: 'Python Shorts: Loading an Open SGID Layer into pandas'
+title: "Python Shorts: Loading an Open SGID Layer into pandas"
 author:
   display_name: Jake Adams and Scott Davis
   email: jdadams@utah.gov
-date: 2022-12-22 11:00:00
-categories:
-  - Featured
-  - Developer
+date: 2022-12-22T11:00:00.000Z
 tags:
   - python
+category: Developer
 ---
 
 There are a [myriad of ways]({% link sgid/open-sgid/index.md %}) you can access data from the Open SGID. However, these all require some form of desktop client application. What if you want programmatic access to our spatial data? Because the Open SGID uses the open-source PostGIS extension to Postgres, you can use any libraries that can load Postgres tables and process the geometry data (or just ignore that if all you want is the tabular data).

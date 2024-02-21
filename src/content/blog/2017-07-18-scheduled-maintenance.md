@@ -4,13 +4,12 @@ published: false
 author:
   display_name: Michael Foulger
   email: michaelfoulger@utah.gov
-date: 2017-07-18 21:10:18
-categories:
-  - Featured
+date: 2017-07-18T21:10:18.000Z
 tags:
   - license
   - license manager
   - system
+category: Uncategorized
 ---
 
 ### UGRC will be upgrading the Esri Enterprise License Manager for Esri software managed through UGRC.

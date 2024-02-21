@@ -8,10 +8,9 @@ tags:
   - dnr
   - mapping spotlight
 date: 2013-12-06 13:28:31 -0700
-title: 'Mapping Spotlight: Division of Water Resources Interactive Maps'
+title: "Mapping Spotlight: Division of Water Resources Interactive Maps"
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p><a href="{% link images/DWReGallery.jpg %}"><img src="{% link images/DWReGallery-300x223.jpg %}" alt="" title="DWReGallery" width="300" height="223" class="inline-text-left" /></a>The Division of Water Resources (DWRe) at the Department of Natural Resources has created <a href="https://utahdnr.maps.arcgis.com/apps/PublicGallery/index.html?appid=85fc79669ffc421787501a7a9185a980&group=05b76e9c026248c3971ebe9da4f864ae">an interactive map gallery using ArcGIS Online</a> to showcase all of DWRe's interactive maps in a single location. The interactive map gallery provides easy navigation and a static location for finding newly created maps.  </p>

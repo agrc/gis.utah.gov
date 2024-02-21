@@ -5,11 +5,10 @@ author:
 tags:
   - roads
   - schema
-date: 2016-07-07 21:21:51
-title: 'Feedback Wanted: Draft Statewide Road Centerlines Schema v3.0.x'
+date: 2016-07-07T21:21:51.000Z
+title: "Feedback Wanted: Draft Statewide Road Centerlines Schema v3.0.x"
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 Since 2003, UGRC has maintained a statewide aggregation of road centerline GIS layers sourced from local data stewards. This layer is one of the hardest working GIS data assets in the state and is put to task in high profile uses, including 911/public safety, transportation management and planning, voter registration, sales tax, and Census block geography used for demographics and redistricting.

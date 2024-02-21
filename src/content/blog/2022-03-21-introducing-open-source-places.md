@@ -1,19 +1,17 @@
 ---
-title: 'Introducing Open Source Places'
+title: Introducing Open Source Places
 published: false
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov
-date: 2022-03-21 09:00:00
-categories:
-  - Featured
-  - SGID Blog
+date: 2022-03-21T09:00:00.000Z
 tags:
   - openstreetmap
   - OSM
   - places
   - points of interest
   - businesses
+category: SGID Blog
 ---
 
 There's an exciting new data layer that has been recently [added](https://github.com/agrc/porter/issues/180) to the State Geographic Information Datasource (SGID): [Open Source Places]({% link data/society/open-source-places/index.html %}). This is a brand-new offering that is created from open source data and is intended to represent places of interest in the state of Utah. ![OpenSourcePlaces]({% link images/map-poi-256.png %} "https://viglino.github.io/font-gis/?q=poi&fg=map-poi"){: style="float: right"} These may include businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, car dealerships, etc., etc., …almost anything that you can find in OpenStreetMap (OSM). There are over 23,000 features in the data, and the best part of all? You can make updates and contribute directly to this layer through [OpenStreetMap](http://openstreetmap.org)! (more on that later)

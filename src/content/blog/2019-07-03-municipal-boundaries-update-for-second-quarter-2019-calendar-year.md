@@ -1,17 +1,16 @@
 ---
-title: 'Municipal Boundaries Update for Second Quarter 2019 (Calendar Year)'
+title: Municipal Boundaries Update for Second Quarter 2019 (Calendar Year)
 published: false
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2019-07-03 21:15:47
-categories:
-  - SGID Blog
+date: 2019-07-03T21:15:47.000Z
 tags:
   - municipalities
   - annexations
   - towns
   - cities
+category: SGID Blog
 ---
 
 We are at the halfway point in the year, or the beginning of the fiscal year, depending on how you look at it, and things in Utah are moving along. The United States Census Bureau has updated the 2018 population estimates, and UGRC has included the updates in Utah's municipal and county data. Municipality updates can be viewed on the [ArcGIS Utah Municipality Modifications page](https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63). You can also check out the [UGRC State, County, and Municipal Boundaries page]({% link data/boundaries/citycountystate/index.html %}) to learn more about the City, County, and State Boundaries data layer.

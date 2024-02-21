@@ -10,10 +10,7 @@ tags:
   - roads
 date: 2015-02-12 18:52:22 -0700
 title: Authoritative Utah Geocoding Results
-categories:
-  - Developer
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 ![map with marker]({% link images/authoritative_geocoding.png %})

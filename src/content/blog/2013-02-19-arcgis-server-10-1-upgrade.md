@@ -6,9 +6,7 @@ tags: []
 published: false
 date: 2013-02-19 15:56:15 -0700
 title: ArcGIS Server 10.1 Upgrade
-categories:
-  - Developer
-  - Featured
+category: Developer
 ---
 
 <p>UGRC is planning to upgrade our main ArcGIS Server instance (<a href="http://mapserv.utah.gov/arcgis/rest">mapserv.utah.gov/arcgis/rest</a>) to version 10.1 within the next few weeks. For the majority of our users, we do not think that this will have much affect on services. However, if you access our base map caches through SOAP/WMS (this includes ArcMap users) there will be breaking changes.</p>

@@ -1,16 +1,15 @@
 ---
-title: 'New 2018 Google Imagery'
+title: New 2018 Google Imagery
 published: false
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2018-12-19 00:43:21
-categories:
-  - Featured
+date: 2018-12-19T00:43:21.000Z
 tags:
   - google
   - imagery
   - discover
+category: Uncategorized
 ---
 
 The new 2018 high-resolution Google imagery (6" pixels) is available through UGRC's [Discover server]({% link discover/index.html %})[^1]! Updated areas (map below) include what Google calls the "Salt Lake and Logan blocks," which make up most of the Wasatch Front urban area (i.e., Brigham City, Weber County, Davis County, Salt Lake County, and Utah County). The Salt Lake block was flown 9/11/2018 and the Logan block was flown 9/15/2018.

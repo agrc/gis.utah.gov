@@ -10,9 +10,7 @@ tags:
 date: 2014-03-26 15:03:26 -0600
 title: GPS Network News
 published: false
-categories:
-  - Featured
-  - GPS-surveyor
+category: GPS-surveyor
 ---
 
 <p><img src="{% link images/GPSNetwork_March2014-291x300.png %}" alt="" title="GPSNetwork_March2014" width="291" height="300" class="inline-text-left" />On April 1, 2014 the State of Utah UGRC will complete its upgrade of the legacy software platform for The Utah Reference Network GPS (TURN GPS) to the new Trimble Pivot Platform. UGRC has provided many updates on the progress of this upgrade to existing users who should be prepared now for the old system final shutdown date on April 1.</p>

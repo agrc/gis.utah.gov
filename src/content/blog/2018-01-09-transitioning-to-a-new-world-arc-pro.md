@@ -3,20 +3,19 @@ title: Transitioning to a New World, ArcPro
 author:
   display_name: Jessie Pechmann
   email: jessiepech@gmail.com
-date: 2018-01-09 11:12:13
-categories:
-  - Guestblog
+date: 2018-01-09T11:12:13.000Z
 tags:
   - pro
+category: Guestblog
 ---
 
-I have spent the last 4 months learning and using ArcPro while also learning a new job (see the end of this post). Like many of my fellow GIS users, I was hesitant to make the leap into the unknown after 10 years using ArcMap. I had heard rumors of ArcPro being “buggy”, everything being hard to find, and data management being a mystery. While I can neither confirm nor deny the truth behind those complaints, I am writing this blogpost to provide a bit of advice for those contemplating/starting the switch to ArcPro, as well as to hopefully provide some “I’ve been there” support for those who have already made the switch.
+I have spent the last 4 months learning and using ArcPro while also learning a new job (see the end of this post). Like many of my fellow GIS users, I was hesitant to make the leap into the unknown after 10 years using ArcMap. I had heard rumors of ArcPro being “buggy”, everything being hard to find, and data management being a mystery. While I can neither confirm nor deny the truth behind those complaints, I am writing this blog post to provide a bit of advice for those contemplating/starting the switch to ArcPro, as well as to hopefully provide some “I’ve been there” support for those who have already made the switch.
 
 ## Advice on Switching from ArcMap to ArcPro
 
 {: .text-left }
 
-<figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_ArcProScreenshot.png %}" alt="ArcPro Screenshot" loading="lazy" /><figcaption class="caption__text">A typical view in ArcPro</figcaption></figure>
+<!-- <figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_ArcProScreenshot.png %}" alt="ArcPro Screenshot" loading="lazy" /><figcaption class="caption__text">A typical view in ArcPro</figcaption></figure> -->
 
 #### Prepare yourself
 
@@ -26,7 +25,7 @@ ArcPro looks nothing like ArcMap. Nothing. Remember learning ArcMap? You get to 
 
 #### Commit to using Pro
 
-<figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_ArcProTraining.png %}" alt="Free ESRI ArcPro Training" loading="lazy" /><figcaption class="caption__text">Checkout ESRI's Free Trainings</figcaption></figure>
+<!-- <figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_ArcProTraining.png %}" alt="Free ESRI ArcPro Training" loading="lazy" /><figcaption class="caption__text">Checkout ESRI's Free Trainings</figcaption></figure> -->
 
 This is the universal advice for learning a new skill, but important to include nonetheless. The frustration is real. There were many days I wanted to give up and return to ArcMap, I am embarrassed to admit how long it took me to find how to export a map. I will admit I had to ask my supervisor how to insert a legend (come on Pro, why are there TWO insert panels?). I promise, days of frustration will become less frequent as time goes on.
 
@@ -43,7 +42,7 @@ Seriously, ArcPro’s tools are not anywhere near where they are in ArcMap. Lett
 
 #### Start using ArcPro with a brand new project
 
-<figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_AnalysisTools.png %}" alt="ArcPro Analysis" loading="lazy" /><figcaption class="caption__text">Many functions can be found by searching ArcPro Tools</figcaption></figure>
+<!-- <figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_AnalysisTools.png %}" alt="ArcPro Analysis" loading="lazy" /><figcaption class="caption__text">Many functions can be found by searching ArcPro Tools</figcaption></figure> -->
 
 For us enthusiastic ArcMap users, it is really hard to break the routine of where tools and functions are, and how a GIS program is organized. Even though it is relatively seamless to open an mxd in ArcPro, your mindset for the old project will be the same. Starting with a brand new project, including new data, will help what is really needed, a fresh perspective. My biggest reason to switching to ArcPro was that I was starting a new job, so I had no previously defined workflows or projects. It felt like the best time for me. However, you do not have to switch jobs to start using Pro!
 
@@ -51,7 +50,7 @@ For us enthusiastic ArcMap users, it is really hard to break the routine of wher
 
 Yes, using ArcPro can be frustrating, but some things are much better. For me I like the new cartography setup and the ability to have multiple layouts. I think the cartography interface and symbology defaults make it easier to make a better map. Multiple layouts is also a life saver. I commonly make the same maps for different geographical regions, and it is the best feeling to update one map that automatically updates 12 layouts.
 
-<figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_MultipleLayouts.png %}" alt="Multiple Layouts" loading="lazy" /><figcaption class="caption__text">Using 2 maps in multiple layouts in Pro</figcaption></figure>
+<!-- <figure class="caption caption--right"><img class="caption__image" src="{% link images/guestblog/jp_MultipleLayouts.png %}" alt="Multiple Layouts" loading="lazy" /><figcaption class="caption__text">Using 2 maps in multiple layouts in Pro</figcaption></figure> -->
 
 #### What now ArcPro?
 

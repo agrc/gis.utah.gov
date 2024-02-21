@@ -9,9 +9,7 @@ tags:
 date: 2013-06-28 17:00:05 -0600
 title: Utah GIS Framework Data for 800 Please, Alex...
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p><a href="{% link images/AddressSample_A.jpg %}"><img src="{% link images/AddressSample_A-300x217.jpg %}" alt="" title="AddressSample_A" width="300" height="217" class="inline-text-left" /></a><i>ATrebek: "The answer Is.. 'At almost a million points and growing, this new statewide data resource adds extra precision to address location.'"</p>

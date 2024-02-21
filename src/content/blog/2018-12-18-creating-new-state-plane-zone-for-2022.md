@@ -1,15 +1,14 @@
 ---
-title: 'Creating New State Plane Zone for 2022'
+title: Creating New State Plane Zone for 2022
 author:
   display_name: Sean Fernandez
   email: sfernandez@utah.gov
-date: 2018-12-18 21:27:03
-categories:
-  - GPS-surveyor
+date: 2018-12-18T21:27:03.000Z
 tags:
   - SPC2022
   - surveyor
   - NGS
+category: GPS-surveyor
 ---
 
 In 2022 the <abbr title="National Geodetic Survey">NGS</abbr> plans to publish a series of new horizontal reference frames that will replace the <abbr title="North American Datum of 1983">NAD83</abbr> and a vertical reference frame that will replace the <abbr title="North American Vertical Datum of 1988">NAVD88</abbr>.

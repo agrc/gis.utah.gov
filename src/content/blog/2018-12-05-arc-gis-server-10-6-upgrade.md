@@ -1,14 +1,12 @@
 ---
-title: 'ArcGIS Server 10.6 Upgrade'
+title: ArcGIS Server 10.6 Upgrade
 published: false
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
-date: 2018-12-05 16:03:25
-categories:
-  - Featured
-  - Developer
+date: 2018-12-05T16:03:25.000Z
 tags: []
+category: Developer
 ---
 
 UGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 within the next few weeks. For the majority of our users, we do not expect any issues, as _most_ services are being migrated as is. _However_, if you are consuming image services, **a migration is necessary** since the image services will no longer be offered. Please share this article with anyone who may be affected by this change.

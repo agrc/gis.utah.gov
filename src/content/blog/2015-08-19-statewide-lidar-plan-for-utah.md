@@ -11,10 +11,9 @@ tags:
   - surface
   - terrain
 date: 2015-08-19 14:29:46 -0600
-update_date: 2022-05-24 01:00:00
+update_date: 2022-05-24T01:00:00.000Z
 title: Statewide Lidar Plan for Utah
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>

@@ -1,14 +1,14 @@
 ---
-title: Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System
+title: Cognitive Maps - The Science Behind our Brain’s Internal Mapping and
+  Navigation System
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2020-01-30 10:07:46
-categories:
-  - Featured
+date: 2020-01-30T10:07:46.000Z
 tags:
   - education
   - maps
+category: Uncategorized
 ---
 
 I bet you remember where you were on the morning of September 11th, 2001 when you heard the news. I’d venture to say that you also remember the city, state, and room that you were standing in. But why is this? Why is it that certain memories are permanently tied to a geographic location?

@@ -3,12 +3,11 @@ title: The Western Grid, Explained
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2019-03-11 08:00:00
-categories:
-  - Featured
+date: 2019-03-11T08:00:00.000Z
 tags:
   - plss
   - history
+category: Uncategorized
 ---
 
 Have you ever wondered why the patterns of development in the Western United States are so orthogonal (i.e., "right-angled")?

@@ -1,12 +1,11 @@
 ---
-title: 'The SGID, Moving Forward'
+title: The SGID, Moving Forward
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
-date: 2018-12-13 23:33:14
-categories:
-  - SGID Blog
+date: 2018-12-13T23:33:14.000Z
 tags: []
+category: SGID Blog
 ---
 
 In an effort to ultimately consolidate and organize as much State <abbr title="geographic information system">GIS</abbr> data as possible, <abbr title="Utah Geospatial Resource Center">UGRC</abbr> has been gathering information about <abbr title="State Geographic Information Database">SGID</abbr> data layers managed by UGRC, and we are now reaching out to state agencies to collaborate about agency-specific data layers. Read on to get the full scoop on this effort.

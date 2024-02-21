@@ -6,8 +6,7 @@ tags: []
 published: false
 date: 2013-03-12 18:03:34 -0600
 title: 'ArcMap User: "Where did the UGRC Base Maps Go?'
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>Just a quick note to let everyone know that the pre-rendered, super fast UGRC base map services got new names when they were ported to our new ArcGIS 10.1 server which went live March 1. 2013. Web applications were not impacted by this change, but ArcMap users will need to re-add the base maps to existing projects.</p>

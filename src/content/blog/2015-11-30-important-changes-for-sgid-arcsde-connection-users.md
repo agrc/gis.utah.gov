@@ -6,8 +6,7 @@ tags: []
 date: 2015-11-30 11:35:11 -0700
 title: Important Changes for SGID ArcSDE Connection Users
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 ![connection dialog]({% link images/database_connection_dialog.png %})

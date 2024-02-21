@@ -5,11 +5,10 @@ author:
 tags:
   - data
   - trails
-date: 2016-08-31 13:20:00
+date: 2016-08-31T13:20:00.000Z
 title: Utah SGID Trails Data Layer Updates
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 In July, UGRC staff completed a significant update to the statewide trails GIS map layer. The updates integrated trail data published by each of Utah’s National Forests on the [USFS Geodata Clearinghouse](https://data.fs.usda.gov/geodata/). Additionally, over 190 miles of trails were added from data shared by the Mountainland Association of Governments (MAG).

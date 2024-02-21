@@ -6,11 +6,10 @@ tags:
   - discover
   - google
   - naip
-date: 2017-02-21 22:06:11
+date: 2017-02-21T22:06:11.000Z
 title: New Services on Discover Imagery & Base Map Server
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <div class="grid pop">

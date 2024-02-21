@@ -12,11 +12,10 @@ tags:
   - web services
   - wms
   - wmts
-date: 2016-09-30 16:55:53
+date: 2016-09-30T16:55:53.000Z
 title: Where and How? High Resolution Base Maps and Google Imagery Usage
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 [![Google Imagery Usage Map]({% link images/HighResImageryAndBaseMaps_Sept2016thumb.jpg %} "view high res usage map")]({% link downloads/HighResImageryAndBaseMaps_Sept2016.pdf %}){:.inline-text-right}

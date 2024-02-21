@@ -1,12 +1,11 @@
 ---
-title: 'Thoughts from Teaching Google and Amazon New Skills'
+title: Thoughts from Teaching Google and Amazon New Skills
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
-date: 2019-05-30 10:05:51
-categories:
-  - Developer
+date: 2019-05-30T10:05:51.000Z
 tags: []
+category: Developer
 ---
 
 Developing software for digital assistants is fun and a refreshing change from typical GIS projects. Over the past few months, UGRC was lucky enough to spend some time developing equivalent skills for Google Assistant and the Amazon Alexa. Using both platforms allowed us to see their differences very clearly. We are excited to share our opinions on the strengths of each platform. To browse the code, visit [agrc/digital-assistant-skills](https://github.com/agrc/digital-assisant-skills) on GitHub and browse the `alexa-skill` and `google-skill` branches.

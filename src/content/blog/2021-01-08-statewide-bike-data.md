@@ -4,14 +4,11 @@ published: false
 author:
   display_name: Stephanie Tomlin
   email: satomlin@utah.gov
-date: 2021-01-08 10:01:46
-categories:
-  - Featured
-  - SGID
-  - SGID Blog
+date: 2021-01-08T10:01:46.000Z
 tags:
   - bike
   - roads
+category: SGID Blog
 ---
 
 ![On Street Bike Lanes]({% link images/bike_lane.png %})

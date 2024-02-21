@@ -1,15 +1,14 @@
 ---
-title: '2019 UGIC Annual Conference Recap'
+title: 2019 UGIC Annual Conference Recap
 published: false
 author:
   display_name: Josh Groeneveld
   email: jgroeneveld@utah.gov
-date: 2019-06-20 22:35:13
-categories:
-  - Featured
+date: 2019-06-20T22:35:13.000Z
 tags:
   - conference
   - UGIC
+category: Uncategorized
 ---
 
 The Utah Geographic Information Council hosted its annual conference on May 6–10 in Midway to allow GIS professionals, students, and others who are passionate about spatial information to come together to share ideas, best practices, and new skills.

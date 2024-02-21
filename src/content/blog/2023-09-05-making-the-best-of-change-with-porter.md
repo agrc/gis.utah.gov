@@ -1,15 +1,12 @@
 ---
-title: 'Making the best of change with Porter'
+title: Making the best of change with Porter
 author:
   display_name: steve gourley
   email: sgourley@utah.gov
-date: 2023-09-05 9:01:39
-categories:
-  - Featured
-  - Developer
-  - SGID Blog
+date: 2023-09-05T09:01:39.000Z
 tags:
   - change-management
+category: SGID Blog
 ---
 
 In today's fast-paced and interconnected world, GIS data are a key part of decision making and provide the backbone of innovation and progress. These roles demand high quality data with a methodical [data creation and maintenance strategy]({% link _posts/2018-02-05-sgid-data-lifecycle.md %}) that makes it easy on you when data are added, removed, or changed. We are excited to share our latest efforts to provide consistent and reliable access to our high-quality SGID data.

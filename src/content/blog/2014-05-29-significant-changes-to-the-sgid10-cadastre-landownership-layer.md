@@ -10,8 +10,7 @@ tags:
 date: 2014-05-29 12:02:17 -0600
 title: Significant Changes to the Utah Land Ownership GIS Layer
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p><a href="{% link images/SITLAOwnershipExchange.jpg %}"><img src="{% link images/SITLAOwnershipExchange.jpg %}" alt="" title="SITLAOwnershipExchange" width="220" height="423" class="inline-text-left" /></a>Utah's <a href="https://trustlands.utah.gov/">School and Institutional Trust Lands Administration</a> (SITLA) and the <a href="https://www.blm.gov/wo/st/en.html">Bureau of Land Management</a> (BLM) finalized a 60,000 acre land swap on May 8, 2014.</p>

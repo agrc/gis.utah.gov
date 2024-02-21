@@ -9,9 +9,7 @@ tags:
 date: 2012-05-02 15:55:01 -0600
 published: false
 title: New Political Districts & Voting Precincts datasets
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 ### New Utah Political Districts

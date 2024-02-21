@@ -4,13 +4,12 @@ published: false
 author:
   display_name: mheagin
   email: mheagin@utah.gov
-date: 2018-01-10 19:10:02
-categories:
-  - Featured
+date: 2018-01-10T19:10:02.000Z
 tags:
   - annexations
   - boundaries
   - municipal boundaries
+category: Uncategorized
 ---
 
 It is the end of the year and here is the final tally for Annexations in 2017. The total number of Annexations and Disconnections processed this year is on par with last year at 89.

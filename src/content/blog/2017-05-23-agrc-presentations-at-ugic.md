@@ -6,11 +6,10 @@ tags:
   - conference
   - presentations
   - ugic
-date: 2017-05-23 21:20:00
+date: 2017-05-23T21:20:00.000Z
 title: UGRC Presentations at UGIC
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 UGRC staff had a great time last week at the UGIC Conference in Park City. Every year we appreciate the opportunity to meet face to face with all the great people doing important work in the GIS field in Utah. If you missed playing UGRC's annual Where in Utah game in the program, you can still [play it online](https://docs.google.com/presentation/d/1Z7QlDokFa4pedUd210-DauqB5x3Be5Aco7JhLGdVc5s/edit?usp=sharing), note the link to the answers at the bottom of the slide.

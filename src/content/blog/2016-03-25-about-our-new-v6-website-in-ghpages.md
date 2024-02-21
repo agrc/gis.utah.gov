@@ -6,9 +6,8 @@ tags:
   - developer
   - github
 date: 2016-03-25 13:31:17 -0700
-title: 'Now You Know: About the gis.utah.gov v6.0 Refresh'
-categories:
-  - Featured
+title: "Now You Know: About the gis.utah.gov v6.0 Refresh"
+category: Uncategorized
 ---
 
 Four years is a long time for anything, and that certainly applies to website releases. For a number of reasons, gis.utah.gov, has been overdue for a refresh.

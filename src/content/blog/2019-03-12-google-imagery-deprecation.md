@@ -1,16 +1,15 @@
 ---
-title: 'Note from the Director Regarding the Google Imagery Deprecation'
+title: Note from the Director Regarding the Google Imagery Deprecation
 published: false
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
-date: 2019-03-12 16:03:11
-categories:
-  - Featured
+date: 2019-03-12T16:03:11.000Z
 tags:
   - google imagery
   - deprecation
   - discover
+category: Uncategorized
 ---
 
 The State of Utah has enjoyed the relationship we have had with Google related to the purchase of the Google Imagery product. Our original contract with Google began in January 2015, so we have been grateful to have collaborated with Google this long. Moving forward, however, we will be looking for a new imagery source, as Google will no longer offer the imagery program for states, of which Utah was an early adopter. UGRC will be working with other states, as well as AppGeo, the vendor that enables the service known as [Discover]({% link discover/index.html %}), to come up with other imagery sources. There is a possibility that Google may make a 2019 flight available for purchase, but as it is not certain, we must move forward securing another source regardless of that possibility.

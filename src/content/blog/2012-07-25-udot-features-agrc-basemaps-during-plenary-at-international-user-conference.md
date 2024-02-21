@@ -7,8 +7,7 @@ tags:
 date: 2012-07-25 10:14:45 -0600
 title: UDOT features UGRC base maps during International User Conference
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <img src="{% link images/JohnThomas-150x150.png %}" class="inline-text-right pull-right" />

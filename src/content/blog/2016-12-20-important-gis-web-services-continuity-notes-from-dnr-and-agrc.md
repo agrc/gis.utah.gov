@@ -5,11 +5,10 @@ author:
 tags:
   - best practices
   - discover
-date: 2016-12-20 23:21:12
+date: 2016-12-20T23:21:12.000Z
 title: Important GIS Web Services Continuity Notes from DNR and UGRC
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 GIS web services are relied upon by increasingly. Here are two important service update announcements:

@@ -4,10 +4,9 @@ author:
   email: mpeters@utah.gov
 tags: []
 published: false
-date: 2016-07-28 17:09:37
-title: 'SGID Database Upgrade 10.0 to 10.2: Date of Upgrade 7/28/2016'
-categories:
-  - Featured
+date: 2016-07-28T17:09:37.000Z
+title: "SGID Database Upgrade 10.0 to 10.2: Date of Upgrade 7/28/2016"
+category: Uncategorized
 ---
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager %}{% endcapture %}

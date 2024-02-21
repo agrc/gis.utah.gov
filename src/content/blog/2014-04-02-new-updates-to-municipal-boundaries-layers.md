@@ -8,8 +8,7 @@ tags:
 date: 2014-04-02 13:37:46 -0600
 title: New updates to Municipal Boundaries layers
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p>Updates were made recently to the<br />

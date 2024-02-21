@@ -6,8 +6,7 @@ tags: []
 date: 2013-07-15 11:31:37 -0600
 title: UGRC Web Mapping Services Demo
 published: false
-categories:
-  - Developer
+category: Developer
 ---
 
 <p>UGRC offers a variety of mapping-related web services that make it easy to add authoritative Utah web maps to your applications. The two most popular are our <a href="{% link data/base-map-and-imagery/index.md %}">base maps</a> and <a href="https://api.mapserv.utah.gov/#geocoding">geocoding service</a>. These web services, together with a custom map service that shows your own agency/business-specific data, can add great geographic context to your web applications.</p>

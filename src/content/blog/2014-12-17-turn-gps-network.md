@@ -6,9 +6,7 @@ tags: []
 date: 2014-12-17 11:15:13 -0700
 title: TURN GPS Network
 published: false
-categories:
-  - Featured
-  - GPS-surveyor
+category: GPS-surveyor
 ---
 
 ![network map]({% link images/UpgradedNetwork_Dec2014.jpg %})

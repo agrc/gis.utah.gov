@@ -7,9 +7,7 @@ tags:
   - plss
 date: 2015-10-30 11:39:09 -0600
 title: Big Happenings with Public Land Survey System GIS
-categories:
-  - Featured
-  - GPS-surveyor
+category: GPS-surveyor
 ---
 
 <a href="{% link images/CoMarker_large.jpg %}"><img src="{% link images/CoMarker.jpg %}" alt="" title="CoMarker" class="inline-text-left" loading="lazy" /></a>Good things are happening in Utah regarding the Public Land Survey System (PLSS), also known as the township, range, and section grid, which forms the foundation for GIS map representations of public and private lands and other related Utah map layers.

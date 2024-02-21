@@ -1,17 +1,17 @@
 ---
-title: 'Newest city added to state and Municipal Boundary updates for Third Quarter 2018'
+title: Newest city added to state and Municipal Boundary updates for Third
+  Quarter 2018
 published: false
 author:
   display_name: MHeagin
   email: mheagin
-date: 2018-09-04 18:23:04
-categories:
-  - SGID Blog
+date: 2018-09-04T18:23:04.000Z
 tags:
   - Municipal Boundaries
   - Incorporation
   - Annexations
   - Cities and towns
+category: SGID Blog
 ---
 
 We would like to welcome the newest incorporated town: Bluff, in San Juan County. On July 19, 2018, Bluff joined the state’s growing list of towns, becoming the 248th municipality. With an estimated population of about 300 people, Bluff is in 214th place population wise, but the town's 37 square miles in size ranks it in the top ten at number nine. As temperatures cool down and fall rolls in, head down to the southeast corner and give Bluff a visit.

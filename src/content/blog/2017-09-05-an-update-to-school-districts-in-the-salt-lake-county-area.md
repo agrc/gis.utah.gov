@@ -4,12 +4,12 @@ published: false
 author:
   display_name: M Heagin
   email: mheagin@utah.gov
-date: 2017-09-05 20:05:24
-categories: []
+date: 2017-09-05T20:05:24.000Z
 tags:
   - boundaries
   - districts
   - schools
+category: Uncategorized
 ---
 
 Jordan School District and Murray School District have mutually agreed to a boundary adjustment as described below:

@@ -9,9 +9,7 @@ tags:
 date: 2013-09-13 12:41:14 -0600
 title: TURN GPS Network Updates
 published: false
-categories:
-  - Featured
-  - GPS-surveyor
+category: GPS-surveyor
 ---
 
 <p>This week UGRC began a transition to updated TURN GPS Network software by doing the initial install on a separate server from the existing system. </p>

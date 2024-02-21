@@ -9,9 +9,7 @@ tags:
 date: 2014-01-17 12:38:58 -0700
 title: GPS Network now on Trimble Pivot VRS System
 published: false
-categories:
-  - Featured
-  - GPS-surveyor
+category: GPS-surveyor
 ---
 
 <p><a href="{% link images/TURNGPS_BG2014_web1.png %}"><img src="{% link images/TURNGPS_BG2014_web1.png %}" alt="" title="TURNGPS_BG2014_web" width="245" height="300" class="inline-text-right" /></a>UGRC is pleased to announce the Trimble Pivot VRS System is now live. The install is complete and testing has proven repeatable results. This means it is time for everyone to begin converting over to the new system.</p>

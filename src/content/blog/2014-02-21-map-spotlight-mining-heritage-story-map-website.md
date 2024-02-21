@@ -4,10 +4,9 @@ author:
   email: ugrc@utah.gov
 tags: []
 date: 2014-02-21 14:14:24 -0700
-title: 'Map Spotlight: Mining Heritage Story Map Website'
+title: "Map Spotlight: Mining Heritage Story Map Website"
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p><a href="{% link images/miningheritage.png %}"><img src="{% link images/miningheritage-300x238.png %}" alt="" title="miningheritage" width="300" height="238" class="inline-text-left" /></a>The Abandoned Mine Reclamation unit of DNR's Division of Oil, Gas and Mining recently published an excellent example of how maps can be appropriately integrated into multimedia websites.</p>

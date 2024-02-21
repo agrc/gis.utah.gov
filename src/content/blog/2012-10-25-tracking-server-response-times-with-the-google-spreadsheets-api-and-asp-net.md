@@ -7,8 +7,7 @@ tags:
 date: 2012-10-25 12:39:06 -0600
 published: false
 title: Tracking Server Response Times with the Google Spreadsheets API and asp.net
-categories:
-  - Developer
+category: Developer
 ---
 
 <p>We've been noticing some speed issues with our mapserv machines recently and are trying to figure out the issue. In an effort to have a little insight into the when, where, and why's, we created a very rudimentary tracking tool that has quite a bit of potential and was fun to make. This will hopefully give us and our hosting and networking groups a better idea of what could be the root cause.</p>

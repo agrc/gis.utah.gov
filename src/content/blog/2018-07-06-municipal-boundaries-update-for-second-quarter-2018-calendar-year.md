@@ -1,16 +1,15 @@
 ---
-title: 'Municipal Boundaries Update for Second Quarter 2018 (Calendar Year)'
+title: Municipal Boundaries Update for Second Quarter 2018 (Calendar Year)
 published: false
 author:
   display_name: mheagin
   email: mheagin@utah.gov
-date: 2018-07-06 15:42:45
-categories:
-  - SGID Blog
+date: 2018-07-06T15:42:45.000Z
 tags:
   - boundaries
   - municipalities
   - annexations
+category: SGID Blog
 ---
 
 The year is half over, and we just keep rolling along. This is the municipal boundaries update for the second quarter of the 2018 calendar year. There's a lot going on this year, and we're catchcing up on things since we missed the first quarter update (sorry). So here’s everything since January.

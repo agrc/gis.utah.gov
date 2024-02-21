@@ -1,14 +1,12 @@
 ---
-title: 'Introducing palletjack: Updating AGOL feature services from external sources'
+title: "Introducing palletjack: Updating AGOL feature services from external sources"
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2023-07-05 15:00:00
-categories:
-  - Featured
-  - Developer
+date: 2023-07-05T15:00:00.000Z
 tags:
   - python
+category: Developer
 ---
 
 _From the I Love Being Lazy department_

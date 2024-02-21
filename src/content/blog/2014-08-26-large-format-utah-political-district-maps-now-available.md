@@ -12,9 +12,7 @@ tags:
 date: 2014-08-26 18:00:53 -0600
 title: Large Format Utah Political District Maps Now Available
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <figure class="caption caption--right"><a href="{% link images/district59example.png %}"><img class="caption__image" src="{% link images/district59example-300x226.png %}" alt="" title="district59example" width="300" height="226" /></a><figcaption class="caption__text">Click to view large format map detail</figcaption></figure>This month, UGRC and the Lt. Governor's office published large format (34 x 22 inches) maps of every Utah House and Senate District. The maps are in .pdf format and can be downloaded at no charge so you can print them using the digital print shop of your choice. Many printers allow printing orders for large format pdf files to be placed online for pickup or delivery. Remember that the detail on the maps is much greater, due to their large format size, than what you can see on your computer screen without zooming in.</p>

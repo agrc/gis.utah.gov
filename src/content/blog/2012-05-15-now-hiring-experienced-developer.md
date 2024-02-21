@@ -8,8 +8,7 @@ tags:
 published: false
 date: 2012-05-15 22:43:47 -0600
 title: Now Hiring! Experienced Developer
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>[note title="Some of the benefits of working for UGRC:" align="right"]</p>

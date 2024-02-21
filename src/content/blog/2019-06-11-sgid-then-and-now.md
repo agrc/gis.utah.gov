@@ -3,14 +3,13 @@ title: The SGID - Then and Now
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2019-06-11 10:07:46
-categories:
-  - Featured
+date: 2019-06-11T10:07:46.000Z
 tags:
   - sgid
   - data
   - education
   - gis history
+category: Uncategorized
 ---
 
 Access to high-quality GIS data is a privilege, and the fact that it's open and free is nothing short of amazing. Yes, I’m talking about Utah's SGID. From a local perspective, we’re all accustomed to it being there. But really, the concept of readily available, mature, open data is somewhat unique. Over the years, many factors have played into the SGID’s development and current maturity, and it takes ongoing maintenance and planning to ensure its continued success.

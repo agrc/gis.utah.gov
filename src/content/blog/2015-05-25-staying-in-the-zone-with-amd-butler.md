@@ -8,8 +8,7 @@ tags:
 date: 2015-05-25 17:01:31 -0600
 title: Staying in the Zone with AMD Butler
 published: false
-categories:
-  - Developer
+category: Developer
 ---
 
 [**Update(3/17/16)**: This plugin has been ported to an [Atom Editor](https://web.archive.org/web/20150524221559/https://atom.io/) package called [amdbutler](https://web.archive.org/web/20151220201733/https://atom.io/packages/amdbutler).]

@@ -5,11 +5,10 @@ author:
 tags:
   - aerial photography
   - naip
-date: 2016-12-06 16:03:22
+date: 2016-12-06T16:03:22.000Z
 title: NAIP 2016 Mr. Sid County Mosaics Available
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 [![NAIP 2016 Sample]({% link images/NAIP2016_sm.png %} "view project area map")]({% link images/NAIP2016.png %}){:.inline-text-right}

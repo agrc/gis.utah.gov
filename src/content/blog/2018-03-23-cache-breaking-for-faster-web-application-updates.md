@@ -1,12 +1,11 @@
 ---
-title: 'Cache-Breaking for Faster Web Application Updates'
+title: Cache-Breaking for Faster Web Application Updates
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2018-03-23 19:56:37
-categories:
-  - Developer
+date: 2018-03-23T19:56:37.000Z
 tags: []
+category: Developer
 ---
 
 ### When Production Is Broken, It Needs to Be Fixed Now!

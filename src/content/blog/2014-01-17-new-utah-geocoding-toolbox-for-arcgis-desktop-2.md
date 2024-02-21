@@ -4,11 +4,10 @@ author:
   email: ugrc@utah.gov
 tags:
   - geocoding
-date: 2014-01-17 11:57:08
-title: 'New Utah Geocoding Toolbox for ArcGIS Desktop'
+date: 2014-01-17T11:57:08.000Z
+title: New Utah Geocoding Toolbox for ArcGIS Desktop
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 This tool has been updated to work with ArcGIS Pro. Some of the information below may be outdated. Please refer to [GitHub](https://github.com/agrc/geocoding-toolbox) for the most current documentation.

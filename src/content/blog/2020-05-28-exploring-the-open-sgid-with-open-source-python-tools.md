@@ -1,12 +1,9 @@
 ---
-title: 'A Brief Tutorial on Exploring the Open SGID with Open Source Python Tools'
+title: A Brief Tutorial on Exploring the Open SGID with Open Source Python Tools
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov
-date: 2020-05-28 15:30:00
-categories:
-  - SGID Blog
-  - Featured
+date: 2020-05-28T15:30:00.000Z
 tags:
   - open sgid
   - python
@@ -14,6 +11,7 @@ tags:
   - open source
   - notebook
   - tutorial
+category: SGID Blog
 ---
 
 The accompanying Python Notebook for this blog post can be found [here on Google Colab](https://colab.research.google.com/drive/15brITjN9vD9P_9-kiyzu97h8z0pVG6mu).

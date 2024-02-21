@@ -4,15 +4,14 @@ published: false
 author:
   display_name: Chris Wiltsie
   email: chris@bikeutah.org
-date: 2018-12-06 17:57:09
-categories:
-  - Guestblog
+date: 2018-12-06T17:57:09.000Z
 tags:
   - transportation
   - recreation
   - policy
   - bike
   - trails
+category: Guestblog
 ---
 
 Bike Utah is looking for the help of GIS experts throughout the state to track all family-friendly (criteria explained below) bike paths, lanes, and trails completed since May 2017 as part of the 1,000 Miles Campaign.

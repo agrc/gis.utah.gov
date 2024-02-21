@@ -3,11 +3,10 @@ author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags: []
-date: 2016-08-31 18:18:10
+date: 2016-08-31T18:18:10.000Z
 title: New 2016 Google Imagery
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <div class="grid pop">

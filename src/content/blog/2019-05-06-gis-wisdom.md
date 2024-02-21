@@ -3,13 +3,12 @@ title: GIS Wisdom - Exploring the Reverse Approach
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2019-05-06 10:07:46
-categories:
-  - Featured
+date: 2019-05-06T10:07:46.000Z
 tags:
   - gis
   - education
   - best practices
+category: Uncategorized
 ---
 
 Those of us working in GIS know that it's really powerful and that it's utilized in just about every industry. If you aren’t yet a true believer, you should check out this impressive [list of uses](https://gisgeography.com/gis-applications-uses/).

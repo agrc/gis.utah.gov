@@ -6,10 +6,10 @@ tags:
   - annexations
   - boundaries
   - municipal boundaries
-date: 2017-06-29 15:39:01
+date: 2017-06-29T15:39:01.000Z
 title: Municipal Boundaries update for second quarter 2017 (calendar year)
 published: false
-categories: []
+category: Uncategorized
 ---
 
 The year is half over and we keep rolling along. This is the Municipal Boundaries update for the second quarter of the 2017 calendar year. Things picked up a little from the [first quarter]({% link _posts/2017-03-29-municipal-boundaries-update-for-first-quarter-calendar-year.md %}). _A little reminder for everyone_, **changes to city boundaries can affect you!** For instance, your voting precinct or school district may change.

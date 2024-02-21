@@ -1,15 +1,13 @@
 ---
-title: 'Connecting to the Newest SGID Offerings'
+title: Connecting to the Newest SGID Offerings
 published: false
 author:
   display_name: UGRC Office
   email: ugrc@utah.gov
-date: 2021-01-04 16:01:51
-categories:
-  - Featured
-  - SGID
+date: 2021-01-04T16:01:51.000Z
 tags:
   - sgid
+category: SGID
 ---
 
 As of December 31, 2020, UGRC's SGID10 database has been deprecated. At this point, it is no longer our “star player”.

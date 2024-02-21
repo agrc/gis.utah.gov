@@ -6,10 +6,9 @@ tags:
   - arcgis server
   - printing
   - wmts
-date: 2017-02-02 21:04:30
+date: 2017-02-02T21:04:30.000Z
 title: Printing Web Maps with Discover Services
-categories:
-  - Developer
+category: Developer
 ---
 
 ### Export Web Map Tool

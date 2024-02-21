@@ -8,8 +8,7 @@ tags:
 date: 2016-02-01 13:31:17 -0700
 title: Utah Broadband Outreach Center Releases Revamped Availability Map
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <a href="{% link images/utah-residential-broadband-map.png %}"><img src="{% link images/utah-residential-broadband-map.png %}" alt="" title="BroadbandMap" width="410" height="300" class="inline-text-right" loading="lazy" />The <a href="https://broadband.utah.gov/">Utah Broadband Outreach Center</a> in the Governor’s Office of Economic Development (GOED) released an updated residential broadband map today (<a href="https://broadband.utah.gov/map/">broadband.utah.gov/map</a>), providing an enhanced tool to help customers locate available internet services in their communities.

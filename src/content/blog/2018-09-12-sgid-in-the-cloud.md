@@ -1,15 +1,14 @@
 ---
-title: 'Public SGID in the Cloud'
+title: Public SGID in the Cloud
 published: false
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
-date: 2018-09-12 16:09:58
-categories:
-  - Featured
+date: 2018-09-12T16:09:58.000Z
 tags:
   - sgid
   - cloud
+category: Uncategorized
 ---
 
 For those of you who would prefer to access the State Geographic Information Database (SGID) via ESRI’s ArcGIS Desktop software rather than ArcGIS Online or downloads from gis.utah.g\ov, you’re in luck. UGRC is testing a public connection to an instance of the SGID hosted in the Amazon cloud.

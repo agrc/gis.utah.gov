@@ -1,16 +1,15 @@
 ---
-title: 'Municipal Boundaries Final Update  for Calendar Year 2018'
+title: Municipal Boundaries Final Update  for Calendar Year 2018
 published: false
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2019-01-31 17:07:11
-categories:
-  - Featured
+date: 2019-01-31T17:07:11.000Z
 tags:
   - Annexation
   - municipal boundaries
   - census
+category: Uncategorized
 ---
 
 There have been several changes and annexations in Utah since September 1, 2018; read on to learn about some of the general updates, as well as the specific changes and annexations for the last quarter of the 2018 calendar year.

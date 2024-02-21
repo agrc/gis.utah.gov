@@ -1,15 +1,14 @@
 ---
-title: 'PLSS Fabric Version 2.1 Release'
+title: PLSS Fabric Version 2.1 Release
 published: false
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2019-01-31 15:26:44
-categories:
-  - Featured
+date: 2019-01-31T15:26:44.000Z
 tags:
   - PLSS
   - parcel management
+category: Uncategorized
 ---
 
 UGRC has published [Version 2.1 (V2.1)]({% link data/cadastre/plss/index.html %}) of the Utah Public Land Survey System (PLSS) Fabric for the start of 2019.

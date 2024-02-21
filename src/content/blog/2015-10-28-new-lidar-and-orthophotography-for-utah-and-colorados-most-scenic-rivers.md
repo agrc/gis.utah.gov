@@ -14,9 +14,7 @@ tags:
 date: 2015-10-28 11:42:28 -0600
 title: New Lidar and Orthophotography for Utah and Colorado’s Most Scenic Rivers
 published: false
-categories:
-  - Featured
-  - Guestblog
+category: Guestblog
 ---
 
 <a href="{% link images/Riverlidar.png %}"><img src="{% link images/Riverlidar-300x215.png %}" alt="" title="Riverlidar" class="inline-text-left" loading="lazy" /></a>

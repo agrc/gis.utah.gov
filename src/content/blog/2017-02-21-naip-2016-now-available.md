@@ -5,11 +5,10 @@ author:
 tags:
   - discover
   - naip
-date: 2017-02-21 21:10:26
+date: 2017-02-21T21:10:26.000Z
 title: National Agricultural Imagery Program (NAIP) 2016 Imagery Now Available
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 The 2016 National Agricultural Imagery Program (NAIP) aerial photography is now available from the [2016 NAIP 1 Meter Orthophotography]({% link data/aerial-photography/naip/index.html %} "go to NAIP 2016 page") page. The imagery was collected in the Summer of 2016 as 4-band imagery however the natural color (RGB) and near infrared (NRG) imagery are two separate services on Discover, _NAIP 2016 RGB_ and _NAIP 2016 NRG_.

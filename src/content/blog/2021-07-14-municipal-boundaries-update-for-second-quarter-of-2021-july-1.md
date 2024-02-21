@@ -1,17 +1,15 @@
 ---
-title: 'Municipal Boundaries Update for Second Quarter of 2021 (July 1)'
+title: Municipal Boundaries Update for Second Quarter of 2021 (July 1)
 published: false
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2021-07-14 12:51:04
-categories:
-  - SGID Blog
-  - Featured
+date: 2021-07-14T12:51:04.000Z
 tags:
   - municipalities
   - boundaries
   - annexations
+category: SGID Blog
 ---
 
 This July we're finding ourselves in the middle of a very hot and dry summer, and we hope everyone is keeping cool and hydrated. The state is opening up again, and we're all slowly recovering from the pandemic of this past year. This has been true of our work with municipal boundaries as well; it's been a slow start, but things are picking up in the second quarter of this year. The Lieutenant Governor’s Office is still going through some transitions, and a few annexations have been misplaced in the shuffle, but we are working to correct that.

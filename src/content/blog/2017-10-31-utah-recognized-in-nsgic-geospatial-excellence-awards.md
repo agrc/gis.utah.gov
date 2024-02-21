@@ -3,14 +3,13 @@ title: Utah Recognized in NSGIC Geospatial Excellence Awards
 author:
   display_name: Bert Granberg
   email: ugrc@utah.gov
-date: 2017-10-31 20:41:59
-categories:
-  - Featured
+date: 2017-10-31T20:41:59.000Z
 tags:
   - awards
   - gis
   - nsgic
   - utah
+category: Uncategorized
 ---
 
 Through its Geospatial Excellence Awards, the [National States Geographic Information Council (NSGIC)](https://nsgic.org) recognizes individuals and organizations that advance the capabilities of geospatial technology, and promote NSGIC’s goals of efficient and effective government.

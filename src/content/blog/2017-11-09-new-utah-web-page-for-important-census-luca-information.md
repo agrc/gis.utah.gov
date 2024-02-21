@@ -4,14 +4,13 @@ published: false
 author:
   display_name: Bert Granberg
   email: ugrc@utah.gov
-date: 2017-11-09 20:36:48
-categories:
-  - Featured
+date: 2017-11-09T20:36:48.000Z
 tags:
   - address
   - census
   - demographic
   - luca
+category: Uncategorized
 ---
 
 If you manage city or county address data in GIS or other formats, UGRC has a [new web page]({% link data/address/census-luca-2020.md %}) with Utah-specific information about the Census Bureau's Local Update of Census Address program.

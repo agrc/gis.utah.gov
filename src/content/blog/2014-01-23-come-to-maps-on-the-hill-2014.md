@@ -3,13 +3,12 @@ author:
   display_name: JP
   email: ugrc@utah.gov
 tags:
-  - '2014'
+  - "2014"
   - maps on the hill
 published: false
 date: 2014-01-23 14:57:28 -0700
 title: Come to Maps on the Hill 2014!
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>Maps on the Hill is an annual event sponsored by <a href="https://ugic.org/">UGIC</a>, and held during the Utah legislative session as a means for professional and student mapmakers in Utah to share their maps with elected officials and the public. </p>

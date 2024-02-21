@@ -9,8 +9,7 @@ tags:
 date: 2013-04-16 17:19:14 -0600
 title: SGID Schools Update 4/16/2013
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
 ---
 
 Updates were made recently to the SGID10.Society.Schools feature class that resides on the Utah SGID ArcSDE database server.

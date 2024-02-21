@@ -4,11 +4,10 @@ published: false
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2022-10-07 7:30:00
-categories:
-  - Featured
+date: 2022-10-07T07:30:00.000Z
 tags:
   - Roads
+category: SGID Blog
 ---
 
 UGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System]({% link data/transportation/roads-system/index.html %}) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.

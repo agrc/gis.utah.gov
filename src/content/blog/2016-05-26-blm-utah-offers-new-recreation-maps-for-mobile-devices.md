@@ -7,11 +7,10 @@ tags:
   - geopdf
   - great basin institute
   - recreation
-date: 2016-05-26 16:10:01
+date: 2016-05-26T16:10:01.000Z
 title: BLM-Utah Offers New Recreation Maps for Mobile Devices
 published: false
-categories:
-  - Guestblog
+category: Guestblog
 ---
 
 The Bureau of Land Management’s Utah State Office (BLM-Utah) [released a dozen new geo-referenced maps](https://www.blm.gov/maps/georeferenced-PDFs) in May, and expects to have fifty available by the end of the year. Visitors can now download these new maps featuring some of Utah’s world class outdoor recreation opportunities onto mobile devices for both Apple iOS and Android operating systems. “We are excited to put the public lands into visitors’ hands with these new mobile device maps,” said Jenna Whitlock, acting BLM-Utah state director. “These new tools help to showcase Utah’s spectacular recreation opportunities.” By utilizing a third-party app like PDF Maps by Avenza, visitors can take advantage of their phones’ GPS to see where they are in real-time, even without cell phone reception.

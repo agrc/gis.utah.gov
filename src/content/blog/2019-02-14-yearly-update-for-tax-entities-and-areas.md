@@ -1,18 +1,17 @@
 ---
-title: 'Yearly Update for Tax Entities and Areas'
+title: Yearly Update for Tax Entities and Areas
 published: false
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2019-02-14 22:42:54
-categories:
-  - Featured
+date: 2019-02-14T22:42:54.000Z
 tags:
   - tax entities
   - tax updates
   - tax areas
   - sales tax areas
   - special transit areas
+category: Uncategorized
 ---
 
 As of January 28, we’re officially in tax season, and UGRC can help you stay informed about taxation in Utah! We have updated our 2018 year-end tax entity data, and you can access the data on the [Sales Tax Areas and Tax Entity Areas page]({% link data/economy/taxingareas/index.html %}) of the UGRC website.

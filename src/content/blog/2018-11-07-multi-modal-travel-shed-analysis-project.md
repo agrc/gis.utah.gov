@@ -1,12 +1,10 @@
 ---
-title: 'Multimodal Travel Shed Project'
+title: Multimodal Travel Shed Project
 published: false
 author:
   display_name: Bert Granberg
   email: bgranberg@wfrc.org
-date: 2018-11-07 20:28:24
-categories:
-  - Guestblog
+date: 2018-11-07T20:28:24.000Z
 tags:
   - transportation
   - bike
@@ -16,6 +14,7 @@ tags:
   - networkanalyst
   - multimodal
   - planning
+category: Guestblog
 ---
 
 A travel shed is the set of all the destinations that can be reached from a location within a specified time budget. Travel sheds are valuable both for visualizing and analyzing residents’ access to key services, but also for defining service areas for businesses and other service provider locations, such as schools, transit stations, hospitals, and fire stations.

@@ -15,11 +15,10 @@ tags:
   - tax
   - uac
   - valuation
-date: 2016-05-26 16:44:03
+date: 2016-05-26T16:44:03.000Z
 title: Work Group Recommends Expanded GIS Parcel Sharing
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 **A Proposal for Voluntary Expanding Parcel Data Sharing**
