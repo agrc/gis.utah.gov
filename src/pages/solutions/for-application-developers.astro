@@ -29,7 +29,7 @@ const page: IStandardPageMetadata = {
 
 <Layout title={page.title}>
   <QuickLinks links={page.section} slot="quick-links" />
-  <Section title="Solutions for developers" {...page.section[0]}>
+  <Section {...page.section[0]}>
     <Image
       slot="image"
       src={developmentPhoto}
