@@ -11,7 +11,7 @@ tags:
 category: Uncategorized
 ---
 
-It seems so long ago now, but it was less than a year ago when we first [hinted at the possibility]({% link _posts/2019-06-11-sgid-then-and-now.md %}#where-is-the-sgid-going) of a new SGID offering [(then again last fall)]({% link _posts/2019-11-12-sgid-product-relaunch-update.md %}#potential-google-cloud-managed-postgis). We are finally ready to announce the debut of a new open source SGID database---the Open SGID---a cloud-hosted PostgreSQL PostGIS database.
+It seems so long ago now, but it was less than a year ago when we first [hinted at the possibility](/blog/2019-06-11-sgid-then-and-now.md %}#where-is-the-sgid-going) of a new SGID offering [(then again last fall)]({% link _posts/2019-11-12-sgid-product-relaunch-update#potential-google-cloud-managed-postgis). We are finally ready to announce the debut of a new open source SGID database---the Open SGID---a cloud-hosted PostgreSQL PostGIS database.
 
 <div class="flex flex--center pop" style="max-width:50%;justify-content:center">
   <h4 style="margin-bottom:0;padding-top:0"><strong>Database Platform</strong>: PostgresSQL</h4>

@@ -24,7 +24,7 @@ In the past, agencies completed data maturity assessments, which provide UGRC wi
 
 **Oh yeah, that’s right. And what is UGRC working on now with the SGID?**
 
-For the past several months, UGRC has been assessing SGID data layer usage in order to identify the most and least frequently used layers. (Read our [“SGID Data Lifecycle”]({% link _posts/2018-02-05-sgid-data-lifecycle.md %}) and [“The Incredible Shrinking SGID”]({% link _posts/2018-09-10-the-incredible-shrinking-sgid.md %}) articles to get more background about the SGID and our data collection efforts.) Although SGID data layer usage is constantly changing, at this point the most frequently used SGID layers are:
+For the past several months, UGRC has been assessing SGID data layer usage in order to identify the most and least frequently used layers. (Read our [“SGID Data Lifecycle”](/blog/2018-02-05-sgid-data-lifecycle.md %}) and [“The Incredible Shrinking SGID”]({% link _posts/2018-09-10-the-incredible-shrinking-sgid) articles to get more background about the SGID and our data collection efforts.) Although SGID data layer usage is constantly changing, at this point the most frequently used SGID layers are:
 
 - County Boundaries
 - Municipal Boundaries

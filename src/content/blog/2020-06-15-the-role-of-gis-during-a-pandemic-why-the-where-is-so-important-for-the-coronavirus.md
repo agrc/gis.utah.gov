@@ -20,7 +20,7 @@ These questions led me down a rabbit hole of research into the relationship betw
 
 
 
-As Greg Bunce discusses in his [“Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS” article]({% link _posts/2019-09-03-digital-maps-gis-history.md %}), GIS really made its debut in connection to health when it helped resolve the London cholera epidemic of 1854. John Snow, a British physician, analyzed the relationship between water pumps and cholera cases, and he realized that water was the culprit in the spread of the disease. He made a spatial connection between the pumps and the disease, and that made all the difference in preventing further spread. Even from this early case study, “Mapping was an approach employed both by the officials charged with responding to this or that disease incursion and the medical personnel who struggled to treat those afflicted. . . . Then as well as now, mapping served and serves the science of its day” (Koch 2005, 2).
+As Greg Bunce discusses in his [“Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS” article](/blog/2019-09-03-digital-maps-gis-history), GIS really made its debut in connection to health when it helped resolve the London cholera epidemic of 1854. John Snow, a British physician, analyzed the relationship between water pumps and cholera cases, and he realized that water was the culprit in the spread of the disease. He made a spatial connection between the pumps and the disease, and that made all the difference in preventing further spread. Even from this early case study, “Mapping was an approach employed both by the officials charged with responding to this or that disease incursion and the medical personnel who struggled to treat those afflicted. . . . Then as well as now, mapping served and serves the science of its day” (Koch 2005, 2).
 
 Since then, GIS has had an impact on several other health situations:
 
@@ -67,7 +67,7 @@ In order for any country to effectively respond to the coronavirus, it is essent
 
 Now, all those reasons are valid and important in discussing how and why GIS is so essential during this pandemic. But I also have to wonder though about one more potential reason that we’re so interested in GIS, especially during times of uncertainty: Is spatial information about the coronavirus particularly helpful because our brains are naturally wired to process information spatially and visually? Maybe we’re turning to GIS right now because processing information in that way naturally makes sense to our brains, and when things are uncertain and unpredictable in the world, like they are right now, we turn toward things that are familiar in order to gain a sense of comfort and control.
 
-As stated in the UGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”]({% link _posts/2020-01-29-cognitive-maps.md %}) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
+As stated in the UGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”](/blog/2020-01-29-cognitive-maps) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
 
 People are more likely to notice and pay attention to visual information than written information (which I find especially ironic as I write this article). Jon Puleston, Kantar Consulting, explains this phenomenon well in the article [“The Science of Visuals”](http://www.lightspeedresearch.com/science-visuals/): “The human brain thinks in pictures.” And what are maps but pictures that share information about a specific area?
 
@@ -89,9 +89,9 @@ Whatever the reason for the current focus and reliance on GIS during this pandem
 
 
 
-Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” UGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/]({% link _posts/2020-01-29-cognitive-maps.md %}).
+Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” UGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/](/blog/2020-01-29-cognitive-maps).
 
-Bunce, Greg. “Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS.” UGRC Blog. Published September 3, 2019. Accessed May 14, 2020. [https://gis.utah.gov/digital-maps-gis-history/]({% link _posts/2019-09-03-digital-maps-gis-history.md %}).
+Bunce, Greg. “Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS.” UGRC Blog. Published September 3, 2019. Accessed May 14, 2020. [https://gis.utah.gov/digital-maps-gis-history/](/blog/2019-09-03-digital-maps-gis-history).
 
 _Geographic Information Systems (GIS) and Cancer Research._ US Department of Health and Human Services, National Institutes of Health, National Cancer Institute, 2006. (NIH Publication No. 07-6096). Reproduced by the US Department of Commerce National Technical Information Service. Springfield, VA. Accessed electronically on June 11, 2020. [https://classic.ntis.gov/assets/pdf/st-on-cd/PB2007103350.pdf](https://classic.ntis.gov/assets/pdf/st-on-cd/PB2007103350.pdf).
 

@@ -16,7 +16,7 @@ category: Uncategorized
   <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{% link discover/index.html %}">Discover</a> page.</p>
 </div>
 
-Users of [Google's statewide high resolution aerial photography]({% link _posts/2015-02-02-utah-acquires-high-resolution-aerial-photography-license.md %}) are transitioning to accessing the data through the new GCP-based discover.agrc.utah.gov server and its twin WMS and WMTS imagery services. The new services on the 'discover' server are much more capable and deliver higher image quality. For more information and a connection to discover.agrc.utah.gov, {% include contact.html subject=page.title contact=site.data.contacts.discover text='contact' %}
+Users of [Google's statewide high resolution aerial photography](/blog/2015-02-02-utah-acquires-high-resolution-aerial-photography-license) are transitioning to accessing the data through the new GCP-based discover.agrc.utah.gov server and its twin WMS and WMTS imagery services. The new services on the 'discover' server are much more capable and deliver higher image quality. For more information and a connection to discover.agrc.utah.gov, {% include contact.html subject=page.title contact=site.data.contacts.discover text='contact' %}
 
 ### WMS vs WMTS
 
