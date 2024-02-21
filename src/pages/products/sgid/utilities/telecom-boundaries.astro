@@ -1,0 +1,70 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Telecom Boundaries',
+  description: `Service territories of rural telephone providers and local urban exchange carriers in Utah.`,
+  stewards: ['UGRC', 'URTA'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.UTILITIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`January 2024`,],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset represents the service territories of rural telephone providers and local urban exchange carriers in Utah. Telecom boundaries were provided by the Utah Rural Telecom Association URTA and the Federal Communication Commission FCC. These areas are regulated by the Public Service Commission.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="URTA" href="https://urta.org/">Utah Rural Telecom Association.</CardWithPopularLink>
+      <CardWithPopularLink title="FCC" href="https://www.fcc.gov/reports-research/maps/study-area-boundaries/">Federal Communications Commission.</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Broadband" href="/products/sgid/utilities/broadband-internet">Broadband coverage areas</CardWithSmallLink>
+      <CardWithSmallLink title="State Facilities" href="/products/sgid/society/state-facilities">State owned facility locations</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
