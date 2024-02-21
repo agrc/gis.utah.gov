@@ -8,8 +8,7 @@ tags:
 published: false
 date: 2012-06-28 07:55:23 -0600
 title: How to Get Started Using Aptana Studio 3 for ArcPy Development (Screencast)
-categories:
-  - Developer
+category: Developer
 ---
 
 <p>Just put together a short (10 min) video of how to set up Aptana Studio 3 and it's Pydev module for developing python scripts that use ESRI's ArcPy module. Let me know what you think.</p>

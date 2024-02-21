@@ -6,9 +6,7 @@ tags: []
 date: 2015-02-02 16:00:36 -0700
 title: Utah Acquires High Resolution Aerial Photography License
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p>Last month (January 2015), UGRC led an effort to purchase a license to Google's statewide high resolution aerial photography (6" pixels) on behalf of a partnership of state, regional, and local government organizations. The license has been purchased and UGRC staff are currently working to accept delivery of the imagery and web services from Google before it is released to the broader user community. We expect to have information on accessing these resources later this month.</p>

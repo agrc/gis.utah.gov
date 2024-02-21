@@ -1,16 +1,14 @@
 ---
-title: 'The Next UGRC WebAPI'
+title: The Next UGRC WebAPI
 published: false
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
-date: 2018-09-13 00:12:00
-categories:
-  - Featured
-  - Developer
+date: 2018-09-13T00:12:00.000Z
 tags:
   - webapi
   - cloud
+category: Developer
 ---
 
 The current [WebAPI](https://api.mapserv.utah.gov) has been in production serving the public for multiple years. It handles millions of requests for spatial information every month and is free to use with a simple to create [API key](https://developer.mapserv.utah.gov/StartupGuide). While it receives constant [enhancements](https://github.com/agrc/api.mapserv.utah.gov/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed+label%3Aenhancement) and [bug fixes](https://github.com/agrc/api.mapserv.utah.gov/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed+label%3Abug), there have been no breaking changes to the API, nor have there been any major architectural updates. That is about to change with a major update currently in the works.

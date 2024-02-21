@@ -1,14 +1,13 @@
 ---
-title: 'Utah Crushes Broadband Challenge through Collaboration'
+title: Utah Crushes Broadband Challenge through Collaboration
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2023-03-03 12:00:00
-categories:
-  - Featured
+date: 2023-03-03T12:00:00.000Z
 tags:
   - data
   - broadband
+category: Uncategorized
 ---
 
 _From the I Challenge You to a Duel department_

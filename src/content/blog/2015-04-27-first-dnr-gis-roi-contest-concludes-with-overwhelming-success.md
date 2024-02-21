@@ -8,8 +8,7 @@ tags:
 date: 2015-04-27 16:19:36 -0600
 title: First DNR GIS ROI Contest Concludes with Overwhelming Success
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>The Utah Department of Natural Resources (DNR) honored six employees from five divisions as a part of its GIS Return on Investment (ROI) Contest. Tanna Fullenkamp, from Forestry, Fire, & State Lands was named grand prize winner for her sovereign lands GIS project.</p>

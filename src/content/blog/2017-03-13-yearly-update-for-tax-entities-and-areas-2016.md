@@ -6,11 +6,10 @@ tags:
   - tax areas
   - tax entities
   - utah state tax
-date: 2017-03-13
+date: 2017-03-13T00:00:00.000Z
 title: Yearly update for Tax Entities and Areas 2016
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 We have finished the updates for the Utah State Tax Entities and Areas for 2016!

@@ -1,16 +1,15 @@
 ---
-title: 'Base maps: Out With the Old, In With the New'
+title: "Base maps: Out With the Old, In With the New"
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
-date: 2023-03-02 11:00:00
-update_date: 2023-03-21 18:00:00
-categories:
-  - Featured
+date: 2023-03-02T11:00:00.000Z
+update_date: 2023-03-21T18:00:00.000Z
 tags:
   - base maps
   - cartography
   - data
+category: Uncategorized
 ---
 
 It has been almost a decade since UGRC has updated the look and feel of any of the base maps but changes are on the way! The current suite of base maps were originally authored in ArcMap. These projects have been imported into ArcGIS Pro to continue to provide data updates. But to take advantage of the advancements in ArcGIS Pro, we decided to create new base map projects from the ground up using all of the new features available. These new documents are less complex and easier to maintain.

@@ -1,14 +1,12 @@
 ---
-title: 'SGID Product Relaunch Update'
+title: SGID Product Relaunch Update
 author:
   display_name: UGRC Office
   email: ugrc@utah.gov
-date: 2019-11-12 18:01:51
-categories:
-  - Featured
-  - Developer
-  - SGID Blog
-tags: [sgid]
+date: 2019-11-12T18:01:51.000Z
+tags:
+  - sgid
+category: SGID Blog
 ---
 
 In a June 2019 post “SGID Then and Now,” we touched on [where we thought the SGID is going]({% link _posts/2019-06-11-sgid-then-and-now.md %}#where-is-the-sgid-going). Based on the survey responses from that article, we have changed direction in some areas and taken on new tasks in other directions. Now we'd like to share our vision, based on user input, for improving the SGID in general and relaunching the SGID product.

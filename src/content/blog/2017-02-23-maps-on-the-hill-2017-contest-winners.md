@@ -7,11 +7,10 @@ tags:
   - maps on the hill
   - moth
   - ugic
-date: 2017-02-23 00:18:28
+date: 2017-02-23T00:18:28.000Z
 title: Maps on the Hill 2017 Contest Winners
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 In an effort to reward the best work at Maps on the Hill 2017, a judged contest was added to this year’s event in the capitol rotunda. Recognition and small prizes (UGRC wall maps and ESRI press books) were awarded to the map displays that best conveyed the value of GIS-based solutions. ![Judges' Deliberations]({% link images/MOTHJudges.png %}){:.inline-text-right}

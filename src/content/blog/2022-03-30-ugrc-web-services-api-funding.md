@@ -1,16 +1,15 @@
 ---
-title: 'UGRC Web Service Legislative Funding Request Update'
+title: UGRC Web Service Legislative Funding Request Update
 published: false
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
-date: 2022-03-30 14:10:46
-categories:
-  - Featured
+date: 2022-03-30T14:10:46.000Z
 tags:
   - sgid
   - web api
   - ugrc funding
+category: Uncategorized
 ---
 
 UGRC received additional funds for our work on the Web API and associated services. UGRC did not receive all funds requested however we did get ongoing funds, so users can expect to see enhancements in the near future. UGRC is also very open to suggestions for changes to our web services. Below is the justification I submitted for the request to the legislature.

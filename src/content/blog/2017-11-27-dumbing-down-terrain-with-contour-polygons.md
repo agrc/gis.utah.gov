@@ -3,15 +3,14 @@ title: Dumbing Down Terrain with Contour Polygons
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
-date: 2017-11-27 23:28:38
-categories:
-  - Developer
+date: 2017-11-27T23:28:38.000Z
 tags:
   - contours
   - elevation
   - python
   - tanaka
   - terrain
+category: Developer
 ---
 
 While technology advances towards products with greater resolution and accuracy, sometimes more data isn’t always better data. Sometimes, being able to see general trends and relative differences paints a more interesting picture than sub foot imagery or lidar. This is the case when terrain is dumbed down and represented with generalized contour polygons.

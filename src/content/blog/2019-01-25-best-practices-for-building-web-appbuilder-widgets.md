@@ -1,13 +1,12 @@
 ---
-title: 'Best Practices for Building Web AppBuilder Widgets'
+title: Best Practices for Building Web AppBuilder Widgets
 published: false
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2019-01-25 15:42:47
-categories:
-  - Developer
+date: 2019-01-25T15:42:47.000Z
 tags: []
+category: Developer
 ---
 
 Recently, I have been working on a [project](https://github.com/agrc/wfrc-wab-widgets/) building custom Web AppBuilder (WAB) widgets for a client. This has been an interesting digression from our typical development projects, and working within the confines of WAB has proved to be both liberating and frustrating. In this post, I would like to share a few solutions that have helped me make the most of working with WAB.

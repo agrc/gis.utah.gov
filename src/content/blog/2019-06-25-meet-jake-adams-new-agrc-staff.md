@@ -1,12 +1,11 @@
 ---
-title: 'Meet Jake Adams - New UGRC Staff'
+title: Meet Jake Adams - New UGRC Staff
 author:
   display_name: Jacob Adams
   email: jdadams@utah.gov
-date: 2019-06-25 20:58:02
-categories:
-  - Featured
+date: 2019-06-25T20:58:02.000Z
 tags: []
+category: Uncategorized
 ---
 
 UGRC would like to welcome Jake Adams to the team! Jake will be using his GIS experience working with Cache County and Taylorsville City, as well as his Master of Urban and Regional Planning Degree, to help UGRC with the Discover service, SGID, and other UGRC efforts. We're happy to have Jake on the team!

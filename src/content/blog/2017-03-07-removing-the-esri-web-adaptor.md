@@ -3,10 +3,9 @@ author:
   display_name: Steve Gourley
   email: SGourley@utah.gov
 tags: []
-date: 2017-03-07 05:10:58
+date: 2017-03-07T05:10:58.000Z
 title: Removing and Replacing the Esri Web Adaptor
-categories:
-  - Developer
+category: Developer
 ---
 
 The [Esri web adaptor](https://enterprise.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm) is a small load balancer/reverse proxy bundled into the ArcGIS Server install but do you know if you need it?

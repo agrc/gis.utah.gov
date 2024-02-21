@@ -1,16 +1,15 @@
 ---
 status: publish
 published: false
-title: '2018 Utah LiDAR Acquisition - Completed'
+title: 2018 Utah LiDAR Acquisition - Completed
 author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
-date: 2018-05-17 18:17:41
-update_date: 2019-07-16 18:17:41
-categories:
-  - Featured
+date: 2018-05-17T18:17:41.000Z
+update_date: 2019-07-16T18:17:41.000Z
 tags:
   - lidar
+category: Uncategorized
 ---
 
 UGRC has awarded Aero-Graphics, Inc. (AGI) to acquire [**10,450 square miles**](http://utah.maps.arcgis.com/home/webmap/viewer.html?webmap=579b517bd8d040969fc3418328c31f31 'view project areas in ArcGIS Online') of LiDAR Elevation data. The LiDAR will be a combination of USGS Quality Level 1 (_QL1_), 8 points per square meter and Quality Level 2 (_QL2_), 2 points per square meter depending on the area. The acquisitions have begun and will continue throughout the year. The acquisitions will be completed in 2018 and project deliverables are scheduled to be completed by June 30, 2019.

@@ -3,7 +3,7 @@ author:
   display_name: JP
   email: ugrc@utah.gov
 tags:
-  - '2014'
+  - "2014"
   - events
   - maps
   - maps on the hill
@@ -11,8 +11,7 @@ tags:
 published: false
 date: 2013-11-26 17:11:43 -0700
 title: Register for Maps on the Hill 2014
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p><a href="https://docs.google.com/a/utah.gov/spreadsheet/viewform?usp=drive_web&formkey=dG4ta3dQY3JpWkpCajhsbWNRRjlsT3c6MA#gid=0">Registration is now open</a> for the third annual Maps on the Hill. Maps on the Hill 2014 will be held on Wednesday, <strong>January 29, 2014</strong> from 11:00am - 1:00pm at the Utah State Capitol, with a reception afterwards. This event has been a great success in the past, and is a good opportunity for students and professionals to share maps and mapping projects with elected officials, fellow map makers in Utah, and the public. </p>

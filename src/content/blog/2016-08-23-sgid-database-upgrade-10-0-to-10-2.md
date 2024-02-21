@@ -3,11 +3,10 @@ author:
   display_name: Matt Peters
   email: mpeters@utah.gov
 tags: []
-date: 2016-08-23 22:42:20
+date: 2016-08-23T22:42:20.000Z
 title: SGID Database Upgrade 10.0 to 10.2
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager %}{% endcapture %}

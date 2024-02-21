@@ -1,14 +1,12 @@
 ---
-title: 'TURN GPS Coordinate Update'
+title: TURN GPS Coordinate Update
 published: false
 author:
   display_name: Sean Fernandez
   email: SFernandez@utah.gov
-date: 2020-03-03 19:28:40
-categories:
-  - Featured
-  - GPS-surveyor
+date: 2020-03-03T19:28:40.000Z
 tags: []
+category: GPS-surveyor
 ---
 
 The Utah Reference Network Global Positioning System (TURN GPS) provides real-time high precision centimeter positioning. Some reference stations within the network move slightly over time due to earth crustal displacement and the positions must be updated periodically to maintain accuracy.

@@ -10,11 +10,9 @@ tags:
   - ugs
   - water
 date: 2014-03-26 15:30:15 -0600
-title: 'Map Spotlight: Enhanced Wetlands Dataset from the Utah Geological Survey'
+title: "Map Spotlight: Enhanced Wetlands Dataset from the Utah Geological Survey"
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p><a href="{% link images/Wetland.jpg %}"><img src="{% link images/Wetland-300x200.jpg %}" alt="" title="Wetland" width="300" height="200" class="inline-text-right" /></a>The US Fish & Wildlife Service's National Wetland Inventory (NWI) initiative has been mapping wetlands in Utah since the 1980's. These maps are in the process of being converted to digital geospatial data for the state but have not been significantly updated in years within Utah's State Geographic Information Database (SGID).</p>

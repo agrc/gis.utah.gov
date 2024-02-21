@@ -1,14 +1,12 @@
 ---
-title: 'Introducing UGRCodes'
+title: Introducing UGRCodes
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov
-date: 2021-04-26 9:30:12
-categories:
-  - SGID Blog
-  - Featured
+date: 2021-04-26T09:30:12.000Z
 tags:
   - sgid
+category: SGID Blog
 ---
 
 Are you tired of fighting with esoteric municipal FIPS codes? Have you even tried using them? It's not easy and it's certainly not intuitive. Five digit integer codes with minimal consistency and continuity across space, and require a lookup table to understand, don't lend themselves as a simple identifier for a municipality. As a solution, UGRC is implementing a new attribute field called the UGRCode (get it?) in our [Municipal Boundaries](https://opendata.gis.utah.gov/datasets/utah-municipal-boundaries) and [Metro Townships](https://opendata.gis.utah.gov/datasets/utah-metro-townships) data. The full list of UGRCodes can be found [in this spreadsheet](https://docs.google.com/spreadsheets/d/19cwbXoewTynDDv_fJ3hGekD4VbLef5VxrnSJfRx8My8/edit#gid=2028111876).

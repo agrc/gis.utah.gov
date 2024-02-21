@@ -6,9 +6,7 @@ tags: []
 date: 2014-09-25 14:48:06 -0600
 title: Proposed Lidar Project, Northern Utah
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p><a href="{% link images/ProposedLidarAreas20151.png %}"><img src="{% link images/ProposedLidarAreas20151-195x300.png %}" alt="" title="ProposedLidarAreas2015" width="195" height="300" class="inline-text-right" /></a>UGRC, in partnership with the Department of Natural Resources (Division of Forestry, Fire, and State Lands and the Utah Geological Survey) and Department of Public Safety (Division of Emergency Management, FEMA Flood RiskMap Coordination) has submitted a <a href="https://docs.google.com/document/d/17l9lXmchIHTcPxj4tCKaB_yF0CIowkNxU_KZYij0Dg4/edit?usp=sharing">pre-proposal</a> to the USGS's 3DEP elevation modernization grant program. There is no guarantee of USGS grant support for these projects, planned for 2015. However, it is important for the Utah GIS user community to know the this proposal is in process and that the partnering organizations have begun discussions around required matching funds.</p>

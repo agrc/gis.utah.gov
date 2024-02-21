@@ -3,11 +3,10 @@ author:
   display_name: Bert Granberg
   email: ugrc@utah.gov
 tags: []
-date: 2016-09-07 19:54:05
+date: 2016-09-07T19:54:05.000Z
 title: Watershed Restoration Initiative Wins 2016 Digital Government Award
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 The updated [Watershed Restoration Initiative (WRI) Application](https://wri.utah.gov/wri/) will be adding a Digital Government Achievement Award to its trophy case this month. WRI was one of 3 winners in the 2016 "Driving Digital Government" state government category. ![]({% link images/DGAAaward.png %}){:.inline-text-right}

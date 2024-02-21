@@ -6,9 +6,7 @@ tags: []
 date: 2014-08-29 14:25:49 -0600
 title: Coordinating a Statewide Recreational Trails GIS Dataset
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p><a href="{% link images/recreation_map.png %}"><img src="{% link images/recreation_map_sm.png %}" alt="" title="Trails snapshot" width="239" height="300" class="inline-text-left" /></a>Several agencies, at the local, state, and national-levels, have expressed a strong interest in a statewide, integrated, recreational trails GIS dataset. Marketing the attractiveness of Utah to prospective businesses and vacationers is a strong driver for this effort, as is the desire to inform citizens and best respond to emergencies that occur on or near recreation resources.</p>

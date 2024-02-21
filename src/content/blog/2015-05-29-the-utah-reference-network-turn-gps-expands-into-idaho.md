@@ -7,9 +7,7 @@ tags:
 date: 2015-05-29 16:15:11 -0600
 title: The Utah Reference Network (TURN) GPS Expands into Idaho
 published: false
-categories:
-  - Featured
-  - GPS-surveyor
+category: GPS-surveyor
 ---
 
 <a href="{% link images/IdahoExpansion.png %}"><img src="{% link images/IdahoExpansion-sm.png %}" alt="" title="IdahoExpansion" class="inline-text-left" loading="lazy" /></a>

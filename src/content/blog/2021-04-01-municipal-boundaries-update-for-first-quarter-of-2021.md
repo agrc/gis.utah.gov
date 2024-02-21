@@ -1,15 +1,14 @@
 ---
-title: 'Municipal Boundaries Update for First Quarter of 2021'
+title: Municipal Boundaries Update for First Quarter of 2021
 published: false
 author:
   display_name: mheagin
   email: mheagin@utah.gov
-date: 2021-04-01 22:54:23
-categories:
-  - Featured
+date: 2021-04-01T22:54:23.000Z
 tags:
   - annexations
   - boundary
+category: Uncategorized
 ---
 
 It's a new year and a new start for the state. While we entered the year still under pandemic restrictions, which we have been under for a little more than a year now, we're still experiencing growth, albeit slower than in other years.

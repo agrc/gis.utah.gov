@@ -8,8 +8,7 @@ tags:
 date: 2015-01-20 07:51:04 -0700
 updated: 2019-08-16 07:51:04 -0700
 title: How To Use UGRC Base Maps in QGIS
-categories:
-  - Developer
+category: Developer
 ---
 
 Most people know about UGRC's awesome [base maps]({% link data/base-map-and-imagery/index.md %}). They are very popular and provide high quality cartography using the latest and greatest data from the [Utah SGID]({% link data/index.html %}). But did you know that they provide a [WMTS](https://en.wikipedia.org/wiki/Web_Map_Tile_Service) service that can be consumed in non-ESRI products?

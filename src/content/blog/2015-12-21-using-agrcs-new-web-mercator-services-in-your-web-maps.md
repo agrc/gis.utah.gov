@@ -10,9 +10,7 @@ tags:
 date: 2015-12-21 08:58:29 -0700
 title: Using UGRC's new Web Mercator Services in Your Web Maps
 published: false
-categories:
-  - Developer
-  - Featured
+category: Developer
 ---
 
 <p class="text-center pop">

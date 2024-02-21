@@ -1,16 +1,14 @@
 ---
-title: 'Using Jupyter Notebook for UGRC Collaboration'
+title: Using Jupyter Notebook for UGRC Collaboration
 author:
   display_name: Keaton Walker
   email: kwalker@utah.gov
-date: 2019-06-25 21:29:10
-categories:
-  - Featured
-  - Developer
+date: 2019-06-25T21:29:10.000Z
 tags:
   - notebook
   - jupyter
   - python
+category: Developer
 ---
 
 At UGRC we greatly value collaboration and sharing ideas. A terrific technology to support these values is [the Jupyter Notebook](https://jupyter.org/) project.

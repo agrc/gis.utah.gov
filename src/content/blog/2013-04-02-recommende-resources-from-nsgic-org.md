@@ -6,8 +6,7 @@ tags: []
 date: 2013-04-02 13:09:59 -0600
 title: Recommended GIS Resources from NSGIC.org
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>The National State Geographic Information Council (NSGIC) exists to </p>

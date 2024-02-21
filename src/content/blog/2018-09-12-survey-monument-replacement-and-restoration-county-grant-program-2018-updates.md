@@ -1,14 +1,13 @@
 ---
-title: 'Survey Monument Replacement and Restoration County Grant Program 2018 Updates'
+title: Survey Monument Replacement and Restoration County Grant Program 2018 Updates
 published: false
 author:
   display_name: Sean Fernandez
   email: sfernandez@utah.gov
-date: 2018-09-12 20:37:27
-categories:
-  - Featured
+date: 2018-09-12T20:37:27.000Z
 tags:
   - plss
+category: Uncategorized
 ---
 
 On September 5, the Monument Replacement and Restoration Committee (MRRC) met to finalize a request for proposals from Utah counties for grants to protect or rehabilitate the state’s section corner monuments.

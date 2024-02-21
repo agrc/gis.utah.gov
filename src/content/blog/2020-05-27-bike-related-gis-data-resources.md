@@ -1,17 +1,15 @@
 ---
-title: 'Latest Developments in Bike-Related GIS Data Resources'
+title: Latest Developments in Bike-Related GIS Data Resources
 published: false
 author:
   display_name: Bert Granberg
   email: bgranberg@wfrc.org
-date: 2020-05-27 12:29:00
-categories:
-  - Featured
-  - Guestblog
+date: 2020-05-27T12:29:00.000Z
 tags:
   - bike
   - wfrc
   - multimodal
+category: Guestblog
 ---
 
 It’s been said that “four wheels move your body, two wheels move your soul.”

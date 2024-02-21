@@ -1,14 +1,12 @@
 ---
-title: 'Image Service Deprecation'
+title: Image Service Deprecation
 published: false
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
-date: 2019-01-17 21:33:13
-categories:
-  - Featured
-  - Developer
+date: 2019-01-17T21:33:13.000Z
 tags: []
+category: Developer
 ---
 
 The UGRC brownout of the mapserv image services on mapserv.utah.gov from January 5 through 10, 2019, in preparation for the ArcGIS Server upgrade was very successful. We want to thank you for your participation and apologize for any inconvenience that the brownout may have caused. The few people that were negatively affected and were caught by surprise are now informed about the deprecation of image services and are on the migration path forward. You may reference the [original post]({% link _posts/2018-12-05-arc-gis-server-10-6-upgrade.md %}) for instructions on how to prepare for the deprecation.

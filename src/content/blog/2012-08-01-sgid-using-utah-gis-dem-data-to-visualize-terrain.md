@@ -4,11 +4,9 @@ author:
   email: zbeck@utah.gov
 tags: []
 date: 2012-08-01 15:10:36 -0600
-title: 'Using Utah GIS Elevation Data to Visualize Terrain'
+title: Using Utah GIS Elevation Data to Visualize Terrain
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p><img style="padding-right: 20px;" title="Using ArcMap color ramp symbology to provide an intuitive elevation coloring" src="{% link images/symbology_sml.png %}" alt="" width="400" height="356" align="right" /></p>

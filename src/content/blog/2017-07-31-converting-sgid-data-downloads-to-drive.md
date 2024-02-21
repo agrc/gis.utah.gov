@@ -4,10 +4,9 @@ published: false
 author:
   display_name: KWalker
   email: kwalker@utah.gov
-date: 2017-07-31 15:39:39
-categories:
-  - Developer
+date: 2017-07-31T15:39:39.000Z
 tags: []
+category: Developer
 ---
 
 File-based data products in remain an important component of Utah’s State Geographic Information Database (SGID). In a change designed not to be noticed by users, UGRC recently moved the zipped shapefiles and file geodatabase SGID data from an FTP server to Google Drive, (or G Suite Drive if your prefer the latest rebranding from the folks in Mountain View).

@@ -8,11 +8,10 @@ tags:
   - city
   - municipal boundaries
   - town
-date: 2016-12-30 22:58:57
+date: 2016-12-30T22:58:57.000Z
 title: End of year 2016 (fourth quarter) Updates for Municipal Boundaries
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 [![SL Co Municipal Changes]({% link images/MunicpalBoundaries2016Updates.png %} "view high res usage map")]({% link downloads/MunicpalBoundaries2016Updates.pdf %}){:.inline-text-right}

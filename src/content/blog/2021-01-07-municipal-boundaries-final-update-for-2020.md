@@ -1,16 +1,15 @@
 ---
-title: 'Municipal Boundaries Final Update for 2020'
+title: Municipal Boundaries Final Update for 2020
 published: false
 author:
   display_name: mheagin
   email: mheagin
-date: 2021-01-07 12:22:58
-categories:
-  - SGID Blog
+date: 2021-01-07T12:22:58.000Z
 tags:
   - municipal boundaries
   - boundaries
   - annexations
+category: SGID Blog
 ---
 
 Finally 2020 is behind us. Despite the year's challenges, the hardworking folks in the Lieutenant Governor's Office and all those working in the city and county recorders offices didn’t slow down. Utah County once again led the way with 30 annexations, and Cache County was next at 13. Nine other counties followed with 4 to 6 annexations throughout the year, bringing the grand total to 98 annexations in 2020, which is not bad, all things considered.

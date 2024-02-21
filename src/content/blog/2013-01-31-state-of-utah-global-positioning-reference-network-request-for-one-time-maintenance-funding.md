@@ -4,10 +4,10 @@ author:
   email: ugrc@utah.gov
 tags: []
 date: 2013-01-31 14:00:52 -0700
-title: State of Utah Global Positioning Reference Network, One-Time Maintenance Funding
+title: State of Utah Global Positioning Reference Network, One-Time Maintenance
+  Funding
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p><img src="{% link images/TURNGPS_MapsOnTheHill_Poster.jpg %}" align="right" alt="" title="TURNGPS_MapsOnTheHill_Poster" width="387" height="534" class="inline-text-left" />In 2005, the Utah Legislature, recognizing the need to support highly accurate GPS applications for surveying, engineering, construction, and GIS data<br />

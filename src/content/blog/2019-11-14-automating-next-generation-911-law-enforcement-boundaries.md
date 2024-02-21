@@ -1,11 +1,9 @@
 ---
-title: 'Automating Next-Generation 911 Law Enforcement Boundaries'
+title: Automating Next-Generation 911 Law Enforcement Boundaries
 author:
   display_name: Erik Neemann
   email: eneemann@utah.gov
-date: 2019-11-14 17:03:29
-categories:
-  - Featured
+date: 2019-11-14T17:03:29.000Z
 tags:
   - law enforcement
   - ng911
@@ -13,6 +11,7 @@ tags:
   - boundaries
   - psap
   - sgid
+category: Uncategorized
 ---
 
 UGRC has created a Python script for law enforcement boundaries that automatically builds jurisdiction polygons based on existing boundaries (primarily county and municipal boundaries) in the State Geographic Information Database (SGID). In order to understand how this automation will improve law enforcement response, it's important to understand Next-generation 911 (NG911).

@@ -6,8 +6,7 @@ tags: []
 date: 2012-12-10 16:34:35 -0700
 title: Municipalities Updates Nov. 30, 2012
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
 ---
 
 Updates were made recently to the SGID10.BOUNDARIES.Municipalities feature class that resides on the Utah SGID ArcSDE database server.

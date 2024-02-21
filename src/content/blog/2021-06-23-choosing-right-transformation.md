@@ -3,14 +3,12 @@ title: Choosing the Right Transformation
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2021-06-23 15:30:00
-categories:
-  - Featured
-  - SGID Blog
+date: 2021-06-23T15:30:00.000Z
 tags:
   - sgid
   - spatial analysis
   - data
+category: SGID Blog
 ---
 
 {% include embedded_video.html embed_url="https://player.vimeo.com/video/565826461" %}

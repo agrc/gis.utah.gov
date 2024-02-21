@@ -6,8 +6,7 @@ tags: []
 date: 2012-06-14 17:13:42 -0600
 title: Utah Oil and Gas GIS Data Updates
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
 ---
 
 <figure class="caption caption--right"><img class="caption__image" title="utah oil and gas wells" src="{% link images/utah-oil-and-gas-wells.png %}" alt="" /><figcaption class="caption__text">Utah Oil and Gas Well GIS Data</figcaption></figure>

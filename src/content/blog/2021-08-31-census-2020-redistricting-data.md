@@ -3,9 +3,7 @@ title: 2020 Census Redistricting Data in Easy to Use GIS Formats
 author:
   display_name: Bert Granberg and Greg Bunce
   email: gbunce@utah.gov
-date: 2021-08-31 7:33:46
-categories:
-  - Featured
+date: 2021-08-31T07:33:46.000Z
 tags:
   - gis
   - census
@@ -13,6 +11,7 @@ tags:
   - elections
   - voting
   - demographic
+category: Uncategorized
 ---
 
 Good news, 2020 census redistricting data is now available for Utah in easy to use GIS formats!

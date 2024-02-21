@@ -1,17 +1,14 @@
 ---
-title: 'Introducing Masquerade'
+title: Introducing Masquerade
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2022-08-01 12:20:21
-categories:
-  - Featured
-  - Developer
-  - SGID Blog
+date: 2022-08-01T12:20:21.000Z
 tags:
   - geocoding
   - tools
   - sgid
+category: SGID Blog
 ---
 
 Masquerade is a new proxy service hosted by UGRC that makes [our geocoding service](https://api.mapserv.utah.gov/) and Open SGID datasets easily accessible in Esri products. It does this by impersonating an Esri locator service. You should be able to use the URL below anywhere you would normally use an Esri geocode service:

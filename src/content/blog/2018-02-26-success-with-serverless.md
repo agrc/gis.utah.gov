@@ -1,15 +1,14 @@
 ---
 status: publish
 published: true
-title: 'Success with Serverless'
+title: Success with Serverless
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2018-02-26 23:45:28
-categories:
-  - Developer
+date: 2018-02-26T23:45:28.000Z
 tags:
   - nodejs
+category: Developer
 ---
 
 In this post, I'd like to share the success story of our recent testing of [serverless computing](https://en.wikipedia.org/wiki/Serverless_computing). We've been having some issues with a print-proxy service, and the situation gave us the perfect opportunity to experiment with serverless computing. This new(ish) technology has some exciting advantages over traditional solutions, and we've been looking for an excuse to try it out. We weren't disappointed.

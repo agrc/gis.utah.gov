@@ -6,9 +6,7 @@ tags: []
 date: 2015-03-05 16:02:52 -0700
 title: Summarizing Utah GIS Data Needs for NG 9-1-1
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p><a  title="911flyer" href="https://docs.google.com/presentation/d/1Xy7brkt6DrqEMz68dGliU1vQbs0lV-or6R1d_u5gvGs/edit?usp=sharing"><img class="inline-text-left" style="border: 0px solid black;" src="{% link images/NG911LayerStatus-230x300.png %}" alt="ned" width="230" height="300" loading="lazy" /></a></p>

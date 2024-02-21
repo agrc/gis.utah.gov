@@ -3,7 +3,7 @@ author:
   display_name: Bert Granberg
   email: ugrc@utah.gov
 tags:
-  - '911'
+  - "911"
   - address
   - boundaries
   - ecrf
@@ -15,11 +15,9 @@ tags:
   - society
   - transportation
 date: 2013-11-26 14:21:05 -0700
-title: 'Utah Mapping Resources: Well-Prepared for NextGen 9-1-1'
+title: "Utah Mapping Resources: Well-Prepared for NextGen 9-1-1"
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p>Change is in the works for how the 9-1-1 system connects those in need with emergency responders. The <a href="https://www.nena.org?page=AboutNENA">National Emergency Number Association</a> (NENA), which represents 9-1-1 professionals and organizations, has been at the forefront of creating the standards that will guide and govern the coming upgrade.</p>

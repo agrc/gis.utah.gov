@@ -1,16 +1,16 @@
 ---
-title: Weaving the Fabric - Building Authoritative Geospatial Datasets through Collaboration, Relationships, and Data Standards
+title: Weaving the Fabric - Building Authoritative Geospatial Datasets through
+  Collaboration, Relationships, and Data Standards
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2021-12-14 10:01:46
-categories:
-  - Featured
+date: 2021-12-14T10:01:46.000Z
 tags:
   - sgid
   - gisac
   - collaboration
   - standards
+category: Uncategorized
 ---
 
 ### Many Hands Make Light Work

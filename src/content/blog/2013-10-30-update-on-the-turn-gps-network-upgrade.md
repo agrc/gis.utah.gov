@@ -9,9 +9,7 @@ tags:
 date: 2013-10-30 11:36:07 -0600
 title: Update on the TURN GPS Network Upgrade
 published: false
-categories:
-  - Featured
-  - GPS-surveyor
+category: GPS-surveyor
 ---
 
 <p><a href="{% link images/TURNGPS_MapsOnTheHill_Poster.jpg %}"><img src="{% link images/TURNGPS_MapsOnTheHill_Poster.jpg %}" alt="" title="TURNGPS_MapsOnTheHill_Poster" width="239" height="300" class="inline-text-left" /></a> As announced in a previous <a href="{% link _posts/2013-09-13-turn-gps-network-updates.md %}" target="_blank" rel="noopener">blogpost</a>, the TURN GPS Network is undergoing a system upgrade and a change in spatial reference from NAD 83 (CORS 96) epoch 2002 to NAD 83 (2011) epoch 2010. We are pleased to announce the new system is up and running and is currently in the testing phase. The two systems are running completely separate and independent of each other to avoid any confusion with the coordinate systems. </p>

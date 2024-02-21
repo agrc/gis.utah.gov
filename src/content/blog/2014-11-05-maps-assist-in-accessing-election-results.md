@@ -6,9 +6,7 @@ tags: []
 date: 2014-11-05 10:27:43 -0700
 title: Maps Assist in Accessing Election Results
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 <p><a href="{% link images/UtahElectionsResults.png %}"><img src="{% link images/UtahElectionsResults-300x285.png %}" alt="" title="UtahElectionsResults" width="300" height="285" class="inline-text-left" /></a>Results from yesterday's elections for statewide and local offices are available via a new, revamped website: <a href="https://electionresults.utah.gov/">https://electionresults.utah.gov/</a>. Visitors to the site can search for the results they are interested in by office type, district number, and, by using a map interface that allow users unfamiliar with district numbers to click the map to see results.</p>

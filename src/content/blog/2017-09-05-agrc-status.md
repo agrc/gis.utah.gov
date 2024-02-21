@@ -3,12 +3,10 @@ title: UGRC System Status Page
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
-date: 2017-09-05 18:29:31
-categories:
-  - Developer
-  - Featured
+date: 2017-09-05T18:29:31.000Z
 tags:
   - monitoring
+category: Developer
 ---
 
 Over the years, GIS is trending more and more towards being web-based. UGRC has tried to keep step with this trend with the addition of the [discover]({% link discover/index.html %}), the [TurnGPS]({% link data/cadastre/turn-gps/index.md %}) RTK GPS service, and the [Web API](https://api.mapserv.utah.gov) handling over one million requests per month. More and more users rely on these services. Outages are _very_ disruptive and we're doing everything in our power to avoid them. But in the event of a system outage we want our users to know **what** is going on, that you're not alone and that UGRC is aware of the issue, and **when** it is likely to be resolved.

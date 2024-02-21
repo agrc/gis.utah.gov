@@ -7,10 +7,9 @@ tags:
   - data
   - tracking
 date: 2015-11-27 13:45:52 -0700
-title: 'Evolving Utah SGID Web Services: A Proposal'
+title: "Evolving Utah SGID Web Services: A Proposal"
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <figure class="caption caption--right"><a href="{% link images/pendulum_large.png %}"><img class="caption__image" src="{% link images/pendulum.png %}" alt="The pendulum swings back and forth..." title="The pendulum swings back and forth..." loading="lazy" /></a><figcaption class="caption__text">The pendulum swings back and forth...</figcaption></figure>

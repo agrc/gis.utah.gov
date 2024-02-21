@@ -9,10 +9,10 @@ tags:
   - web mapping
   - wri
 date: 2015-12-21 11:33:58 -0700
-title: 'Department of Natural Resources Launches New Watershed Restoration Initiative Website '
+title: "Department of Natural Resources Launches New Watershed Restoration
+  Initiative Website "
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>The Department of Natural Resource's Division of Wildlife Resources recently launched a new website, geo-database, and project proposal site for Utah's Watershed Restoration Initiative (WRI). WRI is a partnership program in Utah to improve high priority watersheds throughout the state. WRI is sponsored by the Utah Partners for Conservation and Development and is in its 11th year.  </p>

@@ -25,9 +25,7 @@ tags:
 published: false
 date: 2014-09-17 09:28:37 -0600
 title: 2013-2014 Wasatch Front LiDAR Now Available
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 Through partnerships with FEMA and the Utah Division of Emergency Management, USGS, Utah Geological Survey, and the Salt Lake County Surveyor's office and partner cities, UGRC is pleased to announce the new 2013-2014 Wasatch Front Lidar is now available. The 1,422 square miles of USGS Quality Level 1 Lidar was collected as an 8 point per meter (8 ppm) point cloud. The resulting bare earth hydro flattened (DTM) DEMs and first return or highest-hit (DSM) DEMs have a resolution of .5 meters.

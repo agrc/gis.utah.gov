@@ -8,8 +8,7 @@ tags:
 date: 2012-06-06 10:52:29 -0600
 published: false
 title: Apple, Google, 3D and GIS
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p style="text-align: left;"><a href="{% link images/googlemapsevent.jpg %}"><img class="inline-text-left" title="googlemapsevent" src="{% link images/googlemapsevent.jpg %}" alt="" width="275" height="275" /></a>The next few days mark an interesting time in the geospatial industry.  As geo-guru <a href="http://geothought.blogspot.com/2012/06/today-mapping-wars-escalate.html">Peter Batty noted</a>, rarely do a couple of the world's largest companies put maps at the forefront of their competitive strategy like they are this week.  ("Finally, maps are relevant!") Earlier in the week, well-placed rumors were headlining that as part of Apple's WWDC next week, it would announce the dismissal of Google Maps as well as introduce a new concept  in 3D mapping for mobile.  The rumors garnered attention of many major news outlets (<a href="http://www.npr.org/blogs/alltechconsidered/2012/06/05/154388340/apple-to-google-maps-we-have-our-own-app-for-that">NPR</a>, <a href="http://www.huffingtonpost.com/2012/06/05/apple-google-maps_n_1571099.html">HuffPost</a>, <a href="http://online.wsj.com/article_email/SB10001424052702304543904577398502695522974-lMyQjAxMTAyMDAwNDEwNDQyWj.html">Wall Street Journal</a>).</p>

@@ -6,8 +6,7 @@ tags: []
 date: 2012-07-19 17:49:57 -0600
 title: Utah Zip Code Boundaries Update
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
 ---
 
 Updates were made recently to the SGID10.Boundaries.ZipCodes feature class that resides on the Utah SGID ArcSDE database server.

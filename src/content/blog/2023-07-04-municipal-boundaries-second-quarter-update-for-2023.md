@@ -1,15 +1,14 @@
 ---
-title: 'Municipal Boundaries, Second quarter update for 2023'
+title: Municipal Boundaries, Second quarter update for 2023
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2023-07-04 10:19:10
-categories:
-  - SGID Blog
+date: 2023-07-04T10:19:10.000Z
 tags:
   - municipal boundaries
   - boundaries
   - annexations
+category: SGID Blog
 ---
 
 We are halfway through 2023 and the annexations are slowing down. Hopefully that is not related to the flooding or the threat of. This quarter we got the latest (July 1, 2022) population estimates for the towns and cities and the `POPLASTESTIMATE` field reflecs those changes.

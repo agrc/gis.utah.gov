@@ -1,11 +1,11 @@
 ---
-title: 'Meet Nathan Kota - New UGRC Staff'
+title: Meet Nathan Kota - New UGRC Staff
 author:
   display_name: UGRC
   email: ugrc@utah.gov
-date: 2018-09-17 20:16:10
-categories: []
+date: 2018-09-17T20:16:10.000Z
 tags: []
+category: Uncategorized
 ---
 
 UGRC would like to welcome Nathan Kota, the new Information Technology Manager. Nathan is going to help build and manage the development team as well as take our project management skills to the next level! We are excited to have Nathan as a part of the team.

@@ -6,8 +6,7 @@ tags: []
 date: 2014-01-29 15:30:07 -0700
 title: My Favorite Sublime Text 3 Plugins & Configs
 published: false
-categories:
-  - Developer
+category: Developer
 ---
 
 <p>I'm a huge fan of <a href="http://www.sublimetext.com/3">Sublime Text 3</a>. I love it's simplicity and strong package community. Here's a list of my favorite packages and config tweaks:</p>

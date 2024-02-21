@@ -4,11 +4,10 @@ published: false
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2020-11-17 17:30:00
-categories:
-  - Featured
+date: 2020-11-17T17:30:00.000Z
 tags:
   - agol
+category: Uncategorized
 ---
 
 ## Heads up!

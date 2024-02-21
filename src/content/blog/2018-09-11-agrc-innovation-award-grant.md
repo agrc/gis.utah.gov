@@ -1,13 +1,12 @@
 ---
-title: 'UGRC Innovation Award Grant'
+title: UGRC Innovation Award Grant
 published: false
 author:
   display_name: Anna Tribolet
   email: atribolet@utah.gov
-date: 2018-09-11 23:14:09
-categories:
-  - Featured
+date: 2018-09-11T23:14:09.000Z
 tags: []
+category: Uncategorized
 ---
 
 The DTS Technology Advisory Board has recently awarded UGRC an innovation grant of $25,000 for the Digital Assistant Skill for Voting Project.

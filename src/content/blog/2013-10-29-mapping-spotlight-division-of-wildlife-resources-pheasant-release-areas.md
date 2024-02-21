@@ -9,10 +9,9 @@ tags:
   - pheasants
   - wildlife
 date: 2013-10-29 16:10:49 -0600
-title: 'Mapping Spotlight: DWR Pheasant Release Areas'
+title: "Mapping Spotlight: DWR Pheasant Release Areas"
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p><a href="{% link images/pheasantmap-249x300.jpg %}"><img src="{% link images/pheasantmap-249x300.jpg %}" style="margin-left:30px" align="right"  title="pheasantmap" width="249" height="300"/></a> As a new feature for gis.utah.gov, UGRC is working with state and local government to spotlight some of the many interesting and useful maps being created in Utah.</p>

@@ -1,15 +1,15 @@
 ---
-title: Taking a Closer Look at Election Results - Using GIS to Paint the Political Landscape
+title: Taking a Closer Look at Election Results - Using GIS to Paint the
+  Political Landscape
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2020-12-29 10:01:46
-categories:
-  - Featured
+date: 2020-12-29T10:01:46.000Z
 tags:
   - gis
   - elections
   - maps
+category: Uncategorized
 ---
 
 You've probably heard the saying, there are many ways to peel an orange. Similarly, you've likely noticed, there are [many ways](https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html) to display election results. In this post, we'll take a closer look at how GIS can yield a clearer picture of the political landscape.

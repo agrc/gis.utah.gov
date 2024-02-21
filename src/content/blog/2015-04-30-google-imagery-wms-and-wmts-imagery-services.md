@@ -7,10 +7,9 @@ tags:
   - google
   - high resolution
 date: 2015-04-30 11:57:15 -0600
-title: 'Google Imagery: WMS and WMTS Imagery Services, & Other Reminders'
+title: "Google Imagery: WMS and WMTS Imagery Services, & Other Reminders"
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <div class="grid pop">

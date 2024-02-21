@@ -11,8 +11,7 @@ tags:
   - web applications
 date: 2015-12-21 12:11:45 -0700
 title: The Earth is Not Round! Utah, NAD83 and Web Mercator Projections
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 GIS users working on statewide projects in Utah need to know the specifics of three primary coordinate systems: Geographic (latitude/longitude), UTM NAD83, and WebMercator.

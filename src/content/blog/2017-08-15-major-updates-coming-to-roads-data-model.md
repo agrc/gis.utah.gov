@@ -7,12 +7,10 @@ tags:
   - federal highway administration arnold
   - next generation 911
   - roads
-date: 2017-08-15 14:17:00
+date: 2017-08-15T14:17:00.000Z
 title: Major update coming to the SGID Statewide Roads Data Model
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
 ---
 
 It has always been one of our goals to stay ahead of the coming changes at the NextGen 911 and FHWA level, so after much statewide [coordination]({% link _posts/2016-09-16-road-centerlines-schema-update-and-regional-workshop-notes.md %}) and [feedback]({% link _posts/2014-04-30-feedback-wanted-proposed-best-practices-for-tagging-utah-metadata.md %}), UGRC is officially adopting a [new statewide roads data model](https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546). The two main drivers for this update are the Next Generation 911 GIS requirements and the Federal Highway Administration’s All Roads Network Of Linear-referenced Data (ARNOLD) reporting requirements for state DOTs.

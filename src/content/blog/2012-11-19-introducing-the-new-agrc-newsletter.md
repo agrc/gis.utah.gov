@@ -6,8 +6,7 @@ tags: []
 date: 2012-11-19 16:44:25 -0700
 title: Introducing the new UGRC Newsletter
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>On November 14, UGRC sent the first edition of a short-format <a href="https://us2.campaign-archive1.com/?u=0f7773ca3c6d02d1c38851ee9&amp;id=48c1ab7af9&amp;e=[UNIQID]" target="_blank" rel="noopener">newsletter</a> to subscribers who signed up on the gis.utah.gov website.</p>

@@ -7,11 +7,9 @@ tags:
   - image server
   - mapserv
 date: 2015-02-02 14:56:21 -0700
-title: 'Must Read for ArcGIS Desktop Users: Image Server Deprecation'
-categories:
-  - Featured
-  - SGID Blog
+title: "Must Read for ArcGIS Desktop Users: Image Server Deprecation"
 published: false
+category: SGID Blog
 ---
 
 <p>Beginning January 16, 2016 UGRC will no longer support legacy Image Server. This means that users of all versions of ArcGIS Desktop will <strong>not</strong> be able to connect to the SGID Image Server (connections established using the <em>Add Image Server Connection</em> button). All links to Image Server saved within an mxd will be broken. </p>

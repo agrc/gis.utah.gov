@@ -1,18 +1,17 @@
 ---
-title: 'Newest Updates for Tax Data 2018'
+title: Newest Updates for Tax Data 2018
 published: false
 author:
   display_name: mheagin
   email: mheagin@utah.gov
-date: 2018-03-19 22:38:18
-categories:
-  - SGID Blog
+date: 2018-03-19T22:38:18.000Z
 tags:
   - tax
   - tax entities
   - tax areas
   - sales tax areas
   - transit special tax areas
+category: SGID Blog
 ---
 
 With April just around the corner, it’s tax time again. If you don’t procrastinate and you've already done your taxes, you might be interested in knowing just who is getting that hard-earned money you make.

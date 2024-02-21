@@ -1,14 +1,12 @@
 ---
-title: 'Introducing the Official UGRC API Client'
+title: Introducing the Official UGRC API Client
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
-date: 2021-11-29 07:18:45
-categories:
-  - Featured
-  - Developer
+date: 2021-11-29T07:18:45.000Z
 tags:
   - geocoding
+category: Developer
 ---
 
 Assigning a geographic coordinate to an address, otherwise known as geocoding, is one of the simplest ways to enable data to be visualized on a map. This makes geocoding a gateway to a Geographic Information System (GIS). Because location matters to us, we make geocoding simple!

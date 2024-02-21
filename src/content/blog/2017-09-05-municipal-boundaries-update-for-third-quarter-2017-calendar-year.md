@@ -4,13 +4,12 @@ published: false
 author:
   display_name: M Heagin
   email: mheagin@utah.gov
-date: 2017-09-05 19:42:24
-categories:
-  - Featured
+date: 2017-09-05T19:42:24.000Z
 tags:
   - annexations
   - boundaries
   - municipal boundaries
+category: Uncategorized
 ---
 
 We are heading into fall now and everyone seems to be getting things in order for the end of the year. UGRC has been working with cities and counties to get some older areas updated and boundaries current. The 2020 Census is fast approaching so it’s a good time to review your data and get any missing areas included. UGRC will be submitting data to Census BAS program again at the end of the year. They do like to see documentation of some kind for all areas included.

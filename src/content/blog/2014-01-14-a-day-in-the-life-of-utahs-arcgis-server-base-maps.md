@@ -7,8 +7,7 @@ tags:
 date: 2014-01-14 14:58:59 -0700
 title: A day in the life of Utah's ArcGIS Server Base Maps
 published: false
-categories:
-  - Featured
+category: Uncategorized
 ---
 
 <p>"Base map web services" provides access to pre-rendered multi-scale maps that show more detailed map features at finer scales and less detail at larger scales.</p>

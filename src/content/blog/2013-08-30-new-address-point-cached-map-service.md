@@ -10,8 +10,7 @@ tags:
 date: 2013-08-30 13:31:42 -0600
 title: New Address Point Cached Map Service
 published: false
-categories:
-  - Developer
+category: Developer
 ---
 
 <p><img alt="" src="{% link images/Addresspntmapservice-150x150.png %}" class='inline-text-right' />UGRC recently released an address point map service. The service contains a cached version of &nbsp;<a href="{% link _posts/2013-06-28-utah-gis-framework-data-for-800-please-alex.md %}">Utah&rsquo;s Statewide Address Points dataset</a>. </p>

@@ -5,10 +5,9 @@ author:
 tags:
   - basemap
 date: 2014-12-22 10:45:14 -0700
-title: 'Basemaps: A 2014 Day in the Life'
+title: "Basemaps: A 2014 Day in the Life"
 published: false
-categories:
-  - Developer
+category: Developer
 ---
 
 ### A day in the life of Utah’s ArcGIS Server Basemaps 2014
