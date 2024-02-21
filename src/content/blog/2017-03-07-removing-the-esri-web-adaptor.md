@@ -16,7 +16,7 @@ ArcGIS Server runs an http server exposed over the private port 6080. The web ad
 
 ### When to install the web adaptor
 
-{: .text-left }
+
 
 ![Web adaptor flow chart]({% link images/web-adaptor-flow.png %})
 
@@ -30,7 +30,7 @@ As a developer, it is beneficial to mimic your deployment scenario to avoid the 
 
 ### Replacing the web adaptor
 
-{: .text-left }
+
 
 To replace the web adaptor on an IIS machine it is first necessary to install the [Web Platform Installer](https://www.iis.net/downloads/microsoft/web-platform-installer). Using the web platform installer, search and install the **Application Request Routing** and **URL Rewrite** modules for IIS.
 

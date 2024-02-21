@@ -15,16 +15,16 @@ category: Uncategorized
 
 ### Many Hands Make Light Work
 
-{: .text-left}
+
 
 It’s been said that it took about [100,000](https://www.historymuseum.ca/cmc/exhibitions/civil/egypt/egca12e.html#:~:text=The%20Greek%20historian%20Herodotus%20was,creates%20a%20very%20stable%20structure.) humans to build the Pyramids of Giza and a [similar number](https://www.peoplesworld.org/article/today-in-labor-history-panama-canal-built-by-75-000-opens/) to build the Panama Canal. Prior to the internet, large-scale collaboration is generally thought to be limited to that number. Any more, and it became difficult to manage. What made these projects successful is that they were well-organized and that they adhered to a set of standards. Today we are able to collaborate with an infinite number of people, however, organization and standards are still limiting factors.
 
 ![Weaving the Fabric]({% link images/weaving_the_fabric.png %})
-{: .flex .flex--center}
+
 
 ### Geospatial Collaboration
 
-{: .text-left}
+
 
 Geospatial folks are some of the best collaborators. For one, geospatial data is inherently visual. Much like adding pieces to a puzzle, it’s rewarding to assemble. Second, geospatial folks generally speak the same language. In the early days, most folks in the industry were using [ESRI](https://www.esri.com/en-us/home)
 products and were creating and sharing data in similar formats; this is generally still true in the public sector. Collaboration is embedded in the geospatial community
@@ -33,7 +33,7 @@ What's exciting now is that technology continues to make this easier. Because of
 
 ### Authoritative Data
 
-{: .text-left}
+
 
 In general, authoritative data can be defined as data provided by a recognized source such as a surveyor or governing entity (ie, an entity that is authorized to develop or manage the data, such as a governmental jurisdiction).
 
@@ -45,7 +45,7 @@ Authoritative datasets have a wide array of use cases, and it is important that 
 
 ### Stewardship and Aggregation
 
-{: .text-left}
+
 
 Authoritative data is typically woven together through a process of aggregation. In this model, there are data stewards and data aggregators (with occasional overlap). Ideally, the data stewards are the folks who are governing or who are closest to the assets. This is often local government for datasets such as address points, land parcels, and road centerlines.
 
@@ -55,7 +55,7 @@ This steward-aggregator model has well-defined roles and contains accountability
 
 ### Data Standards and the Role of Advisory Groups
 
-{: .text-left}
+
 
 The Pyramids of Giza and the Panama Canal were not built overnight. Their success not only hinged on collaboration and organization but also established [standards](https://www.fgdc.gov/ngac/meetings/march-2017/ngac-paper-geospatial-standards-a-national-asset.pdf). Without standards, it’s difficult to ensure that the individual pieces fit together.
 
@@ -67,7 +67,7 @@ Geospatial advisory groups are a great place to communicate and discover common 
 
 ### Utah Geospatial Information Advisory Committee (GISAC)
 
-{: .text-left}
+
 
 If you maintain geospatial data in the state of Utah, you should consider joining GISAC’s Surveying and Mapping committee. This committee works to develop and update data content standards and to consolidate statewide mapping requirements for the most widely used geographic data in Utah. These standards are only valuable if they are being implemented, and the best way to encourage their implementation is to collectively take ownership of them. This is where your voice matters.
 
@@ -75,7 +75,7 @@ Established standards and best practices are key to speedy and efficient data up
 
 ### The Proof is in the Pudding
 
-{: .text-left}
+
 
 If we're doing it right, the geospatial fabric should stretch across the nation and eventually the globe. In other words, the authoritative data created at the local level will be the same data showing up in broader statewide, national, and even international datasets. A great example of this in action is comparing the locally-sourced address points in Utah’s [State Geographic Information Database](https://opendata.gis.utah.gov/datasets/utah-address-points/explore) (SGID) with address points in the [National Address Database](https://usdot.maps.arcgis.com/apps/instant/minimalist/index.html?appid=2c27531e71b94d48b1a4e12207e7f2c3) ([NAD](https://www.transportation.gov/gis/national-address-database)). The magic happens because of the well-established relationships and the steward-aggregator model in place in Utah. However, there is room for improvement. The best thing we can do now is to focus on establishing data standards so we can update these datasets more frequently.
 
@@ -85,4 +85,4 @@ If you would like to learn more about GISAC or one of its five subcommittees, in
 {{ contact }}.
 
 ![SGID Hexagon Globe]({% link images/hex_globe_sgid.png %})
-{: .flex .flex--center}
+

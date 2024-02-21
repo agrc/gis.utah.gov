@@ -13,7 +13,7 @@ UGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 w
 
 ### UGRC Is Deprecating the Image Services on mapserv.utah.gov
 
-{: .pop}
+
 
 {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.change_manager text="If you notice any issues after the upgrade or have any questions about the brownout, please let" hide-punctuation=true%}{% endcapture %}
 
@@ -25,17 +25,17 @@ UGRC hopes that after reading this article, users of image services will draft a
 
 ## Migration Options
 
-{: .text-left style="margin-bottom:0px"}
+
 
 ### 1. Local Mosaic Datasets
 
-{: .text-left}
+
 
 The source data for the image services on mapserv.utah.gov is available for download from [raster.utah.gov](https://raster.utah.gov/). This data allows for the creation of local [mosaic datasets](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-a-mosaic-dataset.htm) for visualization and analysis. Choose this option if you require advanced analysis of raster data.
 
 ### 2. Discover Services
 
-{: .text-left}
+
 
 The [Discover services](/discover) provided by UGRC intersect the image services. There is **not a complete one-to-one mapping**, as you will see in the table below, but coverage is adequate and Discover has **many more services** not offered as image services. Since the majority of consumers of the image services use them for reference and not advanced image analysis, histogram stretching, etc., the Discover services will provide a better end user experience. The prerendered tiles will be much faster than the on-the-fly processing from the image services.
 
@@ -43,7 +43,7 @@ Below is a table of services that will be removed during the software upgrade. T
 
 ## Services Marked for Deprecation
 
-{: .text-left style="margin-bottom:0px"}
+
 
 | Deprecated Mapserv Service                             | Discover Alternative          |
 | :----------------------------------------------------- | :---------------------------- |

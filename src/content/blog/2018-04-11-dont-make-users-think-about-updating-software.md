@@ -83,4 +83,4 @@ The evergreen documentation is in the repository [read me](https://github.com/st
 1. Create a [GitHub release](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository) using [semantic versioning](https://semver.org/)
 1. Add the compiled add-in as a release asset (_#7 from the GitHub release help_)
 
-![ProEvergreen](https://github.com/steveoh/pro-evergreen/raw/master/proevergreen.png){: .flex .flex--center }
+![ProEvergreen](https://github.com/steveoh/pro-evergreen/raw/master/proevergreen.png)

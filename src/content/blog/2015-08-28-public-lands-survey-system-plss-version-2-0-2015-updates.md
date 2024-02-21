@@ -10,7 +10,7 @@ category: GPS-surveyor
 ---
 
 ![plss sample]({% link images/NewPLSS_LrgSample1.png %})
-{:.inline-text-right}
+
 
 UGRC recently made available the latest version of the Geographic Coordinate Database (GCDB) version 2.0, 2015 updates to the Townships, Sections, and Quarter Section divisions of the Public Land Survey System (PLSS) contained in Utah’s State Geographic Information Database (SGID).
 
@@ -24,7 +24,7 @@ The Township areas impacted by change in this updated version are shown on the m
 
 #### Download Options
 
-{: .text-left}
+
 
 GCDB v2.0, as provided to UGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is available for [download]({% link data/cadastre/plss/index.html %}#CadNSDI-downloads).
 

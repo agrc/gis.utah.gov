@@ -19,11 +19,11 @@ I'd like to suggest that there are some aspects of our platform that we can lear
 
 Here are seven common GIS concepts and what we can learn from them.
 
-![GIS Wisdom]({% link images/gis_wisdom.png %}){: .flex .flex--center style="width: 100%; max-width: 350px"}
+![GIS Wisdom]({% link images/gis_wisdom.png %})
 
 ### 1. Versioning
 
-{: .text-left}
+
 
 `resolving conflicts`
 
@@ -41,7 +41,7 @@ Learn more about the [ArcGIS versioning process](https://desktop.arcgis.com/en/a
 
 ### 2. Networks
 
-{: .text-left}
+
 
 `networking`
 
@@ -53,7 +53,7 @@ Learn more about [creating ArcGIS network datasets](https://desktop.arcgis.com/e
 
 ### 3. Extract, Translate, and Load (ETL)
 
-{: .text-left}
+
 
 `being adaptable`
 
@@ -65,7 +65,7 @@ Learn more about [creating your own spatial ETL tools](https://desktop.arcgis.co
 
 ### 4. Open Data
 
-{: .text-left}
+
 
 `sharing`
 
@@ -77,7 +77,7 @@ Explore some of the [existing GIS open data](http://hub.arcgis.com/pages/open-da
 
 ### 5. Editing
 
-{: .text-left}
+
 
 `refinement`
 
@@ -89,7 +89,7 @@ Brush up on some [essential editing vocabulary](https://desktop.arcgis.com/en/ar
 
 ### 6. Domains
 
-{: .text-left}
+
 
 `consistency`
 
@@ -101,7 +101,7 @@ Learn more about [attribute domains](https://pro.arcgis.com/en/pro-app/help/data
 
 ### 7. Topology
 
-{: .text-left}
+
 
 `establishing principles`
 

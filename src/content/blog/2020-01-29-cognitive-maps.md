@@ -15,7 +15,7 @@ I bet you remember where you were on the morning of September 11th, 2001 when yo
 
 True, September 11th was a life-altering event, but our brains function similarly with less eventful memories. For instance, maybe it's a particular bend in a road that triggers a specific conversation, or maybe it's a song that takes you back to a time and place. Regardless of the trigger, our brains are remarkably good at creating spatial connections. In addition to the conversation, your brain stores related content such as geographic location, time of day, and the individuals present. And when you retrieve this memory, you likely retrieve the geographic information as well.
 
-![Network Head]({% link images/network_head.png %}){: .flex .flex--center}
+![Network Head]({% link images/network_head.png %})
 
 Does this concept of a spatial storage and retrieval system sound familiar? In the software world we call it a geographic information system (GIS). Using a GIS, we create and store tabular data, along with its spatial component. The strength of this system is that information can be retrieved by either tabular or geographic queries.
 
@@ -34,11 +34,11 @@ The remainder of this article will explore some of the science behind our intern
 
 ### Mapping and Navigation in the Animal World
 
-{: .text-left}
+
 
 It turns out that humans are not the only creatures on the planet that are spatially aware. Internal mapping and navigation is widely seen throughout the animal world. Instinctually, it's linked to foraging and habitat. This can be seen in birds and mammals when they cache food and dig it up later. Their brains are memorizing locations[^Jabr-2011]. Homing pigeons are a good example of using internal navigation; they can return home after being transported hundreds of miles away. Arctic tern travel even greater distances. Using geolocators, a group of researchers found that these birds migrate a total of 43,000 miles as they travel from the North Pole to the South and back again[^Amos-2010].
 
-Bees take this a step further and communicate their spatial knowledge with others in their hive. Apart from humans, they are thought to be the only creatures known to do this[^Hoxeng-2019]. Using the position of the sun as a datum, they share distance and direction to nearby food sources with other bees[^Frisch-1993]. The Smithsonian has captured this remarkable behavior, which is known as the waggle dance, in this [YouTube clip](https://www.youtube.com/watch?v=LU_KD1enR3Q){:target="\_blank"}.
+Bees take this a step further and communicate their spatial knowledge with others in their hive. Apart from humans, they are thought to be the only creatures known to do this[^Hoxeng-2019]. Using the position of the sun as a datum, they share distance and direction to nearby food sources with other bees[^Frisch-1993]. The Smithsonian has captured this remarkable behavior, which is known as the waggle dance, in this [YouTube clip](https://www.youtube.com/watch?v=LU_KD1enR3Q).
 
 <div class="flex flex--around">
   <figure class="caption">
@@ -49,7 +49,7 @@ Bees take this a step further and communicate their spatial knowledge with other
 
 ### The “Where” in Spatial Awareness
 
-{: .text-left}
+
 
 Research shows that in humans, spatial awareness is linked to a specific region buried deep in the brain called the hippocampus (figure 3). Scientists now know that this seahorse-shaped region of the brain (derived from the Greek words hippos, meaning “horse,” and kampos, meaning “sea monster”) functions as both a map and a memory system. The hippocampus is crucial to many parts of life. It allows us to orient ourselves in space and it gives us a sense of direction. You can think of the hippocampus as the brain’s spatial memory system.
 
@@ -62,13 +62,13 @@ Research shows that in humans, spatial awareness is linked to a specific region 
 
 ### Episodic Memories
 
-{: .text-left}
+
 
 In humans, the hippocampus performs an additional function by looking at experience, time, and place. This unique combination allows us to have what are called episodic memories. These are the memories that are linked to a particular place and time - such as where you were when you heard the news about September 11th. The hippocampus is responsible for retrieving these events from the past. It is thought that this capability advanced in humans during the hunter-gathering days as an extension to the spatial functions found in other animals[^Garfield-2013].
 
 ### Memory Storage and Patient HM
 
-{: .text-left}
+
 
 Much of what we know about the hippocampus and its role in memories can be attributed to a man with no memory at all. As a young boy, Henry Molaison (commonly known as Patient HM) was hit by a car while riding his bike and suffered a brain injury. Soon after that, he began to experience severe epileptic seizures. In 1953, at the age of 27, he decided to undergo experimental brain surgery and have his hippocampus removed. His seizures immediately disappeared, but so did his recent memories.
 
@@ -80,7 +80,7 @@ In addition to a spatial memory system, the brain also contains a remarkable onb
 
 ### Internal Navigation and London Cab Drivers
 
-{: .text-left}
+
 
 Known as ["The Knowledge”](https://tfl.gov.uk/info-for/taxis-and-private-hire/licensing/learn-the-knowledge-of-london), all licensed cab drivers in London are required to memorize the city’s 25,000-plus streets as well as thousands of locations and landmarks. The goal is to instantaneously calculate the quickest route between two locations. This requirement might seem excessive in an age when handheld routing devices are in just about everyone's pocket. But, London’s street network is notorious for being one of the most difficult to navigate. The city's lack of grid-like layout can be a chore for the uninformed driver[^Jacobs-2018].
 
@@ -110,7 +110,7 @@ The London cab driver studies have shown that the hippocampus plays a vital role
 
 ### Alzheimer's and the Hippocampus
 
-{: .text-left}
+
 
 We know that the hippocampus is important for spatial thinking, navigation, and memory creation - and we've seen with Patient HM what happens when it’s completely removed. But, what do we know about the hippocampus when it’s not functioning properly?
 
@@ -124,7 +124,7 @@ Neuroscientist Véronique Bohbot thinks that intervention, focused on executing 
 
 ### The Effects of GNSS/GPS on the Brain
 
-{: .text-left}
+
 
 Again, looking back to the London cab driver findings, the studies show strong activity in the hippocampus when drivers routed themselves based on memory. It makes you wonder how our increasing reliance on GNSS/GPS and turn-by-turn directions affect the overall hippocampal functions.
 
@@ -147,7 +147,7 @@ The brain connections that we make when we explore and navigate our environment 
 
 ### Organizing Life's Experiences
 
-{: .text-left}
+
 
 We now know that our brain is a spatial organ. The hippocampus, in particular, is responsible for mapping, navigation, and memory storage. These functions are linked to additional mechanisms such as episodic and long term memories. Research has shown that when we exercise these functions we see an increase in brain activity. These active neurons not only create new connections but preserve and organize existing ones[^Javadi-et-al-2017].
 
@@ -157,15 +157,15 @@ Neuroscientist Kate Jeffery, who studies cognitive maps, put it well when she sa
 
 ### Explore Cognitive Mapping in a GIS
 
-{: .text-left}
+
 
 Check out this [Colab Python notebook](https://colab.research.google.com/drive/1sla_wi3qDr_LQ_wC49zkrJ3MMUqYuKTq) to explore what the human brain's cognitive mapping system might look like in a software-based Geographic Information System.
 
-![Electric Brain]({% link images/electric_brain.png %}){: .flex .flex--center}
+![Electric Brain]({% link images/electric_brain.png %})
 
 ### Sources
 
-{: .text-left}
+
 
 [^antoniou]: Antoniou, Antonis and Gestalten. Map of the World: The World According to Illustrators and Storytellers. January 2013. [https://famillesummerbelle.typepad.com/fsblog/2013/02/a-map-of-the-world-book.html](https://famillesummerbelle.typepad.com/fsblog/2013/02/a-map-of-the-world-book.html) (accessed Jan 9, 2020)
 [^Fillet-2017]: Fillit, Howard. “Dementia and Alzheimer's Disease: What's the Difference”. [https://www.alzdiscovery.org/news-room/blog/dementia-alzheimers-disease-whats-the-difference](https://www.alzdiscovery.org/news-room/blog/dementia-alzheimers-disease-whats-the-difference) (accessed Jan 12, 2020)

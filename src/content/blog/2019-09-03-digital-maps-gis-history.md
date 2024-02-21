@@ -17,7 +17,7 @@ Take the database, for example: did Herman Hollerith (who we’ll talk about lat
 
 ### Advancements in Mapping Techniques
 
-{: .text-left}
+
 
 To understand the development of GIS through all these coincidental events, let's start back at the days of British colonization. The British had an early interest in mapping and navigation. “Why is that?” you might wonder. Well the British wanted to expand their resources, riches, and power, and having good maps could help them achieve this goal.
 
@@ -42,7 +42,7 @@ These advancements made it possible to create accurate cadastre, land, and natur
 
 ### Spatial Analysis and Map Overlays
 
-{: .text-left}
+
 
 Without the availability of the Ordnance maps and the advancements made through Britain’s general obsession with mapping, the outbreak of cholera in a London neighborhood in 1854 could have done much more damage. But John Snow, a British physician, was able to use those maps and analyze the relationship between cholera deaths and water pumps in order to prove that the water was spreading the epidemic (GIS Geography “The Remarkable History of GIS” 2019). This was innovative in 1854, but, I would argue that place and heritage also played a role. If Snow hadn’t been in Britain during that time, and if Britain hadn’t had so many mapping developments, Snow may have taken a different --- and possibly longer --- path in solving the cholera outbreak.
 
@@ -55,7 +55,7 @@ Without the availability of the Ordnance maps and the advancements made through 
 
 ### The Database
 
-{: .text-left}
+
 
 Now, enter the year 1887 as the USCB is still painfully tabulating the 1880 census. The Bureau knows that in two years the process will begin again --- unless there is a more innovative method to speed it up. Herman Hollerith (sound familiar?) hears about their struggle and he recalls the train conductors. He remembers how they punched patterns on passenger tickets to capture information about the traveler. That memory sparks an idea in his mind that leads him to invent a tabulation machine (USCB “Herman Hollerith” 2018).
 
@@ -76,7 +76,7 @@ Interestingly enough, Hollerith’s company was eventually merged into what we n
 
 ### Canada Geographic Information System
 
-{: .text-left}
+
 
 Jump forward to the twentieth-century and, yet again, problem-solving that led another British-born scholar into exploring map overlays. This is exactly what was on the mind of geographer Roger Tomlinson in 1962 when he struck up a conversation with Lee Pratt (Tomlinson 2012). At the time, Tomlinson was working for an aerial surveying company in Canada, and Pratt was the newly appointed head of the Canadian Land Inventory. As chance would have it, they were seated next to each other on a flight, and they started chatting about natural resources and land management in Canada's vast territory. For Tomlinson, the timing couldn't have been more ideal.
 
@@ -88,7 +88,7 @@ Ultimately, it was this chance encounter between Tomlinson and Pratt that eventu
 
 ### IBM
 
-{: .text-left}
+
 
 The development of CGIS was also when IBM entered the GIS picture: in the mid 1960s IBM was hired to build the CGIS hardware, which consisted of an IBM 360/65 mainframe computer, an interactive terminal, a drum scanner, a digitizer table, and a printing plotter. Paper maps were digitized using the drum scanner and then were given a key coordinate using the digitizer table. Coordinates were stored on punch cards (thanks, Herman Hollerith!) and the map lines were stored on magnetic tape --- at no specific scale. This data was then merged and stored. Depending on the analysis, the technician would translate the request to punch cards, retrieve the corresponding tapes, and the computer would overlay the desired map data. The results were then plotted on a map at the desired scale.
 
@@ -103,7 +103,7 @@ As the system developed, Canadian government administrators started asking the s
 
 ### The Laboratory for Computer Graphics and Spatial Analysis
 
-{: .text-left}
+
 
 Digital mapping was also advancing in the United States in the early 1960s, particularly in the academic community. Making the biggest waves was a group of professors and students at the Laboratory for Computer Graphics and Spatial Analysis at Harvard University (the Lab).
 
@@ -124,7 +124,7 @@ ODYSSEY was a big success for the Lab, but it also put the Lab in a difficult si
 
 ### Environmental Systems Research Institute
 
-{: .text-left}
+
 
 The Environmental Systems Research Institute (ESRI) was established in 1969 and was one of a handful of GIS companies that spawned out of the Lab (others include Intergraph, ComputerVision, and Symercom, however, they all approached GIS from a CAD perspective) (ESRI “History of GIS”). But, it’s interesting to note how chance and timing played into this company's huge success. You can trace ESRI back to the University of Minnesota, where ESRI's founder, Jack Dangermond, was a student exploring digital mapping.
 
@@ -156,13 +156,13 @@ Since the early 1970s, ESRI has expanded from a nonprofit with a staff of 15 to 
 
 ### The Development of National Datasets
 
-{: .text-left}
+
 
 Software advancements were certainly a large piece of the digital-mapping puzzle, but without readily available data, progress in this arena would have been slowed. Fortunately, a few agencies within the US federal government had vested interest and made headway. Two of the front-runners were the USCB and the USGS, and their timing was fitting.
 
 #### US Census Bureau
 
-{: .text-left}
+
 
 Since its inception, the USCB has been tasked with storing and analyzing large datasets. (As you might recall, the USCB was the agency that helped advance the tabulating machine, which eventually morphed into IBM’s first database.)
 
@@ -182,7 +182,7 @@ It's difficult to overstate how important TIGER files were, not only to the 1990
 
 #### USGS
 
-{: .text-left}
+
 
 The USGS was on a similar track converting and generating digital map data.
 
@@ -217,7 +217,7 @@ The USCB and the USGS have both played invaluable roles in advancing GIS. Not on
 
 ### Overlaying the Stories
 
-{: .text-left}
+
 
 The motivation for GIS has varied widely, but most of the field’s innovation grew from academic curiosity and the governmental challenges of looking for solutions with large datasets (Coppock and Rhind 1991, 21–43).
 
@@ -247,7 +247,7 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 
 ### Sources
 
-{: .text-left}
+
 
 - Aguirre, Jessica Camille. “The Unlikely History of the Origins of Modern Maps.” Smithsonian.com. June 2, 2014. Accessed August 19, 2019. https://www.smithsonianmag.com/history/unlikely-history-origins-modern-maps-180951617/.
 

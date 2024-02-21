@@ -20,7 +20,7 @@ Users of [Google's statewide high resolution aerial photography]({% link _posts/
 
 ### WMS vs WMTS
 
-{: .text-left}
+
 
 With two choices of OGC standard-based imagery services to choose from, WMS and WMTS, which should you use? The WMTS protocol should deliver the imagery faster so use it if works on your platform. But, the WMS service is an older standard that may be more maturely implemented within software applications, and is what ESRI users not yet at v10.2 should use.
 
@@ -28,7 +28,7 @@ With two choices of OGC standard-based imagery services to choose from, WMS and 
 
 ### Other items
 
-{: .text-left}
+
 
 Users will find that both services will time out when they are unused for long periods. Refreshing the service in ArcMap should be as easy as opening the ArcCatalog view in ArcMap, and double clicking the service in that view to wake it up. See example at right.
 

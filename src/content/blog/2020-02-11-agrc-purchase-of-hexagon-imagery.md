@@ -17,7 +17,7 @@ UGRC would like to thank our partner agencies, whose support made the original G
 
 The Hexagon high resolution aerial photography will continue the Google Imagery’s work of providing a valuable, detailed, border-to-border view of Utah's landscape that is expected to improve the quality of agency business data, facilitate more productive data sharing, expedite and enhance decision-making, and reduce the necessity of field data collection. As the Hexagon purchase aligns with an existing private sector acquisition effort, the upfront and maintenance costs to the state are significantly lower than the cost of past custom aerial photography missions.
 
-![Hexagon Aerial Imagery]({% link images/HexagonImagery.jpg %}){: .flex .flex--center}
+![Hexagon Aerial Imagery]({% link images/HexagonImagery.jpg %})
 
 Currently, the Hexagon imagery is from 2018 and 2019; the 2018 imagery covers the entire state, and the 2019 flight covers the Wasatch Front area and parts of Washington County. **Note: The Utah service currently available from Discover will change to utilize these two Hexagon services.** Also, in 2021 the statewide 12” service will be replaced with statewide 6” service.
 

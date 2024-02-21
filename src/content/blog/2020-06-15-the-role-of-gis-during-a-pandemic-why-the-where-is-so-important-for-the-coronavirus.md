@@ -18,7 +18,7 @@ These questions led me down a rabbit hole of research into the relationship betw
 
 ### 1) Historically, GIS has a solid track record for helping us understand public health situations.
 
-{: .text-left}
+
 
 As Greg Bunce discusses in his [“Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS” article]({% link _posts/2019-09-03-digital-maps-gis-history.md %}), GIS really made its debut in connection to health when it helped resolve the London cholera epidemic of 1854. John Snow, a British physician, analyzed the relationship between water pumps and cholera cases, and he realized that water was the culprit in the spread of the disease. He made a spatial connection between the pumps and the disease, and that made all the difference in preventing further spread. Even from this early case study, “Mapping was an approach employed both by the officials charged with responding to this or that disease incursion and the medical personnel who struggled to treat those afflicted. . . . Then as well as now, mapping served and serves the science of its day” (Koch 2005, 2).
 
@@ -34,12 +34,12 @@ As evidenced by these situations, GIS has been successful in providing a deeper 
 
 ### 2) GIS helps people navigate through complicated layers of information.
 
-{: .text-left}
+
 
 GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page]({% link data/index.html %}), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
 
 Going back to the [Johns Hopkins’ map](https://coronavirus.jhu.edu/map.html) as an example: on the site’s [Maps & Trends page](https://coronavirus.jhu.edu/data#charts) of the Critical Trends tab, it has a whole list of questions that GIS can help answer.
-![Johns Hopkins Coronavirus Map FAQ page]({% link images/JohnsHopkinsCoronavirusMapFAQs.jpg %}){: .inline-text-right .outline }
+![Johns Hopkins Coronavirus Map FAQ page]({% link images/JohnsHopkinsCoronavirusMapFAQs.jpg %})
 
 To answer these questions, you have to make connections between several layers of data. For instance, to answer the question of “Where are COVID-19 cases increasing?” you’d need to consider information such as the geographic boundaries for each country, the population of each country, the number of cases in the country, and the number of cases in previous weeks in the country. And then you’d need to compare all that information with data from another country, and another country, and another to really get a bigger-picture view of where cases are increasing. If you were to verbally write out this information, it may take several paragraphs to talk about the trends in different countries, especially depending on how many countries you were comparing.
 
@@ -49,7 +49,7 @@ To answer the question of “Where are COVID-19 cases increasing?” Johns Hopki
 
 ### 3) GIS naturally involves intergroup collaboration, which is essential for coronavirus response.
 
-{: .text-left}
+
 
 Collaboration between groups is an essential part of the GIS field, and that’s another reason why GIS could be so important in relation to the coronavirus. Let’s go back to the “Where are COVID-19 cases increasing?” question and apply it on a local Utah level. To answer this question, you might first want to examine Utah counties, and to find out the geographic boundaries of each county, you’d need to work with the state’s county recorders. To learn about the population for each county, you’d be relying on the US Census Bureau. To learn about the number of cases of coronavirus in a county, you might look to the county health department. And so on. And then in Utah, UGRC would be the keeper of all this data, so we’d work with contacts from all of those groups.
 
@@ -63,7 +63,7 @@ In order for any country to effectively respond to the coronavirus, it is essent
 
 ### The Coronavirus and Our Spatial Brains
 
-{: .text-left}
+
 
 Now, all those reasons are valid and important in discussing how and why GIS is so essential during this pandemic. But I also have to wonder though about one more potential reason that we’re so interested in GIS, especially during times of uncertainty: Is spatial information about the coronavirus particularly helpful because our brains are naturally wired to process information spatially and visually? Maybe we’re turning to GIS right now because processing information in that way naturally makes sense to our brains, and when things are uncertain and unpredictable in the world, like they are right now, we turn toward things that are familiar in order to gain a sense of comfort and control.
 
@@ -81,13 +81,13 @@ In fact, as humans, we’ve been communicating through symbols since prehistoric
 
 ### Wrapping Things Up
 
-{: .text-left}
+
 
 Whatever the reason for the current focus and reliance on GIS during this pandemic, I’m glad we have such a great resource to help us process information in a meaningful way. Hopefully GIS can continue to shed light on the current health situation and help us better prepare for whatever the pandemic holds moving forward.
 
 ### Sources
 
-{: .text-left}
+
 
 Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” UGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/]({% link _posts/2020-01-29-cognitive-maps.md %}).
 
@@ -119,7 +119,7 @@ Zalac, Frédéric, and Kris Fleerackers. “Did early humans communicate with ca
 
 ### General Reading/References
 
-{: .text-left}
+
 
 “Allocentric vs. Egocentric Spatial Processing.” Mental Imagery and Human-Computer Interaction Lab. Harvard Medical School Department of Radiology. Accessed June 11, 2020. [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308).
 \*The publications page here: [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11) has some great resources.

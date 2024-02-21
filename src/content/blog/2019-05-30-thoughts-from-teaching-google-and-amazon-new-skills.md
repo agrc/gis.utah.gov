@@ -12,13 +12,13 @@ Developing software for digital assistants is fun and a refreshing change from t
 
 ## Background
 
-{: .text-left }
+
 
 In 2018 UGRC submitted a [proposal](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/proposal.md) for funds from the State of Utah Technology Innovation Program (i.e., Innovation Fund) and was [awarded](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/award.md) funding to experiment with digital assistants. Using GIS with digital assistants was the niche to explore, and we learned a lot more along the way.
 
 ## Getting Started
 
-{: .text-left }
+
 
 We started with the Alexa skill since we had prior [personal](https://github.com/steveoh/alexa-utah-avy-skill) [experience](https://github.com/stdavis/utah-air-quality-alexa-skill) with the ecosystem and we had a few [promotional devices](https://developer.amazon.com/en-US/alexa/alexa-skills-kit/alexa-developer-skill-promotion) that we could test with.
 
@@ -28,7 +28,7 @@ Utah is a Google Drive Enterprise customer and has been for many years. Therefor
 
 ## Development
 
-{: .text-left }
+
 
 ### Debug Cycle
 
@@ -58,7 +58,7 @@ Digital assistants without screens existed for barely one year. Skills can now p
 
 ## Testing
 
-{: .text-left }
+
 
 I really enjoyed the way the ASK CLI allows you to test a skill. Talking to your skill over and over again is bad™, and typing it over and over is **worse**. The ASK CLI supports playing generated [text file recordings](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/recordings/all.template) that direct the conversation in the test. The CLI outputs the Alexa responses and you can visually approve the conversation. I could not find an equivalent in the Google Assistant simulator or actions CLI. The Google nodejs SKD does have a component called `Suggestions` that displays a suggestion chip that users can click instead of typing, and although that was an improvement, it was still not as pleasant as the recordings.
 
@@ -68,7 +68,7 @@ The Google Assistant and Alexa simulators are very laborsaving. They give you sc
 
 ## Resources
 
-{: .text-left }
+
 
 ### Documentation
 
@@ -87,7 +87,7 @@ Alexa also runs "[office hours](https://www.twitch.tv/amazonalexa)" on twitch. I
 
 ## Wrap-Up
 
-{: .text-left }
+
 
 Developing software for digital assistants is fun. I very much enjoyed the developer experience for Alexa, but Google's natural language processing from Dialogflow required less training. I would expect the features from each company to be eventually consistent. One may have it first, but the competition will catch up and surpass. But Google Assistant and Amazon Alexa are both great tools, and I enjoyed my experience working with them.
 
