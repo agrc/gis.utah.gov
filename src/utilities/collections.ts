@@ -21,8 +21,13 @@ export type DecoratedBlogEntry = BlogEntry & {
   };
 };
 
+let blogPostsCache;
 export async function getBlogPosts(): Promise<DecoratedBlogEntry[]> {
-  return (await getCollection('blog'))
+  if (blogPostsCache) {
+    return blogPostsCache;
+  }
+
+  const data = (await getCollection('blog'))
     .filter((post) => post.data.published)
     .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf())
     .map(
@@ -35,6 +40,10 @@ export async function getBlogPosts(): Promise<DecoratedBlogEntry[]> {
         },
       }),
     );
+
+  blogPostsCache = data;
+
+  return data;
 }
 
 export function slugify(text: string): string {
