@@ -1,6 +1,6 @@
 export default {
   properties: {
-    class: 'inline-flex items-center gap-x-1',
+    class: 'inline-flex items-center gap-x-1 flex-wrap',
   },
   content: () => {
     return {
