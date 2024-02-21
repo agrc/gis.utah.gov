@@ -18,7 +18,7 @@ const { name, team, x, tags, email } = Astro.props;
 
 const location = '/src/images/pillar-contact/staff/';
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/staff/*.{svg,png}');
-const authorFilters = await getBlogFilters('author');
+const authorFilters = await getBlogFilters('authors');
 const authorFiltersLookup = authorFilters.reduce((acc, filter) => {
   acc[filter.slug] = filter;
 
@@ -50,18 +50,18 @@ const authorFilter = authorFiltersLookup[slugify(name)];
           )
         }
       </div>
+      {
+        authorFilter?.posts.length > 0 ? (
+          <a class="text-sm" href={`/blog/authors/${authorFilter.slug}`}>
+            authored posts
+          </a>
+        ) : null
+      }
       <div class="text-sm font-semibold leading-6">
         <div class="flex items-center text-base text-zinc-500 dark:text-zinc-300">
           <p class="text-sm font-medium leading-6">{team}</p>
         </div>
       </div>
-      {
-        authorFilter?.posts.length > 0 ? (
-          <a class="text-sm" href={`/blog/authors/${authorFilter.slug}`}>
-            posts ({authorFilter.posts.length})
-          </a>
-        ) : null
-      }
     </div>
     <div
       class="col-span-2 flex flex-row flex-wrap items-end justify-center gap-2 self-center text-xs sm:col-span-1 sm:flex-col sm:gap-0.5"
