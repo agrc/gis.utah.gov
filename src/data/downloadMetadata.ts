@@ -1309,8 +1309,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Avalanche Paths': {
     itemId: '0df199cef1704e5287ae675ee3dbd3bd',
     name: 'Utah Avalanche Paths',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'AvalanchePaths',
+    openSgid: 'geoscience.avalanche_paths',
     layerId: 0,
   },
   'Utah Geologic Veins': {
