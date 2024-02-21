@@ -1183,15 +1183,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Landslide Inventory Polygons': {
     itemId: '3be19aad83a940cfa7bb331b5fbc28c6',
     name: 'Utah Landslide Inventory Polygons',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideInventoryPolygons',
+    openSgid: 'geoscience.landslide_inventory_polygons',
     layerId: 0,
   },
   'Utah Landslide Inventory Mapped Areas': {
     itemId: 'e0ec1e7d0d5c47e388cc86e89928fe92',
     name: 'Utah Landslide Inventory Mapped Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideInventoryMappedAreas',
+    openSgid: 'geoscience.landslide_inventory_mapped_areas',
     layerId: 0,
   },
   'Utah Quaternary Volcanic Flow': {
@@ -1204,22 +1204,22 @@ export const dataPages: DownloadMetadata = {
   'Utah Landslide Compilation Scarps': {
     itemId: 'e22096dacc604d5eb8b2e3c5e21f0a58',
     name: 'Utah Landslide Compilation Scarps',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideCompilationScarps',
+    openSgid: 'geoscience.landslide_compilation_scarps',
     layerId: 0,
   },
   'Utah Landslide Compilation Polygons': {
     itemId: '4698550fd2aa4029bc295f7e0051780e',
     name: 'Utah Landslide Compilation Polygons',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideCompilationPolygons',
+    openSgid: 'geoscience.landslide_compilation_polygons',
     layerId: 0,
   },
   'Utah Landslide Compilation Debris Flow Paths': {
     itemId: 'cda61391c65a4d4aa94a581f6bf57057',
     name: 'Utah Landslide Compilation Debris Flow Paths',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideCompilationDebrisFlowPaths',
+    openSgid: 'geoscience.landslide_compilation_debris_flow_paths',
     layerId: 0,
   },
   'Utah Geologic Formations Line': {
