@@ -3,5 +3,5 @@ import { toString } from 'mdast-util-to-string';
 import getReadingTime from 'reading-time';
 
 export default function getReadingTimeFromMarkdown(markdown: string): string | undefined {
-  return getReadingTime(toString(fromMarkdown(markdown))).text;
+  return getReadingTime(toString(fromMarkdown(markdown))).text.replace(' read', '');
 }
