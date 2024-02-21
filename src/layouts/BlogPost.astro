@@ -1,92 +1,53 @@
 ---
-import FormattedDate from '@components/FormattedDate.astro';
 import type { DecoratedBlogEntry } from '@utils/collections';
 import { slugify } from '@utils/collections';
+import { getDateParts } from '@utils/page';
 
-const {
-  category,
-  author: {display_name: displayName},
-  tags,
-  title,
-  date: pubDate,
-  estimatedReadTime,
-  lastUpdated,
-} = Astro.props as DecoratedBlogEntry['data'];
+const { category, title, date: pubDate, estimatedReadTime, lastUpdated } = Astro.props as DecoratedBlogEntry['data'];
+
+const { year, month, day } = getDateParts(pubDate);
+const lastUpdatedDate = getDateParts(lastUpdated);
 ---
 
-<article class="flex justify-center px-6 pb-16 pt-4 lg:px-0 lg:pt-10 dark:text-zinc-300">
-  <div class="flex max-w-3xl flex-1 flex-col gap-6">
-    <div class="mx-auto max-w-3xl text-center md:max-w-screen-lg">
-      <h1 class="pb-4">{title}</h1>
-      <div
-        class="flex flex-col gap-x-2 border-t border-primary/30 pt-3 text-sm font-medium md:flex-row dark:border-white/30"
-      >
-        <div class="flex justify-center gap-1 text-sm">
-          <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Published</span>
-          <span>·</span>
-          <span class="whitespace-nowrap uppercase">
-            <FormattedDate date={pubDate} style="long" />
-          </span>
-        </div>
-        {
-          lastUpdated && (
-            <div class="flex justify-center gap-1 text-sm">
-              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Last modified</span>
-              <span>·</span>
-              <span class="whitespace-nowrap uppercase">
-                <FormattedDate date={lastUpdated} style="long" />
-              </span>
-            </div>
-          )
-        }
-        <div class="flex justify-center gap-1 text-sm">
-          <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Read time</span>
-          <span>·</span>
-          <span class="whitespace-nowrap">
-            {estimatedReadTime}
-          </span>
-        </div>
-      </div>
-      <div class="flex flex-col gap-x-2 pt-3 text-sm font-medium md:flex-row dark:border-white/30">
-        {
-          !!category ? (
-            <div class="flex justify-center gap-1 text-sm">
-              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Category</span>
-              <span>·</span>
-              <span class="whitespace-nowrap">
-                  <a href={`/blog/categories/${slugify(category)}`}>{category}</a>
-              </span>
-            </div>
-          ) : null
-        }
-      </div>
-      <div class="flex flex-col gap-x-2 pt-3 text-sm font-medium md:flex-row dark:border-white/30">
-        {
-          !!tags ? (
-            <div class="flex justify-center gap-1 text-sm">
-              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Tags</span>
-              <span>·</span>
-              <span class="whitespace-nowrap">
-                {tags.map((tag) => ((<a href={`/blog/tags/${slugify(tag)}`}>{tag}</a><span class="ml-3"></span>)))}
-              </span>
-            </div>
-          ) : null
-        }
-      </div>
-      <div class="flex flex-col gap-x-2 pt-3 text-sm font-medium md:flex-row dark:border-white/30">
-        {
-          !!displayName ? (
-            <div class="flex justify-center gap-1 text-sm">
-              <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Author</span>
-              <span>·</span>
-              <span class="whitespace-nowrap">
-                <a href={`/blog/authors/${slugify(displayName)}`}>{displayName}</a>
-              </span>
-            </div>
-          ) : null
-        }
-      </div>
-    </div>
-    <slot />
+<div class="flex flex-col gap-x-2 border-t border-primary/30 pt-3 text-sm font-medium md:flex-row dark:border-white/30">
+  <div class="flex justify-center gap-1 text-sm">
+    <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Published</span>
+    <span>·</span>
+    <span class="whitespace-nowrap uppercase">
+      {month}
+      {day}, {year}
+    </span>
   </div>
+  {
+    lastUpdated && (
+      <div class="flex justify-center gap-1 text-sm">
+        <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Last modified</span>
+        <span>·</span>
+        <span class="whitespace-nowrap uppercase">
+          {lastUpdatedDate.month} {lastUpdatedDate.day}, {lastUpdatedDate.year}
+        </span>
+      </div>
+    )
+  }
+  {
+    !!category ? (
+      <div class="flex justify-center gap-1 text-sm">
+        <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Category</span>
+        <span>·</span>
+        <span class="whitespace-nowrap">
+          <a href={`/blog/categories/${slugify(category)}`}>{category}</a>
+        </span>
+      </div>
+    ) : null
+  }
+  <div class="flex justify-center gap-1 text-sm">
+    <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Read time</span>
+    <span>·</span>
+    <span class="whitespace-nowrap">
+      {estimatedReadTime}
+    </span>
+  </div>
+</div>
+<article class="space-y-6 overflow-hidden">
+  <slot />
 </article>

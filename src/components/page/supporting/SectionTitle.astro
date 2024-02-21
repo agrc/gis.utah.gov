@@ -8,9 +8,17 @@ interface Props extends Pick<import('@components/page/Section.astro').Props, 'ti
 
 const { title, subTitle, titlePosition = 'inline' } = Astro.props;
 const anchor = createIdFromTitle(title);
+const hasSubTitleSlot = await Astro.slots.render('sub-title');
 ---
 
 <div class:list={titlePosition === 'inline' ? [] : ['mx-auto max-w-prose px-8 pb-6 text-center md:max-w-screen-lg']}>
   <h1 id={anchor}>{title}</h1>
   {subTitle && <p class="mt-2 text-xs uppercase text-primary dark:text-accent" set:html={subTitle} />}
+  {
+    hasSubTitleSlot && (
+      <div class="mt-2 text-xs uppercase text-primary dark:text-accent">
+        <slot name="sub-title" />
+      </div>
+    )
+  }
 </div>
