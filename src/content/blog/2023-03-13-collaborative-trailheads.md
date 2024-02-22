@@ -19,8 +19,6 @@ Trailheads are great examples of this. They receive frequent updates and are gov
 
 ### OpenStreetMap and Collective Stewardship
 
-
-
 At UGRC, we see [OpenStreetMap](https://www.openstreetmap.org/) (OSM) as an ideal platform for managing and maintaining datasets such as trails, trailheads, campgrounds, and a variety of other layers - because who better to steward this data than all of us?
 
 OpenStreetMap (OSM) is a collaborative platform for collectively editing data in real-time. In the case of trailheads, mapping enthusiasts can work side-by-side (so to speak) along the data stewards to keep the data up-to-date.
@@ -28,8 +26,6 @@ OpenStreetMap (OSM) is a collaborative platform for collectively editing data in
 We already have an established OSM workflow for the [Open Source Places SGID layer]({% link data/society/open-source-places/index.html %}). This workflow allows us to source the data directly from OSM. Our goal is to eventually incorporate this collective stewardship model into as many suitable datasets as we can. For now, we have identified [trailheads]({% link data/recreation/trails/index.html %}) as the next suitable SGID layer for this collaborative editing model.
 
 ### Collaborative Trailheads
-
-
 
 The first step is to incorporate the [existing SGID Trailheads](https://opendata.gis.utah.gov/datasets/utah-trailheads/explore) into OSM. Essentially, we need to conflate –or merge– the two datasets to ensure we’re getting the best of both worlds.
 
@@ -50,8 +46,6 @@ Three short videos are linked below that walk you through the map challenge.
 
 ### What’s Next for the Trailheads Dataset?
 
-
-
 Once the map challenge is complete, we’ll then direct all maintenance for the trailheads layer to OSM.
 
 At that point, we will source the SGID Trailheads layer from OSM much like we do with the SGID Open Source Places layer. This involves bringing the OSM data in-house, running a few validations and quality checks, and then serving it through the SGID so it can be consumed as a GIS layer.
@@ -64,9 +58,7 @@ At UGRC, our ultimate goal is to serve relevant, high-quality data that can be u
 
 We hope you’ll join us in this effort.
 
-### Get Involved in the Map Challenge!
-
-
+### Get Involved in the Map Challenge
 
 If you’d like to contribute to the project, you can start by watching our three short how-to videos.
 
@@ -75,8 +67,6 @@ If you’d like to contribute to the project, you can start by watching our thre
 - How to [update an existing OSM trailhead](https://vimeo.com/807723045)
 
 ### Follow Along with the Project
-
-
 
 You can follow along with this project by visiting our [collaborative trailheads GitHub repository](https://github.com/agrc/collaborative-trailheads) or by reaching out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.

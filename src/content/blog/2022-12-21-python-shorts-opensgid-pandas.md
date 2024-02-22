@@ -1,5 +1,5 @@
 ---
-title: "Python Shorts: Loading an Open SGID Layer into pandas"
+title: 'Python Shorts: Loading an Open SGID Layer into pandas'
 author:
   display_name: Jake Adams and Scott Davis
   email: jdadams@utah.gov
@@ -17,8 +17,6 @@ Now that you've got the SGID layer loaded into a dataframe, you can integrate it
 
 ## Requirements
 
-
-
 This code requires three additional libraries besides pandas (or four if you want a spatially-enabled dataframe). These are all pip-installable from [PyPi](https://pypi.org), so they can be used in the vast majority of python environments.
 
 - `psycopg2`: Postgres database access
@@ -27,8 +25,6 @@ This code requires three additional libraries besides pandas (or four if you wan
 - `arcgis` (optional): ArcGIS API for Python with access to Esri's spatially-enabled dataframes
 
 ## The Code
-
-
 
 ```python
 import geopandas as gpd

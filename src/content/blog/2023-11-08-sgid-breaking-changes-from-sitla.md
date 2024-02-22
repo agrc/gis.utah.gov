@@ -6,19 +6,16 @@ author:
 date: 2023-11-08T21:43:59.000Z
 tags:
   - sgid
-category: Uncategorized
+category: Developer
 ---
 
 If you depend on any of the geospatial services from The School and Institutional Trust Lands Administration (SITLA), you might have noticed that the services started having issues on the 5th of October. SITLA worked with Esri to try to resolve the issue but were unable to do so. Fortunately for SITLA, they had a cloud environment available to fill the gap. We were told that this cloud migration was scheduled for next year but when the on-prem solution failed, they had to fast track the migration. There are some notable differences between the on-prem and cloud systems that require user action to migrate from one system to the other. Here is what you need to know.
 
 ### Issue 1
 
-
-
 The first issue to be aware of is that the URL to access any of the services is slightly different.
 
 If the URL you are using from SITLA has `/server/` in it, you will need to migrate.
-
 
 #### The on-prem system
 
@@ -32,12 +29,9 @@ The difference may be difficult to spot, but the on-prem system used `server` wh
 
 ### Issue 2
 
-
-
 The second issue is the on-prem system organized services in folders and the cloud system has all of the services in the root directory. This affects the URL to access any SITLA service that was not already hosted in the root directory.
 
 If the URL you are using from SITLA has `/rest/services/*`, where `*` is anything other than the service name, you will need to migrate.
-
 
 #### The on-prem system
 
@@ -51,12 +45,9 @@ For example, the Land Ownership framework dataset from SITLA was hosted in `/res
 
 ### Issue 3
 
-
-
 The third issue is the naming convention for the services has changed.
 
 If the service you are using from SITLA has `UT_SITLA_*`, where `*` is a category, you will need to migrate.
-
 
 #### The on-prem system
 
@@ -72,12 +63,9 @@ All of the new services and names can be found in SITLA's cloud system [services
 
 ### Issue 4
 
-
-
 The final issue we were able to discover has to do with feature attribute names. The cloud system has all lowercase attribute names.
 
 If you are symbolizing or querying a SITLA service by a field name with capitol letters, you may need to migrate.
-
 
 #### The on-prem system
 
@@ -90,8 +78,6 @@ If you are symbolizing or querying a SITLA service by a field name with capitol 
 Using Land Ownership as an example again, the `OWNER` field is now `owner`. This change originates from a PostgreSQL database convention.
 
 ## Temporary Partial Mitigation
-
-
 
 On the first of November the SITLA team were able to set up a rewrite rule for the Land Ownership layer to restore the connection to clients using the old URL. This stopgap appears to only be effective for the Land Ownership layer and is a temporary solution. **We are told it will be removed by the end of the year**. This means that you may not be experiencing any issues now but it will stop working at the end of the year if you do not migrate when the rewrite rule is removed.
 
