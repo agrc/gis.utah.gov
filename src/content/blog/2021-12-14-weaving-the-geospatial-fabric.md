@@ -19,7 +19,7 @@ category: Uncategorized
 
 It’s been said that it took about [100,000](https://www.historymuseum.ca/cmc/exhibitions/civil/egypt/egca12e.html#:~:text=The%20Greek%20historian%20Herodotus%20was,creates%20a%20very%20stable%20structure.) humans to build the Pyramids of Giza and a [similar number](https://www.peoplesworld.org/article/today-in-labor-history-panama-canal-built-by-75-000-opens/) to build the Panama Canal. Prior to the internet, large-scale collaboration is generally thought to be limited to that number. Any more, and it became difficult to manage. What made these projects successful is that they were well-organized and that they adhered to a set of standards. Today we are able to collaborate with an infinite number of people, however, organization and standards are still limiting factors.
 
-![Weaving the Fabric]({% link images/weaving_the_fabric.png %})
+![Weaving the Fabric](../../images/pillar-blog/2021-12-14-weaving-the-geospatial-fabric/weaving_the_fabric.png)
 
 
 ### Geospatial Collaboration
@@ -84,5 +84,5 @@ Our goal is to efficiently weave authoritative data together in a timely manner 
 If you would like to learn more about GISAC or one of its five subcommittees, including the Survey and Mapping Committee mentioned earlier, please reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.gisac text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.
 
-![SGID Hexagon Globe]({% link images/hex_globe_sgid.png %})
+![SGID Hexagon Globe](../../images/pillar-blog/2021-12-14-weaving-the-geospatial-fabric/hex_globe_sgid.png)
 

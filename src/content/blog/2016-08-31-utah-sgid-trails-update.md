@@ -25,4 +25,4 @@ To access the data, visit the [trails data page]({% link data/recreation/trails/
 UGRC will gladly integrate additional trails data that can be provided in a digital map format. Please send contributions {{ contact }}
 
 _Statewide trails_
-![Statewide Trails Data]({% link images/StatewideTrails.png %})
+![Statewide Trails Data](../../images/pillar-blog/2016-08-31-utah-sgid-trails-update/statewidetrails.png)

@@ -14,7 +14,7 @@ tags:
 category: SGID Blog
 ---
 
-There's an exciting new data layer that has been recently [added](https://github.com/agrc/porter/issues/180) to the State Geographic Information Datasource (SGID): [Open Source Places]({% link data/society/open-source-places/index.html %}). This is a brand-new offering that is created from open source data and is intended to represent places of interest in the state of Utah. ![OpenSourcePlaces]({% link images/map-poi-256.png %} "https://viglino.github.io/font-gis/?q=poi&fg=map-poi") These may include businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, car dealerships, etc., etc., …almost anything that you can find in OpenStreetMap (OSM). There are over 23,000 features in the data, and the best part of all? You can make updates and contribute directly to this layer through [OpenStreetMap](http://openstreetmap.org)! (more on that later)
+There's an exciting new data layer that has been recently [added](https://github.com/agrc/porter/issues/180) to the State Geographic Information Datasource (SGID): [Open Source Places](/images/404.png "https://viglino.github.io/font-gis/?q=poi&fg=map-poi") These may include businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, car dealerships, etc., etc., …almost anything that you can find in OpenStreetMap (OSM). There are over 23,000 features in the data, and the best part of all? You can make updates and contribute directly to this layer through [OpenStreetMap](http://openstreetmap.org)! (more on that later)
 
 > UGRC's creation of the Utah Open Source Places dataset does not imply endorsement by, or affiliation with, the OpenStreetMap Foundation
 
@@ -24,7 +24,7 @@ There's an exciting new data layer that has been recently [added](https://github
 
 All kinds! There are businesses, restaurants, churches, schools, banks, hotels, viewpoints, attractions, and more. Take a look at this chart showing the counts of the 25 most popular types of locations.
 
-![Open Source Places Feature Counts]({% link images/os_counts.png %} "Open Source Places Feature Counts")
+![Open Source Places Feature Counts](/images/404.png "Open Source Places Feature Counts")
 
 ### How can it be used?
 
@@ -40,7 +40,7 @@ It's pretty easy, really. All you need to do is create a free [OSM account](http
 
 You can get involved in the OSM community by checking out upcoming events on the [OSM Calendar](https://osmcal.org/?in=United%20States). The calendar will list events across the US, including those right here in Utah. The [OSM Slack community](https://slack.openstreetmap.us/) is also open to anyone, with a specific `#local-utah` channel for users and events in the state.
 
-![Epic Handshake]({% link images/os_handshake.png %} "Epic Handshake")
+![Epic Handshake](/images/404.png "Epic Handshake")
 
 ### How does it differ from other SGID data?
 

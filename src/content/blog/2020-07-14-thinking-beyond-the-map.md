@@ -13,7 +13,7 @@ category: Uncategorized
 
 If you’re reading this post, you’re already aware that geospatial technology (a.k.a. GIS) has become an essential part of our daily lives. Its capabilities extend from small-scale phone applications all the way up to multibillion dollar business systems, including big tech, insurance, intel and healthcare industries, just to name a few. As a result, the distinction between information technology and GIS is fading fast. This is exciting because as geospatial technology goes mainstream, we are seeing a wider array of uses for it - and often, the map is nowhere to be seen. It’s the invisible geospatial data and intelligence that is driving these systems.
 
-![Location drives the system]({% link images/geospatial.png %})[^location]
+![Location drives the system](../../images/pillar-blog/2020-07-14-thinking-beyond-the-map/geospatial.png)[^location]
 
 
 ### Where's the map?
@@ -26,7 +26,7 @@ GIS now plays an integral part in many voting systems. Many election departments
 
 Another example of where geospatial technology is predominant is on our personal and voice-enabled devices. On these platforms, the map is often complementary if shown at all. This is particularly true as we build more complex applications and ‘skills’ that allow us to more naturally interact with them. For example, think about the question, “What’s the weather today?” In this case, we need to know the device’s location as well as the nearest weather station. GIS handles the details, but ultimately we’re only concerned with getting the forecast.
 
-![Voice queries]({% link images/voice-queries.png %})[^voice]
+![Voice queries](../../images/pillar-blog/2020-07-14-thinking-beyond-the-map/voice-queries.png)[^voice]
 
 
 There are countless other questions that GIS can help answer: What day is my garbage pickup? What is the air quality today? Where am I? GIS is the engine that processes these queries, but the desired results are text based. For instance, to answer that last example question (i.e., Where am I?), reverse geocoding would return a human-readable civic address.
@@ -37,7 +37,7 @@ There are countless other questions that GIS can help answer: What day is my gar
 
 The use of GIS continues to evolve, and the benefits of the technology are becoming more ingrained in what we come to expect as “normal.” As systems become more complex, the next wave of geospatial applications will increasingly consume data from multiple sources in a variety of formats. In addition to location, an application might pull data from the nearest weather service; the public alert system (e.g., for information about road closures, local events, and natural hazards); and our personal data, such as average walk speed, travel patterns, and calendars and pictures. Additionally, these applications will incorporate artificial intelligence and machine learning “on-the-fly” to interpret features on the ground, such as the existence of restrooms at a park or the location and density of shade trees.
 
-![What's next in geospatial?]({% link images/geospatial-whats-next.png %})[^geospatialnext]
+![What's next in geospatial?](../../images/pillar-blog/2020-07-14-thinking-beyond-the-map/geospatial-whats-next.png)[^geospatialnext]
 
 
 Putting this all together, it's easy to envision a dialogue with a device that might sound something like this...
@@ -54,7 +54,7 @@ As convenient as this sounds, this concept teeters between creepy and cool. Ulti
 
 Geospatial data is now more important than ever. It’s the bridge between GIS professionals and countless other industries. It’s the foundation that allows us to work together and speak the same language. A map, whether it’s present or not, is a cartographic representation of the data. But, it’s the data itself that connects us and powers our complex solutions.
 
-![location data]({% link images/location-data.png %})[^locationdata]
+![location data](../../images/pillar-blog/2020-07-14-thinking-beyond-the-map/location-data.png)[^locationdata]
 
 
 It's been said that “data is the new oil”, but I would add that “data is the oil to the engine”[^bhageshpur],[^economist],[^toonders]. This makes it critical that we, as a GIS community, create quality data. The data we create today will be used to solve tomorrow's problems, and successful solutions depend on quality data.
@@ -65,7 +65,7 @@ It's been said that “data is the new oil”, but I would add that “data is t
 
 As geospatial data and services become more widely used, GIS professionals should see this as an opportunity to reach out to our diverse communities and pave the path forward together. In doing so, we should strive to reach the following goals:
 
-![Collaboration]({% link images/collaboration.jpg %})[^collaboration]
+![Collaboration](../../images/pillar-blog/2020-07-14-thinking-beyond-the-map/collaboration.jpg)[^collaboration]
 
 
 - Bridge the Gap between IT and GIS
@@ -97,7 +97,7 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 
 
 
-![UGRC supports geospatial]({% link images/agrc-supports-geospatial.png %})[^tribolet]
+![UGRC supports geospatial](../../images/pillar-blog/2020-07-14-thinking-beyond-the-map/agrc-supports-geospatial.png)[^tribolet]
 
 
 #### Links related to UGRC's efforts

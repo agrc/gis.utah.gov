@@ -16,7 +16,7 @@ Information Technology Manager
 
 #### (So what exactly do you do?)
 
-![Nathan in his new office habitat]({% link images/Kota.png %})
+![Nathan in his new office habitat](../../images/pillar-blog/2018-09-17-meet-new-agrc-staff/kota.png)
 
 It’s a mix of project and personnel management and everything in between. On a daily basis, I communicate with people from various Utah state agencies, local governments, and non-governmental entities about their GIS needs and how we can help address them. I work to build an understanding of those needs so I can define specific requirements that guide UGRC staff through project development. Then I ensure that our staff have the time and technology resources to produce quality deliverables for our clients, as well as to meet our internal needs. I also work with other DTS staff to ensure that things run smoothly so that UGRC staff can do their work and not be encumbered by bureaucratic procedures or processes. I attend a lot of meetings, and, ultimately, I ensure that the UGRC staff that I’m responsible for get their paychecks (ha!).
 

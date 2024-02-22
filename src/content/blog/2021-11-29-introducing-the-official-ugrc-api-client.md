@@ -17,7 +17,7 @@ Since the creation of the [UGRC API](https://api.mapserv.utah.gov) over 10 years
 
 The official [UGRC API client](https://github.com/agrc/api-client) is now available to everyone! This cross-platform desktop application carefully guides you through your geocoding tasks. We analyzed the data from our other clients and made great improvements to the user experience. We think this is the best API client we have ever created. Go [download](https://github.com/agrc/api-client/releases) the official UGRC API Client right now for [MacOS]({% link data/address-geocoders-locators/index.html %}#OfficialClient) or [Windows]({% link data/address-geocoders-locators/index.html %}#OfficialClient) and start geocoding.
 
-![first screen]({% link images/api-client/client.png %})
+![first screen](../../images/pillar-blog/2021-11-29-introducing-the-official-ugrc-api-client/client.png)
 
 
 ## A few highlights we are proud of
@@ -30,5 +30,5 @@ The official [UGRC API client](https://github.com/agrc/api-client) is now availa
 
 There are many other improvements compared to our other desktop clients. You'll have to [download](https://github.com/agrc/api-client/releases) and install the app to see them for yourself. And we are not yet finished. We have plenty of [new features](https://github.com/agrc/api-client/issues) planned for this client that you will not want to miss.
 
-![UGRC API Logo]({% link images/api-client/web_api_logo.png %})
+![UGRC API Logo](../../images/pillar-blog/2021-11-29-introducing-the-official-ugrc-api-client/web_api_logo.png)
 

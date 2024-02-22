@@ -22,7 +22,7 @@ We were most excited to start this process and make improvements to the Terrain 
 - Water related land use agricultural areas
 - ArcGIS Pro symbology
 
-![New Terrain base map]({% link images/new_terrain.png %})
+![New Terrain base map](../../images/pillar-blog/2023-03-02-basemap-updates/new_terrain.png)
 
 
 The version 2 Terrain base map tiles are set to be published in the coming weeks and will replace the existing tiles. If you have connections to the v1 Terrain base map in a web, ArcMap, or Pro project, the newly styled tiles will start to display after the switch is made. Version 2 will use the same connection url and the version 1 symbology will no longer be accessible. Since the style of the v2 Terrain base map is similar to, but different than v1, overlaid layer symbology may need to be adjusted to visually match the new symbology.

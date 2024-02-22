@@ -15,7 +15,7 @@ I bet you remember where you were on the morning of September 11th, 2001 when yo
 
 True, September 11th was a life-altering event, but our brains function similarly with less eventful memories. For instance, maybe it's a particular bend in a road that triggers a specific conversation, or maybe it's a song that takes you back to a time and place. Regardless of the trigger, our brains are remarkably good at creating spatial connections. In addition to the conversation, your brain stores related content such as geographic location, time of day, and the individuals present. And when you retrieve this memory, you likely retrieve the geographic information as well.
 
-![Network Head]({% link images/network_head.png %})
+![Network Head](../../images/pillar-blog/2020-01-29-cognitive-maps/network_head.png)
 
 Does this concept of a spatial storage and retrieval system sound familiar? In the software world we call it a geographic information system (GIS). Using a GIS, we create and store tabular data, along with its spatial component. The strength of this system is that information can be retrieved by either tabular or geographic queries.
 
@@ -27,7 +27,7 @@ The remainder of this article will explore some of the science behind our intern
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/place_experiences.png %}" alt="Place Experiences" loading="lazy" />
+    <img class="caption__image" src="../../images/pillar-blog/2020-01-29-cognitive-maps/place_experiences.png" alt="Place Experiences" loading="lazy" />
     <figcaption class="caption__text">Place Experiences (London Map from "Map of the World: The World According to Illustrators and Storytellers" 2013)</figcaption>
   </figure>
 </div>
@@ -42,7 +42,7 @@ Bees take this a step further and communicate their spatial knowledge with other
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/waggle_dance.png %}" alt="Waggle Dance" loading="lazy" />
+    <img class="caption__image" src="../../images/pillar-blog/2020-01-29-cognitive-maps/waggle_dance.png" alt="Waggle Dance" loading="lazy" />
     <figcaption class="caption__text">The Waggle Dance (Wikimedia Commons CC BY-SA 2.5)</figcaption>
   </figure>
 </div>
@@ -55,7 +55,7 @@ Research shows that in humans, spatial awareness is linked to a specific region 
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/hippocampus.png %}" alt="The Hippocampus" loading="lazy" />
+    <img class="caption__image" src="../../images/pillar-blog/2020-01-29-cognitive-maps/hippocampus.png" alt="The Hippocampus" loading="lazy" />
     <figcaption class="caption__text">The Brain’s Hippocampus (Fillit 2017)</figcaption>
   </figure>
 </div>
@@ -86,7 +86,7 @@ Known as ["The Knowledge”](https://tfl.gov.uk/info-for/taxis-and-private-hire/
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/grid_like_street_networks.png %}" alt="Street Network Orientation" loading="lazy" />
+    <img class="caption__image" src="../../images/pillar-blog/2020-01-29-cognitive-maps/grid_like_street_networks.png" alt="Street Network Orientation" loading="lazy" />
     <figcaption class="caption__text">The Complexity of Street Networks ( <a href="https://bigthink.com/strange-maps/charlotte-nc-has-americas-messiest-street-grid">Jacobs 2018</a> )</figcaption>
   </figure>
 </div>
@@ -99,7 +99,7 @@ Maguire’s study observed the drivers for four years as they prepared for the �
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/london_iconic_cabs.png %}" alt="London’s Black Cabs" loading="lazy" />
+    <img class="caption__image" src="../../images/pillar-blog/2020-01-29-cognitive-maps/london_iconic_cabs.png" alt="London’s Black Cabs" loading="lazy" />
     <figcaption class="caption__text">London’s Iconic Black Cabs (<a href="https://www.ft.com/content/ccdde2f0-c0d0-11e4-876d-00144feab7de">Financial Times</a>)</figcaption>
   </figure>
 </div>
@@ -130,7 +130,7 @@ Again, looking back to the London cab driver findings, the studies show strong a
 
 <div class="flex flex--around">
   <figure class="caption">
-    <img class="caption__image" src="{% link images/gnss_earth.png %}" alt="GNSS Constellations" loading="lazy" />
+    <img class="caption__image" src="../../images/pillar-blog/2020-01-29-cognitive-maps/gnss_earth.png" alt="GNSS Constellations" loading="lazy" />
     <figcaption class="caption__text">GNSS Constellations ( <a href="https://www.researchgate.net/figure/All-current-and-planned-GNSS-core-constellations-and-augmentation-systems-This_fig4_323245224">Tyler Reid, Research Gate</a>)</figcaption>
   </figure>
 </div>
@@ -161,7 +161,7 @@ Neuroscientist Kate Jeffery, who studies cognitive maps, put it well when she sa
 
 Check out this [Colab Python notebook](https://colab.research.google.com/drive/1sla_wi3qDr_LQ_wC49zkrJ3MMUqYuKTq) to explore what the human brain's cognitive mapping system might look like in a software-based Geographic Information System.
 
-![Electric Brain]({% link images/electric_brain.png %})
+![Electric Brain](../../images/pillar-blog/2020-01-29-cognitive-maps/electric_brain.png)
 
 ### Sources
 

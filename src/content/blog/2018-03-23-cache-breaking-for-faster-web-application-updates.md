@@ -16,7 +16,7 @@ Recently, the URL changed for one of the map services we use in several of our a
 
 Here's an example of a request for the main JS file for our application:
 
-![screenshot of headers]({% link images/cache_headers.png %})
+![screenshot of headers](../../images/pillar-blog/2018-03-23-cache-breaking-for-faster-web-application-updates/cache_headers.png)
 
 Notice the "`(from disk cache)`" next to the status code? That means that the browser wasn't even making a request to the server for this file. This is really great for speeding up the loading of the application, but it's not so great when you're trying to get updates to users' browsers. The problem with this request is that because it doesn't specify the `Cache-Control` or `Expires` header, the browser is left playing a guessing game about how long it should cache the resource. The length of time a browser will cache a resource can vary between browsers, so, in general, going along with this guessing game is a bad idea. But we also don't want to completely disable caching either&mdash;it can make a huge difference on page load speed. (Google's Web Fundamentals site has [a really great article on this subject](https://web.dev/http-cache/). This article not only helped me understand the problem, it gave me direction on a solution.)
 
@@ -26,7 +26,7 @@ What if we could cache the majority of our application code to keep it loading f
 
 Here's an example of new headers for this file:
 
-![screenshot of headers]({% link images/index_headers.png %})
+![screenshot of headers](../../images/pillar-blog/2018-03-23-cache-breaking-for-faster-web-application-updates/index_headers.png)
 
 "`Cache-Control: no-cache`" directs the browser to always check the server for a new version of this file. The bulk of the code for our applications is built in to the JS and CSS files. For these files, I added a time stamp to the request (e.g., `/dojo/dojo.js?rel=1519311093828`). This time stamp, implemented via [grunt-cache-breaker](https://github.com/shakyShane/grunt-cache-breaker), is changed each time the application is built. And because browsers cache each resource by its unique URL, when the URL to a resource is changed, the browser will instantly request a new version from the server. This means no more wondering whether my users are getting updates!
 
@@ -34,7 +34,7 @@ _**Bonus tip**_: The [`ETag`](https://developer.mozilla.org/en-US/docs/Web/HTTP/
 
 Here's an example of new headers for the main JavaScript file for the application:
 
-![screenshot of headers]({% link images/better_headers.png %})
+![screenshot of headers](../../images/pillar-blog/2018-03-23-cache-breaking-for-faster-web-application-updates/better_headers.png)
 
 Once I decided on the headers that I wanted, configuring our [IIS web server](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/staticcontent/clientcache) was [fairly straightforward](https://github.com/agrc/deq-enviro/blob/c11865a477be1d5970c457636d9c738df58483e0/_src/web.config). Here's an example of a commit that implements this entire solution: [https://github.com/agrc/deq-spills/commit/c396cca4f7fc906fd5f965888c0a992b5ae0b9df](https://github.com/agrc/deq-spills/commit/c396cca4f7fc906fd5f965888c0a992b5ae0b9df).
 

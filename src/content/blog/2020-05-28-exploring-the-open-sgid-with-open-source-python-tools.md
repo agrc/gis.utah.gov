@@ -77,7 +77,7 @@ counties = gpd.GeoDataFrame.from_postgis(sql, con, geom_col='shape')
 counties.plot(figsize=(10, 6), color='white', edgecolor='black')
 ```
 
-[![Utah County Boundaries]({% link images/EMN_20200526_counties_plot.png %} "Utah County Boundaries")]({% link images/EMN_20200526_counties_plot.png %})
+[![Utah County Boundaries](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_counties_plot.png "Utah County Boundaries")](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_counties_plot.png)
 
 ### EXAMPLE 2: Davis County Address Points by Zip Code
 
@@ -110,7 +110,7 @@ plt.title('Davis County Address Points')
 plt.show()
 ```
 
-[![Davis County Address Points]({% link images/EMN_20200526_addpts_plot.png %} "Davis County Address Points")]({% link images/EMN_20200526_addpts_plot.png %})
+[![Davis County Address Points](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_addpts_plot.png "Davis County Address Points")](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_addpts_plot.png)
 
 ### EXAMPLE 3: Utah Faults Longer than One Mile
 
@@ -141,7 +141,7 @@ plt.title('Utah Faults > 1 Mile')
 plt.show()
 ```
 
-[![Utah Faults > 1 Mile]({% link images/EMN_20200526_faults_plot.png %} "Utah Faults > 1 Mile")]({% link images/EMN_20200526_faults_plot.png %})
+[![Utah Faults > 1 Mile](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_faults_plot.png "Utah Faults > 1 Mile")](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_faults_plot.png)
 
 ## EXAMPLE 4: Libraries in State Senate District 24
 
@@ -175,7 +175,7 @@ plt.title('Libraries in Utah Senate District 24')
 plt.show()
 ```
 
-[![Libraries in Utah Senate District 24]({% link images/EMN_20200526_libraries_plot.png %} "Libraries in Utah Senate District 24")]({% link images/EMN_20200526_libraries_plot.png %})
+[![Libraries in Utah Senate District 24](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_libraries_plot.png "Libraries in Utah Senate District 24")](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_libraries_plot.png)
 
 That's it! This brief tutorial has shown a few different ways to gather and analyze data from the Open SGID with the psycopg2 and GeoPandas libraries. Hopefully it was helpful and will spark your interest in both the Open SGID and using open source Python tools.
 

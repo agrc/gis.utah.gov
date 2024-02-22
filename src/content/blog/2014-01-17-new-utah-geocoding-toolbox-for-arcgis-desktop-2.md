@@ -19,7 +19,7 @@ This custom geocoding toolbox allows ArcGIS users to obtain geographic coordinat
 
 While the geocoding endpoint was built primarily for web applications it also provides value as a toolbox in ArcGIS, as it uses current local data and solves for some common shortcomings with stock geocoding approaches by:
 
-![geocoding toolbox]({% link images/geocodingtoolbox.png %})
+![geocoding toolbox](/images/404.png)
 
 - using hierarchical street name and address coordinate system aliasing
 - use of either zip codes or place names as zones
@@ -39,4 +39,4 @@ The geocoding tool will produce as output a `.csv` file with the input unique id
 
 Users can view/edit the python code associated with the geocoding toolbox by right clicking on the script and selecting 'Edit'.
 
-![tool screenshot]({% link images/geocodetoolbox.png %})
+![tool screenshot](/images/404.png)

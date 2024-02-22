@@ -33,4 +33,4 @@ The projections datasets were created using the Real Estate Market Model (REMM),
 
 If you're looking to learn more about these datasets, this [metadata doc](https://docs.google.com/document/d/1kgaSewcLy8WIh0BzjwDqNF_3h0R9FN_rzraxoXRa5C8/edit?usp=sharing) is your friend.
 
-![Projected household density in 2050]({% link images/ProjectedHouseholdDensity.png %})
+![Projected household density in 2050](/images/404.png)

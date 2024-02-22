@@ -14,7 +14,7 @@ published: false
 category: Uncategorized
 ---
 
-[![SL Co Municipal Changes]({% link images/MunicpalBoundaries2016Updates.png %} "view high res usage map")]({% link downloads/MunicpalBoundaries2016Updates.pdf %})
+[![SL Co Municipal Changes](/images/404.png "view high res usage map")]({% link downloads/MunicpalBoundaries2016Updates.pdf %})
 
 Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download]({% link data/boundaries/citycountystate/index.html %}) and listed below.
 

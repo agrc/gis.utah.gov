@@ -11,7 +11,7 @@ category: SGID Blog
 
 In today's fast-paced and interconnected world, GIS data are a key part of decision making and provide the backbone of innovation and progress. These roles demand high quality data with a methodical [data creation and maintenance strategy](/blog/2018-02-05-sgid-data-lifecycle) that makes it easy on you when data are added, removed, or changed. We are excited to share our latest efforts to provide consistent and reliable access to our high-quality SGID data.
 
-![SGID Data lifecycle]({% link images/SGID_lifecycle.jpg %})
+![SGID Data lifecycle](../../images/pillar-blog/2023-09-05-making-the-best-of-change-with-porter/sgid_lifecycle.jpg)
 
 
 ## Dealing with Deprecations
@@ -46,7 +46,7 @@ How can we update the schema without creating headaches for you?
 
 The updated process was created using the collective knowledge and experience from everyone in our office. It will allow everyone to plan ahead instead of reacting to breaking changes. It will provide more flexibility to migrate on your schedule instead of having to be ready on our arbitrary data change day, and it will allow us to use the most descriptive table names to continue to make data easy to find. The process is best described with a picture:
 
-![Porter GDL]({% link images/Porter-GDL.png %})
+![Porter GDL](../../images/pillar-blog/2023-09-05-making-the-best-of-change-with-porter/porter-gdl.png)
 
 
 Let's use `roads` as an example. When the porter issue is opened and the new data is ready, it will be loaded into the SGID with an `_next` suffix as `roads_next`. This dataset will contain the new schema and data for the lifetime of the change period. At the same time, the existing table will be copied and added with the `_deprecated` suffix. The existing table, `roads`, will remain unchanged for the first half of the process.
