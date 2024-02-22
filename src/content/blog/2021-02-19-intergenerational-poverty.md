@@ -13,8 +13,6 @@ category: Uncategorized
 
 ### Poverty and Place
 
-
-
 We now know that poverty and place are connected. Numerous [studies](https://www.nytimes.com/2015/05/04/upshot/an-atlas-of-upward-mobility-shows-paths-out-of-poverty.html) point to evidence showing that place matters a great deal to an individual’s economic outlook. This is particularly true for children.
 
 [Research](http://www.equality-of-opportunity.org/images/nbhds_exec_summary.pdf) shows that children growing up in poverty are more likely to remain in poverty, but children who move to neighborhoods with more opportunity (particularly before their teenage years) have a much better chance of breaking the cycle.
@@ -26,8 +24,6 @@ While it might be possible for some families to relocate to better areas, it’s
 Ultimately, the goal is to provide residents a viable path to upward economic mobility. Generally speaking, this includes access to quality schools, healthcare, mixed housing, and sustainable jobs. Services such as safe and reliable transportation also play a major role.
 
 ### GIS as a Community Tool
-
-
 
 [Identifying areas](https://www.nytimes.com/interactive/2015/05/03/upshot/the-best-and-worst-places-to-grow-up-how-your-area-compares.html) in the community that provide or lack these services is an essential step to creating a path forward. Geographic information systems (GIS) are well suited for this task. Using GIS, we are able to visualize the data as layers in a map. Combining the layers into one system allows us to spatially analyze the data together and ask questions such as “What areas in our community are best suited for a new charter school?”, or “Based on recent growth, where do we need to expand healthcare and transit services?”.
 

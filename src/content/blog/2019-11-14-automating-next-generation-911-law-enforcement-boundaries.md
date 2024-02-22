@@ -18,15 +18,11 @@ UGRC has created a Python script for law enforcement boundaries that automatical
 
 ## Background
 
-
-
 NG911 will change the paradigm for emergency call-routing from a table-based system to a GIS-based system. With NG911, each 911 call will be registered as a geographic point based on the location (i.e., latitude and longitude) of the cell phone or the address of the landline from which the call originates. Once that geographic point is determined, NG911 can determine which dispatch center, or public safety answering point (PSAP), boundary the point falls within, and the call can be routed appropriately. As a result, the GIS data informing the NG911 system is critical for ensuring that calls are routed to the correct PSAP. The new internet-based network infrastructure will also provide additional GIS-based information to the PSAP when the call is delivered. This information will include a recommendation on which agencies (i.e., which city’s/county’s law enforcement, fire, or emergency medical service agencies) should be dispatched according to the call's geographic location.
 
 In order to facilitate Utah's transition to the NG911 system, UGRC is preparing statewide GIS data sets that will drive the call-routing and agency recommendations. Although the transition is still many months away, we are already working on preparing the GIS data. The emergency service boundaries will need to be accurate, with no gaps or overlaps, to ensure that every location has appropriate and unambiguous responding agency recommendations.
 
 ## Python Script
-
-
 
 With that information in mind, let's get back to UGRC's Python script. Our new script will automatically build jurisdiction polygons based on other boundaries that are maintained in the SGID (e.g., counties, municipalities). Police departments generally cover their own municipal boundaries, while county sheriff's offices generally cover the rest of the county land that doesn't belong to a municipality. However, not all municipalities have their own police department, and some police departments cover multiple municipalities. Further, there are unique law enforcement agencies that aren't associated with either county or municipal boundaries (e.g., Ute tribal police). Each of these nuances is handled by the Python script, which references external files that list which police departments cover which municipalities or contain static boundaries for the unique law enforcement agencies.
 
