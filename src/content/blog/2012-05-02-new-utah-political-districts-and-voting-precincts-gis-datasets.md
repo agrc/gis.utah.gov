@@ -21,8 +21,8 @@ category: SGID Blog
 The new political district boundaries, originally formed from 2010 Census Block files have been adjusted by UGRC, working together with the Utah Legislature, the Lt. Governor's Elections Office and the County Clerks' offices to make recommendations that increased the geographic accuracy and ease of use in the elections process. Legislation to make recommended minor changes to the political districts changes was passed by the Legislature during the 2013 General Session and signed into law by the Governor.
 
 <figure class="caption caption--right">
-  <a href="{% link images/political12.png %}">
-    <img class="caption__image" title="Political and Precinct Boundaries sample" src="{% link images/political12-300x261.png %}" />
+  <a href="deleted">
+    <img class="caption__image" title="Political and Precinct Boundaries sample" src="deleted" />
   </a>
   <figcaption class="caption__text">Political and Precinct Boundaries</figcaption>
 </figure>

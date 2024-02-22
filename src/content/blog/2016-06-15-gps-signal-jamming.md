@@ -13,7 +13,7 @@ GPS signals in the Western US may be **jammed** due to testing conducted by the 
 
 Users of [TURN GPS]({% link data/cadastre/turn-gps/index.md %}) and other GPS services are advised to pay careful attention for any GPS outages or anomalies on these dates and times. **Please try to schedule critical GPS usage on alternative dates**.
 
-![GPS Jamming Affected Locations]({% link images/GPS_Jamming_Map.png %})
+![GPS Jamming Affected Locations](deleted)
 
 Please feel free to share your findings with the State of Utah UGRC.
 

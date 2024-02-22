@@ -10,7 +10,7 @@ published: false
 category: Uncategorized
 ---
 
-<p><img src="{% link images/TURNGPS_MapsOnTheHill_Poster.jpg %}" align="right" alt="" title="TURNGPS_MapsOnTheHill_Poster" width="387" height="534" class="inline-text-left" />In 2005, the Utah Legislature, recognizing the need to support highly accurate GPS applications for surveying, engineering, construction, and GIS data<br />
+<p><img src="deleted" align="right" alt="" title="TURNGPS_MapsOnTheHill_Poster" width="387" height="534" class="inline-text-left" />In 2005, the Utah Legislature, recognizing the need to support highly accurate GPS applications for surveying, engineering, construction, and GIS data<br />
 collection, passed into law UCA 63F-1-509 to fund the initial build-out of a real time GPS base station network. </p>
 <p><strong>UCA 63F-1-509:</strong><br />
 • Created the Statewide Global Positioning Reference Network to improve the quality of geographic information system data and the productivity, efficiency, and cost-effectiveness of government services;<br />

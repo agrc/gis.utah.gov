@@ -21,7 +21,7 @@ I was curious to see what we could come up with during a more formal interview, 
 
 We exchange our greetings via Google Hangouts Meet, the new company watering hole during the coronavirus work-from-home situation. I see books and cars on a shelf in the background and a chain of red paper birds hanging from the ceiling. “I like your office,” I tell him.
 
-![Greg Bunce photo]({% link images/GregBunce_20200518.jpg %})
+![Greg Bunce photo](deleted)
 
 He laughed. “It’s my son’s room.”
 

@@ -11,7 +11,7 @@ category: GPS-surveyor
 
 The Utah Reference Network Global Positioning System (TURN GPS) provides real-time high precision centimeter positioning. Some reference stations within the network move slightly over time due to earth crustal displacement and the positions must be updated periodically to maintain accuracy.
 
-![Station Map]({% link images/gps_update_map.jpg %})
+![Station Map](deleted)
 
 The coordinates of **7 GPS stations will be updated on April 1st** because they have exceeded the 2.5 cm variance limit. The new positions were determined using 24 hour files from January 1, 2020 and processed using OPUS Projects holding 21 published CORS station constrained.
 

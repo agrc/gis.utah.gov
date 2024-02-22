@@ -17,7 +17,7 @@ published: false
 category: Guestblog
 ---
 
-<a href="{% link images/Riverlidar.png %}"><img src="{% link images/Riverlidar-300x215.png %}" alt="" title="Riverlidar" class="inline-text-left" loading="lazy" /></a>
+<a href="deleted" alt="" title="Riverlidar" class="inline-text-left" loading="lazy" /></a>
 
 If you happen to be enjoying the Colorado, Green or Yampa Rivers late this fall and see a small plane flying back and forth, be sure to wave. You might be captured in Utah’s latest lidar acquisition.
 

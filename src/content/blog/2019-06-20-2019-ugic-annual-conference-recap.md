@@ -26,8 +26,8 @@ This conference is valuable to the GIS community in Utah because it’s the one 
 So how was the conference this year? [What did attendees talk about](https://drive.google.com/drive/folders/14svh-48imju91bsyYcB1zw2yRdy9w8fW), and how did the conference compare to other years? Let’s discuss.
 
 <figure class="caption caption--right">
-  <a href="{% link images/JackDangermondFeaturedKeynote.jpg %}" title="click to see the full sized image">
-    <img class="caption__image" src="{% link images/JackDangermondFeaturedKeynote.jpg %}" alt="Jack Dangermond, featured keynote speaker" loading="lazy" />
+  <a href="deleted" title="click to see the full sized image">
+    <img class="caption__image" src="deleted" alt="Jack Dangermond, featured keynote speaker" loading="lazy" />
   </a>
   <figcaption class="caption__text" markdown="span">Jack Dangermond, featured keynote speaker</figcaption>
 </figure>
@@ -53,12 +53,12 @@ There were also a number of panel discussions led primarily by members of the UG
 The conference had great submissions for the Map, App, and Poster Gallery and Competition this year. Here are some highlights:
 
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/IronCartographerChamp.jpg %}" alt="Iron Cartographer Champ" loading="lazy" />
+  <img class="caption__image" src="deleted" alt="Iron Cartographer Champ" loading="lazy" />
   <figcaption class="caption__text" markdown="span">2019 Iron Cartographer Champ: Andrea Befus</figcaption>
 </figure>
 
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/StanMcShinskyAwardMap.jpg %}" alt="Stan McShinsky Award Map" loading="lazy" />
+  <img class="caption__image" src="deleted" alt="Stan McShinsky Award Map" loading="lazy" />
   <figcaption class="caption__text">"Provo Keyboard Map" by Stan McShinsky, winner of the Stan McShinsky Award</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ The conference had great submissions for the Map, App, and Poster Gallery and Co
 - _Interactive Map_: “BLM Interactive Map” by Brian Mueller
 
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/UGICConferenceLogo.jpg %}" alt="UGIC 2019 Conference Logo" loading="lazy" />
+  <img class="caption__image" src="../../images/pillar-blog/2019-06-20-2019-ugic-annual-conference-recap/UGICConferenceLogo.jpg" alt="UGIC 2019 Conference Logo" loading="lazy" />
   <figcaption class="caption__text" markdown="span" style="text-align:justify;max-width:400px;line-height:1.5">In checking out the [UGIC conference materials](https://ugic.org/ugic/ugic-conference-2019/), you may have come across the conference logo and wondered about the story behind the image. UGIC has used a Kokopelli for its conference logo for many years. Ekkehart Malotki describes the Kokopelli in his book _Kokopelli: The Making of an Icon_, saying, “Probably no other image in the entire body of Southwestern iconography has attracted as much attention as that of the fluteplayer . . . He occurs within a large geographic region of the Four Corners states.”[^1] Historically the symbol was often seen in rock art in the Southwest, and Malotki argues that “The overriding reason, however, for the Kokopelli phenomenon may be the explosive growth of interest in rock art.”[^2]</figcaption>
 </figure>
 

@@ -18,7 +18,7 @@ published: false
 category: Uncategorized
 ---
 
-[![Google Imagery Usage Map]({% link images/HighResImageryAndBaseMaps_Sept2016thumb.jpg %} "view high res usage map")]({% link downloads/HighResImageryAndBaseMaps_Sept2016.pdf %})
+[![Google Imagery Usage Map](deleted "view high res usage map")]({% link downloads/HighResImageryAndBaseMaps_Sept2016.pdf %})
 It has been about 18 months since the statewide high resolution (6") aerial photography content and services, licensed from Google and funded through the Utah Mapping and Information Partnership (UMIP), were made available to state and local government through UGRC's Discover imagery server.
 
 _So, what have we learned so far?_ A lot actually, thanks to two resources: an extensive user survey and metrics collected by the server itself.
