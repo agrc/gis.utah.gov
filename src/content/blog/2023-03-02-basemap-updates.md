@@ -1,5 +1,5 @@
 ---
-title: "Base maps: Out With the Old, In With the New"
+title: 'Base maps: Out With the Old, In With the New'
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
@@ -24,13 +24,10 @@ We were most excited to start this process and make improvements to the Terrain 
 
 ![New Terrain base map]({% link images/new_terrain.png %})
 
-
 The version 2 Terrain base map tiles are set to be published in the coming weeks and will replace the existing tiles. If you have connections to the v1 Terrain base map in a web, ArcMap, or Pro project, the newly styled tiles will start to display after the switch is made. Version 2 will use the same connection url and the version 1 symbology will no longer be accessible. Since the style of the v2 Terrain base map is similar to, but different than v1, overlaid layer symbology may need to be adjusted to visually match the new symbology.
 
 Be on the lookout this spring for more base map updates from us, including vector tile services.
 
 #### UPDATE 3/22/2023
-
-
 
 The new and improved Terrain base map has been published. It is suggested that users clear their local cache. Please look at the [Pro/ArcMap User Considerations]({% link discover/resources/index.md %}#proarcmap-user-considerations) for instructions on how to accomplish this.

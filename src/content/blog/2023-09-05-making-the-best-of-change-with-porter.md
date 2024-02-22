@@ -13,24 +13,17 @@ In today's fast-paced and interconnected world, GIS data are a key part of decis
 
 ![SGID Data lifecycle]({% link images/SGID_lifecycle.jpg %})
 
-
 ## Dealing with Deprecations
-
-
 
 You need to be informed when data are replaced, abandoned or retired, or no longer receiving updates so you can continue to make educated decisions based on the most accurate data. This critical part of the geospatial data lifecycle (GDL) is often overlooked. For example, ArcGIS Online didn't gain the "Deprecated" flag for old and outdated items until 2021[^deprecated]. To this day, that piece of metadata still does not [propagate through the platform](https://community.esri.com/t5/arcgis-online-ideas/use-deprecation-flag-through-platform/idi-p/941737), nor is it available to [ArcGIS Server Services](https://community.esri.com/t5/arcgis-enterprise-ideas/allow-marking-arcgis-server-services-as-deprecated/idi-p/1281015). Deprecating data is a difficult task without an easy solution.
 
 ## Processing Change with Porter
-
-
 
 UGRC uses the public [agrc/porter](https://github.com/agrc/porter/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) repository hosted on GitHub to inform you about changes in the SGID. The issues in this repository provide transparency about our intent and progress while allowing public feedback throughout the process. We also post notices for each issue on our social media channels using the [#ugrcporter](https://twitter.com/hashtag/ugrcporter) hashtag; like and subscribe!
 
 We know these platforms don't reach everyone who needs to know about these changes--please know that we are trying our best 💙️. We are continuing to innovate and explore ways to improve our communication.
 
 ## Changing Schemas
-
-
 
 Our most recent challenge with our GDL comes from changing the schema of an existing SGID table. As per our [policy]({% link about/policy/sgid/index.md %}), replacing a schema is a breaking change that we historically handle by removing the existing table and introducing a new table with a unique name. For example, the current table "Roads" has been known as "StatewideStreets" and "Centerlines" throughout its history.
 
@@ -42,12 +35,9 @@ How can we update the schema without creating headaches for you?
 
 ## An Overlapping Solution
 
-
-
 The updated process was created using the collective knowledge and experience from everyone in our office. It will allow everyone to plan ahead instead of reacting to breaking changes. It will provide more flexibility to migrate on your schedule instead of having to be ready on our arbitrary data change day, and it will allow us to use the most descriptive table names to continue to make data easy to find. The process is best described with a picture:
 
 ![Porter GDL]({% link images/Porter-GDL.png %})
-
 
 Let's use `roads` as an example. When the porter issue is opened and the new data is ready, it will be loaded into the SGID with an `_next` suffix as `roads_next`. This dataset will contain the new schema and data for the lifetime of the change period. At the same time, the existing table will be copied and added with the `_deprecated` suffix. The existing table, `roads`, will remain unchanged for the first half of the process.
 
@@ -56,8 +46,6 @@ On the change day, the existing table, `roads`, will be migrated to the new sche
 After giving you some extra time to finish your transitions, the `_next` and `_deprecated` tables will be removed.
 
 ## The Overlapping Benefits
-
-
 
 With this process, you will have time to migrate and test your integrations with the `_next` data and schema. You will not need to be on call on the change day because the `_next` table is still available, and when you migrate to the root table you will have the confidence that comes from testing with the equivalent `_next` table.
 

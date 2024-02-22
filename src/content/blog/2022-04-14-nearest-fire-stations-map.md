@@ -16,16 +16,11 @@ Living close to a fire station can be noisy, but on the other hand, not living c
 
 ### The SGID
 
-
-
 In Utah, the best place to begin any GIS project is with the [State Geographic Information Datasource]({% link data/index.html %}#welcome-to-the-state-geographic-information-database-sgid) (SGID). The SGID is hosted by the [Utah Geospatial Resource Center]({% link index.html %}) (UGRC) and contains hundreds of statewide geospatial datasets, many of which are considered framework data layers that are used in larger government systems such as 911, voting, and taxation. Because of this, data in the SGID is updated frequently and adheres to established [policies and standards]({% link about/policy/sgid/index.md %}#internal-database-standards).
 
 ![SGID Logo]({% link about/media/ugrc-logo-SGID-dark.png %})
 
-
-### Show me the map!
-
-
+### Show me the map
 
 When exploring the question, _Is Your Home Close Enough to the Nearest Fire Station?_, I was able to [search the SGID]({% link data/sgid-index/index.html %}) data offerings and quickly locate the statewide fire stations layer, the road centerline network dataset, and a base map. After applying some basic network analysis, I was then able to create an interactive map showing the **[Standard Network Travel Times from Fire Stations in Utah](https://arcg.is/0T01i4)**.
 
@@ -33,10 +28,7 @@ This map shows standard travel times (aka: keeping the speed limit) at intervals
 
 ![Fire Station Travel Times]({% link images/fire_station_travel_times.png %})
 
-
 ### Maps and Visualization
-
-
 
 Maps are a great starting point for conversations such as, _What areas are currently being serviced?_ and, _Where are the best locations for new or enhanced services?_ The fire stations map is a good example of this.
 
