@@ -36,7 +36,7 @@ For more information and to join the mailing list visit: [www.slug-gis.info](htt
 
 The Southwest Utah User Group G5 consists of Geo-spatial technicians and specialists from State and Federal Agencies, private organizations, Washington, Iron, Beaver, Kane, and Garfield Counties. This user group conducts quarterly meetings featuring trainings, discussions on GIS and other Geo-spatial applications and/or problems that those attending might need help with.
 
-For more information, please contact Dale Simper: <dsimper@washingtoncity.org>.
+For more information, please contact Van Phetsomphou: <van.phetsomphou@sgcity.org>.
 
 #### Utah Valley User Group
 
