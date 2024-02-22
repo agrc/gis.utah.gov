@@ -10,12 +10,13 @@ for (const filename of filenames) {
   let matches;
   let changed = false;
 
+  mkdirSync('./log/', { recursive: true });
   while ((matches = regex.exec(file)) !== null) {
     changed = true;
 
     console.log(`${filename}: ${matches[0]}`);
 
-    appendFileSync('./blog-migration.log', `${filename} : ${matches[0]} : /blog/${matches[1]}\n`);
+    appendFileSync('./log/blog-migration.log', `${filename} : ${matches[0]} : /blog/${matches[1]}\n`);
 
     file = file.replace(matches[0], `/blog/${matches[1]}`);
   }
