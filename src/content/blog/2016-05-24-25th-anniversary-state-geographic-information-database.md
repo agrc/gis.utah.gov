@@ -49,14 +49,14 @@ Get yours from an UGRC staffer at your next opportunity.
 <div class="grid">
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">Cover of SGID Data CD, 1995</h5>
-        <img alt="Cover, SGIC CD, 1995" src="{% link images/SGID_Cover.JPG %}" loading="lazy" />
+        <img alt="Cover, SGIC CD, 1995" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cover.jpg" loading="lazy" />
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">SGID Data CD, 1995</h5>
-        <img alt="Inside, SGID CD, 1995" src="{% link images/SGID_CD.JPG %}" loading="lazy" />
+        <img alt="Inside, SGID CD, 1995" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cd.jpg" loading="lazy" />
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">SGID Data User Guide, 1999</h5>
-        <img alt="SGID Data User Guides, 1999" src="{% link images/SGID_UserGuide.JPG %}" loading="lazy" />
+        <img alt="SGID Data User Guides, 1999" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_userguide.jpg" loading="lazy" />
     </div>
 </div>

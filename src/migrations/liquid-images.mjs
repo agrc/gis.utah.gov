@@ -14,10 +14,10 @@ for (const filename of filenames) {
   let matches;
   let changed = false;
 
-  if (!(frontMatter.published === false)) {
-    console.log('Skipping published post:', filename);
-    continue;
-  }
+  // if (!(frontMatter.published === false)) {
+  //   console.log('Skipping published post:', filename);
+  //   continue;
+  // }
 
   while ((matches = regex.exec(file)) !== null) {
     console.log(`${filename}: ${matches[0]}`);
@@ -37,7 +37,7 @@ for (const filename of filenames) {
     // remove file path and extension from filename using fs
 
     const folderName = basename(filename, '.md');
-    const newPath = join('..', 'images', 'pillar-blog', folderName, imageName);
+    const newPath = join('..', 'images', 'pillar-blog', folderName, imageName.toLowerCase());
 
     console.log(oldPath, newPath);
 
@@ -60,7 +60,7 @@ for (const filename of filenames) {
 }
 
 mkdirSync('./log/', { recursive: true });
-appendFileSync('./log/blog-migration-deleted-images.log', '---unpublished files---\n');
+appendFileSync('./log/blog-migration-deleted-images.log', '---case insensitive files---\n');
 migratedFiles.forEach((path) => appendFileSync('./log/blog-migration-deleted-images.log', path + '\n'));
 
 process.exit(0);

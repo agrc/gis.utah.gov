@@ -17,7 +17,7 @@ New 2016 high-resolution Google imagery is available from the Discover server. U
 
 [![Google update](deleted)
 
-[![Google update]({% link images/SLCoBlock_sm.png %} "view sample")]({% link images/SLCoBlock.png %})
+[![Google update](deleted)
 
 [![Google update](deleted)
 

@@ -15,10 +15,10 @@ category: Uncategorized
 <p><a href="{% link downloads/2012MapsOnTheHill_bookletSM.pdf %}">2012 Maps on the Hill booklet</a> to find out more about participating organizations and the projects they presented.</p>
 <p>
     <img src="deleted" class="pull-left" />
-    <img src="{% link images/uploads/DSC_0690-150x150.jpg %}" class="pull-left" />
     <img src="deleted" class="pull-left" />
-    <img src="{% link images/uploads/DSC_0686-150x150.jpg %}" class="pull-left" />
     <img src="deleted" class="pull-left" />
-    <img src="{% link images/uploads/DSC_0683-150x150.jpg %}" class="pull-left" />
+    <img src="deleted" class="pull-left" />
+    <img src="deleted" class="pull-left" />
+    <img src="deleted" class="pull-left" />
     <img src="deleted" class="pull-left" />
 </p>
