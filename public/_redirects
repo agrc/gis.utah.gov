@@ -1,4 +1,4 @@
-# source                                                                                                                     destination                                                                                                      status code
+#source                                                                                                                    _destination_                                                                                                      _status-code_
 /agrc-newsletter/                                                                                         /ugrc-newsletter/                                                                                     301
 /about/data-policies/                                                                                     /about/policy/license-disclaimer/                                                                     301
 /license-disclaimer/                                                                                      /about/policy/license-disclaimer/                                                                     301
@@ -68,9 +68,9 @@
 /data/google-imagery-license/                                                                             /discover/license/                                                                                    301
 /data/googleimagery/                                                                                      /data/discover-server-information/                                                                    301
 /data/how-to-connect-to-the-sgid-via-sde/                                                                 /sgid-database/                                                                                       301
-/data/political/2012-2021-house-senate-congressional-districts/	                                          /data/political/political-districts/                                                                  301
-/data/political/2022-2032-political-districts/	                                                          /data/political/political-districts/                                                                  301
-/data/political/2012-2022-political-districts/  	                                                        /data/political/political-districts/                                                                  301
+/data/political/2012-2021-house-senate-congressional-districts/                                           /data/political/political-districts/                                                                  301
+/data/political/2022-2032-political-districts/                                                            /data/political/political-districts/                                                                  301
+/data/political/2012-2022-political-districts/                                                            /data/political/political-districts/                                                                  301
 /data/political/2002-2011-house-senate-congressional-districts/                                           /data/political/political-districts/                                                                  301
 /data/political/2022-2032-house-senate-congressional-districts/                                           /data/political/political-districts/                                                                  301
 /data/sgid-base-map-services-arcmap/                                                                      /discover/resources/                                                                                  301
@@ -115,10 +115,9 @@
 /data/usgs-scanned-topographic-maps/1-to-100000/                                                          /data/usgs-scanned-topographic-maps/                                                                  301
 /data/usgs-scanned-topographic-maps/1-to-24000/                                                           /data/usgs-scanned-topographic-maps/                                                                  301
 /data/usgs-scanned-topographic-maps/1-to-250000/                                                          /data/usgs-scanned-topographic-maps/                                                                  301
-
 /data/usgs-scanned-topographic-maps-drgs/vintage-usgs-topo-maps/                                          /data/usgs-scanned-topographic-maps/                                                                  301
 /data/usgs-scanned-topographic-maps-drgs/download-usgs-scanned-topographic-maps/                          /data/usgs-scanned-topographic-maps/                                                                  301
-/data/utilities/telephone-infrastructure-and-rural-telcom-boundaries/                                     /data/utilities/telecom-boundaries/                                                                   301      
+/data/utilities/telephone-infrastructure-and-rural-telcom-boundaries/                                     /data/utilities/telecom-boundaries/                                                                   301
 /data/water-data-services/                                                                                /data/water/                                                                                          301
 /data/water-data-services/flood-areas/                                                                    /data/water/flood-areas/                                                                              301
 /data/water-data-services/historic-lake-bonneville/                                                       /data/water/historic-lake-bonneville/                                                                 301
@@ -130,7 +129,6 @@
 /image-server/                                                                                            /image-service-deprecation/                                                                           301
 /new-sde-connection-properties-for-arcgis-desktop-10-1/                                                   /sgid-database/                                                                                       301
 /templater                                                                                                http://agrc.github.io/templater                                                                       301
-
 /aerial/                                                                                                  /data/aerial-photography/                                                                             301
 /agrc_sgid/dem_2m.html                                                                                    /data/elevation-terrain-data/                                                                         301
 /agrc_sgid/dem_5m.html                                                                                    /data/elevation-terrain-data/                                                                         301
@@ -166,4 +164,4 @@
 /podcast                                                                                                  https://utahgeospatialpodcast.buzzsprout.com/                                                         301
 /moth                                                                                                     /about/maps-on-the-hill/                                                                              301
 /survey                                                                                                   https://docs.google.com/forms/d/e/1FAIpQLSerUDcX8HO20jZK8Eh4pcMwQ_DxygPj2_-roSXxSKfDTUgZQw/viewform   301
-/data/search                                                                                              /data/sgid-index/                                                                                     301     
+/data/search                                                                                              /data/sgid-index/                                                                                     301
