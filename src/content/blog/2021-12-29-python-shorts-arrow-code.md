@@ -70,7 +70,7 @@ If you've not seen it before (it was new to me when I first saw it), `casefold()
 
 So how do we fix it?
 
-[Smash it with a hammer!]({% link images/flea.jpg %})
+[Smash it with a hammer!](../../images/pillar-blog/2021-12-29-python-shorts-arrow-code/flea.jpg)
 
 ```python
 def is_open(value):
@@ -103,7 +103,7 @@ As a bonus, each condition is now functionally independent from the others. This
 
 So there you have it. Flattening arrow code (even if it doesn't originally look like a full arrow) will make your code easier to read, easier to understand, and easier to extend. If you don't want to use the hammer, just save on postage and use the [extract of llama](https://www.imdb.com/title/tt0120917/) instead.
 
-![Feel the power]({% link images/feel_the_power.jpg %})
+![Feel the power](../../images/pillar-blog/2021-12-29-python-shorts-arrow-code/feel_the_power.jpg)
 
 
 ### Bonus reading

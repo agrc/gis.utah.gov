@@ -17,7 +17,7 @@ The Federal Emergency Management Agency, the U.S. Forest Service, and the U.S. G
 
 You are welcome to download the boundaries for all the project areas as a [shapefile](https://drive.google.com/a/utah.gov/uc?id=1-oxmHxLEDPAhM2SKKKh_Df8Pa0iUWKvD&export=download).
 
-[![Project area map]({% link images/2020UtahLidarAcquisition_9_16_20_sm.png %} "view project area map")]({% link images/2020UtahLidarAcquisition_9_16_20.png %})
+[![Project area map](deleted)
 
 #### UPDATE 10/17/2023
 

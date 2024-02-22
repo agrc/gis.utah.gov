@@ -41,22 +41,22 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 - **SGID User's Guide - 7th Edition (1994)**
   - This user guide was distributed in a three-ring binder. Data was then requested in the following available formats: ARC/INFO Coverages, USGS DLG, MOSS Export, and AutoCAD DXF. This guide also makes note of an "AGRC home page on the world wide web," which was set to debut in November 1994.
 
-![1994 SGID User Guide Binder]({% link images/SGID_1994_binders_cover_sm.png %})
+![1994 SGID User Guide Binder](../../images/pillar-blog/2019-06-11-sgid-then-and-now/SGID_1994_binders_cover_sm.png)
 
 - **The SGID on CD-ROM (1995)**
   - In 1995, AGRC, ESRI, and Utah State University combined forces and manufactured a CD-ROM containing SGID data and a built-in data viewer. To commemorate this milestone, we have made available the [original CD-ROM jacket](https://drive.google.com/file/d/1D_AI5EdonRLbLoJAdiVUORFycNwY1S3A/view?usp=sharing) as well as the [unaltered CD-ROM contents](https://drive.google.com/file/d/1iJ-oBpnCGK8XmPr9B4jvE1AhodTC85tp/view?usp=sharing).
 
-![1995 SGID CD-ROM photo]({% link images/SGID_1995_cover_sm.png %})
+![1995 SGID CD-ROM photo](../../images/pillar-blog/2019-06-11-sgid-then-and-now/SGID_1995_cover_sm.png)
 
 - **SGID User’s Guide - 10th Edition (1999)**
   - This version of the user guide was also distributed in a three-ring binder and talked about the AGRC home page as the place where you could get direct access to the SGID data, as well as view the FGDC metadata. It also mentioned an FTP site. It noted that this version would be the last printed user guide and that future guides would be available on the website for download in PDF format. With this version, users could request SGID data in the following formats: CD, 3.5 diskettes, 8mm tape, zip disc, or Coverages (which the guide mentioned were the most popular at that time).
 
-![1999 SGID User Guide Binder]({% link images/SGID_1999_binders_cover_sm.png %})
+![1999 SGID User Guide Binder](../../images/pillar-blog/2019-06-11-sgid-then-and-now/SGID_1999_binders_cover_sm.png)
 
 - **SGID Meets the World Wide Web (Early 2000s)**
   - By the early 2000s the SGID user guide, data, and data viewer were all solely available over the Web. AGRC was using ArcSDE 8.2 to maintain the data and ArcIMS for the interactive mapping website. Users could also use a separate ArcIMS site to create their own exportable map using a [custom map authoring tool]({% link images/SGID_early2000s_create_custom_map.gif %}).
 
-[![SGID Early 2000s]({% link images/SGID_early2000s_sm.png %}))
+[![SGID Early 2000s](../../images/pillar-blog/2019-06-11-sgid-then-and-now/SGID_early2000s_sm.png))
 
 ### Where Is the SGID Now?
 
@@ -68,7 +68,7 @@ The current makeup of the SGID is distributed, by design. Internally, much of th
 
 The [SGID index]({% link data/sgid-index/index.html %}) and current user guide are located on [the SGID page of UGRC’s website]({% link data/index.html %}), where you will also find descriptions of the data, update dates, data downloads, and links to other places where you can access the data. If you're looking for data, that is the best place to start.
 
-![SGID 2019 User Guide]({% link images/SGID_2019_webpage_data.png %})
+![SGID 2019 User Guide](../../images/pillar-blog/2019-06-11-sgid-then-and-now/SGID_2019_webpage_data.png)
 
 In order to meet the diverse needs of our users and applications, SGID data is served on a variety of platforms in a variety of formats, including direct database access, downloadable data, [ArcGIS Online](https://gis.utah.gov/data/), an [open data portal](https://opendata.gis.utah.gov/), and API web services.
 

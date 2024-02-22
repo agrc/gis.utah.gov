@@ -13,7 +13,7 @@ title: Authoritative Utah Geocoding Results
 category: SGID Blog
 ---
 
-![map with marker]({% link images/authoritative_geocoding.png %})
+![map with marker](../../images/pillar-blog/2015-02-12-authoritative-utah-geocoding-results/authoritative_geocoding.png)
 
 
 ### Geocoding Assurance _or_ Why you should trust the results

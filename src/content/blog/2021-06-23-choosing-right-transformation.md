@@ -21,7 +21,7 @@ This is even more true with the rise of web GIS and external databases. If I wer
 
 "Just about."
 
-[![Close but no cigar]({% link images/transformations_measurement.jpg %})
+[![Close but no cigar](../../images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_measurement.jpg)
 
 
 This tiny gap is caused by using the wrong transformation when working with data in projections that use different datums (most commonly NAD83 and WGS84). While it may not matter pragmatically, it can still cause slivers and gaps with certain geoprocessing operations.
@@ -56,7 +56,7 @@ The trick is choosing the right transformation. The pitfall is that ArcGIS Pro m
 
 **_Our recommended transformation between NAD83 and WGS84 in Utah_** is `NAD_1983_To_WGS_1984_5`. Other transformations may work better for other geographic areas or for other projections using different datums.
 
-[![NAD 1983 to WGS 1984 5 is the right transformation]({% link images/transformations_proper.jpg %})
+[![NAD 1983 to WGS 1984 5 is the right transformation](../../images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_proper.jpg)
 
 
 ## UTM, SGID, and You
@@ -75,14 +75,14 @@ We use the `NAD_1983_To_WGS_1984_5` for all of our data when working in both UTM
 
 ArcMap is somewhat helpful when you load data from both UTM 12N NAD83 and Web Mercator—it displays a nice big warning dialog:
 
-[![ArcMap Warning Dialog]({% link images/transformations_arcmapdialog.jpg %})
+[![ArcMap Warning Dialog](../../images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_arcmapdialog.jpg)
 
 
 I don't know about you, but when I first started doing GIS I didn't know what all this meant (with apologies to my GIS professors in college). My coworker said "Oh, just hit close and move on." So I just got in that habit. Some people probably hit the `Don't warn me again ever` checkbox years ago and forgot all about it.
 
 ArcMap is asking you to choose a transformation. **_By skipping this, no transformation is used at all. The underlying difference between the two datums is left for all to see:_**
 
-[![Default when no transformation is selected]({% link images/transformations_default.jpg %})
+[![Default when no transformation is selected](../../images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_default.jpg)
 
 
 _(Yes, I realize this is in ArcGIS Pro, but the result is the same)_
@@ -90,7 +90,7 @@ _(Yes, I realize this is in ArcGIS Pro, but the result is the same)_
 
 ArcGIS Pro is better about this... and sometimes worse, actually. If you add Web Mercator data to a UTM 12N NAD83 map, it happily chooses a transformation for you. However, it frequently chooses the `WGS 1984 (ITRF00) To NAD 1983` transformation. While very, very similar, this still produces the 0.03 ft difference seen in the screenshot at the top of the page.
 
-[![ArcGIS Pro's default transformation]({% link images/transformations_prodefault.jpg %})
+[![ArcGIS Pro's default transformation](../../images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_prodefault.jpg)
 
 
 **_To be frank, at these distances, the difference from using the default transformation is much less than the potential error in the original data._** It's the classic problem of spurious precision. However, the difference is just large enough to be outside of the default geodatabase tolerances. If you're doing something like a dissolve or split between the two datasets, or trying to enforce topology, you'll get annoying, almost invisible slivers and gaps. The problem we're trying to solve is topological accuracy, not absolute accuracy.
@@ -99,24 +99,24 @@ ArcGIS Pro is better about this... and sometimes worse, actually. If you add Web
 
 By default, it doesn't appear that ArcGIS Pro will give you a warning like ArcMap does. You can, however, enable a little warning popup in the top right of the window (where you've been ignoring that "A software update is available for ArcGIS Pro" message for weeks now):
 
-![ArcGIS Pro warning dialog]({% link images/transformations_prowarning.jpg %})
+![ArcGIS Pro warning dialog](../../images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_prowarning.jpg)
 
 
 In the Pro Options dialog, go to the `Application` -> `Map and Scene` entry. Expand the `Spatial Reference` section; here you can choose your default spatial reference for new maps. Below this, there is a checkbox labeled `Warn if transformation between geographic coordinate system is required to align data sources correctly.`
 
-[![Enabling warning in ArcGIS Pro]({% link images/transformations_prowarningsetting.jpg %})
+[![Enabling warning in ArcGIS Pro](../../images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_prowarningsetting.jpg)
 
 
 ## Show Me The Goods
 
 If you want to see this in action, load our [county boundaries layer]({% link data/boundaries/citycountystate/index.html %}#CountyBoundaries) from both Open SGID (`opensgid.boundaries.county_boundaries`) and AGOL (`Utah County Boundaries`). Make sure the default `WGS 1984 (ITRF00) To NAD 1983` transformation is selected. Then run the `Split` tool between the two layers on the `NAME` field and look at one of the output feature classes. You'll see extra features for most or all of the surrounding counties with pretty small `shape_Area`'s:
 
-[![Split with default transformation creates slivers from neighboring counties]({% link images/transformations_proslivers.jpg %})
+[![Split with default transformation creates slivers from neighboring counties](../../images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_proslivers.jpg)
 
 
 If you're feeling particularly crazy, explode the multipart polygons for each neighboring county—I got 182 distinct slivers between Salt Lake County and its neighbors:
 
-[![Split with default transformation creates slivers from neighboring counties]({% link images/transformations_prosinglepart.jpg %})
+[![Split with default transformation creates slivers from neighboring counties](../../images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_prosinglepart.jpg)
 
 
 ## Can I Go Home Now?

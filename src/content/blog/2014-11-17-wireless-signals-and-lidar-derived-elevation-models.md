@@ -27,50 +27,50 @@ The DTM and DSM elevation models from the 2013-2014 Wasatch Front LiDAR Elevatio
 
 <div class="flex flex--row flex--wrap flex--around">
   <figure class="caption">
-    <a href="{% link images/Ensign_DTM_only.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DTM_only.png %}" alt="" title="DTM Bare-Earth Digital Terrain Model" width="325" height="325"/>
+    <a href="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DTM_only.png">
+      <img class="caption__image" src="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DTM_only.png" alt="" title="DTM Bare-Earth Digital Terrain Model" width="325" height="325"/>
       <figcaption class="caption__text">Figure 1: Bare-Earth Digital Terrain Model</figcaption>
     </a>
   </figure>
   <figure class="caption">
-    <a href="{% link images/Ensign_DSM_only.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DSM_only.png %}" alt="" title="DSM First-Return Digital Surface Model" width="325" height="325"/>
+    <a href="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DSM_only.png">
+      <img class="caption__image" src="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DSM_only.png" alt="" title="DSM First-Return Digital Surface Model" width="325" height="325"/>
       <figcaption class="caption__text">Figure 2: First-Return Digital Surface Model</figcaption>
     </a>
   </figure>
   <figure class="caption">
-    <a href="{% link images/Ensign_DTM.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DTM.png %}" alt="" title="DTM Results, Zoomed Out" width="325" height="325"/>
+    <a href="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DTM.png">
+      <img class="caption__image" src="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DTM.png" alt="" title="DTM Results, Zoomed Out" width="325" height="325"/>
       <figcaption class="caption__text">Figure 3: Bare-Earth Digital Terrain Model and Viewshed</figcaption>
     </a>
   </figure>
   <figure class="caption">
-    <a href="{% link images/Ensign_DSM.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DSM.png %}" alt="" title="DSM Results, Zoomed Out" width="325" height="325"/>
+    <a href="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DSM.png">
+      <img class="caption__image" src="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DSM.png" alt="" title="DSM Results, Zoomed Out" width="325" height="325"/>
       <figcaption class="caption__text">Figure 4: First-Return Digital Surface Model and Viewshed</figcaption>
     </a>
   </figure>
   <figure class="caption">
-    <a href="{% link images/Ensign_DTM_sm.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DTM_sm.png %}" alt="" title="DTM Results, Medium Zoom" width="325" height="325"/>
+    <a href="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DTM_sm.png">
+      <img class="caption__image" src="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DTM_sm.png" alt="" title="DTM Results, Medium Zoom" width="325" height="325"/>
       <figcaption class="caption__text">Figure 5: Medium Zoom Bare-Earth Digital Terrain Model and Viewshed</figcaption>
     </a>
   </figure>
   <figure class="caption">
-    <a href="{% link images/Ensign_DSM_sm.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DSM_sm.png %}" alt="" title="DSM Results, Medium Zoom" width="325" height="325"/>
+    <a href="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DSM_sm.png">
+      <img class="caption__image" src="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DSM_sm.png" alt="" title="DSM Results, Medium Zoom" width="325" height="325"/>
       <figcaption class="caption__text">Figure 6: Medium Zoom First-Return Digital Surface Model and Viewshed</figcaption>
     </a>
   </figure>
   <figure class="caption">
-    <a href="{% link images/Ensign_DTM_sm2.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DTM_sm2.png %}" alt="" title="DTM, Zoomed In" width="325" height="325"/>
+    <a href="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DTM_sm2.png">
+      <img class="caption__image" src="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DTM_sm2.png" alt="" title="DTM, Zoomed In" width="325" height="325"/>
       <figcaption class="caption__text">Figure 7: Zoomed In Bare-Earth Digital Terrain Model and Viewshed</figcaption>
     </a>
   </figure>
   <figure class="caption">
-    <a href="{% link images/Ensign_DSM_sm2.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DSM_sm2.png %}" alt="" title="DSM, Zoomed In" width="325" height="325"/>
+    <a href="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DSM_sm2.png">
+      <img class="caption__image" src="../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/Ensign_DSM_sm2.png" alt="" title="DSM, Zoomed In" width="325" height="325"/>
       <figcaption class="caption__text">Figure 8: Zoomed In First-Return Digital Surface Model and Viewshed</figcaption>
     </a>
   </figure>

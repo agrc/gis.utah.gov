@@ -22,7 +22,7 @@ Utah responded to this invitation through a collaboration between UGRC, the [Uta
 
 We express a heart-felt **Thank You!** to Box Elder, Weber, Tooele, Salt Lake, Utah, Summit, and Wayne counties for participating on such short notice. With their help we were able to gather over 110,000 challenges, with over 48,000 ultimately being accepted: **24,598 new locations and 23,491 corrected addresses.**
 
-![Utah had by far the most accepted challenges]({% link images/bb_challenge_results.png %})
+![Utah had by far the most accepted challenges](../../images/pillar-blog/2023-03-03-broadband-fabric-data-challenge/bb_challenge_results.png)
 
 _Source: X-Lab (PSU), via the Marconi Society_
 

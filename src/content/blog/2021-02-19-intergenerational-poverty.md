@@ -39,7 +39,7 @@ Geographic information systems allow us to ask big questions. As a community too
 
 <div class="flex flex--around">
   <figure class="caption">
-    <a href="{% link developer/applications/suitability/index.html %}"><img class="caption__image" src="{% link images/suitability_analysis_wasatchfront.png %}" alt="Suitability Analysis Wasatch Front" loading="lazy" /></a>
+    <a href="deleted" alt="Suitability Analysis Wasatch Front" loading="lazy" /></a>
     <figcaption class="caption__text">Figure 1: Suitability Analysis along the Wasatch Front</figcaption>
   </figure>
 </div>

@@ -11,7 +11,7 @@ tags:
 category: Developer
 ---
 
-![Address points per supermarket]({% link images/h3_supermarkets.png %})
+![Address points per supermarket](../../images/pillar-blog/2022-10-26-using-h3-hexes/h3_supermarkets.png)
 
 I recently discovered Uber's open-source [H3 geospatial indexing system](https://h3geo.org/) while working on a project with a lot of point data. This is a great tool for aggregating points into regularly-sized polygon geometries so that you can map and evaluate the spatial trends of a point-based phenomenon, but it needs a bit of an introduction to understand why it's great and how to use it with traditional GIS data.
 
@@ -39,7 +39,7 @@ However, even if it doesn't become the overwhelming global standard, the H3 syst
 
 It is mathematically impossible[^1] to create a larger hexagon from smaller hexagons, which means we can't create a _geographical_ hierarchy of hexes where one level of hexes perfectly cover the same area as a single larger hex. However, H3 makes a _logical_ hierarchy by rotating the larger, parent hex to cover as much of its seven children as possible, as visible in the image below. The H3 [indexing page](https://h3geo.org/docs/highlights/indexing) has more detail on how this works.
 
-![H3 Hexagons at various scales]({% link images/h3_hexes.png %})
+![H3 Hexagons at various scales](../../images/pillar-blog/2022-10-26-using-h3-hexes/h3_hexes.png)
 
 The important point is that an individual hex ID contains the IDs of the hexes "above" it in the hierarchy, kind of like how census GeoIDs contain the block, tract, county, and state codes. This makes it easy to traverse up to a larger hex without re-calculating the IDs.
 
