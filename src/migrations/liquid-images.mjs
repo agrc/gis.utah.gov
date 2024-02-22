@@ -4,7 +4,7 @@ import { basename, dirname, join } from 'path';
 
 const blogPostFolder = '../content/blog';
 const filenames = readdirSync(blogPostFolder);
-const regex = /{%\s?link (.*\.(png|jpg))\s?%}/gm;
+const regex = /{%\s?link (.*\.(png|jpg))\s?%}/gim;
 const migratedFiles = new Set();
 
 for (const filename of filenames) {
