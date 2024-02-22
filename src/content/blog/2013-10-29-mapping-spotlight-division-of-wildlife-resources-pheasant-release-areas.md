@@ -9,7 +9,7 @@ tags:
   - pheasants
   - wildlife
 date: 2013-10-29 16:10:49 -0600
-title: "Mapping Spotlight: DWR Pheasant Release Areas"
+title: 'Mapping Spotlight: DWR Pheasant Release Areas'
 published: false
 category: Uncategorized
 ---

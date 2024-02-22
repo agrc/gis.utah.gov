@@ -18,21 +18,15 @@ _The info below is a re-posting of information UGRC has emailed to county and ci
 
 ### What is LUCA?
 
-
-
 ![Census LUCA Program, 2018](../../images/pillar-blog/2017-10-30-census-luca-training-for-utah/luca2018.png)The Census Bureau's Local Update of Census Addresses (LUCA) program allows city, county, and state government to review and suggest edits to the master residential address list that Census uses to plan and execute their survey work. Of particular importance is the ability for Census to track responses across multiple survey mechanisms (field workers, survey-by-mail, and, this year, online response).
 
 While LUCA participation is optional, many cities and counties plan to participate in the address list review. The closer the Census Bureau's master database matches the actual addresses on the ground in your community, the better shot you've got to be fully counted.
 
 ### Participating in LUCA
 
-
-
 The decision to participate in the LUCA review is made by your highest elected official (Mayor, Commissioner, etc.) and the registration deadline is December 15th. The 120 day LUCA review time frame will begin in February 2018. While limited paper and spreadsheet review options exist, **_the main vehicle for the LUCA review is via a GIS platform_**. To review and edit the address list, LUCA participants can use either the QGIS-based application Census provides (called GUPS), or other GIS software that will produce an output shapefile that adheres to the rigid data content/formal specification for LUCA.
 
 ### LUCA Training
-
-
 
 UGRC, on behalf of the Census Bureau and in partnership with the Governor's Office of Management and Budget, has scheduled Utah's LUCA training session for:
 
@@ -42,14 +36,11 @@ MASOB Building, Room 1019 A/B
 
 Please **[RVSP for the Nov. 2nd training](https://docs.google.com/forms/d/e/1FAIpQLSczYHcjdbW33f-8VpnevDEq9rOL4V18astz6uU74VAUpXJFZg/viewform?usp=sf_link)**.
 
-
 At this meeting, Census will provide a technical overview of the options for participation in the LUCA address list review. UGRC has asked for Census to move quickly through the basics so additional time can be spent on the QGIS-based application and the shapefile submission option.
 
 Utah communities do not yet need to be formally registered for the LUCA review to attend this training. The training will cover how to get registered to participate in LUCA but you can review online materials ([flyer](https://www2.census.gov/geo/pdfs/partnerships/luca/2020CensusLUCA_Flyer.pdf) or [information guide](https://www2.census.gov/geo/pdfs/partnerships/luca/2020LUCA_InfoGuide.pdf)) to learn more and to get a start on assisting your jurisdiction's highest-elected official in registering for LUCA now ([see Registration section of this page for instructions](https://www.census.gov/geo/partnerships/luca.html)).
 
 ### Larger Benefit
-
-
 
 Lastly, a point of emphasis. Maintaining a GIS layer of addresses is obviously of great value for more than just the 2020 census. Active data exchanges between Census and the Postal Service mean that the most important address work to support the LUCA process is expected to be adding missing residential addresses that do not receive traditional street delivery-style mail such as:
 subaddresses (unit and apartment numbers), residences with clustered mailboxes such as dorms, trailer parks, or gated communities

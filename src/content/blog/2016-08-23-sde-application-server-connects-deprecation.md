@@ -4,7 +4,7 @@ author:
   email: mpeters@utah.gov
 tags: []
 date: 2016-08-23T22:45:23.000Z
-title: "SDE Application Server Connects Deprecation "
+title: 'SDE Application Server Connects Deprecation '
 published: false
 category: Uncategorized
 ---

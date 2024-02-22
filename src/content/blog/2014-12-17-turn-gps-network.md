@@ -11,7 +11,6 @@ category: GPS-surveyor
 
 ![network map](/images/404.png)
 
-
 On December 2, 2014 the State of Utah UGRC completed its upgrade of the Trimble Pivot Platform software running the The Utah Reference Network (TURN) GPS.
 
 The Pivot Platform 3.1.5 will improve functionality for system administrators and for monitoring the health of the system.

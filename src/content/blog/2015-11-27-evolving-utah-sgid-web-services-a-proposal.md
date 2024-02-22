@@ -7,7 +7,7 @@ tags:
   - data
   - tracking
 date: 2015-11-27 13:45:52 -0700
-title: "Evolving Utah SGID Web Services: A Proposal"
+title: 'Evolving Utah SGID Web Services: A Proposal'
 published: false
 category: Uncategorized
 ---
@@ -19,8 +19,6 @@ As time passes in the GIS and IT world, sometimes it feels like there is a pendu
 The topic of this post is how best to organize, and provide access to Utah’s excellent and voluminous GIS data content assets. The basic question in 2015 and forward, is how to play to the strengths of decentralization while providing 'one stop shopping’ ease of access. What follows is a little background and a proposal for a simple framework that harnesses both ends of the pendulum’s swing.
 
 #### A Little SGID Background...
-
-
 
 Utah’s State Geographic Information Database (aka, 'the SGID’), was formally established in 1991 by the passage of SB21, the 'Geographic Information Systems Data Sharing and Conformity Bill,’ which remains in effect today as [63F-1-507](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html). Key provisions of the SGID statute are: a central clearinghouse and repository, the requirement of for state agencies to contribute all geographic data acquired or produced that is classified public, and a role for UGRC in setting GIS standards and requirements. [More early Utah GIS history](https://drive.google.com/file/d/1H0KaE5JqL5KSNwCK5YTlQGSlbjnEWZfj/view?usp=sharing).
 
@@ -35,8 +33,6 @@ A decade in, GIS web services are much more more manageable by data stewards due
 _How can the remarkable vision that founded the SGID be reconciled with the distributed world of web-powered GIS data services? Can this be accomplished with minimal overhead, while taking advantage of the GIS workforce, distributed across State agencies? We believe that it can with a centralized tracking system_.
 
 #### A Proposal: Tracking SGID Web Services
-
-
 
 In the spirit of keeping it simple, the Tracking system should try to employ an online collaborative platform that is readily available to GIS staff that manage the update of State GIS data assets. Google Docs, GitHub, etc. are obvious possibilities.
 
@@ -61,12 +57,9 @@ We feel that the proposed Tracking system is a good method for ensuring that our
 
 #### Feedback and Next Steps...
 
-
-
 We've aired this idea with a few of you already and have received generally positive reactions and suggestions for refinement. After receiving your additional feedback in coming week(s), UGRC would like use this concept to begin implementing a publicly accessible 'tracking system' for GIS web service and data updates.
 
 ![dog food](/images/404.png)
-
 
 We'll start by [eating our own dog food](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) -- populating these tables with the information that we manage here at UGRC. Next we'll work with UDOT and other UMIP partner agencies to add all of the GIS layers used within the PEL preliminary environmental screening application. And after that, we'll work with willing GIS data managers to add their content to the system.
 

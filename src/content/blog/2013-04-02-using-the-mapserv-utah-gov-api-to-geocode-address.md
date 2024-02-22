@@ -15,7 +15,6 @@ Geographic coordinates for Utah addresses can now be located using the UGRC's We
 
 [![API Explorer](/images/404.png)](https://api.mapserv.utah.gov)
 
-
 The geocoding-related endpoints currently include single address geocoding, reverse geocoding, route and milepost lookup. The APIs and their parameters can be viewed and tested using the [API Explorer](https://api.mapserv.utah.gov).
 
 The street zone geocoding endpoint will accept a 5 digit zip code or common city names and abbreviations.

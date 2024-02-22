@@ -18,8 +18,6 @@ The Federal Emergency Management Agency and the U.S. Geological Survey (USGS) Na
 
 #### UPDATE 9/11/2018
 
-
-
 Three additional areas in Utah have been added to the 2018 project areas:
 
 - The Box Elder project (~2,238 square miles) covers areas of northern Box Elder County.
@@ -28,11 +26,9 @@ Three additional areas in Utah have been added to the 2018 project areas:
 
 All three project areas will be acquired as USGS QL1, 8 points per square meter. The acquisition of these areas will be completed in 2018, and project deliverables are scheduled to be completed by August 31, 2019. You are welcome to download the boundaries for all the project areas as a [geodatabase and shapefile](https://drive.google.com/a/utah.gov/uc?id=1BkO7aWhFARM-U--KGi4Wn3diNIx7kban&export=download).
 
-[![Project area map](/images/404.png "view project area map")]({% link images/2018UtahLidarAcquisition_8_30_18.png %})
+[![Project area map](/images/404.png 'view project area map')]({% link images/2018UtahLidarAcquisition_8_30_18.png %})
 
 #### UPDATE 7/17/2019
-
-
 
 With the exception of the Unitah Basin / Heber Valley project, managed through the USGS Geospatial Product and Service Contracts (GPSC), all other 2018 project areas are completed and available for download. The Unitah Basin / Heber Valley project should be completed and delivered soon. All other 2018 projects are available from [Raster.utah.gov](https://raster.utah.gov/). Below are links to the individual web pages for each project.
 
@@ -43,8 +39,6 @@ With the exception of the Unitah Basin / Heber Valley project, managed through t
 - [Box Elder]({% link data/elevation-and-terrain/2018-lidar-box-elder/index.md %})
 
 ### The Project Areas
-
-
 
 - Greater Sevier Watershed
 - 2017 Brian Head Fire Area
@@ -58,8 +52,6 @@ With the exception of the Unitah Basin / Heber Valley project, managed through t
 
 ### The Project Deliverables
 
-
-
 - Raw Point Cloud
 - Classified Point Cloud (2 or 8 points per square meter with 10cm vertical RMSE)
   - Ground
@@ -72,8 +64,6 @@ With the exception of the Unitah Basin / Heber Valley project, managed through t
 - Metadata
 
 ### The Project Partners
-
-
 
 - U.S. Geological Survey National Map: 3D Elevation Program (3DEP)
 - National Resource Conservation Service

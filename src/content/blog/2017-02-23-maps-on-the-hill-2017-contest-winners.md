@@ -19,8 +19,6 @@ A four judge panel, consisting of Beth Overhuls (Salt Lake County CIO), Evan Cur
 
 ### This year’s winners are:
 
-
-
 ![FFSL Map Booklet Page](/images/404.png)**UGIC 2017 Maps on the Hill - Best of Show**
 
 - Division of Forestry Fire and State Lands (FFSL) - Wildfire Risk (11)

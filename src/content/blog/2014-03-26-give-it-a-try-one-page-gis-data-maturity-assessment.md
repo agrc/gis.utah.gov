@@ -8,7 +8,7 @@ tags:
   - dnr
   - uintah basin
 date: 2014-03-26 15:53:05 -0600
-title: "Give it a Try: One Page GIS Data Maturity Assessment"
+title: 'Give it a Try: One Page GIS Data Maturity Assessment'
 published: false
 category: SGID Blog
 ---
