@@ -13,8 +13,6 @@ category: Uncategorized
 
 ### Poverty and Place
 
-
-
 We now know that poverty and place are connected. Numerous [studies](https://www.nytimes.com/2015/05/04/upshot/an-atlas-of-upward-mobility-shows-paths-out-of-poverty.html) point to evidence showing that place matters a great deal to an individual’s economic outlook. This is particularly true for children.
 
 [Research](http://www.equality-of-opportunity.org/images/nbhds_exec_summary.pdf) shows that children growing up in poverty are more likely to remain in poverty, but children who move to neighborhoods with more opportunity (particularly before their teenage years) have a much better chance of breaking the cycle.
@@ -27,8 +25,6 @@ Ultimately, the goal is to provide residents a viable path to upward economic mo
 
 ### GIS as a Community Tool
 
-
-
 [Identifying areas](https://www.nytimes.com/interactive/2015/05/03/upshot/the-best-and-worst-places-to-grow-up-how-your-area-compares.html) in the community that provide or lack these services is an essential step to creating a path forward. Geographic information systems (GIS) are well suited for this task. Using GIS, we are able to visualize the data as layers in a map. Combining the layers into one system allows us to spatially analyze the data together and ask questions such as “What areas in our community are best suited for a new charter school?”, or “Based on recent growth, where do we need to expand healthcare and transit services?”.
 
 Using spatial tools like suitability analysis, we can highlight areas on a map that meet these specific criteria (shown in Figure 1). The more layers we add, the bigger the questions we can ask. This is powerful when looking at complex issues such as [intergenerational poverty](https://jobs.utah.gov/edo/intergenerational/whatisigp.pdf).
@@ -37,9 +33,5 @@ Geographic information systems allow us to ask big questions. As a community too
 
 > Take a look at UGRC’s [**interactive neighborhood suitability map**]({% link developer/applications/suitability/index.html %}) to further explore the map below. The layers in this map give the user the ability to discover areas in the state where residents do and do-not have access to essential services, such as childcare, hospitals, grocery stores, libraries, and transit stops. This map shows a sample of what can be done using GIS and spatial analysis.
 
-<div class="flex flex--around">
-  <figure class="caption">
-    <a href="deleted" alt="Suitability Analysis Wasatch Front" loading="lazy" /></a>
-    <figcaption class="caption__text">Figure 1: Suitability Analysis along the Wasatch Front</figcaption>
-  </figure>
-</div>
+Figure 1: Suitability Analysis along the Wasatch Front
+![Suitability Analysis Wasatch Front](../../images/pillar-blog/2021-02-19-intergenerational-poverty/suitability_analysis_wasatchfront.png)

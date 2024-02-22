@@ -16,24 +16,14 @@ Through its Geospatial Excellence Awards, the [National States Geographic Inform
 
 At NSGIC's Annual Conference this September, two of the national geospatial excellence awards ([see all](https://nsgic.memberclicks.net/2017-NSGIC-awards0)) went to Utah-led initiatives.
 
-<div class="flex flex--center flex--around">
-  <figure class="caption">
-    <img class="caption__image" src="../../images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/KColeGOEDSmall.png" alt="Kelleigh Cole and GOED, Champion Award" loading="lazy" />
-    <figcaption class="caption__text">Kelleigh Cole and GOED, Champion Award</figcaption>
-  </figure>
-  <figure class="caption">
-    <img class="caption__image" src="../../images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/ECurtisSmall.png" alt="Evan Curtis, Catalyst Award" loading="lazy" />
-    <figcaption class="caption__text">Evan Curtis, Catalyst Award</figcaption>
-  </figure>
-  <figure class="caption">
-    <img class="caption__image" src="../../images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/RodBennett.png" alt="Rod Bennett" loading="lazy" />
-    <figcaption class="caption__text">Rod Bennett (left), Catalyst Award</figcaption>
-  </figure>
-  <figure class="caption">
-    <img class="caption__image" src="../../images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/TKnowltonSmall.png" alt="Ted Knowlton, Catalyst Award" loading="lazy" />
-    <figcaption class="caption__text">Ted Knowlton, Catalyst Award</figcaption>
-  </figure>
-</div>
+Kelleigh Cole and GOED, Champion Award
+![Kelleigh Cole and GOED, Champion Award](../../images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/KColeGOEDSmall.png)
+Evan Curtis, Catalyst Award
+![Evan Curtis, Catalyst Award](../../images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/ECurtisSmall.png)
+Rod Bennett (left), Catalyst Award
+![Rod Bennett](../../images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/RodBennett.png)
+Ted Knowlton, Catalyst Award
+![Ted Knowlton, Catalyst Award](../../images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/TKnowltonSmall.png)
 
 **Champion Award**: _Utah Governor's Office of Economic Development_
 
