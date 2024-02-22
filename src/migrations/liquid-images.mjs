@@ -14,8 +14,8 @@ for (const filename of filenames) {
   let matches;
   let changed = false;
 
-  if (frontMatter.published === false) {
-    console.log('Skipping unpublished post:', filename);
+  if (!(frontMatter.published === false)) {
+    console.log('Skipping published post:', filename);
     continue;
   }
 
@@ -60,5 +60,7 @@ for (const filename of filenames) {
 }
 
 mkdirSync('./log/', { recursive: true });
-appendFileSync('./log/blog-migration-deleted-images.log', '---published files---\n');
+appendFileSync('./log/blog-migration-deleted-images.log', '---unpublished files---\n');
 migratedFiles.forEach((path) => appendFileSync('./log/blog-migration-deleted-images.log', path + '\n'));
+
+process.exit(0);
