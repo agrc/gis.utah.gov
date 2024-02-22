@@ -1,5 +1,5 @@
 ---
-title: "Introduction: Utah LiDAR Coverage Application"
+title: 'Introduction: Utah LiDAR Coverage Application'
 published: false
 author:
   display_name: Rick Kelson
@@ -18,8 +18,7 @@ To accompany our [web pages of lidar projects]({% link data/elevation-and-terrai
 
 _**Please note:** The proposed project footprints can change frequently and will be updated as we receive more information._
 
-[![LiDAR Coverage Application](/images/404.png "LiDAR Coverage Application")](https://arcg.is/18SWjy)
-
+[![LiDAR Coverage Application](/images/404.png 'LiDAR Coverage Application')](https://arcg.is/18SWjy)
 
 Have questions? Reach out to {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.elevation text=' ' hide-punctuation=true %}{% endcapture %}
 {{ contact }}.

@@ -6,7 +6,7 @@ tags:
   - best practices
   - data
 date: 2014-04-30 18:11:06 -0600
-title: "Feedback Wanted: Proposed Best Practices for Tagging Utah Metadata"
+title: 'Feedback Wanted: Proposed Best Practices for Tagging Utah Metadata'
 published: false
 category: SGID Blog
 ---

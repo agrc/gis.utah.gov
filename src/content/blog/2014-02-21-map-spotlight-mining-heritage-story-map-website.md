@@ -4,7 +4,7 @@ author:
   email: ugrc@utah.gov
 tags: []
 date: 2014-02-21 14:14:24 -0700
-title: "Map Spotlight: Mining Heritage Story Map Website"
+title: 'Map Spotlight: Mining Heritage Story Map Website'
 published: false
 category: Uncategorized
 ---

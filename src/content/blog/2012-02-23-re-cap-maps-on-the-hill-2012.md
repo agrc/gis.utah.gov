@@ -7,7 +7,7 @@ tags:
   - ugic
 published: false
 date: 2012-02-23 14:41:42 -0700
-title: "Re-cap: Maps on the Hill - 2012"
+title: 'Re-cap: Maps on the Hill - 2012'
 category: Uncategorized
 ---
 

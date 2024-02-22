@@ -8,7 +8,7 @@ tags:
   - dnr
   - mapping spotlight
 date: 2013-12-06 13:28:31 -0700
-title: "Mapping Spotlight: Division of Water Resources Interactive Maps"
+title: 'Mapping Spotlight: Division of Water Resources Interactive Maps'
 published: false
 category: Uncategorized
 ---

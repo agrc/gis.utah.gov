@@ -6,7 +6,7 @@ author:
   email: gbunce@utah.gov
 date: 2018-08-31T11:00:00.000Z
 tags:
-  - "911"
+  - '911'
   - next generation 911
   - utah 911
 category: Uncategorized
@@ -21,8 +21,6 @@ Currently with E-911, the <abbr title="automatic location identification">ALI</a
 Now if you're not familiar with this topic, all these acronyms might sound like mumbo jumbo, and if that's the case, don't worry (and also, take a look at the [Recommended Reading and References](#further-reading) section below). We'll make it easy for you! The big takeaway is this: _accuracy and consistency of GIS data in NG911 systems are extremely critical_.
 
 ### Standards and Best Practices
-
-
 
 `Required Datasets`
 
@@ -54,8 +52,6 @@ For further reading see [(reference 3, 4, 5, 7, 8, 9, 10)](#further-reading)
 
 ### Who's Responsible for What? [(see graphic below)](#graphic)
 
-
-
 <abbr title="Utah Communications Authority">UCA</abbr> `911 Division` in conjunction with `UGRC` will:
 
 - Provide Utah's statewide [NG911 GIS database](/data/911);
@@ -83,11 +79,7 @@ For further reading see [section 4.7 of ref 1, section 5.2.1 of ref 5, and secti
 
 ## NG911 GIS Roadmap
 
-
-
 #### `Near-Term`
-
-
 
 Data validation and cleanup are the next, most logical steps for GIS readiness. These are often considered the first steps in NG911 transition. At the moment, UGRC is focused on facilitating two specific data validation checks, both mentioned in the previous Data Requirements section of this page:
 
@@ -97,8 +89,6 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 - UGRC will then work with the data providers to resolve any valid discrepancies.
 
 ##### Address Component Cross-Check
-
-
 
 - NG911 Core Services state that site/structure address points and road centerlines must be consistent. In other words: unless intended, each site/structure address point should match an associated road centerline. This supports the requirement that a civic address be considered valid if it can be located within the database uniquely [(section 4.8 of ref 1)](#further-reading). Here are some common mismatch issues UGRC has found:
   - Address components don’t match, including mismatching in the following address component fields: pre-direction, street name, post type, and post direction.
@@ -110,8 +100,6 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 - UGRC will work with data providers to resolve any unintended discrepancies (see the [What can you do now?](#do-now) section below).
 
 #### `Mid-Term`
-
-
 
 - Identify and resolve any gaps and/or overlaps in the emergency service boundaries (e.g., law, fire, and EMS).
 - Resolve address range overlap in road centerlines.
@@ -125,16 +113,12 @@ Data validation and cleanup are the next, most logical steps for GIS readiness. 
 
 #### `Long-Term`
 
-
-
 - Get all 911-related data providers the needed training and access to the statewide NG911 multi-user data editing platform/application.
 - Incorporate a workflow to review these edits (from the NG911 multi-user data editing platform) and push them into the official State of Utah NG911 database (on a daily basis).
 - Establish the NG911 multi-user data editing platform as Utah’s official NG911 data editor [(section 5.1 of ref 5 and section 4.7 of ref 1)](#further-reading).
 - Provision Utah's statewide, [NG911 GIS database](/data/911) so it can used locally by the PSAPs (for their record keeping and dispatch systems). This would eliminate data duplication and ultimately provide all 911 users with the best possible data. This concept is in line with the <abbr title="Utah Communications Authority">UCA</abbr> 911 Division promotion of a consistent 911 service across the state [(sections 5.3 and 6 of ref 1)](#further-reading).
 
 ## What Can You Do Now?
-
-
 
 If you are a 911 GIS data provider, it's in your best interest to begin validating and provisioning your data as soon as possible. In the coming months, UGRC will geocode the ALI database and begin working with the data providers to resolve missing addresses.
 
@@ -152,8 +136,6 @@ Keep in mind:
 {{ contact }}
 
 ## Recommended Reading and References
-
-
 
 The [<abbr title="Utah Communications Authority">UCA</abbr> 911 Division](https://uca911.org/911-division) and [<abbr title="National Emergency Number Association">NENA</abbr>](https://www.nena.org/) are two valuable sources for further reading on NG911. Below are a few recommended starting points for learning more about NG911 and how it affects us as GIS professionals. (These sources are in no specific order; the numbering is related to the references previously listed throughout this article.)
 

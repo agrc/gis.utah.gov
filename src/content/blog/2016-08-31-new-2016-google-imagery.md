@@ -15,11 +15,11 @@ category: Uncategorized
 
 New 2016 high-resolution Google imagery is available from the Discover server. Updated areas include the Salt Lake Block and part of the Torrey Block that was previously covered by clouds. The new imagery can be found in the `utah` service. The new imagery is not yet available for download and the archive services have not been updated but should be very soon.
 
-[![Google update](/images/404.png "view sample")]({% link images/2016GoogleImagerySample.png %})
+[![Google update](/images/404.png 'view sample')]({% link images/2016GoogleImagerySample.png %})
 
-[![Google update](../../images/pillar-blog/2016-08-31-new-2016-google-imagery/slcoblock_sm.png "view sample")](../../images/pillar-blog/2016-08-31-new-2016-google-imagery/slcoblock.png)
+[![Google update](../../images/pillar-blog/2016-08-31-new-2016-google-imagery/slcoblock_sm.png 'view sample')](../../images/pillar-blog/2016-08-31-new-2016-google-imagery/slcoblock.png)
 
-[![Google update](../../images/pillar-blog/2016-08-31-new-2016-google-imagery/torreyblock_sm.png "view sample")](../../images/pillar-blog/2016-08-31-new-2016-google-imagery/torreyblock.png)
+[![Google update](../../images/pillar-blog/2016-08-31-new-2016-google-imagery/torreyblock_sm.png 'view sample')](../../images/pillar-blog/2016-08-31-new-2016-google-imagery/torreyblock.png)
 
 ArcMap users may need to clear the cache on the `utah` layer from Discover to see the new imagery. This can be done by going to the service’s `Layer Properties -> Cache` tab and selecting `Clear Local Cache Now`. Be patient as this could take several minutes.
 

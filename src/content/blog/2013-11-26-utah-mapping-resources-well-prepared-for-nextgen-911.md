@@ -3,7 +3,7 @@ author:
   display_name: Bert Granberg
   email: ugrc@utah.gov
 tags:
-  - "911"
+  - '911'
   - address
   - boundaries
   - ecrf
@@ -15,7 +15,7 @@ tags:
   - society
   - transportation
 date: 2013-11-26 14:21:05 -0700
-title: "Utah Mapping Resources: Well-Prepared for NextGen 9-1-1"
+title: 'Utah Mapping Resources: Well-Prepared for NextGen 9-1-1'
 published: false
 category: SGID Blog
 ---

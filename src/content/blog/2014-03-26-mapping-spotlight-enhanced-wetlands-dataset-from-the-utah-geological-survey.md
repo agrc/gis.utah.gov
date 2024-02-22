@@ -10,7 +10,7 @@ tags:
   - ugs
   - water
 date: 2014-03-26 15:30:15 -0600
-title: "Map Spotlight: Enhanced Wetlands Dataset from the Utah Geological Survey"
+title: 'Map Spotlight: Enhanced Wetlands Dataset from the Utah Geological Survey'
 published: false
 category: SGID Blog
 ---

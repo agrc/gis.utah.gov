@@ -17,7 +17,6 @@ Last week, UGRC finished a substantial upgrade to the Utah statewide address loc
 
 [![Geocoding image](/images/404.png)](![Large]({% link images/Geocode.png %}))
 
-
 The publicly accessible geocoding service allows developers to include 'best effort' Utah address finding functionality into web applications at no cost.
 
 Just as important, this service enables database administrators to build processes that allow any database containing information tied to an address to pick up geographic coordinates so that information can be easily integrated and viewed on mapping platforms.
