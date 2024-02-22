@@ -3,14 +3,14 @@ author:
   display_name: Bert Granberg
   email: ugrc@utah.gov
 tags:
-  - "911"
+  - '911'
   - dot
   - ng911
   - road centerlines
   - roads
   - transportation
 date: 2016-09-16T19:27:44.000Z
-title: "Road Centerlines: Schema Update and Regional Workshop Notes"
+title: 'Road Centerlines: Schema Update and Regional Workshop Notes'
 published: false
 category: Uncategorized
 ---
