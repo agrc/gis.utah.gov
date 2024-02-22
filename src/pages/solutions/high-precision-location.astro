@@ -8,6 +8,7 @@ import { Image } from 'astro:assets';
 
 import developmentPhoto from '@images/solutions/development.svg';
 import enhancePhoto from '@images/solutions/enhance.svg';
+import mapPhoto from '@images/solutions/map.svg';
 import rocketPhoto from '@images/solutions/rocket.svg';
 
 import ExternalLink from '@components/page/ExternalLink.astro';
@@ -45,6 +46,7 @@ const page: IStandardPageMetadata = {
       through a wireless connection using the Networked Transport of RTCM via Internet Protocol (NTRIP).
     </p>
   </Section>
+
   <Section {...page.section[1]}>
     <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
     <p>
@@ -54,6 +56,7 @@ const page: IStandardPageMetadata = {
       <i>insert image of drone flying medical supplies</i>
     </p>
   </Section>
+
   <Section {...page.section[2]}>
     <Image
       slot="image"
@@ -67,7 +70,14 @@ const page: IStandardPageMetadata = {
       appropriate lane. <i>insert images of vehicle driving with standard GPS and real-time network</i>
     </p>
   </Section>
+
   <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      src={enhancePhoto}
+      alt="a person with a box labeled v2 that is upgrading their application"
+      class="w-full max-w-[400px]"
+    />
     <p>
       High-accuracy GNSS networks have been used in science and research to study and better understand the world around
       us. Our GNSS network can help support Disaster Response Management, agricultural and forestry, landslide
@@ -76,7 +86,9 @@ const page: IStandardPageMetadata = {
       > shows land movement following a 2011 earthquake in Japan.
     </p>
   </Section>
+
   <Section {...page.section[4]}>
+    <Image slot="image" src={mapPhoto} alt="two people holding a map" class="w-full max-w-[400px]" />
     <p>
       A high-accuracy GNSS network plays a crucial role in meteorology and mitigating the effects of climate change.
       Real-time measurements can help improve weather predictions, severe weather monitoring, atmospheric modeling, and
