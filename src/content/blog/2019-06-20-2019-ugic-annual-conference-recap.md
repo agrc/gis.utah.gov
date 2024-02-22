@@ -71,7 +71,7 @@ The conference had great submissions for the Map, App, and Poster Gallery and Co
 
 ### What Was New?
 
-_Exceptional Attendance_: This year’s conference was exceptionally well attended, with a total of 263 attendees (including both registrants and vendors---possibly the highest number of vendors the conference has seen), 121 students in two days of preconference training (One section of the ArcGIS Pro preconference training even sold out, which is the first time, that UGIC knows of, that a class has been completely filled!), and over 200 people at the Thursday evening social on the Heber Valley Railroad.
+_Exceptional Attendance_: This year’s conference was exceptionally well attended, with a total of 263 attendees (including both registrants and vendors--possibly the highest number of vendors the conference has seen), 121 students in two days of pre-conference training (One section of the ArcGIS Pro pre-conference training even sold out, which is the first time, that UGIC knows of, that a class has been completely filled!), and over 200 people at the Thursday evening social on the Heber Valley Railroad.
 
 [_Mobile Agenda_](https://website.webmobi.com/ugic2019): UGIC first used a conference app at the 2018 conference held in Vernal. The 2019 conference was the first UGIC conference where there wasn’t a paper agenda booklet in addition to any digital materials, and this was incredibly successful. The conference app provided attendees with easy-to-use venue maps and allowed users to make agenda changes on the fly as needed.
 
@@ -81,7 +81,7 @@ _Other_: A live band performed during the Wednesday evening vendor social. There
 
 Some aspects of the conference are consistent from year to year, for instance: the fantastic presentations from the Utah GIS community. Also, the UGIC conference is a great time for all attendees! Between the excellent sessions, the vendor social, the indoor golf tournament, the BBQ dinner, and train ride, there was something for everyone.
 
-Another consistent part of the conference is a great venue in one of Utah’s great cities. This year’s Zermatt Resort was a fantastic venue. There was ample room for all of the conference activities, including the keynote presentations, breakouts, preconference training classes, vendor social, map and poster gallery, and indoor golf tournament. The Zermatt was also close by for the off-site BBQ dinner and train ride at the Heber Valley Railroad.
+Another consistent part of the conference is a great venue in one of Utah’s great cities. This year’s Zermatt Resort was a fantastic venue. There was ample room for all of the conference activities, including the keynote presentations, breakouts, pre-conference training classes, vendor social, map and poster gallery, and indoor golf tournament. The Zermatt was also close by for the off-site BBQ dinner and train ride at the Heber Valley Railroad.
 
 ## To Sum It Up
 

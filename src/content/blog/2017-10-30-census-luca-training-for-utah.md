@@ -34,7 +34,7 @@ Thursday, November 2nd, from 1pm - 5pm
 195 North 1950 West, Salt Lake City
 MASOB Building, Room 1019 A/B
 
-Please **[RVSP for the Nov. 2nd training](https://docs.google.com/forms/d/e/1FAIpQLSczYHcjdbW33f-8VpnevDEq9rOL4V18astz6uU74VAUpXJFZg/viewform?usp=sf_link)**.
+Please **[RSVP for the Nov. 2nd training](https://docs.google.com/forms/d/e/1FAIpQLSczYHcjdbW33f-8VpnevDEq9rOL4V18astz6uU74VAUpXJFZg/viewform?usp=sf_link)**.
 
 At this meeting, Census will provide a technical overview of the options for participation in the LUCA address list review. UGRC has asked for Census to move quickly through the basics so additional time can be spent on the QGIS-based application and the shapefile submission option.
 
@@ -43,7 +43,7 @@ Utah communities do not yet need to be formally registered for the LUCA review t
 ### Larger Benefit
 
 Lastly, a point of emphasis. Maintaining a GIS layer of addresses is obviously of great value for more than just the 2020 census. Active data exchanges between Census and the Postal Service mean that the most important address work to support the LUCA process is expected to be adding missing residential addresses that do not receive traditional street delivery-style mail such as:
-subaddresses (unit and apartment numbers), residences with clustered mailboxes such as dorms, trailer parks, or gated communities
+sub-addresses (unit and apartment numbers), residences with clustered mailboxes such as dorms, trailer parks, or gated communities
 rural delivery route addresses, and communities with PO Box only mail delivery.
 The LUCA process will push us all to create/refine Utah address data resources. We'll also discuss how this work can best be organized to support the Census process but also meet similar data requirements for emergency response and other vital service needs, while complying with the strict legal restrictions for handling the input address data received from Census.
 
