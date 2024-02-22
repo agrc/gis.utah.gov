@@ -17,7 +17,7 @@ For those of us not in the GIS field at the time, 1991 was a significant year in
 
 In March of 1991, Governor Norman Bangerter signed into law Senate Bill 21, sponsored by Senator Dixie Leavitt. That was 25 years ago this Spring and, nationally, it was one of the, if not the first, instances of GIS being codified into state statute.
 
-<figure class="caption caption--right"><a href ="{% link images/SGID25YEARS.png %}"><img class="caption__image" src="{% link images/SGID25YEARS_small.png %}" alt="SGID 25th Anniversary Sticker" loading="lazy" /></a><figcaption class="caption__text">Commemorative SGID 25th<br>Anniversary Sticker</figcaption></figure>
+<figure class="caption caption--right"><a href ="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid25years.png"><img class="caption__image" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid25years_small.png" alt="SGID 25th Anniversary Sticker" loading="lazy" /></a><figcaption class="caption__text">Commemorative SGID 25th<br>Anniversary Sticker</figcaption></figure>
 
 Happy 25th Anniversary SGID!
 
@@ -48,14 +48,14 @@ Get yours from an UGRC staffer at your next opportunity.
 <div class="grid">
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">Cover of SGID Data CD, 1995</h5>
-        <img alt="Cover, SGIC CD, 1995" src="{% link images/SGID_Cover.JPG %}" loading="lazy" />
+        <img alt="Cover, SGIC CD, 1995" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cover.jpg" loading="lazy" />
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">SGID Data CD, 1995</h5>
-        <img alt="Inside, SGID CD, 1995" src="{% link images/SGID_CD.JPG %}" loading="lazy" />
+        <img alt="Inside, SGID CD, 1995" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cd.jpg" loading="lazy" />
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">SGID Data User Guide, 1999</h5>
-        <img alt="SGID Data User Guides, 1999" src="{% link images/SGID_UserGuide.JPG %}" loading="lazy" />
+        <img alt="SGID Data User Guides, 1999" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_userguide.jpg" loading="lazy" />
     </div>
 </div>

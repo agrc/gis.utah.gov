@@ -11,7 +11,7 @@ tags:
 category: SGID Blog
 ---
 
-![On Street Bike Lanes]({% link images/bike_lane.png %})
+![On Street Bike Lanes](/images/404.png)
 
 
 During the summer of 2020, UDOT, WFRC and other transportation agencies evaluated every UGRC road centerline file segment (functional classification "Collector" and above) throughout the state for the presence and type of a bike facility. The evaluation used the most recent Google Streetview available to determine what bicycle facility type was present on each side of the road. As of the January, 2021 road update, that data is now appended to the [SGID Road centerlines layer]({% link data/transportation/roads-system/index.html %}) (see the Bike_L and Bike_R fields) and is available for planning or other uses!

@@ -13,8 +13,8 @@ category: Uncategorized
 Have you ever wondered why the patterns of development in the Western United States are so orthogonal (i.e., "right-angled")?
 
 <figure class="caption caption--right">
-  <a href="{% link images/SaltLakeHistoric.jpg %}" title="click to see the full sized image">
-    <img class="caption__image" src="{% link images/SaltLakeHistoric_sm.jpg %}" alt="1891 Salt Lake City Bird's Eye View" loading="lazy" />
+  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/saltlakehistoric.jpg" title="click to see the full sized image">
+    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/saltlakehistoric_sm.jpg" alt="1891 Salt Lake City Bird's Eye View" loading="lazy" />
   </a>
   <figcaption class="caption__text" markdown="span">Fig 1: 1891 Salt Lake City Bird's Eye View[^1]</figcaption>
 </figure>
@@ -28,7 +28,7 @@ It turns out this gridiron pattern is connected to a 17th-century mathematician,
 
 
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/GunterChain.jpg %}" alt="Gunter Chain" loading="lazy" />
+  <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/gunterchain.jpg" alt="Gunter Chain" loading="lazy" />
   <figcaption class="caption__text" markdown="span">Fig 2: Gunter Chain[^2]</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ Because of its ease in calculations, the Gunter Chain was quickly adopted and be
 
 
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/NorthwestTerritory.png %}" alt="Northwest Territory" loading="lazy" />
+  <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/northwestterritory.png" alt="Northwest Territory" loading="lazy" />
   <figcaption class="caption__text" markdown="span">Fig 3: Northwest Territory[^3]</figcaption>
 </figure>
 
@@ -58,13 +58,13 @@ The early American Congress further solidified the acre as the official unit of 
 I know, I know… that was probably more history than you were looking for, but really, that’s the annotated crash course for understanding the basis of the present-day Public Land Survey System (PLSS) (Fig 4). This system was originally proposed by Thomas Jefferson and was mandated by Congress to oversee the cadastral surveys of the public lands. Essentially, it was set up to facilitate the transfer of federal lands to private citizens. The Bureau of Land Management (BLM) is the official record keeper of the surveys. Over the past 200 years, almost 1.5 billion acres have been surveyed into townships (and ranges) and sections. These surveys were conducted primarily west of the original thirteen colonies and north of Texas (Texas has Spanish roots and Spanish land grants). Presently, areas of Alaska are still being surveyed.
 
 <figure class="caption caption--left caption--flow">
-  <a href="{% link images/principal_meridians.png %}" title="click to see the full sized image">
-    <img class="caption__image" src="{% link images/principal_meridians_sm.png %}" alt="PLSS Principal Meridians" loading="lazy" />
+  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/principal_meridians.png" title="click to see the full sized image">
+    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/principal_meridians_sm.png" alt="PLSS Principal Meridians" loading="lazy" />
   </a>
   <figcaption class="caption__text" markdown="span">Fig 4: PLSS Principal Meridians[^4]</figcaption>
 </figure>
 <figure class="caption caption--right caption--flow">
-  <img class="caption__image" src="{% link images/salt_lake_meridian.png %}" alt="Salt Lake Meridian" loading="lazy" />
+  <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/salt_lake_meridian.png" alt="Salt Lake Meridian" loading="lazy" />
   <figcaption class="caption__text" markdown="span">Fig 5: Salt Lake Meridian[^5]</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ As with any measuring system, you need a starting point. Within each PLSS system
 Townships are made up of thirty-six square miles, with each square mile known as a section. Sections are eventually subdivided down to an acre by way of half sections, quarter sections, quarter-quarter sections, etc. (Fig 6). An acre, again, is simply 10 square chains, and there are 640 acres in a section (a square-mile) or 40 acres in a quarter-quarter section. Hence the phrase, “40 acres and mule” is all you needed to be self-sufficient.
 
 <figure class="caption caption--right">
-  <img class="caption__image" src="{% link images/townships_sections.png %}" alt="Townships and Sections" loading="lazy" />
+  <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/townships_sections.png" alt="Townships and Sections" loading="lazy" />
   <figcaption class="caption__text" markdown="span">Fig 6: Townships, Ranges and Sections[^6]</figcaption>
 </figure>
 
@@ -88,14 +88,14 @@ It is precisely this survey pattern that explains why the western United States 
 
 
 <figure class="caption caption--left caption--flow">
-  <a href="{% link images/plat_of_zion.png %}" title="click to see the full sized image">
-    <img class="caption__image" src="{% link images/plat_of_zion_sm.png %}" class="width: 100%;" alt="Plat of Zion" loading="lazy" />
+  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/plat_of_zion.png" title="click to see the full sized image">
+    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/plat_of_zion_sm.png" class="width: 100%;" alt="Plat of Zion" loading="lazy" />
   </a>
   <figcaption class="caption__text" markdown="span">Fig 7: Plat of Zion[^7]</figcaption>
 </figure>
 <figure class="caption caption--right caption--flow">
-  <a href="{% link images/ColonialBoston.png %}" title="click to see the full sized image">
-    <img class="caption__image" src="{% link images/ColonialBoston_sm.png %}" alt="Colonial Boston" loading="lazy" />
+  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/colonialboston.png" title="click to see the full sized image">
+    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/colonialboston_sm.png" alt="Colonial Boston" loading="lazy" />
   </a>
   <figcaption class="caption__text" markdown="span">Fig 8: Colonial Boston[^8]</figcaption>
 </figure>
@@ -105,8 +105,8 @@ One of the more dominant patterns you'll see in the West is the rectangular city
 Large city blocks are a common theme in the West. They typically vary between 198 feet, 330 feet, and 660 feet (which is 3, 5, and 10 chains). Often, two sides of the block are 660 feet, with the adjacent sides being 198 feet or 330 feet. Looking at Portland (Fig 9), their blocks are unusually small for the West at 198 feet x 198 feet. On the other side of the spectrum, Salt Lake City (Fig 9) is known for having the largest blocks in the West at 660 feet x 660 feet. Blocks are more rectangular in San Francisco (Fig 9) and Phoenix (Fig 9), as they measure 660 feet x 198 feet and 660 feet x 330 feet, respectively.
 
 <figure class="caption caption--right">
-  <a href="{% link images/urban_grids.png %}" title="click to see the full sized image">
-    <img class="caption__image" src="{% link images/urban_grids_sm.png %}" alt="Western Urban Grid" loading="lazy" />
+  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/urban_grids.png" title="click to see the full sized image">
+    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/urban_grids_sm.png" alt="Western Urban Grid" loading="lazy" />
   </a>
   <figcaption class="caption__text" markdown="span">Fig 9: Variations on the Western Urban Grid[^9]</figcaption>
 </figure>
@@ -124,15 +124,15 @@ Section lines in North Dakota and South Dakota are often used as the basis for t
 One last notable Western development pattern is the disguised grid. These are often large communities where the land is typically purchased by the section (or more) and then is made to feel less grid-like. Two good examples of this pattern are Sun Lakes (Fig 11) and Sun City in Arizona. As you move through these communities, you forget that you're on the grid.
 
 <figure class="caption caption--left caption--flow">
-  <a href="{% link images/SectionLineRoads.png %}" title="click to see the full sized image">
-    <img class="caption__image" src="{% link images/SectionLineRoads_sm.png %}" alt="Section Line Roads Southwest of Boise, ID" loading="lazy" />
+  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/sectionlineroads.png" title="click to see the full sized image">
+    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/sectionlineroads_sm.png" alt="Section Line Roads Southwest of Boise, ID" loading="lazy" />
   </a>
   <figcaption class="caption__text" markdown="span">Fig 10: Section Line Roads Southwest of Boise, ID[^10]</figcaption>
 </figure>
 
 <figure class="caption caption--right caption--flow">
-  <a href="{% link images/SunLakes_grid.png %}" title="click to see the full sized image">
-    <img class="caption__image" src="{% link images/SunLakes_grid_sm.png %}" alt="Sun City, AZ (Disguising the Grid)" loading="lazy" />
+  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/sunlakes_grid.png" title="click to see the full sized image">
+    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/sunlakes_grid_sm.png" alt="Sun City, AZ (Disguising the Grid)" loading="lazy" />
   </a>
   <figcaption class="caption__text" markdown="span">Fig 11: Sun City, AZ (disguising the grid)[^11]</figcaption>
 </figure>

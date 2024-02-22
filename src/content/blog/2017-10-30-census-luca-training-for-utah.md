@@ -20,7 +20,7 @@ _The info below is a re-posting of information UGRC has emailed to county and ci
 
 
 
-![Census LUCA Program, 2018]({% link images/LUCA2018.png %})The Census Bureau's Local Update of Census Addresses (LUCA) program allows city, county, and state government to review and suggest edits to the master residential address list that Census uses to plan and execute their survey work. Of particular importance is the ability for Census to track responses across multiple survey mechanisms (field workers, survey-by-mail, and, this year, online response).
+![Census LUCA Program, 2018](../../images/pillar-blog/2017-10-30-census-luca-training-for-utah/luca2018.png)The Census Bureau's Local Update of Census Addresses (LUCA) program allows city, county, and state government to review and suggest edits to the master residential address list that Census uses to plan and execute their survey work. Of particular importance is the ability for Census to track responses across multiple survey mechanisms (field workers, survey-by-mail, and, this year, online response).
 
 While LUCA participation is optional, many cities and counties plan to participate in the address list review. The closer the Census Bureau's master database matches the actual addresses on the ground in your community, the better shot you've got to be fully counted.
 

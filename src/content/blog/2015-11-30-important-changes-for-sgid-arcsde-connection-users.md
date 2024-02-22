@@ -9,7 +9,7 @@ published: false
 category: Uncategorized
 ---
 
-![connection dialog]({% link images/database_connection_dialog.png %})
+![connection dialog](/images/404.png)
 
 
 UGRC is in the process of migrating our MS SQL database environment from Microsoft SQL Server 2008 to Microsoft SQL Server 2014. _**This migration will only impact users who use the preferred 'direct connect' route to use SGID ArcSDE database over the State Network**_. Keep in mind that many counties and cities use the DTS operated State Network as their ISP, so the impact will extend beyond state government settings.

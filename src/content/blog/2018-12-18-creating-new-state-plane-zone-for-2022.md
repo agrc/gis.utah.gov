@@ -13,7 +13,7 @@ category: GPS-surveyor
 
 In 2022 the <abbr title="National Geodetic Survey">NGS</abbr> plans to publish a series of new horizontal reference frames that will replace the <abbr title="North American Datum of 1983">NAD83</abbr> and a vertical reference frame that will replace the <abbr title="North American Vertical Datum of 1988">NAVD88</abbr>.
 
-[![Preliminary zone layout]({% link images/preliminary_zone_layout_thumb.png %}))
+[![Preliminary zone layout](../../images/pillar-blog/2018-12-18-creating-new-state-plane-zone-for-2022/preliminary_zone_layout_thumb.png))
 
 The new horizontal reference frames are the:
 

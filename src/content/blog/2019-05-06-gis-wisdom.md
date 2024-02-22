@@ -19,7 +19,7 @@ I'd like to suggest that there are some aspects of our platform that we can lear
 
 Here are seven common GIS concepts and what we can learn from them.
 
-![GIS Wisdom]({% link images/gis_wisdom.png %})
+![GIS Wisdom](../../images/pillar-blog/2019-05-06-gis-wisdom/gis_wisdom.png)
 
 ### 1. Versioning
 

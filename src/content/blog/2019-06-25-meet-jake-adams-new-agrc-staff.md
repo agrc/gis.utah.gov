@@ -20,7 +20,7 @@ IT Analyst II
 
 
 
-![Jacob Adams photo]({% link images/JacobAdams.jpg %})
+![Jacob Adams photo](../../images/pillar-blog/2019-06-25-meet-jake-adams-new-agrc-staff/jacobadams.jpg)
 
 I do a little bit of everything—I’m part developer, part data geek, part cartographer. I’ll be handling our Discover service for licensed aerial imagery and general basemaps and helping out with the data in the SGID.
 

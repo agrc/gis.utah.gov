@@ -20,7 +20,7 @@ The SGID was established by state law in 1991 and ensures that GIS map layers ar
 
 In the past, agencies completed data maturity assessments, which provide UGRC with a good foundation for updating and consolidating agency GIS data.
 
-![SGID Data Lifecycle photo]({% link images/SGID_lifecycle.jpg %})
+![SGID Data Lifecycle photo](../../images/pillar-blog/2018-12-13-the-sgid-moving-forward/sgid_lifecycle.jpg)
 
 **Oh yeah, that’s right. And what is UGRC working on now with the SGID?**
 

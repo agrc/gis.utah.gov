@@ -15,7 +15,7 @@ category: Developer
 
 While technology advances towards products with greater resolution and accuracy, sometimes more data isn’t always better data. Sometimes, being able to see general trends and relative differences paints a more interesting picture than sub foot imagery or lidar. This is the case when terrain is dumbed down and represented with generalized contour polygons.
 
-![Contour Polygons]({% link images/contoursPolys.png %})Generalized contour polygons are relatively easy to create (no GISP required) and allows the user multiple ways to symbolize the data depending on the desired cartographic effect. Probably the most difficult part of creating the contours is deciding how much to generalize the terrain and what contour interval is best suited for the intended scale, unfortunately a bit of trial and error can be involved. An added benefit of creating contour polygons are the derivative data products like Tanaka contours that can be created once the base elevation and polygons are generated.
+![Contour Polygons](../../images/pillar-blog/2017-11-27-dumbing-down-terrain-with-contour-polygons/contourspolys.png)Generalized contour polygons are relatively easy to create (no GISP required) and allows the user multiple ways to symbolize the data depending on the desired cartographic effect. Probably the most difficult part of creating the contours is deciding how much to generalize the terrain and what contour interval is best suited for the intended scale, unfortunately a bit of trial and error can be involved. An added benefit of creating contour polygons are the derivative data products like Tanaka contours that can be created once the base elevation and polygons are generated.
 
 To create contours using the steps below you will need a DEM and ArcGIS with the Spatial Analyst Extension.
 
@@ -67,7 +67,7 @@ Convert your reclassified [raster to polygons](https://pro.arcgis.com/en/pro-app
 arcpy.RasterToPolygon_conversion(r'C:\Contours.gdb\dem30_reclass', 'ContourPolygons', 'SIMPLIFY', 'VALUE')
 ```
 
-![Tanaka Contours]({% link images/tanaka.png %})If you’ve made it this far and created contour polygons, you might as well and take it a step further and create [Tanaka contours](http://wiki.gis.com/wiki/index.php/Tanaka_contours). Tanaka contours were developed by Japanese cartographer Tanaka Kitiro in 1950. Using this technique terrain is represented by a terraced effect with the leading northwest edge of the contour illuminated by a light source and the opposite side in shadow.
+![Tanaka Contours](../../images/pillar-blog/2017-11-27-dumbing-down-terrain-with-contour-polygons/tanaka.png)If you’ve made it this far and created contour polygons, you might as well and take it a step further and create [Tanaka contours](http://wiki.gis.com/wiki/index.php/Tanaka_contours). Tanaka contours were developed by Japanese cartographer Tanaka Kitiro in 1950. Using this technique terrain is represented by a terraced effect with the leading northwest edge of the contour illuminated by a light source and the opposite side in shadow.
 
 To create Tanaka contours all you need is your reclassified DEM. To start, create 2 [hillshades](https://pro.arcgis.com/en/pro-app/tool-reference/3d-analyst/hillshade.htm), one with shadows and another without.
 
@@ -82,10 +82,10 @@ And finally, highlight the illuminated edges and shadows with an [aspect raster]
 arcpy.Aspect_3d(r'C:\Contours.gdb\dem30_reclass', 'ContourAspect')
 ```
 
-![Shaded Contours]({% link images/tanakaShaded.png %})Now that you’ve spent all this time creating data, it’s time to start experimenting with how it’s symbolized in ArcMap. For the two hillshades all you’ll need to do is adjust the transparency to your liking. For the aspect layer you will need to open the `Layer Properties Symbology` tab and check the box next to `Display Background Value` and set the value to `-1` and the color to `transparent`. This will remove all the black areas, leaving the portions of the contours that are either illuminated or shadowed. Everything else is a matter of personal preference.
+![Shaded Contours](../../images/pillar-blog/2017-11-27-dumbing-down-terrain-with-contour-polygons/tanakashaded.png)Now that you’ve spent all this time creating data, it’s time to start experimenting with how it’s symbolized in ArcMap. For the two hillshades all you’ll need to do is adjust the transparency to your liking. For the aspect layer you will need to open the `Layer Properties Symbology` tab and check the box next to `Display Background Value` and set the value to `-1` and the color to `transparent`. This will remove all the black areas, leaving the portions of the contours that are either illuminated or shadowed. Everything else is a matter of personal preference.
 
 If you had trouble creating any of the layers in the steps above, or are interested in layer files for symbology, everything can be [downloaded](https://drive.google.com/file/d/1h066IIOiEcN7owUSh7MjUYD70npbz2ki/view?usp=sharing).
 
 If you have a favorite cartographic technique or dataset that you would like to highlight, please send it our way.
 
-![Funky Contours]({% link images/tanakaFunky.png %})
+![Funky Contours](../../images/pillar-blog/2017-11-27-dumbing-down-terrain-with-contour-polygons/tanakafunky.png)

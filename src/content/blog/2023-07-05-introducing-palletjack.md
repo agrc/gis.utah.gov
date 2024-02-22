@@ -20,7 +20,7 @@ I'm excited to introduce `palletjack`, a python data pipeline library for updati
 
 palletjack can speed up your ETL script development time by handling all the drudgery of extracting data from external sources and loading your transformed data into AGOL hosted feature layers, freeing you to focus on the transformations specific to your unique project.
 
-![palletjack does lots of the repetitive work for you]({% link images/palletjack_overview.png %})
+![palletjack does lots of the repetitive work for you](../../images/pillar-blog/2023-07-05-introducing-palletjack/palletjack_overview.png)
 
 
 palletjack uses [spatially-enabled DataFrames](https://developers.arcgis.com/python/guide/introduction-to-the-spatially-enabled-dataframe/) as the common data format between many different external data formats and hosted feature services in AGOL. They allow you to simply and quickly transform your data as desired: adding or renaming attributes, calculating new attributes, or merging multiple datasets into one.

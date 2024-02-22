@@ -30,7 +30,7 @@ In order to facilitate Utah's transition to the NG911 system, UGRC is preparing 
 
 With that information in mind, let's get back to UGRC's Python script. Our new script will automatically build jurisdiction polygons based on other boundaries that are maintained in the SGID (e.g., counties, municipalities). Police departments generally cover their own municipal boundaries, while county sheriff's offices generally cover the rest of the county land that doesn't belong to a municipality. However, not all municipalities have their own police department, and some police departments cover multiple municipalities. Further, there are unique law enforcement agencies that aren't associated with either county or municipal boundaries (e.g., Ute tribal police). Each of these nuances is handled by the Python script, which references external files that list which police departments cover which municipalities or contain static boundaries for the unique law enforcement agencies.
 
-![NG911 Law Enforcement Boundaries]({% link images/201911_NG911LawEnforcementBoundaries.jpg %})
+![NG911 Law Enforcement Boundaries](../../images/pillar-blog/2019-11-14-automating-next-generation-911-law-enforcement-boundaries/201911_ng911lawenforcementboundaries.jpg)
 
 This script will allow the NG911 boundaries to be dynamically updated as boundaries are adjusted, new municipalities form, or annexations occur. The basic script logic is as follows:
 
