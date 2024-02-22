@@ -9,7 +9,7 @@ tags:
 category: SGID Blog
 ---
 
-In a June 2019 post “SGID Then and Now,” we touched on [where we thought the SGID is going]({% link _posts/2019-06-11-sgid-then-and-now.md %}#where-is-the-sgid-going). Based on the survey responses from that article, we have changed direction in some areas and taken on new tasks in other directions. Now we'd like to share our vision, based on user input, for improving the SGID in general and relaunching the SGID product.
+In a June 2019 post “SGID Then and Now,” we touched on [where we thought the SGID is going](/blog/2019-06-11-sgid-then-and-now#where-is-the-sgid-going). Based on the survey responses from that article, we have changed direction in some areas and taken on new tasks in other directions. Now we'd like to share our vision, based on user input, for improving the SGID in general and relaunching the SGID product.
 
 ## Redesigned SGID Open Data Website
 

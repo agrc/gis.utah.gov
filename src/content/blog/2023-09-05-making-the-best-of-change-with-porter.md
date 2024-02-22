@@ -9,7 +9,7 @@ tags:
 category: SGID Blog
 ---
 
-In today's fast-paced and interconnected world, GIS data are a key part of decision making and provide the backbone of innovation and progress. These roles demand high quality data with a methodical [data creation and maintenance strategy]({% link _posts/2018-02-05-sgid-data-lifecycle.md %}) that makes it easy on you when data are added, removed, or changed. We are excited to share our latest efforts to provide consistent and reliable access to our high-quality SGID data.
+In today's fast-paced and interconnected world, GIS data are a key part of decision making and provide the backbone of innovation and progress. These roles demand high quality data with a methodical [data creation and maintenance strategy](/blog/2018-02-05-sgid-data-lifecycle) that makes it easy on you when data are added, removed, or changed. We are excited to share our latest efforts to provide consistent and reliable access to our high-quality SGID data.
 
 ![SGID Data lifecycle]({% link images/SGID_lifecycle.jpg %})
 

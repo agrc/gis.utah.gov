@@ -32,7 +32,7 @@ In 1989, AGRC was created (replacing AGR). That change brought with it new GIS-r
 
 The SGID was further solidified in 1991 with the passage of [Senate Bill 21](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html). Passing unanimously, this bill created the AGRC and the SGID in state statute and eliminated many uncertainties such as future funding for the database and UGRC’s responsibilities.
 
-During the 2021 General Session, the Utah Legislature agreed to [change the name of AGRC]({% link _posts/2021-04-05-agrc-name-change-to-utah-geospatial-resource-center-ugrc.md %}) to the Utah Geospatial Resource Center (UGRC), as passed in House Bill 261, “Geographic Reference Center Amendments.” (the new name took effect on May 5, 2021). This rebranding was an effort to better align the office with the larger geospatial industry as well as our current role within the state.
+During the 2021 General Session, the Utah Legislature agreed to [change the name of AGRC](/blog/2021-04-05-agrc-name-change-to-utah-geospatial-resource-center-ugrc) to the Utah Geospatial Resource Center (UGRC), as passed in House Bill 261, “Geographic Reference Center Amendments.” (the new name took effect on May 5, 2021). This rebranding was an effort to better align the office with the larger geospatial industry as well as our current role within the state.
 
 The SGID has been in continuous operation since its completion in 1991 and has seen numerous software and hardware configurations throughout the years.
 
@@ -120,7 +120,7 @@ Here are some current SGID stats showing top accessed data layers by platform:
 
 One of the challenges of working in technology is that over time, file formats and the way we access data change. This is similarly true for the SGID. As a result, UGRC engages in regular discussions on where the SGID should be going.
 
-Currently, we are working toward [trimming down the SQL ArcSDE enterprise database]({% link _posts/2018-09-10-the-incredible-shrinking-sgid.md %}), which is available to users on the State network. Moving forward, we will maintain only "live" datasets in the SDE. These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal editing and staging database.
+Currently, we are working toward [trimming down the SQL ArcSDE enterprise database](/blog/2018-09-10-the-incredible-shrinking-sgid), which is available to users on the State network. Moving forward, we will maintain only "live" datasets in the SDE. These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal editing and staging database.
 
 All data layers being maintained in the SDE will also be available in [AGOL](https://utah.maps.arcgis.com) and [UGRC’s open data portal](https://opendata.gis.utah.gov/). Here users can consume the web service or download the data. Obsolete data will be written to object storage for retention and will be available on request.
 

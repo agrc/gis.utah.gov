@@ -20,7 +20,7 @@ Here are a few related resources to get you connected:
 - Open SGID database (PostgreSQL/PostGIS database)
   - [Connect to the Open SGID]({% link sgid/open-sgid/index.md %}) database
   - Find issue tracking and solutions relating to the Open SGID via the [Open SGID GitHub repo](https://github.com/agrc/open-sgid)
-  - Read our blog post from May 2020 [introducing the Open SGID]({% link _posts/2020-05-04-introducing-open-sgid.md %})
+  - Read our blog post from May 2020 [introducing the Open SGID](/blog/2020-05-04-introducing-open-sgid)
 
 Our goal is to provide better access to SGID data. We feel that these new offerings are more in line with the current technology and that they reach a wider audience.
 

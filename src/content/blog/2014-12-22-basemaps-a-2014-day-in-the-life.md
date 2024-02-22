@@ -12,7 +12,7 @@ category: Developer
 
 ### A day in the life of Utah’s ArcGIS Server Basemaps 2014
 
-On [Wednesday, November 6, 2013]({% link _posts/2014-01-14-a-day-in-the-life-of-utahs-arcgis-server-base-maps.md %}) we wrote about and displayed some charts displaying usage statistics for our basemaps. A year has passed and we have updated our graphs and included a few new ones. This year our usage stats were pulled from the first Wednesday in November which happened to be the 5th.
+On [Wednesday, November 6, 2013](/blog/2014-01-14-a-day-in-the-life-of-utahs-arcgis-server-base-maps) we wrote about and displayed some charts displaying usage statistics for our basemaps. A year has passed and we have updated our graphs and included a few new ones. This year our usage stats were pulled from the first Wednesday in November which happened to be the 5th.
 
 ![web application basemap usage]({% link images/2014.basemaps.png %})
 
