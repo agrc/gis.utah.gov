@@ -28,11 +28,55 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[2]}>
     <p>
-      For ArcGIS Pro, you'll add Discover as a new WMTS server and then browse the services available. Check out <ExternalLink
-        href="https://pro.arcgis.com/en/pro-app/latest/help/data/services/add-wmts-services.htm"
-        >Esri's documentation</ExternalLink
-      > for the most up-to-date instructions.
+      The TURN GPS Network, which serves Utah and some areas of surrounding states with 113 sensors. We are currently in
+      the process of expanding this network in Utah, Idaho, and Wyoming. The TURN Network runs on the Trimble Pivot
+      Platform. You may Login using your User Name and Password. If you don't have an account yet, you can register <a
+        href="https://turngps-billpay.ugrc.utah.gov/">here</a
+      >. If you haven't already, you will need to create a Utah ID.
     </p>
+    <p>
+      TURN GPS is a statewide network of permanently located GPS receivers, which provides both real time corrections
+      and data for post processing to those that have an active subscription. Current cost is $600 for each User Login
+      and is good for a full year.
+    </p>
+    <ul>
+      <li><b>The Coordinate Reference Frame for this network is NAD83(2011)(EPOCH:2010.0000.)</b></li>
+      <li><b>Connections: IP address - 165.239.144.5 Port - 2101</b></li>
+      <br />
+      <p>The following is a list of the new Source Table Mountpoints with a brief definition:</p>
+    </ul>
+    <ul>
+      <li>
+        GNSS-VRS-NAD83-RTCM32 (Full GNSS network solution including GPS, Glonass, Galileo, BeiDou with RTCM32 output
+        format) (*Recommended for the majority of all users*)
+      </li>
+      <li>GNSS-VRS-NAD83-CMRx (Full GNSS network solution including GPS, Glonass, Galileo with CMRx output format)</li>
+      <li>VRS-NAD83-CMRp (Full network solution including GPS, Glonass with CMRp output format)</li>
+      <li>VRS-NAD83-CMRx (Full network solution including GPS, Glonass with CMRx output format)</li>
+      <li>VRS-NAD83-RTCM31 (Full network solution including GPS, Glonass with RTCM31 output format)</li>
+      <li>VRS-NAD83-RTCM32 (Full network solution including GPS, Glonass with RTCM32 output format)</li>
+      <li>
+        MS-NAD83-CMRp (Single base solution from the closest base, determined by the system, including GPS, Glonass with
+        CMRp output format)
+      </li>
+      <li>
+        MS-NAD83-CMRx (Single base solution from the closest base, determined by the system, including all available
+        satellite constellations from that receiver with CMRx output format)
+      </li>
+      <li>
+        MS-NAD83-RTCM31(Single base solution from the closest base, determined by the system, including all available
+        satellite constellations from that receiver with RTCM31 output format)
+      </li>
+      <li>
+        MS-NAD83-RTCM32 (Single base solution from the closest base, determined by the system, including all available
+        satellite constellations from that receiver with RTCM32 output format)
+      </li>
+    </ul>
+    <p>
+      Mountpoints that begin with MS are single base line solutions with the system automatically choosing the closest
+      base station.
+    </p>
+    <p>For Questions or Help contact the Support Desk at 801-538-3440 or toll-free 1-800-678-3440.</p>
   </Section>
   <Section {...page.section[3]}>
     <p>
