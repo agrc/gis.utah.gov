@@ -18,8 +18,6 @@ This post explores some of the early milestones ("highlights") of the SGID, the 
 
 ### Early History of the SGID
 
-
-
 Interestingly enough, development of the SGID parallels a lot of the early innovative GIS work being done at the national level. Historically speaking, Utah has played a role in GIS history as an "Early-Adopter State."
 
 As early as the late 1970s, Utah was discussing the idea of statewide geographic data. At that time, GIS was being tested in a few agencies, so a committee was formed to look at the needs of each state agency. The original concept was that Utah would create a centralized database for resource management, planning, and interagency coordination.
@@ -59,8 +57,6 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 [![SGID Early 2000s](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_early2000s_sm.png))
 
 ### Where Is the SGID Now?
-
-
 
 Technology and the use of GIS have come a long way since the inaugural SGID of 1991. What hasn't changed though is the notion of a centralized repository for searching and fetching statewide GIS data. Sure, file formats and how we access data have changed, but the need for open, readily accessible GIS data remains the same.
 
@@ -115,8 +111,6 @@ Here are some current SGID stats showing top accessed data layers by platform:
   - Currently averaging 48 item views a day (17,413 views over the past year)
 
 ### Where Is the SGID Going?
-
-
 
 One of the challenges of working in technology is that over time, file formats and the way we access data change. This is similarly true for the SGID. As a result, UGRC engages in regular discussions on where the SGID should be going.
 

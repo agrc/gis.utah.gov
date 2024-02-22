@@ -25,8 +25,6 @@ It turns out this gridiron pattern is connected to a 17th-century mathematician,
 
 ## The Survey Chain
 
-
-
 <figure class="caption caption--right">
   <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/gunterchain.jpg" alt="Gunter Chain" loading="lazy" />
   <figcaption class="caption__text" markdown="span">Fig 2: Gunter Chain[^2]</figcaption>
@@ -40,8 +38,6 @@ Because of its ease in calculations, the Gunter Chain was quickly adopted and be
 
 ## Standard Units of Measure (The Acre)
 
-
-
 <figure class="caption caption--right">
   <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/northwestterritory.png" alt="Northwest Territory" loading="lazy" />
   <figcaption class="caption__text" markdown="span">Fig 3: Northwest Territory[^3]</figcaption>
@@ -52,8 +48,6 @@ Okay, let’s jump ahead to 1783 and the Treaty of Paris. At this point in Ameri
 The early American Congress further solidified the acre as the official unit of land measurement with the Land Ordinance of 1785 and the resulting Northwest Ordinance of 1787. These ordinances provided the framework for public lands and the procedures for organizing territorial lands west of the Appalachian Mountains.
 
 ## Public Land Survey System
-
-
 
 I know, I know… that was probably more history than you were looking for, but really, that’s the annotated crash course for understanding the basis of the present-day Public Land Survey System (PLSS) (Fig 4). This system was originally proposed by Thomas Jefferson and was mandated by Congress to oversee the cadastral surveys of the public lands. Essentially, it was set up to facilitate the transfer of federal lands to private citizens. The Bureau of Land Management (BLM) is the official record keeper of the surveys. Over the past 200 years, almost 1.5 billion acres have been surveyed into townships (and ranges) and sections. These surveys were conducted primarily west of the original thirteen colonies and north of Texas (Texas has Spanish roots and Spanish land grants). Presently, areas of Alaska are still being surveyed.
 
@@ -85,8 +79,6 @@ It is precisely this survey pattern that explains why the western United States 
 
 ## The Western Grid
 
-
-
 <figure class="caption caption--left caption--flow">
   <a href="../../images/pillar-blog/2019-03-11-the-western-grid/plat_of_zion.png" title="click to see the full sized image">
     <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/plat_of_zion_sm.png" class="width: 100%;" alt="Plat of Zion" loading="lazy" />
@@ -114,8 +106,6 @@ Large city blocks are a common theme in the West. They typically vary between 19
 If you have ever tried to cross the street in downtown Salt Lake City, you know our intersections are extremely wide. You’ll see the Gunter Chain’s lasting mark at these intersections as well. Looking at Portland (Fig 9) and Salt Lake City (Fig 9) again, you’ll notice two variations of the chain. Salt Lake City (Fig 9) has large intersections that are based on two chain lengths (132 feet), whereas in Portland and San Francisco intersections measure half a chain (33’). In Phoenix (Fig 9), you’ll notice intersections measure one full chain length (66 feet).
 
 ## Section Lines and Addressing
-
-
 
 Another notable mention are “section line roads.” These roads are laid out in a one-mile by one-mile grid pattern that follows the section lines. Figure 10 shows a good example of this southwest of Boise, Idaho. This pattern is also very popular in Phoenix and Las Vegas.
 

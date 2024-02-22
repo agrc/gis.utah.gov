@@ -9,7 +9,7 @@ tags:
   - gis history
   - policy
 date: 2016-05-24T21:57:21.000Z
-title: "25 Years Ago: Laying the Foundation for Utah GIS Success"
+title: '25 Years Ago: Laying the Foundation for Utah GIS Success'
 category: Uncategorized
 ---
 
@@ -48,7 +48,7 @@ Get yours from an UGRC staffer at your next opportunity.
 <div class="grid">
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">Cover of SGID Data CD, 1995</h5>
-        <img alt="Cover, SGIC CD, 1995" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cover.jpg" loading="lazy" />
+        <img alt="Cover, SGID CD, 1995" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cover.jpg" loading="lazy" />
     </div>
     <div class="grid__col grid__col--1-of-3 text-center">
         <h5 class="text-center">SGID Data CD, 1995</h5>

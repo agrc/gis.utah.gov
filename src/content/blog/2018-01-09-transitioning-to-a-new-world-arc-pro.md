@@ -13,8 +13,6 @@ I have spent the last 4 months learning and using ArcPro while also learning a n
 
 ## Advice on Switching from ArcMap to ArcPro
 
-
-
 <!-- <figure class="caption caption--right"><img class="caption__image" src="../../images/pillar-blog/2018-01-09-transitioning-to-a-new-world-arc-pro/jp_arcproscreenshot.png" alt="ArcPro Screenshot" loading="lazy" /><figcaption class="caption__text">A typical view in ArcPro</figcaption></figure> -->
 
 #### Prepare yourself
@@ -34,7 +32,6 @@ This is the universal advice for learning a new skill, but important to include 
 #### Leave all expectations behind
 
 ![GIS Humor](../../images/pillar-blog/2018-01-09-transitioning-to-a-new-world-arc-pro/jp_spongebob.png)
-
 
 Seriously, ArcPro’s tools are not anywhere near where they are in ArcMap. Letting go of expectations not only helped my sanity, it helped me be a better ArcPro user. Until a couple weeks ago I assumed you could not choose the file format for exporting data because it was not where it is in ArcMap. Of course you can choose your file format, it is just in a separate tool in Pro, I should have tried harder to find out how.
 
