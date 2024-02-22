@@ -76,4 +76,4 @@ Masquerade can be used to power the search widget in [Web AppBuilder](https://do
 
 
 
-If you are not already using Esri products, you likely want to check out the [Official UGRC API Client]({% link _posts/2021-11-29-introducing-the-official-ugrc-api-client.md %}). This is a streamlined, stand-alone desktop application that requires no Esri products or licenses.
+If you are not already using Esri products, you likely want to check out the [Official UGRC API Client](/blog/2021-11-29-introducing-the-official-ugrc-api-client). This is a streamlined, stand-alone desktop application that requires no Esri products or licenses.

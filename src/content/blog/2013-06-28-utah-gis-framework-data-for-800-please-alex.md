@@ -24,4 +24,4 @@ category: SGID Blog
 <p>Many thanks to all who have worked or supported this important partnership!</p>
 <p><i><strong>Important Update 8/7/2013</strong></i></p>
 <ul>
-<li>The statewide address point layer is now being used as reference data for the <a href="{% link _posts/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade.md %}">api.mapserv.utah.gov</a> address locators</li>
+<li>The statewide address point layer is now being used as reference data for the <a href="/blog/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade">api.mapserv.utah.gov</a> address locators</li>
