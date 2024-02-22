@@ -1558,11 +1558,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'location.address_points',
     layerId: 0,
   },
-  'Utah Buildings': {
+  'Buildings': {
     itemId: '10c67c4cf75543e3ab767c2eb601b82d',
     name: 'Utah Buildings',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Buildings',
+    openSgid: 'location.buildings',
     layerId: 0,
   },
   'Utah Wilderness Proposal Washington County': {
