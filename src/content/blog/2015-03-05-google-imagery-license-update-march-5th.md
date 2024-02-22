@@ -20,7 +20,7 @@ category: Uncategorized
 </p>
 <p>At the beginning of 2015, a coalition of state, regional, and local government agencies purchased a license to Google’s high resolution (6 inch pixels) aerial photography. <em>Read the original <a href="/blog/2015-02-02-utah-acquires-high-resolution-aerial-photography-license">post</a> about the acquisition</em>. The license will allow Utah’s <strong>cities, counties, special districts, state agencies, K12/Higher ed, and tribes</strong> to use this imagery in web and desktop mapping  applications as a streaming web service or, where needed, on premise from downloaded local files. Also included is <strong>use by contractors and formal partners of the immediate licensees</strong>.</p>
 <p>The imagery web services will be hosted in Google's cloud and delivered via WMS and WTMS standards and the downloadable files will be obtainable through UGRC who will have a master set of the raw imagery files.</p>
-<p><a href="/images/404.png"><img src="{% link images/Diverging-Diamond-Interchange-Google-Imagery-800x227.png %}" alt="" title="Click to enlarge" width="800" height="227" class="" loading="lazy" /></a>
+<p><a href="/images/404.png"><img src="/images/404.png" alt="" title="Click to enlarge" width="800" height="227" class="" loading="lazy" /></a>
 </p>
 <p><strong>Update:</strong>
 </p>

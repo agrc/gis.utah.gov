@@ -26,7 +26,7 @@ Three additional areas in Utah have been added to the 2018 project areas:
 
 All three project areas will be acquired as USGS QL1, 8 points per square meter. The acquisition of these areas will be completed in 2018, and project deliverables are scheduled to be completed by August 31, 2019. You are welcome to download the boundaries for all the project areas as a [geodatabase and shapefile](https://drive.google.com/a/utah.gov/uc?id=1BkO7aWhFARM-U--KGi4Wn3diNIx7kban&export=download).
 
-[![Project area map](/images/404.png 'view project area map')]({% link images/2018UtahLidarAcquisition_8_30_18.png %})
+[![Project area map](/images/404.png 'view project area map')](/images/404.png)
 
 #### UPDATE 7/17/2019
 
