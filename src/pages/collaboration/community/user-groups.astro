@@ -1,0 +1,92 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'GIS user groups',
+  section: stripeSections([
+    { title: `Canyon Country Partnership Geographic Data Committee` },
+    { title: 'Central Utah User Group' },
+    { title: 'Northern Utah GIS' },
+    { 
+      title: 'Salt Lake User Group',
+      actionUrl: 'https://www.slug-gis.info/',
+      actionText: `Visit SLUG's website`,
+    },
+    { title: 'Southwest Utah User Group' },
+    { title: 'Uintah Basin User Group' },
+    { 
+      title: 'Utah Valley User Group',
+      actionUrl: 'https://www.facebook.com/UVGIS/?fref=ts',
+      actionText: `Visit UVGIS on facebook`,
+    },
+  ]),
+};
+---
+
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <p>
+      The Canyon Country Partnership Geographic Data Committee (CCP) was the first chartered user group in Utah. The members of the group created the Utah Transportation Model and the first Hydrology Model. The group consists of Geospatial technicians and specialists from State and Federal Agencies, and private organizations, in Carbon, Emery, Wayne, Grand, and San Juan Counties. It is open to anyone that would like to attend.
+    </p>
+    <p>
+      For more information, please contact Pete Kilbourne: pkgeog@gmail.com
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <p>
+      The Central Utah User Group has been on hiatus the past few years, and hopes to reengage in the near future. Read the description below and get in touch with the primary group contact if you would like to participate.
+    </p>
+    <p>
+      Central Utah User Group (CUUG) members are made up of state, local, and federal agencies, and private organizations throughout Juab, Millard, Piute, Sanpete, Sevier, and Wayne Counties. CUUG focuses on professional development in GIS, discussing technical issues, and sharing GIS information. New members are always welcome! CUUG meets quarterly on the 4th Thursday of January, March, June, and September in Richfield, Utah.  
+    </p>
+    <p>
+      For more information, please contact Adam Perschon: adam.p@jonesanddemille.com
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <p>
+      Northern Utah GIS (NUGIS) consists of geospatial professionals from Box Elder, Cache, Davis, Morgan, Rich, and Weber counties.
+    </p>
+    <p>
+      For more information, please contact Kasey Hansen: khansen@jub.com
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <p>
+      Not limited to those users within Salt Lake County, the Salt Lake Area Users Group (SLUG) brings together GIS practitioners in the core of the urbanized Wasatch Front. This area has a high concentration of experienced professionals as well as budding students along with a richness of data resources. Meeting quarterly, SLUG is a forum for exchanging ideas, solutions, and on-going practical applications of GIS.
+    </p>
+    <p>
+      Click below for more information and to join the mailing.
+    </p>
+  </Section>
+  <Section {...page.section[4]}>
+    <p>
+      The Southwest Utah User Group G5 consists of Geo-spatial technicians and specialists from State and Federal Agencies, private organizations, Washington, Iron, Beaver, Kane, and Garfield Counties. This user group conducts quarterly meetings featuring trainings, discussions on GIS and other Geo-spatial applications and/or problems that those attending might need help with.
+    </p>
+    <p>
+      For more information, please contact Van Phetsomphou: van.phetsomphou@sgcity.org.
+    </p>
+  </Section>
+  <Section {...page.section[5]}>
+    <p>
+      The Uintah Basin User Group (UBUG) consists of GIS and geospatial technicians and specialists from county, state, federal agencies, and private organizations located in Uintah, Duchesne, and Daggett counties. The group meets quarterly and is an opportunity for networking, sharing data, exchanging ideas and solutions, and implementing GIS technologies.
+    </p>
+    <p>
+      For more information, please contact Jordan Merrell: jordmerrell@uintah.utah.gov.
+    </p>
+  </Section>
+  <Section {...page.section[6]}>
+    <p>
+      The Utah Valley GIS Users Group (UVGIS) is a community of GIS professionals, users and students located in Utah Valley and neighboring areas. The group meets quarterly and is an opportunity for networking, sharing data, exchanging ideas/solutions, and implementing GIS technologies.
+    </p>
+    <p>
+      For more information, visit the group’s facebook page below, or find them on <ExternalLink href="https://www.linkedin.com/groups/4468201/profile">LinkedIn</ExternalLink>.
+    </p>
