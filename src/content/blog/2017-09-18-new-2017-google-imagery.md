@@ -15,7 +15,7 @@ The new 2017 high-resolution Google imagery (6" pixels) is available through UGR
 -many Wasatch Back communities (Summit, Wasatch and Morgan Counties, and Tooele and Cedar Valley.
 -many of the Box Elder and Cache Valley communities
 -the St. George metro area
--western Uinta mountains, including much of the Mirror Lake Highway, Strawberry Reservoir, and a northwestern portion of the Unitah Basin
+-western Uinta mountains, including much of the Mirror Lake Highway, Strawberry Reservoir, and a northwestern portion of the Uintah Basin
 
 The new imagery is already loaded into the `Google`, `Utah`, `Basemap-Hybrid`, and `Google 2017archive` services. If you're using these services, you don't need to change a thing layer-wise, but you may need to clear your cache (instructions below). The new imagery is also available for download as geo-referenced jpeg files (.jp2) by all organizations that have sign up to use licensed content on the Discover server.
 

@@ -7,17 +7,13 @@ date: 2019-03-11T08:00:00.000Z
 tags:
   - plss
   - history
-category: Uncategorized
+category: GPS-surveyor
 ---
 
 Have you ever wondered why the patterns of development in the Western United States are so orthogonal (i.e., "right-angled")?
 
-<figure class="caption caption--right">
-  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/saltlakehistoric.jpg" title="click to see the full sized image">
-    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/saltlakehistoric_sm.jpg" alt="1891 Salt Lake City Bird's Eye View" loading="lazy" />
-  </a>
-  <figcaption class="caption__text" markdown="span">Fig 1: 1891 Salt Lake City Bird's Eye View[^1]</figcaption>
-</figure>
+Fig 1: 1891 Salt Lake City Bird's Eye View[^1]
+![1891 Salt Lake City Bird's Eye View](../../images/pillar-blog/2019-03-11-the-western-grid/saltlakehistoric.jpg)
 
 Pan around a map and you'll see the confines of the grid just about everywhere. Grid-like development is nothing new --- it can be traced back to early developments in the Middle East. But, why is it so prevalent in the West?
 
@@ -25,10 +21,8 @@ It turns out this gridiron pattern is connected to a 17th-century mathematician,
 
 ## The Survey Chain
 
-<figure class="caption caption--right">
-  <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/gunterchain.jpg" alt="Gunter Chain" loading="lazy" />
-  <figcaption class="caption__text" markdown="span">Fig 2: Gunter Chain[^2]</figcaption>
-</figure>
+Fig 2: Gunter Chain[^2]
+![ Gunter Chain](../../images/pillar-blog/2019-03-11-the-western-grid/gunterchain.jpg)
 
 Let’s start with the previously mentioned 17th-century mathematician: Edmund Gunter. Gunter was not just a mathematician; he was also an English clergyman, a geometer, and an astronomer. He made several contributions to society, but we’re going to focus on his invention of the Gunter Chain in 1620 (Fig 2).
 
@@ -38,10 +32,8 @@ Because of its ease in calculations, the Gunter Chain was quickly adopted and be
 
 ## Standard Units of Measure (The Acre)
 
-<figure class="caption caption--right">
-  <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/northwestterritory.png" alt="Northwest Territory" loading="lazy" />
-  <figcaption class="caption__text" markdown="span">Fig 3: Northwest Territory[^3]</figcaption>
-</figure>
+Fig 3: Northwest Territory[^3]
+![Northwest Territory](../../images/pillar-blog/2019-03-11-the-western-grid/northwestterritory.png)
 
 Okay, let’s jump ahead to 1783 and the Treaty of Paris. At this point in American history, the thirteen original colonies had just pulled off the seemingly impossible and defeated the British Empire, ending its colonial rule. This treaty marked the official end of the Revolutionary War and the beginning of independent American governance. In addition to the thirteen colonies, a large swath of land, referred to as the Northwestern Territory (Fig 3), was ceded to the United States. This was good news for a new nation carrying a sizable amount of wartime debt. Fortunately, the largely uninhabited Northwest Territory could be divided and sold off in sections (parcels) to generate revenue for the new nation. Though, first, this land had to be surveyed.
 
@@ -51,25 +43,18 @@ The early American Congress further solidified the acre as the official unit of 
 
 I know, I know… that was probably more history than you were looking for, but really, that’s the annotated crash course for understanding the basis of the present-day Public Land Survey System (PLSS) (Fig 4). This system was originally proposed by Thomas Jefferson and was mandated by Congress to oversee the cadastral surveys of the public lands. Essentially, it was set up to facilitate the transfer of federal lands to private citizens. The Bureau of Land Management (BLM) is the official record keeper of the surveys. Over the past 200 years, almost 1.5 billion acres have been surveyed into townships (and ranges) and sections. These surveys were conducted primarily west of the original thirteen colonies and north of Texas (Texas has Spanish roots and Spanish land grants). Presently, areas of Alaska are still being surveyed.
 
-<figure class="caption caption--left caption--flow">
-  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/principal_meridians.png" title="click to see the full sized image">
-    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/principal_meridians_sm.png" alt="PLSS Principal Meridians" loading="lazy" />
-  </a>
-  <figcaption class="caption__text" markdown="span">Fig 4: PLSS Principal Meridians[^4]</figcaption>
-</figure>
-<figure class="caption caption--right caption--flow">
-  <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/salt_lake_meridian.png" alt="Salt Lake Meridian" loading="lazy" />
-  <figcaption class="caption__text" markdown="span">Fig 5: Salt Lake Meridian[^5]</figcaption>
-</figure>
+Fig 4: PLSS Principal Meridians[^4]
+![PLSS Principal Meridians](../../images/pillar-blog/2019-03-11-the-western-grid/principal_meridians.png)
+
+Fig 5: Salt Lake Meridian[^5]
+![Salt Lake Meridian](../../images/pillar-blog/2019-03-11-the-western-grid/salt_lake_meridian.png)
 
 As with any measuring system, you need a starting point. Within each PLSS system, this is where a defined meridian line (north-south) meets a defined base line (east-west). Most of Utah is within the Salt Lake Meridian PLSS system for which the base and meridian intersection point is at Main Street and South Temple in downtown SLC (Fig 5). A small portion of NE Utah is governed by the [Uintah Special Meridian](https://en.wikipedia.org/wiki/Uintah_meridian) which is its own separate PLSS system whose base and meridian lines intersect in the city of Roosevelt. All official surveys in Utah have an underlying reference to one of these two points. In other words, every township and section in Utah is numbered off of these locations. Other PLSS states have their own unique meridians (Fig 4).
 
 Townships are made up of thirty-six square miles, with each square mile known as a section. Sections are eventually subdivided down to an acre by way of half sections, quarter sections, quarter-quarter sections, etc. (Fig 6). An acre, again, is simply 10 square chains, and there are 640 acres in a section (a square-mile) or 40 acres in a quarter-quarter section. Hence the phrase, “40 acres and mule” is all you needed to be self-sufficient.
 
-<figure class="caption caption--right">
-  <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/townships_sections.png" alt="Townships and Sections" loading="lazy" />
-  <figcaption class="caption__text" markdown="span">Fig 6: Townships, Ranges and Sections[^6]</figcaption>
-</figure>
+Fig 6: Townships, Ranges and Sections[^6]
+![Townships, Ranges and Sections](../../images/pillar-blog/2019-03-11-the-western-grid/townships_sections.png)
 
 No matter how you shake it, though, land measurements in the West are consistently divisible by the magic 66-foot Gunter Chain. You’ll see its effect everywhere. This measuring unit was so successful because it made the math easy --- and many early surveyors had a shaky grasp of mathematics and they were required to work quickly.
 
@@ -79,29 +64,18 @@ It is precisely this survey pattern that explains why the western United States 
 
 ## The Western Grid
 
-<figure class="caption caption--left caption--flow">
-  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/plat_of_zion.png" title="click to see the full sized image">
-    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/plat_of_zion_sm.png" class="width: 100%;" alt="Plat of Zion" loading="lazy" />
-  </a>
-  <figcaption class="caption__text" markdown="span">Fig 7: Plat of Zion[^7]</figcaption>
-</figure>
-<figure class="caption caption--right caption--flow">
-  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/colonialboston.png" title="click to see the full sized image">
-    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/colonialboston_sm.png" alt="Colonial Boston" loading="lazy" />
-  </a>
-  <figcaption class="caption__text" markdown="span">Fig 8: Colonial Boston[^8]</figcaption>
-</figure>
+Fig 7: Plat of Zion[^7]
+![Plat of Zion](../../images/pillar-blog/2019-03-11-the-western-grid/plat_of_zion.png)
+
+Fig 8: Colonial Boston[^8]
+![Colonial Boston](../../images/pillar-blog/2019-03-11-the-western-grid/colonialboston.png)
 
 One of the more dominant patterns you'll see in the West is the rectangular city block. You could argue that the Mormon pioneers helped carry this development pattern west from Missouri with their Plat of Zion (Fig 7) and their subsequent establishment of more than 700 communities. Contrast this pattern with the pre-PLSS pattern of the early colonial settlers in Boston (Fig 8).
 
 Large city blocks are a common theme in the West. They typically vary between 198 feet, 330 feet, and 660 feet (which is 3, 5, and 10 chains). Often, two sides of the block are 660 feet, with the adjacent sides being 198 feet or 330 feet. Looking at Portland (Fig 9), their blocks are unusually small for the West at 198 feet x 198 feet. On the other side of the spectrum, Salt Lake City (Fig 9) is known for having the largest blocks in the West at 660 feet x 660 feet. Blocks are more rectangular in San Francisco (Fig 9) and Phoenix (Fig 9), as they measure 660 feet x 198 feet and 660 feet x 330 feet, respectively.
 
-<figure class="caption caption--right">
-  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/urban_grids.png" title="click to see the full sized image">
-    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/urban_grids_sm.png" alt="Western Urban Grid" loading="lazy" />
-  </a>
-  <figcaption class="caption__text" markdown="span">Fig 9: Variations on the Western Urban Grid[^9]</figcaption>
-</figure>
+Fig 9: Variations on the Western Urban Grid[^9]
+![Western Urban Grid](../../images/pillar-blog/2019-03-11-the-western-grid/urban_grids.png)
 
 If you have ever tried to cross the street in downtown Salt Lake City, you know our intersections are extremely wide. You’ll see the Gunter Chain’s lasting mark at these intersections as well. Looking at Portland (Fig 9) and Salt Lake City (Fig 9) again, you’ll notice two variations of the chain. Salt Lake City (Fig 9) has large intersections that are based on two chain lengths (132 feet), whereas in Portland and San Francisco intersections measure half a chain (33’). In Phoenix (Fig 9), you’ll notice intersections measure one full chain length (66 feet).
 
@@ -113,19 +87,11 @@ Section lines in North Dakota and South Dakota are often used as the basis for t
 
 One last notable Western development pattern is the disguised grid. These are often large communities where the land is typically purchased by the section (or more) and then is made to feel less grid-like. Two good examples of this pattern are Sun Lakes (Fig 11) and Sun City in Arizona. As you move through these communities, you forget that you're on the grid.
 
-<figure class="caption caption--left caption--flow">
-  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/sectionlineroads.png" title="click to see the full sized image">
-    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/sectionlineroads_sm.png" alt="Section Line Roads Southwest of Boise, ID" loading="lazy" />
-  </a>
-  <figcaption class="caption__text" markdown="span">Fig 10: Section Line Roads Southwest of Boise, ID[^10]</figcaption>
-</figure>
+Fig 10: Section Line Roads Southwest of Boise, ID[^10]
+![Section Line Roads Southwest of Boise, ID](../../images/pillar-blog/2019-03-11-the-western-grid/sectionlineroads.png)
 
-<figure class="caption caption--right caption--flow">
-  <a href="../../images/pillar-blog/2019-03-11-the-western-grid/sunlakes_grid.png" title="click to see the full sized image">
-    <img class="caption__image" src="../../images/pillar-blog/2019-03-11-the-western-grid/sunlakes_grid_sm.png" alt="Sun City, AZ (Disguising the Grid)" loading="lazy" />
-  </a>
-  <figcaption class="caption__text" markdown="span">Fig 11: Sun City, AZ (disguising the grid)[^11]</figcaption>
-</figure>
+Fig 11: Sun City, AZ (disguising the grid)[^11]
+![Sun City, AZ (Disguising the Grid)](../../images/pillar-blog/2019-03-11-the-western-grid/sunlakes_grid.png)
 
 It's remarkable how a few key points in history have permanently affected the growth and development patterns in the western United States. It's also interesting how these same decisions have made it difficult for us to turn our backs on the imperial-based measurement system (i.e., United States customary units).
 

@@ -33,9 +33,5 @@ Geographic information systems allow us to ask big questions. As a community too
 
 > Take a look at UGRC’s [**interactive neighborhood suitability map**]({% link developer/applications/suitability/index.html %}) to further explore the map below. The layers in this map give the user the ability to discover areas in the state where residents do and do-not have access to essential services, such as childcare, hospitals, grocery stores, libraries, and transit stops. This map shows a sample of what can be done using GIS and spatial analysis.
 
-<div class="flex flex--around">
-  <figure class="caption">
-    <a href="/images/404.png" alt="Suitability Analysis Wasatch Front" loading="lazy" /></a>
-    <figcaption class="caption__text">Figure 1: Suitability Analysis along the Wasatch Front</figcaption>
-  </figure>
-</div>
+Figure 1: Suitability Analysis along the Wasatch Front
+![Suitability Analysis Wasatch Front](../../images/pillar-blog/2021-02-19-intergenerational-poverty/suitability_analysis_wasatchfront.png)
