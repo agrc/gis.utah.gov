@@ -1,0 +1,86 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Quaternary Faults',
+  description: `Mapped Quaternary faults and folds in Utah.`,
+  stewards: ['Utah Geological Survey (UGS)'],
+  type: ProductType.POLYLINE,
+  category: SgidCategory.GEOSCIENCE,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`March 2020`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Quaternary Faults represent The Utah Geological Survey Quaternary Fault and Fold Database and Map of Utah. This
+      data is a compilation of existing information on faults and fault-related folds considered to be potential
+      earthquake sources (i.e., “active” faults and folds). The faults and folds contained in the database are those
+      considered to have been sources of large earthquakes (about magnitude 6.5 or greater) during the Quaternary Period
+      (past 2.6 million years); these geologic structures are the most likely sources of large earthquakes in the
+      future. The data set is intended to be a comprehensive source of the most current information available for
+      characterizing active faults and folds in Utah for seismic-hazard analysis. This version of the data incorporates
+      fault data from geologic maps and other documents formally published through 2013.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are
+      no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to:
+      Utah Geological Survey, State of Utah, SGID. Earthquake epicenters were created and are maintained by the Utah
+      Geological Survey.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Utah Fault Information"
+        href="https://geology.utah.gov/hazards/earthquakes/utah-faults/"
+        >UGS - Utah fault information.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah Geological Survey" href="https://geology.utah.gov/"
+        >Utah Geological Survey website.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Geoscience" href="/products/sgid/geoscience">Geoscience page</CardWithSmallLink>
+      <CardWithSmallLink title="UGS hazard map" href="https://geology.utah.gov/apps/hazards/"
+        >A compilation of data from the Utah Geologic Hazards Database, containing post-2008 UGS geologic hazard map
+        data and data from other sources for parts of Utah.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

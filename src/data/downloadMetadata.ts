@@ -1253,8 +1253,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Quaternary Faults': {
     itemId: 'hosted by UGS',
     name: 'Utah Quaternary Faults',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'QuaternaryFaults',
+    openSgid: 'geoscience.quaternary_faults',
     layerId: 0,
   },
   'Utah Geologic Markers': {
@@ -2317,8 +2317,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Soils': {
     itemId: '047e5268bed7404e8b7cf349d36c8283',
     name: 'Utah Soils',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Soils',
+    openSgid: 'geoscience.soils',
     layerId: 0,
   },
   'Utah EMS Response Areas': {
