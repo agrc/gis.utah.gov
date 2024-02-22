@@ -1,0 +1,88 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Soils',
+  description: `Soil types in Utah.`,
+  stewards: ['U.S. Department of Agriculture (USDA)', 'Natural Resources Conservation Service (NRCS)'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.GEOSCIENCE,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`2022`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah Soils is a subset of the more comprehensive Natural Resources Conservation Service (NRCS) SSURGO database.
+      The SSURGO database is a collection of 6 feature classes, one raster, 76 tables, and 69 relationship classes that
+      represent over a century's worth of soil data collected by the National Cooperative Soil Survey. Utah Soils is a
+      collection of the more widely used SSURGO soil attributes and SSURGO MUPOLYGON geometry to provide users an
+      overview of Utah soils data without the complexity of the SSURGO database itself. Users are encouraged to explore
+      the <ExternalLink href="https://nrcs.app.box.com/v/soils">SSURGO database</ExternalLink>. For a more detailed
+      description of the soils of Utah. More information about NRCS and SSURGO can also be found on their
+      <ExternalLink href="https://www.nrcs.usda.gov/wps/portal/nrcs/site/soils/home/">website</ExternalLink>.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are
+      no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to:
+      Utah Geological Survey, State of Utah, SGID. Earthquake epicenters were created and are maintained by the Utah
+      Geological Survey.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Natural Resources Conservation Service (NRCS)" href="https://www.nrcs.usda.gov/"
+        >Natural Resources Conservation Service (NRCS) website.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="U.S. Department of Agriculture (USDA)" href="https://www.usda.gov/"
+        >U.S. Department of Agriculture (USDA) website.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Geoscience" href="/products/sgid/geoscience">Geoscience page</CardWithSmallLink>
+      <CardWithSmallLink title="Farming" href="/products/sgid/farming">Farming page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
