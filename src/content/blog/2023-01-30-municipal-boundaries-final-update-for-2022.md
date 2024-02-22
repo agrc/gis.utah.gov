@@ -35,10 +35,10 @@ The following table shows the changes and annexations (listed by county and city
 |            | Smithfield           | 4                 |
 |            | Wellsville           | 1                 |
 | Davis      | Farmington           | 1                 |
-|            | Keysville            | 1                 |
+|            | Kaysville            | 1                 |
 |            | Layton               | 2                 |
 |            | North Salt Lake      | 1                 |
-| Duchesne   | Rosevelt             | 1                 |
+| Duchesne   | Roosevelt            | 1                 |
 | Emery      | Castle Dale          | 1                 |
 |            | Cleveland            | 1                 |
 | Garfield   | Cannonville          | 1                 |

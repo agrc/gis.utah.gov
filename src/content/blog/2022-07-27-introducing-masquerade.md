@@ -13,11 +13,9 @@ category: SGID Blog
 
 Masquerade is a new proxy service hosted by UGRC that makes [our geocoding service](https://api.mapserv.utah.gov/) and Open SGID datasets easily accessible in Esri products. It does this by impersonating an Esri locator service. You should be able to use the URL below anywhere you would normally use an Esri geocode service:
 
-> [https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer](https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer)
+[https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer](https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer)
 
 ## Capabilities
-
-
 
 - Single line address geocoding (convert an address to an x,y coordinate). Powered by the [UGRC web API](https://api.mapserv.utah.gov/#geocoding).
 - Provides typeahead suggestions from a variety of datasets in [Open SGID]({% link sgid/open-sgid/index.md %}) such as political districts, municipal and county boundaries, and GNIS place names.
@@ -25,8 +23,6 @@ Masquerade is a new proxy service hosted by UGRC that makes [our geocoding servi
 _Give Masquerade's awesome searching capabilities a try in this [simple web app](https://arcg.is/0na9Lf0)._
 
 ### Supported Esri Geocode Service Operations
-
-
 
 ✅ Find Address Candidates
 
@@ -40,11 +36,7 @@ Reverse Geocode has not been implemented. [Let us know](https://github.com/agrc/
 
 ## Common Use Cases
 
-
-
 ### ArcGIS Pro
-
-
 
 #### Locate Pane
 
@@ -62,18 +54,12 @@ Once Masquerade has been added as a locator to your project, you can also use it
 
 ### Web AppBuilder/Experience Builder
 
-
-
 Masquerade can be used to power the search widget in [Web AppBuilder](https://doc.arcgis.com/en/web-appbuilder/latest/create-apps/widget-search.htm) or [Experience Builder](https://developers.arcgis.com/experience-builder/guide/search-widget/). To configure, use the following URL as the "Geocoder URL" (WAB) or "Locator URL" (EB) value in the search widget settings:
 
-> [https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer](https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer)
+[https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer](https://masquerade.ugrc.utah.gov/arcgis/rest/services/UtahLocator/GeocodeServer)
 
 ## Alternatives
 
-
-
 ### UGRC API Client Desktop Application
-
-
 
 If you are not already using Esri products, you likely want to check out the [Official UGRC API Client](/blog/2021-11-29-introducing-the-official-ugrc-api-client). This is a streamlined, stand-alone desktop application that requires no Esri products or licenses.
