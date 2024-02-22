@@ -36,6 +36,9 @@
       "@images/about/*": [
         "src/images/pillar-about/*"
       ],
+      "@images/blog/*": [
+        "src/images/pillar-blog/*"
+      ],
       "@images/contact/*": [
         "src/images/pillar-contact/*"
       ],
