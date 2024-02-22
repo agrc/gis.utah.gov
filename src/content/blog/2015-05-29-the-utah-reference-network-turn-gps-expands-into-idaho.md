@@ -10,7 +10,7 @@ published: false
 category: GPS-surveyor
 ---
 
-<a href="/images/404.png"><img src="{% link images/IdahoExpansion-sm.png %}" alt="" title="IdahoExpansion" class="inline-text-left" loading="lazy" /></a>
+<a href="/images/404.png"><img src="/images/404.png" alt="" title="IdahoExpansion" class="inline-text-left" loading="lazy" /></a>
 
 Since 2005, UGRC has administered the Statewide Global Positioning Reference Network. The initial 15 stations have grown to 90 survey grade GPS receivers located across Utah and into three neighboring states. The most recent expansion was into southeastern Idaho after UGRC was approached by Idaho State University about the network. The expansion increases revenue for the network as a whole, as well as improves coverage accuracy by densifying the base station locations.
 

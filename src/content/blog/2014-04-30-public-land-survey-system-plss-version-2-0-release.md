@@ -12,9 +12,9 @@ published: false
 category: Uncategorized
 ---
 
-<p><a href="/images/404.png"><img src="{% link images/NewPLSS_LrgSample1.png %}" alt="" title="NewPLSS_LrgSample" width="140" height="130" class="inline-text-right" /></a>On April 30, UGRC published Geographic Coordinate Database (GCDB) version 2.0 to the townships, sections, and quarter section divisions of the Public Land Survey System (PLSS) contained in Utah's State Geographic Information Database (SGID).</p>
+<p><a href="/images/404.png"><img src="/images/404.png" alt="" title="NewPLSS_LrgSample" width="140" height="130" class="inline-text-right" /></a>On April 30, UGRC published Geographic Coordinate Database (GCDB) version 2.0 to the townships, sections, and quarter section divisions of the Public Land Survey System (PLSS) contained in Utah's State Geographic Information Database (SGID).</p>
 <p>The basic units of the PLSS comprise the foundation for public and private property boundaries in Utah. The digital GIS representations of the PLSS in the SGID, while in no way a substitute for physical surveys and monumentation, serve as an important supporting reference for surveying and map-based administrative representations of property extents.</p>
-<p><a href="/images/404.png"><img src="{% link images/NewPLSS_Changes-200x300.png %}" alt="" title="NewPLSS_Changes" width="200" height="300" class="inline-text-left" /></a><br />
+<p><a href="/images/404.png"><img src="/images/404.png" alt="" title="NewPLSS_Changes" width="200" height="300" class="inline-text-left" /></a><br />
 The major areas impacted by change in this version are shown on the map image at right (click map to enlarge) and include adjustments to the locations of corner points. Section boundaries impacted are shown in red on the map and areas where quarter section divisions were impacted are shown in gray.</p>
 <p><strong>Download Options<br />
 </strong><br />

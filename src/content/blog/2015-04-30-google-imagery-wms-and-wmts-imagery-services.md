@@ -22,7 +22,7 @@ Users of [Google's statewide high resolution aerial photography](/blog/2015-02-0
 
 With two choices of OGC standard-based imagery services to choose from, WMS and WMTS, which should you use? The WMTS protocol should deliver the imagery faster so use it if works on your platform. But, the WMS service is an older standard that may be more maturely implemented within software applications, and is what ESRI users not yet at v10.2 should use.
 
-<a href="/images/404.png"><img src="{% link images/WakeUp-Google-246x300.png %}" alt="" title="WakeUp Google" class="inline-text-right" loading="lazy" /></a>
+<a href="/images/404.png"><img src="/images/404.png" alt="" title="WakeUp Google" class="inline-text-right" loading="lazy" /></a>
 
 ### Other items
 
