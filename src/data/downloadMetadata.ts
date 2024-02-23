@@ -1558,7 +1558,7 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'location.address_points',
     layerId: 0,
   },
-  'Buildings': {
+  'Utah Buildings': {
     itemId: '10c67c4cf75543e3ab767c2eb601b82d',
     name: 'Utah Buildings',
     featureServiceId: 'Buildings',
