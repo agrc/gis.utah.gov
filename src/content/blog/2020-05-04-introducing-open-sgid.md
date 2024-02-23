@@ -11,17 +11,17 @@ tags:
 category: Uncategorized
 ---
 
-It seems so long ago now, but it was less than a year ago when we first [hinted at the possibility](/blog/2019-06-11-sgid-then-and-now#where-is-the-sgid-going) of a new SGID offering [(then again last fall)](/blog/2019-11-12-sgid-product-relaunch-update#potential-google-cloud-managed-postgis). We are finally ready to announce the debut of a new open source SGID database---the Open SGID---a cloud-hosted PostgreSQL PostGIS database.
+It seems so long ago now, but it was less than a year ago when we first [hinted at the possibility](/blog/2019-06-11-sgid-then-and-now#where-is-the-sgid-going) of a new SGID offering [(then again last fall)](/blog/2019-11-12-sgid-product-relaunch-update#potential-google-cloud-managed-postgis). We are finally ready to announce the debut of a new open source SGID database--the Open SGID--a cloud-hosted PostgreSQL PostGIS database.
 
-<div class="flex flex--center pop" style="max-width:50%;justify-content:center">
-  <h4 style="margin-bottom:0;padding-top:0"><strong>Database Platform</strong>: PostgresSQL</h4>
-  <h4 style="margin-top:0;margin-bottom:0;padding-top:0"><strong>Instance</strong>: opensgid.agrc.utah.gov</h4>
-  <h4 style="margin-top:0;margin-bottom:0;padding-top:0"><strong>Username</strong>: agrc <strong>Password</strong>: agrc</h4>
+<div class="flex flex-col justify-center items-center max-w-1/2">
+  <h4><strong>Database Platform</strong>: PostgresSQL</h4>
+  <h4><strong>Instance</strong>: opensgid.agrc.utah.gov</h4>
+  <h4><strong>Username</strong>: agrc <strong>Password</strong>: agrc</h4>
 </div>
 
 The timing could not be more perfect with the sudden increase in teleworking, which is not expected to wane any time soon, especially here in Utah with the implementation of the [Governor’s teleworking initiative](https://governor.utah.gov/2019/07/16/state-of-utah-introduces-teleworking-program-for-employees/). Not only does the Open SGID benefit Utahns, but it also signals the return to a truly publicly available, [direct database connection that can be utilized on a multitude of GIS platforms]({% link sgid/open-sgid/index.md %}). Furthermore, it initiates the sunsetting of the state network-only SGID10 database, although both databases (i.e., the Open SGID and the SGID10) will run in parallel for some time to allow users to transition and adapt to the Open SGID.
 
-The new tools and processes built by UGRC staff to develop the Open SGID, as well as the new and improved [Open Data site](https://opendata.gis.utah.gov/), are numerous and worthy of their own blogpost---perhaps some foreshadowing there. In this post though, we'll note that a paradigm shift led to the creation of a new internal SGID database that serves as the sole editing environment and data source for the Open SGID and the Open Data site.
+The new tools and processes built by UGRC staff to develop the Open SGID, as well as the new and improved [Open Data site](https://opendata.gis.utah.gov/), are numerous and worthy of their own blogpost--perhaps some foreshadowing there. In this post though, we'll note that a paradigm shift led to the creation of a new internal SGID database that serves as the sole editing environment and data source for the Open SGID and the Open Data site.
 
 ### Why and How You Should Use the Open SGID
 

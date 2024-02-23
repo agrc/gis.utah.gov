@@ -23,8 +23,6 @@ Here are seven common GIS concepts and what we can learn from them.
 
 ### 1. Versioning
 
-
-
 `resolving conflicts`
 
 Look no further than the versioning workflow to learn how to successfully resolve conflicts. Honestly, GIS has this one figured out. Here's how it works.
@@ -41,8 +39,6 @@ Learn more about the [ArcGIS versioning process](https://desktop.arcgis.com/en/a
 
 ### 2. Networks
 
-
-
 `networking`
 
 In GIS, we build network datasets for navigation. These networks are based on connectivity. We use terms such as _edges_ and _junctions_, but really we’re just establishing resource groups to which we grant connectivity to other sources.
@@ -52,8 +48,6 @@ Likewise, building a personal network helps us determine who and what we allow o
 Learn more about [creating ArcGIS network datasets](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/creating-a-network-dataset.htm) and [how connectivity works](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/understanding-connectivity.htm).
 
 ### 3. Extract, Translate, and Load (ETL)
-
-
 
 `being adaptable`
 
@@ -65,19 +59,15 @@ Learn more about [creating your own spatial ETL tools](https://desktop.arcgis.co
 
 ### 4. Open Data
 
-
-
 `sharing`
 
-Ideally, as GIS folks, we're all supporting or contributing to open data in some way---in other words, advancing freely available data. This philosophy promotes transparency, innovation, and efficiency. Data gets better the more it's used, and open data gets used.
+Ideally, as GIS folks, we're all supporting or contributing to open data in some way--in other words, advancing freely available data. This philosophy promotes transparency, innovation, and efficiency. Data gets better the more it's used, and open data gets used.
 
 On the human side, the more we share, the more we learn. And when we share, we not only advance everyone's overall knowledge base, we also advance our own. Ideas grow when they are open and shared.
 
 Explore some of the [existing GIS open data](http://hub.arcgis.com/pages/open-data) or consider contributing to the [Open Street Maps project](https://www.openstreetmap.org/about).
 
 ### 5. Editing
-
-
 
 `refinement`
 
@@ -89,8 +79,6 @@ Brush up on some [essential editing vocabulary](https://desktop.arcgis.com/en/ar
 
 ### 6. Domains
 
-
-
 `consistency`
 
 Domains are set up in a database to establish known consistency. They provide quality assurance on the front end while ensuring consistency on the back end. What makes domains so great is that they ensure that an end user can reliably expect certain values or results. Developers and cartographers especially benefit from this consistency.
@@ -101,13 +89,11 @@ Learn more about [attribute domains](https://pro.arcgis.com/en/pro-app/help/data
 
 ### 7. Topology
 
-
-
 `establishing principles`
 
 Topology is all about rules. Essentially, it allows us to keep our data clean by defining a set of spatial expectations. We are able to validate our data when needed and also allow for inevitable exceptions. Topology is so powerful because once you define the rules, you are then free to focus your efforts on other aspects of the data.
 
-Similarly, in life we also benefit from predefined rules---or better yet, principles. For example, think about driving an automobile. We learn the rules of the road before we get behind the wheel. Why? Because we don’t want to create the rules "on-the-fly." Knowing the rules of the road in advance allows us to focus on more enjoyable things, such as conversation or a good audiobook.
+Similarly, in life we also benefit from predefined rules--or better yet, principles. For example, think about driving an automobile. We learn the rules of the road before we get behind the wheel. Why? Because we don’t want to create the rules "on-the-fly." Knowing the rules of the road in advance allows us to focus on more enjoyable things, such as conversation or a good audiobook.
 
 Oddly, there's something freeing about having predetermined principles. Knowing our principles allows us to then explore greater things.
 

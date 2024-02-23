@@ -29,7 +29,7 @@ Because the ArcGIS API for Python (the library that hooks us into hosted feature
 
 Don't want to read? Watch the recording of the palletjack presentation at UGIC's 2023 conference instead!
 
-{% include embedded_video.html embed_url="https://player.vimeo.com/video/830256482" %}
+<iframe class="aspect-video mx-auto w-full max-w-4xl rounded-lg border-2 border-black shadow-xl" src="https://www.youtube.com/embed/iDXmzKIV1mg?si=hDFs45obVOao2Blj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Step One: Extract Data from External Sources
 

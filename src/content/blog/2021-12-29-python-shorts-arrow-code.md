@@ -1,5 +1,5 @@
 ---
-title: "Python Shorts: Flattening Arrow Code"
+title: 'Python Shorts: Flattening Arrow Code'
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
@@ -19,8 +19,6 @@ This is also an example of how the logical structure of arrow code isn't always 
 
 ## The Task
 
-
-
 I needed to determine if something was open based on three checks on it's value:
 
 1. It had to exist
@@ -28,8 +26,6 @@ I needed to determine if something was open based on three checks on it's value:
 1. It couldn't have a certain string (`'Provider'`) in its value
 
 ## Full Arrow
-
-
 
 The full arrow approach would be to make each one of these its own `if` statement:
 
@@ -48,8 +44,6 @@ else:
 
 ## One-Liner
 
-
-
 Admittedly, that arrow is contrived for the sake of physically showing the arrow. It's pretty easy to realize that we can combine the `if`'s onto one line, and because the `else` case is the same for each `if` we can just set it at the beginning and get rid of the `else`:
 
 ```python
@@ -66,11 +60,9 @@ If you've not seen it before (it was new to me when I first saw it), `casefold()
 
 ## Flattening
 
-
-
 So how do we fix it?
 
-[Smash it with a hammer!](../../images/pillar-blog/2021-12-29-python-shorts-arrow-code/flea.jpg)
+![Smash it with a hammer!](../../images/pillar-blog/2021-12-29-python-shorts-arrow-code/flea.jpg)
 
 ```python
 def is_open(value):
@@ -99,15 +91,10 @@ As a bonus, each condition is now functionally independent from the others. This
 
 ## Hammers Optional
 
-
-
 So there you have it. Flattening arrow code (even if it doesn't originally look like a full arrow) will make your code easier to read, easier to understand, and easier to extend. If you don't want to use the hammer, just save on postage and use the [extract of llama](https://www.imdb.com/title/tt0120917/) instead.
 
 ![Feel the power](../../images/pillar-blog/2021-12-29-python-shorts-arrow-code/feel_the_power.jpg)
 
-
 ### Bonus reading
-
-
 
 This inversion of the conditionals and changing the `and` into an effective `or` (because only one of our `if`s need to be true to cause it to `return`) is an application of [De Morgan's law](https://en.wikipedia.org/wiki/De_Morgan%27s_laws).
