@@ -37,5 +37,8 @@ export default {
         default: colors.black,
       },
     }),
+    require('@tailwindcss/typography')({
+      className: 'mdx',
+    }),
   ],
 };

@@ -3,7 +3,7 @@ import type { DecoratedBlogEntry } from '@utils/collections';
 import { slugify } from '@utils/collections';
 import { getDateParts } from '@utils/page';
 
-const { category, title, date: pubDate, estimatedReadTime, lastUpdated } = Astro.props as DecoratedBlogEntry['data'];
+const { category, date: pubDate, estimatedReadTime, lastUpdated } = Astro.props as DecoratedBlogEntry['data'];
 
 const { year, month, day } = getDateParts(pubDate);
 const lastUpdatedDate = getDateParts(lastUpdated);
@@ -48,6 +48,8 @@ const lastUpdatedDate = getDateParts(lastUpdated);
     </span>
   </div>
 </div>
-<article class="space-y-6 overflow-hidden">
+<article
+  class="mdx-headings:dark:text-zinc-50 mdx-headings:text-zinc-700 mdx mdx-zinc dark:mdx-invert mdx-img:border mdx-img:rounded-lg mdx-li:my-0 mdx-tr:dark:border-white/30 mdx-thead:dark:border-white/50 mdx-img:mx-auto max-w-none space-y-6 overflow-hidden"
+>
   <slot />
 </article>
