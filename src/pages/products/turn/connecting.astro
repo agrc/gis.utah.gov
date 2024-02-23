@@ -1,19 +1,22 @@
 ---
 import type { IStandardPageMetadata } from '@models/products/sgid/types';
 
-import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
-
-import { Code } from 'astro:components';
 
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'Getting Connected',
   pillar: 'TURN',
-  section: stripeSections([{}, { title: 'Getting Connected' }, { title: 'TURN Network' }, { title: 'Nevada Network' }]),
+  section: stripeSections([
+    {},
+    { title: 'Getting Connected' },
+    { title: 'TURN Network' },
+    { title: 'Nevada Network' },
+    { title: 'Support Contacts' },
+  ]),
 };
 ---
 
@@ -22,8 +25,50 @@ const page: IStandardPageMetadata = {
 
   <Section {...page.section[1]}>
     <p>
-      Congrats on your new TURN or Nevada GPS network subscription! Below, you'll find resources and information on
-      getting connected to the network.
+      To create a new subscription or renew an existing subscription for Nevada GPS, you'll need to provide the
+      following information:
+    </p>
+    <ul>
+      <li>● the name of your organization (avoid punctuation);</li>
+      <li>● a login/username;</li>
+      <li>● a password (8 characters);</li>
+      <li>
+        ● a contact name, email address (once you add in your email address, it will be associated/connected with your
+        account and can't be used again), and phone number;
+      </li>
+      <li>● your physical location/address; and</li>
+      <li>● your mailing address.</li>
+    </ul>
+    <p>
+      To pay for your subscription, visit the <a href="https://turngps-billpay.ugrc.utah.gov/"
+        >TURN GPS Bill Pay system</a
+      > to access the online payment portal. The cost is $600 and gives you access to TURN GPS Network also. You'll need
+      a credit card to process your payment.
+    </p>
+    <ul>
+      <li>● Select “Register” on the navigation pane on the left-hand side of the page.</li>
+      <li>
+        ● Click the “New Registration” button. (Note: Both new subscriptions and renewed subscriptions for Nevada GPS
+        are considered “new” to the TURN system.)
+      </li>
+      <li>● Review the Terms and Conditions, and then click “I agree” to continue.</li>
+      <li>
+        ● Fill out all the required fields, including the name of your organization, your login/username, a password for
+        your TURN GPS account, and your personal contact information.
+      </li>
+      <li>● Click “Register” to create your account.</li>
+    </ul>
+    <p>
+      At this point, the system will direct you to the payment page. Make sure that you have your payment information
+      readily available, as the system will automatically time out after a while, requiring you to start over with a
+      whole new login/username, password, and email. If the system keeps coming back with the password field empty, the
+      system may think that your email is already in use and, therefore, will not allow you to move forward. Each
+      subscription needs a unique email address (even if it is a made-up one [e.g., gps_login@BobsBigBurger.com]).
+    </p>
+    <p>
+      After you have created/renewed and paid for your subscription, you will receive an email with a receipt. It
+      typically takes the system about 24 hours to process a payment and activate an account for fieldwork using the
+      TURN GPS Network.
     </p>
   </Section>
   <Section {...page.section[2]}>
@@ -76,149 +121,50 @@ const page: IStandardPageMetadata = {
       Mountpoints that begin with MS are single base line solutions with the system automatically choosing the closest
       base station.
     </p>
-    <p>For Questions or Help contact the Support Desk at 801-538-3440 or toll-free 1-800-678-3440.</p>
   </Section>
   <Section {...page.section[3]}>
     <p>
-      You can <ExternalLink href="https://doc.arcgis.com/en/arcgis-online/manage-data/add-item-from-url.htm"
-        >add</ExternalLink
-      > individual layers within Discover as items in ArcGIS Online, making them available in both web maps and ArcGIS Pro
-      through your organization's content.
+      The Nevada GPS Network (formerly Washoe County GPS Network) is now being managed by the State of Utah. The Nevada
+      GPS Network provides users with real time corrections and data for post processing. The Coordinate Reference Frame
+      for this network is NAD83/94 (HARN). The Latitude, Longitude and Ellipsoidal Height of each reference station was
+      calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service
+      (OPUS) Projects application.
     </p>
     <p>
-      You can also <ExternalLink
-        href="https://doc.arcgis.com/en/arcgis-online/create-maps/add-layers-from-url.htm#ESRI_SECTION1_0255B1BD71534C53A5CF2F01092BC99A"
-        >add WMTS layers</ExternalLink
-      > directly to web maps.
+      With an activated subscription, set your GPS unit's VRS connection address to <b>168.179.231.11</b> and <b
+        >port 2102.</b
+      > Enter your new device-specific username and password.
     </p>
+    <h4>Connections from Source Table</h4>
+    <p>For Trimble units we have three different connections:</p>
+    <ul>
+      <li>VRS_CMR works older Trimble unit</li>
+      <li>VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware</li>
+      <li>VRS_CMRx works with the newest up to date Trimble units</li>
+    </ul>
+    <p>For non-Trimble units we have:</p>
+    <ul>
+      <li>VRS_RTCM23 works older non-Trimble unit</li>
+      <li>VRS_RTCM31 works with non-Trimble units</li>
+      <li>VRS_RTCM3.2 works with non-Trimble units, gives a full GNSS solution (all available satellites)</li>
+    </ul>
     <p>
-      <strong>Remember!</strong> If you want to use licensed links for the high-res imagery in a publicly-available webmap,
-      you need to request a set of locked-down links.
+      MS_CMR, MS_CMRP, MS_RTCM3.2 these are for connecting to single base when you are on the edge of the network or not
+      getting a strong network solution. System will automatically find the closest station and connect you.
+    </p>
+    <h4>Rinex File Downloads</h4>
+    <p>
+      The Nevada GPS network is providing 24 hour Rinex files with 5 second epoch available for download here: Nevada
+      GPS Rinex Download Due to storage limits, files can only be stored for a 90 day period, than they are permanently
+      deleted.
     </p>
   </Section>
   <Section {...page.section[4]}>
     <p>
-      Check out <ExternalLink
-        href="https://help.autodesk.com/view/MAP/2023/ENU/?guid=GUID-A9F620AD-6B9A-487D-9B33-7D365307D571"
-        >AutoCAD's documentation</ExternalLink
-      > for adding Discover layers via WMS. You may be able to use WMTS as well, but we've not seen good success with it
-      so far due to AutoCAD's implementation of the WMTS protocol.
-    </p>
-    <p>For other CAD programs, please check the product's documentation for WMS or WMTS support.</p>
-  </Section>
-  <Section {...page.section[5]}>
-    <p>
-      The <ExternalLink href="https://developers.arcgis.com/javascript/">ArcGIS Maps SDK for JavaScript</ExternalLink> provides
-      a class for interacting with these services, called a <ExternalLink
-        href="https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html"
-        >WebTileLayer</ExternalLink
-      >. Using this class is as simple as passing in the URL to the WMTS service with the appropriate level, column, and
-      row tokens. For example:
-    </p>
-    <Code
-      lang="js"
-      code=`
-    require([
-      "esri/Map",
-      "esri/views/MapView",
-      "esri/layers/WebTileLayer"
-    ], function (Map, MapView, WebTileLayer) {
-      const map = new Map();
-
-      const layer = new WebTileLayer({
-        urlTemplate:
-          "https://discover.agrc.utah.gov/login/path/bottle-apple-crater-oberon/tiles/lite_basemap/{level}/{col}/{row}"
-      });
-
-      map.add(layer);
-
-      const view = new MapView({
-        container: "viewDiv",
-        map: map,
-        center: [-111.5, 40],
-        zoom: 11
-      });
-    });`
-    />
-    <p>
-      There is one caveat to using discover services with WebTileLayer; it does not store metadata about the service.
-      The piece of metadata that will affect developers the most is the cache level information. WebTileLayer's cache
-      levels are based on a suggested set that is common amongst popular tile providers. The suggested set uses 0
-      through 19. If the base map you are using deviates from these levels (most of our base maps are 0-19 but <a
-        href="/documentation/developer/base-maps/basemap-scales">there are a few exceptions</a
-      >), you will be responsible for setting those values or you will not be given the UI to see the full tile set. As
-      you can see in the sample below it takes a fair amount of work.
-    </p>
-    <Code
-      lang="js"
-      code=`
-    require([
-      "esri/Map",
-      "esri/views/MapView",
-      "esri/layers/WebTileLayer",
-      "esri/layers/support/LOD",
-      "esri/layers/support/TileInfo"
-    ], function (Map, MapView, WebTileLayer, LOD, TileInfo) {
-      const tileSize = 256;
-      const earthCircumference = 40075016.685568;
-      const inchesPerMeter = 39.37;
-      const initialResolution = earthCircumference / tileSize;
-
-      const dpi = 96;
-      const maxLevel = 12;
-      const squared = 2;
-      const levelsOfDetail = [];
-
-      for (let level = 0; level <= maxLevel; level++) {
-        const resolution = initialResolution / Math.pow(squared, level);
-        const scale = resolution * dpi * inchesPerMeter;
-
-        levelsOfDetail.push(
-          new LOD({
-            level,
-            scale,
-            resolution
-          })
-        );
-      }
-
-      const map = new Map();
-
-      const tileInfo = {
-        dpi: dpi,
-        size: tileSize,
-        origin: {
-          x: -20037508.342787,
-          y: 20037508.342787
-        },
-        spatialReference: {
-          wkid: 3857
-        },
-        lods: levelsOfDetail
-      };
-
-      const layer = new WebTileLayer({
-        urlTemplate:
-          "https://discover.agrc.utah.gov/login/path/your-quad-word-here/tiles/lite_basemap/{level}/{col}/{row}",
-        tileInfo
-      });
-
-      map.add(layer);
-
-      const view = new MapView({
-        container: "viewDiv",
-        map,
-        center: [-111.5, 40],
-        zoom: 11
-      });
-    });
-    `
-    />
-    <p>
-      UGRC has a widget called <ExternalLink href="https://www.npmjs.com/package/@ugrc/layer-selector"
-        >layer-selector</ExternalLink
-      > that handles these issues as well as makes working with base maps more streamlined. It's main purpose is to provide
-      users the ability to quickly switch between base maps and toggle associated overlays.
+      If you have questions or require help contact the Support Desk from DTS at ugrc@utah.gov or 1-800-678-3440, or
+      Denise Peterson from UGRC at <a href="mailto:denisepeterson@utah.gov">denisepeterson@utah.gov</a> or 385-392-4011,
+      or Sean Fernandez from UGRC at
+      <a href="mailto:sfernandez@utah.gov">sfernandez@utah.gov</a>.
     </p>
   </Section>
 </Layout>
