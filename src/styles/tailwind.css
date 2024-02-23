@@ -35,6 +35,9 @@
   h6 {
     @apply text-sm font-bold md:text-base;
   }
+  kbd {
+    @apply rounded-md border bg-white px-2 py-0.5 text-sm font-medium shadow-sm dark:text-zinc-700;
+  }
   @font-face {
     font-family: 'SourceSansPro-Regular';
     src: url('/fonts/SourceSans3-Regular.otf.woff2') format('woff2');
