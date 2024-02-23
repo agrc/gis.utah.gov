@@ -1,4 +1,4 @@
-import { appendFileSync, readdirSync, readFileSync, writeFileSync } from 'fs';
+import { appendFileSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 
 const blogPostFolder = '../content/blog';
 const filenames = readdirSync(blogPostFolder);
