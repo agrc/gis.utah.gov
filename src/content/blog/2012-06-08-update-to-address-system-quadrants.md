@@ -13,4 +13,4 @@ An update was recently made to `SGID10.LOCATION.AddressSystemQuadrants`. The pur
 
 <figure class="caption caption--left"><a href="/images/404.png"><img class="caption__image" title="Address System Quadrants" src="/images/404.png" alt="" width="276" height="300" /></a><figcaption class="caption__text">Address System Quadrants</figcaption></figure>
 
-There are four grids in Wasatch County --- Heber, Midway, Strawberry, and Wallsburg. Wasatch County also is partially covered by the Kamas.
+There are four grids in Wasatch County -- Heber, Midway, Strawberry, and Wallsburg. Wasatch County also is partially covered by the Kamas.

@@ -16,7 +16,7 @@ Having worked with UGRC for the past three years, I’ve started to notice that 
 
 These questions led me down a rabbit hole of research into the relationship between GIS and public health, and I found a few answers about why GIS may be so important in light of the coronavirus.
 
-### 1) Historically, GIS has a solid track record for helping us understand public health situations.
+### 1. Historically, GIS has a solid track record for helping us understand public health situations
 
 As Greg Bunce discusses in his [“Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS” article](/blog/2019-09-03-digital-maps-gis-history), GIS really made its debut in connection to health when it helped resolve the London cholera epidemic of 1854. John Snow, a British physician, analyzed the relationship between water pumps and cholera cases, and he realized that water was the culprit in the spread of the disease. He made a spatial connection between the pumps and the disease, and that made all the difference in preventing further spread. Even from this early case study, “Mapping was an approach employed both by the officials charged with responding to this or that disease incursion and the medical personnel who struggled to treat those afflicted. . . . Then as well as now, mapping served and serves the science of its day” (Koch 2005, 2).
 
@@ -30,7 +30,7 @@ Since then, GIS has had an impact on several other health situations:
 
 As evidenced by these situations, GIS has been successful in providing a deeper understanding of public health issues. With that successful history, it’s no wonder that people are turning to GIS for answers about the coronavirus. GIS has helped in the past, so maybe it can help again.
 
-### 2) GIS helps people navigate through complicated layers of information.
+### 2. GIS helps people navigate through complicated layers of information
 
 GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page]({% link data/index.html %}), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
 
@@ -43,7 +43,7 @@ But GIS can help us draw connections between each of these complicated layers an
 
 To answer the question of “Where are COVID-19 cases increasing?” Johns Hopkins Coronavirus Resource Center has an [animated map](https://coronavirus.jhu.edu/data/animated-world-map) that color-codes the population for each country for each week, and the countries visually change colors to show you the trends. In a few seconds, the map is able to provide you the same information that it would otherwise take paragraphs to describe. And instead of just answering the question of “Where are COVID-19 cases increasing?” with perhaps a list of countries with their case numbers, the map answers the larger question of “How has the number of cases of COVID-19 changed globally over time?” And that’s the beauty of GIS.
 
-### 3) GIS naturally involves intergroup collaboration, which is essential for coronavirus response.
+### 3. GIS naturally involves intergroup collaboration, which is essential for coronavirus response
 
 Collaboration between groups is an essential part of the GIS field, and that’s another reason why GIS could be so important in relation to the coronavirus. Let’s go back to the “Where are COVID-19 cases increasing?” question and apply it on a local Utah level. To answer this question, you might first want to examine Utah counties, and to find out the geographic boundaries of each county, you’d need to work with the state’s county recorders. To learn about the population for each county, you’d be relying on the US Census Bureau. To learn about the number of cases of coronavirus in a county, you might look to the county health department. And so on. And then in Utah, UGRC would be the keeper of all this data, so we’d work with contacts from all of those groups.
 
@@ -51,7 +51,7 @@ You can begin to see how many different groups are involved in collecting and ma
 
 Agendra Kumar, Esri India president, describes this collaborative atmosphere well saying, “With location as a common denominator, Geographic Information System (GIS) technology provides the capability to enable this common operating picture for multi-agency collaboration” ([Singh 2020](https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102)). Later in the interview, he also goes on to describe how Esri, a world leader in GIS, is collaborating with various agencies about the coronavirus.
 
-> Esri is working with various government agencies around the world and bodies such as World Health Organisation (WHO) and Centres for Disease Control & Prevention (CDCP) to help them leverage GIS technology to make decisions, plan and communicate various measures to control the spread of pandemic. ([Singh 2020](https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102))
+> Esri is working with various government agencies around the world and bodies such as World Health Organization (WHO) and Centres for Disease Control & Prevention (CDCP) to help them leverage GIS technology to make decisions, plan and communicate various measures to control the spread of pandemic. ([Singh 2020](https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102))
 
 In order for any country to effectively respond to the coronavirus, it is essential that various local and national groups work together to share information, assess that information, and take action on that information. GIS naturally opens the door for this collaboration.
 

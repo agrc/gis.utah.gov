@@ -14,7 +14,7 @@ category: Uncategorized
 
 Access to high-quality GIS data is a privilege, and the fact that it's open and free is nothing short of amazing. Yes, I’m talking about Utah's SGID. From a local perspective, we’re all accustomed to it being there. But really, the concept of readily available, mature, open data is somewhat unique. Over the years, many factors have played into the SGID’s development and current maturity, and it takes ongoing maintenance and planning to ensure its continued success.
 
-This post explores some of the early milestones ("highlights") of the SGID, the current state of the SGID with usage stats, and, finally, where we are going next---with a poll requesting user input!
+This post explores some of the early milestones ("highlights") of the SGID, the current state of the SGID with usage stats, and, finally, where we are going next--with a poll requesting user input!
 
 ### Early History of the SGID
 
@@ -54,7 +54,7 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 - **SGID Meets the World Wide Web (Early 2000s)**
   - By the early 2000s the SGID user guide, data, and data viewer were all solely available over the Web. AGRC was using ArcSDE 8.2 to maintain the data and ArcIMS for the interactive mapping website. Users could also use a separate ArcIMS site to create their own exportable map using a [custom map authoring tool]({% link images/SGID_early2000s_create_custom_map.gif %}).
 
-[![SGID Early 2000s](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_early2000s_sm.png))
+![SGID Early 2000s](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_early2000s_sm.png)
 
 ### Where Is the SGID Now?
 

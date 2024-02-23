@@ -11,7 +11,8 @@ tags:
 category: SGID Blog
 ---
 
-{% include embedded_video.html embed_url="https://player.vimeo.com/video/565826461" %}
+<iframe class="aspect-video mx-auto w-full max-w-4xl rounded-lg border-2 border-black shadow-xl" src="https://www.youtube.com/embed/86RN0rdsMOE?si=TZ06PMj3v6wYhOTx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 _From the I Hate Slivers department_
 
 Modern GIS software goes to great lengths to automate the mundane tasks and hide the boring stuff from us. As a relative newcomer to the field, I've heard the old-timers talk about how spoiled we are with on-the-fly projections (now excuse me while I get off their lawn). But really, we are. Being able to display and process data in a variety of projections without first having to reproject it all saves both time and sanity.

@@ -12,13 +12,9 @@ Developing software for digital assistants is fun and a refreshing change from t
 
 ## Background
 
-
-
 In 2018 UGRC submitted a [proposal](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/proposal.md) for funds from the State of Utah Technology Innovation Program (i.e., Innovation Fund) and was [awarded](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/docs/award.md) funding to experiment with digital assistants. Using GIS with digital assistants was the niche to explore, and we learned a lot more along the way.
 
 ## Getting Started
-
-
 
 We started with the Alexa skill since we had prior [personal](https://github.com/steveoh/alexa-utah-avy-skill) [experience](https://github.com/stdavis/utah-air-quality-alexa-skill) with the ecosystem and we had a few [promotional devices](https://developer.amazon.com/en-US/alexa/alexa-skills-kit/alexa-developer-skill-promotion) that we could test with.
 
@@ -28,15 +24,13 @@ Utah is a Google Drive Enterprise customer and has been for many years. Therefor
 
 ## Development
 
-
-
 ### Debug Cycle
 
 Having a quick debug test loop is paramount to developer productivity. When developing in the cloud, this is often hindered by the time taken for deployments and the lack of access to the developer tooling we are familiar with on our machines. I chose to use Python and [Flask](http://flask.pocoo.org/) for the Alexa skill to keep a fast loop. Flask let us handle Alexa requests locally, which eliminated the need to deploy to lambda, and, thus, saved us time. This was a _huge_ productivity boost as we were able to use the Python debugger and all of the debugging tools we are familiar with. And it is pleasing to take a break from callbacks and promises once in a while.
 
 It was a relatively simple process to make Alexa send her requests to my [local flask server](https://github.com/agrc/digital-assisant-skills#development-ceremony), which was acting as a lambda function. Using [ngrok](https://dashboard.ngrok.com/get-started) to expose my laptop as a temporary public https url that I could set on Alexa was a key piece of the puzzle. Switching between lambda and my laptop required a change to two lines of code. I created a small [CLI](https://github.com/agrc/digital-assisant-skills/tree/alexa-skill/cli) tool to make that _even_ easier.
 
-Google Assistant leads you to Firebase functions for request fulfillment. Firebase only supports JavaScript for a node environment---so callbacks and promises it was! Thank goodness for async/await!
+Google Assistant leads you to Firebase functions for request fulfillment. Firebase only supports JavaScript for a node environment--so callbacks and promises it was! Thank goodness for async/await!
 
 I never did set up a local server for Google Assistant. While the Firebase CLI is awesome and can start a local server, debugging what is going on inside that local server is **not** simple. I _could_ have set up an [Express](https://expressjs.com/) server, roughly a JS equivalent to Flask, but I chose to avoid the complexity. In hindsight, I would recommend the Express approach since (to my great frustration) I ended up `console.log` debugging in the Firebase logs.
 
@@ -58,8 +52,6 @@ Digital assistants without screens existed for barely one year. Skills can now p
 
 ## Testing
 
-
-
 I really enjoyed the way the ASK CLI allows you to test a skill. Talking to your skill over and over again is bad™, and typing it over and over is **worse**. The ASK CLI supports playing generated [text file recordings](https://github.com/agrc/digital-assisant-skills/blob/alexa-skill/recordings/all.template) that direct the conversation in the test. The CLI outputs the Alexa responses and you can visually approve the conversation. I could not find an equivalent in the Google Assistant simulator or actions CLI. The Google nodejs SKD does have a component called `Suggestions` that displays a suggestion chip that users can click instead of typing, and although that was an improvement, it was still not as pleasant as the recordings.
 
 ### Location
@@ -67,8 +59,6 @@ I really enjoyed the way the ASK CLI allows you to test a skill. Talking to your
 The Google Assistant and Alexa simulators are very laborsaving. They give you screens to test your conversations, view the presentation markup output, and many other features. One feature that the Alexa simulator is missing is spoofing location. You **cannot** set a location for the simulator to use. Google makes this very simple and a first-class feature on the main UI. The major difference between the two assistants, in terms of locations, is that addresses are assigned to devices in Amazon. Amazon is thinking, "Where do we ship all of your packages?" while the Google Assistant is on every Android phone and their roots are in mapping and navigation, so location is "Where are you now?"
 
 ## Resources
-
-
 
 ### Documentation
 
@@ -86,8 +76,6 @@ The Alexa slack channel is **awesome**. There are a lot of knowledgeable people 
 Alexa also runs "[office hours](https://www.twitch.tv/amazonalexa)" on twitch. If you have never used twitch, it is becoming a valuable developer relations outreach tool. _It is not only for gaming_. Alexa developers host an hour "show" where they demonstrate new features, live code samples, and answer questions submitted by watchers. If a watcher stumps the host with a question, the developers get back to the watcher later. This is as good as it gets without pair programming with an Amazon Alexa employee.
 
 ## Wrap-Up
-
-
 
 Developing software for digital assistants is fun. I very much enjoyed the developer experience for Alexa, but Google's natural language processing from Dialogflow required less training. I would expect the features from each company to be eventually consistent. One may have it first, but the competition will catch up and surpass. But Google Assistant and Amazon Alexa are both great tools, and I enjoyed my experience working with them.
 
