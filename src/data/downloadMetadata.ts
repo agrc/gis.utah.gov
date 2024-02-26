@@ -2716,8 +2716,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Open Source Places': {
     itemId: '45e25f4062264dc1baa3765e3dbb5d8e',
     name: 'Utah Open Source Places',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'OpenSourcePlaces',
+    openSgid: 'society.open_source_places',
     layerId: 0,
   },
   'Utah Housing Unit Inventory': {
