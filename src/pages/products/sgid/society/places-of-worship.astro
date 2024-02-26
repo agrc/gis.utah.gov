@@ -1,0 +1,76 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Places of Worship',
+  description: `Places of Worship in Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`2011`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The definition of a place of worship is any type of building or portion of a building that is used, constructed,
+      designed, or adapted to be used as a place for religious and spiritual activities. This does not include religious
+      schools or community centers, unless they meet the definition as a place of worship. Examples of facilities in
+      this dataset are chapels, churches, convents, mosques, shrines, synagogues, and temples. The sources of this
+      dataset are the Large Protestant Churches, Mosques, Jewish Synagogues, and Roman Catholic Churches in Large Cities
+      dataset and additional UGRC research.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah Historical Society" href="https://history.utah.gov/utah-cemeteries-burials/"
+        >Utah Historical Society cemeteries and burials website.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah State Historic Preservation Office" href="https://ushpo.utah.gov/"
+        >Utah State Historic Preservation Office website.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Society" href="/products/sgid/society">Society page</CardWithSmallLink>
+      <CardWithSmallLink title="Location" href="/products/sgid/location">Location page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
