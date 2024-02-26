@@ -7,6 +7,7 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 
+import BulletedList from '@components/page/BulletedList.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
@@ -50,8 +51,15 @@ const page: IPageMetadata = {
         href="https://www.blm.gov/">Bureau of Land Management (BLM)</ExternalLink
       >.
     </p>
-    The cities each office is located in are:
-    <ul>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>The cities each office is located in are:</p>
+    <BulletedList>
       <li>Escalante Interagency Office/Visitor Center-Escalante, Utah</li>
       <li>GSENM Field Office-Kanab, Utah</li>
       <li>Kanab Field Office-Kanab, Utah</li>
@@ -68,14 +76,10 @@ const page: IPageMetadata = {
       <li>Henry Mtn. Field Station-Hanksville, Utah</li>
       <li>GSC-E Nat'l. Mon. Anasazi State Park GSC-E Nat'l. Mon. Big Water Visitor Center-Boulder, Utah</li>
       <li>Richfield Field Office-Richfield, Utah</li>
-    </ul>
+    </BulletedList>
   </Fragment>
 
-  <Section title="Use the data" slot="downloads" titlePosition="center">
-    <HubDownloads {...page.hub} />
-  </Section>
-
-  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+  <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="Utah BLM Office" href="https://www.blm.gov/office/utah-state-office"
         >Utah State Office, Bureau of Land Management (BLM) website.</CardWithPopularLink
@@ -86,7 +90,7 @@ const page: IPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Society" href="/products/sgid/society">Society page</CardWithSmallLink>
       <CardWithSmallLink title="Forest Service Stations" href="/products/sgid/location/forest-service-stations"
