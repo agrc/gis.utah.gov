@@ -1918,8 +1918,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Forest Service Stations': {
     itemId: 'ea7bd97ff90f40d0b0e0acb2e03271f3',
     name: 'Utah Forest Service Stations',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'ForestServiceStations',
+    openSgid: 'society.forest_service_stations',
     layerId: 0,
   },
   'Utah Fire Stations': {
@@ -1960,15 +1960,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Cemeteries': {
     itemId: 'f54d1c00020940ec95a729b39518e020',
     name: 'Utah Cemeteries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Cemeteries',
+    openSgid: 'society.cemeteries',
     layerId: 0,
   },
   'Utah BLM Field Offices': {
     itemId: '1922b4277590438fae726e2b97c14dda',
     name: 'Utah BLM Field Offices',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'BLMFieldOffices',
+    openSgid: 'society.blm_field_offices',
     layerId: 0,
   },
   'Utah UDOT Map Scenic Byways': {
