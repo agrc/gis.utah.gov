@@ -26,7 +26,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`June 2013`],
+  updateHistory: [`June 2013`, `August 2011`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -68,7 +68,9 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Society" href="/products/sgid/society">Society page</CardWithSmallLink>
-      <CardWithSmallLink title="Location" href="/products/sgid/location">Location page</CardWithSmallLink>
+      <CardWithSmallLink title="BLM Field Offices" href="/products/sgid/location/blm-field-offices"
+        >BLM Field Offices page</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>
