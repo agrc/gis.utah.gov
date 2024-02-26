@@ -28,7 +28,7 @@ export const metadata: IMetadata = {
 };
 
 const page: IPageMetadata = {
-  ...metadata, // this brings all the data from the metadata object above into the page object
+  ...metadata,
   updateHistory: [
     'February 2024',
     'December 2023',
@@ -59,10 +59,7 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <!-- the title for hub data is typically `Use the data` but it can be anything
-  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
     <HubDownloads {...page.hub} />
   </Section>
 
