@@ -1,0 +1,95 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah BLM Field Offices',
+  description: `Bureau of Land Management field offices in Utah.`,
+  stewards: ['UGRC', 'Bureau of Land Management (BLM)'],
+  type: ProductType.POINT,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`June 2013`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset contains Bureau of Land Management (BLM) field offices in the State Of Utah and provides the
+      location, facility name, and type for 11 BLM Field Offices, 5 BLM Visitor Centers and 1 BLM Field Station. The
+      dataset receives periodic updates and is maintained in collaboration with the <ExternalLink
+        href="https://www.blm.gov/">Bureau of Land Management (BLM)</ExternalLink
+      >.
+    </p>
+    The cities each office is located in are:
+    <ul>
+      <li>Escalante Interagency Office/Visitor Center-Escalante, Utah</li>
+      <li>GSENM Field Office-Kanab, Utah</li>
+      <li>Kanab Field Office-Kanab, Utah</li>
+      <li>Cedar City Field Office-Cedar City, Utah</li>
+      <li>St. George Field Office-St. George, Utah</li>
+      <li>Kanab Visitor Center-Kanab, Utah</li>
+      <li>Cannonville Visitor Center-Cannonville, Utah</li>
+      <li>Utah State Office-Salt Lake City, Utah</li>
+      <li>Price Field Office-Price, Utah Moab Field Office-Moab, Utah</li>
+      <li>Monticello Field Office-Monticello, Utah</li>
+      <li>Salt Lake Field Office-West Valley City, Utah</li>
+      <li>Vernal Field Office-Vernal, Utah</li>
+      <li>Fillmore Field Office-Fillmore, Utah</li>
+      <li>Henry Mtn. Field Station-Hanksville, Utah</li>
+      <li>GSC-E Nat'l. Mon. Anasazi State Park GSC-E Nat'l. Mon. Big Water Visitor Center-Boulder, Utah</li>
+      <li>Richfield Field Office-Richfield, Utah</li>
+    </ul>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah BLM Office" href="https://www.blm.gov/office/utah-state-office"
+        >Utah State Office, Bureau of Land Management (BLM) website.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="U.S. Forest Service" href="https://www.fs.usda.gov/"
+        >U.S. Forest Service website.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Society" href="/products/sgid/society">Society page</CardWithSmallLink>
+      <CardWithSmallLink title="Location" href="/products/sgid/location">Location page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

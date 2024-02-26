@@ -17,16 +17,16 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah State Fuel Sites',
-  description: `Fueling locations operated by the State Of Utah.`,
-  stewards: ['UGRC', 'Utah Division of Fleet Operations'],
+  title: 'Utah Forest Service Stations',
+  description: `U.S. Forest Service Stations in Utah.`,
+  stewards: ['UGRC', 'Bureau of Land Management (BLM)'],
   type: ProductType.POINT,
   category: SgidCategory.SOCIETY,
 };
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`December 2023`],
+  updateHistory: [`June 2013`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -44,10 +44,9 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      This dataset contains state-run fuel sites in the State Of Utah and provides the location, site name, site status,
-      address and whether it offers gas and/or diesel. The dataset receives periodic updates and is maintained in
-      collaboration with the <ExternalLink href="https://fleet.utah.gov">Utah Division of Fleet Operations</ExternalLink
-      >.
+      This dataset contains U.S. Forest Service stations in the State Of Utah and provides the facility name and
+      location of forest ranger stations and forest offices. The dataset receives periodic updates and is maintained in
+      collaboration with the <ExternalLink href="https://www.blm.gov/">Bureau of Land Management (BLM)</ExternalLink>.
     </p>
   </Fragment>
 
@@ -57,11 +56,11 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="State Facilities" href="/products/sgid/society/state-facilities"
-        >State Facilities page.</CardWithPopularLink
+      <CardWithPopularLink title="Utah BLM Office" href="https://www.blm.gov/office/utah-state-office"
+        >Utah State Office, Bureau of Land Management (BLM) website.</CardWithPopularLink
       >
-      <CardWithPopularLink title="Utah Division of Air Quality" href="https://deq.utah.gov/division-air-quality"
-        >Utah DEQ - Division of Air Quality.</CardWithPopularLink
+      <CardWithPopularLink title="U.S. Forest Service" href="https://www.fs.usda.gov/"
+        >U.S. Forest Service website.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
@@ -69,7 +68,7 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Society" href="/products/sgid/society">Society page</CardWithSmallLink>
-      <CardWithSmallLink title="Energy" href="/products/sgid/energy">Energy page</CardWithSmallLink>
+      <CardWithSmallLink title="Location" href="/products/sgid/location">Location page</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>
