@@ -36,7 +36,7 @@
     @apply text-sm font-bold md:text-base;
   }
   kbd {
-    @apply rounded-md border bg-white px-2 py-0.5 text-sm font-medium shadow-sm dark:text-zinc-700;
+    @apply mx-px rounded-md border bg-white px-2 py-0.5 text-sm font-medium shadow-sm drop-shadow-md dark:text-zinc-700;
   }
   @font-face {
     font-family: 'SourceSansPro-Regular';
