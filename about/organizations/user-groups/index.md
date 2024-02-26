@@ -22,7 +22,7 @@ For more information, please contact Jason Anderson: <jranders@blm.gov>.
 
 #### Northern Utah GIS
 
-Northern Utah GIS (NUGIS) consists of Geo-spatial technicians and specialists from Davis, Weber, Box Elder, and Rich Counties.
+Northern Utah GIS (NUGIS) consists of geospatial professionals from Box Elder, Cache, Davis, Morgan, Rich, and Weber counties.
 
 For more information, please contact Kasey Hansen: <khansen@jub.com>.
 
