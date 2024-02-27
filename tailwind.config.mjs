@@ -1,4 +1,6 @@
 const plugin = require('tailwindcss/plugin');
+const heroPatterns = require('tailwind-heropatterns');
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -26,5 +28,14 @@ export default {
       });
     }),
     require('@anuragroy/tailwindcss-animate'),
+    heroPatterns({
+      patterns: ['graph-paper', 'topography'],
+      opacity: {
+        default: '.1',
+      },
+      colors: {
+        default: colors.black,
+      },
+    }),
   ],
 };

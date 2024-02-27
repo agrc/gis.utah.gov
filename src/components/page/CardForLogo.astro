@@ -1,0 +1,15 @@
+---
+interface Props {
+  download: string;
+}
+const { download } = Astro.props;
+---
+
+<div class="grid overflow-hidden rounded-lg border border-black/20 bg-zinc-300 dark:border-white/20">
+  <div class="bg-hero-topography px-6 py-3">
+    <slot />
+  </div>
+  <div class="border-t border-t-black/30 bg-white py-2 text-center dark:bg-primary">
+    <a href={download} download class="">Download high resolution logos</a>
+  </div>
+</div>

@@ -21,6 +21,9 @@
       "@images/solutions/*": [
         "src/images/solutions/*"
       ],
+      "@images/media/*": [
+        "src/images/media/*"
+      ],
       "@images/sgid/*": [
         "src/images/product-sgid/*"
       ],
