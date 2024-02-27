@@ -112,8 +112,8 @@ export const dataPages: DownloadMetadata = {
   'Utah ZIP Code Areas': {
     itemId: '4f9d1d1301864f8cabef08cbae7b2d3c',
     name: 'Utah ZIP Code Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahZipCodeAreas',
+    openSgid: 'boundaries.zip_code_areas',
     layerId: 0,
   },
   'Utah Metro Townships': {
