@@ -7,6 +7,8 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { stripeSections } from '@utils/page';
 
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
 const page: IStandardPageMetadata = {
   title: 'Getting Connected',
   pillar: 'TURN',
@@ -70,6 +72,13 @@ const page: IStandardPageMetadata = {
       typically takes the system about 24 hours to process a payment and activate an account for fieldwork using the
       TURN GPS Network.
     </p>
+    <div class="mx-auto w-full max-w-4xl">
+      <YouTube
+        class="aspect-video max-w-full rounded-lg border-2 border-black shadow-xl"
+        id="T4Q2eqrrbXQ"
+        playlabel="TURN Bill Pay System tutorial video"
+      />
+    </div>
   </Section>
   <Section {...page.section[2]}>
     <p>
@@ -92,28 +101,30 @@ const page: IStandardPageMetadata = {
     </ul>
     <ul>
       <li>
-        GNSS-VRS-NAD83-RTCM32 (Full GNSS network solution including GPS, Glonass, Galileo, BeiDou with RTCM32 output
+        ● GNSS-VRS-NAD83-RTCM32 (Full GNSS network solution including GPS, Glonass, Galileo, BeiDou with RTCM32 output
         format) (*Recommended for the majority of all users*)
       </li>
-      <li>GNSS-VRS-NAD83-CMRx (Full GNSS network solution including GPS, Glonass, Galileo with CMRx output format)</li>
-      <li>VRS-NAD83-CMRp (Full network solution including GPS, Glonass with CMRp output format)</li>
-      <li>VRS-NAD83-CMRx (Full network solution including GPS, Glonass with CMRx output format)</li>
-      <li>VRS-NAD83-RTCM31 (Full network solution including GPS, Glonass with RTCM31 output format)</li>
-      <li>VRS-NAD83-RTCM32 (Full network solution including GPS, Glonass with RTCM32 output format)</li>
       <li>
-        MS-NAD83-CMRp (Single base solution from the closest base, determined by the system, including GPS, Glonass with
-        CMRp output format)
+        ● GNSS-VRS-NAD83-CMRx (Full GNSS network solution including GPS, Glonass, Galileo with CMRx output format)
+      </li>
+      <li>● VRS-NAD83-CMRp (Full network solution including GPS, Glonass with CMRp output format)</li>
+      <li>● VRS-NAD83-CMRx (Full network solution including GPS, Glonass with CMRx output format)</li>
+      <li>● VRS-NAD83-RTCM31 (Full network solution including GPS, Glonass with RTCM31 output format)</li>
+      <li>● VRS-NAD83-RTCM32 (Full network solution including GPS, Glonass with RTCM32 output format)</li>
+      <li>
+        ● MS-NAD83-CMRp (Single base solution from the closest base, determined by the system, including GPS, Glonass
+        with CMRp output format)
       </li>
       <li>
-        MS-NAD83-CMRx (Single base solution from the closest base, determined by the system, including all available
+        ● MS-NAD83-CMRx (Single base solution from the closest base, determined by the system, including all available
         satellite constellations from that receiver with CMRx output format)
       </li>
       <li>
-        MS-NAD83-RTCM31(Single base solution from the closest base, determined by the system, including all available
+        ● MS-NAD83-RTCM31(Single base solution from the closest base, determined by the system, including all available
         satellite constellations from that receiver with RTCM31 output format)
       </li>
       <li>
-        MS-NAD83-RTCM32 (Single base solution from the closest base, determined by the system, including all available
+        ● MS-NAD83-RTCM32 (Single base solution from the closest base, determined by the system, including all available
         satellite constellations from that receiver with RTCM32 output format)
       </li>
     </ul>
@@ -138,15 +149,15 @@ const page: IStandardPageMetadata = {
     <h4>Connections from Source Table</h4>
     <p>For Trimble units we have three different connections:</p>
     <ul>
-      <li>VRS_CMR works older Trimble unit</li>
-      <li>VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware</li>
-      <li>VRS_CMRx works with the newest up to date Trimble units</li>
+      <li>● VRS_CMR works older Trimble unit</li>
+      <li>● VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware</li>
+      <li>● VRS_CMRx works with the newest up to date Trimble units</li>
     </ul>
     <p>For non-Trimble units we have:</p>
     <ul>
-      <li>VRS_RTCM23 works older non-Trimble unit</li>
-      <li>VRS_RTCM31 works with non-Trimble units</li>
-      <li>VRS_RTCM3.2 works with non-Trimble units, gives a full GNSS solution (all available satellites)</li>
+      <li>● VRS_RTCM23 works older non-Trimble unit</li>
+      <li>● VRS_RTCM31 works with non-Trimble units</li>
+      <li>● VRS_RTCM3.2 works with non-Trimble units, gives a full GNSS solution (all available satellites)</li>
     </ul>
     <p>
       MS_CMR, MS_CMRP, MS_RTCM3.2 these are for connecting to single base when you are on the edge of the network or not

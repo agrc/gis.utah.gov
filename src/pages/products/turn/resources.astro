@@ -2,25 +2,20 @@
 import type { IStandardPageMetadata } from '@models/products/sgid/types';
 
 import ExternalLink from '@components/page/ExternalLink.astro';
-import NumberedListItem from '@components/page/NumberedListItem.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
-import { Code } from 'astro:components';
-
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  title: 'Connecting clients',
-  pillar: 'Discover',
+  title: 'TURN Resources',
+  pillar: 'TURN',
   section: stripeSections([
     {},
-    { title: 'QGIS' },
-    { title: 'ArcGIS Pro' },
-    { title: 'ArcGIS Online' },
-    { title: 'CAD programs' },
-    { title: 'Custom web apps' },
+    { title: 'GNSS Network' },
+    { title: 'Troubleshooting TURN' },
+    { title: 'Supported Devices' },
   ]),
 };
 ---
@@ -43,20 +38,6 @@ const page: IStandardPageMetadata = {
       <ExternalLink href="https://qgis.org/en/site/">QGIS</ExternalLink> is a fully-featured open source desktop GIS application
       that makes it easy to use Discover services alongside many other data layers.
     </p>
-    <ol class="list-inside list-decimal">
-      <NumberedListItem
-        >Go to Layer &#x2192; Add Layer &#x2192; Add WMS/WMTS Layer... (opens the Data Source Manager)</NumberedListItem
-      >
-      <NumberedListItem>Click the New button at the top to add a new connection</NumberedListItem>
-      <NumberedListItem>Choose a name for the Name field ("UGRC Discover" works great)</NumberedListItem>
-      <NumberedListItem>Enter your WMTS link into the URL field</NumberedListItem>
-      <NumberedListItem>Leave everything else as it is and click OK</NumberedListItem>
-      <NumberedListItem>Click Close on the Data Source Manager</NumberedListItem>
-      <NumberedListItem
-        >Expand the WMS/WMTS item in the Browser panel to see the Discover server with the name you provided. Expand the
-        server item to browse the layers and add them to your map.</NumberedListItem
-      >
-    </ol>
   </Section>
   <Section {...page.section[2]}>
     <p>
@@ -103,31 +84,7 @@ const page: IStandardPageMetadata = {
       >. Using this class is as simple as passing in the URL to the WMTS service with the appropriate level, column, and
       row tokens. For example:
     </p>
-    <Code
-      lang="js"
-      code=`
-    require([
-      "esri/Map",
-      "esri/views/MapView",
-      "esri/layers/WebTileLayer"
-    ], function (Map, MapView, WebTileLayer) {
-      const map = new Map();
 
-      const layer = new WebTileLayer({
-        urlTemplate:
-          "https://discover.agrc.utah.gov/login/path/bottle-apple-crater-oberon/tiles/lite_basemap/{level}/{col}/{row}"
-      });
-
-      map.add(layer);
-
-      const view = new MapView({
-        container: "viewDiv",
-        map: map,
-        center: [-111.5, 40],
-        zoom: 11
-      });
-    });`
-    />
     <p>
       There is one caveat to using discover services with WebTileLayer; it does not store metadata about the service.
       The piece of metadata that will affect developers the most is the cache level information. WebTileLayer's cache
@@ -137,71 +94,7 @@ const page: IStandardPageMetadata = {
       >), you will be responsible for setting those values or you will not be given the UI to see the full tile set. As
       you can see in the sample below it takes a fair amount of work.
     </p>
-    <Code
-      lang="js"
-      code=`
-    require([
-      "esri/Map",
-      "esri/views/MapView",
-      "esri/layers/WebTileLayer",
-      "esri/layers/support/LOD",
-      "esri/layers/support/TileInfo"
-    ], function (Map, MapView, WebTileLayer, LOD, TileInfo) {
-      const tileSize = 256;
-      const earthCircumference = 40075016.685568;
-      const inchesPerMeter = 39.37;
-      const initialResolution = earthCircumference / tileSize;
 
-      const dpi = 96;
-      const maxLevel = 12;
-      const squared = 2;
-      const levelsOfDetail = [];
-
-      for (let level = 0; level <= maxLevel; level++) {
-        const resolution = initialResolution / Math.pow(squared, level);
-        const scale = resolution * dpi * inchesPerMeter;
-
-        levelsOfDetail.push(
-          new LOD({
-            level,
-            scale,
-            resolution
-          })
-        );
-      }
-
-      const map = new Map();
-
-      const tileInfo = {
-        dpi: dpi,
-        size: tileSize,
-        origin: {
-          x: -20037508.342787,
-          y: 20037508.342787
-        },
-        spatialReference: {
-          wkid: 3857
-        },
-        lods: levelsOfDetail
-      };
-
-      const layer = new WebTileLayer({
-        urlTemplate:
-          "https://discover.agrc.utah.gov/login/path/your-quad-word-here/tiles/lite_basemap/{level}/{col}/{row}",
-        tileInfo
-      });
-
-      map.add(layer);
-
-      const view = new MapView({
-        container: "viewDiv",
-        map,
-        center: [-111.5, 40],
-        zoom: 11
-      });
-    });
-    `
-    />
     <p>
       UGRC has a widget called <ExternalLink href="https://www.npmjs.com/package/@ugrc/layer-selector"
         >layer-selector</ExternalLink
