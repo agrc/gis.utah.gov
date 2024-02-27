@@ -98,8 +98,8 @@ export const dataPages: DownloadMetadata = {
   'Utah School District Boundaries': {
     itemId: '3e69ecf5c46a492aa9974f6fa03d1378',
     name: 'Utah School District Boundaries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahSchoolDistrictBoundaries',
+    openSgid: 'boundaries.school_district_boundaries',
     layerId: 0,
   },
   'Utah Municipal Boundaries': {
