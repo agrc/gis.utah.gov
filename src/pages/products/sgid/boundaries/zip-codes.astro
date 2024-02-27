@@ -1,0 +1,100 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+import { removeDateRange } from '@utils/data';
+
+export const metadata: IMetadata = {
+  title: 'Utah ZIP Code Areas',
+  description: `The estimated geographic extents for all five digit zip codes in Utah that are not P.O. box only.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+  secondaryCategory: SgidCategory.LOCATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [
+    `April 2022 - Improved boundaries in Davis county`,
+    `November 2019 - Added 84765 polygon for Motoqua in Washington County`,
+    `January 2019 - Added 84059 zip code in Utah County`,
+    `February 2016 - Updated 84321, 84235, 85326, 84332, 84339`,
+    `July 2015 - Split the 84095 (South Jordan) zip code along the Bangerter Hwy to create the new zip code 84009 (South Jordan)`,
+    `January 2015 - Improvements were made to 84773 (Teasdale) and 84775 (Torrey)`,
+    `January 2015 - Adjusted the 84747 (Loa) and 84716 (Boulder) zip code boundaries to follow the address grid quadrant boundaries`,
+  ],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={removeDateRange(page.title)}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Zip Codes Boundaries represent an ongoing effort to approximate the geographic extents of five digit zip codes.
+      The dataset was produced using a combination of methods and is based on several sets of source data. Editing
+      methods include:
+      <li>Using local zipcode polygon data obtained from counties and cities.</li>
+      <li>
+        Identifying place locations (cities, towns, populated areas, etc.) from the postal service website and address
+        information system (AIS) and building zipcode boundaries around these places.
+      </li>
+      <li>Using the 2000 Census TIGER line file’s zip code attributes.</li>
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      In addition, UGRC has used the locations of mailing addresses known to be valid to fine tune this dataset. The
+      native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are no
+      constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to:
+      State of Utah, SGID.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="US Postal Service page" href="data/location/usps-post-offices/"
+        >US Postal Service data page.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Zip Code PO Boxes" href="data/location/zip-code-po-boxes/"
+        >Approximate locations of USPS PO Boxes in Utah.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Society" href="/products/sgid/society">Society page</CardWithSmallLink>
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries">Boundaries page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
