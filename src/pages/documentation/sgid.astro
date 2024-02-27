@@ -13,6 +13,7 @@ import openSgidPhoto from '@images/documentation/sgid/open-sgid.svg';
 import sgidIndexPhoto from '@images/documentation/sgid/sgid-index.svg';
 import sgidLogo from '@images/documentation/sgid/sgid-logo.svg';
 import sgidOpenDataPhoto from '@images/documentation/sgid/sgid-opendata.svg';
+import sharePhoto from '@images/documentation/sgid/share.svg';
 
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
@@ -34,6 +35,7 @@ const page: IStandardPageMetadata = {
     { title: 'Discover base maps and imagery', actionText: 'Learn more', actionUrl: '/documentation/discover' },
     { title: 'Raster discovery app', actionText: 'Search and download imagery', actionUrl: 'https://raster.utah.gov' },
     { title: 'UGRC API', actionText: 'Learn more', actionUrl: '/products/api' },
+    { title: 'Sharing with the SGID', actionUrl: '/documentation/sgid/sharing' },
   ]),
 };
 ---
@@ -161,6 +163,32 @@ const page: IStandardPageMetadata = {
       >, <a href="/products/sgid/address/masquerade">Esri locator proxy service</a>, and our <a
         href="/products/sgid/address/api-client">API Client</a
       > which can help you navigate the sea of data within the SGID.
+    </p>
+  </Section>
+  <Section {...page.section[8]}>
+    <Image
+      slot="image"
+      src={sharePhoto}
+      alt="Two people putting a lightbulb together as if it were a puzzle"
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      The Utah State Geographic Information Datasource is one of the premier statewide GIS data resources in the
+      country, providing clean, consistent, and authoritative data across every geography in the state. People have been
+      turning to the SGID for nearly <a href="/blog/2019-06-11-sgid-then-and-now">30 years</a> to support their personal,
+      commercial, academic, and government projects.
+    </p>
+    <p>
+      Nearly all the data that make the SGID such a valuable resource come from cities, counties, and other state
+      agencies. We offer a heartfelt <strong>Thank You!</strong> on behalf of both UGRC and all the users of the SGID to
+      everyone who has contributed data.
+    </p>
+    <p>
+      We hope you'll follow the example of our current contributors and consider sharing your data with a broad audience
+      through the SGID. We have three separate "tracks" to follow based on where your data fits best: the <strong
+        >SGID Index</strong
+      >, the <strong>SGID Open Data Site</strong>, and the <strong>Open SGID</strong>. There's also a separate process
+      for contributing to or updating an existing SGID dataset.
     </p>
   </Section>
 </Layout>
