@@ -40,7 +40,7 @@ For more information, please contact Van Phetsomphou: <van.phetsomphou@sgcity.or
 
 #### Uintah Basin User Group
 
-The Uintah Basin User Group (UBUG) consists of GIS, geospatial technicians, and specialists from county, state, federal agencies, and private organizations located in Uintah, Duchesne, and Daggett counties. The group meets quarterly and is an opportunity for networking, sharing data, exchanging ideas and solutions, and implementing GIS technologies. 
+The Uintah Basin User Group (UBUG) consists of GIS and geospatial technicians and specialists from county, state, federal agencies, and private organizations located in Uintah, Duchesne, and Daggett counties. The group meets quarterly and is an opportunity for networking, sharing data, exchanging ideas and solutions, and implementing GIS technologies. 
 
 For more information, please contact Jordan Merrell: <jordmerrell@uintah.utah.gov>.
 
