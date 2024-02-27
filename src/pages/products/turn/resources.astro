@@ -1,7 +1,6 @@
 ---
 import type { IStandardPageMetadata } from '@models/products/sgid/types';
 
-import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
@@ -24,82 +23,36 @@ const page: IStandardPageMetadata = {
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <p>
-      You can connect to Discover using a variety of desktop and web clients, including QGIS, ArcGIS Pro, AutoCAD, and
-      ArcGIS Online. These instructions generally apply to the WMTS links, but the WMS process is usually similar (if
-      not identical).
-    </p>
-    <p>
-      If your client asks for authentication info, you can leave that section blank. Discover handles authentication
-      through the unique links sent to each user.
+      Here you will find resources related to our GNSS network. This includes information on how the network itself
+      works, tips for troubleshooting issues that might arise, and details on some of the devices that are supported by
+      our network.
     </p>
   </Section>
   <Section {...page.section[1]}>
+    <p><i>What is a GNSS network and how exactly does it work?</i></p>
     <p>
-      <ExternalLink href="https://qgis.org/en/site/">QGIS</ExternalLink> is a fully-featured open source desktop GIS application
-      that makes it easy to use Discover services alongside many other data layers.
+      A GNSS network consists of permanently located GPS receivers, installed across an area, that generate real-time,
+      high-accuracy GPS positioning. Basically, all of the permanently installed GPS receivers send their data to a
+      central system via the internet. This central system analyzes the input and adjusts and corrects the data to
+      provide the most accurate locations, usually down to centimeter level. Our networks use the Trimble PIVOT VRS
+      Platform. The generated data is sent from the GPS receiver to the GPS reference network through a wireless
+      connection using the Networked Transport of RTCM via Internet Protocol (NTRIP).
     </p>
   </Section>
   <Section {...page.section[2]}>
     <p>
-      For ArcGIS Pro, you'll add Discover as a new WMTS server and then browse the services available. Check out <ExternalLink
-        href="https://pro.arcgis.com/en/pro-app/latest/help/data/services/add-wmts-services.htm"
-        >Esri's documentation</ExternalLink
-      > for the most up-to-date instructions.
+      If your having trouble connecting to the TURN Network on your device, first check to make sure that you have
+      entered the correct username and password. It is important to note that subscriptions can only be used on one
+      device at a time. If someone else is logged into your account, you will not be able to use it until they have
+      logged out.
+    </p>
+    <p>
+      If you're still having difficulties, you'll want to double-check to confirm that you're using the correct IP
+      address and port number. For the TURN network, you'll want to be using: <b>165.239.144.5</b> and <b>2101</b>. For
+      the Reno network, you'll want to be using: <b>168.179.231.11</b> and <b>port 2102</b>.
     </p>
   </Section>
   <Section {...page.section[3]}>
-    <p>
-      You can <ExternalLink href="https://doc.arcgis.com/en/arcgis-online/manage-data/add-item-from-url.htm"
-        >add</ExternalLink
-      > individual layers within Discover as items in ArcGIS Online, making them available in both web maps and ArcGIS Pro
-      through your organization's content.
-    </p>
-    <p>
-      You can also <ExternalLink
-        href="https://doc.arcgis.com/en/arcgis-online/create-maps/add-layers-from-url.htm#ESRI_SECTION1_0255B1BD71534C53A5CF2F01092BC99A"
-        >add WMTS layers</ExternalLink
-      > directly to web maps.
-    </p>
-    <p>
-      <strong>Remember!</strong> If you want to use licensed links for the high-res imagery in a publicly-available webmap,
-      you need to request a set of locked-down links.
-    </p>
-  </Section>
-  <Section {...page.section[4]}>
-    <p>
-      Check out <ExternalLink
-        href="https://help.autodesk.com/view/MAP/2023/ENU/?guid=GUID-A9F620AD-6B9A-487D-9B33-7D365307D571"
-        >AutoCAD's documentation</ExternalLink
-      > for adding Discover layers via WMS. You may be able to use WMTS as well, but we've not seen good success with it
-      so far due to AutoCAD's implementation of the WMTS protocol.
-    </p>
-    <p>For other CAD programs, please check the product's documentation for WMS or WMTS support.</p>
-  </Section>
-  <Section {...page.section[5]}>
-    <p>
-      The <ExternalLink href="https://developers.arcgis.com/javascript/">ArcGIS Maps SDK for JavaScript</ExternalLink> provides
-      a class for interacting with these services, called a <ExternalLink
-        href="https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html"
-        >WebTileLayer</ExternalLink
-      >. Using this class is as simple as passing in the URL to the WMTS service with the appropriate level, column, and
-      row tokens. For example:
-    </p>
-
-    <p>
-      There is one caveat to using discover services with WebTileLayer; it does not store metadata about the service.
-      The piece of metadata that will affect developers the most is the cache level information. WebTileLayer's cache
-      levels are based on a suggested set that is common amongst popular tile providers. The suggested set uses 0
-      through 19. If the base map you are using deviates from these levels (most of our base maps are 0-19 but <a
-        href="/documentation/developer/base-maps/basemap-scales">there are a few exceptions</a
-      >), you will be responsible for setting those values or you will not be given the UI to see the full tile set. As
-      you can see in the sample below it takes a fair amount of work.
-    </p>
-
-    <p>
-      UGRC has a widget called <ExternalLink href="https://www.npmjs.com/package/@ugrc/layer-selector"
-        >layer-selector</ExternalLink
-      > that handles these issues as well as makes working with base maps more streamlined. It's main purpose is to provide
-      users the ability to quickly switch between base maps and toggle associated overlays.
-    </p>
+    <p>Our TURN GPS Network supports a variety of devices from survey units, to drones and self-driving cars.</p>
   </Section>
 </Layout>
