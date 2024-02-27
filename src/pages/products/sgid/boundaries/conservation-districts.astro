@@ -1,0 +1,77 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Conservation Districts',
+  description: `Soil conservation district boundaries in Utah.`,
+  stewards: ['Utah Department of Agriculture and Food (UDAF)'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`November 2022`, '2000'],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset shows the Conservation District (formerly Soil Conservation District) district boundaries created by
+      the Utah Department of Agriculture and Food (UDAF) in Utah. This dataset was created to update district and zone
+      boundaries to conform to the boundary descriptions as approved by the Utah Soil Conservation Commission.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). This
+      dataset is maintained by the Utah Department of Agriculture and Food (UDAF) in cooperation with UGRC.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Utah Department of Agriculture and Food Conservation Districts"
+        href="https://ag.utah.gov/farmers/conservation-division/conservation-districts/"
+        >Utah Department of Agriculture and Food Conservation Districts webpage.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah Department of Agriculture and Food" href="https://ag.utah.gov/"
+        >Utah Department of Agriculture and Food website.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Geoscience" href="/products/sgid/geoscience">Geoscience page</CardWithSmallLink>
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries">Boundaries page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

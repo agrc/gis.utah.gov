@@ -42,15 +42,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Conservation Districts': {
     itemId: '9c41b6d6ce7346858ed0ea0dc7727c13',
     name: 'Utah Conservation Districts',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahConservationDistricts',
+    openSgid: 'boundaries.conservation_districts',
     layerId: 0,
   },
   'Utah Conservation Zones': {
     itemId: '355fe28d943e49e7a400ac1fb2140413',
     name: 'Utah Conservation Zones',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahConservationZones',
+    openSgid: 'boundaries.conservation_zones',
     layerId: 0,
   },
   'Utah Wilderness BLM Suitability': {
