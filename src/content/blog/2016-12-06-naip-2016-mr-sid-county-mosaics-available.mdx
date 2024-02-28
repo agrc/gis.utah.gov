@@ -1,0 +1,24 @@
+---
+author:
+  display_name: 'Rick Kelson'
+  email: 'rkelson@utah.gov'
+tags:
+  - 'aerial photography'
+  - 'naip'
+date: '2016-12-06T16:03:22.000Z'
+title: 'NAIP 2016 Mr. Sid County Mosaics Available'
+published: false
+category: 'Uncategorized'
+---
+import Contacts from '@components/page/Contacts.astro';
+
+[![NAIP 2016 Sample](/images/404.png 'view project area map')](/images/404.png)
+The statewide 2016 National Agricultural Imagery Program (NAIP) 1 meter aerial photography
+<a href="{% link data/aerial-photography/naip/index.html %}">is
+now available</a>. The imagery is currently only available as 3-band RGB Mr. Sid compressed county mosaics. The 4-band GeoTIFF or JP2 tiles should be available in a couple months with statewide imagery services soon to follow.
+
+<ul class="dotless">
+  <li>{% include fa_icon.html download=true class="svg-inline--fa fa-w-16" %} <a href="https://raster.utah.gov/?cat=NAIP%202016%20(1m)">Retrieve 2016 NAIP via Interactive Map</a></li>
+</ul>
+
+<Contacts subject={frontmatter.title} contactKey="imagery" />
