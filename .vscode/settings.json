@@ -368,7 +368,6 @@
     "astro"
   ],
   "[astro]": {
-    "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120
   },
   "editor.codeActionsOnSave": {
