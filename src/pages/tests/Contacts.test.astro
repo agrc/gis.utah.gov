@@ -1,0 +1,38 @@
+---
+import Contacts from '@components/page/Contacts.astro';
+import Layout from '@layouts/FullWidth.astro';
+---
+
+<Layout title="Contacts Tests">
+  <div class="p-5">
+    <h3>Card</h3>
+    <p>
+      <Contacts contactKey="ugrc" />
+    </p>
+
+    <h3>Inline</h3>
+    <p>
+      <span class="text-slate-300">Please contact</span>
+      <Contacts contactKey="ugrc" inline /><span class="text-slate-300">.</span>
+    </p>
+
+    <h3>Multiple Card</h3>
+    <p>
+      <Contacts contactKey="sgid" />
+    </p>
+
+    <h3>Multiple Inline</h3>
+    <p>
+      <span class="text-slate-300">Please get in touch with</span>
+      <Contacts contactKey="sgid" inline />
+      <span class="text-slate-300">if you have any questions.</span>
+    </p>
+
+    <h3>No Phone</h3>
+    <p>
+      <span class="text-slate-300">Please contact</span>
+      <Contacts contactKey="parcels" inline /><span class="text-slate-300">.</span>
+    </p>
+    <Contacts contactKey="parcels" />
+  </div>
+</Layout>
