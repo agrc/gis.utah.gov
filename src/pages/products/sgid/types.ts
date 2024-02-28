@@ -35,7 +35,7 @@ export enum SgidCategory {
   WATER = 'Water',
 }
 
-type OptionalPick<T, K extends PropertyKey> = Pick<T, Extract<keyof T, K>>
+type OptionalPick<T, K extends PropertyKey> = Pick<T, Extract<keyof T, K>>;
 export interface IStandardPageMetadata {
   title: string;
   pillar?: string;
@@ -83,4 +83,14 @@ export interface IHubDownload {
   externalHubOrganization?: string;
   oddHubName?: string;
   type: ProductType;
+}
+
+export type Contact = {
+  name: string;
+  email: string;
+  agency?: string;
+  phone?: string;
+};
+export interface Contacts {
+  [key: string]: Contact | Contact[];
 }

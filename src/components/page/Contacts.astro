@@ -1,0 +1,55 @@
+---
+interface Props {
+  contactKey: string;
+  subject?: string;
+  inline?: boolean;
+}
+
+import { contacts as allContacts } from '@data/contacts.ts';
+import type { Contact } from '@models/products/sgid/types';
+
+const { contactKey, subject = 'gis.utah.gov', inline } = Astro.props;
+
+if (!(contactKey in allContacts)) {
+  throw new Error(`No contacts found for contactKey: ${contactKey}`);
+}
+
+const contacts: Contact[] = Array.isArray(allContacts[contactKey])
+  ? (allContacts[contactKey] as Contact[])
+  : [allContacts[contactKey] as Contact];
+---
+
+{!inline ? <p>Comments, questions, compliments, or concerns can be directed to:</p> : null}
+{
+  contacts.map((contact: Contact) => {
+    return inline ? (
+      <>
+        {contact.name} from {contact.agency} at
+        <a href={`mailto:${contact.email}?subject=${subject}`}>{contact.email}</a>
+        {contact.phone ? (
+          <>
+            or <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+          </>
+        ) : null}
+      </>
+    ) : (
+      <>
+        <div class="mt-3 max-w-sm overflow-hidden rounded-lg border border-zinc-400 bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70">
+          <div class="bg-primary px-4 py-1 text-center text-sm font-black uppercase text-zinc-50">
+            <span class="pl-2">{contact.name}</span>
+          </div>
+
+          <ul class="m-0 list-none p-4 py-2">
+            <li>
+              <a href={`mailto:${contact.email}?subject=${subject}`}>{contact.email}</a>
+            </li>
+            <li>
+              <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+            </li>
+            <li>{contact.agency}</li>
+          </ul>
+        </div>
+      </>
+    );
+  })
+}
