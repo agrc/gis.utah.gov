@@ -33,7 +33,7 @@ const page: IPageMetadata = {
 ---
 
 <Layout
-  title="Utah ZIP Code PO Boxes"
+  title={page.title}
   subTitle={page.updateHistory[0]}
   category={page.category}
   actionUrl={page.application}
@@ -43,8 +43,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Utah ZIP Code PO Boxes represents the approximate locations of USPS PO Boxes in Utah. Each ZIP code's assigned
-      post office has a point, therefore if a post office has multiple ZIP codes, it will have multiple points.
+      Utah ZIP Code PO Boxes are the approximate locations of USPS PO Boxes in Utah. Each ZIP code's assigned post
+      office has a point, therefore if a post office has multiple ZIP codes, it will have multiple points.
     </p>
   </Fragment>
 
