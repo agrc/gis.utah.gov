@@ -1540,8 +1540,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Zip Code PO Boxes': {
     itemId: '9a07e9d337314bb2af4de8f32502428e',
     name: 'Utah Zip Code PO Boxes',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'ZipCodePOBoxes',
+    openSgid: 'opensgid.location.zip_code_po_boxes',
     layerId: 0,
   },
   'Utah Zoom Locations': {
@@ -1897,7 +1897,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Post Offices': {
     itemId: 'c58ebc2a7c2643fca10e67dd55af71f1',
     name: 'Utah Post Offices',
-    featureServiceId: null,
+    featureServiceId: 'PostOffices',
     openSgid: '',
     layerId: 0,
   },

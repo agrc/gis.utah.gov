@@ -1,0 +1,73 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Post Offices',
+  description: `Approximate locations of USPS Post office locations in Utah.`,
+  stewards: ['UGRC', 'USPS'],
+  type: ProductType.POINT,
+  category: SgidCategory.LOCATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`February 2018`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah Post Offices represents the approximate locations of USPS Post Offices in Utah. Each post office includes the
+      post office name, address, city, ZIP code, and post office type. Data were originally geocoded from a USPS list of
+      post office addresses.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="ZIP Codes page" href="data/location/zip-code/"
+        >US Postal Service data page.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="ZIP Code PO Boxes" href="data/location/zip-code-po-boxes/"
+        >Approximate locations of USPS PO Boxes in Utah.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Society" href="/products/sgid/society">Society page</CardWithSmallLink>
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries">Boundaries page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
