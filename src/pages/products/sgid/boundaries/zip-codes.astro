@@ -14,6 +14,8 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import Alert from '@components/page/Alert.astro';
+import BulletedList from '@components/page/BulletedList.astro';
 import { dataPages } from '@data/downloadMetadata';
 import { removeDateRange } from '@utils/data';
 
@@ -53,16 +55,22 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Zip Codes Boundaries represent an ongoing effort to approximate the geographic extents of five digit ZIP codes.
-      The dataset was produced using a combination of methods and is based on several sets of source data. Editing
-      methods include:
+      Zone improvement program (ZIP) code boundaries are an ongoing effort to approximate the geographic extents of five
+      digit ZIP codes as polygons. The dataset was produced using a combination of methods and is based on several sets
+      of source data. Editing methods include:
+    </p>
+    <BulletedList>
       <li>Using local ZIP code polygon data obtained from counties and cities.</li>
       <li>
         Identifying place locations (cities, towns, populated areas, etc.) from the postal service website and address
         information system (AIS) and building ZIP code boundaries around these places.
       </li>
       <li>Using the 2000 Census TIGER line file’s ZIP code attributes.</li>
-    </p>
+    </BulletedList>
+    <Alert title="Tip">
+      ZIP codes are primarily used for mail delivery by the United States Postal Service (USPS). They do not represent
+      specific geographical areas or boundaries.
+    </Alert>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
