@@ -1792,8 +1792,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Golf Courses': {
     itemId: 'd1f957478ea24659a7badb754a22b91c',
     name: 'Utah Golf Courses',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'GolfCourses',
+    openSgid: 'recreation.golf_courses',
     layerId: 0,
   },
   'Utah Ski Trails XC': {
