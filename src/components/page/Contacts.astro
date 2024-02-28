@@ -22,16 +22,17 @@ const contacts: Contact[] = Array.isArray(allContacts[contactKey])
 
 {!inline ? <p>Comments, questions, compliments, or concerns can be directed to:</p> : null}
 {
-  contacts.map((contact: Contact) => {
+  contacts.map((contact: Contact, index: number) => {
     return inline ? (
       <>
         {contact.name} from {contact.agency} at
         <a href={`mailto:${contact.email}?subject=${encodedSubject}`}>{contact.email}</a>
         {contact.phone ? (
           <>
-            or <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+            | <a href={`tel:${contact.phone}`}>{contact.phone}</a>
           </>
         ) : null}
+        {index < contacts.length - 1 ? ', or ' : null}
       </>
     ) : (
       <>
