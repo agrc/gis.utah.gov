@@ -16,16 +16,16 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Zip Code PO Boxes',
-  description: `Approximate locations of USPS PO Boxes in Utah.`,
-  stewards: ['UGRC', 'USPS'],
+  title: 'Utah GNIS Place Names',
+  description: `Place names from the USGS Geographic Names Information System (GNIS).`,
+  stewards: ['UGRC', 'U.S. Geological Survey'],
   type: ProductType.POINT,
   category: SgidCategory.LOCATION,
 };
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`February 2018`],
+  updateHistory: [`April 2019`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -43,8 +43,15 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Utah ZIP Code PO Boxes are the approximate locations of USPS PO Boxes in Utah. Each ZIP code's assigned post
-      office has a point, therefore if a post office has multiple ZIP codes, it will have multiple points.
+      Utah GNIS Place Names contains the latest release of the GNIS dataset for the state of Utah. The dataset consists
+      of point locations with corresponding feature names. All point entities are categorized by feature type.
+    </p>
+    <p>
+      The Geographic Names Information System (GNIS) was developed by the U.S. Geological Survey in cooperation with the
+      U.S. Board on Geographic Names (BGN), local governments and other interested organizations. The GNIS contains
+      information about physical and cultural geographic features in the United States and associated areas, both
+      current and historical, but not including roads and highways. The goal of GNIS is to meet major national needs
+      regarding geographic names and their standardization and dissemination.
     </p>
   </Fragment>
 
@@ -54,11 +61,15 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="ZIP Codes page" href="data/location/zip-codes/"
-        >US Postal Service data page.</CardWithPopularLink
+      <CardWithPopularLink
+        title="U.S. Board on Geographic Names"
+        href="https://www.usgs.gov/us-board-on-geographic-names"
+        >U.S. Board on Geographic Names website.</CardWithPopularLink
       >
-      <CardWithPopularLink title="ZIP Code PO Boxes" href="data/location/zip-code-po-boxes/"
-        >Approximate locations of USPS PO Boxes in Utah.</CardWithPopularLink
+      <CardWithPopularLink
+        title="Geographic Names Information System (GNIS)"
+        href="https://www.usgs.gov/tools/geographic-names-information-system-gnis"
+        >USGS Geographic Names Information System (GNIS) website.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
@@ -66,7 +77,7 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Society" href="/products/sgid/society">Society page</CardWithSmallLink>
-      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries">Boundaries page</CardWithSmallLink>
+      <CardWithSmallLink title="Location" href="/products/sgid/location">Location page</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>
