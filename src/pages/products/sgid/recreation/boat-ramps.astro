@@ -1,0 +1,77 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Boat Ramps',
+  description: `Lake and river locations for launching watercraft.`,
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.RECREATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`March 2009`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Boat ramp locations of Utah. Data includes the name of the location along with the water body, vessel type
+      allowed, and administrative agency.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah State Parks" href="https://stateparks.utah.gov/activities/boating/"
+        >Boating.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah DNR" href="https://recreation.utah.gov/boating/rules-and-regulations/"
+        >Boating rules and regulations.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Lakes" href="/products/sgid/water/lakes-nhd">Utah NHD lakes</CardWithSmallLink>
+      <CardWithSmallLink title="Rivers and Streams" href="/products/sgid/water/streams-nhd"
+        >Utah NHD rivers and streams</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
