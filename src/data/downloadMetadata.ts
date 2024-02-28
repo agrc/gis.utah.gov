@@ -1806,8 +1806,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Boat Ramps': {
     itemId: '0d12b74c39eb453088e992bf089d9890',
     name: 'Utah Boat Ramps',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'BoatRamps',
+    openSgid: 'recreation.boat_ramps',
     layerId: 0,
   },
   'Utah Parks Local': {
