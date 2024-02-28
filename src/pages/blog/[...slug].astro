@@ -5,7 +5,7 @@ import Layout from '@layouts/FullWidth.astro';
 import { getBlogPosts, slugify, type DecoratedBlogEntry } from '@utils/collections';
 
 export async function getStaticPaths() {
-  return (await getBlogPosts()).map((post) => ({
+  return (await getBlogPosts(true)).map((post) => ({
     params: { slug: post.slug },
     props: post,
   }));
