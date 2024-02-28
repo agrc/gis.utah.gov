@@ -9,6 +9,7 @@ import { contacts as allContacts } from '@data/contacts.ts';
 import type { Contact } from '@models/products/sgid/types';
 
 const { contactKey, subject = 'gis.utah.gov', inline } = Astro.props;
+const encodedSubject = encodeURIComponent(subject);
 
 if (!(contactKey in allContacts)) {
   throw new Error(`No contacts found for contactKey: ${contactKey}`);
@@ -25,7 +26,7 @@ const contacts: Contact[] = Array.isArray(allContacts[contactKey])
     return inline ? (
       <>
         {contact.name} from {contact.agency} at
-        <a href={`mailto:${contact.email}?subject=${subject}`}>{contact.email}</a>
+        <a href={`mailto:${contact.email}?subject=${encodedSubject}`}>{contact.email}</a>
         {contact.phone ? (
           <>
             or <a href={`tel:${contact.phone}`}>{contact.phone}</a>
@@ -41,7 +42,7 @@ const contacts: Contact[] = Array.isArray(allContacts[contactKey])
 
           <ul class="m-0 list-none p-4 py-2">
             <li>
-              <a href={`mailto:${contact.email}?subject=${subject}`}>{contact.email}</a>
+              <a href={`mailto:${contact.email}?subject=${encodedSubject}`}>{contact.email}</a>
             </li>
             <li>
               <a href={`tel:${contact.phone}`}>{contact.phone}</a>
