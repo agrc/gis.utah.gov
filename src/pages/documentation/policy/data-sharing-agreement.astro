@@ -1,0 +1,138 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import agreementPhoto from '@images/documentation/agreement.svg';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import NumberedList from '@components/page/NumberedList.astro';
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Data sharing agreement',
+  pillar: 'Documentation',
+  section: stripeSections([
+    { title: 'Applicability' },
+    { title: 'Definitions' },
+    { title: 'General provisions' },
+    { title: ' License and disclaimer' },
+  ]),
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      src={agreementPhoto}
+      slot="image"
+      loading="eager"
+      alt="Two people shaking hands in front of a contract"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      The following Data Sharing Agreement applies to all individuals and organizations sharing data with the SGID in
+      any way.
+    </p>
+    <p>
+      You consent to this Data Sharing Agreement when you submit a <ExternalLink
+        href="https://github.com/agrc/porter/issues/new?assignees=%40steveoh%2C+%40gregbunce%2C+%40rkelson&labels=introduction%2C+porter&template=1-introduce-sgid-dataset.md&title=Add+%3Cdataset+name%3E+from+%3Csource%3E"
+        >Porter issue</ExternalLink
+      > to introduce your data into the SGID. In cases where UGRC submits the Porter issue on your behalf, UGRC will contact
+      you via email to get your consent to this agreement. If you need to discuss different GRAMA/license/disclaimer terms,
+      please note this in the Porter issue.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <dl>
+      <DefinitionListItem title="Aggregate data"
+        >Any data that cover a specific area of the state and are provided by another organization (such as a city or
+        county) for UGRC to combine with other similar data into statewide datasets.</DefinitionListItem
+      >
+      <DefinitionListItem title="External data"
+        >Any data stored or hosted by a person or organization outside of UGRC.</DefinitionListItem
+      >
+      <DefinitionListItem title="Hosted data"
+        >Any data stored, maintained, and served by UGRC, whether created by UGRC or provided by another organization.
+        It may include aggregate data.
+      </DefinitionListItem>
+      <DefinitionListItem title="SGID entry"
+        >Any of the following:
+        <NumberedList>
+          <li>Links in the SGID Index to external data.</li>
+          <li>
+            Links and references in the SGID on ArcGIS <ExternalLink href="https://opendata.gis.utah.gov"
+              >opendata.gis.utah.gov</ExternalLink
+            > to external data in the form of ArcGIS Online items owned by other organizations.
+          </li>
+          <li>Hosted data in the Open SGID.</li>
+          <li>
+            Hosted data in UGRC's ArcGIS Online organization that are shared with an SGID ArcGIS Online group or the
+            UGRC Shelf group.
+          </li>
+        </NumberedList>
+      </DefinitionListItem>
+      <DefinitionListItem title="Steward"
+        >The individual or organization that shares data with UGRC for inclusion in the SGID.
+      </DefinitionListItem>
+    </dl>
+  </Section>
+  <Section {...page.section[2]}>
+    <BulletedList>
+      <li>UGRC will make all SGID entries available to the general public without any form of login or account.</li>
+      <li>
+        UGRC may edit any hosted data to fix technical errors that prevent the data from being shared in the SGID.
+      </li>
+      <li>
+        UGRC may edit any aggregate data to conform with established standards and schemas for statewide datasets.
+      </li>
+      <li>UGRC will follow our established <a href="/documentation/policy">SGID policies</a>.</li>
+      <li>
+        The steward will ensure any links or connections to external data remain live and do not require any form of
+        login or account.
+      </li>
+      <li>
+        The steward will take reasonable efforts to not modify the schema of all external data, with the exception of
+        adding new fields.
+      </li>
+      <li>
+        The steward will provide UGRC with two weeks prior notice, if possible, of any schema changes to hosted data.
+      </li>
+      <li>
+        UGRC will remove SGID entries according to our <a href="/documentation/policy">removal policy</a> through the normal
+        <ExternalLink href="https://github.com/agrc/porter/blob/main/.github/ISSUE_TEMPLATE/2-deprecate-sgid-dataset.md"
+          >dataset deprecation process</ExternalLink
+        >.
+      </li>
+      <li>
+        UGRC will grant requests for immediate removal of accidentally shared non-public data or other urgent situations
+        and will handle these on a case-by-case basis
+      </li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[3]}>
+    <p>The following items apply unless the steward and UGRC specifically negotiate different terms:</p>
+    <BulletedList>
+      <li>
+        UGRC considers all SGID entries &quot;Public&quot; for purposes of the Utah <ExternalLink
+          href="https://archives.utah.gov/rim/government-records-law.html"
+          >Government Records Access and Management Act (GRAMA)</ExternalLink
+        >.
+      </li>
+      <li>
+        UGRC licenses all hosted data under a <ExternalLink href="https://creativecommons.org/licenses/by/4.0/"
+          >Creative Commons Attribution 4.0 International License</ExternalLink
+        >.
+      </li>
+      <li>All hosted data are subject to the <a href="/documentation/policy/license">standard UGRC disclaimer</a>.</li>
+      <li>UGRC will include the aforementioned license and disclaimer in the metadata of all hosted data.</li>
+    </BulletedList>
+  </Section>
+</Layout>

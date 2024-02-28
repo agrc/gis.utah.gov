@@ -351,16 +351,8 @@
     "editor.wordWrapColumn": 120
   },
   "[markdown]": {
-    "editor.fontSize": 14,
-    "editor.lineHeight": 26,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100,
-    "editor.lineNumbers": "off",
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    }
+    "editor.wordWrapColumn": 120,
   },
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"

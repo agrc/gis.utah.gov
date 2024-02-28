@@ -1,10 +1,14 @@
 ---
-const props = Astro.props;
+interface Props {
+  style?: 'primary' | 'secondary';
+}
+
+const { style = 'primary' } = Astro.props;
 ---
 
-<blockquote {...props} class="flex gap-x-2 rounded px-4 italic">
-  <span class="text-5xl text-primary">“</span>
-  <span class="self-end italic">
+<blockquote class="flex gap-x-2 rounded px-4 italic">
+  <span class:list={['text-5xl text-primary', style === 'secondary' && 'dark:text-accent']}>“</span>
+  <span class="space-y-4 self-end pt-4 italic">
     <slot />
   </span>
 </blockquote>
