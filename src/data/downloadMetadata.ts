@@ -1541,7 +1541,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '9a07e9d337314bb2af4de8f32502428e',
     name: 'Utah Zip Code PO Boxes',
     featureServiceId: 'ZipCodePOBoxes',
-    openSgid: 'opensgid.location.zip_code_po_boxes',
+    openSgid: 'location.zip_code_po_boxes',
     layerId: 0,
   },
   'Utah Zoom Locations': {
@@ -1884,21 +1884,21 @@ export const dataPages: DownloadMetadata = {
     itemId: 'b5ef0b24f994467fb4f22b27b1a47e25',
     name: 'Utah US Congress Districts 2022 to 2032',
     featureServiceId: 'USCongressDistricts2022to2032 ',
-    openSgid: 'us_congress_districts_2022_to_2032',
+    openSgid: 'political.us_congress_districts_2022_to_2032',
     layerId: 0,
   },
   'Utah Liquor Stores': {
     itemId: '61b7f10c194b4ec69d02e169db1da09a',
     name: 'Utah Liquor Stores',
     featureServiceId: 'UtahLiquorStores',
-    openSgid: 'liquor_stores',
+    openSgid: 'society.liquor_stores',
     layerId: 0,
   },
   'Utah Post Offices': {
     itemId: 'c58ebc2a7c2643fca10e67dd55af71f1',
     name: 'Utah Post Offices',
     featureServiceId: 'PostOffices',
-    openSgid: '',
+    openSgid: 'society.post_offices',
     layerId: 0,
   },
   'Utah Law Enforcement Boundaries': {
@@ -2150,7 +2150,7 @@ export const dataPages: DownloadMetadata = {
     itemId: 'eedaf451685b4cbe875ecf692e1b54ff',
     name: 'Utah Watersheds Area',
     featureServiceId: 'Watersheds_Area',
-    openSgid: '',
+    openSgid: 'water.watersheds_area',
     layerId: 0,
   },
   'Utah Piute County Parcels LIR': {
