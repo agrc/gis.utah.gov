@@ -1519,8 +1519,8 @@ export const dataPages: DownloadMetadata = {
   'Utah GNIS Place Names': {
     itemId: '153301fffc8a4128884833e2f7ee1d6e',
     name: 'Utah GNIS Place Names',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahGNISPlaceNames',
+    openSgid: 'location.gnis_place_names',
     layerId: 0,
   },
   'Utah Address System Quadrants': {
@@ -1547,8 +1547,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Zoom Locations': {
     itemId: '183633e5f6ea4049858ac0b37f4fdd32',
     name: 'Utah Zoom Locations',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'ZoomLocations',
+    openSgid: 'location.zoom_locations',
     layerId: 0,
   },
   'Utah Address Points': {
