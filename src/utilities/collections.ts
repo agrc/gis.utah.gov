@@ -23,14 +23,18 @@ export type DecoratedBlogEntry = BlogEntry & {
   };
 };
 
-let blogPostsCache;
-export async function getBlogPosts(): Promise<DecoratedBlogEntry[]> {
-  if (blogPostsCache) {
-    return blogPostsCache;
+let blogPostsCache: Record<'all' | 'published', DecoratedBlogEntry[]> = {
+  all: [],
+  published: [],
+};
+export async function getBlogPosts(all = false): Promise<DecoratedBlogEntry[]> {
+  const cacheKey = all ? 'all' : 'published';
+  if (!import.meta.env.DEV && blogPostsCache[cacheKey] !== null) {
+    return blogPostsCache[cacheKey];
   }
 
   const data = (await getCollection('blog'))
-    .filter((post) => post.data.published)
+    .filter((post) => all || post.data.published)
     .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf())
     .map(
       (post): DecoratedBlogEntry => ({
@@ -44,7 +48,7 @@ export async function getBlogPosts(): Promise<DecoratedBlogEntry[]> {
       }),
     );
 
-  blogPostsCache = data;
+  blogPostsCache[cacheKey] = data;
 
   return data;
 }
