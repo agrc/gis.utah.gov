@@ -1,7 +1,6 @@
 {
   "files.associations": {
-    "*.html": "astro",
-    "*.mdx": "astro"
+    "*.html": "astro"
   },
   "cSpell.words": [
     "Adamsville",
