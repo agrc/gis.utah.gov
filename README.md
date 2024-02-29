@@ -50,6 +50,7 @@ _**bold italic**_
 import BulletedList from '@components/page/BulletedList.astro';
 import NumberedList from '@components/page/NumberedList.astro';
 import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+---
 
 <em>italic</em> or <span class="italic">italic</span>
 <strong>bold</strong> or <span class="font-bold">bold</span>
