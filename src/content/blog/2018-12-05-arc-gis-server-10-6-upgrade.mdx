@@ -8,13 +8,12 @@ date: '2018-12-05T16:03:25.000Z'
 tags: []
 category: 'Developer'
 ---
+
 import Contacts from '@components/page/Contacts.astro';
 
 UGRC is planning to upgrade the mapserv ArcGIS Server system to version 10.6.1 within the next few weeks. For the majority of our users, we do not expect any issues, as _most_ services are being migrated as is. _However_, if you are consuming image services, **a migration is necessary** since the image services will no longer be offered. Please share this article with anyone who may be affected by this change.
 
 ### UGRC Is Deprecating the Image Services on mapserv.utah.gov
-
-
 
 If you notice any issues after the upgrade or have any questions about the brownout, please let <Contacts inline subject={frontmatter.title} contactKey="change_manager" /> know so that we can address them as soon as possible.
 
@@ -22,29 +21,21 @@ In preparation for the ArcGIS Server upgrade and the necessary image service mig
 
 The brownout plan reference number in the Utah Change Management System is `CHG0019078`.
 
-UGRC hopes that after reading this article, users of image services will draft and execute migration plans in preparation for the future deprecation. Then in January users can test for a successful migration during the brownout and learn whether more migration steps are required. **Please note that the image services are not being deprecated during the brownout** but will be deprecated when the entire system is upgraded. We will post the exact date of the entire system upgrade as soon as we finalize our plans. {{ contact }} know so that we can address them as soon as possible.
+UGRC hopes that after reading this article, users of image services will draft and execute migration plans in preparation for the future deprecation. Then in January users can test for a successful migration during the brownout and learn whether more migration steps are required. **Please note that the image services are not being deprecated during the brownout** but will be deprecated when the entire system is upgraded. We will post the exact date of the entire system upgrade as soon as we finalize our plans. Please let <Contacts inline subject={frontmatter.title} contactKey="change_manager" /> know so that we can address them as soon as possible.
 
 ## Migration Options
 
-
-
 ### 1. Local Mosaic Datasets
-
-
 
 The source data for the image services on mapserv.utah.gov is available for download from [raster.utah.gov](https://raster.utah.gov/). This data allows for the creation of local [mosaic datasets](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-a-mosaic-dataset.htm) for visualization and analysis. Choose this option if you require advanced analysis of raster data.
 
 ### 2. Discover Services
-
-
 
 The [Discover services](/discover) provided by UGRC intersect the image services. There is **not a complete one-to-one mapping**, as you will see in the table below, but coverage is adequate and Discover has **many more services** not offered as image services. Since the majority of consumers of the image services use them for reference and not advanced image analysis, histogram stretching, etc., the Discover services will provide a better end user experience. The prerendered tiles will be much faster than the on-the-fly processing from the image services.
 
 Below is a table of services that will be removed during the software upgrade. The second column is the closest equivalent Discover service.
 
 ## Services Marked for Deprecation
-
-
 
 | Deprecated Mapserv Service                             | Discover Alternative          |
 | :----------------------------------------------------- | :---------------------------- |
