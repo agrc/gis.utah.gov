@@ -2114,8 +2114,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Lakes NHD': {
     itemId: 'b505c3e3a8504da6b28e9900a9f602f8',
     name: 'Utah Lakes NHD',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahLakesNHD',
+    openSgid: 'water.lakes_nhd',
     layerId: 0,
   },
   'Utah NHD Points All': {
