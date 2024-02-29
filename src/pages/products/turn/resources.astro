@@ -5,6 +5,7 @@ import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
+import ExternalLink from '@components/page/ExternalLink.astro';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
@@ -48,13 +49,14 @@ const page: IStandardPageMetadata = {
     </p>
     <p>
       If you're still having difficulties, you'll want to double-check to confirm that you're using the correct IP
-      address and port number. For the TURN network, you'll want to be using: <b>165.239.144.5</b> and <b>2101</b>. For
-      the Reno network, you'll want to be using: <b>168.179.231.11</b> and <b>port 2102</b>.
+      address and port number. For the TURN network, you'll want to be using: <strong>165.239.144.5</strong> and <strong
+        >2101</strong
+      >. For the Reno network, you'll want to be using: <strong>168.179.231.11</strong> and <strong>port 2102</strong>.
     </p>
     <p>
-      Cellular data is needed in order to connect to the network. For more information about coverage, view the <a
-        href="https://business.utah.gov/broadband/">cell coverage in Utah</a
-      > and the <a href="https://connectednation.org/">cell coverage in Nevada</a>.
+      Cellular data is needed in order to connect to the network. For more information about coverage, view the <ExternalLink
+        href="https://business.utah.gov/broadband/">cell coverage in Utah</ExternalLink
+      > and the <ExternalLink href="https://connectednation.org/">cell coverage in Nevada</ExternalLink>.
     </p>
   </Section>
   <Section {...page.section[3]}>
