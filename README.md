@@ -35,14 +35,37 @@ License: [MIT](/LICENSE).
 - [tailwindcss docs](https://tailwindcss.com/docs)
 - [Post/Page Template creator](https://agrc.github.io/templater/) - Quickly bootstrap the frontmatter for a new post or page.
 
-## Markdown syntax conventions
+## Syntax conventions
 
 ```mdx
-_italics_
+_italic_
 **bold**
-_**bold italics**_
+_**bold italic**_
 
 - list
+```
+
+```astro
+---
+import BulletedList from '@components/page/BulletedList.astro';
+import NumberedList from '@components/page/NumberedList.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+
+<em>italic</em> or <span class="italic">italic</span>
+<strong>bold</strong> or <span class="font-bold">bold</span>
+<strong><em>bold and italic</em></strong> or <span class="italic font-bold">bold and italic</span>
+
+<BulletedList>
+  <li>list item</li>
+</BulletedList>
+
+<NumberedList>
+  <li>list item</li>
+</NumberedList>
+
+<dl>
+  <DefinitionListItem title="Word">Definition</DefinitionListItem>
+</dl>
 ```
 
 ### link to page
