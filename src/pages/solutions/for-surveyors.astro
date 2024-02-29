@@ -17,9 +17,9 @@ const page: IStandardPageMetadata = {
   section: stripeSections([
     {},
     { title: 'Solutions for surveyors' },
-    { title: 'Stuff' },
-    { title: 'More stuff' },
+    { title: 'About the Network' },
     { title: 'GPS location services' },
+    { title: 'Plans for the Future' },
   ]),
 };
 ---
@@ -27,7 +27,12 @@ const page: IStandardPageMetadata = {
 <Layout title={page.title}>
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
-    <p>text</p>
+    <p>
+      We're proud to offer surveyors centimeter-level precision measurements through our TURN GPS Network. The TURN
+      Network is a high-precision global navigation satellite system (GNSS) providing real-time corrections and data for
+      post processing. Surveyors in Utah, Nevada, Idaho, and Wyoming are taking advantage of this useful service for a
+      variety of purposes including research, engineering, drone operations, and more!
+    </p>
   </Section>
   <Section {...page.section[1]}>
     <Image slot="image" src={agreementPhoto} alt="two people shaking hands in agreement" class="w-full max-w-[400px]" />
@@ -35,7 +40,11 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[2]}>
     <Image slot="image" src={accessiblePhoto} alt="a person breaking down a wall" class="w-full max-w-[400px]" />
-    <p>text</p>
+    <p>
+      The TURN Network has grown significantly since it was first launch in ???? Originally, the network only supported
+      surveyors working in Utah. In ?????, the Reno network was created to aid survey needs in the Reno, Nevada region
+      Over time, we added more stations to improve accuracy and service for our clients.
+    </p>
   </Section>
   <Section {...page.section[3]}>
     <Image
@@ -53,6 +62,11 @@ const page: IStandardPageMetadata = {
       alt="a person standing in front of a monitor holding a wrench with a crane in the background"
       class="w-full max-w-[400px]"
     />
-    <p>text</p>
+    <p>
+      Our network extensively covers the state of Utah. We also offer coverage in other states including Nevada, Idaho,
+      and Wyoming. We plan to continue to expand the network in order to better serve all of your surveying needs. Our
+      team is actively in the field planning and installing additional stations across the West in order to provide the
+      best service possible for surveyors!
+    </p>
   </Section>
 </Layout>
