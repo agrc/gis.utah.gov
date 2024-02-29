@@ -16,19 +16,19 @@ date: 2011-04-05 22:01:27 -0500
 <div class="grid">
   <div class="grid__col grid__col--1-of-2">
     <h4>Developer Resources</h4>
-    <a href="{% link developer/applications/index.html %}"> Applications</a>
+    <a href="/solutions/for-government/application-portfolio-highlights"> Applications</a>
     <p>Read about applications created by UGRC developers.</p>
 
-    <a href="{% link data/base-map-and-imagery/index.md %}" title="Online Base Maps">Online Base Maps</a>
+    <a href="/products/base-maps" title="Online Base Maps">Online Base Maps</a>
     <p>UGRC's online map services are available for use at no cost, fast, accurate, and beautiful.</p>
 
-    <a href="{% link developer/widgets/index.md %}" title="Geospatial Widgets">Geospatial Widgets</a>
+    <a href="/products/api" title="Geospatial Widgets">Geospatial Widgets</a>
     <p>UGRC’s javascript widgets allow developers to quickly add spatial functionality to their website for no cost.</p>
 
-    <a href="{% link developer/web-services/index.md %}" title="Geospatial Web Services">Geospatial Web Services</a>
+    <a href="/products/api" title="Geospatial Web Services">Geospatial Web Services</a>
     <p>UGRC’s Web API allow developers to access spatial data from their applications and websites for no cost.</p>
 
-    <a href="{% link developer/blog/index.md %}">Developer Team Blog</a>
+    <a href="/blog">Developer Team Blog</a>
     <p>Read about work done by UGRC developers.</p>
   </div>
   <div class="grid__col grid__col--1-of-2">

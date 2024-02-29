@@ -16,4 +16,4 @@ category: Uncategorized
 
 The dataset provides a cursory view of whether an archaeological site(s) has been recorded at a particular area. Sites must be officially recorded and submitted to the UDSH Historic Preservation Office (SHPO), before they are represented in the database. Therefore, its possible that some sites may not be included despite being locally known. Use of this dataset will not meet an agency's cultural resource compliance obligations. Please [contact the SHPO](https://web.archive.org/web/20200426052659/https://history.utah.gov/shpo/) to request allowable access to the more detailed information.
 
-The dataset can be found be downloaded [here]({% link data/history/index.html %}).
+The dataset can be found be downloaded [here](/products/sgid/history).

@@ -9,9 +9,9 @@ tags:
 category: SGID Blog
 ---
 
-UGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System]({% link data/transportation/roads-system/index.html %}) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.
+UGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System](/products/sgid/transportation/road-centerlines) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.
 
-These updates are also reflected in UGRC's [address locators]({% link data/address-geocoders-locators/index.html %}), Utah's [Next-Generation 911 GIS database]({% link data/911/index.html %}), and UGRC's [street network analysis datasets]({% link data/transportation/street-network-analysis/index.html %}).
+These updates are also reflected in UGRC's [address locators](/products/sgid/address), Utah's [Next-Generation 911 GIS database](/products/sgid/911), and UGRC's [street network analysis datasets](/products/sgid/transportation/street-network).
 
 The following are highlights from this month's update.
 
@@ -28,4 +28,4 @@ New roads were added and road names and address ranges were updated for the foll
 
 #### UDOT Route System
 
-- Visit the [SGID LRS page]({% link data/transportation/roads-system/index.html %}#HighwayLinearReferencingSystemRoutes) for information on UDOT's Advanced LRS (ALRS) data.
+- Visit the [SGID LRS page](/products/sgid/transportation/road-centerlines) for information on UDOT's Advanced LRS (ALRS) data.

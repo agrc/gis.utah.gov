@@ -40,7 +40,7 @@ You can get involved in the OSM community by checking out upcoming events on the
 ### How does it differ from other SGID data?
 
 - It's **not** authoritative - due to the nature of crowdsourced data, we can't guarantee that it's perfect or accurate
-- It has a different license - instead of our usual [CC BY 4.0]({% link about/policy/license-disclaimer/index.md %}) license, it carries the [ODbL 1.0](https://opendatacommons.org/licenses/odbl/summary/) license
+- It has a different license - instead of our usual [CC BY 4.0](/documentation/policy/license-disclaimer) license, it carries the [ODbL 1.0](https://opendatacommons.org/licenses/odbl/summary/) license
 - Any user can contribute to it - the data can be quickly improved and grown by OSM users
 
 > OpenStreetMap® is _open data_, licensed under the [Open Data Commons Open Database License](https://opendatacommons.org/licenses/odbl/) (ODbL) by the [OpenStreetMap Foundation](https://osmfoundation.org/) (OSMF).
@@ -67,7 +67,7 @@ You can get involved in the OSM community by checking out upcoming events on the
   - tyres (instead of tires)
 - There are two types of addresses provided in the data:
   1.  The address contained in the original OSM data (`osm_addr`). These were input by OSM contributors, but only a small percentage of the points come with an address (~24%).
-  1.  The address of the nearest UGRC address point (`ugrc_addr`). These are not official addresses of the businesses or points of interest, but provide a very close address for a greater percentage of points (~59%). They are the nearest address (within 25m) in the [UGRC Address Points]({% link data/location/address-data/index.html %}#AddressPoints) dataset. The `addr_dist` field provides the distance (in meters) from the actual point to the nearby address point.
+  1.  The address of the nearest UGRC address point (`ugrc_addr`). These are not official addresses of the businesses or points of interest, but provide a very close address for a greater percentage of points (~59%). They are the nearest address (within 25m) in the [UGRC Address Points](/products/sgid/address) dataset. The `addr_dist` field provides the distance (in meters) from the actual point to the nearby address point.
 - The attributes can be used to filter the data down to your desired types of points
   - The `category` field represents a general classification for a location. Examples include: restaurant, fast_food, viewpoint, fire_station, etc.
   - The other fields provide additional details about the location, where available
@@ -80,7 +80,7 @@ You can get involved in the OSM community by checking out upcoming events on the
 
 ### What are the details on how this data is created?
 
-The Open Source Places layer is created by a Python script that pulls statewide OSM data from a nightly archive provided by [Geofabrik](https://www.geofabrik.de/data/download.html). The archive data contains nearly 20 shapefiles, some that are relevant and some that aren't. So, the Open Source Places layer is built by filtering the data in those shapefiles down to a single point dataset with specific categories and attributes. Additional de-duplication and spatial filtering are done along the way, to ensure the data is as clean as possible. Then, additional fields are created and assigned from UGRC's SGID data (county, city, zip, nearby address, etc.) via point-in-polygon analysis. Finally, additional attributes (OSM address, open hours, cuisine, etc.) are pulled from the [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) and joined to the filtered data using the 'osm_id' field as the join key. Additional information can be found on the [Open Source Places data page]({% link data/society/open-source-places/index.html %}).
+The Open Source Places layer is created by a Python script that pulls statewide OSM data from a nightly archive provided by [Geofabrik](https://www.geofabrik.de/data/download.html). The archive data contains nearly 20 shapefiles, some that are relevant and some that aren't. So, the Open Source Places layer is built by filtering the data in those shapefiles down to a single point dataset with specific categories and attributes. Additional de-duplication and spatial filtering are done along the way, to ensure the data is as clean as possible. Then, additional fields are created and assigned from UGRC's SGID data (county, city, zip, nearby address, etc.) via point-in-polygon analysis. Finally, additional attributes (OSM address, open hours, cuisine, etc.) are pulled from the [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) and joined to the filtered data using the 'osm_id' field as the join key. Additional information can be found on the [Open Source Places data page](/products/sgid/society/open-source-places).
 
 If you really want to get into the _nitty gritty_ details, come to my [2022 UGIC Conference](https://ugic.org/uncategorized/ugic-registration-open/) presentation or keep your eyes peeled 👀 for a future blog post.
 

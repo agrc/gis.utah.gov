@@ -38,7 +38,7 @@ There are big initiatives with the web moving towards https. At the time of this
 
 ### Success
 
-After about eight months of editing old content and creating new content, every staff member has successfully edited our website. Everyone has their notes and instructions on how to be successful and almost no two workflows are completely alike. You can write up [multiple ways]({% link about/contributing/index.md %}) to [create and edit content]({% link about/contributing/edit-existing/index.md %}) and it will differ from your coworker. The GitHub flow introduced having a core group of contributors to look over content. Only these people have the access to accept pull requests. This was the first website with a review process and it has been very useful. Gone are the days of no pre-release content reviews. The organization and quality of our content has greatly increased.
+After about eight months of editing old content and creating new content, every staff member has successfully edited our website. Everyone has their notes and instructions on how to be successful and almost no two workflows are completely alike. You can write up [multiple ways](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) to [create and edit content](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) and it will differ from your coworker. The GitHub flow introduced having a core group of contributors to look over content. Only these people have the access to accept pull requests. This was the first website with a review process and it has been very useful. Gone are the days of no pre-release content reviews. The organization and quality of our content has greatly increased.
 
 ### Engagement
 

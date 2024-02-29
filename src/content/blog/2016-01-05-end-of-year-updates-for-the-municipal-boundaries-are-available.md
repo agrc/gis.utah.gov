@@ -28,4 +28,4 @@ The following are the changes since the end of August, listed by county:
 - Washington – St George
 - Weber – Ogden, Plain City, Washington Terrace
 
-[Click for more info and to download]({% link data/boundaries/citycountystate/index.html %}) the data layers listed above.
+[Click for more info and to download](/products/sgid/boundaries/municipal) the data layers listed above.

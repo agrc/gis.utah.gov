@@ -18,7 +18,7 @@ category: SGID Blog
 
 ### Geocoding Assurance _or_ Why you should trust the results
 
-The UGRC [web api](https://api.mapserv.utah.gov) is a great resource for deriving information from the [SGID]({% link data/index.html %}). Geocoding an address is one of the more popular and useful free services. But it is important that users have confidence in the match results returned from the geocoding api.
+The UGRC [web api](https://api.mapserv.utah.gov) is a great resource for deriving information from the [SGID](/products/sgid). Geocoding an address is one of the more popular and useful free services. But it is important that users have confidence in the match results returned from the geocoding api.
 
 As you may know, the geocoding api uses [address points and road centerlines](https://api.mapserv.utah.gov#geocoding) to locate the best match when geocoding. Or, users may specify that the matches come only from centerline or address points. Each of the 29 Utah counties provide UGRC with a periodic update of their local road centerline and address point data. This schedule allows the geocoding api to use the most current data in order to provide the best match results.
 

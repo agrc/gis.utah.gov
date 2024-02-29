@@ -13,7 +13,7 @@ date: 2011-06-30 18:22:37 -0500
 ---
 #### Save yourself some time and use our widgets!
 
-UGRC is actively developing and maintaining a core set of geospatial javascript widgets, and ArcGIS Toolbox and Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs]({% link developer/web-services/index.md %}) that you can use to solve spatial problems, derive spatial context, or create your own add-ins, toolbox, and widgets.
+UGRC is actively developing and maintaining a core set of geospatial javascript widgets, and ArcGIS Toolbox and Add-ins. These widgets allow for developers and non-developers to incorporate geospatial functionality into their website, blog, or GIS environment. All of our widgets and add-ins are powered by our [geospatial web APIs](/products/api) that you can use to solve spatial problems, derive spatial context, or create your own add-ins, toolbox, and widgets.
 
 ### JavaScript
 
@@ -31,4 +31,4 @@ Our widget library, and most all of the work that we do, is open source and acce
 
 ### ArcGIS Tools
 
-We have a few publicly distributed ArcGIS Tools. Tools, in the form of a toolbox or add-in, allow users to bring the convenience of our API and web widgets in to the desktop GIS environment. You can [batch geocode](https://github.com/agrc/masquerade#batch-geocoding) addresses against our [geospatial web APIs]({% link developer/web-services/index.md %}) to get the best matches possible or [zoom to township, range, section polygons](https://github.com/agrc/trs-zoom-addin) to name a few.
+We have a few publicly distributed ArcGIS Tools. Tools, in the form of a toolbox or add-in, allow users to bring the convenience of our API and web widgets in to the desktop GIS environment. You can [batch geocode](https://github.com/agrc/masquerade#batch-geocoding) addresses against our [geospatial web APIs](/products/api) to get the best matches possible or [zoom to township, range, section polygons](https://github.com/agrc/trs-zoom-addin) to name a few.

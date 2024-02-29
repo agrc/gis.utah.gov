@@ -30,7 +30,7 @@ categories: []
     Utah's <strong>cities, counties, special districts, state agencies, K-12 school districts, colleges, universities,
       and tribal entities</strong> (or contractors or formal partners of any of these entities). This provides access to
     <strong>statewide high-resolution aerial imagery</strong> under the state's Google and Hexagon imagery licenses in
-    addition to the general base maps and imagery. Visit the <a href="{% link discover/license/index.md %}">license
+    addition to the general base maps and imagery. Visit the <a href="/documentation/discover/licensed-imagery">license
       information page</a> for more details.</li>
 </ul>
 <p class="pop text-center">
@@ -76,55 +76,55 @@ categories: []
   <li>Tiles: <code>https://discover.agrc.utah.gov/login/path/{quad-word}/tiles/{service}/{z}/{x}/{y}</code>
 </ul>
 <p>For best performance, we recommend using WMTS when possible. WMS is slower and has <a
-    href="{% link discover/resources/index.md %}#layers-not-exporting-when-using-wms">technical limitations</a> that
+    href="/documentation/discover">technical limitations</a> that
   could prevent the layer from drawing when exporting or printing maps.</p>
-<p>Be sure to visit our <a href="{% link discover/resources/index.md %}">Discover Server Resources and Information</a>
+<p>Be sure to visit our <a href="/documentation/discover">Discover Server Resources and Information</a>
   page to learn more about using the Discover Server. The following topics are covered in more depth there:</p>
 <ul class="dotless">
-  <li><a href="{% link discover/resources/index.md %}#coordinate-system-and-datum">Coordinate system and datum</a>
-  <li><a href="{% link discover/resources/index.md %}#horizontal-positional-accuracy">Horizontal positional accuracy</a>
-  <li><a href="{% link discover/resources/index.md %}#adding-a-wmts-or-wms-service-to-esri-products">Adding a service in
+  <li><a href="/documentation/discover">Coordinate system and datum</a>
+  <li><a href="/documentation/discover">Horizontal positional accuracy</a>
+  <li><a href="/documentation/discover">Adding a service in
       an Esri product</a>
-  <li><a href="{% link discover/resources/index.md %}#adding-a-wmts-or-wms-service-to-a-web-map">Adding a service in
+  <li><a href="/documentation/discover">Adding a service in
       ArcGIS Online Web Maps</a>
-  <li><a href="{% link developer/base-maps/discover/index.md %}">Use in JavaScript/Web Mapping application</a>
-  <li><a href="{% link discover/resources/index.md %}#adding-a-wms-service-to-cad">Adding a service in CAD</a>
-  <li><a href="{% link discover/resources/index.md %}#proarcmap-user-considerations">ArcGIS Pro considerations</a>
-  <li><a href="{% link discover/resources/index.md %}#printing-web-maps-with-discover-services">Printing Discover
+  <li><a href="/documentation/discover/clients">Use in JavaScript/Web Mapping application</a>
+  <li><a href="/documentation/discover">Adding a service in CAD</a>
+  <li><a href="/documentation/discover">ArcGIS Pro considerations</a>
+  <li><a href="/documentation/discover">Printing Discover
       services</a>
-  <li><a href="{% link discover/resources/index.md %}#licensed-imagery-flight-dates">Flight dates</a>
-  <li><a href="{% link developer/base-maps/basemap-scales/index.md %}">Imagery and base map cache scale information</a>
-  <li><a href="{% link discover/resources/index.md %}#requests-for-on-premise-use">On-premises use</a>
-  <li><a href="{% link discover/resources/index.md %}#layers-not-exporting-when-using-wms">Layers not exporting when
+  <li><a href="/documentation/discover">Flight dates</a>
+  <li><a href="https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated/?">Imagery and base map cache scale information</a>
+  <li><a href="/documentation/discover">On-premises use</a>
+  <li><a href="/documentation/discover">Layers not exporting when
       using WMS</a>
-  <li><a href="{% link discover/resources/index.md %}#other-tidbits">Other tidbits</a>
+  <li><a href="/documentation/discover">Other tidbits</a>
 </ul>
 <p>If you are looking for <strong>non-licensed imagery downloads</strong> (NAIP, HRO, etc), check out the <a
-    href="{% link data/aerial-photography/index.html %}">aerial photography</a> section of the data pages.</p>
+    href="/products/sgid/aerial-photography">aerial photography</a> section of the data pages.</p>
 <h3 class="text-left" id="services">{% include fa_icon.html map=true class="svg-inline--fa fa-w-18 fa-fw" %} Available
   Services</h3>
 <ul class="dotless no-padding">
   <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Utah</code> – 
-    Approximately 6-inch natural-color <a href="{% link data/aerial-photography/index.html %}#HEXAGON">aerial
+    Approximately 6-inch natural-color <a href="/products/sgid/aerial-photography">aerial
       photography from Hexagon</a> collected 2021 <strong>(licensed)</strong>
     <ul class="dotless no-margin">
       <li><em>This layer now uses the Hexagon imagery instead of the Google imagery. The most recent Google imagery is still available in the
           <code>Google</code> service.</em>
     </ul>
   <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Hexagon</code> –
-    Approximately 6-inch natural-color <a href="{% link data/aerial-photography/index.html %}#HEXAGON">aerial
+    Approximately 6-inch natural-color <a href="/products/sgid/aerial-photography">aerial
       photography from Hexagon</a> collected 2021 <strong>(licensed)</strong>
         <ul class="dotless no-margin">
       <li><em>This statewide layer is a higher-resolution copy of the 2021 NAIP imagery. This layer was previously named Hexagon 30cm</em>
     </ul>
   <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Hexagon 15cm</code> –
-    Approximately 6-inch natural-color <a href="{% link data/aerial-photography/index.html %}#HEXAGON">aerial
+    Approximately 6-inch natural-color <a href="/products/sgid/aerial-photography">aerial
       photography from Hexagon</a> collected 2021 <strong>(licensed)</strong>
     <ul class="dotless no-margin">
       <li><em>This layer is a higher-resolution copy of the 2021 NAIP imagery and is now statewide</em>
     </ul>
   <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Google</code> – Most recent 6-inch
-    statewide natural-color <a href="{% link data/aerial-photography/index.html %}#GOOGLE">aerial photography from
+    statewide natural-color <a href="/products/sgid/aerial-photography">aerial photography from
       Google</a> collected over 2011–2018<strong> (licensed)</strong>
   <li>{% include fa_icon.html lock=true class="svg-inline--fa fa-w-14 fa-fw" %} <code>Google {year} archive</code> –
     Year-by-year updates to the Google Imagery (the latest blocks are always incorporated into the <code>Google</code>
@@ -133,7 +133,7 @@ categories: []
       <li><em>Available Years: 2011–2018</em>
     </ul>
   <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Basemap-Address_Points</code> –
-    Base map of <a href="{% link data/location/address-data/index.html %}#AddressPoints">address point</a> locations
+    Base map of <a href="/products/sgid/address">address point</a> locations
   <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Basemap-Overlay</code> – General
     reference features—highways and streets, cities, address points, parcels, etc—with a transparent background,
     suitable for layering over your thematic data.
@@ -145,17 +145,17 @@ categories: []
   <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Basemap-Terrain</code> – Base
     map of hillshade, highways and streets, parks, forests, water, etc.
   <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>Basemap-Topo</code> – Base map
-    of US Geological Survey <a href="{% link data/usgs-scanned-topographic-maps/index.html %}">topographic maps</a>
+    of US Geological Survey <a href="/products/sgid/usgs-scanned-topographic-maps">topographic maps</a>
   <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %}
     <code><abbr title="Digital Ortho Photo Quads">DOQ</abbr> 1990s BW</code> – <a
-      href="{% link data/aerial-photography/doq/index.html %}#1990DOQ">1-meter statewide black-and-white</a> aerial
+      href="/products/sgid/aerial-photography/digital-orthophoto-quadrangle">1-meter statewide black-and-white</a> aerial
     photography, collected in the 1990s
   <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %}
     <code><abbr title="High Resolution Orthophotography">HRO</abbr> 2012 RGB</code> – <a
-      href="{% link data/aerial-photography/hro/index.html %}#HRO2012">12.5-cm natural-color</a> aerial photography of
+      href="/products/sgid/aerial-photography/high-resolution-orthophotography">12.5-cm natural-color</a> aerial photography of
     the Wasatch Front, collected in 2012
   <li>{% include fa_icon.html circle=true class="svg-inline--fa fa-w-16 fa-fw" %} <code>NAIP {year} RGB</code> – <a
-      href="{% link data/aerial-photography/naip/index.html %}">1-meter statewide natural-color</a> aerial photography
+      href="/products/sgid/aerial-photography/naip">1-meter statewide natural-color</a> aerial photography
     <ul class="dotless no-margin">
       <li><em>Available Years: 2006, 2009, 2011, 2014, 2016, 2018, 2021</em>
     </ul>
@@ -171,8 +171,8 @@ categories: []
 <ul>
   <li>We strongly recommended that you use WMTS for the best user experience.
   <li>If you are, or will be, printing base maps from the web and are experiencing blank or empty output, read about our
-    <a href="{% link _posts/2017-02-02-printing-web-maps-with-discover-services.md %}">GP proxy service</a> or our new
-    <a href="{% link _posts/2018-02-26-success-with-serverless.md %}">serverless print proxy</a>.
+    <a href="/blog/2017-02-02-printing-web-maps-with-discover-services">GP proxy service</a> or our new
+    <a href="/blog/2018-02-26-success-with-serverless">serverless print proxy</a>.
   <li>Any end products using the licensed imagery must attribute Google or Hexagon. See the <a
-      href="{% link discover/resources/index.md %}#citation-and-logos">resources page</a> for logos.
+      href="/documentation/discover">resources page</a> for logos.
 </ul>

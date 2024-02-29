@@ -21,7 +21,7 @@ A simple way to compare the different results from the traditional DTM and the L
 
 In the model result graphics below, the red areas show, _at 3 different scales_, the areas that have clear visibility from the tower site using the DTM and, it's LiDAR counterpart DSM. With all other factors held constant, the significant variation in the results is easy to see.
 
-The DTM and DSM elevation models from the 2013-2014 Wasatch Front LiDAR Elevation Data used to generate these models can be downloaded from [here]({% link data/elevation-and-terrain/2013-2014-lidar/index.html %}).
+The DTM and DSM elevation models from the 2013-2014 Wasatch Front LiDAR Elevation Data used to generate these models can be downloaded from [here](/products/sgid/elevation/lidar).
 
 **Important Note**: In addition to a surface models that represents the physical world, wireless network planning and other radio signal propagation software utilize many parameters to model coverage such as signal frequency, transmitter angle, earth curvature, Fresnel Zone, etc. Simple GIS Viewshed analysis, as shown, does not completely model wireless signals and their varying ability to bend and reflect but it does illustrate the possible impact of using surface model inputs that represent the physical world with differing amounts of precision.
 

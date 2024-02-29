@@ -18,4 +18,4 @@ Since 2005, UGRC has administered the Statewide Global Positioning Reference Net
 
 The network is used by over 400 subscribers. Legislative and local government support keeps the yearly subscription rate to only $600. These low subscription fees result in more usage, and more accurate locations for surveying monuments, public lands, and private property. The network is used for a range of precision GPS applications including surveying, engineering, construction, and GIS data collection.
 
-To learn more about the Network and to subscribe, visit the [GPS Network webpage]({% link data/cadastre/turn-gps/index.md %}).
+To learn more about the Network and to subscribe, visit the [GPS Network webpage](/products/sgid/cadastre/turn-gps).

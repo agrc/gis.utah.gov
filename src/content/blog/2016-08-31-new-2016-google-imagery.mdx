@@ -11,7 +11,7 @@ category: 'Uncategorized'
 import Contacts from '@components/page/Contacts.astro';
 
 <div class="grid pop">
-  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{% link discover/index.html %}">Discover</a> page.</p>
+  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="/products/discover">Discover</a> page.</p>
 </div>
 
 New 2016 high-resolution Google imagery is available from the Discover server. Updated areas include the Salt Lake Block and part of the Torrey Block that was previously covered by clouds. The new imagery can be found in the `utah` service. The new imagery is not yet available for download and the archive services have not been updated but should be very soon.
@@ -24,6 +24,6 @@ New 2016 high-resolution Google imagery is available from the Discover server. U
 
 ArcMap users may need to clear the cache on the `utah` layer from Discover to see the new imagery. This can be done by going to the service’s `Layer Properties -> Cache` tab and selecting `Clear Local Cache Now`. Be patient as this could take several minutes.
 
-Are you not signed up for access to the Google imagery yet? Visit [the Google Imagery License page]({% link discover/license/index.md %} "Google imagery license information").
+Are you not signed up for access to the Google imagery yet? Visit [the Google Imagery License page](/documentation/discover/licensed-imagery"Google imagery license information").
 
 <Contacts subject={frontmatter.title} contactKey="google_imagery" />

@@ -43,7 +43,7 @@ The description is a more in-depth version of the summary and should stand on it
 
 The first line of the description should be the date the dataset was last updated so people have a clear and consistent place to see how fresh or stale it is.
 
-For datasets hosted by UGRC, this section should also contain a link to the corresponding [gis.utah.gov data page]({% link data/index.html %}).
+For datasets hosted by UGRC, this section should also contain a link to the corresponding [gis.utah.gov data page](/products/sgid).
 
 #### Credits (as in the source of the data)
 {: .text-left}
@@ -57,6 +57,6 @@ Example: `UGRC, UDOT`
 
 This section includes both usage limitations (any constraints on where or how the dataset can be used, including disclaimers and attribution rules) and the intellectual property license (if any) associated with the dataset (like Creative Commons).
 
-We use [Sweeper](https://github.com/agrc/sweeper) to automatically populate our hosted datasets with our standard [disclaimer]({% link about/policy/license-disclaimer/index.md %}#disclaimer) and [license]({% link about/policy/license-disclaimer/index.md %}#license).
+We use [Sweeper](https://github.com/agrc/sweeper) to automatically populate our hosted datasets with our standard [disclaimer](/documentation/policy/license-disclaimer) and [license](/documentation/policy/license-disclaimer).
 
 Open Data will try to find references to the common licenses and will link to the appropriate license. Otherwise, it just lists "Custom License" and displays the item's Terms of Use text.

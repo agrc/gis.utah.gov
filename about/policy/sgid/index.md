@@ -10,7 +10,7 @@ categories: []
 date: 2020-01-14 17:00
 ---
 
-The policies on this page govern the way we interact with data in the [SGID]({% link sgid/index.html %}). Many of these policies also apply to external data being submitted to the SGID.
+The policies on this page govern the way we interact with data in the [SGID](/documentation/sgid). Many of these policies also apply to external data being submitted to the SGID.
 
 - TOC list
 {:toc}
@@ -28,7 +28,7 @@ A Brief Word on Language
 
 We use the following terms intentionally on this page:
 
-- **Must**: This is as close to a hard and fast rule as we get (short of the legislative "thou shalt" language in our establishing [laws]({% link about/code/index.html %})).
+- **Must**: This is as close to a hard and fast rule as we get (short of the legislative "thou shalt" language in our establishing [laws](/about/code)).
 - **Should**: We generally follow this rule, but we allow for exceptions at our discretion.
 - **May**: We can apply this rule, but our policies don't necessarily require or encourage us to act.
 - **Will**: We will take the prescribed action if the specified conditions occur.
@@ -37,7 +37,7 @@ We use the following terms intentionally on this page:
 
 ## SGID Dataset Qualifications
 
-Datasets added to the SGID must meet the following criteria. We may remove any existing datasets that do not meet these criteria.  All additions to the SGID should follow the appropriate [sharing process]({% link sharing/index.md %}) and be tracked through [Porter](https://github.com/agrc/porter).
+Datasets added to the SGID must meet the following criteria. We may remove any existing datasets that do not meet these criteria.  All additions to the SGID should follow the appropriate [sharing process](/documentation/sgid/sharing) and be tracked through [Porter](https://github.com/agrc/porter).
 
 ### General Qualifications
 {: .text-left}
@@ -53,7 +53,7 @@ These criteria apply to all datasets added to the SGID, regardless of which part
 ### SGID Index Qualifications
 {: .text-left}
 
-These criteria apply to all datasets added only to the [SGID Index]({% link sgid/index.html %}#sgid-index) and not anywhere else in the SGID (for example, download links for resources hosted on an entity's own server).
+These criteria apply to all datasets added only to the [SGID Index](/documentation/sgid) and not anywhere else in the SGID (for example, download links for resources hosted on an entity's own server).
 
 - Datasets should be **publicly available** without requiring a login.
   - We may add references to datasets that are restricted due to safety or security concerns as a way to raise awareness that the datasets exist but are restricted.
@@ -67,7 +67,7 @@ These criteria apply to ArcGIS Online items shared through the [SGID Open Data s
 - Datasets must be **publicly available** without an ArcGIS login.
 - Datasets should have a **stable schema**. Clients might be using the services directly, and deleting or renaming fields can break pop-ups, definition queries, and other schema-dependent actions.
   - Just adding new fields is generally ok.
-- All datasets from a single entity must be shared from the same **ArcGIS Online user** OR have a custom and consistent organization name specified in the ArcGIS Online item metadata as described in the "Source" note in the [SGID Open Data  sharing process]({% link sharing/open-data/index.md %}).
+- All datasets from a single entity must be shared from the same **ArcGIS Online user** OR have a custom and consistent organization name specified in the ArcGIS Online item metadata as described in the "Source" note in the [SGID Open Data  sharing process](/documentation/sgid/sharing).
 - Datasets must define the following metadata items in the ArcGIS Online item:
   - The **title** should include "Utah" if the rest of the title is not immediately and uniquely identifiable as a Utah dataset.
   - The **description** must include a summary of the dataset. The first line should include the date the dataset was last updated.
@@ -82,14 +82,14 @@ We strongly encourage dataset owners to follow these ArcGIS Online-specific guid
 ### Open SGID Qualifications
 {: .text-left}
 
-These criteria apply to datasets delivered to UGRC for inclusion in the [Open SGID]({% link sgid/index.html %}#open-sgid).
+These criteria apply to datasets delivered to UGRC for inclusion in the [Open SGID](/documentation/sgid).
 
 - Datasets should be useful to **multiple agencies or organizations'** daily activities or decision-making. Datasets primarily used internally by a single agency aren't great candidates for the Open SGID; instead, it would be great to have references to them in the SGID Open Data site or the SGID Index.
 - The entity providing the dataset should lack the internal **capability** to publicly serve the data (such as through an existing ArcGIS Online organization).
   - We may chose not include a dataset if an entity has the capability to share it but lacks server capacity or is trying to reduce data storage costs.
 - Datasets should be a **core and vital** GIS layer for the state (for example, land ownership category boundaries).
 - Datasets should have a **stable schema**. Clients may be using the datasets directly from the database and may be relying on the presence and order of specific fields.
-- Datasets should have **accurate metadata** that meets our [minimum metadata standards]({% link about/policy/metadata/index.md %}).
+- Datasets should have **accurate metadata** that meets our [minimum metadata standards](/documentation/policy/metadata).
 
 ---
 
@@ -125,7 +125,7 @@ While not comprehensive, the following list includes the most common reasons for
 - A more authoritative source for the dataset exists elsewhere.
 - A link has been abandoned and no longer returns a proper web page.
 
-In addition, we may remove any ArcGIS Online items from SGID Open Data that aren't shared through the [sharing process]({% link sharing/open-data/index.md %}). We may remove items from the staging group if the submitter fails to provide adequate information according to the guidelines in the [sharing process]({% link sharing/open-data/index.md%}).
+In addition, we may remove any ArcGIS Online items from SGID Open Data that aren't shared through the [sharing process](/documentation/sgid/sharing). We may remove items from the staging group if the submitter fails to provide adequate information according to the guidelines in the [sharing process](/documentation/sgid/sharing).
 
 ### "Static" Datasets
 {: .text-left}
@@ -147,7 +147,7 @@ We will include dates in the names of datasets in the `census`, `political`, or 
 
 For all other categories, dates should only be used for datasets that are no longer effective/active or are soon-to-be effective/active. This implies that the **most current and relevant** data contains **no date suffix**. Historical or future data should contain a date suffix to help identification at a glance.
 
-The best way to identify a dataset's vintage or time frame is to view the metadata on its [data page]({% link data/index.html %}).
+The best way to identify a dataset's vintage or time frame is to view the metadata on its [data page](/products/sgid).
 
 ### Internal Database Standards
 {: .text-left}

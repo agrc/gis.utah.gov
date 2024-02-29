@@ -14,7 +14,7 @@ The following applies to all services and content created or hosted by the Utah 
 
 There are two exceptions to this coverage:
 
-1. The high-resolution imagery from Google and Hexagon, which have their own license and [attribution requirements]({% link discover/resources/index.md %}#citation-and-logos).
+1. The high-resolution imagery from Google and Hexagon, which have their own license and [attribution requirements](/documentation/discover).
 2. External data hosted by other organizations and included in the SGID by reference, which are subject to the licenses and disclaimers specified by their owners.
 
 ## License
@@ -41,11 +41,11 @@ For referenced data hosted by other organizations (such as data from the Utah Ge
 
 - `Data Sources: ESRI, US Census Bureau, UGRC SGID (data modified), ...`
 
-Any **data distributions** (databases, web services, etc.) that contain SGID data must include credit to UGRC, a link to the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and a note of any changes made to the data. They should also include the disclaimer below and relevant metadata as outlined in our [metadata policy]({% link about/policy/metadata/index.md %}). The dataset's description could include the following line:
+Any **data distributions** (databases, web services, etc.) that contain SGID data must include credit to UGRC, a link to the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and a note of any changes made to the data. They should also include the disclaimer below and relevant metadata as outlined in our [metadata policy](/documentation/policy/metadata). The dataset's description could include the following line:
 
 - County boundary data derived from the UGRC SGID under the CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/). Several new fields were calculated from US Census Bureau data.
 
-If you are using **logos** as part of your attribution, you can download our current logos in `.png`, `.ai`, and `.psd` formats from our [media resources]({% link about/media/index.md %}) page.
+If you are using **logos** as part of your attribution, you can download our current logos in `.png`, `.ai`, and `.psd` formats from our [media resources](/about/media) page.
 
 ## Disclaimer
 {: .text-left}
