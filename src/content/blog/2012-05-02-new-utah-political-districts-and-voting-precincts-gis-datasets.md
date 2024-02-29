@@ -14,7 +14,7 @@ category: SGID Blog
 
 ### New Utah Political Districts
 
-[Political districts for state-level offices]({% link data/political/index.html %}) (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections in 2012 and ongoing representation after the new representatives are installed on Jan 1, 2013.
+[Political districts for state-level offices](/products/sgid/political) (Congressional, State House, State Senate, and State Board of Education) are available as a GIS data layers. These districts are for elections in 2012 and ongoing representation after the new representatives are installed on Jan 1, 2013.
 
 The new political district boundaries, originally formed from 2010 Census Block files have been adjusted by UGRC, working together with the Utah Legislature, the Lt. Governor's Elections Office and the County Clerks' offices to make recommendations that increased the geographic accuracy and ease of use in the elections process. Legislation to make recommended minor changes to the political districts changes was passed by the Legislature during the 2013 General Session and signed into law by the Governor.
 
@@ -33,7 +33,7 @@ Specifically, efforts were made to
 
 ### New Utah Voting Precincts
 
-[Political.VistaBallotAreas, a statewide GIS data layer]({% link data/political/voter-precincts/index.html %}) depicting voting precinct and subprecinct boundaries is also available. This dataset is compiled from the County Clerks and is actively used in the 26 of 29 counties that have adopted a GIS-based process to manage precinct-to-residence assignment within VISTA, the statewide voter registration database.
+[Political.VistaBallotAreas, a statewide GIS data layer](/products/sgid/political/voter-precincts) depicting voting precinct and subprecinct boundaries is also available. This dataset is compiled from the County Clerks and is actively used in the 26 of 29 counties that have adopted a GIS-based process to manage precinct-to-residence assignment within VISTA, the statewide voter registration database.
 
 Precincts can be formed (and subprecinct divisions eliminated) by performing a gis 'dissolve' operation on the Precinct field. This dataset has not yet been edited to eliminate very small gap and overlap slivers and or to align to the highest resolution of the county boundaries.
 

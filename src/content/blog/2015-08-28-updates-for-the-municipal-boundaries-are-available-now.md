@@ -28,4 +28,4 @@ The following are other changes since April, listed by county:
 - Washington – Boundary Adjustment St George and Santa Clara
 - Weber – Ogden, West Haven
 
-[Click for more info and to download]({% link data/boundaries/citycountystate/index.html %}) the data layers listed above.
+[Click for more info and to download](/products/sgid/boundaries/municipal) the data layers listed above.

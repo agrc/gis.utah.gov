@@ -30,4 +30,4 @@ Be on the lookout this spring for more base map updates from us, including vecto
 
 #### UPDATE 3/22/2023
 
-The new and improved Terrain base map has been published. It is suggested that users clear their local cache. Please look at the [Pro/ArcMap User Considerations]({% link discover/resources/index.md %}#proarcmap-user-considerations) for instructions on how to accomplish this.
+The new and improved Terrain base map has been published. It is suggested that users clear their local cache. Please look at the [Pro/ArcMap User Considerations](/documentation/discover) for instructions on how to accomplish this.

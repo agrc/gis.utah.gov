@@ -10,21 +10,21 @@ title: Submitting Data to the SGID Open Data Site
 categories: []
 ---
 
-ArcGIS Online items are added to [SGID Open Data]({% link sgid/index.html %}#sgid-open-data-site) by sharing them with one of our SGID groups in ArcGIS Online. This process gives both you and UGRC a chance to review the quality of the item before it is shared. We reserve the right to remove items from SGID Open Data if they don't go through this process.
+ArcGIS Online items are added to [SGID Open Data](/documentation/sgid) by sharing them with one of our SGID groups in ArcGIS Online. This process gives both you and UGRC a chance to review the quality of the item before it is shared. We reserve the right to remove items from SGID Open Data if they don't go through this process.
 
 We use [issues](https://guides.github.com/features/issues/) in our [Porter](https://github.com/agrc/porter/issues) repository on GitHub to track a dataset's progress in the submission process and to keep an open and transparent record of everything that happened.
 
 <!-- If you've never used GitHub issues before, click here to watch a short tutorial (TBA) about creating an issue. -->
 
-If you've still got questions after reading this, {% include contact.html subject="SGID Data Additions" contact=site.data.contacts.sgid text='reach out to ' hide-punctuation=true %}; or you can contact anyone else on the [UGRC team]({% link about/contact/index.html %}).
+If you've still got questions after reading this, {% include contact.html subject="SGID Data Additions" contact=site.data.contacts.sgid text='reach out to ' hide-punctuation=true %}; or you can contact anyone else on the [UGRC team](/contact).
 
 ### Step 1: 📋 Qualifications (You)
 {: .text-left}
 
 First, make sure your dataset meets the SGID qualifications:
 
-- [General qualifications]({% link about/policy/sgid/index.md %}#general-qualifications)
-- [SGID Open Data-specific qualifications]({% link about/policy/sgid/index.md %}#sgid-open-data-qualifications)
+- [General qualifications](/documentation/policy/sgid)
+- [SGID Open Data-specific qualifications](/documentation/policy/sgid)
 
 ### Step 2: ✏️ Data Preparation (You)
 {: .text-left}

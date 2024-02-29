@@ -14,7 +14,7 @@ category: 'Uncategorized'
 import Contacts from '@components/page/Contacts.astro';
 
 <div class="grid pop">
-  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="{% link discover/index.html %}">Discover</a> page.</p>
+  <p class="text-center">The information on this page could be outdated. For the most recent information visit the <a href="/products/discover">Discover</a> page.</p>
 </div>
 
 Recently UGRC made some changes to the services available from our cloud server Discover (discover.agrc.utah.gov).
@@ -35,6 +35,6 @@ The service additions and changes are listed below. We also renamed most of the 
   most recent Google imagery for Utah.
 - **Basemap-Hybrid** (licensed) - This new service was created for convenience and performance for a dynamic mash-up of vector features with a transparent background from the **Basemap-Overlay** and the **Utah** imagery service.
 
-More information about the services from Discover can be found on the page [Using SGID Base Map & Imagery Services in ArcMap]({% link discover/resources/index.md %}).
+More information about the services from Discover can be found on the page [Using SGID Base Map & Imagery Services in ArcMap](/documentation/discover).
 
 <Contacts subject={frontmatter.title} contactKey="discover" />

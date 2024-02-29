@@ -18,7 +18,7 @@ category: SGID Blog
 <p>Built utilizing the expertise of Utah's county-level governments, a grant from the Department of Commerce's National Telecommunications and Information Administration (NTIA), and facilitation by UGRC and the Utah Broadband Project, this new data asset will deliver value to any application area that needs enhanced locational precision and/or a set of discrete addresses for Utah addresses. Public Safety, Point of Delivery Sales Tax, and Elections Management are three possible application areas. </p>
 <p>As with other GIS datasets in Utah's State Geographic Information Database (SGID), details about the data format, contents, completeness, update cycle, contacts, and accessibility for download or use via data-as-a-service at its dataset specific webpage, which in this case is: </p>
 <ul>
-<li><a href="{% link data/location/address-data/index.html %}">SGID10.Location.AddressPoints</a></li>
+<li><a href="/products/sgid/address">SGID10.Location.AddressPoints</a></li>
 </ul>
 <p>While on the page, be sure to explore the Description, Usage, Update, Contact, and Download|Links tabs for additional information.</p>
 <p>Many thanks to all who have worked or supported this important partnership!</p>

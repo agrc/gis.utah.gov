@@ -25,11 +25,11 @@ We know these platforms don't reach everyone who needs to know about these chang
 
 ## Changing Schemas
 
-Our most recent challenge with our GDL comes from changing the schema of an existing SGID table. As per our [policy]({% link about/policy/sgid/index.md %}), replacing a schema is a breaking change that we historically handle by removing the existing table and introducing a new table with a unique name. For example, the current table "Roads" has been known as "StatewideStreets" and "Centerlines" throughout its history.
+Our most recent challenge with our GDL comes from changing the schema of an existing SGID table. As per our [policy](/documentation/policy/sgid), replacing a schema is a breaking change that we historically handle by removing the existing table and introducing a new table with a unique name. For example, the current table "Roads" has been known as "StatewideStreets" and "Centerlines" throughout its history.
 
 Removing and replacing a table like this severs all connections to it through the UGRC API and desktop GIS clients. This is good for avoiding confusion about schemas and requires you to investigate the broken service to repair it. It's not always possible to introduce a new table name that is as descriptive and relevant as the one it is replacing. With this most recent schema change, there is no equivalent or improved alternate name.
 
-Our first thought, based on our [current process]({% link about/policy/sgid/index.md %}#general-removal-policies), is to rely on a notification period to give you a chance to prepare for the change, then delete the existing table and add the new table under the same name. This would avoid severed connections, but you don't have any time with the new data to prepare for the new schema.
+Our first thought, based on our [current process](/documentation/policy/sgid), is to rely on a notification period to give you a chance to prepare for the change, then delete the existing table and add the new table under the same name. This would avoid severed connections, but you don't have any time with the new data to prepare for the new schema.
 
 How can we update the schema without creating headaches for you?
 

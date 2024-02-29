@@ -21,7 +21,7 @@ We have developed what we believe are best practices for address points:
 - A vacant parcel may have a point if it has a unique address.
 - The address for a point should be derived from the primary street name. Additional points can also exist that are derived from alternate street names.
 
-The full Address Point dataset schema and schema definitions are available <a href="https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit#">here</a>. Address points are available for download <a href="{% link data/location/address-data/index.html %}">here</a>.
+The full Address Point dataset schema and schema definitions are available <a href="https://docs.google.com/document/d/1eTgknNbA0UNXnyMDR5q9gFAm0-XtNYQpLLYPSZtCLTU/edit#">here</a>. Address points are available for download <a href="/products/sgid/address">here</a>.
 
 <figure class="caption caption--left"><a href="/images/404.png"><img class="caption__image" src="/images/404.png" alt="" title="Basemap" width="325" height="256"/></a><figcaption class="caption__text">Figure 1: Multiple structures with the same house number, but unique unit numbers</figcaption></figure>
 <figure class="caption caption--left"><a href="/images/404.png"><img class="caption__image" src="/images/404.png" alt="" title="BasemapB" width="325" height="256"/></a><figcaption class="caption__text">Figure 2: Structure located far from street from which it is addressed.</figcaption></figure>

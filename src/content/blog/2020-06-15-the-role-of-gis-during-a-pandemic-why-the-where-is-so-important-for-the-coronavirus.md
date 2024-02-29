@@ -32,7 +32,7 @@ As evidenced by these situations, GIS has been successful in providing a deeper 
 
 ### 2. GIS helps people navigate through complicated layers of information
 
-GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page]({% link data/index.html %}), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
+GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page](/products/sgid), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
 
 Going back to the [Johns Hopkins’ map](https://coronavirus.jhu.edu/map.html) as an example: on the site’s [Maps & Trends page](https://coronavirus.jhu.edu/data#charts) of the Critical Trends tab, it has a whole list of questions that GIS can help answer.
 ![Johns Hopkins Coronavirus Map FAQ page](../../images/pillar-blog/2020-06-15-the-role-of-gis-during-a-pandemic-why-the-where-is-so-important-for-the-coronavirus/johnshopkinscoronavirusmapfaqs.jpg)

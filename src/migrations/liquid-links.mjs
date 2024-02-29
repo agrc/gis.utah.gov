@@ -1,7 +1,8 @@
-import { readdirSync, readFileSync } from 'fs';
+import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { GoogleAuth } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
-import { parse } from 'path';
+import { basename, parse } from 'path';
+import prompts from 'prompts';
 
 const regex = /{%\s?link (?<link>.*?\.(md|html))\s?%}(?<anchor>#?.*?)(?=["|\)])/gim;
 
@@ -112,15 +113,55 @@ const parsePagesForLinks = async (lookup) => {
     let matches;
 
     let file = readFileSync(`../../${filename}`, 'utf8');
+    let changed = false;
     while ((matches = regex.exec(file)) !== null) {
       let link = matches.groups.link;
       let lastSlashIndex = link.lastIndexOf('/');
       if (lastSlashIndex !== -1) {
         link = link.substring(0, lastSlashIndex);
       }
-      if (!(link in lookup)) {
-        console.log(`${link} not found in lookup`);
+
+      let replacement;
+      if (link === '_posts') {
+        replacement = `/blog/${basename(matches.groups.link, '.md')}`;
+      } else if (!(link in lookup)) {
+        console.error(`${link} not found in lookup`);
+
+        continue;
+      } else {
+        replacement = lookup[link].replacement;
+        if (lookup[link].replacement === null) {
+          if (lookup[link].options.length === 0) {
+            console.error(`no replacement options for ${link}`);
+            continue;
+          }
+
+          const contextLength = 200;
+          const response = await prompts({
+            type: 'select',
+            name: 'replacement',
+            message: `Select a replacement for "${link}" in ${filename}. Context: \n\n${file.substring(matches.index - contextLength, matches.index + contextLength)}\n\n`,
+            choices: lookup[link].options.map((option) => ({ title: option, value: option })),
+          });
+
+          if (response.replacement) {
+            replacement = response.replacement;
+          } else {
+            console.error(`no replacement selected for ${link}`);
+
+            continue;
+          }
+          replacement = lookup[link].options[0];
+        }
       }
+
+      file = file.replace(matches[0], replacement);
+      changed = true;
+    }
+
+    if (changed) {
+      // console.log(`writing changes to ${filename}`);
+      writeFileSync(`../../${filename}`, file);
     }
   }
 };

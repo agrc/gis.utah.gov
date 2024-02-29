@@ -62,7 +62,7 @@ Technology and the use of GIS have come a long way since the inaugural SGID of 1
 
 The current makeup of the SGID is distributed, by design. Internally, much of the framework data is managed on a SQL ArcSDE Database. From there, data layers are distributed accordingly.
 
-The [SGID index]({% link data/sgid-index/index.html %}) and current user guide are located on [the SGID page of UGRC’s website]({% link data/index.html %}), where you will also find descriptions of the data, update dates, data downloads, and links to other places where you can access the data. If you're looking for data, that is the best place to start.
+The [SGID index](/products/sgid/sgid-index) and current user guide are located on [the SGID page of UGRC’s website](/products/sgid), where you will also find descriptions of the data, update dates, data downloads, and links to other places where you can access the data. If you're looking for data, that is the best place to start.
 
 ![SGID 2019 User Guide](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_2019_webpage_data.png)
 

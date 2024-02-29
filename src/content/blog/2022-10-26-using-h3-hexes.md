@@ -49,7 +49,7 @@ Using these multiple scales (which H3 calls resolutions), we can **create hexes 
 
 As noted above, H3 uses some fancy mathematics under the hood to assign hex ids instead of doing spatial analysis. Written in C and exposed through a variety of bindings in other languages, these calculations are **pretty darn fast at figuring out what hex cell a point belongs in.**
 
-For example, I used `%timeit` to assign a resolution 9 ID to all 1,339,635 of our [address points]({% link data/location/address-data/index.html %}) (after projecting them to WGS84 to get direct access to lat/long in the SHAPE field):
+For example, I used `%timeit` to assign a resolution 9 ID to all 1,339,635 of our [address points](/products/sgid/address) (after projecting them to WGS84 to get direct access to lat/long in the SHAPE field):
 
 ```python
 def assign_h3(df, resolution):
@@ -70,7 +70,7 @@ Note: To get this speed, you'll need to use the `h3.api.numpy_int` API as noted 
 
 Ok, so we can assign a hex id to point data quickly and easily. But, at some point, we need a spatial representation of the hexes if we're going to map out our summarized or aggregated data. Once we've got that, we can then use pandas to aggregate our data and join it to the hex geometries.
 
-To show this in action, we'll use our [Open Source Places]({% link data/society/open-source-places/index.html %}) and the address points we investigated earlier to do a quick analysis of the number of addresses per grocery store throughout the state.
+To show this in action, we'll use our [Open Source Places](/products/sgid/society/open-source-places) and the address points we investigated earlier to do a quick analysis of the number of addresses per grocery store throughout the state.
 
 ### Creating an H3 Hex Feature Class
 

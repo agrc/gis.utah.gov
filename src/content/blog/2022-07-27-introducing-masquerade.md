@@ -18,7 +18,7 @@ Masquerade is a new proxy service hosted by UGRC that makes [our geocoding servi
 ## Capabilities
 
 - Single line address geocoding (convert an address to an x,y coordinate). Powered by the [UGRC web API](https://api.mapserv.utah.gov/#geocoding).
-- Provides typeahead suggestions from a variety of datasets in [Open SGID]({% link sgid/open-sgid/index.md %}) such as political districts, municipal and county boundaries, and GNIS place names.
+- Provides typeahead suggestions from a variety of datasets in [Open SGID](/documentation/sgid/open-sgid) such as political districts, municipal and county boundaries, and GNIS place names.
 
 _Give Masquerade's awesome searching capabilities a try in this [simple web app](https://arcg.is/0na9Lf0)._
 
