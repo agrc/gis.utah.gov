@@ -74,7 +74,7 @@ print(state_boundary_df)
 
 Which gives us
 
-```output
+```csv
    xid state                                              SHAPE
 0    1  Mask  {"rings": [[[5686876.59, 8859297.030000001], [...
 1    2  Utah  {"rings": [[[295008.5599999996, 4651995.720000...
