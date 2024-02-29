@@ -25,8 +25,6 @@ Through a partnership with the National Park Service, the DNR’s Division of Fo
 
 U.S. Geological Survey Quality Level 1 lidar data will be collected for the entire project area while 6-inch resolution color orthophotography will be collected for the project area within the boundaries of Canyonlands National Park. To date, ASI has completed the orthophotography collection and the lidar collection is ongoing. Delivery of the final data products is expected in early Spring 2016 after data processing and QA/QC has been completed.
 
-**[Download]({% link downloads/ContractMap.pdf %}) a map of the project area**.
-
 Opportunities created by this new data include:
 
 - improving elevation data, along the rivers, that is associated with the boundaries of state-owned sovereign lands

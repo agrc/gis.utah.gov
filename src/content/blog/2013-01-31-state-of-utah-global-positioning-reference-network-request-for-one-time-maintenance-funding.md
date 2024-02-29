@@ -24,4 +24,3 @@ expand, and maintain the network.</p>
 • The network currently runs on software developed in 2002 and is limited to a 32 bit server platform.<br />
 • The 32 bit system has reached its processing threshold for network expansion and concurrent user growth.<br />
 • Approximately 35 of the 70 GPS network receivers are older models, unable to take advantage of GPS signals from new satellite deployments made by the international community.</p>
-<p><strong><a href="{% link downloads/GPS-Network-Funding-Request.pdf %}">More information (fact sheet)</a>.</strong></p>

@@ -14,8 +14,6 @@ published: false
 category: Uncategorized
 ---
 
-[![SL Co Municipal Changes](/images/404.png 'view high res usage map')]({% link downloads/MunicpalBoundaries2016Updates.pdf %})
-
 Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download](/products/sgid/boundaries/municipal) and listed below.
 
 We would like to welcome the newest city in the state: Millcreek in Salt Lake County, seems like it was a long time coming and now it’s here. Hooray!
@@ -32,7 +30,7 @@ website](https://municert.utah.gov/2016-certifications).
 The following are the changes and annexations since Sept. 9, 2016 listed by County and City:
 
 | County    | City                    | Number of Changes |
-| --------- | ----------------------- | ----------------- |
+|-----------|-------------------------|-------------------|
 | Box Elder | Garland                 | 1                 |
 |           | Willard (Dissolve)      | 1                 |
 | Cache     | Hyrum                   | 1                 |
