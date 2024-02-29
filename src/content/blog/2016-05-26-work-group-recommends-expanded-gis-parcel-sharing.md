@@ -48,20 +48,5 @@ Another aim of the work group was to improve the usability of the data (through 
 
 1. UGRC will work with counties to collect, aggregate and publish the tax parcels according to the agreed upon schema.
 
-<div class="grid text-center">
-    <div class="grid__col grid__col--1-of-2 text-center">
-        <a href ="{% link downloads/ParcelAssessedLandValue.pdf %}">
-            <img src="/images/404.png" alt="Assessed Land Value Example" loading="lazy" />
-        </a>
-        <p>Assessed Land Value, By Acre (Northern Utah County)</p>
-    </div>
-    <div class="grid__col grid__col--1-of-2 text-center">
-        <a href ="{% link downloads/ParcelVacantPrivateLand.pdf %}">
-            <img src="/images/404.png" alt="Vacant Private Land Example" loading="lazy" />
-        </a>
-        <p>Vacant Private Land (Northern Utah County)</p>
-    </div>
-</div>
-
 _[LIR]: Land Information Records
 _[AOG]: Association of Governments
