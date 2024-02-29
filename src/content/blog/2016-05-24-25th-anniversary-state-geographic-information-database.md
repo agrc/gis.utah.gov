@@ -46,17 +46,11 @@ Commemorative 'SGID 25 Years' stickers are available in limited
 quantity. One size fits all SGID data stewards and SGID data users alike.
 Get yours from an UGRC staffer at your next opportunity.
 
-<div class="grid">
-    <div class="grid__col grid__col--1-of-3 text-center">
-        <h5 class="text-center">Cover of SGID Data CD, 1995</h5>
-        <img alt="Cover, SGID CD, 1995" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cover.jpg" loading="lazy" />
-    </div>
-    <div class="grid__col grid__col--1-of-3 text-center">
-        <h5 class="text-center">SGID Data CD, 1995</h5>
-        <img alt="Inside, SGID CD, 1995" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cd.jpg" loading="lazy" />
-    </div>
-    <div class="grid__col grid__col--1-of-3 text-center">
-        <h5 class="text-center">SGID Data User Guide, 1999</h5>
-        <img alt="SGID Data User Guides, 1999" src="../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_userguide.jpg" loading="lazy" />
-    </div>
-</div>
+Cover of SGID Data CD, 1995
+[Cover, SGID CD, 1995](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cover.jpg)
+
+SGID Data CD, 1995
+[Inside, SGID CD, 1995](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cd.jpg)
+
+SGID Data User Guide, 1999
+[SGID Data User Guides, 1999](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_userguide.jpg)
