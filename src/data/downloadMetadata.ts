@@ -2107,8 +2107,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Streams NHD': {
     itemId: 'd9b5ac9220ff415994b193c9ce022f86',
     name: 'Utah Streams NHD',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'StreamsNHDHighRes',
+    openSgid: 'water.streams_nhd',
     layerId: 0,
   },
   'Utah Major Rivers Polygons': {
