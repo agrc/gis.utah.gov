@@ -32,6 +32,7 @@ License: [MIT](/LICENSE).
 ## Technology reference
 
 - [Astro docs](https://docs.astro.build/en/getting-started/)
+- [GitHub markdown spec](https://github.github.com/gfm/)
 - [tailwindcss docs](https://tailwindcss.com/docs)
 - [Post/Page Template creator](https://agrc.github.io/templater/) - Quickly bootstrap the frontmatter for a new post or page.
 
