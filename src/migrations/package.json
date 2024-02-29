@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "google-auth-library": "^9.6.3",
+    "google-spreadsheet": "^4.1.1",
     "gray-matter": "^4.0.3",
     "yaml": "^2.3.4"
   }
