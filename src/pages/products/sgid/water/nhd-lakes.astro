@@ -20,7 +20,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah Lakes NHD',
-  description: `National Hydrologic Dataset (NHD) lakes and other waterbodies.`,
+  description: `National Hydrologic Dataset (NHD) lakes and other water bodies.`,
   stewards: ['UGRC', 'USGS'],
   type: ProductType.POLYGON,
   category: SgidCategory.WATER,
@@ -40,7 +40,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      These data represent lake/pond features as well as other waterbodies like reservoirs, marshes, and playas. This
+      These data represent lake/pond features as well as other water bodies like reservoirs, marshes, and playas. This
       dataset is derived from the National Hydrology Database (NHD) compiled by the USGS in partnership with UGRC and
       other states' GIS programs.
     </p>
@@ -55,34 +55,31 @@ const page: IPageMetadata = {
       UGRC has modified the source NHD data to create additional functionality. Two fields have been added to this
       feature class (InUtah and IsMajor) and features have been split at the state boundary.
     </p>
-    <p>
-      <dl>
-        <h3>NHD Codes</h3>
-        <DefinitionListItem title="FCode"
-          >Can be used to classify water body features by <ExternalLink
-            href="https://www.usgs.gov/index.php/ngp-standards-and-specifications/national-hydrography-dataset-nhd-data-dictionary-feature-domains"
-            >NHD functional type.</ExternalLink
-          ></DefinitionListItem
-        >
-        <DefinitionListItem title="GNIS_Name"
-          >Waterbody name found in the <ExternalLink
-            href="https://www.usgs.gov/tools/geographic-names-information-system-gnis">GNIS</ExternalLink
-          >.</DefinitionListItem
-        >
-      </dl>
-    </p>
-    <p>
-      <dl>
-        <h3>UGRC Attributes</h3>
-        <DefinitionListItem title="IsMajor"
-          >Query/identify major lakes for coarse scale mapping and display, 1 = major, 0 = minor.</DefinitionListItem
-        >
-        <DefinitionListItem title="IsMajor"
-          >Identify/exclude lakes outside of Utah. Waterbody features that intersect the state boundary have been split
-          and attributed 1 = in Utah, 0 = outside Utah.</DefinitionListItem
-        >
-      </dl>
-    </p>
+    <h3>NHD Codes</h3>
+    <dl>
+      <DefinitionListItem title="FCode"
+        >Can be used to classify water body features by <ExternalLink
+          href="https://www.usgs.gov/index.php/ngp-standards-and-specifications/national-hydrography-dataset-nhd-data-dictionary-feature-domains"
+          >NHD functional type.</ExternalLink
+        ></DefinitionListItem
+      >
+      <DefinitionListItem title="GNIS_Name"
+        >Water body name found in the <ExternalLink
+          href="https://www.usgs.gov/tools/geographic-names-information-system-gnis">GNIS</ExternalLink
+        >.</DefinitionListItem
+      >
+    </dl>
+    <h3>UGRC Attributes</h3>
+    <dl>
+      <DefinitionListItem title="IsMajor"
+        >Query/identify major lakes for coarse scale mapping and display, <code>1 = major</code>, <code>0 = minor</code
+        >.</DefinitionListItem
+      >
+      <DefinitionListItem title="IsMajor"
+        >Identify/exclude lakes outside of Utah. Water body features that intersect the state boundary have been split
+        and attributed <code>1 = in Utah</code>, <code>0 = outside Utah</code>.</DefinitionListItem
+      >
+    </dl>
   </Fragment>
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
