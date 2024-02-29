@@ -62,10 +62,9 @@ The conference had great submissions for the Map, App, and Poster Gallery and Co
 - _Student Research Posters_: “Modeling water levels of the Great Salt Lake” by Ian Hazel, David Maack and Braeden Cook
 - _Interactive Map_: “BLM Interactive Map” by Brian Mueller
 
-<figure class="caption caption--right">
-  <img class="caption__image" src="../../images/pillar-blog/2019-06-20-2019-ugic-annual-conference-recap/ugicconferencelogo.jpg" alt="UGIC 2019 Conference Logo" loading="lazy" />
-  <figcaption class="caption__text" markdown="span" style="text-align:justify;max-width:400px;line-height:1.5">In checking out the [UGIC conference materials](https://ugic.org/ugic/ugic-conference-2019/), you may have come across the conference logo and wondered about the story behind the image. UGIC has used a Kokopelli for its conference logo for many years. Ekkehart Malotki describes the Kokopelli in his book _Kokopelli: The Making of an Icon_, saying, “Probably no other image in the entire body of Southwestern iconography has attracted as much attention as that of the fluteplayer . . . He occurs within a large geographic region of the Four Corners states.”[^1] Historically the symbol was often seen in rock art in the Southwest, and Malotki argues that “The overriding reason, however, for the Kokopelli phenomenon may be the explosive growth of interest in rock art.”[^2]</figcaption>
-</figure>
+![ugic 2019 conference logo](../../images/pillsar-blog/2019-06-20-2019-ugic-annual-conference-recap/ugicconferencelogo.jpg)
+
+<figcaption class="caption__text" markdown="span" style="text-align:justify;max-width:400px;line-height:1.5">In checking out the [UGIC conference materials](https://ugic.org/ugic/ugic-conference-2019/), you may have come across the conference logo and wondered about the story behind the image. UGIC has used a Kokopelli for its conference logo for many years. Ekkehart Malotki describes the Kokopelli in his book _Kokopelli: The Making of an Icon_, saying, “Probably no other image in the entire body of Southwestern iconography has attracted as much attention as that of the fluteplayer . . . He occurs within a large geographic region of the Four Corners states.”[^1] Historically the symbol was often seen in rock art in the Southwest, and Malotki argues that “The overriding reason, however, for the Kokopelli phenomenon may be the explosive growth of interest in rock art.”[^2]</figcaption>
 
 ## Reflecting on This Year’s Conference
 
