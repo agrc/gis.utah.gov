@@ -5,7 +5,8 @@ import { getBlogFilters, getBlogPosts } from '@utils/collections';
 const posts = await getBlogPosts();
 const tags = await getBlogFilters('tags');
 const categories = await getBlogFilters('categories');
-const pages = await Astro.glob('../**/*.astro');
+// @ts-ignore
+const pages = await Astro.glob(['./**/*.astro', '!./_partials/**/*']);
 ---
 
 <FullWidth title="Site Statistics">
