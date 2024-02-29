@@ -5,6 +5,8 @@ import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
+import BulletedList from '@components/page/BulletedList.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import { stripeSections } from '@utils/page';
 
 import { YouTube } from '@astro-community/astro-embed-youtube';
@@ -30,36 +32,36 @@ const page: IStandardPageMetadata = {
       To create a new subscription or renew an existing subscription for Nevada GPS, you'll need to provide the
       following information:
     </p>
-    <ul>
-      <li>● the name of your organization (avoid punctuation);</li>
-      <li>● a login/username;</li>
-      <li>● a password (8 characters);</li>
+    <BulletedList>
+      <li>the name of your organization (avoid punctuation);</li>
+      <li>a login/username;</li>
+      <li>a password (8 characters);</li>
       <li>
-        ● a contact name, email address (once you add in your email address, it will be associated/connected with your
+        a contact name, email address (once you add in your email address, it will be associated/connected with your
         account and can't be used again), and phone number;
       </li>
-      <li>● your physical location/address; and</li>
-      <li>● your mailing address.</li>
-    </ul>
+      <li>your physical location/address; and</li>
+      <li>your mailing address.</li>
+    </BulletedList>
     <p>
-      To pay for your subscription, visit the <a href="https://turngps-billpay.ugrc.utah.gov/"
-        >TURN GPS Bill Pay system</a
+      To pay for your subscription, visit the <ExternalLink href="https://turngps-billpay.ugrc.utah.gov/"
+        >TURN GPS Bill Pay system</ExternalLink
       > to access the online payment portal. The cost is $600 and gives you access to TURN GPS Network also. You'll need
       a credit card to process your payment.
     </p>
-    <ul>
-      <li>● Select “Register” on the navigation pane on the left-hand side of the page.</li>
+    <BulletedList>
+      <li>Select “Register” on the navigation pane on the left-hand side of the page.</li>
       <li>
-        ● Click the “New Registration” button. (Note: Both new subscriptions and renewed subscriptions for Nevada GPS
-        are considered “new” to the TURN system.)
+        Click the “New Registration” button. (Note: Both new subscriptions and renewed subscriptions for Nevada GPS are
+        considered “new” to the TURN system.)
       </li>
-      <li>● Review the Terms and Conditions, and then click “I agree” to continue.</li>
+      <li>Review the Terms and Conditions, and then click “I agree” to continue.</li>
       <li>
-        ● Fill out all the required fields, including the name of your organization, your login/username, a password for
+        Fill out all the required fields, including the name of your organization, your login/username, a password for
         your TURN GPS account, and your personal contact information.
       </li>
-      <li>● Click “Register” to create your account.</li>
-    </ul>
+      <li>Click “Register” to create your account.</li>
+    </BulletedList>
     <p>
       At this point, the system will direct you to the payment page. Make sure that you have your payment information
       readily available, as the system will automatically time out after a while, requiring you to start over with a
@@ -84,8 +86,8 @@ const page: IStandardPageMetadata = {
     <p>
       The TURN GPS Network, which serves Utah and some areas of surrounding states with 113 sensors. We are currently in
       the process of expanding this network in Utah, Idaho, and Wyoming. The TURN Network runs on the Trimble Pivot
-      Platform. You may Login using your User Name and Password. If you don't have an account yet, you can register <a
-        href="https://turngps-billpay.ugrc.utah.gov/">here</a
+      Platform. You may Login using your User Name and Password. If you don't have an account yet, you can register <ExternalLink
+        href="https://turngps-billpay.ugrc.utah.gov/">here</ExternalLink
       >. If you haven't already, you will need to create a Utah ID.
     </p>
     <p>
@@ -93,41 +95,39 @@ const page: IStandardPageMetadata = {
       and data for post processing to those that have an active subscription. Current cost is $600 for each User Login
       and is good for a full year.
     </p>
-    <ul>
-      <li><b>The Coordinate Reference Frame for this network is NAD83(2011)(EPOCH:2010.0000.)</b></li>
-      <li><b>Connections: IP address - 165.239.144.5 Port - 2101</b></li>
+    <BulletedList>
+      <li><strong>The Coordinate Reference Frame for this network is NAD83(2011)(EPOCH:2010.0000.)</strong></li>
+      <li><strong>Connections: IP address - 165.239.144.5 Port - 2101</strong></li>
       <br />
       <p>The following is a list of the new Source Table Mountpoints with a brief definition:</p>
-    </ul>
-    <ul>
+    </BulletedList>
+    <BulletedList>
       <li>
-        ● GNSS-VRS-NAD83-RTCM32 (Full GNSS network solution including GPS, Glonass, Galileo, BeiDou with RTCM32 output
+        GNSS-VRS-NAD83-RTCM32 (Full GNSS network solution including GPS, Glonass, Galileo, BeiDou with RTCM32 output
         format) (*Recommended for the majority of all users*)
       </li>
+      <li>GNSS-VRS-NAD83-CMRx (Full GNSS network solution including GPS, Glonass, Galileo with CMRx output format)</li>
+      <li>VRS-NAD83-CMRp (Full network solution including GPS, Glonass with CMRp output format)</li>
+      <li>VRS-NAD83-CMRx (Full network solution including GPS, Glonass with CMRx output format)</li>
+      <li>VRS-NAD83-RTCM31 (Full network solution including GPS, Glonass with RTCM31 output format)</li>
+      <li>VRS-NAD83-RTCM32 (Full network solution including GPS, Glonass with RTCM32 output format)</li>
       <li>
-        ● GNSS-VRS-NAD83-CMRx (Full GNSS network solution including GPS, Glonass, Galileo with CMRx output format)
-      </li>
-      <li>● VRS-NAD83-CMRp (Full network solution including GPS, Glonass with CMRp output format)</li>
-      <li>● VRS-NAD83-CMRx (Full network solution including GPS, Glonass with CMRx output format)</li>
-      <li>● VRS-NAD83-RTCM31 (Full network solution including GPS, Glonass with RTCM31 output format)</li>
-      <li>● VRS-NAD83-RTCM32 (Full network solution including GPS, Glonass with RTCM32 output format)</li>
-      <li>
-        ● MS-NAD83-CMRp (Single base solution from the closest base, determined by the system, including GPS, Glonass
-        with CMRp output format)
+        MS-NAD83-CMRp (Single base solution from the closest base, determined by the system, including GPS, Glonass with
+        CMRp output format)
       </li>
       <li>
-        ● MS-NAD83-CMRx (Single base solution from the closest base, determined by the system, including all available
+        MS-NAD83-CMRx (Single base solution from the closest base, determined by the system, including all available
         satellite constellations from that receiver with CMRx output format)
       </li>
       <li>
-        ● MS-NAD83-RTCM31(Single base solution from the closest base, determined by the system, including all available
+        MS-NAD83-RTCM31(Single base solution from the closest base, determined by the system, including all available
         satellite constellations from that receiver with RTCM31 output format)
       </li>
       <li>
-        ● MS-NAD83-RTCM32 (Single base solution from the closest base, determined by the system, including all available
+        MS-NAD83-RTCM32 (Single base solution from the closest base, determined by the system, including all available
         satellite constellations from that receiver with RTCM32 output format)
       </li>
-    </ul>
+    </BulletedList>
     <p>
       Mountpoints that begin with MS are single base line solutions with the system automatically choosing the closest
       base station.
@@ -148,17 +148,17 @@ const page: IStandardPageMetadata = {
     </p>
     <h4>Connections from Source Table</h4>
     <p>For Trimble units we have three different connections:</p>
-    <ul>
-      <li>● VRS_CMR works older Trimble unit</li>
-      <li>● VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware</li>
-      <li>● VRS_CMRx works with the newest up to date Trimble units</li>
-    </ul>
+    <BulletedList>
+      <li>VRS_CMR works older Trimble unit</li>
+      <li>VRS_CMRp works with Trimble units that are newer but may not have the latest updates to the firmware</li>
+      <li>VRS_CMRx works with the newest up to date Trimble units</li>
+    </BulletedList>
     <p>For non-Trimble units we have:</p>
-    <ul>
-      <li>● VRS_RTCM23 works older non-Trimble unit</li>
-      <li>● VRS_RTCM31 works with non-Trimble units</li>
-      <li>● VRS_RTCM3.2 works with non-Trimble units, gives a full GNSS solution (all available satellites)</li>
-    </ul>
+    <BulletedList>
+      <li>VRS_RTCM23 works older non-Trimble unit</li>
+      <li>VRS_RTCM31 works with non-Trimble units</li>
+      <li>VRS_RTCM3.2 works with non-Trimble units, gives a full GNSS solution (all available satellites)</li>
+    </BulletedList>
     <p>
       MS_CMR, MS_CMRP, MS_RTCM3.2 these are for connecting to single base when you are on the edge of the network or not
       getting a strong network solution. System will automatically find the closest station and connect you.
