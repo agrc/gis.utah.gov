@@ -9,9 +9,9 @@ published: false
 category: Uncategorized
 ---
 
-Esri is now providing a tool to create an ArcSDE Connection File wherever you would like on your file system. The tool is located in the standard toolbox under Data Management -&gt; Workspace -&gt; Create ArcSDE Connection File.  Here's a look at where it's located, and what it looks like when filled out:
+Esri is now providing a tool to create an ArcSDE Connection File wherever you would like on your file system. The tool is located in the standard toolbox under Data Management -&gt; Workspace -&gt; Create ArcSDE Connection File.  Here's a look at where it's located, and what it looks like when filled out:
 
-This tool is only available to users running a Standard (ArcEditor) or Advanced (ArcInfo) license level.  Users of a Basic (ArcView) license will need to download the connection file, available in a link below.
+This tool is only available to users running a Standard (ArcEditor) or Advanced (ArcInfo) license level.  Users of a Basic (ArcView) license will need to download the connection file, available in a link below.
 
 
 You can save the connection file anywhere you'd like, but if you want to see the connection in the `Database Connections` folder in ArcGIS Desktop, you'll need to save it to this location: `C:\Users\[Your User Name]\AppData\Roaming\ESRI\Desktop[version]\ArcCatalog`

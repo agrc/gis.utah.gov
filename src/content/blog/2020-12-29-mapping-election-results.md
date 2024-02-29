@@ -48,7 +48,7 @@ You can explore the maps from this post in the accompanying [interactive web map
 
 I encourage you to apply these techniques when mapping other population-based data such as demographic, economic, or housing data.
 
-Let's continue the conversation on [Twitter](https://twitter.com/bunce_greg) or email.
+Let's continue the conversation on [Twitter](https://twitter.com/bunce_greg) or email.
 
 ### Methodology
 
