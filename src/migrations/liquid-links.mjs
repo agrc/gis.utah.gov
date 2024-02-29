@@ -91,9 +91,10 @@ const parsePagesForLinks = async (lookup) => {
     'public',
     'search',
     'components',
-    'data',
+    'src/data',
     'styles',
     'utilities',
+    'data/sgid-index',
   ];
   const includeFiles = ['.md', '.html', '.astro', '.mdx'];
 

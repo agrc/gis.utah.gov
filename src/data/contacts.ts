@@ -7,7 +7,7 @@ export const contacts: Contacts = {
     email: 'ugrc@utah.gov',
     phone: '801-538-3665',
   },
-  agrc_director: {
+  ugrc_director: {
     name: 'Matt Peters',
     email: 'mpeters@utah.gov',
     phone: '385-202-3297',

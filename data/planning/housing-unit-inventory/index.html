@@ -29,10 +29,10 @@ abstract="The Housing Unit Inventory (HUI) is a derivative dataset that, per <a 
   <div class="grid__col grid__col--12-of-12 package-content">
     <img class="inline-text-left outline" src="{% link images/utah-housing-unit-inventory-small.png %}"
       loading="lazy" />
-    <p>WFRC, MAG, and UGRC are creating this dataset from the <a href="{% link data/cadastre/parcels/index.html %}#UtahLIRParcels">Land Information Record (LIR)</a> parcel datasets published by UGRC. The LIR datasets are made possible by the county assessors voluntary sharing their annual tax assessment data. The tax roll data are frozen as of midnight Jan 1st for the specified year, finalized in late May, and typically loaded into the SGID later that summer.</p>
+    <p>WFRC, MAG, and UGRC are creating this dataset from the <a href="/products/sgid/cadastre/parcels">Land Information Record (LIR)</a> parcel datasets published by UGRC. The LIR datasets are made possible by the county assessors voluntary sharing their annual tax assessment data. The tax roll data are frozen as of midnight Jan 1st for the specified year, finalized in late May, and typically loaded into the SGID later that summer.</p>
     <p>WFRC, the metropolitan planning organization for the urban portions of Salt Lake County, Davis County, and Weber county, prepared the initial 2020 Housing Inventory dataset for their counties and defined the inventory process laid out below. MAG will be providing data for their counties, and UGRC is working with other counties to create inventories as requested.</p>
     <ul>
-      <li>The inventory applies apartment unit counts to multi-family rental properties that do not have individually-owned and platted units (traditional apartment buildings, quadplexes, triplexes, mixed use buildings etc). These unit counts come from the <a href="{% link data/address/index.html %}">address point</a> data layer, with some counts being assigned manually using information from recent aerial photography and other sources.</li>
+      <li>The inventory applies apartment unit counts to multi-family rental properties that do not have individually-owned and platted units (traditional apartment buildings, quadplexes, triplexes, mixed use buildings etc). These unit counts come from the <a href="/products/sgid/address">address point</a> data layer, with some counts being assigned manually using information from recent aerial photography and other sources.</li>
       <li>For cases where individual condos, townhomes, and single family homes have associated common areas, the inventory aggregates and combines the geometries and attributes of the individual units and common areas into a single composite parcel feature called an "owned unit grouping". This sums, averages, and counts the appropriate attributes of the contributing parcels to better characterize the density of these residential land uses (dwelling units per acre or DUA). </li>
       <li>Every county uses a slightly different set of designations when defining residential parcel types. The inventory attempts to standardize all the different classifications into the following categories:
         <ul>
@@ -70,7 +70,7 @@ abstract="The Housing Unit Inventory (HUI) is a derivative dataset that, per <a 
       <li><code>TOT_VALUE</code>: Total market value</li>
       <li><code>APX_BLT_YR</code>: Approximate year built</li>
       <li><code>BLT_DECADE</code>: The decade the structure(s) were built</li>
-      <li><code>CITY</code>: The features' city based on the SGID's <a href="{% link data/boundaries/citycountystate/index.html %}">municipal boundaries</a> data</li>
+      <li><code>CITY</code>: The features' city based on the SGID's <a href="/products/sgid/boundaries/municipal">municipal boundaries</a> data</li>
       <li><code>COUNTY</code>: The features' county</li>
       <li><code>SUBCOUNTY</code>: If provided in the analysis, this groups the features into predefined areas for later grouping and analysis</li>
     </ul>
