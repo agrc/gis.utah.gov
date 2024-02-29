@@ -29,7 +29,7 @@ let blogPostsCache: Record<'all' | 'published', DecoratedBlogEntry[]> = {
 };
 export async function getBlogPosts(all = false): Promise<DecoratedBlogEntry[]> {
   const cacheKey = all ? 'all' : 'published';
-  if (!import.meta.env.DEV && blogPostsCache[cacheKey] !== null) {
+  if (import.meta.env.DEV && blogPostsCache[cacheKey] !== null) {
     return blogPostsCache[cacheKey];
   }
 
