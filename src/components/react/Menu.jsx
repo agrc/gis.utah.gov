@@ -132,7 +132,10 @@ export const SmallMenu = ({ children, currentUri }) => (
     <div className="items-between flex h-12 shrink-0 bg-zinc-100 lg:hidden dark:bg-secondary">
       <div className="flex flex-1 items-center justify-between">
         <Dialog.Trigger asChild className="outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary">
-          <button className="ml-2 rounded-full p-1 outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary">
+          <button
+            className="ml-2 rounded-full p-1 outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary"
+            aria-label="open the main menu"
+          >
             <HamburgerMenuIcon className="size-6 text-zinc-800 focus:outline-none dark:text-zinc-50" />
           </button>
         </Dialog.Trigger>
