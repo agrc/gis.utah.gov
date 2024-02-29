@@ -2611,7 +2611,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Trails and Pathways': {
     itemId: '3080c0a2859a4d23a279e17e17c703c8',
     name: 'Utah Trails and Pathways',
-    featureServiceId: "TrailsAndPathways",
+    featureServiceId: 'TrailsAndPathways',
     openSgid: 'recreation.trails_and_pathways',
     layerId: 0,
   },

@@ -11,6 +11,7 @@ tags:
   - 'political'
 category: 'Uncategorized'
 ---
+
 import Contacts from '@components/page/Contacts.astro';
 
 Utah's [statewide election districts](https://opendata.gis.utah.gov/search?q=election) have been released and many local governments are now in the process of redrawing their precincts to accommodate the changes and manage their upcoming elections. To help facilitate these "precincting" efforts, UGRC has created an ArcGIS Pro tool that counts up the number of actively registered voters within a given polygon layer. The primary use case for the tool is to help counties adjust precinct boundaries to optimize the number of voters within their precincts. The tool can be run iteratively as precinct boundaries are adjusted to update voter counts and guide further adjustments. The Python Script Tool resides within an ArcGIS Pro Toolbox that can be installed and run locally from your desktop computer.
@@ -27,4 +28,4 @@ The ArcGIS Pro Toolbox can be [downloaded](https://drive.google.com/file/d/1i9OZ
 
 If you're interested in using the voter counts tool to help with redrawing your precincts, please reach out to us and we can help set you up.
 
-<Contacts subject={frontmatter.title} contactKey='voter_count_tool' />
+<Contacts subject={frontmatter.title} contactKey="voter_count_tool" />

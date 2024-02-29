@@ -19,16 +19,13 @@ Seven months ago (April 2020), the Utah Department of Health approached us to cr
 
 ![The usage graph seemed to wane after two months](../../images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-first-months.png)
 
-
 For the first few weeks of its existence, we watched in concern as the initial usage wave died down and it seemed like the map wasn't being used. Normally, I'd be worrying about my work being appreciated, but this was a lot cartographically closer to a life-or-death subject than I'd ever come. We made this map to help Utah survive and recover, and if the map wasn't being used it meant we weren't fulfilling our duty to the people of Utah.
 
 ![The usage graph mirrors the surge in cases over the summer](../../images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-summer.png)
 
-
 We saw a rise in usage over the summer as Utah experienced a surge in cases after Memorial Day. I began to feel like the map was living up to its promise. People were getting tested, and because of this testing they would know if they needed to take individual steps to stop the spread. We continued to add sites as new providers came online and make modifications to existing sites. Many sites shifted their hours towards the morning to avoid the summer heat.
 
 ![The usage in fall makes all earlier usage seem insignificant](../../images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-surge.png)
-
 
 However, as fall progressed we faced the grim reality that we're not out of the woods yet. The usage rose again alongside active cases. The last three weeks in particular have seen massive jumps. The summer usage bump that used to seem so significant almost disappears now as the usage climbs ever upward. The largest single day swing came after the Governor announced new plans to try to stop the spread on November 6th.
 

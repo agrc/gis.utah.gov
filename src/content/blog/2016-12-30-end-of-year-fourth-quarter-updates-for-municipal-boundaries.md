@@ -30,7 +30,7 @@ website](https://municert.utah.gov/2016-certifications).
 The following are the changes and annexations since Sept. 9, 2016 listed by County and City:
 
 | County    | City                    | Number of Changes |
-|-----------|-------------------------|-------------------|
+| --------- | ----------------------- | ----------------- |
 | Box Elder | Garland                 | 1                 |
 |           | Willard (Dissolve)      | 1                 |
 | Cache     | Hyrum                   | 1                 |

@@ -1,5 +1,5 @@
 ---
-title: "Upcoming: Vector Tile Base Maps"
+title: 'Upcoming: Vector Tile Base Maps'
 published: false
 author:
   display_name: Zach Beck

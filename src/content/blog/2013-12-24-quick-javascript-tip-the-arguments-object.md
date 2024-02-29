@@ -5,7 +5,7 @@ author:
 tags:
   - javascript
 date: 2013-12-24 06:55:10 -0700
-title: "Quick JavaScript Tip: The Arguments Object"
+title: 'Quick JavaScript Tip: The Arguments Object'
 category: Developer
 ---
 

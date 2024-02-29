@@ -12,7 +12,7 @@ tags:
   - sanborn
 published: false
 date: 2014-04-25 15:41:15 -0600
-title: "Mapping Spotlight: Salt Lake City Geoportal"
+title: 'Mapping Spotlight: Salt Lake City Geoportal'
 category: Uncategorized
 ---
 

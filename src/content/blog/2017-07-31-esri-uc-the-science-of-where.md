@@ -24,7 +24,6 @@ Along with ArcGIS Online, ArcGIS Pro was the main theme at the UC and seems pois
 7. 3D navigation tool
 8. Sharing as a Web Map
 9. Dark Theme
-   
 
 At UGRC we are most excited about #6 which means we’ll all have a Catalog pane with ‘favorites’ to allow established database, server, and folder connections to persist between Pro projects, both new and old. The auto-georeferencing tool, charting tools and layout enhancements will also be beneficial. Some of us are also enjoying the ‘dark theme’ UI in Pro after years of working without such an option.
 

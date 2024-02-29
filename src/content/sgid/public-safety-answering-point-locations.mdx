@@ -33,12 +33,15 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
   <Metadata slot="metadata" {...frontmatter} />
 
 {' '}
+
 <ApplicationLink slot="application-link" href={frontmatter.application} />
 
 {' '}
+
 <HubDownloads slot="downloads" {...frontmatter.hub} />
 
 {' '}
+
 <Fragment slot="summary">
   An address point represents a geographic location that has been assigned a US Postal Service (USPS) address by the
   local address authority (i.e., county or municipality) but does not necessarily receive mail. This data layer contains
@@ -98,6 +101,7 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
   </UpdateHistory>
 
 {' '}
+
 <Section title={`More ${frontmatter.title} resources`} slot="more-resources" stripe titlePosition="center">
   <GridForMoreResources>
     <CardWithPopularLink

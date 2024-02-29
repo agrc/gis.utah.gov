@@ -15,7 +15,6 @@ category: SGID Blog
 
 ![map with marker](../../images/pillar-blog/2015-02-12-authoritative-utah-geocoding-results/authoritative_geocoding.png)
 
-
 ### Geocoding Assurance _or_ Why you should trust the results
 
 The UGRC [web api](https://api.mapserv.utah.gov) is a great resource for deriving information from the [SGID](/products/sgid). Geocoding an address is one of the more popular and useful free services. But it is important that users have confidence in the match results returned from the geocoding api.

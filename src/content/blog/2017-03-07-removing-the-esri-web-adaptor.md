@@ -16,8 +16,6 @@ ArcGIS Server runs an http server exposed over the private port 6080. The web ad
 
 ### When to install the web adaptor
 
-
-
 ![Web adaptor flow chart](../../images/pillar-blog/2017-03-07-removing-the-esri-web-adaptor/web-adaptor-flow.png)
 
 As you can tell from this decision chart, you are _required_ to install and use the web adaptor when you need web tier authentication with ArcGIS Server. Otherwise, you _should_ skip the install and use something more tuned for the job.
@@ -29,8 +27,6 @@ If your organization has _comparable request forwarding and security technology_
 As a developer, it is beneficial to mimic your deployment scenario to avoid the "Works on my machine" problem. Although, it is not always possible to match identically. I chose to use IIS's **Application Request Routing** and **URL Rewrite** to remove the dependency of the web adaptor on my development machines.
 
 ### Replacing the web adaptor
-
-
 
 To replace the web adaptor on an IIS machine it is first necessary to install the [Web Platform Installer](https://www.iis.net/downloads/microsoft/web-platform-installer). Using the web platform installer, search and install the **Application Request Routing** and **URL Rewrite** modules for IIS.
 
