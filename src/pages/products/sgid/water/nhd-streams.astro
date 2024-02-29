@@ -10,19 +10,19 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 import DefinitionListItem from '@components/page/DefinitionListItem.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Lakes NHD',
-  description: `National Hydrography Dataset (NHD) lakes and other water bodies.`,
+  title: 'Utah Streams NHD',
+  description: `National Hydrography Dataset (NHD) rivers, streams and other water courses.`,
   stewards: ['UGRC', 'USGS'],
-  type: ProductType.POLYGON,
+  type: ProductType.POLYLINE,
   category: SgidCategory.WATER,
 };
 
@@ -40,9 +40,9 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      These data represent lake/pond features as well as other water bodies like reservoirs, marshes, and playas. This
-      dataset is derived from the National Hydrography Database (NHD) compiled by the USGS in partnership with UGRC and
-      other states' GIS programs.
+      These data represent river/stream features as well as other water courses like canals, and ephemeral/intermittent
+      streams. This dataset is derived from the National Hydrography Database (NHD) compiled by the USGS in partnership
+      with UGRC and other states' GIS programs.
     </p>
   </Fragment>
 
@@ -52,8 +52,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      UGRC has modified the source NHD data to create additional functionality. Two fields have been added to this
-      feature class (InUtah and IsMajor) and features have been split at the state boundary.
+      UGRC has modified the source NHD data to create additional functionality. Three fields have been added to this
+      feature class (InUtah, IsMajor, and Submerged) and features have been split at the state boundary.
     </p>
     <h3>NHD Codes</h3>
     <dl>
@@ -64,7 +64,7 @@ const page: IPageMetadata = {
         ></DefinitionListItem
       >
       <DefinitionListItem title="GNIS_Name"
-        >Water body name found in the <ExternalLink
+        >Water course name found in the <ExternalLink
           href="https://www.usgs.gov/tools/geographic-names-information-system-gnis">GNIS</ExternalLink
         >.</DefinitionListItem
       >
@@ -72,12 +72,17 @@ const page: IPageMetadata = {
     <h3>UGRC Attributes</h3>
     <dl>
       <DefinitionListItem title="IsMajor"
-        >Query/identify major lakes for coarse scale mapping and display, <code>1 = major</code>, <code>0 = minor</code
+        >Query/identify major rivers and streams for coarse scale mapping and display, <code>1 = major</code>, <code
+          >0 = minor</code
         >.</DefinitionListItem
       >
       <DefinitionListItem title="InUtah"
-        >Identify/exclude lakes outside of Utah. Water body features that intersect the state boundary have been split
-        and attributed <code>1 = in Utah</code>, <code>0 = outside Utah</code>.</DefinitionListItem
+        >Identify/exclude rivers and streams outside of Utah. Water course features that intersect the state boundary
+        have been split and attributed <code>1 = in Utah</code>, <code>0 = outside Utah</code>.</DefinitionListItem
+      >
+      <DefinitionListItem title="Submerged"
+        >Can be used to exclude the hydrologic network features that have been added across water bodies to the NHD
+        dataset for linear water flow modeling <code>1 = submerged</code>, <code>0 = surface</code>.</DefinitionListItem
       >
     </dl>
   </Fragment>
@@ -98,7 +103,7 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Rivers" href="/products/sgid/water/nhd-streams">NHD Streams/Rivers</CardWithSmallLink>
+      <CardWithSmallLink title="Lakes" href="/products/sgid/water/nhd-lakes">NHD Lakes</CardWithSmallLink>
       <CardWithSmallLink title="Lake Bonneville" href="/products/sgid/water/historic-lake-bonneville"
         >Historic Lake Bonneville coverage</CardWithSmallLink
       >
