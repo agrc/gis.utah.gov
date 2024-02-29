@@ -651,8 +651,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Enterprise Zones': {
     itemId: 'dc4539cb9d1548e1a1f31cf5b63e3ad5',
     name: 'Utah Enterprise Zones',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'EnterpriseZones',
+    openSgid: 'economy.enterprise_zones',
     layerId: 0,
   },
   'Utah USGS 3DEP 1K Grid': {
