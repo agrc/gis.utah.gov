@@ -33,8 +33,6 @@ const page: IPageMetadata = {
     ...dataPages[metadata.title],
   },
 
-  // links are optional and only used when a product has download type of links that aren't ArcGIS Hub
-  // delete this if it is unused
   links: [
     {
       title: 'The link title',
@@ -78,8 +76,12 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Item 1" href="https://gis.utah.gov">Item 1 description.</CardWithPopularLink>
-      <CardWithPopularLink title="Item 2" href="/products/sgid/address/">Item 2 description.</CardWithPopularLink>
+      <CardWithPopularLink title="Item 1" href="https://municert.utah.gov/"
+        >Lieutenant Governor Municipal Certifications website</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Item 2" href="/products/sgid/boundaries/utah-state/"
+        >Utah State Boundary</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 

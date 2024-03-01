@@ -27,7 +27,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`November 2020`, `July 2014`, `July 2012`, `November 2011`, `March 2011`],
+  updateHistory: [`July 2014`, `November 2011`, `March 2011`],
 
   hub: {
     ...dataPages[metadata.title],
@@ -78,8 +78,12 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Item 1" href="https://gis.utah.gov">Item 1 description.</CardWithPopularLink>
-      <CardWithPopularLink title="Item 2" href="/products/sgid/address/">Item 2 description.</CardWithPopularLink>
+      <CardWithPopularLink title="Item 1" href="/products/sgid/boundaries/county/"
+        >County Boundaries</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Item 2" href="/products/sgid/boundaries/county/"
+        >Item 2 description.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
