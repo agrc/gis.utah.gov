@@ -4,6 +4,13 @@ interface DownloadMetadata {
   [key: string]: IHubDownload;
 }
 export const dataPages: DownloadMetadata = {
+  'Utah Example Data': {
+    itemId: '45aef8e1d4dd412ab538a7ec21eff4c7',
+    name: 'Utah Example Data',
+    featureServiceId: 'ExampleData',
+    openSgid: 'example.data',
+    layerId: 0,
+  },
   'Utah Wildfire Perimeters': {
     itemId: '45aef8e1d4dd412ab538a7ec21eff4c7',
     name: 'Utah Wildfire Perimeters',
