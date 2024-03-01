@@ -9,7 +9,7 @@ import { createIdFromTitle } from '@utils/page';
 const { links } = Astro.props;
 ---
 
-<div class="my-6 flex flex-col items-center gap-2 border-b border-black/30 pb-6 dark:border-white/30">
+<div class="my-6 flex flex-col items-center gap-2">
   <p class="text-lg dark:text-white">Quick Links</p>
   <ul class="flex w-full flex-wrap justify-center gap-x-8 gap-y-2 whitespace-pre">
     {
@@ -24,4 +24,5 @@ const { links } = Astro.props;
       })
     }
   </ul>
+  <div class="w-full max-w-5xl border-b border-black/30 pb-6 dark:border-white/30"></div>
 </div>
