@@ -25,7 +25,8 @@ const contacts: Contact[] = Array.isArray(allContacts[contactKey])
   contacts.map((contact: Contact, index: number) => {
     return inline ? (
       <>
-        {contact.name} from {contact.agency} at
+        {contact.name}
+        {contact.agency ? <> from {contact.agency}</> : null} at
         <a href={`mailto:${contact.email}?subject=${encodedSubject}`}>{contact.email}</a>
         {contact.phone ? (
           <>

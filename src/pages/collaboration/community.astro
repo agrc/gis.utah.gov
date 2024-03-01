@@ -11,6 +11,7 @@ import nsgicLogo from '@images/collaboration/NSGIC_logo.png';
 import uacLogo from '@images/collaboration/UAC_logo.png';
 import ucaLogo from '@images/collaboration/UCA_logo.png';
 import ugicLogo from '@images/collaboration/UGIC_logo.png';
+import uhsLogo from '@images/collaboration/UHS_logo.png';
 import communityPhoto from '@images/collaboration/community.svg';
 import slackLogo from '@images/collaboration/slack.svg';
 
@@ -43,6 +44,11 @@ const page: IStandardPageMetadata = {
     {
       title: 'Utah Association of Counties (UAC)',
       actionUrl: 'https://www.uacnet.org/',
+      actionText: 'Learn more',
+    },
+    {
+      title: 'Utah Committee on Geographic Names',
+      actionUrl: 'https://history.utah.gov/geographic-names-committee/',
       actionText: 'Learn more',
     },
     {
@@ -134,12 +140,24 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[6]}>
+    <Image slot="image" src={uhsLogo} alt="Utah Historical Society logo" class="w-full max-w-[400px] rounded-2xl" />
+    <p>
+      Organized within the Department of Cultural and Community Engagement's Utah Historical Society, The Utah Committee
+      on Geographic Names is tasked with reviewing and providing recommendations regarding geographic name proposals in
+      Utah. UGRC staff have been part of the committee for many years to help decide new, and changes to, geographic
+      names in Utah.
+    </p>
+  </Section>
+  <Section {...page.section[7]}>
     <Image
       slot="image"
       src={ucaLogo}
       alt="Utah Communications Authority logo"
       class="w-full max-w-[400px] rounded-2xl"
     />
-    <p>UCA supports public safety communication for Utah’s first responders and citizens. (more to come...)</p>
+    <p>
+      UCA supports public safety communication for Utah’s first responders and citizens. UGRC provides GIS data, and
+      acts as an advisor for decision-making about GIS and geospatial topics related to NG911 efforts.
+    </p>
   </Section>
 </Layout>
