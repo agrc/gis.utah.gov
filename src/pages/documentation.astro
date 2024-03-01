@@ -13,11 +13,11 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 
 import { Image } from 'astro:assets';
 
+import policyPhoto from '@images/documentation/policy.svg';
 import dataSharingPhoto from '@images/sgid/data-sharing-agreement.svg';
 import licensePhoto from '@images/sgid/license-disclaimer.svg';
 import openSgid from '@images/sgid/open-sgid.svg';
 import sgidIndex from '@images/sgid/sgid-index.svg';
-import sgidOpenData from '@images/sgid/sgid-opendata.svg';
 ---
 
 <Layout title="Documentation">
@@ -30,41 +30,40 @@ import sgidOpenData from '@images/sgid/sgid-opendata.svg';
           developed, aggregated, or acquired by the State. The documentation explains the different facets of the SGID, how
           to connect to them, and how to include your data in the SGID.
         </CardWithTopImage>
-        <CardWithTopImage title="Discover Base map and Imagery Services" actionUrl="/documentation/discover">
+        <CardWithTopImage title="Discover base map and imagery services" actionUrl="/documentation/discover">
           <Image slot="image" src={openSgid} alt="a person connected to a database" class="block h-44" />
-          Our Discover services provide streaming access to our base maps and aerial imagery. The documentation exlains how
-          to sign up, connect, use the services, and troubleshoot common issues.
+          Our Discover services provide streaming access to our base maps and aerial imagery. The documentation explains
+          how to sign up, connect, use the services, and troubleshoot common issues.
         </CardWithTopImage>
-        <CardWithTopImage title="UGRC API" actionText="Learn more" actionUrl="https://api.mapserv.utah.gov/">
+        <CardWithTopImage title="UGRC policies" actionText="Learn more" actionUrl="/documentation/policy">
           <Image
             slot="image"
-            src={sgidOpenData}
-            alt="people connected to a network through geography"
+            src={policyPhoto}
+            alt="a person agreeing to terms and conditions on a tablet"
             class="block h-44"
           />
-          blerg blerg blerg
+          The rules and guidelines that UGRC follows to ensure that our data and services are consistent, repeatable, and
+          available to the public.
         </CardWithTopImage>
       </GridForPillars>
     </Section>
   </Fragment>
 
   <Fragment slot="popular-resources">
-    <Section title="Popular Documentation Resources" titlePosition="center">
+    <Section title="Popular Resources" titlePosition="center">
       <GridForPopularResources>
-        <CardWithPopularLink title="Policies" href="/documentation/policy">UGRC Policies</CardWithPopularLink>
         <CardWithPopularLink title="TURN GPS" href="/documentation/turn">
           Sign up and access the TURN GPS service
         </CardWithPopularLink>
-        <CardWithPopularLink title="Porter" href="/products/discover/raster">Learn about porter?</CardWithPopularLink>
-        <CardWithPopularLink title="API Client" href="http://api.mapserv.utah.gov">
-          API Client stuff
-        </CardWithPopularLink>
+        <CardWithPopularLink title="Porter" href="https://github.com/agrc/porter"
+          >The GitHub repository where UGRC tracks all additions and removals from the SGID.</CardWithPopularLink
+        >
       </GridForPopularResources>
     </Section>
   </Fragment>
 
   <Fragment slot="more-resources">
-    <Section title="More Documentation Resources" stripe titlePosition="center">
+    <Section title="More Resources" stripe titlePosition="center">
       <GridForMoreResources>
         <CardWithSideImage title="Masquerade" actionUrl="/documentation/masquerade">
           <Image slot="image" src={licensePhoto} alt="man in front of warning sign" class="self-center" />
