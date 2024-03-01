@@ -17,6 +17,7 @@ import Metadata from '@components/data/Metadata.astro';
 import { getGithubReleases } from '@utils/github';
 
 import { YouTube } from '@astro-community/astro-embed-youtube';
+import Alert from '@components/page/Alert.astro';
 
 const dateFormatter = Intl.DateTimeFormat('en-US', { dateStyle: 'full' });
 
@@ -57,7 +58,13 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Section title="Get the app" titlePosition="center" slot="downloads">
-    <DirectDownloads title="Install links" links={page.links!} />
+    <div class="flex justify-between gap-10">
+      <DirectDownloads title="Install links" links={page.links!} />
+      <Alert title="Tip"
+        >This application is evergreen - meaning it auto updates to the newest version. There is no need to download new
+        versions.</Alert
+      >
+    </div>
   </Section>
 
   <Fragment slot="summary">
