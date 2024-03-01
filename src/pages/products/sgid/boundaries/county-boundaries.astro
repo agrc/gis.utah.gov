@@ -5,14 +5,12 @@ import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
 import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
-import Disclaimer from '@components/data/Disclaimer.astro';
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -20,8 +18,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah County Boundaries',
-  description: `This authoritative dataset represents the 29 Utah county boundaries mapped to their legal description y.`,
+  title: 'County Boundaries',
+  description: `County Boundaries is a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification.`,
   stewards: ['UGRC', `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
@@ -29,12 +27,21 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`Data is current through Nov. 15, 2021.`],
+  updateHistory: [`November 2020`, `July 2014`, `July 2012`, `November 2011`, `March 2011`],
 
   hub: {
     ...dataPages[metadata.title],
   },
 
+  // links are optional and only used when a product has download type of links that aren't ArcGIS Hub
+  // delete this if it is unused
+  links: [
+    {
+      title: 'The link title',
+      url: 'https://link-to-the-resource.com',
+    },
+  ],
+};
 ---
 
 <Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
@@ -42,43 +49,32 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      County Boundaries is a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification.
+      Utah State Boundary is maintained by UGRC with the help of many state, county, and local entities. Changes and
+      updates are through certification by the Lt. Governor's Office sent in by City and County Recorders offices. All
+      features are adjusted to the current Geographic Coordinate Database (GCDB) points.
     </p>
   </Fragment>
 
-  <!-- the title for hub data is typically `Use the data` but it can be anything
-  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
     <HubDownloads {...page.hub} />
-    <!-- links use the direct downloads component. Only keep one element and delete the unused. -->
     <DirectDownloads title="A title describing the links. e.g. Install links" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
-    <p>A description of the product. This is the extra information that didn't fit into the summary.</p>
     <p>
-      Schema definitions, and deeper dive things that only a few will read. You use standard html in the summary slot.
+      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data were
+      adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but,
+      rather a set of boundaries used for the administrative purposes that conforms to logical & administrative rules.
     </p>
     <p>
-      Use the <ExternalLink href="https://gis.utah.gov">ExternalLink</ExternalLink> component for external links. Use <a
-        href="/products/sgid/address">relative links</a
-      > for internal links.
-    </p>
-    <p>
-      Styling is done with <ExternalLink href="https://tailwindcss.com/docs/utility-first">tailwindcss</ExternalLink>.
-      But I can help take care of any extra formatting you are missing.
+      In addition to the boundary of the state of Utah this dataset contains another larger boundary around the state
+      that can be used for cartographic purposes to mask other data layers that extend past the boundary of the state.
+      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The state
+      boundary dataset is is maintained by UGRC in partnership with state and local government.
     </p>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
-
-  <Disclaimer slot="disclaimer">
-    <p>
-      If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
-      element
-    </p>
-  </Disclaimer>
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
