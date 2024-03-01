@@ -4,7 +4,6 @@ import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
 import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
-import DirectDownloads from '@components/data/DirectDownloads.astro';
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
@@ -57,7 +56,6 @@ const page: IPageMetadata = {
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
     <HubDownloads {...page.hub} />
-    <DirectDownloads title="A title describing the links. e.g. Install links" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
@@ -78,11 +76,12 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Item 1" href="/products/sgid/boundaries/county/"
-        >County Boundaries</CardWithPopularLink
-      >
-      <CardWithPopularLink title="Item 2" href="/products/sgid/boundaries/county/"
-        >Item 2 description.</CardWithPopularLink
+      <CardWithPopularLink title="County Boundaries" href="/products/sgid/boundaries/county/"
+        >County Boundaries is a multi-purpose statewide dataset of county boundaries for cartography and approximate
+        boundary identification.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="Municipal Certifications & County Boundaries" href="https://municert.utah.gov/"
+        >Lieutenant Governor Municipal Certifications website.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>

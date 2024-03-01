@@ -4,7 +4,6 @@ import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
 import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
-import DirectDownloads from '@components/data/DirectDownloads.astro';
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
@@ -18,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'County Boundaries',
-  description: `County Boundaries is a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification.`,
+  title: 'Utah County Boundaries',
+  description: `County boundaries are a multi-purpose statewide dataset of county boundaries for cartography and approximate boundary identification`,
   stewards: ['UGRC', `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
@@ -47,27 +46,23 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Utah State Boundary is maintained by UGRC with the help of many state, county, and local entities. Changes and
-      updates are through certification by the Lt. Governor's Office sent in by City and County Recorders offices. All
-      features are adjusted to the current Geographic Coordinate Database (GCDB) points.
+      County Boundaries are maintained by UGRC with the help of many state, county, and local entities. Changes and
+      updates are through certification by the Lt. Governor's Office sent in by City and County Recorders offices.
     </p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
     <HubDownloads {...page.hub} />
-    <DirectDownloads title="A title describing the links. e.g. Install links" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
     <p>
-      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data were
+      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was
       adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but,
       rather a set of boundaries used for the administrative purposes that conforms to logical & administrative rules.
     </p>
     <p>
-      In addition to the boundary of the state of Utah this dataset contains another larger boundary around the state
-      that can be used for cartographic purposes to mask other data layers that extend past the boundary of the state.
-      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The state
+      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The county
       boundary dataset is is maintained by UGRC in partnership with state and local government.
     </p>
   </Fragment>
@@ -76,11 +71,11 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Item 1" href="https://municert.utah.gov/"
-        >Lieutenant Governor Municipal Certifications website</CardWithPopularLink
-      >
-      <CardWithPopularLink title="Item 2" href="/products/sgid/boundaries/utah-state/"
-        >Utah State Boundary</CardWithPopularLink
+      <CardWithPopularLink title="Utah State Boundary" href="/products/sgid/boundaries/utah-state/"
+        >Utah State Boundary is a dataset of the Utah state boundary.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="Municipal Certifications & County Boundaries" href="https://municert.utah.gov/"
+        >Lieutenant Governor Municipal Certifications website.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
