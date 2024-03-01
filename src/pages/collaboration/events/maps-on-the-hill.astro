@@ -1,0 +1,182 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import ExternalLink from '@components/page/ExternalLink.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import galleryPhoto from '@images/collaboration/gallery.svg';
+import moth2012Photo from '@images/collaboration/moth/moth2012.png';
+import moth2013Photo from '@images/collaboration/moth/moth2013.png';
+import moth2014Photo from '@images/collaboration/moth/moth2014.png';
+import moth2015Photo from '@images/collaboration/moth/moth2015.png';
+import moth2016Photo from '@images/collaboration/moth/moth2016.png';
+import moth2017Photo from '@images/collaboration/moth/moth2017.png';
+import moth2018Photo from '@images/collaboration/moth/moth2018.png';
+import moth2019Photo from '@images/collaboration/moth/moth2019.png';
+import moth2020Photo from '@images/collaboration/moth/moth2020.png';
+import moth2022Photo from '@images/collaboration/moth/moth2022.jpg';
+import moth2023Photo from '@images/collaboration/moth/moth2023.jpg';
+
+import mapBook2012 from '@downloads/pillar-collaboration/moth/2012-Maps-on-the-Hill-book.pdf?url';
+import mapBook2013 from '@downloads/pillar-collaboration/moth/2013-Maps-on-the-Hill-book.pdf?url';
+import mapBook2014 from '@downloads/pillar-collaboration/moth/2014-Maps-on-the-Hill-book.pdf?url';
+import mapBook2015 from '@downloads/pillar-collaboration/moth/2015-Maps-on-the-Hill-book.pdf?url';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Maps on the Hill',
+  pillar: 'Collaboration',
+  section: stripeSections([
+    {},
+    {
+      title: 'Past events',
+    },
+  ]),
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <Section {...page.section[0]}>
+    <Image
+      slot="image"
+      src={galleryPhoto}
+      loading="eager"
+      alt="a person looking at a map on a wall in a gallery setting"
+      class="rounded-lg-2xl w-full max-w-[400px] border-primary"
+    />
+    <p>
+      Maps on the Hill, an event held at the State Capitol during the Utah Legislative Session, is supported by the Utah
+      Geographic Information Council (<ExternalLink href="https://ugic.org/">UGIC</ExternalLink>) and UGRC. The event
+      highlights interesting maps and mapping technology with elected officials, fellow practitioners and the public.
+      Students and professionals present on a broad range of topics to show the diversity of mapping resources in Utah,
+      and to demonstrate how mapping technology can be used to support decision makers.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <div class="flex flex-wrap justify-around gap-10">
+      <div>
+        <h4>Maps on the Hill 2023</h4>
+        <Image
+          src={moth2023Photo}
+          alt="Maps on the Hill February 14, 2023"
+          class="border-primary-lg rounded-lg border border-primary"
+        />
+        <ul class="flex justify-between">
+          <li>
+            <ExternalLink href="https://drive.google.com/file/d/1adOJtmxluQTJhiGPK89wt8u4cFFoGwu4/view?usp=sharing"
+              >Map Book Calendar</ExternalLink
+            >
+          </li>
+          <li>
+            <ExternalLink href="https://drive.google.com/drive/folders/11Q-Lj61Sn-bEJALVaTCI7uA101GVCxXN?usp=sharing">Photos</ExternalLink>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2022</h4>
+        <Image src={moth2022Photo} alt="Maps on the Hill February 15, 2022" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li>
+            <ExternalLink href="https://drive.google.com/file/d/1SbkAqKBmDsT_tINy-poxLy5MtK8VWRLD/view?usp=sharing"
+              >Map Book Calendar</ExternalLink
+            >
+          </li>
+          <li>
+            <ExternalLink href="https://drive.google.com/drive/folders/16WD6rrPGTrmRYPMSk-S99oXOI7jASoh_?usp=sharing">Photos</ExternalLink>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2020</h4>
+        <Image src={moth2020Photo} alt="Maps on the Hill February 25, 2020" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li><ExternalLink href="https://www.dropbox.com/s/9jhfgwma8v6jdbu/Calendar.pdf?dl=0">Map Book Calendar</ExternalLink></li>
+          <li>
+            <ExternalLink href="https://drive.google.com/drive/folders/1-wuzob3nLQe3G3afUql3g5ubd3goFPWj?usp=sharing">Photos</ExternalLink>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2019</h4>
+        <Image src={moth2019Photo} alt="Maps on the Hill March 7, 2019" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li>
+            <ExternalLink href="https://drive.google.com/a/utah.gov/file/d/1bDUTg92jhrskI7BCljlRww2fNvFTYmTp/view?usp=sharing"
+              >Map Book Calendar</ExternalLink
+            >
+          </li>
+          <li>
+            <ExternalLink href="https://drive.google.com/drive/folders/16Usf1lZaelqHtqxOItHhQSLL2h8Es8Do?usp=sharing">Photos</ExternalLink>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2018</h4>
+        <Image src={moth2018Photo} alt="Maps on the Hill January 30, 2018" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li>
+            <ExternalLink href="https://drive.google.com/file/d/1Dtrr93RL3JI7wpWqLe4eVRY9DNDWOP_1/view?usp=sharing">Map Book</ExternalLink>
+          </li>
+          <li>
+            <ExternalLink href="https://drive.google.com/drive/folders/1Vn9oYHVd1-mvQTA0TYB4yoNcSc0r50md?usp=sharing">Photos</ExternalLink>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2017</h4>
+        <Image src={moth2017Photo} alt="Maps on the Hill January 25, 2017" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li><ExternalLink href="https://drive.google.com/file/d/0BxoOAQyOvGgaNmdVdC1XSFVWdms/">Map Book</ExternalLink></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2016</h4>
+        <Image src={moth2016Photo} alt="Maps on the Hill March 1, 2016" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li><ExternalLink href="https://drive.google.com/file/d/0B0ScYXX9W5INQzdEZk40cVFnY2M/view">Map Book</ExternalLink></li>
+          <li>
+            <ExternalLink href="https://drive.google.com/drive/folders/1drEhhfvrx1XgMrV6emc0ns_bR_1x5-dP?usp=sharing">Photos</ExternalLink>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2015</h4>
+        <Image src={moth2015Photo} alt="Maps on the Hill January 28, 2015" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li><a href={mapBook2015} download>Map Book</ExternalLink></li>
+          <li>
+            <ExternalLink href="https://drive.google.com/drive/folders/11Gm7eZn5KEm1qSiWTSGvBvx5zbIZ8kRz?usp=sharing">Photos</ExternalLink>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2014</h4>
+        <Image src={moth2014Photo} alt="Maps on the Hill January 29, 2014" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li><a href={mapBook2014} download>Map Book</ExternalLink></li>
+          <li>
+            <ExternalLink href="https://drive.google.com/drive/folders/1hAzBThBwyBg-OCAxMz6d7kxwjsdwcXgg?usp=sharing">Photos</ExternalLink>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2013</h4>
+        <Image src={moth2013Photo} alt="Maps on the Hill January 28, 2013" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li><a href={mapBook2013} download>Map Book</ExternalLink></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Maps on the Hill 2012</h4>
+        <Image src={moth2012Photo} alt="Maps on the Hill February 29, 2012" class="rounded-lg border border-primary" />
+        <ul class="flex justify-between">
+          <li><a href={mapBook2012} download>Map Book</ExternalLink></li>
+        </ul>
+      </div>
+    </div>
+  </Section>
+</Layout>
