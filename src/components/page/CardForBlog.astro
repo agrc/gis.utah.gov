@@ -17,8 +17,9 @@ interface Props {
 
 const { category, coverImage, date, snippet, estimatedReadingTime, slug, title } = Astro.props;
 const { year, month, day } = getDateParts(date);
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/**/*.{jpg,jpeg,png,webp,gif}');
-if (!images[coverImage]) throw new Error(`"${coverImage}" not found in "/src/images/**/*.{jpg,jpeg,png,webp,gif}"`);
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}');
+if (!images[coverImage])
+  throw new Error(`"${coverImage}" not found in "/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}"`);
 ---
 
 <div
