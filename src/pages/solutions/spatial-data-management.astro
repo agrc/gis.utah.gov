@@ -1,0 +1,53 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+import { Image } from 'astro:assets';
+
+import developmentPhoto from '@images/solutions/development.svg';
+import rocketPhoto from '@images/solutions/rocket.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'High precision location',
+  section: stripeSections([
+    {},
+    { title: 'Make it accessible' },
+    { title: 'Tools can help' },
+    { title: 'Participate in the SGID' },
+  ]),
+};
+---
+
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      slot="image"
+      src={developmentPhoto}
+      loading="eager"
+      alt="a person with a prototype on an easel and the app partially built on a phone"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      Spatial data management is one the most important step you will take. Making sure your data is curated and
+      optimized for use within your agency and across state government is a key to success in this effort.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
+    <p>
+      A government runs better with a shared vision and shared data available for all for decision making. Good data is
+      data that is used.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <p>UGRC has many scripts and processes that will help you expose your data for use by others.</p>
+  </Section>
+  <Section {...page.section[3]}>
+    <p>UGRC commonly hosts and shares relevant agency data so it will be available to all to use.</p>
+  </Section>
+</Layout>

@@ -64,7 +64,7 @@ export const Menu = ({ children, currentUri }) => {
                 </ListItem>
               </MegaMenuItem>
               <MegaMenuItem title="By use case" containerCss="md:w-1/3">
-                <ListItem href="/solutions/gis-data-management" title="Spatial data management">
+                <ListItem href="/solutions/spatial-data-management" title="Spatial data management">
                   Learn how we can help.
                 </ListItem>
                 <ListItem href="/solutions/911" title="Emergency response (911)">
@@ -176,14 +176,14 @@ export const SmallMenu = ({ children, currentUri }) => (
               <NavigationMenu.Content>
                 <NavigationMenu.List className="pl-2 pt-1">
                   <NavigationMenu.Item value="solutions-audience">
-                    <p className="pb-2 pl-2 text-xs uppercase">By audience</p>
+                    <p className="pb-2 pl-2 text-xs uppercase text-accent">By audience</p>
                     <MobileListItem href="/solutions/for-government">Government employees</MobileListItem>
                     <MobileListItem href="/solutions/for-gis-users">GIS users</MobileListItem>
                     <MobileListItem href="/solutions/for-application-developers">Application developers</MobileListItem>
                     <MobileListItem href="/solutions/for-surveyors">Surveyors</MobileListItem>
                     <MobileListItem href="/solutions/for-students">Students</MobileListItem>
-                    <p className="py-2 pl-2 text-xs uppercase">By use case</p>
-                    <MobileListItem href="/solutions/gis-data-management">Spatial data management</MobileListItem>
+                    <p className="py-2 pl-2 text-xs uppercase text-accent">By use case</p>
+                    <MobileListItem href="/solutions/spatial-data-management">Spatial data management</MobileListItem>
                     <MobileListItem href="/solutions/911">Emergency response (911)</MobileListItem>
                     <MobileListItem href="/solutions/gis-strategy">GIS strategy</MobileListItem>
                     <MobileListItem href="/solutions/gis-integration">Integrating GIS</MobileListItem>
@@ -357,13 +357,13 @@ const MobileListItem = React.forwardRef(({ className, children, ...props }, forw
     <NavigationMenu.Link asChild>
       <a
         className={classNames(
-          'custom-style block cursor-pointer select-none rounded-full p-3 text-base no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1',
+          'custom-style block cursor-pointer select-none rounded-full p-3 no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1 ',
           className,
         )}
         {...props}
         ref={forwardedRef}
       >
-        <p className="text-sm text-zinc-500">{children}</p>
+        <p className="text-sm text-zinc-50 hover:text-zinc-800">{children}</p>
       </a>
     </NavigationMenu.Link>
   </li>
