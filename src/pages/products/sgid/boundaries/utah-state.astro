@@ -18,7 +18,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah State Boundary',
-  description: `Represent the boundary of the State of Utah for mapping purposes at a scale of 1:24000 or coarser.`,
+  description: `Represents the boundary of the State of Utah.`,
   stewards: ['UGRC', `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
@@ -32,8 +32,6 @@ const page: IPageMetadata = {
     ...dataPages[metadata.title],
   },
 
-  // links are optional and only used when a product has download type of links that aren't ArcGIS Hub
-  // delete this if it is unused
   links: [
     {
       title: 'The link title',
