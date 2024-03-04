@@ -6,6 +6,8 @@ author:
 date: 2018-12-13T23:33:14.000Z
 tags: []
 category: SGID Blog
+cover_image: /src/images/pillar-blog/2018-12-13-the-sgid-moving-forward/sgid_lifecycle.jpg
+cover_image_alt: SGID Data Lifecycle photo
 ---
 
 In an effort to ultimately consolidate and organize as much State <abbr title="geographic information system">GIS</abbr> data as possible, <abbr title="Utah Geospatial Resource Center">UGRC</abbr> has been gathering information about <abbr title="State Geographic Information Database">SGID</abbr> data layers managed by UGRC, and we are now reaching out to state agencies to collaborate about agency-specific data layers. Read on to get the full scoop on this effort.

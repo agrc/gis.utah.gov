@@ -5,6 +5,8 @@ tags: []
 date: 2014-10-30 11:44:52 -0600
 title: Using UGRC's Geocoding and Map-based Web Services
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>The Department of Technology Services hosts a <a href="https://docs.google.com/a/utah.gov/document/d/1XOEXOIGdl2LHSXVDr3q5szpqVcAw6VgFTSVoXq15ZDM/edit">monthly scheduled</a> Enterprise Developer Group (EDG) brown bag presentation series. The previous session recordings can be found on the <a href="https://www.youtube.com/channel/UCUuw5SFmgapGToUfRd5xGVw">DTS youtube</a> channel.</p>

@@ -1,5 +1,5 @@
 ---
-title: 'Results Update: Detecting Cooling Towers with Computer Vision Tools'
+title: "Results Update: Detecting Cooling Towers with Computer Vision Tools"
 author:
   display_name: Erik Neemann
   email: eneemann@slco.org
@@ -10,6 +10,8 @@ tags:
   - cooling towers
   - legionella
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2023-07-04-cooling-tower-update/dhhs_process.png
+cover_image_alt: Cooling Tower Project Overview
 ---
 
 If you were at the 2023 Utah Geographic Information Council (UGIC) Conference in May, you **might** remember that I presented on [Generating Useful Data with Computer Vision Tools](https://agrc.github.io/Presentations/UGIC/2023/ComputerVision.pdf). But my second use case, detecting cooling towers in aerial imagery for the Utah Department of Health and Human Services (DHHS), was still a work in progress with results yet to be determined. I promised to provide an update via blog post, and now I’m (finally) fulfilling that promise.

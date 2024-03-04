@@ -11,6 +11,8 @@ tags:
   - demographic
   - luca
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 If you manage city or county address data in GIS or other formats, UGRC has a [new web page](/products/sgid/address) with Utah-specific information about the Census Bureau's Local Update of Census Address program.

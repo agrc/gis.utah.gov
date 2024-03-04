@@ -9,6 +9,8 @@ tags:
   - tools
   - sgid
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Masquerade is a new proxy service hosted by UGRC that makes [our geocoding service](https://api.mapserv.utah.gov/) and Open SGID datasets easily accessible in Esri products. It does this by impersonating an Esri locator service. You should be able to use the URL below anywhere you would normally use an Esri geocode service:

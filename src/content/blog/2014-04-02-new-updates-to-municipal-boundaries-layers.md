@@ -9,6 +9,8 @@ date: 2014-04-02 13:37:46 -0600
 title: New updates to Municipal Boundaries layers
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>Updates were made recently to the<br />

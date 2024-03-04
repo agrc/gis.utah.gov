@@ -10,6 +10,8 @@ date: 2015-04-28 17:53:28 -0600
 title: Utah's Open Data Portal and the SGID
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><a  href="https://www.utah.gov/data/"><img class="inline-text-left" style="border: 1px solid black;" src="/images/404.png" alt="ned" width="330" height="235" loading="lazy" /></a> <a href="https://le.utah.gov/~2014/bills/static/SB0070.html">SB70</a>, passed in the 2014 general session of the Utah Legislature, provided funding to create the state Open Data Portal as recommended by the <a href="https://www.utah.gov/transparency/index.html">Utah Transparency Board</a>. The Open Data Portal project, staffed by the State's Department of Technology Services (DTS), rolled out its initial release of its <a href="https://www.utah.gov/data/">data.utah.gov</a> utilizing the Socrata software platform in early 2015.</p>

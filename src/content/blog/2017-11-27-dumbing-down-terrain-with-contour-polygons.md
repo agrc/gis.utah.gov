@@ -11,6 +11,8 @@ tags:
   - tanaka
   - terrain
 category: Developer
+cover_image: /src/images/pillar-blog/2017-11-27-dumbing-down-terrain-with-contour-polygons/contourspolys.png
+cover_image_alt: Contour Polygons
 ---
 
 While technology advances towards products with greater resolution and accuracy, sometimes more data isn’t always better data. Sometimes, being able to see general trends and relative differences paints a more interesting picture than sub foot imagery or lidar. This is the case when terrain is dumbed down and represented with generalized contour polygons.

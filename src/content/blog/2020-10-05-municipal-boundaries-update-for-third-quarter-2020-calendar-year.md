@@ -10,6 +10,8 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 As we move into the third quarter of 2020, the year is almost through. While some things have slowed down, life goes on. Annexations have been coming through as cities grow, and for this year we have two possible new incorporations: one in Tooele County (Erda) and another in Weber County (West Weber). Both new incorporations will be on the ballots in the coming election.
@@ -19,7 +21,7 @@ Municipality updates can be viewed on the ArcGIS [Utah Municipality Modification
 The following table shows the changes and annexations (listed by county and city) since July 2020:
 
 | County     | City        | Number of Changes |
-| ---------- | ----------- | ----------------- |
+|------------|-------------|-------------------|
 | Cache      | Smithfield  | 1                 |
 | Davis      | Bountiful   | 1                 |
 | Duchesne   | Tabiona     | 1                 |

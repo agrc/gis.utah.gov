@@ -9,6 +9,8 @@ tags:
   - spatial analysis
   - data
 category: SGID Blog
+cover_image: /src/images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_measurement.jpg
+cover_image_alt: Close but no cigar
 ---
 
 <iframe class="aspect-video mx-auto w-full max-w-4xl rounded-lg border-2 border-black shadow-xl" src="https://www.youtube.com/embed/86RN0rdsMOE?si=TZ06PMj3v6wYhOTx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

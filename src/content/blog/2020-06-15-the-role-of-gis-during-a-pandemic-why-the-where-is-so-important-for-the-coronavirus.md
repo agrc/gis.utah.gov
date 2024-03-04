@@ -1,6 +1,6 @@
 ---
-title: 'The Role of GIS during a Pandemic: Why the “Where” Is So Important for
-  the Coronavirus'
+title: "The Role of GIS during a Pandemic: Why the “Where” Is So Important for
+  the Coronavirus"
 author:
   display_name: Anna Tribolet
   email: atribolet@utah.gov
@@ -10,6 +10,8 @@ tags:
   - coordination
   - health
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2020-06-15-the-role-of-gis-during-a-pandemic-why-the-where-is-so-important-for-the-coronavirus/johnshopkinscoronavirusmapfaqs.jpg
+cover_image_alt: Johns Hopkins Coronavirus Map FAQ page
 ---
 
 Having worked with UGRC for the past three years, I’ve started to notice that GIS is involved in just about everything. That’s why I’ve found it so interesting to see how GIS is “having a moment,” so to speak, during this coronavirus pandemic. The field of GIS, which is already involved in so many aspects of our daily lives, even if it’s normally behind the scenes, is in the spotlight now more than ever. Take the [Johns Hopkins Coronavirus Resource Center world map](https://coronavirus.jhu.edu/map.html) for instance. The [COVID-19 Map FAQs page](https://systems.jhu.edu/research/public-health/2019-ncov-map-faqs/) states that, “Feature requests per day on the dashboard have grown from about 200 million in late January to 1.2 billion daily requests in early March. A ‘feature request’ represents the number of times visitors have accessed the underlying data while visiting the dashboard.” That’s an astounding increase! But why is this resource, and others like it, so helpful to people right now? Why are people turning to maps to make sense of what’s happening in the world?

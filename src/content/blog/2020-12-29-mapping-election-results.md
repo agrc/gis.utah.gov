@@ -10,6 +10,8 @@ tags:
   - elections
   - maps
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2020-12-29-mapping-election-results/pres_elec_2020_results.png
+cover_image_alt: 2020 Election Results
 ---
 
 You've probably heard the saying, there are many ways to peel an orange. Similarly, you've likely noticed, there are [many ways](https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html) to display election results. In this post, we'll take a closer look at how GIS can yield a clearer picture of the political landscape.

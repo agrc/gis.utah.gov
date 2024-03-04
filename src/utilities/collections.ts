@@ -21,7 +21,8 @@ type BlogEntry = CollectionEntry<'blog'>;
 
 export type DecoratedBlogEntry = BlogEntry & {
   data: BlogEntry['data'] & {
-    estimatedReadTime?: string;
+    description: string;
+    estimatedReadTime: string;
     lastUpdated: Date;
   };
 };
@@ -51,11 +52,16 @@ export async function getBlogPosts(all = false): Promise<DecoratedBlogEntry[]> {
     .filter((post) => all || post.data.published)
     .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf())
     .map((post): DecoratedBlogEntry => {
+      // uncomment out this log to help debug markdown parsing issues
+      // console.log(`decorating post: ${post.id}`);
+
+      const documentType = post.id.split('.').pop() as 'md' | 'mdx';
+
       return {
         ...post,
         data: {
           ...post.data,
-          description: getDescriptionFromMarkdown(post.body, post.id.split('.').pop() as 'md' | 'mdx'),
+          description: getDescriptionFromMarkdown(post.body, documentType),
           estimatedReadTime: getReadingTimeFromMarkdown(post.body),
           lastUpdated: getLastModifiedTime(post.id),
         },

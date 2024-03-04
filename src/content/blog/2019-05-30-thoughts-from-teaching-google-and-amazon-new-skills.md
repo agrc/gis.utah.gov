@@ -6,6 +6,8 @@ author:
 date: 2019-05-30T10:05:51.000Z
 tags: []
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Developing software for digital assistants is fun and a refreshing change from typical GIS projects. Over the past few months, UGRC was lucky enough to spend some time developing equivalent skills for Google Assistant and the Amazon Alexa. Using both platforms allowed us to see their differences very clearly. We are excited to share our opinions on the strengths of each platform. To browse the code, visit [agrc/digital-assistant-skills](https://github.com/agrc/digital-assisant-skills) on GitHub and browse the `alexa-skill` and `google-skill` branches.

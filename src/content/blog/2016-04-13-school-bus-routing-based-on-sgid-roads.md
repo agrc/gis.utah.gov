@@ -7,6 +7,8 @@ date: 2016-04-13T16:15:06.000Z
 title: School Bus Routing based on SGID Roads
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 A few months ago I had the opportunity to work with Marc Healy at the Granite School District Transportation department. He was sending me corrections he needed to have performed on the SGID roads layer. He told me that he was using the layer for a network. I asked him to tell his story and provide some instructions, this follows below.

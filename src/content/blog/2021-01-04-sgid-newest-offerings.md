@@ -8,6 +8,8 @@ date: 2021-01-04T16:01:51.000Z
 tags:
   - sgid
 category: SGID
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 As of December 31, 2020, UGRC's SGID10 database has been deprecated. At this point, it is no longer our “star player”.

@@ -7,6 +7,8 @@ published: false
 date: 2012-11-07 10:58:17 -0700
 title: Maps on the Hill 2013
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>The 2013 Maps on the Hill event will be held on<strong> January 28, 2013</strong> from 11:00am - 1:30pm at the State Capitol Building.</p>

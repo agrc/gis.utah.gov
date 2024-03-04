@@ -10,6 +10,8 @@ tags:
   - municipalities
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 The year is half over, and we just keep rolling along. This is the municipal boundaries update for the second quarter of the 2018 calendar year. There's a lot going on this year, and we're catchcing up on things since we missed the first quarter update (sorry). So here’s everything since January.
@@ -19,7 +21,7 @@ A little reminder for everyone: changes to city boundaries can affect related bo
 Following are the changes and annexations since January 1, 2018, listed by county and city:
 
 | County    | City                    | Number of Changes |
-| --------- | ----------------------- | ----------------- |
+|-----------|-------------------------|-------------------|
 | Cache     | Hyde Park               | 1                 |
 |           | Logan                   | 1                 |
 |           | Paradise                | 1                 |

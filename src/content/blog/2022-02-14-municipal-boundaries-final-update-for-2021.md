@@ -9,6 +9,8 @@ tags:
   - municipal boundaries
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Finally the end of 2021 is here. Another year of ups and downs and growth has slowed down. Utah County once again leads the growth with 18 annexations and Cache County is a close second with 16. We end the year with a total of 97 annexations. This is very similar to the last couple of years. The latest incorporation is Erda in Tooele County. Utah now has 249 cities with 5 Metro Townships. Remember those numbers for your next Trivia round.
@@ -18,7 +20,7 @@ As always feel free to check out all the changes and make sure your boundaries a
 The following table shows the changes and annexations (listed by county and city) since July 1, 2021:
 
 | County     | City             | Number of Changes |
-| ---------- | ---------------- | ----------------- |
+|------------|------------------|-------------------|
 | Cache      | Millville        | 1                 |
 |            | Providence       | 1                 |
 | Davis      | Layton           | 1                 |

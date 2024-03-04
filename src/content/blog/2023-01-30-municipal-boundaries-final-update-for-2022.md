@@ -8,6 +8,8 @@ tags:
   - municipal boundaries
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 It is the end of another long year and, ready or not, 2023 is here. It was another year of growth for the state which has slowed down some. The top contributors were Utah and Cache County once again with 23 annexations in Utah and 16 in Cache. 5 other counties had between 5 to 7 annexations in 2022. There was a tie for the biggest growing city, with 6 annexations, between Utah County's Lehi and Sevier County's Richfield. The State's total for the year is 90 annexations. This breaks down to 84 annexations, 3 disconnections, 2 adjustments, and 1 incorporation. This is similar to the last couple of years.
@@ -23,7 +25,7 @@ As always feel free to view all the changes and make sure your boundaries are wh
 The following table shows the changes and annexations (listed by county and city) from the 2022 year:
 
 | County     | City                 | Number of Changes |
-| ---------- | -------------------- | ----------------- |
+|------------|----------------------|-------------------|
 | Beaver     | Beaver               | 1                 |
 | Box Elder  | Garland              | 2                 |
 |            | Tremonton            | 1                 |

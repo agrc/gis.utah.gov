@@ -9,6 +9,8 @@ date: 2015-08-28 09:45:42 -0600
 title: Updates for the Municipal Boundaries are available now
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 As we head into the last third of this year, we find two new towns in Utah. In Wasatch County we now have **Interlaken Town** just north of Midway in the Heber Valley. And over in Daggett County, **Dutch John** is now an incorporated city. Welcome to them both.

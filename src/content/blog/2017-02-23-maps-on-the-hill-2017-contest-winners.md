@@ -11,6 +11,8 @@ date: 2017-02-23T00:18:28.000Z
 title: Maps on the Hill 2017 Contest Winners
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 In an effort to reward the best work at Maps on the Hill 2017, a judged contest was added to this year’s event in the capitol rotunda. Recognition and small prizes (UGRC wall maps and ESRI press books) were awarded to the map displays that best conveyed the value of GIS-based solutions. ![Judges' Deliberations](/images/404.png)

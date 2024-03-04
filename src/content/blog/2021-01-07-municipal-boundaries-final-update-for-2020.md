@@ -10,6 +10,8 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Finally 2020 is behind us. Despite the year's challenges, the hardworking folks in the Lieutenant Governor's Office and all those working in the city and county recorders offices didn’t slow down. Utah County once again led the way with 30 annexations, and Cache County was next at 13. Nine other counties followed with 4 to 6 annexations throughout the year, bringing the grand total to 98 annexations in 2020, which is not bad, all things considered.
@@ -22,7 +24,7 @@ To review any specific annexation document, go to the [Utah Lt. Governor Municip
 The following table shows the changes and annexations (listed by county and city) since October 1, 2020:
 
 | County     | City                                | Number of Changes |
-| ---------- | ----------------------------------- | ----------------- |
+|------------|-------------------------------------|-------------------|
 | Cache      | Millville                           | 1                 |
 |            | Newton                              | 1                 |
 |            | Smithfield                          | 2                 |

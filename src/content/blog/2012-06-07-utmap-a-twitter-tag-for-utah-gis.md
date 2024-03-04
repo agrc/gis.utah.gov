@@ -7,8 +7,10 @@ tags:
   - ugic
 date: 2012-06-07 12:41:35 -0600
 published: false
-title: '#utmap: A Twitter Tag for Utah GIS'
+title: "#utmap: A Twitter Tag for Utah GIS"
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><a href="https://twitter.com/#!/search/realtime/%23utmap"><img class="inline-text-left" title="view #utmap posts on Twitter" src="/images/404.png" alt="" width="300" height="160" /></a>Twitter is a low commitment social media tool that can be great for professional collaboration and sharing. It allows users to quickly search and scan recent tweets (posts) for relevant information. And, the 140 character limit of Twitter's 'microblog' format is just a starting point. Tweets can include URL links (usually shortened using a URL shortener) that access additional information including pictures, blog posts, code samples, Google and other online documents, map locations, interactive maps, job postings, etc.</p>

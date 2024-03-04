@@ -10,6 +10,8 @@ tags:
   - districts
   - schools
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Jordan School District and Murray School District have mutually agreed to a boundary adjustment as described below:

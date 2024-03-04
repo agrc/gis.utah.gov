@@ -7,9 +7,11 @@ tags:
   - mapping spotlight
   - sitla
 date: 2013-11-13 16:35:19 -0700
-title: 'Mapping Spotlight: SITLA Competitive Lease Offering'
+title: "Mapping Spotlight: SITLA Competitive Lease Offering"
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><a href="/images/404.png"><img src="/images/404.png" style="margin-right:30px" width="208" height="250" align="left" /></a> The State of Utah School and Institutional Trust Lands Administration (SITLA) has made a map that displays current and historic Competitive Lease Offering Units and Results for Oil, Gas and Associated Hydrocarbons and Other Mineral Commodities. The map makes it easy to visually see the location of the units being offered on a current Competitive Offering, as well as the results.  The map is updated each time a Competitive Offering is held.</p>

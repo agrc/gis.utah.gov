@@ -9,6 +9,8 @@ tags:
   - 3dep
   - lidar
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 In October, a partnership of Utah organizations submitted a proposal to the USGS 3D Elevation Program (3DEP) for 2018 Lidar acquisition projects. After preliminary discussions with USGS, UGRC has submitted a modified proposal on behalf of the partnership, which made several significant changes. Partners include: Utah Geological Survey, Utah Division of Emergency Management, Utah Division of Forestry, Fire and State Lands, Natural Resources Conservation Service, FEMA, US Forest Service, Tooele Army Depot, National Parks Service, Moab, and three ski areas.

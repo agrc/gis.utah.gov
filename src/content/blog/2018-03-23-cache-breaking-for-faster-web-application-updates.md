@@ -6,6 +6,8 @@ author:
 date: 2018-03-23T19:56:37.000Z
 tags: []
 category: Developer
+cover_image: /src/images/pillar-blog/2018-03-23-cache-breaking-for-faster-web-application-updates/cache_headers.png
+cover_image_alt: screenshot of headers
 ---
 
 ### When Production Is Broken, It Needs to Be Fixed Now!

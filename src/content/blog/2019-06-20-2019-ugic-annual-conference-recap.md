@@ -9,6 +9,8 @@ tags:
   - conference
   - UGIC
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2019-06-20-2019-ugic-annual-conference-recap/ugicconferencelogo.jpg
+cover_image_alt: ugic 2019 conference logo
 ---
 
 The Utah Geographic Information Council hosted its annual conference on May 6–10 in Midway to allow GIS professionals, students, and others who are passionate about spatial information to come together to share ideas, best practices, and new skills.

@@ -7,6 +7,8 @@ date: 2012-08-01 15:10:36 -0600
 title: Using Utah GIS Elevation Data to Visualize Terrain
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><img style="padding-right: 20px;" title="Using ArcMap color ramp symbology to provide an intuitive elevation coloring" src="/images/404.png" alt="" width="400" height="356" align="right" /></p>

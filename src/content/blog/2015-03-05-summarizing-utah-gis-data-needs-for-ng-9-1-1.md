@@ -7,6 +7,8 @@ date: 2015-03-05 16:02:52 -0700
 title: Summarizing Utah GIS Data Needs for NG 9-1-1
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><a  title="911flyer" href="https://docs.google.com/presentation/d/1Xy7brkt6DrqEMz68dGliU1vQbs0lV-or6R1d_u5gvGs/edit?usp=sharing"><img class="inline-text-left" style="border: 0px solid black;" src="/images/404.png" alt="ned" width="230" height="300" loading="lazy" /></a></p>

@@ -9,6 +9,8 @@ tags:
   - github
   - custom-tools
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 As GIS developers, we are often expected to provide the same custom tool for multiple versions of ArcGIS Desktop (or ArcGIS Pro). For example, some users are on Desktop 10.4, while others are on 10.6 (or Pro 1.4 and 2.1). Yet, each group of users requires the same custom functionality. In this common scenario, you may find yourself maintaining multiple versions of the code in order to compile the required SDK dependencies for the specific ArcGIS versions. Though, more often than not, our custom tool&mdash;regardless of the SDK version&mdash;depends on the same interfaces. Because of this, we can leverage Git and GitHub to maintain a single universal code base for all versions of tool(s). The key is to understand the APIs that you are working with.

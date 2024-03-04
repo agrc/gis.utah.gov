@@ -3,13 +3,15 @@ author:
   display_name: JP
   email: ugrc@utah.gov
 tags:
-  - '911'
+  - "911"
   - address points
   - nena
 date: 2015-10-28 15:48:23 -0600
 title: NENA National Guidance for GIS Address Points
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>Wouldn't it be great if there were concrete best practices to guide the stewardship of GIS address point layers? And what if they were flexible and also provided guidance for complex situations like multi-unit buildings and campuses were included? </p>

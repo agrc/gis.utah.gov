@@ -7,6 +7,8 @@ author:
 date: 2020-03-03T19:28:40.000Z
 tags: []
 category: GPS-surveyor
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 The Utah Reference Network Global Positioning System (TURN GPS) provides real-time high precision centimeter positioning. Some reference stations within the network move slightly over time due to earth crustal displacement and the positions must be updated periodically to maintain accuracy.

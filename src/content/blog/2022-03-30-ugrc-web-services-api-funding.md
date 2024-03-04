@@ -10,6 +10,8 @@ tags:
   - web api
   - ugrc funding
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 UGRC received additional funds for our work on the Web API and associated services. UGRC did not receive all funds requested however we did get ongoing funds, so users can expect to see enhancements in the near future. UGRC is also very open to suggestions for changes to our web services. Below is the justification I submitted for the request to the legislature.

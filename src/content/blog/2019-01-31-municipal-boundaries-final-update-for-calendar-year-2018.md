@@ -10,6 +10,8 @@ tags:
   - municipal boundaries
   - census
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 There have been several changes and annexations in Utah since September 1, 2018; read on to learn about some of the general updates, as well as the specific changes and annexations for the last quarter of the 2018 calendar year.
@@ -25,7 +27,7 @@ Our annual submission to the US Census Bureau Boundary and Annexation Survey (BA
 The following table shows the changes and annexations (listed by county and city) since September 1, 2018:
 
 | County     | City                            | Number of Changes |
-| ---------- | ------------------------------- | ----------------- |
+|------------|---------------------------------|-------------------|
 | Box Elder  | Brigham City                    | 1                 |
 | Cache      | Providence                      | 1                 |
 |            | Smithfield                      | 1                 |

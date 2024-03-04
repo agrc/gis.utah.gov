@@ -11,6 +11,8 @@ tags:
 date: 2014-11-17 12:15:04 -0700
 title: Wireless Signals and LiDAR Derived Elevation Models
 category: SGID Blog
+cover_image: /src/images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dtm_only.png
+cover_image_alt: DTM Bare-Earth Digital Terrain Model
 ---
 
 Specialized software allows the modeling of cellular, radio, or wireless internet signal propagation and coverage. Better, more accurate results for wireless signal propagation depend on the precision with which the earth’s surface is represented within the analysis software. Traditionally, "bare earth" Digital Terrain Models (DTMs), in which above ground features such as buildings and vegetation are not represented, are used for the analysis.

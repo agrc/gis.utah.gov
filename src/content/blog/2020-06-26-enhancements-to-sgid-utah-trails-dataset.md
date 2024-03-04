@@ -11,6 +11,8 @@ tags:
   - transportation
   - recreation
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 We are happy to announce significant updates and enhancements to the Utah Trails dataset. For one, the dataset was renamed to [Utah Trails and Pathways](/products/sgid/recreation/trails-pathways). The new name more accurately reflects the use and purpose of this data.

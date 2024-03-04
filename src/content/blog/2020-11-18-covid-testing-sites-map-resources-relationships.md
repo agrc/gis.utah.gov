@@ -9,6 +9,8 @@ tags:
   - coordination
   - agol
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-first-months.png
+cover_image_alt: The usage graph seemed to wane after two months
 ---
 
 Ninety-nine times out of a hundred, whenever you create a webmap you're anxiously hoping people will use it. I remember watching the stats for my [first real webmap](https://cacheut.maps.arcgis.com/apps/webappviewer/index.html?id=1c0d0315182f4a31af512605854f4d2c), hoping I'd break a hundred views. 1,000 would be amazing. 10,000 was unthinkable.

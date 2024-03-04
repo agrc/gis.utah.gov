@@ -11,6 +11,8 @@ date: 2013-08-30 12:18:17 -0600
 title: Utah Works with the United States Census Bureau
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <img alt="" src="/images/404.png" style="border-style:solid; border-width:0px; float:left; height:125px; margin:0px 6px; width:125px" />UGRC is in the process of finalizing a data sharing agreement with the United States Census Bureau. The agreement will formalize the Bureau&rsquo;s use of Utah&rsquo;s SGID data layers in the building of the United States Census Bureau Database. The Census Bureau will use boundaries layers, including County Boundaries and Municipal Boundaries, as well as other SGID data layers.

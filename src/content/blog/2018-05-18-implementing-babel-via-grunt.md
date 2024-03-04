@@ -8,6 +8,8 @@ date: 2018-05-18T21:25:37.000Z
 tags:
   - javascript
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Have you ever felt your excitement build after seeing some cool, new JavaScript feature only to find out that it isn't supported in all of the browsers that your app supports? Bummer! If you've ridden this rollercoaster of emotions before, [Babel](https://babeljs.io/) might just be your favorite new tool.

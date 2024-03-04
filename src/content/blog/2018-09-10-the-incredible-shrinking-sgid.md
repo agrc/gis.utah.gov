@@ -8,6 +8,8 @@ tags:
   - SGID
   - data
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Over the past several months, UGRC has been reviewing the usage of the State Geographic Information Database (SGID) data layers in order to determine how to most effectively be a steward of the state’s GIS data.

@@ -7,6 +7,8 @@ date: 2015-04-29 14:16:45 -0600
 title: Updates To Political Districts & Voting Precincts datasets April 2015
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><strong>Utah Political Districts:</strong></p>

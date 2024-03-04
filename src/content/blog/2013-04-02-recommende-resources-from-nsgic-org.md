@@ -7,6 +7,8 @@ date: 2013-04-02 13:09:59 -0600
 title: Recommended GIS Resources from NSGIC.org
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>The National State Geographic Information Council (NSGIC) exists to </p>

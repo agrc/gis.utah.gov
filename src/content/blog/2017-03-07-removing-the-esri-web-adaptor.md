@@ -6,6 +6,8 @@ tags: []
 date: 2017-03-07T05:10:58.000Z
 title: Removing and Replacing the Esri Web Adaptor
 category: Developer
+cover_image: /src/images/pillar-blog/2017-03-07-removing-the-esri-web-adaptor/web-adaptor-flow.png
+cover_image_alt: Web adaptor flow chart
 ---
 
 The [Esri web adaptor](https://enterprise.arcgis.com/en/server/latest/install/windows/about-the-arcgis-web-adaptor.htm) is a small load balancer/reverse proxy bundled into the ArcGIS Server install but do you know if you need it?

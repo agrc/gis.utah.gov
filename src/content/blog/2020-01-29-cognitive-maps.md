@@ -9,6 +9,8 @@ tags:
   - education
   - maps
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2020-01-29-cognitive-maps/network_head.png
+cover_image_alt: Network Head
 ---
 
 I bet you remember where you were on the morning of September 11th, 2001 when you heard the news. I’d venture to say that you also remember the city, state, and room that you were standing in. But why is this? Why is it that certain memories are permanently tied to a geographic location?

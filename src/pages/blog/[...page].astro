@@ -3,10 +3,9 @@ import Pagination from '@components/Pagination.astro';
 import CardForBlog from '@components/page/CardForBlog.astro';
 import Layout from '@layouts/BlogPostIndex.astro';
 
-import { getBlogFilters, getBlogPosts, type BlogFilter } from '@utils/collections';
+import { getBlogFilters, getBlogPosts, type BlogFilter, type DecoratedBlogEntry } from '@utils/collections';
 
 import type { Page } from 'astro';
-import type { CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths({ paginate }) {
   const posts = await getBlogPosts();
@@ -15,7 +14,7 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const categories = await getBlogFilters('categories');
-const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
+const { page } = Astro.props as { page: Page<DecoratedBlogEntry> };
 ---
 
 <Layout title="Post categories" category="All">
@@ -32,13 +31,15 @@ const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
   {
     page.data.map((post) => (
       <CardForBlog
-        title={post.data.title}
-        description={post.data.description}
-        date={post.data.date}
-        slug={post.slug}
-        estimatedReadingTime={post.data.estimatedReadTime}
         category={post.data.category}
+        coverImage={post.data.cover_image}
+        coverImageAlt={post.data.cover_image_alt}
+        date={post.data.date}
+        description={post.data.description}
+        estimatedReadingTime={post.data.estimatedReadTime}
+        slug={post.slug}
         tags={post.data.tags}
+        title={post.data.title}
       />
     ))
   }

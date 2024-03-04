@@ -10,6 +10,8 @@ date: 2016-05-26T16:53:19.000Z
 title: UGS Aquifer Data Updated May 2016
 published: false
 category: Guestblog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 GEOSCIENCE.Aquifer_RechargeDischargeAreas represents areas of recharge and discharge for various basins and valleys in Utah compiled by the Utah Geological Survey from various sources, including the USGS and various state agencies.
