@@ -1932,8 +1932,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Fire Stations': {
     itemId: '3d55a3a011fe4028933754a81537d72f',
     name: 'Utah Fire Stations',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'FireStations',
+    openSgid: 'society.fire_stations',
     layerId: 0,
   },
   'County Courts of Utah': {
