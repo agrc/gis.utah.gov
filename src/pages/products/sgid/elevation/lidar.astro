@@ -1,0 +1,1084 @@
+---
+import type { IMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory, type IStandardPageMetadata } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+import { Image } from 'astro:assets';
+
+import bear2016Map from '@images/sgid/lidar_blbrcvuwv_coverage.png';
+import boxElder2018Map from '@images/sgid/lidar_box_elder_2018_coverage.png';
+import centralSouthern2020Map from '@images/sgid/lidar_central_southern_utah_2020_coverage.png';
+import central2018Map from '@images/sgid/lidar_central_utah_2018_coverage.png';
+import femaHQ2020Map from '@images/sgid/lidar_femahq_2020_coverage.png';
+import fishSprings2022Map from '@images/sgid/lidar_fish_springs_2022_coverage.png';
+import forge2016Map from '@images/sgid/lidar_forge_coverage.png';
+import gsl2016Map from '@images/sgid/lidar_gsl_coverage.png';
+import uintahHeber2018Map from '@images/sgid/lidar_heber_uintah_basin_2018_coverage.png';
+import kanab2016Map from '@images/sgid/lidar_kanab_2016_coverage.png';
+import kaneCounty2019Map from '@images/sgid/lidar_kane_county_2019_coverage.png';
+import loganRiver2020Map from '@images/sgid/lidar_logan_river_watershed_2020_coverage.png';
+import millsite2017Map from '@images/sgid/lidar_millsite_coverage.png';
+import monroeMountain2016Map from '@images/sgid/lidar_monroe_coverage.png';
+import northernCentral2020Map from '@images/sgid/lidar_northern_central_utah_2020_coverage.png';
+import northern2018Map from '@images/sgid/lidar_northern_utah_2018_coverage.png';
+import rivers2015Map from '@images/sgid/lidar_rivers_coverage.png';
+import lidarSamples from '@images/sgid/lidar_samples.png';
+import sanpeteValley2018Map from '@images/sgid/lidar_sanpete_valley_2018_coverage.png';
+import southern2018Map from '@images/sgid/lidar_southern_utah_2018_coverage.png';
+import southern2020Map from '@images/sgid/lidar_southern_utah_2020_coverage.png';
+import strawberryRiver2019Map from '@images/sgid/lidar_strawberry_river_2019_coverage.png';
+import wasatchFront2013Map from '@images/sgid/lidar_wasatch_front_2013-2014_coverage.png';
+import washingtonCounty2017Map from '@images/sgid/lidar_washington_co_coverage.png';
+import washakie2017Map from '@images/sgid/lidar_wvw_coverage.png';
+import zionNP2015Map from '@images/sgid/lidar_zion_np_2015_coverage.png';
+// import gsl2011Map from '@images/sgid/lidar__coverage.png';
+// import wasatch2006Map from '@images/sgid/lidar__coverage.png';
+
+import { stripeSections } from '@utils/page';
+
+export const metadata: IMetadata = {
+  title: 'Lidar Elevation Data',
+  description: `All LiDAR projects across Utah since 2006.`,
+  stewards: ['UGRC'],
+  type: ProductType.RASTER, // This comes from the ProductType enum in types.ts
+  category: SgidCategory.ELEVATION, // This comes from the SgidCategory enum in types.ts
+};
+
+const page: IStandardPageMetadata = {
+  title: 'Lidar Elevation Data',
+  pillar: 'Elevation',
+  section: stripeSections([
+    {},
+    {
+      title: '2022 Fish Springs (topo-bathy)',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?cat=.5%20Meter%20%7B2022%20Fish%20Springs%20LiDAR%7D&title=Fish%20Springs%202022%20Topo-Bathy%20LiDAR',
+    },
+    {
+      title: '2020 FEMA HQ',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20FEMA%20HQ%20LiDAR%7D,1%20Meter%20%7B2020%20FEMA%20HQ%20LiDAR%7D&title=FEMA%20HQ%202020%20LiDAR',
+    },
+    {
+      title: '2020 Logan River Watershed',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2020%20Logan%20River%20Watershed%20LiDAR%7D',
+    },
+    {
+      title: '2020 Central & Southern Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?cat=1%20Meter%20%7B2020%20Central%20Southern%20Utah%20LiDAR%7D&title=Central%20Southern%20Utah%202020%20LiDAR',
+    },
+    {
+      title: '2020 Northern & Central Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20Northern%20Central%20Utah%20LiDAR%7D,1%20Meter%20%7B2020%20Northern%20Central%20Utah%20LiDAR%7D&title=Northern%20Central%20Utah%202020%20LiDAR',
+    },
+    {
+      title: '2020 Southern Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20Southern%20Utah%20LiDAR%7D,1%20Meter%20%7B2020%20Southern%20Utah%20LiDAR%7D&title=Southern%20Utah%202020%20LiDAR',
+    },
+    {
+      title: '2019 Kane County',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=1%20Meter%20%7B2019%20Kane%20County%20LiDAR%7D',
+    },
+    {
+      title: '2019 Strawberry River',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2019%20Strawberry%20River%20LiDAR%7D,HRO%202019%20(10cm)&title=2019%20Strawberry%20River%20Lidar%20DEMs%20and%20Aerial%20Photography',
+    },
+    {
+      title: '2018 Uintah Basin and Heber Valley',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D,1%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D&title=Uintah%20Basin%20and%20Heber%20Valley%202018%20LiDAR',
+    },
+    {
+      title: '2018 Box Elder County',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2018%20Box%20Elder%20LiDAR%7D',
+    },
+    {
+      title: '2018 Northern Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Northern%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Northern%20Utah%20LiDAR%7D&title=Northern%20Utah%202018%20LiDAR',
+    },
+    {
+      title: '2018 Central Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D&title=Central%20Utah%202018%20LiDAR',
+    },
+    {
+      title: '2018 Southern Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Southern%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Southern%20Utah%20LiDAR%7D&title=Southern%20Utah%202018%20LiDAR',
+    },
+    {
+      title: '2018 Sanpete Valley',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2018%20Sanpete%20Valley%20LiDAR%7D',
+    },
+    {
+      title: '2017 Millsite Reservoir',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2017%20Millsite%20Reservoir%20LiDAR%7D',
+    },
+    {
+      title: '2017 Washakie and Whites Valley',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2017%20Washakie%20and%20Whites%20Valley%20LiDAR%7D',
+    },
+    {
+      title: '2017 Washington County',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=1%20Meter%20%7B2017%20LiDAR%7D&title=Washington%20County%202017%20LiDAR',
+    },
+    {
+      title: '2016 Kanab Utah',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20Kanab%20LiDAR%7D',
+    },
+    {
+      title: '2016 Bear Lake, Bear River, Cache Valley & Upper Weber Valley',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D',
+    },
+    {
+      title: '2016 Great Salt Lake & Utah Lake',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2016%20LiDAR%7D,1%20Meter%20%7B2016%20LiDAR%7D&title=Utah%202016%20LiDAR',
+    },
+    {
+      title: '2016 Monroe Mountain',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D',
+    },
+    {
+      title: '2016 FORGE',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D',
+    },
+    {
+      title: '2015 Colorado, Green & Yampa Rivers',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2015%20LiDAR%7D',
+    },
+    {
+      title: '2015 Zion National Park',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://gis.utah.gov/data/elevation-and-terrain/2015-lidar-zion-np/',
+    },
+    {
+      title: '2013-2014 Wasatch Front and the Wasatch Fault',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2013-2014%20LiDAR%7D',
+    },
+    {
+      title: '2011 Great Salt Lake, Cedar Valley, Hurricane Fault',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=1%20Meter%20%7B2011%20LiDAR%7D',
+    },
+    {
+      title: '2006 Wasatch Front, Iron County, Heber Valley',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=2%20Meter%20%7B2006%20LiDAR%7D',
+    },
+  ]),
+};
+
+const projectAssets = {
+  fishSprings: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/fish-springs-2022/FishSprings_2022_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/fish-springs-2022/FishSprings_2022_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/fish-springs-2022/FishSprings_2022_shps.zip',
+    },
+  ],
+  femaHQ: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/femahq-2020/FEMAHQ_2020_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/femahq-2020/FEMAHQ_2020_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/femahq-2020/FEMAHQ_2020_shps.zip',
+    },
+  ],
+  loganRiver: [
+    {
+      title: 'Download all project DTMs (approx. 9GB)',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/logan-river-watershed-2020/DEMs/2020_LoganRiverWatershed_DTM.zip',
+    },
+    {
+      title: 'Download all project DSMs (approx. 9GB)',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/logan-river-watershed-2020/DSMs/2020_LoganRiverWatershed_DSM.zip',
+    },
+    {
+      title: 'Download project report',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/logan-river-watershed-2020/LoganRiverWatershed_AerialLiDAR_Report.zip',
+    },
+    {
+      title: 'Download shapefiles of project area and tile indices',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/logan-river-watershed-2020/LoganRiverWatershed_AerialLiDAR_Shapefiles.zip',
+    },
+  ],
+  centralSouthern: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-southern-utah-2020/CentralSouthernUtah_2020_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-southern-utah-2020/CentralSouthernUtah_2020_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-southern-utah-2020/CentralSouthernUtah_2020_shps.zip',
+    },
+  ],
+  northernCentral: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northern-central-utah-2020/NorthernCentralUtah_2020_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northern-central-utah-2020/NorthernCentralUtah_2020_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northern-central-utah-2020/NorthernCentralUtah_2020_shps.zip',
+    },
+  ],
+  southern2020: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2020/SouthernUtah_2020_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2020/SouthernUtah_2020_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2020/SouthernUtah_2020_shps.zip',
+    },
+  ],
+  kaneCounty: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kane-county-2019/KaneCounty_2019_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kane-county-2019/KaneCounty_2019_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kane-county-2019/KaneCounty_2019_shps.zip',
+    },
+  ],
+  strawberryRiver: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/strawberry-river-2019/StrawberryRiver_2019_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/strawberry-river-2019/StrawberryRiver_2019_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/strawberry-river-2019/StrawberryRiver_2019_shps.zip',
+    },
+  ],
+  uintahHeber: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/heber-valley-uintah-basin-2018/FEMAHQ_2018_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/heber-valley-uintah-basin-2018/FEMAHQ_2018_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/heber-valley-uintah-basin-2018/FEMAHQ_2018_shps.zip',
+    },
+  ],
+  boxElder: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/box-elder-2018/BoxElder_2018_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/box-elder-2018/BoxElder_2018_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/box-elder-2018/BoxElder_2018_shps.zip',
+    },
+  ],
+  northern: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northern-utah-2018/NorthernUtah_2018_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northern-utah-2018/NorthernUtah_2018_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/northern-utah-2018/NorthernUtah_2018_shps.zip',
+    },
+  ],
+  central: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-utah-2018/CentralUtah_2018_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-utah-2018/CentralUtah_2018_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/central-utah-2018/CentralUtah_2018_shps.zip',
+    },
+  ],
+  southern2018: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2018/SouthernUtah_2018_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2018/SouthernUtah_2018_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/southern-utah-2018/SouthernUtah_2018_shps.zip',
+    },
+  ],
+  sanpeteValley: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/sanpete-valley-2018/SanpeteValley_2018_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/sanpete-valley-2018/SanpeteValley_2018_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/sanpete-valley-2018/SanpeteValley_2018_shps.zip',
+    },
+  ],
+  millsite: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/millsite-reservoir-2017/DEMs/MillsiteReservoir_Report.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/millsite-reservoir-2017/DEMs/MillsiteReservoir_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/millsite-reservoir-2017/DEMs/MillsiteReservoir_shps.zip',
+    },
+  ],
+  washakie: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washakie-whites-valley-2017/DEMs/Washakie_WhitesValley_Report.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washakie-whites-valley-2017/DEMs/Metadata_ProjectLevel.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washakie-whites-valley-2017/DEMs/Washakie_WhitesValley_shps.zip',
+    },
+  ],
+  washingtonCounty: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/washington-county-2017/DEMs/WashingtonCo_shps.zip',
+    },
+  ],
+  kanab: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kanab-2016/DEMs/Kanab_2016_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kanab-2016/DEMs/Kanab_2016_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/kanab-2016/DEMs/Kanab_2016_shps.zip',
+    },
+  ],
+  bear2016: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/cache-valley-2016/DEMs/BLBRCVUWV_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/cache-valley-2016/DEMs/BLBRCVUWV_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/cache-valley-2016/DEMs/BLBRCVUWV_shps.zip',
+    },
+  ],
+  gsl2016: [
+    {
+      title: 'Download GSL project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_Reports.zip',
+    },
+    {
+      title: 'Download GSL project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_Metadata.zip',
+    },
+    {
+      title: 'Download GSL shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_shps.zip',
+    },
+    {
+      title: 'Download Utah Lake project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/UtahLake_Reports.zip',
+    },
+    {
+      title: 'Download Utah Lake project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/UtahLake_Metadata.zip',
+    },
+    {
+      title: 'Download Utah Lake shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/UtahLake_shps.zip',
+    },
+  ],
+  monroeMountain: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_Report.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/monroe-mtn-2016/DEMs/MonroeMtn_2016_shp.zip',
+    },
+  ],
+  forge: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/forge-2016/FORGE_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/forge-2016/FORGE_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/forge-2016/FORGE_shps.zip',
+    },
+  ],
+  rivers2015: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/colorado-green-rivers-2015/DEMs/Rivers_shps.zip',
+    },
+  ],
+  zionNP: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/zion-np-2016/ZionNP_2015_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/zion-np-2016/ZionNP_2015_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/zion-np-2016/ZionNP_2015_shps.zip',
+    },
+  ],
+  wasatchFront: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/WasatchFront_2013_2014_LiDAR_Report.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/WasatchFront_2013_2014_LiDAR_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/WasatchFront_2013_2014_LiDAR_shp.zip',
+    },
+  ],
+  gsl2011: [
+    {
+      title: 'Download project completion reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/ugs-2011/UGS-2011_CompletionReports.zip',
+    },
+    {
+      title: 'Download project QA reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/ugs-2011/UGS-2011_QA_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/ugs-2011/UGS-2011_DEM_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area and tile indices',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/ugs-2011/LiDAR2011_1m_TileIndices.shp.zip',
+    },
+  ],
+  wasatch2006: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2006/wasatch-front-2006_project_reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2006/wasatch-front-2006_Metadata.zip',
+    },
+  ],
+};
+---
+
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <a href={lidarSamples.src} slot="image">
+      <Image src={lidarSamples} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      Light Detection and Ranging (LiDAR) is an optical remote sensing technology that can measure the distance to, or
+      other properties of, a target by illuminating the target with light often using pulses from a laser. Currently
+      this is the most accurate elevation dataset UGRC has and bare-earth DEMs/DTMs and first-return DSMs are available
+      for most of Utah.
+    </p>
+    <p>
+      UGRC has partnered with various agencies over the years to acquire many lidar datasets with the goal of statewide
+      coverage. Visit <a href="https://raster.utah.gov/?products=1">Raster.utah.gov</a>
+      to explore and download all collections of lidar derived bare-earth DEMs/DTMs and first-return DSMs elevation models.
+      The <a href="https://arcg.is/18SWjy">Utah LiDAR Coverage</a>
+      application is also available to explore all lidar projects that have been proposed, are in progress, or completed
+      in Utah. Both applications can get you to a project specific webpage for more information about each project including
+      reports, metadata, and vector data associated with each project.
+    </p>
+    <p>
+      The naming convention for the tile downloads are based off the <ExternalLink
+        href="https://www.fgdc.gov/usng/how-to-read-usng/index_html">U.S. National Grid (USNG)</ExternalLink
+      >.
+    </p>
+    <p>
+      In addition to the bare-earth DEMs/DTMs and first-return DSMs, the LAS point clouds are available from
+      <ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink> managed by the USGS. The
+      National Map downloader also facilitates bulk downloads.
+    </p>
+    <p>
+      For more information about LiDAR visit <a href="{% link data/elevation-and-terrain/exploring-lidar/index.html %}"
+        >Exploring LiDAR</a
+      >.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <a href={fishSprings2022Map.src} slot="image">
+      <Image src={fishSprings2022Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      In 2022 the U.S. Geological Survey (USGS) acquired 29.5 square miles of 8 points per meter Quality Level 1
+      Topobathymetric LiDAR of Fish Springs National Wildlife Refuge in Utah. The .5 resolution topo-bathy DEMs in .tif
+      format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available
+      from <ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink>. This elevation
+      data was collected September 24, 2022.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID18) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.fishSprings} />
+  </Section>
+  <Section {...page.section[2]}>
+    <a href={femaHQ2020Map.src} slot="image">
+      <Image src={femaHQ2020Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2020 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), the
+      U.S. Forest Service (USFS), and the Federal Emergency Management Agency (FEMA) acquired ~13,686 square miles of 2
+      and 8 points per meter Quality Level 1 & 2 LiDAR of portions Utah. The .5 and 1 meter resolution bare earth DEMs
+      in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are
+      available from <ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink>. This
+      elevation data was collected between August and November, 2020.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID18) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.femaHQ} />
+  </Section>
+  <Section {...page.section[3]}>
+    <a href={loganRiver2020Map.src} slot="image">
+      <Image src={loganRiver2020Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2020 Utah State University, Utah Water Research Laboratory acquired ~216 square miles of 8 points per meter
+      LiDAR of the Logan River Watershed in Northern Utah. The 0.5 meter resolution bare earth DEMs and
+      first-return/highest-hit DSMs in .tif format have been tested to a 0.106 ft vertical RMSE accuracy and are
+      available for download. This elevation data was collected August 12-13, 2020.
+    </p>
+    <p>This elevation data has a State Plane Utah North NAD83(CORS96) NAVD88 projection with units in US Feet.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.loganRiver} />
+  </Section>
+  <Section {...page.section[4]}>
+    <a href={centralSouthern2020Map.src} slot="image">
+      <Image
+        src={centralSouthern2020Map}
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
+    >
+    <p>
+      During 2020 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Division of Emergency Management
+      acquired ~5,143 square miles of 2 points per meter Quality Level 2 LiDAR of portions of Central and Southern Utah.
+      The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical
+      RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected between September and October, 2020.
+    </p>
+    <p>
+      This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection with the exception of a
+      small strip on the western edge of the project area in zone 11.
+    </p>
+    <DirectDownloads title="Project assets" links={projectAssets.centralSouthern} />
+  </Section>
+  <Section {...page.section[5]}>
+    <a href={northernCentral2020Map.src} slot="image">
+      <Image
+        src={northernCentral2020Map}
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
+    >
+    <p>
+      During 2020 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Division of Emergency Management
+      acquired ~5,262 square miles of 2 and 8 points per meter Quality Level 1 & 2 LiDAR of portions of Northern and
+      Central Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have
+      a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected between April and July, 2020.
+    </p>
+    <p>
+      This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection with the exception of a
+      small strip on the western edge of the project area in zone 11.
+    </p>
+    <DirectDownloads title="Project assets" links={projectAssets.northernCentral} />
+  </Section>
+  <Section {...page.section[6]}>
+    <a href={southern2020Map.src} slot="image">
+      <Image src={southern2020Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2020 UGRC and the Utah Division of Emergency Management acquired ~9,740 square miles of 2 and 8 points per
+      meter Quality Level 1 & 2 LiDAR of portions of Southern Utah. The .5 and 1 meter resolution bare earth DEMs and
+      first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download.
+      The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
+        >The National Map</ExternalLink
+      >. This elevation data was collected between May and July, 2020.
+    </p>
+    <p>
+      This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection with the exception of a
+      small strip on the western edge of the project area in zone 11.
+    </p>
+    <DirectDownloads title="Project assets" links={projectAssets.southern2020} />
+  </Section>
+  <Section {...page.section[7]}>
+    <a href={kaneCounty2019Map.src} slot="image">
+      <Image src={kaneCounty2019Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2019 UGRC and the Utah Division of Emergency Management acquired ~6,114 square miles of 2 points per meter
+      Quality Level 2 LiDAR of Kane County and portions of the Greater Sevier Watershed. The 1 meter resolution bare
+      earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available
+      for download. The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
+        >The National Map</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.kaneCounty} />
+  </Section>
+  <Section {...page.section[8]}>
+    <a href={strawberryRiver2019Map.src} slot="image">
+      <Image
+        src={strawberryRiver2019Map}
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
+    >
+    <p>
+      During 2019 UGRC and the Utah Reclamation Mitigation Conservation Commission (URMCC) acquired ~92 square miles of
+      8 points per meter Quality Level 1 LiDAR and 10cm 4-band aerial photography of the Strawberry River, from Soldier
+      Creek Dam to The Pinnacles, after the Dollar Ridge Fire in 2018. The .5 meter resolution bare earth DEMs and
+      first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download.
+      The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
+        >The National Map</ExternalLink
+      >. This elevation data was collected August 15-18, 2019.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.strawberryRiver} />
+  </Section>
+  <Section {...page.section[9]}>
+    <a href={uintahHeber2018Map.src} slot="image">
+      <Image src={uintahHeber2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2018 the Federal Emergency Management Agency (FEMA) acquired ~4,693 square miles of 2 and 8 points per
+      meter Quality Level 1 & 2 LiDAR for areas in Northern Utah that include the Uintah Basin (QL2) and Heber Valley
+      (QL1). The .5 and 1 meter resolution bare earth DEMs in .img format have a 10.0cm vertical RMSE accuracy and are
+      available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected between June and October, 2018.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.uintahHeber} />
+  </Section>
+  <Section {...page.section[10]}>
+    <a href={boxElder2018Map.src} slot="image">
+      <Image src={boxElder2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2018 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) acquired
+      ~2,271 square miles of 8 points per meter Quality Level 1 LiDAR for areas in Northern Utah. The .5 meter
+      resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy
+      and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID18) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.boxElder} />
+  </Section>
+  <Section {...page.section[11]}>
+    <a href={northern2018Map.src} slot="image">
+      <Image src={northern2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2018 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) acquired
+      ~1,632 square miles of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Northern Utah. The .5 and 1
+      meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE
+      accuracy and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.northern} />
+  </Section>
+  <Section {...page.section[12]}>
+    <a href={central2018Map.src} slot="image">
+      <Image src={central2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2018 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), and
+      the Utah Geological Survey (UGS) acquired ~3,759 square miles of 2 and 8 points per meter Quality Level 1 & 2
+      LiDAR for areas in Central Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs
+      in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are
+      available from <ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink>.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.central} />
+  </Section>
+  <Section {...page.section[13]}>
+    <a href={southern2018Map.src} slot="image">
+      <Image src={southern2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2018 UGRC, Utah Division of Emergency Management, US National Park Service, and US Forest Service acquired
+      ~5,466 square miles of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Southern Utah. The .5 and 1
+      meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE
+      accuracy and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.southern2018} />
+  </Section>
+  <Section {...page.section[14]}>
+    <a href={sanpeteValley2018Map.src} slot="image">
+      <Image src={sanpeteValley2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2018 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) acquired
+      ~440 square miles of 8 points per meter Quality Level 1 LiDAR in Central Utah. The .5 meter resolution bare earth
+      DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for
+      download. The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
+        >The National Map</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.sanpeteValley} />
+  </Section>
+  <Section {...page.section[15]}>
+    <a href={millsite2017Map.src} slot="image">
+      <Image src={millsite2017Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During the Fall of 2017 UGRC and the U.S. Department of Agriculture, Natural Resources Conservation Service
+      acquired ~13 square miles of 8 points per meter Quality Level 1 LiDAR of Millsite Reservoir, Utah. The .5 meter
+      resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy
+      and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected October 21 and 25, 2017 when the reservoir was drained.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.millsite} />
+  </Section>
+  <Section {...page.section[16]}>
+    <a href={washakie2017Map.src} slot="image">
+      <Image src={washakie2017Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During the Spring of 2017 UGRC and the Utah Department of Natural Resources, Division of Water Resources acquired
+      ~28 square miles of 8 points per meter Quality Level 1 LiDAR of Washakie, Utah and Whites Valley in Northern Utah.
+      The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical
+      RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected April 15-16, 2017.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.washakie} />
+  </Section>
+  <Section {...page.section[17]}>
+    <a href={washingtonCounty2017Map.src} slot="image">
+      <Image
+        src={washingtonCounty2017Map}
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
+    >
+    <p>
+      During the Spring of 2017 UGRC, Washington County, and the Utah Division of Emergency Management acquired ~516
+      square miles of 2 points per meter Quality Level 2 LiDAR of areas within Washington County in Southwestern Utah.
+      The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical
+      RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.washingtonCounty} />
+  </Section>
+  <Section {...page.section[18]}>
+    <a href={kanab2016Map.src} slot="image">
+      <Image src={kanab2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around Fredonia, AZ that covers ~150
+      square miles of Utah with 8 points per meter Quality Level 1 LiDAR and includes Kanab, UT. The .5 meter resolution
+      bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are
+      available for download. The LAS point clouds, classified to ground, low, medium, are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected between October and December, 2016.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.kanab} />
+  </Section>
+  <Section {...page.section[19]}>
+    <a href={bear2016Map.src} slot="image">
+      <Image src={bear2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During the Fall of 2016 UGRC, Cache and Weber County, and the Utah Department of Emergency Management acquired
+      ~790 square miles of 8 points per meter Quality Level 1 LiDAR. The project areas cover the Cache Valley, Upper
+      Weber Valley, Bear River from Cache County to the Great Salt Lake, and the Bear Lake shoreline. The .5 meter
+      resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy
+      and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected between September, 2016 and November, 2017.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.bear2016} />
+  </Section>
+  <Section {...page.section[20]}>
+    <a href={gsl2016Map.src} slot="image">
+      <Image src={gsl2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During the Fall of 2016 UGRC, Utah Geological Survey, and the Utah Division of Forestry, Fire and State Lands
+      acquired ~1,555 square miles of 2 and 8 ppm Quality Level 1 and 2 LiDAR of the Great Salt Lake and Utah Lake. The
+      GSL portion of the project, collected between September and November 2016, is a combination of .5 QL1 and 1 meter
+      QL2. Some areas are available as .5 meter although the entire GSL project areas is available as 1 meter. During
+      the acquisition the GSL was at a historical low. The Utah Lake portion, collected between October and November
+      2016, is all .5 meter and is mainly the lake shoreline. The .5 and 1 meter resolution bare earth DEMs and
+      first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download.
+      The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
+        >The National Map</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.gsl2016} />
+  </Section>
+  <Section {...page.section[21]}>
+    <a href={monroeMountain2016Map.src} slot="image">
+      <Image
+        src={monroeMountain2016Map}
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
+    >
+    <p>
+      During the Summer of 2016 UGRC and the U.S. Forest Service acquired 292 square miles of 8 points per meter Quality
+      Level 1 LiDAR on Monroe Mountain in central Utah. The acquisition took place with leaf-on conditions to model the
+      forest canopy in addition to ground elevations. The .5 meter resolution bare earth DEMs and
+      first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download.
+      The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
+        >The National Map</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.monroeMountain} />
+  </Section>
+  <Section {...page.section[22]}>
+    <a href={forge2016Map.src} slot="image">
+      <Image src={forge2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During the Fall of 2016 UGRC and the Utah Geological Survey acquired ~205 square miles of 8 points per meter
+      Quality Level 1 LiDAR of The Frontier Observatory for Research in Geothermal Energy (FORGE) area around Milford,
+      Utah in Beaver and Millard Counties in western Utah. The .5 meter resolution bare earth DEMs and
+      first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download.
+      The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
+        >The National Map</ExternalLink
+      >. This elevation data was collected between October 26 and November 3, 2016.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12B) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.forge} />
+  </Section>
+  <Section {...page.section[23]}>
+    <a href={rivers2015Map.src} slot="image">
+      <Image src={rivers2015Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During late Fall of 2015 the Utah Division of Forestry, Fire & State Lands and the U.S. National Park Service
+      acquired ~152 square miles covering ~680 river miles of 8 points per meter LiDAR of the Colorado, Green, and Yampa
+      rivers in Utah and Colorado. The LiDAR collection is mainly of the river course and not the surrounding canyons. A
+      small ~.8 square mile area was also collected in Arches N.P. The .5 meter resolution bare earth DEMs and
+      first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download.
+      The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
+        >The National Map</ExternalLink
+      >. This elevation data was collected October and November of 2015 during low flow conditions.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.rivers2015} />
+  </Section>
+  <Section {...page.section[24]}>
+    <a href={zionNP2015Map.src} slot="image">
+      <Image src={zionNP2015Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During 2015 and 2016 the U.S. Geological Survey and the U.S. Park Service acquired ~239 square miles of 2 and 8
+      points per meter Quality Level 1 & 2 LiDAR for Zion National Park in Utah. The .5 and 1 meter resolution bare
+      earth DEMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point
+      clouds, classified to ground, low, medium, and high vegetation, are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected between November 2015 and July 2016
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12B) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.zionNP} />
+  </Section>
+  <Section {...page.section[25]}>
+    <a href={wasatchFront2013Map.src} slot="image">
+      <Image src={wasatchFront2013Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      During the Fall of 2013 and the Spring of 2014 UGRC and partners acquired 1,422 square miles of 8 points per meter
+      Quality Level 1 LiDAR for areas along the Wasatch Front including the urbanized areas of Salt Lake County and Utah
+      County and areas along the Wasatch Fault from Sanpete County north into Oneida County in southeast Idaho. The .5
+      meter resolution bare earth hydro flattened DTMs and first-return/highest-hit DSMs in .img format have a 9.25cm
+      vertical RMSE accuracy. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.wasatchFront} />
+  </Section>
+  <Section {...page.section[26]}>
+    <!-- <a href={gsl2011Map.src} slot="image">
+      <Image src={gsl2011Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    > -->
+    <p>
+      During 2011 UGRC and Utah Geological Survey (UGS) acquired ~1,870 square miles of .85 meter lidar for areas
+      including the north, east, and south sides of the Great Salt Lake, Cedar Valley, Hurricane Fault, and more. The 1
+      meter bare-earth DEMs in .img format are available for download. The DSMs and LAS classified point clouds are
+      available from <ExternalLink
+        href="https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.042013.26912.1"
+        >Open Topography</ExternalLink
+      >.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID08) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.gsl2011} />
+  </Section>
+  <Section {...page.section[27]}>
+    <!-- <a href={wasatch2006Map.src} slot="image">
+      <Image src={wasatch2006Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    > -->
+    <p>
+      During 2006 UGRC and partners acquired ~1,283 square miles of a combination of 1, 1.25, and 2 meter bare-earth
+      DEMs derived from XYZi lidar point clouds in .asc format. Acquisition areas include Salt Lake, Wasatch, and Iron
+      counties.
+    </p>
+    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID03) projection.</p>
+    <DirectDownloads title="Project assets" links={projectAssets.wasatch2006} />
+  </Section>
+</Layout>
