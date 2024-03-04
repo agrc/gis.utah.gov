@@ -2653,8 +2653,9 @@ export const dataPages: DownloadMetadata = {
   'Utah Land Ownership': {
     itemId: 'hosted by SITLA',
     name: 'Utah Land Ownership',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceHost: 'https://gis.trustlands.utah.gov/mapping/rest/services/',
+    featureServiceId: 'Land_Ownership',
+    openSgid: 'cadastre.land_ownership',
     layerId: 0,
   },
   'UDOT Routes ALRS': {
