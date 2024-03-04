@@ -44,8 +44,8 @@ export const metadata: IMetadata = {
   title: 'Lidar Elevation Data',
   description: `All LiDAR projects across Utah since 2006.`,
   stewards: ['UGRC'],
-  type: ProductType.RASTER, // This comes from the ProductType enum in types.ts
-  category: SgidCategory.ELEVATION, // This comes from the SgidCategory enum in types.ts
+  type: ProductType.RASTER,
+  category: SgidCategory.ELEVATION,
 };
 
 const page: IStandardPageMetadata = {
@@ -54,107 +54,37 @@ const page: IStandardPageMetadata = {
   section: stripeSections([
     {},
     {
-      title: '2022 Fish Springs (topo-bathy)',
+      title: '2006 Wasatch Front, Iron County, Heber Valley',
       actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?cat=.5%20Meter%20%7B2022%20Fish%20Springs%20LiDAR%7D&title=Fish%20Springs%202022%20Topo-Bathy%20LiDAR',
+      actionUrl: 'https://raster.utah.gov/?cat=2%20Meter%20%7B2006%20LiDAR%7D',
     },
     {
-      title: '2020 FEMA HQ',
+      title: '2011 Great Salt Lake, Cedar Valley, Hurricane Fault',
       actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20FEMA%20HQ%20LiDAR%7D,1%20Meter%20%7B2020%20FEMA%20HQ%20LiDAR%7D&title=FEMA%20HQ%202020%20LiDAR',
+      actionUrl: 'https://raster.utah.gov/?cat=1%20Meter%20%7B2011%20LiDAR%7D',
     },
     {
-      title: '2020 Logan River Watershed',
+      title: '2013-2014 Wasatch Front and the Wasatch Fault',
       actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2020%20Logan%20River%20Watershed%20LiDAR%7D',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2013-2014%20LiDAR%7D',
     },
     {
-      title: '2020 Central & Southern Utah',
+      title: '2015 Zion National Park',
       actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?cat=1%20Meter%20%7B2020%20Central%20Southern%20Utah%20LiDAR%7D&title=Central%20Southern%20Utah%202020%20LiDAR',
+      actionUrl: 'https://gis.utah.gov/data/elevation-and-terrain/2015-lidar-zion-np/',
     },
     {
-      title: '2020 Northern & Central Utah',
+      title: '2015 Colorado, Green & Yampa Rivers',
       actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20Northern%20Central%20Utah%20LiDAR%7D,1%20Meter%20%7B2020%20Northern%20Central%20Utah%20LiDAR%7D&title=Northern%20Central%20Utah%202020%20LiDAR',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2015%20LiDAR%7D',
     },
     {
-      title: '2020 Southern Utah',
+      title: '2016 FORGE',
       actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20Southern%20Utah%20LiDAR%7D,1%20Meter%20%7B2020%20Southern%20Utah%20LiDAR%7D&title=Southern%20Utah%202020%20LiDAR',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D',
     },
     {
-      title: '2019 Kane County',
-      actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=1%20Meter%20%7B2019%20Kane%20County%20LiDAR%7D',
-    },
-    {
-      title: '2019 Strawberry River',
-      actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2019%20Strawberry%20River%20LiDAR%7D,HRO%202019%20(10cm)&title=2019%20Strawberry%20River%20Lidar%20DEMs%20and%20Aerial%20Photography',
-    },
-    {
-      title: '2018 Uintah Basin and Heber Valley',
-      actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D,1%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D&title=Uintah%20Basin%20and%20Heber%20Valley%202018%20LiDAR',
-    },
-    {
-      title: '2018 Box Elder County',
-      actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2018%20Box%20Elder%20LiDAR%7D',
-    },
-    {
-      title: '2018 Northern Utah',
-      actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Northern%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Northern%20Utah%20LiDAR%7D&title=Northern%20Utah%202018%20LiDAR',
-    },
-    {
-      title: '2018 Central Utah',
-      actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D&title=Central%20Utah%202018%20LiDAR',
-    },
-    {
-      title: '2018 Southern Utah',
-      actionText: 'Download from Raster',
-      actionUrl:
-        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Southern%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Southern%20Utah%20LiDAR%7D&title=Southern%20Utah%202018%20LiDAR',
-    },
-    {
-      title: '2018 Sanpete Valley',
-      actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2018%20Sanpete%20Valley%20LiDAR%7D',
-    },
-    {
-      title: '2017 Millsite Reservoir',
-      actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2017%20Millsite%20Reservoir%20LiDAR%7D',
-    },
-    {
-      title: '2017 Washakie and Whites Valley',
-      actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2017%20Washakie%20and%20Whites%20Valley%20LiDAR%7D',
-    },
-    {
-      title: '2017 Washington County',
-      actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=1%20Meter%20%7B2017%20LiDAR%7D&title=Washington%20County%202017%20LiDAR',
-    },
-    {
-      title: '2016 Kanab Utah',
-      actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20Kanab%20LiDAR%7D',
-    },
-    {
-      title: '2016 Bear Lake, Bear River, Cache Valley & Upper Weber Valley',
+      title: '2016 Monroe Mountain',
       actionText: 'Download from Raster',
       actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D',
     },
@@ -165,39 +95,109 @@ const page: IStandardPageMetadata = {
         'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2016%20LiDAR%7D,1%20Meter%20%7B2016%20LiDAR%7D&title=Utah%202016%20LiDAR',
     },
     {
-      title: '2016 Monroe Mountain',
+      title: '2016 Bear Lake, Bear River, Cache Valley & Upper Weber Valley',
       actionText: 'Download from Raster',
       actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D',
     },
     {
-      title: '2016 FORGE',
+      title: '2016 Kanab Utah',
       actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20LiDAR%7D',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2016%20Kanab%20LiDAR%7D',
     },
     {
-      title: '2015 Colorado, Green & Yampa Rivers',
+      title: '2017 Washington County',
       actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2015%20LiDAR%7D',
+      actionUrl: 'https://raster.utah.gov/?cat=1%20Meter%20%7B2017%20LiDAR%7D&title=Washington%20County%202017%20LiDAR',
     },
     {
-      title: '2015 Zion National Park',
+      title: '2017 Washakie and Whites Valley',
       actionText: 'Download from Raster',
-      actionUrl: 'https://gis.utah.gov/data/elevation-and-terrain/2015-lidar-zion-np/',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2017%20Washakie%20and%20Whites%20Valley%20LiDAR%7D',
     },
     {
-      title: '2013-2014 Wasatch Front and the Wasatch Fault',
+      title: '2017 Millsite Reservoir',
       actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2013-2014%20LiDAR%7D',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2017%20Millsite%20Reservoir%20LiDAR%7D',
     },
     {
-      title: '2011 Great Salt Lake, Cedar Valley, Hurricane Fault',
+      title: '2018 Sanpete Valley',
       actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=1%20Meter%20%7B2011%20LiDAR%7D',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2018%20Sanpete%20Valley%20LiDAR%7D',
     },
     {
-      title: '2006 Wasatch Front, Iron County, Heber Valley',
+      title: '2018 Southern Utah',
       actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=2%20Meter%20%7B2006%20LiDAR%7D',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Southern%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Southern%20Utah%20LiDAR%7D&title=Southern%20Utah%202018%20LiDAR',
+    },
+    {
+      title: '2018 Central Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Central%20Utah%20LiDAR%7D&title=Central%20Utah%202018%20LiDAR',
+    },
+    {
+      title: '2018 Northern Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Northern%20Utah%20LiDAR%7D,1%20Meter%20%7B2018%20Northern%20Utah%20LiDAR%7D&title=Northern%20Utah%202018%20LiDAR',
+    },
+    {
+      title: '2018 Box Elder County',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2018%20Box%20Elder%20LiDAR%7D',
+    },
+    {
+      title: '2018 Uintah Basin and Heber Valley',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D,1%20Meter%20%7B2018%20Uintah%20Basin%20Heber%20Valley%20LiDAR%7D&title=Uintah%20Basin%20and%20Heber%20Valley%202018%20LiDAR',
+    },
+    {
+      title: '2019 Strawberry River',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2019%20Strawberry%20River%20LiDAR%7D,HRO%202019%20(10cm)&title=2019%20Strawberry%20River%20Lidar%20DEMs%20and%20Aerial%20Photography',
+    },
+    {
+      title: '2019 Kane County',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=1%20Meter%20%7B2019%20Kane%20County%20LiDAR%7D',
+    },
+    {
+      title: '2020 Southern Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20Southern%20Utah%20LiDAR%7D,1%20Meter%20%7B2020%20Southern%20Utah%20LiDAR%7D&title=Southern%20Utah%202020%20LiDAR',
+    },
+    {
+      title: '2020 Northern & Central Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20Northern%20Central%20Utah%20LiDAR%7D,1%20Meter%20%7B2020%20Northern%20Central%20Utah%20LiDAR%7D&title=Northern%20Central%20Utah%202020%20LiDAR',
+    },
+    {
+      title: '2020 Central & Southern Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?cat=1%20Meter%20%7B2020%20Central%20Southern%20Utah%20LiDAR%7D&title=Central%20Southern%20Utah%202020%20LiDAR',
+    },
+    {
+      title: '2020 Logan River Watershed',
+      actionText: 'Download from Raster',
+      actionUrl: 'https://raster.utah.gov/?cat=.5%20Meter%20%7B2020%20Logan%20River%20Watershed%20LiDAR%7D',
+    },
+    {
+      title: '2020 FEMA HQ',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2020%20FEMA%20HQ%20LiDAR%7D,1%20Meter%20%7B2020%20FEMA%20HQ%20LiDAR%7D&title=FEMA%20HQ%202020%20LiDAR',
+    },
+    {
+      title: '2022 Fish Springs (topo-bathy)',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?cat=.5%20Meter%20%7B2022%20Fish%20Springs%20LiDAR%7D&title=Fish%20Springs%202022%20Topo-Bathy%20LiDAR',
     },
   ]),
 };
@@ -604,7 +604,12 @@ const projectAssets = {
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <a href={lidarSamples.src} slot="image">
-      <Image src={lidarSamples} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={lidarSamples}
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px] rounded-lg"
+      /></a
     >
     <p>
       Light Detection and Ranging (LiDAR) is an optical remote sensing technology that can measure the distance to, or
@@ -637,7 +642,7 @@ const projectAssets = {
       >.
     </p>
   </Section>
-  <Section {...page.section[1]}>
+  <Section {...page.section[27]}>
     <a href={fishSprings2022Map.src} slot="image">
       <Image src={fishSprings2022Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -651,7 +656,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID18) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.fishSprings} />
   </Section>
-  <Section {...page.section[2]}>
+  <Section {...page.section[26]}>
     <a href={femaHQ2020Map.src} slot="image">
       <Image src={femaHQ2020Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -666,7 +671,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID18) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.femaHQ} />
   </Section>
-  <Section {...page.section[3]}>
+  <Section {...page.section[25]}>
     <a href={loganRiver2020Map.src} slot="image">
       <Image src={loganRiver2020Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -679,7 +684,7 @@ const projectAssets = {
     <p>This elevation data has a State Plane Utah North NAD83(CORS96) NAVD88 projection with units in US Feet.</p>
     <DirectDownloads title="Project assets" links={projectAssets.loganRiver} />
   </Section>
-  <Section {...page.section[4]}>
+  <Section {...page.section[24]}>
     <a href={centralSouthern2020Map.src} slot="image">
       <Image
         src={centralSouthern2020Map}
@@ -702,7 +707,7 @@ const projectAssets = {
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.centralSouthern} />
   </Section>
-  <Section {...page.section[5]}>
+  <Section {...page.section[23]}>
     <a href={northernCentral2020Map.src} slot="image">
       <Image
         src={northernCentral2020Map}
@@ -725,7 +730,7 @@ const projectAssets = {
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.northernCentral} />
   </Section>
-  <Section {...page.section[6]}>
+  <Section {...page.section[22]}>
     <a href={southern2020Map.src} slot="image">
       <Image src={southern2020Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -743,7 +748,7 @@ const projectAssets = {
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.southern2020} />
   </Section>
-  <Section {...page.section[7]}>
+  <Section {...page.section[21]}>
     <a href={kaneCounty2019Map.src} slot="image">
       <Image src={kaneCounty2019Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -758,7 +763,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.kaneCounty} />
   </Section>
-  <Section {...page.section[8]}>
+  <Section {...page.section[20]}>
     <a href={strawberryRiver2019Map.src} slot="image">
       <Image
         src={strawberryRiver2019Map}
@@ -779,7 +784,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.strawberryRiver} />
   </Section>
-  <Section {...page.section[9]}>
+  <Section {...page.section[19]}>
     <a href={uintahHeber2018Map.src} slot="image">
       <Image src={uintahHeber2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -794,7 +799,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.uintahHeber} />
   </Section>
-  <Section {...page.section[10]}>
+  <Section {...page.section[18]}>
     <a href={boxElder2018Map.src} slot="image">
       <Image src={boxElder2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -809,7 +814,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID18) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.boxElder} />
   </Section>
-  <Section {...page.section[11]}>
+  <Section {...page.section[17]}>
     <a href={northern2018Map.src} slot="image">
       <Image src={northern2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -824,7 +829,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.northern} />
   </Section>
-  <Section {...page.section[12]}>
+  <Section {...page.section[16]}>
     <a href={central2018Map.src} slot="image">
       <Image src={central2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -838,7 +843,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.central} />
   </Section>
-  <Section {...page.section[13]}>
+  <Section {...page.section[15]}>
     <a href={southern2018Map.src} slot="image">
       <Image src={southern2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -868,7 +873,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.sanpeteValley} />
   </Section>
-  <Section {...page.section[15]}>
+  <Section {...page.section[13]}>
     <a href={millsite2017Map.src} slot="image">
       <Image src={millsite2017Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -883,7 +888,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.millsite} />
   </Section>
-  <Section {...page.section[16]}>
+  <Section {...page.section[12]}>
     <a href={washakie2017Map.src} slot="image">
       <Image src={washakie2017Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -898,7 +903,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.washakie} />
   </Section>
-  <Section {...page.section[17]}>
+  <Section {...page.section[11]}>
     <a href={washingtonCounty2017Map.src} slot="image">
       <Image
         src={washingtonCounty2017Map}
@@ -918,7 +923,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.washingtonCounty} />
   </Section>
-  <Section {...page.section[18]}>
+  <Section {...page.section[10]}>
     <a href={kanab2016Map.src} slot="image">
       <Image src={kanab2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -933,7 +938,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.kanab} />
   </Section>
-  <Section {...page.section[19]}>
+  <Section {...page.section[9]}>
     <a href={bear2016Map.src} slot="image">
       <Image src={bear2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -949,7 +954,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.bear2016} />
   </Section>
-  <Section {...page.section[20]}>
+  <Section {...page.section[8]}>
     <a href={gsl2016Map.src} slot="image">
       <Image src={gsl2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -968,7 +973,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.gsl2016} />
   </Section>
-  <Section {...page.section[21]}>
+  <Section {...page.section[7]}>
     <a href={monroeMountain2016Map.src} slot="image">
       <Image
         src={monroeMountain2016Map}
@@ -989,7 +994,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.monroeMountain} />
   </Section>
-  <Section {...page.section[22]}>
+  <Section {...page.section[6]}>
     <a href={forge2016Map.src} slot="image">
       <Image src={forge2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -1005,7 +1010,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12B) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.forge} />
   </Section>
-  <Section {...page.section[23]}>
+  <Section {...page.section[5]}>
     <a href={rivers2015Map.src} slot="image">
       <Image src={rivers2015Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -1022,7 +1027,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.rivers2015} />
   </Section>
-  <Section {...page.section[24]}>
+  <Section {...page.section[4]}>
     <a href={zionNP2015Map.src} slot="image">
       <Image src={zionNP2015Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -1037,7 +1042,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12B) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.zionNP} />
   </Section>
-  <Section {...page.section[25]}>
+  <Section {...page.section[3]}>
     <a href={wasatchFront2013Map.src} slot="image">
       <Image src={wasatchFront2013Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
@@ -1053,7 +1058,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.wasatchFront} />
   </Section>
-  <Section {...page.section[26]}>
+  <Section {...page.section[2]}>
     <!-- <a href={gsl2011Map.src} slot="image">
       <Image src={gsl2011Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     > -->
@@ -1069,7 +1074,7 @@ const projectAssets = {
     <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID08) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.gsl2011} />
   </Section>
-  <Section {...page.section[27]}>
+  <Section {...page.section[1]}>
     <!-- <a href={wasatch2006Map.src} slot="image">
       <Image src={wasatch2006Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     > -->
