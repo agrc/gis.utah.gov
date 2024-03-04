@@ -42,6 +42,7 @@
     "astro": "^4.4.6",
     "astro-meta-tags": "^0.2.1",
     "classnames": "^2.5.1",
+    "html-to-text": "^9.0.5",
     "lodash.capitalize": "^4.2.1",
     "mdast-util-from-markdown": "^2.0.0",
     "mdast-util-mdx": "^3.0.0",

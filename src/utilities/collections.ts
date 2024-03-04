@@ -1,6 +1,7 @@
 import getReadingTimeFromMarkdown from '@utils/readingTime';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { execSync } from 'child_process';
+import { convert } from 'html-to-text';
 import { fromMarkdown } from 'mdast-util-from-markdown';
 import { mdxFromMarkdown } from 'mdast-util-mdx';
 import { toString } from 'mdast-util-to-string';
@@ -32,10 +33,15 @@ function getDescriptionFromMarkdown(markdown: string, type: 'md' | 'mdx'): strin
 
   const parsedMarkdown = fromMarkdown(markdown, options);
 
+  // if the markdown is just a single HTML node, convert it to text
+  if (parsedMarkdown.children.length === 1 && parsedMarkdown.children[0].type === 'html') {
+    return convert(parsedMarkdown.children[0].value);
+  }
+
   // remove any non-text nodes such as ESM imports in MDX files
   remove(parsedMarkdown, (node) => !['paragraph', 'heading', 'text'].includes(node.type));
 
-  return toString(parsedMarkdown, { includeImageAlt: false, includeHtml: false }).slice(0, 200) ?? 'a blog post';
+  return toString(parsedMarkdown, { includeImageAlt: false }).slice(0, 200) ?? 'a blog post';
 }
 
 let blogPostsCache: Record<'all' | 'published', DecoratedBlogEntry[]> = {
