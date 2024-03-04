@@ -1953,8 +1953,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Correctional Facilities': {
     itemId: '1d643eaf1a4c4868a765b199f8ff8085',
     name: 'Utah Correctional Facilities',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CorrectionalFacilities',
+    openSgid: 'society.correctional_facilities',
     layerId: 0,
   },
   'Utah Cemeteries Polygons': {
