@@ -2,7 +2,10 @@ import getReadingTimeFromMarkdown from '@utils/readingTime';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { execSync } from 'child_process';
 import { fromMarkdown } from 'mdast-util-from-markdown';
+import { mdxFromMarkdown } from 'mdast-util-mdx';
 import { toString } from 'mdast-util-to-string';
+import { mdxjs } from 'micromark-extension-mdxjs';
+import { remove } from 'unist-util-remove';
 
 const getLastModifiedTime = (path: string) => {
   if (import.meta.env.DEV) {
@@ -23,6 +26,17 @@ export type DecoratedBlogEntry = BlogEntry & {
   };
 };
 
+function getDescriptionFromMarkdown(markdown: string, type: 'md' | 'mdx'): string {
+  const options = type === 'mdx' ? { extensions: [mdxjs()], mdastExtensions: [mdxFromMarkdown()] } : null;
+
+  const parsedMarkdown = fromMarkdown(markdown, options);
+
+  // remove any non-text nodes such as ESM imports in MDX files
+  remove(parsedMarkdown, (node) => !['paragraph', 'heading', 'text'].includes(node.type));
+
+  return toString(parsedMarkdown, { includeImageAlt: false, includeHtml: false }).slice(0, 200) ?? 'a blog post';
+}
+
 let blogPostsCache: Record<'all' | 'published', DecoratedBlogEntry[]> = {
   all: [],
   published: [],
@@ -36,17 +50,17 @@ export async function getBlogPosts(all = false): Promise<DecoratedBlogEntry[]> {
   const data = (await getCollection('blog'))
     .filter((post) => all || post.data.published)
     .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf())
-    .map(
-      (post): DecoratedBlogEntry => ({
+    .map((post): DecoratedBlogEntry => {
+      return {
         ...post,
         data: {
           ...post.data,
-          description: toString(fromMarkdown(post.body)).slice(0, 200) ?? 'a blog post',
+          description: getDescriptionFromMarkdown(post.body, post.id.split('.').pop() as 'md' | 'mdx'),
           estimatedReadTime: getReadingTimeFromMarkdown(post.body),
           lastUpdated: getLastModifiedTime(post.id),
         },
-      }),
-    );
+      };
+    });
 
   blogPostsCache[cacheKey] = data;
 
