@@ -8,14 +8,14 @@ interface Props {
   coverImage: string;
   coverImageAlt: string;
   date: Date;
-  description: string;
+  snippet: string;
   estimatedReadingTime: string;
   slug: string;
   tags?: string[];
   title: string;
 }
 
-const { category, coverImage, date, description, estimatedReadingTime, slug, title } = Astro.props;
+const { category, coverImage, date, snippet, estimatedReadingTime, slug, title } = Astro.props;
 const { year, month, day } = getDateParts(date);
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/**/*.{jpg,jpeg,png,webp,gif}');
 if (!images[coverImage]) throw new Error(`"${coverImage}" not found in "/src/images/**/*.{jpg,jpeg,png,webp,gif}"`);
@@ -41,7 +41,7 @@ if (!images[coverImage]) throw new Error(`"${coverImage}" not found in "/src/ima
           {title}
           <span class="text-sm font-normal">({estimatedReadingTime})</span>
         </p>
-        <p class="line-clamp-4 text-ellipsis text-zinc-600 dark:text-zinc-300">{description}</p>
+        <p class="line-clamp-4 text-ellipsis text-zinc-600 dark:text-zinc-300">{snippet}</p>
       </div>
     </div>
     <time

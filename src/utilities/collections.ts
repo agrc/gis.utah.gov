@@ -22,13 +22,13 @@ type BlogEntry = CollectionEntry<'blog'>;
 
 export type DecoratedBlogEntry = BlogEntry & {
   data: BlogEntry['data'] & {
-    description: string;
+    snippet: string;
     estimatedReadTime: string;
     lastUpdated: Date;
   };
 };
 
-function getDescriptionFromMarkdown(markdown: string, type: 'md' | 'mdx'): string {
+function getSnippetFromMarkdown(markdown: string, type: 'md' | 'mdx'): string {
   const options = type === 'mdx' ? { extensions: [mdxjs()], mdastExtensions: [mdxFromMarkdown()] } : null;
 
   const parsedMarkdown = fromMarkdown(markdown, options);
@@ -67,7 +67,7 @@ export async function getBlogPosts(all = false): Promise<DecoratedBlogEntry[]> {
         ...post,
         data: {
           ...post.data,
-          description: getDescriptionFromMarkdown(post.body, documentType),
+          snippet: getSnippetFromMarkdown(post.body, documentType),
           estimatedReadTime: getReadingTimeFromMarkdown(post.body),
           lastUpdated: getLastModifiedTime(post.id),
         },
