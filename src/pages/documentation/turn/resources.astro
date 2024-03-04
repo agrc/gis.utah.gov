@@ -9,13 +9,13 @@ import ExternalLink from '@components/page/ExternalLink.astro';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  title: 'TURN Resources',
-  pillar: 'TURN',
+  title: 'TURN resources',
+  pillar: 'Documentation',
   section: stripeSections([
     {},
-    { title: 'GNSS Network' },
+    { title: 'GNSS network' },
     { title: 'Troubleshooting TURN' },
-    { title: 'Supported Devices' },
+    { title: 'Supported devices' },
   ]),
 };
 ---
@@ -33,11 +33,11 @@ const page: IStandardPageMetadata = {
     <p><em>What is a GNSS network and how exactly does it work?</em></p>
     <p>
       A GNSS network consists of permanently located GPS receivers, installed across an area, that generate real-time,
-      high-accuracy GPS positioning. Basically, all of the permanently installed GPS receivers send their data to a
-      central system via the internet. This central system analyzes the input and adjusts and corrects the data to
-      provide the most accurate locations, usually down to centimeter level. Our networks use the Trimble PIVOT VRS
-      Platform. The generated data is sent from the GPS receiver to the GPS reference network through a wireless
-      connection using the Networked Transport of RTCM via Internet Protocol (NTRIP).
+      high-accuracy GPS positioning. All of the permanently installed GPS receivers send their data to a central system
+      via the internet. This central system analyzes the input and adjusts and corrects the data to provide the most
+      accurate locations, usually down to centimeter level. Our networks use the Trimble PIVOT VRS Platform. The
+      generated data is sent from the GPS receiver to the GPS reference network through a wireless connection using the
+      Networked Transport of RTCM via Internet Protocol (NTRIP).
     </p>
   </Section>
   <Section {...page.section[2]}>
