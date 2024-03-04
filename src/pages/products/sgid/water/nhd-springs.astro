@@ -52,20 +52,22 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <Section title="More resources" slot="more-resources" titlePosition="center">
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="NHD" href="https://www.usgs.gov/national-hydrography/national-hydrography-dataset"
+      <CardWithPopularLink
+        title="NHD explained"
+        href="https://www.usgs.gov/national-hydrography/national-hydrography-dataset"
         >National Hydrography Dataset described.</CardWithPopularLink
       >
       <CardWithPopularLink
-        title="Download"
+        title="The National Map downloads"
         href="https://prd-tnm.s3.amazonaws.com/index.html?prefix=StagedProducts/Hydrography/NHD/State/GDB/"
-        >NHD by state.</CardWithPopularLink
+        >NHD source data downloads by state.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Lakes" href="/products/sgid/water/nhd-lakes">NHD Lakes</CardWithSmallLink>
       <CardWithSmallLink title="Streams" href="/products/sgid/water/nhd-streams">NHD Rivers/Streams</CardWithSmallLink>
