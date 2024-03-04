@@ -2135,8 +2135,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Springs NHD': {
     itemId: '322595dd1da149679cb9875a7d4ab069',
     name: 'Utah Springs NHD',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'SpringsNHDHighRes',
+    openSgid: 'water.springs_nhd',
     layerId: 0,
   },
   'Utah Stream Gauges NHD': {
