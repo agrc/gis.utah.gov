@@ -77,6 +77,7 @@ export enum ProductType {
 export interface IHubDownload {
   itemId: string;
   name: string;
+  featureServiceHost?: string;
   featureServiceId: string;
   openSgid?: string;
   layerId?: number;
