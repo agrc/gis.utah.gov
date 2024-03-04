@@ -2651,7 +2651,9 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah Land Ownership': {
-    itemId: 'hosted by SITLA',
+    externalHubOrganization: 'SITLA',
+    oddHubName: 'land-ownership',
+    itemId: 'd55f91fda02141e4ab0e033ebf283d4e',
     name: 'Utah Land Ownership',
     featureServiceHost: 'https://gis.trustlands.utah.gov/mapping/rest/services/',
     featureServiceId: 'Land_Ownership',
