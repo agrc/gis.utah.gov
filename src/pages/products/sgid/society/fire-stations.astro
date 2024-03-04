@@ -1,0 +1,80 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Fire Stations',
+  description: `Fire station locations in Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`January 2023`, `September 2022`, `March 2022`, `October 2020`, `June 2013`, `August 2011`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Fire Stations includes any location where fire fighters are stationed or based out of, or where fire fighting
+      equipment is stored. This definition includes fire stations that are both private and public entities, and fire
+      stations that primarily fight forest or grassland fires. Fire fighting training academies are also included.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Fire Marshal" href="https://firemarshal.utah.gov/"
+        >Utah Department of Public Saftey.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="FFSL" href="https://ffsl.utah.gov/"
+        >Utah Division of Forestry Fire and State Lands.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Fire Response Areas" href="/products/sgid/society/fire-response-areas"
+        >Responding agency to a fire.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="EMS Areas" href="/products/sgid/society/emergency-medical-response-areas"
+        >Emergency medical response areas.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
