@@ -2296,8 +2296,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Fire Response Areas': {
     itemId: 'ee6b0673a1bb4e9c8a5e983dedb67e8e',
     name: 'Utah Fire Response Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'FireResponseAreas',
+    openSgid: 'society.fire_response_areas',
     layerId: 0,
   },
   'Utah DEQMAP EI Chemical': {
