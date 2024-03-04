@@ -6,8 +6,10 @@ tags:
   - geocoding
   - roads
 date: 2017-06-27T00:38:49.000Z
-title: 'Rethinking Geocoders: Adding Local Vernacular into the Build Process'
+title: "Rethinking Geocoders: Adding Local Vernacular into the Build Process"
 category: Developer
+cover_image: /src/images/pillar-blog/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process/statestreetaddressing.png
+cover_image_alt: state street addressing
 ---
 
 UGRC has been working on a project to enhance our approach to geocoding. This grew from the basic idea that humans often view addressing differently than a GIS system. For instance, as GIS professionals, we are accustom to storing data in a format that is versatile and verbose. The choices we make in maintaining road and address GIS data do not always result in satisfying address geocoding results, especially when best practices don't accommodate the local vernacular for addressing. A current project at UGRC, code-named Road Grinder, attempts to bridge this gap.

@@ -7,6 +7,8 @@ date: 2018-02-05T19:19:18.000Z
 tags:
   - process
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Over the past several months, UGRC has been updating the State Geographic Information Database (SGID) data lifecycle process. The data lifecycle process starts with data creation and extends to finalizing data for internal and external use. UGRC’s goal is to streamline this process and make data clearer and more accessible for all involved parties, from UGRC to local, state, and federal partners.

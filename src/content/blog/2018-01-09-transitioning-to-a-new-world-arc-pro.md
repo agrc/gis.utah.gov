@@ -7,13 +7,15 @@ date: 2018-01-09T11:12:13.000Z
 tags:
   - pro
 category: Guestblog
+cover_image: /src/images/pillar-blog/2018-01-09-transitioning-to-a-new-world-arc-pro/jp_arcproscreenshot.png
+cover_image_alt: ArcPro Screenshot
 ---
 
 I have spent the last 4 months learning and using ArcPro while also learning a new job (see the end of this post). Like many of my fellow GIS users, I was hesitant to make the leap into the unknown after 10 years using ArcMap. I had heard rumors of ArcPro being “buggy”, everything being hard to find, and data management being a mystery. While I can neither confirm nor deny the truth behind those complaints, I am writing this blog post to provide a bit of advice for those contemplating/starting the switch to ArcPro, as well as to hopefully provide some “I’ve been there” support for those who have already made the switch.
 
 ## Advice on Switching from ArcMap to ArcPro
 
-#### Prepare yourself
+### Prepare yourself
 
 A typical view in ArcPro
 ![ArcPro Screenshot](../../images/pillar-blog/2018-01-09-transitioning-to-a-new-world-arc-pro/jp_arcproscreenshot.png)

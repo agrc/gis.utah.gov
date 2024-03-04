@@ -12,6 +12,8 @@ tags:
   - notebook
   - tutorial
 category: SGID Blog
+cover_image: /src/images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_counties_plot.png
+cover_image_alt: Utah County Boundaries
 ---
 
 The accompanying Python Notebook for this blog post can be found [here on Google Colab](https://colab.research.google.com/drive/15brITjN9vD9P_9-kiyzu97h8z0pVG6mu).

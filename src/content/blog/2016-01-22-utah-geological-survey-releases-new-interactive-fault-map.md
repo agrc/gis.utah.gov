@@ -12,6 +12,8 @@ date: 2016-01-22 13:31:17 -0700
 title: Utah Geological Survey Releases New Interactive Fault Map
 published: false
 category: Guestblog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <a href="/images/404.png"><img src="/images/404.png" alt="" title="FaultsWebApp" class="inline-text-right" loading="lazy" /></a>

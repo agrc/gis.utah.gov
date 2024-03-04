@@ -10,6 +10,8 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Once again we've come to the beginning of a new year. There's nothing we can do to prevent it; time moves on and progress is made, as the folks in Utah County know. Utah County is growing all the time. As in 2018, they led again in the number of annexations in 2019 with 28. Not too far behind was Cache County with 20. Both were far ahead of the other counties--almost three times the number of annexations. Also this year we are welcoming another new city to the state: the Town of Brighton. Many are familiar with the area, and now the Town of Brighton is an incorporated city as well as a great place to ski and tour. We would like to thank all the hardworking recorders and staff out there in the counties and towns. With your help, the Lieutenant Governor’s Office and UGRC processed 104 annexations, adjustments, disconnections, and incorporations in 2019. We would also like to extend a special thank-you to Emery County and Weber County for helping get the state data up to date by sending us a couple of missing annexations.
@@ -21,7 +23,7 @@ To review the documents you can go here: [Utah Lt. Governor Municipal Certificat
 The following table shows the changes and annexations (listed by county and city) since October 15, 2019:
 
 | County     | City                           | Number of Changes |
-| ---------- | ------------------------------ | ----------------- |
+|------------|--------------------------------|-------------------|
 | Box Elder  | Brigham City                   | 1                 |
 | Cache      | Hyrum                          | 2                 |
 |            | Logan                          | 1                 |

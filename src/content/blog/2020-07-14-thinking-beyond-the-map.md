@@ -9,6 +9,8 @@ tags:
   - data
   - coordination
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2020-07-14-thinking-beyond-the-map/geospatial.png
+cover_image_alt: Location drives the system
 ---
 
 If you’re reading this post, you’re already aware that geospatial technology (a.k.a. GIS) has become an essential part of our daily lives. Its capabilities extend from small-scale phone applications all the way up to multibillion dollar business systems, including big tech, insurance, intel and healthcare industries, just to name a few. As a result, the distinction between information technology and GIS is fading fast. This is exciting because as geospatial technology goes mainstream, we are seeing a wider array of uses for it - and often, the map is nowhere to be seen. It’s the invisible geospatial data and intelligence that is driving these systems.

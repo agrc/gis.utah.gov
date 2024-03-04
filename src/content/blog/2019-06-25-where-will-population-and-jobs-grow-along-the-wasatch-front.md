@@ -11,6 +11,8 @@ tags:
   - jobs
   - wfrc
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Seven new GIS datasets are now available that provide annual projections, through 2050, of population and job densities for the Salt Lake - Provo - Ogden urban corridor extending from Santaquin north to Brigham City. The projections datasets each present the annual forecasted counts for each year 2019 through 2050 for the following variables:

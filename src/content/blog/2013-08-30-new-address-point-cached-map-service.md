@@ -11,6 +11,8 @@ date: 2013-08-30 13:31:42 -0600
 title: New Address Point Cached Map Service
 published: false
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><img alt="" src="/images/404.png" class='inline-text-right' />UGRC recently released an address point map service. The service contains a cached version of &nbsp;<a href="/blog/2013-06-28-utah-gis-framework-data-for-800-please-alex">Utah&rsquo;s Statewide Address Points dataset</a>. </p>

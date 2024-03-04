@@ -9,6 +9,8 @@ date: 2014-09-22 11:09:51 -0600
 title: grunt-esri-slurp
 published: false
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 [**Update**(3/17/16): ESRI has released [a bower package for the JS API](https://github.com/Esri/arcgis-js-api) that removes the need for this project.]

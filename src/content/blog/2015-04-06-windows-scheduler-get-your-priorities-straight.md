@@ -4,9 +4,11 @@ author:
   email: stdavis@utah.gov
 tags: []
 date: 2015-04-06 08:32:18 -0600
-title: 'Windows Scheduler: Get Your Priorities Straight'
+title: "Windows Scheduler: Get Your Priorities Straight"
 published: false
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>Here at UGRC we have a variety of tasks (usually python scripts) that need to be run on a schedule. These are usually workflows that scrape and ETL data for web applications. Currently we use <a href="https://windows.microsoft.com/en-us/windows/schedule-task">Windows Scheduler</a> to run these scripts. Recently I've had problems with scripts taking way too long to complete. After a bit of digging I discovered that, by default, Windows Scheduler assigns a process priority of "Below Normal" to all tasks. The pain point is that they provide no UI to change this setting. After a bit of digging I found the following steps to work around this problem by hand editing the xml export of a task.</p>

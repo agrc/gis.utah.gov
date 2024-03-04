@@ -10,6 +10,8 @@ date: 2013-06-05 14:47:11 -0600
 title: Utah SGID Layer Updates
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>UGRC has updated some layers in the State Geographic Information Database (SGID). The updates are a result of the work that's been done for the Utah Broadband Project's, Community Anchor Institutions layer. During this update process UGRC did some house cleaning and consolidated some layers, with a common theme, into one layer. The layer that was consolidated has been removed from the SGID.</p>

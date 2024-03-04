@@ -7,6 +7,8 @@ author:
 date: 2017-07-31T15:39:39.000Z
 tags: []
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 File-based data products in remain an important component of Utah’s State Geographic Information Database (SGID). In a change designed not to be noticed by users, UGRC recently moved the zipped shapefiles and file geodatabase SGID data from an FTP server to Google Drive, (or G Suite Drive if your prefer the latest rebranding from the folks in Mountain View).

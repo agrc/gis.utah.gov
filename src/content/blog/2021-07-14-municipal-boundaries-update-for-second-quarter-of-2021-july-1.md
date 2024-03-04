@@ -10,6 +10,8 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 This July we're finding ourselves in the middle of a very hot and dry summer, and we hope everyone is keeping cool and hydrated. The state is opening up again, and we're all slowly recovering from the pandemic of this past year. This has been true of our work with municipal boundaries as well; it's been a slow start, but things are picking up in the second quarter of this year. The Lieutenant Governor’s Office is still going through some transitions, and a few annexations have been misplaced in the shuffle, but we are working to correct that.
@@ -20,7 +22,7 @@ To review any specific annexation document, go to the [Utah Lt. Governor Municip
 The following table shows the changes and annexations (listed by county and city) since April 1, 2021:
 
 | County     | City                       | Number of Changes |
-| ---------- | -------------------------- | ----------------- |
+|------------|----------------------------|-------------------|
 | Cache      | Hyde Park                  | 1                 |
 |            | Logan                      | 1                 |
 |            | Providence                 | 2                 |

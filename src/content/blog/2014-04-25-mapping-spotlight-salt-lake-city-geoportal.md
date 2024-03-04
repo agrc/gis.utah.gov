@@ -12,8 +12,10 @@ tags:
   - sanborn
 published: false
 date: 2014-04-25 15:41:15 -0600
-title: 'Mapping Spotlight: Salt Lake City Geoportal'
+title: "Mapping Spotlight: Salt Lake City Geoportal"
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>The Salt Lake City Geoportal project was created by the Digital Scholarship Lab at the University of Utah Marriott Library. The project is designed to examine changes that have taken place and the impacts which have resulted. The maps show present day information as well as information from 1935-1952. The project has also digitized many historical <a href="http://campusguides.lib.utah.edu/utahsanbornfireinsurancemaps">Sanborn Fire Insurance Maps</a>, which are an excellent resource for planning. </p>

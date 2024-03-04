@@ -9,8 +9,10 @@ tags:
   - gis history
   - policy
 date: 2016-05-24T21:57:21.000Z
-title: '25 Years Ago: Laying the Foundation for Utah GIS Success'
+title: "25 Years Ago: Laying the Foundation for Utah GIS Success"
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid25years.png
+cover_image_alt: SGID 25th anniversary sticker
 ---
 
 For those of us not in the GIS field at the time, 1991 was a significant year in Utah and beyond...

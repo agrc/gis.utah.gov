@@ -9,6 +9,8 @@ tags:
   - PLSS
   - parcel management
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 UGRC has published [Version 2.1 (V2.1)](/products/sgid/cadastre/plss) of the Utah Public Land Survey System (PLSS) Fabric for the start of 2019.

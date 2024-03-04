@@ -9,6 +9,8 @@ tags:
   - datums
   - aerial photography
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2020-02-11-agrc-purchase-of-hexagon-imagery/hexagonimagery.jpg
+cover_image_alt: Hexagon Aerial Imagery
 ---
 
 UGRC recently purchased a license to Hexagon’s statewide high resolution aerial photography (6” and 12” pixels) on behalf of Utah state, regional, and local government organizations. Since the purchase, UGRC staff have been working to provide a seamless delivery of the product through the Discover system, like we did with the Google Imagery. The licensing terms of the Hexagon product will remain the same as the terms for the Google Imagery. You can find information on accessing both the Google Imagery and the new Hexagon product on the [Discover section](/products/discover) of our website.

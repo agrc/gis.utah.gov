@@ -7,6 +7,8 @@ date: 2012-12-10 16:34:35 -0700
 title: Municipalities Updates Nov. 30, 2012
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Updates were made recently to the SGID10.BOUNDARIES.Municipalities feature class that resides on the Utah SGID ArcSDE database server.

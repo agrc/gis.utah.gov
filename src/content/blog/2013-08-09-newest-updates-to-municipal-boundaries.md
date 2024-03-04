@@ -7,6 +7,8 @@ date: 2013-08-09 15:40:40 -0600
 title: Newest updates to Municipal Boundaries
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>Updates were made recently to the <a href="/products/sgid/boundaries/municipal">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the <a href="/documentation/sgid/open-sgid">Utah SGID ArcSDE database server</a></p>

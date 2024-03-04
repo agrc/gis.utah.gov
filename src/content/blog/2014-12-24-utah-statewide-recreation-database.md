@@ -13,6 +13,8 @@ date: 2014-12-24 12:19:06 -0700
 title: Utah Statewide Recreation Database
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><img alt="" src="/images/404.png" class="inline-text-left" loading="lazy" />The Governor's Office of Economic Development's Outdoor Recreation Office has partnered with UGRC on a project to build a statewide trails database. A statewide trails database and map will offer something unique that few other states have and will aid Utahns and visitors alike with access to more areas of the state. </p>

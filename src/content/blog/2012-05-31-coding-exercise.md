@@ -7,6 +7,8 @@ published: false
 date: 2012-05-31 18:41:39 -0600
 title: Interview Coding Exercise
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>The Utah Geospatial Resource Center (UGRC), has a coding group that mainly creates web solutions with a focus on location. One challenge is geolocating user input. In layman's terms, we need to associate an x and y coordinate on a map with user input. If someone keys in ‘Delicate Arch’, we want to take them there on a map. The user input text can be anything, and for the purposes of this exercise, the user input is going to be a set of house addresses.</p>

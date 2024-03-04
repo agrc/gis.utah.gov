@@ -7,6 +7,8 @@ date: 2023-09-05T09:01:39.000Z
 tags:
   - change-management
 category: SGID Blog
+cover_image: /src/images/pillar-blog/2023-09-05-making-the-best-of-change-with-porter/sgid_lifecycle.jpg
+cover_image_alt: SGID Data lifecycle
 ---
 
 In today's fast-paced and interconnected world, GIS data are a key part of decision making and provide the backbone of innovation and progress. These roles demand high quality data with a methodical [data creation and maintenance strategy](/blog/2018-02-05-sgid-data-lifecycle) that makes it easy on you when data are added, removed, or changed. We are excited to share our latest efforts to provide consistent and reliable access to our high-quality SGID data.

@@ -7,6 +7,8 @@ date: 2021-11-29T07:18:45.000Z
 tags:
   - geocoding
 category: Developer
+cover_image: /src/images/pillar-blog/2021-11-29-introducing-the-official-ugrc-api-client/client.png
+cover_image_alt: first screen
 ---
 
 Assigning a geographic coordinate to an address, otherwise known as geocoding, is one of the simplest ways to enable data to be visualized on a map. This makes geocoding a gateway to a Geographic Information System (GIS). Because location matters to us, we make geocoding simple!

@@ -9,6 +9,8 @@ tags:
   - webapi
   - cloud
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 The current [WebAPI](https://api.mapserv.utah.gov) has been in production serving the public for multiple years. It handles millions of requests for spatial information every month and is free to use with a simple to create [API key](https://developer.mapserv.utah.gov/StartupGuide). While it receives constant [enhancements](https://github.com/agrc/api.mapserv.utah.gov/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed+label%3Aenhancement) and [bug fixes](https://github.com/agrc/api.mapserv.utah.gov/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed+label%3Abug), there have been no breaking changes to the API, nor have there been any major architectural updates. That is about to change with a major update currently in the works.

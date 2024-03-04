@@ -9,6 +9,8 @@ tags:
   - data
   - education
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2019-09-03-digital-maps-gis-history/ord_survey_uk_history.jpg
+cover_image_alt: The British Ordinance Survey
 ---
 
 When you dig into the history of mapping, it's remarkable how certain things come about. If you zoom in far enough, you discover seemingly coincidental occurrences that ended up playing pivotal roles in the development of digital maps and the product we now call “GIS.” It's interesting to see how these connections mesh together when you zoom back out.

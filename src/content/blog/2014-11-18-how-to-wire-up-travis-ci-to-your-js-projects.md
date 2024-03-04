@@ -7,6 +7,8 @@ date: 2014-11-18 16:26:46 -0700
 title: How to Wire up Travis-CI to your JS Projects
 published: false
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>For the past six months, UGRC has been using <a href="https://travis-ci.org">Travis CI</a> to automatically test and lint our projects each time we push a commit to the associated GitHub repository. Even though we run these tasks locally it&#39;s been helpful to have them run on Travis for when we miss things. It&#39;s also a major step towards automated deployments as well as running our tests via something like <a href="https://saucelabs.com">Sauce Labs</a> or <a href="http://www.browserstack.com/">Browser Stack</a>.</p>

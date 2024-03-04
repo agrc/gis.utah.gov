@@ -8,6 +8,8 @@ date: 2013-04-16 06:43:30 -0600
 title: ESRI JSAPI 3.4 and the Dojo Build System
 published: false
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 In a <a href="/blog/2012-05-01-speed-up-your-esri-javascript-api-webapp">previous post</a>, I outlined how I use the <a href="https://dojotoolkit.org/reference-guide/build/">Dojo Build System</a> to optimize my web app code for production. Specifically I showed how I get around the problem of working with ESRI's ArcGIS API for JavaScript library which has already been run through the build system. However, with their recent upgrade to AMD-style module loading my handy trick of using:

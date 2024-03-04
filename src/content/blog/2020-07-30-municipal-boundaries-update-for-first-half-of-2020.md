@@ -11,6 +11,8 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 As you may have noticed, a lot of different things are going on in the world right now. UGRC staff are now working from home, and we’re communicating mostly electronically. We had a few bumps along the way during this transition, but we’re happy to say that throughout these changes, our data has always been available to our users. Also, despite the challenges of this year, we’ve kept busy and the wheels of progress have kept turning. With that in mind, we appreciate your patience on the following delayed municipal boundaries updates.
@@ -25,7 +27,7 @@ The following table shows the changes and annexations (listed by county and city
 Stay safe and healthy, everyone!
 
 | County     | City                             | Number of Changes |
-| ---------- | -------------------------------- | ----------------- |
+|------------|----------------------------------|-------------------|
 | Cache      | Hyrum                            | 1                 |
 |            | Logan                            | 2                 |
 |            | Nibley                           | 1                 |

@@ -12,6 +12,8 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 It’s already over three-quarters of the way through the year, and while things slowed down while everyone is enjoying the summer, yet we’re still trying to catch up here. We're still expecting annexations to pick up some as we head for the end of the year plenty of procrastinators out there. Here is our updates for the third quarter.
@@ -27,7 +29,7 @@ Municipalities and updates can be viewed on this [Utah Municipality Modification
 The following are the changes and annexations since June 30, 2019, through Oct 15, 2019 listed by County and City:
 
 | County     | City                             | Number of Changes |
-| ---------- | -------------------------------- | ----------------- |
+|------------|----------------------------------|-------------------|
 | Box Elder  | Tremonton                        | 1                 |
 | Cache      | Hyde Park                        | 1                 |
 |            | Hyrum                            | 1                 |

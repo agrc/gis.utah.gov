@@ -9,6 +9,8 @@ tags:
   - bike
   - roads
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 ![On Street Bike Lanes](/images/404.png)

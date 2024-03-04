@@ -9,6 +9,8 @@ tags:
   - ng911
   - psap
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 Over the last several months the newly renamed Utah Geospatial Resource Center (UGRC) has been working hard to prepare the state for its transition to Next-Generation 911 (NG911). With NG911, emergency calls will rely on geospatial data for address validation and call routing. The old Enhanced 911 (E911) system, which relied on tabular data, will be gradually phased out after backing-up the geospatial data for a period of time. This means that the dispatch center, known as a public safety answering point (PSAP), that receives your 911 call will be selected based on your current location and the PSAP's service boundary. NG911 will also allow for dynamic changes to PSAP boundaries, allowing adjustments to call routing during large-scale emergencies, planned downtime, or periods of high call volume.

@@ -8,6 +8,8 @@ tags:
   - arcgis-pro
   - update-service
 category: Developer
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 As software developers, we want the people who are using our software to ~~enjoy~~ _not hate_ the experience. Developers strive to create a positive user experience to increase the popularity and usage of their software. Consequently, we spend many hours designing, debating, and redesigning to ensure that user interactions with our software are simple, effective, and intuitive.

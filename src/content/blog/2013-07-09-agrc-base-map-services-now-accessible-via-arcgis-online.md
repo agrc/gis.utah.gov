@@ -8,6 +8,8 @@ date: 2013-07-09 14:34:21 -0600
 title: UGRC Base Map Services Now Accessible via ArcGIS Online
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><a href="/images/404.png"><img src="/images/404.png" alt="" title="AGOLBaseMapSearch" width="300" height="250" class="inline-text-left" /></a>UGRC is beginning limited use of ESRI's combination data portal and SaaS technology, ArcGIS Online (AGOL). Over the next few months, we will be experimenting with AGOL as an alternate/complementary channel for accessing some data and services within Utah's State Geographic Information Database (SGID). UGRC's AGOL site is <a href="https://utah.maps.arcgis.com">https://utah.maps.arcgis.com</a>.</p>

@@ -7,6 +7,8 @@ date: 2012-07-25 11:31:49 -0600
 title: Juab and Millard Counties Adjust Shared Boundary
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>Late this spring, the Millard and Juab County Commissions agreed to adjust the counties' common north-south trending boundary, in an area generally west of Interstate 15.</p>

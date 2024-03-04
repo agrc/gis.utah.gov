@@ -16,6 +16,8 @@ date: 2016-09-30T16:55:53.000Z
 title: Where and How? High Resolution Base Maps and Google Imagery Usage
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 It has been about 18 months since the statewide high resolution (6") aerial photography content and services, licensed from Google and funded through the Utah Mapping and Information Partnership (UMIP), were made available to state and local government through UGRC's Discover imagery server.

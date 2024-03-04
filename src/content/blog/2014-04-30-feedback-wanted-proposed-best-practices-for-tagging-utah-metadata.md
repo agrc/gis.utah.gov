@@ -6,9 +6,11 @@ tags:
   - best practices
   - data
 date: 2014-04-30 18:11:06 -0600
-title: 'Feedback Wanted: Proposed Best Practices for Tagging Utah Metadata'
+title: "Feedback Wanted: Proposed Best Practices for Tagging Utah Metadata"
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><img src="/images/404.png" alt="" title="tagexample2" width="500" height="151" class="inline-text-right" />UGRC has developed a <a href="https://docs.google.com/a/utah.gov/document/d/1V7lnrMX6Ufok3lmSoxVaBJhwWnvlyPRb6v8kNzSjlQ4/edit">draft 'best practices' document for assigning metadata tags</a> to esri 'Item Description'-style metadata.</p>

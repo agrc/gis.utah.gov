@@ -10,6 +10,8 @@ date: 2013-04-16 17:50:19 -0600
 title: Progress Update, Utah Address Points GIS Layer
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><a href="/images/404.png"><img src="/images/404.png" alt="" title="Utah Address Points shown in red, drawn over populated census places in blue" width="242" height="300" class="inline-text-left" /></a>UGRC is currently working with County governments to build a statewide address point dataset. To date, UGRC has collected over 846,000 address points from Counties, many of which received, through UGRC, address point development grant funding from the National Telecommunications and Information Administration (NTIA) within the US Department of Commerce. Later this Spring, UGRC will publish the address point dataset to its statewide address locator web service and will otherwise make this data resource available. Locally, these County grantees have all designated a single point of contact for addressing and processes to web-enable their address inventory for use internally and externally.</p>

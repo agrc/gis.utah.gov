@@ -10,6 +10,8 @@ tags:
   - nsgic
   - utah
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/kcolegoedsmall.png
+cover_image_alt: Kelleigh Cole and GOED, Champion Award
 ---
 
 Through its Geospatial Excellence Awards, the [National States Geographic Information Council (NSGIC)](https://nsgic.org) recognizes individuals and organizations that advance the capabilities of geospatial technology, and promote NSGIC’s goals of efficient and effective government.

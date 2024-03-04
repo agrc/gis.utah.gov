@@ -8,6 +8,8 @@ date: 2012-07-25 10:14:45 -0600
 title: UDOT features UGRC base maps during International User Conference
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <img src="/images/404.png" class="inline-text-right pull-right" />

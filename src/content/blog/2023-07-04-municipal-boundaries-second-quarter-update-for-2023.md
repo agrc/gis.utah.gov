@@ -9,6 +9,8 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 We are halfway through 2023 and the annexations are slowing down. Hopefully that is not related to the flooding or the threat of. This quarter we got the latest (July 1, 2022) population estimates for the towns and cities and the `POPLASTESTIMATE` field reflects those changes.
@@ -18,7 +20,7 @@ Be sure to check out all the changes that have been made and to make sure your b
 The following table shows the changes and annexations (listed by county and city) since March 31, 2023:
 
 | County    | City          | Number of Changes |
-| --------- | ------------- | ----------------- |
+|-----------|---------------|-------------------|
 | Box Elder | Willard       | 1                 |
 | Cache     | Millville     | 2                 |
 |           | Providence    | 1                 |

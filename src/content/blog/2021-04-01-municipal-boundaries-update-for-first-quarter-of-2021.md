@@ -9,6 +9,8 @@ tags:
   - annexations
   - boundary
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 It's a new year and a new start for the state. While we entered the year still under pandemic restrictions, which we have been under for a little more than a year now, we're still experiencing growth, albeit slower than in other years.
@@ -24,7 +26,7 @@ To review any specific annexation document, go to the [Utah Lt. Governor Municip
 The following table shows the changes and annexations (listed by county and city) since December 31, 2020:
 
 | County    | City           | Number of Changes |
-| --------- | -------------- | ----------------- |
+|-----------|----------------|-------------------|
 | Box Elder | Tremonton      | 1                 |
 | Cache     | Hyde Park      | 1                 |
 |           | Nibley         | 1                 |

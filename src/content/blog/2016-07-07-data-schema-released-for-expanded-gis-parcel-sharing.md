@@ -10,6 +10,8 @@ date: 2016-07-07T20:05:49.000Z
 title: Data Schema Released for Expanded GIS Parcel Sharing
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 In May, the Land Information Records work group, a committee of county, regional, and state agencies, released its [recommendations for sharing an enhanced set of tax parcel GIS data](https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_), summarized in a [this blog post](/blog/2016-05-26-work-group-recommends-expanded-gis-parcel-sharing).

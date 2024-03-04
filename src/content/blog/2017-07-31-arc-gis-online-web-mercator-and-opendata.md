@@ -8,6 +8,8 @@ date: 2017-07-31T19:10:45.000Z
 tags:
   - arcgis online
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 UGRC is transitioning State Geographic Information Database (SGID) web services from UTM NAD83 to the Web Mercator projection. Overall, we feel that this will allow users to more efficiently consume SGID data via web services without the need for reprojecting the data on the fly. This is because the vast majority of browser-based web applications (thin clients) are displaying map data in Web Mercator, and desktop GIS software (thick clients, big brains) have been sufficiently capable and resourced to reproject map data ‘on the fly’ for more than a decade now.

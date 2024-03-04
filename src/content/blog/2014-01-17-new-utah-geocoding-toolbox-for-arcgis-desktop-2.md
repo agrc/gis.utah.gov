@@ -8,6 +8,8 @@ date: 2014-01-17T11:57:08.000Z
 title: New Utah Geocoding Toolbox for ArcGIS Desktop
 published: false
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 This tool has been updated to work with ArcGIS Pro. Some of the information below may be outdated. Please refer to [GitHub](https://github.com/agrc/geocoding-toolbox) for the most current documentation.

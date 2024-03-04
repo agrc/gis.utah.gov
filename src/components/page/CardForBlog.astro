@@ -1,18 +1,24 @@
 ---
 import { getDateParts } from '@utils/page';
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
 
 interface Props {
-  description?: string;
-  title: string;
-  slug: string;
+  category: string;
+  coverImage: string;
+  coverImageAlt: string;
   date: Date;
-  estimatedReadingTime?: string;
+  description: string;
+  estimatedReadingTime: string;
+  slug: string;
   tags?: string[];
-  category?: string;
+  title: string;
 }
 
-const { category, title, description, slug, date, estimatedReadingTime } = Astro.props;
+const { category, coverImage, date, description, estimatedReadingTime, slug, title } = Astro.props;
 const { year, month, day } = getDateParts(date);
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/**/*.{jpg,jpeg,png,webp,gif}');
+if (!images[coverImage]) throw new Error(`"${coverImage}" not found in "/src/images/**/*.{jpg,jpeg,png,webp,gif}"`);
 ---
 
 <div
@@ -22,9 +28,11 @@ const { year, month, day } = getDateParts(date);
     <span class="pl-2">{category}</span>
   </div>
   <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-primary/20">
-    <img
-      src={`/default-social-card.png`}
+    <Image
+      src={images[coverImage]()}
       alt="Cover image"
+      width={382}
+      height={192}
       class="h-48 w-full rounded-t-lg bg-primary/10 object-contain"
     />
     <div class="flex min-w-0 flex-1 p-4 pb-2 pt-2">

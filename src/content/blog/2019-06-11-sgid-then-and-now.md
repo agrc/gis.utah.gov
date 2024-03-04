@@ -10,6 +10,8 @@ tags:
   - education
   - gis history
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_1994_binders_cover_sm.png
+cover_image_alt: 1994 SGID User Guide Binder
 ---
 
 Access to high-quality GIS data is a privilege, and the fact that it's open and free is nothing short of amazing. Yes, I’m talking about Utah's SGID. From a local perspective, we’re all accustomed to it being there. But really, the concept of readily available, mature, open data is somewhat unique. Over the years, many factors have played into the SGID’s development and current maturity, and it takes ongoing maintenance and planning to ensure its continued success.

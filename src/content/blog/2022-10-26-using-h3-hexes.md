@@ -9,6 +9,8 @@ tags:
   - analysis
   - python
 category: Developer
+cover_image: /src/images/pillar-blog/2022-10-26-using-h3-hexes/h3_supermarkets.png
+cover_image_alt: Address points per supermarket
 ---
 
 ![Address points per supermarket](../../images/pillar-blog/2022-10-26-using-h3-hexes/h3_supermarkets.png)

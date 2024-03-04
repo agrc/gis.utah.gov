@@ -14,6 +14,8 @@ date: 2013-12-04 17:07:30 -0700
 title: A day in the life of the Utah's SGID ImageServer
 published: false
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p>As part of responsibilities for maintaining the Utah's State Geographic Information Database (SGID), UGRC has operated web services that deliver aerial photography and other geographic imagery to applications and desktop GIS users since 2006. ImageServer, an Esri software product, allows very fast mosaicing and resampling of large imagery source data files for delivery as a small, single file  for a custom map extent, to internet-connected clients.</p>

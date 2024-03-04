@@ -8,6 +8,8 @@ tags:
   - data
   - broadband
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2023-03-03-broadband-fabric-data-challenge/bb_challenge_results.png
+cover_image_alt: Utah had by far the most accepted challenges
 ---
 
 _From the I Challenge You to a Duel department_

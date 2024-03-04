@@ -6,6 +6,8 @@ author:
 date: 2018-09-17T20:16:10.000Z
 tags: []
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2018-09-17-meet-new-agrc-staff/kota.png
+cover_image_alt: Nathan in his new office habitat
 ---
 
 UGRC would like to welcome Nathan Kota, the new Information Technology Manager. Nathan is going to help build and manage the development team as well as take our project management skills to the next level! We are excited to have Nathan as a part of the team.

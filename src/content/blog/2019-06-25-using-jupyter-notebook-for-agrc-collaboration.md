@@ -9,6 +9,8 @@ tags:
   - jupyter
   - python
 category: Developer
+cover_image: /src/images/pillar-blog/2019-06-25-using-jupyter-notebook-for-agrc-collaboration/importshelperfunctions.jpg
+cover_image_alt: Notebook example
 ---
 
 At UGRC we greatly value collaboration and sharing ideas. A terrific technology to support these values is [the Jupyter Notebook](https://jupyter.org/) project.

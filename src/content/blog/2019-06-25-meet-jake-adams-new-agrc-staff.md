@@ -6,6 +6,8 @@ author:
 date: 2019-06-25T20:58:02.000Z
 tags: []
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2019-06-25-meet-jake-adams-new-agrc-staff/jacobadams.jpg
+cover_image_alt: Jacob Adams photo
 ---
 
 UGRC would like to welcome Jake Adams to the team! Jake will be using his GIS experience working with Cache County and Taylorsville City, as well as his Master of Urban and Regional Planning Degree, to help UGRC with the Discover service, SGID, and other UGRC efforts. We're happy to have Jake on the team!

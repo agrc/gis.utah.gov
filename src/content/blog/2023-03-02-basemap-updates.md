@@ -1,5 +1,5 @@
 ---
-title: 'Base maps: Out With the Old, In With the New'
+title: "Base maps: Out With the Old, In With the New"
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov
@@ -10,6 +10,8 @@ tags:
   - cartography
   - data
 category: Uncategorized
+cover_image: /src/images/pillar-blog/2023-03-02-basemap-updates/new_terrain.png
+cover_image_alt: New Terrain base map
 ---
 
 It has been almost a decade since UGRC has updated the look and feel of any of the base maps but changes are on the way! The current suite of base maps were originally authored in ArcMap. These projects have been imported into ArcGIS Pro to continue to provide data updates. But to take advantage of the advancements in ArcGIS Pro, we decided to create new base map projects from the ground up using all of the new features available. These new documents are less complex and easier to maintain.

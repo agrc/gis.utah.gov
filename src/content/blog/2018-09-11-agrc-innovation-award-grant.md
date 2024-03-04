@@ -7,6 +7,8 @@ author:
 date: 2018-09-11T23:14:09.000Z
 tags: []
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 The DTS Technology Advisory Board has recently awarded UGRC an innovation grant of $25,000 for the Digital Assistant Skill for Voting Project.

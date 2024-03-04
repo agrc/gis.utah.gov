@@ -1,5 +1,5 @@
 ---
-title: 'Upcoming: Vector Tile Base Maps'
+title: "Upcoming: Vector Tile Base Maps"
 published: false
 author:
   display_name: Zach Beck
@@ -8,6 +8,8 @@ date: 2018-09-12T22:29:57.000Z
 tags:
   - base maps
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 As mapping applications on mobile devices become increasingly widespread, UGRC is in the early stages of supplementing its raster base map offerings with new vector tiled base maps. The smaller size of vector tiles relative to raster tiles makes them ideal for offline use on mobile devices and allows for faster draw times when viewed in a standard web browser.

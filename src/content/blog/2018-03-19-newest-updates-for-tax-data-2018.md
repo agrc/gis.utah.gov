@@ -12,6 +12,8 @@ tags:
   - sales tax areas
   - transit special tax areas
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 With April just around the corner, it’s tax time again. If you don’t procrastinate and you've already done your taxes, you might be interested in knowing just who is getting that hard-earned money you make.

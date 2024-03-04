@@ -11,6 +11,8 @@ published: false
 date: 2012-04-27 11:41:48 -0600
 title: "Maps n' Mobile: Wildlife-Vehicle Collision Reporting"
 category: Uncategorized
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 <p><img src="/images/404.png" class="inline-text-right" /> Scott Davis, UGRC Developer recently presented at the 2012 ESRI Developer's Summit an a newly released application to help <a title="UDOT" href="https://www.udot.utah.gov">UDOT</a> and the State Division of Wildlife Resources track wildlife-vehicle events (politically palatable term for "roadkill"). Last year a graduate student approached UDOT with an idea to better track wildlife-vehicle collisions across the state.  After further investigation, it was decided that UGRC was best positioned to develop this application by leveraging GIS and mobile.</p>

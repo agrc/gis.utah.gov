@@ -7,6 +7,8 @@ date: 2023-09-08T08:30:00.000Z
 tags:
   - roads
 category: SGID Blog
+cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image_alt: ugrc social card
 ---
 
 UGRC recently completed updates to the SGID Roads data layer. Please visit our [Roads and Highway System](/products/sgid/transportation/road-centerlines) data page where you will find information about the Roads data model, as well as a web service layer to the SGID Roads data and direct download links in shapefile and geodatabase format.

@@ -3,8 +3,6 @@ import CardForBlog from '@components/page/CardForBlog.astro';
 import Layout from '@layouts/BlogPostIndex.astro';
 import { getBlogFilters, type DecoratedBlogEntry } from '@utils/collections';
 import type { GetStaticPathsResult } from 'astro';
-import { fromMarkdown } from 'mdast-util-from-markdown';
-import { toString } from 'mdast-util-to-string';
 
 interface Props {
   tag: string;
@@ -28,17 +26,19 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 const { tag, posts } = Astro.props;
 ---
 
-<Layout title="Posts by category" category={tag}>
+<Layout title="Posts by tag" category={tag}>
   {
     posts.map((post) => (
       <CardForBlog
-        title={post.data.title}
-        description={toString(fromMarkdown(post.body)).slice(0, 200) ?? 'a blog post'}
-        date={post.data.date}
-        slug={post.slug}
-        estimatedReadingTime={post.data.estimatedReadTime}
         category={post.data.category}
+        coverImage={post.data.cover_image}
+        coverImageAlt={post.data.cover_image_alt}
+        date={post.data.date}
+        description={post.data.description}
+        estimatedReadingTime={post.data.estimatedReadTime}
+        slug={post.slug}
         tags={post.data.tags}
+        title={post.data.title}
       />
     ))
   }
