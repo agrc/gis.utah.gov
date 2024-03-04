@@ -18,7 +18,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah Fire Stations',
-  description: `Fire station locations in Utah.`,
+  description: `Fire station locations including where fire fighters are stationed, based out of, or where equipment is stored in Utah.`,
   stewards: ['UGRC'],
   type: ProductType.POINT,
   category: SgidCategory.SOCIETY,
@@ -44,7 +44,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Fire Stations includes any location where fire fighters are stationed or based out of, or where fire fighting
+      Fire stations includes any location where fire fighters are stationed or based out of, or where fire fighting
       equipment is stored. This definition includes fire stations that are both private and public entities, and fire
       stations that primarily fight forest or grassland fires. Fire fighting training academies are also included.
     </p>
@@ -59,7 +59,7 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="Fire Marshal" href="https://firemarshal.utah.gov/"
-        >Utah Department of Public Saftey.</CardWithPopularLink
+        >Utah Department of Public Safety.</CardWithPopularLink
       >
       <CardWithPopularLink title="FFSL" href="https://ffsl.utah.gov/"
         >Utah Division of Forestry Fire and State Lands.</CardWithPopularLink
