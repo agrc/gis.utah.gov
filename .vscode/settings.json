@@ -58,6 +58,7 @@
     "Deweyville",
     "dfirm",
     "DHHS",
+    "DISDI",
     "dlist",
     "dogm",
     "doq",
@@ -374,9 +375,7 @@
     "xlink",
     "zipcode"
   ],
-  "cSpell.enableFiletypes": [
-    "astro"
-  ],
+  "cSpell.enableFiletypes": ["astro"],
   "[astro]": {
     "editor.wordWrapColumn": 120
   },
