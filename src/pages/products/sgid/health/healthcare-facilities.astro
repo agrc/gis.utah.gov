@@ -21,19 +21,13 @@ export const metadata: IMetadata = {
   description: `Hospitals, clinics, etc`,
   stewards: ['UGRC', 'DHHS', 'DEM'],
   type: ProductType.POINT,
-  category: SgidCategory.HEALTH, 
+  category: SgidCategory.HEALTH,
   secondaryCategory: SgidCategory.PLANNING,
 };
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [
-    `December 2017`,
-    `January 2016`,
-    `July 2015`,
-    `June 2015`,
-    `June 2013`,
-  ],
+  updateHistory: [`December 2017`, `January 2016`, `July 2015`, `June 2015`, `June 2013`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -45,7 +39,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Hospitals, clinics, etc
+      Healthcare Facilities represents clinics, dialysis centers, hospitals, and other healthcare related facilities.
+      This dataset is a work in progress.
     </p>
   </Fragment>
 
@@ -53,24 +48,29 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <Fragment slot="description">
-    <p>Healthcare Facilities represents clinics, dialysis centers, hospitals, and other healthcare related facilities.
-      This dataset is a work in progress.</p>
-  </Fragment>
-
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="DHHS" href="https://dhhs.utah.gov">The homepage for the Utah Department of Health and Human Services</CardWithPopularLink>
-      <CardWithPopularLink title="Emergency Medical Services" href="/products/sgid/health/emergency-medical-services">EMS-specific facilities in Utah.</CardWithPopularLink>
+      <CardWithPopularLink title="DHHS" href="https://dhhs.utah.gov"
+        >The homepage for the Utah Department of Health and Human Services</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Emergency Medical Services" href="/products/sgid/health/emergency-medical-services"
+        >EMS-specific facilities in Utah.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Health Small Statistical Areas" href="/products/sgid/health/health-small-statistical-areas">Areas used by DHHS for reporting.</CardWithSmallLink>
-      <CardWithSmallLink title="CDC" href="https://www.cdc.gov/">Nationwide health information at The Centers for Disease Control and Prevention</CardWithSmallLink>
+      <CardWithSmallLink
+        title="Health Small Statistical Areas"
+        href="/products/sgid/health/health-small-statistical-areas"
+        style="secondary">Areas used by DHHS for reporting.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="CDC" href="https://www.cdc.gov/" style="secondary"
+        >Nationwide health information at The Centers for Disease Control and Prevention</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>
