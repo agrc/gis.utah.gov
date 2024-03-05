@@ -21,15 +21,13 @@ export const metadata: IMetadata = {
   description: `Locations of emergency medical services personnel and equipment in Utah.`,
   stewards: ['UGRC', 'DHHS', 'DEM'],
   type: ProductType.POINT,
-  category: SgidCategory.HEALTH, 
+  category: SgidCategory.HEALTH,
   secondaryCategory: SgidCategory.PLANNING,
 };
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [
-    `June 2013`,
-  ],
+  updateHistory: [`June 2013`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -41,7 +39,12 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Locations of emergency medical services personnel and equipment in Utah.
+      The emergency medical services dataset includes locations where EMS personnel are stationed or based out of, or
+      where EMS equipment is stored and ready to use. These include ambulance services, including transportation only
+      services, except for ambulance services located at and operated by a hospital (independent ambulance service
+      co-located with a hospital are included). Records with "-DOD" appended to the end of the [NAME] value are located
+      on a military base, as defined by the Defense Installation Spatial Data Infrastructure (DISDI) military
+      installations and military range boundaries. This dataset is comprised completely of license-free data.
     </p>
   </Fragment>
 
@@ -49,23 +52,29 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <Fragment slot="description">
-    <p>The emergency medical services dataset includes locations where EMS personnel are stationed or based out of, or where EMS equipment is stored and ready to use. These include ambulance services, including transportation only services, except for ambulance services located at and operated by a hospital (independent ambulance service co-located with a hospital are included). Records with "-DOD" appended to the end of the [NAME] value are located on a military base, as defined by the Defense Installation Spatial Data Infrastructure (DISDI) military installations and military range boundaries. This dataset is comprised completely of license-free data.</p>
-  </Fragment>
-
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="EMS Boundaries" href="/products/sgid/society/ems_response_areas">EMS response boundaries.</CardWithPopularLink>
-      <CardWithPopularLink title="Healthcare Facilities" href="/products/sgid/health/healthcare-facilities">General health care facilities in Utah.</CardWithPopularLink>
+      <CardWithPopularLink title="EMS Boundaries" href="/products/sgid/society/ems_response_areas"
+        >EMS response boundaries.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Healthcare Facilities" href="/products/sgid/health/healthcare-facilities"
+        >General health care facilities in Utah.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Office of Emergency Medical Services and Preparedness" href="https://bemsp.utah.gov/">EMS licensing and emergency preparedness.</CardWithSmallLink>
-      <CardWithSmallLink title="Fire Stations" href="/products/sgid/society/fire_stations">Fire stations throughout the state</CardWithSmallLink>
+      <CardWithSmallLink
+        title="Office of Emergency Medical Services and Preparedness"
+        href="https://bemsp.utah.gov/"
+        style="secondary">EMS licensing and emergency preparedness.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Fire Stations" href="/products/sgid/society/fire_stations" style="secondary"
+        >Fire stations throughout the state</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>
