@@ -52,7 +52,14 @@ const page: IPageMetadata = {
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <HubDownloads {...page.hub} />
+    <HubDownloads {...page.hub}>
+      <ExternalLink
+        slot="more-links"
+        href="https://gis.trustlands.utah.gov/hosting/rest/services/Hosted/Land_Ownership_WM_VectorTile/VectorTileServer"
+      >
+        Utah Land Ownership vector tile service
+      </ExternalLink>
+    </HubDownloads>
   </Section>
 
   <Fragment slot="description">
