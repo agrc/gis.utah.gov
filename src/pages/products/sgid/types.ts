@@ -72,7 +72,8 @@ export enum ProductType {
   WEB_MAP,
   DESKTOP_APPLICATION,
   DISCOVER_SERVICE,
-  RASTER,
+  ELEVATION_RASTER,
+  IMAGERY_RASTER,
 }
 
 export interface IHubDownload {
