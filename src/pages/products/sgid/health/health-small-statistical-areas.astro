@@ -10,6 +10,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -17,8 +18,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Health Care Districts',
-  description: `Health district boundaries corresponding to local health departments`,
+  title: 'Utah Health Small Statistical Areas 2020',
+  description: `Areas based on zip codes used by the Utah Department of Health and Human Services for statistical analysis and reporting.`,
   stewards: ['UGRC', 'DHHS', 'DEM'],
   type: ProductType.POLYGON,
   category: SgidCategory.HEALTH, 
@@ -28,7 +29,11 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   updateHistory: [
-    `January 2016`,
+    `May 2020`,
+    `October 2018`,
+    `November 2017`,
+    `January 2014`,
+    `October 2012`,
   ],
   hub: {
     ...dataPages[metadata.title],
@@ -41,7 +46,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Health district boundaries corresponding to local health departments
+      Areas based on zip codes used by the Utah Department of Health and Human Services for statistical analysis and reporting
     </p>
   </Fragment>
 
@@ -51,10 +56,10 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      Local health departments are the main entities for reporting and tracking communicable diseases, health education, health screenings and immunizations, and food regulation for establishments. Their boundaries are comprised of one or more counties.
+      First developed by the Department of Health in 1997, Small Health Statistics Areas allow for more meaningful analysis by reducing areas to the smallest unit where there is enough data to be reliable and the area is similar in characteristics. The areas are created by combining neighboring ZIP code areas to create areas ranging in population of approximately 8,000 to 86,000 persons. In some instances a small area may not have a contiguous boundary, in these cases the small area is represented with multiple polygons. 
     </p>
     <p>
-      The <code>DISTNAME</code> field contains the district name.
+      Previous vintages of the Small Health Statistical Areas are available in our <ExternalLink href="https://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9">ArcGIS Online "Shelf" group</ExternalLink>.
     </p>
   </Fragment>
 
@@ -62,8 +67,8 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="Department Contact Info" href="https://vitalrecords.utah.gov/utah-health-districts">Listings for all the local health departments along with their contact info.</CardWithPopularLink>
-      <CardWithPopularLink title="Health Small Statistical Areas" href="/products/sgid/health/health-small-statistical-areas">Areas used by DHHS for reporting.</CardWithPopularLink>
+      <CardWithPopularLink title="Previous Versions" href="https://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9&view=list&searchTerm=small+statistical#content">Previous versions of the Health Small Statistical Areas.</CardWithPopularLink>
+      <CardWithPopularLink title="Health Department Boundaries" href="/products/sgid/health/healthcare-districts">Boundaries of Utah's 13 local health departments.</CardWithPopularLink>
     </GridForMoreResources>
   </Section>
 

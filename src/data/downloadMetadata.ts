@@ -1355,20 +1355,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: '',
     layerId: 0,
   },
-  'Utah Health Small Statistical Areas 2018': {
-    itemId: 'c0a84e302c8142cb9ca34f88813f23b3',
-    name: 'Utah Health Small Statistical Areas 2018',
-    featureServiceId: null,
-    openSgid: '',
-    layerId: 0,
-  },
-  'Utah Health Small Statistical Areas 2017': {
-    itemId: '6fe09518dc62415d88570dfd59fbb4c5',
-    name: 'Utah Health Small Statistical Areas 2017',
-    featureServiceId: null,
-    openSgid: '',
-    layerId: 0,
-  },
   'Utah Health Care Districts': {
     itemId: '2c738e87f55e4383b82a3c1cd08c8208',
     name: 'Utah Health Care Districts',
@@ -2583,8 +2569,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Health Small Statistical Areas 2020': {
     itemId: '67edfe9ded464e3393c1932b4d39a6b2',
     name: 'Utah Health Small Statistical Areas 2020',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'HealthSmallStatisticalAreas2020',
+    openSgid: 'health_small_statistical_areas_2020',
     layerId: 0,
   },
   'Utah Tax Areas 2021': {
