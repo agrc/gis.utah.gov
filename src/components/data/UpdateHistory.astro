@@ -1,13 +1,17 @@
 ---
 interface Props {
   updates: string[];
+  style?: 'primary' | 'secondary';
 }
 
-const { updates } = Astro.props;
+const { updates, style = 'primary' } = Astro.props;
 ---
 
 <details
-  class="rounded-lg border border-zinc-400 bg-primary px-6 py-3 text-white dark:border-white/20 [&_svg]:open:-rotate-180"
+  class:list={[
+    'rounded-lg border border-zinc-400 bg-primary px-6 py-3 text-white dark:border-white/20 [&_svg]:open:-rotate-180',
+    style === 'secondary' && 'dark:bg-secondary',
+  ]}
 >
   <summary class="flex cursor-pointer list-none items-center transition-all [&::-webkit-details-marker]:hidden">
     <span class="font-semibold">Update history</span>
