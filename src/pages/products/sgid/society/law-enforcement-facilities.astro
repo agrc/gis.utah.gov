@@ -1,0 +1,80 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Law Enforcement',
+  description: `Locations of law enforcement facilities in Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`June 2013`, `August 2011`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah Law Enforcement contains locations where sworn officers of a law enforcement agency are regularly based or
+      stationed. Law enforcement facilities are at least partially publicly funded. This law enforcement dataset
+      includes federal, state, local and special jurisdiction facilities. Examples of law enforcement facilities
+      included are municipal police, county sheriffs, state police, school police, park police, railroad police, and
+      federal police.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Public Saftey" href="https://publicsafety.utah.gov/"
+        >Utah Department of Public Saftey.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Fraternal Order of Police" href="https://www.utahstatefop.com/"
+        >Utah Fraternal Order of Police.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="PSAP Boundaries"
+        href="/products/sgid/society/public-safety-answering-point-boundaries"
+        style="secondary">Public service answering point boundaries.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Law Enforcement Boundaries"
+        href="/products/sgid/society/law-enforcement-boundaries"
+        style="secondary">Utah law enforcement boundaries.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
