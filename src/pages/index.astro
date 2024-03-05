@@ -76,7 +76,7 @@ const posts = (await getBlogPosts()).slice(0, 3);
         posts.map((post) => (
           <CardWithDate
             title={post.data.title}
-            description={post.data.description!}
+            snippet={post.data.snippet}
             date={post.data.date}
             slug={post.slug}
             estimatedReadingTime={post.data.estimatedReadTime}

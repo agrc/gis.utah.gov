@@ -1,6 +1,6 @@
 ---
 interface Props {
-  description: string;
+  snippet: string;
   title: string;
   slug: string;
   date: Date;
@@ -10,7 +10,7 @@ interface Props {
 
 import FormattedDate from '../FormattedDate.astro';
 
-const { title, description, slug, date, includeYear, estimatedReadingTime } = Astro.props;
+const { title, snippet, slug, date, includeYear, estimatedReadingTime } = Astro.props;
 ---
 
 <div class="rounded-lg border border-zinc-400 bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70">
@@ -24,7 +24,7 @@ const { title, description, slug, date, includeYear, estimatedReadingTime } = As
           {title}
           <span class="text-sm font-normal">({estimatedReadingTime})</span>
         </p>
-        <p class="line-clamp-2 text-ellipsis text-zinc-600 dark:text-zinc-300">{description}</p>
+        <p class="line-clamp-2 text-ellipsis text-zinc-600 dark:text-zinc-300">{snippet}</p>
       </div>
       <div class="hidden self-center text-4xl text-primary sm:block dark:text-zinc-300">&#x2192;</div>
     </div>
