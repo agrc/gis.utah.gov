@@ -1,0 +1,121 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+import BulletedList from '@components/page/BulletedList.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+export const metadata: IMetadata = {
+  title: 'Auto-Correlated DEMs',
+  description: `Digital Elevation Models derived from aerial photography.`,
+  stewards: ['UGRC'],
+  type: ProductType.RASTER,
+  category: SgidCategory.ELEVATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://raster.utah.gov/?products=3',
+  updateHistory: [`2006`],
+  links: [
+    {
+      title: 'Download auto-correlated Digital Elevation Models (DEMs)',
+      url: 'https://raster.utah.gov/?products=3',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      UGRC has a statewide coverage of 5 meter Auto-Correlated DEMs in addition to some <ExternalLink
+        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/auto-correlated-dems/2-meter/Available_DEM_2m_GSD.jpg"
+        >2 meter areas</ExternalLink
+      >. The DEMs were created from the imagery collected during the 2006 NAIP and HRO aerial photography flights. <strong
+        >The auto-correlation process is not as rigorous as other methods of elevation modeling such as photogrammetry,
+        lidar mapping, radar mapping, etc, and therefore end-users should be aware that anomalies are expected within
+        the elevation dataset.</strong
+      > In the years since this dataset was created, more accurate digital elevation models are available. User are encouraged
+      to consider the <a href="/products/sgid/elevation/lidar">Lidar</a> and
+      <a href="/products/sgid/elevation/usgs-3d-elevation-program"> USGS 3DEP Products</a> available in Utah.
+    </p>
+  </Fragment>
+
+  <Section title="Use the service" slot="downloads" titlePosition="center">
+    <DirectDownloads title="Download auto-correlated Digital Elevation Models (DEMs)" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The DEM files are stored as .asc formatted files and are ~10MB per 2,000 X 2,000 meter block. This data is in a
+      UTM NAD83 Zone12 meters projection. The 2 meter DEMs have a Vertical Accuracy of RMSE 4.27' - NSSDA 95% 8.4' and a
+      Horizontal Accuracy NSSDA, radial RMSE of 4.4', 95% confidence 7.6'. The 5 meter DEMs have a have a Vertical
+      Accuracy of RMSE 4m - NSSDA 95% of 9.8m and a Horizontal Accuracy RMSE 3m, NSSDA 95% of 5.2m. For more information
+      about the stated accuracy of the datasets please refer to the metadata and quality assurance reports below.
+    </p>
+    <BulletedList>
+      <li>
+        <ExternalLink href="https://gis.utah.gov/downloads/DEM_Auto-correlation.doc"
+          >Auto-Correlated DEM Information</ExternalLink
+        >
+      </li>
+      <li>
+        Download quality assurance reports for the <ExternalLink
+          href="https://storage.googleapis.com/state-of-utah-sgid-downloads/auto-correlated-dems/5-meter/UT_5m_DEMs_QA_report.doc"
+          >5 meter</ExternalLink
+        > or <ExternalLink
+          href="https://storage.googleapis.com/state-of-utah-sgid-downloads/auto-correlated-dems/2-meter/UT_2m_DEMs_QA_report.doc"
+          >2 meter</ExternalLink
+        > DEMs.
+      </li>
+      <li>
+        Download metadata for the <ExternalLink
+          href="https://storage.googleapis.com/state-of-utah-sgid-downloads/auto-correlated-dems/5-meter/5m_Autocorr_from_1m_GSD_Imagery_Metadata.XML"
+          >5 meter</ExternalLink
+        > DEMs and the 2 meter DEMs derived from <ExternalLink
+          href="https://storage.googleapis.com/state-of-utah-sgid-downloads/auto-correlated-dems/2-meter/2m_AutoCorr_from_12_5cm_GSD_Imagery_Metadata.XML"
+          >12.5 cm</ExternalLink
+        > or <ExternalLink
+          href="https://storage.googleapis.com/state-of-utah-sgid-downloads/auto-correlated-dems/2-meter/2m_AutoCorr_from_25cm_GSD_Imagery_Metadata.XML"
+          >25cm</ExternalLink
+        > imagery.
+      </li>
+    </BulletedList>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Lidar Elevation Data" href="/products/sgid/elevation/lidar"
+        >Get more information about Lidar elevation data available in Utah.
+      </CardWithPopularLink>
+      <CardWithPopularLink
+        title="USGS 3DEP Elevation Products"
+        href="/products/sgid/elevation/usgs-3d-elevation-program"
+        >Get more information about USGS 3DEP Elevation Products.
+      </CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Elevation" href="/products/sgid/elevation">Elevation page</CardWithSmallLink>
+      <CardWithSmallLink title="Recreation" href="/products/sgid/recreation">Recreation page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
