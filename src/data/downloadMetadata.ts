@@ -2310,8 +2310,8 @@ export const dataPages: DownloadMetadata = {
   'Utah EMS Response Areas': {
     itemId: '2c242ea8b8df44f5adec02ee73cdeb16',
     name: 'Utah EMS Response Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'EMSResponseAreas',
+    openSgid: 'society.ems_response_areas',
     layerId: 0,
   },
   'Utah DEQMAP TIER2RPTYR': {

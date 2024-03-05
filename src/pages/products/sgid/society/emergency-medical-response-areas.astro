@@ -1,0 +1,82 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah EMS Response Areas',
+  description: `Area of the primary agency that will respond to a medical emergency`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`August 2023`, `June 2022`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Emergency Medical Services (EMS) Response Areas in Utah represent the primary agency that will respond to medical
+      emergencies at a given location. The dataset was created to provide response recommendations for the
+      Next-Generation 911 system and was compiled from a variety of data sources. The response areas represent a variety
+      of service levels (paramedic, advanced EMT, with or without transport capability, etc.), but generally include 911
+      scene response. The data was compiled using written descriptions from the licensing database of the Bureau of
+      Emergency Medical Services and Preparedness (BEMSP), which is part of the Utah Department of Health and Human
+      Services (DHHS). In some instances, the BEMSP data was incomplete or the written descriptions were inaccurate,
+      contradictory, ambiguous, or failed to close. To make the data more complete, computer-aided dispatch (CAD) data
+      from within the state was used to resolve conflicts, fill in gaps, and improve completeness.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="EMS" href="https://bemsp.utah.gov/"
+        >Office of Emergency Medical Services and Preparedness.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Health" href="https://dhhs.utah.gov/"
+        >Utah Department of Health and Human Services.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Fire Stations" href="/products/sgid/society/fire-stations" style="secondary"
+        >Utah fire station locations.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="PSAP Boundaries"
+        href="/products/sgid/society/public-safety-answering-point-boundaries"
+        style="secondary">Public safety answering point boundaries</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
