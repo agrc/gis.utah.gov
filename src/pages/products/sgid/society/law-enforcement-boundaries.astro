@@ -1,0 +1,92 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Law Enforcement Boundaries',
+  description: `Jurisdictional boundaries for law enforcement agencies in Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [
+    `January 2024`,
+    `October 2023`,
+    `August 2023`,
+    `June 2023`,
+    `March 2023`,
+    `November 2022`,
+    `August 2022`,
+    `February 2022`,
+    `December 2021`,
+    `November 2021,`,
+  ],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This data set was developed for the Utah Department of Public Safety Bureau of Investigations for use in planning
+      operations throughout the State. It shows which law enforcement agency has responsibility in a specific area.
+      Identification of local police departments was obtained from the Utah Chiefs of Police Association and from
+      associated 911 dispatch centers. Boundaries for the police departments are the current municipal boundaries in the
+      SGID. Periodic boundary boundary changes will be made as municipal boundaries change and responsibilities of city
+      police departments will be updated as they become known. Sheriffs Office boundaries are current county boundaries
+      in the SGID minus local police department boundaries.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Public Safety" href="https://publicsafety.utah.gov/"
+        >Utah Department of Public Safety.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Chiefs of Police" href="https://utahchiefs.org/accredited-utah-agencies/"
+        >Utah Chiefs of Police Association.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="PSAP Boundaries"
+        href="/products/sgid/society/public-safety-answering-point-boundaries"
+        style="secondary">Public safety answering point boundaries.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="State Dispatch" href="/products/sgid/address" style="secondary"
+        >State of Utah dispatch center boundaries.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
