@@ -7,12 +7,13 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
-import osmLogo from '@images/collaboration/OSM_logo.svg';
 import blogPhoto from '@images/collaboration/blog.svg';
 import conferenceLogo from '@images/collaboration/conference.svg';
 import eventsPhoto from '@images/collaboration/events.svg';
 import groupPhoto from '@images/collaboration/group.svg';
 
+import BulletedList from '@components/page/BulletedList.astro';
+import ButtonLink from '@components/page/ButtonLink.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import { stripeSections } from '@utils/page';
 
@@ -95,38 +96,182 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>There are many other great places to learn about GIS and to get help. Here are a few of our favorites:</p>
-
-    <h4>Esri Forums</h4>
-    <p>
-      The esri forums are a great place to have multiple people help you with any issues or questions you may be having.
-    </p>
-    <h4>Esri Ideas</h4>
-    <p>
-      The mechanism to make changes to esri products is through the ideas website. Here you can propose, comment, and
-      vote on ideas that you think would improve the product.
-    </p>
     <h4>Slack</h4>
     <p>
       Slack is our distributed communication platform of choice. A few members of UGRC, some helpful esri employees,
-      other public servants, and all other GIS friends are in the Spatial Community. This is a great place to ask
-      realtime questions and spark a conversation with other GIS professionals. Join #arcgis-desktop and #arcgis-web and
-      say hi to @steveoh, @Jake Adams, and @stdavis from UGRC.
+      other public servants from across the country, and all other types of friends interested in GIS are in the Spatial
+      Community. This is a great place to ask realtime questions and spark a conversation with other GIS professionals.
+      Join #arcgis-desktop and #arcgis-web and say hi to @steveoh, @Jake Adams, and @stdavis from UGRC.
     </p>
+    <div class="max-w-fit">
+      <ButtonLink href="https://thespatialcommunity.org/#join">Join the community</ButtonLink>
+    </div>
+
     <h4>X</h4>
-    <p>X is our real time communication platform. We tweet as @MapUtah.</p>
+    <p>
+      X is our real time communication platform. We tweet as @MapUtah. New blog posts, porter issues, issues with
+      services, etc are tweeted. If you want to know what is going on before anyone else, follow us on X.
+    </p>
+    <div class="max-w-fit">
+      <ButtonLink href="https://twitter.com/maputah">Follow along</ButtonLink>
+    </div>
+    <h4>Esri Forums</h4>
+    <p>
+      The esri forums are a great place to have multiple people help you with any issues or questions you may be having.
+      We tend to lean toward the real time communication platforms, but the forums are a great place to ask questions
+      and get answers.
+    </p>
+    <div class="max-w-fit">
+      <ButtonLink href="https://community.esri.com/">Create a post</ButtonLink>
+    </div>
+
+    <h4>Esri Ideas</h4>
+    <p>
+      The mechanism to make changes to esri products is through the ideas website. Here you can propose, comment, and
+      vote on ideas that you think would improve the product. Below are a few ideas we have suggested and would love
+      your comment and support with.
+    </p>
+    <BulletedList>
+      <li>
+        <ExternalLink
+          href="https://community.esri.com/t5/arcgis-pro-ideas/keeping-consistent-layer-ids-when-publishing-a/idi-p/1362342"
+          >Keeping consistent layer ids when publishing</ExternalLink
+        >.
+      </li>
+      <li>
+        <ExternalLink
+          href="https://community.esri.com/t5/arcgis-enterprise-ideas/allow-marking-arcgis-server-services-as-deprecated/idi-p/1281015"
+          >Allow marking arcgis server services as deprecated</ExternalLink
+        >.
+      </li>
+      <li>
+        <ExternalLink
+          href="https://community.esri.com/t5/arcgis-pro-ideas/use-deprecation-flag-through-platform/idi-p/971940"
+          >Use deprecation flag through out the esri platform</ExternalLink
+        >.
+      </li>
+      <li>
+        <ExternalLink
+          href="https://community.esri.com/t5/attribute-rules-ideas/improve-attribute-rule-debugging/idi-p/927913"
+          >Improve attribute rule debugging</ExternalLink
+        >.
+      </li>
+    </BulletedList>
+    <div class="max-w-fit">
+      <ButtonLink href="https://ideas.esri.com/">Submit an idea</ButtonLink>
+    </div>
     <h4>Stack Exchange (GIS)</h4>
     <p>
-      Stack Exchange is a great network of GIS professionals to ask questions and get answers in a consistent manner.
+      Stack Exchange is a great network of GIS professionals to ask questions and get answers in a consistent manner. We
+      come here to ask questions non esri related about open source projects or other GIS products.
     </p>
+    <div class="max-w-fit">
+      <ButtonLink href="https://gis.stackexchange.com/">Ask a question</ButtonLink>
+    </div>
+  </Section>
+  <Section {...page.section[4]}>
+    <h4>Esri Training</h4>
+    <p>
+      Esri has many online courses that are included in the annual software maintenance cost. They also have several
+      basic free courses that are a good introduction to GIS and ArcGIS Pro.
+    </p>
+    <h5>Free Esri Courses</h5>
+    <BulletedList>
+      <li>Intro to GIS.</li>
+      <li>
+        <ExternalLink href="https://www.esri.com/training/catalog/5d9cd7de5edc347a71611ccc/gis-basics/"
+          >GIS Basics</ExternalLink
+        >.
+      </li>
+      <li>
+        <ExternalLink
+          href="https://www.esri.com/training/catalog/57630435851d31e02a43f007/getting-started-with-arcgis-pro/"
+          >Getting Started with ArcGIS Pro</ExternalLink
+        > (Intro ArcGIS Pro) .
+      </li>
+      <li>
+        <ExternalLink href="https://www.esri.com/training/catalog/596e584bb826875993ba4ebf/cartography./"
+          >Cartography MOOC</ExternalLink
+        > (This is a great introduction to cartographic design principles and applications.) .
+      </li>
+      <li>
+        <ExternalLink href="https://www.esri.com/training/catalog/5b733e9d2fad23092c930883/arcgis-online-fundamentals/"
+          >AGOL Fundamentals</ExternalLink
+        > (This includes short intro videos; one intro course; and several advanced, maintenance required courses.) .
+      </li>
+    </BulletedList>
+    <h5>AGOL Basics and Essentials</h5>
+    <BulletedList>
+      <li>
+        Esri’s <a href="https://doc.arcgis.com/en/arcgis-online/get-started/get-started.htm">getting started</a> page .
+      </li>
+      <li>
+        <ExternalLink
+          href="https://doc.arcgis.com/en/arcgis-online/administer/credits.htm#ESRI_SECTION1_709121D2C7694DCAB9B8592F36F7A5BA"
+          >Credit usage by capability</ExternalLink
+        >.
+      </li>
+      <li>
+        Credits can be <ExternalLink
+          href="https://www.esri.com/en-us/arcgis/products/credits/buy?rmedium=www_esri_com_EtoF&rsource=/en-us/store/arcgis-online/arcgis-online-credits"
+          >purchased</ExternalLink
+        > in blocks of 1,000, usually for $100 (i.e., 10 cents/credit).
+      </li>
+      <li>
+        <ExternalLink
+          href="https://www.esri.com/en-us/arcgis/products/arcgis-online/buy?rmedium=esri_com_regex&rsource=arcgis-online"
+          >AGOL subscription types and pricing</ExternalLink
+        >.
+      </li>
+      <li>
+        AGOL user account control: <ExternalLink href="https://doc.arcgis.com/en/arcgis-online/reference/roles.htm"
+          >types, roles, and privileges</ExternalLink
+        >.
+      </li>
+    </BulletedList>
+    <p>
+      <ExternalLink href="https://doc.arcgis.com/en/arcgis-online/administer/credits.htm"
+        >A Note on Figuring out AGOL Credits</ExternalLink
+      >
+    </p>
+    <p>
+      (This is a quick summary of how UGRC understands AGOL credit accounting. For the official Esri position, check out
+      Esri’s <ExternalLink href="https://doc.arcgis.com/en/arcgis-online/administer/credits.htm"
+        >Understand credits</ExternalLink
+      > page.
+    </p>
+    <p>
+      Esri gives credit costs per month and billing is calculated each hour. For example, a 10 MB hosted feature service
+      that was hosted for one month would use 2.4 credits. That same dataset hosted for an hour would be 2.4 / 30 / 24 =
+      0.00333 credits and hosted for one year would be 28.8 credits.
+    </p>
+    <p>
+      Tile layers (and other non-feature storage categories) are currently significantly cheaper (1/200th) than hosted
+      feature layers—1.2 credits per 1 GB vs 2.4 credits per 10 MB.
+    </p>
+    <p>
+      All your credits sit in a common pool regardless of where they come from. You’ll get a certain number of credits
+      from different sources—various AGOL subscription levels, Business Analyst, or purchasing them outright. Some of
+      these have different expiration dates, and right now there’s no good way in AGOL to tell how many will expire
+      when. Good accounting is your only tool.
+    </p>
+    <h4><a href="https://www.qgis.org/en/site/forusers/trainingmaterial/index.html">QGIS Training</a></h4>
+    <BulletedList>
+      <li>
+        <a href="https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html">A Gentle Introduction to GIS</a
+        >.
+      </li>
+      <li><a href="https://docs.qgis.org/3.34/en/docs/training_manual/index.html">QGIS Training Manual</a>.</li>
+      <li>
+        <a href="https://www.qgistutorials.com/en/"
+          >QGIS Tutorials and Tips: Step-by-step guides for common QGIS tasks</a
+        >.
+      </li>
+      <li>
+        Baruch College’s <a href="https://www.baruch.cuny.edu/confluence/display/geoportal/GIS+Practicum"
+          >Introduction to GIS Using Open Source Software</a
+        >.
+      </li>
+    </BulletedList>
   </Section>
 </Layout>
-<Section {...page.section[4]}>
-  <Image slot="image" src={osmLogo} alt="Open Street Map US logo" class="w-full max-w-[400px] rounded-2xl" />
-  <p>
-    OpenStreetMap is the free, editable map of the world. OpenStreetMap US is a nonprofit organization helping to
-    support and grow the project in the US. The State of the Map US conference includes presentations, workshops, and
-    other events to connect with mappers, businesses, government agencies, and nonprofits, all collaborating around the
-    free and editable OpenStreetMap project. Share your vision for the project, learn how to work with OpenStreetMap
-    data, and hack on the latest mapping improvements.
-  </p>
-</Section>
