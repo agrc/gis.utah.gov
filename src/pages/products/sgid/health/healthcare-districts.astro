@@ -17,10 +17,10 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Emergency Medical Service Facilities',
-  description: `EMS facility locations`,
+  title: 'Utah Health Care Districts',
+  description: `Health district boundaries corresponding to local health departments`,
   stewards: ['UGRC', 'DHHS', 'DEM'],
-  type: ProductType.POINT,
+  type: ProductType.POLYGON,
   category: SgidCategory.HEALTH, 
   secondaryCategory: SgidCategory.PLANNING,
 };
@@ -28,7 +28,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   updateHistory: [
-    `June 2013`,
+    `January 2016`,
   ],
   hub: {
     ...dataPages[metadata.title],
@@ -41,7 +41,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      EMS facility locations
+      Health district boundaries corresponding to local health departments
     </p>
   </Fragment>
 
@@ -50,24 +50,27 @@ const page: IPageMetadata = {
   </Section>
 
   <Fragment slot="description">
-    <p>An EMS Facility is any location where emergency medical services personnel are stationed or based out of, or
-      where EMS equipment is stored and ready use. Emergency Medical Services includes both private and
-      governmental entities. The <code>NAME</code> field contains the name of the EMS Facility.</p>
+    <p>
+      Local health departments are the main entities for reporting and tracking communicable diseases, health education, health screenings and immunizations, and food regulation for establishments. Their boundaries are comprised of one or more counties.
+    </p>
+    <p>
+      The <code>DISTNAME</code> field contains the district name.
+    </p>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="EMS Boundaries" href="/products/sgid/society/ems_response_areas">General health care facilities in Utah.</CardWithPopularLink>
-      <CardWithPopularLink title="Healthcare Facilities" href="/products/sgid/health/healthcare-facilities">General health care facilities in Utah.</CardWithPopularLink>
+      <CardWithPopularLink title="Department Contact Info" href="https://vitalrecords.utah.gov/utah-health-districts">Listings for all the local health departments along with their contact info.</CardWithPopularLink>
+      <CardWithPopularLink title="Small Health Statistical Areas" href="/products/sgid/health/small-health-statistical-areas">Areas used by DHHS for reporting.</CardWithPopularLink>
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Office of Emergency Medical Services and Preparedness" href="https://bemsp.utah.gov/">EMS licensing and emergency preparedness.</CardWithSmallLink>
-      <CardWithSmallLink title="Fire Stations" href="/products/sgid/society/fire_stations">Fire stations throughout the state</CardWithSmallLink>
+      <CardWithSmallLink title = "DHHS Homepage" href="https://dhhs.utah.gov">The Utah Department of Health and Human Services</CardWithSmallLink>
+      <CardWithSmallLink title="CDC" href="https://www.cdc.gov/">Nationwide health information at The Centers for Disease Control and Prevention</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>
