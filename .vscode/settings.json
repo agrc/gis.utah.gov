@@ -98,6 +98,7 @@
     "FNAME",
     "focusable",
     "foulger",
+    "Fredonia",
     "frontmatter",
     "gas",
     "GCDB",
@@ -232,6 +233,7 @@
     "notitle",
     "Notom",
     "nowrap",
+    "NRCS",
     "NSDI",
     "NSGIC",
     "NTRIP",
@@ -355,6 +357,7 @@
     "uncategorized",
     "underserved",
     "Unprotracted",
+    "URMCC",
     "URTA",
     "used",
     "USFS",
@@ -388,6 +391,7 @@
     "WRLU",
     "wsas",
     "xlink",
+    "Yampa",
     "zipcode"
   ],
   "cSpell.enableFiletypes": [
