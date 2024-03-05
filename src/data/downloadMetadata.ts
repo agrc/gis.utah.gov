@@ -910,8 +910,8 @@ export const dataPages: DownloadMetadata = {
   'Utah DAQ Air Emissions Inventory': {
     itemId: '57a8775a05a04166ba6c808451457583',
     name: 'Utah DAQ Air Emissions Inventory',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'DAQAirEmissionsInventory',
+    openSgid: 'environment.daq_air_emissions_inventory',
     layerId: 0,
   },
   'Utah DEQ Brownfields Other': {

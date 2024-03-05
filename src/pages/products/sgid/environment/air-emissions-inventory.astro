@@ -1,0 +1,81 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import Contacts from '@components/page/Contacts.astro';
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah DAQ Air Emissions Inventory',
+  description: 'Facility locations and annual emissions.',
+  stewards: ['DEQ DAQ'],
+  type: ProductType.POINT,
+  category: SgidCategory.ENVIRONMENT,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://enviro.deq.utah.gov',
+  updateHistory: ['As needed'],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+  links: [],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah DAQ Air Emissions Inventory depicts facility locations and annual emissions. Annual emissions (in tons) are
+      included for ammonia, pm10, carbon monoxide, sulfur dioxide, volatile organic compounds, and oxides of nitrogen
+      for Utah.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <Contacts contactKey="air_quality" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="DAQ" href="https://deq.utah.gov/division-air-quality"
+        >Division of Air Quality</CardWithPopularLink
+      >
+      <CardWithPopularLink title="DEQ" href="https://deq.utah.gov"
+        >Utah Department of Environmental Quality</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
+        >Web application showing off SGID service & data</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Environment" href="/products/sgid/environment" style="secondary"
+        >SGID data category</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

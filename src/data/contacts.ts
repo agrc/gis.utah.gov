@@ -209,9 +209,9 @@ export const contacts: Contacts = {
     agency: 'DNR',
   },
   air_quality: {
-    name: 'Whitney Oswald',
-    email: 'WOswald@utah.gov',
-    agency: 'DEQ',
+    name: 'Lexie Wilson',
+    email: 'lexiewilson@utah.gov',
+    agency: 'DAQ',
   },
   brownfields: {
     name: 'Bill Rees',
