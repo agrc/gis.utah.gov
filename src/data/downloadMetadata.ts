@@ -1386,8 +1386,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Emergency Medical Service Facilities': {
     itemId: '22410f18275646f89824403b74511308',
     name: 'Utah Emergency Medical Service Facilities',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'EMSFacilities',
+    openSgid: 'health.emergency_medical_service_facilities',
     layerId: 0,
   },
   'Utah Emergency Medical Services': {
