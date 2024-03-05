@@ -1890,14 +1890,14 @@ export const dataPages: DownloadMetadata = {
   'Utah Law Enforcement Boundaries': {
     itemId: '2e29c65cc23c48bd88b619a3ea218626',
     name: 'Utah Law Enforcement Boundaries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LawEnforcement',
+    openSgid: 'society.law_enforcement',
     layerId: 0,
   },
   'Utah Law Enforcement': {
     itemId: '5a99475d434941359462307ede77d980',
     name: 'Utah Law Enforcement',
-    featureServiceId: null,
+    featureServiceId: 'LawEnforcement',
     openSgid: '',
     layerId: 0,
   },
