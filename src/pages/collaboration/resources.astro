@@ -7,18 +7,34 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
-import resourcesPhoto from '@images/collaboration/resources.svg';
+import osmLogo from '@images/collaboration/OSM_logo.svg';
+import blogPhoto from '@images/collaboration/blog.svg';
+import conferenceLogo from '@images/collaboration/conference.svg';
+import eventsPhoto from '@images/collaboration/events.svg';
+import groupPhoto from '@images/collaboration/group.svg';
 
+import ExternalLink from '@components/page/ExternalLink.astro';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  title: 'GIS resources',
+  title: 'GIS events',
   section: stripeSections([
     {},
     {
-      title: 'Demonstration heading',
-      actionUrl: '/collaboration/somewhere',
-      actionText: 'Link text... can be empty for default value',
+      title: `What we're saying`,
+      actionUrl: '/blog',
+      actionText: 'Read the blog',
+    },
+    {
+      title: `What we've said`,
+      actionUrl: '/collaboration/resources/presentations',
+      actionText: 'View our presentations',
+    },
+    {
+      title: 'What others are saying',
+    },
+    {
+      title: 'Where can I learn more',
     },
   ]),
 };
@@ -29,20 +45,88 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[0]}>
     <Image
       slot="image"
-      src={resourcesPhoto}
+      src={eventsPhoto}
       loading="eager"
-      alt="a person searches a manilla folder containing a lot of documents "
+      alt="a person circling a date on a calendar"
       class="w-full max-w-[400px] rounded-2xl"
     />
-    UGRC has a myriad of blog posts that may be of great assistance to users, they can be found here. Staff from UGRC also
-    present at various conferences in the United States, all this information is to be found here. UGRC also keeps resources
-    for the media and our colleagues that need our logo etc.
+    <p>
+      We at UGRC strive to bring you the best of what the geospatial community has to offer. Here’s a quick list of
+      resources that we either use regularly or just can’t live without. This list is by no means all inclusive, so if
+      you have tools or resources you really like - let us know and we’ll see if we can include it here.
+    </p>
   </Section>
   <Section {...page.section[1]}>
-    <ul>
-      <li>Links to posts</li>
-      <li>Logos</li>
-      <li>Other info as appropriate</li>
-    </ul>
+    <Image
+      slot="image"
+      src={blogPhoto}
+      alt="A person sitting in a chair writing a blog post"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      We blog about stuff. We also have a quarterly <ExternalLink href="https://s.utah.gov/ugrc-newsletter"
+        >newsletter</ExternalLink
+      > that you can subscribe to where we highlight the best content for the quarter.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <Image
+      slot="image"
+      src={conferenceLogo}
+      alt="a person talking to a group of people at a conference"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      We present at many conferences and we have kept the slide decks and presentations from those conferences. These
+      are a great way to learn about what we are doing and how we are doing it.
+    </p>
+    <p>
+      We document all of our policies and procedures so we can operate in a consistent matter. Being familiar with these
+      documents will allow you to know what to expect from us and what we expect form you. Please read our <a
+        href="/documentation/policy">policies and procedures</a
+      >.
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      src={groupPhoto}
+      alt="A group of people talking and sharing with each other"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>There are many other great places to learn about GIS and to get help. Here are a few of our favorites:</p>
+
+    <h4>Esri Forums</h4>
+    <p>
+      The esri forums are a great place to have multiple people help you with any issues or questions you may be having.
+    </p>
+    <h4>Esri Ideas</h4>
+    <p>
+      The mechanism to make changes to esri products is through the ideas website. Here you can propose, comment, and
+      vote on ideas that you think would improve the product.
+    </p>
+    <h4>Slack</h4>
+    <p>
+      Slack is our distributed communication platform of choice. A few members of UGRC, some helpful esri employees,
+      other public servants, and all other GIS friends are in the Spatial Community. This is a great place to ask
+      realtime questions and spark a conversation with other GIS professionals. Join #arcgis-desktop and #arcgis-web and
+      say hi to @steveoh, @Jake Adams, and @stdavis from UGRC.
+    </p>
+    <h4>X</h4>
+    <p>X is our real time communication platform. We tweet as @MapUtah.</p>
+    <h4>Stack Exchange (GIS)</h4>
+    <p>
+      Stack Exchange is a great network of GIS professionals to ask questions and get answers in a consistent manner.
+    </p>
   </Section>
 </Layout>
+<Section {...page.section[4]}>
+  <Image slot="image" src={osmLogo} alt="Open Street Map US logo" class="w-full max-w-[400px] rounded-2xl" />
+  <p>
+    OpenStreetMap is the free, editable map of the world. OpenStreetMap US is a nonprofit organization helping to
+    support and grow the project in the US. The State of the Map US conference includes presentations, workshops, and
+    other events to connect with mappers, businesses, government agencies, and nonprofits, all collaborating around the
+    free and editable OpenStreetMap project. Share your vision for the project, learn how to work with OpenStreetMap
+    data, and hack on the latest mapping improvements.
+  </p>
+</Section>
