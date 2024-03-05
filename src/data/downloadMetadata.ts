@@ -917,8 +917,8 @@ export const dataPages: DownloadMetadata = {
   'Utah DEQ Brownfields Other': {
     itemId: '5fd65304423d40b38b4d93e50698db70',
     name: 'Utah DEQ Brownfields Other',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'BFNONTARGETED',
+    openSgid: 'environment.deq_brownfields_other',
     layerId: 0,
   },
   'Utah DAQ Air Monitor By Station': {
@@ -931,8 +931,8 @@ export const dataPages: DownloadMetadata = {
   'Utah DEQ Brownfields Targeted': {
     itemId: '630351c0db444fe7933a08eab40e573e',
     name: 'Utah DEQ Brownfields Targeted',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'BFTARGETED',
+    openSgid: 'environment.deq_brownfields_targeted',
     layerId: 0,
   },
   'Utah DAQ Permit Comp Approval': {
@@ -959,8 +959,8 @@ export const dataPages: DownloadMetadata = {
   'Utah DWMRC Hazardous Waste and Used Oil Facilities': {
     itemId: '8e9e6310622043bca68ffc2298959126',
     name: 'Utah DWMRC Hazardous Waste and Used Oil Facilities',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'DWMRCHazWasteUsedOilFacilities',
+    openSgid: 'environment.dwmrc_hazardous_waste_and_used_oil_facilities',
     layerId: 0,
   },
   'Utah DWMRC Low Level Waste Disposal and Uranium Mill Facilities': {

@@ -18,9 +18,10 @@ import Contacts from '@components/page/Contacts.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah DAQ Air Emissions Inventory',
-  description: 'Facility locations and annual emissions (in tons) for pollutants in Utah.',
-  stewards: ['DEQ DAQ'],
+  title: 'Utah DWMRC Hazardous Waste and Used Oil Facilities',
+  description:
+    'Sites that generate hazardous waste; that treat, store, or dispose of hazardous waste; and sites that transport, market, or recycle used oil',
+  stewards: ['DEQ DWMRC'],
   type: ProductType.POINT,
   category: SgidCategory.ENVIRONMENT,
 };
@@ -32,6 +33,7 @@ const page: IPageMetadata = {
   hub: {
     ...dataPages[metadata.title],
   },
+  links: [],
 };
 ---
 
@@ -40,9 +42,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Utah DAQ Air Emissions Inventory depicts facility locations and annual emissions. Annual emissions (in tons) are
-      included for ammonia, pm10, carbon monoxide, sulfur dioxide, volatile organic compounds, and oxides of nitrogen
-      for Utah.
+      This dataset contains sites that generate hazardous waste; that treat , store, or dispose of hazardous waste; and
+      sites that transport, market, or recycle used oil.
     </p>
   </Fragment>
 
@@ -51,15 +52,20 @@ const page: IPageMetadata = {
   </Section>
 
   <Fragment slot="description">
-    <Contacts contactKey="air_quality" />
+    <p>
+      The Hazardous Waste and Used Oil programs regulate the activities of facilities that handle hazardous waste and
+      used oil. Regulation of these facilities is the framework in which the facilities can operate while protecting
+      human health and the environment.
+    </p>
+    <Contacts contactKey="brownfields" />
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="DAQ" href="https://deq.utah.gov/division-air-quality"
-        >Division of Air Quality</CardWithPopularLink
+      <CardWithPopularLink title="DWMRC" href="https://deq.utah.gov/division-waste-management-radiation-control/"
+        >Utah Department of Environmental Quality: Division of Solid & Hazardous Waste</CardWithPopularLink
       >
       <CardWithPopularLink title="DEQ" href="https://deq.utah.gov"
         >Utah Department of Environmental Quality</CardWithPopularLink

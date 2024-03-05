@@ -214,10 +214,10 @@ export const contacts: Contacts = {
     agency: 'DAQ',
   },
   brownfields: {
-    name: 'Bill Rees',
-    email: 'BRees@utah.gov',
-    phone: '801-536-4167',
-    agency: 'DEQ',
+    name: 'Michelle Horning',
+    email: 'mhorning@utah.gov',
+    phone: '385 391-5918',
+    agency: 'DERR',
   },
   ewa: {
     name: 'Bill Rees',
