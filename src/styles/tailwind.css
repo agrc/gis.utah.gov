@@ -8,6 +8,9 @@
   .stripe-background a:not(.custom-style) {
     @apply text-secondary hover:text-primary dark:text-accent hover:dark:text-accent;
   }
+  .stripe-background details a:not(.custom-style) {
+    @apply text-accent hover:bg-white/10 hover:text-accent;
+  }
   .primary-background a:not(.custom-style) {
     @apply text-accent hover:bg-white/10;
   }
