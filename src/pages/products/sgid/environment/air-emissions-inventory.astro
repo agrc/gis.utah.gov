@@ -19,7 +19,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah DAQ Air Emissions Inventory',
-  description: 'Facility locations and annual emissions.',
+  description: 'Facility locations and annual emissions (in tons) for pollutants in Utah.',
   stewards: ['DEQ DAQ'],
   type: ProductType.POINT,
   category: SgidCategory.ENVIRONMENT,
@@ -32,7 +32,6 @@ const page: IPageMetadata = {
   hub: {
     ...dataPages[metadata.title],
   },
-  links: [],
 };
 ---
 
@@ -74,7 +73,7 @@ const page: IPageMetadata = {
         >Web application showing off SGID service & data</CardWithSmallLink
       >
       <CardWithSmallLink title="Environment" href="/products/sgid/environment" style="secondary"
-        >SGID data category</CardWithSmallLink
+        >SGID Environment category</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
