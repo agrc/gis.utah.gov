@@ -54,6 +54,7 @@
     "Datasource",
     "datetime",
     "dbeaver",
+    "DERR",
     "desig",
     "Deweyville",
     "dfirm",
@@ -68,6 +69,7 @@
     "drgs",
     "Duchesne",
     "Dugway",
+    "DWMRC",
     "EFFBUILT",
     "endcapture",
     "endunless",
@@ -375,7 +377,9 @@
     "xlink",
     "zipcode"
   ],
-  "cSpell.enableFiletypes": ["astro"],
+  "cSpell.enableFiletypes": [
+    "astro"
+  ],
   "[astro]": {
     "editor.wordWrapColumn": 120,
     "editor.defaultFormatter": "astro-build.astro-vscode"
