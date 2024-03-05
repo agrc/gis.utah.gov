@@ -377,7 +377,7 @@
   ],
   "[astro]": {
     "editor.wordWrapColumn": 120,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
