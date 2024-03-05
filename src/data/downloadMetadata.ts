@@ -1358,8 +1358,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Health Care Districts': {
     itemId: '2c738e87f55e4383b82a3c1cd08c8208',
     name: 'Utah Health Care Districts',
-    featureServiceId: '2c738e87f55e4383b82a3c1cd08c8208',
-    openSgid: 'health_care_districts',
+    featureServiceId: 'HealthDistricts',
+    openSgid: 'health.health_care_districts',
     layerId: 0,
   },
   'Utah Health Care Facilities': {
@@ -1373,7 +1373,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '4d29084d6e434ef397ae5922ba7402b4',
     name: 'Utah Emergency Medical Services',
     featureServiceId: 'EmergencyMedicalServices',
-    openSgid: 'emergency_medical_services',
+    openSgid: 'health.emergency_medical_services',
     layerId: 0,
   },
   'Utah Historic Districts': {
