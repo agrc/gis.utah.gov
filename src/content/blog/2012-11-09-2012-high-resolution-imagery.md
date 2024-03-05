@@ -11,9 +11,9 @@ tags:
 published: false
 date: 2012-11-09 14:00:26 -0700
 title: 2012 High Resolution Imagery Now Available
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Through partnerships with the USGS, State, and local government, UGRC is pleased to announce the new acquisition and availability of 2,110 square miles of 12.5cm (~5 inch) resolution 4-band aerial photography imagery.

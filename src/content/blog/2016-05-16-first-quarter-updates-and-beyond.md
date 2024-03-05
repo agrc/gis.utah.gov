@@ -7,11 +7,12 @@ tags:
   - boundary data
   - incorporation
   - municipalities
-date: 2016-05-16 21:55:12
+date: 2016-05-16T21:55:12.000Z
 title: First Quarter Updates and beyond.
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 <p>    Catching up and doing the updates for the first quarter or the year 2016.

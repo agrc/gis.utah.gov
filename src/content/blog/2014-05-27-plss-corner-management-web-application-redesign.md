@@ -8,12 +8,12 @@ tags:
 date: 2014-05-27 16:30:10 -0600
 title: PLSS Corner Management Web Application Redesign
 published: false
-categories:
-  - Featured
-  - GPS-surveyor
+category: GPS-surveyor
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
-<p><a href="{% link images/PLSSapp.png %}"><img src="{% link images/PLSSapp-251x300.png %}" alt="" title="PLSSapp" width="251" height="300" class="inline-text-right" /></a>The <a href="https://plss.utah.gov/">PLSS Corner Management Web Application</a> has been updated with a cleaner look which is much more user friendly. The PLSS web app gives users the ability to view section corner monument record sheets for corners that have already been published throughout the state, and it provides an online form that can be submitted for newly collected data on monuments.</p>
+<p><a href="/images/404.png"><img src="/images/404.png" alt="" title="PLSSapp" width="251" height="300" class="inline-text-right" /></a>The <a href="https://plss.utah.gov/">PLSS Corner Management Web Application</a> has been updated with a cleaner look which is much more user friendly. The PLSS web app gives users the ability to view section corner monument record sheets for corners that have already been published throughout the state, and it provides an online form that can be submitted for newly collected data on monuments.</p>
 <p>Features of this application include:</p>
 <ul>
 <li>UGRC standard map caches with an overlay of PLSS township lines, section lines and section points.</li>

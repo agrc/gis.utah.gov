@@ -1,144 +1,194 @@
 ---
 import type { IStandardPageMetadata } from '@models/products/sgid/types';
 
-import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
-import CardWithSideImage from '@components/page/CardWithSideImage.astro';
-import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import CardWithTopImage from '@components/page/CardWithTopImage.astro';
-import GridForMoreResources from '@components/page/GridForMoreResources.astro';
-import GridForPillars from '@components/page/GridForPillars.astro';
-import GridForPopularResources from '@components/page/GridForPopularResources.astro';
-import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/Pillar.astro';
+import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
-import dataSharingAgreementPhoto from '@images/sgid/data-sharing-agreement.svg';
-import licenseDisclaimerPhoto from '@images/sgid/license-disclaimer.svg';
-import openSgidPhoto from '@images/sgid/open-sgid.svg';
-import sgidIndexPhoto from '@images/sgid/sgid-index.svg';
-import sgidLogo from '@images/sgid/sgid-logo.svg';
-import sgidOpenDataPhoto from '@images/sgid/sgid-opendata.svg';
+import arcGisOnlinePhoto from '@images/documentation/sgid/agol-logo.png';
+import apiLogo from '@images/documentation/sgid/api-logo.svg';
+import discoverLogo from '@images/documentation/sgid/discover-logo.svg';
+import openSgidPhoto from '@images/documentation/sgid/open-sgid.svg';
+import sgidIndexPhoto from '@images/documentation/sgid/sgid-index.svg';
+import sgidLogo from '@images/documentation/sgid/sgid-logo.svg';
+import sgidOpenDataPhoto from '@images/documentation/sgid/sgid-opendata.svg';
+import sharePhoto from '@images/documentation/sgid/share.svg';
+
+import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'State Geographic Information Datasource',
+  pillar: 'Documentation',
+  section: stripeSections([
+    { title: 'What is the SGID' },
+    { title: 'The SGID Index', actionText: 'Search the index', actionUrl: '/products/sgid-index' },
+    { title: 'The Open SGID database', actionText: 'Get connected', actionUrl: '/documentation/sgid/open-sgid' },
+    {
+      title: 'UGRC ArcGIS Online',
+      actionText: 'Browse ArcGIS Online',
+      actionUrl: 'https://utah.maps.arcgis.com/home/groups.html',
+    },
+    { title: 'SGID on ArcGIS', actionText: 'Explore Utah data', actionUrl: 'https://opendata.gis.utah.gov/' },
+    { title: 'Discover base maps and imagery', actionText: 'Learn more', actionUrl: '/documentation/discover' },
+    { title: 'Raster discovery app', actionText: 'Search and download imagery', actionUrl: 'https://raster.utah.gov' },
+    { title: 'UGRC API', actionText: 'Learn more', actionUrl: '/products/api' },
+    { title: 'Sharing with the SGID', actionUrl: '/documentation/sgid/sharing' },
+  ]),
 };
 ---
 
-<Layout title={page.title}>
-  <Fragment slot="popular-level-ones">
-    <Section>
-      <Fragment slot="title">The State Geographic Information Datasource</Fragment>
-      <Image
-        src={sgidLogo}
-        slot="image"
-        loading="eager"
-        alt="sgid logo"
-        class="w-full rounded-2xl dark:brightness-200 dark:grayscale"
-      />
-      <p>
-        Established by State law in 1991, Utah's State Geographic Information Datasource (SGID) provides a centralized
-        collection of hundreds of GIS data layers developed, aggregated, or acquired by the State. Evolving technologies
-        have allowed us to transform the SGID from a single database to a broad collection of data resources under the
-        SGID umbrella. It contains both UGRC-curated datasets and references to data from a wide variety of state and
-        local agencies. Many resources have both download links and links to web services for direct consumption.
-      </p>
-      <p>
-        There are many facets, or parts, to the SGID today, with each one addressing specific audiences and
-        technologies. The SGID Index combines all of these facets plus links to externally-hosted resources to make it
-        easy to find the latest and highest quality GIS data resources no matter where they're hosted.
-      </p>
-      <p>
-        UGRC and our numerous partners at cities, counties, and state agencies are working hard to maintain this
-        high-quality asset to help everyone discover, access, and use Utah GIS data resources.
-      </p>
-    </Section>
-
-    <Section stripe>
-      <GridForPillars>
-        <CardWithTopImage title="SGID Index" actionText="Search the index" actionUrl="/products/sgid-index">
-          <Image slot="image" src={sgidIndexPhoto} alt="a person using a search engine" class="block h-44" />
-          The SGID Index is <span class="font-bold">the primary source</span> of information for SGID datasets. It includes
-          links to detailed information pages about UGRC-maintained datasets as well as direct links to the authoritative
-          sources for datasets served by other state agencies. The index lists the resource's category, name, and primary
-          data steward, along with a short description of the resource and links to web services (if available).
-        </CardWithTopImage>
-        <CardWithTopImage title="Open SGID" actionText="Get connected" actionUrl="products/open-sgid">
-          <Image slot="image" src={openSgidPhoto} alt="a person connected to a database" class="block h-44" />
-          The Open SGID is a publicly available database containing our curated collection of GIS datasets. You can use this
-          vendor-neutral database connection to directly access Utah spatial data in a wide variety of applications, including
-          most GIS programs and common database clients.
-        </CardWithTopImage>
-        <CardWithTopImage
-          title="SGID on ArcGIS"
-          actionText="Explore Utah data"
-          actionUrl="https://opendata.gis.utah.gov/"
-        >
-          <Image
-            slot="image"
-            src={sgidOpenDataPhoto}
-            alt="people connected to a network through geography"
-            class="block h-44"
-          />
-          The SGID on ArcGIS site is a single destination for GIS resources hosted in multiple agencies. Each item in the
-          Hub contains data download links along with web service links for consuming the datasets in webmaps and other applications.
-          We share all our curated datasets through the site and encourage other agencies and organizations to <a
-            href="{% link sharing/index.md %}">share</a
-          > their datasets here as well to help spread GIS data to the widest possible audience.
-        </CardWithTopImage>
-      </GridForPillars>
-    </Section>
-  </Fragment>
-
-  <Section title="Popular SGID Resources" slot="popular-resources" titlePosition="center">
-    <GridForPopularResources>
-      <CardWithPopularLink title="ArcGIS Online Services" href="https://utah.maps.arcgis.com/home/groups.html">
-        Browse ArcGIS Online services
-      </CardWithPopularLink>
-      <CardWithPopularLink title="The Raster Discovery App" href="/products/discover/raster">
-        Search raster data
-      </CardWithPopularLink>
-      <CardWithPopularLink title="Discover Base map and Imagery Services" href="/products/discover">
-        Access several raster products, including our aerial imagery products and the high-quality, Utah-specific base
-        maps.
-      </CardWithPopularLink>
-      <CardWithPopularLink title="UGRC API" href="http://api.mapserv.utah.gov">
-        Access SGID datasets and geocoding without complicated or costly software
-      </CardWithPopularLink>
-    </GridForPopularResources>
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      src={sgidLogo}
+      slot="image"
+      loading="eager"
+      alt="sgid logo"
+      class="w-full rounded-2xl px-3 py-2 dark:bg-white/20"
+    />
+    <p>
+      Established by State law in 1991, Utah's State Geographic Information Datasource (SGID) provides a centralized
+      collection of hundreds of GIS data layers developed, aggregated, or acquired by the State. Evolving technologies
+      have allowed us to transform the SGID from a single database to a broad collection of data resources under the
+      SGID umbrella. It contains both UGRC-curated datasets and references to data from a wide variety of state and
+      local agencies. Many resources have both download links and links to web services for direct consumption.
+    </p>
+    <p>
+      There are many facets, or parts, to the SGID today, with each one addressing specific audiences and technologies.
+      Every facet is organized by <a href="/products/sgid/categories">SGID data categories</a>. When you know the
+      category of the data you want to use, you can find it in the SGID. Read the following sections to figure out which
+      SGID technology is right for you.
+    </p>
   </Section>
 
-  <Section title="More SGID Resources" slot="more-resources" stripe titlePosition="center">
-    <GridForMoreResources>
-      <CardWithSideImage title="Data and license disclaimer" actionUrl="/products/sgid/disclaimer">
-        <Image slot="image" src={licenseDisclaimerPhoto} alt="man in front of warning sign" class="self-center" />
-        UGRC's data license and general data disclaimer.
-      </CardWithSideImage>
-      <CardWithSideImage title="Data sharing agreement" actionUrl="/products/sgid/sharing">
-        <Image slot="image" src={dataSharingAgreementPhoto} alt="people shaking hands" class="self-center" />
-        Agreement between UGRC and data stewards for data shared through the SGID.
-      </CardWithSideImage>
-    </GridForMoreResources>
+  <Section {...page.section[1]}>
+    <Image slot="image" src={sgidIndexPhoto} alt="a person using a search engine" class="w-full max-w-[400px]" />
+    <p>
+      The SGID Index is <span class="font-bold">the primary source</span> of information for SGID datasets. It includes links
+      to detailed product pages about UGRC-maintained datasets as well as direct links to the authoritative sources for datasets
+      served by other state agencies. The index lists the resource's category, name, and primary data steward, along with
+      a short description of the resource and links to web services (if available). <a href="/contact">Contact us</a> if
+      you would like your data to be included in the SGID Index.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <Image slot="image" src={openSgidPhoto} alt="a person connected to a database" class="w-full max-w-[400px]" />
+    <p>
+      The Open SGID is a publicly available database containing our curated collection of GIS datasets. You can use this
+      vendor-neutral database connection to directly access Utah spatial data in a wide variety of applications,
+      including most GIS programs and common database clients, and programming languages. You can find the most
+      up-to-date information about the Open SGID, including troubleshooting tips and an issue tracker, in the <ExternalLink
+        href="https://github.com/agrc/open-sgid">Open SGID GitHub repository</ExternalLink
+      >. Please read, understand, and abide by the <a href="/documentation/sgid/policy/">terms of use</a> prior to connecting.
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      src={arcGisOnlinePhoto}
+      alt="the ArcGIS Online category template for all Utah data"
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      UGRC uploads all the curated datasets to <ExternalLink href="https://utah.maps.arcgis.com"
+        >ArcGIS Online</ExternalLink
+      > as hosted feature services. You can access them via their service URLs or directly in Esri products. The name of
+      every SGID item in ArcGIS Online will start with "Utah" (i.e., "Utah Roads") and have an UGRC-branded thumbnail. They
+      are also shared with a Utah SGID group that matches their category.
+    </p>
+    <p>
+      The UGRC ArcGIS Online organization also acts as the repository for "shelved" and "static" curated SGID datasets.
+      These types of datasets are only available in ArcGIS Online as specified in our <a href="/about/policy/sgid/"
+        >SGID Database policy</a
+      >. If you are looking for a specific year of data or a dataset that was replaced, start here.
+    </p>
+    <p>
+      These services are a great tool if you want to display the data in a web map, programmatically query for
+      attributes or geometry in an application or script, or include the data in an analysis.
+    </p>
+  </Section>
+  <Section {...page.section[4]}>
+    <Image
+      slot="image"
+      src={sgidOpenDataPhoto}
+      alt="people connected to a network through geography"
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      The SGID on ArcGIS site is a single destination for ArcGIS Online GIS resources stewarded by multiple agencies
+      with ArcGIS Online accounts. Each item in the Hub contains data download links along with web service links for
+      consuming the datasets in web maps and other applications. We share all our curated datasets through the site and
+      encourage other agencies and organizations to share their datasets with the SGID on ArcGIS as well to help spread
+      GIS data to the widest possible audience.
+    </p>
+    <p>
+      The SGID on ArcGIS is the best place to download data. Every non-shelved ArcGIS Online service is catalogued in
+      the SGID on ArcGIS.
+    </p>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
-    <GridForYouMightLike>
-      <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
-        This portal provides access to UDOT data. Data layers are available to view and download. Applications are
-        available for exploring many of UDOT's current and authoritative datasets.
-      </CardWithSmallLink>
-      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
-        Discover spatial data and tools that empower informed land management decisions
-      </CardWithSmallLink>
-      <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
-        Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
-        management.
-      </CardWithSmallLink>
-      <CardWithSmallLink title="DEQ Data Portal" href="https://utahdeq.maps.arcgis.com/home/index.html">
-        Explore spatial data relevant to safeguarding and improving Utah’s air, land and water through balanced
-        regulation.
-      </CardWithSmallLink>
-    </GridForYouMightLike>
+  <Section {...page.section[5]}>
+    <Image slot="image" src={discoverLogo} alt="the discover wavy gravy logo" class="w-full max-w-[400px]" />
+    <p>
+      Discover complements the SGID vector GIS data with raster imagery and base maps. The base maps are created by
+      UGRC's cartographers, and Discover serves them using WMS image and WMTS tiled image services that anyone can use
+      in a wide variety of desktop and web applications. The Discover base maps are a beautiful reference layer for your
+      daily GIS work, web maps, or printed media. The imagery is a valuable resource for artificial intelligence
+      projects using computer vision to extract difficult to map information or comparing change from year to year.
+    </p>
+  </Section>
+
+  <Section {...page.section[6]}>
+    <p>
+      The Raster discovery app allows users to search and download all of UGRC's raster datasets, including
+      publicly-available <a href="/products/sgid/aerial-photography">imagery</a>,
+      <a href="/products/sgid/elevation-terrain">elevation</a>, <a href="/products/sgid/lidar">lidar</a>, and <a
+        href="/products/sgid/sgs-scanned-topographic-maps">scanned maps</a
+      >. You can see the Discover base maps in the app as well as search for and download the tiles that cover your area
+      of interest. If you need local copies of imagery, the Raster discovery app is the place to start.
+    </p>
+  </Section>
+
+  <Section {...page.section[7]}>
+    <Image slot="image" src={apiLogo} alt="the api wavy gravy logo" class="w-full max-w-[400px]" />
+    <p>
+      UGRC’s Web API is an http-enabled service for accessing this valuable geospatial data. From geocoding addresses
+      against the most accurate statewide roads and address points dataset to querying any data layer in the Open SGID,
+      the solutions created by the API are endless. The API powers UGRC’s <ExternalLink
+        href="https://www.npmjs.com/search?q=%40ugrc">components</ExternalLink
+      >, <a href="/products/sgid/address/masquerade">Esri locator proxy service</a>, and our <a
+        href="/products/sgid/address/api-client">API Client</a
+      > which can help you navigate the sea of data within the SGID.
+    </p>
+  </Section>
+  <Section {...page.section[8]}>
+    <Image
+      slot="image"
+      src={sharePhoto}
+      alt="Two people putting a lightbulb together as if it were a puzzle"
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      The Utah State Geographic Information Datasource is one of the premier statewide GIS data resources in the
+      country, providing clean, consistent, and authoritative data across every geography in the state. People have been
+      turning to the SGID for nearly <a href="/blog/2019-06-11-sgid-then-and-now">30 years</a> to support their personal,
+      commercial, academic, and government projects.
+    </p>
+    <p>
+      Nearly all the data that make the SGID such a valuable resource come from cities, counties, and other state
+      agencies. We offer a heartfelt <strong>Thank You!</strong> on behalf of both UGRC and all the users of the SGID to
+      everyone who has contributed data.
+    </p>
+    <p>
+      We hope you'll follow the example of our current contributors and consider sharing your data with a broad audience
+      through the SGID. We have three separate "tracks" to follow based on where your data fits best: the <strong
+        >SGID Index</strong
+      >, the <strong>SGID Open Data Site</strong>, and the <strong>Open SGID</strong>. There's also a separate process
+      for contributing to or updating an existing SGID dataset.
+    </p>
   </Section>
 </Layout>

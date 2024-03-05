@@ -15,11 +15,12 @@ tags:
   - tax
   - uac
   - valuation
-date: 2016-05-26 16:44:03
+date: 2016-05-26T16:44:03.000Z
 title: Work Group Recommends Expanded GIS Parcel Sharing
 published: false
-categories:
-  - Featured
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 **A Proposal for Voluntary Expanding Parcel Data Sharing**
@@ -27,7 +28,7 @@ categories:
 Earlier this month, the Land Information Records work group, an informal committee organized by Evan Curtis, the State Planning Coordinator with the
 Governor’s Office of Management and Budget, produced [recommendations](https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_) for expanding the sharing of GIS-based parcel information.
 
-<figure class="caption caption--right"><a href="https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_"><img class="caption__image" src="{% link images/ParcelRecDocScreenshot.jpg %}" alt="Land Use Information Records Recommendations" loading="lazy" /></a><figcaption class="caption__text">Land Use Information Records Recommendations Document</figcaption></figure>
+<figure class="caption caption--right"><a href="https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_"><img class="caption__image" src="/images/404.png" alt="Land Use Information Records Recommendations" loading="lazy" /></a><figcaption class="caption__text">Land Use Information Records Recommendations Document</figcaption></figure>
 
 Participants in the LIR work group include representatives from county, regional, and state government, including the Utah Association of Counties (County Assessors and County Recorders), Wasatch Front Regional Council, Mountainland and Bear River AOGs, Utah League of Cities and Towns, UDOT, DNR, UGRC, the Division of Emergency Management, Blue Stakes, economic developers, and academic researchers.
 
@@ -48,21 +49,6 @@ Another aim of the work group was to improve the usability of the data (through 
 1. Once the proposed data schema is completed, it will be distributed to the county assessors for a final review, followed by an invitation to submit the most recent tax parcel data for the 2016 calendar year. The initial focus will be publishing a GIS layer for the Wasatch Front, Wasatch Back, and other high-growth counties.
 
 1. UGRC will work with counties to collect, aggregate and publish the tax parcels according to the agreed upon schema.
-
-<div class="grid text-center">
-    <div class="grid__col grid__col--1-of-2 text-center">
-        <a href ="{% link downloads/ParcelAssessedLandValue.pdf %}">
-            <img src="{% link images/AssessedLandValue.jpg %}" alt="Assessed Land Value Example" loading="lazy" />
-        </a>
-        <p>Assessed Land Value, By Acre (Northern Utah County)</p>
-    </div>
-    <div class="grid__col grid__col--1-of-2 text-center">
-        <a href ="{% link downloads/ParcelVacantPrivateLand.pdf %}">
-            <img src="{% link images/VacantPrivateLand.jpg %}" alt="Vacant Private Land Example" loading="lazy" />
-        </a>
-        <p>Vacant Private Land (Northern Utah County)</p>
-    </div>
-</div>
 
 _[LIR]: Land Information Records
 _[AOG]: Association of Governments

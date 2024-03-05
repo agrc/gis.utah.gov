@@ -4,14 +4,14 @@ author:
   email: zbeck@utah.gov
 tags: []
 date: 2012-08-01 15:10:36 -0600
-title: 'Using Utah GIS Elevation Data to Visualize Terrain'
+title: Using Utah GIS Elevation Data to Visualize Terrain
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
-<p><img style="padding-right: 20px;" title="Using ArcMap color ramp symbology to provide an intuitive elevation coloring" src="{% link images/symbology_sml.png %}" alt="" width="400" height="356" align="right" /></p>
+<p><img style="padding-right: 20px;" title="Using ArcMap color ramp symbology to provide an intuitive elevation coloring" src="/images/404.png" alt="" width="400" height="356" align="right" /></p>
 
 To highlight elevation in the Utah Terrain Base Map, a custom color ramp symbol was created to enhance the basic gray-scale hillshading. By editing the color ramp properties of the DEM, a user can define colors stretched between the maximum and minimum elevation values to represent biomes across the state. In the case of the Utah Terrain Base Map, 11 algorithmic 1-2 value color ramps were stretched between a minimum value of 500 meters and a maximum of 3375 meters. Overlaying this symbology upon a hillshade will represent lower elevations in shades of tan, increasing to green in more mountainous regions, and ending with white representing a snow line at about 9,500 feet.
 

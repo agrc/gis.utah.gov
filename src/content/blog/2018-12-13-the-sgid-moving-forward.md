@@ -1,12 +1,13 @@
 ---
-title: 'The SGID, Moving Forward'
+title: The SGID, Moving Forward
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
-date: 2018-12-13 23:33:14
-categories:
-  - SGID Blog
+date: 2018-12-13T23:33:14.000Z
 tags: []
+category: SGID Blog
+cover_image: /src/images/pillar-blog/2018-12-13-the-sgid-moving-forward/sgid_lifecycle.jpg
+cover_image_alt: SGID Data Lifecycle photo
 ---
 
 In an effort to ultimately consolidate and organize as much State <abbr title="geographic information system">GIS</abbr> data as possible, <abbr title="Utah Geospatial Resource Center">UGRC</abbr> has been gathering information about <abbr title="State Geographic Information Database">SGID</abbr> data layers managed by UGRC, and we are now reaching out to state agencies to collaborate about agency-specific data layers. Read on to get the full scoop on this effort.
@@ -21,11 +22,11 @@ The SGID was established by state law in 1991 and ensures that GIS map layers ar
 
 In the past, agencies completed data maturity assessments, which provide UGRC with a good foundation for updating and consolidating agency GIS data.
 
-![SGID Data Lifecycle photo]({% link images/SGID_lifecycle.jpg %}){: .flex .flex--center}
+![SGID Data Lifecycle photo](../../images/pillar-blog/2018-12-13-the-sgid-moving-forward/sgid_lifecycle.jpg)
 
 **Oh yeah, that’s right. And what is UGRC working on now with the SGID?**
 
-For the past several months, UGRC has been assessing SGID data layer usage in order to identify the most and least frequently used layers. (Read our [“SGID Data Lifecycle”]({% link _posts/2018-02-05-sgid-data-lifecycle.md %}) and [“The Incredible Shrinking SGID”]({% link _posts/2018-09-10-the-incredible-shrinking-sgid.md %}) articles to get more background about the SGID and our data collection efforts.) Although SGID data layer usage is constantly changing, at this point the most frequently used SGID layers are:
+For the past several months, UGRC has been assessing SGID data layer usage in order to identify the most and least frequently used layers. (Read our [“SGID Data Lifecycle”](/blog/2018-02-05-sgid-data-lifecycle) and [“The Incredible Shrinking SGID”](/blog/2018-09-10-the-incredible-shrinking-sgid) articles to get more background about the SGID and our data collection efforts.) Although SGID data layer usage is constantly changing, at this point the most frequently used SGID layers are:
 
 - County Boundaries
 - Municipal Boundaries

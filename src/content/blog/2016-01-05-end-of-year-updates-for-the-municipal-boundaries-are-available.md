@@ -10,8 +10,9 @@ tags:
 date: 2016-01-05 16:36:29 -0700
 title: End of year updates for the Municipal Boundaries are available
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Finally the end of year updates for Municipal Boundaries are here. Seem like there are a lot of procrastinators like myself out there. 15 out of the 36 changes this quarter came in December, or the end there of. Anyway they are all out there now and ready for use, have fun with them.
@@ -29,4 +30,4 @@ The following are the changes since the end of August, listed by county:
 - Washington – St George
 - Weber – Ogden, Plain City, Washington Terrace
 
-[Click for more info and to download]({% link data/boundaries/citycountystate/index.html %}) the data layers listed above.
+[Click for more info and to download](/products/sgid/boundaries/municipal) the data layers listed above.

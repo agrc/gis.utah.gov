@@ -8,17 +8,19 @@ tags:
   - data
   - gis history
   - policy
-date: 2016-05-24 21:57:21
+date: 2016-05-24T21:57:21.000Z
 title: '25 Years Ago: Laying the Foundation for Utah GIS Success'
-categories:
-  - Featured
+category: Uncategorized
+cover_image: /src/images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid25years.png
+cover_image_alt: SGID 25th anniversary sticker
 ---
 
 For those of us not in the GIS field at the time, 1991 was a significant year in Utah and beyond...
 
 In March of 1991, Governor Norman Bangerter signed into law Senate Bill 21, sponsored by Senator Dixie Leavitt. That was 25 years ago this Spring and, nationally, it was one of the, if not the first, instances of GIS being codified into state statute.
 
-<figure class="caption caption--right"><a href ="{% link images/SGID25YEARS.png %}"><img class="caption__image" src="{% link images/SGID25YEARS_small.png %}" alt="SGID 25th Anniversary Sticker" loading="lazy" /></a><figcaption class="caption__text">Commemorative SGID 25th<br>Anniversary Sticker</figcaption></figure>
+Commemorative SGID 25th Anniversary Sticker
+![SGID 25th anniversary sticker](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid25years.png)
 
 Happy 25th Anniversary SGID!
 
@@ -46,17 +48,11 @@ Commemorative 'SGID 25 Years' stickers are available in limited
 quantity. One size fits all SGID data stewards and SGID data users alike.
 Get yours from an UGRC staffer at your next opportunity.
 
-<div class="grid">
-    <div class="grid__col grid__col--1-of-3 text-center">
-        <h5 class="text-center">Cover of SGID Data CD, 1995</h5>
-        <img alt="Cover, SGIC CD, 1995" src="{% link images/SGID_Cover.JPG %}" loading="lazy" />
-    </div>
-    <div class="grid__col grid__col--1-of-3 text-center">
-        <h5 class="text-center">SGID Data CD, 1995</h5>
-        <img alt="Inside, SGID CD, 1995" src="{% link images/SGID_CD.JPG %}" loading="lazy" />
-    </div>
-    <div class="grid__col grid__col--1-of-3 text-center">
-        <h5 class="text-center">SGID Data User Guide, 1999</h5>
-        <img alt="SGID Data User Guides, 1999" src="{% link images/SGID_UserGuide.JPG %}" loading="lazy" />
-    </div>
-</div>
+Cover of SGID Data CD, 1995
+[Cover, SGID CD, 1995](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cover.jpg)
+
+SGID Data CD, 1995
+[Inside, SGID CD, 1995](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cd.jpg)
+
+SGID Data User Guide, 1999
+[SGID Data User Guides, 1999](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_userguide.jpg)

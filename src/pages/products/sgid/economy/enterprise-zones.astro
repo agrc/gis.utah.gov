@@ -1,0 +1,76 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Enterprise Zones',
+  description: `Polygons representing areas to encourage economic growth by providing tax breaks to development projects.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.ECONOMY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://locate.utah.gov/#l=17%2C999&x=-12366164&y=4829244&scale=4622324',
+  updateHistory: [`January 2024`, `November 2020`, `December 2019`, `October 2019`],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The Utah Enterprise Zone Tax Credit program promotes economic development and business growth in Utah's rural
+      areas. Under this program, qualifying businesses locating to or expanding in designated Enterprise Zones may claim
+      state of Utah tax credits. An Enterprise Zone designation is based on the need for development and other economic
+      distress factors. Enterprise Zones are identified by local elected officials and designated with the help of the
+      Governor's Office of Economic Opportunity.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="GOEO" href="https://business.utah.gov/rural/enterprise-zone-tax-credits/"
+        >Governor's Office of Economic Opportunity.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Tax" href="https://tax.utah.gov/">Utah State Tax Commission.</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Sales Tax Areas" href="/products/sgid/sales-tax-areas" style="secondary"
+        >Sales tax collection areas.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Tax Areas" href="/products/sgid/tax-areas" style="secondary"
+        >Incorporated tax areas.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

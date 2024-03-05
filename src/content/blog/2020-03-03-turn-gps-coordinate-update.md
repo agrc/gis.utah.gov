@@ -1,19 +1,19 @@
 ---
-title: 'TURN GPS Coordinate Update'
+title: TURN GPS Coordinate Update
 published: false
 author:
   display_name: Sean Fernandez
   email: SFernandez@utah.gov
-date: 2020-03-03 19:28:40
-categories:
-  - Featured
-  - GPS-surveyor
+date: 2020-03-03T19:28:40.000Z
 tags: []
+category: GPS-surveyor
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 The Utah Reference Network Global Positioning System (TURN GPS) provides real-time high precision centimeter positioning. Some reference stations within the network move slightly over time due to earth crustal displacement and the positions must be updated periodically to maintain accuracy.
 
-![Station Map]({% link images/gps_update_map.jpg %}){: .inline-text-right .outline}
+![Station Map](/images/404.png)
 
 The coordinates of **7 GPS stations will be updated on April 1st** because they have exceeded the 2.5 cm variance limit. The new positions were determined using 24 hour files from January 1, 2020 and processed using OPUS Projects holding 21 published CORS station constrained.
 

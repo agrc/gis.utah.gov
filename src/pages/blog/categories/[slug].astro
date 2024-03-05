@@ -1,0 +1,57 @@
+---
+import CardForBlog from '@components/page/CardForBlog.astro';
+import Layout from '@layouts/BlogPostIndex.astro';
+import { getBlogFilters, type BlogFilter, type DecoratedBlogEntry } from '@utils/collections';
+import type { GetStaticPathsResult } from 'astro';
+
+interface Props {
+  category: string;
+  posts: DecoratedBlogEntry[];
+}
+
+const categories = await getBlogFilters('categories');
+
+export async function getStaticPaths(): Promise<GetStaticPathsResult> {
+  const categories = await getBlogFilters('categories');
+
+  return categories.map((category) => ({
+    params: {
+      slug: category.slug,
+    },
+    props: {
+      category: category.name,
+      posts: category.posts,
+    },
+  }));
+}
+
+const { category, posts } = Astro.props;
+---
+
+<Layout title="Post categories" category={category}>
+  <Fragment slot="categories">
+    {
+      categories.map((category: BlogFilter) => (
+        <a href={`/blog/categories/${category.slug}`} class="mr-2">
+          {category.name}
+        </a>
+      ))
+    }
+  </Fragment>
+
+  {
+    posts.map((post) => (
+      <CardForBlog
+        category={post.data.category}
+        coverImage={post.data.cover_image}
+        coverImageAlt={post.data.cover_image_alt}
+        date={post.data.date}
+        snippet={post.data.snippet}
+        estimatedReadingTime={post.data.estimatedReadTime}
+        slug={post.slug}
+        tags={post.data.tags}
+        title={post.data.title}
+      />
+    ))
+  }
+</Layout>

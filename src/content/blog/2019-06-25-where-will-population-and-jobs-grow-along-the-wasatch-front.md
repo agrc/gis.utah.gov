@@ -1,17 +1,18 @@
 ---
-title: 'Where Will Population and Jobs Grow along the Wasatch Front?'
+title: Where Will Population and Jobs Grow along the Wasatch Front?
 published: false
 author:
   display_name: Bert Granberg
   email: bgranberg@wfrc.org
-date: 2019-06-25 22:02:26
-categories:
-  - Featured
+date: 2019-06-25T22:02:26.000Z
 tags:
   - datasets
   - population
   - jobs
   - wfrc
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Seven new GIS datasets are now available that provide annual projections, through 2050, of population and job densities for the Salt Lake - Provo - Ogden urban corridor extending from Santaquin north to Brigham City. The projections datasets each present the annual forecasted counts for each year 2019 through 2050 for the following variables:
@@ -34,4 +35,4 @@ The projections datasets were created using the Real Estate Market Model (REMM),
 
 If you're looking to learn more about these datasets, this [metadata doc](https://docs.google.com/document/d/1kgaSewcLy8WIh0BzjwDqNF_3h0R9FN_rzraxoXRa5C8/edit?usp=sharing) is your friend.
 
-![Projected household density in 2050]({% link images/ProjectedHouseholdDensity.png %}){: .flex .flex--center .outline }
+![Projected household density in 2050](/images/404.png)

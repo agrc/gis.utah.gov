@@ -1,0 +1,229 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Disclaimer from '@components/data/Disclaimer.astro';
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import { dataPages } from '@data/downloadMetadata';
+import { Code } from 'astro:components';
+
+export const metadata: IMetadata = {
+  title: 'Utah Open Source Places',
+  description: `Point representation of places of interest including businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, and car dealerships in Utah that have been derived from OpenStreetMap (OSM).`,
+  stewards: ['OpenStreetMap', 'UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [
+    'February 2024',
+    'December 2023',
+    'June 2023',
+    'May 2023',
+    'April 2023',
+    'March 2023',
+    'February 2023',
+  ],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This point data was generated and filtered from OpenStreetMap (OSM) and is intended to represent places of
+      interest in the state of Utah. These data may include businesses, restaurants, places of worship, airports, parks,
+      schools, event centers, apartment complexes, hotels, car dealerships…almost anything that you can find in OSM.
+      There were over 23,000 features in the original dataset (March 2022) and users can directly contribute to it
+      through <ExternalLink href="https://www.openstreetmap.org/#map=7/39.597/-111.824">openstreetmap.org.</ExternalLink
+      > The data is updated approximately once every month and will likely continue to grow over time with additional user
+      input and activity.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <h3>Data Creation Process</h3>
+    <p>
+      The Open Source Places layer is created by a Python script that downloads statewide OSM data from a nightly
+      archive provided by Geofabrik. The archive data contains nearly 20 shapefiles, some that are relevant to this
+      dataset and some that aren't.
+    </p>
+    <p>
+      The Open Source Places layer is built by filtering the polygon and point data in those shapefiles down to a single
+      point feature class with specific categories and attributes that UGRC determines would be of widest interest. The
+      polygon features (buildings, areas, complexes, etc.) are converted to points using an internal centroid. Spatial
+      filtering is done as the data from multiple shapefiles is combined into a single layer to minimize the occurrence
+      of duplicate features. For example, a restaurant can be represented in OSM as both a point of interest and as a
+      building polygon, the spatial filtering helps reduce the chances that both of these features are present in the
+      final dataset.
+    </p>
+    <p>
+      Additional de-duplication is performed by using the 'block_id' field as a spatial index to ensure that no two
+      features of the same name exist within a census block. Then, additional fields are created and assigned from
+      UGRC's SGID data (county, city, zip, nearby address, etc.) via point-in-polygon and near analyses. A numeric check
+      is done on the 'name' field to remove features where the name is less than 3 characters long or more than 50%
+      numeric characters. This eliminates several features derived from the buildings layer where the 'name' is simply
+      an apartment complex building number (ex: 3A) or house number (ex: 1612).
+    </p>
+    <p>
+      Finally, additional attributes (osm_addr, open_hours, phone, website cuisine, etc.) are pulled from the Overpass
+      API and joined to the filtered data using the 'osm_id' field as the join key.
+    </p>
+
+    <h3>Field Descriptions</h3>
+    <dl>
+      <DefinitionListItem title="osm_id">The feature ID in the OSM database.</DefinitionListItem>
+      <DefinitionListItem title="name">The name of the feature in the OSM database.</DefinitionListItem>
+      <DefinitionListItem title="category"
+        >The feature's data class based on the 4-digit code and tags in the OSM database.</DefinitionListItem
+      >
+      <DefinitionListItem title="county"
+        >The county the feature is located in (assigned from UGRC's county boundaries).</DefinitionListItem
+      >
+      <DefinitionListItem title="city"
+        >The city the feature is located in (assigned from UGRC's municipal boundaries).</DefinitionListItem
+      >
+      <DefinitionListItem title="zip"
+        >The zip code of the feature (assigned from UGRC's approximation of zip code boundaries).</DefinitionListItem
+      >
+      <DefinitionListItem title="block_id"
+        >The census block the feature is located in (assigned from UGRC's census block boundaries).</DefinitionListItem
+      >
+      <DefinitionListItem title="osm_addr">The feature's address in the OSM database, if available.</DefinitionListItem>
+      <DefinitionListItem title="ugrc_addr"
+        >The nearest address (within 25 meters) from the UGRC address point database.</DefinitionListItem
+      >
+      <DefinitionListItem title="addr_dist"
+        >The distance (meters) to the nearest UGRC address point within 25 meters.</DefinitionListItem
+      >
+      <DefinitionListItem title="disclaimer">A note from UGRC about the ugrc_addr field.</DefinitionListItem>
+      <DefinitionListItem title="lon"
+        >The approximate longitude of the feature, calculated in WGS84 [EPSG:4326] (for the most precision, it is
+        recommended that the feature's geometry is used instead of this field).</DefinitionListItem
+      >
+      <DefinitionListItem title="lat"
+        >The approximate latitude of the feature, calculated in WGS84 [EPSG:4326] (for the most precision, it is
+        recommended that the feature's geometry is used instead of this field).</DefinitionListItem
+      >
+      <DefinitionListItem title="amenity"
+        >The amenity available at the feature (if applicable), often similar to the category.</DefinitionListItem
+      >
+      <DefinitionListItem title="cuisine"
+        >The type of food available (if applicable), multiple types are separated by semicolons (;).</DefinitionListItem
+      >
+      <DefinitionListItem title="tourism"
+        >The type of tourist location, if applicable (zoo, viewpoint, hotel, attraction, etc.).</DefinitionListItem
+      >
+      <DefinitionListItem title="shop">The type of shop, if applicable</DefinitionListItem>
+      <DefinitionListItem title="website">The feature's website in the OSM database, if available.</DefinitionListItem>
+      <DefinitionListItem title="phone"
+        >The feature's phone number(s) in the OSM database, if available.</DefinitionListItem
+      >
+      <DefinitionListItem title="open_hours"
+        >The feature's operating hours in the OSM database, if available.</DefinitionListItem
+      >
+    </dl>
+    <h3>Data Sources</h3>
+    <BulletedList>
+      <li>
+        The source data and global OSM data is available for downloaded from <ExternalLink
+          href="https://download.geofabrik.de/">Geofabrik</ExternalLink
+        > as well as downloads specifically for <ExternalLink
+          href="https://download.geofabrik.de/north-america/us/utah-latest-free.shp.zip">Utah</ExternalLink
+        >.
+      </li>
+      <li>
+        Additional attributes for the Utah features are gathered via the <ExternalLink
+          href="https://wiki.openstreetmap.org/wiki/Overpass_API">Overpass API</ExternalLink
+        > using the following query <ExternalLink
+          href="https://overpass-turbo.eu/?Q=area%5Bname%3D%22Utah%22%5D-%3E.utah%3B%0Anwr%5B!highway%5D%5Bname%5D(area.utah)%3Bout%20center%3B&C=41.89;12.492;16"
+          >https://overpass-turbo.eu/s/1geR</ExternalLink
+        >.
+      </li>
+    </BulletedList>
+    <Code
+      lang="fsharp"
+      code={`
+          area[name="Utah"]->.utah;
+          nwr[!highway][name](area.utah);
+          out center;
+          `}
+    />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Disclaimer slot="disclaimer">
+    <p>The Open Source Places data carries a different license than most UGRC data.</p>
+    <p>
+      OpenStreetMap® is open data, licensed under the <ExternalLink href="https://opendatacommons.org/licenses/odbl/"
+        >Open Data Commons Open Database License</ExternalLink
+      > (ODbL) by the <ExternalLink href="https://osmfoundation.org/">OpenStreetMap Foundation</ExternalLink> (OSMF).
+    </p>
+    <p>
+      You are free to copy, distribute, transmit and adapt our data, as long as you credit OpenStreetMap and its
+      contributors. If you alter or build upon our data, you may distribute the result only under the same license. The
+      full <ExternalLink href="https://opendatacommons.org/licenses/odbl/1.0/">legal code</ExternalLink> explains your rights
+      and responsibilities.
+    </p>
+    <p>&copy; OpenStreetMap contributors</p>
+    <p>
+      For more information, visit <ExternalLink href="https://www.openstreetmap.org/copyright"
+        >openstreetmap.org/copyright</ExternalLink
+      >, <ExternalLink href="https://www.openstreetmap.org">openstreetmap.org</ExternalLink>, and <ExternalLink
+        href="https://www.opendatacommons.org">opendatacommons.org</ExternalLink
+      >.
+    </p>
+    <p>
+      OpenStreetMap® is open data, licensed under the <ExternalLink href="https://opendatacommons.org/licenses/odbl/"
+        >Open Data Commons Open Data License</ExternalLink
+      > (ODbL) by the <ExternalLink href="https://osmfoundation.org/">OpenStreetMap Foundation</ExternalLink> (OSMF).
+    </p>
+  </Disclaimer>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="OSM" href="https://www.openstreetmap.org/#map=7/39.597/-111.824"
+        >OpenStreetMap.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Geofabrik" href="https://download.geofabrik.de/"
+        >OpenStreetMaps Data Extracts.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="GNIS" href="/products/sgid/location/gnis" style="secondary"
+        >Geographic Names Information System.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address" style="secondary"
+        >Addressing category index.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

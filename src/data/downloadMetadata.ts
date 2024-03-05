@@ -4,6 +4,13 @@ interface DownloadMetadata {
   [key: string]: IHubDownload;
 }
 export const dataPages: DownloadMetadata = {
+  'Utah Example Data': {
+    itemId: '45aef8e1d4dd412ab538a7ec21eff4c7',
+    name: 'Utah Example Data',
+    featureServiceId: 'ExampleData',
+    openSgid: 'example.data',
+    layerId: 0,
+  },
   'Utah Wildfire Perimeters': {
     itemId: '45aef8e1d4dd412ab538a7ec21eff4c7',
     name: 'Utah Wildfire Perimeters',
@@ -42,15 +49,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Conservation Districts': {
     itemId: '9c41b6d6ce7346858ed0ea0dc7727c13',
     name: 'Utah Conservation Districts',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahConservationDistricts',
+    openSgid: 'boundaries.conservation_districts',
     layerId: 0,
   },
   'Utah Conservation Zones': {
     itemId: '355fe28d943e49e7a400ac1fb2140413',
     name: 'Utah Conservation Zones',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahConservationZones',
+    openSgid: 'boundaries.conservation_zones',
     layerId: 0,
   },
   'Utah Wilderness BLM Suitability': {
@@ -98,8 +105,8 @@ export const dataPages: DownloadMetadata = {
   'Utah School District Boundaries': {
     itemId: '3e69ecf5c46a492aa9974f6fa03d1378',
     name: 'Utah School District Boundaries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahSchoolDistrictBoundaries',
+    openSgid: 'boundaries.school_district_boundaries',
     layerId: 0,
   },
   'Utah Municipal Boundaries': {
@@ -112,8 +119,8 @@ export const dataPages: DownloadMetadata = {
   'Utah ZIP Code Areas': {
     itemId: '4f9d1d1301864f8cabef08cbae7b2d3c',
     name: 'Utah ZIP Code Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahZipCodeAreas',
+    openSgid: 'boundaries.zip_code_areas',
     layerId: 0,
   },
   'Utah Metro Townships': {
@@ -651,8 +658,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Enterprise Zones': {
     itemId: 'dc4539cb9d1548e1a1f31cf5b63e3ad5',
     name: 'Utah Enterprise Zones',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'EnterpriseZones',
+    openSgid: 'economy.enterprise_zones',
     layerId: 0,
   },
   'Utah USGS 3DEP 1K Grid': {
@@ -1183,15 +1190,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Landslide Inventory Polygons': {
     itemId: '3be19aad83a940cfa7bb331b5fbc28c6',
     name: 'Utah Landslide Inventory Polygons',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideInventoryPolygons',
+    openSgid: 'geoscience.landslide_inventory_polygons',
     layerId: 0,
   },
   'Utah Landslide Inventory Mapped Areas': {
     itemId: 'e0ec1e7d0d5c47e388cc86e89928fe92',
     name: 'Utah Landslide Inventory Mapped Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideInventoryMappedAreas',
+    openSgid: 'geoscience.landslide_inventory_mapped_areas',
     layerId: 0,
   },
   'Utah Quaternary Volcanic Flow': {
@@ -1204,22 +1211,22 @@ export const dataPages: DownloadMetadata = {
   'Utah Landslide Compilation Scarps': {
     itemId: 'e22096dacc604d5eb8b2e3c5e21f0a58',
     name: 'Utah Landslide Compilation Scarps',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideCompilationScarps',
+    openSgid: 'geoscience.landslide_compilation_scarps',
     layerId: 0,
   },
   'Utah Landslide Compilation Polygons': {
     itemId: '4698550fd2aa4029bc295f7e0051780e',
     name: 'Utah Landslide Compilation Polygons',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideCompilationPolygons',
+    openSgid: 'geoscience.landslide_compilation_polygons',
     layerId: 0,
   },
   'Utah Landslide Compilation Debris Flow Paths': {
     itemId: 'cda61391c65a4d4aa94a581f6bf57057',
     name: 'Utah Landslide Compilation Debris Flow Paths',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LandslideCompilationDebrisFlowPaths',
+    openSgid: 'geoscience.landslide_compilation_debris_flow_paths',
     layerId: 0,
   },
   'Utah Geologic Formations Line': {
@@ -1253,8 +1260,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Quaternary Faults': {
     itemId: 'hosted by UGS',
     name: 'Utah Quaternary Faults',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'QuaternaryFaults',
+    openSgid: 'geoscience.quaternary_faults',
     layerId: 0,
   },
   'Utah Geologic Markers': {
@@ -1267,15 +1274,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Earthquake Epicenters Mining Induced 1928 to 2016': {
     itemId: 'af0cbb8ecca942d58367f68bcd2643b6',
     name: 'Utah Earthquake Epicenters Mining Induced 1928 to 2016',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'EarthquakeEpicentersMiningInduced_1928to2016',
+    openSgid: 'geoscience.earthquake_epicenters_mining_induced_1928_to_2016',
     layerId: 0,
   },
   'Utah Earthquake Epicenters 1850 to 2016': {
     itemId: '4c162e09b7b5436bae9a0e656b5343a7',
     name: 'Utah Earthquake Epicenters 1850 to 2016',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'EarthquakeEpicenters_1850to2016',
+    openSgid: 'geoscience.earthquake_epicenters_1850_to_2016',
     layerId: 0,
   },
   'Utah Debris Flow Wasatch Study Boundary': {
@@ -1348,46 +1355,25 @@ export const dataPages: DownloadMetadata = {
     openSgid: '',
     layerId: 0,
   },
-  'Utah Health Small Statistical Areas 2018': {
-    itemId: 'c0a84e302c8142cb9ca34f88813f23b3',
-    name: 'Utah Health Small Statistical Areas 2018',
-    featureServiceId: null,
-    openSgid: '',
-    layerId: 0,
-  },
-  'Utah Health Small Statistical Areas 2017': {
-    itemId: '6fe09518dc62415d88570dfd59fbb4c5',
-    name: 'Utah Health Small Statistical Areas 2017',
-    featureServiceId: null,
-    openSgid: '',
-    layerId: 0,
-  },
   'Utah Health Care Districts': {
     itemId: '2c738e87f55e4383b82a3c1cd08c8208',
     name: 'Utah Health Care Districts',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'HealthDistricts',
+    openSgid: 'health.health_care_districts',
     layerId: 0,
   },
   'Utah Health Care Facilities': {
     itemId: 'f5e5d7c717c946fe9cd6f2c8d0bf8d86',
     name: 'Utah Health Care Facilities',
-    featureServiceId: null,
-    openSgid: '',
-    layerId: 0,
-  },
-  'Utah Emergency Medical Service Facilities': {
-    itemId: '22410f18275646f89824403b74511308',
-    name: 'Utah Emergency Medical Service Facilities',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahHealthCareFacilities',
+    openSgid: 'health.health_care_facilities',
     layerId: 0,
   },
   'Utah Emergency Medical Services': {
     itemId: '4d29084d6e434ef397ae5922ba7402b4',
     name: 'Utah Emergency Medical Services',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'EmergencyMedicalServices',
+    openSgid: 'health.emergency_medical_services',
     layerId: 0,
   },
   'Utah Historic Districts': {
@@ -1519,8 +1505,8 @@ export const dataPages: DownloadMetadata = {
   'Utah GNIS Place Names': {
     itemId: '153301fffc8a4128884833e2f7ee1d6e',
     name: 'Utah GNIS Place Names',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahGNISPlaceNames',
+    openSgid: 'location.gnis_place_names',
     layerId: 0,
   },
   'Utah Address System Quadrants': {
@@ -1540,15 +1526,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Zip Code PO Boxes': {
     itemId: '9a07e9d337314bb2af4de8f32502428e',
     name: 'Utah Zip Code PO Boxes',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'ZipCodePOBoxes',
+    openSgid: 'location.zip_code_po_boxes',
     layerId: 0,
   },
   'Utah Zoom Locations': {
     itemId: '183633e5f6ea4049858ac0b37f4fdd32',
     name: 'Utah Zoom Locations',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'ZoomLocations',
+    openSgid: 'location.zoom_locations',
     layerId: 0,
   },
   'Utah Address Points': {
@@ -1561,8 +1547,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Buildings': {
     itemId: '10c67c4cf75543e3ab767c2eb601b82d',
     name: 'Utah Buildings',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Buildings',
+    openSgid: 'location.buildings',
     layerId: 0,
   },
   'Utah Wilderness Proposal Washington County': {
@@ -1792,8 +1778,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Golf Courses': {
     itemId: 'd1f957478ea24659a7badb754a22b91c',
     name: 'Utah Golf Courses',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'GolfCourses',
+    openSgid: 'recreation.golf_courses',
     layerId: 0,
   },
   'Utah Ski Trails XC': {
@@ -1806,8 +1792,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Boat Ramps': {
     itemId: '0d12b74c39eb453088e992bf089d9890',
     name: 'Utah Boat Ramps',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'BoatRamps',
+    openSgid: 'recreation.boat_ramps',
     layerId: 0,
   },
   'Utah Parks Local': {
@@ -1884,21 +1870,21 @@ export const dataPages: DownloadMetadata = {
     itemId: 'b5ef0b24f994467fb4f22b27b1a47e25',
     name: 'Utah US Congress Districts 2022 to 2032',
     featureServiceId: 'USCongressDistricts2022to2032 ',
-    openSgid: 'us_congress_districts_2022_to_2032',
+    openSgid: 'political.us_congress_districts_2022_to_2032',
     layerId: 0,
   },
   'Utah Liquor Stores': {
     itemId: '61b7f10c194b4ec69d02e169db1da09a',
     name: 'Utah Liquor Stores',
     featureServiceId: 'UtahLiquorStores',
-    openSgid: 'liquor_stores',
+    openSgid: 'society.liquor_stores',
     layerId: 0,
   },
   'Utah Post Offices': {
     itemId: 'c58ebc2a7c2643fca10e67dd55af71f1',
     name: 'Utah Post Offices',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'PostOffices',
+    openSgid: 'society.post_offices',
     layerId: 0,
   },
   'Utah Law Enforcement Boundaries': {
@@ -1918,15 +1904,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Forest Service Stations': {
     itemId: 'ea7bd97ff90f40d0b0e0acb2e03271f3',
     name: 'Utah Forest Service Stations',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'ForestServiceStations',
+    openSgid: 'society.forest_service_stations',
     layerId: 0,
   },
   'Utah Fire Stations': {
     itemId: '3d55a3a011fe4028933754a81537d72f',
     name: 'Utah Fire Stations',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'FireStations',
+    openSgid: 'society.fire_stations',
     layerId: 0,
   },
   'County Courts of Utah': {
@@ -1946,8 +1932,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Correctional Facilities': {
     itemId: '1d643eaf1a4c4868a765b199f8ff8085',
     name: 'Utah Correctional Facilities',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CorrectionalFacilities',
+    openSgid: 'society.correctional_facilities',
     layerId: 0,
   },
   'Utah Cemeteries Polygons': {
@@ -1960,15 +1946,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Cemeteries': {
     itemId: 'f54d1c00020940ec95a729b39518e020',
     name: 'Utah Cemeteries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Cemeteries',
+    openSgid: 'society.cemeteries',
     layerId: 0,
   },
   'Utah BLM Field Offices': {
     itemId: '1922b4277590438fae726e2b97c14dda',
     name: 'Utah BLM Field Offices',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'BLMFieldOffices',
+    openSgid: 'society.blm_field_offices',
     layerId: 0,
   },
   'Utah UDOT Map Scenic Byways': {
@@ -2100,8 +2086,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Streams NHD': {
     itemId: 'd9b5ac9220ff415994b193c9ce022f86',
     name: 'Utah Streams NHD',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'StreamsNHDHighRes',
+    openSgid: 'water.streams_nhd',
     layerId: 0,
   },
   'Utah Major Rivers Polygons': {
@@ -2114,8 +2100,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Lakes NHD': {
     itemId: 'b505c3e3a8504da6b28e9900a9f602f8',
     name: 'Utah Lakes NHD',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahLakesNHD',
+    openSgid: 'water.lakes_nhd',
     layerId: 0,
   },
   'Utah NHD Points All': {
@@ -2128,8 +2114,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Springs NHD': {
     itemId: '322595dd1da149679cb9875a7d4ab069',
     name: 'Utah Springs NHD',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'SpringsNHDHighRes',
+    openSgid: 'water.springs_nhd',
     layerId: 0,
   },
   'Utah Stream Gauges NHD': {
@@ -2150,7 +2136,7 @@ export const dataPages: DownloadMetadata = {
     itemId: 'eedaf451685b4cbe875ecf692e1b54ff',
     name: 'Utah Watersheds Area',
     featureServiceId: 'Watersheds_Area',
-    openSgid: '',
+    openSgid: 'water.watersheds_area',
     layerId: 0,
   },
   'Utah Piute County Parcels LIR': {
@@ -2289,8 +2275,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Fire Response Areas': {
     itemId: 'ee6b0673a1bb4e9c8a5e983dedb67e8e',
     name: 'Utah Fire Response Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'FireResponseAreas',
+    openSgid: 'society.fire_response_areas',
     layerId: 0,
   },
   'Utah DEQMAP EI Chemical': {
@@ -2317,8 +2303,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Soils': {
     itemId: '047e5268bed7404e8b7cf349d36c8283',
     name: 'Utah Soils',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Soils',
+    openSgid: 'geoscience.soils',
     layerId: 0,
   },
   'Utah EMS Response Areas': {
@@ -2583,8 +2569,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Health Small Statistical Areas 2020': {
     itemId: '67edfe9ded464e3393c1932b4d39a6b2',
     name: 'Utah Health Small Statistical Areas 2020',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'HealthSmallStatisticalAreas2020',
+    openSgid: 'health_small_statistical_areas_2020',
     layerId: 0,
   },
   'Utah Tax Areas 2021': {
@@ -2611,15 +2597,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Trails and Pathways': {
     itemId: '3080c0a2859a4d23a279e17e17c703c8',
     name: 'Utah Trails and Pathways',
-    featureServiceId: "TrailsAndPathways",
+    featureServiceId: 'TrailsAndPathways',
     openSgid: 'recreation.trails_and_pathways',
     layerId: 0,
   },
   'Utah State Fuel Sites': {
     itemId: '8d9bc67285fb421fb15d55342148ac1e',
     name: 'Utah State Fuel Sites',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'StateFuelSites',
+    openSgid: 'society.state_fuel_sites',
     layerId: 0,
   },
   'Utah H3 Hexes Level 6': {
@@ -2644,10 +2630,13 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah Land Ownership': {
-    itemId: 'hosted by SITLA',
+    externalHubOrganization: 'SITLA',
+    oddHubName: 'land-ownership',
+    itemId: 'd55f91fda02141e4ab0e033ebf283d4e',
     name: 'Utah Land Ownership',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceHost: 'https://gis.trustlands.utah.gov/mapping/rest/services/',
+    featureServiceId: 'Land_Ownership',
+    openSgid: 'cadastre.land_ownership',
     layerId: 0,
   },
   'UDOT Routes ALRS': {
@@ -2716,8 +2705,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Open Source Places': {
     itemId: '45e25f4062264dc1baa3765e3dbb5d8e',
     name: 'Utah Open Source Places',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'OpenSourcePlaces',
+    openSgid: 'society.open_source_places',
     layerId: 0,
   },
   'Utah Housing Unit Inventory': {

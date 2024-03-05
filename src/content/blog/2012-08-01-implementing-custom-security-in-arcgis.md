@@ -8,8 +8,9 @@ tags:
 published: false
 date: 2012-08-01 13:36:00 -0600
 title: Implementing custom security in ArcGIS
-categories:
-  - Developer
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 <p>Securing ArcGIS services is often an after thought. I can speak from experience when saying that unchecking the box to 'Enable Web Access' on a map service was thought to be enough smoke and mirrors to secure a service behind a login screen. After all, if a person can't see the service in the REST services directory or when connected to the server via ArcCatalog, then that service must be secure. </p>

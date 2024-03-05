@@ -9,14 +9,15 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
-import licensePhoto from '@images/documentation/license-disclaimer.svg';
+import policyPhoto from '@images/documentation/policy.svg';
 
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  title: 'Documentation',
+  title: 'Policies, procedures, and guidelines',
+  pillar: 'Documentation',
   section: stripeSections([
-    { title: 'UGRC policies, procedures, and guidelines' },
+    {},
     { title: 'Data license and attribution' },
     { title: 'Database policies' },
     { title: 'Privacy policies' },
@@ -24,15 +25,15 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title}>
+<Layout title={page.title} pillar={page.pillar}>
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image
-      src={licensePhoto}
+      src={policyPhoto}
       slot="image"
       loading="eager"
-      alt="A person thinking in front of a caution sign"
-      class="w-1/2"
+      alt="A person agreeing to a terms of service agreement on a screen"
+      class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
       UGRC documents its policies and procedures in the following documents. These documents act as a guide for UGRC
@@ -42,22 +43,15 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[1]}>
     <GridForPopularResources>
-      <CardWithSmallLink
-        title="UGRC data license and disclaimer"
-        href="/documentation/policy/license"
-        style="secondary"
-      >
-        UGRC's data license and general data disclaimer.
+      <CardWithSmallLink title="UGRC data license and disclaimer" href="/documentation/policy/license">
+        UGRC's data license, disclaimer, and attribution information.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Data Sharing Agreement" href="/documentation/policy/license" style="secondary">
+      <CardWithSmallLink title="Data Sharing Agreement" href="/documentation/policy/data-sharing-agreement">
         The agreement between UGRC and data stewards for data shared through the SGID.
       </CardWithSmallLink>
       <CardWithSmallLink
-        style="secondary"
         title="Licensed High-Resolution Imagery Citation"
-        href="/documentation/policy/license"
-        class="sm:col-span-2"
-        style="secondary"
+        href="/documentation/discover/licensed-imagery#citation-and-logos"
       >
         The citation requirements for high-resolution imagery licensed from Google and Hexagon.
       </CardWithSmallLink>
@@ -65,31 +59,37 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[2]}>
     <GridForPopularResources>
-      <CardWithSmallLink title="SGID Policies" href="/documentation/policy/license">
+      <CardWithSmallLink title="SGID Policies" href="/documentation/policy/sgid" style="secondary">
         UGRC's policy for creating, editing, maintaining, and removing data in the SGID database.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Open SGID Terms of Use" href="/documentation/policy/license">
+      <CardWithSmallLink title="Open SGID Terms of Use" href="/documentation/policy/open-sgid" style="secondary">
         The guidelines for using the Open SGID database.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Basic Metadata Guidelines" href="/documentation/policy/license" class="sm:col-span-2">
+      <CardWithSmallLink
+        title="Basic Metadata Guidelines"
+        href="/documentation/sgid/sharing/metadata"
+        style="secondary"
+      >
         The metadata guidelines for data in the SGID database.
       </CardWithSmallLink>
     </GridForPopularResources>
   </Section>
   <Section {...page.section[3]}>
     <GridForPopularResources>
-      <CardWithSmallLink title="UGRC API Privacy Policy" href="/documentation/policy/license" style="secondary">
+      <CardWithSmallLink
+        title="UGRC API Privacy Policy"
+        href="https://github.com/agrc/api.mapserv.utah.gov/blob/master/readme.md#privacy-policy"
+      >
         UGRC's privacy policy about requests coming to the UGRC API.
       </CardWithSmallLink>
-      <CardWithSmallLink title="State of Utah Privacy Policy" href="/documentation/policy/license" style="secondary">
+      <CardWithSmallLink title="State of Utah Privacy Policy" href="https://www.utah.gov/support/privacypolicy.html">
         To inform those accessing State Web sites about the collection and use of the personally identifiable
         information of its users.
       </CardWithSmallLink>
       <CardWithSmallLink
         title="UGRC Record Series"
-        href="/documentation/policy/license"
+        href="https://secured.utah.gov/ut-archives/Forms/Page/ut-archives/orp/1"
         class="sm:col-span-2"
-        style="secondary"
       >
         UGRC's record series which define data retention and acceptable use.
       </CardWithSmallLink>

@@ -1,0 +1,56 @@
+---
+import { getDateParts } from '@utils/page';
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+  category: string;
+  coverImage: string;
+  coverImageAlt: string;
+  date: Date;
+  snippet: string;
+  estimatedReadingTime: string;
+  slug: string;
+  tags?: string[];
+  title: string;
+}
+
+const { category, coverImage, date, snippet, estimatedReadingTime, slug, title } = Astro.props;
+const { year, month, day } = getDateParts(date);
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}');
+if (!images[coverImage])
+  throw new Error(`"${coverImage}" not found in "/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}"`);
+---
+
+<div
+  class="max-w-sm overflow-hidden rounded-lg border border-zinc-400 bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70"
+>
+  <div class="bg-primary px-4 py-1 text-center text-sm font-black uppercase text-zinc-50">
+    <span class="pl-2">{category}</span>
+  </div>
+  <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-primary/20">
+    <Image
+      src={images[coverImage]()}
+      alt="Cover image"
+      width={382}
+      height={192}
+      class="h-48 w-full rounded-t-lg bg-primary/10 object-contain"
+    />
+    <div class="flex min-w-0 flex-1 p-4 pb-2 pt-2">
+      <div class="flex min-w-0 flex-1 flex-col justify-around">
+        <p class="line-clamp-1 font-semibold text-primary dark:text-zinc-200">
+          {title}
+          <span class="text-sm font-normal">({estimatedReadingTime})</span>
+        </p>
+        <p class="line-clamp-4 text-ellipsis text-zinc-600 dark:text-zinc-300">{snippet}</p>
+      </div>
+    </div>
+    <time
+      datetime={date.toISOString()}
+      class="flex items-center justify-between bg-secondary-200 px-4 py-1 text-zinc-50 dark:bg-secondary dark:text-zinc-300"
+    >
+      <span class="font-black">{year}</span>
+      <span class="text-xs uppercase">{month} {day}</span></time
+    >
+  </a>
+</div>

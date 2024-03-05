@@ -6,13 +6,12 @@ tags: []
 date: 2015-08-28 13:53:33 -0600
 title: Public Lands Survey System (PLSS) Version 2.0, 2015 updates
 published: false
-categories:
-  - GPS-surveyor
-  - SGID Blog
+category: GPS-surveyor
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
-![plss sample]({% link images/NewPLSS_LrgSample1.png %})
-{:.inline-text-right}
+![plss sample](/images/404.png)
 
 UGRC recently made available the latest version of the Geographic Coordinate Database (GCDB) version 2.0, 2015 updates to the Townships, Sections, and Quarter Section divisions of the Public Land Survey System (PLSS) contained in Utah’s State Geographic Information Database (SGID).
 
@@ -20,15 +19,13 @@ The basic units of the PLSS comprise the foundation for public and private prope
 
 In the next month we will be getting all the contributed PLSS Corner Points integrated with this new BLM version of this feature class and updating it here. Stay tuned we will have more changes on the way.
 
-<a href="{% link images/NewPLSS_June2015.png %}"><img src="{% link images/NewPLSS_June2015_ThumbNail.png %}" alt="" title="NewPLSS_Changes2015" class="inline-text-left" loading="lazy" /></a>
+<a href="/images/404.png"><img src="/images/404.png" alt="" title="NewPLSS_Changes2015" class="inline-text-left" loading="lazy" /></a>
 
 The Township areas impacted by change in this updated version are shown on the map and include adjustments to the locations of corner points.
 
 #### Download Options
 
-{: .text-left}
-
-GCDB v2.0, as provided to UGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is available for [download]({% link data/cadastre/plss/index.html %}#CadNSDI-downloads).
+GCDB v2.0, as provided to UGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is available for [download](/products/sgid/cadastre/plss).
 
 UGRC derived GIS layers that have been updated in the SGID are:
 
@@ -41,4 +38,4 @@ UGRC derived GIS layers that have been updated in the SGID are:
 - SGID10.Cadastre.MetadataGlance_GCDB (available on request)
 - SGID10.Cadastre.SpecialSurveys_GCDB (available on request)
 
-To download and view more information about the data listed above please visit the [plss data page]({% link data/cadastre/plss/index.html %}).
+To download and view more information about the data listed above please visit the [plss data page](/products/sgid/cadastre/plss).

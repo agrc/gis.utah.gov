@@ -6,11 +6,12 @@ tags:
   - aquifers
   - data update
   - ugs
-date: 2016-05-26 16:53:19
+date: 2016-05-26T16:53:19.000Z
 title: UGS Aquifer Data Updated May 2016
 published: false
-categories:
-  - Guestblog
+category: Guestblog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 GEOSCIENCE.Aquifer_RechargeDischargeAreas represents areas of recharge and discharge for various basins and valleys in Utah compiled by the Utah Geological Survey from various sources, including the USGS and various state agencies.
@@ -19,4 +20,4 @@ Some data was modified from the original work to provide a dataset with consiste
 
 Users should understand that localized areas of discharge will not be differentiated within the bedrock class and that there may be areas with confining layers within the bedrock that will require special purpose studies to differentiate.
 
-Download the updated data from the [Aquifers data page]({% link data/geoscience/aquifers/index.html %}).
+Download the updated data from the [Aquifers data page](/products/sgid/geoscience/aquifer-recharge-discharge-areas).

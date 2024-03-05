@@ -1,0 +1,39 @@
+---
+import Layout from '@layouts/FullWidth.astro';
+import GridForBlogs from '../components/page/GridForBlogs.astro';
+
+interface Props {
+  category: string;
+  title: string;
+}
+
+const { category, title } = Astro.props;
+const hasPagination = await Astro.slots.render('pagination');
+const hasCategories = await Astro.slots.render('categories');
+---
+
+<Layout title="From the blog">
+  <div class="mt-3 text-center dark:text-white">
+    <h3>{title}</h3>
+  </div>
+
+  <div class="text-center">
+    <p class="text-xs uppercase text-zinc-600 dark:text-white">
+      Currently displaying: <span class="font-bold">{category}</span>
+    </p>
+  </div>
+
+  <div class="mt-4 flex flex-wrap justify-center space-x-6">
+    <slot name="categories" />
+  </div>
+
+  {!(hasPagination && hasCategories) && <div class="pt-10" />}
+  <slot name="pagination" />
+
+  <GridForBlogs>
+    <slot />
+  </GridForBlogs>
+
+  <slot name="pagination" />
+  {!hasPagination && <div class="pb-14" />}
+</Layout>

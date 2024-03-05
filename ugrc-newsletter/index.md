@@ -18,18 +18,18 @@ date: 2013-07-09 17:38:46 -0600
   included in the newsletter, contact' %} Map spotlights, events, and other
   technical news from the community are always welcome. <a
   href="https://cdn.forms-content.sg-form.com/61e82d28-f0d5-11ec-847c-a26809937a38">Subscribe to the newsletter</a> at
-  the bottom of any webpage on gis.utah.gov. All individual blog posts are available on the <a href="{% link news/index.html %}">news</a> page.
+  the bottom of any webpage on gis.utah.gov. All individual blog posts are available on the <a href="/blog">news</a> page.
 </p>
 
 ### 2023
 {: .text-left }
 
-- [March]({% link ugrc-newsletter/60.html %})
+- [March](/contact)
 
 ### 2022
 {: .text-left }
 
-- [September]({% link ugrc-newsletter/59.html %})
+- [September](/contact)
 
 ### 2021
 {: .text-left }

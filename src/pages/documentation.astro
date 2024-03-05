@@ -13,11 +13,11 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 
 import { Image } from 'astro:assets';
 
+import policyPhoto from '@images/documentation/policy.svg';
 import dataSharingPhoto from '@images/sgid/data-sharing-agreement.svg';
 import licensePhoto from '@images/sgid/license-disclaimer.svg';
 import openSgid from '@images/sgid/open-sgid.svg';
 import sgidIndex from '@images/sgid/sgid-index.svg';
-import sgidOpenData from '@images/sgid/sgid-opendata.svg';
 ---
 
 <Layout title="Documentation">
@@ -26,50 +26,52 @@ import sgidOpenData from '@images/sgid/sgid-opendata.svg';
       <GridForPillars>
         <CardWithTopImage title="SGID" actionUrl="/documentation/sgid">
           <Image slot="image" src={sgidIndex} alt="a person using a search engine" class="block h-44" />
-          blah blah blah
+          The State Geographic Information Datasource (SGID) provides a centralized collection of hundreds of GIS data layers
+          developed, aggregated, or acquired by the State. The documentation explains the different facets of the SGID, how
+          to connect to them, and how to include your data in the SGID.
         </CardWithTopImage>
-        <CardWithTopImage title="Discover Base map and Imagery Services" actionUrl="/documentation/discover">
+        <CardWithTopImage title="Discover base map and imagery services" actionUrl="/documentation/discover">
           <Image slot="image" src={openSgid} alt="a person connected to a database" class="block h-44" />
-          <p>Our Discover services provide streaming access to our base maps and aerial imagery.</p>
+          Our Discover services provide streaming access to our base maps and aerial imagery. The documentation explains
+          how to sign up, connect, use the services, and troubleshoot common issues.
         </CardWithTopImage>
-        <CardWithTopImage title="UGRC API" actionText="Learn more" actionUrl="https://api.mapserv.utah.gov/">
+        <CardWithTopImage title="UGRC policies" actionText="Learn more" actionUrl="/documentation/policy">
           <Image
             slot="image"
-            src={sgidOpenData}
-            alt="people connected to a network through geography"
+            src={policyPhoto}
+            alt="a person agreeing to terms and conditions on a tablet"
             class="block h-44"
           />
-          blerg blerg blerg
+          Please read and understand the policies and guidelines required for using UGRC data and products as well as the
+          policies we follow to ensure our data and services are consistent, repeatable, and available to the public.
         </CardWithTopImage>
       </GridForPillars>
     </Section>
   </Fragment>
 
   <Fragment slot="popular-resources">
-    <Section title="Popular Documentation Resources" titlePosition="center">
+    <Section title="Popular Resources" titlePosition="center">
       <GridForPopularResources>
-        <CardWithPopularLink title="Policies" href="/documentation/policy">UGRC Policies</CardWithPopularLink>
         <CardWithPopularLink title="TURN GPS" href="/documentation/turn">
           Sign up and access the TURN GPS service
         </CardWithPopularLink>
-        <CardWithPopularLink title="Porter" href="/products/discover/raster">Learn about porter?</CardWithPopularLink>
-        <CardWithPopularLink title="API Client" href="http://api.mapserv.utah.gov">
-          API Client stuff
-        </CardWithPopularLink>
+        <CardWithPopularLink title="Porter" href="https://github.com/agrc/porter"
+          >The GitHub repository where UGRC tracks all additions and removals from the SGID.</CardWithPopularLink
+        >
       </GridForPopularResources>
     </Section>
   </Fragment>
 
   <Fragment slot="more-resources">
-    <Section title="More Documentation Resources" stripe titlePosition="center">
+    <Section title="More Resources" stripe titlePosition="center">
       <GridForMoreResources>
         <CardWithSideImage title="Masquerade" actionUrl="/documentation/masquerade">
           <Image slot="image" src={licensePhoto} alt="man in front of warning sign" class="self-center" />
-          The UGRC API and SGID accessed through Esri clients.
+          The UGRC API and SGID accessed through Esri clients. // TODO PAGE MISSING
         </CardWithSideImage>
         <CardWithSideImage title="palletjack" actionUrl="/products/sgid/sharing">
           <Image slot="image" src={dataSharingPhoto} alt="people shaking hands" class="self-center" />
-          Something
+          Something // TODO PAGE MISSING
         </CardWithSideImage>
       </GridForMoreResources>
     </Section>
@@ -78,17 +80,14 @@ import sgidOpenData from '@images/sgid/sgid-opendata.svg';
   <Fragment slot="you-might-also-like">
     <Section title="You might also like" titlePosition="center">
       <GridForYouMightLike>
-        <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
-          This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
-          by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's
-          current and authoritative datasets.
+        <CardWithSmallLink
+          title="UGRC API getting started guide"
+          href="https://developer.mapserv.utah.gov/StartupGuide"
+        >
+          The who what why and how for using the UGRC API.
         </CardWithSmallLink>
-        <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
-          Discover spatial data and tools that empower informed land management decisions
-        </CardWithSmallLink>
-        <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
-          Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
-          management.
+        <CardWithSmallLink title="esri documentation" href="https://doc.arcgis.com/en/">
+          Up-to-date documentation for ArcGIS and more.
         </CardWithSmallLink>
       </GridForYouMightLike>
     </Section>

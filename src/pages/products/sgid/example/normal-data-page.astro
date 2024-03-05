@@ -17,11 +17,14 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import BulletedList from '@components/page/BulletedList.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import NumberedList from '@components/page/NumberedList.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Address Points', // The ArcGIS Online title Goes Here (Utah blah blah)
-  description: `A short description of what the dataset is, so when people read it in the list of datasets they know what it is.`,
+  title: 'Utah Example Data', // The ArcGIS Online title Goes Here (Utah blah blah)
+  description: `A short description of what the dataset is (1-3 sentences), so when people read it in the list of datasets they know what it is.`,
   stewards: ['UGRC', 'these', 'are', 'combined'],
   type: ProductType.POINT, // This comes from the ProductType enum in types.ts
   category: SgidCategory.LOCATION, // This comes from the SgidCategory enum in types.ts
@@ -94,9 +97,25 @@ const page: IPageMetadata = {
       Styling is done with <ExternalLink href="https://tailwindcss.com/docs/utility-first">tailwindcss</ExternalLink>.
       But I can help take care of any extra formatting you are missing.
     </p>
+    <h3>Bullets</h3>
+    <BulletedList>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </BulletedList>
+    <h3>Numbers</h3>
+    <NumberedList>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </NumberedList>
+    <h3>Definitions</h3>
+    <dl>
+      <DefinitionListItem title="Term 1">Definition</DefinitionListItem>
+    </dl>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Disclaimer slot="disclaimer">
     <p>
@@ -114,10 +133,16 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">Description</CardWithSmallLink>
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">Description</CardWithSmallLink>
-      <CardWithSmallLink title="Addresses" href="/products/sgid/address">Description</CardWithSmallLink>
-      <CardWithSmallLink title="Discover" href="/products/discover">Description</CardWithSmallLink>
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov" style="secondary"
+        >Description</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary"
+        >Description</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address" style="secondary"
+        >Description</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Discover" href="/products/discover" style="secondary">Description</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>

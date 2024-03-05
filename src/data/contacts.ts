@@ -1,14 +1,13 @@
-// this can be accessed via import contacts from 'data/contacts'
-// contacts.agrc
+import type { Contacts } from '@models/products/sgid/types';
 
-export const contacts = {
-  agrc: {
+export const contacts: Contacts = {
+  ugrc: {
     name: 'the staff',
     agency: 'UGRC',
     email: 'ugrc@utah.gov',
     phone: '801-538-3665',
   },
-  agrc_director: {
+  ugrc_director: {
     name: 'Matt Peters',
     email: 'mpeters@utah.gov',
     phone: '385-202-3297',

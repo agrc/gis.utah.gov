@@ -1,4 +1,5 @@
 ---
+import { getBlogFilters, slugify } from '@utils/collections';
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 
@@ -17,6 +18,13 @@ const { name, team, x, tags, email } = Astro.props;
 
 const location = '/src/images/pillar-contact/staff/';
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/staff/*.{svg,png}');
+const authorFilters = await getBlogFilters('authors');
+const authorFiltersLookup = authorFilters.reduce((acc, filter) => {
+  acc[filter.slug] = filter;
+
+  return acc;
+}, {});
+const authorFilter = authorFiltersLookup[slugify(name)];
 ---
 
 <li>
@@ -31,9 +39,24 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-
     <div>
       <h3 class="text-base font-semibold leading-7 tracking-tight">{name}</h3>
       <div class="text-base text-secondary dark:text-accent">
-        <p class="text-sm font-semibold leading-6">{email}</p>
-        {x && <p class="text-sm font-semibold leading-6">{x}</p>}
+        <p class="text-sm font-semibold leading-6">
+          <a href={`mailto:${email}`}>{email}</a>
+        </p>
+        {
+          x && (
+            <p class="text-sm font-semibold leading-6">
+              <a href={`https://x.com/${x}`}>{x}</a>
+            </p>
+          )
+        }
       </div>
+      {
+        authorFilter?.posts.length > 0 ? (
+          <a class="text-sm" href={`/blog/authors/${authorFilter.slug}`}>
+            authored posts
+          </a>
+        ) : null
+      }
       <div class="text-sm font-semibold leading-6">
         <div class="flex items-center text-base text-zinc-500 dark:text-zinc-300">
           <p class="text-sm font-medium leading-6">{team}</p>

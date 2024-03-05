@@ -3,16 +3,17 @@ title: Utah SGID Statewide Roads Data Layer Updates 01/12/2023
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2023-01-12 7:30:00
-categories:
-  - Featured
+date: 2023-01-12T07:30:00.000Z
 tags:
   - roads
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
-UGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System]({% link data/transportation/roads-system/index.html %}) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.
+UGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System](/products/sgid/transportation/road-centerlines) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.
 
-These updates are also reflected in Utah's [Next-Generation 911 GIS database]({% link data/911/index.html %}) and UGRC's [street network analysis datasets]({% link data/transportation/street-network-analysis/index.html %}).
+These updates are also reflected in Utah's [Next-Generation 911 GIS database](/products/sgid/911) and UGRC's [street network analysis datasets](/products/sgid/transportation/street-network).
 
 The following are highlights from this month's update.
 
@@ -28,8 +29,8 @@ New roads were added and road names and address ranges were updated for the foll
 
 #### Notable Mentions
 
-- A bulk update was made to the `ADDRSYS_L` and `ADDRSYS_R` fields to reflect recent enhancements in the [Address System Quadrants]({% link data/location/address-data/index.html %}#AddressSystemQuadrants) layer.
+- A bulk update was made to the `ADDRSYS_L` and `ADDRSYS_R` fields to reflect recent enhancements in the [Address System Quadrants](/products/sgid/address) layer.
 
 #### UDOT Route System
 
-- Visit the [SGID LRS page]({% link data/transportation/roads-system/index.html %}#HighwayLinearReferencingSystemRoutes) for information on UDOT's Advanced LRS (ALRS) data.
+- Visit the [SGID LRS page](/products/sgid/transportation/road-centerlines) for information on UDOT's Advanced LRS (ALRS) data.

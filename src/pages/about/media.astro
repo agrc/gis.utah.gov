@@ -1,0 +1,132 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import CardForLogo from '@components/page/CardForLogo.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import discover from '@images/media/ugrc-logo-Discover.png';
+import sgidDark from '@images/media/ugrc-logo-SGID-dark.png';
+import sgidLight from '@images/media/ugrc-logo-SGID-light.png';
+import sgid from '@images/media/ugrc-logo-SGID-wavy_gravy.png';
+import turn from '@images/media/ugrc-logo-TURN.png';
+import ugrcDark from '@images/media/ugrc-logo-UGRC-dark.png';
+import ugrc from '@images/media/ugrc-logo-UGRC-light.png';
+import ugrcVertical from '@images/media/ugrc-logo-UGRC-vertical.png';
+import api from '@images/media/ugrc-logo-WebAPI.png';
+import download from '@images/media/ugrc_wavy_gravy_logos.zip?url';
+
+const page: IStandardPageMetadata = {
+  title: 'UGRC Media Kit',
+  pillar: 'About',
+  section: [],
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <Section>
+    <div class="flex flex-col justify-center gap-10 sm:flex-row">
+      <div class="flex-1 grow">
+        <h3>Do's</h3>
+        <ul>
+          <li class="flex gap-x-2">
+            <span class="" style="color:#2ecc40"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
+              </svg>
+            </span>Use these logos to advertise that your product (maps, apps, etc) was built with UGRC data and
+            services
+          </li>
+          <li class="flex gap-x-2">
+            <span class="" style="color:#2ecc40"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
+              </svg>
+            </span>Modify the size to fit your product
+          </li>
+        </ul>
+      </div>
+      <div class="flex-1 grow">
+        <h3>Don'ts</h3>
+        <ul>
+          <li class="flex gap-x-2">
+            <span style="color:#ff4136"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+              </svg>
+            </span>Modify the shape, colors, dimensions, or text of the logo
+          </li>
+          <li class="flex gap-x-2">
+            <span style="color:#ff4136"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+              </svg>
+            </span>Add your own text or images to the logo
+          </li>
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <Section>
+    <div class="grid gap-10 lg:grid-cols-2">
+      <CardForLogo download={download}>
+        <Image src={ugrc} alt="UGRC Logo" />
+      </CardForLogo>
+      <CardForLogo download={download}>
+        <Image src={ugrcDark} alt="UGRC Logo" />
+      </CardForLogo>
+      <CardForLogo download={download}>
+        <Image src={ugrcVertical} alt="UGRC Logo" />
+      </CardForLogo>
+      <CardForLogo download={download}>
+        <Image src={sgid} alt="UGRC Logo" />
+      </CardForLogo>
+      <CardForLogo download={download}>
+        <Image src={sgidLight} alt="UGRC Logo" />
+      </CardForLogo>
+      <CardForLogo download={download}>
+        <Image src={sgidDark} alt="UGRC Logo" />
+      </CardForLogo>
+      <CardForLogo download={download}>
+        <Image src={discover} alt="UGRC Logo" />
+      </CardForLogo>
+      <CardForLogo download={download}>
+        <Image src={turn} alt="UGRC Logo" />
+      </CardForLogo>
+      <CardForLogo download={download}>
+        <Image src={api} alt="UGRC Logo" />
+      </CardForLogo>
+    </div>
+  </Section>
+</Layout>

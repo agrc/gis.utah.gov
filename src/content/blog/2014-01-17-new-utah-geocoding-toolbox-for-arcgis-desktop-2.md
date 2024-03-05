@@ -4,15 +4,15 @@ author:
   email: ugrc@utah.gov
 tags:
   - geocoding
-date: 2014-01-17 11:57:08
-title: 'New Utah Geocoding Toolbox for ArcGIS Desktop'
+date: 2014-01-17T11:57:08.000Z
+title: New Utah Geocoding Toolbox for ArcGIS Desktop
 published: false
-categories:
-  - Featured
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 This tool has been updated to work with ArcGIS Pro. Some of the information below may be outdated. Please refer to [GitHub](https://github.com/agrc/geocoding-toolbox) for the most current documentation.
-{: .pop}
 
 UGRC is proud to announce the release of a Utah-specific geocoding toolbox for ArcGIS Desktop.
 
@@ -20,7 +20,7 @@ This custom geocoding toolbox allows ArcGIS users to obtain geographic coordinat
 
 While the geocoding endpoint was built primarily for web applications it also provides value as a toolbox in ArcGIS, as it uses current local data and solves for some common shortcomings with stock geocoding approaches by:
 
-![geocoding toolbox]({% link images/geocodingtoolbox.png %}){: .inline-text-right }
+![geocoding toolbox](/images/404.png)
 
 - using hierarchical street name and address coordinate system aliasing
 - use of either zip codes or place names as zones
@@ -28,11 +28,11 @@ While the geocoding endpoint was built primarily for web applications it also pr
 - handles common placename usage and abbreviations (WVC, St George, Magna, Heber City, S Jordan, etc.)
 - can find matches for numeric address 'reversals' (500 E 1991 S)
 - can find address point matches, offset centerline matches, or best available.
-- [more information]({% link _posts/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade.md %})
+- [more information](/blog/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade)
 
 Use the Street and Zone endpoint on the [API Explorer](https://api.mapserv.utah.gov/#geocoding) or the Find Address widget on [atlas.utah.gov](https://atlas.utah.gov/) to test the results from your problem addresses against the API.
 
-Installation is as easy as [downloading]({% link data/address-geocoders-locators/index.html %}?GeocodingToolbox) the `AGRC Geocode Tools.tbx` file to your desired location and then in ArcGIS, right clicking the [Add Toolbox](https://resources.arcgis.com/en/help/main/10.1/index.html#//003q0000001m000000) menu item.
+Installation is as easy as [downloading](/products/sgid/address) the `AGRC Geocode Tools.tbx` file to your desired location and then in ArcGIS, right clicking the [Add Toolbox](https://resources.arcgis.com/en/help/main/10.1/index.html#//003q0000001m000000) menu item.
 
 Users must obtain an IP specific API key by [registering](https://developer.mapserv.utah.gov/AccountAccess) prior to use, as a unique API key is one of the required input parameters for running the tool.
 
@@ -40,4 +40,4 @@ The geocoding tool will produce as output a `.csv` file with the input unique id
 
 Users can view/edit the python code associated with the geocoding toolbox by right clicking on the script and selecting 'Edit'.
 
-![tool screenshot]({% link images/geocodetoolbox.png %})
+![tool screenshot](/images/404.png)

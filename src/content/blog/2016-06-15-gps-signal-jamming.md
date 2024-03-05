@@ -3,17 +3,19 @@ author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
 tags: []
-date: 2016-06-15 21:48:58
+date: 2016-06-15T21:48:58.000Z
 title: GPS Signal Jamming
 published: false
-categories: []
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 GPS signals in the Western US may be **jammed** due to testing conducted by the US Department of Defense. There are no references to the specific types of tests but the area of impact, dates, and times of the tests are listed below.
 
-Users of [TURN GPS]({% link data/cadastre/turn-gps/index.md %}) and other GPS services are advised to pay careful attention for any GPS outages or anomalies on these dates and times. **Please try to schedule critical GPS usage on alternative dates**.
+Users of [TURN GPS](/products/sgid/cadastre/turn-gps) and other GPS services are advised to pay careful attention for any GPS outages or anomalies on these dates and times. **Please try to schedule critical GPS usage on alternative dates**.
 
-![GPS Jamming Affected Locations]({% link images/GPS_Jamming_Map.png %})
+![GPS Jamming Affected Locations](/images/404.png)
 
 Please feel free to share your findings with the State of Utah UGRC.
 

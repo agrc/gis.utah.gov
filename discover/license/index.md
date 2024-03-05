@@ -23,7 +23,7 @@ We will continue to provide the previously acquired imagery from the Google cont
 
 The licenses governing both the Google and Hexagon imagery are similar, and we will group them together for this discussion. They allow **Utah's cities, counties, special districts, state agencies, school districts, colleges/universities, and tribes** to use the imagery in web and desktop mapping applications either from our streaming web service or from locally-stored files. **Contractors and formal partners of the immediate licensees** are also allowed to use the imagery.
 
-The imagery is hosted on the Google Cloud Platform and delivered as WMS and WMTS Open Geospatial Consortium (OGC) services via UGRC's **[Discover]({% link discover/index.html %})** basemap and imagery server. You can download the original `.jp2` imagery tiles from the Discover index page or get a copy from UGRC, which keeps a master set of the imagery files.
+The imagery is hosted on the Google Cloud Platform and delivered as WMS and WMTS Open Geospatial Consortium (OGC) services via UGRC's **[Discover](/products/discover)** basemap and imagery server. You can download the original `.jp2` imagery tiles from the Discover index page or get a copy from UGRC, which keeps a master set of the imagery files.
 
 ### Who Qualifies?
 {: .text-left}
@@ -56,9 +56,9 @@ The imagery is hosted on the Google Cloud Platform and delivered as WMS and WMTS
 ### Sign Up Information
 {: .text-left}
 
-If you qualify to use the licensed imagery under the terms listed above, visit the main [Discover]({% link discover/index.html %}) page for sign up information and a link to the Organizational Usage Agreement.
+If you qualify to use the licensed imagery under the terms listed above, visit the main [Discover](/products/discover) page for sign up information and a link to the Organizational Usage Agreement.
 
-**Check out valuable information** and FAQs about [using Discover services]({% link discover/resources/index.md %}).
+**Check out valuable information** and FAQs about [using Discover services](/documentation/discover).
 
 {% capture license %}{% include contact.html subject=page.title contact=site.data.contacts.google_imagery %}{% endcapture %}
 {{ license }}

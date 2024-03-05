@@ -7,18 +7,19 @@ tags:
   - dwr
   - nhd
   - water
-date: 2016-07-21 19:30:03
+date: 2016-07-21T19:30:03.000Z
 title: Division of Water Rights Inventories Irrigation Canals in Utah
 published: false
-categories:
-  - Guestblog
+category: Guestblog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 In 2014, the Division of Water Rights (DWRi) was tasked with creating an inventory of irrigation canals in the State of Utah. The [legislation](https://le.utah.gov/~2014/bills/static/HB0370.html) requiring the inventory required the following criteria: canals had to be open, human­ made, and carry more than 5 cubic feet per second (CFS) of water. All private and commercial canals that meet the criteria are included. With little data meeting the criteria available initially, we started with the DWRi databases of water and irrigation companies and the USGS National Hydrology Dataset (NHD). The legislation requires the inventory to be completed within three years. In that time we will have to research over 1,100 water companies and 9,800 miles of features in the NHD data attributed as ‘canals’.
 
 <figure class="caption caption--right">
 <a href="https://waterrights.utah.gov/canalinfo/20160714-CanalsPctContacted.jpg">
-<img class="caption__image" src="{% link images/CanalInventory.jpg %}" alt="Canal Inventory Status Map" loading="lazy" /></a>
+<img class="caption__image" src="/images/404.png" alt="Canal Inventory Status Map" loading="lazy" /></a>
 <figcaption class="caption__text">Estimated percentage of<br/>Canals researched by county</figcaption>
 </figure>
 
@@ -33,7 +34,7 @@ Our strategy has been to go county by county, contacting companies we have on fi
 - and if the company adopted a safety management plan according to Utah code 73­10­33.
 
 <figure class="caption caption--right">
-<img class="caption__image" src="{% link images/CanalAerialImageryExample.jpg %}" alt="Canal on High Res Imagery" loading="lazy" />
+<img class="caption__image" src="/images/404.png" alt="Canal on High Res Imagery" loading="lazy" />
 <figcaption class="caption__text">Example of canal on<br/>high resolution aerial imagery</figcaption>
 </figure>
 

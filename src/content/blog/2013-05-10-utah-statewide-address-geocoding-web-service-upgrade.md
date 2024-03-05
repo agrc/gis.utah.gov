@@ -10,15 +10,14 @@ tags:
 date: 2013-05-10 14:22:13 -0600
 title: Utah Statewide Address Geocoding Web Service Upgrade
 published: false
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Last week, UGRC finished a substantial upgrade to the Utah statewide address locator (geocoding) web service. This service utilizes point and road-based address map reference data compiled into the State Geographic Information Database (SGID) from local sources, and published on a bi-monthly basis.
 
-[![Geocoding image]({% link images/Geocode-300x223.png %})](![Large]({% link images/Geocode.png %}))
-{: .inline-text-left .outline}
+[![Geocoding image](/images/404.png)](<![Large](/images/404.png)>)
 
 The publicly accessible geocoding service allows developers to include 'best effort' Utah address finding functionality into web applications at no cost.
 

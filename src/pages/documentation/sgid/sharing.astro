@@ -1,0 +1,213 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import sgidSharingPhoto from '@images/documentation/sgid/SGIDSharing.png';
+import openDataMetadataPhoto from '@images/documentation/sgid/od_agol_md.png';
+import openDataAnnotationPhoto from '@images/documentation/sgid/od_card_anno.png';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Sharing with the SGID',
+  pillar: 'Documentation',
+  section: stripeSections([
+    { actionText: 'View highlights', actionUrl: '/documentation/sgid/sharing/highlights' },
+    {
+      title: 'The SGID Index',
+      actionText: 'Get started',
+      actionUrl: 'https://github.com/agrc/porter/issues/new/choose',
+    },
+    {
+      title: 'UGRC ArcGIS Online',
+      actionText: 'Get started',
+      actionUrl: 'https://github.com/agrc/porter/issues/new/choose',
+    },
+    {
+      title: 'The Open SGID database',
+      actionText: 'Get started',
+      actionUrl: 'https://github.com/agrc/porter/issues/new/choose',
+    },
+  ]),
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      src={sgidSharingPhoto}
+      slot="image"
+      loading="eager"
+      alt="The SGID sharing diagram"
+      class="w-full rounded-2xl dark:bg-white/20"
+    />
+    <p>
+      Sharing with the SGID can be a great way to make your data more accessible to the public. All of our sharing
+      methods start with an <ExternalLink href="https://guides.github.com/features/issues/">issue</ExternalLink> in our <ExternalLink
+        href="https://github.com/agrc/porter/issues">Porter</ExternalLink
+      > repository on GitHub. This allows everyone a chance to follow along with a dataset's progress in the submission process
+      and to keep an open and transparent record of everything that happened. We also run some checks with <ExternalLink
+        href="https://github.com/agrc/sweeper">Sweeper</ExternalLink
+      >
+      and check that the metadata
+      <a href="/documentation/sgid/sharing/metadata">meets our minimum standards</a>.
+    </p>
+    <p>
+      We've compiled a page of highlights showing the importance of collaboration to hopefully give you the nudge to
+      share with the SGID.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <p>
+      The simplest way to share your data is by adding links for existing, qualifying data (what we call "external
+      data") to the SGID Index, which aims to be a database of all statewide GIS resources. If you are hosting GIS
+      resources on your own server, we can link to your datasets in the SGID Index.
+    </p>
+    <h3>Sharing with the SGID Index</h3>
+    <p>
+      First <ExternalLink href="https://github.com/agrc/porter/issues/new/choose">submit an issue</ExternalLink> in Porter
+      using the <code>Add external data links to the SGID Index</code> template. Fill out the <code>Summary</code> information
+      and check the relevant box in the <code>Submitter's Process</code> section.
+    </p>
+    <p>
+      We will review your submission against the qualifications and reach out with any questions. You can track this in
+      the <code>UGRC's Process</code> section of the issue.
+    </p>
+    <p>
+      Once we've worked together to resolve any questions or problems, we'll add your dataset to the SGID Index and
+      close the issue.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <p>
+      We use Esri's Hub product to offer the SGID on ArcGIS. A centralized list of ArcGIS Online and ArcGIS Enterprise
+      Portal services are available through <a href="https://opendata.gis.utah.gov">opendata.gis.utah.gov</a>. This is a
+      great way to use your existing ArcGIS Online or Enterprise infrastructure to share your data with little
+      additional work. We are happy to include any datasets in the SGID on ArcGIS site that meet our qualifications.
+      Just like the SGID Index, AGOL items hosted in your organization are considered "external data."
+    </p>
+    <h3>Sharing with the SGID on ArcGIS</h3>
+    <p>
+      ArcGIS Online items are added to the SGID on ArcGIS by sharing them with one of our SGID groups in ArcGIS Online.
+      This process gives both you and UGRC a chance to review the quality of the item before it is shared. We reserve
+      the right to remove items from SGID on ArcGIS if they don't go through this process.
+    </p>
+    <p>SGID on ArcGIS relies on information from the source ArcGIS Online item:</p>
+    <Image src={openDataAnnotationPhoto} alt="An annotated Open Data item screenshot" class="w-full" />
+    <p>As noted in the qualifications, make sure the following items are taken care of:</p>
+    <BulletedList>
+      <li>The ArcGIS Online item is publicly shared</li>
+      <li>The item has a good title, description, and tags</li>
+      <li>
+        The <code>Allow others to export data to different formats</code> in the <code>Settings</code> tab is enabled (if
+        possible)
+      </li>
+      <li>The <code>source</code> value should be set using the method described below</li>
+    </BulletedList>
+    <p>
+      ArcGIS Hub displays the <code>source</code> value on each item and uses it to sort search results. It's very important
+      for every organization to have a single, unified <code>source</code>. Esri explains where this value comes from <ExternalLink
+        href="https://doc.arcgis.com/en/hub/get-started/frequently-asked-questions.htm#anchor10"
+        >in this FAQ</ExternalLink
+      >. To summarize, it first searches the ArcGIS Online item's metadata for an organization name. If it doesn't find
+      anything there, it falls back to your ArcGIS organization name.
+    </p>
+    <p>
+      If you want to customize the name displayed, we suggest setting it in the <code
+        >Resource &gt; Citation &gt; Contact &gt; Organization Name</code
+      > metadata field. Otherwise, leave the metadata contact fields empty and it will use your ArcGIS Online organization
+      name. We use this second way to show <code>Utah Automated Geographic Reference Center (AGRC)</code> as the source for
+      all our datasets. You may need to remove any values in the metadata contact fields if you want to use your default
+      organization name.
+    </p>
+    <p>
+      To edit the organization name in the ArcGIS Online item's metadata, you need to make sure your ArcGIS Online
+      organization has <ExternalLink
+        href="https://doc.arcgis.com/en/arcgis-online/administer/configure-details.htm#ESRI_SECTION1_7FE1F060E03046E692BB36E5F6E3B2AE"
+        >metadata enabled</ExternalLink
+      >. Then you can use the Metadata editor on the ArcGIS Online item page to set either field.
+    </p>
+    <Image
+      src={openDataMetadataPhoto}
+      alt="Organization name sources in ArcGIS Online metadata screenshot"
+      class="w-full"
+    />
+    <p>
+      There are a couple of things to check before and after you upload or overwrite your ArcGIS Online items. A common
+      disruptive issue has to do with feature service index ids changing. If you overwrite a feature service, the index
+      id can change if the data is in a different position in the map table of contents at publish time. This creates a
+      new URL to the service breaking all maps and apps that use the feature service. We suggest having a publishing
+      ArcGIS Pro project that only contains the publishing layer with it's index set to 0 (which is the default).
+    </p>
+    <p>
+      The way you upload or overwrite your ArcGIS Online data may also overwrite the item's metadata with info from the
+      local source's metadata. We suggest you make any changes in both the feature class and ArcGIS Online metadata to
+      avoid problems in the future. In the FGDC CSDGM metadata style, the <code
+        >Resource &gt; Citation &gt; Contact &gt; Organization Name</code
+      > field is in <code>Overview &gt; Citation Contacts</code>. The <code
+        >Resource &gt; Contact &gt; Organization Name</code
+      > field is in <code>Resource &gt; Points of Contact</code>.
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <p>
+      The Open SGID is a curated, publicly-accessible database of statewide GIS layers—the latest evolution of the
+      traditional "SGID as a single geospatial database" model. We are excited to offer a direct connection to everyone
+      once again.
+    </p>
+    <p>
+      If you have a statewide dataset but don't have the ability to host or share it yourself, we may host it in the
+      Open SGID if it meets our qualifications. We also share most Open SGID layers through <a
+        href="https://opendata.gis.utah.gov">opendata.gis.utah.gov</a
+      > (by first uploading it as a feature service in our ArcGIS Online <a href="https://utah.maps.arcgis.com"
+        >organization</a
+      >). Unsurprisingly, we refer to these datasets as "hosted data."
+    </p>
+    <p>
+      Maintaining data in the Open SGID requires the most work, both on the front end and for long-term maintenance. We
+      encourage you to share your data via SGID on ArcGIS or the SGID Index whenever possible. However, in order to
+      maintain consistency and familiarity with previous versions of the SGID geodatabase, we may include some datasets
+      in the Open SGID that are otherwise better suited for SGID on ArcGIS or the SGID Index. This is done at our
+      discretion according to our policies.
+    </p>
+    <h3>Sharing with the Open SGID</h3>
+    <p>
+      If you would like to share data with the Open SGID, we will work with you to create a pipeline to identify when
+      and how we'll access and receive updates to the data. We'll run data checks and reviews with <ExternalLink
+        href="https://github.com/agrc/sweeper">Sweeper</ExternalLink
+      > on the data to ensure high quality and share that feedback with you. Fixing the issues in the source will help streamline
+      any future data updates, but isn't necessary to submit the data for the Open SGID. We'll still happily add it to the
+      Open SGID after fixing any issues on our local copy with Sweeper.
+    </p>
+    <p>
+      Before submitting your data, make sure it has a stable schema and is ready for public consumption. Any future
+      schema changes could be a breaking change that would disrupt users of the data. Make sure the metadata meets our
+      minimum standards. If you need help with metadata, check out our basic metadata creation process.
+    </p>
+    <p>
+      Start thinking about the future—how often will this dataset be updated? How can we automate the updates?
+      Sometimes, old data is worse than no data at all. If a user can't find anything, they still know what they don't
+      know. But if they find outdated data without realizing it, they may not know that they are acting on outdated
+      information.
+    </p>
+    <p>
+      Once you've have a chance to think about the above concerns, <ExternalLink
+        href="https://github.com/agrc/porter/issues/new/choose">submit an issue</ExternalLink
+      > in Porter using the <code>Add data to Open SGID</code> template. Fill out the <code>Summary</code> information and
+      check the relevant boxes in the <code>Submitter's Process</code> section.
+    </p>
+    <p>
+      We will review your submission against the qualifications and reach out with any questions. You can track this in
+      the <code>UGRC's Process</code> section of the issue.
+    </p>
+    <p>Once we've worked together to resolve any questions or problems, we'll add it to the Open SGID.</p>
+  </Section>
+</Layout>

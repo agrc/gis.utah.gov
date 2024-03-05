@@ -1,14 +1,16 @@
 ---
-title: "Utah's COVID-19 Testing Sites Map: The Importance of Relationships and Resources"
+title: "Utah's COVID-19 Testing Sites Map: The Importance of Relationships and
+  Resources"
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2020-11-18 15:10:00
-categories:
-  - Featured
+date: 2020-11-18T15:10:00.000Z
 tags:
   - coordination
   - agol
+category: Uncategorized
+cover_image: /src/images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-first-months.png
+cover_image_alt: The usage graph seemed to wane after two months
 ---
 
 Ninety-nine times out of a hundred, whenever you create a webmap you're anxiously hoping people will use it. I remember watching the stats for my [first real webmap](https://cacheut.maps.arcgis.com/apps/webappviewer/index.html?id=1c0d0315182f4a31af512605854f4d2c), hoping I'd break a hundred views. 1,000 would be amazing. 10,000 was unthinkable.
@@ -17,18 +19,15 @@ But that other one-in-a-hundred map is so sobering you wish the numbers would st
 
 Seven months ago (April 2020), the Utah Department of Health approached us to create a [map](https://coronavirus.utah.gov/utah-covid-19-testing-locations) for the State's [coronavirus.utah.gov](https://coronavirus.utah.gov) resource and information site.
 
-![The usage graph seemed to wane after two months]({% link images/covid-testing-first-months.png %})
-{: .flex .flex--center}
+![The usage graph seemed to wane after two months](../../images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-first-months.png)
 
 For the first few weeks of its existence, we watched in concern as the initial usage wave died down and it seemed like the map wasn't being used. Normally, I'd be worrying about my work being appreciated, but this was a lot cartographically closer to a life-or-death subject than I'd ever come. We made this map to help Utah survive and recover, and if the map wasn't being used it meant we weren't fulfilling our duty to the people of Utah.
 
-![The usage graph mirrors the surge in cases over the summer]({% link images/covid-testing-summer.png %})
-{: .flex .flex--center}
+![The usage graph mirrors the surge in cases over the summer](../../images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-summer.png)
 
 We saw a rise in usage over the summer as Utah experienced a surge in cases after Memorial Day. I began to feel like the map was living up to its promise. People were getting tested, and because of this testing they would know if they needed to take individual steps to stop the spread. We continued to add sites as new providers came online and make modifications to existing sites. Many sites shifted their hours towards the morning to avoid the summer heat.
 
-![The usage in fall makes all earlier usage seem insignificant]({% link images/covid-testing-surge.png %})
-{: .flex .flex--center}
+![The usage in fall makes all earlier usage seem insignificant](../../images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-surge.png)
 
 However, as fall progressed we faced the grim reality that we're not out of the woods yet. The usage rose again alongside active cases. The last three weeks in particular have seen massive jumps. The summer usage bump that used to seem so significant almost disappears now as the usage climbs ever upward. The largest single day swing came after the Governor announced new plans to try to stop the spread on November 6th.
 

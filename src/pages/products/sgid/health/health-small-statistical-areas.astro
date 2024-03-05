@@ -1,0 +1,93 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Health Small Statistical Areas 2020',
+  description: `Areas based on zip codes used by the Utah Department of Health and Human Services for statistical analysis and reporting.`,
+  stewards: ['UGRC', 'DHHS', 'DEM'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.HEALTH,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`May 2020`, `October 2018`, `November 2017`, `January 2014`, `October 2012`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Areas based on zip codes used by the Utah Department of Health and Human Services for statistical analysis and
+      reporting.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      First developed by the Department of Health in 1997, Small Health Statistics Areas allow for more meaningful
+      analysis by reducing areas to the smallest unit where there is enough data to be reliable and the area is similar
+      in characteristics. The areas are created by combining neighboring ZIP code areas to create areas ranging in
+      population of approximately 8,000 to 86,000 persons. In some instances a small area may not have a contiguous
+      boundary, in these cases the small area is represented with multiple polygons.
+    </p>
+    <p>
+      Previous vintages of the Small Health Statistical Areas are available in our <ExternalLink
+        href="https://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9"
+        >ArcGIS Online "Shelf" group</ExternalLink
+      >.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Previous Versions"
+        href="https://utah.maps.arcgis.com/home/group.html?id=8765687b7b0545668fff02d1b750f7a9&view=list&searchTerm=small+statistical#content"
+        >Previous versions of the Health Small Statistical Areas.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Designation algorithm" href="https://ibis.health.utah.gov/pdf/resource/Algorithm.pdf"
+        >Utah Local Health District and Small Area Designation Algorithm Documentation.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="DHHS Homepage" href="https://dhhs.utah.gov" style="secondary"
+        >The Utah Department of Health and Human Services</CardWithSmallLink
+      >
+      <CardWithSmallLink title="CDC" href="https://www.cdc.gov/" style="secondary"
+        >Nationwide health information at The Centers for Disease Control and Prevention</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

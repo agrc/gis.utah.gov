@@ -3,10 +3,12 @@ author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
 tags: []
-date: 2016-09-07 15:35:52
+date: 2016-09-07T15:35:52.000Z
 title: Third Quarter 2016 Municipal Boundaries Updates
 published: false
-categories: []
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 We are into the third quarter and updates to the Municipal Boundaries are available now.

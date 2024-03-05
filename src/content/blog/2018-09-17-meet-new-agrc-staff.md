@@ -1,11 +1,13 @@
 ---
-title: 'Meet Nathan Kota - New UGRC Staff'
+title: Meet Nathan Kota - New UGRC Staff
 author:
   display_name: UGRC
   email: ugrc@utah.gov
-date: 2018-09-17 20:16:10
-categories: []
+date: 2018-09-17T20:16:10.000Z
 tags: []
+category: Uncategorized
+cover_image: /src/images/pillar-blog/2018-09-17-meet-new-agrc-staff/kota.png
+cover_image_alt: Nathan in his new office habitat
 ---
 
 UGRC would like to welcome Nathan Kota, the new Information Technology Manager. Nathan is going to help build and manage the development team as well as take our project management skills to the next level! We are excited to have Nathan as a part of the team.
@@ -16,7 +18,7 @@ Information Technology Manager
 
 #### (So what exactly do you do?)
 
-![Nathan in his new office habitat]({% link images/Kota.png %}){: .inline-text-right .outline }
+![Nathan in his new office habitat](../../images/pillar-blog/2018-09-17-meet-new-agrc-staff/kota.png)
 
 It’s a mix of project and personnel management and everything in between. On a daily basis, I communicate with people from various Utah state agencies, local governments, and non-governmental entities about their GIS needs and how we can help address them. I work to build an understanding of those needs so I can define specific requirements that guide UGRC staff through project development. Then I ensure that our staff have the time and technology resources to produce quality deliverables for our clients, as well as to meet our internal needs. I also work with other DTS staff to ensure that things run smoothly so that UGRC staff can do their work and not be encumbered by bureaucratic procedures or processes. I attend a lot of meetings, and, ultimately, I ensure that the UGRC staff that I’m responsible for get their paychecks (ha!).
 

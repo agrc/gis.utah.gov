@@ -3,10 +3,11 @@ author:
   display_name: Scott Davis
   email: stdavis@utah.gov
 tags: []
-date: 2016-04-01 19:23:49
+date: 2016-04-01T19:23:49.000Z
 title: Why I Speak at Conferences and You Should Too
-categories:
-  - Developer
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Recently, I tried to gather all of the presentations that I have participated in during my career up to this point (~10 years). I was able to find [materials](https://drive.google.com/drive/folders/0BxgFysokDQeKS0JPaTRPQmxKQlE?usp=drive_open) for almost 20 different presentations or workshops that I have been a part of. This caused a question to come to mind: "why did I put myself through all of this pain"? Speaking in public is not easy for me. Especially when it comes to technical topics in front of a group of people the majority of which, I believe, are smarter than I am.

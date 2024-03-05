@@ -1,18 +1,18 @@
 ---
-title: 'Utah Crushes Broadband Challenge through Collaboration'
+title: Utah Crushes Broadband Challenge through Collaboration
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2023-03-03 12:00:00
-categories:
-  - Featured
+date: 2023-03-03T12:00:00.000Z
 tags:
   - data
   - broadband
+category: Uncategorized
+cover_image: /src/images/pillar-blog/2023-03-03-broadband-fabric-data-challenge/bb_challenge_results.png
+cover_image_alt: Utah had by far the most accepted challenges
 ---
 
 _From the I Challenge You to a Duel department_
-{: .text-center}
 
 Among the many lessons the Covid-19 pandemic taught us, we learned two things about high-speed internet. First, high download _and_ upload speeds are necessities in the modern world. Second, figuring out what high-speed internet was available in our neighborhood was a more difficult task than it should be.
 
@@ -24,15 +24,11 @@ Utah responded to this invitation through a collaboration between UGRC, the [Uta
 
 We express a heart-felt **Thank You!** to Box Elder, Weber, Tooele, Salt Lake, Utah, Summit, and Wayne counties for participating on such short notice. With their help we were able to gather over 110,000 challenges, with over 48,000 ultimately being accepted: **24,598 new locations and 23,491 corrected addresses.**
 
-![Utah had by far the most accepted challenges]({% link images/bb_challenge_results.png %})
-{: .flex .flex--center}
+![Utah had by far the most accepted challenges](../../images/pillar-blog/2023-03-03-broadband-fabric-data-challenge/bb_challenge_results.png)
 
 _Source: X-Lab (PSU), via the Marconi Society_
-{: .flex .flex--center}
 
 ## The Collection Process: Every Program Needs Acronyms
-
-{: .flex .flex--left}
 
 The work behind the FCC's new [broadband map](https://broadbandmap.fcc.gov/home) has been christened the [Broadband Data Collection](https://www.fcc.gov/BroadbandData), or BDC for short. There are two critical pieces to the BDC: (1) a "fabric" of Broadband Serviceable Locations (BSLs) and (2) the actual availability data that is built on top of the BSLs.
 
@@ -40,15 +36,11 @@ While the map will support decision making for years to come, there's also a mor
 
 ### Yards and Yards of Fabric
 
-{: .flex .flex--left}
-
 The fabric is the [basis of the BDC](https://help.bdc.fcc.gov/hc/en-us/articles/5375384069659-What-is-the-Location-Fabric-), the foundation that everything elses is built upon. It is "a dataset of all locations ... where fixed broadband internet access service is or could be installed." These Broadband Serviceable Locations are meant to capture every single structure in the country that should be part of the broadband conversation.
 
 The FCC tackled the daunting challenge of identifying every single broadband serviceable structure in the country by hiring a third party contractor, CostQuest, to develop and maintain the fabric. CostQuest uses [aerial imagery-based machine learning combined with publicly available parcel, address, and other datasets](https://help.bdc.fcc.gov/hc/en-us/articles/9157937493275-Video-Broadband-Serviceable-Location-Fabric-How-It-Was-Created) to identify BSLs. The first version of the fabric was released in June of 2022, and updated versions are being released every six months.
 
 ### Challenge Accepted...?
-
-{: .flex .flex--left}
 
 As part of the update process, the FCC allows governments, providers, and individuals to suggest improvements to the fabric in what they call a [challenge](https://help.bdc.fcc.gov/hc/en-us/articles/8554187214107-Fabric-Challenge-Process). These corrections can be missing BSLs, incorrect addresses, BSLs not located on their corresponding structure, that sort of thing.
 
@@ -58,15 +50,11 @@ The Utah Broadband Center worked with UGRC to prepare and submit a state-wide fa
 
 ### Time's A-Ticking
 
-{: .flex .flex--left}
-
 While the fabric will be updated twice a year, this first challenge period was vital for the BEAD distribution process. In early September 2022, NTIA announced they would use the second version of the fabric as the basis for BEAD allocation in order to give states the opportunity to submit a challenge to the "rough draft" first version of the fabric. Then the FCC clarified that they would incorporate any challenges submitted by November 1st into the second version of the fabric.
 
 This seven-week window to get our challenges into the second version was the biggest hurdle in the challenge process. The Utah Broadband Center sent an invitation to both the counties and the tribal governments to participate in this last-minute effort. The invite included our brief analysis of the fabric compared against our statewide address points along with some template datasets and instructions to help them prepare their challenges if they had the time and resources.
 
 ### Collaboration Creates A Concrete Challenge to Confer Communications Capital
-
-{: .flex .flex--left}
 
 We are thrilled at the responses we received from the counties despite the short notice. Even though there was only a handful of counties that were able to reallocate their limited resources, Utah submitted more challenges, and had more challenges accepted, than any other state in the nation. This speaks highly of the skill of the county GIS staffers and the quality of their data.
 

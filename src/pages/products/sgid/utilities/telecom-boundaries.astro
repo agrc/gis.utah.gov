@@ -6,7 +6,6 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
-import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -54,9 +53,7 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
-
-  <Section title="More resources" slot="more-resources" titlePosition="center">
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="URTA website" href="https://urta.org/"
         >Utah Rural Telecom Association.</CardWithPopularLink
@@ -69,7 +66,7 @@ const page: IPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Broadband data category" href="/products/sgid/utilities/broadband-internet"
         >Broadband coverage areas</CardWithSmallLink

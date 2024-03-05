@@ -8,17 +8,17 @@ tags:
   - fire
   - land management
   - public safety
-date: 2016-10-31 21:32:36
+date: 2016-10-31T21:32:36.000Z
 title: FFSL Launches New Wildfire Risk Assessment Portal
 published: false
-categories:
-  - Featured
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Earlier this summer, The [Utah Division of Forestry, Fire and State Lands](https://www.ffsl.utah.gov/) launched a new Wildfire Risk Assessment Portal (uWRAP) to educate and inform the public and land management professionals. The portal assesses the users location or area of interest and provides general and/or detailed information about the wildfire risks associated with a location or area.
 
-[![uWRAP]\({% link images/fireriskblog.png %} "Wildfire Risk Assessment Portal")](https://wildfirerisk.utah.gov/)
-{: .inline-text-right}
+[![uWRAP]\(/images/404.png "Wildfire Risk Assessment Portal")](https://wildfirerisk.utah.gov/)
 
 There is a public and a professional viewer. The public viewer provides unregistered access to the site and gives the user basic information about their location of interest. The professional viewer maintains the same functionality as the public viewer, and adds a few more GIS layers and the ability to build an area of interest multiple ways. Once an area of interest is created, a detailed report of the wildfire threats and risks can be exported as well as a file geodatabase of all the GIS layers used for that area in the WRAP.
 

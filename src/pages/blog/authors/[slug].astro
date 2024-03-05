@@ -1,0 +1,45 @@
+---
+import CardForBlog from '@components/page/CardForBlog.astro';
+import Layout from '@layouts/BlogPostIndex.astro';
+import { getBlogFilters, type DecoratedBlogEntry } from '@utils/collections';
+import type { GetStaticPathsResult } from 'astro';
+
+interface Props {
+  author: string;
+  posts: DecoratedBlogEntry[];
+}
+
+export async function getStaticPaths(): Promise<GetStaticPathsResult> {
+  const tags = await getBlogFilters('authors');
+
+  return tags.map((author) => ({
+    params: {
+      slug: author.slug,
+    },
+    props: {
+      author: author.name,
+      posts: author.posts,
+    },
+  }));
+}
+
+const { author, posts } = Astro.props;
+---
+
+<Layout title="Post authors" category={author}>
+  {
+    posts.map((post) => (
+      <CardForBlog
+        category={post.data.category}
+        coverImage={post.data.cover_image}
+        coverImageAlt={post.data.cover_image_alt}
+        date={post.data.date}
+        snippet={post.data.snippet}
+        estimatedReadingTime={post.data.estimatedReadTime}
+        slug={post.slug}
+        tags={post.data.tags}
+        title={post.data.title}
+      />
+    ))
+  }
+</Layout>

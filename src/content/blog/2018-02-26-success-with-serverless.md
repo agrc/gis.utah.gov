@@ -1,22 +1,23 @@
 ---
 status: publish
 published: true
-title: 'Success with Serverless'
+title: Success with Serverless
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2018-02-26 23:45:28
-categories:
-  - Developer
+date: 2018-02-26T23:45:28.000Z
 tags:
   - nodejs
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 In this post, I'd like to share the success story of our recent testing of [serverless computing](https://en.wikipedia.org/wiki/Serverless_computing). We've been having some issues with a print-proxy service, and the situation gave us the perfect opportunity to experiment with serverless computing. This new(ish) technology has some exciting advantages over traditional solutions, and we've been looking for an excuse to try it out. We weren't disappointed.
 
 ### The Problem
 
-[UGRC's base maps]({% link data/base-map-and-imagery/index.md %}) (including the [Google imagery]({% link discover/license/index.md %})) are served via a custom server application called Giza. Part of the advantage of using Giza is that it allows you to secure and track usage via quad-words. These unique words are assigned to a specific user and are locked down to a specific domain or IP address. For example, if my quad-word is locked down to `mydomain.com`, then requests originating from any other domain or IP address are blocked by the server. This prevents unauthorized access of licensed content, as well as allows UGRC to track analytics.
+[UGRC's base maps](/products/base-maps) (including the [Google imagery](/documentation/discover/licensed-imagery)) are served via a custom server application called Giza. Part of the advantage of using Giza is that it allows you to secure and track usage via quad-words. These unique words are assigned to a specific user and are locked down to a specific domain or IP address. For example, if my quad-word is locked down to `mydomain.com`, then requests originating from any other domain or IP address are blocked by the server. This prevents unauthorized access of licensed content, as well as allows UGRC to track analytics.
 
 This quad-word system works great . . . until you try to use one of Esri's out-of-the-box print services ([here's an example of one](http://mapserv.utah.gov/arcgis/rest/services/Utilities/PrintingTools/GPServer)). When you send a web map to one of these print services, the service reconstructs all of the layers on the server. This causes requests for base maps to be sent from your ArcGIS Server box rather than your user's browser (with your domain as the referrer). Now, we do allow wide-open quad-words (i.e., quad-words not locked down to any domain/IP) to be used by those who need to make requests from servers or other local machines. However, the wide-open quad-words can't be used in web applications because they could be copied and used by unauthorized users. This is a problem.
 

@@ -1,0 +1,80 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Emergency Medical Services',
+  description: `Locations of emergency medical services personnel and equipment in Utah.`,
+  stewards: ['UGRC', 'DHHS', 'DEM'],
+  type: ProductType.POINT,
+  category: SgidCategory.HEALTH,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`June 2013`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The emergency medical services dataset includes locations where EMS personnel are stationed or based out of, or
+      where EMS equipment is stored and ready to use. These include ambulance services, including transportation only
+      services, except for ambulance services located at and operated by a hospital (independent ambulance service
+      co-located with a hospital are included). Records with "-DOD" appended to the end of the [NAME] value are located
+      on a military base, as defined by the Defense Installation Spatial Data Infrastructure (DISDI) military
+      installations and military range boundaries. This dataset is comprised completely of license-free data.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="EMS Boundaries" href="/products/sgid/society/ems_response_areas"
+        >EMS response boundaries.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Healthcare Facilities" href="/products/sgid/health/healthcare-facilities"
+        >General health care facilities in Utah.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="Office of Emergency Medical Services and Preparedness"
+        href="https://bemsp.utah.gov/"
+        style="secondary">EMS licensing and emergency preparedness.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Fire Stations" href="/products/sgid/society/fire_stations" style="secondary"
+        >Fire stations throughout the state</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

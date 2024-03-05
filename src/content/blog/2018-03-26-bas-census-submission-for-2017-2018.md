@@ -1,18 +1,19 @@
 ---
-title: 'BAS Census Submission for 2017&ndash;2018'
+title: BAS Census Submission for 2017&ndash;2018
 published: false
 author:
   display_name: mheagin
   email: mheagin@utah.gov
-date: 2018-03-26 22:42:27
-categories:
-  - Featured
+date: 2018-03-26T22:42:27.000Z
 tags:
   - census
   - bas
   - boundaries
   - municipalities
   - annexations
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 The US Census Bureau conducts the Boundary and Annexation Survey (BAS) annually to collect information about selected legally defined geographic areas. The information collected in this survey is used to update information about the legal boundaries and names of all governmental units in the United States. UGRC has a unique role in the completion of the BAS; in accordance with an agreement between Utah and the US Census Bureau, UGRC shares Utah’s data from the State Geographic Information Database (SGID).

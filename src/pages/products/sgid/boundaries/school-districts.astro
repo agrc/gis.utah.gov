@@ -1,0 +1,92 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+import { removeDateRange } from '@utils/data';
+
+export const metadata: IMetadata = {
+  title: 'Utah School District Boundaries',
+  description: `School district boundaries in Utah.`,
+  stewards: ['UGRC', `Lieutenant Governor's Office`],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`September 2017`, `March 2017`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={removeDateRange(page.title)}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset represents external school district boundaries in Utah. Data was collected through Utah State Tax
+      Commission, Utah State Board of Education, and the UGRC. Changes and updates are through certification by the Lt.
+      Governor’s Office sent in by School District Offices. Data developed with coordinate geometry (COGO) from legal
+      descriptions for the creation and annexations to districts which are also tax entities.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The attribute <code>TOTENROLL</code> is the Public School Enrollment for October 2015 based on Utah State Board of
+      Education <ExternalLink href="https://schools.utah.gov/fingertipfacts/2015FingertipFacts.pdf"
+        >2015-2016 Fingertip Facts</ExternalLink
+      >.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Utah School Board Districts"
+        href="/products/sgid/political/state-school-board-districts"
+        >State School Board District page.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah State Board of Education" href="https://schools.utah.gov/"
+        >Utah State Board of Education website.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary">Society page</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
+        >Boundaries page</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

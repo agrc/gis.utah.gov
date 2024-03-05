@@ -39,6 +39,7 @@ const { title = 'UGRC', subTitle, category, actionUrl, config } = Astro.props;
         <slot name="update-history" />
         <slot name="disclaimer" />
       </Section>
+     <slot name="extra"/>
     )
   }
   <slot name="more-resources" />

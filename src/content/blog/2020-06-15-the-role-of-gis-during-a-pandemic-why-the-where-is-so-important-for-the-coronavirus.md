@@ -1,26 +1,26 @@
 ---
-title: 'The Role of GIS during a Pandemic: Why the “Where” Is So Important for the Coronavirus'
+title: 'The Role of GIS during a Pandemic: Why the “Where” Is So Important for
+  the Coronavirus'
 author:
   display_name: Anna Tribolet
   email: atribolet@utah.gov
-date: 2020-06-15 16:31:10
-categories:
-  - Featured
+date: 2020-06-15T16:31:10.000Z
 tags:
   - coronavirus
   - coordination
   - health
+category: Uncategorized
+cover_image: /src/images/pillar-blog/2020-06-15-the-role-of-gis-during-a-pandemic-why-the-where-is-so-important-for-the-coronavirus/johnshopkinscoronavirusmapfaqs.jpg
+cover_image_alt: Johns Hopkins Coronavirus Map FAQ page
 ---
 
 Having worked with UGRC for the past three years, I’ve started to notice that GIS is involved in just about everything. That’s why I’ve found it so interesting to see how GIS is “having a moment,” so to speak, during this coronavirus pandemic. The field of GIS, which is already involved in so many aspects of our daily lives, even if it’s normally behind the scenes, is in the spotlight now more than ever. Take the [Johns Hopkins Coronavirus Resource Center world map](https://coronavirus.jhu.edu/map.html) for instance. The [COVID-19 Map FAQs page](https://systems.jhu.edu/research/public-health/2019-ncov-map-faqs/) states that, “Feature requests per day on the dashboard have grown from about 200 million in late January to 1.2 billion daily requests in early March. A ‘feature request’ represents the number of times visitors have accessed the underlying data while visiting the dashboard.” That’s an astounding increase! But why is this resource, and others like it, so helpful to people right now? Why are people turning to maps to make sense of what’s happening in the world?
 
 These questions led me down a rabbit hole of research into the relationship between GIS and public health, and I found a few answers about why GIS may be so important in light of the coronavirus.
 
-### 1) Historically, GIS has a solid track record for helping us understand public health situations.
+### 1. Historically, GIS has a solid track record for helping us understand public health situations
 
-{: .text-left}
-
-As Greg Bunce discusses in his [“Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS” article]({% link _posts/2019-09-03-digital-maps-gis-history.md %}), GIS really made its debut in connection to health when it helped resolve the London cholera epidemic of 1854. John Snow, a British physician, analyzed the relationship between water pumps and cholera cases, and he realized that water was the culprit in the spread of the disease. He made a spatial connection between the pumps and the disease, and that made all the difference in preventing further spread. Even from this early case study, “Mapping was an approach employed both by the officials charged with responding to this or that disease incursion and the medical personnel who struggled to treat those afflicted. . . . Then as well as now, mapping served and serves the science of its day” (Koch 2005, 2).
+As Greg Bunce discusses in his [“Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS” article](/blog/2019-09-03-digital-maps-gis-history), GIS really made its debut in connection to health when it helped resolve the London cholera epidemic of 1854. John Snow, a British physician, analyzed the relationship between water pumps and cholera cases, and he realized that water was the culprit in the spread of the disease. He made a spatial connection between the pumps and the disease, and that made all the difference in preventing further spread. Even from this early case study, “Mapping was an approach employed both by the officials charged with responding to this or that disease incursion and the medical personnel who struggled to treat those afflicted. . . . Then as well as now, mapping served and serves the science of its day” (Koch 2005, 2).
 
 Since then, GIS has had an impact on several other health situations:
 
@@ -32,14 +32,12 @@ Since then, GIS has had an impact on several other health situations:
 
 As evidenced by these situations, GIS has been successful in providing a deeper understanding of public health issues. With that successful history, it’s no wonder that people are turning to GIS for answers about the coronavirus. GIS has helped in the past, so maybe it can help again.
 
-### 2) GIS helps people navigate through complicated layers of information.
+### 2. GIS helps people navigate through complicated layers of information
 
-{: .text-left}
-
-GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page]({% link data/index.html %}), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
+GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page](/products/sgid), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
 
 Going back to the [Johns Hopkins’ map](https://coronavirus.jhu.edu/map.html) as an example: on the site’s [Maps & Trends page](https://coronavirus.jhu.edu/data#charts) of the Critical Trends tab, it has a whole list of questions that GIS can help answer.
-![Johns Hopkins Coronavirus Map FAQ page]({% link images/JohnsHopkinsCoronavirusMapFAQs.jpg %}){: .inline-text-right .outline }
+![Johns Hopkins Coronavirus Map FAQ page](../../images/pillar-blog/2020-06-15-the-role-of-gis-during-a-pandemic-why-the-where-is-so-important-for-the-coronavirus/johnshopkinscoronavirusmapfaqs.jpg)
 
 To answer these questions, you have to make connections between several layers of data. For instance, to answer the question of “Where are COVID-19 cases increasing?” you’d need to consider information such as the geographic boundaries for each country, the population of each country, the number of cases in the country, and the number of cases in previous weeks in the country. And then you’d need to compare all that information with data from another country, and another country, and another to really get a bigger-picture view of where cases are increasing. If you were to verbally write out this information, it may take several paragraphs to talk about the trends in different countries, especially depending on how many countries you were comparing.
 
@@ -47,9 +45,7 @@ But GIS can help us draw connections between each of these complicated layers an
 
 To answer the question of “Where are COVID-19 cases increasing?” Johns Hopkins Coronavirus Resource Center has an [animated map](https://coronavirus.jhu.edu/data/animated-world-map) that color-codes the population for each country for each week, and the countries visually change colors to show you the trends. In a few seconds, the map is able to provide you the same information that it would otherwise take paragraphs to describe. And instead of just answering the question of “Where are COVID-19 cases increasing?” with perhaps a list of countries with their case numbers, the map answers the larger question of “How has the number of cases of COVID-19 changed globally over time?” And that’s the beauty of GIS.
 
-### 3) GIS naturally involves intergroup collaboration, which is essential for coronavirus response.
-
-{: .text-left}
+### 3. GIS naturally involves intergroup collaboration, which is essential for coronavirus response
 
 Collaboration between groups is an essential part of the GIS field, and that’s another reason why GIS could be so important in relation to the coronavirus. Let’s go back to the “Where are COVID-19 cases increasing?” question and apply it on a local Utah level. To answer this question, you might first want to examine Utah counties, and to find out the geographic boundaries of each county, you’d need to work with the state’s county recorders. To learn about the population for each county, you’d be relying on the US Census Bureau. To learn about the number of cases of coronavirus in a county, you might look to the county health department. And so on. And then in Utah, UGRC would be the keeper of all this data, so we’d work with contacts from all of those groups.
 
@@ -57,17 +53,15 @@ You can begin to see how many different groups are involved in collecting and ma
 
 Agendra Kumar, Esri India president, describes this collaborative atmosphere well saying, “With location as a common denominator, Geographic Information System (GIS) technology provides the capability to enable this common operating picture for multi-agency collaboration” ([Singh 2020](https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102)). Later in the interview, he also goes on to describe how Esri, a world leader in GIS, is collaborating with various agencies about the coronavirus.
 
-> Esri is working with various government agencies around the world and bodies such as World Health Organisation (WHO) and Centres for Disease Control & Prevention (CDCP) to help them leverage GIS technology to make decisions, plan and communicate various measures to control the spread of pandemic. ([Singh 2020](https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102))
+> Esri is working with various government agencies around the world and bodies such as World Health Organization (WHO) and Centres for Disease Control & Prevention (CDCP) to help them leverage GIS technology to make decisions, plan and communicate various measures to control the spread of pandemic. ([Singh 2020](https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102))
 
 In order for any country to effectively respond to the coronavirus, it is essential that various local and national groups work together to share information, assess that information, and take action on that information. GIS naturally opens the door for this collaboration.
 
 ### The Coronavirus and Our Spatial Brains
 
-{: .text-left}
-
 Now, all those reasons are valid and important in discussing how and why GIS is so essential during this pandemic. But I also have to wonder though about one more potential reason that we’re so interested in GIS, especially during times of uncertainty: Is spatial information about the coronavirus particularly helpful because our brains are naturally wired to process information spatially and visually? Maybe we’re turning to GIS right now because processing information in that way naturally makes sense to our brains, and when things are uncertain and unpredictable in the world, like they are right now, we turn toward things that are familiar in order to gain a sense of comfort and control.
 
-As stated in the UGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”]({% link _posts/2020-01-29-cognitive-maps.md %}) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
+As stated in the UGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”](/blog/2020-01-29-cognitive-maps) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
 
 People are more likely to notice and pay attention to visual information than written information (which I find especially ironic as I write this article). Jon Puleston, Kantar Consulting, explains this phenomenon well in the article [“The Science of Visuals”](http://www.lightspeedresearch.com/science-visuals/): “The human brain thinks in pictures.” And what are maps but pictures that share information about a specific area?
 
@@ -81,17 +75,13 @@ In fact, as humans, we’ve been communicating through symbols since prehistoric
 
 ### Wrapping Things Up
 
-{: .text-left}
-
 Whatever the reason for the current focus and reliance on GIS during this pandemic, I’m glad we have such a great resource to help us process information in a meaningful way. Hopefully GIS can continue to shed light on the current health situation and help us better prepare for whatever the pandemic holds moving forward.
 
 ### Sources
 
-{: .text-left}
+Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” UGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/](/blog/2020-01-29-cognitive-maps).
 
-Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” UGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/]({% link _posts/2020-01-29-cognitive-maps.md %}).
-
-Bunce, Greg. “Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS.” UGRC Blog. Published September 3, 2019. Accessed May 14, 2020. [https://gis.utah.gov/digital-maps-gis-history/]({% link _posts/2019-09-03-digital-maps-gis-history.md %}).
+Bunce, Greg. “Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS.” UGRC Blog. Published September 3, 2019. Accessed May 14, 2020. [https://gis.utah.gov/digital-maps-gis-history/](/blog/2019-09-03-digital-maps-gis-history).
 
 _Geographic Information Systems (GIS) and Cancer Research._ US Department of Health and Human Services, National Institutes of Health, National Cancer Institute, 2006. (NIH Publication No. 07-6096). Reproduced by the US Department of Commerce National Technical Information Service. Springfield, VA. Accessed electronically on June 11, 2020. [https://classic.ntis.gov/assets/pdf/st-on-cd/PB2007103350.pdf](https://classic.ntis.gov/assets/pdf/st-on-cd/PB2007103350.pdf).
 
@@ -118,8 +108,6 @@ Waller, Lance A., and Carol A. Gotway. _Applied Spatial Statistics for Public He
 Zalac, Frédéric, and Kris Fleerackers. “Did early humans communicate with cave signs?” CBC News. Posted May 20, 2015. Last updated May 21, 2015. Accessed June 11, 2020. [https://www.cbc.ca/news/technology/did-early-humans-communicate-with-cave-signs-1.3040723#:~:text=While%20cave%20paintings%20have%20long,humans%20before%20the%20written%20word](https://www.cbc.ca/news/technology/did-early-humans-communicate-with-cave-signs-1.3040723#:~:text=While%20cave%20paintings%20have%20long,humans%20before%20the%20written%20word).
 
 ### General Reading/References
-
-{: .text-left}
 
 “Allocentric vs. Egocentric Spatial Processing.” Mental Imagery and Human-Computer Interaction Lab. Harvard Medical School Department of Radiology. Accessed June 11, 2020. [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308).
 \*The publications page here: [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11) has some great resources.

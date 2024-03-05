@@ -1,17 +1,17 @@
 ---
-title: 'Municipal Boundaries Update for Third Quarter 2020 (Calendar Year)'
+title: Municipal Boundaries Update for Third Quarter 2020 (Calendar Year)
 published: false
 author:
   display_name: mheagin
   email: mheagin
-date: 2020-10-05 10:58:53
-categories:
-  - SGID Blog
-  - Featured
+date: 2020-10-05T10:58:53.000Z
 tags:
   - municipalities
   - boundaries
   - annexations
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 As we move into the third quarter of 2020, the year is almost through. While some things have slowed down, life goes on. Annexations have been coming through as cities grow, and for this year we have two possible new incorporations: one in Tooele County (Erda) and another in Weber County (West Weber). Both new incorporations will be on the ballots in the coming election.

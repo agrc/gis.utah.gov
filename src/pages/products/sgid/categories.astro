@@ -1,5 +1,7 @@
 ---
+import BulletedList from '@components/page/BulletedList.astro';
 import DataCategory from '@components/page/DataCategory.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 ---
@@ -98,70 +100,86 @@ import Layout from '@layouts/FullWidth.astro';
   </Section>
   <Section title="Choosing a data source" stripe>
     <p>
-      With so many ways to get SGID Data, how do you you know which one to use? We created a guide to help you
+      With so many ways to access SGID Data, how do you you know which one to use? We created a guide to help you
       understand the best ways to access the data based on your use case.
     </p>
-    <dl>
-      <dt>Browsing for Data</dt>
-      <dd>- Use the <a href="{% link data/sgid-index/index.html %}">SGID Index</a></dd>
-      <dd>- Search the <a href="https://opendata.gis.utah.gov">SGID Open Data site</a></dd>
-      <dd>
-        - Browse the Utah SGID groups in our <a href="https://utah.maps.arcgis.com/home/groups.html"
-          >ArcGIS Online organization</a
-        >
-      </dd>
-      <dt>Desktop mapping (ArcGIS, QGIS, etc)</dt>
-      <dd>
-        - Connect directly to the <a href="{% link sgid/open-sgid/index.md %}">Open SGID</a> to load UGRC-curated vector
-        data
-      </dd>
-      <dd>
-        - Consume feature services from <a href="https://utah.maps.arcgis.com/home/groups.html">ArcGIS Online</a> or
-        <a href="https://opendata.gis.utah.gov">Open Data</a>
-      </dd>
-      <dd>
-        - Download shapefiles or geodatabases from <a href="https://opendata.gis.utah.gov">Open Data</a> or from the steward's
-        website
-      </dd>
-      <dd>
-        - Add a raster base map or imagery from <a href="{% link discover/index.html %}">Discover</a>
-      </dd>
-      <dd>- Download raster data from the <a href="https://raster.utah.gov">Raster Discovery web app</a></dd>
-      <dt>ArcGIS Online webmaps and storymaps</dt>
-      <dd>
-        - Consume feature services from <a href="https://utah.maps.arcgis.com/home/groups.html">ArcGIS Online</a> or
-        <a href="https://opendata.gis.utah.gov">Open Data</a>
-      </dd>
-      <dd>
-        - Add a raster base map or imagery from <a href="{% link discover/index.html %}">Discover</a>
-      </dd>
-      <dt>Custom web app development</dt>
-      <dd>
-        - Consume feature services from <a href="https://utah.maps.arcgis.com/home/groups.html">ArcGIS Online</a> or
-        <a href="https://opendata.gis.utah.gov">Open Data</a>
-      </dd>
-      <dd>
-        - Zoom to an address and search for a boundary or nearby feature with the <a
-          href="https://developer.mapserv.utah.gov/StartupGuide">UGRC Web API</a
-        >
-      </dd>
-      <dd>
-        - Add a raster base map or imagery from <a href="{% link discover/index.html %}">Discover</a>
-      </dd>
-      <dt>Geocoding Addresses</dt>
-      <dd>
-        - Geocode individual addresses with the <a href="https://developer.mapserv.utah.gov/StartupGuide"
-          >UGRC Web API</a
-        >
-      </dd>
-      <dd>
-        - Download our <a href="{% link _posts/2021-11-29-introducing-the-official-ugrc-api-client.md %}">API Client</a>
-        to geocode a table of addresses with the UGRC Web API
-      </dd>
-      <dd>
-        - Use our <a href="https://github.com/agrc/masquerade?tab=readme-ov-file#masquerade">Masquerade service </a>
-        to geocode within Esri products.
-      </dd>
-    </dl>
+    <h4>Browsing for data</h4>
+    <BulletedList>
+      <li>Use the <a href="/products/sgid/sgid-index">SGID Index</a>.</li>
+      <li>Search the <ExternalLink href="https://opendata.gis.utah.gov">SGID Open Data site</ExternalLink>.</li>
+      <li>
+        Browse the Utah SGID groups in our <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
+          >ArcGIS Online organization</ExternalLink
+        >.
+      </li>
+    </BulletedList>
+    <h4>Desktop mapping (ArcGIS, QGIS, etc)</h4>
+    <BulletedList>
+      <li>
+        Connect directly to the <a href="/documentation/sgid/open-sgid">Open SGID</a> to load UGRC-curated vector data.
+      </li>
+      <li>
+        Consume feature services from <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
+          >ArcGIS Online</ExternalLink
+        > or <ExternalLink href="https://opendata.gis.utah.gov">Open Data</ExternalLink>.
+      </li>
+      <li>
+        Download shapefiles or geodatabases from <ExternalLink href="https://opendata.gis.utah.gov"
+          >Open Data</ExternalLink
+        > or from the steward's website.
+      </li>
+      <li>
+        Add a raster base map or imagery from <a href="/products/discover">Discover</a>.
+      </li>
+      <li>
+        Download raster data from the <ExternalLink href="https://raster.utah.gov"
+          >Raster Discovery web app</ExternalLink
+        >.
+      </li>
+    </BulletedList>
+    <h4>ArcGIS Online webmaps and storymaps</h4>
+    <BulletedList>
+      <li>
+        Consume feature services from <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
+          >ArcGIS Online</ExternalLink
+        > or <ExternalLink href="https://opendata.gis.utah.gov">Open Data</ExternalLink>.
+      </li>
+      <li>
+        Add a raster base map or imagery from <a href="/products/discover">Discover</a>.
+      </li>
+    </BulletedList>
+    <h4>Custom web app development</h4>
+    <BulletedList>
+      <li>
+        Consume feature services from <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
+          >ArcGIS Online</ExternalLink
+        > or <ExternalLink href="https://opendata.gis.utah.gov">Open Data</ExternalLink>.
+      </li>
+      <li>
+        Zoom to an address and search for a boundary or nearby feature with the <ExternalLink
+          href="https://developer.mapserv.utah.gov/StartupGuide">UGRC Web API</ExternalLink
+        >.
+      </li>
+      <li>
+        Add a raster base map or imagery from <a href="/products/discover">Discover</a>.
+      </li>
+    </BulletedList>
+    <h4>Geocoding Addresses</h4>
+    <BulletedList>
+      <li>
+        Geocode individual addresses with the <ExternalLink href="https://developer.mapserv.utah.gov/StartupGuide"
+          >UGRC Web API</ExternalLink
+        >.
+      </li>
+      <li>
+        Download our <a href="/blog/2021-11-29-introducing-the-official-ugrc-api-client">API Client</a> to geocode a table
+        of addresses with the UGRC Web API.
+      </li>
+      <li>
+        Use our <ExternalLink href="https://github.com/agrc/masquerade?tab=readme-ov-file#masquerade"
+          >Masquerade service
+        </ExternalLink> to geocode within Esri products..
+      </li>
+    </BulletedList>
   </Section>
 </Layout>

@@ -3,23 +3,22 @@ title: The SGID - Then and Now
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2019-06-11 10:07:46
-categories:
-  - Featured
+date: 2019-06-11T10:07:46.000Z
 tags:
   - sgid
   - data
   - education
   - gis history
+category: Uncategorized
+cover_image: /src/images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_1994_binders_cover_sm.png
+cover_image_alt: 1994 SGID User Guide Binder
 ---
 
 Access to high-quality GIS data is a privilege, and the fact that it's open and free is nothing short of amazing. Yes, I’m talking about Utah's SGID. From a local perspective, we’re all accustomed to it being there. But really, the concept of readily available, mature, open data is somewhat unique. Over the years, many factors have played into the SGID’s development and current maturity, and it takes ongoing maintenance and planning to ensure its continued success.
 
-This post explores some of the early milestones ("highlights") of the SGID, the current state of the SGID with usage stats, and, finally, where we are going next---with a poll requesting user input!
+This post explores some of the early milestones ("highlights") of the SGID, the current state of the SGID with usage stats, and, finally, where we are going next--with a poll requesting user input!
 
 ### Early History of the SGID
-
-{: .text-left}
 
 Interestingly enough, development of the SGID parallels a lot of the early innovative GIS work being done at the national level. Historically speaking, Utah has played a role in GIS history as an "Early-Adopter State."
 
@@ -33,7 +32,7 @@ In 1989, AGRC was created (replacing AGR). That change brought with it new GIS-r
 
 The SGID was further solidified in 1991 with the passage of [Senate Bill 21](https://le.utah.gov/xcode/Title63F/Chapter1/63F-1-S507.html). Passing unanimously, this bill created the AGRC and the SGID in state statute and eliminated many uncertainties such as future funding for the database and UGRC’s responsibilities.
 
-During the 2021 General Session, the Utah Legislature agreed to [change the name of AGRC]({% link _posts/2021-04-05-agrc-name-change-to-utah-geospatial-resource-center-ugrc.md %}) to the Utah Geospatial Resource Center (UGRC), as passed in House Bill 261, “Geographic Reference Center Amendments.” (the new name took effect on May 5, 2021). This rebranding was an effort to better align the office with the larger geospatial industry as well as our current role within the state.
+During the 2021 General Session, the Utah Legislature agreed to [change the name of AGRC](/blog/2021-04-05-agrc-name-change-to-utah-geospatial-resource-center-ugrc) to the Utah Geospatial Resource Center (UGRC), as passed in House Bill 261, “Geographic Reference Center Amendments.” (the new name took effect on May 5, 2021). This rebranding was an effort to better align the office with the larger geospatial industry as well as our current role within the state.
 
 The SGID has been in continuous operation since its completion in 1991 and has seen numerous software and hardware configurations throughout the years.
 
@@ -42,34 +41,32 @@ Here are a few of the highlights that have brought the SGID to where it is now:
 - **SGID User's Guide - 7th Edition (1994)**
   - This user guide was distributed in a three-ring binder. Data was then requested in the following available formats: ARC/INFO Coverages, USGS DLG, MOSS Export, and AutoCAD DXF. This guide also makes note of an "AGRC home page on the world wide web," which was set to debut in November 1994.
 
-![1994 SGID User Guide Binder]({% link images/SGID_1994_binders_cover_sm.png %}){: .flex .flex--center}
+![1994 SGID User Guide Binder](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_1994_binders_cover_sm.png)
 
 - **The SGID on CD-ROM (1995)**
   - In 1995, AGRC, ESRI, and Utah State University combined forces and manufactured a CD-ROM containing SGID data and a built-in data viewer. To commemorate this milestone, we have made available the [original CD-ROM jacket](https://drive.google.com/file/d/1D_AI5EdonRLbLoJAdiVUORFycNwY1S3A/view?usp=sharing) as well as the [unaltered CD-ROM contents](https://drive.google.com/file/d/1iJ-oBpnCGK8XmPr9B4jvE1AhodTC85tp/view?usp=sharing).
 
-![1995 SGID CD-ROM photo]({% link images/SGID_1995_cover_sm.png %}){: .flex .flex--center}
+![1995 SGID CD-ROM photo](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_1995_cover_sm.png)
 
 - **SGID User’s Guide - 10th Edition (1999)**
   - This version of the user guide was also distributed in a three-ring binder and talked about the AGRC home page as the place where you could get direct access to the SGID data, as well as view the FGDC metadata. It also mentioned an FTP site. It noted that this version would be the last printed user guide and that future guides would be available on the website for download in PDF format. With this version, users could request SGID data in the following formats: CD, 3.5 diskettes, 8mm tape, zip disc, or Coverages (which the guide mentioned were the most popular at that time).
 
-![1999 SGID User Guide Binder]({% link images/SGID_1999_binders_cover_sm.png %}){: .flex .flex--center}
+![1999 SGID User Guide Binder](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_1999_binders_cover_sm.png)
 
 - **SGID Meets the World Wide Web (Early 2000s)**
-  - By the early 2000s the SGID user guide, data, and data viewer were all solely available over the Web. AGRC was using ArcSDE 8.2 to maintain the data and ArcIMS for the interactive mapping website. Users could also use a separate ArcIMS site to create their own exportable map using a [custom map authoring tool]({% link images/SGID_early2000s_create_custom_map.gif %}).
+  - By the early 2000s the SGID user guide, data, and data viewer were all solely available over the Web. AGRC was using ArcSDE 8.2 to maintain the data and ArcIMS for the interactive mapping website. Users could also use a separate ArcIMS site to create their own exportable map using a [custom map authoring tool](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_early2000s_create_custom_map.gif).
 
-[![SGID Early 2000s]({% link images/SGID_early2000s_sm.png %}){: .flex .flex--center}]({% link images/SGID_early2000s.png %})
+![SGID Early 2000s](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_early2000s_sm.png)
 
 ### Where Is the SGID Now?
-
-{: .text-left}
 
 Technology and the use of GIS have come a long way since the inaugural SGID of 1991. What hasn't changed though is the notion of a centralized repository for searching and fetching statewide GIS data. Sure, file formats and how we access data have changed, but the need for open, readily accessible GIS data remains the same.
 
 The current makeup of the SGID is distributed, by design. Internally, much of the framework data is managed on a SQL ArcSDE Database. From there, data layers are distributed accordingly.
 
-The [SGID index]({% link data/sgid-index/index.html %}) and current user guide are located on [the SGID page of UGRC’s website]({% link data/index.html %}), where you will also find descriptions of the data, update dates, data downloads, and links to other places where you can access the data. If you're looking for data, that is the best place to start.
+The [SGID index](/products/sgid/sgid-index) and current user guide are located on [the SGID page of UGRC’s website](/products/sgid), where you will also find descriptions of the data, update dates, data downloads, and links to other places where you can access the data. If you're looking for data, that is the best place to start.
 
-![SGID 2019 User Guide]({% link images/SGID_2019_webpage_data.png %}){: .flex .flex--center}
+![SGID 2019 User Guide](../../images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_2019_webpage_data.png)
 
 In order to meet the diverse needs of our users and applications, SGID data is served on a variety of platforms in a variety of formats, including direct database access, downloadable data, [ArcGIS Online](https://gis.utah.gov/data/), an [open data portal](https://opendata.gis.utah.gov/), and API web services.
 
@@ -117,11 +114,9 @@ Here are some current SGID stats showing top accessed data layers by platform:
 
 ### Where Is the SGID Going?
 
-{: .text-left}
-
 One of the challenges of working in technology is that over time, file formats and the way we access data change. This is similarly true for the SGID. As a result, UGRC engages in regular discussions on where the SGID should be going.
 
-Currently, we are working toward [trimming down the SQL ArcSDE enterprise database]({% link _posts/2018-09-10-the-incredible-shrinking-sgid.md %}), which is available to users on the State network. Moving forward, we will maintain only "live" datasets in the SDE. These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal editing and staging database.
+Currently, we are working toward [trimming down the SQL ArcSDE enterprise database](/blog/2018-09-10-the-incredible-shrinking-sgid), which is available to users on the State network. Moving forward, we will maintain only "live" datasets in the SDE. These would be datasets that receive regular modifications, such as address points, parcels, municipal boundaries, roads, etc. The idea is to use this database as our internal editing and staging database.
 
 All data layers being maintained in the SDE will also be available in [AGOL](https://utah.maps.arcgis.com) and [UGRC’s open data portal](https://opendata.gis.utah.gov/). Here users can consume the web service or download the data. Obsolete data will be written to object storage for retention and will be available on request.
 

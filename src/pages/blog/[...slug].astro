@@ -1,29 +1,31 @@
 ---
+import Section from '@components/page/Section.astro';
 import BlogPost from '@layouts/BlogPost.astro';
-import getReadingTimeFromMarkdown from '@utils/readingTime';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '@layouts/FullWidth.astro';
+import { getBlogPosts, slugify, type DecoratedBlogEntry } from '@utils/collections';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts
-    .filter((post) => post.data.published)
-    .map((post) => ({
-      params: { slug: post.slug },
-      props: {
-        ...post,
-        data: {
-          ...post.data,
-          estimatedReadTime: getReadingTimeFromMarkdown(post.body),
-        },
-      },
-    }));
+  return (await getBlogPosts(true)).map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
 }
-type Props = CollectionEntry<'blog'>;
 
-const post = Astro.props;
+const post = Astro.props as DecoratedBlogEntry;
 const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data}>
-  <Content />
-</BlogPost>
+<Layout title="From the blog">
+  <Section title={post.data.title} titlePosition="center" stripe>
+    <div class="flex justify-center gap-1 text-sm" slot="sub-title">
+      <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Author</span>
+      <span>·</span>
+      <span class="whitespace-nowrap">
+        <a href={`/blog/authors/${slugify(post.data.author.display_name)}`}>{post.data.author.display_name}</a>
+      </span>
+    </div>
+    <BlogPost {...post.data}>
+      <Content />
+    </BlogPost>
+  </Section>
+</Layout>

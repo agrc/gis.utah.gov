@@ -1,0 +1,85 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import Contacts from '@components/page/Contacts.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import badPhoto from '@images/documentation/bad.svg';
+import checklistPhoto from '@images/documentation/checklist.svg';
+import rulesPhoto from '@images/documentation/rules.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'SGID policy',
+  pillar: 'Documentation',
+  section: stripeSections([{}, { title: 'Do' }, { title: 'Do not' }]),
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      src={rulesPhoto}
+      slot="image"
+      loading="eager"
+      alt="Three people sitting at a table creating policy"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <h3>Fair use</h3>
+    <p>
+      The Open SGID is free to use, but we ask that you use it responsibly. We are happy to answer any questions you may
+      have. Search our <ExternalLink href="https://github.com/agrc/open-sgid/issues">known-issues</ExternalLink> page if
+      you are having trouble. Open an issue on GitHub if you find any new issues or contact <Contacts
+        contactKey="opensgid"
+        subject="open sgid policy"
+        inline
+      /> if you need further assistance.
+    </p>
+    <p>The following guidelines apply when using the Open SGID database.</p>
+  </Section>
+  <Section {...page.section[1]}>
+    <Image
+      src={checklistPhoto}
+      slot="image"
+      alt="A person checking boxes on a checklist"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>Use this service for a wide variety of individual purposes, such as:</p>
+    <BulletedList>
+      <li>Cartography &#x2192; Make cool maps</li>
+      <li>Geoprocessing &#x2192; Solve problems</li>
+      <li>Analysis &#x2192; Write spatial queries</li>
+      <li>Scripting &#x2192; Click fewer buttons</li>
+      <li>Exploring &#x2192; Discover a rich catalog of statewide, open source spatial data</li>
+    </BulletedList>
+  </Section>
+
+  <Section {...page.section[2]}>
+    <Image src={badPhoto} slot="image" alt="A person breaking a light bulb" class="w-full max-w-[400px] rounded-2xl" />
+    <BulletedList>
+      <li>Create web or map services from Open SGID tables.</li>
+      <li>Create processes that make excessive database calls.</li>
+      <li>Keep a connection open for multiple days.</li>
+    </BulletedList>
+    <p>
+      UGRC will offer support for the Open SGID from 6:00 a.m. to 7:00 p.m. Monday through Friday. Please contact UGRC
+      beforehand if you need to plan for assistance outside of this time frame.
+    </p>
+    <p>
+      Visit the <ExternalLink href="https://github.com/agrc/open-sgid">Open SGID GitHub repository</ExternalLink> for more
+      information, including the current database version, connection information, and known issues.
+    </p>
+    <p>
+      Visit the <a href="/documentation/sgid/open-sgid">Open SGID connection page</a> for examples on how to connect using
+      a few of the more common applications.
+    </p>
+  </Section>
+</Layout>

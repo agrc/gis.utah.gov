@@ -7,8 +7,9 @@ tags:
 date: 2012-10-25 12:39:06 -0600
 published: false
 title: Tracking Server Response Times with the Google Spreadsheets API and asp.net
-categories:
-  - Developer
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 <p>We've been noticing some speed issues with our mapserv machines recently and are trying to figure out the issue. In an effort to have a little insight into the when, where, and why's, we created a very rudimentary tracking tool that has quite a bit of potential and was fun to make. This will hopefully give us and our hosting and networking groups a better idea of what could be the root cause.</p>
@@ -18,6 +19,6 @@ categories:
 <p><a href="https://developers.google.com/google-apps/spreadsheets/#authorizing_requests_with_clientlogin" title="client login example">ClientLogin</a> is pretty simple and allowed me access to my Google Drive documents in a few minutes.</p>
 <p>Next I created a Spreadsheet through a browser to capture the data on our page response times. I named this document something useful so I could query for it through the SpreadSheetFeed. I also created a <a href="https://developers.google.com/google-apps/spreadsheets/#working_with_list-based_feeds" title="header row">header row</a> of values so when I insert rows, the data would map to the correct cell. If you do not create a header row you will get a 400 bad request responses when trying to insert. Therefore, if you wanted to create your spreadsheet via code, you'd have to use the Cell feed to create the header row, then use the spreadsheet feed to insert your values. For the sake of speed, I created the sheet and the header row manually. This gotcha was the only non trivial step when using this API. The error message was not very helpful and the documentation wasn't super clear.</p>
 <p>After that, I was able to create a chart through the browser and publish it. It gives you a script tag you can inject or an image you can place to view online that is always up to date.</p>
-<p><img src="https://docs.google.com/a/utah.gov/spreadsheet/oimg?key=0AjQ5lAz8kBCAdDBfV3d3cnVwaGlkWkpHbG5PUE1vV0E&oid=4&zx=tojc5bs5kzsd" /> </p>
+
 <h3>Sample Code</h3>
 <p><script src="https://gist.github.com/3954301.js"> </script></p>

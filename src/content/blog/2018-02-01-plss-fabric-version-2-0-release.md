@@ -4,13 +4,14 @@ published: false
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2018-02-01 23:31:11
-categories:
-  - Featured
+date: 2018-02-01T23:31:11.000Z
 tags:
   - cadastre
   - parcel fabric
   - plss
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Finally, an update for the Utah Public Land Survey System (PLSS) Fabric! The Utah Geospatial Resource Center (UGRC) has published a PLSS Fabric Version 2.0 (V2.0) for the start of 2018. As the [US Geological Survey describes](https://www.usgs.gov/core-science-systems/national-geospatial-program/small-scale-data), “The Public Land Survey System (PLSS) is a way of subdividing and describing land in the United States.” The PLSS Fabric is a new method for parcel management that allows all of the various PLSS data layers to be updated simultaneously, which has helped expedite the updating of the data.
@@ -29,7 +30,7 @@ For our part at UGRC, incorporating our data has been a little slower, as updati
 
 ## Available for download
 
-The Utah PLSS Fabric production version is available for download in several forms from the [PLSS / Geographic Coordinate Database (GCDB) Cadastre Data Page PLSS / GCDB Cadastre Data Page]({% link data/cadastre/plss/index.html %}#ParcelFabric). The file sizes are quite large, so please consider this when downloading.
+The Utah PLSS Fabric production version is available for download in several forms from the [PLSS / Geographic Coordinate Database (GCDB) Cadastre Data Page PLSS / GCDB Cadastre Data Page](/products/sgid/cadastre/plss). The file sizes are quite large, so please consider this when downloading.
 
 - Utah PLSS Fabric V2.0 (833 GB zip file): the entire statewide fabric with an ArcMap 10.4 mxd and set layer files to correctly draw the PLSS data
 - Published CadNSDI V2.0 (509 MB zip file): PLSS Fabric data in the individual feature classes (i.e., townships, first division, second division, intersected, special survey, meandered water, metadata at a glance, and point) published in the CadNSDI schema

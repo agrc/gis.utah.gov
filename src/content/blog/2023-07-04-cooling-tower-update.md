@@ -3,14 +3,15 @@ title: 'Results Update: Detecting Cooling Towers with Computer Vision Tools'
 author:
   display_name: Erik Neemann
   email: eneemann@slco.org
-date: 2023-06-30 09:00:00
-categories:
-  - Featured
+date: 2023-06-30T09:00:00.000Z
 tags:
   - computer vision
   - dhhs
   - cooling towers
   - legionella
+category: Uncategorized
+cover_image: /src/images/pillar-blog/2023-07-04-cooling-tower-update/dhhs_process.png
+cover_image_alt: Cooling Tower Project Overview
 ---
 
 If you were at the 2023 Utah Geographic Information Council (UGIC) Conference in May, you **might** remember that I presented on [Generating Useful Data with Computer Vision Tools](https://agrc.github.io/Presentations/UGIC/2023/ComputerVision.pdf). But my second use case, detecting cooling towers in aerial imagery for the Utah Department of Health and Human Services (DHHS), was still a work in progress with results yet to be determined. I promised to provide an update via blog post, and now I’m (finally) fulfilling that promise.
@@ -44,7 +45,7 @@ The rest of this blog post will largely focus on the project results, because th
    - Enrich the data with additional attributes
 1. Build a web map with other relevant layers
 
-![Cooling Tower Project Overview]({% link images/dhhs_process.png %} "Cooling Tower Project Overview"){: .flex .flex--center}
+![Cooling Tower Project Overview](../../images/pillar-blog/2023-07-04-cooling-tower-update/dhhs_process.png 'Cooling Tower Project Overview')
 
 ## Results
 
@@ -54,7 +55,7 @@ In the PyTorch model, we took the approach of maximizing cooling tower detection
 
 In the end, the TowerScout model detected 6,324 potential towers with a confidence score > 0.5. These relatively high-confidence detections were manually reviewed, and 1,561 tower locations were validated.
 
-![Map of cooling towers with confidence > 0.5]({% link images/cooling_tower_map.png %} "Map of cooling towers with confidence > 0.5"){: .flex .flex--center}
+![Map of cooling towers with confidence > 0.5](../../images/pillar-blog/2023-07-04-cooling-tower-update/cooling_tower_map.png 'Map of cooling towers with confidence > 0.5')
 
 ## Next Steps
 

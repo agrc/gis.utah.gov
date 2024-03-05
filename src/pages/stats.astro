@@ -1,0 +1,32 @@
+---
+import FullWidth from '@layouts/FullWidth.astro';
+import { getBlogFilters, getBlogPosts } from '@utils/collections';
+
+const posts = await getBlogPosts();
+const tags = await getBlogFilters('tags');
+const categories = await getBlogFilters('categories');
+// @ts-ignore
+const pages = await Astro.glob(['./**/*.astro', '!./_partials/**/*']);
+---
+
+<FullWidth title="Site Statistics">
+  <div class="p-8 dark:text-zinc-200">
+    <p>Number of Astro pages: {pages.length}</p>
+    <p>Number of blog posts: {posts.length}</p>
+    <p>
+      Categories ({categories.length}): {categories.map((category) => category.name).join(', ')}
+    </p>
+    <p>
+      Tags ({tags.length}):
+    </p>
+    <ul>
+      {
+        tags.map((tag) => (
+          <li>
+            {tag.name} ({tag.posts.length})
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</FullWidth>

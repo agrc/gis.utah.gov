@@ -1,15 +1,16 @@
 ---
-title: 'Make Old Dojo Builds More Beautiful With UglifyJS'
+title: Make Old Dojo Builds More Beautiful With UglifyJS
 published: false
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2019-03-21 20:21:19
-categories:
-  - Developer
+date: 2019-03-21T20:21:19.000Z
 tags:
   - dojo
   - javascript
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Do you have an old project that uses the Dojo Build System (DBS) that has suddenly refused to build? I've come across this issue recently and it can be frustrating. Getting the DBS to work initially can be a daunting task in and of itself. But to add insult to injury, I've had builds break without any changes to the codebase. I'm not sure if it's related to upgrading NodeJS or some other dependency but the DBS recently started coughing up error messages similar to the following:

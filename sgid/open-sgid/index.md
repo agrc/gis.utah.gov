@@ -12,14 +12,14 @@ tags:
   - open sgid
 ---
 
-The Open SGID is a cloud hosted, publicly available PostGIS database containing our currated SGID data. This database is one part of the [SGID]({% link sgid/index.html %}) and complements the web services and data downloads offered on our [Open Data site](https://opendata.gis.utah.gov/).
+The Open SGID is a cloud hosted, publicly available PostGIS database containing our currated SGID data. This database is one part of the [SGID](/documentation/sgid) and complements the web services and data downloads offered on our [Open Data site](https://opendata.gis.utah.gov/).
 
-To search the SGID, please visit the [SGID Index]({% link data/sgid-index/index.html %}). To learn more about the data categories available in the SGID, please visit the [UGRC data page]({% link data/index.html %}).
+To search the SGID, please visit the [SGID Index](/products/sgid/sgid-index). To learn more about the data categories available in the SGID, please visit the [UGRC data page](/products/sgid).
 
 ### Before you Connect...
 {: .text-left }
 
-- Please take a moment to read over the [Open SGID Terms of Use]( {% link about/policy/open-sgid/index.md %}).
+- Please take a moment to read over the [Open SGID Terms of Use]( /documentation/policy/open-sgid).
 - Get familiar with the [Open SGID GitHub repository](https://github.com/agrc/open-sgid), where you can troubleshoot and track known issues.
 
 ### How to Connect

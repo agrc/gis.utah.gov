@@ -41,4 +41,4 @@ UGRC will offer support for the Open SGID from 6:00 a.m. to 7:00 p.m. Monday thr
 
 Visit the [Open SGID GitHub repository](https://github.com/agrc/open-sgid) for more information, including the current database version, connection information, and known issues.
 
-Visit the [Open SGID connection page]({% link sgid/open-sgid/index.md %}) for examples on how to connect using a few of the more common applications.
+Visit the [Open SGID connection page](/documentation/sgid/open-sgid) for examples on how to connect using a few of the more common applications.

@@ -1,15 +1,15 @@
 ---
-title: 'The Geocoding Toolbox Is Being Deprecated'
+title: The Geocoding Toolbox Is Being Deprecated
 author:
   display_name: Scott Davis
   email: stdavis@utah.gov
-date: 2024-01-15 16:30:36
-categories:
-  - Featured
-  - Developer
+date: 2024-01-15T16:30:36.000Z
 tags:
   - geocoding
   - python
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 ## First, Some History
@@ -18,9 +18,9 @@ Back in 2014, we released a custom python toolbox for ArcGIS Desktop called the 
 
 ## What Are the Better Options?
 
-For those who are using Esri products including ArcGIS Pro and ArcGIS Online, our [Masquerade](https://github.com/agrc/masquerade) service will allow you to access our geocoding service without any downloaded software. This service enables you to geocode Utah addresses and search for features in our [Open SGID]({% link data/index.html %}) datasets. It can be used in the same way as any other locator. See the [project page](https://github.com/agrc/masquerade?tab=readme-ov-file#masquerade) for more details.
+For those who are using Esri products including ArcGIS Pro and ArcGIS Online, our [Masquerade](https://github.com/agrc/masquerade) service will allow you to access our geocoding service without any downloaded software. This service enables you to geocode Utah addresses and search for features in our [Open SGID](/products/sgid) datasets. It can be used in the same way as any other locator. See the [project page](https://github.com/agrc/masquerade?tab=readme-ov-file#masquerade) for more details.
 
-If you are not using Esri-products, our [API Client](https://github.com/agrc/api-client) is a great option. It is a small downloadable desktop application that requires no licensing. It is streamlined and easy to use. See the [introductory blog post]({% link _posts/2021-11-29-introducing-the-official-ugrc-api-client.md %}) for more details.
+If you are not using Esri-products, our [API Client](https://github.com/agrc/api-client) is a great option. It is a small downloadable desktop application that requires no licensing. It is streamlined and easy to use. See the [introductory blog post](/blog/2021-11-29-introducing-the-official-ugrc-api-client) for more details.
 
 ## What If I Still Want to Use the Toolbox?
 

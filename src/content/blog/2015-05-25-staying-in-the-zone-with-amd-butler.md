@@ -8,8 +8,9 @@ tags:
 date: 2015-05-25 17:01:31 -0600
 title: Staying in the Zone with AMD Butler
 published: false
-categories:
-  - Developer
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 [**Update(3/17/16)**: This plugin has been ported to an [Atom Editor](https://web.archive.org/web/20150524221559/https://atom.io/) package called [amdbutler](https://web.archive.org/web/20151220201733/https://atom.io/packages/amdbutler).]
@@ -39,9 +40,11 @@ categories:
 <li>Continue coding <a href="http://www.joelonsoftware.com/articles/fog0000000068.html">in the zone</a></li>
 </ol>
 <p>This is what it looks like:</p>
-<p><img src="https://github.com/agrc/AmdButler/raw/master/docs/butler_add.gif" loading="lazy" /></p>
+
+<img src="https://github.com/agrc/AmdButler/raw/master/docs/butler_add.gif" loading="lazy" />
+
 <p>
-AMD Butler dynamically crawls your existing modules and builds a quick list. It only takes a few keystrokes to find the correct one and then it automatically adds it to your list of dependencies with an appropriate associated factory function argument. All without affecting the position of your cursor. This is especially nice to use after <a href="{% link _posts/2014-09-22-grunt-esri-slurp.md %}">slurping ESRI JS modules</a>. No more scrolling, no more trying to remember module names or preferred argument aliases. Just quickly add a dependency and get back to what you were doing.</p>
+AMD Butler dynamically crawls your existing modules and builds a quick list. It only takes a few keystrokes to find the correct one and then it automatically adds it to your list of dependencies with an appropriate associated factory function argument. All without affecting the position of your cursor. This is especially nice to use after <a href="/blog/2014-09-22-grunt-esri-slurp">slurping ESRI JS modules</a>. No more scrolling, no more trying to remember module names or preferred argument aliases. Just quickly add a dependency and get back to what you were doing.</p>
 <p>
 There's also commands for <a href="https://github.com/agrc/AmdButler#amd-butler-sort-imports">sorting</a>, <a href="https://github.com/agrc/AmdButler#amd-butler-remove-import">removing</a> and <a href="https://github.com/agrc/AmdButler#amd-butler-prune-unused-imports">pruning</a> unused dependencies.</p>
 <p>

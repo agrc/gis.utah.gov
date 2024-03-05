@@ -8,8 +8,9 @@ tags:
 date: 2014-12-16 11:44:49 -0700
 title: Updates to Municipal Boundaries for the State of Utah, December 2014
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Updates were made recently to the SGID10.BOUNDARIES.Municipalities feature classes that reside on the Utah SGID ArcSDE database server.

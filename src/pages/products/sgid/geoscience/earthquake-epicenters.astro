@@ -1,0 +1,82 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Earthquake Epicenters 1850 to 2016',
+  description: `Epicenters, the area directly above the center, of earthquakes in Utah.`,
+  stewards: ['Utah Geological Survey (UGS)'],
+  type: ProductType.POINT,
+  category: SgidCategory.GEOSCIENCE,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`November 2017`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The data contains earthquake origin time, location, and size for the Utah region. This dataset represents the
+      modern epicenters of earthquakes in Utah from 1850 to 2016.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are
+      no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to:
+      Utah Geological Survey, State of Utah, SGID. Earthquake epicenters were created and are maintained by the Utah
+      Geological Survey.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Utah Earthquake Information"
+        href="https://geology.utah.gov/hazards/earthquakes-faults/utah-earthquakes/"
+        >UGS - Utah earthquake information.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah Geological Survey" href="https://geology.utah.gov/"
+        >Utah Geological Survey website.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Geoscience" href="/products/sgid/geoscience" style="secondary"
+        >Geoscience page</CardWithSmallLink
+      >
+      <CardWithSmallLink title="UGS hazard map" href="https://geology.utah.gov/apps/hazards/" style="secondary"
+        >A compilation of data from the Utah Geologic Hazards Database, containing post-2008 UGS geologic hazard map
+        data and data from other sources for parts of Utah.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

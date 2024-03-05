@@ -9,7 +9,7 @@ categories:
   - Tutorial
 ---
 
-The Utah GIS community accomplishes great things when working together. The [UGIC Conference](https://ugic.org/), the many [GIS User Groups]({% link about/organizations/user-groups/index.md %}), and datasets like Statewide [Address Points]({% link data/location/address-data/index.html %}) are some examples of the community working together to create meaningful products. This website is no different; contributions to gis.utah.gov are welcome and encouraged!
+The Utah GIS community accomplishes great things when working together. The [UGIC Conference](https://ugic.org/), the many [GIS User Groups](/collaboration/community/user-groups), and datasets like Statewide [Address Points](/products/sgid/address) are some examples of the community working together to create meaningful products. This website is no different; contributions to gis.utah.gov are welcome and encouraged!
 
 <div style="position:relative;left:50%;margin-left:-320px">
     <iframe src="https://player.vimeo.com/video/163472161" width="640" height="537" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -20,7 +20,7 @@ The Utah GIS community accomplishes great things when working together. The [UGI
 
 #### Modifying Existing content
 
-We have a great article that describes two methods for [editing existing content]({% link about/contributing/edit-existing/index.md %}) on the gis.utah.gov website.
+We have a great article that describes two methods for [editing existing content](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) on the gis.utah.gov website.
 
 #### Creating New Content
 

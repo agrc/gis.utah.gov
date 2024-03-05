@@ -11,15 +11,15 @@ date: 2011-06-30 23:18:14 -0600
 <div class="pull-right" markdown="1">
 #### Quick Links
 
-- [UGRC Contacts]({% link about/contact/index.html %})
-- [UGRC Mission]({% link about/mission/index.md %})
-- [GIS-related Utah Statute]({% link about/code/index.html %})
-- [UGRC Policies]({% link about/policy/index.md %})
+- [UGRC Contacts](/contact)
+- [UGRC Mission](/about)
+- [GIS-related Utah Statute](/about/code)
+- [UGRC Policies](/documentation/policy)
 - [UGRC Staff Presentations](https://agrc.github.io/Presentations)
 - [Utah GIS Resources]({% link training/index.html %})
-- [UGRC Media Resources]({% link about/media/index.md %})
-- [UGRC Directions and Parking]({% link about/visiting-agrc/index.html %})
-- [Contributing to this website]({% link about/contributing/index.md %})
+- [UGRC Media Resources](/about/media)
+- [UGRC Directions and Parking](/contact/visiting)
+- [Contributing to this website](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)
 {: .dotless }
 
 </div>
@@ -28,11 +28,11 @@ date: 2011-06-30 23:18:14 -0600
 
 {: .text-left }
 
-The Utah Geospatial Resource Center (UGRC) is the State of Utah’s map technology coordination office. UGRC staff ([directory/contacts]({% link about/contact/index.html %})) have knowledge of and experience with geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state. Since 1984, we have been [encouraging and facilitating](https://storymaps.arcgis.com/stories/8be2e6de2abf442eb72f5faa8a32dd2b) the effective use of geospatial information and technology for Utah. Read more about how we aim to continue this mission in our [strategic plan](https://drive.google.com/a/utah.gov/uc?id=1fMCCpjSbjKrHBIPuMiagakcmBBD61F9d&export=download), last updated in 2020.
+The Utah Geospatial Resource Center (UGRC) is the State of Utah’s map technology coordination office. UGRC staff ([directory/contacts](/contact)) have knowledge of and experience with geographic information system (GIS) desktop software, hosted map- and web-services, mapping data resources, and GIS professionals and their activities around the state. Since 1984, we have been [encouraging and facilitating](https://storymaps.arcgis.com/stories/8be2e6de2abf442eb72f5faa8a32dd2b) the effective use of geospatial information and technology for Utah. Read more about how we aim to continue this mission in our [strategic plan](https://drive.google.com/a/utah.gov/uc?id=1fMCCpjSbjKrHBIPuMiagakcmBBD61F9d&export=download), last updated in 2020.
 
-We are located on the 4th floor of the Taylorsville State Office building. You can follow these ([directions to find parking]({% link about/visiting-agrc/index.html %})). UGRC is within the [Division of Technology Services](https://dts.utah.gov/) within the [Department of Government Operations](https://govops.utah.gov/).
+We are located on the 4th floor of the Taylorsville State Office building. You can follow these ([directions to find parking](/contact/visiting)). UGRC is within the [Division of Technology Services](https://dts.utah.gov/) within the [Department of Government Operations](https://govops.utah.gov/).
 
-UGRC is directed under [mapping-related sections of Utah statute]({% link about/code/index.html %}) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
+UGRC is directed under [mapping-related sections of Utah statute](/about/code) to coordinate GIS resources within state government including the management of the State Geographic Information Database (SGID) and the operation of [The Utah Reference Network for Global Positioning Systems (TURNGPS)](http://turngps.utah.gov) that provides high precision correction services for surveying, mapping, and machine control.
 
 UGRC was one of the first geospatial information offices in the country, established a few years before its formal adoption in code in 1984. After many years, our storefront remains located at the intersection of geography, technology, and the quest for enterprise-wide efficiency.
 
@@ -47,31 +47,31 @@ UGRC is funded through a combination of State general and restricted funds and c
 
 <div class="grid" markdown="1">
   <div class="grid__col grid__col--1-of-2" markdown="1">
-- [Utah’s State Geographic Information Database]({% link data/index.html %})
-- [Address Geocoding Services]({% link data/address-geocoders-locators/index.html %})
-- [Aerial Photography]({% link data/aerial-photography/index.html %})
-- [Base Maps Web Services]({% link data/base-map-and-imagery/index.md %})
+- [Utah’s State Geographic Information Database](/products/sgid)
+- [Address Geocoding Services](/products/sgid/address)
+- [Aerial Photography](/products/sgid/aerial-photography)
+- [Base Maps Web Services](/products/base-maps)
 - Broadband Mapping Support
 - [Cartwheels]({% link images/Cartwheel.jpg %})
 - Custom Cartography
-- [Custom Web Map Apps]({% link developer/index.md %})
+- [Custom Web Map Apps](/solutions/for-application-developers)
 - Data Acquisition Partnerships & Contracting
-- [GIS Coordination Newsletter]({% link ugrc-newsletter/index.md %})
-- [gis.utah.gov website]({% link _posts/2016-03-25-about-our-new-v6-website-in-ghpages.md %})
+- [GIS Coordination Newsletter](/contact)
+- [gis.utah.gov website](/blog/2016-03-25-about-our-new-v6-website-in-ghpages)
 {: .dotless .no-padding }
 </div>
 <div class="grid__col grid__col--1-of-2" markdown="1">
-- [Google Imagery License]({% link discover/index.html %})
-- [Lidar Elevation Models]({% link data/elevation-and-terrain/index.html %})
+- [Google Imagery License](/products/discover)
+- [Lidar Elevation Models](/products/sgid/elevation)
 - Location Analytics
-- [911 Map Data Support]( {% link about/gis-for-911/index.html %} )
+- [911 Map Data Support]( /products/sgid/911)
 - [Municipal](https://municert.utah.gov), Voting, and other Civic Boundaries
 - [Public Land Survey System](https://plss.utah.gov)
 - Spatial Database Design, Integration and Hosting
-- [Statewide Address Point Aggregation]({% link data/location/address-data/index.html %})
-- [Statewide Road Centerline Aggregation]({% link data/transportation/roads-system/index.html %})
+- [Statewide Address Point Aggregation](/products/sgid/address)
+- [Statewide Road Centerline Aggregation](/products/sgid/transportation/road-centerlines)
 - Statewide GIS Strategic & Business Plans
-- [TURN GPS sub-centimeter precision]({% link data/cadastre/turn-gps/index.md %})
+- [TURN GPS sub-centimeter precision](/products/sgid/cadastre/turn-gps)
 {: .dotless .no-padding }
 </div>
 
@@ -81,7 +81,7 @@ UGRC is funded through a combination of State general and restricted funds and c
   <div class="grid__col grid__col--1-of-1" markdown="1">
 ### Statewide
 
-- [Utah Geographic Information Systems Advisory Council (GISAC)]({% link about/gisac/index.md %})
+- [Utah Geographic Information Systems Advisory Council (GISAC)](/collaboration/)
   - GISAC is composed of individuals from many state agencies all working together to further the cause of GIS in Utah. UGRC is trying to create a forum in which all levels of GIS expertise can mingle, learn from each other, and learn of each other's challenges. GISAC also sends recommendations to the CIO as potential rules or recommendations that would enhance GIS coordination and cooperation throughout Utah.
   {: .dotless }
 - [Utah Geographic Information Council (UGIC)](https://ugic.org)
@@ -96,7 +96,7 @@ UGRC is funded through a combination of State general and restricted funds and c
 - [Salt Lake User Group (SLUG)](http://www.slug-gis.info/)
   - SLUG brings together GIS practitioners in the core of the urbanized Wasatch Front with interesting presentations and discussions about GIS.
   {: .dotless }
-- [Other local level GIS User Group info]({% link about/organizations/user-groups/index.md %})
+- [Other local level GIS User Group info](/collaboration/community/user-groups)
 {: .dotless }
   </div>
   <div class="grid__col grid__col--1-of-2" markdown="1">
@@ -116,7 +116,7 @@ UGRC is funded through a combination of State general and restricted funds and c
 - [Utah Geographic Information Council Annual Conference (UGIC)](https://ugic.org)
   - The UGIC Conference is the premiere Utah GIS conference. It is a great way to meet local GIS professionals and stay current on what is happening with GIS trends.
   {: .dotless }
-- [Annual UGIC Maps on the Hill (MOTH)]({% link about/maps-on-the-hill/index.md %})
+- [Annual UGIC Maps on the Hill (MOTH)](/collaboration/events/maps-on-the-hill)
   - MOTH is an excellent opportunity for students and professionals to share maps, mapping tools, and mapping projects with elected officials, fellow practitioners, and the public.
   {: .dotless }
 - GIS Day

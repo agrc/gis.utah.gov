@@ -9,8 +9,9 @@ tags:
 date: 2013-04-16 17:19:14 -0600
 title: SGID Schools Update 4/16/2013
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Updates were made recently to the SGID10.Society.Schools feature class that resides on the Utah SGID ArcSDE database server.

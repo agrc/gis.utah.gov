@@ -8,13 +8,14 @@ tags:
 date: 2014-04-02 13:37:46 -0600
 title: New updates to Municipal Boundaries layers
 published: false
-categories:
-  - SGID Blog
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 <p>Updates were made recently to the<br />
-<a href="{% link data/boundaries/citycountystate/index.html %}">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />
-<a href="{% link sgid/open-sgid/index.md %}">Utah SGID ArcSDE database server</a>.</p>
+<a href="/products/sgid/boundaries/municipal">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />
+<a href="/documentation/sgid/open-sgid">Utah SGID ArcSDE database server</a>.</p>
 <p>The following highlights what has been updated through April 1, 2014:</p>
 <p><span style="text-decoration: underline;">Municipalities Updates:</span></p>
 <ul>

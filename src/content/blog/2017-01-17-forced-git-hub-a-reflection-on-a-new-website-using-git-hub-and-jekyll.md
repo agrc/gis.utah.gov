@@ -3,13 +3,14 @@ author:
   display_name: Steve Gourley
   email: SGourley@utah.gov
 tags: []
-date: 2017-01-17 19:19:39
+date: 2017-01-17T19:19:39.000Z
 title: Forced GitHub; A reflection on a new website using GitHub and Jekyll
-categories:
-  - Developer
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
-The first commit to our [version 6]({% link _posts/2016-03-25-about-our-new-v6-website-in-ghpages.md %}) website was one year and eight months ago on May 26, 2015. We went live with the v6.0 on March 25, **2016**. Between that first commit and launch, we started an internal campaign to familiarize a technical staff of ~15 to contribute to a [jekyll](https://jekyllrb.com/) [static website](https://en.wikipedia.org/wiki/Static_web_page) hosted by [GitHub Pages](https://pages.github.com/). The following are some reflections on what to expect if you are thinking of forcing the adoption of GitHub upon a staff mixed with developers and analysts.
+The first commit to our [version 6](/blog/2016-03-25-about-our-new-v6-website-in-ghpages) website was one year and eight months ago on May 26, 2015. We went live with the v6.0 on March 25, **2016**. Between that first commit and launch, we started an internal campaign to familiarize a technical staff of ~15 to contribute to a [jekyll](https://jekyllrb.com/) [static website](https://en.wikipedia.org/wiki/Static_web_page) hosted by [GitHub Pages](https://pages.github.com/). The following are some reflections on what to expect if you are thinking of forcing the adoption of GitHub upon a staff mixed with developers and analysts.
 
 ### Character Building
 
@@ -39,7 +40,7 @@ There are big initiatives with the web moving towards https. At the time of this
 
 ### Success
 
-After about eight months of editing old content and creating new content, every staff member has successfully edited our website. Everyone has their notes and instructions on how to be successful and almost no two workflows are completely alike. You can write up [multiple ways]({% link about/contributing/index.md %}) to [create and edit content]({% link about/contributing/edit-existing/index.md %}) and it will differ from your coworker. The GitHub flow introduced having a core group of contributors to look over content. Only these people have the access to accept pull requests. This was the first website with a review process and it has been very useful. Gone are the days of no pre-release content reviews. The organization and quality of our content has greatly increased.
+After about eight months of editing old content and creating new content, every staff member has successfully edited our website. Everyone has their notes and instructions on how to be successful and almost no two workflows are completely alike. You can write up [multiple ways](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) to [create and edit content](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) and it will differ from your coworker. The GitHub flow introduced having a core group of contributors to look over content. Only these people have the access to accept pull requests. This was the first website with a review process and it has been very useful. Gone are the days of no pre-release content reviews. The organization and quality of our content has greatly increased.
 
 ### Engagement
 

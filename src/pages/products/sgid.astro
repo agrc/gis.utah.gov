@@ -36,14 +36,26 @@ import sgidOpenDataPhoto from '@images/sgid/sgid-opendata.svg';
           places depending on their type, availability, and popularity.
         </CardWithTopImage>
         <CardWithTopImage title="Data Categories" actionText="Browse our data" actionUrl="/products/sgid/categories">
-          <Image slot="image" src={openSgidPhoto} alt="a person connected to a database" class="block h-44" />
+          <Image
+            slot="image"
+            loading="eager"
+            src={openSgidPhoto}
+            alt="a person connected to a database"
+            class="block h-44"
+          />
           SGID data is organized into 27 categories to help you find the data you need. e.g. boundaries, cadastre, elevation
           and terrain, and water to name a few. Within the Open SGID, these are schemas. In the SGID on ArcGIS they are groups.
           Each category contains datasets that relate to the parent category. This organization helps you discover the data
           you need and related datasets you might not have known about for your projects or learning.
         </CardWithTopImage>
         <CardWithTopImage title="SGID Index" actionText="Search the index" actionUrl="/products/sgid-index">
-          <Image slot="image" src={sgidIndexPhoto} alt="a person using a search engine" class="block h-44" />
+          <Image
+            slot="image"
+            loading="eager"
+            src={sgidIndexPhoto}
+            alt="a person using a search engine"
+            class="block h-44"
+          />
           The SGID Index is <span class="font-bold">the primary source</span> of information for SGID datasets. It includes
           links to detailed information pages about UGRC-maintained datasets as well as direct links to the authoritative
           sources for datasets served by other state agencies. The index lists the resource's category, name, and primary

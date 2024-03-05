@@ -40,6 +40,9 @@ const hasImage = await Astro.slots.render('image');
   {
     title && titlePosition === 'center' && (
       <SectionTitle title={title} subTitle={subTitle} titlePosition={titlePosition}>
+        <Fragment slot="sub-title">
+          <slot name="sub-title" />
+        </Fragment>
         <slot name="quick-links" />
       </SectionTitle>
     )
@@ -54,7 +57,9 @@ const hasImage = await Astro.slots.render('image');
       <div class="flex flex-1 flex-col gap-6 self-center">
         {
           title && titlePosition === 'inline' && (
-            <SectionTitle title={title} subTitle={subTitle} titlePosition={titlePosition} />
+            <SectionTitle title={title} subTitle={subTitle} titlePosition={titlePosition}>
+              <slot name="sub-title" />
+            </SectionTitle>
           )
         }
         <slot />
@@ -70,7 +75,12 @@ const hasImage = await Astro.slots.render('image');
       </div>
       {
         hasImage?.length && (
-          <div class:list={['flex items-start justify-center', stripe ? 'order-first' : 'order-first lg:order-last']}>
+          <div
+            class:list={[
+              'flex flex-wrap items-start justify-center gap-4',
+              stripe ? 'order-first' : 'order-first lg:order-last',
+            ]}
+          >
             <slot name="image" />
           </div>
         )

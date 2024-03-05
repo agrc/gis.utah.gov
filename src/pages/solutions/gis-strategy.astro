@@ -1,0 +1,56 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+import { Image } from 'astro:assets';
+
+import developmentPhoto from '@images/solutions/development.svg';
+import enhancePhoto from '@images/solutions/enhance.svg';
+import rocketPhoto from '@images/solutions/rocket.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'GIS strategy',
+  pillar: 'Solutions',
+  section: stripeSections([{ title: 'What is GIS strategy' }, { title: 'Is your data ready' }, { title: 'Our plan' }]),
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      slot="image"
+      src={developmentPhoto}
+      loading="eager"
+      alt="a person with a prototype on an easel and the app partially built on a phone"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+
+    <p>
+      We feel the best time to develop a strategy for incorporating GIS into the business is at the inception. Having
+      some clear goals and expectations will help in right sizing the investment in GIS. You don't need to see into the
+      distant future, however you should have some agency goals that you are trying to achieve and how GIS can help. If
+      you are unsure how GIS can help get in touch with us and we can help you develop your ideas.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
+    <p>
+      Does your data contain a street address, a ZIP code, or something that could be considered a location or boundary?
+      If so then enhancing that spatial relationship to be suitable for analysis is one small step.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <Image
+      slot="image"
+      src={enhancePhoto}
+      alt="a person with a box labeled v2 that is upgrading their application"
+      class="w-full max-w-[400px]"
+    />
+    <p>As an example, here is the past two UGRC strategic plans. We are due to commence work on one for our future.</p>
+  </Section>
+</Layout>

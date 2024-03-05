@@ -1,0 +1,70 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+import { Image } from 'astro:assets';
+
+import developmentPhoto from '@images/solutions/development.svg';
+import rocketPhoto from '@images/solutions/rocket.svg';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'High precision location',
+  section: stripeSections([
+    { title: 'Integrate' },
+    { title: 'Find the location link' },
+    { title: 'Monitoring' },
+    { title: 'Examples' },
+  ]),
+};
+---
+
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      slot="image"
+      src={developmentPhoto}
+      loading="eager"
+      alt="a person with a prototype on an easel and the app partially built on a phone"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+
+    <p>
+      Government interactions with citizens are commonly based on location and a service boundary. GIS helps to make
+      that connection between the service data and a location.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
+    <p>
+      Does your data contain and street address, a ZIP code, or something that could be considered a location or
+      boundary? If so then enhancing that spatial relationship to be suitable for analysis in just a small step.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <p>Maybe a few example will help you find your data's location link.</p>
+    <BulletedList>
+      <li>
+        <ExternalLink href="https://le.utah.gov/GIS/findDistrict.jsp"
+          >Discover your elected officials based on your address</ExternalLink
+        >.
+      </li>
+      <li>
+        <ExternalLink href="https://enviro.deq.utah.gov/"
+          >Provide transparency regarding environmental hazards</ExternalLink
+        >.
+      </li>
+      <li>
+        <ExternalLink href="https://wri.utah.gov/"
+          >Aid in the decision making process to restore and manage ecosystems in priority areas across Utah</ExternalLink
+        >.
+      </li>
+    </BulletedList>
+  </Section>
+</Layout>

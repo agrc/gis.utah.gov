@@ -15,12 +15,12 @@ categories: []
 {% include fa_icon.html plane=true class="svg-inline--fa fa-w-18 fa-fw" %} Discover Server
 </h2>
 
-Discover provides high-performance imagery and base maps services in WMS and WMTS formats. For information about the services and directions to sign up, please see the main [Discover]({% link discover/index.html %}) page.
+Discover provides high-performance imagery and base maps services in WMS and WMTS formats. For information about the services and directions to sign up, please see the main [Discover](/products/discover) page.
 
-- For imagery downloads visit the [aerial photography data page]({% link data/aerial-photography/index.html %}).
+- For imagery downloads visit the [aerial photography data page](/products/sgid/aerial-photography).
 - Instructions on how to [use the Discover services in Pro/ArcMap](#adding-a-wmts-or-wms-service-to-esri-products).
 - Instructions on how to [use the Discover services in CAD](#adding-a-wms-service-to-cad).
-- Instructions on how to [use the Discover services in Web Maps]({% link developer/base-maps/discover/index.md %}).
+- Instructions on how to [use the Discover services in Web Maps](/documentation/discover/clients).
 
 ### Coordinate System and Datum
 {: .text-left}
@@ -44,20 +44,20 @@ The pre-2018 `NAIP` layers have a stated horizontal positional accuracy of 5 met
 **ArcGIS Pro 2.x & 3.x:**
 
 1. `Insert -> Connections -> New WMTS Server`
-1. Paste the `WMTS` link [you have been provided]({% link discover/index.html %}#connect "view Discover sign up information") into the `Server URL:` line and click `OK`
+1. Paste the `WMTS` link [you have been provided](/products/discover"view Discover sign up information") into the `Server URL:` line and click `OK`
 1. Navigate to the newly added `utah imagery - WMTS on discover.agrc.utah.gov.wmts` connection under `Servers` in the Catalog window.
-1. Expand the nodes until you see a list of all of the imagery and base map services that are available to your login. The full list can be viewed on the main [Discover]({% link discover/index.html %}#services) page.
+1. Expand the nodes until you see a list of all of the imagery and base map services that are available to your login. The full list can be viewed on the main [Discover](/products/discover) page.
 1. Add your desired service to your map like you would any other layer.
 
 **ArcMap 10.x**
 
 1. `Add Data`, select `GIS Server` from the `Look in:` dropdown list, and double-click `Add WMTS server`
-1. Paste the `WMTS` link [you have been provided]({% link discover/index.html %}#connect "view Discover sign up information") into the `URL:` line and click `OK` (don't worry about Parameters, Server Layers, or Username/Password)
+1. Paste the `WMTS` link [you have been provided](/products/discover"view Discover sign up information") into the `URL:` line and click `OK` (don't worry about Parameters, Server Layers, or Username/Password)
 1. Navigate to the newly added `utah imagery – WMTS on discover.agrc.utah.gov` connection and **double click** to connect.
 
    - You can rename the connection after it has been added
 
-1. Expand the nodes until you see a list of all of the imagery and base map services that are available to your login. The list can be viewed on the main [Discover]({% link discover/index.html %}#services) page.
+1. Expand the nodes until you see a list of all of the imagery and base map services that are available to your login. The list can be viewed on the main [Discover](/products/discover) page.
 1. Add your desired service to your map like you would any other layer.
 
 ### Adding a WMTS or WMS Service to a Web Map
@@ -65,7 +65,7 @@ The pre-2018 `NAIP` layers have a stated horizontal positional accuracy of 5 met
 
 {%capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.discover text='send an email to' hide-punctuation=true %}{% endcapture %}
 
-Interested in using UGRC's Web Mercator services in your web maps? Take a look at [this page]({% link developer/base-maps/discover/index.md %}) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-word link**. To do this {{ contact }} and provide your web map URL domains.
+Interested in using UGRC's Web Mercator services in your web maps? Take a look at [this page](/documentation/discover/clients) for more information. **Remember, if the web map is going to be public facing you need to request a separate quad-word link**. To do this {{ contact }} and provide your web map URL domains.
 
 ### Adding a WMS Service to CAD
 {: .text-left}
@@ -78,12 +78,12 @@ Interested in using UGRC's Web Mercator services in your web maps? Take a look a
 
 1. Add a new "WMS/WMTS" connection and paste in the URL to the discover WMTS service.
 
-Read this [blog post]({% link _posts/2015-01-20-how-to-use-agrc-base-maps-in-qgis.md %}) for more details.
+Read this [blog post](/blog/2015-01-20-how-to-use-agrc-base-maps-in-qgis) for more details.
 
 ### Printing Web Maps with Discover Services
 {: .text-left}
 
-Take a look at this blog post for information about [Printing Web Maps with Discover Services]({% link _posts/2017-02-02-printing-web-maps-with-discover-services.md %}).
+Take a look at this blog post for information about [Printing Web Maps with Discover Services](/blog/2017-02-02-printing-web-maps-with-discover-services).
 
 ### Google Archive Services
 {: .text-left}
@@ -141,7 +141,7 @@ Individual organizations will be provided URL links for the Discover services th
   - ![white on black]({% link images/ImageryCGoogle_WhiteOnBlack.png %}){: loading="lazy" }
   {: .dotless}
 
-For products that use the UGRC-produced basemaps, please include a short attribution that complies with the main [UGRC Data License and Disclaimer]({% link about/policy/license-disclaimer/index.md %}) guidelines.
+For products that use the UGRC-produced basemaps, please include a short attribution that complies with the main [UGRC Data License and Disclaimer](/documentation/policy/license-disclaimer) guidelines.
 
 ### Requests for On-Premise Use
 {: .text-left}

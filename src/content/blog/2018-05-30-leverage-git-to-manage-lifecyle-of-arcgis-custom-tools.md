@@ -1,50 +1,46 @@
 ---
-title: 'Leveraging Git and GitHub to Manage the Lifecycle of Custom ArcGIS Tools'
+title: Leveraging Git and GitHub to Manage the Lifecycle of Custom ArcGIS Tools
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2018-05-30 12:01:59
-categories:
-  - Developer
+date: 2018-05-30T12:01:59.000Z
 tags:
   - git
   - github
   - custom-tools
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 As GIS developers, we are often expected to provide the same custom tool for multiple versions of ArcGIS Desktop (or ArcGIS Pro). For example, some users are on Desktop 10.4, while others are on 10.6 (or Pro 1.4 and 2.1). Yet, each group of users requires the same custom functionality. In this common scenario, you may find yourself maintaining multiple versions of the code in order to compile the required SDK dependencies for the specific ArcGIS versions. Though, more often than not, our custom tool&mdash;regardless of the SDK version&mdash;depends on the same interfaces. Because of this, we can leverage Git and GitHub to maintain a single universal code base for all versions of tool(s). The key is to understand the APIs that you are working with.
 
 ### Know the APIs
 
-{: #know-the-apis .text-left}
 The ArcObjects Desktop APIs are relatively stable and the interfaces do not change. When additional functionality is warranted, ESRI creates a new interface with the same name but with an appended incrementing number. For example, over the years the IEditor interface has expanded to add additional functionality, yet IEditor remains unchanged. To take advantage of this new functionality, you would use IEditor2 or IEditor3 (if it's available in the SDK you're working with). The benefit of this model is that IEditor is the same whether you're using the Desktop 9.2 SDK or 10.6 SDK. In terms of managing universal source code, this is great. The downside is that it makes the ArcObjects Desktop API a bit verbose and messy to navigate with all the variations of interfaces. But, if you know the APIs for the versions you're working with, your code is extremely reusable.
 
 Things are a bit different on the ArcGIS Pro platform. With the Pro SDK, the API can change with the release of a major version (from Pro 1.x to Pro 2.x), potentially resulting in breaking changes to your code. Though, if you're developing tools using the standard extensions and interfaces (e.g., editing, geoprocessing, etc.), I don't see this being an issue for code reusability. Again, knowing the APIs for the versions you are working with is key to allowing you to maintain universal source code. A good starting point is to always read the release notes for each [major version](https://pro.arcgis.com/en/pro-app/get-started/release-notes.htm).
 
 ### Dealing with the SDK Dependencies
 
-{: #sdk-dependencies .text-left}
 Because of Microsoft .NET specific version dependencies, we are required to build and compile our code/tools on the platform we will deploy on. As developers, we typically build a development machine (often a virtual machine) that matches the end-user's. If you are supporting tools for both ArcGIS Desktop 10.4 and 10.5, you most likely have two development machines: one with the 10.4 SDK and one with the 10.5 SDK installed. Additionally, if you're exploring your tool on 10.6, you would build a development machine and install the ArcGIS Desktop 10.6 SDK. You get the picture.
 
 Let's assume your tool is built and successfully deployed on Desktop 10.4. Great . . . except a few users just upgraded to Desktop 10.5 and they now want your custom tool. So, you build a development environment for the 10.5 SDK. Now what? The temptation is to create a new Visual Studio Solution for the 10.5 tool by copying over the 10.4 code. You would then re-point the API library references to the 10.5 SDK, recompile the project, and then finally deploy the tool on the end-user's 10.5 machine. A little cumbersome, but somewhat manageable. Complications arise, though, when you need to make modifications. Let's say, you fix a bug or make an improvement for a user who is using the ArcGIS 10.4 version of the tool. Currently, you might log on to the 10.4 development machine and update the code, recompile it, and redeploy on the 10.4 user's machine. Done! Oh, but, wait . . . the 10.5 user wants the improved functionality too. So, you now log in to the 10.5 development machine and modify the code there as well, right? Again, tempting . . . but, stop right there. I'd like to propose a more effective approach. Here's where Git and GitHub come into play.
 
 ### Git (The Local Repository)
 
-{: .text-left}
 Git is an open-source version-control system that has been around since 2005. It was developed by Linus Torvalds, the creator of the Linux kernel. Git was developed to track changes in computer files, but it's typically used by developers to track changes in their source code. When you initialize Git within a local directory, that directory becomes a code repository with complete file tracking. Combine this with a remote repository, such as GitHub, and some basic Git commands to maintain your local repository, and you're suddenly maintaining a single code base for all versions of your tool.
 
 In addition to code efficiency, Git will give you full version control and the ability to revert to a previous snapshot of your code. Another powerful feature of Git is the ability to branch your code. This is useful when exploring new functionality with your tools, but you might not want to commit these code changes to the stable version of your tool. In this situation, you would create a branch and then do your code testing on that branch. If you choose to incorporate this new functionality into your tool, you can merge this branch with your main branch. The stable, main branch is typically known as the _master_ branch.
 
 ### GitHub (The Remote Repository)
 
-{: .text-left}
 Git will help you manage your local repository, and GitHub will assist with your remote (i.e., cloud-based) repository. The benefit of GitHub is that it allows others to discover and contribute to your code, while also giving you the ability to move your code between development environments (i.e., SDK versions), and providing the comfort of knowing your code is safely backed up in the cloud.
 
 GitHub also makes working with others and collaborating on projects much easier. The GitHub repository acts as a central repository where all transactions are moderated. This central repository approach allows all developers to be working with the latest version of the code. You'll want to read more about Git downstream and upstream before you implement a collaborative workflow.
 
 ### Putting It All Together
 
-{: .text-left}
 So, let's see how this looks in action. Assuming you have a development machine built with the appropriate SDK, the only additional prerequisites are that you:
 
 1. [install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your development machine, and
@@ -59,14 +55,12 @@ A final setup note for this workflow is that you will want the local repository 
 
 ### The End Is Near
 
-{: .text-left}
 Congratulations, you've made it through an insanely long blog post! If nothing else, I hope that you were inspired to learn more about Git and GitHub and how they can enhance your development workflows. I guarantee that the time you spend learning it will be time well spent. Over the lifecycle of your custom ArcGIS tools, incorporating Git and Github will not only save you lots of time, but also tons of aggravation, when making code modifications or upgrading to newer SDK versions.
 
 Lastly, if you're not ready to dive in with your live code, then I would highly encourage you to play around with test data. Keep it simple at first. Create a local repository containing a few text files and then create a GitHub repo to push and pull changes back and forth. Watch the changes as they happen live in the local directory and the remote repository. This will get you comfortable and give you some confidence. *Git*ty-up!
 
 ### Git Cheatsheet
 
-{: #git-cheatsheet .text-left}
 You will need to know a few common Git commands to manage your versions and keep all your code in sync. There are many great [Git tutorials](https://git-scm.com/book/en/v2) and references available online, but here I'll highlight the basic commands that you will need in order to adopt the workflow presented in this blog post.
 
 Git commands are executed using the command line. On Windows, I recommend Git Bash for executing commands and if you've installed Git for Windows it should have been included. You can also use Powershell or the Command Prompt (or Terminal on Mac).
@@ -141,5 +135,4 @@ Git commands are executed using the command line. On Windows, I recommend Git Ba
 
 ### Post Note
 
-{: .text-left}
 If your ArcGIS Desktop custom tools are based on the Extending ArcObjects model (and not the Add-Ins model), you're most likely using .msi install files to deploy your tools. If so, email me and we can chat about how I maintain these install packages in this workflow. The Add-In model is a bit simpler, as you don't need to generate install packages. ArcGIS Pro only supports the Add-In model, but Desktop supports both models.

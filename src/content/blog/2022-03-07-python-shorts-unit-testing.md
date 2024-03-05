@@ -3,12 +3,12 @@ title: 'Python Shorts: The Benefits of Unit Testing'
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
-date: 2022-03-07 16:00:00
-categories:
-  - Featured
-  - Developer
+date: 2022-03-07T16:00:00.000Z
 tags:
   - python
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 In the realm of programming, "unit testing" is an automated way of testing small, individual "units" of your code to ensure that when given a specific set of inputs they return a specific set of outputs in the way you expected them to.

@@ -1,0 +1,102 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Correctional Facilities',
+  description: `Jail and prison locations in Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`January 2023`, `June 2013`, `August 2011`],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Correctional facilities consists of any facility or location where individuals are regularly and lawfully detained
+      against their will. This includes Federal and State prisons, local jails, and juvenile detention facilities, as
+      well as law enforcement temporary holding facilities.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Fragment slot="description">
+    <h3>Definitions</h3>
+    <dl>
+      <DefinitionListItem title="Federal prison">
+        A facility operated by the Federal Bureau of Prisons for the incarceration of individuals.
+      </DefinitionListItem>
+
+      <DefinitionListItem title="State prison">
+        A facility operated by a state, commonwealth, or territory of the US for the incarceration of individuals for a
+        term usually longer than 1 year.
+      </DefinitionListItem>
+      <DefinitionListItem title="Juvenile detention facility">
+        A facility for the incarceration of those who have not yet reached the age of majority (usually 18 years).
+      </DefinitionListItem>
+
+      <DefinitionListItem title="Local jail">
+        A locally administered facility that holds inmates beyond arraignment (usually 72 hours) and is staffed by
+        municipal or county employees.
+      </DefinitionListItem>
+    </dl>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UDC" href="https://corrections.utah.gov/"
+        >Utah Department of Corrections.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Offender Search" href="https://corrections.utah.gov/offender-search/"
+        >Utah Department of Corrections offender search.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="Law Enforcement"
+        href="/products/sgid/society/law-enforcement-facilities"
+        style="secondary">Utah law enforcement facilities</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="PSAP"
+        href="/products/sgid/society/public-safety-answering-point-locations"
+        style="secondary">Public saftey answering point locations</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

@@ -1,15 +1,17 @@
 ---
-title: Taking a Closer Look at Election Results - Using GIS to Paint the Political Landscape
+title: Taking a Closer Look at Election Results - Using GIS to Paint the
+  Political Landscape
 author:
   display_name: Greg Bunce
   email: gbunce@utah.gov
-date: 2020-12-29 10:01:46
-categories:
-  - Featured
+date: 2020-12-29T10:01:46.000Z
 tags:
   - gis
   - elections
   - maps
+category: Uncategorized
+cover_image: /src/images/pillar-blog/2020-12-29-mapping-election-results/pres_elec_2020_results.png
+cover_image_alt: 2020 Election Results
 ---
 
 You've probably heard the saying, there are many ways to peel an orange. Similarly, you've likely noticed, there are [many ways](https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html) to display election results. In this post, we'll take a closer look at how GIS can yield a clearer picture of the political landscape.
@@ -20,24 +22,16 @@ Many of the maps that we see on election night, or in the media afterward, over-
 
 ### Remove the uninhabited areas
 
-{: .text-left}
-
 In presidential elections, voting precincts are the lowest level of tabulation. Precincts primarily [cover all areas of the nation](https://www.nytimes.com/interactive/2018/upshot/election-2016-voting-precinct-maps.html) - whether inhabited or not. However, displaying results at the precinct level gives the impression that voters are evenly distributed across the landscape. Further confusing the viewer, precincts containing the fewest voters are often the largest in size - as they cover mountains and uninhabited areas. As a result, maps displayed at the precinct level often over-represent the vote count. A good example of this is in the surrounding areas of the Salt Lake Valley (Shown in Figure 1: Precinct Results). The large precinct in the northwest corner of the valley contains 27 registered voters. Likewise, one of the large precincts east of the valley, in the mountainous area, contains 15 registered voters. As you can see, when the results are mapped at the precinct level, these areas inflate the results.
 
 To get a more accurate view of our communities, we need to remove the uninhabited areas from the map. Essentially, we want to limit results to the areas where voters reside. In doing so, you’ll notice in Figure 1, two strikingly different views of the election.
 
 In the Voter Results map, our attention is drawn away from the industrial and natural areas, and the highway corridors and educational institutions, and drawn toward the residential areas. This creates a more accurate representation of the vote count.
 
-<div class="flex flex--around">
-  <figure class="caption">
-    <img class="caption__image" src="{% link images/pres_elec_2020_results.png %}" alt="2020 Election Results" loading="lazy" />
-    <figcaption class="caption__text">Figure 1: 2020 Presidential Election Results in Salt Lake County</figcaption>
-  </figure>
-</div>
+Figure 1: 2020 Presidential Election Results in Salt Lake County
+![2020 Election Results](../../images/pillar-blog/2020-12-29-mapping-election-results/pres_elec_2020_results.png)
 
 ### Display the percentage of votes
-
-{: .text-left}
 
 If we're trying to get a feel for the political landscape, then It's essential to see how the election was won. Displaying the winner is fundamental, but adding the percentage of win enriches the story. A close win tells a different story than that of a landslide. Presenting this information on the map helps paint a more telling story of our community.
 
@@ -45,12 +39,8 @@ Displaying quantitative spatial data is where GIS shines. There are a variety of
 
 You instantly notice that the Salt Lake Valley is polarized. But, with the addition of graduated colors, you also see that this polarization strengthens the further north or south you go. The downtown and university areas are in stark contrast to the newer, suburban neighborhoods in the south end of the valley.
 
-<div class="flex flex--around">
-  <figure class="caption">
-    <img class="caption__image" src="{% link images/pres_elec_2020_results_gradient.png %}" alt="2020 Election Results Winning Margin" loading="lazy" />
-    <figcaption class="caption__text">Figure 2: Symbolizing the Winning Margin</figcaption>
-  </figure>
-</div>
+Figure 2: Symbolizing the Winning Margin
+![2020 Election Results Winning Margin](../../images/pillar-blog/2020-12-29-mapping-election-results/pres_elec_2020_results_gradient.png)
 
 It’s no coincidence that maps have been used in elections for [more than a century](https://www.nationalgeographic.com/news/2016/10/united-states-election-map-history/). They’re the best medium for this type of data. However, as we’ve seen, maps can be misleading. Election geographies, such as voting precincts and counties, are not designed to represent the distribution of voters.
 
@@ -60,11 +50,9 @@ You can explore the maps from this post in the accompanying [interactive web map
 
 I encourage you to apply these techniques when mapping other population-based data such as demographic, economic, or housing data.
 
-Let's continue the conversation on [Twitter](https://twitter.com/bunce_greg) or email.
+Let's continue the conversation on [Twitter](https://twitter.com/bunce_greg) or email.
 
 ### Methodology
-
-{: .text-left}
 
 - [SGID Address Points](https://opendata.gis.utah.gov/datasets/utah-address-points) were used as a proxy for voter residences in Salt Lake County. Non-residential addresses were removed.
 - The 100-meter hexagons (polygons) were created from the address points using [Optimized Hot Spot Analysis](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/optimized-hot-spot-analysis.htm).

@@ -17,6 +17,7 @@ import Metadata from '@components/data/Metadata.astro';
 import { getGithubReleases } from '@utils/github';
 
 import { YouTube } from '@astro-community/astro-embed-youtube';
+import Alert from '@components/page/Alert.astro';
 
 const dateFormatter = Intl.DateTimeFormat('en-US', { dateStyle: 'full' });
 
@@ -57,7 +58,13 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Section title="Get the app" titlePosition="center" slot="downloads">
-    <DirectDownloads title="Install links" links={page.links!} />
+    <div class="flex justify-between gap-10">
+      <DirectDownloads title="Install links" links={page.links!} />
+      <Alert title="Tip"
+        >This application is evergreen - meaning it auto updates to the newest version. There is no need to download new
+        versions.</Alert
+      >
+    </div>
   </Section>
 
   <Fragment slot="summary">
@@ -129,16 +136,16 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/roads">
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/roads" style="secondary">
         The roads dataset that is used for geocoding
       </CardWithSmallLink>
-      <CardWithSmallLink title="Address Points" href="/products/sgid/address/address-points">
+      <CardWithSmallLink title="Address Points" href="/products/sgid/address/address-points" style="secondary">
         The address point dataset that is used for geocoding
       </CardWithSmallLink>
-      <CardWithSmallLink title="UGRC API GitHub" href="https://github.com/agrc/api-client">
+      <CardWithSmallLink title="UGRC API GitHub" href="https://github.com/agrc/api-client" style="secondary">
         The open source GitHub repository for the API Client. You may submit issues or enhancements on this website.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov">
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary">
         This web app is an example of using the UGRC API in a web application
       </CardWithSmallLink>
     </GridForYouMightLike>

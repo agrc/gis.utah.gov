@@ -1,16 +1,17 @@
 ---
-title: 'Greg Bunce on His Journey toward GIS and How He’s Still Learning'
+title: Greg Bunce on His Journey toward GIS and How He’s Still Learning
 published: false
 author:
   display_name: Anna Tribolet
   email: atribolet@utah.gov
-date: 2020-05-18 15:39:48
-categories:
-  - Featured
+date: 2020-05-18T15:39:48.000Z
 tags:
   - interview
   - road centerlines
   - agol
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 In this article, we’re trying something a little different. I normally only interview the new UGRC employees, and, even then, I just send them a list of questions and they provide answers. It’s more of a fill-in-the-blank situation than a comprehensive interview—a practical format, but not exactly in line with the more casual tone that I’ve come to appreciate about the UGRC office.
@@ -18,11 +19,10 @@ In this article, we’re trying something a little different. I normally only in
 I was curious to see what we could come up with during a more formal interview, and Greg Bunce (the data coordinator at UGRC), I thought, was the perfect test subject. Over the past three years of working with Greg, I’ve found him to be curious and open to exploring new ideas. “Being curious,” he tells me, “is key” for the field of GIS.
 
 ✼✼✼
-{: .text-center}
 
 We exchange our greetings via Google Hangouts Meet, the new company watering hole during the coronavirus work-from-home situation. I see books and cars on a shelf in the background and a chain of red paper birds hanging from the ceiling. “I like your office,” I tell him.
 
-![Greg Bunce photo]({% link images/GregBunce_20200518.jpg %}){: .inline-text-right .outline }
+![Greg Bunce photo](/images/404.png)
 
 He laughed. “It’s my son’s room.”
 

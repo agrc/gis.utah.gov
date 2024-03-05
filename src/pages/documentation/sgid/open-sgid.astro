@@ -1,0 +1,175 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import Alert from '@components/page/Alert.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import NumberedList from '@components/page/NumberedList.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import dbeaverAddDbPhoto from '@images/documentation/sgid/dbeaver_open_sgid_add_db.png';
+import dbeaverConnectionPhoto from '@images/documentation/sgid/dbeaver_open_sgid_conn.png';
+import gmAddDbPhoto from '@images/documentation/sgid/gm_open_sgid_add_db.png';
+import gmConnectionPhoto from '@images/documentation/sgid/gm_open_sgid_conn.png';
+import proAddDbPhoto from '@images/documentation/sgid/pro_open_sgid_add_db.png';
+import proConnectionPhoto from '@images/documentation/sgid/pro_open_sgid_conn.png';
+import qgisAddDbPhoto from '@images/documentation/sgid/qgis_open_sgid_add_db.png';
+import qgisConnectionPhoto from '@images/documentation/sgid/qgis_open_sgid_conn.png';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Open SGID',
+  pillar: 'Documentation',
+  section: stripeSections([
+    { title: 'What is the Open SGID' },
+    { title: 'Getting connected' },
+    {
+      title: 'Connect with ArcGIS Pro',
+      actionText: 'Download ArcGIS Pro',
+      actionUrl: 'https://pro.arcgis.com/en/pro-app/latest/get-started/download-arcgis-pro.htm',
+    },
+    {
+      title: 'Connect with DBeaver',
+      actionText: 'Download DBeaver',
+      actionUrl: 'https://dbeaver.io/download/',
+    },
+    {
+      title: 'Connect with QGIS',
+      actionText: 'Download QGIS',
+      actionUrl: 'https://www.qgis.org/en/site/forusers/download.html',
+    },
+    {
+      title: 'Connect with Global Mapper',
+      actionText: 'Download Global Mapper',
+      actionUrl: 'https://www.bluemarblegeo.com/global-mapper-download/',
+    },
+  ]),
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <p>
+      The Open SGID is a cloud hosted, publicly available PostGIS database containing our curated SGID data. This
+      database is one part of the <a href="/products/sgid">SGID</a> and complements the web services and data downloads offered
+      on the <ExternalLink href="https://opendata.gis.utah.gov/">SGID on ArcGIS</ExternalLink>.
+    </p>
+    <p>
+      To search the SGID, visit the <a href="/products/sgid/index">SGID Index</a>. View the organized data categories
+      available in the SGID on the <a href="/products/sgid/categories">SGID category</a> page.
+    </p>
+  </Section>
+
+  <Section {...page.section[1]}>
+    <Alert title="Tip" slot="image">
+      <NumberedList>
+        <li>Take a moment to read over the <a href="/documentation/sgid/policy">Open SGID Terms of Use</a>.</li>
+
+        <li>
+          Get familiar with the <ExternalLink href="https://github.com/agrc/open-sgid"
+            >Open SGID GitHub repository</ExternalLink
+          >, where you can troubleshoot and track known issues.
+        </li>
+      </NumberedList>
+    </Alert>
+    <p>
+      There are a variety of clients and applications that can connect to a PostgreSQL database. The DNS, username,
+      password to connect to the Open SGID can be found on the <ExternalLink
+        href="https://github.com/agrc/open-sgid#connection-information">Open SGID GitHub repository</ExternalLink
+      >. Below are a few of the more common applications and how to connect using them.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <Image
+      slot="image"
+      src={proAddDbPhoto}
+      alt="A screenshot of the ArcGIS Pro add database context menu"
+      class="w-full max-w-[400px]"
+    />
+    <Image
+      slot="image"
+      src={proConnectionPhoto}
+      alt="A screenshot of the ArcGIS Pro database connection screen"
+      class="w-full max-w-[400px]"
+    />
+    <NumberedList>
+      <li>Open the Catalog pane, right-click <kbd>Databases</kbd>, and select <kbd>New Database Connection</kbd>.</li>
+      <li>
+        Enter the connection information found on the <ExternalLink
+          href="https://github.com/agrc/open-sgid#connection-information">Open SGID GitHub repository</ExternalLink
+        >.
+      </li>
+    </NumberedList>
+  </Section>
+  <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      src={dbeaverAddDbPhoto}
+      alt="A screenshot of the DBeaver add database context menu"
+      class="w-full max-w-[400px]"
+    />
+    <Image
+      slot="image"
+      src={dbeaverConnectionPhoto}
+      alt="A screenshot of the DBeaver database connection screen"
+      class="w-full max-w-[400px]"
+    />
+    <NumberedList>
+      <li>Click the <kbd>New Database Connection</kbd> button and choose <kbd>PostgreSQL</kbd>.</li>
+      <li>
+        Enter the connection information found on the <ExternalLink
+          href="https://github.com/agrc/open-sgid#connection-information">Open SGID GitHub repository</ExternalLink
+        >.
+      </li>
+    </NumberedList>
+  </Section>
+  <Section {...page.section[4]}>
+    <Image
+      slot="image"
+      src={qgisAddDbPhoto}
+      alt="A screenshot of the QGIS add database context menu"
+      class="w-full max-w-[400px]"
+    />
+    <Image
+      slot="image"
+      src={qgisConnectionPhoto}
+      alt="A screenshot of the QGIS database connection screen"
+      class="w-full max-w-[400px]"
+    />
+    <NumberedList>
+      <li>Navigate to the Browser pane and right-click <kbd>PostGIS</kbd> then click <kbd>New Connection...</kbd>.</li>
+      <li>
+        Enter the connection information found on the <ExternalLink
+          href="https://github.com/agrc/open-sgid#connection-information">Open SGID GitHub repository</ExternalLink
+        >.
+      </li>
+    </NumberedList>
+  </Section>
+  <Section {...page.section[5]}>
+    <Image
+      slot="image"
+      src={gmAddDbPhoto}
+      alt="A screenshot of the Global Mapper add database context menu"
+      class="w-full max-w-[400px]"
+    />
+    <Image
+      slot="image"
+      src={gmConnectionPhoto}
+      alt="A screenshot of the Global Mapper database connection screen"
+      class="w-full max-w-[400px]"
+    />
+    <NumberedList>
+      <li>Click <kbd>File</kbd>, and select <kbd>Open Spatial Database...</kbd>.</li>
+      <li>
+        Enter the connection information found on the <ExternalLink
+          href="https://github.com/agrc/open-sgid#connection-information">Open SGID GitHub repository</ExternalLink
+        >.
+      </li>
+    </NumberedList>
+  </Section>
+</Layout>

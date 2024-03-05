@@ -3,19 +3,16 @@ author:
   display_name: Rick Kelson
   email: rkelson@utah.gov
 tags:
-  - dem
   - digital elevation model
   - digital surface model
   - digital terrain model
-  - dsm
-  - dtm
   - lidar
   - viewshed
 date: 2014-11-17 12:15:04 -0700
 title: Wireless Signals and LiDAR Derived Elevation Models
-categories:
-  - Featured
-  - SGID Blog
+category: SGID Blog
+cover_image: /src/images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dtm_only.png
+cover_image_alt: DTM Bare-Earth Digital Terrain Model
 ---
 
 Specialized software allows the modeling of cellular, radio, or wireless internet signal propagation and coverage. Better, more accurate results for wireless signal propagation depend on the precision with which the earth’s surface is represented within the analysis software. Traditionally, "bare earth" Digital Terrain Models (DTMs), in which above ground features such as buildings and vegetation are not represented, are used for the analysis.
@@ -26,57 +23,25 @@ A simple way to compare the different results from the traditional DTM and the L
 
 In the model result graphics below, the red areas show, _at 3 different scales_, the areas that have clear visibility from the tower site using the DTM and, it's LiDAR counterpart DSM. With all other factors held constant, the significant variation in the results is easy to see.
 
-The DTM and DSM elevation models from the 2013-2014 Wasatch Front LiDAR Elevation Data used to generate these models can be downloaded from [here]({% link data/elevation-and-terrain/2013-2014-lidar/index.html %}).
+The DTM and DSM elevation models from the 2013-2014 Wasatch Front LiDAR Elevation Data used to generate these models can be downloaded from [here](/products/sgid/elevation/lidar).
 
 **Important Note**: In addition to a surface models that represents the physical world, wireless network planning and other radio signal propagation software utilize many parameters to model coverage such as signal frequency, transmitter angle, earth curvature, Fresnel Zone, etc. Simple GIS Viewshed analysis, as shown, does not completely model wireless signals and their varying ability to bend and reflect but it does illustrate the possible impact of using surface model inputs that represent the physical world with differing amounts of precision.
 
-<div class="flex flex--row flex--wrap flex--around">
-  <figure class="caption">
-    <a href="{% link images/Ensign_DTM_only.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DTM_only.png %}" alt="" title="DTM Bare-Earth Digital Terrain Model" width="325" height="325"/>
-      <figcaption class="caption__text">Figure 1: Bare-Earth Digital Terrain Model</figcaption>
-    </a>
-  </figure>
-  <figure class="caption">
-    <a href="{% link images/Ensign_DSM_only.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DSM_only.png %}" alt="" title="DSM First-Return Digital Surface Model" width="325" height="325"/>
-      <figcaption class="caption__text">Figure 2: First-Return Digital Surface Model</figcaption>
-    </a>
-  </figure>
-  <figure class="caption">
-    <a href="{% link images/Ensign_DTM.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DTM.png %}" alt="" title="DTM Results, Zoomed Out" width="325" height="325"/>
-      <figcaption class="caption__text">Figure 3: Bare-Earth Digital Terrain Model and Viewshed</figcaption>
-    </a>
-  </figure>
-  <figure class="caption">
-    <a href="{% link images/Ensign_DSM.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DSM.png %}" alt="" title="DSM Results, Zoomed Out" width="325" height="325"/>
-      <figcaption class="caption__text">Figure 4: First-Return Digital Surface Model and Viewshed</figcaption>
-    </a>
-  </figure>
-  <figure class="caption">
-    <a href="{% link images/Ensign_DTM_sm.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DTM_sm.png %}" alt="" title="DTM Results, Medium Zoom" width="325" height="325"/>
-      <figcaption class="caption__text">Figure 5: Medium Zoom Bare-Earth Digital Terrain Model and Viewshed</figcaption>
-    </a>
-  </figure>
-  <figure class="caption">
-    <a href="{% link images/Ensign_DSM_sm.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DSM_sm.png %}" alt="" title="DSM Results, Medium Zoom" width="325" height="325"/>
-      <figcaption class="caption__text">Figure 6: Medium Zoom First-Return Digital Surface Model and Viewshed</figcaption>
-    </a>
-  </figure>
-  <figure class="caption">
-    <a href="{% link images/Ensign_DTM_sm2.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DTM_sm2.png %}" alt="" title="DTM, Zoomed In" width="325" height="325"/>
-      <figcaption class="caption__text">Figure 7: Zoomed In Bare-Earth Digital Terrain Model and Viewshed</figcaption>
-    </a>
-  </figure>
-  <figure class="caption">
-    <a href="{% link images/Ensign_DSM_sm2.png %}">
-      <img class="caption__image" src="{% link images/Ensign_DSM_sm2.png %}" alt="" title="DSM, Zoomed In" width="325" height="325"/>
-      <figcaption class="caption__text">Figure 8: Zoomed In First-Return Digital Surface Model and Viewshed</figcaption>
-    </a>
-  </figure>
+Figure 1: Bare-Earth Digital Terrain Model
+![DTM Bare-Earth Digital Terrain Model](../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dtm_only.png)
+Figure 2: First-Return Digital Surface Model
+![DSM First-Return Digital Surface Model](../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dsm_only.png)
+Figure 3: Bare-Earth Digital Terrain Model and Viewshed
+![DTM Results, Zoomed Out](../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dtm.png)
+Figure 4: First-Return Digital Surface Model and Viewshed
+![DSM Results, Zoomed Out](../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dsm.png)
+Figure 5: Medium Zoom Bare-Earth Digital Terrain Model and Viewshed
+![DTM Results, Medium Zoom](../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dtm_sm.png)
+Figure 6: Medium Zoom First-Return Digital Surface Model and Viewshed
+![DSM Results, Medium Zoom](../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dsm_sm.png)
+Figure 7: Zoomed In Bare-Earth Digital Terrain Model and Viewshed
+![DTM, Zoomed In](../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dtm_sm2.png)
+Figure 8: Zoomed In First-Return Digital Surface Model and Viewshed
+![DSM, Zoomed In](../../images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dsm_sm2.png)
+
 </div>

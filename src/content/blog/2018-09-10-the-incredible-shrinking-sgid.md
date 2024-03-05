@@ -1,14 +1,15 @@
 ---
-title: 'The Incredible Shrinking SGID'
+title: The Incredible Shrinking SGID
 author:
   display_name: Matt Peters
   email: mpeters@utah.gov
-date: 2018-09-10 21:37:46
-categories:
-  - Featured
+date: 2018-09-10T21:37:46.000Z
 tags:
   - SGID
-  - data content
+  - data
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Over the past several months, UGRC has been reviewing the usage of the State Geographic Information Database (SGID) data layers in order to determine how to most effectively be a steward of the state’s GIS data.

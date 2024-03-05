@@ -9,11 +9,12 @@ tags:
   - road centerlines
   - roads
   - transportation
-date: 2016-09-16 19:27:44
+date: 2016-09-16T19:27:44.000Z
 title: 'Road Centerlines: Schema Update and Regional Workshop Notes'
 published: false
-categories:
-  - Featured
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 This year, UGRC has devoted a significant amount of energy toward realigning our processes for maintaining a statewide road centerline layer. The desire is to best position the state to meet requirements for Next Generation 911, as well as new federal reporting requirements placed on state DOTs.
@@ -30,4 +31,4 @@ What follows are a few updates and resources related to this effort.
 
 **Regional Road Centerline Workshops**. Four regional workshops were held in June (Logan, SLC, Cedar City, and Price) with presentations [(view slide deck)](https://docs.google.com/presentation/d/1TZYthlekeE-wNb7I2z6lfuqrFNdz0ujEZdjqRAh22xs/edit?usp=sharing) by UDOT and UGRC staff. The consulting firm that organized the regional workshops as part of an FHWA pooled-funds study, Data Transfer Solutions, produced this [Summary Findings document](https://docs.google.com/document/d/1LbVmedJ2bSjso57p39Kk4sRCaSlI9TcBfHHYVXaEXFk/edit?usp=sharing) which provides a good overview of the workshops and the feedback that was received.
 
-![Logan Regional Road Centerline Workshop]({% link images/RoadCenterlineWorkshopBlog.JPG %})
+![Logan Regional Road Centerline Workshop](/images/404.png)

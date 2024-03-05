@@ -5,8 +5,9 @@ author:
 tags: []
 date: 2015-08-24 08:55:37 -0600
 title: Boost Your Productivity With Vim
-categories:
-  - Developer
+category: Developer
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 <p>I was surprised to realize today that I have never written about one of my favorite tools that I use to write code. It&#39;s something that absolutely transformed my day-to-day coding. If it was suddenly taken away from me I would feel like I had gone back to the dark ages. That&#39;s right, I&#39;m talk about Vim. Or more specifically Vim key bindings. <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim (Vi IMproved)</a> is an old text editor that was first released in the 90&#39;s and is an improvement to an even older editor called Vi. The intriguing part of Vim for me was not the 20 year old piece of software but the system that it used to edit and navigate text. It&#39;s very efficient, requiring the coder to reach for his or her mouse almost never.</p>

@@ -1,171 +1,188 @@
 # gis.utah.gov
 
+This is the repository for the [UGRC agency website](https://gis.utah.gov).
+
+![Static Badge](https://img.shields.io/badge/built%20with-astro-brightgreen) ![Website](https://img.shields.io/website?url=https%3A%2F%2Fgis.utah.gov) ![GitHub License](https://img.shields.io/github/license/agrc/gis.utah.gov)<br />
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/agrc/gis.utah.gov) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/agrc/gis.utah.gov) ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/agrc/gis.utah.gov/main)
+<br />
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29158e9e-9b1c-4d85-995b-a3ca444ff187/deploy-status)](https://app.netlify.com/sites/gis-utah-gov/deploys) ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fgis.utah.gov) ![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/gis.utah.gov)
+
 Read [about our new website](https://gis.utah.gov/about-our-new-v6-website-in-ghpages).
 [Contribute](https://gis.utah.gov/about/contributing/) content or typos.
 License: [MIT](/LICENSE).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/29158e9e-9b1c-4d85-995b-a3ca444ff187/deploy-status)](https://app.netlify.com/sites/gis-utah-gov/deploys) ![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Fsecurityheaders.com%2F%3Fq%3Dgis.utah.gov%26followRedirects%3Don)
-
 ## Local Development
 
-1. Check out this repository
-1. run `docker-compose up`
-1. browse to `localhost:4000`
-1. run `docker pull jekyll/jekyll:4` to update your image
-1. run `grunt imagemin:images` to minify images
+### Prerequisites
 
-## Website maintenance
+- Node.js - v18.14.1 or higher
+- Text editor - We recommend VS Code
+- Terminal - Astro is accessed through its command-line interface (CLI).
 
-1. Check for dead or redirected links
-   - `npx @tmcw/linkrot`
+### Steps
 
-## Common Website Tips
+1. Clone this repository
+   `git clone https://github.com/agrc/gis.utah.gov.git`
+1. Install the dependencies
+   `npm install`
+1. Start the website
+   `npm start`
+1. browse to `localhost:4321`
 
-- [Kramdown reference](http://kramdown.gettalong.org/quickref.html)
-- [Jekyll Cheat Sheet](http://cheat.jekyll.tips/)
-- [Post/Page Templater](https://agrc.github.io/templater/) - Quickly bootstrap the frontmatter for a new post or page.
+## Technology reference
 
-## Markdown syntax conventions
+- [Astro docs](https://docs.astro.build/en/getting-started/)
+- [GitHub markdown spec](https://github.github.com/gfm/)
+- [tailwindcss docs](https://tailwindcss.com/docs)
+- [Post/Page Template creator](https://agrc.github.io/templater/) - Quickly bootstrap the frontmatter for a new post or page.
 
-```md
-_italics_
+## Syntax conventions
+
+```mdx
+_italic_
 **bold**
-_**bold italics**_
+_**bold italic**_
+
 - list
+```
+
+```astro
+---
+import BulletedList from '@components/page/BulletedList.astro';
+import NumberedList from '@components/page/NumberedList.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+---
+
+<em>italic</em> or <span class="italic">italic</span>
+<strong>bold</strong> or <span class="font-bold">bold</span>
+<strong><em>bold and italic</em></strong> or <span class="italic font-bold">bold and italic</span>
+
+<BulletedList>
+  <li>list item</li>
+</BulletedList>
+
+<NumberedList>
+  <li>list item</li>
+</NumberedList>
+
+<dl>
+  <DefinitionListItem title="Word">Definition</DefinitionListItem>
+</dl>
 ```
 
 ### link to page
 
 - markdown
 
-  ```md
-  [link text]({% link path/to/item.with-extension %})
-  [link text]({% link path/to/item.with-extension %}#to-anchor)
+  ```mdx
+  [link text](/pillar/level-1/page)
+  [link text](/pillar/level-1/page#to-anchor)
   ```
 
-- html
+- astro
 
-  ```html
-  <a href="{% link path/to/item.with-extension %}">link text</a>
-  <a href="{% link path/to/item.with-extension %}#to-anchor">link text</a>
+  ```astro
+  <a href="/pillar/level-1/page">link text</a>
+  <a href="/pillar/level-1/page#to-anchor>link text</a>
   ```
 
-### link to post
+### link to blog post
 
 - markdown
 
-  ```md
-  [link text]({% link _posts/2016-05-26-file-name.with-extension %})
-  [link text]({% link _posts/2016-05-26-file-name.with-extension %}#to-anchor)
+  ```mdx
+  [link text](/blog/2016-05-26-file-name)
+  [link text](/blog/2016-05-26-file-name#to-anchor)
   ```
 
-- html
+- astro
 
-  ```html
-  <a href="{% link _posts/2016-05-26-file-name.with-extension %}">link text</a>
-  <a href="{% link _posts/2016-05-26-file-name.with-extension %}#to-anchor">link text</a>
+  ```astro
+  <a href="{/blog/2016-05-26-file-name">link text</a>
+  <a href="{/blog/2016-05-26-file-name#to-anchor">link text</a>
   ```
 
 ### external link
 
 - markdown
 
-  ```md
+  ```mdx
   [link text](http://external.website.location)
   [link text](http://external.website.location#to-anchor)
   ```
 
-- html
+- astro
 
-  ```html
-  <a href="https://url.com">link text</a>
-  <a href="https://url.com#to-anchor">link text</a>
+  ```astro
+  ---
+  import ExternalLink from '@components/page/ExternalLink.astro';
+  ---
+
+  <ExternalLink href="https://url.com">link text</ExternalLink>
+  <ExternalLink href="https://url.com#to-anchor">link text</ExternalLink>
   ```
 
 ### image link to an image
 
 - markdown
 
-   ```md
-   [![displayed image alt text]({% link path/to/item.with-extension %})](![link to alt text]({% link path/to/item.with-extension %})
-   ```
+  ```mdx
+  [![displayed image alt text](../../relative/path/to/image.jpg)](![link to alt text](/path/to/item))
+  ```
 
 ### images
 
 - markdown
 
-  ```md
-  ![alt text]({% link path/to/item.with-extension %})
+  ```mdx
+  ![alt text](../../relative/path/to/image.jpg)
   ```
 
-- html
+- astro
 
-  ```html
-  <img src="{% link path/to/image.jpg" %} alt="hover text"/>
+  ```astro
+  ---
+  import { Image } from 'astro:assets';
+  import photo from '@images/pillar/image.phg';
+  ---
+
+  <Image src={photo} alt="text describing the image to a non sighted person" />
   ```
-
-### link alt text
-
-```md
-[link text]({% link path/to/item.with-extension %} "popup text")
-```
-
-### css in markdown
-
-```md
-![alt text]({% link path/to/item.with-extension %})
-{: .css-class-name}
-```
 
 ### font matter
 
-- `page` - the post vs page layout
 - `title: Title` - the title of the content
 - `author.display_name: Full Name` - The author of the content
 - `author.email: email@address` - The author email
 - `date: 2018-02-13` - the date the content was created
-- `update_date: 2018-02-13` - this will show in under the title that the page has been updated
 - `tags:` a list of tags
 - `categories: Featured|Developer|SGID Blog|GPS-surveyor|Guestblog`
 - `published: true|false`
 
 ### contact information
 
-Contacts are managed in a [yml file](./_data/contacts.yml). **Please do not put email addresses directly into content**.
+> [!IMPORTANT]
+> Please do not put email addresses directly into content.
 
-The include has a few properties:
-
-- **subject**: the subject of the email link. Most of the time using `page.title` is good enough™
-- **contact**: the contact in the yml file to create
-- **text**: update this to change the default text generated
-- **hide-punctuation**: set this to `true` if you would like to remove the `.` at the end of the text
+Contacts are managed in a [typescript file](./src/data/contacts.ts).
 
 - markdown
 
-  ```liquid
-  {% capture contact %}{% include contact.html subject=page.title contact=site.data.contacts.agrc %}{% endcapture %}
-  {{ contact }}
+  ```mdx
+  ---
+  ---
+
+  import import Contacts from '@components/page/Contacts.astro';
+
+  <Contacts contactKey="ugrc" subject={frontmatter.title} />
   ```
 
-- html
+- astro
 
-  ```liquid
-  {% include contact.html subject=page.title contact=site.data.contacts.agrc %}
+  ```astro
+  ---
+  import import Contacts from '@components/page/Contacts.astro';
+  ---
+
+  <Contacts contactKey="ugrc" subject={frontmatter.title} />
   ```
-
-### hub downloads
-
-This creates the download links from hub.
-
-```yml
-Item:
-  hub:
-    name: ArcGIS Online name exactly eg Utah Address Points [required]
-    alias:  The name you would prefer to display instead of the value for name [optional]
-    item_id: The item id [required]
-    layer_id: The layer id within the feature service [optional]. Defaults to 0 (for services with a single layer).
-    org: The sharing org name e.g. `SITLA`. When an org shares items it gets prefixed with their name e.g. `/SITLA::land-ownership`
-    skip_shapefile: True or false [optional]
-    skip_fgdb: True or false [optional]
-    skip_hub: True or false [optional]
-```

@@ -1,18 +1,19 @@
 ---
-title: 'Municipal Boundaries update for Third Quarter 2019 (calendar year)'
+title: Municipal Boundaries update for Third Quarter 2019 (calendar year)
 published: false
 author:
   display_name: Mike Heagin
   email: mheagin@utah.gov
-date: 2019-10-24 21:39:38
-categories:
-  - SGID Blog
+date: 2019-10-24T21:39:38.000Z
 tags:
   - city
   - town
   - municipalities
   - boundaries
   - annexations
+category: SGID Blog
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 It’s already over three-quarters of the way through the year, and while things slowed down while everyone is enjoying the summer, yet we’re still trying to catch up here. We're still expecting annexations to pick up some as we head for the end of the year plenty of procrastinators out there. Here is our updates for the third quarter.

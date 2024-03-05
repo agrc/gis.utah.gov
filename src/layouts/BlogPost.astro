@@ -1,35 +1,55 @@
 ---
-import FormattedDate from '@components/FormattedDate.astro';
-import Layout from '@layouts/Prose.astro';
-import type { CollectionEntry } from 'astro:content';
+import type { DecoratedBlogEntry } from '@utils/collections';
+import { slugify } from '@utils/collections';
+import { getDateParts } from '@utils/page';
 
-type BlogPost = CollectionEntry<'blog'>['data'];
-interface Props extends BlogPost {
-  estimatedReadTime?: string;
-}
+const { category, date: pubDate, estimatedReadTime, lastUpdated } = Astro.props as DecoratedBlogEntry['data'];
 
-const { title, date: pubDate, updated, estimatedReadTime } = Astro.props;
+const { year, month, day } = getDateParts(pubDate);
+const lastUpdatedDate = getDateParts(lastUpdated);
 ---
 
-<Layout title={title}>
-  <article>
-    <div class="prose">
-      <div class="title">
-        <div class="date">
-          <FormattedDate date={pubDate} style="long" />
-          {
-            updated && (
-              <div class="last-updated-on">
-                Last updated on <FormattedDate date={updated} style="long" />
-              </div>
-            )
-          }
-          <div class="flex justify-center text-sm text-primary/80 dark:text-accent">{estimatedReadTime}</div>
-        </div>
-        <h1>{title}</h1>
-        <hr />
+<div class="flex flex-col gap-x-2 border-t border-primary/30 pt-3 text-sm font-medium md:flex-row dark:border-white/30">
+  <div class="flex justify-center gap-1 text-sm">
+    <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Published</span>
+    <span>·</span>
+    <span class="whitespace-nowrap uppercase">
+      {month}
+      {day}, {year}
+    </span>
+  </div>
+  {
+    lastUpdated && (
+      <div class="flex justify-center gap-1 text-sm">
+        <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Last modified</span>
+        <span>·</span>
+        <span class="whitespace-nowrap uppercase">
+          {lastUpdatedDate.month} {lastUpdatedDate.day}, {lastUpdatedDate.year}
+        </span>
       </div>
-      <slot />
-    </div>
-  </article>
-</Layout>
+    )
+  }
+  {
+    !!category ? (
+      <div class="flex justify-center gap-1 text-sm">
+        <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Category</span>
+        <span>·</span>
+        <span class="whitespace-nowrap">
+          <a href={`/blog/categories/${slugify(category)}`}>{category}</a>
+        </span>
+      </div>
+    ) : null
+  }
+  <div class="flex justify-center gap-1 text-sm">
+    <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Read time</span>
+    <span>·</span>
+    <span class="whitespace-nowrap">
+      {estimatedReadTime}
+    </span>
+  </div>
+</div>
+<article
+  class="mdx mdx-zinc max-w-none space-y-6 overflow-hidden dark:mdx-invert mdx-headings:text-zinc-700 mdx-li:my-0 mdx-img:mx-auto mdx-img:rounded-lg mdx-img:border mdx-headings:dark:text-zinc-50 mdx-thead:dark:border-white/50 mdx-tr:dark:border-white/30"
+>
+  <slot />
+</article>

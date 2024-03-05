@@ -1,20 +1,21 @@
 ---
-title: 'Enhancements to the SGID Utah Trails Dataset 06/26/2020'
+title: Enhancements to the SGID Utah Trails Dataset 06/26/2020
 published: false
 author:
   display_name: UGRC Office
   email: gbunce@utah.gov
-date: 2020-06-26 11:05:48
-categories:
-  - Featured
+date: 2020-06-26T11:05:48.000Z
 tags:
   - sgid
   - trails
   - transportation
   - recreation
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
-We are happy to announce significant updates and enhancements to the Utah Trails dataset. For one, the dataset was renamed to [Utah Trails and Pathways]({% link data/recreation/trails/index.html %}). The new name more accurately reflects the use and purpose of this data.
+We are happy to announce significant updates and enhancements to the Utah Trails dataset. For one, the dataset was renamed to [Utah Trails and Pathways](/products/sgid/recreation/trails-pathways). The new name more accurately reflects the use and purpose of this data.
 
 You will also notice a new-and-improved [data model](https://docs.google.com/spreadsheets/d/1ArawJ_8LLmbPWSQjG6YmovcjBnc0S9Md0gviBJudu78/edit?usp=sharing). At a high-level, you will see the addition of domains on many fields, the cleanup of field values, the reworking and/or deletion of a few outdated fields, and the addition of a `County` field (allowing users to query the data by county). Please see this [spreadsheet](https://docs.google.com/spreadsheets/d/1fmyScHReP-j31tfZJHLLwKltlPDoYTEBV0E7-fHY04w/edit?usp=sharing) for complete details on this change.
 

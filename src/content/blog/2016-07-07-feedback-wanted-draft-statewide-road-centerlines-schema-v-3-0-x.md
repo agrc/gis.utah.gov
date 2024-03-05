@@ -5,11 +5,12 @@ author:
 tags:
   - roads
   - schema
-date: 2016-07-07 21:21:51
+date: 2016-07-07T21:21:51.000Z
 title: 'Feedback Wanted: Draft Statewide Road Centerlines Schema v3.0.x'
 published: false
-categories:
-  - Featured
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Since 2003, UGRC has maintained a statewide aggregation of road centerline GIS layers sourced from local data stewards. This layer is one of the hardest working GIS data assets in the state and is put to task in high profile uses, including 911/public safety, transportation management and planning, voter registration, sales tax, and Census block geography used for demographics and redistricting.
@@ -24,7 +25,7 @@ One future possibility is that the new schema may be used to pilot a shared edit
 
 **Please note that the road centerlines schema proposal is a starting point, and UGRC is looking forward to input as to errors, omissions, and suggestions for better ways to organize the information. Please [submit all feedback](http://goo.gl/forms/fdzA8sV4nuarXGDV2) by August 15, 2016.**
 
-<a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546 "><img src="{% link images/roadcenterlinenewschema.png %}" alt="" title="Centerlines Datasets Schema V3.0.3" class="inline-text-right" loading="lazy" /></a>
+<a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546 "><img src="/images/404.png" alt="" title="Centerlines Datasets Schema V3.0.3" class="inline-text-right" loading="lazy" /></a>
 
 A few notes about the new schema:
 

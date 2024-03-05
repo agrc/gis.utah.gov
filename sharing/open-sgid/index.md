@@ -10,26 +10,26 @@ title: Submitting Data to the Open SGID
 categories: []
 ---
 
-If you would like to share data with the [Open SGID]({% link sgid/index.html %}#open-sgid), we will work with you to get a copy of the data. We'll then run checks and reviews on the data to ensure they are clean before being loaded, and we also need to identify when and how we'll incorporate any future updates to the data.
+If you would like to share data with the [Open SGID](/documentation/sgid), we will work with you to get a copy of the data. We'll then run checks and reviews on the data to ensure they are clean before being loaded, and we also need to identify when and how we'll incorporate any future updates to the data.
 
 We use [issues](https://guides.github.com/features/issues/) in our [Porter](https://github.com/agrc/porter/issues) repository on GitHub to track a dataset's progress in the submission process and to keep an open and transparent record of everything that happened.
 
 <!-- If you've never used GitHub issues before, click here to watch a short tutorial (TBA) about creating an issue. -->
 
-If you've still got questions after reading this, {% include contact.html subject="SGID Data Additions" contact=site.data.contacts.sgid text='reach out to ' hide-punctuation=true %}; or you can contact anyone else on the [UGRC team]({% link about/contact/index.html %}).
+If you've still got questions after reading this, {% include contact.html subject="SGID Data Additions" contact=site.data.contacts.sgid text='reach out to ' hide-punctuation=true %}; or you can contact anyone else on the [UGRC team](/contact).
 
 ### Step 1: 📋 Qualifications (You)
 {: .text-left}
 
 First, make sure your dataset meets the SGID qualifications:
 
-- [General qualifications]({% link about/policy/sgid/index.md %}#general-qualifications)
-- [Open SGID-specific qualifications]({% link about/policy/sgid/index.md %}#open-sgid-qualifications)
+- [General qualifications](/documentation/policy/sgid)
+- [Open SGID-specific qualifications](/documentation/policy/sgid)
 
 ### Step 2: ✏️ Data Preparation (You)
 {: .text-left}
 
-Before submitting your data, make sure it's got a stable schema and is ready for public consumption. Make sure the metadata meets our [minimum standards]({% link about/policy/metadata/index.md %}). If you need help with metadata, check out our [basic metadata creation process]({% link sharing/metadata/index.md %}).
+Before submitting your data, make sure it's got a stable schema and is ready for public consumption. Make sure the metadata meets our [minimum standards](/documentation/policy/metadata). If you need help with metadata, check out our [basic metadata creation process](/documentation/sgid/sharing/metadata/).
 
 Start thinking about the future—how often will this dataset be updated? How will you send those updates to us? Sometimes, old data is worse than no data at all. If a user can't find anything, they still know what they don't know. But if they find outdated data without realizing it, they may not know that they are acting on bad data.
 
@@ -41,7 +41,7 @@ Once you're ready to send your data our way, [submit an issue](https://github.co
 ### Step 4: 💠 Sharing (You)
 {: .text-left}
 
-After creating the issue, contact [the UGRC team]({% link about/contact/index.html %}) to work out the best way to share your data with us. We can get the data from you in many different ways:
+After creating the issue, contact [the UGRC team](/contact) to work out the best way to share your data with us. We can get the data from you in many different ways:
 
 - We can download it from your choice of cloud storage solutions (Google Drive, Dropbox, etc)
 - We can pull it in from an ArcGIS Online/Enterprise Map or Feature Service (our preferred option for frequently-changing data)
@@ -64,4 +64,4 @@ If you sent the data to us as a shapefile or GDB, or as a private or temporary f
 
 ![Example ArcGIS Online thumbnail for SGID items]({% link images/agol_location_group.png %}){: .flex .flex--center .outline loading="lazy" }
 
-However, if you maintain maintain your own public feature service of the data, we won't create our own. Instead, please [share your item with SGID Open Data]({% link sharing/open-data/index.md %}).
+However, if you maintain maintain your own public feature service of the data, we won't create our own. Instead, please [share your item with SGID Open Data](/documentation/sgid/sharing).

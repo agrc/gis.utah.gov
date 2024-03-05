@@ -120,8 +120,8 @@ const page: IPageMetadata = {
     </p>
     <h5>Address Points in Action</h5>
     <p>
-      The statewide address point layer is used as reference data for the <a
-        href="{% link data/address-geocoders-locators/index.html %}#WebAPI">api.mapserv.utah.gov</a
+      The statewide address point layer is used as reference data for the <a href="/products/sgid/address"
+        >api.mapserv.utah.gov</a
       >
       address locators. You can also find the address points in many <a href="https://atlas.utah.gov"
         >web mapping applications</a
@@ -132,7 +132,7 @@ const page: IPageMetadata = {
       The address points are published as an <a
         href="https://utah.maps.arcgis.com/home/item.html?id=5b92021338f64f5ba77765d6fc47cbc9">ArcGIS Online service</a
       >
-      as well as a <a href="{% link discover/index.html %}">Discover service</a>.
+      as well as a <a href="/products/discover">Discover service</a>.
     </p>
     <p>
       % include contact.html subject=page.title contact=site.data.contacts.address_points % For county specific
@@ -143,7 +143,7 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -164,16 +164,16 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov" style="secondary">
         This web app uses the address points for geocoding and you can toggle an address point base map layer.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary">
         Transportation related data sets.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Addresses" href="/products/sgid/address">
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address" style="secondary">
         Address related datasets, applications, and services.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Discover" href="/products/discover">
+      <CardWithSmallLink title="Discover" href="/products/discover" style="secondary">
         Discover has an address point base map service for your projects and maps.
       </CardWithSmallLink>
     </GridForYouMightLike>

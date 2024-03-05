@@ -42,11 +42,11 @@ The **"steward"** refers to the individual or organization that shares data with
 - UGRC will make all SGID entries available to the general public without any form of login or account.
 - UGRC may edit any hosted data to fix any technical errors that prevent the data from being shared in the SGID.
 - UGRC may edit any aggregate data to conform with established standards and schemas for statewide datasets.
-- UGRC will follow our established [SGID policies]({% link about/policy/sgid/index.md %}).
+- UGRC will follow our established [SGID policies](/documentation/policy/sgid).
 - The steward will ensure any links or connections to external data remain live and do not require any form of login or account.
 - The steward will take reasonable efforts to not modify the schema of all external data, with the exception of adding new fields.
 - The steward will provide UGRC with two weeks prior notice, if possible, of any schema changes to hosted data.
-- UGRC will remove SGID entries according to our [removal policy]({% link about/policy/sgid/index.md %}#dataset-deprecation-and-removal) through the normal [dataset deprecation process](https://github.com/agrc/porter/blob/main/.github/ISSUE_TEMPLATE/2-deprecate-sgid-dataset.md).
+- UGRC will remove SGID entries according to our [removal policy](/documentation/policy/sgid) through the normal [dataset deprecation process](https://github.com/agrc/porter/blob/main/.github/ISSUE_TEMPLATE/2-deprecate-sgid-dataset.md).
 - UGRC will grant requests for immediate removal of accidentally shared non-public data or other urgent situations and will handle these on a case-by-case basis.
 
 ## License and Disclaimer
@@ -56,5 +56,5 @@ The following items apply unless the steward and UGRC specifically negotiate dif
 
 - UGRC considers all SGID entries "Public" for purposes of the Utah [Government Records Access and Management Act (GRAMA)](https://archives.utah.gov/rim/government-records-law.html).
 - UGRC licenses all hosted data under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-- All hosted data are subject to the [standard UGRC disclaimer]({% link about/policy/license-disclaimer/index.md %}#disclaimer).
+- All hosted data are subject to the [standard UGRC disclaimer](/documentation/policy/license-disclaimer).
 - UGRC will include the aforementioned license and disclaimer in the metadata of all hosted data.

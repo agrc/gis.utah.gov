@@ -6,20 +6,21 @@ tags:
   - gomb
   - parcels
   - planning
-date: 2016-07-07 20:05:49
+date: 2016-07-07T20:05:49.000Z
 title: Data Schema Released for Expanded GIS Parcel Sharing
 published: false
-categories:
-  - Featured
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
-In May, the Land Information Records work group, a committee of county, regional, and state agencies, released its [recommendations for sharing an enhanced set of tax parcel GIS data](https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_), summarized in a [this blog post]({% link _posts/2016-05-26-work-group-recommends-expanded-gis-parcel-sharing.md %}).
+In May, the Land Information Records work group, a committee of county, regional, and state agencies, released its [recommendations for sharing an enhanced set of tax parcel GIS data](https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_), summarized in a [this blog post](/blog/2016-05-26-work-group-recommends-expanded-gis-parcel-sharing).
 
 In a letter to Utah’s County Assessors, Evan Curtis, the State Planning Coordinator with the Governor’s Office of Management and Budget, provided a nice overview of the work done on this initiative:
 
 > Working together, Curtis wrote, we've been able to arrive at a solution that should provide regional and statewide planners, economic development professionals, emergency managers, and others with the data tools they need to make informed decisions without placing an undue burden on the counties and avoiding issues that would come with the addition of personally-identifiable information
 
-<a href="https://docs.google.com/a/utah.gov/document/d/1pNqjCeF_3NZjNnBGqQ3EqliMkVaWtAbybn1eZ4gt038/edit?usp=sharing "><img src="{% link images/taxparcelschema_thumb.png %}" alt="" title="Expanded Parcel Data Sharing, Implementation Guidelines" class="inline-text-right" loading="lazy" /></a>
+<a href="https://docs.google.com/a/utah.gov/document/d/1pNqjCeF_3NZjNnBGqQ3EqliMkVaWtAbybn1eZ4gt038/edit?usp=sharing "><img src="/images/404.png" alt="" title="Expanded Parcel Data Sharing, Implementation Guidelines" class="inline-text-right" loading="lazy" /></a>
 
 Several **next steps** from the recommendations document are now in motion.
 

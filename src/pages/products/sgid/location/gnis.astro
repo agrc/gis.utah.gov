@@ -1,0 +1,83 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah GNIS Place Names',
+  description: `Place names from the USGS Geographic Names Information System (GNIS).`,
+  stewards: ['UGRC', 'U.S. Geological Survey'],
+  type: ProductType.POINT,
+  category: SgidCategory.LOCATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`April 2019`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah GNIS Place Names contains the latest release of the GNIS dataset for the state of Utah. The dataset consists
+      of point locations with corresponding feature names. All point entities are categorized by feature type.
+    </p>
+    <p>
+      The Geographic Names Information System (GNIS) was developed by the U.S. Geological Survey in cooperation with the
+      U.S. Board on Geographic Names (BGN), local governments and other interested organizations. The GNIS contains
+      information about physical and cultural geographic features in the United States and associated areas, both
+      current and historical, but not including roads and highways. The goal of GNIS is to meet major national needs
+      regarding geographic names and their standardization and dissemination.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="U.S. Board on Geographic Names"
+        href="https://www.usgs.gov/us-board-on-geographic-names"
+        >U.S. Board on Geographic Names website.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Geographic Names Information System (GNIS)"
+        href="https://www.usgs.gov/tools/geographic-names-information-system-gnis"
+        >USGS Geographic Names Information System (GNIS) website.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Society" href="/products/sgid/society">Society page</CardWithSmallLink>
+      <CardWithSmallLink title="Location" href="/products/sgid/location">Location page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

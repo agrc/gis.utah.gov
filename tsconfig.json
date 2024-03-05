@@ -21,6 +21,9 @@
       "@images/solutions/*": [
         "src/images/solutions/*"
       ],
+      "@images/media/*": [
+        "src/images/media/*"
+      ],
       "@images/sgid/*": [
         "src/images/product-sgid/*"
       ],
@@ -35,6 +38,9 @@
       ],
       "@images/about/*": [
         "src/images/pillar-about/*"
+      ],
+      "@images/blog/*": [
+        "src/images/pillar-blog/*"
       ],
       "@images/contact/*": [
         "src/images/pillar-contact/*"

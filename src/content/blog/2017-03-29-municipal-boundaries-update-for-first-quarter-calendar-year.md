@@ -6,11 +6,12 @@ tags:
   - annexations
   - boundaries
   - municipal boundaries
-date: 2017-03-29 16:57:20
+date: 2017-03-29T16:57:20.000Z
 title: Municipal Boundaries update for first quarter (Calendar year)
 published: false
-categories:
-  - Featured
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 Municipal Boundaries update for first quarter 2017 (calendar year)

@@ -7,8 +7,9 @@ tags:
 date: 2015-12-22 14:45:30 -0700
 title: 'What is HTTPS, and should we be using it? '
 published: false
-categories:
-  - Featured
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 <p>Hypertext Transfer Protocol Secure (https) combines the Hypertext Transfer Protocol (HTTP) with the Secure Socket Layer (SSL)/Transport Layer Security (TLS) protocol. TLS is an authentication and security protocol widely implemented in browsers and Web servers.  </p>

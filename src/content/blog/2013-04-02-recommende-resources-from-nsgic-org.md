@@ -6,8 +6,9 @@ tags: []
 date: 2013-04-02 13:09:59 -0600
 title: Recommended GIS Resources from NSGIC.org
 published: false
-categories:
-  - Featured
+category: Uncategorized
+cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image_alt: ugrc social card
 ---
 
 <p>The National State Geographic Information Council (NSGIC) exists to </p>
@@ -29,4 +30,5 @@ categories:
 <li>NextGen 911 publications: <a href="https://nsgic.org/public_resources/NG_9-1-1_Top_Ten_State_Coordinator_081811_Final.pdf">Top Ten Takeaways</a>, <a href="https://nsgic.org/public_resources/Working_Smarter_Together_NENA_NAPSG_NSGIC_081211_FINAL.pdf">Working Smarter Together</a></li>
 <li><a href="https://netforum.avectra.com/eweb/DynamicPage.aspx?Site=NSGIC&WebCode=IndSearch">NSGIC member directory</a>, query for GIS contacts by state</li>
 </ul>
-<p><img alt="" src="https://www.nsgic.org/public_resources/Large_Logo_1321304002.jpg" class="aligncenter" width="697" height="272" /></p>
+
+![nsgic logo](https://www.nsgic.org/public_resources/Large_Logo_1321304002.jpg)
