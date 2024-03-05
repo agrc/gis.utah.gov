@@ -91,7 +91,7 @@ const page: IPageMetadata = {
     </ul>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Disclaimer slot="disclaimer">
     <p>
@@ -124,19 +124,23 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov" style="secondary">
         This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
         by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's current
         and authoritative datasets.</CardWithSmallLink
       >
-      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov" style="secondary">
         Discover spatial data and tools that empower informed land management decisions
       </CardWithSmallLink>
-      <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
+      <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/" style="secondary">
         Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
         management.
       </CardWithSmallLink>
-      <CardWithSmallLink title="DEQ Data Portal" href="https://utahdeq.maps.arcgis.com/home/index.html">
+      <CardWithSmallLink
+        title="DEQ Data Portal"
+        href="https://utahdeq.maps.arcgis.com/home/index.html"
+        style="secondary"
+      >
         Explore spatial data relevant to safeguarding and improving Utah's air, land and water through balanced
         regulation.
       </CardWithSmallLink>

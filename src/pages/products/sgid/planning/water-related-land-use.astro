@@ -14,6 +14,7 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import BulletedList from '@components/page/BulletedList.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
@@ -66,38 +67,40 @@ const page: IPageMetadata = {
       Irrigation type (Irrigated, Sub-Irrigated, Non-Irrigated, Riparian, Urban, etc).
     </p>
     <p>The Landuse and IRR_Method fields are described below.</p>
-    <ul class="list-disc pl-4">
+    <BulletedList>
       <li>Landuse - A general land cover classification differentiating how the land is used:</li>
-      <ul class="list-disc pl-8">
-        <li>Agriculture: Land managed for crop or livestock purposes.</li>
-        <li>Other: A broad classification of wildland.</li>
-        <li>Riparian/Wetland: Wildland influenced by a high water table, often close to surface water.</li>
-        <li>Urban: Developed areas, includes urban green space such as parks.</li>
-        <li>Water: Surface water such as wet flats, streams, and lakes.</li>
-      </ul>
+      <BulletedList>
+        <li class="list-[circle] pl-4">Agriculture: Land managed for crop or livestock purposes.</li>
+        <li class="list-[circle] pl-4">Other: A broad classification of wildland.</li>
+        <li class="list-[circle] pl-4">
+          Riparian/Wetland: Wildland influenced by a high water table, often close to surface water.
+        </li>
+        <li class="list-[circle] pl-4">Urban: Developed areas, includes urban green space such as parks.</li>
+        <li class="list-[circle] pl-4">Water: Surface water such as wet flats, streams, and lakes.</li>
+      </BulletedList>
       <li>
         IRR_Method - Crop Irrigation Method carried over from statewide field surveys ending in 2015 and updated based
         on imagery and yearly field checks.
       </li>
-      <ul class="list-disc pl-8">
-        <li>
+      <BulletedList>
+        <li class="list-[circle] pl-4">
           Drip: Water is applied through lines that slowly release water onto the surface or subsurface of the crop.
         </li>
-        <li>
+        <li class="list-[circle] pl-4">
           Dry Crop: No irrigation method is applied to this agricultural land, the crop is irrigated via natural
           processes.
         </li>
-        <li>
+        <li class="list-[circle] pl-4">
           Flood: Water is diverted from ditches or pipes upland from the crop in sufficient quantities to flood the
           irrigated plot.
         </li>
-        <li>None: Associated with non-agricultural land</li>
-        <li>
+        <li class="list-[circle] pl-4">None: Associated with non-agricultural land</li>
+        <li class="list-[circle] pl-4">
           Sub-irrigated: This land does not have irrigation water applied, but due to a high water table receives more
           water, and is generally closely associated with a riparian area.
         </li>
-      </ul>
-    </ul>
+      </BulletedList>
+    </BulletedList>
   </Fragment>
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
@@ -117,10 +120,10 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Utah Division of Water Resources" href="https://water.utah.gov/"
+      <CardWithSmallLink title="Utah Division of Water Resources" href="https://water.utah.gov/" style="secondary"
         >Division home page</CardWithSmallLink
       >
-      <CardWithSmallLink title="NAIP Imagery" href="/products/sgid/aerial-photography/naip"
+      <CardWithSmallLink title="NAIP Imagery" href="/products/sgid/aerial-photography/naip" style="secondary"
         >National Agricultural Imagery Program Imagery hosted at UGRC</CardWithSmallLink
       >
     </GridForYouMightLike>

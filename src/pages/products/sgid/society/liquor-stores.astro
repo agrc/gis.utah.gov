@@ -13,6 +13,7 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import UpdateHistory from '@components/data/UpdateHistory.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
@@ -34,13 +35,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout
-  title={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  config={{ skipInDepth: true }}
->
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
@@ -55,7 +50,9 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="DABS" href="https://abs.utah.gov/"
         >Department of Alcoholic Beverage Services website.</CardWithPopularLink
@@ -66,18 +63,20 @@ const page: IPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Golf courses" href="/products/sgid/recreation/golf-courses"
+      <CardWithSmallLink title="Golf courses" href="/products/sgid/recreation/golf-courses" style="secondary"
         >Explore Utah golf course locations.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Health care facilities" href="/products/sgid/health/health-care-facilities/"
-        >Hospitals and other health care locations.</CardWithSmallLink
+      <CardWithSmallLink
+        title="Health care facilities"
+        href="/products/sgid/health/health-care-facilities/"
+        style="secondary">Hospitals and other health care locations.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Law enforcement" href="/products/sgid/society/law-enforcement/"
+      <CardWithSmallLink title="Law enforcement" href="/products/sgid/society/law-enforcement/" style="secondary"
         >Law enforcement office locations.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Ski areas" href="/products/sgid/recreation/ski-areas/"
+      <CardWithSmallLink title="Ski areas" href="/products/sgid/recreation/ski-areas/" style="secondary"
         >Ski area locations.</CardWithSmallLink
       >
     </GridForYouMightLike>

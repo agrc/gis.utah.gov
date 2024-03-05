@@ -80,7 +80,8 @@ const page: IPageMetadata = {
       of duplicate features. For example, a restaurant can be represented in OSM as both a point of interest and as a
       building polygon, the spatial filtering helps reduce the chances that both of these features are present in the
       final dataset.
-    </p><p>
+    </p>
+    <p>
       Additional de-duplication is performed by using the 'block_id' field as a spatial index to ensure that no two
       features of the same name exist within a census block. Then, additional fields are created and assigned from
       UGRC's SGID data (county, city, zip, nearby address, etc.) via point-in-polygon and near analyses. A numeric check
@@ -174,7 +175,7 @@ const page: IPageMetadata = {
     />
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Disclaimer slot="disclaimer">
     <p>The Open Source Places data carries a different license than most UGRC data.</p>
@@ -217,10 +218,12 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="GNIS" href="/products/sgid/location/gnis"
+      <CardWithSmallLink title="GNIS" href="/products/sgid/location/gnis" style="secondary"
         >Geographic Names Information System.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Addresses" href="/products/sgid/address">Addressing category index.</CardWithSmallLink>
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address" style="secondary"
+        >Addressing category index.</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>

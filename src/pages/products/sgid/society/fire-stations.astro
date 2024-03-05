@@ -33,13 +33,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout
-  title={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  config={{ skipInDepth: true }}
->
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
@@ -54,9 +48,9 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
-  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+  <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="Fire Marshal" href="https://firemarshal.utah.gov/"
         >Utah Department of Public Safety.</CardWithPopularLink
@@ -67,13 +61,15 @@ const page: IPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Fire Response Areas" href="/products/sgid/society/fire-response-areas"
+      <CardWithSmallLink title="Fire Response Areas" href="/products/sgid/society/fire-response-areas" style="secondary"
         >Responding agency to a fire.</CardWithSmallLink
       >
-      <CardWithSmallLink title="EMS Areas" href="/products/sgid/society/emergency-medical-response-areas"
-        >Emergency medical response areas.</CardWithSmallLink
+      <CardWithSmallLink
+        title="EMS Areas"
+        href="/products/sgid/society/emergency-medical-response-areas"
+        style="secondary">Emergency medical response areas.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

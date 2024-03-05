@@ -7,11 +7,13 @@ import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
 
+import BulletedList from '@components/page/BulletedList.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
+
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
@@ -79,17 +81,17 @@ const page: IPageMetadata = {
     </p>
     <h2>Beaver County</h2>
     <div>Municipalities with their own address origins</div>
-    <ul>
+    <BulletedList>
       <li>Beaver - has own origin - Main St/Hwy 160 (0 E/W) and Center St/Hwy 21 (0 N/S)</li>
       <li>Milford - has own origin - Main St/Hwy 257 (0 E\W) and Center St/ Hwy 21 (0 N/S)</li>
       <li>Minersville - has own origin - Main St (0 N/S) and Center St/Hwy 130 (0 E/W)</li>
-    </ul>
+    </BulletedList>
     <p>
       Some county addresses count off of Beaver. There may be different origins for the county addresses, but it's hard
       to tell with all the null roads. Search 9300 S (8500 N next road north).<br />
       <h2>Box Elder County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Bear River City - counts from Brigham City.</li>
         <li>Brigham City - has own origin - Main St/Hwy 30 (0 E/W) and Forest St (0 N/S)</li>
         <li>Corinne - counts from Brigham City.</li>
@@ -106,11 +108,11 @@ const page: IPageMetadata = {
         <li>Snowville - has own origin - Main St (0 N/S) and Stone Rd (0 E/W)</li>
         <li>Tremonton - has own origin - Main St (0 N/S) and Tremont St (0 E/W)</li>
         <li>Willard - has own origin - Main St (0 E/W) and Center St (0 N/S)</li>
-      </ul>
+      </BulletedList>
       <p>Unincorporated county - counts from Brigham City.</p>
       <h2>Cache County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Amalga - follows unincorporated county (counts from Logan)</li>
         <li>Clarkston - has own origin - Center St (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Cornish - follows unincorporated county (counts from Logan)</li>
@@ -131,14 +133,14 @@ const page: IPageMetadata = {
         <li>Trenton - has own origin - Main St (0 N/S) &amp; Center St (0 E/W)</li>
         <li>Wellsville - has own origin - Main St (0 N/S) &amp; Center St (0 E/W)</li>
         <li>Unincorporated county - counts from Logan</li>
-      </ul>
+      </BulletedList>
       <p>
         * <em
           >Streets in Logan containing addresses that don't count from Logan's address origin correctly. Per Chuck Shaw,
           Logan City GIS and Kent Braddy, Cache Co Planning. (11/12/2008)</em
         >
       </p>
-      <ul>
+      <BulletedList>
         <li>Crockett Ave</li>
         <li>River Park Dr</li>
         <li>Teal Loop</li>
@@ -151,7 +153,7 @@ const page: IPageMetadata = {
         <li>Coventry Pl</li>
         <li>Penhurst Ln</li>
         <li>Trail Cir</li>
-      </ul>
+      </BulletedList>
       <h7><strong>Address numbers for all of Cache County</strong></h7>
       <ul class="dotless no-padding">
         <li><strong>Even</strong> - always on South and East side of the street</li>
@@ -164,21 +166,21 @@ const page: IPageMetadata = {
       </p>
       <h5>Carbon County</h5>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>East Carbon - has its own origin? - SR 123 (0 N/S) &amp; Grassy Trail Dr/ Main St (0 E/W)?</li>
         <li>Helper - has own origin - Janet St (0 N/S) &amp; Main St/Hwy 244 (0 E/W)</li>
         <li>Price - has own origin - Main St (0 N/S) &amp; Carbon Ave/Hwy 10 (0 E/W)</li>
         <li>Scofield - has own origin? - Missing (0 N/S) &amp; Main St/Scofield Hwy/Hwy 96 (0 E/W)</li>
         <li>Sunnyside - Looks like it counts off East Carbon</li>
         <li>Wellington - has own origin - Main St/Hwy 191 (0 N/S) &amp; Center St (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Daggett County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Manila - has its own origin - SR 43 (0 N/S) &amp; Main St/SR 44 (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <div>Unincorporated areas with their own origins (updated 1/11)</div>
-      <ul>
+      <BulletedList>
         <li>Birch Creek - Birch Creek Rd (0 E/W)</li>
         <li>Browns Park</li>
         <li>Clay Basin</li>
@@ -187,10 +189,10 @@ const page: IPageMetadata = {
         <li>Dutch John</li>
         <li>Greendale</li>
         <li>Spirit Lake</li>
-      </ul>
+      </BulletedList>
       <h2>Davis County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Bountiful - has own origin - Center St (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Centerville - has own origin - Center St (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Clearfield - has own origin - Center St (0 N/S) &amp; Main St/State St/SR 126 (0 E/W)</li>
@@ -206,33 +208,33 @@ const page: IPageMetadata = {
         <li>West Bountiful - counts off of Bountiful's address origin (see Bountiful)</li>
         <li>West Point - counts off of Clearfield's address origin (see Clearfield)</li>
         <li>Woods Cross - counts off of Bountiful's address origin (see Bountiful)</li>
-      </ul>
+      </BulletedList>
       <div>Address origins for unincorporated cities</div>
-      <ul>
+      <BulletedList>
         <li>Hill Air Force Base</li>
-      </ul>
+      </BulletedList>
       <div>Notes</div>
-      <ul>
+      <BulletedList>
         <li>
           There is a large pocket of unincorporated county between Bountiful and NSL - addresses count from Bountiful's
         </li>
         origin in this area.
-      </ul>
+      </BulletedList>
       <h2>Duchesne County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Duchesne - intersection of Main St (0 N/S) and Center St (0 E/W)</li>
         <li>Myton - intersection of Main St (0 N/S) and Center St (0 E/W)</li>
         <li>Roosevelt - intersection of Lagoon St (0 N/S) and State St (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <div>
         Municipalities that count from Unincorporated County address origin located at: Intersection of South Cove Rd/US
         40 [200 N Roosevelt] (0 N/S) and State St (0 E/W) in Roosevelt
       </div>
-      <ul>
+      <BulletedList>
         <li>Altamont</li>
         <li>Tabiona</li>
-      </ul>
+      </BulletedList>
       <p>
         The unincorporated county origin covers all of Duchesne County except for the areas within Duchesne City, Myton
         and Roosevelt city boundaries. A significant portion of Uintah County also counts from this origin, including
@@ -246,7 +248,7 @@ const page: IPageMetadata = {
       </p>
       <h2>Emery County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Castle Dale - has own origin - Main St (0 N/S) &amp; Hwy 10 (0 E/W)</li>
         <li>Clawson - has own origin - Center St/Old Hwy 6 (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Cleveland - has own origin - Main St/Hwy 155 (0 N/S) &amp; Center St/Hwy 155 (0 E/W)</li>
@@ -256,10 +258,10 @@ const page: IPageMetadata = {
         <li>Green River - has own origin - Main St/SR 19 (0 N/S) &amp; Long St (0 E/W)</li>
         <li>Huntington - has own origin - Center St (0 N/S) &amp; Main St/Hwy 10 (0 E/W)</li>
         <li>Orangeville - has own origin - Center St (0 N/S) &amp; Main St (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Garfield County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Antimony - ?</li>
         <li>Boulder - ?</li>
         <li>Bryce Canyon City - ?</li>
@@ -269,55 +271,55 @@ const page: IPageMetadata = {
         <li>Henrieville - has own origin - Main St/Hwy 12 (0 N/S) &amp; Center St (0 E/W)</li>
         <li>Panguitch - has own origin - Center St/Hwy 89 (0 N/S) &amp; Main St/Hwy 89/143 (0 E/W)</li>
         <li>Tropic - has own origin - Center St (0 N/S) &amp; Main St/Hwy 12 (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Grand County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Castle Valley - has own origin - Center St/Shafer Ln (0 N/S) &amp; Castle Valley Dr(0 E/W)</li>
         <li>Moab - has own origin - Center St (0 N/S) &amp; Main St/Hwy 191 (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Iron County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Brian Head - has own origin - Bear Flat Rd (0 N/S) &amp; SR 143 (0 E/W) (confirmed 8/10)</li>
         <li>Cedar City - has own origin - Center St/SR 14 (0 N/S) &amp; Main St/SR 130 (0 E/W)</li>
         <li>Enoch - addresses based on Cedar City origin</li>
         <li>Kanarraville - has own origin - Center St (0 N/S) &amp; Main St/Kanarraville Rd (0 E/W)</li>
         <li>Paragonah - has own origin - Center St (0 N/S) &amp; Main St/SR 271 (0 E/W)</li>
         <li>Parowan - has own origin - Center St/SR 143 (0 N/S) &amp; Main St/SR 274 (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Juab County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Eureka - has own origin - Main St/Hwy 6 (0 N/S) &amp; Center St (0 E/W)</li>
         <li>Levan - has own origin - Center St (0 N/S) &amp; Main St/Hwy 28 (0 E/W)</li>
         <li>Mona - has own origin - Center St (0 N/S) &amp; Main St/Hwy 91 (0 E/W)</li>
         <li>Nephi - has own origin - Center St (0 N/S) &amp; Main St/Hwy 41 (0 E/W)</li>
         <li>Rocky Ridge - ?no addresses for any roads?</li>
         <li>Santaquin - *See Utah Co*</li>
-      </ul>
+      </BulletedList>
       <div>Other</div>
-      <ul>
+      <BulletedList>
         <li>Juab County West Grid - has own origin - Snake Valley Rd &amp; Pole Line</li>
-      </ul>
+      </BulletedList>
       <h2>Kane County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Alton - has own origin - Center St (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Big Water - has own origin - US 89 (0 N/S) &amp; Arron Burr Dr (0 E/W)</li>
         <li>Glendale - has own origin - Center St/Mill St (0 N/S) &amp; Main St/SR (0 E/W)</li>
         <li>Kanab - has own origin - Center St/US 89 (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Orderville - has own origin- State St/US 89 (0 N/S) &amp; Center ST (0 E/W) (updated 1/11)</li>
-      </ul>
+      </BulletedList>
       <div>Unincorporated areas with their own address origins (updated 1/11)</div>
-      <ul>
+      <BulletedList>
         <li>Bullfrog</li>
         <li>Cannonville</li>
         <li>Duck Creek</li>
-      </ul>
+      </BulletedList>
       <h2>Millard County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Delta - has own origin - Main St/Hwy 50 (0 N/S) &amp; Center St (0 E/W)</li>
         <li>Fillmore - has own origin - Center St/Eagle Ave (0 N/S) &amp; Main St/SR 99 (0 E/W)</li>
         <li>Hinckley - has own origin - Center St (0 N/S) &amp; Main St (0 E/W)</li>
@@ -328,34 +330,34 @@ const page: IPageMetadata = {
         <li>Meadow - has own origin - Center St (0 N/S) &amp; Main St/SR 133 (0 E/W)</li>
         <li>Oak City - has own origin - Center St (0 N/S) &amp; Main St/Hwy 125 (0 E/W)</li>
         <li>Scipio - has own origin - Center St (0 N/S) &amp; State St/Hwy 50 (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Morgan County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Morgan - has own origin - Young St (0 N/S) &amp; State St/SR 66 (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Piute County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Circleville - has own origin - Main St/US 89 (0 N/S) &amp; Center St (0 E/W)</li>
         <li>Junction - has own origin - Center St/SR 153 (0 N/S) &amp; Main St/US 89 (0 E/W)</li>
         <li>Kingston - has own origin - Main St/SR 62 (0 N/S) &amp; Center St/Kingston Ln (0 E/W)</li>
         <li>Marysvale - has own origin - Center St/Bullion Ave (0 N/S) &amp; Main St/US 89 (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <div>Unincorporated towns with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Angle - has own origin - Mani St (0 N/S) &amp; SR 62 (0 E/W) (updated 1/11)</li>
         <li>Greenwich - has own origin - Center St (0 N/S) & Main St/SR 62 (0 E/W) (updated 1/11)</li>
         <li>Otter Creek - has own origin - Junction of SR 62 &amp; SR 22 (updated 1/11)</li>
-      </ul>
+      </BulletedList>
       <h2>Rich County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Garden City - has own origin - Logan Rd/US 89 (0 N/S) &amp; Bear Lake Blvd/Us 89/SR 30 (0 E/W)</li>
         <li>Lake Town - has own origin - Center St (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Randolph - has own origin - Church St (0 N/S) &amp; Main St/SR 16 (0 E/W)</li>
         <li>Woodruff - has own origin - Center St/Monte Cristo Hwy/SR 39 (0 N/S) &amp; Main St/SR 16 (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Salt Lake County</h2>
       <p>Address origins</p>
       <div>
@@ -364,7 +366,7 @@ const page: IPageMetadata = {
           ><strong>with the exception of the following two areas</strong></em
         >:
       </div>
-      <ul>
+      <BulletedList>
         <li>
           Copperton - located between county coordinates of 10200 S and 10600 S (approximately) &amp; 8500 W and 8900 W
         </li>
@@ -374,16 +376,16 @@ const page: IPageMetadata = {
           from
         </li>
         Dimple Dell Rd (10650 S) to Lone Hollow Rd (11270 S).
-      </ul>
+      </BulletedList>
       <h2>San Juan County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Blanding - has own origin - Center St/Hwy 191 (0 N/S) &amp; Main St/Hwy 191 (0 E/W)</li>
         <li>Monticello - has own origin - Center St/Hwy 491 (0 N/S) &amp; Main St/Hwy 191 (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Sanpete County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Centerfield - has own origin - Center St (0 N/S) &amp; Main St/Hwy 89 (0 E/W)</li>
         <li>Ephraim - has own origin - Center St (0 N/S) &amp; Main St/Hwy 89 (0 E/W)</li>
         <li>Fairview - has own origin - Center St (0 N/S) &amp; State St/Hwy 89 (0 E/W)</li>
@@ -397,10 +399,10 @@ const page: IPageMetadata = {
         <li>Spring City - has own origin - Center St (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Sterling - has own origin - Center St (0 N/S) &amp; Hwy 89 (0 E/W)</li>
         <li>Wales - has own origin - Center St (0 N/S) &amp; State St (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <h2>Sevier County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Annabella - has own origin - Main St (0 E/W) and Center St (0 N/S)</li>
         <li>Aurora - has own origin - Hwy 260 (0 E/W) and Center St (0 N/S)</li>
         <li>Central Valley - has own origin - Main St (0 E/W) and Center St (0 N/S)</li>
@@ -413,28 +415,28 @@ const page: IPageMetadata = {
         <li>Richfield - has own origin - Main St (0 E/W) and Center St (0 N/S)</li>
         <li>Salina - has own origin - Main St (0 N/S) and State St (0 E/W)</li>
         <li>Sigurd - has own origin - Main St &amp; Center St</li>
-      </ul>
+      </BulletedList>
       <div>Unincorporated areas with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Accord Lakes - ?</li>
         <li>Fish Lake - Twin Creek Road &amp; SR 25 (?)</li>
         <li>Monroe Mountain - Around Cove Mountain Road &amp; White Pine Creek Rd (?)</li>
         <li>Venice - Venice Main St (0 E/W) &amp; Venice Center St (0 N/S)</li>
         <li>Sevier - ?</li>
-      </ul>
+      </BulletedList>
       <h2>Summit County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Coalville - has own origin - Center St (0 N/S) and Main St (0 E/W)</li>
         <li>Francis - counts off of Kamas' address origin (see Kamas).</li>
         <li>Henefer - has own origin - Center St (0 N/S) and Main St/SR 86 (0 E/W)</li>
         <li>Kamas - has own origin - Center St/SR 150 (0 N/S) and Main St/SR 32 (0 E/W)</li>
         <li>Oakley - counts off of Kamas' address origin (see Kamas)</li>
         <li>Park City - ?</li>
-      </ul>
+      </BulletedList>
       <h2>Tooele County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Grantsville - has own origin - Main St/Hwy 138 (0 N/S) &amp; Hale St (0 E/W)</li>
         <li>
           Ophir - has own origin - Ophir Canyon Rd/Main St (0 N\S) there is no E/W center line marked by a street. E/W
@@ -453,10 +455,10 @@ const page: IPageMetadata = {
           on
         </li>
         the north side of Wendover Blvd and 1st St on the south side of Wendover Blvd (0 E/W)
-      </ul>
+      </BulletedList>
       <h2>Uintah County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>
           Ballard - counts from Duchesne Co origin - US 40 [200 N Roosevelt] (0 N/S - Ballard) &amp; State St (0 E/W -
         </li>
@@ -464,9 +466,9 @@ const page: IPageMetadata = {
         <li>Naples - addresses based on Vernal's origin</li>
         <li>Vernal - has own origin - Main St/US 40 (0 N/S) &amp; Vernal Ave/US 191 (0 E/W)</li>
         <li>Unincorporated county - approx 75% counts from Vernal, approx 25% counts from Duchesne Co origin</li>
-      </ul>
+      </BulletedList>
       <h2>Utah County</h2>
-      <ul>
+      <BulletedList>
         <li>Alpine - has own origin - Center St (0 N/S) &amp; Main St (0 E/W)</li>
         <li>American Fork - has own origin - Main St (0 N/S) &amp; Center St (0 E/W)</li>
         <li>Cedar Fort - has own origin - Center St (0 N/S) &amp; Church St (0 E/W)</li>
@@ -518,10 +520,10 @@ const page: IPageMetadata = {
         </li>
         T7S R2E and sections 6 &amp; 7 of T7S R3E. This is the origin for all unincorporated areas as well as Cedar Hills,
         Fairfield and Highland, but not Provo.
-      </ul>
+      </BulletedList>
       <h2>Wasatch County</h2>
       <div>Municipalities with their own address origins</div>
-      <ul>
+      <BulletedList>
         <li>Charleston - counts from Heber City</li>
         <li>Daniel - counts from Heber City</li>
         <li>Heber City - has own origin - Main St (0 E/W) and Center St (0 N/S)</li>
@@ -534,11 +536,11 @@ const page: IPageMetadata = {
         <li>
           Wallsburg - has own origin - E Main St/ W Main Canyon Rd (0 N/S) and N Center St/S Main Canyon Rd (0 E/W)
         </li>
-      </ul>
+      </BulletedList>
       <p>Add Independence and Hideout once their municipality borders are obtained</p>
       <h2>Washington County</h2>
       <div>Address origins (last edited 10/29/08)</div>
-      <ul>
+      <BulletedList>
         <li>
           Springdale - No prefix or suffix directionals used. There is also no official address origin. If there was an
         </li>
@@ -548,8 +550,8 @@ const page: IPageMetadata = {
         2 from house to house or by 50. All segments of ZPB have S as the prefix directional, since the origin would be the
         north city boundary. E-911 is uses address points for Springdale. (per Tom Dansie - Director of Community Development
         - 10/29/08)
-      </ul>
-      <ul>
+      </BulletedList>
+      <BulletedList>
         <li>Toquerville - Center St (0 N/S) &amp; Toquerville Blvd (0 E/W)</li>
         <li>Leeds - Center St (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Rockville - Main St (0 N/S) &amp; Center St (0 E/W)</li>
@@ -571,7 +573,7 @@ const page: IPageMetadata = {
         <li>St George - Tabernacle St (0 N/S) &amp; Main St (0 E/W)</li>
         <li>Santa Clara - addresses count from St George origin</li>
         <li>Washington - Telegraph St (0 N/S) &amp; Main St (0 E/W)</li>
-      </ul>
+      </BulletedList>
       <p>
         <strong>Irregularities</strong>: Some alpha roads that have <coe>SUF_DIR</coe> populated (e.g. Bloomington Dr N)
         and numeric roads with <coder>S_TYPE</coder> populated (e.g. 2780 S Cir).
@@ -582,7 +584,7 @@ const page: IPageMetadata = {
       </p>
       <h2>Wayne County</h2>
       <div>Address origins</div>
-      <ul>
+      <BulletedList>
         <li>Bicknell - has own origin - Main St/SR 24 (0 N/S) &amp; Center St (0 E/W)</li>
         <li>Caineville - has own origin - SR 24 (0 N/S) &amp; Center St (0 E/W) (updated 1/11)</li>
         <li>Grover- has own origin- SR 12 (0 N/S) &amp; Center St (0 E/W) (updated 1/11)</li>
@@ -594,7 +596,7 @@ const page: IPageMetadata = {
         <li>Torrey - has own origin - Main St (0 N/S) &amp; Center St (0 E/W)</li>
         <li>Others as per 2007? countywide address grid and resigning project?</li>
         <li>Others as of 2011- Old Fishlake, Capitol Reef National Park, Notom</li>
-      </ul>
+      </BulletedList>
       <h2>Weber County</h2>
       <div>Countywide origin - Wall Ave (100 E/W) between addresses of 120 N Wall and 106 (S) Wall Ave (in Ogden)</div>
     </p>
@@ -621,16 +623,16 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov">
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov" style="secondary">
         This web app uses the address points for geocoding and you can toggle an address point base map layer.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary">
         Transportation related data sets.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Addresses" href="/products/sgid/address">
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address" style="secondary">
         Address related datasets, applications, and services.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Discover" href="/products/discover">
+      <CardWithSmallLink title="Discover" href="/products/discover" style="secondary">
         Discover has an address point base map service for your projects and maps.
       </CardWithSmallLink>
     </GridForYouMightLike>
