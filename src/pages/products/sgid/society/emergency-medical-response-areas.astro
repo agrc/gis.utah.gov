@@ -18,7 +18,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah EMS Response Areas',
-  description: `Area of the primary agency that will respond to a medical emergency`,
+  description: `Area of the primary agency that will respond to a medical emergency.`,
   stewards: ['UGRC'],
   type: ProductType.POLYGON,
   category: SgidCategory.SOCIETY,
@@ -39,14 +39,8 @@ const page: IPageMetadata = {
   <Fragment slot="summary">
     <p>
       Emergency Medical Services (EMS) Response Areas in Utah represent the primary agency that will respond to medical
-      emergencies at a given location. The dataset was created to provide response recommendations for the
-      Next-Generation 911 system and was compiled from a variety of data sources. The response areas represent a variety
-      of service levels (paramedic, advanced EMT, with or without transport capability, etc.), but generally include 911
-      scene response. The data was compiled using written descriptions from the licensing database of the Bureau of
-      Emergency Medical Services and Preparedness (BEMSP), which is part of the Utah Department of Health and Human
-      Services (DHHS). In some instances, the BEMSP data was incomplete or the written descriptions were inaccurate,
-      contradictory, ambiguous, or failed to close. To make the data more complete, computer-aided dispatch (CAD) data
-      from within the state was used to resolve conflicts, fill in gaps, and improve completeness.
+      emergencies at a given location. The response areas represent a variety of service levels (paramedic, advanced
+      EMT, with or without transport capability, etc.), but generally include 911 scene response.
     </p>
   </Fragment>
 
@@ -55,6 +49,17 @@ const page: IPageMetadata = {
   </Section>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Fragment slot="description">
+    <p>
+      The dataset was created to provide response recommendations for the Next-Generation 911 system and was compiled
+      from a variety of data sources. The data was compiled using written descriptions from the licensing database of
+      the Bureau of Emergency Medical Services and Preparedness (BEMSP), which is part of the Utah Department of Health
+      and Human Services (DHHS). In some instances, the BEMSP data was incomplete or the written descriptions were
+      inaccurate, contradictory, ambiguous, or failed to close. To make the data more complete, computer-aided dispatch
+      (CAD) data from within the state was used to resolve conflicts, fill in gaps, and improve completeness.
+    </p>
+  </Fragment>
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
