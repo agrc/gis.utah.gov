@@ -1,5 +1,4 @@
 ---
-import ExternalLink from '@components/page/ExternalLink.astro';
 import Layout from '@layouts/DataPage.astro';
 
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
@@ -19,10 +18,10 @@ import Contacts from '@components/page/Contacts.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah DEQ Brownfields Targeted',
-  description: 'Brownfields targeted for cleanup.',
+  title: 'Utah DEQ Environmental Covenant Buffer Zones',
+  description: 'Locations of Institutional Control Buffer Zones.',
   stewards: ['DEQ DERR'],
-  type: ProductType.POINT,
+  type: ProductType.POLYGON,
   category: SgidCategory.ENVIRONMENT,
 };
 
@@ -39,41 +38,20 @@ const page: IPageMetadata = {
 <Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
-  <Fragment slot="summary">
-    <p>
-      Brownfields are real property, the expansion, redevelopment, or reuse of which may be complicated by the presence
-      or potential presence of a hazardous substance, pollutant, or contaminant. Cleaning up and reinvesting in these
-      properties takes development pressures off of undeveloped open land, and both improves and protects the
-      environment. For more information, see <ExternalLink href="http://www.epa.gov/brownfields/"
-        >the EPA website</ExternalLink
-      >.
-    </p>
-  </Fragment>
+  <Fragment slot="summary"> Institutional Control Buffer Zones in Utah. </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
     <HubDownloads {...page.hub} />
   </Section>
 
   <Fragment slot="description">
-    <p>
-      This data layer contains the coordinates of Brownfields Projects derived from maps and GPS data, these locations
-      represent sites, not contaminated areas. The coordinate data have been created and utilized by the DERR for the
-      plotting of Brownfields Projects on maps depicting the State and several counties. The data used to produce these
-      maps have been reviewed by DERR staff and found to be adequate for DERR's purposes which require the depiction of
-      general locational information. The accuracy of these locations may not be sufficient for other purposes. Persons
-      relying upon these maps do so at their own risk. The DERR assumes no responsibility or liability for the accuracy
-      of these points.
-    </p>
-    <Contacts contactKey="brownfields" />
+    <Contacts contactKey="deq" />
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="DERR" href="https://deq.utah.gov/division-environmental-response-remediation/"
-        >Division of Environmental Response and Remediation</CardWithPopularLink
-      >
       <CardWithPopularLink title="DEQ" href="https://deq.utah.gov"
         >Utah Department of Environmental Quality</CardWithPopularLink
       >
@@ -87,11 +65,6 @@ const page: IPageMetadata = {
       >
       <CardWithSmallLink title="Environment" href="/products/sgid/environment" style="secondary"
         >SGID Environment category</CardWithSmallLink
-      >
-      <CardWithSmallLink
-        title="Brownfields Not Targeted"
-        href="/products/sgid/environment/brownfields-not-targeted"
-        style="secondary">Related data</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
