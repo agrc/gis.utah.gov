@@ -12,7 +12,7 @@ date: 2016-12-30T22:58:57.000Z
 title: End of year 2016 (fourth quarter) Updates for Municipal Boundaries
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -32,7 +32,7 @@ website](https://municert.utah.gov/2016-certifications).
 The following are the changes and annexations since Sept. 9, 2016 listed by County and City:
 
 | County    | City                    | Number of Changes |
-|-----------|-------------------------|-------------------|
+| --------- | ----------------------- | ----------------- |
 | Box Elder | Garland                 | 1                 |
 |           | Willard (Dissolve)      | 1                 |
 | Cache     | Hyrum                   | 1                 |

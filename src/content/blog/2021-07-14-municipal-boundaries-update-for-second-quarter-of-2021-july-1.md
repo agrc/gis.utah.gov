@@ -10,7 +10,7 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -22,7 +22,7 @@ To review any specific annexation document, go to the [Utah Lt. Governor Municip
 The following table shows the changes and annexations (listed by county and city) since April 1, 2021:
 
 | County     | City                       | Number of Changes |
-|------------|----------------------------|-------------------|
+| ---------- | -------------------------- | ----------------- |
 | Cache      | Hyde Park                  | 1                 |
 |            | Logan                      | 1                 |
 |            | Providence                 | 2                 |

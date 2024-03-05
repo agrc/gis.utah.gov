@@ -8,7 +8,7 @@ date: 2021-01-04T16:01:51.000Z
 tags:
   - sgid
 category: SGID
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

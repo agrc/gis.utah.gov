@@ -11,7 +11,7 @@ date: 2016-07-06T17:22:32.000Z
 title: SITLA is Moving to the Utah PLSS Parcel Fabric
 published: false
 category: Guestblog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

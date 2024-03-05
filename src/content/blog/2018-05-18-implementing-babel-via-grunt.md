@@ -8,7 +8,7 @@ date: 2018-05-18T21:25:37.000Z
 tags:
   - javascript
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

@@ -10,7 +10,7 @@ tags:
   - municipalities
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -21,7 +21,7 @@ A little reminder for everyone: changes to city boundaries can affect related bo
 Following are the changes and annexations since January 1, 2018, listed by county and city:
 
 | County    | City                    | Number of Changes |
-|-----------|-------------------------|-------------------|
+| --------- | ----------------------- | ----------------- |
 | Cache     | Hyde Park               | 1                 |
 |           | Logan                   | 1                 |
 |           | Paradise                | 1                 |

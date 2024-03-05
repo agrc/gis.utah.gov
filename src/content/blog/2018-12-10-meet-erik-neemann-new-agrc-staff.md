@@ -7,7 +7,7 @@ author:
 date: 2018-12-10T17:57:17.000Z
 tags: []
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

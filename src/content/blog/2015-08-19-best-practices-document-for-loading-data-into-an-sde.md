@@ -9,7 +9,7 @@ date: 2015-08-19 16:38:44 -0600
 title: Best Practices for Loading Data into an SDE
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

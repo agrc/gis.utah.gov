@@ -10,7 +10,7 @@ date: 2013-06-05 14:47:11 -0600
 title: Utah SGID Layer Updates
 published: false
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

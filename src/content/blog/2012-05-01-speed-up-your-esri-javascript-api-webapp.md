@@ -9,7 +9,7 @@ date: 2012-05-01 13:57:31 -0600
 published: false
 title: Using The Dojo Build System To Speed Up Your ESRI JavaScript API Apps
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

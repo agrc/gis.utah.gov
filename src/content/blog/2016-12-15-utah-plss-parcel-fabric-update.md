@@ -10,7 +10,7 @@ date: 2016-12-15T22:57:07.000Z
 title: Utah PLSS Parcel Fabric Update
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

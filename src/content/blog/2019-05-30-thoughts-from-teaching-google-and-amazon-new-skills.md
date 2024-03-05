@@ -6,7 +6,7 @@ author:
 date: 2019-05-30T10:05:51.000Z
 tags: []
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

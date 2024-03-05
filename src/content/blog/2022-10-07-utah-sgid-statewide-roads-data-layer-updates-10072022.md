@@ -8,7 +8,7 @@ date: 2022-10-07T07:30:00.000Z
 tags:
   - Roads
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

@@ -6,7 +6,7 @@ tags: []
 date: 2015-08-24 08:55:37 -0600
 title: Boost Your Productivity With Vim
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

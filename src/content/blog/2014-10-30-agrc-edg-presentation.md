@@ -5,7 +5,7 @@ tags: []
 date: 2014-10-30 11:44:52 -0600
 title: Using UGRC's Geocoding and Map-based Web Services
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

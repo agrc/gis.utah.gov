@@ -8,7 +8,7 @@ tags:
   - municipal boundaries
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -19,7 +19,7 @@ Be sure to check out all the changes that have been made and to make sure your b
 The following table shows the changes and annexations (listed by county and city) since July 1, 2023:
 
 | County        | City                       | Number of Changes |
-|---------------|----------------------------|-------------------|
+| ------------- | -------------------------- | ----------------- |
 | Box Elder     | Brigham City               | 1                 |
 |               | Perry                      | 1                 |
 | Grand         | Moab                       | 1                 |

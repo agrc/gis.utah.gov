@@ -3,13 +3,13 @@ author:
   display_name: JP
   email: ugrc@utah.gov
 tags:
-  - "2014"
+  - '2014'
   - maps on the hill
 published: false
 date: 2014-01-23 14:57:28 -0700
 title: Come to Maps on the Hill 2014!
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

@@ -7,7 +7,7 @@ date: 2016-03-30T22:03:31.000Z
 title: 3D Elevation Program Proposal
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

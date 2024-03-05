@@ -9,7 +9,7 @@ date: 2016-03-28T15:49:19.000Z
 title: Converting Dojo-AMD Projects To TypeScript
 published: false
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

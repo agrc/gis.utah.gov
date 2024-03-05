@@ -8,7 +8,7 @@ date: 2013-07-09 14:34:21 -0600
 title: UGRC Base Map Services Now Accessible via ArcGIS Online
 published: false
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

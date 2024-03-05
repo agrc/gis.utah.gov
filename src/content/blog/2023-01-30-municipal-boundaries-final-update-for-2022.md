@@ -8,7 +8,7 @@ tags:
   - municipal boundaries
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -25,7 +25,7 @@ As always feel free to view all the changes and make sure your boundaries are wh
 The following table shows the changes and annexations (listed by county and city) from the 2022 year:
 
 | County     | City                 | Number of Changes |
-|------------|----------------------|-------------------|
+| ---------- | -------------------- | ----------------- |
 | Beaver     | Beaver               | 1                 |
 | Box Elder  | Garland              | 2                 |
 |            | Tremonton            | 1                 |

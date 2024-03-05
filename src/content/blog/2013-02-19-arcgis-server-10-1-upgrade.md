@@ -7,7 +7,7 @@ published: false
 date: 2013-02-19 15:56:15 -0700
 title: ArcGIS Server 10.1 Upgrade
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

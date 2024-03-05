@@ -8,7 +8,7 @@ date: 2017-07-31T15:39:16.000Z
 tags:
   - conference
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

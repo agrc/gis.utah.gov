@@ -1,5 +1,5 @@
 ---
-title: "Python Shorts: Loading an Open SGID Layer into pandas"
+title: 'Python Shorts: Loading an Open SGID Layer into pandas'
 author:
   display_name: Jake Adams and Scott Davis
   email: jdadams@utah.gov
@@ -7,7 +7,7 @@ date: 2022-12-22T11:00:00.000Z
 tags:
   - python
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

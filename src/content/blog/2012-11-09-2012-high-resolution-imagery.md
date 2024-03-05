@@ -12,7 +12,7 @@ published: false
 date: 2012-11-09 14:00:26 -0700
 title: 2012 High Resolution Imagery Now Available
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

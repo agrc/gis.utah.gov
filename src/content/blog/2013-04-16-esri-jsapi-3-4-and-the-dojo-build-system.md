@@ -8,7 +8,7 @@ date: 2013-04-16 06:43:30 -0600
 title: ESRI JSAPI 3.4 and the Dojo Build System
 published: false
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

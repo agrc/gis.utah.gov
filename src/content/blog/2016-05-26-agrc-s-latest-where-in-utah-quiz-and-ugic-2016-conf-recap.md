@@ -11,7 +11,7 @@ date: 2016-05-26T19:01:07.000Z
 title: UGRC&#039;s Latest Where in Utah Quiz and UGIC 2016 Conf Recap
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

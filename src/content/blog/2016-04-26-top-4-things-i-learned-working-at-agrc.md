@@ -4,10 +4,10 @@ author:
   email: christyheaton@gmail.com
 tags: []
 date: 2016-04-26T14:15:06.000Z
-title: "Guest Blog: Things I Learned Working at the Utah UGRC"
+title: 'Guest Blog: Things I Learned Working at the Utah UGRC'
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

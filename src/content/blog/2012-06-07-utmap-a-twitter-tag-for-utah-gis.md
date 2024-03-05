@@ -7,9 +7,9 @@ tags:
   - ugic
 date: 2012-06-07 12:41:35 -0600
 published: false
-title: "#utmap: A Twitter Tag for Utah GIS"
+title: '#utmap: A Twitter Tag for Utah GIS'
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

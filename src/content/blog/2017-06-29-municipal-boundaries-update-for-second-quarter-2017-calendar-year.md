@@ -10,7 +10,7 @@ date: 2017-06-29T15:39:01.000Z
 title: Municipal Boundaries update for second quarter 2017 (calendar year)
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -21,7 +21,7 @@ Be sure to share data with your Clerks office or others that may have an interes
 Following are the changes and annexations since March. 30, 2017, listed by County and City:
 
 | County     | City                      | Number of Changes |
-|------------|---------------------------|-------------------|
+| ---------- | ------------------------- | ----------------- |
 | Box Elder  | Tremonton                 | 3                 |
 | Cache      | Hyrum                     | 1                 |
 |            | Logan                     | 1                 |

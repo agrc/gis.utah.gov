@@ -8,7 +8,7 @@ tags:
   - municipal boundaries
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -19,7 +19,7 @@ If you are interested in your cities growth, check out all the changes and make 
 The following table shows the changes and annexations (listed by county and city) since January 1, 2023:
 
 | County    | City        | Number of Changes |
-|-----------|-------------|-------------------|
+| --------- | ----------- | ----------------- |
 | Box Elder | Elwood      | 1                 |
 |           | Garland     | 1                 |
 |           | Willard     | 2                 |

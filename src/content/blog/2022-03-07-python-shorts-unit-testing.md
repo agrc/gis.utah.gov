@@ -1,5 +1,5 @@
 ---
-title: "Python Shorts: The Benefits of Unit Testing"
+title: 'Python Shorts: The Benefits of Unit Testing'
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov
@@ -7,7 +7,7 @@ date: 2022-03-07T16:00:00.000Z
 tags:
   - python
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

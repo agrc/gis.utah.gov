@@ -7,7 +7,7 @@ date: 2023-11-08T21:43:59.000Z
 tags:
   - sgid
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

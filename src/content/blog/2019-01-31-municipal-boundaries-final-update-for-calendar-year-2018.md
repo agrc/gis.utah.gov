@@ -10,7 +10,7 @@ tags:
   - municipal boundaries
   - census
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -27,7 +27,7 @@ Our annual submission to the US Census Bureau Boundary and Annexation Survey (BA
 The following table shows the changes and annexations (listed by county and city) since September 1, 2018:
 
 | County     | City                            | Number of Changes |
-|------------|---------------------------------|-------------------|
+| ---------- | ------------------------------- | ----------------- |
 | Box Elder  | Brigham City                    | 1                 |
 | Cache      | Providence                      | 1                 |
 |            | Smithfield                      | 1                 |

@@ -9,7 +9,7 @@ date: 2018-02-26T23:45:28.000Z
 tags:
   - nodejs
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

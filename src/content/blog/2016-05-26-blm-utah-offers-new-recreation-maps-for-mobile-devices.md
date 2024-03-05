@@ -11,7 +11,7 @@ date: 2016-05-26T16:10:01.000Z
 title: BLM-Utah Offers New Recreation Maps for Mobile Devices
 published: false
 category: Guestblog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

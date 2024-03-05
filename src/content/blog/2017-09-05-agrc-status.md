@@ -7,7 +7,7 @@ date: 2017-09-05T18:29:31.000Z
 tags:
   - monitoring
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
