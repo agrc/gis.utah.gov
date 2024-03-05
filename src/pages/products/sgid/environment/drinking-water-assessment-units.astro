@@ -1,0 +1,82 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import Contacts from '@components/page/Contacts.astro';
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah DWQ Assessment Units',
+  description:
+    'Shows the delineated boundaries of the Division of Water Quality assessment unit and the 2006 assessment category for meeting State of Utah water quality standards.',
+  stewards: ['DEQ DERR'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.ENVIRONMENT,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://enviro.deq.utah.gov',
+  updateHistory: ['2010'],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Polygons representing water quality assessment units for the State of Utah. Stream assessment units are delineated
+      by sub-watershed polygons. Some mainstream rivers and streams are delineated to exclude all tributaries and
+      include left and right bank only. Polygon delineation of 132 monitored lakes includes the lake high water mark or
+      spillway level.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <Contacts contactKey="drinking_water" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="DWQ" href="https://deq.utah.gov/division-water-quality/"
+        >Division of Water Quality</CardWithPopularLink
+      >
+      <CardWithPopularLink title="DEQ" href="https://deq.utah.gov"
+        >Utah Department of Environmental Quality</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
+        >Web application showing off SGID services & data</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Environment" href="/products/sgid/environment" style="secondary"
+        >SGID Environment category</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
