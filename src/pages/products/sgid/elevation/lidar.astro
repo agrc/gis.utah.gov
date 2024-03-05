@@ -17,6 +17,7 @@ import femaHQ2020Map from '@images/sgid/lidar_femahq_2020_coverage.png';
 import fishSprings2022Map from '@images/sgid/lidar_fish_springs_2022_coverage.png';
 import forge2016Map from '@images/sgid/lidar_forge_coverage.png';
 import gsl2016Map from '@images/sgid/lidar_gsl_coverage.png';
+import gsl2011Map from '@images/sgid/lidar_gsl_iron_2011_coverage.png';
 import uintahHeber2018Map from '@images/sgid/lidar_heber_uintah_basin_2018_coverage.png';
 import kanab2016Map from '@images/sgid/lidar_kanab_2016_coverage.png';
 import kaneCounty2019Map from '@images/sgid/lidar_kane_county_2019_coverage.png';
@@ -31,6 +32,7 @@ import sanpeteValley2018Map from '@images/sgid/lidar_sanpete_valley_2018_coverag
 import southern2018Map from '@images/sgid/lidar_southern_utah_2018_coverage.png';
 import southern2020Map from '@images/sgid/lidar_southern_utah_2020_coverage.png';
 import strawberryRiver2019Map from '@images/sgid/lidar_strawberry_river_2019_coverage.png';
+import wasatch2006Map from '@images/sgid/lidar_wasatch_front_2006_coverage.png';
 import wasatchFront2013Map from '@images/sgid/lidar_wasatch_front_2013-2014_coverage.png';
 import washingtonCounty2017Map from '@images/sgid/lidar_washington_co_coverage.png';
 import washakie2017Map from '@images/sgid/lidar_wvw_coverage.png';
@@ -40,7 +42,7 @@ import { stripeSections } from '@utils/page';
 
 export const metadata: IMetadata = {
   title: 'Lidar elevation data',
-  description: `All LiDAR projects across Utah since 2006.`,
+  description: `All Lidar projects across Utah since 2006.`,
   stewards: ['UGRC'],
   type: ProductType.RASTER,
   category: SgidCategory.ELEVATION,
@@ -54,7 +56,8 @@ const page: IStandardPageMetadata = {
     {
       title: '2006 Wasatch Front, Iron County, Heber Valley',
       actionText: 'Download from Raster',
-      actionUrl: 'https://raster.utah.gov/?cat=2%20Meter%20%7B2006%20LiDAR%7D',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=2%20Meter%20%7B2006%20LiDAR%7D,1.25%20Meter%20%7B2006%20LiDAR%7D,1%20Meter%20%7B2006%20LiDAR%7D&title=2006%20LiDAR',
     },
     {
       title: '2011 Great Salt Lake, Cedar Valley, Hurricane Fault',
@@ -69,7 +72,8 @@ const page: IStandardPageMetadata = {
     {
       title: '2015 Zion National Park',
       actionText: 'Download from Raster',
-      actionUrl: 'https://gis.utah.gov/data/elevation-and-terrain/2015-lidar-zion-np/',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2015%20Zion%20NP%20LiDAR%7D,1%20Meter%20%7B2015%20Zion%20NP%20LiDAR%7D&title=Zion%20National%20Park%202015%20LiDAR',
     },
     {
       title: '2015 Colorado, Green & Yampa Rivers',
@@ -610,7 +614,7 @@ const projectAssets = {
       /></a
     >
     <p>
-      Light Detection and Ranging (LiDAR) is an optical remote sensing technology that can measure the distance to, or
+      Light Detection and Ranging (Lidar) is an optical remote sensing technology that can measure the distance to, or
       other properties of, a target by illuminating the target with light often using pulses from a laser. Currently
       this is the most accurate elevation dataset UGRC has and bare-earth DEMs/DTMs and first-return DSMs are available
       for most of Utah.
@@ -625,6 +629,10 @@ const projectAssets = {
       reports, metadata, and vector data associated with each project.
     </p>
     <p>
+      With a few exceptions projects have a UTM NAD83(2011) zone 12 north meters NAVD88 projection however the geoid
+      model can vary. For more information refer to the project specific reports and metadata.
+    </p>
+    <p>
       The naming convention for the tile downloads are based off the <ExternalLink
         href="https://www.fgdc.gov/usng/how-to-read-usng/index_html">U.S. National Grid (USNG)</ExternalLink
       >.
@@ -635,7 +643,7 @@ const projectAssets = {
       National Map downloader also facilitates bulk downloads.
     </p>
     <p>
-      For more information about LiDAR visit <a href="{% link data/elevation-and-terrain/exploring-lidar/index.html %}"
+      For more information about Lidar visit <a href="{% link data/elevation-and-terrain/exploring-lidar/index.html %}"
         >Exploring LiDAR</a
       >.
     </p>
@@ -646,12 +654,11 @@ const projectAssets = {
     >
     <p>
       In 2022 the U.S. Geological Survey (USGS) acquired 29.5 square miles of 8 points per meter Quality Level 1
-      Topobathymetric LiDAR of Fish Springs National Wildlife Refuge in Utah. The .5 resolution topo-bathy DEMs in .tif
+      Topobathymetric Lidar of Fish Springs National Wildlife Refuge in Utah. The 0.5 resolution topo-bathy DEMs in .tif
       format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available
       from <ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink>. This elevation
       data was collected September 24, 2022.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID18) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.fishSprings} />
   </Section>
   <Section {...page.section[26]}>
@@ -661,12 +668,11 @@ const projectAssets = {
     <p>
       During 2020 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), the
       U.S. Forest Service (USFS), and the Federal Emergency Management Agency (FEMA) acquired ~13,686 square miles of 2
-      and 8 points per meter Quality Level 1 & 2 LiDAR of portions Utah. The .5 and 1 meter resolution bare earth DEMs
+      and 8 points per meter Quality Level 1 & 2 Lidar of portions Utah. The 0.5 and 1 meter resolution bare earth DEMs
       in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are
       available from <ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink>. This
       elevation data was collected between August and November, 2020.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID18) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.femaHQ} />
   </Section>
   <Section {...page.section[25]}>
@@ -675,7 +681,7 @@ const projectAssets = {
     >
     <p>
       During 2020 Utah State University, Utah Water Research Laboratory acquired ~216 square miles of 8 points per meter
-      LiDAR of the Logan River Watershed in Northern Utah. The 0.5 meter resolution bare earth DEMs and
+      Lidar of the Logan River Watershed in Northern Utah. The 0.5 meter resolution bare earth DEMs and
       first-return/highest-hit DSMs in .tif format have been tested to a 0.106 ft vertical RMSE accuracy and are
       available for download. This elevation data was collected August 12-13, 2020.
     </p>
@@ -693,15 +699,11 @@ const projectAssets = {
     >
     <p>
       During 2020 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Division of Emergency Management
-      acquired ~5,143 square miles of 2 points per meter Quality Level 2 LiDAR of portions of Central and Southern Utah.
+      acquired ~5,143 square miles of 2 points per meter Quality Level 2 Lidar of portions of Central and Southern Utah.
       The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical
       RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >. This elevation data was collected between September and October, 2020.
-    </p>
-    <p>
-      This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection with the exception of a
-      small strip on the western edge of the project area in zone 11.
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.centralSouthern} />
   </Section>
@@ -716,8 +718,8 @@ const projectAssets = {
     >
     <p>
       During 2020 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Division of Emergency Management
-      acquired ~5,262 square miles of 2 and 8 points per meter Quality Level 1 & 2 LiDAR of portions of Northern and
-      Central Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have
+      acquired ~5,262 square miles of 2 and 8 points per meter Quality Level 1 & 2 Lidar of portions of Northern and
+      Central Utah. The 0.5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have
       a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >. This elevation data was collected between April and July, 2020.
@@ -734,15 +736,11 @@ const projectAssets = {
     >
     <p>
       During 2020 UGRC and the Utah Division of Emergency Management acquired ~9,740 square miles of 2 and 8 points per
-      meter Quality Level 1 & 2 LiDAR of portions of Southern Utah. The .5 and 1 meter resolution bare earth DEMs and
+      meter Quality Level 1 & 2 Lidar of portions of Southern Utah. The 0.5 and 1 meter resolution bare earth DEMs and
       first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download.
       The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
         >The National Map</ExternalLink
       >. This elevation data was collected between May and July, 2020.
-    </p>
-    <p>
-      This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection with the exception of a
-      small strip on the western edge of the project area in zone 11.
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.southern2020} />
   </Section>
@@ -752,13 +750,12 @@ const projectAssets = {
     >
     <p>
       During 2019 UGRC and the Utah Division of Emergency Management acquired ~6,114 square miles of 2 points per meter
-      Quality Level 2 LiDAR of Kane County and portions of the Greater Sevier Watershed. The 1 meter resolution bare
+      Quality Level 2 Lidar of Kane County and portions of the Greater Sevier Watershed. The 1 meter resolution bare
       earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available
       for download. The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
         >The National Map</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.kaneCounty} />
   </Section>
   <Section {...page.section[20]}>
@@ -772,14 +769,13 @@ const projectAssets = {
     >
     <p>
       During 2019 UGRC and the Utah Reclamation Mitigation Conservation Commission (URMCC) acquired ~92 square miles of
-      8 points per meter Quality Level 1 LiDAR and 10cm 4-band aerial photography of the Strawberry River, from Soldier
-      Creek Dam to The Pinnacles, after the Dollar Ridge Fire in 2018. The .5 meter resolution bare earth DEMs and
+      8 points per meter Quality Level 1 Lidar and 10cm 4-band aerial photography of the Strawberry River, from Soldier
+      Creek Dam to The Pinnacles, after the Dollar Ridge Fire in 2018. The 0.5 meter resolution bare earth DEMs and
       first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download.
       The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
         >The National Map</ExternalLink
       >. This elevation data was collected August 15-18, 2019.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.strawberryRiver} />
   </Section>
   <Section {...page.section[19]}>
@@ -788,13 +784,12 @@ const projectAssets = {
     >
     <p>
       During 2018 the Federal Emergency Management Agency (FEMA) acquired ~4,693 square miles of 2 and 8 points per
-      meter Quality Level 1 & 2 LiDAR for areas in Northern Utah that include the Uintah Basin (QL2) and Heber Valley
-      (QL1). The .5 and 1 meter resolution bare earth DEMs in .img format have a 10.0cm vertical RMSE accuracy and are
+      meter Quality Level 1 & 2 Lidar for areas in Northern Utah that include the Uintah Basin (QL2) and Heber Valley
+      (QL1). The 0.5 and 1 meter resolution bare earth DEMs in .img format have a 10.0cm vertical RMSE accuracy and are
       available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >. This elevation data was collected between June and October, 2018.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.uintahHeber} />
   </Section>
   <Section {...page.section[18]}>
@@ -803,13 +798,12 @@ const projectAssets = {
     >
     <p>
       During 2018 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) acquired
-      ~2,271 square miles of 8 points per meter Quality Level 1 LiDAR for areas in Northern Utah. The .5 meter
+      ~2,271 square miles of 8 points per meter Quality Level 1 Lidar for areas in Northern Utah. The 0.5 meter
       resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy
       and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID18) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.boxElder} />
   </Section>
   <Section {...page.section[17]}>
@@ -818,13 +812,12 @@ const projectAssets = {
     >
     <p>
       During 2018 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) acquired
-      ~1,632 square miles of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Northern Utah. The .5 and 1
-      meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE
+      ~1,632 square miles of 2 and 8 points per meter Quality Level 1 & 2 Lidar for areas in Northern Utah. The 0.5 and
+      1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE
       accuracy and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.northern} />
   </Section>
   <Section {...page.section[16]}>
@@ -834,11 +827,10 @@ const projectAssets = {
     <p>
       During 2018 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), and
       the Utah Geological Survey (UGS) acquired ~3,759 square miles of 2 and 8 points per meter Quality Level 1 & 2
-      LiDAR for areas in Central Utah. The .5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs
+      Lidar for areas in Central Utah. The 0.5 and 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs
       in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are
       available from <ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink>.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.central} />
   </Section>
   <Section {...page.section[15]}>
@@ -847,13 +839,12 @@ const projectAssets = {
     >
     <p>
       During 2018 UGRC, Utah Division of Emergency Management, US National Park Service, and US Forest Service acquired
-      ~5,466 square miles of 2 and 8 points per meter Quality Level 1 & 2 LiDAR for areas in Southern Utah. The .5 and 1
-      meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE
+      ~5,466 square miles of 2 and 8 points per meter Quality Level 1 & 2 Lidar for areas in Southern Utah. The 0.5 and
+      1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE
       accuracy and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.southern2018} />
   </Section>
   <Section {...page.section[14]}>
@@ -862,13 +853,12 @@ const projectAssets = {
     >
     <p>
       During 2018 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) acquired
-      ~440 square miles of 8 points per meter Quality Level 1 LiDAR in Central Utah. The .5 meter resolution bare earth
+      ~440 square miles of 8 points per meter Quality Level 1 Lidar in Central Utah. The 0.5 meter resolution bare earth
       DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for
       download. The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
         >The National Map</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.sanpeteValley} />
   </Section>
   <Section {...page.section[13]}>
@@ -877,13 +867,12 @@ const projectAssets = {
     >
     <p>
       During the Fall of 2017 UGRC and the U.S. Department of Agriculture, Natural Resources Conservation Service
-      acquired ~13 square miles of 8 points per meter Quality Level 1 LiDAR of Millsite Reservoir, Utah. The .5 meter
+      acquired ~13 square miles of 8 points per meter Quality Level 1 Lidar of Millsite Reservoir, Utah. The 0.5 meter
       resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy
       and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >. This elevation data was collected October 21 and 25, 2017 when the reservoir was drained.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.millsite} />
   </Section>
   <Section {...page.section[12]}>
@@ -892,13 +881,12 @@ const projectAssets = {
     >
     <p>
       During the Spring of 2017 UGRC and the Utah Department of Natural Resources, Division of Water Resources acquired
-      ~28 square miles of 8 points per meter Quality Level 1 LiDAR of Washakie, Utah and Whites Valley in Northern Utah.
-      The .5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical
+      ~28 square miles of 8 points per meter Quality Level 1 Lidar of Washakie, Utah and Whites Valley in Northern Utah.
+      The 0.5 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical
       RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >. This elevation data was collected April 15-16, 2017.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.washakie} />
   </Section>
   <Section {...page.section[11]}>
@@ -912,13 +900,12 @@ const projectAssets = {
     >
     <p>
       During the Spring of 2017 UGRC, Washington County, and the Utah Division of Emergency Management acquired ~516
-      square miles of 2 points per meter Quality Level 2 LiDAR of areas within Washington County in Southwestern Utah.
+      square miles of 2 points per meter Quality Level 2 Lidar of areas within Washington County in Southwestern Utah.
       The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical
       RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.washingtonCounty} />
   </Section>
   <Section {...page.section[10]}>
@@ -926,14 +913,13 @@ const projectAssets = {
       <Image src={kanab2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
     <p>
-      In 2016 the Natural Resource Conservation Service (NRCS) acquired LiDAR around Fredonia, AZ that covers ~150
-      square miles of Utah with 8 points per meter Quality Level 1 LiDAR and includes Kanab, UT. The .5 meter resolution
-      bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are
-      available for download. The LAS point clouds, classified to ground, low, medium, are available from <ExternalLink
+      In 2016 the Natural Resource Conservation Service (NRCS) acquired Lidar around Fredonia, AZ that covers ~150
+      square miles of Utah with 8 points per meter Quality Level 1 Lidar and includes Kanab, UT. The 0.5 meter
+      resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy
+      and are available for download. The LAS point clouds, classified to ground, low, medium, are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >. This elevation data was collected between October and December, 2016.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.kanab} />
   </Section>
   <Section {...page.section[9]}>
@@ -942,14 +928,13 @@ const projectAssets = {
     >
     <p>
       During the Fall of 2016 UGRC, Cache and Weber County, and the Utah Department of Emergency Management acquired
-      ~790 square miles of 8 points per meter Quality Level 1 LiDAR. The project areas cover the Cache Valley, Upper
-      Weber Valley, Bear River from Cache County to the Great Salt Lake, and the Bear Lake shoreline. The .5 meter
+      ~790 square miles of 8 points per meter Quality Level 1 Lidar. The project areas cover the Cache Valley, Upper
+      Weber Valley, Bear River from Cache County to the Great Salt Lake, and the Bear Lake shoreline. The 0.5 meter
       resolution bare earth DEMs and first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy
       and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >. This elevation data was collected between September, 2016 and November, 2017.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.bear2016} />
   </Section>
   <Section {...page.section[8]}>
@@ -958,17 +943,16 @@ const projectAssets = {
     >
     <p>
       During the Fall of 2016 UGRC, Utah Geological Survey, and the Utah Division of Forestry, Fire and State Lands
-      acquired ~1,555 square miles of 2 and 8 ppm Quality Level 1 and 2 LiDAR of the Great Salt Lake and Utah Lake. The
-      GSL portion of the project, collected between September and November 2016, is a combination of .5 QL1 and 1 meter
-      QL2. Some areas are available as .5 meter although the entire GSL project areas is available as 1 meter. During
+      acquired ~1,555 square miles of 2 and 8 ppm Quality Level 1 and 2 Lidar of the Great Salt Lake and Utah Lake. The
+      GSL portion of the project, collected between September and November 2016, is a combination of 0.5 QL1 and 1 meter
+      QL2. Some areas are available as 0.5 meter although the entire GSL project areas is available as 1 meter. During
       the acquisition the GSL was at a historical low. The Utah Lake portion, collected between October and November
-      2016, is all .5 meter and is mainly the lake shoreline. The .5 and 1 meter resolution bare earth DEMs and
+      2016, is all 0.5 meter and is mainly the lake shoreline. The 0.5 and 1 meter resolution bare earth DEMs and
       first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download.
       The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
         >The National Map</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.gsl2016} />
   </Section>
   <Section {...page.section[7]}>
@@ -982,14 +966,13 @@ const projectAssets = {
     >
     <p>
       During the Summer of 2016 UGRC and the U.S. Forest Service acquired 292 square miles of 8 points per meter Quality
-      Level 1 LiDAR on Monroe Mountain in central Utah. The acquisition took place with leaf-on conditions to model the
-      forest canopy in addition to ground elevations. The .5 meter resolution bare earth DEMs and
+      Level 1 Lidar on Monroe Mountain in central Utah. The acquisition took place with leaf-on conditions to model the
+      forest canopy in addition to ground elevations. The 0.5 meter resolution bare earth DEMs and
       first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download.
       The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
         >The National Map</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.monroeMountain} />
   </Section>
   <Section {...page.section[6]}>
@@ -998,14 +981,13 @@ const projectAssets = {
     >
     <p>
       During the Fall of 2016 UGRC and the Utah Geological Survey acquired ~205 square miles of 8 points per meter
-      Quality Level 1 LiDAR of The Frontier Observatory for Research in Geothermal Energy (FORGE) area around Milford,
-      Utah in Beaver and Millard Counties in western Utah. The .5 meter resolution bare earth DEMs and
+      Quality Level 1 Lidar of The Frontier Observatory for Research in Geothermal Energy (FORGE) area around Milford,
+      Utah in Beaver and Millard Counties in western Utah. The 0.5 meter resolution bare earth DEMs and
       first-return/highest-hit DSMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download.
       The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
         >The National Map</ExternalLink
       >. This elevation data was collected between October 26 and November 3, 2016.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12B) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.forge} />
   </Section>
   <Section {...page.section[5]}>
@@ -1014,15 +996,14 @@ const projectAssets = {
     >
     <p>
       During late Fall of 2015 the Utah Division of Forestry, Fire & State Lands and the U.S. National Park Service
-      acquired ~152 square miles covering ~680 river miles of 8 points per meter LiDAR of the Colorado, Green, and Yampa
-      rivers in Utah and Colorado. The LiDAR collection is mainly of the river course and not the surrounding canyons. A
-      small ~.8 square mile area was also collected in Arches N.P. The .5 meter resolution bare earth DEMs and
+      acquired ~152 square miles covering ~680 river miles of 8 points per meter Lidar of the Colorado, Green, and Yampa
+      rivers in Utah and Colorado. The Lidar collection is mainly of the river course and not the surrounding canyons. A
+      small ~.8 square mile area was also collected in Arches N.P. The 0.5 meter resolution bare earth DEMs and
       first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download.
       The LAS point clouds are available from <ExternalLink href="https://apps.nationalmap.gov/downloader"
         >The National Map</ExternalLink
       >. This elevation data was collected October and November of 2015 during low flow conditions.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.rivers2015} />
   </Section>
   <Section {...page.section[4]}>
@@ -1031,13 +1012,12 @@ const projectAssets = {
     >
     <p>
       During 2015 and 2016 the U.S. Geological Survey and the U.S. Park Service acquired ~239 square miles of 2 and 8
-      points per meter Quality Level 1 & 2 LiDAR for Zion National Park in Utah. The .5 and 1 meter resolution bare
+      points per meter Quality Level 1 & 2 Lidar for Zion National Park in Utah. The 0.5 and 1 meter resolution bare
       earth DEMs in .img format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point
       clouds, classified to ground, low, medium, and high vegetation, are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >. This elevation data was collected between November 2015 and July 2016
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12B) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.zionNP} />
   </Section>
   <Section {...page.section[3]}>
@@ -1046,20 +1026,19 @@ const projectAssets = {
     >
     <p>
       During the Fall of 2013 and the Spring of 2014 UGRC and partners acquired 1,422 square miles of 8 points per meter
-      Quality Level 1 LiDAR for areas along the Wasatch Front including the urbanized areas of Salt Lake County and Utah
-      County and areas along the Wasatch Fault from Sanpete County north into Oneida County in southeast Idaho. The .5
+      Quality Level 1 Lidar for areas along the Wasatch Front including the urbanized areas of Salt Lake County and Utah
+      County and areas along the Wasatch Fault from Sanpete County north into Oneida County in southeast Idaho. The 0.5
       meter resolution bare earth hydro flattened DTMs and first-return/highest-hit DSMs in .img format have a 9.25cm
       vertical RMSE accuracy. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID12) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.wasatchFront} />
   </Section>
   <Section {...page.section[2]}>
-    <!-- <a href={gsl2011Map.src} slot="image">
+    <a href={gsl2011Map.src} slot="image">
       <Image src={gsl2011Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
-    > -->
+    >
     <p>
       During 2011 UGRC and Utah Geological Survey (UGS) acquired ~1,870 square miles of .85 meter lidar for areas
       including the north, east, and south sides of the Great Salt Lake, Cedar Valley, Hurricane Fault, and more. The 1
@@ -1069,19 +1048,17 @@ const projectAssets = {
         >Open Topography</ExternalLink
       >.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID08) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.gsl2011} />
   </Section>
   <Section {...page.section[1]}>
-    <!-- <a href={wasatch2006Map.src} slot="image">
+    <a href={wasatch2006Map.src} slot="image">
       <Image src={wasatch2006Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
-    > -->
+    >
     <p>
       During 2006 UGRC and partners acquired ~1,283 square miles of a combination of 1, 1.25, and 2 meter bare-earth
       DEMs derived from XYZi lidar point clouds in .asc format. Acquisition areas include Salt Lake, Wasatch, and Iron
       counties.
     </p>
-    <p>This elevation data has a UTM NAD83 (2011) zone 12 north meters NAVD88(GEOID03) projection.</p>
     <DirectDownloads title="Project assets" links={projectAssets.wasatch2006} />
   </Section>
 </Layout>
