@@ -514,4 +514,9 @@ export const contacts: Contacts = {
     phone: '801-536-4128',
     agency: 'DEQ',
   },
+  water_quality: {
+    name: 'Ryan Parker',
+    email: 'rsparker@utah.gov',
+    agency: 'DWQ',
+  },
 };

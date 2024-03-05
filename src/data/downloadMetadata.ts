@@ -994,15 +994,15 @@ export const dataPages: DownloadMetadata = {
   'Utah DWQ Assessment Units': {
     itemId: '0f39afb3b29d4c0a8abf7c46ed2e0354',
     name: 'Utah DWQ Assessment Units',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'DWQAssessmentUnits',
+    openSgid: 'environment.dwq_assessment_units',
     layerId: 0,
   },
   'Utah DWQ Groundwater Permits': {
     itemId: 'eb1bb5fbe37d43f1aa002b19dd678ac5',
     name: 'Utah DWQ Groundwater Permits',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'DWQGroundwaterPermits',
+    openSgid: 'environment.dwq_groundwater_permits',
     layerId: 0,
   },
   'Utah DWQ Mercury In Fish Tissue': {
