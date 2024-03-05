@@ -508,4 +508,10 @@ export const contacts: Contacts = {
     email: 'jdadams@utah.gov',
     agency: 'UGRC',
   },
+  deq: {
+    name: 'Michelle Horning',
+    email: 'mhorning@utah.gov',
+    phone: '801-536-4128',
+    agency: 'DEQ',
+  },
 };

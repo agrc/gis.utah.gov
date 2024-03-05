@@ -1,4 +1,5 @@
 ---
+import BulletedList from '@components/page/BulletedList.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import Layout from '@layouts/DataPage.astro';
 
@@ -19,8 +20,9 @@ import Contacts from '@components/page/Contacts.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah DEQ Brownfields Targeted',
-  description: 'Brownfields targeted for cleanup.',
+  title: 'Utah Petroleum Storage Tank Facilities',
+  description:
+    'Utah facility information for each petroleum storage tank (PST). This is the facility where the storage tanks are located.',
   stewards: ['DEQ DERR'],
   type: ProductType.POINT,
   category: SgidCategory.ENVIRONMENT,
@@ -41,13 +43,26 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Brownfields are real property, the expansion, redevelopment, or reuse of which may be complicated by the presence
-      or potential presence of a hazardous substance, pollutant, or contaminant. Cleaning up and reinvesting in these
-      properties takes development pressures off of undeveloped open land, and both improves and protects the
-      environment. For more information, see <ExternalLink href="http://www.epa.gov/brownfields/"
-        >the EPA website</ExternalLink
-      >.
+      Utah facility information for each petroleum storage tank (PST). This is the facility where the storage tanks are
+      located.
     </p>
+
+    <p>Additional tank information can be found in these related tables:</p>
+    <BulletedList>
+      <li>
+        <ExternalLink href="https://opendata.gis.utah.gov/datasets/utah::utah-petroleum-storage-tanks-compliance/about"
+          >Tanks Compliance</ExternalLink
+        >
+      </li>
+      <li>
+        <ExternalLink href="https://opendata.gis.utah.gov/datasets/utah::utah-petroleum-storage-tanks/about"
+          >Tanks</ExternalLink
+        >
+      </li>
+      <li>
+        <ExternalLink href="https://opendata.gis.utah.gov/datasets/utah::utah-deqmap-lust/about">LUST</ExternalLink>
+      </li>
+    </BulletedList>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -56,21 +71,28 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      This data layer contains the coordinates of Brownfields Projects derived from maps and GPS data, these locations
-      represent sites, not contaminated areas. The coordinate data have been created and utilized by the DERR for the
-      plotting of Brownfields Projects on maps depicting the State and several counties. The data used to produce these
+      This dataset is updated nightly via forklift from the DERR database which is continually updated. This data layer
+      contains coordinates of Facility PST sites. There can be multiple tanks for each facility. Each storage tank is
+      associated with a facility via the FacilityID (the number that uniquely identifies a facility). The coordinate
+      data have been created and utilized by the Utah Division of Environmental Response and Remediation (DERR) for the
+      plotting of Facility PST sites on maps depicting the state and several counties. The data used to produce these
       maps have been reviewed by DERR staff and found to be adequate for DERR's purposes which require the depiction of
-      general locational information. The accuracy of these locations may not be sufficient for other purposes. Persons
-      relying upon these maps do so at their own risk. The DERR assumes no responsibility or liability for the accuracy
-      of these points.
+      general site locations. The accuracy of these locations may not be sufficient for other purposes. Persons relaying
+      upon these maps do so at their own risk. The DERR assumes no responsibility or liability oft he accuracy of these
+      points.
     </p>
-    <Contacts contactKey="brownfields" />
+    <Contacts contactKey="ust" />
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
+      <CardWithPopularLink
+        title="DEQ VCP"
+        href="https://deq.utah.gov/environmental-response-and-remediation/cercla-comprehensive-environmental-response-compensation-and-liability-act/voluntary-cleanup-program"
+        >Utah Voluntary Cleanup Program</CardWithPopularLink
+      >
       <CardWithPopularLink title="DERR" href="https://deq.utah.gov/division-environmental-response-remediation/"
         >Division of Environmental Response and Remediation</CardWithPopularLink
       >
@@ -87,11 +109,6 @@ const page: IPageMetadata = {
       >
       <CardWithSmallLink title="Environment" href="/products/sgid/environment" style="secondary"
         >SGID Environment category</CardWithSmallLink
-      >
-      <CardWithSmallLink
-        title="Brownfields Not Targeted"
-        href="/products/sgid/environment/brownfields-not-targeted"
-        style="secondary">Related data</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
