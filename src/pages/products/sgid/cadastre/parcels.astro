@@ -1,0 +1,101 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Basic Parcels',
+  description: `Parcel data for each of the 29 counties in Utah.`,
+  stewards: ['Parcels'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.CADASTRE,
+  secondaryCategory: SgidCategory.BOUNDARIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://platmap.trustlands.utah.gov',
+  updateHistory: [`Weekly`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The SGID contains county parcel data for each of the 29 counties in Utah and is updated as new data is provided
+      from the data steward in each county. A statewide parcel dataset is available from <ExternalLink
+        href="https://utah.maps.arcgis.com/home/item.html?id=9df536b0835e4ee78e34d7cf6fe132c2">AGOL</ExternalLink
+      > and <ExternalLink href="https://opendata.gis.utah.gov/datasets/utah-statewide-parcels/explore"
+        >UGRC Open Data site</ExternalLink
+      > in addition to vector tiles <ExternalLink
+        href="https://opendata.gis.utah.gov/maps/utah-statewide-parcels-vector-tiles/explore">with labels</ExternalLink
+      > and <ExternalLink href="https://www.arcgis.com/home/item.html?id=95966295a1ff4a0bb1f0c3dcc20cd002"
+        >without labels</ExternalLink
+      >.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub}>
+      <ExternalLink
+        slot="more-links"
+        href="https://gis.trustlands.utah.gov/hosting/rest/services/Hosted/Land_Ownership_WM_VectorTile/VectorTileServer"
+      >
+        Utah Land Ownership vector tile service
+      </ExternalLink>
+    </HubDownloads>
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      Parcel polygons contain attributes unique to each parcel such as a unique parcel number (PARCEL_ID), address for
+      the parcel (PARCEL_ADD, PARCEL_CITY, PARCEL_ZIP), update information (ParcelsCur, ParcelsRec, ParcelsPub,
+      ParcelYear, ParcelNotes), a generalized land ownership designation (OWN_TYPE), and the phone number for the county
+      recorders office (RECORDER).
+    </p>
+    <p>
+      This data when possible is updated twice a year with the newest data available from the counties. Some counties
+      along the Wasatch Front are updated monthly when possible.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Trust Lands administration" href="https://trustlands.utah.gov/"
+        >SITLA website.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Trust Lands GIS" href="https://trustlands.utah.gov/tools/maps/"
+        >Trust Lands GIS Group.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Bureau of Land Management" href="https://www.blm.gov/services/land-records"
+        >BLM land records</CardWithSmallLink
+      >
+      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+        Discover spatial data and tools that empower informed land management decisions
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
