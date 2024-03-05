@@ -16,20 +16,17 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 export const metadata: IMetadata = {
-  title: 'USGS 3DEP Elevation Products',
+  title: 'USGS 3DEP elevation products',
   description: `USGS 3DEP elevation products from The National Map.`,
   stewards: ['USGS'],
-  type: ProductType.RASTER, // This comes from the ProductType enum in types.ts
-  category: SgidCategory.ELEVATION, // This comes from the SgidCategory enum in types.ts
+  type: ProductType.RASTER,
+  category: SgidCategory.ELEVATION,
 };
 
 const page: IPageMetadata = {
-  ...metadata, // this brings all the data from the metadata object above into the page object
+  ...metadata,
   application: 'https://raster.utah.gov/?products=2',
   updateHistory: [`January 2018`],
-
-  // links are optional and only used when a product has download type of links that aren't ArcGIS Hub
-  // delete this if it is unused
   links: [
     {
       title: 'Download 10 or 30 meter 3DEP Digital Elevation Models (DEMs)',
@@ -75,10 +72,7 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <!-- the title for hub data is typically `Use the data` but it can be anything
-  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
   <Section title="Use the service" slot="downloads" titlePosition="center">
-    <!-- links use the direct downloads component. Only keep one element and delete the unused. -->
     <DirectDownloads title="Download 10 or 30 meter 3DEP Digital Elevation Models (DEMs)" links={page.links!} />
   </Section>
 
@@ -92,7 +86,7 @@ const page: IPageMetadata = {
       > page. Links to the spatial metadata files for 5 meter, 1/3 Arc-Second (10 meter), and 1 Arc-Second (30 meter) can
       be found under “Standard DEMs”. The data dictionary that describes each attribute and their domains is also available
       from the <ExternalLink href="https://www.usgs.gov/media/files/3dep-spatial-metadata-glossary"
-        >3DEP Spatial Metadata Glossery</ExternalLink
+        >3DEP Spatial Metadata Glossary</ExternalLink
       >. PMETHOD (Production Method) is the attribute you are looking for and any polygon with a PMETHOD value of <code
         >7</code
       > has lidar as it’s source. If you need further assistance please contact the National Map Help Desk from USGS at tnm_help@usgs.gov
@@ -106,7 +100,7 @@ const page: IPageMetadata = {
       <CardWithPopularLink
         title="3DEP Elevation Product Accuracy"
         href="https://www.usgs.gov/faqs/what-vertical-accuracy-seamless-3dep-dems"
-        >What is the vertical accuracy of the seamless 3DEP DEMs?.
+        >What is the vertical accuracy of the seamless 3DEP DEMs?
       </CardWithPopularLink>
       <CardWithPopularLink title="Raster Downloads" href="https://raster.utah.gov/"
         >UGRC Raster Data Discovery Application.
