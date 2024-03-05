@@ -7,7 +7,7 @@ published: false
 date: 2013-03-12 18:03:34 -0600
 title: 'ArcMap User: "Where did the UGRC Base Maps Go?'
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

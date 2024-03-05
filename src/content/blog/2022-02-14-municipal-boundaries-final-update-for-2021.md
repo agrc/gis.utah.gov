@@ -9,7 +9,7 @@ tags:
   - municipal boundaries
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -20,7 +20,7 @@ As always feel free to check out all the changes and make sure your boundaries a
 The following table shows the changes and annexations (listed by county and city) since July 1, 2021:
 
 | County     | City             | Number of Changes |
-|------------|------------------|-------------------|
+| ---------- | ---------------- | ----------------- |
 | Cache      | Millville        | 1                 |
 |            | Providence       | 1                 |
 | Davis      | Layton           | 1                 |

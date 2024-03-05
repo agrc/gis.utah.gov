@@ -11,7 +11,7 @@ date: 2016-07-21T19:30:03.000Z
 title: Division of Water Rights Inventories Irrigation Canals in Utah
 published: false
 category: Guestblog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

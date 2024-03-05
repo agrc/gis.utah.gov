@@ -12,7 +12,7 @@ tags:
   - Annexations
   - Cities and towns
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -25,7 +25,7 @@ It's important that geospatial data stays up to date, as the census is coming in
 Following are the changes and annexations since July 6, 2018, listed by county and city:
 
 | County   | City                | Number of Changes |
-|----------|---------------------|-------------------|
+| -------- | ------------------- | ----------------- |
 | Cache    | Hyde Park           | 1                 |
 |          | Hyrum               | 2                 |
 |          | Millville           | 1                 |

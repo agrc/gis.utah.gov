@@ -7,7 +7,7 @@ date: 2015-03-05 16:02:52 -0700
 title: Summarizing Utah GIS Data Needs for NG 9-1-1
 published: false
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

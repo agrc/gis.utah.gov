@@ -10,7 +10,7 @@ date: 2017-03-29T16:57:20.000Z
 title: Municipal Boundaries update for first quarter (Calendar year)
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -23,7 +23,7 @@ Just a reminder to everyone, if you see something that’s not correct let us kn
 Following are the changes and annexations since Dec. 31, 2016 listed by County and City:
 
 | County     | City                            | Number of Changes |
-|------------|---------------------------------|-------------------|
+| ---------- | ------------------------------- | ----------------- |
 | Box Elder  | Fielding                        | 1                 |
 | Cache      | Hyrum                           | 1                 |
 |            | Hyde Park                       | 1                 |

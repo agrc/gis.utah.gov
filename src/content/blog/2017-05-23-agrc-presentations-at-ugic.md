@@ -10,7 +10,7 @@ date: 2017-05-23T21:20:00.000Z
 title: UGRC Presentations at UGIC
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

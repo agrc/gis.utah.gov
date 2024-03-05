@@ -7,7 +7,7 @@ date: 2012-07-19 17:49:57 -0600
 title: Utah Zip Code Boundaries Update
 published: false
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

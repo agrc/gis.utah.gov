@@ -7,7 +7,7 @@ date: 2014-11-05 10:27:43 -0700
 title: Maps Assist in Accessing Election Results
 published: false
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

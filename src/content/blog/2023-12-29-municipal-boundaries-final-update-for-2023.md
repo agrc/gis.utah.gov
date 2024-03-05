@@ -9,7 +9,7 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -22,7 +22,7 @@ To review any specific annexation document, visit the [Utah Lt. Governor Municip
 Following are the changes and annexations since January of this year, listed by County and City:
 
 | County     | City                 | Number of Changes |
-|------------|----------------------|-------------------|
+| ---------- | -------------------- | ----------------- |
 | Box Elder  | Brigham City         | 2                 |
 |            | Elwood               | 1                 |
 |            | Fielding             | 1                 |

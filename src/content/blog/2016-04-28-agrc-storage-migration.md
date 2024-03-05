@@ -7,7 +7,7 @@ date: 2016-04-28T22:11:31.000Z
 title: UGRC Storage Migration
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

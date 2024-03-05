@@ -9,7 +9,7 @@ published: false
 date: 2012-06-28 07:55:23 -0600
 title: How to Get Started Using Aptana Studio 3 for ArcPy Development (Screencast)
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

@@ -7,7 +7,7 @@ date: 2015-08-28 13:53:33 -0600
 title: Public Lands Survey System (PLSS) Version 2.0, 2015 updates
 published: false
 category: GPS-surveyor
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

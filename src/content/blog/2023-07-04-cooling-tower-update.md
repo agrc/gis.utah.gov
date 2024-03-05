@@ -1,5 +1,5 @@
 ---
-title: "Results Update: Detecting Cooling Towers with Computer Vision Tools"
+title: 'Results Update: Detecting Cooling Towers with Computer Vision Tools'
 author:
   display_name: Erik Neemann
   email: eneemann@slco.org

@@ -11,7 +11,7 @@ date: 2012-07-02 15:59:16 -0600
 published: false
 title: GIS jobs in Utah....via Twitter
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

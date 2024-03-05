@@ -9,7 +9,7 @@ date: 2012-06-06 10:52:29 -0600
 published: false
 title: Apple, Google, 3D and GIS
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

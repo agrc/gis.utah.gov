@@ -1,5 +1,5 @@
 ---
-title: "Python Shorts: Flattening Arrow Code"
+title: 'Python Shorts: Flattening Arrow Code'
 author:
   display_name: Jake Adams
   email: jdadams@utah.gov

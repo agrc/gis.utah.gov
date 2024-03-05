@@ -8,7 +8,7 @@ title: State of Utah Global Positioning Reference Network, One-Time Maintenance
   Funding
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

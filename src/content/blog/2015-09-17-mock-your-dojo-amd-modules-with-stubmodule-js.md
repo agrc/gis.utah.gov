@@ -7,7 +7,7 @@ tags:
 date: 2015-09-17 07:41:59 -0600
 title: Mock your Dojo AMD modules with StubModule.js
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

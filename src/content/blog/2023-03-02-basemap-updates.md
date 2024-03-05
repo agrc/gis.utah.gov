@@ -1,5 +1,5 @@
 ---
-title: "Base maps: Out With the Old, In With the New"
+title: 'Base maps: Out With the Old, In With the New'
 author:
   display_name: Zach Beck
   email: zbeck@utah.gov

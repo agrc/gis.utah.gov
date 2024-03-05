@@ -6,7 +6,7 @@ tags:
   - geocoding
   - roads
 date: 2017-06-27T00:38:49.000Z
-title: "Rethinking Geocoders: Adding Local Vernacular into the Build Process"
+title: 'Rethinking Geocoders: Adding Local Vernacular into the Build Process'
 category: Developer
 cover_image: /src/images/pillar-blog/2017-06-27-rethinking-geocoders-adding-local-vernacular-into-the-build-process/statestreetaddressing.png
 cover_image_alt: state street addressing

@@ -7,7 +7,7 @@ date: 2016-07-12T15:35:52.000Z
 title: Second Quarter 2016 Municipal Boundaries Updates
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -18,7 +18,7 @@ All of these documents can be reviewed on the [2016 Municipal Certification webs
 Following are the changes and annexations listed by County and City:
 
 | County    | City          | Number of Changes |
-|-----------|---------------|-------------------|
+| --------- | ------------- | ----------------- |
 | Cache     | Paradise      | 1                 |
 | Davis     | Layton        | 1                 |
 | Millard   | Delta         | 2                 |

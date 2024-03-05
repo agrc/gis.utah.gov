@@ -1,6 +1,6 @@
 ---
-title: "The Role of GIS during a Pandemic: Why the “Where” Is So Important for
-  the Coronavirus"
+title: 'The Role of GIS during a Pandemic: Why the “Where” Is So Important for
+  the Coronavirus'
 author:
   display_name: Anna Tribolet
   email: atribolet@utah.gov

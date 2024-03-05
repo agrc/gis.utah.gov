@@ -8,7 +8,7 @@ date: 2016-05-18T17:33:12.000Z
 title: DNR Continues to Build GIS Value with ROI Documentation
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

@@ -7,7 +7,7 @@ date: 2016-09-07T15:35:52.000Z
 title: Third Quarter 2016 Municipal Boundaries Updates
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -17,7 +17,7 @@ All of these documents can be reviewed on the [2016 Municipal Certification webs
 Following are the changes and annexations listed by County and City:
 
 | County    | City                                    | Number of Changes |
-|-----------|-----------------------------------------|-------------------|
+| --------- | --------------------------------------- | ----------------- |
 | Box Elder | Fielding Town                           | 1                 |
 | Cache     | Hyrum                                   | 1                 |
 |           | Paradise                                | 1                 |

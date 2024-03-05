@@ -5,10 +5,10 @@ author:
 tags:
   - basemap
 date: 2014-12-22 10:45:14 -0700
-title: "Basemaps: A 2014 Day in the Life"
+title: 'Basemaps: A 2014 Day in the Life'
 published: false
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

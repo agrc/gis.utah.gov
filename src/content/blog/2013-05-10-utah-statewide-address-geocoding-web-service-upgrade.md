@@ -11,7 +11,7 @@ date: 2013-05-10 14:22:13 -0600
 title: Utah Statewide Address Geocoding Web Service Upgrade
 published: false
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

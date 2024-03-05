@@ -11,7 +11,7 @@ tags:
   - towns
   - cities
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -22,7 +22,7 @@ As always, changes to town and city boundaries can affect other data layers, so 
 Following are the changes and annexations since January 1, 2018, listed by county and city:
 
 | County     | City                         | Number of Changes |
-|------------|------------------------------|-------------------|
+| ---------- | ---------------------------- | ----------------- |
 | Box Elder  | Brigham City                 | 2                 |
 | Cache      | Hyde Park                    | 2                 |
 |            | Hyrum                        | 1                 |

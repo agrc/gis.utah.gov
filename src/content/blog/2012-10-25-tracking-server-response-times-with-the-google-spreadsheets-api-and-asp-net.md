@@ -8,7 +8,7 @@ date: 2012-10-25 12:39:06 -0600
 published: false
 title: Tracking Server Response Times with the Google Spreadsheets API and asp.net
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

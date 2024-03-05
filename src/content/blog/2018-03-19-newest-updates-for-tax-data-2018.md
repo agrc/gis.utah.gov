@@ -12,7 +12,7 @@ tags:
   - sales tax areas
   - transit special tax areas
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

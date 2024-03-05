@@ -10,7 +10,7 @@ date: 2015-04-28 17:53:28 -0600
 title: Utah's Open Data Portal and the SGID
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

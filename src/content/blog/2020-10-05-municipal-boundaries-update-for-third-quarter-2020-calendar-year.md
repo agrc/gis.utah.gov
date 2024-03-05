@@ -10,7 +10,7 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -21,7 +21,7 @@ Municipality updates can be viewed on the ArcGIS [Utah Municipality Modification
 The following table shows the changes and annexations (listed by county and city) since July 2020:
 
 | County     | City        | Number of Changes |
-|------------|-------------|-------------------|
+| ---------- | ----------- | ----------------- |
 | Cache      | Smithfield  | 1                 |
 | Davis      | Bountiful   | 1                 |
 | Duchesne   | Tabiona     | 1                 |

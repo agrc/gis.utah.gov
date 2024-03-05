@@ -9,7 +9,7 @@ date: 2016-02-01 13:31:17 -0700
 title: Utah Broadband Outreach Center Releases Revamped Availability Map
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

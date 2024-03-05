@@ -14,7 +14,7 @@ date: 2013-12-04 17:07:30 -0700
 title: A day in the life of the Utah's SGID ImageServer
 published: false
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

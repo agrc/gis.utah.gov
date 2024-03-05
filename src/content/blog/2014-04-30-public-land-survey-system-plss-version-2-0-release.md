@@ -10,7 +10,7 @@ date: 2014-04-30 12:24:19 -0600
 title: Public Land Survey System (PLSS) Version 2.0 Release
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

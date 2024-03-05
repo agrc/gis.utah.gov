@@ -11,7 +11,7 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -27,7 +27,7 @@ The following table shows the changes and annexations (listed by county and city
 Stay safe and healthy, everyone!
 
 | County     | City                             | Number of Changes |
-|------------|----------------------------------|-------------------|
+| ---------- | -------------------------------- | ----------------- |
 | Cache      | Hyrum                            | 1                 |
 |            | Logan                            | 2                 |
 |            | Nibley                           | 1                 |

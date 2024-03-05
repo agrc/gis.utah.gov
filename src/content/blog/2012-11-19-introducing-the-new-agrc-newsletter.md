@@ -7,7 +7,7 @@ date: 2012-11-19 16:44:25 -0700
 title: Introducing the new UGRC Newsletter
 published: false
 category: Uncategorized
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 

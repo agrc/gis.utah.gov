@@ -10,7 +10,7 @@ tags:
   - boundaries
   - annexations
 category: SGID Blog
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
@@ -23,7 +23,7 @@ To review the documents you can go here: [Utah Lt. Governor Municipal Certificat
 The following table shows the changes and annexations (listed by county and city) since October 15, 2019:
 
 | County     | City                           | Number of Changes |
-|------------|--------------------------------|-------------------|
+| ---------- | ------------------------------ | ----------------- |
 | Box Elder  | Brigham City                   | 1                 |
 | Cache      | Hyrum                          | 2                 |
 |            | Logan                          | 1                 |

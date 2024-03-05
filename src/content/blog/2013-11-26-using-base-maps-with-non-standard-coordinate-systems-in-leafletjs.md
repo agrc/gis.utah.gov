@@ -9,7 +9,7 @@ tags:
 date: 2013-11-26 15:20:50 -0700
 title: Using Base Maps with Non-standard Coordinate Systems in LeafletJS
 category: Developer
-cover_image: "/src/images/pillar-blog/default-social-card.png"
+cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
