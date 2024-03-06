@@ -9,6 +9,7 @@ import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
 import BulletedList from '@components/page/BulletedList.astro';
 
+import Alert from '@components/page/Alert.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
@@ -42,18 +43,26 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>
-      UGRC has a statewide coverage of 5 meter Auto-Correlated DEMs in addition to some <ExternalLink
-        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/auto-correlated-dems/2-meter/Available_DEM_2m_GSD.jpg"
-        >2 meter areas</ExternalLink
-      >. The DEMs were created from the imagery collected during the 2006 NAIP and HRO aerial photography flights. <strong
-        >The auto-correlation process is not as rigorous as other methods of elevation modeling such as photogrammetry,
-        lidar mapping, radar mapping, etc, and therefore end-users should be aware that anomalies are expected within
-        the elevation dataset.</strong
-      > In the years since this dataset was created, more accurate digital elevation models are available. User are encouraged
-      to consider the <a href="/products/sgid/elevation/lidar">Lidar</a> and
-      <a href="/products/sgid/elevation/usgs-3d-elevation-program">USGS 3DEP Products</a> available in Utah.
-    </p>
+    <div class="grid lg:grid-cols-2 lg:gap-10">
+      <p>
+        UGRC has a statewide coverage of 5 meter Auto-Correlated DEMs in addition to some <ExternalLink
+          href="https://storage.googleapis.com/state-of-utah-sgid-downloads/auto-correlated-dems/2-meter/Available_DEM_2m_GSD.jpg"
+          >2 meter areas</ExternalLink
+        >. The DEMs were created from the imagery collected during the 2006 NAIP and HRO aerial photography flights. In
+        the years since this dataset was created, more accurate digital elevation models are available. User are
+        encouraged to consider the <a href="/products/sgid/elevation/lidar">Lidar</a> and
+        <a href="/products/sgid/elevation/usgs-3d-elevation-program">USGS 3DEP Products</a> available in Utah.
+      </p>
+      <div class="self-center justify-self-center pt-4 lg:pt-0">
+        <Alert title="Warning">
+          <p>
+            The auto-correlation process is not as rigorous as other methods of elevation modeling such as
+            photogrammetry, lidar mapping, radar mapping, etc, and therefore end-users should be aware that anomalies
+            are expected within the elevation dataset.
+          </p>
+        </Alert>
+      </div>
+    </div>
   </Fragment>
 
   <Section title="Get the data" slot="downloads" titlePosition="center">
