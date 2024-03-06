@@ -16,8 +16,6 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
-import correlationDoc from '@downloads/pillar-products/DEM_Auto-correlation.doc?url';
-
 export const metadata: IMetadata = {
   title: 'Auto-Correlated DEMs',
   description: `Digital Elevation Models derived from aerial photography.`,
@@ -77,7 +75,12 @@ const page: IPageMetadata = {
       about the stated accuracy of the datasets please refer to the metadata and quality assurance reports below.
     </p>
     <BulletedList>
-      <li><a href={correlationDoc} download>Auto-Correlated DEM Information</a></li>
+      <li>
+        <ExternalLink
+          href="https://docs.google.com/document/d/1a64Y5lYHYUc4nHcaGUdzHVsLSPGGIxoqhNSiwWdAMpI/edit?usp=sharing"
+          >Auto-Correlated DEM Information</ExternalLink
+        >
+      </li>
       <li>
         Download quality assurance reports for the <ExternalLink
           href="https://storage.googleapis.com/state-of-utah-sgid-downloads/auto-correlated-dems/5-meter/UT_5m_DEMs_QA_report.doc"
