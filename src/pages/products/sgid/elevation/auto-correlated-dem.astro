@@ -31,7 +31,7 @@ const page: IPageMetadata = {
   updateHistory: [`2006`],
   links: [
     {
-      title: 'Download auto-correlated Digital Elevation Models (DEMs)',
+      title: 'Auto-correlated Digital Elevation Models (DEMs)',
       url: 'https://raster.utah.gov/?products=3',
     },
   ],
@@ -52,12 +52,12 @@ const page: IPageMetadata = {
         the elevation dataset.</strong
       > In the years since this dataset was created, more accurate digital elevation models are available. User are encouraged
       to consider the <a href="/products/sgid/elevation/lidar">Lidar</a> and
-      <a href="/products/sgid/elevation/usgs-3d-elevation-program"> USGS 3DEP Products</a> available in Utah.
+      <a href="/products/sgid/elevation/usgs-3d-elevation-program">USGS 3DEP Products</a> available in Utah.
     </p>
   </Fragment>
 
-  <Section title="Use the service" slot="downloads" titlePosition="center">
-    <DirectDownloads title="Download auto-correlated Digital Elevation Models (DEMs)" links={page.links!} />
+  <Section title="Get the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="Downloads" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
