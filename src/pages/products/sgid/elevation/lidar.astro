@@ -44,7 +44,7 @@ export const metadata: IMetadata = {
   title: 'Lidar elevation data',
   description: `All Lidar projects across Utah since 2006.`,
   stewards: ['UGRC'],
-  type: ProductType.RASTER,
+  type: ProductType.ELEVATION_RASTER,
   category: SgidCategory.ELEVATION,
 };
 
@@ -620,11 +620,11 @@ const projectAssets = {
       for most of Utah.
     </p>
     <p>
-      UGRC has partnered with various agencies over the years to acquire many lidar datasets with the goal of statewide
-      coverage. Visit <a href="https://raster.utah.gov/?products=1">Raster.utah.gov</a>
-      to explore and download all collections of lidar derived bare-earth DEMs/DTMs and first-return DSMs elevation models.
-      The <a href="https://arcg.is/18SWjy">Utah LiDAR Coverage</a>
-      application is also available to explore all lidar projects that have been proposed, are in progress, or completed
+      UGRC has partnered with various agencies over the years to acquire many Lidar datasets with the goal of statewide
+      coverage. Visit <ExternalLink href="https://raster.utah.gov/?products=1">Raster.utah.gov</ExternalLink>
+      to explore and download all collections of Lidar derived bare-earth DEMs/DTMs and first-return DSMs elevation models.
+      The <ExternalLink href="https://arcg.is/18SWjy">Utah Lidar Coverage</ExternalLink>
+      application is also available to explore all Lidar projects that have been proposed, are in progress, or completed
       in Utah. Both applications can get you to a project specific webpage for more information about each project including
       reports, metadata, and vector data associated with each project.
     </p>
@@ -643,9 +643,7 @@ const projectAssets = {
       National Map downloader also facilitates bulk downloads.
     </p>
     <p>
-      For more information about Lidar visit <a href="{% link data/elevation-and-terrain/exploring-lidar/index.html %}"
-        >Exploring LiDAR</a
-      >.
+      For more information about Lidar visit <a href="/documentation/exploring-lidar">Exploring Lidar</a>.
     </p>
   </Section>
   <Section {...page.section[27]}>
@@ -1040,7 +1038,7 @@ const projectAssets = {
       <Image src={gsl2011Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
     >
     <p>
-      During 2011 UGRC and Utah Geological Survey (UGS) acquired ~1,870 square miles of .85 meter lidar for areas
+      During 2011 UGRC and Utah Geological Survey (UGS) acquired ~1,870 square miles of .85 meter Lidar for areas
       including the north, east, and south sides of the Great Salt Lake, Cedar Valley, Hurricane Fault, and more. The 1
       meter bare-earth DEMs in .img format are available for download. The DSMs and LAS classified point clouds are
       available from <ExternalLink
@@ -1056,7 +1054,7 @@ const projectAssets = {
     >
     <p>
       During 2006 UGRC and partners acquired ~1,283 square miles of a combination of 1, 1.25, and 2 meter bare-earth
-      DEMs derived from XYZi lidar point clouds in .asc format. Acquisition areas include Salt Lake, Wasatch, and Iron
+      DEMs derived from XYZi Lidar point clouds in .asc format. Acquisition areas include Salt Lake, Wasatch, and Iron
       counties.
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.wasatch2006} />
