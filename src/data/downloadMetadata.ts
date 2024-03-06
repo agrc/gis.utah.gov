@@ -1799,8 +1799,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Parks Local': {
     itemId: '818536733987486b8082e4c5dec0a1dd',
     name: 'Utah Parks Local',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahParksLocal',
+    openSgid: 'recreation.parks_local',
     layerId: 0,
   },
   'Utah Ski Lifts': {
