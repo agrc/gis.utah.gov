@@ -1898,7 +1898,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '5a99475d434941359462307ede77d980',
     name: 'Utah Law Enforcement',
     featureServiceId: 'LawEnforcement',
-    openSgid: '',
+    openSgid: 'society.law_enforcement',
     layerId: 0,
   },
   'Utah Forest Service Stations': {
