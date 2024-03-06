@@ -118,6 +118,7 @@
     "geospatial",
     "geotiff",
     "GISAC",
+    "Glonass",
     "gnis",
     "gnss",
     "goed",
@@ -202,6 +203,7 @@
     "monumentation",
     "Motoqua",
     "mountpoint",
+    "Mountpoints",
     "mrrc",
     "MSAG",
     "multimodal",
@@ -375,7 +377,9 @@
     "xlink",
     "zipcode"
   ],
-  "cSpell.enableFiletypes": ["astro"],
+  "cSpell.enableFiletypes": [
+    "astro"
+  ],
   "[astro]": {
     "editor.wordWrapColumn": 120,
     "editor.defaultFormatter": "astro-build.astro-vscode"
