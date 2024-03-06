@@ -1,0 +1,94 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah State Boundary',
+  description: `Represents the boundary of the State of Utah.`,
+  stewards: ['UGRC', `Lieutenant Governor's Office`],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`July 2014`, `November 2011`, `March 2011`],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah State Boundary is maintained by UGRC with the help of many state, county, and local entities. Changes and
+      updates are through certification by the Lt. Governor's Office sent in by City and County Recorders offices. All
+      features are adjusted to the current Geographic Coordinate Database (GCDB) points.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data were
+      adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but,
+      rather a set of boundaries used for the administrative purposes that conforms to logical & administrative rules.
+    </p>
+    <p>
+      In addition to the boundary of the state of Utah this dataset contains another larger boundary around the state
+      that can be used for cartographic purposes to mask other data layers that extend past the boundary of the state.
+      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). The state
+      boundary dataset is is maintained by UGRC in partnership with state and local government.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="County Boundaries" href="/products/sgid/boundaries/county/"
+        >County Boundaries is a multi-purpose statewide dataset of county boundaries for cartography and approximate
+        boundary identification.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="Municipal Certifications & County Boundaries" href="https://municert.utah.gov/"
+        >Lieutenant Governor Municipal Certifications website.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Counties" href="/products/sgid/boundaries/county">Utah counties</CardWithSmallLink>
+      <CardWithSmallLink title="State boundary" href="/products/sgid/boundaries/utah-state"
+        >Utah state boundary</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Municipal boundaries" href="/products/sgid/boundaries/municipal-boundaries"
+        >Municipal boundaries in Utah</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Zip codes" href="/products/sgid/boundaries/zip-codes"
+        >Zip codes in Utah</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
