@@ -49,7 +49,9 @@ const getFeatureServiceUrl = (metadata) =>
             <ExternalLink href={lirOpenData}>{county} county land information record parcels</ExternalLink> in the SGID on
             ArcGIS.
           </li>
-          <li><ExternalLink href={getFeatureServiceUrl(lirMetadata)}>{county} county feature service</ExternalLink></li>
+          <li>
+            <ExternalLink href={getFeatureServiceUrl(lirMetadata)}>{county} county LIR feature service</ExternalLink>
+          </li>
           {
             lirMetadata ? (
               <li>
