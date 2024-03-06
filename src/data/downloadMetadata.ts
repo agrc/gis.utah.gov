@@ -1827,8 +1827,8 @@ export const dataPages: DownloadMetadata = {
   'Utah State Agency Dispatch': {
     itemId: 'dc84c0dfd07648718114f683c933ea93',
     name: 'Utah State Agency Dispatch',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'StateAgencyDispatch',
+    openSgid: 'society.state_agency_dispatch',
     layerId: 0,
   },
   'Utah State Court Districts': {

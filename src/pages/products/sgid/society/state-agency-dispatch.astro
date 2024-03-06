@@ -1,0 +1,83 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah State Agency Dispatch',
+  description: `State agency dispatch area boundaries.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`October 2013`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Areas of responsibility for the State Department of Public Communications Center for dispatching State law
+      enforcement agencies, such as Highway Patrol, Wildlife Resources, Corrections, Park Ranges etc..
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="DPS Communications" href="https://dispatch.utah.gov/"
+        >Utah Department of Public Safety.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Highway Patrol" href="https://highwaypatrol.utah.gov/"
+        >Utah Department of Public Safety Highway Patrol.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="PSAP Boundaries"
+        href="/products/sgid/society/public-safety-answering-point-boundaries"
+        style="secondary">Public safety answering point boundaries.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="EMS Areas"
+        href="/products/sgid/society/emergency-medical-response-areas"
+        style="secondary">Emergency medical services response areas.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
