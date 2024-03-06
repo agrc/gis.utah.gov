@@ -12,6 +12,8 @@ import { Image } from 'astro:assets';
 
 import developmentPhoto from '@images/solutions/development.svg';
 import enhancePhoto from '@images/solutions/enhance.svg';
+import exploringPhoto from '@images/solutions/exploring.svg';
+import mapPhoto from '@images/solutions/map.svg';
 import rocketPhoto from '@images/solutions/rocket.svg';
 
 import { stripeSections } from '@utils/page';
@@ -50,16 +52,19 @@ const page: IStandardPageMetadata = {
       through a wireless connection using the Networked Transport of RTCM via Internet Protocol (NTRIP).
     </p>
   </Section>
+
   <Section {...page.section[1]}>
     <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
     <p>
       Our real-time GPS network plays a crucial role in keeping drones in designated flight corridors. This aids a
       multitude of services including critical medical deliveries.
-
-      <i>insert image of drone flying medical supplies</i>
     </p>
   </Section>
+
   <Section {...page.section[2]}>
+    <Image slot="image" src={mapPhoto} alt="two people holding a map" class="w-full max-w-[400px]" />
+  </Section>
+  <Section title="Monitoring" actionText="Browse our data" actionUrl="/products/sgid">
     <Image
       slot="image"
       src={enhancePhoto}
@@ -81,7 +86,9 @@ const page: IStandardPageMetadata = {
       > shows land movement following a 2011 earthquake in Japan.
     </p>
   </Section>
+
   <Section {...page.section[4]}>
+    <Image slot="image" src={exploringPhoto} alt="person exploring mountains" class="w-full max-w-[400px]" />
     <p>
       A high-accuracy GNSS network plays a crucial role in meteorology and mitigating the effects of climate change.
       Real-time measurements can help improve weather predictions, severe weather monitoring, atmospheric modeling, and
