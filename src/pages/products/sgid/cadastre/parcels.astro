@@ -1,0 +1,397 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Metadata from '@components/data/Metadata.astro';
+
+import CardForParcel from '@components/data/CardForParcel.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+import Alert from '@components/page/Alert.astro';
+import CardForStatute from '@components/page/CardForStatute.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+
+export const metadata: IMetadata = {
+  title: 'Utah Parcels',
+  description: `Basic parcel data for each of the 29 counties in Utah.`,
+  stewards: ['UGRC', 'Local government'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.CADASTRE,
+  secondaryCategory: SgidCategory.BOUNDARIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://parcels.utah.gov',
+  updateHistory: [
+    `January 2024 - Grand, Utah, Washington`,
+    `December 2023 - Davis, Morgan, Salt Lake, Utah, Washington, Weber`,
+    `November 2023 - Davis, Grand, Kane, Salt Lake, Sevier, Tooele, Utah, Washington, Weber`,
+    `October 2023 - Box Elder, Carbon, Davis, Utah, Washington`,
+    `September 2023 - Davis, Cache, Iron, Kane, Salt Lake, Utah, Washington, Weber`,
+    `August 2023 - Davis, Salt Lake, Tooele, Utah, Washington, Weber`,
+    `July 2023 - Box Elder, Davis, Summit, Utah, Washington, Weber`,
+    `June 2023 - Beaver, Davis, Emery, Kane, Salt Lake, Utah, Washington, Weber`,
+    `May 2023 - Cache, Davis, Juab, Kane, Morgan, Salt Lake, Tooele, Utah, Wasatch, Washington, Weber`,
+    `April 2023 - Carbon, Davis, Piute, Salt Lake, Utah, Washington`,
+    `March 2023 - Box Elder, Davis, Iron, Kane, Utah, Washington`,
+    `February 2023 - Cache, Davis, Tooele, Utah, Washington, Weber`,
+    `January 2023 - Carbon, Davis, Kane, Utah, Wasatch, Washington, Weber`,
+    `December 2022 - Davis, Grand, Morgan, Salt Lake, Tooele, Utah, Washington, Weber`,
+    `November 2022 - Davis, Utah, Washington, Weber`,
+    `October 2022 - Carbon, Davis, Garfield, Iron, Salt Lake, Utah, Washington, Weber`,
+    `September 2022 - Box Elder, Davis, Kane, Morgan, Salt Lake, Utah, Washington, Weber`,
+    `August 2022 - Cache, Davis, Millard, Summit, Tooele, Utah, Washington, Weber`,
+    `July 2022 - Box Elder, Carbon, Davis, Iron, Kane, Salt Lake, Utah, Washington, Weber`,
+    `June 2022 - Beaver, Davis, Emery, Salt Lake, Tooele, Utah, Wasatch, Washington`,
+    `May 2022 - Davis, Morgan, Utah, Washington, Weber`,
+    `April 2022 - Davis, Salt Lake, Utah, Wasatch, Washington, Weber`,
+    `March 2022 - Box Elder, Davis, Garfield, Iron, Kane, Uintah, Utah, Washington, Weber`,
+    `February 2022 - Davis, Grand, Kane, Summit, Utah, Wasatch, Washington, Weber`,
+    `January 2022 - Davis, Utah, Washington, Weber`,
+  ],
+};
+
+const countyMetadata = [
+  {
+    county: 'Beaver',
+    sgid: 'utah-beaver-county-parcels',
+    lastUpdate: 'June 2023',
+    lastUpdateLir: '2023',
+    website: 'https://beaver.utah.gov/',
+    app: '',
+  },
+  {
+    county: 'Box Elder',
+    sgid: 'utah-box-elder-county-parcels',
+    lastUpdate: 'October 2023',
+    lastUpdateLir: '2020',
+    website: '',
+    app: '',
+  },
+  {
+    county: 'Cache',
+    sgid: 'utah-cache-county-parcels',
+    lastUpdate: 'September 2023',
+    lastUpdateLir: '2022',
+    website: 'https://gis.cachecounty.org/Websites/Parcel%20and%20Zoning%20Viewer/',
+    app: '',
+  },
+  {
+    county: 'Carbon',
+    sgid: 'utah-carbon-county-parcels',
+    lastUpdate: 'February 2024',
+    lastUpdateLir: '2023',
+    website: 'https://maps.carbon.utah.gov/ccgeneral/',
+    app: '',
+  },
+  {
+    county: 'Daggett',
+    sgid: 'utah-daggett-county-parcels',
+    lastUpdate: 'June 2021',
+    lastUpdateLir: '2021',
+    website: '',
+    app: 'https://daggettutah.maps.arcgis.com/apps/webappviewer/index.html?id=29791ce279974618857a9a1ebf97f6f2',
+  },
+  {
+    county: 'Davis',
+    sgid: 'utah-davis-county-parcels',
+    lastUpdate: 'February 2024',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://webportal.daviscountyutah.gov/App/PropertySearch/esri/map',
+  },
+  {
+    county: 'Duchesne',
+    sgid: 'utah-duchesne-county-parcels',
+    lastUpdate: 'March 2019',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://portal.duchesnecountygis.org/arcgis/apps/webappviewer/index.html?id=551cc5dc2c73470693d47f77f3030aea',
+  },
+  {
+    county: 'Emery',
+    sgid: 'utah-emery-county-parcels',
+    lastUpdate: 'June 2023',
+    lastUpdateLir: '2023',
+    website: 'http://www.emerycounty.com/',
+    app: '',
+  },
+  {
+    county: 'Garfield',
+    sgid: 'utah-garfield-county-parcels',
+    lastUpdate: 'October 2022',
+    lastUpdateLir: '2023',
+    website: 'http://garfield.utah.gov/',
+    app: '',
+  },
+  {
+    county: 'Grand',
+    sgid: 'utah-grand-county-parcels',
+    lastUpdate: 'January 2024',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://grandcountyutah.maps.arcgis.com/apps/webappviewer/index.html?id=87df401f39fb4d45b3f35743ecec5a7c',
+  },
+  {
+    county: 'Iron',
+    sgid: 'utah-iron-county-parcels',
+    lastUpdate: 'September 2023',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://irongis.maps.arcgis.com/apps/webappviewer/index.html?id=4b8e40e3c17d45d282a2b1515fbdd160',
+  },
+  {
+    county: 'Juab',
+    sgid: 'utah-juab-county-parcels',
+    lastUpdate: 'May 2023',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'http://63.78.118.148/recorder/web/login.jsp',
+  },
+  {
+    county: 'Kane',
+    sgid: 'utah-kane-county-parcels',
+    lastUpdate: 'February 2024',
+    lastUpdateLir: '2022',
+    website: '',
+    app: 'http://eagleweb.kane.utah.gov/eaglesoftware/web/login.jsp',
+  },
+  {
+    county: 'Millard',
+    sgid: 'utah-millard-county-parcels',
+    lastUpdate: 'August 2022',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://millardgis.maps.arcgis.com/apps/webappviewer/index.html?id=a6349d390b9041a1aeae35e29a398035',
+  },
+  {
+    county: 'Morgan',
+    sgid: 'utah-morgan-county-parcels',
+    lastUpdate: 'December 2023',
+    lastUpdateLir: '2023',
+    website: 'https://www.morgancountyutah.gov/',
+    app: '',
+  },
+  {
+    county: 'Piute',
+    sgid: 'utah-piute-county-parcels',
+    lastUpdate: 'April 2023',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://arcg.is/1mHz5j0',
+  },
+  {
+    county: 'Rich',
+    sgid: 'utah-rich-county-parcels',
+    lastUpdate: 'December 2021',
+    lastUpdateLir: '2020',
+    website: 'http://www.richcountyut.org/',
+    app: '',
+  },
+  {
+    county: 'Salt Lake',
+    sgid: 'utah-salt-lake-county-parcels',
+    lastUpdate: 'December 2023',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://slco.org/assessor/new/query/intropage.cfm',
+  },
+  {
+    county: 'San Juan',
+    sgid: 'utah-san-juan-county-parcels',
+    lastUpdate: 'May 2014',
+    lastUpdateLir: '2023',
+    website: 'https://www.sanjuancounty.org/',
+    app: '',
+  },
+  {
+    county: 'Sanpete',
+    sgid: 'utah-sanpete-county-parcels',
+    lastUpdate: 'October 2015',
+    lastUpdateLir: '2017',
+    website: 'http://sanpete.com/',
+    app: '',
+  },
+  {
+    county: 'Sevier',
+    sgid: 'utah-sevier-county-parcels',
+    lastUpdate: 'November 2023',
+    lastUpdateLir: '2018',
+    website: '',
+    app: 'https://maps-sevierut.hub.arcgis.com/apps/2af0bb6d7b4c488d9b256012265955a7/explore',
+  },
+  {
+    county: 'Summit',
+    sgid: 'utah-summit-county-parcels',
+    lastUpdate: 'July 2023',
+    lastUpdateLir: '2022',
+    website: '',
+    app: 'http://maps.summitcounty.org/flexviewers/countymap/',
+  },
+  {
+    county: 'Tooele',
+    sgid: 'utah-tooele-county-parcels',
+    lastUpdate: 'February 2024',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://tooelecountygis.maps.arcgis.com/apps/webappviewer/index.html?id=c43e0f457ef547358a85c54d327c0342',
+  },
+  {
+    county: 'Uintah',
+    sgid: 'utah-uintah-county-parcels',
+    lastUpdate: 'March 2022',
+    lastUpdateLir: '-',
+    website: 'http://www.co.uintah.ut.us/',
+    app: '',
+  },
+  {
+    county: 'Utah',
+    sgid: 'utah-utah-county-parcels',
+    lastUpdate: 'February 2024',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://maps.utahcounty.gov/ParcelMap/ParcelMap.html',
+  },
+  {
+    county: 'Wasatch',
+    sgid: 'utah-wasatch-county-parcels',
+    lastUpdate: 'February 2024',
+    lastUpdateLir: '2022',
+    website: '',
+    app: 'https://wasatch.maps.arcgis.com/apps/webappviewer/index.html?id=02c20118f66f40b98662c4356c741e6e',
+  },
+  {
+    county: 'Washington',
+    sgid: 'utah-washington-county-parcels',
+    lastUpdate: 'February 2024',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://geoprodvm.washco.utah.gov/Html5Viewer/?viewer=WashingtonCounty',
+  },
+  {
+    county: 'Wayne',
+    sgid: 'utah-wayne-county-parcels',
+    lastUpdate: 'July 2010',
+    lastUpdateLir: '2018',
+    website: 'http://www.waynecountyutah.org/',
+    app: '',
+  },
+  {
+    county: 'Weber',
+    sgid: 'utah-weber-county-parcels',
+    lastUpdate: 'February 2024',
+    lastUpdateLir: '2023',
+    website: '',
+    app: 'https://www3.co.weber.ut.us/psearch/',
+  },
+];
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <div class="grid lg:grid-cols-2 lg:gap-10">
+      <p>
+        The SGID contains county parcel data for each of the 29 counties in Utah and is updated as new data is provided
+        from the data steward in each county.
+      </p>
+      <div class="justify-center self-center">
+        <Alert title="Tip">
+          While addresses are provided with the parcel boundaries the authoritative dataset for addresses from UGRC is
+          the <ExternalLink href="/products/sgid/location/address-points">address points</ExternalLink>.
+        </Alert>
+      </div>
+    </div>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <QuickLinks
+      slot="quick-links"
+      links={countyMetadata.map((item) => {
+        return { ...item, title: item.county };
+      })}
+    />
+    {countyMetadata.map((item) => <CardForParcel {...item} />)}
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      In 2005, HB113 was passed requiring the UGRC Cadastral Surveyor to work with local government to create a parcel
+      database for the State.
+    </p>
+    <CardForStatute
+      href="https://le.utah.gov/xcode/Title63A/Chapter16/63A-16-S505.html"
+      code="63A-16-505.(3)(vi)"
+      title="Utah Geospatial Resource Center"
+    >
+      Coordinate with county recorders and surveyors to create a statewide parcel layer in the State Geographic
+      Information Database containing parcel boundary, parcel identifier, parcel address, owner type, and county
+      recorder contact information
+    </CardForStatute>
+    <h4>Attributes</h4>
+    <div class="grid lg:grid-cols-2 lg:gap-10">
+      <p>
+        Parcel polygons contain attributes unique to each parcel such as a unique parcel number (PARCEL_ID), address for
+        the parcel (PARCEL_ADD, PARCEL_CITY, PARCEL_ZIP), update information (ParcelsCur, ParcelsRec, ParcelsPub,
+        ParcelYear, ParcelNotes), a generalized land ownership designation (OWN_TYPE), and the phone number for the
+        county recorders office (RECORDER).
+      </p>
+      <div class="justify-center self-center">
+        <Alert title="Info">
+          The owner type field OWN_TYPE in the Basic Parcels is a generalized ownership type (Federal, Private, State,
+          Tribal) and is populated with the value of the OWNER field where the parcel's centroid intersects the <a
+            href="/products/sgid/boundaries/land-ownership">Land Ownership</a
+          >.
+        </Alert>
+      </div>
+    </div>
+    <h4>Updates</h4>
+    <p>
+      We aim to update Davis, Salt Lake, Utah, Washington, and Weber, also known as the Big 5, every month. The rest of
+      the rural counties are on a rotating schedule ranging from quarterly to annually.
+    </p>
+    <Contacts contactKey="parcels" subject="Utah Parcels" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Statewide parcel feature service"
+        href="https://opendata.gis.utah.gov/datasets/utah-statewide-parcels/explore"
+        >A single feature service of all county parcels.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Statewide parcel vector tile service"
+        href="https://opendata.gis.utah.gov/maps/utah-statewide-parcels-vector-tiles/explore"
+        >Vector tile service.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Address points" href="/products/sgid/location/address-points" style="secondary"
+        >Address Points
+      </CardWithSmallLink>
+      <CardWithSmallLink
+        title="LIR parcel archive"
+        href="https://drive.google.com/drive/folders/1ne7HkZI1L_NrnbszMraIIUGPV7cDCMtH"
+        style="secondary"
+      >
+        Parcels with land information record information.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
