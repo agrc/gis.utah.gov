@@ -16,6 +16,8 @@ export const convertProductType = (type: ProductType) => {
       return 'Desktop application';
     case ProductType.DISCOVER_SERVICE:
       return 'Imagery web service';
+    case ProductType.RASTER:
+      return 'Imagery product';
     default:
       return type;
   }
