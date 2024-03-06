@@ -1848,8 +1848,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Public Safety Answering Point Boundaries': {
     itemId: '34f4c65991ce4d4299d3957efa35bf41',
     name: 'Utah Public Safety Answering Point Boundaries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'PSAPBoundaries',
+    openSgid: 'society.public_safety_answering_point_boundaries',
     layerId: 0,
   },
   'Utah Public Safety Answering Point Locations': {
