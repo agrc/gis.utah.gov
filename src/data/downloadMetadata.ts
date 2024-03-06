@@ -1855,7 +1855,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Public Safety Answering Point Locations': {
     itemId: '6c102c8fc5af413187db0910053d5ed8',
     name: 'Utah Public Safety Answering Point Locations',
-    featureServiceId: 'PSAPLocations',
+    featureServiceId: 'UtahPSAP_Locations',
     openSgid: 'society.public_safety_answering_point_locations',
     layerId: 0,
   },
