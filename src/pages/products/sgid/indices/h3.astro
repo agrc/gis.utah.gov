@@ -1,0 +1,122 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Disclaimer from '@components/data/Disclaimer.astro';
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah H3 Hexes',
+  description: `The H3 reference polygons covering the State of Utah at resolutions 5 through 9.`,
+  stewards: ['UGRC', 'Uber'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.INDICES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+
+  updateHistory: [`October 2022: Initial creation`],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The H3 reference polygons covering the State of Utah at resolutions 5 through 9. These were created with the H3
+      API produced by Uber, Inc and cover the entirety of the state. You can use these for both a standard hexagon grid
+      for the state and a spatial dataset for points aggregated via the H3 API.
+    </p>
+    <p>
+      See our <a href="/blog/2022-10-26-using-h3-hexes">H3 blog post</a> for an example usage scenario.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data: Level 9" slot="downloads" titlePosition="center">
+    <HubDownloads {...dataPages['Utah H3 Hexes Level 9']} />
+  </Section>
+  <Section title="Use the data: Level 8" slot="downloads" titlePosition="center" stripe>
+    <HubDownloads {...dataPages['Utah H3 Hexes Level 8']} />
+  </Section>
+  <Section title="Use the data: Level 7" slot="downloads" titlePosition="center">
+    <HubDownloads {...dataPages['Utah H3 Hexes Level 7']} />
+  </Section>
+  <Section title="Use the data: Level 6" slot="downloads" titlePosition="center" stripe>
+    <HubDownloads {...dataPages['Utah H3 Hexes Level 6']} />
+  </Section>
+  <Section title="Use the data: Level 5" slot="downloads" titlePosition="center">
+    <HubDownloads {...dataPages['Utah H3 Hexes Level 5']} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The <ExternalLink href="https://h3geo.org/">H3 Spatial Index</ExternalLink> (created by Uber) helps users aggregate
+      point data using an easily reusable common grid. This allows you to maintain a consistent geometry across all your
+      analyses, which makes them easier to compare. H3 uses highly-optimized math routines to assign lat/long coordinates
+      an ID corresponding to a polygon (almost always hexes) at a given resolution rather than performing a much slower point-in-polygon
+      geometrical operation. Once you've generated IDs for your points, you can use these polygons to aggregate them and
+      display summary statistics on a map.
+    </p>
+    <p>
+      We used the H3 library to create the index polygons that cover the entire State of Utah at resolutions 5 through
+      9. You can find more information about how we created them, along with an example of how to use them, in our <a
+        href="/blog/2022-10-26-using-h3-hexes">H3 blog post</a
+      >.
+    </p>
+    <p>
+      Like the rest of our SGID data, the spatial reference for these polygons is UTM Zone 12N, NAD83. However, remember
+      that your points must be in WGS 84 lat/long in order to use the H3 API to assign them a hex ID. The polygons are
+      copyright 2022 Uber Technologies, Inc and licensed under version 2.0 of the <ExternalLink
+        href="http://www.apache.org/licenses/LICENSE-2.0"
+      >
+        Apache License</ExternalLink
+      >.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Disclaimer slot="disclaimer">
+    <p>
+      If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
+      element
+    </p>
+  </Disclaimer>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Hexagon Dimensions" href="https://h3geo.org/docs/core-library/restable/"
+        >Table of hexagon dimensions for different resolutions</CardWithPopularLink
+      >
+      <CardWithPopularLink title="H3 Documentation" href="https://h3geo.org/docs/"
+        >The complete documentation for the H3 system</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Python Library" href="https://github.com/uber/h3-py" style="secondary"
+        >The library for using the H3 API in Python.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Zip Code Boundaries" href="/products/sgid/boundaries/zip-codes" style="secondary"
+        >Need approximate zip code areas instead?</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

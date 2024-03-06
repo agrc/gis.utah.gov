@@ -2555,8 +2555,8 @@ export const dataPages: DownloadMetadata = {
   'Utah H3 Hexes Level 5': {
     itemId: '980d3af37717456b92d7039d9ffa35f3',
     name: 'Utah H3 Hexes Level 5',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'h3_hexes_z5',
+    openSgid: 'indices.h3_hexes_level_5',
     layerId: 0,
   },
   'Utah Senate Districts 2022 to 2032': {
@@ -2611,15 +2611,15 @@ export const dataPages: DownloadMetadata = {
   'Utah H3 Hexes Level 6': {
     itemId: '992228ada5cd4016b5f9c4d68751d1ca',
     name: 'Utah H3 Hexes Level 6',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'h3_hexes_z6',
+    openSgid: 'indices.h3_hexes_level_6',
     layerId: 0,
   },
   'Utah H3 Hexes Level 7': {
     itemId: '3dcd072755cd453885bda7dc69a82fef',
     name: 'Utah H3 Hexes Level 7',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'h3_hexes_z7',
+    openSgid: 'indices.h3_hexes_level_7',
     layerId: 0,
   },
   'Utah District Combination Areas 2022': {
@@ -2649,15 +2649,15 @@ export const dataPages: DownloadMetadata = {
   'Utah H3 Hexes Level 8': {
     itemId: '008865ed31514569a9fd11a6dc8a7ee0',
     name: 'Utah H3 Hexes Level 8',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'h3_hexes_z8',
+    openSgid: 'indices.h3_hexes_level_8',
     layerId: 0,
   },
   'Utah H3 Hexes Level 9': {
     itemId: 'f11c3c7302924c2e869112ec95543c6c',
     name: 'Utah H3 Hexes Level 9',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'h3_hexes_z9',
+    openSgid: 'indices.h3_hexes_level_9',
     layerId: 0,
   },
   'Utah Census Counties 2020': {
