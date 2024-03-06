@@ -7,7 +7,6 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
-import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -67,8 +66,6 @@ const page: IPageMetadata = {
     <Contacts contactKey="brownfields" />
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
-
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="DERR" href="https://deq.utah.gov/division-environmental-response-remediation/"
@@ -82,14 +79,11 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
-        >Web application showing off SGID services & data</CardWithSmallLink
-      >
       <CardWithSmallLink title="Environment" href="/products/sgid/environment" style="secondary"
         >SGID Environment category</CardWithSmallLink
       >
       <CardWithSmallLink
-        title="Brownfields Not Targeted"
+        title="Brownfields Not Targeted sites"
         href="/products/sgid/environment/brownfields-not-targeted"
         style="secondary">Related data</CardWithSmallLink
       >
