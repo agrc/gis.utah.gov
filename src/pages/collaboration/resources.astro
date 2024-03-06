@@ -8,8 +8,8 @@ import Layout from '@layouts/FullWidth.astro';
 import { Image } from 'astro:assets';
 
 import blogPhoto from '@images/collaboration/blog.svg';
+import boxesPhoto from '@images/collaboration/boxes.svg';
 import conferenceLogo from '@images/collaboration/conference.svg';
-import eventsPhoto from '@images/collaboration/events.svg';
 import groupPhoto from '@images/collaboration/group.svg';
 
 import BulletedList from '@components/page/BulletedList.astro';
@@ -46,9 +46,9 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[0]}>
     <Image
       slot="image"
-      src={eventsPhoto}
+      src={boxesPhoto}
       loading="eager"
-      alt="a person circling a date on a calendar"
+      alt="a person opening boxes"
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
