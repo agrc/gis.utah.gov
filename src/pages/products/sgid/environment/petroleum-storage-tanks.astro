@@ -8,7 +8,6 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
-import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -46,7 +45,13 @@ const page: IPageMetadata = {
       Utah facility information for each petroleum storage tank (PST). This is the facility where the storage tanks are
       located.
     </p>
+  </Fragment>
 
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
     <p>Additional tank information can be found in these related tables:</p>
     <BulletedList>
       <li>
@@ -63,13 +68,6 @@ const page: IPageMetadata = {
         <ExternalLink href="https://opendata.gis.utah.gov/datasets/utah::utah-deqmap-lust/about">LUST</ExternalLink>
       </li>
     </BulletedList>
-  </Fragment>
-
-  <Section title="Use the data" slot="downloads" titlePosition="center">
-    <HubDownloads {...page.hub} />
-  </Section>
-
-  <Fragment slot="description">
     <p>
       This dataset is updated nightly via forklift from the DERR database which is continually updated. This data layer
       contains coordinates of Facility PST sites. There can be multiple tanks for each facility. Each storage tank is
@@ -83,8 +81,6 @@ const page: IPageMetadata = {
     </p>
     <Contacts contactKey="ust" />
   </Fragment>
-
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>

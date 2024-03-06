@@ -6,7 +6,6 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
-import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -58,8 +57,6 @@ const page: IPageMetadata = {
     </p>
     <Contacts contactKey="waste" />
   </Fragment>
-
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
