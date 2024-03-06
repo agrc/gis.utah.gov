@@ -1,0 +1,77 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Public Safety Answering Point Boundaries',
+  description: `Boundaries defining areas served by a public safety answering point location`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`January 2024`, `November 2023`, `August 2023`, `June 2023`, `March 2023`, `November 2022`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Public Safety Answering Point (PSAP) boundaries in Utah that are used for call-routing in the Next-Generation 911
+      system. PSAP jurisdictions related to county and municipal boundaries are based on the boundaries that were
+      current on the date these data were last updated. These data also includes jurisdictional boundaries of the Navajo
+      Nation Tribal Lands, Hill Air Force Base, and Colorado City.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UCA" href="https://www.uca911.org/NG-911"
+        >Utah Communications Authority 911 Division.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="FCC" href="https://www.fcc.gov/general/9-1-1-master-psap-registry"
+        >Master PSAP Registry.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="PSAP Locations"
+        href="/products/sgid/society/public-safety-answering-point-locations"
+        style="secondary">Public safety answering point locations.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Dispatch" href="/products/sgid/society/state-agency-dispatch" style="secondary"
+        >State agency dispatch.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
