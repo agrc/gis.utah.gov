@@ -13,6 +13,7 @@ import { YouTube } from '@astro-community/astro-embed-youtube';
 
 import aboutUsPhoto from '@images/about/about-us.svg';
 
+import Blockquote from '@components/page/Blockquote.astro';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
@@ -20,7 +21,7 @@ const page: IStandardPageMetadata = {
   section: stripeSections([
     { title: 'Who is the UGRC' },
     { title: 'What we do', titlePosition: 'center' },
-    { title: 'Our Vision' },
+    { title: 'Our vision', actionText: 'Explore our history', actionUrl: '/about/history' },
     { title: 'You might also like', titlePosition: 'center' },
   ]),
 };
@@ -64,12 +65,10 @@ const page: IStandardPageMetadata = {
     </div>
   </Section>
   <Section {...page.section[2]}>
-    <p>
-      UGRC is directed under mapping-related sections of Utah statute to coordinate GIS resources within state
-      government including the management of the State Geographic Information Database (SGID) and the operation of The
-      Utah Reference Network for Global Positioning Systems (TURNGPS) that provides high precision correction services
-      for surveying, mapping, and machine control.
-    </p>
+    <Blockquote style="secondary">
+      UGRC is a source for reliable and authoritative geospatial data and provider of seamless GIS integrations
+      throughout state government and the Utah GIS community.
+    </Blockquote>
     <h2>Our History</h2>
     <p>
       UGRC was one of the first geospatial information offices in the country, established a few years before its formal

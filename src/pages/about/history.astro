@@ -1,0 +1,323 @@
+---
+import NumberedList from '@components/page/NumberedList.astro';
+import type { IStandardPageMetadata } from './products/sgid/types';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import ExternalLink from '@components/page/ExternalLink.astro';
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'UGRC history',
+  pillar: 'About',
+  section: stripeSections([
+    {},
+    { title: 'History' },
+    { title: 'Services' },
+    { title: 'Collaboration' },
+    { title: 'References' },
+  ]),
+};
+---
+
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+
+  <Section {...page.section[0]}>
+    <p>
+      The Utah Geospatial Resource Center (UGRC) is a government agency located in Taylorsville, Utah, United States. It
+      has been operating since 1984 but was established in 1991<sup><a href="#cite-note-1">[1]</a></sup> to provide geospatial
+      data and services to state and local governments, as well as to the general public.
+    </p>
+    <table class="mx-auto">
+      <tbody>
+        <tr>
+          <th colspan="2" class="border-b border-black/50 pb-2 dark:border-white/50">Agency overview</th>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <th scope="row" class="py-3 pr-4 text-left">Formed</th>
+          <td class="py-3">1982</td>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <th scope="row" class="py-3 pr-4 text-left">Preceding agencies</th>
+          <td class="py-3">
+            <BulletedList>
+              <li>Automated Geographic Reference Center (AGRC)</li>
+              <li>Automated Geographic Reference (AGR)</li>
+            </BulletedList>
+          </td>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <th scope="row" class="py-3 pr-4 text-left">Jurisdiction</th>
+          <td class="py-3">State of Utah</td>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <th scope="row" class="py-3 pr-4 text-left">Headquarters</th>
+          <td class="py-3"> Taylorsville, Utah </td>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <th scope="row" class="py-3 pr-4 text-left">Employees</th>
+          <td class="py-3">12</td>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <th scope="row" class="py-3 pr-4 text-left">Agency executive</th>
+          <td class="py-3"> Matt Peters, Director </td>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <th scope="row" class="py-3 pr-4 text-left">Parent department</th>
+          <td class="py-3">Department of Technology Services</td>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <th scope="row" class="py-3 pr-4 text-left">Parent agency</th>
+          <td class="py-3">Department of Government Operations</td>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <th scope="row" class="class= py-3 pr-4 text-left" py-3"">Website</th><td>
+            <a href="https://gis.utah.gov">gis<wbr />.utah<wbr />.gov</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </Section>
+
+  <Section {...page.section[1]}>
+    <p>
+      In 1981, the State of Utah signed a contract with ESRI to purchase hardware, software, and training<sup
+        ><a href="#cite-note-2">[2]</a></sup
+      ><sup><a href="#cite-note-3">[3]</a></sup>.
+    </p>
+    <p>
+      In 1982, the Automated Geographic Reference (AGR), in the Department of Natural Resources, was established to
+      create a state-wide catalog of existing and desired data, automated support for this catalog, capability of
+      capturing additional data, and addition of a geographic component to existing state agency data<sup
+        ><a href="#cite-note-4">[4]</a></sup
+      >.
+    </p>
+
+    <p>
+      In 1984, AGR purchased ARC/INFO on a PRIME minicomputer<sup><a href="#cite-note-5">[5]</a></sup><sup
+        ><a href="#cite-note-6">[6]</a></sup
+      >.
+    </p>
+
+    <p>
+      In 1989, AGR was renamed to the Automated Geographic Reference Center (AGRC) and was moved to the Department of
+      Administrative Services and the Division of Information Technology services.<sup
+        ><a href="#cite-note-7">[7]</a></sup
+      >. This change made the State Geographic Information Database (SGID) a priority and was created in less than a
+      year<sup><a href="#cite-note-8">[8]</a></sup><sup><a href="#cite-note-9">[9]</a></sup>.
+    </p>
+
+    <p>In 1991, the AGRC and the SGID were created by Senate Bill 21<sup><a href="#cite-note-10">[10]</a></sup>.</p>
+
+    <p>
+      In 2021, the Utah Legislature renamed AGRC to the Utah Geospatial Resource Center (UGRC) with House Bill 261<sup
+        ><a href="#cite-note-11">[11]</a></sup
+      >
+    </p>
+  </Section>
+
+  <Section {...page.section[2]}>
+    <p>
+      The UGRC offers a wide range of geospatial services, including data acquisition, analysis, mapping, and
+      dissemination. The agency provides access to 390<sup><a href="#cite-note-12">[12]</a></sup> Utah geospatial datasets
+      stored in the State Geographic Information Datasource (SGID)<sup><a href="#cite-note-13">[13]</a></sup>, such as
+      aerial imagery<sup><a href="#cite-note-14">[14]</a></sup>, elevation data, land ownership information, roads<sup
+        ><a href="#cite-note-15">[15]</a></sup
+      >, and address points. Additionally, the UGRC offers consulting services to help organizations make the most of
+      their geospatial data
+    </p>
+  </Section>
+
+  <Section {...page.section[3]}>
+    <p>
+      The UGRC collaborates with other state and federal agencies, as well as with local governments and private
+      organizations. It is a member of the National States Geographic Information Council (NSGIC), and works closely
+      with the Utah Geographic Information Council (UGIC) to promote the use of geospatial data in Utah.
+    </p>
+  </Section>
+  <Section {...page.section[4]}>
+    <NumberedList>
+      <li id="cite-note-1">
+        <cite>
+          <ExternalLink href="https://le.utah.gov/xcode/Title63A/Chapter16/63A-16-S505.html"
+            >"Utah Code Section 63A-16-505"</ExternalLink
+          >. <i>le.utah.gov</i><span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">2023-04-13</span></span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-2">
+        <cite>
+          <a href="/history/agrc_enterprise_gis_case_study_2002.pdf"
+            >"Exemplary Enterprise GIS - AGRC Case Study for ESRI Conference"</a
+          >
+          <span class="cs1-format">(PDF)</span>. <i>Utah Mapping Portal</i>. Utah Geospatial Resource Center. p.&nbsp;1<span
+            class="reference-accessdate">. Retrieved <span class="text-nowrap">17 May</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-3">
+        <cite>
+          <ExternalLink href="https://www.esri.com/news/arcnews/spring03articles/state-of-utah.html"
+            >"The State of Utah Improves Efficiency of Its Geographic Information Database"</ExternalLink
+          >. <i>Esri news</i><span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">13 July</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-4">
+        <cite>
+          <a href="/history/agrc_enterprise_gis_case_study_2002.pdf"
+            >"Exemplary Enterprise GIS - AGRC Case Study for ESRI Conference"</a
+          >
+          <span class="cs1-format">(PDF)</span>. <i>Utah Mapping Portal</i>. Utah Geospatial Resource Center. p.&nbsp;1<span
+            class="reference-accessdate">. Retrieved <span class="text-nowrap">17 May</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-5">
+        <cite>
+          <a href="/history/agrc_program_strategy_1984.pdf">"State of Utah Automated Geographic Reference Program"</a>
+          <span class="cs1-format">(PDF)</span>. <i>Utah Mapping Portal</i>. Utah Geospatial Resource Center. p.&nbsp;6<span
+            class="reference-accessdate">. Retrieved <span class="text-nowrap">17 May</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-6">
+        <cite>
+          <a href="/history/agrc_enterprise_gis_case_study_2002.pdf"
+            >"Exemplary Enterprise GIS - AGRC Case Study for ESRI Conference"</a
+          >
+          <span class="cs1-format">(PDF)</span>. <i>Utah Mapping Portal</i>. Utah Geospatial Resource Center. p.&nbsp;1<span
+            class="reference-accessdate">. Retrieved <span class="text-nowrap">17 May</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-7">
+        <cite>
+          <a href="/history/agrc_enterprise_gis_case_study_2002.pdf"
+            >"Exemplary Enterprise GIS - AGRC Case Study for ESRI Conference"</a
+          >
+          <span class="cs1-format">(PDF)</span>. <i>Utah Mapping Portal</i>. Utah Geospatial Resource Center. p.&nbsp;2<span
+            class="reference-accessdate">. Retrieved <span class="text-nowrap">17 May</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-8">
+        <cite>
+          <a href="/history/agrc_enterprise_gis_case_study_2002.pdf"
+            >"Exemplary Enterprise GIS - AGRC Case Study for ESRI Conference"</a
+          >
+          <span class="cs1-format">(PDF)</span>. <i>Utah Mapping Portal</i>. Utah Geospatial Resource Center. p.&nbsp;2<span
+            class="reference-accessdate">. Retrieved <span class="text-nowrap">17 May</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-9">
+        <cite>
+          <a href="/history/sgid_design_objectives_1991.pdf">"State GeographicInformation Database"</a>
+          <span class="cs1-format">(PDF)</span>. <i>Utah Mapping Portal</i>. Utah Geospatial Resource Center<span
+            class="reference-accessdate">. Retrieved <span class="text-nowrap">17 May</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-10">
+        <cite>
+          <ExternalLink href="https://le.utah.gov/xcode/Title63A/Chapter16/63A-16-S505.html"
+            >"Utah Code Section 63A-16-505"</ExternalLink
+          >. <i>le.utah.gov</i><span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">2023-04-13</span></span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-11">
+        <cite>
+          <ExternalLink href="https://le.utah.gov/~2021/bills/hbillint/HB0261.pdf"
+            >"Geographic Reference Center Amendments"</ExternalLink
+          >
+          <span class="cs1-format">(PDF)</span>. <i>Utah State Legislature</i><span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">2023-04-14</span></span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-12">
+        <cite>
+          <ExternalLink href="https://gis.utah.gov/data/">"Data"</ExternalLink>. <i>Utah Mapping Portal</i>. Utah
+          Geospatial Resource Center<span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">17 May</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-13">
+        <cite>
+          <ExternalLink href="https://www.deseret.com/2002/5/3/19652888/state-gives-awards-for-info-technology"
+            >"State gives award for info technology"</ExternalLink
+          >. <i>Deseret News</i><span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">13 July</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-14">
+        <cite>
+          <ExternalLink
+            href="https://www.ksl.com/article/33318876/utah-agencies-partner-to-share-high-resolution-map-information"
+            >"Utah agencies partner to share high resolution aerial imagery"</ExternalLink
+          >. <i>KSL News</i>. Katie McKellar<span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">13 July</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-15">
+        <cite>
+          <ExternalLink href="https://www.deseret.com/2001/9/16/19606856/mapping-utah-s-road"
+            >"Mapping Utah's road"</ExternalLink
+          >. <i>Deseret News</i>. Donna Kemp Spangler<span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">13 July</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-16">
+        <cite>
+          <ExternalLink
+            href="https://www.ksl.com/article/30977474/wildlife-vehicle-collisions-better-understood-through-roadkill-app"
+            >"Wildlife vehicle collisions better understood through roadkill app"</ExternalLink
+          >. <i>KSL News</i>. Morgan Jacobsen<span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">13 July</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-17">
+        <cite>
+          <ExternalLink href="https://www.abc4.com/news/millions-of-dollars-in-unclaimed-cash-still-awaiting-utahns/"
+            >"Millions of dollars in unclaimed cash still awaiting Utahns"</ExternalLink
+          >. <i>ABC News</i>. Vivian Chow<span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">13 July</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-18">
+        <cite>
+          <ExternalLink
+            href="https://www.deseret.com/2013/9/4/20525025/salt-lake-city-creates-solar-power-information-website"
+            >"Salt Lake City creates solar power information website"</ExternalLink
+          >. <i>Deseret News</i><span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">13 July</span> 2023</span
+          >.</cite
+        >
+      </li>
+      <li id="cite-note-19">
+        <cite>
+          <ExternalLink href="https://www.deseret.com/2007/1/30/19998997/sure-sites-puts-utah-on-the-map"
+            >"SURE sites puts Utah on the Map"</ExternalLink
+          >. <i>Deseret News</i>. Brice Wallace<span class="reference-accessdate"
+            >. Retrieved <span class="text-nowrap">13 July</span> 2023</span
+          >.</cite
+        >
+      </li>
+    </NumberedList>
+  </Section>
+</Layout>
