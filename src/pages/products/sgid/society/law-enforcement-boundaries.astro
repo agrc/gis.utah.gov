@@ -52,6 +52,15 @@ const page: IPageMetadata = {
     <p>
       This data set was developed for the Utah Department of Public Safety Bureau of Investigations for use in planning
       operations throughout the State. It shows which law enforcement agency has responsibility in a specific area.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
       Identification of local police departments was obtained from the Utah Chiefs of Police Association and from
       associated 911 dispatch centers. Boundaries for the police departments are the current municipal boundaries in the
       SGID. Periodic boundary boundary changes will be made as municipal boundaries change and responsibilities of city
@@ -59,10 +68,6 @@ const page: IPageMetadata = {
       in the SGID minus local police department boundaries.
     </p>
   </Fragment>
-
-  <Section title="Use the data" slot="downloads" titlePosition="center">
-    <HubDownloads {...page.hub} />
-  </Section>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
