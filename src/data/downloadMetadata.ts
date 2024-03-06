@@ -2542,7 +2542,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '0d2f76daf7d540edbefea6df6d7345d8',
     name: 'Utah Garfield County Parcels LIR',
     featureServiceId: null,
-    openSgid: '',
+    openSgid: 'cadastre.',
     layerId: 0,
   },
   'Utah Beaver County Parcels': {

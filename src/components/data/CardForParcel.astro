@@ -1,0 +1,83 @@
+---
+import Clipboard from '@components/page/Clipboard.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import { dataPages } from '@data/downloadMetadata';
+import { createIdFromTitle } from '@utils/page';
+
+interface Props {
+  county: string;
+  sgid: string;
+  lastUpdate: string;
+  lastUpdateLir: string;
+  website?: string;
+  app?: string;
+}
+
+const { county, sgid, lastUpdate, lastUpdateLir, website, app } = Astro.props;
+const basicOpenData = `https://opendata.gis.utah.gov/datasets/${sgid}`;
+const lirOpenData = `${basicOpenData}-lir`;
+const metadata = dataPages[`Utah ${county} County Parcels`];
+const lirMetadata = dataPages[`Utah ${county} County Parcels LIR`];
+
+const getFeatureServiceUrl = (metadata) =>
+  `https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/${metadata?.featureServiceId ?? '404'}/FeatureServer/${metadata?.layerId}`;
+---
+
+<div
+  class="flex rounded-lg border border-zinc-400/60 bg-zinc-50 px-6 py-3 transition-colors duration-200 ease-in-out dark:border-white/20 dark:bg-zinc-600"
+>
+  <div class="flex grow flex-col">
+    <div class="inline-flex items-center justify-between">
+      <h4 class="uppercase text-primary dark:text-zinc-50" id={createIdFromTitle(county)}>{county}</h4>
+    </div>
+    <div class="primary-secondary dark:text-zinc-5 flex flex-col px-2 py-2">
+      <div class="justify-between pb-6 lg:flex lg:pb-2">
+        <ul>
+          <li>
+            <ExternalLink href={basicOpenData}>{county} county basic parcels</ExternalLink> in the SGID on ArcGIS.
+          </li>
+          <li><ExternalLink href={getFeatureServiceUrl(metadata)}>{county} county feature service</ExternalLink></li>
+          <li><Clipboard title="Open SGID sample query" value={`select * from ${metadata.openSgid} limit 10;`} /></li>
+        </ul>
+        <p class="self-center">
+          <span class="font-semibold text-primary dark:text-zinc-200">Last update · </span>{lastUpdate}
+        </p>
+      </div>
+      <div class="justify-between pb-2 lg:flex">
+        <ul>
+          <li>
+            <ExternalLink href={lirOpenData}>{county} county land information record parcels</ExternalLink> in the SGID on
+            ArcGIS.
+          </li>
+          <li><ExternalLink href={getFeatureServiceUrl(lirMetadata)}>{county} county feature service</ExternalLink></li>
+          {
+            lirMetadata ? (
+              <li>
+                <Clipboard title="Open SGID sample query" value={`select * from ${lirMetadata.openSgid} limit 10;`} />
+              </li>
+            ) : null
+          }
+        </ul>
+        <p class="self-center">
+          <span class="font-semibold text-primary dark:text-zinc-200">Last update · </span>{lastUpdateLir}
+        </p>
+      </div>
+      <div class:list={[website || app ? 'border-t border-black/20 pt-1 dark:border-white/20' : null]}>
+        {
+          website && (
+            <span class="text-sm text-zinc-800 dark:text-zinc-50">
+              County website: <ExternalLink href={website}>{county}</ExternalLink>
+            </span>
+          )
+        }
+        {
+          app && (
+            <span class="text-sm text-zinc-800 dark:text-zinc-50">
+              County parcel app: <ExternalLink href={app}>{county}</ExternalLink>
+            </span>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</div>
