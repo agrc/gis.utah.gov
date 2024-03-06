@@ -40,14 +40,20 @@ const page: IPageMetadata = {
   <Fragment slot="summary">
     <p>
       Public Safety answering point (PSAP) locations in Utah represent the primary facilities where emergency calls are
-      taken for Next-Generation 911 systems. The Salt Lake County Sheriff Office PSAP is secondary. The original dataset
-      was created in December 2004 by geocoding the PSAP addresses provided by the E911 Executive Committee.
+      taken for Next-Generation 911 systems. The Salt Lake County Sheriff Office PSAP is secondary.
     </p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
     <HubDownloads {...page.hub} />
   </Section>
+
+  <Fragment slot="description">
+    <p>
+      The original dataset was created in December 2004 by geocoding the PSAP addresses provided by the E911 Executive
+      Committee.
+    </p>
+  </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
