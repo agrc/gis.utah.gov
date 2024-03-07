@@ -588,15 +588,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Census Tracts 2010': {
     itemId: 'ad629aab2f89456c82457aac06c59601',
     name: 'Utah Census Tracts 2010',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusTracts2010',
+    openSgid: 'demographic.census_tracts_2010',
     layerId: 0,
   },
   'Utah Census Places 2010': {
     itemId: 'c8a84c9d562f49baaf3cafd62e06a6d6',
     name: 'Utah Census Places 2010',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusPlaces2010',
+    openSgid: 'demographic.census_places_2010',
     layerId: 0,
   },
   'Utah Census Place Points 2010': {
@@ -616,22 +616,22 @@ export const dataPages: DownloadMetadata = {
   'Utah Census Counties 2010': {
     itemId: 'e36dec62351d449899bc6ca98f6263bb',
     name: 'Utah Census Counties 2010',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusCounties2010',
+    openSgid: 'demographic.census_counties_2010',
     layerId: 0,
   },
   'Utah Census Blocks 2010': {
     itemId: 'b92a5e772855488a9b7f9c367475d955',
     name: 'Utah Census Blocks 2010',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusBlocks2010',
+    openSgid: 'demographic.census_blocks_2010',
     layerId: 0,
   },
   'Utah Census Block Groups 2010': {
     itemId: '8fa5d65451694f64b05f17d9e5f9d67e',
     name: 'Utah Census Block Groups 2010',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusBlockGroups2010',
+    openSgid: 'demographic.census_block_groups_2010',
     layerId: 0,
   },
   'Utah Entities Non Tax': {
@@ -2373,8 +2373,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Census Tracts 2020': {
     itemId: 'ac683b3f52a14c5ab4d6c17bbfd6b573',
     name: 'Utah Census Tracts 2020',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusTracts2020',
+    openSgid: 'demographic.census_tracts_2020',
     layerId: 0,
   },
   'Utah Schools Higher Education': {
@@ -2387,8 +2387,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Census Blocks 2020': {
     itemId: '2caf01e704614114868a3d801b82def6',
     name: 'Utah Census Blocks 2020',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusBlocks2020',
+    openSgid: 'demographic.census_blocks_2020',
     layerId: 0,
   },
   'Utah Public Libraries': {
@@ -2401,15 +2401,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Census Block Groups 2020': {
     itemId: '7c4a9b7b398d4c58b628177a66417dfb',
     name: 'Utah Census Block Groups 2020',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusBlockGroups2020',
+    openSgid: 'demographic.census_block_groups_2020',
     layerId: 0,
   },
   'Utah Census Places 2020': {
     itemId: '3bcd211d3f17416aac97bcca86bb191a',
     name: 'Utah Census Places 2020',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusPlaces2020',
+    openSgid: 'demographic.census_places_2020',
     layerId: 0,
   },
   'Utah School Board Districts 2022 to 2032': {
@@ -2670,8 +2670,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Census State 2020': {
     itemId: 'fb85601788424239846ec8c9df201369',
     name: 'Utah Census State 2020',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CensusState2020',
+    openSgid: 'demographic.census_state_2020',
     layerId: 0,
   },
   'Utah Hexagon Service Dates': {
