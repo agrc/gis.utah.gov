@@ -31,7 +31,7 @@ const page: IPageMetadata = {
   application: 'https://github.com/agrc/masquerade',
   updateHistory: [
     releaseMetadata?.published_at ?? false
-      ? dateFormatter.format(new Date(releaseMetadata.published_at))
+      ? dateFormatter.format(new Date(releaseMetadata.published_at ?? ''))
       : `<a href="http://github.com/agrc/masquerade/releases">GitHub Release History</a>`,
   ],
 };

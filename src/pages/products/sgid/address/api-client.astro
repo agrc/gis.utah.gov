@@ -38,17 +38,19 @@ const page: IPageMetadata = {
   ...metadata,
   updateHistory: [
     releaseMetadata?.published_at ?? false
-      ? dateFormatter.format(new Date(releaseMetadata.published_at))
+      ? dateFormatter.format(new Date(releaseMetadata.published_at ?? ''))
       : `<a href="http://github.com/agrc/api-client/releases">GitHub Release History</a>`,
   ],
   links: [
     {
       title: 'UGRC API Client for Windows',
-      url: releaseMetadata.assets.find((asset) => asset.name.includes('win32-setup.exe')).browser_download_url,
+      url:
+        releaseMetadata.assets.find((asset) => asset.name.includes('win32-setup.exe'))?.browser_download_url ??
+        'unknown',
     },
     {
       title: 'UGRC API Client for MacOS',
-      url: releaseMetadata.assets.find((asset) => asset.name.includes('x64.dmg')).browser_download_url,
+      url: releaseMetadata.assets.find((asset) => asset.name.includes('x64.dmg'))?.browser_download_url ?? 'unknown',
     },
   ],
 };

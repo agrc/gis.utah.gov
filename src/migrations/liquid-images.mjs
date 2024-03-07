@@ -1,5 +1,4 @@
 import { appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
-import matter from 'gray-matter';
 import { basename, dirname, join } from 'path';
 
 const blogPostFolder = '../content/blog';
@@ -9,7 +8,6 @@ const migratedFiles = new Set();
 
 for (const filename of filenames) {
   let file = readFileSync(`${blogPostFolder}/${filename}`, 'utf8');
-  const { data: frontMatter } = matter(file);
 
   let matches;
   let changed = false;

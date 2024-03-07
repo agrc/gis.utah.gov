@@ -24,7 +24,7 @@ export default defineConfig({
     {
       name: 'pagefind',
       hooks: {
-        'astro:build:done': ({ logger }) => {
+        'astro:build:done': () => {
           execSync('npx pagefind --site dist', {
             stdio: [process.stdin, process.stdout, process.stderr],
           });

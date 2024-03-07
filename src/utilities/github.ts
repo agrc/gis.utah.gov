@@ -20,11 +20,9 @@ export const getGithubReleases = async (repo: string) => {
   if (import.meta.env.PROD) {
     const response = await octokit.request('GET /repos/{owner}/{repo}/releases', {
       owner: 'agrc',
-      repo: repo,
+      repo,
       per_page: 1,
     })
-
-    console.log(response.data[0]);
 
     return response.data[0];
   }

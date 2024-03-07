@@ -20,7 +20,7 @@ const convertToMdx = new Set();
 
 for (const filename of filenames) {
   let file = readFileSync(`${blogPostFolder}/${filename}`, 'utf8');
-  const { data: frontMatter, content } = matter(file);
+  const { data: frontMatter } = matter(file);
 
   let matches;
   let changed = false;
@@ -30,7 +30,6 @@ for (const filename of filenames) {
     continue;
   }
 
-  let downloadCount = 0;
   while ((matches = regex.exec(file)) !== null) {
     console.log(`${filename}: ${matches[0]}`);
     // find the image from the old site

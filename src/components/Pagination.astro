@@ -12,8 +12,8 @@ const { page, class: className, baseHref } = Astro.props;
 const maxLinks = 5;
 
 let bufferLinks = Math.floor(maxLinks / 2);
-let start;
-let end;
+let start: number;
+let end: number;
 if (page.currentPage < maxLinks) {
   start = 1;
   end = maxLinks;

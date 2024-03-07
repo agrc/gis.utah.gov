@@ -2,6 +2,7 @@
 import Clipboard from '@components/page/Clipboard.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import { dataPages } from '@data/downloadMetadata';
+import type { IHubDownload } from '@models/products/sgid/types';
 import { createIdFromTitle } from '@utils/page';
 
 interface Props {
@@ -16,10 +17,10 @@ interface Props {
 const { county, sgid, lastUpdate, lastUpdateLir, website, app } = Astro.props;
 const basicOpenData = `https://opendata.gis.utah.gov/datasets/${sgid}`;
 const lirOpenData = `${basicOpenData}-lir`;
-const metadata = dataPages[`Utah ${county} County Parcels`];
-const lirMetadata = dataPages[`Utah ${county} County Parcels LIR`];
+const metadata = dataPages[`Utah ${county} County Parcels`] as IHubDownload;
+const lirMetadata = dataPages[`Utah ${county} County Parcels LIR`] as IHubDownload;
 
-const getFeatureServiceUrl = (metadata) =>
+const getFeatureServiceUrl = (metadata: IHubDownload) =>
   `https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/${metadata?.featureServiceId ?? '404'}/FeatureServer/${metadata?.layerId}`;
 ---
 

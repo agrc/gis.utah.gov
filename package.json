@@ -39,6 +39,8 @@
     "@radix-ui/react-popover": "^1.0.7",
     "@tailwindcss/typography": "^0.5.10",
     "@types/html-to-text": "^9.0.4",
+    "@types/lodash.capitalize": "^4.2.9",
+    "@types/prompts": "^2.4.9",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "astro": "^4.4.14",

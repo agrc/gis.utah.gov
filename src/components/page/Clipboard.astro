@@ -49,10 +49,18 @@ const { title, value } = Astro.props;
     </span>
     <script>
       document.addEventListener('clipboard-copy', (event) => {
-        const notice = event.target.querySelector('.copy-to-clipboard-notice');
-        const action = event.target.querySelector('.copy-to-clipboard-action');
-        const announce = event.target.querySelector('.copy-to-clipboard-announce');
-        console.log('clicked');
+        const notice = (event.target as HTMLSpanElement)?.querySelector('.copy-to-clipboard-notice') as HTMLSpanElement;
+        const action = (event.target as HTMLSpanElement)?.querySelector('.copy-to-clipboard-action') as HTMLSpanElement;
+        const announce = (event.target as HTMLDivElement)?.querySelector(
+          '.copy-to-clipboard-announce',
+        ) as HTMLDivElement;
+
+        if (!announce || !notice || !action) {
+          console.warn('No element found');
+
+          return;
+        }
+
         announce.setAttribute('aria-label', 'Copied');
         notice.hidden = false;
         action.hidden = true;
