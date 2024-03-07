@@ -51,6 +51,9 @@
       "@images/documentation/*": [
         "src/images/pillar-documentation/*"
       ],
+      "@images/footer/*": [
+        "src/images/footer/*"
+      ],
       "@utils/*": [
         "src/utilities/*"
       ],
