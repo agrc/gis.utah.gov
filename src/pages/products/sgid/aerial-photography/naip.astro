@@ -1,0 +1,63 @@
+---
+import type { IMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory, type IStandardPageMetadata } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+import { Image } from 'astro:assets';
+
+import fishSprings2022Map from '@images/sgid/lidar_fish_springs_2022_coverage.png';
+import img from '@images/sgid/lidar_gsl_coverage.png';
+
+import { stripeSections } from '@utils/page';
+
+export const metadata: IMetadata = {
+  title: 'Lidar elevation data',
+  description: `All Lidar projects across Utah since 2006.`,
+  stewards: ['UGRC'],
+  type: ProductType.ELEVATION_RASTER,
+  category: SgidCategory.ELEVATION,
+};
+
+const page: IStandardPageMetadata = {
+  title: 'Lidar elevation data',
+  pillar: 'Elevation',
+  section: stripeSections([
+    {},
+    {
+      title: '2006 Wasatch Front, Iron County, Heber Valley',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=2%20Meter%20%7B2006%20LiDAR%7D,1.25%20Meter%20%7B2006%20LiDAR%7D,1%20Meter%20%7B2006%20LiDAR%7D&title=2006%20LiDAR',
+    },
+  ]),
+};
+
+const projectAssets = {
+  fishSprings: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/fish-springs-2022/FishSprings_2022_Reports.zip',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <a href={img.src} slot="image">
+      <Image src={img} width="400" alt="A map with project boundary" class="w-full max-w-[400px] rounded-lg" /></a
+    >
+    <p>Light Detection ....</p>
+  </Section>
+</Layout>
+<Section {...page.section[1]}>
+  <a href={fishSprings2022Map.src} slot="image">
+    <Image src={fishSprings2022Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+  >
+  <p>In 2022 ....</p>
+  <DirectDownloads title="Project assets" links={projectAssets.fishSprings} />
+</Section>
