@@ -1,4 +1,4 @@
-import type { Props as SectionProps } from '@components/pages/Section.astro';
+import type { Props as SectionProps } from '@components/page/Section.astro';
 
 export const stripeSections = (sections: SectionProps[]) => {
   return sections.map((section, index: number) => {
