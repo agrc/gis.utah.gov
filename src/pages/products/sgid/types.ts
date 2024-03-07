@@ -5,6 +5,16 @@ export interface IDataCategory {
   url: string;
 }
 
+export enum Pillar {
+  PRODUCTS = 'Products',
+  SOLUTIONS = 'Solutions',
+  DOCUMENTATION = 'Documentation',
+  COLLABORATION = 'Collaboration',
+  BLOG = 'Blog',
+  ABOUT = 'About',
+  CONTACT = 'Contact',
+}
+
 export enum SgidCategory {
   ADDRESS = 'Address',
   AERIAL_PHOTOGRAPHY = 'Aerial-Photography',

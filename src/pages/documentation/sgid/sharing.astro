@@ -1,11 +1,13 @@
 ---
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
+import Layout from '@layouts/FullWidth.astro';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import BulletedList from '@components/page/BulletedList.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
@@ -17,7 +19,7 @@ import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'Sharing with the SGID',
-  pillar: 'Documentation',
+  pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     { actionText: 'View highlights', actionUrl: '/documentation/sgid/sharing/highlights' },
     {
@@ -39,7 +41,8 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title} pillar={page.pillar}>
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image

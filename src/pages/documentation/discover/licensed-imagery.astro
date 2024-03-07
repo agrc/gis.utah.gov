@@ -1,19 +1,21 @@
 ---
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
+import Layout from '@layouts/FullWidth.astro';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import NumberedListItem from '@components/page/NumberedListItem.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/FullWidth.astro';
 
 import logos from '@downloads/google_logos.zip?url';
 
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  title: 'License',
-  pillar: 'Discover',
+  title: 'Discover license',
+  pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     { title: 'What is high-resolution imagery' },
     { title: 'The license' },
@@ -24,7 +26,8 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title} pillar={page.pillar}>
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <p>

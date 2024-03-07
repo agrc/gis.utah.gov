@@ -1,8 +1,11 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import Layout from '@layouts/Pillar.astro';
+
 import CardWithTopImage from '@components/page/CardWithTopImage.astro';
 import GridForPillars from '@components/page/GridForPillars.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/Pillar.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSideImage from '@components/page/CardWithSideImage.astro';
@@ -10,6 +13,7 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForPopularResources from '@components/page/GridForPopularResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+
 import { Image } from 'astro:assets';
 
 import communityPhoto from '@images/collaboration/community.svg';
@@ -17,10 +21,22 @@ import conferencePhoto from '@images/collaboration/conference.svg';
 import connectedPhoto from '@images/collaboration/connected-world.svg';
 import eventsPhoto from '@images/collaboration/events.svg';
 import resourcesPhoto from '@images/collaboration/resources.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Collaboration',
+  section: stripeSections([
+    {},
+    { title: 'Popular resources', titlePosition: 'center' },
+    { title: 'More resources', titlePosition: 'center' },
+    { title: 'You might also like', titlePosition: 'center' },
+  ]),
+};
 ---
 
-<Layout title="Collaboration">
-  <Section slot="popular-level-ones" stripe titlePosition="center">
+<Layout {...page}>
+  <Section slot="popular-level-ones" {...page.section[0]}>
     <GridForPillars>
       <CardWithTopImage title="Community" actionUrl="/collaboration/community">
         <Image slot="image" src={communityPhoto} loading="eager" alt="people together in a room" class="block h-44" />
@@ -58,7 +74,7 @@ import resourcesPhoto from '@images/collaboration/resources.svg';
     </GridForPillars>
   </Section>
 
-  <Section title="Popular Resources" slot="popular-resources" titlePosition="center">
+  <Section slot="popular-resources" {...page.section[1]}>
     <GridForPopularResources>
       <CardWithPopularLink title="UGIC" href="/collaboration/community/#utah-geographic-information-council-ugic">
         Utah Geographic Information Council. Present, join, or get involved with the statewide GIS group.
@@ -75,7 +91,7 @@ import resourcesPhoto from '@images/collaboration/resources.svg';
     </GridForPopularResources>
   </Section>
 
-  <Section title="More Resources" slot="more-resources" stripe titlePosition="center">
+  <Section slot="more-resources" {...page.section[2]}>
     <GridForMoreResources>
       <CardWithSideImage
         title="NSGIC"
@@ -102,7 +118,7 @@ import resourcesPhoto from '@images/collaboration/resources.svg';
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section slot="you-might-also-like" {...page.section[3]}>
     <GridForYouMightLike>
       <CardWithSmallLink title="UGRC blog" href="/blog/">
         We blog about a variety of topics that may be of interest to you.

@@ -1,15 +1,17 @@
 ---
-import CardWithTopImage from '@components/page/CardWithTopImage.astro';
-import GridForPillars from '@components/page/GridForPillars.astro';
-import Section from '@components/page/Section.astro';
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import Layout from '@layouts/Pillar.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSideImage from '@components/page/CardWithSideImage.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import CardWithTopImage from '@components/page/CardWithTopImage.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForPillars from '@components/page/GridForPillars.astro';
 import GridForPopularResources from '@components/page/GridForPopularResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
@@ -18,78 +20,79 @@ import dataSharingPhoto from '@images/sgid/data-sharing-agreement.svg';
 import licensePhoto from '@images/sgid/license-disclaimer.svg';
 import openSgid from '@images/sgid/open-sgid.svg';
 import sgidIndex from '@images/sgid/sgid-index.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Documentation',
+  section: stripeSections([
+    {},
+    { title: 'Popular resources', titlePosition: 'center' },
+    { title: 'More resources', titlePosition: 'center' },
+    { title: 'You might also like', titlePosition: 'center' },
+  ]),
+};
 ---
 
-<Layout title="Documentation">
-  <Fragment slot="popular-level-ones">
-    <Section stripe>
-      <GridForPillars>
-        <CardWithTopImage title="SGID" actionUrl="/documentation/sgid">
-          <Image slot="image" src={sgidIndex} alt="a person using a search engine" class="block h-44" />
-          The State Geographic Information Datasource (SGID) provides a centralized collection of hundreds of GIS data layers
-          developed, aggregated, or acquired by the State. The documentation explains the different facets of the SGID, how
-          to connect to them, and how to include your data in the SGID.
-        </CardWithTopImage>
-        <CardWithTopImage title="Discover base map and imagery services" actionUrl="/documentation/discover">
-          <Image slot="image" src={openSgid} alt="a person connected to a database" class="block h-44" />
-          Our Discover services provide streaming access to our base maps and aerial imagery. The documentation explains
-          how to sign up, connect, use the services, and troubleshoot common issues.
-        </CardWithTopImage>
-        <CardWithTopImage title="UGRC policies" actionText="Learn more" actionUrl="/documentation/policy">
-          <Image
-            slot="image"
-            src={policyPhoto}
-            alt="a person agreeing to terms and conditions on a tablet"
-            class="block h-44"
-          />
-          Please read and understand the policies and guidelines required for using UGRC data and products as well as the
-          policies we follow to ensure our data and services are consistent, repeatable, and available to the public.
-        </CardWithTopImage>
-      </GridForPillars>
-    </Section>
-  </Fragment>
+<Layout {...page}>
+  <Section slot="popular-level-ones" {...page.section[0]}>
+    <GridForPillars>
+      <CardWithTopImage title="SGID" actionUrl="/documentation/sgid">
+        <Image slot="image" src={sgidIndex} alt="a person using a search engine" class="block h-44" />
+        The State Geographic Information Datasource (SGID) provides a centralized collection of hundreds of GIS data layers
+        developed, aggregated, or acquired by the State. The documentation explains the different facets of the SGID, how
+        to connect to them, and how to include your data in the SGID.
+      </CardWithTopImage>
+      <CardWithTopImage title="Discover base map and imagery services" actionUrl="/documentation/discover">
+        <Image slot="image" src={openSgid} alt="a person connected to a database" class="block h-44" />
+        Our Discover services provide streaming access to our base maps and aerial imagery. The documentation explains how
+        to sign up, connect, use the services, and troubleshoot common issues.
+      </CardWithTopImage>
+      <CardWithTopImage title="UGRC policies" actionText="Learn more" actionUrl="/documentation/policy">
+        <Image
+          slot="image"
+          src={policyPhoto}
+          alt="a person agreeing to terms and conditions on a tablet"
+          class="block h-44"
+        />
+        Please read and understand the policies and guidelines required for using UGRC data and products as well as the policies
+        we follow to ensure our data and services are consistent, repeatable, and available to the public.
+      </CardWithTopImage>
+    </GridForPillars>
+  </Section>
 
-  <Fragment slot="popular-resources">
-    <Section title="Popular Resources" titlePosition="center">
-      <GridForPopularResources>
-        <CardWithPopularLink title="TURN GPS" href="/documentation/turn">
-          Learn about how to sign up and access the TURN GPS service.
-        </CardWithPopularLink>
-        <CardWithPopularLink title="Porter" href="https://github.com/agrc/porter"
-          >The GitHub repository where UGRC tracks all additions and removals from the SGID.</CardWithPopularLink
-        >
-      </GridForPopularResources>
-    </Section>
-  </Fragment>
+  <Section slot="popular-resources" {...page.section[1]}>
+    <GridForPopularResources>
+      <CardWithPopularLink title="TURN GPS" href="/documentation/turn">
+        Learn about how to sign up and access the TURN GPS service.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="Porter" href="https://github.com/agrc/porter"
+        >The GitHub repository where UGRC tracks all additions and removals from the SGID.</CardWithPopularLink
+      >
+    </GridForPopularResources>
+  </Section>
 
-  <Fragment slot="more-resources">
-    <Section title="More Resources" stripe titlePosition="center">
-      <GridForMoreResources>
-        <CardWithSideImage title="Masquerade" actionUrl="/documentation/masquerade">
-          <Image slot="image" src={licensePhoto} alt="man in front of warning sign" class="self-center" />
-          The UGRC API and SGID accessed through Esri clients. // TODO PAGE MISSING
-        </CardWithSideImage>
-        <CardWithSideImage title="palletjack" actionUrl="/products/sgid/sharing">
-          <Image slot="image" src={dataSharingPhoto} alt="people shaking hands" class="self-center" />
-          Something // TODO PAGE MISSING
-        </CardWithSideImage>
-      </GridForMoreResources>
-    </Section>
-  </Fragment>
+  <Section slot="more-resources" {...page.section[2]}>
+    <GridForMoreResources>
+      <CardWithSideImage title="Masquerade" actionUrl="/documentation/masquerade">
+        <Image slot="image" src={licensePhoto} alt="man in front of warning sign" class="self-center" />
+        The UGRC API and SGID accessed through Esri clients. // TODO PAGE MISSING
+      </CardWithSideImage>
+      <CardWithSideImage title="palletjack" actionUrl="/products/sgid/sharing">
+        <Image slot="image" src={dataSharingPhoto} alt="people shaking hands" class="self-center" />
+        Something // TODO PAGE MISSING
+      </CardWithSideImage>
+    </GridForMoreResources>
+  </Section>
 
-  <Fragment slot="you-might-also-like">
-    <Section title="You might also like" titlePosition="center">
-      <GridForYouMightLike>
-        <CardWithSmallLink
-          title="UGRC API getting started guide"
-          href="https://developer.mapserv.utah.gov/StartupGuide"
-        >
-          The who what why and how for using the UGRC API.
-        </CardWithSmallLink>
-        <CardWithSmallLink title="esri documentation" href="https://doc.arcgis.com/en/">
-          Up-to-date documentation for ArcGIS and more.
-        </CardWithSmallLink>
-      </GridForYouMightLike>
-    </Section>
-  </Fragment>
+  <Section slot="you-might-also-like" {...page.section[3]}>
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UGRC API getting started guide" href="https://developer.mapserv.utah.gov/StartupGuide">
+        The who what why and how for using the UGRC API.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="esri documentation" href="https://doc.arcgis.com/en/">
+        Up-to-date documentation for ArcGIS and more.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
 </Layout>

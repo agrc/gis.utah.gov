@@ -1,9 +1,12 @@
 ---
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
+import Layout from '@layouts/FullWidth.astro';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/FullWidth.astro';
+
 import { Image } from 'astro:assets';
 
 import developmentPhoto from '@images/solutions/development.svg';
@@ -14,12 +17,13 @@ import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'GIS strategy',
-  pillar: 'Solutions',
+  pillar: Pillar.SOLUTIONS,
   section: stripeSections([{ title: 'What is GIS strategy' }, { title: 'Is your data ready' }, { title: 'Our plan' }]),
 };
 ---
 
-<Layout title={page.title} pillar={page.pillar}>
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image

@@ -1,16 +1,19 @@
 ---
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
-import DefinitionListItem from '@components/page/DefinitionListItem.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
-import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  title: 'UGRC solutions',
+  title: 'Discover basics',
+  pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     {},
     { title: 'Access levels and links' },
@@ -21,7 +24,8 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title="Discover basics">
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <p>

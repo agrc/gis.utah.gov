@@ -1,10 +1,10 @@
 ---
 import type { IStandardPageMetadata } from './products/sgid/types';
 
+import Layout from '@layouts/FullWidth.astro';
+
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/FullWidth.astro';
-import { stripeSections } from '@utils/page';
 
 import { Image } from 'astro:assets';
 
@@ -12,6 +12,8 @@ import apiLogo from '@images/api/api-logo.svg';
 import discoverLogo from '@images/discover/discover-logo.svg';
 import sgidLogo from '@images/sgid/sgid-logo.svg';
 import turnLogo from '@images/turn/turn-logo.svg';
+
+import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'UGRC products',

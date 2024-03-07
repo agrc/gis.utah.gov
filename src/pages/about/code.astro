@@ -1,13 +1,30 @@
 ---
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
+
+import Layout from '@layouts/FullWidth.astro';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import CardForStatute from '@components/page/CardForStatute.astro';
 import GridForPopularResources from '@components/page/GridForPopularResources.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/FullWidth.astro';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'UGRC in law',
+  pillar: Pillar.ABOUT,
+  section: stripeSections([
+    {
+      title: 'Statutes and Administrative Rules',
+      subTitle: 'State of Utah statute and administrative rules pertaining to Geographic Information Systems & Mapping',
+    },
+  ]),
+};
 ---
 
-<Layout title="About">
-  <Section title="Statutes and Administrative Rules">
-    <h3>State of Utah statute and administrative rules pertaining to Geographic Information Systems & Mapping</h3>
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
+  <Section {...page.section[0]}>
     <GridForPopularResources>
       <CardForStatute
         title="UGRC: Utah Geospatial Resource Center"

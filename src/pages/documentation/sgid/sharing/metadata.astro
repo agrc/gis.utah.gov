@@ -1,15 +1,17 @@
 ---
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
-import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
+import Section from '@components/page/Section.astro';
+
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'Metadata creation for sharing',
-  pillar: 'Documentation',
+  pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     {
       title: 'Answer the common questions',
@@ -27,7 +29,8 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title} pillar={page.pillar}>
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <Section {...page.section[0]}>
     <p>
       An essential part of sharing data is helping people understand what it is and where it came from. We want to make

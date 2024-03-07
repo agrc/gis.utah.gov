@@ -1,11 +1,11 @@
 ---
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
-import QuickLinks from '@components/page/QuickLinks.astro';
-import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
-import { stripeSections } from '@utils/page';
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
@@ -15,8 +15,11 @@ import getConnected from '@images/discover/get-connected.svg';
 import licensedAccess from '@images/discover/licensed-access.svg';
 import problems from '@images/discover/problems.svg';
 
+import { stripeSections } from '@utils/page';
+
 const page: IStandardPageMetadata = {
   title: 'Discover',
+  pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     { actionUrl: '/documentation/discover/basics', actionText: 'Learn the basics' },
     { title: 'Connecting your client', actionUrl: '/documentation/discover/clients', actionText: 'Get Connected' },
@@ -35,7 +38,8 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title}>
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image

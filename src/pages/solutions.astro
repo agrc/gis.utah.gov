@@ -1,11 +1,11 @@
 ---
 import type { IStandardPageMetadata } from '@models/products/sgid/types';
 
+import Layout from '@layouts/FullWidth.astro';
+
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/FullWidth.astro';
-import { stripeSections } from '@utils/page';
 
 import { Image } from 'astro:assets';
 
@@ -14,6 +14,8 @@ import developmentPhoto from '@images/solutions/development.svg';
 import gisUsersPhoto from '@images/solutions/gis-users.svg';
 import gpsPhoto from '@images/solutions/gps.svg';
 import studentPhoto from '@images/solutions/students.svg';
+
+import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'UGRC solutions',

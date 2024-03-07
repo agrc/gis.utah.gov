@@ -1,23 +1,28 @@
 ---
-import Section from '@components/page/Section.astro';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
+
 import Layout from '@layouts/FullWidth.astro';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import Section from '@components/page/Section.astro';
+
 import { Image } from 'astro:assets';
-
-import { stripeSections } from '@utils/page';
-
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
 
 import checkInPhoto from '@images/contact/check-in.svg';
 import visitingPhoto from '@images/contact/visiting_ugrc_location.png';
 import parkingPhoto from '@images/contact/visiting_ugrc_parking.jpg';
 
+import { stripeSections } from '@utils/page';
+
 const page: IStandardPageMetadata = {
   title: 'Meet us',
+  pillar: Pillar.CONTACT,
   section: stripeSections([{ title: 'Visiting UGRC' }, { title: 'Where to park' }, { title: 'Checking in' }]),
 };
 ---
 
-<Layout title={page.title}>
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <Section {...page.section[0]}>
     <Image
       class="rounded-lg border-2 border-primary"

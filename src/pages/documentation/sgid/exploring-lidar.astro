@@ -1,14 +1,14 @@
 ---
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
-import { YouTube } from '@astro-community/astro-embed-youtube';
+import Layout from '@layouts/FullWidth.astro';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import BulletedList from '@components/page/BulletedList.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/FullWidth.astro';
-
-import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 
 import { Image } from 'astro:assets';
 
@@ -16,11 +16,13 @@ import lidar_dem from '@images/documentation/lidar/lidar_dem.png';
 import lidar_dsm from '@images/documentation/lidar/lidar_dsm.png';
 import lidar_point_cloud from '@images/documentation/lidar/lidar_point-cloud.png';
 
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'Exploring Lidar',
-  pillar: 'Documentation',
+  pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     {},
     {
@@ -35,7 +37,8 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title} pillar={page.pillar}>
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <a href={lidar_dsm.src} slot="image">
