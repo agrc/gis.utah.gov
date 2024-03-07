@@ -1,0 +1,78 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+import Census2010Description from '@partials/Census2010Description.astro';
+import Census2010Links from '@partials/Census2020Links.astro';
+
+export const metadata: IMetadata = {
+  title: 'Population Block Areas 2010 Approximation',
+  description: `Approximate populated areas based on the 2010 Census blocks`,
+  stewards: ['UGRC', 'WFRC', 'US Census Bureau'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.DEMOGRAPHIC,
+};
+
+const hubTitle = 'Utah Population Block Areas 2010 Approx';
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`January 2011: Initial load`],
+
+  hub: {
+    ...dataPages[hubTitle],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset contains areas of census blocks that only represent populated areas. This dataset was created by UGRC
+      using the original 2010 census blocks. The blocks were cut when necessary to only cover residential areas. This
+      was done using aerial imagery and address points and is an approximation.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <Census2010Description />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <Census2010Links />
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="Populated Place Points 2010"
+        href="/products/sgid/demographic/population-place-points-2010-approx"
+        style="secondary"
+        >Populated Census Places
+      </CardWithSmallLink>
+      <CardWithSmallLink title="2010 Blocks" href="/products/sgid/demographic/census-2010-blocks" style="secondary"
+        >The base Census geography unit</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
