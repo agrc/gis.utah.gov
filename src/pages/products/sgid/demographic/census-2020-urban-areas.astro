@@ -1,0 +1,86 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+import Census2020Description from '@partials/Census2020Description.astro';
+import Census2020Links from '@partials/Census2020Links.astro';
+
+export const metadata: IMetadata = {
+  title: 'Census 2020 Urban Areas',
+  description: `Densely-developed areas based on population and housing unit density`,
+  stewards: ['UGRC', 'US Census Bureau'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.DEMOGRAPHIC,
+};
+
+const hubTitle = 'Utah Urban Areas Census 2020';
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`July 2023: Initial load`],
+
+  hub: {
+    ...dataPages[hubTitle],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The urban areas created by the US Census Bureau "represent densely developed territory, and encompass residential,
+      commercial, and other nonresidential urban land uses. Each urban area must encompass at least 2,000 housing units
+      or at least 5,000 people." They were created by the Bureau following the 2020 census based on the population and
+      housing unit density of individual blocks.
+    </p>
+    <p>
+      The 2020 Census increased the urban population and housing unit count requirements for the first time since 1910,
+      resulting in differences between the 2010 and 2020 boundaries beyond those resulting from population change. In
+      addition, they also stopped distinguishing between "urbanized areas" and "urban clusters" and renamed areas as
+      needed to reflect the updated boundaries.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <Census2020Description />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <Census2020Links />
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="2010 Urban Areas"
+        href="/products/sgid/demographic/census-2010-urban-areas"
+        style="secondary">Urban areas from the 2010 Census</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Urban Areas resource page"
+        href="https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html"
+        style="secondary">Resources about Urban Areas from the US Census Bureau</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
