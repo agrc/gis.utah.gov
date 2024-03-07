@@ -553,8 +553,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Urban Areas Census 2010': {
     itemId: '5fefbcf3e7a5499c845872d0be11b1c2',
     name: 'Utah Urban Areas Census 2010',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UrbanAreasCensus2010',
+    openSgid: 'demographic.urban_areas_census_2010',
     layerId: 0,
   },
   'Utah Population Place Points 2010 Approx': {
@@ -1995,8 +1995,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Urban Areas Census 2020': {
     itemId: '7a887f592459424a8bdeb69a3bf08df4',
     name: 'Utah Urban Areas Census 2020',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UrbanAreasCensus2020',
+    openSgid: 'demographic.urban_areas_census_2020',
     layerId: 0,
   },
   'Utah UTA Light Rail Routes': {
