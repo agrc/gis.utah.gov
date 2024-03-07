@@ -112,8 +112,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Municipal Boundaries': {
     itemId: '543fa1f073714198a3dbf8a292bdf30c',
     name: 'Utah Municipal Boundaries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahMunicipalBoundaries',
+    openSgid: 'boundaries.municipal_boundaries',
     layerId: 0,
   },
   'Utah ZIP Code Areas': {

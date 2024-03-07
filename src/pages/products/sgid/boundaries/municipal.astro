@@ -18,7 +18,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah Municipal Boundaries',
-  description: `Municipal boundaries in Utah.`,
+  description: `A multi-purpose statewide dataset of city boundaries for cartography and approximate boundary identification.`,
   stewards: ['UGRC', `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
@@ -26,7 +26,41 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`July 2023`, `April 2023`, `January 2023`],
+  updateHistory: [
+    `<a href="/blog/2023-12-29-municipal-boundaries-final-update-for-2023/">December 2023</a>`,
+    `<a href="/blog/2023-10-10-municipal-boundaries-third-quarter-update-for-2023/">October 2023</a>`,
+    `<a href="/blog/2023-07-04-municipal-boundaries-second-quarter-update-for-2023/">July 2023</a>`,
+    `<a href="/blog/2023-04-03-municipal-boundaries-first-quarter-update-for-2023/">April 2023</a>`,
+    `<a href="/blog/2023-01-30-municipal-boundaries-final-update-for-2022/">January 2023</a>`,
+    `<a href="/blog/2022-02-14-municipal-boundaries-final-update-for-2021/">February 2022</a>`,
+    `<a href="/blog/2021-07-14-municipal-boundaries-update-for-second-quarter-of-2021-july-1/">July 2021</a>`,
+    `<a href="/blog/2021-04-01-municipal-boundaries-update-for-first-quarter-of-2021/">JanuaryApril 2021</a>`,
+    `<a href="/blog/2021-01-07-municipal-boundaries-final-update-for-2020/">January 2021</a>`,
+    `<a href="/blog/2020-10-05-municipal-boundaries-update-for-third-quarter-2020-calendar-year/">October 2020</a>`,
+    `<a href="/blog/2020-07-30-municipal-boundaries-update-for-first-half-of-2020/">July 2020</a>`,
+    `<a href="/blog/2020-01-06-municipal-boundaries-final-update-for-2019/">January 2020</a>`,
+    `<a href="/blog/2019-10-24-municipal-boundaries-update-for-third-quarter-2019-calendar-year/">October 2019</a>`,
+    `<a href="/blog/2019-07-03-municipal-boundaries-update-for-second-quarter-2019-calendar-year/">July 2019</a>`,
+    `<a href="/blog/2019-01-31-municipal-boundaries-final-update-for-calendar-year-2018/">January 2019</a>`,
+    `<a href="/blog/2018-09-04-newest-city-added-to-state-and-municipal-boundary-updates-for-third-quarter-2018/">September 2018</a>`,
+    `<a href="/blog/2018-07-06-municipal-boundaries-update-for-second-quarter-2018-calendar-year/">July 2018</a>`,
+    `<a href="/blog/2018-01-10-municipal-boundaries-update-for-fourth-quarter-2017-calendar-year/">January 2018</a>`,
+    `<a href="/blog/2017-09-05-municipal-boundaries-update-for-third-quarter-2017-calendar-year/">September 2017</a>`,
+    `<a href="/blog/2017-06-29-municipal-boundaries-update-for-second-quarter-2017-calendar-year/">June 2017</a>`,
+    `<a href="/blog/2017-03-29-municipal-boundaries-update-for-first-quarter-calendar-year/">March 2017</a>`,
+    `<a href="/blog/2016-12-30-end-of-year-fourth-quarter-updates-for-municipal-boundaries/">December 2016</a>`,
+    `<a href="/blog/2016-09-07-third-quarter-municipal-boundaries-updates/">September 2016</a>`,
+    `<a href="/blog/2016-07-12-second-quarter-municipal-boundaries-updates/">July 2016</a>`,
+    `<a href="/blog/2016-01-05-end-of-year-updates-for-the-municipal-boundaries-are-available/">January 2016</a>`,
+    `<a href="/blog/2015-08-28-updates-for-the-municipal-boundaries-are-available-now/">August 2015</a>`,
+    `<a href="/blog/2015-04-29-updates-to-municipal-boundaries-for-the-state-of-utah-april-2015/">April 2015</a>`,
+    `<a href="/blog/2014-04-02-new-updates-to-municipal-boundaries-layers/">April 2014</a>`,
+    `<a href="/blog/2014-01-09-newest-updates-to-the-municipal-boundaries/">January 2014</a>`,
+    `<a href="/blog/2013-08-09-newest-updates-to-municipal-boundaries/">August 2013</a>`,
+    `<a href="/blog/2013-04-29-first-quarter-municipal-boundaries-updates/">April 2013</a>`,
+    `<a href="/blog/2013-01-03-end-of-2012-municipal-boundaries-update/">January 2013</a>`,
+    `<a href="/blog/2012-10-15-utah-municipal-boundary-updates/">October 2012</a>`,
+  ],
 
   hub: {
     ...dataPages[metadata.title],
@@ -55,10 +89,10 @@ const page: IPageMetadata = {
       features are adjusted to the current Geographic Coordinate Database (GCDB) points.
     </p>
     <p>
-      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was
-      adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but,
-      rather a set of boundaries used for the administrative purposes that conforms to logical & administrative rules
-      (e.g. no two cities or redevelopment areas may cover the same geographic extent).
+      The data is developed with coordinate geometry (COGO) from legal descriptions. When necessary the data is adjusted
+      to conform to known physical features. This dataset does not represent exact legal boundaries, but, rather a set
+      of boundaries used for the administrative purposes that conforms to logical & administrative rules (e.g. no two
+      cities or redevelopment areas may cover the same geographic extent).
     </p>
     <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
   </Fragment>
@@ -74,6 +108,16 @@ const page: IPageMetadata = {
         title="Utah Municipalities and Metro Townships Boundaries"
         href="https://www.arcgis.com/home/webmap/viewer.html?webmap=e2e0430f97114c3aa958262fa5e3e6ed"
         >Online map viewer of Utah Municipalities and Metro Townships Boundaries.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="State of Utah Notary"
+        href="https://demosite.utah.gov/gov-entity/boundary-certifications-by-year/"
+        >State of Utah Notary boundary certifications by year.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Utah municipality modifications map"
+        href="https://www.arcgis.com/home/webmap/viewer.html?webmap=c5ab7e0fcd514f1a9db6b8dad55bba63"
+        >Online map viewer of municipality change polygons by year.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
