@@ -8,7 +8,6 @@ import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 import Layout from '@layouts/FullWidth.astro';
 
-import Alert from '@components/page/Alert.astro';
 import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 
 import { Image } from 'astro:assets';
@@ -23,11 +22,15 @@ const page: IStandardPageMetadata = {
   title: 'Exploring Lidar',
   pillar: 'Documentation',
   section: stripeSections([
-    { title: '' },
-    { title: 'Digital Elevation Models' },
-    { title: 'Point clouds' },
-    { title: '' },
-    { title: '' },
+    {},
+    {
+      title: 'Digital Elevation Models',
+      actionText: 'Browse our data',
+      actionUrl: '/products/sgid/elevation/lidar/',
+    },
+    { title: 'Point clouds', actionText: 'Explore our Lidar', actionUrl: 'https://apps.nationalmap.gov/downloader' },
+    { title: 'Lidar samples', titlePosition: 'center' },
+    { title: 'Lidar Resources' },
   ]),
 };
 ---
@@ -36,7 +39,13 @@ const page: IStandardPageMetadata = {
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <a href={lidar_dsm.src} slot="image">
-      <Image src={lidar_dsm} width="400" alt="A map with project boundary" class="w-full max-w-[400px] rounded-lg" /></a
+      <Image
+        src={lidar_dsm}
+        width="400"
+        loading="eager"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px] rounded-lg"
+      /></a
     >
     <p>
       Light Detection and Ranging elevation data (Lidar) is an optical remote sensing technology that can measure the
@@ -50,7 +59,7 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[1]}>
     <a href={lidar_dem.src} slot="image">
-      <Image src={lidar_dem} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image src={lidar_dem} width="400" alt="A map with project boundary" class="w-full max-w-[400px] rounded-lg" /></a
     >
     <p>
       Bare-Earth Digital Elevation Models (DEMs or DTMs) and First-Return Digital Surface Models (DSMs) are commonly
@@ -84,7 +93,6 @@ const page: IStandardPageMetadata = {
     </dl>
   </Section>
   <Section {...page.section[3]}>
-    <h3>Lidar Samples</h3>
     <div class="mx-auto w-full max-w-2xl">
       <YouTube class="aspect-video max-w-full rounded-lg border-2 border-black shadow-xl" id="6KBOlAoj98s" />
     </div>
@@ -110,7 +118,6 @@ const page: IStandardPageMetadata = {
     </BulletedList>
   </Section>
   <Section {...page.section[4]}>
-    <h3>Lidar Resources</h3>
     <BulletedList>
       <li><a href="/products/sgid/elevation/lidar/">UGRC Lidar derived elevation models</a></li>
       <li><ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map Downloader</ExternalLink></li>
@@ -133,16 +140,13 @@ const page: IStandardPageMetadata = {
       </li>
       <li><ExternalLink href="https://rapidlasso.de/">rapidlasso Lidar tools</ExternalLink></li>
     </BulletedList>
-    <div class="self-center justify-self-center pt-4 lg:pt-0">
-      <Alert title="Warning">
-        <p>
-          If you are a <strong>CAD / Microstation user</strong> you may need to convert the ERDAS Imagine format .img files
-          into a different file format such as .tif or .las. A web search for AutoCad and .img will produce helpful results
-          or search user forums. You will find discussions about converting the .img format to a format you can use. There
-          are many tools that can convert the files - FW Tools and ER Viewer (free), QGIS (free), Global Mapper (trial version),
-          MyGeodata Cloud, and ArcMap to name a few.
-        </p>
-      </Alert>
-    </div>
+    <h3>Warning for CAD and Microstation user</h3>
+    <p>
+      If you are a <strong>CAD / Microstation user</strong> you may need to convert the ERDAS Imagine format .img files into
+      a different file format such as .tif or .las. A web search for AutoCad and .img will produce helpful results or search
+      user forums. You will find discussions about converting the .img format to a format you can use. There are many tools
+      that can convert the files - FW Tools and ER Viewer (free), QGIS (free), Global Mapper (trial version), MyGeodata Cloud,
+      and ArcMap to name a few.
+    </p>
   </Section>
 </Layout>
