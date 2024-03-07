@@ -65,7 +65,11 @@ const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
     <div>
       <div class="whitespace-nowrap font-bold">Website Information</div>
       <ul class="grid gap-2 pl-1 text-sm leading-loose md:gap-0">
-        <li class="mt-4 block">Build: <a href={`https://github.com/agrc/gis.utah.gov/commit/${sha}`}>{sha}</a></li>
+        <li class="mt-4 block">
+          Build: <a href={`https://github.com/agrc/gis.utah.gov/commit/${sha}`} class="custom-style hover:underline"
+            >{sha}</a
+          >
+        </li>
         <li>
           <a
             href={`https://github.com/agrc/gis.utah.gov/tree/main/src/pages${Astro.url.pathname}.astro`}
