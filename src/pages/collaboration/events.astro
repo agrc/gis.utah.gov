@@ -13,9 +13,9 @@ import nacisLogo from '@images/collaboration/NACIS_logo.png';
 import nsgicLogo from '@images/collaboration/NSGIC_logo.png';
 import osgeoLogo from '@images/collaboration/OSGeo_logo.svg';
 import osmLogo from '@images/collaboration/OSM_logo.svg';
-import ugicPhoto from '@images/collaboration/ugic-characters.png';
 import utahjsLogo from '@images/collaboration/UtahJS_logo.png';
 import eventsPhoto from '@images/collaboration/events.svg';
+import ugicPhoto from '@images/collaboration/ugic-characters.png';
 
 import { stripeSections } from '@utils/page';
 
@@ -74,6 +74,7 @@ const page: IStandardPageMetadata = {
       slot="image"
       src={eventsPhoto}
       loading="eager"
+      width="400"
       alt="a person circling a date on a calendar"
       class="w-full max-w-[400px] rounded-2xl"
     />
@@ -84,7 +85,13 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image slot="image" src={mothLogo} alt="Maps on the Hill logo" class="w-full max-w-[400px] rounded-2xl" />
+    <Image
+      slot="image"
+      src={mothLogo}
+      width="400"
+      alt="Maps on the Hill logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
     <p>
       Maps on the Hill, better known as MOTH, is an annual, free event held in the Rotunda of the Utah State Capitol. It
       is an excellent opportunity for students and professionals to showcase their work and share with Utah's elected
@@ -95,7 +102,8 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[2]}>
     <Image
       slot="image"
-      src={ugicLogo}
+      src={ugicPhoto}
+      width="400"
       alt="Utah Geographic Information Council logo"
       class="w-full max-w-[400px] rounded-2xl"
     />
@@ -111,6 +119,7 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[3]}>
     <Image
       slot="image"
+      width="400"
       src={nsgicLogo}
       alt="National States Geographic Information Council logo"
       class="w-full max-w-[400px] rounded-2xl"
@@ -124,7 +133,7 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[4]}>
-    <Image slot="image" src={esriLogo} alt="Esri logo" class="w-full max-w-[400px] rounded-2xl" />
+    <Image slot="image" src={esriLogo} alt="Esri logo" width="400" class="w-full max-w-[400px] rounded-2xl" />
     <p>
       Esri is a GIS software company with a global reach and goal to advance the power of geography for business,
       government, and society. Their annual User Conference and Developer Summit respectively provide opportunities to
@@ -135,7 +144,13 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[5]}>
-    <Image slot="image" src={osmLogo} alt="Open Street Map US logo" class="w-full max-w-[400px] rounded-2xl" />
+    <Image
+      slot="image"
+      src={osmLogo}
+      alt="Open Street Map US logo"
+      width="300"
+      class="w-full max-w-[300px] rounded-2xl"
+    />
     <p>
       OpenStreetMap is the free, editable map of the world. OpenStreetMap US is a nonprofit organization helping to
       support and grow the project in the US. The State of the Map US conference includes presentations, workshops, and
@@ -165,7 +180,8 @@ const page: IStandardPageMetadata = {
       slot="image"
       src={utahjsLogo}
       alt="JavaScript Engineers of Utah logo"
-      class="w-full max-w-[400px] rounded-2xl"
+      width="300"
+      class="w-full max-w-[300px] rounded-2xl"
     />
     <p>
       The JavaScript Engineers of Utah, or UtahJS, is a community focused on learning about and promoting knowledge of
@@ -178,6 +194,7 @@ const page: IStandardPageMetadata = {
     <Image
       slot="image"
       src={osgeoLogo}
+      width="400"
       alt="The Open Source Geospatial Foundation logo"
       class="w-full max-w-[400px] rounded-2xl"
     />
