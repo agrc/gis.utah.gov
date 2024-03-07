@@ -1,0 +1,148 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import { YouTube } from '@astro-community/astro-embed-youtube';
+import BulletedList from '@components/page/BulletedList.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import Alert from '@components/page/Alert.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+
+import { Image } from 'astro:assets';
+
+import lidar_dem from '@images/documentation/lidar/lidar_dem.png';
+import lidar_dsm from '@images/documentation/lidar/lidar_dsm.png';
+import lidar_point_cloud from '@images/documentation/lidar/lidar_point-cloud.png';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Exploring Lidar',
+  pillar: 'Documentation',
+  section: stripeSections([
+    { title: '' },
+    { title: 'Digital Elevation Models' },
+    { title: 'Point clouds' },
+    { title: '' },
+    { title: '' },
+  ]),
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <a href={lidar_dsm.src} slot="image">
+      <Image src={lidar_dsm} width="400" alt="A map with project boundary" class="w-full max-w-[400px] rounded-lg" /></a
+    >
+    <p>
+      Light Detection and Ranging elevation data (Lidar) is an optical remote sensing technology that can measure the
+      distance to, or other properties of a target by illuminating the target with light pulses from a laser and
+      measuring the time and intensity of the pulse return to the sensor. Laser pulses from the sensor can exceed
+      150,000 pulses per second. Aircraft position (X,Y,Z) is measured twice a second while aircraft attitude (pitch,
+      roll, yaw) is measured 200 times per second. Currently this is the most accurate type of elevation data available.
+      There are two main types of Lidar collections, Terrestrial and Airborne. Airborne Lidar is most commonly used and
+      available from UGRC.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <a href={lidar_dem.src} slot="image">
+      <Image src={lidar_dem} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      Bare-Earth Digital Elevation Models (DEMs or DTMs) and First-Return Digital Surface Models (DSMs) are commonly
+      used raster products derived from Lidar point cloud collections. Bare-Earth DEMs have had features above the
+      ground filtered out and are what is typically used for floodplain and hydro-logic modeling. First-return
+      (highest-hit) raster products model a surface and retain the features above the ground such as buildings,
+      utilities, other manmade structures, and vegetation.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <a href={lidar_point_cloud.src} slot="image">
+      <Image src={lidar_point_cloud} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+    >
+    <p>
+      Lidar point clouds can be classified so that each point in the cloud is designated a land cover type (ex. ground,
+      water, road, building, vegetation, etc.) in addition to an elevation value. The vendor for the 2013-2014 Wasatch
+      Front Lidar project, Watershed Sciences Inc. (WSI) now a Quantum Spatial company, has provided the samples below
+      that show some of what can be done with the collected Lidar data. Please note that while the sample data below
+      contains LAS point cloud data that are fully classified, the point clouds delivered for most projects only have
+      the following classifications (including intensity & return number), yet further classification of the point cloud
+      is possible.
+    </p>
+    <h3>Standard Classification Codes</h3>
+    <dl>
+      <DefinitionListItem title="Code 1">Processed, but unclassified</DefinitionListItem>
+      <DefinitionListItem title="Code 2">Bare-earth ground</DefinitionListItem>
+      <DefinitionListItem title="Code 7">Noise</DefinitionListItem>
+      <DefinitionListItem title="Code 9">Water</DefinitionListItem>
+      <DefinitionListItem title="Code 10">Ignored Ground (Breakline proximity)</DefinitionListItem>
+      <DefinitionListItem title="Code 11">Withheld</DefinitionListItem>
+    </dl>
+  </Section>
+  <Section {...page.section[3]}>
+    <h3>Lidar Samples</h3>
+    <div class="mx-auto w-full max-w-2xl">
+      <YouTube class="aspect-video max-w-full rounded-lg border-2 border-black shadow-xl" id="6KBOlAoj98s" />
+    </div>
+    <BulletedList>
+      <li>
+        <ExternalLink
+          href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/Utah%20LiDAR%20applications%20writeup.pdf"
+          >Lidar applications and derivative sample</ExternalLink
+        >
+      </li>
+      <li>
+        Download Lidar derivative sample packages for: <ExternalLink
+          href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/DerivativeSamples/LiDAR_Samples.zip"
+          >ArcGIS users</ExternalLink
+        >
+      </li>
+      <li>
+        Download Lidar derivative sample packages for: <ExternalLink
+          href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/wasatch-front-2013-2014/DerivativeSamples/LiDAR_Samples_CAD.zip"
+          >CAD users</ExternalLink
+        >
+      </li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[4]}>
+    <h3>Lidar Resources</h3>
+    <BulletedList>
+      <li><a href="/products/sgid/elevation/lidar/">UGRC Lidar derived elevation models</a></li>
+      <li><ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map Downloader</ExternalLink></li>
+      <li><ExternalLink href="https://apps.nationalmap.gov/viewer">The National Map Viewer</ExternalLink></li>
+      <li><ExternalLink href="https://apps.nationalmap.gov/services">The National Map Services</ExternalLink></li>
+      <li>
+        <ExternalLink href="https://planetarycomputer.microsoft.com/"
+          >The Planetary Computer from Microsoft</ExternalLink
+        >
+      </li>
+      <li><ExternalLink href="https://opentopography.org/index.php">OpenTopography</ExternalLink></li>
+      <li><ExternalLink href="https://desktop.arcgis.com/en/3d/">esri 3D GIS</ExternalLink></li>
+      <li>
+        <ExternalLink href="https://github.com/potree/potree/">Potree open-source point cloud viewer</ExternalLink>
+      </li>
+      <li>
+        <ExternalLink href="https://www.fugro.com/expertise/other-expertise/fugro-viewer-download"
+          >Fugro Lidar viewer</ExternalLink
+        >
+      </li>
+      <li><ExternalLink href="https://rapidlasso.de/">rapidlasso Lidar tools</ExternalLink></li>
+    </BulletedList>
+    <div class="self-center justify-self-center pt-4 lg:pt-0">
+      <Alert title="Warning">
+        <p>
+          If you are a <strong>CAD / Microstation user</strong> you may need to convert the ERDAS Imagine format .img files
+          into a different file format such as .tif or .las. A web search for AutoCad and .img will produce helpful results
+          or search user forums. You will find discussions about converting the .img format to a format you can use. There
+          are many tools that can convert the files - FW Tools and ER Viewer (free), QGIS (free), Global Mapper (trial version),
+          MyGeodata Cloud, and ArcMap to name a few.
+        </p>
+      </Alert>
+    </div>
+  </Section>
+</Layout>
