@@ -85,7 +85,6 @@ export interface IHubDownload {
   layerId?: number;
   externalHubOrganization?: string;
   oddHubName?: string;
-  type: ProductType;
 }
 
 export type Contact = {
