@@ -14,9 +14,9 @@ import { Image } from 'astro:assets';
 
 import communityPhoto from '@images/collaboration/community.svg';
 import conferencePhoto from '@images/collaboration/conference.svg';
+import connectedPhoto from '@images/collaboration/connected-world.svg';
 import eventsPhoto from '@images/collaboration/events.svg';
 import resourcesPhoto from '@images/collaboration/resources.svg';
-import connectedPhoto from '@images/collaboration/connected-world.svg';
 ---
 
 <Layout title="Collaboration">
@@ -50,15 +50,15 @@ import connectedPhoto from '@images/collaboration/connected-world.svg';
           alt="a person searches a manilla folder containing a lot of documents "
           class="block h-44"
         />
-        Explore our knowledge base through our favorite and most popular resources such as blog posts with great information, free training opportunities,
-        all our past presentations, and even our logos. We strive to make all of our knowledge open and accessible to enable
-        you to apply what we've learned to your own projects and solutions, and to learn from our mistakes so you don't repeat
-        them. We greatly value contributing to an informed GIS workforce in Utah.
+        Explore our knowledge base through our favorite and most popular resources such as blog posts with great information,
+        free training opportunities, all our past presentations, and even our logos. We strive to make all of our knowledge
+        open and accessible to enable you to apply what we've learned to your own projects and solutions, and to learn from
+        our mistakes so you don't repeat them. We greatly value contributing to an informed GIS workforce in Utah.
       </CardWithTopImage>
     </GridForPillars>
   </Section>
 
-  <Section title="Popular Collaboration Resources" slot="popular-resources" titlePosition="center">
+  <Section title="Popular Resources" slot="popular-resources" titlePosition="center">
     <GridForPopularResources>
       <CardWithPopularLink title="UGIC" href="/collaboration/community/#utah-geographic-information-council-ugic">
         Utah Geographic Information Council. Present, join, or get involved with the statewide GIS group.
@@ -69,20 +69,34 @@ import connectedPhoto from '@images/collaboration/connected-world.svg';
       <CardWithPopularLink title="UGRC Presentations" href="/collaboration/knowledge/presentations/">
         A collection of talks given by UGRC staff at various conferences and venues.
       </CardWithPopularLink>
-      <CardWithPopularLink title="User Groups" href="/collaboration/community/#gis-user-groups">
+      <CardWithPopularLink title="User Groups" href="/collaboration/community/user-groups">
         Local groups to connect with colleagues and peers about all things GIS.
       </CardWithPopularLink>
     </GridForPopularResources>
   </Section>
 
-  <Section title="More Collaboration Resources" slot="more-resources" stripe titlePosition="center">
+  <Section title="More Resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithSideImage title="NSGIC" actionUrl="/collaboration/community/#national-states-geographic-information-council-nsgic">
-        <Image slot="image" src={conferencePhoto} alt="man at a lecturn speaking to people sitting in chairs" class="self-center" />
-        National States Geographic Information Council. The national council to advance state-led geospatial coordination for the nation.
+      <CardWithSideImage
+        title="NSGIC"
+        actionUrl="/collaboration/community/#national-states-geographic-information-council-nsgic"
+      >
+        <Image
+          slot="image"
+          src={conferencePhoto}
+          alt="man at a lecturn speaking to people sitting in chairs"
+          class="self-center"
+        />
+        National States Geographic Information Council. The national council to advance state-led geospatial coordination
+        for the nation.
       </CardWithSideImage>
-      <CardWithSideImage title="Slack spatial community" actionUrl="/collaboration/community/#the-spatial-community">
-        <Image slot="image" src={connectedPhoto} alt="people using mobile devices and connected by lines with the earth in the background" class="self-center" />
+      <CardWithSideImage title="Slack spatial community" actionUrl="https://thespatialcommunity.org/#join">
+        <Image
+          slot="image"
+          src={connectedPhoto}
+          alt="people using mobile devices and connected by lines with the earth in the background"
+          class="self-center"
+        />
         A forum for connecting with a global community of GIS enthusiasts and experts.
       </CardWithSideImage>
     </GridForMoreResources>
