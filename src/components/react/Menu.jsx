@@ -67,7 +67,7 @@ export const Menu = ({ children, currentUri }) => {
                 <ListItem href="/solutions/spatial-data-management" title="Spatial data management">
                   Learn how we can help.
                 </ListItem>
-                <ListItem href="/solutions/911" title="Emergency response (911)">
+                <ListItem href="/solutions/for-emergency-response" title="Emergency response (911)">
                   See what we can offer you.
                 </ListItem>
                 <ListItem href="/solutions/gis-strategy" title="GIS strategy">
@@ -184,7 +184,7 @@ export const SmallMenu = ({ children, currentUri }) => (
                     <MobileListItem href="/solutions/for-students">Students</MobileListItem>
                     <p className="py-2 pl-2 text-xs uppercase text-accent">By use case</p>
                     <MobileListItem href="/solutions/spatial-data-management">Spatial data management</MobileListItem>
-                    <MobileListItem href="/solutions/911">Emergency response (911)</MobileListItem>
+                    <MobileListItem href="/solutions/for-emergency-response">Emergency response (911)</MobileListItem>
                     <MobileListItem href="/solutions/gis-strategy">GIS strategy</MobileListItem>
                     <MobileListItem href="/solutions/gis-integration">Integrating GIS</MobileListItem>
                     <MobileListItem href="/solutions/high-precision-location">High Precision Location</MobileListItem>
