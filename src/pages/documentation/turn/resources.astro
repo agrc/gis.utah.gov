@@ -4,6 +4,7 @@ import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types'
 import Layout from '@layouts/FullWidth.astro';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import BulletedList from '@components/page/BulletedList.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
@@ -18,6 +19,7 @@ const page: IStandardPageMetadata = {
     { title: 'GNSS network' },
     { title: 'Troubleshooting TURN' },
     { title: 'Supported devices' },
+    { title: 'Highlighted Pages' },
   ]),
 };
 ---
@@ -65,4 +67,13 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[3]}>
     <p>Our TURN GPS Network supports a variety of devices from survey units, to drones and self-driving cars.</p>
   </Section>
+  <Section {...page.section[4]}>
+    <p>
+      The following are websites that we recommend for surveyors and other professionals that rely on the positioning
+      services provided by our network:
+    </p>
+  </Section>
+  <BulletedList>
+    <li>National Geodetic Survey:</li>
+  </BulletedList>
 </Layout>
