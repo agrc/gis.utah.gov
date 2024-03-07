@@ -147,8 +147,8 @@ export const dataPages: DownloadMetadata = {
   'Utah State Boundary': {
     itemId: '8344c33ec2114341a59c4c1d72bcf38a',
     name: 'Utah State Boundary',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahStateBoundary',
+    openSgid: 'boundaries.state_boundary',
     layerId: 0,
   },
   'Utah Forest Service Boundaries': {
