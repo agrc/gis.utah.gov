@@ -2,14 +2,15 @@
 import type { SgidCategory } from '@models/products/sgid/types';
 
 interface Props {
-  product: string;
-  category: SgidCategory;
+  product?: string;
+  category: SgidCategory | string;
+  class?: string;
 }
 
-const { product, category } = Astro.props;
+const { product, category, class: className } = Astro.props;
 ---
 
-<nav class="ml-2">
+<nav class:list={['ml-2', className]}>
   <ol class="flex items-center">
     <li class="flex">
       <a
@@ -81,18 +82,24 @@ const { product, category } = Astro.props;
         href={`/products/sgid/${category.toLowerCase()}`}>{category.replaceAll('-', ' ')}</a
       >
     </li>
-    <li class="flex items-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-3 shrink-0 text-primary dark:text-accent"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
-      </svg>
-      <span class="custom-style px-3 font-medium dark:text-white" aria-current="page">{product}</span>
-    </li>
+    {
+      product && (
+        <li class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-3 shrink-0 text-primary dark:text-accent"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+          <span class="custom-style px-3 font-medium dark:text-white" aria-current="page">
+            {product}
+          </span>
+        </li>
+      )
+    }
   </ol>
 </nav>
