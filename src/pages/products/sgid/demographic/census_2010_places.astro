@@ -1,0 +1,81 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+import Census2010Description from '@partials/Census2010Description.astro';
+import Census2010Links from '@partials/Census2020Links.astro';
+
+export const metadata: IMetadata = {
+  title: 'Census 2010 Places',
+  description: `Incorporated towns and Census Designated Places (CDPs) in Utah from the 2020 Census.`,
+  stewards: ['UGRC', 'US Census Bureau'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.DEMOGRAPHIC,
+};
+
+const hubTitle = 'Utah Census Places 2010';
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`January 2011: Initial load`],
+
+  hub: {
+    ...dataPages[hubTitle],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Census Places consist of both legally-established cities and Census Designated Places (CDPs). CDPs provide data
+      for unincorporated but concentrated areas of development at are readily identifiable by name but aren't officially
+      incorporated as a city. This layer only contains boundary information to enable you to join your own demographic
+      data.
+    </p>
+    <p>
+      Incorporated cities and CDPs can be distinguished by the <code>CLASSFP10</code> field.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <Census2010Description />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <Census2010Links />
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="2020 Census Places"
+        href="/products/sgid/demographic/census_2020_places"
+        style="secondary">Places from the 2020 Census</CardWithSmallLink
+      >
+      <CardWithSmallLink title="2010 Blocks" href="/products/sgid/demographic/census_2010_blocks" style="secondary"
+        >The base Census geography unit</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
