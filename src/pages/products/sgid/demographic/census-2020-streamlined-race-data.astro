@@ -6,7 +6,6 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
-import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
@@ -24,7 +23,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`August 2021: Initial load`],
+  updateHistory: [`August 2021 - Initial load`],
 
   links: [
     {
@@ -42,8 +41,8 @@ const page: IPageMetadata = {
     <p>Race data from the 2020 Census Blocks simplified by WFRC as a Geodatabase download.</p>
   </Fragment>
 
-  <Section title="Use the data" slot="downloads" titlePosition="center">
-    <DirectDownloads title="Geodatabase Link" links={page.links!} />
+  <Section title="Get the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="Download links" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
@@ -64,8 +63,6 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
-
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <Census2020Links />
   </Section>
@@ -74,6 +71,11 @@ const page: IPageMetadata = {
     <GridForYouMightLike>
       <CardWithSmallLink title="2020 Blocks" href="/products/sgid/demographic/census-2020-blocks" style="secondary"
         >The base Census geography unit</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="2020 Census Places"
+        href="/products/sgid/demographic/census-2020-places"
+        style="secondary">Places from the 2020 Census</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

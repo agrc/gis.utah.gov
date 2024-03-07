@@ -6,7 +6,6 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
-import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
@@ -29,7 +28,7 @@ const hubTitle = 'Utah Population Place Points 2010 Approx';
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`January 2011: Initial load`],
+  updateHistory: [`January 2011 - Initial load`],
 
   hub: {
     ...dataPages[hubTitle],
@@ -55,8 +54,6 @@ const page: IPageMetadata = {
   <Fragment slot="description">
     <Census2010Description />
   </Fragment>
-
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <Census2010Links />
