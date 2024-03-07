@@ -19,7 +19,7 @@ import Census2020Links from '@partials/Census2020Links.astro';
 
 export const metadata: IMetadata = {
   title: 'Census 2020 Tracts',
-  description: `The most widely-used geographic unit used for many different statistical purposes`,
+  description: `The most widely-used geographic unit used for many different statistical purposes.`,
   stewards: ['UGRC', 'US Census Bureau'],
   type: ProductType.POLYGON,
   category: SgidCategory.DEMOGRAPHIC,
@@ -28,9 +28,8 @@ export const metadata: IMetadata = {
 const hubTitle = 'Utah Census Tracts 2020';
 
 const page: IPageMetadata = {
-  ...metadata, // this brings all the data from the metadata object above into the page object
-  updateHistory: [`August 2021: Initial load`],
-
+  ...metadata,
+  updateHistory: [`August 2021 - Initial load`],
   hub: {
     ...dataPages[hubTitle],
   },
@@ -54,8 +53,6 @@ const page: IPageMetadata = {
   <Fragment slot="description">
     <Census2020Description />
   </Fragment>
-
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <Census2020Links />

@@ -6,7 +6,6 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
-import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
@@ -16,17 +15,15 @@ import Census2010Links from '@partials/Census2010Links.astro';
 
 export const metadata: IMetadata = {
   title: 'Census 2000 data',
-  description: `Archived data from the 2000 census`,
+  description: `Archived data from the 2000 census.`,
   stewards: ['UGRC', 'US Census Bureau'],
   type: ProductType.POLYGON,
   category: SgidCategory.DEMOGRAPHIC,
 };
 
 const page: IPageMetadata = {
-  ...metadata, // this brings all the data from the metadata object above into the page object
-
+  ...metadata,
   updateHistory: [`2001`],
-
   links: [
     {
       title: '2000 Census Data (Google Drive Link)',
@@ -47,8 +44,8 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <Section title="Use the data" slot="downloads" titlePosition="center">
-    <DirectDownloads title="A title describing the links. e.g. Install links" links={page.links!} />
+  <Section title="Get the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="Download links" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
@@ -73,8 +70,6 @@ const page: IPageMetadata = {
       arrangements, year housing structure built and many other population and housing subjects.
     </p>
   </Fragment>
-
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <Census2010Links />
