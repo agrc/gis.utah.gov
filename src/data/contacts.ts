@@ -519,4 +519,9 @@ export const contacts: Contacts = {
     email: 'rsparker@utah.gov',
     agency: 'DWQ',
   },
+  user_group_ccp: { name: 'Pete Kilbournes', email: 'pkgeog@gmail.com' },
+  user_group_cuug: { name: 'Jesse Miller', email: 'jesse.m@jonesanddemille.com' },
+  user_group_nugis: { name: 'Kasey Hansen', email: 'khansen@jub.com' },
+  user_group_suug: { name: 'Van Phetsomphous', email: 'van.phetsomphou@sgcity.org' },
+  user_group_ubug: { name: 'Jordan Merrells', email: 'jordmerrell @uintah.utah.gov' },
 };

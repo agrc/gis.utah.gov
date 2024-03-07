@@ -1,0 +1,264 @@
+---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import esriLogo from '@images/collaboration/Esri_logo.jpg';
+import mothLogo from '@images/collaboration/MOTH_logo.jpg';
+import nsgicLogo from '@images/collaboration/NSGIC_logo.png';
+import ugicLogo from '@images/collaboration/UGIC_logo.png';
+
+import ucNg911_2019 from '@downloads/pillar-collaboration/presentations/ESRI_UC/2019/ESRI_UC_2019_Utah_NG911.pdf?url';
+import moth911_2017 from '@downloads/pillar-collaboration/presentations/MOTH/2017/GIS_911_MOTH_2017.pdf?url';
+import addressing911 from '@downloads/pillar-collaboration/presentations/Misc/911addressing.pdf?url';
+import electionData from '@downloads/pillar-collaboration/presentations/Misc/Election Data Validation Address Points and Voting Precincts.pdf?url';
+import g52022 from '@downloads/pillar-collaboration/presentations/Misc/G5_2022_911_and_GIS.pdf?url';
+import uspe2022 from '@downloads/pillar-collaboration/presentations/Misc/USPE_2022_GIS_applications.pdf?url';
+import sgidLifecycle from '@downloads/pillar-collaboration/presentations/Misc/UtahAGRC SGID Data Flow Process.pdf?url';
+import openGeospatial from '@downloads/pillar-collaboration/presentations/Misc/open geospatial 01_14_2020.pdf?url';
+import nsgicData2018 from '@downloads/pillar-collaboration/presentations/NSGIC/2018/2018.pdf?url';
+import nsgicPlss2019 from '@downloads/pillar-collaboration/presentations/NSGIC/2019/Utah PLSS 2019.pdf?url';
+import nsgicDataLifecycle2019 from '@downloads/pillar-collaboration/presentations/NSGIC/2019/Utahs New Data Lifecycle 2019.pdf?url';
+import nsgicTogether2020 from '@downloads/pillar-collaboration/presentations/NSGIC/2020/Things that go together NSGIC Fall 2020.pdf?url';
+import nsgicBeyondTheMap2020 from '@downloads/pillar-collaboration/presentations/NSGIC/2020/Thinking Beyond The Map 2020.pdf?url';
+import nsgicGeocoding2021 from '@downloads/pillar-collaboration/presentations/NSGIC/2021/NSGIC GIS 101 - Geocoding 2021.pdf?url';
+import nsgicPotPourri2021 from '@downloads/pillar-collaboration/presentations/NSGIC/2021/Pot Pourri of GIS NSGIC Annual 2021.pdf?url';
+import nsgicWardrobe2021 from '@downloads/pillar-collaboration/presentations/NSGIC/2021/Revamping your data wardrobe to give it more curb appeal 2021.pdf?url';
+import nsgicRating2022 from '@downloads/pillar-collaboration/presentations/NSGIC/2022/NSGIC_Annual_2022_Portland_OR_Implementing_a_Rating_System_to_Enhance_Data_Quality.pdf?url';
+import nsgicMidyear2022 from '@downloads/pillar-collaboration/presentations/NSGIC/2022/NSGIC_midyear_2022_Milwaukee_Mining new GIS users.pdf?url';
+import nsgicApps2023 from '@downloads/pillar-collaboration/presentations/NSGIC/2023/NSGIC_Sept2023_NewOrleans_A_Showcase_of_Utahs_Apps_Maps_and_Services.pdf?url';
+import slugDataDelivery2020 from '@downloads/pillar-collaboration/presentations/SLUG/2020/Data_delivery_SLUG 02_2020.pdf?url';
+import slugUpdate2022 from '@downloads/pillar-collaboration/presentations/SLUG/2022/SLUG2022_UGRC_update.pdf?url';
+import slugTrailheads2023 from '@downloads/pillar-collaboration/presentations/SLUG/2023/SLUG_UGRC_Collaborative_Trailheads.pdf?url';
+import uac2023 from '@downloads/pillar-collaboration/presentations/UAC/2023/uac_2023.pdf?url';
+import ugicCaching2013 from '@downloads/pillar-collaboration/presentations/UGIC/2013/caching.pdf?url';
+import ugicGitHub2016 from '@downloads/pillar-collaboration/presentations/UGIC/2016/GitHub.pdf?url';
+import ugicDiscover2017 from '@downloads/pillar-collaboration/presentations/UGIC/2017/discover.pdf?url';
+import ugicRoads2017 from '@downloads/pillar-collaboration/presentations/UGIC/2017/roads.pdf?url';
+import ugicPandas2020 from '@downloads/pillar-collaboration/presentations/UGIC/2020/pandas.pdf?url';
+import ugicPython2021 from '@downloads/pillar-collaboration/presentations/UGIC/2021/IntroToPython/Presentation.zip?url';
+import ugicCollaboration2021 from '@downloads/pillar-collaboration/presentations/UGIC/2021/collaboration.pdf?url';
+import ugicNg911_2021 from '@downloads/pillar-collaboration/presentations/UGIC/2021/ng911.pdf?url';
+import ugicPython2022 from '@downloads/pillar-collaboration/presentations/UGIC/2022/PythonTricks/ImprovingYourPythonProgrammingExperience.pdf?url';
+import ugicOsm2022 from '@downloads/pillar-collaboration/presentations/UGIC/2022/openUGRC.pdf?url';
+import ugicComputerVision2023 from '@downloads/pillar-collaboration/presentations/UGIC/2023/ComputerVision.pdf?url';
+import ugicPalletjack2023 from '@downloads/pillar-collaboration/presentations/UGIC/2023/palletjack/Introducing_palletjack.pdf?url';
+import pandas from '@downloads/pillar-collaboration/presentations/UGIC/2023/pandas.zip?url';
+import ugicPandas2023 from '@downloads/pillar-collaboration/presentations/UGIC/2023/pandas/pandas_slides.pdf?url';
+import devSummitAtlas2013 from '@downloads/pillar-collaboration/presentations/devsummit/2013/atlas.pdf?url';
+import devSummitDojo2014 from '@downloads/pillar-collaboration/presentations/devsummit/2014/dojobuild.pdf?url';
+import uvu2021 from '@downloads/pillar-collaboration/presentations/higher_ed/UVU_Earth_Science_Seminar_2021_w_notes.pdf?url';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'UGRC presentations',
+  pillar: 'Collaboration',
+  section: stripeSections([
+    {
+      title: `UGIC`,
+    },
+    {
+      title: `Esri developer summit`,
+    },
+    {
+      title: 'Esri user conference',
+    },
+    { title: 'National states geographic information council' },
+    { title: 'Salt Lake user group' },
+    { title: 'Maps on the Hill' },
+    { title: 'Utah association of counties' },
+    { title: 'Universities' },
+    { title: 'Miscellaneous' },
+  ]),
+};
+---
+
+<Layout title={page.title}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      slot="image"
+      src={ugicLogo}
+      loading="eager"
+      alt="Utah Geographic Information Council logo"
+      width="400"
+      class="w-full max-w-[400px] rounded-2xl border border-black/30 bg-white/30"
+    />
+    <BulletedList>
+      <li><a href={ugicCaching2013}>2013: Base map caching</a></li>
+      <li><a href="https://agrc.github.io/Presentations/UGIC/2014/webapi">2014: Web API</a></li>
+      <li>
+        <a href="https://agrc.github.io/Presentations/UGIC/2015/web-application-options"
+          >2015: Web Application Options</a
+        >
+      </li>
+      <li><a href={ugicGitHub2016}>2016: Welcome to the wonder world of GitHub</a></li>
+      <li><a href="https://agrc.github.io/Presentations/UGIC/2017/forklift">2017: Forklift</a></li>
+      <li><a href="https://agrc.github.io/Presentations/UGIC/2017/silo">2017: Break out of your Silo</a></li>
+      <li><a href={ugicDiscover2017}>2017: UGRC's Discover Server Not Just Google Imagery</a></li>
+      <li><a href={ugicRoads2017}>2017: Aggregating Utah's Statewide Roads</a></li>
+      <li><a href={ugicPandas2020}>2020: Putting Pandas to Work: Solving GIS Problems in Python</a></li>
+      <li>
+        <a href={ugicNg911_2021}>2021: Next-Generation 911 (NG911) in Utah: Current Status and GIS Update</a>
+      </li>
+      <li>
+        <a href={ugicCollaboration2021}>2021: Collaboration is Key to the Future of Geospatial</a>
+      </li>
+      <li>
+        <a href={ugicPython2021}>2021: Introduction to Python Programming (zip file)</a>
+      </li>
+      <li>
+        <a
+          href="https://agrc.github.io/Presentations/UGIC/2022/SpatiallyEnabledDataFrames/EditingWithDataFrames.slides.html"
+          >2022: Ditch the Cursors: Editing Feature Classes with Spatially Enabled DataFrames</a
+        >
+      </li>
+      <li><a href={ugicOsm2022}>2022: OpenUGRC: Leveraging OpenStreetMap for Statewide Data</a></li>
+      <li>
+        <a href={ugicPython2022}>2022: Improving Your Python Programming Experience</a>
+      </li>
+      <li>
+        <a href={ugicPandas2023}>2023: Preaching Pandas Power for Python Programming Progress</a>
+        (<a href={pandas}>Jupyter Notebook</a>, <a href="https://vimeo.com/827767039">Video</a>)
+      </li>
+      <li>
+        <a href={ugicComputerVision2023}>2023: Generating Useful Data with Computer Vision Tools: 2 Use Cases</a>
+      </li>
+      <li>
+        <a href={ugicPalletjack2023}
+          >2023: Introducing palletjack: A Library for Updating AGOL Layers from pandas DataFrames</a
+        > (<a href="https://vimeo.com/830256482">Video</a>)
+      </li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[1]}>
+    <Image
+      slot="image"
+      src={esriLogo}
+      width="400"
+      alt="Esri logo"
+      class="w-full max-w-[400px] rounded-2xl border border-black/30"
+    />
+    <BulletedList>
+      <li><a href="https://agrc.github.io/Presentations/devsummit/2012/roadkill">2012: Road Kill</a></li>
+      <li><a href={devSummitAtlas2013}>2013: Javascript Boilerplate Tour</a></li>
+      <li><a href={devSummitDojo2014}>2014: Demystifying the dojo build</a></li>
+      <li>
+        <a href="https://agrc.github.io/Presentations/devsummit/2015/favorite-things">2015: Our Favorite Things</a>
+      </li>
+      <li>
+        <a href="https://agrc.github.io/Presentations/devsummit/2016/playing-nicely-with-others"
+          >2016: How to Play Nicely with Others - Building Geospatial Components</a
+        >
+      </li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[2]}>
+    <Image
+      slot="image"
+      src={esriLogo}
+      width="400"
+      alt="Esri logo"
+      class="w-full max-w-[400px] rounded-2xl border border-black/30"
+    />
+    <BulletedList>
+      <li>
+        <a href={ucNg911_2019}>2019: Consolidating Utah's GIS Data for Next Generation 911 (NG911)</a>
+      </li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      src={nsgicLogo}
+      width="400"
+      alt="National States Geographic Information Council logo"
+      class="w-full max-w-[400px] rounded-2xl border border-black/30 bg-white/30 p-4"
+    />
+    <BulletedList>
+      <li><a href={nsgicData2018}>2018: NG911 Data Prep</a></li>
+      <li><a href={nsgicPlss2019}>2019: Utah and the PLSS</a></li>
+      <li><a href={nsgicDataLifecycle2019}>2019: Utah's New GIS Data Lifecycle</a></li>
+      <li><a href={nsgicTogether2020}>2020: Things that go Together</a></li>
+      <li><a href={nsgicBeyondTheMap2020}>2020: Thinking Beyond the Map</a></li>
+      <li>
+        <a href={nsgicWardrobe2021}>2021: Revamping your Data Wardrobe to Give it More Curb Appeal</a>
+      </li>
+      <li>
+        <a href={nsgicPotPourri2021}>2021: News from the Utah Potpourri of GIS</a>
+      </li>
+      <li><a href={nsgicGeocoding2021}>2021: GIS 101 Series - Geocoding</a></li>
+      <li><a href={nsgicMidyear2022}>2022: Mining new GIS Users</a></li>
+      <li>
+        <a href={nsgicRating2022}>2022: Implementing a Rating System to Enhance Data Quality</a>a
+      </li>
+      <li>
+        <a href={nsgicApps2023}>2023: A Showcase of Utah’s Apps, Maps, and Services</a>
+      </li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[4]}>
+    <BulletedList>
+      <li>
+        <a href={slugDataDelivery2020}>2020: Introducing the Latest SGID Delivery System</a>
+      </li>
+      <li><a href={slugUpdate2022}>2022: A UGRC Update</a></li>
+      <li>
+        <a href={slugTrailheads2023}>2023: Collaborative Trailheads: Maintaining SGID Data in OpenStreetMap</a>
+      </li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[5]}>
+    <Image
+      slot="image"
+      src={mothLogo}
+      width="400"
+      alt="Maps on the Hill logo"
+      class="w-full max-w-[400px] rounded-2xl border border-black/30"
+    />
+    <BulletedList>
+      <li><a href={moth911_2017}>2017: NG911 Data Collaboration</a></li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[6]}>
+    <BulletedList>
+      <li><a href={uac2023}>2023: Introduction to UGRC's Products and Solutions</a></li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[7]}>
+    <BulletedList>
+      <li>
+        <a href={uvu2021}
+          >2021 UVU Earth Science Seminar: This Thing Called
+          <del>Love</del> GIS: An Introduction to UGRC</a
+        >
+      </li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[8]}>
+    <BulletedList>
+      <li>
+        <a href={sgidLifecycle}
+          >2020: Utah's SGID - Unlocking Geospatial Data (Bridging the Gap Between Proprietary and Open Source GIS)</a
+        >
+      </li>
+      <li><a href={openGeospatial}>2020: Open Geospatial</a></li>
+      <li>
+        <a href={electionData}>2020: Validating Election Data - Address Points and Voting Precincts</a>
+      </li>
+      <li><a href={addressing911}>2021: Addressing and its Impacts on 911 Call Routing and Dispatching</a></li>
+      <li>
+        <a href={uspe2022}>2022: USPE Presentation: GIS Data, Resources, and Applications</a>
+      </li>
+      <li>
+        <a href={g52022}>2022: G5 Presentation: GIS & 911 - From Your Phone to the St George Communications Center</a>
+      </li>
+    </BulletedList>
+  </Section>
+</Layout>

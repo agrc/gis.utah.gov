@@ -14,6 +14,7 @@ import { Image } from 'astro:assets';
 
 import communityPhoto from '@images/collaboration/community.svg';
 import conferencePhoto from '@images/collaboration/conference.svg';
+import connectedPhoto from '@images/collaboration/connected-world.svg';
 import eventsPhoto from '@images/collaboration/events.svg';
 import resourcesPhoto from '@images/collaboration/resources.svg';
 ---
@@ -41,7 +42,7 @@ import resourcesPhoto from '@images/collaboration/resources.svg';
         up to observe, each event offers a unique opportunity to engage with your peers and share your knowledge, learn from
         others, network, and make new friends.
       </CardWithTopImage>
-      <CardWithTopImage title="Resources" actionUrl="/collaboration/resources">
+      <CardWithTopImage title="Knowledge" actionUrl="/collaboration/knowledge">
         <Image
           slot="image"
           loading="eager"
@@ -49,55 +50,71 @@ import resourcesPhoto from '@images/collaboration/resources.svg';
           alt="a person searches a manilla folder containing a lot of documents "
           class="block h-44"
         />
-        Explore our favorite and most popular resources such as blog posts with great information, free training opportunities,
-        all our past presentations, and even our logos. We strive to make all of our knowledge open and accessible to enable
-        you to apply what we've learned to your own projects and solutions, and to learn from our mistakes so you don't repeat
-        them. We greatly value contributing to an informed GIS workforce in Utah.
+        Explore our knowledge base through our favorite and most popular resources such as blog posts with great information,
+        free training opportunities, all our past presentations, and even our logos. We strive to make all of our knowledge
+        open and accessible to enable you to apply what we've learned to your own projects and solutions, and to learn from
+        our mistakes so you don't repeat them. We greatly value contributing to an informed GIS workforce in Utah.
       </CardWithTopImage>
     </GridForPillars>
   </Section>
 
-  <Section title="Popular Collaboration Resources" slot="popular-resources" titlePosition="center">
+  <Section title="Popular Resources" slot="popular-resources" titlePosition="center">
     <GridForPopularResources>
-      <CardWithPopularLink title="UGIC" href="/collaboration/events/ugic">present or join</CardWithPopularLink>
-      <CardWithPopularLink title="Maps on the Hill" href="/collaboration/events/moth">
-        participate
+      <CardWithPopularLink title="UGIC" href="/collaboration/community/#utah-geographic-information-council-ugic">
+        Utah Geographic Information Council. Present, join, or get involved with the statewide GIS group.
       </CardWithPopularLink>
-      <CardWithPopularLink title="Presentations" href="/collaboration/resources/presentations">
-        UGRC presentations
+      <CardWithPopularLink title="Maps on the Hill" href="/collaboration/events/#maps-on-the-hill">
+        Show off your professional work and network with colleagues, elected officials, and the public.
+      </CardWithPopularLink>
+      <CardWithPopularLink title="UGRC Presentations" href="/collaboration/knowledge/presentations/">
+        A collection of talks given by UGRC staff at various conferences and venues.
       </CardWithPopularLink>
       <CardWithPopularLink title="User Groups" href="/collaboration/community/user-groups">
-        Connect with Utah GIS user groups
+        Local groups to connect with colleagues and peers about all things GIS.
       </CardWithPopularLink>
     </GridForPopularResources>
   </Section>
 
-  <Section title="More Collaboration Resources" slot="more-resources" stripe titlePosition="center">
+  <Section title="More Resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithSideImage title="NSGIC" actionUrl="/collaboration/community/user-groups/nsgic">
-        <Image slot="image" src={conferencePhoto} alt="man in front of warning sign" class="self-center" />
-        National States Geographic Information Council
+      <CardWithSideImage
+        title="NSGIC"
+        actionUrl="/collaboration/community/#national-states-geographic-information-council-nsgic"
+      >
+        <Image
+          slot="image"
+          src={conferencePhoto}
+          alt="man at a lectern speaking to people sitting in chairs"
+          class="self-center"
+        />
+        National States Geographic Information Council. The national council to advance state-led geospatial coordination
+        for the nation.
       </CardWithSideImage>
-      <CardWithSideImage title="GISAC" actionUrl="/collaboration/community/user-groups/GISAC">
-        <Image slot="image" src={conferencePhoto} alt="people shaking hands" class="self-center" />
-        Geographic Information Systems Advisory Committee
+      <CardWithSideImage title="Slack spatial community" actionUrl="https://thespatialcommunity.org/#join">
+        <Image
+          slot="image"
+          src={connectedPhoto}
+          alt="people using mobile devices and connected by lines with the earth in the background"
+          class="self-center"
+        />
+        A forum for connecting with a global community of GIS enthusiasts and experts.
       </CardWithSideImage>
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="UDOT Data Portal" href="https://data.udot.utah.gov">
-        This portal provides access to UDOT data. Data layers are available to view and download. Data is discoverable
-        by searching a keyword or browsing by category. Applications are available for exploring many of UDOT's current
-        and authoritative datasets.
+      <CardWithSmallLink title="UGRC blog" href="/blog/">
+        We blog about a variety of topics that may be of interest to you.
       </CardWithSmallLink>
-      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
-        Discover spatial data and tools that empower informed land management decisions
+      <CardWithSmallLink title="Learning opportunities" href="/collaboration/knowledge/#where-can-i-learn-more">
+        Links to GIS software training materials, courses, tutorials, and more.
       </CardWithSmallLink>
-      <CardWithSmallLink title="DNR Data Portal" href="https://dwr-data-utahdnr.hub.arcgis.com/">
-        Explore spatial data relevant to Utah's aquatic and terrestrial wildlife distributions, habitats, and wildlife
-        management.
+      <CardWithSmallLink title="UGRC documentation" href="/documentation/">
+        All you need to know about the products and services we provide and how to use them.
+      </CardWithSmallLink>
+      <CardWithSmallLink title="About UGRC" href="/about/">
+        Learn more about who we are, what we do, and why we do it.
       </CardWithSmallLink>
     </GridForYouMightLike>
   </Section>

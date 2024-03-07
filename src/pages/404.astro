@@ -1,39 +1,29 @@
 ---
-import Layout from '@layouts/FullWidth.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import NumberedList from '@components/page/NumberedList.astro';
 import Section from '@components/page/Section.astro';
-
-const { pathname } = Astro.url;
-import { Image, getImage } from 'astro:assets';
-import myBackground from '../images/404.png';
+import Layout from '@layouts/FullWidth.astro';
+import { Image } from 'astro:assets';
+import myBackground from '../images/404.webp';
 ---
 
 <Layout title="null island">
-  <Section title="This page was not found">
-    <Image src={myBackground} alt="null island" slot="image" class="border" />
+  <Section>
+    <Image src={myBackground} alt="null island" width="454" slot="image" class="rounded-lg dark:invert" />
     <h2>We're sorry but...</h2>
-    <div>
-      <p>
-        <span class="font-black">{pathname}</span> was not found or created yet – or someone forgot to set the spatial reference...
-      </p>
+    <div class="space-y-5">
+      <p class="font-black">{Astro.url.pathname}</p>
+      <p>was not found or has not been created yet – or someone forgot to set the spatial reference...</p>
     </div>
-    <ul class="list-decimal pl-6 text-left">
-      <li>Make sure the above URI is spelled correctly.</li>
+    <h3>Now what</h3>
+    <NumberedList>
+      <li>Make sure the above URI has no spelling mistakes.</li>
+      <li>Try the search icon in the top right for the page and</li>
       <li>
-        Try <a href="/search/index.html">searching</a> for the page and
+        Finally, notify us <ExternalLink href="https://github.com/agrc/gis.utah.gov/issues/new"
+          >by creating an issue</ExternalLink
+        >.
       </li>
-      <li>
-        Finally, notify us <a href="https://github.com/agrc/gis.utah.gov/issues/new">by creating an issue</a>.
-      </li>
-      <div>
-        <script>
-          window.onload = function () {
-            gtag('event', '404', {
-              action: '404-path-' + document.location.pathname,
-              label: '404-referrer-' + document.referrer,
-            });
-          };
-        </script>
-      </div>
-    </ul>
+    </NumberedList>
   </Section>
 </Layout>

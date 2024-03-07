@@ -7,18 +7,54 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
+import nsgicLogo from '@images/collaboration/NSGIC_logo.png';
+import uacLogo from '@images/collaboration/UAC_logo.png';
+import ucaLogo from '@images/collaboration/UCA_logo.png';
+import ugicLogo from '@images/collaboration/UGIC_logo.png';
+import uhsLogo from '@images/collaboration/UHS_logo.png';
 import communityPhoto from '@images/collaboration/community.svg';
+import slackLogo from '@images/collaboration/slack.svg';
 
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'GIS community',
   section: stripeSections([
-    {},
+    { title: `Help build Utah's GIS community` },
     {
-      title: 'Demonstration heading',
-      actionUrl: '/collaboration/somewhere',
-      actionText: 'Link text... can be empty for default value',
+      title: 'GIS user groups',
+      actionUrl: '/collaboration/community/user-groups',
+      actionText: 'Get involved',
+    },
+    {
+      title: 'Utah Geographic Information Council (UGIC)',
+      actionUrl: 'https://ugic.org/',
+      actionText: 'Learn more',
+    },
+    {
+      title: 'National States Geographic Information Council (NSGIC)',
+      actionUrl: 'https://nsgic.org/membership/',
+      actionText: 'Learn more',
+    },
+    {
+      title: 'The Spatial Community',
+      actionUrl: 'https://thespatialcommunity.org/#join',
+      actionText: 'Join the community',
+    },
+    {
+      title: 'Utah Association of Counties (UAC)',
+      actionUrl: 'https://www.uacnet.org/',
+      actionText: 'Learn more',
+    },
+    {
+      title: 'Utah Committee on Geographic Names',
+      actionUrl: 'https://history.utah.gov/geographic-names-committee/',
+      actionText: 'Learn more',
+    },
+    {
+      title: 'Utah Communications Authority (UCA)',
+      actionUrl: 'https://www.uca911.org/',
+      actionText: 'Learn more',
     },
   ]),
 };
@@ -27,6 +63,13 @@ const page: IStandardPageMetadata = {
 <Layout title={page.title}>
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
+    <p>
+      UGRC is honored to be a part of and participate in many user groups, councils, committees, associations, and
+      communication channels. Join us in one or more of these groups to share and learn together through presentations,
+      networking, and formal and casual communication. We look forward to meeting and working with you!
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
     <Image
       slot="image"
       src={communityPhoto}
@@ -34,20 +77,87 @@ const page: IStandardPageMetadata = {
       alt="people together in a room"
       class="w-full max-w-[400px] rounded-2xl"
     />
-    Utah is home to a variety of user groups that cover the state and include, federal, state, and local agencies as well
-    as other interested partners.
+    <p>
+      Utah’s GIS user groups are valuable venues to obtain the latest information on technology, data, and projects.
+      User groups are formed and managed by GIS practitioners in various regions throughout the state. They are great
+      for meeting new Utah GIS community members, and connecting with longtime colleagues and friends. UGRC staff attend
+      several user group meetings each year, when possible.
+    </p>
   </Section>
-  <Section {...page.section[1]}>
-    <ul>
-      <li>Utah Geographic Information Council (UGIC)</li>
-      <li>Utah Council of Land Surveyors (UCLT)</li>
-      <li>Northern Utah Geographic Information Systems group (NUGIS)</li>
-      <li>Central Utah Group (CUG)</li>
-      <li>Canyon Country Partnership (CCP)</li>
-      <li>Utah Valley GIS Users Group</li>
-      <li>G5 - Southwestern Utah counties</li>
-      <li>Uintah Basin User Group (UBUG)</li>
-      <li>Salt Lake User Group (SLUG)</li>
-    </ul>
+  <Section {...page.section[2]}>
+    <Image
+      slot="image"
+      src={ugicLogo}
+      alt="Utah Geographic Information Council logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      UGIC is a nonprofit organization whose mission is to lead the effective application of geographic information in
+      Utah. It is their vision to provide a modern, accurate, documented, and accessible geospatial information
+      infrastructure for all of Utah. They contribute to and participate in many GIS events such as the annual Maps on
+      the Hill (MOTH) (link to MOTH page/section?), local user group meetings (link to GIS User Groups page?), and GIS
+      Day activities. The culminating UGIC event is an annual conference, typically held in one of Utah’s many unique
+      sites or communities, to bring the whole Utah GIS community together. UGRC maintains an ongoing, appointed seat on
+      the UGIC Board.
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      src={nsgicLogo}
+      alt="National States Geographic Information Council logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      NSGIC is a national organization that promotes the coordinated, impactful, and cost-efficient application of GIS
+      and other location-based information and analytics to best serve the nation, with emphasis on the power of
+      initiatives and public policy that connect across local, state, federal, and private sector partners. UGRC
+      representatives attend bi-annual conferences, and participate in NSGIC initiatives. UGRC was an early member of
+      the NSGIC organization, and has helped to develop national and state-level geospatial policies and guiding
+      principles.
+    </p>
+  </Section>
+  <Section {...page.section[4]}>
+    <Image slot="image" src={slackLogo} alt="Slack from Salesforce logo" class="w-full max-w-[400px] rounded-2xl" />
+    <p>
+      Connect with a highly-informed global community of geospatial enthusiasts, including UGRC staff, to ask and answer
+      questions about work and personal GIS projects and solutions, and spark your geo-imagination and creativity.
+    </p>
+  </Section>
+  <Section {...page.section[5]}>
+    <Image
+      slot="image"
+      src={uacLogo}
+      alt="Utah Association of Counties logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      UAC is a voluntary, statewide organization whose members are the 29 counties of Utah, with a purpose of improving
+      the operation of county governments and, henceforth, the quality of services to their residents. The 29 counties
+      within the State of Utah are special partners to UGRC. We greatly respect and rely on them for local knowledge,
+      and the ongoing sharing of data that we aggregate and make available for many important statewide systems. UGRC
+      staff often sponsor a booth and give presentations at annual UAC conferences.
+    </p>
+  </Section>
+  <Section {...page.section[6]}>
+    <Image slot="image" src={uhsLogo} alt="Utah Historical Society logo" class="w-full max-w-[400px] rounded-2xl" />
+    <p>
+      Organized within the Department of Cultural and Community Engagement's Utah Historical Society, The Utah Committee
+      on Geographic Names is tasked with reviewing and providing recommendations regarding geographic name proposals in
+      Utah. UGRC staff have been part of the committee for many years to help decide new, and changes to, geographic
+      names in Utah.
+    </p>
+  </Section>
+  <Section {...page.section[7]}>
+    <Image
+      slot="image"
+      src={ucaLogo}
+      alt="Utah Communications Authority logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      UCA supports public safety communication for Utah’s first responders and citizens. UGRC provides GIS data, and
+      acts as an advisor for decision-making about GIS and geospatial topics related to NG911 efforts.
+    </p>
   </Section>
 </Layout>

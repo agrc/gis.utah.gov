@@ -7,7 +7,15 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
+import esriLogo from '@images/collaboration/Esri_logo.jpg';
+import mothLogo from '@images/collaboration/MOTH_logo.jpg';
+import nacisLogo from '@images/collaboration/NACIS_logo.png';
+import nsgicLogo from '@images/collaboration/NSGIC_logo.png';
+import osgeoLogo from '@images/collaboration/OSGeo_logo.svg';
+import osmLogo from '@images/collaboration/OSM_logo.svg';
+import utahjsLogo from '@images/collaboration/UtahJS_logo.png';
 import eventsPhoto from '@images/collaboration/events.svg';
+import ugicPhoto from '@images/collaboration/ugic-characters.png';
 
 import { stripeSections } from '@utils/page';
 
@@ -16,9 +24,38 @@ const page: IStandardPageMetadata = {
   section: stripeSections([
     {},
     {
-      title: 'Demonstration heading',
-      actionUrl: '/collaboration/somewhere',
-      actionText: 'Link text... can be empty for default value',
+      title: 'Maps on the Hill',
+      actionUrl: '/collaboration/events/maps-on-the-hill',
+      actionText: 'View past events',
+    },
+    {
+      title: 'UGIC Conference',
+      actionUrl: 'https://ugic.org/ugic-annual-conference/',
+      actionText: 'View past conferences',
+    },
+    {
+      title: 'NSGIC Conference and Midyear Meetings',
+      actionUrl: 'https://nsgic.org/events-news/conferences/',
+    },
+    {
+      title: 'Esri UC and Dev Summit',
+      actionUrl: 'https://www.esri.com/en-us/about/events/index/overview',
+    },
+    {
+      title: 'OpenStreetMap State of the Map US',
+      actionUrl: 'https://openstreetmap.us/events/state-of-the-map-us/',
+    },
+    {
+      title: 'NACIS Annual Meeting',
+      actionUrl: 'https://nacis.org/annual-meeting/current-meeting/',
+    },
+    {
+      title: 'JavaScript Engineers of Utah Conference and events',
+      actionUrl: 'https://utahjs.com/',
+    },
+    {
+      title: 'FOSS4G Annual International Gathering',
+      actionUrl: 'https://foss4g.org/',
     },
   ]),
 };
@@ -31,17 +68,136 @@ const page: IStandardPageMetadata = {
       slot="image"
       src={eventsPhoto}
       loading="eager"
+      width="400"
       alt="a person circling a date on a calendar"
       class="w-full max-w-[400px] rounded-2xl"
     />
-    Utah is home to the Utah Geographic Information Council conference. Usually one is along the Wasatch Front and the other
-    is in rural Utah on alternating years. There are also other opportunities to show off your work, such as Maps On The
-    Hill (MOTH) during the legislative session each year.
+    <p>
+      Below are some of the events UGRC staff regularly attend, or have attended in the recent past, with a focus on
+      local, state, national, and global GIS technology and topics; geospatial data and solutions; information
+      technology and development; and myriad related subjects. We hope to see you at one or more of these events!
+    </p>
   </Section>
   <Section {...page.section[1]}>
-    <ul>
-      <li>UGIC conference</li>
-      <li>MOTH</li>
-    </ul>
+    <Image
+      slot="image"
+      src={mothLogo}
+      width="400"
+      alt="Maps on the Hill logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      Maps on the Hill, better known as MOTH, is an annual, free event held in the Rotunda of the Utah State Capitol. It
+      is an excellent opportunity for students and professionals to showcase their work and share with Utah's elected
+      officials and the public how current mapping technology is being applied to important issues across a wide range
+      of disciplines in all levels of government, the private sector, and higher education.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <Image
+      slot="image"
+      src={ugicPhoto}
+      width="400"
+      alt="Utah Geographic Information Council logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      The annual Utah Geographic Information Council conference is the premier Utah GIS event, held each year in a new
+      and exciting location in the Great State of Utah. From seasoned GIS professionals to new and upcoming students,
+      this conference provides an opportunity to grow your GIS knowledge base and expand your networking reach.
+      Geospatial experts hold workshops and presentations that are guaranteed to elevate individual GIS cognition in our
+      rapidly changing field. The event is packed full of great presentations, workshops, vendors and opportunities to
+      advance your GIS skills and learn from other GIS professionals.
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      width="400"
+      src={nsgicLogo}
+      alt="National States Geographic Information Council logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      The National States Geographic Information Council hosts two events each year - an annual conference and a midyear
+      meeting. These events draw key decision-makers from U.S. states providing critical and timely networking
+      opportunities amongst state and federal officials, industry leaders and other geospatial organizations for the
+      chance to connect, collaborate, and share with colleagues and partners across the geospatial ecosystem. As the
+      State of Utah's GIS and map technology office, UGRC represents Utah as NSGIC members, and at these annual events.
+    </p>
+  </Section>
+  <Section {...page.section[4]}>
+    <Image slot="image" src={esriLogo} alt="Esri logo" width="400" class="w-full max-w-[400px] rounded-2xl" />
+    <p>
+      Esri is a GIS software company with a global reach and goal to advance the power of geography for business,
+      government, and society. Their annual User Conference and Developer Summit respectively provide opportunities to
+      “Join a collaborative user community of forward-thinking geographic information system (GIS) professionals
+      discovering new insights, sharing innovative best practices, and learning about the latest geospatial technology.”
+      As users of Esri software, UGRC rotates attendance at one or more of these events to give our staff the chance to
+      present, ask questions, hear from industry colleagues, and apply what they learn within the framework of Utah GIS.
+    </p>
+  </Section>
+  <Section {...page.section[5]}>
+    <Image
+      slot="image"
+      src={osmLogo}
+      alt="Open Street Map US logo"
+      width="300"
+      class="w-full max-w-[300px] rounded-2xl"
+    />
+    <p>
+      OpenStreetMap is the free, editable map of the world. OpenStreetMap US is a nonprofit organization helping to
+      support and grow the project in the US. The State of the Map US conference includes presentations, workshops, and
+      other events to connect with mappers, businesses, government agencies, and nonprofits, all collaborating around
+      the free and editable OpenStreetMap project. Share your vision for the project, learn how to work with
+      OpenStreetMap data, and hack on the latest mapping improvements.
+    </p>
+  </Section>
+  <Section {...page.section[6]}>
+    <Image
+      slot="image"
+      src={nacisLogo}
+      alt="North American Cartographic Information Society logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      The first objective of the North American Cartographic Information Society is to "improve communication,
+      coordination and cooperation among the producers, disseminators, curators, and users of cartographic information".
+      The NACIS Annual Meeting is a casual and friendly atmosphere for cartographers from the gamut of the mapping
+      community to join together, learn, share ideas, and find others with similar cartographic passions via
+      presentations, panels, workshops, and field trips. UGRC occasionally sends one of our master cartographers to
+      these meetings, as time and budget allow.
+    </p>
+  </Section>
+  <Section {...page.section[7]}>
+    <Image
+      slot="image"
+      src={utahjsLogo}
+      alt="JavaScript Engineers of Utah logo"
+      width="300"
+      class="w-full max-w-[300px] rounded-2xl"
+    />
+    <p>
+      The JavaScript Engineers of Utah, or UtahJS, is a community focused on learning about and promoting knowledge of
+      JavaScript. There are a variety of communication channels and regular meet-ups, culminating in an annual
+      conference. One or more UGRC developers that are familiar with and use JavaScript for custom tool, process, and
+      application development stay connected with the UtahJS community, and often attend the annual conference.
+    </p>
+  </Section>
+  <Section {...page.section[8]}>
+    <Image
+      slot="image"
+      src={osgeoLogo}
+      width="400"
+      alt="The Open Source Geospatial Foundation logo"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      FOSS4G means Free and Open Source Software for Geospatial. Organized by The Open Source Geospatial Foundation
+      (OSGeo), the FOSS4G international gathering brings together developers, users, decision-makers and observers from
+      a broad spectrum of organizations and fields of operations, and consists of workshops, presentations, discussions,
+      and cooperation to create effective and relevant geospatial products, standards, and protocols. UGRC tries to send
+      at least one staff member to the gathering when it is held within the United States.
+    </p>
   </Section>
 </Layout>
