@@ -32,11 +32,19 @@ const page: IStandardPageMetadata = {
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image slot="image" src={turnLogo} loading="eager" alt="turn logo" class="w-full max-w-[400px] rounded-2xl" />
-    <p>Introduce documentation</p>
+    <p>
+      Our GPS network is a high-precision global navigation satellite system that provides real-time, high-accuracy GPS
+      positioning. This central system analyzes the input and adjusts and corrects the data to provide the most accurate
+      locations, usually down to centimeter level. Our networks use the Trimble PIVOT VRS Platform.
+    </p>
   </Section>
   <Section {...page.section[1]}>
     <Image slot="image" src={getConnected} alt="A person sitting on a globe" class="w-full max-w-[400px] rounded-2xl" />
-    <p>Discuss connecting</p>
+    <p>
+      On our Connecting page, you will find instructions for getting connected to both the TURN and Reno networks. We
+      have also provided a new tutorial video for using the new bill pay system. Here, you will find the IP address and
+      mountpoints you'll need to get connected.
+    </p>
   </Section>
   <Section {...page.section[2]}>
     <Image
@@ -45,6 +53,10 @@ const page: IStandardPageMetadata = {
       alt="A person sitting on a globe"
       class="w-full max-w-[400px] rounded-2xl"
     />
-    <p>present and link to the resources</p>
+    <p>
+      On this page, you will find resources related to our GNSS network. This includes information on how the network
+      itself works, tips for troubleshooting issues that might arise, and details on some of the devices that are
+      supported by our network.
+    </p>
   </Section>
 </Layout>
