@@ -1,4 +1,7 @@
-export const getGithubReleases = async (repo) => {
+import { Octokit } from "@octokit/core";
+const octokit = new Octokit();
+
+export const getGithubReleases = async (repo: string) => {
   let releaseMetadata = {
     published_at: '2021-08-31T00:00:00Z',
     tag_name: 'v1.0.0',
@@ -15,11 +18,15 @@ export const getGithubReleases = async (repo) => {
   };
 
   if (import.meta.env.PROD) {
-    const res = await fetch(`https://api.github.com/repos/agrc/${repo}/releases?per_page=1`);
+    const response = await octokit.request('GET /repos/{owner}/{repo}/releases', {
+      owner: 'agrc',
+      repo: repo,
+      per_page: 1,
+    })
 
-    const releases = await res.json();
+    console.log(response.data[0]);
 
-    return releases[0];
+    return response.data[0];
   }
 
   return releaseMetadata;
