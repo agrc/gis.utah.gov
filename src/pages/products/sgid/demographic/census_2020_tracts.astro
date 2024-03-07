@@ -1,0 +1,76 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+import Census2020Description from '@partials/Census2020Description.astro';
+import Census2020Links from '@partials/Census2020Links.astro';
+
+export const metadata: IMetadata = {
+  title: 'Census 2020 Tracts',
+  description: `The most widely-used geographic unit used for many different statistical purposes`,
+  stewards: ['UGRC', 'US Census Bureau'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.DEMOGRAPHIC,
+};
+
+const hubTitle = 'Utah Census Tracts 2020';
+
+const page: IPageMetadata = {
+  ...metadata, // this brings all the data from the metadata object above into the page object
+  updateHistory: [`August 2021: Initial load`],
+
+  hub: {
+    ...dataPages[hubTitle],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Census Tracts are the most common geographic unit used for demographic analyses. They generally have between 1,200
+      and 8,000 people, with an optimum size of 4,000.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <Census2020Description />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <Census2020Links />
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="2010 Census Tracts"
+        href="/products/sgid/demographic/census_2010_tracts"
+        style="secondary">Tracts from the 2010 Census</CardWithSmallLink
+      >
+      <CardWithSmallLink title="2020 Blocks" href="/products/sgid/demographic/census_2020_tracts" style="secondary"
+        >The base Census geography unit</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

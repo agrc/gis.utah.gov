@@ -1,0 +1,80 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import Census2020Links from '@partials/Census2020Links.astro';
+
+export const metadata: IMetadata = {
+  title: 'Census 2020 Streamlined Race Data',
+  description: `Race data from the 2020 Census Blocks simplified by WFRC as a Geodatabase download`,
+  stewards: ['WFRC', 'US Census Bureau'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.DEMOGRAPHIC,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`August 2021: Initial load`],
+
+  links: [
+    {
+      title: 'Streamlined Race Geodatabase',
+      url: 'https://drive.google.com/uc?id=1sv6pAi-fn6UPbMHJ2BZzIM9ApBRAZLVP&export=download',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>Race data from the 2020 Census Blocks simplified by WFRC as a Geodatabase download.</p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="Geodatabase Link" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      the Analytics Group at WFRC streamlined the race fields in the 2020 Block data and made it available for download.
+      This tabular data can be joined to the CensusBlocks2020 GIS layer using the GEOID field. Here's a bit on the
+      methodology they used:
+    </p>
+    <p>
+      The decennial census form allows for respondents to report single and multiple racial identifications.
+      Accordingly, the redistricting release of the 2020 census results includes counts for both single race
+      identification and each combination of racial identifications made when more than one was selected. This table
+      sums, for each racial group, the single racial identification count with a count of the multiple race identifying
+      respondents that included an identification for that specific racial group. Fields that sum across single and
+      multiple racial identification carry the "ANY" at the end of their field name header. Note that summing the counts
+      across the ANY fields will produce a count of the number of identifications made (single and multiple) which will
+      be much greater that the total population count.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <Census2020Links />
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="2020 Blocks" href="/products/sgid/demographic/census_2020_tracts" style="secondary"
+        >The base Census geography unit</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
