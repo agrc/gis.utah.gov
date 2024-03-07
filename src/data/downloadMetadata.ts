@@ -126,8 +126,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Metro Townships': {
     itemId: '103c6dc6764747079919c20927f40a9f',
     name: 'Utah Metro Townships',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahMetroTownships',
+    openSgid: 'boundaries.metro_townships',
     layerId: 0,
   },
   'US States': {

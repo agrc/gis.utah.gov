@@ -13,14 +13,14 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
+import BoundaryDescription from '@components/pages/_partials/BoundaryDescription.astro';
 
-import Alert from '@components/page/Alert.astro';
 import { dataPages } from '@data/downloadMetadata';
 import { removeDateRange } from '@utils/data';
 
 export const metadata: IMetadata = {
   title: 'Utah Metro Townships',
-  description: `Metro Townships is a multi-purpose statewide dataset of metro townships boundaries.`,
+  description: `A multi-purpose statewide dataset of unincorporated metro townships boundaries for cartography and approximate boundary identification.`,
   stewards: [`UGRC`, `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
@@ -28,7 +28,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`2018`],
+  updateHistory: [`July 2023`, `March 2023`, `January 2023`, `September 2017`, `May 2017`, `December 2016`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -45,14 +45,12 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Metro Townships represent unincorporated locations where the residents don't want to be part of an incorporated
+      Metro townships represent unincorporated locations where the residents don't want to be part of an incorporated
       municipality but do want some say in how they are governed. They are maintained by UGRC with the help of many
       state, county, and local entities. Changes and updates are through certification by the Lt. Governor's Office sent
       in by City and County Recorders offices. All features are adjusted to the current Geographic Coordinate Database
       (GCDB) points.
     </p>
-
-    <Alert title="Tip"> Updates to this dataset are published as needed.</Alert>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -60,18 +58,7 @@ const page: IPageMetadata = {
   </Section>
 
   <Fragment slot="description">
-    <p>
-      Data developed with coordinate geometry (COGO) from legal descriptions were used. When necessary the data was
-      adjusted to conform to known physical features. This dataset does not represent exact legal boundaries, but,
-      rather a set of boundaries used for the administrative purposes that conforms to logical & administrative rules
-      (e.g. no two cities or township areas may cover the same geographic extent).
-    </p>
-    <p>
-      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are
-      no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to:
-      State of Utah, SGID. The metro townships boundary dataset is maintained by UGRC in partnership with state and
-      local government.
-    </p>
+    <BoundaryDescription />
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
@@ -81,10 +68,8 @@ const page: IPageMetadata = {
       <CardWithPopularLink title="Lieutenant Governor Municipal Certifications" href="https://municert.utah.gov/"
         >Lieutenant Governor Municipal Certifications website.</CardWithPopularLink
       >
-      <CardWithPopularLink
-        title="Utah Municipalities and Metro Townships Boundaries"
-        href="https://www.arcgis.com/home/webmap/viewer.html?webmap=e2e0430f97114c3aa958262fa5e3e6ed"
-        >Online map viewer of Utah Municipalities and Metro Townships Boundaries.</CardWithPopularLink
+      <CardWithPopularLink title="UGRCodes" href="/blog/2021-04-26-introducing-ugrcodes"
+        >Intuitive and unique identifiers for municipality names.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
