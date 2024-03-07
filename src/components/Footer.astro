@@ -15,7 +15,7 @@ const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
     >
       <div>
         <div class="max-w-xs">
-          <Image src={govOpsLogo} alt="Department of Government Operations" />
+          <Image src={govOpsLogo} width="320" alt="Department of Government Operations" />
         </div>
         <div class="mt-4 text-lg">
           <div class="whitespace-nowrap font-semibold">Division of Technology Services</div>
@@ -44,13 +44,16 @@ const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
       <div class="whitespace-nowrap font-bold">Helpful Links</div>
       <ul class="grid gap-2 pl-1 text-sm leading-loose md:gap-0">
         <li>
-          <a href="/about/contributing" class="custom-style mt-4 block hover:underline">Content contributing guide</a>
+          <a
+            href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests"
+            class="custom-style mt-4 block hover:underline">Content contributing guide</a
+          >
         </li>
         <li><a href="/about/media" class="custom-style hover:underline">Logos and media resources</a></li>
         <li><a href="/documentation/policy" class="custom-style hover:underline">UGRC Policies</a></li>
         <li><a href="/about/code" class="custom-style hover:underline">GIS-related Utah statute</a></li>
         <li>
-          <a href="https://s.dev.utah.gov/ugrc-newsletter" class="custom-style hover:underline"
+          <a href="https://s.utah.gov/ugrc-newsletter" class="custom-style hover:underline"
             >Sign up for our newsletter</a
           >
         </li>
@@ -59,10 +62,11 @@ const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
     <div>
       <div class="whitespace-nowrap font-bold">Website Information</div>
       <ul class="grid gap-2 pl-1 text-sm leading-loose md:gap-0">
-        <li class="mt-4 block">Build: {sha}</li>
+        <li class="mt-4 block">Build: <a href={`https://github.com/agrc/gis.utah.gov/commit/${sha}`}>{sha}</a></li>
         <li>
-          <a href="https://github.com/agrc/gis.utah.gov/edit/main/index.astro" class="custom-style hover:underline"
-            >Edit this page</a
+          <a
+            href={`https://github.com/agrc/gis.utah.gov/tree/main/src/pages${Astro.url.pathname}.astro`}
+            class="custom-style hover:underline">Edit this page</a
           >
         </li>
         <li>
