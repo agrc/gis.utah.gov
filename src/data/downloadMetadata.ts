@@ -175,8 +175,8 @@ export const dataPages: DownloadMetadata = {
   'Utah County Boundaries': {
     itemId: '90431cac2f9f49f4bcf1505419583753',
     name: 'Utah County Boundaries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahCountyBoundaries',
+    openSgid: 'boundaries.county_boundaries',
     layerId: 0,
   },
   'Utah BLM Monuments and NCAs Historic': {
