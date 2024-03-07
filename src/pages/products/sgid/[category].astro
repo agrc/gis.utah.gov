@@ -28,11 +28,13 @@ export async function getStaticPaths() {
 }
 
 // filter and find all pages for the given category
-const pages = (await Astro.glob<IDataCategory>('../**/*.astro')).filter((page) => {
-  return [page.metadata?.category?.toLowerCase(), page?.metadata?.secondaryCategory?.toLowerCase()].includes(
-    categoryString,
-  );
-});
+const pages = (await Astro.glob<IDataCategory>('../**/*.astro'))
+  .filter((page) => {
+    return [page.metadata?.category?.toLowerCase(), page?.metadata?.secondaryCategory?.toLowerCase()].includes(
+      categoryString,
+    );
+  })
+  .sort((a, b) => a.metadata.title.localeCompare(b.metadata.title));
 ---
 
 <Layout title={`SGID ${readableCategory} data`}>
