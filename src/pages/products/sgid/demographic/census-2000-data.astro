@@ -1,0 +1,97 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import Census2010Links from 'partials/Census2010Links.astro';
+
+export const metadata: IMetadata = {
+  title: 'Census 2000 data',
+  description: `Archived data from the 2000 census`,
+  stewards: ['UGRC', 'US Census Bureau'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.DEMOGRAPHIC,
+};
+
+const page: IPageMetadata = {
+  ...metadata, // this brings all the data from the metadata object above into the page object
+
+  updateHistory: [`2001`],
+
+  links: [
+    {
+      title: '2000 Census Data (Google Drive Link)',
+      url: 'https://link-to-the-resource.https://drive.google.com/drive/folders/16hcPe8qHPEtwLQPPbzg6HFUTMutRY4Vq',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This link contains demographic information collected by the Census Bureau in 2000 for the census block, census
+      block group, census tract, and county levels in both shapefile and GDB formats. Due to their age, these datasets
+      have been removed from our databases and are now stored as static files in Google Drive.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="A title describing the links. e.g. Install links" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The Census Bureau creates different sized geographic areas to organize demographic information (population,
+      household counts, ethnicity, etc), the smallest unit of area being a "census block" and the biggest being
+      counties.
+    </p>
+    <p>
+      The 2000 Census was the last to use the "long-form" questionnaire to sample a portion of the population for more
+      detailed information. Starting in 2010, the Census Bureau replaced the long-form with the American Community
+      Survey (ACS), which is an ongoing sample that provides data every year instead of every 10 years.
+    </p>
+    <p>
+      Summary File 1 and 2 focus on the information collected on the census short form - namely on age, sex, race,
+      Hispanic/Latino origin, households, families, housing units, and owner/renter status.
+    </p>
+    <p>
+      Summary File 3 and 4 focus on social, economic and housing characteristics compiled from a sample of approximately
+      19 million housing units (about 1 in 6 households) that received the Census 2000 long-form questionnaire. Topics
+      include income, education, occupation, ancestry, disability, foreign birth, commuting, household financial
+      arrangements, year housing structure built and many other population and housing subjects.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <Census2010Links />
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="Census 2020 Blocks"
+        href="/products/sgid/demographic/census-2020-blocks"
+        style="secondary">Get the base-level geographies for the 2020 Census</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Census 2010 Blocks"
+        href="/products/sgid/demographic/census-2010-blocks"
+        style="secondary">Get the base-level geographies for the 2010 Census</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
