@@ -18,14 +18,14 @@ import Census2010Description from '@partials/Census2010Description.astro';
 import Census2010Links from '@partials/Census2010Links.astro';
 
 export const metadata: IMetadata = {
-  title: 'Census 2010 Tracts',
-  description: `The most widely-used geographic unit used for many different statistical purposes`,
+  title: 'Census 2010 Blocks',
+  description: `The smallest geographic unit with very basic demographic data`,
   stewards: ['UGRC', 'US Census Bureau'],
   type: ProductType.POLYGON,
   category: SgidCategory.DEMOGRAPHIC,
 };
 
-const hubTitle = 'Utah Census Tracts 2010';
+const hubTitle = 'Utah Census Blocks 2010';
 
 const page: IPageMetadata = {
   ...metadata, // this brings all the data from the metadata object above into the page object
@@ -42,8 +42,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Census Tracts are the most common geographic unit used for demographic analyses. They generally have between 1,200
-      and 8,000 people, with an optimum size of 4,000.
+      Census Blocks are the smallest geographic unit used by the United States Census Bureau for tabulating population
+      information. To preserve privacy, only a very limited amount of data is available at the block level.
     </p>
   </Fragment>
 
@@ -64,12 +64,12 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink
-        title="2020 Census Tracts"
-        href="/products/sgid/demographic/census_2020_tracts"
-        style="secondary">Tracts from the 2020 Census</CardWithSmallLink
+        title="2020 Census Blocks"
+        href="/products/sgid/demographic/census-2020-blocks"
+        style="secondary">Blocks from the 2020 Census</CardWithSmallLink
       >
-      <CardWithSmallLink title="2010 Blocks" href="/products/sgid/demographic/census_2010_blocks" style="secondary"
-        >The base Census geography unit</CardWithSmallLink
+      <CardWithSmallLink title="2010 Tracts" href="/products/sgid/demographic/census-2010-tracts" style="secondary"
+        >A common Census aggregation level with widely available information</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
