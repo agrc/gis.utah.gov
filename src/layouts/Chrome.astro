@@ -1,23 +1,22 @@
 ---
-import Search from '@components/Search.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts.js';
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
 
-interface Props {
-  title: string;
-}
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts.js';
 
 import Banner from '@components/Banner.astro';
 import BaseHead from '@components/BaseHead.astro';
 import Footer from '@components/Footer.astro';
+import Search from '@components/Search.astro';
 import SocialMedia from '@components/SocialMedia.astro';
 
 import { Header } from '@components/react/Header';
+
 import { Menu, SmallMenu } from '@components/react/Menu.jsx';
 
 import '../styles/tailwind.css';
 
 const { pathname } = Astro.url;
-const { title = 'UGRC' } = Astro.props;
+const { title = 'UGRC', pillar } = Astro.props as IStandardPageMetadata;
 ---
 
 <!doctype html>
@@ -86,7 +85,7 @@ const { title = 'UGRC' } = Astro.props;
     <SmallMenu client:visible currentUri={pathname}>
       <Search suffix="small" />
     </SmallMenu>
-    <Banner title={title} />
+    <Banner title={title} pillar={pillar} />
     <slot />
     <footer>
       <SocialMedia />

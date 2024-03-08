@@ -1,14 +1,12 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
+
 import Layout from '@layouts/FullWidth.astro';
 
-interface Props {
-  title: string;
-}
-
-const { title = 'UGRC' } = Astro.props;
+const props = Astro.props as IStandardPageMetadata;
 ---
 
-<Layout title={title}>
+<Layout {...props}>
   <slot name="crumbs" />
   <slot name="popular-level-ones" />
   <slot name="popular-resources" />

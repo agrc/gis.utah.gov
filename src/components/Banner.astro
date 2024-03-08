@@ -1,12 +1,15 @@
 ---
+import type { Pillar } from '@models/products/sgid/types';
+
 interface Props {
   title: string;
+  pillar?: Pillar;
 }
 
 import { getImage } from 'astro:assets';
 import image from '../images/hero/banner.png';
 
-const { title = 'UGRC' } = Astro.props;
+const { title = 'UGRC', pillar } = Astro.props;
 
 const banner = await getImage({ src: image, format: 'webp' });
 ---
@@ -36,12 +39,20 @@ const banner = await getImage({ src: image, format: 'webp' });
           </g>
         </svg>
       </div><div
-        class="relative flex w-11/12 shrink grow-0 basis-auto flex-col flex-wrap content-end items-end justify-start border-0 p-6"
+        class="relative flex w-11/12 shrink grow-0 basis-auto flex-col flex-wrap content-end items-end justify-start border-0 p-6 pb-4"
       >
         <div class="relative min-w-px border-0">
           <div class="flex">
             <div class="block min-w-px max-w-full grow">
               <p class="text-right text-3xl font-bold text-zinc-50 md:text-4xl">{title}</p>
+              {
+                pillar && (
+                  <div class="flex flex-col gap-y-5 divide-y divide-white/50">
+                    <div> </div>
+                    <div class="pt-2 text-right text-base font-medium text-zinc-50">{pillar}</div>
+                  </div>
+                )
+              }
             </div>
           </div>
         </div>

@@ -1,15 +1,11 @@
 ---
+import type { IStandardPageMetadata } from '@models/products/sgid/types';
 import Layout from './Chrome.astro';
 
-interface Props {
-  title: string;
-  pillar?: string;
-}
-
-const { title = 'UGRC' } = Astro.props;
+const props = Astro.props as IStandardPageMetadata;
 ---
 
-<Layout title={title}>
+<Layout {...props}>
   <main id="main" class="w-full self-center text-zinc-700 dark:bg-primary">
     <section class="flex flex-1 flex-col">
       <slot name="crumbs" />

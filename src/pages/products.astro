@@ -19,14 +19,14 @@ const page: IStandardPageMetadata = {
   title: 'UGRC products',
   section: stripeSections([
     { title: 'SGID', actionUrl: '/products/sgid' },
-    { title: 'Discover', actionUrl: '/solutions/discover' },
+    { title: 'Discover', actionUrl: '/products/discover' },
     { title: 'TURN GPS', actionUrl: '/products/turn' },
     { title: 'UGRC API', actionUrl: '/products/api' },
   ]),
 };
 ---
 
-<Layout title={page.title}>
+<Layout {...page}>
   <QuickLinks links={page.section} slot="quick-links" />
 
   <Section {...page.section[0]}>
