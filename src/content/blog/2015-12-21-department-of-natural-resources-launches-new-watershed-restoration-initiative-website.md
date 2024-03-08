@@ -9,10 +9,9 @@ tags:
   - web mapping
   - wri
 date: 2015-12-21 11:33:58 -0700
-title: 'Department of Natural Resources Launches New Watershed Restoration
-  Initiative Website '
+title: 'Department of Natural Resources Launches New Watershed Restoration Initiative Website '
 published: false
-category: Uncategorized
+category: Collaboration
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

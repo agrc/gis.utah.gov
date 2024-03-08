@@ -12,7 +12,7 @@ tags:
 date: 2016-09-16T19:27:44.000Z
 title: 'Road Centerlines: Schema Update and Regional Workshop Notes'
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

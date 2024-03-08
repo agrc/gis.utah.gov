@@ -8,7 +8,7 @@ tags:
   - history
   - data
   - education
-category: Uncategorized
+category: UGRC
 cover_image: /src/images/pillar-blog/2019-09-03-digital-maps-gis-history/ord_survey_uk_history.jpg
 cover_image_alt: The British Ordinance Survey
 ---

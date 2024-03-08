@@ -8,7 +8,7 @@ date: 2019-01-17T21:13:40.000Z
 tags:
   - naip
   - imagery
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

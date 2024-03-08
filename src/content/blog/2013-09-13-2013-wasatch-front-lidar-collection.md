@@ -17,7 +17,7 @@ tags:
 date: 2013-09-13 10:22:50 -0600
 title: 2013 Wasatch Front LiDAR Collection
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

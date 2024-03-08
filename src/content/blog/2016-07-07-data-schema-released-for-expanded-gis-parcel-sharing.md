@@ -9,7 +9,7 @@ tags:
 date: 2016-07-07T20:05:49.000Z
 title: Data Schema Released for Expanded GIS Parcel Sharing
 published: false
-category: Uncategorized
+category: Collaboration
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

@@ -1,14 +1,14 @@
 ---
-title: The Next UGRC WebAPI
+title: The Next UGRC API
 published: false
 author:
   display_name: Steve Gourley
   email: sgourley@utah.gov
 date: 2018-09-13T00:12:00.000Z
 tags:
-  - webapi
+  - api
   - cloud
-category: Developer
+category: API
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

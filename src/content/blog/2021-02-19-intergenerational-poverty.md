@@ -8,7 +8,7 @@ tags:
   - gis
   - maps
   - spatial analysis
-category: Uncategorized
+category: UGRC
 cover_image: /src/images/pillar-blog/2021-02-19-intergenerational-poverty/suitability_analysis_wasatchfront.png
 cover_image_alt: Suitability Analysis Wasatch Front
 ---

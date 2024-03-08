@@ -6,7 +6,7 @@ tags: []
 date: 2013-08-09 15:40:40 -0600
 title: Newest updates to Municipal Boundaries
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

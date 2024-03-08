@@ -8,7 +8,7 @@ tags:
 date: 2015-06-01 13:14:14 -0600
 title: Can you complete the "Where in Utah" quiz?
 published: false
-category: Uncategorized
+category: Collaboration
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

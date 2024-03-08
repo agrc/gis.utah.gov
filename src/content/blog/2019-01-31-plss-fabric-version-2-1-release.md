@@ -8,7 +8,7 @@ date: 2019-01-31T15:26:44.000Z
 tags:
   - PLSS
   - parcel management
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

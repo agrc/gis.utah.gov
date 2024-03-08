@@ -6,7 +6,7 @@ author:
 date: 2023-09-05T09:01:39.000Z
 tags:
   - change-management
-category: SGID Blog
+category: SGID
 cover_image: /src/images/pillar-blog/2023-09-05-making-the-best-of-change-with-porter/sgid_lifecycle.jpg
 cover_image_alt: SGID Data lifecycle
 ---

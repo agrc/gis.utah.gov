@@ -8,7 +8,7 @@ date: 2022-02-12T11:59:20.000Z
 tags:
   - municipal boundaries
   - annexations
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

@@ -9,7 +9,7 @@ tags:
   - gis
   - elections
   - maps
-category: Uncategorized
+category: SGID
 cover_image: /src/images/pillar-blog/2020-12-29-mapping-election-results/pres_elec_2020_results.png
 cover_image_alt: 2020 Election Results
 ---

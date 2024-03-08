@@ -8,7 +8,7 @@ date: 2019-11-04T12:15:55.000Z
 tags:
   - lidar
   - 3dep
-category: Uncategorized
+category: Discover
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

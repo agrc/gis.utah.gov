@@ -8,7 +8,7 @@ date: 2021-04-01T22:54:23.000Z
 tags:
   - annexations
   - boundary
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

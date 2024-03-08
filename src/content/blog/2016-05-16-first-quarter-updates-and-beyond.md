@@ -10,7 +10,7 @@ tags:
 date: 2016-05-16T21:55:12.000Z
 title: First Quarter Updates and beyond.
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

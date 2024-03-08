@@ -9,7 +9,7 @@ tags:
 date: 2015-10-28 15:48:23 -0600
 title: NENA National Guidance for GIS Address Points
 published: false
-category: Uncategorized
+category: Collaboration
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

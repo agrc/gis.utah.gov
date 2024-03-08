@@ -6,7 +6,7 @@ author:
 date: 2018-01-09T11:12:13.000Z
 tags:
   - pro
-category: Guestblog
+category: Guest Blog
 cover_image: /src/images/pillar-blog/2018-01-09-transitioning-to-a-new-world-arc-pro/jp_arcproscreenshot.png
 cover_image_alt: ArcPro Screenshot
 ---

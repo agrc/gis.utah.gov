@@ -8,7 +8,7 @@ tags:
   - gis
   - data
   - coordination
-category: Uncategorized
+category: UGRC
 cover_image: /src/images/pillar-blog/2020-07-14-thinking-beyond-the-map/geospatial.png
 cover_image_alt: Location drives the system
 ---

@@ -17,7 +17,7 @@ tags:
 date: 2013-11-26 14:21:05 -0700
 title: 'Utah Mapping Resources: Well-Prepared for NextGen 9-1-1'
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: /src/images/pillar-blog/2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911/psapbndy2.png
 cover_image_alt: PSAP Boundary
 ---
@@ -48,14 +48,16 @@ UGRC has worked with county and local government, 9-1-1 centers, and the <a href
   <li>Utah's first release of a statewide <strong><em><a href="/images/404.png"><img src="/images/404.png" alt="" title="Addresspntmapservice" width="90" height="90" class="inline-text-right" /></a>GIS layer was in June 2013 and most counties are close to if not complete. An update is expected in early January 2014. While address points are strongly recommended (not required) for the NG9-1-1 environment, a more frequent update cycle is suggested for this dataset too.</li>
   <li><strong><em><a href="/images/404.png"><img src="/images/404.png" alt="" title="Grids" width="90" height="90" class="inline-text-right" /></a> (often referred to as 'address grids' in Utah) and their relationship to <em><strong>informal placenames</strong></em> are also important since addresses will need to be found across large regions or statewide using community name or informal placenames to focus the search.</li>
   <li>The GIS representation of <strong><em><a href="/images/404.png">
-  
-  ![PSAP Boundary](../../images/pillar-blog/2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911/psapbndy2.png)
-  
-  in order to track the enhanced 9-1-1 (e9-1-1) build out initiative and related grant funding. Existing emergency service number zones (ESNs) have, for the most part, not yet been mapped in Utah but can be derived into a GIS format from information in the MSAG tables as needed.</li>
+
+![PSAP Boundary](../../images/pillar-blog/2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911/psapbndy2.png)
+
+in order to track the enhanced 9-1-1 (e9-1-1) build out initiative and related grant funding. Existing emergency service number zones (ESNs) have, for the most part, not yet been mapped in Utah but can be derived into a GIS format from information in the MSAG tables as needed.</li>
+
   <li>A <strong><em><a href="/images/404.png">
-  
-  ![Utah SGID Highway Milepost](../../images/pillar-blog/2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911/utah-sgid-highway-milepost.png)
-  
-  GIS dataset has been maintained in partnership with UDOT since 2009 and includes the ability to look up any milepost-based location reference ("I'm at milepost 210 on I-15") and to display exit number as well as mileposts (for every 1/10th of a mile) on 9-1-1 call-taker and dispatcher screens. This resource is likely not a direct asset to 9-1-1 call routing but may be helpful to call takers as they work to verify incident locations, especially for roadside mobile callers.</li>
+
+![Utah SGID Highway Milepost](../../images/pillar-blog/2013-11-26-utah-mapping-resources-well-prepared-for-nextgen-911/utah-sgid-highway-milepost.png)
+
+GIS dataset has been maintained in partnership with UDOT since 2009 and includes the ability to look up any milepost-based location reference ("I'm at milepost 210 on I-15") and to display exit number as well as mileposts (for every 1/10th of a mile) on 9-1-1 call-taker and dispatcher screens. This resource is likely not a direct asset to 9-1-1 call routing but may be helpful to call takers as they work to verify incident locations, especially for roadside mobile callers.</li>
+
 <p>Resources:</p>
 <p><a href="https://www.nena.org/general/custom.asp?page=NG911_TransitionPlng">NENA Transitioning to NG911 paper</a></p>

@@ -8,7 +8,7 @@ tags:
   - utah communications authority
 date: 2016-06-30T15:04:18.000Z
 title: Mapping Utah’s Wireless Emergency Call Routing System
-category: Uncategorized
+category: UGRC
 cover_image: /src/images/pillar-blog/2016-06-30-mapping-utah-s-wireless-emergency-call-routing-system/sectorswithpsaps.png
 cover_image_alt: 'Map Two: Cell Sector Overlap'
 ---

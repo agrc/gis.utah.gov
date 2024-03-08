@@ -1,13 +1,10 @@
 ---
-import CardForBlog from '@components/page/CardForBlog.astro';
-import Layout from '@layouts/BlogPostIndex.astro';
 import { getBlogFilters, type DecoratedBlogEntry } from '@utils/collections';
 import type { GetStaticPathsResult } from 'astro';
 
-interface Props {
-  author: string;
-  posts: DecoratedBlogEntry[];
-}
+import Layout from '@layouts/BlogPostIndex.astro';
+
+import CardForBlog from '@components/page/CardForBlog.astro';
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
   const tags = await getBlogFilters('authors');
@@ -21,6 +18,11 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
       posts: author.posts,
     },
   }));
+}
+
+interface Props {
+  author: string;
+  posts: DecoratedBlogEntry[];
 }
 
 const { author, posts } = Astro.props;

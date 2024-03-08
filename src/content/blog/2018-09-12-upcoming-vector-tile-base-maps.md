@@ -7,7 +7,7 @@ author:
 date: 2018-09-12T22:29:57.000Z
 tags:
   - base maps
-category: Uncategorized
+category: Discover
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

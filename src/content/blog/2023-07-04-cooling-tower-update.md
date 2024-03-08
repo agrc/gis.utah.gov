@@ -9,7 +9,7 @@ tags:
   - dhhs
   - cooling towers
   - legionella
-category: Uncategorized
+category: UGRC
 cover_image: /src/images/pillar-blog/2023-07-04-cooling-tower-update/dhhs_process.png
 cover_image_alt: Cooling Tower Project Overview
 ---

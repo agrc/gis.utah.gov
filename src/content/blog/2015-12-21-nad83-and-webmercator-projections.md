@@ -11,7 +11,7 @@ tags:
   - web applications
 date: 2015-12-21 12:11:45 -0700
 title: The Earth is Not Round! Utah, NAD83 and Web Mercator Projections
-category: Uncategorized
+category: SGID
 cover_image: /src/images/pillar-blog/2015-12-21-nad83-and-webmercator-projections/projections.png
 cover_image_alt: projections
 ---

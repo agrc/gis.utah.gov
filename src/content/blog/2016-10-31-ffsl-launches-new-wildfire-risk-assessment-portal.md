@@ -11,7 +11,7 @@ tags:
 date: 2016-10-31T21:32:36.000Z
 title: FFSL Launches New Wildfire Risk Assessment Portal
 published: false
-category: Uncategorized
+category: Guest Blog
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

@@ -8,7 +8,7 @@ tags:
   - imagery
   - datums
   - aerial photography
-category: Uncategorized
+category: Discover
 cover_image: /src/images/pillar-blog/2020-02-11-agrc-purchase-of-hexagon-imagery/hexagonimagery.jpg
 cover_image_alt: Hexagon Aerial Imagery
 ---

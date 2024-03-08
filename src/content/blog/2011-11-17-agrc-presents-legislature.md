@@ -10,7 +10,7 @@ tags:
 published: false
 date: 2011-11-17 08:34:02 -0700
 title: UGRC presents to Legislature
-category: Uncategorized
+category: UGRC
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

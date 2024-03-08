@@ -9,7 +9,7 @@ tags:
   - bike
   - wfrc
   - multimodal
-category: Guestblog
+category: Guest Blog
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

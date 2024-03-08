@@ -8,7 +8,7 @@ date: 2021-01-08T10:01:46.000Z
 tags:
   - bike
   - roads
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

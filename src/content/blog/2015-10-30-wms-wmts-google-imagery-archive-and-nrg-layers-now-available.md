@@ -10,7 +10,7 @@ tags:
 published: false
 date: 2015-10-30 10:53:49 -0600
 title: WMS, WMTS Google Imagery Archive and NRG Layers Now Available
-category: Uncategorized
+category: Discover
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

@@ -8,7 +8,7 @@ date: 2021-04-09T08:30:12.000Z
 tags:
   - ng911
   - psap
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

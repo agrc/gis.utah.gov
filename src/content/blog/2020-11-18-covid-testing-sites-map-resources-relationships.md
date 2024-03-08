@@ -8,7 +8,7 @@ date: 2020-11-18T15:10:00.000Z
 tags:
   - coordination
   - agol
-category: Uncategorized
+category: Collaboration
 cover_image: /src/images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-first-months.png
 cover_image_alt: The usage graph seemed to wane after two months
 ---

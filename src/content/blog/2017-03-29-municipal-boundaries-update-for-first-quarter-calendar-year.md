@@ -9,7 +9,7 @@ tags:
 date: 2017-03-29T16:57:20.000Z
 title: Municipal Boundaries update for first quarter (Calendar year)
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

@@ -6,7 +6,7 @@ tags: []
 published: false
 date: 2013-01-24 17:32:09 -0700
 title: Maps on the Hill January 28, 2013
-category: Uncategorized
+category: Collaboration
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

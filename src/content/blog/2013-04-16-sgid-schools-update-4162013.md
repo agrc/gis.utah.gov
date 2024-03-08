@@ -9,7 +9,7 @@ tags:
 date: 2013-04-16 17:19:14 -0600
 title: SGID Schools Update 4/16/2013
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

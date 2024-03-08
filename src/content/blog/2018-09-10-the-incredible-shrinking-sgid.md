@@ -7,7 +7,7 @@ date: 2018-09-10T21:37:46.000Z
 tags:
   - SGID
   - data
-category: Uncategorized
+category: SGID
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

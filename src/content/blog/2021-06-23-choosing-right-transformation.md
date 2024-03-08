@@ -8,7 +8,7 @@ tags:
   - sgid
   - spatial analysis
   - data
-category: SGID Blog
+category: UGRC
 cover_image: /src/images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_measurement.jpg
 cover_image_alt: Close but no cigar
 ---

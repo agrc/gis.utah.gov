@@ -5,7 +5,7 @@ author:
   email: ugrc@utah.gov
 date: 2018-09-17T20:16:10.000Z
 tags: []
-category: Uncategorized
+category: UGRC
 cover_image: /src/images/pillar-blog/2018-09-17-meet-new-agrc-staff/kota.png
 cover_image_alt: Nathan in his new office habitat
 ---

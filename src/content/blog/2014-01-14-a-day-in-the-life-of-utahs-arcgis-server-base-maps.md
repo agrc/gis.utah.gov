@@ -7,7 +7,7 @@ tags:
 date: 2014-01-14 14:58:59 -0700
 title: A day in the life of Utah's ArcGIS Server Base Maps
 published: false
-category: Uncategorized
+category: SGID
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

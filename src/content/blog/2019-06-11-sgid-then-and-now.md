@@ -9,7 +9,7 @@ tags:
   - data
   - education
   - gis history
-category: Uncategorized
+category: SGID
 cover_image: /src/images/pillar-blog/2019-06-11-sgid-then-and-now/sgid_1994_binders_cover_sm.png
 cover_image_alt: 1994 SGID User Guide Binder
 ---

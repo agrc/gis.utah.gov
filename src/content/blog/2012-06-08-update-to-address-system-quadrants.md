@@ -6,7 +6,7 @@ tags: []
 date: 2012-06-08 12:02:31 -0600
 title: Update to Address System Quadrants
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

@@ -6,7 +6,7 @@ author:
 date: 2023-04-06T08:30:00.000Z
 tags:
   - roads
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

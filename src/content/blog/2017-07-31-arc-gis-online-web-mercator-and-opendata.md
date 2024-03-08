@@ -1,5 +1,5 @@
 ---
-title: ArcGIS Online Web Mercator and Opendata
+title: ArcGIS Online Web Mercator and OpenData
 published: false
 author:
   display_name: Michael M. Foulger
@@ -7,7 +7,7 @@ author:
 date: 2017-07-31T19:10:45.000Z
 tags:
   - arcgis online
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

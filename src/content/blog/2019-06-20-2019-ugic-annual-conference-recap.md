@@ -8,7 +8,7 @@ date: 2019-06-20T22:35:13.000Z
 tags:
   - conference
   - UGIC
-category: Uncategorized
+category: Collaboration
 cover_image: /src/images/pillar-blog/2019-06-20-2019-ugic-annual-conference-recap/ugicconferencelogo.jpg
 cover_image_alt: ugic 2019 conference logo
 ---

@@ -9,7 +9,7 @@ tags:
   - base maps
   - cartography
   - data
-category: Uncategorized
+category: SGID
 cover_image: /src/images/pillar-blog/2023-03-02-basemap-updates/new_terrain.png
 cover_image_alt: New Terrain base map
 ---

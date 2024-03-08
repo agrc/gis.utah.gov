@@ -6,7 +6,7 @@ tags: []
 date: 2016-09-07T15:35:52.000Z
 title: Third Quarter 2016 Municipal Boundaries Updates
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

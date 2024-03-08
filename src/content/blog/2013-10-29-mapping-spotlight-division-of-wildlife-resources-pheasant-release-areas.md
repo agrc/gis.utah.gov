@@ -11,7 +11,7 @@ tags:
 date: 2013-10-29 16:10:49 -0600
 title: 'Mapping Spotlight: DWR Pheasant Release Areas'
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

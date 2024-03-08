@@ -6,7 +6,7 @@ tags: []
 date: 2016-04-13T16:15:06.000Z
 title: School Bus Routing based on SGID Roads
 published: false
-category: Uncategorized
+category: Guest Blog
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

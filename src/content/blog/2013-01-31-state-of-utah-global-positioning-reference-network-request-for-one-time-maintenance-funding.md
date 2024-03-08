@@ -4,10 +4,9 @@ author:
   email: ugrc@utah.gov
 tags: []
 date: 2013-01-31 14:00:52 -0700
-title: State of Utah Global Positioning Reference Network, One-Time Maintenance
-  Funding
+title: State of Utah Global Positioning Reference Network, One-Time Maintenance Funding
 published: false
-category: Uncategorized
+category: TURN
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

@@ -9,7 +9,7 @@ tags:
   - coronavirus
   - coordination
   - health
-category: Uncategorized
+category: Guest Blog
 cover_image: /src/images/pillar-blog/2020-06-15-the-role-of-gis-during-a-pandemic-why-the-where-is-so-important-for-the-coronavirus/johnshopkinscoronavirusmapfaqs.jpg
 cover_image_alt: Johns Hopkins Coronavirus Map FAQ page
 ---

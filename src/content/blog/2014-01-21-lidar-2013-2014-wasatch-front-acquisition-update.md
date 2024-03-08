@@ -11,7 +11,7 @@ tags:
 date: 2014-01-21 13:29:59 -0700
 title: LiDAR 2013-2014 Wasatch Front Acquisition Update
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

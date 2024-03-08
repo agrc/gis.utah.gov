@@ -9,7 +9,7 @@ tags:
 date: 2017-03-13T00:00:00.000Z
 title: Yearly update for Tax Entities and Areas 2016
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

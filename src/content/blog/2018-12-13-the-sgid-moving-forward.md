@@ -5,7 +5,7 @@ author:
   email: mpeters@utah.gov
 date: 2018-12-13T23:33:14.000Z
 tags: []
-category: SGID Blog
+category: SGID Updates
 cover_image: /src/images/pillar-blog/2018-12-13-the-sgid-moving-forward/sgid_lifecycle.jpg
 cover_image_alt: SGID Data Lifecycle photo
 ---

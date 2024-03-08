@@ -9,7 +9,7 @@ tags:
 date: 2013-11-13 16:35:19 -0700
 title: 'Mapping Spotlight: SITLA Competitive Lease Offering'
 published: false
-category: Uncategorized
+category: Collaboration
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

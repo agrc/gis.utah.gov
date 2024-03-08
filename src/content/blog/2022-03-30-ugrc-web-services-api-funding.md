@@ -9,7 +9,7 @@ tags:
   - sgid
   - web api
   - ugrc funding
-category: Uncategorized
+category: UGRC
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

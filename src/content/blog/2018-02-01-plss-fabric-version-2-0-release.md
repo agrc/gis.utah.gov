@@ -9,7 +9,7 @@ tags:
   - cadastre
   - parcel fabric
   - plss
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

@@ -11,7 +11,7 @@ tags:
   - open source
   - notebook
   - tutorial
-category: SGID Blog
+category: Developer
 cover_image: /src/images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_counties_plot.png
 cover_image_alt: Utah County Boundaries
 ---

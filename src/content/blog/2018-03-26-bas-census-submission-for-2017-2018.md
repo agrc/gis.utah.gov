@@ -1,5 +1,5 @@
 ---
-title: BAS Census Submission for 2017&ndash;2018
+title: BAS Census Submission for 2017-2018
 published: false
 author:
   display_name: mheagin
@@ -11,7 +11,7 @@ tags:
   - boundaries
   - municipalities
   - annexations
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

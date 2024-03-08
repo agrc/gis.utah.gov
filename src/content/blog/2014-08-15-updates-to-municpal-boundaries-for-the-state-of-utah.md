@@ -6,7 +6,7 @@ tags: []
 date: 2014-08-15 11:57:49 -0600
 title: Updates to Municipal Boundaries for the State of Utah
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

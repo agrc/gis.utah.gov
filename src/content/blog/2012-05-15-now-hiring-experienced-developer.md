@@ -8,7 +8,7 @@ tags:
 published: false
 date: 2012-05-15 22:43:47 -0600
 title: Now Hiring! Experienced Developer
-category: Uncategorized
+category: UGRC
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

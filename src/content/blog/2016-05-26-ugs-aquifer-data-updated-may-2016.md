@@ -9,7 +9,7 @@ tags:
 date: 2016-05-26T16:53:19.000Z
 title: UGS Aquifer Data Updated May 2016
 published: false
-category: Guestblog
+category: Guest Blog
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

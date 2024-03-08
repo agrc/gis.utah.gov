@@ -8,7 +8,7 @@ date: 2020-01-30T10:07:46.000Z
 tags:
   - education
   - maps
-category: Uncategorized
+category: UGRC
 cover_image: /src/images/pillar-blog/2020-01-29-cognitive-maps/network_head.png
 cover_image_alt: Network Head
 ---

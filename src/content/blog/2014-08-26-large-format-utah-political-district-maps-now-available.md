@@ -12,7 +12,7 @@ tags:
 date: 2014-08-26 18:00:53 -0600
 title: Large Format Utah Political District Maps Now Available
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

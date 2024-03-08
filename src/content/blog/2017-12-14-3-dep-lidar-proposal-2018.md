@@ -8,7 +8,7 @@ date: 2017-12-14T22:15:55.000Z
 tags:
   - 3dep
   - lidar
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

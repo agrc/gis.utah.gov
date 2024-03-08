@@ -6,7 +6,7 @@ tags: []
 date: 2016-09-07T19:54:05.000Z
 title: Watershed Restoration Initiative Wins 2016 Digital Government Award
 published: false
-category: Uncategorized
+category: Collaboration
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

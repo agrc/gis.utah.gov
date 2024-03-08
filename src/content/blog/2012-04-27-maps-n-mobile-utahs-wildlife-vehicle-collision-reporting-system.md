@@ -10,7 +10,7 @@ tags:
 published: false
 date: 2012-04-27 11:41:48 -0600
 title: "Maps n' Mobile: Wildlife-Vehicle Collision Reporting"
-category: Uncategorized
+category: Collaboration
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

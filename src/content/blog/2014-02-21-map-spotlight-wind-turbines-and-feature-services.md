@@ -6,7 +6,7 @@ tags: []
 date: 2014-02-21 11:16:16 -0700
 title: 'Map Spotlight: Wind Turbines and Feature Services'
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

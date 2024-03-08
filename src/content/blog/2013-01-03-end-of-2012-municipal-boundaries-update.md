@@ -6,7 +6,7 @@ tags: []
 date: 2013-01-03 10:41:31 -0700
 title: End of 2012 Municipal Boundaries Update
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

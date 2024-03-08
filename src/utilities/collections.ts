@@ -95,15 +95,17 @@ export type BlogFilter = {
 export async function getBlogFilters(filterType: 'categories' | 'tags' | 'authors'): Promise<BlogFilter[]> {
   const posts = await getBlogPosts();
 
-  const filtersWithPosts = posts.reduce((acc: Record<string, BlogFilter>, post: DecoratedBlogEntry) => {
+  const filtersWithPosts = posts.reduce((filteredPosts: Record<string, BlogFilter>, post: DecoratedBlogEntry) => {
     function addValue(filterValue: string) {
       const slug = slugify(filterValue);
-      if (!acc[slug]) {
-        acc[slug] = { slug, name: filterValue, posts: [] };
+
+      if (!filteredPosts[slug]) {
+        filteredPosts[slug] = { slug, name: filterValue, posts: [] };
       }
 
-      acc[slug].posts.push(post);
+      filteredPosts[slug].posts.push(post);
     }
+
     if (filterType === 'authors' && post.data.author.display_name) {
       addValue(post.data.author.display_name);
     } else if (filterType === 'categories') {
@@ -112,7 +114,7 @@ export async function getBlogFilters(filterType: 'categories' | 'tags' | 'author
       post.data.tags.forEach(addValue);
     }
 
-    return acc;
+    return filteredPosts;
   }, {});
 
   return Object.keys(filtersWithPosts)

@@ -15,6 +15,29 @@ export enum Pillar {
   CONTACT = 'Contact',
 }
 
+export enum BlogCategory {
+  // everything API related
+  API = "API",
+  // everything data related
+  SGID = "SGID",
+  // SGID roads ciy updates
+  SGID_UPDATE = "SGID Update",
+  // everything network GPS related
+  TURN = "TURN",
+  // everything related to base maps and services ? (there’s some overlap with SGID here)
+  DISCOVER = "Discover",
+  // project updates through collaboration, events
+  COLLABORATION = "Collaboration",
+  // survey related things not GPS network related
+  SURVEYOR = "Surveyor",
+  // anything not related to the API
+  DEVELOPER = "Developer",
+  // for others
+  GUESTBLOG = "Guest Blog",
+  // everything else
+  UGRC = "UGRC",
+}
+
 export enum SgidCategory {
   ADDRESS = 'Address',
   AERIAL_PHOTOGRAPHY = 'Aerial-Photography',

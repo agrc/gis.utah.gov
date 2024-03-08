@@ -10,7 +10,7 @@ tags:
 date: 2016-01-05 16:36:29 -0700
 title: End of year updates for the Municipal Boundaries are available
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

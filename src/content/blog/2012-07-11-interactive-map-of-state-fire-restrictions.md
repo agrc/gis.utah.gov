@@ -7,7 +7,7 @@ tags:
 date: 2012-07-11 12:39:41 -0600
 published: false
 title: Interactive Map of State Fire Restrictions
-category: Uncategorized
+category: Collaboration
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

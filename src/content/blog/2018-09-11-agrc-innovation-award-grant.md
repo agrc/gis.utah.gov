@@ -6,7 +6,7 @@ author:
   email: atribolet@utah.gov
 date: 2018-09-11T23:14:09.000Z
 tags: []
-category: Uncategorized
+category: UGRC
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

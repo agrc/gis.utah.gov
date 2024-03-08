@@ -11,7 +11,7 @@ tags:
 date: 2016-12-30T22:58:57.000Z
 title: End of year 2016 (fourth quarter) Updates for Municipal Boundaries
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

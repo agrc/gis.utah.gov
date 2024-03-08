@@ -9,7 +9,7 @@ tags:
 date: 2013-06-28 17:00:05 -0600
 title: Utah GIS Framework Data for 800 Please, Alex...
 published: false
-category: SGID Blog
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

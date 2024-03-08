@@ -6,7 +6,7 @@ author:
 date: 2018-02-05T19:19:18.000Z
 tags:
   - process
-category: Uncategorized
+category: SGID
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---

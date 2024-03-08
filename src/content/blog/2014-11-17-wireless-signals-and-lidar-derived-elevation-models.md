@@ -10,7 +10,7 @@ tags:
   - viewshed
 date: 2014-11-17 12:15:04 -0700
 title: Wireless Signals and LiDAR Derived Elevation Models
-category: SGID Blog
+category: SGID Updates
 cover_image: /src/images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dtm_only.png
 cover_image_alt: DTM Bare-Earth Digital Terrain Model
 ---

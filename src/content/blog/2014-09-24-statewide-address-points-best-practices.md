@@ -8,7 +8,7 @@ tags:
 date: 2014-09-24 15:04:25 -0600
 title: 'Statewide Address Points: Best Practices'
 published: false
-category: Uncategorized
+category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
