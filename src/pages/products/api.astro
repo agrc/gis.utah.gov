@@ -1,4 +1,9 @@
 ---
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
+
+import Layout from '@layouts/Pillar.astro';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSideImage from '@components/page/CardWithSideImage.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -8,7 +13,6 @@ import GridForPillars from '@components/page/GridForPillars.astro';
 import GridForPopularResources from '@components/page/GridForPopularResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/Pillar.astro';
 import ApiDescription from '@partials/ApiDescription.astro';
 
 import { Image } from 'astro:assets';
@@ -19,9 +23,23 @@ import documentationPhoto from '@images/api/documentation.svg';
 import privacyPhoto from '@images/api/privacy.svg';
 import selfServicePhoto from '@images/api/self-service.svg';
 import signUpPhoto from '@images/api/sign-up.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'UGRC API',
+  pillar: Pillar.PRODUCTS,
+  section: stripeSections([
+    {},
+    { title: 'Popular resources', titlePosition: 'center' },
+    { title: 'More resources', titlePosition: 'center' },
+    { title: 'You might also like', titlePosition: 'center' },
+  ]),
+};
 ---
 
-<Layout title="UGRC API">
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" class="bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300" />
   <Fragment slot="popular-level-ones">
     <Section>
       <Fragment slot="title">The UGRC API</Fragment>
@@ -71,7 +89,7 @@ import signUpPhoto from '@images/api/sign-up.svg';
     </Section>
   </Fragment>
 
-  <Section title="Popular Resources" slot="popular-resources" titlePosition="center">
+  <Section slot="popular-resources" {...page.section[1]}>
     <GridForPopularResources>
       <CardWithPopularLink
         title="Sample Code"
@@ -92,7 +110,7 @@ import signUpPhoto from '@images/api/sign-up.svg';
     </GridForPopularResources>
   </Section>
 
-  <Section title="More Resources" slot="more-resources" stripe titlePosition="center">
+  <Section slot="more-resources" {...page.section[2]}>
     <GridForMoreResources>
       <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
         <Image slot="image" src={privacyPhoto} alt="a computer with a lock on the screen" class="self-center" />
@@ -110,7 +128,7 @@ import signUpPhoto from '@images/api/sign-up.svg';
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section slot="you-might-also-like" {...page.section[3]}>
     <GridForYouMightLike>
       <CardWithSmallLink title="layer-selector" href="https://www.npmjs.com/package/@ugrc/layer-selector">
         A react component for adding a quick base map selector with a happy path for using UGRC's Discover base maps.

@@ -1,4 +1,9 @@
 ---
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
+
+import Layout from '@layouts/Pillar.astro';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSideImage from '@components/page/CardWithSideImage.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -8,7 +13,6 @@ import GridForPillars from '@components/page/GridForPillars.astro';
 import GridForPopularResources from '@components/page/GridForPopularResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/Pillar.astro';
 
 import { Image } from 'astro:assets';
 
@@ -18,9 +22,23 @@ import getConnectedPhoto from '@images/discover/get-connected.svg';
 import licensedAccessPhoto from '@images/discover/licensed-access.svg';
 import schedulePhoto from '@images/discover/schedule.svg';
 import signUpPhoto from '@images/discover/sign-up.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Discover base maps',
+  pillar: Pillar.PRODUCTS,
+  section: stripeSections([
+    {},
+    { title: 'Popular resources', titlePosition: 'center' },
+    { title: 'More resources', titlePosition: 'center' },
+    { title: 'You might also like', titlePosition: 'center' },
+  ]),
+};
 ---
 
-<Layout title="Discover base maps">
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" class="bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300" />
   <Fragment slot="popular-level-ones">
     <Section>
       <Fragment slot="title">Discover imagery and base maps</Fragment>
@@ -75,7 +93,7 @@ import signUpPhoto from '@images/discover/sign-up.svg';
     </Section>
   </Fragment>
 
-  <Section title="Popular Resources" slot="popular-resources" titlePosition="center">
+  <Section slot="popular-resources" {...page.section[1]}>
     <GridForPopularResources>
       <CardWithPopularLink title="Raster discovery app" href="https://raster.utah.gov">
         Download NAIP and HRO imagery.
@@ -92,7 +110,7 @@ import signUpPhoto from '@images/discover/sign-up.svg';
     </GridForPopularResources>
   </Section>
 
-  <Section title="More Resources" slot="more-resources" stripe titlePosition="center">
+  <Section slot="more-resources" {...page.section[2]}>
     <GridForMoreResources>
       <CardWithSideImage title="Citing your sources" actionUrl="/documentation/discover/licensed-imagery">
         <Image slot="image" src={citePhoto} alt="an arm holding a pencil on a piece of paper" class="self-center" />
@@ -105,7 +123,7 @@ import signUpPhoto from '@images/discover/sign-up.svg';
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section slot="you-might-also-like" {...page.section[3]}>
     <GridForYouMightLike>
       <CardWithSmallLink title="SGID" href="/products/sgid">
         View the data from the base maps in the SGID.

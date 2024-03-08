@@ -9,6 +9,7 @@ const { title = 'UGRC' } = Astro.props;
 ---
 
 <Layout title={title}>
+  <slot name="crumbs" />
   <slot name="popular-level-ones" />
   <slot name="popular-resources" />
   <slot name="more-resources" />
