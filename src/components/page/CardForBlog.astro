@@ -22,19 +22,17 @@ if (!images[coverImage])
   throw new Error(`"${coverImage}" not found in "/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}"`);
 ---
 
-<div
-  class="max-w-sm overflow-hidden rounded-lg border border-zinc-400 bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70"
->
-  <div class="bg-primary px-4 py-1 text-center text-sm font-black uppercase text-zinc-50">
+<div class="max-w-sm overflow-hidden rounded-lg border border-black/20 bg-white shadow dark:bg-zinc-900/70">
+  <div class="bg-primary px-4 py-1 text-center text-sm font-black uppercase text-zinc-50 dark:bg-secondary">
     <span class="pl-2">{category}</span>
   </div>
-  <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-primary/20">
+  <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-black/20">
     <Image
       src={images[coverImage]()}
       alt="Cover image"
       width={382}
       height={192}
-      class="h-48 w-full rounded-t-lg bg-primary/10 object-contain"
+      class="h-48 w-full bg-primary/10 object-contain"
     />
     <div class="flex min-w-0 flex-1 p-4 pb-2 pt-2">
       <div class="flex min-w-0 flex-1 flex-col justify-around">
