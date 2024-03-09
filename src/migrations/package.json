@@ -12,7 +12,9 @@
     "google-auth-library": "^9.6.3",
     "google-spreadsheet": "^4.1.1",
     "gray-matter": "^4.0.3",
+    "knex": "^3.1.0",
     "prompts": "^2.4.2",
+    "tedious": "^17.0.0",
     "unist-util-find": "^3.0.0",
     "yaml": "^2.4.1"
   }
