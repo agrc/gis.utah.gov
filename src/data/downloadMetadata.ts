@@ -2696,11 +2696,14 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah UDOT Mile Reference Posts': {
-    itemId: 'Hosted by UGRC via UDOT',
+    externalHubOrganization: 'uplan',
     name: 'Utah UDOT Mile Reference Posts',
-    featureServiceId: null,
     openSgid: '',
-    layerId: 0,
+    layerId: 3,
+    oddHubName: 'physical-location-of-reference-post-rp-open-data',
+    itemId: '01aa9e5e832c459db43dc6e27f30c3ae',
+    featureServiceHost: 'https://roads.udot.utah.gov/server/rest/services/Public/',
+    mapServiceId: 'Physical_Location_of_Reference_Post_RP_Open_Data',
   },
   'Utah Open Source Places': {
     itemId: '45e25f4062264dc1baa3765e3dbb5d8e',
