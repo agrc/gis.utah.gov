@@ -23,7 +23,7 @@ export async function getStewardshipRecords() {
         dataType: 7,
         description: 'A muted base map great for overlaying data.',
         inActionUrl: 'https://atlas.utah.gov',
-        productPageSlug: '',
+        productPageSlug: '/products/sgid/base-maps/address-points',
         ugrcStatus: null
       },
       {
@@ -35,7 +35,7 @@ export async function getStewardshipRecords() {
         dataType: 3,
         description: "NOTE: This dataset is an older dataset that we have removed from the SGID and 'shelved' in ArcGIS Online. There may (or may not) be a newer vintage of this dataset in the SGID.",
         inActionUrl: undefined,
-        productPageSlug: '',
+        productPageSlug: '/products/sgid/boundaries/fire-restriction-areas-2012',
         ugrcStatus: 'static',
         hub: { title: 'utah fire restriction areas 2012' }
       },
@@ -48,7 +48,7 @@ export async function getStewardshipRecords() {
         dataType: 3,
         description: 'Piute County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.',
         inActionUrl: 'https://parcels.utah.gov/',
-        productPageSlug: 'data/cadastre/parcels/index.html',
+        productPageSlug: '/products/sgid/cadastre/parcels',
         ugrcStatus: null,
         hub: {
           title: 'Utah Piute County Parcels',
@@ -176,9 +176,11 @@ function getHubName(url?: string, ugrcStatus?: "deprecated" | "static" | "shelve
   }
 }
 
-function toProductTypeEnum(type?: string): ProductType | string | undefined {
+function toProductTypeEnum(type?: string): ProductType | undefined {
   if (!type) {
-    return type;
+    console.warn('No product type');
+
+    return undefined;
   }
 
   const productType = ProductType[type.toUpperCase().replaceAll('-', '_') as keyof typeof ProductType];
@@ -197,7 +199,7 @@ function toProductTypeEnum(type?: string): ProductType | string | undefined {
       return ProductType.ELEVATION_RASTER;
     }
 
-    console.log(`Invalid product type ${type}`);
+    console.warn(`Invalid product type ${type}`);
   }
 
   return productType;
@@ -217,7 +219,7 @@ function etlRow(row): Row | null {
     tableName,
     category,
     source: [row.get('Data Source')],
-    dataType: toProductTypeEnum(row.get('Data Type')),
+    dataType: toProductTypeEnum(row.get('Data Type'))!,
     description: row.get('Description'),
     inActionUrl: row.get('Webapp'),
     productPageSlug: row.get('Website URL'),

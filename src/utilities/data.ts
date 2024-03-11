@@ -28,3 +28,19 @@ export const convertProductType = (type: ProductType) => {
 export const removeDateRange = (title: string) => {
   return title.replace(/\s\d{4}( to \d{4})?$/, '').trim();
 };
+
+export const getFeatureServiceUrl = ({
+  layerId = 0,
+  host = 'https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/',
+  serviceName,
+}) => `${host}${serviceName}/FeatureServer/${layerId}`;
+
+export const getArcGisHubUrl = (hub) => {
+  let id = hub.hubName?.toLowerCase() || hub.title.toLowerCase().replaceAll(' ', '-');
+
+  if (hub.organization) {
+    id = `${hub.organization.toUpperCase()}::${id}`;
+  }
+
+  return `https://opendata.gis.utah.gov/datasets/${id}`;
+}

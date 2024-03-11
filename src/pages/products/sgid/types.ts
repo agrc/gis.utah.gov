@@ -136,12 +136,12 @@ export type Row = {
   displayName: string;
   category: string | null;
   source: string[];
-  dataType: ProductType | string | undefined;
+  dataType: ProductType;
   description: string;
   inActionUrl?: string;
   productPageSlug: string;
   ugrcStatus: "deprecated" | "static" | "shelved" | null;
-  featureService?: {
+  server?: {
     host?: string;
     serviceName: string;
     layerId: number;
@@ -152,4 +152,5 @@ export type Row = {
     organization?: string;
     itemId: string;
   }
+  openSgid?: string;
 };
