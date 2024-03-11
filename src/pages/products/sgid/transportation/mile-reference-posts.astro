@@ -1,0 +1,144 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah UDOT Mile Reference Posts',
+  description: `Physical Reference Post Location along Utah Highways.`,
+  stewards: ['Utah Department of Transportation (UDOT)'],
+  type: ProductType.POINT,
+  category: SgidCategory.TRANSPORTATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://maps.udot.utah.gov/wadocuments/Apps/Stationing/',
+  updateHistory: [`Weekly`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The Mile Reference Posts dataset contains the physical location of milepost signs as they are located along the
+      roads. This collection technique is different from <ExternalLink
+        href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth"
+        >linear mile point measures</ExternalLink
+      > that are derived from a linear reference system (LRS). The advantage of this collection method is that the mile reference
+      posts stay in roughly the same place over time and do not change when other sections of the road, or LRS, are realigned.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      Mile reference post locations are derived from images captured by <ExternalLink href="https://www.mandli.com/"
+        >Mandli Communications</ExternalLink
+      >, using on-the-ground asset collection technology. These locations were then aligned to UDOT's linear referencing
+      system.
+    </p>
+    <p>
+      This data will be updated through on-the-ground collection every 2 years under the current contract. The data
+      served on this page was captured in 2021 and reflects what was on the ground at that time.
+    </p>
+    <p>
+      The Mile Reference Posts is an <ExternalLink
+        href="https://www.esri.com/en-us/arcgis/products/arcgis-roads-highways/overview"
+        >ESRI Roads and Highways Event</ExternalLink
+      > layer and supports the <ExternalLink href="https://maps.udot.utah.gov/wadocuments/Apps/Stationing/"
+        >RP Stationing App</ExternalLink
+      >.
+    </p>
+    <p>
+      Please reach out to <Contacts contactKey="udot" subject="gis.utah.gov mile reference post layer inquiry" inline />
+      with questions about this data layer.
+    </p>
+    <h3>Mile Reference Posts vs Linear Mile Point Measures</h3>
+    <h4>Mile Reference Posts</h4>
+    <p>
+      Mile Reference Posts are signs located in physical locations. They are helpful for navigation but may not reflect
+      the linear referencing measurement.
+    </p>
+    <h4>Linear Mile Point Measures</h4>
+    <p>
+      <ExternalLink href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth"
+        >Linear Mile Point Measures</ExternalLink
+      > are calculated based on geometric lengths of data and are spatially accurate. They may or may not align with actual
+      Mile Reference Posts and are updated every time a change is made in the spatial data to reflect updates in the physical
+      location and length of the roadway.
+    </p>
+    <p>
+      For more information on the difference between mile reference posts and linear measures, please refer to <ExternalLink
+        href="">UDOT's webpage</ExternalLink
+      > addressing this topic or their <ExternalLink
+        href="https://drive.google.com/file/d/14QFEDCvicSNsO13fBolRjpuYgs9RGZv_/view?usp=sharing"
+        >informational document</ExternalLink
+      >.
+    </p>
+    <h3>Fields worth noting</h3>
+    <dl>
+      <BulletedList>
+        <li>Legend - Milepost number on sign</li>
+        <li>Measure - Location of the milepost along the LRS</li>
+        <li>
+          Station Label - Highway name + direction of route along LRS (P = positive, milepost numbers increasing; N =
+          negative, milepost numbers decreasing) + milepost number. For example the value 0015PM_271 translates to mile
+          marker 217 on Interstate-15 on the north bound (P) side.
+        </li>
+      </BulletedList>
+    </dl>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="LRS Mile Point Measures"
+        href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth/"
+        >Contains tenth-mile points</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="UGRC Milepost and Reverse Milepost Lookup"
+        href="https://api.mapserv.utah.gov/#geocoding/">UGRC Geocoding Web API</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UDOT's UPlan" href="https://uplan.maps.arcgis.com/home/index.html" style="secondary"
+        >UDOT's home for GIS data and applications</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="UDOT's Speed Limits map"
+        href="https://uplan.maps.arcgis.com/home/webmap/viewer.html?webmap=815ead7b87bb4d09872707495205445c"
+        style="secondary"
+      >
+        This map depicts the Utah State Routes speed limits as polylines
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

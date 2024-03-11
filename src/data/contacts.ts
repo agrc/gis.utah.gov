@@ -430,6 +430,11 @@ export const contacts: Contacts = {
       agency: 'UDOT',
     },
   ],
+  udot: {
+    name: 'Kelli Bacon',
+    email: 'kbacon@utah.gov',
+    agency: 'UDOT',
+  },  
   bikeutah: {
     name: 'Chris Wiltsie',
     email: 'chris@bikeutah.org',

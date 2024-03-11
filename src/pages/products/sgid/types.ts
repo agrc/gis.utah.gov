@@ -113,7 +113,8 @@ export interface IHubDownload {
   itemId: string;
   name: string;
   featureServiceHost?: string;
-  featureServiceId: string;
+  featureServiceId?: string;
+  mapServiceId?: string;
   openSgid?: string;
   layerId?: number;
   externalHubOrganization?: string;

@@ -14,14 +14,21 @@ const {
   layerId = 0,
   featureServiceHost = 'https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/',
   featureServiceId,
+  mapServiceId,
 } = Astro.props as IHubDownload;
 
 let id = oddHubName?.toLowerCase() || name.toLowerCase().replaceAll(' ', '-');
-let featureService = featureServiceId || name.toLowerCase().replaceAll(' ', '');
 if (externalHubOrganization) {
-  id = `${externalHubOrganization.toUpperCase()}::${id}`;
+  id = `${externalHubOrganization}::${id}`;
 }
-const featureServiceUrl = `${featureServiceHost}${featureService}/FeatureServer/${layerId}`;
+
+const featureService = featureServiceId || name.toLowerCase().replaceAll(' ', '');
+let serviceUrl;
+if (featureServiceId) {
+  serviceUrl = `${featureServiceHost}${featureService}/FeatureServer/${layerId}`;
+} else {
+  serviceUrl = `${featureServiceHost}${mapServiceId}/MapServer/${layerId}`;
+}
 ---
 
 <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
@@ -30,20 +37,24 @@ const featureServiceUrl = `${featureServiceHost}${featureService}/FeatureServer/
     <span>
       <ExternalLink href={`https://opendata.gis.utah.gov/datasets/${id}`}>{name}</ExternalLink> in the SGID on ArcGIS
     </span>
-    <ExternalLink href={featureServiceUrl}>{name} feature service</ExternalLink>
+    <ExternalLink href={serviceUrl}>{name} feature service</ExternalLink>
     <slot name="more-links" />
   </div>
   <div class="flex flex-col gap-1">
     <h2 class="pb-1">Quick clips</h2>
-    <Clipboard title="Feature service URL" value={featureServiceUrl} />
-    <Clipboard title="Open SGID sample query" value={`select * from ${openSgid} limit 10;`} />
+    <Clipboard title="Feature service URL" value={serviceUrl} />
+    {openSgid && <Clipboard title="Open SGID sample query" value={`select * from ${openSgid} limit 10;`} />}
   </div>
   <div class="flex flex-col">
     <h2 class="pb-1">Getting started</h2>
     <div>Learn more about the <a href="/documentation/sgid#sgid-on-arcgis">SGID on ArcGIS</a>.</div>
-    <div>
-      Learn more about the <a href="/documentation/sgid#the-open-sgid-database">Open SGID</a> and how to connect.
-    </div>
+    {
+      openSgid && (
+        <div>
+          Learn more about the <a href="/documentation/sgid#the-open-sgid-database">Open SGID</a> and how to connect.
+        </div>
+      )
+    }
   </div>
   <Alert title="Tip">
     You can copy and paste the feature service URL above into ArcGIS Pro or a web map to visualize this data or access
