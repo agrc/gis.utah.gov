@@ -129,3 +129,27 @@ export type Contact = {
 export interface Contacts {
   [key: string]: Contact | Contact[];
 }
+
+export type Row = {
+  id: string;
+  tableName: string;
+  displayName: string;
+  category: string | null;
+  source: string[];
+  dataType: ProductType | string | undefined;
+  description: string;
+  inActionUrl?: string;
+  productPageSlug: string;
+  ugrcStatus: "deprecated" | "static" | "shelved" | null;
+  featureService?: {
+    host?: string;
+    serviceName: string;
+    layerId: number;
+  }
+  hub?: {
+    title: string;
+    hubName?: string;
+    organization?: string;
+    itemId: string;
+  }
+};
