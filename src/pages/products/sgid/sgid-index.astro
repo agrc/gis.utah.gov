@@ -1,0 +1,17 @@
+---
+import Layout from '@layouts/FullWidth.astro';
+
+import CardForSgidIndex from '@components/data/CardForSgidIndex.astro';
+import Section from '@components/page/Section.astro';
+
+import { getStewardshipRecords } from '@utils/sgid.ts';
+
+const records = await getStewardshipRecords();
+console.log(`Found ${records.length} stewardship records`);
+---
+
+<Layout title={`SGID index`}>
+  <Section>
+    {records.map((record) => <CardForSgidIndex {...record}>{record.description}</CardForSgidIndex>)}
+  </Section>
+</Layout>
