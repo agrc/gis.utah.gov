@@ -16,7 +16,7 @@ if (import.meta.env.PROD) {
 }
 
 export async function getStewardshipRecords() {
-  if (!import.meta.env.DEV) {
+  if (import.meta.env.DEV) {
     return [
       {
         id: '94f9ac4c-ba32-4aa0-a2d1-48092325de6b',
