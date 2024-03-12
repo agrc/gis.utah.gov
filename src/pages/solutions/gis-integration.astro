@@ -11,20 +11,16 @@ import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
-import developmentPhoto from '@images/solutions/development.svg';
-import rocketPhoto from '@images/solutions/rocket.svg';
+import arrowPhoto from '@images/solutions/arrow.svg';
+import lightbulbPhoto from '@images/solutions/lightbulb.svg';
+import routingPhoto from '@images/solutions/routing.svg';
 
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'High precision location',
   pillar: Pillar.SOLUTIONS,
-  section: stripeSections([
-    { title: 'Integrate' },
-    { title: 'Find the location link' },
-    { title: 'Monitoring' },
-    { title: 'Examples' },
-  ]),
+  section: stripeSections([{}, { title: 'Location is the link' }, { title: `What's possible` }, { title: 'Examples' }]),
 };
 ---
 
@@ -34,41 +30,86 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[0]}>
     <Image
       slot="image"
-      src={developmentPhoto}
+      src={routingPhoto}
       loading="eager"
-      alt="a person with a prototype on an easel and the app partially built on a phone"
+      alt="A person with directions on a phone screen and a map in the background."
       class="w-full max-w-[400px] rounded-2xl"
     />
-
     <p>
-      Government interactions with citizens are commonly based on location and a service boundary. GIS helps to make
-      that connection between the service data and a location.
+      Government interactions with citizens are often based on location. Whether your services or resources are
+      associated with a specific set of points, unique areas or boundaries, or tied to existing boundaries such as
+      census blocks, counties, or municipalities - location matters.
+    </p>
+    <p>
+      Integrating components of GIS - data, analyses, processes, maps - into your business workflows, applications, and
+      solutions creates the connection between mission and location. This connection can provide answers with greater
+      clarity by incorporating a previously-unforeseen geographic element and understanding. UGRC can help to leverage
+      your agency’s existing GIS to get the most out of your data, or create custom integrations from scratch to meet
+      your well-defined goals and objectives.
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
+    <Image
+      slot="image"
+      src={arrowPhoto}
+      alt="Two people holding an arrow pointed at the bullseye of a dartboard"
+      class="w-full max-w-[400px]"
+    />
     <p>
-      Does your data contain and street address, a ZIP code, or something that could be considered a location or
-      boundary? If so then enhancing that spatial relationship to be suitable for analysis in just a small step.
+      Don’t let your tabular data be bound to a sheet or database. By linking your data to a geospatial component or
+      assessing your data and workflows from a geospatial perspective, opportunities present themselves to examine
+      relationships between your agency or group’s interests and the myriad of geographic phenomena and data sets (or
+      layers) that are available.
+    </p>
+    <p>
+      Simply displaying data on a map is an excellent first step to GIS integration. Do you have a list of street
+      addresses associated with the services or resources your agency or organization provides? Start by geocoding them,
+      plotting them as points on a map, then compare, contrast and analyze with other data layers in the SGID to learn
+      more and generate questions.
     </p>
   </Section>
   <Section {...page.section[2]}>
-    <p>Maybe a few example will help you find your data's location link.</p>
+    <Image
+      slot="image"
+      src={lightbulbPhoto}
+      alt="A person holding a lightbulb in their hand."
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      Below are some subjects that we’ve encountered working with other state agencies, local governments, and other
+      groups over the years - some innocuous and some relatively serious - to get you thinking about what the
+      possibilities are for your data. Get in touch to brainstorm, ask questions, and develop ideas for GIS
+      integrations.
+    </p>
+    <BulletedList>
+      <li>Strategic placement of services and resources.</li>
+      <li>
+        Inventory of municipal assets (e.g. manhole covers, fire hydrants, sidewalk curb types for ADA compliance).
+      </li>
+      <li>Location and types of trees in a neighborhood.</li>
+      <li>Count of homes in taxing entities.</li>
+      <li>Homes damaged by a natural disaster/occurrence.</li>
+      <li>Disease outbreak investigation.</li>
+      <li>
+        Communicating geospatial relationships of state agency data to elected officials based on political boundaries.
+      </li>
+      <li>Air monitoring or other environmental data in conjunction with demographic and health factors.</li>
+      <li>Proximity to parks and other health indicators.</li>
+      <li>Food deserts in communities.</li>
+    </BulletedList>
+    <h4>Examples of some custom GIS integrations UGRC has participated in</h4>
     <BulletedList>
       <li>
-        <ExternalLink href="https://le.utah.gov/GIS/findDistrict.jsp"
-          >Discover your elected officials based on your address</ExternalLink
-        >.
+        <ExternalLink href="https://le.utah.gov/GIS/findDistrict.jsp">Find out</ExternalLink> who your senator and representative
+        are by your address.
       </li>
       <li>
-        <ExternalLink href="https://enviro.deq.utah.gov/"
-          >Provide transparency regarding environmental hazards</ExternalLink
-        >.
+        <ExternalLink href="https://enviro.deq.utah.gov/">Be transparent</ExternalLink> with your customers regarding environmental
+        hazards.
       </li>
       <li>
-        <ExternalLink href="https://wri.utah.gov/"
-          >Aid in the decision making process to restore and manage ecosystems in priority areas across Utah</ExternalLink
-        >.
+        <ExternalLink href="https://wri.utah.gov/">Aid in</ExternalLink>. the decision-making process to restore and
+        manage ecosystems in priority areas across the state
       </li>
     </BulletedList>
   </Section>
