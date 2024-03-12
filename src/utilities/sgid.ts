@@ -1,12 +1,22 @@
 import { ProductType, type Row } from '@models/products/sgid/types';
-import { GoogleAuth } from 'google-auth-library';
+import { GoogleAuth, JWT } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 const stewardshipId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ';
 
-const auth = new GoogleAuth({
-  scopes: ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'],
+const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'];
+
+let auth = new GoogleAuth({
+  scopes
 });
+
+if (import.meta.env.PROD) {
+  auth = new JWT({
+    email: import.meta.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+    key: import.meta.env.GOOGLE_PRIVATE_KEY,
+    scopes
+  });
+}
 
 export async function getStewardshipRecords() {
   console.log('loading stewardship spreadsheet');
