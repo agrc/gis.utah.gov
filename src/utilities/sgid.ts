@@ -1,26 +1,22 @@
 import { ProductType, type Row } from '@models/products/sgid/types';
-import { GoogleAuth, JWT } from 'google-auth-library';
+import { GoogleAuth, auth } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 const stewardshipId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ';
 
 const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'];
 
-let auth = new GoogleAuth({
+let client = new GoogleAuth({
   scopes
 });
 
 if (import.meta.env.PROD) {
-  auth = new JWT({
-    email: import.meta.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    key: import.meta.env.GOOGLE_PRIVATE_KEY,
-    scopes
-  });
+  let client = auth.fromJSON(JSON.parse(import.meta.env.GOOGLE_PRIVATE_KEY));
+  client.scopes = scopes;
 }
 
 export async function getStewardshipRecords() {
-  console.log('loading stewardship spreadsheet');
-  if (import.meta.env.DEV) {
+  if (!import.meta.env.DEV) {
     return [
       {
         id: '94f9ac4c-ba32-4aa0-a2d1-48092325de6b',
@@ -89,7 +85,7 @@ export async function getStewardshipRecords() {
     ]
   }
 
-  const stewardshipSheet = new GoogleSpreadsheet(stewardshipId, auth);
+  const stewardshipSheet = new GoogleSpreadsheet(stewardshipId, client);
   await stewardshipSheet.loadInfo();
 
   const stewardshipRows = await stewardshipSheet.sheetsByTitle['SGID Index'].getRows();
@@ -139,7 +135,7 @@ function etlRow(row): Row | null {
     category: row.get('category'),
     ugrcStatus: row.get('ugrcStatus'),
     source: row.get('dataSources'),
-    dataType: toProductTypeEnum(row.get('productType'))!,
+    dataType: toProductTypeEnum(row.get('productType')) ? toProductTypeEnum(row.get('productType')) : console.log(row.get('displayName')),
     description: row.get('description'),
     inActionUrl: row.get('Webapp'),
     productPagePath: row.get('productPagePath'),
