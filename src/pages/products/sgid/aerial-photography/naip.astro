@@ -8,7 +8,6 @@ import Metadata from '@components/data/Metadata.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
@@ -23,7 +22,7 @@ import naipRGBImage from '@images/sgid/naip-rgb.png';
 
 export const metadata: IMetadata = {
   title: 'National Agriculture Imagery Program (NAIP)',
-  description: `Aerial Photography collections starting in 2003.`,
+  description: `Aerial photography collections by airplane starting in 2003.`,
   stewards: ['UGRC', 'U.S. Department of Agriculture (USDA)'],
   type: ProductType.IMAGERY_RASTER,
   category: SgidCategory.AERIAL_PHOTOGRAPHY,
@@ -31,12 +30,10 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-
   updateHistory: [`2021`],
-
   links: [
     {
-      title: 'Download from raster app',
+      title: 'Download from Raster app',
       url: 'https://raster.utah.gov/?catGroup=NAIP%202021%20(60cm),NAIP%202018%20(60cm),NAIP%202016%20(1m),NAIP%202014%20(1m),NAIP%202011%20(1m),NAIP%202009%20(1m),NAIP%202006%20(1m),NAIP%202004%20(1m),NAIP%202003%20(2m)&title=Utah%20NAIP%20Imagery',
     },
   ],
@@ -51,7 +48,7 @@ const page: IPageMetadata = {
       <a href={naipRGBImage.src}>
         <Image
           src={naipRGBImage}
-          width="400"
+          width="300"
           alt="An RGB image of the NAIP"
           class="w-full max-w-[300px] rounded-lg"
         /></a
@@ -59,7 +56,7 @@ const page: IPageMetadata = {
       <a href={naipNRGImage.src}>
         <Image
           src={naipNRGImage}
-          width="400"
+          width="300"
           alt="An NRG image of the NAIP"
           class="w-full max-w-[300px] rounded-lg"
         /></a
@@ -84,7 +81,13 @@ const page: IPageMetadata = {
         href="/images/sgid/function_chain.jpg">Reference Mosaic</a
       >. 3-band Mr. Sid county mosaics are also available.
     </p>
+  </Fragment>
 
+  <Section title="Get the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="Links" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
     <p>
       For more information about the history of the NAIP collections take a look at this <ExternalLink
         href="https://www.arcgis.com/apps/MapTour/index.html?appid=445e3dfd16c4401f95f78ad5905a4cce&webmap=6d117f2ede424ace93917e2bc88202b3"
@@ -97,98 +100,80 @@ const page: IPageMetadata = {
         >https://gis.apfo.usda.gov/arcgis/rest/services/NAIP</ExternalLink
       >.
     </p>
+    <h3>Finding flight dates</h3>
+    <p class="text-lg font-bold">
+      The date the photography was flown for the year of interest can be found in the list below.
+    </p>
+    <div>
+      <p class="font-semibold">2021</p>
+      <BulletedList>
+        <li>
+          Within the <code>SrcImgDate</code> field of the <ExternalLink
+            href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2021/NAIP2021_Index.zip"
+            >NAIP2021 Index shapefile</ExternalLink
+          > or
+        </li>
+        <li>the <code>SDATE</code> field of the county mosaics shapefile.</li>
+      </BulletedList>
+      <p class="font-semibold">2018, 2016, 2014</p>
+      <BulletedList>
+        <li>
+          Within the <code>SrcImgDate</code> field of the <ExternalLink
+            href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Index.zip"
+            >NAIP2018 Index shapefile</ExternalLink
+          >,
+          <li>in the <code>.txt</code> metadata files after <code>Calendar_Date</code> in the image tile,</li>
+          <li>or the <code>SDATE</code> field of the county mosaics shapefile downloaded from the Raster app.</li>
+        </li>
+      </BulletedList>
+      <p class="font-semibold">2011</p>
+      <BulletedList>
+        <li>
+          Within the <code>SrcImgDate</code> field of the <ExternalLink
+            href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2011/NAIP2011_4-band_Index.zip"
+            >NAIP2011_4-band_Index shapefile</ExternalLink
+          >,
+        </li>
+        <li>
+          in the <code>IDATE</code> field in the <ExternalLink
+            href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2011/NAIP2011_4-band_FlightDate_Index.zip"
+            >NAIP2011_4-band_FlightDate_Index shapefile</ExternalLink
+          >,
+        </li>
+        <li>or the <code>SDATE</code> field of the county mosaics shapefile downloaded from the Raster app.</li>
+      </BulletedList>
+      <p class="font-semibold">2009</p>
+      <BulletedList>
+        <li>
+          Within the <code>SrcImgDate</code> field of the <ExternalLink
+            href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2009/NAIP2009_4-band_Index.zip"
+            >NAIP2009 Index shapefile</ExternalLink
+          >
+        </li>
+        <li>or the <code>SDATE</code> field of the county mosaics index file downloaded from the Raster app.</li>
+      </BulletedList>
+      <p class="font-semibold">2006</p>
+      <BulletedList>
+        <li>
+          <code>FLIGHT_DAT</code> field of the <ExternalLink
+            href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2006/NAIP2006_Index.zip"
+            >NAIP2006 Index shapefile</ExternalLink
+          >
+        </li>
+        <li>or the <code>.txt</code> metadata files downloaded from the Raster app.</li>
+      </BulletedList>
+      <p class="font-semibold">2004</p>
+      <BulletedList>
+        <li>
+          Within the <code>IDAT</code> field of the compressed county mosaic index downloaded from the Raster app.
+        </li>
+      </BulletedList>
+      <p class="font-semibold">2003</p>
+      <BulletedList>
+        <li>Within the <code>.txt</code> file of county mosaic downloaded from the Raster app.</li>
+      </BulletedList>
+    </div>
   </Fragment>
-
-  <Section title="Get the data" slot="downloads" titlePosition="center">
-    <DirectDownloads title="Get the data" links={page.links!} />
-  </Section>
-
-  <Fragment slot="description">
-    <h3>Flight date locations</h3>
-    <dl>
-      <DefinitionListItem title="The date the photography was flown can be found in:">
-        <p class="font-bold">2021</p>
-        <BulletedList>
-          <li>
-            <code>SrcImgDate</code> field of the <ExternalLink
-              href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2021/NAIP2021_Index.zip"
-              >NAIP2021 Index shapefile</ExternalLink
-            > or the <code>SDATE</code> field of the county mosaics shapefile.
-          </li>
-        </BulletedList>
-        <p class="font-bold">2018</p>
-        <BulletedList>
-          <li>
-            <code>SrcImgDate</code> field of the <ExternalLink
-              href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2018/NAIP2018_Index.zip"
-              >NAIP2018 Index shapefile</ExternalLink
-            >, in the <code>.txt</code> metadata files after Calendar_Date, or the <code>SDATE</code> field of the county
-            mosaics shapefile.
-          </li>
-        </BulletedList>
-        <p class="font-bold">2016</p>
-        <BulletedList>
-          <li>
-            <code>SrcImgDate</code> field of the <ExternalLink
-              href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2016/NAIP2016_Index.zip"
-              >NAIP2016 Index shapefile</ExternalLink
-            >, in the <code>.txt</code> metadata files after Calendar_Date, or the <code>SDATE</code> field of the county
-            mosaics shapefile.
-          </li>
-        </BulletedList>
-        <p class="font-bold">2014</p>
-        <BulletedList>
-          <li>
-            <code>SrcImgDate</code> field of the <ExternalLink
-              href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2014/NAIP2014_Index.zip"
-              >NAIP2014 Index shapefile</ExternalLink
-            >, in the <code>.txt</code> metadata files after Calendar_Date, or the <code>SDATE</code> field of the county
-            mosaics shapefile.
-          </li>
-        </BulletedList>
-        <p class="font-bold">2011</p>
-        <BulletedList>
-          <li>
-            <code>SrcImgDate</code> field of the <ExternalLink
-              href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2011/NAIP2011_4-band_Index.zip"
-              >NAIP2011_4-band_Index shapefile</ExternalLink
-            >, the <code>IDATE</code> field in the <ExternalLink
-              href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2011/NAIP2011_4-band_FlightDate_Index.zip"
-              >NAIP2011_4-band_FlightDate_Index shapefile</ExternalLink
-            > , in the <code>.txt</code> metadata files after Calendar_Date, or the <code>SDATE</code> field of the county
-            mosaics shapefile.
-          </li>
-        </BulletedList>
-        <p class="font-bold">2009</p>
-        <BulletedList>
-          <li>
-            <code>SrcImgDate</code> field of the <ExternalLink
-              href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2009/NAIP2009_4-band_Index.zip"
-              >NAIP2009 Index shapefile</ExternalLink
-            > or the <code>SDATE</code> field of the county mosaics index file.
-          </li>
-        </BulletedList>
-        <p class="font-bold">2006</p>
-        <BulletedList>
-          <li>
-            <code>FLIGHT_DAT</code> field of the <ExternalLink
-              href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/naip/naip2006/NAIP2006_Index.zip"
-              >NAIP2006 Index shapefile</ExternalLink
-            > or the <code>.txt</code> metadata files.
-          </li>
-        </BulletedList>
-        <p class="font-bold">2004</p>
-        <BulletedList>
-          <li><code>IDAT</code> field of the compressed county mosaic index.</li>
-        </BulletedList>
-        <p class="font-bold">2003</p>
-        <BulletedList>
-          <li><code>.txt</code> file of county mosaic.</li>
-        </BulletedList>
-      </DefinitionListItem>
-    </dl>
-  </Fragment>
-
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="NAIP 2021" href="https://raster.utah.gov/?cat=NAIP%202021%20(60cm)"
@@ -234,16 +219,16 @@ const page: IPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink
         title="High Resolution Orthophotography (HRO)"
-        href="/products/sgid/aerial-photography/hro"
+        href="/products/sgid/aerial-photography/high-resolution-orthophotography"
         style="secondary">High resolution orthorectified aerial photography</CardWithSmallLink
       >
       <CardWithSmallLink
         title="Digital Orthophoto Quads (DOQ)"
-        href="/products/sgid/aerial-photography/doq"
+        href="/products/sgid/aerial-photography/digital-orthophoto-quadrangle"
         style="secondary">1 Meter orthorectified aerial photography</CardWithSmallLink
       >
     </GridForYouMightLike>
