@@ -76,9 +76,7 @@ if (!url.startsWith('https://')) {
           </>
         )
       }
-      <span class="text-sm font-semibold text-secondary dark:text-white"
-        >{row.source?.length === 1 ? 'Steward' : 'Stewards'}:{' '}</span
-      ><span>{row.source?.join(' & ')}</span>
+      <span class="text-sm font-semibold text-secondary dark:text-white">Stewards: </span><span>{row.source}</span>
     </div>
     <div class="flex gap-1">
       {
