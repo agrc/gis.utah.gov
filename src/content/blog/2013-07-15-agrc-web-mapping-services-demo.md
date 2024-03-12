@@ -11,7 +11,7 @@ cover_image: '/src/images/pillar-blog/default-social-card.png'
 cover_image_alt: ugrc social card
 ---
 
-<p>UGRC offers a variety of mapping-related web services that make it easy to add authoritative Utah web maps to your applications. The two most popular are our <a href="/products/base-maps">base maps</a> and <a href="https://api.mapserv.utah.gov/#geocoding">geocoding service</a>. These web services, together with a custom map service that shows your own agency/business-specific data, can add great geographic context to your web applications.</p>
+<p>UGRC offers a variety of mapping-related web services that make it easy to add authoritative Utah web maps to your applications. The two most popular are our <a href="/products/sgid/base-maps">base maps</a> and <a href="https://api.mapserv.utah.gov/#geocoding">geocoding service</a>. These web services, together with a custom map service that shows your own agency/business-specific data, can add great geographic context to your web applications.</p>
 <p>This post will show you how simple it is to leverage UGRC's services with JavaScript. We will develop a simple web app that contains a dynamic map and simple address finding controls. Please note that we've added a simple glossary of terms at the bottom of this page.</p>
 <h2 id="esri-javascript-api">ESRI JavaScript API</h2>
 <p>The first thing to do is create a simple <code>.html</code> page and import <a href="https://developers.arcgis.com/en/javascript/">ESRI's ArcGIS API for JavaScript</a>. You can load their API by a CSS file:</p>
@@ -27,7 +27,7 @@ cover_image_alt: ugrc social card
 
 <p>This will load all necessary dependencies including <a href="https://developers.arcgis.com/en/javascript/jshelp/inside_dojo.html">Dojo</a> into your application. Dojo is a widely used javascript library containing commonly used functionality for cross-browser compatible user interface presentation and management. Because it's built on top of Dojo, ESRI's API also employs the new <a href="https://en.wikipedia.org/wiki/Asynchronous_module_definition">Asynchronous Module Definition (AMD)</a> standard for loading external JavaScript libraries. With both Dojo and ESRI development teams using AMD, it is highly recommended that you also use the AMD loading syntax, as this should maximize the life-expectancy for the map-service consuming code that you write. All code examples in this post will be using the new AMD syntax. If you are unfamiliar with AMD you may want to check out <a href="https://dojotoolkit.org/documentation/tutorials/1.9/modules/">Dojo's excellent tutorial</a> on the subject.</p>
 <h2 id="base-maps">Base Maps</h2>
-<p>UGRC provides <a href="/products/base-maps">seven high-quality, pre-rendered base map services</a>. These services are published through ESRI's <a href="https://www.esri.com/software/arcgis/arcgisserver">ArcGIS Server software</a>. The service directory end points can be found here: </p>
+<p>UGRC provides <a href="/products/sgid/base-maps">seven high-quality, pre-rendered base map services</a>. These services are published through ESRI's <a href="https://www.esri.com/software/arcgis/arcgisserver">ArcGIS Server software</a>. The service directory end points can be found here: </p>
 <ul>
 <li><a href="https://mapserv.utah.gov/arcgis/rest/services/BaseMaps">https://mapserv.utah.gov/arcgis/rest/services/BaseMaps</a></li>
 </ul>

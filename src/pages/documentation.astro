@@ -16,8 +16,8 @@ import Section from '@components/page/Section.astro';
 import { Image } from 'astro:assets';
 
 import policyPhoto from '@images/documentation/policy.svg';
-import dataSharingPhoto from '@images/sgid/data-sharing-agreement.svg';
-import licensePhoto from '@images/sgid/license-disclaimer.svg';
+import masqueradePhoto from '@images/documentation/sgid/masquerade.svg';
+import palletjackPhoto from '@images/documentation/sgid/palletjack.svg';
 import openSgid from '@images/sgid/open-sgid.svg';
 import sgidIndex from '@images/sgid/sgid-index.svg';
 
@@ -74,13 +74,13 @@ const page: IStandardPageMetadata = {
 
   <Section slot="more-resources" {...page.section[2]}>
     <GridForMoreResources>
-      <CardWithSideImage title="Masquerade" actionUrl="/documentation/masquerade">
-        <Image slot="image" src={licensePhoto} alt="man in front of warning sign" class="self-center" />
-        The UGRC API and SGID accessed through Esri clients. // TODO PAGE MISSING
+      <CardWithSideImage title="Masquerade" actionUrl="https://github.com/agrc/masquerade/blob/main/README.md">
+        <Image slot="image" src={masqueradePhoto} alt="People wearing masks" class="self-center" />
+        The UGRC API and SGID accessed through Esri clients.
       </CardWithSideImage>
-      <CardWithSideImage title="palletjack" actionUrl="/products/sgid/sharing">
-        <Image slot="image" src={dataSharingPhoto} alt="people shaking hands" class="self-center" />
-        Something // TODO PAGE MISSING
+      <CardWithSideImage title="palletjack" actionUrl="https://agrc.github.io/palletjack/palletjack/">
+        <Image slot="image" src={palletjackPhoto} alt="Construction workers moving dirt" class="self-center" />
+        A library for updating AGOL data from various external sources.
       </CardWithSideImage>
     </GridForMoreResources>
   </Section>

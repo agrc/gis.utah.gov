@@ -32,4 +32,4 @@ Over the course of a typical day, some end users, be they GIS staff or web appli
 
 This graph shows where most of the traffic for basemap tiles was coming from on this particular day. It was an election month so the elections site took first place. Our _mapserv_ hosted applications came in second. The breakup of other state agency usage is quite interesting with ArcGIS Online becoming a presence.
 
-You can find [more information about our basemaps](/products/base-maps) on our [website](/). If you want to [interact with these charts](https://steveoh.github.io/Charts/), the are hosted on [GitHub](https://steveoh.github.io/Charts/).
+You can find [more information about our basemaps](/products/sgid/base-maps) on our [website](/). If you want to [interact with these charts](https://steveoh.github.io/Charts/), the are hosted on [GitHub](https://steveoh.github.io/Charts/).
