@@ -1,0 +1,155 @@
+---
+import { ProductType, SgidCategory, type IMetadata, type IStandardPageMetadata } from '@models/products/sgid/types';
+
+import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import { Image } from 'astro:assets';
+
+import doq from '@images/sgid/doq_sample.jpg';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import { stripeSections } from '@utils/page';
+
+export const metadata: IMetadata = {
+  title: 'Digital Orthophoto Quadrangles (DOQ)',
+  description: `Digital orthophoto aerial photography.`,
+  stewards: ['UGRC', 'BLM'],
+  type: ProductType.IMAGERY_RASTER,
+  category: SgidCategory.AERIAL_PHOTOGRAPHY,
+};
+
+const page: IStandardPageMetadata = {
+  title: 'DOQs',
+  pillar: 'Aerial-Photography',
+  section: stripeSections([
+    {
+      title: 'Digital Orthophoto Quadrangle (DOQ)',
+      // actionText: 'Explore our Lidar derived DEMs',
+      // actionUrl: '/products/sgid/elevation/lidar/',
+    },
+    {
+      title: '2003 COLOR DOQs',
+      actionText: 'Download Iron and Beaver County Color DOQs',
+      actionUrl: 'https://raster.utah.gov/?cat=Color%20DOQ%202003%20(1m)',
+    },
+    {
+      title: `MID 1990'S BLACK AND WHITE DOQ`,
+      actionText: `Download Mid 1990's Black and White DOQs`,
+      actionUrl: 'https://raster.utah.gov/?cat=DOQ%201990s%20(1m)',
+    },
+    {
+      title: '1977 BLACK AND WHITE DOQs',
+      actionText: 'Download Salt Lake County 1977 DOQs',
+      actionUrl: 'https://raster.utah.gov/?cat=DOQ%201977%20(1m)',
+    },
+    {
+      title: `1970'S 1 METER COLOR AND INFRARED DOQs`,
+      actionText: `Download 1970's DOQs`,
+      actionUrl: 'https://raster.utah.gov/?cat=DOQ%201970s%20(1m)',
+    },
+    {
+      title: '1936-1952 SOIL CONSERVATION SERVICE (SCS) PHOTOMAPS',
+      actionText: 'Download 1936-1952 SCS Photomaps',
+      actionUrl: 'https://raster.utah.gov/?cat=Historical',
+    },
+  ]),
+};
+---
+
+<Layout title={page.title} pillar={page.pillar}>
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <a href={doq.src} slot="image">
+      <Image
+        src={doq}
+        width="400"
+        loading="eager"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px] rounded-lg"
+      /></a
+    >
+    <p>
+      A Digital Orthophoto Quadrangle (DOQ) is a digital image that has the properties of an orthographic projection,
+      derived from a digitized perspective aerial photograph or other remotely sensed image data by differential
+      rectification so that image displacements caused by camera tilt and terrain relief are removed. The DOQ combines
+      the image characteristics of the original photograph with the georeferenced qualities of a map. Ground features
+      are displayed in their true position, allowing for the direct measurement of distance, areas, angles, and
+      positions.
+    </p>
+    <p>
+      All DOQs have a UTM NAD83 Zone 12 North meters projection with the exception of the 1936-1952 Soil Conservation
+      Service Photomaps that have a NAD27 datum.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <p>1-meter color DOQs for most of Iron and Beaver counties from 2003.</p>
+  </Section>
+  <Section {...page.section[2]}>
+    <p>
+      Statewide coverage of 1-meter resolution Black and White Digital Orthophoto Quads (DOQs). The <code>.met</code> file
+      is all the original header information from the image and contains the dates the images were flown and photographed.
+      Some DOQs have <ExternalLink
+        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/doq/DOQ_two_vintages.txt"
+        >2 vintages</ExternalLink
+      > of dates the images were flown. Usually one image will be from 1993 and another 1997 or newer. Refer to <ExternalLink
+        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/doq/Find_a_DOQ.txt"
+        >Find a DOQ</ExternalLink
+      > for quadrangle names and associated UGRC Q number.
+    </p>
+    <p>
+      For more information about these DOQs refer to the <ExternalLink
+        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/doq/DOQ_Info.txt"
+        >DOQ Information Sheet</ExternalLink
+      >.
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <p>
+      1-meter Black and White DOQ of Salt Lake County from 1977. The DOQs are available as single quads and also as a
+      Mr.Sid county mosaic.
+    </p>
+  </Section>
+  <Section {...page.section[4]}>
+    <p>1-meter color and infrared imagery from the BLM collected in the 1970s. This is not a statewide coverage.</p>
+  </Section>
+  <Section {...page.section[5]}>
+    <p>
+      1-meter Black and White Soil Conservation Service (SCS) Photomaps from 1936-1952. This is not a statewide
+      coverage. The date the photo was taken can be found for some of the tiles in the <code>Year</code> field of the <ExternalLink
+        href="https://storage.googleapis.com/state-of-utah-ugs-historic-imagery/imagery/SCS/UGS_SCS_Historical_Index.zip"
+        >UGS SCS Historical index shapefile</ExternalLink
+      >.
+    </p>
+  </Section>
+
+  <Section title="More resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="HRO" href="/products/sgid/aerial-photography/high-resolution-orthophotography"
+        >Item 1 description.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="DOQ" href="/products/sgid/aerial-photography/digital-orthophoto-quadrangle"
+        >Digital orthophoto aerial photography.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="NAIP" href="/products/sgid/aerial-photography/naip"
+        >Item 2 description.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov" style="secondary"
+        >Description</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary"
+        >Description</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
