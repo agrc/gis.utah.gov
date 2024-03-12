@@ -9,7 +9,7 @@ import capitalize from 'lodash.capitalize';
 const { path, class: className } = Astro.props;
 
 const capitalizeAcronyms = (str: string) => {
-  const acronyms = ['TURN', 'SGID', 'UGRC', 'API'];
+  const acronyms = ['TURN', 'SGID', 'UGRC', 'API', 'GIS'];
   let words = str.split('-');
 
   for (let i = 0; i < words.length; i++) {
