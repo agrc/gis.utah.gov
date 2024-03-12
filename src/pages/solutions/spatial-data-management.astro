@@ -9,8 +9,11 @@ import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
-import developmentPhoto from '@images/solutions/development.svg';
-import rocketPhoto from '@images/solutions/rocket.svg';
+import blocksPhoto from '@images/solutions/blocks.svg';
+import highFivePhoto from '@images/solutions/high-five.svg';
+import notesPhoto from '@images/solutions/notes.svg';
+import processPhoto from '@images/solutions/process.svg';
+import shoppingPhoto from '@images/solutions/shopping.svg';
 
 import { stripeSections } from '@utils/page';
 
@@ -18,10 +21,15 @@ const page: IStandardPageMetadata = {
   title: 'Data Management and Access',
   pillar: Pillar.SOLUTIONS,
   section: stripeSections([
-    {},
-    { title: 'Make it accessible' },
-    { title: 'Tools can help' },
-    { title: 'Participate in the SGID' },
+    { actionText: 'Get in touch', actionUrl: '/contact' },
+    { title: 'Build the foundation', actionText: 'Explore SGID categories', actionUrl: '/products/sgid/categories' },
+    {
+      title: 'Make it accessible and current',
+      actionText: 'Explore our spatial data lifecycle',
+      actionUrl: 'https://drive.google.com/file/d/1kDzCLf_UolQqSVZQSzHAHVrtFC4ViEFC/view',
+    },
+    { title: 'Tools can help', actionText: 'Developer solutions', actionUrl: '/solutions/for-application-developers' },
+    { title: 'Participate in the SGID', actionText: 'Read about the SGID', actionUrl: '/documentation/sgid' },
   ]),
 };
 ---
@@ -32,27 +40,83 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[0]}>
     <Image
       slot="image"
-      src={developmentPhoto}
+      src={notesPhoto}
       loading="eager"
-      alt="a person with a prototype on an easel and the app partially built on a phone"
+      alt="a person taking notes from another person explaining charts on a whiteboard"
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
-      Spatial data management is one the most important step you will take. Making sure your data is curated and
-      optimized for use within your agency and across state government is a key to success in this effort.
+      Data management is the cornerstone of data-driven decision making. Ensuring your data is curated and optimized for
+      use within your agency, by your constituents, and throughout state government is a key to providing services
+      efficiently and effectively, and planning for change.
+    </p>
+    <p>
+      UGRC has been creating, accumulating, aggregating, transforming, and hosting data since its inception, so we know
+      a thing or two about data curation and management. No matter where you are in the data life cycle, get in touch to
+      explore how we can help you “spatialize” and manage your data better.
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
+    <Image
+      slot="image"
+      src={blocksPhoto}
+      alt="two people working together assembling blocks to build something awesome"
+      class="w-full max-w-[400px]"
+    />
     <p>
-      A government runs better with a shared vision and shared data available for all for decision making. Good data is
-      data that is used.
+      Even if your data are not natively “spatial”, or you don’t even know what the word means, UGRC can help to broaden
+      the scope of usefulness of your data by incorporating a locational component. Whether it’s geocoding a list of
+      addresses to find their actual location; aggregating and joining data to an existing boundary or location; or
+      adding spatial attributes from geographic data sets of interest to your business processes, we can help you
+      uncover novel insights by spatially-enabling and enriching your data.
     </p>
   </Section>
   <Section {...page.section[2]}>
-    <p>UGRC has many scripts and processes that will help you expose your data for use by others.</p>
+    <Image
+      slot="image"
+      src={shoppingPhoto}
+      alt="A person shopping for data in a store with a couple of bags of data in hand"
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      Government runs better with a shared vision and shared data available to all for decision making. Good data is
+      timely, accurate and, most importantly, used. Getting your data into the hands of the people that need it on time
+      and in the right format is important, and may require the ability to maintain data in multiple locations for
+      different purposes. Additionally, understanding the uses of your data critically influences the update cycle to
+      keep it current and reliable. Our long history of data wrangling has taught us a lot about data accessibility and
+      currency that we can pass along and enable for your team, program, or agency.
+    </p>
   </Section>
   <Section {...page.section[3]}>
-    <p>UGRC commonly hosts and shares relevant agency data so it will be available to all to use.</p>
+    <Image
+      slot="image"
+      src={processPhoto}
+      alt="A person standing next to some gears with a progress bar"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      Automating the processes that keep your data useful and available can be a critical time saver. We do that too.
+      UGRC has many scripts and processes that can help you expose your data for use by others. We’ve created tools with
+      a goal of having them be useful beyond our office. In addition to hosting most of our code on GitHub, we have
+      other tools to solve data extraction, transformation, and loading scenarios. Try something off our shelf, or use
+      it as a starting point for your own custom solution.
+    </p>
+  </Section>
+  <Section {...page.section[4]}>
+    <Image
+      slot="image"
+      src={highFivePhoto}
+      alt="A group of people high-fiving each other in celebration of a job well done"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      Once your data sets are built, accessible, and current, consider contributing them to the State Geographic
+      Information Datasource (SGID) for maximal exposure and usage. The purpose of the SGID is to make the most relevant
+      and authoritative Utah spatial data available to the greatest audience possible. In some cases, UGRC will host
+      data for you, yet the preference is to enable agencies to be informed and responsible data stewards so we can
+      highlight your curated services, particularly through your ArcGIS Enterprise Portal, or ArcGIS Online. We can then
+      share your data directly with other users of our own ArcGIS Hub website to make your work easier for other data
+      consumers to find.
+    </p>
   </Section>
 </Layout>
