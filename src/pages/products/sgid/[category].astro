@@ -39,7 +39,10 @@ const pages = (await Astro.glob<IDataCategory>('../**/*.astro'))
   .sort((a, b) => a.metadata.title.localeCompare(b.metadata.title));
 
 const toEnum = (category?: string) => {
-  if (!category) return '';
+  if (!category) {
+    return '';
+  }
+
   return SgidCategory[category.toUpperCase().replaceAll('-', '_') as keyof typeof SgidCategory];
 };
 ---

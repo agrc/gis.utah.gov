@@ -8,6 +8,7 @@ import { convertProductType, getArcGisHubUrl, getFeatureServiceUrl } from '@util
 import { Image } from 'astro:assets';
 
 import ExternalLink from '@components/page/ExternalLink.astro';
+import dnrDataSet from '@images/sgid/dnr-logo.svg';
 import internalDataSet from '@images/sgid/wavy-circle.svg';
 
 const row = Astro.props as Row;
@@ -20,26 +21,42 @@ const apps = [] as appLink[];
 if (row.inActionUrl) {
   apps.push({ url: row.inActionUrl, title: 'Data in action' });
 }
-if (row.server) {
+if (row.server?.host) {
   apps.push({ url: getFeatureServiceUrl(row.server), title: 'Feature service' });
 }
-if (row.hub) {
+if (row.hub?.itemId) {
   apps.push({ url: getArcGisHubUrl(row.hub), title: 'ArcGIS Hub item' });
 }
-console.log('astro.site', Astro.site);
+
+let url = row.productPagePath;
+if (!url.startsWith('https://')) {
+  if (import.meta.env.DEV) {
+    url = url;
+  } else {
+    url = Astro.site?.href + url;
+  }
+}
+
+console.log(apps);
 ---
 
 <div>
   <div class="flex grow flex-col">
-    <a href={row.productPageSlug} class="custom-style group">
+    <a href={row.productPagePath} class="custom-style group">
       <div class="flex items-center gap-2">
-        <Image
-          src={internalDataSet}
-          alt="SGID Internal Data Set"
-          loading={row.index < 3 ? 'eager' : 'lazy'}
-          class="size-6"
-        />
-        {row.productPageSlug && <div class="text-xs">{`${Astro.site?.href}${row.productPageSlug}`}</div>}
+        {
+          url.startsWith('https://dwr-data-utahdnr.hub.arcgis.com/') ? (
+            <Image src={dnrDataSet} alt="SGID DNR Data Set" loading={row.index < 3 ? 'eager' : 'lazy'} class="size-6" />
+          ) : (
+            <Image
+              src={internalDataSet}
+              alt="SGID Internal Data Set"
+              loading={row.index < 3 ? 'eager' : 'lazy'}
+              class="size-6"
+            />
+          )
+        }
+        {row.productPagePath && <div class="text-xs">{`${row.productPagePath}`}</div>}
       </div>
       <h4 class="group-hover:underline">{row.displayName}</h4>
     </a>
@@ -67,7 +84,7 @@ console.log('astro.site', Astro.site);
     </div>
     <div class="flex gap-1">
       {
-        apps?.length &&
+        apps.length > 0 &&
           apps.map((app, index) => (
             <Fragment>
               <ExternalLink href={app.url}>{app.title}</ExternalLink>

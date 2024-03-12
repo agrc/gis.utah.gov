@@ -139,7 +139,7 @@ export type Row = {
   dataType: ProductType;
   description: string;
   inActionUrl?: string;
-  productPageSlug: string;
+  productPagePath: string;
   ugrcStatus: "deprecated" | "static" | "shelved" | null;
   server?: {
     host?: string;

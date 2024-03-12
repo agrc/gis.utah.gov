@@ -31,16 +31,16 @@ export const removeDateRange = (title: string) => {
 
 export const getFeatureServiceUrl = ({
   layerId = 0,
-  host = 'https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/',
+  host = 'https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/',
   serviceName,
-}) => `${host}${serviceName}/FeatureServer/${layerId}`;
+}) => `${host}/rest/services/${serviceName}/FeatureServer/${layerId}`;
 
 export const getArcGisHubUrl = (hub) => {
-  let id = hub.hubName?.toLowerCase() || hub.title.toLowerCase().replaceAll(' ', '-');
+  let id = hub.hubName?.toLowerCase().replaceAll(' ', '-');
 
-  if (hub.organization) {
-    id = `${hub.organization.toUpperCase()}::${id}`;
+  if (hub.organization?.toLowerCase() !== 'utah') {
+    id = `${hub.organization}::${id}`;
   }
 
-  return `https://opendata.gis.utah.gov/datasets/${id}`;
+  return `https://opendata.gis.utah.gov/datasets/${id}/about`;
 }
