@@ -7,10 +7,10 @@ import { ProductType, SgidCategory } from '@models/products/sgid/types';
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 
-import BulletedList from '@components/page/BulletedList.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import Contacts from '@components/page/Contacts.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
@@ -20,7 +20,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah UDOT Mile Reference Posts',
-  description: `Physical Reference Post Location along Utah Highways.`,
+  description: `Physical milepost sign locations along Utah highways.`,
   stewards: ['Utah Department of Transportation (UDOT)'],
   type: ProductType.POINT,
   category: SgidCategory.TRANSPORTATION,
@@ -29,7 +29,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   application: 'https://maps.udot.utah.gov/wadocuments/Apps/Stationing/',
-  updateHistory: [`Weekly`],
+  updateHistory: [`2021`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -93,7 +93,7 @@ const page: IPageMetadata = {
     </p>
     <p>
       For more information on the difference between mile reference posts and linear measures, please refer to <ExternalLink
-        href="">UDOT's webpage</ExternalLink
+        href="https://udot.utah.gov/connect">UDOT's webpage</ExternalLink
       > addressing this topic or their <ExternalLink
         href="https://drive.google.com/file/d/14QFEDCvicSNsO13fBolRjpuYgs9RGZv_/view?usp=sharing"
         >informational document</ExternalLink
@@ -101,28 +101,25 @@ const page: IPageMetadata = {
     </p>
     <h3>Fields worth noting</h3>
     <dl>
-      <BulletedList>
-        <li>Legend - Milepost number on sign</li>
-        <li>Measure - Location of the milepost along the LRS</li>
-        <li>
-          Station Label - Highway name + direction of route along LRS (P = positive, milepost numbers increasing; N =
-          negative, milepost numbers decreasing) + milepost number. For example the value 0015PM_271 translates to mile
-          marker 217 on Interstate-15 on the north bound (P) side.
-        </li>
-      </BulletedList>
+      <DefinitionListItem title="Legend">Milepost number on sign</DefinitionListItem>
+      <DefinitionListItem title="Measure">Location of the milepost along the LRS</DefinitionListItem>
+      <DefinitionListItem title="Station Label"
+        >Highway name + direction of route along LRS (P = positive, milepost numbers increasing; N = negative, milepost
+        numbers decreasing) + milepost number. For example the value 0015PM_271 translates to mile marker 217 on
+        Interstate-15 on the north bound (P) side.
+      </DefinitionListItem>
     </dl>
   </Fragment>
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink
-        title="LRS Mile Point Measures"
+        title="LRS mile point measures"
         href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth/"
         >Contains tenth-mile points</CardWithPopularLink
       >
-      <CardWithPopularLink
-        title="UGRC Milepost and Reverse Milepost Lookup"
-        href="https://api.mapserv.utah.gov/#geocoding/">UGRC Geocoding Web API</CardWithPopularLink
+      <CardWithPopularLink title="UGRC API geocoding endpoints" href="https://api.mapserv.utah.gov/#geocoding/"
+        >UGRC milepost and reverse milepost endpoints</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
@@ -130,14 +127,14 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="UDOT's UPlan" href="https://uplan.maps.arcgis.com/home/index.html" style="secondary"
-        >UDOT's home for GIS data and applications</CardWithSmallLink
+        >UDOT's home for GIS data and applications.</CardWithSmallLink
       >
       <CardWithSmallLink
-        title="UDOT's Speed Limits map"
+        title="UDOT's speed limits map"
         href="https://uplan.maps.arcgis.com/home/webmap/viewer.html?webmap=815ead7b87bb4d09872707495205445c"
         style="secondary"
       >
-        This map depicts the Utah State Routes speed limits as polylines
+        This map depicts the Utah State Routes speed limits as polylines.
       </CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
