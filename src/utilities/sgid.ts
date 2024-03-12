@@ -6,13 +6,18 @@ const stewardshipId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ';
 
 const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'];
 
-let client = new GoogleAuth({
-  scopes
-});
+let client;
+
+console.log('\nbuilding sgid index. configuration: ', import.meta.env.MODE);
 
 if (import.meta.env.PROD) {
-  let client = auth.fromJSON(JSON.parse(import.meta.env.GOOGLE_PRIVATE_KEY));
+  console.log('using ci credentials');
+  client = auth.fromJSON(JSON.parse(import.meta.env.GOOGLE_PRIVATE_KEY));
   client.scopes = scopes;
+} else {
+  client = new GoogleAuth({
+    scopes
+  });
 }
 
 export async function getStewardshipRecords() {
@@ -26,7 +31,7 @@ export async function getStewardshipRecords() {
         ugrcStatus: '',
         source: undefined,
         dataType: 7,
-        description: 'A muted basemap great for overlaying data.',
+        description: 'A muted base map great for overlaying data.',
         inActionUrl: undefined,
         productPagePath: '',
         hub: {
