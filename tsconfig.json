@@ -19,7 +19,7 @@
         "src/images/landing/*"
       ],
       "@images/solutions/*": [
-        "src/images/solutions/*"
+        "src/images/pillar-solutions/*"
       ],
       "@images/media/*": [
         "src/images/media/*"
