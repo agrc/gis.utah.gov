@@ -4,6 +4,7 @@ import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types'
 import Layout from '@layouts/FullWidth.astro';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import BulletedList from '@components/page/BulletedList.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
@@ -12,6 +13,7 @@ import { Image } from 'astro:assets';
 import accessiblePhoto from '@images/solutions/accessible.svg';
 import agreementPhoto from '@images/solutions/agreement.svg';
 import applicationDevelopmentPhoto from '@images/solutions/application-development.svg';
+import gps from '@images/solutions/gps.svg';
 
 import { stripeSections } from '@utils/page';
 
@@ -22,6 +24,7 @@ const page: IStandardPageMetadata = {
     {},
     { title: 'Solutions for surveyors' },
     { title: 'About the network' },
+    { title: 'Benefits of our network' },
     { title: 'Plans for the future' },
   ]),
 };
@@ -45,7 +48,7 @@ const page: IStandardPageMetadata = {
       reliable, high-precision accuracy, the survey industry was one of the earliest adopters of the new technology.
     </p>
     <p>
-      Today, networks such as ours offer coverage across the globe. Our TURN and Reno networks offer coverage in not
+      Today, networks such as ours offer coverage across the globe. Our TURN and Reno networks provides coverage in not
       only Utah, but Nevada, Wyoming, and Idaho. We continue to offer surveryors a reliable network and expert support.
     </p>
   </Section>
@@ -59,6 +62,29 @@ const page: IStandardPageMetadata = {
   </Section>
 
   <Section {...page.section[3]}>
+    <Image slot="image" src={gps} alt="a person breaking down a wall" class="w-full max-w-[400px]" />
+    <p>
+      TURNGPS is used for a range of precision GPS applications including surveying, engineering, construction and GIS
+      data collection. Benefits of using our network include:
+    </p>
+    <BulletedList>
+      <li>Ideal for municipal asset management and feature collection.</li>
+      <li>
+        Eliminates traditional time wasting processes to improve GPS data; corrections are given real time in the field.
+      </li>
+      <li>
+        TURNGPS enables high-accuracy positioning in real time over much larger geographic region than standard real
+        time methods, using the internet for communication.
+      </li>
+      <li>
+        It maximizes the performance from a network of reference stations and eliminates the need to set up a temporary
+        field base station for each individual project or post processing data, saving you time and money.
+      </li>
+      <li>It is ideal for any application requiring reliable, fast, high precision wide area positioning.</li>
+    </BulletedList>
+  </Section>
+
+  <Section {...page.section[4]}>
     <Image
       slot="image"
       src={applicationDevelopmentPhoto}
