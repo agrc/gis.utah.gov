@@ -1407,8 +1407,8 @@ export const dataPages: DownloadMetadata = {
   'Utah USGS DEM Extents': {
     itemId: '855e7b6e4ce9481ca0faef64c9113f8a',
     name: 'Utah USGS DEM Extents',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'USGS_DEM_Extents',
+    openSgid: 'indices.usgs_dem_extents',
     layerId: 0,
   },
   'Utah USGS 250K Quads 1x1': {
@@ -1449,8 +1449,8 @@ export const dataPages: DownloadMetadata = {
   'Utah LiDAR Extents': {
     itemId: '90556bb0e09640648be66013a6ab56e6',
     name: 'Utah LiDAR Extents',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LiDAR_Extents',
+    openSgid: 'indices.lidar_extents',
     layerId: 0,
   },
   'Utah National Grid': {
@@ -1463,29 +1463,29 @@ export const dataPages: DownloadMetadata = {
   'Utah Contour Line Extents': {
     itemId: 'df220fc45d2a44f7b9a8ca2a3635e777',
     name: 'Utah Contour Line Extents',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Contour_Line_Extents',
+    openSgid: 'indices.contour_line_extents',
     layerId: 0,
   },
   'Utah DRG Extents': {
     itemId: '7da0b87ffa894450b65f955daae23bfb',
     name: 'Utah DRG Extents',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'DRG_Extents',
+    openSgid: 'indices.drg_extents',
     layerId: 0,
   },
   'Utah Auto Correlated DEM Extents': {
     itemId: '3e82e35d69744ce4991c15daa4edd775',
     name: 'Utah Auto Correlated DEM Extents',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'AutoCorrelated_DEM_Extents',
+    openSgid: 'indices.auto_correlated_dem_extents',
     layerId: 0,
   },
   'Utah Aerial Photography Extents': {
     itemId: '91f0336b027a426ba14d62aa95a4af9b',
     name: 'Utah Aerial Photography Extents',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Aerial_Photography_Extents',
+    openSgid: 'indices.aerial_photography_extents',
     layerId: 0,
   },
   'Utah LUCA Block Address Counts 2017': {
