@@ -1,13 +1,33 @@
 ---
-import BulletedList from '@components/page/BulletedList.astro';
-import DataCategory from '@components/page/DataCategory.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
-import Section from '@components/page/Section.astro';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
+
 import Layout from '@layouts/FullWidth.astro';
+
+import DataCategory from '@components/page/DataCategory.astro';
+import Section from '@components/page/Section.astro';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'SGID data categories',
+  pillar: Pillar.PRODUCTS,
+  section: stripeSections([
+    { title: 'SGID Index', actionText: 'Find data', actionUrl: '/products/sgid/sgid-index' },
+    { title: 'SGID data categories' },
+  ]),
+};
 ---
 
-<Layout title="SGID data categories">
-  <Section title="SGID data categories">
+<Layout {...page}>
+  <Section {...page.section[0]}>
+    <p>
+      The SGID Index is a comprehensive list of data available from the SGID. The index is organized by data category
+      and includes a description of each dataset and the organization that maintains the data. The index is updated
+      regularly as new data becomes available. The SGID Index is a valuable resource for anyone looking for GIS data in
+      Utah.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
     <div class="grid grid-cols-3 gap-4 lg:grid-cols-5 lg:gap-16">
       <a class="inline-flex flex-col items-center justify-self-center p-2" href="/products/sgid/911">
         <DataCategory element="9" name="11" label="911" key="emergency" />
@@ -91,89 +111,5 @@ import Layout from '@layouts/FullWidth.astro';
         <DataCategory element="Wa" name="Water" key="water" />
       </a>
     </div>
-  </Section>
-  <Section title="Choosing a data source" stripe>
-    <p>
-      With so many ways to access SGID Data, how do you you know which one to use? We created a guide to help you
-      understand the best ways to access the data based on your use case.
-    </p>
-    <h4>Browsing for data</h4>
-    <BulletedList>
-      <li>Use the <a href="/products/sgid/sgid-index">SGID Index</a>.</li>
-      <li>Search the <ExternalLink href="https://opendata.gis.utah.gov">SGID Open Data site</ExternalLink>.</li>
-      <li>
-        Browse the Utah SGID groups in our <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
-          >ArcGIS Online organization</ExternalLink
-        >.
-      </li>
-    </BulletedList>
-    <h4>Desktop mapping (ArcGIS, QGIS, etc)</h4>
-    <BulletedList>
-      <li>
-        Connect directly to the <a href="/documentation/sgid/open-sgid">Open SGID</a> to load UGRC-curated vector data.
-      </li>
-      <li>
-        Consume feature services from <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
-          >ArcGIS Online</ExternalLink
-        > or <ExternalLink href="https://opendata.gis.utah.gov">Open Data</ExternalLink>.
-      </li>
-      <li>
-        Download shapefiles or geodatabases from <ExternalLink href="https://opendata.gis.utah.gov"
-          >Open Data</ExternalLink
-        > or from the steward's website.
-      </li>
-      <li>
-        Add a raster base map or imagery from <a href="/products/discover">Discover</a>.
-      </li>
-      <li>
-        Download raster data from the <ExternalLink href="https://raster.utah.gov"
-          >Raster Discovery web app</ExternalLink
-        >.
-      </li>
-    </BulletedList>
-    <h4>ArcGIS Online webmaps and storymaps</h4>
-    <BulletedList>
-      <li>
-        Consume feature services from <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
-          >ArcGIS Online</ExternalLink
-        > or <ExternalLink href="https://opendata.gis.utah.gov">Open Data</ExternalLink>.
-      </li>
-      <li>
-        Add a raster base map or imagery from <a href="/products/discover">Discover</a>.
-      </li>
-    </BulletedList>
-    <h4>Custom web app development</h4>
-    <BulletedList>
-      <li>
-        Consume feature services from <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
-          >ArcGIS Online</ExternalLink
-        > or <ExternalLink href="https://opendata.gis.utah.gov">Open Data</ExternalLink>.
-      </li>
-      <li>
-        Zoom to an address and search for a boundary or nearby feature with the <ExternalLink
-          href="https://developer.mapserv.utah.gov/StartupGuide">UGRC Web API</ExternalLink
-        >.
-      </li>
-      <li>
-        Add a raster base map or imagery from <a href="/products/discover">Discover</a>.
-      </li>
-    </BulletedList>
-    <h4>Geocoding Addresses</h4>
-    <BulletedList>
-      <li>
-        Geocode individual addresses with the <ExternalLink href="https://developer.mapserv.utah.gov/StartupGuide"
-          >UGRC Web API</ExternalLink
-        >.
-      </li>
-      <li>
-        Download our <a href="/blog/2021-11-29-introducing-the-official-ugrc-api-client">API Client</a> to geocode a table
-        of addresses with the UGRC Web API.
-      </li>
-      <li>
-        Use our <ExternalLink href="https://github.com/agrc/masquerade?tab=readme-ov-file#masquerade"
-          >Masquerade service
-        </ExternalLink> to geocode within Esri products..
-      </li>
-    </BulletedList>
   </Section>
 </Layout>
