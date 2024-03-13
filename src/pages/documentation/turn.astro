@@ -26,9 +26,9 @@ const page: IStandardPageMetadata = {
   section: stripeSections([
     {},
     { title: 'GNSS network' },
-    { title: 'Getting connected' },
+    { title: 'Getting connected', actionText: 'Connect now', actionUrl: '/documentation/turn/connecting' },
     { title: 'Troubleshooting TURN' },
-    { title: 'Highlighted pages' },
+    { title: 'Resources' },
     { title: 'Organizations' },
   ]),
 };
@@ -63,7 +63,7 @@ const page: IStandardPageMetadata = {
     <p>
       Once you're ready to get connected to the TURN or Reno networks, the first step will be to create your new
       account. We have provided a step-by-step guide to getting started with our network, as well as essential resources
-      for <a href="documentation/turn/connecting">getting the most out of TURN.</a>
+      for getting the most out of TURN.
     </p>
   </Section>
   <Section {...page.section[3]}>
@@ -82,9 +82,9 @@ const page: IStandardPageMetadata = {
     </p>
     <p>
       If you're still having difficulties, you'll want to double-check to confirm that you're using the correct IP
-      address and port number. For the TURN network, you'll want to be using: <strong>165.239.144.5</strong> and <strong
+      address and port number. For the TURN network, you'll want to be using: <strong>165.239.144.5</strong> with port <strong
         >2101</strong
-      >. For the Reno network, you'll want to be using: <strong>168.179.231.11</strong> and <strong>port 2102</strong>.
+      >. For the Reno network, you'll want to be using: <strong>168.179.231.11</strong> with port <strong>2102</strong>.
     </p>
     <p>
       Cellular data is needed in order to connect to the network. For more information about coverage, view the <ExternalLink
@@ -92,7 +92,7 @@ const page: IStandardPageMetadata = {
       > and the <ExternalLink href="https://connectednation.org/">cell coverage in Nevada</ExternalLink>.
     </p>
   </Section>
-  <Section {...page.section[5]}>
+  <Section {...page.section[4]}>
     <Image slot="image" src={learning} alt="Person learning" class="w-full max-w-[400px] rounded-2xl" />
     <p>The following are websites that we recommend for surveyors and other professionals using our network:</p>
     <BulletedList>
@@ -113,9 +113,9 @@ const page: IStandardPageMetadata = {
       </li>
       <li>
         <ExternalLink href="https://www.ngs.noaa.gov/NCAT/"
-          >NGS Coordinate Conversion and Transformation Tool (NCAT):</ExternalLink
-        > This tool allows users to easily convert between different coordinate systems and/or transform between different
-        reference frames and/or datums, in a single step.
+          >NGS Coordinate Conversion<wbr /> and Transformation Tool<wbr /></ExternalLink
+        > (NCAT): This tool allows users to easily convert between different coordinate systems and/or transform between
+        different reference frames and/or datums, in a single step.
       </li>
       <li>
         <ExternalLink href="https://geodesy.noaa.gov/OPUS-Projects/OpusProjects.shtml">OPUS Projects 5.2:</ExternalLink
@@ -124,7 +124,7 @@ const page: IStandardPageMetadata = {
       </li>
     </BulletedList>
   </Section>
-  <Section {...page.section[4]}>
+  <Section {...page.section[5]}>
     <Image slot="image" src={conference} alt="A person sitting on a globe" class="w-full max-w-[400px] rounded-2xl" />
     <BulletedList>
       <li>
