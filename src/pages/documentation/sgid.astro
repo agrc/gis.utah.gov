@@ -4,6 +4,7 @@ import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types'
 import Layout from '@layouts/FullWidth.astro';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import BulletedList from '@components/page/BulletedList.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
@@ -26,6 +27,7 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     { title: 'What is the SGID' },
+    { title: 'Choosing the right SGID technology' },
     { title: 'The SGID Index', actionText: 'Search the index', actionUrl: '/products/sgid/sgid-index/' },
     { title: 'The Open SGID database', actionText: 'Get connected', actionUrl: '/documentation/sgid/open-sgid' },
     {
@@ -69,6 +71,89 @@ const page: IStandardPageMetadata = {
   </Section>
 
   <Section {...page.section[1]}>
+    <p>
+      With so many ways to access SGID Data, how do you you know which one to use? We created a guide to help you
+      understand the best ways to access the data based on your use case.
+    </p>
+    <h4>Browsing for data</h4>
+    <BulletedList>
+      <li>Use the <a href="/products/sgid/sgid-index">SGID Index</a>.</li>
+      <li>Search the <ExternalLink href="https://opendata.gis.utah.gov">SGID on ArcGIS</ExternalLink>.</li>
+      <li>
+        Browse the Utah SGID groups in our <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
+          >ArcGIS Online organization</ExternalLink
+        >.
+      </li>
+    </BulletedList>
+    <h4>Desktop mapping (ArcGIS, QGIS, etc)</h4>
+    <BulletedList>
+      <li>
+        Connect directly to the <a href="/documentation/sgid/open-sgid">Open SGID</a> to load UGRC-curated vector data.
+      </li>
+      <li>
+        Consume feature services from <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
+          >ArcGIS Online</ExternalLink
+        > or <ExternalLink href="https://opendata.gis.utah.gov">SGID on ArcGIS</ExternalLink>.
+      </li>
+      <li>
+        Download shapefiles or geodatabases from <ExternalLink href="https://opendata.gis.utah.gov"
+          >SGID on ArcGIS</ExternalLink
+        > or from the steward's website.
+      </li>
+      <li>
+        Add a raster base map or imagery from <a href="/products/discover">Discover</a>.
+      </li>
+      <li>
+        Download raster data from the <ExternalLink href="https://raster.utah.gov">Raster Discovery app</ExternalLink>.
+      </li>
+    </BulletedList>
+    <h4>ArcGIS Online webmaps and storymaps</h4>
+    <BulletedList>
+      <li>
+        Consume feature services from <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
+          >ArcGIS Online</ExternalLink
+        > or <ExternalLink href="https://opendata.gis.utah.gov">SGID on ArcGIS</ExternalLink>.
+      </li>
+      <li>
+        Add a raster base map or imagery from <a href="/products/discover">Discover</a>.
+      </li>
+    </BulletedList>
+    <h4>Custom web app development</h4>
+    <BulletedList>
+      <li>
+        Consume feature services from <ExternalLink href="https://utah.maps.arcgis.com/home/groups.html"
+          >ArcGIS Online</ExternalLink
+        > or <ExternalLink href="https://opendata.gis.utah.gov">SGID on ArcGIS</ExternalLink>.
+      </li>
+      <li>
+        Zoom to an address and search for a boundary or nearby feature with the <ExternalLink
+          href="https://developer.mapserv.utah.gov/StartupGuide">UGRC API</ExternalLink
+        >.
+      </li>
+      <li>
+        Add a raster base map or imagery from <a href="/products/discover">Discover</a>.
+      </li>
+    </BulletedList>
+    <h4>Geocoding Addresses</h4>
+    <BulletedList>
+      <li>
+        Geocode individual addresses with the <ExternalLink href="https://developer.mapserv.utah.gov/StartupGuide"
+          >UGRC API</ExternalLink
+        >.
+      </li>
+      <li>
+        Download our <a href="/blog/2021-11-29-introducing-the-official-ugrc-api-client">API Client</a> to geocode a table
+        of addresses with the UGRC API.
+      </li>
+      <li>
+        Use our <ExternalLink href="https://github.com/agrc/masquerade?tab=readme-ov-file#masquerade"
+          >Masquerade service
+        </ExternalLink> to geocode within Esri products..
+      </li>
+    </BulletedList>
+  </Section>
+
+  <Section {...page.section[2]}>
     <Image slot="image" src={sgidIndexPhoto} alt="a person using a search engine" class="w-full max-w-[400px]" />
     <p>
       The SGID Index is <span class="font-bold">the primary source</span> of information for SGID datasets. It includes links
@@ -78,7 +163,7 @@ const page: IStandardPageMetadata = {
       you would like your data to be included in the SGID Index.
     </p>
   </Section>
-  <Section {...page.section[2]}>
+  <Section {...page.section[3]}>
     <Image slot="image" src={openSgidPhoto} alt="a person connected to a database" class="w-full max-w-[400px]" />
     <p>
       The Open SGID is a publicly available database containing our curated collection of GIS datasets. You can use this
@@ -89,7 +174,7 @@ const page: IStandardPageMetadata = {
       >. Please read, understand, and abide by the <a href="/documentation/policy/open-sgid">terms of use</a> prior to connecting.
     </p>
   </Section>
-  <Section {...page.section[3]}>
+  <Section {...page.section[4]}>
     <Image
       slot="image"
       src={arcGisOnlinePhoto}
@@ -114,7 +199,7 @@ const page: IStandardPageMetadata = {
       attributes or geometry in an application or script, or include the data in an analysis.
     </p>
   </Section>
-  <Section {...page.section[4]}>
+  <Section {...page.section[5]}>
     <Image
       slot="image"
       src={sgidOpenDataPhoto}
@@ -122,8 +207,8 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px]"
     />
     <p>
-      The SGID on ArcGIS site is a single destination for ArcGIS Online GIS resources stewarded by multiple agencies
-      with ArcGIS Online accounts. Each item in the Hub contains data download links along with web service links for
+      The SGID on ArcGIS is a single destination for ArcGIS Online GIS resources stewarded by multiple agencies with
+      ArcGIS Online accounts. Each item in the Hub contains data download links along with web service links for
       consuming the datasets in web maps and other applications. We share all our curated datasets through the site and
       encourage other agencies and organizations to share their datasets with the SGID on ArcGIS as well to help spread
       GIS data to the widest possible audience.
@@ -134,7 +219,7 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
 
-  <Section {...page.section[5]}>
+  <Section {...page.section[6]}>
     <Image slot="image" src={discoverLogo} alt="the discover wavy gravy logo" class="w-full max-w-[400px]" />
     <p>
       Discover complements the SGID vector GIS data with raster imagery and base maps. The base maps are created by
@@ -145,7 +230,7 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
 
-  <Section {...page.section[6]}>
+  <Section {...page.section[7]}>
     <p>
       The Raster discovery app allows users to search and download all of UGRC's raster datasets, including
       publicly-available <a href="/products/sgid/aerial-photography">imagery</a>,
@@ -156,10 +241,10 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
 
-  <Section {...page.section[7]}>
+  <Section {...page.section[8]}>
     <Image slot="image" src={apiLogo} alt="the api wavy gravy logo" class="w-full max-w-[400px]" />
     <p>
-      UGRC’s Web API is an http-enabled service for accessing this valuable geospatial data. From geocoding addresses
+      UGRC’s API is an http-enabled service for accessing this valuable geospatial data. From geocoding addresses
       against the most accurate statewide roads and address points dataset to querying any data layer in the Open SGID,
       the solutions created by the API are endless. The API powers UGRC’s <ExternalLink
         href="https://www.npmjs.com/search?q=%40ugrc">components</ExternalLink
@@ -168,7 +253,7 @@ const page: IStandardPageMetadata = {
       > which can help you navigate the sea of data within the SGID.
     </p>
   </Section>
-  <Section {...page.section[8]}>
+  <Section {...page.section[9]}>
     <Image
       slot="image"
       src={sharePhoto}
@@ -190,8 +275,8 @@ const page: IStandardPageMetadata = {
       We hope you'll follow the example of our current contributors and consider sharing your data with a broad audience
       through the SGID. We have three separate "tracks" to follow based on where your data fits best: the <strong
         >SGID Index</strong
-      >, the <strong>SGID Open Data Site</strong>, and the <strong>Open SGID</strong>. There's also a separate process
-      for contributing to or updating an existing SGID dataset.
+      >, the <strong>SGID on ArcGIS</strong>, and the <strong>Open SGID</strong>. There's also a separate process for
+      contributing to or updating an existing SGID dataset.
     </p>
   </Section>
 </Layout>
