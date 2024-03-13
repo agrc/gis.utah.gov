@@ -1,0 +1,69 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah State Facility Locations',
+  description: 'These data represent state facilities in Utah.',
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.SOCIETY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: ['2017'],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset contains a wide and varied collection, some schools in the k-12 system and also higher education
+      buildings, Office buildings, port of entries, rest areas and fish hatcheries. It also contains many other
+      facilities such as UDOT sheds, restrooms, and other smaller facilities.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="DCFM" href="https://dfcm.utah.gov/"
+        >Division of Facilities Construction Management</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <CardWithSmallLink title="Schools" href="/products/sgid/society/pre-k-through-12" style="secondary"
+      >Utah Schools PreK to 12</CardWithSmallLink
+    >
+    <CardWithSmallLink title="Schools" href="/products/sgid/society/higher-education" style="secondary"
+      >Utah Schools Higher Education</CardWithSmallLink
+    >
+    <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary">Society Page</CardWithSmallLink>
+  </Section>
+</Layout>

@@ -693,8 +693,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Schools PreK to 12': {
     itemId: '333206ff129346e3b8660e8f6f48540e',
     name: 'Utah Schools PreK to 12',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Schools_PreKto12',
+    openSgid: 'society.schools_prek_to_12',
     layerId: 0,
   },
   'Utah Avalanche Rose Tri Canyons': {
@@ -1841,8 +1841,8 @@ export const dataPages: DownloadMetadata = {
   'Utah State Facility Locations': {
     itemId: 'a2cc4865b1a94352922c1a83bda24ba5',
     name: 'Utah State Facility Locations',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'StateFacilityLocations',
+    openSgid: 'society.state_facility_locations',
     layerId: 0,
   },
   'Utah Public Safety Answering Point Boundaries': {
@@ -2380,8 +2380,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Schools Higher Education': {
     itemId: '731644a217f445e5a638f9a84a7ada93',
     name: 'Utah Schools Higher Education',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Schools_HigherEducation',
+    openSgid: 'society.schools_higher_education',
     layerId: 0,
   },
   'Utah Census Blocks 2020': {
@@ -2394,8 +2394,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Public Libraries': {
     itemId: 'f6cf0c8ef65344b6a6e5ebeaa108f549',
     name: 'Utah Public Libraries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'PublicLibraries',
+    openSgid: 'society.public_libraries',
     layerId: 0,
   },
   'Utah Census Block Groups 2020': {
