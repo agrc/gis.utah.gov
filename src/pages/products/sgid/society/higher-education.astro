@@ -1,0 +1,98 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import { dataPages } from '@data/downloadMetadata';
+import Contacts from '@components/page/Contacts.astro';
+
+export const metadata: IMetadata = {
+  title: 'Utah Schools Higher Education',
+  description: 'Point locations of higher education institutions.',
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.SOCIETY,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: ['September 2020'],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Point locations of public and private colleges and universities, technical colleges, and other higher education
+      institutions.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>This dataset will be updated annually and/or as needed.</p>
+    <h3>Methodology</h3>
+    <p>
+      Institutions of higher education were identified on the state of Utah's <ExternalLink
+        href="https://www.utah.gov/education/colleges.html">college and universities</ExternalLink
+      > page. Using the websites of these institutions, addresses were identified for primary and branch campuses and geocoded
+      using the <ExternalLink href="http://api.mapserv.utah.gov/#geocoding">UGRC Geocoding Web API</ExternalLink>.
+    </p>
+    <h3>Fields Worth Noting</h3>
+    <pre>SchoolType</pre>
+    <BulletedList>
+      <li>Public College or University</li>
+      <li>Private College or University</li>
+      <li>Other Institution</li>
+      <li>Technical College</li>
+    </BulletedList>
+    <pre>CampusType</pre>
+    <BulletedList>
+      <li>Branch</li>
+      <li>Primary</li>
+    </BulletedList>
+    <Contacts contactKey="ugrc" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah Colleges & Universities" href="https://www.utah.gov/education/colleges.html"
+        >Utah.gov</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Schools" href="/products/sgid/society/pre-k-through-12" style="secondary"
+        >Utah Schools PreK to 12</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary">Society Page</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
