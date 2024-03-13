@@ -1764,8 +1764,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Ski Area Boundaries': {
     itemId: 'b84f9467fff5430b8a2fca157f45a5cd',
     name: 'Utah Ski Area Boundaries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'SkiAreaBoundaries',
+    openSgid: 'recreation.ski_area_boundaries',
     layerId: 0,
   },
   'Utah Ski Area Resort Locations': {

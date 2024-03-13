@@ -1,0 +1,79 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Ski Area Boundaries',
+  description: `Polygons representing the approximate boundaries of Utah's alpine ski areas and resorts.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.RECREATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`October 2014`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah ski area boundaries. These data are approximate boundaries for general reference or cartographic purposes and
+      do not accurately reflect areas of operation, avalanche control, or land ownership/leases.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Ski Utah" href="https://www.skiutah.com/"
+        >The greatest snow on earth.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="On the Snow" href="https://www.onthesnow.com/utah/skireport"
+        >Utah snow report.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Trails" href="/products/sgid/recreation/trails-pathways" style="secondary"
+        >Trails and pathways.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Trailheads" href="/products/sgid/recreation/trailheads" style="secondary"
+        >Trailhead locations.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Golf" href="/products/sgid/recreation/golf-courses" style="secondary"
+        >Golf courses.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Cemeteries" href="/products/sgid/society/cemeteries" style="secondary"
+        >Cemetery locations.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
