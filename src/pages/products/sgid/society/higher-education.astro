@@ -8,29 +8,30 @@ import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
 
+import BulletedList from '@components/page/BulletedList.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
-import BulletedList from '@components/page/BulletedList.astro';
 import { dataPages } from '@data/downloadMetadata';
-import Contacts from '@components/page/Contacts.astro';
 
 export const metadata: IMetadata = {
   title: 'Utah Schools Higher Education',
-  description: 'Point locations of higher education institutions.',
+  description:
+    'Point locations of public and private colleges and universities, technical colleges, and other higher education institutions.',
   stewards: ['UGRC'],
   type: ProductType.POINT,
   category: SgidCategory.SOCIETY,
-  secondaryCategory: SgidCategory.PLANNING,
 };
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: ['September 2020'],
+  updateHistory: ['September 2023', 'July 2023', 'November 2022', 'September 2020'],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -58,21 +59,26 @@ const page: IPageMetadata = {
       Institutions of higher education were identified on the state of Utah's <ExternalLink
         href="https://www.utah.gov/education/colleges.html">college and universities</ExternalLink
       > page. Using the websites of these institutions, addresses were identified for primary and branch campuses and geocoded
-      using the <ExternalLink href="http://api.mapserv.utah.gov/#geocoding">UGRC Geocoding Web API</ExternalLink>.
+      using the <ExternalLink href="http://api.mapserv.utah.gov/#geocoding">UGRC API</ExternalLink> geocoding endpoint.
     </p>
     <h3>Fields Worth Noting</h3>
-    <pre>SchoolType</pre>
-    <BulletedList>
-      <li>Public College or University</li>
-      <li>Private College or University</li>
-      <li>Other Institution</li>
-      <li>Technical College</li>
-    </BulletedList>
-    <pre>CampusType</pre>
-    <BulletedList>
-      <li>Branch</li>
-      <li>Primary</li>
-    </BulletedList>
+    <dl>
+      <DefinitionListItem title="SchoolType">
+        <BulletedList>
+          <li>Public College or University</li>
+          <li>Private College or University</li>
+          <li>Other Institution</li>
+          <li>Technical College</li>
+        </BulletedList>
+      </DefinitionListItem>
+      <DefinitionListItem title="CampusType">
+        <BulletedList>
+          <li>Branch</li>
+          <li>Primary</li>
+        </BulletedList>
+      </DefinitionListItem>
+    </dl>
+
     <Contacts contactKey="ugrc" />
   </Fragment>
 
@@ -81,7 +87,12 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="Utah Colleges & Universities" href="https://www.utah.gov/education/colleges.html"
-        >Utah.gov</CardWithPopularLink
+        >Utah.gov curated education resources.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="STEM action center" href="https://stem.utah.gov/"
+        >Utah’s partner in promoting Science, Technology, Engineering and Math education through the identification and
+        support of best practices and leveraging of resources across education, industry, government and community
+        partners to support economic prosperity.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
@@ -89,9 +100,10 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Schools" href="/products/sgid/society/pre-k-through-12" style="secondary"
-        >Utah Schools PreK to 12</CardWithSmallLink
+        >SGID Utah schools locations from pre-k through grade 12.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary">Society Page</CardWithSmallLink
+      <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary"
+        >SGID society category index.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

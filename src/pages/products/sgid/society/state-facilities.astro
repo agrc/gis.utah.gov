@@ -17,7 +17,9 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah State Facility Locations',
-  description: 'These data represent state facilities in Utah.',
+  description: `This dataset contains a wide and varied collection, some schools in the k-12 system and also
+  higher education buildings, Office buildings, port of entries, rest areas, and fish hatcheries.
+  It also contains many other facilities such as UDOT sheds, restrooms, and other smaller facilities.`,
   stewards: ['UGRC'],
   type: ProductType.POINT,
   category: SgidCategory.SOCIETY,
@@ -38,7 +40,7 @@ const page: IPageMetadata = {
   <Fragment slot="summary">
     <p>
       This dataset contains a wide and varied collection, some schools in the k-12 system and also higher education
-      buildings, Office buildings, port of entries, rest areas and fish hatcheries. It also contains many other
+      buildings, Office buildings, port of entries, rest areas, and fish hatcheries. It also contains many other
       facilities such as UDOT sheds, restrooms, and other smaller facilities.
     </p>
   </Fragment>
@@ -52,7 +54,12 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="DCFM" href="https://dfcm.utah.gov/"
-        >Division of Facilities Construction Management</CardWithPopularLink
+        >Division of Facilities Construction Management homepage.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Open source places" href="/products/sgid/society/open-source-places"
+        >Point representation of places of interest including businesses, restaurants, places of worship, airports,
+        parks, schools, event centers, apartment complexes, hotels, and car dealerships in Utah that have been derived
+        from OpenStreetMap (OSM).</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
@@ -64,6 +71,5 @@ const page: IPageMetadata = {
     <CardWithSmallLink title="Schools" href="/products/sgid/society/higher-education" style="secondary"
       >Utah Schools Higher Education</CardWithSmallLink
     >
-    <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary">Society Page</CardWithSmallLink>
   </Section>
 </Layout>
