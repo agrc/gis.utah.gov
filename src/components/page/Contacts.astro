@@ -46,9 +46,11 @@ const contacts: Contact[] = Array.isArray(allContacts[contactKey])
             <li>
               <a href={`mailto:${contact.email}?subject=${encodedSubject}`}>{contact.email}</a>
             </li>
-            <li>
-              <a href={`tel:${contact.phone}`}>{contact.phone}</a>
-            </li>
+            {contact.phone && (
+              <li>
+                <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+              </li>
+            )}
             <li>{contact.agency}</li>
           </ul>
         </div>
