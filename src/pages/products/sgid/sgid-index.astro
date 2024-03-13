@@ -10,7 +10,16 @@ const records = await getStewardshipRecords();
 ---
 
 <Layout title={`SGID index`}>
-  <Section>
+  <Section title="Search the SGID" titlePosition="center">
+    <div slot="sub-title" class="flex flex-col justify-center">
+      <div>
+        <a href="/documentation/sgid">What is the SGID</a> ·
+        <a href="/products/sgid/categories">All SGID data</a>
+      </div>
+      <div>
+        <a href="/documentation/sgid/sharing">Share with the SGID</a>
+      </div>
+    </div>
     <SgidIndexSearch records={records} astroSite={Astro.site} client:idle />
   </Section>
 </Layout>

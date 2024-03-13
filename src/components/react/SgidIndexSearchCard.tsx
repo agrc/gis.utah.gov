@@ -19,51 +19,56 @@ export default function SgidIndexSearchCard({ astroSite, record, resultIndex }: 
     url: string;
     title: string;
   };
+
   const apps = [] as appLink[];
+  let urlString = record.productPagePath;
+
   if (record.inActionUrl) {
     apps.push({ url: record.inActionUrl, title: 'Data in action' });
   }
-  if (record.server?.host) {
-    apps.push({ url: getFeatureServiceUrl(record.server), title: 'Feature service' });
-  }
   if (record.hub?.itemId) {
+    if (!urlString) {
+      urlString = getArcGisHubUrl(record.hub);
+    }
+
     apps.push({ url: getArcGisHubUrl(record.hub), title: 'ArcGIS Hub item' });
   }
+  if (record.server?.host) {
+    if (!urlString) {
+      urlString = getFeatureServiceUrl(record.server);
+    }
 
-  let urlString = record.productPagePath;
+    apps.push({ url: getFeatureServiceUrl(record.server), title: 'Feature service' });
+  }
+
   let logo = ugrcLogo.src;
+  let alternateText = 'SGID UGRC dataset';
+
   if (urlString.startsWith('https://')) {
     const url = new URL(urlString);
     switch (url.hostname) {
       case 'dwr-data-utahdnr.hub.arcgis.com':
         logo = dnrLogo.src;
+        alternateText = 'SGID DNR dataset';
         break;
       case 'data-uplan.opendata.arcgis.com':
         logo = udotLogo.src;
+        alternateText = 'SGID UDOT dataset';
         break;
     }
   } else {
-    urlString = (import.meta.env.DEV ? 'http://localhost:4321' : astroSite?.href) + urlString;
+    urlString = (import.meta.env.DEV ? 'http://localhost:4321' : astroSite?.href.slice(0, -1)) + urlString;
   }
 
   return (
     <div className="flex grow flex-col">
-      {record.productPagePath.length > 0 ? (
-        <a href={urlString} className="custom-style group" rel="nofollow noopener">
-          <div className="flex items-center gap-2">
-            <img src={logo} alt="SGID Internal Data Set" className="size-6" />
-            <div className="text-xs">{`${urlString}`}</div>
-          </div>
-          <h4 className="group-hover:underline">{record.displayName}</h4>
-        </a>
-      ) : (
-        <>
-          <div className="flex items-center gap-2">
-            <img src={logo} alt="SGID Internal Data Set" className="size-6" />
-          </div>
-          <h4>{record.displayName}</h4>
-        </>
-      )}
+      <a href={urlString} className="custom-style group" rel="nofollow noopener">
+        <div className="flex items-center gap-2">
+          <img src={logo} alt={alternateText} className="size-6" />
+          <div className="text-xs">{`${urlString}`}</div>
+        </div>
+        <h4 className="group-hover:underline">{record.displayName}</h4>
+      </a>
       <div className="primary-background dark:text-white">{record.description}</div>
       <div className="flex flex-wrap space-x-2">
         <div>
