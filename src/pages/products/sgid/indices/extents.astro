@@ -16,7 +16,7 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Raster Extents',
+  title: 'Utah Raster Coverage Extents',
   description: `The polygon coverage extents of the various raster datasets available from the Raster Discover Application.`,
   stewards: ['UGRC'],
   type: ProductType.POLYGON,
@@ -25,12 +25,19 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-
   updateHistory: [`As needed`],
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{
+    skipInDepth: true,
+  }}
+>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
@@ -38,33 +45,30 @@ const page: IPageMetadata = {
       The Raster Extents are polygon areas representing the coverage and attributes of the various raster datasets
       available from the Raster Discover Application.
     </p>
-  </Fragment>
-
-  <Section title="Use the data: Lidar Extents" slot="downloads" titlePosition="center">
-    <HubDownloads {...dataPages['Utah LiDAR Extents']} />
-  </Section>
-  <Section title="Use the data: Aerial Photography Extents" slot="downloads" titlePosition="center" stripe>
-    <HubDownloads {...dataPages['Utah Aerial Photography Extents']} />
-  </Section>
-  <Section title="Use the data: USGS DEM Extents" slot="downloads" titlePosition="center">
-    <HubDownloads {...dataPages['Utah USGS DEM Extents']} />
-  </Section>
-  <Section title="Use the data: Auto-Correlated DEMs" slot="downloads" titlePosition="center" stripe>
-    <HubDownloads {...dataPages['Utah Auto Correlated DEM Extents']} />
-  </Section>
-  <Section title="Use the data: Contour Extents" slot="downloads" titlePosition="center">
-    <HubDownloads {...dataPages['Utah Contour Line Extents']} />
-  </Section>
-  <Section title="Use the data: USGS Topographic Map (DRG) Extents" slot="downloads" titlePosition="center">
-    <HubDownloads {...dataPages['Utah DRG Extents']} />
-  </Section>
-
-  <Fragment slot="description">
     <p>
       Each polygon contains multiple attributes about the various raster datasets including product descriptions. Of
       note are the attributes <code>Project_Status</code> and <code>USGS_QualityLevel</code> in the Lidar Extents.
     </p>
   </Fragment>
+
+  <Section title="Get the Lidar extents" slot="downloads" titlePosition="center">
+    <HubDownloads {...dataPages['Utah LiDAR Extents']} />
+  </Section>
+  <Section title="Get the Aerial photography extents" slot="downloads" titlePosition="center" stripe>
+    <HubDownloads {...dataPages['Utah Aerial Photography Extents']} />
+  </Section>
+  <Section title="Get the USGS DEM extents" slot="downloads" titlePosition="center">
+    <HubDownloads {...dataPages['Utah USGS DEM Extents']} />
+  </Section>
+  <Section title="Get the auto-correlated DEM extents" slot="downloads" titlePosition="center" stripe>
+    <HubDownloads {...dataPages['Utah Auto Correlated DEM Extents']} />
+  </Section>
+  <Section title="Get the Contour extents" slot="downloads" titlePosition="center">
+    <HubDownloads {...dataPages['Utah Contour Line Extents']} />
+  </Section>
+  <Section title="Get the USGS Topographic Map (DRG) extents" slot="downloads" titlePosition="center" stripe>
+    <HubDownloads {...dataPages['Utah DRG Extents']} />
+  </Section>
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>

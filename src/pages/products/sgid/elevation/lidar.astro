@@ -1,6 +1,6 @@
 ---
 import type { IMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory, type IStandardPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory, type IStandardPageMetadata, Pillar } from '@models/products/sgid/types';
 
 import Layout from '@layouts/FullWidth.astro';
 
@@ -52,8 +52,8 @@ export const metadata: IMetadata = {
 };
 
 const page: IStandardPageMetadata = {
-  title: 'Lidar elevation data',
-  pillar: 'Elevation',
+  ...metadata,
+  pillar: Pillar.PRODUCTS,
   section: stripeSections([
     {},
     {
