@@ -1,24 +1,32 @@
 ---
-import { ProductType, SgidCategory, type IMetadata, type IStandardPageMetadata } from '@models/products/sgid/types';
+import {
+  ProductType,
+  SgidCategory,
+  type IMetadata,
+  type IStandardPageMetadata,
+  Pillar,
+} from '@models/products/sgid/types';
 
+import Layout from '@layouts/FullWidth.astro';
+
+import BreadCrumbs from '@components/data/BreadCrumbs.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/FullWidth.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 
 import { Image } from 'astro:assets';
 
 import doq from '@images/sgid/doq_sample.png';
 
-import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
-import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import GridForMoreResources from '@components/page/GridForMoreResources.astro';
-import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import { stripeSections } from '@utils/page';
 
 export const metadata: IMetadata = {
   title: 'Digital Orthophoto Quadrangles (DOQ)',
-  description: `Low resolution color and black and white aerial photography collections by airplane.`,
+  description: `Low resolution color and black and white aerial photography collected by airplane.`,
   stewards: ['UGRC', 'BLM'],
   type: ProductType.IMAGERY_RASTER,
   category: SgidCategory.AERIAL_PHOTOGRAPHY,
@@ -26,7 +34,7 @@ export const metadata: IMetadata = {
 
 const page: IStandardPageMetadata = {
   title: 'DOQs',
-  pillar: 'Aerial-Photography',
+  pillar: Pillar.PRODUCTS,
   section: stripeSections([
     {
       title: 'Digital Orthophoto Quadrangle (DOQ)',
@@ -59,11 +67,14 @@ const page: IStandardPageMetadata = {
       actionText: 'Download 1936-1952 SCS Photomaps',
       actionUrl: 'https://raster.utah.gov/?cat=Historical',
     },
+    { title: 'More resources', titlePosition: 'center' },
+    { title: 'You might also like', titlePosition: 'center' },
   ]),
 };
 ---
 
-<Layout title={page.title} pillar={page.pillar}>
+<Layout {...page}>
+  <BreadCrumbs category={metadata.category} product={metadata.title} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <a href={doq.src} slot="image">
@@ -136,7 +147,7 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
 
-  <Section title="More resources" stripe titlePosition="center">
+  <Section {...page.section[6]}>
     <GridForMoreResources>
       <CardWithPopularLink
         title="High Resolution Orthophotography (HRO)"
@@ -151,12 +162,17 @@ const page: IStandardPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" titlePosition="center">
+  <Section {...page.section[7]}>
     <GridForYouMightLike>
-      <CardWithSmallLink title="Raster" href="https://raster.utah.gov/" style="secondary"
-        >UGRC Raster Data Discovery Application</CardWithSmallLink
+      <CardWithSmallLink
+        title="UGRC Raster data discovery application"
+        href="https://raster.utah.gov/"
+        style="secondary">A web application that allows you to download UGRC imagery.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov" style="secondary">Atlas Utah</CardWithSmallLink
+      <CardWithSmallLink
+        title="Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS"
+        href="/blog/2019-09-03-digital-maps-gis-history"
+        style="secondary">A blog post by Greg Bunce explaining digital maps.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
