@@ -18,15 +18,16 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah Ski Area Boundaries',
-  description: `Polygons representing the approximate boundaries of Utah's alpine ski areas and resorts.`,
+  description: `Polygons representing the approximate boundaries of Utah's alpine ski and snowboard areas and resorts.`,
   stewards: ['UGRC'],
   type: ProductType.POLYGON,
   category: SgidCategory.RECREATION,
+  secondaryCategory: SgidCategory.SOCIETY,
 };
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`October 2014`],
+  updateHistory: [`August 2015`, `October 2014`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -38,8 +39,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Utah ski area boundaries. These data are approximate boundaries for general reference or cartographic purposes and
-      do not accurately reflect areas of operation, avalanche control, or land ownership/leases.
+      These data are approximate boundaries for general reference or cartographic purposes and do not accurately reflect
+      areas of operation, avalanche control, or land ownership/leases.
     </p>
   </Fragment>
 
