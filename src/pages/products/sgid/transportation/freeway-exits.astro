@@ -1,0 +1,78 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Freeway Exit Locations',
+  description: `Exit locations along UDOT Routes.`,
+  stewards: ['Utah Department of Transportation (UDOT)'],
+  type: ProductType.POINT,
+  category: SgidCategory.TRANSPORTATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`2023`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>Freeway exit locations are point locations that represents exits along UDOT Routes.</p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The ExitName field provides the primary route name and exit number plus the connecting route number or street name
+      and place name carried by the exit sign. Route number and exit number are also carried in separate fields.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UDOT Data Portal" href="https://data-uplan.opendata.arcgis.com/"
+        >Search UDOT's Geospatial Data</CardWithPopularLink
+      >
+      <CardWithPopularLink title="UDOT Homepage" href="https://www.udot.utah.gov/connect/"
+        >Including data on current and seasonal conditions</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UDOT's UPlan" href="https://uplan.maps.arcgis.com/home/index.html" style="secondary"
+        >UDOT's home for GIS data and applications.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="UDOT's speed limits map"
+        href="https://uplan.maps.arcgis.com/home/webmap/viewer.html?webmap=815ead7b87bb4d09872707495205445c"
+        style="secondary"
+      >
+        This map depicts the Utah State Routes speed limits as polylines.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

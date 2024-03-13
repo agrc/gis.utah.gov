@@ -2705,6 +2705,16 @@ export const dataPages: DownloadMetadata = {
     featureServiceHost: 'https://roads.udot.utah.gov/server/rest/services/Public/',
     mapServiceId: 'Physical_Location_of_Reference_Post_RP_Open_Data',
   },
+  'Utah Freeway Exit Locations': {
+    externalHubOrganization: 'uplan',
+    name: 'Utah Freeway Exit Locations',
+    openSgid: '',
+    layerId: 0,
+    oddHubName: 'freeway-exit-locations-1',
+    itemId: '13137de7f65e4fffa4ee9f0b397045f5',
+    featureServiceHost: 'https://roads.udot.utah.gov/server/rest/services/Public/',
+    mapServiceId: 'Freeway_Exits',
+  },
   'Utah Open Source Places': {
     itemId: '45e25f4062264dc1baa3765e3dbb5d8e',
     name: 'Utah Open Source Places',
