@@ -85,7 +85,7 @@ export const staff = [
     phone: '385-313-0798',
     email: 'rkelson@utah.gov',
     x: '@RickUGRC',
-    tags: ['Discover', 'LiDAR', 'Imagery', 'parcels', 'data management'],
+    tags: ['Discover', 'Lidar', 'Imagery', 'parcels', 'data management'],
   },
   {
     name: 'Denise Peterson',

@@ -9,7 +9,7 @@ tags:
   - lidar
   - viewshed
 date: 2014-11-17 12:15:04 -0700
-title: Wireless Signals and LiDAR Derived Elevation Models
+title: Wireless Signals and Lidar Derived Elevation Models
 category: SGID Updates
 cover_image: /src/images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dtm_only.png
 cover_image_alt: DTM Bare-Earth Digital Terrain Model
@@ -17,13 +17,13 @@ cover_image_alt: DTM Bare-Earth Digital Terrain Model
 
 Specialized software allows the modeling of cellular, radio, or wireless internet signal propagation and coverage. Better, more accurate results for wireless signal propagation depend on the precision with which the earth’s surface is represented within the analysis software. Traditionally, "bare earth" Digital Terrain Models (DTMs), in which above ground features such as buildings and vegetation are not represented, are used for the analysis.
 
-Airborne-collected LiDAR data has more sophisticated capabilities for representing the earth and its features, and is becoming more available. LiDAR sensors mounted on planes uses a scanning laser range finder to collect and model a truer 3D representation. So-called "first return" Digital Surface Models (DSMs) maintain both ground and above ground surface features including buildings and vegetation. For this reason, LiDAR DSMs can be utilized to help the analysis software more accurately model cellular, radio, or wireless coverage and signal propagation.
+Airborne-collected Lidar data has more sophisticated capabilities for representing the earth and its features, and is becoming more available. Lidar sensors mounted on planes uses a scanning laser range finder to collect and model a truer 3D representation. So-called "first return" Digital Surface Models (DSMs) maintain both ground and above ground surface features including buildings and vegetation. For this reason, Lidar DSMs can be utilized to help the analysis software more accurately model cellular, radio, or wireless coverage and signal propagation.
 
-A simple way to compare the different results from the traditional DTM and the LiDAR-sourced DSM is with a GIS "viewshed" tool. A Viewshed tool determines the surface locations visible from an observation point, in our case, a cellular, radio, or wireless internet tower. In the examples below, a communication tower is set at the top of Ensign Peak just a few blocks to the north, above of the Utah State Capitol building.
+A simple way to compare the different results from the traditional DTM and the Lidar-sourced DSM is with a GIS "viewshed" tool. A Viewshed tool determines the surface locations visible from an observation point, in our case, a cellular, radio, or wireless internet tower. In the examples below, a communication tower is set at the top of Ensign Peak just a few blocks to the north, above of the Utah State Capitol building.
 
-In the model result graphics below, the red areas show, _at 3 different scales_, the areas that have clear visibility from the tower site using the DTM and, it's LiDAR counterpart DSM. With all other factors held constant, the significant variation in the results is easy to see.
+In the model result graphics below, the red areas show, _at 3 different scales_, the areas that have clear visibility from the tower site using the DTM and, it's Lidar counterpart DSM. With all other factors held constant, the significant variation in the results is easy to see.
 
-The DTM and DSM elevation models from the 2013-2014 Wasatch Front LiDAR Elevation Data used to generate these models can be downloaded from [here](/products/sgid/elevation/lidar).
+The DTM and DSM elevation models from the 2013-2014 Wasatch Front Lidar Elevation Data used to generate these models can be downloaded from [here](/products/sgid/elevation/lidar).
 
 **Important Note**: In addition to a surface models that represents the physical world, wireless network planning and other radio signal propagation software utilize many parameters to model coverage such as signal frequency, transmitter angle, earth curvature, Fresnel Zone, etc. Simple GIS Viewshed analysis, as shown, does not completely model wireless signals and their varying ability to bend and reflect but it does illustrate the possible impact of using surface model inputs that represent the physical world with differing amounts of precision.
 
