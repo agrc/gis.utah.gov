@@ -17,25 +17,25 @@ export enum Pillar {
 
 export enum BlogCategory {
   // everything API related
-  API = "API",
+  API = 'API',
   // everything data related
-  SGID = "SGID",
+  SGID = 'SGID',
   // SGID roads ciy updates
-  SGID_UPDATE = "SGID Update",
+  SGID_UPDATE = 'SGID Update',
   // everything network GPS related
-  TURN = "TURN",
+  TURN = 'TURN',
   // everything related to base maps and services ? (there’s some overlap with SGID here)
-  DISCOVER = "Discover",
+  DISCOVER = 'Discover',
   // project updates through collaboration, events
-  COLLABORATION = "Collaboration",
+  COLLABORATION = 'Collaboration',
   // survey related things not GPS network related
-  SURVEYOR = "Surveyor",
+  SURVEYOR = 'Surveyor',
   // anything not related to the API
-  DEVELOPER = "Developer",
+  DEVELOPER = 'Developer',
   // for others
-  GUESTBLOG = "Guest Blog",
+  GUESTBLOG = 'Guest Blog',
   // everything else
-  UGRC = "UGRC",
+  UGRC = 'UGRC',
 }
 
 export enum SgidCategory {
@@ -131,7 +131,7 @@ export interface Contacts {
   [key: string]: Contact | Contact[];
 }
 
-export type Row = {
+export type StewardshipRecord = {
   id: string;
   tableName: string;
   displayName: string;
@@ -141,17 +141,17 @@ export type Row = {
   description: string;
   inActionUrl?: string;
   productPagePath: string;
-  ugrcStatus: "deprecated" | "static" | "shelved" | null;
+  ugrcStatus: 'deprecated' | 'static' | 'shelved' | null;
   server?: {
     host?: string;
     serviceName: string;
     layerId: number;
-  }
+  };
   hub?: {
     title: string;
     hubName?: string;
     organization?: string;
     itemId: string;
-  }
+  };
   openSgid?: string;
 };
