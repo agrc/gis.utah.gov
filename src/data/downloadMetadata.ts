@@ -2027,11 +2027,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: '',
     layerId: 0,
   },
-  'Utah Airports': {
+  'Utah Airport Runways': {
     itemId: '32f010985c754fd288896c5aa28599bc',
     name: 'Utah Airports',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Airports',
+    openSgid: 'transportation.airports',
     layerId: 0,
   },
   'Utah Roads': {

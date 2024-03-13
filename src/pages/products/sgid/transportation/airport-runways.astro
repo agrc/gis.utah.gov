@@ -1,0 +1,78 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Disclaimer from '@components/data/Disclaimer.astro';
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import NumberedList from '@components/page/NumberedList.astro';
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Airport Runways',
+  description: `Airport and landing strip runway outlines.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYLINE,
+  category: SgidCategory.TRANSPORTATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`January 2023`, `October 2022`, `September 2009`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Airport facilities, runways, and landing strip outlines. The runway and airport facility outlines shown include
+      those of international, regional, and municipal, airports as well as remote airstrips.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="FAA" href="https://www.faa.gov/">Federal Aviation Administration.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Visit Utah" href="https://www.visitutah.com/plan-your-trip/getting-to-utah/Airports"
+        >Salt Lake City International and Utah airports.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Airports" href="/products/sgid/transportation/airports" style="secondary"
+        >Airport locations</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
+        >Road centerlines</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
