@@ -22,7 +22,6 @@ export const metadata: IMetadata = {
   stewards: ['UGRC'],
   type: ProductType.POINT,
   category: SgidCategory.SOCIETY,
-  secondaryCategory: SgidCategory.PLANNING,
 };
 
 const page: IPageMetadata = {
@@ -39,8 +38,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Utah Public Libraries provides locations and information for public libraries and their branches throughout Utah.
-      Includes base location for bookmobile libraries.
+      Utah public libraries provides locations and information for public libraries and their branches throughout Utah.
+      The data includes base locations for bookmobile libraries.
     </p>
   </Fragment>
 
@@ -52,15 +51,25 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="State Libraries" href="https://libraries.utah.gov"
-        >Utah State Library Division</CardWithPopularLink
+      <CardWithPopularLink title="State Library Division" href="https://library.utah.gov/"
+        >Visit the Utah State Library Division website.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Find your library" href="https://library.utah.gov/directory/"
+        >Find your library.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary">Society Page</CardWithSmallLink
+      <CardWithSmallLink
+        title="Higher education locations"
+        href="/products/sgid/society/higher-education"
+        style="secondary"
+        >Public and private colleges and universities, technical colleges, and other higher education institutions</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Post office locations" href="/products/sgid/location/post-offices" style="secondary"
+        >Approximate locations of USPS Post office locations in Utah.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

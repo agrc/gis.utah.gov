@@ -18,6 +18,7 @@ import Section from '@components/page/Section.astro';
 import BulletedList from '@components/page/BulletedList.astro';
 import { dataPages } from '@data/downloadMetadata';
 import Contacts from '@components/page/Contacts.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 
 export const metadata: IMetadata = {
   title: 'Utah Schools PreK to 12',
@@ -25,7 +26,6 @@ export const metadata: IMetadata = {
   stewards: ['UGRC'],
   type: ProductType.POINT,
   category: SgidCategory.SOCIETY,
-  secondaryCategory: SgidCategory.PLANNING,
 };
 
 const page: IPageMetadata = {
@@ -42,7 +42,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      This dataset contains point locations for preschool and K-12 schools in the state of Utah -- updated for the
+      This dataset contains point locations for preschool and K-12 schools in the state of Utah - updated for the
       2019-2020 school year. Higher education and adult vocational training are not included in the dataset.
     </p>
   </Fragment>
@@ -94,25 +94,29 @@ const page: IPageMetadata = {
       available, commercial mapping and search web apps.
     </p>
     <h3>Fields Worth Noting</h3>
-    <pre>SchoolType</pre>
-    <BulletedList>
-      <li>Residential Treatment</li>
-      <li>Adult High</li>
-      <li>Vocational</li>
-      <li>Special Education</li>
-      <li>Regular Education</li>
-      <li>YIC - <ExternalLink href="https://www.schools.utah.gov/yic">Youth-In-Custody</ExternalLink></li>
-      <li>Alternative</li>
-    </BulletedList>
+    <dl>
+      <DefinitionListItem title="SchoolType">
+        <BulletedList>
+          <li>Residential Treatment</li>
+          <li>Adult High</li>
+          <li>Vocational</li>
+          <li>Special Education</li>
+          <li>Regular Education</li>
+          <li>YIC - <ExternalLink href="https://www.schools.utah.gov/yic">Youth-In-Custody</ExternalLink></li>
+          <li>Alternative</li>
+        </BulletedList>
+      </DefinitionListItem>
 
-    <pre>SchoolLevel</pre>
-    <BulletedList>
-      <li>MID - Junior / Middle School</li>
-      <li>HIGH - High School</li>
-      <li>K12 - Kindergarten through 12th Grade</li>
-      <li>PREK - Pre Kindergarten</li>
-      <li>ELEM - Elementary School</li>
-    </BulletedList>
+      <DefinitionListItem title="SchoolLevel">
+        <BulletedList>
+          <li>MID - Junior / Middle School</li>
+          <li>HIGH - High School</li>
+          <li>K12 - Kindergarten through 12th Grade</li>
+          <li>PREK - Pre Kindergarten</li>
+          <li>ELEM - Elementary School</li>
+        </BulletedList>
+      </DefinitionListItem>
+    </dl>
 
     <h3>Acronyms and Abbreviations in the Data</h3>
     <p>LEA: Local Educational Agency (i.e., school district)</p>
@@ -132,7 +136,12 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="USBE" href="https://schools.utah.gov"
-        >Utah State Board of Education</CardWithPopularLink
+        >Utah State Board of Education homepage.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="School district boundaries"
+        href="/products/sgid/political/state-school-board-districts"
+        >State school board districts for 2022 to 2032.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
@@ -140,9 +149,10 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Schools" href="/products/sgid/society/higher-education" style="secondary"
-        >Utah Schools Higher Education</CardWithSmallLink
+        >Utah higher education institution locations from the SGID.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary">Society Page</CardWithSmallLink
+      <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary"
+        >The SGID society category index page.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
