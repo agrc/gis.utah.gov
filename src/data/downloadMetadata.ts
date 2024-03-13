@@ -2027,7 +2027,7 @@ export const dataPages: DownloadMetadata = {
     openSgid: '',
     layerId: 0,
   },
-  'Utah Airport Runways': {
+  'Utah Airports': {
     itemId: '32f010985c754fd288896c5aa28599bc',
     name: 'Utah Airports',
     featureServiceId: 'Airports',
