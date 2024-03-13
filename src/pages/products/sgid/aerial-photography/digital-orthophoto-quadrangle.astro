@@ -8,7 +8,7 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
 
-import doq from '@images/sgid/doq_sample.jpg';
+import doq from '@images/sgid/doq_sample.png';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -18,7 +18,7 @@ import { stripeSections } from '@utils/page';
 
 export const metadata: IMetadata = {
   title: 'Digital Orthophoto Quadrangles (DOQ)',
-  description: `Digital orthophoto aerial photography.`,
+  description: `Low resolution color and black and white aerial photography collections by airplane.`,
   stewards: ['UGRC', 'BLM'],
   type: ProductType.IMAGERY_RASTER,
   category: SgidCategory.AERIAL_PHOTOGRAPHY,
@@ -30,8 +30,9 @@ const page: IStandardPageMetadata = {
   section: stripeSections([
     {
       title: 'Digital Orthophoto Quadrangle (DOQ)',
-      // actionText: 'Explore our Lidar derived DEMs',
-      // actionUrl: '/products/sgid/elevation/lidar/',
+      actionText: 'Download DOQs',
+      actionUrl:
+        'https://raster.utah.gov/?catGroup=DOQ%201990s%20(1m),DOQ%201977%20(1m),Color%20DOQ%202003%20(1m)&title=Utah%20DOQ%20Imagery',
     },
     {
       title: '2003 COLOR DOQs',
@@ -88,13 +89,14 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <p>1-meter color DOQs for most of Iron and Beaver counties from 2003.</p>
+    <p>
+      1-meter color DOQs for most of Iron and Beaver counties from 2003. The date the photography was flown can be found
+      in the <code>.met</code> metadata file after <code>SOURCE_IMAGE_DATE</code> in the image tile.
+    </p>
   </Section>
   <Section {...page.section[2]}>
     <p>
-      Statewide coverage of 1-meter resolution Black and White Digital Orthophoto Quads (DOQs). The <code>.met</code> file
-      is all the original header information from the image and contains the dates the images were flown and photographed.
-      Some DOQs have <ExternalLink
+      Statewide coverage of 1-meter resolution Black and White Digital Orthophoto Quads (DOQs). Some DOQs have <ExternalLink
         href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/doq/DOQ_two_vintages.txt"
         >2 vintages</ExternalLink
       > of dates the images were flown. Usually one image will be from 1993 and another 1997 or newer. Refer to <ExternalLink
@@ -103,7 +105,8 @@ const page: IStandardPageMetadata = {
       > for quadrangle names and associated UGRC Q number.
     </p>
     <p>
-      For more information about these DOQs refer to the <ExternalLink
+      The <code>.met</code> metadata file is all the original header information from the image and contains the dates the
+      images were flown and photographed. For more information about these DOQs refer to the <ExternalLink
         href="https://storage.googleapis.com/state-of-utah-sgid-downloads/aerial-photography/doq/DOQ_Info.txt"
         >DOQ Information Sheet</ExternalLink
       >.
@@ -112,11 +115,16 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[3]}>
     <p>
       1-meter Black and White DOQ of Salt Lake County from 1977. The DOQs are available as single quads and also as a
-      Mr.Sid county mosaic.
+      Mr.Sid county mosaic. The date the photography was flown can be found in the <code>.txt</code> metadata file under
+      <code>Single_Date/Time: Calendar_Date:</code> in the image tile.
     </p>
   </Section>
   <Section {...page.section[4]}>
-    <p>1-meter color and infrared imagery from the BLM collected in the 1970s. This is not a statewide coverage.</p>
+    <p>
+      1-meter color and infrared imagery from the BLM collected in the 1970s. This is not a statewide coverage. The year
+      the photography was flown can be found in the <code>.xml</code> metadata file after <code>sngdate caldate</code> in
+      the image tile.
+    </p>
   </Section>
   <Section {...page.section[5]}>
     <p>
@@ -130,25 +138,25 @@ const page: IStandardPageMetadata = {
 
   <Section title="More resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="HRO" href="/products/sgid/aerial-photography/high-resolution-orthophotography"
-        >Item 1 description.</CardWithPopularLink
+      <CardWithPopularLink
+        title="High Resolution Orthophotography (HRO)"
+        href="/products/sgid/aerial-photography/high-resolution-orthophotography"
+        >High resolution color aerial photography collections by airplane starting in 2003.</CardWithPopularLink
       >
-      <CardWithPopularLink title="DOQ" href="/products/sgid/aerial-photography/digital-orthophoto-quadrangle"
-        >Digital orthophoto aerial photography.</CardWithPopularLink
-      >
-      <CardWithPopularLink title="NAIP" href="/products/sgid/aerial-photography/naip"
-        >Item 2 description.</CardWithPopularLink
+      <CardWithPopularLink
+        title="National Agriculture Imagery Program (NAIP)"
+        href="/products/sgid/aerial-photography/naip"
+        >Low resolution color and infrared aerial photography collections by airplane starting in 2003.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
 
   <Section title="You might also like" titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov" style="secondary"
-        >Description</CardWithSmallLink
+      <CardWithSmallLink title="Raster" href="https://raster.utah.gov/" style="secondary"
+        >UGRC Raster Data Discovery Application</CardWithSmallLink
       >
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary"
-        >Description</CardWithSmallLink
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov" style="secondary">Atlas Utah</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
