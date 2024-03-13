@@ -20,7 +20,7 @@ The accompanying Python Notebook for this blog post can be found [here on Google
 
 ### The Open SGID
 
-The introduction of the [Open SGID](https://gis.utah.gov/introducing-open-sgid/) has opened the door for new ways to explore Utah's GIS data. Before the Open SGID, a user would typically have gone to the UGRC web page to find the data they were looking for and download it in shapefile or file geodatabase format. This can still be done today, but now that UGRC has leveraged the [Open Data](https://opendata.gis.utah.gov/) platform, there are more options for users to access geospatial data in their preferred way. Data can now be streamed to clients via web services or can be downloaded in even more formats (e.g., GeoJSON, KML, and CSV). But the recently launched Open SGID is an especially valuable resource because it is a cloud-hosted PostgreSQL PostGIS database that anyone can connect to. As the Open SGID has nightly automated updates, tapping into the Open SGID means you'll have a living connection to the freshest SGID data available.
+The introduction of the [Open SGID](https://gis.utah.gov/blog/2020-05-04-introducing-open-sgid) has opened the door for new ways to explore Utah's GIS data. Before the Open SGID, a user would typically have gone to the UGRC web page to find the data they were looking for and download it in shapefile or file geodatabase format. This can still be done today, but now that UGRC has leveraged the [SGID on ArcGIS](https://opendata.gis.utah.gov/) platform, there are more options for users to access geospatial data in their preferred way. Data can now be streamed to clients via web services or can be downloaded in even more formats (e.g., GeoJSON, KML, and CSV). But the recently launched Open SGID is an especially valuable resource because it is a cloud-hosted PostgreSQL PostGIS database that anyone can connect to. As the Open SGID has nightly automated updates, tapping into the Open SGID means you'll have a living connection to the freshest SGID data available.
 
 The Open SGID also creates an opportunity for users to pull in data and perform analysis using open source software and libraries-like Python. With this route, you don't need to worry about paying for licensed software or even installing GIS desktop software at all. And if you use a cloud-hosted Jupyter notebook—like Google Colab—you don't even have to install Python on your computer (or tablet or chromebook)!
 
@@ -73,7 +73,7 @@ counties = gpd.GeoDataFrame.from_postgis(sql, con, geom_col='shape')
 counties.plot(figsize=(10, 6), color='white', edgecolor='black')
 ```
 
-[![Utah County Boundaries](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_counties_plot.png 'Utah County Boundaries')](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_counties_plot.png)
+![Utah County Boundaries](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_counties_plot.png 'Utah County Boundaries')
 
 ### EXAMPLE 2: Davis County Address Points by Zip Code
 
@@ -104,7 +104,7 @@ plt.title('Davis County Address Points')
 plt.show()
 ```
 
-[![Davis County Address Points](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_addpts_plot.png 'Davis County Address Points')](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_addpts_plot.png)
+![Davis County Address Points](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_addpts_plot.png 'Davis County Address Points')
 
 ### EXAMPLE 3: Utah Faults Longer than One Mile
 
@@ -133,11 +133,11 @@ plt.title('Utah Faults > 1 Mile')
 plt.show()
 ```
 
-[![Utah Faults > 1 Mile](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_faults_plot.png 'Utah Faults > 1 Mile')](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_faults_plot.png)
+![Utah Faults > 1 Mile](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_faults_plot.png 'Utah Faults > 1 Mile')
 
 ## EXAMPLE 4: Libraries in State Senate District 24
 
-For this fourth example, you'll plot public libraries within State Senate District 24 by using a spatial operation, which is really where GeoPandas shines and sets itself apart from nonspatial tools.
+For this fourth example, you'll plot public libraries within State Senate District 24 by using a spatial operation, which is really where GeoPandas shines and sets itself apart from non-spatial tools.
 
 1. Start by selecting the data layers (hopefully the syntax is getting familiar now) with SQL queries and importing them with GeoPandas.
 1. Next, subset the senate districts down to just district 24 using Pandas square bracket `[]` notation.
@@ -165,7 +165,7 @@ plt.title('Libraries in Utah Senate District 24')
 plt.show()
 ```
 
-[![Libraries in Utah Senate District 24](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_libraries_plot.png 'Libraries in Utah Senate District 24')](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_libraries_plot.png)
+![Libraries in Utah Senate District 24](../../images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_libraries_plot.png 'Libraries in Utah Senate District 24')
 
 That's it! This brief tutorial has shown a few different ways to gather and analyze data from the Open SGID with the psycopg2 and GeoPandas libraries. Hopefully it was helpful and will spark your interest in both the Open SGID and using open source Python tools.
 

@@ -19,7 +19,6 @@ While we're months away from any preliminary or final funding decisions, the par
 in advance in an effort to promote coordination between the partners and avoid duplication of effort in these project areas.
 
 The proposed areas have the following square mileage:
-[![3DEP Proposal](/images/404.png '2020 3DEP Lidar Proposal A - click for larger image')](/images/404.png)
 
 Projects Already Underway
 

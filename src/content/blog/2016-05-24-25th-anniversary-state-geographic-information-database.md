@@ -49,10 +49,10 @@ quantity. One size fits all SGID data stewards and SGID data users alike.
 Get yours from an UGRC staffer at your next opportunity.
 
 Cover of SGID Data CD, 1995
-[Cover, SGID CD, 1995](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cover.jpg)
+![Cover, SGID CD, 1995](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cover.jpg)
 
 SGID Data CD, 1995
-[Inside, SGID CD, 1995](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cd.jpg)
+![Inside, SGID CD, 1995](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_cd.jpg)
 
 SGID Data User Guide, 1999
-[SGID Data User Guides, 1999](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_userguide.jpg)
+![SGID Data User Guides, 1999](../../images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid_userguide.jpg)
