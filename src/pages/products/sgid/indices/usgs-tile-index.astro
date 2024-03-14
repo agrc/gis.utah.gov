@@ -21,7 +21,7 @@ import { dataPages } from '@data/downloadMetadata';
 import index from '@images/sgid/24k_index.png';
 
 export const metadata: IMetadata = {
-  title: 'Topographic Map Indices',
+  title: 'USGS Topographic Map Indices',
   description: `This dataset contains GIS mapping data representing the tile indices for the 24K, 100K, and 250K USGS scanned topographic maps (DRGs).`,
   stewards: ['UGRC', 'U.S. Geological Survey'],
   type: ProductType.POLYGON,
@@ -48,30 +48,28 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <div class="flex justify-around gap-2">
-      <a href={index.src}>
-        <Image src={index} width="300" alt="An RGB image of the NAIP" class="w-full max-w-[300px] rounded-lg" /></a
-      >
+    <div class="flex flex-wrap justify-center gap-6 lg:flex-nowrap">
+      <p>
+        USGS Topographic Map boundary tile indices can be used to determine the 7.5 minute - 1:24,000, 30x60 minute -
+        1:100,000, 1x1 and 1x2 degree - 1:250,000 scale map boundaries for Utah.
+      </p>
+      <Image src={index} width="300" alt="An RGB image of the NAIP" class="w-full max-w-[300px] rounded-lg" />
     </div>
-    <p>
-      USGS Topographic Map boundary tile indices can be used to determine the 7.5 minute - 1:24,000, 30x60 minute -
-      1:100,000, 1x1 and 1x2 degree - 1:250,000 scale map boundaries for Utah.
-    </p>
   </Fragment>
 
-  <Section title="Use the data: USGS 24K Quad Boundaries" slot="downloads" titlePosition="center">
+  <Section title="Use the USGS 24K quad boundaries indices" slot="downloads" titlePosition="center">
     <HubDownloads {...dataPages['Utah USGS 24K Quads']} />
   </Section>
-  <Section title="Use the data: USGS 24K Quarter Quad Boundaries" slot="downloads" titlePosition="center" stripe>
+  <Section title="Use the USGS 24K quarter quad boundaries indices" slot="downloads" titlePosition="center" stripe>
     <HubDownloads {...dataPages['Utah USGS 24K Quarter Quads']} />
   </Section>
-  <Section title="Use the data: USGS 100K Quad Boundaries" slot="downloads" titlePosition="center">
+  <Section title="Use the USGS 100K quad boundaries indices" slot="downloads" titlePosition="center">
     <HubDownloads {...dataPages['Utah USGS 100K Quads']} />
   </Section>
-  <Section title="Use the data: USGS 250K Quad Boundaries 1x1" slot="downloads" titlePosition="center" stripe>
+  <Section title="Use the USGS 250K quad boundaries 1x1 indices" slot="downloads" titlePosition="center" stripe>
     <HubDownloads {...dataPages['Utah USGS 250K Quads 1x1']} />
   </Section>
-  <Section title="Use the data: USGS 250K Quad Boundaries 1x2" slot="downloads" titlePosition="center">
+  <Section title="Use the USGS 250K quad boundaries 1x2 indices" slot="downloads" titlePosition="center">
     <HubDownloads {...dataPages['Utah USGS 250K Quads 1x2']} />
   </Section>
 
