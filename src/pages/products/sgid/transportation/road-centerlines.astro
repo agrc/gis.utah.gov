@@ -27,9 +27,20 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-
-  updateHistory: [`October 6, 2023`],
-
+  updateHistory: [
+    'March 07, 2024',
+    'February 09, 2024',
+    'January 12, 2024',
+    'December 15, 2023',
+    'November 07, 2023',
+    'October 06, 2023',
+    'September 08, 2023',
+    'August 04, 2023',
+    'July 21, 2023',
+    'June 09, 2023',
+    'April 06, 2023',
+    'March 10, 2023',
+  ],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -111,12 +122,6 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov/" style="secondary"
-        >Explore this data UGRC's interactive mapping application</CardWithSmallLink
-      >
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary"
-        >Read how this data works with the transportation layers</CardWithSmallLink
-      >
       <CardWithSmallLink
         title="Multi-Modal Network Dataset"
         href="/products/sgid/transportation/network-data"
@@ -124,6 +129,9 @@ const page: IPageMetadata = {
       >
       <CardWithSmallLink title="Discover" href="/products/discover" style="secondary"
         >Explore UGRC's aerial imagery and base maps</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov/" style="secondary"
+        >Explore this data in UGRC's interactive mapping application</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
