@@ -1,0 +1,32 @@
+---
+import { Image } from 'astro:assets';
+
+import sectionNumbersPhoto from '@images/sgid/plss/section-numbers.png';
+import sectionPhoto from '@images/sgid/plss/section.png';
+import townshipRangePhoto from '@images/sgid/plss/township-and-range.png';
+---
+
+<p>
+  Example Description: A parcel of land situated in the south half of the southeast quarter of the northeast quarter of
+  Section 31, Township 2 South, Range 2 West, Salt Lake Base and Meridian.
+</p>
+<div class="flex flex-wrap justify-center gap-2">
+  <Image
+    src={sectionPhoto}
+    width="300"
+    class="dark:border/white/20 rounded-lg border border-black/20"
+    alt="The breakdown of a PLSS section"
+  />
+  <Image
+    src={sectionNumbersPhoto}
+    width="300"
+    class="dark:border/white/20 rounded-lg border border-black/20"
+    alt="A grid of numbers representing sections within a township"
+  />
+  <Image
+    src={townshipRangePhoto}
+    width="300"
+    class="dark:border/white/20 rounded-lg border border-black/20"
+    alt="A grid of township and range grids"
+  />
+</div>

@@ -14,11 +14,16 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import CommonConversions from '@models/_partials/CommonConversions.astro';
+import PlssGlance from '@models/_partials/PlssGlance.astro';
+import PlssPointId from '@models/_partials/PlssPointId.astro';
+import PlssTownshipRange from '@models/_partials/PlssTownshipRange.astro';
+
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah PLSS Point GCDB',
-  description: `PLSS Points GCDB is a point dataset that depicts the Public Land Survey System (PLSS) for the State of Utah and are based on Geographic Coordinate Data Base (GCDB) coordinate data`,
+  description: `THe Public Land Survey System (PLSS) points for the State of Utah that are based on Geographic Coordinate Data Base (GCDB) coordinate data.`,
   stewards: ['UGRC', 'BLM', 'SITLA', 'Utah Counties', 'Premier Data Services'],
   type: ProductType.POINT,
   category: SgidCategory.CADASTRE,
@@ -72,6 +77,22 @@ const page: IPageMetadata = {
       data steward in the corner feature should be contacted.
     </p>
   </Fragment>
+
+  <Section slot="extra" title="PLSS at a glance">
+    <PlssGlance />
+  </Section>
+
+  <Section slot="extra" title="Township and range explained" stripe>
+    <PlssTownshipRange />
+  </Section>
+
+  <Section slot="extra" title="Geographic Coordinate Data Base (GCDB) is explained">
+    <PlssPointId />
+  </Section>
+
+  <Section slot="extra" title="Common conversions" stripe>
+    <CommonConversions />
+  </Section>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 

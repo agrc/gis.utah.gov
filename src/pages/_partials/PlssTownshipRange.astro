@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+
+import quarterQuarterSectionPhoto from '@images/sgid/plss/quarter-quarter-section.png';
+import quarterSectionPhoto from '@images/sgid/plss/quarter-section.png';
+import townshipPhoto from '@images/sgid/plss/township.png';
+---
+
+<p>(5 characters each)</p>
+<ul>
+  <li>3 digits for Township or Range number</li>
+  <li>1 digit for fraction (0 for no fraction, 1 for 1/4 township, 2 for 1/2 township, 3 for 3/4 township)</li>
+  <li>1 letter for direction</li>
+</ul>
+<div class="flex flex-wrap justify-center gap-2">
+  <Image width="300" src={townshipPhoto} class="rounded-lg border border-black/20" alt="A labeled township grid" />
+  <Image width="300" src={quarterSectionPhoto} class="rounded-lg border border-black/20" alt="A labeled section grid" />
+  <Image
+    width="300"
+    src={quarterQuarterSectionPhoto}
+    class="rounded-lg border border-black/20"
+    alt="A labeled quarter section grid"
+  />
+</div>
