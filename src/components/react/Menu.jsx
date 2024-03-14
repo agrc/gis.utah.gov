@@ -71,10 +71,10 @@ export const Menu = ({ children, currentUri }) => {
                   See what we can offer you.
                 </ListItem>
                 <ListItem href="/solutions/gis-strategy" title="GIS strategy">
-                  Let us help you develop your GIS strategy.
+                  Begin thinking bigger by thinking differently.
                 </ListItem>
                 <ListItem href="/solutions/gis-integration" title="Integrating GIS">
-                  Read how GIS can fit in your business.
+                  Location matters.
                 </ListItem>
                 <ListItem href="/solutions/high-precision-location" title="High precision location">
                   Use cases for centimeter GPS precision.
