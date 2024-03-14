@@ -17,6 +17,8 @@ import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
+import functionChainPhoto from '@images/sgid/function_chain.jpg';
+import functionPhoto from '@images/sgid/function_template_editor.jpg';
 import naipNRGImage from '@images/sgid/naip-nrg.png';
 import naipRGBImage from '@images/sgid/naip-rgb.png';
 
@@ -77,8 +79,8 @@ const page: IPageMetadata = {
       Although the NAIP imagery collection is typically 4-band imagery, we have separated the Red, Green, and Blue (RGB)
       bands from the Infrared band to support most software platforms. To merge the RGB images with the single infrared
       band to create a 4-band image you can use the ArcGIS Composite Bands (Data Management) tool, the Image Analysis
-      window to add a <a href="/images/sgid/function_template_editor.jpg">Function Chain</a>, or create a <a
-        href="/images/sgid/function_chain.jpg">Reference Mosaic</a
+      window to add a <a href={functionPhoto.src}>Function Chain</a>, or create a <a href={functionChainPhoto.src}
+        >Reference Mosaic</a
       >. 3-band Mr. Sid county mosaics are also available.
     </p>
   </Fragment>
