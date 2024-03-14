@@ -10,7 +10,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import Contacts from '@components/page/Contacts.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -55,85 +55,41 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      This dataset primarily depicts features used by hikers/pedestrians and bikers. It began with map data purchased
-      from a private entity (Orbital View, Inc), for which full rights werCe purchased by the GOED Office of Outdoor
-      Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions
-      from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest
-      Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of
-      Governments (Utah and Wasatch counties); 2018/2019 additions as part of the multimodal project; and currently
-      ongoing updates by WFRC transportation planners.
+      This layer also plays an important role in active transportation planning in Utah. Recent collaborative efforts
+      between UGRC, UDOT, and WFRC have led to significant enhancements in the bike and pedestrian data in both the
+      Roads and Trails-and-Pathways layers. These efforts have focused on better connectivity between the layers along
+      the Wasatch Front, as well as improvements in the statewide bike data. You can contribute to the on-street bike
+      data by letting us know where we have gaps or inaccurate information.
     </p>
-
     <p>
-      Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide
-      roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be
-      represented in this map layer.
+      The Utah Roads dataset utilizes a data model based on Next-Generation 911 standards and the Federal Highway
+      Administration's All Roads Network Of Linear-referenced Data (ARNOLD) reporting requirements for state DOTs. UGRC
+      adopted this data model on September 13th, 2017.
     </p>
-
     <p>
-      Although it is a work in progress, this dataset represents a substantial starting point to integrate additional
-      trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local
-      government and land stewards to review and continue to improve upon this data. Additional segments can be
-      submitted to UGRC for inclusion in this dataset.
+      To see specific information about the data model including field names and descriptions, data types, coded value
+      domains, and data model updates, see the data model spreadsheet and the corresponding tabs for update notes and
+      coded value domains. The color-coded section titled Addressing is primarily maintained by the local stewards,
+      where as the section titled DOT/FHWA is primarily maintained by UDOT. UGRC spatially assigns fields in the section
+      titled Placename/Area, based on current SGID polygon boundaries.
     </p>
-
-    <p>Note: Significant enhancements (including a schema change) were made to this layer in June 2020.</p>
-
-    <b>CartoCode</b>
-    <p>For a more specific query of facility types, use the CartoCode field:</p>
-    <dl>
-      <DefinitionListItem title="1"
-        >Hiking Only (Hiking and walking are the only uses allowed on this facility)</DefinitionListItem
-      >
-      <DefinitionListItem title="2"
-        >Hiking and Biking (Singletrack, natural surface facility. Hiking and biking are allowed)</DefinitionListItem
-      >
-      <DefinitionListItem title="3"
-        >Paved Shared Use (Paved shared use path, recreational path, urban pathway)</DefinitionListItem
-      >
-      <DefinitionListItem title="4"
-        >Road-concurrent (Facility is on or adjacent to a road, generally a natural surface double track, forest service
-        road, canal road, etc.)
-      </DefinitionListItem>
-      <DefinitionListItem title="5"
-        >Biking Only- (Biking is the primary or only use on this facility. High speeds, blind corners and technical
-        features are common. For safety reasons, hiking, if not expressly prohibited, is not recommended.)
-      </DefinitionListItem>
-      <DefinitionListItem title="6"
-        >Equestrian Primary (Equestrian is the primary use on this facility)</DefinitionListItem
-      >
-      <DefinitionListItem title="7"
-        >Steps (Steps, staircase, or other feature that is not accessible to wheeled or assistive devices on otherwise
-        paved / accessible route)
-      </DefinitionListItem>
-      <DefinitionListItem title="8"
-        >Bridge, Tunnel (Grade change above or below ground surface, generally a bridge or tunnel)</DefinitionListItem
-      >
-      <DefinitionListItem title="9"
-        >Link (Network route connection, see Link on CVDomain_TrailClass tab)</DefinitionListItem
-      >
-    </dl>
-    <b>Class</b>
-    For a general query of facility types, use the Class field:
-    <dl>
-      <DefinitionListItem title="Path"
-        >Paved, off-street travelway designed for non-motorized users, generally wider and with greater separation from
-        roadway than a standard sidewalk
-      </DefinitionListItem>
-      <DefinitionListItem title="Trail"
-        >Natural surface travelway (dirt, gravel, slickrock, snow, etc)</DefinitionListItem
-      >
-      <DefinitionListItem title="Link"
-        >Network route connection through a parking lot, alleyway, etc. where a road segment does not exist but can be
-        traversed via walking or bicycling
-      </DefinitionListItem>
-      <DefinitionListItem title="Steps"
-        >Developed (generally concrete) steps or stairs, usually occurring along a paved route</DefinitionListItem
-      >
-      <DefinitionListItem title="Grade Separated Crossing"
-        >Paved crossing feature above or below roadway, train track, etc. for walking and bicycling use only
-      </DefinitionListItem>
-    </dl>
+    <p>
+      This data model is meant to suggest 'best practices'. It is not the intent that all stewards will change their
+      current data management process to match this standard, but rather that stewards will evaluate their current
+      practices to see how well their data 'maps' to this schema for data sharing and Next Generation 911 preparedness.
+    </p>
+    <p>
+      We are currently working with US Forest Service to improve the Forest Service roads in this dataset, however, for
+      the most current and complete set of USFS roads, please visit the FSGeodata Clearinghouse.
+    </p>
+    <p>
+      The statewide roads dataset is maintained by UGRC in partnership with local government, UDOT, and the 911
+      community.
+    </p>
+    <p>
+      Please reach out to <Contacts contactKey="roads" subject="Utah Roads data inquiry" inline />
+      with questions about this data layer.
+    </p>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
