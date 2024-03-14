@@ -14,7 +14,11 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import { Image } from 'astro:assets';
+
 import { dataPages } from '@data/downloadMetadata';
+
+import index from '@images/sgid/24k_index.png';
 
 export const metadata: IMetadata = {
   title: 'Topographic Map Indices',
@@ -44,22 +48,30 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
+    <div class="flex justify-around gap-2">
+      <a href={index.src}>
+        <Image src={index} width="300" alt="An RGB image of the NAIP" class="w-full max-w-[300px] rounded-lg" /></a
+      >
+    </div>
     <p>
-      USGS Topographic Map tile indices can be used to determine the 7.5 minute - 1:24,000, 30x60 minute - 1:100,000,
-      1x1 and 1x2 degree - 1:250,000 scale map boundaries for Utah.
+      USGS Topographic Map boundary tile indices can be used to determine the 7.5 minute - 1:24,000, 30x60 minute -
+      1:100,000, 1x1 and 1x2 degree - 1:250,000 scale map boundaries for Utah.
     </p>
   </Fragment>
 
   <Section title="Use the data: USGS 24K Quad Boundaries" slot="downloads" titlePosition="center">
     <HubDownloads {...dataPages['Utah USGS 24K Quads']} />
   </Section>
-  <Section title="Use the data: USGS 100K Quad Boundaries" slot="downloads" titlePosition="center" stripe>
+  <Section title="Use the data: USGS 24K Quarter Quad Boundaries" slot="downloads" titlePosition="center" stripe>
+    <HubDownloads {...dataPages['Utah USGS 24K Quarter Quads']} />
+  </Section>
+  <Section title="Use the data: USGS 100K Quad Boundaries" slot="downloads" titlePosition="center">
     <HubDownloads {...dataPages['Utah USGS 100K Quads']} />
   </Section>
-  <Section title="Use the data: USGS 250K Quad Boundaries 1x1" slot="downloads" titlePosition="center">
+  <Section title="Use the data: USGS 250K Quad Boundaries 1x1" slot="downloads" titlePosition="center" stripe>
     <HubDownloads {...dataPages['Utah USGS 250K Quads 1x1']} />
   </Section>
-  <Section title="Use the data: USGS 250K Quad Boundaries 1x2" slot="downloads" titlePosition="center" stripe>
+  <Section title="Use the data: USGS 250K Quad Boundaries 1x2" slot="downloads" titlePosition="center">
     <HubDownloads {...dataPages['Utah USGS 250K Quads 1x2']} />
   </Section>
 
