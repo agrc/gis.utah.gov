@@ -1,11 +1,12 @@
 ---
-import Pagination from '@components/Pagination.astro';
-import CardForBlog from '@components/page/CardForBlog.astro';
 import Layout from '@layouts/BlogPostIndex.astro';
 
-import { getBlogFilters, getBlogPosts, type BlogFilter, type DecoratedBlogEntry } from '@utils/collections';
-
 import type { Page } from 'astro';
+
+import Pagination from '@components/Pagination.astro';
+import CardForBlog from '@components/page/CardForBlog.astro';
+
+import { getBlogFilters, getBlogPosts, type BlogFilter, type DecoratedBlogEntry } from '@utils/collections';
 
 export async function getStaticPaths({ paginate }) {
   const posts = await getBlogPosts();

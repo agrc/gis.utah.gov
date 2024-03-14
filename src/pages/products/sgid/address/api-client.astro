@@ -1,9 +1,13 @@
 ---
+import Layout from '@layouts/DataPage.astro';
+
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
 import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
-import Layout from '@layouts/DataPage.astro';
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
 
+import Alert from '@components/page/Alert.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
@@ -11,13 +15,9 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
-import DirectDownloads from '@components/data/DirectDownloads.astro';
-import Metadata from '@components/data/Metadata.astro';
-
 import { getGithubReleases } from '@utils/github';
 
 import { YouTube } from '@astro-community/astro-embed-youtube';
-import Alert from '@components/page/Alert.astro';
 
 const dateFormatter = Intl.DateTimeFormat('en-US', { dateStyle: 'full' });
 

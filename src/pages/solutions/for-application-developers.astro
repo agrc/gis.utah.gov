@@ -1,19 +1,19 @@
 ---
-import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
-
 import Layout from '@layouts/FullWidth.astro';
+
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
+
+import { Image } from 'astro:assets';
 
 import automationPhoto from '@images/solutions/automation.svg';
 import developmentPhoto from '@images/solutions/development.svg';
 import enhancePhoto from '@images/solutions/enhance.svg';
 import mapPhoto from '@images/solutions/map.svg';
 import rocketPhoto from '@images/solutions/rocket.svg';
-
-import { Image } from 'astro:assets';
 
 import { stripeSections } from '@utils/page';
 

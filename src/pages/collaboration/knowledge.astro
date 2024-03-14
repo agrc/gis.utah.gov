@@ -1,13 +1,14 @@
 ---
-import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
-
 import Layout from '@layouts/FullWidth.astro';
 
-import QuickLinks from '@components/page/QuickLinks.astro';
-import Section from '@components/page/Section.astro';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import BulletedList from '@components/page/BulletedList.astro';
 import ButtonLink from '@components/page/ButtonLink.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
@@ -17,7 +18,6 @@ import conferenceLogo from '@images/collaboration/conference.svg';
 import groupPhoto from '@images/collaboration/group.svg';
 
 import { stripeSections } from '@utils/page';
-import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 
 const page: IStandardPageMetadata = {
   title: 'GIS knowledge',

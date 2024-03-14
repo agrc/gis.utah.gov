@@ -1,8 +1,10 @@
 ---
-import CardForBlog from '@components/page/CardForBlog.astro';
 import Layout from '@layouts/BlogPostIndex.astro';
+
 import { getBlogFilters, type BlogFilter, type DecoratedBlogEntry } from '@utils/collections';
 import type { GetStaticPathsResult } from 'astro';
+
+import CardForBlog from '@components/page/CardForBlog.astro';
 
 interface Props {
   category: string;
