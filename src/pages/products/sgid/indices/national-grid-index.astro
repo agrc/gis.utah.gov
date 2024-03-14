@@ -10,6 +10,7 @@ import Metadata from '@components/data/Metadata.astro';
 import BulletedList from '@components/page/BulletedList.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -17,12 +18,11 @@ import Section from '@components/page/Section.astro';
 import usng from '@images/sgid/usng.jpg';
 import { Image } from 'astro:assets';
 
-import ExternalLink from '@components/page/ExternalLink.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah National Grid',
-  description: `GIS mapping data representing the 1000m X 1000m United States National Grid (USNG) for Utah.`,
+  description: `GIS mapping data representing the 1000m by 1000m United States National Grid (USNG) for Utah.`,
   stewards: [
     'UGRC',
     'USGS',
@@ -34,7 +34,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`Never`],
+  updateHistory: [`2001`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -45,16 +45,21 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <div class="flex justify-around gap-2">
-      <a href={usng.src}>
-        <Image src={usng} width="300" alt="An image of the national grid" class="w-full max-w-[300px] rounded-lg" /></a
-      >
+    <div class="flex flex-wrap justify-center gap-6 lg:flex-nowrap">
+      <p>
+        U.S. National Grid is a polygon dataset of United States National Grid 1000 meter x 1000 meter grid polygons
+        constructed by the Center for Interdisciplinary Geospatial Information Technologies at Delta State University
+        with support from the US Geological Survey under the Cooperative Agreement <ExternalLink
+          href="https://usngcenter.org/fema-region-7/">07ERAG0083</ExternalLink
+        >.
+      </p>
+      <Image
+        src={usng}
+        width="300"
+        alt="An image of the national grid"
+        class="w-full max-w-[300px] rounded-lg border border-black/20"
+      />
     </div>
-    <p>
-      U.S. National Grid is a polygon dataset of United States National Grid 1000 meter x 1000 meter grid polygons
-      constructed by the Center for Interdisciplinary Geospatial Information Technologies at Delta State University with
-      support from the US Geological Survey under the Cooperative Agreement 07ERAG0083.
-    </p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
