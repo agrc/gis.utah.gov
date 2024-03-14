@@ -1400,8 +1400,8 @@ export const dataPages: DownloadMetadata = {
   'Utah USGS 24K Quarter Quads': {
     itemId: 'baa0bf569643469a9511e1fb753f4a60',
     name: 'Utah USGS 24K Quarter Quads',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'USGS24KQuarterQuads',
+    openSgid: 'indices.usgs_24k_quarter_quads',
     layerId: 0,
   },
   'Utah USGS DEM Extents': {
@@ -1414,15 +1414,15 @@ export const dataPages: DownloadMetadata = {
   'Utah USGS 250K Quads 1x1': {
     itemId: '606d75b70d254c7e9da5785704c60369',
     name: 'Utah USGS 250K Quads 1x1',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'USGS250KQuads1x1',
+    openSgid: 'indices.usgs_250k_quads_1x1',
     layerId: 0,
   },
   'Utah USGS 250K Quads 1x2': {
     itemId: 'ed39436090e8472593149659b4ed257e',
     name: 'Utah USGS 250K Quads 1x2',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'USGS250KQuads1x2',
+    openSgid: 'indices.usgs_250k_quads_1x2',
     layerId: 0,
   },
   'Utah Google Flight Blocks': {
@@ -1435,15 +1435,15 @@ export const dataPages: DownloadMetadata = {
   'Utah USGS 100K Quads': {
     itemId: '80042c4b51a843c3b480ada0b8d68177',
     name: 'Utah USGS 100K Quads',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'USGS100KQuads',
+    openSgid: 'indices.usgs_100k_quads',
     layerId: 0,
   },
   'Utah USGS 24K Quads': {
     itemId: 'fe10115354c14260aef62a60b3137488',
     name: 'Utah USGS 24K Quads',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'USGS24KQuads',
+    openSgid: 'indices.usgs_24k_quads',
     layerId: 0,
   },
   'Utah LiDAR Extents': {

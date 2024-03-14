@@ -1,0 +1,105 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import BulletedList from '@components/page/BulletedList.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Topographic Map Indices',
+  description: `This dataset contains GIS mapping data representing the tile indices for the 24K, 100K, and 250K USGS scanned topographic maps (DRGs).`,
+  stewards: ['UGRC', 'U.S. Geological Survey'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.INDICES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+
+  updateHistory: [`Never`],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      USGS Topographic Map tile indices can be used to determine the 7.5 minute - 1:24,000, 30x60 minute - 1:100,000,
+      1x1 and 1x2 degree - 1:250,000 scale map boundaries for Utah.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data: USGS 24K Quad Boundaries" slot="downloads" titlePosition="center">
+    <HubDownloads {...dataPages['Utah USGS 24K Quads']} />
+  </Section>
+  <Section title="Use the data: USGS 100K Quad Boundaries" slot="downloads" titlePosition="center" stripe>
+    <HubDownloads {...dataPages['Utah USGS 100K Quads']} />
+  </Section>
+  <Section title="Use the data: USGS 250K Quad Boundaries 1x1" slot="downloads" titlePosition="center">
+    <HubDownloads {...dataPages['Utah USGS 250K Quads 1x1']} />
+  </Section>
+  <Section title="Use the data: USGS 250K Quad Boundaries 1x2" slot="downloads" titlePosition="center">
+    <HubDownloads {...dataPages['Utah USGS 250K Quads 1x2']} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      <h3>The 24K tile index contains the following attribute fields:</h3>
+      <BulletedList>
+        <li>Name - the name of the map</li>
+        <li>OHIO_CODE - code used by USGS</li>
+        <li>TILE - the UGRC q number tile name</li>
+      </BulletedList>
+      <h3>The 100K tile index contains the following attribute fields:</h3>
+      <BulletedList>
+        <li>Name - the name of the map</li>
+        <li>TILE - the UGRC q number tile name</li>
+      </BulletedList>
+      <h3>The 250K tile indices contains the following attribute fields:</h3>
+      <BulletedList>
+        <li>USGS_CODE - code used by USGS</li>
+        <li>TILE_NAME - the UGRC q number tile name</li>
+      </BulletedList>
+    </p>
+    <p>
+      The native spatial reference for these dataset are UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There
+      are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content
+      to: State of Utah, SGID.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UGRC Raster Data Discovery" href="https://raster.utah.gov/?products=5"
+        >Download USGS topographic maps.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="The National Map" href="https://apps.nationalmap.gov/downloader/"
+        >Download USGS topographic GeoPDF maps.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Topographic maps" href="/products/sgid/usgs-scanned-topographic-maps" style="secondary"
+        >USGS scanned topographic maps</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
+        >Boundaries page</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
