@@ -2035,9 +2035,9 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah Roads': {
-    itemId: '478fbef62481427f95a3510a4707b24a',
+    itemId: '99lidPhWCzftIe9K',
     name: 'Utah Roads',
-    featureServiceId: null,
+    featureServiceId: 'UtahRoads',
     openSgid: '',
     layerId: 0,
   },
@@ -2714,10 +2714,10 @@ export const dataPages: DownloadMetadata = {
     featureServiceHost: 'https://roads.udot.utah.gov/server/rest/services/Public/',
     mapServiceId: 'Freeway_Exits',
   },
-  'UDOT Routes ALRS': {
+  'Utah UDOT Routes ALRS': {
     externalHubOrganization: 'uplan',
     itemId: 'ecb09af7f887450e851c2634dac92edb',
-    name: 'UDOT Routes ALRS',
+    name: 'Utah UDOT Routes ALRS',
     oddHubName: 'udot-routes-alrs-1',
     featureServiceHost: 'https://roads.udot.utah.gov/server/rest/services/Public/',
     layerId: 0,
