@@ -1,0 +1,113 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import usng from '@images/sgid/usng.jpg';
+import { Image } from 'astro:assets';
+
+import ExternalLink from '@components/page/ExternalLink.astro';
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah National Grid',
+  description: `GIS mapping data representing the 1000m X 1000m United States National Grid (USNG) for Utah.`,
+  stewards: [
+    'UGRC',
+    'USGS',
+    'Center for Interdisciplinary Geospatial Information Technologies, Delta State University',
+  ],
+  type: ProductType.POLYGON,
+  category: SgidCategory.INDICES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`Never`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application} }>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <div class="flex justify-around gap-2">
+      <a href={usng.src}>
+        <Image src={usng} width="300" alt="An image of the national grid" class="w-full max-w-[300px] rounded-lg" /></a
+      >
+    </div>
+    <p>
+      U.S. National Grid is a polygon dataset of United States National Grid 1000 meter x 1000 meter grid polygons
+      constructed by the Center for Interdisciplinary Geospatial Information Technologies at Delta State University with
+      support from the US Geological Survey under the Cooperative Agreement 07ERAG0083.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <h3>Each polygon contains the following attribute fields:</h3>
+    <BulletedList>
+      <li>
+        USNG - the fully qualified U.S. National Grid number coordinate describing the lower left corner of a 1000m x
+        1000m polygon
+      </li>
+      <li>GRID1MIL - USNG Grid Zone Designator (GZD)</li>
+      <li>Grid100K - 100,000 meter USNG square ID</li>
+      <li>Easting - lower left Easting of the 1000 meter USNG box</li>
+      <li>Northing - lower left Northing of the 1000 meter USNG box</li>
+    </BulletedList>
+    <p>
+      For correct display, please set the base coordinate system and projection such that it matches the UTM zone for
+      which these data were constructed using the NAD83 datum. Further information about the US National Grid is
+      available from <ExternalLink href="https://www.fgdc.gov/usng"
+        >Federal Geographic Data Committee (FGDC)</ExternalLink
+      >.
+    </p>
+    <p>
+      The native spatial reference for this dataset is UTM NAD83 Zone 12 North. There are no constraints or warranties
+      with regard to the use of this dataset. Users are encouraged to attribute content to: State of Utah, SGID and The
+      Center for Interdisciplinary Geospatial Information Technologies, Delta State University, Cleveland Mississippi
+      38733.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UGRC Raster Data Discovery" href="https://raster.utah.gov/?products=5"
+        >Download USGS topographic maps.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="The National Map"
+        href="https://www.usgs.gov/programs/national-geospatial-program/national-map"
+        >The National Map from the USGS.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Indices" href="/products/sgid/indices" style="secondary">Indices page</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
+        >Boundaries page</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
