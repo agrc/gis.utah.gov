@@ -9,8 +9,8 @@ import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
-import developmentPhoto from '@images/solutions/development.svg';
-import enhancePhoto from '@images/solutions/enhance.svg';
+import championPhoto from '@images/solutions/champion.svg';
+import collaboratePhoto from '@images/solutions/collaborate.svg';
 import rocketPhoto from '@images/solutions/rocket.svg';
 
 import { stripeSections } from '@utils/page';
@@ -18,7 +18,11 @@ import { stripeSections } from '@utils/page';
 const page: IStandardPageMetadata = {
   title: 'GIS strategy',
   pillar: Pillar.SOLUTIONS,
-  section: stripeSections([{ title: 'What is GIS strategy' }, { title: 'Is your data ready' }, { title: 'Our plan' }]),
+  section: stripeSections([
+    { title: 'What is GIS strategy' },
+    { title: 'Spatial champion' },
+    { title: 'Is your data ready' },
+  ]),
 };
 ---
 
@@ -28,33 +32,51 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[0]}>
     <Image
       slot="image"
-      src={developmentPhoto}
       loading="eager"
-      alt="a person with a prototype on an easel and the app partially built on a phone"
+      src={rocketPhoto}
+      alt="a rocket ship launching off a screen"
       class="w-full max-w-[400px] rounded-2xl"
     />
-
     <p>
-      We feel the best time to develop a strategy for incorporating GIS into the business is at the inception. Having
-      some clear goals and expectations will help in right sizing the investment in GIS. You don't need to see into the
-      distant future, however you should have some agency goals that you are trying to achieve and how GIS can help. If
-      you are unsure how GIS can help get in touch with us and we can help you develop your ideas.
+      The best time to develop a strategy for incorporating spatial thinking into the business is the moment that
+      business begins asking questions involving “where”. Where is everything from ‘Where do we locate our office?’, to
+      ‘Where are our customers?’ or ‘Where are needs being unmet or underserved?’. Having some clear goals and
+      expectations will help in right sizing the investment in GIS - from a consumer to an enterprise contributor. You
+      don’t need to see into the distant future, however you should have some clearly defined agency goals that you are
+      trying to achieve, then investigate <strong>where</strong> GIS can help to achieve those goals.
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
+    <Image
+      slot="image"
+      src={championPhoto}
+      alt="two people holding a first place trophy"
+      class="w-full max-w-[400px]"
+    />
     <p>
-      Does your data contain a street address, a ZIP code, or something that could be considered a location or boundary?
-      If so then enhancing that spatial relationship to be suitable for analysis is one small step.
+      Forget fancy maps and data visualizations – the real key to unlocking the power of location data for your
+      organization is getting someone, a champion, on board who understands its value. Find a champion who sees the
+      potential of using location information to improve decision-making.
+    </p>
+    <p>
+      Together, you can explore how to integrate this type of analysis into your everyday work processes to solve real
+      problems. Even a simple map showing the current situation can be very helpful. But the real power comes from
+      seeing how things change over time and location. This can reveal hidden patterns that can lead to better choices
+      across the company.
     </p>
   </Section>
   <Section {...page.section[2]}>
     <Image
       slot="image"
-      src={enhancePhoto}
-      alt="a person with a box labeled v2 that is upgrading their application"
+      src={collaboratePhoto}
+      alt="two people assembling a light bulb idea made of puzzle pieces"
       class="w-full max-w-[400px]"
     />
-    <p>As an example, here is the past two UGRC strategic plans. We are due to commence work on one for our future.</p>
+    <p>
+      Does your data contain a street address, a zip code or something that could be considered a location or boundary?
+      If so, then ensuring that the spatial component of your data is suitable for analysis is a critical step in the
+      development of an overall business strategy regarding spatial data. Get in touch with us if you need help with
+      this aspect of your data.
+    </p>
   </Section>
 </Layout>
