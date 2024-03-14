@@ -20,7 +20,7 @@ import drg from '@images/sgid/drg.png';
 
 export const metadata: IMetadata = {
   title: 'USGS Scanned Topographic Maps',
-  description: `Scanned series of USGS topographic maps, also known as Digital Raster Graphics (DRGs)`,
+  description: `Scanned series of USGS topographic maps, also known as Digital Raster Graphics (DRGs).`,
   stewards: ['UGRC', 'U.S. Geological Survey'],
   type: ProductType.IMAGERY_RASTER,
   category: SgidCategory.TOPO,
@@ -42,19 +42,17 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <div class="flex justify-around gap-2">
-      <a href={drg.src}>
-        <Image src={drg} width="300" alt="An RGB image of the NAIP" class="w-full max-w-[300px] rounded-lg" /></a
-      >
+    <div class="flex flex-wrap justify-center gap-6 lg:flex-nowrap">
+      <p>
+        The SGID contains complete statewide coverage of scanned standard series U.S. Geological Survey topographic
+        maps, also known as Digital Raster Graphics (DRGs). UGRC has modified these DRGs so that they are available
+        collared and collarless and are projected to UTM NAD83 Zone 12 North. For all available USGS Topographic Maps,
+        including the latest GeoPDF, visit <ExternalLink href="https://apps.nationalmap.gov/downloader/"
+          >The National Map TNM Download application</ExternalLink
+        > or <ExternalLink href="https://ngmdb.usgs.gov/topoview/viewer">topoView</ExternalLink>.
+      </p>
+      <Image src={drg} width="300" alt="An RGB image of the NAIP" class="w-full max-w-[300px] rounded-lg" />
     </div>
-    <p>
-      The SGID contains complete statewide coverage of scanned standard series U.S. Geological Survey topographic maps,
-      also known as Digital Raster Graphics (DRGs). UGRC has modified these DRGs so that they are available collared and
-      collarless and are projected to UTM NAD83 Zone 12 North. For all available USGS Topographic Maps, including the
-      latest GeoPDF, visit <ExternalLink href="https://apps.nationalmap.gov/downloader/"
-        >The National Map TNM Download application</ExternalLink
-      > or <ExternalLink href="https://ngmdb.usgs.gov/topoview/viewer">topoView</ExternalLink>.
-    </p>
   </Fragment>
 
   <Section title="Get the data" slot="downloads" titlePosition="center">
@@ -77,7 +75,7 @@ const page: IPageMetadata = {
         >Download from raster app.
       </CardWithPopularLink>
 
-      <CardWithPopularLink title="1;100,000 topographic maps" href="https://raster.utah.gov/?cat=100K%20DRG"
+      <CardWithPopularLink title="1:100,000 topographic maps" href="https://raster.utah.gov/?cat=100K%20DRG"
         >Download from raster app.
       </CardWithPopularLink>
 
