@@ -1,4 +1,8 @@
 ---
+import FormattedDate from '@components/FormattedDate.astro';
+
+import RightArrow from '@components/page/RightArrow.astro';
+
 interface Props {
   snippet: string;
   title: string;
@@ -7,8 +11,6 @@ interface Props {
   includeYear?: boolean;
   estimatedReadingTime?: string;
 }
-
-import FormattedDate from '../FormattedDate.astro';
 
 const { title, snippet, slug, date, includeYear, estimatedReadingTime } = Astro.props;
 ---
@@ -26,7 +28,7 @@ const { title, snippet, slug, date, includeYear, estimatedReadingTime } = Astro.
         </p>
         <p class="line-clamp-2 text-ellipsis text-zinc-600 dark:text-zinc-300">{snippet}</p>
       </div>
-      <div class="hidden self-center text-4xl text-primary sm:block dark:text-zinc-300">&#x2192;</div>
+      <div class="hidden self-center text-4xl text-primary sm:block dark:text-zinc-300"><RightArrow /></div>
     </div>
   </a>
 </div>

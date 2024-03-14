@@ -7,6 +7,7 @@ import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import NumberedListItem from '@components/page/NumberedListItem.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
+import RightArrow from '@components/page/RightArrow.astro';
 import Section from '@components/page/Section.astro';
 
 import { Code } from 'astro:components';
@@ -48,7 +49,7 @@ const page: IStandardPageMetadata = {
     </p>
     <ol class="list-inside list-decimal">
       <NumberedListItem
-        >Go to Layer &#x2192; Add Layer &#x2192; Add WMS/WMTS Layer... (opens the Data Source Manager)</NumberedListItem
+        >Go to Layer <RightArrow /> Add Layer <RightArrow /> Add WMS/WMTS Layer... (opens the Data Source Manager)</NumberedListItem
       >
       <NumberedListItem>Click the New button at the top to add a new connection</NumberedListItem>
       <NumberedListItem>Choose a name for the Name field ("UGRC Discover" works great)</NumberedListItem>

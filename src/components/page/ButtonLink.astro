@@ -1,4 +1,6 @@
 ---
+import RightArrow from './RightArrow.astro';
+
 interface Props {
   href: string;
   decorate?: 'arrow';
@@ -6,6 +8,7 @@ interface Props {
   style?: 'outline' | 'solid';
   color?: 'primary' | 'secondary' | 'accent';
 }
+
 const { href, decorate, status = 'idle', color = 'primary', style = 'solid' } = Astro.props;
 const list = [
   'custom-style',
@@ -49,6 +52,12 @@ if (color === 'primary') {
 <a href={href} class:list={list}>
   <button type="button" tabindex="-1">
     <slot />
-    {decorate === 'arrow' && <span class="ml-2">&#x2192;</span>}
+    {
+      decorate === 'arrow' && (
+        <span class="ml-2">
+          <RightArrow />
+        </span>
+      )
+    }
   </button>
 </a>

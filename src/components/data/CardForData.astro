@@ -1,6 +1,8 @@
 ---
 import type { ProductType } from '@models/products/sgid/types';
 
+import RightArrow from '@components/page/RightArrow.astro';
+
 import { convertProductType } from '@utils/data';
 
 interface Props {
@@ -30,5 +32,5 @@ const { href, title, type, stewards } = Astro.props;
       ><span>{stewards?.join(' & ')}</span>
     </div>
   </div>
-  <div class="-mr-4 self-center justify-self-end text-2xl text-primary dark:text-accent">&#x2192;</div>
+  <div class="-mr-4 self-center justify-self-end text-2xl text-primary dark:text-accent"><RightArrow /></div>
 </a>

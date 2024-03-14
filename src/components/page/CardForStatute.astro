@@ -1,4 +1,6 @@
 ---
+import RightArrow from './RightArrow.astro';
+
 interface Props {
   href: string;
   code: string;
@@ -15,5 +17,5 @@ const { href, code, title } = Astro.props;
       <slot />
     </div>
   </div>
-  <a href={href} class="custom-style -mr-4 self-center justify-self-end text-2xl text-zinc-50">&#x2192;</a>
+  <a href={href} class="custom-style -mr-4 self-center justify-self-end text-2xl text-zinc-50"><RightArrow /></a>
 </div>

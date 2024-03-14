@@ -6,6 +6,7 @@ import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types'
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
+import RightArrow from '@components/page/RightArrow.astro';
 import Section from '@components/page/Section.astro';
 
 import { stripeSections } from '@utils/page';
@@ -33,8 +34,8 @@ const page: IStandardPageMetadata = {
     <h2>Cache clearing instructions</h2>
     <h3>ArcGIS Pro</h3>
     <p class="pl-4">
-      Go to the service's Layer Properties &#x2192; Cache tab and select Clear Cache. You can also clear your entire Pro
-      cache by going to the Pro project's Options &#x2192; Display and check Clear cache and selecting OK.
+      Go to the service's Layer Properties <RightArrow /> Cache tab and select Clear Cache. You can also clear your entire
+      Pro cache by going to the Pro project's Options <RightArrow /> Display and check Clear cache and selecting OK.
     </p>
     <h3>Browser</h3>
     <p class="pl-4">
@@ -84,8 +85,9 @@ const page: IStandardPageMetadata = {
       resampling at scales other than the normal <ExternalLink
         href="https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated/"
         >web map scales</ExternalLink
-      >. The resampling settings are defined in <code>Layer Properties &#x2192; Symbology &#x2192; Resampling</code>.
-      Using bilinear or cubic resampling can look much better than the default nearest neighbor method.
+      >. The resampling settings are defined in <code
+        >Layer Properties <RightArrow /> Symbology <RightArrow /> Resampling</code
+      >. Using bilinear or cubic resampling can look much better than the default nearest neighbor method.
     </p>
     <p>
       This behavior is controlled by the "oversampling" value. At values greater than <code>1.00</code>, the

@@ -8,6 +8,7 @@ import BulletedList from '@components/page/BulletedList.astro';
 import Contacts from '@components/page/Contacts.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
+import RightArrow from '@components/page/RightArrow.astro';
 import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
@@ -57,11 +58,11 @@ const page: IStandardPageMetadata = {
     />
     <p>Use this service for a wide variety of individual purposes, such as:</p>
     <BulletedList>
-      <li>Cartography &#x2192; Make cool maps</li>
-      <li>Geoprocessing &#x2192; Solve problems</li>
-      <li>Analysis &#x2192; Write spatial queries</li>
-      <li>Scripting &#x2192; Click fewer buttons</li>
-      <li>Exploring &#x2192; Discover a rich catalog of statewide, open source spatial data</li>
+      <li>Cartography <RightArrow /> Make cool maps</li>
+      <li>Geoprocessing <RightArrow /> Solve problems</li>
+      <li>Analysis <RightArrow /> Write spatial queries</li>
+      <li>Scripting <RightArrow /> Click fewer buttons</li>
+      <li>Exploring <RightArrow /> Discover a rich catalog of statewide, open source spatial data</li>
     </BulletedList>
   </Section>
 

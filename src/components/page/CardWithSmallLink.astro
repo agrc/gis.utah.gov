@@ -1,4 +1,6 @@
 ---
+import RightArrow from '@components/page/RightArrow.astro';
+
 interface Props {
   title: string;
   href: string;
@@ -21,7 +23,13 @@ const { title, href, style = 'primary', class: className } = Astro.props;
     <p class="text-sm font-bold uppercase md:text-base">{title}</p>
     <p class="line-clamp-4 pr-2 text-sm text-zinc-300"><slot /></p>
   </div>
-  {href.startsWith('/') && <span class="-mr-4 justify-center self-start text-2xl">&#x2192;</span>}
+  {
+    href.startsWith('/') && (
+      <span class="-mr-4 justify-center self-start text-2xl">
+        <RightArrow />
+      </span>
+    )
+  }
   {
     href.startsWith('http') && (
       <span class="-mr-4 justify-center self-start text-2xl text-[1.3em]" aria-hidden="true">
