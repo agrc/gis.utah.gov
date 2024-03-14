@@ -2,7 +2,7 @@
 title: Municipal Boundaries Update for Third Quarter 2020 (Calendar Year)
 published: false
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   email: mheagin
 date: 2020-10-05T10:58:53.000Z
 tags:

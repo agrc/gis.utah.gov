@@ -1,6 +1,6 @@
 ---
 author:
-  display_name: MHeagin
+  display_name: Mike Heagin
   email: mheagin@utah.gov
 tags:
   - annexations

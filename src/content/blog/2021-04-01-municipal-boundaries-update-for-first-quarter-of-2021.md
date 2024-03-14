@@ -2,7 +2,7 @@
 title: Municipal Boundaries Update for First Quarter of 2021
 published: false
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   email: mheagin@utah.gov
 date: 2021-04-01T22:54:23.000Z
 tags:

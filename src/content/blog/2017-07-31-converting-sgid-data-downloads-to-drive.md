@@ -2,7 +2,7 @@
 title: Converting SGID data downloads to Drive
 published: false
 author:
-  display_name: KWalker
+  display_name: Keaton Walker
   email: kwalker@utah.gov
 date: 2017-07-31T15:39:39.000Z
 tags: []

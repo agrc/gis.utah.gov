@@ -2,7 +2,7 @@
 title: Newest Updates for Tax Data 2018
 published: false
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   email: mheagin@utah.gov
 date: 2018-03-19T22:38:18.000Z
 tags:

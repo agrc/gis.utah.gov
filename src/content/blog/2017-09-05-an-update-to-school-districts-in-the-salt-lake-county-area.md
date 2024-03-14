@@ -2,7 +2,7 @@
 title: An update to School Districts in the Salt Lake County area
 published: false
 author:
-  display_name: M Heagin
+  display_name: Mike Heagin
   email: mheagin@utah.gov
 date: 2017-09-05T20:05:24.000Z
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Meet Nathan Kota - New UGRC Staff
 author:
-  display_name: UGRC
+  display_name: UGRC Staff
   email: ugrc@utah.gov
 date: 2018-09-17T20:16:10.000Z
 tags: []

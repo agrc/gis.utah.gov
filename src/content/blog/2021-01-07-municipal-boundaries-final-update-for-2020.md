@@ -2,7 +2,7 @@
 title: Municipal Boundaries Final Update for 2020
 published: false
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   email: mheagin
 date: 2021-01-07T12:22:58.000Z
 tags:

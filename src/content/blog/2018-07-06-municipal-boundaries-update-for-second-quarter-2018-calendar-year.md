@@ -2,7 +2,7 @@
 title: Municipal Boundaries Update for Second Quarter 2018 (Calendar Year)
 published: false
 author:
-  display_name: mheagin
+  display_name: Mike Heagin
   email: mheagin@utah.gov
 date: 2018-07-06T15:42:45.000Z
 tags:

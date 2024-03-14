@@ -1,6 +1,6 @@
 ---
 author:
-  display_name: Data Queen
+  display_name: Kelly Green
   email: ugrc@utah.gov
 tags:
   - data

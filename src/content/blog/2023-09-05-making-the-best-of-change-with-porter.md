@@ -1,7 +1,7 @@
 ---
 title: Making the best of change with Porter
 author:
-  display_name: steve gourley
+  display_name: Steve Gourley
   email: sgourley@utah.gov
 date: 2023-09-05T09:01:39.000Z
 tags:

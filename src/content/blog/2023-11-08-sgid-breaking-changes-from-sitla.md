@@ -1,7 +1,7 @@
 ---
 title: SGID breaking changes from SITLA
 author:
-  display_name: steve gourley
+  display_name: Steve Gourley
   email: sgourley@utah.gov
 date: 2023-11-08T21:43:59.000Z
 tags:

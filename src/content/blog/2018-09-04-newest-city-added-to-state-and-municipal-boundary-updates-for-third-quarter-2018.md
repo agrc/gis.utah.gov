@@ -3,7 +3,7 @@ title: Newest city added to state and Municipal Boundary updates for Third
   Quarter 2018
 published: false
 author:
-  display_name: MHeagin
+  display_name: Mike Heagin
   email: mheagin
 date: 2018-09-04T18:23:04.000Z
 tags:
