@@ -2639,13 +2639,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'cadastre.land_ownership',
     layerId: 0,
   },
-  'UDOT Routes ALRS': {
-    itemId: 'hosted by UDOT',
-    name: 'UDOT Routes ALRS',
-    featureServiceId: null,
-    openSgid: '',
-    layerId: 0,
-  },
   'Utah H3 Hexes Level 8': {
     itemId: '008865ed31514569a9fd11a6dc8a7ee0',
     name: 'Utah H3 Hexes Level 8',
@@ -2714,6 +2707,16 @@ export const dataPages: DownloadMetadata = {
     itemId: '13137de7f65e4fffa4ee9f0b397045f5',
     featureServiceHost: 'https://roads.udot.utah.gov/server/rest/services/Public/',
     mapServiceId: 'Freeway_Exits',
+  },
+  'UDOT Routes ALRS': {
+    externalHubOrganization: 'uplan',
+    itemId: 'ecb09af7f887450e851c2634dac92edb',
+    name: 'UDOT Routes ALRS',
+    oddHubName: 'udot-routes-alrs-1',
+    featureServiceHost: 'https://roads.udot.utah.gov/server/rest/services/Public/',
+    layerId: 0,
+    openSgid: '',
+    mapServiceId: 'UDOT_Routes',
   },
   'Utah Open Source Places': {
     itemId: '45e25f4062264dc1baa3765e3dbb5d8e',
