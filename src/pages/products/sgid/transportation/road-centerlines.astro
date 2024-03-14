@@ -1,0 +1,174 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Roads',
+  description: `Statewide road centerline dataset for Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYLINE,
+  category: SgidCategory.TRANSPORTATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+
+  updateHistory: [`October 6, 2023`],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah Roads is a multi-purpose statewide roads dataset for cartography, routing, and range based-address location.
+      This dataset is also used as the base geometry for deriving the GIS-representation of <a
+        href="/products/sgid/transportation/highway-routes-lrs"
+        >UDOT's advanced highway linear referencing system (ALRS)</a
+      > as well as <a href="/products/sgid/transportation">UGRC's network analysis datasets</a>.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      This dataset primarily depicts features used by hikers/pedestrians and bikers. It began with map data purchased
+      from a private entity (Orbital View, Inc), for which full rights werCe purchased by the GOED Office of Outdoor
+      Recreation in July 2014. Since the original purchase, subsequent substantive updates have included: 2014 Revisions
+      from National Park service; 2015 additions from Emery County; June 2016 additions from Cache County US Forest
+      Service Geodata Hub (all forests except Sawtooth in NW Box Elder County), and Mountainland Association of
+      Governments (Utah and Wasatch counties); 2018/2019 additions as part of the multimodal project; and currently
+      ongoing updates by WFRC transportation planners.
+    </p>
+
+    <p>
+      Presently, the planned approach for on street bicycle lanes and routes is to incorporate them in the the statewide
+      roads GIS layer using left and right side attributes. On street bike infrastructure is not expected to be
+      represented in this map layer.
+    </p>
+
+    <p>
+      Although it is a work in progress, this dataset represents a substantial starting point to integrate additional
+      trail systems from other local, state, and federal agencies. The success of this effort will rely heavily on local
+      government and land stewards to review and continue to improve upon this data. Additional segments can be
+      submitted to UGRC for inclusion in this dataset.
+    </p>
+
+    <p>Note: Significant enhancements (including a schema change) were made to this layer in June 2020.</p>
+
+    <b>CartoCode</b>
+    <p>For a more specific query of facility types, use the CartoCode field:</p>
+    <dl>
+      <DefinitionListItem title="1"
+        >Hiking Only (Hiking and walking are the only uses allowed on this facility)</DefinitionListItem
+      >
+      <DefinitionListItem title="2"
+        >Hiking and Biking (Singletrack, natural surface facility. Hiking and biking are allowed)</DefinitionListItem
+      >
+      <DefinitionListItem title="3"
+        >Paved Shared Use (Paved shared use path, recreational path, urban pathway)</DefinitionListItem
+      >
+      <DefinitionListItem title="4"
+        >Road-concurrent (Facility is on or adjacent to a road, generally a natural surface double track, forest service
+        road, canal road, etc.)
+      </DefinitionListItem>
+      <DefinitionListItem title="5"
+        >Biking Only- (Biking is the primary or only use on this facility. High speeds, blind corners and technical
+        features are common. For safety reasons, hiking, if not expressly prohibited, is not recommended.)
+      </DefinitionListItem>
+      <DefinitionListItem title="6"
+        >Equestrian Primary (Equestrian is the primary use on this facility)</DefinitionListItem
+      >
+      <DefinitionListItem title="7"
+        >Steps (Steps, staircase, or other feature that is not accessible to wheeled or assistive devices on otherwise
+        paved / accessible route)
+      </DefinitionListItem>
+      <DefinitionListItem title="8"
+        >Bridge, Tunnel (Grade change above or below ground surface, generally a bridge or tunnel)</DefinitionListItem
+      >
+      <DefinitionListItem title="9"
+        >Link (Network route connection, see Link on CVDomain_TrailClass tab)</DefinitionListItem
+      >
+    </dl>
+    <b>Class</b>
+    For a general query of facility types, use the Class field:
+    <dl>
+      <DefinitionListItem title="Path"
+        >Paved, off-street travelway designed for non-motorized users, generally wider and with greater separation from
+        roadway than a standard sidewalk
+      </DefinitionListItem>
+      <DefinitionListItem title="Trail"
+        >Natural surface travelway (dirt, gravel, slickrock, snow, etc)</DefinitionListItem
+      >
+      <DefinitionListItem title="Link"
+        >Network route connection through a parking lot, alleyway, etc. where a road segment does not exist but can be
+        traversed via walking or bicycling
+      </DefinitionListItem>
+      <DefinitionListItem title="Steps"
+        >Developed (generally concrete) steps or stairs, usually occurring along a paved route</DefinitionListItem
+      >
+      <DefinitionListItem title="Grade Separated Crossing"
+        >Paved crossing feature above or below roadway, train track, etc. for walking and bicycling use only
+      </DefinitionListItem>
+    </dl>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Utah Roads Data Model"
+        href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546"
+        >Explore the fields and domain values for this layer.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Utah Roads schema file"
+        href="https://drive.google.com/file/d/1Oi24SLBBFLr-H_pIIjQDTMP31jel5bET/view?usp=sharing"
+        >Download the Utah Roads schema file in file geodatabase format.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov/" style="secondary"
+        >Explore this data UGRC's interactive mapping application</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary"
+        >Read how this data works with the transportation layers</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Multi-Modal Network Dataset"
+        href="/products/sgid/transportation/network-data"
+        style="secondary">ESRI Network Dataset</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Discover" href="/products/discover" style="secondary"
+        >Explore UGRC's aerial imagery and base maps</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

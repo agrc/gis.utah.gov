@@ -23,7 +23,7 @@ import { Image } from 'astro:assets';
 import rampNumberingPhoto from '@images/sgid/udot_ramp_numbering.png';
 
 export const metadata: IMetadata = {
-  title: 'UDOT Routes ALRS',
+  title: 'Utah UDOT Routes ALRS',
   description: `Primary routes from UDOT's Roads and Highways advanced linear referencing system (ALRS).`,
   stewards: ['Utah Department of Transportation (UDOT)'],
   type: ProductType.POLYLINE,
@@ -99,12 +99,14 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink
-        title="LRS mile point measures"
-        href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth/"
-        >Contains tenth-mile points</CardWithPopularLink
+        title="LRS changes"
+        href="https://drive.google.com/file/d/14QFEDCvicSNsO13fBolRjpuYgs9RGZv_/view"
+        >Read more about the changes coming to the LRS</CardWithPopularLink
       >
-      <CardWithPopularLink title="UGRC API geocoding endpoints" href="https://api.mapserv.utah.gov/#geocoding/"
-        >UGRC milepost and reverse milepost endpoints</CardWithPopularLink
+      <CardWithPopularLink
+        title="Metadata for LRS"
+        href="https://drive.google.com/file/d/11rV2361WtRyN2LSGcSyGpMKPysFDXBgD/view"
+        >Read more about the LRS field values</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
