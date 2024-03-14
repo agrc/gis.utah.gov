@@ -1,0 +1,59 @@
+---
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import RightArrow from '@components/page/RightArrow.astro';
+
+import { Image } from 'astro:assets';
+
+import blmPointIdPhoto from '@images/sgid/plss/blm-point-id.png';
+---
+
+<div class="mx-auto flex w-fit items-center gap-10 rounded-lg border bg-white p-4 shadow-md">
+  <div>
+    <p class="dark:text-zinc-800">
+      Bureau of Land <br />
+      Management (BLM) <br />
+      Point IDs
+    </p>
+  </div>
+  <Image width="400" src={blmPointIdPhoto} alt="A diagram of the parts of a BLM point id string" />
+</div>
+<h3>GCDB Point ID</h3>
+<p>This 6 digit number is the combination of two three letter sequences - <code>XxxYyy</code>.</p>
+<dl>
+  <DefinitionListItem title="The first 3 digits (Xxx)">
+    <p>Xxx - may be the same for all points in a similar survey.</p>
+    <ul>
+      <li>711 - 719 Town Sites, City Boundaries</li>
+      <li>720 - 739 County Boundaries</li>
+      <li>740 - 769 State Boundaries</li>
+      <li>770 - 799 Forest Service, Parks Service, Reservations,</li>
+      <li>Grant, Other Boundaries with Mileposts.</li>
+      <li>800 - 836 Meanders (right bank even #, left bank odd #.)</li>
+      <li>837 - 879 Tracts</li>
+      <li>880 - 899 Right of Ways</li>
+      <li>900 - 999 Mineral Surveys, Homestead Entries, etc.</li>
+    </ul>
+  </DefinitionListItem>
+</dl>
+<dl>
+  <DefinitionListItem title="The last 3 digits (Yyy)">
+    <p>Yyy - Numbered sequentially along the survey in increments of 10. The prefix</p>
+  </DefinitionListItem>
+</dl>
+
+<dl>
+  <DefinitionListItem title="Irregularities of Townships for the first index of [X]xx and [Y]yy">
+    <p>
+      1, 2, 8 or 9 <RightArrow /> offset corners along interior section lines and section subdivision lines where +/- 2 is
+      the recommended naming scheme.
+    </p>
+    <p>
+      3 or 7 <RightArrow /> offset corners along township boundaries, angle points, witness corners, and witness points.
+    </p>
+    <p>
+      4 or 6 <RightArrow /> intersections of rectangular/special surveys and 1/16th corners of elongated sections.
+    </p>
+    <p>0 <RightArrow /> all regular aliquot corners down to 1/16th.</p>
+    <p>5 <RightArrow /> all regular aliquot corners down to 1/256th.</p>
+  </DefinitionListItem>
+</dl>
