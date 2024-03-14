@@ -14,6 +14,8 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import BulletedList from '@components/page/BulletedList.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 import { dataPages } from '@data/downloadMetadata';
 // import udot_ramp_numbering_img from '@images/product-sgid/udot_ramp_numbering.png';
 
@@ -56,27 +58,31 @@ const page: IPageMetadata = {
       identifiers (ex. 0015NR31703 is at exit 317 on I-15).
     </p>
     <h3>Fields worth noting</h3>
-    <h4>ROUTE_ID</h4>
-    <ul>
-      <li>P represents Positive direction (increasing milepoint values)</li>
-      <li>N represents Negative direction (for divided routes only)</li>
-      <li>M represents Mainline</li>
-      <li>R represents Ramp</li>
-      <li>C represents Collector</li>
-      <li>X represents Other</li>
-    </ul>
-    <h4>CARTOCODE</h4>
-    <ul>
-      <li>1 - Interstate highways</li>
-      <li>2 - US highways</li>
-      <li>3 - State highways</li>
-      <li>5 - Miscellaneous routes associated with interchanges</li>
-      <li>6 - Ramps, Interstates</li>
-      <li>7 - Ramps, US Highways</li>
-      <li>8 - Ramps, State highways</li>
-      <li>9 - Local routes, federal aid</li>
-      <li>I - Institutional roads designated as state highways</li>
-    </ul>
+    <dl>
+      <DefinitionListItem title="ROUTE_ID">
+        <BulletedList>
+          <li>P represents Positive direction (increasing milepoint values)</li>
+          <li>N represents Negative direction (for divided routes only)</li>
+          <li>M represents Mainline</li>
+          <li>R represents Ramp</li>
+          <li>C represents Collector</li>
+          <li>X represents Other</li>
+        </BulletedList>
+      </DefinitionListItem>
+      <DefinitionListItem title="CARTOCODE">
+        <BulletedList>
+          <li>1 - Interstate highways</li>
+          <li>2 - US highways</li>
+          <li>3 - State highways</li>
+          <li>5 - Miscellaneous routes associated with interchanges</li>
+          <li>6 - Ramps, Interstates</li>
+          <li>7 - Ramps, US Highways</li>
+          <li>8 - Ramps, State highways</li>
+          <li>9 - Local routes, federal aid</li>
+          <li>I - Institutional roads designated as state highways</li>
+        </BulletedList>
+      </DefinitionListItem>
+    </dl>
     <p>
       Please reach out to <Contacts contactKey="udot" subject="gis.utah.gov mile reference post layer inquiry" inline />
       with questions about this data layer.
