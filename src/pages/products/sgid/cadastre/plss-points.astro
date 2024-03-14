@@ -1,0 +1,146 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Disclaimer from '@components/data/Disclaimer.astro';
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import NumberedList from '@components/page/NumberedList.astro';
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah PLSS GCDB Points',
+  description: `PLSS Points GCDB is a point dataset that depicts the Public Land Survey System (PLSS) for the State of Utah and are based on Geographic Coordinate Data Base (GCDB) coordinate data`,
+  stewards: ['UGRC', 'BLM', 'SITLA', 'Utah Counties', 'Premier Data Services'],
+  type: ProductType.POINT,
+  category: SgidCategory.CADASTRE,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://plss.utah.gov/',
+  updateHistory: [
+    `December 15, 2020`,
+    `October 15, 2019`,
+    `January 15, 2019`,
+    `January 1, 2018`,
+    `November 1, 2016`,
+    `August 28, 2015`,
+  ],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+
+  links: [
+    {
+      title: 'The link title',
+      url: 'https://link-to-the-resource.com',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset was created to provide continuous data for the state of Utah. This data is Utah PLSS Fabric Version
+      2.3 2020 of the Utah GCDB. This data set represents the GIS Version of the Public Land Survey System. Updates are
+      expected annually as horizontal control positions from published sources and global positioning system (GPS)
+      observations are added.
+    </p>
+    <p>
+      The primary source for the data is cadastral survey records housed by the BLM supplemented with local records and
+      geographic control coordinates from states, counties as well as other federal agencies such as the USGS and USFS.
+      The CADNSDI or the Cadastral Publication Data Standard is the cadastral data component of the NSDI.
+    </p>
+  </Fragment>
+
+  <!-- the title for hub data is typically `Use the data` but it can be anything
+  When using direct downloads for apps or services, use `Get the app`, or `Use the service` -->
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <!-- a hub download uses the hub component. Only keep one element and delete the unused. -->
+    <HubDownloads {...page.hub} />
+    <!-- links use the direct downloads component. Only keep one element and delete the unused. -->
+    <DirectDownloads title="A title describing the links. e.g. Install links" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>A description of the product. This is the extra information that didn't fit into the summary.</p>
+    <p>
+      Schema definitions, and deeper dive things that only a few will read. You use standard html in the summary slot.
+    </p>
+    <p>
+      Use the <ExternalLink href="https://gis.utah.gov">ExternalLink</ExternalLink> component for external links. Use <a
+        href="/products/sgid/address">relative links</a
+      > for internal links.
+    </p>
+    <p>
+      Styling is done with <ExternalLink href="https://tailwindcss.com/docs/utility-first">tailwindcss</ExternalLink>.
+      But I can help take care of any extra formatting you are missing.
+    </p>
+    <h3>Bullets</h3>
+    <BulletedList>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </BulletedList>
+    <h3>Numbers</h3>
+    <NumberedList>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </NumberedList>
+    <h3>Definitions</h3>
+    <dl>
+      <DefinitionListItem title="Term 1">Definition</DefinitionListItem>
+    </dl>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Disclaimer slot="disclaimer">
+    <p>
+      If there is a specific disclaimer different from our standard disclaimer, it goes here. Otherwise delete this
+      element
+    </p>
+  </Disclaimer>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Item 1" href="https://gis.utah.gov">Item 1 description.</CardWithPopularLink>
+      <CardWithPopularLink title="Item 2" href="/products/sgid/address/">Item 2 description.</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://data.udot.utah.gov" style="secondary"
+        >Description</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary"
+        >Description</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address" style="secondary"
+        >Description</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Discover" href="/products/discover" style="secondary">Description</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
