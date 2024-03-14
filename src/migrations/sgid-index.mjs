@@ -61,6 +61,10 @@ async function processStewardship() {
       newRows = [];
     }
   }
+
+  if (newRows.length > 0) {
+    await sgidIndexWorksheet.addRows(newRows);
+  }
 }
 
 function getUgrcStatus(deprecated, refreshCycle) {
