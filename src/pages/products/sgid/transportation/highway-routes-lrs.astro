@@ -10,17 +10,12 @@ import Metadata from '@components/data/Metadata.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import Contacts from '@components/page/Contacts.astro';
-import DefinitionListItem from '@components/page/DefinitionListItem.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 import { dataPages } from '@data/downloadMetadata';
-
-import sharePhoto from '@images/documentation/sgid/share.svg';
 // import udot_ramp_numbering_img from '@images/product-sgid/udot_ramp_numbering.png';
-import { Image } from 'astro:assets';
 
 export const metadata: IMetadata = {
   title: 'UDOT Routes ALRS',
@@ -32,7 +27,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`2024`],
+  updateHistory: [`Weekly`],
   hub: {
     ...dataPages[metadata.title],
   },
@@ -44,12 +39,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      The Mile Reference Posts dataset contains the physical location of milepost signs as they are located along the
-      roads. This collection technique is different from <ExternalLink
-        href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth"
-        >linear mile point measures</ExternalLink
-      > that are derived from a linear reference system (LRS). The advantage of this collection method is that the mile reference
-      posts stay in roughly the same place over time and do not change when other sections of the road, or LRS, are realigned.
+      The UDOT Routes ALRS layer is a polylineM dataset wherein each state and federal route is a single feature whose
+      vertices include a milepoint measure coordinate.
     </p>
   </Fragment>
 
@@ -58,52 +49,38 @@ const page: IPageMetadata = {
   </Section>
 
   <Fragment slot="description">
-    <Image slot="image" src={sharePhoto} alt="UDOT ramp numbering" class="w-full max-w-[400px]" />
     <!-- <Image slot="image" src={udot_ramp_numbering_img} alt="UDOT ramp numbering" class="w-full max-w-[400px]" /> -->
     <p>
-      The Mile Reference Posts is an <ExternalLink
-        href="https://www.esri.com/en-us/arcgis/products/arcgis-roads-highways/overview"
-        >ESRI Roads and Highways Event</ExternalLink
-      > layer and supports the <ExternalLink href="https://maps.udot.utah.gov/wadocuments/Apps/Stationing/"
-        >RP Stationing App</ExternalLink
-      >.
+      Major routes (shown in the ROUTE_ID field) are named using UDOT’s naming convention (ex. 0089PM is US-89, a
+      mainline route in the positive direction). Ramps and collectors are also included and have 11 character
+      identifiers (ex. 0015NR31703 is at exit 317 on I-15).
     </p>
+    <h3>Fields worth noting</h3>
+    <h4>ROUTE_ID</h4>
+    <ul>
+      <li>P represents Positive direction (increasing milepoint values)</li>
+      <li>N represents Negative direction (for divided routes only)</li>
+      <li>M represents Mainline</li>
+      <li>R represents Ramp</li>
+      <li>C represents Collector</li>
+      <li>X represents Other</li>
+    </ul>
+    <h4>CARTOCODE</h4>
+    <ul>
+      <li>1 - Interstate highways</li>
+      <li>2 - US highways</li>
+      <li>3 - State highways</li>
+      <li>5 - Miscellaneous routes associated with interchanges</li>
+      <li>6 - Ramps, Interstates</li>
+      <li>7 - Ramps, US Highways</li>
+      <li>8 - Ramps, State highways</li>
+      <li>9 - Local routes, federal aid</li>
+      <li>I - Institutional roads designated as state highways</li>
+    </ul>
     <p>
       Please reach out to <Contacts contactKey="udot" subject="gis.utah.gov mile reference post layer inquiry" inline />
       with questions about this data layer.
     </p>
-    <h3>Mile Reference Posts vs Linear Mile Point Measures</h3>
-    <h4>Mile Reference Posts</h4>
-    <p>
-      Mile Reference Posts are signs located in physical locations. They are helpful for navigation but may not reflect
-      the linear referencing measurement.
-    </p>
-    <h4>Linear Mile Point Measures</h4>
-    <p>
-      <ExternalLink href="https://opendata.gis.utah.gov/datasets/uplan::mile-point-measure-tenth"
-        >Linear Mile Point Measures</ExternalLink
-      > are calculated based on geometric lengths of data and are spatially accurate. They may or may not align with actual
-      Mile Reference Posts and are updated every time a change is made in the spatial data to reflect updates in the physical
-      location and length of the roadway.
-    </p>
-    <p>
-      For more information on the difference between mile reference posts and linear measures, please refer to <ExternalLink
-        href="https://lrs-hub.udot.utah.gov/pages/alrs-additional-information">UDOT's webpage</ExternalLink
-      > addressing this topic or their <ExternalLink
-        href="https://drive.google.com/file/d/14QFEDCvicSNsO13fBolRjpuYgs9RGZv_/view?usp=sharing"
-        >informational document</ExternalLink
-      >.
-    </p>
-    <h3>Fields worth noting</h3>
-    <dl>
-      <DefinitionListItem title="Legend">Milepost number on sign</DefinitionListItem>
-      <DefinitionListItem title="Measure">Location of the milepost along the LRS</DefinitionListItem>
-      <DefinitionListItem title="Station Label"
-        >Highway name + direction of route along LRS (P = positive, milepost numbers increasing; N = negative, milepost
-        numbers decreasing) + milepost number. For example the value 0015PM_271 translates to mile marker 217 on
-        Interstate-15 on the north bound (P) side.
-      </DefinitionListItem>
-    </dl>
   </Fragment>
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
