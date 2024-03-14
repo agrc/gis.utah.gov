@@ -13,6 +13,7 @@ interface Props {
   actionUrl?: string;
   config?: {
     skipInDepth?: boolean;
+    stripeDescription?: boolean;
   };
 }
 
@@ -37,7 +38,7 @@ const { title = 'UGRC', subTitle, category, actionUrl, config } = Astro.props;
   {
     !(config?.skipInDepth ?? false) && (
       <>
-        <Section title="A closer look" stripe titlePosition="center">
+        <Section title="A closer look" stripe={!(config?.stripeDescription ?? false)} titlePosition="center">
           <slot name="description" />
           <slot name="update-history" />
           <slot name="disclaimer" />
