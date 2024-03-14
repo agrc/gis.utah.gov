@@ -483,8 +483,8 @@ export const dataPages: DownloadMetadata = {
   'Utah PLSS Point GCDB': {
     itemId: 'ef75c3c063ac4b9b996b70e21ce248fe',
     name: 'Utah PLSS Point GCDB',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahPLSSGCDBPoints',
+    openSgid: 'cadastre.plss_point_gcdb',
     layerId: 0,
   },
   'Utah PLSS Quarter Quarter Sections GCDB': {
