@@ -1456,8 +1456,8 @@ export const dataPages: DownloadMetadata = {
   'Utah National Grid': {
     itemId: '2eeec11a38d64637a74b5c9ddef0f76f',
     name: 'Utah National Grid',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'NationalGrid',
+    openSgid: 'indices.national_grid',
     layerId: 0,
   },
   'Utah Contour Line Extents': {
