@@ -1,0 +1,121 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { Image } from 'astro:assets';
+
+import drg from '@images/sgid/drg.png';
+
+export const metadata: IMetadata = {
+  title: 'USGS Scanned Topographic Maps',
+  description: `Scanned series of USGS topographic maps, also known as Digital Raster Graphics (DRGs)`,
+  stewards: ['UGRC', 'U.S. Geological Survey'],
+  type: ProductType.IMAGERY_RASTER,
+  category: SgidCategory.TOPO,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`2008`],
+  links: [
+    {
+      title: 'Download from Raster app',
+      url: 'https://raster.utah.gov/?products=5&title=USGS%20Topo%20Maps',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <div class="flex justify-around gap-2">
+      <a href={drg.src}>
+        <Image src={drg} width="300" alt="An RGB image of the NAIP" class="w-full max-w-[300px] rounded-lg" /></a
+      >
+    </div>
+    <p>
+      The SGID contains complete statewide coverage of scanned standard series U.S. Geological Survey topographic maps,
+      also known as Digital Raster Graphics (DRGs). UGRC has modified these DRGs so that they are available collared and
+      collarless and are projected to UTM NAD83 Zone 12 North. For all available USGS Topographic Maps, including the
+      latest GeoPDF, visit <ExternalLink href="https://apps.nationalmap.gov/downloader/"
+        >The National Map TNM Download application</ExternalLink
+      > or <ExternalLink href="https://ngmdb.usgs.gov/topoview/viewer">topoView</ExternalLink>.
+    </p>
+  </Fragment>
+
+  <Section title="Get the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="Links" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The Vintage category contains the older 7.5, 15 and 30-minute U.S. Geological Survey topographic quadrangle maps
+      from 1900-1966. They were scanned by the Utah Geological Survey (UGS) at a resolution of 500 dots per inch (dpi).
+      These digital scans were also enhanced in Adobe Photoshop as needed and 16 point spline georeferencing was applied
+      to the images. There is not a statewide collection of these vintage topographic maps and they have a NAD27 Datum.
+    </p>
+  </Fragment>
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="1:24,000 topographic maps"
+        href="https://raster.utah.gov/?catGroup=24K%20DRG&title=USGS%2024K%20Topo%20Maps"
+        >Download from raster app.
+      </CardWithPopularLink>
+
+      <CardWithPopularLink title="1;100,000 topographic maps" href="https://raster.utah.gov/?cat=100K%20DRG"
+        >Download from raster app.
+      </CardWithPopularLink>
+
+      <CardWithPopularLink title="1:250,000 topographic maps" href="https://raster.utah.gov/?cat=250K%20DRG"
+        >Download from raster app.
+      </CardWithPopularLink>
+
+      <CardWithPopularLink
+        title="1:500,000 topographic map"
+        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/drgs/500k/Collared/state_DRG500K_NAD27.zip"
+        >Download Statewide 500K Topographic Map (NAD27)
+      </CardWithPopularLink>
+
+      <CardWithPopularLink
+        title="Vintage topographic maps"
+        href="https://raster.utah.gov/?cat=Vintage%20Topographic%20Map"
+        >Download from raster app.
+      </CardWithPopularLink>
+
+      <CardWithPopularLink
+        title="Utah Geological Survey (UGS) Scanned Aerial Imagery"
+        href="https://geodata.geology.utah.gov/imagery/">1935-Present scanned aerial imagery.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="High Resolution Orthophotography (HRO)"
+        href="/products/sgid/aerial-photography/high-resolution-orthophotography"
+        style="secondary">High resolution orthorectified aerial photography</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Digital Orthophoto Quads (DOQ)"
+        href="/products/sgid/aerial-photography/digital-orthophoto-quadrangle"
+        style="secondary">1 Meter orthorectified aerial photography</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
