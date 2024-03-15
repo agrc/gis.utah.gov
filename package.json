@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier \"src/**/*.{astro,js,jsx,ts,json,mjs,md,mdx}\" --write"
+    "format": "prettier \"src/**/*.{astro,js,jsx,ts,json,mjs,md,mdx}\" --write",
+    "validate-site-map": "cd src/scripts && node ./validate-site-map.mjs"
   },
   "prettier": {
     "printWidth": 120,
