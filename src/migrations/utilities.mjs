@@ -62,6 +62,17 @@ export async function validateOpenDataUrl(url) {
 }
 
 export async function validateProductPageUrl(url) {
+  let parsedUrl;
+
+  try {
+    parsedUrl = new URL(url);
+  } catch (error) {
+    return {
+      valid: false,
+      message: `invalid url: ${error.message}`,
+    };
+  }
+
   let response;
   try {
     response = await ky(url, {
@@ -83,8 +94,8 @@ export async function validateProductPageUrl(url) {
       }
 
       return {
+        redirect: `redirected to ${redirect}${parsedUrl.hash}${parsedUrl.search}`,
         ...(await validateProductPageUrl(`${redirect}`)),
-        redirect: `redirected to ${redirect}`,
       };
     }
 

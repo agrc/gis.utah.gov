@@ -27,6 +27,8 @@ describe('validateProductPageUrl', () => {
     ['https://data.wfrc.org/datasets/access-to-opportunities-work-related-taz-based/about', false],
     ['https://data-uplan.opendata.arcgis.com/', true],
     ['https://data.wfrc.org/datasets/access-to-opportunities-work-related-taz-based', false],
+    ['shelved', false],
+    ['https://rideuta.maps.arcgis.com/apps/opsdashboard/index.html#/43fc692872714c418a83343f481c2e99', true],
   ];
 
   for (const test of tests) {
