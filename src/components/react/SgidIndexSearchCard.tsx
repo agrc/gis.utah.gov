@@ -21,7 +21,7 @@ export default function SgidIndexSearchCard({ astroSite, record, resultIndex }: 
   };
 
   const apps = [] as appLink[];
-  let urlString = record.productPagePath;
+  let urlString = record.productPage;
 
   if (record.inActionUrl) {
     apps.push({ url: record.inActionUrl, title: 'Data in action' });
