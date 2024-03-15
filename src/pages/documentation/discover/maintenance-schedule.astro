@@ -1,0 +1,140 @@
+---
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import Layout from '@layouts/FullWidth.astro';
+import { GoogleAuth, auth } from 'google-auth-library';
+import { GoogleSpreadsheet } from 'google-spreadsheet';
+
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
+
+import Section from '@components/page/Section.astro';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  title: 'Base maps maintenance',
+  pillar: Pillar.DOCUMENTATION,
+  section: stripeSections([
+    {},
+    { title: 'Raster Tile Caches (discover.agrc.utah.gov)' },
+    { title: 'Vector Tile Caches (AGOL)' },
+  ]),
+};
+
+const sheetId = '1XnncmhWrIjntlaMfQnMrlcCTyl9e2i-ztbvqryQYXDc';
+
+const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'];
+
+let client;
+if (import.meta.env.PROD) {
+  console.log('using ci credentials');
+  client = auth.fromJSON(JSON.parse(import.meta.env.GOOGLE_PRIVATE_KEY));
+  client.scopes = scopes;
+} else {
+  client = new GoogleAuth({
+    scopes,
+  });
+}
+
+const sheet = new GoogleSpreadsheet(sheetId, client);
+await sheet.loadInfo();
+const worksheet = sheet.sheetsByIndex[0];
+await worksheet.loadCells('A1:F7');
+
+const dates = {
+  Terrain: null,
+  Lite: null,
+  Overlay: null,
+  AddressPoints: null,
+  Hillshade: null,
+  Topo: null,
+  UtahPLSS: null,
+  StatewideParcels: null,
+};
+let currentRow = 0;
+let currentColumn = 0;
+while (currentRow < worksheet.rowCount) {
+  const cell = worksheet.getCell(currentRow, currentColumn);
+  if (typeof cell.value === 'string' && Object.keys(dates).includes(cell.value)) {
+    dates[cell.value] = worksheet.getCell(currentRow + 1, currentColumn).formattedValue;
+  }
+  if (currentColumn === worksheet.columnCount - 1) {
+    currentColumn = 0;
+    currentRow++;
+  } else {
+    currentColumn++;
+  }
+}
+---
+
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
+  <Section {...page.section[0]}>
+    <p>We update our base maps regularly from the most up-to-date data in the <a href="/products/sgid">SGID.</a></p>
+    <p>The last updated dates for the base maps are as follows:</p>
+  </Section>
+  <Section {...page.section[1]}>
+    <table class="mx-auto">
+      <thead>
+        <tr class="border-b border-black/50 pb-2 text-left dark:border-white/50">
+          <th class="py-3 pr-3">Base map</th>
+          <th class="py-3 text-right">Last Updated</th>
+        </tr>
+        <tbody>
+          <tr class="border-b border-black/20 dark:border-white/20">
+            <td class="py-3 pr-3"><a href="/products/sgid/base-maps/terrain">Terrain</a></td>
+            <td class="py-3 text-right">{dates.Terrain}</td>
+          </tr>
+          <tr class="border-b border-black/20 dark:border-white/20">
+            <td class="py-3 pr-3"><a href="/products/sgid/base-maps/lite">Lite</a></td>
+            <td class="py-3 text-right">{dates.Lite}</td>
+          </tr>
+          <tr class="border-b border-black/20 dark:border-white/20">
+            <td class="py-3 pr-3"><a href="/products/sgid/base-maps/overlay">Overlay</a></td>
+            <td class="py-3 text-right">{dates.Overlay}</td>
+          </tr>
+          <tr class="border-b border-black/20 dark:border-white/20">
+            <td class="py-3 pr-3">AddressPoints</td>
+            <td class="py-3 text-right">{dates.AddressPoints}</td>
+          </tr>
+          <tr class="border-b border-black/20 dark:border-white/20">
+            <td class="py-3 pr-3">Hillshade</td>
+            <td class="py-3 text-right">{dates.Hillshade}</td>
+          </tr>
+          <tr class="border-b border-black/20 dark:border-white/20">
+            <td class="py-3 pr-3">Topo</td>
+            <td class="py-3 text-right">{dates.Topo}</td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <Section {...page.section[2]}>
+      <table class="mx-auto">
+        <thead>
+          <tr class="border-b border-black/50 pb-2 text-left dark:border-white/50">
+            <th class="py-3">Base map</th>
+            <th class="py-3">Last Updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-black/20 dark:border-white/20">
+            <td class="py-3 pr-3"
+              ><ExternalLink href="http://utah.maps.arcgis.com/home/item.html?id=1fa20fd1c2e44716bbec267c4e592e5c"
+                >Utah PLSS</ExternalLink
+              ></td
+            >
+            <td class="py-3 text-right">{dates.UtahPLSS}</td>
+          </tr>
+          <tr class="border-b border-black/20 dark:border-white/20">
+            <td class="py-3 pr-3"
+              ><ExternalLink href="http://utah.maps.arcgis.com/home/item.html?id=71d0a7ba7c6745fc88de84e7d9e5f066"
+                >Utah Statewide Parcels</ExternalLink
+              ></td
+            >
+            <td class="py-3 text-right">{dates.StatewideParcels}</td>
+          </tr>
+        </tbody>
+      </table>
+    </Section>
+  </Section>
+</Layout>
