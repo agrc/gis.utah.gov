@@ -11,6 +11,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import Contacts from '@components/page/Contacts.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -28,18 +29,18 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   updateHistory: [
-    'March 07, 2024',
-    'February 09, 2024',
-    'January 12, 2024',
-    'December 15, 2023',
-    'November 07, 2023',
-    'October 06, 2023',
-    'September 08, 2023',
-    'August 04, 2023',
-    'July 21, 2023',
-    'June 09, 2023',
-    'April 06, 2023',
-    'March 10, 2023',
+    '<a href="/blog/2024-03-07-utah-sgid-statewide-roads-data-layer-updates-03072024">March 07, 2024</a>',
+    '<a href="/blog/2024-02-09-utah-sgid-statewide-roads-data-layer-updates-02092024">February 09, 2024</a>',
+    '<a href="/blog/2024-01-12-utah-sgid-statewide-roads-data-layer-updates-01122024">January 12, 2024</a>',
+    '<a href="/blog/2023-12-15-utah-sgid-statewide-roads-data-layer-updates-1215023">December 15, 2023</a>',
+    '<a href="/blog/2023-11-07-utah-sgid-statewide-roads-data-layer-updates-11072023">November 07, 2023</a>',
+    '<a href="/blog/2023-10-06-utah-sgid-statewide-roads-data-layer-updates-10062023">October 06, 2023</a>',
+    '<a href="/blog/2023-09-08-utah-sgid-statewide-roads-data-layer-updates-09082023">September 08, 2023</a>',
+    '<a href="/blog/2023-08-04-utah-sgid-statewide-roads-data-layer-updates-08042023">August 04, 2023</a>',
+    '<a href="/blog/2023-07-21-utah-sgid-statewide-roads-data-layer-updates-0721023">July 21, 2023</a>',
+    '<a href="/blog/2023-06-09-utah-sgid-statewide-roads-data-layer-updates-06092023">June 09, 2023</a>',
+    '<a href="/blog/2023-04-06-utah-sgid-statewide-roads-data-layer-updates-04062023">April 06, 2023</a>',
+    '<a href="/blog/2023-03-10-utah-sgid-statewide-roads-data-layer-updates-03102023">March 10, 2023</a>',
   ],
   hub: {
     ...dataPages[metadata.title],
@@ -66,11 +67,15 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      This layer also plays an important role in active transportation planning in Utah. Recent collaborative efforts
-      between UGRC, UDOT, and WFRC have led to significant enhancements in the bike and pedestrian data in both the
-      Roads and Trails-and-Pathways layers. These efforts have focused on better connectivity between the layers along
-      the Wasatch Front, as well as improvements in the statewide bike data. You can contribute to the on-street bike
-      data by letting us know where we have gaps or inaccurate information.
+      The Utah Roads layer plays an important role in <a href="/products/sgid/transportation">active transportation</a> planning
+      in Utah. Recent collaborative efforts between UGRC, <ExternalLink href="https://www.udot.utah.gov/connect/"
+        >UDOT</ExternalLink
+      >, and <ExternalLink href="https://wfrc.org/">WFRC</ExternalLink> have led to significant enhancements in the bike
+      and pedestrian data in both the Roads and <a href="/products/sgid/recreation/trails-pathways"
+        >Trails-and-Pathways</a
+      > layers. These efforts have focused on better connectivity between the layers along the Wasatch Front, as well as
+      improvements in the statewide bike data. You can contribute to the on-street bike data by letting us know where we
+      have gaps or inaccurate information.
     </p>
     <p>
       The Utah Roads dataset utilizes a data model based on Next-Generation 911 standards and the Federal Highway
@@ -79,10 +84,12 @@ const page: IPageMetadata = {
     </p>
     <p>
       To see specific information about the data model including field names and descriptions, data types, coded value
-      domains, and data model updates, see the data model spreadsheet and the corresponding tabs for update notes and
-      coded value domains. The color-coded section titled Addressing is primarily maintained by the local stewards,
-      where as the section titled DOT/FHWA is primarily maintained by UDOT. UGRC spatially assigns fields in the section
-      titled Placename/Area, based on current SGID polygon boundaries.
+      domains, and data model updates, see the <ExternalLink
+        href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546"
+        >data model spreadsheet</ExternalLink
+      > and the corresponding tabs for update notes and coded value domains. The color-coded section titled Addressing is
+      primarily maintained by the local stewards, where as the section titled DOT/FHWA is primarily maintained by UDOT. UGRC
+      spatially assigns fields in the section titled Placename/Area, based on current SGID polygon boundaries.
     </p>
     <p>
       This data model is meant to suggest 'best practices'. It is not the intent that all stewards will change their
@@ -91,7 +98,10 @@ const page: IPageMetadata = {
     </p>
     <p>
       We are currently working with US Forest Service to improve the Forest Service roads in this dataset, however, for
-      the most current and complete set of USFS roads, please visit the FSGeodata Clearinghouse.
+      the most current and complete set of USFS roads, please visit the <ExternalLink
+        href="https://data.fs.usda.gov/geodata/edw/datasets.php?dsetCategory=transportation"
+        >FSGeodata Clearinghouse</ExternalLink
+      >.
     </p>
     <p>
       The statewide roads dataset is maintained by UGRC in partnership with local government, UDOT, and the 911
