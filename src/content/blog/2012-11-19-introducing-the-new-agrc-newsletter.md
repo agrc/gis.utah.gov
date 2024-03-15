@@ -1,6 +1,6 @@
 ---
 author:
-  Jessie Pechmann
+  display_name: Jessie Pechmann
   email: ugrc@utah.gov
 tags: []
 date: 2012-11-19 16:44:25 -0700

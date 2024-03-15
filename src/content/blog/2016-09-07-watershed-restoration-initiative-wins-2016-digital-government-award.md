@@ -17,7 +17,7 @@ The WRI application, built by a partnership between the Division of Wildlife Res
 
 ![WRI Application Screenshot](/images/404.png)To date, large-scale landscape remediation and improvement projects managed in the WRI environment total almost $200 million. Participating organizations have included, at least 6 state agencies, 8 non-profits, and 5 federal agencies, plus, in some cases, private land owners.
 
-The WRI team includes, pictured from left Steve Gourley, Scott Davis, Jase Hopkin, Jessie Pechmann, Mike Blake, Casey Wardle, Tyler Thompson, Aaron McElwee, John Angus, Chad Smith, and Nathan Kota. Other team members, not pictured, are: Kiril Boyadjieff, Mike Casey, Alan Clark, and Rose Cordova.
+The WRI team includes, pictured from left Steve Gourley, Scott Davis, Jase Hopkin,display_name: Jessie Pechmann, Mike Blake, Casey Wardle, Tyler Thompson, Aaron McElwee, John Angus, Chad Smith, and Nathan Kota. Other team members, not pictured, are: Kiril Boyadjieff, Mike Casey, Alan Clark, and Rose Cordova.
 
 ![WRI Development Team Photo](/images/404.png)
 

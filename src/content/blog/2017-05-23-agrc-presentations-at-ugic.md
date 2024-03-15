@@ -1,6 +1,6 @@
 ---
 author:
-  Jessie Pechmann
+  display_name: Jessie Pechmann
   email: ugrc@utah.gov
 tags:
   - conference
@@ -21,9 +21,9 @@ UGRC staff had a great time last week at the UGIC Conference in Park City. Every
 - [Aggregating Utah's Statewide Roads Database](https://docs.google.com/presentation/d/1G8Y8pDN4VXwESILtfs1MdM69Jkfl3XukPyOy1vxrbYM/edit?usp=sharing), by Greg Bunce
 - [UGRC Discover Server: Not Just Google Imagery](https://docs.google.com/presentation/d/1Dw9gsHwITAcQU0Rh4uIol3-QnnTier21sRD6rTHEULQ/edit?usp=drive_open&ouid=0), by Rick Kelson
 - [UGRC Top 10 Issues & Initatives](https://docs.google.com/presentation/d/14ZHq1B3rEf1xyU13T-9mP6AJ7njcfcjuZ1PNtWXRBfY/edit?usp=drive_open&ouid=0), by Bert Granberg
-- [Beyond the Template: Creating Valuable Storymaps](https://docs.google.com/presentation/d/1tq4iNeFHuzZ7ZlpTOLZGfymlzjpa0VwySsb4XJ1wtvA/edit?usp=sharing), by Jessie Pechmann
+- [Beyond the Template: Creating Valuable Storymaps](https://docs.google.com/presentation/d/1tq4iNeFHuzZ7ZlpTOLZGfymlzjpa0VwySsb4XJ1wtvA/edit?usp=sharing), bydisplay_name: Jessie Pechmann
 - [GIS for Utah NG911](https://docs.google.com/presentation/d/14obhOgTXFGCxi1r3aQBCZnAAN3tz2snQv592vJZay78/edit?usp=sharing), by Bert Granberg, Kevin Rose, & Melanie Crittenden
-- [How we Modernized our To Do Lists](https://docs.google.com/presentation/d/15z02TStTMsuHTMnAIwwwyN8Ka_pO85IDNrYJpKG6LoQ/edit?usp=drive_open&ouid=0), by Josh Groeneveld & Jessie Pechmann
+- [How we Modernized our To Do Lists](https://docs.google.com/presentation/d/15z02TStTMsuHTMnAIwwwyN8Ka_pO85IDNrYJpKG6LoQ/edit?usp=drive_open&ouid=0), by Josh Groeneveld &display_name: Jessie Pechmann
 - [Step out of your silo; Join the community](http://UGRC.github.io/Presentations/UGIC/2017/silo/#0)
 - [forklift - slinging data everywhere](http://agrc.github.io/Presentations/UGIC/2017/forklift/#0)
 

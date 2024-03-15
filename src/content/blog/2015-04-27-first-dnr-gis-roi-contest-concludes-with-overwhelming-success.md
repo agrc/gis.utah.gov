@@ -1,6 +1,6 @@
 ---
 author:
-  Jessie Pechmann
+  display_name: Jessie Pechmann
   email: ugrc@utah.gov
 tags:
   - dnr
