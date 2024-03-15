@@ -1,0 +1,97 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { Image } from 'astro:assets';
+
+import samplePhoto from '@images/sgid/base-maps//hybrid-base-map.png';
+
+export const metadata: IMetadata = {
+  title: 'Utah Hybrid Base Map',
+  description: `A combination of the general reference features base map and our latest high-resolution imagery.`,
+  stewards: ['UGRC'],
+  type: ProductType.DISCOVER_SERVICE,
+  category: SgidCategory.BASE_MAPS,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://atlas.utah.gov/',
+  updateHistory: [`todo: query for base map update history`],
+  links: [
+    {
+      title: 'Discover',
+      url: '/documentation/discover/clients',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      A combination of the general reference features base map and our latest high-resolution imagery as a raster base
+      map.
+    </p>
+    <Image
+      src={samplePhoto}
+      width="600"
+      loading="eager"
+      class="w-full max-w-[600px] self-center rounded-lg border border-black/20 dark:border-white"
+      alt="A screenshot of the lite base map showing the muted colors and roads."
+    />
+  </Fragment>
+
+  <Section title="Use the base map" slot="downloads" titlePosition="center">
+    <DirectDownloads title="From Discover" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>This base map contains...</p>
+    <p>
+      These raster tiles are pre-rendered at the <ExternalLink
+        href="https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated/"
+        >common zoom scales</ExternalLink
+      >. with a Web Mercator WGS84 projection (wkid/EPSG 3857).
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Discover" href="/products/discover"
+        >Discover serves raster data (raster base maps and aerial imagery) as web services.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Discover access" href="/products/discover/basics"
+        >Read about the basics of gaining access to Discover.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Utah Lite base map" href="/products/sgid/base-maps/hybrid" style="secondary"
+        >A light, muted reference base map that doesn't compete with your thematic data.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Utah Terrain base map" href="/products/sgid/base-maps/terrain" style="secondary"
+        >A base map of hillshade, highways and streets, parks, forests, water, etc.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

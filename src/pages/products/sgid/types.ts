@@ -41,6 +41,7 @@ export enum BlogCategory {
 export enum SgidCategory {
   ADDRESS = 'Address',
   AERIAL_PHOTOGRAPHY = 'Aerial-Photography',
+  BASE_MAPS = 'Base-maps',
   BIOSCIENCE = 'Bioscience',
   BOUNDARIES = 'Boundaries',
   CADASTRE = 'Cadastre',
