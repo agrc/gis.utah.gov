@@ -50,11 +50,56 @@ export async function validateOpenDataUrl(url) {
   if (response.data.length === 0) {
     return {
       valid: false,
+      message: 'open data item not found',
     };
   }
 
   return {
     valid: true,
     data: response.data[0],
+    message: 'valid open data url',
+  };
+}
+
+export async function validateProductPageUrl(url) {
+  let response;
+  try {
+    response = await ky(url, {
+      throwHttpErrors: false,
+      redirect: 'manual',
+    });
+  } catch (error) {
+    return {
+      valid: false,
+      message: `failed request with error: ${error.message}`,
+    };
+  }
+
+  if (!response.ok) {
+    if ([301, 302].includes(response.status)) {
+      let redirect = response.headers.get('location');
+      if (redirect.startsWith('/')) {
+        redirect = new URL(redirect, url).href;
+      }
+
+      return {
+        ...(await validateProductPageUrl(`${redirect}`)),
+        redirect: `redirected to ${redirect}`,
+      };
+    }
+
+    return {
+      valid: false,
+      message: `failed request with status: ${response.statusText} (${response.status})`,
+    };
+  }
+
+  if (/\/datasets\//.test(url)) {
+    return await validateOpenDataUrl(url);
+  }
+
+  return {
+    valid: true,
+    message: 'valid non-open data url',
   };
 }

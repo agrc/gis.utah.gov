@@ -4,6 +4,7 @@ import knex from 'knex';
 import ky from 'ky';
 import startCase from 'lodash.startcase';
 import { v4 as uuid } from 'uuid';
+import { validateProductPageUrl } from './utilities.mjs';
 
 const mainId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ';
 const schemaId = '1P7HC-Y7ptpIMoBVGeZY70v2CQA3fEz1SenbWG-SL4oQ';
@@ -215,6 +216,14 @@ async function etlRow(row) {
   const itemId = hasValidAgolId ? agolItemTableEntry.AGOL_ITEM_ID : null;
   const agolData = await getAgolData(itemId);
   const displayName = startCase(tableName.replaceAll('_', ' '));
+  const productPage = replaceUrl(row.get('Website URL'));
+  let productPageValidation;
+  if (productPage) {
+    productPageValidation = await validateProductPageUrl(
+      productPage.startsWith('/') ? `https://gis-utah.netlify.app${productPage}` : productPage,
+    );
+    productPageValidation = productPageValidation.valid || productPageValidation.message;
+  }
 
   return {
     id: uuid(),
@@ -224,7 +233,8 @@ async function etlRow(row) {
     category,
     ugrcStatus: ugrcStatus,
     inActionUrl: row.get('Webapp'),
-    productPagePath: replaceUrl(row.get('Website URL')),
+    productPage,
+    productPageValidation,
     storageType: hasValidAgolId ? 'internal' : null,
     datasetSource: row.get('Data Source'),
     datasetContactName: row.get('Agency Contact Name'),

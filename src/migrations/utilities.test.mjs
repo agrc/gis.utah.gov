@@ -1,6 +1,6 @@
 import assert from 'assert';
 import { describe, it } from 'node:test';
-import { validateOpenDataUrl } from './utilities.mjs';
+import { validateOpenDataUrl, validateProductPageUrl } from './utilities.mjs';
 
 describe('validateOpenDataUrl', () => {
   const tests = [
@@ -13,6 +13,25 @@ describe('validateOpenDataUrl', () => {
   for (const test of tests) {
     it(`should return ${test[1]} for ${test[0]}`, async () => {
       const result = await validateOpenDataUrl(test[0]);
+      assert.equal(result.valid, test[1]);
+    });
+  }
+});
+
+describe('validateProductPageUrl', () => {
+  const tests = [
+    ['https://google.com', true],
+    ['https://abadurl.hello', false],
+    ['https://gis.utah.gov/badpath', false],
+    ['https://opendata.gis.utah.gov/datasets/utah::utah-blm-monuments-and-ncas', true],
+    ['https://data.wfrc.org/datasets/access-to-opportunities-work-related-taz-based/about', false],
+    ['https://data-uplan.opendata.arcgis.com/', true],
+    ['https://data.wfrc.org/datasets/access-to-opportunities-work-related-taz-based', false],
+  ];
+
+  for (const test of tests) {
+    it(`should return ${test[1]} for ${test[0]}`, async () => {
+      const result = await validateProductPageUrl(test[0]);
       assert.equal(result.valid, test[1]);
     });
   }
