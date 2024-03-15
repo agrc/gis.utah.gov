@@ -2038,7 +2038,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '99lidPhWCzftIe9K',
     name: 'Utah Roads',
     featureServiceId: 'UtahRoads',
-    openSgid: '',
+    openSgid: 'transportation.roads',
     layerId: 0,
   },
   'Utah Airport Locations': {
