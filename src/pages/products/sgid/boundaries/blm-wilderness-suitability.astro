@@ -1,0 +1,84 @@
+---
+import Disclaimer from '@components/data/Disclaimer.astro';
+import Contacts from '@components/page/Contacts.astro';
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Wilderness BLM Suitability',
+  description:
+    'This data layer identifies which WSAs or portions of WSAs were recommended to Congress as suitable for wilderness designation.',
+  stewards: ['UGRC', 'BLM', 'USFS'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: ['1991'],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The Wilderness BLM Suitability data layer identifies which WSAs or portions of WSAs were recommended to Congress
+      as suitable for wilderness designation. This layer is used as an historical reference only. This layer shows lands
+      that was recommended to the President and Congress for wilderness designation as a result of the FLPMA Section 603
+      wilderness review mandate.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      Do not use this layer for WSA identification and management, planning, or for case-by-case actions where National
+      Environmental Policy ACT (NEPA) documentation is prepared.
+    </p>
+
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision).</p>
+
+    <Contacts contactKey="ugrc" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Disclaimer slot="disclaimer">
+    <p>
+      There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute
+      content to: State of Utah, SGID. The dataset is maintained by the United States Forest Service.
+    </p>
+  </Disclaimer>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
+        >Web Application</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
+        >SGID Category</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

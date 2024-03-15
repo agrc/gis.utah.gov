@@ -42,8 +42,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Wilderness BLM 98 Reinventory': {
     itemId: '100c91969f42465aba4be03065a6c659',
     name: 'Utah Wilderness BLM 98 Reinventory',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Wilderness_BLM98Reinventory',
+    openSgid: 'boundaries.wilderness_blm_98_reinventory',
     layerId: 0,
   },
   'Utah Conservation Districts': {
@@ -63,22 +63,22 @@ export const dataPages: DownloadMetadata = {
   'Utah Wilderness BLM Suitability': {
     itemId: '0edc4466143e4c57960e9eb5df05f233',
     name: 'Utah Wilderness BLM Suitability',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Wilderness_BLMSuitability',
+    openSgid: 'boundaries.wilderness_blm_suitability',
     layerId: 0,
   },
   'Utah USFS Roadless Inventory': {
     itemId: 'a4a2f064846b4981824ffb2246b050c9',
     name: 'Utah USFS Roadless Inventory',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'USFSRoadlessInventory',
+    openSgid: 'boundaries.usfs_roadless_inventory',
     layerId: 0,
   },
   'BLM Wilderness Study Areas for Utah': {
     itemId: 'abd5d645b0e144558d0ab15e1f043490',
     name: 'BLM Wilderness Study Areas for Utah',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Wilderness_BLMWSAs',
+    openSgid: 'boundaries.blm_wilderness_study_areas_for_utah',
     layerId: 0,
   },
   'Utah Navajo Chapters': {
@@ -1862,8 +1862,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Wilderness Areas': {
     itemId: '61aa9c31ec96412480f99990d5668a98',
     name: 'Utah Wilderness Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahWildernessAreas',
+    openSgid: 'boundaries.wilderness_areas',
     layerId: 0,
   },
   'Utah US Congress Districts 2022 to 2032': {

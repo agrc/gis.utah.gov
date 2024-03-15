@@ -1,0 +1,73 @@
+---
+import Disclaimer from '@components/data/Disclaimer.astro';
+import Contacts from '@components/page/Contacts.astro';
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Wilderness BLM 98 Reinventory',
+  description: 'This dataset represents the 1998 Bureau of Land Management (BLM) Wilderness Characteristics Inventory.',
+  stewards: ['UGRC', 'BLM', 'USFS'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: ['2001'],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The Wilderness BLM98 Reinventory dataset represents the 1998 Bureau of Land Management (BLM) Wilderness
+      Characteristics Inventory. It represents the BLM's inventory of areas that have Wilderness Characteristics. The
+      data set is at 1:24,000. The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter
+      coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users are
+      encouraged to attribute content to: State of Utah, SGID. The dataset is maintained by the United States Forest
+      Service.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <Contacts contactKey="ugrc" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
+        >Web Application</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
+        >SGID Category</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
