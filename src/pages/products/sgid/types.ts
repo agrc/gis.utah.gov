@@ -141,7 +141,7 @@ export type StewardshipRecord = {
   dataType: ProductType;
   description: string;
   inActionUrl?: string;
-  productPagePath: string;
+  productPage: string;
   ugrcStatus: 'deprecated' | 'static' | 'shelved' | null;
   server?: {
     host?: string;

@@ -70,7 +70,7 @@ function etlRow(row): StewardshipRecord | null {
     dataType: toProductTypeEnum(row.get('productType')),
     description: row.get('description'),
     inActionUrl: row.get('inActionUrl'),
-    productPagePath: row.get('productPagePath'),
+    productPage: row.get('productPage'),
     hub: {
       title: row.get('displayName'),
       itemId: row.get('itemId'),

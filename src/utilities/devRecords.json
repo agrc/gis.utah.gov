@@ -9,7 +9,7 @@
     "dataType": 7,
     "description": "A muted base map great for overlaying data.",
     "inActionUrl": "https://atlas.utah.gov",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Address Points",
       "itemId": "",
@@ -33,7 +33,7 @@
     "dataType": 7,
     "description": "Grey elevation based shading.",
     "inActionUrl": "https://atlas.utah.gov",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Hillshade",
       "itemId": "",
@@ -57,7 +57,7 @@
     "dataType": 7,
     "description": "A muted base map great for overlaying data.",
     "inActionUrl": "https://atlas.utah.gov",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Lite",
       "itemId": "",
@@ -81,7 +81,7 @@
     "dataType": 7,
     "description": "Roads and placenames in transparent form. Great for overlaying over data for reference.",
     "inActionUrl": "https://atlas.utah.gov",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Overlay",
       "itemId": "",
@@ -105,7 +105,7 @@
     "dataType": 7,
     "description": "Contour lines with roads and placenames",
     "inActionUrl": "https://atlas.utah.gov",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Terrain",
       "itemId": "",
@@ -129,7 +129,7 @@
     "dataType": 7,
     "description": "USGS Scanned topographic maps",
     "inActionUrl": "https://atlas.utah.gov",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Topo",
       "itemId": "",
@@ -153,7 +153,7 @@
     "dataType": 3,
     "description": "Statewide distribution of dominant vegetation species in Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/bioscience",
+    "productPage": "/products/sgid/bioscience",
     "hub": {
       "title": "Dominant Vegetation",
       "itemId": "da0db6d91f134adfa55ca622b9b36427",
@@ -177,7 +177,7 @@
     "dataType": 3,
     "description": "Bison habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Bison",
       "itemId": "",
@@ -201,7 +201,7 @@
     "dataType": 3,
     "description": "Black bear habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Black Bear",
       "itemId": "",
@@ -225,7 +225,7 @@
     "dataType": 3,
     "description": "Bonetailed chub habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Bonetailed Chub",
       "itemId": "",
@@ -249,7 +249,7 @@
     "dataType": 3,
     "description": "California bighorn sheep habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat California Big Horn Sheep",
       "itemId": "",
@@ -273,7 +273,7 @@
     "dataType": 3,
     "description": "California quail habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat California Quail",
       "itemId": "",
@@ -297,7 +297,7 @@
     "dataType": 3,
     "description": "Chukar habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Chukar",
       "itemId": "",
@@ -321,7 +321,7 @@
     "dataType": 3,
     "description": "Columbian sharptailed grouse habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Columbian Sharp Tailed Grouse",
       "itemId": "",
@@ -345,7 +345,7 @@
     "dataType": 3,
     "description": "Desert bighorn sheep habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Desert Bighorn Sheep",
       "itemId": "",
@@ -369,7 +369,7 @@
     "dataType": 3,
     "description": "Dusky grouse habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Dusky Grouse",
       "itemId": "",
@@ -393,7 +393,7 @@
     "dataType": 3,
     "description": "Gambels quail habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Gambels Quail",
       "itemId": "",
@@ -417,7 +417,7 @@
     "dataType": 3,
     "description": "Greater sage grouse brood habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Greater Sage Grouse Brood",
       "itemId": "",
@@ -441,7 +441,7 @@
     "dataType": 3,
     "description": "Greater sage grouse occupied habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Greater Sage Grouse Occupied",
       "itemId": "",
@@ -465,7 +465,7 @@
     "dataType": 3,
     "description": "Greater sage grouse winter habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Greater Sage Grouse Winter",
       "itemId": "",
@@ -489,7 +489,7 @@
     "dataType": 3,
     "description": "Gunnison sage grouse habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Gunnison Sage Grouse",
       "itemId": "",
@@ -513,7 +513,7 @@
     "dataType": 3,
     "description": "Hungarian partridge habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Hungarian Partridge",
       "itemId": "",
@@ -537,7 +537,7 @@
     "dataType": 3,
     "description": "Moose habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Moose",
       "itemId": "",
@@ -561,7 +561,7 @@
     "dataType": 3,
     "description": "Mountain goat habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Mountain Goat",
       "itemId": "",
@@ -585,7 +585,7 @@
     "dataType": 3,
     "description": "Muledeer habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Muledeer",
       "itemId": "",
@@ -609,7 +609,7 @@
     "dataType": 3,
     "description": "Pronghorn habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Pronghorn",
       "itemId": "",
@@ -633,7 +633,7 @@
     "dataType": 3,
     "description": "Razorback sucker habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Razorback Sucker",
       "itemId": "",
@@ -657,7 +657,7 @@
     "dataType": 3,
     "description": "Ring necked pheasant habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Ring Necked Pheasant",
       "itemId": "",
@@ -681,7 +681,7 @@
     "dataType": 3,
     "description": "Rocky mountain bighorn sheep habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Rocky Mountain Bighorn Sheep",
       "itemId": "",
@@ -705,7 +705,7 @@
     "dataType": 3,
     "description": "Rocky mountain elk habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Rocky Mountain Elk",
       "itemId": "",
@@ -729,7 +729,7 @@
     "dataType": 3,
     "description": "Ruffed grouse habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Ruffed Grouse",
       "itemId": "",
@@ -753,7 +753,7 @@
     "dataType": 3,
     "description": "Snowshoe hair habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Snowshoe Hare",
       "itemId": "",
@@ -777,7 +777,7 @@
     "dataType": 3,
     "description": "Wild turkey habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Turkey",
       "itemId": "",
@@ -801,7 +801,7 @@
     "dataType": 3,
     "description": "White tailed ptarmigan habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat White Tailed Ptarmigan",
       "itemId": "",
@@ -825,7 +825,7 @@
     "dataType": 3,
     "description": "Whitewinged dove habitat identified by the Dept. of Wildlife Resources.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Habitat Whitewinged Dove",
       "itemId": "",
@@ -849,7 +849,7 @@
     "dataType": 3,
     "description": "Threatened and endangered species locations represented by 1:24,000K quad locations.",
     "inActionUrl": "",
-    "productPagePath": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
+    "productPage": "https://dwr-data-utahdnr.hub.arcgis.com/search?collection=dataset&q=habitat",
     "hub": {
       "title": "Threatened And Endangered Species",
       "itemId": "",
@@ -873,7 +873,7 @@
     "dataType": 3,
     "description": "Utah Watershed Restoration Initiative proposed, current, pending complete, and complete projects' terrestrial and aquatic/riparian treatment areas.",
     "inActionUrl": "https://wri.utah.gov",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Watershed Restoration Initiative Treatment Areas",
       "itemId": "",
@@ -897,7 +897,7 @@
     "dataType": 3,
     "description": "Organized county government association boundaries.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries",
+    "productPage": "/products/sgid/boundaries",
     "hub": {
       "title": "Association Of Governments",
       "itemId": "171958e3afe94e2486046719f0e8c9b1",
@@ -921,7 +921,7 @@
     "dataType": 3,
     "description": "BLM district boundaries.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries",
+    "productPage": "/products/sgid/boundaries",
     "hub": {
       "title": "BLM Districts",
       "itemId": "9443cc4f99b04c6aa3c6ddf6638e9dde",
@@ -945,7 +945,7 @@
     "dataType": 3,
     "description": "BLM national monuments and national conservation areas. Includes recently designated Bears Ears National Monument",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "BLM Monuments And NC As",
       "itemId": "feaa4faae66747a792b6d664c1159fc7",
@@ -969,7 +969,7 @@
     "dataType": 3,
     "description": "BLM national monuments and national conservation areas. Depicts Grand Staircase Escalante and Bears Ears National Monuments prior to being reduced by the Trump administration.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "BLM Monuments And NC As Historic",
       "itemId": "d5560a571a86436fbb3a664c3edd5488",
@@ -993,7 +993,7 @@
     "dataType": 3,
     "description": "Utah county boundaries.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries",
+    "productPage": "/products/sgid/boundaries",
     "hub": {
       "title": "Counties",
       "itemId": "90431cac2f9f49f4bcf1505419583753",
@@ -1017,7 +1017,7 @@
     "dataType": 3,
     "description": "County boundaries as a puzzle.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Counties As Puzzle",
       "itemId": "",
@@ -1041,7 +1041,7 @@
     "dataType": 3,
     "description": "County boundaries as a puzzle.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Counties As Puzzle Parts",
       "itemId": "",
@@ -1065,7 +1065,7 @@
     "dataType": 2,
     "description": "County boundaries as line features for labeling purposes.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Counties Label Lines",
       "itemId": "ff62647a2f544cee9bae8eed2afd0eda",
@@ -1089,7 +1089,7 @@
     "dataType": 3,
     "description": "Changes to county boundaries over the years.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Counties Modifications",
       "itemId": "21fb018384634dbc96e912cf25b24ed4",
@@ -1113,7 +1113,7 @@
     "dataType": 3,
     "description": "National forest boundaries submitted for the President's Roadless Area Initiative.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Forest Service",
       "itemId": "468140207bae4cf19aef5df754cc387e",
@@ -1137,7 +1137,7 @@
     "dataType": 3,
     "description": "Boundary for new Metro Townships, as submitted by County Recorders Offices",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Metro Townships",
       "itemId": "103c6dc6764747079919c20927f40a9f",
@@ -1161,7 +1161,7 @@
     "dataType": 3,
     "description": "Utah municipal boundaries defined by County Recorders offices and certified by the Lt. Governor's Office.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries",
+    "productPage": "/products/sgid/boundaries",
     "hub": {
       "title": "Municipalities",
       "itemId": "543fa1f073714198a3dbf8a292bdf30c",
@@ -1185,7 +1185,7 @@
     "dataType": 3,
     "description": "Municipal boundaries for cartographic purposes.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Municipalities Carto",
       "itemId": "009eb81635854c21a05e5ca1a4e375cf",
@@ -1209,7 +1209,7 @@
     "dataType": 3,
     "description": "Changes and modifications made to municipal boundaries over time.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Municipalities Modifications",
       "itemId": "572efbac3c8b4799bf729cbeac36dc11",
@@ -1233,7 +1233,7 @@
     "dataType": 3,
     "description": "Navajo chapter boundaries.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries",
+    "productPage": "/products/sgid/boundaries",
     "hub": {
       "title": "Navajo Chapters",
       "itemId": "17870fe3030c4f398411fb0ea4c78331",
@@ -1257,7 +1257,7 @@
     "dataType": 3,
     "description": "Utah school district boundaries.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries",
+    "productPage": "/products/sgid/boundaries",
     "hub": {
       "title": "School Districts",
       "itemId": "3e69ecf5c46a492aa9974f6fa03d1378",
@@ -1281,7 +1281,7 @@
     "dataType": 3,
     "description": "County boundaries of neighboring states.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "UDOT Map Neighbor Counties",
       "itemId": "",
@@ -1305,7 +1305,7 @@
     "dataType": 3,
     "description": "National forest inventoried roadless areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "USFS Roadless Inventory",
       "itemId": "a4a2f064846b4981824ffb2246b050c9",
@@ -1329,7 +1329,7 @@
     "dataType": 3,
     "description": "United States and D.C. boundaries.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "US States",
       "itemId": "221d727bbc044ce99dc05fbce913b4a1",
@@ -1353,7 +1353,7 @@
     "dataType": 3,
     "description": "Utah State boundary.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries",
+    "productPage": "/products/sgid/boundaries",
     "hub": {
       "title": "Utah",
       "itemId": "8344c33ec2114341a59c4c1d72bcf38a",
@@ -1377,7 +1377,7 @@
     "dataType": 3,
     "description": "Conservation District (formerly Soil Conservation District) boundaries in the state of Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/conservation-districts",
+    "productPage": "/products/sgid/boundaries/conservation-districts",
     "hub": {
       "title": "Utah Conservation Districts",
       "itemId": "9c41b6d6ce7346858ed0ea0dc7727c13",
@@ -1401,7 +1401,7 @@
     "dataType": 3,
     "description": "Conservation District (formerly Soil Conservation District) zone boundaries in the state of Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/conservation-districts",
+    "productPage": "/products/sgid/boundaries/conservation-districts",
     "hub": {
       "title": "Utah Conservation Zones",
       "itemId": "355fe28d943e49e7a400ac1fb2140413",
@@ -1425,7 +1425,7 @@
     "dataType": 3,
     "description": "Utah Inland Port Authority Boundary as described in House Bill 2001",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Utah Inland Port Authority HB 2001",
       "itemId": "44eb28894d1f4853ad4de8dcd8e503ae",
@@ -1449,7 +1449,7 @@
     "dataType": 3,
     "description": "BLM and USFS designated wilderness areas in Utah",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Utah Wilderness Areas",
       "itemId": "61aa9c31ec96412480f99990d5668a98",
@@ -1473,7 +1473,7 @@
     "dataType": 3,
     "description": "1998 Bureau of Land Management (BLM) wilderness characteristics re-inventory.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness BLM 98 Reinventory",
       "itemId": "100c91969f42465aba4be03065a6c659",
@@ -1497,7 +1497,7 @@
     "dataType": 3,
     "description": "Lands that were recommended to the President and Congress for wilderness designation as a result of the FLPMA Section 603 wilderness review mandate.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness BLM Suitability",
       "itemId": "0edc4466143e4c57960e9eb5df05f233",
@@ -1521,7 +1521,7 @@
     "dataType": 3,
     "description": "Land identified and endorsed as wilderness study areas (WSAs) in the 1991 wilderness study reports sent to the President and Congress.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness BLMWS As",
       "itemId": "abd5d645b0e144558d0ab15e1f043490",
@@ -1545,7 +1545,7 @@
     "dataType": 3,
     "description": "Geographic extents of 5 digit zip codes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/zip-codes",
+    "productPage": "/products/sgid/boundaries/zip-codes",
     "hub": {
       "title": "Zip Codes",
       "itemId": "4f9d1d1301864f8cabef08cbae7b2d3c",
@@ -1569,7 +1569,7 @@
     "dataType": 3,
     "description": "BLM resource management plan targeted lands.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "BLM RMP Targeted Lands",
       "itemId": "3bb2bca367874938a5eedd5db953193b",
@@ -1593,7 +1593,7 @@
     "dataType": 3,
     "description": "Great Salt Lake meander line.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/water",
+    "productPage": "/products/sgid/water",
     "hub": {
       "title": "GSL Meander Line",
       "itemId": "f6b166791c2a4c20b0ce4a127328a4a6",
@@ -1617,7 +1617,7 @@
     "dataType": 3,
     "description": "Land ownership boundaries, designation status, and areas of responsibility for the State of Utah surface lands. Maintenance of this data layer is performed by a cooperative federal and state effort between the Bureau of Land Management (BLM) and the State of Utah School and Institutional Trust Lands Administration (SITLA).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/land-ownership",
+    "productPage": "/products/sgid/cadastre/land-ownership",
     "hub": {
       "title": "Land Ownership",
       "itemId": "",
@@ -1641,7 +1641,7 @@
     "dataType": 3,
     "description": "Beaver County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required in HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Beaver",
       "itemId": "57e395fa72dc4cbf9435f8fd34fbc3a3",
@@ -1665,7 +1665,7 @@
     "dataType": 3,
     "description": "Beaver County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Beaver LIR",
       "itemId": "fcd55deadaed4fa4bf0cb119b8631b12",
@@ -1689,7 +1689,7 @@
     "dataType": 3,
     "description": "Box Elder County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Box Elder",
       "itemId": "bc9dfd8b1168447ea67d714c96a18417",
@@ -1713,7 +1713,7 @@
     "dataType": 3,
     "description": "Box Elder County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Box Elder LIR",
       "itemId": "bfda12ed550a4586916faf0db3e2a8a0",
@@ -1737,7 +1737,7 @@
     "dataType": 3,
     "description": "Cache County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Cache",
       "itemId": "e2313ec943224dafbebee9371b57c43a",
@@ -1761,7 +1761,7 @@
     "dataType": 3,
     "description": "Cache County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Cache LIR",
       "itemId": "c3f1604c134043348437d8cd04b9afb2",
@@ -1785,7 +1785,7 @@
     "dataType": 3,
     "description": "Carbon County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Carbon",
       "itemId": "6bab6b394b4749ae9f404953670bbd24",
@@ -1809,7 +1809,7 @@
     "dataType": 3,
     "description": "Daggett County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Daggett",
       "itemId": "b112d286c9694e73b697fe120815c140",
@@ -1833,7 +1833,7 @@
     "dataType": 3,
     "description": "Daggett County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Daggett LIR",
       "itemId": "a1e2f3dc1619413f9ba98283940413a9",
@@ -1857,7 +1857,7 @@
     "dataType": 3,
     "description": "Davis County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Davis",
       "itemId": "69d2965ec1014e938cfb8d2eabb64e13",
@@ -1881,7 +1881,7 @@
     "dataType": 3,
     "description": "Davis County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Davis LIR",
       "itemId": "a6e9c713822249129e060c4a26e1fb85",
@@ -1905,7 +1905,7 @@
     "dataType": 3,
     "description": "Duchesne County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Duchesne",
       "itemId": "30168700f4f04059a3f3fca72735ba0a",
@@ -1929,7 +1929,7 @@
     "dataType": 3,
     "description": "Emery County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Emery",
       "itemId": "818821c2893147c48060bb809c7a1477",
@@ -1953,7 +1953,7 @@
     "dataType": 3,
     "description": "Emery County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Emery LIR",
       "itemId": "f0bef21aad044f6f94f2a01559f64633",
@@ -1977,7 +1977,7 @@
     "dataType": 3,
     "description": "Garfield County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Garfield",
       "itemId": "2f45c1012d724bd7a229867208a416e4",
@@ -2001,7 +2001,7 @@
     "dataType": 3,
     "description": "Garfield County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Garfield LIR",
       "itemId": "0d2f76daf7d540edbefea6df6d7345d8",
@@ -2025,7 +2025,7 @@
     "dataType": 3,
     "description": "Grand County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Grand",
       "itemId": "396cb59c84644e94b63ff6bbed9d366b",
@@ -2049,7 +2049,7 @@
     "dataType": 3,
     "description": "Iron County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Iron",
       "itemId": "1099575242dd45348ee840d69dba3207",
@@ -2073,7 +2073,7 @@
     "dataType": 3,
     "description": "Iron County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Iron LIR",
       "itemId": "555d3282b06d44a1a1a2fb7571e200a1",
@@ -2097,7 +2097,7 @@
     "dataType": 3,
     "description": "Juab County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Juab",
       "itemId": "4613ab6110c9413a9fd2e3fd1b03cbdf",
@@ -2121,7 +2121,7 @@
     "dataType": 3,
     "description": "Juab County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Juab LIR",
       "itemId": "58eea1dc738f4c389890cf17effd10bf",
@@ -2145,7 +2145,7 @@
     "dataType": 3,
     "description": "Kane County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Kane",
       "itemId": "44e17c6ae3864917850f7131bd88c473",
@@ -2169,7 +2169,7 @@
     "dataType": 3,
     "description": "Kane County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Kane LIR",
       "itemId": "957c4cf3469040a996a8dc34eca0a49a",
@@ -2193,7 +2193,7 @@
     "dataType": 3,
     "description": "Millard County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Millard",
       "itemId": "b895aa80403b4aa3bf5278d7084da243",
@@ -2217,7 +2217,7 @@
     "dataType": 3,
     "description": "Millard County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Millard LIR",
       "itemId": "ec382a8a177d4509867d8f920baa1237",
@@ -2241,7 +2241,7 @@
     "dataType": 3,
     "description": "Morgan County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Morgan",
       "itemId": "1480916d4105403296899ab291bfa321",
@@ -2265,7 +2265,7 @@
     "dataType": 3,
     "description": "Morgan County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Morgan LIR",
       "itemId": "c42241c8c58b425a8a971b4772dbcf61",
@@ -2289,7 +2289,7 @@
     "dataType": 3,
     "description": "Piute County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Piute",
       "itemId": "cef8a96c8f75437cb05a3dc7a610d1b0",
@@ -2313,7 +2313,7 @@
     "dataType": 3,
     "description": "Piute County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Piute LIR",
       "itemId": "d75188a6edcc4af2a128001c89522b32",
@@ -2337,7 +2337,7 @@
     "dataType": 3,
     "description": "Rich County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Rich",
       "itemId": "43bf47fa17f343c28d7fdd03d8be0b0f",
@@ -2361,7 +2361,7 @@
     "dataType": 3,
     "description": "Rich County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Rich LIR",
       "itemId": "d4b01011ef674732a8787825a14c1a61",
@@ -2385,7 +2385,7 @@
     "dataType": 3,
     "description": "Salt Lake County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Salt Lake",
       "itemId": "f1f56e5da01b4f5e9def939ec80943e5",
@@ -2409,7 +2409,7 @@
     "dataType": 3,
     "description": "Salt Lake County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Salt Lake LIR",
       "itemId": "6f900727e16d4ce1a83f2a1ec1d82e60",
@@ -2433,7 +2433,7 @@
     "dataType": 3,
     "description": "San Juan County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels San Juan",
       "itemId": "c4b4d4a730ca482f868a014328004640",
@@ -2457,7 +2457,7 @@
     "dataType": 3,
     "description": "Sanpete County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Sanpete",
       "itemId": "777e751aa4164b83bf1d76f811f8e5b3",
@@ -2481,7 +2481,7 @@
     "dataType": 3,
     "description": "Sanpete County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Sanpete LIR",
       "itemId": "33e4b5432ba641de92a9e9446ca72d18",
@@ -2505,7 +2505,7 @@
     "dataType": 3,
     "description": "Sevier County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Sevier",
       "itemId": "dd4642decdc04ff38bc0cc6680b242cc",
@@ -2529,7 +2529,7 @@
     "dataType": 3,
     "description": "Sevier County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Sevier LIR",
       "itemId": "ed39f70f6c054ccf85a1e6947b52fec2",
@@ -2553,7 +2553,7 @@
     "dataType": 3,
     "description": "Summit County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Summit",
       "itemId": "10f0f8bd49dd4d57bd629580f617b7f3",
@@ -2577,7 +2577,7 @@
     "dataType": 3,
     "description": "Summit County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Summit LIR",
       "itemId": "517326aa554244baabee9e1083086278",
@@ -2601,7 +2601,7 @@
     "dataType": 3,
     "description": "Tooele County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Tooele",
       "itemId": "da344111a2f3421c9e21efbde73da76f",
@@ -2625,7 +2625,7 @@
     "dataType": 3,
     "description": "Tooele County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Tooele LIR",
       "itemId": "7e7839f486d14ff681a8755009d9e2b1",
@@ -2649,7 +2649,7 @@
     "dataType": 3,
     "description": "Uintah County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Uintah",
       "itemId": "9ad8f6ecbc7d4002a444ccfbe8d17e1b",
@@ -2673,7 +2673,7 @@
     "dataType": 3,
     "description": "Utah County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Utah",
       "itemId": "a26808bcf48241e0a71bd862eeefb57a",
@@ -2697,7 +2697,7 @@
     "dataType": 3,
     "description": "Utah County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Utah LIR",
       "itemId": "69477c1143924bc9990cdb930b033fb5",
@@ -2721,7 +2721,7 @@
     "dataType": 3,
     "description": "Wasatch County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Wasatch",
       "itemId": "20ad11cc6f864053bbfc6e416dc76e09",
@@ -2745,7 +2745,7 @@
     "dataType": 3,
     "description": "Wasatch County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Wasatch LIR",
       "itemId": "f6e1e6e25c304d31948b896d1ca8b980",
@@ -2769,7 +2769,7 @@
     "dataType": 3,
     "description": "Washington County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Washington",
       "itemId": "01e2c63e81f6490982f0cdfa51df30e7",
@@ -2793,7 +2793,7 @@
     "dataType": 3,
     "description": "Washington County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Washington LIR",
       "itemId": "3685a5539be649079d6d4d3f229972c4",
@@ -2817,7 +2817,7 @@
     "dataType": 3,
     "description": "Wayne County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Wayne",
       "itemId": "effc6e776f4742e098ff6d49adaaa6ab",
@@ -2841,7 +2841,7 @@
     "dataType": 3,
     "description": "Weber County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Weber",
       "itemId": "2246e51228fa437fafa15d212435143e",
@@ -2865,7 +2865,7 @@
     "dataType": 3,
     "description": "Weber County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Parcels Weber LIR",
       "itemId": "9d7e4ec3b1a64f6d8b5e7ad76339e703",
@@ -2889,7 +2889,7 @@
     "dataType": 3,
     "description": "",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "PLSS Edit Tracker",
       "itemId": "b5007f1fb8664fa69a71299f88ca5e15",
@@ -2913,7 +2913,7 @@
     "dataType": 1,
     "description": "Point dataset that depicts the Public Land Survey System (PLSS) for the State of Utah and is based on the Geographic Coordinate Data Base (GCDB). This dataset was created to provide continuous cadastre data for the state of Utah and is the CadNSDI Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
-    "productPagePath": "/products/sgid/cadastre/plss",
+    "productPage": "/products/sgid/cadastre/plss",
     "hub": {
       "title": "PLSS Point GCDB",
       "itemId": "ef75c3c063ac4b9b996b70e21ce248fe",
@@ -2937,7 +2937,7 @@
     "dataType": 3,
     "description": "PLSSQuarterQuarterSections_GCDB is the fourth level of a hierarchical break down of the Public Land Survey System Rectangular surveys. This data is CadNSDI Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
-    "productPagePath": "/products/sgid/cadastre/plss",
+    "productPage": "/products/sgid/cadastre/plss",
     "hub": {
       "title": "PLSS Quarter Quarter Sections GCDB",
       "itemId": "f3454ae613034039b63830c78105bec8",
@@ -2961,7 +2961,7 @@
     "dataType": 3,
     "description": "PLSSQuarterSections_GCDB is the third level of a hierarchical break down of the Public Land Survey System Rectangular surveys. This data is Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
-    "productPagePath": "/products/sgid/cadastre/plss",
+    "productPage": "/products/sgid/cadastre/plss",
     "hub": {
       "title": "PLSS Quarter Sections GCDB",
       "itemId": "58b655046e2f4a258dbbf6a6aeaa7b23",
@@ -2985,7 +2985,7 @@
     "dataType": 3,
     "description": "PLSSSections_GCDB is the second level of a hierarchical break down of the Public Land Survey System Rectangular surveys. This data is Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
-    "productPagePath": "/products/sgid/cadastre/plss",
+    "productPage": "/products/sgid/cadastre/plss",
     "hub": {
       "title": "PLSS Sections GCDB",
       "itemId": "471c7281c52849b2860d36135e751c83",
@@ -3009,7 +3009,7 @@
     "dataType": 3,
     "description": "PLSSTownship_GCDB is the first level of a hierarchical break down of the Public Land Survey System Rectangular surveys. This data is Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
-    "productPagePath": "/products/sgid/cadastre/plss",
+    "productPage": "/products/sgid/cadastre/plss",
     "hub": {
       "title": "PLSS Townships GCDB",
       "itemId": "5f801b03df2644dd99dcbaa5840bf12d",
@@ -3033,7 +3033,7 @@
     "dataType": 3,
     "description": "This dataset represents UGRC's best effort to compile statewide parcels for Utah. \"Database containing parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information\" - HB113. This is the reason we have this dataset. The intent of the bill was to not include any attributes that the counties rely on for data sales. If you want those other attributes you need to contact the county recorder ",
     "inActionUrl": "https://parcels.utah.gov",
-    "productPagePath": "/products/sgid/cadastre/parcels",
+    "productPage": "/products/sgid/cadastre/parcels",
     "hub": {
       "title": "Utah Parcels",
       "itemId": "",
@@ -3057,7 +3057,7 @@
     "dataType": 2,
     "description": "Represents the baselines between the The Utah Reference Network Global Positioning System (TURN GPS) base stations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/turn-gps",
+    "productPage": "/products/sgid/cadastre/turn-gps",
     "hub": {
       "title": "TURN GPS Base Lines",
       "itemId": "af0cf475021844d99ac2f728bfd0ec33",
@@ -3081,7 +3081,7 @@
     "dataType": 1,
     "description": "Points representing the Utah Reference Network Global Positioning System (TURN GPS) base station locations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/cadastre/turn-gps",
+    "productPage": "/products/sgid/cadastre/turn-gps",
     "hub": {
       "title": "TURN GPS Stations",
       "itemId": "2ce0a7992d844c648a3c3e18574b641e",
@@ -3105,7 +3105,7 @@
     "dataType": 1,
     "description": "Control points for Utah High Resolution Orthophotography (HRO) imagery.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Utah Control HRO",
       "itemId": "",
@@ -3129,7 +3129,7 @@
     "dataType": 1,
     "description": "Control points for Utah National Agricultural Imagery Program (NAIP).",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Utah Control NAIP",
       "itemId": "",
@@ -3153,7 +3153,7 @@
     "dataType": 3,
     "description": "Public forecast zones that are used by NWS for issuing forecasts.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/climate",
+    "productPage": "/products/sgid/climate",
     "hub": {
       "title": "NWS Forecast Zones",
       "itemId": "93be75b42d864e889bcc3bbbf3a0dbfe",
@@ -3177,7 +3177,7 @@
     "dataType": 1,
     "description": "Names and locations of weathers stations found throughout Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/climate",
+    "productPage": "/products/sgid/climate",
     "hub": {
       "title": "Weather Stations",
       "itemId": "f325911db6d9499fb935494c01fc3f94",
@@ -3201,7 +3201,7 @@
     "dataType": 3,
     "description": "2010 Census Block Groups are units used by the United States Census Bureau which are between the Census Tract and the Census Block. It is the smallest geographical unit for which the bureau publishes sample data.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Block Groups 2010",
       "itemId": "8fa5d65451694f64b05f17d9e5f9d67e",
@@ -3225,7 +3225,7 @@
     "dataType": 3,
     "description": "2020 Census Block Groups are units used by the United States Census Bureau which are between the Census Tract and the Census Block. It is the smallest geographical unit for which the bureau publishes sample data.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Block Groups 2020",
       "itemId": "7c4a9b7b398d4c58b628177a66417dfb",
@@ -3249,7 +3249,7 @@
     "dataType": 3,
     "description": "2010 Census Blocks are the smallest geographic unit used by the United States Census Bureau for tabulation of 100-percent data (data collected from all houses, rather than a sample of houses).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Blocks 2010",
       "itemId": "b92a5e772855488a9b7f9c367475d955",
@@ -3273,7 +3273,7 @@
     "dataType": 3,
     "description": "2020 Census Blocks are the smallest geographic unit used by the United States Census Bureau for tabulation of 100-percent data (data collected from all houses, rather than a sample of houses).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Blocks 2020",
       "itemId": "2caf01e704614114868a3d801b82def6",
@@ -3297,7 +3297,7 @@
     "dataType": 3,
     "description": "2010 Census county boundaries.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Counties 2010",
       "itemId": "e36dec62351d449899bc6ca98f6263bb",
@@ -3321,7 +3321,7 @@
     "dataType": 3,
     "description": "2020 Census county boundaries.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Counties 2020",
       "itemId": "31c8dd6f1f3e4e5c993d12c2ad8a5686",
@@ -3345,7 +3345,7 @@
     "dataType": 2,
     "description": "2010 Census line features.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Edges 2010",
       "itemId": "12589f59e3464d9a8061d48b7e3028f9",
@@ -3369,7 +3369,7 @@
     "dataType": 1,
     "description": "2010 Census city and town demographics.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Place Points 2010",
       "itemId": "aad2bc96abf84621bfb26bb197144145",
@@ -3393,7 +3393,7 @@
     "dataType": 3,
     "description": "2010 Census city and town demographics.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Places 2010",
       "itemId": "c8a84c9d562f49baaf3cafd62e06a6d6",
@@ -3417,7 +3417,7 @@
     "dataType": 3,
     "description": "2020 Census city, town and places (CDP) demographics.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Places 2020",
       "itemId": "3bcd211d3f17416aac97bcca86bb191a",
@@ -3441,7 +3441,7 @@
     "dataType": 3,
     "description": "2020 Census State of Utah bounday, as defined by the US Census Bureau.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census State 2020",
       "itemId": "fb85601788424239846ec8c9df201369",
@@ -3465,7 +3465,7 @@
     "dataType": 3,
     "description": "2010 Census Tracts are small, relatively permanent statistical subdivisions of a county or equivalent entity that are updated by local participants prior to each decennial census as part of the Census Bureau's Participant Statistical Areas Program.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Tracts 2010",
       "itemId": "ad629aab2f89456c82457aac06c59601",
@@ -3489,7 +3489,7 @@
     "dataType": 3,
     "description": "2020 Census Tracts are small, relatively permanent statistical subdivisions of a county or equivalent entity that are updated by local participants prior to each decennial census as part of the Census Bureau's Participant Statistical Areas Program.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Census Tracts 2020",
       "itemId": "ac683b3f52a14c5ab4d6c17bbfd6b573",
@@ -3513,7 +3513,7 @@
     "dataType": 3,
     "description": "Geographic entities delineated by the Office of Management and Budget (OMB) for use by Federal statistical agencies in collecting, tabulating, and publishing Federal statistics.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Metro Micro Statistical Areas",
       "itemId": "2fb0ffa26e284316911ea5f0d94c4255",
@@ -3537,7 +3537,7 @@
     "dataType": 3,
     "description": "Census blocks that only represent populated areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Pop Block Areas 2010 Approx",
       "itemId": "061407fed6324bcfabf1813764caef0a",
@@ -3561,7 +3561,7 @@
     "dataType": 1,
     "description": "Populated places - cities, towns, locations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Pop Place Pts 2010 Approx",
       "itemId": "03158991802e4bf0b9cc3234eddd0e76",
@@ -3585,7 +3585,7 @@
     "dataType": 3,
     "description": "Derived from 2010 census blocks to identify unincorporated areas.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Un Incorp Areas 2010 Approx",
       "itemId": "3c7aa67bc8b945ddab57cf9537ff291f",
@@ -3609,7 +3609,7 @@
     "dataType": 3,
     "description": "Approximate unpopulated areas of Utah",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Un Pop Utah Approx",
       "itemId": "cd5550c9e2a5401986819cc363dc3fe6",
@@ -3633,7 +3633,7 @@
     "dataType": 3,
     "description": "Derived from 2010 census blocks to identify urban areas and urban clusters.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/demographic",
+    "productPage": "/products/sgid/demographic",
     "hub": {
       "title": "Urban Areas Census 2010",
       "itemId": "5fefbcf3e7a5499c845872d0be11b1c2",
@@ -3657,7 +3657,7 @@
     "dataType": 3,
     "description": "Areas created by the Utah Governors Office of Economic Development to encourage economic growth and development in specified areas by providing tax breaks to development projects within these boundaries.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/economy/enterprise-zones",
+    "productPage": "/products/sgid/economy/enterprise-zones",
     "hub": {
       "title": "Enterprise Zones",
       "itemId": "dc4539cb9d1548e1a1f31cf5b63e3ad5",
@@ -3681,7 +3681,7 @@
     "dataType": 3,
     "description": "Approximate boundaries of Sales Tax Collection Areas in Utah. Sales Tax Areas are formed by municipality boundaries, special sales tax districts and the unincorporated areas of counties not in a special sales tax district.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/economy/taxing-areas",
+    "productPage": "/products/sgid/economy/taxing-areas",
     "hub": {
       "title": "Sales Tax Areas",
       "itemId": "852bc8eeaa534cc586b8936e1b451f54",
@@ -3705,7 +3705,7 @@
     "dataType": 3,
     "description": "2021 Tax Area boundaries formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/economy/taxing-areas",
+    "productPage": "/products/sgid/economy/taxing-areas",
     "hub": {
       "title": "Tax Areas 2021",
       "itemId": "e06fee6ff03f43ca8da9b06b17ad0ed3",
@@ -3729,7 +3729,7 @@
     "dataType": 3,
     "description": "2022 Tax Area boundaries formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/economy/taxing-areas",
+    "productPage": "/products/sgid/economy/taxing-areas",
     "hub": {
       "title": "Tax Areas 2022",
       "itemId": "1c962302668e431db53d9763962c09f5",
@@ -3753,7 +3753,7 @@
     "dataType": 3,
     "description": "2021 Boundaries of incorporated political subdivisions that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/economy/taxing-areas",
+    "productPage": "/products/sgid/economy/taxing-areas",
     "hub": {
       "title": "Tax Entities 2021",
       "itemId": "228ac715bbb446e4a4ecfb6dea3c52b1",
@@ -3777,7 +3777,7 @@
     "dataType": 3,
     "description": "2022 Boundaries of incorporated political subdivisions that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/economy/taxing-areas",
+    "productPage": "/products/sgid/economy/taxing-areas",
     "hub": {
       "title": "Tax Entities 2022",
       "itemId": "cf717be2436e46758a263d53b63b8cf7",
@@ -3801,7 +3801,7 @@
     "dataType": 3,
     "description": "Sales tax areas that are generally areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/economy/taxing-areas",
+    "productPage": "/products/sgid/economy/taxing-areas",
     "hub": {
       "title": "Transit Special Tax Areas",
       "itemId": "17b06b8c22444f0291703c4c05f18b07",
@@ -3825,7 +3825,7 @@
     "dataType": 3,
     "description": "Utah State Entities that are not collecting tax but may be collecting fees.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Utah Entities Non Tax",
       "itemId": "2e8759ad687041de9b4eab63e05060f4",
@@ -3849,7 +3849,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2006) Wasatch Front, Iron County, Heber Valley",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2006 Wasatch Front Iron County Heber Valley Lidar",
       "itemId": "",
@@ -3873,7 +3873,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2011) Great Salt Lake, Cedar valley, Hurricane Fault",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2011 Great Salt Lake Cedar Valley Hurricane Fault Lidar",
       "itemId": "",
@@ -3897,7 +3897,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2013 & 2014) Wasatch Front and Wasatch Fault",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2013 2014 Wasatch Front And The Wasatch Fault Lidar",
       "itemId": "",
@@ -3921,7 +3921,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2015) Zion National Park",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2015 Zion National Park Lidar",
       "itemId": "",
@@ -3945,7 +3945,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2015) Colorado, Green and Yampa Rivers",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2015 Colorado Green Yampa Rivers Lidar",
       "itemId": "",
@@ -3969,7 +3969,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) FORGE",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2016 FORGE Lidar",
       "itemId": "",
@@ -3993,7 +3993,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) Monroe Mountain",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2016 Monroe Mountain Lidar",
       "itemId": "",
@@ -4017,7 +4017,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) Great Salt Lake and Utah Lake",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2016 Great Salt Lake Utah Lake Lidar",
       "itemId": "",
@@ -4041,7 +4041,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) Bear Lake, Bear River, Cache Valley and Upper Weber Valley",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2016 Bear Lake Bear River Cache Valley Upper Weber Valley Lidar",
       "itemId": "",
@@ -4065,7 +4065,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) Kanab Utah",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2016 Kanab Utah Lidar",
       "itemId": "",
@@ -4089,7 +4089,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2017) Washington County",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2017 Washington County Lidar",
       "itemId": "",
@@ -4113,7 +4113,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2017) Washakie and Whites Valley",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2017 Washakie And Whites Valley Lidar",
       "itemId": "",
@@ -4137,7 +4137,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2017) Millsite Reservoir",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2017 Millsite Reservoir Lidar",
       "itemId": "",
@@ -4161,7 +4161,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Sanpete Valley",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2018 Sanpete Valley Lidar",
       "itemId": "",
@@ -4185,7 +4185,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Southern utah",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2018 Southern Utah Lidar",
       "itemId": "",
@@ -4209,7 +4209,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Central Utah",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2018 Central Utah Lidar",
       "itemId": "",
@@ -4233,7 +4233,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Northern Utah",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2018 Northern Utah Lidar",
       "itemId": "",
@@ -4257,7 +4257,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Box Elder County",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2018 Box Elder County Lidar",
       "itemId": "",
@@ -4281,7 +4281,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Uintah Basin and Heber Valley",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2018 Uintah Basin And Heber Valley Lidar",
       "itemId": "",
@@ -4305,7 +4305,7 @@
     "dataType": 8,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2019) Strawberry River",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation/lidar",
+    "productPage": "/products/sgid/elevation/lidar",
     "hub": {
       "title": "2019 Strawberry River Lidar",
       "itemId": "",
@@ -4329,7 +4329,7 @@
     "dataType": 3,
     "description": "Aspect and elevation polygons that correspond to the Utah Avalanche Forecast Center rose graphic. ",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Avalanche Rose Tri Canyons",
       "itemId": "aa0f9a4901a44d8d9ea60f10fd8dbdbc",
@@ -4353,7 +4353,7 @@
     "dataType": 2,
     "description": "2 Meter interval contours for Salt Lake County.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/elevation/500-foot-contours",
+    "productPage": "/products/sgid/elevation/500-foot-contours",
     "hub": {
       "title": "Contours 2 Meter SL County",
       "itemId": "",
@@ -4377,7 +4377,7 @@
     "dataType": 2,
     "description": "Statewide 500 foot interval contours.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/elevation/500-foot-contours",
+    "productPage": "/products/sgid/elevation/500-foot-contours",
     "hub": {
       "title": "Contours 500 Ft",
       "itemId": "46024bfcf19545e4bdfbc3b1e86b74e0",
@@ -4401,7 +4401,7 @@
     "dataType": 3,
     "description": "Generalized contour polygons to show relative elevation and terrain at medium and small scales.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Contours Generalized 200 Ft",
       "itemId": "bc6850cf76924e38870e3bdc7c0dc473",
@@ -4425,7 +4425,7 @@
     "dataType": 1,
     "description": "Top 100 highest peaks and additional highest county peaks.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/recreation",
+    "productPage": "/products/sgid/recreation",
     "hub": {
       "title": "Highest Peaks",
       "itemId": "27faf1a5aef2429fb2d660139b6583d6",
@@ -4449,7 +4449,7 @@
     "dataType": 8,
     "description": "10 Meter Digital Elevation Models (DEMs) from the USGS National Map",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation",
+    "productPage": "/products/sgid/elevation",
     "hub": {
       "title": "USGS 10 Meter",
       "itemId": "",
@@ -4473,7 +4473,7 @@
     "dataType": 8,
     "description": "30 Meter Digital Elevation Models (DEMs) from the USGS National Map",
     "inActionUrl": "https://raster.utah.gov/",
-    "productPagePath": "/products/sgid/elevation",
+    "productPage": "/products/sgid/elevation",
     "hub": {
       "title": "USGS 30 Meter",
       "itemId": "",
@@ -4497,7 +4497,7 @@
     "dataType": 3,
     "description": "Areas of coal deposits.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy/coal",
+    "productPage": "/products/sgid/energy/coal",
     "hub": {
       "title": "Coal 4 Foot Seams",
       "itemId": "bb1d4c7c4d3a43e79a5872c3b1f29c68",
@@ -4521,7 +4521,7 @@
     "dataType": 3,
     "description": "Areas of coal deposits.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy/coal",
+    "productPage": "/products/sgid/energy/coal",
     "hub": {
       "title": "Coal Deposit Areas 1988",
       "itemId": "b24d12d0009748be899d909a546d2d05",
@@ -4545,7 +4545,7 @@
     "dataType": 3,
     "description": "N/A",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Coal Leases",
       "itemId": "c00a09d1407742e19d9ff61c7d6c82db",
@@ -4569,7 +4569,7 @@
     "dataType": 1,
     "description": "Coal mine locations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy/coal",
+    "productPage": "/products/sgid/energy/coal",
     "hub": {
       "title": "Coal Mines UGS",
       "itemId": "af6fc24c88354f6bbd0cf7dcf3e1049c",
@@ -4593,7 +4593,7 @@
     "dataType": 3,
     "description": "Oil and gas fields defined by the Utah Department of Natural Resources, Oil Gas and Mining Division.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy/",
+    "productPage": "/products/sgid/energy/",
     "hub": {
       "title": "DNR Oil Gas Fields",
       "itemId": "",
@@ -4617,7 +4617,7 @@
     "dataType": 3,
     "description": "Oil and gas units defined by the the Utah Department of Natural Resources, Oil Gas and Mining Division.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DNR Oil Gas Units",
       "itemId": "",
@@ -4641,7 +4641,7 @@
     "dataType": 1,
     "description": "Oil and gas well locations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy/",
+    "productPage": "/products/sgid/energy/",
     "hub": {
       "title": "DNR Oil Gas Wells",
       "itemId": "",
@@ -4665,7 +4665,7 @@
     "dataType": 1,
     "description": "Oil and gas bottom hole points for horizontally drilled wells only. This dataset is updated nightly through a database connection with DNR-OGM.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy/",
+    "productPage": "/products/sgid/energy/",
     "hub": {
       "title": "DNR Oil Gas Wells HD Bottom",
       "itemId": "",
@@ -4689,7 +4689,7 @@
     "dataType": 2,
     "description": "Oil and gas horizontal drill paths (lines) for horizontally drilled wells only. This dataset is updated nightly through a database connection with DNR-OGM.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy/",
+    "productPage": "/products/sgid/energy/",
     "hub": {
       "title": "DNR Oil Gas Wells HD Path",
       "itemId": "",
@@ -4713,7 +4713,7 @@
     "dataType": 3,
     "description": "Proposed areas that may be designated as West-wide energy corridors on federal lands.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Energy Corridor Areas",
       "itemId": "3c39e10f78c34cd981f28bde8ad76e14",
@@ -4737,7 +4737,7 @@
     "dataType": 2,
     "description": "This layer represents lines which have been proposed as West-wide energy corridors centerlines for the draft \"Programmatic Environmental Impact Statement, Designation of Energy Corridors on Federal Land in the 11 Western States\", September 2007.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Energy Corridor Centerline",
       "itemId": "0845e0757fee4992bee279ffb1f95c5d",
@@ -4761,7 +4761,7 @@
     "dataType": 2,
     "description": "Energy resources depicted as lines on the Energy Resources Map of Utah from which the data were digitized.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Energy Resources Line",
       "itemId": "91c1353361074c4fa753c4d8a0e5f151",
@@ -4785,7 +4785,7 @@
     "dataType": 1,
     "description": "Energy resources depicted as points on the Energy Resources Map of Utah from which the data were digitized.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Energy Resources Point",
       "itemId": "888b7985fce5403ba5713137bd660d64",
@@ -4809,7 +4809,7 @@
     "dataType": 3,
     "description": "Energy resources depicted as polygons on the Energy Resources Map of Utah from which the data were digitized.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Energy Resources Poly",
       "itemId": "cb41eaba2f2e4a6094f0ac531df8c7dd",
@@ -4833,7 +4833,7 @@
     "dataType": 3,
     "description": "Locations of current geothermal leases and/or lease applications on Federal land.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Geothermal Leases Utah",
       "itemId": "01b4a3e0a8ca4e4086ac05a843b5701a",
@@ -4857,7 +4857,7 @@
     "dataType": 1,
     "description": "Oil and gas well locations.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Oil Gas Wells",
       "itemId": "",
@@ -4881,7 +4881,7 @@
     "dataType": 1,
     "description": "Oil and gas bottom hole points for horizontally drilled wells only. This dataset is updated nightly through a database connection with DNR-OGM.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Oil Gas Wells Down Holes",
       "itemId": "",
@@ -4905,7 +4905,7 @@
     "dataType": 2,
     "description": "Oil and gas horizontal drill paths (lines) for horizontally drilled wells only. This dataset is updated nightly through a database connection with DNR-OGM.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Oil Gas Wells Paths",
       "itemId": "",
@@ -4929,7 +4929,7 @@
     "dataType": 1,
     "description": "Permitted uranium mines (active and suspended operating status).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "Permitted Uranium Mines",
       "itemId": "222316608b7d4f23b3e18c7bb0596c75",
@@ -4953,7 +4953,7 @@
     "dataType": 1,
     "description": "Power Plant locations from CO2 project for the State of Utah, July 2008.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy/energy-generation",
+    "productPage": "/products/sgid/energy/energy-generation",
     "hub": {
       "title": "Power Plants CO 2",
       "itemId": "0fd6aa168ea2463c8adce143a06812ce",
@@ -4977,7 +4977,7 @@
     "dataType": 1,
     "description": "Tar sand resource locations.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Tar Sands",
       "itemId": "5a0c72c0aed64c3d8fb821f4e1b3290e",
@@ -5001,7 +5001,7 @@
     "dataType": 3,
     "description": "Uranium deposit areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "Uranium Area Boundaries",
       "itemId": "3eba2c1bd5bf4165bee3caf6c1525eae",
@@ -5025,7 +5025,7 @@
     "dataType": 3,
     "description": "Uranium mining districts.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "Uranium Districts UGS",
       "itemId": "1b9c8a48aae84adb81294e766cbe4b3c",
@@ -5049,7 +5049,7 @@
     "dataType": 1,
     "description": "Uranium mill locations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "Uranium Mills",
       "itemId": "d49fd89f13c04a43b9b6ff0a684ad875",
@@ -5073,7 +5073,7 @@
     "dataType": 1,
     "description": "Locations of past mining production of uranium.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "Uranium Past Producers",
       "itemId": "bb603c7f82ad473296c0d4bef14da185",
@@ -5097,7 +5097,7 @@
     "dataType": 3,
     "description": "Utah Renewable Energy Zones Phase 1, potential geothermal energy resource areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "UREZ Phase 1 Geothermal Zones",
       "itemId": "ef9c52e7a6d44ff6abd5a0becfb3f0e2",
@@ -5121,7 +5121,7 @@
     "dataType": 3,
     "description": "Utah Renewable Energy Zones Phase 1, potential solar energy resource areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "UREZ Phase 1 Solar Zones",
       "itemId": "d1bf59d975014f63ab4fd469324d5475",
@@ -5145,7 +5145,7 @@
     "dataType": 2,
     "description": "Utah Renewable Energy Zones Phase 1, electrical transmission network schematic.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "UREZ Phase 1 Transmission",
       "itemId": "62ddb0b1622a420f84a725b3c27c3189",
@@ -5169,7 +5169,7 @@
     "dataType": 1,
     "description": "Utah Renewable Energy Zones Phase 1, potential canyon wind energy resource areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "UREZ Phase 1 Wind Drainage",
       "itemId": "d4bee25887164fc680dacdef16263ca8",
@@ -5193,7 +5193,7 @@
     "dataType": 3,
     "description": "Utah Renewable Energy Zones Phase 1, potential wind energy resource areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "UREZ Phase 1 Wind Zones",
       "itemId": "0330e2f84e614783adc560a91926e0a8",
@@ -5217,7 +5217,7 @@
     "dataType": 2,
     "description": "Utah Renewable Energy Zones Phase 2, conceptual electrical transmission network.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "UREZ Phase 2 Conceptual Transmission",
       "itemId": "bdb7106ae67543f18eab28129737ed50",
@@ -5241,7 +5241,7 @@
     "dataType": 1,
     "description": "Utah Renewable Energy Zones Phase 2, geothermal energy resource locations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "UREZ Phase 2 Geothermal",
       "itemId": "302bb67128104bf6a8c38f85fd36bd42",
@@ -5265,7 +5265,7 @@
     "dataType": 3,
     "description": "Utah Renewable Energy Zones Phase 2 zone boundaries.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/energy",
+    "productPage": "/products/sgid/energy",
     "hub": {
       "title": "UREZ Phase 2 Zone Boundaries",
       "itemId": "573e31d95a54439c9e17fefd078a353c",
@@ -5289,7 +5289,7 @@
     "dataType": 1,
     "description": "Utah Department of Environmental Quality (UDEQ), brownfields not targeted for cleanup.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "BFNONTARGETED",
       "itemId": "5fd65304423d40b38b4d93e50698db70",
@@ -5313,7 +5313,7 @@
     "dataType": 1,
     "description": "Utah Department of Environmental Quality (UDEQ), brownfields targeted for cleanup.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "BFTARGETED",
       "itemId": "630351c0db444fe7933a08eab40e573e",
@@ -5337,7 +5337,7 @@
     "dataType": 1,
     "description": "Annual emissions (in tons) for ammonia, pm10, carbon monoxide, sulfur dioxide, volatile organic compounds, and oxides of nitrogen for Utah. Provided by the Utah Division of Air Quality.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/air-emissions-inventory",
+    "productPage": "/products/sgid/environment/air-emissions-inventory",
     "hub": {
       "title": "DAQ Air Emissions Inventory",
       "itemId": "57a8775a05a04166ba6c808451457583",
@@ -5361,7 +5361,7 @@
     "dataType": 1,
     "description": "Air monitoring network that consists of ambient air monitoring stations within the State of Utah that collect air quality data 24/7.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DAQ Air Monitor By Station",
       "itemId": "6f22dcf8f7f34733a4d7d5bce9cf9de9",
@@ -5385,7 +5385,7 @@
     "dataType": 1,
     "description": "Locations of sites that have obtained Approval Orders from the Utah Division of Air Quality.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DAQ Permit Comp Approval",
       "itemId": "620229e78bf94010b5c73965b5fa7689",
@@ -5409,7 +5409,7 @@
     "dataType": 1,
     "description": "Utah Division of Air Quality sites permitted under Title V of the 1990 Clean Air Act.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DAQ Permit Comp Title V",
       "itemId": "864a99721fbc48d888c25043204f15de",
@@ -5433,7 +5433,7 @@
     "dataType": 1,
     "description": "Sites that generate hazardous waste; that treat, store, or dispose of hazardous waste; that treat, store, or dispose of non-hazardous solid waste; and sites that transport, market, or recycle used oil.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DSHW Solid Haz Waste Oil Facilities",
       "itemId": "",
@@ -5457,7 +5457,7 @@
     "dataType": 1,
     "description": "Locations of Utah's priority lakes and reservoirs selected for more frequent collection of water quality information.  Results of lake/reservoir assessments are found in the \"Assessed Waters\" data layer.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DWQ Assessed Lakes",
       "itemId": "1e96f4fdabe247fdbe7499789d9d14a5",
@@ -5481,7 +5481,7 @@
     "dataType": 3,
     "description": "Water quality assesssment information for Utah's surface waters (rivers, streams, and reservoirs/lakes) as reported in the latest 305(b) Report to Congress.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DWQ Assessed Waters",
       "itemId": "b5975f851db5475cbdc323cbeada39f4",
@@ -5505,7 +5505,7 @@
     "dataType": 3,
     "description": "Delineated boundaries of the Division of Water Quality assessment unit and the 2006 assessment category for meeting State of Utah water quality standards.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/drinking-water-assessment-units",
+    "productPage": "/products/sgid/environment/drinking-water-assessment-units",
     "hub": {
       "title": "DWQ Assessment Units",
       "itemId": "0f39afb3b29d4c0a8abf7c46ed2e0354",
@@ -5529,7 +5529,7 @@
     "dataType": 1,
     "description": "Locations of Division ofWater Quality groundwater permits and associated permit information including permittee names, address, and permit type.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/drinking-water-assessment-units",
+    "productPage": "/products/sgid/environment/drinking-water-assessment-units",
     "hub": {
       "title": "DWQ Groundwater Permits",
       "itemId": "eb1bb5fbe37d43f1aa002b19dd678ac5",
@@ -5553,7 +5553,7 @@
     "dataType": 1,
     "description": "Locations of fish tissue sample sites, consumption advisories, and sampling information including fish species, sample size, sample year, and a summary of mercury concentrations in fish tissue.  ",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DWQ Mercury In Fish Tissue",
       "itemId": "e158a886d03d47169f687d18a2458748",
@@ -5577,7 +5577,7 @@
     "dataType": 1,
     "description": "Locations and descriptions of Utah's water quality monitoring sites for rivers/streams, lakes/reservoirs, wells, and facilities.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DWQ Monitoring Locations",
       "itemId": "e3d89f76e52942c2bc76dcec65a435ab",
@@ -5601,7 +5601,7 @@
     "dataType": 1,
     "description": "Locations of Utah's National Pollution Elimination Discharge System (NPDES) permit holders and the waters of the state, if any, they discharge to. Data provided by the EPA and the Utah Division of Water Quality.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DWQNPDES Dischargers",
       "itemId": "",
@@ -5625,7 +5625,7 @@
     "dataType": 1,
     "description": "This dataset contains the incident information submitted to the Division of Environmental Response and Remediation and to after-hours duty officers, and is provided as a service to the public.  Locations are based on coordinates derived from maps and GPS data.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Environmental Incidents",
       "itemId": "892f7efacb8b4643b8e111a33d34a7f0",
@@ -5649,7 +5649,7 @@
     "dataType": 1,
     "description": "Locations of potential Enforceable Written Assurance sites. EWAs will generally ensure to property owners or prospective property owners that there is no unacceptable risk to human health or the environment.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "EWA",
       "itemId": "7299aa0fdc80426ca0e42c42f59e1518",
@@ -5673,7 +5673,7 @@
     "dataType": 1,
     "description": "Facility discharge monitoring sites derived from the Utah Division of Water Quality monitoring database called STORET.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Facility Monitoring Sites",
       "itemId": "2976bb76069343ada9b7717fca5d6321",
@@ -5697,7 +5697,7 @@
     "dataType": 1,
     "description": "Utah Petroleum Storage Tank Facilities contains the locations of above and below ground storage tanks.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "FACILITYPST",
       "itemId": "",
@@ -5721,7 +5721,7 @@
     "dataType": 1,
     "description": "Formerly Used Defense site locations. The Department of Defense (DoD) is responsible for environmental restoration of FUDS, these locations represent sites not contaminated areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "FUD",
       "itemId": "dbcdc13c51614d109102f1251fe9530b",
@@ -5745,7 +5745,7 @@
     "dataType": 3,
     "description": "Institutional Control Buffer Zones in Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "ICBUFFERZONES",
       "itemId": "d8ea2ca541724277b01726d98197da32",
@@ -5769,7 +5769,7 @@
     "dataType": 1,
     "description": "Lakes monitored for water quality by the Division of Water Quality.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/drinking-water-assessment-units",
+    "productPage": "/products/sgid/environment/drinking-water-assessment-units",
     "hub": {
       "title": "Lake Monitoring",
       "itemId": "95f664327f724c0c8c87f6cd38bf9311",
@@ -5793,7 +5793,7 @@
     "dataType": 1,
     "description": "Lake water quality monitoring sites based on the generation of points from latitude, longitude coordinates furnished by the Utah Department of Environmental Quality, Division of Water Quality (DWQ).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "Lake Monitor Sites",
       "itemId": "cb8a2721a0c24dfe988d3cd6156c6ef6",
@@ -5817,7 +5817,7 @@
     "dataType": 1,
     "description": "Locations of Military Munitions Response Program sites. MMRP manages the environmental, health and safety issues presented by unexploded ordnances (UXO), discarded military munitions (DMM) and munitions constituents (MC).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "MMRP",
       "itemId": "c77c53794aeb4c448e1307b31c581909",
@@ -5841,7 +5841,7 @@
     "dataType": 1,
     "description": "Locations of Utah National Priorities List Sites. The NPL is the list of national priorities among the known releases or threatened releases of hazardous substances, pollutants, or contaminants throughout the United States.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "NPL",
       "itemId": "f9c01f05050c40d7b86dade7dd877cf9",
@@ -5865,7 +5865,7 @@
     "dataType": 1,
     "description": "Potential EPA Superfund sites",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "SITEREM",
       "itemId": "929a2e7a8d5347b8b3248a450cc42e33",
@@ -5889,7 +5889,7 @@
     "dataType": 1,
     "description": "Stream water quality monitoring sites in Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/drinking-water-assessment-units",
+    "productPage": "/products/sgid/environment/drinking-water-assessment-units",
     "hub": {
       "title": "Stream Monitor Sites",
       "itemId": "fbcb87a051fc4784a041074f2a919e4a",
@@ -5913,7 +5913,7 @@
     "dataType": 1,
     "description": "Locations of Tier II facilities under the Emergency Planning and Community Right-to-Know Act (EPCRA).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "TIER 2",
       "itemId": "2f725ff758e24dc496b17f87b7301ed8",
@@ -5937,7 +5937,7 @@
     "dataType": 1,
     "description": "TRI EPA database containing data on disposal or release of toxic chemicals",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "TRI",
       "itemId": "132ac94ba71d4e9b9bcffa57b07feb54",
@@ -5961,7 +5961,7 @@
     "dataType": 3,
     "description": "This dataset represents facilities that have one or more wells regulated by the Underground Injection Control (UIC) Program in the Division of Water Quality.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "UIC Facility",
       "itemId": "91f8d16ab4a44ce7990e8b93b57aa22d",
@@ -5985,7 +5985,7 @@
     "dataType": 1,
     "description": "UIC-regulated facilities and wells",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "UIC Well",
       "itemId": "21da3b1593a34369b3825102264c1bc6",
@@ -6009,7 +6009,7 @@
     "dataType": 1,
     "description": "UPDES permitted water discharge facilities",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "UPDES Sites",
       "itemId": "8da500d7889749b6a412426a3b09cc2f",
@@ -6033,7 +6033,7 @@
     "dataType": 1,
     "description": "Voluntary Release Cleanup Program (VCP) sites",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/environment/brownsfields-targeted",
+    "productPage": "/products/sgid/environment/brownsfields-targeted",
     "hub": {
       "title": "VCP",
       "itemId": "e0316bc7899d4e4896e88fe3a46aafa8",
@@ -6057,7 +6057,7 @@
     "dataType": 3,
     "description": "Grazing allotment boundaries, produced by the Farm Service Agency One time project.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/farming/grazing-improvements",
+    "productPage": "/products/sgid/farming/grazing-improvements",
     "hub": {
       "title": "Grazing Allotments",
       "itemId": "822d0cf8e7da44b7922f8351d7b252e5",
@@ -6081,7 +6081,7 @@
     "dataType": 3,
     "description": "Grazing Improvement Program boundaries",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/farming/grazing-improvements",
+    "productPage": "/products/sgid/farming/grazing-improvements",
     "hub": {
       "title": "Grazing Improvement Regions",
       "itemId": "0527832735284326980bb970495b9ee0",
@@ -6105,7 +6105,7 @@
     "dataType": 3,
     "description": "This layer compiles Utah property parcels that have been included in an Agriculture Protection Area (APA) resolution. APAs are approved by the county in which they are located, and catalogued by Utah Department of Agriculture and Food.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/farming/agricultural-protection-areas",
+    "productPage": "/products/sgid/farming/agricultural-protection-areas",
     "hub": {
       "title": "Agricultural Protection Areas",
       "itemId": "a9fc125d02d54681aec1e5576954ded6",
@@ -6129,7 +6129,7 @@
     "dataType": 2,
     "description": "Approximate boundary of basin fill in ground-water recharge and discharge areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience/aquifer-recharge-discharge-areas",
+    "productPage": "/products/sgid/geoscience/aquifer-recharge-discharge-areas",
     "hub": {
       "title": "Aquifer Basin Fill Boundary",
       "itemId": "ad928a732ddb4a8db1579a0a8bb8abfe",
@@ -6153,7 +6153,7 @@
     "dataType": 3,
     "description": "Ground-water recharge and discharge areas.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience/aquifer-recharge-discharge-areas",
+    "productPage": "/products/sgid/geoscience/aquifer-recharge-discharge-areas",
     "hub": {
       "title": "Aquifer Recharge Discharge Areas",
       "itemId": "6c3c9b1d4a0a45f0ae851e92b01940c3",
@@ -6177,7 +6177,7 @@
     "dataType": 3,
     "description": "Snow avalanche paths in the tri-canyon area of the Wasatch Front",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience/avalanche-paths",
+    "productPage": "/products/sgid/geoscience/avalanche-paths",
     "hub": {
       "title": "Avalanche Paths",
       "itemId": "0df199cef1704e5287ae675ee3dbd3bd",
@@ -6201,7 +6201,7 @@
     "dataType": 3,
     "description": "Debris-flow hazard for the Wasatch Front",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Debris Flow Wasatch Front",
       "itemId": "79850526bd5747c1ab2e36b064c77547",
@@ -6225,7 +6225,7 @@
     "dataType": 3,
     "description": "Debris-flow hazard study boundaries for the Wasatch Front",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Debris Flow Wasatch Study Boundary",
       "itemId": "f4d53bf5288648f0a49cfb04a63d7d18",
@@ -6249,7 +6249,7 @@
     "dataType": 1,
     "description": "Utah earthquake epicenters recorded from 1850 to 2016",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Earthquake Epicenters 1850 To 2016",
       "itemId": "4c162e09b7b5436bae9a0e656b5343a7",
@@ -6273,7 +6273,7 @@
     "dataType": 1,
     "description": "Mining induced earthquake epicenters recorded from 1928 to 2016",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Earthquake Epicenters Mining Induced 1928 To 2016",
       "itemId": "af0cbb8ecca942d58367f68bcd2643b6",
@@ -6297,7 +6297,7 @@
     "dataType": 1,
     "description": "Locations of earthquake epicenters in Utah",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Epicenters Modern",
       "itemId": "",
@@ -6321,7 +6321,7 @@
     "dataType": 1,
     "description": "Various geologic dating methods, sites, and project areas in Utah.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Geochronology",
       "itemId": "",
@@ -6345,7 +6345,7 @@
     "dataType": 2,
     "description": "Geologic contacts",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Geologic Contacts",
       "itemId": "8be65c11d9784427bc388d7684f99c43",
@@ -6369,7 +6369,7 @@
     "dataType": 2,
     "description": "Geologic dikes",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Geologic Dikes",
       "itemId": "eedc887ce2da4abe961c6a3961021746",
@@ -6393,7 +6393,7 @@
     "dataType": 2,
     "description": "Geologic formations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Geologic Formations Line",
       "itemId": "1dcdb335639e44f48f5dae205bfcf3ef",
@@ -6417,7 +6417,7 @@
     "dataType": 2,
     "description": "Geologic markers",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Geologic Markers",
       "itemId": "744b09835f6d42c997083cb1d723804e",
@@ -6441,7 +6441,7 @@
     "dataType": 2,
     "description": "Geologic veins",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Geologic Veins",
       "itemId": "b71b1eb763d4494e8a15c45e7e894bf1",
@@ -6465,7 +6465,7 @@
     "dataType": 2,
     "description": "Landslide Compilation Debris Flow Path feature class represents debris-flow paths throughout Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Landslide Compilation Debris Flow Paths",
       "itemId": "cda61391c65a4d4aa94a581f6bf57057",
@@ -6489,7 +6489,7 @@
     "dataType": 3,
     "description": "Compiled landslide deposits of Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Landslide Compilation Polygons",
       "itemId": "4698550fd2aa4029bc295f7e0051780e",
@@ -6513,7 +6513,7 @@
     "dataType": 2,
     "description": "Compiled landslide scarps of Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Landslide Compilation Scarps",
       "itemId": "e22096dacc604d5eb8b2e3c5e21f0a58",
@@ -6537,7 +6537,7 @@
     "dataType": 3,
     "description": "Area boundaries of inventoried and mapped landslides.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Landslide Inventory Mapped Areas",
       "itemId": "e0ec1e7d0d5c47e388cc86e89928fe92",
@@ -6561,7 +6561,7 @@
     "dataType": 3,
     "description": "Inventoried and mapped landslides.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Landslide Inventory Polygons",
       "itemId": "3be19aad83a940cfa7bb331b5fbc28c6",
@@ -6585,7 +6585,7 @@
     "dataType": 3,
     "description": "Liquefaction potential",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Liquefaction Potential",
       "itemId": "cc9b0506386243959bf5eb153c26ba3f",
@@ -6609,7 +6609,7 @@
     "dataType": 1,
     "description": "Mineral resources",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Minerals",
       "itemId": "9d2e949a9492425dbb4e5d5212f9ef19",
@@ -6633,7 +6633,7 @@
     "dataType": 3,
     "description": "Physiographic subdivisions of Utah as defined by W.L. Stokes on his 1977 map",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Physiographic Subdivisions",
       "itemId": "436818d1a5004ed7a51e9550baf9cff8",
@@ -6657,7 +6657,7 @@
     "dataType": 3,
     "description": "Liquefaction Potential Wasatch Front",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Potential Liquefaction Wasatch Front",
       "itemId": "",
@@ -6681,7 +6681,7 @@
     "dataType": 2,
     "description": "Quaternary faults",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience/quaternary-faults",
+    "productPage": "/products/sgid/geoscience/quaternary-faults",
     "hub": {
       "title": "Quaternary Faults",
       "itemId": "",
@@ -6705,7 +6705,7 @@
     "dataType": 3,
     "description": "Quaternary volcanic flows",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Quaternary Volcanic Flow",
       "itemId": "3b6cf0a8a7284fbdbb02fb4ec83e4bcf",
@@ -6729,7 +6729,7 @@
     "dataType": 1,
     "description": "Quaternary volcanic vents",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Quaternary Volcanic Vents",
       "itemId": "209899d96d93418cbeabec23d9e674d4",
@@ -6753,7 +6753,7 @@
     "dataType": 1,
     "description": "Ages and related dating information of sampled geologic material (soil and rock) using radiocarbon (14C) dating methods",
     "inActionUrl": "",
-    "productPagePath": "https://drive.google.com/drive/u/0/folders/170HlHq6x_yFbNWBllLh5DqUgwUlL3Tfq",
+    "productPage": "https://drive.google.com/drive/u/0/folders/170HlHq6x_yFbNWBllLh5DqUgwUlL3Tfq",
     "hub": {
       "title": "Radiocarbon",
       "itemId": "",
@@ -6777,7 +6777,7 @@
     "dataType": 3,
     "description": "Shallow ground water depth",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Shallow Ground Water",
       "itemId": "a60e041ddf614cf3913c389fa65775ac",
@@ -6801,7 +6801,7 @@
     "dataType": 3,
     "description": "Soil types and characteristics",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience/soils",
+    "productPage": "/products/sgid/geoscience/soils",
     "hub": {
       "title": "Soils",
       "itemId": "047e5268bed7404e8b7cf349d36c8283",
@@ -6825,7 +6825,7 @@
     "dataType": 1,
     "description": "Volcanic cones",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/geoscience",
+    "productPage": "/products/sgid/geoscience",
     "hub": {
       "title": "Volcanic Cones",
       "itemId": "e8622ef0f5f148bf89440e37cd1f9a93",
@@ -6849,7 +6849,7 @@
     "dataType": 1,
     "description": "Emergency medical services",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/heath/heath-care-facilities",
+    "productPage": "/products/sgid/heath/heath-care-facilities",
     "hub": {
       "title": "Emergency Medical Services",
       "itemId": "4d29084d6e434ef397ae5922ba7402b4",
@@ -6873,7 +6873,7 @@
     "dataType": 1,
     "description": "Point locations created for use by public safety and other agencies that need to know the location of emergency medical response units for effective planning and dispatch.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/heath/heath-care-facilities",
+    "productPage": "/products/sgid/heath/heath-care-facilities",
     "hub": {
       "title": "EMS Facilities",
       "itemId": "22410f18275646f89824403b74511308",
@@ -6897,7 +6897,7 @@
     "dataType": 1,
     "description": "Health care facilities",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/heath/heath-care-facilities",
+    "productPage": "/products/sgid/heath/heath-care-facilities",
     "hub": {
       "title": "Health Care Facilities",
       "itemId": "f5e5d7c717c946fe9cd6f2c8d0bf8d86",
@@ -6921,7 +6921,7 @@
     "dataType": 3,
     "description": "Health care districts",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/heath/health-districts",
+    "productPage": "/products/sgid/heath/health-districts",
     "hub": {
       "title": "Health Districts",
       "itemId": "2c738e87f55e4383b82a3c1cd08c8208",
@@ -6945,7 +6945,7 @@
     "dataType": 3,
     "description": "Health care districts 2015",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/heath/health-districts",
+    "productPage": "/products/sgid/heath/health-districts",
     "hub": {
       "title": "Health Districts 2015",
       "itemId": "",
@@ -6969,7 +6969,7 @@
     "dataType": 3,
     "description": "Health small statistical areas 2017",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Health Small Statistical Areas 2017",
       "itemId": "6fe09518dc62415d88570dfd59fbb4c5",
@@ -6993,7 +6993,7 @@
     "dataType": 3,
     "description": "Health small statistical areas 2018",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Health Small Statistical Areas 2018",
       "itemId": "c0a84e302c8142cb9ca34f88813f23b3",
@@ -7017,7 +7017,7 @@
     "dataType": 3,
     "description": "Health small statistical areas 2020",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Health Small Statistical Areas 2020",
       "itemId": "67edfe9ded464e3393c1932b4d39a6b2",
@@ -7041,7 +7041,7 @@
     "dataType": 3,
     "description": "Small areas showing the percent of population getting the recommended amount of activity and the percent obese ",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Small Areas Obesity And Activity",
       "itemId": "5c5c709041d343f18096b7a356831be9",
@@ -7065,7 +7065,7 @@
     "dataType": 1,
     "description": "Point locations for Daughters of Utah Pioneers satellite museums. Digitized March 2016. Locations were determined by a combination of geocoding street addresses and referencing NAIP 2014 aerial imagery and Google Street View.\n\nHorizontal_Positional_Accuracy: GPS = geocode or aerial imagery placement; Asserted = could not locate exact building location, placed at approximate street address",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Daughters Of Utah Pioneers Satellite Museums",
       "itemId": "",
@@ -7089,7 +7089,7 @@
     "dataType": 1,
     "description": "Ghost towns are uninhabitated or nearly abandoned places. The industry or driving force of the location that once brought residents has subsided or vanished, leaving abandoned buildings subject to the forces of nature and time. In other instances a town can cease because of natural disasters such as flood or drought.\n",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Ghost Towns",
       "itemId": "",
@@ -7113,7 +7113,7 @@
     "dataType": 3,
     "description": "Historic districts",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/history",
+    "productPage": "/products/sgid/history",
     "hub": {
       "title": "Historic Districts",
       "itemId": "eecae7fdf65f47aeae12ba817aa0d66b",
@@ -7137,7 +7137,7 @@
     "dataType": 2,
     "description": "Historic trails",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Historic Trails",
       "itemId": "20742e3d34354509b8a9f567f1003509",
@@ -7161,7 +7161,7 @@
     "dataType": 1,
     "description": "Historic monuments and marker locations in Utah",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Monuments And Markers",
       "itemId": "63de4118823e4e3eba943ca43caefc72",
@@ -7185,7 +7185,7 @@
     "dataType": 1,
     "description": "Properties in Utah that are recognized by the U.S. Gov't as National Historic Landmarks for their outstanding historical significance. A National Historic Landmark can be a building, district, object, site or structure.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "National Historic Landmarks",
       "itemId": "",
@@ -7209,7 +7209,7 @@
     "dataType": 2,
     "description": "Pony express",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Pony Express",
       "itemId": "",
@@ -7233,7 +7233,7 @@
     "dataType": 3,
     "description": "Aerial photography coverage",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Aerial Photography Extents",
       "itemId": "91f0336b027a426ba14d62aa95a4af9b",
@@ -7257,7 +7257,7 @@
     "dataType": 3,
     "description": "AutoCorrelated digital elevation model coverage",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Auto Correlated DEM Extents",
       "itemId": "3e82e35d69744ce4991c15daa4edd775",
@@ -7281,7 +7281,7 @@
     "dataType": 3,
     "description": "Contour line coverage",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Contour Line Extents",
       "itemId": "df220fc45d2a44f7b9a8ca2a3635e777",
@@ -7305,7 +7305,7 @@
     "dataType": 3,
     "description": "Boundaries and dates of the imagery blocks in the Google imagery service.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Google Utah Service Dates",
       "itemId": "7b6bfa091589492e8e5581421a3917fe",
@@ -7329,7 +7329,7 @@
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 5",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/indices/h3-index",
+    "productPage": "/products/sgid/indices/h3-index",
     "hub": {
       "title": "H 3 Hexes Z 5",
       "itemId": "980d3af37717456b92d7039d9ffa35f3",
@@ -7353,7 +7353,7 @@
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 6",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/indices/h3-index",
+    "productPage": "/products/sgid/indices/h3-index",
     "hub": {
       "title": "H 3 Hexes Z 6",
       "itemId": "992228ada5cd4016b5f9c4d68751d1ca",
@@ -7377,7 +7377,7 @@
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 7",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/indices/h3-index",
+    "productPage": "/products/sgid/indices/h3-index",
     "hub": {
       "title": "H 3 Hexes Z 7",
       "itemId": "3dcd072755cd453885bda7dc69a82fef",
@@ -7401,7 +7401,7 @@
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 8",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/indices/h3-index",
+    "productPage": "/products/sgid/indices/h3-index",
     "hub": {
       "title": "H 3 Hexes Z 8",
       "itemId": "008865ed31514569a9fd11a6dc8a7ee0",
@@ -7425,7 +7425,7 @@
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 9",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/indices/h3-index",
+    "productPage": "/products/sgid/indices/h3-index",
     "hub": {
       "title": "H 3 Hexes Z 9",
       "itemId": "f11c3c7302924c2e869112ec95543c6c",
@@ -7449,7 +7449,7 @@
     "dataType": 3,
     "description": "Flight dates for the Hexagon Imagery.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Hexagon Service Dates",
       "itemId": "7df5278c3e1a46389693c957a75b2b99",
@@ -7473,7 +7473,7 @@
     "dataType": 3,
     "description": "Lidar elevation data coverage",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Lidar Extents",
       "itemId": "",
@@ -7497,7 +7497,7 @@
     "dataType": 3,
     "description": "Tile index",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "National Grid",
       "itemId": "2eeec11a38d64637a74b5c9ddef0f76f",
@@ -7521,7 +7521,7 @@
     "dataType": 3,
     "description": "Tile index",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "USGS 100 K Quads",
       "itemId": "80042c4b51a843c3b480ada0b8d68177",
@@ -7545,7 +7545,7 @@
     "dataType": 3,
     "description": "Tile index",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "USGS 24 K Quads",
       "itemId": "fe10115354c14260aef62a60b3137488",
@@ -7569,7 +7569,7 @@
     "dataType": 3,
     "description": "Tile index",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "USGS 24 K Quarter Quads",
       "itemId": "baa0bf569643469a9511e1fb753f4a60",
@@ -7593,7 +7593,7 @@
     "dataType": 3,
     "description": "Tile index",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "USGS 250 K Quads 1 X 1",
       "itemId": "606d75b70d254c7e9da5785704c60369",
@@ -7617,7 +7617,7 @@
     "dataType": 3,
     "description": "Tile index",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "USGS 250 K Quads 1 X 2",
       "itemId": "ed39436090e8472593149659b4ed257e",
@@ -7641,7 +7641,7 @@
     "dataType": 1,
     "description": "Address points",
     "inActionUrl": "https://addressediting.utah.gov/",
-    "productPagePath": "/products/sgid/address",
+    "productPage": "/products/sgid/address",
     "hub": {
       "title": "Address Points",
       "itemId": "3f4f7a8efcd147febeca8bacaea67a14",
@@ -7665,7 +7665,7 @@
     "dataType": 3,
     "description": "Address system quadrants",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/address",
+    "productPage": "/products/sgid/address",
     "hub": {
       "title": "Address System Quadrants",
       "itemId": "3d6d2db8f3554cc8b3ff24b820035fb3",
@@ -7689,7 +7689,7 @@
     "dataType": 3,
     "description": "Building footprints",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/location/building-footprints",
+    "productPage": "/products/sgid/location/building-footprints",
     "hub": {
       "title": "Buildings",
       "itemId": "10c67c4cf75543e3ab767c2eb601b82d",
@@ -7713,7 +7713,7 @@
     "dataType": 1,
     "description": "",
     "inActionUrl": "",
-    "productPagePath": "https://drive.google.com/drive/folders/0ByStJjVZ7c7mXzY5YW9mdVVDRHc",
+    "productPage": "https://drive.google.com/drive/folders/0ByStJjVZ7c7mXzY5YW9mdVVDRHc",
     "hub": {
       "title": "Carto SITLA Admin Names Multi",
       "itemId": "",
@@ -7737,7 +7737,7 @@
     "dataType": 1,
     "description": "",
     "inActionUrl": "",
-    "productPagePath": "https://drive.google.com/drive/folders/0ByStJjVZ7c7mYWZxQkRmRVB5djA",
+    "productPage": "https://drive.google.com/drive/folders/0ByStJjVZ7c7mYWZxQkRmRVB5djA",
     "hub": {
       "title": "Carto SITLA Hydrology 600 K",
       "itemId": "",
@@ -7761,7 +7761,7 @@
     "dataType": 1,
     "description": "Points representing municipalities, county seats, populated areas, and major junctions for general reference and cartographic purposes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/location",
+    "productPage": "/products/sgid/location",
     "hub": {
       "title": "Cities Towns Locations",
       "itemId": "62a6b78d53a943db906de0abd1c9174f",
@@ -7785,7 +7785,7 @@
     "dataType": 3,
     "description": "Quarter square mile hexagons useful for generalizing data.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Hexagon Grid 1 Km",
       "itemId": "6c399a8b17c14de79bc9e89510cb952a",
@@ -7809,7 +7809,7 @@
     "dataType": 3,
     "description": "Census Master Address File (MAF) address count compared to state compiled address point (SGID10.LOCATION.AddressPoints) count by census block.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "LUCA Block Address Counts 2017",
       "itemId": "58936cbbeaf2425c89131d156e1e5785",
@@ -7833,7 +7833,7 @@
     "dataType": 1,
     "description": "USGS Geographic Names Information Systems (2019)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/location/gnis",
+    "productPage": "/products/sgid/location/gnis",
     "hub": {
       "title": "Place Names GNIS 2019",
       "itemId": "",
@@ -7857,7 +7857,7 @@
     "dataType": 1,
     "description": "Approximate locations of USPS Post Offices",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/location/post-offices",
+    "productPage": "/products/sgid/location/post-offices",
     "hub": {
       "title": "Zip Code PO Boxes",
       "itemId": "9a07e9d337314bb2af4de8f32502428e",
@@ -7881,7 +7881,7 @@
     "dataType": 3,
     "description": "Zoom locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/location/gnis",
+    "productPage": "/products/sgid/location/gnis",
     "hub": {
       "title": "Zoom Locations",
       "itemId": "183633e5f6ea4049858ac0b37f4fdd32",
@@ -7905,7 +7905,7 @@
     "dataType": 3,
     "description": "Grand Staircase Escalante National Monument Special Management Area",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "GSENM Spec Man Area",
       "itemId": "e72802b65c8f4b19b7d22ccf7f7049a9",
@@ -7929,7 +7929,7 @@
     "dataType": 3,
     "description": "Grand Staircase Escalante National Monument Special Recreation Areas",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "GSENM Spec Rec Man Area",
       "itemId": "d0ba9850685140018a956e37cc441ca4",
@@ -7953,7 +7953,7 @@
     "dataType": 3,
     "description": "Characteristics of housing units on a per-parcel or per-development (for PUDs, townhomes, condos, etc) basis derived from LIR parcels and county assessor data.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/planning/housing-unit-inventory",
+    "productPage": "/products/sgid/planning/housing-unit-inventory",
     "hub": {
       "title": "Housing Unit Inventory",
       "itemId": "bbdc62867c2340949f530a71666223ab",
@@ -7977,7 +7977,7 @@
     "dataType": 3,
     "description": "1995 proposal by San Juan County for National Conservation Areas",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "NCA Prop San Juan Co",
       "itemId": "ae16bcb9bd8e4f5e9db30a0b5e9fe52d",
@@ -8001,7 +8001,7 @@
     "dataType": 3,
     "description": "Areas proposed by Emery County, Utah for designation as Primitive Areas",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Primitive Prop Emery Co",
       "itemId": "ab12d72764b345dbae7f8c5e55cefe93",
@@ -8025,7 +8025,7 @@
     "dataType": 3,
     "description": "Proposed areas described in the January 2016 Public Lands Initiative (PLI) preliminary proposal for Utah and referenced by HR 5780.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Public Lands Initiative HR 5780 Areas BLM 2016",
       "itemId": "44943332b600478fa4a3bb5bbd400d57",
@@ -8049,7 +8049,7 @@
     "dataType": 2,
     "description": "Proposed linear features (roads, rivers, etc) described in the January 2016 Public Lands Initiative (PLI) preliminary proposal for Utah and referenced by HR 5780. ",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Public Lands Initiative HR 5780 Lines BLM 2016",
       "itemId": "87010f24614f4c5db6aef2efd886192c",
@@ -8073,7 +8073,7 @@
     "dataType": 3,
     "description": "areas proposed by Emery County, Utah for designation as Semi-Primitive Areas",
     "inActionUrl": "",
-    "productPagePath": "https://drive.google.com/drive/folders/0ByStJjVZ7c7mcGdkUzh5SUlrRGs",
+    "productPage": "https://drive.google.com/drive/folders/0ByStJjVZ7c7mcGdkUzh5SUlrRGs",
     "hub": {
       "title": "Semi Primitive Prop Emery Co",
       "itemId": "14678b1a8f9c4989b9033477c1e29ee8",
@@ -8097,7 +8097,7 @@
     "dataType": 3,
     "description": "1999 Wildland Urban Interface (WUI) areas",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Urban Interface Areas",
       "itemId": "75fc277292c34760900bb27d8a8152fb",
@@ -8121,7 +8121,7 @@
     "dataType": 3,
     "description": "Proposed areas referenced in a January 2016 Public Lands Initiative preliminary proposal for Utah. This version has since been superseded.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Utah PLI Areas Proposal Jan 16",
       "itemId": "4d2327d21f2f4f729e99473b64ff1794",
@@ -8145,7 +8145,7 @@
     "dataType": 2,
     "description": "Proposed linear features (roads, rivers, etc) referenced in the January 2016 Public Lands Initiative preliminary proposal for Utah. This version has since been superseded.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Utah PLI Lines Proposal Jan 16",
       "itemId": "b5e4e5236c2e4fe1a575ab5535b44677",
@@ -8169,7 +8169,7 @@
     "dataType": 2,
     "description": "2008 cherry stem roads",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "UWC 2008 Cherry Stem Roads",
       "itemId": "424c8379e8b747e69f88f48aa3f243f1",
@@ -8193,7 +8193,7 @@
     "dataType": 3,
     "description": "Water related land use",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/planning/water-related-land-use",
+    "productPage": "/products/sgid/planning/water-related-land-use",
     "hub": {
       "title": "Water Related Land Use",
       "itemId": "e3e7fc9316bb4ad09474401ff46e734f",
@@ -8217,7 +8217,7 @@
     "dataType": 3,
     "description": "BLM wilderness proposal",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop BLM",
       "itemId": "6bbb3f528a654fb5bd0bbb6db3fcb382",
@@ -8241,7 +8241,7 @@
     "dataType": 3,
     "description": "HR1500 wilderness proposal (1991)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop HR 1500",
       "itemId": "24ac08e1662844efabf175e614e1b40e",
@@ -8265,7 +8265,7 @@
     "dataType": 3,
     "description": "HR1745 wilderness proposal (1995)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop HR 1745",
       "itemId": "2f016a495db94c53a0b019276a2c430f",
@@ -8289,7 +8289,7 @@
     "dataType": 3,
     "description": "Nine county wilderness proposal (1995)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop Nine Co 1995",
       "itemId": "2b7dd77f47b1442caea32b175b3244f6",
@@ -8313,7 +8313,7 @@
     "dataType": 3,
     "description": "Red Rock wilderness proposal",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop Red Rock",
       "itemId": "b9f7202178694f82a49b855e810f222d",
@@ -8337,7 +8337,7 @@
     "dataType": 3,
     "description": "Utah Wilderness Association (UWA) proposal (1995)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop UWA 1995",
       "itemId": "a1e4963e207e4ac390a1119cc9cda72c",
@@ -8361,7 +8361,7 @@
     "dataType": 3,
     "description": "Utah Wilderness Coalition (UWC) proposal (1989)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop UWC 1989",
       "itemId": "68da537a68c249928787b2a090c9e0c8",
@@ -8385,7 +8385,7 @@
     "dataType": 3,
     "description": "Utah Wilderness Coalition (UWC) proposal (1995)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop UWC 1995",
       "itemId": "1cfca2d849884ce0911a55f0e6aa6593",
@@ -8409,7 +8409,7 @@
     "dataType": 3,
     "description": "Utah Wilderness Coalition (UWC) proposal (2008)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop UWC 2008",
       "itemId": "52c7c9adc97346d1b862fb7963361b7d",
@@ -8433,7 +8433,7 @@
     "dataType": 3,
     "description": "Washington County wilderness proposal (2006)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop Washington Co",
       "itemId": "0c0958b6d31942dab4e18e9bd7bd512f",
@@ -8457,7 +8457,7 @@
     "dataType": 3,
     "description": "West Desert wilderness proposal (1999)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/boundaries/wilderness",
+    "productPage": "/products/sgid/boundaries/wilderness",
     "hub": {
       "title": "Wilderness Prop W Desert 1999",
       "itemId": "a1622e65d5bd4631a1f0f73ea87fc2da",
@@ -8481,7 +8481,7 @@
     "dataType": 3,
     "description": "Unique geographic areas created by the intersection of all of the state-level political districts (2012)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/political/judicial-districts",
+    "productPage": "/products/sgid/political/judicial-districts",
     "hub": {
       "title": "Judicial Districts",
       "itemId": "c8c231440f444f9d881f0e546842dfac",
@@ -8505,7 +8505,7 @@
     "dataType": 3,
     "description": "US Congress Districts boundaries for 2022 to 2032 ",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/political",
+    "productPage": "/products/sgid/political",
     "hub": {
       "title": "US Congress Districts 2022 To 2032",
       "itemId": "b5ef0b24f994467fb4f22b27b1a47e25",
@@ -8529,7 +8529,7 @@
     "dataType": 3,
     "description": "Utah House Districts boundaries 2022 to 2032",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/political",
+    "productPage": "/products/sgid/political",
     "hub": {
       "title": "Utah House Districts 2022 To 2032",
       "itemId": "f2a30099ab1f404db2c0dffbc2856746",
@@ -8553,7 +8553,7 @@
     "dataType": 3,
     "description": "Utah School Board Districts boundaries 2022 to 2032",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/political",
+    "productPage": "/products/sgid/political",
     "hub": {
       "title": "Utah School Board Districts 2022 To 2032",
       "itemId": "ebb7b8e8a0104b448d3bbf3ee82a5580",
@@ -8577,7 +8577,7 @@
     "dataType": 3,
     "description": "Utah Senate Districts boundaries 2022 to 2032",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/political",
+    "productPage": "/products/sgid/political",
     "hub": {
       "title": "Utah Senate Districts 2022 To 2032",
       "itemId": "5289f23d9e76421f89d9a9ef4864937a",
@@ -8601,7 +8601,7 @@
     "dataType": 3,
     "description": "VISTA precinct ballot area boundaries",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/political/voter-precincts",
+    "productPage": "/products/sgid/political/voter-precincts",
     "hub": {
       "title": "Vista Ballot Areas",
       "itemId": "d33f596419d74948a45070275632b8e0",
@@ -8625,7 +8625,7 @@
     "dataType": 8,
     "description": "10 Meter digital elevation model",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DEM 10 METER",
       "itemId": "",
@@ -8649,7 +8649,7 @@
     "dataType": 1,
     "description": "Boat ramp locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/recreation/boat-ramps",
+    "productPage": "/products/sgid/recreation/boat-ramps",
     "hub": {
       "title": "Boat Ramps",
       "itemId": "0d12b74c39eb453088e992bf089d9890",
@@ -8673,7 +8673,7 @@
     "dataType": 3,
     "description": "Golf course locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/recreation/golf-courses",
+    "productPage": "/products/sgid/recreation/golf-courses",
     "hub": {
       "title": "Golf Courses",
       "itemId": "d1f957478ea24659a7badb754a22b91c",
@@ -8697,7 +8697,7 @@
     "dataType": 3,
     "description": "Local park locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/recreation/local-parks",
+    "productPage": "/products/sgid/recreation/local-parks",
     "hub": {
       "title": "Parks Local",
       "itemId": "818536733987486b8082e4c5dec0a1dd",
@@ -8721,7 +8721,7 @@
     "dataType": 3,
     "description": "Utah ski area boundaries",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/recreation/ski-areas",
+    "productPage": "/products/sgid/recreation/ski-areas",
     "hub": {
       "title": "Ski Area Boundaries",
       "itemId": "b84f9467fff5430b8a2fca157f45a5cd",
@@ -8745,7 +8745,7 @@
     "dataType": 1,
     "description": "Utah ski area locations.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Ski Area Locations",
       "itemId": "24029712a33f47feacc7b3f2ef75f179",
@@ -8769,7 +8769,7 @@
     "dataType": 2,
     "description": "Utah ski lifts",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/recreation/ski-areas",
+    "productPage": "/products/sgid/recreation/ski-areas",
     "hub": {
       "title": "Ski Lifts",
       "itemId": "51d8a963411d4356ab3fa7a24146d203",
@@ -8793,7 +8793,7 @@
     "dataType": 2,
     "description": "Established cross country ski trails within in the State of Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/recreation",
+    "productPage": "/products/sgid/recreation",
     "hub": {
       "title": "Ski Trails XC",
       "itemId": "c94307ff26e641159510005e076f5bfd",
@@ -8817,7 +8817,7 @@
     "dataType": 1,
     "description": "Trailheads and trail access points.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/recreation/trails-pathways",
+    "productPage": "/products/sgid/recreation/trails-pathways",
     "hub": {
       "title": "Trailheads",
       "itemId": "9c21cc1f95ba40468deb36bb6fd94943",
@@ -8841,7 +8841,7 @@
     "dataType": 2,
     "description": "Polylines representing Utah's trails and pathways.  This layer is used for both recreation and transportion purposes.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/recreation/trails-pathways",
+    "productPage": "/products/sgid/recreation/trails-pathways",
     "hub": {
       "title": "Trails And Pathways",
       "itemId": "3080c0a2859a4d23a279e17e17c703c8",
@@ -8865,7 +8865,7 @@
     "dataType": 2,
     "description": "Urban trails",
     "inActionUrl": "",
-    "productPagePath": "https://drive.google.com/drive/folders/0ByStJjVZ7c7mRl9RZFhCdFg5RVk",
+    "productPage": "https://drive.google.com/drive/folders/0ByStJjVZ7c7mRl9RZFhCdFg5RVk",
     "hub": {
       "title": "Urban Trails",
       "itemId": "",
@@ -8889,7 +8889,7 @@
     "dataType": 1,
     "description": "BLM field office locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/blm-field-offices",
+    "productPage": "/products/sgid/society/blm-field-offices",
     "hub": {
       "title": "BLM Field Offices",
       "itemId": "1922b4277590438fae726e2b97c14dda",
@@ -8913,7 +8913,7 @@
     "dataType": 1,
     "description": "Cemetery locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/cemeteries",
+    "productPage": "/products/sgid/society/cemeteries",
     "hub": {
       "title": "Cemeteries",
       "itemId": "f54d1c00020940ec95a729b39518e020",
@@ -8937,7 +8937,7 @@
     "dataType": 3,
     "description": "Cemetery locations as polygons",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Cemeteries Poly",
       "itemId": "cea17897971d45a0bb7204d0af6737ff",
@@ -8961,7 +8961,7 @@
     "dataType": 1,
     "description": "Correctional facilities",
     "inActionUrl": "https://sbilocate.ugrc.utah.gov/",
-    "productPagePath": "/products/sgid/society/law-enforcement-facilities",
+    "productPage": "/products/sgid/society/law-enforcement-facilities",
     "hub": {
       "title": "Correctional Facilities",
       "itemId": "1d643eaf1a4c4868a765b199f8ff8085",
@@ -8985,7 +8985,7 @@
     "dataType": 3,
     "description": "City court jurisdiction boundaries",
     "inActionUrl": "https://sbilocate.ugrc.utah.gov/",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Courts City",
       "itemId": "a111451581934197a6bd8f29a530643a",
@@ -9009,7 +9009,7 @@
     "dataType": 3,
     "description": "County court jurisdictions boundaries",
     "inActionUrl": "https://sbilocate.ugrc.utah.gov/",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Courts County",
       "itemId": "543ddee5e5a14bf791d6a61743534777",
@@ -9033,7 +9033,7 @@
     "dataType": 3,
     "description": "EMS response areas for NG911",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/law-enforcement-facilities",
+    "productPage": "/products/sgid/society/law-enforcement-facilities",
     "hub": {
       "title": "EMS Response Areas",
       "itemId": "2c242ea8b8df44f5adec02ee73cdeb16",
@@ -9057,7 +9057,7 @@
     "dataType": 3,
     "description": "Fire response areas for NG911",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/law-enforcement-facilities",
+    "productPage": "/products/sgid/society/law-enforcement-facilities",
     "hub": {
       "title": "Fire Response Areas",
       "itemId": "ee6b0673a1bb4e9c8a5e983dedb67e8e",
@@ -9081,7 +9081,7 @@
     "dataType": 1,
     "description": "Fire station locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/law-enforcement-facilities",
+    "productPage": "/products/sgid/society/law-enforcement-facilities",
     "hub": {
       "title": "Fire Stations",
       "itemId": "3d55a3a011fe4028933754a81537d72f",
@@ -9105,7 +9105,7 @@
     "dataType": 1,
     "description": "Forest service station locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/blm-field-offices",
+    "productPage": "/products/sgid/society/blm-field-offices",
     "hub": {
       "title": "Forest Service Stations",
       "itemId": "ea7bd97ff90f40d0b0e0acb2e03271f3",
@@ -9129,7 +9129,7 @@
     "dataType": 1,
     "description": "Police and other law enforcement stations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/law-enforcement-facilities",
+    "productPage": "/products/sgid/society/law-enforcement-facilities",
     "hub": {
       "title": "Law Enforcement",
       "itemId": "5a99475d434941359462307ede77d980",
@@ -9153,7 +9153,7 @@
     "dataType": 3,
     "description": "State law enforcement jurisdiction boundaries.",
     "inActionUrl": "https://sbilocate.ugrc.utah.gov/",
-    "productPagePath": "/products/sgid/society/law-enforcement-facilities",
+    "productPage": "/products/sgid/society/law-enforcement-facilities",
     "hub": {
       "title": "Law Enforcement Boundaries",
       "itemId": "2e29c65cc23c48bd88b619a3ea218626",
@@ -9177,7 +9177,7 @@
     "dataType": 1,
     "description": "Liquor store locations AKA Rick's happy places",
     "inActionUrl": "https://abs.utah.gov/about-dabs/find-a-store/",
-    "productPagePath": "/products/sgid/society/liquor-stores",
+    "productPage": "/products/sgid/society/liquor-stores",
     "hub": {
       "title": "Liquor Stores",
       "itemId": "61b7f10c194b4ec69d02e169db1da09a",
@@ -9201,7 +9201,7 @@
     "dataType": 1,
     "description": "Point representation of places of interest in Utah that have been derived from OpenStreetMap (OSM)",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/open-source-places",
+    "productPage": "/products/sgid/society/open-source-places",
     "hub": {
       "title": "Open Source Places",
       "itemId": "45e25f4062264dc1baa3765e3dbb5d8e",
@@ -9225,7 +9225,7 @@
     "dataType": 1,
     "description": "Post office locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society",
+    "productPage": "/products/sgid/society",
     "hub": {
       "title": "Post Offices",
       "itemId": "c58ebc2a7c2643fca10e67dd55af71f1",
@@ -9249,7 +9249,7 @@
     "dataType": 3,
     "description": "PSAP 911 Communication Center boundaries",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/law-enforcement-facilities",
+    "productPage": "/products/sgid/society/law-enforcement-facilities",
     "hub": {
       "title": "PSAP Boundaries",
       "itemId": "34f4c65991ce4d4299d3957efa35bf41",
@@ -9273,7 +9273,7 @@
     "dataType": 1,
     "description": "PSAP locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/law-enforcement-facilities",
+    "productPage": "/products/sgid/society/law-enforcement-facilities",
     "hub": {
       "title": "PSAP Locations",
       "itemId": "6c102c8fc5af413187db0910053d5ed8",
@@ -9297,7 +9297,7 @@
     "dataType": 1,
     "description": "Public libraries, branches, and bookmobile locations of Utah. Additional information about libraries and the services provided by the Utah State Library Division can be found at library.utah.gov",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/higher-education",
+    "productPage": "/products/sgid/society/higher-education",
     "hub": {
       "title": "Public Libraries",
       "itemId": "f6cf0c8ef65344b6a6e5ebeaa108f549",
@@ -9321,7 +9321,7 @@
     "dataType": 1,
     "description": "Locations of public and private colleges and universities, technical colleges, and other higher education institutions.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/higher-education",
+    "productPage": "/products/sgid/society/higher-education",
     "hub": {
       "title": "Schools Higher Education",
       "itemId": "731644a217f445e5a638f9a84a7ada93",
@@ -9345,7 +9345,7 @@
     "dataType": 1,
     "description": "This dataset contains point locations for preschool and K-12 schools in the state of Utah - updated for the 2019-2020 school year. Higher education and adult vocational training are not included in the dataset. Provided by the Utah State Board of Education.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/higher-education",
+    "productPage": "/products/sgid/society/higher-education",
     "hub": {
       "title": "Schools Pre Kto 12",
       "itemId": "333206ff129346e3b8660e8f6f48540e",
@@ -9369,7 +9369,7 @@
     "dataType": 1,
     "description": "Cemetery location point data from Utah Division of State History. Search by cemetery name, city, county or by status (active, abandoned, inactive or unknown).",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "SHPO Cemeteries",
       "itemId": "",
@@ -9393,7 +9393,7 @@
     "dataType": 3,
     "description": "This data shows the areas of responsibility for the State Department of Public Communications Centers for dispatching State agencies, such as Highway Patrol, Wildlife Resources, Corrections, Park Ranges etc.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/law-enforcement-facilities",
+    "productPage": "/products/sgid/society/law-enforcement-facilities",
     "hub": {
       "title": "State Agency Dispatch",
       "itemId": "dc84c0dfd07648718114f683c933ea93",
@@ -9417,7 +9417,7 @@
     "dataType": 3,
     "description": "State court jurisdiction.",
     "inActionUrl": "https://sbilocate.ugrc.utah.gov/",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "State Court Districts",
       "itemId": "2938c95d71444c5cb527a2fda25629d9",
@@ -9441,7 +9441,7 @@
     "dataType": 1,
     "description": "State facilities",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society/state-facilities",
+    "productPage": "/products/sgid/society/state-facilities",
     "hub": {
       "title": "State Facilities",
       "itemId": "a2cc4865b1a94352922c1a83bda24ba5",
@@ -9465,7 +9465,7 @@
     "dataType": 1,
     "description": "State fuel sites.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "State Fuel Sites",
       "itemId": "8d9bc67285fb421fb15d55342148ac1e",
@@ -9489,7 +9489,7 @@
     "dataType": 1,
     "description": "UDOT’s map’s cities.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society",
+    "productPage": "/products/sgid/society",
     "hub": {
       "title": "UDOT Map City Locations",
       "itemId": "",
@@ -9513,7 +9513,7 @@
     "dataType": 1,
     "description": "UDOT’s map’s state parks locations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/society",
+    "productPage": "/products/sgid/society",
     "hub": {
       "title": "UDOT Map State Parks",
       "itemId": "",
@@ -9537,7 +9537,7 @@
     "dataType": 3,
     "description": "Areas in which 911 dispatch center dispatches Utah Highway Patrol, and other state agencies.",
     "inActionUrl": "https://sbilocate.ugrc.utah.gov/",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "UHP Dispatch",
       "itemId": "",
@@ -9561,7 +9561,7 @@
     "dataType": 3,
     "description": "Utah Highway Patrol (UHP) Field Sections.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "UHP Field Sections",
       "itemId": "fb491227fdc04f388ab78f1fc8ea6206",
@@ -9585,7 +9585,7 @@
     "dataType": 2,
     "description": "Average Annual Daily Traffic (AADT)  on road sections of the State\r\nHighways or Local Federal-Aid roads",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/search?q=aadt",
+    "productPage": "https://data-uplan.opendata.arcgis.com/search?q=aadt",
     "hub": {
       "title": "AADT",
       "itemId": "",
@@ -9609,7 +9609,7 @@
     "dataType": 1,
     "description": "Airport locations",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/airports",
+    "productPage": "/products/sgid/transportation/airports",
     "hub": {
       "title": "Airport Locations",
       "itemId": "ae01b2d088f64c0fb989c2592e7e4f89",
@@ -9633,7 +9633,7 @@
     "dataType": 1,
     "description": "UDOT has automatic traffic recorder (ATR) stations located throughout the state. These stations are placed on various\ntypes of highway systems",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/826cbe57fd584889b88f4969af587e26_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/826cbe57fd584889b88f4969af587e26_0",
     "hub": {
       "title": "ATR Locations",
       "itemId": "",
@@ -9657,7 +9657,7 @@
     "dataType": 2,
     "description": "This dataset contains barriers located along Utah state highways. Descriptive information includes barrier type, height, offset from roadway, post type, and end treatment\ntypes. Location information includes x,y and route & milepost.",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/ea5705c27e274f29b82015309363b0ab_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/ea5705c27e274f29b82015309363b0ab_0",
     "hub": {
       "title": "Barriers",
       "itemId": "",
@@ -9681,7 +9681,7 @@
     "dataType": 2,
     "description": "Bike Lane locations along state routes. This file indicates\r\nwhere a bike lane with paint striping is present only",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/9df4865bcb1a4f86b7a8afa43a34b3d0_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/9df4865bcb1a4f86b7a8afa43a34b3d0_0",
     "hub": {
       "title": "Bike Lanes",
       "itemId": "",
@@ -9705,7 +9705,7 @@
     "dataType": 1,
     "description": "Cattle guard inventory data comes from the Operations\r\nManagement System (OMS)",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/a3ef645a46584390846f0445a83959d4_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/a3ef645a46584390846f0445a83959d4_0",
     "hub": {
       "title": "Cattle Guard Inventory",
       "itemId": "",
@@ -9729,7 +9729,7 @@
     "dataType": 2,
     "description": "Utah Transit Authority's commuter rail line (FrontRunner) north and south segments.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/uta-routes",
+    "productPage": "/products/sgid/transportation/uta-routes",
     "hub": {
       "title": "Commuter Rail Routes UTA",
       "itemId": "17705e20cecf4cceab61eac6ea51343e",
@@ -9753,7 +9753,7 @@
     "dataType": 1,
     "description": "Locations of Utah Transit Authority's FrontRunner North and South commuter rail stations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/uta-routes",
+    "productPage": "/products/sgid/transportation/uta-routes",
     "hub": {
       "title": "Commuter Rail Stations UTA",
       "itemId": "6fd39acf47884e1dbe6c303e40f1367a",
@@ -9777,7 +9777,7 @@
     "dataType": 2,
     "description": "Project data from ePM (Electronic Project Management). This service contains point, line and polygon layers for UDOT's\nroadway projects stored in ePM. ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/a7ee5e6cc85742978d25449aae6c1941_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/a7ee5e6cc85742978d25449aae6c1941_0",
     "hub": {
       "title": "EPM Projects",
       "itemId": "",
@@ -9801,7 +9801,7 @@
     "dataType": 1,
     "description": "Facilities inventory from the Operations Management System (OMS). Facility types include: brake check areas, road-closed gates, material storage locations, offices, port of entries, rest areas, runaway truck lanes, view areas, and welcome centers.",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/3850b04f17c04935aedf03b47ad42aba_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/3850b04f17c04935aedf03b47ad42aba_0",
     "hub": {
       "title": "Facility Inventory",
       "itemId": "",
@@ -9825,7 +9825,7 @@
     "dataType": 1,
     "description": "Intersection dataset contains location information of any cross street location to a state route. At state route to state route intersections both routes are identified",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_5",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_5",
     "hub": {
       "title": "Intersections",
       "itemId": "",
@@ -9849,7 +9849,7 @@
     "dataType": 2,
     "description": "Dataset contains median locations along state routes. Descriptive information includes median type, width, traffic island presence and protection presence. Width value of 999 generally indicates large median greater than 300ft",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/e552d8405ade49e0b9a23297648af7f8_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/e552d8405ade49e0b9a23297648af7f8_0",
     "hub": {
       "title": "Islands",
       "itemId": "",
@@ -9873,7 +9873,7 @@
     "dataType": 2,
     "description": "This dataset contains lane counts for Utah state highways. Descriptive information includes lanes by type( Aux, Through, Decel, Accel, Turn, Passing) and count of each type lane. Information also includes location information including x,y and route & milepost.",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/bb7d7cd500ff4fa3bb56bd39c7f297f7_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/bb7d7cd500ff4fa3bb56bd39c7f297f7_0",
     "hub": {
       "title": "Lanes",
       "itemId": "",
@@ -9897,7 +9897,7 @@
     "dataType": 2,
     "description": "Location of UTA's light rail system.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/uta-routes",
+    "productPage": "/products/sgid/transportation/uta-routes",
     "hub": {
       "title": "Light Rail UTA",
       "itemId": "fd41770e917344e4adef8be71a0a6741",
@@ -9921,7 +9921,7 @@
     "dataType": 1,
     "description": "Locations of UTA's light rail stations.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/uta-routes",
+    "productPage": "/products/sgid/transportation/uta-routes",
     "hub": {
       "title": "Light Rail Stations UTA",
       "itemId": "bb8f7bc8871b4a7594bcc037631073e7",
@@ -9945,7 +9945,7 @@
     "dataType": 1,
     "description": "This dataset approximates the location of mileposts along state routes in Utah. It was created by deriving a location from a polylineM route feature class that was calibrated at route endpoints and at intermediate points. The goal for positional accuracy with this data set is 50 feet. ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/9bacb5f23e5c4fb6be91d40069aaad89_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/9bacb5f23e5c4fb6be91d40069aaad89_0",
     "hub": {
       "title": "LRS Mileposts",
       "itemId": "",
@@ -9969,7 +9969,7 @@
     "dataType": 2,
     "description": "Dataset contains median locations along state routes. Descriptive information includes median type, width, traffic island presence and protection presence. Width value of 999 generally indicates large median greater than 300ft. Location information is generally accurate to within 5ft ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/e552d8405ade49e0b9a23297648af7f8_1",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/e552d8405ade49e0b9a23297648af7f8_1",
     "hub": {
       "title": "Medians",
       "itemId": "",
@@ -9993,7 +9993,7 @@
     "dataType": 2,
     "description": "ESRI street network dataset optimized for multimodal transportation (bike, auto, transit, and pedestrian), used for network analysis such as drive times, routes, service areas, and travel sheds.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/street-network",
+    "productPage": "/products/sgid/transportation/street-network",
     "hub": {
       "title": "Multimodal Network Dataset",
       "itemId": "",
@@ -10017,7 +10017,7 @@
     "dataType": 2,
     "description": "Shoulder Inventory from the Operations Management System (OMS). Data quality and collection method are unknown.",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/35c7bd85f9c347dbbde1ee7374379413_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/35c7bd85f9c347dbbde1ee7374379413_0",
     "hub": {
       "title": "OMS Shoulders Inventory",
       "itemId": "",
@@ -10041,7 +10041,7 @@
     "dataType": 1,
     "description": "Pavement messages data consists of message location, content and type. ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_8",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_8",
     "hub": {
       "title": "Pavement Messages",
       "itemId": "",
@@ -10065,7 +10065,7 @@
     "dataType": 2,
     "description": "This dataset contains pavement striping located along Utah state highways. Descriptive information includes paint color, pattern, and linear feet. Location information includes x,y and route & milepost.",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/7777bfb8d4b346e38a3ad3612a33fadb_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/7777bfb8d4b346e38a3ad3612a33fadb_0",
     "hub": {
       "title": "Pavement Striping",
       "itemId": "",
@@ -10089,7 +10089,7 @@
     "dataType": 1,
     "description": "UDOT Port of Entry locations.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Ports Of Entry",
       "itemId": "73441947b3f342b880edcb3d8cdd7ea2",
@@ -10113,7 +10113,7 @@
     "dataType": 1,
     "description": "Power Pedestal data consists of location only. Location information includes x,y and mile post. Location information is generally accurate to within 5ft. ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_10",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_10",
     "hub": {
       "title": "Power Pedestals",
       "itemId": "",
@@ -10137,7 +10137,7 @@
     "dataType": 2,
     "description": "These layers provide access to ProjectWise data by Electronic Program Management (ePM) Project. ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/a7ee5e6cc85742978d25449aae6c1941_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/a7ee5e6cc85742978d25449aae6c1941_0",
     "hub": {
       "title": "Project Wise EPM",
       "itemId": "",
@@ -10161,7 +10161,7 @@
     "dataType": 2,
     "description": "Railroads data including transit rail",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/railroads",
+    "productPage": "/products/sgid/transportation/railroads",
     "hub": {
       "title": "Railroads",
       "itemId": "fe20e5c6bb4240919d0cd5ba4116d106",
@@ -10185,7 +10185,7 @@
     "dataType": 2,
     "description": "Utah street centerline data for address location, cartography, routing",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/road-centerlines",
+    "productPage": "/products/sgid/transportation/road-centerlines",
     "hub": {
       "title": "Roads",
       "itemId": "478fbef62481427f95a3510a4707b24a",
@@ -10209,7 +10209,7 @@
     "dataType": 2,
     "description": "Highway route lines edited to best enable non-redundant, dynamic label rendering of highway shields for freeways, US highways, and state highways.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/road-centerlines",
+    "productPage": "/products/sgid/transportation/road-centerlines",
     "hub": {
       "title": "Roads Shield Lines",
       "itemId": "",
@@ -10233,7 +10233,7 @@
     "dataType": 2,
     "description": "This dataset contains rumble strips located along Utah state highways. Descriptive information includes lane type, pavement type, and paint striping attributes (color, style, width). Location information includes x,y and route & milepost. ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/477cd5f12e344ab08b40dfa9dd63af4e_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/477cd5f12e344ab08b40dfa9dd63af4e_0",
     "hub": {
       "title": "Rumble Strips",
       "itemId": "",
@@ -10257,7 +10257,7 @@
     "dataType": 2,
     "description": "This dataset contains information about shoulder location and type. Descriptive information includes location; x&y, route and mile post, location (center,left,right). Also includes width  and edge type. The width has been rounded to the nearest whole foot for end use purposes. ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/35c7bd85f9c347dbbde1ee7374379413_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/35c7bd85f9c347dbbde1ee7374379413_0",
     "hub": {
       "title": "Shoulders",
       "itemId": "",
@@ -10281,7 +10281,7 @@
     "dataType": 1,
     "description": "This dataset contains signal cabinets located along Utah state highways. Location information includes x,y and route & milepost. Elevation in meters is included. ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_14",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_14",
     "hub": {
       "title": "Signal Cabinets",
       "itemId": "",
@@ -10305,7 +10305,7 @@
     "dataType": 1,
     "description": "This dataset contains signal poles located along Utah state highways. Descriptive information includes mast arm type, signal type count, and the associated intersection's unique ID. Also included is location information including x,y and route & milepost.",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_15",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_15",
     "hub": {
       "title": "Signal Poles",
       "itemId": "",
@@ -10329,7 +10329,7 @@
     "dataType": 1,
     "description": "This dataset contains sign assemblies located along Utah state highways. Descriptive information includes support type, offset, and sign count. Also included is location information including x,y and route & milepost.",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/ab35f1550eae45b0a93df9b19644347d_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/ab35f1550eae45b0a93df9b19644347d_0",
     "hub": {
       "title": "Sign Assemblies",
       "itemId": "",
@@ -10353,7 +10353,7 @@
     "dataType": 1,
     "description": "Sign face data includes the standard MUTCD or UDOT sign designation color and description, sign condition (good, fair, poor), and sign orientation (north, southwest, etc.). ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/2c718a780caf47279fbc23c3401af4d7_0",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/2c718a780caf47279fbc23c3401af4d7_0",
     "hub": {
       "title": "Sign Face",
       "itemId": "",
@@ -10377,7 +10377,7 @@
     "dataType": 2,
     "description": "The Safety Index offers a statewide comparison of UDOT roadways, taking into account the different traffic patterns and volumes experienced in urban and rural areas. The Safety Index is a combination of four, equally weighted safety analysis sub-scores. The Safety Index is reported on a 0 to 10 scale, with 10 representing the worst conditions",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation",
+    "productPage": "/products/sgid/transportation",
     "hub": {
       "title": "SMS Safety Index",
       "itemId": "",
@@ -10401,7 +10401,7 @@
     "dataType": 2,
     "description": "The Severe Crashes per Mile Score indicates which road segments have the highest number of total severe crashes per mile per year (2011-2013). Severe crashes are crashes  that result in a fatality or an incapacitating injury. Severe Crashes per Mile Scores are reported on a 0 to 5 scale with 5 representing the road segments with the most severe crashes per mile per year (weighted by roadway center line miles). ",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation",
+    "productPage": "/products/sgid/transportation",
     "hub": {
       "title": "SMS Severe Crashes Per Mile",
       "itemId": "",
@@ -10425,7 +10425,7 @@
     "dataType": 1,
     "description": "Point locations where a road crosses the Utah state boundary.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "State Boundary Snap Points",
       "itemId": "",
@@ -10449,7 +10449,7 @@
     "dataType": 2,
     "description": "The station location and station boundary ",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/757275c59eb34e23add5f4f3e7850eb6_1",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/757275c59eb34e23add5f4f3e7850eb6_1",
     "hub": {
       "title": "Station Information Boundary",
       "itemId": "",
@@ -10473,7 +10473,7 @@
     "dataType": 2,
     "description": "ESRI street network dataset used for network analysis such as drive times, routes, and service areas",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/street-network",
+    "productPage": "/products/sgid/transportation/street-network",
     "hub": {
       "title": "Street Network Dataset",
       "itemId": "",
@@ -10497,7 +10497,7 @@
     "dataType": 2,
     "description": "This map service contains pavement surface areas for 2012 and 2014. The data covers all state roads in Utah and is segmented into tenth-mile sections.",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/0557e5676c4142dd9eedda0b5b9d7fbf_1",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/0557e5676c4142dd9eedda0b5b9d7fbf_1",
     "hub": {
       "title": "Surface Area Miles",
       "itemId": "",
@@ -10521,7 +10521,7 @@
     "dataType": 2,
     "description": "Utah Scenic Byways on the UDOT County Maps, scale 1:126720",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "UDOT Map Scenic Byways",
       "itemId": "8dedb5b68a0d40c7ae827b915eff3d5e",
@@ -10545,7 +10545,7 @@
     "dataType": 2,
     "description": "GIS representation of the UDOT Advanced Linear Refernece System.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/road-centerlines",
+    "productPage": "/products/sgid/transportation/road-centerlines",
     "hub": {
       "title": "UDOT Routes ALRS",
       "itemId": "",
@@ -10569,7 +10569,7 @@
     "dataType": 1,
     "description": "The Mile Reference Posts dataset contains the location of milepost signs as they are located along the roads.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/road-centerlines",
+    "productPage": "/products/sgid/transportation/road-centerlines",
     "hub": {
       "title": "UDOT Mile Reference Posts",
       "itemId": "",
@@ -10593,7 +10593,7 @@
     "dataType": 2,
     "description": "Bus, Trax, and Frontrunner routes along the Wasatch Front",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/uta-routes",
+    "productPage": "/products/sgid/transportation/uta-routes",
     "hub": {
       "title": "UTA Routes And Ridership",
       "itemId": "",
@@ -10617,7 +10617,7 @@
     "dataType": 1,
     "description": "Bus, Trax, and Frontrunner stops / boarding locations along the Wasatch Front",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/transportation/uta-routes",
+    "productPage": "/products/sgid/transportation/uta-routes",
     "hub": {
       "title": "UTA Stops And Ridership",
       "itemId": "",
@@ -10641,7 +10641,7 @@
     "dataType": 2,
     "description": "Walls dataset is an inventory of walls visible from \"dashboard\" level of vehicle on state route inventory. Walls below structure for example would not be included this dataset, unless another state route was being spanned by structure. Descriptive information includes location, type, side of road and average height from ground. Location information includes x,y and milepost and is generally accurate to within 5ft",
     "inActionUrl": "",
-    "productPagePath": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_20",
+    "productPage": "https://data-uplan.opendata.arcgis.com/datasets/7bfbfdb5c9d04a30b9fca5adf6443495_20",
     "hub": {
       "title": "Walls",
       "itemId": "",
@@ -10665,7 +10665,7 @@
     "dataType": 1,
     "description": "Utah community anchor institution broadband capabilities",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/utilities/broadband-internet",
+    "productPage": "/products/sgid/utilities/broadband-internet",
     "hub": {
       "title": "Broadband CA Institutions",
       "itemId": "",
@@ -10689,7 +10689,7 @@
     "dataType": 3,
     "description": "Broadband service depicts broadband coverage over any transmission technology, including fixed and mobile services. Fixed service is typically used as a home internet connection over DSL, other copper, cable, and fiber technologies.",
     "inActionUrl": "https://broadband.utah.gov/map/",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Broadband Service",
       "itemId": "2b479a30791c445eb135e05acf77dbcc",
@@ -10713,7 +10713,7 @@
     "dataType": 2,
     "description": "Electrical generation and distribution facilities for portions of Utah Counties.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Electrical Lines",
       "itemId": "5b115a0aafa54f0392c901db333310b4",
@@ -10737,7 +10737,7 @@
     "dataType": 3,
     "description": "Electric Service provider areas throughout Utah. Data sources include the Utah Division of Public Utilities (UDPU) and Rocky Mountain Power.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Electrical Service",
       "itemId": "92916071272248d48dcd546dd2ec72ec",
@@ -10761,7 +10761,7 @@
     "dataType": 3,
     "description": "Approximate and potential natural gas service areas.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Natural Gas Service Approx",
       "itemId": "57330cbf7831463e853151a010ed7462",
@@ -10785,7 +10785,7 @@
     "dataType": 3,
     "description": "Retail culinary water suppliers service area boundaries for the State of Utah. These include public community, public non-community (transient), self-supplied industry (non-transient), and non-public water suppliers. ",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/utilities/retail-culinary-water",
+    "productPage": "/products/sgid/utilities/retail-culinary-water",
     "hub": {
       "title": "Retail Culinary Water Service Areas",
       "itemId": "",
@@ -10809,7 +10809,7 @@
     "dataType": 3,
     "description": "Service territories of rural telephone providers and local urban exchange carriers in Utah",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/utilities/telecom-boundaries",
+    "productPage": "/products/sgid/utilities/telecom-boundaries",
     "hub": {
       "title": "Telecom Boundaries",
       "itemId": "3dee591783a14252b8252fe27332eaef",
@@ -10833,7 +10833,7 @@
     "dataType": 2,
     "description": "Electrical generation and distribution facilities in Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/utilities",
+    "productPage": "/products/sgid/utilities",
     "hub": {
       "title": "Transmission Lines",
       "itemId": "54947e2cd86f41b6a46f043b8894ec8a",
@@ -10857,7 +10857,7 @@
     "dataType": 3,
     "description": "Adjudication Areas is a polygon feature class that represents General Water Rights Adjudications. The water rights adjudication process helps to bring order and certainty to the water rights record throughout the state by defining existing rights, quantifying unknown rights, and removing unused and abandoned rights from the record through judicial decree.",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-adjudication-books",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-adjudication-books",
     "hub": {
       "title": "Adjudication Areas",
       "itemId": "",
@@ -10881,7 +10881,7 @@
     "dataType": 2,
     "description": "In 2014 the Utah Legislature passed House Bill 370 directing the Division of Water Rights to create and maintain an inventory of all canals. Staff from the Division are currently digitizing and updating the canals feature class",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-canals",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-canals",
     "hub": {
       "title": "Canals",
       "itemId": "",
@@ -10905,7 +10905,7 @@
     "dataType": 2,
     "description": "Polygons and polylines showing plan view of the worst case inundation flood zones predicted from hypothetical catastrophic breaching of upstream high hazard dams.",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::damcrosssections",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::damcrosssections",
     "hub": {
       "title": "Dam Cross Sections",
       "itemId": "",
@@ -10929,7 +10929,7 @@
     "dataType": 3,
     "description": "Polygons and polylines showing plan view of the worst case inundation flood zones predicted from hypothetical catastrophic breaching of upstream high hazard dams.",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::daminundation",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::daminundation",
     "hub": {
       "title": "Dam Inundation",
       "itemId": "",
@@ -10953,7 +10953,7 @@
     "dataType": 3,
     "description": "Irrigated crop consumptive use zones for calculating drinking water source sizing.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "DDW Irrigated Crop Consumptive Use Zones",
       "itemId": "c5d8aef2d211443eb1e70c2ff0d87fc9",
@@ -10977,7 +10977,7 @@
     "dataType": 3,
     "description": "Duty represents a quantity of water, determined by the State Engineer, required to satisfy the irrigation water requirements in a given area; based on the irrigation requirements of alfalfa",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-duty-values",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-duty-values",
     "hub": {
       "title": "Duty",
       "itemId": "",
@@ -11001,7 +11001,7 @@
     "dataType": 3,
     "description": "The Digital Flood Insurance Rate Map (DFIRM) Database depicts flood risk information and supporting data used to develop the risk data.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/water/special-flood-hazard-areas",
+    "productPage": "/products/sgid/water/special-flood-hazard-areas",
     "hub": {
       "title": "Floodplains",
       "itemId": "",
@@ -11025,7 +11025,7 @@
     "dataType": 3,
     "description": "Flood Plain Management Services Study(FPMS) areas, 100-Year Flood for the Great Salt Lake.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "GSL Flooding",
       "itemId": "d8e7d2483a364d58a6d7eac4a250449e",
@@ -11049,7 +11049,7 @@
     "dataType": 3,
     "description": "Geographic extent of the Great Salt Lake shoreline varying water levels.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "GSL Shoreline",
       "itemId": "b4a3d065c7b94b968bb059044291507c",
@@ -11073,7 +11073,7 @@
     "dataType": 2,
     "description": "Flood Plain Management Services Study(FPMS) areas, 100-Year Flood for the Great Salt Lake.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "GSL Shoreline Flooding",
       "itemId": "275cc3a094d142bb979f23ff7b036843",
@@ -11097,7 +11097,7 @@
     "dataType": 3,
     "description": "The Great Salt Lake water level and shoreline from the 2016 LiDAR collection project.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/water/great-salt-lake",
+    "productPage": "/products/sgid/water/great-salt-lake",
     "hub": {
       "title": "GSL Water Level 2016",
       "itemId": "015723bdb92447f788471450c8fcab16",
@@ -11121,7 +11121,7 @@
     "dataType": 3,
     "description": "Geographic extent of the Lake Bonneville shoreline.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/water/historic-lake-bonneville",
+    "productPage": "/products/sgid/water/historic-lake-bonneville",
     "hub": {
       "title": "Historic Lake Bonneville",
       "itemId": "fb95503ddf904428af3f308eca0eff6e",
@@ -11145,7 +11145,7 @@
     "dataType": 3,
     "description": "Subset of the complete digital hydrologic unit boundary layer to the Subwatershed (12-digit) 6th level for the State of Utah.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "HUC",
       "itemId": "0edf7e04e21e478cb9a0df5ab6d361a7",
@@ -11169,7 +11169,7 @@
     "dataType": 1,
     "description": "Point feature class representing dam locations in the State of Utah from the Dam Safety Regulatory Database at the Utah Division of Water Rights. Many of the original positions were scaled as latitude/longitude values from 1:24000 USGS Quadrangle series maps. They were later converted to UTM locations. Locations for recent additions to the database are either scaled from USGS Quadrangle maps, collected from GPS observations or converted from Public Land Survey descriptions to UTM coordinates. Non-standard attributes are located at this URL: https://waterrights.utah.gov/gisinfo/wrdams.htm",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-dam-inventory",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-dam-inventory",
     "hub": {
       "title": "Inspected Dams",
       "itemId": "",
@@ -11193,7 +11193,7 @@
     "dataType": 3,
     "description": "This feature service is a multi-polygon representation of irrigation company service areas in the state of Utah and the Bear River basin.",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::irrigation-company-service-areas",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::irrigation-company-service-areas",
     "hub": {
       "title": "Irrigation Company Service Areas",
       "itemId": "",
@@ -11217,7 +11217,7 @@
     "dataType": 3,
     "description": "Lakes derived from the National Hydrologic Dataset (NHD).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/water/nhd-lakes",
+    "productPage": "/products/sgid/water/nhd-lakes",
     "hub": {
       "title": "Lakes NHD High Res",
       "itemId": "b505c3e3a8504da6b28e9900a9f602f8",
@@ -11241,7 +11241,7 @@
     "dataType": 1,
     "description": "Point events derived from the National Hydrologic Dataset (NHD).",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "NHD High Res Points All",
       "itemId": "9c0c7205d20b43228d3ee683b0158c9d",
@@ -11265,7 +11265,7 @@
     "dataType": 1,
     "description": "The Division of Water Rights maintains a Hosted Feature Layer of all the points of diversion in the state. The data is generated daily from basic information in their tabular database. For more information on this dataset visit https://waterrights.utah.gov/gisinfo/wrpod.htm.",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-points-of-diversion",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-points-of-diversion",
     "hub": {
       "title": "Points Of Diversion",
       "itemId": "",
@@ -11289,7 +11289,7 @@
     "dataType": 3,
     "description": "Riparian areas as defined by USFWS.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/water/wetlands-and-riparian",
+    "productPage": "/products/sgid/water/wetlands-and-riparian",
     "hub": {
       "title": "Riparian Areas",
       "itemId": "",
@@ -11313,7 +11313,7 @@
     "dataType": 3,
     "description": "This dataset attempts to represent the secondary water suppliers service area boundaries for the State of Utah. These are non-potable water suppliers for mostly lawn and garden use.",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::secondary-water-systems",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::secondary-water-systems",
     "hub": {
       "title": "Secondary Water Systems",
       "itemId": "",
@@ -11337,7 +11337,7 @@
     "dataType": 1,
     "description": "Springs derived from the National Hydrologic Dataset (NHD).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/water/nhd-lakes",
+    "productPage": "/products/sgid/water/nhd-lakes",
     "hub": {
       "title": "Springs NHD High Res",
       "itemId": "322595dd1da149679cb9875a7d4ab069",
@@ -11361,7 +11361,7 @@
     "dataType": 1,
     "description": "Water monitoring stations.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Stations",
       "itemId": "8a07fdbd2013420fa22eecc8fb2903ff",
@@ -11385,7 +11385,7 @@
     "dataType": 1,
     "description": "These are points showing stream alteration applications. The shapefile is generated daily from basic information in the tabular database",
     "inActionUrl": "",
-    "productPagePath": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-stream-alteration-points",
+    "productPage": "https://opendata.gis.utah.gov/datasets/utahDNR::utah-stream-alteration-points",
     "hub": {
       "title": "Stream Alteraltion Applications",
       "itemId": "",
@@ -11409,7 +11409,7 @@
     "dataType": 1,
     "description": "Stream gauges derived from the National Hydrologic Dataset (NHD).",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Stream Gauges NHD",
       "itemId": "d55c3530632a44e3abf2fab8edf016a6",
@@ -11433,7 +11433,7 @@
     "dataType": 2,
     "description": "Streams derived from the National Hydrologic Dataset (NHD).",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/water/nhd-lakes",
+    "productPage": "/products/sgid/water/nhd-lakes",
     "hub": {
       "title": "Streams NHD High Res",
       "itemId": "d9b5ac9220ff415994b193c9ce022f86",
@@ -11457,7 +11457,7 @@
     "dataType": 3,
     "description": "Major lakes of Utah with names and unique reach identifiers that could be related with the NHD.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Utah Major Lakes",
       "itemId": "dfc45e8cd51649109b0764d1fbd1595b",
@@ -11481,7 +11481,7 @@
     "dataType": 3,
     "description": "Major rivers wider than 10 feet in Utah with names and unique identifies that could be related to the NHD.",
     "inActionUrl": "",
-    "productPagePath": "",
+    "productPage": "",
     "hub": {
       "title": "Utah Major Rivers Poly",
       "itemId": "bad12f3faff640cc86879e5f72acc15c",
@@ -11505,7 +11505,7 @@
     "dataType": 3,
     "description": "Digital hydrologic unit boundary layer to the Subwatershed (12-digit) 6th level for the State of Utah.",
     "inActionUrl": "",
-    "productPagePath": "/products/sgid/water/watersheds",
+    "productPage": "/products/sgid/water/watersheds",
     "hub": {
       "title": "Watersheds Area",
       "itemId": "eedaf451685b4cbe875ecf692e1b54ff",
