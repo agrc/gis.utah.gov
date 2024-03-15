@@ -1,0 +1,142 @@
+---
+import Contacts from '@components/page/Contacts.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Wilderness Areas',
+  description: 'This data represents BLM and USFS wilderness areas of Utah.',
+  stewards: ['UGRC', 'BLM', 'NLCS'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [
+    '2020 - Emery County wilderness areas added',
+    '2009 - Washington County wilderness areas created',
+    '2006 - BLM wilderness created in the Cedar Mountains (Tooele County)',
+  ],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This data represents the combined BLM and USFS wilderness areas of Utah. Wilderness areas from the BLM National
+      Lands Conservation System (NLCS) were merged with U.S. Forest Service wilderness areas in the National Wilderness
+      Preservation System, preserving the polygon geometry and the name attributes only.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>The complete BLM and USFS data can be found at:</p>
+    <ul>
+      <li>
+        <ExternalLink href="https://www.blm.gov/services/geospatial/GISData/utah"
+          >BLM National Conservation Lands Wilderness Areas</ExternalLink
+        >
+      </li>
+      <li>
+        <ExternalLink href="https://data-usfs.hub.arcgis.com/datasets/national-wilderness-areas-feature-layer"
+          >U.S. Forest Service National Wilderness Preservation System</ExternalLink
+        >
+      </li>
+    </ul>
+
+    <Contacts contactKey="ugrc" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="BLM" href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-blm"
+        >Wilderness Proposal BLM</CardWithPopularLink
+      >
+      <CardWithPopularLink title="HR1500" href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-hr1500"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+      <CardWithPopularLink title="HR1745" href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-hr1745"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="NineCo1995"
+        href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-nineco-1995"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="RedRock"
+        href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-red-rock"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="UWA1995"
+        href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-uwa-1995"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="UWC1989"
+        href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-uwc-1989"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="UWC1995"
+        href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-uwc-1989"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="UWC2008"
+        href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-uwc-2008"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="WashingtonCo"
+        href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-washington-county"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="WestDesert1999"
+        href="https://opendata.gis.utah.gov/datasets/utah-wilderness-proposal-west-desert-1999"
+        >Wilderness Proposal</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
+        >Web Application</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
+        >SGID Category</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

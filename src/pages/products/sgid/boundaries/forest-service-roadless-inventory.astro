@@ -1,0 +1,99 @@
+---
+import Contacts from '@components/page/Contacts.astro';
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah USFS Roadless Inventory',
+  description: 'The USFS Roadless Inventory dataset contains all the National Forest Inventoried Roadless Areas.',
+  stewards: ['UGRC', 'USFS'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: ['Updates to this dataset are published by the USFS'],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>The USFS Roadless Inventory dataset contains all the National Forest Inventoried Roadless Areas.</p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The IRA data was originally submitted to GSTC (Geometronics Service and Technical Center) by all the national
+      forests through their Regional Office for the Forest Service's Roadless Area Conservation Initiative. The data was
+      consolidated at the GSTC and used the Draft Environment Impact Statement. Between the draft and final states of
+      the Environmental Impact Statement, the data was updated by the forests to reflect any corrections to Inventories
+      Roadless Areas that were based on their existing forest plan. The data was also supplemented to include Special
+      Designated Area information and to include Inventories Roadless Areas with Special Designated Areas. The data was
+      resubmitted to the GSTC on July 21, 2000 for consolidation and the completed coverage was used in the Roadless
+      Area Conservation Final Environmental Impact Statement. IRAs are based on completed forest plans, forest plans in
+      revision where the agency has established an inventory (this information should be available in Appendix C of most
+      forest plans) or other assessments that are completed and adopted by the agency. RARE II information was used in
+      cases where a forest does not have a more current roadless inventory that was established using RARE II
+      information.
+    </p>
+
+    <p>
+      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter coordinate precision). There are
+      no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute content to:
+      State of Utah, SGID. The dataset is maintained by the United States Forest Service.
+    </p>
+
+    <Contacts contactKey="ugrc" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="USFS"
+        href="https://www.fs.usda.gov/detail/roadless/2001roadlessrule/maps/statemaps/?cid=fsm8_037735"
+        >Inventoried Roadless Areas for Utah</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Roadless Overview" href="https://www.fs.usda.gov/roadmain/roadless"
+        >Roadless Area Conservation</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
+        >Web Application</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
+        >SGID Category</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
