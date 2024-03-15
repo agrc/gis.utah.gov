@@ -10,7 +10,7 @@ let client;
 
 console.log('\nbuilding sgid index. configuration: ', import.meta.env.MODE);
 
-if (import.meta.env.PROD) {
+if (import.meta.env.NETLIFY) {
   console.log('using ci credentials');
   client = auth.fromJSON(JSON.parse(import.meta.env.GOOGLE_PRIVATE_KEY));
   client.scopes = scopes;
