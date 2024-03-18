@@ -10,9 +10,14 @@ import Section from '@components/page/Section.astro';
 import { Image } from 'astro:assets';
 
 import agreementPhoto from '@images/solutions/agreement.svg';
+import arrowPhoto from '@images/solutions/arrow.svg';
+import decisionPhoto from '@images/solutions/decision.svg';
 import developmentPhoto from '@images/solutions/development.svg';
+import emergencyPhoto from '@images/solutions/emergency.svg';
 import gisUsersPhoto from '@images/solutions/gis-users.svg';
 import gpsPhoto from '@images/solutions/gps.svg';
+import notesPhoto from '@images/solutions/notes.svg';
+import routingPhoto from '@images/solutions/routing.svg';
 import studentPhoto from '@images/solutions/students.svg';
 
 import { stripeSections } from '@utils/page';
@@ -29,6 +34,11 @@ const page: IStandardPageMetadata = {
     },
     { title: 'For surveyors', actionUrl: '/solutions/for-surveyors' },
     { title: 'For students', actionUrl: '/solutions/for-students', actionText: 'Explore our resources' },
+    { title: 'Data management and access', actionUrl: '/solutions/spatial-data-management' },
+    { title: 'Emergency response', actionUrl: '/solutions/for-emergency-response' },
+    { title: 'GIS strategy', actionUrl: '/solutions/gis-strategy', actionText: 'Strategy for geospatial success' },
+    { title: 'Integrating GIS', actionUrl: '/solutions/gis-integration', actionText: 'Integrate with us' },
+    { title: 'High precision location', actionUrl: '/solutions/high-precision-location' },
   ]),
 };
 ---
@@ -107,5 +117,65 @@ const page: IStandardPageMetadata = {
       help you with class projects, personal exploration, and preparing for life after school. Have you made something
       cool? <ExternalLink href="https://twitter.com/MapUtah">Let us know about it</ExternalLink>, we'd love to hear!
     </p>
+  </Section>
+  <Section {...page.section[5]}>
+    <Image
+      slot="image"
+      src={notesPhoto}
+      alt="A person explaining charts on a white board to a person taking notes"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      Here at UGRC, we value good data and understand what it takes to achieve it. Whether you’re starting from scratch,
+      re-imagining your GIS portfolio, or already have a solid data inventory in place, we can provide you with
+      recommendations for and help you implement best practices, standards, and tools to apply to your unique situation
+      and get the most out of your data.
+    </p>
+  </Section>
+  <Section {...page.section[6]}>
+    <Image
+      slot="image"
+      src={emergencyPhoto}
+      alt="A fireman with some emergency prevention items in bubbles like a fire extinguisher etc"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>TODO: Greg Bunce</p>
+  </Section>
+  <Section {...page.section[7]}>
+    <Image
+      slot="image"
+      src={decisionPhoto}
+      alt="A person presented with 3 paths who is thinking about which route to take"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      Good data and strong analysis don’t just happen. It takes planning and resources to make your spatial goals a
+      reality. Over the years we’ve seen what works consistently to generate solid results. Have a look at our ideas and
+      start making a plan for geospatial success today.
+    </p>
+  </Section>
+  <Section {...page.section[8]}>
+    <Image
+      slot="image"
+      src={routingPhoto}
+      alt="A person with directions on a phone screen and a map in the background."
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      When GIS becomes part of your business processes at any point, it opens the door to a greater perspective and
+      understanding of your area of influence, and helps you answer questions with greater locational clarity, thereby
+      enabling you to deploy your resources more effectively and efficiently. For many years, and over a multitude of
+      subjects and situations, UGRC has been assisting state and local governments in Utah to integrate aspects of GIS
+      solutions that fit their needs.
+    </p>
+  </Section>
+  <Section {...page.section[9]}>
+    <Image
+      slot="image"
+      src={arrowPhoto}
+      alt="Two people holding an arrow pointed at the bullseye of a dartboard"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>TODO: Sean Fernandez</p>
   </Section>
 </Layout>
