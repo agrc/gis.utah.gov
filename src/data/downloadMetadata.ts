@@ -2685,11 +2685,14 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'uta stops and ridership': {
+    externalHubOrganization: 'rideuta',
     itemId: 'hosted by UTA',
     name: 'uta stops and ridership',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UTA_Stops_and_Most_Recent_Ridership',
+    openSgid: 'transportation.uta_stops_and_ridership',
     layerId: 0,
+    featureServiceHost: 'https://services.arcgis.com/5QAphMT1g51Tw2X4/ArcGIS/rest/services/',
+    oddHubName: 'uta-stops-and-most-recent-ridership-1'
   },
   'Utah UDOT Mile Reference Posts': {
     externalHubOrganization: 'uplan',
