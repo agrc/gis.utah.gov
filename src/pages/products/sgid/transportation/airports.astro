@@ -31,9 +31,11 @@ const page: IPageMetadata = {
     ...dataPages['Utah Airports'],
   },
 };
+
+const customName = 'Utah Airport Locations';
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout title={customName} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
@@ -49,31 +51,29 @@ const page: IPageMetadata = {
       Point information about airports and heliports across the state, including some specific facility information from
       the FAA. You can filter out heliports using the <code>lan_fa_ty</code> field.
     </p>
-
-    <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
-
-    <Section title="More resources" slot="more-resources" titlePosition="center">
-      <GridForMoreResources>
-        <CardWithPopularLink title="FAA" href="https://www.faa.gov/"
-          >Federal Aviation Administration homepage.</CardWithPopularLink
-        >
-        <CardWithPopularLink title="Visit Utah" href="https://www.visitutah.com/plan-your-trip/getting-to-utah/Airports"
-          >Salt Lake City International and Utah airports information.</CardWithPopularLink
-        >
-      </GridForMoreResources>
-    </Section>
-
-    <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
-      <GridForYouMightLike>
-        <CardWithSmallLink
-          title="Airport Runways"
-          href="/products/sgid/transportation/airport-runways"
-          style="secondary">Line work of runways and taxiways.</CardWithSmallLink
-        >
-        <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
-          >Authoritative statewide collection of road centerlines.</CardWithSmallLink
-        >
-      </GridForYouMightLike>
-    </Section>
   </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="FAA" href="https://www.faa.gov/"
+        >Federal Aviation Administration homepage.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Visit Utah" href="https://www.visitutah.com/plan-your-trip/getting-to-utah/Airports"
+        >Salt Lake City International and Utah airports information.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Airport Runways" href="/products/sgid/transportation/airport-runways" style="secondary"
+        >Line work of runways and taxiways.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
+        >Authoritative statewide collection of road centerlines.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
 </Layout>
