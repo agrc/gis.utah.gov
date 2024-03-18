@@ -1,0 +1,102 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'uta stops and ridership',
+  description: `Utah Transit Authority (UTA) stops for bus, light rail (TRAX), and commuter rail (Frontrunner).`,
+  stewards: ['Utah Transit Authority (UTA)', 'UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.TRANSPORTATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`November 2023`],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      All stops for bus, light rail (TRAX), streetcar, and commuter rail (Frontrunner). Attributes include: stop name,
+      city, zip code, county, routes served, stop number, stop abbreviation, mode (bus or rail), average weekday
+      boarding and alightings, and the latitude and longitude of the stop.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      Stops are updated 3 times a year (typically April, August, and December), weekday ridership values (AvgBoard,
+      AVGAlight) are updated monthly after the 10th of the following month.
+    </p>
+
+    <h4>Values in Stop Abbreviation (StopAbbr_J) describe the type of stop:</h4>
+    <dl>
+      <DefinitionListItem title="All numeric values">A regular bus stop.</DefinitionListItem>
+      <DefinitionListItem title="Beginning with BB">A bus bay.</DefinitionListItem>
+      <DefinitionListItem title="Beginning with FR">A FrontRunner station.</DefinitionListItem>
+      <DefinitionListItem title="Beginning with S">Ski resort access stop.</DefinitionListItem>
+      <DefinitionListItem title="Beginning with TX">A TRAX station.</DefinitionListItem>
+    </dl>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UTA" href="https://www.rideuta.com/">Utah Transit Authority.</CardWithPopularLink>
+      <CardWithPopularLink title="UDOT" href="https://www.udot.utah.gov/connect/public/public-transit/"
+        >Public transit.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UTA Routes" href="/products/sgid/transportation/uta-routes" style="secondary"
+        >All bus, TRAX, and Frontrunner routes.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="TRAX Routes"
+        href="/products/sgid/transportation/uta-light-rail-routes"
+        style="secondary">UTA light rail routes.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="TRAX Stops"
+        href="/products/sgid/transportation/uta-light-rail-stations"
+        style="secondary">UTA light rail stations.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Frontrunner Route"
+        href="/products/sgid/transportation/uta-commuter-rail-routes"
+        style="secondary">UTA commuter rail route.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
