@@ -1,6 +1,4 @@
 ---
-import Contacts from '@components/page/Contacts.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import Layout from '@layouts/DataPage.astro';
 
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
@@ -12,6 +10,8 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -20,7 +20,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah Wilderness Areas',
-  description: 'This data represents BLM and USFS wilderness areas of Utah.',
+  description: 'BLM and USFS wilderness areas of Utah.',
   stewards: ['UGRC', 'BLM', 'NLCS'],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,

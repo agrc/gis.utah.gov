@@ -1,16 +1,18 @@
 ---
-import Disclaimer from '@components/data/Disclaimer.astro';
-import Contacts from '@components/page/Contacts.astro';
 import Layout from '@layouts/DataPage.astro';
 
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
 import { ProductType, SgidCategory } from '@models/products/sgid/types';
 
+import Disclaimer from '@components/data/Disclaimer.astro';
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
+import Contacts from '@components/page/Contacts.astro';
 
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
@@ -18,8 +20,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah Wilderness BLM Suitability',
-  description:
-    'This data layer identifies which WSAs or portions of WSAs were recommended to Congress as suitable for wilderness designation.',
+  description: 'The WSAs or portions of WSAs that were recommended to Congress as suitable for wilderness designation.',
   stewards: ['UGRC', 'BLM', 'USFS'],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
@@ -71,13 +72,31 @@ const page: IPageMetadata = {
     </p>
   </Disclaimer>
 
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Conducting Wilderness Characteristics Inventory"
+        href="https://www.blm.gov/sites/blm.gov/files/docs/2021-01/BLM-Policy-Manual-6310.pdf"
+        >This revised policy contains the Bureau of Land Management’s (BLM) updated guidance and general procedures for
+        conducting wilderness characteristics.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="BLM State Wilderness Study Documents"
+        href="https://www.blm.gov/learn/blm-library/agency-publications/select-state-publications/state-wilderness-documents"
+        >BLM reporting documents summaries.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
         >Web Application</CardWithSmallLink
       >
-      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
-        >SGID Category</CardWithSmallLink
+      <CardWithSmallLink
+        title="Wilderness and Wilderness Study Areas"
+        href="https://www.blm.gov/programs/national-conservation-lands/wilderness"
+        >Wilderness Study Areas</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

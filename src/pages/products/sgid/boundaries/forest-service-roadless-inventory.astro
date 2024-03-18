@@ -1,5 +1,4 @@
 ---
-import Contacts from '@components/page/Contacts.astro';
 import Layout from '@layouts/DataPage.astro';
 
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
@@ -11,6 +10,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -19,7 +19,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah USFS Roadless Inventory',
-  description: 'The USFS Roadless Inventory dataset contains all the National Forest Inventoried Roadless Areas.',
+  description: 'All the National Forest Inventoried Roadless Area (IRA) polygons.',
   stewards: ['UGRC', 'USFS'],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
@@ -39,7 +39,7 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>The USFS Roadless Inventory dataset contains all the National Forest Inventoried Roadless Areas.</p>
+    <p>The USFS Roadless Inventory (IRA) dataset contains all the National Forest Inventoried Roadless Areas.</p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -48,7 +48,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      The IRA data was originally submitted to GSTC (Geometronics Service and Technical Center) by all the national
+      The IRA data was originally submitted to Geometronics Service and Technical Center (GSTC) by all the national
       forests through their Regional Office for the Forest Service's Roadless Area Conservation Initiative. The data was
       consolidated at the GSTC and used the Draft Environment Impact Statement. Between the draft and final states of
       the Environmental Impact Statement, the data was updated by the forests to reflect any corrections to Inventories
@@ -78,10 +78,10 @@ const page: IPageMetadata = {
       <CardWithPopularLink
         title="USFS"
         href="https://www.fs.usda.gov/detail/roadless/2001roadlessrule/maps/statemaps/?cid=fsm8_037735"
-        >Inventoried Roadless Areas for Utah</CardWithPopularLink
+        >Inventoried Roadless Areas for Utah.</CardWithPopularLink
       >
       <CardWithPopularLink title="Roadless Overview" href="https://www.fs.usda.gov/roadmain/roadless"
-        >Roadless Area Conservation</CardWithPopularLink
+        >Roadless Area Conservation.</CardWithPopularLink
       >
     </GridForMoreResources>
   </Section>
@@ -89,10 +89,10 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
-        >Web Application</CardWithSmallLink
+        >Web Application.</CardWithSmallLink
       >
       <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
-        >SGID Category</CardWithSmallLink
+        >SGID Category.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
