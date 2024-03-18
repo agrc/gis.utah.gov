@@ -1,0 +1,116 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Metadata from '@components/data/Metadata.astro';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import BulletedList from '@components/page/BulletedList.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+export const metadata: IMetadata = {
+  title: 'Utah Street Network Dataset',
+  description: `An ESRI network dataset used to model transportation networks.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYLINE,
+  category: SgidCategory.TRANSPORTATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`Monthly`],
+  links: [
+    {
+      title: 'Network dataset as a file geodatabase',
+      url: 'https://drive.google.com/a/utah.gov/uc?id=1NmMCS8HjxFPF-K6XjaV0FznhS0ejwqRc&export=download',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The Utah Street Network Dataset is derived from the <a href="/products/sgid/transportation/road-centerlines"
+        >Utah Roads</a
+      > dataset and is designed to be used for network analysis, including drive times, routes, service areas. This dataset
+      is updated monthly in conjunction with the <a href="/products/sgid/transportation/road-centerlines">Utah Roads</a>
+      update schedule
+    </p>
+  </Fragment>
+
+  <Section title="Download the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="ESRI Street Network Dataset" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      While data used to support network analysis has many potential parameters, at a basic level, two components are
+      especially important: 1) connectivity and 2) impedance (i.e. travel speed/costs).
+    </p>
+    <p>
+      Connectivity of centerline features in the <a href="/products/sgid/transportation/road-centerlines">Utah Roads</a>
+      dataset is actively maintained but an impedance measure has not been actively enforced to date. However, it is possible
+      to use a combination of cartographic feature codes (CARTOCODE field), spatial queries, and the existing values in the
+      SPEED_LMT field to create a relatively crude but effective representation of speed limits that, then, can be used as
+      an input to an impedance measure.
+    </p>
+
+    <p>
+      In areas where surface streets are likely to encounter traffic controls at intersections and other congestion,
+      travel time has been increased by a factor of one and a half (1.5). Otherwise the approximate speed limit was used
+      to estimate travel time.
+    </p>
+    <h3>Fields worth noting</h3>
+    <dl>
+      <DefinitionListItem title="F_T_IMP_MIN">
+        <BulletedList>
+          <li>Impedance, estimated in minutes in direction of line's orientation</li>
+        </BulletedList>
+      </DefinitionListItem>
+      <DefinitionListItem title="T_F_IMP_MIN">
+        <BulletedList>
+          <li>Impedance, estimated in minutes in the opposite direction of line's orientation</li>
+        </BulletedList>
+      </DefinitionListItem>
+    </dl>
+    <p>
+      Please reach out to <Contacts contactKey="roads" subject="Utah Street Network Dataset inquiry" inline />
+      with questions about this dataset.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Network Dataset concepts"
+        href="https://pro.arcgis.com/en/pro-app/3.1/help/analysis/networks/network-elements.htm"
+        >Read about network elements including Edges and Junctions.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Multimodal Network dataset" href="/products/sgid/transportation/multimodal-network"
+        >A network dataset that includes auto, bike, pedestrian, and transit along the Wasatch Front.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Utah Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
+        >Utah Roads dataset.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data-uplan.opendata.arcgis.com/"
+        >Search UDOT's geospatial data.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
