@@ -504,15 +504,15 @@ export const dataPages: DownloadMetadata = {
   'Utah PLSS Sections GCDB': {
     itemId: '471c7281c52849b2860d36135e751c83',
     name: 'Utah PLSS Sections GCDB',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'PLSSSections_GCDB',
+    openSgid: 'cadastre.plss_sections_gcdb',
     layerId: 0,
   },
   'Utah PLSS Townships GCDB': {
     itemId: '5f801b03df2644dd99dcbaa5840bf12d',
     name: 'Utah PLSS Townships GCDB',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'PLSSTownships_GCDB',
+    openSgid: 'cadastre.utah-plss-townships-gcdb',
     layerId: 0,
   },
   'Utah TURN GPS BaseLines': {
