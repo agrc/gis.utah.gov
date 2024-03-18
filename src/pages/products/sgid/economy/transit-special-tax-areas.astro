@@ -1,5 +1,4 @@
 ---
-import Contacts from '@components/page/Contacts.astro';
 import Layout from '@layouts/DataPage.astro';
 
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
@@ -11,6 +10,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -20,7 +20,7 @@ import { dataPages } from '@data/downloadMetadata';
 export const metadata: IMetadata = {
   title: 'Utah Transit Special Tax Areas',
   description:
-    'This dataset contains areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses).',
+    'Areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses).',
   stewards: ['UGRC', 'USTC'],
   type: ProductType.POLYGON,
   category: SgidCategory.ECONOMY,
@@ -43,7 +43,6 @@ const page: IPageMetadata = {
       This dataset contains areas outside of incorporated municipalities where additional sales tax is collected to
       support transit activities (generally buses).
     </p>
-    <p>Currently only in Cache, Summit, Tooele and Utah Counties.</p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -51,6 +50,7 @@ const page: IPageMetadata = {
   </Section>
 
   <Fragment slot="description">
+    <p>Data is currently only available in Cache, Summit, Tooele and Utah Counties.</p>
     <Contacts contactKey="tax" />
   </Fragment>
 
@@ -59,6 +59,9 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="USTC" href="https://tax.utah.gov/">Utah State Tax Commission</CardWithPopularLink>
+      <CardWithPopularLink title="All Utah taxes and fees" href="https://tax.utah.gov/utah-taxes"
+        >Descriptions of All Utah Taxes and Fees.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
