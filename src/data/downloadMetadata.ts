@@ -861,8 +861,8 @@ export const dataPages: DownloadMetadata = {
   'Utah UREZ Phase 1 Solar Zones': {
     itemId: 'd1bf59d975014f63ab4fd469324d5475',
     name: 'Utah UREZ Phase 1 Solar Zones',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UREZPhase1_SolarZones',
+    openSgid: 'energy.urez_phase_1_solar_zones',
     layerId: 0,
   },
   'Utah UREZ Phase 1 Transmission': {
@@ -882,8 +882,8 @@ export const dataPages: DownloadMetadata = {
   'Utah UREZ Phase 1 Wind Zones': {
     itemId: '0330e2f84e614783adc560a91926e0a8',
     name: 'Utah UREZ Phase 1 Wind Zones',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UREZPhase1_WindZones',
+    openSgid: 'energy.urez_phase_1_wind_zones',
     layerId: 0,
   },
   'Utah UREZ Phase 2 Conceptual Transmission': {
@@ -896,8 +896,8 @@ export const dataPages: DownloadMetadata = {
   'Utah UREZ Phase 2 Geothermal': {
     itemId: '302bb67128104bf6a8c38f85fd36bd42',
     name: 'Utah UREZ Phase 2 Geothermal',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UREZPhase2_Geothermal',
+    openSgid: 'energy.urez_phase_2_geothermal',
     layerId: 0,
   },
   'Utah UREZ Phase 2 Zone Boundaries': {
