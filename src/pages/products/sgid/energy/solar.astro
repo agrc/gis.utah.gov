@@ -1,0 +1,84 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import Disclaimer from '@components/data/Disclaimer.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Renewable Solar Resources',
+  description: `Renewable solar resources.`,
+  stewards: ['UGRC', 'Utah Renewable Energy Zone (UREZ) Task Force'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.ENERGY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`Unknown`],
+  hub: {
+    ...dataPages['Utah UREZ Phase 1 Solar Zones'],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset depicts renewable solar resources identified by the Utah Renewable Energy Zone (UREZ) task force.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Disclaimer slot="disclaimer">
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+  </Disclaimer>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UREZ Phase II Final Report" href="https://geology.utah.gov/docs/emp/UREZphase2.pdf"
+        >Utah Renewable Energy Zone (UREZ) Task Force, Phase II - Zone Identification and Scenario Analysis final
+        report.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="UREZ Phase 1 Transmission Lines"
+        href="https://geology.utah.gov/resources/energy/geothermal/"
+        >UREZ Phase 1 Transmission Lines on UGRC's SGID on ArcGIS.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="UREZ Phase 2 Conceptual Transmission Lines"
+        href="https://opendata.gis.utah.gov/datasets/utah-urez-phase-1-geothermal-zones"
+        >UREZ Phase 2 Conceptual Transmission Lines on UGRC's SGID on ArcGIS.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+    <CardWithPopularLink
+      title="UREZ Phase 2 Zone Boundaries"
+      href="https://opendata.gis.utah.gov/datasets/utah-urez-phase-2-zone-boundaries"
+      >UREZ Phase 2 Zone Boundaries on UGRC's SGID on ArcGIS.</CardWithPopularLink
+    >
+  </Section>
+</Layout>
+
+<Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+  <GridForYouMightLike>
+    <CardWithSmallLink title="Energy" href="/products/sgid/energy">Energy page</CardWithSmallLink>
+    <CardWithSmallLink title="Utilities" href="/products/sgid/utilities">Utilities page</CardWithSmallLink>
+  </GridForYouMightLike>
+</Section>
