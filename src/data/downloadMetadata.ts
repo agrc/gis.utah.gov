@@ -2741,8 +2741,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Great Salt Lake Water Level 2016': {
     itemId: '015723bdb92447f788471450c8fcab16',
     name: 'Utah Great Salt Lake Water Level 2016',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'GSLWaterLevel2016',
+    openSgid: 'water.great_salt_lake_water_level_2016',
     layerId: 0,
   },
 };

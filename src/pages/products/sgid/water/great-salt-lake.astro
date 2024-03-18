@@ -1,0 +1,130 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Great Salt Lake Water Level 2016',
+  description: `2016 water level and various resources related to the Great Salt Lake.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.WATER,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`Created 2022`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  title={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{ skipInDepth: true }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Utah Great Salt Lake Water Level 2016 was derived from the <code>breakline features</code> associated with the <a
+        href="/products/sgid/elevation/lidar#2016-great-salt-lake--utah-lake">2016 Great Salt Lake Lidar project</a
+      >. To create this dataset the <code>Lake Pond</code> features were extracted from the <ExternalLink
+        href="https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2016/GSL_shps.zip"
+        >GreatSaltLake_Breaklines shapefile</ExternalLink
+      > and converted into polygons. All polygons outside of the main north and south arms of the lake were removed. The
+      <code>Elevation_m (elev_m)</code> & <code>Elevation_ft (elev_ft)</code> values represent the elevation of the water
+      when the 2016 Lidar was acquired.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah Great Salt Lake" href="https://greatsaltlake.utah.gov/"
+        >Utah DNR & DEQ GSL website</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Great Salt Lake Data Collection "
+        href="https://www.hydroshare.org/resource/b6c4fcad40c64c4cb4dd7d4a25d0db6e/"
+        >David Tarboton, Utah State University</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Great Salt Lake Water Levels Viewer"
+        href="https://wildlife.utah.gov/gslep/about/water-levels.html">Utah DNR Wildlife Resources</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Great Salt Lake Bathymetry"
+        href="https://www.hydroshare.org/resource/582060f00f6b443bb26e896426d9f62a/"
+        >David Tarboton, Utah State University</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Great Salt Lake Lakebed Contours"
+        href="https://utahdnr.hub.arcgis.com/datasets/utahDNR::great-salt-lake-lakebed-contours"
+        >Utah DNR Online Maps</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Great Salt Lake Basin Digital Elevation Model"
+        href="https://www.hydroshare.org/resource/e660640a7b084794aa2d70dc77cfa67b/"
+        >David Tarboton, Utah State University</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Great Salt Lake & Lake Bonneville"
+        href="https://geology.utah.gov/popular/general-geology/great-salt-lake/"
+        >Utah Geological Survey</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Great Salt Lake Shoreline"
+        href="https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-shoreline"
+        >UGRC OpenData</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Great Salt Lake Flooding"
+        href="https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-flooding"
+        >UGRC OpenData</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Great Salt Lake Shoreline Flooding"
+        href="https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-shoreline-flooding"
+        >UGRC OpenData</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="Historic Lake Bonneville"
+        href="/products/sgid/water/historic-lake-bonneville"
+        style="secondary">Historic Lake Bonneville page</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Watersheds" href="/products/sgid/water/watersheds" style="secondary"
+        >Watersheds page</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Geoscience" href="/products/sgid/geoscience" style="secondary"
+        >Geoscience page</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Water" href="/products/sgid/water" style="secondary">Water page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
