@@ -62,33 +62,33 @@ const page: IStandardPageMetadata = {
         </tbody>
       </thead>
     </table>
-    <Section {...page.section[2]}>
-      <table class="mx-auto">
-        <thead>
-          <tr class="border-b border-black/50 pb-2 text-left dark:border-white/50">
-            <th class="py-3">Base map</th>
-            <th class="py-3">Last Updated</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b border-black/20 dark:border-white/20">
-            <td class="py-3 pr-3"
-              ><ExternalLink href="http://utah.maps.arcgis.com/home/item.html?id=1fa20fd1c2e44716bbec267c4e592e5c"
-                >Utah PLSS</ExternalLink
-              ></td
-            >
-            <td class="py-3 text-right">{dates.UtahPLSS}</td>
-          </tr>
-          <tr class="border-b border-black/20 dark:border-white/20">
-            <td class="py-3 pr-3"
-              ><ExternalLink href="http://utah.maps.arcgis.com/home/item.html?id=71d0a7ba7c6745fc88de84e7d9e5f066"
-                >Utah Statewide Parcels</ExternalLink
-              ></td
-            >
-            <td class="py-3 text-right">{dates.StatewideParcels}</td>
-          </tr>
-        </tbody>
-      </table>
-    </Section>
+  </Section>
+  <Section {...page.section[2]}>
+    <table class="mx-auto">
+      <thead>
+        <tr class="border-b border-black/50 pb-2 text-left dark:border-white/50">
+          <th class="py-3">Base map</th>
+          <th class="py-3">Last Updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <td class="py-3 pr-3"
+            ><ExternalLink href="http://utah.maps.arcgis.com/home/item.html?id=1fa20fd1c2e44716bbec267c4e592e5c"
+              >Utah PLSS</ExternalLink
+            ></td
+          >
+          <td class="py-3 text-right">{dates.UtahPLSS}</td>
+        </tr>
+        <tr class="border-b border-black/20 dark:border-white/20">
+          <td class="py-3 pr-3"
+            ><ExternalLink href="http://utah.maps.arcgis.com/home/item.html?id=71d0a7ba7c6745fc88de84e7d9e5f066"
+              >Utah Statewide Parcels</ExternalLink
+            ></td
+          >
+          <td class="py-3 text-right">{dates.StatewideParcels}</td>
+        </tr>
+      </tbody>
+    </table>
   </Section>
 </Layout>
