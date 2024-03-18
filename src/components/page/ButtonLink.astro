@@ -4,12 +4,12 @@ import RightArrow from './RightArrow.astro';
 interface Props {
   href: string;
   decorate?: 'arrow';
-  status?: 'idle' | 'loading' | 'success' | 'error' | 'disabled';
-  style?: 'outline' | 'solid';
+  // status?: 'idle' | 'loading' | 'success' | 'error' | 'disabled';
+  // style?: 'outline' | 'solid';
   color?: 'primary' | 'secondary' | 'accent';
 }
 
-const { href, decorate, status = 'idle', color = 'primary', style = 'solid' } = Astro.props;
+const { href, decorate, color = 'primary' } = Astro.props;
 const list = [
   'custom-style',
   'relative',

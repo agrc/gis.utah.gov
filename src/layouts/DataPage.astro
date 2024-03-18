@@ -7,7 +7,7 @@ import BreadCrumbs from '@components/data/BreadCrumbs.astro';
 import Section from '@components/page/Section.astro';
 
 interface Props {
-  title: string;
+  pageTitle: string;
   subTitle?: string;
   category: SgidCategory;
   actionUrl?: string;
@@ -17,14 +17,14 @@ interface Props {
   };
 }
 
-const { title = 'UGRC', subTitle, category, actionUrl, config } = Astro.props;
+const { pageTitle = 'UGRC', subTitle, category, actionUrl, config } = Astro.props;
 ---
 
-<Layout title={`SGID ${category.replaceAll('-', ' ').toLowerCase()}`}>
-  <BreadCrumbs category={category} product={title} />
+<Layout bannerHeading={`SGID ${category.replaceAll('-', ' ').toLowerCase()}`} pageTitle={pageTitle}>
+  <BreadCrumbs category={category} product={pageTitle} />
 
   <Section
-    title={title}
+    title={pageTitle}
     subTitle={`Last update · ${subTitle}`}
     stripe
     actionText="See the data in action"

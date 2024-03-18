@@ -1,9 +1,12 @@
 import { CheckBadgeIcon, LockClosedIcon } from '@heroicons/react/24/outline';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import * as Collapsible from '@radix-ui/react-collapsible';
-import PropTypes from 'prop-types';
 
-export const Header = ({ className, children }) => {
+interface HeaderProps {
+  className?: string;
+  children: React.ReactNode;
+}
+export const Header = ({ className, children }: HeaderProps) => {
   return (
     <Collapsible.Root>
       <header className={className}>
@@ -95,9 +98,4 @@ const Flyout = () => {
       </Collapsible.Trigger>
     </div>
   );
-};
-
-Header.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
 };

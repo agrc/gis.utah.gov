@@ -10,7 +10,7 @@ const categories = await getBlogFilters('categories');
 const pages = await Astro.glob(['./**/*.astro', '!./_partials/**/*']);
 ---
 
-<FullWidth title="Site Statistics">
+<FullWidth pageTitle="Site Statistics">
   <div class="p-8 dark:text-zinc-200">
     <p>Number of Astro pages: {pages.length}</p>
     <p>Number of blog posts: {posts.length}</p>

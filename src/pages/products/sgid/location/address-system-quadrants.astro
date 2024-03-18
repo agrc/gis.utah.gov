@@ -48,7 +48,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -73,7 +73,7 @@ const page: IPageMetadata = {
     <p>
       James Wingate, formerly of Blue Stakes, compiled most of the address coordinate system descriptions listed below.
       UGRC will update this list as more information is brought to our attention. If you have additional information or
-      corrections to contribute, please contribute % include contact.html subject=page.title
+      corrections to contribute, please contribute % include contact.html subject=page.pageTitle
       contact=site.data.contacts.address_grids text='or email' %
     </p>
     <p>

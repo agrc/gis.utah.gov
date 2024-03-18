@@ -9,20 +9,21 @@ import Footer from '@components/Footer.astro';
 import Search from '@components/Search.astro';
 import SocialMedia from '@components/SocialMedia.astro';
 
-import { Header } from '@components/react/Header';
+import { Header } from '@components/react/Header.tsx';
 
 import { Menu, SmallMenu } from '@components/react/Menu.jsx';
 
 import '../styles/tailwind.css';
 
 const { pathname } = Astro.url;
-const { title = 'UGRC', pillar } = Astro.props as IStandardPageMetadata;
+export interface Props extends Omit<IStandardPageMetadata, 'section'> {}
+const { pageTitle = 'UGRC', pillar, bannerHeading } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={`${pageTitle} | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
   </head>
   <body class="bg-white dark:bg-primary/90">
     <Header client:load>
@@ -85,7 +86,7 @@ const { title = 'UGRC', pillar } = Astro.props as IStandardPageMetadata;
     <SmallMenu client:visible currentUri={pathname}>
       <Search suffix="small" />
     </SmallMenu>
-    <Banner title={title} pillar={pillar} />
+    <Banner title={bannerHeading || pageTitle} pillar={pillar} />
     <slot />
     <footer>
       <SocialMedia />

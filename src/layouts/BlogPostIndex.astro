@@ -4,17 +4,17 @@ import GridForBlogs from '../components/page/GridForBlogs.astro';
 
 interface Props {
   category: string;
-  title: string;
+  pageTitle: string;
 }
 
-const { category, title } = Astro.props;
+const { category, pageTitle } = Astro.props;
 const hasPagination = await Astro.slots.render('pagination');
 const hasCategories = await Astro.slots.render('categories');
 ---
 
-<Layout title="From the blog">
+<Layout bannerHeading="From the blog" pageTitle={pageTitle}>
   <div class="mt-3 text-center dark:text-white">
-    <h3>{title}</h3>
+    <h3>{pageTitle}</h3>
   </div>
 
   <div class="text-center">
