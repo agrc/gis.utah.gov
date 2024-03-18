@@ -1,0 +1,85 @@
+---
+import Contacts from '@components/page/Contacts.astro';
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Tax Areas 2022',
+  description:
+    'This dataset represents Taxing Districts/Areas in the State of Utah as maintained by the Utah State Tax Commission.',
+  stewards: ['UGRC', 'USTC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.ECONOMY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: ['June 2023', 'March 2022', 'January 2021'],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset represents Taxing Districts/Areas in the State of Utah as maintained by the Utah State Tax Commission
+      (USTC). Each taxing district polygon represents a unique combination of overlapping taxing entities. The property
+      tax within a taxing district should be the same for all residential properties. This dataset is derived from a
+      spatial analysis process utilizing the USTC Tax Entities dataset. This data is for 2022. Updates are only done at
+      the beginning of each calendar year for the previous year.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <Contacts contactKey="tax" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="USTC" href="https://tax.utah.gov/">Utah State Tax Commission</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Sales Tax Areas" href="/products/sgid/economy/sales-tax-areas" style="secondary"
+        >Sales tax collection areas.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Transit Tax Areas"
+        href="/products/sgid/economy/transit-special-tax-areas"
+        style="secondary">Transit special tax areas.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Tax Entities" href="/products/sgid/economy/tax-entities" style="secondary"
+        >Tax entities in Utah.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Economy" href="/products/sgid/economy" style="secondary"
+        >SGID category.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

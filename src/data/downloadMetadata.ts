@@ -644,15 +644,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Transit Special Tax Areas': {
     itemId: '17b06b8c22444f0291703c4c05f18b07',
     name: 'Utah Transit Special Tax Areas',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'TransitSpecialTaxAreas',
+    openSgid: 'economy.transit_special_tax_areas',
     layerId: 0,
   },
   'Utah Sales Tax Zones': {
     itemId: '852bc8eeaa534cc586b8936e1b451f54',
     name: 'Utah Sales Tax Zones',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'SalesTaxAreas',
+    openSgid: 'economy.sales_tax_zones',
     layerId: 0,
   },
   'Utah Enterprise Zones': {
@@ -1722,8 +1722,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Tax Areas 2022': {
     itemId: '1c962302668e431db53d9763962c09f5',
     name: 'Utah Tax Areas 2022',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'TaxAreas2022',
+    openSgid: 'economy.tax_areas_2022',
     layerId: 0,
   },
   'Utah Vista Ballot Areas Proposed': {
@@ -1736,8 +1736,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Tax Entities 2022': {
     itemId: 'cf717be2436e46758a263d53b63b8cf7',
     name: 'Utah Tax Entities 2022',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'TaxEntities2022',
+    openSgid: 'economy.tax_entities_2022',
     layerId: 0,
   },
   'Utah Telecom Boundaries': {
