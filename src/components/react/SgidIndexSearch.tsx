@@ -58,7 +58,7 @@ export default function SgidIndexSearch({ records, astroSite }: Props) {
   };
 
   return (
-    <div className="p-5">
+    <div className="py-5">
       <input
         type="search"
         className="focus:border-primary-500 h-10 w-full rounded-md border border-zinc-300 px-2 py-1 text-zinc-700 shadow-sm transition-all duration-200 ease-in-out placeholder:text-zinc-400 focus:outline-none focus:ring focus:ring-primary/80 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:opacity-50 sm:text-sm"

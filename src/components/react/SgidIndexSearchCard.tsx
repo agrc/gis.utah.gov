@@ -14,7 +14,7 @@ interface Props {
   record: StewardshipRecord;
   resultIndex: number;
 }
-export default function SgidIndexSearchCard({ astroSite, record, resultIndex }: Props) {
+export default function SgidIndexSearchCard({ astroSite, record }: Props) {
   type appLink = {
     url: string;
     title: string;
@@ -70,7 +70,7 @@ export default function SgidIndexSearchCard({ astroSite, record, resultIndex }: 
         <h4 className="group-hover:underline">{record.displayName}</h4>
       </a>
       <div className="primary-background dark:text-white">{record.description}</div>
-      <div className="flex flex-wrap space-x-2">
+      <div className="flex flex-wrap gap-x-2">
         <div>
           <span className="text-sm font-semibold text-secondary dark:text-white">Category: </span>
           <span>{startCase(record.category ?? 'Uncategorized')}</span>
@@ -82,7 +82,17 @@ export default function SgidIndexSearchCard({ astroSite, record, resultIndex }: 
         {record.openSgid && (
           <div>
             <span className="text-sm font-semibold text-secondary dark:text-white">Open SGID: </span>
-            <pre className="inline text-sm">{record.openSgid}</pre>
+            <pre className="inline text-sm">
+              {record.openSgid.split('.').map((part, index) => (
+                <>
+                  <span>
+                    {part}
+                    {index === 0 ? '.' : null}
+                  </span>
+                  <wbr />
+                </>
+              ))}
+            </pre>
           </div>
         )}
         {record.source ? (
@@ -92,12 +102,12 @@ export default function SgidIndexSearchCard({ astroSite, record, resultIndex }: 
           </div>
         ) : null}
       </div>
-      <div className="flex gap-1">
+      <div className="flex flex-col lg:flex-row lg:gap-1">
         {apps.length > 0 &&
           apps.map((app, index) => (
             <Fragment key={index}>
               <ExternalLink href={app.url}>{app.title}</ExternalLink>
-              {index < apps.length - 1 && <span>·</span>}
+              {index < apps.length - 1 && <span className="hidden lg:block">·</span>}
             </Fragment>
           ))}
       </div>
