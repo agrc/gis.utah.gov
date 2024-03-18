@@ -31,18 +31,22 @@ const dates = {
   UtahPLSS: '',
   StatewideParcels: '',
 };
-let currentRow = 0;
-let currentColumn = 0;
-while (currentRow < worksheet.rowCount) {
-  const cell = worksheet.getCell(currentRow, currentColumn);
-  if (typeof cell.value === 'string' && Object.keys(dates).includes(cell.value)) {
-    dates[cell.value] = worksheet.getCell(currentRow + 1, currentColumn).formattedValue;
-  }
-  if (currentColumn === worksheet.columnCount - 1) {
-    currentColumn = 0;
-    currentRow++;
-  } else {
-    currentColumn++;
+
+if (import.meta.env.NETLIFY) {
+  console.log('using ci credentials');
+  let currentRow = 0;
+  let currentColumn = 0;
+  while (currentRow < worksheet.rowCount) {
+    const cell = worksheet.getCell(currentRow, currentColumn);
+    if (typeof cell.value === 'string' && Object.keys(dates).includes(cell.value)) {
+      dates[cell.value] = worksheet.getCell(currentRow + 1, currentColumn).formattedValue;
+    }
+    if (currentColumn === worksheet.columnCount - 1) {
+      currentColumn = 0;
+      currentRow++;
+    } else {
+      currentColumn++;
+    }
   }
 }
 
