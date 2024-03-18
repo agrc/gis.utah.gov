@@ -16,7 +16,7 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 export const metadata: IMetadata = {
-  title: 'Wetlands and Riparian Areas',
+  title: 'Utah Wetlands and Riparian Areas',
   description: `Wetland and riparian location and classification polygon map data from the U.S. Fish and Wildlife Service’s National Wetlands Inventory (NWI).`,
   stewards: ['Utah Geological Survey', 'Utah Department of Natural Resources, U.S. Fish and Wildlife Service'],
   type: ProductType.POLYGON,
@@ -30,16 +30,16 @@ const page: IPageMetadata = {
   updateHistory: [`USFWS typically update the NWI data twice per year`],
   links: [
     {
-      title: 'USFWS NWI Download by State',
-      url: 'https://www.fws.gov/node/264847',
-    },
-    {
-      title: 'USFWS Utah Wetlands Data: File Geodatabase',
+      title: 'Utah as a file geodatabase',
       url: 'https://www.fws.gov/wetlands/Data/State-Downloads/UT_geodatabase_wetlands.zip',
     },
     {
-      title: 'USFWS Utah Wetlands Data: Shapefile',
+      title: 'Utah as a shapefile',
       url: 'https://www.fws.gov/wetlands/Data/State-Downloads/UT_shapefile_wetlands.zip',
+    },
+    {
+      title: 'All downloads by State',
+      url: 'https://www.fws.gov/node/264847',
     },
   ],
 };
@@ -52,7 +52,7 @@ const page: IPageMetadata = {
     <p>
       The U.S. Fish and Wildlife Service’s (USFWS) <ExternalLink
         href="https://www.fws.gov/program/national-wetlands-inventory">National Wetlands Inventory (NWI)</ExternalLink
-      > program maintains a dataset depicting wetland and waterbody features across the United States. All features in the
+      > program maintains a dataset depicting wetland and water body features across the United States. All features in the
       NWI dataset are described according to the Cowardin Classification System which uses coded values to describe vegetation
       communities, water, and disturbances present at each feature; codes can be interpreted <ExternalLink
         href="https://www.fws.gov/program/national-wetlands-inventory/classification-codes">online</ExternalLink
@@ -62,8 +62,8 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <Section title="Use the data" slot="downloads" titlePosition="center">
-    <DirectDownloads title="Downloads" links={page.links!} />
+  <Section title="Download the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="From the U.S. Fish & Wildlife Service" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
@@ -90,7 +90,7 @@ const page: IPageMetadata = {
       to replace field-based wetland delineations necessary for the permitting process.
     </p>
     <p>
-      Questions can be directed to <Contacts contactKey="wetlands" subject="Diane Menuz" inline />.
+      Questions can be directed to <Contacts contactKey="wetlands" subject="gis.utah.gov wetlands" inline />.
     </p>
   </Fragment>
 
