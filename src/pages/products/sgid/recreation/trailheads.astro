@@ -1,0 +1,104 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Trailheads',
+  description: `An in-progress collection of trail starting and access points.`,
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.RECREATION,
+  secondaryCategory: SgidCategory.TRANSPORTATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+
+  updateHistory: [`July 2014`],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>An in-progress collection of trail starting and access points.</p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      Trailheads are point locations that provide access (and often vehicle parking) for recreational trail users. This
+      map layer features many of Utah's trailheads but is not yet complete. The initial data were purchased from Orbital
+      View, Inc by the Governor's Office of Economic Opportunity's Outdoor Recreation Office in July 2014. We hope to
+      expand it with data from the US Forest Service, National Parks, State Parks, and Open Street Map.
+    </p>
+    <p>
+      The dataset's primary goal is to assign a location and a name to each trailhead. However, the data are stored
+      within a more complex <ExternalLink
+        href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing"
+        >data model</ExternalLink
+      >
+      that supports future collection and publishing of more robust trail and trailhead information.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Trailheads Data Model"
+        href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing"
+        >Explore the fields and domain values for this layer.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah Trails and Pathways" href="/products/sgid/recreation/trails-pathways"
+        >Utah's non-motorized trails and pathways.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov/" style="secondary"
+        >Explore this data in UGRC's interactive mapping application</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary"
+        >Explore other transportation layers</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Utah Trails Forum"
+        href="https://recreation.utah.gov/utah-trails-forum/"
+        style="secondary"
+        >Bringing together industry professionals, trail advocates, volunteers, and community leaders.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Multi-Modal Network Dataset"
+        href="/products/sgid/transportation/network-data"
+        style="secondary">ESRI Network Dataset</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

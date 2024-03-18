@@ -1813,8 +1813,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Trailheads': {
     itemId: '9c21cc1f95ba40468deb36bb6fd94943',
     name: 'Utah Trailheads',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahTrailheads',
+    openSgid: 'recreation.trailheads',
     layerId: 0,
   },
   'Utah Highway Patrol Field Sections': {
