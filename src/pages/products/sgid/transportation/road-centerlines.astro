@@ -20,7 +20,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah Roads',
-  description: `Statewide road centerline dataset for Utah.`,
+  description: `Statewide road centerline data for Utah.`,
   stewards: ['Local data stewards', 'UDOT', 'UGRC'],
   type: ProductType.POLYLINE,
   category: SgidCategory.TRANSPORTATION,
@@ -71,8 +71,8 @@ const page: IPageMetadata = {
       in Utah. Recent collaborative efforts between UGRC, <ExternalLink href="https://www.udot.utah.gov/connect/"
         >UDOT</ExternalLink
       >, and <ExternalLink href="https://wfrc.org/">WFRC</ExternalLink> have led to significant enhancements in the bike
-      and pedestrian data in both the Roads and <a href="/products/sgid/recreation/trails-pathways"
-        >Trails-and-Pathways</a
+      and pedestrian data in both the roads and <a href="/products/sgid/recreation/trails-pathways"
+        >trails and pathways</a
       > layers. These efforts have focused on better connectivity between the layers along the Wasatch Front, as well as
       improvements in the statewide bike data. You can contribute to the on-street bike data by letting us know where we
       have gaps or inaccurate information.
@@ -87,14 +87,15 @@ const page: IPageMetadata = {
       domains, and data model updates, see the <ExternalLink
         href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546"
         >data model spreadsheet</ExternalLink
-      > and the corresponding tabs for update notes and coded value domains. The color-coded section titled Addressing is
-      primarily maintained by the local stewards, where as the section titled DOT/FHWA is primarily maintained by UDOT. UGRC
-      spatially assigns fields in the section titled Placename/Area, based on current SGID polygon boundaries.
+      > and the corresponding tabs for update notes. The color-coded section titled Addressing is primarily maintained by
+      the local stewards, where as the section titled DOT/FHWA is primarily maintained by UDOT. UGRC spatially assigns fields
+      in the section titled Placename/Area, based on current SGID polygon boundaries.
     </p>
     <p>
       This data model is meant to suggest 'best practices'. It is not the intent that all stewards will change their
       current data management process to match this standard, but rather that stewards will evaluate their current
-      practices to see how well their data 'maps' to this schema for data sharing and Next Generation 911 preparedness.
+      practices to see how well their data 'translates' to this schema for data sharing and Next Generation 911
+      preparedness.
     </p>
     <p>
       We are currently working with US Forest Service to improve the Forest Service roads in this dataset, however, for
@@ -137,11 +138,8 @@ const page: IPageMetadata = {
         href="/products/sgid/transportation/network-data"
         style="secondary">ESRI Network Dataset</CardWithSmallLink
       >
-      <CardWithSmallLink title="Discover" href="/products/discover" style="secondary"
-        >Explore UGRC's aerial imagery and base maps</CardWithSmallLink
-      >
-      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov/" style="secondary"
-        >Explore this data in UGRC's interactive mapping application</CardWithSmallLink
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data-uplan.opendata.arcgis.com/"
+        >Search UDOT's geospatial data.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
