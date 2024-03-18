@@ -1,5 +1,4 @@
 ---
-import Contacts from '@components/page/Contacts.astro';
 import Layout from '@layouts/DataPage.astro';
 
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
@@ -11,6 +10,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -64,6 +64,9 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="UGRC Raster Data Discovery" href="https://raster.utah.gov/?products=4"
+        >Download contour products.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="UGRC Terrain base map" href="/products/sgid/base-maps/terrain"
         >Download contour products.</CardWithPopularLink
       >
     </GridForMoreResources>
