@@ -69,6 +69,15 @@
       "@downloads/*": [
         "src/downloads/*"
       ],
-    }
-  }
+    },
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/migrations",
+    "src/scripts"
+  ]
 }
