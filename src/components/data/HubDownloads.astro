@@ -23,7 +23,7 @@ if (externalHubOrganization) {
 }
 
 const featureService = featureServiceId || name.toLowerCase().replaceAll(' ', '');
-let serviceUrl;
+let serviceUrl: string;
 if (featureServiceId) {
   serviceUrl = `${featureServiceHost}${featureService}/FeatureServer/${layerId}`;
 } else {

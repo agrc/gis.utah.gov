@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 const pages = (await Astro.glob<IDataCategory>('../**/*.astro'))
   .filter((page) => {
     return [page.metadata?.category?.toLowerCase(), page?.metadata?.secondaryCategory?.toLowerCase()].includes(
-      categoryString,
+      categoryString
     );
   })
   .sort((a, b) => a.metadata.title.localeCompare(b.metadata.title));
@@ -47,7 +47,7 @@ const toEnum = (category?: string) => {
 };
 ---
 
-<Layout title={`SGID ${readableCategory} data`}>
+<Layout pageTitle={`SGID ${readableCategory} data`}>
   <BreadCrumbs category={toEnum(category)} class="bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300" />
   <Section
     title=`The ${readableCategory} data index`

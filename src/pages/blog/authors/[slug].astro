@@ -28,7 +28,7 @@ interface Props {
 const { author, posts } = Astro.props;
 ---
 
-<Layout title="Post authors" category={author}>
+<Layout pageTitle="Post authors" category={author}>
   {
     posts.map((post) => (
       <CardForBlog

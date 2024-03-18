@@ -18,7 +18,7 @@ const categories = await getBlogFilters('categories');
 const { page } = Astro.props as { page: Page<DecoratedBlogEntry> };
 ---
 
-<Layout title="Post categories" category="All">
+<Layout pageTitle="Post categories" category="All">
   <Pagination page={page} class="my-5" baseHref="blog" slot="pagination" />
   <Fragment slot="categories">
     {

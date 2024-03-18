@@ -100,12 +100,7 @@ export default function SgidIndexSearch({ records, astroSite }: Props) {
 
       <div className="space-y-6 overflow-x-hidden">
         {results.slice(0, limit).map((result) => (
-          <SgidIndexSearchCard
-            astroSite={astroSite}
-            record={result.item as StewardshipRecord}
-            resultIndex={result.refIndex}
-            key={result.refIndex}
-          />
+          <SgidIndexSearchCard astroSite={astroSite} record={result.item as StewardshipRecord} key={result.refIndex} />
         ))}
       </div>
       {results.length > limit && (

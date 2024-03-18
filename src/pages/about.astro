@@ -18,7 +18,7 @@ import { YouTube } from '@astro-community/astro-embed-youtube';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  title: 'About the UGRC',
+  pageTitle: 'About the UGRC',
   section: stripeSections([
     { title: 'Who is the UGRC' },
     { title: 'What we do', titlePosition: 'center' },
@@ -28,7 +28,7 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title}>
+<Layout pageTitle={page.pageTitle}>
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image

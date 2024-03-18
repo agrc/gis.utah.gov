@@ -23,7 +23,7 @@ import studentPhoto from '@images/solutions/students.svg';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  title: 'UGRC solutions',
+  pageTitle: 'UGRC solutions',
   section: stripeSections([
     { title: 'For government employees', actionUrl: '/solutions/for-government', actionText: "Let's collaborate" },
     { title: 'For GIS users', actionUrl: '/solutions/for-gis-users' },
@@ -43,7 +43,7 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title}>
+<Layout pageTitle={page.pageTitle}>
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image

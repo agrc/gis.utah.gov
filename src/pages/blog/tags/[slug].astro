@@ -28,7 +28,7 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 const { tag, posts } = Astro.props;
 ---
 
-<Layout title="Posts by tag" category={tag}>
+<Layout pageTitle="Posts by tag" category={tag}>
   {
     posts.map((post) => (
       <CardForBlog

@@ -18,9 +18,13 @@ import { staff } from '@data/staff';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  title: 'Contact',
+  pageTitle: 'Contact',
   section: stripeSections([
-    { title: 'General office information', actionUrl: '/contact/visiting', actionText: 'Get directions' },
+    {
+      title: 'General office information',
+      actionUrl: '/contact/visiting',
+      actionText: 'Get directions',
+    },
     { title: 'Meet our team', titlePosition: 'center' },
     {
       title: 'UGRC social media',
@@ -36,7 +40,7 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title}>
+<Layout pageTitle={page.pageTitle}>
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image

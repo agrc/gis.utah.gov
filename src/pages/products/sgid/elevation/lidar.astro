@@ -53,6 +53,7 @@ export const metadata: IMetadata = {
 
 const page: IStandardPageMetadata = {
   ...metadata,
+  pageTitle: metadata.title,
   pillar: Pillar.PRODUCTS,
   section: stripeSections([
     {},
@@ -605,7 +606,7 @@ const projectAssets = {
 };
 ---
 
-<Layout title={page.title} pillar={page.pillar}>
+<Layout pageTitle={page.pageTitle} pillar={page.pillar}>
   <BreadCrumbs category={metadata.category} product={metadata.title} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>

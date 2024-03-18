@@ -1,9 +1,10 @@
 ---
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
+import type { Props as ChromeProps } from './Chrome.astro';
 
 import Layout from './Chrome.astro';
 
-const props = Astro.props as IStandardPageMetadata;
+interface Props extends ChromeProps {}
+const props = Astro.props;
 ---
 
 <Layout {...props}>

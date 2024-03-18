@@ -12,7 +12,6 @@ import ugrcLogo from './ugrc-logo.svg';
 interface Props {
   astroSite: URL | undefined;
   record: StewardshipRecord;
-  resultIndex: number;
 }
 export default function SgidIndexSearchCard({ astroSite, record }: Props) {
   type appLink = {

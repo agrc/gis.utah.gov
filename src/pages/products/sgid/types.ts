@@ -71,8 +71,9 @@ export enum SgidCategory {
 
 type OptionalPick<T, K extends PropertyKey> = Pick<T, Extract<keyof T, K>>;
 export interface IStandardPageMetadata {
-  title: string;
-  pillar?: string;
+  pageTitle: string;
+  bannerHeading?: string;
+  pillar?: Pillar;
   section: OptionalPick<SectionProps, 'title' | 'subTitle' | 'actionUrl' | 'actionText'>[];
 }
 
