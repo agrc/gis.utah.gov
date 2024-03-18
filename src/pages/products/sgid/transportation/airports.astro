@@ -1,0 +1,85 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Airports',
+  description: `Airport locations across the state.`,
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.TRANSPORTATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`September 2009`],
+  hub: {
+    ...dataPages['Utah Airports'],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>Airport locations across the state taken from the Geographic Names Information System (GNIS).</p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      Attribute information include feature name, feature type, elevation, and USGS 24K scale quadrangle name in which
+      the feature resides. Airport Locations consists of 111 point features that are categorized by feature type and are
+      representative of airport locations found in the general GNIS dataset. For regional display at 1:100,000.
+    </p>
+    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).</p>
+    <p>
+      Questions can be directed to the US Department of Transportation's Bureau of Transportation Services at (202)
+      366-DATA.
+    </p>
+
+    <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+    <Section title="More resources" slot="more-resources" titlePosition="center">
+      <GridForMoreResources>
+        <CardWithPopularLink title="FAA" href="https://www.faa.gov/"
+          >Federal Aviation Administration homepage.</CardWithPopularLink
+        >
+        <CardWithPopularLink title="Visit Utah" href="https://www.visitutah.com/plan-your-trip/getting-to-utah/Airports"
+          >Salt Lake City International and Utah airports information.</CardWithPopularLink
+        >
+      </GridForMoreResources>
+    </Section>
+
+    <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+      <GridForYouMightLike>
+        <CardWithSmallLink
+          title="Airport Runways"
+          href="/products/sgid/transportation/airport-runways"
+          style="secondary">Line work of runways and taxiways.</CardWithSmallLink
+        >
+        <CardWithSmallLink title="Heliports" href="/products/sgid/transportation/heliports" style="secondary"
+          >Heliport locations in the state.</CardWithSmallLink
+        >
+      </GridForYouMightLike>
+    </Section>
+  </Fragment>
+</Layout>
