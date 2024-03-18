@@ -1,5 +1,4 @@
 ---
-import Contacts from '@components/page/Contacts.astro';
 import Layout from '@layouts/DataPage.astro';
 
 import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
@@ -11,6 +10,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -19,8 +19,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah Tax Areas 2022',
-  description:
-    'This dataset represents Taxing Districts/Areas in the State of Utah as maintained by the Utah State Tax Commission.',
+  description: 'Taxing districts and areas in the State of Utah as maintained by the Utah State Tax Commission.',
   stewards: ['UGRC', 'USTC'],
   type: ProductType.POLYGON,
   category: SgidCategory.ECONOMY,
@@ -61,6 +60,9 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="USTC" href="https://tax.utah.gov/">Utah State Tax Commission</CardWithPopularLink>
+      <CardWithPopularLink title="All Utah taxes and fees" href="https://tax.utah.gov/utah-taxes"
+        >Descriptions of All Utah Taxes and Fees.</CardWithPopularLink
+      >
     </GridForMoreResources>
   </Section>
 
