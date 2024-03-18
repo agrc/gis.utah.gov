@@ -48,16 +48,16 @@ export const Menu = ({ children, currentUri }) => {
             <MegaMenuChrome className="flex w-full flex-row gap-4 pr-6 md:gap-2">
               <MegaMenuItem title="By audience" containerCss="md:w-1/3">
                 <ListItem href="/solutions/for-government" title="Government employees">
-                  Learn what we can offer you.
+                  Partner with us to geo-enable your agency.
                 </ListItem>
                 <ListItem href="/solutions/for-gis-users" title="GIS users">
-                  Learn what we can offer you.
+                  Integrate our data and services with your GIS.
                 </ListItem>
                 <ListItem href="/solutions/for-application-developers" title="Application developers">
-                  Learn what we can offer you.
+                  Use our tools and resources to innovate and build.
                 </ListItem>
                 <ListItem href="/solutions/for-surveyors" title="Surveyors">
-                  Learn what we can offer you.
+                  Find your direction. We can help.
                 </ListItem>
                 <ListItem href="/solutions/for-students" title="Students">
                   Learning never ends.
@@ -68,16 +68,16 @@ export const Menu = ({ children, currentUri }) => {
                   Learn how we can help.
                 </ListItem>
                 <ListItem href="/solutions/for-emergency-response" title="Emergency response (911)">
-                  See what we can offer you.
+                  Data and solutions for when it matters most.
                 </ListItem>
                 <ListItem href="/solutions/gis-strategy" title="GIS strategy">
                   Begin thinking bigger by thinking differently.
                 </ListItem>
                 <ListItem href="/solutions/gis-integration" title="Integrating GIS">
-                  Location matters.
+                  Location matters to your business processes.
                 </ListItem>
                 <ListItem href="/solutions/high-precision-location" title="High precision location">
-                  Use cases for centimeter GPS precision.
+                  Examples of how a high precision GPS network can be used.
                 </ListItem>
               </MegaMenuItem>
             </MegaMenuChrome>
