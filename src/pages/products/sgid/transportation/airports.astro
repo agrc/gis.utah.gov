@@ -26,7 +26,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`September 2009`],
+  updateHistory: [`April 2014`],
   hub: {
     ...dataPages['Utah Airports'],
   },
@@ -37,7 +37,7 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>Airport locations across the state taken from the Geographic Names Information System (GNIS).</p>
+    <p>Airport and heliport locations across the state.</p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -46,14 +46,8 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      Attribute information include feature name, feature type, elevation, and USGS 24K scale quadrangle name in which
-      the feature resides. Airport Locations consists of 111 point features that are categorized by feature type and are
-      representative of airport locations found in the general GNIS dataset. For regional display at 1:100,000.
-    </p>
-    <p>The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 coordinate precision).</p>
-    <p>
-      Questions can be directed to the US Department of Transportation's Bureau of Transportation Services at (202)
-      366-DATA.
+      Point information about airports and heliports across the state, including some specific facility information from
+      the FAA. You can filter out heliports using the <code>lan_fa_ty</code> field.
     </p>
 
     <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
@@ -76,8 +70,8 @@ const page: IPageMetadata = {
           href="/products/sgid/transportation/airport-runways"
           style="secondary">Line work of runways and taxiways.</CardWithSmallLink
         >
-        <CardWithSmallLink title="Heliports" href="/products/sgid/transportation/heliports" style="secondary"
-          >Heliport locations in the state.</CardWithSmallLink
+        <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
+          >Authoritative statewide collection of road centerlines.</CardWithSmallLink
         >
       </GridForYouMightLike>
     </Section>
