@@ -2682,11 +2682,14 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'uta routes and ridership': {
+    externalHubOrganization: 'rideuta',
     itemId: 'hosted by UTA',
     name: 'uta routes and ridership',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UTA_Routes_0419',
+    openSgid: 'transportation.uta_routes_and_ridership',
     layerId: 0,
+    featureServiceHost: 'https://services.arcgis.com/5QAphMT1g51Tw2X4/ArcGIS/rest/services/',
+    oddHubName: 'uta-routes-and-most-recent-ridership'
   },
   'uta stops and ridership': {
     itemId: 'hosted by UTA',
