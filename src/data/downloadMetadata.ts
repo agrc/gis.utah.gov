@@ -1988,8 +1988,8 @@ export const dataPages: DownloadMetadata = {
   'Utah UTA Commuter Rail Routes': {
     itemId: '17705e20cecf4cceab61eac6ea51343e',
     name: 'Utah UTA Commuter Rail Routes',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UTACommuterRailRoutes',
+    openSgid: 'transportation.uta_commuter_rail_routes',
     layerId: 0,
   },
   'Utah Urban Areas Census 2020': {
