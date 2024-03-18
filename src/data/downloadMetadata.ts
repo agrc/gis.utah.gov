@@ -497,8 +497,8 @@ export const dataPages: DownloadMetadata = {
   'Utah PLSS Quarter Sections GCDB': {
     itemId: '58b655046e2f4a258dbbf6a6aeaa7b23',
     name: 'Utah PLSS Quarter Sections GCDB',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahPLSSQuarterSections_GCDB',
+    openSgid: 'cadastre.utah-plss-quarter-sections-gcdb',
     layerId: 0,
   },
   'Utah PLSS Sections GCDB': {
