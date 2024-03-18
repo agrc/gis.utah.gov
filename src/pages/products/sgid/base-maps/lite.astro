@@ -14,6 +14,7 @@ import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
+import dates from '@utils/base-maps-dates';
 
 import { Image } from 'astro:assets';
 
@@ -30,7 +31,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   application: 'https://atlas.utah.gov/',
-  updateHistory: [`todo: query for base map update history`],
+  updateHistory: [dates.Lite],
   links: [
     {
       title: 'Discover',
