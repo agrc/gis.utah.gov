@@ -4,7 +4,7 @@ author:
   email: mheagin@utah.gov
 tags: []
 date: 2015-03-27 11:05:05 -0600
-title: Utah SGID Statewide Tax Areas and Tax Entities Data Layer Updates 3/27/2015
+title: Utah SGID Statewide Tax Areas and Tax Entities Data Layer Updates
 published: false
 category: SGID Updates
 cover_image: '/src/images/pillar-blog/default-social-card.png'
