@@ -2717,7 +2717,7 @@ export const dataPages: DownloadMetadata = {
   'Utah UDOT Routes ALRS': {
     externalHubOrganization: 'uplan',
     itemId: 'ecb09af7f887450e851c2634dac92edb',
-    name: 'Utah UDOT Routes ALRS',
+    name: 'UDOT Routes ALRS',
     oddHubName: 'udot-routes-alrs-1',
     featureServiceHost: 'https://roads.udot.utah.gov/server/rest/services/Public/',
     layerId: 0,
