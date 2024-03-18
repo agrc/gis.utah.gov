@@ -498,7 +498,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '58b655046e2f4a258dbbf6a6aeaa7b23',
     name: 'Utah PLSS Quarter Sections GCDB',
     featureServiceId: 'UtahPLSSQuarterSections_GCDB',
-    openSgid: 'cadastre.utah-plss-quarter-sections-gcdb',
+    openSgid: 'cadastre.plss_quarter_sections_gcdb',
     layerId: 0,
   },
   'Utah PLSS Sections GCDB': {
@@ -512,7 +512,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '5f801b03df2644dd99dcbaa5840bf12d',
     name: 'Utah PLSS Townships GCDB',
     featureServiceId: 'PLSSTownships_GCDB',
-    openSgid: 'cadastre.utah-plss-townships-gcdb',
+    openSgid: 'cadastre.plss_townships_gcdb',
     layerId: 0,
   },
   'Utah TURN GPS BaseLines': {
