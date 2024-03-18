@@ -1,0 +1,90 @@
+---
+import Contacts from '@components/page/Contacts.astro';
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Sales Tax Zones',
+  description: 'This dataset represents the approximate boundaries of Sales Tax Areas for the State of Utah.',
+  stewards: ['UGRC', 'USTC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.ECONOMY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [
+    '3/5/2024 3rd Quarter 2024',
+    '2/13/2023 1st Quarter 2023',
+    '8/25/2022 3rd Quarter 2022',
+    '4/12/2022 2nd Quarter 2022',
+    '1/31/2019 1st Quarter 2019',
+  ],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This data set represents the approximate boundaries of Sales Tax Areas for the State of Utah. Individual Sales Tax
+      Area polygons are formed by each municipality, special sales tax district (in 2006, there were 6 special transit
+      districts) and the unincorporated areas of each county not in a special sales tax district. This dataset also
+      contains an attribute that can be used to dissolve the Sales Tax polygons into the polygons representing tax areas
+      for the proposed Streamlined Sales Tax implementation.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <Contacts contactKey="tax" />
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="USTC" href="https://tax.utah.gov/">Utah State Tax Commission</CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Tax Areas" href="/products/sgid/economy/taxing-areas" style="secondary"
+        >Tax collection areas.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Transit Tax Areas"
+        href="/products/sgid/economy/transit-special-tax-areas"
+        style="secondary">Transit special tax areas.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Tax Entities" href="/products/sgid/economy/tax-entities" style="secondary"
+        >Tax entities in Utah.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Economy" href="/products/sgid/economy" style="secondary"
+        >SGID category.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
