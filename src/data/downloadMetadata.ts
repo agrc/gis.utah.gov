@@ -679,15 +679,15 @@ export const dataPages: DownloadMetadata = {
   'Utah Contours Generalized 200 Foot': {
     itemId: 'bc6850cf76924e38870e3bdc7c0dc473',
     name: 'Utah Contours Generalized 200 Foot',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'ContoursGeneralized200Ft',
+    openSgid: 'elevation.contours_generalized_200_foot',
     layerId: 0,
   },
   'Utah Contours 500 Foot': {
     itemId: '46024bfcf19545e4bdfbc3b1e86b74e0',
     name: 'Utah Contours 500 Foot',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Contours500Ft',
+    openSgid: 'elevation.contours_500_foot',
     layerId: 0,
   },
   'Utah Schools PreK to 12': {
