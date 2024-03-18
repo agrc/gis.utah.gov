@@ -4,6 +4,7 @@ import Layout from '@layouts/FullWidth.astro';
 import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
@@ -12,6 +13,7 @@ import { Image } from 'astro:assets';
 import championPhoto from '@images/solutions/champion.svg';
 import collaboratePhoto from '@images/solutions/collaborate.svg';
 import rocketPhoto from '@images/solutions/rocket.svg';
+import startPhoto from '@images/solutions/start.svg';
 
 import { stripeSections } from '@utils/page';
 
@@ -22,6 +24,7 @@ const page: IStandardPageMetadata = {
     { title: 'What is GIS strategy' },
     { title: 'Spatial champion' },
     { title: 'Is your data ready' },
+    { title: 'Where to start' },
   ]),
 };
 ---
@@ -77,6 +80,23 @@ const page: IStandardPageMetadata = {
       If so, then ensuring that the spatial component of your data is suitable for analysis is a critical step in the
       development of an overall business strategy regarding spatial data. Get in touch with us if you need help with
       this aspect of your data.
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <Image slot="image" src={startPhoto} alt="A person jumping over a hurdle." class="w-full max-w-[400px]" />
+    <p>
+      There are many ways to get started using and thinking about geospatial data. One of the best ways we’ve found for
+      agencies interested in GIS to get started is to buy an office subscription to Esri’s <ExternalLink
+        href="https://www.esri.com/en-us/arcgis/products/arcgis-online/buy">ArcGIS Online platform</ExternalLink
+      >. It gives you access to all of the data, including the <a href="/documentation/sgid/">SGID on ArcGIS</a> and <ExternalLink
+        href="https://livingatlas.arcgis.com/en/home/">Esri’s Living Atlas</ExternalLink
+      >. It has tools to help you <ExternalLink href="https://www.esri.com/en-us/arcgis/products/arcgis-online/overview"
+        >analyze your data</ExternalLink
+      >, you can create and deploy low code and no code applications to highlight and bring attention to your GIS
+      efforts, and most importantly from UGRC’s perspective, it allows you to easily share your data with a wider
+      audience if appropriate to your business's goals and mission. ArcGIS Online can scale with your agency needs
+      without having to make a huge initial investment in GIS. Reach out to us if you have any questions about joining
+      Utah's preferred spatial data and low code no code platform.
     </p>
   </Section>
 </Layout>
