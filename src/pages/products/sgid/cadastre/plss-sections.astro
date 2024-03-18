@@ -23,7 +23,7 @@ import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
   title: 'Utah PLSS Sections GCDB',
-  description: `PLSS Sections GCDB is the second level of a hierarchical breakdown of the Public Land Survey System Rectangular surveys.`,
+  description: `The second level of a hierarchical breakdown of the Public Land Survey System Rectangular surveys.`,
   stewards: ['UGRC', 'BLM', 'SITLA', 'Utah Counties', 'Premier Data Services'],
   type: ProductType.POLYGON,
   category: SgidCategory.CADASTRE,
@@ -122,16 +122,16 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
-        >Utah boundary data</CardWithSmallLink
+        >Utah boundary data.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary"
-        >Utah transportation data</CardWithSmallLink
+      <CardWithSmallLink title="Parcel App" href="https://parcels.utah.gov" style="secondary"
+        >Utah parcel web application.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Land Ownership" href="/products/sgid/cadastre/land-ownership" style="secondary"
-        >Utah land ownership data</CardWithSmallLink
+      <CardWithSmallLink title="PLSS Web application" href="https://plss.utah.gov" style="secondary"
+        >Utah PLSS web application.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Political" href="/products/sgid/political" style="secondary"
-        >Utah political data</CardWithSmallLink
+      <CardWithSmallLink title="Utah PLSS Townships" href="/products/sgid/cadastre/plss-townships" style="secondary"
+        >Utah PLSS township and range polygons.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
