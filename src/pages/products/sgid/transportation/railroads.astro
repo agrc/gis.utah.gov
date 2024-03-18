@@ -50,29 +50,29 @@ const page: IPageMetadata = {
       NAIP, and 1 meter USGS DOQs). The dataset includes cartographic attribution for large scale representations and
       differentiates between light, heavy, transit, and electrified tracks.
     </p>
-
-    <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
-
-    <Section title="More resources" slot="more-resources" titlePosition="center">
-      <GridForMoreResources>
-        <CardWithPopularLink title="Railroad Mileposts" href="/products/sgid/transportation/railroad-mileposts"
-          >A liner referencing system for the railroad lines.</CardWithPopularLink
-        >
-        <CardWithPopularLink title="Federal Railroad Administration" href="https://railroads.dot.gov/"
-          >The main US DOT organization for rail transportation.</CardWithPopularLink
-        >
-      </GridForMoreResources>
-    </Section>
-
-    <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
-      <GridForYouMightLike>
-        <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
-          >Authoritative statewide collection of road centerlines.</CardWithSmallLink
-        >
-        <CardWithSmallLink title="UtahRails.net" href="https://utahrails.net/" style="secondary"
-          >A private, non-commercial site chock full of historical railroad information.</CardWithSmallLink
-        >
-      </GridForYouMightLike>
-    </Section>
   </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Railroad Mileposts" href="/products/sgid/transportation/railroad-mileposts"
+        >A liner referencing system for the railroad lines.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Federal Railroad Administration" href="https://railroads.dot.gov/"
+        >The main US DOT organization for rail transportation.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
+        >Authoritative statewide collection of road centerlines.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="UtahRails.net" href="https://utahrails.net/" style="secondary"
+        >A private, non-commercial site chock full of historical railroad information.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
 </Layout>

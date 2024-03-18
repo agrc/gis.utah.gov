@@ -54,31 +54,31 @@ const page: IPageMetadata = {
       The statewide roads dataset is maintained by UGRC and created from distances along Utah Railroads in combination
       with railroad mileposts provided by the Federal Railway Administration.
     </p>
-
-    <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
-
-    <Section title="More resources" slot="more-resources" titlePosition="center">
-      <GridForMoreResources>
-        <CardWithPopularLink title="Utah Railroads" href="/products/sgid/transportation/railroads"
-          >Railroad lines across the state.</CardWithPopularLink
-        >
-        <CardWithPopularLink title="Federal Railroad Administration" href="https://railroads.dot.gov/"
-          >The main US DOT organization for rail transportation.</CardWithPopularLink
-        >
-      </GridForMoreResources>
-    </Section>
-
-    <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
-      <GridForYouMightLike>
-        <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
-          >Authoritative statewide collection of road centerlines.</CardWithSmallLink
-        >
-        <CardWithSmallLink
-          title="Highway Mileposts"
-          href="/products/sgid/transportation/mile-reference-posts"
-          style="secondary">Mileposts along Utah's highways.</CardWithSmallLink
-        >
-      </GridForYouMightLike>
-    </Section>
   </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah Railroads" href="/products/sgid/transportation/railroads"
+        >Railroad lines across the state.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Federal Railroad Administration" href="https://railroads.dot.gov/"
+        >The main US DOT organization for rail transportation.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
+        >Authoritative statewide collection of road centerlines.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="Highway Mileposts"
+        href="/products/sgid/transportation/mile-reference-posts"
+        style="secondary">Mileposts along Utah's highways.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
 </Layout>
