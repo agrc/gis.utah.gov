@@ -1,0 +1,80 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah UTA Commuter Rail Routes',
+  description: `Utah Transit Authority (UTA) Commuter Rail (FrontRunner) Route.`,
+  stewards: ['Utah Transit Authority (UTA)', 'UGRC'],
+  type: ProductType.POLYLINE,
+  category: SgidCategory.TRANSPORTATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`May 2019`, `December 2018`, `May 2013`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>Centerline of Utah Transit Authority (UTA) Commuter Rail (FrontRunner) Route.</p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="UTA" href="https://www.rideuta.com/Services/FrontRunner"
+        >FrontRunner.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="UDOT" href="https://www.udot.utah.gov/connect/public/public-transit/"
+        >Public transit.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="Frontrunner Stops"
+        href="/products/sgid/transportation/uta-commuter-rail-stops"
+        style="secondary">UTA commuter rail stops.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="UTA Routes" href="/products/sgid/transportation/uta-routes" style="secondary"
+        >All bus, TRAX, and Frontrunner routes.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="UTA Stops" href="/products/sgid/transportation/uta-stops" style="secondary"
+        >All bus, TRAX, and Frontrunner stops.</CardWithSmallLink
+      >
+      <CardWithSmallLink
+        title="TRAX Routes"
+        href="/products/sgid/transportation/uta-light-rail-routes"
+        style="secondary">UTA light rail routes.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
