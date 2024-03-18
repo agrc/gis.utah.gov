@@ -1981,8 +1981,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Railroad Mileposts': {
     itemId: '894928d3d26b44a9b71ebdd99bb05650',
     name: 'Utah Railroad Mileposts',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Railroad_Mileposts',
+    openSgid: 'transportation.railroad_mileposts',
     layerId: 0,
   },
   'Utah UTA Commuter Rail Routes': {
@@ -2023,8 +2023,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Railroads': {
     itemId: 'fe20e5c6bb4240919d0cd5ba4116d106',
     name: 'Utah Railroads',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UtahRailroads',
+    openSgid: 'transportation.railroads',
     layerId: 0,
   },
   'Utah Airports': {
