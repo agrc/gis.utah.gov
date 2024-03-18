@@ -2681,15 +2681,15 @@ export const dataPages: DownloadMetadata = {
     openSgid: '',
     layerId: 0,
   },
-  'uta routes and ridership': {
-    externalHubOrganization: 'rideuta',
+  'UTA Routes and Ridership': {
     itemId: 'hosted by UTA',
-    name: 'uta routes and ridership',
+    name: 'UTA Routes and Ridership',
+    externalHubOrganization: 'rideuta',
+    oddHubName: 'uta-routes-and-most-recent-ridership',
     featureServiceId: 'UTA_Routes_0419',
+    featureServiceHost: 'https://services.arcgis.com/5QAphMT1g51Tw2X4/ArcGIS/rest/services/',
     openSgid: 'transportation.uta_routes_and_ridership',
     layerId: 0,
-    featureServiceHost: 'https://services.arcgis.com/5QAphMT1g51Tw2X4/ArcGIS/rest/services/',
-    oddHubName: 'uta-routes-and-most-recent-ridership'
   },
   'uta stops and ridership': {
     itemId: 'hosted by UTA',

@@ -17,9 +17,10 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'uta routes and ridership',
+  title: 'UTA Routes and Ridership',
   description: `Utah Transit Authority (UTA) routes for bus, light rail (TRAX), and commuter rail (Frontrunner).`,
   stewards: ['Utah Transit Authority (UTA)', 'UGRC'],
+  application: 'https://rideuta.maps.arcgis.com/apps/webappviewer/index.html?id=448c3cfe44264f1e8931073dfb6e5417',
   type: ProductType.POLYLINE,
   category: SgidCategory.TRANSPORTATION,
   secondaryCategory: SgidCategory.PLANNING,
@@ -62,6 +63,9 @@ const page: IPageMetadata = {
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="UTA" href="https://www.rideuta.com/">Utah Transit Authority.</CardWithPopularLink>
+      <CardWithPopularLink title="UTA data portal" href="https://data-rideuta.opendata.arcgis.com/"
+        >Utah Transit Authority Data Portal.</CardWithPopularLink
+      >
       <CardWithPopularLink title="UDOT" href="https://www.udot.utah.gov/connect/public/public-transit/"
         >Public transit.</CardWithPopularLink
       >
