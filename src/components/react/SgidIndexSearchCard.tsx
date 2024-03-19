@@ -83,13 +83,13 @@ export default function SgidIndexSearchCard({ astroSite, record }: Props) {
             <span className="text-sm font-semibold text-secondary dark:text-white">Open SGID: </span>
             <pre className="inline text-sm">
               {record.openSgid.split('.').map((part, index) => (
-                <>
+                <Fragment key={index}>
                   <span>
                     {part}
                     {index === 0 ? '.' : null}
                   </span>
                   <wbr />
-                </>
+                </Fragment>
               ))}
             </pre>
           </div>
