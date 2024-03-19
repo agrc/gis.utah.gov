@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Culinary Water Service Areas',
-  description: `Retail culinary water suppliers service area boundaries for the State of Utah, with a small selection of suppliers in Idaho and Wyoming represented as well.`,
+  pageTitle: 'Utah Culinary Water Service Areas',
+  pageDescription: `Retail culinary water suppliers service area boundaries for the State of Utah, with a small selection of suppliers in Idaho and Wyoming represented as well.`,
   stewards: ['Division of Water Resources'],
   type: ProductType.POLYGON,
   category: SgidCategory.UTILITIES,
@@ -30,12 +30,12 @@ const page: IPageMetadata = {
   updateHistory: [`Annually (per DNR schedule)`],
 
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
