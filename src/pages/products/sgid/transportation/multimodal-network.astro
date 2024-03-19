@@ -29,18 +29,18 @@ const page: IPageMetadata = {
   updateHistory: [`Monthly`],
   links: [
     {
-      title: 'Multimodal dataset as a file geodatabase',
+      title: 'Utah Multimodal Network dataset as a file geodatabase',
       url: 'https://drive.google.com/uc?id=1DK1eYvl7NAHeL0zdFe8MgwSP2NA9XQcN&export=download',
     },
     {
-      title: 'Multimodal layer as a shapefile',
+      title: 'Utah Multimodal Network layer as a shapefile',
       url: 'https://drive.google.com/uc?id=1gFLwycp6SChbczQ7o4ov-DGQo-LgQFK5&export=download',
     },
   ],
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
@@ -61,7 +61,7 @@ const page: IPageMetadata = {
   </Fragment>
 
   <Section title="Download the data" slot="downloads" titlePosition="center">
-    <DirectDownloads title="ESRI Street Network Dataset" links={page.links!} />
+    <DirectDownloads title="From Google Drive" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
@@ -135,7 +135,7 @@ const page: IPageMetadata = {
       <CardWithSmallLink title="Utah Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
         >Utah Roads dataset.</CardWithSmallLink
       >
-      <CardWithSmallLink title="UDOT Data Portal" href="https://data-uplan.opendata.arcgis.com/"
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data-uplan.opendata.arcgis.com/" style="secondary"
         >Search UDOT's geospatial data.</CardWithSmallLink
       >
     </GridForYouMightLike>
