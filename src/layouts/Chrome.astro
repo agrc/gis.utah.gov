@@ -17,13 +17,13 @@ import '../styles/tailwind.css';
 
 const { pathname } = Astro.url;
 export interface Props extends Omit<IStandardPageMetadata, 'section'> {}
-const { pageTitle = 'UGRC', pillar, bannerHeading } = Astro.props;
+const { pageTitle = 'UGRC', pillar, bannerHeading, pageDescription = SITE_DESCRIPTION } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={`${SITE_TITLE} - ${pageTitle}`} description={SITE_DESCRIPTION} />
+    <BaseHead title={`${SITE_TITLE} - ${pageTitle}`} description={pageDescription} />
   </head>
   <body class="bg-white dark:bg-primary/90">
     <Header client:load>

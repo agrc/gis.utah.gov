@@ -34,11 +34,12 @@ const page: IPageMetadata = {
 ---
 
 <Layout
-  title={page.title}
+  pageTitle={page.title}
   subTitle={page.updateHistory[0]}
   category={page.category}
   actionUrl={page.application}
   config={{ skipInDepth: true }}
+  pageDescription={page.description}
 >
   <Metadata slot="metadata" {...page} />
 

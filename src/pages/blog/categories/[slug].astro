@@ -30,7 +30,7 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 const { category, posts } = Astro.props;
 ---
 
-<Layout pageTitle="Post categories" category={category}>
+<Layout pageTitle="Post categories" category={category} pageDescription={`UGRC blog posts in ${category} category`}>
   <Fragment slot="categories">
     {
       categories.map((category: BlogFilter) => (

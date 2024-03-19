@@ -8,6 +8,7 @@ import Section from '@components/page/Section.astro';
 
 interface Props {
   pageTitle: string;
+  pageDescription?: string;
   subTitle?: string;
   category: SgidCategory;
   actionUrl?: string;
@@ -17,10 +18,14 @@ interface Props {
   };
 }
 
-const { pageTitle = 'UGRC', subTitle, category, actionUrl, config } = Astro.props;
+const { pageTitle = 'UGRC', pageDescription, subTitle, category, actionUrl, config } = Astro.props;
 ---
 
-<Layout bannerHeading={`SGID ${category.replaceAll('-', ' ').toLowerCase()}`} pageTitle={pageTitle}>
+<Layout
+  bannerHeading={`SGID ${category.replaceAll('-', ' ').toLowerCase()}`}
+  pageTitle={pageTitle}
+  pageDescription={pageDescription}
+>
   <BreadCrumbs category={category} product={pageTitle} />
 
   <Section

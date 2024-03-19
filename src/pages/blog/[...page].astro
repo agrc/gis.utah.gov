@@ -16,9 +16,10 @@ export async function getStaticPaths({ paginate }) {
 
 const categories = await getBlogFilters('categories');
 const { page } = Astro.props as { page: Page<DecoratedBlogEntry> };
+const pageDescription = 'A collection of UGRC blog posts on various topics.';
 ---
 
-<Layout pageTitle="Post categories" category="All">
+<Layout pageTitle="Post categories" category="All" pageDescription={pageDescription}>
   <Pagination page={page} class="my-5" baseHref="blog" slot="pagination" />
   <Fragment slot="categories">
     {
