@@ -18,7 +18,8 @@ const dates = {
 
 if (import.meta.env.NETLIFY) {
   console.log('using ci credentials');
-  let client = auth.fromJSON(JSON.parse(import.meta.env.GOOGLE_PRIVATE_KEY));
+  const client = auth.fromJSON(JSON.parse(import.meta.env.GOOGLE_PRIVATE_KEY));
+  // @ts-ignore (they need to fix their types, this is valid ref: https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest#:~:text=const%20client%20%3D%20auth.fromJSON(keys)%3B)
   client.scopes = scopes;
   const sheet = new GoogleSpreadsheet(sheetId, client);
   await sheet.loadInfo();
