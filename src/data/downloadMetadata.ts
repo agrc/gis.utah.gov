@@ -1967,8 +1967,8 @@ export const dataPages: DownloadMetadata = {
   'Utah UTA Light Rail Stations': {
     itemId: 'bb8f7bc8871b4a7594bcc037631073e7',
     name: 'Utah UTA Light Rail Stations',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'LightRailStations_UTA',
+    openSgid: 'transportation.uta_light_rail_stations',
     layerId: 0,
   },
   'Utah UTA Commuter Rail Stations': {
