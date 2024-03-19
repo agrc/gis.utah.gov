@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah UTA Commuter Rail Stations',
-  description: `Point locations of Utah Transit Authority (UTA) commuter rail (FrontRunner) stations.`,
+  pageTitle: 'Utah UTA Commuter Rail Stations',
+  pageDescription: `Point locations of Utah Transit Authority (UTA) commuter rail (FrontRunner) stations.`,
   stewards: ['Utah Transit Authority (UTA)', 'UGRC'],
   type: ProductType.POINT,
   category: SgidCategory.TRANSPORTATION,
@@ -28,18 +28,12 @@ const page: IPageMetadata = {
   ...metadata,
   updateHistory: [`May 2019`, `December 2018`, `May 2013`],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  pageDescription={page.description}
-  category={page.category}
-  actionUrl={page.application}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

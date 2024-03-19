@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Coal Deposits',
-  description: `Areas of coal deposits in Utah as defined in 1988.`,
+  pageTitle: 'Utah Coal Deposits',
+  pageDescription: `Areas of coal deposits in Utah as defined in 1988.`,
   stewards: ['UGRC'],
   type: ProductType.POLYGON,
   category: SgidCategory.ENERGY,
@@ -33,13 +33,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  pageDescription={page.description}
-  category={page.category}
-  actionUrl={page.application}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

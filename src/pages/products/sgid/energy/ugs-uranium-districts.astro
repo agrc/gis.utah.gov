@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah UGS Uranium Districts',
-  description: `Uranium district boundaries from the Utah Geological Survey (UGS) in Utah.`,
+  pageTitle: 'Utah UGS Uranium Districts',
+  pageDescription: `Uranium district boundaries from the Utah Geological Survey (UGS) in Utah.`,
   stewards: ['UGRC'],
   type: ProductType.POLYGON,
   category: SgidCategory.ENERGY,
@@ -28,18 +28,12 @@ const page: IPageMetadata = {
   ...metadata,
   updateHistory: [`Unknown`],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  pageDescription={page.description}
-  category={page.category}
-  actionUrl={page.application}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
