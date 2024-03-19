@@ -75,7 +75,6 @@
     "src/**/*"
   ],
   "exclude": [
-    "node_modules",
     "dist",
     "src/migrations",
     "src/scripts"
