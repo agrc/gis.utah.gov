@@ -29,14 +29,14 @@ const page: IPageMetadata = {
   updateHistory: [`Monthly`],
   links: [
     {
-      title: 'Network dataset as a file geodatabase',
+      title: 'Utah Street Network dataset as a file geodatabase',
       url: 'https://drive.google.com/a/utah.gov/uc?id=1NmMCS8HjxFPF-K6XjaV0FznhS0ejwqRc&export=download',
     },
   ],
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
@@ -54,7 +54,7 @@ const page: IPageMetadata = {
   </Fragment>
 
   <Section title="Download the data" slot="downloads" titlePosition="center">
-    <DirectDownloads title="ESRI Street Network Dataset" links={page.links!} />
+    <DirectDownloads title="From Google Drive" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
@@ -112,7 +112,7 @@ const page: IPageMetadata = {
       <CardWithSmallLink title="Utah Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
         >Utah Roads dataset.</CardWithSmallLink
       >
-      <CardWithSmallLink title="UDOT Data Portal" href="https://data-uplan.opendata.arcgis.com/"
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data-uplan.opendata.arcgis.com/" style="secondary"
         >Search UDOT's geospatial data.</CardWithSmallLink
       >
     </GridForYouMightLike>
