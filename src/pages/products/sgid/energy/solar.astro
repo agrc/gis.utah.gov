@@ -18,7 +18,7 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Renewable Solar Resources',
+  title: 'Solar',
   description: `Renewable solar resources.`,
   stewards: ['UGRC', 'Utah Renewable Energy Zone (UREZ) Task Force'],
   type: ProductType.POLYGON,
@@ -67,18 +67,18 @@ const page: IPageMetadata = {
         href="https://opendata.gis.utah.gov/datasets/utah-urez-phase-2-conceptual-transmission"
         >UREZ Phase 2 Conceptual Transmission Lines on UGRC's SGID on ArcGIS.</CardWithPopularLink
       >
+      <CardWithPopularLink
+        title="UREZ Phase 2 Zone Boundaries"
+        href="https://opendata.gis.utah.gov/datasets/utah-urez-phase-2-zone-boundaries"
+        >UREZ Phase 2 Zone Boundaries on UGRC's SGID on ArcGIS.</CardWithPopularLink
+      >
     </GridForMoreResources>
-    <CardWithPopularLink
-      title="UREZ Phase 2 Zone Boundaries"
-      href="https://opendata.gis.utah.gov/datasets/utah-urez-phase-2-zone-boundaries"
-      >UREZ Phase 2 Zone Boundaries on UGRC's SGID on ArcGIS.</CardWithPopularLink
-    >
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Energy" href="/products/sgid/energy">Energy page</CardWithSmallLink>
+      <CardWithSmallLink title="Utilities" href="/products/sgid/utilities">Utilities page</CardWithSmallLink>
+    </GridForYouMightLike>
   </Section>
 </Layout>
-
-<Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
-  <GridForYouMightLike>
-    <CardWithSmallLink title="Energy" href="/products/sgid/energy">Energy page</CardWithSmallLink>
-    <CardWithSmallLink title="Utilities" href="/products/sgid/utilities">Utilities page</CardWithSmallLink>
-  </GridForYouMightLike>
-</Section>
