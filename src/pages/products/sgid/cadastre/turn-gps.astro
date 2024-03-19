@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import Metadata from '@components/data/Metadata.astro';
 
@@ -14,8 +14,8 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 export const metadata: IMetadata = {
-  title: 'TURN GPS Network',
-  description: `The Utah Reference Network (TURN) GPS is a GNSS network of permanently located GPS receivers, installed across the state, to generate real time high accuracy GPS positioning.`,
+  pageTitle: 'TURN GPS Network',
+  pageDescription: `The Utah Reference Network (TURN) GPS is a GNSS network of permanently located GPS receivers, installed across the state, to generate real time high accuracy GPS positioning.`,
   stewards: ['UGRC'],
   type: ProductType.GPS_NETWORK,
   category: SgidCategory.CADASTRE,
@@ -25,18 +25,13 @@ const page: IPageMetadata = {
   ...metadata,
   application: 'https://turngps.utah.gov/Map/SensorMap.aspx',
   updateHistory: ['2024', '2023'],
+  config: {
+    skipInDepth: true,
+  },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  config={{
-    skipInDepth: true,
-  }}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
