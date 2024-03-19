@@ -10,12 +10,18 @@ import { Image } from 'astro:assets';
 import myBackground from '../images/404.webp';
 ---
 
-<Layout pageTitle="null island">
+<Layout pageTitle="Page not found" bannerHeading="Welcome to null island">
   <Section>
     <Image src={myBackground} alt="null island" width="454" slot="image" class="rounded-lg dark:invert" />
     <h2>We're sorry but...</h2>
     <div class="space-y-5">
-      <p class="font-black">{Astro.url.pathname}</p>
+      <script>
+        const node = document.getElementById('url');
+        if (node) {
+          node.textContent = window.location.pathname;
+        }
+      </script>
+      <p id="url" class="font-black">{Astro.url.pathname}</p>
       <p>was not found or has not been created yet – or someone forgot to set the spatial reference...</p>
     </div>
     <h3>Now what</h3>
