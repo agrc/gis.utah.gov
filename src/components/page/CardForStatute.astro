@@ -5,11 +5,17 @@ interface Props {
   href: string;
   code: string;
   title: string;
+  style?: 'primary' | 'secondary';
 }
-const { href, code, title } = Astro.props;
+const { href, code, title, style = 'primary' } = Astro.props;
 ---
 
-<div class="flex rounded-lg border border-zinc-400 bg-primary px-6 py-3 dark:border-white/20">
+<div
+  class:list={[
+    'flex rounded-lg border border-zinc-400 bg-primary px-6 py-3 dark:border-white/20',
+    style === 'secondary' && 'dark:bg-secondary',
+  ]}
+>
   <div class="flex grow flex-col">
     <h4 class="uppercase text-zinc-50">{title}</h4>
     <p class="font-semibold uppercase text-accent">{code}</p>
