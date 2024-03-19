@@ -1,0 +1,71 @@
+name: Pull Request Events
+
+on:
+  pull_request:
+    paths:
+      - 'public/_redirects'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  pull-requests: write
+
+jobs:
+  validate:
+    name: Validate redirects
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Set up code
+        uses: actions/checkout@v4
+        with:
+          show-progress: false
+
+      - name: ⎔ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: 🏗️ Build Site
+        working-directory: ./
+        env:
+          GOOGLE_PRIVATE_KEY: ${{ secrets.SA }}
+          NETLIFY: 1
+        run: |
+          npm install
+          npm run build
+
+      - name: 📦 Install Script Dependencies
+        working-directory: ./src/scripts
+        run: |
+          npm install
+
+      - name: ✔ Validate redirects
+        uses: gh640/command-result-action@v1
+        id: validate
+        with:
+          command: node validate-redirects.mjs
+          cwd: ./src/scripts
+
+      - name: ✍️ Updating PR Comment
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          comment_tag: validation-results
+          message: |
+            ### Redirects Validation Output
+
+            #### `stdout`
+            ```
+            ${{ steps.validate.outputs.stdout }}
+            ```
+
+            #### `stderr`
+            ```
+            ${{ steps.validate.outputs.stderr }}
+            ```
+
+      - name: 🚦 Check for errors
+        run: exit ${{ steps.validate.outputs.exitCode }}
