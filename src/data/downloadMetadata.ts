@@ -782,11 +782,14 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah Oil Gas Wells': {
+    externalHubOrganization: 'utahDNR',
     itemId: 'hosted by DOGM',
     name: 'Utah Oil Gas Wells',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'viewAGRC_WellData_Surf',
+    openSgid: 'energy.oil_gas_wells',
     layerId: 0,
+    featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/',
+    oddHubName: 'utah-oil-and-gas-well-locations'
   },
   'Utah Oil Gas Wells Down Holes': {
     itemId: 'hosted by DOGM',
