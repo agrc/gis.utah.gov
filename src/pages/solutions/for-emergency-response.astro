@@ -9,7 +9,7 @@ import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
-import developmentPhoto from '@images/solutions/development.svg';
+import developmentPhoto from '@images/solutions/monitor-station.svg';
 import rocketPhoto from '@images/solutions/rocket.svg';
 
 import { stripeSections } from '@utils/page';
@@ -23,6 +23,7 @@ const page: IStandardPageMetadata = {
     { title: 'Resources for 911' },
     { title: 'Service area boundaries' },
     { title: 'Civic Location data' },
+    { title: 'NG911 data and solutions' },
     { title: 'Additional resources and services' },
   ]),
 };
@@ -63,6 +64,9 @@ const page: IStandardPageMetadata = {
     <p>lorem</p>
   </Section>
   <Section {...page.section[3]}>
+    <p>lorem</p>
+  </Section>
+  <Section {...page.section[4]}>
     <p>lorem</p>
   </Section>
 </Layout>
