@@ -805,8 +805,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Permitted Uranium Mines': {
     itemId: '222316608b7d4f23b3e18c7bb0596c75',
     name: 'Utah Permitted Uranium Mines',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'PermittedUraniumMines',
+    openSgid: 'energy.permitted_uranium_mines',
     layerId: 0,
   },
   'Utah Power Plants CO2': {
@@ -826,29 +826,29 @@ export const dataPages: DownloadMetadata = {
   'Utah Uranium Area Boundaries': {
     itemId: '3eba2c1bd5bf4165bee3caf6c1525eae',
     name: 'Utah Uranium Area Boundaries',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UraniumAreaBoundaries',
+    openSgid: 'energy.uranium_area_boundaries',
     layerId: 0,
   },
   'Utah UGS Uranium Districts': {
     itemId: '1b9c8a48aae84adb81294e766cbe4b3c',
     name: 'Utah UGS Uranium Districts',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UraniumDistricts_UGS',
+    openSgid: 'energy.ugs_uranium_districts',
     layerId: 0,
   },
   'Utah Uranium Mills': {
     itemId: 'd49fd89f13c04a43b9b6ff0a684ad875',
     name: 'Utah Uranium Mills',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UraniumMills',
+    openSgid: 'energy.uranium_mills',
     layerId: 0,
   },
   'Utah Uranium Past Producers': {
     itemId: 'bb603c7f82ad473296c0d4bef14da185',
     name: 'Utah Uranium Past Producers',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UraniumPastProducers',
+    openSgid: 'energy.uranium_past_producers',
     layerId: 0,
   },
   'Utah UREZ Phase 1 Geothermal Zones': {
