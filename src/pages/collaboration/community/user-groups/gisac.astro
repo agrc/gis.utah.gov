@@ -1,0 +1,86 @@
+---
+import Layout from '@layouts/FullWidth.astro';
+
+import { Pillar, type IStandardPageMetadata } from '@models/types';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+
+import { Image } from 'astro:assets';
+
+import boxesPhoto from '@images/collaboration/boxes.svg';
+import collaborationPhoto from '@images/collaboration/collaboration.svg';
+import groupPhoto from '@images/collaboration/group.svg';
+import growthPhoto from '@images/collaboration/growth.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  pageTitle: 'Utah Geographic Information Systems Advisory Council',
+  pageDescription:
+    'The Geographic Information Systems Advisory Council (GISAC) fulfills the need of a coordinating body for statewide geospatial efforts.',
+  pillar: Pillar.COLLABORATION,
+  section: stripeSections([
+    { title: `Why do we need GISAC` },
+    { title: 'What should GISAC accomplish' },
+    { title: 'Where is GISAC now' },
+    { title: 'Where does GISAC want to go' },
+  ]),
+};
+---
+
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      slot="image"
+      src={groupPhoto}
+      loading="eager"
+      alt="people together in a room"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      The Geographic Information Systems Advisory Council (GISAC) fulfills the need of a coordinating body for statewide
+      geospatial efforts. For example in the 1990s it was Digital Ortho-photo quads, also road attributes. Later it was
+      joint efforts such as the Public Land Survey System (PLSS) with the Bureau of Land Management (BLM), the state of
+      Utah and other interested parties.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <Image
+      slot="image"
+      src={collaborationPhoto}
+      alt="Three people holding hands walking up a mountain with a flag"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      With a combined body of interested parties GISAC can seek funding for statewide projects, or leverage its
+      influence in data standards and best practices for GIS in Utah.GISAC activity has ebbed and flowed over the years.
+      In some states the GISAC members are appointed by the governor and the group directs the efforts of the state GIS
+      shop. In Utah the members are appointed by the Director of the Utah Geospatial Reference Center and as needed the
+      group works on issues pertinent to the day.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <Image slot="image" src={boxesPhoto} alt="A person packing boxes" class="w-full max-w-[400px] rounded-2xl" />
+    <p>
+      As we start to look at more ways to coordinate and streamline the data aggregation efforts with stewards, the need
+      for GISAC and its coordination role are coming to the fore once again and it will be active in the near future.
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <Image
+      slot="image"
+      src={growthPhoto}
+      alt="A person with a jet pack flying into the future"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      In the future GISAC would be part of a larger effort to provide an umbrella of guidance for agencies and a bridge
+      to state, local, and federal partners. GISAC should always be looking at more ways to coordinate and streamline
+      the data aggregation efforts with stewards.
+    </p>
+  </Section>
+</Layout>
