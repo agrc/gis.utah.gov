@@ -17,7 +17,7 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah UTA Commuter Rail Stations', // The ArcGIS Online title Goes Here (Utah blah blah)
+  title: 'Utah UTA Commuter Rail Stations',
   description: `Point locations of Utah Transit Authority (UTA) commuter rail (FrontRunner) stations.`,
   stewards: ['Utah Transit Authority (UTA)', 'UGRC'],
   type: ProductType.POINT,
@@ -33,7 +33,13 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout
+  pageTitle={page.title}
+  subTitle={page.updateHistory[0]}
+  pageDescription={page.description}
+  category={page.category}
+  actionUrl={page.application}
+>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
