@@ -61,36 +61,52 @@ export const Menu = ({ children, currentUri }) => {
           <NavigationMenu.Content className="absolute left-0 top-0 w-full data-[motion=from-end]:animate-in data-[motion=from-start]:animate-in data-[motion=to-end]:animate-out data-[motion=to-start]:animate-out data-[motion=from-end]:slide-in-from-right data-[motion=from-start]:slide-in-from-left data-[motion=to-end]:slide-out-to-right data-[motion=to-start]:slide-out-to-left data-[motion=from-end]:anim-duration-500 data-[motion=from-start]:anim-duration-500 data-[motion=to-end]:anim-duration-500 data-[motion=to-start]:anim-duration-500 sm:w-auto">
             <MegaMenuChrome className="flex w-full flex-row gap-4 pr-6 md:gap-2">
               <MegaMenuItem title="By audience" containerCss="md:w-1/3">
-                <ListItem href="/solutions/for-government" title="Government employees">
+                <ListItem href="/solutions/for-government" title="Government employees" className="col-span-2">
                   Partner with us to geo-enable your agency.
                 </ListItem>
-                <ListItem href="/solutions/for-gis-users" title="GIS users">
+                <ListItem href="/solutions/for-gis-users" title="GIS users" className="col-span-2">
                   Integrate our data and services with your GIS.
                 </ListItem>
-                <ListItem href="/solutions/for-application-developers" title="Application developers">
+                <ListItem
+                  href="/solutions/for-application-developers"
+                  title="Application developers"
+                  className="col-span-2"
+                >
                   Use our tools and resources to innovate and build.
                 </ListItem>
-                <ListItem href="/solutions/for-surveyors" title="Surveyors">
+                <ListItem href="/solutions/for-surveyors" title="Surveyors" className="col-span-2">
                   Find your direction. We can help.
                 </ListItem>
-                <ListItem href="/solutions/for-students" title="Students">
+                <ListItem href="/solutions/for-students" title="Students" className="col-span-2">
                   Learning never ends.
                 </ListItem>
               </MegaMenuItem>
               <MegaMenuItem title="By use case" containerCss="md:w-1/3">
-                <ListItem href="/solutions/spatial-data-management" title="Spatial data management">
+                <ListItem
+                  href="/solutions/spatial-data-management"
+                  title="Spatial data management"
+                  className="col-span-2"
+                >
                   Learn how we can help.
                 </ListItem>
-                <ListItem href="/solutions/for-emergency-response" title="Emergency response (911)">
+                <ListItem
+                  href="/solutions/for-emergency-response"
+                  title="Emergency response (911)"
+                  className="col-span-2"
+                >
                   Data and solutions for when it matters most.
                 </ListItem>
-                <ListItem href="/solutions/gis-strategy" title="GIS strategy">
+                <ListItem href="/solutions/gis-strategy" title="GIS strategy" className="col-span-2">
                   Begin thinking bigger by thinking differently.
                 </ListItem>
-                <ListItem href="/solutions/gis-integration" title="Integrating GIS">
+                <ListItem href="/solutions/gis-integration" title="Integrating GIS" className="col-span-2">
                   Location matters to your business processes.
                 </ListItem>
-                <ListItem href="/solutions/high-precision-location" title="High precision location">
+                <ListItem
+                  href="/solutions/high-precision-location"
+                  title="High precision location"
+                  className="col-span-2"
+                >
                   Examples of how a high precision GPS network can be used.
                 </ListItem>
               </MegaMenuItem>
@@ -350,7 +366,7 @@ const MegaMenuItem = ({ children, title, containerCss }) => (
   </div>
 );
 const ListItem = React.forwardRef(({ className, children, title, ...props }, forwardedRef) => (
-  <li className="group">
+  <li className={'group ' + className}>
     <NavigationMenu.Link asChild>
       <a
         className={classNames(
