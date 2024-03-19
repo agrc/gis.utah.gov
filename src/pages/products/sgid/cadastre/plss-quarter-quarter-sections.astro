@@ -1,0 +1,147 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import CommonConversions from '@models/_partials/CommonConversions.astro';
+import PlssGlance from '@models/_partials/PlssGlance.astro';
+import PlssPointId from '@models/_partials/PlssPointId.astro';
+import PlssTownshipRange from '@models/_partials/PlssTownshipRange.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah PLSS Quarter Quarter Sections GCDB',
+  description: `The polygons in PLSS Quarter Quarter Section GCDB represent the smallest division that has been defined for the first division.`,
+  stewards: ['UGRC', 'BLM', 'SITLA', 'Utah Counties', 'Premier Data Services'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.CADASTRE,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://plss.utah.gov/',
+  updateHistory: [
+    `December 15, 2020`,
+    `October 15, 2019`,
+    `January 15, 2019`,
+    `January 1, 2018`,
+    `November 1, 2016`,
+    `August 28, 2015`,
+  ],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      PLSS Quarter Quarter Sections GCBD is a polygon dataset. Second division (QuarterQuarter) data is commonly an
+      aliquot part of quarter sections but could be a lot or other division. GCDB base attribute data was used to create
+      the second division feature class.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      Lots were dissolved to the section level. Survey_type: B (aliquot parts less than 40 acres) for geopolitical
+      splits were attributed as Survey_type: A. This data is derived from the PLSS Intersected feature class of the Utah
+      PLSS Fabric GISv2.3 2020. This layer is based on Geographic Coordinate Data Base (GCDB) coordinate data. The
+      locations of Public Land Survey System (PLSS) corners, as represented in geographic coordinate pairs, were derived
+      from a variety of source documents, which include U.S. General Land Office and BLM survey plats/notes, as well as
+      survey data obtained from other U.S. Government agencies, private sector survey firms, and local governments. The
+      attributes assigned to PLSS polygons were taken from the BLM's Legal Land Description (LLD) data set, contained
+      within the Legacy Rehost for the year 2000 (LR2000) automated records system. The coordinate data was produced by
+      using control stations of known location, with varying degrees of accuracy, from various sources which include but
+      are not limited to; U.S. Geological Survey (USGS) topological quadrangles and other sources, National Geodetic
+      Survey (NGS) and US Coast & Geodetic Survey (USC&GS) Cooperative Base Network (CBN) control, Federal Base Network
+      control (FBN), and Continuous Operating Reference Stations (CORS), and Global Positioning System (GPS) data, which
+      is then analyzed and adjusted in concert with official survey data for any given geographic area. This data is a
+      useful representation of the geometry and topology of parcels contained within the PLSS, but its application is
+      intended for mapping purposes only. The GCDB data is not a substitute for a legal land survey.
+    </p>
+    <p>
+      The native spatial reference for this dataset is UTM Zone 12N, NAD83 (0.01 meter x,y coordinate precision; 0.001
+      mile m coordinate precision). There are no constraints or warranties with regard to the use of this dataset. Users
+      are encouraged to attribute content to UGRC. This statewide dataset is maintained by UGRC in partnership with the
+      BLM and local government. The geographic coordinates and their associated products are NOT legal land survey
+      records. The coordinates can NOT be used as a substitute for a legal land survey. They can be used for record
+      keeping, mapping, graphics and planning purposes only. No warranty is made by the Bureau of Land Management for
+      use of the data for purposes not intended by BLM.
+    </p>
+    <p>
+      Updates were made to Quarter Quarter Sections in Utah County to add quarter-quarter sections to areas that were
+      not broken down less than the Section level. These are labeled as SECDIVTYP = Z and SECDIVTXT = Unsurveyed
+      Unprotracted. They were added, using information from points collected by county surveyors, that is in the data
+      and extrapolating information from adjoining sections wherever possible. They are still areas that could not be
+      interpreted well enough and they were left empty, beyond the section level. In the future this data will continue
+      to be carried in this feature class but not incorporated into the official PLSS Fabric.
+    </p>
+  </Fragment>
+
+  <Section slot="extra" title="PLSS at a glance">
+    <PlssGlance />
+  </Section>
+
+  <Section slot="extra" title="Township and range explained" stripe>
+    <PlssTownshipRange />
+  </Section>
+
+  <Section slot="extra" title="Geographic Coordinate Data Base (GCDB) is explained">
+    <PlssPointId />
+  </Section>
+
+  <Section slot="extra" title="Common conversions" stripe>
+    <CommonConversions />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah PLSS Points" href="/products/sgid/cadastre/plss-points"
+        >Utah PLSS point data.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah PLSS Sections" href="/products/sgid/cadastre/plss-sections"
+        >Utah PLSS section data.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
+        >Utah boundary data.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Parcel App" href="https://parcels.utah.gov" style="secondary"
+        >Utah parcel web application.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="PLSS Web application" href="https://plss.utah.gov" style="secondary"
+        >Utah PLSS web application.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Utah PLSS Townships" href="/products/sgid/cadastre/plss-townships" style="secondary"
+        >Utah PLSS township and range polygons.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
