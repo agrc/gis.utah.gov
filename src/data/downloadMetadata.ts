@@ -1017,7 +1017,7 @@ export const dataPages: DownloadMetadata = {
     itemId: 'hosted by DNR',
     name: 'Utah Culinary Water Service Areas',
     featureServiceId: null,
-    openSgid: '',
+    openSgid: 'utilities.culinary_water_service_areas',
     layerId: 0,
   },
   'Utah DWQ Monitoring Locations': {
@@ -1653,7 +1653,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Water Related Land Use': {
     itemId: 'e3e7fc9316bb4ad09474401ff46e734f',
     name: 'Utah Water Related Land Use',
-    featureServiceId: 'WaterRelatedLandUse',
+    featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/',
+    featureServiceId: 'CulinaryWaterServiceAreas',
     openSgid: 'planning.water_related_land_use',
     layerId: 0,
   },
