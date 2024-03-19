@@ -1,0 +1,81 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import Disclaimer from '@components/data/Disclaimer.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Permitted Uranium Mines',
+  description: `Permitted uranium mines in Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.ENERGY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`Unknown`],
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset contains the locations of permitted uranium mines in Utah in addition to a mine ID, type, status,
+      name, operator, product and more.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Disclaimer slot="disclaimer">
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+  </Disclaimer>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Uranium Mills" href="/products/sgid/energy/permitted-uranium-mills"
+        >Uranium mills in Utah.</CardWithPopularLink
+      >
+
+      <CardWithPopularLink title="Uranium Past Producers" href="/products/sgid/energy/uranium-past-producers"
+        >Uranium past producers in Utah.</CardWithPopularLink
+      >
+
+      <CardWithPopularLink title="Uranium Area Boundaries" href="/products/sgid/energy/uranium-area-boundaries"
+        >Uranium area boundaries in Utah.</CardWithPopularLink
+      >
+
+      <CardWithPopularLink title="Uranium Districts (UGS)" href="/products/sgid/energy/ugs-uranium-districts"
+        >Uranium districts from the Utah Geological Survey (UGS) in Utah.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Energy" href="/products/sgid/energy">Energy page</CardWithSmallLink>
+      <CardWithSmallLink title="Utilities" href="/products/sgid/utilities">Utilities page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
