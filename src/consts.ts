@@ -3,5 +3,5 @@
 
 export const SITE_TITLE = 'UGRC';
 export const SITE_DESCRIPTION =
-  "UGRC is the state's map technology coordination office. We aggregate and make available important statewide data sets (e.g. roads, address points) to the public and for government systems; engage and advise on GIS implementations and best practices; and build custom tools, services, and applications for all levels of government throughout the state to improve their business processes by integrating spatial data.";
+  "We are the Utah's map technology coordination office. We aggregate and make available important statewide data sets; engage and advise on GIS implementations and best practices; and build custom tools, services, and applications for all levels of government.";
 export const GA_ID = 'G-MD7LCFF9Y1';
