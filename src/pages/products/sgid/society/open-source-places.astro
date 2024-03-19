@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import Disclaimer from '@components/data/Disclaimer.astro';
 import HubDownloads from '@components/data/HubDownloads.astro';
@@ -23,8 +23,8 @@ import { dataPages } from '@data/downloadMetadata';
 import { Code } from 'astro:components';
 
 export const metadata: IMetadata = {
-  title: 'Utah Open Source Places',
-  description: `Point representation of places of interest including businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, and car dealerships in Utah that have been derived from OpenStreetMap (OSM).`,
+  pageTitle: 'Utah Open Source Places',
+  pageDescription: `Point representation of places of interest including businesses, restaurants, places of worship, airports, parks, schools, event centers, apartment complexes, hotels, and car dealerships in Utah that have been derived from OpenStreetMap (OSM).`,
   stewards: ['OpenStreetMap', 'UGRC'],
   type: ProductType.POINT,
   category: SgidCategory.SOCIETY,
@@ -42,18 +42,12 @@ const page: IPageMetadata = {
     'February 2023',
   ],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

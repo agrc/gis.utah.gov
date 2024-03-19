@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'UTA Routes and Ridership',
-  description: `Utah Transit Authority (UTA) routes for bus, light rail (TRAX), and commuter rail (Frontrunner).`,
+  pageTitle: 'UTA Routes and Ridership',
+  pageDescription: `Utah Transit Authority (UTA) routes for bus, light rail (TRAX), and commuter rail (Frontrunner).`,
   stewards: ['Utah Transit Authority (UTA)', 'UGRC'],
   type: ProductType.POLYLINE,
   category: SgidCategory.TRANSPORTATION,
@@ -31,18 +31,12 @@ const page: IPageMetadata = {
   updateHistory: [`November 2023`, `August 2023`, `April 2023`],
 
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

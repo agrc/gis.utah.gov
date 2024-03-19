@@ -1,6 +1,6 @@
 import SgidIndexSearchCard from '@components/react/SgidIndexSearchCard';
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
-import { SgidCategory, type StewardshipRecord } from '@models/products/sgid/types';
+import { SgidCategory, type StewardshipRecord } from '@models/types';
 import clsx from 'clsx';
 import Fuse from 'fuse.js';
 import startCase from 'lodash.startcase';

@@ -1,4 +1,4 @@
-import { ProductType, type StewardshipRecord } from '@models/products/sgid/types';
+import { ProductType, type StewardshipRecord } from '@models/types';
 import { GoogleAuth, auth } from 'google-auth-library';
 import type { JSONClient } from 'google-auth-library/build/src/auth/googleauth';
 import { GoogleSpreadsheet } from 'google-spreadsheet';

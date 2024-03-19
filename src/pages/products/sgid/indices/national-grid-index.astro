@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -21,8 +21,8 @@ import { Image } from 'astro:assets';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah National Grid',
-  description: `GIS mapping data representing the 1000m by 1000m United States National Grid (USNG) for Utah.`,
+  pageTitle: 'Utah National Grid',
+  pageDescription: `GIS mapping data representing the 1000m by 1000m United States National Grid (USNG) for Utah.`,
   stewards: [
     'UGRC',
     'USGS',
@@ -36,19 +36,12 @@ const page: IPageMetadata = {
   ...metadata,
   updateHistory: [`2001`],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  }
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

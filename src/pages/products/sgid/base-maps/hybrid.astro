@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -21,8 +21,8 @@ import { Image } from 'astro:assets';
 import samplePhoto from '@images/sgid/base-maps/hybrid-base-map.png';
 
 export const metadata: IMetadata = {
-  title: 'Utah Hybrid Base Map',
-  description: `A combination of the general reference features base map and our latest high-resolution imagery.`,
+  pageTitle: 'Utah Hybrid Base Map',
+  pageDescription: `A combination of the general reference features base map and our latest high-resolution imagery.`,
   stewards: ['UGRC'],
   type: ProductType.DISCOVER_SERVICE,
   category: SgidCategory.BASE_MAPS,
@@ -41,13 +41,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

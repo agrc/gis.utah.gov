@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import Metadata from '@components/data/Metadata.astro';
 
@@ -20,8 +20,8 @@ import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
 export const metadata: IMetadata = {
-  title: 'Utah Parcels',
-  description: `Basic parcel data for each of the 29 counties in Utah.`,
+  pageTitle: 'Utah Parcels',
+  pageDescription: `Basic parcel data for each of the 29 counties in Utah.`,
   stewards: ['UGRC', 'Local government'],
   type: ProductType.POLYGON,
   category: SgidCategory.CADASTRE,
@@ -296,13 +296,7 @@ const countyMetadata = [
 ];
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

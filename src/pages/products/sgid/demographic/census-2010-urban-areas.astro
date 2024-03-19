@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -17,8 +17,8 @@ import Census2010Description from '@partials/Census2010Description.astro';
 import Census2010Links from '@partials/Census2010Links.astro';
 
 export const metadata: IMetadata = {
-  title: 'Census 2010 Urban Areas',
-  description: `Densely-developed areas based on population and housing unit density.`,
+  pageTitle: 'Census 2010 Urban Areas',
+  pageDescription: `Densely-developed areas based on population and housing unit density.`,
   stewards: ['UGRC', 'US Census Bureau'],
   type: ProductType.POLYGON,
   category: SgidCategory.DEMOGRAPHIC,
@@ -35,13 +35,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

@@ -3,7 +3,7 @@ import startCase from 'lodash.capitalize';
 import { convertProductType, getArcGisHubUrl, getFeatureServiceUrl } from '@utils/data';
 
 import ExternalLink from '@components/react/ExternalLink';
-import { type StewardshipRecord } from '@models/products/sgid/types';
+import { type StewardshipRecord } from '@models/types';
 import { Fragment } from 'react/jsx-runtime';
 import dnrLogo from './dnr-logo.svg';
 import udotLogo from './udot-logo.svg';

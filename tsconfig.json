@@ -61,7 +61,7 @@
         "src/data/*"
       ],
       "@models/*": [
-        "src/pages/*"
+        "src/types/*"
       ],
       "@partials/*": [
         "src/pages/_partials/*"

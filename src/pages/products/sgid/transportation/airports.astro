@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Airports',
-  description: `Airport locations across the state.`,
+  pageTitle: 'Utah Airports',
+  pageDescription: `Airport locations across the state.`,
   stewards: ['UGRC'],
   type: ProductType.POINT,
   category: SgidCategory.TRANSPORTATION,
@@ -31,17 +31,9 @@ const page: IPageMetadata = {
     ...dataPages['Utah Airports'],
   },
 };
-
-const customName = 'Utah Airport Locations';
 ---
 
-<Layout
-  pageTitle={customName}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} pageTitle="Utah Airport Locations" subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Historic Lake Bonneville',
-  description: `Historic Lake Bonneville represents the geographic extent of the historic Lake Bonneville shoreline.`,
+  pageTitle: 'Utah Historic Lake Bonneville',
+  pageDescription: `Historic Lake Bonneville represents the geographic extent of the historic Lake Bonneville shoreline.`,
   stewards: ['UGRC'],
   type: ProductType.POLYGON,
   category: SgidCategory.WATER,
@@ -29,19 +29,13 @@ const page: IPageMetadata = {
   ...metadata,
   updateHistory: [`2007`],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
+  config: { skipInDepth: true },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  config={{ skipInDepth: true }}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

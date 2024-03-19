@@ -1,13 +1,7 @@
 ---
 import Layout from '@layouts/FullWidth.astro';
 
-import {
-  Pillar,
-  ProductType,
-  SgidCategory,
-  type IMetadata,
-  type IStandardPageMetadata,
-} from '@models/products/sgid/types';
+import { Pillar, ProductType, SgidCategory, type IMetadata, type IStandardPageMetadata } from '@models/types';
 
 import BreadCrumbs from '@components/data/BreadCrumbs.astro';
 
@@ -26,8 +20,8 @@ import doq from '@images/sgid/doq_sample.png';
 import { stripeSections } from '@utils/page';
 
 export const metadata: IMetadata = {
-  title: 'Digital Orthophoto Quadrangles (DOQ)',
-  description: `Low resolution color and black and white aerial photography collected by airplane.`,
+  pageTitle: 'Digital Orthophoto Quadrangles (DOQ)',
+  pageDescription: `Low resolution color and black and white aerial photography collected by airplane.`,
   stewards: ['UGRC', 'BLM'],
   type: ProductType.IMAGERY_RASTER,
   category: SgidCategory.AERIAL_PHOTOGRAPHY,
@@ -35,7 +29,7 @@ export const metadata: IMetadata = {
 
 const page: IStandardPageMetadata = {
   pageTitle: 'DOQs',
-  pageDescription: metadata.description,
+  pageDescription: metadata.pageDescription,
   pillar: Pillar.PRODUCTS,
   section: stripeSections([
     {
@@ -76,7 +70,7 @@ const page: IStandardPageMetadata = {
 ---
 
 <Layout {...page}>
-  <BreadCrumbs category={metadata.category} product={metadata.title} slot="crumbs" />
+  <BreadCrumbs category={metadata.category} product={metadata.pageTitle} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <a href={doq.src} slot="image">

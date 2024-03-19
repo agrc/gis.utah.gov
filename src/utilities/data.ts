@@ -1,4 +1,4 @@
-import { ProductType } from '@models/products/sgid/types';
+import { ProductType } from '@models/types';
 
 export const convertProductType = (type: ProductType) => {
   switch (type) {

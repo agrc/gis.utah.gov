@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -14,16 +14,16 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
-import CommonConversions from '@models/_partials/CommonConversions.astro';
-import PlssGlance from '@models/_partials/PlssGlance.astro';
-import PlssPointId from '@models/_partials/PlssPointId.astro';
-import PlssTownshipRange from '@models/_partials/PlssTownshipRange.astro';
+import CommonConversions from '@partials/CommonConversions.astro';
+import PlssGlance from '@partials/PlssGlance.astro';
+import PlssPointId from '@partials/PlssPointId.astro';
+import PlssTownshipRange from '@partials/PlssTownshipRange.astro';
 
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah PLSS Quarter Quarter Sections GCDB',
-  description: `The polygons in PLSS Quarter Quarter Section GCDB represent the smallest division that has been defined for the first division.`,
+  pageTitle: 'Utah PLSS Quarter Quarter Sections GCDB',
+  pageDescription: `The polygons in PLSS Quarter Quarter Section GCDB represent the smallest division that has been defined for the first division.`,
   stewards: ['UGRC', 'BLM', 'SITLA', 'Utah Counties', 'Premier Data Services'],
   type: ProductType.POLYGON,
   category: SgidCategory.CADASTRE,
@@ -42,18 +42,12 @@ const page: IPageMetadata = {
   ],
 
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

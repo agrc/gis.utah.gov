@@ -1,5 +1,5 @@
 ---
-import type { SgidCategory } from '@models/products/sgid/types';
+import type { SgidCategory } from '@models/types';
 
 import Layout from '@layouts/FullWidth.astro';
 
@@ -11,14 +11,14 @@ interface Props {
   pageDescription?: string;
   subTitle?: string;
   category: SgidCategory;
-  actionUrl?: string;
+  application?: string;
   config?: {
     skipInDepth?: boolean;
     stripeDescription?: boolean;
   };
 }
 
-const { pageTitle = 'UGRC', pageDescription, subTitle, category, actionUrl, config } = Astro.props;
+const { pageTitle = 'UGRC', pageDescription, subTitle, category, application, config } = Astro.props;
 ---
 
 <Layout
@@ -33,7 +33,7 @@ const { pageTitle = 'UGRC', pageDescription, subTitle, category, actionUrl, conf
     subTitle={`Last update · ${subTitle}`}
     stripe
     actionText="See the data in action"
-    actionUrl={actionUrl}
+    actionUrl={application}
     titlePosition="center"
   >
     <slot name="metadata" />

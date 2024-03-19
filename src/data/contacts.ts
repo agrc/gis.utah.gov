@@ -1,4 +1,4 @@
-import type { Contacts } from '@models/products/sgid/types';
+import type { Contacts } from '@models/types';
 
 export const contacts: Contacts = {
   ugrc: {
@@ -434,7 +434,7 @@ export const contacts: Contacts = {
     name: 'Kelli Bacon',
     email: 'kbacon@utah.gov',
     agency: 'UDOT',
-  },  
+  },
   bikeutah: {
     name: 'Chris Wiltsie',
     email: 'chris@bikeutah.org',

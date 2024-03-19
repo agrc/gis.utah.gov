@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -18,8 +18,8 @@ import { dataPages } from '@data/downloadMetadata';
 import { removeDateRange } from '@utils/data';
 
 export const metadata: IMetadata = {
-  title: 'Utah District Combination Areas 2022',
-  description: `The unique combination of Utah's state legislative, school board, and congressional districts`,
+  pageTitle: 'Utah District Combination Areas 2022',
+  pageDescription: `The unique combination of Utah's state legislative, school board, and congressional districts`,
   stewards: ['UGRC', `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
   category: SgidCategory.POLITICAL,
@@ -29,18 +29,12 @@ const page: IPageMetadata = {
   ...metadata,
   updateHistory: [`2022: Redistricting after 2020 Census`, `2012: Redistricting after 2010 Census`],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={removeDateRange(page.title)}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} pageTitle={removeDateRange(page.pageTitle)} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

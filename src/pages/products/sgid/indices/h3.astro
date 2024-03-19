@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah H3 Hexes',
-  description: `The H3 reference polygons covering the State of Utah at resolutions 5 through 9.`,
+  pageTitle: 'Utah H3 Hexes',
+  pageDescription: `The H3 reference polygons covering the State of Utah at resolutions 5 through 9.`,
   stewards: ['UGRC', 'Uber'],
   type: ProductType.POLYGON,
   category: SgidCategory.INDICES,
@@ -31,13 +31,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

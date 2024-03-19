@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -23,8 +23,8 @@ import naipNRGImage from '@images/sgid/naip-nrg.png';
 import naipRGBImage from '@images/sgid/naip-rgb.png';
 
 export const metadata: IMetadata = {
-  title: 'National Agriculture Imagery Program (NAIP)',
-  description: `Low resolution color and infrared aerial photography collections by airplane starting in 2003.`,
+  pageTitle: 'National Agriculture Imagery Program (NAIP)',
+  pageDescription: `Low resolution color and infrared aerial photography collections by airplane starting in 2003.`,
   stewards: ['UGRC', 'U.S. Department of Agriculture (USDA)'],
   type: ProductType.IMAGERY_RASTER,
   category: SgidCategory.AERIAL_PHOTOGRAPHY,
@@ -42,13 +42,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

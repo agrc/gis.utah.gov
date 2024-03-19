@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -21,8 +21,8 @@ import { dataPages } from '@data/downloadMetadata';
 import index from '@images/sgid/24k_index.png';
 
 export const metadata: IMetadata = {
-  title: 'USGS Topographic Map Indices',
-  description: `This dataset contains GIS mapping data representing the tile indices for the 24K, 100K, and 250K USGS scanned topographic maps (DRGs).`,
+  pageTitle: 'USGS Topographic Map Indices',
+  pageDescription: `This dataset contains GIS mapping data representing the tile indices for the 24K, 100K, and 250K USGS scanned topographic maps (DRGs).`,
   stewards: ['UGRC', 'U.S. Geological Survey'],
   type: ProductType.POLYGON,
   category: SgidCategory.INDICES,
@@ -33,19 +33,11 @@ const page: IPageMetadata = {
   ...metadata,
 
   updateHistory: [`Never`],
+  config: { stripeDescription: true },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  config={{
-    stripeDescription: true,
-  }}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

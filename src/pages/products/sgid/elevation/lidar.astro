@@ -1,6 +1,6 @@
 ---
-import type { IMetadata } from '@models/products/sgid/types';
-import { Pillar, ProductType, SgidCategory, type IStandardPageMetadata } from '@models/products/sgid/types';
+import type { IMetadata } from '@models/types';
+import { Pillar, ProductType, SgidCategory, type IStandardPageMetadata } from '@models/types';
 
 import Layout from '@layouts/FullWidth.astro';
 
@@ -44,8 +44,8 @@ import zionNP2015Map from '@images/sgid/lidar_zion_np_2015_coverage.png';
 import { stripeSections } from '@utils/page';
 
 export const metadata: IMetadata = {
-  title: 'Lidar elevation data',
-  description: `All Lidar projects across Utah since 2006.`,
+  pageTitle: 'Lidar elevation data',
+  pageDescription: `All Lidar projects across Utah since 2006.`,
   stewards: ['UGRC'],
   type: ProductType.ELEVATION_RASTER,
   category: SgidCategory.ELEVATION,
@@ -53,7 +53,6 @@ export const metadata: IMetadata = {
 
 const page: IStandardPageMetadata = {
   ...metadata,
-  pageTitle: metadata.title,
   pillar: Pillar.PRODUCTS,
   section: stripeSections([
     {},
@@ -606,8 +605,8 @@ const projectAssets = {
 };
 ---
 
-<Layout pageTitle={page.pageTitle} pillar={page.pillar} pageDescription={metadata.description}>
-  <BreadCrumbs category={metadata.category} product={metadata.title} slot="crumbs" />
+<Layout {...page}>
+  <BreadCrumbs category={metadata.category} product={metadata.pageTitle} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <a href={lidarSamples.src} slot="image">

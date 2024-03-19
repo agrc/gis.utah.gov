@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -20,8 +20,8 @@ import { dataPages } from '@data/downloadMetadata';
 import { removeDateRange } from '@utils/data';
 
 export const metadata: IMetadata = {
-  title: 'Utah ZIP Code Areas',
-  description: `The estimated geographic extents for all five digit ZIP codes in Utah that are not P.O. box only.`,
+  pageTitle: 'Utah ZIP Code Areas',
+  pageDescription: `The estimated geographic extents for all five digit ZIP codes in Utah that are not P.O. box only.`,
   stewards: ['UGRC'],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
@@ -40,18 +40,12 @@ const page: IPageMetadata = {
     `January 2015 - Adjusted the 84747 (Loa) and 84716 (Boulder) ZIP code boundaries to follow the address grid quadrant boundaries`,
   ],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={removeDateRange(page.title)}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} pageTitle={removeDateRange(page.pageTitle)} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

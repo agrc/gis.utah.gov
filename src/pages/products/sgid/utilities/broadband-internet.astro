@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import Disclaimer from '@components/data/Disclaimer.astro';
 import HubDownloads from '@components/data/HubDownloads.astro';
@@ -19,8 +19,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Broadband Service',
-  description: `Broadband coverage area polygons over any transmission technology, including fixed and mobile services`,
+  pageTitle: 'Utah Broadband Service',
+  pageDescription: `Broadband coverage area polygons over any transmission technology, including fixed and mobile services`,
   stewards: ['UGRC', `The Governor's Office Of Economic Development (GOED)`],
   type: ProductType.POLYGON,
   category: SgidCategory.UTILITIES,
@@ -31,18 +31,12 @@ const page: IPageMetadata = {
   application: 'https://broadband.ugrc.utah.gov/',
   updateHistory: ['Fall 2023', 'Spring 2023', 'Fall 2022', 'Spring 2022'],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

@@ -1,13 +1,7 @@
 ---
 import Layout from '@layouts/FullWidth.astro';
 
-import {
-  Pillar,
-  ProductType,
-  SgidCategory,
-  type IMetadata,
-  type IStandardPageMetadata,
-} from '@models/products/sgid/types';
+import { Pillar, ProductType, SgidCategory, type IMetadata, type IStandardPageMetadata } from '@models/types';
 
 import BreadCrumbs from '@components/data/BreadCrumbs.astro';
 
@@ -26,8 +20,8 @@ import hro from '@images/sgid/hro_sample.png';
 import { stripeSections } from '@utils/page';
 
 export const metadata: IMetadata = {
-  title: 'High Resolution Orthophotography (HRO)',
-  description: `High resolution color aerial photography collected by airplane starting in 2003.`,
+  pageTitle: 'High Resolution Orthophotography (HRO)',
+  pageDescription: `High resolution color aerial photography collected by airplane starting in 2003.`,
   stewards: ['UGRC'],
   type: ProductType.IMAGERY_RASTER,
   category: SgidCategory.AERIAL_PHOTOGRAPHY,
@@ -35,7 +29,7 @@ export const metadata: IMetadata = {
 
 const page: IStandardPageMetadata = {
   pageTitle: 'HRO',
-  pageDescription: metadata.description,
+  pageDescription: metadata.pageDescription,
   pillar: Pillar.PRODUCTS,
   section: stripeSections([
     {
@@ -72,7 +66,7 @@ const page: IStandardPageMetadata = {
 ---
 
 <Layout {...page}>
-  <BreadCrumbs category={metadata.category} product={metadata.title} slot="crumbs" />
+  <BreadCrumbs category={metadata.category} product={metadata.pageTitle} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <a href={hro.src} slot="image">

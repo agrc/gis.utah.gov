@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -17,8 +17,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Public Safety Answering Point Locations',
-  description: `The primary facilities where emergency calls are taken for Next-Generation 911 systems.`,
+  pageTitle: 'Utah Public Safety Answering Point Locations',
+  pageDescription: `The primary facilities where emergency calls are taken for Next-Generation 911 systems.`,
   stewards: ['UGRC'],
   type: ProductType.POINT,
   category: SgidCategory.SOCIETY,
@@ -29,18 +29,12 @@ const page: IPageMetadata = {
   updateHistory: [`June 2021`, `March 2021`, `January 2020`, `December 2018`, `November 2013`],
 
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
