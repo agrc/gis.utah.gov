@@ -9,9 +9,12 @@ import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
-import accessiblePhoto from '@images/solutions/accessible.svg';
-import agreementPhoto from '@images/solutions/agreement.svg';
-import applicationDevelopmentPhoto from '@images/solutions/application-development.svg';
+import arrowPhoto from '@images/solutions/arrow.svg';
+import gpsPhoto from '@images/solutions/gps.svg';
+import ideaPhoto from '@images/solutions/idea.svg';
+import locationPhoto from '@images/solutions/location.svg';
+import mergerPhoto from '@images/solutions/merger.svg';
+import teamworkPhoto from '@images/solutions/teamwork.svg';
 
 import { stripeSections } from '@utils/page';
 
@@ -21,10 +24,23 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.SOLUTIONS,
   section: stripeSections([
     {},
-    { title: 'Solutions for surveyors' },
-    { title: 'Stuff' },
-    { title: 'More stuff' },
-    { title: 'GPS location services' },
+    { title: 'Elevate your accuracy', actionText: 'Subscribe now', actionUrl: 'https://turngps.utah.gov/' },
+    { title: 'One stop for PLSS', actionText: 'Submit your monuments', actionUrl: 'https://plss.utah.gov/' },
+    {
+      title: 'Monument restoration funding',
+      actionText: 'Learn more about MRRC',
+      actionUrl: 'https://le.utah.gov/xcode/Title63A/Chapter16/63A-16-S509.html',
+    },
+    {
+      title: 'Simplify municipal annexations',
+      actionText: 'View every municipal certification',
+      actionUrl: 'https://municert.utah.gov/',
+    },
+    {
+      title: 'Help with survey control',
+      actionText: 'Explore NGS land surveying',
+      actionUrl: 'https://geodesy.noaa.gov/INFO/land-surveying.shtml',
+    },
   ]),
 };
 ---
@@ -33,32 +49,91 @@ const page: IStandardPageMetadata = {
   <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
-    <p>text</p>
+    <Image
+      slot="image"
+      src={gpsPhoto}
+      alt="a satellite in orbit around the earth with a GPS signal coming from it"
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      Whether you're using traditional surveying techniques or pioneering the latest technological advancements, UGRC
+      offers comprehensive access to data, documentation, and support to empower you to enhance the precision and
+      productivity of your work, and contribute your hard-earned, accurate data to important statewide data sets.
+    </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image slot="image" src={agreementPhoto} alt="two people shaking hands in agreement" class="w-full max-w-[400px]" />
-    <p>text</p>
+    <Image
+      slot="image"
+      src={arrowPhoto}
+      alt="Two people holding an arrow pointing at the bullseye of a dartboard."
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      The Utah Reference Network (TURN) is our real-time GPS network that allows you to effortlessly unlock
+      centimeter-level accuracy with an economical subscription service. Widely utilized across various industries
+      including land surveying, engineering, construction, GIS feature collection, drone piloting, and high-precision
+      agriculture, TURN GPS offers unparalleled accuracy anywhere, anytime across Utah, and into several surrounding
+      states.
+    </p>
   </Section>
   <Section {...page.section[2]}>
-    <Image slot="image" src={accessiblePhoto} alt="a person breaking down a wall" class="w-full max-w-[400px]" />
-    <p>text</p>
+    <Image
+      slot="image"
+      src={locationPhoto}
+      alt="A person reading a map with a map marker in the background."
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      Once you’ve conducted your high-precision surveys with TURN GPS, contribute your results to help us maintain the
+      integrity and increase the accuracy of the Public Land Survey System (PLSS) and land management practices
+      throughout Utah. Our intuitive PLSS web application offers a section corner map viewer with monument record sheet
+      download, and effortless compliance to state code by enabling you to upload your existing monument sheets, or
+      quickly enter data, to create new monument records and automatically submit them to county surveyors for review.
+    </p>
   </Section>
   <Section {...page.section[3]}>
     <Image
       slot="image"
-      src={applicationDevelopmentPhoto}
-      alt="a person standing in front of a monitor holding a wrench with a crane in the background"
+      src={ideaPhoto}
+      alt="Two people exchanging money for an idea light bulb."
       class="w-full max-w-[400px]"
     />
-    <p>text</p>
+    <p>
+      Led by UGRC’s State Surveyor, the Monument Replacement and Restoration Committee (MRRC) coordinates efforts to
+      identify, replace, and restore survey monuments, which serve as the cornerstone for accurate land surveys. The
+      MRRC administers an annual grant program aimed at assisting counties with their inventory of monuments by
+      providing funds for the location and replacement of these historical markers; thereby ensuring the continued
+      accuracy and reliability of property boundaries for surveyors and landowners alike. Contact us with questions
+      about how to participate in this program.
+    </p>
   </Section>
   <Section {...page.section[4]}>
     <Image
       slot="image"
-      src={applicationDevelopmentPhoto}
-      alt="a person standing in front of a monitor holding a wrench with a crane in the background"
+      src={mergerPhoto}
+      alt="Two people shaking hands in agreement under two connected puzzle pieces."
       class="w-full max-w-[400px]"
     />
-    <p>text</p>
+    <p>
+      UGRC supports the Lieutenant Governor's office with municipal and political boundary annexations, disconnections,
+      and adjustments. If you plan to submit one of these to the Lieutenant Governor's office, please feel free to get
+      in touch with us about the requirements and expectations of your submission to make the process clearer and
+      smoother for you, and us!
+    </p>
+  </Section>
+  <Section {...page.section[5]}>
+    <Image
+      slot="image"
+      src={teamworkPhoto}
+      alt="A group of people pulling on a rope together as a team."
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      UGRC offers assistance to surveyors involved in special control projects by leveraging our network of
+      national-level expertise to provide invaluable recommendations and support. By serving as Utah’s State NGS
+      Coordinator for the National Geodetic Survey (NGS), UGRC’s State Surveyor is committed to upholding and ensuring
+      accessibility to the national spatial reference frame (NSRF), and empowering surveyors with accurate and reliable
+      geodetic data for their endeavors. Get in touch if you need survey control assistance.
+    </p>
   </Section>
 </Layout>
