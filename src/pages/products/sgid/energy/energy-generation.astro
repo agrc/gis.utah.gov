@@ -1,0 +1,81 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import Disclaimer from '@components/data/Disclaimer.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Power Plants (CO2)',
+  description: `Power Plant locations from the CO2 project in Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POINT,
+  category: SgidCategory.ENERGY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`July 2008`],
+  hub: {
+    ...dataPages['Utah Power Plants CO2'],
+  },
+};
+---
+
+<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>This dataset contains the ORIS Code, name, type, CO2 Annual Tons and fuel code for the power plants.</p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Disclaimer slot="disclaimer">
+    <p>There are no constraints or warranties with regard to the use of this dataset.</p>
+  </Disclaimer>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Oil and Gas" href="/products/sgid/energy/oil-gas-wells"
+        >Oil and Gas Well page</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah Coal Leases" href="https://opendata.gis.utah.gov/datasets/utah-coal-leases"
+        >Utah Coal Leases from UGRC's SGID on ArcGIS</CardWithPopularLink
+      >
+
+      <CardWithPopularLink
+        title="Utah Coal Mines (UGS)"
+        href="https://opendata.gis.utah.gov/datasets/utah-coal-mines-ugs"
+        >Utah Coal Mines (UGS) from UGRC's SGID on ArcGIS</CardWithPopularLink
+      >
+
+      <CardWithPopularLink
+        title="Utah Coal 4 Foot Seams"
+        href="https://opendata.gis.utah.gov/datasets/utah-coal-4-foot-seams"
+        >Utah Coal 4 Foot Seams from UGRC's SGID on ArcGIS</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Energy" href="/products/sgid/energy">Energy page</CardWithSmallLink>
+      <CardWithSmallLink title="Utilities" href="/products/sgid/utilities">Utilities page</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

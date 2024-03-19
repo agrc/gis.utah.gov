@@ -707,8 +707,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Coal Deposit Areas 1988': {
     itemId: 'b24d12d0009748be899d909a546d2d05',
     name: 'Utah Coal Deposit Areas 1988',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'CoalDepositAreas1988',
+    openSgid: 'energy.coal_deposit_areas_1988',
     layerId: 0,
   },
   'Utah Coal 4 Foot Seams': {
@@ -812,8 +812,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Power Plants CO2': {
     itemId: '0fd6aa168ea2463c8adce143a06812ce',
     name: 'Utah Power Plants CO2',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'PowerPlants_CO2',
+    openSgid: 'energy.power_plants_co2',
     layerId: 0,
   },
   'Utah Tar Sands': {
