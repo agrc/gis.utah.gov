@@ -1,0 +1,96 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+export const metadata: IMetadata = {
+  title: 'TURN GPS Network',
+  description: `The Utah Reference Network (TURN) GPS is a GNSS network of permanently located GPS receivers, installed across the state, to generate real time high accuracy GPS positioning.`,
+  stewards: ['UGRC'],
+  type: ProductType.GPS_NETWORK,
+  category: SgidCategory.CADASTRE,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://turngps.utah.gov/Map/SensorMap.aspx',
+  updateHistory: ['2024', '2023'],
+};
+---
+
+<Layout
+  pageTitle={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{
+    skipInDepth: true,
+  }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      TurnGPS is designed to connect multiple, permanently located GPS receivers in a network for a range of precision
+      GPS applications including surveying, engineering, construction, and GIS data collection. TurnGPS enables
+      high-accuracy positioning in real time over much larger geographic region than standard real time methods, using
+      the internet for communication. It maximizes the performance from a network of reference stations and eliminates
+      the need to set up a temporary field base for each individual project or post processing data, saving you time and
+      money. It is ideal for any application requiring reliable, fast, high precision wide area positioning.
+    </p>
+  </Fragment>
+
+  <Section title="About the network" slot="downloads" titlePosition="center">
+    <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
+      <div class="flex flex-col">
+        <h2 class="pb-1">About TURN</h2>
+        <p>
+          TURN GPS uses the Trimble PIVOT VRS Platform. TURN GPS is used for a range of precision GPS applications
+          including surveying, engineering, construction, and GIS data collection. The current cost is $600 for each
+          user login and is good for a full year from the sign up date.
+        </p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h2 class="pb-1">Create your TURN account</h2>
+        <p><ExternalLink href="https://turngps.utah.gov/">TURN GPS registration page</ExternalLink></p>
+      </div>
+    </div>
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Network resources" href="/documentation/turn"
+        >View our TURN Network resources.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Getting connected" href="/documentation/turn/connecting"
+        >Instructions and tips for creating or renewing your account and for getting connected.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Parcels" href="/products/sgid/cadastre/parcels"
+        >Parcel data for each of the 29 counties in Utah.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="PLSS point data" href="/products/sgid/cadastre/plss-points"
+        >Public Land Survey System points for the State of Utah.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="PLSS sections data" href="/products/sgid/cadastre/plss-sections"
+        >Public Land Survey System sections for the State of Utah.</CardWithSmallLink
+      ><CardWithSmallLink title="PLSS townships data" href="/products/sgid/cadastre/plss-townships"
+        >Public Land Survey System townships for the State of Utah.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
