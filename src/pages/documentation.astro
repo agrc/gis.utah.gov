@@ -39,19 +39,20 @@ const page: IStandardPageMetadata = {
   <Section slot="popular-level-ones" {...page.section[0]}>
     <GridForPillars>
       <CardWithTopImage title="SGID" actionUrl="/documentation/sgid">
-        <Image slot="image" src={sgidIndex} alt="a person using a search engine" class="block h-44" />
+        <Image slot="image" loading="eager" src={sgidIndex} alt="a person using a search engine" class="block h-44" />
         The State Geographic Information Datasource (SGID) provides a centralized collection of hundreds of GIS data layers
         developed, aggregated, or acquired by the State. The documentation explains the different facets of the SGID, how
         to connect to them, and how to include your data in the SGID.
       </CardWithTopImage>
       <CardWithTopImage title="Discover base map and imagery services" actionUrl="/documentation/discover">
-        <Image slot="image" src={openSgid} alt="a person connected to a database" class="block h-44" />
+        <Image slot="image" loading="eager" src={openSgid} alt="a person connected to a database" class="block h-44" />
         Our Discover services provide streaming access to our base maps and aerial imagery. The documentation explains how
         to sign up, connect, use the services, and troubleshoot common issues.
       </CardWithTopImage>
       <CardWithTopImage title="UGRC policies" actionText="Learn more" actionUrl="/documentation/policy">
         <Image
           slot="image"
+          loading="eager"
           src={policyPhoto}
           alt="a person agreeing to terms and conditions on a tablet"
           class="block h-44"

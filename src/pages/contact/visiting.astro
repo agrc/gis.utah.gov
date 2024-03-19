@@ -4,6 +4,7 @@ import Layout from '@layouts/FullWidth.astro';
 import { Pillar, type IStandardPageMetadata } from '@models/types';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
@@ -28,6 +29,7 @@ const page: IStandardPageMetadata = {
     <Image
       class="rounded-lg border-2 border-primary"
       src={visitingPhoto}
+      loading="eager"
       alt="Map with pin of Taylorsville State Office Building Location"
       slot="image"
       height={400}
@@ -44,13 +46,13 @@ const page: IStandardPageMetadata = {
     </p>
     <h4>Traveling by transit</h4>
     <p>
-      The Utah Transit Authority <a href="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/704-Green-Line"
-        >Green Line</a
+      The Utah Transit Authority <ExternalLink
+        href="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/704-Green-Line">Green Line</ExternalLink
       > light rail service runs from downtown to the West Valley City offices and Valley Fair Mall about 1.5 miles north
-      of the TSOB (or about a 30 minute walk). <a
-        href="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/227-2700-West">Bus route 227</a
-      > runs along 2700 West between the Green and Red Lines (3600 South to 8300 South) on an hourly basis, and <a
-        href="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/47-4700-South">route 47</a
+      of the TSOB (or about a 30 minute walk). <ExternalLink
+        href="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/227-2700-West">Bus route 227</ExternalLink
+      > runs along 2700 West between the Green and Red Lines (3600 South to 8300 South) on an hourly basis, and <ExternalLink
+        href="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/47-4700-South">route 47</ExternalLink
       > starts at the Murray Central Trax/FrontRunner station every half hour and has a stop at 4700 South and 2700 West,
       a 3/4-mile (15 minute) walk from the TSOB.
     </p>
@@ -59,7 +61,7 @@ const page: IStandardPageMetadata = {
     <Image
       class="rounded-lg border-2 border-primary"
       src={parkingPhoto}
-      alt="Aerial image of Taylorsville State Office Building parking lot"
+      alt="Aerial picture of Taylorsville State Office Building parking lot"
       slot="image"
       height={400}
     />

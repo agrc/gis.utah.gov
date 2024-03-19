@@ -61,7 +61,13 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image slot="image" src={getConnected} alt="A person sitting on a globe" class="w-full max-w-[400px] rounded-2xl" />
+    <Image
+      slot="image"
+      loading="eager"
+      src={getConnected}
+      alt="A person sitting on a globe"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
     <p>
       You can connect to Discover using a variety of desktop and web clients, including QGIS, ArcGIS Pro, AutoCAD, and
       ArcGIS Online.

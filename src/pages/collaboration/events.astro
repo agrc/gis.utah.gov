@@ -3,6 +3,7 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Pillar, type IStandardPageMetadata } from '@models/types';
 
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
@@ -13,7 +14,6 @@ import mothLogo from '@images/collaboration/MOTH_logo.jpg';
 import nacisLogo from '@images/collaboration/NACIS_logo.png';
 import nsgicLogo from '@images/collaboration/NSGIC_logo.png';
 import osgeoLogo from '@images/collaboration/OSGeo_logo.svg';
-import osmLogo from '@images/collaboration/OSM_logo.svg';
 import utahjsLogo from '@images/collaboration/UtahJS_logo.png';
 import eventsPhoto from '@images/collaboration/events.svg';
 import ugicPhoto from '@images/collaboration/ugic-characters.png';
@@ -67,6 +67,7 @@ const page: IStandardPageMetadata = {
 
 <Layout {...page}>
   <QuickLinks links={page.section} slot="quick-links" />
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <Section {...page.section[0]}>
     <Image
       slot="image"
@@ -85,6 +86,7 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[1]}>
     <Image
       slot="image"
+      loading="eager"
       src={mothLogo}
       width="400"
       alt="Maps on the Hill logo"

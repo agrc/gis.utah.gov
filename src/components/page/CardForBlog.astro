@@ -13,9 +13,10 @@ interface Props {
   slug: string;
   tags?: string[];
   title: string;
+  aboveTheFold: boolean;
 }
 
-const { category, coverImage, date, snippet, estimatedReadingTime, slug, title } = Astro.props;
+const { category, coverImage, date, snippet, estimatedReadingTime, slug, title, aboveTheFold } = Astro.props;
 const { year, month, day } = getDateParts(date);
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}');
 if (!images[coverImage])
@@ -29,10 +30,11 @@ if (!images[coverImage])
   <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-black/20">
     <Image
       src={images[coverImage]()}
-      alt="Cover image"
+      loading={aboveTheFold ? 'eager' : 'lazy'}
+      alt="The blog post cover art."
       width={382}
       height={192}
-      class="h-48 w-full bg-primary/10 object-contain"
+      class="sr-hidden h-48 w-full bg-primary/10 object-contain"
     />
     <div class="flex min-w-0 flex-1 p-4 pb-2 pt-2">
       <div class="flex min-w-0 flex-1 flex-col justify-around">

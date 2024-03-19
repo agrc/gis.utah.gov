@@ -37,7 +37,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
     <li>
       <!-- the `custom-style` prop needs to be set as a prop rather than in the style tag because of this issue: https://github.com/tailwindlabs/tailwindcss/issues/7055 -->
       <a
-        href={page.url.prev}
+        href={page.url.prev ?? '/'}
         class:list={[arrowLinkClasses, !page.url.prev && 'pointer-events-none opacity-50']}
         aria-label="go to previous page"
       >
@@ -76,7 +76,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
             href={`/${baseHref}/${num === 1 ? '' : num}`}
             class={twMerge(
               linkClasses,
-              num === page.currentPage && 'bg-zinc-200 hover:bg-primary hover:text-zinc-50 dark:text-zinc-600',
+              num === page.currentPage && 'bg-zinc-200 hover:bg-primary hover:text-zinc-50 dark:text-zinc-600'
             )}
             aria-current={num === page.currentPage ? 'page' : undefined}
             aria-label={num !== page.currentPage ? `go to page ${page.currentPage}` : undefined}

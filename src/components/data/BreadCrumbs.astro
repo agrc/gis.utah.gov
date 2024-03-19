@@ -12,7 +12,7 @@ const { product, category, class: className } = Astro.props;
 
 <nav class:list={['pl-2', className]}>
   <ol class="flex items-center">
-    <li class="flex">
+    <li class="hidden lg:flex">
       <a
         class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100"
         href="/"
@@ -34,7 +34,7 @@ const { product, category, class: className } = Astro.props;
         <span class="sr-only">Home</span>
       </a>
     </li>
-    <li class="flex items-center">
+    <li class="hidden items-center lg:flex">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -57,7 +57,7 @@ const { product, category, class: className } = Astro.props;
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-3 shrink-0 text-primary dark:text-accent"
+        class="hidden size-3 shrink-0 text-primary lg:flex dark:text-accent"
       >
         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
       </svg>

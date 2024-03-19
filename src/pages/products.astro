@@ -32,7 +32,13 @@ const page: IStandardPageMetadata = {
   <QuickLinks links={page.section} slot="quick-links" />
 
   <Section {...page.section[0]}>
-    <Image slot="image" src={sgidLogo} loading="eager" alt="the SGID logo" class="w-full max-w-[400px] rounded-2xl" />
+    <Image
+      slot="image"
+      src={sgidLogo}
+      loading="eager"
+      alt="the SGID logo"
+      class="w-full max-w-[400px] rounded-2xl dark:brightness-200 dark:grayscale"
+    />
     <p>
       The SGID aims to be the primary source for state-wide GIS data in Utah by creating a single portal to datasets
       created by many different agencies and organizations. With such a broad scope, SGID datasets live in many
@@ -41,7 +47,13 @@ const page: IStandardPageMetadata = {
   </Section>
 
   <Section {...page.section[1]}>
-    <Image slot="image" src={discoverLogo} alt="the discover logo" class="w-full max-w-[400px] rounded-2xl" />
+    <Image
+      slot="image"
+      src={discoverLogo}
+      loading="eager"
+      alt="the discover logo"
+      class="w-full max-w-[400px] rounded-2xl dark:brightness-200 dark:grayscale"
+    />
     <p>
       Discover is a cloud-based web service serving aerial imagery and base maps. These services are available in both
       WMTS and WMS formats from the Open Geospatial Consortium (OGC) for broad compatibility and are provided in the Web
@@ -51,7 +63,12 @@ const page: IStandardPageMetadata = {
   </Section>
 
   <Section {...page.section[2]}>
-    <Image slot="image" src={turnLogo} alt="the TURN GPS logo" class="w-full max-w-[400px] rounded-2xl" />
+    <Image
+      slot="image"
+      src={turnLogo}
+      alt="the TURN GPS logo"
+      class="w-full max-w-[400px] rounded-2xl dark:brightness-200 dark:grayscale"
+    />
     <p>
       The Utah Reference Network, TURN, is a high-precision global navigation satellite system (GNSS) providing
       real-time corrections and data for post processing. A GNSS network consists of permanently located GPS receivers,
@@ -64,7 +81,12 @@ const page: IStandardPageMetadata = {
   </Section>
 
   <Section {...page.section[3]}>
-    <Image slot="image" src={apiLogo} alt="the UGRC API logo" class="w-full max-w-[400px] rounded-2xl" />
+    <Image
+      slot="image"
+      src={apiLogo}
+      alt="the UGRC API logo"
+      class="w-full max-w-[400px] rounded-2xl dark:brightness-200 dark:grayscale"
+    />
     <p>The UGRC API is a free web service that allows you to geocode and search SGID data with HTTP requests.</p>
   </Section>
 </Layout>

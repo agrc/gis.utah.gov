@@ -56,7 +56,13 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image slot="image" src={dataPhoto} alt="a person connected to a database" class="w-full max-w-[400px]" />
+    <Image
+      slot="image"
+      src={dataPhoto}
+      loading="eager"
+      alt="a person connected to a database"
+      class="w-full max-w-[400px]"
+    />
     <p>
       Do you need road data to build a network dataset? What about a high-resolution DEM for a suitability analysis? Or
       school locations for a demographic study?

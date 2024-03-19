@@ -54,7 +54,13 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image slot="image" src={agreementPhoto} alt="two people shaking hands in agreement" class="w-full max-w-[400px]" />
+    <Image
+      slot="image"
+      src={agreementPhoto}
+      loading="eager"
+      alt="two people shaking hands in agreement"
+      class="w-full max-w-[400px]"
+    />
     <p>
       UGRC can help government agencies develop strategies and plans for implementing robust and effective GIS solutions
       to meet agency goals and their audience or constituents' needs. From troubleshooting and best practices to

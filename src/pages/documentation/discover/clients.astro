@@ -30,7 +30,7 @@ const page: IStandardPageMetadata = {
 ---
 
 <Layout {...page}>
-  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <p>

@@ -1,6 +1,6 @@
 ---
-import type { IDataCategory } from '@models/types';
-import { SgidCategory } from '@models/types';
+import type { IDataCategory, IStandardPageMetadata } from '@models/types';
+import { Pillar, SgidCategory } from '@models/types';
 
 import type { GetStaticPathsResult } from 'astro';
 
@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 const pages = (await Astro.glob<IDataCategory>('../**/*.astro'))
   .filter((page) => {
     return [page.metadata?.category?.toLowerCase(), page?.metadata?.secondaryCategory?.toLowerCase()].includes(
-      categoryString,
+      categoryString
     );
   })
   .sort((a, b) => a.metadata.pageTitle.localeCompare(b.metadata.pageTitle));
@@ -45,17 +45,23 @@ const toEnum = (category?: string) => {
 
   return SgidCategory[category.toUpperCase().replaceAll('-', '_') as keyof typeof SgidCategory];
 };
+
+const page: IStandardPageMetadata = {
+  pageTitle: `SGID ${readableCategory} data`,
+  pageDescription: `View a list of all the SGID datasets in the ${readableCategory} category.`,
+  pillar: Pillar.PRODUCTS,
+  section: [
+    {
+      title: `The ${readableCategory} data index`,
+      subTitle: `To view all ${readableCategory} data from stewards besides UGRC, search the <a href="/products/sgid/sgid-index">SGID Index</a>.`,
+    },
+  ],
+};
 ---
 
-<Layout
-  pageTitle={`SGID ${readableCategory} data`}
-  pageDescription={`SGID datasets in the ${readableCategory} category`}
->
+<Layout {...page}>
   <BreadCrumbs category={toEnum(category)} class="bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300" />
-  <Section
-    title=`The ${readableCategory} data index`
-    subTitle={`To view all ${readableCategory} data from stewards besides UGRC, search the <a href="/products/sgid/sgid-index">SGID Index</a>.`}
-  >
+  <Section {...page.section[0]}>
     {
       pages.map((page) => (
         <CardForData

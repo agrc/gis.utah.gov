@@ -30,8 +30,9 @@ const { author, posts } = Astro.props;
 
 <Layout pageTitle="Post authors" category={author} pageDescription={`UGRC blog posts by ${author}`}>
   {
-    posts.map((post) => (
+    posts.map((post, index) => (
       <CardForBlog
+        aboveTheFold={index < 6}
         category={post.data.category}
         coverImage={post.data.cover_image}
         coverImageAlt={post.data.cover_image_alt}

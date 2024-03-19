@@ -31,7 +31,6 @@ const page: IStandardPageMetadata = {
   pageDescription: 'The UGRC API is a free service that allows you to geocode and search SGID data.',
   pillar: Pillar.PRODUCTS,
   section: stripeSections([
-    {},
     { title: 'Popular resources', titlePosition: 'center' },
     { title: 'More resources', titlePosition: 'center' },
     { title: 'You might also like', titlePosition: 'center' },
@@ -43,7 +42,6 @@ const page: IStandardPageMetadata = {
   <BreadCrumbs path={Astro.url.pathname} slot="crumbs" class="bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300" />
   <Fragment slot="popular-level-ones">
     <Section>
-      <Fragment slot="title">The UGRC API</Fragment>
       <Image
         src={apiLogo}
         slot="image"
@@ -59,18 +57,14 @@ const page: IStandardPageMetadata = {
         <CardWithTopImage
           title="Sign up"
           actionText="Get started"
-          actionUrl="https://ut-dts-agrc-web-api-dev.web.app/getting-started/"
+          actionUrl="https://developer.mapserv.utah.gov/StartupGuide"
         >
           <Image slot="image" src={signUpPhoto} alt="a person filling out a form" class="block h-44" />
           The UGRC API is a free service that allows you to geocode and search SGID data. To use the API, you need to have
           an account and create API keys. These key are used to authenticate requests and to give you usage analytics. Click
           the link below to get started.
         </CardWithTopImage>
-        <CardWithTopImage
-          title="Documentation"
-          actionText="Start learning"
-          actionUrl="https://ut-dts-agrc-web-api-dev.web.app/docs/"
-        >
+        <CardWithTopImage title="Documentation" actionText="Start learning" actionUrl="https://api.mapserv.utah.gov/">
           <Image slot="image" src={documentationPhoto} alt="a person reading books" class="block h-44" />
           There are many ways to use the UGRC API. We have created documentation to help you get started. Click the link
           below to learn more about the API and how to use it.
@@ -90,7 +84,7 @@ const page: IStandardPageMetadata = {
     </Section>
   </Fragment>
 
-  <Section slot="popular-resources" {...page.section[1]}>
+  <Section slot="popular-resources" {...page.section[0]}>
     <GridForPopularResources>
       <CardWithPopularLink
         title="Sample Code"
@@ -111,7 +105,7 @@ const page: IStandardPageMetadata = {
     </GridForPopularResources>
   </Section>
 
-  <Section slot="more-resources" {...page.section[2]}>
+  <Section slot="more-resources" {...page.section[1]}>
     <GridForMoreResources>
       <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
         <Image slot="image" src={privacyPhoto} alt="a computer with a lock on the screen" class="self-center" />
@@ -129,7 +123,7 @@ const page: IStandardPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section slot="you-might-also-like" {...page.section[3]}>
+  <Section slot="you-might-also-like" {...page.section[2]}>
     <GridForYouMightLike>
       <CardWithSmallLink title="layer-selector" href="https://www.npmjs.com/package/@ugrc/layer-selector">
         A react component for adding a quick base map selector with a happy path for using UGRC's Discover base maps.

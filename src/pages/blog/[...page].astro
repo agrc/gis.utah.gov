@@ -31,8 +31,9 @@ const pageDescription = 'A collection of UGRC blog posts on various topics.';
     }
   </Fragment>
   {
-    page.data.map((post) => (
+    page.data.map((post, index) => (
       <CardForBlog
+        aboveTheFold={index < 6}
         category={post.data.category}
         coverImage={post.data.cover_image}
         coverImageAlt={post.data.cover_image_alt}

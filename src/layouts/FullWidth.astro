@@ -11,7 +11,9 @@ const props = Astro.props;
   <main id="main" class="w-full self-center text-zinc-700 dark:bg-primary">
     <section class="flex flex-1 flex-col">
       <slot name="crumbs" />
-      <slot name="quick-links" />
+      <div class="px-6">
+        <slot name="quick-links" />
+      </div>
       <slot />
     </section>
   </main>

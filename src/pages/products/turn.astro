@@ -69,7 +69,7 @@ const page: IStandardPageMetadata = {
           actionText="Register now"
           actionUrl="https://turngps-billpay.ugrc.utah.gov"
         >
-          <Image slot="image" src={signUpPhoto} alt="a person filling out a form" class="block h-44" />
+          <Image slot="image" src={signUpPhoto} loading="eager" alt="a person filling out a form" class="block h-44" />
           Having centimeter precision is the new norm for surveying and mapping. Join the hundreds of others using the TURN
           GPS system to improve your accuracy. All that is required is a small yearly subscription and it only takes a few
           minutes to get started.
@@ -78,6 +78,7 @@ const page: IStandardPageMetadata = {
           <Image
             slot="image"
             src={getConnectedPhoto}
+            loading="eager"
             alt="a person connected to a database with a lock and key shield"
             class="block h-44"
           />
@@ -85,7 +86,13 @@ const page: IStandardPageMetadata = {
           many popular devices. If you don't see your device listed, contact us and we'll help you get connected.
         </CardWithTopImage>
         <CardWithTopImage title="Documentation" actionUrl="/documentation/turn">
-          <Image slot="image" src={learningPhoto} alt="a person reading a book learning" class="block h-44" />
+          <Image
+            slot="image"
+            src={learningPhoto}
+            loading="eager"
+            alt="a person reading a book learning"
+            class="block h-44"
+          />
           There are many artifacts and resources available to help you get the most out of the TURN GPS system. We've put
           together a list of the most popular resources to help you get started including site logs and maps.
         </CardWithTopImage>

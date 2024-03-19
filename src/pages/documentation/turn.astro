@@ -48,7 +48,13 @@ const page: IStandardPageMetadata = {
     </p>
   </Section>
   <Section {...page.section[1]}>
-    <Image slot="image" src={gps} alt="Satellites around the planet" class="w-full max-w-[400px] rounded-2xl" />
+    <Image
+      slot="image"
+      src={gps}
+      loading="eager"
+      alt="Satellites around the planet"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
     <p><em>What is a GNSS network and how exactly does it work?</em></p>
     <p>
       A GNSS network consists of permanently located GPS receivers, installed across an area, that generate real-time,
