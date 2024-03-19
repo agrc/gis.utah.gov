@@ -20,6 +20,8 @@ export const convertProductType = (type: ProductType) => {
       return 'Elevation models';
     case ProductType.IMAGERY_RASTER:
       return 'Aerial photography';
+    case ProductType.GPS_NETWORK:
+      return 'GPS network';
     default:
       return type;
   }
