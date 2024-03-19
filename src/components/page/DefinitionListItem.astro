@@ -1,11 +1,11 @@
 ---
 interface Props {
-  title: string;
+  term: string;
 }
-const { title } = Astro.props;
+const { term } = Astro.props;
 ---
 
-<dt class="font-bold leading-relaxed">{title}</dt>
+<dt class="font-bold leading-relaxed">{term}</dt>
 <dd class="pl-4">
   <slot />
 </dd>
