@@ -366,7 +366,7 @@ const MegaMenuItem = ({ children, title, containerCss }) => (
   </div>
 );
 const ListItem = React.forwardRef(({ className, children, title, ...props }, forwardedRef) => (
-  <li className={'group ' + className}>
+  <li className={classNames('group', className)}>
     <NavigationMenu.Link asChild>
       <a
         className={classNames(
