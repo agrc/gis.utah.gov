@@ -5,11 +5,11 @@
   "scripts": {
     "astro": "astro",
     "build": "astro build",
-    "ts-check": "astro check",
     "dev": "astro dev",
     "format": "prettier \"src/**/*.{astro,js,jsx,ts,json,mjs,md,mdx}\" --write",
     "preview": "astro preview",
     "start": "astro dev",
+    "ts-check": "astro check --minimumSeverity=warning",
     "validate-site-map": "cd src/scripts && node ./validate-site-map.mjs"
   },
   "prettier": {
