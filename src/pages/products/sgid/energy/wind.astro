@@ -54,7 +54,7 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <Disclaimer slot="disclaimer">
+  <Disclaimer slot="disclaimer" style="secondary">
     <p>There are no constraints or warranties with regard to the use of this dataset.</p>
   </Disclaimer>
 
@@ -72,12 +72,12 @@ const page: IPageMetadata = {
       <CardWithPopularLink
         title="UREZ Phase 2 Conceptual Transmission Lines"
         href="https://opendata.gis.utah.gov/datasets/utah-urez-phase-2-conceptual-transmission"
-        >UREZ Phaze 2 Conceptual Transmission Lines on UGRC's SGID on ArcGIS.</CardWithPopularLink
+        >UREZ Phase 2 Conceptual Transmission Lines on UGRC's SGID on ArcGIS.</CardWithPopularLink
       >
       <CardWithPopularLink
         title="UREZ Phase 2 Zone Boundaries"
         href="https://opendata.gis.utah.gov/datasets/utah-urez-phase-2-zone-boundaries"
-        >UREZ Phaze 2 Zone Boundaries on UGRC's SGID on ArcGIS.</CardWithPopularLink
+        >UREZ Phase 2 Zone Boundaries on UGRC's SGID on ArcGIS.</CardWithPopularLink
       >
       <CardWithPopularLink
         title="UREZ Phase 1 Wind Drainage"
@@ -89,8 +89,10 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Energy" href="/products/sgid/energy">Energy page</CardWithSmallLink>
-      <CardWithSmallLink title="Utilities" href="/products/sgid/utilities">Utilities page</CardWithSmallLink>
+      <CardWithSmallLink title="Energy" href="/products/sgid/energy" style="secondary">Energy page</CardWithSmallLink>
+      <CardWithSmallLink title="Utilities" href="/products/sgid/utilities" style="secondary"
+        >Utilities page</CardWithSmallLink
+      >
     </GridForYouMightLike>
   </Section>
 </Layout>
