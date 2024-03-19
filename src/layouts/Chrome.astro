@@ -23,7 +23,7 @@ const { pageTitle = 'UGRC', pillar, bannerHeading } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={`${pageTitle} | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+    <BaseHead title={` ${SITE_TITLE} - ${pageTitle}`} description={SITE_DESCRIPTION} />
   </head>
   <body class="bg-white dark:bg-primary/90">
     <Header client:load>
