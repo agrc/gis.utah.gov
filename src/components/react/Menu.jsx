@@ -3,12 +3,13 @@ import { CaretDownIcon, HamburgerMenuIcon } from '@radix-ui/react-icons';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import classNames from 'classnames';
 import React from 'react';
+import sgidLogo from './sgid-logo.svg';
 
 export const Menu = ({ children, currentUri }) => {
   return (
     <NavigationMenu.Root className="relative z-10 hidden h-12 min-h-12 items-center bg-zinc-100 lg:flex dark:bg-secondary [&>div]:flex-1">
       <NavigationMenu.List className="m-0 flex flex-1 list-none px-1 text-center">
-        <NavigationMenu.Item className="" value="home">
+        <NavigationMenu.Item value="home">
           <MenuLink href="/" currentUri={currentUri}>
             Home
           </MenuLink>
@@ -21,6 +22,19 @@ export const Menu = ({ children, currentUri }) => {
           <NavigationMenu.Content className="absolute left-0 top-0 w-full data-[motion=from-end]:animate-in data-[motion=from-start]:animate-in data-[motion=to-end]:animate-out data-[motion=to-start]:animate-out data-[motion=from-end]:slide-in-from-right data-[motion=from-start]:slide-in-from-left data-[motion=to-end]:slide-out-to-right data-[motion=to-start]:slide-out-to-left data-[motion=from-end]:anim-duration-500 data-[motion=from-start]:anim-duration-500 data-[motion=to-end]:anim-duration-500 data-[motion=to-start]:anim-duration-500 sm:w-auto">
             <MegaMenuChrome className="flex w-full flex-col gap-4 pr-6 md:gap-2">
               <MegaMenuItem>
+                <li className="col-start-2 row-span-4 grid">
+                  <NavigationMenu.Link asChild>
+                    <a
+                      className="custom-style group flex size-full cursor-pointer select-none flex-col rounded-lg  p-3 py-4 no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1"
+                      href="/products/sgid/categories"
+                    >
+                      <img src={sgidLogo.src} alt="SGID Logo" className="size-18" />
+                      <div className="mt-2 text-center text-sm text-zinc-500 group-hover:text-zinc-700">
+                        Browse all SGID data categories
+                      </div>
+                    </a>
+                  </NavigationMenu.Link>
+                </li>
                 <ListItem title="SGID" href="/products/sgid">
                   A multi-faceted centralized collection of hundreds of GIS data layers developed, aggregated, or
                   acquired by the State of Utah.
@@ -332,11 +346,11 @@ const MegaMenuChrome = ({ children, className }) => (
 const MegaMenuItem = ({ children, title, containerCss }) => (
   <div className={classNames('grow pl-6 align-top', containerCss)}>
     {title && <p className="text-lg font-bold uppercase text-zinc-600 md:text-sm">{title}</p>}
-    <ul className="m-0 grid list-none">{children}</ul>
+    <ul className="m-0 grid list-none grid-cols-[1fr_0.1fr]">{children}</ul>
   </div>
 );
 const ListItem = React.forwardRef(({ className, children, title, ...props }, forwardedRef) => (
-  <li>
+  <li className="group">
     <NavigationMenu.Link asChild>
       <a
         className={classNames(
@@ -347,7 +361,7 @@ const ListItem = React.forwardRef(({ className, children, title, ...props }, for
         ref={forwardedRef}
       >
         <div className="font-semibold text-zinc-700">{title}</div>
-        <p className="text-sm text-zinc-500">{children}</p>
+        <p className="text-sm text-zinc-500 group-hover:text-zinc-700">{children}</p>
       </a>
     </NavigationMenu.Link>
   </li>
@@ -357,7 +371,7 @@ const MobileListItem = React.forwardRef(({ className, children, ...props }, forw
     <NavigationMenu.Link asChild>
       <a
         className={classNames(
-          'custom-style block cursor-pointer select-none rounded-full p-3 no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1 ',
+          'custom-style block cursor-pointer select-none rounded-full p-3 no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1',
           className,
         )}
         {...props}
