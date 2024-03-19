@@ -1,0 +1,93 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+export const metadata: IMetadata = {
+  title: 'Utah Culinary Water Service Areas',
+  description: `Retail culinary water suppliers service area boundaries for the State of Utah, with a small selection of suppliers in Idaho and Wyoming represented as well.`,
+  stewards: ['Division of Water Resources'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.UTILITIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`Annually (per DNR schedule)`],
+
+  links: [
+    {
+      title: 'Downloads and services on Hub',
+      url: 'https://opendata.gis.utah.gov/datasets/utahDNR::culinarywaterserviceareas',
+    },
+  ],
+};
+---
+
+<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Retail culinary water suppliers service area boundaries for the State of Utah, with a small selection of suppliers
+      in Idaho and Wyoming represented as well. Data sources include the Utah Division of Water Resources (DWRe), Utah
+      Division of Drinking Water, Utah Division of Water Rights, Utah Division of Public Utilities, and the Utah
+      Geospatial Resource Center. Boundaries were derived from a combination of the following data layers available in
+      the SGID: Counties, various county parcels, Municipalities, PLSSSections, and TaxEntities.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="Available from DNR via the SGID on ArcGIS Hub" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      Utah Retail Culinary Water Service Areas represent public community water suppliers. Eventually, public
+      non-community (transient) and self-supplied industry (non-transient) suppliers will be added. This feature class
+      includes system boundaries that are historical and no longer active. It also includes some systems that are
+      outside the state. Historical and outside the state systems can be filtered using the <code>ENDYEAR</code> and
+      <code>STATE</code> fields, respectively. These boundaries are derived from many different sources, including spatial
+      data received directly from the supplier, municipal boundaries, phone call descriptions of service areas, printed maps
+      that had hand drawn boundaries that were then digitized, etc.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah Division of Water Resources" href="https://water.utah.gov/"
+        >Utah's water stewards.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah's Open Water Data" href="https://dwre-utahdnr.opendata.arcgis.com/"
+        >Explore other water-related datasets from DWRe.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="Water-Related Land Uses"
+        href="/products/sgid/planning/water-related-land"
+        style="secondary"
+        >Land uses categorized by water usage type (irrigated, sprinklers, wetland, etc)</CardWithSmallLink
+      >
+      <CardWithSmallLink title="SGID Water Data" href="/products/sgid/water" style="secondary"
+        >General water data in the SGID</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>

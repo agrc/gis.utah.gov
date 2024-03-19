@@ -1012,6 +1012,7 @@ export const dataPages: DownloadMetadata = {
     openSgid: '',
     layerId: 0,
   },
+  // This item is in DNR's AGOL, not sure if we need this entry?
   'Utah Culinary Water Service Areas': {
     itemId: 'hosted by DNR',
     name: 'Utah Culinary Water Service Areas',
