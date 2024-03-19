@@ -1,7 +1,7 @@
 name: Push to Redirects
 
 on:
-  push:
+  pull_request:
     paths:
       - 'public/_redirects'
 
