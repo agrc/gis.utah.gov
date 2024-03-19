@@ -1012,11 +1012,13 @@ export const dataPages: DownloadMetadata = {
     openSgid: '',
     layerId: 0,
   },
-  // This item is in DNR's AGOL, not sure if we need this entry?
   'Utah Culinary Water Service Areas': {
     itemId: 'hosted by DNR',
+    externalHubOrganization: 'utahDNR',
+    oddHubName: 'culinarywaterserviceareas',
     name: 'Utah Culinary Water Service Areas',
-    featureServiceId: null,
+    featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/',
+    featureServiceId: 'CulinaryWaterServiceAreas',
     openSgid: 'utilities.culinary_water_service_areas',
     layerId: 0,
   },
@@ -1653,8 +1655,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Water Related Land Use': {
     itemId: 'e3e7fc9316bb4ad09474401ff46e734f',
     name: 'Utah Water Related Land Use',
-    featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/',
-    featureServiceId: 'CulinaryWaterServiceAreas',
+    featureServiceId: 'WaterRelatedLandUse',
     openSgid: 'planning.water_related_land_use',
     layerId: 0,
   },
