@@ -21,9 +21,9 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.SOLUTIONS,
   section: stripeSections([
     { title: 'Resources for 911' },
-    { title: 'Temporary 1' },
-    { title: 'Temporary 2' },
-    { title: 'Temporary 3' },
+    { title: 'Service area boundaries' },
+    { title: 'Civic Location data' },
+    { title: 'Additional resources and services' },
   ]),
 };
 ---
@@ -39,7 +39,21 @@ const page: IStandardPageMetadata = {
       alt="a person with a prototype on an easel and the app partially built on a phone"
       class="w-full max-w-[400px] rounded-2xl"
     />
-    <p>lorem</p>
+    <p>
+      Every second counts in an emergency. Accurate and precise GIS data is the backbone for a swift and effective 911
+      response. That is where the Utah Geospatial Resource Center (UGRC) comes in.
+    </p>
+    <p>
+      UGRC empowers Public Safety Answering Points (PSAPs) by providing access to a comprehensive suite of accurate and
+      up-to-date geospatial data. This includes vital infrastructure layers such as service area boundaries and civic
+      location data. With this data, PSAPs can pinpoint caller location, ensuring emergency responders are dispatched to
+      the appropriate scene.
+    </p>
+    <p>
+      UGRC goes beyond data provision, offering technical assistance and fostering collaboration between PSAPs. By
+      ensuring all players have access to the same high-quality GIS data, UGRC plays a critical role in streamlining
+      emergency response and potentially saving lives.
+    </p>
   </Section>
   <Section {...page.section[1]}>
     <Image slot="image" src={rocketPhoto} alt="a rocket ship launching off a screen" class="w-full max-w-[400px]" />
