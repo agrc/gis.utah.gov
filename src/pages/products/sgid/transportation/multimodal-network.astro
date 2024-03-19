@@ -1,0 +1,143 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Metadata from '@components/data/Metadata.astro';
+
+import DirectDownloads from '@components/data/DirectDownloads.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+export const metadata: IMetadata = {
+  title: 'Utah Multimodal Network Dataset',
+  description: `An ESRI network dataset used to model auto, bike, pedestrian and transit networks.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYLINE,
+  category: SgidCategory.TRANSPORTATION,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`Monthly`],
+  links: [
+    {
+      title: 'Multimodal dataset as a file geodatabase',
+      url: 'https://drive.google.com/uc?id=1DK1eYvl7NAHeL0zdFe8MgwSP2NA9XQcN&export=download',
+    },
+    {
+      title: 'Multimodal layer as a shapefile',
+      url: 'https://drive.google.com/uc?id=1gFLwycp6SChbczQ7o4ov-DGQo-LgQFK5&export=download',
+    },
+  ],
+};
+---
+
+<Layout title={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The Multimodal Network Dataset is derived from the <a href="/products/sgid/transportation/road-centerlines"
+        >Utah Roads</a
+      >, the <a href="/products/sgid/recreation/trails-pathways">Trails and Pathways</a>, and the <a
+        href="/products/sgid/transportation/uta-routes">UTA Routes</a
+      > datasets and is designed to be used for network analysis, including drive times, routes, and service areas for auto,
+      bike, pedestrian, and transit along the Wasatch Front.
+    </p>
+    <p>
+      This dataset is updated monthly in conjunction with the <a href="/products/sgid/transportation/road-centerlines"
+        >Utah Roads</a
+      >
+      update schedule.
+    </p>
+  </Fragment>
+
+  <Section title="Download the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="ESRI Street Network Dataset" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The Multimodal Network dataset was originally developed as part of a 2018 FHWA-funded Multimodal Travelshed
+      Project. The project, led by <ExternalLink href="https://udot.utah.gov/connect/">UDOT</ExternalLink>, was a pilot
+      for <ExternalLink href="https://drive.google.com/file/d/0B0e8NYR9m9MTX091S3d5Ri00S2drVi16ZDNyZFRhb3dFT3VZ/view"
+        >measuring multimodal network connectivity</ExternalLink
+      >. Other partners included <ExternalLink href="https://wfrc.org/">WFRC</ExternalLink>, <ExternalLink
+        href="https://mountainland.org/">MAG</ExternalLink
+      >, and UGRC.
+    </p>
+    <p>
+      This dataset also incorporates 2019 <ExternalLink href="https://gtfs.org/">GTFS</ExternalLink> transit routes and stops.
+      Additionally, ‘connector’ lines are created during the build process to provide the needed junctions.
+    </p>
+    <p>
+      Currently, the dataset is limited to the <ExternalLink
+        href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/WasatchFrontRegion.geojson"
+        >Wasatch Front region</ExternalLink
+      > (Box Elder, Davis, Morgan, Tooele, Salt Lake, Utah, and Weber county). Furthermore, as part of the scope of the project,
+      <ExternalLink
+        href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites.geojson"
+        >50 sites</ExternalLink
+      > were chosen where the data is optimized for multimodal connectivity (particularly the bike and pedestrian modes of
+      travel). Pedestrian data was densified within a <ExternalLink
+        href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites_halfmile_buff.geojson"
+        >half mile</ExternalLink
+      > of the sites and bike data was densified within <ExternalLink
+        href="https://github.com/gregbunce/MultimodalNetworkScripts/blob/master/data/multimodal_50_sites_1mile_buff.geojson"
+        >1 mile</ExternalLink
+      > of the sites. In other words, your mileage may vary when you venture beyond these zones.
+    </p>
+    <p>
+      This dataset can also be used with ESRI's Network Analyst for routing and <ExternalLink
+        href="https://docs.google.com/document/d/1OsXexJTap9tDY89Y_v2woGatK_u5nYd_jDdlMwWRhog/edit"
+        >travel sheds</ExternalLink
+      >.
+    </p>
+    <p>
+      Please visit this project’s <ExternalLink href="https://github.com/gregbunce/MultimodalNetworkScripts"
+        >GitHub repository</ExternalLink
+      >
+      to learn more about (or contribute to) the build process.
+    </p>
+    <p>
+      We hope to continue the project and expand the multimodal footprint beyond these original 50 sites. Please get in
+      contact with us if you are interested in contributing or playing a role.
+    </p>
+    <p>
+      Please reach out to <Contacts contactKey="roads" subject="Utah Street Network Dataset inquiry" inline />
+      with questions about this dataset.
+    </p>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Network Dataset concepts"
+        href="https://pro.arcgis.com/en/pro-app/3.1/help/analysis/networks/network-elements.htm"
+        >Read about network elements including Edges and Junctions.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Utah Street Network dataset" href="/products/sgid/transportation/street-network"
+        >A street network dataset for Utah.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Utah Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
+        >Utah Roads dataset.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="UDOT Data Portal" href="https://data-uplan.opendata.arcgis.com/"
+        >Search UDOT's geospatial data.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
