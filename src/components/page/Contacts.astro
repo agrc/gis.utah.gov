@@ -6,7 +6,7 @@ interface Props {
 }
 
 import { contacts as allContacts } from '@data/contacts.ts';
-import type { Contact } from '@models/products/sgid/types';
+import type { Contact } from '@models/types';
 
 const { contactKey, subject = 'gis.utah.gov', inline } = Astro.props;
 const encodedSubject = encodeURIComponent(subject);

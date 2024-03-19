@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -19,8 +19,8 @@ import { Image } from 'astro:assets';
 import drg from '@images/sgid/drg.png';
 
 export const metadata: IMetadata = {
-  title: 'USGS Scanned Topographic Maps',
-  description: `Scanned series of USGS topographic maps, also known as Digital Raster Graphics (DRGs).`,
+  pageTitle: 'USGS Scanned Topographic Maps',
+  pageDescription: `Scanned series of USGS topographic maps, also known as Digital Raster Graphics (DRGs).`,
   stewards: ['UGRC', 'U.S. Geological Survey'],
   type: ProductType.IMAGERY_RASTER,
   category: SgidCategory.TOPO,
@@ -38,13 +38,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

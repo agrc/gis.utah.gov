@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -19,8 +19,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Wilderness Areas',
-  description: 'BLM and USFS wilderness areas of Utah.',
+  pageTitle: 'Utah Wilderness Areas',
+  pageDescription: 'BLM and USFS wilderness areas of Utah.',
   stewards: ['UGRC', 'BLM', 'NLCS'],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
@@ -35,18 +35,12 @@ const page: IPageMetadata = {
     '2006 - BLM wilderness created in the Cedar Mountains (Tooele County)',
   ],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

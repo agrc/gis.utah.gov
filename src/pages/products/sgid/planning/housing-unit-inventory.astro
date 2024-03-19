@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -20,8 +20,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Housing Unit Inventory',
-  description: `A best-effort inventory of housing units in Utah's most populous counties using parcel, LIR, and county assessor data.`,
+  pageTitle: 'Utah Housing Unit Inventory',
+  pageDescription: `A best-effort inventory of housing units in Utah's most populous counties using parcel, LIR, and county assessor data.`,
   stewards: ['UGRC', 'WFRC', 'MAG'],
   type: ProductType.POLYGON,
   category: SgidCategory.PLANNING,
@@ -34,18 +34,12 @@ const page: IPageMetadata = {
     `May 2022 - Initial load for Salt Lake, Davis, and Weber Counties`,
   ],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

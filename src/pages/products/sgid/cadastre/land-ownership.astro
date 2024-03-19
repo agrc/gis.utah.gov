@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -22,8 +22,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Land Ownership',
-  description: `The official State of Utah School and Institutional Trust Lands Administration surface land ownership data.`,
+  pageTitle: 'Utah Land Ownership',
+  pageDescription: `The official State of Utah School and Institutional Trust Lands Administration surface land ownership data.`,
   stewards: ['School and Institutional Trust Lands Administration (SITLA)', 'BLM', 'Partners'],
   type: ProductType.POLYGON,
   category: SgidCategory.CADASTRE,
@@ -35,18 +35,12 @@ const page: IPageMetadata = {
   application: 'https://platmap.trustlands.utah.gov',
   updateHistory: [`Weekly`],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

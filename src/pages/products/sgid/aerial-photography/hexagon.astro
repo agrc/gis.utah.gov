@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -17,8 +17,8 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 export const metadata: IMetadata = {
-  title: 'Utah Hexagon licensed imagery',
-  description: `A copy of the 2021 statewide NAIP imagery with a higher resolution (15cm). This data is available as a service or download for licensed Discover users.`,
+  pageTitle: 'Utah Hexagon licensed imagery',
+  pageDescription: `A copy of the 2021 statewide NAIP imagery with a higher resolution (15cm). This data is available as a service or download for licensed Discover users.`,
   stewards: ['UGRC', 'Hexagon'],
   type: ProductType.DISCOVER_SERVICE,
   category: SgidCategory.AERIAL_PHOTOGRAPHY,
@@ -34,19 +34,11 @@ const page: IPageMetadata = {
       url: 'https://docs.google.com/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/edit?ts=5cf67d38',
     },
   ],
+  config: { skipInDepth: true },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  config={{
-    skipInDepth: true,
-  }}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

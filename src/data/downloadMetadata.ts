@@ -1,4 +1,4 @@
-import type { IHubDownload } from '@models/products/sgid/types';
+import type { IHubDownload } from '@models/types';
 
 interface DownloadMetadata {
   [key: string]: IHubDownload;

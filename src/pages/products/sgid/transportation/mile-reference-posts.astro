@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -19,8 +19,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah UDOT Mile Reference Posts',
-  description: `Physical milepost sign locations along Utah highways.`,
+  pageTitle: 'Utah UDOT Mile Reference Posts',
+  pageDescription: `Physical milepost sign locations along Utah highways.`,
   stewards: ['Utah Department of Transportation (UDOT)'],
   type: ProductType.POINT,
   category: SgidCategory.TRANSPORTATION,
@@ -31,18 +31,12 @@ const page: IPageMetadata = {
   application: 'https://maps.udot.utah.gov/wadocuments/Apps/Stationing/',
   updateHistory: [`2021`],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

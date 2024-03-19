@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -18,8 +18,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  title: 'Utah Address System Quadrants',
-  description:
+  pageTitle: 'Utah Address System Quadrants',
+  pageDescription:
     'An addressing system consists of an origin point (0,0), a north-south axis, and an east-west axis, and a boundary within which addresses are assigned using this particular grid. These quadrants are those grids.',
   stewards: ['UGRC', 'local government partners'],
   type: ProductType.POLYGON,
@@ -43,18 +43,12 @@ const page: IPageMetadata = {
     `May 2015 - Updated address system boundaries to reflect annexations in Lehi, Lewiston, and Snowville`,
   ],
   hub: {
-    ...dataPages[metadata.title],
+    ...dataPages[metadata.pageTitle],
   },
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Section title="Use the data" slot="downloads" titlePosition="center">

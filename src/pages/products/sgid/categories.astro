@@ -1,8 +1,9 @@
 ---
-import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
+import { Pillar, type IStandardPageMetadata } from '@models/types';
 
 import Layout from '@layouts/FullWidth.astro';
 
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import DataCategory from '@components/page/DataCategory.astro';
 import Section from '@components/page/Section.astro';
 
@@ -21,6 +22,7 @@ const page: IStandardPageMetadata = {
 ---
 
 <Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <Section {...page.section[0]}>
     <p>
       The SGID Index is a comprehensive list of data available from the SGID. The index is organized by data category

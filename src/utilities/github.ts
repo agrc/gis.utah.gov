@@ -1,4 +1,4 @@
-import { Octokit } from "@octokit/core";
+import { Octokit } from '@octokit/core';
 const octokit = new Octokit();
 
 export const getGithubReleases = async (repo: string) => {
@@ -22,7 +22,7 @@ export const getGithubReleases = async (repo: string) => {
       owner: 'agrc',
       repo,
       per_page: 1,
-    })
+    });
 
     return response.data[0];
   }

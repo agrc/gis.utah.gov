@@ -79,10 +79,10 @@ export interface IStandardPageMetadata {
 }
 
 export interface IMetadata {
-  title: string;
+  pageTitle: string;
   stewards: string[];
   type: ProductType;
-  description: string;
+  pageDescription: string;
   category: SgidCategory;
   secondaryCategory?: SgidCategory;
 }
@@ -92,6 +92,10 @@ export interface IPageMetadata extends IMetadata {
   updateHistory: string[];
   hub?: IHubDownload;
   links?: IDownloadLink[];
+  config?: {
+    skipInDepth?: boolean;
+    stripeDescription?: boolean;
+  };
 }
 
 export interface IDownloadLink {

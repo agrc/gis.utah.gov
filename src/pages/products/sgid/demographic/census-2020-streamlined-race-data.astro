@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
@@ -14,8 +14,8 @@ import Section from '@components/page/Section.astro';
 import Census2020Links from '@partials/Census2020Links.astro';
 
 export const metadata: IMetadata = {
-  title: 'Census 2020 Streamlined Race Data',
-  description: `Race data from the 2020 Census Blocks simplified by WFRC as a Geodatabase download`,
+  pageTitle: 'Census 2020 Streamlined Race Data',
+  pageDescription: `Race data from the 2020 Census Blocks simplified by WFRC as a Geodatabase download`,
   stewards: ['WFRC', 'US Census Bureau'],
   type: ProductType.POLYGON,
   category: SgidCategory.DEMOGRAPHIC,
@@ -34,13 +34,7 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  pageDescription={page.description}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
