@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/FullWidth.astro';
 
-import type { IStandardPageMetadata } from '@models/products/sgid/types';
+import { Pillar, type IStandardPageMetadata } from '@models/products/sgid/types';
 
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
@@ -22,6 +22,7 @@ import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   title: 'GIS events',
+  pillar: Pillar.COLLABORATION,
   section: stripeSections([
     {},
     {
@@ -62,7 +63,7 @@ const page: IStandardPageMetadata = {
 };
 ---
 
-<Layout title={page.title}>
+<Layout {...page}>
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <Image
