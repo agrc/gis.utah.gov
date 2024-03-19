@@ -2002,8 +2002,8 @@ export const dataPages: DownloadMetadata = {
   'Utah UTA Light Rail Routes': {
     itemId: 'fd41770e917344e4adef8be71a0a6741',
     name: 'Utah UTA Light Rail Routes',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'UTALightRailRoutes',
+    openSgid: 'transportation.uta_light_rail_routes',
     layerId: 0,
   },
   'Utah Ports Of Entry': {
