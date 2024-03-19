@@ -1,0 +1,41 @@
+name: Push to Redirects
+
+on:
+  push:
+    paths:
+      - 'public/_redirects'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate redirects
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+
+    steps:
+      - name: ⬇️ Set up code
+        uses: actions/checkout@v4
+        with:
+          show-progress: false
+
+      - name: ⎔ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: 🏗️ Build Site
+        working-directory: ./
+        run: |
+          npm install
+          npm run build
+
+      - name: ✔ Validate redirects
+        working-directory: ./src/migrations
+        run: |
+          npm install
+          node validate-redirects.mjs
