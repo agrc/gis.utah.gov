@@ -1,0 +1,193 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  title: 'Utah Oil Gas Wells',
+  description: `Oil and gas well locations.`,
+  stewards: ['UGRC', 'DNR-OGM'],
+  type: ProductType.POINT,
+  category: SgidCategory.ENERGY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://dataexplorer.ogm.utah.gov/',
+  updateHistory: [`Nightly`],
+
+  hub: {
+    ...dataPages[metadata.title],
+  },
+};
+---
+
+<Layout
+  pageTitle={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  pageDescription={page.description}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Surface location of oil and gas wells from the Department of Natural Resources, Oil, Gas, and Mining Division.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      This data was developed by contractors sponsored in part by the U.S. Department of Energy and the Ground Water
+      Protection Council and provides the opportunity for the Division to collect more descriptive down-hole information
+      for each wellbore permitted and drilled. Initially, much of the down-hole information will not be available
+      because there was no place to save it in the previous databases. Eventually, as new wells are drilled and old
+      legacy data is entered, more descriptive data will become available for the wells in Utah.
+    </p>
+    <p>
+      These data include the API code, well and company name, account number, filed number, field name, elevation,
+      locations coordinates, lease numbers, well type and status, total cumulative oil, gas and water, and more.
+    </p>
+
+    <h3>Well Status Code Description</h3>
+    <dl>
+      <DefinitionListItem title="NEW"
+        >New Application for Permit to Drill (APD), Deepen, or Re-enter - received but not yet approved.</DefinitionListItem
+      >
+      <DefinitionListItem title="RET"
+        >New Application for Permit to Drill (APD), Deepen, or Re-enter - Returned UNAPPROVED.</DefinitionListItem
+      >
+      <DefinitionListItem title="APD">Approved Permit to Drill, Deepen, or Re-enter.</DefinitionListItem>
+      <DefinitionListItem title="LA"
+        >Location Abandoned - Approved Permit to Drill (APD) for a NEW well - Rescinded - no site disturbance.</DefinitionListItem
+      >
+      <DefinitionListItem title="CP"
+        >Cancelled Permit - Approved Permit to Deepen or Re-enter (APD) an EXISTING well.</DefinitionListItem
+      >
+      <DefinitionListItem title="DRL">Well spudded and/or currently Drilling.</DefinitionListItem>
+      <DefinitionListItem title="OPS"
+        >Drilling Operations Suspended - spudded, but no drilling activity for an extended period - well not yet
+        completed.</DefinitionListItem
+      >
+      <DefinitionListItem title="P">Producing oil or gas well (OW, GW).</DefinitionListItem>
+      <DefinitionListItem title="S">Shut-in oil or gas well (OW, GW).</DefinitionListItem>
+      <DefinitionListItem title="PAI"
+        >Producing oil or gas zone or lateral AND Active Injection zone or lateral (well types: OWI, GWI, OGI, GGI,
+        GWD).</DefinitionListItem
+      >
+      <DefinitionListItem title="PII"
+        >Producing oil or gas zone or lateral AND Inactive Injection zone or lateral (well types: OWI, GWI, OGI, GGI,
+        GWD).</DefinitionListItem
+      >
+      <DefinitionListItem title="SAI"
+        >Shut-in oil or gas zone or lateral AND Active Injection zone or lateral (well types: OWI, GWI, OGI, GGI, GWD).</DefinitionListItem
+      >
+      <DefinitionListItem title="SII"
+        >Shut-in oil or gas zone or lateral AND Inactive Injection zone or lateral (well types: OWI, GWI, OGI, GGI,
+        GWD).</DefinitionListItem
+      >
+      <DefinitionListItem title="TA">Temporarily-Abandoned oil or gas well.</DefinitionListItem>
+      <DefinitionListItem title="A">Active service well (well types: WI, WD, GI, GS, WS, TW).</DefinitionListItem>
+      <DefinitionListItem title="I">Inactive service well (well types: WI, WD, GI, GS, WS, TW).</DefinitionListItem>
+      <DefinitionListItem title="PA">Any well or construct permanently Plugged and Abandoned.</DefinitionListItem>
+    </dl>
+    <h3>Well Type Code Description</h3>
+    <dl>
+      <DefinitionListItem title="OW">Oil well - capable of producing oil in substantial quantities.</DefinitionListItem>
+      <DefinitionListItem title="GW"
+        >Natural Gas well - capable of producing natural gas in substantial quantities and is not an oil well.</DefinitionListItem
+      >
+      <DefinitionListItem title="OGW"
+        >Combined Oil and Gas well - producing oil from one lateral or zone and gas from another.</DefinitionListItem
+      >
+      <DefinitionListItem title="CBM"
+        >Coalbed Methane well - a gas well that produces from coalbeds and rock strata associated with coalbed.</DefinitionListItem
+      >
+      <DefinitionListItem title="CO2">Carbon Dioxide well.</DefinitionListItem>
+      <DefinitionListItem title="HE">Helium well.</DefinitionListItem>
+      <DefinitionListItem title="OWI"
+        >Oil Well/Water Injection Well (capable of alternating functions in a single wellbore OR capable of producing in
+        one well bore while injecting in another bore). Well is to be reported on both Form 10, Monthly Production
+        Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</DefinitionListItem
+      >
+      <DefinitionListItem title="GWI"
+        >Gas Well/Water Injection Well (capable of alternating functions in a single wellbore OR capable of producing in
+        one well bore while injecting in another bore). Well is to be reported on both Form 10, Monthly Production
+        Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</DefinitionListItem
+      >
+      <DefinitionListItem title="OGI"
+        >Oil Well/Gas Injection Well (capable of alternating functions in a single wellbore OR capable of producing in
+        one well bore while injecting in another bore). Well is to be reported on both Form 10, Monthly Production
+        Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</DefinitionListItem
+      >
+      <DefinitionListItem title="GGI">
+        Gas Well/Gas Injection Well (capable of alternating functions in a single wellbore OR capable of producing in
+        one well bore while injecting in another bore). Well is to be reported on both Form 10, Monthly Production
+        Report and UIC Form 2, Monthly Report of Enhanced Recovery Project with appropriate statuses.</DefinitionListItem
+      >
+      <DefinitionListItem title="GWD"
+        >Gas Well/Water Disposal Well (capable of alternating functions in a single wellbore OR capable of producing in
+        one well bore while injecting in another bore). Well is to be reported on both Form 10, Monthly Production
+        Report and UIC Form 3, Monthly Injection Report with appropriate statuses.</DefinitionListItem
+      >
+      <DefinitionListItem title="WI">Water Injection well (service well).</DefinitionListItem>
+      <DefinitionListItem title="WD">Water Disposal well (service well).</DefinitionListItem>
+      <DefinitionListItem title="GI">Gas Injection well (service well).</DefinitionListItem>
+      <DefinitionListItem title="GS">Gas Storage well (service well).</DefinitionListItem>
+      <DefinitionListItem title="WS">Water Source well (service well).</DefinitionListItem>
+      <DefinitionListItem title="TW"
+        >Test Well (service well - strat test, core test, monitor well, etc.).</DefinitionListItem
+      >
+      <DefinitionListItem title="D"
+        >Dry Hole (well never produced oil or natural gas in paying quantities).</DefinitionListItem
+      >
+      <DefinitionListItem title="NA">Well Type Not Available or known (old PA wells).</DefinitionListItem>
+    </dl>
+  </Fragment>
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="DNR-OGM" href="https://ogm.utah.gov/og-home/"
+        >Utah Division of Oil, Gas, and Mining. Publications, rules, research, and more information.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="EGI" href="https://egi.utah.edu/"
+        >Energy and Geoscience Institute at the University of Utah.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Oil and Gas Fields" href="/products/sgid/energy/oil-gas-fields" style="secondary"
+        >Polygons representing oil and gas fields.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Oil and Gas Units" href="/products/sgid/energy/federal-oil-gas-units" style="secondary"
+        >Federal oil and gas units from the BLM.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Solar" href="/products/sgid/energy/solar" style="secondary"
+        >Areas of renewable solar resources identified by UREZ.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Geothermal" href="/products/sgid/energy/geothermal" style="secondary"
+        >Areas of geothermal resources identified by UREZ.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
