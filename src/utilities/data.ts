@@ -35,7 +35,7 @@ export const getFeatureServiceUrl = ({
   serviceName,
 }) => `${host}/rest/services/${serviceName}/FeatureServer/${layerId}`;
 
-export const getArcGisHubUrl = (hub) => {
+export const getArcGisHubUrl = (hub: { title?: string; hubName?: any; organization?: any; itemId?: string }) => {
   let id = hub.hubName?.toLowerCase().replaceAll(' ', '-');
 
   if (hub.organization?.toLowerCase() !== 'utah') {
@@ -43,4 +43,4 @@ export const getArcGisHubUrl = (hub) => {
   }
 
   return `https://opendata.gis.utah.gov/datasets/${id}/about`;
-}
+};

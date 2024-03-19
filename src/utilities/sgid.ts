@@ -1,18 +1,20 @@
 import { ProductType, type StewardshipRecord } from '@models/products/sgid/types';
 import { GoogleAuth, auth } from 'google-auth-library';
+import type { JSONClient } from 'google-auth-library/build/src/auth/googleauth';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 const stewardshipId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ';
 
 const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'];
 
-let client;
+let client: GoogleAuth | JSONClient;
 
 console.log('\nbuilding sgid index. configuration: ', import.meta.env.MODE);
 
 if (import.meta.env.NETLIFY) {
   console.log('using ci credentials');
   client = auth.fromJSON(JSON.parse(import.meta.env.GOOGLE_PRIVATE_KEY));
+  // @ts-ignore (they need to fix their types, this is valid ref: https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest#:~:text=const%20client%20%3D%20auth.fromJSON(keys)%3B)
   client.scopes = scopes;
 } else {
   client = new GoogleAuth({
@@ -65,8 +67,11 @@ function etlRow(row): StewardshipRecord | null {
     displayName: row.get('displayName'),
     tableName: row.get('tableName'),
     category: row.get('category'),
-    ugrcStatus: row.get('ugrcStatus'),
-    source: row.get('datasetSource'),
+    ugrcStatus: row.get('ugrcStatus') as StewardshipRecord['ugrcStatus'],
+    source: row
+      .get('datasetSource')
+      .split(',')
+      .map((source) => source.trim()),
     dataType: toProductTypeEnum(row.get('productType')),
     description: row.get('description'),
     inActionUrl: row.get('inActionUrl'),
@@ -78,7 +83,7 @@ function etlRow(row): StewardshipRecord | null {
       hubName: row.get('hubName'),
     },
     server: {
-      layerId: row.get('serverLayerId'),
+      layerId: Number(row.get('serverLayerId')),
       serviceName: row.get('serverServiceName'),
       host: row.get('serverHost'),
     },
