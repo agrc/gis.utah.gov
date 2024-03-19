@@ -47,7 +47,10 @@ const toEnum = (category?: string) => {
 };
 ---
 
-<Layout pageTitle={`SGID ${readableCategory} data`}>
+<Layout
+  pageTitle={`SGID ${readableCategory} data`}
+  pageDescription={`SGID datasets in the ${readableCategory} category`}
+>
   <BreadCrumbs category={toEnum(category)} class="bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300" />
   <Section
     title=`The ${readableCategory} data index`

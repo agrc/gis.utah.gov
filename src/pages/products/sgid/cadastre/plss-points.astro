@@ -48,7 +48,13 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout
+  pageTitle={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  pageDescription={page.description}
+>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">

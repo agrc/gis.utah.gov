@@ -17,7 +17,7 @@ const post = Astro.props as DecoratedBlogEntry;
 const { Content } = await post.render();
 ---
 
-<Layout bannerHeading="From the blog" pageTitle={post.data.title}>
+<Layout bannerHeading="From the blog" pageTitle={post.data.title} pageDescription={post.data.snippet}>
   <Section title={post.data.title} titlePosition="center" stripe>
     <div class="flex justify-center gap-1 text-sm" slot="sub-title">
       <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Author</span>

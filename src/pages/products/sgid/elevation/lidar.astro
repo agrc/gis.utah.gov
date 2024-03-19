@@ -606,7 +606,7 @@ const projectAssets = {
 };
 ---
 
-<Layout pageTitle={page.pageTitle} pillar={page.pillar}>
+<Layout pageTitle={page.pageTitle} pillar={page.pillar} pageDescription={metadata.description}>
   <BreadCrumbs category={metadata.category} product={metadata.title} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>

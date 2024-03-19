@@ -56,7 +56,12 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category}>
+<Layout
+  pageTitle={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  pageDescription={page.description}
+>
   <Metadata slot="metadata" {...page} />
 
   <Section title="Get the app" titlePosition="center" slot="downloads">

@@ -48,7 +48,13 @@ const page: IPageMetadata = {
 };
 ---
 
-<Layout pageTitle={page.title} subTitle={page.updateHistory[0]} category={page.category} actionUrl={page.application}>
+<Layout
+  pageTitle={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  pageDescription={page.description}
+>
   <Metadata slot="metadata" {...page} />
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -363,8 +369,7 @@ const page: IPageMetadata = {
       <p>Address origins</p>
       <div>
         All cities in Salt Lake County count off the same address origin in downtown Salt Lake City at the intersection
-        of South Temple (0 N/S) &amp; Main St (0 E/W) <em
-          ><strong>with the exception of the following area</strong></em
+        of South Temple (0 N/S) &amp; Main St (0 E/W) <em><strong>with the exception of the following area</strong></em
         >:
       </div>
       <BulletedList>

@@ -23,9 +23,11 @@ const links = [
   { title: 'Google' },
   { title: 'Mobile Devices' },
 ] as SectionProp[];
+const pageDescription =
+  'Explore the design system of GIS Utah. Find components, styles, and guidelines for building consistent and user-friendly web applications.';
 ---
 
-<Layout pageTitle="Layout title">
+<Layout pageTitle="Layout title" pageDescription={pageDescription}>
   <Section
     primary
     stripe
