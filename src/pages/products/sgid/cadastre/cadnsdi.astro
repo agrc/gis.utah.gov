@@ -1,0 +1,126 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
+import { ProductType, SgidCategory } from '@models/products/sgid/types';
+
+import Metadata from '@components/data/Metadata.astro';
+
+import BulletedList from '@components/page/BulletedList.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+export const metadata: IMetadata = {
+  pageTitle: 'CADNSDI GIS Version v2.3',
+  pageDescription: `The full version of the PLSS, including townships, sections, quarter sections, quarter quarter sections, and PLSS points.`,
+  stewards: ['UGRC', 'BLM'],
+  type: ProductType.ALL_GEOMETRIES,
+  category: SgidCategory.CADASTRE,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: '',
+  updateHistory: [
+    'December 15, 2020',
+    'October 15, 2019',
+    'January 15, 2019',
+    'January 1, 2018',
+    'November 1, 2018',
+    'August 28, 2015',
+  ],
+};
+---
+
+<Layout
+  pageTitle={page.title}
+  subTitle={page.updateHistory[0]}
+  category={page.category}
+  actionUrl={page.application}
+  config={{
+    skipInDepth: true,
+  }}
+>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The Bureau of Land Management (BLM) Geographic Coordinate Data Base (GCDB) is a collection of geographic
+      information representing the United States Public Land Survey System (PLSS) and other official surveys. This
+      version of the GCDB data is published from the Utah PLSS Fabric v2.2; which uses BLM's official survey records
+      including Cadastral survey plats and field notes supplemented with local survey records and geodetic control
+      information.
+    </p>
+  </Fragment>
+
+  <Section title="About the data" slot="downloads" titlePosition="center">
+    <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
+      <div class="flex flex-col">
+        <h2 class="pb-1">CadNSDI GIS Version v2.3</h2>
+        <p>
+          <ExternalLink href="https://drive.google.com/uc?id=13DUod-JnR2W7JLbRM1wjS-bCDrRs93Ij&export=download"
+            >Download now.</ExternalLink
+          >
+        </p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h2 class="pb-1">Important Notes for CadNSDI GIS Version 2.3</h2>
+        <BulletedList>
+          <li>
+            The Zip file contains the following feature classes as provided by the BLM with no changes made:
+            ConflictedAreas, MeanderedWater, MetadataGlance, PLSSFirstDivision, PLSSIntersected, PLSSPoint,
+            PLSSSecondDivision, PLSSSpecialSurvey, PLSSTownship, SurveySystem.
+          </li>
+          <li>The current version CadNSDI_GIS_v2.3, dataset was released December 2020.</li>
+        </BulletedList>
+      </div>
+    </div>
+
+    <p>
+      There are no constraints or warranties with regard to the use of this dataset. This state-wide dataset is
+      maintained by all partners of Utah PLSS Fabric Group.
+    </p>
+    <p>
+      The geographic coordinates and their associated products are NOT legal land survey records. The coordinates can
+      NOT be used as a substitute for a legal land survey. They can be used for record keeping, mapping, graphics and
+      planning purposes only. No warranty is made by the Bureau of Land Management for use of the data for purposes not
+      intended by BLM.
+    </p>
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="Bureau of Land Management Utah, Cadastral Survey"
+        href="https://www.blm.gov/programs/lands-and-realty/cadastral-survey"
+        >Aboout BLM's Cadastral Survey program</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Federal Geographic Data Committee (FGDC) Subcommittee for Cadastral Education & Training"
+        href="https://www.fgdc.gov/organization/working-groups-subcommittees/cadastral/index_html"
+        >The Cadastral Subcommittee develops and implements plans to coordinate cadastral data-related activities among
+        Federal, State, Tribal, and local governments, and the private sector.
+      </CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Parcels" href="/products/sgid/cadastre/parcels"
+        >Parcel data for each of the 29 counties in Utah.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="PLSS point data" href="/products/sgid/cadastre/plss-points"
+        >Public Land Survey System points for the State of Utah.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="PLSS sections data" href="/products/sgid/cadastre/plss-sections"
+        >Public Land Survey System sections for the State of Utah.</CardWithSmallLink
+      ><CardWithSmallLink title="PLSS townships data" href="/products/sgid/cadastre/plss-townships"
+        >Public Land Survey System townships for the State of Utah.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
