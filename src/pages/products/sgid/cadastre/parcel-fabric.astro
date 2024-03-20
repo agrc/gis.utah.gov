@@ -5,20 +5,20 @@ import type { IMetadata, IPageMetadata } from '@models/types';
 import { ProductType, SgidCategory } from '@models/types';
 
 import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
 
-import BulletedList from '@components/page/BulletedList.astro';
+import DirectDownloads from '@components/data/DirectDownloads.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 export const metadata: IMetadata = {
   pageTitle: 'PLSS Fabric version 2.3',
-  pageDescription: `The State of Utah Public Land Survey System (PLSS) Fabric version 1.0 was generated from the Cadastral National Spatial Data Infrastructure (CadNSDI) version 2.0.`,
+  pageDescription: `A specific data model used to manage and represent parcels of land.`,
   stewards: ['UGRC', 'BLM', 'County surveyors', 'SITLA', 'UMIP', 'Premier Data Solutions'],
-  type: ProductType.GEODATABASE,
+  type: ProductType.POLYGON,
   category: SgidCategory.CADASTRE,
 };
 
@@ -33,9 +33,12 @@ const page: IPageMetadata = {
     'November 1, 2016',
     'May 2, 2016',
   ],
-  config: {
-    skipInDepth: true,
-  },
+  links: [
+    {
+      title: 'File Geodatabase',
+      url: 'https://drive.google.com/a/utah.gov/uc?id=1g8O9ohO4Odf9XMm6ZkXZZ9c6iyGmkREX&export=download',
+    },
+  ],
 };
 ---
 
@@ -43,6 +46,18 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
+    <p>
+      The State of Utah Public Land Survey System (PLSS) Fabric version 1.0 was generated from the Cadastral National
+      Spatial Data Infrastructure (CadNSDI) version 2.0 which are the core or essential elements of cadastral
+      information that provide the framework for building and using cadastral (land records) information nationwide.
+    </p>
+  </Fragment>
+
+  <Section title="Download the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="From Google Drive" links={page.links!} />
+  </Section>
+
+  <Fragment slot="description">
     <p>
       The PLSS data within the CadNSDI is typically survey data, control observations and other supplemental
       measurements, but in some cases survey information has not been completely abstracted or is not available and in
@@ -57,41 +72,14 @@ const page: IPageMetadata = {
       Partnership (UMIP) through the Department of Environmental Quality (DEQ).
     </p>
     <p>
-      Survey Control added to the PLSS Fabric is provided by the BLM Surveyors, County Surveyors, County Contract
+      Survey Control added to the PLSS Fabric are provided by the BLM Surveyors, County Surveyors, County Contract
       Surveyors and Private Surveyors throughout the State.
     </p>
   </Fragment>
 
-  <Section title="About the data" slot="downloads" titlePosition="center">
-    <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
-      <div class="flex flex-col">
-        <h2 class="pb-1">PLSS Fabric Version 2.3</h2>
-        <p>
-          <ExternalLink
-            href="https://drive.google.com/a/utah.gov/uc?id=1g8O9ohO4Odf9XMm6ZkXZZ9c6iyGmkREX&export=download"
-            >Download now.</ExternalLink
-          >
-        </p>
-      </div>
-      <div class="flex flex-col gap-2">
-        <h2 class="pb-1">Important Notes for PLSS Fabric Version 2.3</h2>
-        <BulletedList>
-          <li>The Fabric works best with ArcMap 10.4.1. Improvements were made in ArcMap 10.5 in 2017.</li>
-          <li>The newest Version 2.3 includes updates from BLM, UGRC and SITLA.</li>
-          <li>
-            Continuous updates will be made to the PLSS Fabric and are available for download from this page. Please
-            return frequently to download the latest version of the Fabric with new control added.
-          </li>
-          <li>
-            Data for CadNSDI Versions and the GCDB downloadable layers (soon to be Utah PLSS) are published from the
-            fabric which is the production database now.
-          </li>
-        </BulletedList>
-      </div>
-    </div>
-  </Section>
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
-  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+  <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="CADNSDI GIS Version 2.3" href="/products/sgid/cadastre/cadnsdi"
         >CADNSDI GIS Version 2.3 GCBD</CardWithPopularLink
@@ -102,17 +90,19 @@ const page: IPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="PLSS quarter sections" href="/products/sgid/cadastre/plss-quarter-sections"
-        >Public Land Survey System quarter sections for the State of Utah.</CardWithSmallLink
+      <CardWithSmallLink
+        title="PLSS quarter sections"
+        href="/products/sgid/cadastre/plss-quarter-sections"
+        style="secondary">Public Land Survey System quarter sections for the State of Utah.</CardWithSmallLink
       >
-      <CardWithSmallLink title="PLSS point data" href="/products/sgid/cadastre/plss-points"
+      <CardWithSmallLink title="PLSS point data" href="/products/sgid/cadastre/plss-points" style="secondary"
         >Public Land Survey System points for the State of Utah.</CardWithSmallLink
       >
-      <CardWithSmallLink title="PLSS sections data" href="/products/sgid/cadastre/plss-sections"
+      <CardWithSmallLink title="PLSS sections data" href="/products/sgid/cadastre/plss-sections" style="secondary"
         >Public Land Survey System sections for the State of Utah.</CardWithSmallLink
-      ><CardWithSmallLink title="PLSS townships data" href="/products/sgid/cadastre/plss-townships"
+      ><CardWithSmallLink title="PLSS townships data" href="/products/sgid/cadastre/plss-townships" style="secondary"
         >Public Land Survey System townships for the State of Utah.</CardWithSmallLink
       >
     </GridForYouMightLike>
