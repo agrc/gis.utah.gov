@@ -789,7 +789,7 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'energy.oil_gas_wells',
     layerId: 0,
     featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/',
-    oddHubName: 'utah-oil-and-gas-well-locations'
+    oddHubName: 'utah-oil-and-gas-well-locations',
   },
   'Utah Oil Gas Wells Down Holes': {
     itemId: 'hosted by DOGM',
