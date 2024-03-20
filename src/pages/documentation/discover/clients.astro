@@ -137,8 +137,9 @@ const page: IStandardPageMetadata = {
       There is one caveat to using discover services with WebTileLayer; it does not store metadata about the service.
       The piece of metadata that will affect developers the most is the cache level information. WebTileLayer's cache
       levels are based on a suggested set that is common amongst popular tile providers. The suggested set uses 0
-      through 19. If the base map you are using deviates from these levels (most of our base maps are 0-19 but <a
-        href="/documentation/developer/base-maps/basemap-scales">there are a few exceptions</a
+      through 19. If the base map you are using deviates from these levels (most of our base maps are 0-19 but <ExternalLink
+        href="https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated"
+        >there are a few exceptions</ExternalLink
       >), you will be responsible for setting those values or you will not be given the UI to see the full tile set. As
       you can see in the sample below it takes a fair amount of work.
     </p>
