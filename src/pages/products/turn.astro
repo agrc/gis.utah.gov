@@ -20,6 +20,7 @@ import getConnectedPhoto from '@images/turn/get-connected.svg';
 import learningPhoto from '@images/turn/learning.svg';
 import mapPhoto from '@images/turn/map.svg';
 import signUpPhoto from '@images/turn/sign-up.svg';
+import wallMapPhoto from '@images/turn/turn-gps-network-map.png';
 import turnLogo from '@images/turn/turn-logo.svg';
 
 import { stripeSections } from '@utils/page';
@@ -113,12 +114,12 @@ const page: IStandardPageMetadata = {
 
   <Section slot="more-resources" {...page.section[2]}>
     <GridForMoreResources>
-      <CardWithSideImage title="TURN PDF wall map" actionUrl="/images/2023TURNGPSNetwork.png">
+      <CardWithSideImage title="TURN PDF wall map" actionUrl={wallMapPhoto.src}>
         <Image slot="image" src={mapPhoto} alt="a person holding a map with pins on it" class="self-center" />
         Hang the network on your wall.
       </CardWithSideImage>
       <CardWithSideImage title="Purchase or renew an account" actionUrl="https://turngps-billpay.ugrc.utah.gov/">
-        <Image slot="image" src={mapPhoto} alt="a person checking out at the grocery store" class="self-center" />
+        <Image slot="image" src={signUpPhoto} alt="a person checking out at the grocery store" class="self-center" />
         Instructions on how you can sign up for or renew your account.
       </CardWithSideImage>
     </GridForMoreResources>
