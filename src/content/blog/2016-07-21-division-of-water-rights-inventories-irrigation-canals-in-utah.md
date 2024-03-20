@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Division of Water Rights
-  email: rloftus@utah.gov
+title: Division of Water Rights Inventories Irrigation Canals in Utah
+published: false
+author: Division of Water Rights
+date: 2016-07-21T19:30:03.000Z
+category: Guest Blog
 tags:
   - dnr
   - dwr
   - nhd
   - water
-date: 2016-07-21T19:30:03.000Z
-title: Division of Water Rights Inventories Irrigation Canals in Utah
-published: false
-category: Guest Blog
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,14 +1,12 @@
 ---
 title: The Geocoding Toolbox Is Being Deprecated
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
+author: Scott Davis
 date: 2024-01-15T16:30:36.000Z
+category: Developer
 tags:
   - geocoding
   - python
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

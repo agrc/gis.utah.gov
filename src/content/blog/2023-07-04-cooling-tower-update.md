@@ -1,15 +1,13 @@
 ---
-title: 'Results Update: Detecting Cooling Towers with Computer Vision Tools'
-author:
-  display_name: Erik Neemann
-  email: eneemann@slco.org
+title: "Results Update: Detecting Cooling Towers with Computer Vision Tools"
+author: Erik Neemann
 date: 2023-06-30T09:00:00.000Z
+category: UGRC
 tags:
   - computer vision
   - dhhs
   - cooling towers
   - legionella
-category: UGRC
 cover_image: /src/images/pillar-blog/2023-07-04-cooling-tower-update/dhhs_process.png
 cover_image_alt: Cooling Tower Project Overview
 ---

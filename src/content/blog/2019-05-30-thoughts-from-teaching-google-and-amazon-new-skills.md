@@ -1,12 +1,10 @@
 ---
 title: Thoughts from Teaching Google and Amazon New Skills
-author:
-  display_name: Steve Gourley
-  email: sgourley@utah.gov
+author: Steve Gourley
 date: 2019-05-30T10:05:51.000Z
-tags: []
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

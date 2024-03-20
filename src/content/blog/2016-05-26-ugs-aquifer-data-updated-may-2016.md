@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Richard Emerson, Utah Geological Survey
-  email: richardemerson@utah.gov
+title: UGS Aquifer Data Updated May 2016
+published: false
+author: Richard Emerson, Utah Geological Survey
+date: 2016-05-26T16:53:19.000Z
+category: Guest Blog
 tags:
   - aquifers
   - data update
   - ugs
-date: 2016-05-26T16:53:19.000Z
-title: UGS Aquifer Data Updated May 2016
-published: false
-category: Guest Blog
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

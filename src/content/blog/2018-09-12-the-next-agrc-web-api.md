@@ -1,15 +1,13 @@
 ---
 title: The Next UGRC API
 published: false
-author:
-  display_name: Steve Gourley
-  email: sgourley@utah.gov
+author: Steve Gourley
 date: 2018-09-13T00:12:00.000Z
+category: API
 tags:
   - api
   - cloud
-category: API
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

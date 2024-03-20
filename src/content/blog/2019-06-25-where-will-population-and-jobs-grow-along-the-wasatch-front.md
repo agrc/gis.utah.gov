@@ -1,17 +1,15 @@
 ---
 title: Where Will Population and Jobs Grow along the Wasatch Front?
 published: false
-author:
-  display_name: Bert Granberg
-  email: bgranberg@wfrc.org
+author: Bert Granberg
 date: 2019-06-25T22:02:26.000Z
+category: Guest Blog
 tags:
   - datasets
   - population
   - jobs
   - wfrc
-category: Guest Blog
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: UGRC Staff
-  email: ugrc@utah.gov
+title: "Maps n' Mobile: Wildlife-Vehicle Collision Reporting"
+published: false
+author: UGRC Staff
+date: 2012-04-27 11:41:48 -0600
+category: Collaboration
 tags:
   - developers
   - mobile
   - vehicle
   - web services
-published: false
-date: 2012-04-27 11:41:48 -0600
-title: "Maps n' Mobile: Wildlife-Vehicle Collision Reporting"
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

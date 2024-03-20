@@ -1,13 +1,11 @@
 ---
 title: UGRC Innovation Award Grant
 published: false
-author:
-  display_name: Anna Tribolet
-  email: atribolet@utah.gov
+author: Anna Tribolet
 date: 2018-09-11T23:14:09.000Z
-tags: []
 category: UGRC
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: Data Schema Released for Expanded GIS Parcel Sharing
+published: false
+author: Bert Granberg
+date: 2016-07-07T20:05:49.000Z
+category: Collaboration
 tags:
   - gomb
   - parcels
   - planning
-date: 2016-07-07T20:05:49.000Z
-title: Data Schema Released for Expanded GIS Parcel Sharing
-published: false
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

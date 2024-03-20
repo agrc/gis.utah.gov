@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
-tags: []
-date: 2015-03-05 16:02:52 -0700
 title: Summarizing Utah GIS Data Needs for NG 9-1-1
 published: false
+author: Bert Granberg
+date: 2015-03-05 16:02:52 -0700
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

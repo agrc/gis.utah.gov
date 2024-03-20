@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: UGRC&#039;s Latest Where in Utah Quiz and UGIC 2016 Conf Recap
+published: false
+author: Jessie Pechmann
+date: 2016-05-26T19:01:07.000Z
+category: Collaboration
 tags:
   - bryce
   - conference
   - quiz
   - ugic
-date: 2016-05-26T19:01:07.000Z
-title: UGRC&#039;s Latest Where in Utah Quiz and UGIC 2016 Conf Recap
-published: false
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

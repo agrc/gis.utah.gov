@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: Utah GIS Framework Data for 800 Please, Alex...
+published: false
+author: Jessie Pechmann
+date: 2013-06-28 17:00:05 -0600
+category: SGID Updates
 tags:
   - address
   - address points
   - data
-date: 2013-06-28 17:00:05 -0600
-title: Utah GIS Framework Data for 800 Please, Alex...
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

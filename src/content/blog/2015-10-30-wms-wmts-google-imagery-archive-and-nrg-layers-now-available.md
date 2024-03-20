@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: WMS, WMTS Google Imagery Archive and NRG Layers Now Available
+published: false
+author: Jessie Pechmann
+date: 2015-10-30 10:53:49 -0600
+category: Discover
 tags:
   - archive
   - google
   - imagery
   - service
-published: false
-date: 2015-10-30 10:53:49 -0600
-title: WMS, WMTS Google Imagery Archive and NRG Layers Now Available
-category: Discover
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

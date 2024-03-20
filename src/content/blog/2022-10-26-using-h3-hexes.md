@@ -1,14 +1,12 @@
 ---
 title: Aggregating and Analyzing Point Data with H3 Hexes and Pandas
-author:
-  display_name: Jake Adams
-  email: jdadams@utah.gov
+author: Jake Adams
 date: 2022-10-26T08:00:00.000Z
+category: Developer
 tags:
   - data
   - analysis
   - python
-category: Developer
 cover_image: /src/images/pillar-blog/2022-10-26-using-h3-hexes/h3_supermarkets.png
 cover_image_alt: Address points per supermarket
 ---

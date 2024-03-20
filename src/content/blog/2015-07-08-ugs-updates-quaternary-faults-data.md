@@ -1,7 +1,9 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: UGS Updates Quaternary Faults Data
+published: false
+author: Jessie Pechmann
+date: 2015-07-08 11:05:04 -0600
+category: SGID Updates
 tags:
   - faults
   - geoscience
@@ -9,11 +11,7 @@ tags:
   - quaternary
   - ugs
   - utah geologic survey
-date: 2015-07-08 11:05:04 -0600
-title: UGS Updates Quaternary Faults Data
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

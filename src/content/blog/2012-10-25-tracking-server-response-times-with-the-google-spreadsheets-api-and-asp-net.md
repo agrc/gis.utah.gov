@@ -1,14 +1,12 @@
 ---
-author:
-  display_name: Steve Gourley
-  email: sgourley@utah.gov
+title: Tracking Server Response Times with the Google Spreadsheets API and asp.net
+published: false
+author: Steve Gourley
+date: 2012-10-25 12:39:06 -0600
+category: Developer
 tags:
   - code
-date: 2012-10-25 12:39:06 -0600
-published: false
-title: Tracking Server Response Times with the Google Spreadsheets API and asp.net
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Kelly Green
-  email: ugrc@utah.gov
-tags: []
-date: 2012-07-19 17:49:57 -0600
 title: Utah Zip Code Boundaries Update
 published: false
+author: Kelly Green
+date: 2012-07-19 17:49:57 -0600
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

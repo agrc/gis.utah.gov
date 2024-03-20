@@ -1,15 +1,13 @@
 ---
 title: UGRC Next-Generation 911 Update
 published: false
-author:
-  display_name: Erik Neemann
-  email: eneemann@utah.gov
+author: Erik Neemann
 date: 2021-04-09T08:30:12.000Z
+category: SGID Updates
 tags:
   - ng911
   - psap
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

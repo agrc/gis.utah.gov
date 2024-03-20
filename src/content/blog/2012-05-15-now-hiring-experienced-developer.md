@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: UGRC Staff
-  email: ugrc@utah.gov
+title: Now Hiring! Experienced Developer
+published: false
+author: UGRC Staff
+date: 2012-05-15 22:43:47 -0600
+category: UGRC
 tags:
   - applications
   - developers
-published: false
-date: 2012-05-15 22:43:47 -0600
-title: Now Hiring! Experienced Developer
-category: UGRC
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,15 +1,13 @@
 ---
 title: Introducing the Open SGID Database - A New Publicly Available Data Offering
-author:
-  display_name: Nathan Kota
-  email: nathankota@utah.gov
+author: Nathan Kota
 date: 2020-05-04T00:00:00.000Z
+category: SGID
 tags:
   - sgid
   - open source
   - cloud
-category: SGID
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

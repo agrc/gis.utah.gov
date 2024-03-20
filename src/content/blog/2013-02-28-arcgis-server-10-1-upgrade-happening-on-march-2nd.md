@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
-tags: []
-published: false
-date: 2013-02-28 16:07:29 -0700
 title: ArcGIS Server 10.1 Upgrade Happening on March 2nd
+published: false
+author: Scott Davis
+date: 2013-02-28 16:07:29 -0700
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

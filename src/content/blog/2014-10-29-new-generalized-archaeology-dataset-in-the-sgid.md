@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: New generalized archaeology dataset in the SGID
+published: false
+author: Jessie Pechmann
+date: 2014-10-29 14:03:08 -0600
+category: SGID Updates
 tags:
   - archaeology
   - generalized
   - history
-date: 2014-10-29 14:03:08 -0600
-title: New generalized archaeology dataset in the SGID
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

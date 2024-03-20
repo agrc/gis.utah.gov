@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
-tags:
-  - '2014'
-  - maps on the hill
-published: false
-date: 2014-01-23 14:57:28 -0700
 title: Come to Maps on the Hill 2014!
+published: false
+author: Jessie Pechmann
+date: 2014-01-23 14:57:28 -0700
 category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags:
+  - "2014"
+  - maps on the hill
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

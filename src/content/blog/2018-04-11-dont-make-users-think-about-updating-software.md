@@ -1,14 +1,12 @@
 ---
 title: Don't Make Users Think about Updating Software
-author:
-  display_name: Steve Gourley
-  email: sgourley@utah.gov
+author: Steve Gourley
 date: 2018-04-11T23:13:59.000Z
+category: Developer
 tags:
   - arcgis-pro
   - update-service
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,16 +1,14 @@
 ---
 title: Municipal Boundaries Final update for 2019
 published: false
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
+author: Mike Heagin
 date: 2020-01-06T12:15:47.000Z
+category: SGID Updates
 tags:
   - municipality
   - boundaries
   - annexations
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

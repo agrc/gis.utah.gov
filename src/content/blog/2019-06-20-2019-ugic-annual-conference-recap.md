@@ -1,14 +1,12 @@
 ---
 title: 2019 UGIC Annual Conference Recap
 published: false
-author:
-  display_name: Josh Groeneveld
-  email: jgroeneveld@utah.gov
+author: Josh Groeneveld
 date: 2019-06-20T22:35:13.000Z
+category: Collaboration
 tags:
   - conference
   - UGIC
-category: Collaboration
 cover_image: /src/images/pillar-blog/2019-06-20-2019-ugic-annual-conference-recap/ugicconferencelogo.jpg
 cover_image_alt: ugic 2019 conference logo
 ---

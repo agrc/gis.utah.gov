@@ -1,14 +1,12 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
-tags:
-  - agol
-date: 2013-07-09 14:34:21 -0600
 title: UGRC Base Map Services Now Accessible via ArcGIS Online
 published: false
+author: Bert Granberg
+date: 2013-07-09 14:34:21 -0600
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags:
+  - agol
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

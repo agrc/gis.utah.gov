@@ -1,7 +1,9 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: Work Group Recommends Expanded GIS Parcel Sharing
+published: false
+author: Bert Granberg
+date: 2016-05-26T16:44:03.000Z
+category: Collaboration
 tags:
   - address
   - assessment
@@ -15,11 +17,7 @@ tags:
   - tax
   - uac
   - valuation
-date: 2016-05-26T16:44:03.000Z
-title: Work Group Recommends Expanded GIS Parcel Sharing
-published: false
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

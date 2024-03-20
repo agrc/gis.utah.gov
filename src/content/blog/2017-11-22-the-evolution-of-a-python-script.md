@@ -1,14 +1,13 @@
 ---
 title: The Evolution of a Python Script
-author:
-  display_name: Steve Gourley and Scott Davis
-  email: sgourley@utah.gov
+author: Steve Gourley
+co_author: Scott Davis
 date: 2017-11-22T01:48:13.000Z
+category: Developer
 tags:
   - code
   - python
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,17 +1,15 @@
 ---
 title: New Utah Web Page for Important Census LUCA Information
 published: false
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+author: Bert Granberg
 date: 2017-11-09T20:36:48.000Z
+category: SGID Updates
 tags:
   - address
   - census
   - demographic
   - luca
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

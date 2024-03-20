@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
-tags: []
-date: 2012-11-19 16:44:25 -0700
 title: Introducing the new UGRC Newsletter
 published: false
+author: Jessie Pechmann
+date: 2012-11-19 16:44:25 -0700
 category: UGRC
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

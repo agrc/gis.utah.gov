@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
+title: Staying in the Zone with AMD Butler
+published: false
+author: Scott Davis
+date: 2015-05-25 17:01:31 -0600
+category: Developer
 tags:
   - javascript
   - tools
-date: 2015-05-25 17:01:31 -0600
-title: Staying in the Zone with AMD Butler
-published: false
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

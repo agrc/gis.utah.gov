@@ -1,13 +1,11 @@
 ---
 title: Meet Erik Neemann - New UGRC Staff
 published: false
-author:
-  display_name: Erik Neemann
-  email: eneemann@utah.gov
+author: Erik Neemann
 date: 2018-12-10T17:57:17.000Z
-tags: []
 category: UGRC
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

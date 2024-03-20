@@ -1,7 +1,9 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: Utah Statewide Recreation Database
+published: false
+author: Jessie Pechmann
+date: 2014-12-24 12:19:06 -0700
+category: SGID Updates
 tags:
   - data
   - goed
@@ -9,11 +11,7 @@ tags:
   - recreation
   - trail heads
   - trails
-date: 2014-12-24 12:19:06 -0700
-title: Utah Statewide Recreation Database
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

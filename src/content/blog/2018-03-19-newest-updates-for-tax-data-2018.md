@@ -1,18 +1,16 @@
 ---
 title: Newest Updates for Tax Data 2018
 published: false
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
+author: Mike Heagin
 date: 2018-03-19T22:38:18.000Z
+category: SGID Updates
 tags:
   - tax
   - tax entities
   - tax areas
   - sales tax areas
   - transit special tax areas
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

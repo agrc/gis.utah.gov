@@ -1,14 +1,12 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
-tags:
-  - api
-date: 2013-06-28 14:18:44 -0600
 title: New Release of atlas.utah.gov
 published: false
+author: Jessie Pechmann
+date: 2013-06-28 14:18:44 -0600
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags:
+  - api
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

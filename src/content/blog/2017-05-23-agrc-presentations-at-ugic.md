@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: UGRC Presentations at UGIC
+published: false
+author: Jessie Pechmann
+date: 2017-05-23T21:20:00.000Z
+category: Collaboration
 tags:
   - conference
   - presentations
   - ugic
-date: 2017-05-23T21:20:00.000Z
-title: UGRC Presentations at UGIC
-published: false
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

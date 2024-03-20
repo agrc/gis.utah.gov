@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: "Statewide Address Points: Best Practices"
+published: false
+author: Jessie Pechmann
+date: 2014-09-24 15:04:25 -0600
+category: SGID Updates
 tags:
   - address points
   - best practices
-date: 2014-09-24 15:04:25 -0600
-title: 'Statewide Address Points: Best Practices'
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,6 +1,8 @@
 ---
-author:
-  display_name: Steve Gourley
+title: Authoritative Utah Geocoding Results
+author: Steve Gourley
+date: 2015-02-12 18:52:22 -0700
+category: SGID Updates
 tags:
   - api
   - geocoding
@@ -8,9 +10,6 @@ tags:
   - qaqc
   - quality assurance
   - roads
-date: 2015-02-12 18:52:22 -0700
-title: Authoritative Utah Geocoding Results
-category: SGID Updates
 cover_image: /src/images/pillar-blog/2015-02-12-authoritative-utah-geocoding-results/authoritative_geocoding.png
 cover_image_alt: map with marker
 ---

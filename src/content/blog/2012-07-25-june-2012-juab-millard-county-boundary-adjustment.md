@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
-tags: []
-date: 2012-07-25 11:31:49 -0600
 title: Juab and Millard Counties Adjust Shared Boundary
 published: false
+author: Bert Granberg
+date: 2012-07-25 11:31:49 -0600
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

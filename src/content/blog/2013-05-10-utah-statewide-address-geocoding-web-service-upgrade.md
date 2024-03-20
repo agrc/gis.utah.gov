@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: Utah Statewide Address Geocoding Web Service Upgrade
+published: false
+author: Bert Granberg
+date: 2013-05-10 14:22:13 -0600
+category: SGID Updates
 tags:
   - address
   - api
   - locator
   - web service
-date: 2013-05-10 14:22:13 -0600
-title: Utah Statewide Address Geocoding Web Service Upgrade
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

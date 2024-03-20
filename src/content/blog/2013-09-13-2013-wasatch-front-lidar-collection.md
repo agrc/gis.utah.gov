@@ -1,7 +1,9 @@
 ---
-author:
-  display_name: Rick Kelson
-  email: rkelson@utah.gov
+title: 2013 Wasatch Front Lidar Collection
+published: false
+author: Rick Kelson
+date: 2013-09-13 10:22:50 -0600
+category: SGID Updates
 tags:
   - contour
   - digital elevation model
@@ -14,11 +16,7 @@ tags:
   - topography
   - usgs
   - water
-date: 2013-09-13 10:22:50 -0600
-title: 2013 Wasatch Front Lidar Collection
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
+title: Converting Dojo-AMD Projects To TypeScript
+published: false
+author: Scott Davis
+date: 2016-03-28T15:49:19.000Z
+category: Developer
 tags:
   - javascript
   - typescript
-date: 2016-03-28T15:49:19.000Z
-title: Converting Dojo-AMD Projects To TypeScript
-published: false
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

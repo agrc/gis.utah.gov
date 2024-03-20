@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Kelly Green
-  email: ugrc@utah.gov
-tags: []
-date: 2013-01-03 10:41:31 -0700
 title: End of 2012 Municipal Boundaries Update
 published: false
+author: Kelly Green
+date: 2013-01-03 10:41:31 -0700
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

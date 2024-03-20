@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: UGRC Staff
-  email: ugrc@utah.gov
+title: Redistricting interactive map available
+published: false
+author: UGRC Staff
+date: 2011-11-21 14:39:22 -0700
+category: SGID
 tags:
   - basemap
   - cache
   - redistricting
   - web services
-published: false
-date: 2011-11-21 14:39:22 -0700
-title: Redistricting interactive map available
-category: SGID
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

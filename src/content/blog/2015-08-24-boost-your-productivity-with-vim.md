@@ -1,12 +1,10 @@
 ---
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
-tags: []
-date: 2015-08-24 08:55:37 -0600
 title: Boost Your Productivity With Vim
+author: Scott Davis
+date: 2015-08-24 08:55:37 -0600
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

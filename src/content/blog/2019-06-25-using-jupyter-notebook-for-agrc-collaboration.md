@@ -1,14 +1,12 @@
 ---
 title: Using Jupyter Notebook for UGRC Collaboration
-author:
-  display_name: Keaton Walker
-  email: kwalker@utah.gov
+author: Keaton Walker
 date: 2019-06-25T21:29:10.000Z
+category: Developer
 tags:
   - notebook
   - jupyter
   - python
-category: Developer
 cover_image: /src/images/pillar-blog/2019-06-25-using-jupyter-notebook-for-agrc-collaboration/importshelperfunctions.jpg
 cover_image_alt: Notebook example
 ---

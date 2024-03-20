@@ -1,15 +1,13 @@
 ---
 title: New Bicycle Facility GIS Data for the State - Help Us Keep it Up to Date!
 published: false
-author:
-  display_name: Stephanie Tomlin
-  email: satomlin@utah.gov
+author: Stephanie Tomlin
 date: 2021-01-08T10:01:46.000Z
+category: SGID Updates
 tags:
   - bike
   - roads
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

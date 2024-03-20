@@ -1,14 +1,12 @@
 ---
 title: "Utah's COVID-19 Testing Sites Map: The Importance of Relationships and
   Resources"
-author:
-  display_name: Jake Adams
-  email: jdadams@utah.gov
+author: Jake Adams
 date: 2020-11-18T15:10:00.000Z
+category: Collaboration
 tags:
   - coordination
   - agol
-category: Collaboration
 cover_image: /src/images/pillar-blog/2020-11-18-covid-testing-sites-map-resources-relationships/covid-testing-first-months.png
 cover_image_alt: The usage graph seemed to wane after two months
 ---

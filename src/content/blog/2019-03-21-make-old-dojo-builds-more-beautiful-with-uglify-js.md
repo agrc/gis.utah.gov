@@ -1,15 +1,13 @@
 ---
 title: Make Old Dojo Builds More Beautiful With UglifyJS
 published: false
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
+author: Scott Davis
 date: 2019-03-21T20:21:19.000Z
+category: Developer
 tags:
   - dojo
   - javascript
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

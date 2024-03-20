@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
-tags: []
-date: 2015-04-29 14:16:45 -0600
 title: Updates To Political Districts & Voting Precincts datasets April 2015
 published: false
+author: Mike Heagin
+date: 2015-04-29 14:16:45 -0600
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

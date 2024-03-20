@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Christy Heaton
-  email: christyheaton@gmail.com
-tags: []
-date: 2016-04-26T14:15:06.000Z
-title: 'Things I Learned Working at the Utah UGRC'
+title: Things I Learned Working at the Utah UGRC
 published: false
+author: Christy Heaton
+date: 2016-04-26T14:15:06.000Z
 category: Guest Blog
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

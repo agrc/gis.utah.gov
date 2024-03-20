@@ -1,14 +1,12 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
-tags:
-  - idaho
-date: 2015-05-29 16:15:11 -0600
 title: The Utah Reference Network (TURN) GPS Expands into Idaho
 published: false
+author: Jessie Pechmann
+date: 2015-05-29 16:15:11 -0600
 category: GPS-surveyor
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags:
+  - idaho
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

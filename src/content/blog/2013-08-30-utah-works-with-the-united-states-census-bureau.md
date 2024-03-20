@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: Utah Works with the United States Census Bureau
+published: false
+author: Jessie Pechmann
+date: 2013-08-30 12:18:17 -0600
+category: Collaboration
 tags:
   - boundaries
   - census
   - data
   - united states census bureau
-date: 2013-08-30 12:18:17 -0600
-title: Utah Works with the United States Census Bureau
-published: false
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

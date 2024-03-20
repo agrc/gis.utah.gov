@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
-tags: []
-date: 2013-07-15 11:31:37 -0600
 title: UGRC Web Mapping Services Demo
 published: false
+author: Scott Davis
+date: 2013-07-15 11:31:37 -0600
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

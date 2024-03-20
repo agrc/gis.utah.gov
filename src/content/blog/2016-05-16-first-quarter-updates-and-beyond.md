@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
+title: First Quarter Updates and beyond.
+published: false
+author: Mike Heagin
+date: 2016-05-16T21:55:12.000Z
+category: SGID Updates
 tags:
   - boundaries
   - boundary data
   - incorporation
   - municipalities
-date: 2016-05-16T21:55:12.000Z
-title: First Quarter Updates and beyond.
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

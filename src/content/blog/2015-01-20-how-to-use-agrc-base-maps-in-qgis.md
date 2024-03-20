@@ -1,14 +1,11 @@
 ---
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
+title: How To Use UGRC Base Maps in QGIS
+author: Scott Davis
+date: 2015-01-20 07:51:04 -0700
+category: Developer
 tags:
   - base maps
   - open source
-date: 2015-01-20 07:51:04 -0700
-updated: 2019-08-16 07:51:04 -0700
-title: How To Use UGRC Base Maps in QGIS
-category: Developer
 cover_image: /src/images/pillar-blog/2015-01-20-how-to-use-agrc-base-maps-in-qgis/qgisnewwmtsconnection.png
 cover_image_alt: QGIS screenshot new WMTS connection
 ---

@@ -1,14 +1,12 @@
 ---
 title: Connecting to the Newest SGID Offerings
 published: false
-author:
-  display_name: UGRC Office
-  email: ugrc@utah.gov
+author: UGRC Office
 date: 2021-01-04T16:01:51.000Z
+category: SGID
 tags:
   - sgid
-category: SGID
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

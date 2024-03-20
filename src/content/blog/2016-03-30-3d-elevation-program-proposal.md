@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Rick Kelson
-  email: rkelson@utah.gov
-tags: []
-date: 2016-03-30T22:03:31.000Z
 title: 3D Elevation Program Proposal
 published: false
+author: Rick Kelson
+date: 2016-03-30T22:03:31.000Z
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

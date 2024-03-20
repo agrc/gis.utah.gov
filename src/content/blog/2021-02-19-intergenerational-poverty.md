@@ -1,14 +1,12 @@
 ---
 title: GIS as a Tool for Addressing Intergenerational Poverty
-author:
-  display_name: Greg Bunce
-  email: gbunce@utah.gov
+author: Greg Bunce
 date: 2021-02-19T10:01:46.000Z
+category: UGRC
 tags:
   - gis
   - maps
   - spatial analysis
-category: UGRC
 cover_image: /src/images/pillar-blog/2021-02-19-intergenerational-poverty/suitability_analysis_wasatchfront.png
 cover_image_alt: Suitability Analysis Wasatch Front
 ---

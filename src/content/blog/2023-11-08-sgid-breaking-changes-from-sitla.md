@@ -1,13 +1,11 @@
 ---
 title: SGID breaking changes from SITLA
-author:
-  display_name: Steve Gourley
-  email: sgourley@utah.gov
+author: Steve Gourley
 date: 2023-11-08T21:43:59.000Z
+category: Developer
 tags:
   - sgid
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

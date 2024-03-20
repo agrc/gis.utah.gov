@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: UGRC Staff
-  email: ugrc@utah.gov
+title: GIS jobs in Utah....via Twitter
+published: false
+author: UGRC Staff
+date: 2012-07-02 15:59:16 -0600
+category: Collaboration
 tags:
   - hiring
   - jobs
   - twitter
   - ugic
-date: 2012-07-02 15:59:16 -0600
-published: false
-title: GIS jobs in Utah....via Twitter
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

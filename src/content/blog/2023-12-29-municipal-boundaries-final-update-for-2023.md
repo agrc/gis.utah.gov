@@ -1,15 +1,13 @@
 ---
 title: Municipal Boundaries, Final update for 2023
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
+author: Mike Heagin
 date: 2023-12-29T16:38:39.000Z
+category: SGID Updates
 tags:
   - municipal boundaries
   - boundaries
   - annexations
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

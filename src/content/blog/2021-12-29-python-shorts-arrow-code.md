@@ -1,12 +1,10 @@
 ---
-title: 'Python Shorts: Flattening Arrow Code'
-author:
-  display_name: Jake Adams
-  email: jdadams@utah.gov
+title: "Python Shorts: Flattening Arrow Code"
+author: Jake Adams
 date: 2021-12-29T11:00:00.000Z
+category: Developer
 tags:
   - python
-category: Developer
 cover_image: /src/images/pillar-blog/2021-12-29-python-shorts-arrow-code/flea.jpg
 cover_image_alt: Smash it with a hammer!
 ---

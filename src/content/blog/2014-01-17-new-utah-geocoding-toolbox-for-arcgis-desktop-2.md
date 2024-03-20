@@ -1,14 +1,12 @@
 ---
-author:
-  display_name: UGRC Dev Team
-  email: ugrc@utah.gov
-tags:
-  - geocoding
-date: 2014-01-17T11:57:08.000Z
 title: New Utah Geocoding Toolbox for ArcGIS Desktop
 published: false
+author: UGRC Dev Team
+date: 2014-01-17T11:57:08.000Z
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags:
+  - geocoding
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

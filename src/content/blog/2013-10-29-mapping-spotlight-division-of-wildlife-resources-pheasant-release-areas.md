@@ -1,18 +1,16 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: "Mapping Spotlight: DWR Pheasant Release Areas"
+published: false
+author: Jessie Pechmann
+date: 2013-10-29 16:10:49 -0600
+category: SGID Updates
 tags:
   - dnr
   - dwr
   - hunting
   - pheasants
   - wildlife
-date: 2013-10-29 16:10:49 -0600
-title: 'Mapping Spotlight: DWR Pheasant Release Areas'
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

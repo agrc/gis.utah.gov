@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
+title: Utah PLSS Parcel Fabric Update
+published: false
+author: Mike Heagin
+date: 2016-12-15T22:57:07.000Z
+category: SGID Updates
 tags:
   - cadastre
   - public lands survey
   - sitla
-date: 2016-12-15T22:57:07.000Z
-title: Utah PLSS Parcel Fabric Update
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

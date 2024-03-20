@@ -106,8 +106,11 @@ export async function getBlogFilters(filterType: 'categories' | 'tags' | 'author
       filteredPosts[slug].posts.push(post);
     }
 
-    if (filterType === 'authors' && post.data.author.display_name) {
-      addValue(post.data.author.display_name);
+    if (filterType === 'authors' && post.data.author) {
+      addValue(post.data.author);
+      if (post.data.co_author) {
+        addValue(post.data.co_author);
+      }
     } else if (filterType === 'categories') {
       addValue(post.data.category);
     } else if (post.data.tags) {
