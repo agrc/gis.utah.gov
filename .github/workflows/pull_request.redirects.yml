@@ -68,4 +68,6 @@ jobs:
             ```
 
       - name: 🚦 Check for errors
-        run: exit ${{ steps.validate.outputs.exitCode }}
+        run: |
+          echo "::error::Validate stderr${{ steps.validate.outputs.stderr }}"
+          exit ${{ steps.validate.outputs.exitCode }}
