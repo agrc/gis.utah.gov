@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 const pages = (await Astro.glob<IDataCategory>('../**/*.astro'))
   .filter((page) => {
     return [page.metadata?.category?.toLowerCase(), page?.metadata?.secondaryCategory?.toLowerCase()].includes(
-      categoryString
+      categoryString,
     );
   })
   .sort((a, b) => a.metadata.pageTitle.localeCompare(b.metadata.pageTitle));
