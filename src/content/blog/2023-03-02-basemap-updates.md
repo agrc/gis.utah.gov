@@ -1,15 +1,12 @@
 ---
-title: 'Base maps: Out With the Old, In With the New'
-author:
-  display_name: Zach Beck
-  email: zbeck@utah.gov
+title: "Base maps: Out With the Old, In With the New"
+author: Zach Beck
 date: 2023-03-02T11:00:00.000Z
-update_date: 2023-03-21T18:00:00.000Z
+category: SGID
 tags:
   - base maps
   - cartography
   - data
-category: SGID
 cover_image: /src/images/pillar-blog/2023-03-02-basemap-updates/new_terrain.png
 cover_image_alt: New Terrain base map
 ---

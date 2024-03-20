@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: Progress Update, Utah Address Points GIS Layer
+published: false
+author: Jessie Pechmann
+date: 2013-04-16 17:50:19 -0600
+category: SGID Updates
 tags:
   - address
   - data
   - geocoding
-date: 2013-04-16 17:50:19 -0600
-title: Progress Update, Utah Address Points GIS Layer
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

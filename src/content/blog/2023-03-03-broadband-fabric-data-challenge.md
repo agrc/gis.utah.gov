@@ -1,13 +1,11 @@
 ---
 title: Utah Crushes Broadband Challenge through Collaboration
-author:
-  display_name: Jake Adams
-  email: jdadams@utah.gov
+author: Jake Adams
 date: 2023-03-03T12:00:00.000Z
+category: UGRC
 tags:
   - data
   - broadband
-category: UGRC
 cover_image: /src/images/pillar-blog/2023-03-03-broadband-fabric-data-challenge/bb_challenge_results.png
 cover_image_alt: Utah had by far the most accepted challenges
 ---

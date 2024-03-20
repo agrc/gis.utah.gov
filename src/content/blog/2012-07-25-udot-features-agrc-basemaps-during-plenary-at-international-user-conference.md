@@ -1,14 +1,12 @@
 ---
-author:
-  display_name: UGRC Staff
-  email: ugrc@utah.gov
-tags:
-  - basemap
-date: 2012-07-25 10:14:45 -0600
 title: UDOT features UGRC base maps during International User Conference
 published: false
+author: UGRC Staff
+date: 2012-07-25 10:14:45 -0600
 category: UGRC
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags:
+  - basemap
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,7 +1,9 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: New Lidar and Orthophotography for Utah and Colorado’s Most Scenic Rivers
+published: false
+author: Jessie Pechmann
+date: 2015-10-28 11:42:28 -0600
+category: Guest Blog
 tags:
   - data
   - dnr
@@ -11,11 +13,7 @@ tags:
   - rivers
   - southern utah
   - sovereign lands
-date: 2015-10-28 11:42:28 -0600
-title: New Lidar and Orthophotography for Utah and Colorado’s Most Scenic Rivers
-published: false
-category: Guest Blog
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

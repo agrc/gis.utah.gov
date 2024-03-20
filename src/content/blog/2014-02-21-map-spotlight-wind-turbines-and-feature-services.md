@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
-tags: []
-date: 2014-02-21 11:16:16 -0700
-title: 'Map Spotlight: Wind Turbines and Feature Services'
+title: "Map Spotlight: Wind Turbines and Feature Services"
 published: false
+author: Bert Granberg
+date: 2014-02-21 11:16:16 -0700
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

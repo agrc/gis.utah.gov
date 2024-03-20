@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: Maps on the Hill 2017 Contest Winners
+published: false
+author: Bert Granberg
+date: 2017-02-23T00:18:28.000Z
+category: Collaboration
 tags:
   - contest
   - maps on the hill
   - moth
   - ugic
-date: 2017-02-23T00:18:28.000Z
-title: Maps on the Hill 2017 Contest Winners
-published: false
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

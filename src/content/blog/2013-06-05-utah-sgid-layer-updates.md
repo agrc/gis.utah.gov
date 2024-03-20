@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Rick Kelson
-  email: rkelson@utah.gov
+title: Utah SGID Layer Updates
+published: false
+author: Rick Kelson
+date: 2013-06-05 14:47:11 -0600
+category: SGID Updates
 tags:
   - data
   - health
   - society
-date: 2013-06-05 14:47:11 -0600
-title: Utah SGID Layer Updates
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

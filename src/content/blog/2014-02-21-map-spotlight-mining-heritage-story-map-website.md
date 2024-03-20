@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
-tags: []
-date: 2014-02-21 14:14:24 -0700
-title: 'Map Spotlight: Mining Heritage Story Map Website'
+title: "Map Spotlight: Mining Heritage Story Map Website"
 published: false
+author: Bert Granberg
+date: 2014-02-21 14:14:24 -0700
 category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

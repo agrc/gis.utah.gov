@@ -1,7 +1,9 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: Large Format Utah Political District Maps Now Available
+published: false
+author: Bert Granberg
+date: 2014-08-26 18:00:53 -0600
+category: SGID Updates
 tags:
   - districts
   - elections
@@ -9,11 +11,7 @@ tags:
   - lt. governor
   - political
   - senate
-date: 2014-08-26 18:00:53 -0600
-title: Large Format Utah Political District Maps Now Available
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

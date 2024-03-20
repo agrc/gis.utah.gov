@@ -1,12 +1,10 @@
 ---
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
-tags: []
-date: 2016-04-01T19:23:49.000Z
 title: Why I Speak at Conferences and You Should Too
+author: Scott Davis
+date: 2016-04-01T19:23:49.000Z
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

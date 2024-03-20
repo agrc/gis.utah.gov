@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: "25 Years Ago: Laying the Foundation for Utah GIS Success"
+author: Bert Granberg
+date: 2016-05-24T21:57:21.000Z
+category: Collaboration
 tags:
   - clearinghouse
   - coordination
   - data
   - gis history
   - policy
-date: 2016-05-24T21:57:21.000Z
-title: '25 Years Ago: Laying the Foundation for Utah GIS Success'
-category: Collaboration
 cover_image: /src/images/pillar-blog/2016-05-24-25th-anniversary-state-geographic-information-database/sgid25years.png
 cover_image_alt: SGID 25th anniversary sticker
 ---

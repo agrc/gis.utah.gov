@@ -1,18 +1,16 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: Utah Geological Survey Releases New Interactive Fault Map
+published: false
+author: Jessie Pechmann
+date: 2016-01-22 13:31:17 -0700
+category: Guest Blog
 tags:
   - faults
   - geologic hazards
   - seismology
   - ugs
   - utah geologic survey
-date: 2016-01-22 13:31:17 -0700
-title: Utah Geological Survey Releases New Interactive Fault Map
-published: false
-category: Guest Blog
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

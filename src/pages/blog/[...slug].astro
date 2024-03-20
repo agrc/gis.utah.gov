@@ -23,7 +23,15 @@ const { Content } = await post.render();
       <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Author</span>
       <span>·</span>
       <span class="whitespace-nowrap">
-        <a href={`/blog/authors/${slugify(post.data.author.display_name)}`}>{post.data.author.display_name}</a>
+        <a href={`/blog/authors/${slugify(post.data.author)}`}>{post.data.author}</a>
+        {
+          post.data.co_author && (
+            <>
+              <span class="lowercase text-primary/80 dark:text-white">and</span>
+              <a href={`/blog/authors/${slugify(post.data.co_author)}`}>{post.data.co_author}</a>
+            </>
+          )
+        }
       </span>
     </div>
     <BlogPost {...post.data}>

@@ -1,14 +1,12 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
-tags:
-  - parcels
-date: 2016-01-21 14:24:04 -0700
 title: New Parcel Web App Improves Usability
 published: false
+author: Jessie Pechmann
+date: 2016-01-21 14:24:04 -0700
 category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags:
+  - parcels
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

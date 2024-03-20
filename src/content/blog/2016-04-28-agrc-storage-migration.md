@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Rick Kelson
-  email: rkelson@utah.gov
-tags: []
-date: 2016-04-28T22:11:31.000Z
 title: UGRC Storage Migration
 published: false
+author: Rick Kelson
+date: 2016-04-28T22:11:31.000Z
 category: SGID
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

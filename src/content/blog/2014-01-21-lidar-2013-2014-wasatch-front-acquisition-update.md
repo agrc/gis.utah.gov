@@ -1,18 +1,16 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: Lidar 2013-2014 Wasatch Front Acquisition Update
+published: false
+author: Jessie Pechmann
+date: 2014-01-21 13:29:59 -0700
+category: SGID Updates
 tags:
   - data acquisition
   - elevation
   - lidar
   - terrain
   - wasatch fault
-date: 2014-01-21 13:29:59 -0700
-title: Lidar 2013-2014 Wasatch Front Acquisition Update
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

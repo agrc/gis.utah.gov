@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Kate Staley
-  email: katestaley@utah.gov
+title: SITLA is Moving to the Utah PLSS Parcel Fabric
+published: false
+author: Kate Staley
+date: 2016-07-06T17:22:32.000Z
+category: Guest Blog
 tags:
   - land ownership
   - parcel fabric
   - plss
   - sitla
-date: 2016-07-06T17:22:32.000Z
-title: SITLA is Moving to the Utah PLSS Parcel Fabric
-published: false
-category: Guest Blog
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

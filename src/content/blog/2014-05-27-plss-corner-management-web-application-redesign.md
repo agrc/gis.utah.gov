@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: PLSS Corner Management Web Application Redesign
+published: false
+author: Jessie Pechmann
+date: 2014-05-27 16:30:10 -0600
+category: GPS-surveyor
 tags:
   - plss
   - surveyor
-date: 2014-05-27 16:30:10 -0600
-title: PLSS Corner Management Web Application Redesign
-published: false
-category: GPS-surveyor
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: New Political Districts & Voting Precincts datasets
+published: false
+author: Bert Granberg
+date: 2012-05-02 15:55:01 -0600
+category: SGID
 tags:
   - political
   - redistricting
   - voting
-date: 2012-05-02 15:55:01 -0600
-published: false
-title: New Political Districts & Voting Precincts datasets
-category: SGID
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

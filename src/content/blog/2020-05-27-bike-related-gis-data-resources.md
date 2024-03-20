@@ -1,16 +1,14 @@
 ---
 title: Latest Developments in Bike-Related GIS Data Resources
 published: false
-author:
-  display_name: Bert Granberg
-  email: bgranberg@wfrc.org
+author: Bert Granberg
 date: 2020-05-27T12:29:00.000Z
+category: Guest Blog
 tags:
   - bike
   - wfrc
   - multimodal
-category: Guest Blog
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

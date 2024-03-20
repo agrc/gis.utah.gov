@@ -1,15 +1,13 @@
 ---
 title: Utah Recognized in NSGIC Geospatial Excellence Awards
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+author: Bert Granberg
 date: 2017-10-31T20:41:59.000Z
+category: Guest Blog
 tags:
   - awards
   - gis
   - nsgic
   - utah
-category: Guest Blog
 cover_image: /src/images/pillar-blog/2017-10-31-utah-recognized-in-nsgic-geospatial-excellence-awards/kcolegoedsmall.png
 cover_image_alt: Kelleigh Cole and GOED, Champion Award
 ---

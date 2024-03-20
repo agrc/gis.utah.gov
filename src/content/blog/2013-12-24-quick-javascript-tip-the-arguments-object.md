@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
+title: "Quick JavaScript Tip: The Arguments Object"
+author: Scott Davis
+date: 2013-12-24 06:55:10 -0700
+category: Developer
 tags:
   - javascript
-date: 2013-12-24 06:55:10 -0700
-title: 'Quick JavaScript Tip: The Arguments Object'
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

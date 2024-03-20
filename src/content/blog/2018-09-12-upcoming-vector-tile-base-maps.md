@@ -1,14 +1,12 @@
 ---
-title: 'Upcoming: Vector Tile Base Maps'
+title: "Upcoming: Vector Tile Base Maps"
 published: false
-author:
-  display_name: Zach Beck
-  email: zbeck@utah.gov
+author: Zach Beck
 date: 2018-09-12T22:29:57.000Z
+category: Discover
 tags:
   - base maps
-category: Discover
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

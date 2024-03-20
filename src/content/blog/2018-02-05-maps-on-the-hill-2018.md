@@ -1,16 +1,14 @@
 ---
 title: Maps on the Hill 2018
 published: false
-author:
-  display_name: Matt Peters
-  email: mpeters@utah.gov
+author: Matt Peters
 date: 2018-02-05T16:46:08.000Z
+category: Collaboration
 tags:
   - maps on the hill
   - moth
   - ugic
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

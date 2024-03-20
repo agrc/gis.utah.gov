@@ -1,16 +1,14 @@
 ---
 title: UGRC Web Service Legislative Funding Request Update
 published: false
-author:
-  display_name: Matt Peters
-  email: mpeters@utah.gov
+author: Matt Peters
 date: 2022-03-30T14:10:46.000Z
+category: UGRC
 tags:
   - sgid
   - web api
   - ugrc funding
-category: UGRC
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

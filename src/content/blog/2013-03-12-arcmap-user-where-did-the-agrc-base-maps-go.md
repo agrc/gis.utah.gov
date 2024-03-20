@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
-tags: []
-published: false
-date: 2013-03-12 18:03:34 -0600
 title: 'ArcMap User: "Where did the UGRC Base Maps Go?'
+published: false
+author: Bert Granberg
+date: 2013-03-12 18:03:34 -0600
 category: Discover
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

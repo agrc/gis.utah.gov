@@ -1,11 +1,11 @@
 ---
 title: AGRC Name Change to Utah Geospatial Resource Center (UGRC)
-author:
-  display_name: Anna Tribolet
-  email: atribolet@utah.gov
+author: Anna Tribolet
 date: 2021-04-05T17:53:13.000Z
 category: UGRC
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags:
+  - office
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

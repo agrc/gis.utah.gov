@@ -1,14 +1,12 @@
 ---
 title: Implementing Babel via Grunt
 published: false
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
+author: Scott Davis
 date: 2018-05-18T21:25:37.000Z
+category: Developer
 tags:
   - javascript
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

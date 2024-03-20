@@ -1,7 +1,9 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: A day in the life of the Utah's SGID ImageServer
+published: false
+author: Bert Granberg
+date: 2013-12-04 17:07:30 -0700
+category: SGID Updates
 tags:
   - aerial photography
   - data
@@ -10,11 +12,7 @@ tags:
   - topo
   - topographic
   - web services
-date: 2013-12-04 17:07:30 -0700
-title: A day in the life of the Utah's SGID ImageServer
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

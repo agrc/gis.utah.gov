@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
-tags:
-  - '911'
-  - address points
-  - nena
-date: 2015-10-28 15:48:23 -0600
 title: NENA National Guidance for GIS Address Points
 published: false
+author: Jessie Pechmann
+date: 2015-10-28 15:48:23 -0600
 category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags:
+  - "911"
+  - address points
+  - nena
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

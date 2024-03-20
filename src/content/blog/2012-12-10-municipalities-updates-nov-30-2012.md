@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
-tags: []
-date: 2012-12-10 16:34:35 -0700
 title: Municipalities Updates Nov. 30, 2012
 published: false
+author: Mike Heagin
+date: 2012-12-10 16:34:35 -0700
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

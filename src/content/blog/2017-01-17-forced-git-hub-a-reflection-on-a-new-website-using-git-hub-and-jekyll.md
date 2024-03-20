@@ -1,12 +1,10 @@
 ---
-author:
-  display_name: Steve Gourley
-  email: SGourley@utah.gov
-tags: []
-date: 2017-01-17T19:19:39.000Z
 title: Forced GitHub; A reflection on a new website using GitHub and Jekyll
+author: Steve Gourley
+date: 2017-01-17T19:19:39.000Z
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

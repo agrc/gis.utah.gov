@@ -1,14 +1,12 @@
 ---
 title: UC2017-The Science of Where
 published: false
-author:
-  display_name: Rick Kelson & Mike Heagin
-  email: rkelson@utah.gov, mheagin@utah.gov
+author: Rick Kelson & Mike Heagin
 date: 2017-07-31T15:39:16.000Z
+category: Collaboration
 tags:
   - conference
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

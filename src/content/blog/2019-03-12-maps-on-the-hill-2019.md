@@ -1,16 +1,14 @@
 ---
 title: Maps on the Hill 2019
 published: false
-author:
-  display_name: Anna Tribolet
-  email: atribolet@utah.gov
+author: Anna Tribolet
 date: 2019-03-12T20:52:46.000Z
+category: Collaboration
 tags:
   - maps
   - moth
   - ugic
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

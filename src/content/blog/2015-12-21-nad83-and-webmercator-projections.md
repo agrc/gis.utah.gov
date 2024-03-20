@@ -1,7 +1,8 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: The Earth is Not Round! Utah, NAD83 and Web Mercator Projections
+author: Jessie Pechmann
+date: 2015-12-21 12:11:45 -0700
+category: SGID
 tags:
   - coordinates
   - datums
@@ -9,9 +10,6 @@ tags:
   - nad83
   - projections
   - web applications
-date: 2015-12-21 12:11:45 -0700
-title: The Earth is Not Round! Utah, NAD83 and Web Mercator Projections
-category: SGID
 cover_image: /src/images/pillar-blog/2015-12-21-nad83-and-webmercator-projections/projections.png
 cover_image_alt: projections
 ---

@@ -1,9 +1,8 @@
 ---
 title: A Brief Tutorial on Exploring the Open SGID with Open Source Python Tools
-author:
-  display_name: Erik Neemann
-  email: eneemann@utah.gov
+author: Erik Neemann
 date: 2020-05-28T15:30:00.000Z
+category: Developer
 tags:
   - open sgid
   - python
@@ -11,7 +10,6 @@ tags:
   - open source
   - notebook
   - tutorial
-category: Developer
 cover_image: /src/images/pillar-blog/2020-05-28-exploring-the-open-sgid-with-open-source-python-tools/emn_20200526_counties_plot.png
 cover_image_alt: Utah County Boundaries
 ---

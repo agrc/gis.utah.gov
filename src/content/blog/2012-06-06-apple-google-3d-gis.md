@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: UGRC Staff
-  email: ugrc@utah.gov
+title: Apple, Google, 3D and GIS
+published: false
+author: UGRC Staff
+date: 2012-06-06 10:52:29 -0600
+category: UGRC
 tags:
   - apple
   - google
-date: 2012-06-06 10:52:29 -0600
-published: false
-title: Apple, Google, 3D and GIS
-category: UGRC
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

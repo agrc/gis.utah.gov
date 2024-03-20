@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
+title: Updates for the Municipal Boundaries are available now
+published: false
+author: Mike Heagin
+date: 2015-08-28 09:45:42 -0600
+category: SGID Updates
 tags:
   - boundaries
   - municipalities
-date: 2015-08-28 09:45:42 -0600
-title: Updates for the Municipal Boundaries are available now
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

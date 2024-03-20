@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Michael Foulger
-  email: michaelfoulger@utah.gov
-tags: []
-date: 2012-09-13 10:00:46 -0600
 title: New SDE Connection Properties for ArcGIS Desktop 10.x
 published: false
+author: Michael Foulger
+date: 2012-09-13 10:00:46 -0600
 category: SGID
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

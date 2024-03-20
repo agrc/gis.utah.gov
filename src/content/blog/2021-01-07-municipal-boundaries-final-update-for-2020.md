@@ -1,16 +1,14 @@
 ---
 title: Municipal Boundaries Final Update for 2020
 published: false
-author:
-  display_name: Mike Heagin
-  email: mheagin
+author: Mike Heagin
 date: 2021-01-07T12:22:58.000Z
+category: SGID Updates
 tags:
   - municipal boundaries
   - boundaries
   - annexations
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

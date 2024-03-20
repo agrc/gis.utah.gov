@@ -1,15 +1,13 @@
 ---
 title: Leveraging Git and GitHub to Manage the Lifecycle of Custom ArcGIS Tools
-author:
-  display_name: Greg Bunce
-  email: gbunce@utah.gov
+author: Greg Bunce
 date: 2018-05-30T12:01:59.000Z
+category: Developer
 tags:
   - git
   - github
   - custom-tools
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

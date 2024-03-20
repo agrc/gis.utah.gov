@@ -1,15 +1,13 @@
 ---
 title: NAIP 2018 Mr. Sid County Mosaics Available
 published: false
-author:
-  display_name: Rick Kelson
-  email: rkelson@utah.gov
+author: Rick Kelson
 date: 2019-01-17T21:13:40.000Z
+category: SGID Updates
 tags:
   - naip
   - imagery
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

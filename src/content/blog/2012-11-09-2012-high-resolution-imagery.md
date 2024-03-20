@@ -1,18 +1,16 @@
 ---
-author:
-  display_name: Rick Kelson
-  email: rkelson@utah.gov
+title: 2012 High Resolution Imagery Now Available
+published: false
+author: Rick Kelson
+date: 2012-11-09 14:00:26 -0700
+category: SGID Updates
 tags:
   - aerial photography
   - hro
   - image server
   - imagery
   - raster
-published: false
-date: 2012-11-09 14:00:26 -0700
-title: 2012 High Resolution Imagery Now Available
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

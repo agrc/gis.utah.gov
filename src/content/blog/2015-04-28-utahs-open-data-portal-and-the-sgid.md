@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: Utah's Open Data Portal and the SGID
+published: false
+author: Jessie Pechmann
+date: 2015-04-28 17:53:28 -0600
+category: SGID
 tags:
   - data
   - open data
   - socrata
-date: 2015-04-28 17:53:28 -0600
-title: Utah's Open Data Portal and the SGID
-published: false
-category: SGID
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

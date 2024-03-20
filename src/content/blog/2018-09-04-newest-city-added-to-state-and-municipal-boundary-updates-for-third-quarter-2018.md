@@ -2,17 +2,15 @@
 title: Newest city added to state and Municipal Boundary updates for Third
   Quarter 2018
 published: false
-author:
-  display_name: Mike Heagin
-  email: mheagin
+author: Mike Heagin
 date: 2018-09-04T18:23:04.000Z
+category: SGID Updates
 tags:
   - Municipal Boundaries
   - Incorporation
   - Annexations
   - Cities and towns
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

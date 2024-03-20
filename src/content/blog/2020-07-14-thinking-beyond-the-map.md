@@ -1,14 +1,12 @@
 ---
 title: GIS - Thinking Beyond the Map
-author:
-  display_name: Greg Bunce
-  email: gbunce@utah.gov
+author: Greg Bunce
 date: 2020-07-14T10:07:46.000Z
+category: UGRC
 tags:
   - gis
   - data
   - coordination
-category: UGRC
 cover_image: /src/images/pillar-blog/2020-07-14-thinking-beyond-the-map/geospatial.png
 cover_image_alt: Location drives the system
 ---

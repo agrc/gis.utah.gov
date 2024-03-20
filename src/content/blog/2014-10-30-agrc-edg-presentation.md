@@ -1,11 +1,10 @@
 ---
-author:
-  display_name: Steve Gourley
-tags: []
-date: 2014-10-30 11:44:52 -0600
 title: Using UGRC's Geocoding and Map-based Web Services
+author: Steve Gourley
+date: 2014-10-30 11:44:52 -0600
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

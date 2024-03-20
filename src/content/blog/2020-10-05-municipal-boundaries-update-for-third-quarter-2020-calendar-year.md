@@ -1,16 +1,14 @@
 ---
 title: Municipal Boundaries Update for Third Quarter 2020 (Calendar Year)
 published: false
-author:
-  display_name: Mike Heagin
-  email: mheagin
+author: Mike Heagin
 date: 2020-10-05T10:58:53.000Z
+category: SGID Updates
 tags:
   - municipalities
   - boundaries
   - annexations
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

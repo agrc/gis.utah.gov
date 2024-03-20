@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Steve Gourley
-  email: sgourley@utah.gov
-tags: []
-date: 2016-06-15T21:48:58.000Z
 title: GPS Signal Jamming
 published: false
+author: Steve Gourley
+date: 2016-06-15T21:48:58.000Z
 category: TURN
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
-tags: []
-date: 2016-07-12T15:35:52.000Z
 title: Second Quarter 2016 Municipal Boundaries Updates
 published: false
+author: Mike Heagin
+date: 2016-07-12T15:35:52.000Z
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

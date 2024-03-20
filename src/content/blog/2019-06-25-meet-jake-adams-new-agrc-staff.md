@@ -1,11 +1,9 @@
 ---
 title: Meet Jake Adams - New UGRC Staff
-author:
-  display_name: Jacob Adams
-  email: jdadams@utah.gov
+author: Jacob Adams
 date: 2019-06-25T20:58:02.000Z
-tags: []
 category: UGRC
+tags: []
 cover_image: /src/images/pillar-blog/2019-06-25-meet-jake-adams-new-agrc-staff/jacobadams.jpg
 cover_image_alt: Jacob Adams photo
 ---

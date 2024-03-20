@@ -1,14 +1,12 @@
 ---
 title: Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS
-author:
-  display_name: Greg Bunce
-  email: gbunce@utah.gov
+author: Greg Bunce
 date: 2019-09-03T10:07:46.000Z
+category: UGRC
 tags:
   - history
   - data
   - education
-category: UGRC
 cover_image: /src/images/pillar-blog/2019-09-03-digital-maps-gis-history/ord_survey_uk_history.jpg
 cover_image_alt: The British Ordinance Survey
 ---

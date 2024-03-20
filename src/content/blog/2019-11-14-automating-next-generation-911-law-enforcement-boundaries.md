@@ -1,9 +1,8 @@
 ---
 title: Automating Next-Generation 911 Law Enforcement Boundaries
-author:
-  display_name: Erik Neemann
-  email: eneemann@utah.gov
+author: Erik Neemann
 date: 2019-11-14T17:03:29.000Z
+category: Developer
 tags:
   - law enforcement
   - ng911
@@ -11,7 +10,6 @@ tags:
   - boundaries
   - psap
   - sgid
-category: Developer
 cover_image: /src/images/pillar-blog/2019-11-14-automating-next-generation-911-law-enforcement-boundaries/201911_ng911lawenforcementboundaries.jpg
 cover_image_alt: NG911 Law Enforcement Boundaries
 ---

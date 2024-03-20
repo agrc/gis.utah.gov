@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
-tags: []
-date: 2013-04-29 09:13:10 -0600
-published: false
 title: First quarter Municipal Boundaries updates
+published: false
+author: Mike Heagin
+date: 2013-04-29 09:13:10 -0600
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

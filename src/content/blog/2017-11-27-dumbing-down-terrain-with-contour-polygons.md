@@ -1,16 +1,14 @@
 ---
 title: Dumbing Down Terrain with Contour Polygons
-author:
-  display_name: Zach Beck
-  email: zbeck@utah.gov
+author: Zach Beck
 date: 2017-11-27T23:28:38.000Z
+category: Developer
 tags:
   - contours
   - elevation
   - python
   - tanaka
   - terrain
-category: Developer
 cover_image: /src/images/pillar-blog/2017-11-27-dumbing-down-terrain-with-contour-polygons/contourspolys.png
 cover_image_alt: Contour Polygons
 ---

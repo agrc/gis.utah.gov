@@ -1,16 +1,14 @@
 ---
 title: Greg Bunce on His Journey toward GIS and How He’s Still Learning
 published: false
-author:
-  display_name: Anna Tribolet
-  email: atribolet@utah.gov
+author: Anna Tribolet
 date: 2020-05-18T15:39:48.000Z
+category: UGRC
 tags:
   - interview
   - road centerlines
   - agol
-category: UGRC
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

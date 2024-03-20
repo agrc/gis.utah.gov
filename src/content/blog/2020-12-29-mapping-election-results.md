@@ -1,15 +1,13 @@
 ---
 title: Taking a Closer Look at Election Results - Using GIS to Paint the
   Political Landscape
-author:
-  display_name: Greg Bunce
-  email: gbunce@utah.gov
+author: Greg Bunce
 date: 2020-12-29T10:01:46.000Z
+category: SGID
 tags:
   - gis
   - elections
   - maps
-category: SGID
 cover_image: /src/images/pillar-blog/2020-12-29-mapping-election-results/pres_elec_2020_results.png
 cover_image_alt: 2020 Election Results
 ---

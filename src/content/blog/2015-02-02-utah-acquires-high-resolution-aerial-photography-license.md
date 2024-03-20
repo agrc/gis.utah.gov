@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
-tags: []
-date: 2015-02-02 16:00:36 -0700
 title: Utah Acquires High Resolution Aerial Photography License
 published: false
+author: Bert Granberg
+date: 2015-02-02 16:00:36 -0700
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
-tags: []
-date: 2014-01-29 15:30:07 -0700
 title: My Favorite Sublime Text 3 Plugins & Configs
 published: false
+author: Scott Davis
+date: 2014-01-29 15:30:07 -0700
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

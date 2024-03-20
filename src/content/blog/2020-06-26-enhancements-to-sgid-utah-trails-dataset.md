@@ -1,17 +1,15 @@
 ---
 title: Enhancements to the SGID Utah Trails Dataset 06/26/2020
 published: false
-author:
-  display_name: UGRC Office
-  email: gbunce@utah.gov
+author: UGRC Office
 date: 2020-06-26T11:05:48.000Z
+category: SGID Updates
 tags:
   - sgid
   - trails
   - transportation
   - recreation
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: New Address Point Cached Map Service
+published: false
+author: Jessie Pechmann
+date: 2013-08-30 13:31:42 -0600
+category: Developer
 tags:
   - address points
   - data
   - gis server
   - map service
-date: 2013-08-30 13:31:42 -0600
-title: New Address Point Cached Map Service
-published: false
-category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

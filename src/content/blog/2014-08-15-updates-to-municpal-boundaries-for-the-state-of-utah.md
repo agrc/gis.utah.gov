@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
-tags: []
-date: 2014-08-15 11:57:49 -0600
 title: Updates to Municipal Boundaries for the State of Utah
 published: false
+author: Mike Heagin
+date: 2014-08-15 11:57:49 -0600
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

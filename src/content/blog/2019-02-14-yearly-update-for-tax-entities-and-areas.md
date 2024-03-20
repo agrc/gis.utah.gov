@@ -1,18 +1,16 @@
 ---
 title: Yearly Update for Tax Entities and Areas
 published: false
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
+author: Mike Heagin
 date: 2019-02-14T22:42:54.000Z
+category: SGID Updates
 tags:
   - tax entities
   - tax updates
   - tax areas
   - sales tax areas
   - special transit areas
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

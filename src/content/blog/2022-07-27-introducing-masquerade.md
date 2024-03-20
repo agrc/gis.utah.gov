@@ -1,15 +1,13 @@
 ---
 title: Introducing Masquerade
-author:
-  display_name: Scott Davis
-  email: stdavis@utah.gov
+author: Scott Davis
 date: 2022-08-01T12:20:21.000Z
+category: SGID Updates
 tags:
   - geocoding
   - tools
   - sgid
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

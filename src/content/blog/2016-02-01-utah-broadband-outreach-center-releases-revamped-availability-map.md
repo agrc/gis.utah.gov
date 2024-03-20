@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
+title: Utah Broadband Outreach Center Releases Revamped Availability Map
+published: false
+author: Jessie Pechmann
+date: 2016-02-01 13:31:17 -0700
+category: Collaboration
 tags:
   - broadband
   - goed
-date: 2016-02-01 13:31:17 -0700
-title: Utah Broadband Outreach Center Releases Revamped Availability Map
-published: false
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

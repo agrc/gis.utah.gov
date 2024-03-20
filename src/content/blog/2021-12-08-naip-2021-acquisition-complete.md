@@ -1,14 +1,12 @@
 ---
 title: 2021 Aerial Photography Acquisition Completed
 published: false
-author:
-  display_name: Rick Kelson
-  email: rkelson@utah.gov
+author: Rick Kelson
 date: 2021-12-08T12:00:00.000Z
+category: SGID
 tags:
   - aerial photography
-category: SGID
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

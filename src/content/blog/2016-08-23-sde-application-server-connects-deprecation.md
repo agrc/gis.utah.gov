@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Matt Peters
-  email: mpeters@utah.gov
-tags: []
-date: 2016-08-23T22:45:23.000Z
-title: 'SDE Application Server Connects Deprecation '
+title: "SDE Application Server Connects Deprecation "
 published: false
+author: Matt Peters
+date: 2016-08-23T22:45:23.000Z
 category: SGID
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

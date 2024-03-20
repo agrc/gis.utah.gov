@@ -1,16 +1,14 @@
 ---
-author:
-  display_name: Rick Kelson
-  email: rkelson@utah.gov
+title: Wireless Signals and Lidar Derived Elevation Models
+author: Rick Kelson
+date: 2014-11-17 12:15:04 -0700
+category: SGID Updates
 tags:
   - digital elevation model
   - digital surface model
   - digital terrain model
   - lidar
   - viewshed
-date: 2014-11-17 12:15:04 -0700
-title: Wireless Signals and Lidar Derived Elevation Models
-category: SGID Updates
 cover_image: /src/images/pillar-blog/2014-11-17-wireless-signals-and-lidar-derived-elevation-models/ensign_dtm_only.png
 cover_image_alt: DTM Bare-Earth Digital Terrain Model
 ---

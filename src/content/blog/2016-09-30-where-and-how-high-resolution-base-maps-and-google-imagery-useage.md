@@ -1,7 +1,9 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: Where and How? High Resolution Base Maps and Google Imagery Usage
+published: false
+author: Bert Granberg
+date: 2016-09-30T16:55:53.000Z
+category: Discover
 tags:
   - aerial photography
   - cad
@@ -12,11 +14,7 @@ tags:
   - web services
   - wms
   - wmts
-date: 2016-09-30T16:55:53.000Z
-title: Where and How? High Resolution Base Maps and Google Imagery Usage
-published: false
-category: Discover
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

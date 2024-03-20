@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Steve Gourley
-  email: sgourley@utah.gov
-tags: []
-published: false
-date: 2012-05-31 18:41:39 -0600
 title: Interview Coding Exercise
+published: false
+author: Steve Gourley
+date: 2012-05-31 18:41:39 -0600
 category: Developer
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

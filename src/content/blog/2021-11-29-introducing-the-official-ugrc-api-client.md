@@ -1,12 +1,10 @@
 ---
 title: Introducing the Official UGRC API Client
-author:
-  display_name: Steve Gourley
-  email: sgourley@utah.gov
+author: Steve Gourley
 date: 2021-11-29T07:18:45.000Z
+category: Developer
 tags:
   - geocoding
-category: Developer
 cover_image: /src/images/pillar-blog/2021-11-29-introducing-the-official-ugrc-api-client/client.png
 cover_image_alt: first screen
 ---

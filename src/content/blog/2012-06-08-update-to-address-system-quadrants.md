@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Jessie Pechmann
-  email: ugrc@utah.gov
-tags: []
-date: 2012-06-08 12:02:31 -0600
 title: Update to Address System Quadrants
 published: false
+author: Jessie Pechmann
+date: 2012-06-08 12:02:31 -0600
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

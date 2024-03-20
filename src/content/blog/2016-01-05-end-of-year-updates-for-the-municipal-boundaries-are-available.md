@@ -1,17 +1,15 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
+title: End of year updates for the Municipal Boundaries are available
+published: false
+author: Mike Heagin
+date: 2016-01-05 16:36:29 -0700
+category: SGID Updates
 tags:
   - boundaries
   - boundary data
   - incorporation
   - municipalities
-date: 2016-01-05 16:36:29 -0700
-title: End of year updates for the Municipal Boundaries are available
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

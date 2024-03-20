@@ -1,14 +1,12 @@
 ---
 title: ArcGIS Online Web Mercator and OpenData
 published: false
-author:
-  display_name: Michael M. Foulger
-  email: MICHAELFOULGER@utah.gov
+author: Michael M. Foulger
 date: 2017-07-31T19:10:45.000Z
+category: SGID Updates
 tags:
   - arcgis online
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

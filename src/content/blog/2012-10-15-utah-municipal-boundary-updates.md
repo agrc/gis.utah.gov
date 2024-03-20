@@ -1,13 +1,11 @@
 ---
-author:
-  display_name: Zach Beck
-  email: zbeck@utah.gov
-tags: []
-date: 2012-10-15 09:29:59 -0600
 title: Utah Municipal Boundary Updates
 published: false
+author: Zach Beck
+date: 2012-10-15 09:29:59 -0600
 category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+tags: []
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

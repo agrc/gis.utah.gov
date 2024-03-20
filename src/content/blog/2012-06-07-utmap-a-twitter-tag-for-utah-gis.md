@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: Bert Granberg
-  email: ugrc@utah.gov
+title: "#utmap: A Twitter Tag for Utah GIS"
+published: false
+author: Bert Granberg
+date: 2012-06-07 12:41:35 -0600
+category: Collaboration
 tags:
   - twitter
   - ugic
-date: 2012-06-07 12:41:35 -0600
-published: false
-title: '#utmap: A Twitter Tag for Utah GIS'
-category: Collaboration
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,15 +1,13 @@
 ---
-author:
-  display_name: Mike Heagin
-  email: mheagin@utah.gov
+title: New updates to Municipal Boundaries layers
+published: false
+author: Mike Heagin
+date: 2014-04-02 13:37:46 -0600
+category: SGID Updates
 tags:
   - boundaries
   - municipalities
-date: 2014-04-02 13:37:46 -0600
-title: New updates to Municipal Boundaries layers
-published: false
-category: SGID Updates
-cover_image: '/src/images/pillar-blog/default-social-card.png'
+cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 

@@ -1,14 +1,12 @@
 ---
 title: Choosing the Right Transformation
-author:
-  display_name: Jake Adams
-  email: jdadams@utah.gov
+author: Jake Adams
 date: 2021-06-23T15:30:00.000Z
+category: UGRC
 tags:
   - sgid
   - spatial analysis
   - data
-category: UGRC
 cover_image: /src/images/pillar-blog/2021-06-23-choosing-right-transformation/transformations_measurement.jpg
 cover_image_alt: Close but no cigar
 ---
