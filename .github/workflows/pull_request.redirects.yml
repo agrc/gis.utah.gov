@@ -1,4 +1,4 @@
-name: Pull Request Events
+name: Pull Request Events (Redirects)
 
 on:
   pull_request:
