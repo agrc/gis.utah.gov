@@ -1,7 +1,7 @@
 import { globSync } from 'glob';
 import { open } from 'node:fs/promises';
 import { join } from 'node:path';
-import { validateProductPageUrl } from './utilities.mjs';
+import { validateUrl } from './utilities.mjs';
 
 const redirectPath = join('..', '..', 'public', '_redirects');
 let file = await open(redirectPath, 'r');
@@ -32,11 +32,13 @@ for await (const line of file.readLines()) {
       errors.push(message);
     }
   } else {
-    const response = await validateProductPageUrl(destination);
+    const response = await validateUrl(destination);
     if (!response.valid) {
       const message = `destination: ${destination} failed validation with message: ${response.message}`;
       console.error(message);
       errors.push(message);
+    } else if (response.redirect) {
+      console.warn(`destination: ${destination} is redirected to ${response.redirect}`);
     }
   }
 }
