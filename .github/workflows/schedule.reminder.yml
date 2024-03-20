@@ -1,8 +1,8 @@
-name: Scheduled
+name: Schedule (Reminder)
 
 on:
   schedule:
-    - cron: "0 9-17/2 * * 1-5"
+    - cron: '0 9-17/2 * * 1-5'
   workflow_dispatch:
 
 permissions:

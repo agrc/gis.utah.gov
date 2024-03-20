@@ -1,7 +1,0 @@
-publishDay: friday
-canPublishIssues: true
-canPublishPullRequests: true
-canPublishContributors: false
-canPublishStargazers: false
-canPublishCommits: true
-canPublishReleases: false
