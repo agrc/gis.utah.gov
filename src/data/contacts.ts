@@ -528,5 +528,5 @@ export const contacts: Contacts = {
   user_group_cuug: { name: 'Jesse Miller', email: 'jesse.m@jonesanddemille.com' },
   user_group_nugis: { name: 'Kasey Hansen', email: 'khansen@jub.com' },
   user_group_suug: { name: 'Van Phetsomphous', email: 'van.phetsomphou@sgcity.org' },
-  user_group_ubug: { name: 'Jordan Merrells', email: 'jordmerrell @uintah.utah.gov' },
+  user_group_ubug: { name: 'Jordan Merrell', email: 'jordmerrell@uintah.utah.gov' },
 };
