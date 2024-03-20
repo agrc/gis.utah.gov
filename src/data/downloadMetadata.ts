@@ -733,11 +733,14 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah Oil Gas Fields': {
+    externalHubOrganization: 'utahDNR',
     itemId: 'hosted by DOGM',
     name: 'Utah Oil Gas Fields',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Oil_and_Gas_Fields',
+    openSgid: 'energy.oil_gas_fields',
     layerId: 0,
+    featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/ArcGIS/rest/services/',
+    oddHubName: 'utah-oil-and-gas-fields'
   },
   'Utah Energy Corridor Areas': {
     itemId: '3c39e10f78c34cd981f28bde8ad76e14',
