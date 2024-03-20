@@ -358,32 +358,37 @@ const countyMetadata = [
           >.
         </Alert>
       </div>
-
-      <div class="lg:grid-cols- grid lg:gap-10">
-        <h4>LIR Parcel Attributes</h4>
-        <p>
-          In addition to the polygon geometry the attributes COUNTY_NAME, COUNTY_ID, ASSESSOR_SRC, BOUNDARY_SRC,
-          DISCLAIMER, CURRENT_ASOF, PARCEL_ID, SERIAL_NUM, PARCEL_ADD, PARCEL_CITY, TAXEXEMPT_TYPE, TAX_DISTRICT,
-          TOTAL_MKT_VALUE, LAND_MKT_VALUE, PARCEL_ACRES, PROP_CLASS, PRIMARY_RES, HOUSE_CNT, SUBDIV_NAME, BLDG_SQFT,
-          BLDG_SQFT_INFO, FLOORS_CNT, FLOORS_INFO, BUILT_YR, EFFBUILT_YR, CONST_MATERIAL are maintained in the Land
-          Information Record Parcels dataset when available. Since each county has its own database and process for
-          maintaining tax year assessment information, users should expect some variability in each County's LIR
-          dataset.
-        </p>
-        <p>
-          The Land Information Records (LIR) work group organized by the Governor's Office of Management and Budget has
-          facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety,
-          economic development, transportation, planning and the provisions of public services. In May of 2016, the Land
-          Information Records work group released its <ExternalLink
-            href="https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_"
-            >Land Use Information Records Recommendations</ExternalLink
-          >.
-        </p>
-      </div>
     </div>
+
+    <h4>LIR Parcel Attributes</h4>
+    <p>
+      In addition to the polygon geometry the attributes <code>COUNTY_NAME</code>, <code>COUNTY_ID</code>, <code
+        >ASSESSOR_SRC</code
+      >, <code>BOUNDARY_SRC</code>, <code>DISCLAIMER</code>,
+      <code>CURRENT_ASOF</code>, <code>PARCEL_ID</code>, <code>SERIAL_NUM</code>, <code>PARCEL_ADD</code>, <code
+        >PARCEL_CITY</code
+      >, <code>TAXEXEMPT_TYPE</code>, <code>TAX_DISTRICT</code>, <code>TOTAL_MKT_VALUE</code>,
+      <code>LAND_MKT_VALUE</code>, <code>PARCEL_ACRES</code>, <code>PROP_CLASS</code>, <code>PRIMARY_RES</code>, <code
+        >HOUSE_CNT</code
+      >, <code>SUBDIV_NAME</code>, <code>BLDG_SQFT</code>, <code>BLDG_SQFT_INFO</code>,
+      <code>FLOORS_CNT</code>, <code>FLOORS_INFO</code>, <code>BUILT_YR</code>, <code>EFFBUILT_YR</code>, <code
+        >CONST_MATERIAL</code
+      > are maintained in the Land Information Record Parcels dataset when available. Since each county has its own database
+      and process for maintaining tax year assessment information, users should expect some variability in each County's
+      LIR dataset.
+    </p>
+    <p>
+      The Land Information Records (LIR) work group organized by the Governor's Office of Management and Budget has
+      facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety, economic
+      development, transportation, planning and the provisions of public services. In May of 2016, the Land Information
+      Records work group released its <ExternalLink
+        href="https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_"
+        >Land Use Information Records Recommendations</ExternalLink
+      >.
+    </p>
     <h4>Updates</h4>
     <p>
-      We aim to update the Basic parcels for Davis, Salt Lake, Utah, Washington, and Weber, also known as the Big 5,
+      We aim to update the basic parcels for Davis, Salt Lake, Utah, Washington, and Weber, also known as the Big 5,
       every month. The rest of the rural counties are on a rotating schedule ranging from quarterly to annually.
     </p>
     <p>LIR parcels are updated annually with county year end tax roll information when provided.</p>
@@ -397,7 +402,12 @@ const countyMetadata = [
     </p>
   </Disclaimer>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory
+    title="Update history (basic parcels)"
+    slot="update-history"
+    updates={page.updateHistory}
+    style="secondary"
+  />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
