@@ -7,6 +7,7 @@ import { ProductType, SgidCategory } from '@models/types';
 import Metadata from '@components/data/Metadata.astro';
 
 import CardForParcel from '@components/data/CardForParcel.astro';
+import Disclaimer from '@components/data/Disclaimer.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
 import Alert from '@components/page/Alert.astro';
 import CardForStatute from '@components/page/CardForStatute.astro';
@@ -21,7 +22,7 @@ import Section from '@components/page/Section.astro';
 
 export const metadata: IMetadata = {
   pageTitle: 'Utah Parcels',
-  pageDescription: `Basic parcel data for each of the 29 counties in Utah.`,
+  pageDescription: `Parcel boundary and Land Information Records (LIR) for counties in Utah.`,
   stewards: ['UGRC', 'Local government'],
   type: ProductType.POLYGON,
   category: SgidCategory.CADASTRE,
@@ -304,8 +305,9 @@ const countyMetadata = [
   <Fragment slot="summary">
     <div class="grid lg:grid-cols-2 lg:gap-10">
       <p>
-        The SGID contains county parcel data for each of the 29 counties in Utah and is updated as new data is provided
-        from the data steward in each county.
+        The SGID contains parcel boundaries for each of the 29 counties in Utah and is updated as new data is provided
+        from the data steward in each county. Some counties are more complete than others. The SGID also contains parcel
+        boundaries with additional Land Information Records (LIR) with county tax roll attributes for most counties.
       </p>
       <div class="justify-center self-center">
         <Alert title="Tip">
@@ -340,7 +342,7 @@ const countyMetadata = [
       Information Database containing parcel boundary, parcel identifier, parcel address, owner type, and county
       recorder contact information
     </CardForStatute>
-    <h4>Attributes</h4>
+    <h4>Basic Parcel Attributes</h4>
     <div class="grid lg:grid-cols-2 lg:gap-10">
       <p>
         Parcel polygons contain attributes unique to each parcel such as a unique parcel number (PARCEL_ID), address for
@@ -356,14 +358,44 @@ const countyMetadata = [
           >.
         </Alert>
       </div>
+
+      <div class="lg:grid-cols- grid lg:gap-10">
+        <h4>LIR Parcel Attributes</h4>
+        <p>
+          In addition to the polygon geometry the attributes COUNTY_NAME, COUNTY_ID, ASSESSOR_SRC, BOUNDARY_SRC,
+          DISCLAIMER, CURRENT_ASOF, PARCEL_ID, SERIAL_NUM, PARCEL_ADD, PARCEL_CITY, TAXEXEMPT_TYPE, TAX_DISTRICT,
+          TOTAL_MKT_VALUE, LAND_MKT_VALUE, PARCEL_ACRES, PROP_CLASS, PRIMARY_RES, HOUSE_CNT, SUBDIV_NAME, BLDG_SQFT,
+          BLDG_SQFT_INFO, FLOORS_CNT, FLOORS_INFO, BUILT_YR, EFFBUILT_YR, CONST_MATERIAL are maintained in the Land
+          Information Record Parcels dataset when available. Since each county has its own database and process for
+          maintaining tax year assessment information, users should expect some variability in each County's LIR
+          dataset.
+        </p>
+        <p>
+          The Land Information Records (LIR) work group organized by the Governor's Office of Management and Budget has
+          facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety,
+          economic development, transportation, planning and the provisions of public services. In May of 2016, the Land
+          Information Records work group released its <ExternalLink
+            href="https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_"
+            >Land Use Information Records Recommendations</ExternalLink
+          >.
+        </p>
+      </div>
     </div>
     <h4>Updates</h4>
     <p>
-      We aim to update Davis, Salt Lake, Utah, Washington, and Weber, also known as the Big 5, every month. The rest of
-      the rural counties are on a rotating schedule ranging from quarterly to annually.
+      We aim to update the Basic parcels for Davis, Salt Lake, Utah, Washington, and Weber, also known as the Big 5,
+      every month. The rest of the rural counties are on a rotating schedule ranging from quarterly to annually.
     </p>
+    <p>LIR parcels are updated annually with county year end tax roll information when provided.</p>
     <Contacts contactKey="parcels" subject="Utah Parcels" />
   </Fragment>
+
+  <Disclaimer slot="disclaimer">
+    <p>
+      There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute
+      content to: State of Utah, SGID.
+    </p>
+  </Disclaimer>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
@@ -392,7 +424,7 @@ const countyMetadata = [
         href="https://drive.google.com/drive/folders/1ne7HkZI1L_NrnbszMraIIUGPV7cDCMtH"
         style="secondary"
       >
-        Parcels with land information record information.
+        Parcels with land information record information from previous year.
       </CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
