@@ -5,7 +5,9 @@ const redirectPath = join('..', '..', 'public', '_redirects');
 const readFile = await open(redirectPath, 'r');
 
 function standardize(url) {
-  url = url.trim();
+  if (url.startsWith('/')) {
+    url = url.trim().toLocaleLowerCase();
+  }
   if (url.match(/^\/.*\w$/)) {
     url = `${url}/`;
   }
