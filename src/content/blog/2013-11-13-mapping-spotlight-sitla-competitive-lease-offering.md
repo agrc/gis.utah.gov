@@ -1,5 +1,5 @@
 ---
-title: "Mapping Spotlight: SITLA Competitive Lease Offering"
+title: 'Mapping Spotlight: SITLA Competitive Lease Offering'
 published: false
 author: Jessie Pechmann
 date: 2013-11-13 16:35:19 -0700

@@ -4,11 +4,11 @@ author: Greg Bunce
 date: 2016-06-30T15:04:18.000Z
 category: UGRC
 tags:
-  - "911"
+  - '911'
   - psap
   - utah communications authority
 cover_image: /src/images/pillar-blog/2016-06-30-mapping-utah-s-wireless-emergency-call-routing-system/sectorswithpsaps.png
-cover_image_alt: "Map Two: Cell Sector Overlap"
+cover_image_alt: 'Map Two: Cell Sector Overlap'
 ---
 
 UGRC recently assisted the Utah Communications Authority (UCA) on a project to map and analyze wireless 911 call delivery across Utah. The goal of the project was to provide local 911 communication centers (known formally as Public Safety Answering Points or PSAPs) with maps that will assist them in reviewing and, where applicable, suggesting changes to the wireless providers, that should improve the overall performance of the 911 system.

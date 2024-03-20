@@ -1,5 +1,5 @@
 ---
-title: "Mapping Spotlight: DWR Pheasant Release Areas"
+title: 'Mapping Spotlight: DWR Pheasant Release Areas'
 published: false
 author: Jessie Pechmann
 date: 2013-10-29 16:10:49 -0600

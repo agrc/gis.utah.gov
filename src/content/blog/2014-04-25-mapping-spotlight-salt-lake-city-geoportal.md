@@ -1,5 +1,5 @@
 ---
-title: "Mapping Spotlight: Salt Lake City Geoportal"
+title: 'Mapping Spotlight: Salt Lake City Geoportal'
 published: false
 author: Jessie Pechmann
 date: 2014-04-25 15:41:15 -0600

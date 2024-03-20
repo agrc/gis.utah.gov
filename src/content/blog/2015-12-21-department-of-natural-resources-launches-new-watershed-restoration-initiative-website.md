@@ -1,6 +1,6 @@
 ---
-title: "Department of Natural Resources Launches New Watershed Restoration
-  Initiative Website "
+title: 'Department of Natural Resources Launches New Watershed Restoration
+  Initiative Website '
 published: false
 author: Jessie Pechmann
 date: 2015-12-21 11:33:58 -0700

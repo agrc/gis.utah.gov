@@ -1,5 +1,5 @@
 ---
-title: "Basemaps: A 2014 Day in the Life"
+title: 'Basemaps: A 2014 Day in the Life'
 published: false
 author: Steve Gourley
 date: 2014-12-22 10:45:14 -0700

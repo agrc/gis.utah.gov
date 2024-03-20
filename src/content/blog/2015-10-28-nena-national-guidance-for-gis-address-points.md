@@ -5,7 +5,7 @@ author: Jessie Pechmann
 date: 2015-10-28 15:48:23 -0600
 category: Collaboration
 tags:
-  - "911"
+  - '911'
   - address points
   - nena
 cover_image: /src/images/pillar-blog/default-social-card.png

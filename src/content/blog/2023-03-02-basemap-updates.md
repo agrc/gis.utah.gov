@@ -1,5 +1,5 @@
 ---
-title: "Base maps: Out With the Old, In With the New"
+title: 'Base maps: Out With the Old, In With the New'
 author: Zach Beck
 date: 2023-03-02T11:00:00.000Z
 category: SGID

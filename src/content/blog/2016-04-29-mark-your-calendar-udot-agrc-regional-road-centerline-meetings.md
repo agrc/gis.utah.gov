@@ -1,6 +1,6 @@
 ---
-title: "Mark Your Calendar: UDOT/UGRC Regional Road Centerline Meetings -
-  Correction from Newsletter"
+title: 'Mark Your Calendar: UDOT/UGRC Regional Road Centerline Meetings -
+  Correction from Newsletter'
 published: false
 author: Bert Granberg
 date: 2016-04-29T19:12:17.000Z

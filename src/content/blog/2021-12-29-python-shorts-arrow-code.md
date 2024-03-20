@@ -1,12 +1,12 @@
 ---
-title: "Python Shorts: Flattening Arrow Code"
+title: 'Python Shorts: Flattening Arrow Code'
 author: Jake Adams
 date: 2021-12-29T11:00:00.000Z
 category: Developer
 tags:
   - python
-cover_image: /src/images/pillar-blog/2021-12-29-python-shorts-arrow-code/flea.jpg
-cover_image_alt: Smash it with a hammer!
+cover_image: https://www.python.org/static/img/python-logo.png
+cover_image_alt: the python logo
 ---
 
 "Arrow Code" refers to a series of nested `if` statements that increase your indentation level at each statement, creating an arrow of whitespace when the `if`s are mirrored by accompanying `else` blocks.

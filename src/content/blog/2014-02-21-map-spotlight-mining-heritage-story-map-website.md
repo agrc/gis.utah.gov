@@ -1,5 +1,5 @@
 ---
-title: "Map Spotlight: Mining Heritage Story Map Website"
+title: 'Map Spotlight: Mining Heritage Story Map Website'
 published: false
 author: Bert Granberg
 date: 2014-02-21 14:14:24 -0700
