@@ -4,6 +4,7 @@ import Layout from '@layouts/FullWidth.astro';
 import { Pillar, type IStandardPageMetadata } from '@models/types';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
@@ -26,7 +27,11 @@ const page: IStandardPageMetadata = {
     { title: 'Resources for 911' },
     { title: 'Service area boundaries' },
     { title: 'Civic Location data' },
-    { title: 'NG911 data and solutions' },
+    {
+      title: 'NG911 Dataset',
+      actionText: 'Download the NG911 Dataset',
+      actionUrl: 'https://drive.google.com/a/utah.gov/uc?id=1Sp6v4FmNV5fhdfEWPTxPGHMbnz-yeY47&export=download',
+    },
     { title: 'Additional resources and services' },
   ]),
 };
@@ -97,7 +102,24 @@ const page: IStandardPageMetadata = {
       alt="a woman sitting in front of a computer command center"
       class="w-full max-w-[400px]"
     />
-    <p>lorem</p>
+    <p>
+      UGRC is the official Next-Generation-911 (NG911) geospatial data provider for the Utah statewide 911 system. We
+      work closely with the Utah Communications Authority's (UCA) <ExternalLink
+        href="https://www.uca911.org/911-division">911 Division</ExternalLink
+      > to ensure that all 911 calls in Utah are routed to the appropriate PSAP.
+    </p>
+    <p>
+      UGRC's NG911 Dataset provides the foundation to this system. The dataset adheres to the <ExternalLink
+        href="https://www.nena.org/page/standards">National Emergency Number Association</ExternalLink
+      > (NENA) standard. It includes the essential layers like road centerlines, address points, and PSAP, fire, and law
+      boundaries. Additionally, the dataset incorporates many recommended layers, such as cell towers, county boundaries,
+      hydrology lines (streams and lakes), incorporated municipalities, mile markers, railroads, state boundaries, and unincorporated
+      communities. The primary source for the NG911 Dataset is the SGID.
+    </p>
+    <p>
+      The NG911 Dataset is a great starting point for PSAPs wanting to explore what UGRC has to offer. It is updated
+      monthly and can be downloaded as a file geodatabase.
+    </p>
   </Section>
   <Section {...page.section[4]}>
     <Image
@@ -106,6 +128,6 @@ const page: IStandardPageMetadata = {
       alt="people in a library looking at resources"
       class="w-full max-w-[400px]"
     />
-    <p>lorem</p>
+    <p>...</p>
   </Section>
 </Layout>
