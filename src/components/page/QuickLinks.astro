@@ -16,7 +16,7 @@ const { links } = Astro.props;
       links.map((section) => {
         if (section.title) {
           return (
-            <li>
+            <li class="max-w-xs overflow-hidden text-ellipsis lg:max-w-none">
               <a href={'#' + createIdFromTitle(section.title)}>{section.title}</a>
             </li>
           );
