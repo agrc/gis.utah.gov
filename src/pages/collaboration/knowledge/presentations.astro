@@ -54,6 +54,7 @@ import pandas from '@downloads/pillar-collaboration/presentations/UGIC/2023/pand
 import ugicPandas2023 from '@downloads/pillar-collaboration/presentations/UGIC/2023/pandas/pandas_slides.pdf?url';
 import devSummitAtlas2013 from '@downloads/pillar-collaboration/presentations/devsummit/2013/atlas.pdf?url';
 import devSummitDojo2014 from '@downloads/pillar-collaboration/presentations/devsummit/2014/dojobuild.pdf?url';
+import devSummitPalletjack from '@downloads/pillar-collaboration/presentations/devsummit/2024/updating_hosted_layers.pdf?url';
 import uvu2021 from '@downloads/pillar-collaboration/presentations/higher_ed/UVU_Earth_Science_Seminar_2021_w_notes.pdf?url';
 
 import { stripeSections } from '@utils/page';
@@ -67,16 +68,14 @@ const page: IStandardPageMetadata = {
       title: `UGIC`,
     },
     {
-      title: `Esri developer summit`,
+      title: `Esri Developer Summit`,
     },
     {
-      title: 'Esri user conference',
+      title: 'Esri User Conference',
     },
-    { title: 'National states geographic information council' },
-    { title: 'Salt Lake user group' },
+    { title: 'National States Geographic Information Council' },
+    { title: 'Salt Lake User Group' },
     { title: 'Maps on the Hill' },
-    { title: 'Utah association of counties' },
-    { title: 'Universities' },
     { title: 'Miscellaneous' },
   ]),
 };
@@ -102,10 +101,10 @@ const page: IStandardPageMetadata = {
           >2015: Web Application Options</a
         >
       </li>
-      <li><a href={ugicGitHub2016}>2016: Welcome to the wonder world of GitHub</a></li>
+      <li><a href={ugicGitHub2016}>2016: Welcome to the wonderful world of GitHub</a></li>
       <li><a href="https://agrc.github.io/Presentations/UGIC/2017/forklift">2017: Forklift</a></li>
       <li><a href="https://agrc.github.io/Presentations/UGIC/2017/silo">2017: Break out of your Silo</a></li>
-      <li><a href={ugicDiscover2017}>2017: UGRC's Discover Server Not Just Google Imagery</a></li>
+      <li><a href={ugicDiscover2017}>2017: UGRC's Discover Server: Not Just Google Imagery</a></li>
       <li><a href={ugicRoads2017}>2017: Aggregating Utah's Statewide Roads</a></li>
       <li><a href={ugicPandas2020}>2020: Putting Pandas to Work: Solving GIS Problems in Python</a></li>
       <li>
@@ -132,7 +131,7 @@ const page: IStandardPageMetadata = {
         (<a href={pandas}>Jupyter Notebook</a>, <a href="https://vimeo.com/827767039">Video</a>)
       </li>
       <li>
-        <a href={ugicComputerVision2023}>2023: Generating Useful Data with Computer Vision Tools: 2 Use Cases</a>
+        <a href={ugicComputerVision2023}>2023: Generating Useful Data with Computer Vision Tools: Two Use Cases</a>
       </li>
       <li>
         <a href={ugicPalletjack2023}
@@ -160,6 +159,9 @@ const page: IStandardPageMetadata = {
         <a href="https://agrc.github.io/Presentations/devsummit/2016/playing-nicely-with-others"
           >2016: How to Play Nicely with Others - Building Geospatial Components</a
         >
+      </li>
+      <li>
+        <a href={devSummitPalletjack}>2024: Automated Web Layer Updates with Pandas and the ArcGIS API for Python</a>
       </li>
     </BulletedList>
   </Section>
@@ -189,7 +191,7 @@ const page: IStandardPageMetadata = {
       <li><a href={nsgicData2018}>2018: NG911 Data Prep</a></li>
       <li><a href={nsgicPlss2019}>2019: Utah and the PLSS</a></li>
       <li><a href={nsgicDataLifecycle2019}>2019: Utah's New GIS Data Lifecycle</a></li>
-      <li><a href={nsgicTogether2020}>2020: Things that go Together</a></li>
+      <li><a href={nsgicTogether2020}>2020: Things That Go Together</a></li>
       <li><a href={nsgicBeyondTheMap2020}>2020: Thinking Beyond the Map</a></li>
       <li>
         <a href={nsgicWardrobe2021}>2021: Revamping your Data Wardrobe to Give it More Curb Appeal</a>
@@ -200,10 +202,10 @@ const page: IStandardPageMetadata = {
       <li><a href={nsgicGeocoding2021}>2021: GIS 101 Series - Geocoding</a></li>
       <li><a href={nsgicMidyear2022}>2022: Mining new GIS Users</a></li>
       <li>
-        <a href={nsgicRating2022}>2022: Implementing a Rating System to Enhance Data Quality</a>a
+        <a href={nsgicRating2022}>2022: Implementing a Rating System to Enhance Data Quality</a>
       </li>
       <li>
-        <a href={nsgicApps2023}>2023: A Showcase of Utah’s Apps, Maps, and Services</a>
+        <a href={nsgicApps2023}>2023: A Showcase of Utah's Apps, Maps, and Services</a>
       </li>
     </BulletedList>
   </Section>
@@ -232,21 +234,6 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[6]}>
     <BulletedList>
-      <li><a href={uac2023}>2023: Introduction to UGRC's Products and Solutions</a></li>
-    </BulletedList>
-  </Section>
-  <Section {...page.section[7]}>
-    <BulletedList>
-      <li>
-        <a href={uvu2021}
-          >2021 UVU Earth Science Seminar: This Thing Called
-          <del>Love</del> GIS: An Introduction to UGRC</a
-        >
-      </li>
-    </BulletedList>
-  </Section>
-  <Section {...page.section[8]}>
-    <BulletedList>
       <li>
         <a href={sgidLifecycle}
           >2020: Utah's SGID - Unlocking Geospatial Data (Bridging the Gap Between Proprietary and Open Source GIS)</a
@@ -258,11 +245,18 @@ const page: IStandardPageMetadata = {
       </li>
       <li><a href={addressing911}>2021: Addressing and its Impacts on 911 Call Routing and Dispatching</a></li>
       <li>
+        <a href={uvu2021}
+          >2021: UVU Earth Science Seminar: This Thing Called
+          <del>Love</del> GIS: An Introduction to UGRC</a
+        >
+      </li>
+      <li>
         <a href={uspe2022}>2022: USPE Presentation: GIS Data, Resources, and Applications</a>
       </li>
       <li>
         <a href={g52022}>2022: G5 Presentation: GIS & 911 - From Your Phone to the St George Communications Center</a>
       </li>
+      <li><a href={uac2023}>2023: Introduction to UGRC's Products and Solutions</a></li>
     </BulletedList>
   </Section>
 </Layout>

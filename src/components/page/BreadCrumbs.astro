@@ -9,7 +9,7 @@ import capitalize from 'lodash.capitalize';
 const { path, class: className } = Astro.props;
 
 const capitalizeAcronyms = (str: string) => {
-  const acronyms = ['TURN', 'SGID', 'UGRC', 'API', 'GIS'];
+  const acronyms = ['TURN', 'SGID', 'UGRC', 'API', 'GIS', 'GISAC'];
   let words = str.split('-');
 
   for (let i = 0; i < words.length; i++) {
@@ -94,7 +94,7 @@ const length = parts.length - 1;
               {segment.replaceAll('-', ' ')}
             </span>
           </li>
-        ),
+        )
       )
     }
   </ol>
