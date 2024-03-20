@@ -1,6 +1,6 @@
 ---
-title: "The Role of GIS during a Pandemic: Why the “Where” Is So Important for
-  the Coronavirus"
+title: 'The Role of GIS during a Pandemic: Why the “Where” Is So Important for
+  the Coronavirus'
 author: Anna Tribolet
 date: 2020-06-15T16:31:10.000Z
 category: Guest Blog

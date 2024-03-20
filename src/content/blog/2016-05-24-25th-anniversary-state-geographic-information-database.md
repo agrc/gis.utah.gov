@@ -1,5 +1,5 @@
 ---
-title: "25 Years Ago: Laying the Foundation for Utah GIS Success"
+title: '25 Years Ago: Laying the Foundation for Utah GIS Success'
 author: Bert Granberg
 date: 2016-05-24T21:57:21.000Z
 category: Collaboration

@@ -1,5 +1,5 @@
 ---
-title: "Statewide Address Points: Best Practices"
+title: 'Statewide Address Points: Best Practices'
 published: false
 author: Jessie Pechmann
 date: 2014-09-24 15:04:25 -0600

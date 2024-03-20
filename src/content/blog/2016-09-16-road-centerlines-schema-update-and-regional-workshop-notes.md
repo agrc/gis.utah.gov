@@ -1,11 +1,11 @@
 ---
-title: "Road Centerlines: Schema Update and Regional Workshop Notes"
+title: 'Road Centerlines: Schema Update and Regional Workshop Notes'
 published: false
 author: Bert Granberg
 date: 2016-09-16T19:27:44.000Z
 category: SGID Updates
 tags:
-  - "911"
+  - '911'
   - dot
   - ng911
   - road centerlines

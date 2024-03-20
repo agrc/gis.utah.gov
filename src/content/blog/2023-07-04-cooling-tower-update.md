@@ -1,5 +1,5 @@
 ---
-title: "Results Update: Detecting Cooling Towers with Computer Vision Tools"
+title: 'Results Update: Detecting Cooling Towers with Computer Vision Tools'
 author: Erik Neemann
 date: 2023-06-30T09:00:00.000Z
 category: UGRC

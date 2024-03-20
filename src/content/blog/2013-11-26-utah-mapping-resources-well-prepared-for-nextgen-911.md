@@ -1,11 +1,11 @@
 ---
-title: "Utah Mapping Resources: Well-Prepared for NextGen 9-1-1"
+title: 'Utah Mapping Resources: Well-Prepared for NextGen 9-1-1'
 published: false
 author: Bert Granberg
 date: 2013-11-26 14:21:05 -0700
 category: SGID Updates
 tags:
-  - "911"
+  - '911'
   - address
   - boundaries
   - ecrf

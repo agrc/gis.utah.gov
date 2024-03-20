@@ -1,5 +1,5 @@
 ---
-title: "Feedback Wanted: Proposed Best Practices for Tagging Utah Metadata"
+title: 'Feedback Wanted: Proposed Best Practices for Tagging Utah Metadata'
 published: false
 author: Bert Granberg
 date: 2014-04-30 18:11:06 -0600

@@ -1,5 +1,5 @@
 ---
-title: "SDE Application Server Connects Deprecation "
+title: 'SDE Application Server Connects Deprecation '
 published: false
 author: Matt Peters
 date: 2016-08-23T22:45:23.000Z
