@@ -2,9 +2,10 @@
 interface Props {
   updates: string[];
   style?: 'primary' | 'secondary';
+  title?: string;
 }
 
-const { updates, style = 'primary' } = Astro.props;
+const { title = 'Update history', updates, style = 'primary' } = Astro.props;
 ---
 
 <details
@@ -14,7 +15,7 @@ const { updates, style = 'primary' } = Astro.props;
   ]}
 >
   <summary class="flex cursor-pointer list-none items-center transition-all [&::-webkit-details-marker]:hidden">
-    <span class="font-semibold">Update history</span>
+    <span class="font-semibold">{title}</span>
     <div class="flex flex-1 justify-end">
       <svg
         class="flex rotate-0 transform text-white transition-all duration-300"
