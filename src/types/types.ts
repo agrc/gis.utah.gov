@@ -115,7 +115,6 @@ export enum ProductType {
   ELEVATION_RASTER,
   IMAGERY_RASTER,
   GPS_NETWORK,
-  GEODATABASE,
 }
 
 export interface IHubDownload {
