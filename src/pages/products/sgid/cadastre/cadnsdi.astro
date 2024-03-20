@@ -1,15 +1,16 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/products/sgid/types';
-import { ProductType, SgidCategory } from '@models/products/sgid/types';
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
 
+import DirectDownloads from '@components/data/DirectDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
 
-import BulletedList from '@components/page/BulletedList.astro';
+import Alert from '@components/page/Alert.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -33,18 +34,16 @@ const page: IPageMetadata = {
     'November 1, 2018',
     'August 28, 2015',
   ],
+  links: [
+    {
+      title: 'CadNSDI GIS Version 2.3',
+      url: 'https://drive.google.com/uc?id=13DUod-JnR2W7JLbRM1wjS-bCDrRs93Ij&export=download',
+    },
+  ],
 };
 ---
 
-<Layout
-  pageTitle={page.title}
-  subTitle={page.updateHistory[0]}
-  category={page.category}
-  actionUrl={page.application}
-  config={{
-    skipInDepth: true,
-  }}
->
+<Layout {...page} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
@@ -60,44 +59,34 @@ const page: IPageMetadata = {
   <Section title="About the data" slot="downloads" titlePosition="center">
     <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
       <div class="flex flex-col">
-        <h2 class="pb-1">CadNSDI GIS Version v2.3</h2>
-        <p>
-          <ExternalLink href="https://drive.google.com/uc?id=13DUod-JnR2W7JLbRM1wjS-bCDrRs93Ij&export=download"
-            >Download now.</ExternalLink
-          >
-        </p>
+        <DirectDownloads title="Google Drive links" links={page.links!} />
       </div>
       <div class="flex flex-col gap-2">
-        <h2 class="pb-1">Important Notes for CadNSDI GIS Version 2.3</h2>
-        <BulletedList>
-          <li>
-            The Zip file contains the following feature classes as provided by the BLM with no changes made:
-            ConflictedAreas, MeanderedWater, MetadataGlance, PLSSFirstDivision, PLSSIntersected, PLSSPoint,
-            PLSSSecondDivision, PLSSSpecialSurvey, PLSSTownship, SurveySystem.
-          </li>
-          <li>The current version CadNSDI_GIS_v2.3, dataset was released December 2020.</li>
-        </BulletedList>
+        <Alert title="Tip"
+          >The download contains the following feature classes: ConflictedAreas, MeanderedWater, MetadataGlance,
+          PLSSFirstDivision, PLSSIntersected, PLSSPoint, PLSSSecondDivision, PLSSSpecialSurvey, PLSSTownship,
+          SurveySystem.</Alert
+        >
       </div>
     </div>
+  </Section>
 
-    <p>
-      There are no constraints or warranties with regard to the use of this dataset. This state-wide dataset is
-      maintained by all partners of Utah PLSS Fabric Group.
-    </p>
+  <Fragment slot="description">
     <p>
       The geographic coordinates and their associated products are NOT legal land survey records. The coordinates can
       NOT be used as a substitute for a legal land survey. They can be used for record keeping, mapping, graphics and
       planning purposes only. No warranty is made by the Bureau of Land Management for use of the data for purposes not
       intended by BLM.
     </p>
-  </Section>
+  </Fragment>
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
 
-  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+  <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink
         title="Bureau of Land Management Utah, Cadastral Survey"
         href="https://www.blm.gov/programs/lands-and-realty/cadastral-survey"
-        >Aboout BLM's Cadastral Survey program</CardWithPopularLink
+        >About BLM's Cadastral Survey program</CardWithPopularLink
       >
       <CardWithPopularLink
         title="Federal Geographic Data Committee (FGDC) Subcommittee for Cadastral Education & Training"
@@ -108,17 +97,17 @@ const page: IPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Parcels" href="/products/sgid/cadastre/parcels"
+      <CardWithSmallLink title="Parcels" href="/products/sgid/cadastre/parcels" style="secondary"
         >Parcel data for each of the 29 counties in Utah.</CardWithSmallLink
       >
-      <CardWithSmallLink title="PLSS point data" href="/products/sgid/cadastre/plss-points"
+      <CardWithSmallLink title="PLSS point data" href="/products/sgid/cadastre/plss-points" style="secondary"
         >Public Land Survey System points for the State of Utah.</CardWithSmallLink
       >
-      <CardWithSmallLink title="PLSS sections data" href="/products/sgid/cadastre/plss-sections"
+      <CardWithSmallLink title="PLSS sections data" href="/products/sgid/cadastre/plss-sections" style="secondary"
         >Public Land Survey System sections for the State of Utah.</CardWithSmallLink
-      ><CardWithSmallLink title="PLSS townships data" href="/products/sgid/cadastre/plss-townships"
+      ><CardWithSmallLink title="PLSS townships data" href="/products/sgid/cadastre/plss-townships" style="secondary"
         >Public Land Survey System townships for the State of Utah.</CardWithSmallLink
       >
     </GridForYouMightLike>
