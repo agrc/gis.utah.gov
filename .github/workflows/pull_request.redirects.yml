@@ -68,6 +68,7 @@ jobs:
             ```
 
       - name: 🚦 Check for errors
+        if: steps.validate.outputs.exitCode != 0
         run: |
           echo "::error::Validate stderr${{ steps.validate.outputs.stderr }}"
           exit ${{ steps.validate.outputs.exitCode }}
