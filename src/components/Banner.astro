@@ -15,7 +15,7 @@ const banner = await getImage({ src: image, format: 'webp' });
 ---
 
 <div
-  class="relative z-[1] flex h-[150px] w-full justify-end border-b-2
+  class="relative z-[1] flex h-[150px] max-h-[150px] w-full justify-end border-b-2
     border-primary
     bg-cover
     before:absolute
@@ -44,7 +44,9 @@ const banner = await getImage({ src: image, format: 'webp' });
         <div class="relative min-w-px border-0">
           <div class="flex">
             <div class="block min-w-px max-w-full grow">
-              <p class="text-right text-3xl font-bold text-zinc-50 md:text-4xl">{title}</p>
+              <p class="line-clamp-2 text-right text-3xl font-bold text-zinc-50 md:text-4xl lg:line-clamp-none">
+                {title}
+              </p>
               {
                 pillar && (
                   <div class="flex flex-col gap-y-1.5 divide-y divide-white/50">
