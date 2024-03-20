@@ -19,8 +19,11 @@ interface Props {
 const { category, coverImage, date, snippet, estimatedReadingTime, slug, title, aboveTheFold } = Astro.props;
 const { year, month, day } = getDateParts(date);
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}');
-if (!images[coverImage])
-  throw new Error(`"${coverImage}" not found in "/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}"`);
+if (!coverImage.startsWith('https')) {
+  if (!images[coverImage]) {
+    throw new Error(`"${coverImage}" not found in "/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}"`);
+  }
+}
 ---
 
 <div class="max-w-sm overflow-hidden rounded-lg border border-black/20 bg-white shadow dark:bg-zinc-900/70">
@@ -28,14 +31,27 @@ if (!images[coverImage])
     <span class="pl-2">{category}</span>
   </div>
   <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-black/20">
-    <Image
-      src={images[coverImage]()}
-      loading={aboveTheFold ? 'eager' : 'lazy'}
-      alt="The blog post cover art."
-      width={382}
-      height={192}
-      class="sr-hidden h-48 w-full bg-primary/10 object-contain"
-    />
+    {
+      coverImage.startsWith('https') ? (
+        <Image
+          src={coverImage}
+          loading={aboveTheFold ? 'eager' : 'lazy'}
+          alt="The blog post cover art."
+          width={382}
+          height={192}
+          class="sr-hidden h-48 w-full bg-primary/10 object-contain"
+        />
+      ) : (
+        <Image
+          src={images[coverImage]()}
+          loading={aboveTheFold ? 'eager' : 'lazy'}
+          alt="The blog post cover art."
+          width={382}
+          height={192}
+          class="sr-hidden h-48 w-full bg-primary/10 object-contain"
+        />
+      )
+    }
     <div class="flex min-w-0 flex-1 p-4 pb-2 pt-2">
       <div class="flex min-w-0 flex-1 flex-col justify-around">
         <p class="line-clamp-1 font-semibold text-primary dark:text-zinc-200">
