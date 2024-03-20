@@ -1,0 +1,107 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  pageTitle: 'Utah Oil Gas Fields',
+  pageDescription: `Oil and gas field polygons from the Utah Division of Oil, Gas and Mining.`,
+  stewards: ['UGRC', 'DNR-OGM'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.ENERGY,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`November 2020`, `May 2016`, `March 2015`, `May 2013`],
+
+  hub: {
+    ...dataPages[metadata.pageTitle],
+  },
+};
+---
+
+<Layout {...page} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>Oil and gas field polygons from the Utah Division of Oil, Gas and Mining.</p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The data provided on this page is the most up-to-date version of the oil and gas fields in Utah. In 2020, ten
+      fields were specifically expanded to incorporate wildcat/undesignated wells within the Uinta Basin.
+    </p>
+    <p>
+      <ExternalLink
+        href="https://docs.google.com/spreadsheets/d/1O8PRzPuTXY9vhTikZj9G5Y6rmLL6x8p0MCD6nTvwPf8/edit#gid=0"
+        >PROD codes</ExternalLink
+      > represent the producing geologic formation of the oil/gas field. The table below shows the most widely used codes
+      in the dataset. These codes are used in the following fields: PROD_FORM, FORM_2, FORM_4, and FORM_4.
+    </p>
+
+    <h3>PROD Code</h3>
+    <dl>
+      <DefinitionListItem term="GRRV">Green River</DefinitionListItem>
+      <DefinitionListItem term="ISMY">Ismay</DefinitionListItem>
+      <DefinitionListItem term="DKTA">Dakota</DefinitionListItem>
+      <DefinitionListItem term="WSTC">Wasatch</DefinitionListItem>
+      <DefinitionListItem term="DSCR">Desert Creek</DefinitionListItem>
+      <DefinitionListItem term="FRSD">Ferron Sandstone</DefinitionListItem>
+      <DefinitionListItem term="PRDX">Paradox</DefinitionListItem>
+      <DefinitionListItem term="MRSN">Morrison</DefinitionListItem>
+      <DefinitionListItem term="MVRD">Mesa Verde</DefinitionListItem>
+      <DefinitionListItem term="MNCS">Mancos</DefinitionListItem>
+    </dl>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="DNR-OGM" href="https://ogm.utah.gov/og-home/"
+        >Utah Division of Oil, Gas, and Mining. Publications, rules, research, and more information.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="BLM" href="https://www.blm.gov/programs/energy-and-minerals/oil-and-gas"
+        >BLM oil and gas leasing and exploration.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Oil and Gas Wells" href="/products/sgid/energy/oil-gas-wells" style="secondary"
+        >Oil and gas well surface locations.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Oil and Gas Units" href="/products/sgid/energy/federal-oil-gas-units" style="secondary"
+        >Federal oil and gas units from the BLM.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Wind" href="/products/sgid/energy/wind" style="secondary"
+        >Areas of renewable wind resources identified by UREZ.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Solar" href="/products/sgid/energy/solar" style="secondary"
+        >Areas of renewable solar resources identified by UREZ.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
