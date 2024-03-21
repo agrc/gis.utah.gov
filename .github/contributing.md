@@ -57,11 +57,11 @@ for getting things done and landing your contribution.
 
 7. Perform your changes. In case you're unfamiliar with the structure of this repository, we recommend that you review the [Collaborator Guide](.github/collaborating.md).
 
-8. Perform a merge to sync your current branch with the upstream branch.
+8. Perform a rebase to sync your current branch with the upstream branch.
 
    ```bash
    git fetch upstream
-   git merge upstream/main
+   git rebase upstream/main
    ```
 
 9. Run `npm run format` to confirm that linting and formatting are passing.
