@@ -4,7 +4,6 @@ import Layout from '@layouts/FullWidth.astro';
 import { Pillar, type IStandardPageMetadata } from '@models/types';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
@@ -63,8 +62,6 @@ const page: IStandardPageMetadata = {
     <p>
       Our real-time GPS network plays a crucial role in keeping drones in designated flight corridors. This aids a
       multitude of services including critical medical deliveries.
-
-      <i>insert image of drone flying medical supplies</i>
     </p>
   </Section>
   <Section {...page.section[2]}>
@@ -72,7 +69,7 @@ const page: IStandardPageMetadata = {
     <p>
       Navigation of driverless vehicles is greatly improved when using a real-time network versus a standard GPS
       network. Having a reliable network helps keep drivers safe by preventing collisions and keeping vehicles in the
-      appropriate lane. <i>insert images of vehicle driving with standard GPS and real-time network</i>
+      appropriate lane.
     </p>
   </Section>
   <Section {...page.section[3]}>
@@ -85,9 +82,7 @@ const page: IStandardPageMetadata = {
     <p>
       High-accuracy GNSS networks have been used in science and research to study and better understand the world around
       us. Our GNSS network can help support Disaster Response Management, agricultural and forestry, landslide
-      monitoring, and more! This <ExternalLink
-        href="https://drive.google.com/file/d/1b1VQn5dk7fcTm1IEaQ4-veqZm6HvzWkp/view?usp=sharing">example</ExternalLink
-      > shows land movement following a 2011 earthquake in Japan.
+      monitoring, and more!
     </p>
   </Section>
   <Section {...page.section[4]}>
