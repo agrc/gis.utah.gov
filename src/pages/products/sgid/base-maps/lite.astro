@@ -45,7 +45,10 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>A light, muted raster reference base map that doesn't compete with your thematic data.</p>
+    <p>
+      A light, muted, general reference base map that doesn't compete with your thematic data. This base map provides
+      the setting for your data to be shown off.
+    </p>
     <Image
       src={samplePhoto}
       width="600"
@@ -62,7 +65,7 @@ const page: IPageMetadata = {
   <Fragment slot="description">
     <p>
       This base map contains roads, highways, and rail as well as county and municipal boundaries with labels. Building
-      footprints and address point values display as you zoom in.
+      footprints and address point house numbers display as you zoom in.
     </p>
     <p>
       These raster tiles are pre-rendered at the <ExternalLink
@@ -91,7 +94,7 @@ const page: IPageMetadata = {
         >A combination of the general reference features base map and our latest high-resolution imagery.</CardWithSmallLink
       >
       <CardWithSmallLink title="Utah Terrain base map" href="/products/sgid/base-maps/terrain"
-        >A base map of hillshade, highways and streets, parks, forests, water, etc.</CardWithSmallLink
+        >A base map of hillshade, vegetation, elevation, highways and other manmade features.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>
