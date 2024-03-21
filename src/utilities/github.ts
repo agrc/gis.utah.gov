@@ -40,7 +40,7 @@ export const getAllContributors = async (repo: string) => {
 const recursiveFetch = async (repo: string, page = 1) => {
   const pageSize = 100;
   try {
-    if (!import.meta.env.PROD) {
+    if (import.meta.env.NETLIFY) {
       const response = await octokit.request('GET /repos/{owner}/{repo}/contributors', {
         owner: 'agrc',
         repo,
