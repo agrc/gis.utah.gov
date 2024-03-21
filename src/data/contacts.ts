@@ -313,6 +313,12 @@ export const contacts: Contacts = {
     email: 'JustinLee@utah.gov',
     agency: "Lieutenant Governor's Office",
   },
+  psap: {
+    name: 'Hank Chou',
+    email: 'hchou@utah.gov',
+    agency: "UGRC",
+    phone: '435-319-0307',
+  },
   roads: {
     name: 'Greg Bunce',
     email: 'GBunce@utah.gov',

@@ -4,7 +4,6 @@ import Layout from '@layouts/FullWidth.astro';
 import { Pillar, type IStandardPageMetadata } from '@models/types';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
-import BulletedList from '@components/page/BulletedList.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
@@ -17,6 +16,7 @@ import libraryPhoto from '@images/solutions/library.svg';
 import locationPhoto from '@images/solutions/location2.svg';
 import dispatchCenterPhoto from '@images/solutions/monitor-station.svg';
 
+import Contacts from '@components/page/Contacts.astro';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
@@ -26,14 +26,18 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.SOLUTIONS,
   section: stripeSections([
     { title: 'Resources for 911' },
-    { title: 'Service area boundaries' },
-    { title: 'Civic location data' },
+    {
+      title: 'Service area boundaries',
+    },
+    {
+      title: 'Civic location data',
+    },
     {
       title: 'NG911 dataset',
       actionText: 'Download the NG911 dataset',
       actionUrl: 'https://drive.google.com/a/utah.gov/uc?id=1Sp6v4FmNV5fhdfEWPTxPGHMbnz-yeY47&export=download',
     },
-    { title: 'Additional resources and services' },
+    { title: 'Additional resources' },
   ]),
 };
 ---
@@ -73,7 +77,11 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px]"
     />
     <p>
-      Service area boundaries are required data layers for PSAPs and dispatch centers and include EMS, fire, and law.
+      Service area boundaries are required data layers for <a
+        href="/products/sgid/society/public-safety-answering-point-boundaries">PSAPs</a
+      > and dispatch centers and include <a href="/products/sgid/society/emergency-medical-response-areas">EMS</a>, <a
+        href="/products/sgid/society/fire-response-areas">fire</a
+      >, and <a href="/products/sgid/society/law-enforcement-boundaries">law</a>.
     </p>
     <p>
       These boundaries define the specific geographic areas each emergency service agency is responsible for. This
@@ -85,16 +93,38 @@ const page: IStandardPageMetadata = {
       UGRC maintains statewide geographic data layers for each the required service area boundaries. These layers are
       updated on a monthly basis and are actively used in the state's Next Generation 911 (NG911) call routing system.
     </p>
-    <p>Learn more and explore the data for each of these layers on UGRC's product pages:</p>
-    <BulletedList>
-      <li><a href="/products/sgid/society/emergency-medical-response-areas">EMS</a></li>
-      <li><a href="/products/sgid/society/fire-response-areas">Fire</a></li>
-      <li><a href="/products/sgid/society/law-enforcement-boundaries">Law</a></li>
-    </BulletedList>
+    <p>
+      Please reach out <Contacts contactKey="psap" subject="PSAP solutions inquiry" inline />
+      to learn more.
+    </p>
   </Section>
   <Section {...page.section[2]}>
     <Image slot="image" src={locationPhoto} alt="a man holding a map in the city" class="w-full max-w-[400px]" />
-    <p>lorem</p>
+    <p>
+      When seconds matter, knowing the precise location of an emergency is critical. UGRC is as a trusted source for
+      this vital data.
+    </p>
+    <p>
+      UGRC provides a comprehensive library of authoritative, and up-to-date, civic location information, including
+      precise <a href="/products/sgid/location/address-points">address points</a>, <a
+        href="/products/sgid/transportation/road-centerlines">road centerlines</a
+      >, and other crucial infrastructure layers like law enforcement locations (<a
+        href="/products/sgid//society/law-enforcement-facilities">police</a
+      > and <a href="/products/sgid//society/fire-stations">fire</a> stations), <a
+        href="/products/sgid/health/healthcare-facilities">hospitals</a
+      >, and <a href="/products/sgid/society/open-source-places">common places</a>. This granular data allows emergency
+      dispatchers to pinpoint caller location with unmatched accuracy, ensuring first responders are directed to the
+      exact scene without delay.
+    </p>
+    <p>
+      Furthermore, UGRC's commitment to data quality and accessibility empowers all emergency response agencies (PSAPs)
+      across Utah to operate with standardized data. This collaborative approach fueled by accurate civic location data
+      from UGRC can mean the difference between life and death in critical situations.
+    </p>
+    <p>
+      Please reach out <Contacts contactKey="psap" subject="PSAP solutions inquiry" inline />
+      to learn more.
+    </p>
   </Section>
   <Section {...page.section[3]}>
     <Image
