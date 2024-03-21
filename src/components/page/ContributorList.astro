@@ -12,4 +12,4 @@ const { githubRepo = 'gis.utah.gov' } = Astro.props;
 const contributors = await getAllContributors(githubRepo);
 ---
 
-<FacePile {contributors} />
+<FacePile contributors={contributors} />
