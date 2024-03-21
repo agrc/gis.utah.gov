@@ -3,9 +3,9 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Pillar, type IStandardPageMetadata } from '@models/types';
 
-import Blockquote from '@components/page/Blockquote.astro';
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
+import MonoQuote from '@components/page/MonoQuote.astro';
 import NumberedList from '@components/page/NumberedList.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
@@ -40,7 +40,7 @@ const page: IStandardPageMetadata = {
       The following applies to all services and content created or hosted by the Utah Geospatial Resource Center (UGRC),
       including SGID data hosted or aggregated by UGRC.
     </p>
-    <p>There are two exceptions to this coverage:</p>
+    <p>There are two exceptions to our standard license and disclaimer:</p>
     <NumberedList>
       <li>
         The high-resolution imagery from Google and Hexagon, which have their own license and <a
@@ -84,24 +84,18 @@ const page: IStandardPageMetadata = {
       last updated date if it is available in the metadata or the date you accessed/downloaded the data if not. For example,
       this is what it could look like in an MLA-esque format:
     </p>
-    <Blockquote>
-      <ul>
-        <li>
-          State Geographic Information Database. <em>Utah Address Points</em>. (Feature class). Salt Lake City, UT: Utah
-          Geospatial Resource Center, July 2021. Geospatial point data. 27 July 2021.
-          https://gis.utah.gov/data/location/address-data/.
-        </li>
-      </ul>
-    </Blockquote>
+    <MonoQuote>
+      <p>
+        State Geographic Information Datasource. <em>Utah Address Points</em>. (Feature class). Salt Lake City, UT: Utah
+        Geospatial Resource Center, July 2021. Geospatial point data. 27 January 2024.
+        <span>https://gis.utah.gov/<wbr />products/<wbr />sgid/<wbr />location/<wbr />address-data/.</span>
+      </p>
+    </MonoQuote>
     <p>
       <strong>Maps</strong> and <strong>web apps</strong> should include a reference to both UGRC and the SGID in the & "Sources"
       attribution:
     </p>
-    <Blockquote>
-      <ul>
-        <li>Data Sources: ESRI, US Census Bureau, UGRC SGID (data modified), ...</li>
-      </ul>
-    </Blockquote>
+    <MonoQuote><p>Data Sources: ESRI, US Census Bureau, UGRC SGID (data modified), ...</p></MonoQuote>
     <p>
       Any <strong>data distributions</strong> (databases, web services, etc.) that contain SGID data must include credit
       to UGRC, a link to the <ExternalLink href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</ExternalLink> license,
@@ -110,14 +104,13 @@ const page: IStandardPageMetadata = {
       <a href="/documentation/policy/metadata">metadata policy</a>. The dataset's description could include the
       following line:
     </p>
-    <Blockquote>
-      <ul>
-        <li>
-          County boundary data derived from the UGRC SGID under the CC BY 4.0 license
-          (https://creativecommons.org/licenses/by/4.0/). Several new fields were calculated from US Census Bureau data.
-        </li>
-      </ul>
-    </Blockquote>
+    <MonoQuote>
+      <p>
+        County boundary data derived from the UGRC SGID under the CC BY 4.0 license (<span
+          >https://creativecommons.org/<wbr />licenses/<wbr />by/<wbr />4.0/</span
+        >). Several new fields were calculated from US Census Bureau data.
+      </p>
+    </MonoQuote>
     <p>
       If you are using <strong>logos</strong> as part of your attribution, you can download our current logos in <code
         >.png</code
@@ -129,7 +122,7 @@ const page: IStandardPageMetadata = {
       We created the following standard disclaimer for all hosted SGID data with input from the State Attorney General's
       office:
     </p>
-    <Blockquote>
+    <MonoQuote>
       <p>
         The data, including but not limited to geographic data, tabular data, and analytical data, are provided “as is”
         and “as available”, with no guarantees relating to the availability, completeness, or accuracy of data, and
@@ -147,7 +140,7 @@ const page: IStandardPageMetadata = {
         liability, costs, and damages relating to your use of the data. You agree that your sole remedy for any
         dissatisfaction or claims is to discontinue use of the data.
       </p>
-    </Blockquote>
+    </MonoQuote>
     <p>
       We created this disclaimer with the hope that it could provide inspiration if you are looking for an example
       disclaimer. However, we are not lawyers. Please work with your own legal counsel before adopting a disclaimer. Any

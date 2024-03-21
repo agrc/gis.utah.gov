@@ -75,6 +75,15 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[3]}>
     <p>
+      The summary should <em>briefly</em> explain the dataset in under 250 characters (an ArcGIS Online limitation). It is
+      primarily used when reviewing ArcGIS Online search results. The summary may end up being very similar to the dataset
+      name for some datasets.
+    </p>
+
+    <p>Example: <code>Utah public library and bookmobile locations</code></p>
+  </Section>
+  <Section {...page.section[4]}>
+    <p>
       The description is a more in-depth version of the summary and should stand on its own. It is a great place for
       details on the source of the data, how frequently it's updated, its usability at certain scales, or any common
       misconceptions. A good description is also important because it's the main info displayed in the <ExternalLink
@@ -91,11 +100,11 @@ const page: IStandardPageMetadata = {
       >.
     </p>
   </Section>
-  <Section {...page.section[4]}>
+  <Section {...page.section[5]}>
     <p>The credits should clearly state who created the dataset and how you can get in contact with them.</p>
     <p>Example: <code>UGRC, UDOT</code></p>
   </Section>
-  <Section {...page.section[5]}>
+  <Section {...page.section[6]}>
     <p>
       This section includes both usage limitations (any constraints on where or how the dataset can be used, including
       disclaimers and attribution rules) and the intellectual property license (if any) associated with the dataset
@@ -103,7 +112,7 @@ const page: IStandardPageMetadata = {
     </p>
     <p>
       We use <ExternalLink href="https://github.com/agrc/sweeper">Sweeper</ExternalLink> to automatically populate our hosted
-      datasets with our standard <a href="/documentation/policy/license">disclaimer</a> and <a
+      datasets with our standard <a href="/documentation/policy/license#disclaimer">disclaimer</a> and <a
         href="/documentation/policy/license">license</a
       >.
     </p>

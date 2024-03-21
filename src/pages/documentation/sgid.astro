@@ -222,7 +222,12 @@ const page: IStandardPageMetadata = {
   </Section>
 
   <Section {...page.section[6]}>
-    <Image slot="image" src={discoverLogo} alt="the discover wavy gravy logo" class="w-full max-w-[400px]" />
+    <Image
+      slot="image"
+      src={discoverLogo}
+      alt="the discover wavy gravy logo"
+      class="w-full max-w-[400px] rounded-2xl px-3 py-2 dark:bg-white/20"
+    />
     <p>
       Discover complements the SGID vector GIS data with raster imagery and base maps. The base maps are created by
       UGRC's cartographers, and Discover serves them using WMS image and WMTS tiled image services that anyone can use
@@ -244,9 +249,14 @@ const page: IStandardPageMetadata = {
   </Section>
 
   <Section {...page.section[8]}>
-    <Image slot="image" src={apiLogo} alt="the api wavy gravy logo" class="w-full max-w-[400px]" />
+    <Image
+      slot="image"
+      src={apiLogo}
+      alt="the api wavy gravy logo"
+      class="w-full max-w-[400px] rounded-2xl px-3 py-2 dark:bg-white/20"
+    />
     <p>
-      UGRC’s API is an http-enabled service for accessing this valuable geospatial data. From geocoding addresses
+      UGRC's API is an http-enabled service for accessing this valuable geospatial data. From geocoding addresses
       against the most accurate statewide roads and address points dataset to querying any data layer in the Open SGID,
       the solutions created by the API are endless. The API powers UGRC’s <ExternalLink
         href="https://www.npmjs.com/search?q=%40ugrc">components</ExternalLink

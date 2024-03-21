@@ -67,10 +67,10 @@ const page: IStandardPageMetadata = {
     <p>
       Applications like ArcGIS Pro and web browsers have a relatively small window and use a resolution of 96 dpi,
       resulting in requests that fit within the server's allowed size. However, exporting a 20" x 30" map at 300 dpi
-      results in a 6,000 x 9,000 pixel (54 megapixel) image. This far exceeds the server's limit, and will not return an
-      image. ArcGIS Pro dutifully finishes exporting the map instead of raising an error, resulting in a map without the
-      layer. You can try changing the Output Image Quality (Resample Ratio) setting to reduce the requested resolution,
-      but the output quality will suffer.
+      results in a 6,000 x 9,000 pixel (54 megapixel) image. This far exceeds the server's limit, and it will not return
+      an image. ArcGIS Pro dutifully finishes exporting the map instead of raising an error, resulting in a map without
+      the layer. You can try changing the Output Image Quality (Resample Ratio) setting to reduce the requested
+      resolution, but the output quality will suffer.
     </p>
     <p>
       In contrast, WMTS works by delivering a set of fixed-dimension tiles at the requested zoom level that cover the
