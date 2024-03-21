@@ -40,7 +40,12 @@ const page: IStandardPageMetadata = {
 ---
 
 <Layout {...page}>
-  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" class="bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300" />
+  <BreadCrumbs
+    path={Astro.url.pathname}
+    slot="crumbs"
+    class="bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300"
+    gradients="from-zinc-100 dark:from-zinc-900"
+  />
   <Fragment slot="popular-level-ones">
     <Section>
       <Image
