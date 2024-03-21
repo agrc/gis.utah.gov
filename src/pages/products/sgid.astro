@@ -16,8 +16,8 @@ import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
-import dataSharingPhoto from '@images/sgid/data-sharing-agreement.svg';
-import licensePhoto from '@images/sgid/license-disclaimer.svg';
+import cloudDataPhoto from '@images/sgid/cloud-data.svg';
+import documentationPhoto from '@images/sgid/documentation.svg';
 import openSgidPhoto from '@images/sgid/open-sgid.svg';
 import sgidIndexPhoto from '@images/sgid/sgid-index.svg';
 import sgidOpenDataPhoto from '@images/sgid/sgid-opendata.svg';
@@ -110,11 +110,11 @@ const page: IStandardPageMetadata = {
   <Section slot="more-resources" {...page.section[1]}>
     <GridForMoreResources>
       <CardWithSideImage title="SGID on ArcGIS" actionUrl="https://opendata.gis.utah.gov/">
-        <Image slot="image" src={licensePhoto} alt="man in front of warning sign" class="self-center" />
+        <Image slot="image" src={cloudDataPhoto} alt="A person connected to a cloud database" class="self-center" />
         Browse the SGID through ArcGIS Hub.
       </CardWithSideImage>
       <CardWithSideImage title="SGID Documentation" actionUrl="/documentation/sgid">
-        <Image slot="image" src={dataSharingPhoto} alt="people shaking hands" class="self-center" />
+        <Image slot="image" src={documentationPhoto} alt="A person reading books and papers" class="self-center" />
         Learn what SGID resource is the best for your project.
       </CardWithSideImage>
     </GridForMoreResources>
