@@ -1,0 +1,14 @@
+---
+type Props = {
+  id: number;
+};
+
+const { id } = Astro.props;
+---
+
+<div id={`podcast-${id}`}></div>
+
+<script
+  type="text/javascript"
+  charset="utf-8"
+  src={`https://www.buzzsprout.com/${id}.js?container_id=podcast-${id}&player=small&limit=1`}></script>
