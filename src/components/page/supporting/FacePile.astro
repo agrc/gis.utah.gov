@@ -2,10 +2,10 @@
 import { Image } from 'astro:assets';
 
 type Contributor = {
-  login: string;
-  id: number;
+  login?: string | undefined;
+  id?: number | undefined;
+  avatar_url?: string | undefined;
   contributions: number;
-  avatar_url?: string;
 };
 
 type Props = {
@@ -19,7 +19,8 @@ const { contributors } = Astro.props;
   <ul class="flex flex-wrap text-5xl">
     {
       contributors
-        .filter((account) => account.login.indexOf('[bot]') === -1)
+        .sort((a, b) => b.contributions - a.contributions)
+        .filter((account) => account.login?.indexOf('[bot]') === -1)
         .map((item) => (
           <li class="-mx-2 -mt-2">
             <a
@@ -27,8 +28,8 @@ const { contributors } = Astro.props;
               href={`https://github.com/${item.login}`}
             >
               <Image
-                alt={item.login}
-                title={item.login}
+                alt={item.login ?? 'GitHub User'}
+                title={item.login ?? 'GitHub User'}
                 class="size-full rounded-full border-2 border-transparent bg-primary-950 object-cover shadow-lg"
                 width="100"
                 height="100"
