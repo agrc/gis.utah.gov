@@ -7,6 +7,8 @@ const { id } = Astro.props;
 const url = `https://www.buzzsprout.com/${id}.js?container_id=podcast-${id}&player=small&limit=1`;
 ---
 
-<div id={`podcast-${id}`}></div>
+<div class="mx-auto w-full max-w-lg overflow-hidden rounded-lg border border-black/20 dark:border-white/20">
+  <div id={`podcast-${id}`}></div>
+</div>
 
 <script is:inline async src={url}></script>
