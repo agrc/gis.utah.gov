@@ -3,9 +3,9 @@ import Layout from '@layouts/FullWidth.astro';
 
 import { Pillar, type IStandardPageMetadata } from '@models/types';
 
-import Blockquote from '@components/page/Blockquote.astro';
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
+import MonoQuote from '@components/page/MonoQuote.astro';
 import NumberedList from '@components/page/NumberedList.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
@@ -40,7 +40,7 @@ const page: IStandardPageMetadata = {
       The following applies to all services and content created or hosted by the Utah Geospatial Resource Center (UGRC),
       including SGID data hosted or aggregated by UGRC.
     </p>
-    <p>There are two exceptions to this coverage:</p>
+    <p>There are two exceptions to our standard license and disclaimer:</p>
     <NumberedList>
       <li>
         The high-resolution imagery from Google and Hexagon, which have their own license and <a
@@ -84,24 +84,16 @@ const page: IStandardPageMetadata = {
       last updated date if it is available in the metadata or the date you accessed/downloaded the data if not. For example,
       this is what it could look like in an MLA-esque format:
     </p>
-    <Blockquote>
-      <ul>
-        <li>
-          State Geographic Information Database. <em>Utah Address Points</em>. (Feature class). Salt Lake City, UT: Utah
-          Geospatial Resource Center, July 2021. Geospatial point data. 27 July 2021.
-          https://gis.utah.gov/data/location/address-data/.
-        </li>
-      </ul>
-    </Blockquote>
+    <MonoQuote>
+      State Geographic Information Database. <em>Utah Address Points</em>. (Feature class). Salt Lake City, UT: Utah
+      Geospatial Resource Center, July 2021. Geospatial point data. 27 July 2021.
+      https://gis.utah.gov/data/location/address-data/.
+    </MonoQuote>
     <p>
       <strong>Maps</strong> and <strong>web apps</strong> should include a reference to both UGRC and the SGID in the & "Sources"
       attribution:
     </p>
-    <Blockquote>
-      <ul>
-        <li>Data Sources: ESRI, US Census Bureau, UGRC SGID (data modified), ...</li>
-      </ul>
-    </Blockquote>
+    <MonoQuote> Data Sources: ESRI, US Census Bureau, UGRC SGID (data modified), ... </MonoQuote>
     <p>
       Any <strong>data distributions</strong> (databases, web services, etc.) that contain SGID data must include credit
       to UGRC, a link to the <ExternalLink href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</ExternalLink> license,
@@ -110,14 +102,10 @@ const page: IStandardPageMetadata = {
       <a href="/documentation/policy/metadata">metadata policy</a>. The dataset's description could include the
       following line:
     </p>
-    <Blockquote>
-      <ul>
-        <li>
-          County boundary data derived from the UGRC SGID under the CC BY 4.0 license
-          (https://creativecommons.org/licenses/by/4.0/). Several new fields were calculated from US Census Bureau data.
-        </li>
-      </ul>
-    </Blockquote>
+    <MonoQuote>
+      County boundary data derived from the UGRC SGID under the CC BY 4.0 license
+      (https://creativecommons.org/licenses/by/4.0/). Several new fields were calculated from US Census Bureau data.
+    </MonoQuote>
     <p>
       If you are using <strong>logos</strong> as part of your attribution, you can download our current logos in <code
         >.png</code
@@ -129,25 +117,23 @@ const page: IStandardPageMetadata = {
       We created the following standard disclaimer for all hosted SGID data with input from the State Attorney General's
       office:
     </p>
-    <Blockquote>
+    <MonoQuote>
       <p>
         The data, including but not limited to geographic data, tabular data, and analytical data, are provided “as is”
         and “as available”, with no guarantees relating to the availability, completeness, or accuracy of data, and
         without any express or implied warranties.
-      </p>
-      <p>
-        These data are provided as a public service for informational purposes only. You are solely responsible for
-        obtaining the proper evaluation of a location and associated data by a qualified professional. UGRC reserves the
-        right to change, revise, suspend or discontinue published data and services without notice at any time.
-      </p>
-      <p>
+        <br /><br />
+        These data are provided as a public service for informational purposes only. You are solely responsible for obtaining
+        the proper evaluation of a location and associated data by a qualified professional. UGRC reserves the right to change,
+        revise, suspend or discontinue published data and services without notice at any time.
+        <br /><br />
         Neither UGRC nor the State of Utah are responsible for any misuse or misrepresentation of the data. UGRC and the
         State of Utah are not obligated to provide you with any maintenance or support. The user assumes the entire risk
-        as to the quality and performance of the data. You agree to hold the State of Utah harmless for any claims,
-        liability, costs, and damages relating to your use of the data. You agree that your sole remedy for any
-        dissatisfaction or claims is to discontinue use of the data.
+        as to the quality and performance of the data. You agree to hold the State of Utah harmless for any claims, liability,
+        costs, and damages relating to your use of the data. You agree that your sole remedy for any dissatisfaction or claims
+        is to discontinue use of the data.
       </p>
-    </Blockquote>
+    </MonoQuote>
     <p>
       We created this disclaimer with the hope that it could provide inspiration if you are looking for an example
       disclaimer. However, we are not lawyers. Please work with your own legal counsel before adopting a disclaimer. Any
