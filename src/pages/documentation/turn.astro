@@ -40,11 +40,17 @@ const page: IStandardPageMetadata = {
   <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
-    <Image slot="image" src={turnLogo} loading="eager" alt="turn logo" class="w-full max-w-[400px] rounded-2xl" />
+    <Image
+      slot="image"
+      src={turnLogo}
+      loading="eager"
+      alt="turn logo"
+      class="w-full max-w-[400px] rounded-2xl px-3 py-2 dark:bg-white/20"
+    />
     <p>
-      Our GPS network is a high-precision global navigation satellite system that provides real-time, high-accuracy GPS
-      positioning. This central system analyzes the input and adjusts and corrects the data to provide the most accurate
-      locations, usually down to centimeter level.
+      The Utah Reference Network (TURN) GPS network is a high-precision global navigation satellite system (GNSS) that
+      provides real-time, high-accuracy GPS positioning. This central system analyzes the input and adjusts and corrects
+      the data to provide the most accurate locations, usually down to centimeter level.
     </p>
   </Section>
   <Section {...page.section[1]}>
@@ -126,9 +132,9 @@ const page: IStandardPageMetadata = {
         different reference frames and/or datums, in a single step.
       </li>
       <li>
-        <ExternalLink href="https://geodesy.noaa.gov/OPUS-Projects/OpusProjects.shtml">OPUS Projects 5.2:</ExternalLink
-        >OPUS Projects provides simple management and processing tools for your survey projects involving multiple sites
-        and multiple occupations.
+        <ExternalLink href="https://geodesy.noaa.gov/OPUS-Projects/OpusProjects.shtml">OPUS Projects 5.2:</ExternalLink>
+        OPUS Projects provides simple management and processing tools for your survey projects involving multiple sites and
+        multiple occupations.
       </li>
     </BulletedList>
   </Section>
@@ -137,9 +143,9 @@ const page: IStandardPageMetadata = {
     <BulletedList>
       <li>
         <ExternalLink href="https://www.ucls.org/">Utah Council of Land Surveyors:</ExternalLink> The Utah Council of Land
-        Surveyors strives to establish common interests of all individuals engaged in the surveying profession; to define
-        a standard of care intent on protecting the public welfare while encouraging professional ethics and sound surveying
-        practices; to promote public awareness of professional land surveyors and their work; and to mentor the next generation
+        Surveyors strives to establish common interests of all individuals engaged in the surveying profession, define a
+        standard of care intent on protecting the public welfare while encouraging professional ethics and sound surveying
+        practices, promote public awareness of professional land surveyors and their work, and mentor the next generation
         of surveyors.
       </li>
       <li>
