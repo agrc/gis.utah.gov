@@ -10,9 +10,13 @@ interface Props {
 const { product, category, class: className } = Astro.props;
 ---
 
-<nav class:list={['pl-2', className]}>
-  <ol class="flex items-center">
-    <li class="hidden lg:flex">
+<nav class:list={['relative flex flex-col items-center justify-center gap-2 pl-2', className]}>
+  <div class="absolute left-0 z-10 h-full w-5 bg-gradient-to-r from-white to-transparent dark:from-primary-950"></div>
+  <div class="absolute right-0 z-10 h-full w-5 bg-gradient-to-l from-white to-transparent dark:from-primary-950"></div>
+  <ol
+    class="flex w-full gap-2 overflow-x-auto [-ms-overflow-style:-ms-autohiding-scrollbar] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+  >
+    <li class="relative flex shrink-0 items-center">
       <a
         class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200"
         href="/"
@@ -34,7 +38,7 @@ const { product, category, class: className } = Astro.props;
         <span class="sr-only">Home</span>
       </a>
     </li>
-    <li class="hidden items-center lg:flex">
+    <li class="relative flex shrink-0 items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -50,7 +54,7 @@ const { product, category, class: className } = Astro.props;
         href="/products/sgid">SGID</a
       >
     </li>
-    <li class="flex items-center">
+    <li class="relative flex shrink-0 items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -66,7 +70,7 @@ const { product, category, class: className } = Astro.props;
         href="/products/sgid/categories">SGID Categories</a
       >
     </li>
-    <li class="flex items-center">
+    <li class="relative flex shrink-0 items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -94,7 +98,7 @@ const { product, category, class: className } = Astro.props;
     </li>
     {
       product && (
-        <li class="flex items-center">
+        <li class="relative flex shrink-0 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
