@@ -19,9 +19,9 @@ const page: IStandardPageMetadata = {
   pageDescription: 'Information on how to get connected to the TURN and Nevada GPS networks.',
   pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
-    { title: 'Getting connected' },
-    { title: 'TURN network' },
-    { title: 'Nevada network' },
+    { title: 'Creating an account' },
+    { title: 'Connecting to the TURN network' },
+    { title: 'Connecting to the Nevada network' },
     { title: 'Support contacts' },
   ]),
 };
@@ -32,31 +32,33 @@ const page: IStandardPageMetadata = {
   <QuickLinks links={page.section} slot="quick-links" />
   <Section {...page.section[0]}>
     <p>
-      To create a new subscription or renew an existing subscription for Nevada GPS, you'll need to provide the
-      following information:
+      Connecting to our GPS networks requires a <ExternalLink href="https://id.utah.gov/">Utah ID</ExternalLink>, an
+      account in our bill pay system, and an active subscription. To create a new account, you'll need to register on
+      the <ExternalLink href="https://turngps-billpay.ugrc.utah.gov/">TURN GPS Bill Pay system</ExternalLink> and provide
+      the following information:
     </p>
     <BulletedList>
-      <li>the name of your organization (avoid punctuation);</li>
-      <li>a login/username;</li>
-      <li>a password (8 characters);</li>
-      <li>
-        a contact name, email address (once you add in your email address, it will be associated/connected with your
-        account and can't be used again), and phone number;
-      </li>
-      <li>your physical location/address; and</li>
-      <li>your mailing address.</li>
+      <li>The name of your organization (avoid punctuation)</li>
+      <li>A login/username</li>
+      <li>A password (8 character minimum)</li>
+      <li>A contact name</li>
+      <li>The email address you use with your UtahID</li>
+      <li>Your phone number</li>
+      <li>Your physical location/address</li>
+      <li>Your mailing address</li>
     </BulletedList>
     <p>
-      To pay for your subscription, visit the <ExternalLink href="https://turngps-billpay.ugrc.utah.gov/"
+      To activate or renew your subscription, visit the <ExternalLink href="https://turngps-billpay.ugrc.utah.gov/"
         >TURN GPS Bill Pay system</ExternalLink
-      > to access the online payment portal. The cost is $600 and gives you access to TURN GPS Network also. You'll need
-      a credit card to process your payment.
+      > to access the online payment portal. The cost is $600 and currently gives you access to both the TURN and Nevada
+      GPS Networks (though in the future, each region may require their own subscription). You'll need a credit card to process
+      your payment.
     </p>
     <BulletedList>
       <li>Select “Register” on the navigation pane on the left-hand side of the page.</li>
+      <li>Login with your UtahID in the upper right-hand corner of the page.</li>
       <li>
-        Click the “New Registration” button. (Note: Both new subscriptions and renewed subscriptions for Nevada GPS are
-        considered “new” to the TURN system.)
+        Use the Subscriptions tab to view your subscriptions and select the "pending" subscription you'd like to renew.
       </li>
       <li>Review the Terms and Conditions, and then click “I agree” to continue.</li>
       <li>
@@ -68,9 +70,7 @@ const page: IStandardPageMetadata = {
     <p>
       At this point, the system will direct you to the payment page. Make sure that you have your payment information
       readily available, as the system will automatically time out after a while, requiring you to start over with a
-      whole new login/username, password, and email. If the system keeps coming back with the password field empty, the
-      system may think that your email is already in use and, therefore, will not allow you to move forward. Each
-      subscription needs a unique email address (even if it is a made-up one [e.g., gps_login@BobsBigBurger.com]).
+      whole new login/username, password, and email.
     </p>
     <p>
       After you have created/renewed and paid for your subscription, you will receive an email with a receipt. It
@@ -138,16 +138,28 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[2]}>
     <p>
       The Nevada GPS Network (formerly Washoe County GPS Network) is now being managed by the State of Utah. The Nevada
-      GPS Network provides users with real time corrections and data for post processing. The Coordinate Reference Frame
-      for this network is NAD83/94 (HARN). The Latitude, Longitude and Ellipsoidal Height of each reference station was
-      calculated by processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service
-      (OPUS) Projects application.
+      GPS Network provides users in the Reno area with real time corrections and data for post processing (users in the
+      Las Vegas area can connect to the TURN network instead). The Coordinate Reference Frame for this network is
+      NAD83/94 (HARN). The Latitude, Longitude and Ellipsoidal Height of each reference station was calculated by
+      processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects
+      application.
     </p>
     <p>
-      With an activated subscription, set your GPS unit's VRS connection address to <strong>168.179.231.11</strong> and <strong
-        >port 2102.</strong
-      > Enter your new device-specific username and password.
+      Once you have an activated subscription, we have two different connections with different Coordinate Reference
+      Frames to choose from:
     </p>
+    <BulletedList>
+      <li>
+        <strong>NAD83/94 (HARN)</strong>: set your GPS unit's VRS connection address to <strong>168.179.231.11</strong> and
+        <strong>port 2102</strong> and then enter your new device-specific username and password.
+      </li>
+      <li>
+        <strong> NAD83(2011)(EPOCH:2010.0000.)</strong>: set your GPS unit's VRS connection address to <strong
+          >165.239.144.7</strong
+        > and
+        <strong>port 2101</strong> and then enter your new device-specific username and password.
+      </li>
+    </BulletedList>
     <h4>Connections from Source Table</h4>
     <p>For Trimble units we have three different connections:</p>
     <BulletedList>
