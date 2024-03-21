@@ -23,7 +23,7 @@ import samplePhoto from '@images/sgid/base-maps/terrain-base-map.png';
 
 export const metadata: IMetadata = {
   pageTitle: 'Utah Terrain Base Map',
-  pageDescription: `A base map of hillshade, highways and streets, parks, forests, water, etc.`,
+  pageDescription: `A base map of landforms, vegetation, highways, municipalities, and other natural and manmade features.`,
   stewards: ['UGRC'],
   type: ProductType.DISCOVER_SERVICE,
   category: SgidCategory.BASE_MAPS,
@@ -47,8 +47,10 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      The Terrain base map highlights the natural form of the land. It features mountain peak elevation labels, contour
-      lines, and locations of ski resort locations and other places of interest.
+      The Terrain base map highlights natural land forms and vegetation. It uses land cover polygons in conjunction with
+      a digital elevation model (DEM) to display the different regions, elevation, and physiography of the state. A
+      unique 2 layer hillshade and 50 foot contours highlight landforms and the shadows they cast. Other unique layers
+      include water related land use agricultural areas and 2016 Great Salt Lake level.
     </p>
     <Image
       src={samplePhoto}
