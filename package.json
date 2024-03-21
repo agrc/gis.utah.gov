@@ -26,6 +26,7 @@
     "@astro-github-elements/clipboard-copy": "^0.0.4",
     "@astrojs/check": "^0.5.9",
     "@astrojs/mdx": "^2.2.1",
+    "@astrojs/partytown": "^2.0.4",
     "@astrojs/react": "^3.1.0",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.1",
@@ -71,8 +72,5 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2",
     "unist-util-remove": "^4.0.0"
-  },
-  "dependencies": {
-    "@astrojs/partytown": "^2.0.4"
   }
 }
