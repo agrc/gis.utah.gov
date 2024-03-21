@@ -1,0 +1,41 @@
+---
+import { Pillar, type IStandardPageMetadata } from '@models/types';
+
+import Layout from '@layouts/FullWidth.astro';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import ContributorList from '@components/page/ContributorList.astro';
+
+import Section from '@components/page/Section.astro';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  pageTitle: 'The community',
+  pageDescription: 'A list of everyone who has committed to our website making it the valuable resources that it is.',
+  pillar: Pillar.COLLABORATION,
+  section: stripeSections([
+    {
+      title: 'It takes a village',
+      actionUrl: 'https://github.com/agrc/gis.utah.gov',
+      actionText: 'Contribute today',
+    },
+    { title: 'Our collaborators' },
+  ]),
+};
+---
+
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
+  <Section {...page.section[0]}>
+    <p>
+      We are incredibly grateful to everyone who has participated in the creation of this website. Your collaboration
+      has been instrumental in making our website and the SGID a valuable resource for Utah.
+    </p>
+  </Section>
+  <Section {...page.section[1]}>
+    <div class="mx-auto mt-4 max-w-lg">
+      <ContributorList githubRepo="gis.utah.gov" />
+    </div>
+  </Section>
+</Layout>

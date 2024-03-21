@@ -1,0 +1,15 @@
+---
+import FacePile from '@components/page/supporting/FacePile.astro';
+
+import { getAllContributors } from '@utils/github';
+
+type Props = {
+  githubRepo?: string;
+};
+
+const { githubRepo = 'gis.utah.gov' } = Astro.props;
+
+const contributors = await getAllContributors(githubRepo);
+---
+
+<FacePile {contributors} />

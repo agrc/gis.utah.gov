@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+
+type Contributor = {
+  login: string;
+  id: number;
+  contributions: number;
+  avatar_url?: string;
+};
+
+type Props = {
+  contributors: Contributor[];
+};
+
+const { contributors } = Astro.props;
+---
+
+<div>
+  <ul class="flex flex-wrap text-5xl">
+    {
+      contributors.map((item) => (
+        <li class="-mx-2 -mt-2">
+          <a
+            class="custom-style block size-[100px] rounded-full focus:outline-none focus:ring-4 focus:ring-accent"
+            href={`https://github.com/${item.login}`}
+          >
+            <Image
+              alt={item.login}
+              title={item.login}
+              class="size-full rounded-full border-2 border-transparent bg-primary-950 object-cover shadow-lg"
+              width="100"
+              height="100"
+              src={`https://avatars.githubusercontent.com/u/${item.id}?s=100`}
+            />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

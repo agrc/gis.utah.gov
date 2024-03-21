@@ -29,3 +29,37 @@ export const getGithubReleases = async (repo: string) => {
 
   return releaseMetadata;
 };
+
+
+export const getAllContributors = async (repo: string) => {
+  const contributors = await recursiveFetch(repo);
+
+  return contributors;
+};
+
+const recursiveFetch = async (repo: string, page = 1) => {
+  const pageSize = 100;
+  try {
+    if (!import.meta.env.PROD) {
+      const response = await octokit.request('GET /repos/{owner}/{repo}/contributors', {
+        owner: 'agrc',
+        repo,
+        per_page: pageSize,
+        page,
+      });
+
+      const data = response.data;
+
+      if (data.length === pageSize) {
+        const rest = await recursiveFetch(repo, page + 1);
+        data.push(...rest);
+      }
+
+      return data;
+    }
+  } catch (e) {
+    return [];
+  }
+
+  return [];
+};

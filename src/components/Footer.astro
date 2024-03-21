@@ -141,6 +141,13 @@ const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
         </li>
         <li>
           <a
+            href={`/collaboration/community/contributors`}
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >Contributors</a
+          >
+        </li>
+        <li>
+          <a
             href="https://github.com/agrc/gis.utah.gov/issues/new"
             class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
             >Report an issue</a
