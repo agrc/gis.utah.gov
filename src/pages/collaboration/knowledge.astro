@@ -7,6 +7,7 @@ import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import BulletedList from '@components/page/BulletedList.astro';
 import ButtonLink from '@components/page/ButtonLink.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
+import Podcast from '@components/page/Podcast.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
@@ -83,8 +84,9 @@ const page: IStandardPageMetadata = {
       Occasionally we interview our colleagues and peers about their unique and impactful work, and the intersection of
       geospatial concepts and techniques within that work. Check out the <ExternalLink
         href="https://utahgeospatialpodcast.buzzsprout.com/">Utah Geospatial Podcast</ExternalLink
-      >.
+      > or listen to the latest episode below.
     </p>
+    <Podcast id={1737415} />
     <p>
       We also have a quarterly <ExternalLink href="https://s.utah.gov/ugrc-newsletter">newsletter</ExternalLink> that you
       can subscribe to where we highlight our best content from the last three months.
