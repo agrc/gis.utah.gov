@@ -21,15 +21,15 @@ import turnLogo from '@images/turn/turn-logo.svg';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
-  pageTitle: 'TURN',
+  pageTitle: 'TURN GPS',
   pageDescription:
-    'The Utah Reference Network (TURN) is a high-precision GPS network that provides real-time, high-accuracy GPS positioning.',
+    'The Utah Reference Network (TURN) GPS is a high-precision GPS network that provides real-time, high-accuracy GPS positioning.',
   pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     {},
     { title: 'GNSS network' },
     { title: 'Getting connected', actionText: 'Connect now', actionUrl: '/documentation/turn/connecting' },
-    { title: 'Troubleshooting TURN' },
+    { title: 'Troubleshooting TURN GPS' },
     { title: 'Resources' },
     { title: 'Organizations' },
   ]),
@@ -48,9 +48,9 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl px-3 py-2 dark:bg-white/20"
     />
     <p>
-      The Utah Reference Network (TURN) GPS network is a high-precision global navigation satellite system (GNSS) that
-      provides real-time, high-accuracy GPS positioning. This central system analyzes the input and adjusts and corrects
-      the data to provide the most accurate locations, usually down to centimeter level.
+      The Utah Reference Network (TURN) GPS is a high-precision global navigation satellite system (GNSS) that provides
+      real-time, high-accuracy GPS positioning. This central system analyzes the input and adjusts and corrects the data
+      to provide the most accurate locations, usually down to centimeter level.
     </p>
   </Section>
   <Section {...page.section[1]}>
@@ -70,14 +70,14 @@ const page: IStandardPageMetadata = {
       generated data is sent from the GPS receiver to the GPS reference network through a wireless connection using the
       Networked Transport of RTCM via Internet Protocol (NTRIP).
     </p>
-    <p>Our TURN GPS Network supports a variety of devices from survey units, to drones and self-driving cars.</p>
+    <p>Our TURN GPS network supports a variety of devices from survey units, to drones and self-driving cars.</p>
   </Section>
   <Section {...page.section[2]}>
     <Image slot="image" src={rocket} alt="a rocket launching" class="w-full max-w-[400px]" />
     <p>
-      Once you're ready to get connected to the TURN or Reno networks, the first step will be to create your new
+      Once you're ready to get connected to the TURN or Nevada GPS networks, the first step will be to create your new
       account. We have provided a step-by-step guide to getting started with our network, as well as essential resources
-      for getting the most out of TURN.
+      for getting the most out of TURN GPS.
     </p>
   </Section>
   <Section {...page.section[3]}>
@@ -89,16 +89,16 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
-      If your having trouble connecting to the TURN Network on your device, first check to make sure that you have
+      If your having trouble connecting to the TURN GPS network on your device, first check to make sure that you have
       entered the correct username and password. It is important to note that subscriptions can only be used on one
       device at a time. If someone else is logged into your account, you will not be able to use it until they have
       logged out.
     </p>
     <p>
       If you're still having difficulties, you'll want to double-check to confirm that you're using the correct IP
-      address and port number. For the TURN network, you'll want to be using: <strong>165.239.144.5</strong> with port <strong
-        >2101</strong
-      >. For the Reno network, you'll want to be using: <strong>168.179.231.11</strong> with port <strong>2102</strong>.
+      address and port number. For the TURN GPS network, you'll want to be using: <strong>165.239.144.5</strong> with port
+      <strong>2101</strong>. For the Nevada GPS network, you'll want to be using: <strong>168.179.231.11</strong> with port
+      <strong>2102</strong>.
     </p>
     <p>
       Cellular data is needed in order to connect to the network. For more information about coverage, view the <ExternalLink

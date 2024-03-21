@@ -20,8 +20,8 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     { title: 'Managing your subscriptions' },
-    { title: 'Connecting to the TURN network' },
-    { title: 'Connecting to the Nevada network' },
+    { title: 'Connecting to the TURN GPS network' },
+    { title: 'Connecting to the Nevada GPS network' },
     { title: 'Mount point formats' },
     { title: 'Rinex file downloads' },
     { title: 'Support contacts' },
@@ -38,7 +38,7 @@ const page: IStandardPageMetadata = {
       one or more subscriptions on the <ExternalLink href="https://turngps-billpay.ugrc.utah.gov/"
         >TURN GPS Bill Pay system</ExternalLink
       >. Each subscription costs $600 for one year and currently gives you access to both the TURN and Nevada GPS
-      Networks (though in the future, each region may require their own subscription). The system only accepts payments
+      networks (though in the future, each region may require their own subscription). The system only accepts payments
       by credit card. Your subscriptions are manged in the <kbd>Subscriptions</kbd> tab of the Bill Pay site.
     </p>
     <p>
@@ -77,8 +77,8 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[1]}>
     <p>
-      The TURN GPS Network serves Utah and some areas of Idaho, Wyoming, and southern Nevada with over 100 permanently
-      located GPS receivers that provides both real time corrections and data for post processing. The TURN Network runs
+      The TURN GPS network serves Utah and some areas of Idaho, Wyoming, and southern Nevada with over 100 permanently
+      located GPS receivers that provides both real time corrections and data for post processing. The TURN network runs
       on the Trimble Pivot Platform.
     </p>
     <BulletedList>
@@ -122,12 +122,14 @@ const page: IStandardPageMetadata = {
     <p>
       The Nevada GPS Network (formerly Washoe County GPS Network) is now being managed by the State of Utah. The Nevada
       GPS Network provides users in the Reno area with real time corrections and data for post processing (users in the
-      Las Vegas area can connect to the TURN network instead). The Coordinate Reference Frame for this network is
+      Las Vegas area can connect to the TURN GPS network instead). The Coordinate Reference Frame for this network is
       NAD83/94 (HARN). The Latitude, Longitude and Ellipsoidal Height of each reference station was calculated by
       processing 24 hour files using the National Geodetic Survey (NGS) Online Positioning User Service (OPUS) Projects
       application.
     </p>
-    <p>The Nevada network has two different connections with different Coordinate Reference Frames to choose from:</p>
+    <p>
+      The Nevada GPS Network has two different connections with different Coordinate Reference Frames to choose from:
+    </p>
     <BulletedList>
       <li>
         <strong>NAD83/94 (HARN)</strong>: set your GPS unit's VRS connection address to <strong>168.179.231.11</strong> and
@@ -174,7 +176,7 @@ const page: IStandardPageMetadata = {
     <p>
       If you have questions or require help contact the <Contacts
         contactKey="turn"
-        subject="connecting to TURN"
+        subject="Connecting to TURN"
         inline
       />.
     </p>

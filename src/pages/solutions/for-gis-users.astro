@@ -25,11 +25,11 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.SOLUTIONS,
   section: stripeSections([
     {},
-    { title: 'The SGID' },
-    { title: 'UGRC API' },
-    { title: 'Address geocoding' },
-    { title: 'Base maps and imagery' },
-    { title: 'GPS location services' },
+    { title: 'The SGID', actionUrl: '/product/sgid' },
+    { title: 'UGRC API', actionUrl: '/product/api' },
+    { title: 'Address geocoding', actionUrl: '/product/sgid/address/api-client' },
+    { title: 'Base maps and imagery', actionUrl: '/product/discover' },
+    { title: 'GPS location services', actionUrl: '/product/turn' },
   ]),
 };
 ---
@@ -89,7 +89,7 @@ const page: IStandardPageMetadata = {
     <p>
       UGRC's address locators are a quick and simple way to convert tabular address data into geospatial data that can
       be mapped! Our address locator is one of the most popular products we offer. Depending on your needs, there are a
-      variety of ways to interact with it including through the Web API, an installable desktop application (macOS and
+      variety of ways to interact with it including through the UGRC API, an installable desktop application (macOS and
       Windows), or through the locator tab in ArcGIS Pro. Our locator accepts a variety of input values including civic
       addresses and latitude and longitude coordinates. Depending on the locator style you choose, users can pass in a
       single address or a list of addresses. You can learn more, including how to access them, on our address locator
