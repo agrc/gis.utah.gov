@@ -1,5 +1,5 @@
+import { Bars3Icon, ChevronDownIcon } from '@heroicons/react/16/solid';
 import * as Dialog from '@radix-ui/react-dialog';
-import { CaretDownIcon, HamburgerMenuIcon } from '@radix-ui/react-icons';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import classNames from 'classnames';
 import React from 'react';
@@ -166,7 +166,7 @@ export const SmallMenu = ({ children, currentUri }) => (
             className="ml-2 rounded-full p-1 outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary"
             aria-label="open the main menu"
           >
-            <HamburgerMenuIcon className="size-6 text-zinc-800 focus:outline-none dark:text-zinc-50" />
+            <Bars3Icon className="size-6 text-zinc-800 focus:outline-none dark:text-zinc-50" />
           </button>
         </Dialog.Trigger>
         <span className="mr-2">{children}</span>
@@ -329,8 +329,8 @@ const DropDownMenu = ({ to, children, currentUri }) => (
     )}
   >
     {children}{' '}
-    <CaretDownIcon
-      className="relative top-px text-zinc-600 transition-transform duration-300 ease-in group-data-[state=open]:-rotate-180 dark:text-zinc-50"
+    <ChevronDownIcon
+      className="relative top-px ml-1 size-4 text-zinc-200 transition-transform duration-300 ease-in group-data-[state=open]:-rotate-180 dark:text-zinc-50"
       aria-hidden
     />
   </NavigationMenu.Trigger>
@@ -347,7 +347,7 @@ const MobileDropDownMenu = ({ href, children, currentUri }) => {
       )}
     >
       {children}{' '}
-      <CaretDownIcon
+      <ChevronDownIcon
         className="relative top-px text-zinc-600 transition-transform duration-300 ease-in group-data-[state=open]:-rotate-180 dark:text-zinc-50"
         aria-hidden
       />
