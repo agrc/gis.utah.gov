@@ -49,18 +49,19 @@ We recommend staff follow the guidelines on the [Contributing Guide](./CONTRIBUT
 
 ## Technologies used in the website
 
-The UGRC Website is built upon [React][] and [Astro][], the UI Rendering Engine and the Framework that builds the Website;
+The UGRC Website is built upon [Astro][], the Framework that builds the Website, and [React][] the UI Rendering Engine.
 
 The Website also uses several other Open Source libraries (not limited to) listed below:
 
 - Styling is done with [tailwindcss][].
-  - Tailwind is used as our CSS Framework and the Foundation of our Design System
-- [Hero Icons](https://heroicons.com/) is an SVG Icon Library used within our Codebase
-- [Radix UI][] is a collection of customizable UI components
-- [Shiki][] is a Syntax Highlighter used for our Code boxes
+  - Tailwind is used as our CSS Framework and the Foundation of our Design System.
+- [Hero Icons](https://heroicons.com/) is an SVG Icon Library used within our Codebase.
+- [Radix UI][] is a collection of customizable and accessible UI components.
+- [Shiki][] is a Syntax Highlighter used for our Code boxes.
   - The syntax highlighting is done within the processing of the Markdown files with the MDX compiler as a Rehype plugin.
-- [MDX][] and Markdown are used for structuring the Content of the Website
-- We use [Rehype](https://github.com/rehypejs/rehype) and [Remark](https://github.com/remarkjs/remark) to extend MDX functionality
+- [MDX][] and Markdown are used for structuring the content of the website.
+- We use [Rehype](https://github.com/rehypejs/rehype) and [Remark](https://github.com/remarkjs/remark) to extend MDX functionality.
+- Our styling for the website is based on the [Utah Design System](https://designsystem.utah.gov/).
 
 ## Code Editing
 
@@ -79,7 +80,7 @@ The Website also uses several other Open Source libraries (not limited to) liste
   - All content is in Markdown or MDX.
   - The top of each Markdown file is a YAML (Frontmatter) block for page-specific information passed to various templates.
 - Typescript import aliases are defined in `/tsconfig.json`
-- Multi-Purpose javascript functions are defined on `/src/utilities`
+- Multi-Purpose JavaScript functions are defined on `/src/utilities`
 - Multi-Purpose TypeScript definitions are defined on `/src/types`
 - Centralized data collections are defined in  `/src/data`
 - Multi-Purpose Scripts are stored within `/src/scripts`
@@ -137,7 +138,7 @@ See the [Translation Guidelines](./TRANSLATION.md) for the website translation p
 The UGRC Website uses [Astro][] as a Frontend Library to develop the Website.
 Astro allows us to create user interfaces with a modern take on Web Development falling back to [React][] if necessary using dynamic islands.
 
-If you're unfamiliar with React or Web Development in general, we encourage a read before taking on complex issues and tasks as this repository is **not for educational purposes** and we expect you to have a basic understanding of the technologies used.
+If you're unfamiliar with Astro, React, or Web Development in general, we encourage you to learn these technologies on your own before taking on complex issues and tasks. This repository is **not for educational purposes** and we expect you to have a basic understanding of the technologies used.
 
 We also recommend getting familiar with technologies such as [Astro][], [MDX][], and [tailwindcss][].
 
@@ -203,6 +204,8 @@ This file is responsible for defining the rewrite rules for the Website when dep
 It is used for defining redirects. (Such as Internal Redirects and External ones).
 
 Redirect operations change the original URL to a new one.
+
+Please run [/src/scripts/format-redirect.mjs](./src/scripts/format-redirect.mjs) after making changes to this file to preserve the formatting.
 
 #### What is `/public/_headers`?
 

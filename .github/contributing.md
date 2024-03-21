@@ -55,7 +55,7 @@ for getting things done and landing your contribution.
    npm start # starts a preview of your local changes
    ```
 
-7. Perform your changes. In case you're unfamiliar with the structure of this repository, we recommend a read on the [Collaborator Guide](./collaborating.md)
+7. Perform your changes. In case you're unfamiliar with the structure of this repository, we recommend that you review the [Collaborator Guide](.github/collaborating.md).
 
 8. Perform a merge to sync your current branch with the upstream branch.
 
@@ -85,11 +85,11 @@ for getting things done and landing your contribution.
 11. Create a Pull Request.
 
 > [!NOTE]\
-> We ask for PR authors to avoid to rebase/update their PRs with the base branch (`main`) unnecessarily.
+> We ask that PR authors avoid rebasing/updating their PRs with the base branch (`main`) unnecessarily.
 > We use [GitHub Merge Queues](https://github.blog/2023-07-12-github-merge-queue-is-generally-available/)
 > which means that before merge the PRs get automatically updated and checked against the latest changes on the base branch.
 >
-> This also reduces the amount of times we need to run our CI checks, as every new push requires freshly new CI-checks.
+> This also reduces the amount of times we need to run our CI checks, as every new push requires fresh CI-checks.
 
 ### CLI Commands
 
@@ -131,7 +131,7 @@ This policy governs how contributions should land within this repository. The li
 
 ### Before merging
 
-We recommend a read on our [Collaborator Guide](collaborating.md#accepting-modifications) for in-depth details on how we accept contributions into this repository.
+We recommend a review of our [Collaborator Guide](collaborating.md#accepting-modifications) for in-depth details on how we accept contributions into this repository.
 The list below describes some merging and approval rules adopted in this repository.
 
 - Pull Requests must be open for at least 48 hours (Or 72 hours if the PR was authored on the weekend).
