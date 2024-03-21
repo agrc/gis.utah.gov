@@ -16,6 +16,7 @@ import libraryPhoto from '@images/solutions/library.svg';
 import locationPhoto from '@images/solutions/location2.svg';
 import dispatchCenterPhoto from '@images/solutions/monitor-station.svg';
 
+import BulletedList from '@components/page/BulletedList.astro';
 import Contacts from '@components/page/Contacts.astro';
 import { stripeSections } from '@utils/page';
 
@@ -109,8 +110,8 @@ const page: IStandardPageMetadata = {
       precise <a href="/products/sgid/location/address-points">address points</a>, <a
         href="/products/sgid/transportation/road-centerlines">road centerlines</a
       >, and other crucial infrastructure layers like law enforcement locations (<a
-        href="/products/sgid//society/law-enforcement-facilities">police</a
-      > and <a href="/products/sgid//society/fire-stations">fire</a> stations), <a
+        href="/products/sgid/society/law-enforcement-facilities">police</a
+      > and <a href="/products/sgid/society/fire-stations">fire</a> stations), <a
         href="/products/sgid/health/healthcare-facilities">hospitals</a
       >, and <a href="/products/sgid/society/open-source-places">common places</a>. This granular data allows emergency
       dispatchers to pinpoint caller location with unmatched accuracy, ensuring first responders are directed to the
@@ -145,7 +146,7 @@ const page: IStandardPageMetadata = {
       > (NENA) standard. It includes the essential layers like road centerlines, address points, and PSAP, fire, and law
       boundaries. Additionally, the dataset incorporates many recommended layers, such as cell towers, county boundaries,
       hydrology lines (streams and lakes), incorporated municipalities, mile markers, railroads, state boundaries, and unincorporated
-      communities. The primary source for the NG911 Dataset is the SGID.
+      communities. The primary source for the NG911 Dataset is the <a href="/products/sgid">SGID</a>.
     </p>
     <p>
       The NG911 Dataset is a great starting point for PSAPs wanting to explore what UGRC has to offer. It is updated
@@ -159,6 +160,33 @@ const page: IStandardPageMetadata = {
       alt="people in a library looking at resources"
       class="w-full max-w-[400px]"
     />
-    <p>...</p>
+    <p>
+      Navigating the ever-changing world of 911 data standards and best practices can be a challenge. Finding the right
+      resources amidst complex requirements can feel overwhelming. That's where the UGRC comes in! We are dedicated to
+      staying informed, and here are a few of the resources and workgroups that we have found invaluable.
+    </p>
+    <BulletedList>
+      <li>
+        <ExternalLink href="https://nsgic.org/initiatives/next-generation-9-1-1/">NSGIC NG911 Workgroup</ExternalLink>
+      </li>
+      <li><ExternalLink href="https://www.nena.org/page/ng911_ice">NENA NG911 Standards and Events</ExternalLink></li>
+      <li>
+        <ExternalLink href="https://www.apcointl.org/technology/next-generation-9-1-1/"
+          >APCO NG911 Workgroup</ExternalLink
+        >
+      </li>
+      <li><ExternalLink href="">UCA 911 Division</ExternalLink></li>
+    </BulletedList>
+    <p>
+      We also encourage you browse the <a href="/products/sgid">SGID data catalog</a>, particularly in the <a
+        href="/products/sgid/location/">Location</a
+      >, <a href="/products/sgid/transportation/">Transportation</a>, <a href="/products/sgid/society/">Society</a>, and <a
+        href="/products/sgid/health/">Health</a
+      > catagories
+    </p>
+    <p>
+      Please reach out <Contacts contactKey="emergencyzones" subject="NG911 solutions inquiry" inline />
+      with questions or to learn more.
+    </p>
   </Section>
 </Layout>
