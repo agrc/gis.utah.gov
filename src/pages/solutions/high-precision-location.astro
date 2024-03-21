@@ -15,6 +15,8 @@ import dronePhoto from '@images/solutions/drone.svg';
 import monitorPhoto from '@images/solutions/monitor.svg';
 import weatherPhoto from '@images/solutions/weather.svg';
 
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
@@ -97,5 +99,17 @@ const page: IStandardPageMetadata = {
       Real-time measurements can help improve weather predictions, severe weather monitoring, atmospheric modeling, and
       much more!
     </p>
+    <p>
+      Watch this interesting video of GPS base stations capturing the intensity of Japan's 2011 earthquake, revealing
+      the horizontal displacement by up to 400 centimeters on the left, and a vertical shift of 75 centimeters on the
+      right.
+    </p>
+    <div class="mx-auto w-full max-w-4xl">
+      <YouTube
+        class="aspect-video max-w-full rounded-lg border-2 border-black shadow-xl"
+        id="X3WI9nKsA2E"
+        playlabel="GPS base stations during Japan earthquake"
+      />
+    </div>
   </Section>
 </Layout>
