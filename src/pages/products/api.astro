@@ -31,6 +31,7 @@ const page: IStandardPageMetadata = {
   pageDescription: 'The UGRC API is a free service that allows you to geocode and search SGID data.',
   pillar: Pillar.PRODUCTS,
   section: stripeSections([
+    {},
     { title: 'Popular resources', titlePosition: 'center' },
     { title: 'More resources', titlePosition: 'center' },
     { title: 'You might also like', titlePosition: 'center' },
@@ -84,7 +85,7 @@ const page: IStandardPageMetadata = {
     </Section>
   </Fragment>
 
-  <Section slot="popular-resources" {...page.section[0]}>
+  <Section slot="popular-resources" {...page.section[1]}>
     <GridForPopularResources>
       <CardWithPopularLink
         title="Sample Code"
@@ -105,7 +106,7 @@ const page: IStandardPageMetadata = {
     </GridForPopularResources>
   </Section>
 
-  <Section slot="more-resources" {...page.section[1]}>
+  <Section slot="more-resources" {...page.section[2]}>
     <GridForMoreResources>
       <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
         <Image slot="image" src={privacyPhoto} alt="a computer with a lock on the screen" class="self-center" />
@@ -123,7 +124,7 @@ const page: IStandardPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section slot="you-might-also-like" {...page.section[2]}>
+  <Section slot="you-might-also-like" {...page.section[3]}>
     <GridForYouMightLike>
       <CardWithSmallLink title="layer-selector" href="https://www.npmjs.com/package/@ugrc/layer-selector">
         A react component for adding a quick base map selector with a happy path for using UGRC's Discover base maps.
