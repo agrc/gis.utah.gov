@@ -4,18 +4,19 @@ import Layout from '@layouts/FullWidth.astro';
 import { Pillar, type IStandardPageMetadata } from '@models/types';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import BulletedList from '@components/page/BulletedList.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
-import making911CallPhoto from '@images/solutions/emergency-call.svg';
-import ambulanceHospitalPhoto from '@images/solutions/hospital-building.svg';
-import peopleInLibraryPhoto from '@images/solutions/library.svg';
-import manMapCityPhoto from '@images/solutions/location-man-map.svg';
-import dispatchCenterPhoto from '@images/solutions/monitor-station.svg';
 import { Image } from 'astro:assets';
 
-import BulletedList from '@components/page/BulletedList.astro';
+import emergencyPhoto from '@images/solutions/911.svg';
+import hospitalPhoto from '@images/solutions/hospital.svg';
+import libraryPhoto from '@images/solutions/library.svg';
+import locationPhoto from '@images/solutions/location2.svg';
+import dispatchCenterPhoto from '@images/solutions/monitor-station.svg';
+
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
@@ -43,7 +44,7 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[0]}>
     <Image
       slot="image"
-      src={making911CallPhoto}
+      src={emergencyPhoto}
       loading="eager"
       alt="a person making a 911 call"
       class="w-full max-w-[400px] rounded-2xl"
@@ -67,7 +68,7 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[1]}>
     <Image
       slot="image"
-      src={ambulanceHospitalPhoto}
+      src={hospitalPhoto}
       alt="an ambulance parked in front of a hospital"
       class="w-full max-w-[400px]"
     />
@@ -92,7 +93,7 @@ const page: IStandardPageMetadata = {
     </BulletedList>
   </Section>
   <Section {...page.section[2]}>
-    <Image slot="image" src={manMapCityPhoto} alt="a man holding a map in the city" class="w-full max-w-[400px]" />
+    <Image slot="image" src={locationPhoto} alt="a man holding a map in the city" class="w-full max-w-[400px]" />
     <p>lorem</p>
   </Section>
   <Section {...page.section[3]}>
@@ -124,7 +125,7 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[4]}>
     <Image
       slot="image"
-      src={peopleInLibraryPhoto}
+      src={libraryPhoto}
       alt="people in a library looking at resources"
       class="w-full max-w-[400px]"
     />
