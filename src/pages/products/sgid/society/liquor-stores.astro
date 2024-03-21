@@ -50,7 +50,7 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -65,20 +65,16 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Golf courses" href="/products/sgid/recreation/golf-courses" style="secondary"
+      <CardWithSmallLink title="Golf courses" href="/products/sgid/recreation/golf-courses"
         >Explore Utah golf course locations.</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="Health care facilities"
-        href="/products/sgid/health/healthcare-facilities/"
-        style="secondary">Hospitals and other health care locations.</CardWithSmallLink
+      <CardWithSmallLink title="Health care facilities" href="/products/sgid/health/healthcare-facilities/"
+        >Hospitals and other health care locations.</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="Law enforcement"
-        href="/products/sgid/society/law-enforcement-facilities/"
-        style="secondary">Law enforcement office locations.</CardWithSmallLink
+      <CardWithSmallLink title="Law enforcement" href="/products/sgid/society/law-enforcement-facilities/"
+        >Law enforcement office locations.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Ski areas" href="/products/sgid/recreation/ski-areas/" style="secondary"
+      <CardWithSmallLink title="Ski areas" href="/products/sgid/recreation/ski-areas/"
         >Ski area locations.</CardWithSmallLink
       >
     </GridForYouMightLike>

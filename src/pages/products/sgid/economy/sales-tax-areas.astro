@@ -61,7 +61,7 @@ const page: IPageMetadata = {
     <Contacts contactKey="tax" />
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -74,20 +74,16 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Tax Areas" href="/products/sgid/economy/taxing-areas" style="secondary"
+      <CardWithSmallLink title="Tax Areas" href="/products/sgid/economy/taxing-areas"
         >Tax collection areas.</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="Transit Tax Areas"
-        href="/products/sgid/economy/transit-special-tax-areas"
-        style="secondary">Transit special tax areas.</CardWithSmallLink
+      <CardWithSmallLink title="Transit Tax Areas" href="/products/sgid/economy/transit-special-tax-areas"
+        >Transit special tax areas.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Tax Entities" href="/products/sgid/economy/tax-entities" style="secondary"
+      <CardWithSmallLink title="Tax Entities" href="/products/sgid/economy/tax-entities"
         >Tax entities in Utah.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Economy" href="/products/sgid/economy" style="secondary"
-        >SGID category.</CardWithSmallLink
-      >
+      <CardWithSmallLink title="Economy" href="/products/sgid/economy">SGID category.</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>

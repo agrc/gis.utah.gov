@@ -16,7 +16,10 @@ const { title, snippet, slug, date, includeYear, estimatedReadingTime } = Astro.
 ---
 
 <div class="rounded-lg border border-zinc-400 bg-white dark:border dark:border-white/20 dark:bg-zinc-900/70">
-  <a href={`/blog/${slug}/`} class="custom-style flex flex-1 divide-x-2 divide-zinc-300/60 p-4">
+  <a
+    href={`/blog/${slug}/`}
+    class="custom-style flex flex-1 divide-x-2 divide-zinc-300/60 rounded-lg p-4 focus:outline-none focus:ring-4 focus:ring-accent"
+  >
     <div class="pr-1">
       <FormattedDate date={date} style={includeYear ? 'short-with-year' : 'short'} />
     </div>

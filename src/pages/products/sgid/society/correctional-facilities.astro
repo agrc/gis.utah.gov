@@ -50,7 +50,7 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Fragment slot="description">
     <h3>Definitions</h3>
@@ -87,15 +87,11 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink
-        title="Law Enforcement"
-        href="/products/sgid/society/law-enforcement-facilities"
-        style="secondary">Utah law enforcement facilities</CardWithSmallLink
+      <CardWithSmallLink title="Law Enforcement" href="/products/sgid/society/law-enforcement-facilities"
+        >Utah law enforcement facilities</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="PSAP"
-        href="/products/sgid/society/public-safety-answering-point-locations"
-        style="secondary">Public saftey answering point locations</CardWithSmallLink
+      <CardWithSmallLink title="PSAP" href="/products/sgid/society/public-safety-answering-point-locations"
+        >Public saftey answering point locations</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

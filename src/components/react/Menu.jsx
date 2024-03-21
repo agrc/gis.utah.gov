@@ -7,7 +7,7 @@ import sgidLogo from './sgid-logo.svg';
 
 export const Menu = ({ children, currentUri }) => {
   return (
-    <NavigationMenu.Root className="relative z-10 hidden h-12 min-h-12 items-center bg-zinc-100 lg:flex dark:bg-secondary [&>div]:flex-1">
+    <NavigationMenu.Root className="relative z-10 hidden h-12 min-h-12 items-center bg-zinc-100 lg:flex dark:bg-zinc-800 [&>div]:flex-1">
       <NavigationMenu.List className="m-0 flex flex-1 list-none px-1 text-center">
         <NavigationMenu.Item value="home">
           <MenuLink href="/" currentUri={currentUri}>
@@ -25,7 +25,7 @@ export const Menu = ({ children, currentUri }) => {
                 <li className="col-start-2 row-span-4 grid">
                   <NavigationMenu.Link asChild>
                     <a
-                      className="custom-style group flex size-full cursor-pointer select-none flex-col rounded-lg  p-3 py-4 no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1"
+                      className="custom-style group flex size-full cursor-pointer select-none flex-col rounded-lg p-3 py-4 no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-zinc-50 sm:py-1"
                       href="/products/sgid/categories"
                     >
                       <img src={sgidLogo.src} alt="SGID Logo" className="size-18" />
@@ -159,7 +159,7 @@ export const Menu = ({ children, currentUri }) => {
 };
 export const SmallMenu = ({ children, currentUri }) => (
   <Dialog.Root>
-    <div className="items-between flex h-12 shrink-0 bg-zinc-100 lg:hidden dark:bg-secondary">
+    <div className="items-between flex h-12 shrink-0 bg-zinc-100 lg:hidden dark:bg-zinc-800">
       <div className="flex flex-1 items-center justify-between">
         <Dialog.Trigger asChild className="outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary">
           <button
@@ -174,7 +174,7 @@ export const SmallMenu = ({ children, currentUri }) => (
     </div>
     <Dialog.Portal>
       <Dialog.Overlay className="fixed inset-0 z-40 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=open]:fade-in" />
-      <Dialog.Content className="fixed inset-y-0 left-0 z-50 h-full w-72 gap-4 border-r border-white/20 bg-zinc-50 p-6 shadow-lg transition ease-in-out data-[state=closed]:duration-300 data-[state=open]:duration-500 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm dark:bg-secondary">
+      <Dialog.Content className="fixed inset-y-0 left-0 z-50 h-full w-72 gap-4 border-r border-white/20 bg-zinc-50 p-6 shadow-lg transition ease-in-out data-[state=closed]:duration-300 data-[state=open]:duration-500 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm dark:bg-primary-950">
         <NavigationMenu.Root orientation="vertical">
           <NavigationMenu.List className="mt-4 flex list-none flex-col p-1">
             <NavigationMenu.Item value="home">
@@ -206,13 +206,13 @@ export const SmallMenu = ({ children, currentUri }) => (
               <NavigationMenu.Content>
                 <NavigationMenu.List className="pl-2 pt-1">
                   <NavigationMenu.Item value="solutions-audience">
-                    <p className="pb-2 pl-2 text-xs uppercase text-accent">By audience</p>
+                    <p className="pb-2 pl-2 text-xs uppercase text-primary dark:text-accent">By audience</p>
                     <MobileListItem href="/solutions/for-government">Government employees</MobileListItem>
                     <MobileListItem href="/solutions/for-gis-users">GIS users</MobileListItem>
                     <MobileListItem href="/solutions/for-application-developers">Application developers</MobileListItem>
                     <MobileListItem href="/solutions/for-surveyors">Surveyors</MobileListItem>
                     <MobileListItem href="/solutions/for-students">Students</MobileListItem>
-                    <p className="py-2 pl-2 text-xs uppercase text-accent">By use case</p>
+                    <p className="py-2 pl-2 text-xs uppercase text-primary dark:text-accent">By use case</p>
                     <MobileListItem href="/solutions/spatial-data-management">Spatial data management</MobileListItem>
                     <MobileListItem href="/solutions/for-emergency-response">Emergency response (911)</MobileListItem>
                     <MobileListItem href="/solutions/gis-strategy">GIS strategy</MobileListItem>
@@ -256,7 +256,7 @@ export const SmallMenu = ({ children, currentUri }) => (
         </NavigationMenu.Root>
         <Dialog.Close asChild>
           <button
-            className="absolute left-[10px] top-[10px] inline-flex size-6 appearance-none items-center justify-center rounded-full text-zinc-800 hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary focus:outline-none dark:text-white"
+            className="absolute left-[10px] top-[10px] inline-flex size-6 appearance-none items-center justify-center rounded-full text-zinc-800 hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary focus:outline-none dark:text-white dark:hover:bg-primary"
             aria-label="Close"
           >
             <svg
@@ -291,9 +291,9 @@ const MenuLink = ({ href, children, currentUri }) => {
     <NavigationMenu.Link
       href={href}
       className={classNames(
-        'custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100',
+        'custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200',
         {
-          'text-secondary before:absolute before:-top-[0.6rem] before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
+          'text-secondary before:absolute before:-top-[0.25rem] before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
             isActive(href, currentUri),
         },
       )}
@@ -307,9 +307,9 @@ const MobileMenuLink = ({ href, children, currentUri }) => {
     <NavigationMenu.Link
       href={href}
       className={classNames(
-        'custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100',
+        'custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200',
         {
-          'text-secondary before:absolute before:-left-[28px] before:top-0 before:h-8 before:w-1 before:bg-accent':
+          'text-secondary before:absolute before:-left-[28px] before:top-0 before:h-8 before:w-2 before:rounded-e-full before:bg-accent':
             isActive(href, currentUri),
         },
       )}
@@ -321,9 +321,9 @@ const MobileMenuLink = ({ href, children, currentUri }) => {
 const DropDownMenu = ({ to, children, currentUri }) => (
   <NavigationMenu.Trigger
     className={classNames(
-      'custom-style group relative flex select-none items-center justify-between gap-1 rounded-full px-4 py-2 text-sm font-semibold leading-none text-zinc-600 outline-none hover:bg-white/20 hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100',
+      'custom-style group relative flex select-none items-center justify-between gap-1 rounded-full px-4 py-2 text-sm font-semibold leading-none text-zinc-600 outline-none hover:bg-white/20 hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200',
       {
-        'text-secondary before:absolute before:-top-2 before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
+        'text-secondary before:absolute before:-top-[0.25rem] before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
           isActive(to, currentUri),
       },
     )}
@@ -339,7 +339,7 @@ const MobileDropDownMenu = ({ href, children, currentUri }) => {
   return (
     <NavigationMenu.Trigger
       className={classNames(
-        'custom-style group relative flex select-none items-center justify-between gap-1 rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100',
+        'custom-style group relative flex select-none items-center justify-between gap-1 rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200',
         {
           'text-secondary before:absolute before:-left-[28px] before:top-0 before:h-8 before:w-1 before:bg-accent':
             isActive(href, currentUri),
@@ -370,7 +370,7 @@ const ListItem = React.forwardRef(({ className, children, title, ...props }, for
     <NavigationMenu.Link asChild>
       <a
         className={classNames(
-          'custom-style block cursor-pointer select-none rounded p-3 text-base no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1',
+          'custom-style block cursor-pointer select-none rounded p-3 text-base no-underline outline-none hover:bg-zinc-100 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1',
           className,
         )}
         {...props}
@@ -387,13 +387,13 @@ const MobileListItem = React.forwardRef(({ className, children, ...props }, forw
     <NavigationMenu.Link asChild>
       <a
         className={classNames(
-          'custom-style block cursor-pointer select-none rounded-full p-3 no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1',
+          'custom-style block cursor-pointer select-none rounded-full p-3 no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-primary sm:py-1 dark:hover:bg-white/20 dark:focus:shadow-zinc-200',
           className,
         )}
         {...props}
         ref={forwardedRef}
       >
-        <p className="text-sm text-zinc-50 hover:text-zinc-800">{children}</p>
+        <p className="text-sm text-zinc-600  dark:text-zinc-300">{children}</p>
       </a>
     </NavigationMenu.Link>
   </li>

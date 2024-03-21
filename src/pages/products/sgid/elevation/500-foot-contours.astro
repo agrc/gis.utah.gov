@@ -60,7 +60,7 @@ const page: IPageMetadata = {
     <Contacts contactKey="contours" />
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -75,13 +75,9 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Elevation" href="/products/sgid/elevation" style="secondary"
-        >SGID product category.</CardWithSmallLink
-      >
-      <CardWithSmallLink
-        title="200 Foot"
-        href="/products/sgid/elevation/200-foot-generalized-contours"
-        style="secondary">200 foot generalized contours.</CardWithSmallLink
+      <CardWithSmallLink title="Elevation" href="/products/sgid/elevation">SGID product category.</CardWithSmallLink>
+      <CardWithSmallLink title="200 Foot" href="/products/sgid/elevation/200-foot-generalized-contours"
+        >200 foot generalized contours.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

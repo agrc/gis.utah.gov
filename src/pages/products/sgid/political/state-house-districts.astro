@@ -66,7 +66,7 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -91,13 +91,11 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Utah State Legislature" href="https://le.utah.gov/" style="secondary"
+      <CardWithSmallLink title="Utah State Legislature" href="https://le.utah.gov/"
         >The Legislature's main site</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="Utah House of Representatives"
-        href="https://le.utah.gov/house2/index.html"
-        style="secondary">The House of Representatives' main site</CardWithSmallLink
+      <CardWithSmallLink title="Utah House of Representatives" href="https://le.utah.gov/house2/index.html"
+        >The House of Representatives' main site</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

@@ -28,7 +28,7 @@ const links = Array.from({ length: end - start + 1 }, (_, i) => start + i);
 const hasStartEllipsis = start > 1;
 const hasEndEllipsis = end < page.lastPage;
 const linkClasses =
-  'custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100';
+  'custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:focus:shadow-zinc-200 dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100';
 const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
 ---
 
@@ -76,7 +76,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
             href={`/${baseHref}/${num === 1 ? '' : num}`}
             class={twMerge(
               linkClasses,
-              num === page.currentPage && 'bg-zinc-200 hover:bg-primary hover:text-zinc-50 dark:text-zinc-600',
+              num === page.currentPage && 'bg-zinc-200 hover:bg-primary hover:text-zinc-50 dark:text-zinc-600'
             )}
             aria-current={num === page.currentPage ? 'page' : undefined}
             aria-label={num !== page.currentPage ? `go to page ${page.currentPage}` : undefined}

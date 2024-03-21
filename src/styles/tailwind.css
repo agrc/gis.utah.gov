@@ -15,7 +15,7 @@
     @apply text-accent hover:bg-white/10;
   }
   a:not(.custom-style) {
-    @apply font-semibold text-primary hover:bg-black/10 dark:text-accent dark:hover:bg-white/10;
+    @apply font-semibold text-primary hover:bg-black/10 focus:outline-none focus:ring-1 focus:ring-accent dark:text-accent dark:hover:bg-white/10;
   }
   .card a:not(.custom-style) {
     @apply font-semibold text-primary hover:bg-black/10 dark:text-accent dark:hover:bg-white/10;

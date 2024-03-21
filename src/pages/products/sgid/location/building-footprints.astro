@@ -63,9 +63,9 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
-  <Disclaimer slot="disclaimer" style="secondary">
+  <Disclaimer slot="disclaimer">
     <p>
       This data is created and licensed by Microsoft under the <ExternalLink
         href="https://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License (ODbL)</ExternalLink
@@ -88,13 +88,10 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink
-        title="Roads"
-        href="Transportation"
-        href="/products/sgid/transportation/road-centerlines"
-        style="secondary">Road centerlines</CardWithSmallLink
+      <CardWithSmallLink title="Roads" href="Transportation" href="/products/sgid/transportation/road-centerlines"
+        >Road centerlines</CardWithSmallLink
       >
-      <CardWithSmallLink title="OpenSourcePlaces" href="/products/sgid/society/open-source-places" style="secondary"
+      <CardWithSmallLink title="OpenSourcePlaces" href="/products/sgid/society/open-source-places"
         >OSM places or interest</CardWithSmallLink
       >
     </GridForYouMightLike>

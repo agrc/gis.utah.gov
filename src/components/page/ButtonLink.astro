@@ -14,6 +14,7 @@ const list = [
   'custom-style',
   'relative',
   'flex',
+  'flex-nowrap',
   'min-h-9',
   'cursor-pointer',
   'items-center',
@@ -30,8 +31,10 @@ const list = [
   'hover:border-zinc-600',
   'active:scale-95',
   'active:shadow-inner',
-  'focus:outline-2',
-  'focus:outline-accent',
+  'focus:outline-none',
+  'focus:ring-4',
+  'focus:border-transparent',
+  'focus:ring-accent',
   'focus:transition-none',
   'dark:border-zinc-400/30',
   'dark:hover:border-white/30',
@@ -51,13 +54,33 @@ if (color === 'primary') {
 
 <a href={href} class:list={list}>
   <button type="button" tabindex="-1">
-    <slot />
-    {
-      decorate === 'arrow' && (
-        <span class="ml-2">
-          <RightArrow />
-        </span>
-      )
+    <span class="inline-flex flex-wrap items-center gap-x-1">
+      <slot />
+      {
+        decorate === 'arrow' && (
+        <>
+          {href.startsWith("/") ? <RightArrow /> : (
+            <span aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4"
+                >
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                ></path>
+                </svg>
+                </span>
+                <span class="sr-only">, opens in a new tab</span>
+                )}
+                </>
+                )
     }
+    </span>
   </button>
 </a>

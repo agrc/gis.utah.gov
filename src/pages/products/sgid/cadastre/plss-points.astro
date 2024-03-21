@@ -112,7 +112,7 @@ const page: IPageMetadata = {
     <CommonConversions />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -127,18 +127,12 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
-        >Utah boundary data</CardWithSmallLink
-      >
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary"
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries">Utah boundary data</CardWithSmallLink>
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation"
         >Utah transportation data</CardWithSmallLink
       >
-      <CardWithSmallLink title="Economy" href="/products/sgid/economy" style="secondary"
-        >Utah economic data</CardWithSmallLink
-      >
-      <CardWithSmallLink title="Political" href="/products/sgid/political" style="secondary"
-        >Utah political data</CardWithSmallLink
-      >
+      <CardWithSmallLink title="Economy" href="/products/sgid/economy">Utah economic data</CardWithSmallLink>
+      <CardWithSmallLink title="Political" href="/products/sgid/political">Utah political data</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>

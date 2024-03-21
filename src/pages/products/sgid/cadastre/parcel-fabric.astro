@@ -77,7 +77,7 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -92,17 +92,15 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink
-        title="PLSS quarter sections"
-        href="/products/sgid/cadastre/plss-quarter-sections"
-        style="secondary">Public Land Survey System quarter sections for the State of Utah.</CardWithSmallLink
+      <CardWithSmallLink title="PLSS quarter sections" href="/products/sgid/cadastre/plss-quarter-sections"
+        >Public Land Survey System quarter sections for the State of Utah.</CardWithSmallLink
       >
-      <CardWithSmallLink title="PLSS point data" href="/products/sgid/cadastre/plss-points" style="secondary"
+      <CardWithSmallLink title="PLSS point data" href="/products/sgid/cadastre/plss-points"
         >Public Land Survey System points for the State of Utah.</CardWithSmallLink
       >
-      <CardWithSmallLink title="PLSS sections data" href="/products/sgid/cadastre/plss-sections" style="secondary"
+      <CardWithSmallLink title="PLSS sections data" href="/products/sgid/cadastre/plss-sections"
         >Public Land Survey System sections for the State of Utah.</CardWithSmallLink
-      ><CardWithSmallLink title="PLSS townships data" href="/products/sgid/cadastre/plss-townships" style="secondary"
+      ><CardWithSmallLink title="PLSS townships data" href="/products/sgid/cadastre/plss-townships"
         >Public Land Survey System townships for the State of Utah.</CardWithSmallLink
       >
     </GridForYouMightLike>

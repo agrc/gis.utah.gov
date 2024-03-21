@@ -33,30 +33,91 @@ const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
     <div>
       <div class="whitespace-nowrap font-bold">Main Menu</div>
       <ul class="grid gap-2 pl-1 text-sm leading-loose md:gap-0">
-        <li><a href="/" class="custom-style mt-4 block hover:underline">Home</a></li>
-        <li><a href="/products" class="custom-style hover:underline">Products</a></li>
-        <li><a href="/solutions" class="custom-style hover:underline">Solutions</a></li>
-        <li><a href="/documentation" class="custom-style hover:underline">Documentation</a></li>
-        <li><a href="/collaboration" class="custom-style hover:underline">Collaboration</a></li>
-        <li><a href="/blog" class="custom-style hover:underline">Blog</a></li>
-        <li><a href="/about" class="custom-style hover:underline">About</a></li>
-        <li><a href="/contact" class="custom-style hover:underline">Contact</a></li>
+        <li class="mt-4 block">
+          <a href="/" class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/products"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent">Products</a
+          >
+        </li>
+        <li>
+          <a
+            href="/solutions"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent">Solutions</a
+          >
+        </li>
+        <li>
+          <a
+            href="/documentation"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >Documentation</a
+          >
+        </li>
+        <li>
+          <a
+            href="/collaboration"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >Collaboration</a
+          >
+        </li>
+        <li>
+          <a href="/blog" class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="/about"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent">About</a
+          >
+        </li>
+        <li>
+          <a
+            href="/contact"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent">Contact</a
+          >
+        </li>
       </ul>
     </div>
     <div>
       <div class="whitespace-nowrap font-bold">Helpful Links</div>
       <ul class="grid gap-2 pl-1 text-sm leading-loose md:gap-0">
-        <li>
+        <li class="mt-4 block">
           <a
             href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests"
-            class="custom-style mt-4 block hover:underline">Content contributing guide</a
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >Content contributing guide</a
           >
         </li>
-        <li><a href="/about/media" class="custom-style hover:underline">Logos and media resources</a></li>
-        <li><a href="/documentation/policy" class="custom-style hover:underline">UGRC Policies</a></li>
-        <li><a href="/about/code" class="custom-style hover:underline">GIS-related Utah statute</a></li>
         <li>
-          <a href="https://s.utah.gov/ugrc-newsletter" class="custom-style hover:underline"
+          <a
+            href="/about/media"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >Logos and media resources</a
+          >
+        </li>
+        <li>
+          <a
+            href="/documentation/policy"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >UGRC Policies</a
+          >
+        </li>
+        <li>
+          <a
+            href="/about/code"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >GIS-related Utah statute</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://s.utah.gov/ugrc-newsletter"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
             >Sign up for our newsletter</a
           >
         </li>
@@ -66,30 +127,28 @@ const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
       <div class="whitespace-nowrap font-bold">Website Information</div>
       <ul class="grid gap-2 pl-1 text-sm leading-loose md:gap-0">
         <li class="mt-4 block">
-          Build: <a href={`https://github.com/agrc/gis.utah.gov/commit/${sha}`} class="custom-style hover:underline"
-            >{sha}</a
+          Build: <a
+            href={`https://github.com/agrc/gis.utah.gov/commit/${sha}`}
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent">{sha}</a
           >
         </li>
         <li>
           <a
             href={`https://github.com/agrc/gis.utah.gov/tree/main/src/pages${Astro.url.pathname}.astro`}
-            class="custom-style hover:underline">Edit this page</a
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
+            >Edit this page</a
           >
         </li>
         <li>
-          <a href="https://github.com/agrc/gis.utah.gov/issues/new" class="custom-style external-link hover:underline"
+          <a
+            href="https://github.com/agrc/gis.utah.gov/issues/new"
+            class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
             >Report an issue</a
           >
         </li>
-        <li>
-          <a href="https://www.netlify.com" class="inline-flex items-center">
-            <Image
-              src={netlifyLogo}
-              class="mt-4"
-              alt="logo showing the site is hosted on netlify"
-              width={100}
-              height={44}
-            />
+        <li class="mt-4">
+          <a href="https://www.netlify.com" class="custom-style focus:outline-accent">
+            <Image src={netlifyLogo} alt="hosted on netlify" width={100} height={44} />
           </a>
         </li>
       </ul>

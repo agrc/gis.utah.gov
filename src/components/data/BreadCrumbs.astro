@@ -14,7 +14,7 @@ const { product, category, class: className } = Astro.props;
   <ol class="flex items-center">
     <li class="hidden lg:flex">
       <a
-        class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100"
+        class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200"
         href="/"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const { product, category, class: className } = Astro.props;
         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
       </svg>
       <a
-        class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-normal leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100"
+        class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-normal leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200"
         href="/products/sgid">SGID</a
       >
     </li>
@@ -62,7 +62,7 @@ const { product, category, class: className } = Astro.props;
         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
       </svg>
       <a
-        class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-normal leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100"
+        class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-normal leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200"
         href="/products/sgid/categories">SGID Categories</a
       >
     </li>
@@ -80,13 +80,13 @@ const { product, category, class: className } = Astro.props;
       {
         product ? (
           <a
-            class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-normal leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100"
+            class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-normal leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200"
             href={`/products/sgid/${category.toLowerCase()}`}
           >
             {category.replaceAll('-', ' ')}
           </a>
         ) : (
-          <span class="custom-style px-3 font-medium dark:text-white" aria-current="page">
+          <span class="custom-style px-3 font-medium dark:text-white dark:focus:shadow-zinc-200" aria-current="page">
             {category.replaceAll('-', ' ')}
           </span>
         )
@@ -105,7 +105,7 @@ const { product, category, class: className } = Astro.props;
           >
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
           </svg>
-          <span class="custom-style px-3 font-medium dark:text-white" aria-current="page">
+          <span class="custom-style px-3 font-medium dark:text-white dark:focus:shadow-zinc-200" aria-current="page">
             {product}
           </span>
         </li>

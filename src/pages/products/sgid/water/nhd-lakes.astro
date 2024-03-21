@@ -81,7 +81,7 @@ const page: IPageMetadata = {
       >
     </dl>
   </Fragment>
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -98,10 +98,8 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Rivers" href="/products/sgid/water/nhd-streams" style="secondary"
-        >NHD Streams/Rivers</CardWithSmallLink
-      >
-      <CardWithSmallLink title="Lake Bonneville" href="/products/sgid/water/historic-lake-bonneville" style="secondary"
+      <CardWithSmallLink title="Rivers" href="/products/sgid/water/nhd-streams">NHD Streams/Rivers</CardWithSmallLink>
+      <CardWithSmallLink title="Lake Bonneville" href="/products/sgid/water/historic-lake-bonneville"
         >Historic Lake Bonneville coverage</CardWithSmallLink
       >
     </GridForYouMightLike>

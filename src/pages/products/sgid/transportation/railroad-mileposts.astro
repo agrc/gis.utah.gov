@@ -56,7 +56,7 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -71,13 +71,11 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines"
         >Authoritative statewide collection of road centerlines.</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="Highway Mileposts"
-        href="/products/sgid/transportation/mile-reference-posts"
-        style="secondary">Mileposts along Utah's highways.</CardWithSmallLink
+      <CardWithSmallLink title="Highway Mileposts" href="/products/sgid/transportation/mile-reference-posts"
+        >Mileposts along Utah's highways.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

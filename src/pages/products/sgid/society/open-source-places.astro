@@ -176,7 +176,7 @@ const page: IPageMetadata = {
     />
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Disclaimer slot="disclaimer">
     <p>The Open Source Places data carries a different license than most UGRC data.</p>
@@ -219,12 +219,10 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="GNIS" href="/products/sgid/location/gnis" style="secondary"
+      <CardWithSmallLink title="GNIS" href="/products/sgid/location/gnis"
         >Geographic Names Information System.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Addresses" href="/products/sgid/address" style="secondary"
-        >Addressing category index.</CardWithSmallLink
-      >
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address">Addressing category index.</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>

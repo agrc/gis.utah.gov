@@ -49,7 +49,7 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -65,10 +65,10 @@ const page: IPageMetadata = {
   </Section>
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
-    <CardWithSmallLink title="Schools" href="/products/sgid/society/pre-k-through-12" style="secondary"
+    <CardWithSmallLink title="Schools" href="/products/sgid/society/pre-k-through-12"
       >Utah Schools PreK to 12</CardWithSmallLink
     >
-    <CardWithSmallLink title="Schools" href="/products/sgid/society/higher-education" style="secondary"
+    <CardWithSmallLink title="Schools" href="/products/sgid/society/higher-education"
       >Utah Schools Higher Education</CardWithSmallLink
     >
   </Section>

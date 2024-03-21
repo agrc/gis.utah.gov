@@ -108,11 +108,14 @@ const page: IStandardPageMetadata = {
 
   <Section slot="more-resources" {...page.section[2]}>
     <GridForMoreResources>
-      <CardWithSideImage title="Privacy Policy" actionUrl="https://ut-dts-agrc-web-api-dev.web.app/privacy/">
+      <CardWithSideImage
+        title="Privacy Policy"
+        actionUrl="https://github.com/agrc/api.mapserv.utah.gov/blob/master/readme.md#privacy-policy"
+      >
         <Image slot="image" src={privacyPhoto} alt="a computer with a lock on the screen" class="self-center" />
         UGRC's data license and general data disclaimer.
       </CardWithSideImage>
-      <CardWithSideImage title="API Self Service" actionUrl="https://ut-dts-agrc-web-api-dev-self-service.web.app/">
+      <CardWithSideImage title="API Self Service" actionUrl="https://developer.mapserv.utah.gov">
         <Image
           slot="image"
           src={selfServicePhoto}

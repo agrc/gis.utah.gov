@@ -47,7 +47,7 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -62,10 +62,10 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Airports" href="/products/sgid/transportation/airports" style="secondary"
+      <CardWithSmallLink title="Airports" href="/products/sgid/transportation/airports"
         >SGID airport locations.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines" style="secondary"
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines"
         >SGID Road centerlines.</CardWithSmallLink
       >
     </GridForYouMightLike>

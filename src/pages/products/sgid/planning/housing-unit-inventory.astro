@@ -140,7 +140,7 @@ const page: IPageMetadata = {
     </dl>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -158,22 +158,16 @@ const page: IPageMetadata = {
       <CardWithSmallLink
         title="WFRC's Housing Inventory Explorer"
         href="https://wfrc.org/housing-inventory-explorer/?geom=pt&x=-12455945&y=4979633&zoom=14&op=And"
-        style="secondary">WFRC's interactive housing inventory map</CardWithSmallLink
+        >WFRC's interactive housing inventory map</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="UGRC's Code Repo"
-        href="https://github.com/agrc/housing-unit-inventory/tree/dev"
-        style="secondary">UGRC's code for creating the Washington County data</CardWithSmallLink
+      <CardWithSmallLink title="UGRC's Code Repo" href="https://github.com/agrc/housing-unit-inventory/tree/dev"
+        >UGRC's code for creating the Washington County data</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="WFRC's Code Repo"
-        href="https://github.com/WFRCAnalytics/Housing-Unit-Inventory"
-        style="secondary">WFRC's code for the initial process</CardWithSmallLink
+      <CardWithSmallLink title="WFRC's Code Repo" href="https://github.com/WFRCAnalytics/Housing-Unit-Inventory"
+        >WFRC's code for the initial process</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="MAG Community Profiles"
-        href="https://mountainland.org/community-profiles"
-        style="secondary">MAG's Community Profiles tool</CardWithSmallLink
+      <CardWithSmallLink title="MAG Community Profiles" href="https://mountainland.org/community-profiles"
+        >MAG's Community Profiles tool</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

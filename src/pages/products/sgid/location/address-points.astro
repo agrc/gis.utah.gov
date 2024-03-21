@@ -145,7 +145,7 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -166,16 +166,16 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary">
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov">
         This web app uses the address points for geocoding and you can toggle an address point base map layer.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation" style="secondary">
+      <CardWithSmallLink title="Transportation" href="/products/sgid/transportation">
         Transportation related data sets.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Addresses" href="/products/sgid/address" style="secondary">
+      <CardWithSmallLink title="Addresses" href="/products/sgid/address">
         Address related datasets, applications, and services.
       </CardWithSmallLink>
-      <CardWithSmallLink title="Discover" href="/products/discover" style="secondary">
+      <CardWithSmallLink title="Discover" href="/products/discover">
         Discover has an address point base map service for your projects and maps.
       </CardWithSmallLink>
     </GridForYouMightLike>

@@ -26,11 +26,13 @@ if (!coverImage.startsWith('https')) {
 }
 ---
 
-<div class="max-w-sm overflow-hidden rounded-lg border border-black/20 bg-white shadow dark:bg-zinc-900/70">
+<div
+  class="max-w-sm overflow-hidden rounded-lg border border-black/20 bg-white shadow has-[:focus]:outline-none has-[:focus]:ring-4 has-[:focus]:ring-accent dark:bg-zinc-900/70"
+>
   <div class="bg-primary px-4 py-1 text-center text-sm font-black uppercase text-zinc-50 dark:bg-secondary">
     <span class="pl-2">{category}</span>
   </div>
-  <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-black/20">
+  <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-black/20 focus:outline-none">
     {
       coverImage.startsWith('https') ? (
         <Image

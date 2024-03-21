@@ -8,7 +8,13 @@ interface Props {
 const { title, href, class: className } = Astro.props;
 ---
 
-<a href={href} class:list={['flex max-w-full sm:px-6 sm:py-3', className]}>
+<a
+  href={href}
+  class:list={[
+    'flex max-w-full rounded-full focus:outline-none focus:ring-4 focus:ring-accent sm:px-6 sm:py-3',
+    className,
+  ]}
+>
   <div class="flex flex-1 grow justify-center gap-2">
     <svg
       xmlns="http://www.w3.org/2000/svg"

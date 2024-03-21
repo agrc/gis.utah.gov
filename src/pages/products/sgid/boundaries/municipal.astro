@@ -88,7 +88,7 @@ const page: IPageMetadata = {
     <BoundaryDescription />
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -115,13 +115,13 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Counties" href="/products/sgid/boundaries/county" style="secondary"
+      <CardWithSmallLink title="Counties" href="/products/sgid/boundaries/county"
         >Utah county boundaries</CardWithSmallLink
       >
-      <CardWithSmallLink title="Metro townships" href="/products/sgid/boundaries/metro-townships" style="secondary"
+      <CardWithSmallLink title="Metro townships" href="/products/sgid/boundaries/metro-townships"
         >Metro township boundaries</CardWithSmallLink
       >
-      <CardWithSmallLink title="Zip codes" href="/products/sgid/boundaries/zip-codes" style="secondary"
+      <CardWithSmallLink title="Zip codes" href="/products/sgid/boundaries/zip-codes"
         >Zip codes in Utah</CardWithSmallLink
       >
       <CardWithSmallLink title="UGRCodes" href="/blog/2021-04-26-introducing-ugrcodes"

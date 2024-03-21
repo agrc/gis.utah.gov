@@ -48,7 +48,7 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -63,16 +63,14 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Trails" href="/products/sgid/recreation/trails-pathways" style="secondary"
+      <CardWithSmallLink title="Trails" href="/products/sgid/recreation/trails-pathways"
         >Trails and pathways.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Trailheads" href="/products/sgid/recreation/trailheads" style="secondary"
+      <CardWithSmallLink title="Trailheads" href="/products/sgid/recreation/trailheads"
         >Trailhead locations.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Golf" href="/products/sgid/recreation/golf-courses" style="secondary"
-        >Golf courses.</CardWithSmallLink
-      >
-      <CardWithSmallLink title="Cemeteries" href="/products/sgid/society/cemeteries" style="secondary"
+      <CardWithSmallLink title="Golf" href="/products/sgid/recreation/golf-courses">Golf courses.</CardWithSmallLink>
+      <CardWithSmallLink title="Cemeteries" href="/products/sgid/society/cemeteries"
         >Cemetery locations.</CardWithSmallLink
       >
     </GridForYouMightLike>

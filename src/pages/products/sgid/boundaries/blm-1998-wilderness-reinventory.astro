@@ -59,7 +59,7 @@ const page: IPageMetadata = {
     <Contacts contactKey="ugrc" />
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -79,12 +79,8 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov" style="secondary"
-        >Web Application</CardWithSmallLink
-      >
-      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries" style="secondary"
-        >SGID Category</CardWithSmallLink
-      >
+      <CardWithSmallLink title="Atlas" href="https://atlas.utah.gov">Web Application</CardWithSmallLink>
+      <CardWithSmallLink title="Boundaries" href="/products/sgid/boundaries">SGID Category</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>

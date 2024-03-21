@@ -82,7 +82,7 @@ const page: IPageMetadata = {
     <Contacts contactKey="ugrc" />
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -99,12 +99,10 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Schools" href="/products/sgid/society/pre-k-through-12" style="secondary"
+      <CardWithSmallLink title="Schools" href="/products/sgid/society/pre-k-through-12"
         >SGID Utah schools locations from pre-k through grade 12.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Society" href="/products/sgid/society" style="secondary"
-        >SGID society category index.</CardWithSmallLink
-      >
+      <CardWithSmallLink title="Society" href="/products/sgid/society">SGID society category index.</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>

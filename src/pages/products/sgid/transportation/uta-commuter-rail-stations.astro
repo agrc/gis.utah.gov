@@ -47,7 +47,7 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -62,21 +62,17 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink
-        title="Frontrunner Routes"
-        href="/products/sgid/transportation/uta-commuter-rail-routes"
-        style="secondary">UTA commuter rail routes.</CardWithSmallLink
+      <CardWithSmallLink title="Frontrunner Routes" href="/products/sgid/transportation/uta-commuter-rail-routes"
+        >UTA commuter rail routes.</CardWithSmallLink
       >
-      <CardWithSmallLink title="UTA Routes" href="/products/sgid/transportation/uta-routes" style="secondary"
+      <CardWithSmallLink title="UTA Routes" href="/products/sgid/transportation/uta-routes"
         >All bus, TRAX, and Frontrunner routes.</CardWithSmallLink
       >
-      <CardWithSmallLink title="UTA Stops" href="/products/sgid/transportation/uta-stops" style="secondary"
+      <CardWithSmallLink title="UTA Stops" href="/products/sgid/transportation/uta-stops"
         >All bus, TRAX, and Frontrunner stops.</CardWithSmallLink
       >
-      <CardWithSmallLink
-        title="TRAX Routes"
-        href="/products/sgid/transportation/uta-light-rail-routes"
-        style="secondary">UTA light rail routes.</CardWithSmallLink
+      <CardWithSmallLink title="TRAX Routes" href="/products/sgid/transportation/uta-light-rail-routes"
+        >UTA light rail routes.</CardWithSmallLink
       >
     </GridForYouMightLike>
   </Section>

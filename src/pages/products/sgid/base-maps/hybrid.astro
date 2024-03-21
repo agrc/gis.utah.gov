@@ -73,7 +73,7 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} style="secondary" />
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -88,10 +88,10 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Utah Lite base map" href="/products/sgid/base-maps/hybrid" style="secondary"
+      <CardWithSmallLink title="Utah Lite base map" href="/products/sgid/base-maps/hybrid"
         >A light, muted reference base map that doesn't compete with your thematic data.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Utah Terrain base map" href="/products/sgid/base-maps/terrain" style="secondary"
+      <CardWithSmallLink title="Utah Terrain base map" href="/products/sgid/base-maps/terrain"
         >A base map of hillshade, highways and streets, parks, forests, water, etc.</CardWithSmallLink
       >
     </GridForYouMightLike>

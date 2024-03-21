@@ -402,12 +402,7 @@ const countyMetadata = [
     </p>
   </Disclaimer>
 
-  <UpdateHistory
-    title="Update history (basic parcels)"
-    slot="update-history"
-    updates={page.updateHistory}
-    style="secondary"
-  />
+  <UpdateHistory title="Update history (basic parcels)" slot="update-history" updates={page.updateHistory} />
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
@@ -426,13 +421,12 @@ const countyMetadata = [
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Address points" href="/products/sgid/location/address-points" style="secondary"
+      <CardWithSmallLink title="Address points" href="/products/sgid/location/address-points"
         >Address Points
       </CardWithSmallLink>
       <CardWithSmallLink
         title="LIR parcel archive"
         href="https://drive.google.com/drive/folders/1ne7HkZI1L_NrnbszMraIIUGPV7cDCMtH"
-        style="secondary"
       >
         Parcels with land information record information from previous year.
       </CardWithSmallLink>

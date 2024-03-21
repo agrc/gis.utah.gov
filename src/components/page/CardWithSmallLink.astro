@@ -14,7 +14,7 @@ const { title, href, style = 'primary', class: className } = Astro.props;
 <a
   href={href}
   class:list={[
-    'custom-style flex rounded-lg border border-zinc-400 bg-primary px-6 py-3 text-zinc-50 shadow dark:border-white/20',
+    'custom-style flex rounded-lg border border-zinc-400 bg-primary px-6 py-3 text-zinc-50 shadow focus:border-transparent focus:outline-none focus:ring-4 focus:ring-accent dark:border-white/20',
     className,
     style === 'secondary' && 'dark:bg-secondary',
   ]}
