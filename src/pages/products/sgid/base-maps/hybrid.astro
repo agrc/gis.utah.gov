@@ -22,7 +22,7 @@ import samplePhoto from '@images/sgid/base-maps/hybrid-base-map.png';
 
 export const metadata: IMetadata = {
   pageTitle: 'Utah Hybrid Base Map',
-  pageDescription: `A combination of the general reference features base map and our latest high-resolution imagery.`,
+  pageDescription: `A combination of general reference base map features and our latest high-resolution imagery.`,
   stewards: ['UGRC'],
   type: ProductType.DISCOVER_SERVICE,
   category: SgidCategory.BASE_MAPS,
@@ -46,8 +46,10 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      A combination of the general reference features base map and our latest high-resolution imagery as a raster base
-      map.
+      A combination of the general reference base map features and our latest high-resolution imagery as a raster base
+      map. Only roads, municipalities, and county boundaries have a line or outline symbology, all other features like
+      lakes, rivers, land ownership, parks etc are identified with labels. The imagery is the highlight of this base
+      map, all other features are there to show general context.
     </p>
     <Image
       src={samplePhoto}
@@ -63,7 +65,6 @@ const page: IPageMetadata = {
   </Section>
 
   <Fragment slot="description">
-    <p>This base map contains...</p>
     <p>Each cache consists of around 3 to 17 million 256-pixel square tiles ranging from 15G to over 200GB.</p>
     <p>
       These raster tiles are pre-rendered at the <ExternalLink
