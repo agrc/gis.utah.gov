@@ -5,14 +5,27 @@ interface Props {
   product?: string;
   category: SgidCategory | string;
   class?: string;
+  gradients?: string;
 }
 
-const { product, category, class: className } = Astro.props;
+const { product, category, class: className, gradients = 'from-white dark:from-primary-950' } = Astro.props;
 ---
 
 <nav class:list={['relative flex flex-col items-center justify-center gap-2 pl-2', className]}>
-  <div class="absolute left-0 z-10 h-full w-5 bg-gradient-to-r from-white to-transparent dark:from-primary-950"></div>
-  <div class="absolute right-0 z-10 h-full w-5 bg-gradient-to-l from-white to-transparent dark:from-primary-950"></div>
+  <div
+    class:list={[
+      'absolute left-0 z-10 h-full w-5 bg-gradient-to-r from-white to-transparent lg:hidden dark:from-primary-950',
+      gradients,
+    ]}
+  >
+  </div>
+  <div
+    class:list={[
+      'absolute right-0 z-10 h-full w-5 bg-gradient-to-l from-white to-transparent lg:hidden dark:from-primary-950',
+      gradients,
+    ]}
+  >
+  </div>
   <ol
     class="flex w-full gap-2 overflow-x-auto [-ms-overflow-style:-ms-autohiding-scrollbar] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
   >
