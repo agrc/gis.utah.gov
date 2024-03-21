@@ -1,0 +1,30 @@
+---
+interface Props {
+  class?: string;
+  gradients?: string;
+}
+
+const { class: className, gradients = 'from-white dark:from-primary-950' } = Astro.props;
+---
+
+<nav class:list={['relative flex flex-col items-center justify-center gap-2 pl-2', className]}>
+  <div
+    class:list={[
+      'absolute left-0 z-10 h-full w-5 bg-gradient-to-r from-white to-transparent lg:hidden dark:from-primary-950',
+      gradients,
+    ]}
+  >
+  </div>
+  <div
+    class:list={[
+      'absolute right-0 z-10 h-full w-5 bg-gradient-to-l from-white to-transparent lg:hidden dark:from-primary-950',
+      gradients,
+    ]}
+  >
+  </div>
+  <ol
+    class="animate-shake flex w-full gap-2 overflow-x-auto anim-duration-[1000ms] anim-delay-[1000ms] repeat-[2] [-ms-overflow-style:-ms-autohiding-scrollbar] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] motion-reduce:animate-none md:animate-none [&::-webkit-scrollbar]:hidden"
+  >
+    <slot />
+  </ol>
+</nav>
