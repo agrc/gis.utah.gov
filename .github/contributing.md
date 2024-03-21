@@ -84,13 +84,6 @@ for getting things done and landing your contribution.
 
 11. Create a Pull Request.
 
-> [!NOTE]\
-> We ask that PR authors avoid rebasing/updating their PRs with the base branch (`main`) unnecessarily.
-> We use [GitHub Merge Queues](https://github.blog/2023-07-12-github-merge-queue-is-generally-available/)
-> which means that before merge the PRs get automatically updated and checked against the latest changes on the base branch.
->
-> This also reduces the amount of times we need to run our CI checks, as every new push requires fresh CI-checks.
-
 ### CLI Commands
 
 This repository contains several scripts and commands for performing numerous tasks. The most relevant ones are described below.
