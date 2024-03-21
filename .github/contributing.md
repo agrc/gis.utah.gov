@@ -127,18 +127,7 @@ This policy governs how contributions should land within this repository. The li
 We recommend a review of our [Collaborator Guide](collaborating.md#accepting-modifications) for in-depth details on how we accept contributions into this repository.
 The list below describes some merging and approval rules adopted in this repository.
 
-- Pull Requests must be open for at least 48 hours (Or 72 hours if the PR was authored on the weekend).
-  - Pull requests might be immediately merged if they contain critical bug fixes, short errata (e.g., typos from previous PRs), or any critical change considered a "showstopper" for the website's operation.
-    - This kind of PRs should only be done by existing collaborators with write-access and/or signed off by administrators/maintainers.
-    - This rule cannot be used for updates on the `collaborating.md`, `CONTRIBUTING.md` guide, GitHub Actions, or any security-impacting file or document that changes the governing policies of this repository.
-  - Pull requests might be "fast-tracked", meaning they can be merged before the usual 48 hours' notice if a "fast-track" label is added.
-    - The person that is fast-tracking the PR (adding the label) must also comment on the PR that they're requesting the PR to be fast-tracked
-    - Fast-tracking is only allowed for small bug fixes, small feature changes, localization changes, or other non-critical/highly-impacting changes not covered by the previous rule that allows PRs to be merged immediately.
-    - Fast-tracking cannot be used for updates on the `collaborating.md`, `CONTRIBUTING.md` guide, GitHub Actions, or any security-impacting file or document that changes the governing policies of this repository.
-- There must be no objections after forty-eight (48) hours (Or seventy-two (72) hours if the PR was authored on the weekend).
-  - If there are disagreements consensus should be sought. Lack of consensus might require escalation to the Website Team Maintainers.
 - At least one approval is required for any PR to be merged.
-- Tests must be included in Pull Requests for new features or bug fixes. You are responsible for fixing any test(s) that fail.
 
 Each contribution is accepted only if there is no objection to it by a collaborator. During the review, collaborators may request that a specific contributor who is an expert in a particular area give an "LGTM" before the PR can be merged.
 
