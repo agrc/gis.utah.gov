@@ -25,11 +25,11 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.SOLUTIONS,
   section: stripeSections([
     {},
-    { title: 'The SGID', actionUrl: '/product/sgid' },
-    { title: 'UGRC API', actionUrl: '/product/api' },
-    { title: 'Address geocoding', actionUrl: '/product/sgid/address/api-client' },
-    { title: 'Base maps and imagery', actionUrl: '/product/discover' },
-    { title: 'GPS location services', actionUrl: '/product/turn' },
+    { title: 'The SGID', actionUrl: '/products/sgid' },
+    { title: 'UGRC API', actionUrl: '/products/api' },
+    { title: 'Address geocoding', actionUrl: '/products/sgid/address/api-client' },
+    { title: 'Base maps and imagery', actionUrl: '/products/discover' },
+    { title: 'GPS location services', actionUrl: '/products/turn' },
   ]),
 };
 ---
@@ -65,7 +65,7 @@ const page: IStandardPageMetadata = {
       SGID. We make it easy by making a wide array of data available in one searchable location. The SGID Index is a
       great place to start your exploration. The search results will point you to more information about the data, its
       update schedule, and where and how to access it. SGID data is available in various formats, including web map
-      services and direct database access. Visit the SGID landing page to learn more.
+      services and direct database access. Visit the <a href="/products/sgid">SGID landing page</a> to learn more.
     </p>
   </Section>
   <Section {...page.section[2]}>
@@ -80,7 +80,9 @@ const page: IStandardPageMetadata = {
       The UGRC API is designed for users who want to interact with the SGID through an Application Programming Interface
       (API). Users query the SGID through web calls often from a desktop or web application. Returned results are then
       processed on the client side, suiting the needs of the specific application. The UGRC API has been in service for
-      over ten years and is extremely robust. More information can be found on the Getting Started page.
+      over ten years and is extremely robust. More information can be found on the <a href="/products/api"
+        >Getting Started page</a
+      >.
     </p>
   </Section>
   <Section {...page.section[3]}>
