@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { validateUrl } from './utilities.mjs';
+import { validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './utilities.mjs';
 
 describe('validateUrl', () => {
   it('handles a valid url', async () => {
@@ -31,4 +31,39 @@ describe('validateUrl', () => {
     assert(!result.valid);
     assert.match(result.message, /failed request/);
   });
+});
+
+describe('validateOpenSgidTableName', () => {
+  it('handles a valid table', async () => {
+    const result = await validateOpenSgidTableName('county_boundaries', 'boundaries');
+    assert(result.valid);
+  });
+
+  it('handles an invalid table', async () => {
+    const result = await validateOpenSgidTableName('bad_table', 'boundaries');
+    assert(!result.valid);
+    assert.match(result.message, /table/);
+  });
+
+  it('handles an invalid schema', async () => {
+    const result = await validateOpenSgidTableName('county_boundaries', 'schema');
+    assert(!result.valid);
+    assert.match(result.message, /schema/);
+  });
+});
+
+describe('validateOpenDataUrl', () => {
+  const tests = [
+    ['https://opendata.gis.utah.gov/datasets/utah::utah-blm-monuments-and-ncas', true],
+    ['https://data.wfrc.org/datasets/access-to-opportunities-work-related-taz-based/about', false],
+    ['https://opendata.gis.utah.gov/datasets/utahDNR::utah-geochronology', true],
+    ['https://data-uplan.opendata.arcgis.com/datasets/functional-class-alrs', false],
+  ];
+
+  for (const test of tests) {
+    it(`should return ${test[1]} for ${test[0]}`, async () => {
+      const result = await validateOpenDataUrl(test[0]);
+      assert.equal(result.valid, test[1]);
+    });
+  }
 });

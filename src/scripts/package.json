@@ -3,6 +3,14 @@
   "dependencies": {
     "fast-xml-parser": "^4.3.5",
     "glob": "^10.3.10",
-    "ky": "^1.2.2"
+    "google-auth-library": "^9.7.0",
+    "google-spreadsheet": "^4.1.1",
+    "json-to-markdown-table": "^1.0.0",
+    "knex": "^3.1.0",
+    "ky": "^1.2.2",
+    "pg": "^8.11.3",
+    "progress": "^2.0.3",
+    "ts-import": "^5.0.0-beta.0",
+    "uuid": "^9.0.1"
   }
 }

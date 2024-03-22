@@ -1,0 +1,125 @@
+name: Schedule (SGID Index Validation)
+
+on:
+  schedule:
+    - cron: '0 0 * * 1-5'
+  workflow_dispatch:
+  issue_comment:
+    types: [created, edited]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  issues: write
+
+jobs:
+  validate:
+    name: Validate SGID Index
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./src/scripts
+    env:
+      GOOGLE_PRIVATE_KEY: ${{ secrets.SA }}
+
+    steps:
+      - name: ✅ Check comment
+        if: github.event_name == 'issue_comment'
+        run: |
+          if [[ "${{ github.event.comment.body }}" == "/validate-sgid-index" ]]; then
+            echo "Validating SGID Index"
+          else
+            echo "Skipping SGID Index validation"
+            exit 78
+          fi
+
+      - name: ⬇️ Set up code
+        uses: actions/checkout@v4
+        with:
+          show-progress: false
+
+      - name: ⎔ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: 📦 Install script dependencies
+        run: npm install
+
+      - name: ✔ Running script
+        uses: gh640/command-result-action@v1
+        id: validate
+        with:
+          command: node validate-sgid-index.mjs
+          cwd: ./src/scripts
+
+      - name: 📝 Create issue
+        id: create-issue
+        if: steps.validate.outputs.exitCode != 0
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/SGID_INDEX_ISSUE_TEMPLATE.md
+          update_existing: true
+
+      - name: Find Open Issues
+        uses: actions/github-script@v4
+        id: find-issue
+        if: steps.validate.outputs.exitCode == 0
+        with:
+          script: |
+            const { data: issues } = await github.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'sgid index validation'
+            });
+            const issueNumber = issues[0]?.number;
+            console.log('issueNumber: ' + issueNumber);
+
+            return issueNumber;
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v3
+        if: steps.create-issue.outputs.number || steps.find-issue.outputs.result
+        id: find-comment
+        with:
+          issue-number: ${{ steps.create-issue.outputs.number || steps.find-issue.outputs.result }}
+          comment-author: github-actions[bot]
+          body-includes: Validation Output
+
+      - name: ✍️ Updating issue comment
+        if: steps.create-issue.outputs.number || steps.find-issue.outputs.result
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ steps.create-issue.outputs.number || steps.find-issue.outputs.result }}
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            ### SGID Index Validation Output
+
+            #### Results
+            ```
+            ${{ steps.validate.outputs.stdout }}
+            ```
+
+            #### Errors
+            ${{ steps.validate.outputs.stderr }}
+
+      - name: 🚦 Check for errors
+        if: steps.validate.outputs.exitCode != 0
+        run: |
+          echo "::error::Validate stderr${{ steps.validate.outputs.stderr }}"
+          exit ${{ steps.validate.outputs.exitCode }}
+
+      - name: 🎉 Close issue
+        if: steps.validate.outputs.exitCode == 0 && steps.find-issue.outputs.result
+        run: gh issue close --comment "All validations have passed successfully" "${{ steps.find-issue.outputs.result }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
