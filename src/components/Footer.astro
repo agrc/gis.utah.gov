@@ -7,6 +7,8 @@ import govOpsLogo from '@images/footer/govops-logo.png';
 import netlifyLogo from '@images/footer/netlify.svg';
 
 const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
+
+const removeSlash = (path: string) => path.replace(/\/$/, '');
 ---
 
 <section>
@@ -134,7 +136,7 @@ const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
         </li>
         <li>
           <a
-            href={`https://github.com/agrc/gis.utah.gov/tree/main/src/pages${Astro.url.pathname}.astro`}
+            href={`https://github.com/agrc/gis.utah.gov/tree/main/src/pages${removeSlash(Astro.url.pathname)}.astro`}
             class="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
             >Edit this page</a
           >
