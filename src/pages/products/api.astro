@@ -66,13 +66,13 @@ const page: IStandardPageMetadata = {
           actionUrl="https://developer.mapserv.utah.gov/StartupGuide"
         >
           <Image slot="image" src={signUpPhoto} alt="a person filling out a form" class="block h-44" />
-          The UGRC API is a free service that allows you to geocode and search SGID data. To use the API, you need to have
-          an account and create API keys. These key are used to authenticate requests and to give you usage analytics. Click
-          the link below to get started.
+          The UGRC API is a free service that allows you to geocode and search SGID data. To use the API, you need to create
+          an account and then generate keys for each of your applications. These keys are used to authenticate requests and
+          provide you usage analytics. Click the link below to get started.
         </CardWithTopImage>
         <CardWithTopImage title="Documentation" actionText="Start learning" actionUrl="https://api.mapserv.utah.gov/">
           <Image slot="image" src={documentationPhoto} alt="a person reading books" class="block h-44" />
-          There are many ways to use the UGRC API. We have created documentation to help you get started. Click the link
+          There are many ways to use the UGRC API, so we have created documentation to help you get started. Click the link
           below to learn more about the API and how to use it.
         </CardWithTopImage>
         <CardWithTopImage title="API Client" actionText="Start geocoding" actionUrl="/products/sgid/address/api-client">
@@ -82,9 +82,9 @@ const page: IStandardPageMetadata = {
             alt="a person installing a program on a computer with a loading screen"
             class="block h-44"
           />
-          The API Client is a desktop tool to thoughtfully guide you through the process of using the UGRC API to geocode
-          your data. It allows you to geocode your data without any knowledge of the API. It requires no license and is free
-          to use. Click the link below to download the application and visualize your data.
+          The API Client is a desktop application for geocoding Utah addresses with the API without needing to how to use
+          the API directly. It requires no license and is free for anyone to use. Click the link below to download the API
+          Client and start visualizing your data.
         </CardWithTopImage>
       </GridForPillars>
     </Section>
@@ -96,7 +96,7 @@ const page: IStandardPageMetadata = {
         title="Sample Code"
         href="https://github.com/agrc/api.mapserv.utah.gov/tree/development/samples"
       >
-        Sample code calling the API in multiple programming languages
+        Sample code calling the API in multiple programming languages.
       </CardWithPopularLink>
       <CardWithPopularLink title="dart-board" href="https://www.npmjs.com/package/@ugrc/dart-board">
         A react component for geocoding addresses and route/mileposts using UGRC's API.
