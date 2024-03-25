@@ -5,4 +5,4 @@ User-agent: *
 Allow: *
 Crawl-delay: 1
 
-Sitemap: https://gis.utah.gov/sitemap-0.xml
+Sitemap: https://gis.utah.gov/sitemap-index.xml
