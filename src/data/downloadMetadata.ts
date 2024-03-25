@@ -740,7 +740,7 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'energy.oil_gas_fields',
     layerId: 0,
     featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/ArcGIS/rest/services/',
-    oddHubName: 'utah-oil-and-gas-fields'
+    oddHubName: 'utah-oil-and-gas-fields',
   },
   'Utah Energy Corridor Areas': {
     itemId: '3c39e10f78c34cd981f28bde8ad76e14',
@@ -2368,8 +2368,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Health Small Statistical Areas Obesity and Activity': {
     itemId: '5c5c709041d343f18096b7a356831be9',
     name: 'Utah Health Small Statistical Areas Obesity and Activity',
-    featureServiceId: null,
-    openSgid: '',
+    featureServiceId: 'Utah_Health_Small_Statistical_Areas_Obesity_And_Activity',
+    openSgid: 'health.health_small_statistical_areas_obesity_and_activity',
     layerId: 0,
   },
   'Utah House Districts 2022 to 2032': {
@@ -2579,7 +2579,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '67edfe9ded464e3393c1932b4d39a6b2',
     name: 'Utah Health Small Statistical Areas 2020',
     featureServiceId: 'HealthSmallStatisticalAreas2020',
-    openSgid: 'health_small_statistical_areas_2020',
+    openSgid: 'health.health_small_statistical_areas_2020',
     layerId: 0,
   },
   'Utah Tax Areas 2021': {
