@@ -48,9 +48,10 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl px-3 py-2 dark:bg-white/20"
     />
     <p>
-      The Utah Reference Network (TURN) GPS is a high-precision global navigation satellite system (GNSS) that provides
-      real-time, high-accuracy GPS positioning. This central system analyzes the input and adjusts and corrects the data
-      to provide the most accurate locations, usually down to centimeter level.
+      The Utah Reference Network (TURN) GPS is a high-precision global navigation satellite system (GNSS) Continuously
+      Operating Reference Station (CORS) network that provides real-time, high-accuracy GPS positioning. This central
+      system analyzes the input and adjusts and corrects the data to provide the most accurate locations, usually down
+      to centimeter level.
     </p>
   </Section>
   <Section {...page.section[1]}>
@@ -61,14 +62,14 @@ const page: IStandardPageMetadata = {
       alt="Satellites around the planet"
       class="w-full max-w-[400px] rounded-2xl"
     />
-    <p><em>What is a GNSS network and how exactly does it work?</em></p>
+    <p><em>What is a CORS network and how exactly does it work?</em></p>
     <p>
-      A GNSS network consists of permanently located GPS receivers, installed across an area, that generate real-time,
-      high-accuracy GPS positioning. All of the permanently installed GPS receivers send their data to a central system
-      via the internet. This central system analyzes the input and adjusts and corrects the data to provide the most
-      accurate locations, usually down to centimeter level. Our networks use the Trimble PIVOT VRS Platform. The
-      generated data is sent from the GPS receiver to the GPS reference network through a wireless connection using the
-      Networked Transport of RTCM via Internet Protocol (NTRIP).
+      A Continuously Operating Reference System (CORS) providing real-time corrections and post-processing data for
+      Global Navigation Satellite Systems (GNSS), like GPS or Galileo. Our network consists of permanently located GPS
+      receivers installed across Utah and portions of Idaho, Wyoming, and southern Nevada that generate real-time,
+      high-accuracy GPS positioning. These receivers send their data via the Networked Transport of RTCM via Internet
+      Protocol (NTRIP) to a central system that analyzes the input to adjust and correct the data to provide the most
+      accurate locations, usually down to centimeter level. Our network uses the Trimble Pivot VRS Platform.
     </p>
     <p>Our TURN GPS network supports a variety of devices from survey units, to drones and self-driving cars.</p>
   </Section>
