@@ -49,7 +49,7 @@ const page: IStandardPageMetadata = {
         slot="image"
         loading="eager"
         alt="wavy gravy api logo"
-        class="w-full rounded-2xl px-3 py-2 dark:bg-white/70"
+        class="w-full rounded-2xl dark:brightness-200 dark:grayscale"
       />
       <p>
         Elevate your GIS, CAD, and web applications with Discover, a cloud-based web service providing aerial imagery
@@ -83,9 +83,10 @@ const page: IStandardPageMetadata = {
             alt="A person looking at their phone with a fingerprint on the screen and a lock"
             class="block h-44"
           />
-          Utah state agencies, cities, counties, special service districts, educational institutions and their students,
+          Utah state agencies, cities, counties, special service districts, students and faculty at educational institutions,
           and tribal entities (along with formal partners of these groups) can sign up for licensed access to our latest
-          state-wide high-resolution aerial imagery in both streaming and downloadable formats.
+          state-wide high-resolution aerial imagery in both streaming and downloadable formats along with all our base maps
+          and other imagery.
         </CardWithTopImage>
         <CardWithTopImage title="Get connected" actionText="Get started" actionUrl="/documentation/discover/clients">
           <Image
@@ -111,19 +112,22 @@ const page: IStandardPageMetadata = {
         Who qualifies and why.
       </CardWithPopularLink>
       <CardWithPopularLink title="Discover the docs" href="/documentation/discover"
-        >Discover new ways to use Discover
+        >Discover new ways to use Discover.
       </CardWithPopularLink>
-      <CardWithPopularLink title="Atlas" href="https://atlas.utah.gov"
-        >Explore our base maps and licensed imagery in your browser- no account required!
+      <CardWithPopularLink title="atlas.utah.gov" href="https://atlas.utah.gov"
+        >Explore our base maps and licensed imagery in your browser - no account required!
       </CardWithPopularLink>
     </GridForPopularResources>
   </Section>
 
   <Section slot="more-resources" {...page.section[2]}>
     <GridForMoreResources>
-      <CardWithSideImage title="Citing your sources" actionUrl="/documentation/discover/licensed-imagery">
+      <CardWithSideImage
+        title="Citing your sources"
+        actionUrl="/documentation/discover/licensed-imagery#citation-and-logos"
+      >
         <Image slot="image" src={citePhoto} alt="an arm holding a pencil on a piece of paper" class="self-center" />
-        Using the licensed imagery may require additional citation.
+        If you use the licensed imagery in a published product, you need to cite the imagery provider.
       </CardWithSideImage>
       <CardWithSideImage title="Base map update schedule" actionUrl="/documentation/discover/maintenance-schedule">
         <Image slot="image" src={schedulePhoto} alt="a person pointing at a calendar" class="self-center" />
@@ -135,13 +139,13 @@ const page: IStandardPageMetadata = {
   <Section slot="you-might-also-like" {...page.section[3]}>
     <GridForYouMightLike>
       <CardWithSmallLink title="SGID" href="/products/sgid">
-        View the data from the base maps in the SGID.
+        Get the same SGID data we use to build the base maps.
       </CardWithSmallLink>
       <CardWithSmallLink title="UGS aerial imagery database" href="https://imagery.geology.utah.gov/"
         >Travel back in time with historic imagery.
       </CardWithSmallLink>
       <CardWithSmallLink title="USGS TopoView" href="https://ngmdb.usgs.gov/topoview/"
-        >Explore, interact, and download topographic maps from the USGS free of charge.
+        >Explore, compare, and download all the USGS topographic maps free of charge.
       </CardWithSmallLink>
       <CardWithSmallLink title="USGS EarthExplorer" href="https://earthexplorer.usgs.gov/"
         >Download vector, topographical, and remote sensing data.
