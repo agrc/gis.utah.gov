@@ -330,7 +330,7 @@ const DropDownMenu = ({ to, children, currentUri }) => (
   >
     {children}{' '}
     <ChevronDownIcon
-      className="relative top-px ml-1 size-4 text-zinc-200 transition-transform duration-300 ease-in group-data-[state=open]:-rotate-180 dark:text-zinc-50"
+      className="relative top-px ml-1 size-4 text-zinc-600 transition-transform duration-300 ease-in group-data-[state=open]:-rotate-180 dark:text-zinc-50"
       aria-hidden
     />
   </NavigationMenu.Trigger>
