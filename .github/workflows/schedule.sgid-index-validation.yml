@@ -23,6 +23,7 @@ jobs:
     steps:
       - name: ✅ Check comment
         if: github.event_name == 'issue_comment'
+        working-directory: ./
         run: |
           if [[ "${{ github.event.comment.body }}" == "/validate-sgid-index" ]]; then
             echo "Validating SGID Index"
