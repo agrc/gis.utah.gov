@@ -14,6 +14,8 @@ import GridForPopularResources from '@components/page/GridForPopularResources.as
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import TurnDescription from '@partials/TurnDescription.astro';
+
 import { Image } from 'astro:assets';
 
 import getConnectedPhoto from '@images/turn/get-connected.svg';
@@ -56,15 +58,7 @@ const page: IStandardPageMetadata = {
         alt="wavy gravy turn logo"
         class="w-full rounded-2xl px-3 py-2 dark:bg-white/70"
       />
-      <p>
-        The Utah Reference Network (TURN) is a high-precision global navigation satellite system (GNSS) Continuously
-        Operating Reference System (CORS) providing real-time corrections and data for post processing. Our network
-        consists of permanently located GPS receivers installed across Utah and portions of Idaho, Wyoming, and southern
-        Nevada that generate real-time, high-accuracy GPS positioning. These receivers send their data via the Networked
-        Transport of RTCM via Internet Protocol (NTRIP) to a central system that analyzes the input to adjust and
-        correct the data to provide the most accurate locations, usually down to centimeter level. Our network uses the
-        Trimble Pivot VRS Platform.
-      </p>
+      <TurnDescription />
     </Section>
 
     <Section stripe>
