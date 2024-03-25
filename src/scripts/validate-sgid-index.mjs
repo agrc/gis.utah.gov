@@ -10,7 +10,7 @@ import { validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './u
 const downloadMetadata = await tsImport.load('../data/downloadMetadata.ts');
 
 const spreadsheetId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ';
-const ourWebSite = 'https://gis-utah.netlify.app';
+const ourWebSite = 'https://gis.utah.gov';
 
 const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'];
 let client;
