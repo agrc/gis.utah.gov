@@ -78,7 +78,7 @@ export const dataPages: DownloadMetadata = {
     itemId: 'abd5d645b0e144558d0ab15e1f043490',
     name: 'BLM Wilderness Study Areas for Utah',
     featureServiceId: 'Wilderness_BLMWSAs',
-    openSgid: 'boundaries.blm_wilderness_study_areas_for_utah',
+    openSgid: 'planning.blm_wilderness_study_areas_for_utah',
     layerId: 0,
   },
   'Utah Navajo Chapters': {
@@ -1267,9 +1267,11 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah Quaternary Faults': {
-    itemId: 'hosted by UGS',
+    itemId: '9c85978d0fb54570bc60bec467e2fa7f',
     name: 'Utah Quaternary Faults',
-    featureServiceId: 'QuaternaryFaults',
+    featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis',
+    featureServiceId: 'Utah_Quaternary_Faults_20201207',
+    externalHubOrganization: 'utahDNR',
     openSgid: 'geoscience.quaternary_faults',
     layerId: 0,
   },
@@ -2088,14 +2090,14 @@ export const dataPages: DownloadMetadata = {
   'Utah Broadband Service': {
     itemId: '2b479a30791c445eb135e05acf77dbcc',
     name: 'Utah Broadband Service',
-    featureServiceId: 'BroadBandService',
+    featureServiceId: 'BroadbandService',
     openSgid: 'utilities.broadband_service',
     layerId: 0,
   },
   'Utah Streams NHD': {
     itemId: 'd9b5ac9220ff415994b193c9ce022f86',
     name: 'Utah Streams NHD',
-    featureServiceId: 'StreamsNHDHighRes',
+    featureServiceId: 'UtahStreamsNHD',
     openSgid: 'water.streams_nhd',
     layerId: 0,
   },
@@ -2368,8 +2370,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Health Small Statistical Areas Obesity and Activity': {
     itemId: '5c5c709041d343f18096b7a356831be9',
     name: 'Utah Health Small Statistical Areas Obesity and Activity',
-    featureServiceId: 'Utah_Health_Small_Statistical_Areas_Obesity_And_Activity',
-    openSgid: 'health.health_small_statistical_areas_obesity_and_activity',
+    featureServiceId: 'HealthSmallStatisticalAreas2020',
+    openSgid: 'health.health_small_statistical_areas_2020',
     layerId: 0,
   },
   'Utah House Districts 2022 to 2032': {
