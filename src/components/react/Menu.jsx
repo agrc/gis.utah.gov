@@ -8,7 +8,7 @@ import sgidLogo from './sgid-logo.svg';
 export const Menu = ({ children, currentUri }) => {
   return (
     <NavigationMenu.Root className="relative z-10 hidden h-12 min-h-12 items-center bg-zinc-100 lg:flex dark:bg-zinc-800 [&>div]:flex-1">
-      <NavigationMenu.List className="m-0 flex flex-1 list-none px-1 text-center">
+      <NavigationMenu.List className="m-0 flex flex-1 list-none items-center px-1 text-center">
         <NavigationMenu.Item value="home">
           <MenuLink href="/" currentUri={currentUri}>
             Home
@@ -293,7 +293,7 @@ const MenuLink = ({ href, children, currentUri }) => {
       className={classNames(
         'custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200',
         {
-          'text-secondary before:absolute before:-top-[0.25rem] before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
+          'text-secondary before:absolute before:-top-[.55rem] before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
             isActive(href, currentUri),
         },
       )}
