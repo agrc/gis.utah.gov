@@ -57,14 +57,13 @@ const page: IStandardPageMetadata = {
         class="w-full rounded-2xl px-3 py-2 dark:bg-white/70"
       />
       <p>
-        The Utah Reference Network, TURN, GPS is a high-precision global navigation satellite system (GNSS) providing
-        real-time corrections and data for post processing. A GNSS network consists of permanently located GPS
-        receivers, installed across an area, that generate real-time, high-accuracy GPS positioning. All of the
-        permanently installed GPS receivers send their data to a central system via the internet. The central system
-        analyzes the input to adjust and correct the data to provide the most accurate locations, usually down to
-        centimeter level. Our networks use the Trimble PIVOT VRS Platform. The generated data is sent from the GPS
-        receiver to the GPS reference network through a wireless connection using the Networked Transport of RTCM via
-        Internet Protocol (NTRIP).
+        The Utah Reference Network (TURN) is a high-precision global navigation satellite system (GNSS) Continuously
+        Operating Reference System (CORS) providing real-time corrections and data for post processing. Our network
+        consists of permanently located GPS receivers installed across Utah and portions of Idaho, Wyoming, and southern
+        Nevada that generate real-time, high-accuracy GPS positioning. These receivers send their data via the Networked
+        Transport of RTCM via Internet Protocol (NTRIP) to a central system that analyzes the input to adjust and
+        correct the data to provide the most accurate locations, usually down to centimeter level. Our network uses the
+        Trimble Pivot VRS Platform.
       </p>
     </Section>
 
@@ -77,8 +76,8 @@ const page: IStandardPageMetadata = {
         >
           <Image slot="image" src={signUpPhoto} loading="eager" alt="a person filling out a form" class="block h-44" />
           Having centimeter precision is the new norm for surveying and mapping. Join the hundreds of others using the TURN
-          GPS system to improve your accuracy. All that is required is a small yearly subscription and it only takes a few
-          minutes to get started.
+          GPS system to improve your accuracy. All that is required is a small yearly subscription and a few minutes to get
+          started.
         </CardWithTopImage>
         <CardWithTopImage title="Get connected" actionText="Connect now" actionUrl="/documentation/turn/connecting">
           <Image
@@ -88,8 +87,8 @@ const page: IStandardPageMetadata = {
             alt="a person connected to a database with a lock and key shield"
             class="block h-44"
           />
-          Once you have an account you can connect to the network using a variety of devices. We've put together guides for
-          many popular devices. If you don't see your device listed, contact us and we'll help you get connected.
+          Once you have a subscription you can connect to the network. We've put together guides for many popular devices.
+          If you don't see your device listed, contact us and we'll help you get connected.
         </CardWithTopImage>
         <CardWithTopImage title="Documentation" actionUrl="/documentation/turn">
           <Image
@@ -99,8 +98,8 @@ const page: IStandardPageMetadata = {
             alt="a person reading a book learning"
             class="block h-44"
           />
-          There are many artifacts and resources available to help you get the most out of the TURN GPS system. We've put
-          together a list of the most popular resources to help you get started including site logs and maps.
+          There are many resources available to help you get the most out of the TURN GPS system. We've put together a list
+          of the most popular resources to help you get started including site logs and maps.
         </CardWithTopImage>
       </GridForPillars>
     </Section>
@@ -132,17 +131,17 @@ const page: IStandardPageMetadata = {
 
   <Section slot="you-might-also-like" {...page.section[3]}>
     <GridForYouMightLike>
-      <CardWithSmallLink title="SGID" href="/products/sgid">
-        View the data from the base maps in the SGID.
+      <CardWithSmallLink
+        title="What is CORS?"
+        href="https://globalgpssystems.com/gnss/cors-reference-network-understanding-the-importance-of-high-precision-gps/"
+      >
+        Learn how CORS enables high-precision GPS.
       </CardWithSmallLink>
-      <CardWithSmallLink title="UGS aerial imagery database" href="https://imagery.geology.utah.gov/"
-        >Travel back in time with historic imagery.
-      </CardWithSmallLink>
-      <CardWithSmallLink title="USGS TopoView" href="https://ngmdb.usgs.gov/topoview/"
-        >Explore, interact, and download topographic maps from the USGS free of charge.
-      </CardWithSmallLink>
-      <CardWithSmallLink title="USGS EarthExplorer" href="https://earthexplorer.usgs.gov/"
-        >Download vector, topographical, and remote sensing data.
+      <CardWithSmallLink
+        title="NOAA's CORS network"
+        href="https://www.ncei.noaa.gov/products/continuously-operating-reference-stations"
+        >the National Oceanographic and Atmospheric Administration provides a CORS network for work in other areas of
+        the country.
       </CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
