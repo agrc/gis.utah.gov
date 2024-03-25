@@ -323,7 +323,7 @@ const DropDownMenu = ({ to, children, currentUri }) => (
     className={classNames(
       'custom-style group relative flex select-none items-center justify-between gap-1 rounded-full px-4 py-2 text-sm font-semibold leading-none text-zinc-600 outline-none hover:bg-white/20 hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200',
       {
-        'text-secondary before:absolute before:-top-[0.25rem] before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
+        'text-secondary before:absolute before:-top-[0.55rem] before:left-0 before:z-10 before:block before:h-1 before:w-full before:rounded-b-full before:bg-accent':
           isActive(to, currentUri),
       },
     )}
