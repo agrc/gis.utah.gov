@@ -1878,7 +1878,7 @@ export const dataPages: DownloadMetadata = {
   'Utah US Congress Districts 2022 to 2032': {
     itemId: 'b5ef0b24f994467fb4f22b27b1a47e25',
     name: 'Utah US Congress Districts 2022 to 2032',
-    featureServiceId: 'USCongressDistricts2022to2032 ',
+    featureServiceId: 'USCongressDistricts2022to2032',
     openSgid: 'political.us_congress_districts_2022_to_2032',
     layerId: 0,
   },
@@ -2144,7 +2144,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Watersheds Area': {
     itemId: 'eedaf451685b4cbe875ecf692e1b54ff',
     name: 'Utah Watersheds Area',
-    featureServiceId: 'Watersheds_Area',
+    featureServiceId: 'UtahWatershedsArea',
     openSgid: 'water.watersheds_area',
     layerId: 0,
   },
@@ -2424,7 +2424,7 @@ export const dataPages: DownloadMetadata = {
   'Utah School Board Districts 2022 to 2032': {
     itemId: 'ebb7b8e8a0104b448d3bbf3ee82a5580',
     name: 'Utah School Board Districts 2022 to 2032',
-    featureServiceId: 'UtahSchoolBoardDistricts2022to2032 ',
+    featureServiceId: 'UtahSchoolBoardDistricts2022to2032',
     openSgid: 'political.school_board_districts_2022_to_2032',
     layerId: 0,
   },
@@ -2571,7 +2571,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Senate Districts 2022 to 2032': {
     itemId: '5289f23d9e76421f89d9a9ef4864937a',
     name: 'Utah Senate Districts 2022 to 2032',
-    featureServiceId: 'UtahSenateDistricts2022to2032 ',
+    featureServiceId: 'UtahSenateDistricts2022to2032',
     openSgid: 'political.senate_districts_2022_to_2032',
     layerId: 0,
   },
