@@ -433,7 +433,9 @@
     "zipcode"
   ],
   "cSpell.enableFiletypes": [
-    "astro"
+    "astro",
+    "markdown",
+    "mdx"
   ],
   "[astro]": {
     "editor.wordWrapColumn": 120,
