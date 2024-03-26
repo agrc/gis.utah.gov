@@ -57,7 +57,7 @@ jobs:
               process.exit(78);
             }
 
-      - name: ⬇️ Set up code
+      - name: ⬇️ Check out code
         uses: actions/checkout@v4
         with:
           show-progress: false
@@ -88,7 +88,7 @@ jobs:
           filename: .github/SGID_INDEX_ISSUE_TEMPLATE.md
           update_existing: true
 
-      - name: Find Open Issues
+      - name: 🔍 Find Issue
         uses: actions/github-script@v7
         id: find-issue
         if: steps.validate.outputs.exitCode == 0
@@ -116,9 +116,9 @@ jobs:
           comment-author: github-actions[bot]
           body-includes: ${{ env.RESULTS_COMMENT_TITLE}}
 
-      - name: 🕰 Timestamp
+      - name: 🕰 Get Timestamp
         id: timestamp
-        run: echo "::set-output name=result::$(date +'%Y-%m-%d %H:%M:%S')"
+        run: echo "::set-output name=result::$(TZ=America/Denver date +'%Y-%m-%d %H:%M:%S')"
 
       - name: ✍️ Updating issue comment with results
         if: steps.create-issue.outputs.number || steps.find-issue.outputs.result
@@ -130,7 +130,7 @@ jobs:
           body: |
             ### ${{ env.RESULTS_COMMENT_TITLE }}
 
-            *last run time:* ${{ steps.timestamp.outputs.result }}
+            *${{ steps.timestamp.outputs.result }}*
 
             #### Script Output
             ```
