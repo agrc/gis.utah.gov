@@ -23,14 +23,22 @@ jobs:
     steps:
       - name: ✅ Check comment
         if: github.event_name == 'issue_comment'
-        working-directory: ./
-        run: |
-          if [[ "${{ github.event.comment.body }}" == "/validate-sgid-index" ]]; then
-            echo "Validating SGID Index"
-          else
-            echo "Skipping SGID Index validation"
-            exit 78
-          fi
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commentBody = context.payload.comment.body;
+            if (commentBody.startsWith('/validate-sgid-index')) {
+              github.reactions.createForIssueComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: context.payload.comment.id,
+                content: '+1'
+              });
+              console.log('Validating SGID Index');
+            } else {
+              console.log('Skipping SGID Index validation');
+              process.exit(78);
+            }
 
       - name: ⬇️ Set up code
         uses: actions/checkout@v4
@@ -64,7 +72,7 @@ jobs:
           update_existing: true
 
       - name: Find Open Issues
-        uses: actions/github-script@v4
+        uses: actions/github-script@v7
         id: find-issue
         if: steps.validate.outputs.exitCode == 0
         with:
@@ -91,7 +99,11 @@ jobs:
           comment-author: github-actions[bot]
           body-includes: Validation Output
 
-      - name: ✍️ Updating issue comment
+      - name: 🕰 Timestamp
+        id: timestamp
+        run: echo "::set-output name=result::$(date +'%Y-%m-%d %H:%M:%S')"
+
+      - name: ✍️ Updating issue comment with results
         if: steps.create-issue.outputs.number || steps.find-issue.outputs.result
         uses: peter-evans/create-or-update-comment@v4
         with:
@@ -99,14 +111,16 @@ jobs:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ### SGID Index Validation Output
+            ### SGID Index Validation
 
-            #### Results
+            *last run time:* ${{ steps.timestamp.outputs.result }}
+
+            #### Script Output
             ```
             ${{ steps.validate.outputs.stdout }}
             ```
 
-            #### Errors
+            #### Validation Errors
             ${{ steps.validate.outputs.stderr }}
 
       - name: 🚦 Check for errors
