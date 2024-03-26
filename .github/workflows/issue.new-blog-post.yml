@@ -1,0 +1,48 @@
+name: New Issue (Create Blog Post)
+
+on:
+  issues:
+    types: [opened]
+
+env:
+  ISSUE_TITLE: 'New Blog Post'
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ✅ Check Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            if (!github.context.payload.issue.title.startsWith(process.env.ISSUE_TITLE)) {
+              console.log(`Issue title does not start with "${process.env.ISSUE_TITLE}", skipping`);
+              process.exit(78);
+            }
+
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: 📦 Install script dependencies
+        working-directory: scripts
+        run: npm install
+
+      - name: 📝 Create Blog Post
+        working-directory: scripts
+        run: node new-blog.js title ${{ github.event.issue.user.name }}
+
+      - name: 📌 Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'feat: create new blog post'
+          title: 'feat: create new blog post'
+          body: 'This PR was automatically created by the "New Issue" workflow.'
+          branch: feat/new-blog-post-${{ github.event.issue.number }}
+          draft: true
