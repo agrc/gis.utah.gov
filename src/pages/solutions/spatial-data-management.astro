@@ -4,6 +4,7 @@ import Layout from '@layouts/FullWidth.astro';
 import { Pillar, type IStandardPageMetadata } from '@models/types';
 
 import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
@@ -29,7 +30,7 @@ const page: IStandardPageMetadata = {
       actionText: 'Explore our spatial data lifecycle',
       actionUrl: 'https://drive.google.com/file/d/1kDzCLf_UolQqSVZQSzHAHVrtFC4ViEFC/view',
     },
-    { title: 'Tools can help', actionText: 'Developer solutions', actionUrl: '/solutions/for-application-developers' },
+    { title: 'Use our tools', actionText: 'Developer solutions', actionUrl: '/solutions/for-application-developers' },
     { title: 'Participate in the SGID', actionText: 'Read about the SGID', actionUrl: '/documentation/sgid' },
   ]),
 };
@@ -47,13 +48,14 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
-      Data management is the cornerstone of data-driven decision making. Ensuring your data is curated and optimized for
-      use within your agency, by your constituents, and throughout state government is a key to providing services
-      efficiently and effectively, and planning for change.
+      Data management is the cornerstone of data-driven decision making. Before anyone can use your data, they have to
+      be able to find and understand it. Ensuring your data is curated and optimized for use within your agency, by your
+      constituents, and throughout state government is key to planning for change and providing services efficiently and
+      effectively.
     </p>
     <p>
-      UGRC has been creating, accumulating, aggregating, transforming, and hosting data since its inception, so we know
-      a thing or two about data curation and management. No matter where you are in the data life cycle, get in touch to
+      UGRC has been creating, accumulating, aggregating, transforming, and hosting data for over 30 years, so we know a
+      thing or two about data curation and management. No matter where you are in the data life cycle, get in touch to
       explore how we can help you “spatialize” and manage your data better.
     </p>
   </Section>
@@ -65,11 +67,11 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px]"
     />
     <p>
-      Even if your data are not natively “spatial”, or you don’t even know what the word means, UGRC can help to broaden
-      the scope of usefulness of your data by incorporating a locational component. Whether it’s geocoding a list of
-      addresses to find their actual location; aggregating and joining data to an existing boundary or location; or
-      adding spatial attributes from geographic data sets of interest to your business processes, we can help you
-      uncover novel insights by spatially-enabling and enriching your data.
+      Even if your data are not natively spatial, or you're not quite sure what spatial means, UGRC can help enrich your
+      data by incorporating a locational component. Whether it's geocoding a list of addresses to see how they are
+      cluster together, aggregating and joining data to an existing boundary like counties or zip codes to display where
+      a value is highest, or pulling in information from geographically-related datasets like census demographic data,
+      you can use the power of location to gain new insights from your data.
     </p>
   </Section>
   <Section {...page.section[2]}>
@@ -80,12 +82,12 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px]"
     />
     <p>
-      Government runs better with a shared vision and shared data available to all for decision making. Good data is
-      timely, accurate and, most importantly, used. Getting your data into the hands of the people that need it on time
-      and in the right format is important, and may require the ability to maintain data in multiple locations for
-      different purposes. Additionally, understanding the uses of your data critically influences the update cycle to
-      keep it current and reliable. Our long history of data wrangling has taught us a lot about data accessibility and
-      currency that we can pass along and enable for your team, program, or agency.
+      Democracy depends on distributing accurate information as widely as possible to help people make informed
+      decisions. You may need to make your data available in a variety of formats and sources to share it with the
+      broadest possible audience. Additionally, understanding how people use your data will inform how often you update
+      these sources to keep it current and reliable. Our long history of data wrangling has taught us many valuable
+      lessons on how to keep data up to date and shared on multiple different platforms, and we are happy to pass along
+      our knowledge and experience to your team, program, or agency.
     </p>
   </Section>
   <Section {...page.section[3]}>
@@ -96,11 +98,13 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
-      Automating the processes that keep your data useful and available can be a critical time saver. We do that too.
-      UGRC has many scripts and processes that can help you expose your data for use by others. We’ve created tools with
-      a goal of having them be useful beyond our office. In addition to hosting most of our code on GitHub, we have
-      other tools to solve data extraction, transformation, and loading scenarios. Try something off our shelf, or use
-      it as a starting point for your own custom solution.
+      Automating the processes that keep your data useful and available can be a real time saver. As an aggregator of
+      data across the state, UGRC has lots of experience with automating the extract, transform, and load (ETL) process.
+      We create our automation tools with the intent of sharing them with anyone that will benefit from them, and
+      towards this end almost all our work is available in our <ExternalLink href="https://github.com/agrc"
+        >GitHub organization</ExternalLink
+      > under an open source license. You can try using one of our tools "off the shelf," or you can use it as a starting
+      point for your own custom solution.
     </p>
   </Section>
   <Section {...page.section[4]}>
@@ -111,13 +115,13 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
-      Once your data sets are built, accessible, and current, consider contributing them to the State Geographic
-      Information Datasource (SGID) for maximal exposure and usage. The purpose of the SGID is to make the most relevant
-      and authoritative Utah spatial data available to the greatest audience possible. In some cases, UGRC will host
-      data for you, yet the preference is to enable agencies to be informed and responsible data stewards so we can
-      highlight your curated services, particularly through your ArcGIS Enterprise Portal, or ArcGIS Online. We can then
-      share your data directly with other users of our own ArcGIS Hub website to make your work easier for other data
-      consumers to find.
+      Once your datasets are built, accessible, and current, consider contributing them to the State Geographic
+      Information Datasource (SGID) for maximal exposure and usage. The SGID's goal is to make the most relevant and
+      authoritative Utah spatial data available to the largest possible audience. Ideally, we can help people find the
+      data you've already published by adding it to the <a href="/products/sgid/sgid-index">SGID Index</a> or the <a
+        href="https://opendata.gis.utah.gov">SGID on ArcGIS</a
+      >. But, if you don't have the capability to host the data yourself, we can help you publish it to the SGID
+      directly.
     </p>
   </Section>
 </Layout>
