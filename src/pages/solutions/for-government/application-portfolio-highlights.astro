@@ -56,20 +56,20 @@ const page: IStandardPageMetadata = {
     />
 
     <p>
-      UGRC has been building successful and innovative web, mobile, and desktop solutions for a long time. We have a
+      UGRC has been building successful and innovative web, mobile, and desktop solutions for many years, developing a
       history and reputation for delivering high-quality, user-friendly, and reliable applications. We have a team of
-      experienced developers who are passionate about creating solutions that solve real-world problems. Here are some
-      examples of applications that range from simple to complex and display our ability to work with modern web
+      experienced developers who are passionate about creating solutions that solve real-world problems. Our portfolio
+      includes applications that range from simple to complex and display our ability to work with modern web
       development, target mobile devices, and take advantage of AI with computer vision.
     </p>
   </Section>
   <Section {...page.section[1]}>
     <p>
-      The Roadkill Reporter native mobile app allows people to easily report dead animals on or near roads, so those
-      animals can be removed more quickly from highways and freeways by <ExternalLink href="https://wildlife.utah.gov"
-        >DWR</ExternalLink
+      The Roadkill Reporter native mobile app allows people to easily report dead animals on or near roads so that <ExternalLink
+        href="https://wildlife.utah.gov">DWR</ExternalLink
       > and
-      <ExternalLink href="https://udot.utah.gov">UDOT</ExternalLink> employees who have access to the data.
+      <ExternalLink href="https://udot.utah.gov">UDOT</ExternalLink> employees can remove them more quickly from highways
+      and freeways.
     </p>
     <h3>Technology</h3>
     <p>
@@ -87,43 +87,46 @@ const page: IStandardPageMetadata = {
   <Section {...page.section[2]}>
     <p>
       Section corners in the Public Land Survey System (PLSS) form the foundation for all descriptions of private
-      property and public land boundaries in Utah. All legal property descriptions start from PLSS section corner
-      markers, also known as monuments. If you've ever seen a legal description of a parcel, a subdivision development,
-      or even a service district or municipality, you may have noticed that the description and map always starts with a
-      reference to a PLSS section corner. Keeping the correct, precise location of these corners accessible greatly
-      reduces boundary discrepancies and disputes.
+      property and public land boundaries in Utah. These descriptions all start from PLSS section corner markers, also
+      known as monuments. If you've ever seen the legal description of a parcel, a subdivision plat, or even a service
+      district or municipality, you may have noticed that the description always starts with a reference to a PLSS
+      section corner. Keeping the correct, precise location of these corners accessible greatly reduces boundary
+      discrepancies and disputes.
     </p>
-
     <p>
-      This web application allows surveyors to create an account to submit monument record sheets electronically. A
-      standard form was created to unify the information collected. The application then notifies the county of the
-      submission and the data is reviewed and subsequently incorporated into the PLSS data.
+      The Utah PLSS web application allows surveyors to submit monument record sheets electronically through a
+      standardized form. The application then notifies the county of the submission and the data is reviewed and
+      subsequently incorporated into the PLSS data.
     </p>
     <h3>Data Origination</h3>
     <p>
-      Licensed land surveyors perform the section corner location and monumentation, typically by setting a brass cap.
+      Licensed land surveyors locate the section corner location and set the monument, typically by setting a brass cap.
       The surveyor also completes a formal monument record sheet (a.k.a. a 'tie sheet') that is submitted to the
       appropriate county and state entities that preserve the record. Field notes from the survey may also be part of
       the required record.
     </p>
-    <h3>Challenges</h3>
+    <h3>Monument Challenges and Threats</h3>
     <p>
       Each year hundreds of section corners that are used to determine property locations are in danger of being
       destroyed from land disturbances like new road projects, property development, and even conservation projects that
       rehabilitate vegetation after wild land and forest fires.
     </p>
-
     <p>
-      Urban development is expanding into many areas in Utah that have not been surveyed since the early 1900's.
-      Historically, it has been difficult to quickly identify and protect the section corners that may be impacted,
-      while not slowing down the desired pace of development.
+      In addition, urban development is expanding into many areas in Utah that have not been surveyed since the early
+      1900's. Historically, it has been difficult to quickly identify and protect the section corners that may be
+      impacted, while not slowing down the desired pace of development.
     </p>
+    <p>
+      The PLSS web application helps alleviate these challenges by making PLSS data widely available and making it easy
+      for surveyors to submit standardized data when setting or restoring section corner monuments.
+    </p>
+
     <h3>Technology</h3>
     <p>
-      This web application was written using React and <ExternalLink href="https://github.com/agrc/kitchen-sink"
+      We wrote this web application with React and <ExternalLink href="https://github.com/agrc/kitchen-sink"
         >UGRC Components</ExternalLink
-      >. The mapping uses the ArcGIS Maps SDK for JavaScript with <a href="/products/discover/">Discover base maps</a>.
-      The <ExternalLink href="https://api.mapserv.utah.gov">UGRC API</ExternalLink> is used to auto populate information
+      > and use the ArcGIS Maps SDK for JavaScript with <a href="/products/discover/">Discover base maps</a> for mapping.
+      It also uses the <ExternalLink href="https://api.mapserv.utah.gov">UGRC API</ExternalLink> to auto-populate information
       based on location. It is deployed using GitHub Actions to the Google cloud and firebase.
     </p>
     <h3>More resources</h3>
@@ -138,39 +141,41 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[3]}>
     <p>
-      UGRC offers many online services to facilitate the use of GIS and Atlas is a combination of most of those
-      services. Atlas contains the complete and most current <a href="/products/discover">Discover base maps</a>. Atlas
-      also uses most of the <ExternalLink href="https://github.com/agrc/kitchen-sink">UGRC Components</ExternalLink>.
-      Clicking anywhere on the map makes http requests to the <a href="/products/api">UGRC Web API</a> to reverse geocode,
-      search for the city, county, land ownership, elevation, and US National Grid of the point clicked; and display the
-      results in the left panel. For UGRC developers, Atlas is a code base to keep improving its usage of React and the ArcGIS
-      Maps SDK for JavaScript.
-      <ExternalLink href="https://github.com/agrc/atlas">Atlas</ExternalLink> is a GitHub template that you can use to create
-      your own website.
+      Atlas is a combination of many of the online services UGRC provides. It contains our most current <a
+        href="/products/discover">Discover base maps and imagery</a
+      > and uses most of the <ExternalLink href="https://github.com/agrc/kitchen-sink">UGRC Components</ExternalLink>.
+      Clicking anywhere on the map makes HTTP requests to the <a href="/products/api">UGRC Web API</a> to reverse geocode,
+      search for the city, county, land ownership, elevation, and US National Grid of the point clicked, which it displays
+      in the left panel. For UGRC developers, Atlas is a code base to keep improving its usage of React and the ArcGIS Maps
+      SDK for JavaScript. You can use the <ExternalLink href="https://github.com/agrc/atlas">Atlas</ExternalLink> GitHub
+      template as a starting point for your own web app that uses our data and services.
     </p>
   </Section>
   <Section {...page.section[4]}>
     <p>
-      WRI is a partnership among state and federal government agencies, private and public landowners, and non-profit
-      organizations with the purpose of actively restoring and rehabilitating Utah's diverse landscape and waters to
-      promote healthy and resilient ecosystem function and biodiversity. Project origination and implementation occur at
-      a local level, where there is the most direct knowledge of both the challenges facing an area of need, and the
-      solutions to correct them. Five regional teams elect their own leaders; develop proposals across administrative
-      boundaries; review, score and rank project proposals using a comprehensive prioritization score sheet; and assist
-      their members with project implementation and management.
+      The Watershed Restoration Initiative (WRI) is a partnership among state and federal government agencies, private
+      and public landowners, and non-profit organizations for actively restoring and rehabilitating Utah's diverse
+      landscape and waters to promote healthy and resilient ecosystem function and biodiversity. Projects are identified
+      and implemented at the local level, where there is the most direct knowledge of both the challenges facing an area
+      of need and the solutions to correct them. Five regional teams elect their own leaders; develop proposals across
+      administrative boundaries; review, score and rank project proposals using a comprehensive prioritization score
+      sheet; and assist their members with project implementation and management.
     </p>
     <p>
-      To facilitate this cooperative effort, a web application was developed to track the lifecycle of projects,
-      summarize program metrics, and enable participation from team members throughout the state. UGRC's development
-      team was a natural fit for the application due to the spatial nature of WRI project data.
+      To facilitate this cooperative effort, we co-developed a web application with the Division of Technology Services
+      (DTS) to track the lifecycle of projects, summarize program metrics, and enable participation from team members
+      throughout the state. UGRC's development team was a natural fit for the application due to the spatial nature of
+      WRI project data.
     </p>
     <h3>Project Highlights</h3>
     <p>
-      The WRI application was the first project to match UGRC and Utah Division of Technology Services (DTS) software
-      engineers. UGRC built and integrated map functionality into DTS's Java, forms-over-data application by
-      incorporating browser-based, desktop GIS style spatial data editing and analysis with complex business and
-      topology rules. The partnership among the Division of Wildlife Resources, DTS, and UGRC to build and deploy the
-      application proved to be successful, and award-winning.
+      The WRI application was the first project to match UGRC and DTS software engineers. UGRC built and integrated map
+      functionality into DTS's Java forms-over-data application by incorporating browser-based, desktop GIS style
+      spatial data editing and analysis with complex business and topology rules. The partnership among the Division of
+      Wildlife Resources, DTS, and UGRC to build and deploy the application proved to be successful and <ExternalLink
+        href="https://www.govtech.com/cdg/government-experience/best-of-the-web-digital-government-achievement-awards-2016-winners-announced.html"
+        >award-winning</ExternalLink
+      >.
     </p>
     <h3>Technology</h3>
     <p>
@@ -184,21 +189,20 @@ const page: IStandardPageMetadata = {
       One of the critical missions of the <ExternalLink href="https://deq.utah.gov/"
         >Utah Department of Environmental Quality (DEQ)</ExternalLink
       > is to provide access to government records as conveniently as possible. The DEQ Interactive Map allows users to search
-      for and download data regarding sites regulated by DEQ. This application is used by a wide audience of citizens and
-      professionals and has proven to be of much value to DEQ to handle environmental information requests of basic to intermediate
-      complexity.
+      for and download data related to sites regulated by DEQ. This application is used by a wide audience of citizens and
+      professionals and has proven extremely valuable to DEQ in handling basic or intermediate environmental information
+      requests.
     </p>
     <p>
       The overall concept of the DEQ Interactive Map is to organize the data geographically and to integrate the data
-      across divisions and programs. The interface was designed to allow searches by address, city, site name, DEQ
-      program ID number or by zooming in on a map location of interest. The results are displayed on the map and allow
-      access to site specific details. The search results return feature information for programs of DEQ and each of its
-      divisions.
+      across divisions and programs. We designed the interface to allow searches by address, city, site name, DEQ
+      program ID number or by zooming in to a location of interest on the map. It then displays the results on the map
+      and provides access to site-specific details from DEQ programs.
     </p>
     <h3>Data Challenges</h3>
     <p>
-      The main challenge for this project has been trying to gather and standardize the wide variety of data sources so
-      that they can be presented in a consistent manner within the application.
+      The main challenge for this project was trying to gather and standardize the wide variety of data sources so that
+      they can be presented in a consistent manner within the application.
     </p>
     <h3>Technology</h3>
     <p>
@@ -220,19 +224,20 @@ const page: IStandardPageMetadata = {
     <p>
       The parcel GIS data that UGRC standardizes are the most popular vector downloads on this website. The parcel
       viewer makes this data accessible to anyone with a web browser. In turn, it is one of the most popular web
-      applications that UGRC offers. Not every county has their own parcel viewing application, so this application
-      fills in the gaps. When a county does have their own web application, the parcel viewer displays a link to it.
+      applications that we offer. Not every county has their own parcel viewing application, so this application fills
+      in the gaps. When a county does have their own web application, the parcel viewer displays a link to it.
     </p>
     <h3>Data Origination</h3>
     <p>
-      The Recorders Office at the county level creates and maintains parcel data. The counties share the parcel data
-      with UGRC on a schedule. UGRC standardizes the data into a common schema across all 29 counties.
+      The county Recorders Offices create and maintain parcel data for their respective county. The counties share the
+      parcel data with us on a schedule, and we standardize the data into a common schema across all 29 counties and
+      make it <a href="/products/sgid/cadastre/parcels">available</a> in the SGID.
     </p>
     <h3>Challenges</h3>
     <p>
-      Utah contains 29 counties that uniquely handle parcel data. In order to create a statewide data set UGRC <acronym
-        title="Extract, transfer, load">ETL</acronym
-      >'s the county data into a common schema with common fields.
+      Utah's 29 counties each handle handle parcel data in their own unique way. In order to create a statewide data
+      set, UGRC <acronym title="Extract, transfer, load">ETL</acronym>'s the county data into a common schema with
+      common fields.
     </p>
     <h3>Technology</h3>
     <p>
