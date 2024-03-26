@@ -19,6 +19,7 @@ jobs:
         working-directory: ./src/scripts
     env:
       GOOGLE_PRIVATE_KEY: ${{ secrets.SA }}
+      RESULTS_COMMENT_TITLE: SGID Index Validation
 
     steps:
       - name: ✅ Check comment
@@ -35,6 +36,22 @@ jobs:
                 content: '+1'
               });
               console.log('Validating SGID Index');
+
+              github.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.issue.number
+              }).then(({data}) => {
+                const comment = data.find(comment => comment.user.login === 'github-actions[bot]' && comment.body.includes(process.env.RESULTS_COMMENT_TITLE));
+                if (comment) {
+                  github.issues.updateComment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    comment_id: comment.id,
+                    body: `### ${process.env.RESULTS_COMMENT_TITLE}\n\n♻️Processing...♻️`
+                  });
+                }
+              });
             } else {
               console.log('Skipping SGID Index validation');
               process.exit(78);
@@ -97,7 +114,7 @@ jobs:
         with:
           issue-number: ${{ steps.create-issue.outputs.number || steps.find-issue.outputs.result }}
           comment-author: github-actions[bot]
-          body-includes: Validation Output
+          body-includes: ${{ env.RESULTS_COMMENT_TITLE}}
 
       - name: 🕰 Timestamp
         id: timestamp
@@ -111,7 +128,7 @@ jobs:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ### SGID Index Validation
+            ### ${{ env.RESULTS_COMMENT_TITLE }}
 
             *last run time:* ${{ steps.timestamp.outputs.result }}
 
