@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./src/scripts
+        working-directory: ./scripts
     env:
       GOOGLE_PRIVATE_KEY: ${{ secrets.SA }}
       RESULTS_COMMENT_TITLE: SGID Index Validation
@@ -76,7 +76,7 @@ jobs:
         id: validate
         with:
           command: node validate-sgid-index.mjs
-          cwd: ./src/scripts
+          cwd: ./scripts
 
       - name: 📝 Create issue
         id: create-issue

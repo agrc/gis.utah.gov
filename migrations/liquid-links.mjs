@@ -81,7 +81,7 @@ const parsePagesForLinks = async (lookup) => {
     'dist',
     'downloads',
     'node_modules',
-    'src/migrations',
+    'migrations',
     'src/layouts',
     'src/images',
     'src/components',

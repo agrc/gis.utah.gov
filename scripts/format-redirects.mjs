@@ -1,7 +1,7 @@
 import { open } from 'node:fs/promises';
 import { join } from 'node:path';
 
-const redirectPath = join('..', '..', 'public', '_redirects');
+const redirectPath = join('..', 'public', '_redirects');
 const readFile = await open(redirectPath, 'r');
 
 function standardize(url) {

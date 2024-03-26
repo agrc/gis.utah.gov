@@ -7,7 +7,7 @@ import * as tsImport from 'ts-import';
 import { v4 as uuid } from 'uuid';
 import { validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './utilities.mjs';
 
-const downloadMetadata = await tsImport.load('../data/downloadMetadata.ts');
+const downloadMetadata = await tsImport.load('../src/data/downloadMetadata.ts');
 
 const spreadsheetId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ';
 const ourWebSite = 'https://gis.utah.gov';
