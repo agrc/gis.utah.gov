@@ -3,13 +3,13 @@ import { open } from 'node:fs/promises';
 import { join } from 'node:path';
 import { validateUrl } from './utilities.mjs';
 
-const redirectPath = join('..', '..', 'public', '_redirects');
+const redirectPath = join('..', 'public', '_redirects');
 let file = await open(redirectPath, 'r');
 
 // get urls from built files
-const fileUrls = globSync('../../dist/**/*.html', { ignore: '../../dist/404.html' }).map((path) =>
+const fileUrls = globSync('../dist/**/*.html', { ignore: '../dist/404.html' }).map((path) =>
   path
-    .replace('../../dist', '')
+    .replace('../dist', '')
     .replace(/index\.html$/, '')
     .replace(/\/$/, ''),
 );

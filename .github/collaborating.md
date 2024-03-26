@@ -85,7 +85,7 @@ The Website also uses several other Open Source libraries (not limited to) liste
 - Multi-Purpose JavaScript functions are defined on `/src/utilities`
 - Multi-Purpose TypeScript definitions are defined on `/src/types`
 - Centralized data collections are defined in  `/src/data`
-- Multi-Purpose Scripts are stored within `/src/scripts`
+- Multi-Purpose Scripts are stored within `/scripts`
   - Such as link validation
 
 ### Adding new Astro pages
@@ -207,7 +207,7 @@ It is used for defining redirects. (Such as Internal Redirects and External ones
 
 Redirect operations change the original URL to a new one.
 
-Please run [/src/scripts/format-redirect.mjs](./src/scripts/format-redirect.mjs) after making changes to this file to preserve the formatting.
+Please run [/scripts/format-redirect.mjs](./scripts/format-redirect.mjs) after making changes to this file to preserve the formatting.
 
 #### What is `/public/_headers`?
 

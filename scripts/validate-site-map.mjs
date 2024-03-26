@@ -2,7 +2,7 @@ import { XMLParser } from 'fast-xml-parser';
 import { readFileSync } from 'fs';
 import { globSync } from 'glob';
 
-const siteMapPath = '../../dist/sitemap-0.xml';
+const siteMapPath = '../dist/sitemap-0.xml';
 
 const parser = new XMLParser();
 
@@ -11,8 +11,8 @@ const siteMap = parser.parse(readFileSync(siteMapPath, 'utf8'));
 const siteMapUrls = siteMap.urlset.url.map((node) => node.loc);
 
 // get urls from built files
-const fileUrls = globSync('../../dist/**/*.html', { ignore: '../../dist/404.html' }).map((path) =>
-  path.replace('../../dist', 'https://gis.utah.gov').replace(/index\.html$/, ''),
+const fileUrls = globSync('../dist/**/*.html', { ignore: '../dist/404.html' }).map((path) =>
+  path.replace('../dist', 'https://gis.utah.gov').replace(/index\.html$/, ''),
 );
 
 const fileUrlsNotInSiteMap = fileUrls.filter((url) => !siteMapUrls.includes(url));
