@@ -2370,8 +2370,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Health Small Statistical Areas Obesity and Activity': {
     itemId: '5c5c709041d343f18096b7a356831be9',
     name: 'Utah Health Small Statistical Areas Obesity and Activity',
-    featureServiceId: 'HealthSmallStatisticalAreas2020',
-    openSgid: 'health.health_small_statistical_areas_2020',
+    featureServiceId: 'Utah_Health_Small_Statistical_Areas_Obesity_And_Activity',
+    openSgid: 'health.health_small_statistical_areas_obesity_and_activity',
     layerId: 0,
   },
   'Utah House Districts 2022 to 2032': {
