@@ -55,6 +55,8 @@ The Website also uses several other Open Source libraries (not limited to) liste
 
 - Styling is done with [tailwindcss][].
   - Tailwind is used as our CSS Framework and the Foundation of our Design System.
+- [Cuate Illustrations](https://storyset.com/cuate) are the SVG images that we use
+  - We use the `Hidden` background and remove any layers that make the image too large.
 - [Hero Icons](https://heroicons.com/) is an SVG Icon Library used within our Codebase.
 - [Radix UI][] is a collection of customizable and accessible UI components.
 - [Shiki][] is a Syntax Highlighter used for our Code boxes.
