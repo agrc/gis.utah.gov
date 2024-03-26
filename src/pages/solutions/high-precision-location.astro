@@ -7,6 +7,8 @@ import BreadCrumbs from '@components/page/BreadCrumbs.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
+import TurnDescription from '@partials/TurnDescription.astro';
+
 import { Image } from 'astro:assets';
 
 import arrowPhoto from '@images/solutions/arrow.svg';
@@ -45,14 +47,7 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl"
     />
 
-    <p>
-      Our Global Navigation Satellite System (GNSS) network consists of permanently located GPS receivers, installed
-      across an area, that generates real-time, high-accuracy GPS positioning. All of our permanently installed GPS
-      receivers send their data to a central system via the internet. This central system analyzes the input and adjusts
-      and corrects the data to provide the most accurate locations, usually down to centimeter level. Our networks use
-      the Trimble PIVOT VRS Platform. The generated data is sent from the GPS receiver to the GPS reference network
-      through a wireless connection using the Networked Transport of RTCM via Internet Protocol (NTRIP).
-    </p>
+    <TurnDescription />
   </Section>
   <Section {...page.section[1]}>
     <Image
@@ -62,16 +57,16 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px]"
     />
     <p>
-      Our real-time GPS network plays a crucial role in keeping drones in designated flight corridors. This aids a
-      multitude of services including critical medical deliveries.
+      Our real-time GPS network plays a crucial role in keeping drones in designated flight corridors and away from
+      controlled airspaces. This aids a multitude of services including critical medical deliveries.
     </p>
   </Section>
   <Section {...page.section[2]}>
     <Image slot="image" src={carPhoto} alt="A car with a cliche GPS pin above it." class="w-full max-w-[400px]" />
     <p>
-      Navigation of driverless vehicles is greatly improved when using a real-time network versus a standard GPS
-      network. Having a reliable network helps keep drivers safe by preventing collisions and keeping vehicles in the
-      appropriate lane.
+      The centimeter-level precision of a real-time network greatly improves driverless vehicles' navigation compared to
+      standard GPS' potential error of a dozen feet or more. Having a reliable network helps keep drivers safe by
+      preventing collisions and keeping vehicles in the appropriate lane.
     </p>
   </Section>
   <Section {...page.section[3]}>
@@ -82,22 +77,10 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px]"
     />
     <p>
-      High-accuracy GNSS networks have been used in science and research to study and better understand the world around
-      us. Our GNSS network can help support Disaster Response Management, agricultural and forestry, landslide
-      monitoring, and more!
-    </p>
-  </Section>
-  <Section {...page.section[4]}>
-    <Image
-      slot="image"
-      src={weatherPhoto}
-      alt="A walking in the rain under an umbrella."
-      class="w-full max-w-[400px]"
-    />
-    <p>
-      A high-accuracy GNSS network plays a crucial role in meteorology and mitigating the effects of climate change.
-      Real-time measurements can help improve weather predictions, severe weather monitoring, atmospheric modeling, and
-      much more!
+      High-accuracy GNSS networks are used in science and research to study and better understand the world around us.
+      Whether it's monitoring tectonic plate movements measured in millimeters per year or unstable hillsides that shift
+      a couple of feet a month, our GNSS network can help support disaster response management, agricultural and
+      forestry, landslide monitoring, and more!
     </p>
     <p>
       Watch this interesting video of GPS base stations capturing the intensity of Japan's 2011 earthquake, revealing
@@ -111,5 +94,18 @@ const page: IStandardPageMetadata = {
         playlabel="GPS base stations during Japan earthquake"
       />
     </div>
+  </Section>
+  <Section {...page.section[4]}>
+    <Image
+      slot="image"
+      src={weatherPhoto}
+      alt="A walking in the rain under an umbrella."
+      class="w-full max-w-[400px]"
+    />
+    <p>
+      High-accuracy GNSS networks play a crucial role in meteorology and mitigating the effects of climate change.
+      Real-time measurements can help improve weather predictions, severe weather monitoring, atmospheric modeling, and
+      much more!
+    </p>
   </Section>
 </Layout>
