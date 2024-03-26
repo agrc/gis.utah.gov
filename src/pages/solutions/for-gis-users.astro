@@ -25,11 +25,11 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.SOLUTIONS,
   section: stripeSections([
     {},
-    { title: 'The SGID', actionUrl: '/products/sgid' },
-    { title: 'UGRC API', actionUrl: '/products/api' },
-    { title: 'Address geocoding', actionUrl: '/products/sgid/address/api-client' },
-    { title: 'Base maps and imagery', actionUrl: '/products/discover' },
-    { title: 'GPS location services', actionUrl: '/products/turn' },
+    { title: 'The SGID', actionUrl: '/products/sgid', actionText: 'Explore the SGID' },
+    { title: 'UGRC API', actionUrl: '/products/api', actionText: 'Get connected' },
+    { title: 'Address geocoding', actionUrl: '/products/sgid/address/api-client', actionText: `Get geocodin'` },
+    { title: 'Base maps and imagery', actionUrl: '/products/discover', actionText: 'Connect with Discover' },
+    { title: 'GPS location services', actionUrl: '/products/turn', actionText: 'Get precision' },
   ]),
 };
 ---
@@ -46,13 +46,13 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
-      UGRC offers a wide range of solutions for GIS users. We are known for authoritative geospatial data (SGID) however
-      our offerings include base maps, imagery, address locator, a web API, GPS location services, Lidar, and more. Best
-      of all, they are all free to use (with the exception of the GPS service)!
+      UGRC offers a wide range of solutions for GIS users. While we are known for authoritative geospatial data (SGID),
+      our offerings also include base maps, imagery, address locator, a web API, GPS location services, Lidar, and more.
+      Best of all, with the exception of the GPS service, they are free to use!
     </p>
     <p>
-      GIS users are at the forefront of our minds in all of our products. The data and services we provide adhere to
-      industry standards and can be used on a variety of platforms - including macOS and Windows.
+      GIS users are at the forefront of our minds in all our work. The data and services we provide adhere to industry
+      standards and can be used on a variety of platforms - including macOS and Windows.
     </p>
     <p>We encourage you to explore our products, as we are certain to have a solution for your mapping needs.</p>
   </Section>
@@ -60,12 +60,12 @@ const page: IStandardPageMetadata = {
     <Image slot="image" src={dataPhoto} alt="a person connected to a database" class="w-full max-w-[400px]" />
 
     <p>
-      The SGID is a curated geospatial data library. It is the perfect starting point for all mapping-related projects
-      in Utah. UGRC works with state and local governments and federal partners to offer authoritative data through the
-      SGID. We make it easy by making a wide array of data available in one searchable location. The SGID Index is a
-      great place to start your exploration. The search results will point you to more information about the data, its
-      update schedule, and where and how to access it. SGID data is available in various formats, including web map
-      services and direct database access. Visit the <a href="/products/sgid">SGID landing page</a> to learn more.
+      The SGID is our premier curated library of Utah-related geospatial data - the perfect starting point for your map
+      data needs. We work with state and local governments and federal partners to aggregate and share a wide variety of
+      authoritative data in one searchable location. The <a href="/products/sgid/sgid-index">SGID Index</a> is a great place
+      to start your exploration. The search results will point you to more information about the data, its update schedule,
+      and where and how to access it. SGID data is available in various formats, including web map services and direct database
+      access. Visit the <a href="/products/sgid">SGID landing page</a> to learn more.
     </p>
   </Section>
   <Section {...page.section[2]}>
@@ -77,11 +77,11 @@ const page: IStandardPageMetadata = {
     />
 
     <p>
-      The UGRC API is designed for users who want to interact with the SGID through an Application Programming Interface
-      (API). Users query the SGID through web calls often from a desktop or web application. Returned results are then
-      processed on the client side, suiting the needs of the specific application. The UGRC API has been in service for
-      over ten years and is extremely robust. More information can be found on the <a href="/products/api"
-        >Getting Started page</a
+      The UGRC API is designed for users who want to interact with the SGID programmatically through an Application
+      Programming Interface (API). Users query the SGID through web calls, often from a desktop or web application.
+      Returned results are then processed on the client side according to the needs of your specific application. The
+      UGRC API has been in service for over ten years and is extremely robust. More information can be found on the <a
+        href="/products/api">Getting Started page</a
       >.
     </p>
   </Section>
@@ -92,10 +92,10 @@ const page: IStandardPageMetadata = {
       UGRC's address locators are a quick and simple way to convert tabular address data into geospatial data that can
       be mapped! Our address locator is one of the most popular products we offer. Depending on your needs, there are a
       variety of ways to interact with it including through the UGRC API, an installable desktop application (macOS and
-      Windows), or through the locator tab in ArcGIS Pro. Our locator accepts a variety of input values including civic
-      addresses and latitude and longitude coordinates. Depending on the locator style you choose, users can pass in a
-      single address or a list of addresses. You can learn more, including how to access them, on our address locator
-      page.
+      Windows), or through the locator tab in ArcGIS Pro. Our locator accepts a variety of input values including common
+      addresses or latitude and longitude coordinates. Depending on the locator style you choose, users can pass in a
+      single address or a list of addresses. You can learn more, including how to access our locators, on our address
+      locator page.
     </p>
   </Section>
   <Section {...page.section[4]}>
@@ -103,15 +103,21 @@ const page: IStandardPageMetadata = {
 
     <p>
       All mapping projects should begin with a beautiful base map. Base maps are a great way to bring your data to life.
-      They give your data context by putting it on the map. UGRC offers a variety of base maps from a topographic map to
-      a hybrid map with underlying imagery to a lite, subdued map that allows your data to stand out and shine. Each
-      base map was designed with a different intent in mind. You can explore them all on our Open Data site or our
-      Discover server. Similarly, aerial imagery allows you to explore what's on the ground. By exploring the earth's
-      surface with imagery, you can detect things such as urban development vs the natural environment. Paired with
-      machine learning and image detection, the use of aerial imagery for analysis or data creation is limitless. You
-      can explore UGRC's current and historic imagery on our Discover server or download a specific area using our
-      Raster map application. Visit the Discover page to learn more about base maps and imagery.
+      They give your data context by showing what's around it. UGRC offers a variety of <a
+        href="/products/sgid/base-maps">base maps</a
+      > from a topographic map to a hybrid map with underlying imagery to a lite, subdued map that allows your data to stand
+      out and shine. Each base map was designed with a different intent in mind. You can explore them all on our <a
+        href="https://opendata.gis.utah.gov">SGID on ArcGIS site</a
+      > or our Discover server.
     </p>
+    <p>
+      Sometimes the best base map is an aerial image. Aerial imagery is also useful for extracting features or
+      identifying trends over time, like the growth of urban development or impacts of a natural disaster. Paired with
+      machine learning and image detection, the possibilities for analysis or data creation are endless. You can explore
+      UGRC's current and historic imagery on our Discover server or download a specific area using our
+      <a href="https://raster.utah.gov">Raster map application</a>.
+    </p>
+    <p>Visit the Discover page to learn more about our base maps and imagery.</p>
   </Section>
   <Section {...page.section[5]}>
     <Image
@@ -124,10 +130,10 @@ const page: IStandardPageMetadata = {
     <p>
       There are times when commercial-grade GPS is not precise enough. That's where the Utah Reference Network (TURN)
       GPS comes in. Through a network of permanently located GPS ground receivers, UGRC's TURN GPS service offers
-      centimeter accuracy with the use of GPS receivers. Users of this network tend to be surveyors, engineers, miners,
-      and construction companies, however, use of the network is open to anyone with a subscription. Other popular uses
-      include piloting unmanned aerial vehicles (UAV) and high-precision GIS data collection. You can learn more about
-      the network and pricing on the TURN GPS page.
+      centimeter accuracy with the use of GPS receivers. While most users of this network tend to be surveyors,
+      engineers, miners, and construction companies, the network is open to anyone with a subscription. Other popular
+      uses include piloting unmanned aerial vehicles (UAV) and high-precision GIS data collection. You can learn more
+      about the network and pricing on the TURN GPS page.
     </p>
   </Section>
 </Layout>
