@@ -275,7 +275,7 @@ for (const row of rows) {
 
     changed = changed || checksChanged;
   } catch (error) {
-    recordError(error.message, row);
+    recordError(`message: ${error.message} | stack: ${error.stack}`, row);
   }
 
   if (changed) {
