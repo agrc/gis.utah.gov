@@ -16,16 +16,18 @@ import { Menu, SmallMenu } from '@components/react/Menu.jsx';
 import '../styles/tailwind.css';
 
 const { pathname } = Astro.url;
+
 export interface Props extends Omit<IStandardPageMetadata, 'section'> {}
-const { pageTitle = 'UGRC', pillar, bannerHeading, pageDescription = SITE_DESCRIPTION } = Astro.props;
+
+const { pageTitle = 'UGRC', pillar, bannerHeading, pageDescription = SITE_DESCRIPTION, image } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={`${SITE_TITLE} - ${pageTitle}`} description={pageDescription} />
+    <BaseHead title={`${SITE_TITLE} - ${pageTitle}`} description={pageDescription} image={image} />
   </head>
-  <body class="dark:bg-primary-950 bg-white">
+  <body class="bg-white dark:bg-primary-950">
     <Header client:load>
       <svg
         xmlns="http://www.w3.org/2000/svg"

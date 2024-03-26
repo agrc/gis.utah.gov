@@ -76,6 +76,7 @@ export interface IStandardPageMetadata {
   pageDescription?: string;
   pillar?: Pillar;
   section: OptionalPick<SectionProps, 'title' | 'subTitle' | 'actionUrl' | 'actionText'>[];
+  image?: string;
 }
 
 export interface IMetadata {
