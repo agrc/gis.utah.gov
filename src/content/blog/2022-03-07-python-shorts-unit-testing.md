@@ -5,7 +5,7 @@ date: 2022-03-07T16:00:00.000Z
 category: Developer
 tags:
   - python
-cover_image: https://www.python.org/static/img/python-logo.png
+cover_image: /src/images/pillar-blog/2022-03-07-python-shorts-unit-testing/python-logo.png
 cover_image_alt: the python logo
 ---
 

@@ -1,11 +1,13 @@
 ---
-import { getDateParts } from '@utils/page';
 import type { ImageMetadata } from 'astro';
+
 import { Image } from 'astro:assets';
+
+import { getDateParts } from '@utils/page';
 
 interface Props {
   category: string;
-  coverImage: string;
+  coverImage: ImageMetadata;
   coverImageAlt: string;
   date: Date;
   snippet: string;
@@ -16,14 +18,9 @@ interface Props {
   aboveTheFold: boolean;
 }
 
-const { category, coverImage, date, snippet, estimatedReadingTime, slug, title, aboveTheFold } = Astro.props;
+const { category, coverImage, coverImageAlt, date, snippet, estimatedReadingTime, slug, title, aboveTheFold } =
+  Astro.props;
 const { year, month, day } = getDateParts(date);
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}');
-if (!coverImage.startsWith('https')) {
-  if (!images[coverImage]) {
-    throw new Error(`"${coverImage}" not found in "/src/images/pillar-blog/**/*.{jpg,jpeg,png,webp,gif}"`);
-  }
-}
 ---
 
 <div
@@ -33,27 +30,14 @@ if (!coverImage.startsWith('https')) {
     <span class="pl-2">{category}</span>
   </div>
   <a href={`/blog/${slug}/`} class="custom-style flex flex-1 flex-col divide-y divide-black/20 focus:outline-none">
-    {
-      coverImage.startsWith('https') ? (
-        <Image
-          src={coverImage}
-          loading={aboveTheFold ? 'eager' : 'lazy'}
-          alt="The blog post cover art."
-          width={382}
-          height={192}
-          class="sr-hidden h-48 w-full bg-primary/10 object-contain"
-        />
-      ) : (
-        <Image
-          src={images[coverImage]()}
-          loading={aboveTheFold ? 'eager' : 'lazy'}
-          alt="The blog post cover art."
-          width={382}
-          height={192}
-          class="sr-hidden h-48 w-full bg-primary/10 object-contain"
-        />
-      )
-    }
+    <Image
+      src={coverImage}
+      loading={aboveTheFold ? 'eager' : 'lazy'}
+      alt={coverImageAlt}
+      width={382}
+      height={192}
+      class="sr-hidden h-48 w-full bg-primary/10 object-contain"
+    />
     <div class="flex min-w-0 flex-1 p-4 pb-2 pt-2">
       <div class="flex min-w-0 flex-1 flex-col justify-around">
         <p class="line-clamp-1 font-semibold text-primary dark:text-zinc-200">

@@ -5,7 +5,7 @@ date: 2021-12-29T11:00:00.000Z
 category: Developer
 tags:
   - python
-cover_image: https://www.python.org/static/img/python-logo.png
+cover_image: /src/images/pillar-blog/2021-12-29-python-shorts-arrow-code/python-logo.png
 cover_image_alt: the python logo
 ---
 
