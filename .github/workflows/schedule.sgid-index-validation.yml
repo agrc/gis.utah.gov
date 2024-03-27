@@ -118,7 +118,7 @@ jobs:
 
       - name: 🕰 Get Timestamp
         id: timestamp
-        run: echo "::set-output name=result::$(TZ=America/Denver date +'%Y-%m-%d %H:%M:%S')"
+        run: echo "result=$(TZ=America/Denver date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
 
       - name: ✍️ Updating issue comment with results
         if: steps.create-issue.outputs.number || steps.find-issue.outputs.result
