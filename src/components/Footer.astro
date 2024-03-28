@@ -10,9 +10,13 @@ const sha = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'dev';
 
 const formatUrl = (path: string) => {
   path = path.replace(/\/$/, '');
+  if (path === '') {
+    path = '/index';
+  }
+
   if (path.includes('/blog/')) {
-    path = path.replace('/blog/', 'content/blog/');
-    return `pages${path}.md`;
+    path = path.replace('/blog/', '/content/blog/');
+    return `${path}.md`;
   } else {
     return `pages${path}.astro`;
   }
