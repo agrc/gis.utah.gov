@@ -4,6 +4,8 @@ import { Pillar, SgidCategory } from '@models/types';
 
 import type { GetStaticPathsResult } from 'astro';
 
+import { basename } from 'path';
+
 import BreadCrumbs from '@components/data/BreadCrumbs.astro';
 import CardForData from '@components/data/CardForData.astro';
 import Section from '@components/page/Section.astro';
@@ -32,9 +34,12 @@ export async function getStaticPaths() {
 // filter and find all pages for the given category
 const pages = (await Astro.glob<IDataCategory>('../**/*.astro'))
   .filter((page) => {
-    return [page.metadata?.category?.toLowerCase(), page?.metadata?.secondaryCategory?.toLowerCase()].includes(
-      categoryString
-    );
+    const inCategory = [
+      page.metadata?.category?.toLowerCase(),
+      page?.metadata?.secondaryCategory?.toLowerCase(),
+    ].includes(categoryString);
+
+    return inCategory && !basename(page.file).startsWith('_');
   })
   .sort((a, b) => a.metadata.pageTitle.localeCompare(b.metadata.pageTitle));
 

@@ -3,6 +3,7 @@ import type { Props as SectionProps } from '@components/page/Section.astro';
 export interface IDataCategory {
   metadata: IMetadata;
   url: string;
+  file: string;
 }
 
 export enum Pillar {
