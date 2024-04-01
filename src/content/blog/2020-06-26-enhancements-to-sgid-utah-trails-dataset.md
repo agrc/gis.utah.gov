@@ -1,7 +1,7 @@
 ---
 title: Enhancements to the SGID Utah Trails Dataset 06/26/2020
 published: false
-author: UGRC Office
+author: UGRC Staff
 date: 2020-06-26T11:05:48.000Z
 category: SGID Updates
 tags:

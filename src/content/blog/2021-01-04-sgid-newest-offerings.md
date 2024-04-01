@@ -1,7 +1,7 @@
 ---
 title: Connecting to the Newest SGID Offerings
 published: false
-author: UGRC Office
+author: UGRC Staff
 date: 2021-01-04T16:01:51.000Z
 category: SGID
 tags:

@@ -1,6 +1,6 @@
 ---
 title: Meet Jake Adams - New UGRC Staff
-author: Jacob Adams
+author: Jake Adams
 date: 2019-06-25T20:58:02.000Z
 category: UGRC
 tags: []
