@@ -1,7 +1,7 @@
 ---
 title: DNR Continues to Build GIS Value with ROI Documentation
 published: false
-author: Wade Kloos, GIS Director, Utah DNR
+author: Wade Kloos
 date: 2016-05-18T17:33:12.000Z
 category: Guest Blog
 tags:

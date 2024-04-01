@@ -1,7 +1,8 @@
 ---
 title: UC2017-The Science of Where
 published: false
-author: Rick Kelson & Mike Heagin
+author: Rick Kelson
+coauthor: Mike Heagin
 date: 2017-07-31T15:39:16.000Z
 category: Collaboration
 tags:

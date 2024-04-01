@@ -1,7 +1,7 @@
 ---
 title: BLM-Utah Offers New Recreation Maps for Mobile Devices
 published: false
-author: Kimberly Finch, Public Affairs Specialist, Bureau of Land Management-Utah
+author: Kimberly Finch
 date: 2016-05-26T16:10:01.000Z
 category: Guest Blog
 tags:

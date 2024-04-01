@@ -1,7 +1,7 @@
 ---
 title: ArcGIS Online Web Mercator and OpenData
 published: false
-author: Michael M. Foulger
+author: Michael Foulger
 date: 2017-07-31T19:10:45.000Z
 category: SGID Updates
 tags:
