@@ -23,7 +23,9 @@ const { class: className, gradients = 'from-white dark:from-primary-950' } = Ast
   >
   </div>
   <ol
-    class="animate-shake flex w-full gap-2 overflow-x-auto anim-duration-[1000ms] anim-delay-[1000ms] repeat-[2] [-ms-overflow-style:-ms-autohiding-scrollbar] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] motion-reduce:animate-none md:animate-none [&::-webkit-scrollbar]:hidden"
+    itemscope
+    itemtype="https://schema.org/BreadcrumbList"
+    class="flex w-full animate-shake gap-2 overflow-x-auto anim-duration-[1000ms] anim-delay-[1000ms] repeat-[2] [-ms-overflow-style:-ms-autohiding-scrollbar] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] motion-reduce:animate-none md:animate-none [&::-webkit-scrollbar]:hidden"
   >
     <slot />
   </ol>

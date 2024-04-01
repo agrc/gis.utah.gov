@@ -1,4 +1,6 @@
 ---
+import ChevronRight from '@components/page/ChevronRight.astro';
+
 import BreadCrumbChrome from '@components/supporting/BreadCrumbChrome.astro';
 
 import capitalize from 'lodash.capitalize';
@@ -34,7 +36,12 @@ const length = parts.length - 1;
 ---
 
 <BreadCrumbChrome class={className} gradients={gradients}>
-  <li class="relative flex shrink-0 items-center">
+  <li
+    itemprop="itemListElement"
+    itemscope
+    itemtype="https://schema.org/ListItem"
+    class="relative flex shrink-0 items-center"
+  >
     <a
       class="custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200"
       href="/"
@@ -53,48 +60,50 @@ const length = parts.length - 1;
           d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
         ></path>
       </svg>
-      <span class="sr-only">Home</span>
+      <span itemprop="name" class="sr-only">Home</span>
     </a>
+    <meta itemprop="position" content="1" />
   </li>
   {
     parts.map((segment, index) =>
       index !== length ? (
-        <li class="relative flex shrink-0 items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-3 shrink-0 text-primary dark:text-accent"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          class="relative flex shrink-0 items-center"
+        >
+          <ChevronRight />
           <a
+            itemscope
+            itemtype="https://schema.org/WebPage"
+            itemprop="item"
+            itemid={`/${parts
+              .slice(0, index + 1)
+              .join('/')
+              .toLowerCase()}`}
             class="custom-style relative block select-none rounded-full p-2 text-sm font-normal leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100 dark:focus:shadow-zinc-200"
             href={`/${parts
               .slice(0, index + 1)
               .join('/')
               .toLowerCase()}`}
           >
-            {segment.replaceAll('-', ' ')}
+            <span itemprop="name">{segment.replaceAll('-', ' ')}</span>
           </a>
+          <meta itemprop="position" content={(index + 2).toString()} />
         </li>
       ) : (
-        <li class="relative flex shrink-0 items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-3 shrink-0 text-primary dark:text-accent"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          class="relative flex shrink-0 items-center"
+        >
+          <ChevronRight />
           <span class="custom-style px-3 font-medium dark:text-white" aria-current="page">
-            {segment.replaceAll('-', ' ')}
+            <span itemprop="name">{segment.replaceAll('-', ' ')}</span>
           </span>
+          <meta itemprop="position" content={(index + 2).toString()} />
         </li>
       )
     )
