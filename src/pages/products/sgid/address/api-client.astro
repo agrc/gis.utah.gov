@@ -60,7 +60,7 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Section title="Get the app" titlePosition="center" slot="downloads">
-    <div class="flex justify-between gap-10">
+    <div class="flex flex-wrap justify-between gap-10 lg:flex-nowrap">
       <DirectDownloads title="Install links" links={page.links!} />
       <Alert title="Tip"
         >This application is evergreen - meaning it auto updates to the newest version. There is no need to download new
