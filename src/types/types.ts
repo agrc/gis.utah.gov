@@ -152,7 +152,7 @@ export type StewardshipRecord = {
   description: string;
   inActionUrl?: string;
   productPage: string;
-  ugrcStatus: 'deprecated' | 'static' | 'shelved' | null;
+  indexStatus: 'draft' | 'live' | 'invalid' | 'removed' | null;
   server?: {
     host?: string;
     serviceName: string;

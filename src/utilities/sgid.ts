@@ -58,7 +58,7 @@ function toProductTypeEnum(type: string): ProductType {
 }
 
 function etlRow(row): StewardshipRecord | null {
-  if (['shelved', 'deprecated'].includes(row.get('ugrcStatus') ?? '')) {
+  if ((row.get('indexStatus') ?? '') !== 'live') {
     return null;
   }
 
@@ -67,7 +67,7 @@ function etlRow(row): StewardshipRecord | null {
     displayName: row.get('displayName'),
     tableName: row.get('tableName'),
     category: row.get('category'),
-    ugrcStatus: row.get('ugrcStatus') as StewardshipRecord['ugrcStatus'],
+    indexStatus: row.get('indexStatus') as StewardshipRecord['indexStatus'],
     source: row
       .get('dataSource')
       .split(',')
