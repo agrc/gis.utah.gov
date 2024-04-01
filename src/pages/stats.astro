@@ -1,33 +1,76 @@
 ---
-import FullWidth from '@layouts/FullWidth.astro';
+import Layout from '@layouts/FullWidth.astro';
+
+import type { IStandardPageMetadata } from '@models/types';
+
+import Section from '@components/page/Section.astro';
 
 import { getBlogFilters, getBlogPosts } from '@utils/collections';
 
-const posts = await getBlogPosts();
-const tags = await getBlogFilters('tags');
-const categories = await getBlogFilters('categories');
+const allPosts = await getBlogPosts(true);
+const publishedPosts = await getBlogPosts(false);
+const tags = await getBlogFilters('tags', true);
+const categories = await getBlogFilters('categories', true);
 // @ts-ignore
-const pages = await Astro.glob(['./**/*.astro', '!./_partials/**/*']);
+const pages = await Astro.glob(['./**/*.astro', '!./_partials/**/*', '!./**/_*.astro']);
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  pageTitle: 'UGRC website statistics',
+  pageDescription:
+    'Statistics about the UGRC website, including the number of pages, blog posts, currently used categories, and tags.',
+  section: stripeSections([{ title: 'Totals' }, { title: 'Blog categories' }, { title: 'Blog tags' }]),
+};
 ---
 
-<FullWidth pageTitle="Site Statistics" pageDescription="UGRC website statistics">
-  <div class="p-8 dark:text-zinc-200">
-    <p>Number of Astro pages: {pages.length}</p>
-    <p>Number of blog posts: {posts.length}</p>
-    <p>
-      Categories ({categories.length}): {categories.map((category) => category.name).join(', ')}
-    </p>
-    <p>
-      Tags ({tags.length}):
-    </p>
-    <ul>
+<Layout {...page}>
+  <Section {...page.section[0]}>
+    <div class="flex flex-wrap justify-between gap-10">
+      <div class="rounded-lg border p-3 text-center">
+        <p>Astro pages</p>
+        <p class="text-4xl font-black">{pages.length}</p>
+      </div>
+      <div class="rounded-lg border p-3 text-center">
+        <p>Blog posts</p>
+        <p class="text-4xl font-black">{allPosts.length}</p>
+      </div>
+      <div class="rounded-lg border p-3 text-center">
+        <p>Visible blog posts</p>
+        <p class="text-4xl font-black">{publishedPosts.length}</p>
+      </div>
+      <div class="rounded-lg border p-3 text-center">
+        <p>Blog categories</p>
+        <p class="text-4xl font-black">{categories.length}</p>
+      </div>
+      <div class="rounded-lg border p-3 text-center">
+        <p>Blog tags</p>
+        <p class="text-4xl font-black">{tags.length}</p>
+      </div>
+    </div>
+  </Section>
+  <Section {...page.section[1]}>
+    <div class="flex flex-wrap justify-around gap-10">
       {
-        tags.map((tag) => (
-          <li>
-            {tag.name} ({tag.posts.length})
-          </li>
+        categories.map((category) => (
+          <div class="rounded-lg border p-3 text-center">
+            <p class="font-medium">{category.name}</p>
+            <p class="text-xl font-black">{category.posts.length} posts</p>
+          </div>
         ))
       }
-    </ul>
-  </div>
-</FullWidth>
+    </div>
+  </Section>
+  <Section {...page.section[2]}>
+    <div class="flex flex-wrap justify-between gap-10">
+      {
+        tags.map((tag) => (
+          <div class="rounded-lg border p-3 text-center">
+            <p class="font-medium">{tag.name}</p>
+            <p class="text-xl font-black">{tag.posts.length > 1 ? `${tag.posts.length} posts` : 'once'}</p>
+          </div>
+        ))
+      }
+    </div>
+  </Section>
+</Layout>

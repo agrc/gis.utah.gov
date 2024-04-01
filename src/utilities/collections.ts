@@ -92,8 +92,8 @@ export type BlogFilter = {
   posts: DecoratedBlogEntry[];
 };
 
-export async function getBlogFilters(filterType: 'categories' | 'tags' | 'authors'): Promise<BlogFilter[]> {
-  const posts = await getBlogPosts();
+export async function getBlogFilters(filterType: 'categories' | 'tags' | 'authors', all: boolean = false): Promise<BlogFilter[]> {
+  const posts = await getBlogPosts(all);
 
   const filtersWithPosts = posts.reduce((filteredPosts: Record<string, BlogFilter>, post: DecoratedBlogEntry) => {
     function addValue(filterValue: string) {
