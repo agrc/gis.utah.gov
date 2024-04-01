@@ -94,10 +94,10 @@ export default function SgidIndexSearchCard({ astroSite, record }: Props) {
             </pre>
           </div>
         )}
-        {record.source ? (
+        {record.source.length > 0 ? (
           <div>
             <span className="text-sm font-semibold text-secondary dark:text-white">Source: </span>
-            <span>{record.source}</span>
+            <span>{record.source.join(', ')}</span>
           </div>
         ) : null}
       </div>
