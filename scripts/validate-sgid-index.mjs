@@ -218,6 +218,12 @@ async function downloadMetadataCheck(row) {
   }
 }
 
+async function productPageOrItemId(row) {
+  if (!row.get(fieldNames.productPage) && !row.get(fieldNames.itemId)) {
+    recordError(`No "${fieldNames.productPage}" or "${fieldNames.itemId}"`, row);
+  }
+}
+
 const duplicateLookups = {
   openSgidTableName: {},
   itemId: {},
@@ -251,6 +257,7 @@ const checks = [
   itemId,
   duplicates,
   downloadMetadataCheck,
+  productPageOrItemId,
 ];
 
 const rows = await worksheet.getRows();
