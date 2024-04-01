@@ -33,6 +33,7 @@ const fieldNames = {
   displayName: 'displayName',
   hubName: 'hubName',
   id: 'id',
+  inActionUrl: 'inActionUrl',
   itemId: 'itemId',
   openSgid: 'openSgid',
   openSgidTableName: 'openSgidTableName',
@@ -115,6 +116,25 @@ async function productPage(row) {
 
   if (!result.valid) {
     recordError(`productPage: ${result.message}`, row);
+  }
+}
+
+async function inActionUrl(row) {
+  const url = row.get(getFieldName('inActionUrl'));
+
+  if (!url) {
+    // inActionUrl is not a required field
+    return;
+  }
+
+  let result = await validateUrl(url);
+
+  if (result.valid && /\/datasets\//.test(url)) {
+    result = await validateOpenDataUrl(url);
+  }
+
+  if (!result.valid) {
+    recordError(`inActionUrl: ${result.message}`, row);
   }
 }
 
@@ -219,8 +239,8 @@ async function downloadMetadataCheck(row) {
 }
 
 async function productPageOrItemId(row) {
-  if (!row.get(fieldNames.productPage) && !row.get(fieldNames.itemId)) {
-    recordError(`No "${fieldNames.productPage}" or "${fieldNames.itemId}"`, row);
+  if (!row.get(getFieldName('productPage')) && !row.get(getFieldName('itemId'))) {
+    recordError(`No "${getFieldName('productPage')}" or "${getFieldName('itemId')}"`, row);
   }
 }
 
@@ -258,6 +278,7 @@ const checks = [
   duplicates,
   downloadMetadataCheck,
   productPageOrItemId,
+  inActionUrl,
 ];
 
 const rows = await worksheet.getRows();
