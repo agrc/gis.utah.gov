@@ -23,7 +23,7 @@ The Township areas impacted by change in this updated version are shown on the m
 
 #### Download Options
 
-GCDB v2.0, as provided to UGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is available for [download](/products/sgid/cadastre/plss).
+GCDB v2.0, as provided to UGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is available for [download](/products/sgid/cadastre/cadnsdi).
 
 UGRC derived GIS layers that have been updated in the SGID are:
 
@@ -36,4 +36,4 @@ UGRC derived GIS layers that have been updated in the SGID are:
 - SGID10.Cadastre.MetadataGlance_GCDB (available on request)
 - SGID10.Cadastre.SpecialSurveys_GCDB (available on request)
 
-To download and view more information about the data listed above please visit the [plss data page](/products/sgid/cadastre/plss).
+To download and view more information about the data listed above please visit the [plss data page](/products/sgid/cadastre).
