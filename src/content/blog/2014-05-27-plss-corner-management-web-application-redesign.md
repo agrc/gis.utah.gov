@@ -3,7 +3,7 @@ title: PLSS Corner Management Web Application Redesign
 published: false
 author: Jessie Pechmann
 date: 2014-05-27 16:30:10 -0600
-category: GPS-surveyor
+category: Surveyor
 tags:
   - plss
   - surveyor
