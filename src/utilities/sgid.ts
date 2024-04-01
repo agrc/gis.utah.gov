@@ -69,9 +69,10 @@ function etlRow(row): StewardshipRecord | null {
     category: row.get('category'),
     ugrcStatus: row.get('ugrcStatus') as StewardshipRecord['ugrcStatus'],
     source: row
-      .get('datasetSource')
+      .get('dataSource')
       .split(',')
-      .map((source) => source.trim()),
+      .map((source: string) => source.trim())
+      .filter((source: string) => source !== ''),
     dataType: toProductTypeEnum(row.get('productType')),
     description: row.get('description'),
     inActionUrl: row.get('inActionUrl'),
