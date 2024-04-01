@@ -1,4 +1,8 @@
 ---
+import type { Props as SectionProp } from '@components/page/Section.astro';
+
+import Layout from '@layouts/FullWidth.astro';
+
 import ButtonLink from '@components/page/ButtonLink.astro';
 import CardForStatute from '@components/page/CardForStatute.astro';
 import CardWithDate from '@components/page/CardWithDate.astro';
@@ -8,12 +12,10 @@ import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import CardWithTopImage from '@components/page/CardWithTopImage.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
-import Layout from '@layouts/FullWidth.astro';
 
 import { Image } from 'astro:assets';
-import image from '../images/ugrc.svg';
 
-import type { Props as SectionProp } from '@components/page/Section.astro';
+import image from '../../images/ugrc.svg';
 
 const links = [
   { title: 'Gmail' },
