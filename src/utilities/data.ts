@@ -24,6 +24,8 @@ export const convertProductType = (type: ProductType) => {
       return 'Aerial photography';
     case ProductType.GPS_NETWORK:
       return 'GPS network';
+    case ProductType.DASHBOARD:
+      return 'Dashboard website';
     default:
       return type;
   }
