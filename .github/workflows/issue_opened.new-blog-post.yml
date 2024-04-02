@@ -4,21 +4,30 @@ on:
   issues:
     types: [opened]
 
-env:
-  ISSUE_TITLE: 'New Blog Post'
-
 jobs:
   open-pr:
     runs-on: ubuntu-latest
     steps:
-      - name: ✅ Check Issue
-        uses: actions/github-script@v7
+      - name: 🔍 Check issue type
+        run: |
+          if [[ "${{ github.event.issue.title }}" != "✍️ New blog post idea" ]]; then
+            echo "Issue title does not start with '✍️ New blog post idea', skipping"
+            exit 86
+          fi
+
+      - name: 🔬 Check actor
+        uses: tspascoal/get-user-teams-membership@v3
+        id: checkUserMember
         with:
-          script: |
-            if (!github.context.payload.issue.title.startsWith(process.env.ISSUE_TITLE)) {
-              console.log(`Issue title does not start with "${process.env.ISSUE_TITLE}", skipping`);
-              process.exit(78);
-            }
+          username: ${{ github.actor }}
+          team: committers
+          GITHUB_TOKEN: ${{ secrets.ORG_READ_PAT }}
+
+      - name: 🛑 Stop if not member
+        if: ${{ steps.checkUserMember.outputs.isTeamMember == false }}
+        run: |
+          echo "You cannot run this job."
+          exit 86
 
       - name: ⬇️ Checkout Repository
         uses: actions/checkout@v4
@@ -35,7 +44,7 @@ jobs:
 
       - name: 📝 Create Blog Post
         working-directory: scripts
-        run: node new-blog.js title ${{ github.event.issue.user.name }}
+        run: node new-blog.js ${{ github.event.issue.id }}
 
       - name: 📌 Create Pull Request
         uses: peter-evans/create-pull-request@v6
