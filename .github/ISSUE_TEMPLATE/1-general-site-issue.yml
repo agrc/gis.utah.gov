@@ -1,0 +1,48 @@
+name: ⚠️ General site issue
+description: Report a general issue with the gis.utah.gov website.
+title: ⚠️ General site issue
+labels: ['bug']
+assignees:
+  - steveoh
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please feel comfortable to submit an issue if you
+
+        1. have a question,
+        1. want to ask to post new content,
+        1. or if the website isn't working properly for you.
+  - type: input
+    id: page
+    attributes:
+      label: Page with issue
+      description: What page are you on where the issue is visible? Copy and paste the value from the address bar.
+      placeholder: e.g. http://gis.utah.gov/products/sgid
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Issue description
+      description: Describe the reason you are opening an issue?
+      placeholder: e.g. I found a broken link, I can't find the data I need, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Other
