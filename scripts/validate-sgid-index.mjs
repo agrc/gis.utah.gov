@@ -303,7 +303,7 @@ for (const row of rows) {
 
     changed = changed || checksChanged;
   } catch (error) {
-    recordError(`message: ${error.message} | stack: ${error.stack}`, row);
+    recordError(`message: ${error.message} stack: ${error.stack.replaceAll('\n', '<br/>')}`, row);
   }
 
   if (changed) {
