@@ -1,0 +1,93 @@
+name: ✍️ New blog post idea
+description: Request the addition of a new blog post.
+title: ✍️ New blog post idea
+labels: ['blog-post']
+assignees:
+  - steveoh
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For UGRC staff, when you have an idea for a new blog post, please fill out the following form.
+        After submitting this issue, GitHub will create:
+
+        1. a new branch for you to work on the blog post,
+        1. a new markdown file in the `/src/content/blog` directory with the correct date and title you provide,
+        1. a new folder in the `/src/pillar-blog` directory with the same title you provide,
+
+        Find your file in the new branch and start writing your blog post. Add images to the new folder created for you.
+        When you're ready to publish, create a pull request.
+
+        This process will help us remove file naming and location issues as well as keep track of ideas to ensure
+        that we're writing about the right topics.
+
+  - type: dropdown
+    id: author
+    attributes:
+      label: Blog author
+      multiple: false
+      description: Who is writing the blog?
+      options:
+        - Denise Peterson
+        - Greg Bunce
+        - Hang Chou
+        - Jake Adams
+        - Matt Peters
+        - Michael Foulger
+        - Nathan Kota
+        - Rick Kelson
+        - Scott Davis
+        - Sean Fernandez
+        - Steve Gourley
+        - Zach Beck
+      default: 1
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Blog title
+      description: What is the title of your blog post? This will end up in the url so keep it short and to the point. This should be greater than 15 characters but less than 71 are preferred.
+      placeholder: e.g. The Surprising Truth About Maps
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Blog description
+      description: What is the search engine result paragraph summary to entice readers to click the link? This should be
+      placeholder: e.g. There's more to maps than meets the eye! Discover the surprising ways maps can mislead & how they can be powerful tools.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Blog category
+      multiple: false
+      description: What category does your content fit into?
+      options:
+        - API
+        - Collaboration
+        - Developer
+        - Discover
+        - Guest Blog
+        - SGID
+        - SGID Update
+        - Surveyor
+        - TURN
+        - UGRC
+      default: 9
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        > [!Tip]
+        > 🙈🙈🙈 Please ignore everything below this line.
+  - type: input
+    id: type
+    attributes:
+      label: <!---->
+      value: <!-- bot = {"type":"blog-post"} -->
+    validations:
+      required: true
