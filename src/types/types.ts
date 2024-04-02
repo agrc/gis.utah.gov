@@ -118,6 +118,7 @@ export enum ProductType {
   ELEVATION_RASTER,
   IMAGERY_RASTER,
   GPS_NETWORK,
+  DASHBOARD,
 }
 
 export interface IHubDownload {
