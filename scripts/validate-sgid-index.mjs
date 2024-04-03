@@ -39,7 +39,7 @@ const fieldNames = {
   openSgidTableName: 'openSgidTableName',
   productPage: 'productPage',
   serverLayerId: 'serverLayerId',
-  ugrcStatus: 'ugrcStatus',
+  indexStatus: 'indexStatus',
 };
 
 function getFieldName(name) {
@@ -287,11 +287,11 @@ buildDuplicateLookups(rows);
 let updatedRowsCount = 0;
 console.log(`checking ${rows.length} rows`);
 const progressBar = new ProgressBar(':bar :percent ETA: :etas ', { total: rows.length });
-const skipStatuses = ['deprecated', 'shelved'];
+const skipStatuses = ['removed', 'draft'];
 for (const row of rows) {
   progressBar.tick();
 
-  if (skipStatuses.includes(row.get(getFieldName('ugrcStatus'))?.toLowerCase())) {
+  if (skipStatuses.includes(row.get(getFieldName('indexStatus'))?.toLowerCase())) {
     continue;
   }
 
