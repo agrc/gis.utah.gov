@@ -226,8 +226,8 @@ async function downloadMetadataCheck(row) {
   ];
 
   for (const [sgidIndexField, metadataField] of metadataChecks) {
-    const sgidIndexValue = row.get(sgidIndexField).toString();
-    const metadataValue = metadata[metadataField].toString();
+    const sgidIndexValue = row.get(sgidIndexField)?.toString();
+    const metadataValue = metadata[metadataField]?.toString();
 
     if (sgidIndexValue !== metadataValue) {
       recordError(
