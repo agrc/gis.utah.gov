@@ -1,4 +1,6 @@
 ---
+import type { ImageMetadata } from 'astro';
+
 import GoogleAnalytics from '@components/page/GoogleAnalytics.astro';
 
 interface Props {
@@ -44,4 +46,4 @@ const { title, description, image = '/default-social-card.png' } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(typeof image === 'string' ? image : image.src, Astro.url)} />
 
-<GoogleAnalytics id={GA_ID} />
+{import.meta.env.PROD && (<GoogleAnalytics id={GA_ID} />)}
