@@ -10,7 +10,10 @@ const { id } = Astro.props;
 <script type="text/partytown" is:inline define:vars={{ id }}>
   window.dataLayer = window.dataLayer || [];
 
-  const gtag = () => window.dataLayer.push(arguments);
+  window.gtag = function gtag() {
+    window.dataLayer.push(arguments);
+  };
+
   gtag('js', new Date());
   gtag('config', id);
 </script>
