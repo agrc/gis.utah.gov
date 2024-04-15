@@ -5,23 +5,25 @@ type Props = {
 
 const { id } = Astro.props;
 ---
+
 <script is:inline>
   partytown = {
     forward: [
-            'dataLayer.push',
-            'analytics.track',
-            'analytics.identify',
-            'analytics.group',
-            'analytics.reset',
-            'analytics.user',
-            'analytics.alias',
-          ]
+      'dataLayer.push',
+      'analytics.track',
+      'analytics.identify',
+      'analytics.group',
+      'analytics.reset',
+      'analytics.user',
+      'analytics.alias',
+    ],
   };
 </script>
 <script type="text/partytown" is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${id}`}></script>
 <script type="text/partytown" is:inline define:vars={{ id }}>
   window.dataLayer = window.dataLayer || [];
-  window.gtag = () => window.dataLayer.push(arguments);
-  window.gtag('js', new Date())
-  window.gtag('config', id);
+
+  const gtag = () => window.dataLayer.push(arguments);
+  gtag('js', new Date());
+  gtag('config', id);
 </script>
