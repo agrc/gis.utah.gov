@@ -1,7 +1,7 @@
 ---
 title: Utah SGID Statewide Roads Data Layer Updates
 author: Greg Bunce
-date: 2024-03-08T08:30:00.000Z
+date: 2024-04-15T08:30:00.000Z
 category: SGID Updates
 tags:
   - roads
@@ -19,14 +19,13 @@ The following are highlights from this month's update.
 
 New roads were added and road names and address ranges were updated for the following counties:
 
-- **Cache County:** Obtained roads data on 02/07/2024. Previous update was on 12/15/2023.
-- **Carbon County:** Obtained roads data on 02/21/2024. Previous update was on 01/12/2024.
-- **Davis County:** Obtained roads data on 02/20/2024. Previous update was on 02/09/2024.
-- **Kane County:** Obtained roads data on 12/15/2023. Previous update was on 02/09/2024.
-- **Salt Lake County:** Obtained roads data on 02/20/2024. Previous update was on 02/09/2024.
-- **Utah County:** Obtained roads data on 02/20/2024. Previous update was on 02/09/2024.
-- **Washington County:** Obtained roads data on 02/20/2024. Previous update was on 02/09/2024.
-- **Weber County:** Obtained roads data on 02/26/2024. Previous update was on 02/09/2024.
+- **Box Elder County:** Obtained roads data on 04/08/2024. Previous update was on 01/12/2024.
+- **Iron County:** Obtained roads data on 03/13/2024. Previous update was on 01/12/2024.
+- **Juab County:** Obtained roads data on 04/03/2024. Previous update was on 06/13/2022.
+- **Salt Lake County:** Obtained roads data on 03/13/2024. Previous update was on 03/08/2024.
+- **Utah County:** Obtained roads data on 03/19/2024. Previous update was on 03/08/2024.
+- **Washington County:** Obtained roads data on 03/25/2024. Previous update was on 03/08/2024.
+- **Weber County:** Obtained roads data on 03/25/2024. Previous update was on 03/08/2024.
 
 #### UDOT Route System
 
