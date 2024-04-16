@@ -25,12 +25,11 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  application: 'https://raster.utah.gov/?products=2',
   updateHistory: [`January 2018`],
   links: [
     {
-      title: 'Download 10 or 30 meter 3DEP Digital Elevation Models (DEMs)',
-      url: 'https://raster.utah.gov/?products=2',
+      title: '10 and 30 meter 3DEP Digital Elevation Models (DEMs)',
+      url: 'https://raster.utah.gov/?products=2&title=USGS%203DEP%20Digital%20Elevation%20Models',
     },
   ],
 };
@@ -72,8 +71,8 @@ const page: IPageMetadata = {
     </p>
   </Fragment>
 
-  <Section title="Use the service" slot="downloads" titlePosition="center">
-    <DirectDownloads title="Download 10 or 30 meter 3DEP Digital Elevation Models (DEMs)" links={page.links!} />
+  <Section title="Get the data" slot="downloads" titlePosition="center">
+    <DirectDownloads title="Download via the raster app" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
