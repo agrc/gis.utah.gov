@@ -11,6 +11,8 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 import BulletedList from '@components/page/BulletedList.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -73,8 +75,9 @@ const page: IPageMetadata = {
     <p>
       James Wingate, formerly of Blue Stakes, compiled most of the address coordinate system descriptions listed below.
       UGRC will update this list as more information is brought to our attention. If you have additional information or
-      corrections to contribute, please contribute % include contact.html subject=page.pageTitle
-      contact=site.data.contacts.address_grids text='or email' %
+      corrections to contribute, please <ExternalLink
+        href="https://github.com/agrc/gis.utah.gov/blob/main/.github/contributing.md">contribute</ExternalLink
+      > directly or email <Contacts subject={page.pageTitle} contactKey="address_grids" inline />.
     </p>
     <p>
       UGRC created this polygon feature class to approximate the boundaries of each local address coordinate system
