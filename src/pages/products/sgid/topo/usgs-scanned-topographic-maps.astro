@@ -31,7 +31,7 @@ const page: IPageMetadata = {
   updateHistory: [`2008`],
   links: [
     {
-      title: 'Download from Raster app',
+      title: 'USGS Topographic Maps',
       url: 'https://raster.utah.gov/?products=5&title=USGS%20Topo%20Maps',
     },
   ],
@@ -56,7 +56,7 @@ const page: IPageMetadata = {
   </Fragment>
 
   <Section title="Get the data" slot="downloads" titlePosition="center">
-    <DirectDownloads title="Links" links={page.links!} />
+    <DirectDownloads title="Download via the raster app" links={page.links!} />
   </Section>
 
   <Fragment slot="description">
