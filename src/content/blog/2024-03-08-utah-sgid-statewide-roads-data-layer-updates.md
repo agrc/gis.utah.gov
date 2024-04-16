@@ -26,7 +26,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Salt Lake County:** Obtained roads data on 02/20/2024. Previous update was on 02/09/2024.
 - **Utah County:** Obtained roads data on 02/20/2024. Previous update was on 02/09/2024.
 - **Washington County:** Obtained roads data on 02/20/2024. Previous update was on 02/09/2024.
-- **Weber County:** Obtained roads data on 02/26/2024. Previous update was on 02/09/20244.
+- **Weber County:** Obtained roads data on 02/26/2024. Previous update was on 02/09/2024.
 
 #### UDOT Route System
 
