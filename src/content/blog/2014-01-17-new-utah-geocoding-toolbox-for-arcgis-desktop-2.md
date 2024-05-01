@@ -1,7 +1,7 @@
 ---
 title: New Utah Geocoding Toolbox for ArcGIS Desktop
 published: false
-author: UGRC Dev Team
+author: Steve Gourley
 date: 2014-01-17T11:57:08.000Z
 category: Developer
 tags:
