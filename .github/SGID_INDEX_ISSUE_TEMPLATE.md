@@ -7,4 +7,4 @@ Validation errors have been detected in the [SGID Index](https://docs.google.com
 
 GitHub Actions should post a comment with the details shortly...
 
-To rerun the validation script, add a new comment that contains the following text: `/validate-sgid-index`.
+To rerun the validation script, add a new comment that starts with the following text: `/validate-sgid-index`.
