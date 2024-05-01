@@ -205,9 +205,9 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 
 - ESRI. “History Up Close.” 2015. Accessed August 19, 2019. [https://www.esri.com/~/media/Files/Pdfs/about-esri/esri-history-up-close](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/about-esri/esri-history-up-close.pdf).
 
-- Fisk, Dale. “Programming with Punched Cards.” Columbia University. Accessed August 19, 2019. http://www.columbia.edu/cu/computinghistory/fisk.pdf.
+- Fisk, Dale. “Programming with Punched Cards.” Columbia University. Accessed August 19, 2019. https://www.columbia.edu/cu/computinghistory/fisk.pdf.
 
-- Friendly, M. & Denis, D. J. Early SYMAP image of Connecticut. 2001. “1950-1974: Re-birth of data visualization” article on Milestones in the history of thematic cartography, statistical graphics, and data visualization site. http://www.datavis.ca/milestones/. Accessed August 29, 2019.
+- Friendly, M. & Denis, D. J. Early SYMAP image of Connecticut. 2001. “1950-1974: Re-birth of data visualization” article on Milestones in the history of thematic cartography, statistical graphics, and data visualization site. https://www.datavis.ca/milestones/. Accessed August 29, 2019.
 
 - Garfield, Simon. On the Map: A Mind-Expanding Exploration of the Way the World Looks, 192, 194. New York: Gotham Books, 2013.
 
@@ -223,11 +223,11 @@ Note: a special thanks to the editor, Anna Tribolet for her awesome editing skil
 
 - HowToWilderness.com. Aerial Photo Stowe VT. Retrieved from “Reading a Map” article. https://howtowilderness.com/map-training/.
 
-- Jones, Douglas W. “Punched Cards: A brief illustrated technical history.” The University of Iowa Department of Computer Science. Last modified June 28, 2017. Accessed August 19, 2019. http://homepage.divms.uiowa.edu/~jones/cards/history.html.
+- Jones, Douglas W. “Punched Cards: A brief illustrated technical history.” The University of Iowa Department of Computer Science. Last modified June 28, 2017. Accessed August 19, 2019. https://homepage.divms.uiowa.edu/~jones/cards/history.html.
 
-- Library of Congress. Image of punched card of Herman Hollerith. 1895. Retrieved from Wikipedia Commons image “File:Hollerith Punched Card.jpg.” http://memory.loc.gov/mss/mcc/023/0008.jpg.
+- Library of Congress. Image of punched card of Herman Hollerith. 1895. Retrieved from Wikipedia Commons image “File:Hollerith Punched Card.jpg.” https://memory.loc.gov/mss/mcc/023/0008.jpg.
 
-- Micronautes. Broad Street Map/Broadwick Street Water Pump. 2017. Retrieved from “John Snow and cholera” article by Laura Gómez. http://unautes.com/index.php/2017/11/16/john-snow-and-cholera/?lang=en.
+- Micronautes. Broad Street Map/Broadwick Street Water Pump. 2017. Retrieved from “John Snow and cholera” article by Laura Gómez. https://unautes.com/index.php/2017/11/16/john-snow-and-cholera/?lang=en.
 
 - Ordnance Survey. “Our History.” 2019. Accessed August 19, 2019. [https://www.ordnancesurvey.co.uk/about/overview/history.html](https://www.ordnancesurvey.co.uk/about/history).
 

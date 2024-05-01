@@ -9,7 +9,7 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-Hi there! I’m [Christy](https://christyheaton.github.io/). I work at a small consulting firm in downtown Seattle called [SGSI](https://web.archive.org/web/20160513113658/http://sgsi.com:80/). I also teach a summer GIS Programming course at the [University of Washington](https://geography.washington.edu/) and organize a Meetup group called [Maptime Seattle](https://web.archive.org/web/20160719182617/http://www.meetup.com:80/MaptimeSEA/).
+Hi there! I’m [Christy](https://christyheaton.github.io/). I work at a small consulting firm in downtown Seattle called [SGSI](https://web.archive.org/web/20160513113658/https://sgsi.com:80/). I also teach a summer GIS Programming course at the [University of Washington](https://geography.washington.edu/) and organize a Meetup group called [Maptime Seattle](https://web.archive.org/web/20160719182617/https://www.meetup.com:80/MaptimeSEA/).
 
 Back in November 2009, I got my professional start as a GIS intern at the UGRC. During my time at UGRC I was involved in large-scale projects such as the Utah Broadband Project, the 2012 Re-Precincting Analysis, the Utah Historic Buildings map database, and the creation of the previous edition of UGRC website (version 5, I'm told). In 2012 I was accepted into the Masters in GIS program at the University of Washington, left my job at the UGRC, and made the big move to Seattle. I’m very happy with where I am in my career, and I have my start at UGRC to thank for that!
 
@@ -17,7 +17,7 @@ In this post, I'd like to share the top 4 things I learned while working at UGRC
 
 ### **1. The Value of Coding**
 
-While working at the UGRC I was often encouraged to find a way to automate repetitive tasks. While it was outside of my comfort zone and what I’d learned in school, I began to look into Python programming. Thanks to the help and guidance of developers at UGRC, I was able to save time and make my work more accurate by using Python. Once I used Python to write a script that identified the level of precision for the TURN GPS network and displayed the results on the [July 2012 Utah Broadband Project’s Map of the Month](https://web.archive.org/web/20160502051948/http://broadband.utah.gov:80/2012/07/25/july-2012-map-of-the-month-the-utah-reference-network-turn/). So cool! Now I use Python as often as possible in both ArcGIS and QGIS.
+While working at the UGRC I was often encouraged to find a way to automate repetitive tasks. While it was outside of my comfort zone and what I’d learned in school, I began to look into Python programming. Thanks to the help and guidance of developers at UGRC, I was able to save time and make my work more accurate by using Python. Once I used Python to write a script that identified the level of precision for the TURN GPS network and displayed the results on the [July 2012 Utah Broadband Project’s Map of the Month](https://web.archive.org/web/20160502051948/https://broadband.utah.gov:80/2012/07/25/july-2012-map-of-the-month-the-utah-reference-network-turn/). So cool! Now I use Python as often as possible in both ArcGIS and QGIS.
 
 ### **2. Networking**
 
@@ -25,7 +25,7 @@ Professional networking has been key to finding interesting career opportunities
 
 ### **3. Making a Pretty Map**
 
-Making great maps is harder than you’d think. It requires a mixture of art, understanding of data, and the message you’re trying to give to the viewer. The more you can get a happy mix of these things into your map, the more attractive and effective it will be. Some people just have a knack for these things, but in my experience only practice and an understanding of map making best practices yields improvement. At the UGRC I was given the incredibly fun job of making the Map of the Month of the Utah Broadband Project. Check out my favorite [map](https://web.archive.org/web/20160502051401/http://broadband.utah.gov:80/2012/06/21/june-2012-map-of-the-month-national-parks/)!
+Making great maps is harder than you’d think. It requires a mixture of art, understanding of data, and the message you’re trying to give to the viewer. The more you can get a happy mix of these things into your map, the more attractive and effective it will be. Some people just have a knack for these things, but in my experience only practice and an understanding of map making best practices yields improvement. At the UGRC I was given the incredibly fun job of making the Map of the Month of the Utah Broadband Project. Check out my favorite [map](https://web.archive.org/web/20160502051401/https://broadband.utah.gov:80/2012/06/21/june-2012-map-of-the-month-national-parks/)!
 
 ### **4. Giving Talks**
 

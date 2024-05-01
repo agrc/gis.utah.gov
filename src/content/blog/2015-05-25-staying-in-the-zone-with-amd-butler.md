@@ -13,7 +13,7 @@ cover_image_alt: ugrc social card
 
 [**Update(3/17/16)**: This plugin has been ported to an [Atom Editor](https://web.archive.org/web/20150524221559/https://atom.io/) package called [amdbutler](https://web.archive.org/web/20151220201733/https://atom.io/packages/amdbutler).]
 
-<p>A few months ago, I built a simple plugin for <a href="http://www.sublimetext.com/3">Sublime Text 3</a>&nbsp;for managing <a href="https://github.com/amdjs/amdjs-api/blob/master/AMD.md">AMD</a>&nbsp;dependencies called <a href="https://packagecontrol.io/packages/AMD%20Butler">AMD Butler</a>. Now it's hard for me to picture coding without it. If/when I make the switch to <a href="https://atom.io/">Atom</a>&nbsp;this will be the first thing that I port over from Sublime.</p>
+<p>A few months ago, I built a simple plugin for <a href="https://www.sublimetext.com/3">Sublime Text 3</a>&nbsp;for managing <a href="https://github.com/amdjs/amdjs-api/blob/master/AMD.md">AMD</a>&nbsp;dependencies called <a href="https://packagecontrol.io/packages/AMD%20Butler">AMD Butler</a>. Now it's hard for me to picture coding without it. If/when I make the switch to <a href="https://atom.io/">Atom</a>&nbsp;this will be the first thing that I port over from Sublime.</p>
 <p>AMD Butler is all about staying in the zone. First, let's take a look at life without it:</p>
 <ol>
 <li>Get a great idea</li>
@@ -35,7 +35,7 @@ cover_image_alt: ugrc social card
 <li>Decide to add an AMD dependency</li>
 <li>Execute the AMD Butler add command</li>
 <li>Type the first few letters of the module id and hit enter</li>
-<li>Continue coding <a href="http://www.joelonsoftware.com/articles/fog0000000068.html">in the zone</a></li>
+<li>Continue coding <a href="https://www.joelonsoftware.com/articles/fog0000000068.html">in the zone</a></li>
 </ol>
 <p>This is what it looks like:</p>
 

@@ -9,7 +9,7 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-<p>I'm a huge fan of <a href="http://www.sublimetext.com/3">Sublime Text 3</a>. I love it's simplicity and strong package community. Here's a list of my favorite packages and config tweaks:</p>
+<p>I'm a huge fan of <a href="https://www.sublimetext.com/3">Sublime Text 3</a>. I love it's simplicity and strong package community. Here's a list of my favorite packages and config tweaks:</p>
 <h3>
 Packages</h3>
 <p><a href="https://sublime.wbond.net/installation">Package Control</a>&nbsp;- This enables you to easily search for and install packages. This is always the first thing that I do with a new install of Sublime.<br />
@@ -27,12 +27,12 @@ Packages</h3>
 <h3>
 Themes</h3>
 </div>
-<p><a href="http://colorsublime.com/">http://colorsublime.com/</a><br />
+<p><a href="https://colorsublime.com/">https://colorsublime.com/</a><br />
 Argonaut<br />
 Flatland<br />
 Soda<br />
 Spacegray<br />
-Font: <a href="http://blogs.adobe.com/typblography/2012/09/source-code-pro.html">Source Code Pro</a></p>
+Font: <a href="https://blogs.adobe.com/typblography/2012/09/source-code-pro.html">Source Code Pro</a></p>
 <ul>
 </ul>
 <div>
@@ -42,5 +42,5 @@ Config</h3>
 <div>
 <script src="https://gist.github.com/stdavis/8698294.js"></script>
 </div>
-<p>Notice that Vintage does not show up in my ignored_packages and I even have it default to start in <a href="http://www.sublimetext.com/docs/3/vintage.html">vintage command mode</a>. I made this switch about a year ago and have never looked back. I really feel like I am more efficient getting around and editing code.</p>
+<p>Notice that Vintage does not show up in my ignored_packages and I even have it default to start in <a href="https://www.sublimetext.com/docs/3/vintage.html">vintage command mode</a>. I made this switch about a year ago and have never looked back. I really feel like I am more efficient getting around and editing code.</p>
 <p>I've had a few people ask me about my Sublime setup and wanted to get it out there. Any cool stuff that I'm missing?</p>

@@ -19,7 +19,7 @@ The WRI team includes, pictured from left Steve Gourley, Scott Davis, Jase Hopki
 
 ![WRI Development Team Photo](/images/404.png)
 
-The DGAA [award was announced by the Center for Digital Government](http://www.govtech.com/cdg/digital-government-achievement/Best-of-the-Web-Digital-Government-Achievement-Awards-2016-Winners-Announced.html) that, in addition to its overall 'Best of the Web' portal awards (Utah was runner up in the portal category this year), recognized 30 websites and applications for excellence, from all levels of government.
+The DGAA [award was announced by the Center for Digital Government](https://www.govtech.com/cdg/digital-government-achievement/Best-of-the-Web-Digital-Government-Achievement-Awards-2016-Winners-Announced.html) that, in addition to its overall 'Best of the Web' portal awards (Utah was runner up in the portal category this year), recognized 30 websites and applications for excellence, from all levels of government.
 
 The WRI app also recently won a Special Achievement Award in GIS from ESRI.
 

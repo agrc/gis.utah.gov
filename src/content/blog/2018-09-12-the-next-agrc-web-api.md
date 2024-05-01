@@ -57,7 +57,7 @@ We have taken it one step further with [Terraform](https://www.terraform.io/). T
 
 There are a few notable changes to the WebAPI source code that happened during this transition that only a software developer would appreciate.
 
-One major improvement is the replacement of our loose [Command pattern](http://www.blackwasp.co.uk/Command.aspx) implementation for the [Mediator pattern](http://www.blackwasp.co.uk/Mediator.aspx). I have been thoroughly enjoying [Jimmy Bogard](https://github.com/jbogard)'s [MediatR](https://github.com/jbogard/MediatR) implementation since it forces you to write better code with clean separation.
+One major improvement is the replacement of our loose [Command pattern](https://www.blackwasp.co.uk/Command.aspx) implementation for the [Mediator pattern](https://www.blackwasp.co.uk/Mediator.aspx). I have been thoroughly enjoying [Jimmy Bogard](https://github.com/jbogard)'s [MediatR](https://github.com/jbogard/MediatR) implementation since it forces you to write better code with clean separation.
 
 Like the command pattern, testing your handlers is straightforward because of that clean separation. Another highlight of MediatR are its behaviors. Behaviors allow handlers to be be chained together to create a pipeline where they operate on the input and output of other handlers. This allows for simple extensibility without modifying the original code. Registering the behavior with your dependency injection container will make sure it is used. Read more about the mediator pattern and its benefits on this [great blog](https://blogs.cuttingedge.it/steven/posts/2011/meanwhile-on-the-command-side-of-my-architecture/).
 

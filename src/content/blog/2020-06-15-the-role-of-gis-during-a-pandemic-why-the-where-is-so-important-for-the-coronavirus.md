@@ -61,7 +61,7 @@ Now, all those reasons are valid and important in discussing how and why GIS is 
 
 As stated in the UGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”](/blog/2020-01-29-cognitive-maps) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
 
-People are more likely to notice and pay attention to visual information than written information (which I find especially ironic as I write this article). Jon Puleston, Kantar Consulting, explains this phenomenon well in the article [“The Science of Visuals”](http://www.lightspeedresearch.com/science-visuals/): “The human brain thinks in pictures.” And what are maps but pictures that share information about a specific area?
+People are more likely to notice and pay attention to visual information than written information (which I find especially ironic as I write this article). Jon Puleston, Kantar Consulting, explains this phenomenon well in the article [“The Science of Visuals”](https://www.lightspeedresearch.com/science-visuals/): “The human brain thinks in pictures.” And what are maps but pictures that share information about a specific area?
 
 Looking at a map is a visual experience—you see landmarks, names of different areas, different colors representing something on the map, etc. Gaining spatial awareness in a physical space is also visual; we often look to landmarks to understand where we are. Puleston continues, “We are more likely to take notice of visual information than text based facts because our brains derive meaning from it more efficiently.”
 
@@ -97,7 +97,7 @@ Koch, Tom. _Cartographies of Disease: Maps, Mapping, and Medicine._ Redlands, CA
 
 McCullough, Maggie. “Introducing PolicyMap COVID-19 Quick Maps.” PolicyMap.com. May 6, 2020. [https://www.policymap.com/2020/05/policymap-covid19-quick-maps/](https://www.policymap.com/2020/05/policymap-covid19-quick-maps/).
 
-Puleston, Jon. “The Science of Visuals.” Kantar Consulting. Accessed June 11, 2020. [http://www.lightspeedresearch.com/science-visuals/](http://www.lightspeedresearch.com/science-visuals/).
+Puleston, Jon. “The Science of Visuals.” Kantar Consulting. Accessed June 11, 2020. [https://www.lightspeedresearch.com/science-visuals/](https://www.lightspeedresearch.com/science-visuals/).
 
 Singh, Yashvendra. 2020. “How enterprises are using GIS to track Covid-19 impact.” ETCIO.com. Published March 26, 2020. Accessed May 18, 2020. [https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102](https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102).
 
@@ -107,8 +107,8 @@ Zalac, Frédéric, and Kris Fleerackers. “Did early humans communicate with ca
 
 ### General Reading/References
 
-“Allocentric vs. Egocentric Spatial Processing.” Mental Imagery and Human-Computer Interaction Lab. Harvard Medical School Department of Radiology. Accessed June 11, 2020. [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308).
-\*The publications page here: [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11) has some great resources.
+“Allocentric vs. Egocentric Spatial Processing.” Mental Imagery and Human-Computer Interaction Lab. Harvard Medical School Department of Radiology. Accessed June 11, 2020. [https://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308](https://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308).
+\*The publications page here: [https://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11](https://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11) has some great resources.
 
 Cartographic Guidelines for Public Health. Centers for Disease Control and Prevention, Geography and Geospatial Science Working Group. Published August 2012. [https://www.cdc.gov/dhdsp/maps/gisx/resources/cartographic_guidelines.pdf](https://www.cdc.gov/dhdsp/maps/gisx/resources/cartographic_guidelines.pdf).
 
@@ -120,7 +120,7 @@ Herweg Nora A., and Kahana Michael J. “Spatial Representations in the Human Br
 
 Robert B. Bechtel, and Arza Churchman. _Handbook of Environmental Psychology._ New York: John Wiley & Sons, Inc., 2002. Accessed electronically via [https://books.google.com/books?id=G1F2nlg1pIAC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false](https://books.google.com/books?id=G1F2nlg1pIAC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false).
 
-Schenk, Frithjof Benjamin. “Mental Maps: The Cognitive Mapping of the Continent as an Object of Research of European History.” European History Online (EGO). Leibniz Institute of European History (IEG). Published July 08, 2013. [http://www.ieg-ego.eu/schenkf-2013-en](http://www.ieg-ego.eu/schenkf-2013-en).
+Schenk, Frithjof Benjamin. “Mental Maps: The Cognitive Mapping of the Continent as an Object of Research of European History.” European History Online (EGO). Leibniz Institute of European History (IEG). Published July 08, 2013. [https://www.ieg-ego.eu/schenkf-2013-en](https://www.ieg-ego.eu/schenkf-2013-en).
 
 _[UGRC]: The Utah Geospatial Resource Center
 _[GIS]: Geographic information systems \*[SGID]: State Geographic Information Database

@@ -71,9 +71,9 @@ A semi acceptable fix to this problem would be to inspect the parameters sent to
 
 `python geocode.py milepost 300 15N`
 
-The python community has created many useful modules that we all can `pip` or `conda` install and start using. Command Line Interface (CLI) modules are no different. There are a [lot](https://pypi.org/project/clint/) of [command](http://click.pocoo.org/) [line](https://pypi.org/project/plac/) [interface](https://docs.openstack.org/cliff/latest/) [modules](https://builtoncement.com/) because there are a lot of opinions on how they should work.
+The python community has created many useful modules that we all can `pip` or `conda` install and start using. Command Line Interface (CLI) modules are no different. There are a [lot](https://pypi.org/project/clint/) of [command](https://click.pocoo.org/) [line](https://pypi.org/project/plac/) [interface](https://docs.openstack.org/cliff/latest/) [modules](https://builtoncement.com/) because there are a lot of opinions on how they should work.
 
-UGRC has been using [docopt](http://docopt.org/) and really enjoying it. It is a lightweight module that uses POSIX style comments to define how your console application can be used. You get a CLI and documentation!
+UGRC has been using [docopt](https://docopt.org/) and really enjoying it. It is a lightweight module that uses POSIX style comments to define how your console application can be used. You get a CLI and documentation!
 
 ```py
 '''
@@ -145,4 +145,4 @@ A developer can inspect what command was requested by checking the boolean value
 
 Hopefully, you are beginning to see the power and flexibility that can be achieved with a command line application. Using doctopt's powerful syntax, a developer can help the users of their applications discover everything you have made available. It will help users choose all of the options that are applicable and prompt them with the proper syntax when a mistake is made.
 
-I encourage you to evolve some of your scripts into console applications. Maybe start the next python file you create with `from doctopt import docopt`. Please read about what docopt can do when designing your next console application. You can even [design the CLI in your browser](http://try.docopt.org/). docopt has also been ported to [several languages](https://github.com/docopt) so if you really like it, you can use it for other projects!
+I encourage you to evolve some of your scripts into console applications. Maybe start the next python file you create with `from doctopt import docopt`. Please read about what docopt can do when designing your next console application. You can even [design the CLI in your browser](https://try.docopt.org/). docopt has also been ported to [several languages](https://github.com/docopt) so if you really like it, you can use it for other projects!
