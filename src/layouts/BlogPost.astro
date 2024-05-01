@@ -35,7 +35,7 @@ const lastUpdatedDate = getDateParts(lastUpdated);
         <span class="whitespace-nowrap font-semibold text-primary/80 dark:text-white">Category</span>
         <span>·</span>
         <span class="whitespace-nowrap">
-          <a href={`/blog/categories/${slugify(category)}`}>{category}</a>
+          <a href={`/blog/categories/${slugify(category)}/`}>{category}</a>
         </span>
       </div>
     ) : null
