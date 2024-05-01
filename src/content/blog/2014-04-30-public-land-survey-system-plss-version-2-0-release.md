@@ -18,7 +18,7 @@ cover_image_alt: ugrc social card
 The major areas impacted by change in this version are shown on the map image at right (click map to enlarge) and include adjustments to the locations of corner points. Section boundaries impacted are shown in red on the map and areas where quarter section divisions were impacted are shown in gray.</p>
 <p><strong>Download Options<br />
 </strong><br />
-GCDB v2.0, as provided to UGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is the first download option on this <a href="/products/sgid/cadastre/cadnsdi"><strong>web page</strong></a>. </p>
+GCDB v2.0, as provided to UGRC by the Utah state office of the BLM, can be downloaded in the CADNSDI data format and conforms to the newest Federal Geographic Data Committee (FGDC) guidelines for geospatial data. The CADNSDI data format is the first download option on this <a href="/products/sgid/cadastre/cadnsdi/"><strong>web page</strong></a>. </p>
 <p>UGRC is also providing derivative versions of GCDB v2.0 that attempt to enhance the usability of this data and correct for a small number of known errors in the latest release. UGRC derived GIS layers that have been updated in the SGID are:</p>
 <ul>
 <li>SGID10.Cadastre.PLSSTownships_GCDB</li>

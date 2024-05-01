@@ -19,6 +19,6 @@ Utah Oil and Gas Well GIS Data
 <p>A snapshot of the datasets mentioned above, together with Oil and Gas Field polygons was exported to shapefile and file geodatabase formats. These files are downloadable, via a browser, from the SGID ftp site using the second link below.</p>
 <p>Additional information:</p>
 <ul>
-<li><a title="How to Connect to the SGID via ArcSDE" href="/documentation/sgid/open-sgid">Connecting to the SGID10 SDE Server</a></li>
+<li><a title="How to Connect to the SGID via ArcSDE" href="/documentation/sgid/open-sgid/">Connecting to the SGID10 SDE Server</a></li>
 <li><a title="Oil and Gas" href="/products/sgid/energy/">Oil and Gas dataset content, interactive map, and data download links</a></li>
 </ul>

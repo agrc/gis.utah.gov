@@ -26,7 +26,7 @@ const page: IStandardPageMetadata = {
 <Layout {...page}>
   <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
   <Section {...page.section[0]}>
-    <p>We update our base maps regularly from the most up-to-date data in the <a href="/products/sgid">SGID.</a></p>
+    <p>We update our base maps regularly from the most up-to-date data in the <a href="/products/sgid/">SGID.</a></p>
     <p>The last updated dates for the base maps are as follows:</p>
   </Section>
   <Section {...page.section[1]}>
@@ -38,11 +38,11 @@ const page: IStandardPageMetadata = {
         </tr>
         <tbody>
           <tr class="border-b border-black/20 dark:border-white/20">
-            <td class="py-3 pr-3"><a href="/products/sgid/base-maps/terrain">Terrain</a></td>
+            <td class="py-3 pr-3"><a href="/products/sgid/base-maps/terrain/">Terrain</a></td>
             <td class="py-3 text-right">{dates.Terrain}</td>
           </tr>
           <tr class="border-b border-black/20 dark:border-white/20">
-            <td class="py-3 pr-3"><a href="/products/sgid/base-maps/lite">Lite</a></td>
+            <td class="py-3 pr-3"><a href="/products/sgid/base-maps/lite/">Lite</a></td>
             <td class="py-3 text-right">{dates.Lite}</td>
           </tr>
           <tr class="border-b border-black/20 dark:border-white/20">
