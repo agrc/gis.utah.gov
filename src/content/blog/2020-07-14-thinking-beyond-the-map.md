@@ -86,13 +86,13 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 
 - [Partnerships and Sharing](/documentation/sgid/sharing)
 - [Data sharing Initiatives - Farm to AGOL project](/documentation/sgid/sharing)
-- [State Geographic Information Database (SGID) - data index](/products/sgid)
+- [State Geographic Information Database (SGID) - data index](/products/sgid/)
 - [Open Data - SGID ESRI Hub site](https://opendata.gis.utah.gov/)
-- [Open SGID - PostgreSQL/PostGIS cloud SGID database](/blog/2020-05-04-introducing-open-sgid)
+- [Open SGID - PostgreSQL/PostGIS cloud SGID database](/blog/2020-05-04-introducing-open-sgid/)
 - [UGRC Web API](https://api.mapserv.utah.gov/)
 - [GitHub code and project repositories](https://github.com/agrc)
 - [Utah Department of Technology Services' Citizen Portal project](https://demosite.utah.gov/citizen-portal/written-plans/next-generation-portal/)
-- [UGRC Innovation Grant for Digital Assistant Skills](/blog/2019-05-30-thoughts-from-teaching-google-and-amazon-new-skills)
+- [UGRC Innovation Grant for Digital Assistant Skills](/blog/2019-05-30-thoughts-from-teaching-google-and-amazon-new-skills/)
 
 #### Sources
 

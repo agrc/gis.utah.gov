@@ -26,11 +26,11 @@ While the geocoding endpoint was built primarily for web applications it also pr
 - handles common placename usage and abbreviations (WVC, St George, Magna, Heber City, S Jordan, etc.)
 - can find matches for numeric address 'reversals' (500 E 1991 S)
 - can find address point matches, offset centerline matches, or best available.
-- [more information](/blog/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade)
+- [more information](/blog/2013-05-10-utah-statewide-address-geocoding-web-service-upgrade/)
 
 Use the Street and Zone endpoint on the [API Explorer](https://api.mapserv.utah.gov/#geocoding) or the Find Address widget on [atlas.utah.gov](https://atlas.utah.gov/) to test the results from your problem addresses against the API.
 
-Installation is as easy as [downloading](/products/sgid/address) the `AGRC Geocode Tools.tbx` file to your desired location and then in ArcGIS, right clicking the [Add Toolbox](https://resources.arcgis.com/en/help/main/10.1/index.html#//003q0000001m000000) menu item.
+Installation is as easy as [downloading](/products/sgid/address/) the `AGRC Geocode Tools.tbx` file to your desired location and then in ArcGIS, right clicking the [Add Toolbox](https://resources.arcgis.com/en/help/main/10.1/index.html#//003q0000001m000000) menu item.
 
 Users must obtain an IP specific API key by [registering](https://developer.mapserv.utah.gov/AccountAccess) prior to use, as a unique API key is one of the required input parameters for running the tool.
 

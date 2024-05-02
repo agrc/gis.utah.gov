@@ -74,15 +74,15 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 - markdown
 
   ```mdx
-  [link text](/pillar/level-1/page)
-  [link text](/pillar/level-1/page#to-anchor)
+  [link text](/pillar/level-1/page/)
+  [link text](/pillar/level-1/page/#to-anchor)
   ```
 
 - astro
 
   ```astro
-  <a href="/pillar/level-1/page">link text</a>
-  <a href="/pillar/level-1/page#to-anchor>link text</a>
+  <a href="/pillar/level-1/page/">link text</a>
+  <a href="/pillar/level-1/page/#to-anchor>link text</a>
   ```
 
 ### link to blog post
@@ -90,15 +90,15 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 - markdown
 
   ```mdx
-  [link text](/blog/2016-05-26-file-name)
-  [link text](/blog/2016-05-26-file-name#to-anchor)
+  [link text](/blog/2016-05-26-file-name/)
+  [link text](/blog/2016-05-26-file-name/#to-anchor/)
   ```
 
 - astro
 
   ```astro
-  <a href="{/blog/2016-05-26-file-name">link text</a>
-  <a href="{/blog/2016-05-26-file-name#to-anchor">link text</a>
+  <a href="{/blog/2016-05-26-file-name/">link text</a>
+  <a href="{/blog/2016-05-26-file-name/#to-anchor">link text</a>
   ```
 
 ### external link
