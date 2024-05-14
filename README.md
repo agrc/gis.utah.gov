@@ -211,5 +211,5 @@ The validation scripts performs the following checks:
   - `id`
   - `displayName`
 - Validates that the values in the spreadsheet match the corresponding values in the [download metadata file](./src/data/downloadMetadata.ts).
-- Checks that their is a value in either `productPage` or `itemId`.
+- Checks that there is a value in either `productPage` or `itemId`.
 - Validates that `inActionUrl` is a valid URL if it is populated.
