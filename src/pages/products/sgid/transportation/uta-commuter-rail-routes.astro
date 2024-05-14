@@ -4,7 +4,6 @@ import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/types';
 import { ProductType, SgidCategory } from '@models/types';
 
-import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
 
@@ -14,6 +13,7 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import Contacts from '@components/page/Contacts.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
@@ -37,12 +37,18 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>Centerlines of Utah Transit Authority (UTA) commuter rail (FrontRunner) routes.</p>
+    <p>Centerline of UTA's FrontRunner Commuter Rail from Ogden in the north to Provo in the south.</p>
   </Fragment>
 
-  <Section title="Use the data" slot="downloads" titlePosition="center">
-    <HubDownloads {...page.hub} />
-  </Section>
+  <Fragment slot="description">
+    <p>
+      This centerline is the Main (M1) track. Siding Track (S) is not included. Includes FrontRunner North and South
+      lines. Each line begins at MP 0.0 at Salt Lake Central Station. Milepost ascending on FrontRunner North from SL
+      Central station to Ogden. Milepost ascending for FrontRunner South from SL Central Station to Provo.
+    </p>
+
+    <Contacts contactKey="uta" />
+  </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
 
