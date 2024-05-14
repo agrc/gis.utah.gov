@@ -185,3 +185,31 @@ Contacts are managed in a [typescript file](./src/data/contacts.ts).
 
   <Contacts contactKey="ugrc" subject={frontmatter.title} />
   ```
+
+### SGID Index Validation
+
+The data that powers the [SGID Index search page](https://gis.utah.gov/data/sgid-index/) comes from a [Google Sheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1024261148). Fresh data is scraped from the sheet each time the website is built in Netlify.
+
+The data is validated using a [NodeJS script](./scripts/validate-sgid-index.mjs) which is [scheduled to run nightly via GitHub Actions](.github/workflows/schedule.sgid-index-validation.yml). If there are validation errors, the script opens a new GitHub issue with a comment displaying the errors. If there is an existing issue already open, the output comment is updated. If there are no errors, the issue will be closed. The validation script can also be triggered manually by adding a new issue comment that begins with the following text: `/validate-sgid-index`.
+
+Rows that have `indexStatus` set to `removed` or `draft` are skipped.
+
+The validation scripts performs the following checks:
+
+- Validates that `openSgidTableName` is a valid table name in the Open SGID database.
+- Validates that `productPage` is a valid path relative to <https://gis.utah.gov/> or an external URL.
+- Adds a new guid value for `id` if it is empty.
+- Validates the `itemId` is a valid AGOL item and auto-populates the following fields: 
+  - `hubName`
+  - `hubOrganization`
+  - `serverHost`
+  - `serverServiceName`
+  - `serverLayerId`
+- Checks for duplicates values between rows for the following fields:
+  - `openSgidTableName`
+  - `itemId`
+  - `id`
+  - `displayName`
+- Validates that the values in the spreadsheet match the corresponding values in the [download metadata file](./src/data/downloadMetadata.ts).
+- Checks that their is a value in either `productPage` or `itemId`.
+- Validates that `inActionUrl` is a valid URL if it is populated.
