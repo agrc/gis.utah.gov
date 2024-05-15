@@ -176,9 +176,29 @@ async function itemId(row) {
   }
   const serviceParts = hubData.data.attributes.url.split('/rest/services/');
 
+  const orgLookup = {
+    'Utah DNR Online Maps': 'utahDNR',
+    'Utah Automated Geographic Reference Center (AGRC)': 'utah',
+    'Wasatch Front Regional Council': 'wfrc',
+    'UPlan Map Center': 'uplan',
+    'Utah Department of Environmental Quality': 'utahdeq',
+    'Utah SHPO': 'UtahSHPO',
+  };
+
+  const org = hubData.data.attributes.slug
+    ? hubData.data.attributes.slug.split('::')[0]
+    : orgLookup[hubData.data.attributes.organization];
+
+  if (!org) {
+    recordError(
+      `No hubOrganization could be found! slug: "${hubData.data.attributes.slug}" organization: "${hubData.data.attributes.organization}"`,
+      row,
+    );
+  }
+
   const newData = {
     hubName: hubData.data.attributes.name,
-    hubOrganization: hubData.data.attributes.slug.split('::')[0],
+    hubOrganization: org,
     serverHost: serviceParts[0],
     serverServiceName: serviceParts[1].split(/\/(FeatureServer|MapServer)\//)[0],
     serverLayerId: layerId,
