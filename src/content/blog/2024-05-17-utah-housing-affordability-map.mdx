@@ -12,6 +12,10 @@ cover_image_alt: mapping utah's housing affordability
 
 import Contacts from '@components/page/Contacts.astro';
 
+<link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+<script src="https://js.arcgis.com/4.29/"></script>
+<script type="module" src="https://js.arcgis.com/map-components/4.29/arcgis-map-components.esm.js"></script>
+
 Utahns are feeling the squeeze, and there's data to back it up. Housing affordability has become the top concern for residents, according to a recent [2024 Utah Foundation survey](https://www.utahfoundation.org/wp-content/uploads/rr819.pdf).
 
 That’s not surprising, given the median sales price of a home in Utah is [$535,000](https://www.redfin.com/state/Utah/housing-market). For context, that’s [27% higher](https://www.redfin.com/us-housing-market) than the national median.
@@ -78,14 +82,12 @@ Explore Utah's housing affordability with our interactive map and see where your
 
 ### Showing home-price-to-income ratio by ZIP Code for the year 2022
 
-<iframe
-  class="mx-auto aspect-video w-full max-w-4xl rounded-lg border-2 border-black shadow-xl"
-  title="Housing Affordability in Utah"
-  src="https://utah.maps.arcgis.com/apps/instant/basic/index.html?appid=057fefdcada0440f86279c4ae6386233"
-  frameborder="0"
-  style="border:0"
-  allowfullscreen
-></iframe>
+<div class="mx-auto aspect-video w-full max-w-4xl overflow-hidden rounded-lg border shadow-xl dark:border-black/30">
+  <arcgis-map item-id="85fa417923084153b1436cafd3099211">
+    <arcgis-legend position="top-right" />
+    <arcgis-search position="bottom-left" />
+  </arcgis-map>
+</div>
 
 ### Methodology
 
