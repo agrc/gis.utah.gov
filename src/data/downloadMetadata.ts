@@ -2024,13 +2024,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: '',
     layerId: 0,
   },
-  'Utah UTA Bus Flex Routes': {
-    itemId: 'e12362f46b8e4cc798807e576c0d1e88',
-    name: 'Utah UTA Bus Flex Routes',
-    featureServiceId: null,
-    openSgid: '',
-    layerId: 0,
-  },
   'Utah Railroads': {
     itemId: 'fe20e5c6bb4240919d0cd5ba4116d106',
     name: 'Utah Railroads',
