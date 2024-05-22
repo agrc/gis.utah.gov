@@ -168,13 +168,19 @@ async function itemId(row) {
   }
 
   let hubData;
+  let serviceParts;
   try {
     hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}_${layerId}`).json();
+    serviceParts = hubData.data.attributes.url.split('/rest/services/');
   } catch (error) {
-    recordError(`itemId hub request error: ${error.message}`, row);
-    return;
+    try {
+      // maybe this is something other than a feature service such as a WMTS base map service
+      hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}`).json();
+    } catch (error) {
+      recordError(`itemId hub request error: ${error.message}`, row);
+      return;
+    }
   }
-  const serviceParts = hubData.data.attributes.url.split('/rest/services/');
 
   const orgLookup = {
     'Utah DNR Online Maps': 'utahDNR',
@@ -199,9 +205,9 @@ async function itemId(row) {
   const newData = {
     hubName: hubData.data.attributes.name,
     hubOrganization: org,
-    serverHost: serviceParts[0],
-    serverServiceName: serviceParts[1].split(/\/(FeatureServer|MapServer)\//)[0],
-    serverLayerId: layerId,
+    serverHost: serviceParts && serviceParts[0],
+    serverServiceName: serviceParts && serviceParts[1].split(/\/(FeatureServer|MapServer)\//)[0],
+    serverLayerId: serviceParts && layerId,
   };
 
   let changed = false;
