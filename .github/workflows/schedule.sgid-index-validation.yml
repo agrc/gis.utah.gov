@@ -22,13 +22,6 @@ jobs:
       RESULTS_COMMENT_TITLE: SGID Index Validation
 
     steps:
-      - name: 🪙 Convert token
-        uses: actions/create-github-app-token@v1
-        id: generate_token
-        with:
-          app-id: ${{ secrets.UGRC_RELEASE_BOT_APP_ID }}
-          private-key: ${{ secrets.UGRC_RELEASE_BOT_APP_KEY }}
-
       - name: ✅ Check comment
         if: github.event_name == 'issue_comment'
         uses: actions/github-script@v7
@@ -85,53 +78,74 @@ jobs:
           command: node validate-sgid-index.mjs
           cwd: ./scripts
 
-      - name: 📝 Create issue
-        id: create-issue
-        if: steps.validate.outputs.exitCode != 0
-        uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        with:
-          filename: .github/SGID_INDEX_ISSUE_TEMPLATE.md
-          update_existing: true
-
-      - name: 🔍 Find Issue
+      - name: 📝 Create or find existing issue
+        id: create-or-find-issue
         uses: actions/github-script@v7
-        id: find-issue
-        if: steps.validate.outputs.exitCode == 0
         with:
+          retries: 3
+          result-encoding: string
           script: |
-            const { data: issues } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'sgid index validation'
-            });
-            const issueNumber = issues[0]?.number;
-            console.log('issueNumber: ' + issueNumber);
+            const label = 'sgid index validation';
+            const title = 'SGID Index Validation Issues';
+            console.log('searching for existing issue');
+            const query = `
+              {
+                repository(owner: "${context.repo.owner}", name: "${context.repo.repo}") {
+                  issues(
+                    first: 100
+                    labels: ["${label}"]
+                    states: OPEN
+                    filterBy: {createdBy: "github-actions[bot]"}
+                  ) {
+                    nodes {
+                      number
+                    }
+                  }
+                }
+              }`;
 
-            return issueNumber;
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            const result = await github.graphql(query);
+            if (result.repository.issues.nodes.length > 0) {
+              const issueNumber = result.repository.issues.nodes[0].number;
+              console.log(`Issue already exists: ${issueNumber}`);
+
+              return issueNumber;
+            } else if (${{ steps.validate.outputs.exitCode }} !== 0) {
+              // create new issue if there are validation errors
+              console.log('Creating new issue');
+              const body = require('fs').readFileSync(process.env.GITHUB_WORKSPACE + '/.github/SGID_INDEX_ISSUE_TEMPLATE.md', 'utf8');
+              const issue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: [label]
+              });
+
+              return issue.data.number;
+            } else {
+              return '';
+            }
 
       - name: Find Comment
         uses: peter-evans/find-comment@v3
-        if: steps.create-issue.outputs.number || steps.find-issue.outputs.result
+        if: steps.create-or-find-issue.outputs.result
         id: find-comment
         with:
-          issue-number: ${{ steps.create-issue.outputs.number || steps.find-issue.outputs.result }}
+          issue-number: ${{ steps.create-or-find-issue.outputs.result }}
           comment-author: github-actions[bot]
           body-includes: ${{ env.RESULTS_COMMENT_TITLE}}
 
       - name: 🕰 Get Timestamp
         id: timestamp
+        if: steps.create-or-find-issue.outputs.result
         run: echo "result=$(TZ=America/Denver date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
 
       - name: ✍️ Updating issue comment with results
-        if: steps.create-issue.outputs.number || steps.find-issue.outputs.result
+        if: steps.create-or-find-issue.outputs.result
         uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: ${{ steps.create-issue.outputs.number || steps.find-issue.outputs.result }}
+          issue-number: ${{ steps.create-or-find-issue.outputs.result }}
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
@@ -154,7 +168,7 @@ jobs:
           exit ${{ steps.validate.outputs.exitCode }}
 
       - name: 🎉 Close issue
-        if: steps.validate.outputs.exitCode == 0 && steps.find-issue.outputs.result
-        run: gh issue close --comment "All validations have passed successfully" "${{ steps.find-issue.outputs.result }}"
+        if: steps.validate.outputs.exitCode == 0
+        run: gh issue close --comment "All validations have passed successfully" "${{ steps.create-or-find-issue.outputs.result }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
