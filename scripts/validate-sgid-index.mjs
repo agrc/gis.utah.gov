@@ -304,12 +304,24 @@ const checks = [
 const rows = await worksheet.getRows();
 buildDuplicateLookups(rows);
 
+// useful for debugging specific rows
+let testId;
+try {
+  testId = process.argv[2];
+} catch (error) {
+  pass;
+}
+
 let updatedRowsCount = 0;
 console.log(`checking ${rows.length} rows`);
 const progressBar = new ProgressBar(':bar :percent ETA: :etas ', { total: rows.length });
 const skipStatuses = ['removed', 'draft'];
 for (const row of rows) {
   progressBar.tick();
+
+  if (testId && row.get(getFieldName('id')) !== testId) {
+    continue;
+  }
 
   if (skipStatuses.includes(row.get(getFieldName('indexStatus'))?.toLowerCase())) {
     continue;
