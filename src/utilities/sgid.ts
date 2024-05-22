@@ -68,11 +68,12 @@ function etlRow(row): StewardshipRecord | null {
     tableName: row.get('tableName'),
     category: row.get('category'),
     indexStatus: row.get('indexStatus') as StewardshipRecord['indexStatus'],
-    source: row
-      .get('dataSource')
-      .split(',')
-      .map((source: string) => source.trim())
-      .filter((source: string) => source !== ''),
+    source:
+      row
+        .get('dataSource')
+        ?.split(',')
+        .map((source: string) => source.trim())
+        .filter((source: string) => source !== '') ?? [],
     dataType: toProductTypeEnum(row.get('productType')),
     description: row.get('description'),
     inActionUrl: row.get('inActionUrl'),
