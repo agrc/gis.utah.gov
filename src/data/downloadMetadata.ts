@@ -1730,11 +1730,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'farming.agricultural_protection_areas',
     layerId: 0,
   },
-  'Utah Tax Areas 2022': {
-    itemId: '1c962302668e431db53d9763962c09f5',
-    name: 'Utah Tax Areas 2022',
-    featureServiceId: 'TaxAreas2022',
-    openSgid: 'economy.tax_areas_2022',
+  'Utah Tax Areas 2024': {
+    itemId: '5360fd4cd20847099074542faafd990c',
+    name: 'Utah Tax Areas 2024',
+    featureServiceId: 'TaxAreas2024',
+    openSgid: 'economy.tax_areas_2024',
     layerId: 0,
   },
   'Utah Vista Ballot Areas Proposed': {
