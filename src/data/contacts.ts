@@ -419,11 +419,6 @@ export const contacts: Contacts = {
     email: 'SteveBowman@utah.gov',
     phone: '801-537-3304',
   },
-  print_proxy: {
-    name: 'Scott Davis',
-    agency: 'UGRC',
-    email: 'stdavis@utah.gov',
-  },
   multimodal: [
     {
       name: 'Bert Granberg',
