@@ -19,7 +19,7 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  pageTitle: 'Utah Tax Entities 2022',
+  pageTitle: 'Utah Tax Entities 2024',
   pageDescription:
     'Tax Entities are incorporated bodies that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.',
   stewards: ['UGRC', 'USTC'],
@@ -29,7 +29,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: ['June 2023', 'March 2022', 'January 2021'],
+  updateHistory: ['June 2024', 'June 2023', 'March 2022', 'January 2021'],
   hub: {
     ...dataPages[metadata.pageTitle],
   },
@@ -41,9 +41,9 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Tax Entities 2022 contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy
+      Tax Entities 2024 contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy
       a local property tax such as school districts, counties, cities, special service districts, redevelopment
-      districts, library districts, cemetery districts, and mosquito abatement districts. The Tax Entities 2022 dataset
+      districts, library districts, cemetery districts, and mosquito abatement districts. The Tax Entities 2024 dataset
       does not represent exact legal boundaries, but rather a set of boundaries used for the administrative purposes by
       the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities, etc).
     </p>
@@ -81,16 +81,16 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Tax Areas" href="/products/sgid/economy/taxing-areas"
+      <CardWithSmallLink title="Tax Areas" href="/products/sgid/economy/taxing-areas/"
         >Tax collection areas.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Sales Tax Areas" href="/products/sgid/economy/sales-tax-areas"
+      <CardWithSmallLink title="Sales Tax Areas" href="/products/sgid/economy/sales-tax-areas/"
         >Sales tax collection areas.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Transit Tax Areas" href="/products/sgid/economy/transit-special-tax-areas"
+      <CardWithSmallLink title="Transit Tax Areas" href="/products/sgid/economy/transit-special-tax-areas/"
         >Transit special tax areas.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Economy" href="/products/sgid/economy">SGID category.</CardWithSmallLink>
+      <CardWithSmallLink title="Economy" href="/products/sgid/economy/">SGID category.</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>

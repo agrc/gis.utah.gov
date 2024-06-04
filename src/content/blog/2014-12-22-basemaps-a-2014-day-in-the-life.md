@@ -12,7 +12,7 @@ cover_image_alt: ugrc social card
 
 ### A day in the life of Utah’s ArcGIS Server Base maps 2014
 
-On [Wednesday, November 6, 2013](/blog/2014-01-14-a-day-in-the-life-of-utahs-arcgis-server-base-maps) we wrote about and displayed some charts displaying usage statistics for our base maps. A year has passed and we have updated our graphs and included a few new ones. This year our usage stats were pulled from the first Wednesday in November which happened to be the 5th.
+On [Wednesday, November 6, 2013](/blog/2014-01-14-a-day-in-the-life-of-utahs-arcgis-server-base-maps/) we wrote about and displayed some charts displaying usage statistics for our base maps. A year has passed and we have updated our graphs and included a few new ones. This year our usage stats were pulled from the first Wednesday in November which happened to be the 5th.
 
 ![web application base map usage](/images/404.png)
 
@@ -30,4 +30,4 @@ Over the course of a typical day, some end users, be they GIS staff or web appli
 
 This graph shows where most of the traffic for base map tiles was coming from on this particular day. It was an election month so the elections site took first place. Our _mapserv_ hosted applications came in second. The breakup of other state agency usage is quite interesting with ArcGIS Online becoming a presence.
 
-You can find [more information about our base maps](/products/sgid/base-maps) on our [website](/). If you want to [interact with these charts](https://steveoh.github.io/Charts/), the are hosted on [GitHub](https://steveoh.github.io/Charts/).
+You can find [more information about our base maps](/products/sgid/base-maps/) on our [website](/). If you want to [interact with these charts](https://steveoh.github.io/Charts/), the are hosted on [GitHub](https://steveoh.github.io/Charts/).

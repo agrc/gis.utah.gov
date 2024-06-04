@@ -21,7 +21,7 @@ For data users, any schema change will be reflected in how UGRC publishes the da
 For data stewards, the schema will be the structure into which UGRC will be mapping the data that you provide in the short term.
 One future possibility is that the new schema may be used to pilot a shared editing platform for road centerlines — one possible recommendation from the regional road centerline workshops.
 
-**Please note that the road centerlines schema proposal is a starting point, and UGRC is looking forward to input as to errors, omissions, and suggestions for better ways to organize the information. Please [submit all feedback](http://goo.gl/forms/fdzA8sV4nuarXGDV2) by August 15, 2016.**
+**Please note that the road centerlines schema proposal is a starting point, and UGRC is looking forward to input as to errors, omissions, and suggestions for better ways to organize the information. Please [submit all feedback](https://goo.gl/forms/fdzA8sV4nuarXGDV2) by August 15, 2016.**
 
 <a href="https://docs.google.com/spreadsheets/d/1jQ_JuRIEtzxj60F0FAGmdu5JrFpfYBbSt3YzzCjxpfI/edit#gid=811360546 "><img src="/images/404.png" alt="" title="Centerlines Datasets Schema V3.0.3" class="inline-text-right" loading="lazy" /></a>
 

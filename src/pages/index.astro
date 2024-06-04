@@ -22,7 +22,7 @@ const posts = (await getBlogPosts()).slice(0, 3);
 <Layout bannerHeading="UGRC" pageTitle="Utah Geospatial Resource Center">
   <Section>
     <GridForPillars>
-      <CardWithTopImage title="Products" actionUrl="/products">
+      <CardWithTopImage title="Products" actionUrl="/products/">
         <Image
           src={productsPhoto}
           slot="image"
@@ -35,7 +35,7 @@ const posts = (await getBlogPosts()).slice(0, 3);
         our products and imagine how you and your team can use them to implement and enhance your mission and goals. Reach
         out to us for implementation questions, tips, and best practices.
       </CardWithTopImage>
-      <CardWithTopImage title="Solutions" actionUrl="/solutions">
+      <CardWithTopImage title="Solutions" actionUrl="/solutions/">
         <Image
           src={solutionsPhoto}
           slot="image"
@@ -48,7 +48,7 @@ const posts = (await getBlogPosts()).slice(0, 3);
         best practices; facilitating programs and activities to implement GIS technology throughout the state; and coordination
         of GIS policy development and implementation activities.
       </CardWithTopImage>
-      <CardWithTopImage title="Collaboration" actionUrl="/collaboration">
+      <CardWithTopImage title="Collaboration" actionUrl="/collaboration/">
         <Image
           src={collaborationPhoto}
           slot="image"
@@ -65,7 +65,7 @@ const posts = (await getBlogPosts()).slice(0, 3);
   <Section
     title="Latest News"
     actionText="Read more news"
-    actionUrl="/blog"
+    actionUrl="/blog/"
     stripe
     primary
     titlePosition="center"
@@ -96,7 +96,7 @@ const posts = (await getBlogPosts()).slice(0, 3);
       <CardWithSmallLink title="What we do" href="https://youtu.be/QOd54USXL8A"
         >Watch our Director describe our role and purpose.</CardWithSmallLink
       >
-      <CardWithSmallLink title="What can we help you solve" href="/solutions"
+      <CardWithSmallLink title="What can we help you solve" href="/solutions/"
         >We build solutions for state government and beyond. Let us help you.</CardWithSmallLink
       >
     </GridForYouMightLike>

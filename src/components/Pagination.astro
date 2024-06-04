@@ -48,7 +48,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
       hasStartEllipsis ? (
         <>
           <li>
-            <a href={`/${baseHref}`} class={linkClasses} aria-label="go to first page">
+            <a href={`/${baseHref}/`} class={linkClasses} aria-label="go to first page">
               {1}
             </a>
           </li>
@@ -104,7 +104,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
             />
           </svg>
           <li>
-            <a href={`/${baseHref}/${page.lastPage}`} class={linkClasses} aria-label="go to last page">
+            <a href={`/${baseHref}/${page.lastPage}/`} class={linkClasses} aria-label="go to last page">
               {page.lastPage}
             </a>
           </li>

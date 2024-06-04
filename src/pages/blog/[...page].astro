@@ -24,7 +24,7 @@ const pageDescription = 'A collection of UGRC blog posts on various topics.';
   <Fragment slot="categories">
     {
       categories.map((category: BlogFilter) => (
-        <a href={`/blog/categories/${category.slug}`} class="mr-2">
+        <a href={`/blog/categories/${category.slug}/`} class="mr-2">
           {category.name}
         </a>
       ))

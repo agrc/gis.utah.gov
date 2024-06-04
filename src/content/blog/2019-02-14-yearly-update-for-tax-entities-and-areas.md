@@ -14,7 +14,7 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-As of January 28, we’re officially in tax season, and UGRC can help you stay informed about taxation in Utah! We have updated our 2018 year-end tax entity data, and you can access the data on the [Sales Tax Areas and Tax Entity Areas page](/products/sgid/economy/taxing-areas) of the UGRC website.
+As of January 28, we’re officially in tax season, and UGRC can help you stay informed about taxation in Utah! We have updated our 2018 year-end tax entity data, and you can access the data on the [Sales Tax Areas and Tax Entity Areas page](/products/sgid/economy/taxing-areas/) of the UGRC website.
 
 #### Newest Tax Entities for 2018
 
@@ -32,4 +32,4 @@ Transit special tax areas represent areas outside of incorporated municipalities
 
 #### Available for Download
 
-All these data layers can be downloaded as a comprehensive dataset from the [Sales Tax Areas and Tax Entity Areas page](/products/sgid/taxing-areas) of the UGRC website.
+All these data layers can be downloaded as a comprehensive dataset from the [Sales Tax Areas and Tax Entity Areas page](/products/sgid/economy/taxing-areas/) of the UGRC website.

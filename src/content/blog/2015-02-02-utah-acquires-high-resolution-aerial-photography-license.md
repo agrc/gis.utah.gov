@@ -9,13 +9,17 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-<p>Last month (January 2015), UGRC led an effort to purchase a license to Google's statewide high resolution aerial photography (6" pixels) on behalf of a partnership of state, regional, and local government organizations. The license has been purchased and UGRC staff are currently working to accept delivery of the imagery and web services from Google before it is released to the broader user community. We expect to have information on accessing these resources later this month.</p>
-<p>Many thanks the original partner agencies whose support made this purchase possible! (<em>logos shown at right</em>)<br />
-<a href="/images/404.png"><img src="/images/404.png" alt="" title="Google Imagery Acquisition partner Agencies" width="450" height="162" class="inline-text-right" loading="lazy" /></a></p>
-<p>The Google high resolution aerial photography will provide a valuable, detailed, and border-to-border view of Utah's landscape that is expected to improve the quality of agency business data, facilitate more productive data sharing, expedite and enhance decision-making, and reduce the necessity of field data collection. As this purchase aligns with an existing private sector acquisition effort, the upfront and maintenance costs to the State are significantly lower than past custom aerial photography missions.</p>
-<p><a href="/images/404.png"><img src="/images/404.png" alt="" title="Six Inch 2012 vs Google License" width="234" height="300" class="inline-text-left" loading="lazy" /></a>Currently, the Google imagery is from 2013 and 2014 flights and covers about 98% of the state. The remaining block in southwest San Juan County is expected to be collected this calendar year. To put this all in perspective, the 2012 Wasatch Front 6 inch imagery acquisition covered just under 2.5% of the Utah's total area.</p>
-<p>The new imagery license allows for all Utah state, tribal, regional, county and local government entities and the public education system to connect to the Google imagery, via WMS and map tile web services, in web applications and for desktop work in GIS, CAD and other software. The digital imagery files are also licensed for use in applications that require the imagery to be hosted on-premise. Other entities are allowed to use the imagery for contracted or partnering project work performed on behalf of the primary licensed organizations.</p>
-<p>While we are finalizing the technical details and process for accessing the imagery, here is a brief question and answer session regarding the new license model:</p>
+Last month (January 2015), UGRC led an effort to purchase a license to Google's statewide high resolution aerial photography (6" pixels) on behalf of a partnership of state, regional, and local government organizations. The license has been purchased and UGRC staff are currently working to accept delivery of the imagery and web services from Google before it is released to the broader user community. We expect to have information on accessing these resources later this month.
+
+Many thanks the original partner agencies whose support made this purchase possible!
+
+The Google high resolution aerial photography will provide a valuable, detailed, and border-to-border view of Utah's landscape that is expected to improve the quality of agency business data, facilitate more productive data sharing, expedite and enhance decision-making, and reduce the necessity of field data collection. As this purchase aligns with an existing private sector acquisition effort, the upfront and maintenance costs to the State are significantly lower than past custom aerial photography missions.
+
+Currently, the Google imagery is from 2013 and 2014 flights and covers about 98% of the state. The remaining block in southwest San Juan County is expected to be collected this calendar year. To put this all in perspective, the 2012 Wasatch Front 6 inch imagery acquisition covered just under 2.5% of the Utah's total area.
+
+The new imagery license allows for all Utah state, tribal, regional, county and local government entities and the public education system to connect to the Google imagery, via WMS and map tile web services, in web applications and for desktop work in GIS, CAD and other software. The digital imagery files are also licensed for use in applications that require the imagery to be hosted on-premise. Other entities are allowed to use the imagery for contracted or partnering project work performed on behalf of the primary licensed organizations.
+
+While we are finalizing the technical details and process for accessing the imagery, here is a brief question and answer session regarding the new license model:
 
 1. **Google presents similar imagery to consumers via Google Earth and Google Maps, how is the licensed imagery different?**
    The Google imagery product offering is different because the aerial photography:
@@ -44,11 +48,11 @@ cover_image_alt: ugrc social card
 
 1. **What are the potential downsides to this offering?**
 
-- This is a departure from the traditional public domain model, <strong><em>but...</em></strong>
+- This is a departure from the traditional public domain model, **_but..._**
   - similar data from the same flights is available for viewing through Google consumer apps, such as Google Earth or Google Maps
   - contractors and partners for state and local government are allowed access
   - other private sector users will have similar commercial offerings available to them from Google and others
-- Annual maintenance, similar to that paid for software, is required to support web services and update purchases options, <strong><em>but...</em></strong>
+- Annual maintenance, similar to that paid for software, is required to support web services and update purchases options, **_but..._**
 - a portion of this cost would be incurred anyway for storage, hosting, & technical support for comparable imagery
 - Utah will receive all imagery flown by Google in 2015 (a Wasatch Front refresh is expected) and can selectively purchase areas where Google flies new imagery in 2016 or 2017 at the statewide per-square-km price.
 - if at any time, Utah no longer keeps current on maintenance costs, it will retain the right to use, on-premise and in its own services, all imagery rights purchased.
@@ -57,7 +61,7 @@ cover_image_alt: ugrc social card
    The Google imagery license should provide high resolution views needed for much of the mapping and project planning work across Utah. But, there will still be situations that call for custom flights to meet tighter, project-specific requirements (resolution, positioning) or even greater currency than Google's update cycle goals (targeted for a 3 year refresh cycle around the state and every 1 year along the Wasatch Front). Additionally, at the federal level, we currently expect the statewide 1 meter NAIP updates, contracted by the USDA, and the high resolution NGA 133 Cities imagery programs, to continue. These products are different enough from the Google imagery, in terms of schedule and specs, that they should be complementary data resources.
 1. **What is the impact to this initiative of Google's recent announcement that Google Maps Engine (GME) will be turned off early next year?**
    A GME-based WMS service is how the most current imagery service is being delivered to UGRC for acceptance testing. That service is expected to be replaced with a WMS and WMTS (tile service) hosted on the Google Cloud Platform (GCP) in the coming months. UGRC will select a software application to serve the imagery from GCP from among the existing commercial and open-source choices. At this point we see the GCP option as being superior to the GME platform as it gives us more control, flexibility, and potential cost-savings. Initial access to the service may be via a temporary WMS URL that, in a few months would be need to be replaced with links that use the new GCP-based service.
-1. **How does this relate to the <a href="https://drive.google.com/file/d/1Dwmmvkz7lMwoVQ-RtoG4hyed0lL-h6XI">Utah Mapping & Information Partnership (UMIP)</a> initiative announced by Lt. Governor Cox at last week's Maps on the Hill event?**
+1. **How does this relate to the [Utah Mapping & Information Partnership (UMIP)](https://drive.google.com/file/d/1Dwmmvkz7lMwoVQ-RtoG4hyed0lL-h6XI) initiative announced by Lt. Governor Cox at last week's Maps on the Hill event?**
    Obtaining statewide high resolution imagery is one of four foundational priorities identified by UMIP leadership. The other three are furthering the exchange of programmatic data between agencies via web services, identifying field work/mobile device synergy opportunities between agencies, and improving the PLSS corner point dataset from which many digital land records are based.
 1. **Answers to other questions we have been asked...(look for future additions to this list)**
 
@@ -70,5 +74,6 @@ cover_image_alt: ugrc social card
 - The native coordinate system for the Google imagery files and service is a Geographic Coordinate System with a WGS 1984 datum. Many end users in Utah work in coordinate systems with a different datum (NAD 1983 for example). It will be critical for end users that require the highest locational precision to set up their working environment through the use of the appropriate geographic transformation. The correct geographic transformation parameter is needed to overcome the locational difference between the "realization points" of the WGS84 and NAD83 datums, that are about a meter apart. Without the proper geographic transformation, re-projection algorithms will not be able to resolve the last meter of positional accuracy. For many web applications and coarser resolution mapping needs, the transformation may not be of importance.
 - UGRC will provide a feedback reporting form for imagery users around the state to report imagery and service issues so these can be passed along to Google.
 
-**Samples**
-<a href="/images/404.png">Moab</a> (US191 Bridge Over Colorado River) & <a href="../../images/pillar-blog/2015-02-02-utah-acquires-high-resolution-aerial-photography-license/logansample.png">Logan</a> (Canyon Road).
+### Sample
+
+![Logan sample](../../images/pillar-blog/2015-02-02-utah-acquires-high-resolution-aerial-photography-license/logansample.png)

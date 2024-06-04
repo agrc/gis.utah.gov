@@ -12,8 +12,8 @@ cover_image_alt: ugrc social card
 ---
 
 <p>Updates were made recently to the<br />
-<a href="/products/sgid/boundaries/municipal">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />
-<a href="/documentation/sgid/open-sgid">Utah SGID ArcSDE database server</a>.</p>
+<a href="/products/sgid/boundaries/municipal/">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the<br />
+<a href="/documentation/sgid/open-sgid/">Utah SGID ArcSDE database server</a>.</p>
 <p>The following highlights what has been updated through April 1, 2014:</p>
 <p><span style="text-decoration: underline;">Municipalities Updates:</span></p>
 <ul>

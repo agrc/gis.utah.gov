@@ -316,7 +316,7 @@ export const contacts: Contacts = {
   psap: {
     name: 'Hank Chou',
     email: 'hchou@utah.gov',
-    agency: "UGRC",
+    agency: 'UGRC',
     phone: '435-319-0307',
   },
   roads: {
@@ -343,9 +343,9 @@ export const contacts: Contacts = {
     agency: 'UDEM',
   },
   uta: {
-    name: 'Sumerset Ellis',
+    name: 'The Open Data Team',
     agency: 'UTA',
-    email: 'SEllis@rideuta.com',
+    email: 'opendata@rideuta.com',
   },
   ugs: {
     name: 'Cyndi Andersen',

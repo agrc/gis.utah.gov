@@ -168,20 +168,46 @@ async function itemId(row) {
   }
 
   let hubData;
+  let serviceParts;
   try {
     hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}_${layerId}`).json();
+    serviceParts = hubData.data.attributes.url.split('/rest/services/');
   } catch (error) {
-    recordError(`itemId hub request error: ${error.message}`, row);
-    return;
+    try {
+      // maybe this is something other than a feature service such as a WMTS base map service
+      hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}`).json();
+    } catch (error) {
+      recordError(`itemId hub request error: ${error.message}`, row);
+      return;
+    }
   }
-  const serviceParts = hubData.data.attributes.url.split('/rest/services/');
+
+  const orgLookup = {
+    'Utah DNR Online Maps': 'utahDNR',
+    'Utah Automated Geographic Reference Center (AGRC)': 'utah',
+    'Wasatch Front Regional Council': 'wfrc',
+    'UPlan Map Center': 'uplan',
+    'Utah Department of Environmental Quality': 'utahdeq',
+    'Utah SHPO': 'UtahSHPO',
+  };
+
+  const org = hubData.data.attributes.slug
+    ? hubData.data.attributes.slug.split('::')[0]
+    : orgLookup[hubData.data.attributes.organization];
+
+  if (!org) {
+    recordError(
+      `No hubOrganization could be found! slug: "${hubData.data.attributes.slug}" organization: "${hubData.data.attributes.organization}"`,
+      row,
+    );
+  }
 
   const newData = {
     hubName: hubData.data.attributes.name,
-    hubOrganization: hubData.data.attributes.slug.split('::')[0],
-    serverHost: serviceParts[0],
-    serverServiceName: serviceParts[1].split(/\/(FeatureServer|MapServer)\//)[0],
-    serverLayerId: layerId,
+    hubOrganization: org,
+    serverHost: serviceParts && serviceParts[0],
+    serverServiceName: serviceParts && serviceParts[1].split(/\/(FeatureServer|MapServer)\//)[0],
+    serverLayerId: serviceParts && layerId,
   };
 
   let changed = false;
@@ -284,12 +310,24 @@ const checks = [
 const rows = await worksheet.getRows();
 buildDuplicateLookups(rows);
 
+// useful for debugging specific rows
+let testId;
+try {
+  testId = process.argv[2];
+} catch (error) {
+  pass;
+}
+
 let updatedRowsCount = 0;
 console.log(`checking ${rows.length} rows`);
 const progressBar = new ProgressBar(':bar :percent ETA: :etas ', { total: rows.length });
 const skipStatuses = ['removed', 'draft'];
 for (const row of rows) {
   progressBar.tick();
+
+  if (testId && row.get(getFieldName('id')) !== testId) {
+    continue;
+  }
 
   if (skipStatuses.includes(row.get(getFieldName('indexStatus'))?.toLowerCase())) {
     continue;
