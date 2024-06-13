@@ -1,0 +1,57 @@
+name: New Issue (Create Blog Post)
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔍 Check issue type
+        run: |
+          if [[ "${{ github.event.issue.title }}" != "✍️ New blog post idea" ]]; then
+            echo "Issue title does not start with '✍️ New blog post idea', skipping"
+            exit 86
+          fi
+
+      - name: 🔬 Check actor
+        uses: tspascoal/get-user-teams-membership@v3
+        id: checkUserMember
+        with:
+          username: ${{ github.actor }}
+          team: committers
+          GITHUB_TOKEN: ${{ secrets.ORG_READ_PAT }}
+
+      - name: 🛑 Stop if not member
+        if: ${{ steps.checkUserMember.outputs.isTeamMember == false }}
+        run: |
+          echo "You cannot run this job."
+          exit 86
+
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: 📦 Install script dependencies
+        working-directory: scripts
+        run: npm install
+
+      - name: 📝 Create Blog Post
+        working-directory: scripts
+        run: node new-blog.js ${{ github.event.issue.id }}
+
+      - name: 📌 Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'feat: create new blog post'
+          title: 'feat: create new blog post'
+          body: 'This PR was automatically created by the "New Issue" workflow.'
+          branch: feat/new-blog-post-${{ github.event.issue.number }}
+          draft: true
