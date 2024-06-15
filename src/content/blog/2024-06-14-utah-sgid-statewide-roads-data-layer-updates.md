@@ -21,12 +21,12 @@ New roads were added and road names and address ranges were updated for the foll
 
 - **Cache County:** Obtained roads data on 05/14/2024. Previous update was on 03/08/2024.
 - **Davis County:** Obtained roads data on 05/08/2024. Previous update was on 03/08/2024.
-- **Iron County:** Obtained roads data on 06/12/2024. Previous update was on 04/15/2024.
+- **Iron County:** Obtained roads data on 05/12/2024. Previous update was on 04/15/2024.
 - **Salt Lake County:** Obtained roads data on 05/15/2024. Previous update was on 05/13/2024.
-- **Tooele County:** Obtained roads data on 06/14/2024. Previous update was on 12/15/2024.
+- **Tooele County:** Obtained roads data on 05/14/2024. Previous update was on 12/15/2023.
 - **Utah County:** Obtained roads data on 05/15/2024. Previous update was on 05/13/2024.
 - **Washington County:** Obtained roads data on 05/15/2024. Previous update was on 05/13/2024.
-- **Wayne County:** Obtained roads data on 04/09/2024. Previous update was on 05/13/2024.
+- **Wayne County:** Obtained roads data on 05/15/2024. Previous update was on 05/13/2024.
 
 #### UDOT Route System
 
