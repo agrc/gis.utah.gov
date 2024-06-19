@@ -24,6 +24,11 @@ const { title, description, image = '/default-social-card.png' } = Astro.props;
 <!-- Font preloads -->
 <link rel="preload" href="/fonts/SourceSans3-Regular.otf.woff2" as="font" type="font/woff" crossorigin />
 
+<style>
+  @view-transition {
+    navigation: auto; /* enabled! */
+  }
+</style>
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
