@@ -109,17 +109,20 @@ const page: IStandardPageMetadata = {
       >. The locked-down links will not authorize requests from ArcGIS Online's domain and the layer won't export/print.
     </p>
     <p>
-      To work around this issue, we developed a <ExternalLink href="https://github.com/agrc/serverless-print-proxy">
-        print proxy</ExternalLink
-      >. The proxy accepts the same parameters as Esri's Export Web Map. When it receives a request, it replaces the
-      locked-down quad-word with a wide open quad-word. Then it forwards the request to the Export Web Map service and
-      passes back the response stripped of the wide open quad-words for security. You can read more about how we built
-      print-proxy in <a href="/blog/2017-02-02-printing-web-maps-with-discover-services/">our blog post about it</a>. To
-      get started, you need to get your account added to <ExternalLink
-        href="https://github.com/agrc/serverless-print-proxy/blob/master/accounts.js">accounts.js</ExternalLink
-      >. You can do this by <ExternalLink
-        href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request"
-        >submitting a pull request</ExternalLink
+      To work around this issue, we developed a proxy service called <ExternalLink
+        href="https://github.com/agrc/serverless-print-proxy"
+      >
+        Print Proxy</ExternalLink
+      >. The proxy acts as a middleman between your application and any Esri-compatible print service. When it receives
+      a request, it replaces the locked-down quad-word with a wide open quad-word. Then it forwards the request to the
+      Export Web Map service and passes back the response stripped of the wide open quad-words for security. You may
+      read more about how we built Print Proxy in <a href="/blog/2017-02-02-printing-web-maps-with-discover-services/"
+        >our blog post about it</a
+      >. To get started, you may request an <ExternalLink
+        href="https://github.com/agrc/serverless-print-proxy/tree/main?tab=readme-ov-file#usage"
+        >account number</ExternalLink
+      > by sending an email to <ExternalLink href="mailto:ugrc-developers@utah.gov"
+        >ugrc-developers@utah.gov</ExternalLink
       >.
     </p>
   </Section>
