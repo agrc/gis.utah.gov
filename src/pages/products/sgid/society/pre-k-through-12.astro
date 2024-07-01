@@ -30,7 +30,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: ['June 2023 - Updated Granger High location', 'August 2020'],
+  updateHistory: ['June 2024 - Added 65 missing locations', 'June 2023 - Updated Granger High location', 'August 2020'],
   hub: {
     ...dataPages[metadata.pageTitle],
   },
@@ -88,7 +88,7 @@ const page: IPageMetadata = {
     <h4>Geographic Data</h4>
     <p>
       Point locations (geometry) were generated from USBE's school list using the <ExternalLink
-        href="http://api.mapserv.utah.gov/#geocoding">UGRC Geocoding Web API</ExternalLink
+        href="https://api.mapserv.utah.gov/#geocoding">UGRC Geocoding Web API</ExternalLink
       > which utilizes address point and street centerline reference data. These were then compared to the previous 2016-2017
       school layer's locations with the best position chosen. Unmatched addresses were hand placed with assistance from publicly
       available, commercial mapping and search web apps.
@@ -140,7 +140,7 @@ const page: IPageMetadata = {
       >
       <CardWithPopularLink
         title="School district boundaries"
-        href="/products/sgid/political/state-school-board-districts"
+        href="/products/sgid/political/state-school-board-districts/"
         >State school board districts for 2022 to 2032.</CardWithPopularLink
       >
     </GridForMoreResources>
@@ -148,10 +148,10 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Schools" href="/products/sgid/society/higher-education"
+      <CardWithSmallLink title="Schools" href="/products/sgid/society/higher-education/"
         >Utah higher education institution locations from the SGID.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Society" href="/products/sgid/society"
+      <CardWithSmallLink title="Society" href="/products/sgid/society/"
         >The SGID society category index page.</CardWithSmallLink
       >
     </GridForYouMightLike>

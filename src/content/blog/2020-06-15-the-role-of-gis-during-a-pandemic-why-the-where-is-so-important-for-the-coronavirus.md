@@ -18,7 +18,7 @@ These questions led me down a rabbit hole of research into the relationship betw
 
 ### 1. Historically, GIS has a solid track record for helping us understand public health situations
 
-As Greg Bunce discusses in his [“Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS” article](/blog/2019-09-03-digital-maps-gis-history), GIS really made its debut in connection to health when it helped resolve the London cholera epidemic of 1854. John Snow, a British physician, analyzed the relationship between water pumps and cholera cases, and he realized that water was the culprit in the spread of the disease. He made a spatial connection between the pumps and the disease, and that made all the difference in preventing further spread. Even from this early case study, “Mapping was an approach employed both by the officials charged with responding to this or that disease incursion and the medical personnel who struggled to treat those afflicted. . . . Then as well as now, mapping served and serves the science of its day” (Koch 2005, 2).
+As Greg Bunce discusses in his [“Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS” article](/blog/2019-09-03-digital-maps-gis-history/), GIS really made its debut in connection to health when it helped resolve the London cholera epidemic of 1854. John Snow, a British physician, analyzed the relationship between water pumps and cholera cases, and he realized that water was the culprit in the spread of the disease. He made a spatial connection between the pumps and the disease, and that made all the difference in preventing further spread. Even from this early case study, “Mapping was an approach employed both by the officials charged with responding to this or that disease incursion and the medical personnel who struggled to treat those afflicted. . . . Then as well as now, mapping served and serves the science of its day” (Koch 2005, 2).
 
 Since then, GIS has had an impact on several other health situations:
 
@@ -32,7 +32,7 @@ As evidenced by these situations, GIS has been successful in providing a deeper 
 
 ### 2. GIS helps people navigate through complicated layers of information
 
-GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page](/products/sgid), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
+GIS, by its very nature, helps people make sense of complicated information. With a quick glance at the [UGRC SGID page](/products/sgid/), you can see how many subjects GIS can shed light on: bison habitat, weather stations throughout Utah, the locations of heliport landing facilities, and a seemingly endless number of other diverse topics. GIS presents this information in a unique way, and it can also provide information on the relationship between those different layers of information.
 
 Going back to the [Johns Hopkins’ map](https://coronavirus.jhu.edu/map.html) as an example: on the site’s [Maps & Trends page](https://coronavirus.jhu.edu/data#charts) of the Critical Trends tab, it has a whole list of questions that GIS can help answer.
 ![Johns Hopkins Coronavirus Map FAQ page](../../images/pillar-blog/2020-06-15-the-role-of-gis-during-a-pandemic-why-the-where-is-so-important-for-the-coronavirus/johnshopkinscoronavirusmapfaqs.jpg)
@@ -59,9 +59,9 @@ In order for any country to effectively respond to the coronavirus, it is essent
 
 Now, all those reasons are valid and important in discussing how and why GIS is so essential during this pandemic. But I also have to wonder though about one more potential reason that we’re so interested in GIS, especially during times of uncertainty: Is spatial information about the coronavirus particularly helpful because our brains are naturally wired to process information spatially and visually? Maybe we’re turning to GIS right now because processing information in that way naturally makes sense to our brains, and when things are uncertain and unpredictable in the world, like they are right now, we turn toward things that are familiar in order to gain a sense of comfort and control.
 
-As stated in the UGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”](/blog/2020-01-29-cognitive-maps) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
+As stated in the UGRC article [“Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System,”](/blog/2020-01-29-cognitive-maps/) “[The] brain is a spatial organ” (Bunce 2020). When we have a sense of “where” in a situation, we’re better able to process and retain information. Geographical insight allows people to understand what’s going on around them in a different way, and a large part (albeit not the whole part or the most important part necessarily) of gaining that geographical insight is visual.
 
-People are more likely to notice and pay attention to visual information than written information (which I find especially ironic as I write this article). Jon Puleston, Kantar Consulting, explains this phenomenon well in the article [“The Science of Visuals”](http://www.lightspeedresearch.com/science-visuals/): “The human brain thinks in pictures.” And what are maps but pictures that share information about a specific area?
+People are more likely to notice and pay attention to visual information than written information (which I find especially ironic as I write this article). Jon Puleston, Kantar Consulting, explains this phenomenon well in the article [“The Science of Visuals”](https://www.lightspeedresearch.com/science-visuals/): “The human brain thinks in pictures.” And what are maps but pictures that share information about a specific area?
 
 Looking at a map is a visual experience—you see landmarks, names of different areas, different colors representing something on the map, etc. Gaining spatial awareness in a physical space is also visual; we often look to landmarks to understand where we are. Puleston continues, “We are more likely to take notice of visual information than text based facts because our brains derive meaning from it more efficiently.”
 
@@ -77,9 +77,9 @@ Whatever the reason for the current focus and reliance on GIS during this pandem
 
 ### Sources
 
-Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” UGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/](/blog/2020-01-29-cognitive-maps).
+Bunce, Greg. “Cognitive Maps - The Science Behind our Brain’s Internal Mapping and Navigation System.” UGRC Blog. Published January 30, 2020. [https://gis.utah.gov/cognitive-maps/](/blog/2020-01-29-cognitive-maps/).
 
-Bunce, Greg. “Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS.” UGRC Blog. Published September 3, 2019. Accessed May 14, 2020. [https://gis.utah.gov/digital-maps-gis-history/](/blog/2019-09-03-digital-maps-gis-history).
+Bunce, Greg. “Digital Maps - How Chance, Timing, and Heritage Shaped Modern GIS.” UGRC Blog. Published September 3, 2019. Accessed May 14, 2020. [https://gis.utah.gov/digital-maps-gis-history/](/blog/2019-09-03-digital-maps-gis-history/).
 
 _Geographic Information Systems (GIS) and Cancer Research._ US Department of Health and Human Services, National Institutes of Health, National Cancer Institute, 2006. (NIH Publication No. 07-6096). Reproduced by the US Department of Commerce National Technical Information Service. Springfield, VA. Accessed electronically on June 11, 2020. [https://classic.ntis.gov/assets/pdf/st-on-cd/PB2007103350.pdf](https://classic.ntis.gov/assets/pdf/st-on-cd/PB2007103350.pdf).
 
@@ -97,7 +97,7 @@ Koch, Tom. _Cartographies of Disease: Maps, Mapping, and Medicine._ Redlands, CA
 
 McCullough, Maggie. “Introducing PolicyMap COVID-19 Quick Maps.” PolicyMap.com. May 6, 2020. [https://www.policymap.com/2020/05/policymap-covid19-quick-maps/](https://www.policymap.com/2020/05/policymap-covid19-quick-maps/).
 
-Puleston, Jon. “The Science of Visuals.” Kantar Consulting. Accessed June 11, 2020. [http://www.lightspeedresearch.com/science-visuals/](http://www.lightspeedresearch.com/science-visuals/).
+Puleston, Jon. “The Science of Visuals.” Kantar Consulting. Accessed June 11, 2020. [https://www.lightspeedresearch.com/science-visuals/](https://www.lightspeedresearch.com/science-visuals/).
 
 Singh, Yashvendra. 2020. “How enterprises are using GIS to track Covid-19 impact.” ETCIO.com. Published March 26, 2020. Accessed May 18, 2020. [https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102](https://cio.economictimes.indiatimes.com/news/strategy-and-management/how-enterprises-are-using-gis-to-track-covid-19-impact/74821102).
 
@@ -107,8 +107,8 @@ Zalac, Frédéric, and Kris Fleerackers. “Did early humans communicate with ca
 
 ### General Reading/References
 
-“Allocentric vs. Egocentric Spatial Processing.” Mental Imagery and Human-Computer Interaction Lab. Harvard Medical School Department of Radiology. Accessed June 11, 2020. [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308).
-\*The publications page here: [http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11](http://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11) has some great resources.
+“Allocentric vs. Egocentric Spatial Processing.” Mental Imagery and Human-Computer Interaction Lab. Harvard Medical School Department of Radiology. Accessed June 11, 2020. [https://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308](https://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=308).
+\*The publications page here: [https://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11](https://www.nmr.mgh.harvard.edu/mkozhevnlab/?page_id=11) has some great resources.
 
 Cartographic Guidelines for Public Health. Centers for Disease Control and Prevention, Geography and Geospatial Science Working Group. Published August 2012. [https://www.cdc.gov/dhdsp/maps/gisx/resources/cartographic_guidelines.pdf](https://www.cdc.gov/dhdsp/maps/gisx/resources/cartographic_guidelines.pdf).
 
@@ -120,7 +120,7 @@ Herweg Nora A., and Kahana Michael J. “Spatial Representations in the Human Br
 
 Robert B. Bechtel, and Arza Churchman. _Handbook of Environmental Psychology._ New York: John Wiley & Sons, Inc., 2002. Accessed electronically via [https://books.google.com/books?id=G1F2nlg1pIAC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false](https://books.google.com/books?id=G1F2nlg1pIAC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false).
 
-Schenk, Frithjof Benjamin. “Mental Maps: The Cognitive Mapping of the Continent as an Object of Research of European History.” European History Online (EGO). Leibniz Institute of European History (IEG). Published July 08, 2013. [http://www.ieg-ego.eu/schenkf-2013-en](http://www.ieg-ego.eu/schenkf-2013-en).
+Schenk, Frithjof Benjamin. “Mental Maps: The Cognitive Mapping of the Continent as an Object of Research of European History.” European History Online (EGO). Leibniz Institute of European History (IEG). Published July 08, 2013. [https://www.ieg-ego.eu/schenkf-2013-en](https://www.ieg-ego.eu/schenkf-2013-en).
 
 _[UGRC]: The Utah Geospatial Resource Center
 _[GIS]: Geographic information systems \*[SGID]: State Geographic Information Database

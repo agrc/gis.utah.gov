@@ -26,7 +26,7 @@ export const Menu = ({ children, currentUri }) => {
                   <NavigationMenu.Link asChild>
                     <a
                       className="custom-style group flex size-full cursor-pointer select-none flex-col rounded-lg p-3 py-4 no-underline outline-none hover:bg-zinc-200 focus:shadow-[0_0_0_2px] focus:shadow-zinc-50 sm:py-1"
-                      href="/products/sgid/categories"
+                      href="/products/sgid/categories/"
                     >
                       <img src={sgidLogo.src} alt="SGID Logo" className="size-18" />
                       <div className="mt-2 text-center text-sm text-zinc-500 group-hover:text-zinc-700">
@@ -35,18 +35,18 @@ export const Menu = ({ children, currentUri }) => {
                     </a>
                   </NavigationMenu.Link>
                 </li>
-                <ListItem title="SGID" href="/products/sgid">
+                <ListItem title="SGID" href="/products/sgid/">
                   A multi-faceted centralized collection of hundreds of GIS data layers developed, aggregated, or
                   acquired by the State of Utah.
                 </ListItem>
-                <ListItem title="Discover" href="/products/discover">
+                <ListItem title="Discover" href="/products/discover/">
                   A cloud-based server that provides aerial imagery and base maps for GIS, CAD, or web applications.
                 </ListItem>
-                <ListItem title="TURN GPS" href="/products/turn">
+                <ListItem title="TURN GPS" href="/products/turn/">
                   High-precision global navigation satellite system (GNSS) providing real-time corrections and data for
                   post processing.
                 </ListItem>
-                <ListItem title="UGRC API" href="/products/api">
+                <ListItem title="UGRC API" href="/products/api/">
                   An HTTP accessible API with endpoints to search the SGID and geocode.
                 </ListItem>
               </MegaMenuItem>
@@ -61,49 +61,49 @@ export const Menu = ({ children, currentUri }) => {
           <NavigationMenu.Content className="absolute left-0 top-0 w-full data-[motion=from-end]:animate-in data-[motion=from-start]:animate-in data-[motion=to-end]:animate-out data-[motion=to-start]:animate-out data-[motion=from-end]:slide-in-from-right data-[motion=from-start]:slide-in-from-left data-[motion=to-end]:slide-out-to-right data-[motion=to-start]:slide-out-to-left data-[motion=from-end]:anim-duration-500 data-[motion=from-start]:anim-duration-500 data-[motion=to-end]:anim-duration-500 data-[motion=to-start]:anim-duration-500 sm:w-auto">
             <MegaMenuChrome className="flex w-full flex-row gap-4 pr-6 md:gap-2">
               <MegaMenuItem title="By audience" containerCss="md:w-1/3">
-                <ListItem href="/solutions/for-government" title="Government employees" className="col-span-2">
+                <ListItem href="/solutions/for-government/" title="Government employees" className="col-span-2">
                   Partner with us to geo-enable your agency.
                 </ListItem>
-                <ListItem href="/solutions/for-gis-users" title="GIS users" className="col-span-2">
+                <ListItem href="/solutions/for-gis-users/" title="GIS users" className="col-span-2">
                   Integrate our data and services with your GIS.
                 </ListItem>
                 <ListItem
-                  href="/solutions/for-application-developers"
+                  href="/solutions/for-application-developers/"
                   title="Application developers"
                   className="col-span-2"
                 >
                   Use our tools and resources to innovate and build.
                 </ListItem>
-                <ListItem href="/solutions/for-surveyors" title="Surveyors" className="col-span-2">
+                <ListItem href="/solutions/for-surveyors/" title="Surveyors" className="col-span-2">
                   Find your direction. We can help.
                 </ListItem>
-                <ListItem href="/solutions/for-students" title="Students" className="col-span-2">
+                <ListItem href="/solutions/for-students/" title="Students" className="col-span-2">
                   Learning never ends.
                 </ListItem>
               </MegaMenuItem>
               <MegaMenuItem title="By use case" containerCss="md:w-1/3">
                 <ListItem
-                  href="/solutions/spatial-data-management"
+                  href="/solutions/spatial-data-management/"
                   title="Spatial data management"
                   className="col-span-2"
                 >
                   Learn how we can help.
                 </ListItem>
                 <ListItem
-                  href="/solutions/for-emergency-response"
+                  href="/solutions/for-emergency-response/"
                   title="Emergency response (911)"
                   className="col-span-2"
                 >
                   Data and solutions for when it matters most.
                 </ListItem>
-                <ListItem href="/solutions/gis-strategy" title="GIS strategy" className="col-span-2">
+                <ListItem href="/solutions/gis-strategy/" title="GIS strategy" className="col-span-2">
                   Begin thinking bigger by thinking differently.
                 </ListItem>
-                <ListItem href="/solutions/gis-integration" title="Integrating GIS" className="col-span-2">
+                <ListItem href="/solutions/gis-integration/" title="Integrating GIS" className="col-span-2">
                   Location matters to your business processes.
                 </ListItem>
                 <ListItem
-                  href="/solutions/high-precision-location"
+                  href="/solutions/high-precision-location/"
                   title="High precision location"
                   className="col-span-2"
                 >
@@ -115,31 +115,31 @@ export const Menu = ({ children, currentUri }) => {
         </NavigationMenu.Item>
 
         <NavigationMenu.Item value="documentation">
-          <MenuLink href="/documentation" currentUri={currentUri}>
+          <MenuLink href="/documentation/" currentUri={currentUri}>
             Documentation
           </MenuLink>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item value="collaboration">
-          <MenuLink href="/collaboration" currentUri={currentUri}>
+          <MenuLink href="/collaboration/" currentUri={currentUri}>
             Collaboration
           </MenuLink>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item value="blog">
-          <MenuLink href="/blog" currentUri={currentUri}>
+          <MenuLink href="/blog/" currentUri={currentUri}>
             Blog
           </MenuLink>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item value="about">
-          <MenuLink href="/about" currentUri={currentUri}>
+          <MenuLink href="/about/" currentUri={currentUri}>
             About
           </MenuLink>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item value="contact">
-          <MenuLink href="/contact" currentUri={currentUri}>
+          <MenuLink href="/contact/" currentUri={currentUri}>
             Contact
           </MenuLink>
         </NavigationMenu.Item>
@@ -184,71 +184,73 @@ export const SmallMenu = ({ children, currentUri }) => (
             </NavigationMenu.Item>
 
             <NavigationMenu.Item value="products">
-              <MobileDropDownMenu href="/products" currentUri={currentUri}>
+              <MobileDropDownMenu href="/products/" currentUri={currentUri}>
                 Products
               </MobileDropDownMenu>
               <NavigationMenu.Content>
                 <NavigationMenu.List className="pl-2 pt-1">
                   <NavigationMenu.Item value="products">
-                    <MobileListItem href="/products/sgid">SGID</MobileListItem>
-                    <MobileListItem href="/products/discover">Discover</MobileListItem>
-                    <MobileListItem href="/products/turn">TURN GPS</MobileListItem>
-                    <MobileListItem href="/products/api">UGRC API</MobileListItem>
+                    <MobileListItem href="/products/sgid/">SGID</MobileListItem>
+                    <MobileListItem href="/products/discover/">Discover</MobileListItem>
+                    <MobileListItem href="/products/turn/">TURN GPS</MobileListItem>
+                    <MobileListItem href="/products/api/">UGRC API</MobileListItem>
                   </NavigationMenu.Item>
                 </NavigationMenu.List>
               </NavigationMenu.Content>
             </NavigationMenu.Item>
 
             <NavigationMenu.Item value="solutions">
-              <MobileDropDownMenu href="/solutions" currentUri={currentUri}>
+              <MobileDropDownMenu href="/solutions/" currentUri={currentUri}>
                 Solutions
               </MobileDropDownMenu>
               <NavigationMenu.Content>
                 <NavigationMenu.List className="pl-2 pt-1">
                   <NavigationMenu.Item value="solutions-audience">
                     <p className="pb-2 pl-2 text-xs uppercase text-primary dark:text-accent">By audience</p>
-                    <MobileListItem href="/solutions/for-government">Government employees</MobileListItem>
-                    <MobileListItem href="/solutions/for-gis-users">GIS users</MobileListItem>
-                    <MobileListItem href="/solutions/for-application-developers">Application developers</MobileListItem>
-                    <MobileListItem href="/solutions/for-surveyors">Surveyors</MobileListItem>
-                    <MobileListItem href="/solutions/for-students">Students</MobileListItem>
+                    <MobileListItem href="/solutions/for-government/">Government employees</MobileListItem>
+                    <MobileListItem href="/solutions/for-gis-users/">GIS users</MobileListItem>
+                    <MobileListItem href="/solutions/for-application-developers/">
+                      Application developers
+                    </MobileListItem>
+                    <MobileListItem href="/solutions/for-surveyors/">Surveyors</MobileListItem>
+                    <MobileListItem href="/solutions/for-students/">Students</MobileListItem>
                     <p className="py-2 pl-2 text-xs uppercase text-primary dark:text-accent">By use case</p>
-                    <MobileListItem href="/solutions/spatial-data-management">Spatial data management</MobileListItem>
-                    <MobileListItem href="/solutions/for-emergency-response">Emergency response (911)</MobileListItem>
-                    <MobileListItem href="/solutions/gis-strategy">GIS strategy</MobileListItem>
-                    <MobileListItem href="/solutions/gis-integration">Integrating GIS</MobileListItem>
-                    <MobileListItem href="/solutions/high-precision-location">High Precision Location</MobileListItem>
+                    <MobileListItem href="/solutions/spatial-data-management/">Spatial data management</MobileListItem>
+                    <MobileListItem href="/solutions/for-emergency-response/">Emergency response (911)</MobileListItem>
+                    <MobileListItem href="/solutions/gis-strategy/">GIS strategy</MobileListItem>
+                    <MobileListItem href="/solutions/gis-integration/">Integrating GIS</MobileListItem>
+                    <MobileListItem href="/solutions/high-precision-location/">High Precision Location</MobileListItem>
                   </NavigationMenu.Item>
                 </NavigationMenu.List>
               </NavigationMenu.Content>
             </NavigationMenu.Item>
 
             <NavigationMenu.Item value="documentation">
-              <MobileMenuLink href="/documentation" currentUri={currentUri}>
+              <MobileMenuLink href="/documentation/" currentUri={currentUri}>
                 Documentation
               </MobileMenuLink>
             </NavigationMenu.Item>
 
             <NavigationMenu.Item value="collaboration">
-              <MobileMenuLink href="/collaboration" currentUri={currentUri}>
+              <MobileMenuLink href="/collaboration/" currentUri={currentUri}>
                 Collaboration
               </MobileMenuLink>
             </NavigationMenu.Item>
 
             <NavigationMenu.Item value="blog">
-              <MobileMenuLink href="/blog" currentUri={currentUri}>
+              <MobileMenuLink href="/blog/" currentUri={currentUri}>
                 Blog
               </MobileMenuLink>
             </NavigationMenu.Item>
 
             <NavigationMenu.Item value="about">
-              <MobileMenuLink href="/about" currentUri={currentUri}>
+              <MobileMenuLink href="/about/" currentUri={currentUri}>
                 About
               </MobileMenuLink>
             </NavigationMenu.Item>
 
             <NavigationMenu.Item value="contact">
-              <MobileMenuLink href="/contact" currentUri={currentUri}>
+              <MobileMenuLink href="/contact/" currentUri={currentUri}>
                 Contact
               </MobileMenuLink>
             </NavigationMenu.Item>

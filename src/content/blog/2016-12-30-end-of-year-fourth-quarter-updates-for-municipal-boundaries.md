@@ -14,7 +14,7 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download](/products/sgid/boundaries/municipal) and listed below.
+Once again we have reached the end of the year, and all updates for the Municipal Boundaries are available for [download](/products/sgid/boundaries/municipal/) and listed below.
 
 We would like to welcome the newest city in the state: Millcreek in Salt Lake County, seems like it was a long time coming and now it’s here. Hooray!
 

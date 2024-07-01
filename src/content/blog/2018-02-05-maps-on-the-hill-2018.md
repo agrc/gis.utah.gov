@@ -32,6 +32,6 @@ Utah Department of Environmental Quality, Division of Water Quality
 
 Utah Community Development Office
 
-Most entries can be viewed in the [Maps on the Hill PDF booklet](https://drive.google.com/file/d/1Dtrr93RL3JI7wpWqLe4eVRY9DNDWOP_1/view?usp=sharing). Be sure to give the [photo album](https://drive.google.com/drive/folders/1w7L5UgyP7w8_5BWaWklP8YeSQWWLR0Ql?usp=sharing) a view. And, you can look back on all the [Maps on the Hill events](/collaboration/events/maps-on-the-hill) on our website.
+Most entries can be viewed in the [Maps on the Hill PDF booklet](https://drive.google.com/file/d/1Dtrr93RL3JI7wpWqLe4eVRY9DNDWOP_1/view?usp=sharing). Be sure to give the [photo album](https://drive.google.com/drive/folders/1w7L5UgyP7w8_5BWaWklP8YeSQWWLR0Ql?usp=sharing) a view. And, you can look back on all the [Maps on the Hill events](/collaboration/events/maps-on-the-hill/) on our website.
 
 Thank you to our judges, participants, and volunteers for making this a quality, informative event.

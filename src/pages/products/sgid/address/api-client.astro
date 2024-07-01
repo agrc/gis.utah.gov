@@ -39,7 +39,7 @@ const page: IPageMetadata = {
   updateHistory: [
     releaseMetadata?.published_at ?? false
       ? dateFormatter.format(new Date(releaseMetadata.published_at ?? ''))
-      : `<a href="http://github.com/agrc/api-client/releases">GitHub Release History</a>`,
+      : `<a href="https://github.com/agrc/api-client/releases">GitHub Release History</a>`,
   ],
   links: [
     {
@@ -50,7 +50,9 @@ const page: IPageMetadata = {
     },
     {
       title: 'UGRC API Client for MacOS',
-      url: releaseMetadata.assets.find((asset) => asset.name.includes('x64.dmg'))?.browser_download_url ?? 'unknown',
+      url:
+        releaseMetadata.assets.find((asset) => asset.name.includes('arm64.dmg'))?.browser_download_url ??
+        'https://github.com/agrc/api-client/releases',
     },
   ],
 };
@@ -138,10 +140,10 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines">
+      <CardWithSmallLink title="Roads" href="/products/sgid/transportation/road-centerlines/">
         The roads dataset that is used for geocoding
       </CardWithSmallLink>
-      <CardWithSmallLink title="Address Points" href="/products/sgid/location/address-points">
+      <CardWithSmallLink title="Address Points" href="/products/sgid/location/address-points/">
         The address point dataset that is used for geocoding
       </CardWithSmallLink>
       <CardWithSmallLink title="UGRC API GitHub" href="https://github.com/agrc/api-client">

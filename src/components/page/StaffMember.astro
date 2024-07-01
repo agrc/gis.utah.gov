@@ -52,7 +52,7 @@ const authorFilter = authorFiltersLookup[slugify(name)];
       </div>
       {
         authorFilter?.posts.length > 0 ? (
-          <a class="text-sm" href={`/blog/authors/${authorFilter.slug}`}>
+          <a class="text-sm" href={`/blog/authors/${authorFilter.slug}/`}>
             authored posts
           </a>
         ) : null

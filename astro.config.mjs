@@ -16,6 +16,9 @@ export default defineConfig({
   image: {
     domains: ['gis.utah.gov'],
   },
+  build: {
+    assets: '_assets',
+  },
   integrations: [
     mdx(),
     sitemap(),

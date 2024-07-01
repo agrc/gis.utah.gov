@@ -1,0 +1,94 @@
+---
+title: Mapping Utah's Housing Affordability
+author: Greg Bunce
+date: 2024-05-17T15:00:00.000Z
+category: UGRC
+tags:
+  - maps
+  - housing
+cover_image: /src/images/pillar-blog/2024-05-17-utah-housing-affordability-map/affordable_housing_social_card.png
+cover_image_alt: mapping utah's housing affordability
+---
+
+import Contacts from '@components/page/Contacts.astro';
+
+<link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+<script src="https://js.arcgis.com/4.29/"></script>
+<script type="module" src="https://js.arcgis.com/map-components/4.29/arcgis-map-components.esm.js"></script>
+
+Utahns are feeling the squeeze, and there's data to back it up. Housing affordability has become the top concern for residents, according to a recent [2024 Utah Foundation survey](https://www.utahfoundation.org/wp-content/uploads/rr819.pdf).
+
+That’s not surprising, given the median sales price of a home in Utah is [$535,000](https://www.redfin.com/state/Utah/housing-market). For context, that’s [27% higher](https://www.redfin.com/us-housing-market) than the national median.
+
+To afford the median mortgage In Salt Lake City, you would need a household income of [at least $140,000](https://www.axios.com/local/salt-lake-city/2023/11/02/affordable-home-slc-house-mortgage-prices), significantly higher than the city’s median of $92,000. These numbers validate that income does not match the cost of housing.
+
+Let’s zoom out a bit and explore housing affordability in other parts of the state.
+
+## Housing Affordability in Utah
+
+Housing affordability refers to the relationship between the cost of housing and a household's income. It measures how easy or difficult it is for a resident to afford a home.
+
+For this affordability analysis, we’ll be using a home-price-to-income ratio. Home prices have historically had a relatively stable relationship with income, making this ratio a good indicator of affordability.
+
+This ratio is a simple mathematical equation that helps determine housing affordability by dividing the median house price by the median household income. For example, a median house price of $500,000 divided by a median household income of $100,000 equals a home-price-to-income ratio of 5.
+
+Most [experts agree](https://www.fidelity.com/viewpoints/personal-finance/before-buying-house) that a ratio higher than 5 indicates a decline in home buyer affordability.
+
+Of the 166 Utah ZIP codes we analyzed for this study, we found that 60% have a home-price-to-income ratio greater than 5.
+
+Here are the 5 least and most affordable ZIP codes in Utah in terms of home-price-to-income (HPI) ratio.
+
+### Least Affordable ZIP codes
+
+| ZIP code | County     | Postal Community | HPI | Average Home Value (2022) | Median Income (2022) |
+| -------- | ---------- | ---------------- | --- | ------------------------- | -------------------- |
+| 84060    | Summit     | Park City        | 16  | $2,064,044                | $126,602             |
+| 84763    | Washington | Rockville        | 14  | $664,214                  | $48,438              |
+| 84102    | Salt Lake  | Salt Lake City   | 11  | $530,160                  | $50,036              |
+| 84028    | Rich       | Garden City      | 11  | $571,330                  | $51,500              |
+| 84783    | Washington | Dammeron Valley  | 11  | $762,345                  | $71,167              |
+
+### Most Affordable ZIP codes
+
+| ZIP code | County  | Postal Community | HPI | Average Home Value (2022) | Median Income (2022) |
+| -------- | ------- | ---------------- | --- | ------------------------- | -------------------- |
+| 84635    | Millard | Hinckley         | 3   | $243,518                  | $76,250              |
+| 84620    | Sevier  | Aurora           | 3   | $304,393                  | $91,250              |
+| 84730    | Sevier  | Glenwood         | 3   | $330,912                  | $96,563              |
+| 84751    | Beaver  | Milford          | 3   | $220,956                  | $82,928              |
+| 84724    | Sevier  | Elsinore         | 3   | $141,141                  | $56,250              |
+
+_Explore other ZIP codes with our [interactive map](https://utah.maps.arcgis.com/apps/instant/basic/index.html?appid=0fa43b6ecc5344ff82c2eb5aeb289489)._
+
+## What is being done to alleviate housing prices?
+
+Utah faces a worsening housing affordability crisis. The state's population is booming, but there aren't enough homes to keep up. The University of Utah’s Kem C. Gardner Policy Institute study predicts a [shortage of over 37,000 units](https://d36oiwf74r1rap.cloudfront.net/wp-content/uploads/State-Of-Housing-Sep2023.pdf?x71849) this year.
+
+To address this, Governor Cox aims to create [35,000 new starter homes by 2028](https://utahnewsdispatch.com/2024/03/29/housing-market-utah-gov-cox-goal-starter-homes). The goal is to meet the needs of Utah's growing population and make homeownership more attainable.
+
+Salt Lake City is already experiencing a surge in building permits, with March 2024 seeing an [81% increase](https://www.axios.com/local/salt-lake-city/2024/05/06/single-family-home-building-permits-increase) compared to the same month last year.
+
+Another bright spot is the increase in [multi-family housing units](https://www.utahbusiness.com/multifamily-housing-options-utah/) under construction.
+
+## Continued Growth
+
+Unfortunately, new housing construction hasn't matched Utah's booming economy (ranked [#1](https://www.utahbusiness.com/multifamily-housing-options-utah/)) and population growth ([#2](https://www.utahbusiness.com/multifamily-housing-options-utah/)), leading to long-term affordability concerns.
+
+With easy access to recreation, booming job growth, and a high quality of life, Utah's growth shows no signs of slowing.
+
+## Interactive Map
+
+Explore Utah's housing affordability with our [interactive map](https://utah.maps.arcgis.com/apps/instant/basic/index.html?appid=0fa43b6ecc5344ff82c2eb5aeb289489) and see where your neighborhood stands compared to others.
+
+### Showing home-price-to-income ratio by ZIP Code for the year 2022
+
+<div class="mx-auto h-screen w-full max-w-4xl overflow-hidden rounded-lg border shadow-xl md:aspect-video md:h-auto dark:border-black/30">
+  <arcgis-map item-id="85fa417923084153b1436cafd3099211">
+    <arcgis-legend position="top-right" />
+    <arcgis-search position="bottom-left" />
+  </arcgis-map>
+</div>
+
+### Methodology
+
+We used the most currently available data from the [US Census Bureau's American Community Survey](https://www.census.gov/programs-surveys/acs) (ACS) along with [Zillow’s Home Value Index](https://www.zillow.com/research/data/) for this analysis. ZIP codes were used because they were the common denominator (present) in both datasets. Note that we excluded ZIP codes that did not have data in one or both datasets from this analysis.

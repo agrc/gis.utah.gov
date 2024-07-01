@@ -9,7 +9,7 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-<p>Updates were made recently to the <a href="/products/sgid/boundaries/municipal">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the <a href="/documentation/sgid/open-sgid">Utah SGID ArcSDE database server</a></p>
+<p>Updates were made recently to the <a href="/products/sgid/boundaries/municipal/">SGID10.BOUNDARIES.Municipalities</a> feature classes that reside on the <a href="/documentation/sgid/open-sgid/">Utah SGID ArcSDE database server</a></p>
 <p>The following highlights what has been updated through Aug. 9, 2013:</p>
 <p><span style="text-decoration: underline;">Municipalities Updates:</span></p>
 <ul>

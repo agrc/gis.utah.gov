@@ -67,7 +67,7 @@ Convert your reclassified [raster to polygons](https://pro.arcgis.com/en/pro-app
 arcpy.RasterToPolygon_conversion(r'C:\Contours.gdb\dem30_reclass', 'ContourPolygons', 'SIMPLIFY', 'VALUE')
 ```
 
-![Tanaka Contours](../../images/pillar-blog/2017-11-27-dumbing-down-terrain-with-contour-polygons/tanaka.png)If you’ve made it this far and created contour polygons, you might as well and take it a step further and create [Tanaka contours](http://wiki.gis.com/wiki/index.php/Tanaka_contours). Tanaka contours were developed by Japanese cartographer Tanaka Kitiro in 1950. Using this technique terrain is represented by a terraced effect with the leading northwest edge of the contour illuminated by a light source and the opposite side in shadow.
+![Tanaka Contours](../../images/pillar-blog/2017-11-27-dumbing-down-terrain-with-contour-polygons/tanaka.png)If you’ve made it this far and created contour polygons, you might as well and take it a step further and create [Tanaka contours](https://wiki.gis.com/wiki/index.php/Tanaka_contours). Tanaka contours were developed by Japanese cartographer Tanaka Kitiro in 1950. Using this technique terrain is represented by a terraced effect with the leading northwest edge of the contour illuminated by a light source and the opposite side in shadow.
 
 To create Tanaka contours all you need is your reclassified DEM. To start, create 2 [hillshades](https://pro.arcgis.com/en/pro-app/tool-reference/3d-analyst/hillshade.htm), one with shadows and another without.
 

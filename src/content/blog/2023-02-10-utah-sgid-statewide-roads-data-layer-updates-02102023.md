@@ -9,9 +9,9 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-UGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System](/products/sgid/transportation/road-centerlines) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.
+UGRC recently completed updates to the SGID Roads feature class. Please visit our [Roads and Highway System](/products/sgid/transportation/road-centerlines/) data page where you will find information about the Roads data model, as well as direct download links to the SGID Roads data in shapefile and geodatabase format.
 
-These updates are also reflected in Utah's [Next-Generation 911 GIS database](/solutions/for-emergency-response) and UGRC's [street network analysis datasets](/products/sgid/transportation/street-network).
+These updates are also reflected in Utah's [Next-Generation 911 GIS database](/solutions/for-emergency-response/) and UGRC's [street network analysis datasets](/products/sgid/transportation/street-network/).
 
 The following are highlights from this month's update.
 
@@ -30,4 +30,4 @@ New roads were added and road names and address ranges were updated for the foll
 
 #### UDOT Route System
 
-- Visit the [SGID LRS page](/products/sgid/transportation/road-centerlines) for information on UDOT's Advanced LRS (ALRS) data.
+- Visit the [SGID LRS page](/products/sgid/transportation/road-centerlines/) for information on UDOT's Advanced LRS (ALRS) data.

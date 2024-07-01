@@ -1730,11 +1730,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'farming.agricultural_protection_areas',
     layerId: 0,
   },
-  'Utah Tax Areas 2022': {
-    itemId: '1c962302668e431db53d9763962c09f5',
-    name: 'Utah Tax Areas 2022',
-    featureServiceId: 'TaxAreas2022',
-    openSgid: 'economy.tax_areas_2022',
+  'Utah Tax Areas 2024': {
+    itemId: '5360fd4cd20847099074542faafd990c',
+    name: 'Utah Tax Areas 2024',
+    featureServiceId: 'TaxAreas2024',
+    openSgid: 'economy.tax_areas_2024',
     layerId: 0,
   },
   'Utah Vista Ballot Areas Proposed': {
@@ -1744,11 +1744,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'political.vista_ballot_areas_proposed',
     layerId: 0,
   },
-  'Utah Tax Entities 2022': {
-    itemId: 'cf717be2436e46758a263d53b63b8cf7',
-    name: 'Utah Tax Entities 2022',
-    featureServiceId: 'TaxEntities2022',
-    openSgid: 'economy.tax_entities_2022',
+  'Utah Tax Entities 2024': {
+    itemId: '253573ab675345c5bd52d84a92e5439f',
+    name: 'Utah Tax Entities 2024',
+    featureServiceId: 'TaxEntities2024',
+    openSgid: 'economy.tax_entities_2024',
     layerId: 0,
   },
   'Utah Telecom Boundaries': {
@@ -2020,13 +2020,6 @@ export const dataPages: DownloadMetadata = {
   'Utah Ports Of Entry': {
     itemId: '73441947b3f342b880edcb3d8cdd7ea2',
     name: 'Utah Ports Of Entry',
-    featureServiceId: null,
-    openSgid: '',
-    layerId: 0,
-  },
-  'Utah UTA Bus Flex Routes': {
-    itemId: 'e12362f46b8e4cc798807e576c0d1e88',
-    name: 'Utah UTA Bus Flex Routes',
     featureServiceId: null,
     openSgid: '',
     layerId: 0,

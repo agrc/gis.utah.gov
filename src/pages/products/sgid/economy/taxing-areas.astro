@@ -18,7 +18,7 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  pageTitle: 'Utah Tax Areas 2022',
+  pageTitle: 'Utah Tax Areas 2024',
   pageDescription: 'Taxing districts and areas in the State of Utah as maintained by the Utah State Tax Commission.',
   stewards: ['UGRC', 'USTC'],
   type: ProductType.POLYGON,
@@ -27,7 +27,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: ['June 2023', 'March 2022', 'January 2021'],
+  updateHistory: ['June 2024', 'June 2023', 'March 2022', 'January 2021'],
   hub: {
     ...dataPages[metadata.pageTitle],
   },
@@ -39,11 +39,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      This dataset represents Taxing Districts/Areas in the State of Utah as maintained by the Utah State Tax Commission
-      (USTC). Each taxing district polygon represents a unique combination of overlapping taxing entities. The property
-      tax within a taxing district should be the same for all residential properties. This dataset is derived from a
-      spatial analysis process utilizing the USTC Tax Entities dataset. This data is for 2022. Updates are only done at
-      the beginning of each calendar year for the previous year.
+    This dataset represents Taxing Districts/Areas in the State of Utah as maintained by the Utah State Tax Commission (USTC). Each taxing district polygon represents a unique combination of overlapping taxing entities. The property tax within a taxing district should be the same for all residential properties. This dataset is derived from a spatial analysis process utilizing the USTC Tax Entities dataset. This data is for 2023. Updates are only done at the beginning of each calendar year for the previous year. The 2024 rates have not been done yet and won't be ready until September.
     </p>
   </Fragment>
 
@@ -68,16 +64,16 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Sales Tax Areas" href="/products/sgid/economy/sales-tax-areas"
+      <CardWithSmallLink title="Sales Tax Areas" href="/products/sgid/economy/sales-tax-areas/"
         >Sales tax collection areas.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Transit Tax Areas" href="/products/sgid/economy/transit-special-tax-areas"
+      <CardWithSmallLink title="Transit Tax Areas" href="/products/sgid/economy/transit-special-tax-areas/"
         >Transit special tax areas.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Tax Entities" href="/products/sgid/economy/tax-entities"
+      <CardWithSmallLink title="Tax Entities" href="/products/sgid/economy/tax-entities/"
         >Tax entities in Utah.</CardWithSmallLink
       >
-      <CardWithSmallLink title="Economy" href="/products/sgid/economy">SGID category.</CardWithSmallLink>
+      <CardWithSmallLink title="Economy" href="/products/sgid/economy/">SGID category.</CardWithSmallLink>
     </GridForYouMightLike>
   </Section>
 </Layout>

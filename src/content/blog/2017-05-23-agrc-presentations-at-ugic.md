@@ -22,9 +22,9 @@ UGRC staff had a great time last week at the UGIC Conference in Park City. Every
 - [Beyond the Template: Creating Valuable Storymaps](https://docs.google.com/presentation/d/1tq4iNeFHuzZ7ZlpTOLZGfymlzjpa0VwySsb4XJ1wtvA/edit?usp=sharing), bydisplay_name: Jessie Pechmann
 - [GIS for Utah NG911](https://docs.google.com/presentation/d/14obhOgTXFGCxi1r3aQBCZnAAN3tz2snQv592vJZay78/edit?usp=sharing), by Bert Granberg, Kevin Rose, & Melanie Crittenden
 - [How we Modernized our To Do Lists](https://docs.google.com/presentation/d/15z02TStTMsuHTMnAIwwwyN8Ka_pO85IDNrYJpKG6LoQ/edit?usp=drive_open&ouid=0), by Josh Groeneveld &display_name: Jessie Pechmann
-- [Step out of your silo; Join the community](http://UGRC.github.io/Presentations/UGIC/2017/silo/#0)
-- [forklift - slinging data everywhere](http://agrc.github.io/Presentations/UGIC/2017/forklift/#0)
+- [Step out of your silo; Join the community](https://UGRC.github.io/Presentations/UGIC/2017/silo/#0)
+- [forklift - slinging data everywhere](https://agrc.github.io/Presentations/UGIC/2017/forklift/#0)
 
-UGRC presentations are [archived and published](http://agrc.github.io/Presentations/) online. Congratulations is also due to Zach Beck and Bert Granberg for participating in friendly coworker competition during the [conference's iron cartographer session](http://ugic.org/conference/congratulations-to-the-2017-map-gallery-winners/).
+UGRC presentations are [archived and published](https://agrc.github.io/Presentations/) online. Congratulations is also due to Zach Beck and Bert Granberg for participating in friendly coworker competition during the [conference's iron cartographer session](https://ugic.org/conference/congratulations-to-the-2017-map-gallery-winners/).
 
 And just for fun, here is a [bonus aerial imagery quiz](https://www.geographyrealm.com/geo-quiz-name-the-human-activity-visible-from-space/).
