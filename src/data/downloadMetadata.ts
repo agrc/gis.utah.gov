@@ -2609,7 +2609,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '8d9bc67285fb421fb15d55342148ac1e',
     name: 'Utah State Fuel Sites',
     featureServiceId: 'StateFuelSites',
-    openSgid: 'society.state_fuel_sites',
+    openSgid: '',
     layerId: 0,
   },
   'Utah H3 Hexes Level 6': {
