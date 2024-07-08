@@ -1,0 +1,82 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  pageTitle: 'Utah Licensed Health Care Facilities',
+  pageDescription: `Hospitals, clinics, etc`,
+  stewards: ['UGRC', 'DHHS'],
+  type: ProductType.POINT,
+  category: SgidCategory.HEALTH,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application:
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vT8pLW5yVrV9EY811pE3leFw9u65FtXkMaADaYYdBi0zpjAhrIhaGDQpdQA-jPn8D07DxStjKcWXUcF/pubhtml?gid=1835834361&single=true',
+  updateHistory: [`June 2024`],
+  hub: {
+    ...dataPages[metadata.pageTitle],
+  },
+};
+---
+
+<Layout {...page} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      Health care facilities licensed by the Division of Licensing and Background Checks (DLBC) Oﬃce of Licensing (OL)
+      under the authority of the Utah Department of Health and Human Services (DHHS). These locations are regularly
+      inspected to ensure programs and facilities are in compliance with state and federal health treatment and safety
+      standards. Some of the facilities in this dataset include but are not limited to hospitals, assisted living,
+      hospice care, mammography, and ambulatory surgical facilities.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="DHHS Facility Information"
+        href="https://dlbc.utah.gov/home/office-of-licensing/health-facilities/health-facilities-information/"
+        >Licensed health care facility rules, documents and other information.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="DHHS" href="https://dhhs.utah.gov"
+        >The homepage for the Utah Department of Health and Human Services</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="Health Small Statistical Areas"
+        href="/products/sgid/health/health-small-statistical-areas/"
+        >Areas used by DHHS for reporting.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="CDC" href="https://www.cdc.gov/"
+        >Nationwide health information at The Centers for Disease Control and Prevention</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
