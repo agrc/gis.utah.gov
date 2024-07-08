@@ -4,9 +4,9 @@ import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/types';
 import { ProductType, SgidCategory } from '@models/types';
 
-import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 
+import DirectDownloads from '@components/data/DirectDownloads.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
@@ -26,11 +26,22 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`December 2023`],
-  hub: {
-    ...dataPages[metadata.pageTitle],
-  },
-  config: { skipInDepth: true },
+  application: 'https://experience.arcgis.com/experience/9a38f59e6f914367b18fbbde037028e2',
+  updateHistory: [`AS NEEDED`],
+  links: [
+  {
+      title: 'Utah State Fuel Sites in the SGID on ArcGIS',
+      url: 'https://opendata.gis.utah.gov/datasets/utah-state-fuel-sites/about',
+    },
+    {
+      title: 'File Geodatabase',
+      url: 'https://opendata.arcgis.com/datasets/8d9bc67285fb421fb15d55342148ac1e_0.gdb',
+    },
+    {
+      title: 'Shapefile',
+      url: 'https://opendata.arcgis.com/datasets/8d9bc67285fb421fb15d55342148ac1e_0.zip',
+    },
+  ],
 };
 ---
 
@@ -40,20 +51,20 @@ const page: IPageMetadata = {
   <Fragment slot="summary">
     <p>
       This dataset contains state-run fuel sites in the State Of Utah and provides the location, site name, site status,
-      address and whether it offers gas and/or diesel. The dataset receives periodic updates and is maintained in
+      address and whether it offers unleaded gas and/or diesel. The dataset receives periodic updates and is maintained in
       collaboration with the <ExternalLink href="https://fleet.utah.gov">Utah Division of Fleet Operations</ExternalLink
       >.
     </p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <HubDownloads {...page.hub} />
+    <DirectDownloads title="Explore and Download" links={page.links!} />
   </Section>
 
   <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink title="State Facilities" href="/products/sgid/society/state-facilities/"
-        >State Facilities page.</CardWithPopularLink
+      <CardWithPopularLink title="Division of Fleet Operations" href="https://fleet.utah.gov/"
+        >Utah Division of Fleet Operations website.</CardWithPopularLink
       >
       <CardWithPopularLink title="Utah Division of Air Quality" href="https://deq.utah.gov/division-air-quality"
         >Utah DEQ - Division of Air Quality.</CardWithPopularLink
