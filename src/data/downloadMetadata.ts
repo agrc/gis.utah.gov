@@ -1380,6 +1380,13 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'health.health_care_facilities',
     layerId: 0,
   },
+  'Utah Licensed Health Care Facilities': {
+    itemId: '925570c858174b2aa04dbec0896cee91',
+    name: 'Utah Licensed Health Care Facilities',
+    featureServiceId: 'UtahLicensedHealthCareFacilities',
+    openSgid: 'health.licensed_health_care_facilities',
+    layerId: 0,
+  },
   'Utah Emergency Medical Services': {
     itemId: '4d29084d6e434ef397ae5922ba7402b4',
     name: 'Utah Emergency Medical Services',
