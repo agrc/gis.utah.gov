@@ -4,6 +4,7 @@ import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/types';
 import { ProductType, SgidCategory } from '@models/types';
 
+import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 
 import DirectDownloads from '@components/data/DirectDownloads.astro';
@@ -28,20 +29,10 @@ const page: IPageMetadata = {
   ...metadata,
   application: 'https://experience.arcgis.com/experience/9a38f59e6f914367b18fbbde037028e2',
   updateHistory: [`AS NEEDED`],
-  links: [
-  {
-      title: 'Utah State Fuel Sites in the SGID on ArcGIS',
-      url: 'https://opendata.gis.utah.gov/datasets/utah-state-fuel-sites/about',
-    },
-    {
-      title: 'File Geodatabase',
-      url: 'https://opendata.arcgis.com/datasets/8d9bc67285fb421fb15d55342148ac1e_0.gdb',
-    },
-    {
-      title: 'Shapefile',
-      url: 'https://opendata.arcgis.com/datasets/8d9bc67285fb421fb15d55342148ac1e_0.zip',
-    },
-  ],
+  hub: {
+    ...dataPages[metadata.pageTitle],
+  },
+  config: { skipInDepth: true },
 };
 ---
 
