@@ -8,13 +8,19 @@ jobs:
   open-pr:
     runs-on: ubuntu-latest
     steps:
-      - name: 🔍 Check issue type
-        run: |
-          if [[ "${{ github.event.issue.title }}" != "✍️ New blog post idea" ]]; then
-            echo "Issue title does not start with '✍️ New blog post idea', skipping"
-            exit 86
-          fi
+      - name: 🎬 Update status
+        id: update_status
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const response = await github.rest.reactions.createForIssue({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              content: 'eyes'
+            });
 
+            return response.data.id;
       - name: 🔬 Check actor
         uses: tspascoal/get-user-teams-membership@v3
         id: checkUserMember
@@ -44,7 +50,7 @@ jobs:
 
       - name: 📝 Create Blog Post
         working-directory: scripts
-        run: node new-blog.js ${{ github.event.issue.id }}
+        run: node new-blog.mjs ${{ github.event.issue.id }}
 
       - name: 📌 Create Pull Request
         uses: peter-evans/create-pull-request@v6
@@ -52,6 +58,32 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'feat: create new blog post'
           title: 'feat: create new blog post'
-          body: 'This PR was automatically created by the "New Issue" workflow.'
+          body: |
+            This PR was automatically created by the "Issue opened (new blog)" workflow.
+
+            closes #${{ github.event.issue.number}}
           branch: feat/new-blog-post-${{ github.event.issue.number }}
           draft: true
+
+      - name: 🗑️ Remove reaction
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.reactions.deleteForIssue({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              reaction_id: ${{ steps.update_status.outputs.result }}
+            })
+
+      - name: ✅ Set complete reaction
+        uses: actions/github-script@v7
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        with:
+          script: |
+            github.rest.reactions.createForIssue({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              content: 'rocket'
+            });
