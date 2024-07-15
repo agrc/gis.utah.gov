@@ -37,6 +37,8 @@ jobs:
 
       - name: ⬇️ Checkout Repository
         uses: actions/checkout@v4
+        with:
+          show-progress: false
 
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v4
@@ -50,7 +52,7 @@ jobs:
 
       - name: 📝 Create Blog Post
         working-directory: scripts
-        run: node new-blog.mjs ${{ github.event.issue.id }}
+        run: node new-blog.mjs ${{ github.event.issue.number }}
 
       - name: 📌 Create Pull Request
         uses: peter-evans/create-pull-request@v6
