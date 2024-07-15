@@ -4,16 +4,16 @@ import capitalize from 'lodash.capitalize';
 import fs from 'node:fs';
 
 const defaultText = (slug) => `
-{/* remove if not using images */}
-import { Image } from 'astro:assets';
+{/* remove if not using images
+import { Image } from 'astro:assets'; */}
 
-{/* remove if not using an image */}
-import myImage from '@images/blog/${slug}/image.png';
+{/* remove if not using an image
+import myImage from '@images/blog/${slug}/image.png'; */}
 
 My blog post content starts here.
 
-{/* remove if not using an image */}
-<Image src={myImage} loading="eager" alt="A sample image" />
+{/* remove if not using an image
+<Image src={myImage} loading="eager" alt="A sample image" /> */}
 `;
 
 export const getDataFromIssue = (body) => {
