@@ -93,7 +93,9 @@ function etlRow(row): StewardshipRecord | null {
       openSgid: row.get('openSGIDtableName'),
     };
   } catch (error) {
-    console.error(`Error processing row id: ${row.id}`);
-    throw error;
+    console.warn(`Error processing row id: ${row.id}...`);
+    console.warn(error);
+
+    return null;
   }
 }
